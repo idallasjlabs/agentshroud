@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/differential_pii_detector.py"
 type: "rationale"
-community: "Differential Pii Detector"
+community: "Community 47"
 location: "L485"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Differential_Pii_Detector
+  - community/Community_47
 ---
 
 # Regex-based PII detection (Presidio fallback).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._detect_regex()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Differential_Pii_Detector
+#graphify/rationale #graphify/EXTRACTED #community/Community_47

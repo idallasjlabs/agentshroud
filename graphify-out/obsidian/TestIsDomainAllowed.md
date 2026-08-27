@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "Web Proxy"
+community: "Community 30"
 location: "L576"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Web_Proxy
+  - community/Community_30
 ---
 
 # TestIsDomainAllowed
@@ -27,4 +27,4 @@ tags:
 - [[WebProxyConfig]] - `uses` [INFERRED]
 - [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Web_Proxy
+#graphify/code #graphify/EXTRACTED #community/Community_30

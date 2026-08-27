@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cross_bot_trust_ledger.py"
 type: "rationale"
-community: "Cross Bot Trust Ledger"
+community: "Community 1016"
 location: "L564"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Cross_Bot_Trust_Ledger
+  - community/Community_1016
 ---
 
 # End-to-end: a real incident on bot A decays trust on bots B and C         in a 3
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_incident_on_one_bot_propagates_to_all_mesh_peers()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Cross_Bot_Trust_Ledger
+#graphify/rationale #graphify/EXTRACTED #community/Community_1016

@@ -1,11 +1,11 @@
 ---
 source_file: "examples/mcp-config.yml"
 type: "document"
-community: "Egress Config (examples)"
+community: "Community 1254"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Egress_Config_examples
+  - community/Community_1254
 ---
 
 # AgentShroud MCP Proxy Configuration
@@ -14,4 +14,4 @@ tags:
 - [[Default-Allow Web Proxy Design Rationale]] - `rationale_for` [EXTRACTED]
 - [[MCP Proxy Default-Allow Philosophy]] - `rationale_for` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Egress_Config_examples
+#graphify/document #graphify/EXTRACTED #community/Community_1254

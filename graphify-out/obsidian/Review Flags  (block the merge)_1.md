@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-cicd/SKILL.md"
 type: "document"
-community: "Skill (i-cicd)"
+community: "Community 1017"
 location: "L40"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-cicd
+  - community/Community_1017
 ---
 
 # Review Flags  (block the merge)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill CICD Pipeline Advisor (CICD)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-cicd
+#graphify/document #graphify/EXTRACTED #community/Community_1017

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_turn_tracker.py"
 type: "rationale"
-community: "Multi Turn Tracker"
+community: "Community 1842"
 location: "L63"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Multi_Turn_Tracker
+  - community/Community_1842
 ---
 
 # Test basic message tracking functionality.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_basic_message_tracking()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Multi_Turn_Tracker
+#graphify/rationale #graphify/EXTRACTED #community/Community_1842

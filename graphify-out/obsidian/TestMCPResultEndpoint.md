@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "code"
-community: "Mcp Result Endpoint"
+community: "Community 487"
 location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Mcp_Result_Endpoint
+  - community/Community_487
 ---
 
 # TestMCPResultEndpoint
@@ -30,4 +30,4 @@ tags:
 - [[RouterConfig]] - `uses` [INFERRED]
 - [[test_mcp_result_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Mcp_Result_Endpoint
+#graphify/code #graphify/EXTRACTED #community/Community_487

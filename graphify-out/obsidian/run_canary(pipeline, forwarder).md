@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/canary.py.md"
 type: "document"
-community: "Canary.py (Security Modules)"
+community: "Community 686"
 location: "L40"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Canarypy_Security_Modules
+  - community/Community_686
 ---
 
 # run_canary(pipeline, forwarder)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Function Details_29]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Canarypy_Security_Modules
+#graphify/document #graphify/EXTRACTED #community/Community_686

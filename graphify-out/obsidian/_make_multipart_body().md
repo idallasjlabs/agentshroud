@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "Telegram Proxy Outbound"
+community: "Community 346"
 location: "L4994"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Outbound
+  - community/Community_346
 ---
 
 # _make_multipart_body()
@@ -25,4 +25,4 @@ tags:
 - [[Build a multipartform-data body with text fields and an optional binary part.]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Outbound
+#graphify/code #graphify/EXTRACTED #community/Community_346

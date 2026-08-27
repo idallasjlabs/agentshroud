@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/dashboard/proxy_status.py"
 type: "code"
-community: "Proxy Dashboard"
+community: "Community 84"
 location: "L80"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Proxy_Dashboard
+  - community/Community_84
 ---
 
 # ProxyDashboard
@@ -40,4 +40,4 @@ tags:
 - [[test_dashboard_uptime()]] - `calls` [EXTRACTED]
 - [[test_proxy_dashboard.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Proxy_Dashboard
+#graphify/code #graphify/EXTRACTED #community/Community_84

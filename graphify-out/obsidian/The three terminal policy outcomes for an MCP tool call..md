@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/mcp_policy.py"
 type: "rationale"
-community: "A2a Policy Default Failclosed"
+community: "Community 34"
 location: "L52"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/A2a_Policy_Default_Failclosed
+  - community/Community_34
 ---
 
 # The three terminal policy outcomes for an MCP tool call.
@@ -15,4 +15,4 @@ tags:
 - [[A2APolicyAction]] - `rationale_for` [EXTRACTED]
 - [[MCPPolicyAction]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/A2a_Policy_Default_Failclosed
+#graphify/rationale #graphify/EXTRACTED #community/Community_34

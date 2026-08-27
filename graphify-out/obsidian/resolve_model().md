@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/resolve_model.py"
 type: "code"
-community: "Hermes Model Resolver"
-location: "L114"
+community: "Community 129"
+location: "L125"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Hermes_Model_Resolver
+  - community/Community_129
 ---
 
 # resolve_model()
@@ -25,6 +25,7 @@ tags:
 - [[test_local_mode_empty_local_ref_falls_back_to_default_local_model()]] - `calls` [INFERRED]
 - [[test_local_mode_falls_back_to_local_ref_when_main_unset()]] - `calls` [INFERRED]
 - [[test_local_mode_ignores_stale_cloud_main_model()]] - `calls` [INFERRED]
+- [[test_local_mode_recognizes_nemotron_as_local()]] - `calls` [INFERRED]
 - [[test_local_mode_uses_hermes_main_model()]] - `calls` [INFERRED]
 - [[test_local_multi_mode_uses_lmstudio_dash_model()]] - `calls` [INFERRED]
 - [[test_mode_case_insensitive_and_whitespace_tolerant()]] - `calls` [INFERRED]
@@ -32,4 +33,4 @@ tags:
 - [[test_resolve_model_corrects_stale_alias_from_local_model_ref()]] - `calls` [INFERRED]
 - [[test_unknown_mode_treated_as_cloud()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Hermes_Model_Resolver
+#graphify/code #graphify/INFERRED #community/Community_129

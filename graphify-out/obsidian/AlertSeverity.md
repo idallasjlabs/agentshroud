@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_monitor.py"
 type: "code"
-community: "Egress Monitor"
+community: "Community 442"
 location: "L32"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Egress_Monitor
+  - community/Community_442
 ---
 
 # AlertSeverity
@@ -22,4 +22,4 @@ tags:
 - [[egress_monitor.py]] - `contains` [EXTRACTED]
 - [[test_egress_monitor.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Egress_Monitor
+#graphify/code #graphify/INFERRED #community/Community_442

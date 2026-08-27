@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "Skill (i-mcpm-auth-reset)"
+community: "Community 246"
 location: "L169"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-mcpm-auth-reset
+  - community/Community_246
 ---
 
 # GitHub: "Docker image not found"
 
 ## Connections
-- [[Troubleshooting_13]] - `contains` [EXTRACTED]
+- [[Troubleshooting_14]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-mcpm-auth-reset
+#graphify/document #graphify/EXTRACTED #community/Community_246

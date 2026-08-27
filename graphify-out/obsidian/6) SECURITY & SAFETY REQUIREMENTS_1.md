@@ -1,17 +1,17 @@
 ---
-source_file: "AGENTS.md"
+source_file: "CLAUDE.md"
 type: "document"
-community: "Agents"
-location: "L125"
+community: "Community 241"
+location: "L254"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Agents
+  - community/Community_241
 ---
 
 # 6) SECURITY & SAFETY REQUIREMENTS
 
 ## Connections
-- [[Goal Codex is a secondarytertiary agent used for test augmentation, validation, and safe refactors AFTER tests pass.]] - `contains` [EXTRACTED]
+- [[Applies to Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Agents
+#graphify/document #graphify/EXTRACTED #community/Community_241

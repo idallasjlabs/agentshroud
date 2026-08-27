@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/runbook.md"
 type: "document"
-community: "Runbook (operations)"
+community: "Community 91"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Runbook_operations
+  - community/Community_91
 ---
 
 # AgentShroud Operations Runbook
@@ -27,4 +27,4 @@ tags:
 - [[Trust Manager  Progressive Trust System]] - `references` [EXTRACTED]
 - [[runbook]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Runbook_operations
+#graphify/document #graphify/EXTRACTED #community/Community_91

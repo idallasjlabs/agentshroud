@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/auth.py"
 type: "code"
-community: "Soc Realtime Coverage"
+community: "Community 15"
 location: "L170"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Soc_Realtime_Coverage
+  - community/Community_15
 ---
 
 # _resolve_caller()
@@ -28,4 +28,4 @@ tags:
 - [[auth.py_1]] - `contains` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Soc_Realtime_Coverage
+#graphify/code #graphify/EXTRACTED #community/Community_15

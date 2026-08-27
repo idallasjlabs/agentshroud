@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_protection.py"
 type: "rationale"
-community: "Prompt Protection"
+community: "Community 151"
 location: "L27"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Prompt_Protection
+  - community/Community_151
 ---
 
 # Sample protected content for testing.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[sample_protected_content()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Prompt_Protection
+#graphify/rationale #graphify/EXTRACTED #community/Community_151

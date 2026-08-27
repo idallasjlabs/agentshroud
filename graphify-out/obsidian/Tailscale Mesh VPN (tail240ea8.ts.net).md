@@ -1,11 +1,11 @@
 ---
 source_file: "docs/TEAM.md"
 type: "concept"
-community: "Team (docs)"
+community: "Community 1091"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Team_docs
+  - community/Community_1091
 ---
 
 # Tailscale mesh VPN (tail240ea8.ts.net)
@@ -15,4 +15,4 @@ tags:
 - [[Pi (Raspberry Pi 4B) — Edgetest node]] - `shares_data_with` [EXTRACTED]
 - [[Trillian (Mac Mini) — Secondary buildCI]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Team_docs
+#graphify/concept #graphify/EXTRACTED #community/Community_1091

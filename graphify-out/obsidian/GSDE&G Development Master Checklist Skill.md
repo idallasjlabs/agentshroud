@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-mc/SKILL.md"
 type: "document"
-community: "Skill (i-hdev)"
+community: "Community 660"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-hdev
+  - community/Community_660
 ---
 
 # GSDE&G Development Master Checklist Skill
@@ -16,4 +16,4 @@ tags:
 - [[GSDE&G SDLC Lifecycle (Plan-TDD-QA-CR-PR-CI-Deploy)]] - `conceptually_related_to` [EXTRACTED]
 - [[Hermes Dev Workflow (HDEV) Skill]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-hdev
+#graphify/document #graphify/EXTRACTED #community/Community_660

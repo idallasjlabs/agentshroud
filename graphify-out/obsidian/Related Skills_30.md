@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-sad/README.md"
 type: "document"
-community: "Readme (i-sad)"
+community: "Community 1165"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-sad
+  - community/Community_1165
 ---
 
 # Related Skills
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[System Audit Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-sad
+#graphify/document #graphify/EXTRACTED #community/Community_1165

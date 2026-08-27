@@ -1,11 +1,11 @@
 ---
 source_file: "branding/logos/png/logo.png"
 type: "image"
-community: "Icon 64x64 (app)"
+community: "Community 448"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/Icon_64x64_app
+  - community/Community_448
 ---
 
 # AgentShroud Primary Logo Lockup
@@ -17,4 +17,4 @@ tags:
 - [[AgentShroud Logo - GlowTransparent Variant]] - `semantically_similar_to` [INFERRED]
 - [[AgentShroud macOS App Icon (1024x1024, Rounded Squircle)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/Icon_64x64_app
+#graphify/image #graphify/INFERRED #community/Community_448

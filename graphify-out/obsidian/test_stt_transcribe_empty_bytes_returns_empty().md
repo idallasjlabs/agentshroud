@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "Voice Gateway"
-location: "L91"
+community: "Community 37"
+location: "L92"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Voice_Gateway
+  - community/Community_37
 ---
 
 # test_stt_transcribe_empty_bytes_returns_empty()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Voice_Gateway
+#graphify/code #graphify/EXTRACTED #community/Community_37

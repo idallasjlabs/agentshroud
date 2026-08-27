@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_stream.py"
 type: "code"
-community: "Forward Stream"
+community: "Community 76"
 location: "L165"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Forward_Stream
+  - community/Community_76
 ---
 
 # _BlockingPipeline
@@ -21,4 +21,4 @@ tags:
 - [[test_filtered_stream_blocked_window_releases_nothing_for_that_window()]] - `calls` [EXTRACTED]
 - [[test_forward_stream.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Forward_Stream
+#graphify/code #graphify/EXTRACTED #community/Community_76

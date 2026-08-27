@@ -1,20 +1,22 @@
 ---
-source_file: "docker/config/hermes/skills/i-apollo/README.md"
+source_file: ".agents/skills/i-apollo/SKILL.md"
 type: "document"
-community: "Readme (i-apollo)"
-location: "L1"
+community: "Community 941"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-apollo
+  - community/Community_941
 ---
 
 # Apollo — Audio Systems Producer
 
 ## Connections
-- [[Purpose_37]] - `contains` [EXTRACTED]
-- [[README_42]] - `contains` [EXTRACTED]
-- [[Related Skills_40]] - `contains` [EXTRACTED]
-- [[Usage_42]] - `contains` [EXTRACTED]
+- [[Input Requirements]] - `contains` [EXTRACTED]
+- [[Output]] - `contains` [EXTRACTED]
+- [[Quality Checklist]] - `contains` [EXTRACTED]
+- [[Role_4]] - `contains` [EXTRACTED]
+- [[SKILL_3]] - `contains` [EXTRACTED]
+- [[Technical Specification]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-apollo
+#graphify/document #graphify/EXTRACTED #community/Community_941

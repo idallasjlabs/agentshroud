@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_report_store.py"
 type: "code"
-community: "Report Store"
+community: "Community 96"
 location: "L128"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Report_Store
+  - community/Community_96
 ---
 
 # TestReportAPI
@@ -22,4 +22,4 @@ tags:
 - [[Route-level POSTGET apireports through the FastAPI app (SCRUM-79).]] - `rationale_for` [EXTRACTED]
 - [[test_report_store.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Report_Store
+#graphify/code #graphify/EXTRACTED #community/Community_96

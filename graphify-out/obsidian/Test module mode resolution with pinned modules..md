@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "rationale"
-community: "Killswitch Monitor & Observatory Mode"
+community: "Community 443"
 location: "L447"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Killswitch_Monitor__Observatory_Mode
+  - community/Community_443
 ---
 
 # Test module mode resolution with pinned modules.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_module_mode_resolution()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Killswitch_Monitor__Observatory_Mode
+#graphify/rationale #graphify/EXTRACTED #community/Community_443

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "concept"
-community: "Glossary (project)"
+community: "Community 90"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Glossary_project
+  - community/Community_90
 ---
 
 # Monitor Mode
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud v0.8.0 Watchtower Release Plan]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Glossary_project
+#graphify/concept #graphify/EXTRACTED #community/Community_90

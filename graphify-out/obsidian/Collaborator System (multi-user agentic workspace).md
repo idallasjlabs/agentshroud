@@ -1,11 +1,11 @@
 ---
 source_file: "docs/agentshroud-knowledge.md"
 type: "concept"
-community: "Agentshroud Knowledge (docs)"
+community: "Community 1252"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Agentshroud_Knowledge_docs
+  - community/Community_1252
 ---
 
 # Collaborator System (multi-user agentic workspace)
@@ -14,4 +14,4 @@ tags:
 - [[OpenClaw — primary integration target agent]] - `conceptually_related_to` [INFERRED]
 - [[SOC Command Center — Five Pillars]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Agentshroud_Knowledge_docs
+#graphify/concept #graphify/EXTRACTED #community/Community_1252

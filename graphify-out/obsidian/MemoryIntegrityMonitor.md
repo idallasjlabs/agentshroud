@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "Memory Lifecycle & Integrity"
+community: "Community 6"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Memory_Lifecycle__Integrity
+  - community/Community_6
 ---
 
 # MemoryIntegrityMonitor
@@ -54,4 +54,4 @@ tags:
 - [[middleware.py]] - `imports` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Memory_Lifecycle__Integrity
+#graphify/code #graphify/EXTRACTED #community/Community_6

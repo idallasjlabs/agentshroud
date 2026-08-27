@@ -1,20 +1,20 @@
 ---
-source_file: "docker/config/openclaw/skills/i-tdd/README.md"
+source_file: "docker/config/hermes/skills/i-tdd/README.md"
 type: "document"
-community: "Readme (i-tdd)"
+community: "Community 1210"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-tdd
+  - community/Community_1210
 ---
 
 # Test-Driven Development (TDD)
 
 ## Connections
-- [[Purpose_107]] - `contains` [EXTRACTED]
-- [[README_112]] - `contains` [EXTRACTED]
-- [[Related Skills_116]] - `contains` [EXTRACTED]
-- [[Usage_117]] - `contains` [EXTRACTED]
+- [[Purpose_70]] - `contains` [EXTRACTED]
+- [[README_75]] - `contains` [EXTRACTED]
+- [[Related Skills_76]] - `contains` [EXTRACTED]
+- [[Usage_77]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-tdd
+#graphify/document #graphify/EXTRACTED #community/Community_1210

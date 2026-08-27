@@ -1,23 +1,20 @@
 ---
-source_file: "docs/setup/setup-guide.md"
+source_file: "docs/setup/TELEGRAM_SETUP.md"
 type: "document"
-community: "Setup Guide (setup)"
-location: "L787"
+community: "Community 649"
+location: "L115"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Guide_setup
+  - community/Community_649
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[1Password Authentication Failed]] - `contains` [EXTRACTED]
-- [[AgentShroud Setup Guide]] - `contains` [EXTRACTED]
-- [[Container Unhealthy]] - `contains` [EXTRACTED]
-- [[Gmail Connection Issues]] - `contains` [EXTRACTED]
-- [[Performance Issues_1]] - `contains` [EXTRACTED]
-- [[Port Already in Use_1]] - `contains` [EXTRACTED]
-- [[Tests Failing_1]] - `contains` [EXTRACTED]
+- [[Bot doesn't respond]] - `contains` [EXTRACTED]
+- [[Cannot find bot]] - `contains` [EXTRACTED]
+- [[Messages delayed]] - `contains` [EXTRACTED]
+- [[Telegram Bot Setup for OpenClaw]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Guide_setup
+#graphify/document #graphify/EXTRACTED #community/Community_649

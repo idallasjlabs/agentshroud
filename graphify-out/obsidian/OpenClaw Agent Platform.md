@@ -1,11 +1,11 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "concept"
-community: "Agentshroud Ieee Paper (papers)"
+community: "Community 376"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Agentshroud_Ieee_Paper_papers
+  - community/Community_376
 ---
 
 # OpenClaw Agent Platform
@@ -14,4 +14,4 @@ tags:
 - [[CVE-2026-25253 (OpenClaw RCE)]] - `references` [EXTRACTED]
 - [[agentshroud-ieee-paper]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Agentshroud_Ieee_Paper_papers
+#graphify/concept #graphify/EXTRACTED #community/Community_376

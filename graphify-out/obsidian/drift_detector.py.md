@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/drift_detector.py"
 type: "code"
-community: "Tool Chain & CVE Triage"
+community: "Community 397"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tool_Chain__CVE_Triage
+  - community/Community_397
 ---
 
 # drift_detector.py
@@ -20,4 +20,4 @@ tags:
 - [[alert_dispatcher.py]] - `references` [EXTRACTED]
 - [[clamav_scanner.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Tool_Chain__CVE_Triage
+#graphify/code #graphify/EXTRACTED #community/Community_397

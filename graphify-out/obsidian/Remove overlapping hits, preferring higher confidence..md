@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/differential_pii_detector.py"
 type: "rationale"
-community: "Differential Pii Detector"
+community: "Community 47"
 location: "L506"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Differential_Pii_Detector
+  - community/Community_47
 ---
 
 # Remove overlapping hits, preferring higher confidence.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._deduplicate()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Differential_Pii_Detector
+#graphify/rationale #graphify/EXTRACTED #community/Community_47

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "Mcp Proxy (proxy)"
+community: "Community 447"
 location: "L701"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Mcp_Proxy_proxy
+  - community/Community_447
 ---
 
 # Actually execute the tool call against the MCP server.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._execute_tool_call()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Mcp_Proxy_proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_447

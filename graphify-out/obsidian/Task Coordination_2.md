@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-pm/SKILL.md"
 type: "document"
-community: "Skill (i-pm)"
+community: "Community 469"
 location: "L68"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-pm
+  - community/Community_469
 ---
 
 # Task Coordination
@@ -17,4 +17,4 @@ tags:
 - [[Skill Project Management (PM)_2]] - `contains` [EXTRACTED]
 - [[Tracking Format_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-pm
+#graphify/document #graphify/EXTRACTED #community/Community_469

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "rationale"
-community: "Progressive Trust Integration"
-location: "L155"
+community: "Community 35"
+location: "L153"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Progressive_Trust_Integration
+  - community/Community_35
 ---
 
 # Register a new agent with initial trust.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.register_agent()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Progressive_Trust_Integration
+#graphify/rationale #graphify/EXTRACTED #community/Community_35

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cross_bot_trust_ledger.py"
 type: "code"
-community: "Cross Bot Trust Ledger"
+community: "Community 1016"
 location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Cross_Bot_Trust_Ledger
+  - community/Community_1016
 ---
 
 # TrustManager
@@ -38,4 +38,4 @@ tags:
 - [[hermes_tm()]] - `references` [EXTRACTED]
 - [[openclaw_tm()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Cross_Bot_Trust_Ledger
+#graphify/code #graphify/EXTRACTED #community/Community_1016

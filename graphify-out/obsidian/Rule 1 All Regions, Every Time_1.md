@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-aws/SKILL.md"
 type: "document"
-community: "Skill (i-aws)"
+community: "Community 227"
 location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-aws
+  - community/Community_227
 ---
 
 # Rule 1: All Regions, Every Time
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Operating Rules (Non-Negotiable)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-aws
+#graphify/document #graphify/EXTRACTED #community/Community_227

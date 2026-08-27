@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.2/LOCAL_LLM_REVIEW.md"
 type: "document"
-community: "Local Llm Review (v1.2)"
+community: "Community 783"
 location: "L150"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Local_Llm_Review_v12
+  - community/Community_783
 ---
 
 # Multi-model mode (`local-multi`)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[6. Three Local Backends]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Local_Llm_Review_v12
+#graphify/document #graphify/EXTRACTED #community/Community_783

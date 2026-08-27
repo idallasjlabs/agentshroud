@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/TELEGRAM_GMAIL_SETUP.md"
 type: "document"
-community: "Telegram Gmail Setup (setup)"
+community: "Community 215"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Telegram_Gmail_Setup_setup
+  - community/Community_215
 ---
 
 # Telegram & Gmail Integration Guide
@@ -20,7 +20,7 @@ tags:
 - [[Part 5 Telegram Troubleshooting]] - `contains` [EXTRACTED]
 - [[Part 6 Complete System Test]] - `contains` [EXTRACTED]
 - [[Part 7 Maintaining Functionality]] - `contains` [EXTRACTED]
-- [[Summary_20]] - `contains` [EXTRACTED]
+- [[Summary_42]] - `contains` [EXTRACTED]
 - [[TELEGRAM_GMAIL_SETUP]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Telegram_Gmail_Setup_setup
+#graphify/document #graphify/EXTRACTED #community/Community_215

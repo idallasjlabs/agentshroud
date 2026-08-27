@@ -1,12 +1,12 @@
 ---
 source_file: "docs/USPTO_TRADEMARK_APPLICATION.md"
 type: "document"
-community: "Uspto Trademark Application (docs)"
+community: "Community 1093"
 location: "L87"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Uspto_Trademark_Application_docs
+  - community/Community_1093
 ---
 
 # Class 9 — Computer Software
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SECTION 3 GOODS AND SERVICES]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Uspto_Trademark_Application_docs
+#graphify/document #graphify/EXTRACTED #community/Community_1093

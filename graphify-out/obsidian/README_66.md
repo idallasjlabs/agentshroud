@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/i-production/README.md"
 type: "document"
-community: "Readme (i-production)"
+community: "Community 1201"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-production
+  - community/Community_1201
 ---
 
 # README.md
 
 ## Connections
-- [[Incident Response (INCIDENT)]] - `contains` [EXTRACTED]
+- [[Incident Response (INCIDENT)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-production
+#graphify/document #graphify/EXTRACTED #community/Community_1201

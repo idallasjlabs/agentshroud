@@ -1,15 +1,17 @@
 ---
 type: community
-members: 2
+members: 4
 ---
 
 # Community 1543
 
-**Members:** 2 nodes
+**Members:** 4 nodes
 
 ## Members
-- [[.test_add_protected_content()]] - code - gateway/tests/test_prompt_protection.py
-- [[Test adding protected content.]] - rationale - gateway/tests/test_prompt_protection.py
+- [[curl_json()]] - code - docker/config/openclaw/cron/scripts/cve_prefetch.py
+- [[cve_prefetch.py]] - code - docker/config/openclaw/cron/scripts/cve_prefetch.py
+- [[known_ghsa_ids()]] - code - docker/config/openclaw/cron/scripts/cve_prefetch.py
+- [[main()_7]] - code - docker/config/openclaw/cron/scripts/cve_prefetch.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -17,9 +19,3 @@ members: 2
 TABLE source_file, type FROM #community/Community_1543
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_docsrunbooks]]
-
-## Top bridge nodes
-- [[.test_add_protected_content()]] - degree 2, connects to 1 community

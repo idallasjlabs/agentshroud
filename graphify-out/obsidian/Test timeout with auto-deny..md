@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "rationale"
-community: "Approval Queue"
+community: "Community 24"
 location: "L189"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval_Queue
+  - community/Community_24
 ---
 
 # Test timeout with auto-deny.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_timeout_auto_deny()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval_Queue
+#graphify/rationale #graphify/EXTRACTED #community/Community_24

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/README.md"
 type: "document"
-community: "Readme (skills)"
+community: "Community 659"
 location: "L24"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_skills
+  - community/Community_659
 ---
 
 # Usage
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Skills Library]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_skills
+#graphify/document #graphify/EXTRACTED #community/Community_659

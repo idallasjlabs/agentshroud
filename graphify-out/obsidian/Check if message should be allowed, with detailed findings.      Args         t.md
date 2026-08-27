@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "rationale"
-community: "Context Guard"
+community: "Community 54"
 location: "L574"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Context_Guard
+  - community/Community_54
 ---
 
 # Check if message should be allowed, with detailed findings.      Args:         t
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[check_message()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Context_Guard
+#graphify/rationale #graphify/EXTRACTED #community/Community_54

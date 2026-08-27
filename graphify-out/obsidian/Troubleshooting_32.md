@@ -1,20 +1,21 @@
 ---
-source_file: "docs/setup/TELEGRAM_SETUP.md"
+source_file: "docs/setup/SETUP_API_KEYS.md"
 type: "document"
-community: "Telegram Setup (setup)"
-location: "L115"
+community: "Community 304"
+location: "L204"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Telegram_Setup_setup
+  - community/Community_304
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Bot doesn't respond]] - `contains` [EXTRACTED]
-- [[Cannot find bot]] - `contains` [EXTRACTED]
-- [[Messages delayed]] - `contains` [EXTRACTED]
-- [[Telegram Bot Setup for OpenClaw]] - `contains` [EXTRACTED]
+- [[Missing auth for API providers]] - `contains` [EXTRACTED]
+- [[Missing auth for a provider]] - `contains` [EXTRACTED]
+- [[API Keys Setup Guide]] - `contains` [EXTRACTED]
+- [[Bot not responding on Telegram]] - `contains` [EXTRACTED]
+- [[Container won't start after adding Anthropic secret]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Telegram_Setup_setup
+#graphify/document #graphify/EXTRACTED #community/Community_304

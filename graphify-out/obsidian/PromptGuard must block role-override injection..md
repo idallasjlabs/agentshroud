@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "rationale"
-community: "Redteam Probes"
+community: "Community 66"
 location: "L207"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Redteam_Probes
+  - community/Community_66
 ---
 
 # PromptGuard must block role-override injection.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_prompt_injection_role_override()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Redteam_Probes
+#graphify/rationale #graphify/EXTRACTED #community/Community_66

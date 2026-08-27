@@ -1,12 +1,12 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "Claude"
+community: "Community 350"
 location: "L216"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Claude
+  - community/Community_350
 ---
 
 # 5) LANGUAGE & TOOLING STANDARDS
@@ -20,4 +20,4 @@ tags:
 - [[Python]] - `contains` [EXTRACTED]
 - [[Python Standards]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Claude
+#graphify/document #graphify/EXTRACTED #community/Community_350

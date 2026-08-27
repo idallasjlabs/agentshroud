@@ -1,12 +1,12 @@
 ---
 source_file: "docker/README.md"
 type: "document"
-community: "Readme (docker)"
+community: "Community 190"
 location: "L498"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_docker
+  - community/Community_190
 ---
 
 # Progressive-Trust Enforcement Mode (SCRUM-78)
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud Docker Configuration]] - `contains` [EXTRACTED]
 - [[README_41]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_docker
+#graphify/document #graphify/EXTRACTED #community/Community_190

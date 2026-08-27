@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/queue.py"
 type: "rationale"
-community: "Queue (approval_queue)"
+community: "Community 1104"
 location: "L42"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Queue_approval_queue
+  - community/Community_1104
 ---
 
 # Initialize approval queue          Args:             config: Approval queue conf
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.__init__()_5]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Queue_approval_queue
+#graphify/rationale #graphify/EXTRACTED #community/Community_1104

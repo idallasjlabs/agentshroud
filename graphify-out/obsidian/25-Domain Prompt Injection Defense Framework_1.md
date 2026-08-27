@@ -1,11 +1,11 @@
 ---
 source_file: "docs/agentshroud-knowledge.md"
 type: "concept"
-community: "Claude Security Audit Prompt (docs)"
+community: "Community 413"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Claude_Security_Audit_Prompt_docs
+  - community/Community_413
 ---
 
 # 25-Domain Prompt Injection Defense Framework
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[prompt_guard module (observatory mode — too aggressive for enforce)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Claude_Security_Audit_Prompt_docs
+#graphify/concept #graphify/INFERRED #community/Community_413

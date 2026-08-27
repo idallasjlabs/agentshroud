@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "Skill (i-mcpm-aws-profile)"
+community: "Community 188"
 location: "L296"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-mcpm-aws-profile
+  - community/Community_188
 ---
 
 # Best Practices
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[MCP-Specific_1]] - `contains` [EXTRACTED]
 - [[Organization_1]] - `contains` [EXTRACTED]
-- [[Security_4]] - `contains` [EXTRACTED]
+- [[Security_12]] - `contains` [EXTRACTED]
 - [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-mcpm-aws-profile
+#graphify/document #graphify/EXTRACTED #community/Community_188

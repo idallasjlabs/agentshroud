@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-eightd/SKILL.md"
 type: "document"
-community: "Skill (i-eightd)"
+community: "Community 1312"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-eightd
+  - community/Community_1312
 ---
 
 # 8D Root Cause Analysis Skill
@@ -15,4 +15,4 @@ tags:
 - [[AWS Agent (data retrieval layer)]] - `references` [EXTRACTED]
 - [[AWS Athena  BESS Telemetry Data Lake]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-eightd
+#graphify/document #graphify/EXTRACTED #community/Community_1312

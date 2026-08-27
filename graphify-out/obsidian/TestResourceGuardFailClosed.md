@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_round2_hardening.py"
 type: "code"
-community: "Resource Guard & Local Model Parity"
+community: "Community 7"
 location: "L10"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Resource_Guard__Local_Model_Parity
+  - community/Community_7
 ---
 
 # TestResourceGuardFailClosed
@@ -24,4 +24,4 @@ tags:
 - [[Verify resource check methods return False (deny) on exception.]] - `rationale_for` [EXTRACTED]
 - [[test_round2_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Resource_Guard__Local_Model_Parity
+#graphify/code #graphify/INFERRED #community/Community_7

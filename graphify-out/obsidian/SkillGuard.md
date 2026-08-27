@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "code"
-community: "Skill Guard (security)"
+community: "Community 110"
 location: "L296"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Skill_Guard_security
+  - community/Community_110
 ---
 
 # SkillGuard
@@ -42,9 +42,9 @@ tags:
 - [[TestSyncScriptPreflight]] - `uses` [INFERRED]
 - [[_skills_reload_impl()]] - `calls` [EXTRACTED]
 - [[api.py]] - `imports` [EXTRACTED]
-- [[main()_12]] - `calls` [EXTRACTED]
+- [[main()_13]] - `calls` [EXTRACTED]
 - [[scan.py]] - `imports` [EXTRACTED]
 - [[skill_guard.py]] - `contains` [EXTRACTED]
 - [[test_skill_guard.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Skill_Guard_security
+#graphify/code #graphify/INFERRED #community/Community_110

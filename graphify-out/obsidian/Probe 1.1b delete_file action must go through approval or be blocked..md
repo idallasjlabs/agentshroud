@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "rationale"
-community: "Redteam Probes"
+community: "Community 66"
 location: "L91"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Redteam_Probes
+  - community/Community_66
 ---
 
 # Probe 1.1b: delete_file action must go through approval or be blocked.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_exec_delete_file_requires_approval()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Redteam_Probes
+#graphify/rationale #graphify/EXTRACTED #community/Community_66

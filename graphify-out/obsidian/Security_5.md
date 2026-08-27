@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-icloud/SKILL.md"
+source_file: "CHANGELOG.md"
 type: "document"
-community: "Skill (i-icloud)"
-location: "L135"
+community: "Community 646"
+location: "L595"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-icloud
+  - community/Community_646
 ---
 
 # Security
 
 ## Connections
-- [[iCloud Services_2]] - `contains` [EXTRACTED]
+- [[1.1.0 — feat-v1.4.0-shroud-another-bot — Hermes (2026-05-29)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-icloud
+#graphify/document #graphify/EXTRACTED #community/Community_646

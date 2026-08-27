@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-03-05-r2.md"
 type: "document"
-community: "Phase Review 2026 03 (reviews)"
+community: "Community 636"
 location: "L104"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_Review_2026_03_reviews
+  - community/Community_636
 ---
 
 # I1: Missing trailing newlines in route files
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🟢 INFO (nice to have)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_Review_2026_03_reviews
+#graphify/document #graphify/EXTRACTED #community/Community_636

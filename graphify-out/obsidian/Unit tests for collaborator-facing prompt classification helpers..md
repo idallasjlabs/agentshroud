@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Telegram Proxy Inbound"
+community: "Community 41"
 location: "L6975"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Inbound
+  - community/Community_41
 ---
 
 # Unit tests for collaborator-facing prompt classification helpers.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestCollaboratorPromptClassifiers]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Inbound
+#graphify/rationale #graphify/EXTRACTED #community/Community_41

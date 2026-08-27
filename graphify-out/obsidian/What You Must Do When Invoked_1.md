@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/graphify/SKILL.md"
 type: "document"
-community: "Skill (graphify)"
+community: "Community 356"
 location: "L47"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_graphify
+  - community/Community_356
 ---
 
 # What You Must Do When Invoked
@@ -24,4 +24,4 @@ tags:
 - [[Step 9 - Save manifest, update cost tracker, clean up, and report_1]] - `contains` [EXTRACTED]
 - [[Steps 6b-8 - Wiki, Neo4j, SVG, GraphML, MCP, benchmark (only on their flags)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_graphify
+#graphify/document #graphify/EXTRACTED #community/Community_356

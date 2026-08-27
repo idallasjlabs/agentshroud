@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_network_validator.py"
 type: "rationale"
-community: "Network Validator (security)"
+community: "Community 68"
 location: "L127"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Network_Validator_security
+  - community/Community_68
 ---
 
 # Test that missing internal network is flagged.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_validate_docker_compose_config_missing_internal_network()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Network_Validator_security
+#graphify/rationale #graphify/EXTRACTED #community/Community_68

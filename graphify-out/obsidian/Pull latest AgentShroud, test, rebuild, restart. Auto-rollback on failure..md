@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "Api (web)"
+community: "Community 45"
 location: "L681"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Api_web
+  - community/Community_45
 ---
 
 # Pull latest AgentShroud, test, rebuild, restart. Auto-rollback on failure.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[upgrade_agentshroud()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Api_web
+#graphify/rationale #graphify/EXTRACTED #community/Community_45

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/agentshroud-blueteam/references/steve-hay-assessment.md"
 type: "document"
-community: "Steve Hay Assessment (references)"
+community: "Community 1522"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Steve_Hay_Assessment_references
+  - community/Community_1522
 ---
 
 # feature-priorities
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[steve-hay-assessment]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Steve_Hay_Assessment_references
+#graphify/document #graphify/EXTRACTED #community/Community_1522

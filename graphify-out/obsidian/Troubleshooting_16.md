@@ -1,20 +1,20 @@
 ---
-source_file: "docs/architecture/WORKSPACE_USAGE.md"
+source_file: "docker/scripts/README.md"
 type: "document"
-community: "Workspace Usage (architecture)"
-location: "L275"
+community: "Community 304"
+location: "L247"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Workspace_Usage_architecture
+  - community/Community_304
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[OpenClaw Workspace Usage Guide]] - `contains` [EXTRACTED]
-- [[Problem Container not running]] - `contains` [EXTRACTED]
-- [[Problem File not found]] - `contains` [EXTRACTED]
-- [[Problem Permission denied]] - `contains` [EXTRACTED]
+- [[Missing auth for API providers]] - `contains` [EXTRACTED]
+- [[Container unhealthy]] - `contains` [EXTRACTED]
+- [[OpenClaw Management Scripts]] - `contains` [EXTRACTED]
+- [[Telegram bot not responding]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Workspace_Usage_architecture
+#graphify/document #graphify/EXTRACTED #community/Community_304

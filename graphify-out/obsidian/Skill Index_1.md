@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-mc/SKILL.md"
 type: "document"
-community: "Skill (i-mc)"
+community: "Community 749"
 location: "L94"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-mc
+  - community/Community_749
 ---
 
 # Skill Index
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GSDE&G Development Master Checklist_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-mc
+#graphify/document #graphify/EXTRACTED #community/Community_749

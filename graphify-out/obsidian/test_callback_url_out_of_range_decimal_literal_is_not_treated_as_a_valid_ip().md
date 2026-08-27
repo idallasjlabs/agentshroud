@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_policy.py"
 type: "code"
-community: "A2a Policy"
+community: "Community 82"
 location: "L465"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2a_Policy
+  - community/Community_82
 ---
 
 # test_callback_url_out_of_range_decimal_literal_is_not_treated_as_a_valid_ip()
@@ -16,4 +16,4 @@ tags:
 - [[is_safe_a2a_callback_url()]] - `calls` [EXTRACTED]
 - [[test_a2a_policy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2a_Policy
+#graphify/code #graphify/EXTRACTED #community/Community_82

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/agentshroud-ssh-exec.sh"
 type: "code"
-community: "Developer (workspace)"
+community: "Community 449"
 location: "L117"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Developer_workspace
+  - community/Community_449
 ---
 
 # _json_escape()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[agentshroud-ssh-exec.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Developer_workspace
+#graphify/code #graphify/EXTRACTED #community/Community_449

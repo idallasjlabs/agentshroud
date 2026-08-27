@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/DEVICE_PAIRING.md"
 type: "document"
-community: "Device Pairing (setup)"
+community: "Community 776"
 location: "L46"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Device_Pairing_setup
+  - community/Community_776
 ---
 
 # Finding Pending Pairing Requests
@@ -17,4 +17,4 @@ tags:
 - [[Method 2 View Raw Pending File]] - `contains` [EXTRACTED]
 - [[Method 3 Check Container Logs]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Device_Pairing_setup
+#graphify/document #graphify/EXTRACTED #community/Community_776

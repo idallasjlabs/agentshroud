@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/TELEGRAM_ISSUES.md"
 type: "document"
-community: "Telegram Issues (project)"
+community: "Community 514"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Telegram_Issues_project
+  - community/Community_514
 ---
 
 # TELEGRAM_ISSUES.md
@@ -27,4 +27,4 @@ tags:
 - [[apply-patches.js Invalid Config Injection Bug]] - `references` [EXTRACTED]
 - [[iMessage Integration Permissions Issue]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Telegram_Issues_project
+#graphify/document #graphify/EXTRACTED #community/Community_514

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_config.py"
 type: "rationale"
-community: "Group Config & Collaborator Responses"
+community: "Community 81"
 location: "L254"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Group_Config__Collaborator_Responses
+  - community/Community_81
 ---
 
 # Per-user override beats group-derived collab_mode.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_user_override_takes_precedence_over_group()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Group_Config__Collaborator_Responses
+#graphify/rationale #graphify/EXTRACTED #community/Community_81

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_intel_endpoint.py"
 type: "code"
-community: "Intel Endpoint"
+community: "Community 113"
 location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Intel_Endpoint
+  - community/Community_113
 ---
 
 # _draft()
@@ -21,4 +21,4 @@ tags:
 - [[.test_too_many_entries_rejected()]] - `calls` [EXTRACTED]
 - [[test_intel_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Intel_Endpoint
+#graphify/code #graphify/EXTRACTED #community/Community_113

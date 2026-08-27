@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy.py"
 type: "code"
-community: "Http Proxy"
+community: "Community 30"
 location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Http_Proxy
+  - community/Community_30
 ---
 
 # test_proxy_created_with_custom_web_proxy()
@@ -17,4 +17,4 @@ tags:
 - [[WebProxyConfig]] - `calls` [EXTRACTED]
 - [[test_http_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Http_Proxy
+#graphify/code #graphify/EXTRACTED #community/Community_30

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "Web Api Coverage"
+community: "Community 31"
 location: "L209"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Web_Api_Coverage
+  - community/Community_31
 ---
 
 # TestStatus
@@ -19,4 +19,4 @@ tags:
 - [[UpdateRequest]] - `uses` [INFERRED]
 - [[test_web_api_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Web_Api_Coverage
+#graphify/code #graphify/EXTRACTED #community/Community_31

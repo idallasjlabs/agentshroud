@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/troubleshooting.md"
 type: "document"
-community: "Troubleshooting (runbooks)"
+community: "Community 514"
 location: "L93"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Troubleshooting_runbooks
+  - community/Community_514
 ---
 
 # Container Keeps Restarting
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Common Issues_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Troubleshooting_runbooks
+#graphify/document #graphify/EXTRACTED #community/Community_514

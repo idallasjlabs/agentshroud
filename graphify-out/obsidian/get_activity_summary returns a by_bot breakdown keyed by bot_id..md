@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_tracker.py"
 type: "rationale"
-community: "Collaborator Tracker"
+community: "Community 42"
 location: "L328"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Collaborator_Tracker
+  - community/Community_42
 ---
 
 # get_activity_summary returns a by_bot breakdown keyed by bot_id.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_get_activity_summary_includes_by_bot()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Tracker
+#graphify/rationale #graphify/EXTRACTED #community/Community_42

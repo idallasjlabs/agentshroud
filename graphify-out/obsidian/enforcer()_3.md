@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "Tool ACL & Group RBAC"
+community: "Community 75"
 location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tool_ACL__Group_RBAC
+  - community/Community_75
 ---
 
 # enforcer()
@@ -16,4 +16,4 @@ tags:
 - [[ToolACLEnforcer]] - `calls` [EXTRACTED]
 - [[test_tool_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Tool_ACL__Group_RBAC
+#graphify/code #graphify/EXTRACTED #community/Community_75

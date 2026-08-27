@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/runbook.md"
 type: "document"
-community: "Runbook (operations)"
+community: "Community 1110"
 location: "L677"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Runbook_operations
+  - community/Community_1110
 ---
 
 # SSL/TLS Certificate Issues
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[8. Common Troubleshooting Scenarios]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Runbook_operations
+#graphify/document #graphify/EXTRACTED #community/Community_1110

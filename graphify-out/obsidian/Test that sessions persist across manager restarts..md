@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "Middleware & Session Isolation"
+community: "Community 56"
 location: "L582"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Middleware__Session_Isolation
+  - community/Community_56
 ---
 
 # Test that sessions persist across manager restarts.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_session_persistence()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Middleware__Session_Isolation
+#graphify/rationale #graphify/EXTRACTED #community/Community_56

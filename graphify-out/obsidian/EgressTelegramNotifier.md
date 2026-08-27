@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_egress_notify.py"
 type: "code"
-community: "Telegram Egress Notify (proxy)"
+community: "Community 361"
 location: "L61"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Telegram_Egress_Notify_proxy
+  - community/Community_361
 ---
 
 # EgressTelegramNotifier
@@ -38,4 +38,4 @@ tags:
 - [[test_egress_callback_stale.py]] - `imports` [EXTRACTED]
 - [[test_egress_telegram_notify.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Telegram_Egress_Notify_proxy
+#graphify/code #graphify/EXTRACTED #community/Community_361

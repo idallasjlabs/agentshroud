@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "code"
-community: "Tool Result Pii"
+community: "Community 513"
 location: "L440"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Tool_Result_Pii
+  - community/Community_513
 ---
 
 # TestRealWorldScenarios
@@ -24,4 +24,4 @@ tags:
 - [[ToolResultSanitizer]] - `uses` [INFERRED]
 - [[test_tool_result_pii.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Tool_Result_Pii
+#graphify/code #graphify/INFERRED #community/Community_513

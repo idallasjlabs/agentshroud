@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/system-architecture.md"
 type: "document"
-community: "System Architecture (architecture)"
+community: "Community 701"
 location: "L203"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/System_Architecture_architecture
+  - community/Community_701
 ---
 
 # Technology Stack
@@ -17,4 +17,4 @@ tags:
 - [[Monitoring and Observability]] - `contains` [EXTRACTED]
 - [[Security Technologies]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/System_Architecture_architecture
+#graphify/document #graphify/EXTRACTED #community/Community_701

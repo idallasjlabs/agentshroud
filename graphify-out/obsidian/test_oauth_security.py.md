@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_oauth_security.py"
 type: "code"
-community: "OAuth & Metadata Guard"
+community: "Community 64"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OAuth__Metadata_Guard
+  - community/Community_64
 ---
 
 # test_oauth_security.py
@@ -20,4 +20,4 @@ tags:
 - [[oauth_security.py]] - `references` [EXTRACTED]
 - [[validator()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OAuth__Metadata_Guard
+#graphify/code #graphify/EXTRACTED #community/Community_64

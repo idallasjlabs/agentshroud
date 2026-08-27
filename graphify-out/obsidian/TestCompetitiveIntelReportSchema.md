@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_intel_pipeline.py"
 type: "code"
-community: "Intel Pipeline"
+community: "Community 133"
 location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Intel_Pipeline
+  - community/Community_133
 ---
 
 # TestCompetitiveIntelReportSchema
@@ -28,4 +28,4 @@ tags:
 - [[Tests for Pydantic model validation.]] - `rationale_for` [EXTRACTED]
 - [[test_intel_pipeline.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Intel_Pipeline
+#graphify/code #graphify/EXTRACTED #community/Community_133

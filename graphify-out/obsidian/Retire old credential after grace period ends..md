@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "rationale"
-community: "Key Rotation (security)"
+community: "Community 160"
 location: "L449"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Key_Rotation_security
+  - community/Community_160
 ---
 
 # Retire old credential after grace period ends.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._retire_old_credential_after_grace_period()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Key_Rotation_security
+#graphify/rationale #graphify/EXTRACTED #community/Community_160

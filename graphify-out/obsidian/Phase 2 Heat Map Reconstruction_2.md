@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-sec-defense/SKILL.md"
 type: "document"
-community: "Skill (i-sec-defense)"
+community: "Community 619"
 location: "L56"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-sec-defense
+  - community/Community_619
 ---
 
 # Phase 2: Heat Map Reconstruction
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Audit Procedure_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-sec-defense
+#graphify/document #graphify/EXTRACTED #community/Community_619

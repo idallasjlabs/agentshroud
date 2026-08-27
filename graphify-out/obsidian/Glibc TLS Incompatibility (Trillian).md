@@ -1,11 +1,11 @@
 ---
 source_file: "docs/project/TELEGRAM_ISSUES.md"
 type: "rationale"
-community: "Telegram Issues (project)"
+community: "Community 205"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Issues_project
+  - community/Community_205
 ---
 
 # Glibc TLS Incompatibility (Trillian)
@@ -14,4 +14,4 @@ tags:
 - [[Glibc TLS Block Allocation Fix (Container Rebuild)]] - `conceptually_related_to` [INFERRED]
 - [[TELEGRAM_ISSUES]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Issues_project
+#graphify/rationale #graphify/EXTRACTED #community/Community_205

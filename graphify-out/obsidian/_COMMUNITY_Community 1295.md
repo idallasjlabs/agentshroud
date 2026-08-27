@@ -1,0 +1,21 @@
+---
+type: community
+members: 4
+---
+
+# Community 1295
+
+**Members:** 4 nodes
+
+## Members
+- [[Canvas Upstream Hostname Regression (v1.1.0 container rename)]] - rationale - gateway/tests/test_canvas_proxy.py
+- [[test_canvas_proxy.py]] - code - gateway/tests/test_canvas_proxy.py
+- [[test_default_upstream_is_current_container_name()]] - code - gateway/tests/test_canvas_proxy.py
+- [[test_env_override_takes_precedence()]] - code - gateway/tests/test_canvas_proxy.py
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/Community_1295
+SORT file.name ASC
+```

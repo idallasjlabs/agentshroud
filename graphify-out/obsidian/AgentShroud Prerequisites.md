@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/PREREQUISITES.md"
 type: "document"
-community: "Prerequisites (reference)"
+community: "Community 329"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Prerequisites_reference
+  - community/Community_329
 ---
 
 # AgentShroud Prerequisites
@@ -29,4 +29,4 @@ tags:
 - [[🗂️ File Structure]] - `contains` [EXTRACTED]
 - [[🚀 Quick Start Command]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Prerequisites_reference
+#graphify/document #graphify/EXTRACTED #community/Community_329

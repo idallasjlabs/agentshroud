@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_approval_routing.py"
 type: "rationale"
-community: "Approval Queue"
+community: "Community 121"
 location: "L178"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval_Queue
+  - community/Community_121
 ---
 
 # When group_chat_id is None, only the owner receives a notification.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_dm_approval_routes_only_to_owner()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval_Queue
+#graphify/rationale #graphify/EXTRACTED #community/Community_121

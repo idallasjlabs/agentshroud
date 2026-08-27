@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/09 - Diagrams/Network Topology.md"
 type: "rationale"
-community: "Network topology (09 - Diagrams)"
+community: "Community 603"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Network_topology_09_-_Diagrams
+  - community/Community_603
 ---
 
 # Bot Network Isolation Design
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Network Topology_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Network_topology_09_-_Diagrams
+#graphify/rationale #graphify/EXTRACTED #community/Community_603

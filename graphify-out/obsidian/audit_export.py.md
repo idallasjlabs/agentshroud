@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/audit_export.py"
 type: "code"
-community: "Audit Export"
+community: "Community 232"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Audit_Export
+  - community/Community_232
 ---
 
 # audit_export.py
@@ -20,4 +20,4 @@ tags:
 - [[SKILL_190]] - `references` [EXTRACTED]
 - [[audit_store.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Audit_Export
+#graphify/code #graphify/EXTRACTED #community/Community_232

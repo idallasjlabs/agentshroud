@@ -1,21 +1,17 @@
 ---
-source_file: "scripts/export-bot-conversations.py"
+source_file: "scripts/check_benchmark_regression.py"
 type: "code"
-community: "Export Bot Conversations (scripts)"
-location: "L232"
+community: "Community 1402"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Export_Bot_Conversations_scripts
+  - community/Community_1402
 ---
 
 # main()
 
 ## Connections
-- [[Path_42]] - `calls` [EXTRACTED]
-- [[_parse_since()]] - `calls` [EXTRACTED]
-- [[export-bot-conversations.py]] - `contains` [EXTRACTED]
-- [[export_hermes()]] - `calls` [EXTRACTED]
-- [[export_openclaw()]] - `calls` [EXTRACTED]
+- [[check_benchmark_regression.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Export_Bot_Conversations_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_1402

@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[__init__.py_6]] - code - gateway/ingest_api/routes/__init__.py
+- [[SkillGuard.scan_file()]] - code - gateway/security/skill_guard.py
 
 ## Live Query (requires Dataview plugin)
 

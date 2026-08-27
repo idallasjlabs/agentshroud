@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "rationale"
-community: "Aiosqlite (05 - Dependencies)"
+community: "Community 63"
 location: "L120"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Aiosqlite_05_-_Dependencies
+  - community/Community_63
 ---
 
 # Response after content is ingested, sanitized, and logged
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ForwardResponse]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Aiosqlite_05_-_Dependencies
+#graphify/rationale #graphify/EXTRACTED #community/Community_63

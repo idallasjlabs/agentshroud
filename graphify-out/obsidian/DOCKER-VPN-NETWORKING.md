@@ -1,12 +1,12 @@
 ---
 source_file: "docker/DOCKER-VPN-NETWORKING.md"
 type: "document"
-community: "Readme (dashboard)"
+community: "Community 787"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_dashboard
+  - community/Community_787
 ---
 
 # DOCKER-VPN-NETWORKING.md
@@ -21,4 +21,4 @@ tags:
 - [[patch-telegram-sdk.sh]] - `references` [EXTRACTED]
 - [[telegram_proxy.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_dashboard
+#graphify/document #graphify/EXTRACTED #community/Community_787

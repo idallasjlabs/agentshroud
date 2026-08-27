@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/init-openclaw-config.sh"
 type: "code"
-community: "Start Agentshroud (scripts)"
+community: "Community 449"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Start_Agentshroud_scripts
+  - community/Community_449
 ---
 
 # init-openclaw-config.sh
@@ -14,7 +14,6 @@ tags:
 ## Connections
 - [[AgentShroud Docker Compose (Production)]] - `shares_data_with` [EXTRACTED]
 - [[BRAND_1]] - `references` [EXTRACTED]
-- [[CONTINUE-2026-08-17]] - `references` [EXTRACTED]
 - [[DEVELOPER]] - `references` [EXTRACTED]
 - [[IDENTITY]] - `references` [EXTRACTED]
 - [[Jira Dev-Ticket Helper Module]] - `references` [EXTRACTED]
@@ -30,4 +29,4 @@ tags:
 - [[start-agentshroud.sh]] - `calls` [EXTRACTED]
 - [[start.sh]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Start_Agentshroud_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_449

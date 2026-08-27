@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "rationale"
-community: "Pipeline Unit"
+community: "Community 22"
 location: "L687"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Pipeline_Unit
+  - community/Community_22
 ---
 
 # FULL-trust owner response: scan runs, detection audited, delivery NOT blocked.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_full_trust_tool_result_injection_audited_not_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Pipeline_Unit
+#graphify/rationale #graphify/EXTRACTED #community/Community_22

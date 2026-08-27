@@ -1,11 +1,11 @@
 ---
 source_file: "docs/data/schema-documentation.md"
 type: "code"
-community: "Diagram 03 Gateway Components (images)"
+community: "Community 170"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Diagram_03_Gateway_Components_images
+  - community/Community_170
 ---
 
 # mcp-config.yml
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[MCP Proxy]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Diagram_03_Gateway_Components_images
+#graphify/code #graphify/EXTRACTED #community/Community_170

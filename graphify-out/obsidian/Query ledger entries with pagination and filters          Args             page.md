@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "rationale"
-community: "Aiosqlite (05 - Dependencies)"
+community: "Community 1"
 location: "L215"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Aiosqlite_05_-_Dependencies
+  - community/Community_1
 ---
 
 # Query ledger entries with pagination and filters          Args:             page
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.query()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Aiosqlite_05_-_Dependencies
+#graphify/rationale #graphify/EXTRACTED #community/Community_1

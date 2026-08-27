@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "rationale"
-community: "Outbound Filter"
+community: "Community 1338"
 location: "L137"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Outbound_Filter
+  - community/Community_1338
 ---
 
 # Compile all filter patterns into regex objects.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._compile_patterns()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Outbound_Filter
+#graphify/rationale #graphify/EXTRACTED #community/Community_1338

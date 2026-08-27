@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.2/red-team-assessment-v1.2.0.md"
 type: "document"
-community: "Red Team Assessment V1.2.0 (v1.2)"
+community: "Community 930"
 location: "L382"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Red_Team_Assessment_V120_v12
+  - community/Community_930
 ---
 
 # §5 — Acceptance Rationales (Signed Off)
@@ -16,4 +16,4 @@ tags:
 - [[RT-00 — Tool inventory disclosure]] - `contains` [EXTRACTED]
 - [[RT-MB4 — Hermes cron job injection via jobs.yaml]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Red_Team_Assessment_V120_v12
+#graphify/document #graphify/EXTRACTED #community/Community_930

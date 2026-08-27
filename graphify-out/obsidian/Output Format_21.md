@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-qa/SKILL.md"
 type: "document"
-community: "Skill (i-qa)"
+community: "Community 436"
 location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-qa
+  - community/Community_436
 ---
 
 # Output Format
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Quality Assurance (QA)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-qa
+#graphify/document #graphify/EXTRACTED #community/Community_436

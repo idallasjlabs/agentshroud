@@ -1,11 +1,11 @@
 ---
 source_file: "scripts/backup-bot-memory.sh"
 type: "concept"
-community: "Iec 62443 Matrix (compliance)"
+community: "Community 723"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Iec_62443_Matrix_compliance
+  - community/Community_723
 ---
 
 # agentshroud-openclaw bot container
@@ -15,4 +15,4 @@ tags:
 - [[disaster-recovery-backup.sh]] - `references` [EXTRACTED]
 - [[export_openclaw()]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Iec_62443_Matrix_compliance
+#graphify/concept #graphify/EXTRACTED #community/Community_723

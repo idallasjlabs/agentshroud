@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md"
 type: "document"
-community: "Recovery Plan Partial (recovery)"
+community: "Community 811"
 location: "L62"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Recovery_Plan_Partial_recovery
+  - community/Community_811
 ---
 
 # PHASE 1: SECURITY FIX ✅ COMPLETE (v0.4.0)
@@ -16,4 +16,4 @@ tags:
 - [[1.2 Fix Shipped ✅]] - `contains` [EXTRACTED]
 - [[AgentShroud Recovery Plan v0.4.0_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Recovery_Plan_Partial_recovery
+#graphify/document #graphify/EXTRACTED #community/Community_811

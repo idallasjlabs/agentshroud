@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/cron_state_monitor.py"
 type: "rationale"
-community: "Cron State Monitor"
+community: "Community 102"
 location: "L67"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Cron_State_Monitor
+  - community/Community_102
 ---
 
 # Poll bot cron stores; dispatch AlertDispatcher alerts on failures.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CronStateMonitor]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Cron_State_Monitor
+#graphify/rationale #graphify/EXTRACTED #community/Community_102

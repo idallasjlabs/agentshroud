@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "code"
-community: "Security Fixes & SSH Write Endpoint"
+community: "Community 38"
 location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Fixes__SSH_Write_Endpoint
+  - community/Community_38
 ---
 
 # MultiAgentRouter
@@ -44,6 +44,7 @@ tags:
 - [[_DropInvalidHTTPRequestFilter]] - `uses` [INFERRED]
 - [[client()_16]] - `calls` [EXTRACTED]
 - [[client()_17]] - `calls` [EXTRACTED]
+- [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[main.py_3]] - `references` [EXTRACTED]
 - [[router()_2]] - `calls` [EXTRACTED]
@@ -59,4 +60,4 @@ tags:
 - [[test_ssh_endpoints.py]] - `imports` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Fixes__SSH_Write_Endpoint
+#graphify/code #graphify/EXTRACTED #community/Community_38

@@ -1,12 +1,12 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "Claude"
+community: "Community 1277"
 location: "L270"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Claude
+  - community/Community_1277
 ---
 
 # 7) AGENTSHROUD-SPECIFIC CONSTRAINTS
@@ -18,4 +18,4 @@ tags:
 - [[Hard constraints]] - `contains` [EXTRACTED]
 - [[Key source directories]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Claude
+#graphify/document #graphify/EXTRACTED #community/Community_1277

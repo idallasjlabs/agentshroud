@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-03-05-r3.md"
 type: "document"
-community: "Phase Review 2026 03 (reviews)"
+community: "Community 728"
 location: "L66"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_Review_2026_03_reviews
+  - community/Community_728
 ---
 
 # R3-W2 — WARNING: Stale OCI label version in Dockerfile
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[R3 Findings (NEW — this round)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_Review_2026_03_reviews
+#graphify/document #graphify/EXTRACTED #community/Community_728

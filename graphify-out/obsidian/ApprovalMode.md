@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "Egress Approval (security)"
+community: "Community 9"
 location: "L37"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Egress_Approval_security
+  - community/Community_9
 ---
 
 # ApprovalMode
@@ -43,4 +43,4 @@ tags:
 - [[test_egress_approval.py]] - `imports` [EXTRACTED]
 - [[test_soc_router_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Egress_Approval_security
+#graphify/code #graphify/INFERRED #community/Community_9

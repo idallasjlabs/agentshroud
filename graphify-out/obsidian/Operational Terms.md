@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "document"
-community: "Glossary (project)"
+community: "Community 328"
 location: "L226"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Glossary_project
+  - community/Community_328
 ---
 
 # Operational Terms
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Glossary]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Glossary_project
+#graphify/document #graphify/EXTRACTED #community/Community_328

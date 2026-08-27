@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/system-architecture.md"
 type: "concept"
-community: "Trust Manager.py (Security Modules)"
+community: "Community 1259"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Trust_Managerpy_Security_Modules
+  - community/Community_1259
 ---
 
 # Dashboard (WebSocket)
@@ -15,4 +15,4 @@ tags:
 - [[Kill Switch (MonitorBlockIsolate)]] - `calls` [EXTRACTED]
 - [[Monitoring System Integration (WebhooksPrometheus)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/Trust_Managerpy_Security_Modules
+#graphify/concept #graphify/EXTRACTED #community/Community_1259

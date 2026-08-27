@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY-POLICY-FINAL.md"
 type: "document"
-community: "Security Policy Final (security)"
+community: "Community 450"
 location: "L85"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Policy_Final_security
+  - community/Community_450
 ---
 
 # 🔒 Security Benefits
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Security Policy - Final Decision]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Policy_Final_security
+#graphify/document #graphify/EXTRACTED #community/Community_450

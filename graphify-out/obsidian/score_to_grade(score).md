@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/health_report.py.md"
 type: "document"
-community: "Health Report.py (Security Modules)"
+community: "Community 537"
 location: "L56"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Health_Reportpy_Security_Modules
+  - community/Community_537
 ---
 
 # score_to_grade(score)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Function Details_40]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Health_Reportpy_Security_Modules
+#graphify/document #graphify/EXTRACTED #community/Community_537

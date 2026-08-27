@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "Shared Memory Write Acl"
+community: "Community 26"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Shared_Memory_Write_Acl
+  - community/Community_26
 ---
 
 # agent_isolation.py (AgentRegistry)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_group_isolation.py]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Shared_Memory_Write_Acl
+#graphify/code #graphify/EXTRACTED #community/Community_26

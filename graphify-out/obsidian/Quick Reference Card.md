@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/QUICK_REFERENCE.md"
 type: "document"
-community: "Quick Reference (reference)"
+community: "Community 725"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Quick_Reference_reference
+  - community/Community_725
 ---
 
 # Quick Reference Card
@@ -20,6 +20,6 @@ tags:
 - [[Most Common Commands]] - `contains` [EXTRACTED]
 - [[QUICK_REFERENCE]] - `contains` [EXTRACTED]
 - [[Telegram Bot]] - `contains` [EXTRACTED]
-- [[Troubleshooting_20]] - `contains` [EXTRACTED]
+- [[Troubleshooting_21]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Quick_Reference_reference
+#graphify/document #graphify/EXTRACTED #community/Community_725

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "rationale"
-community: "Security Audit & Watchtower Tests"
+community: "Community 212"
 location: "L226"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Audit__Watchtower_Tests
+  - community/Community_212
 ---
 
 # Multiple messages through pipeline concurrently — thread safety.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_pipeline_concurrent_messages()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Community_212

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/dashboard.py"
 type: "rationale"
-community: "Dashboard"
+community: "Community 793"
 location: "L562"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Dashboard
+  - community/Community_793
 ---
 
 # WebSocket for real-time activity feed
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[activity_websocket()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Dashboard
+#graphify/rationale #graphify/EXTRACTED #community/Community_793

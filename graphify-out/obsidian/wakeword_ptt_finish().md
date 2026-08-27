@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/wakeword.c"
 type: "code"
-community: "Ptt State (test_wakeword_state)"
-location: "L429"
+community: "Community 375"
+location: "L448"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Ptt_State_test_wakeword_state
+  - community/Community_375
 ---
 
 # wakeword_ptt_finish()
@@ -19,4 +19,4 @@ tags:
 - [[voice_task()]] - `calls` [INFERRED]
 - [[wakeword.c]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Ptt_State_test_wakeword_state
+#graphify/code #graphify/INFERRED #community/Community_375

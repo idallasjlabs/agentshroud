@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "Scanner Integration"
+community: "Community 123"
 location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Scanner_Integration
+  - community/Community_123
 ---
 
 # Any
@@ -29,4 +29,4 @@ tags:
 - [[_wazuh_not_run()]] - `references` [EXTRACTED]
 - [[_write_image_report()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Scanner_Integration
+#graphify/code #graphify/EXTRACTED #community/Community_123

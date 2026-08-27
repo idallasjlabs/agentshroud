@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-ps/SKILL.md"
 type: "document"
-community: "Skill (i-ps)"
+community: "Community 411"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-ps
+  - community/Community_411
 ---
 
 # Skill: Production Safety Checklist (PROD-SAFETY)
@@ -19,4 +19,4 @@ tags:
 - [[Role_65]] - `contains` [EXTRACTED]
 - [[SKILL_108]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-ps
+#graphify/document #graphify/EXTRACTED #community/Community_411

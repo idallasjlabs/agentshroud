@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "Mcp Permissions (proxy)"
+community: "Community 325"
 location: "L175"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Mcp_Permissions_proxy
+  - community/Community_325
 ---
 
 # TestToolPermission
@@ -40,4 +40,4 @@ tags:
 - [[PermissionLevel]] - `uses` [INFERRED]
 - [[test_mcp_permissions.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Mcp_Permissions_proxy
+#graphify/code #graphify/EXTRACTED #community/Community_325

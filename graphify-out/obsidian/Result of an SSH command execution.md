@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ssh_proxy/proxy.py"
 type: "rationale"
-community: "Ssh Proxy"
+community: "Community 1"
 location: "L27"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Ssh_Proxy
+  - community/Community_1
 ---
 
 # Result of an SSH command execution
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SSHResult]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Ssh_Proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_1

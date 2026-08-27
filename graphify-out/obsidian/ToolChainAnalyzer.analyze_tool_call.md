@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "Tool Chain Analyzer (security)"
+community: "Community 1120"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tool_Chain_Analyzer_security
+  - community/Community_1120
 ---
 
 # ToolChainAnalyzer.analyze_tool_call
@@ -15,4 +15,4 @@ tags:
 - [[ToolChainAnalyzer._detect_chain_patterns]] - `calls` [EXTRACTED]
 - [[ToolChainAnalyzer._trigger_alert]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Tool_Chain_Analyzer_security
+#graphify/code #graphify/EXTRACTED #community/Community_1120

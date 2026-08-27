@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_hermes_dashboard_bridge.py"
 type: "code"
-community: "Hermes Dashboard Bridge"
+community: "Community 757"
 location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Hermes_Dashboard_Bridge
+  - community/Community_757
 ---
 
 # TestRewriteRequestHeaders
@@ -20,4 +20,4 @@ tags:
 - [[.test_websocket_upgrade_keeps_connection_header_untouched()]] - `method` [EXTRACTED]
 - [[test_hermes_dashboard_bridge.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Hermes_Dashboard_Bridge
+#graphify/code #graphify/EXTRACTED #community/Community_757

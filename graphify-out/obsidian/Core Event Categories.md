@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/audit-specification.md"
 type: "document"
-community: "Audit Specification (security)"
+community: "Community 183"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Audit_Specification_security
+  - community/Community_183
 ---
 
 # Core Event Categories
@@ -19,4 +19,4 @@ tags:
 - [[5. System Events (SYS)]] - `contains` [EXTRACTED]
 - [[Audit Event Types and Schema]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Audit_Specification_security
+#graphify/document #graphify/EXTRACTED #community/Community_183

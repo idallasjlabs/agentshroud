@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "code"
-community: "Router"
+community: "Community 38"
 location: "L116"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Router
+  - community/Community_38
 ---
 
 # ForwardRequest
@@ -17,4 +17,4 @@ tags:
 - [[ForwardRequest]] - `uses` [INFERRED]
 - [[RouterConfig]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Router
+#graphify/code #graphify/INFERRED #community/Community_38

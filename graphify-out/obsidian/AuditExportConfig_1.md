@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/audit_export.py"
 type: "code"
-community: "Audit Export"
+community: "Community 9"
 location: "L25"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Audit_Export
+  - community/Community_9
 ---
 
 # AuditExportConfig
@@ -37,4 +37,4 @@ tags:
 - [[soc_export()]] - `calls` [EXTRACTED]
 - [[test_audit_export.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Audit_Export
+#graphify/code #graphify/INFERRED #community/Community_9

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/cron_state_monitor.py"
 type: "rationale"
-community: "Cron State Monitor"
+community: "Community 102"
 location: "L169"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Cron_State_Monitor
+  - community/Community_102
 ---
 
 # Evaluate one job.  Returns 1 if a NEW episode was alerted.          Flood guard
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._evaluate()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Cron_State_Monitor
+#graphify/rationale #graphify/EXTRACTED #community/Community_102

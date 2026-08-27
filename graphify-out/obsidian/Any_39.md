@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "Git Guard (security)"
+community: "Community 936"
 location: "L289"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Git_Guard_security
+  - community/Community_936
 ---
 
 # Any
@@ -15,4 +15,4 @@ tags:
 - [[.get_leakage_summary()]] - `references` [EXTRACTED]
 - [[.monitor_environment_access()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Git_Guard_security
+#graphify/code #graphify/EXTRACTED #community/Community_936

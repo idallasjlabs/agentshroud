@@ -1,16 +1,16 @@
 ---
 source_file: ".agents/skills/i-browser/package.json"
 type: "document"
-community: "Browse (scripts)"
+community: "Community 252"
 tags:
   - graphify/document
   - graphify/AMBIGUOUS
-  - community/Browse_scripts
+  - community/Community_252
 ---
 
 # browser-fetch package.json
 
 ## Connections
-- [[browserFetch()_5]] - `references` [AMBIGUOUS]
+- [[browserFetch()_4]] - `references` [AMBIGUOUS]
 
-#graphify/document #graphify/AMBIGUOUS #community/Browse_scripts
+#graphify/document #graphify/AMBIGUOUS #community/Community_252

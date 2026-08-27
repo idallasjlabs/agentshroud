@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-sad/SKILL.md"
 type: "document"
-community: "Skill (i-sad)"
+community: "Community 606"
 location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-sad
+  - community/Community_606
 ---
 
 # SECTION 1 — SYSTEM OVERVIEW (Plain English)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[System Audit & Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-sad
+#graphify/document #graphify/EXTRACTED #community/Community_606

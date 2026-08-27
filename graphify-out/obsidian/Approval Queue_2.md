@@ -1,11 +1,11 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "concept"
-community: "Gateway Security Module"
+community: "Community 90"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Community_90
 ---
 
 # Approval Queue
@@ -19,4 +19,4 @@ tags:
 - [[system-requirements]] - `references` [EXTRACTED]
 - [[use-cases]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/concept #graphify/EXTRACTED #community/Community_90

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "rationale"
-community: "Egress Filter"
+community: "Community 282"
 location: "L657"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Egress_Filter
+  - community/Community_282
 ---
 
 # Verify that OpenClaw's web_search/research destinations are pre-approved.      T
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestOpenClawResearchDomainsAllowlisted]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Egress_Filter
+#graphify/rationale #graphify/EXTRACTED #community/Community_282

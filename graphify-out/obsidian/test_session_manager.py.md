@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "code"
-community: "Session Manager"
+community: "Community 174"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Session_Manager
+  - community/Community_174
 ---
 
 # test_session_manager.py
@@ -27,4 +27,4 @@ tags:
 - [[mgr()_2]] - `contains` [EXTRACTED]
 - [[session_manager.py (UserSessionManager)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Session_Manager
+#graphify/code #graphify/EXTRACTED #community/Community_174

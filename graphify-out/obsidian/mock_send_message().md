@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_approval_routing.py"
 type: "code"
-community: "Group Approval Routing"
+community: "Community 121"
 location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Group_Approval_Routing
+  - community/Community_121
 ---
 
 # mock_send_message()
@@ -15,4 +15,4 @@ tags:
 - [[Mock async Telegram sendMessage to capture DM and group notifications.]] - `rationale_for` [EXTRACTED]
 - [[test_group_approval_routing.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Group_Approval_Routing
+#graphify/code #graphify/EXTRACTED #community/Community_121

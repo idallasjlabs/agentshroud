@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_config.py"
 type: "code"
-community: "Egress Filter"
+community: "Community 282"
 location: "L158"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress_Filter
+  - community/Community_282
 ---
 
 # EgressFilterConfig
@@ -114,4 +114,4 @@ tags:
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 - [[update_egress_allowlist()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress_Filter
+#graphify/code #graphify/EXTRACTED #community/Community_282

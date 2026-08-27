@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/SECURITY_PLAN.md"
 type: "document"
-community: "Security Plan (v0.8)"
+community: "Community 387"
 location: "L128"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Plan_v08
+  - community/Community_387
 ---
 
 # Roadmap
@@ -21,4 +21,4 @@ tags:
 - [[P4 Wire MCP Proxy ✅ DONE]] - `contains` [EXTRACTED]
 - [[P5 Wire SecurityPipeline to forward ✅ DONE]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Plan_v08
+#graphify/document #graphify/EXTRACTED #community/Community_387

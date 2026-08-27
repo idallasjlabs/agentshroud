@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Startup Errors.md"
 type: "document"
-community: "Startup errors (07 - Errors & Troubleshooting)"
+community: "Community 694"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Startup_errors_07_-_Errors__Troubleshooting
+  - community/Community_694
 ---
 
 # Startup Errors
@@ -17,4 +17,4 @@ tags:
 - [[Related Notes_63]] - `contains` [EXTRACTED]
 - [[Startup Errors_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Startup_errors_07_-_Errors__Troubleshooting
+#graphify/document #graphify/EXTRACTED #community/Community_694

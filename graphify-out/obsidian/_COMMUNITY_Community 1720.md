@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[i-kanban SKILL (stub)]] - document - docker/config/hermes/skills/i-kanban/SKILL.md
+- [[script.md (podcast pipeline dialogue artifact)]] - concept - docker/config/hermes/skills/i-mnemosyne/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

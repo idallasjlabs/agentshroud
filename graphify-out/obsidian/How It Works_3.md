@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/canvas/SKILL.md"
 type: "document"
-community: "Skill (canvas)"
+community: "Community 341"
 location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_canvas
+  - community/Community_341
 ---
 
 # How It Works
@@ -16,4 +16,4 @@ tags:
 - [[Canvas Skill]] - `contains` [EXTRACTED]
 - [[Tailscale Integration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_canvas
+#graphify/document #graphify/EXTRACTED #community/Community_341

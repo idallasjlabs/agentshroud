@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "Scanner Integration"
+community: "Community 1002"
 location: "L385"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Scanner_Integration
+  - community/Community_1002
 ---
 
 # Return True if clamd Unix socket /tmp/clamd.ctl is connectable.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_is_clamd_running()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Scanner_Integration
+#graphify/rationale #graphify/EXTRACTED #community/Community_1002

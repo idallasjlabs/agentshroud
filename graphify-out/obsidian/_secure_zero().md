@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "code"
-community: "Encrypted Store (security)"
+community: "Community 35"
 location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Encrypted_Store_security
+  - community/Community_35
 ---
 
 # _secure_zero()
@@ -22,4 +22,4 @@ tags:
 - [[encrypted_store.py]] - `contains` [EXTRACTED]
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Encrypted_Store_security
+#graphify/code #graphify/EXTRACTED #community/Community_35

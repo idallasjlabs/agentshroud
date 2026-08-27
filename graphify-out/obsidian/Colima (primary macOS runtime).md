@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/adr/ADR-006-multi-runtime-support.md"
 type: "concept"
-community: "Adr 006 Multi Runtime (adr)"
+community: "Community 208"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Adr_006_Multi_Runtime_adr
+  - community/Community_208
 ---
 
 # Colima (primary macOS runtime)
@@ -14,4 +14,4 @@ tags:
 - [[ADR-006 Multi-Runtime Container Support]] - `implements` [EXTRACTED]
 - [[Cisco AnyConnect VPN Networking Fix (col0 vmnet route)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Adr_006_Multi_Runtime_adr
+#graphify/concept #graphify/EXTRACTED #community/Community_208

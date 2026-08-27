@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_lockdown.py"
 type: "code"
-community: "Progressive Lockdown"
+community: "Community 62"
 location: "L55"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Progressive_Lockdown
+  - community/Community_62
 ---
 
 # PassthroughPipeline
@@ -19,4 +19,4 @@ tags:
 - [[_make_proxy()_1]] - `calls` [EXTRACTED]
 - [[test_progressive_lockdown.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Progressive_Lockdown
+#graphify/code #graphify/INFERRED #community/Community_62

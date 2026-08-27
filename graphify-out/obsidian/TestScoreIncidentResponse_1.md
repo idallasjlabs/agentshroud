@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "Scorecard Scoring"
+community: "Community 1280"
 location: "L519"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Scorecard_Scoring
+  - community/Community_1280
 ---
 
 # TestScoreIncidentResponse
@@ -18,4 +18,4 @@ tags:
 - [[.test_three_with_falco_and_wazuh()]] - `method` [EXTRACTED]
 - [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Scorecard_Scoring
+#graphify/code #graphify/EXTRACTED #community/Community_1280

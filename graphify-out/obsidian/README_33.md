@@ -1,17 +1,18 @@
 ---
 source_file: ".agents/skills/i-tdd/README.md"
 type: "document"
-community: "Readme (i-tdd)"
+community: "Community 592"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-tdd
+  - community/Community_592
 ---
 
 # README.md
 
 ## Connections
+- [[Test-Driven Development (TDD)]] - `contains` [EXTRACTED]
 - [[Test-Driven Development README]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-tdd
+#graphify/document #graphify/EXTRACTED #community/Community_592

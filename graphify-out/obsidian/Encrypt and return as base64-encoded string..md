@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "rationale"
-community: "Encrypted Store (security)"
+community: "Community 60"
 location: "L204"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Encrypted_Store_security
+  - community/Community_60
 ---
 
 # Encrypt and return as base64-encoded string.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.encrypt_b64()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Encrypted_Store_security
+#graphify/rationale #graphify/EXTRACTED #community/Community_60

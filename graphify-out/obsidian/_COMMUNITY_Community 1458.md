@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[Canvas Skill Architecture CanvasHost + NodeBridge + NodeApp]] - concept - skills/openclaw/canvas/SKILL.md
-- [[OpenClaw Skill canvas (HTML display on connected nodes)]] - document - skills/openclaw/canvas/SKILL.md
+- [[SKILL_135]] - document - docker/config/openclaw/skills/i-bdd/SKILL.md
+- [[Skill bdd_2]] - document - docker/config/openclaw/skills/i-bdd/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

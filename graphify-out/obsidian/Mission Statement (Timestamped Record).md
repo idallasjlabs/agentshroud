@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/legal/PRIOR-USE.md"
 type: "document"
-community: "Prior Use (legal)"
+community: "Community 1037"
 location: "L37"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Prior_Use_legal
+  - community/Community_1037
 ---
 
 # Mission Statement (Timestamped Record)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud™ — Trademark Prior Use Record]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Prior_Use_legal
+#graphify/document #graphify/EXTRACTED #community/Community_1037

@@ -1,15 +1,17 @@
 ---
 type: community
-members: 2
+members: 4
 ---
 
 # Community 1541
 
-**Members:** 2 nodes
+**Members:** 4 nodes
 
 ## Members
-- [[.test_product_name_not_redacted()]] - code - gateway/tests/test_prompt_protection.py
-- [[Product name 'agentshroud' and 'agentshroud-openclaw' are public branding — must]] - rationale - gateway/tests/test_prompt_protection.py
+- [[2. Security Value Audit]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[⚠️ Partial Value  Needs Hardening]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[✅ Genuine Security Value]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[🚫 Security Theater]] - document - docs/planning/reviews/phase-review-2026-02-23.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +21,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_docsrunbooks]]
+- 1 edge to [[_COMMUNITY_Community 135]]
 
 ## Top bridge nodes
-- [[.test_product_name_not_redacted()]] - degree 2, connects to 1 community
+- [[2. Security Value Audit]] - degree 4, connects to 1 community

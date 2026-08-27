@@ -1,12 +1,12 @@
 ---
 source_file: "branding/QUICK-REFERENCE.md"
 type: "document"
-community: "Quick Reference (branding)"
+community: "Community 555"
 location: "L61"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Quick_Reference_branding
+  - community/Community_555
 ---
 
 # Logo Usage Rules
@@ -16,4 +16,4 @@ tags:
 - [[✅ Do]] - `contains` [EXTRACTED]
 - [[❌ Don't]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Quick_Reference_branding
+#graphify/document #graphify/EXTRACTED #community/Community_555

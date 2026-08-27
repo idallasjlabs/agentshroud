@@ -1,11 +1,11 @@
 ---
 source_file: "docs/runbooks/RUNBOOK.md"
 type: "concept"
-community: "Telegram Issues (project)"
+community: "Community 205"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Telegram_Issues_project
+  - community/Community_205
 ---
 
 # Multi-Host Infrastructure (Marvin/Trillian/Pi)
@@ -14,4 +14,4 @@ tags:
 - [[RUNBOOK]] - `references` [EXTRACTED]
 - [[raspberry-pi]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Telegram_Issues_project
+#graphify/concept #graphify/INFERRED #community/Community_205

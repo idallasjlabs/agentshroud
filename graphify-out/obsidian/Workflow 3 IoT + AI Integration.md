@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "Distributed Openclaw Node Architecture (architecture)"
+community: "Community 610"
 location: "L382"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Distributed_Openclaw_Node_Architecture_architecture
+  - community/Community_610
 ---
 
 # Workflow 3: IoT + AI Integration
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Phase 5 Distributed Workflows]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Distributed_Openclaw_Node_Architecture_architecture
+#graphify/document #graphify/EXTRACTED #community/Community_610

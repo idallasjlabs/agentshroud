@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-03-05-r2.md"
 type: "document"
-community: "Phase Review 2026 03 (reviews)"
+community: "Community 1251"
 location: "L78"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_Review_2026_03_reviews
+  - community/Community_1251
 ---
 
 # W2: Redundant function-level `import threading` in `lifespan.py`
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🟡 WARNINGS (should fix)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_Review_2026_03_reviews
+#graphify/document #graphify/EXTRACTED #community/Community_1251

@@ -1,12 +1,12 @@
 ---
 source_file: "AGENTS.md"
 type: "document"
-community: "Agents"
+community: "Community 350"
 location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Agents
+  - community/Community_350
 ---
 
 # Guidance for ChatGPT Codex CLI when working in this repository.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AGENTS]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Agents
+#graphify/document #graphify/EXTRACTED #community/Community_350

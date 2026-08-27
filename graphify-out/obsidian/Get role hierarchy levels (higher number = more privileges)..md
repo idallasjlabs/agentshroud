@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "rationale"
-community: "RBAC & Ingest Middleware"
+community: "Community 15"
 location: "L343"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBAC__Ingest_Middleware
+  - community/Community_15
 ---
 
 # Get role hierarchy levels (higher number = more privileges).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_role_hierarchy()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBAC__Ingest_Middleware
+#graphify/rationale #graphify/EXTRACTED #community/Community_15

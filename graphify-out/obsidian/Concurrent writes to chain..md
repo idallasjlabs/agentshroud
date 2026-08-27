@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "rationale"
-community: "Audit Chain"
+community: "Community 1"
 location: "L215"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Audit_Chain
+  - community/Community_1
 ---
 
 # Concurrent writes to chain.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestConcurrentWrites]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Audit_Chain
+#graphify/rationale #graphify/EXTRACTED #community/Community_1

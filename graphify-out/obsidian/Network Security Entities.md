@@ -1,12 +1,12 @@
 ---
 source_file: "docs/data/data-dictionary.md"
 type: "document"
-community: "Data Dictionary (data)"
+community: "Community 394"
 location: "L108"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Data_Dictionary_data
+  - community/Community_394
 ---
 
 # Network Security Entities
@@ -18,4 +18,4 @@ tags:
 - [[SecurityFinding_1]] - `contains` [EXTRACTED]
 - [[URLAnalysisResult_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Data_Dictionary_data
+#graphify/document #graphify/EXTRACTED #community/Community_394

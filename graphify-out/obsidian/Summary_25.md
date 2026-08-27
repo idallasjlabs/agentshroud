@@ -1,17 +1,18 @@
 ---
-source_file: "scripts/cve-registry-manual-review.md"
+source_file: "docs/compliance/iec-62443-matrix.md"
 type: "document"
-community: "Cve Registry Manual Review (scripts)"
-location: "L14"
+community: "Community 799"
+location: "L116"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Cve_Registry_Manual_Review_scripts
+  - community/Community_799
 ---
 
 # Summary
 
 ## Connections
-- [[cve-registry-manual-review]] - `contains` [EXTRACTED]
+- [[IEC 62443 Compliance Matrix — AgentShroud]] - `contains` [EXTRACTED]
+- [[Key Components Referenced (v1.0.0)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Cve_Registry_Manual_Review_scripts
+#graphify/document #graphify/EXTRACTED #community/Community_799

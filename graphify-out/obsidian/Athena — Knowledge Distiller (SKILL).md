@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-athena/SKILL.md"
 type: "document"
-community: "Skill (i-athena)"
+community: "Community 1029"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-athena
+  - community/Community_1029
 ---
 
 # Athena — Knowledge Distiller (SKILL)
@@ -15,4 +15,4 @@ tags:
 - [[cheatsheet.md Output Template]] - `references` [EXTRACTED]
 - [[show_notes.md Output Template]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-athena
+#graphify/document #graphify/EXTRACTED #community/Community_1029

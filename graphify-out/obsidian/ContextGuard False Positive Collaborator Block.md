@@ -1,11 +1,11 @@
 ---
 source_file: "docs/project/TELEGRAM_ISSUES.md"
 type: "rationale"
-community: "Troubleshooting (runbooks)"
+community: "Community 514"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Troubleshooting_runbooks
+  - community/Community_514
 ---
 
 # ContextGuard False Positive Collaborator Block
@@ -14,4 +14,4 @@ tags:
 - [[PII Sanitizer Blocking Legitimate Content]] - `semantically_similar_to` [INFERRED]
 - [[TELEGRAM_ISSUES]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Troubleshooting_runbooks
+#graphify/rationale #graphify/EXTRACTED #community/Community_514

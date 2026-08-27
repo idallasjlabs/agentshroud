@@ -1,12 +1,12 @@
 ---
 source_file: "branding/typography/typography.md"
 type: "document"
-community: "Typography (typography)"
+community: "Community 427"
 location: "L47"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Typography_typography
+  - community/Community_427
 ---
 
 # Code/Monospace
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Type Scale]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Typography_typography
+#graphify/document #graphify/EXTRACTED #community/Community_427

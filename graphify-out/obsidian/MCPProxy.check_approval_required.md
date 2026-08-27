@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "Enhanced Approval"
+community: "Community 24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enhanced_Approval
+  - community/Community_24
 ---
 
 # MCPProxy.check_approval_required
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[EnhancedApprovalQueue]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enhanced_Approval
+#graphify/code #graphify/EXTRACTED #community/Community_24

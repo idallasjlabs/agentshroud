@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_bots.py"
 type: "code"
-community: "Soc Bots"
+community: "Community 39"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Soc_Bots
+  - community/Community_39
 ---
 
 # test_soc_bots.py
@@ -51,4 +51,4 @@ tags:
 - [[list_bots()]] - `imports` [EXTRACTED]
 - [[list_services()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Soc_Bots
+#graphify/code #graphify/EXTRACTED #community/Community_39

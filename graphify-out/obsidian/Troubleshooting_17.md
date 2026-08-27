@@ -1,17 +1,20 @@
 ---
-source_file: "docs/integrations/voice-terminal-esp32-s3.md"
+source_file: "docs/architecture/WORKSPACE_USAGE.md"
 type: "document"
-community: "Voice Terminal Esp32 S3 (integrations)"
-location: "L295"
+community: "Community 159"
+location: "L275"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Voice_Terminal_Esp32_S3_integrations
+  - community/Community_159
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)]] - `contains` [EXTRACTED]
+- [[OpenClaw Workspace Usage Guide]] - `contains` [EXTRACTED]
+- [[Problem Container not running]] - `contains` [EXTRACTED]
+- [[Problem File not found]] - `contains` [EXTRACTED]
+- [[Problem Permission denied]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Voice_Terminal_Esp32_S3_integrations
+#graphify/document #graphify/EXTRACTED #community/Community_159

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_output_schema.py"
 type: "rationale"
-community: "Output Schema"
+community: "Community 237"
 location: "L23"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Output_Schema
+  - community/Community_237
 ---
 
 # Normal short text should pass without violations.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_valid_output_passes()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Output_Schema
+#graphify/rationale #graphify/EXTRACTED #community/Community_237

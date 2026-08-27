@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ws_e_rt2_inbound_encoding.py"
 type: "code"
-community: "Security Audit & Watchtower Tests"
+community: "Community 50"
 location: "L53"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Security_Audit__Watchtower_Tests
+  - community/Community_50
 ---
 
 # SecurityPipeline
@@ -23,4 +23,4 @@ tags:
 - [[ToolResultInjectionScanner]] - `uses` [INFERRED]
 - [[_make_pipeline()_4]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Security_Audit__Watchtower_Tests
+#graphify/code #graphify/INFERRED #community/Community_50

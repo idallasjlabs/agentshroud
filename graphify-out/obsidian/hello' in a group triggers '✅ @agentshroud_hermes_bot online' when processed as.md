@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Telegram Proxy Inbound"
+community: "Community 32"
 location: "L9227"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Inbound
+  - community/Community_32
 ---
 
 # hello' in a group triggers '✅ @agentshroud_hermes_bot online' when processed as
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_hello_in_group_sends_hermes_ack()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Inbound
+#graphify/rationale #graphify/EXTRACTED #community/Community_32

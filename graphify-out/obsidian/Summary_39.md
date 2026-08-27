@@ -1,19 +1,17 @@
 ---
-source_file: "docs/setup/TELEGRAM_GMAIL_SETUP.md"
+source_file: "docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md"
 type: "document"
-community: "Gateway Test Suite"
-location: "L339"
+community: "Community 185"
+location: "L604"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Community_185
 ---
 
 # Summary
 
 ## Connections
-- [[Quick Start Commands]] - `contains` [EXTRACTED]
-- [[Telegram & Gmail Integration Guide]] - `contains` [EXTRACTED]
-- [[✅ Current Status]] - `contains` [EXTRACTED]
+- [[Development Workflow Read-Only Filesystem Strategy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Community_185

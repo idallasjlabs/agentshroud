@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/01-enforce-by-default.md"
 type: "document"
-community: "01 Enforce By Default (redteam)"
+community: "Community 680"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/01_Enforce_By_Default_redteam
+  - community/Community_680
 ---
 
 # Root Cause
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Flip core security modules from monitor to enforce mode]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/01_Enforce_By_Default_redteam
+#graphify/document #graphify/EXTRACTED #community/Community_680

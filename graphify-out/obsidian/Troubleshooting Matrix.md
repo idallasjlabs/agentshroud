@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md"
 type: "document"
-community: "Container errors (07 - Errors & Troubleshooting)"
+community: "Community 788"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Container_errors_07_-_Errors__Troubleshooting
+  - community/Community_788
 ---
 
 # Troubleshooting Matrix.md
@@ -17,8 +17,9 @@ tags:
 - [[Health Checks_1]] - `references` [EXTRACTED]
 - [[Kill Switch Procedure]] - `references` [EXTRACTED]
 - [[Startup Errors_1]] - `references` [EXTRACTED]
+- [[Troubleshooting Matrix_1]] - `contains` [EXTRACTED]
 - [[prompt_guard.py]] - `references` [INFERRED]
 - [[store.py]] - `references` [INFERRED]
 - [[troubleshooting]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Container_errors_07_-_Errors__Troubleshooting
+#graphify/document #graphify/EXTRACTED #community/Community_788

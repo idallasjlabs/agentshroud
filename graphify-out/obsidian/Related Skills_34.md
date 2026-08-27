@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-sec/README.md"
 type: "document"
-community: "Readme (i-sec)"
+community: "Community 1080"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-sec
+  - community/Community_1080
 ---
 
 # Related Skills
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Security Review (SEC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-sec
+#graphify/document #graphify/EXTRACTED #community/Community_1080

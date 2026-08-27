@@ -1,14 +1,14 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "Prompt Guard (security)"
+community: "Community 1765"
 location: "L786"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Prompt_Guard_security
+  - community/Community_1765
 ---
 
 # PromptGuard.scan_tool_result()
 
-#graphify/code #graphify/EXTRACTED #community/Prompt_Guard_security
+#graphify/code #graphify/EXTRACTED #community/Community_1765

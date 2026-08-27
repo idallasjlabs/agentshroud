@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/obsidian/SKILL.md"
 type: "document"
-community: "Skill (notion)"
+community: "Community 764"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_notion
+  - community/Community_764
 ---
 
 # Obsidian
@@ -16,4 +16,4 @@ tags:
 - [[SKILL_219]] - `contains` [EXTRACTED]
 - [[obsidian-cli quick start]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_notion
+#graphify/document #graphify/EXTRACTED #community/Community_764

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_credential_isolation.py"
 type: "code"
-community: "Credential Isolation"
+community: "Community 1057"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Credential_Isolation
+  - community/Community_1057
 ---
 
 # test_credential_isolation.py
@@ -16,4 +16,4 @@ tags:
 - [[TestCredentialLeakDetection]] - `contains` [EXTRACTED]
 - [[TestDockerSecretIsolation]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Credential_Isolation
+#graphify/code #graphify/EXTRACTED #community/Community_1057

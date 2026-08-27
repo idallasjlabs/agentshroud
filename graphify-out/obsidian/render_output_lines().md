@@ -1,12 +1,12 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "Main (src)"
+community: "Community 40"
 location: "L533"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Main_src
+  - community/Community_40
 ---
 
 # render_output_lines()
@@ -24,4 +24,4 @@ tags:
 - [[render_output_table_empty_array_produces_no_lines()]] - `calls` [EXTRACTED]
 - [[render_output_yaml_produces_real_yaml_not_json()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Main_src
+#graphify/code #graphify/EXTRACTED #community/Community_40

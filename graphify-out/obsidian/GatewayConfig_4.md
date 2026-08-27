@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "code"
-community: "Security Fixes & SSH Write Endpoint"
+community: "Community 1"
 location: "L31"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Security_Fixes__SSH_Write_Endpoint
+  - community/Community_1
 ---
 
 # GatewayConfig
@@ -20,4 +20,4 @@ tags:
 - [[RouterConfig]] - `uses` [INFERRED]
 - [[test_config()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Security_Fixes__SSH_Write_Endpoint
+#graphify/code #graphify/INFERRED #community/Community_1

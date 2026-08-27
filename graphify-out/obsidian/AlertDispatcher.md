@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/alert_dispatcher.py"
 type: "code"
-community: "Security Audit & Watchtower Tests"
+community: "Community 14"
 location: "L35"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Security_Audit__Watchtower_Tests
+  - community/Community_14
 ---
 
 # AlertDispatcher
@@ -90,4 +90,4 @@ tags:
 - [[test_security_audit.py]] - `references` [EXTRACTED]
 - [[test_security_toolchain.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Security_Audit__Watchtower_Tests
+#graphify/code #graphify/INFERRED #community/Community_14

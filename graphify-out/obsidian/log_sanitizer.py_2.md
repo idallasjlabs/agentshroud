@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md"
 type: "document"
-community: "Log Sanitizer.py (Security Modules)"
+community: "Community 688"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Log_Sanitizerpy_Security_Modules
+  - community/Community_688
 ---
 
 # log_sanitizer.py
@@ -22,4 +22,4 @@ tags:
 - [[Threat Model_19]] - `contains` [EXTRACTED]
 - [[log_sanitizer.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Log_Sanitizerpy_Security_Modules
+#graphify/document #graphify/EXTRACTED #community/Community_688

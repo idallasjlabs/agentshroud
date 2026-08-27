@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_egress_notify.py"
 type: "code"
-community: "Telegram Egress Notify (proxy)"
+community: "Community 1099"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Telegram_Egress_Notify_proxy
+  - community/Community_1099
 ---
 
 # telegram_egress_notify.py
@@ -17,4 +17,4 @@ tags:
 - [[_is_stale_callback_error()]] - `contains` [EXTRACTED]
 - [[_is_stale_edit_error()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Telegram_Egress_Notify_proxy
+#graphify/code #graphify/EXTRACTED #community/Community_1099

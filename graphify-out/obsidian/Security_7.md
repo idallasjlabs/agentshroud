@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Web & Dashboard/api.py.md"
+source_file: "CHANGELOG.md"
 type: "document"
-community: "Api.py (Web & Dashboard)"
-location: "L29"
+community: "Community 1332"
+location: "L927"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Apipy_Web__Dashboard
+  - community/Community_1332
 ---
 
 # Security
 
 ## Connections
-- [[api.py_2]] - `contains` [EXTRACTED]
+- [[0.7.0 - 2026-02-25]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Apipy_Web__Dashboard
+#graphify/document #graphify/EXTRACTED #community/Community_1332

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "Mcp Permissions (proxy)"
+community: "Community 106"
 location: "L442"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Mcp_Permissions_proxy
+  - community/Community_106
 ---
 
 # TestProxyInterception
@@ -33,4 +33,4 @@ tags:
 - [[ThreatLevel]] - `uses` [INFERRED]
 - [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Mcp_Permissions_proxy
+#graphify/code #graphify/INFERRED #community/Community_106

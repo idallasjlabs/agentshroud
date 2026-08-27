@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/management.py"
 type: "rationale"
-community: "Management (web)"
+community: "Community 1857"
 location: "L733"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Management_web
+  - community/Community_1857
 ---
 
 # Security tools overview — links to all tool-specific dashboards.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[security_overview()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Management_web
+#graphify/rationale #graphify/EXTRACTED #community/Community_1857

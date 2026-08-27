@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_intel_pipeline.py"
 type: "code"
-community: "Intel Pipeline"
+community: "Community 133"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Intel_Pipeline
+  - community/Community_133
 ---
 
 # test_intel_pipeline.py
@@ -21,4 +21,4 @@ tags:
 - [[TestIntelReportStore]] - `contains` [EXTRACTED]
 - [[intel_report module (CompetitiveIntelReport, IntelReportStore)]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Intel_Pipeline
+#graphify/code #graphify/EXTRACTED #community/Community_133

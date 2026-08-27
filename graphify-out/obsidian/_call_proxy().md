@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_failover.py"
 type: "code"
-community: "Llm Proxy Failover"
+community: "Community 221"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Llm_Proxy_Failover
+  - community/Community_221
 ---
 
 # _call_proxy()
@@ -29,4 +29,4 @@ tags:
 - [[test_proxy_normal_200_passthrough_untouched()]] - `calls` [EXTRACTED]
 - [[test_proxy_post_retry_429_now_failovers()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Llm_Proxy_Failover
+#graphify/code #graphify/EXTRACTED #community/Community_221

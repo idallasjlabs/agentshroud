@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_output_schema.py"
 type: "rationale"
-community: "Output Schema"
+community: "Community 237"
 location: "L83"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Output_Schema
+  - community/Community_237
 ---
 
 # Unknown schema names fall back to 'default'.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_default_schema_used_when_unknown()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Output_Schema
+#graphify/rationale #graphify/EXTRACTED #community/Community_237

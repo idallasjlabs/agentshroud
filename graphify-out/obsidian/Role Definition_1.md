@@ -1,12 +1,12 @@
 ---
 source_file: ".github/agents/test-augmenter.agent.md"
 type: "document"
-community: "Augmenter.agent (agents)"
+community: "Community 491"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Augmenteragent_agents
+  - community/Community_491
 ---
 
 # Role Definition
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Test Augmentation Specialist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Augmenteragent_agents
+#graphify/document #graphify/EXTRACTED #community/Community_491

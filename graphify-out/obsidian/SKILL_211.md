@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/goplaces/SKILL.md"
 type: "document"
-community: "Skill (goplaces)"
+community: "Community 1391"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_goplaces
+  - community/Community_1391
 ---
 
 # SKILL.md
@@ -15,4 +15,4 @@ tags:
 - [[goplaces]] - `contains` [EXTRACTED]
 - [[goplaces CLI]] - `implements` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_goplaces
+#graphify/document #graphify/EXTRACTED #community/Community_1391

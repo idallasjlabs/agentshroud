@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Other/approval_queue.py.md"
 type: "document"
-community: "Shutdown & recovery (01 - Architecture)"
+community: "Community 312"
 location: "L76"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Shutdown__recovery_01_-_Architecture
+  - community/Community_312
 ---
 
 # Related Notes
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[EnhancedApprovalQueue (`enhanced_queue.py`)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Shutdown__recovery_01_-_Architecture
+#graphify/document #graphify/EXTRACTED #community/Community_312

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-sdlc/SKILL.md"
 type: "document"
-community: "Skill (i-sdlc)"
+community: "Community 1469"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-sdlc
+  - community/Community_1469
 ---
 
 # Skill: sdlc
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SKILL_176]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-sdlc
+#graphify/document #graphify/EXTRACTED #community/Community_1469

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "code"
-community: "Context Guard"
+community: "Community 54"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Context_Guard
+  - community/Community_54
 ---
 
 # context_guard.py
@@ -20,4 +20,4 @@ tags:
 - [[get_context_guard()]] - `contains` [EXTRACTED]
 - [[normalize_input()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Context_Guard
+#graphify/code #graphify/EXTRACTED #community/Community_54

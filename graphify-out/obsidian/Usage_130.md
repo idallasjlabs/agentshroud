@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/SKILL.md"
 type: "document"
-community: "Skill (securebrowser)"
+community: "Community 235"
 location: "L54"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_securebrowser
+  - community/Community_235
 ---
 
 # Usage
@@ -18,4 +18,4 @@ tags:
 - [[SecureBrowser - Enterprise Secure Browser Automation]] - `contains` [EXTRACTED]
 - [[Take Screenshot_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_securebrowser
+#graphify/document #graphify/EXTRACTED #community/Community_235

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/log_sanitizer.py"
 type: "rationale"
-community: "RBAC & Ingest Middleware"
+community: "Community 1279"
 location: "L64"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBAC__Ingest_Middleware
+  - community/Community_1279
 ---
 
 # Filter log record, sanitizing sensitive content.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.filter()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBAC__Ingest_Middleware
+#graphify/rationale #graphify/EXTRACTED #community/Community_1279

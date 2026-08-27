@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/model-usage/SKILL.md"
 type: "document"
-community: "Skill (session-logs)"
+community: "Community 253"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_session-logs
+  - community/Community_253
 ---
 
 # Model usage
@@ -20,4 +20,4 @@ tags:
 - [[References_5]] - `contains` [EXTRACTED]
 - [[SKILL_215]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_session-logs
+#graphify/document #graphify/EXTRACTED #community/Community_253

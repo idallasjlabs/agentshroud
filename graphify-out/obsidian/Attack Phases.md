@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-sec-offense/SKILL.md"
 type: "document"
-community: "Skill (i-sec-offense)"
+community: "Community 490"
 location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-sec-offense
+  - community/Community_490
 ---
 
 # Attack Phases
@@ -20,4 +20,4 @@ tags:
 - [[Phase 5 Exploitation Chains]] - `contains` [EXTRACTED]
 - [[Phase 6 Detection Validation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-sec-offense
+#graphify/document #graphify/EXTRACTED #community/Community_490

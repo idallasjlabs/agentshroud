@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "rationale"
-community: "Memory Lifecycle & Integrity"
+community: "Community 6"
 location: "L395"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Memory_Lifecycle__Integrity
+  - community/Community_6
 ---
 
 # Set up integration test environment.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.setup_method()_11]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Memory_Lifecycle__Integrity
+#graphify/rationale #graphify/EXTRACTED #community/Community_6

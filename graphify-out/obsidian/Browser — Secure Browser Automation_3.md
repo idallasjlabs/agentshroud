@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/SKILL.md"
 type: "document"
-community: "Skill (i-browser)"
+community: "Community 258"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-browser
+  - community/Community_258
 ---
 
 # Browser — Secure Browser Automation
@@ -23,7 +23,7 @@ tags:
 - [[Security Architecture_2]] - `contains` [EXTRACTED]
 - [[Security Configuration_1]] - `contains` [EXTRACTED]
 - [[Security Guarantees_1]] - `contains` [EXTRACTED]
-- [[Troubleshooting_7]] - `contains` [EXTRACTED]
+- [[Troubleshooting_8]] - `contains` [EXTRACTED]
 - [[Usage_47]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-browser
+#graphify/document #graphify/EXTRACTED #community/Community_258

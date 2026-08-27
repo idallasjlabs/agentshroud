@@ -1,17 +1,18 @@
 ---
 source_file: "docker/config/hermes/skills/i-cicd/SKILL.md"
 type: "document"
-community: "Skill (i-cicd)"
+community: "Community 1017"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-cicd
+  - community/Community_1017
 ---
 
 # Skill: CI/CD Pipeline Advisor (CICD)
 
 ## Connections
+- [[Deployment Matrix  (Direct to Prod)_1]] - `contains` [EXTRACTED]
 - [[Deployment Matrix (Direct to Prod)]] - `contains` [EXTRACTED]
 - [[GitHub Actions Best Practices_1]] - `contains` [EXTRACTED]
 - [[Quality Gates  (execution order)_1]] - `contains` [EXTRACTED]
@@ -19,4 +20,4 @@ tags:
 - [[Role_45]] - `contains` [EXTRACTED]
 - [[SKILL_78]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-cicd
+#graphify/document #graphify/EXTRACTED #community/Community_1017

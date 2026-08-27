@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-browser/README.md"
 type: "document"
-community: "Readme (i-browser)"
+community: "Community 1148"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-browser
+  - community/Community_1148
 ---
 
 # Related Skills
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Browser — Secure Browser Automation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-browser
+#graphify/document #graphify/EXTRACTED #community/Community_1148

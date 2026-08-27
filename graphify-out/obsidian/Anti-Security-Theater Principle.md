@@ -1,11 +1,11 @@
 ---
 source_file: "docker/bots/openclaw/workspace/collaborator-workspace/SOUL.md"
 type: "rationale"
-community: "Competitive Analysis (workspace)"
+community: "Community 1297"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Competitive_Analysis_workspace
+  - community/Community_1297
 ---
 
 # Anti-Security-Theater Principle
@@ -14,4 +14,4 @@ tags:
 - [[Gateway-Enforced Intel Verification (SCRUM-75)]] - `conceptually_related_to` [INFERRED]
 - [[SOUL.md — Isaiah Jefferson Persona]] - `implements` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Competitive_Analysis_workspace
+#graphify/rationale #graphify/EXTRACTED #community/Community_1297

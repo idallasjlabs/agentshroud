@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "rationale"
-community: "Prompt Protection (security)"
+community: "Community 182"
 location: "L295"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Prompt_Protection_security
+  - community/Community_182
 ---
 
 # Get statistics about the protection system.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_protection_stats()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Prompt_Protection_security
+#graphify/rationale #graphify/EXTRACTED #community/Community_182

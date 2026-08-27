@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_multibot.py"
 type: "rationale"
-community: "Config"
+community: "Community 273"
 location: "L162"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Config
+  - community/Community_273
 ---
 
 # OpenClaw BotConfig must still work without the new fields.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_openclaw_bot_config_backward_compat()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Config
+#graphify/rationale #graphify/EXTRACTED #community/Community_273

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "Web Api Coverage"
+community: "Community 31"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Web_Api_Coverage
+  - community/Community_31
 ---
 
 # test_web_api_coverage.py
@@ -43,4 +43,4 @@ tags:
 - [[require_auth()_1]] - `imports` [EXTRACTED]
 - [[webapi.py (POST apiintelreports)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Web_Api_Coverage
+#graphify/code #graphify/EXTRACTED #community/Community_31

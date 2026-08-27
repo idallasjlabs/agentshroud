@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/wazuh_client.py"
 type: "code"
-community: "Wazuh Client (security)"
+community: "Community 85"
 location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Wazuh_Client_security
+  - community/Community_85
 ---
 
 # read_alerts()
@@ -22,4 +22,4 @@ tags:
 - [[scanner_integration.py]] - `imports` [EXTRACTED]
 - [[wazuh_client.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Wazuh_Client_security
+#graphify/code #graphify/EXTRACTED #community/Community_85

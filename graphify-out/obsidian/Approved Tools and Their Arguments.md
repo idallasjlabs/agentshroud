@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/AGENTS.md"
 type: "document"
-community: "Agents (openclaw)"
+community: "Community 765"
 location: "L30"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Agents_openclaw
+  - community/Community_765
 ---
 
 # Approved Tools and Their Arguments
@@ -19,4 +19,4 @@ tags:
 - [[send_message]] - `contains` [EXTRACTED]
 - [[web_search]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Agents_openclaw
+#graphify/document #graphify/EXTRACTED #community/Community_765

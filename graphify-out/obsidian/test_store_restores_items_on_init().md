@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_queue.py"
 type: "code"
-community: "Queue (approval_queue)"
+community: "Community 43"
 location: "L365"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Queue_approval_queue
+  - community/Community_43
 ---
 
 # test_store_restores_items_on_init()
@@ -16,4 +16,4 @@ tags:
 - [[Queue should restore persisted items from store file on startup.]] - `rationale_for` [EXTRACTED]
 - [[test_approval_queue.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Queue_approval_queue
+#graphify/code #graphify/EXTRACTED #community/Community_43

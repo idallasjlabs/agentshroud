@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "rationale"
-community: "Llm Proxy (proxy)"
-location: "L1490"
+community: "Community 108"
+location: "L1568"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Llm_Proxy_proxy
+  - community/Community_108
 ---
 
 # Scan Anthropic tool_use blocks; replace denied tools with a text error block.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._enforce_tool_acl()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Llm_Proxy_proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_108

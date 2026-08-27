@@ -1,13 +1,13 @@
 ---
 source_file: "branding/social/linkedin-profile-400x400.png"
 type: "image"
-community: "Linkedin Profile 400x400 (social)"
+community: "Community 1782"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Linkedin_Profile_400x400_social
+  - community/Community_1782
 ---
 
 # AgentShroud LinkedIn Profile Image
 
-#graphify/image #graphify/EXTRACTED #community/Linkedin_Profile_400x400_social
+#graphify/image #graphify/EXTRACTED #community/Community_1782

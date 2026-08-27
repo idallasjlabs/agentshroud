@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "SOC Services"
+community: "Community 486"
 location: "L113"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Services
+  - community/Community_486
 ---
 
 # _frame()
@@ -17,4 +17,4 @@ tags:
 - [[Build one Docker multiplexed-log frame (stdout).]] - `rationale_for` [EXTRACTED]
 - [[test_soc_services_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Services
+#graphify/code #graphify/EXTRACTED #community/Community_486

@@ -1,33 +1,28 @@
 ---
-source_file: ".agents/skills/i-aws/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-aws/SKILL.md"
 type: "document"
-community: "Skill (i-aws)"
+community: "Community 229"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-aws
+  - community/Community_229
 ---
 
 # AWS Cloud Management & FinOps Agent
 
 ## Connections
-- [[AWS Cloud Management & FinOps README]] - `references` [EXTRACTED]
-- [[Audit Branch (Merge Regression Detection)]] - `semantically_similar_to` [INFERRED]
-- [[CDAS — Central Data Acquisition Systems]] - `references` [EXTRACTED]
-- [[Cross-Account & Future Proofing]] - `contains` [EXTRACTED]
-- [[Decision Framework]] - `contains` [EXTRACTED]
-- [[Deliverables]] - `contains` [EXTRACTED]
-- [[Expertise]] - `contains` [EXTRACTED]
-- [[FODL — Fluence Operational Data Lakehouse]] - `references` [EXTRACTED]
-- [[FY26 40% Cost Reduction Target]] - `references` [EXTRACTED]
-- [[FY26 Cost Reduction Context]] - `contains` [EXTRACTED]
-- [[GSDE&G Team]] - `references` [EXTRACTED]
-- [[Guardrails_1]] - `contains` [EXTRACTED]
-- [[Identity]] - `contains` [EXTRACTED]
-- [[Operating Rules (Non-Negotiable)]] - `contains` [EXTRACTED]
-- [[Resource Inventory CSV Schema]] - `contains` [EXTRACTED]
-- [[SKILL_7]] - `contains` [EXTRACTED]
-- [[Tagging Standard]] - `contains` [EXTRACTED]
-- [[Workflow]] - `contains` [EXTRACTED]
+- [[Cross-Account & Future Proofing_2]] - `contains` [EXTRACTED]
+- [[Decision Framework_2]] - `contains` [EXTRACTED]
+- [[Deliverables_2]] - `contains` [EXTRACTED]
+- [[Expertise_2]] - `contains` [EXTRACTED]
+- [[FY26 Cost Reduction Context_2]] - `contains` [EXTRACTED]
+- [[Guardrails_12]] - `contains` [EXTRACTED]
+- [[Identity_3]] - `contains` [EXTRACTED]
+- [[Operating Rules (Non-Negotiable)_2]] - `contains` [EXTRACTED]
+- [[Resource Inventory CSV Schema_2]] - `contains` [EXTRACTED]
+- [[SKILL_134]] - `contains` [EXTRACTED]
+- [[Tagging Standard_2]] - `contains` [EXTRACTED]
+- [[Workflow_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-aws
+#graphify/document #graphify/EXTRACTED #community/Community_229

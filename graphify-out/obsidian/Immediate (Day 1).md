@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/PUBLISH-TO-CLAWHUB.md"
 type: "document"
-community: "Publish To Clawhub (reference)"
+community: "Community 1323"
 location: "L316"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Publish_To_Clawhub_reference
+  - community/Community_1323
 ---
 
 # Immediate (Day 1)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🎯 Marketing Checklist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Publish_To_Clawhub_reference
+#graphify/document #graphify/EXTRACTED #community/Community_1323

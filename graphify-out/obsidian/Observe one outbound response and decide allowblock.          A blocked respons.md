@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/data_exfil_volume_guard.py"
 type: "rationale"
-community: "Data Exfil Volume Guard"
+community: "Community 176"
 location: "L100"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Data_Exfil_Volume_Guard
+  - community/Community_176
 ---
 
 # Observe one outbound response and decide allow/block.          A blocked respons
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.observe()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Data_Exfil_Volume_Guard
+#graphify/rationale #graphify/EXTRACTED #community/Community_176

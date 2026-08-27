@@ -1,12 +1,12 @@
 ---
 source_file: "docs/governance/SPRINT_CADENCE.md"
 type: "document"
-community: "Sprint Cadence (governance)"
+community: "Community 1026"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Sprint_Cadence_governance
+  - community/Community_1026
 ---
 
 # Sprint Cadence Decision
@@ -19,4 +19,4 @@ tags:
 - [[What We Do Instead]] - `contains` [EXTRACTED]
 - [[When to Revisit]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Sprint_Cadence_governance
+#graphify/document #graphify/EXTRACTED #community/Community_1026

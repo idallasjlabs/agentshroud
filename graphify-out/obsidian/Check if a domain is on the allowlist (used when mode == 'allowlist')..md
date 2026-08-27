@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_config.py"
 type: "rationale"
-community: "Web Proxy"
+community: "Community 30"
 location: "L114"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Web_Proxy
+  - community/Community_30
 ---
 
 # Check if a domain is on the allowlist (used when mode == 'allowlist').
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.is_domain_allowed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Web_Proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_30

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/dns_forwarder.py"
 type: "rationale"
-community: "Dns Forwarder (proxy)"
+community: "Community 560"
 location: "L161"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Dns_Forwarder_proxy
+  - community/Community_560
 ---
 
 # UDP protocol handler for DNS forwarding with optional blocklist.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[DNSForwarderProtocol]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Dns_Forwarder_proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_560

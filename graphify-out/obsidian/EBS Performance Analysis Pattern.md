@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-aws/SKILL.md"
 type: "concept"
-community: "Skill (i-aws)"
+community: "Community 851"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Skill_i-aws
+  - community/Community_851
 ---
 
 # EBS Performance Analysis Pattern
@@ -14,4 +14,4 @@ tags:
 - [[.scripts Numbered Script Library Convention]] - `references` [EXTRACTED]
 - [[AWS Cloud Management & FinOps Agent (SKILL)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Skill_i-aws
+#graphify/concept #graphify/EXTRACTED #community/Community_851

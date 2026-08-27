@@ -1,16 +1,13 @@
 ---
 source_file: "CONTINUE-2026-08-17.md"
 type: "concept"
-community: "Apply Patches (openclaw)"
+community: "Community 1587"
 tags:
   - graphify/concept
-  - graphify/INFERRED
-  - community/Apply_Patches_openclaw
+  - graphify/EXTRACTED
+  - community/Community_1587
 ---
 
 # Hermes Local-Model Temperature Repetition-Loop Investigation
 
-## Connections
-- [[CONTINUE-2026-08-17]] - `references` [INFERRED]
-
-#graphify/concept #graphify/INFERRED #community/Apply_Patches_openclaw
+#graphify/concept #graphify/EXTRACTED #community/Community_1587

@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Diagram 12 Credential Flow]] - image - docs/diagrams/images/diagram-12-credential-flow.svg
+- [[_INJECTION_PATTERNS (prompt injection regex set)]] - code - gateway/proxy/web_content_scanner.py
 
 ## Live Query (requires Dataview plugin)
 

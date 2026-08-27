@@ -1,14 +1,14 @@
 ---
 source_file: "voice_gateway/stt.py"
 type: "code"
-community: "Stt (voice_gateway)"
+community: "Community 1832"
 location: "L1-161"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Stt_voice_gateway
+  - community/Community_1832
 ---
 
 # voice_gateway/stt.py — faster-whisper Speech-to-Text
 
-#graphify/code #graphify/EXTRACTED #community/Stt_voice_gateway
+#graphify/code #graphify/EXTRACTED #community/Community_1832

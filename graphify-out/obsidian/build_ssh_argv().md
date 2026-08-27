@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/multi_host_test.py"
 type: "code"
-community: "Multi Host (tools)"
+community: "Community 869"
 location: "L212"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Multi_Host_tools
+  - community/Community_869
 ---
 
 # build_ssh_argv()
@@ -19,4 +19,4 @@ tags:
 - [[multi_host_test.py]] - `contains` [EXTRACTED]
 - [[test_multi_host_test.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Multi_Host_tools
+#graphify/code #graphify/EXTRACTED #community/Community_869

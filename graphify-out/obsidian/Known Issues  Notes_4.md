@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/middleware.py.md"
 type: "document"
-community: "Middleware.py (Gateway Core)"
+community: "Community 561"
 location: "L120"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Middlewarepy_Gateway_Core
+  - community/Community_561
 ---
 
 # Known Issues / Notes
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[middleware.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Middlewarepy_Gateway_Core
+#graphify/document #graphify/EXTRACTED #community/Community_561

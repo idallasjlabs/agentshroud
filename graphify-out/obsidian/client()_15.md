@@ -1,19 +1,18 @@
 ---
 source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "SOC Router Coverage"
+community: "Community 818"
 location: "L135"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SOC_Router_Coverage
+  - community/Community_818
 ---
 
 # client()
 
 ## Connections
 - [[AsyncClient]] - `calls` [INFERRED]
-- [[FastAPI_5]] - `calls` [INFERRED]
 - [[test_soc_router_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SOC_Router_Coverage
+#graphify/code #graphify/INFERRED #community/Community_818

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enforce_defaults.py"
 type: "rationale"
-community: "Security Audit & Watchtower Tests"
+community: "Community 1"
 location: "L136"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Audit__Watchtower_Tests
+  - community/Community_1
 ---
 
 # Test PIISanitizer defaults to enforce mode.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_pii_sanitizer_default_enforcement()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Community_1

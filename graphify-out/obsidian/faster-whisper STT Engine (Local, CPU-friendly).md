@@ -1,11 +1,11 @@
 ---
 source_file: "voice_gateway/requirements.txt"
 type: "concept"
-community: "V1.2.0 Master Plan (v1.2)"
+community: "Community 1546"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/V120_Master_Plan_v12
+  - community/Community_1546
 ---
 
 # faster-whisper STT Engine (Local, CPU-friendly)
@@ -14,4 +14,4 @@ tags:
 - [[Voice Gateway Python Requirements (faster-whisper, kokoro)]] - `references` [EXTRACTED]
 - [[Voice Gateway Service (STTTTS WebSocket Bridge to Governed Path)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/V120_Master_Plan_v12
+#graphify/concept #graphify/EXTRACTED #community/Community_1546

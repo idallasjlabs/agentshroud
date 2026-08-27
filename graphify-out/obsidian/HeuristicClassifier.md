@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/heuristic_classifier.py"
 type: "code"
-community: "Heuristic Classifier (security)"
+community: "Community 263"
 location: "L83"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Heuristic_Classifier_security
+  - community/Community_263
 ---
 
 # HeuristicClassifier
@@ -39,4 +39,4 @@ tags:
 - [[test_adversarial_injection.py]] - `imports` [EXTRACTED]
 - [[test_heuristic_classifier.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Heuristic_Classifier_security
+#graphify/code #graphify/EXTRACTED #community/Community_263

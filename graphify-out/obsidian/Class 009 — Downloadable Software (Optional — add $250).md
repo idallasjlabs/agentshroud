@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/legal/USPTO-APPLICATION.md"
 type: "document"
-community: "Uspto Application (legal)"
+community: "Community 762"
 location: "L48"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Uspto_Application_legal
+  - community/Community_762
 ---
 
 # Class 009 — Downloadable Software *(Optional — add $250)*
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[International Classification]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Uspto_Application_legal
+#graphify/document #graphify/EXTRACTED #community/Community_762

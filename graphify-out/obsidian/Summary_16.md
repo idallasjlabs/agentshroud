@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/CREDENTIAL-SECURITY-POLICY.md"
+source_file: "CHANGELOG.md"
 type: "document"
-community: "Credential Security Policy (security)"
-location: "L383"
+community: "Community 1296"
+location: "L808"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Credential_Security_Policy_security
+  - community/Community_1296
 ---
 
 # Summary
 
 ## Connections
-- [[Credential Security Policy]] - `contains` [EXTRACTED]
+- [[Unreleased — featv0.8.0-enforcement-hardening (session 2 — 2026-03-14)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Credential_Security_Policy_security
+#graphify/document #graphify/EXTRACTED #community/Community_1296

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/SKILL.md"
 type: "document"
-community: "Skill (securebrowser)"
+community: "Community 235"
 location: "L278"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_securebrowser
+  - community/Community_235
 ---
 
 # Gateway Integration
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Integration with AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_securebrowser
+#graphify/document #graphify/EXTRACTED #community/Community_235

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "code"
-community: "Security Regressions V1 2"
+community: "Community 26"
 location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Regressions_V1_2
+  - community/Community_26
 ---
 
 # tmp_workspace()
@@ -15,4 +15,4 @@ tags:
 - [[Isolated temporary workspace for session manager.]] - `rationale_for` [EXTRACTED]
 - [[test_security_regressions_v1_2.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Regressions_V1_2
+#graphify/code #graphify/EXTRACTED #community/Community_26

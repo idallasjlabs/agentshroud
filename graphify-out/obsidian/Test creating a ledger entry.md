@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ledger.py"
 type: "rationale"
-community: "Ledger"
+community: "Community 1"
 location: "L14"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Ledger
+  - community/Community_1
 ---
 
 # Test creating a ledger entry
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_record_entry()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Ledger
+#graphify/rationale #graphify/EXTRACTED #community/Community_1

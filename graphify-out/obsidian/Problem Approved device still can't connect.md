@@ -1,17 +1,17 @@
 ---
 source_file: "docs/setup/DEVICE_PAIRING.md"
 type: "document"
-community: "Device Pairing (setup)"
+community: "Community 776"
 location: "L348"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Device_Pairing_setup
+  - community/Community_776
 ---
 
 # Problem: Approved device still can't connect
 
 ## Connections
-- [[Troubleshooting_26]] - `contains` [EXTRACTED]
+- [[Troubleshooting_27]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Device_Pairing_setup
+#graphify/document #graphify/EXTRACTED #community/Community_776

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_injection_scan.py"
 type: "rationale"
-community: "Tool Chain & CVE Triage"
+community: "Community 16"
 location: "L28"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Tool_Chain__CVE_Triage
+  - community/Community_16
 ---
 
 # Test that clean content passes through unchanged.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_clean_content_passes_through()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Tool_Chain__CVE_Triage
+#graphify/rationale #graphify/EXTRACTED #community/Community_16

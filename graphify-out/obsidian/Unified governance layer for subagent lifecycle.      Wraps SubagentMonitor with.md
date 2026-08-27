@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "rationale"
-community: "Subagent Governance (security)"
+community: "Community 461"
 location: "L183"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Subagent_Governance_security
+  - community/Community_461
 ---
 
 # Unified governance layer for subagent lifecycle.      Wraps SubagentMonitor with
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SubagentGovernance]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Subagent_Governance_security
+#graphify/rationale #graphify/EXTRACTED #community/Community_461

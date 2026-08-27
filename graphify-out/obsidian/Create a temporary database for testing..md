@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_agentshroud_manager.py"
 type: "rationale"
-community: "Agentshroud Manager"
+community: "Community 58"
 location: "L28"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Agentshroud_Manager
+  - community/Community_58
 ---
 
 # Create a temporary database for testing.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[tmp_db()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Agentshroud_Manager
+#graphify/rationale #graphify/EXTRACTED #community/Community_58

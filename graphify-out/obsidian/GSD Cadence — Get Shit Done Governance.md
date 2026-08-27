@@ -1,12 +1,12 @@
 ---
 source_file: "docs/governance/GSD_CADENCE.md"
 type: "document"
-community: "Gsd Cadence (governance)"
+community: "Community 440"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gsd_Cadence_governance
+  - community/Community_440
 ---
 
 # GSD Cadence — Get Shit Done Governance
@@ -18,4 +18,4 @@ tags:
 - [[Rule 2 — Approval Tag for High-Severity Changes]] - `contains` [EXTRACTED]
 - [[Rule 3 — Weekly Kaizen + Monthly Chaos Drill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gsd_Cadence_governance
+#graphify/document #graphify/EXTRACTED #community/Community_440

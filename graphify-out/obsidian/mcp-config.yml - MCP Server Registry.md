@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Telegram Issues (project)"
+community: "Community 205"
 location: "L586"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Telegram_Issues_project
+  - community/Community_205
 ---
 
 # mcp-config.yml - MCP Server Registry
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Configuration Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Telegram_Issues_project
+#graphify/document #graphify/EXTRACTED #community/Community_205

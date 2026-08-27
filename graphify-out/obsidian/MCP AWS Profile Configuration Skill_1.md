@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "Readme (i-mcpm-aws-profile)"
+community: "Community 830"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-mcpm-aws-profile
+  - community/Community_830
 ---
 
 # MCP AWS Profile Configuration Skill
@@ -15,4 +15,4 @@ tags:
 - [[MCP Auth Reset Skill_1]] - `references` [EXTRACTED]
 - [[MCP Doctor Skill]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-mcpm-aws-profile
+#graphify/document #graphify/EXTRACTED #community/Community_830

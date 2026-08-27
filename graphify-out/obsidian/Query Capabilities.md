@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/audit-specification.md"
 type: "document"
-community: "Audit Specification (security)"
+community: "Community 183"
 location: "L308"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Audit_Specification_security
+  - community/Community_183
 ---
 
 # Query Capabilities
@@ -17,4 +17,4 @@ tags:
 - [[Query Response Format]] - `contains` [EXTRACTED]
 - [[Real-Time Event Streaming]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Audit_Specification_security
+#graphify/document #graphify/EXTRACTED #community/Community_183

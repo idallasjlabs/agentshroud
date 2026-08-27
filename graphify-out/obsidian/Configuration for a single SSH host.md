@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ssh_config.py"
 type: "rationale"
-community: "Security Fixes & SSH Write Endpoint"
+community: "Community 12"
 location: "L16"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Fixes__SSH_Write_Endpoint
+  - community/Community_12
 ---
 
 # Configuration for a single SSH host
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SSHHostConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Fixes__SSH_Write_Endpoint
+#graphify/rationale #graphify/EXTRACTED #community/Community_12

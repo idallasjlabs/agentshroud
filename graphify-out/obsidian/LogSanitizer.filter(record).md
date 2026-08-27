@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md"
 type: "document"
-community: "Log Sanitizer.py (Security Modules)"
+community: "Community 688"
 location: "L39"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Log_Sanitizerpy_Security_Modules
+  - community/Community_688
 ---
 
 # LogSanitizer.filter(record)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Function Details_43]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Log_Sanitizerpy_Security_Modules
+#graphify/document #graphify/EXTRACTED #community/Community_688

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "Middleware & Session Isolation"
+community: "Community 1055"
 location: "L899"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Middleware__Session_Isolation
+  - community/Community_1055
 ---
 
 # _bot()
@@ -16,4 +16,4 @@ tags:
 - [[.test_non_default_bot_fallback()]] - `calls` [EXTRACTED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Middleware__Session_Isolation
+#graphify/code #graphify/EXTRACTED #community/Community_1055

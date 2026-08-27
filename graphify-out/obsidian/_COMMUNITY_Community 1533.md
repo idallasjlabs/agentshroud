@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_init_config_skips_anthropic_auth_seed_for_local_model()]] - code - gateway/tests/test_config_validation.py
-- [[Init config should seed auth profiles for cloud providers and Ollama in local mo]] - rationale - gateway/tests/test_config_validation.py
+- [[Scorecard Data Integrity Tests (no stub inflation)]] - code - gateway/tests/test_scorecard_integrity.py
+- [[Scorecard Domain Scorer 0-5 Scale Tests]] - code - gateway/tests/test_scorecard_scoring.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -17,9 +17,3 @@ members: 2
 TABLE source_file, type FROM #community/Community_1533
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Architecture Docs]]
-
-## Top bridge nodes
-- [[.test_init_config_skips_anthropic_auth_seed_for_local_model()]] - degree 2, connects to 1 community

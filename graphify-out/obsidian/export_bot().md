@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/export-email-reports.py"
 type: "code"
-community: "Export Email Reports (scripts)"
+community: "Community 723"
 location: "L96"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Export_Email_Reports_scripts
+  - community/Community_723
 ---
 
 # export_bot()
@@ -18,6 +18,6 @@ tags:
 - [[_report_date()]] - `calls` [EXTRACTED]
 - [[datetime_7]] - `references` [EXTRACTED]
 - [[export-email-reports.py]] - `contains` [EXTRACTED]
-- [[main()_16]] - `calls` [EXTRACTED]
+- [[main()_17]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Export_Email_Reports_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_723

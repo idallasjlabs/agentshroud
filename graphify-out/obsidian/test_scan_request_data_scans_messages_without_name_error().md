@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "Llm Proxy"
+community: "Community 79"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Llm_Proxy
+  - community/Community_79
 ---
 
 # test_scan_request_data_scans_messages_without_name_error()
@@ -17,4 +17,4 @@ tags:
 - [[_FakeSanitizer]] - `calls` [EXTRACTED]
 - [[test_llm_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Llm_Proxy
+#graphify/code #graphify/EXTRACTED #community/Community_79

@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-mc/README.md"
 type: "document"
-community: "Readme (i-mc)"
+community: "Community 489"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-mc
+  - community/Community_489
 ---
 
 # GSDE&G Development Master Checklist README
@@ -22,4 +22,4 @@ tags:
 - [[i-mc README (Development Master Checklist)]] - `references` [EXTRACTED]
 - [[pr Skill (referenced, sibling dir)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-mc
+#graphify/document #graphify/EXTRACTED #community/Community_489

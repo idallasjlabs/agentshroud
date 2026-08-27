@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md"
 type: "document"
-community: "Blue Team Assessment V0.8.0 (v0.8)"
+community: "Community 1331"
 location: "L89"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Blue_Team_Assessment_V080_v08
+  - community/Community_1331
 ---
 
 # M5: LLM Proxy Endpoint `/v1/{path}` Has No Authentication
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MEDIUM — Fix Soon]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Blue_Team_Assessment_V080_v08
+#graphify/document #graphify/EXTRACTED #community/Community_1331

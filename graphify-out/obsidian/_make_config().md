@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_agent_isolation.py"
 type: "code"
-community: "Security Hardening"
+community: "Community 28"
 location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Hardening
+  - community/Community_28
 ---
 
 # _make_config()
@@ -35,4 +35,4 @@ tags:
 - [[Helper to create a ContainerConfig with sensible defaults.]] - `rationale_for` [EXTRACTED]
 - [[test_agent_isolation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Hardening
+#graphify/code #graphify/EXTRACTED #community/Community_28

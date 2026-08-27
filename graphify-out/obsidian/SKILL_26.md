@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-incident-response/SKILL.md"
 type: "document"
-community: "Skill (i-incident-response)"
+community: "Community 1425"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-incident-response
+  - community/Community_1425
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill incident-response]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-incident-response
+#graphify/document #graphify/EXTRACTED #community/Community_1425

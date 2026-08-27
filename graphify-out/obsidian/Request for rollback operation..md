@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/version_routes.py"
 type: "rationale"
-community: "Agentshroud Manager"
+community: "Community 58"
 location: "L45"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Agentshroud_Manager
+  - community/Community_58
 ---
 
 # Request for rollback operation.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[RollbackRequest]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Agentshroud_Manager
+#graphify/rationale #graphify/EXTRACTED #community/Community_58

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/event_adapter.py"
 type: "rationale"
-community: "Event Adapter (soc)"
+community: "Community 501"
 location: "L24"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Event_Adapter_soc
+  - community/Community_501
 ---
 
 # Best-effort mapping of arbitrary severity strings to Severity enum.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_map_severity()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Event_Adapter_soc
+#graphify/rationale #graphify/EXTRACTED #community/Community_501

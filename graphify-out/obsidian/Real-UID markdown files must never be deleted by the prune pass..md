@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_lifespan_prune.py"
 type: "rationale"
-community: "Collaborator Tracker"
+community: "Community 42"
 location: "L91"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Collaborator_Tracker
+  - community/Community_42
 ---
 
 # Real-UID markdown files must never be deleted by the prune pass.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_prune_keeps_real_uid_markdown()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Tracker
+#graphify/rationale #graphify/EXTRACTED #community/Community_42

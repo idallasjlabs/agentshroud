@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-03-gateway-components.svg"
 type: "image"
-community: "Diagram 03 Gateway Components (images)"
+community: "Community 170"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Diagram_03_Gateway_Components_images
+  - community/Community_170
 ---
 
 # Op-Proxy (Credential Gateway)
@@ -14,4 +14,4 @@ tags:
 - [[Gateway ManagementControl-Plane API (v1.3.0)]] - `conceptually_related_to` [EXTRACTED]
 - [[Proxy Layer_1]] - `shares_data_with` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Diagram_03_Gateway_Components_images
+#graphify/image #graphify/EXTRACTED #community/Community_170

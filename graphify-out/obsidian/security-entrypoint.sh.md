@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/security-entrypoint.sh"
 type: "code"
-community: "Security Scheduler (scripts)"
+community: "Community 505"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Scheduler_scripts
+  - community/Community_505
 ---
 
 # security-entrypoint.sh
@@ -18,4 +18,4 @@ tags:
 - [[security-entrypoint.sh script]] - `contains` [EXTRACTED]
 - [[security-scan.sh (unified scan dispatcher)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Scheduler_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_505

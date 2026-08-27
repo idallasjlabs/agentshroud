@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "Tool ACL & Group RBAC"
+community: "Community 15"
 location: "L53"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Tool_ACL__Group_RBAC
+  - community/Community_15
 ---
 
 # RBACConfig
@@ -51,12 +51,10 @@ tags:
 - [[EmailSendRequest_1]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[FastAPI_1]] - `uses` [INFERRED]
-- [[FastAPI_5]] - `uses` [INFERRED]
 - [[ForwardRequest_2]] - `uses` [INFERRED]
 - [[GroupAccessDenied]] - `uses` [INFERRED]
 - [[GroupWorkspaceManager]] - `uses` [INFERRED]
 - [[LogRecord]] - `uses` [INFERRED]
-- [[LogRecord_3]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MCPPermissionManager]] - `uses` [INFERRED]
 - [[MCPPolicyAction]] - `uses` [INFERRED]
@@ -87,7 +85,6 @@ tags:
 - [[RBACConfig_2]] - `uses` [INFERRED]
 - [[RBACConfig_3]] - `uses` [INFERRED]
 - [[RBACConfig_4]] - `uses` [INFERRED]
-- [[RBACConfig_5]] - `uses` [INFERRED]
 - [[RBACManager]] - `uses` [INFERRED]
 - [[RBACManager_1]] - `uses` [INFERRED]
 - [[RateLimitEntry]] - `uses` [INFERRED]
@@ -244,4 +241,4 @@ tags:
 - [[websocket.py]] - `imports` [EXTRACTED]
 - [[ws_soc_endpoint()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Tool_ACL__Group_RBAC
+#graphify/code #graphify/INFERRED #community/Community_15

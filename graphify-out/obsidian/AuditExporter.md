@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/audit_export.py"
 type: "code"
-community: "Audit Export"
+community: "Community 89"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Audit_Export
+  - community/Community_89
 ---
 
 # AuditExporter
@@ -46,4 +46,4 @@ tags:
 - [[soc_export()]] - `calls` [EXTRACTED]
 - [[test_audit_export.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Audit_Export
+#graphify/code #graphify/EXTRACTED #community/Community_89

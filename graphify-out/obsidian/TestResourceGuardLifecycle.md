@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_resource_guard_wiring.py"
 type: "code"
-community: "Resource Guard & Local Model Parity"
+community: "Community 7"
 location: "L153"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Resource_Guard__Local_Model_Parity
+  - community/Community_7
 ---
 
 # TestResourceGuardLifecycle
@@ -18,4 +18,4 @@ tags:
 - [[The lifespan must stop the background monitor task on shutdown.]] - `rationale_for` [EXTRACTED]
 - [[test_resource_guard_wiring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Resource_Guard__Local_Model_Parity
+#graphify/code #graphify/EXTRACTED #community/Community_7

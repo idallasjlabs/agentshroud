@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/skills/manifest.py"
 type: "code"
-community: "Skills Manifest Sync"
+community: "Community 71"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Skills_Manifest_Sync
+  - community/Community_71
 ---
 
 # gateway/skills/manifest.py (SkillsManifest)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_skills_manifest_sync.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Skills_Manifest_Sync
+#graphify/code #graphify/EXTRACTED #community/Community_71

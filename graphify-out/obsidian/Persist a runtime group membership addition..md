@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "rationale"
-community: "Group Config & Collaborator Responses"
+community: "Community 134"
 location: "L265"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Group_Config__Collaborator_Responses
+  - community/Community_134
 ---
 
 # Persist a runtime group membership addition.
@@ -15,4 +15,4 @@ tags:
 - [[persist_group_member_add()]] - `rationale_for` [EXTRACTED]
 - [[persist_group_member_remove()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Group_Config__Collaborator_Responses
+#graphify/rationale #graphify/EXTRACTED #community/Community_134

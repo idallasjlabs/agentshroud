@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "Pipeline Unit"
+community: "Community 22"
 location: "L131"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Pipeline_Unit
+  - community/Community_22
 ---
 
 # AuditChain
@@ -102,4 +102,4 @@ tags:
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 - [[test_web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Pipeline_Unit
+#graphify/code #graphify/INFERRED #community/Community_22

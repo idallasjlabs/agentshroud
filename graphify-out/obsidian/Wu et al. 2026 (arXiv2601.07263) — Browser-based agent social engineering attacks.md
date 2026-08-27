@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/browser_security.py.md"
 type: "paper"
-community: "Browser Security"
+community: "Community 147"
 tags:
   - graphify/paper
   - graphify/EXTRACTED
-  - community/Browser_Security
+  - community/Community_147
 ---
 
 # Wu et al. 2026 (arXiv:2601.07263) — Browser-based agent social engineering attacks
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[browser_security.py]] - `cites` [EXTRACTED]
 
-#graphify/paper #graphify/EXTRACTED #community/Browser_Security
+#graphify/paper #graphify/EXTRACTED #community/Community_147

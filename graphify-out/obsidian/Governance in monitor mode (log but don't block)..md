@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_subagent_governance.py"
 type: "rationale"
-community: "Subagent Governance"
+community: "Community 532"
 location: "L30"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Subagent_Governance
+  - community/Community_532
 ---
 
 # Governance in monitor mode (log but don't block).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[monitor_gov()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Subagent_Governance
+#graphify/rationale #graphify/EXTRACTED #community/Community_532

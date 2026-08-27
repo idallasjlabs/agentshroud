@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "E2e Proxy"
+community: "Community 74"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/E2e_Proxy
+  - community/Community_74
 ---
 
 # SecurityPipeline.process_inbound
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[SidecarScanner]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/E2e_Proxy
+#graphify/code #graphify/EXTRACTED #community/Community_74

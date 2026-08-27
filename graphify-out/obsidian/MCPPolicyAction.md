@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/mcp_policy.py"
 type: "code"
-community: "Mcp Policy"
+community: "Community 34"
 location: "L51"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Mcp_Policy
+  - community/Community_34
 ---
 
 # MCPPolicyAction
@@ -28,4 +28,4 @@ tags:
 - [[test_mcp_policy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_policy_default_failclosed.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Mcp_Policy
+#graphify/code #graphify/INFERRED #community/Community_34

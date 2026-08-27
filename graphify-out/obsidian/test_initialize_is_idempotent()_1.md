@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ledger.py"
 type: "code"
-community: "Security Fixes & SSH Write Endpoint"
+community: "Community 1"
 location: "L216"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Fixes__SSH_Write_Endpoint
+  - community/Community_1
 ---
 
 # test_initialize_is_idempotent()
@@ -17,4 +17,4 @@ tags:
 - [[Re-initializing must not orphan the first aiosqlite connection.      aiosqlite c_1]] - `rationale_for` [EXTRACTED]
 - [[test_ledger.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Fixes__SSH_Write_Endpoint
+#graphify/code #graphify/EXTRACTED #community/Community_1

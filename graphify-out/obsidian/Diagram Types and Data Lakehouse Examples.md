@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-ti/SKILL.md"
 type: "document"
-community: "Skill (i-ti)"
+community: "Community 390"
 location: "L64"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-ti
+  - community/Community_390
 ---
 
 # Diagram Types and Data Lakehouse Examples
@@ -21,4 +21,4 @@ tags:
 - [[Skill Technical Illustrator (TI)]] - `contains` [EXTRACTED]
 - [[State Diagram — Job or process lifecycle]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-ti
+#graphify/document #graphify/EXTRACTED #community/Community_390

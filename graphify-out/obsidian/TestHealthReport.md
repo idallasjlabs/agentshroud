@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "Health Report (security)"
-location: "L778"
+community: "Community 162"
+location: "L794"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Health_Report_security
+  - community/Community_162
 ---
 
 # TestHealthReport
@@ -19,4 +19,4 @@ tags:
 - [[AlertDispatcher]] - `uses` [INFERRED]
 - [[test_security_toolchain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Health_Report_security
+#graphify/code #graphify/EXTRACTED #community/Community_162

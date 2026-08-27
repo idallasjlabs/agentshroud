@@ -1,12 +1,12 @@
 ---
 source_file: "docs/testing/test-coverage-report.md"
 type: "document"
-community: "Coverage Report (testing)"
+community: "Community 1127"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Coverage_Report_testing
+  - community/Community_1127
 ---
 
 # test-coverage-report.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Test Coverage Report]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Coverage_Report_testing
+#graphify/document #graphify/EXTRACTED #community/Community_1127

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy.py"
 type: "rationale"
-community: "Http Proxy"
+community: "Community 94"
 location: "L81"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Http_Proxy
+  - community/Community_94
 ---
 
 # Create a StreamReader loaded with data and a mock StreamWriter.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_make_stream()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Http_Proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_94

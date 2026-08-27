@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "Scanner Integration"
+community: "Community 261"
 location: "L526"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Scanner_Integration
+  - community/Community_261
 ---
 
 # Return per-image Trivy scan summaries from saved image reports.      Reads repor
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_trivy_image_summaries()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Scanner_Integration
+#graphify/rationale #graphify/EXTRACTED #community/Community_261

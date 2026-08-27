@@ -1,17 +1,18 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mac/SKILL.md"
 type: "document"
-community: "Skill (i-mac)"
+community: "Community 430"
 location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-mac
+  - community/Community_430
 ---
 
 # When to Use This Skill
 
 ## Connections
-- [[Mac App Discovery Skill]] - `contains` [EXTRACTED]
+- [[Mac App Discovery Skill_1]] - `contains` [EXTRACTED]
+- [[Mac App Discovery Skill_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-mac
+#graphify/document #graphify/EXTRACTED #community/Community_430

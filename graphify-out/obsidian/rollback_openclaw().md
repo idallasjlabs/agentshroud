@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Api (web)"
+community: "Community 45"
 location: "L611"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Api_web
+  - community/Community_45
 ---
 
 # rollback_openclaw()
@@ -16,4 +16,4 @@ tags:
 - [[api.py]] - `contains` [EXTRACTED]
 - [[rollback_bot()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Api_web
+#graphify/code #graphify/EXTRACTED #community/Community_45

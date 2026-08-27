@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "Mcp Proxy"
+community: "Community 36"
 location: "L80"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Mcp_Proxy
+  - community/Community_36
 ---
 
 # proxy()
@@ -18,4 +18,4 @@ tags:
 - [[MCPProxy]] - `calls` [EXTRACTED]
 - [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Mcp_Proxy
+#graphify/code #graphify/EXTRACTED #community/Community_36

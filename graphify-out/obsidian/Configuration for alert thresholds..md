@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "rationale"
-community: "Multi Turn Tracker (security)"
+community: "Community 825"
 location: "L77"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Multi_Turn_Tracker_security
+  - community/Community_825
 ---
 
 # Configuration for alert thresholds.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ThresholdConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Multi_Turn_Tracker_security
+#graphify/rationale #graphify/EXTRACTED #community/Community_825

@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-icloud/SKILL.md"
 type: "document"
-community: "Skill (i-icloud)"
+community: "Community 316"
 location: "L103"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-icloud
+  - community/Community_316
 ---
 
 # Notes Operations
@@ -17,4 +17,4 @@ tags:
 - [[Search Notes]] - `contains` [EXTRACTED]
 - [[iCloud Services]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-icloud
+#graphify/document #graphify/EXTRACTED #community/Community_316

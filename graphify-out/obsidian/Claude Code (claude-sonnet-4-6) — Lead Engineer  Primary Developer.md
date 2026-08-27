@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-21-team-structure.svg"
 type: "concept"
-community: "Diagram 21 Team Structure (images)"
+community: "Community 907"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Diagram_21_Team_Structure_images
+  - community/Community_907
 ---
 
 # Claude Code (claude-sonnet-4-6) — Lead Engineer / Primary Developer
@@ -20,4 +20,4 @@ tags:
 - [[Isaiah Jefferson — Product OwnerArchitectPMOperator]] - `conceptually_related_to` [EXTRACTED]
 - [[TeamAgent Role Structure Diagram]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Diagram_21_Team_Structure_images
+#graphify/concept #graphify/EXTRACTED #community/Community_907

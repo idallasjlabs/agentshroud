@@ -1,17 +1,21 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/pipeline.py.md"
 type: "document"
-community: "Alert Dispatcher.py (Security Modules)"
-location: "L70"
+community: "Community 476"
+location: "L223"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Alert_Dispatcherpy_Security_Modules
+  - community/Community_476
 ---
 
 # Configuration
 
 ## Connections
-- [[alert_dispatcher.py_2]] - `contains` [EXTRACTED]
+- [[Guard Presence and Startup Behavior]] - `contains` [EXTRACTED]
+- [[Key Thresholds]] - `contains` [EXTRACTED]
+- [[Monitor vs. Enforce Mode]] - `contains` [EXTRACTED]
+- [[Owner Exemption]] - `contains` [EXTRACTED]
+- [[pipeline.py — Security Pipeline]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Alert_Dispatcherpy_Security_Modules
+#graphify/document #graphify/EXTRACTED #community/Community_476

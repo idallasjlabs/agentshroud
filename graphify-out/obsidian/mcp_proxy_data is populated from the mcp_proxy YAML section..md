@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "rationale"
-community: "Config"
+community: "Community 34"
 location: "L274"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Config
+  - community/Community_34
 ---
 
 # mcp_proxy_data is populated from the mcp_proxy YAML section.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_mcp_proxy_data_parsed_from_yaml()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Config
+#graphify/rationale #graphify/EXTRACTED #community/Community_34

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ssh_proxy/proxy.py"
 type: "code"
-community: "Ssh Proxy"
+community: "Community 1"
 location: "L26"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Ssh_Proxy
+  - community/Community_1
 ---
 
 # SSHResult
@@ -38,4 +38,4 @@ tags:
 - [[test_ssh_endpoints.py]] - `imports` [EXTRACTED]
 - [[test_ssh_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Ssh_Proxy
+#graphify/code #graphify/INFERRED #community/Community_1

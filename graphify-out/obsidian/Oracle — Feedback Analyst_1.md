@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-oracle/SKILL.md"
 type: "document"
-community: "Skill (i-oracle)"
+community: "Community 945"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-oracle
+  - community/Community_945
 ---
 
 # Oracle — Feedback Analyst
@@ -20,4 +20,4 @@ tags:
 - [[SKILL_39]] - `contains` [EXTRACTED]
 - [[System Prompt_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-oracle
+#graphify/document #graphify/EXTRACTED #community/Community_945

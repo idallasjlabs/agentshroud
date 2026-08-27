@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[chaos-engineering SKILL stub (OpenClaw)]] - document - docker/config/openclaw/skills/i-chaos-engineering/SKILL.md
+- [[detect_runtime]] - code - gateway/runtime/__init__.py
 
 ## Live Query (requires Dataview plugin)
 

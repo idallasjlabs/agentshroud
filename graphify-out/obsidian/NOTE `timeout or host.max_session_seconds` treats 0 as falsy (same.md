@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_write_file_endpoint.py"
 type: "rationale"
-community: "Security Fixes & SSH Write Endpoint"
+community: "Community 1"
 location: "L539"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Fixes__SSH_Write_Endpoint
+  - community/Community_1
 ---
 
 # # NOTE: `timeout or host.max_session_seconds` treats 0 as falsy (same
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_ssh_write_file_endpoint.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Fixes__SSH_Write_Endpoint
+#graphify/rationale #graphify/EXTRACTED #community/Community_1

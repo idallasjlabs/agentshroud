@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "Router (soc)"
+community: "Community 18"
 location: "L1382"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Router_soc
+  - community/Community_18
 ---
 
 # SetModeRequest
@@ -23,4 +23,4 @@ tags:
 - [[router.py_1]] - `contains` [EXTRACTED]
 - [[set_group_mode()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Router_soc
+#graphify/code #graphify/INFERRED #community/Community_18

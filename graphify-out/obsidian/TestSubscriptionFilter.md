@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_websocket.py"
 type: "code"
-community: "Soc Websocket"
+community: "Community 144"
 location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Soc_Websocket
+  - community/Community_144
 ---
 
 # TestSubscriptionFilter
@@ -22,4 +22,4 @@ tags:
 - [[Test event filtering via the subscriptions set (mirrors _event_fan_out logic).]] - `rationale_for` [EXTRACTED]
 - [[test_soc_websocket.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Soc_Websocket
+#graphify/code #graphify/EXTRACTED #community/Community_144

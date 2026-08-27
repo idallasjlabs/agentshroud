@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-sav/SKILL.md"
 type: "document"
-community: "Skill (i-sav)"
+community: "Community 239"
 location: "L256"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-sav
+  - community/Community_239
 ---
 
 # `06 - Containers & Services/[ContainerName].md` — ONE PER CONTAINER/SERVICE
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[REQUIRED NOTES — PRODUCE EVERY ONE OF THESE]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-sav
+#graphify/document #graphify/EXTRACTED #community/Community_239

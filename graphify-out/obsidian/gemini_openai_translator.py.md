@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/gemini_openai_translator.py"
 type: "code"
-community: "Gemini Openai Translator"
+community: "Community 142"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gemini_Openai_Translator
+  - community/Community_142
 ---
 
 # gemini_openai_translator.py
@@ -21,4 +21,4 @@ tags:
 - [[openai_to_gemini_request()]] - `contains` [EXTRACTED]
 - [[openai_to_gemini_response()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gemini_Openai_Translator
+#graphify/code #graphify/EXTRACTED #community/Community_142

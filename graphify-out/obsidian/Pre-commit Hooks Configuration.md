@@ -1,11 +1,11 @@
 ---
 source_file: ".pre-commit-config.yaml"
 type: "document"
-community: ".semgrep"
+community: "Community 251"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/semgrep
+  - community/Community_251
 ---
 
 # Pre-commit Hooks Configuration
@@ -17,4 +17,4 @@ tags:
 - [[gitleaks (secret scanner)]] - `references` [EXTRACTED]
 - [[ruff (Python linter)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/semgrep
+#graphify/document #graphify/EXTRACTED #community/Community_251

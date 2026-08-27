@@ -1,18 +1,18 @@
 ---
 source_file: "docs/requirements/system-requirements.md"
 type: "document"
-community: "Glossary (project)"
+community: "Community 90"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Glossary_project
+  - community/Community_90
 ---
 
 # system-requirements.md
 
 ## Connections
-- [[Approval Queue_1]] - `references` [EXTRACTED]
+- [[Approval Queue_2]] - `references` [EXTRACTED]
 - [[Audit Trail_1]] - `references` [EXTRACTED]
 - [[Container Runtime]] - `references` [EXTRACTED]
 - [[DNS Filtering]] - `references` [EXTRACTED]
@@ -29,4 +29,4 @@ tags:
 - [[setup-guide]] - `conceptually_related_to` [INFERRED]
 - [[use-cases]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Glossary_project
+#graphify/document #graphify/EXTRACTED #community/Community_90

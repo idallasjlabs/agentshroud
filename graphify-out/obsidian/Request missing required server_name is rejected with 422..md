@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "rationale"
-community: "Mcp Result Endpoint"
+community: "Community 487"
 location: "L144"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Mcp_Result_Endpoint
+  - community/Community_487
 ---
 
 # Request missing required server_name is rejected with 422.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_result_missing_server_name_rejected()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Mcp_Result_Endpoint
+#graphify/rationale #graphify/EXTRACTED #community/Community_487

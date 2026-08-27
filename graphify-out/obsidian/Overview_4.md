@@ -1,12 +1,12 @@
 ---
 source_file: "docs/api/api-reference.md"
 type: "document"
-community: "Integration Guide (api)"
+community: "Community 520"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Integration_Guide_api
+  - community/Community_520
 ---
 
 # Overview
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud v1.3.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Integration_Guide_api
+#graphify/document #graphify/EXTRACTED #community/Community_520

@@ -1,12 +1,12 @@
 ---
 source_file: "shortcuts/README.md"
 type: "document"
-community: "Readme (shortcuts)"
+community: "Community 591"
 location: "L306"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_shortcuts
+  - community/Community_591
 ---
 
 # Contract verification (automated)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[iOS  macOS Shortcuts — Relay to AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_shortcuts
+#graphify/document #graphify/EXTRACTED #community/Community_591

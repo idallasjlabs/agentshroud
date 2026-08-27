@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "Mcp Proxy Coverage"
+community: "Community 1540"
 location: "L95"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Mcp_Proxy_Coverage
+  - community/Community_1540
 ---
 
 # MCPServerConfig
@@ -23,4 +23,4 @@ tags:
 - [[MCPServerConfig]] - `uses` [INFERRED]
 - [[MCPTransport]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Mcp_Proxy_Coverage
+#graphify/code #graphify/INFERRED #community/Community_1540

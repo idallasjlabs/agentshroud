@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-browser/package.json"
-type: "code"
-community: "Package (i-browser)"
-location: "L4"
+source_file: "docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md"
+type: "document"
+community: "Community 573"
+location: "L11"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Package_i-browser
+  - community/Community_573
 ---
 
-# description
+# Description
 
 ## Connections
-- [[package.json_5]] - `contains` [EXTRACTED]
+- [[OPENCLAW_DISABLE_HOST_FILESYSTEM_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Package_i-browser
+#graphify/document #graphify/EXTRACTED #community/Community_573

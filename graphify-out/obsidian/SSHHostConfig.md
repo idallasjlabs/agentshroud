@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ssh_config.py"
 type: "code"
-community: "Security Fixes & SSH Write Endpoint"
+community: "Community 12"
 location: "L15"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Security_Fixes__SSH_Write_Endpoint
+  - community/Community_12
 ---
 
 # SSHHostConfig
@@ -57,4 +57,4 @@ tags:
 - [[test_ssh_proxy.py]] - `imports` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Security_Fixes__SSH_Write_Endpoint
+#graphify/code #graphify/INFERRED #community/Community_12

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/webhook_receiver.py"
 type: "code"
-community: "Middleware & Session Isolation"
+community: "Community 1137"
 location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Middleware__Session_Isolation
+  - community/Community_1137
 ---
 
 # WebhookReceiver
@@ -57,4 +57,4 @@ tags:
 - [[test_webhook_strips_pii()]] - `calls` [EXTRACTED]
 - [[webhook_receiver.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Middleware__Session_Isolation
+#graphify/code #graphify/EXTRACTED #community/Community_1137

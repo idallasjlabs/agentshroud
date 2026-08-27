@@ -1,11 +1,11 @@
 ---
 source_file: "docs/TEAM.md"
 type: "concept"
-community: "Team (docs)"
+community: "Community 1091"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Team_docs
+  - community/Community_1091
 ---
 
 # Pi (Raspberry Pi 4B) — Edge/test node
@@ -14,4 +14,4 @@ tags:
 - [[Distributed OpenClaw Node Architecture (Pi peer-to-peer agent)]] - `references` [EXTRACTED]
 - [[Tailscale mesh VPN (tail240ea8.ts.net)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Team_docs
+#graphify/concept #graphify/EXTRACTED #community/Community_1091

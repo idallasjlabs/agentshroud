@@ -1,12 +1,12 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "Changelog"
+community: "Community 1296"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Changelog
+  - community/Community_1296
 ---
 
 # CHANGELOG.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Changelog — AgentShroud™]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Changelog
+#graphify/document #graphify/EXTRACTED #community/Community_1296

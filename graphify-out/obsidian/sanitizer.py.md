@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "code"
-community: "Security Audit & Watchtower Tests"
+community: "Community 1325"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Audit__Watchtower_Tests
+  - community/Community_1325
 ---
 
 # sanitizer.py
@@ -26,4 +26,4 @@ tags:
 - [[state.py]] - `imports_from` [EXTRACTED]
 - [[verify.sh]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests
+#graphify/code #graphify/EXTRACTED #community/Community_1325

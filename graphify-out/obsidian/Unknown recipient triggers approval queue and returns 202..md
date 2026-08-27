@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_channel_ownership.py"
 type: "rationale"
-community: "Channel Ownership"
+community: "Community 222"
 location: "L259"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Channel_Ownership
+  - community/Community_222
 ---
 
 # Unknown recipient triggers approval queue and returns 202.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_unknown_recipient_queued_for_approval()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Channel_Ownership
+#graphify/rationale #graphify/EXTRACTED #community/Community_222

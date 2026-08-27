@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/i-ti/README.md"
 type: "document"
-community: "Readme (i-ti)"
+community: "Community 1211"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-ti
+  - community/Community_1211
 ---
 
 # Related Skills
 
 ## Connections
-- [[Technical Illustrator (TI)]] - `contains` [EXTRACTED]
+- [[Technical Illustrator (TI)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-ti
+#graphify/document #graphify/EXTRACTED #community/Community_1211

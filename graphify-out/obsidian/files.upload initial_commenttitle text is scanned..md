@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "rationale"
-community: "Slack Proxy"
+community: "Community 72"
 location: "L644"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Slack_Proxy
+  - community/Community_72
 ---
 
 # files.upload initial_comment/title text is scanned.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_file_upload_initial_comment_scanned()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Slack_Proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_72

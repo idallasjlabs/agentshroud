@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "rationale"
-community: "E2e Proxy"
+community: "Community 1137"
 location: "L370"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/E2e_Proxy
+  - community/Community_1137
 ---
 
 # Verify webhook receiver routes through pipeline.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_webhook_receiver_processes()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/E2e_Proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_1137

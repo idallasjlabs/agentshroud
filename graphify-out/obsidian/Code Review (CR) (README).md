@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-cr/README.md"
 type: "document"
-community: "Skill (i-data)"
+community: "Community 848"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Skill_i-data
+  - community/Community_848
 ---
 
 # Code Review (CR) (README)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Code Review (CR) (SKILL)]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Skill_i-data
+#graphify/document #graphify/INFERRED #community/Community_848

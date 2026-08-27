@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-sad/README.md"
 type: "document"
-community: "Readme (i-sad)"
+community: "Community 1204"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-sad
+  - community/Community_1204
 ---
 
 # System Audit Documentation
@@ -17,4 +17,4 @@ tags:
 - [[Related Skills_70]] - `contains` [EXTRACTED]
 - [[Usage_71]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-sad
+#graphify/document #graphify/EXTRACTED #community/Community_1204

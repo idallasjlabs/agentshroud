@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/canary.py.md"
 type: "document"
-community: "Canary.py (Security Modules)"
+community: "Community 686"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Canarypy_Security_Modules
+  - community/Community_686
 ---
 
 # canary.py
@@ -24,4 +24,4 @@ tags:
 - [[Threat Model_5]] - `contains` [EXTRACTED]
 - [[canary.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Canarypy_Security_Modules
+#graphify/document #graphify/EXTRACTED #community/Community_686

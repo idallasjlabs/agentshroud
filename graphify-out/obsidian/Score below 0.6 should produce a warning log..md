@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_context_integrity.py"
 type: "rationale"
-community: "Context Integrity"
+community: "Community 116"
 location: "L84"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Context_Integrity
+  - community/Community_116
 ---
 
 # Score below 0.6 should produce a warning log.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_below_alert_threshold_logs_warning()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Context_Integrity
+#graphify/rationale #graphify/EXTRACTED #community/Community_116

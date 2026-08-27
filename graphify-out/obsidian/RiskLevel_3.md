@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "Egress Approval (security)"
+community: "Community 21"
 location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress_Approval_security
+  - community/Community_21
 ---
 
 # RiskLevel
@@ -20,4 +20,4 @@ tags:
 - [[egress_approval.py]] - `contains` [EXTRACTED]
 - [[test_egress_approval.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress_Approval_security
+#graphify/code #graphify/EXTRACTED #community/Community_21

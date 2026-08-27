@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-sav/README.md"
 type: "document"
-community: "Readme (i-sav)"
+community: "Community 1166"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-sav
+  - community/Community_1166
 ---
 
 # README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[System Audit Vault]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-sav
+#graphify/document #graphify/EXTRACTED #community/Community_1166

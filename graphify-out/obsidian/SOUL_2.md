@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/SOUL.md"
 type: "document"
-community: "Soul (hermes)"
+community: "Community 315"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Soul_hermes
+  - community/Community_315
 ---
 
 # SOUL.md
@@ -28,4 +28,4 @@ tags:
 - [[tirith command-safety scanner]] - `references` [EXTRACTED]
 - [[trillian (lab host)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Soul_hermes
+#graphify/document #graphify/EXTRACTED #community/Community_315

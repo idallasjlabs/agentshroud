@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/session-issue-register-2026-03-14.md"
 type: "document"
-community: "Enforcement Audit V0.7.0 (reviews)"
+community: "Community 1138"
 location: "L104"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Enforcement_Audit_V070_reviews
+  - community/Community_1138
 ---
 
 # Recommended Next Closure Sequence
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Session Issue Register — 2026-03-14]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Enforcement_Audit_V070_reviews
+#graphify/document #graphify/EXTRACTED #community/Community_1138

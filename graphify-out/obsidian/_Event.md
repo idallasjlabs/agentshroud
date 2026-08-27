@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: "A2a Proxy (proxy)"
+community: "Community 107"
 location: "L445"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/A2a_Proxy_proxy
+  - community/Community_107
 ---
 
 # _Event
@@ -23,4 +23,4 @@ tags:
 - [[DifferentialPIIDetector]] - `uses` [INFERRED]
 - [[test_a2a_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/A2a_Proxy_proxy
+#graphify/code #graphify/INFERRED #community/Community_107

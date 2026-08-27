@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "rationale"
-community: "Redteam Probes"
+community: "Community 66"
 location: "L48"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Redteam_Probes
+  - community/Community_66
 ---
 
 # Build a SecurityPipeline with all guards wired up.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_make_full_pipeline()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Redteam_Probes
+#graphify/rationale #graphify/EXTRACTED #community/Community_66

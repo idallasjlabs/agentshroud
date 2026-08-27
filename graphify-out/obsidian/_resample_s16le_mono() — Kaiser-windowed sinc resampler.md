@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/tts.py"
 type: "code"
-community: "Tts (voice_gateway)"
+community: "Community 286"
 location: "L52-124"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tts_voice_gateway
+  - community/Community_286
 ---
 
 # _resample_s16le_mono() — Kaiser-windowed sinc resampler
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[synthesize()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Tts_voice_gateway
+#graphify/code #graphify/EXTRACTED #community/Community_286

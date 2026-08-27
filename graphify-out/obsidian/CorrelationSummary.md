@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/soc_correlation.py"
 type: "code"
-community: "Dashboard"
+community: "Community 80"
 location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Dashboard
+  - community/Community_80
 ---
 
 # CorrelationSummary
@@ -18,4 +18,4 @@ tags:
 - [[build_correlation_summary()]] - `references` [EXTRACTED]
 - [[soc_correlation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Dashboard
+#graphify/code #graphify/EXTRACTED #community/Community_80

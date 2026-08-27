@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-02-24-final.md"
 type: "document"
-community: "Phase Review P0 2026 (reviews)"
+community: "Community 1116"
 location: "L183"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_Review_P0_2026_reviews
+  - community/Community_1116
 ---
 
 # 🔴 **HIGH RISK — Immediate Attention Required**
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[4. Risks & Gaps — Critical Security Concerns]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_Review_P0_2026_reviews
+#graphify/document #graphify/EXTRACTED #community/Community_1116

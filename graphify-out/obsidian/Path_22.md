@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/skills/scan.py"
 type: "code"
-community: "Skill Guard (security)"
+community: "Community 110"
 location: "L42"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Skill_Guard_security
+  - community/Community_110
 ---
 
 # Path
@@ -17,6 +17,6 @@ tags:
 - [[SkillGuard]] - `uses` [INFERRED]
 - [[SkillsManifest]] - `uses` [INFERRED]
 - [[_build_tree()]] - `references` [EXTRACTED]
-- [[main()_12]] - `calls` [EXTRACTED]
+- [[main()_13]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Skill_Guard_security
+#graphify/code #graphify/INFERRED #community/Community_110

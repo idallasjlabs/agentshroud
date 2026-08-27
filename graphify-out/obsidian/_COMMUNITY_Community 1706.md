@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Feature Request Issue Template]] - document - .github/ISSUE_TEMPLATE/feature_request.yml
+- [[Mermaid Brand Theme Init Block]] - concept - docker/config/openclaw/skills/i-ti/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

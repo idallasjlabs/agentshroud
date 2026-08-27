@@ -8,11 +8,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[.test_compose_text_empty_when_absent()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_compose_text_skips_unreadable_then_reads()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_security_scan_sh_empty_when_absent()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_security_scan_sh_read()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestTextReaders]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[MCP Doctor (MCPM-DOCTOR)_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/README.md
+- [[Purpose_92]] - document - docker/config/openclaw/skills/i-mcpm-doctor/README.md
+- [[README_97]] - document - docker/config/openclaw/skills/i-mcpm-doctor/README.md
+- [[Related Skills_100]] - document - docker/config/openclaw/skills/i-mcpm-doctor/README.md
+- [[Usage_102]] - document - docker/config/openclaw/skills/i-mcpm-doctor/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,12 +20,3 @@ members: 5
 TABLE source_file, type FROM #community/Community_1232
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_docsproject]]
-
-## Top bridge nodes
-- [[TestTextReaders]] - degree 5, connects to 1 community
-- [[.test_compose_text_skips_unreadable_then_reads()]] - degree 2, connects to 1 community
-- [[.test_security_scan_sh_read()]] - degree 2, connects to 1 community

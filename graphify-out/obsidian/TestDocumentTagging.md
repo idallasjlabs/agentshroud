@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_metadata_guard.py"
 type: "code"
-community: "Metadata Guard"
+community: "Community 585"
 location: "L186"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Metadata_Guard
+  - community/Community_585
 ---
 
 # TestDocumentTagging
@@ -22,4 +22,4 @@ tags:
 - [[MetadataGuard]] - `uses` [INFERRED]
 - [[test_metadata_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Metadata_Guard
+#graphify/code #graphify/EXTRACTED #community/Community_585

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Security Audit & Watchtower Tests"
+community: "Community 265"
 location: "L4740"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Audit__Watchtower_Tests
+  - community/Community_265
 ---
 
 # _send_owner_pending_notice must append Pending Egress Requests when queue non-em
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPendingNoticeIncludesEgressSection]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Community_265

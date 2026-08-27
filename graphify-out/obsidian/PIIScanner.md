@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "Privilege Separation & File Sandbox"
+community: "Community 65"
 location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Privilege_Separation__File_Sandbox
+  - community/Community_65
 ---
 
 # PIIScanner
@@ -28,4 +28,4 @@ tags:
 - [[file_sandbox.py]] - `contains` [EXTRACTED]
 - [[test_file_sandbox.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Privilege_Separation__File_Sandbox
+#graphify/code #graphify/EXTRACTED #community/Community_65

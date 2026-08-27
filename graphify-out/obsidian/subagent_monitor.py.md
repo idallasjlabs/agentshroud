@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "Subagent Monitor"
+community: "Community 97"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Subagent_Monitor
+  - community/Community_97
 ---
 
 # subagent_monitor.py
@@ -25,4 +25,4 @@ tags:
 - [[session_security.py]] - `references` [EXTRACTED]
 - [[trust_manager.py]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Subagent_Monitor
+#graphify/code #graphify/EXTRACTED #community/Community_97

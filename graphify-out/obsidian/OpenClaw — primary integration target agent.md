@@ -1,11 +1,11 @@
 ---
 source_file: "docs/agentshroud-knowledge.md"
 type: "concept"
-community: "Agentshroud Knowledge (docs)"
+community: "Community 1252"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Agentshroud_Knowledge_docs
+  - community/Community_1252
 ---
 
 # OpenClaw — primary integration target agent
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Collaborator System (multi-user agentic workspace)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Agentshroud_Knowledge_docs
+#graphify/concept #graphify/INFERRED #community/Community_1252

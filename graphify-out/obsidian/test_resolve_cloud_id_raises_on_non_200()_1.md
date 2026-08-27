@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_jira_weekly_review.py"
 type: "code"
-community: "Jira Weekly Review"
+community: "Community 279"
 location: "L124"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Jira_Weekly_Review
+  - community/Community_279
 ---
 
 # test_resolve_cloud_id_raises_on_non_200()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_jira_weekly_review.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Jira_Weekly_Review
+#graphify/code #graphify/EXTRACTED #community/Community_279

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/data/schema-documentation.md"
 type: "document"
-community: "Schema Documentation (data)"
+community: "Community 494"
 location: "L129"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Schema_Documentation_data
+  - community/Community_494
 ---
 
 # In-Memory Data Structures
@@ -17,4 +17,4 @@ tags:
 - [[Rate Limiter State]] - `contains` [EXTRACTED]
 - [[Trust Level Cache]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Schema_Documentation_data
+#graphify/document #graphify/EXTRACTED #community/Community_494

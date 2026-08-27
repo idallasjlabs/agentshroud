@@ -1,11 +1,11 @@
 ---
 source_file: "scripts/smoke.sh"
 type: "code"
-community: "Skill (i-hdev)"
+community: "Community 660"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Skill_i-hdev
+  - community/Community_660
 ---
 
 # scripts/smoke.sh (static startup smoke suite)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Hermes Dev Workflow (HDEV) Skill]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Skill_i-hdev
+#graphify/code #graphify/EXTRACTED #community/Community_660

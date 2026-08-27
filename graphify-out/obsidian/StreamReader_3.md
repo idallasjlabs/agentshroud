@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "Http Proxy Coverage"
+community: "Community 52"
 location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Http_Proxy_Coverage
+  - community/Community_52
 ---
 
 # StreamReader
@@ -28,4 +28,4 @@ tags:
 - [[test_relay_copies_bytes_until_eof()]] - `calls` [EXTRACTED]
 - [[test_relay_swallows_writer_close_failure()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Http_Proxy_Coverage
+#graphify/code #graphify/EXTRACTED #community/Community_52

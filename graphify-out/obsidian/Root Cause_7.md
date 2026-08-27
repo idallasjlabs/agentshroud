@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/06-outbound-info-filter.md"
 type: "document"
-community: "06 Outbound Info Filter (redteam)"
+community: "Community 534"
 location: "L37"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/06_Outbound_Info_Filter_redteam
+  - community/Community_534
 ---
 
 # Root Cause
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Implement gateway-level outbound information filtering module]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/06_Outbound_Info_Filter_redteam
+#graphify/document #graphify/EXTRACTED #community/Community_534

@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/app_main.c"
 type: "code"
-community: "Ws Client (main)"
-location: "L596"
+community: "Community 139"
+location: "L607"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ws_Client_main
+  - community/Community_139
 ---
 
 # _deliver_utterance()
@@ -24,4 +24,4 @@ tags:
 - [[ws_client_send_listen_resume()]] - `calls` [INFERRED]
 - [[ws_client_send_pcm()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Ws_Client_main
+#graphify/code #graphify/EXTRACTED #community/Community_139

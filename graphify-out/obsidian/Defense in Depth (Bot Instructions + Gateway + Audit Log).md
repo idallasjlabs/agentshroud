@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md"
 type: "rationale"
-community: "Security Scripts Reference (security)"
+community: "Community 548"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Scripts_Reference_security
+  - community/Community_548
 ---
 
 # Defense in Depth (Bot Instructions + Gateway + Audit Log)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[SECURITY-IMPLEMENTATION-VERIFICATION]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Scripts_Reference_security
+#graphify/rationale #graphify/EXTRACTED #community/Community_548

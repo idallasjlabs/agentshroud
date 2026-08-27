@@ -1,18 +1,19 @@
 ---
 source_file: ".agents/skills/i-atlas/SKILL.md"
 type: "document"
-community: "Skill (i-atlas)"
+community: "Community 1004"
 location: "L112"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-atlas
+  - community/Community_1004
 ---
 
 # OKE Channel — CPA Exam Context
 
 ## Connections
-- [[Atlas — Curriculum Architect_6]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_1]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_7]] - `contains` [EXTRACTED]
 - [[CPA Curriculum Frontmatter Addition]] - `contains` [EXTRACTED]
 - [[Coverage Types]] - `contains` [EXTRACTED]
 - [[Episode Closing]] - `contains` [EXTRACTED]
@@ -20,4 +21,4 @@ tags:
 - [[Gleim Unit Mapping]] - `contains` [EXTRACTED]
 - [[Mandatory Acronym Expansion]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-atlas
+#graphify/document #graphify/EXTRACTED #community/Community_1004

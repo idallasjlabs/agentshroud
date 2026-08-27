@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "Readme (i-mcpm-auth-reset)"
+community: "Community 1038"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-mcpm-auth-reset
+  - community/Community_1038
 ---
 
 # MCP Auth Reset Skill
@@ -16,4 +16,4 @@ tags:
 - [[i-mcpm-auth-reset README]] - `references` [EXTRACTED]
 - [[mcpm-doctor Skill (referenced, sibling dir)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-mcpm-auth-reset
+#graphify/document #graphify/EXTRACTED #community/Community_1038

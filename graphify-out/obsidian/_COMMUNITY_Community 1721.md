@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[i-observability SKILL]] - document - docker/config/hermes/skills/i-observability/SKILL.md
+- [[show_notes.md (podcast pipeline distilled content artifact)]] - concept - docker/config/hermes/skills/i-oracle/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

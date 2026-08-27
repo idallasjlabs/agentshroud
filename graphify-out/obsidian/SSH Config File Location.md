@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/OPENCLAW_SSH_SETUP.md"
 type: "document"
-community: "Openclaw Ssh Setup (setup)"
+community: "Community 186"
 location: "L86"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Openclaw_Ssh_Setup_setup
+  - community/Community_186
 ---
 
 # SSH Config File Location
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SSH Configuration Details]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Openclaw_Ssh_Setup_setup
+#graphify/document #graphify/EXTRACTED #community/Community_186

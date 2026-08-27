@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_bots.py"
 type: "code"
-community: "Soc Bots"
+community: "Community 39"
 location: "L227"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Soc_Bots
+  - community/Community_39
 ---
 
 # TestEgressPendingBotFilter
@@ -18,4 +18,4 @@ tags:
 - [[Role_1]] - `uses` [INFERRED]
 - [[test_soc_bots.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Soc_Bots
+#graphify/code #graphify/EXTRACTED #community/Community_39

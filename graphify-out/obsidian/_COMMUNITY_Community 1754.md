@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[ci (Continuous Integration) SKILL stub (OpenClaw)]] - document - docker/config/openclaw/skills/i-ci/SKILL.md
+- [[SecureBrowser.close()]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/governance/SPRINT_CADENCE.md"
 type: "concept"
-community: "Strategy (governance)"
+community: "Community 307"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Strategy_governance
+  - community/Community_307
 ---
 
 # GSD (Get Shit Done) cadence — adopted in place of formal Scrum/SAFe sprints
@@ -17,4 +17,4 @@ tags:
 - [[Sprint Cadence Decision (docsgovernanceSPRINT_CADENCE.md)]] - `conceptually_related_to` [EXTRACTED]
 - [[Weekly Kaizen retrospective cron job (Friday 500 PM ET)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Strategy_governance
+#graphify/concept #graphify/EXTRACTED #community/Community_307

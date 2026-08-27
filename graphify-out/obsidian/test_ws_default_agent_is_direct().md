@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "Voice Gateway"
-location: "L1511"
+community: "Community 37"
+location: "L1512"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Voice_Gateway
+  - community/Community_37
 ---
 
 # test_ws_default_agent_is_direct()
@@ -15,4 +15,4 @@ tags:
 - [[When agent= is absent the default agent must be 'direct' (fast local     model)]] - `rationale_for` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Voice_Gateway
+#graphify/code #graphify/EXTRACTED #community/Community_37

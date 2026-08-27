@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/http_proxy.py"
 type: "code"
-community: "Agentshroud.yaml (03 - Configuration)"
+community: "Community 30"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Agentshroudyaml_03_-_Configuration
+  - community/Community_30
 ---
 
 # http_proxy.py
@@ -29,4 +29,4 @@ tags:
 - [[web_config.py]] - `imports_from` [EXTRACTED]
 - [[web_proxy.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Agentshroudyaml_03_-_Configuration
+#graphify/code #graphify/EXTRACTED #community/Community_30

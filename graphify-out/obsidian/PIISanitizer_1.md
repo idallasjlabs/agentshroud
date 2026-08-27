@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "Security Audit & Watchtower Tests"
+community: "Community 513"
 location: "L62"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Security_Audit__Watchtower_Tests
+  - community/Community_513
 ---
 
 # PIISanitizer
@@ -17,4 +17,4 @@ tags:
 - [[PIISanitizer]] - `uses` [INFERRED]
 - [[RedactionResult]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Security_Audit__Watchtower_Tests
+#graphify/code #graphify/INFERRED #community/Community_513

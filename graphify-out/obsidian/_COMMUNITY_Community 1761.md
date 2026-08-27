@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Threat Intelligence]] - concept - docs/project/glossary.md
+- [[Cross-Bot Trust Ledger (Module 27)]] - code - gateway/security/cross_bot_trust_ledger.py
 
 ## Live Query (requires Dataview plugin)
 

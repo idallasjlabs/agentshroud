@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_resource_guard_limits.py"
 type: "code"
-community: "Resource Guard & Local Model Parity"
+community: "Community 7"
 location: "L190"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Resource_Guard__Local_Model_Parity
+  - community/Community_7
 ---
 
 # TestExpiredUsageCleanup
@@ -19,4 +19,4 @@ tags:
 - [[VRAMHeadroomError]] - `uses` [INFERRED]
 - [[test_resource_guard_limits.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Resource_Guard__Local_Model_Parity
+#graphify/code #graphify/INFERRED #community/Community_7

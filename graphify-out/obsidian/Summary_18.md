@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/SECURITY_VERIFICATION.md"
+source_file: "CHANGELOG.md"
 type: "document"
-community: "Security Verification (security)"
-location: "L5"
+community: "Community 1332"
+location: "L903"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Verification_security
+  - community/Community_1332
 ---
 
 # Summary
 
 ## Connections
-- [[Security Verification Report]] - `contains` [EXTRACTED]
+- [[0.7.0 - 2026-02-25]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Verification_security
+#graphify/document #graphify/EXTRACTED #community/Community_1332

@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/wakeword.c"
 type: "code"
-community: "Wakeword (main)"
-location: "L484"
+community: "Community 249"
+location: "L503"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Wakeword_main
+  - community/Community_249
 ---
 
 # wakeword_tts_stop_request()
@@ -15,4 +15,4 @@ tags:
 - [[_touch_pressed()]] - `calls` [INFERRED]
 - [[wakeword.c]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Wakeword_main
+#graphify/code #graphify/INFERRED #community/Community_249

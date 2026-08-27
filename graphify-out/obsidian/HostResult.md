@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/multi_host_test.py"
 type: "code"
-community: "Multi Host (tools)"
+community: "Community 485"
 location: "L69"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Multi_Host_tools
+  - community/Community_485
 ---
 
 # HostResult
@@ -36,4 +36,4 @@ tags:
 - [[run_multi_host()]] - `references` [EXTRACTED]
 - [[test_multi_host_test.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Multi_Host_tools
+#graphify/code #graphify/INFERRED #community/Community_485

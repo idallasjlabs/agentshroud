@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "rationale"
-community: "Daily Cve Report (security)"
-location: "L251"
+community: "Community 482"
+location: "L279"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Daily_Cve_Report_security
+  - community/Community_482
 ---
 
 # Saved file is valid JSON containing the report keys.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_report_content_persisted()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Daily_Cve_Report_security
+#graphify/rationale #graphify/EXTRACTED #community/Community_482

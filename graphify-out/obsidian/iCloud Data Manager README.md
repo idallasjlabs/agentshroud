@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-icloud/README.md"
 type: "document"
-community: "Calendar (scripts)"
+community: "Community 570"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Calendar_scripts
+  - community/Community_570
 ---
 
 # iCloud Data Manager README
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[iCloud Services Skill_1]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Calendar_scripts
+#graphify/document #graphify/INFERRED #community/Community_570

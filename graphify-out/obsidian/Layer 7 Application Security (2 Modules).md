@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-architecture.md"
 type: "document"
-community: "Security Architecture (security)"
+community: "Community 276"
 location: "L211"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Architecture_security
+  - community/Community_276
 ---
 
 # Layer 7: Application Security (2 Modules)
@@ -16,4 +16,4 @@ tags:
 - [[26. MCP Inspector]] - `contains` [EXTRACTED]
 - [[Security Module Inventory]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Architecture_security
+#graphify/document #graphify/EXTRACTED #community/Community_276

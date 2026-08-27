@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Runtime/apple_engine.py.md"
 type: "document"
-community: "Apple Engine.py (Runtime)"
+community: "Community 582"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Apple_Enginepy_Runtime
+  - community/Community_582
 ---
 
 # apple_engine.py
@@ -21,4 +21,4 @@ tags:
 - [[Responsibilities_24]] - `contains` [EXTRACTED]
 - [[apple_engine.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Apple_Enginepy_Runtime
+#graphify/document #graphify/EXTRACTED #community/Community_582

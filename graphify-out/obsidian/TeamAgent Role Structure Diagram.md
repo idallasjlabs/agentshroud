@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-21-team-structure.png"
 type: "image"
-community: "Diagram 21 Team Structure (images)"
+community: "Community 907"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Diagram_21_Team_Structure_images
+  - community/Community_907
 ---
 
 # Team/Agent Role Structure Diagram
@@ -17,4 +17,4 @@ tags:
 - [[Gemini CLI — SecondaryTest Engineer (cannot direct Claude)]] - `conceptually_related_to` [EXTRACTED]
 - [[Isaiah Jefferson — Product OwnerArchitectPMOperator]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Diagram_21_Team_Structure_images
+#graphify/image #graphify/EXTRACTED #community/Community_907

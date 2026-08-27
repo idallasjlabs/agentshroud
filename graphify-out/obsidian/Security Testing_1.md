@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/references/security-policies.md"
 type: "document"
-community: "Security Policies (references)"
+community: "Community 420"
 location: "L236"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Policies_references
+  - community/Community_420
 ---
 
 # Security Testing
@@ -16,4 +16,4 @@ tags:
 - [[Manual Security Review]] - `contains` [EXTRACTED]
 - [[SecureBrowser Security Policies]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Policies_references
+#graphify/document #graphify/EXTRACTED #community/Community_420

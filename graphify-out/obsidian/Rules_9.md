@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bot-capabilities.md"
 type: "document"
-community: "Bot Capabilities (docker)"
+community: "Community 746"
 location: "L24"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Capabilities_docker
+  - community/Community_746
 ---
 
 # Rules
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Trademark Statements]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Capabilities_docker
+#graphify/document #graphify/EXTRACTED #community/Community_746

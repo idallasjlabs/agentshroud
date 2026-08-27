@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "Scanner Integration"
+community: "Community 512"
 location: "L863"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Scanner_Integration
+  - community/Community_512
 ---
 
 # Return the latest SBOM (Software Bill of Materials) as parsed JSON.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_sbom()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Scanner_Integration
+#graphify/rationale #graphify/EXTRACTED #community/Community_512

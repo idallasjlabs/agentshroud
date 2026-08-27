@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_triage_cve_mitigations.py"
 type: "code"
-community: "Triage Cve Mitigations"
+community: "Community 51"
 location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Triage_Cve_Mitigations
+  - community/Community_51
 ---
 
 # _t()
@@ -52,4 +52,4 @@ tags:
 - [[.test_unterminated_field_returns_end()]] - `calls` [EXTRACTED]
 - [[test_triage_cve_mitigations.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Triage_Cve_Mitigations
+#graphify/code #graphify/EXTRACTED #community/Community_51

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/WORKSPACE_DECISION.md"
 type: "rationale"
-community: "Workspace Usage (architecture)"
+community: "Community 159"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Workspace_Usage_architecture
+  - community/Community_159
 ---
 
 # Docker Volume Chosen Over Bind Mount
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[WORKSPACE_DECISION]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Workspace_Usage_architecture
+#graphify/rationale #graphify/EXTRACTED #community/Community_159

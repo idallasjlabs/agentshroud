@@ -1,18 +1,18 @@
 ---
 source_file: "docker/config/hermes/SOUL.md"
 type: "concept"
-community: "Prompt Guard.py (Security Modules)"
+community: "Community 569"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Prompt_Guardpy_Security_Modules
+  - community/Community_569
 ---
 
 # PromptGuard
 
 ## Connections
 - [[AI Security Standards Tracker job]] - `references` [EXTRACTED]
-- [[Configuration_15]] - `contains` [EXTRACTED]
+- [[Configuration_16]] - `contains` [EXTRACTED]
 - [[Dependencies_19]] - `contains` [EXTRACTED]
 - [[Environment Variables_15]] - `contains` [EXTRACTED]
 - [[Function Details_45]] - `contains` [EXTRACTED]
@@ -25,4 +25,4 @@ tags:
 - [[SOUL_2]] - `references` [EXTRACTED]
 - [[Threat Model_21]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Prompt_Guardpy_Security_Modules
+#graphify/concept #graphify/EXTRACTED #community/Community_569

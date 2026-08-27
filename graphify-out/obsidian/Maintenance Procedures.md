@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "Runbook (operations)"
+community: "Community 91"
 location: "L632"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Runbook_operations
+  - community/Community_91
 ---
 
 # Maintenance Procedures
@@ -16,4 +16,4 @@ tags:
 - [[Regular Maintenance Tasks]] - `contains` [EXTRACTED]
 - [[Update Procedure]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Runbook_operations
+#graphify/document #graphify/EXTRACTED #community/Community_91

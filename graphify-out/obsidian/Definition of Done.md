@@ -1,12 +1,12 @@
 ---
 source_file: ".github/agents/safe-refactor.agent.md"
 type: "document"
-community: "Safe Refactor.agent (agents)"
+community: "Community 389"
 location: "L166"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Safe_Refactoragent_agents
+  - community/Community_389
 ---
 
 # Definition of Done
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Safe Refactor Specialist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Safe_Refactoragent_agents
+#graphify/document #graphify/EXTRACTED #community/Community_389

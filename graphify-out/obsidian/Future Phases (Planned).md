@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/agentshroud-whitepaper.md"
 type: "document"
-community: "Agentshroud Whitepaper (papers)"
+community: "Community 401"
 location: "L1213"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Agentshroud_Whitepaper_papers
+  - community/Community_401
 ---
 
 # Future Phases (Planned)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[12. Roadmap]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Agentshroud_Whitepaper_papers
+#graphify/document #graphify/EXTRACTED #community/Community_401

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trivy_report.py"
 type: "code"
-community: "Daily Cve Report (security)"
+community: "Community 162"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Daily_Cve_Report_security
+  - community/Community_162
 ---
 
 # trivy_report.py
@@ -24,4 +24,4 @@ tags:
 - [[test_security_audit.py]] - `imports_from` [EXTRACTED]
 - [[wazuh_client.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Daily_Cve_Report_security
+#graphify/code #graphify/EXTRACTED #community/Community_162

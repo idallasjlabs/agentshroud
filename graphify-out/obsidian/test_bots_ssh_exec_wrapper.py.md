@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_bots_ssh_exec_wrapper.py"
 type: "code"
-community: "Bots Ssh Exec Wrapper"
+community: "Community 140"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bots_Ssh_Exec_Wrapper
+  - community/Community_140
 ---
 
 # test_bots_ssh_exec_wrapper.py
@@ -35,4 +35,4 @@ tags:
 - [[test_wrapper_never_sends_empty_bearer()]] - `contains` [EXTRACTED]
 - [[test_wrapper_targets_only_internal_gateway_endpoint()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bots_Ssh_Exec_Wrapper
+#graphify/code #graphify/EXTRACTED #community/Community_140

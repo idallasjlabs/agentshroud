@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "Rbac Config (security)"
+community: "Community 1844"
 location: "L251"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Rbac_Config_security
+  - community/Community_1844
 ---
 
 # Return group by ID, or None.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_group()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Rbac_Config_security
+#graphify/rationale #graphify/EXTRACTED #community/Community_1844

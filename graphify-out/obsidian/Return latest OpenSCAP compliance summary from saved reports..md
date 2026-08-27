@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "Scanner Integration"
+community: "Community 541"
 location: "L779"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Scanner_Integration
+  - community/Community_541
 ---
 
 # Return latest OpenSCAP compliance summary from saved reports.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_openscap_summary()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Scanner_Integration
+#graphify/rationale #graphify/EXTRACTED #community/Community_541

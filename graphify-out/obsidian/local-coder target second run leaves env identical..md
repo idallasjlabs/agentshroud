@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_switch_model_idempotent.py"
 type: "rationale"
-community: "Switch Model Idempotent"
+community: "Community 128"
 location: "L109"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Switch_Model_Idempotent
+  - community/Community_128
 ---
 
 # local-coder target: second run leaves env identical.
@@ -15,4 +15,4 @@ tags:
 - [[.test_local_anchor_idempotent()]] - `rationale_for` [EXTRACTED]
 - [[.test_local_coder_idempotent()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Switch_Model_Idempotent
+#graphify/rationale #graphify/EXTRACTED #community/Community_128

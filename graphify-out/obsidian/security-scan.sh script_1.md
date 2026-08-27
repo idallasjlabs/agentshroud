@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/security-scan.sh"
 type: "code"
-community: "Security Scan (scripts)"
+community: "Community 1049"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Scan_scripts
+  - community/Community_1049
 ---
 
 # security-scan.sh script
@@ -18,4 +18,4 @@ tags:
 - [[success()]] - `calls` [EXTRACTED]
 - [[warn()_3]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Scan_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_1049

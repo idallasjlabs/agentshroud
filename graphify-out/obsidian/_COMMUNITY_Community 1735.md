@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Diagram 17 State — Bot Session]] - image - docs/diagrams/images/diagram-17-state-bot-session.svg
+- [[--watch debounce avoids per-file rebuild storms]] - rationale - docker/config/hermes/skills/graphify/references/add-watch.md
 
 ## Live Query (requires Dataview plugin)
 

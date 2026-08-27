@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/wakeword.c"
 type: "code"
-community: "Wakeword (main)"
+community: "Community 249"
 location: "line 429"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Wakeword_main
+  - community/Community_249
 ---
 
 # wakeword_ptt_finish() — tap-to-stop force-end
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_touch_pressed()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Wakeword_main
+#graphify/code #graphify/EXTRACTED #community/Community_249

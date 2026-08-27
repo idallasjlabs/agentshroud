@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_switch_model_idempotent.py"
 type: "rationale"
-community: "Switch Model Idempotent"
+community: "Community 128"
 location: "L48"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Switch_Model_Idempotent
+  - community/Community_128
 ---
 
 # Run switch_model.sh with mocked external commands.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_run_switch()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Switch_Model_Idempotent
+#graphify/rationale #graphify/EXTRACTED #community/Community_128

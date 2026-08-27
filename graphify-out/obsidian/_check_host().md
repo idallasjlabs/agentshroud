@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "Dashboard Endpoints (web)"
+community: "Community 105"
 location: "L97"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Dashboard_Endpoints_web
+  - community/Community_105
 ---
 
 # _check_host()
@@ -17,4 +17,4 @@ tags:
 - [[dashboard_endpoints.py]] - `contains` [EXTRACTED]
 - [[ssh_hosts()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Dashboard_Endpoints_web
+#graphify/code #graphify/EXTRACTED #community/Community_105

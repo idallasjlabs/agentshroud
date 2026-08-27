@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Diagram 12 Credential Flow (PNG)]] - image - docs/diagrams/images/diagram-12-credential-flow.png
+- [[SCRUM-110 restart recovery must preserve original timeout_action, not hardcoded deny]] - rationale - gateway/tests/test_enhanced_approval.py
 
 ## Live Query (requires Dataview plugin)
 

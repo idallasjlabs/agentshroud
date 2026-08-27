@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-sre/SKILL.md"
 type: "document"
-community: "Skill (i-sre)"
+community: "Community 1431"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-sre
+  - community/Community_1431
 ---
 
 # Skill: sre
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SKILL_56]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-sre
+#graphify/document #graphify/EXTRACTED #community/Community_1431

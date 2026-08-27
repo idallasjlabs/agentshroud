@@ -1,12 +1,12 @@
 ---
 source_file: ".github/ISSUE_TEMPLATE/postmortem.md"
 type: "document"
-community: "Postmortem (ISSUE_TEMPLATE)"
+community: "Community 435"
 location: "L56"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Postmortem_ISSUE_TEMPLATE
+  - community/Community_435
 ---
 
 # Follow-Up Actions
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[postmortem]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Postmortem_ISSUE_TEMPLATE
+#graphify/document #graphify/EXTRACTED #community/Community_435

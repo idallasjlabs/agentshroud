@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mnemosyne/SKILL.md"
 type: "document"
-community: "Skill (i-mnemosyne)"
+community: "Community 961"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-mnemosyne
+  - community/Community_961
 ---
 
 # Mnemosyne — Retention Engineer
@@ -20,4 +20,4 @@ tags:
 - [[SKILL_163]] - `contains` [EXTRACTED]
 - [[System Prompt_20]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-mnemosyne
+#graphify/document #graphify/EXTRACTED #community/Community_961

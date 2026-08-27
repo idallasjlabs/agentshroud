@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/group_router.py"
 type: "code"
-community: "Group Approval Routing"
+community: "Community 24"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Group_Approval_Routing
+  - community/Community_24
 ---
 
 # group_router.py
@@ -17,4 +17,4 @@ tags:
 - [[apply-patches.js]] - `shares_data_with` [EXTRACTED]
 - [[enhanced_queue.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Group_Approval_Routing
+#graphify/code #graphify/EXTRACTED #community/Community_24

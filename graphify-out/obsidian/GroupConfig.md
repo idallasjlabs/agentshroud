@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "Group Config & Collaborator Responses"
+community: "Community 81"
 location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Group_Config__Collaborator_Responses
+  - community/Community_81
 ---
 
 # GroupConfig
@@ -45,4 +45,4 @@ tags:
 - [[test_collaborator_responses.py]] - `imports` [EXTRACTED]
 - [[test_group_config.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Group_Config__Collaborator_Responses
+#graphify/code #graphify/EXTRACTED #community/Community_81

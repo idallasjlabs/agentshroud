@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/stt.py"
 type: "code"
-community: "Stt (voice_gateway)"
+community: "Community 1556"
 location: "L50-52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Stt_voice_gateway
+  - community/Community_1556
 ---
 
 # _resolve_model_size() — reads WHISPER_MODEL_SIZE env and validates
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[select_model_size() — pure AB model-size resolver]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Stt_voice_gateway
+#graphify/code #graphify/EXTRACTED #community/Community_1556

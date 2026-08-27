@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Ingest API Main & Models"
+community: "Community 9"
 location: "L2203"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ingest_API_Main__Models
+  - community/Community_9
 ---
 
 # quarantine_summary()
@@ -16,4 +16,4 @@ tags:
 - [[Summarize inboundoutbound quarantine state for SOCdashboard use.]] - `rationale_for` [EXTRACTED]
 - [[main.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ingest_API_Main__Models
+#graphify/code #graphify/EXTRACTED #community/Community_9

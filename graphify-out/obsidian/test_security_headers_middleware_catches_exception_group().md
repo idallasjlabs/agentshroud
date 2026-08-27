@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_simple.py"
 type: "code"
-community: "Main Simple"
+community: "Community 9"
 location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Main_Simple
+  - community/Community_9
 ---
 
 # test_security_headers_middleware_catches_exception_group()
@@ -16,4 +16,4 @@ tags:
 - [[security_headers_middleware()]] - `calls` [EXTRACTED]
 - [[test_main_simple.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Main_Simple
+#graphify/code #graphify/EXTRACTED #community/Community_9

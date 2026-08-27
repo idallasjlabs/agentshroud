@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "rationale"
-community: "SOC Router (Collaborator Mgmt)"
+community: "Community 19"
 location: "L2385"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_Router_Collaborator_Mgmt
+  - community/Community_19
 ---
 
 # Run a shell command on the Docker Compose host via SSH.      Requires AGENTSHROU
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_ssh_compose()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_Router_Collaborator_Mgmt
+#graphify/rationale #graphify/EXTRACTED #community/Community_19

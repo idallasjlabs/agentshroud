@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[SecureBrowser.get_audit_log()]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
+- [[P1-P4 Incident Severity Matrix]] - concept - docker/config/openclaw/skills/i-production/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

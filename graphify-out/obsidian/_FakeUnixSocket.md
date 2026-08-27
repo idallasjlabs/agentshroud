@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "SOC Services"
+community: "Community 486"
 location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Services
+  - community/Community_486
 ---
 
 # _FakeUnixSocket
@@ -20,4 +20,4 @@ tags:
 - [[Stand-in for socket.socket — records calls, never opens a real fd.]] - `rationale_for` [EXTRACTED]
 - [[test_soc_services_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Services
+#graphify/code #graphify/EXTRACTED #community/Community_486

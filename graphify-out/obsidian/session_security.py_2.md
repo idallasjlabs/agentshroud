@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/session_security.py.md"
 type: "document"
-community: "Session Security.py (Security Modules)"
+community: "Community 539"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Session_Securitypy_Security_Modules
+  - community/Community_539
 ---
 
 # session_security.py
@@ -21,4 +21,4 @@ tags:
 - [[Threat Model_23]] - `contains` [EXTRACTED]
 - [[session_security.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Session_Securitypy_Security_Modules
+#graphify/document #graphify/EXTRACTED #community/Community_539

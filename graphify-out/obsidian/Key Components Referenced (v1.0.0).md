@@ -1,17 +1,17 @@
 ---
 source_file: "docs/compliance/iec-62443-matrix.md"
 type: "document"
-community: "Iec 62443 Matrix (compliance)"
+community: "Community 799"
 location: "L134"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Iec_62443_Matrix_compliance
+  - community/Community_799
 ---
 
 # Key Components Referenced (v1.0.0)
 
 ## Connections
-- [[Summary_3]] - `contains` [EXTRACTED]
+- [[Summary_25]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Iec_62443_Matrix_compliance
+#graphify/document #graphify/EXTRACTED #community/Community_799

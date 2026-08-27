@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy.py"
 type: "rationale"
-community: "Http Proxy"
+community: "Community 94"
 location: "L387"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Http_Proxy
+  - community/Community_94
 ---
 
 # None peer falls back to generic label without error.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_agent_id_for_peer_none_peer()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Http_Proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_94

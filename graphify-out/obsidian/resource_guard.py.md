@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "Resource Guard & Local Model Parity"
+community: "Community 7"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Resource_Guard__Local_Model_Parity
+  - community/Community_7
 ---
 
 # resource_guard.py
@@ -23,4 +23,4 @@ tags:
 - [[subagent_monitor.py]] - `references` [EXTRACTED]
 - [[test_resource_guard_limits.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Resource_Guard__Local_Model_Parity
+#graphify/code #graphify/EXTRACTED #community/Community_7

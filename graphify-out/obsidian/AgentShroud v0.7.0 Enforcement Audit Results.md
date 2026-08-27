@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/reviews/enforcement-audit-v0.7.0.md"
 type: "document"
-community: "Enforcement Audit V0.7.0 (reviews)"
+community: "Community 199"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Enforcement_Audit_V070_reviews
+  - community/Community_199
 ---
 
 # AgentShroud v0.7.0 Enforcement Audit Results
@@ -25,11 +25,11 @@ tags:
 - [[PII Sanitizer (Presidio + regex hybrid)]] - `references` [EXTRACTED]
 - [[PromptGuard (Prompt Injection Defense)]] - `references` [EXTRACTED]
 - [[RBAC (Role-Based Access Control)]] - `references` [EXTRACTED]
-- [[Summary_6]] - `contains` [EXTRACTED]
+- [[Summary_28]] - `contains` [EXTRACTED]
 - [[Trust Manager  Progressive Trust System]] - `references` [EXTRACTED]
 - [[Verdict ✅ CONDITIONAL GO]] - `contains` [EXTRACTED]
 - [[XMLFunction-Call Leak Filter]] - `references` [EXTRACTED]
 - [[enforcement-audit-script.py (P0P1P2 module smoke test)]] - `references` [EXTRACTED]
 - [[enforcement-audit-v0.7.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Enforcement_Audit_V070_reviews
+#graphify/document #graphify/EXTRACTED #community/Community_199

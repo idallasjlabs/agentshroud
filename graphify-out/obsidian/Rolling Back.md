@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/deployment.md"
 type: "document"
-community: "Deployment (runbooks)"
+community: "Community 743"
 location: "L70"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Deployment_runbooks
+  - community/Community_743
 ---
 
 # Rolling Back
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Deployment Runbook — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Deployment_runbooks
+#graphify/document #graphify/EXTRACTED #community/Community_743

@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[calendar.js (iCloud CalDAV skill)]] - code - skills/custom/icloud/scripts/calendar.js
+- [[Redaction]] - concept - docs/project/glossary.md
 
 ## Live Query (requires Dataview plugin)
 

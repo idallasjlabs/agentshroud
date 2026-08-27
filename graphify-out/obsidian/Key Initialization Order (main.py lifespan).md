@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/09 - Diagrams/Dependency Graph.md"
 type: "document"
-community: "Aiosqlite (05 - Dependencies)"
+community: "Community 1325"
 location: "L98"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Aiosqlite_05_-_Dependencies
+  - community/Community_1325
 ---
 
 # Key Initialization Order (main.py lifespan)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Dependency Graph_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Aiosqlite_05_-_Dependencies
+#graphify/document #graphify/EXTRACTED #community/Community_1325

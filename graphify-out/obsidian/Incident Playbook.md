@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/references/security-policies.md"
 type: "document"
-community: "Security Policies (references)"
+community: "Community 420"
 location: "L310"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Policies_references
+  - community/Community_420
 ---
 
 # Incident Playbook
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Incident Response]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Policies_references
+#graphify/document #graphify/EXTRACTED #community/Community_420

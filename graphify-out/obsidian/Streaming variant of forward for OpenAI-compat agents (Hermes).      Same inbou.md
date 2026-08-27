@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "rationale"
-community: "Forward (routes)"
+community: "Community 63"
 location: "L856"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Forward_routes
+  - community/Community_63
 ---
 
 # Streaming variant of /forward for OpenAI-compat agents (Hermes).      Same inbou
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[forward_content_stream()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Forward_routes
+#graphify/rationale #graphify/EXTRACTED #community/Community_63

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md"
 type: "document"
-community: "Readme (dashboard)"
+community: "Community 787"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_dashboard
+  - community/Community_787
 ---
 
 # TELEGRAM_API_BASE_URL.md
@@ -16,4 +16,4 @@ tags:
 - [[patch-telegram-sdk.sh]] - `references` [EXTRACTED]
 - [[telegram_proxy.py]] - `references` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_dashboard
+#graphify/document #graphify/EXTRACTED #community/Community_787

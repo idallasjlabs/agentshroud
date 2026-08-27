@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "Group Config & Collaborator Responses"
+community: "Community 134"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Group_Config__Collaborator_Responses
+  - community/Community_134
 ---
 
 # telegram_proxy.py
@@ -26,7 +26,6 @@ tags:
 - [[_ipv4_first_getaddrinfo()]] - `contains` [EXTRACTED]
 - [[_persist_groups()]] - `imports` [EXTRACTED]
 - [[daily_cve_report.py]] - `shares_data_with` [INFERRED]
-- [[datetime_9]] - `imports` [EXTRACTED]
 - [[egress_retry.py]] - `semantically_similar_to` [AMBIGUOUS]
 - [[format_addtogroup_success()]] - `imports` [EXTRACTED]
 - [[format_group_info()]] - `imports` [EXTRACTED]
@@ -54,4 +53,4 @@ tags:
 - [[test_telegram_proxy_multibot.py]] - `imports_from` [EXTRACTED]
 - [[unpause_collaborator()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Group_Config__Collaborator_Responses
+#graphify/code #graphify/EXTRACTED #community/Community_134

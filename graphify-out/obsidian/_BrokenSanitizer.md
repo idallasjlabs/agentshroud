@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "Security Audit & Watchtower Tests"
+community: "Community 870"
 location: "L376"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Security_Audit__Watchtower_Tests
+  - community/Community_870
 ---
 
 # _BrokenSanitizer
@@ -29,4 +29,4 @@ tags:
 - [[test_pipeline_fails_closed_on_enhanced_sanitizer_error()]] - `calls` [EXTRACTED]
 - [[test_pipeline_owner_exempt_from_fail_closed()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Security_Audit__Watchtower_Tests
+#graphify/code #graphify/INFERRED #community/Community_870

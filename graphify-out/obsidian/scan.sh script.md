@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/scan.sh"
 type: "code"
-community: "Tool Chain & CVE Triage"
+community: "Community 505"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tool_Chain__CVE_Triage
+  - community/Community_505
 ---
 
 # scan.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[scan.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Tool_Chain__CVE_Triage
+#graphify/code #graphify/EXTRACTED #community/Community_505

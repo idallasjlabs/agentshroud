@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router.py"
 type: "code"
-community: "Router"
+community: "Community 38"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Router
+  - community/Community_38
 ---
 
 # test_router.py
@@ -41,4 +41,4 @@ tags:
 - [[test_router_streaming.py]] - `conceptually_related_to` [INFERRED]
 - [[test_scanner_integration_coverage.py]] - `conceptually_related_to` [AMBIGUOUS]
 
-#graphify/code #graphify/EXTRACTED #community/Router
+#graphify/code #graphify/EXTRACTED #community/Community_38

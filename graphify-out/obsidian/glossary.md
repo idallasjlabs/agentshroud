@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "document"
-community: "Glossary (project)"
+community: "Community 328"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Glossary_project
+  - community/Community_328
 ---
 
 # Glossary
@@ -18,4 +18,4 @@ tags:
 - [[Technical Abbreviations]] - `contains` [EXTRACTED]
 - [[glossary]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Glossary_project
+#graphify/document #graphify/EXTRACTED #community/Community_328

@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-mnemosyne/README.md"
 type: "document"
-community: "Readme (i-mnemosyne)"
+community: "Community 1161"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-mnemosyne
+  - community/Community_1161
 ---
 
 # Mnemosyne — Retention Engineer
@@ -17,4 +17,4 @@ tags:
 - [[Related Skills_23]] - `contains` [EXTRACTED]
 - [[Usage_23]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-mnemosyne
+#graphify/document #graphify/EXTRACTED #community/Community_1161

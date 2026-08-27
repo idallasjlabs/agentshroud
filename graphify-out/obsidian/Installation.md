@@ -1,12 +1,12 @@
 ---
 source_file: ".github/COPILOT_CLI_SETUP.md"
 type: "document"
-community: "Copilot Cli Setup (.github)"
+community: "Community 1258"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Copilot_Cli_Setup_github
+  - community/Community_1258
 ---
 
 # Installation
@@ -18,4 +18,4 @@ tags:
 - [[macOS  Linux]] - `contains` [EXTRACTED]
 - [[npm (Cross-platform)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Copilot_Cli_Setup_github
+#graphify/document #graphify/EXTRACTED #community/Community_1258

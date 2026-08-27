@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "rationale"
-community: "Audit Chain"
+community: "Community 1"
 location: "L91"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Audit_Chain
+  - community/Community_1
 ---
 
 # Verify hash matches SHA-256 of the content.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_hash_matches_content()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Audit_Chain
+#graphify/rationale #graphify/EXTRACTED #community/Community_1

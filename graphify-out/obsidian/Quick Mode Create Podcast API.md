@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-apollo/SKILL.md"
 type: "document"
-community: "Skill (i-apollo)"
+community: "Community 941"
 location: "L86"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-apollo
+  - community/Community_941
 ---
 
 # Quick Mode: Create Podcast API
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Technical Specification]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-apollo
+#graphify/document #graphify/EXTRACTED #community/Community_941

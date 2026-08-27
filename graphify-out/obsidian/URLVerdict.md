@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/url_analyzer.py"
 type: "code"
-community: "Tool Chain & CVE Triage"
+community: "Community 78"
 location: "L27"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Tool_Chain__CVE_Triage
+  - community/Community_78
 ---
 
 # URLVerdict
@@ -23,4 +23,4 @@ tags:
 - [[test_url_analyzer.py]] - `imports` [EXTRACTED]
 - [[url_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Tool_Chain__CVE_Triage
+#graphify/code #graphify/INFERRED #community/Community_78

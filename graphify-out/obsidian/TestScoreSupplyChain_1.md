@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "Scorecard Scoring"
+community: "Community 654"
 location: "L255"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Scorecard_Scoring
+  - community/Community_654
 ---
 
 # TestScoreSupplyChain
@@ -19,4 +19,4 @@ tags:
 - [[.test_zero_without_sbom()]] - `method` [EXTRACTED]
 - [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Scorecard_Scoring
+#graphify/code #graphify/EXTRACTED #community/Community_654

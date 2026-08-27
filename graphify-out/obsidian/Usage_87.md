@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
 type: "document"
-community: "Skill (i-browser)"
+community: "Community 259"
 location: "L55"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-browser
+  - community/Community_259
 ---
 
 # Usage
@@ -20,4 +20,4 @@ tags:
 - [[Navigate to URL_2]] - `contains` [EXTRACTED]
 - [[Take Screenshot_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-browser
+#graphify/document #graphify/EXTRACTED #community/Community_259

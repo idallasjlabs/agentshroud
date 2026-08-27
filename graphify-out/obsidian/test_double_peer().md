@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_integration.py"
 type: "code"
-community: "A2a Integration"
+community: "Community 104"
 location: "L74"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2a_Integration
+  - community/Community_104
 ---
 
 # test_double_peer()
@@ -15,4 +15,4 @@ tags:
 - [[A2APeerTestDouble]] - `calls` [EXTRACTED]
 - [[test_a2a_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2a_Integration
+#graphify/code #graphify/EXTRACTED #community/Community_104

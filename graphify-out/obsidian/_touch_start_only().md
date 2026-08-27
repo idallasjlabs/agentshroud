@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/ui_face.c"
 type: "code"
-community: "Wakeword (main)"
+community: "Community 249"
 location: "L150"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Wakeword_main
+  - community/Community_249
 ---
 
 # _touch_start_only()
@@ -20,4 +20,4 @@ tags:
 - [[wakeword_ptt_release()]] - `calls` [INFERRED]
 - [[wakeword_triggered()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Wakeword_main
+#graphify/code #graphify/INFERRED #community/Community_249

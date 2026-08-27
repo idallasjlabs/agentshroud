@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy.py"
 type: "rationale"
-community: "Http Proxy"
+community: "Community 94"
 location: "L467"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Http_Proxy
+  - community/Community_94
 ---
 
 # rDNS fails; forward DNS resolves bot hostname to source IP → correct bot_id cach
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_agent_id_for_peer_forward_dns_hit()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Http_Proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_94

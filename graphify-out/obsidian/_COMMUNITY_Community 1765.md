@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Tier 2 Compliance Enablers (6 features, score 2.5–3.9)]] - concept - docs/redteam/feature-priorities.md
+- [[PromptGuard.scan_tool_result()]] - code - gateway/security/prompt_guard.py
 
 ## Live Query (requires Dataview plugin)
 

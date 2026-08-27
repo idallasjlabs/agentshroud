@@ -1,12 +1,12 @@
 ---
 source_file: "docs/diagrams/06-operations.md"
 type: "document"
-community: "06 Operations (diagrams)"
+community: "Community 983"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/06_Operations_diagrams
+  - community/Community_983
 ---
 
 # AgentShroud — Operations & Reliability Diagrams
@@ -17,4 +17,4 @@ tags:
 - [[19. Incident Response Flow — Severity & Escalation]] - `contains` [EXTRACTED]
 - [[20. Monitoring & Observability Map]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/06_Operations_diagrams
+#graphify/document #graphify/EXTRACTED #community/Community_983

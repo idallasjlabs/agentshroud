@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Api (web)"
+community: "Community 45"
 location: "L1053"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Api_web
+  - community/Community_45
 ---
 
 # _intel_store()
@@ -20,4 +20,4 @@ tags:
 - [[get_competitive_intel_history()]] - `calls` [EXTRACTED]
 - [[submit_competitive_intel()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Api_web
+#graphify/code #graphify/EXTRACTED #community/Community_45

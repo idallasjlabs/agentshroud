@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/references/security-policies.md"
 type: "document"
-community: "Prompt Injection Assessment 2026 (reviews)"
+community: "Community 362"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Prompt_Injection_Assessment_2026_reviews
+  - community/Community_362
 ---
 
 # Core Security Principles
@@ -18,4 +18,4 @@ tags:
 - [[4. Fail Secure]] - `contains` [EXTRACTED]
 - [[SecureBrowser Security Policies]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Prompt_Injection_Assessment_2026_reviews
+#graphify/document #graphify/EXTRACTED #community/Community_362

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "Soc Bots"
+community: "Community 501"
 location: "L109"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Soc_Bots
+  - community/Community_501
 ---
 
 # SecurityEvent
@@ -33,4 +33,4 @@ tags:
 - [[test_soc_models.py]] - `imports` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Soc_Bots
+#graphify/code #graphify/EXTRACTED #community/Community_501

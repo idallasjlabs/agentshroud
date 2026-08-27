@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "Egress Filter (security)"
+community: "Community 282"
 location: "L406"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Egress_Filter_security
+  - community/Community_282
 ---
 
 # TestEgressFilter
@@ -47,4 +47,4 @@ tags:
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Egress_Filter_security
+#graphify/code #graphify/INFERRED #community/Community_282

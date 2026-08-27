@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-eightd/SKILL.md"
 type: "document"
-community: "Skill (i-eightd)"
+community: "Community 228"
 location: "L516"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-eightd
+  - community/Community_228
 ---
 
 # What to Extract:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[XML Configuration File Parsing_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-eightd
+#graphify/document #graphify/EXTRACTED #community/Community_228

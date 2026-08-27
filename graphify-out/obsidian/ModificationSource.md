@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "Memory Lifecycle & Integrity"
+community: "Community 584"
 location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Memory_Lifecycle__Integrity
+  - community/Community_584
 ---
 
 # ModificationSource
@@ -26,4 +26,4 @@ tags:
 - [[memory_integrity.py]] - `contains` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Memory_Lifecycle__Integrity
+#graphify/code #graphify/EXTRACTED #community/Community_584

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/PHASE3_REQUIREMENTS.md"
 type: "concept"
-community: "Verify Security (scripts)"
+community: "Community 752"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Verify_Security_scripts
+  - community/Community_752
 ---
 
 # Phase 3 Success Criteria
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Phase 3 Container Security Hardening Baseline]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Verify_Security_scripts
+#graphify/concept #graphify/EXTRACTED #community/Community_752

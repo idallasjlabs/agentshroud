@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/dns_forwarder.py"
 type: "rationale"
-community: "Dns Canvas Coverage"
+community: "Community 978"
 location: "L131"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Dns_Canvas_Coverage
+  - community/Community_978
 ---
 
 # Forward a DNS query to upstream resolvers with failover.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[forward_query()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Dns_Canvas_Coverage
+#graphify/rationale #graphify/EXTRACTED #community/Community_978

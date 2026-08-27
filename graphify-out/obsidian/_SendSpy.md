@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_alert_telegram_relay.py"
 type: "code"
-community: "Alert Telegram Relay"
+community: "Community 200"
 location: "L12"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Alert_Telegram_Relay
+  - community/Community_200
 ---
 
 # _SendSpy
@@ -34,4 +34,4 @@ tags:
 - [[test_warning_alert_relayed_with_orange_marker()]] - `calls` [EXTRACTED]
 - [[test_warning_flood_cannot_starve_critical()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Alert_Telegram_Relay
+#graphify/code #graphify/EXTRACTED #community/Community_200

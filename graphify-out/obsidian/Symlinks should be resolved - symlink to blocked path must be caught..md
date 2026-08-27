@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "Privilege Separation & File Sandbox"
+community: "Community 14"
 location: "L253"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Privilege_Separation__File_Sandbox
+  - community/Community_14
 ---
 
 # Symlinks should be resolved - symlink to blocked path must be caught.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_symlink_resolution()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Privilege_Separation__File_Sandbox
+#graphify/rationale #graphify/EXTRACTED #community/Community_14

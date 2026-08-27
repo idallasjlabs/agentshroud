@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-hdev/SKILL.md"
 type: "document"
-community: "Skill (i-hdev)"
+community: "Community 288"
 location: "L122"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-hdev
+  - community/Community_288
 ---
 
 # Mode A — Single task
@@ -28,4 +28,4 @@ tags:
 - [[Step 9 — Push and open the PR]] - `contains` [EXTRACTED]
 - [[Step 9b — Update the Jira ticket with the PR link]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-hdev
+#graphify/document #graphify/EXTRACTED #community/Community_288

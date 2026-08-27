@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/reviews/enforcement-audit-script.py"
 type: "code"
-community: "Enforcement Audit V0.7.0 (reviews)"
+community: "Community 199"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enforcement_Audit_V070_reviews
+  - community/Community_199
 ---
 
 # enforcement-audit-script.py (P0/P1/P2 module smoke test)
@@ -23,4 +23,4 @@ tags:
 - [[Trust Manager  Progressive Trust System]] - `implements` [EXTRACTED]
 - [[XMLFunction-Call Leak Filter]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enforcement_Audit_V070_reviews
+#graphify/code #graphify/EXTRACTED #community/Community_199

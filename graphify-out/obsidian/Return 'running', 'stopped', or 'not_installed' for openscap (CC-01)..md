@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "rationale"
-community: "SOC Services & Health Status"
-location: "L157"
+community: "Community 27"
+location: "L163"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_Services__Health_Status
+  - community/Community_27
 ---
 
 # Return 'running', 'stopped', or 'not_installed' for openscap (CC-01).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_check_openscap()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_Services__Health_Status
+#graphify/rationale #graphify/EXTRACTED #community/Community_27

@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_code_block_filtering()]] - code - gateway/tests/test_outbound_filter.py
-- [[Test that function_calls XML blocks are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[PromptGuard.reanchor_delimiters() (C8)]] - code - gateway/security/prompt_guard.py
+- [[UserSessionManager.reanchor_system_prompt() (C16)]] - code - gateway/security/session_manager.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -17,9 +17,3 @@ members: 2
 TABLE source_file, type FROM #community/Community_1519
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Bot CVE Scorecard]]
-
-## Top bridge nodes
-- [[.test_code_block_filtering()]] - degree 2, connects to 1 community

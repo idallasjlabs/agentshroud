@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/ingest_api/static/chat.html"
 type: "code"
-community: "Router"
+community: "Community 38"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Router
+  - community/Community_38
 ---
 
 # sendMessage() JS — POST /forward from browser chat UI
@@ -14,4 +14,4 @@ tags:
 - [[.forward_to_agent()]] - `conceptually_related_to` [INFERRED]
 - [[AgentShroud Secure Chat Interface (static HTMLJS)]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Router
+#graphify/code #graphify/INFERRED #community/Community_38

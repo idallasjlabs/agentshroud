@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/delegation.py"
 type: "rationale"
-community: "Delegation"
+community: "Community 77"
 location: "L208"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Delegation
+  - community/Community_77
 ---
 
 # Return all currently active (non-expired) delegations.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_active_delegations()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Delegation
+#graphify/rationale #graphify/EXTRACTED #community/Community_77

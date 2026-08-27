@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "Group Config & Collaborator Responses"
+community: "Community 134"
 location: "L278"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Group_Config__Collaborator_Responses
+  - community/Community_134
 ---
 
 # persist_group_member_remove()
@@ -14,6 +14,7 @@ tags:
 ## Connections
 - [[._handle_rmfromgroup_command()]] - `calls` [EXTRACTED]
 - [[Persist a runtime group membership addition.]] - `rationale_for` [EXTRACTED]
+- [[Persist a runtime group membership removal.]] - `rationale_for` [EXTRACTED]
 - [[_load_overrides()]] - `calls` [EXTRACTED]
 - [[_save_overrides()]] - `calls` [EXTRACTED]
 - [[group_config.py]] - `contains` [EXTRACTED]
@@ -21,4 +22,4 @@ tags:
 - [[router.py_1]] - `imports` [EXTRACTED]
 - [[telegram_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Group_Config__Collaborator_Responses
+#graphify/code #graphify/EXTRACTED #community/Community_134

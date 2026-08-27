@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/agent_isolation.py.md"
 type: "document"
-community: "Agent Isolation.py (Security Modules)"
+community: "Community 640"
 location: "L57"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Agent_Isolationpy_Security_Modules
+  - community/Community_640
 ---
 
 # IsolationVerifier.verify_shared_nothing()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Function Details_26]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Agent_Isolationpy_Security_Modules
+#graphify/document #graphify/EXTRACTED #community/Community_640

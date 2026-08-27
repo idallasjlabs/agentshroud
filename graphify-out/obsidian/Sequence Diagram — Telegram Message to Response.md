@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/05-behavior.md"
 type: "concept"
-community: "05 Behavior (diagrams)"
+community: "Community 835"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/05_Behavior_diagrams
+  - community/Community_835
 ---
 
 # Sequence Diagram — Telegram Message to Response
@@ -14,4 +14,4 @@ tags:
 - [[05-behavior]] - `conceptually_related_to` [EXTRACTED]
 - [[Logic Flow — Request Execution]] - `references` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/05_Behavior_diagrams
+#graphify/concept #graphify/EXTRACTED #community/Community_835

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "Prompt Protection (security)"
+community: "Community 659"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Prompt_Protection_security
+  - community/Community_659
 ---
 
 # prompt_protection.py
@@ -18,4 +18,4 @@ tags:
 - [[RedactionResult_2]] - `contains` [EXTRACTED]
 - [[SKILL_190]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Prompt_Protection_security
+#graphify/code #graphify/EXTRACTED #community/Community_659

@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Integrations Documentation README]] - document - docs/integrations/README.md
+- [[Hyperedges Rule (max 3chunk)]] - concept - docker/config/openclaw/skills/graphify/references/extraction-spec.md
 
 ## Live Query (requires Dataview plugin)
 

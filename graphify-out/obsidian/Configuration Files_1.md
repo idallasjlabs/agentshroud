@@ -1,17 +1,19 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md"
+source_file: ".github/COPILOT_CLI_SETUP.md"
 type: "document"
-community: "Skill (i-mcpm-aws-profile)"
-location: "L351"
+community: "Community 234"
+location: "L52"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-mcpm-aws-profile
+  - community/Community_234
 ---
 
 # Configuration Files
 
 ## Connections
-- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_1]] - `contains` [EXTRACTED]
+- [[GitHub Copilot CLI Setup Guide]] - `contains` [EXTRACTED]
+- [[MCP Servers]] - `contains` [EXTRACTED]
+- [[User-Level Config]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-mcpm-aws-profile
+#graphify/document #graphify/EXTRACTED #community/Community_234

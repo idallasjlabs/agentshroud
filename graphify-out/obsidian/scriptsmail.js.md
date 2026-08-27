@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-icloud/SKILL.md"
 type: "concept"
-community: "Skill (i-icloud)"
+community: "Community 1030"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Skill_i-icloud
+  - community/Community_1030
 ---
 
 # scripts/mail.js
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[i-icloud SKILL — iCloud Services]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Skill_i-icloud
+#graphify/concept #graphify/EXTRACTED #community/Community_1030

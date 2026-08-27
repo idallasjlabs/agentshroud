@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "Security Toolchain"
+community: "Community 162"
 location: "L158"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Toolchain
+  - community/Community_162
 ---
 
 # categorize_alerts()
@@ -20,4 +20,4 @@ tags:
 - [[generate_summary()_1]] - `calls` [EXTRACTED]
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Toolchain
+#graphify/code #graphify/EXTRACTED #community/Community_162

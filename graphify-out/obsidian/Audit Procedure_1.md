@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-sec-defense/SKILL.md"
 type: "document"
-community: "Skill (i-sec-defense)"
+community: "Community 615"
 location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-sec-defense
+  - community/Community_615
 ---
 
 # Audit Procedure
@@ -19,4 +19,4 @@ tags:
 - [[Phase 4 Configuration Audit_1]] - `contains` [EXTRACTED]
 - [[Phase 5 Steve Hay's Specific Probes_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-sec-defense
+#graphify/document #graphify/EXTRACTED #community/Community_615

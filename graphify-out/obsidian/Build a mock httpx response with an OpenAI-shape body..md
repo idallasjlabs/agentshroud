@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "Server (voice_gateway)"
-location: "L539"
+community: "Community 115"
+location: "L540"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Server_voice_gateway
+  - community/Community_115
 ---
 
 # Build a mock httpx response with an OpenAI-shape body.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_openai_resp()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Server_voice_gateway
+#graphify/rationale #graphify/EXTRACTED #community/Community_115

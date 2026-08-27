@@ -1,12 +1,12 @@
 ---
 source_file: "src/interfaces/text_control_center.py"
 type: "code"
-community: "Text Control Center (interfaces)"
+community: "Community 264"
 location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Text_Control_Center_interfaces
+  - community/Community_264
 ---
 
 # ControlCenter
@@ -25,7 +25,7 @@ tags:
 - [[.get_key()_1]] - `method` [EXTRACTED]
 - [[.make_api_request()]] - `method` [EXTRACTED]
 - [[.run()_6]] - `method` [EXTRACTED]
-- [[main()_32]] - `calls` [EXTRACTED]
+- [[main()_33]] - `calls` [EXTRACTED]
 - [[text_control_center.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Text_Control_Center_interfaces
+#graphify/code #graphify/EXTRACTED #community/Community_264

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-ux/SKILL.md"
 type: "document"
-community: "Skill (i-ux)"
+community: "Community 248"
 location: "L127"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-ux
+  - community/Community_248
 ---
 
 # Site Alarm Acknowledgment Flow
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[User Flow Diagrams_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-ux
+#graphify/document #graphify/EXTRACTED #community/Community_248

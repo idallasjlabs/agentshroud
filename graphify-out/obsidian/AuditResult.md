@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "Router (soc)"
+community: "Community 18"
 location: "L77"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Router_soc
+  - community/Community_18
 ---
 
 # AuditResult
@@ -29,9 +29,7 @@ tags:
 - [[LoginRequest]] - `uses` [INFERRED]
 - [[RenameGroupRequest]] - `uses` [INFERRED]
 - [[Request_6]] - `uses` [INFERRED]
-- [[Request_10]] - `uses` [INFERRED]
 - [[SCLCaller_1]] - `uses` [INFERRED]
-- [[SCLCaller_3]] - `uses` [INFERRED]
 - [[SCLInterface_1]] - `uses` [INFERRED]
 - [[ScanRequest_1]] - `uses` [INFERRED]
 - [[ServiceActionRequest]] - `uses` [INFERRED]
@@ -46,4 +44,4 @@ tags:
 - [[router.py_1]] - `imports` [EXTRACTED]
 - [[str]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Router_soc
+#graphify/code #graphify/INFERRED #community/Community_18

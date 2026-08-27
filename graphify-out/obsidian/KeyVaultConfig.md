@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "Key Vault"
+community: "Community 22"
 location: "L25"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Key_Vault
+  - community/Community_22
 ---
 
 # KeyVaultConfig
@@ -55,4 +55,4 @@ tags:
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Key_Vault
+#graphify/code #graphify/INFERRED #community/Community_22

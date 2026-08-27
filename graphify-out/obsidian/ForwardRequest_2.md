@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "Forward (routes)"
+community: "Community 63"
 location: "L332"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Forward_routes
+  - community/Community_63
 ---
 
 # ForwardRequest
@@ -18,4 +18,4 @@ tags:
 - [[forward_content()]] - `references` [EXTRACTED]
 - [[forward_content_stream()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Forward_routes
+#graphify/code #graphify/EXTRACTED #community/Community_63

@@ -1,12 +1,12 @@
 ---
 source_file: "browser-extension/package.json"
 type: "code"
-community: "Package (browser-extension)"
+community: "Community 662"
 location: "L12"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Package_browser-extension
+  - community/Community_662
 ---
 
 # jest
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[devDependencies]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Package_browser-extension
+#graphify/code #graphify/EXTRACTED #community/Community_662

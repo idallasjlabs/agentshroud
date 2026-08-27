@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-chaos-engineering/SKILL.md"
 type: "document"
-community: "Skill (i-chaos-engineering)"
+community: "Community 1460"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-chaos-engineering
+  - community/Community_1460
 ---
 
 # Skill: chaos-engineering
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SKILL_139]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-chaos-engineering
+#graphify/document #graphify/EXTRACTED #community/Community_1460

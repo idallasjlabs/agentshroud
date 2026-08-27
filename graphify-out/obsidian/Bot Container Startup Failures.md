@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Startup Errors.md"
 type: "document"
-community: "Startup errors (07 - Errors & Troubleshooting)"
+community: "Community 694"
 location: "L112"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Startup_errors_07_-_Errors__Troubleshooting
+  - community/Community_694
 ---
 
 # Bot Container Startup Failures
@@ -18,4 +18,4 @@ tags:
 - [[`Could not load Claude OAuth token after retries`]] - `contains` [EXTRACTED]
 - [[`startup Warning Gateway password file not found`]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Startup_errors_07_-_Errors__Troubleshooting
+#graphify/document #graphify/EXTRACTED #community/Community_694

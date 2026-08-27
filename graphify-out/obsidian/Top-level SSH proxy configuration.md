@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ssh_config.py"
 type: "rationale"
-community: "SSH Proxy & Gateway Config"
+community: "Community 12"
 location: "L43"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SSH_Proxy__Gateway_Config
+  - community/Community_12
 ---
 
 # Top-level SSH proxy configuration
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SSHConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SSH_Proxy__Gateway_Config
+#graphify/rationale #graphify/EXTRACTED #community/Community_12

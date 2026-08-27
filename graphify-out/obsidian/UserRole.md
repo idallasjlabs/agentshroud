@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/contributors.py"
 type: "code"
-community: "Soc Models"
+community: "Community 27"
 location: "L14"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Soc_Models
+  - community/Community_27
 ---
 
 # UserRole
@@ -17,4 +17,4 @@ tags:
 - [[UserRole_1]] - `uses` [INFERRED]
 - [[_role_enum()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Soc_Models
+#graphify/code #graphify/INFERRED #community/Community_27

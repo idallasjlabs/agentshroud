@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Diagram 22 Dependency Graph]] - image - docs/diagrams/images/diagram-22-dependency-graph.svg
+- [[Token Reduction Benchmark]] - concept - docker/config/openclaw/skills/graphify/references/exports.md
 
 ## Live Query (requires Dataview plugin)
 

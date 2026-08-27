@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_approval_routing.py"
 type: "rationale"
-community: "Group Approval Routing"
+community: "Community 121"
 location: "L289"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Group_Approval_Routing
+  - community/Community_121
 ---
 
 # GroupApprovalRouter._default_send returns {ok: True} without raising.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_default_send_stub_returns_ok()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Group_Approval_Routing
+#graphify/rationale #graphify/EXTRACTED #community/Community_121

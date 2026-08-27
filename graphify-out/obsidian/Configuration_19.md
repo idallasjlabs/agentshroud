@@ -1,18 +1,17 @@
 ---
-source_file: "skills/custom/securebrowser/README.md"
+source_file: "skills/custom/icloud/SKILL.md"
 type: "document"
-community: "Readme (securebrowser)"
-location: "L191"
+community: "Community 327"
+location: "L125"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_securebrowser
+  - community/Community_327
 ---
 
 # Configuration
 
 ## Connections
-- [[Full Configuration Example]] - `contains` [EXTRACTED]
-- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
+- [[iCloud Services_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_securebrowser
+#graphify/document #graphify/EXTRACTED #community/Community_327

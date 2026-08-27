@@ -1,11 +1,11 @@
 ---
 source_file: "docs/project/legal/USPTO-APPLICATION.md"
 type: "concept"
-community: "Uspto Application (legal)"
+community: "Community 1036"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Uspto_Application_legal
+  - community/Community_1036
 ---
 
 # USPTO Class 009 Filing (Downloadable Software)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[USPTO-APPLICATION]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Uspto_Application_legal
+#graphify/concept #graphify/EXTRACTED #community/Community_1036

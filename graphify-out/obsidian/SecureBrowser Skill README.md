@@ -1,11 +1,11 @@
 ---
 source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "Browser Fetch (browser-fetch)"
+community: "Community 948"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser_Fetch_browser-fetch
+  - community/Community_948
 ---
 
 # SecureBrowser Skill README
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[SecureBrowser SKILL]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser_Fetch_browser-fetch
+#graphify/document #graphify/EXTRACTED #community/Community_948

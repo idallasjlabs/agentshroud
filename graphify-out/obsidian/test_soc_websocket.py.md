@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_websocket.py"
 type: "code"
-community: "Soc Websocket"
+community: "Community 27"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Soc_Websocket
+  - community/Community_27
 ---
 
 # test_soc_websocket.py
@@ -20,4 +20,4 @@ tags:
 - [[WSEventType]] - `imports` [EXTRACTED]
 - [[_coerce_to_ws_event()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Soc_Websocket
+#graphify/code #graphify/EXTRACTED #community/Community_27

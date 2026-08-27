@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Soc Egress Endpoints"
+community: "Community 374"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Soc_Egress_Endpoints
+  - community/Community_374
 ---
 
 # app_state
@@ -16,4 +16,4 @@ tags:
 - [[test_manage_soc_report_endpoint()]] - `shares_data_with` [EXTRACTED]
 - [[test_soc_scanners_recent_returns_history()]] - `shares_data_with` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Soc_Egress_Endpoints
+#graphify/code #graphify/EXTRACTED #community/Community_374

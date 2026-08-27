@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-hermes/README.md"
 type: "document"
-community: "Readme (i-hermes)"
+community: "Community 1155"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-hermes
+  - community/Community_1155
 ---
 
 # README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Hermes — Podcast Production Orchestrator]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-hermes
+#graphify/document #graphify/EXTRACTED #community/Community_1155

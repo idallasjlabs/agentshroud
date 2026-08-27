@@ -1,11 +1,11 @@
 ---
 source_file: "README.md"
 type: "document"
-community: "Readme"
+community: "Community 521"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme
+  - community/Community_521
 ---
 
 # AgentShroud™ README
@@ -21,4 +21,4 @@ tags:
 - [[Quickstart]] - `references` [EXTRACTED]
 - [[Trademark]] - `references` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme
+#graphify/document #graphify/EXTRACTED #community/Community_521

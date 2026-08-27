@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "Distributed Openclaw Node Architecture (architecture)"
+community: "Community 432"
 location: "L626"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Distributed_Openclaw_Node_Architecture_architecture
+  - community/Community_432
 ---
 
 # Decision Points
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Next Steps_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Distributed_Openclaw_Node_Architecture_architecture
+#graphify/document #graphify/EXTRACTED #community/Community_432

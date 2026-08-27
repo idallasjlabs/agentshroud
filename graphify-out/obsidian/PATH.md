@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/store.py"
 type: "code"
-community: "Enhanced Approval"
+community: "Community 24"
 location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enhanced_Approval
+  - community/Community_24
 ---
 
 # Path
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.__init__()_6]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enhanced_Approval
+#graphify/code #graphify/EXTRACTED #community/Community_24

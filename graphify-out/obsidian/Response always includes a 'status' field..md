@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_channel_ownership.py"
 type: "rationale"
-community: "Channel Ownership"
+community: "Community 648"
 location: "L62"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Channel_Ownership
+  - community/Community_648
 ---
 
 # Response always includes a 'status' field.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_response_has_status_field()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Channel_Ownership
+#graphify/rationale #graphify/EXTRACTED #community/Community_648

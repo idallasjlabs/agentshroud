@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-09-data-lineage.png"
 type: "concept"
-community: "Diagram 09 Data Lineage (images)"
+community: "Community 353"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Diagram_09_Data_Lineage_images
+  - community/Community_353
 ---
 
 # ledger.db — audit ledger (Layer 3 persistence; hash-only, 90-day retention, auto-purge at expires_at)
@@ -20,4 +20,4 @@ tags:
 - [[SHA-256 content hashing (original_content_hash + sanitized content_hash)]] - `shares_data_with` [EXTRACTED]
 - [[Telegram Message Sequence Diagram]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Diagram_09_Data_Lineage_images
+#graphify/concept #graphify/EXTRACTED #community/Community_353

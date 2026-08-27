@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/SECURITY_ARCHITECTURE.md"
 type: "rationale"
-community: "Secrets Usage And Collaborator (security)"
+community: "Community 236"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Secrets_Usage_And_Collaborator_security
+  - community/Community_236
 ---
 
 # Bot Identity Separation (Separate Accounts)
@@ -14,4 +14,4 @@ tags:
 - [[APPLE-SERVICES-SETUP]] - `conceptually_related_to` [INFERRED]
 - [[AgentShroud Security Architecture]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Secrets_Usage_And_Collaborator_security
+#graphify/rationale #graphify/EXTRACTED #community/Community_236

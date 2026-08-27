@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "Security Hardening"
+community: "Community 14"
 location: "L689"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Security_Hardening
+  - community/Community_14
 ---
 
 # TestCryptography
@@ -57,4 +57,4 @@ tags:
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_audit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Security_Hardening
+#graphify/code #graphify/INFERRED #community/Community_14

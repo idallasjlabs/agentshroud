@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "Voice Gateway"
-location: "L1629"
+community: "Community 37"
+location: "L1630"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Voice_Gateway
+  - community/Community_37
 ---
 
 # ConnectionClosedOK (WS code 1000/1001 — clean websockets-library close path)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_ws_connectionclosed_ok_logs_info_no_traceback()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Voice_Gateway
+#graphify/rationale #graphify/EXTRACTED #community/Community_37

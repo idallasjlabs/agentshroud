@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_channel_ownership.py"
 type: "rationale"
-community: "Channel Ownership"
+community: "Community 222"
 location: "L224"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Channel_Ownership
+  - community/Community_222
 ---
 
 # PII in email body IS redacted before queuing for unknown recipients.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_pii_redacted_for_unknown_recipient()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Channel_Ownership
+#graphify/rationale #graphify/EXTRACTED #community/Community_222

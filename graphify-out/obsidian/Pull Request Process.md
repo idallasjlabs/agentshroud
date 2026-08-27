@@ -1,12 +1,12 @@
 ---
 source_file: "CONTRIBUTING.md"
 type: "document"
-community: "Contributing"
+community: "Community 523"
 location: "L47"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Contributing
+  - community/Community_523
 ---
 
 # Pull Request Process
@@ -15,4 +15,4 @@ tags:
 - [[Contributing to AgentShroud™]] - `contains` [EXTRACTED]
 - [[Requirements]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Contributing
+#graphify/document #graphify/EXTRACTED #community/Community_523

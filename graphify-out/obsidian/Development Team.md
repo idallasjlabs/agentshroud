@@ -1,12 +1,12 @@
 ---
 source_file: "docs/TEAM.md"
 type: "document"
-community: "Team (docs)"
+community: "Community 470"
 location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Team_docs
+  - community/Community_470
 ---
 
 # Development Team
@@ -19,4 +19,4 @@ tags:
 - [[QA  Test Engineers — Embedded, Not a Separate Gate]] - `contains` [EXTRACTED]
 - [[UX  Design — One Sprint Ahead]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Team_docs
+#graphify/document #graphify/EXTRACTED #community/Community_470

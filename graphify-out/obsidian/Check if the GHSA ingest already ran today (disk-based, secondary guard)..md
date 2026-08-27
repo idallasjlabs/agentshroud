@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/daily_cve_report.py"
 type: "rationale"
-community: "Daily Cve Report (security)"
+community: "Community 779"
 location: "L892"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Daily_Cve_Report_security
+  - community/Community_779
 ---
 
 # Check if the GHSA ingest already ran today (disk-based, secondary guard).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_already_ingested_ghsa_today()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Daily_Cve_Report_security
+#graphify/rationale #graphify/EXTRACTED #community/Community_779

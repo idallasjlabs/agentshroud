@@ -1,22 +1,18 @@
 ---
-source_file: "gateway/skills/scan.py"
+source_file: "gateway/proxy/dns_forwarder.py"
 type: "code"
-community: "Skill Guard (security)"
-location: "L68"
+community: "Community 560"
+location: "L309"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Skill_Guard_security
+  - community/Community_560
 ---
 
 # main()
 
 ## Connections
-- [[Path_22]] - `calls` [EXTRACTED]
-- [[SkillGuard]] - `calls` [EXTRACTED]
-- [[SkillGuard.scan_skill_tree()]] - `calls` [EXTRACTED]
-- [[_build_tree()]] - `calls` [EXTRACTED]
-- [[_print_findings()]] - `calls` [EXTRACTED]
-- [[scan.py]] - `contains` [EXTRACTED]
+- [[dns_forwarder.py]] - `contains` [EXTRACTED]
+- [[start_dns_forwarder()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Skill_Guard_security
+#graphify/code #graphify/EXTRACTED #community/Community_560

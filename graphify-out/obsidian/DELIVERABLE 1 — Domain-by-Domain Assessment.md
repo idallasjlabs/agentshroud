@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md"
 type: "document"
-community: "Security Assessment V0.8.0 25 (v0.8)"
+community: "Community 339"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Assessment_V080_25_v08
+  - community/Community_339
 ---
 
 # DELIVERABLE 1 — Domain-by-Domain Assessment
@@ -39,4 +39,4 @@ tags:
 - [[Domain 8 — Memory Hardening]] - `contains` [EXTRACTED]
 - [[Domain 9 — Multi-Agent Trust Architecture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Assessment_V080_25_v08
+#graphify/document #graphify/EXTRACTED #community/Community_339

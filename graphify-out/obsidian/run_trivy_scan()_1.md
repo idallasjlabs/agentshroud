@@ -1,22 +1,25 @@
 ---
 source_file: "gateway/security/trivy_report.py"
 type: "code"
-community: "Daily Cve Report (security)"
+community: "Community 679"
 location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Daily_Cve_Report_security
+  - community/Community_679
 ---
 
 # run_trivy_scan()
 
 ## Connections
 - [[.test_run_binary_not_found()]] - `calls` [EXTRACTED]
+- [[.test_run_empty_stdout_is_error_not_clean()]] - `calls` [EXTRACTED]
 - [[.test_run_image_scan_type()]] - `calls` [EXTRACTED]
+- [[.test_run_nonzero_exit_code_is_error()]] - `calls` [EXTRACTED]
 - [[.test_run_parse_error()]] - `calls` [EXTRACTED]
 - [[.test_run_success()]] - `calls` [EXTRACTED]
 - [[.test_run_timeout()]] - `calls` [EXTRACTED]
+- [[.test_run_whitespace_only_stdout_is_error()]] - `calls` [EXTRACTED]
 - [[.test_trivy_binary_not_found()]] - `calls` [EXTRACTED]
 - [[Any_64]] - `references` [EXTRACTED]
 - [[Run a Trivy scan and return parsed results.      Args         target Scan targ]] - `rationale_for` [EXTRACTED]
@@ -27,4 +30,4 @@ tags:
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]
 - [[trivy_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Daily_Cve_Report_security
+#graphify/code #graphify/EXTRACTED #community/Community_679

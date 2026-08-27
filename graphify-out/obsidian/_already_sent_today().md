@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/daily_cve_report.py"
 type: "code"
-community: "Daily Cve Report (security)"
+community: "Community 779"
 location: "L431"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Daily_Cve_Report_security
+  - community/Community_779
 ---
 
 # _already_sent_today()
@@ -16,8 +16,7 @@ tags:
 - [[Check if a Trivy report was already sent today (disk-based, secondary to _sent_d]] - `rationale_for` [EXTRACTED]
 - [[cve_report_scheduler()]] - `calls` [EXTRACTED]
 - [[daily_cve_report.py]] - `contains` [EXTRACTED]
-- [[datetime_9]] - `references` [EXTRACTED]
 - [[datetime_2]] - `references` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Daily_Cve_Report_security
+#graphify/code #graphify/EXTRACTED #community/Community_779

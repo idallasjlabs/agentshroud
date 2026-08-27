@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "Key Rotation"
+community: "Community 233"
 location: "L132"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Key_Rotation
+  - community/Community_233
 ---
 
 # datetime
@@ -17,4 +17,4 @@ tags:
 - [[KeyRotationConfig_1]] - `uses` [INFERRED]
 - [[key_rotation.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Key_Rotation
+#graphify/code #graphify/EXTRACTED #community/Community_233

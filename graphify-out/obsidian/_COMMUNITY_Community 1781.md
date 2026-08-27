@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[AnomalyAlert (Dataclass)]] - code - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
+- [[AgentShroud LinkedIn Banner]] - image - branding/social/linkedin-banner-1584x396.png
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/mcp_policy.py"
 type: "code"
-community: "Mcp Policy"
+community: "Community 34"
 location: "L241"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Mcp_Policy
+  - community/Community_34
 ---
 
 # MCPPolicyEngine
@@ -59,4 +59,4 @@ tags:
 - [[test_owner_bypass_defaults_to_rbac_owner_identity()]] - `calls` [EXTRACTED]
 - [[test_owner_bypasses_approval_but_not_hard_deny()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Mcp_Policy
+#graphify/code #graphify/EXTRACTED #community/Community_34

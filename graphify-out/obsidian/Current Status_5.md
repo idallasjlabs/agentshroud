@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/README.md"
 type: "document"
-community: "Readme (project)"
+community: "Community 977"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_project
+  - community/Community_977
 ---
 
 # Current Status
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Project Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_project
+#graphify/document #graphify/EXTRACTED #community/Community_977

@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[history-purge-plan.md (git history purge before public repo)]] - document - docs/security/history-purge-plan.md
+- [[cd (Continuous Delivery) SKILL stub (OpenClaw)]] - document - docker/config/openclaw/skills/i-cd/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

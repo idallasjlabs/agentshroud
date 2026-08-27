@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_path_isolation.py"
 type: "code"
-community: "Path Isolation"
+community: "Community 29"
 location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Path_Isolation
+  - community/Community_29
 ---
 
 # TestPathIsolationManager
@@ -37,4 +37,4 @@ tags:
 - [[Test path isolation manager.]] - `rationale_for` [EXTRACTED]
 - [[test_path_isolation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Path_Isolation
+#graphify/code #graphify/EXTRACTED #community/Community_29

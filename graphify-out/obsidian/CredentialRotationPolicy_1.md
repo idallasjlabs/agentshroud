@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation_config.py"
 type: "code"
-community: "Key Rotation"
+community: "Community 233"
 location: "L21"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Key_Rotation
+  - community/Community_233
 ---
 
 # CredentialRotationPolicy
@@ -37,4 +37,4 @@ tags:
 - [[key_rotation_config.py]] - `contains` [EXTRACTED]
 - [[test_key_rotation.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Key_Rotation
+#graphify/code #graphify/INFERRED #community/Community_233

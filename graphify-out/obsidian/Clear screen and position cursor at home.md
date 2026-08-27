@@ -1,12 +1,12 @@
 ---
 source_file: "src/interfaces/text_control_center.py"
 type: "rationale"
-community: "Text Control Center (interfaces)"
+community: "Community 264"
 location: "L121"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Text_Control_Center_interfaces
+  - community/Community_264
 ---
 
 # Clear screen and position cursor at home
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.clear_screen()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Text_Control_Center_interfaces
+#graphify/rationale #graphify/EXTRACTED #community/Community_264

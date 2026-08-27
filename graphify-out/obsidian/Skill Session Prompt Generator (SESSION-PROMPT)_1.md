@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-session-prompt/SKILL.md"
 type: "document"
-community: "Skill (i-session-prompt)"
+community: "Community 705"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-session-prompt
+  - community/Community_705
 ---
 
 # Skill: Session Prompt Generator (SESSION-PROMPT)
@@ -19,4 +19,4 @@ tags:
 - [[Trigger_1]] - `contains` [EXTRACTED]
 - [[Workflow Survey → Draft → Inject → Confirm_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-session-prompt
+#graphify/document #graphify/EXTRACTED #community/Community_705

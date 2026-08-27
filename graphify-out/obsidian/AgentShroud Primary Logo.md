@@ -1,11 +1,11 @@
 ---
 source_file: "branding/logo.png"
 type: "image"
-community: "Pull Request Template (.github)"
+community: "Community 661"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/Pull_Request_Template_github
+  - community/Community_661
 ---
 
 # AgentShroud Primary Logo
@@ -17,4 +17,4 @@ tags:
 - [[AgentShroud MerchandiseStationery Mockup]] - `conceptually_related_to` [INFERRED]
 - [[README_38]] - `references` [EXTRACTED]
 
-#graphify/image #graphify/INFERRED #community/Pull_Request_Template_github
+#graphify/image #graphify/INFERRED #community/Community_661

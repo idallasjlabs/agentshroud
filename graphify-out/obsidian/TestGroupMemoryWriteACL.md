@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory_write_acl.py"
 type: "code"
-community: "Shared Memory Write Acl"
+community: "Community 778"
 location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Shared_Memory_Write_Acl
+  - community/Community_778
 ---
 
 # TestGroupMemoryWriteACL
@@ -24,4 +24,4 @@ tags:
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_shared_memory_write_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Shared_Memory_Write_Acl
+#graphify/code #graphify/EXTRACTED #community/Community_778

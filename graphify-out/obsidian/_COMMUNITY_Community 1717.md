@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Chaos Engineering Skill]] - document - docker/config/hermes/skills/i-chaos-engineering/SKILL.md
+- [[esp_err.h stub (playback state test)]] - code - firmware/voice-terminal/test/test_playback_state/stubs/esp_err.h
 
 ## Live Query (requires Dataview plugin)
 

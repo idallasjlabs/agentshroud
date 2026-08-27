@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/deployment.md"
 type: "document"
-community: "Updating (operations)"
+community: "Community 531"
 location: "L1"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Updating_operations
+  - community/Community_531
 ---
 
 # deployment.md
@@ -17,4 +17,4 @@ tags:
 - [[Rollback Procedure]] - `semantically_similar_to` [INFERRED]
 - [[raspberry-pi]] - `references` [AMBIGUOUS]
 
-#graphify/document #graphify/INFERRED #community/Updating_operations
+#graphify/document #graphify/INFERRED #community/Community_531

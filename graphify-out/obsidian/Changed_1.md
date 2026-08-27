@@ -1,12 +1,12 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "ESP32 Firmware"
-location: "L138"
+community: "Community 629"
+location: "L280"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ESP32_Firmware
+  - community/Community_629
 ---
 
 # Changed
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[1.3.0 Reliability (2026-07-21)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ESP32_Firmware
+#graphify/document #graphify/EXTRACTED #community/Community_629

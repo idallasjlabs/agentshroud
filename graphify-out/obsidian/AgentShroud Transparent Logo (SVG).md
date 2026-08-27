@@ -1,11 +1,11 @@
 ---
 source_file: "branding/logos/svg/logo-transparent.svg"
 type: "image"
-community: "Readme (branding)"
+community: "Community 168"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Readme_branding
+  - community/Community_168
 ---
 
 # AgentShroud Transparent Logo (SVG)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Logo Usage]] - `references` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Readme_branding
+#graphify/image #graphify/EXTRACTED #community/Community_168

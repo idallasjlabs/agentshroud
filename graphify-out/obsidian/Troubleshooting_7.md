@@ -1,22 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/SKILL.md"
+source_file: "docker/bot-capabilities.md"
 type: "document"
-community: "Skill (i-browser)"
-location: "L281"
+community: "Community 746"
+location: "L211"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-browser
+  - community/Community_746
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Action requires approval but none granted_1]] - `contains` [EXTRACTED]
-- [[Browser timeout_1]] - `contains` [EXTRACTED]
-- [[CAPTCHA detected_1]] - `contains` [EXTRACTED]
-- [[Rate limit exceeded_1]] - `contains` [EXTRACTED]
-- [[URL not in allowlist_1]] - `contains` [EXTRACTED]
-- [[Browser — Secure Browser Automation_3]] - `contains` [EXTRACTED]
+- [[Credential Management - 1Password Integration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-browser
+#graphify/document #graphify/EXTRACTED #community/Community_746

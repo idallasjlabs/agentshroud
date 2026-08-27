@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_retry.py"
 type: "code"
-community: "Egress Retry (security)"
+community: "Community 755"
 location: "L191"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress_Retry_security
+  - community/Community_755
 ---
 
 # retry_request_sync()
@@ -19,4 +19,4 @@ tags:
 - [[calculate_delay()]] - `calls` [EXTRACTED]
 - [[egress_retry.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress_Retry_security
+#graphify/code #graphify/EXTRACTED #community/Community_755

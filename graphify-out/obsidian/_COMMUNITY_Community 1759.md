@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Behavioral Pattern Analysis]] - concept - docs/project/glossary.md
+- [[SecureClaw Project (concept)]] - concept - docker/config/hermes/skills/i-pm/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

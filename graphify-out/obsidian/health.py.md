@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/health.py"
 type: "code"
-community: "Auth"
+community: "Community 9"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Auth
+  - community/Community_9
 ---
 
 # health.py
@@ -24,4 +24,4 @@ tags:
 - [[state.py]] - `imports_from` [EXTRACTED]
 - [[test_main_endpoints.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Auth
+#graphify/code #graphify/EXTRACTED #community/Community_9

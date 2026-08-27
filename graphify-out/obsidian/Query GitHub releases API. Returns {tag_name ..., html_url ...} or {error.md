@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "rationale"
-community: "SOC Router (Collaborator Mgmt)"
+community: "Community 19"
 location: "L2341"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_Router_Collaborator_Mgmt
+  - community/Community_19
 ---
 
 # Query GitHub releases API. Returns {"tag_name": ..., "html_url": ...} or {"error
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_fetch_latest_release()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_Router_Collaborator_Mgmt
+#graphify/rationale #graphify/EXTRACTED #community/Community_19

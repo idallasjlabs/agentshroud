@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_data_exfil_volume_guard.py"
 type: "code"
-community: "Data Exfil Volume Guard"
+community: "Community 176"
 location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Data_Exfil_Volume_Guard
+  - community/Community_176
 ---
 
 # test_cumulative_cap_blocks_when_crossed()
@@ -16,4 +16,4 @@ tags:
 - [[DataExfilVolumeGuard]] - `calls` [EXTRACTED]
 - [[test_data_exfil_volume_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Data_Exfil_Volume_Guard
+#graphify/code #graphify/EXTRACTED #community/Community_176

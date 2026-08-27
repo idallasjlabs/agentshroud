@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[test_anthropic_openai_translator.py — AnthropicOpenAI translator tests]] - code - gateway/tests/test_anthropic_openai_translator.py
+- [[Test Cron Jobs Prompts Module]] - code - gateway/tests/test_cron_jobs_prompts.py
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/pipeline.py.md"
 type: "document"
-community: "Data flow (01 - Architecture)"
+community: "Community 476"
 location: "L96"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Data_flow_01_-_Architecture
+  - community/Community_476
 ---
 
 # `PipelineResult` (Dataclass)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Key Classes_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Data_flow_01_-_Architecture
+#graphify/document #graphify/EXTRACTED #community/Community_476

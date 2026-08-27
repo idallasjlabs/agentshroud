@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[cd (Continuous Delivery) SKILL stub (OpenClaw)]] - document - docker/config/openclaw/skills/i-cd/SKILL.md
+- [[__init__.py_6]] - code - gateway/ingest_api/routes/__init__.py
 
 ## Live Query (requires Dataview plugin)
 

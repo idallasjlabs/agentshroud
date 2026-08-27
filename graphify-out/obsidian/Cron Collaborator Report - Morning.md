@@ -1,11 +1,11 @@
 ---
 source_file: "docker/bots/openclaw/config/cron/jobs.json"
 type: "document"
-community: "Jobs (cron)"
+community: "Community 293"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Jobs_cron
+  - community/Community_293
 ---
 
 # Cron: Collaborator Report - Morning
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Hermes Cron Jobs Config]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Jobs_cron
+#graphify/document #graphify/EXTRACTED #community/Community_293

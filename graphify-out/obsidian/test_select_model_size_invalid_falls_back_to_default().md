@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_stt_model_ab.py"
 type: "code"
-community: "Voice Stt Model Ab"
+community: "Community 268"
 location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Voice_Stt_Model_Ab
+  - community/Community_268
 ---
 
 # test_select_model_size_invalid_falls_back_to_default()
@@ -15,4 +15,4 @@ tags:
 - [[An unknown model size does NOT crash — it falls back to the default.]] - `rationale_for` [EXTRACTED]
 - [[test_voice_stt_model_ab.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Voice_Stt_Model_Ab
+#graphify/code #graphify/EXTRACTED #community/Community_268

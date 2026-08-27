@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/module_stats.py"
 type: "code"
-community: "Module Stats"
+community: "Community 78"
 location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Stats
+  - community/Community_78
 ---
 
 # Decision
@@ -20,4 +20,4 @@ tags:
 - [[str]] - `inherits` [EXTRACTED]
 - [[test_module_stats.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Stats
+#graphify/code #graphify/EXTRACTED #community/Community_78

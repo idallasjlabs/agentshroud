@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/troubleshooting.md"
 type: "document"
-community: "Troubleshooting (runbooks)"
+community: "Community 314"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Troubleshooting_runbooks
+  - community/Community_314
 ---
 
 # troubleshooting.md
@@ -31,4 +31,4 @@ tags:
 - [[Troubleshooting Matrix]] - `contains` [EXTRACTED]
 - [[Troubleshooting Runbook — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Troubleshooting_runbooks
+#graphify/document #graphify/EXTRACTED #community/Community_314

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router.py"
 type: "rationale"
-community: "Router"
+community: "Community 38"
 location: "L155"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Router
+  - community/Community_38
 ---
 
 # Test forwarding handles HTTP error responses
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_forward_to_agent_http_error()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Router
+#graphify/rationale #graphify/EXTRACTED #community/Community_38

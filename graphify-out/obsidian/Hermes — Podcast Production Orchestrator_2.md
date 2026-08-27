@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-hermes/README.md"
 type: "document"
-community: "Readme (i-hermes)"
+community: "Community 1226"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-hermes
+  - community/Community_1226
 ---
 
 # Hermes — Podcast Production Orchestrator
@@ -17,4 +17,4 @@ tags:
 - [[Related Skills_92]] - `contains` [EXTRACTED]
 - [[Usage_95]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-hermes
+#graphify/document #graphify/EXTRACTED #community/Community_1226

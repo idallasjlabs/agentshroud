@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/citation_verifier.py"
 type: "rationale"
-community: "Intel Report (security)"
+community: "Community 171"
 location: "L223"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Intel_Report_security
+  - community/Community_171
 ---
 
 # Verify every draft claim; return a report of only verified claims.          Clai
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.verify_report()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Intel_Report_security
+#graphify/rationale #graphify/EXTRACTED #community/Community_171

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy_default_failclosed.py"
 type: "rationale"
-community: "Mcp Policy"
+community: "Community 34"
 location: "L80"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Mcp_Policy
+  - community/Community_34
 ---
 
 # A stock config (no mcp_policy:) must produce a non-empty, deny-by-default policy
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_missing_section_yields_deny_by_default_policy()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Mcp_Policy
+#graphify/rationale #graphify/EXTRACTED #community/Community_34

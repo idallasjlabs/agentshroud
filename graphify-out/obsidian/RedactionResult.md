@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "Tool Result Pii"
+community: "Community 513"
 location: "L207"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Tool_Result_Pii
+  - community/Community_513
 ---
 
 # RedactionResult
@@ -40,4 +40,4 @@ tags:
 - [[test_tool_result_pii.py]] - `imports` [EXTRACTED]
 - [[tool_result_sanitizer.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Tool_Result_Pii
+#graphify/code #graphify/INFERRED #community/Community_513

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_websocket.py"
 type: "rationale"
-community: "Soc Websocket"
+community: "Community 144"
 location: "L34"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Soc_Websocket
+  - community/Community_144
 ---
 
 # Replicate the filter logic from _event_fan_out.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._matches()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Soc_Websocket
+#graphify/rationale #graphify/EXTRACTED #community/Community_144

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "Tool Result Pii"
+community: "Community 513"
 location: "L197"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tool_Result_Pii
+  - community/Community_513
 ---
 
 # RedactionDetail
@@ -33,4 +33,4 @@ tags:
 - [[sanitizer.py]] - `imports` [EXTRACTED]
 - [[test_tool_result_pii.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Tool_Result_Pii
+#graphify/code #graphify/EXTRACTED #community/Community_513

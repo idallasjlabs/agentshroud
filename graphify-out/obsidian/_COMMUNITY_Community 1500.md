@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[plan_2]] - document - skills/custom/agentshroud-blueteam/references/steve-hay-plan.md
-- [[steve-hay-plan]] - document - skills/custom/agentshroud-blueteam/references/steve-hay-plan.md
+- [[plan_1]] - document - docs/planning/redteam/plan.md
+- [[plan]] - document - docs/planning/redteam/plan.md
 
 ## Live Query (requires Dataview plugin)
 

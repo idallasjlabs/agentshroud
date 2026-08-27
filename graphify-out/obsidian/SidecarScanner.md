@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/sidecar.py"
 type: "code"
-community: "E2e Proxy"
+community: "Community 74"
 location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/E2e_Proxy
+  - community/Community_74
 ---
 
 # SidecarScanner
@@ -26,4 +26,4 @@ tags:
 - [[test_e2e_proxy.py]] - `imports` [EXTRACTED]
 - [[test_sidecar_scanner()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/E2e_Proxy
+#graphify/code #graphify/EXTRACTED #community/Community_74

@@ -1,20 +1,20 @@
 ---
-source_file: "scripts/export-telegram-history.py"
+source_file: "scripts/export-email-reports.py"
 type: "code"
-community: "Export Telegram History (scripts)"
-location: "L148"
+community: "Community 723"
+location: "L136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Export_Telegram_History_scripts
+  - community/Community_723
 ---
 
 # main()
 
 ## Connections
-- [[Path_44]] - `calls` [EXTRACTED]
-- [[_parse_since()_2]] - `calls` [EXTRACTED]
-- [[export()]] - `calls` [EXTRACTED]
-- [[export-telegram-history.py]] - `contains` [EXTRACTED]
+- [[Path_43]] - `calls` [EXTRACTED]
+- [[_parse_since()_1]] - `calls` [EXTRACTED]
+- [[export-email-reports.py]] - `contains` [EXTRACTED]
+- [[export_bot()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Export_Telegram_History_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_723

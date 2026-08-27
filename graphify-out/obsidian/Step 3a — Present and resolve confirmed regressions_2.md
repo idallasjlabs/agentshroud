@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-crpr/SKILL.md"
 type: "document"
-community: "Skill (i-crpr)"
+community: "Community 617"
 location: "L118"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-crpr
+  - community/Community_617
 ---
 
 # Step 3a — Present and resolve confirmed regressions
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Create PR with Pre-Flight Audit (CRPR)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-crpr
+#graphify/document #graphify/EXTRACTED #community/Community_617

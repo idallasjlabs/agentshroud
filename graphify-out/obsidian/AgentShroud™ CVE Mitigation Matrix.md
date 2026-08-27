@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/cve-mitigation-matrix.md"
 type: "document"
-community: "Cve Mitigation Matrix (security)"
+community: "Community 332"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Cve_Mitigation_Matrix_security
+  - community/Community_332
 ---
 
 # AgentShroud™ CVE Mitigation Matrix
@@ -20,7 +20,7 @@ tags:
 - [[Previously Partial — Now Fully Mitigated]] - `contains` [EXTRACTED]
 - [[Tier 1 — Hand-Curated CVEs (AgentShroud-Specific Mitigations)]] - `contains` [EXTRACTED]
 - [[Tier 3 — NVD-Sourced Bulk CVEs (276 entries)]] - `contains` [EXTRACTED]
-- [[Verification_11]] - `contains` [EXTRACTED]
+- [[Verification_17]] - `contains` [EXTRACTED]
 - [[cve-mitigation-matrix]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Cve_Mitigation_Matrix_security
+#graphify/document #graphify/EXTRACTED #community/Community_332

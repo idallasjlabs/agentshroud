@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-sad/SKILL.md"
 type: "document"
-community: "Skill (i-sad)"
+community: "Community 1260"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-sad
+  - community/Community_1260
 ---
 
 # System Audit Documentation (SAD)
@@ -14,4 +14,4 @@ tags:
 - [[Session Prompt Generator]] - `semantically_similar_to` [INFERRED]
 - [[System Audit Vault README]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-sad
+#graphify/document #graphify/EXTRACTED #community/Community_1260

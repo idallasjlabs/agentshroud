@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_event_bus.py"
 type: "rationale"
-community: "Soc Egress Endpoints"
+community: "Community 374"
 location: "L49"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Soc_Egress_Endpoints
+  - community/Community_374
 ---
 
 # Multiple subscribers all receive the same event
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_emit_to_multiple_subscribers()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Soc_Egress_Endpoints
+#graphify/rationale #graphify/EXTRACTED #community/Community_374

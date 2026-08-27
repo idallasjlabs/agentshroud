@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/peekaboo/SKILL.md"
 type: "document"
-community: "Skill (peekaboo)"
+community: "Community 575"
 location: "L128"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_peekaboo
+  - community/Community_575
 ---
 
 # Target by window id
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Examples]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_peekaboo
+#graphify/document #graphify/EXTRACTED #community/Community_575

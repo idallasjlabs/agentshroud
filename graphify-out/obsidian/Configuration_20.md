@@ -1,17 +1,18 @@
 ---
-source_file: "skills/openclaw/bear-notes/SKILL.md"
+source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "Skill (bear-notes)"
-location: "L85"
+community: "Community 150"
+location: "L191"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_bear-notes
+  - community/Community_150
 ---
 
 # Configuration
 
 ## Connections
-- [[Bear Notes]] - `contains` [EXTRACTED]
+- [[Full Configuration Example]] - `contains` [EXTRACTED]
+- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_bear-notes
+#graphify/document #graphify/EXTRACTED #community/Community_150

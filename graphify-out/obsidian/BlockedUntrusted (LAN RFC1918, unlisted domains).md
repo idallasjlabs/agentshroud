@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-11-trust-boundary.png"
 type: "image"
-community: "Diagram 11 Trust Boundary (images)"
+community: "Community 280"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Diagram_11_Trust_Boundary_images
+  - community/Community_280
 ---
 
 # Blocked/Untrusted (LAN RFC1918, unlisted domains)
@@ -14,4 +14,4 @@ tags:
 - [[Trust Boundary Diagram]] - `conceptually_related_to` [EXTRACTED]
 - [[Trust Zone 2 — Bot (Supervised Agent no direct credentialinternet access)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Diagram_11_Trust_Boundary_images
+#graphify/image #graphify/EXTRACTED #community/Community_280

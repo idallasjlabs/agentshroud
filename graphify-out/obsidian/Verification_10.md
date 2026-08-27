@@ -1,17 +1,17 @@
 ---
-source_file: "docs/reference/PREREQUISITES.md"
+source_file: "docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md"
 type: "document"
-community: "Prerequisites (reference)"
-location: "L560"
+community: "Community 455"
+location: "L101"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Prerequisites_reference
+  - community/Community_455
 ---
 
 # Verification
 
 ## Connections
-- [[✅ Setup Checklist]] - `contains` [EXTRACTED]
+- [[P1 HTTP CONNECT Proxy + Domain Allowlist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Prerequisites_reference
+#graphify/document #graphify/EXTRACTED #community/Community_455

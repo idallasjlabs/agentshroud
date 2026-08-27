@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "Skill (i-mcpm-aws-profile)"
+community: "Community 225"
 location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-mcpm-aws-profile
+  - community/Community_225
 ---
 
 # Configure New Profile
@@ -16,4 +16,4 @@ tags:
 - [[Option 2 Manual Configuration]] - `contains` [EXTRACTED]
 - [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-mcpm-aws-profile
+#graphify/document #graphify/EXTRACTED #community/Community_225

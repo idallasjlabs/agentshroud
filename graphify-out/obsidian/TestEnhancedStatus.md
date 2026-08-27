@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_status.py"
 type: "code"
-community: "Auth"
+community: "Community 344"
 location: "L4"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Auth
+  - community/Community_344
 ---
 
 # TestEnhancedStatus
@@ -19,4 +19,4 @@ tags:
 - [[Test enhanced status endpoint with observatory mode and egress info.]] - `rationale_for` [EXTRACTED]
 - [[test_enhanced_status.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Auth
+#graphify/code #graphify/EXTRACTED #community/Community_344

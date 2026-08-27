@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/container-policy.md"
 type: "concept"
-community: "Development Workflow Read Only (security)"
+community: "Community 548"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Development_Workflow_Read_Only_security
+  - community/Community_548
 ---
 
 # Read-Only Filesystem (Planned)
@@ -15,4 +15,4 @@ tags:
 - [[SECURITY_VALUE_PROPOSITION]] - `references` [EXTRACTED]
 - [[container-policy]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Development_Workflow_Read_Only_security
+#graphify/concept #graphify/EXTRACTED #community/Community_548

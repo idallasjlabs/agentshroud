@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "Voice Latency Guard"
-location: "L2362"
+community: "Community 103"
+location: "L2421"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Voice_Latency_Guard
+  - community/Community_103
 ---
 
 # test_ws_volume_command_intercepted()
@@ -18,4 +18,4 @@ tags:
 - [[set volume X%' must NOT reach the agent the server sends a     {cmdset_volu]] - `rationale_for` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Voice_Latency_Guard
+#graphify/code #graphify/EXTRACTED #community/Community_103

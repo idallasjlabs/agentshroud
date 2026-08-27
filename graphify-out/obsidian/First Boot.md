@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/clamav.md"
 type: "document"
-community: "Clamav (05 - Dependencies)"
+community: "Community 600"
 location: "L40"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Clamav_05_-_Dependencies
+  - community/Community_600
 ---
 
 # First Boot
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ClamAV]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Clamav_05_-_Dependencies
+#graphify/document #graphify/EXTRACTED #community/Community_600

@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/canvas/SKILL.md"
 type: "document"
-community: "Skill (canvas)"
+community: "Community 341"
 location: "L76"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_canvas
+  - community/Community_341
 ---
 
 # Live Reload
 
 ## Connections
-- [[Configuration_21]] - `contains` [EXTRACTED]
+- [[Configuration_22]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_canvas
+#graphify/document #graphify/EXTRACTED #community/Community_341

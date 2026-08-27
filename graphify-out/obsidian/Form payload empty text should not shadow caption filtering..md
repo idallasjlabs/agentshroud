@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Telegram Outbound Proxy Tests"
+community: "Community 887"
 location: "L1113"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Outbound_Proxy_Tests
+  - community/Community_887
 ---
 
 # Form payload empty text should not shadow caption filtering.
@@ -17,4 +17,4 @@ tags:
 - [[.test_collaborator_form_empty_text_with_draft_payload_is_normalized()]] - `rationale_for` [EXTRACTED]
 - [[.test_collaborator_form_empty_text_with_message_payload_is_normalized()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Outbound_Proxy_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Community_887

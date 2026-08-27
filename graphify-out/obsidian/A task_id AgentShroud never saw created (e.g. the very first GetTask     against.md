@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_policy.py"
 type: "rationale"
-community: "A2a Policy"
+community: "Community 82"
 location: "L192"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/A2a_Policy
+  - community/Community_82
 ---
 
 # A task_id AgentShroud never saw created (e.g. the very first GetTask     against
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_task_ownership_check_is_a_no_op_for_an_unknown_task_id()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/A2a_Policy
+#graphify/rationale #graphify/EXTRACTED #community/Community_82

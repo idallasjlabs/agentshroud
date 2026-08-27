@@ -1,24 +1,18 @@
 ---
-source_file: "skills/openclaw/openai-image-gen/scripts/gen.py"
+source_file: "skills/openclaw/nano-banana-pro/scripts/generate_image.py"
 type: "code"
-community: "Gen (scripts)"
-location: "L164"
+community: "Community 359"
+location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gen_scripts
+  - community/Community_359
 ---
 
 # main()
 
 ## Connections
-- [[Path_49]] - `calls` [EXTRACTED]
-- [[default_out_dir()]] - `calls` [EXTRACTED]
-- [[gen.py]] - `contains` [EXTRACTED]
-- [[get_model_defaults()]] - `calls` [EXTRACTED]
-- [[pick_prompts()]] - `calls` [EXTRACTED]
-- [[request_images()]] - `calls` [EXTRACTED]
-- [[slugify()]] - `calls` [EXTRACTED]
-- [[write_gallery()]] - `calls` [EXTRACTED]
+- [[generate_image.py]] - `contains` [EXTRACTED]
+- [[get_api_key()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gen_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_359

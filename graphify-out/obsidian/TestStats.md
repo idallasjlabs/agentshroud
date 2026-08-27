@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_blocklist.py"
 type: "code"
-community: "Dns Blocklist"
+community: "Community 141"
 location: "L136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Dns_Blocklist
+  - community/Community_141
 ---
 
 # TestStats
@@ -17,4 +17,4 @@ tags:
 - [[stats() — verify blockedallowlistdenylist counts.]] - `rationale_for` [EXTRACTED]
 - [[test_dns_blocklist.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Dns_Blocklist
+#graphify/code #graphify/EXTRACTED #community/Community_141

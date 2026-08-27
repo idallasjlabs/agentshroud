@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/All Dependencies.md"
 type: "document"
-community: "All dependencies (05 - Dependencies)"
+community: "Community 550"
 location: "L73"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/All_dependencies_05_-_Dependencies
+  - community/Community_550
 ---
 
 # Bot / Docker Container Dependencies
@@ -17,4 +17,4 @@ tags:
 - [[Node.js Packages (installed globally)]] - `contains` [EXTRACTED]
 - [[System Packages (apt)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/All_dependencies_05_-_Dependencies
+#graphify/document #graphify/EXTRACTED #community/Community_550

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_differential_pii_detector.py"
 type: "rationale"
-community: "Differential Pii Detector"
+community: "Community 47"
 location: "L200"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Differential_Pii_Detector
+  - community/Community_47
 ---
 
 # Exercise the Presidio detection path with an injected fake analyzer.      The re
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPresidioPathContract]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Differential_Pii_Detector
+#graphify/rationale #graphify/EXTRACTED #community/Community_47

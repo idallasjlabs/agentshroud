@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "Queue (approval_queue)"
+community: "Community 24"
 location: "L181"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Queue_approval_queue
+  - community/Community_24
 ---
 
 # ApprovalQueueItem
@@ -43,4 +43,4 @@ tags:
 - [[test_approval_store.py]] - `imports` [EXTRACTED]
 - [[test_approval_stress.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Queue_approval_queue
+#graphify/code #graphify/INFERRED #community/Community_24

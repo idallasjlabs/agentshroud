@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/himalaya/references/configuration.md"
 type: "document"
-community: "Configuration (references)"
+community: "Community 581"
 location: "L139"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Configuration_references
+  - community/Community_581
 ---
 
 # Notmuch Backend (local mail)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Himalaya Configuration Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Configuration_references
+#graphify/document #graphify/EXTRACTED #community/Community_581

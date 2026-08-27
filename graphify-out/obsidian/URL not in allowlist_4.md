@@ -1,17 +1,17 @@
 ---
 source_file: "skills/custom/securebrowser/SKILL.md"
 type: "document"
-community: "Skill (securebrowser)"
+community: "Community 235"
 location: "L319"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_securebrowser
+  - community/Community_235
 ---
 
 # "URL not in allowlist"
 
 ## Connections
-- [[Troubleshooting_37]] - `contains` [EXTRACTED]
+- [[Troubleshooting_38]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_securebrowser
+#graphify/document #graphify/EXTRACTED #community/Community_235

@@ -1,17 +1,17 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "Gateway Test Suite"
-location: "L838"
+community: "Community 1332"
+location: "L906"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Community_1332
 ---
 
 # Added
 
 ## Connections
-- [[0.5.0 - 2026-02-21]] - `contains` [EXTRACTED]
+- [[0.7.0 - 2026-02-25]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Community_1332

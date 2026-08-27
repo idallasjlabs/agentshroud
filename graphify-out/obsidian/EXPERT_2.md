@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-socrates/SKILL.md"
 type: "document"
-community: "Skill (i-socrates)"
+community: "Community 499"
 location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-socrates
+  - community/Community_499
 ---
 
 # EXPERT
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Speaker Definitions_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-socrates
+#graphify/document #graphify/EXTRACTED #community/Community_499

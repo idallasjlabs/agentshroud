@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_url_analyzer.py"
 type: "code"
-community: "Url Analyzer"
+community: "Community 406"
 location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Url_Analyzer
+  - community/Community_406
 ---
 
 # TestSSRFDetection
@@ -35,4 +35,4 @@ tags:
 - [[URLVerdict]] - `uses` [INFERRED]
 - [[test_url_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Url_Analyzer
+#graphify/code #graphify/EXTRACTED #community/Community_406

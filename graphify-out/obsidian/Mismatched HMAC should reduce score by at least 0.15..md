@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_context_integrity.py"
 type: "rationale"
-community: "Context Integrity"
+community: "Community 116"
 location: "L56"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Context_Integrity
+  - community/Community_116
 ---
 
 # Mismatched HMAC should reduce score by at least 0.15.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_tampered_system_prompt_lowers_score()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Context_Integrity
+#graphify/rationale #graphify/EXTRACTED #community/Community_116

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-browser/README.md"
 type: "document"
-community: "Browse (scripts)"
+community: "Community 252"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browse_scripts
+  - community/Community_252
 ---
 
 # Browser Skill README (OpenClaw)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Browser — Secure Browser Automation SKILL (OpenClaw)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browse_scripts
+#graphify/document #graphify/EXTRACTED #community/Community_252

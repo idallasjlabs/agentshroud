@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/models.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/middleware.py.md"
 type: "document"
-community: "Models.py (Gateway Core)"
-location: "L79"
+community: "Community 561"
+location: "L110"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Modelspy_Gateway_Core
+  - community/Community_561
 ---
 
 # Environment Variables Used
 
 ## Connections
-- [[models.py_3]] - `contains` [EXTRACTED]
+- [[middleware.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Modelspy_Gateway_Core
+#graphify/document #graphify/EXTRACTED #community/Community_561

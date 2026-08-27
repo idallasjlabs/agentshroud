@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "rationale"
-community: "Mcp Permissions (proxy)"
+community: "Community 106"
 location: "L216"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Mcp_Permissions_proxy
+  - community/Community_106
 ---
 
 # Load optional admin-private tool patterns from policy file.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._load_privacy_policy()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Mcp_Permissions_proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_106

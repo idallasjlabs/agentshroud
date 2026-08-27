@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/wazuh-ossec.md"
 type: "document"
-community: "Wazuh Ossec (03 - Configuration)"
+community: "Community 970"
 location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Wazuh_Ossec_03_-_Configuration
+  - community/Community_970
 ---
 
 # Purpose
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[wazuh-ossec.conf]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Wazuh_Ossec_03_-_Configuration
+#graphify/document #graphify/EXTRACTED #community/Community_970

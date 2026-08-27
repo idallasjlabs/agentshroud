@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "rationale"
-community: "Subagent Governance"
+community: "Community 481"
 location: "L618"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Subagent_Governance
+  - community/Community_481
 ---
 
 # Check text for prompt injection patterns.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_check_injection_patterns()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Subagent_Governance
+#graphify/rationale #graphify/EXTRACTED #community/Community_481

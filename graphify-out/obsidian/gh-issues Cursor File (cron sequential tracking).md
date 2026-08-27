@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/gh-issues/SKILL.md"
 type: "concept"
-community: "Skill (gh-issues)"
+community: "Community 1024"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Skill_gh-issues
+  - community/Community_1024
 ---
 
 # gh-issues Cursor File (cron sequential tracking)
@@ -15,4 +15,4 @@ tags:
 - [[Stable-named cron scheduling for periodic audits]] - `semantically_similar_to` [INFERRED]
 - [[gh-issues Sub-agent Spawn (Phase 5)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Skill_gh-issues
+#graphify/concept #graphify/EXTRACTED #community/Community_1024

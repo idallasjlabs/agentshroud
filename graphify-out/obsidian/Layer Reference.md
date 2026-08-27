@@ -1,17 +1,18 @@
 ---
 source_file: "docs/vault/09 - Diagrams/Security Pipeline Flow.md"
 type: "document"
-community: "Data flow (01 - Architecture)"
+community: "Community 692"
 location: "L92"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Data_flow_01_-_Architecture
+  - community/Community_692
 ---
 
 # Layer Reference
 
 ## Connections
+- [[Security Pipeline Flow_1]] - `contains` [EXTRACTED]
 - [[`SecurityPipeline`]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Data_flow_01_-_Architecture
+#graphify/document #graphify/EXTRACTED #community/Community_692

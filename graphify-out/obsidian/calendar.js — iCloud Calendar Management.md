@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-icloud/scripts/calendar.js"
 type: "code"
-community: "Skill (i-icloud)"
+community: "Community 1030"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Skill_i-icloud
+  - community/Community_1030
 ---
 
 # calendar.js — iCloud Calendar Management
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[i-icloud SKILL — iCloud Services]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Skill_i-icloud
+#graphify/code #graphify/EXTRACTED #community/Community_1030

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/references/security-policies.md"
 type: "document"
-community: "Security Policies (references)"
+community: "Community 420"
 location: "L290"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Policies_references
+  - community/Community_420
 ---
 
 # Incident Response
@@ -16,4 +16,4 @@ tags:
 - [[SecureBrowser Security Policies]] - `contains` [EXTRACTED]
 - [[Security Event Triggers]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Policies_references
+#graphify/document #graphify/EXTRACTED #community/Community_420

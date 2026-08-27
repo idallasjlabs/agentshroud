@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/coding-agent/SKILL.md"
 type: "document"
-community: "Skill (coding-agent)"
+community: "Community 292"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_coding-agent
+  - community/Community_292
 ---
 
 # Coding Agent (bash-first)
@@ -26,4 +26,4 @@ tags:
 - [[⚠️ PTY Mode Required!]] - `contains` [EXTRACTED]
 - [[⚠️ Rules]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_coding-agent
+#graphify/document #graphify/EXTRACTED #community/Community_292

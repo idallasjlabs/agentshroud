@@ -1,13 +1,13 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "concept"
-community: "Glossary (project)"
+community: "Community 1728"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Glossary_project
+  - community/Community_1728
 ---
 
 # Threat Intelligence
 
-#graphify/concept #graphify/EXTRACTED #community/Glossary_project
+#graphify/concept #graphify/EXTRACTED #community/Community_1728

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/RUNBOOK.md"
 type: "document"
-community: "Telegram Issues (project)"
+community: "Community 205"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Telegram_Issues_project
+  - community/Community_205
 ---
 
 # RUNBOOK.md
@@ -20,4 +20,4 @@ tags:
 - [[deployment]] - `conceptually_related_to` [INFERRED]
 - [[troubleshooting]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Telegram_Issues_project
+#graphify/document #graphify/EXTRACTED #community/Community_205

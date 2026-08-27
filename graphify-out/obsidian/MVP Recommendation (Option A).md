@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION.md"
 type: "rationale"
-community: "Development Workflow Read Only (security)"
+community: "Community 548"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Development_Workflow_Read_Only_security
+  - community/Community_548
 ---
 
 # MVP Recommendation (Option A)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[SECURITY_VALUE_PROPOSITION]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Development_Workflow_Read_Only_security
+#graphify/rationale #graphify/EXTRACTED #community/Community_548

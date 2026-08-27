@@ -1,18 +1,20 @@
 ---
-source_file: "skills/openclaw/skill-creator/scripts/package_skill.py"
+source_file: "skills/openclaw/skill-creator/scripts/init_skill.py"
 type: "code"
-community: "Package Skill (scripts)"
-location: "L99"
+community: "Community 812"
+location: "L320"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Package_Skill_scripts
+  - community/Community_812
 ---
 
 # main()
 
 ## Connections
-- [[package_skill()]] - `calls` [EXTRACTED]
-- [[package_skill.py]] - `contains` [EXTRACTED]
+- [[init_skill()]] - `calls` [EXTRACTED]
+- [[init_skill.py]] - `contains` [EXTRACTED]
+- [[normalize_skill_name()]] - `calls` [EXTRACTED]
+- [[parse_resources()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Package_Skill_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_812

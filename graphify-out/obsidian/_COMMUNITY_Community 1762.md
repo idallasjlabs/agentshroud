@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Unicode Bypass]] - concept - docs/project/glossary.md
+- [[PERMANENT_EGRESS_DOMAINS]] - code - gateway/security/egress_config.py
 
 ## Live Query (requires Dataview plugin)
 

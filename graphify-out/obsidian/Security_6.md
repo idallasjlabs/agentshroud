@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md"
+source_file: "CHANGELOG.md"
 type: "document"
-community: "Skill (i-mcpm-aws-profile)"
-location: "L298"
+community: "Community 529"
+location: "L864"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-mcpm-aws-profile
+  - community/Community_529
 ---
 
 # Security
 
 ## Connections
-- [[Best Practices_5]] - `contains` [EXTRACTED]
+- [[Unreleased — feathttp-connect-proxy + featcredential-isolation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-mcpm-aws-profile
+#graphify/document #graphify/EXTRACTED #community/Community_529

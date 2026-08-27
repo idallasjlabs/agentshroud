@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy_coverage.py"
 type: "code"
-community: "Slack Proxy Coverage"
+community: "Community 25"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Slack_Proxy_Coverage
+  - community/Community_25
 ---
 
 # test_slack_proxy_coverage.py
@@ -24,4 +24,4 @@ tags:
 - [[_RaisingRedactionResult]] - `contains` [EXTRACTED]
 - [[_make_proxy()_3]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Slack_Proxy_Coverage
+#graphify/code #graphify/EXTRACTED #community/Community_25

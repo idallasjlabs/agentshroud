@@ -1,18 +1,19 @@
 ---
 source_file: "docs/vault/05 - Dependencies/openscap.md"
 type: "document"
-community: "Openscap (05 - Dependencies)"
+community: "Community 657"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Openscap_05_-_Dependencies
+  - community/Community_657
 ---
 
 # OpenSCAP
 
 ## Connections
 - [[Installation in Gateway]] - `contains` [EXTRACTED]
+- [[Integration Point]] - `contains` [EXTRACTED]
 - [[Integration Testing]] - `contains` [EXTRACTED]
 - [[Key Commands]] - `contains` [EXTRACTED]
 - [[Purpose_189]] - `contains` [EXTRACTED]
@@ -21,4 +22,4 @@ tags:
 - [[What It Checks_1]] - `contains` [EXTRACTED]
 - [[openscap]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Openscap_05_-_Dependencies
+#graphify/document #graphify/EXTRACTED #community/Community_657

@@ -1,13 +1,13 @@
 ---
 source_file: "firmware/voice-terminal/main/ota.h"
 type: "code"
-community: "Ota (main)"
+community: "Community 1702"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ota_main
+  - community/Community_1702
 ---
 
 # OTA API Header
 
-#graphify/code #graphify/EXTRACTED #community/Ota_main
+#graphify/code #graphify/EXTRACTED #community/Community_1702

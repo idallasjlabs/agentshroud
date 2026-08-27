@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "rationale"
-community: "Llm Proxy (proxy)"
-location: "L330"
+community: "Community 108"
+location: "L376"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Llm_Proxy_proxy
+  - community/Community_108
 ---
 
 # Resolve the local backend for failover dispatch via LOCAL_MODEL_ROUTES.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._local_failover_base()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Llm_Proxy_proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_108

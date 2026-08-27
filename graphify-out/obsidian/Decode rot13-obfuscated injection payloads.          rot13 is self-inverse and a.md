@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encoding_detector.py"
 type: "rationale"
-community: "Security Audit & Watchtower Tests"
+community: "Community 50"
 location: "L124"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Audit__Watchtower_Tests
+  - community/Community_50
 ---
 
 # Decode rot13-obfuscated injection payloads.          rot13 is self-inverse and a
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.decode_rot13()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Community_50

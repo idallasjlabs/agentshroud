@@ -1,25 +1,19 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
+source_file: "docker/config/openclaw/cron/scripts/cve_prefetch.py"
 type: "code"
-community: "Browse (scripts)"
-location: "L431"
+community: "Community 1543"
+location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Browse_scripts
+  - community/Community_1543
 ---
 
 # main()
 
 ## Connections
-- [[._take_screenshot()_2]] - `calls` [EXTRACTED]
-- [[.click()_2]] - `calls` [EXTRACTED]
-- [[.close()_2]] - `calls` [EXTRACTED]
-- [[.extract()_2]] - `calls` [EXTRACTED]
-- [[.fill_field()_2]] - `calls` [EXTRACTED]
-- [[.navigate()_2]] - `calls` [EXTRACTED]
-- [[CLI interface for SecureBrowser_1]] - `rationale_for` [EXTRACTED]
-- [[SecureBrowser_2]] - `calls` [EXTRACTED]
-- [[browse.py_2]] - `contains` [EXTRACTED]
+- [[curl_json()]] - `calls` [EXTRACTED]
+- [[cve_prefetch.py]] - `contains` [EXTRACTED]
+- [[known_ghsa_ids()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Browse_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_1543

@@ -1,12 +1,12 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "Claude"
+community: "Community 241"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Claude
+  - community/Community_241
 ---
 
 # Applies to: Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary)
@@ -20,11 +20,11 @@ tags:
 - [[3) SDLC — HOW TO WORK IN THIS REPO]] - `contains` [EXTRACTED]
 - [[4) TEST-DRIVEN DEVELOPMENT (DEFAULT)]] - `contains` [EXTRACTED]
 - [[5) LANGUAGE & TOOLING STANDARDS]] - `contains` [EXTRACTED]
-- [[6) SECURITY & SAFETY REQUIREMENTS]] - `contains` [EXTRACTED]
+- [[6) SECURITY & SAFETY REQUIREMENTS_1]] - `contains` [EXTRACTED]
 - [[7) AGENTSHROUD-SPECIFIC CONSTRAINTS]] - `contains` [EXTRACTED]
 - [[8) OUTPUT FORMATTING CONTRACT]] - `contains` [EXTRACTED]
 - [[9) GOVERNANCE & DECISION-MAKING]] - `contains` [EXTRACTED]
 - [[CLAUDE]] - `contains` [EXTRACTED]
 - [[KNOWLEDGE MAP — READ THIS FIRST]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Claude
+#graphify/document #graphify/EXTRACTED #community/Community_241

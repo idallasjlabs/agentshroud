@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "code"
-community: "Audit Chain"
+community: "Community 1"
 location: "L273"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Audit_Chain
+  - community/Community_1
 ---
 
 # TestRetention
@@ -18,4 +18,4 @@ tags:
 - [[Retention enforcement.]] - `rationale_for` [EXTRACTED]
 - [[test_audit_chain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Audit_Chain
+#graphify/code #graphify/EXTRACTED #community/Community_1

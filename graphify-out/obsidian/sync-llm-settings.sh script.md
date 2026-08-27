@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sync-llm-settings.sh"
 type: "code"
-community: "Sync Llm Settings (scripts)"
+community: "Community 685"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Sync_Llm_Settings_scripts
+  - community/Community_685
 ---
 
 # sync-llm-settings.sh script
@@ -16,4 +16,4 @@ tags:
 - [[_write_manifest()]] - `calls` [EXTRACTED]
 - [[sync-llm-settings.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Sync_Llm_Settings_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_685

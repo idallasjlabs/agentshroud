@@ -1,11 +1,11 @@
 ---
 source_file: "docs/reviews/red-team-report-v0.7.0.md"
 type: "concept"
-community: "Tool Chain & CVE Triage"
+community: "Community 659"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Tool_Chain__CVE_Triage
+  - community/Community_659
 ---
 
 # docs/reviews/red-team-report-v0.7.0.md
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Red Team Adversarial Tester (SEC-OFFENSE)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Tool_Chain__CVE_Triage
+#graphify/concept #graphify/EXTRACTED #community/Community_659

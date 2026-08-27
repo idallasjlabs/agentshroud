@@ -1,18 +1,17 @@
 ---
-source_file: "docs/planning/reviews/phase-review-2026-03-05-r3.md"
+source_file: "docs/planning/reviews/phase-review-2026-02-23.md"
 type: "document"
-community: "skills/openclaw"
-location: "L11"
+community: "Community 135"
+location: "L132"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Community_135
 ---
 
 # Summary
 
 ## Connections
-- [[AgentShroud v0.8.0 Peer Review Round 3 (FINAL)]] - `contains` [EXTRACTED]
-- [[Test Results]] - `contains` [EXTRACTED]
+- [[AgentShroud Phase Review — 2026-02-23]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/Community_135

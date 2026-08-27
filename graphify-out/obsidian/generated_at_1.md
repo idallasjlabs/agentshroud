@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/manifest.json"
 type: "code"
-community: "Manifest (hermes)"
+community: "Community 969"
 location: "L3"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Manifest_hermes
+  - community/Community_969
 ---
 
 # generated_at
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[manifest.json_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Manifest_hermes
+#graphify/code #graphify/EXTRACTED #community/Community_969

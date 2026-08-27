@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "Pipeline Unit"
+community: "Community 22"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Pipeline_Unit
+  - community/Community_22
 ---
 
 # test_pipeline_unit.py
@@ -44,4 +44,4 @@ tags:
 - [[_make_signer_pipeline()]] - `contains` [EXTRACTED]
 - [[pipeline.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Pipeline_Unit
+#graphify/code #graphify/EXTRACTED #community/Community_22

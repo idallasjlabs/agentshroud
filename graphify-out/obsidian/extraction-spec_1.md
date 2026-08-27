@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/graphify/references/extraction-spec.md"
 type: "document"
-community: "Extraction Spec (references)"
+community: "Community 1437"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Extraction_Spec_references
+  - community/Community_1437
 ---
 
 # extraction-spec.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[graphify reference extraction subagent prompt_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Extraction_Spec_references
+#graphify/document #graphify/EXTRACTED #community/Community_1437

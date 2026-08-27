@@ -1,13 +1,13 @@
 ---
 source_file: "branding/logos/variants/badge-60x60.png"
 type: "image"
-community: "Badge 60x60 (variants)"
+community: "Community 1824"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Badge_60x60_variants
+  - community/Community_1824
 ---
 
 # AgentShroud Badge Icon 60x60
 
-#graphify/image #graphify/EXTRACTED #community/Badge_60x60_variants
+#graphify/image #graphify/EXTRACTED #community/Community_1824

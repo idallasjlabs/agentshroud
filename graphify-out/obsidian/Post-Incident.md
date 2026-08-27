@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-production/SKILL.md"
 type: "document"
-community: "Skill (i-production)"
+community: "Community 519"
 location: "L130"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-production
+  - community/Community_519
 ---
 
 # Post-Incident
@@ -17,4 +17,4 @@ tags:
 - [[Post-Mortem Template]] - `contains` [EXTRACTED]
 - [[Skill Incident Response (INCIDENT)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-production
+#graphify/document #graphify/EXTRACTED #community/Community_519

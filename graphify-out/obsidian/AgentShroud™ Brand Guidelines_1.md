@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/workspace/BRAND.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Community 168"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Community_168
 ---
 
 # AgentShroud™ Brand Guidelines
@@ -32,14 +32,14 @@ tags:
 - [[Logo Usage_3]] - `contains` [EXTRACTED]
 - [[Logos]] - `contains` [EXTRACTED]
 - [[Need Help]] - `contains` [EXTRACTED]
-- [[README_1]] - `contains` [EXTRACTED]
+- [[README_38]] - `contains` [EXTRACTED]
 - [[Social Handles]] - `contains` [EXTRACTED]
 - [[Social Handles_1]] - `contains` [EXTRACTED]
 - [[Trademark]] - `references` [EXTRACTED]
 - [[Trademark_1]] - `contains` [EXTRACTED]
 - [[Typography_1]] - `contains` [EXTRACTED]
 - [[Usage Guidelines]] - `contains` [EXTRACTED]
-- [[Voice & Tone]] - `references` [EXTRACTED]
-- [[Voice & Tone_4]] - `contains` [EXTRACTED]
+- [[Voice & Tone_1]] - `references` [EXTRACTED]
+- [[Voice & Tone_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Community_168

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "rationale"
-community: "SOC Router Coverage"
+community: "Community 17"
 location: "L886"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_Router_Coverage
+  - community/Community_17
 ---
 
 # Bug 1 fix: 'ok' must reflect whether the removal actually took effect,     not b
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_revoke_collaborator_ok_reflects_actual_result()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_Router_Coverage
+#graphify/rationale #graphify/EXTRACTED #community/Community_17

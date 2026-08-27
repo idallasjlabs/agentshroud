@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/agentshroud_manager.py"
 type: "code"
-community: "Agentshroud Manager"
+community: "Community 58"
 location: "L226"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Agentshroud_Manager
+  - community/Community_58
 ---
 
 # downgrade()
@@ -26,4 +26,4 @@ tags:
 - [[test_agentshroud_manager.py]] - `imports` [EXTRACTED]
 - [[version_routes.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Agentshroud_Manager
+#graphify/code #graphify/EXTRACTED #community/Community_58

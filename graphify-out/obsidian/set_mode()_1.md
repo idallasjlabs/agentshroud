@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Observatory Mode"
+community: "Community 924"
 location: "L179"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Observatory_Mode
+  - community/Community_924
 ---
 
 # set_mode()
@@ -20,4 +20,4 @@ tags:
 - [[api.py]] - `contains` [EXTRACTED]
 - [[test_observatory_mode.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Observatory_Mode
+#graphify/code #graphify/EXTRACTED #community/Community_924

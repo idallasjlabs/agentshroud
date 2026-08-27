@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "rationale"
-community: "Session Manager"
+community: "Community 174"
 location: "L321"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Session_Manager
+  - community/Community_174
 ---
 
 # _save_sessions must go through os.replace(tmp, final), never a         partial i
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_save_uses_atomic_replace()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Session_Manager
+#graphify/rationale #graphify/EXTRACTED #community/Community_174

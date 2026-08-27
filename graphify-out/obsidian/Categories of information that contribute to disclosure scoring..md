@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "rationale"
-community: "Multi Turn Tracker (security)"
+community: "Community 78"
 location: "L28"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Multi_Turn_Tracker_security
+  - community/Community_78
 ---
 
 # Categories of information that contribute to disclosure scoring.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[DisclosureCategory]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Multi_Turn_Tracker_security
+#graphify/rationale #graphify/EXTRACTED #community/Community_78

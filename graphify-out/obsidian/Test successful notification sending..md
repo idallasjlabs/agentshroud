@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_telegram_notify.py"
 type: "rationale"
-community: "Egress Telegram Notify"
+community: "Community 206"
 location: "L21"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Egress_Telegram_Notify
+  - community/Community_206
 ---
 
 # Test successful notification sending.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_notify_pending_success()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Egress_Telegram_Notify
+#graphify/rationale #graphify/EXTRACTED #community/Community_206

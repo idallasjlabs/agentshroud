@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/instruction_envelope.py"
 type: "code"
-community: "Pipeline Unit"
+community: "Community 22"
 location: "L30"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Pipeline_Unit
+  - community/Community_22
 ---
 
 # InstructionEnvelope
@@ -35,4 +35,4 @@ tags:
 - [[test_instruction_envelope.py]] - `imports` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Pipeline_Unit
+#graphify/code #graphify/INFERRED #community/Community_22

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_browser_security.py"
 type: "code"
-community: "Browser Security"
+community: "Community 147"
 location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Browser_Security
+  - community/Community_147
 ---
 
 # TestURLReputation
@@ -25,4 +25,4 @@ tags:
 - [[ThreatLevel_1]] - `uses` [INFERRED]
 - [[test_browser_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Browser_Security
+#graphify/code #graphify/EXTRACTED #community/Community_147

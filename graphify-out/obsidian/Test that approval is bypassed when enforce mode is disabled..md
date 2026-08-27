@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "rationale"
-community: "Enhanced Approval"
+community: "Community 24"
 location: "L133"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Enhanced_Approval
+  - community/Community_24
 ---
 
 # Test that approval is bypassed when enforce mode is disabled.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_enforce_mode_disabled()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Enhanced_Approval
+#graphify/rationale #graphify/EXTRACTED #community/Community_24

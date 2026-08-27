@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-23-roadmap-gantt.png"
 type: "image"
-community: "Diagram 23 Roadmap Gantt (images)"
+community: "Community 320"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Diagram_23_Roadmap_Gantt_images
+  - community/Community_320
 ---
 
 # Phase 2 — Security Core: HTTP CONNECT Proxy, MCP Proxy Inspector, Approval Queue, SSH Proxy
@@ -18,4 +18,4 @@ tags:
 - [[Phase 1 — Foundation Gateway API+Ledger, Bot Container+Telegram, HMAC Auth+PII Sanitizer]] - `conceptually_related_to` [EXTRACTED]
 - [[Phase 3 — Credential Isolation Op-Proxy, 1Password service account, cascading retry+startup]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Diagram_23_Roadmap_Gantt_images
+#graphify/image #graphify/EXTRACTED #community/Community_320

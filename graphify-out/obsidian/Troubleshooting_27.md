@@ -1,17 +1,20 @@
 ---
-source_file: "docs/setup/HERMES_SETUP.md"
+source_file: "docs/setup/DEVICE_PAIRING.md"
 type: "document"
-community: "Hermes Setup (setup)"
-location: "L253"
+community: "Community 776"
+location: "L333"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes_Setup_setup
+  - community/Community_776
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Hermes Agent — Connection Setup]] - `contains` [EXTRACTED]
+- [[AgentShroud Device Pairing Management]] - `contains` [EXTRACTED]
+- [[Problem pairing required but no pending requests]] - `contains` [EXTRACTED]
+- [[Problem Approved device still can't connect]] - `contains` [EXTRACTED]
+- [[Problem Too many pending requests]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes_Setup_setup
+#graphify/document #graphify/EXTRACTED #community/Community_776

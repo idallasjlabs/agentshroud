@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-hdev/SKILL.md"
 type: "document"
-community: "Skill (i-hdev)"
+community: "Community 299"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-hdev
+  - community/Community_299
 ---
 
 # Skill: Hermes Dev Workflow (HDEV)
@@ -22,4 +22,4 @@ tags:
 - [[SKILL_150]] - `contains` [EXTRACTED]
 - [[Tools you have for this workflow_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-hdev
+#graphify/document #graphify/EXTRACTED #community/Community_299

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/WORKSPACE_USAGE.md"
 type: "document"
-community: "Workspace Usage (architecture)"
+community: "Community 159"
 location: "L314"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Workspace_Usage_architecture
+  - community/Community_159
 ---
 
 # Integration with Bot
@@ -16,4 +16,4 @@ tags:
 - [[Via Skills]] - `contains` [EXTRACTED]
 - [[Via Telegram_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Workspace_Usage_architecture
+#graphify/document #graphify/EXTRACTED #community/Community_159

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "Op Proxy"
+community: "Community 398"
 location: "L120"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Op_Proxy
+  - community/Community_398
 ---
 
 # Return True if the op:// reference matches an allowed path pattern.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_is_op_reference_allowed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Op_Proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_398

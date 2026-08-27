@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/wakeword.c"
 type: "code"
-community: "Playback State (test_playback_state)"
-location: "L443"
+community: "Community 166"
+location: "L462"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Playback_State_test_playback_state
+  - community/Community_166
 ---
 
 # wakeword_set_tts_playing()
@@ -18,4 +18,4 @@ tags:
 - [[tts_task()]] - `calls` [INFERRED]
 - [[wakeword.c]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Playback_State_test_playback_state
+#graphify/code #graphify/INFERRED #community/Community_166

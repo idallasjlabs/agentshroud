@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/updating.md"
 type: "document"
-community: "Updating (operations)"
+community: "Community 531"
 location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Updating_operations
+  - community/Community_531
 ---
 
 # Update from Git
@@ -15,5 +15,6 @@ tags:
 - [[Tracking Main Branch]] - `contains` [EXTRACTED]
 - [[Tracking a Tagged Release]] - `contains` [EXTRACTED]
 - [[Update AgentShroud]] - `contains` [EXTRACTED]
+- [[Updating AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Updating_operations
+#graphify/document #graphify/EXTRACTED #community/Community_531

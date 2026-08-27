@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_integration.py"
 type: "code"
-community: "A2a Integration"
+community: "Community 104"
 location: "L154"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2a_Integration
+  - community/Community_104
 ---
 
 # test_adversarial_task_ownership_hijack_attempt_over_real_http()
@@ -19,4 +19,4 @@ tags:
 - [[alice legitimately creates a task; bob (a distinct, also-allowlisted     peer) a]] - `rationale_for` [EXTRACTED]
 - [[test_a2a_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2a_Integration
+#graphify/code #graphify/EXTRACTED #community/Community_104

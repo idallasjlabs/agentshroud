@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Main Simple"
+community: "Community 9"
 location: "L392"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Main_Simple
+  - community/Community_9
 ---
 
 # Exception
@@ -29,4 +29,4 @@ tags:
 - [[SSHWriteFileResponse]] - `uses` [INFERRED]
 - [[global_exception_handler()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Main_Simple
+#graphify/code #graphify/INFERRED #community/Community_9

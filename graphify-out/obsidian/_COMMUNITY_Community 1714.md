@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[i-bdd skill]] - document - docker/config/openclaw/skills/i-bdd/SKILL.md
+- [[chaos-engineering SKILL stub (OpenClaw)]] - document - docker/config/openclaw/skills/i-chaos-engineering/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_write_file_endpoint.py"
 type: "code"
-community: "Security Fixes & SSH Write Endpoint"
+community: "Community 1"
 location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Fixes__SSH_Write_Endpoint
+  - community/Community_1
 ---
 
 # test_config_with_ssh()
@@ -19,4 +19,4 @@ tags:
 - [[RouterConfig]] - `calls` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Fixes__SSH_Write_Endpoint
+#graphify/code #graphify/EXTRACTED #community/Community_1

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/conftest.py"
 type: "code"
-community: "Security Fixes & SSH Write Endpoint"
+community: "Community 1"
 location: "L91"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Security_Fixes__SSH_Write_Endpoint
+  - community/Community_1
 ---
 
 # GatewayConfig
@@ -24,4 +24,4 @@ tags:
 - [[test_config()]] - `references` [EXTRACTED]
 - [[test_ledger()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Security_Fixes__SSH_Write_Endpoint
+#graphify/code #graphify/INFERRED #community/Community_1

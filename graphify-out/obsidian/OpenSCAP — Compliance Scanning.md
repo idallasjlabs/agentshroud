@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-supply-chain.md"
 type: "document"
-community: "Security Supply Chain (security)"
+community: "Community 542"
 location: "L88"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Supply_Chain_security
+  - community/Community_542
 ---
 
 # OpenSCAP — Compliance Scanning
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Detailed Profiles]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Supply_Chain_security
+#graphify/document #graphify/EXTRACTED #community/Community_542

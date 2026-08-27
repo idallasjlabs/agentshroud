@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/patch_telegram_send_base_url.py"
 type: "code"
-community: "Start (hermes)"
+community: "Community 326"
 location: "L1"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Start_hermes
+  - community/Community_326
 ---
 
 # patch_telegram_send_base_url.py
@@ -17,4 +17,4 @@ tags:
 - [[telegram_gateway_relay.py]] - `conceptually_related_to` [INFERRED]
 - [[telegram_proxy.py]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Start_hermes
+#graphify/code #graphify/INFERRED #community/Community_326

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_security.py"
 type: "code"
-community: "Session Security"
+community: "Community 712"
 location: "L32"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Session_Security
+  - community/Community_712
 ---
 
 # SessionBindingError
@@ -23,4 +23,4 @@ tags:
 - [[TestSessionValidation]] - `uses` [INFERRED]
 - [[session_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Session_Security
+#graphify/code #graphify/INFERRED #community/Community_712

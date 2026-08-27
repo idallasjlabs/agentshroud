@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "Deployment Procedure (operations)"
+community: "Community 571"
 location: "L124"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Deployment_Procedure_operations
+  - community/Community_571
 ---
 
 # Step 2: Repository Clone and Configuration
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Step-by-Step Deployment]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Deployment_Procedure_operations
+#graphify/document #graphify/EXTRACTED #community/Community_571

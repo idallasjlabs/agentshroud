@@ -1,12 +1,12 @@
 ---
 source_file: "docker/SYSTEM-INSTRUCTIONS-SECURITY.md"
 type: "document"
-community: "System Instructions Security (docker)"
+community: "Community 620"
 location: "L171"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/System_Instructions_Security_docker
+  - community/Community_620
 ---
 
 # 🧪 Decision Examples
@@ -18,4 +18,4 @@ tags:
 - [[Example 4 User Insists on Seeing Password]] - `contains` [EXTRACTED]
 - [[System Instructions Credential Security (Ultra-Conservative)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/System_Instructions_Security_docker
+#graphify/document #graphify/EXTRACTED #community/Community_620

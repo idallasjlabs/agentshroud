@@ -1,11 +1,11 @@
 ---
 source_file: ".semgrep.yml"
 type: "concept"
-community: ".semgrep"
+community: "Community 251"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/semgrep
+  - community/Community_251
 ---
 
 # Rule: agentshroud-pickle-load
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Semgrep SAST Configuration]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/semgrep
+#graphify/concept #graphify/EXTRACTED #community/Community_251

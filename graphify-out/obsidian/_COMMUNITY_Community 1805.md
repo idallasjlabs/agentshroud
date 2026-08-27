@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[voice_gatewayserver.py — Voice Gateway FastAPIWebSocket app]] - code - voice_gateway/server.py
+- [[Drift Detection in Pipeline]] - code - gateway/tests/test_security_integration.py
 
 ## Live Query (requires Dataview plugin)
 

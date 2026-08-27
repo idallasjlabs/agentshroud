@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-bs/SKILL.md"
+source_file: "docker/config/openclaw/cron/templates/html-report-instructions.md"
 type: "document"
-community: "Skill (i-bs)"
-location: "L23"
+community: "Community 586"
+location: "L84"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-bs
+  - community/Community_586
 ---
 
 # Rules
 
 ## Connections
-- [[Skill Branding Specialist (BS)_2]] - `contains` [EXTRACTED]
+- [[Source Verification Policy (MANDATORY)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-bs
+#graphify/document #graphify/EXTRACTED #community/Community_586

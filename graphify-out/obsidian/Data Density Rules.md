@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-ux/SKILL.md"
 type: "document"
-community: "Skill (i-ux)"
+community: "Community 240"
 location: "L219"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-ux
+  - community/Community_240
 ---
 
 # Data Density Rules
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Dashboard UX]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-ux
+#graphify/document #graphify/EXTRACTED #community/Community_240

@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-ab/SKILL.md"
 type: "concept"
-community: "Skill (i-ab)"
+community: "Community 1653"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Skill_i-ab
+  - community/Community_1653
 ---
 
 # /i-crpr skill
 
-#graphify/concept #graphify/EXTRACTED #community/Skill_i-ab
+#graphify/concept #graphify/EXTRACTED #community/Community_1653

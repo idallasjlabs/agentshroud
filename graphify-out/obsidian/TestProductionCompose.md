@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_docker_compose.py"
 type: "code"
-community: "Docker Compose"
+community: "Community 216"
 location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Docker_Compose
+  - community/Community_216
 ---
 
 # TestProductionCompose
@@ -27,4 +27,4 @@ tags:
 - [[Validate examplesdocker-compose.production.yml.]] - `rationale_for` [EXTRACTED]
 - [[test_docker_compose.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Docker_Compose
+#graphify/code #graphify/EXTRACTED #community/Community_216

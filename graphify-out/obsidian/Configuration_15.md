@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/prompt_guard.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/encrypted_store.py.md"
 type: "document"
-community: "Prompt Guard.py (Security Modules)"
-location: "L89"
+community: "Community 509"
+location: "L92"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Prompt_Guardpy_Security_Modules
+  - community/Community_509
 ---
 
 # Configuration
 
 ## Connections
-- [[PromptGuard_2]] - `contains` [EXTRACTED]
+- [[encrypted_store.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Prompt_Guardpy_Security_Modules
+#graphify/document #graphify/EXTRACTED #community/Community_509

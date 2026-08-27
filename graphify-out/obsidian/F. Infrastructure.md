@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/MASTER-FEATURE-LIST.md"
 type: "document"
-community: "Skill (i-sec-defense)"
+community: "Community 607"
 location: "L218"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-sec-defense
+  - community/Community_607
 ---
 
 # F. Infrastructure
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud Blue Team Security Auditor]] - `contains` [EXTRACTED]
 - [[v0.9.0 — Sentinel (Blue Team Remediation + Data Isolation + SOC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-sec-defense
+#graphify/document #graphify/EXTRACTED #community/Community_607

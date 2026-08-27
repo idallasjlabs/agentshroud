@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/consent_framework.py"
 type: "code"
-community: "Browser Security"
+community: "Community 207"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Browser_Security
+  - community/Community_207
 ---
 
 # consent_framework.py
@@ -24,4 +24,4 @@ tags:
 - [[oauth_security.py]] - `references` [EXTRACTED]
 - [[test_consent_framework.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Browser_Security
+#graphify/code #graphify/EXTRACTED #community/Community_207

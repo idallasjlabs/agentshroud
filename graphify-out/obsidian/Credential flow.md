@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bot-capabilities.md"
 type: "document"
-community: "Bot Capabilities (docker)"
+community: "Community 747"
 location: "L240"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Capabilities_docker
+  - community/Community_747
 ---
 
 # Credential flow
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Credential Isolation — Gateway op-proxy (ACTIVE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Capabilities_docker
+#graphify/document #graphify/EXTRACTED #community/Community_747

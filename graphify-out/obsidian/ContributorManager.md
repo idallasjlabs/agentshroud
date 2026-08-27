@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/contributors.py"
 type: "code"
-community: "Router (soc)"
+community: "Community 49"
 location: "L24"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Router_soc
+  - community/Community_49
 ---
 
 # ContributorManager
@@ -49,9 +49,7 @@ tags:
 - [[RBACConfig_1]] - `references` [EXTRACTED]
 - [[RenameGroupRequest]] - `uses` [INFERRED]
 - [[Request_6]] - `uses` [INFERRED]
-- [[Request_10]] - `uses` [INFERRED]
 - [[SCLCaller_1]] - `uses` [INFERRED]
-- [[SCLCaller_3]] - `uses` [INFERRED]
 - [[SCLInterface_1]] - `uses` [INFERRED]
 - [[ScanRequest_1]] - `uses` [INFERRED]
 - [[ServiceActionRequest]] - `uses` [INFERRED]
@@ -73,4 +71,4 @@ tags:
 - [[router.py_1]] - `imports` [EXTRACTED]
 - [[test_soc_contributors.py]] - `tests` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Router_soc
+#graphify/code #graphify/INFERRED #community/Community_49

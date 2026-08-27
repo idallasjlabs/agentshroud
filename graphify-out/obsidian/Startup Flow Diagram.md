@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/09 - Diagrams/Startup Flow Diagram.md"
 type: "document"
-community: "Startup flow diagram (09 - Diagrams)"
+community: "Community 1367"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Startup_flow_diagram_09_-_Diagrams
+  - community/Community_1367
 ---
 
 # Startup Flow Diagram.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Startup Flow Diagram_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Startup_flow_diagram_09_-_Diagrams
+#graphify/document #graphify/EXTRACTED #community/Community_1367

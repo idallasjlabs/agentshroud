@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/auth.py"
 type: "code"
-community: "Router (soc)"
+community: "Community 18"
 location: "L138"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Router_soc
+  - community/Community_18
 ---
 
 # SCLCaller
@@ -59,4 +59,4 @@ tags:
 - [[test_soc_bots.py]] - `imports` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Router_soc
+#graphify/code #graphify/INFERRED #community/Community_18

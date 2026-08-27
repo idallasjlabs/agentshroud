@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-06-cicd-deployment.svg"
 type: "image"
-community: "Agentic Os (architecture)"
+community: "Community 1011"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/Agentic_Os_architecture
+  - community/Community_1011
 ---
 
 # Git Worktrees (../agentshroud-worktrees/)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Get Shit Done (GSD) Governance Cadence]] - `conceptually_related_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/Agentic_Os_architecture
+#graphify/image #graphify/INFERRED #community/Community_1011

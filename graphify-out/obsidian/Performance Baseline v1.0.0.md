@@ -1,13 +1,13 @@
 ---
 source_file: ".benchmarks/baseline-v1.0.0.json"
 type: "document"
-community: "Baseline V1.0.0 (.benchmarks)"
+community: "Community 1579"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Baseline_V100_benchmarks
+  - community/Community_1579
 ---
 
 # Performance Baseline v1.0.0
 
-#graphify/document #graphify/EXTRACTED #community/Baseline_V100_benchmarks
+#graphify/document #graphify/EXTRACTED #community/Community_1579

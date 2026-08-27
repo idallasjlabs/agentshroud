@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md"
 type: "document"
-community: "Agentshroud Plan Reset 20260222 (v0.8)"
+community: "Community 455"
 location: "L96"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Agentshroud_Plan_Reset_20260222_v08
+  - community/Community_455
 ---
 
 # Tests (TDD)
@@ -16,4 +16,4 @@ tags:
 - [[P2 Credential Isolation (op-proxy)]] - `contains` [EXTRACTED]
 - [[P3 Channel Ownership — Telegram + Email]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Agentshroud_Plan_Reset_20260222_v08
+#graphify/document #graphify/EXTRACTED #community/Community_455

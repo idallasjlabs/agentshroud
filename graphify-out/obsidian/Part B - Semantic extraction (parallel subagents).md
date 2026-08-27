@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/graphify/SKILL.md"
 type: "document"
-community: "Skill (graphify)"
+community: "Community 351"
 location: "L189"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_graphify
+  - community/Community_351
 ---
 
 # Part B - Semantic extraction (parallel subagents)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Step 3 - Extract entities and relationships]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_graphify
+#graphify/document #graphify/EXTRACTED #community/Community_351

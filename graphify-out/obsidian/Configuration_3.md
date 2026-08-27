@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md"
+source_file: "docs/api/integration-guide.md"
 type: "document"
-community: "Openclaw Write Requirements (architecture)"
-location: "L495"
+community: "Community 657"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Openclaw_Write_Requirements_architecture
+  - community/Community_657
 ---
 
-# Configuration:
+# Configuration
 
 ## Connections
-- [[Recommended Configuration for Your Use Case]] - `contains` [EXTRACTED]
+- [[OpenClaw Integration (Primary Target)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Openclaw_Write_Requirements_architecture
+#graphify/document #graphify/EXTRACTED #community/Community_657

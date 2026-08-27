@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-devsecops/SKILL.md"
 type: "document"
-community: "Skill (i-devsecops)"
+community: "Community 1423"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-devsecops
+  - community/Community_1423
 ---
 
 # Skill: devsecops
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SKILL_19]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-devsecops
+#graphify/document #graphify/EXTRACTED #community/Community_1423

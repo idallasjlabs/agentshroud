@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-mm/SKILL.md"
 type: "document"
-community: "Skill (i-mm)"
+community: "Community 289"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-mm
+  - community/Community_289
 ---
 
 # Skill: Mindmap Architect (MM)
@@ -27,4 +27,4 @@ tags:
 - [[When to Use Mindmaps vs Other Formats]] - `contains` [EXTRACTED]
 - [[XMind Generation via MCP]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-mm
+#graphify/document #graphify/EXTRACTED #community/Community_289

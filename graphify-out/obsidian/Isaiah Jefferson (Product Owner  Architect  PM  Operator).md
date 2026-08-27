@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-21-team-structure.svg"
 type: "concept"
-community: "Diagram 21 Team Structure (images)"
+community: "Community 907"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Diagram_21_Team_Structure_images
+  - community/Community_907
 ---
 
 # Isaiah Jefferson (Product Owner / Architect / PM / Operator)
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud Bot (@agentshroud_bot) — Autonomous Agent (Prod)]] - `calls` [EXTRACTED]
 - [[Claude Code (claude-sonnet-4-6) — Lead Engineer  Primary Developer]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Diagram_21_Team_Structure_images
+#graphify/concept #graphify/EXTRACTED #community/Community_907

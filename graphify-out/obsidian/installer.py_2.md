@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Web & Dashboard/installer.py.md"
 type: "document"
-community: "Installer.py (Web & Dashboard)"
+community: "Community 1072"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Installerpy_Web__Dashboard
+  - community/Community_1072
 ---
 
 # installer.py
@@ -19,4 +19,4 @@ tags:
 - [[When Used]] - `contains` [EXTRACTED]
 - [[installer.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Installerpy_Web__Dashboard
+#graphify/document #graphify/EXTRACTED #community/Community_1072

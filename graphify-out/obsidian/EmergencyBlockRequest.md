@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "Router (soc)"
+community: "Community 18"
 location: "L531"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Router_soc
+  - community/Community_18
 ---
 
 # EmergencyBlockRequest
@@ -23,4 +23,4 @@ tags:
 - [[emergency_block_egress()]] - `references` [EXTRACTED]
 - [[router.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Router_soc
+#graphify/code #graphify/INFERRED #community/Community_18

@@ -1,20 +1,19 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: "Anthropic Openai Translator"
+community: "Community 126"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Anthropic_Openai_Translator
+  - community/Community_126
 ---
 
 # llm_proxy.py
 
 ## Connections
-- [[AGENTS_1]] - `conceptually_related_to` [INFERRED]
+- [[AGENTS_2]] - `conceptually_related_to` [INFERRED]
 - [[ANTHROPIC_BASE_URL]] - `references` [INFERRED]
-- [[CONTINUE-2026-08-17]] - `references` [EXTRACTED]
 - [[LLMProxy]] - `contains` [EXTRACTED]
 - [[anthropic_to_openai_request()]] - `imports` [EXTRACTED]
 - [[anthropic_to_openai_response()]] - `imports` [EXTRACTED]
@@ -36,4 +35,4 @@ tags:
 - [[test_llm_proxy_local_parity.py]] - `imports_from` [EXTRACTED]
 - [[translate_openai_sse_to_anthropic()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Anthropic_Openai_Translator
+#graphify/code #graphify/EXTRACTED #community/Community_126

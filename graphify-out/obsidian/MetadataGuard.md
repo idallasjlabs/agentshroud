@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/metadata_guard.py"
 type: "code"
-community: "OAuth & Metadata Guard"
+community: "Community 14"
 location: "L36"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/OAuth__Metadata_Guard
+  - community/Community_14
 ---
 
 # MetadataGuard
@@ -67,4 +67,4 @@ tags:
 - [[test_metadata_guard.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/OAuth__Metadata_Guard
+#graphify/code #graphify/INFERRED #community/Community_14

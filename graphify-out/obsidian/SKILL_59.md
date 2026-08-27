@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-tw/SKILL.md"
 type: "document"
-community: "Skill (i-tw)"
+community: "Community 318"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-tw
+  - community/Community_318
 ---
 
 # SKILL.md
@@ -21,4 +21,4 @@ tags:
 - [[INFO Extracted 1,204 records → s3my-bucketlanding...]] - `contains` [EXTRACTED]
 - [[→ {site site1, test_mode True, output_prefix _testsite1}]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-tw
+#graphify/document #graphify/EXTRACTED #community/Community_318

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "Performance"
+community: "Community 1"
 location: "L92"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Performance
+  - community/Community_1
 ---
 
 # TestPromptGuardPerformance
@@ -25,4 +25,4 @@ tags:
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_performance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Performance
+#graphify/code #graphify/INFERRED #community/Community_1

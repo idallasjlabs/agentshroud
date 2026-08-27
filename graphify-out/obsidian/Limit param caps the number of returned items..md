@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_egress_endpoints.py"
 type: "rationale"
-community: "Soc Egress Endpoints"
+community: "Community 374"
 location: "L581"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Soc_Egress_Endpoints
+  - community/Community_374
 ---
 
 # Limit param caps the number of returned items.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_soc_scanners_recent_limit()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Soc_Egress_Endpoints
+#graphify/rationale #graphify/EXTRACTED #community/Community_374

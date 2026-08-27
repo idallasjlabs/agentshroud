@@ -1,13 +1,13 @@
 ---
 source_file: "gateway/requirements.txt"
 type: "document"
-community: "Requirements (gateway)"
+community: "Community 1638"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Requirements_gateway
+  - community/Community_1638
 ---
 
 # Gateway Python Requirements
 
-#graphify/document #graphify/EXTRACTED #community/Requirements_gateway
+#graphify/document #graphify/EXTRACTED #community/Community_1638

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Runtime/apple_engine.py.md"
 type: "document"
-community: "Apple Engine.py (Runtime)"
+community: "Community 582"
 location: "L29"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Apple_Enginepy_Runtime
+  - community/Community_582
 ---
 
 # Function Details
@@ -21,4 +21,4 @@ tags:
 - [[AppleContainerEngine.run(image, name, , ports, volumes, env, privileged, caps, seccomp, detach, ...)]] - `contains` [EXTRACTED]
 - [[apple_engine.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Apple_Enginepy_Runtime
+#graphify/document #graphify/EXTRACTED #community/Community_582

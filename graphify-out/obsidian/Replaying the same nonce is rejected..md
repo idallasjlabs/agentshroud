@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_security.py"
 type: "rationale"
-community: "Session Security"
+community: "Community 1585"
 location: "L166"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Session_Security
+  - community/Community_1585
 ---
 
 # Replaying the same nonce is rejected.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_nonce_replay_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Session_Security
+#graphify/rationale #graphify/EXTRACTED #community/Community_1585

@@ -1,17 +1,18 @@
 ---
 source_file: "docs/operations/updating.md"
 type: "document"
-community: "Updating (operations)"
+community: "Community 531"
 location: "L82"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Updating_operations
+  - community/Community_531
 ---
 
 # Checking the Changelog
 
 ## Connections
 - [[Update AgentShroud]] - `contains` [EXTRACTED]
+- [[Updating AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Updating_operations
+#graphify/document #graphify/EXTRACTED #community/Community_531

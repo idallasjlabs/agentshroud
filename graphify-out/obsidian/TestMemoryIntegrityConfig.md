@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "Memory Lifecycle & Integrity"
+community: "Community 584"
 location: "L32"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Memory_Lifecycle__Integrity
+  - community/Community_584
 ---
 
 # TestMemoryIntegrityConfig
@@ -25,4 +25,4 @@ tags:
 - [[Test memory integrity configuration.]] - `rationale_for` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Memory_Lifecycle__Integrity
+#graphify/code #graphify/INFERRED #community/Community_584

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_config.py"
 type: "code"
-community: "Mcp Permissions"
+community: "Community 179"
 location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Mcp_Permissions
+  - community/Community_179
 ---
 
 # Any
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.from_dict()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Mcp_Permissions
+#graphify/code #graphify/EXTRACTED #community/Community_179

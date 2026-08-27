@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/slack/SKILL.md"
 type: "document"
-community: "Skill (slack)"
+community: "Community 546"
 location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_slack
+  - community/Community_546
 ---
 
 # Action groups
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Actions_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_slack
+#graphify/document #graphify/EXTRACTED #community/Community_546

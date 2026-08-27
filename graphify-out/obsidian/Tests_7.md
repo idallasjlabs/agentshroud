@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Community 455"
 location: "L191"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Community_455
 ---
 
 # Tests
@@ -15,4 +15,4 @@ tags:
 - [[P4 Wire MCP Proxy]] - `contains` [EXTRACTED]
 - [[P5 Wire SecurityPipeline to forward]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Community_455

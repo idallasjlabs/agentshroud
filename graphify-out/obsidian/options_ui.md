@@ -1,12 +1,12 @@
 ---
 source_file: "browser-extension/manifest.json"
 type: "code"
-community: "Manifest (browser-extension)"
+community: "Community 410"
 location: "L15"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Manifest_browser-extension
+  - community/Community_410
 ---
 
 # options_ui
@@ -16,4 +16,4 @@ tags:
 - [[open_in_tab]] - `contains` [EXTRACTED]
 - [[page]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Manifest_browser-extension
+#graphify/code #graphify/EXTRACTED #community/Community_410

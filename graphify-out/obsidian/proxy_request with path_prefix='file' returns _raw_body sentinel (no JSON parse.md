@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Telegram Proxy Inbound"
+community: "Community 543"
 location: "L8658"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Inbound
+  - community/Community_543
 ---
 
 # proxy_request with path_prefix='file/' returns _raw_body sentinel (no JSON parse
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_proxy_request_file_prefix_returns_binary_sentinel()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Inbound
+#graphify/rationale #graphify/EXTRACTED #community/Community_543

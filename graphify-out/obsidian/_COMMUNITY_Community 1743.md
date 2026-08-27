@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[ota.c (self-update over HTTPS)]] - code - firmware/voice-terminal/main/ota.c
+- [[Native CLAUDE.md Integration]] - concept - docker/config/openclaw/skills/graphify/references/hooks.md
 
 ## Live Query (requires Dataview plugin)
 

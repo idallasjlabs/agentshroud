@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md"
 type: "document"
-community: "Development Workflow Read Only (security)"
+community: "Community 185"
 location: "L98"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Development_Workflow_Read_Only_security
+  - community/Community_185
 ---
 
 # Step 1: Add Feature (read_only: false)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Development Workflow_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Development_Workflow_Read_Only_security
+#graphify/document #graphify/EXTRACTED #community/Community_185

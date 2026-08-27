@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[scan.sh]] - code - docker/scripts/scan.sh
-- [[scan.sh script]] - code - docker/scripts/scan.sh
+- [[ws_client.c (Voice Gateway WebSocket client)]] - code - firmware/voice-terminal/main/ws_client.c
+- [[ws_client.h (WS client public API + callback typedefs)]] - code - firmware/voice-terminal/main/ws_client.h
 
 ## Live Query (requires Dataview plugin)
 

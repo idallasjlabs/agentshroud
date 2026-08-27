@@ -1,12 +1,12 @@
 ---
 source_file: "docs/ssh-configuration.md"
 type: "document"
-community: "Ssh Configuration (docs)"
+community: "Community 372"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Ssh_Configuration_docs
+  - community/Community_372
 ---
 
 # ssh-configuration.md
@@ -20,4 +20,4 @@ tags:
 - [[SSH Configuration Guide]] - `contains` [EXTRACTED]
 - [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Ssh_Configuration_docs
+#graphify/document #graphify/EXTRACTED #community/Community_372

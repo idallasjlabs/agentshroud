@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "code"
-community: "Server (voice_gateway)"
+community: "Community 115"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Server_voice_gateway
+  - community/Community_115
 ---
 
 # server.py
@@ -42,4 +42,4 @@ tags:
 - [[tts.py]] - `imports_from` [EXTRACTED]
 - [[voice_endpoint()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Server_voice_gateway
+#graphify/code #graphify/EXTRACTED #community/Community_115

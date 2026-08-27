@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/himalaya/SKILL.md"
 type: "document"
-community: "Skill (himalaya)"
+community: "Community 473"
 location: "L187"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_himalaya
+  - community/Community_473
 ---
 
 # Manage Flags
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Common Operations]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_himalaya
+#graphify/document #graphify/EXTRACTED #community/Community_473

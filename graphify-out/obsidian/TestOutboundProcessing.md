@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_governance.py"
 type: "code"
-community: "A2a Governance (security)"
+community: "Community 44"
 location: "L108"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/A2a_Governance_security
+  - community/Community_44
 ---
 
 # TestOutboundProcessing
@@ -22,4 +22,4 @@ tags:
 - [[A2APeer]] - `uses` [INFERRED]
 - [[test_a2a_governance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/A2a_Governance_security
+#graphify/code #graphify/INFERRED #community/Community_44

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/OPENCLAW_SETUP.md"
 type: "document"
-community: "Openclaw Setup (setup)"
+community: "Community 214"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Openclaw_Setup_setup
+  - community/Community_214
 ---
 
 # OpenClaw Setup Guide - agentshroud.ai Bot
@@ -21,8 +21,8 @@ tags:
 - [[OpenClaw Features Now Available]] - `contains` [EXTRACTED]
 - [[Quick Start_2]] - `contains` [EXTRACTED]
 - [[Security Notes_2]] - `contains` [EXTRACTED]
-- [[Troubleshooting_28]] - `contains` [EXTRACTED]
+- [[Troubleshooting_29]] - `contains` [EXTRACTED]
 - [[Using OpenClaw]] - `contains` [EXTRACTED]
 - [[What Changed]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Openclaw_Setup_setup
+#graphify/document #graphify/EXTRACTED #community/Community_214

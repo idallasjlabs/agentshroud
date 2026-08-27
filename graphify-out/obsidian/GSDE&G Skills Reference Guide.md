@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md"
 type: "document"
-community: "Skill (i-sec-defense)"
+community: "Community 415"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-sec-defense
+  - community/Community_415
 ---
 
 # GSDE&G Skills Reference Guide
@@ -30,4 +30,4 @@ tags:
 - [[i-socrates README (Dialogue Architect)]] - `references` [EXTRACTED]
 - [[i-socrates SKILL (Dialogue Architect, podcast pipeline)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-sec-defense
+#graphify/document #graphify/EXTRACTED #community/Community_415

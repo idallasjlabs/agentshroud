@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md"
 type: "concept"
-community: "Enforcement Audit V0.7.0 (reviews)"
+community: "Community 1138"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Enforcement_Audit_V070_reviews
+  - community/Community_1138
 ---
 
 # XML/Function-Call Leak Filter
@@ -16,4 +16,4 @@ tags:
 - [[AgentShroud v0.7.0 Enforcement Audit Results]] - `references` [EXTRACTED]
 - [[enforcement-audit-script.py (P0P1P2 module smoke test)]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Enforcement_Audit_V070_reviews
+#graphify/concept #graphify/EXTRACTED #community/Community_1138

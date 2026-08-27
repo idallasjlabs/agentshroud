@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "Slack Proxy Coverage"
+community: "Community 1137"
 location: "L242"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Slack_Proxy_Coverage
+  - community/Community_1137
 ---
 
 # Create a mock security pipeline.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.mock_pipeline()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Slack_Proxy_Coverage
+#graphify/rationale #graphify/EXTRACTED #community/Community_1137

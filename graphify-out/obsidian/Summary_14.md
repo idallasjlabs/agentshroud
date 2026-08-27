@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0.md"
+source_file: "CHANGELOG.md"
 type: "document"
-community: "Blue Team Assessment V0.8.0 (v0.8)"
-location: "L74"
+community: "Community 1084"
+location: "L668"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Blue_Team_Assessment_V080_v08
+  - community/Community_1084
 ---
 
 # Summary
 
 ## Connections
-- [[AgentShroud v0.8.0 — Blue Team Security Assessment]] - `contains` [EXTRACTED]
+- [[0.9.0 — featv0.9.0-soc-team-collab — Sentinel (2026-03-18)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Blue_Team_Assessment_V080_v08
+#graphify/document #graphify/EXTRACTED #community/Community_1084

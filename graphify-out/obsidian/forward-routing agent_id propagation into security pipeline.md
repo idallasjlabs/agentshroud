@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "Forward Routing"
+community: "Community 167"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Forward_Routing
+  - community/Community_167
 ---
 
 # forward-routing agent_id propagation into security pipeline
@@ -14,4 +14,4 @@ tags:
 - [[TrustManager_1]] - `calls` [INFERRED]
 - [[test_forward_routing.py]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Forward_Routing
+#graphify/code #graphify/INFERRED #community/Community_167

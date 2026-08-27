@@ -1,12 +1,12 @@
 ---
 source_file: "docs/diagrams/04-security.md"
 type: "document"
-community: "04 Security (diagrams)"
+community: "Community 745"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/04_Security_diagrams
+  - community/Community_745
 ---
 
 # 04-security.md
@@ -18,4 +18,4 @@ tags:
 - [[README_120]] - `references` [EXTRACTED]
 - [[Trust Boundary Diagram]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/04_Security_diagrams
+#graphify/document #graphify/EXTRACTED #community/Community_745

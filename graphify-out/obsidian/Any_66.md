@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/event_adapter.py"
 type: "code"
-community: "Event Adapter (soc)"
+community: "Community 501"
 location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Event_Adapter_soc
+  - community/Community_501
 ---
 
 # Any
@@ -22,4 +22,4 @@ tags:
 - [[from_egress_attempt()]] - `references` [EXTRACTED]
 - [[from_pipeline_result()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Event_Adapter_soc
+#graphify/code #graphify/EXTRACTED #community/Community_501

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md"
+source_file: "CHANGELOG.md"
 type: "document"
-community: "Blue Team Assessment V0.8.0 (v0.8)"
-location: "L141"
+community: "Community 646"
+location: "L554"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Blue_Team_Assessment_V080_v08
+  - community/Community_646
 ---
 
 # Summary
 
 ## Connections
-- [[AgentShroud v0.8.0 — Blue Team Security Assessment (Final)]] - `contains` [EXTRACTED]
+- [[1.1.0 — feat-v1.4.0-shroud-another-bot — Hermes (2026-05-29)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Blue_Team_Assessment_V080_v08
+#graphify/document #graphify/EXTRACTED #community/Community_646

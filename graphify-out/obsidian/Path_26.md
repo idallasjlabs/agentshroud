@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "Config Validation & Router"
+community: "Community 345"
 location: "L17"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Config_Validation__Router
+  - community/Community_345
 ---
 
 # Path
@@ -16,4 +16,4 @@ tags:
 - [[RouterConfig]] - `uses` [INFERRED]
 - [[_parse_env_file()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Config_Validation__Router
+#graphify/code #graphify/INFERRED #community/Community_345

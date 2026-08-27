@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/wakeword.c"
 type: "code"
-community: "Wakeword (main)"
-location: "L426"
+community: "Community 375"
+location: "L445"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Wakeword_main
+  - community/Community_375
 ---
 
 # wakeword_ptt_press()
@@ -20,4 +20,4 @@ tags:
 - [[test_playback_state.c (host-native unit tests, SCRUM-59)]] - `calls` [EXTRACTED]
 - [[wakeword.c]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Wakeword_main
+#graphify/code #graphify/INFERRED #community/Community_375

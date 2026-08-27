@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "rationale"
-community: "Context Integrity"
+community: "Community 116"
 location: "L55"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Context_Integrity
+  - community/Community_116
 ---
 
 # HMAC-SHA256 fingerprint for a registered system prompt.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SystemPromptFingerprint]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Context_Integrity
+#graphify/rationale #graphify/EXTRACTED #community/Community_116

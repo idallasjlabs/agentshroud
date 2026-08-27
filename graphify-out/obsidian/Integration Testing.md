@@ -1,12 +1,12 @@
 ---
 source_file: "docs/api/integration-guide.md"
 type: "document"
-community: "Openscap (05 - Dependencies)"
+community: "Community 657"
 location: "L126"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Openscap_05_-_Dependencies
+  - community/Community_657
 ---
 
 # Integration Testing
@@ -16,4 +16,4 @@ tags:
 - [[OpenSCAP]] - `contains` [EXTRACTED]
 - [[agent_isolation.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Openscap_05_-_Dependencies
+#graphify/document #graphify/EXTRACTED #community/Community_657

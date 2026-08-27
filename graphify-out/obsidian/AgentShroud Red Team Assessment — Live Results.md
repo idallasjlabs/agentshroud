@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/live-assessment-results.md"
 type: "document"
-community: "Live Assessment Results (redteam)"
+community: "Community 724"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Live_Assessment_Results_redteam
+  - community/Community_724
 ---
 
 # AgentShroud Red Team Assessment — Live Results
@@ -17,4 +17,4 @@ tags:
 - [[v0.6.0 Baseline Results]] - `contains` [EXTRACTED]
 - [[v0.7.0 Remediation (In Progress)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Live_Assessment_Results_redteam
+#graphify/document #graphify/EXTRACTED #community/Community_724

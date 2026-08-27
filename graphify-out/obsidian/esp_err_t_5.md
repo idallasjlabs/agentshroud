@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/test/test_playback_state/stubs/bsp/esp-bsp.h"
 type: "code"
-community: "Esp Bsp (bsp)"
+community: "Community 1308"
 location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Esp_Bsp_bsp
+  - community/Community_1308
 ---
 
 # esp_err_t
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[bsp_iot_button_create()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Esp_Bsp_bsp
+#graphify/code #graphify/EXTRACTED #community/Community_1308

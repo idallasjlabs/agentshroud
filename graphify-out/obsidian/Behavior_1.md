@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md"
 type: "document"
-community: "Agentshroud.yaml (03 - Configuration)"
+community: "Community 251"
 location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Agentshroudyaml_03_-_Configuration
+  - community/Community_251
 ---
 
 # Behavior
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AGENTSHROUD_MODE_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Agentshroudyaml_03_-_Configuration
+#graphify/document #graphify/EXTRACTED #community/Community_251

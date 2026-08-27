@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/01-enforce-by-default.md"
 type: "document"
-community: "01 Enforce By Default (redteam)"
+community: "Community 680"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/01_Enforce_By_Default_redteam
+  - community/Community_680
 ---
 
 # Flip core security modules from monitor to enforce mode
@@ -21,4 +21,4 @@ tags:
 - [[Severity_4]] - `contains` [EXTRACTED]
 - [[Verification_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/01_Enforce_By_Default_redteam
+#graphify/document #graphify/EXTRACTED #community/Community_680

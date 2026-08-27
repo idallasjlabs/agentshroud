@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/package.json"
 type: "document"
-community: "Package (i-browser)"
+community: "Community 1664"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Package_i-browser
+  - community/Community_1664
 ---
 
 # browser-fetch package.json
 
-#graphify/document #graphify/EXTRACTED #community/Package_i-browser
+#graphify/document #graphify/EXTRACTED #community/Community_1664

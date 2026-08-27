@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/IDENTITY.md"
 type: "document"
-community: "Identity (architecture)"
+community: "Community 831"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Identity_architecture
+  - community/Community_831
 ---
 
 # Identity Reference - AgentShroud System
@@ -20,4 +20,4 @@ tags:
 - [[🔐 Security]] - `contains` [EXTRACTED]
 - [[🤖 Your AI Bot]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Identity_architecture
+#graphify/document #graphify/EXTRACTED #community/Community_831

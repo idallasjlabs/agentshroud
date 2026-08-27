@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_html_parse_mode_removed_for_redaction_placeholders()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Redaction placeholder tokens should be HTML-escaped, not strip         parse_mod]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[run-tests-batched.sh]] - code - scripts/run-tests-batched.sh
+- [[run-tests-batched.sh script]] - code - scripts/run-tests-batched.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -17,9 +17,3 @@ members: 2
 TABLE source_file, type FROM #community/Community_1514
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 3 edges to [[_COMMUNITY_Gateway Test Suite]]
-
-## Top bridge nodes
-- [[.test_html_parse_mode_removed_for_redaction_placeholders()]] - degree 4, connects to 1 community

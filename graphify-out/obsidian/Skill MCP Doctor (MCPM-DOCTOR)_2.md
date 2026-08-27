@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md"
 type: "document"
-community: "Skill (i-mcpm-doctor)"
+community: "Community 468"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-mcpm-doctor
+  - community/Community_468
 ---
 
 # Skill: MCP Doctor (MCPM-DOCTOR)
@@ -21,4 +21,4 @@ tags:
 - [[SKILL_160]] - `contains` [EXTRACTED]
 - [[When to Invoke_8]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-mcpm-doctor
+#graphify/document #graphify/EXTRACTED #community/Community_468

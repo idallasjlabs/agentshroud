@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "Privilege Separation & File Sandbox"
+community: "Community 14"
 location: "L482"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Privilege_Separation__File_Sandbox
+  - community/Community_14
 ---
 
 # TestFileSandbox
@@ -68,4 +68,4 @@ tags:
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_audit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Privilege_Separation__File_Sandbox
+#graphify/code #graphify/INFERRED #community/Community_14

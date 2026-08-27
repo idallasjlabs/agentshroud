@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/http_proxy.py"
 type: "rationale"
-community: "Agentshroud.yaml (03 - Configuration)"
+community: "Community 30"
 location: "L49"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Agentshroudyaml_03_-_Configuration
+  - community/Community_30
 ---
 
 # # NOTE: api.telegram.org is intentionally NOT listed here.  The bot is
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[http_proxy.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Agentshroudyaml_03_-_Configuration
+#graphify/rationale #graphify/EXTRACTED #community/Community_30

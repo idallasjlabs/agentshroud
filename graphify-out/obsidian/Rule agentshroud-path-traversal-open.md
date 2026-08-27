@@ -1,11 +1,11 @@
 ---
 source_file: ".semgrep.yml"
 type: "concept"
-community: "Privilege Separation & File Sandbox"
+community: "Community 65"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Privilege_Separation__File_Sandbox
+  - community/Community_65
 ---
 
 # Rule: agentshroud-path-traversal-open
@@ -15,4 +15,4 @@ tags:
 - [[file_sandbox.py]] - `references` [EXTRACTED]
 - [[path_isolation.py]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Privilege_Separation__File_Sandbox
+#graphify/concept #graphify/EXTRACTED #community/Community_65

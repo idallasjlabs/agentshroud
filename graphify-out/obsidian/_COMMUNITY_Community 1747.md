@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Obsidian appearance.json (empty)]] - document - docs/vault/.obsidian/appearance.json
+- [[LLM writes its own Whisper domain-hint prompt]] - rationale - docker/config/hermes/skills/graphify/references/transcribe.md
 
 ## Live Query (requires Dataview plugin)
 

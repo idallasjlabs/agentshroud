@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "Browse (scripts)"
+community: "Community 73"
 location: "L426"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Browse_scripts
+  - community/Community_73
 ---
 
 # SecurityError
@@ -17,7 +17,7 @@ tags:
 - [[.fill_field()]] - `calls` [EXTRACTED]
 - [[.navigate()]] - `calls` [EXTRACTED]
 - [[Exception]] - `inherits` [EXTRACTED]
-- [[Raised when security policy is violated_3]] - `rationale_for` [EXTRACTED]
+- [[Raised when security policy is violated]] - `rationale_for` [EXTRACTED]
 - [[browse.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Browse_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_73

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_falco_watcher.py"
 type: "code"
-community: "Falco Monitor (security)"
+community: "Community 1131"
 location: "L136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Falco_Monitor_security
+  - community/Community_1131
 ---
 
 # test_stop_halts_run_loop()
@@ -15,4 +15,4 @@ tags:
 - [[FalcoAlertWatcher]] - `calls` [EXTRACTED]
 - [[test_falco_watcher.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Falco_Monitor_security
+#graphify/code #graphify/EXTRACTED #community/Community_1131

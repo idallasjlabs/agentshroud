@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mfa_guard.py"
 type: "code"
-community: "Mfa Guard"
+community: "Community 24"
 location: "L304"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Mfa_Guard
+  - community/Community_24
 ---
 
 # ApprovalQueue
@@ -23,4 +23,4 @@ tags:
 - [[_queue()]] - `references` [EXTRACTED]
 - [[_submit_high_risk()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Mfa_Guard
+#graphify/code #graphify/INFERRED #community/Community_24

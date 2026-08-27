@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/SECURITY-POLICY-FINAL.md"
 type: "rationale"
-community: "Development Workflow Read Only (security)"
+community: "Community 548"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Development_Workflow_Read_Only_security
+  - community/Community_548
 ---
 
 # Ultra-Conservative Credential Display Policy
@@ -16,4 +16,4 @@ tags:
 - [[SECURITY-POLICY-FINAL]] - `references` [EXTRACTED]
 - [[SECURITY_VALUE_PROPOSITION]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Development_Workflow_Read_Only_security
+#graphify/rationale #graphify/EXTRACTED #community/Community_548

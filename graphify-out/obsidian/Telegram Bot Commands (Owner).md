@@ -1,12 +1,12 @@
 ---
 source_file: "CHEATSHEET.md"
 type: "document"
-community: "Cheatsheet"
+community: "Community 434"
 location: "L388"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Cheatsheet
+  - community/Community_434
 ---
 
 # Telegram Bot Commands (Owner)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Operations Cheat Sheet]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Cheatsheet
+#graphify/document #graphify/EXTRACTED #community/Community_434

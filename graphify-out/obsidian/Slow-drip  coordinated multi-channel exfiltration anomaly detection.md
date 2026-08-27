@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_egress_monitor.py"
 type: "concept"
-community: "RBAC & Ingest Middleware"
+community: "Community 6"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/RBAC__Ingest_Middleware
+  - community/Community_6
 ---
 
 # Slow-drip / coordinated multi-channel exfiltration anomaly detection
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[EgressMonitor]] - `rationale_for` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/RBAC__Ingest_Middleware
+#graphify/concept #graphify/EXTRACTED #community/Community_6

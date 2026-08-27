@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_file_sandbox.py"
 type: "code"
-community: "Privilege Separation & File Sandbox"
+community: "Community 65"
 location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Privilege_Separation__File_Sandbox
+  - community/Community_65
 ---
 
 # strict_sandbox()
@@ -15,4 +15,4 @@ tags:
 - [[FileSandbox]] - `calls` [EXTRACTED]
 - [[test_file_sandbox.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Privilege_Separation__File_Sandbox
+#graphify/code #graphify/EXTRACTED #community/Community_65

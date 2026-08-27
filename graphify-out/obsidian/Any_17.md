@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_inspector.py"
 type: "code"
-community: "Mcp Inspector (proxy)"
+community: "Community 67"
 location: "L140"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Mcp_Inspector_proxy
+  - community/Community_67
 ---
 
 # Any
@@ -17,4 +17,4 @@ tags:
 - [[.inspect_tool_call()]] - `references` [EXTRACTED]
 - [[.inspect_tool_result()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Mcp_Inspector_proxy
+#graphify/code #graphify/EXTRACTED #community/Community_67

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_docs_accuracy.py"
 type: "rationale"
-community: "Docs Accuracy"
+community: "Community 57"
 location: "L173"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Docs_Accuracy
+  - community/Community_57
 ---
 
 # The endpoint's P1 section must be generated from ALL_MODULE_ATTRS,         not a
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_manage_modules_endpoint_uses_the_same_registry()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Docs_Accuracy
+#graphify/rationale #graphify/EXTRACTED #community/Community_57

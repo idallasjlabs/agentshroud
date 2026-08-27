@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "Soc Services Coverage"
+community: "Community 486"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Soc_Services_Coverage
+  - community/Community_486
 ---
 
 # PermissionError
@@ -18,4 +18,4 @@ tags:
 - [[.test_running_via_proc_scan()_2]] - `calls` [INFERRED]
 - [[GroupAccessDenied]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Soc_Services_Coverage
+#graphify/code #graphify/INFERRED #community/Community_486

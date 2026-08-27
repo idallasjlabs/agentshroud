@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-22-dependency-graph.svg"
 type: "concept"
-community: "Diagram 22 Dependency Graph (images)"
+community: "Community 1106"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Diagram_22_Dependency_Graph_images
+  - community/Community_1106
 ---
 
 # docker-agentshroud image (FROM node:22-bookworm-slim)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[agentshroud-bot container (starts after gateway healthy)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Diagram_22_Dependency_Graph_images
+#graphify/concept #graphify/EXTRACTED #community/Community_1106

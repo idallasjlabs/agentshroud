@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-architecture.md"
 type: "document"
-community: "Security Architecture (security)"
+community: "Community 154"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Architecture_security
+  - community/Community_154
 ---
 
 # AgentShroud Security Architecture
@@ -37,6 +37,7 @@ tags:
 - [[PII Sanitization at Gateway Boundary]] - `references` [EXTRACTED]
 - [[Prompt Guard System (Module 25)]] - `references` [EXTRACTED]
 - [[Prompt Injection]] - `references` [EXTRACTED]
+- [[Prompt Injection Defense]] - `contains` [EXTRACTED]
 - [[Prompt Injection Detected]] - `contains` [EXTRACTED]
 - [[Quick Reference_6]] - `contains` [EXTRACTED]
 - [[Security Controls]] - `contains` [EXTRACTED]
@@ -45,4 +46,4 @@ tags:
 - [[Trust Level]] - `references` [EXTRACTED]
 - [[security-architecture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Architecture_security
+#graphify/document #graphify/EXTRACTED #community/Community_154

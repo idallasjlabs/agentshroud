@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Setup Guide (setup)"
+community: "Community 336"
 location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Guide_setup
+  - community/Community_336
 ---
 
 # System Requirements
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Prerequisites_12]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Guide_setup
+#graphify/document #graphify/EXTRACTED #community/Community_336

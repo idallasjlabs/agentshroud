@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/troubleshooting.md"
 type: "document"
-community: "Troubleshooting (runbooks)"
+community: "Community 504"
 location: "L506"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Troubleshooting_runbooks
+  - community/Community_504
 ---
 
 # Gateway: `POST /telegram-api/bot***/getUpdates -> 200 (30–32s)`
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Known Log Messages]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Troubleshooting_runbooks
+#graphify/document #graphify/EXTRACTED #community/Community_504

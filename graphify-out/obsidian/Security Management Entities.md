@@ -1,12 +1,12 @@
 ---
 source_file: "docs/data/data-dictionary.md"
 type: "document"
-community: "Data Dictionary (data)"
+community: "Community 394"
 location: "L55"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Data_Dictionary_data
+  - community/Community_394
 ---
 
 # Security Management Entities
@@ -16,4 +16,4 @@ tags:
 - [[ApprovalRequest_5]] - `contains` [EXTRACTED]
 - [[TrustLevel_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Data_Dictionary_data
+#graphify/document #graphify/EXTRACTED #community/Community_394

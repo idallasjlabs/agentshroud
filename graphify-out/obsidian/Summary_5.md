@@ -1,19 +1,17 @@
 ---
-source_file: "docs/planning/RELEASE-PLAN.md"
+source_file: "CHANGELOG.md"
 type: "document"
-community: "V0.8.0 Release Plan (v0.8)"
-location: "L434"
+community: "Community 629"
+location: "L219"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/V080_Release_Plan_v08
+  - community/Community_629
 ---
 
 # Summary
 
 ## Connections
-- [[Key Changes (2026-03-04 1216 UTC)]] - `contains` [EXTRACTED]
-- [[Key Changes (2026-04-08)]] - `contains` [EXTRACTED]
-- [[🛡️ AgentShroud Release Plan]] - `contains` [EXTRACTED]
+- [[1.3.0 Reliability (2026-07-21)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/V080_Release_Plan_v08
+#graphify/document #graphify/EXTRACTED #community/Community_629

@@ -1,17 +1,18 @@
 ---
 source_file: "docs/planning/v0.8/agentshroud-security-overview-v0.8.0.md"
 type: "document"
-community: "Release Announcement V1.0.0 (v1.0)"
+community: "Community 625"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Release_Announcement_V100_v10
+  - community/Community_625
 ---
 
 # Before & After: Security Finding Remediation
 
 ## Connections
 - [[AgentShroud Security Overview v0.8.0]] - `contains` [EXTRACTED]
+- [[AgentShroud Security Overview — v0.8.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Release_Announcement_V100_v10
+#graphify/document #graphify/EXTRACTED #community/Community_625

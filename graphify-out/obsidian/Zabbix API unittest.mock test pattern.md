@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/openclaw/skills/i-tdd/SKILL.md"
 type: "concept"
-community: "Skill (i-tdd)"
+community: "Community 1796"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Skill_i-tdd
+  - community/Community_1796
 ---
 
 # Zabbix API unittest.mock test pattern
 
-#graphify/concept #graphify/EXTRACTED #community/Skill_i-tdd
+#graphify/concept #graphify/EXTRACTED #community/Community_1796

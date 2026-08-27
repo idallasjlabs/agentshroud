@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[browse.js (Playwright browser-fetch)]] - code - docker/config/openclaw/skills/i-browser/browse.js
+- [[setup-https-proxy patchUndiciForProxy()]] - code - docker/config/openclaw/setup-https-proxy.js
 
 ## Live Query (requires Dataview plugin)
 

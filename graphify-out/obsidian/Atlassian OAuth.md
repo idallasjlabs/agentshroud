@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "Skill (i-mcpm-auth-reset)"
+community: "Community 797"
 location: "L208"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-mcpm-auth-reset
+  - community/Community_797
 ---
 
 # Atlassian OAuth
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Security Best Practices]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-mcpm-auth-reset
+#graphify/document #graphify/EXTRACTED #community/Community_797

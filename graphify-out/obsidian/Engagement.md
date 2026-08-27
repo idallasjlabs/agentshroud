@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/xurl/SKILL.md"
 type: "document"
-community: "Skill (xurl)"
+community: "Community 932"
 location: "L224"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_xurl
+  - community/Community_932
 ---
 
 # Engagement
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Command Details]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_xurl
+#graphify/document #graphify/EXTRACTED #community/Community_932

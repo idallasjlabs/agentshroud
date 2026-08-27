@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-pca/SKILL.md"
 type: "document"
-community: "Skill (i-pca)"
+community: "Community 667"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-pca
+  - community/Community_667
 ---
 
 # Skill: Pre-Change Analysis (PCA)
@@ -18,4 +18,4 @@ tags:
 - [[Role_97]] - `contains` [EXTRACTED]
 - [[SKILL_167]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-pca
+#graphify/document #graphify/EXTRACTED #community/Community_667

@@ -1,17 +1,17 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "ESP32 Firmware"
-location: "L132"
+community: "Community 1342"
+location: "L140"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ESP32_Firmware
+  - community/Community_1342
 ---
 
 # Added
 
 ## Connections
-- [[1.3.0 Reliability (2026-07-21)]] - `contains` [EXTRACTED]
+- [[1.5.1 A2A Governance (2026-08-22)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ESP32_Firmware
+#graphify/document #graphify/EXTRACTED #community/Community_1342

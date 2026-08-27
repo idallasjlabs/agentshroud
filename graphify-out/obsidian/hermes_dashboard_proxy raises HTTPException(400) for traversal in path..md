@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "rationale"
-community: "Main Endpoints"
+community: "Community 9"
 location: "L401"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Main_Endpoints
+  - community/Community_9
 ---
 
 # hermes_dashboard_proxy raises HTTPException(400) for traversal in path.
@@ -15,4 +15,4 @@ tags:
 - [[.test_proxy_returns_400_on_traversal()]] - `rationale_for` [EXTRACTED]
 - [[.test_proxy_returns_400_on_traversal_in_query()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Main_Endpoints
+#graphify/rationale #graphify/EXTRACTED #community/Community_9

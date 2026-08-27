@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_policy.py"
 type: "code"
-community: "A2a Policy"
+community: "Community 82"
 location: "L438"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2a_Policy
+  - community/Community_82
 ---
 
 # test_evaluate_accepts_a_plain_string_method_not_just_the_enum()
@@ -16,4 +16,4 @@ tags:
 - [[Real JSON-RPC payloads deliver the method as a plain string — evaluate()     mus]] - `rationale_for` [EXTRACTED]
 - [[test_a2a_policy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2a_Policy
+#graphify/code #graphify/EXTRACTED #community/Community_82

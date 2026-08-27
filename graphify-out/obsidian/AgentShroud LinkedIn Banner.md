@@ -1,13 +1,13 @@
 ---
 source_file: "branding/social/linkedin-banner-1584x396.png"
 type: "image"
-community: "Linkedin Banner 1584x396 (social)"
+community: "Community 1781"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Linkedin_Banner_1584x396_social
+  - community/Community_1781
 ---
 
 # AgentShroud LinkedIn Banner
 
-#graphify/image #graphify/EXTRACTED #community/Linkedin_Banner_1584x396_social
+#graphify/image #graphify/EXTRACTED #community/Community_1781

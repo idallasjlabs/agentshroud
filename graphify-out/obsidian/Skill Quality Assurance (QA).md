@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-qa/SKILL.md"
 type: "document"
-community: "Skill (i-qa)"
+community: "Community 431"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-qa
+  - community/Community_431
 ---
 
 # Skill: Quality Assurance (QA)
@@ -19,4 +19,4 @@ tags:
 - [[SKILL_45]] - `contains` [EXTRACTED]
 - [[Testing Hierarchy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-qa
+#graphify/document #graphify/EXTRACTED #community/Community_431

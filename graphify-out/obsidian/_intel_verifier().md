@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Api (web)"
+community: "Community 171"
 location: "L1129"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Api_web
+  - community/Community_171
 ---
 
 # _intel_verifier()
@@ -18,4 +18,4 @@ tags:
 - [[make_httpx_fetcher()]] - `calls` [EXTRACTED]
 - [[submit_competitive_intel()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Api_web
+#graphify/code #graphify/EXTRACTED #community/Community_171

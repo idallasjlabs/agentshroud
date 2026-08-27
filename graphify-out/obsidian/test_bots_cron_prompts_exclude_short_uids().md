@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cron_jobs_prompts.py"
 type: "code"
-community: "Cron Jobs Prompts"
+community: "Community 566"
 location: "L94"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Cron_Jobs_Prompts
+  - community/Community_566
 ---
 
 # test_bots_cron_prompts_exclude_short_uids()
@@ -17,4 +17,4 @@ tags:
 - [[_load_jobs()]] - `calls` [EXTRACTED]
 - [[test_cron_jobs_prompts.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Cron_Jobs_Prompts
+#graphify/code #graphify/EXTRACTED #community/Community_566

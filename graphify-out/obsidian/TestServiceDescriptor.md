@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_models.py"
 type: "code"
-community: "Soc Models"
+community: "Community 27"
 location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Soc_Models
+  - community/Community_27
 ---
 
 # TestServiceDescriptor
@@ -16,4 +16,4 @@ tags:
 - [[.test_with_resource_usage()]] - `method` [EXTRACTED]
 - [[test_soc_models.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Soc_Models
+#graphify/code #graphify/EXTRACTED #community/Community_27

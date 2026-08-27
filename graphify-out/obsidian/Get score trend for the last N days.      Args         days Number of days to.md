@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/health_report.py"
 type: "rationale"
-community: "Health Report (security)"
+community: "Community 162"
 location: "L166"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Health_Report_security
+  - community/Community_162
 ---
 
 # Get score trend for the last N days.      Args:         days: Number of days to
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_trend()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Health_Report_security
+#graphify/rationale #graphify/EXTRACTED #community/Community_162

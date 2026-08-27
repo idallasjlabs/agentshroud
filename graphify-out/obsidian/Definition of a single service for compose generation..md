@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/compose_generator.py"
 type: "rationale"
-community: "Runtime Engines"
+community: "Community 647"
 location: "L25"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Runtime_Engines
+  - community/Community_647
 ---
 
 # Definition of a single service for compose generation.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ServiceDef]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Runtime_Engines
+#graphify/rationale #graphify/EXTRACTED #community/Community_647

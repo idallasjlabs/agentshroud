@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-production/SKILL.md"
 type: "document"
-community: "Readme (i-pm)"
+community: "Community 381"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Readme_i-pm
+  - community/Community_381
 ---
 
 # Incident Response (SKILL)
@@ -14,4 +14,4 @@ tags:
 - [[Production Safety Checklist (SKILL)]] - `semantically_similar_to` [INFERRED]
 - [[incident-response]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Readme_i-pm
+#graphify/document #graphify/INFERRED #community/Community_381

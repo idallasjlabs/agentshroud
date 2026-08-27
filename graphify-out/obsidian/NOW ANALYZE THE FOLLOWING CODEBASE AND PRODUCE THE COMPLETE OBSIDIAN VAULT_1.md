@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-sav/SKILL.md"
 type: "document"
-community: "Skill (i-sav)"
+community: "Community 243"
 location: "L420"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-sav
+  - community/Community_243
 ---
 
 # NOW ANALYZE THE FOLLOWING CODEBASE AND PRODUCE THE COMPLETE OBSIDIAN VAULT:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[System Audit Vault (Obsidian)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-sav
+#graphify/document #graphify/EXTRACTED #community/Community_243

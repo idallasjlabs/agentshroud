@@ -1,20 +1,21 @@
 ---
-source_file: "docker/scripts/README.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "Readme (scripts)"
-location: "L247"
+community: "Community 189"
+location: "L246"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_scripts
+  - community/Community_189
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Missing auth for API providers]] - `contains` [EXTRACTED]
-- [[Container unhealthy]] - `contains` [EXTRACTED]
-- [[OpenClaw Management Scripts]] - `contains` [EXTRACTED]
-- [[Telegram bot not responding]] - `contains` [EXTRACTED]
+- [[Access Denied_2]] - `contains` [EXTRACTED]
+- [[Token expired (SSO)_2]] - `contains` [EXTRACTED]
+- [[Unable to locate credentials_2]] - `contains` [EXTRACTED]
+- [[MCP Not Using Profile_2]] - `contains` [EXTRACTED]
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_scripts
+#graphify/document #graphify/EXTRACTED #community/Community_189

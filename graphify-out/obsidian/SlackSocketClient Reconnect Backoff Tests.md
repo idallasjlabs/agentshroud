@@ -1,14 +1,14 @@
 ---
 source_file: "gateway/tests/test_slack_socket_client.py"
 type: "code"
-community: "Slack Socket Client"
+community: "Community 1813"
 location: "line 26"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Slack_Socket_Client
+  - community/Community_1813
 ---
 
 # SlackSocketClient Reconnect Backoff Tests
 
-#graphify/code #graphify/EXTRACTED #community/Slack_Socket_Client
+#graphify/code #graphify/EXTRACTED #community/Community_1813

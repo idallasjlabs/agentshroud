@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/agentshroud-redteam/SKILL.md"
 type: "document"
-community: "Skill (agentshroud-redteam)"
+community: "Community 492"
 location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_agentshroud-redteam
+  - community/Community_492
 ---
 
 # Attack Phases
@@ -20,4 +20,4 @@ tags:
 - [[Phase 5 Exploitation Chains_3]] - `contains` [EXTRACTED]
 - [[Phase 6 Detection Validation_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_agentshroud-redteam
+#graphify/document #graphify/EXTRACTED #community/Community_492

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/icloud/scripts/calendar.js"
 type: "code"
-community: "Calendar (scripts)"
+community: "Community 866"
 location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Calendar_scripts
+  - community/Community_866
 ---
 
 # makeRequest()
@@ -16,4 +16,4 @@ tags:
 - [[createEvent()_3]] - `calls` [EXTRACTED]
 - [[listEvents()_3]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Calendar_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_866

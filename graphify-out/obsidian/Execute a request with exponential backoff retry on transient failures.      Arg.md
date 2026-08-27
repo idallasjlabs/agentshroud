@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_retry.py"
 type: "rationale"
-community: "Egress Retry (security)"
+community: "Community 755"
 location: "L81"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Egress_Retry_security
+  - community/Community_755
 ---
 
 # Execute a request with exponential backoff retry on transient failures.      Arg
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[retry_request()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Egress_Retry_security
+#graphify/rationale #graphify/EXTRACTED #community/Community_755

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-tw/SKILL.md"
 type: "document"
-community: "Skill (i-tw)"
+community: "Community 321"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-tw
+  - community/Community_321
 ---
 
 # Skill: Technical Writer (TW)
@@ -20,4 +20,4 @@ tags:
 - [[Rules_15]] - `contains` [EXTRACTED]
 - [[SKILL_122]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-tw
+#graphify/document #graphify/EXTRACTED #community/Community_321

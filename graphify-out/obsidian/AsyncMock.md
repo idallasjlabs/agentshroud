@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Slack Proxy Coverage"
+community: "Community 109"
 location: "L8612"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Slack_Proxy_Coverage
+  - community/Community_109
 ---
 
 # AsyncMock
@@ -247,5 +247,6 @@ tags:
 - [[test_ws_dirty_close_before_initial_state_is_handled_cleanly()]] - `calls` [INFERRED]
 - [[test_ws_empty_transcript_goes_idle()]] - `calls` [INFERRED]
 - [[test_ws_pipeline_error_logs_and_recovers_to_idle()]] - `calls` [INFERRED]
+- [[test_ws_stop_during_speaking_aborts_tts()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Slack_Proxy_Coverage
+#graphify/code #graphify/INFERRED #community/Community_109

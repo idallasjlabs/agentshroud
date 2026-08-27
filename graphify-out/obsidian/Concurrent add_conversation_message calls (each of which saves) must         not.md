@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "rationale"
-community: "Session Manager"
+community: "Community 174"
 location: "L399"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Session_Manager
+  - community/Community_174
 ---
 
 # Concurrent add_conversation_message calls (each of which saves) must         not
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_concurrent_saves_do_not_lose_entries()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Session_Manager
+#graphify/rationale #graphify/EXTRACTED #community/Community_174

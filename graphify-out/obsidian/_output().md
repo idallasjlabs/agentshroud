@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/cli/main.py"
 type: "code"
-community: "Main (cli)"
+community: "Community 92"
 location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Main_cli
+  - community/Community_92
 ---
 
 # _output()
@@ -44,4 +44,4 @@ tags:
 - [[stop_service()]] - `calls` [EXTRACTED]
 - [[test_cli_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Main_cli
+#graphify/code #graphify/EXTRACTED #community/Community_92

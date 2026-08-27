@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/i-apollo/README.md"
 type: "document"
-community: "Readme (i-apollo)"
+community: "Community 1177"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-apollo
+  - community/Community_1177
 ---
 
 # Related Skills
 
 ## Connections
-- [[Apollo — Audio Systems Producer_1]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-apollo
+#graphify/document #graphify/EXTRACTED #community/Community_1177

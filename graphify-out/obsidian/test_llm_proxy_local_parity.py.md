@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "Resource Guard & Local Model Parity"
+community: "Community 7"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Resource_Guard__Local_Model_Parity
+  - community/Community_7
 ---
 
 # test_llm_proxy_local_parity.py
@@ -40,9 +40,11 @@ tags:
 - [[test_local_backend_headers_injects_bearer_token_for_omlx()]] - `contains` [EXTRACTED]
 - [[test_local_backend_headers_no_auth_for_fieldflare()]] - `contains` [EXTRACTED]
 - [[test_local_failover_base_other_gemma_models_still_route_to_lmstudio()]] - `contains` [EXTRACTED]
+- [[test_local_failover_base_other_qwen3_models_still_route_to_lmstudio()]] - `contains` [EXTRACTED]
 - [[test_local_failover_base_routes_fieldflare_gemma_before_generic_gemma()]] - `contains` [EXTRACTED]
 - [[test_local_failover_base_routes_omlx_deepseek_r1_qwen3_8b()]] - `contains` [EXTRACTED]
 - [[test_local_failover_base_routes_omlx_gemma_before_generic_gemma()]] - `contains` [EXTRACTED]
+- [[test_local_failover_base_routes_omlx_qwen3_coder_before_generic_qwen3()]] - `contains` [EXTRACTED]
 - [[test_local_mode_anthropic_tool_use_shape_passes_through()]] - `contains` [EXTRACTED]
 - [[test_local_mode_openai_tool_call_shape_passes_through()]] - `contains` [EXTRACTED]
 - [[test_local_oom_failover_disabled_does_not_retry()]] - `contains` [EXTRACTED]
@@ -60,6 +62,9 @@ tags:
 - [[test_normalize_local_model_lmstudio_replaces_colon_with_dash()]] - `contains` [EXTRACTED]
 - [[test_normalize_local_model_mlxlm_keeps_colon()]] - `contains` [EXTRACTED]
 - [[test_normalize_local_model_ollama_keeps_colon()]] - `contains` [EXTRACTED]
+- [[test_normalize_local_model_omlx_deepseek_renamed_to_real_catalog_id()]] - `contains` [EXTRACTED]
+- [[test_normalize_local_model_omlx_gemma_passes_through_unchanged()]] - `contains` [EXTRACTED]
+- [[test_normalize_local_model_omlx_unknown_model_passes_through_unchanged()]] - `contains` [EXTRACTED]
 - [[test_normalize_local_model_provider_prefix_stripped_before_normalize()]] - `contains` [EXTRACTED]
 - [[test_resource_guard.py]] - `semantically_similar_to` [INFERRED]
 - [[test_resource_guard_vram_estimate_128k_tokens_triggers_rejection()]] - `contains` [EXTRACTED]
@@ -69,4 +74,4 @@ tags:
 - [[test_stats_local_secondary_failover_succeeded_incremented()]] - `contains` [EXTRACTED]
 - [[test_vram_headroom_error_is_not_resource_warning()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Resource_Guard__Local_Model_Parity
+#graphify/code #graphify/EXTRACTED #community/Community_7

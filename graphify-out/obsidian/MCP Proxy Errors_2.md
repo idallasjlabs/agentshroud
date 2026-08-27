@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md"
 type: "document"
-community: "Mcp proxy errors (07 - Errors & Troubleshooting)"
+community: "Community 313"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mcp_proxy_errors_07_-_Errors__Troubleshooting
+  - community/Community_313
 ---
 
 # MCP Proxy Errors
@@ -20,4 +20,4 @@ tags:
 - [[MCP Proxy Wrapper Issues (Bot Side)]] - `contains` [EXTRACTED]
 - [[Related Notes_59]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mcp_proxy_errors_07_-_Errors__Troubleshooting
+#graphify/document #graphify/EXTRACTED #community/Community_313

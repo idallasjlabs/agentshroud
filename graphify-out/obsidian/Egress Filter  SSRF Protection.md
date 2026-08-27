@@ -1,11 +1,11 @@
 ---
 source_file: "docs/papers/agentshroud-whitepaper.md"
 type: "concept"
-community: "Enforcement Audit V0.7.0 (reviews)"
+community: "Community 199"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Enforcement_Audit_V070_reviews
+  - community/Community_199
 ---
 
 # Egress Filter / SSRF Protection
@@ -19,4 +19,4 @@ tags:
 - [[enforcement-audit-script.py (P0P1P2 module smoke test)]] - `implements` [EXTRACTED]
 - [[v0.8.0 Feature Interactive Egress Firewall + Observatory Mode]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Enforcement_Audit_V070_reviews
+#graphify/concept #graphify/EXTRACTED #community/Community_199

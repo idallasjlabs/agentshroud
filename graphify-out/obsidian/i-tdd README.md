@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-tdd/README.md"
 type: "document"
-community: "Readme (i-tdd)"
+community: "Community 1475"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-tdd
+  - community/Community_1475
 ---
 
 # i-tdd README.md
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[i-tdd SKILL.md (TDD Coach, Red-Green-Refactor)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-tdd
+#graphify/document #graphify/EXTRACTED #community/Community_1475

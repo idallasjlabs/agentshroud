@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_replay.py"
 type: "code"
-community: "Telegram Replay"
+community: "Community 148"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Telegram_Replay
+  - community/Community_148
 ---
 
 # test_telegram_replay.py
@@ -35,4 +35,4 @@ tags:
 - [[test_record_then_pull_returns_undelivered()]] - `contains` [EXTRACTED]
 - [[test_sqlite_failure_does_not_raise()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Telegram_Replay
+#graphify/code #graphify/EXTRACTED #community/Community_148

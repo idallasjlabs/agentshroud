@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "Killswitch Monitor & Observatory Mode"
+community: "Community 924"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Killswitch_Monitor__Observatory_Mode
+  - community/Community_924
 ---
 
 # test_observatory_mode.py
@@ -32,4 +32,4 @@ tags:
 - [[reset_env_and_task()]] - `contains` [EXTRACTED]
 - [[set_mode()_1]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Killswitch_Monitor__Observatory_Mode
+#graphify/code #graphify/EXTRACTED #community/Community_924

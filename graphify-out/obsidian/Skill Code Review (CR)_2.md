@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-cr/SKILL.md"
 type: "document"
-community: "Skill (i-cr)"
+community: "Community 1021"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-cr
+  - community/Community_1021
 ---
 
 # Skill: Code Review (CR)
@@ -19,4 +19,4 @@ tags:
 - [[Role_82]] - `contains` [EXTRACTED]
 - [[SKILL_142]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-cr
+#graphify/document #graphify/EXTRACTED #community/Community_1021

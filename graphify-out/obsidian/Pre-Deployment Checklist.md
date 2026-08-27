@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-ps/SKILL.md"
 type: "document"
-community: "Skill (i-ps)"
+community: "Community 408"
 location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-ps
+  - community/Community_408
 ---
 
 # Pre-Deployment Checklist
@@ -22,4 +22,4 @@ tags:
 - [[8. Service Control Commands]] - `contains` [EXTRACTED]
 - [[Skill Production Safety Checklist (PROD-SAFETY)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-ps
+#graphify/document #graphify/EXTRACTED #community/Community_408

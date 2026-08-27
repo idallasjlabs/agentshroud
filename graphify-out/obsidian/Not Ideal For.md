@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "Distributed Openclaw Node Architecture (architecture)"
+community: "Community 432"
 location: "L556"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Distributed_Openclaw_Node_Architecture_architecture
+  - community/Community_432
 ---
 
 # Not Ideal For
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Use Cases]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Distributed_Openclaw_Node_Architecture_architecture
+#graphify/document #graphify/EXTRACTED #community/Community_432

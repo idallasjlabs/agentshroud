@@ -1,11 +1,11 @@
 ---
 source_file: "docs/compliance/iec-62443-matrix.md"
 type: "concept"
-community: "Killswitch Monitor & Observatory Mode"
+community: "Community 75"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Killswitch_Monitor__Observatory_Mode
+  - community/Community_75
 ---
 
 # FR2: Use Control
@@ -20,4 +20,4 @@ tags:
 - [[rbac.py]] - `references` [EXTRACTED]
 - [[tool_acl.py]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Killswitch_Monitor__Observatory_Mode
+#graphify/concept #graphify/EXTRACTED #community/Community_75

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "Killswitch Monitor & Observatory Mode"
+community: "Community 924"
 location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Killswitch_Monitor__Observatory_Mode
+  - community/Community_924
 ---
 
 # reset_env_and_task()
@@ -15,4 +15,4 @@ tags:
 - [[Reset AGENTSHROUD_MODE and cancel any revert task between tests.]] - `rationale_for` [EXTRACTED]
 - [[test_observatory_mode.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Killswitch_Monitor__Observatory_Mode
+#graphify/code #graphify/EXTRACTED #community/Community_924

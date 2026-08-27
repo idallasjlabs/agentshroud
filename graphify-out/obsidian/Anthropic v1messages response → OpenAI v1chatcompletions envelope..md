@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/anthropic_openai_translator.py"
 type: "rationale"
-community: "Anthropic Openai Translator"
+community: "Community 117"
 location: "L292"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Anthropic_Openai_Translator
+  - community/Community_117
 ---
 
 # Anthropic /v1/messages response → OpenAI /v1/chat/completions envelope.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[anthropic_to_openai_response()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Anthropic_Openai_Translator
+#graphify/rationale #graphify/EXTRACTED #community/Community_117

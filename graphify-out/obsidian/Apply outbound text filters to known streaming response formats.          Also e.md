@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "rationale"
-community: "Llm Proxy (proxy)"
-location: "L1666"
+community: "Community 108"
+location: "L1744"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Llm_Proxy_proxy
+  - community/Community_108
 ---
 
 # Apply outbound text filters to known streaming response formats.          Also e
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._filter_streaming_event()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Llm_Proxy_proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_108

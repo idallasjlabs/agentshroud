@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md"
 type: "document"
-community: "Anthropic Base Url (04 - Environment Variables)"
+community: "Community 488"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Anthropic_Base_Url_04_-_Environment_Variables
+  - community/Community_488
 ---
 
 # ANTHROPIC_BASE_URL
@@ -21,4 +21,4 @@ tags:
 - [[Value_1]] - `contains` [EXTRACTED]
 - [[Why It's Critical]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Anthropic_Base_Url_04_-_Environment_Variables
+#graphify/document #graphify/EXTRACTED #community/Community_488

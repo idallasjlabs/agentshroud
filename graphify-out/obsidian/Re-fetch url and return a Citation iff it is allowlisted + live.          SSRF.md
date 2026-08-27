@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/citation_verifier.py"
 type: "rationale"
-community: "Intel Report (security)"
+community: "Community 171"
 location: "L143"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Intel_Report_security
+  - community/Community_171
 ---
 
 # Re-fetch *url* and return a Citation iff it is allowlisted + live.          SSRF
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._verify_url()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Intel_Report_security
+#graphify/rationale #graphify/EXTRACTED #community/Community_171

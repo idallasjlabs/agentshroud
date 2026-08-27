@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "Forward Stream"
+community: "Community 76"
 location: "L332"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Forward_Stream
+  - community/Community_76
 ---
 
 # AgentTarget
@@ -15,4 +15,4 @@ tags:
 - [[RBACConfig_1]] - `uses` [INFERRED]
 - [[_resolve_user_trust_level()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Forward_Stream
+#graphify/code #graphify/EXTRACTED #community/Community_76

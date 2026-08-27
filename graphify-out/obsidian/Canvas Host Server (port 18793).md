@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/canvas/SKILL.md"
 type: "concept"
-community: "Skill (canvas)"
+community: "Community 341"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Skill_canvas
+  - community/Community_341
 ---
 
 # Canvas Host Server (port 18793)
@@ -14,4 +14,4 @@ tags:
 - [[Node Bridge (port 18790)]] - `conceptually_related_to` [EXTRACTED]
 - [[SKILL_201]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Skill_canvas
+#graphify/concept #graphify/EXTRACTED #community/Community_341

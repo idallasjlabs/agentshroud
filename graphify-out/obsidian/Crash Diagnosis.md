@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/08 - Runbooks/Crash Recovery.md"
 type: "document"
-community: "Crash recovery (08 - Runbooks)"
+community: "Community 456"
 location: "L40"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Crash_recovery_08_-_Runbooks
+  - community/Community_456
 ---
 
 # Crash Diagnosis
@@ -17,4 +17,4 @@ tags:
 - [[Python Exception (Exit Code 1)]] - `contains` [EXTRACTED]
 - [[Segfault (Exit Code 139)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Crash_recovery_08_-_Runbooks
+#graphify/document #graphify/EXTRACTED #community/Community_456

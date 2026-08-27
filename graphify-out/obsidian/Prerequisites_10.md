@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/HERMES_SETUP.md"
 type: "document"
-community: "Hermes Setup (setup)"
+community: "Community 404"
 location: "L46"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes_Setup_setup
+  - community/Community_404
 ---
 
 # Prerequisites
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Hermes Agent — Connection Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes_Setup_setup
+#graphify/document #graphify/EXTRACTED #community/Community_404

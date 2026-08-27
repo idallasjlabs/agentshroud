@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-supply-chain.md"
 type: "document"
-community: "Secrets Usage And Collaborator (security)"
+community: "Community 833"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Secrets_Usage_And_Collaborator_security
+  - community/Community_833
 ---
 
 # security-supply-chain.md
@@ -17,4 +17,4 @@ tags:
 - [[container-policy]] - `conceptually_related_to` [INFERRED]
 - [[history-purge-plan]] - `conceptually_related_to` [AMBIGUOUS]
 
-#graphify/document #graphify/EXTRACTED #community/Secrets_Usage_And_Collaborator_security
+#graphify/document #graphify/EXTRACTED #community/Community_833

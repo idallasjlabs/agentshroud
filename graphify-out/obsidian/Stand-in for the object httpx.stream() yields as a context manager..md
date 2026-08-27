@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_citation_verifier.py"
 type: "rationale"
-community: "Intel Endpoint"
+community: "Community 113"
 location: "L317"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Intel_Endpoint
+  - community/Community_113
 ---
 
 # Stand-in for the object httpx.stream() yields as a context manager.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_FakeStreamResponse]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Intel_Endpoint
+#graphify/rationale #graphify/EXTRACTED #community/Community_113

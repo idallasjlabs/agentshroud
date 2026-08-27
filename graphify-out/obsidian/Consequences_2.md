@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/adr/ADR-003-two-network-container-isolation.md"
 type: "document"
-community: "Adr 003 Two Network (adr)"
+community: "Community 790"
 location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Adr_003_Two_Network_adr
+  - community/Community_790
 ---
 
 # Consequences
@@ -17,4 +17,4 @@ tags:
 - [[Negative Consequences_2]] - `contains` [EXTRACTED]
 - [[Positive Consequences_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Adr_003_Two_Network_adr
+#graphify/document #graphify/EXTRACTED #community/Community_790

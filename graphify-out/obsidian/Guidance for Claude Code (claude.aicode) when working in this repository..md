@@ -1,12 +1,12 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "Postmortem (ISSUE_TEMPLATE)"
+community: "Community 435"
 location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Postmortem_ISSUE_TEMPLATE
+  - community/Community_435
 ---
 
 # Guidance for Claude Code (claude.ai/code) when working in this repository.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CLAUDE]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Postmortem_ISSUE_TEMPLATE
+#graphify/document #graphify/EXTRACTED #community/Community_435

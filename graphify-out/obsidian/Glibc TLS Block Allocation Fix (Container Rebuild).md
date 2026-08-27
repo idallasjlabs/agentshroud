@@ -1,11 +1,11 @@
 ---
 source_file: "docs/runbooks/RUNBOOK.md"
 type: "rationale"
-community: "Telegram Issues (project)"
+community: "Community 205"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Issues_project
+  - community/Community_205
 ---
 
 # Glibc TLS Block Allocation Fix (Container Rebuild)
@@ -14,4 +14,4 @@ tags:
 - [[Glibc TLS Incompatibility (Trillian)]] - `conceptually_related_to` [INFERRED]
 - [[RUNBOOK]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Issues_project
+#graphify/rationale #graphify/EXTRACTED #community/Community_205

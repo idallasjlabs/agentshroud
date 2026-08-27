@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_output_canary.py"
 type: "rationale"
-community: "Output Canary"
+community: "Community 132"
 location: "L18"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Output_Canary
+  - community/Community_132
 ---
 
 # Test cases for the Output Canary System.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestOutputCanary]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Output_Canary
+#graphify/rationale #graphify/EXTRACTED #community/Community_132

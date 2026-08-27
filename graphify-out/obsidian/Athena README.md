@@ -1,16 +1,16 @@
 ---
 source_file: ".agents/skills/i-athena/README.md"
 type: "document"
-community: "Skill (i-athena)"
+community: "Community 696"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-athena
+  - community/Community_696
 ---
 
 # Athena README
 
 ## Connections
-- [[Athena — Knowledge Distiller_6]] - `references` [EXTRACTED]
+- [[Athena — Knowledge Distiller_7]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-athena
+#graphify/document #graphify/EXTRACTED #community/Community_696

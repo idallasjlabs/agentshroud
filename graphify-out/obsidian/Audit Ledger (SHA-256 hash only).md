@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-07-data-flow.svg"
 type: "concept"
-community: "Diagram 07 Data Flow (images)"
+community: "Community 409"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Diagram_07_Data_Flow_images
+  - community/Community_409
 ---
 
 # Audit Ledger (SHA-256 hash only)
@@ -19,4 +19,4 @@ tags:
 - [[TrustManager_5]] - `calls` [EXTRACTED]
 - [[ledger.db (90-day retention)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Diagram_07_Data_Flow_images
+#graphify/concept #graphify/EXTRACTED #community/Community_409

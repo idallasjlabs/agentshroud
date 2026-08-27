@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/update-bot-agents.sh"
 type: "code"
-community: "Hermes Openclaw Dev Workflow (runbooks)"
+community: "Community 627"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Hermes_Openclaw_Dev_Workflow_runbooks
+  - community/Community_627
 ---
 
 # update-bot-agents.sh
@@ -18,4 +18,4 @@ tags:
 - [[hermes-openclaw-dev-workflow]] - `references` [EXTRACTED]
 - [[update-bot-agents.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Hermes_Openclaw_Dev_Workflow_runbooks
+#graphify/code #graphify/EXTRACTED #community/Community_627

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sync-cve-registry.py"
 type: "code"
-community: "Sync Cve Registry (scripts)"
+community: "Community 112"
 location: "L111"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Sync_Cve_Registry_scripts
+  - community/Community_112
 ---
 
 # _ver_gt()
@@ -16,4 +16,4 @@ tags:
 - [[_parse_ver()]] - `calls` [EXTRACTED]
 - [[sync-cve-registry.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Sync_Cve_Registry_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_112

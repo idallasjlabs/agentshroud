@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/PREREQUISITES.md"
 type: "document"
-community: "Quick Reference (reference)"
+community: "Community 725"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Quick_Reference_reference
+  - community/Community_725
 ---
 
 # PREREQUISITES.md
@@ -17,4 +17,4 @@ tags:
 - [[Secrets Backend Auto-Detection]] - `references` [EXTRACTED]
 - [[Separation of Concerns  Isolated Bot Accounts]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Quick_Reference_reference
+#graphify/document #graphify/EXTRACTED #community/Community_725

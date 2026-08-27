@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "rationale"
-community: "Prompt Protection (security)"
+community: "Community 182"
 location: "L57"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Prompt_Protection_security
+  - community/Community_182
 ---
 
 # Initialize prompt protection system.          Args:             config: Configur
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.__init__()_110]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Prompt_Protection_security
+#graphify/rationale #graphify/EXTRACTED #community/Community_182

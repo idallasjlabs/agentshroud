@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/engine.py"
 type: "rationale"
-community: "Engine (runtime)"
+community: "Community 198"
 location: "L158"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Engine_runtime
+  - community/Community_198
 ---
 
 # Return True if the runtime is available and responsive.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.health_check()_4]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Engine_runtime
+#graphify/rationale #graphify/EXTRACTED #community/Community_198

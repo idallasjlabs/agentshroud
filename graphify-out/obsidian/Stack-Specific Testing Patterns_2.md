@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-tdd/SKILL.md"
 type: "document"
-community: "Skill (i-tdd)"
+community: "Community 709"
 location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-tdd
+  - community/Community_709
 ---
 
 # Stack-Specific Testing Patterns
@@ -19,4 +19,4 @@ tags:
 - [[Step Function Input Validation_2]] - `contains` [EXTRACTED]
 - [[Zabbix API  →  `unittest.mock`_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-tdd
+#graphify/document #graphify/EXTRACTED #community/Community_709

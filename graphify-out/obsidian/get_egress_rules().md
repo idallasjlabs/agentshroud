@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "SOC Router (Collaborator Mgmt)"
+community: "Community 19"
 location: "L335"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Router_Collaborator_Mgmt
+  - community/Community_19
 ---
 
 # get_egress_rules()
@@ -14,8 +14,7 @@ tags:
 ## Connections
 - [[Return all active egress rules preloaded permanent, user-created permanent, ses]] - `rationale_for` [EXTRACTED]
 - [[SCLCaller_1]] - `references` [EXTRACTED]
-- [[SCLCaller_3]] - `references` [EXTRACTED]
 - [[_app_state()]] - `calls` [EXTRACTED]
 - [[router.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Router_Collaborator_Mgmt
+#graphify/code #graphify/EXTRACTED #community/Community_19

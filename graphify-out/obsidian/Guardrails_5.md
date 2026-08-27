@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-release/SKILL.md"
 type: "document"
-community: "Skill (i-release)"
+community: "Community 716"
 location: "L197"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-release
+  - community/Community_716
 ---
 
 # Guardrails
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Release (i-release)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-release
+#graphify/document #graphify/EXTRACTED #community/Community_716

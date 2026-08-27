@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/resolve_model.py"
 type: "code"
-community: "Hermes Model Resolver"
-location: "L76"
+community: "Community 129"
+location: "L87"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Hermes_Model_Resolver
+  - community/Community_129
 ---
 
 # _apply_stale_alias_correction()
@@ -17,4 +17,4 @@ tags:
 - [[test_stale_qwen3_rapid_alias_corrected_to_nemotron()]] - `calls` [INFERRED]
 - [[test_unrelated_model_names_pass_through_uncorrected()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Hermes_Model_Resolver
+#graphify/code #graphify/EXTRACTED #community/Community_129

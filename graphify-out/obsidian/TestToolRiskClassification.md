@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "code"
-community: "Enhanced Approval"
+community: "Community 24"
 location: "L104"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Enhanced_Approval
+  - community/Community_24
 ---
 
 # TestToolRiskClassification
@@ -26,4 +26,4 @@ tags:
 - [[ToolRiskPolicy_1]] - `uses` [INFERRED]
 - [[test_enhanced_approval.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Enhanced_Approval
+#graphify/code #graphify/INFERRED #community/Community_24

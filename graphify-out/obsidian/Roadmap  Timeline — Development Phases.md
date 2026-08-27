@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/07-team-planning.md"
 type: "concept"
-community: "07 Team Planning (diagrams)"
+community: "Community 745"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/07_Team_Planning_diagrams
+  - community/Community_745
 ---
 
 # Roadmap / Timeline — Development Phases
@@ -14,4 +14,4 @@ tags:
 - [[07-team-planning]] - `conceptually_related_to` [EXTRACTED]
 - [[PHASE_3A_3B_IMPLEMENTATION]] - `references` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/07_Team_Planning_diagrams
+#graphify/concept #graphify/INFERRED #community/Community_745

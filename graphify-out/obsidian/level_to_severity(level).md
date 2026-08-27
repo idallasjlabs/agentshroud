@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/wazuh_client.py.md"
 type: "document"
-community: "Wazuh Client.py (Security Modules)"
+community: "Community 588"
 location: "L53"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Wazuh_Clientpy_Security_Modules
+  - community/Community_588
 ---
 
 # level_to_severity(level)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Function Details_51]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Wazuh_Clientpy_Security_Modules
+#graphify/document #graphify/EXTRACTED #community/Community_588

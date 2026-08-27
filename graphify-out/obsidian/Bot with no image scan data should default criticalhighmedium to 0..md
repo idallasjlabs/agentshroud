@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_bots.py"
 type: "rationale"
-community: "Soc Bots"
+community: "Community 39"
 location: "L735"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Soc_Bots
+  - community/Community_39
 ---
 
 # Bot with no image scan data should default critical/high/medium to 0.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_no_scan_data_defaults_zeros()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Soc_Bots
+#graphify/rationale #graphify/EXTRACTED #community/Community_39

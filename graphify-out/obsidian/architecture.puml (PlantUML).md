@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-daedalus/SKILL.md"
 type: "document"
-community: "Skill (i-daedalus)"
+community: "Community 795"
 location: "L29"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-daedalus
+  - community/Community_795
 ---
 
 # architecture.puml (PlantUML)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Output Format_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-daedalus
+#graphify/document #graphify/EXTRACTED #community/Community_795

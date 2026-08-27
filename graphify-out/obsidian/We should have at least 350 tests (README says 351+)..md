@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_docs_accuracy.py"
 type: "rationale"
-community: "Docs Accuracy"
+community: "Community 57"
 location: "L311"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Docs_Accuracy
+  - community/Community_57
 ---
 
 # We should have at least 350 tests (README says 351+).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_actual_test_count_meets_minimum()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Docs_Accuracy
+#graphify/rationale #graphify/EXTRACTED #community/Community_57

@@ -1,18 +1,17 @@
 ---
 source_file: "docker/bots/hermes/start.sh"
 type: "code"
-community: "Start (hermes)"
+community: "Community 326"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Start_hermes
+  - community/Community_326
 ---
 
 # start.sh
 
 ## Connections
-- [[CONTINUE-2026-08-17]] - `references` [EXTRACTED]
 - [[HERMES_HOME]] - `defines` [EXTRACTED]
 - [[HOME]] - `defines` [EXTRACTED]
 - [[PTB HTTPXRequest __slots__ Crash-Loop Fix Rationale]] - `conceptually_related_to` [INFERRED]
@@ -36,4 +35,4 @@ tags:
 - [[telegram_proxy.py]] - `shares_data_with` [EXTRACTED]
 - [[test_openclaw_photo.sh]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Start_hermes
+#graphify/code #graphify/EXTRACTED #community/Community_326

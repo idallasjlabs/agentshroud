@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/JavaScript/apply-patches.js.md"
 type: "document"
-community: "Apply Patches.js (JavaScript)"
+community: "Community 761"
 location: "L54"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Apply_Patchesjs_JavaScript
+  - community/Community_761
 ---
 
 # Additional Patches
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Patches Applied]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Apply_Patchesjs_JavaScript
+#graphify/document #graphify/EXTRACTED #community/Community_761

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/alert_dispatcher.py"
 type: "code"
-community: "Alert Dispatcher (security)"
+community: "Community 262"
 location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Alert_Dispatcher_security
+  - community/Community_262
 ---
 
 # Any
@@ -19,4 +19,4 @@ tags:
 - [[.get_digest()]] - `references` [EXTRACTED]
 - [[.get_stats()_12]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher_security
+#graphify/code #graphify/EXTRACTED #community/Community_262

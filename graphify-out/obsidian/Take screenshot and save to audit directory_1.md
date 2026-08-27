@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
+source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
 type: "rationale"
-community: "Browse (scripts)"
+community: "Community 137"
 location: "L281"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Browse_scripts
+  - community/Community_137
 ---
 
 # Take screenshot and save to audit directory
 
 ## Connections
-- [[._take_screenshot()_2]] - `rationale_for` [EXTRACTED]
+- [[._take_screenshot()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Browse_scripts
+#graphify/rationale #graphify/EXTRACTED #community/Community_137

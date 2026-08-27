@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/workspace/competitive-analysis.md"
 type: "document"
-community: "Competitive Analysis (workspace)"
+community: "Community 841"
 location: "L66"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Competitive_Analysis_workspace
+  - community/Community_841
 ---
 
 # REPORT STRUCTURE
@@ -18,4 +18,4 @@ tags:
 - [[SECTION 3 AUTONOMOUS AGENT ECOSYSTEM UPDATE]] - `contains` [EXTRACTED]
 - [[SECTION 4 NEXT STEPS TO STAY AHEAD]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Competitive_Analysis_workspace
+#graphify/document #graphify/EXTRACTED #community/Community_841

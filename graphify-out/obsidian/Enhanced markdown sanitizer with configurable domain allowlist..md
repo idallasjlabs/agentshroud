@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
 type: "rationale"
-community: "RBAC & Ingest Middleware"
+community: "Community 156"
 location: "L91"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBAC__Ingest_Middleware
+  - community/Community_156
 ---
 
 # Enhanced markdown sanitizer with configurable domain allowlist.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ToolResultSanitizer_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBAC__Ingest_Middleware
+#graphify/rationale #graphify/EXTRACTED #community/Community_156

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "rationale"
-community: "Prompt Guard (security)"
+community: "Community 116"
 location: "L706"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Prompt_Guard_security
+  - community/Community_116
 ---
 
 # Scan input text for prompt injection patterns.          Args:             text:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.scan()_4]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Prompt_Guard_security
+#graphify/rationale #graphify/EXTRACTED #community/Community_116

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_filter.py"
 type: "code"
-community: "Dns Filter"
+community: "Community 46"
 location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Dns_Filter
+  - community/Community_46
 ---
 
 # monitor_filter()
@@ -15,4 +15,4 @@ tags:
 - [[DNSFilter]] - `calls` [EXTRACTED]
 - [[test_dns_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Dns_Filter
+#graphify/code #graphify/EXTRACTED #community/Community_46

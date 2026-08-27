@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "rationale"
-community: "Security Regressions V1 2"
+community: "Community 26"
 location: "L530"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Regressions_V1_2
+  - community/Community_26
 ---
 
 # Session manager must reject bot_id with path traversal characters.
@@ -15,4 +15,4 @@ tags:
 - [[.test_path_traversal_rejected_for_crafted_bot_id()]] - `rationale_for` [EXTRACTED]
 - [[.test_path_traversal_rejected_for_crafted_user_id()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Regressions_V1_2
+#graphify/rationale #graphify/EXTRACTED #community/Community_26

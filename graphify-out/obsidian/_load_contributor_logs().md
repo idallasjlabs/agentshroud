@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/dashboard.py"
 type: "code"
-community: "Dashboard"
+community: "Community 0"
 location: "L85"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Dashboard
+  - community/Community_0
 ---
 
 # _load_contributor_logs()
@@ -21,4 +21,4 @@ tags:
 - [[test_dashboard.py]] - `imports` [EXTRACTED]
 - [[test_load_contributor_logs_reads_multiple_dirs_and_dedupes()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Dashboard
+#graphify/code #graphify/EXTRACTED #community/Community_0

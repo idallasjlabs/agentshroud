@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "Main Endpoints"
+community: "Community 9"
 location: "L370"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Main_Endpoints
+  - community/Community_9
 ---
 
 # TestHermesDashboardPathTraversal
@@ -23,4 +23,4 @@ tags:
 - [[hermes_dashboard_proxy must reject traversal sequences before forwarding.]] - `rationale_for` [EXTRACTED]
 - [[test_main_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Main_Endpoints
+#graphify/code #graphify/EXTRACTED #community/Community_9

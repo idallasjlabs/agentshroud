@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-data/README.md"
 type: "document"
-community: "Readme (i-data)"
+community: "Community 1152"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-data
+  - community/Community_1152
 ---
 
 # Usage
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Data Validation (DATA-VAL)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-data
+#graphify/document #graphify/EXTRACTED #community/Community_1152

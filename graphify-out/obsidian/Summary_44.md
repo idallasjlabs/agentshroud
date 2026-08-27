@@ -1,17 +1,18 @@
 ---
-source_file: "scripts/cve-registry-manual-review.md"
+source_file: "docs/vault/03 - Configuration/All Environment Variables.md"
 type: "document"
-community: "Bot Skill Config"
-location: "L14"
+community: "Community 517"
+location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Community_517
 ---
 
 # Summary
 
 ## Connections
-- [[cve-registry-manual-review]] - `contains` [EXTRACTED]
+- [[4. Environment Variables]] - `contains` [EXTRACTED]
+- [[All Environment Variables_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Community_517

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "code"
-community: "RBAC & Ingest Middleware"
+community: "Community 6"
 location: "L73"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/RBAC__Ingest_Middleware
+  - community/Community_6
 ---
 
 # MiddlewareResult
@@ -137,4 +137,4 @@ tags:
 - [[test_middleware_coverage.py]] - `imports` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/RBAC__Ingest_Middleware
+#graphify/code #graphify/INFERRED #community/Community_6

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.0/RELEASE-ANNOUNCEMENT-v1.0.0.md"
 type: "document"
-community: "Release Announcement V1.0.0 (v1.0)"
+community: "Community 365"
 location: "L148"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Release_Announcement_V100_v10
+  - community/Community_365
 ---
 
 # awesome-ai-security
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Awesome-List PR Templates]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Release_Announcement_V100_v10
+#graphify/document #graphify/EXTRACTED #community/Community_365

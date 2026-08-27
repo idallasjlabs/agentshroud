@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/state.py"
 type: "rationale"
-community: "Security Audit & Watchtower Tests"
+community: "Community 1"
 location: "L24"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Audit__Watchtower_Tests
+  - community/Community_1
 ---
 
 # Container for application-wide state
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AppState]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Community_1

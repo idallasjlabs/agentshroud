@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-data/SKILL.md"
 type: "document"
-community: "Skill (i-data)"
+community: "Community 843"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-data
+  - community/Community_843
 ---
 
 # Role
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Data Validation (DATA-VAL)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-data
+#graphify/document #graphify/EXTRACTED #community/Community_843

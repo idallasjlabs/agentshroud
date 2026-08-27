@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/pydantic.md"
 type: "document"
-community: "Pydantic (05 - Dependencies)"
+community: "Community 366"
 location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Pydantic_05_-_Dependencies
+  - community/Community_366
 ---
 
 # Field Validators
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Pydantic]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Pydantic_05_-_Dependencies
+#graphify/document #graphify/EXTRACTED #community/Community_366

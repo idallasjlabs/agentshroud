@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-gg/README.md"
 type: "document"
-community: "Skill (i-hdev)"
+community: "Community 660"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Skill_i-hdev
+  - community/Community_660
 ---
 
 # Git Workflow Guardian (GIT-GUARD) README
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[GIT-GUARD Skill]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Skill_i-hdev
+#graphify/document #graphify/INFERRED #community/Community_660

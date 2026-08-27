@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/QUICK_REFERENCE.md"
 type: "document"
-community: "Quick Reference (reference)"
+community: "Community 725"
 location: "L50"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Quick_Reference_reference
+  - community/Community_725
 ---
 
 # AI Models
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Quick Reference Card]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Quick_Reference_reference
+#graphify/document #graphify/EXTRACTED #community/Community_725

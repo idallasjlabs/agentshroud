@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md"
 type: "document"
-community: "Openclaw Write Requirements (architecture)"
+community: "Community 209"
 location: "L198"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Openclaw_Write_Requirements_architecture
+  - community/Community_209
 ---
 
 # What Does the Bot NOT Need to Write?
@@ -15,4 +15,4 @@ tags:
 - [[What Does OpenClaw Actually Need to Write]] - `contains` [EXTRACTED]
 - [[❌ System Directories (Read-Only in Production)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Openclaw_Write_Requirements_architecture
+#graphify/document #graphify/EXTRACTED #community/Community_209

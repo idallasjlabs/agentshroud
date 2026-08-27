@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-qa/SKILL.md"
 type: "document"
-community: "Skill (i-qa)"
+community: "Community 431"
 location: "L35"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-qa
+  - community/Community_431
 ---
 
 # Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT
@@ -23,4 +23,4 @@ tags:
 - [[H. Service Control for Production Testing]] - `contains` [EXTRACTED]
 - [[Skill Quality Assurance (QA)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-qa
+#graphify/document #graphify/EXTRACTED #community/Community_431

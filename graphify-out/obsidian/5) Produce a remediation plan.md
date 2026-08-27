@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/healthcheck/SKILL.md"
 type: "document"
-community: "Skill (healthcheck)"
+community: "Community 850"
 location: "L109"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_healthcheck
+  - community/Community_850
 ---
 
 # 5) Produce a remediation plan
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Workflow (follow in order)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_healthcheck
+#graphify/document #graphify/EXTRACTED #community/Community_850

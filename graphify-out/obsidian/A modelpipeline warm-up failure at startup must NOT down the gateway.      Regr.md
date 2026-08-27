@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "Voice Gateway"
-location: "L64"
+community: "Community 37"
+location: "L65"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Voice_Gateway
+  - community/Community_37
 ---
 
 # A model/pipeline warm-up failure at startup must NOT down the gateway.      Regr
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_lifespan_tolerates_warmup_failure()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Voice_Gateway
+#graphify/rationale #graphify/EXTRACTED #community/Community_37

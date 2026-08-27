@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Bug Report Issue Template]] - document - .github/ISSUE_TEMPLATE/bug_report.yml
+- [[markmap-mcp-server (MCP server)]] - concept - docker/config/hermes/skills/i-mm/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

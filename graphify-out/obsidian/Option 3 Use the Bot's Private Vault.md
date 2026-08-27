@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/VAULT-SHARING-INSTRUCTIONS.md"
 type: "document"
-community: "Vault Sharing Instructions (setup)"
+community: "Community 590"
 location: "L82"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Vault_Sharing_Instructions_setup
+  - community/Community_590
 ---
 
 # Option 3: Use the Bot's Private Vault
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[How to Share the Vault]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Vault_Sharing_Instructions_setup
+#graphify/document #graphify/EXTRACTED #community/Community_590

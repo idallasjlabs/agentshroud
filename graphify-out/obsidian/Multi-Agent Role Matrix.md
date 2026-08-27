@@ -1,12 +1,12 @@
 ---
 source_file: "docs/governance/AGENT_ROLES.md"
 type: "document"
-community: "Gsd Cadence (governance)"
+community: "Community 440"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gsd_Cadence_governance
+  - community/Community_440
 ---
 
 # Multi-Agent Role Matrix
@@ -19,4 +19,4 @@ tags:
 - [[References_2]] - `contains` [EXTRACTED]
 - [[Security-Sensitive Paths]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gsd_Cadence_governance
+#graphify/document #graphify/EXTRACTED #community/Community_440

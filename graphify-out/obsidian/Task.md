@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/cron_state_monitor.py"
 type: "code"
-community: "Lvgl Kawaii Face (lvgl_kawaii_face)"
+community: "Community 249"
 location: "L291"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Lvgl_Kawaii_Face_lvgl_kawaii_face
+  - community/Community_249
 ---
 
 # Task
@@ -17,4 +17,4 @@ tags:
 - [[main.c]] - `imports` [EXTRACTED]
 - [[wakeword.c]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Lvgl_Kawaii_Face_lvgl_kawaii_face
+#graphify/code #graphify/EXTRACTED #community/Community_249

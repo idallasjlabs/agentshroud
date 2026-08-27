@@ -1,12 +1,12 @@
 ---
 source_file: "docker/README.md"
 type: "document"
-community: "Readme (docker)"
+community: "Community 190"
 location: "L257"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_docker
+  - community/Community_190
 ---
 
 # Security Features (Deferred to Phase 5+)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Docker Configuration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_docker
+#graphify/document #graphify/EXTRACTED #community/Community_190

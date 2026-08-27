@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "Privilege Separation & File Sandbox"
+community: "Community 65"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Privilege_Separation__File_Sandbox
+  - community/Community_65
 ---
 
 # file_sandbox.py
@@ -24,4 +24,4 @@ tags:
 - [[SKILL_190]] - `references` [EXTRACTED]
 - [[StagingPattern]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Privilege_Separation__File_Sandbox
+#graphify/code #graphify/EXTRACTED #community/Community_65

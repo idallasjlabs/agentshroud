@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/SYSTEM_STATUS.md"
 type: "document"
-community: "Telegram Issues (project)"
+community: "Community 514"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Telegram_Issues_project
+  - community/Community_514
 ---
 
 # SYSTEM_STATUS.md
@@ -16,4 +16,4 @@ tags:
 - [[Anthropic API Credits Exhausted Blocker]] - `references` [EXTRACTED]
 - [[iMessage Automation Permission Blocker]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Telegram_Issues_project
+#graphify/document #graphify/EXTRACTED #community/Community_514

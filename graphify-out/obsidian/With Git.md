@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/updating.md"
 type: "document"
-community: "Updating (operations)"
+community: "Community 531"
 location: "L61"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Updating_operations
+  - community/Community_531
 ---
 
 # With Git
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Rollback Procedure]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Updating_operations
+#graphify/document #graphify/EXTRACTED #community/Community_531

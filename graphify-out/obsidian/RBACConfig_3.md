@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "Rbac"
+community: "Community 70"
 location: "L471"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Rbac
+  - community/Community_70
 ---
 
 # RBACConfig
@@ -31,4 +31,4 @@ tags:
 - [[Role_1]] - `uses` [INFERRED]
 - [[ToolTier_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Rbac
+#graphify/code #graphify/EXTRACTED #community/Community_70

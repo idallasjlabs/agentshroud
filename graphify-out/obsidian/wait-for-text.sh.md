@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/tmux/scripts/wait-for-text.sh"
 type: "code"
-community: "Find Sessions (scripts)"
+community: "Community 982"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Find_Sessions_scripts
+  - community/Community_982
 ---
 
 # wait-for-text.sh
@@ -16,4 +16,4 @@ tags:
 - [[usage()_7]] - `defines` [EXTRACTED]
 - [[wait-for-text.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Find_Sessions_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_982

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_approval.py"
 type: "code"
-community: "Egress Approval (security)"
+community: "Community 21"
 location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress_Approval_security
+  - community/Community_21
 ---
 
 # TestEgressApprovalQueue
@@ -42,4 +42,4 @@ tags:
 - [[TestEnforceMode]] - `semantically_similar_to` [INFERRED]
 - [[test_egress_approval.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress_Approval_security
+#graphify/code #graphify/EXTRACTED #community/Community_21

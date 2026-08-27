@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/04-security.md"
 type: "concept"
-community: "Diagram 11 Trust Boundary (images)"
+community: "Community 280"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Diagram_11_Trust_Boundary_images
+  - community/Community_280
 ---
 
 # Trust Boundary Diagram
@@ -20,4 +20,4 @@ tags:
 - [[Trust Zone 3 — External Services (OpenAI, Anthropic, Telegram, GitHub, 1Password; allowlisted HTTPS only)]] - `conceptually_related_to` [EXTRACTED]
 - [[Trust Zone 4 — Infrastructure Nodes (raspberrypi, marvin, trillian; SSH-gated)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Diagram_11_Trust_Boundary_images
+#graphify/concept #graphify/EXTRACTED #community/Community_280

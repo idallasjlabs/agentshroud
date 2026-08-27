@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Requirements Documentation Index (SRS, FRD, NFR, Use Cases planned)]] - document - docs/requirements/README.md
+- [[SharedMemoryManager.get_merged_memory_for_user()]] - code - gateway/security/shared_memory.py
 
 ## Live Query (requires Dataview plugin)
 

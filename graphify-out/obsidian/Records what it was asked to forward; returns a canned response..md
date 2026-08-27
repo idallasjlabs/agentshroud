@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_proxy.py"
 type: "rationale"
-community: "A2a Proxy"
+community: "Community 107"
 location: "L30"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/A2a_Proxy
+  - community/Community_107
 ---
 
 # Records what it was asked to forward; returns a canned response.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_StubForwarder]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/A2a_Proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_107

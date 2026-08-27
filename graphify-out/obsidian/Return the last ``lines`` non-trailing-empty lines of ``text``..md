@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/multi_host_test.py"
 type: "rationale"
-community: "Multi Host"
+community: "Community 993"
 location: "L108"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Multi_Host
+  - community/Community_993
 ---
 
 # Return the last ``lines`` non-trailing-empty lines of ``text``.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[tail()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Multi_Host
+#graphify/rationale #graphify/EXTRACTED #community/Community_993

@@ -1,11 +1,11 @@
 ---
 source_file: "firmware/voice-terminal/test/test_playback_state/stubs/freertos/task.h"
 type: "code"
-community: "Freertos (freertos)"
+community: "Community 1497"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Freertos_freertos
+  - community/Community_1497
 ---
 
 # freertos/task.h stub (playback state test)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[freertosFreeRTOS.h stub (playback state test)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Freertos_freertos
+#graphify/code #graphify/EXTRACTED #community/Community_1497

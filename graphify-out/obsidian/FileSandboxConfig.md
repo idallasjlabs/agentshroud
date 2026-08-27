@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "Privilege Separation & File Sandbox"
+community: "Community 14"
 location: "L93"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Privilege_Separation__File_Sandbox
+  - community/Community_14
 ---
 
 # FileSandboxConfig
@@ -94,4 +94,4 @@ tags:
 - [[test_round2_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Privilege_Separation__File_Sandbox
+#graphify/code #graphify/INFERRED #community/Community_14

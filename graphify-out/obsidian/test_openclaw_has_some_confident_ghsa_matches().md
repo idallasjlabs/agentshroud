@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_agent_cve_registry.py"
 type: "code"
-community: "Agent Cve Registry"
-location: "L274"
+community: "Community 88"
+location: "L287"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Agent_Cve_Registry
+  - community/Community_88
 ---
 
 # test_openclaw_has_some_confident_ghsa_matches()
@@ -16,4 +16,4 @@ tags:
 - [[get_agent_cve_summary()]] - `calls` [EXTRACTED]
 - [[test_agent_cve_registry.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Agent_Cve_Registry
+#graphify/code #graphify/EXTRACTED #community/Community_88

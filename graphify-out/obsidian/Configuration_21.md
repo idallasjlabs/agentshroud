@@ -1,18 +1,17 @@
 ---
-source_file: "skills/openclaw/canvas/SKILL.md"
+source_file: "skills/openclaw/bear-notes/SKILL.md"
 type: "document"
-community: "Skill (canvas)"
-location: "L58"
+community: "Community 798"
+location: "L85"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_canvas
+  - community/Community_798
 ---
 
 # Configuration
 
 ## Connections
-- [[Canvas Skill]] - `contains` [EXTRACTED]
-- [[Live Reload]] - `contains` [EXTRACTED]
+- [[Bear Notes]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_canvas
+#graphify/document #graphify/EXTRACTED #community/Community_798

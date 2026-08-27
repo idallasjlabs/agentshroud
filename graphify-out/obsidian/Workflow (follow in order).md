@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/healthcheck/SKILL.md"
 type: "document"
-community: "Skill (healthcheck)"
+community: "Community 850"
 location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_healthcheck
+  - community/Community_850
 ---
 
 # Workflow (follow in order)
@@ -23,4 +23,4 @@ tags:
 - [[8) Verify and report]] - `contains` [EXTRACTED]
 - [[OpenClaw Host Hardening]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_healthcheck
+#graphify/document #graphify/EXTRACTED #community/Community_850

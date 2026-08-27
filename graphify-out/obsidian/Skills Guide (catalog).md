@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/reference/SKILLS_GUIDE.md"
 type: "document"
-community: "Readme (i-pm)"
+community: "Community 146"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-pm
+  - community/Community_146
 ---
 
 # Skills Guide (catalog)
@@ -21,4 +21,4 @@ tags:
 - [[System Audit Documentation (README)]] - `references` [EXTRACTED]
 - [[incident-response]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-pm
+#graphify/document #graphify/EXTRACTED #community/Community_146

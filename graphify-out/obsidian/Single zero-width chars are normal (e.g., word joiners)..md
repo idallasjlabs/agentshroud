@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "rationale"
-community: "Web Proxy"
+community: "Community 30"
 location: "L253"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Web_Proxy
+  - community/Community_30
 ---
 
 # Single zero-width chars are normal (e.g., word joiners).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_single_zwc_not_flagged()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Web_Proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_30

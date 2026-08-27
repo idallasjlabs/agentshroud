@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/browser_security.py.md"
 type: "document"
-community: "Browser Security.py (Security Modules)"
+community: "Community 641"
 location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser_Securitypy_Security_Modules
+  - community/Community_641
 ---
 
 # Function Details
@@ -19,4 +19,4 @@ tags:
 - [[BrowserSecurityGuard.register_screenshot_hook(hook)]] - `contains` [EXTRACTED]
 - [[browser_security.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser_Securitypy_Security_Modules
+#graphify/document #graphify/EXTRACTED #community/Community_641

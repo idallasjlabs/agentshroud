@@ -1,20 +1,22 @@
 ---
-source_file: "docker/config/hermes/skills/i-icloud/SKILL.md"
+source_file: "docker/config/hermes/skills/i-browser/SKILL.md"
 type: "document"
-community: "Skill (i-icloud)"
-location: "L142"
+community: "Community 258"
+location: "L281"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-icloud
+  - community/Community_258
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[401 Unauthorized_1]] - `contains` [EXTRACTED]
-- [[CalendarContacts not found_1]] - `contains` [EXTRACTED]
-- [[Connection timeout_1]] - `contains` [EXTRACTED]
-- [[iCloud Services_1]] - `contains` [EXTRACTED]
+- [[Action requires approval but none granted_1]] - `contains` [EXTRACTED]
+- [[Browser timeout_1]] - `contains` [EXTRACTED]
+- [[CAPTCHA detected_1]] - `contains` [EXTRACTED]
+- [[Rate limit exceeded_1]] - `contains` [EXTRACTED]
+- [[URL not in allowlist_1]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-icloud
+#graphify/document #graphify/EXTRACTED #community/Community_258

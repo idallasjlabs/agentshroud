@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-production/SKILL.md"
 type: "document"
-community: "Skill (i-production)"
+community: "Community 519"
 location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-production
+  - community/Community_519
 ---
 
 # Incident Response Workflow
@@ -17,4 +17,4 @@ tags:
 - [[Phase 3 MITIGATE (Rollback First!)]] - `contains` [EXTRACTED]
 - [[Skill Incident Response (INCIDENT)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-production
+#graphify/document #graphify/EXTRACTED #community/Community_519

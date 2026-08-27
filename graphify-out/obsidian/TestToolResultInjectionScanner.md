@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_injection_scan.py"
 type: "code"
-community: "Tool Chain & CVE Triage"
+community: "Community 16"
 location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tool_Chain__CVE_Triage
+  - community/Community_16
 ---
 
 # TestToolResultInjectionScanner
@@ -23,4 +23,4 @@ tags:
 - [[ToolResultInjectionScanner]] - `uses` [INFERRED]
 - [[test_tool_injection_scan.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Tool_Chain__CVE_Triage
+#graphify/code #graphify/EXTRACTED #community/Community_16

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/browser-fetch/package.json"
 type: "code"
-community: "Package (browser-fetch)"
+community: "Community 832"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Package_browser-fetch
+  - community/Community_832
 ---
 
 # package.json
@@ -21,4 +21,4 @@ tags:
 - [[scripts_4]] - `contains` [EXTRACTED]
 - [[version_7]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Package_browser-fetch
+#graphify/code #graphify/EXTRACTED #community/Community_832

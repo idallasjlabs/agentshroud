@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_simple.py"
 type: "rationale"
-community: "Main Simple"
+community: "Community 9"
 location: "L286"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Main_Simple
+  - community/Community_9
 ---
 
 # Test FastAPI lifespan initialization
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_lifespan_initialization()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Main_Simple
+#graphify/rationale #graphify/EXTRACTED #community/Community_9

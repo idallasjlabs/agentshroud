@@ -1,28 +1,31 @@
 ---
 source_file: "docs/vault/01 - Architecture/Data Flow.md"
 type: "document"
-community: "Data flow (01 - Architecture)"
+community: "Community 311"
 location: "L94"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Data_flow_01_-_Architecture
+  - community/Community_311
 ---
 
 # Layer-by-Layer Breakdown
 
 ## Connections
 - [[1. MCP Proxy Wrapper (Bot Side)]] - `contains` [EXTRACTED]
+- [[10. Approval Queue]] - `contains` [EXTRACTED]
 - [[11. Ledger Recording]] - `contains` [EXTRACTED]
 - [[2. Authentication (Gateway Entry)]] - `contains` [EXTRACTED]
 - [[3. Middleware Manager]] - `contains` [EXTRACTED]
 - [[4. Input Normalization]] - `contains` [EXTRACTED]
 - [[5. PII Sanitization]] - `contains` [EXTRACTED]
 - [[6. Prompt Injection Defense]] - `contains` [EXTRACTED]
+- [[7. Egress Filter]] - `contains` [EXTRACTED]
+- [[8. Security Pipeline]] - `contains` [EXTRACTED]
 - [[9. Proxy Routing]] - `contains` [EXTRACTED]
 - [[Data Flow_1]] - `contains` [EXTRACTED]
 - [[EgressFilter_3]] - `contains` [EXTRACTED]
 - [[`SecurityPipeline`]] - `contains` [EXTRACTED]
 - [[approval_queue.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Data_flow_01_-_Architecture
+#graphify/document #graphify/EXTRACTED #community/Community_311

@@ -1,12 +1,12 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "Changelog"
-location: "L955"
+community: "Community 1296"
+location: "L1097"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Changelog
+  - community/Community_1296
 ---
 
 # Migration Notes
@@ -17,4 +17,4 @@ tags:
 - [[v0.3.0 → v0.4.0]] - `contains` [EXTRACTED]
 - [[v0.4.0 → v0.5.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Changelog
+#graphify/document #graphify/EXTRACTED #community/Community_1296

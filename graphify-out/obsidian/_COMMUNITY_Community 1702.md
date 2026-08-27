@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[esp_log.h_1]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/esp_log.h
+- [[OTA API Header]] - code - firmware/voice-terminal/main/ota.h
 
 ## Live Query (requires Dataview plugin)
 

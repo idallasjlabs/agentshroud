@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "Web Proxy"
+community: "Community 30"
 location: "L407"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Web_Proxy
+  - community/Community_30
 ---
 
 # TestPassthroughMode
@@ -23,4 +23,4 @@ tags:
 - [[WebProxyConfig]] - `uses` [INFERRED]
 - [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Web_Proxy
+#graphify/code #graphify/INFERRED #community/Community_30

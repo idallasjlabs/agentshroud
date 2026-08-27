@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-19-incident-response.svg"
 type: "concept"
-community: "Diagram 19 Incident Response (images)"
+community: "Community 1105"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Diagram_19_Incident_Response_images
+  - community/Community_1105
 ---
 
 # Assess severity
@@ -17,4 +17,4 @@ tags:
 - [[P3 — Medium (respond within 4 hours; review logs, apply config fix)]] - `calls` [EXTRACTED]
 - [[P4 — Low (resolve in next session; fix branch + PR)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Diagram_19_Incident_Response_images
+#graphify/concept #graphify/EXTRACTED #community/Community_1105

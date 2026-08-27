@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-ux/SKILL.md"
 type: "document"
-community: "Skill (i-ux)"
+community: "Community 240"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-ux
+  - community/Community_240
 ---
 
 # Skill: UX Expert (UX)
@@ -27,4 +27,4 @@ tags:
 - [[Usability Audit Checklist]] - `contains` [EXTRACTED]
 - [[User Flow Diagrams]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-ux
+#graphify/document #graphify/EXTRACTED #community/Community_240

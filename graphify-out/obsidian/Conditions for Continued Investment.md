@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-03-03.md"
 type: "document"
-community: "Phase Review 2026 02 (reviews)"
+community: "Community 1045"
 location: "L247"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_Review_2026_02_reviews
+  - community/Community_1045
 ---
 
 # Conditions for Continued Investment
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[6. Go  No-Go Recommendation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_Review_2026_02_reviews
+#graphify/document #graphify/EXTRACTED #community/Community_1045

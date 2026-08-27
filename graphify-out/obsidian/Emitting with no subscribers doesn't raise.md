@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_event_bus.py"
 type: "rationale"
-community: "Soc Egress Endpoints"
+community: "Community 374"
 location: "L75"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Soc_Egress_Endpoints
+  - community/Community_374
 ---
 
 # Emitting with no subscribers doesn't raise
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_emit_no_subscribers_no_error()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Soc_Egress_Endpoints
+#graphify/rationale #graphify/EXTRACTED #community/Community_374

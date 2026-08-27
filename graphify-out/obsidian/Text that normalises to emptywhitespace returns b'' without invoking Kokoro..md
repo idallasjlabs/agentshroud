@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "Voice Gateway"
-location: "L518"
+community: "Community 37"
+location: "L519"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Voice_Gateway
+  - community/Community_37
 ---
 
 # Text that normalises to empty/whitespace returns b'' without invoking Kokoro.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_tts_synthesize_only_whitespace_after_normalise_returns_empty()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Voice_Gateway
+#graphify/rationale #graphify/EXTRACTED #community/Community_37

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "rationale"
-community: "Subagent Governance (security)"
+community: "Community 912"
 location: "L455"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Subagent_Governance_security
+  - community/Community_912
 ---
 
 # Get current resource usage for a subagent.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_usage()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Subagent_Governance_security
+#graphify/rationale #graphify/EXTRACTED #community/Community_912

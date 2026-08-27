@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/raspberry-pi.md"
 type: "document"
-community: "Telegram Issues (project)"
+community: "Community 205"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Telegram_Issues_project
+  - community/Community_205
 ---
 
 # raspberry-pi.md
@@ -21,4 +21,4 @@ tags:
 - [[agentshroud.yaml Configuration File]] - `references` [EXTRACTED]
 - [[deployment]] - `references` [AMBIGUOUS]
 
-#graphify/document #graphify/EXTRACTED #community/Telegram_Issues_project
+#graphify/document #graphify/EXTRACTED #community/Community_205

@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "rationale"
-community: "Voice Latency Guard"
+community: "Community 103"
 location: "L723"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Voice_Latency_Guard
+  - community/Community_103
 ---
 
 # Route a voice utterance to a proxied agent via the AgentShroud gateway's     POS
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_call_agent_stream()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Voice_Latency_Guard
+#graphify/rationale #graphify/EXTRACTED #community/Community_103

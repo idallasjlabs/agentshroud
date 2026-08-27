@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-pm/README.md"
 type: "document"
-community: "Readme (i-pm)"
+community: "Community 146"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-pm
+  - community/Community_146
 ---
 
 # Project Management (README)
@@ -18,4 +18,4 @@ tags:
 - [[Skills Guide (catalog)]] - `references` [EXTRACTED]
 - [[Usage_25]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-pm
+#graphify/document #graphify/EXTRACTED #community/Community_146

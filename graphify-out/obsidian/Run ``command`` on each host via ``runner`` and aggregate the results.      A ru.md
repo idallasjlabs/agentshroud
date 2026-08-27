@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/multi_host_test.py"
 type: "rationale"
-community: "Multi Host"
+community: "Community 816"
 location: "L187"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Multi_Host
+  - community/Community_816
 ---
 
 # Run ``command`` on each host via ``runner`` and aggregate the results.      A ru
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[run_multi_host()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Multi_Host
+#graphify/rationale #graphify/EXTRACTED #community/Community_816

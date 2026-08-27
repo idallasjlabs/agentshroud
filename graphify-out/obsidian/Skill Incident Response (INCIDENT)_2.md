@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-production/SKILL.md"
 type: "document"
-community: "Skill (i-production)"
+community: "Community 526"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-production
+  - community/Community_526
 ---
 
 # Skill: Incident Response (INCIDENT)
@@ -18,4 +18,4 @@ tags:
 - [[SKILL_170]] - `contains` [EXTRACTED]
 - [[Severity Matrix_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-production
+#graphify/document #graphify/EXTRACTED #community/Community_526

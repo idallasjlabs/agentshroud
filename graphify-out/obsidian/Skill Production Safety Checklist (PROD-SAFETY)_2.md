@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-ps/SKILL.md"
 type: "document"
-community: "Skill (i-ps)"
+community: "Community 412"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-ps
+  - community/Community_412
 ---
 
 # Skill: Production Safety Checklist (PROD-SAFETY)
@@ -19,4 +19,4 @@ tags:
 - [[Role_101]] - `contains` [EXTRACTED]
 - [[SKILL_171]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-ps
+#graphify/document #graphify/EXTRACTED #community/Community_412

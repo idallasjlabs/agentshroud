@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/SETUP.md"
 type: "document"
-community: "Setup (voice-terminal)"
+community: "Community 1285"
 location: "L472"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_voice-terminal
+  - community/Community_1285
 ---
 
 # How it works
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[12. OTA Wireless Firmware Updates]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_voice-terminal
+#graphify/document #graphify/EXTRACTED #community/Community_1285

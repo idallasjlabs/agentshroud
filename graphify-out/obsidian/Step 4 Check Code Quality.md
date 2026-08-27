@@ -1,12 +1,12 @@
 ---
 source_file: ".github/agents/safe-refactor.agent.md"
 type: "document"
-community: "Safe Refactor.agent (agents)"
+community: "Community 389"
 location: "L146"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Safe_Refactoragent_agents
+  - community/Community_389
 ---
 
 # Step 4: Check Code Quality
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Refactoring Workflow]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Safe_Refactoragent_agents
+#graphify/document #graphify/EXTRACTED #community/Community_389

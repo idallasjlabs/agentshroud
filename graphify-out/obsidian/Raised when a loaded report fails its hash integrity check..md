@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "rationale"
-community: "Intel Pipeline"
+community: "Community 133"
 location: "L52"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Intel_Pipeline
+  - community/Community_133
 ---
 
 # Raised when a loaded report fails its hash integrity check.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ReportIntegrityError]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Intel_Pipeline
+#graphify/rationale #graphify/EXTRACTED #community/Community_133

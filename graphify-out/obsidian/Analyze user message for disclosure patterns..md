@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "rationale"
-community: "Multi Turn Tracker (security)"
+community: "Community 54"
 location: "L213"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Multi_Turn_Tracker_security
+  - community/Community_54
 ---
 
 # Analyze user message for disclosure patterns.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._analyze_user_message()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Multi_Turn_Tracker_security
+#graphify/rationale #graphify/EXTRACTED #community/Community_54

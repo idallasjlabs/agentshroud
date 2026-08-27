@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/cli/main.py"
 type: "code"
-community: "Main (cli)"
+community: "Community 92"
 location: "L220"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Main_cli
+  - community/Community_92
 ---
 
 # stop()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[main.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Main_cli
+#graphify/code #graphify/EXTRACTED #community/Community_92

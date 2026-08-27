@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-gg/SKILL.md"
 type: "document"
-community: "Skill (i-hdev)"
+community: "Community 660"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Skill_i-hdev
+  - community/Community_660
 ---
 
 # GIT-GUARD Skill
@@ -17,4 +17,4 @@ tags:
 - [[Hermes Dev Workflow (HDEV) Skill]] - `semantically_similar_to` [INFERRED]
 - [[gitops Skill (stub)_1]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Skill_i-hdev
+#graphify/document #graphify/INFERRED #community/Community_660

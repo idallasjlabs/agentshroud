@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-aws/SKILL.md"
 type: "document"
-community: "Skill (i-aws)"
+community: "Community 229"
 location: "L119"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-aws
+  - community/Community_229
 ---
 
 # Rightsizing Logic
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Decision Framework_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-aws
+#graphify/document #graphify/EXTRACTED #community/Community_229

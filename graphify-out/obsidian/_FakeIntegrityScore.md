@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "Pipeline Unit"
+community: "Community 22"
 location: "L380"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Pipeline_Unit
+  - community/Community_22
 ---
 
 # _FakeIntegrityScore
@@ -30,4 +30,4 @@ tags:
 - [[_make_integrity_pipeline()]] - `calls` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Pipeline_Unit
+#graphify/code #graphify/INFERRED #community/Community_22

@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[SkillGuard.scan_file()]] - code - gateway/security/skill_guard.py
+- [[SSHProxy.validate_command()]] - code - gateway/ssh_proxy/proxy.py
 
 ## Live Query (requires Dataview plugin)
 

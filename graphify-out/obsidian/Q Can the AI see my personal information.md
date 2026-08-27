@@ -1,12 +1,12 @@
 ---
 source_file: "docs/user-guide.md"
 type: "document"
-community: "User Guide (docs)"
+community: "Community 306"
 location: "L118"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/User_Guide_docs
+  - community/Community_306
 ---
 
 # Q: Can the AI see my personal information?
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[FAQ_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/User_Guide_docs
+#graphify/document #graphify/EXTRACTED #community/Community_306

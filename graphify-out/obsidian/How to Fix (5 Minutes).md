@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/IMESSAGE_PERMISSION_FIX.md"
 type: "document"
-community: "Imessage Status (setup)"
+community: "Community 392"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Imessage_Status_setup
+  - community/Community_392
 ---
 
 # How to Fix (5 Minutes)
@@ -18,4 +18,4 @@ tags:
 - [[Step 4 Verify from Docker]] - `contains` [EXTRACTED]
 - [[iMessage Permission Fix - Step by Step]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Imessage_Status_setup
+#graphify/document #graphify/EXTRACTED #community/Community_392

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/agentshroud-redteam/references/steve-hay-plan.md"
 type: "document"
-community: "Steve Hay Plan (references)"
+community: "Community 1525"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Steve_Hay_Plan_references
+  - community/Community_1525
 ---
 
 # plan
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[steve-hay-plan_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Steve_Hay_Plan_references
+#graphify/document #graphify/EXTRACTED #community/Community_1525

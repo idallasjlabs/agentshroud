@@ -1,11 +1,11 @@
 ---
 source_file: "dashboard/README.md"
 type: "concept"
-community: "Readme (dashboard)"
+community: "Community 257"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Readme_dashboard
+  - community/Community_257
 ---
 
 # ActionFeed Component (Live Action Stream)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[README_40]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Readme_dashboard
+#graphify/concept #graphify/EXTRACTED #community/Community_257

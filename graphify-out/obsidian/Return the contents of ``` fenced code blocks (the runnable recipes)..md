@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_bots_ssh_exec_wrapper.py"
 type: "rationale"
-community: "Bots Ssh Exec Wrapper"
+community: "Community 140"
 location: "L71"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Bots_Ssh_Exec_Wrapper
+  - community/Community_140
 ---
 
 # Return the contents of ``` fenced code blocks (the runnable recipes).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_fenced_code_blocks()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Bots_Ssh_Exec_Wrapper
+#graphify/rationale #graphify/EXTRACTED #community/Community_140

@@ -1,15 +1,19 @@
 ---
 type: community
-members: 2
+members: 6
 ---
 
 # Community 1546
 
-**Members:** 2 nodes
+**Members:** 6 nodes
 
 ## Members
-- [[.test_urlencoded_plain_no_reply_with_punctuation_is_still_filtered()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Form payload NO_REPLY punctuation variant should still normalize.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[ESP32-S3-BOX-3 Hermes Voice Terminal Planning Doc]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
+- [[Kokoro TTS Engine]] - concept - voice_gateway/requirements.txt
+- [[MicroLink Native Tailscale Client for ESP32 (Requires PSRAM)]] - concept - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
+- [[Voice Gateway Python Requirements (faster-whisper, kokoro)]] - code - voice_gateway/requirements.txt
+- [[Voice Gateway Service (STTTTS WebSocket Bridge to Governed Path)]] - concept - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
+- [[faster-whisper STT Engine (Local, CPU-friendly)]] - concept - voice_gateway/requirements.txt
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_Community 923]]
 
 ## Top bridge nodes
-- [[.test_urlencoded_plain_no_reply_with_punctuation_is_still_filtered()]] - degree 4, connects to 1 community
+- [[ESP32-S3-BOX-3 Hermes Voice Terminal Planning Doc]] - degree 3, connects to 1 community

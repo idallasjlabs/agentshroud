@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-oracle/README.md"
 type: "document"
-community: "Readme (i-oracle)"
+community: "Community 1198"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-oracle
+  - community/Community_1198
 ---
 
 # Oracle — Feedback Analyst
@@ -17,4 +17,4 @@ tags:
 - [[Related Skills_64]] - `contains` [EXTRACTED]
 - [[Usage_65]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-oracle
+#graphify/document #graphify/EXTRACTED #community/Community_1198

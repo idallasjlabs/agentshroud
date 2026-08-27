@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/notion/SKILL.md"
 type: "document"
-community: "Skill (notion)"
+community: "Community 764"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_notion
+  - community/Community_764
 ---
 
 # notion
@@ -20,4 +20,4 @@ tags:
 - [[SKILL_218]] - `contains` [EXTRACTED]
 - [[Setup_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_notion
+#graphify/document #graphify/EXTRACTED #community/Community_764

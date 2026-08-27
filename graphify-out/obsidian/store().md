@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_store.py"
 type: "code"
-community: "Approval Store"
+community: "Community 24"
 location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Store
+  - community/Community_24
 ---
 
 # store()
@@ -16,4 +16,4 @@ tags:
 - [[Path_24]] - `references` [EXTRACTED]
 - [[test_approval_store.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Store
+#graphify/code #graphify/EXTRACTED #community/Community_24

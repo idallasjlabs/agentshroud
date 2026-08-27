@@ -1,12 +1,12 @@
 ---
 source_file: "src/interfaces/README.md"
 type: "document"
-community: "Readme (interfaces)"
+community: "Community 1035"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_interfaces
+  - community/Community_1035
 ---
 
 # AgentShroud Text Interfaces
@@ -16,4 +16,4 @@ tags:
 - [[Future Interfaces]] - `contains` [EXTRACTED]
 - [[README_133]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_interfaces
+#graphify/document #graphify/EXTRACTED #community/Community_1035

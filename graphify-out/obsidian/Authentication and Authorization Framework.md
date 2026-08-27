@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-architecture.md"
 type: "document"
-community: "Security Architecture (security)"
+community: "Community 154"
 location: "L343"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Architecture_security
+  - community/Community_154
 ---
 
 # Authentication and Authorization Framework
@@ -17,4 +17,4 @@ tags:
 - [[Approval Queue Workflow]] - `contains` [EXTRACTED]
 - [[Trust Level Progression]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Architecture_security
+#graphify/document #graphify/EXTRACTED #community/Community_154

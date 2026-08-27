@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/RUNBOOK.md"
 type: "document"
-community: "Runbook (runbooks)"
+community: "Community 682"
 location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Runbook_runbooks
+  - community/Community_682
 ---
 
 # Deploy Latest Code (Any Host)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Deployment & Troubleshooting Runbook]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Runbook_runbooks
+#graphify/document #graphify/EXTRACTED #community/Community_682

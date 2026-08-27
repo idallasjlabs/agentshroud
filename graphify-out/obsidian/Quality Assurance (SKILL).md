@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-qa/SKILL.md"
 type: "document"
-community: "Readme (i-pm)"
+community: "Community 381"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-pm
+  - community/Community_381
 ---
 
 # Quality Assurance (SKILL)
@@ -19,4 +19,4 @@ tags:
 - [[Related Skills_29]] - `contains` [EXTRACTED]
 - [[Usage_29]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-pm
+#graphify/document #graphify/EXTRACTED #community/Community_381

@@ -1,11 +1,11 @@
 ---
 source_file: "examples/docker-compose.minimal.yml"
 type: "document"
-community: "Docker Commands (examples)"
+community: "Community 621"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Docker_Commands_examples
+  - community/Community_621
 ---
 
 # AgentShroud Minimal Docker Compose
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Production Docker Compose]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Docker_Commands_examples
+#graphify/document #graphify/INFERRED #community/Community_621

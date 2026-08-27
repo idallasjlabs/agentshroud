@@ -1,12 +1,12 @@
 ---
 source_file: "CHEATSHEET.md"
 type: "document"
-community: "Cheatsheet"
+community: "Community 434"
 location: "L301"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Cheatsheet
+  - community/Community_434
 ---
 
 # Web Management UI
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Operations Cheat Sheet]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Cheatsheet
+#graphify/document #graphify/EXTRACTED #community/Community_434

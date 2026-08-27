@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
+source_file: ".agents/skills/i-browser/scripts/browse.py"
 type: "rationale"
-community: "Browse (scripts)"
+community: "Community 73"
 location: "L74"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Browse_scripts
+  - community/Community_73
 ---
 
 # Load security configuration
 
 ## Connections
-- [[._load_config()_1]] - `rationale_for` [EXTRACTED]
+- [[._load_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Browse_scripts
+#graphify/rationale #graphify/EXTRACTED #community/Community_73

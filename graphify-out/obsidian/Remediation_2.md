@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/01-enforce-by-default.md"
 type: "document"
-community: "01 Enforce By Default (redteam)"
+community: "Community 680"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/01_Enforce_By_Default_redteam
+  - community/Community_680
 ---
 
 # Remediation
@@ -19,4 +19,4 @@ tags:
 - [[Step 4 Document the risk of monitor mode]] - `contains` [EXTRACTED]
 - [[Step 5 Update docker-compose.yml defaults]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/01_Enforce_By_Default_redteam
+#graphify/document #graphify/EXTRACTED #community/Community_680

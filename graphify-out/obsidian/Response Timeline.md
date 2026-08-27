@@ -1,12 +1,12 @@
 ---
 source_file: "SECURITY.md"
 type: "document"
-community: "Security"
+community: "Community 521"
 location: "L98"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security
+  - community/Community_521
 ---
 
 # Response Timeline
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Reporting a Vulnerability]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security
+#graphify/document #graphify/EXTRACTED #community/Community_521

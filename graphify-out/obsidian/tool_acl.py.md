@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "Tool ACL & Group RBAC"
+community: "Community 75"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tool_ACL__Group_RBAC
+  - community/Community_75
 ---
 
 # tool_acl.py
@@ -22,4 +22,4 @@ tags:
 - [[ToolRateLimit]] - `contains` [EXTRACTED]
 - [[record_decision()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Tool_ACL__Group_RBAC
+#graphify/code #graphify/EXTRACTED #community/Community_75

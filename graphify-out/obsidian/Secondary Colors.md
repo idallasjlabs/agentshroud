@@ -1,12 +1,12 @@
 ---
 source_file: "branding/colors/palette.md"
 type: "document"
-community: "Palette (colors)"
+community: "Community 370"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Palette_colors
+  - community/Community_370
 ---
 
 # Secondary Colors
@@ -17,4 +17,4 @@ tags:
 - [[Ice Blue]] - `contains` [EXTRACTED]
 - [[Steel Blue]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Palette_colors
+#graphify/document #graphify/EXTRACTED #community/Community_370

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/workspace/IDENTITY.md"
 type: "document"
-community: "Gateway Proxy Layer"
+community: "Community 449"
 location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Proxy_Layer
+  - community/Community_449
 ---
 
 # Competitive Intelligence Protocol
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[IDENTITY.md - Who I Am_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Proxy_Layer
+#graphify/document #graphify/EXTRACTED #community/Community_449

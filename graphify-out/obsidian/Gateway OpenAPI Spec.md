@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/openapi.json"
 type: "document"
-community: "Openapi (gateway)"
+community: "Community 779"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Openapi_gateway
+  - community/Community_779
 ---
 
 # Gateway OpenAPI Spec
@@ -17,4 +17,4 @@ tags:
 - [[OpenAPI soc endpoint group]] - `conceptually_related_to` [EXTRACTED]
 - [[OpenAPI versions endpoint group]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Openapi_gateway
+#graphify/document #graphify/EXTRACTED #community/Community_779

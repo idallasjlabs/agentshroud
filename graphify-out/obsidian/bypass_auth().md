@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_channel_ownership.py"
 type: "code"
-community: "Forward (routes)"
+community: "Community 63"
 location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Forward_routes
+  - community/Community_63
 ---
 
 # bypass_auth()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_channel_ownership.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Forward_routes
+#graphify/code #graphify/EXTRACTED #community/Community_63

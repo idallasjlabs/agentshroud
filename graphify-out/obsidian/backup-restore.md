@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/backup-restore.md"
 type: "document"
-community: "Daily Operations (runbooks)"
+community: "Community 859"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Daily_Operations_runbooks
+  - community/Community_859
 ---
 
 # backup-restore.md
@@ -16,4 +16,4 @@ tags:
 - [[Disaster Recovery Full Rebuild Procedure]] - `references` [EXTRACTED]
 - [[daily-operations]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Daily_Operations_runbooks
+#graphify/document #graphify/EXTRACTED #community/Community_859

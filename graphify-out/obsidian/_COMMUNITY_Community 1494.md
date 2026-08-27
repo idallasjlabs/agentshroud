@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[toggle-readonly.sh]] - code - docker/scripts/toggle-readonly.sh
-- [[toggle-readonly.sh script]] - code - docker/scripts/toggle-readonly.sh
+- [[Rationale agentshroud-gateway MCP server disabled (no mcp route, crash-loop correlation)]] - rationale - docker/config/openclaw/mcp/servers.json
+- [[openclaw mcpservers.json (MCP server definitions)]] - document - docker/config/openclaw/mcp/servers.json
 
 ## Live Query (requires Dataview plugin)
 

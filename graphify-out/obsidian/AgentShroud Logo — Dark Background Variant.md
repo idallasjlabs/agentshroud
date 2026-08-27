@@ -1,11 +1,11 @@
 ---
 source_file: "branding/agentshroud-logo-dark-bg.png"
 type: "image"
-community: "Pull Request Template (.github)"
+community: "Community 661"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/Pull_Request_Template_github
+  - community/Community_661
 ---
 
 # AgentShroud Logo — Dark Background Variant
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Primary Logo]] - `semantically_similar_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/Pull_Request_Template_github
+#graphify/image #graphify/INFERRED #community/Community_661

@@ -1,20 +1,20 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ti/README.md"
+source_file: "docker/config/hermes/skills/i-ti/README.md"
 type: "document"
-community: "Readme (i-ti)"
+community: "Community 1211"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-ti
+  - community/Community_1211
 ---
 
 # Technical Illustrator (TI)
 
 ## Connections
-- [[Purpose_108]] - `contains` [EXTRACTED]
-- [[README_113]] - `contains` [EXTRACTED]
-- [[Related Skills_117]] - `contains` [EXTRACTED]
-- [[Usage_118]] - `contains` [EXTRACTED]
+- [[Purpose_71]] - `contains` [EXTRACTED]
+- [[README_76]] - `contains` [EXTRACTED]
+- [[Related Skills_77]] - `contains` [EXTRACTED]
+- [[Usage_78]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-ti
+#graphify/document #graphify/EXTRACTED #community/Community_1211

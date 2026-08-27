@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-release/SKILL.md"
 type: "document"
-community: "Skill (i-release)"
+community: "Community 716"
 location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-release
+  - community/Community_716
 ---
 
 # Steps
@@ -21,4 +21,4 @@ tags:
 - [[7. Rebuildrestart prod and dev from main]] - `contains` [EXTRACTED]
 - [[Skill Release (i-release)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-release
+#graphify/document #graphify/EXTRACTED #community/Community_716

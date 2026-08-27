@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/discord/SKILL.md"
 type: "document"
-community: "Skill (discord)"
+community: "Community 892"
 location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_discord
+  - community/Community_892
 ---
 
 # Guidelines
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Discord (Via `message`)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_discord
+#graphify/document #graphify/EXTRACTED #community/Community_892

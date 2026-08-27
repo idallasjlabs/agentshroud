@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-mnemosyne/SKILL.md"
 type: "document"
-community: "Skill (i-mnemosyne)"
+community: "Community 944"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-mnemosyne
+  - community/Community_944
 ---
 
 # Mnemosyne — Retention Engineer
@@ -20,4 +20,4 @@ tags:
 - [[SKILL_36]] - `contains` [EXTRACTED]
 - [[System Prompt_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-mnemosyne
+#graphify/document #graphify/EXTRACTED #community/Community_944

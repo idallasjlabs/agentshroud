@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_multibot.py"
 type: "rationale"
-community: "Telegram Proxy Multibot"
+community: "Community 445"
 location: "L292"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Multibot
+  - community/Community_445
 ---
 
 # The contextvar set by proxy_request is visible throughout _proxy_request_impl.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_proxy_request_contextvar_visible_inside_impl()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Multibot
+#graphify/rationale #graphify/EXTRACTED #community/Community_445

@@ -1,19 +1,20 @@
 ---
 source_file: "docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md"
 type: "document"
-community: "Secrets Usage And Collaborator (security)"
+community: "Community 236"
 location: "L1"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Secrets_Usage_And_Collaborator_security
+  - community/Community_236
 ---
 
 # BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
 
 ## Connections
 - [[AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist]] - `contains` [EXTRACTED]
+- [[AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist_1]] - `contains` [EXTRACTED]
 - [[IMESSAGE_FIX]] - `conceptually_related_to` [INFERRED]
 - [[container-policy]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Secrets_Usage_And_Collaborator_security
+#graphify/document #graphify/INFERRED #community/Community_236

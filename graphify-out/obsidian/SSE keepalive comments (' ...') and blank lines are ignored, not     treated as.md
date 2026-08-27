@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "Voice Latency Guard"
-location: "L1128"
+community: "Community 103"
+location: "L1129"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Voice_Latency_Guard
+  - community/Community_103
 ---
 
 # SSE keepalive comments (': ...') and blank lines are ignored, not     treated as
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_call_agent_stream_skips_blank_and_comment_lines()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Voice_Latency_Guard
+#graphify/rationale #graphify/EXTRACTED #community/Community_103

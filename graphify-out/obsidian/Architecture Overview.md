@@ -1,12 +1,12 @@
 ---
 source_file: "docs/api/integration-guide.md"
 type: "document"
-community: "Openscap (05 - Dependencies)"
+community: "Community 401"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Openscap_05_-_Dependencies
+  - community/Community_401
 ---
 
 # Architecture Overview
@@ -19,4 +19,4 @@ tags:
 - [[Local LLM Support — Implementation Review]] - `contains` [EXTRACTED]
 - [[OpenClaw Integration (Primary Target)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Openscap_05_-_Dependencies
+#graphify/document #graphify/EXTRACTED #community/Community_401

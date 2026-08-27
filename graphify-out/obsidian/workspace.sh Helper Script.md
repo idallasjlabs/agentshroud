@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/WORKSPACE_USAGE.md"
 type: "concept"
-community: "Workspace Usage (architecture)"
+community: "Community 159"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Workspace_Usage_architecture
+  - community/Community_159
 ---
 
 # workspace.sh Helper Script
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[WORKSPACE_USAGE]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Workspace_Usage_architecture
+#graphify/concept #graphify/EXTRACTED #community/Community_159

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-sav/SKILL.md"
 type: "document"
-community: "Skill (i-sav)"
+community: "Community 247"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-sav
+  - community/Community_247
 ---
 
 # System Audit Vault (Obsidian)
@@ -18,4 +18,4 @@ tags:
 - [[REQUIRED NOTES — PRODUCE EVERY ONE OF THESE_2]] - `contains` [EXTRACTED]
 - [[SKILL_174]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-sav
+#graphify/document #graphify/EXTRACTED #community/Community_247

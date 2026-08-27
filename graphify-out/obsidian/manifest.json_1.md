@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/manifest.json"
 type: "code"
-community: "Manifest (hermes)"
+community: "Community 969"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Manifest_hermes
+  - community/Community_969
 ---
 
 # manifest.json
@@ -17,4 +17,4 @@ tags:
 - [[manifest.json_2]] - `semantically_similar_to` [INFERRED]
 - [[version_3]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Manifest_hermes
+#graphify/code #graphify/EXTRACTED #community/Community_969

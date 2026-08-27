@@ -1,25 +1,19 @@
 ---
-source_file: ".agents/skills/i-browser/scripts/browse.py"
+source_file: "src/interfaces/text_control_center.py"
 type: "code"
-community: "Browse (scripts)"
-location: "L431"
+community: "Community 264"
+location: "L427"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Browse_scripts
+  - community/Community_264
 ---
 
 # main()
 
 ## Connections
-- [[._take_screenshot()_4]] - `calls` [EXTRACTED]
-- [[.click()_4]] - `calls` [EXTRACTED]
-- [[.close()_21]] - `calls` [EXTRACTED]
-- [[.extract()_4]] - `calls` [EXTRACTED]
-- [[.fill_field()_4]] - `calls` [EXTRACTED]
-- [[.navigate()_4]] - `calls` [EXTRACTED]
-- [[CLI interface for SecureBrowser_3]] - `rationale_for` [EXTRACTED]
-- [[SecureBrowser_4]] - `calls` [EXTRACTED]
-- [[browse.py_4]] - `contains` [EXTRACTED]
+- [[.run()_6]] - `calls` [EXTRACTED]
+- [[ControlCenter]] - `calls` [EXTRACTED]
+- [[text_control_center.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Browse_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_264

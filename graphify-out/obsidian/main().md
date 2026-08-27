@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "Browse (scripts)"
+community: "Community 73"
 location: "L431"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Browse_scripts
+  - community/Community_73
 ---
 
 # main()
@@ -18,8 +18,8 @@ tags:
 - [[.extract()]] - `calls` [EXTRACTED]
 - [[.fill_field()]] - `calls` [EXTRACTED]
 - [[.navigate()]] - `calls` [EXTRACTED]
-- [[CLI interface for SecureBrowser_3]] - `rationale_for` [EXTRACTED]
+- [[CLI interface for SecureBrowser]] - `rationale_for` [EXTRACTED]
 - [[SecureBrowser]] - `calls` [EXTRACTED]
 - [[browse.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Browse_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_73

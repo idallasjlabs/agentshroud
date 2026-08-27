@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/check-vendor-compat.sh"
 type: "code"
-community: "Check Vendor Compat (scripts)"
+community: "Community 987"
 location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Check_Vendor_Compat_scripts
+  - community/Community_987
 ---
 
 # warn()
@@ -16,4 +16,4 @@ tags:
 - [[check_hermes()]] - `calls` [EXTRACTED]
 - [[check_openclaw()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Check_Vendor_Compat_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_987

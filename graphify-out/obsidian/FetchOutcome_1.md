@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_citation_verifier.py"
 type: "code"
-community: "Citation Verifier"
+community: "Community 171"
 location: "L33"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Citation_Verifier
+  - community/Community_171
 ---
 
 # FetchOutcome
@@ -22,4 +22,4 @@ tags:
 - [[FetchOutcome]] - `uses` [INFERRED]
 - [[IntelReportStore]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Citation_Verifier
+#graphify/code #graphify/INFERRED #community/Community_171

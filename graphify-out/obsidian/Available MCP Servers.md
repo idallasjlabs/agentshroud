@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-mcpm/SKILL.md"
 type: "document"
-community: "Skill (i-mcpm)"
+community: "Community 1010"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-mcpm
+  - community/Community_1010
 ---
 
 # Available MCP Servers
@@ -17,4 +17,4 @@ tags:
 - [[3. AWS API MCP]] - `contains` [EXTRACTED]
 - [[Skill MCP Tools Usage (MCP-TOOLS)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-mcpm
+#graphify/document #graphify/EXTRACTED #community/Community_1010

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-03-gateway-components.svg"
 type: "image"
-community: "Trust Manager.py (Security Modules)"
+community: "Community 1259"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Trust_Managerpy_Security_Modules
+  - community/Community_1259
 ---
 
 # Approval Queue (gateway diagram)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Approval Queue (SQLite)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Trust_Managerpy_Security_Modules
+#graphify/image #graphify/EXTRACTED #community/Community_1259

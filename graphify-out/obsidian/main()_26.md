@@ -1,28 +1,25 @@
 ---
-source_file: "skills/openclaw/model-usage/scripts/model_usage.py"
+source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "code"
-community: "Model Usage (scripts)"
-location: "L235"
+community: "Community 143"
+location: "L431"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Model_Usage_scripts
+  - community/Community_143
 ---
 
 # main()
 
 ## Connections
-- [[aggregate_costs()]] - `calls` [EXTRACTED]
-- [[build_json_all()]] - `calls` [EXTRACTED]
-- [[build_json_current()]] - `calls` [EXTRACTED]
-- [[eprint()]] - `calls` [EXTRACTED]
-- [[filter_by_days()]] - `calls` [EXTRACTED]
-- [[latest_day_cost()]] - `calls` [EXTRACTED]
-- [[load_payload()]] - `calls` [EXTRACTED]
-- [[model_usage.py]] - `contains` [EXTRACTED]
-- [[parse_daily_entries()]] - `calls` [EXTRACTED]
-- [[pick_current_model()]] - `calls` [EXTRACTED]
-- [[render_text_all()]] - `calls` [EXTRACTED]
-- [[render_text_current()]] - `calls` [EXTRACTED]
+- [[._take_screenshot()_3]] - `calls` [EXTRACTED]
+- [[.click()_3]] - `calls` [EXTRACTED]
+- [[.close()_20]] - `calls` [EXTRACTED]
+- [[.extract()_3]] - `calls` [EXTRACTED]
+- [[.fill_field()_3]] - `calls` [EXTRACTED]
+- [[.navigate()_3]] - `calls` [EXTRACTED]
+- [[CLI interface for SecureBrowser_3]] - `rationale_for` [EXTRACTED]
+- [[SecureBrowser_3]] - `calls` [EXTRACTED]
+- [[browse.py_3]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Model_Usage_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_143

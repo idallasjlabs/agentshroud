@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "Security Audit & Watchtower Tests"
+community: "Community 116"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Audit__Watchtower_Tests
+  - community/Community_116
 ---
 
 # prompt_guard.py
@@ -31,4 +31,4 @@ tags:
 - [[state.py]] - `imports_from` [EXTRACTED]
 - [[test_multilingual_injection.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests
+#graphify/code #graphify/EXTRACTED #community/Community_116

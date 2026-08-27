@@ -1,16 +1,16 @@
 ---
 source_file: ".agents/skills/i-aws/README.md"
 type: "document"
-community: "Skill (i-aws)"
+community: "Community 518"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-aws
+  - community/Community_518
 ---
 
 # AWS Cloud Management & FinOps README
 
 ## Connections
-- [[AWS Cloud Management & FinOps Agent_2]] - `references` [EXTRACTED]
+- [[AWS Cloud Management & FinOps Agent_3]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-aws
+#graphify/document #graphify/EXTRACTED #community/Community_518

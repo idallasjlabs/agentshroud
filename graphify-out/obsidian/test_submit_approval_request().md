@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_queue.py"
 type: "code"
-community: "Approval Queue"
+community: "Community 43"
 location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Queue
+  - community/Community_43
 ---
 
 # test_submit_approval_request()
@@ -16,4 +16,4 @@ tags:
 - [[Test submitting an approval request]] - `rationale_for` [EXTRACTED]
 - [[test_approval_queue.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Queue
+#graphify/code #graphify/EXTRACTED #community/Community_43

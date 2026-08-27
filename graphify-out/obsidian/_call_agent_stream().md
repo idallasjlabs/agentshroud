@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "code"
-community: "Voice Latency Guard"
+community: "Community 103"
 location: "L722"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Voice_Latency_Guard
+  - community/Community_103
 ---
 
 # _call_agent_stream()
@@ -33,4 +33,4 @@ tags:
 - [[test_ws_volume_command_intercepted()]] - `conceptually_related_to` [INFERRED]
 - [[voice_endpoint()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Voice_Latency_Guard
+#graphify/code #graphify/EXTRACTED #community/Community_103

@@ -1,20 +1,26 @@
 ---
-source_file: "docker/config/hermes/skills/i-atlas/README.md"
+source_file: ".agents/skills/i-atlas/SKILL.md"
 type: "document"
-community: "Readme (i-atlas)"
-location: "L1"
+community: "Community 658"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-atlas
+  - community/Community_658
 ---
 
 # Atlas — Curriculum Architect
 
 ## Connections
-- [[Purpose_39]] - `contains` [EXTRACTED]
-- [[README_44]] - `contains` [EXTRACTED]
-- [[Related Skills_42]] - `contains` [EXTRACTED]
-- [[Usage_44]] - `contains` [EXTRACTED]
+- [[Input Requirements_2]] - `contains` [EXTRACTED]
+- [[OKE Channel — CPA Exam Context]] - `contains` [EXTRACTED]
+- [[Output Format_1]] - `contains` [EXTRACTED]
+- [[Persona_1]] - `contains` [EXTRACTED]
+- [[Quality Checklist_2]] - `contains` [EXTRACTED]
+- [[Role_6]] - `contains` [EXTRACTED]
+- [[SKILL_6]] - `contains` [EXTRACTED]
+- [[System Prompt_1]] - `contains` [EXTRACTED]
+- [[User Prompt Template_1]] - `contains` [EXTRACTED]
+- [[User Prompt Template — OKE Channel]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-atlas
+#graphify/document #graphify/EXTRACTED #community/Community_658

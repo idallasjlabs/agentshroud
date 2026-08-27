@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Api (web)"
+community: "Community 273"
 location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Api_web
+  - community/Community_273
 ---
 
 # _bot_service_names()
@@ -21,4 +21,4 @@ tags:
 - [[test_config.py]] - `imports` [EXTRACTED]
 - [[ws_logs()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Api_web
+#graphify/code #graphify/EXTRACTED #community/Community_273

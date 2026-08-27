@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-athena/SKILL.md"
 type: "concept"
-community: "Skill (i-athena)"
+community: "Community 1477"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Skill_i-athena
+  - community/Community_1477
 ---
 
 # curriculum.md (input requirement)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[curriculum.md output]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Skill_i-athena
+#graphify/concept #graphify/EXTRACTED #community/Community_1477

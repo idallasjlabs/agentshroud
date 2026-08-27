@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/dashboard.py"
 type: "rationale"
-community: "Dashboard"
+community: "Community 0"
 location: "L402"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Dashboard
+  - community/Community_0
 ---
 
 # Return collaborator data from the shared bot workspace volume.      Reads COLLAB
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_collaborators()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Dashboard
+#graphify/rationale #graphify/EXTRACTED #community/Community_0

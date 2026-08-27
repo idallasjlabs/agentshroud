@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "docs/vault"
+community: "Community 246"
 location: "L70"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Community_246
 ---
 
 # Step 4: Restart Claude Code
 
 ## Connections
-- [[1. GitHub MCP Authentication Reset_1]] - `contains` [EXTRACTED]
+- [[1. GitHub MCP Authentication Reset_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Community_246

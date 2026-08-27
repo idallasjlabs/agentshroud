@@ -1,11 +1,11 @@
 ---
 source_file: "docs/claude-security-audit-prompt.md"
 type: "concept"
-community: "Claude Security Audit Prompt (docs)"
+community: "Community 413"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Claude_Security_Audit_Prompt_docs
+  - community/Community_413
 ---
 
 # Steve Hay's External Reviewer Findings
@@ -15,4 +15,4 @@ tags:
 - [[pii_sanitizer module (disabled — false positives)]] - `references` [EXTRACTED]
 - [[prompt_guard module (observatory mode — too aggressive for enforce)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Claude_Security_Audit_Prompt_docs
+#graphify/concept #graphify/EXTRACTED #community/Community_413

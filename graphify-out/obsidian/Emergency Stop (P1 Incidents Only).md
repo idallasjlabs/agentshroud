@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-ps/SKILL.md"
 type: "document"
-community: "Skill (i-ps)"
+community: "Community 408"
 location: "L134"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-ps
+  - community/Community_408
 ---
 
 # Emergency Stop (P1 Incidents Only)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[8. Service Control Commands]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-ps
+#graphify/document #graphify/EXTRACTED #community/Community_408

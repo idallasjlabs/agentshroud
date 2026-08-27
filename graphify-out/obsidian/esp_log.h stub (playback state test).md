@@ -1,13 +1,13 @@
 ---
 source_file: "firmware/voice-terminal/test/test_playback_state/stubs/esp_log.h"
 type: "code"
-community: "Esp Log (stubs)"
+community: "Community 1718"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Esp_Log_stubs
+  - community/Community_1718
 ---
 
 # esp_log.h stub (playback state test)
 
-#graphify/code #graphify/EXTRACTED #community/Esp_Log_stubs
+#graphify/code #graphify/EXTRACTED #community/Community_1718

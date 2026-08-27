@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/PUBLISH-TO-CLAWHUB.md"
 type: "document"
-community: "Publish To Clawhub (reference)"
+community: "Community 1043"
 location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Publish_To_Clawhub_reference
+  - community/Community_1043
 ---
 
 # 📋 Detailed Step-by-Step
@@ -20,4 +20,4 @@ tags:
 - [[Step 5 Verify Publication]] - `contains` [EXTRACTED]
 - [[Step 6 Test Installation (Optional)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Publish_To_Clawhub_reference
+#graphify/document #graphify/EXTRACTED #community/Community_1043

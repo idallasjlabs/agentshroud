@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/Dockerfile.gateway.md"
 type: "document"
-community: "Deployment (runbooks)"
+community: "Community 120"
 location: "L88"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Deployment_runbooks
+  - community/Community_120
 ---
 
 # Runtime Command
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Dockerfile — Gateway]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Deployment_runbooks
+#graphify/document #graphify/EXTRACTED #community/Community_120

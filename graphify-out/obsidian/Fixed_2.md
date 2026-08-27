@@ -1,17 +1,17 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "Planning Docs"
-location: "L160"
+community: "Community 1342"
+location: "L119"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Community_1342
 ---
 
 # Fixed
 
 ## Connections
-- [[1.2.4 — releasev1.2.4 (2026-06-29)]] - `contains` [EXTRACTED]
+- [[1.5.1 A2A Governance (2026-08-22)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Community_1342

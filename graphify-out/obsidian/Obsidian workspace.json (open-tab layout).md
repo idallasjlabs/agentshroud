@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/.obsidian/workspace.json"
 type: "document"
-community: "Workspace (.obsidian)"
+community: "Community 1491"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Workspace_obsidian
+  - community/Community_1491
 ---
 
 # Obsidian workspace.json (open-tab layout)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Startup Flow Diagram (vault note)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Workspace_obsidian
+#graphify/document #graphify/EXTRACTED #community/Community_1491

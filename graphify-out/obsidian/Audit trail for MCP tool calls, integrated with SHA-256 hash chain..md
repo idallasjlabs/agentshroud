@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_audit.py"
 type: "rationale"
-community: "Mcp Audit (proxy)"
+community: "Community 201"
 location: "L56"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Mcp_Audit_proxy
+  - community/Community_201
 ---
 
 # Audit trail for MCP tool calls, integrated with SHA-256 hash chain.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MCPAuditTrail]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Mcp_Audit_proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_201

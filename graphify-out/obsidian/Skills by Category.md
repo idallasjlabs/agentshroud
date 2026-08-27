@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md"
 type: "document"
-community: "Skills Guide (i-reference)"
+community: "Community 876"
 location: "L176"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skills_Guide_i-reference
+  - community/Community_876
 ---
 
 # Skills by Category
@@ -25,4 +25,4 @@ tags:
 - [[System Utilities]] - `contains` [EXTRACTED]
 - [[Workflow_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skills_Guide_i-reference
+#graphify/document #graphify/EXTRACTED #community/Community_876

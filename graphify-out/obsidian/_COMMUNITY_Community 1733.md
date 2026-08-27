@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Diagram 13 Network Security Egress (PNG)]] - image - docs/diagrams/images/diagram-13-network-security-egress.png
+- [[SCRUM-154 hung WebSocket client must not wedge the approval lock]] - rationale - gateway/tests/test_enhanced_approval.py
 
 ## Live Query (requires Dataview plugin)
 

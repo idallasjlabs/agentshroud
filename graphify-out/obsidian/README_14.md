@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-mac/README.md"
 type: "document"
-community: "Readme (i-mac)"
+community: "Community 1157"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-mac
+  - community/Community_1157
 ---
 
 # README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[macOS System Administrator (MAC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-mac
+#graphify/document #graphify/EXTRACTED #community/Community_1157

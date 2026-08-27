@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "Egress Monitor"
+community: "Community 14"
 location: "L157"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress_Monitor
+  - community/Community_14
 ---
 
 # get_sanitizer_stats()
@@ -18,4 +18,4 @@ tags:
 - [[LogSanitizer_1]] - `calls` [EXTRACTED]
 - [[log_sanitizer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress_Monitor
+#graphify/code #graphify/EXTRACTED #community/Community_14

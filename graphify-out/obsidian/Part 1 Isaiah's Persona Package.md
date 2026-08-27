@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/PHASE3_REQUIREMENTS.md"
 type: "document"
-community: "Phase3 Requirements (architecture)"
+community: "Community 352"
 location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase3_Requirements_architecture
+  - community/Community_352
 ---
 
 # Part 1: Isaiah's Persona Package
@@ -18,4 +18,4 @@ tags:
 - [[Phase 3 Requirements Working Chat Container]] - `contains` [EXTRACTED]
 - [[Professional Context (for relevant responses)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase3_Requirements_architecture
+#graphify/document #graphify/EXTRACTED #community/Community_352

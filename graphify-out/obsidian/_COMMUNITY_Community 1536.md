@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_openclaw_soul_has_no_refuse_directive()]] - code - gateway/tests/test_config_validation.py
-- [[OpenClaw SOUL.md must carry the same 'never blanket-refuse cannot connect' direc]] - rationale - gateway/tests/test_config_validation.py
+- [[SlackAPIProxy Socket Mode Relay (apps.connections.open) Tests]] - code - gateway/tests/test_slack_proxy.py
+- [[SlackSocketClient events_api Envelope Processing Tests]] - code - gateway/tests/test_slack_socket_client.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -17,9 +17,3 @@ members: 2
 TABLE source_file, type FROM #community/Community_1536
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Architecture Docs]]
-
-## Top bridge nodes
-- [[.test_openclaw_soul_has_no_refuse_directive()]] - degree 2, connects to 1 community

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-cd/SKILL.md"
 type: "document"
-community: "Skill (i-data)"
+community: "Community 848"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Skill_i-data
+  - community/Community_848
 ---
 
 # CD Skill (Continuous Delivery pipeline design)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[CICD Pipeline Advisor (SKILL)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Skill_i-data
+#graphify/document #graphify/INFERRED #community/Community_848

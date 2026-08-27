@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/wakeword.c"
 type: "code"
-community: "Playback State (test_playback_state)"
-location: "L397"
+community: "Community 166"
+location: "L416"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Playback_State_test_playback_state
+  - community/Community_166
 ---
 
 # wakeword_triggered()
@@ -14,6 +14,7 @@ tags:
 ## Connections
 - [[_on_vg_state()]] - `calls` [INFERRED]
 - [[_send_status_beacon()]] - `calls` [INFERRED]
+- [[_touch_pressed()]] - `calls` [INFERRED]
 - [[_touch_start_only()]] - `calls` [INFERRED]
 - [[playback_step()]] - `calls` [INFERRED]
 - [[playback_step() — reproduces tts_task's gate-opendrain branches for testing]] - `calls` [EXTRACTED]
@@ -28,4 +29,4 @@ tags:
 - [[voice_task()]] - `calls` [INFERRED]
 - [[wakeword.c]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Playback_State_test_playback_state
+#graphify/code #graphify/INFERRED #community/Community_166

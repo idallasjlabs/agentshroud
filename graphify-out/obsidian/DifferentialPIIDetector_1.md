@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_differential_pii_detector.py"
 type: "code"
-community: "Differential Pii Detector"
+community: "Community 47"
 location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Differential_Pii_Detector
+  - community/Community_47
 ---
 
 # DifferentialPIIDetector
@@ -44,4 +44,4 @@ tags:
 - [[PIIHitSeverity]] - `uses` [INFERRED]
 - [[detector()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Differential_Pii_Detector
+#graphify/code #graphify/EXTRACTED #community/Community_47

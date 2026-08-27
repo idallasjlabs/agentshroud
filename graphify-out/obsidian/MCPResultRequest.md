@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Ingest API Main & Models"
+community: "Community 9"
 location: "L781"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Ingest_API_Main__Models
+  - community/Community_9
 ---
 
 # MCPResultRequest
@@ -31,4 +31,4 @@ tags:
 - [[main.py_2]] - `contains` [EXTRACTED]
 - [[mcp_result_endpoint()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Ingest_API_Main__Models
+#graphify/code #graphify/INFERRED #community/Community_9

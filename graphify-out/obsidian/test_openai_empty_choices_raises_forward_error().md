@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router_openai_translation.py"
 type: "code"
-community: "Router"
+community: "Community 38"
 location: "L150"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Router
+  - community/Community_38
 ---
 
 # test_openai_empty_choices_raises_forward_error()
@@ -16,4 +16,4 @@ tags:
 - [[Empty choices list raises ForwardError.]] - `rationale_for` [EXTRACTED]
 - [[test_router_openai_translation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Router
+#graphify/code #graphify/EXTRACTED #community/Community_38

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md"
 type: "document"
-community: "Error index (07 - Errors & Troubleshooting)"
+community: "Community 938"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Error_index_07_-_Errors__Troubleshooting
+  - community/Community_938
 ---
 
 # Prompt Injection Blocks.md
@@ -16,4 +16,4 @@ tags:
 - [[PII Pipeline Errors_1]] - `semantically_similar_to` [INFERRED]
 - [[Prompt Injection Blocks_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Error_index_07_-_Errors__Troubleshooting
+#graphify/document #graphify/EXTRACTED #community/Community_938

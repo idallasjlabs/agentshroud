@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.2/v1.2.0-master-plan.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Community 98"
 location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Community_98
 ---
 
 # Workstream A — Groups & Teamwork in OpenClaw
@@ -19,4 +19,4 @@ tags:
 - [[Out of scope]] - `contains` [EXTRACTED]
 - [[Tests to add]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Community_98

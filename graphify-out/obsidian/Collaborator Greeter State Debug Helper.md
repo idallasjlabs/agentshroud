@@ -1,13 +1,13 @@
 ---
 source_file: "scripts/verify-greeter-state.sh"
 type: "code"
-community: "Verify Greeter State (scripts)"
+community: "Community 1757"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Verify_Greeter_State_scripts
+  - community/Community_1757
 ---
 
 # Collaborator Greeter State Debug Helper
 
-#graphify/code #graphify/EXTRACTED #community/Verify_Greeter_State_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_1757

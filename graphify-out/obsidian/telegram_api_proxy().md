@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Telegram Proxy Multibot"
+community: "Community 273"
 location: "L4576"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Multibot
+  - community/Community_273
 ---
 
 # telegram_api_proxy()
@@ -27,4 +27,4 @@ tags:
 - [[test_security_fixes.py]] - `imports` [EXTRACTED]
 - [[test_telegram_proxy_multibot.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Multibot
+#graphify/code #graphify/EXTRACTED #community/Community_273

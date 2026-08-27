@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: "A2a Proxy"
+community: "Community 107"
 location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2a_Proxy
+  - community/Community_107
 ---
 
 # _StubForwarder
@@ -39,4 +39,4 @@ tags:
 - [[test_process_inbound_request_task_ownership_violation_blocked()]] - `references` [EXTRACTED]
 - [[test_process_inbound_request_unknown_token_is_blocked()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2a_Proxy
+#graphify/code #graphify/EXTRACTED #community/Community_107

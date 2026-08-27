@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-eightd/SKILL.md"
 type: "document"
-community: "Skill (i-eightd)"
+community: "Community 224"
 location: "L60"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-eightd
+  - community/Community_224
 ---
 
 # D0 — Planning & Scoping
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[The 8D Investigation Process]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-eightd
+#graphify/document #graphify/EXTRACTED #community/Community_224

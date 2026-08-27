@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_trust_scoring.py"
 type: "code"
-community: "A2a Integration"
+community: "Community 104"
 location: "L156"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2a_Integration
+  - community/Community_104
 ---
 
 # test_generic_denial_does_not_record_a2a_specific_violation_types()
@@ -20,4 +20,4 @@ tags:
 - [[_jsonrpc()_2]] - `calls` [EXTRACTED]
 - [[test_a2a_trust_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2a_Integration
+#graphify/code #graphify/EXTRACTED #community/Community_104

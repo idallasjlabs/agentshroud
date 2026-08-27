@@ -1,13 +1,13 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "code"
-community: "Server (voice_gateway)"
+community: "Community 1830"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Server_voice_gateway
+  - community/Community_1830
 ---
 
 # voice_gateway/server.py
 
-#graphify/code #graphify/EXTRACTED #community/Server_voice_gateway
+#graphify/code #graphify/EXTRACTED #community/Community_1830

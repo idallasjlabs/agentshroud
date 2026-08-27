@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_store.py"
 type: "code"
-community: "Approval Store"
+community: "Community 24"
 location: "L90"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Store
+  - community/Community_24
 ---
 
 # test_expired_items_on_reload()
@@ -18,4 +18,4 @@ tags:
 - [[_make_item()]] - `calls` [EXTRACTED]
 - [[test_approval_store.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Store
+#graphify/code #graphify/EXTRACTED #community/Community_24

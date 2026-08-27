@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/cron_state_monitor.py"
 type: "code"
-community: "Cron State Monitor"
+community: "Community 102"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Cron_State_Monitor
+  - community/Community_102
 ---
 
 # cron_state_monitor.py
@@ -16,4 +16,4 @@ tags:
 - [[JobState]] - `contains` [EXTRACTED]
 - [[daily_cve_report.py]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Cron_State_Monitor
+#graphify/code #graphify/EXTRACTED #community/Community_102

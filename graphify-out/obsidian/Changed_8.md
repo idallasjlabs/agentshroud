@@ -1,12 +1,12 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "Docker Deploy Scripts"
-location: "L913"
+community: "Community 646"
+location: "L1055"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Community_646
 ---
 
 # Changed
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[0.2.0 - 2026-02-17]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/document #graphify/EXTRACTED #community/Community_646

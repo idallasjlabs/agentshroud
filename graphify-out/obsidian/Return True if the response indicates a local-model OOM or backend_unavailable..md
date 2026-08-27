@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "rationale"
-community: "Llm Proxy (proxy)"
-location: "L233"
+community: "Community 108"
+location: "L279"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Llm_Proxy_proxy
+  - community/Community_108
 ---
 
 # Return True if the response indicates a local-model OOM or backend_unavailable.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._is_local_oom()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Llm_Proxy_proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_108

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/redteam/feature-priorities.md"
 type: "document"
-community: "V0.7.0 Remediation Plan (redteam)"
+community: "Community 393"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/V070_Remediation_Plan_redteam
+  - community/Community_393
 ---
 
 # Enterprise Security Feature Priorities
@@ -16,4 +16,4 @@ tags:
 - [[Outbound Information Filter Planning]] - `references` [EXTRACTED]
 - [[Separation of Privilege Planning]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/V070_Remediation_Plan_redteam
+#graphify/document #graphify/EXTRACTED #community/Community_393

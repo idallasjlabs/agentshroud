@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/github/SKILL.md"
 type: "document"
-community: "Skill (github)"
+community: "Community 672"
 location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_github
+  - community/Community_672
 ---
 
 # GitHub Skill
@@ -21,4 +21,4 @@ tags:
 - [[When NOT to Use_1]] - `contains` [EXTRACTED]
 - [[When to Use_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_github
+#graphify/document #graphify/EXTRACTED #community/Community_672

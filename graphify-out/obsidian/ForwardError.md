@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "code"
-community: "Router"
+community: "Community 38"
 location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Router
+  - community/Community_38
 ---
 
 # ForwardError
@@ -29,4 +29,4 @@ tags:
 - [[test_router_openai_translation.py]] - `imports` [EXTRACTED]
 - [[test_router_streaming.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Router
+#graphify/code #graphify/EXTRACTED #community/Community_38

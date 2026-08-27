@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/skills/i-production/README.md"
 type: "document"
-community: "Readme (i-production)"
+community: "Community 1238"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-production
+  - community/Community_1238
 ---
 
 # Usage
 
 ## Connections
-- [[Incident Response (INCIDENT)_1]] - `contains` [EXTRACTED]
+- [[Incident Response (INCIDENT)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-production
+#graphify/document #graphify/EXTRACTED #community/Community_1238

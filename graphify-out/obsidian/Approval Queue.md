@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/README.md"
+source_file: "docs/vault/01 - Architecture/Shutdown & Recovery.md"
 type: "document"
-community: "Readme (gateway)"
-location: "L53"
+community: "Community 312"
+location: "L169"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_gateway
+  - community/Community_312
 ---
 
 # Approval Queue
 
 ## Connections
-- [[Features_4]] - `contains` [EXTRACTED]
+- [[Data Integrity After Crash]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_gateway
+#graphify/document #graphify/EXTRACTED #community/Community_312

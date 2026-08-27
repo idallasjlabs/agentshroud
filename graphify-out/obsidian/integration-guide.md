@@ -1,12 +1,12 @@
 ---
 source_file: "docs/api/integration-guide.md"
 type: "document"
-community: "Integration Guide (api)"
+community: "Community 520"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Integration_Guide_api
+  - community/Community_520
 ---
 
 # integration-guide.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Integration Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Integration_Guide_api
+#graphify/document #graphify/EXTRACTED #community/Community_520

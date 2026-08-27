@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md"
 type: "document"
-community: "Http Proxy.py (Proxy Layer)"
+community: "Community 378"
 location: "L204"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Http_Proxypy_Proxy_Layer
+  - community/Community_378
 ---
 
 # Related
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[http_proxy.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Http_Proxypy_Proxy_Layer
+#graphify/document #graphify/EXTRACTED #community/Community_378

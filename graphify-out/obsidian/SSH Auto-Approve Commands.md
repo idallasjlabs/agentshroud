@@ -1,11 +1,11 @@
 ---
 source_file: "docs/ssh-configuration.md"
 type: "concept"
-community: "Claude Security Audit Prompt (docs)"
+community: "Community 910"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Claude_Security_Audit_Prompt_docs
+  - community/Community_910
 ---
 
 # SSH Auto-Approve Commands
@@ -14,4 +14,4 @@ tags:
 - [[Approval Request Workflow (user-facing)]] - `semantically_similar_to` [INFERRED]
 - [[SSH Proxy Config Schema (agentshroud.yaml ssh section)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Claude_Security_Audit_Prompt_docs
+#graphify/concept #graphify/EXTRACTED #community/Community_910

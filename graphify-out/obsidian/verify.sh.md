@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/verify.sh"
 type: "code"
-community: "Config"
+community: "Community 1325"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Config
+  - community/Community_1325
 ---
 
 # verify.sh
@@ -17,4 +17,4 @@ tags:
 - [[sanitizer.py]] - `references` [EXTRACTED]
 - [[verify.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Config
+#graphify/code #graphify/EXTRACTED #community/Community_1325

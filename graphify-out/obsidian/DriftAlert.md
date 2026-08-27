@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/drift_detector.py"
 type: "code"
-community: "Security Hardening"
+community: "Community 14"
 location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Hardening
+  - community/Community_14
 ---
 
 # DriftAlert
@@ -15,4 +15,4 @@ tags:
 - [[.check_drift()]] - `references` [EXTRACTED]
 - [[drift_detector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Hardening
+#graphify/code #graphify/EXTRACTED #community/Community_14

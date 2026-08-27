@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-browser/package.json"
 type: "code"
-community: "Package (i-browser)"
+community: "Community 827"
 location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Package_i-browser
+  - community/Community_827
 ---
 
 # main
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[package.json]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Package_i-browser
+#graphify/code #graphify/EXTRACTED #community/Community_827

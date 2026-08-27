@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/i-atlas/README.md"
 type: "document"
-community: "Readme (i-atlas)"
+community: "Community 1179"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-atlas
+  - community/Community_1179
 ---
 
 # Related Skills
 
 ## Connections
-- [[Atlas — Curriculum Architect_1]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-atlas
+#graphify/document #graphify/EXTRACTED #community/Community_1179

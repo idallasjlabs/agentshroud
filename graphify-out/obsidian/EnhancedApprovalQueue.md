@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "Enhanced Approval"
+community: "Community 24"
 location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enhanced_Approval
+  - community/Community_24
 ---
 
 # EnhancedApprovalQueue
@@ -53,11 +53,14 @@ tags:
 - [[TestMCPProxyIntegration]] - `uses` [INFERRED]
 - [[TestPersistence]] - `uses` [INFERRED]
 - [[TestToolRiskClassification]] - `uses` [INFERRED]
+- [[ToolRiskConfig_1]] - `uses` [INFERRED]
+- [[ToolRiskPolicy_1]] - `uses` [INFERRED]
 - [[_FakeApprovalQueue]] - `uses` [INFERRED]
 - [[_HangingWebSocket_1]] - `uses` [INFERRED]
 - [[_real_queue()]] - `calls` [EXTRACTED]
 - [[enhanced_queue()]] - `calls` [EXTRACTED]
 - [[enhanced_queue.py]] - `contains` [EXTRACTED]
+- [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[list_security_modules()]] - `shares_data_with` [EXTRACTED]
 - [[main.py_3]] - `references` [EXTRACTED]
@@ -70,4 +73,4 @@ tags:
 - [[test_submit_does_not_deadlock_on_hung_websocket_client()_1]] - `calls` [EXTRACTED]
 - [[test_websocket_notifications()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enhanced_Approval
+#graphify/code #graphify/EXTRACTED #community/Community_24

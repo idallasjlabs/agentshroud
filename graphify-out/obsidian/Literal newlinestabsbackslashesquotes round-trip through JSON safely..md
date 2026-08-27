@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_bots_ssh_exec_wrapper.py"
 type: "rationale"
-community: "Bots Ssh Exec Wrapper"
+community: "Community 140"
 location: "L247"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Bots_Ssh_Exec_Wrapper
+  - community/Community_140
 ---
 
 # Literal newlines/tabs/backslashes/quotes round-trip through JSON safely.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_shell_payload_builder_encodes_newlines_and_tabs()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Bots_Ssh_Exec_Wrapper
+#graphify/rationale #graphify/EXTRACTED #community/Community_140

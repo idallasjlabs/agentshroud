@@ -1,17 +1,18 @@
 ---
-source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md"
+source_file: "docs/planning/reviews/phase-review-2026-02-24.md"
 type: "document"
-community: "Security Docs"
-location: "L141"
+community: "Community 727"
+location: "L228"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Community_727
 ---
 
 # Summary
 
 ## Connections
-- [[AgentShroud v0.8.0 — Blue Team Security Assessment (Final)]] - `contains` [EXTRACTED]
+- [[AgentShroud Phase Review — 2026-02-23]] - `contains` [EXTRACTED]
+- [[AgentShroud Phase Review — 2026-02-24]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Community_727

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Telegram Proxy Inbound"
+community: "Community 543"
 location: "L8635"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Inbound
+  - community/Community_543
 ---
 
 # _forward_file_download returns dict with _raw_body, _content_type, _status_code.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_forward_file_download_returns_raw_body_sentinel()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Inbound
+#graphify/rationale #graphify/EXTRACTED #community/Community_543

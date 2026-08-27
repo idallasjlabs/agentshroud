@@ -1,18 +1,19 @@
 ---
-source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md"
+source_file: "docs/planning/reviews/phase-review-2026-03-05-r3.md"
 type: "document"
-community: "Planning Docs"
-location: "L170"
+community: "Community 728"
+location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Community_728
 ---
 
 # Summary
 
 ## Connections
-- [[Blue Team Security Assessment — AgentShroud v0.8.0 Round 2]] - `contains` [EXTRACTED]
-- [[Overall Security Posture STRONG 🟢]] - `contains` [EXTRACTED]
+- [[AgentShroud v0.8.0 Peer Review Round 3 (FINAL)]] - `contains` [EXTRACTED]
+- [[AgentShroud v0.8.0 — Peer Review Round 3 (FINAL)]] - `contains` [EXTRACTED]
+- [[Test Results]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Community_728

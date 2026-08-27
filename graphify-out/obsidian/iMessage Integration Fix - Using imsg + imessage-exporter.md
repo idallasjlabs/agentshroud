@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/IMESSAGE_FIX.md"
 type: "document"
-community: "Secrets Usage And Collaborator (security)"
+community: "Community 236"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Secrets_Usage_And_Collaborator_security
+  - community/Community_236
 ---
 
 # iMessage Integration Fix - Using imsg + imessage-exporter
@@ -18,6 +18,6 @@ tags:
 - [[Status_10]] - `contains` [EXTRACTED]
 - [[The Fix]] - `contains` [EXTRACTED]
 - [[The Problem_1]] - `contains` [EXTRACTED]
-- [[Verification_12]] - `contains` [EXTRACTED]
+- [[Verification_18]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Secrets_Usage_And_Collaborator_security
+#graphify/document #graphify/EXTRACTED #community/Community_236

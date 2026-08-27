@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-architecture-review/SKILL.md"
 type: "document"
-community: "Skill (i-architecture-review)"
+community: "Community 1418"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-architecture-review
+  - community/Community_1418
 ---
 
 # Skill: architecture-review
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SKILL_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-architecture-review
+#graphify/document #graphify/EXTRACTED #community/Community_1418

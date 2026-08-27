@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "document"
-community: "Adr 009 Enforce By (adr)"
+community: "Community 367"
 location: "L788"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Adr_009_Enforce_By_adr
+  - community/Community_367
 ---
 
 # SOC Dashboard
@@ -16,4 +16,4 @@ tags:
 - [[Approval Queue (human-in-the-loop)]] - `shares_data_with` [EXTRACTED]
 - [[gatewaysocrouter.py (SOC Shared Command Layer)]] - `implements` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Adr_009_Enforce_By_adr
+#graphify/document #graphify/EXTRACTED #community/Community_367

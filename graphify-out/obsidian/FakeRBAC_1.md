@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Telegram Inbound Proxy Tests"
+community: "Community 2"
 location: "L136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Telegram_Inbound_Proxy_Tests
+  - community/Community_2
 ---
 
 # FakeRBAC
@@ -235,4 +235,4 @@ tags:
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Telegram_Inbound_Proxy_Tests
+#graphify/code #graphify/EXTRACTED #community/Community_2

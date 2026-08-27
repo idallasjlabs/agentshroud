@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Runtime/compose_generator.py.md"
 type: "document"
-community: "Compose Generator.py (Runtime)"
+community: "Community 729"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Compose_Generatorpy_Runtime
+  - community/Community_729
 ---
 
 # compose_generator.py
@@ -21,4 +21,4 @@ tags:
 - [[Responsibilities_25]] - `contains` [EXTRACTED]
 - [[compose_generator.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Compose_Generatorpy_Runtime
+#graphify/document #graphify/EXTRACTED #community/Community_729

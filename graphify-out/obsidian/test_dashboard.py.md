@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dashboard.py"
 type: "code"
-community: "Dashboard"
+community: "Community 0"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Dashboard
+  - community/Community_0
 ---
 
 # test_dashboard.py
@@ -44,4 +44,4 @@ tags:
 - [[test_ws_egress_receives_privacy_event()]] - `contains` [EXTRACTED]
 - [[test_ws_egress_receives_scanner_event()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Dashboard
+#graphify/code #graphify/EXTRACTED #community/Community_0

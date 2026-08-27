@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-production/SKILL.md"
 type: "document"
-community: "Skill (i-production)"
+community: "Community 519"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-production
+  - community/Community_519
 ---
 
 # Skill: Incident Response (INCIDENT)
@@ -18,4 +18,4 @@ tags:
 - [[SKILL_43]] - `contains` [EXTRACTED]
 - [[Severity Matrix]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-production
+#graphify/document #graphify/EXTRACTED #community/Community_519

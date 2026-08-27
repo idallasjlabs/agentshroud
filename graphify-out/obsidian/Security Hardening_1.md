@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/RELEASE-PLAN.md"
 type: "document"
-community: "Release Plan (planning)"
+community: "Community 628"
 location: "L417"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Release_Plan_planning
+  - community/Community_628
 ---
 
 # Security Hardening
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[v1.3.0 — Platform Expansion (53 items)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Release_Plan_planning
+#graphify/document #graphify/EXTRACTED #community/Community_628

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-mac/SKILL.md"
 type: "document"
-community: "Skill (i-mac)"
+community: "Community 802"
 location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-mac
+  - community/Community_802
 ---
 
 # Phase 1 — Raw Collection
@@ -24,4 +24,4 @@ tags:
 - [[9. Browser Extensions (optional but useful)_1]] - `contains` [EXTRACTED]
 - [[Discovery Strategy_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-mac
+#graphify/document #graphify/EXTRACTED #community/Community_802

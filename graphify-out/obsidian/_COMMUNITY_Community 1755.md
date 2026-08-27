@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[OpenClaw Memory Context]] - document - docker/config/openclaw/workspace/memory/context.md
+- [[SecureBrowser.detect_captcha()]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
 
 ## Live Query (requires Dataview plugin)
 

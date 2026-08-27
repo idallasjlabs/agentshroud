@@ -1,20 +1,22 @@
 ---
-source_file: "docs/security/SECURITY_SCRIPTS_REFERENCE.md"
+source_file: "docs/runbooks/RUNBOOK.md"
 type: "document"
-community: "Security Scripts Reference (security)"
-location: "L277"
+community: "Community 682"
+location: "L53"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Scripts_Reference_security
+  - community/Community_682
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[AgentShroud Security Scripts Reference]] - `contains` [EXTRACTED]
-- [[killswitch.sh doesn't confirm]] - `contains` [EXTRACTED]
-- [[scan.sh reports missing OpenSCAP]] - `contains` [EXTRACTED]
-- [[verify-security.sh fails]] - `contains` [EXTRACTED]
+- [[Fatal glibc error Cannot allocate TLS block]] - `contains` [EXTRACTED]
+- [[AgentShroud Deployment & Troubleshooting Runbook]] - `contains` [EXTRACTED]
+- [[Colima won't start]] - `contains` [EXTRACTED]
+- [[Container starts but unhealthy]] - `contains` [EXTRACTED]
+- [[Docker says Cannot connect to Docker daemon]] - `contains` [EXTRACTED]
+- [[Tests failing after deploy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Scripts_Reference_security
+#graphify/document #graphify/EXTRACTED #community/Community_682

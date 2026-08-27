@@ -1,17 +1,17 @@
 ---
 source_file: "docs/security/CREDENTIAL-SECURITY-POLICY.md"
 type: "document"
-community: "Credential Security Policy (security)"
+community: "Community 849"
 location: "L34"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Credential_Security_Policy_security
+  - community/Community_849
 ---
 
 # Option 1: Gateway-Level Filtering (Recommended)
 
 ## Connections
-- [[Implementation Strategy]] - `contains` [EXTRACTED]
+- [[Implementation Strategy_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Credential_Security_Policy_security
+#graphify/document #graphify/EXTRACTED #community/Community_849

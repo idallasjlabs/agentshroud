@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "rationale"
-community: "Daily Cve Report"
-location: "L767"
+community: "Community 451"
+location: "L771"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Daily_Cve_Report
+  - community/Community_451
 ---
 
 # 2026-08-04 fix: Hermes zero-CVE heartbeats confused the owner because         th
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_hermes_zero_stays_silent_via_all_agents()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Daily_Cve_Report
+#graphify/rationale #graphify/EXTRACTED #community/Community_451

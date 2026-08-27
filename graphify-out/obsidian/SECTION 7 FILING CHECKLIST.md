@@ -1,12 +1,12 @@
 ---
 source_file: "docs/USPTO_TRADEMARK_APPLICATION.md"
 type: "document"
-community: "Uspto Provisional Patent Application (docs)"
+community: "Community 807"
 location: "L227"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Uspto_Provisional_Patent_Application_docs
+  - community/Community_807
 ---
 
 # SECTION 7: FILING CHECKLIST
@@ -18,4 +18,4 @@ tags:
 - [[Post-Filing]] - `contains` [EXTRACTED]
 - [[Pre-Filing Preparation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Uspto_Provisional_Patent_Application_docs
+#graphify/document #graphify/EXTRACTED #community/Community_807

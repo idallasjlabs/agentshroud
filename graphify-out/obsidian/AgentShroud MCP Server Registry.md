@@ -1,11 +1,11 @@
 ---
 source_file: ".mcp.json"
 type: "document"
-community: ".mcp"
+community: "Community 717"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mcp
+  - community/Community_717
 ---
 
 # AgentShroud MCP Server Registry
@@ -24,4 +24,4 @@ tags:
 - [[Safari MCP Server]] - `references` [EXTRACTED]
 - [[XMind MCP Server]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mcp
+#graphify/document #graphify/EXTRACTED #community/Community_717

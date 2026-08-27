@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/update-agentshroud.sh"
 type: "code"
-community: "Run Standalone (hermes)"
+community: "Community 530"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Run_Standalone_hermes
+  - community/Community_530
 ---
 
 # update-agentshroud.sh
@@ -18,4 +18,4 @@ tags:
 - [[run-standalone.sh]] - `references` [EXTRACTED]
 - [[update-agentshroud.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Run_Standalone_hermes
+#graphify/code #graphify/EXTRACTED #community/Community_530

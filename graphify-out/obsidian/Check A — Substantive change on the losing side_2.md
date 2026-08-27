@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-ab/SKILL.md"
 type: "document"
-community: "Skill (i-ab)"
+community: "Community 616"
 location: "L91"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-ab
+  - community/Community_616
 ---
 
 # Check A — Substantive change on the losing side?
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Step 4 — Triage each finding_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-ab
+#graphify/document #graphify/EXTRACTED #community/Community_616

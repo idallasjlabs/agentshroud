@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/Dockerfile.bot.md"
 type: "document"
-community: "Deployment (runbooks)"
+community: "Community 120"
 location: "L45"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Deployment_runbooks
+  - community/Community_120
 ---
 
 # Security Patches Applied at Build Time
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Dockerfile — Bot (OpenClaw)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Deployment_runbooks
+#graphify/document #graphify/EXTRACTED #community/Community_120

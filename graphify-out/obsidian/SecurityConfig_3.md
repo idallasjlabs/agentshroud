@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "All Modules Enforce"
+community: "Community 6"
 location: "L135"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/All_Modules_Enforce
+  - community/Community_6
 ---
 
 # SecurityConfig
@@ -43,4 +43,4 @@ tags:
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_enforce_defaults.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/All_Modules_Enforce
+#graphify/code #graphify/EXTRACTED #community/Community_6

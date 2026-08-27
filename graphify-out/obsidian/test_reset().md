@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_module_stats.py"
 type: "code"
-community: "Module Stats"
+community: "Community 256"
 location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Stats
+  - community/Community_256
 ---
 
 # test_reset()
@@ -15,4 +15,4 @@ tags:
 - [[ModuleStatsCollector]] - `calls` [EXTRACTED]
 - [[test_module_stats.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Stats
+#graphify/code #graphify/EXTRACTED #community/Community_256

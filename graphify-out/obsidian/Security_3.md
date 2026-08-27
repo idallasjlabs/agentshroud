@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-icloud/SKILL.md"
+source_file: "CHANGELOG.md"
 type: "document"
-community: "Skill (i-icloud)"
-location: "L135"
+community: "Community 1276"
+location: "L329"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-icloud
+  - community/Community_1276
 ---
 
 # Security
 
 ## Connections
-- [[iCloud Services_1]] - `contains` [EXTRACTED]
+- [[1.2.3 — releasev1.2.3 (2026-06-29)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-icloud
+#graphify/document #graphify/EXTRACTED #community/Community_1276

@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/agentshroud-redteam/SKILL.md"
+source_file: "skills/custom/agentshroud-blueteam/SKILL.md"
 type: "document"
-community: "Skill (agentshroud-redteam)"
-location: "L367"
+community: "Community 599"
+location: "L150"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_agentshroud-redteam
+  - community/Community_599
 ---
 
 # Infrastructure
 
 ## Connections
-- [[AgentShroud Red Team Adversarial Tester_3]] - `contains` [EXTRACTED]
+- [[AgentShroud Blue Team Security Auditor_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_agentshroud-redteam
+#graphify/document #graphify/EXTRACTED #community/Community_599

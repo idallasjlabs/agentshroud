@@ -1,21 +1,20 @@
 ---
-source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
+source_file: "docs/operations/raspberry-pi.md"
 type: "document"
-community: "Browser Fetch Skill (reference)"
-location: "L237"
+community: "Community 417"
+location: "L123"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser_Fetch_Skill_reference
+  - community/Community_417
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Browser-Fetch Skill for 1Password Share Links]] - `contains` [EXTRACTED]
-- [[Problem 1Password link shows only page shell]] - `contains` [EXTRACTED]
-- [[Problem Browser binaries not found]] - `contains` [EXTRACTED]
-- [[Problem Permission denied executing browser]] - `contains` [EXTRACTED]
-- [[Problem Skill not auto-discovered by bot]] - `contains` [EXTRACTED]
+- [[Container Won't Start_2]] - `contains` [EXTRACTED]
+- [[Deploying AgentShroud on Raspberry Pi (aarch64)]] - `contains` [EXTRACTED]
+- [[Out-of-Memory (OOM) Kills]] - `contains` [EXTRACTED]
+- [[Slow Builds]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser_Fetch_Skill_reference
+#graphify/document #graphify/EXTRACTED #community/Community_417

@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-data/SKILL.md"
 type: "document"
-community: "Skill (i-data)"
+community: "Community 848"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Skill_i-data
+  - community/Community_848
 ---
 
 # Data Validation (DATA-VAL) Skill
@@ -16,4 +16,4 @@ tags:
 - [[Data Validation README]] - `conceptually_related_to` [INFERRED]
 - [[fluenceenergy-ops-data-lakehouse (275TB S3 Data Lake)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/Skill_i-data
+#graphify/document #graphify/INFERRED #community/Community_848

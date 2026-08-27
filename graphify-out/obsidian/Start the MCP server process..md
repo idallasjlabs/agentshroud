@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "Mcp Proxy Coverage"
+community: "Community 1540"
 location: "L102"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Mcp_Proxy_Coverage
+  - community/Community_1540
 ---
 
 # Start the MCP server process.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.start()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Mcp_Proxy_Coverage
+#graphify/rationale #graphify/EXTRACTED #community/Community_1540

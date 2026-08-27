@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[__init__.py_10]] - code - gateway/skills/__init__.py
+- [[test_bot_boot_static.sh — static bot boot assembly assertions]] - code - tests/startup_smoke/test_bot_boot_static.sh
 
 ## Live Query (requires Dataview plugin)
 

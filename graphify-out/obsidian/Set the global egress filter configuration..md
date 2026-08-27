@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_config.py"
 type: "rationale"
-community: "Module Group 240"
-location: "L270"
+community: "Community 251"
+location: "L331"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_240
+  - community/Community_251
 ---
 
 # Set the global egress filter configuration.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[set_egress_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_240
+#graphify/rationale #graphify/EXTRACTED #community/Community_251

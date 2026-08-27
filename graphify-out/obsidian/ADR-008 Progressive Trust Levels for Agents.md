@@ -1,19 +1,21 @@
 ---
 source_file: "docs/architecture/adr/ADR-008-progressive-trust-levels.md"
-type: "rationale"
-community: "Module Group 261"
-location: "line 1"
+type: "document"
+community: "Community 792"
+location: "L1"
 tags:
-  - graphify/rationale
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_261
+  - community/Community_792
 ---
 
 # ADR-008: Progressive Trust Levels for Agents
 
 ## Connections
-- [[ADR-009 Enforce-by-Default Security Philosophy]] - `references` [EXTRACTED]
-- [[Progressive Trust Level System (Levels 0-4)]] - `defines` [EXTRACTED]
-- [[Trust Score Calculation (base + behavioral + compliance - violations - anomaly)]] - `specifies` [EXTRACTED]
+- [[ADR-008-progressive-trust-levels]] - `contains` [EXTRACTED]
+- [[Consequences_7]] - `contains` [EXTRACTED]
+- [[Context_7]] - `contains` [EXTRACTED]
+- [[Decision_9]] - `contains` [EXTRACTED]
+- [[Status_7]] - `contains` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_261
+#graphify/document #graphify/EXTRACTED #community/Community_792

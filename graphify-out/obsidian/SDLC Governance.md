@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-sdlc/SKILL.md"
 type: "document"
-community: "Skill (i-scrum)"
+community: "Community 1482"
 tags:
   - graphify/document
   - graphify/AMBIGUOUS
-  - community/Skill_i-scrum
+  - community/Community_1482
 ---
 
 # SDLC Governance
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Scrum Ceremony Facilitation]] - `conceptually_related_to` [AMBIGUOUS]
 
-#graphify/document #graphify/AMBIGUOUS #community/Skill_i-scrum
+#graphify/document #graphify/AMBIGUOUS #community/Community_1482

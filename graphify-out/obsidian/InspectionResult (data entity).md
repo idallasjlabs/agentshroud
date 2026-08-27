@@ -1,11 +1,11 @@
 ---
 source_file: "docs/data/data-dictionary.md"
 type: "concept"
-community: "Adr 005 Sha256 Hash (adr)"
+community: "Community 170"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Adr_005_Sha256_Hash_adr
+  - community/Community_170
 ---
 
 # InspectionResult (data entity)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[SecurityFinding (data entity)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Adr_005_Sha256_Hash_adr
+#graphify/concept #graphify/EXTRACTED #community/Community_170

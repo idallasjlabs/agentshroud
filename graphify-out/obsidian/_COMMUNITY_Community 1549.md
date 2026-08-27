@@ -1,15 +1,17 @@
 ---
 type: community
-members: 2
+members: 4
 ---
 
 # Community 1549
 
-**Members:** 2 nodes
+**Members:** 4 nodes
 
 ## Members
-- [[.test_initialization()_3]] - code - gateway/tests/test_prompt_protection.py
-- [[Test proper initialization of PromptProtection.]] - rationale - gateway/tests/test_prompt_protection.py
+- [[.test_blocked_command_with_fullwidth_mention_and_punctuation_is_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_blocked_command_with_zero_width_mention_and_punctuation_is_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[Fullwidth + mentionpunctuation blocked command variants should still be quarant]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Zero-width + mentionpunctuation blocked command variants should still be quaran]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +21,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_docsrunbooks]]
+- 10 edges to [[_COMMUNITY_Community 2]]
+- 2 edges to [[_COMMUNITY_Community 32]]
 
 ## Top bridge nodes
-- [[.test_initialization()_3]] - degree 2, connects to 1 community
+- [[.test_blocked_command_with_zero_width_mention_and_punctuation_is_quarantined()]] - degree 8, connects to 2 communities
+- [[.test_blocked_command_with_fullwidth_mention_and_punctuation_is_quarantined()]] - degree 7, connects to 2 communities

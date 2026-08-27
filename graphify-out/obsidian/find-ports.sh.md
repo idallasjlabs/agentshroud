@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/find-ports.sh"
 type: "code"
-community: "Port Manager"
+community: "Community 95"
 location: "L1"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Port_Manager
+  - community/Community_95
 ---
 
 # find-ports.sh
@@ -15,4 +15,4 @@ tags:
 - [[PortManager]] - `semantically_similar_to` [INFERRED]
 - [[find-ports.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Port_Manager
+#graphify/code #graphify/INFERRED #community/Community_95

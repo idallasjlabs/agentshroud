@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/agentshroud-blueteam/SKILL.md"
 type: "document"
-community: "Skill (agentshroud-blueteam)"
+community: "Community 599"
 location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_agentshroud-blueteam
+  - community/Community_599
 ---
 
 # Phase 1: Code-Level Module Audit
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Audit Procedure_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_agentshroud-blueteam
+#graphify/document #graphify/EXTRACTED #community/Community_599

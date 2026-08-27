@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md"
 type: "document"
-community: "Prompt injection blocks (07 - Errors & Troubleshooting)"
+community: "Community 938"
 location: "L69"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Prompt_injection_blocks_07_-_Errors__Troubleshooting
+  - community/Community_938
 ---
 
 # Prompt Injection in Monitor Mode
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Prompt Injection Blocks_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Prompt_injection_blocks_07_-_Errors__Troubleshooting
+#graphify/document #graphify/EXTRACTED #community/Community_938

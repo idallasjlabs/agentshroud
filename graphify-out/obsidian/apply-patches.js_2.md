@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/JavaScript/apply-patches.js.md"
 type: "document"
-community: "Apply Patches.js (JavaScript)"
+community: "Community 761"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Apply_Patchesjs_JavaScript
+  - community/Community_761
 ---
 
 # apply-patches.js
@@ -20,4 +20,4 @@ tags:
 - [[Why Required]] - `contains` [EXTRACTED]
 - [[apply-patches.js_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Apply_Patchesjs_JavaScript
+#graphify/document #graphify/EXTRACTED #community/Community_761

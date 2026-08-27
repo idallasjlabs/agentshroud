@@ -1,12 +1,12 @@
 ---
 source_file: "branding/README.md"
 type: "document"
-community: "Readme (branding)"
+community: "Community 168"
 location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_branding
+  - community/Community_168
 ---
 
 # Logo Usage
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Logos]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_branding
+#graphify/document #graphify/EXTRACTED #community/Community_168

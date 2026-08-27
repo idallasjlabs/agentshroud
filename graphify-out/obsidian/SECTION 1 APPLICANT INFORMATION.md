@@ -1,12 +1,12 @@
 ---
 source_file: "docs/USPTO_TRADEMARK_APPLICATION.md"
 type: "document"
-community: "Uspto Trademark Application (docs)"
+community: "Community 668"
 location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Uspto_Trademark_Application_docs
+  - community/Community_668
 ---
 
 # SECTION 1: APPLICANT INFORMATION
@@ -16,4 +16,4 @@ tags:
 - [[1.2 Attorney Information]] - `contains` [EXTRACTED]
 - [[AgentShroud -- USPTO Trademark Application]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Uspto_Trademark_Application_docs
+#graphify/document #graphify/EXTRACTED #community/Community_668

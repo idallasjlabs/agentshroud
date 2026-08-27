@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/graphify/SKILL.md"
 type: "document"
-community: "Skill (graphify)"
+community: "Community 356"
 location: "L146"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_graphify
+  - community/Community_356
 ---
 
 # Step 3 - Extract entities and relationships
@@ -17,4 +17,4 @@ tags:
 - [[Part C - Merge AST + semantic into final extraction_1]] - `contains` [EXTRACTED]
 - [[What You Must Do When Invoked_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_graphify
+#graphify/document #graphify/EXTRACTED #community/Community_356

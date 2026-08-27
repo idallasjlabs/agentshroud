@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/incident-response.md"
 type: "document"
-community: "Incident Response (operations)"
+community: "Community 1589"
 location: "L152"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Incident_Response_operations
+  - community/Community_1589
 ---
 
 # Container Escape Attempt
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[P1 Critical Incidents]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Incident_Response_operations
+#graphify/document #graphify/EXTRACTED #community/Community_1589

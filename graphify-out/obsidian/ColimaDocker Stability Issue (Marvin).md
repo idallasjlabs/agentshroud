@@ -1,11 +1,11 @@
 ---
 source_file: "docs/project/TELEGRAM_ISSUES.md"
 type: "rationale"
-community: "Telegram Issues (project)"
+community: "Community 514"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Issues_project
+  - community/Community_514
 ---
 
 # Colima/Docker Stability Issue (Marvin)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[TELEGRAM_ISSUES]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Issues_project
+#graphify/rationale #graphify/EXTRACTED #community/Community_514

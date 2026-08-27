@@ -1,12 +1,12 @@
 ---
 source_file: "docs/ssh-capability.md"
 type: "document"
-community: "V1.2.0 Master Plan (v1.2)"
+community: "Community 594"
 location: "L105"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/V120_Master_Plan_v12
+  - community/Community_594
 ---
 
 # Request/Response Models (`gateway/ingest_api/models.py`)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Components_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/V120_Master_Plan_v12
+#graphify/document #graphify/EXTRACTED #community/Community_594

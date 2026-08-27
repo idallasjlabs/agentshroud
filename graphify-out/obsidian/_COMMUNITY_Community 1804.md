@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[__init__.py_15]] - code - gateway/utils/__init__.py
+- [[Security Scanner Aggregation and Scorecard Tests]] - code - gateway/tests/test_scanner_integration.py
 
 ## Live Query (requires Dataview plugin)
 

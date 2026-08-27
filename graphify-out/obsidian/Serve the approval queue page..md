@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/management.py"
 type: "rationale"
-community: "Management (web)"
+community: "Community 1857"
 location: "L51"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Management_web
+  - community/Community_1857
 ---
 
 # Serve the approval queue page.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[approvals()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Management_web
+#graphify/rationale #graphify/EXTRACTED #community/Community_1857

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "A2a Policy (security)"
+community: "Community 1001"
 location: "L77"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/A2a_Policy_security
+  - community/Community_1001
 ---
 
 # A2AMethod
@@ -42,4 +42,4 @@ tags:
 - [[test_a2a_policy_default_failclosed.py]] - `imports` [EXTRACTED]
 - [[test_a2a_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/A2a_Policy_security
+#graphify/code #graphify/INFERRED #community/Community_1001

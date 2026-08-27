@@ -1,11 +1,11 @@
 ---
 source_file: "docs/api/integration-guide.md"
 type: "document"
-community: "Diagram 03 Gateway Components (images)"
+community: "Community 170"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Diagram_03_Gateway_Components_images
+  - community/Community_170
 ---
 
 # MCP Server Integration Guide
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[MCP Proxy]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Diagram_03_Gateway_Components_images
+#graphify/document #graphify/INFERRED #community/Community_170

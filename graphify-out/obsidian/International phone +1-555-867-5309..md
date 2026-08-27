@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "Security Audit"
+community: "Community 14"
 location: "L81"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Audit
+  - community/Community_14
 ---
 
 # International phone: +1-555-867-5309.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_phone_international()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Audit
+#graphify/rationale #graphify/EXTRACTED #community/Community_14

@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[i-pca SKILL (Pre-Change Analysis)]] - document - docker/config/hermes/skills/i-pca/SKILL.md
+- [[PostgreSQL RDS (fe-gsdl-poc-database)]] - concept - docker/config/openclaw/skills/i-qa/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

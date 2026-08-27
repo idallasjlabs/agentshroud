@@ -1,18 +1,19 @@
 ---
 source_file: ".agents/skills/i-icloud/SKILL.md"
 type: "document"
-community: "Skill (i-icloud)"
+community: "Community 316"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-icloud
+  - community/Community_316
 ---
 
 # iCloud Services
 
 ## Connections
 - [[Calendar Operations]] - `contains` [EXTRACTED]
+- [[Configuration]] - `contains` [EXTRACTED]
 - [[Contact Operations]] - `contains` [EXTRACTED]
 - [[Key Configuration]] - `contains` [EXTRACTED]
 - [[Mail Operations]] - `contains` [EXTRACTED]
@@ -20,6 +21,6 @@ tags:
 - [[SKILL_25]] - `contains` [EXTRACTED]
 - [[Security]] - `contains` [EXTRACTED]
 - [[Setup]] - `contains` [EXTRACTED]
-- [[Troubleshooting]] - `contains` [EXTRACTED]
+- [[Troubleshooting_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-icloud
+#graphify/document #graphify/EXTRACTED #community/Community_316

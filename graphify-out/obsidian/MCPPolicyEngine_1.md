@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy.py"
 type: "code"
-community: "Mcp Policy"
+community: "Community 34"
 location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Mcp_Policy
+  - community/Community_34
 ---
 
 # MCPPolicyEngine
@@ -52,4 +52,4 @@ tags:
 - [[test_server_and_tool_matching_is_case_insensitive()]] - `references` [EXTRACTED]
 - [[test_unknown_server_is_denied_by_default()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Mcp_Policy
+#graphify/code #graphify/EXTRACTED #community/Community_34

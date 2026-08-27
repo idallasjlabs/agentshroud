@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-oracle/README.md"
 type: "document"
-community: "Readme (i-oracle)"
+community: "Community 1162"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-oracle
+  - community/Community_1162
 ---
 
 # Purpose
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Oracle — Feedback Analyst]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-oracle
+#graphify/document #graphify/EXTRACTED #community/Community_1162

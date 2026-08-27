@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_monitor.py"
 type: "code"
-community: "Egress Monitor"
+community: "Community 442"
 location: "L61"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress_Monitor
+  - community/Community_442
 ---
 
 # EgressSummary
@@ -15,4 +15,4 @@ tags:
 - [[.daily_summary()]] - `references` [EXTRACTED]
 - [[egress_monitor.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress_Monitor
+#graphify/code #graphify/EXTRACTED #community/Community_442

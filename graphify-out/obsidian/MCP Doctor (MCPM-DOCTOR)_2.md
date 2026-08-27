@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mcpm-doctor/README.md"
 type: "document"
-community: "Readme (i-mcpm-doctor)"
+community: "Community 1232"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-mcpm-doctor
+  - community/Community_1232
 ---
 
 # MCP Doctor (MCPM-DOCTOR)
@@ -17,4 +17,4 @@ tags:
 - [[Related Skills_100]] - `contains` [EXTRACTED]
 - [[Usage_102]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-mcpm-doctor
+#graphify/document #graphify/EXTRACTED #community/Community_1232

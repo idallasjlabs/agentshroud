@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-eightd/SKILL.md"
 type: "document"
-community: "Skill (i-eightd)"
+community: "Community 224"
 location: "L58"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-eightd
+  - community/Community_224
 ---
 
 # The 8D Investigation Process
@@ -23,4 +23,4 @@ tags:
 - [[D7 — Systemic Prevention]] - `contains` [EXTRACTED]
 - [[D8 — Documentation & Recognition]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-eightd
+#graphify/document #graphify/EXTRACTED #community/Community_224

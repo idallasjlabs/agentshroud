@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/colima-docker-guide.md"
 type: "document"
-community: "Colima Docker Guide (runbooks)"
+community: "Community 149"
 location: "L186"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Colima_Docker_Guide_runbooks
+  - community/Community_149
 ---
 
 # Named volumes for this project
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[6. Volume Management]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Colima_Docker_Guide_runbooks
+#graphify/document #graphify/EXTRACTED #community/Community_149

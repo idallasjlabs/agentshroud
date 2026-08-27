@@ -1,18 +1,17 @@
 ---
-source_file: "docs/architecture/WORKSPACE_DECISION.md"
+source_file: "docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md"
 type: "document"
-community: "Workspace Usage (architecture)"
-location: "L23"
+community: "Community 209"
+location: "L495"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Workspace_Usage_architecture
+  - community/Community_209
 ---
 
-# Configuration
+# Configuration:
 
 ## Connections
-- [[Current Setup (Kept)]] - `contains` [EXTRACTED]
-- [[Workspace Configuration Decision]] - `contains` [EXTRACTED]
+- [[Recommended Configuration for Your Use Case]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Workspace_Usage_architecture
+#graphify/document #graphify/EXTRACTED #community/Community_209

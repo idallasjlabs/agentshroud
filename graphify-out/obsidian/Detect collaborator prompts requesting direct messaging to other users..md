@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Telegram Proxy Core"
-location: "L1761"
+community: "Community 1347"
+location: "L1863"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Core
+  - community/Community_1347
 ---
 
 # Detect collaborator prompts requesting direct messaging to other users.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._looks_like_cross_user_messaging_request()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Core
+#graphify/rationale #graphify/EXTRACTED #community/Community_1347

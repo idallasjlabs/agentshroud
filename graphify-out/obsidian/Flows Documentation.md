@@ -1,12 +1,12 @@
 ---
 source_file: "docs/flows/README.md"
 type: "document"
-community: "Diagram 09 Data Lineage (images)"
+community: "Community 353"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Diagram_09_Data_Lineage_images
+  - community/Community_353
 ---
 
 # Flows Documentation
@@ -16,4 +16,4 @@ tags:
 - [[Planned Documents_2]] - `contains` [EXTRACTED]
 - [[README_121]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Diagram_09_Data_Lineage_images
+#graphify/document #graphify/EXTRACTED #community/Community_353

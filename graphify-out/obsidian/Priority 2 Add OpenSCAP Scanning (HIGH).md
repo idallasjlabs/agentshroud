@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md"
 type: "document"
-community: "Security Value Proposition Revised (security)"
+community: "Community 284"
 location: "L395"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Value_Proposition_Revised_security
+  - community/Community_284
 ---
 
 # Priority 2: Add OpenSCAP Scanning (HIGH)
@@ -15,4 +15,4 @@ tags:
 - [[Create scan.sh Script]] - `contains` [EXTRACTED]
 - [[Immediate Action Plan (Phase 3A - Completion)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Value_Proposition_Revised_security
+#graphify/document #graphify/EXTRACTED #community/Community_284

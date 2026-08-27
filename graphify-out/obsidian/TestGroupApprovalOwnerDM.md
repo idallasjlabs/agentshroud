@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_approval_routing.py"
 type: "code"
-community: "Approval Queue"
+community: "Community 121"
 location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Queue
+  - community/Community_121
 ---
 
 # TestGroupApprovalOwnerDM
@@ -22,4 +22,4 @@ tags:
 - [[Owner must receive a DM when an approval originates from a group chat.]] - `rationale_for` [EXTRACTED]
 - [[test_group_approval_routing.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Queue
+#graphify/code #graphify/EXTRACTED #community/Community_121

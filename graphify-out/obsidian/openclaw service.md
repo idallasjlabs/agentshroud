@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Runtime/compose_generator.py.md"
 type: "document"
-community: "Compose Generator.py (Runtime)"
+community: "Community 729"
 location: "L58"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Compose_Generatorpy_Runtime
+  - community/Community_729
 ---
 
 # openclaw service
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Default Service Configuration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Compose_Generatorpy_Runtime
+#graphify/document #graphify/EXTRACTED #community/Community_729

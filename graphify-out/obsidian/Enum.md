@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "Tool Chain & CVE Triage"
+community: "Community 78"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tool_Chain__CVE_Triage
+  - community/Community_78
 ---
 
 # Enum
@@ -55,7 +55,6 @@ tags:
 - [[RiskLevel]] - `inherits` [EXTRACTED]
 - [[RiskLevel_1]] - `inherits` [EXTRACTED]
 - [[RiskLevel_2]] - `inherits` [EXTRACTED]
-- [[RiskLevel_7]] - `inherits` [EXTRACTED]
 - [[RiskLevel_3]] - `inherits` [EXTRACTED]
 - [[RiskLevel_4]] - `inherits` [EXTRACTED]
 - [[RiskLevel_6]] - `inherits` [EXTRACTED]
@@ -84,7 +83,6 @@ tags:
 - [[browse.py]] - `imports_from` [EXTRACTED]
 - [[browse.py_1]] - `imports_from` [EXTRACTED]
 - [[browse.py_2]] - `imports_from` [EXTRACTED]
-- [[browse.py_4]] - `imports_from` [EXTRACTED]
 - [[browse.py_3]] - `imports_from` [EXTRACTED]
 - [[browser_security.py]] - `imports_from` [EXTRACTED]
 - [[cross_bot_trust_ledger.py]] - `imports_from` [EXTRACTED]
@@ -126,4 +124,4 @@ tags:
 - [[web_content_scanner.py]] - `imports_from` [EXTRACTED]
 - [[web_proxy.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Tool_Chain__CVE_Triage
+#graphify/code #graphify/EXTRACTED #community/Community_78

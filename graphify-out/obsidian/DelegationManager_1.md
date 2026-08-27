@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_delegation.py"
 type: "code"
-community: "Delegation"
+community: "Community 77"
 location: "L24"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Delegation
+  - community/Community_77
 ---
 
 # DelegationManager
@@ -18,4 +18,4 @@ tags:
 - [[DelegationPrivilege]] - `uses` [INFERRED]
 - [[mgr()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Delegation
+#graphify/code #graphify/INFERRED #community/Community_77

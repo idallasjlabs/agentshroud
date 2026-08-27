@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[pre-commit-hook.sh]] - code - scripts/pre-commit-hook.sh
-- [[pre-commit-hook.sh script]] - code - scripts/pre-commit-hook.sh
+- [[installapiruntimes endpoint]] - concept - gateway/web/templates/installer.html
+- [[loadRuntimes()]] - code - gateway/web/templates/installer.html
 
 ## Live Query (requires Dataview plugin)
 

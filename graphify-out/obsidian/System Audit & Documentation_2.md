@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-sad/SKILL.md"
 type: "document"
-community: "Skill (i-sad)"
+community: "Community 618"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-sad
+  - community/Community_618
 ---
 
 # System Audit & Documentation
@@ -27,4 +27,4 @@ tags:
 - [[SECTION 9 — ERROR CATALOG_2]] - `contains` [EXTRACTED]
 - [[SKILL_173]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-sad
+#graphify/document #graphify/EXTRACTED #community/Community_618

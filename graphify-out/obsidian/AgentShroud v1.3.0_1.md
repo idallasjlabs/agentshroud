@@ -1,12 +1,12 @@
 ---
 source_file: "docs/testing/test-coverage-report.md"
 type: "document"
-community: "Coverage Report (testing)"
+community: "Community 1127"
 location: "L2"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Coverage_Report_testing
+  - community/Community_1127
 ---
 
 # AgentShroud v1.3.0
@@ -17,4 +17,4 @@ tags:
 - [[How to regenerate this report accurately]] - `contains` [EXTRACTED]
 - [[Test Coverage Report]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Coverage_Report_testing
+#graphify/document #graphify/EXTRACTED #community/Community_1127

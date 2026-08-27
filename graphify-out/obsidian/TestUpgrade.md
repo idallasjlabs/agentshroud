@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_agentshroud_manager.py"
 type: "code"
-community: "Agentshroud Manager"
+community: "Community 58"
 location: "L119"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Agentshroud_Manager
+  - community/Community_58
 ---
 
 # TestUpgrade
@@ -18,4 +18,4 @@ tags:
 - [[.test_successful_upgrade()]] - `method` [EXTRACTED]
 - [[test_agentshroud_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Agentshroud_Manager
+#graphify/code #graphify/EXTRACTED #community/Community_58

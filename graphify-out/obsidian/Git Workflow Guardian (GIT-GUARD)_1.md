@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-gg/README.md"
 type: "document"
-community: "Readme (i-gg)"
+community: "Community 1188"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-gg
+  - community/Community_1188
 ---
 
 # Git Workflow Guardian (GIT-GUARD)
@@ -17,4 +17,4 @@ tags:
 - [[Related Skills_51]] - `contains` [EXTRACTED]
 - [[Usage_54]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-gg
+#graphify/document #graphify/EXTRACTED #community/Community_1188

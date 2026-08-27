@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "rationale"
-community: "Middleware & Session Isolation"
+community: "Community 426"
 location: "L93"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Middleware__Session_Isolation
+  - community/Community_426
 ---
 
 # MiddlewareManager built via __new__ — every module attr explicitly None     so e
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[mm()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Middleware__Session_Isolation
+#graphify/rationale #graphify/EXTRACTED #community/Community_426

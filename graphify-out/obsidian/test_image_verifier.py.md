@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_image_verifier.py"
 type: "code"
-community: "Image Verifier"
+community: "Community 477"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Image_Verifier
+  - community/Community_477
 ---
 
 # test_image_verifier.py
@@ -23,4 +23,4 @@ tags:
 - [[verify_image()]] - `imports` [EXTRACTED]
 - [[verify_images()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Image_Verifier
+#graphify/code #graphify/EXTRACTED #community/Community_477

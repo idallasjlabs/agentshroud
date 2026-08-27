@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-qa/SKILL.md"
 type: "document"
-community: "Skill (i-qa)"
+community: "Community 431"
 location: "L246"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-qa
+  - community/Community_431
 ---
 
 # H. Service Control for Production Testing
@@ -18,4 +18,4 @@ tags:
 - [[H.4 Cleanup Verification Checklist]] - `contains` [EXTRACTED]
 - [[Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-qa
+#graphify/document #graphify/EXTRACTED #community/Community_431

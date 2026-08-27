@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "Soc Realtime Coverage"
+community: "Community 127"
 location: "L793"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Soc_Realtime_Coverage
+  - community/Community_127
 ---
 
 # TestWSSOCEndpoint
@@ -27,4 +27,4 @@ tags:
 - [[test_soc_realtime_coverage.py]] - `contains` [EXTRACTED]
 - [[ws_soc_endpoint()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Soc_Realtime_Coverage
+#graphify/code #graphify/EXTRACTED #community/Community_127

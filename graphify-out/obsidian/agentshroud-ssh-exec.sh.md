@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/agentshroud-ssh-exec.sh"
 type: "code"
-community: "Developer (workspace)"
+community: "Community 449"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Developer_workspace
+  - community/Community_449
 ---
 
 # agentshroud-ssh-exec.sh
@@ -24,4 +24,4 @@ tags:
 - [[openclaw-identity.md (OpenClaw bot identity)]] - `references` [EXTRACTED]
 - [[start-agentshroud.sh]] - `shares_data_with` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Developer_workspace
+#graphify/code #graphify/EXTRACTED #community/Community_449

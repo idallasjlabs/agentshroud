@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[AgentShroud FundingSponsorship (GitHub and Ko-fi)]] - document - .github/FUNDING.yml
+- [[app.json]] - code - docs/vault/.obsidian/app.json
 
 ## Live Query (requires Dataview plugin)
 

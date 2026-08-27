@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "code"
-community: "Ssh Write File Endpoint"
+community: "Community 12"
 location: "L241"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Ssh_Write_File_Endpoint
+  - community/Community_12
 ---
 
 # TestSSHValidateCwd
@@ -34,4 +34,4 @@ tags:
 - [[Unit tests for SSHProxy.validate_cwd().]] - `rationale_for` [EXTRACTED]
 - [[test_ssh_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Ssh_Write_File_Endpoint
+#graphify/code #graphify/INFERRED #community/Community_12

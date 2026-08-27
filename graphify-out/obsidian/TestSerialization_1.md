@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "code"
-community: "Session Manager"
+community: "Community 174"
 location: "L178"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Session_Manager
+  - community/Community_174
 ---
 
 # TestSerialization
@@ -17,4 +17,4 @@ tags:
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_session_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Session_Manager
+#graphify/code #graphify/INFERRED #community/Community_174

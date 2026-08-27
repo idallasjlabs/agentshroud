@@ -1,12 +1,12 @@
 ---
 source_file: "docs/TEAM.md"
 type: "document"
-community: "Team (docs)"
+community: "Community 470"
 location: "L40"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Team_docs
+  - community/Community_470
 ---
 
 # Data Engineers / Analysts
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Development Team]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Team_docs
+#graphify/document #graphify/EXTRACTED #community/Community_470

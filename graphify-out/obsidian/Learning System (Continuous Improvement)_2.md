@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-eightd/SKILL.md"
 type: "document"
-community: "Skill (i-eightd)"
+community: "Community 230"
 location: "L426"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-eightd
+  - community/Community_230
 ---
 
 # Learning System (Continuous Improvement)
@@ -17,4 +17,4 @@ tags:
 - [[Knowledge Base Schema_2]] - `contains` [EXTRACTED]
 - [[Pattern Matching for New Incidents_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-eightd
+#graphify/document #graphify/EXTRACTED #community/Community_230

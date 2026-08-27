@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/reviews/session-issue-register-2026-03-14.md"
+source_file: "CHANGELOG.md"
 type: "document"
-community: "Enforcement Audit V0.7.0 (reviews)"
-location: "L8"
+community: "Community 629"
+location: "L504"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Enforcement_Audit_V070_reviews
+  - community/Community_629
 ---
 
 # Summary
 
 ## Connections
-- [[AgentShroud Session Issue Register — 2026-03-14]] - `contains` [EXTRACTED]
+- [[1.1.1 — fixguard-wiring-and-ops-hardening (2026-06-10)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Enforcement_Audit_V070_reviews
+#graphify/document #graphify/EXTRACTED #community/Community_629

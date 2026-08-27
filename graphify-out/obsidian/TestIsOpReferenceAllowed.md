@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_op_proxy.py"
 type: "code"
-community: "Op Proxy"
+community: "Community 398"
 location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Op_Proxy
+  - community/Community_398
 ---
 
 # TestIsOpReferenceAllowed
@@ -22,4 +22,4 @@ tags:
 - [[.test_path_traversal_blocked()]] - `method` [EXTRACTED]
 - [[test_op_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Op_Proxy
+#graphify/code #graphify/EXTRACTED #community/Community_398

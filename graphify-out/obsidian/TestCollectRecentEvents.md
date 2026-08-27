@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "Soc Realtime Coverage"
+community: "Community 15"
 location: "L503"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Soc_Realtime_Coverage
+  - community/Community_15
 ---
 
 # TestCollectRecentEvents
@@ -25,4 +25,4 @@ tags:
 - [[collect_recent_events()]] - `calls` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Soc_Realtime_Coverage
+#graphify/code #graphify/INFERRED #community/Community_15

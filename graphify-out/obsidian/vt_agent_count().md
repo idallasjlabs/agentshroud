@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/app_main.c"
 type: "code"
-community: "Wakeword (main)"
+community: "Community 375"
 location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Wakeword_main
+  - community/Community_375
 ---
 
 # vt_agent_count()
@@ -16,4 +16,4 @@ tags:
 - [[app_main.c]] - `contains` [EXTRACTED]
 - [[wakeword_next_agent()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Wakeword_main
+#graphify/code #graphify/EXTRACTED #community/Community_375

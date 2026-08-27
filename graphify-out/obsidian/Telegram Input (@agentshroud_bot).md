@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-07-data-flow.svg"
 type: "concept"
-community: "Diagram 07 Data Flow (images)"
+community: "Community 409"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Diagram_07_Data_Flow_images
+  - community/Community_409
 ---
 
 # Telegram Input (@agentshroud_bot)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Receive message  cron trigger]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Diagram_07_Data_Flow_images
+#graphify/concept #graphify/EXTRACTED #community/Community_409

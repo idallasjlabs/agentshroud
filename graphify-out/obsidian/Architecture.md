@@ -1,12 +1,12 @@
 ---
 source_file: "README.md"
 type: "document"
-community: "Readme"
+community: "Community 521"
 location: "L100"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme
+  - community/Community_521
 ---
 
 # Architecture
@@ -16,4 +16,4 @@ tags:
 - [[AgentShroud™ README]] - `references` [EXTRACTED]
 - [[README_37]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme
+#graphify/document #graphify/EXTRACTED #community/Community_521

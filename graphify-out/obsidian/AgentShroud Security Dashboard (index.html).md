@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/dashboard/index.html"
 type: "code"
-community: "Queue (approval_queue)"
+community: "Community 69"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Queue_approval_queue
+  - community/Community_69
 ---
 
 # AgentShroud Security Dashboard (index.html)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[queue.py]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Queue_approval_queue
+#graphify/code #graphify/INFERRED #community/Community_69

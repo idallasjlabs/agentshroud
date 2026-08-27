@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/SOUL.md"
 type: "concept"
-community: "Trust Manager.py (Security Modules)"
+community: "Community 369"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Trust_Managerpy_Security_Modules
+  - community/Community_369
 ---
 
 # TrustManager
@@ -30,4 +30,4 @@ tags:
 - [[trust_manager (trust levels)]] - `conceptually_related_to` [EXTRACTED]
 - [[trust_manager.py_1]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Trust_Managerpy_Security_Modules
+#graphify/concept #graphify/EXTRACTED #community/Community_369

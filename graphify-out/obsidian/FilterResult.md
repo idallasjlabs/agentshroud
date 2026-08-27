@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "Security Audit & Watchtower Tests"
+community: "Community 22"
 location: "L54"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Security_Audit__Watchtower_Tests
+  - community/Community_22
 ---
 
 # FilterResult
@@ -23,4 +23,4 @@ tags:
 - [[outbound_filter.py]] - `contains` [EXTRACTED]
 - [[pipeline.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Security_Audit__Watchtower_Tests
+#graphify/code #graphify/INFERRED #community/Community_22

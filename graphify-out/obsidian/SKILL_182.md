@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-sre/SKILL.md"
 type: "document"
-community: "Skill (i-sre)"
+community: "Community 1470"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-sre
+  - community/Community_1470
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill sre_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-sre
+#graphify/document #graphify/EXTRACTED #community/Community_1470

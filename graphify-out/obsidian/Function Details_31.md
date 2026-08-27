@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/consent_framework.py.md"
 type: "document"
-community: "Consent Framework.py (Security Modules)"
+community: "Community 687"
 location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Consent_Frameworkpy_Security_Modules
+  - community/Community_687
 ---
 
 # Function Details
@@ -16,6 +16,7 @@ tags:
 - [[ConsentFramework.add_to_whitelist(command)  remove_from_whitelist(command)]] - `contains` [EXTRACTED]
 - [[ConsentFramework.get_whitelist()  get_blacklist()]] - `contains` [EXTRACTED]
 - [[ConsentFramework.validate_config(config)]] - `contains` [EXTRACTED]
+- [[ConsentFramework.validate_configs(configs)]] - `contains` [EXTRACTED]
 - [[consent_framework.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Consent_Frameworkpy_Security_Modules
+#graphify/document #graphify/EXTRACTED #community/Community_687

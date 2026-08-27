@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "concept"
-community: "Agentic Os (architecture)"
+community: "Community 1371"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Agentic_Os_architecture
+  - community/Community_1371
 ---
 
 # Codex CLI (TERTIARY agent)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Claude Code (PRIMARY agent)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Agentic_Os_architecture
+#graphify/concept #graphify/EXTRACTED #community/Community_1371

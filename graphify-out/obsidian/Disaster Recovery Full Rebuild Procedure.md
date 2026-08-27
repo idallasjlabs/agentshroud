@@ -1,11 +1,11 @@
 ---
 source_file: "docs/runbooks/backup-restore.md"
 type: "concept"
-community: "Daily Operations (runbooks)"
+community: "Community 859"
 tags:
   - graphify/concept
   - graphify/AMBIGUOUS
-  - community/Daily_Operations_runbooks
+  - community/Community_859
 ---
 
 # Disaster Recovery Full Rebuild Procedure
@@ -14,4 +14,4 @@ tags:
 - [[backup-restore]] - `references` [EXTRACTED]
 - [[raspberry-pi]] - `references` [AMBIGUOUS]
 
-#graphify/concept #graphify/AMBIGUOUS #community/Daily_Operations_runbooks
+#graphify/concept #graphify/AMBIGUOUS #community/Community_859

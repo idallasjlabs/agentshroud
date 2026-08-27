@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/alert_dispatcher.py"
 type: "rationale"
-community: "Alert Dispatcher (security)"
+community: "Community 262"
 location: "L221"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Alert_Dispatcher_security
+  - community/Community_262
 ---
 
 # Get dispatcher statistics.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_stats()_12]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Alert_Dispatcher_security
+#graphify/rationale #graphify/EXTRACTED #community/Community_262

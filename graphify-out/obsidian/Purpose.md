@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-apollo/README.md"
 type: "document"
-community: "Readme (i-apollo)"
+community: "Community 1144"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-apollo
+  - community/Community_1144
 ---
 
 # Purpose
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Apollo — Audio Systems Producer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-apollo
+#graphify/document #graphify/EXTRACTED #community/Community_1144

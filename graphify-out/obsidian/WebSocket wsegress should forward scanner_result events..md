@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dashboard.py"
 type: "rationale"
-community: "Dashboard"
+community: "Community 0"
 location: "L207"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Dashboard
+  - community/Community_0
 ---
 
 # WebSocket /ws/egress should forward scanner_result events.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_ws_egress_receives_scanner_event()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Dashboard
+#graphify/rationale #graphify/EXTRACTED #community/Community_0

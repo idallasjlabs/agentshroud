@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Diagram 07 Data Flow]] - image - docs/diagrams/images/diagram-07-data-flow.svg
+- [[Threat Intelligence]] - concept - docs/project/glossary.md
 
 ## Live Query (requires Dataview plugin)
 

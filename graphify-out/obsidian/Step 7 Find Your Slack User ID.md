@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup-slack.md"
 type: "document"
-community: "Setup Slack (docs)"
+community: "Community 305"
 location: "L96"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Slack_docs
+  - community/Community_305
 ---
 
 # Step 7: Find Your Slack User ID
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Slack Channel Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Slack_docs
+#graphify/document #graphify/EXTRACTED #community/Community_305

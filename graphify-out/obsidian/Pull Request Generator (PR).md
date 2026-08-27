@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-pr/README.md"
 type: "document"
-community: "Readme (i-pr)"
+community: "Community 1164"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-pr
+  - community/Community_1164
 ---
 
 # Pull Request Generator (PR)
@@ -17,4 +17,4 @@ tags:
 - [[Related Skills_26]] - `contains` [EXTRACTED]
 - [[Usage_26]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-pr
+#graphify/document #graphify/EXTRACTED #community/Community_1164

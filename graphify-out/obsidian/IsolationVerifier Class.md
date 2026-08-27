@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/per-agent-isolation.md"
 type: "concept"
-community: "Per Agent Isolation (architecture)"
+community: "Community 702"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Per_Agent_Isolation_architecture
+  - community/Community_702
 ---
 
 # IsolationVerifier Class
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[per-agent-isolation]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Per_Agent_Isolation_architecture
+#graphify/concept #graphify/EXTRACTED #community/Community_702

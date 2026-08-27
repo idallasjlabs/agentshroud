@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/patch-slack-sdk.sh"
 type: "code"
-community: "Start Agentshroud (scripts)"
+community: "Community 449"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Start_Agentshroud_scripts
+  - community/Community_449
 ---
 
 # patch-slack-sdk.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[patch-slack-sdk.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Start_Agentshroud_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_449

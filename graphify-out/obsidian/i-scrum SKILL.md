@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-scrum/SKILL.md"
 type: "document"
-community: "Skill (i-scrum)"
+community: "Community 1678"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-scrum
+  - community/Community_1678
 ---
 
 # i-scrum SKILL
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-scrum
+#graphify/document #graphify/EXTRACTED #community/Community_1678

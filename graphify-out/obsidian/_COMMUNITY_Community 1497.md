@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[PromptGuard.scan_tool_result()]] - code - gateway/security/prompt_guard.py
-- [[ToolResultInjectionScanner.scan_tool_result()]] - code - gateway/security/tool_result_injection.py
+- [[freertosFreeRTOS.h stub (playback state test)]] - code - firmware/voice-terminal/test/test_playback_state/stubs/freertos/FreeRTOS.h
+- [[freertostask.h stub (playback state test)]] - code - firmware/voice-terminal/test/test_playback_state/stubs/freertos/task.h
 
 ## Live Query (requires Dataview plugin)
 

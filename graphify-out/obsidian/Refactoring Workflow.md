@@ -1,12 +1,12 @@
 ---
 source_file: ".github/agents/safe-refactor.agent.md"
 type: "document"
-community: "Safe Refactor.agent (agents)"
+community: "Community 389"
 location: "L123"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Safe_Refactoragent_agents
+  - community/Community_389
 ---
 
 # Refactoring Workflow
@@ -18,4 +18,4 @@ tags:
 - [[Step 3 Verify Tests Still Pass]] - `contains` [EXTRACTED]
 - [[Step 4 Check Code Quality]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Safe_Refactoragent_agents
+#graphify/document #graphify/EXTRACTED #community/Community_389

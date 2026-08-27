@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md"
 type: "document"
-community: "Phase 3a 3b Implementation (architecture)"
+community: "Community 226"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_3a_3b_Implementation_architecture
+  - community/Community_226
 ---
 
 # Phase 3A: Security Completion (COMPLETE)
@@ -21,5 +21,6 @@ tags:
 - [[3A.7 Create scan.sh (OpenSCAP) ✅]] - `contains` [EXTRACTED]
 - [[3A.8 Change DM policy to allowlist ✅]] - `contains` [EXTRACTED]
 - [[PHASE_3A_3B_IMPLEMENTATION]] - `contains` [EXTRACTED]
+- [[Phase 3A & 3B Implementation Summary]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_3a_3b_Implementation_architecture
+#graphify/document #graphify/EXTRACTED #community/Community_226

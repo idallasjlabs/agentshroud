@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-oracle/SKILL.md"
 type: "concept"
-community: "Skill (i-oracle)"
+community: "Community 1721"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Skill_i-oracle
+  - community/Community_1721
 ---
 
 # show_notes.md (podcast pipeline distilled content artifact)
 
-#graphify/concept #graphify/EXTRACTED #community/Skill_i-oracle
+#graphify/concept #graphify/EXTRACTED #community/Community_1721

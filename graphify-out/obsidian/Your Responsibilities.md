@@ -1,12 +1,12 @@
 ---
 source_file: ".github/agents/test-augmenter.agent.md"
 type: "document"
-community: "Augmenter.agent (agents)"
+community: "Community 928"
 location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Augmenteragent_agents
+  - community/Community_928
 ---
 
 # Your Responsibilities
@@ -17,4 +17,4 @@ tags:
 - [[C) Test Quality]] - `contains` [EXTRACTED]
 - [[Test Augmentation Specialist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Augmenteragent_agents
+#graphify/document #graphify/EXTRACTED #community/Community_928

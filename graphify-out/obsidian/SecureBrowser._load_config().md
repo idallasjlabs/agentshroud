@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "Browse (scripts)"
+community: "Community 252"
 location: "browse.py:73"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Browse_scripts
+  - community/Community_252
 ---
 
 # SecureBrowser._load_config()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SecureBrowser Security Configuration (config.yaml)]] - `references` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Browse_scripts
+#graphify/code #graphify/INFERRED #community/Community_252

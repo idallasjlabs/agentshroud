@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_vault.py"
 type: "code"
-community: "Key Vault"
+community: "Community 180"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Key_Vault
+  - community/Community_180
 ---
 
 # test_key_vault.py
@@ -26,4 +26,4 @@ tags:
 - [[config()]] - `contains` [EXTRACTED]
 - [[vault()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Key_Vault
+#graphify/code #graphify/EXTRACTED #community/Community_180

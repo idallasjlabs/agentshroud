@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "rationale"
-community: "SOC Router (Collaborator Mgmt)"
+community: "Community 19"
 location: "L228"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_Router_Collaborator_Mgmt
+  - community/Community_19
 ---
 
 # Operator-ready risk summary with plain-English bullets and per-user risk map (V9
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_risk_summary()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_Router_Collaborator_Mgmt
+#graphify/rationale #graphify/EXTRACTED #community/Community_19

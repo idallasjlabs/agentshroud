@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-gg/SKILL.md"
 type: "document"
-community: "Skill (i-crpr)"
+community: "Community 1028"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-crpr
+  - community/Community_1028
 ---
 
 # i-gg SKILL — Git Workflow Guardian (GIT-GUARD)
@@ -17,4 +17,4 @@ tags:
 - [[i-gg README — Git Workflow Guardian (GIT-GUARD)]] - `references` [EXTRACTED]
 - [[tddSKILL.md test-driven development skill]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-crpr
+#graphify/document #graphify/EXTRACTED #community/Community_1028

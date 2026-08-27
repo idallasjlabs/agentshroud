@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "Rbac Config (security)"
+community: "Community 134"
 location: "L906-927"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Rbac_Config_security
+  - community/Community_134
 ---
 
 # DELETE /users/{user_id}/collaborator endpoint
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[revoke_approved_collaborator()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Rbac_Config_security
+#graphify/code #graphify/EXTRACTED #community/Community_134

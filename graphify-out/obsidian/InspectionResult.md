@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_inspector.py"
 type: "code"
-community: "Mcp Inspector (proxy)"
+community: "Community 106"
 location: "L97"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Mcp_Inspector_proxy
+  - community/Community_106
 ---
 
 # InspectionResult
@@ -35,4 +35,4 @@ tags:
 - [[mcp_inspector.py]] - `contains` [EXTRACTED]
 - [[mcp_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Mcp_Inspector_proxy
+#graphify/code #graphify/INFERRED #community/Community_106

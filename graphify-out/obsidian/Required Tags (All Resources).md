@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-aws/SKILL.md"
 type: "document"
-community: "Skill (i-aws)"
+community: "Community 518"
 location: "L87"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-aws
+  - community/Community_518
 ---
 
 # Required Tags (All Resources)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Tagging Standard]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-aws
+#graphify/document #graphify/EXTRACTED #community/Community_518

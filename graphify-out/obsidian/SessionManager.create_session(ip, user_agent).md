@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/session_security.py.md"
 type: "document"
-community: "Session Security.py (Security Modules)"
+community: "Community 539"
 location: "L46"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Session_Securitypy_Security_Modules
+  - community/Community_539
 ---
 
 # SessionManager.create_session(ip, user_agent)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Function Details_47]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Session_Securitypy_Security_Modules
+#graphify/document #graphify/EXTRACTED #community/Community_539

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/SYSTEM_STATUS.md"
 type: "document"
-community: "System Status (project)"
+community: "Community 576"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/System_Status_project
+  - community/Community_576
 ---
 
 # AgentShroud System Status Report
@@ -21,4 +21,4 @@ tags:
 - [[📋 Next Steps for User]] - `contains` [EXTRACTED]
 - [[🔧 System Access]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/System_Status_project
+#graphify/document #graphify/EXTRACTED #community/Community_576

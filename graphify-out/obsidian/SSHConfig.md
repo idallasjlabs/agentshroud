@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ssh_config.py"
 type: "code"
-community: "Security Fixes & SSH Write Endpoint"
+community: "Community 12"
 location: "L42"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Security_Fixes__SSH_Write_Endpoint
+  - community/Community_12
 ---
 
 # SSHConfig
@@ -62,6 +62,7 @@ tags:
 - [[ToolRiskConfig_1]] - `uses` [INFERRED]
 - [[ToolRiskPolicy_1]] - `uses` [INFERRED]
 - [[Top-level MCP proxy configuration.]] - `rationale_for` [EXTRACTED]
+- [[Top-level SSH proxy configuration]] - `rationale_for` [EXTRACTED]
 - [[config.py]] - `imports` [EXTRACTED]
 - [[load_config()]] - `calls` [EXTRACTED]
 - [[proxy.py]] - `imports` [EXTRACTED]
@@ -73,4 +74,4 @@ tags:
 - [[test_ssh_proxy.py]] - `imports` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Security_Fixes__SSH_Write_Endpoint
+#graphify/code #graphify/INFERRED #community/Community_12

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_integration.py"
 type: "code"
-community: "Security Regressions V1 2"
+community: "Community 104"
 location: "L85"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Regressions_V1_2
+  - community/Community_104
 ---
 
 # trust_manager()
@@ -16,4 +16,4 @@ tags:
 - [[TrustManager_1]] - `calls` [EXTRACTED]
 - [[test_a2a_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Regressions_V1_2
+#graphify/code #graphify/EXTRACTED #community/Community_104

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/reviews/blue-team-audit-v0.7.0.md"
 type: "document"
-community: "Blue Team Audit V0.7.0 (reviews)"
+community: "Community 204"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Blue_Team_Audit_V070_reviews
+  - community/Community_204
 ---
 
 # AgentShroud v0.7.0 Blue Team Security Audit Report
@@ -31,4 +31,4 @@ tags:
 - [[PromptGuard (Prompt Injection Defense)]] - `references` [EXTRACTED]
 - [[blue-team-audit-v0.7.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Blue_Team_Audit_V070_reviews
+#graphify/document #graphify/EXTRACTED #community/Community_204

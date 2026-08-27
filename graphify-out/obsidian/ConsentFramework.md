@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/consent_framework.py"
 type: "code"
-community: "Browser Security"
+community: "Community 207"
 location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Browser_Security
+  - community/Community_207
 ---
 
 # ConsentFramework
@@ -44,4 +44,4 @@ tags:
 - [[middleware.py]] - `imports` [EXTRACTED]
 - [[test_consent_framework.py]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Browser_Security
+#graphify/code #graphify/EXTRACTED #community/Community_207

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "Tool Chain & CVE Triage"
+community: "Community 6"
 location: "L183"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tool_Chain__CVE_Triage
+  - community/Community_6
 ---
 
 # Any
@@ -19,4 +19,4 @@ tags:
 - [[.sanitize_tool_params()]] - `references` [EXTRACTED]
 - [[.score_reversibility()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Tool_Chain__CVE_Triage
+#graphify/code #graphify/EXTRACTED #community/Community_6

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/port_manager.py"
 type: "code"
-community: "Port Manager"
+community: "Community 95"
 location: "L61"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Port_Manager
+  - community/Community_95
 ---
 
 # PortResolution
@@ -33,4 +33,4 @@ tags:
 - [[port_manager.py]] - `contains` [EXTRACTED]
 - [[test_port_manager.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Port_Manager
+#graphify/code #graphify/EXTRACTED #community/Community_95

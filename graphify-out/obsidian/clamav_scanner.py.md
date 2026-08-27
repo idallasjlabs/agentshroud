@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/clamav_scanner.py"
 type: "code"
-community: "Tool Chain & CVE Triage"
+community: "Community 397"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tool_Chain__CVE_Triage
+  - community/Community_397
 ---
 
 # clamav_scanner.py
@@ -26,4 +26,4 @@ tags:
 - [[update_virus_db()]] - `contains` [EXTRACTED]
 - [[web_content_scanner.py]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Tool_Chain__CVE_Triage
+#graphify/code #graphify/EXTRACTED #community/Community_397

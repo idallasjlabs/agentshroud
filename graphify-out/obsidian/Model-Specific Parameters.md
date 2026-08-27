@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/openai-image-gen/SKILL.md"
 type: "document"
-community: "Gen (scripts)"
+community: "Community 359"
 location: "L54"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gen_scripts
+  - community/Community_359
 ---
 
 # Model-Specific Parameters
@@ -17,4 +17,4 @@ tags:
 - [[Quality]] - `contains` [EXTRACTED]
 - [[Size]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gen_scripts
+#graphify/document #graphify/EXTRACTED #community/Community_359

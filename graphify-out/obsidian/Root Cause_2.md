@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/00-information-disclosure.md"
 type: "document"
-community: "00 Information Disclosure (redteam)"
+community: "Community 771"
 location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/00_Information_Disclosure_redteam
+  - community/Community_771
 ---
 
 # Root Cause
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Add information filtering to prevent agent self-disclosure]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/00_Information_Disclosure_redteam
+#graphify/document #graphify/EXTRACTED #community/Community_771

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Telegram Proxy Outbound Tests"
+community: "Community 878"
 location: "L1160"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Outbound_Tests
+  - community/Community_878
 ---
 
 # Empty text field must not bypass filtering when content contains tool payload.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_collaborator_empty_text_with_content_payload_is_normalized_json()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Outbound_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Community_878

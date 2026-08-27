@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
 type: "document"
-community: "Auth.py (Gateway Core)"
+community: "Community 355"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Authpy_Gateway_Core
+  - community/Community_355
 ---
 
 # auth.py
@@ -14,6 +14,7 @@ tags:
 ## Connections
 - [[Config Keys Read]] - `contains` [EXTRACTED]
 - [[Environment Variables]] - `contains` [EXTRACTED]
+- [[Environment Variables Used]] - `contains` [EXTRACTED]
 - [[Function Details]] - `contains` [EXTRACTED]
 - [[HTTP Responses]] - `contains` [EXTRACTED]
 - [[Imports From  Exports To]] - `contains` [EXTRACTED]
@@ -24,4 +25,4 @@ tags:
 - [[Responsibilities]] - `contains` [EXTRACTED]
 - [[auth.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Authpy_Gateway_Core
+#graphify/document #graphify/EXTRACTED #community/Community_355

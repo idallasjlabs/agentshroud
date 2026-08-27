@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/generate-cve-page.py"
 type: "code"
-community: "Generate Cve Page (scripts)"
+community: "Community 990"
 location: "L394"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Generate_Cve_Page_scripts
+  - community/Community_990
 ---
 
 # generate()
@@ -20,4 +20,4 @@ tags:
 - [[_resolve_registries()]] - `calls` [EXTRACTED]
 - [[generate-cve-page.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Generate_Cve_Page_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_990

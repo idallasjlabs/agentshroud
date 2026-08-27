@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/APPLE-SERVICES-SETUP.md"
 type: "document"
-community: "Apple Services Setup (setup)"
+community: "Community 334"
 location: "L185"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Apple_Services_Setup_setup
+  - community/Community_334
 ---
 
 # Two-Factor Authentication
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🚨 Security Notes]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Apple_Services_Setup_setup
+#graphify/document #graphify/EXTRACTED #community/Community_334

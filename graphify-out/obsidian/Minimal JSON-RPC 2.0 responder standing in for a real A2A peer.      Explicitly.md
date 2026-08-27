@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_integration.py"
 type: "rationale"
-community: "A2a Integration"
+community: "Community 104"
 location: "L47"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/A2a_Integration
+  - community/Community_104
 ---
 
 # Minimal JSON-RPC 2.0 responder standing in for a real A2A peer.      Explicitly
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[A2APeerTestDouble]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/A2a_Integration
+#graphify/rationale #graphify/EXTRACTED #community/Community_104

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/health.py"
 type: "code"
-community: "Auth"
+community: "Community 344"
 location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Auth
+  - community/Community_344
 ---
 
 # health_check_detail()
@@ -17,4 +17,4 @@ tags:
 - [[StatusResponse]] - `calls` [EXTRACTED]
 - [[health.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Auth
+#graphify/code #graphify/EXTRACTED #community/Community_344

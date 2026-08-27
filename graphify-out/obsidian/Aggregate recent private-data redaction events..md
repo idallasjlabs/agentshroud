@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "rationale"
-community: "Mcp Permissions (proxy)"
+community: "Community 106"
 location: "L346"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Mcp_Permissions_proxy
+  - community/Community_106
 ---
 
 # Aggregate recent private-data redaction events.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_private_redaction_summary()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Mcp_Permissions_proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_106

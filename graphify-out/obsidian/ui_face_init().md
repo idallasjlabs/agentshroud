@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/ui_face.c"
 type: "code"
-community: "Lvgl Kawaii Face (lvgl_kawaii_face)"
-location: "L227"
+community: "Community 249"
+location: "L246"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Lvgl_Kawaii_Face_lvgl_kawaii_face
+  - community/Community_249
 ---
 
 # ui_face_init()
@@ -22,4 +22,4 @@ tags:
 - [[face_set_emotion() (declared in header; drives eyemouth canvases)]] - `calls` [EXTRACTED]
 - [[ui_face.c]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Lvgl_Kawaii_Face_lvgl_kawaii_face
+#graphify/code #graphify/EXTRACTED #community/Community_249

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "Enhanced Approval"
+community: "Community 24"
 location: "L103"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Enhanced_Approval
+  - community/Community_24
 ---
 
 # ApprovalQueueConfig
@@ -93,4 +93,4 @@ tags:
 - [[test_submit_does_not_deadlock_on_hung_websocket_client()_1]] - `calls` [EXTRACTED]
 - [[test_websocket_notifications()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Enhanced_Approval
+#graphify/code #graphify/INFERRED #community/Community_24

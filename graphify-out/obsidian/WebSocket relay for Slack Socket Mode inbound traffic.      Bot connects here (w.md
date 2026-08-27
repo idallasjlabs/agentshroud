@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "Aiosqlite (05 - Dependencies)"
+community: "Community 9"
 location: "L4746"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Aiosqlite_05_-_Dependencies
+  - community/Community_9
 ---
 
 # WebSocket relay for Slack Socket Mode inbound traffic.      Bot connects here (w
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[slack_ws_relay()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Aiosqlite_05_-_Dependencies
+#graphify/rationale #graphify/EXTRACTED #community/Community_9

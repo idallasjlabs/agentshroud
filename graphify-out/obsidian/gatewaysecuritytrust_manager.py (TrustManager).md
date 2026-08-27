@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "OAuth & Metadata Guard"
+community: "Community 14"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OAuth__Metadata_Guard
+  - community/Community_14
 ---
 
 # gateway/security/trust_manager.py (TrustManager)
@@ -15,4 +15,4 @@ tags:
 - [[test_security_audit_advanced.py]] - `references` [INFERRED]
 - [[test_security_regressions_v1_2.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OAuth__Metadata_Guard
+#graphify/code #graphify/EXTRACTED #community/Community_14

@@ -1,12 +1,12 @@
 ---
 source_file: "branding/colors/palette.md"
 type: "document"
-community: "Palette (colors)"
+community: "Community 370"
 location: "L99"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Palette_colors
+  - community/Community_370
 ---
 
 # Color Combinations
@@ -16,4 +16,4 @@ tags:
 - [[Dark Theme]] - `contains` [EXTRACTED]
 - [[Light Theme]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Palette_colors
+#graphify/document #graphify/EXTRACTED #community/Community_370

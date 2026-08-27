@@ -1,18 +1,18 @@
 ---
 source_file: "docs/security/CREDENTIAL-SECURITY-POLICY.md"
 type: "document"
-community: "Credential Security Policy (security)"
+community: "Community 849"
 location: "L78"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Credential_Security_Policy_security
+  - community/Community_849
 ---
 
 # Option 3: Disable Credential Commands via Telegram
 
 ## Connections
 - [[CREDENTIAL-SECURITY-POLICY]] - `references` [EXTRACTED]
-- [[Implementation Strategy]] - `contains` [EXTRACTED]
+- [[Implementation Strategy_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Credential_Security_Policy_security
+#graphify/document #graphify/EXTRACTED #community/Community_849

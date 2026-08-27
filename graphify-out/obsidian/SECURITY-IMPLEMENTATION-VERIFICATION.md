@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md"
 type: "document"
-community: "Security Scripts Reference (security)"
+community: "Community 548"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Scripts_Reference_security
+  - community/Community_548
 ---
 
 # SECURITY-IMPLEMENTATION-VERIFICATION.md
@@ -19,4 +19,4 @@ tags:
 - [[VERIFICATION_RESULTS]] - `conceptually_related_to` [AMBIGUOUS]
 - [[sanitizer.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Scripts_Reference_security
+#graphify/document #graphify/EXTRACTED #community/Community_548

@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/references/hooks.md"
 type: "concept"
-community: "Hooks (references)"
+community: "Community 1743"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Hooks_references
+  - community/Community_1743
 ---
 
 # Native CLAUDE.md Integration
 
-#graphify/concept #graphify/EXTRACTED #community/Hooks_references
+#graphify/concept #graphify/EXTRACTED #community/Community_1743

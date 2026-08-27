@@ -1,12 +1,12 @@
 ---
 source_file: "branding/QUICK-REFERENCE.md"
 type: "document"
-community: "Quick Reference (branding)"
+community: "Community 555"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Quick_Reference_branding
+  - community/Community_555
 ---
 
 # AgentShroud Brand Quick Reference
@@ -23,4 +23,4 @@ tags:
 - [[Quick Color Palette]] - `contains` [EXTRACTED]
 - [[Typography]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Quick_Reference_branding
+#graphify/document #graphify/EXTRACTED #community/Community_555

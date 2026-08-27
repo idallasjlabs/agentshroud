@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/agentshroud.yaml.md"
 type: "document"
-community: "Agentshroud.yaml (03 - Configuration)"
+community: "Community 814"
 location: "L172"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Agentshroudyaml_03_-_Configuration
+  - community/Community_814
 ---
 
 # security_modules section
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[agentshroud.yaml_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Agentshroudyaml_03_-_Configuration
+#graphify/document #graphify/EXTRACTED #community/Community_814

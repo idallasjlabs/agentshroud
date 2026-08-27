@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "Soc Egress Endpoints"
+community: "Community 374"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Soc_Egress_Endpoints
+  - community/Community_374
 ---
 
 # event_bus.py
@@ -22,4 +22,4 @@ tags:
 - [[make_event()]] - `contains` [EXTRACTED]
 - [[state.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Soc_Egress_Endpoints
+#graphify/code #graphify/EXTRACTED #community/Community_374

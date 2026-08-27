@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_workspace.py"
 type: "rationale"
-community: "Group Workspace Manager"
+community: "Community 61"
 location: "L81"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Group_Workspace_Manager
+  - community/Community_61
 ---
 
 # Resolve and access-control shared group workspaces.      Args:         teams_con
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GroupWorkspaceManager]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Group_Workspace_Manager
+#graphify/rationale #graphify/EXTRACTED #community/Community_61

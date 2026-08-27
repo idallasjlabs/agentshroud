@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-mcpm-auth-reset/README.md"
 type: "document"
-community: "Readme (i-mcpm-auth-reset)"
+community: "Community 1158"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-mcpm-auth-reset
+  - community/Community_1158
 ---
 
 # MCP Auth Reset (MCPM-AUTH-RESET)
@@ -17,4 +17,4 @@ tags:
 - [[Related Skills_16]] - `contains` [EXTRACTED]
 - [[Usage_18]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-mcpm-auth-reset
+#graphify/document #graphify/EXTRACTED #community/Community_1158

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/05-behavior.md"
 type: "concept"
-community: "05 Behavior (diagrams)"
+community: "Community 835"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/05_Behavior_diagrams
+  - community/Community_835
 ---
 
 # Logic Flow — Request Execution
@@ -15,4 +15,4 @@ tags:
 - [[Sequence Diagram — Telegram Message to Response]] - `references` [INFERRED]
 - [[State Machine — Approval Queue Item Lifecycle]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/05_Behavior_diagrams
+#graphify/concept #graphify/EXTRACTED #community/Community_835

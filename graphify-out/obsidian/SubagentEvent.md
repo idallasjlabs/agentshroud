@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "Subagent Monitor"
+community: "Community 14"
 location: "L34"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Subagent_Monitor
+  - community/Community_14
 ---
 
 # SubagentEvent
@@ -30,4 +30,4 @@ tags:
 - [[subagent_monitor.py]] - `contains` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Subagent_Monitor
+#graphify/code #graphify/INFERRED #community/Community_14

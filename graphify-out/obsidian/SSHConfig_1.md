@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ssh_proxy/proxy.py"
 type: "code"
-community: "Ssh Write File Endpoint"
+community: "Community 12"
 location: "L138"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Ssh_Write_File_Endpoint
+  - community/Community_12
 ---
 
 # SSHConfig
@@ -15,4 +15,4 @@ tags:
 - [[.__init__()_133]] - `references` [EXTRACTED]
 - [[SSHConfig]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Ssh_Write_File_Endpoint
+#graphify/code #graphify/INFERRED #community/Community_12

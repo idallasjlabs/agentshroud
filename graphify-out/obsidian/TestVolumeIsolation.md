@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_agent_isolation.py"
 type: "code"
-community: "Security Hardening"
+community: "Community 28"
 location: "L103"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Security_Hardening
+  - community/Community_28
 ---
 
 # TestVolumeIsolation
@@ -20,4 +20,4 @@ tags:
 - [[IsolationVerifier]] - `uses` [INFERRED]
 - [[test_agent_isolation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Security_Hardening
+#graphify/code #graphify/INFERRED #community/Community_28

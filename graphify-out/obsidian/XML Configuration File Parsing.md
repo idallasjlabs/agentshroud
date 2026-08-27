@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-eightd/SKILL.md"
 type: "document"
-community: "Skill (i-eightd)"
+community: "Community 224"
 location: "L497"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-eightd
+  - community/Community_224
 ---
 
 # XML Configuration File Parsing
@@ -17,4 +17,4 @@ tags:
 - [[What to Extract]] - `contains` [EXTRACTED]
 - [[Why This Matters]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-eightd
+#graphify/document #graphify/EXTRACTED #community/Community_224

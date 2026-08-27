@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "SOC Services"
+community: "Community 27"
 location: "L190"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SOC_Services
+  - community/Community_27
 ---
 
 # ServiceStatus
@@ -17,4 +17,4 @@ tags:
 - [[ServiceStatus]] - `uses` [INFERRED]
 - [[_engine_status_to_service_status()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SOC_Services
+#graphify/code #graphify/INFERRED #community/Community_27

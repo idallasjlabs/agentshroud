@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "SOC Router (Collaborator Mgmt)"
+community: "Community 19"
 location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Router_Collaborator_Mgmt
+  - community/Community_19
 ---
 
 # _log_audit()
@@ -16,7 +16,6 @@ tags:
 - [[AuditLogEntry]] - `calls` [EXTRACTED]
 - [[AuditResult_1]] - `references` [EXTRACTED]
 - [[SCLCaller_1]] - `references` [EXTRACTED]
-- [[SCLCaller_3]] - `references` [EXTRACTED]
 - [[SCLInterface_1]] - `references` [EXTRACTED]
 - [[_app_state()]] - `calls` [EXTRACTED]
 - [[add_collaborator()_1]] - `calls` [EXTRACTED]
@@ -60,4 +59,4 @@ tags:
 - [[upgrade_gateway()]] - `calls` [EXTRACTED]
 - [[upgrade_hermes()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Router_Collaborator_Mgmt
+#graphify/code #graphify/EXTRACTED #community/Community_19

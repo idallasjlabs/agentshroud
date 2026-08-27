@@ -1,11 +1,11 @@
 ---
 source_file: "docs/testing/test-plan.md"
 type: "document"
-community: "Coverage Report (testing)"
+community: "Community 1081"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Coverage_Report_testing
+  - community/Community_1081
 ---
 
 # Test Plan (AgentShroud v0.9.0)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Test Coverage Report (AgentShroud v1.3.0)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Coverage_Report_testing
+#graphify/document #graphify/INFERRED #community/Community_1081

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/run-tests-batched.sh"
 type: "code"
-community: "Run Batched (scripts)"
+community: "Community 1514"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Run_Batched_scripts
+  - community/Community_1514
 ---
 
 # run-tests-batched.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[run-tests-batched.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Run_Batched_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_1514

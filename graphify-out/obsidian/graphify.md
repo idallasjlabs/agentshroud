@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/graphify/SKILL.md"
 type: "document"
-community: "Skill (graphify)"
+community: "Community 351"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_graphify
+  - community/Community_351
 ---
 
 # /graphify
@@ -23,4 +23,4 @@ tags:
 - [[What You Must Do When Invoked]] - `contains` [EXTRACTED]
 - [[What graphify is for]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_graphify
+#graphify/document #graphify/EXTRACTED #community/Community_351

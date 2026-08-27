@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/model-usage/scripts/model_usage.py"
 type: "code"
-community: "Model Usage (scripts)"
+community: "Community 463"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Model_Usage_scripts
+  - community/Community_463
 ---
 
 # model_usage.py
@@ -20,7 +20,7 @@ tags:
 - [[filter_by_days()]] - `contains` [EXTRACTED]
 - [[latest_day_cost()]] - `contains` [EXTRACTED]
 - [[load_payload()]] - `contains` [EXTRACTED]
-- [[main()_26]] - `contains` [EXTRACTED]
+- [[main()_27]] - `contains` [EXTRACTED]
 - [[parse_daily_entries()]] - `contains` [EXTRACTED]
 - [[parse_date()]] - `contains` [EXTRACTED]
 - [[pick_current_model()]] - `contains` [EXTRACTED]
@@ -29,4 +29,4 @@ tags:
 - [[run_codexbar_cost()]] - `contains` [EXTRACTED]
 - [[usd()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Model_Usage_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_463

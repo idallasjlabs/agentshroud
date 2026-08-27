@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ti/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-tdd/SKILL.md"
 type: "document"
-community: "Skill (i-ti)"
-location: "L23"
+community: "Community 709"
+location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-ti
+  - community/Community_709
 ---
 
 # Rules
 
 ## Connections
-- [[Skill Technical Illustrator (TI)_2]] - `contains` [EXTRACTED]
+- [[Skill Test-Driven Development (TDD)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-ti
+#graphify/document #graphify/EXTRACTED #community/Community_709

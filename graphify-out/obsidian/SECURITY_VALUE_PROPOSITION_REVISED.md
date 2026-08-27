@@ -1,18 +1,17 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md"
 type: "document"
-community: "Module Group 391"
+community: "Community 284"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_391
+  - community/Community_284
 ---
 
 # SECURITY_VALUE_PROPOSITION_REVISED.md
 
 ## Connections
-- [[IEC 62443 Compliance Matrix (FR1-FR7 Foundational Requirements)]] - `references` [EXTRACTED]
-- [[Multi-Tenant Security Context (external hosting, security testbed, immutable infra)]] - `describes` [EXTRACTED]
-- [[SECURITY_VALUE_PROPOSITION]] - `supersedes` [EXTRACTED]
+- [[AgentShroud Security Value Proposition - REVISED]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_391
+#graphify/document #graphify/EXTRACTED #community/Community_284

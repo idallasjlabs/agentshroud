@@ -1,11 +1,11 @@
 ---
 source_file: "branding/icons/modules/ssh-proxy-256x256.png"
 type: "image"
-community: "Icon 64x64 (app)"
+community: "Community 448"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/Icon_64x64_app
+  - community/Community_448
 ---
 
 # SSH Proxy Module Badge Icon
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud macOS App Icon (1024x1024, Rounded Squircle)]] - `conceptually_related_to` [INFERRED]
 - [[proxy.py]] - `conceptually_related_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/Icon_64x64_app
+#graphify/image #graphify/INFERRED #community/Community_448

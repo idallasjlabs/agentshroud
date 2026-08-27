@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/app_main.c"
 type: "code"
-community: "Ws Client (main)"
-location: "L688"
+community: "Community 139"
+location: "L699"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Ws_Client_main
+  - community/Community_139
 ---
 
 # voice_task()
@@ -42,4 +42,4 @@ tags:
 - [[ws_client_send_stop()]] - `calls` [INFERRED]
 - [[ws_client_set_ctrl_cb()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Ws_Client_main
+#graphify/code #graphify/INFERRED #community/Community_139

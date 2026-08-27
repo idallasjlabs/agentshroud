@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_encoding_detector.py"
 type: "code"
-community: "Security Audit & Watchtower Tests"
+community: "Community 50"
 location: "L9"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Audit__Watchtower_Tests
+  - community/Community_50
 ---
 
 # TestEncodingDetector
@@ -26,4 +26,4 @@ tags:
 - [[EncodingDetector]] - `uses` [INFERRED]
 - [[test_encoding_detector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests
+#graphify/code #graphify/EXTRACTED #community/Community_50

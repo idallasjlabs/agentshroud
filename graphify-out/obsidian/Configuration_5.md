@@ -1,17 +1,18 @@
 ---
-source_file: "docs/architecture/adr/ADR-009-enforce-by-default.md"
+source_file: "docs/architecture/WORKSPACE_DECISION.md"
 type: "document"
-community: "Adr 009 Enforce By (adr)"
-location: "L51"
+community: "Community 159"
+location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Adr_009_Enforce_By_adr
+  - community/Community_159
 ---
 
 # Configuration
 
 ## Connections
-- [[Decision_10]] - `contains` [EXTRACTED]
+- [[Current Setup (Kept)]] - `contains` [EXTRACTED]
+- [[Workspace Configuration Decision]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Adr_009_Enforce_By_adr
+#graphify/document #graphify/EXTRACTED #community/Community_159

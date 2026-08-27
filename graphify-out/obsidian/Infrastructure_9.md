@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/agentshroud-blueteam/SKILL.md"
+source_file: "docs/runbooks/RUNBOOK.md"
 type: "document"
-community: "Skill (agentshroud-blueteam)"
-location: "L150"
+community: "Community 682"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_agentshroud-blueteam
+  - community/Community_682
 ---
 
 # Infrastructure
 
 ## Connections
-- [[AgentShroud Blue Team Security Auditor_3]] - `contains` [EXTRACTED]
+- [[AgentShroud Deployment & Troubleshooting Runbook]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_agentshroud-blueteam
+#graphify/document #graphify/EXTRACTED #community/Community_682

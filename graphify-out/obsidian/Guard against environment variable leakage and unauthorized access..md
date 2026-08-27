@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "rationale"
-community: "Git Guard (security)"
+community: "Community 14"
 location: "L34"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Git_Guard_security
+  - community/Community_14
 ---
 
 # Guard against environment variable leakage and unauthorized access.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[EnvironmentGuard]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Git_Guard_security
+#graphify/rationale #graphify/EXTRACTED #community/Community_14

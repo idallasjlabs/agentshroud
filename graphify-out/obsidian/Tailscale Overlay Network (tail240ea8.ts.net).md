@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-04-infrastructure-hosting.svg"
 type: "image"
-community: "Adr 006 Multi Runtime (adr)"
+community: "Community 208"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Adr_006_Multi_Runtime_adr
+  - community/Community_208
 ---
 
 # Tailscale Overlay Network (tail240ea8.ts.net)
@@ -17,4 +17,4 @@ tags:
 - [[raspberrypi (100.107.248.66, agentshroud-bot user)]] - `shares_data_with` [EXTRACTED]
 - [[trillian (100.94.68.61, development node)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Adr_006_Multi_Runtime_adr
+#graphify/image #graphify/EXTRACTED #community/Community_208

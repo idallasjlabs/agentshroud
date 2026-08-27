@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "code"
-community: "Skill Guard"
+community: "Community 110"
 location: "L150"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Skill_Guard
+  - community/Community_110
 ---
 
 # _c()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[skill_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Skill_Guard
+#graphify/code #graphify/EXTRACTED #community/Community_110

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md"
 type: "document"
-community: "Development Workflow Read Only (security)"
+community: "Community 185"
 location: "L267"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Development_Workflow_Read_Only_security
+  - community/Community_185
 ---
 
 # Planned Features: Write Requirements
@@ -17,4 +17,4 @@ tags:
 - [[Feature OpenSCAP Scanning (Phase 3A)]] - `contains` [EXTRACTED]
 - [[Feature SSH Proxy (Phase 4)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Development_Workflow_Read_Only_security
+#graphify/document #graphify/EXTRACTED #community/Community_185

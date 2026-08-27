@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-mcpm/SKILL.md"
 type: "document"
-community: "Skill (i-mcpm)"
+community: "Community 1010"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-mcpm
+  - community/Community_1010
 ---
 
 # Skill: MCP Tools Usage (MCP-TOOLS)
@@ -14,7 +14,8 @@ tags:
 ## Connections
 - [[10. Troubleshooting]] - `contains` [EXTRACTED]
 - [[Available MCP Servers]] - `contains` [EXTRACTED]
+- [[MCP Troubleshooting]] - `contains` [EXTRACTED]
 - [[Role_19]] - `contains` [EXTRACTED]
 - [[SKILL_34]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-mcpm
+#graphify/document #graphify/EXTRACTED #community/Community_1010

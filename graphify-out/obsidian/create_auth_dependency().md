@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/auth.py"
 type: "code"
-community: "Auth"
+community: "Community 99"
 location: "L154"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Auth
+  - community/Community_99
 ---
 
 # create_auth_dependency()
@@ -33,4 +33,4 @@ tags:
 - [[test_auth_dependency_missing_header()]] - `calls` [EXTRACTED]
 - [[test_auth_dependency_valid_token()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Auth
+#graphify/code #graphify/EXTRACTED #community/Community_99

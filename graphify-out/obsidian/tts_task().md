@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/app_main.c"
 type: "code"
-community: "Playback State (test_playback_state)"
+community: "Community 166"
 location: "L316"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Playback_State_test_playback_state
+  - community/Community_166
 ---
 
 # tts_task()
@@ -23,4 +23,4 @@ tags:
 - [[wakeword_tts_stop_clear()]] - `calls` [INFERRED]
 - [[wakeword_tts_stop_requested()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Playback_State_test_playback_state
+#graphify/code #graphify/INFERRED #community/Community_166

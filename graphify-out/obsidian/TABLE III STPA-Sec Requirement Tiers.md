@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "document"
-community: "Agentshroud Ieee Paper (papers)"
+community: "Community 274"
 location: "L191"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Agentshroud_Ieee_Paper_papers
+  - community/Community_274
 ---
 
 # TABLE III: STPA-Sec Requirement Tiers
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[VI. STPA-Sec Analysis]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Agentshroud_Ieee_Paper_papers
+#graphify/document #graphify/EXTRACTED #community/Community_274

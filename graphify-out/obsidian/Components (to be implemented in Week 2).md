@@ -1,12 +1,12 @@
 ---
 source_file: "dashboard/README.md"
 type: "document"
-community: "Readme (dashboard)"
+community: "Community 257"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_dashboard
+  - community/Community_257
 ---
 
 # Components (to be implemented in Week 2)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Dashboard]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_dashboard
+#graphify/document #graphify/EXTRACTED #community/Community_257

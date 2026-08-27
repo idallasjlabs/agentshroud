@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Collaborator Tracker"
+community: "Community 42"
 location: "L4944"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Collaborator_Tracker
+  - community/Community_42
 ---
 
 # CollaboratorActivityTracker.get_health() must return accurate counters.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestTrackerGetHealth]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Tracker
+#graphify/rationale #graphify/EXTRACTED #community/Community_42

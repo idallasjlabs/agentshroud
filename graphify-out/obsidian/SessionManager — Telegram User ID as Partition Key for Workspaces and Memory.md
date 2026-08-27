@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/03-session-isolation.md"
 type: "concept"
-community: "02 Human In Loop (redteam)"
+community: "Community 1319"
 location: "Remediation Step 1"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/02_Human_In_Loop_redteam
+  - community/Community_1319
 ---
 
 # SessionManager — Telegram User ID as Partition Key for Workspaces and Memory
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Red Team Finding 03 All Users Share Agent Context and File System]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/02_Human_In_Loop_redteam
+#graphify/concept #graphify/EXTRACTED #community/Community_1319

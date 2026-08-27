@@ -1,13 +1,13 @@
 ---
 source_file: "skills/custom/browser-fetch/package.json"
 type: "code"
-community: "Package (browser-fetch)"
+community: "Community 1581"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Package_browser-fetch
+  - community/Community_1581
 ---
 
 # browser-fetch package.json
 
-#graphify/code #graphify/EXTRACTED #community/Package_browser-fetch
+#graphify/code #graphify/EXTRACTED #community/Community_1581

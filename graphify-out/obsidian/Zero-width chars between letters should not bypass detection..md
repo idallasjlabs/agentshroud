@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "rationale"
-community: "Security Hardening"
+community: "Community 55"
 location: "L804"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Hardening
+  - community/Community_55
 ---
 
 # Zero-width chars between letters should not bypass detection.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_zero_width_evasion()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Hardening
+#graphify/rationale #graphify/EXTRACTED #community/Community_55

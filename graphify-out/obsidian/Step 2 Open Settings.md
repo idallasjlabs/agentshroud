@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/PAIRING_INSTRUCTIONS.md"
 type: "document"
-community: "Pairing Instructions (setup)"
+community: "Community 690"
 location: "L17"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Pairing_Instructions_setup
+  - community/Community_690
 ---
 
 # Step 2: Open Settings
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[✅ Step-by-Step Pairing Process]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Pairing_Instructions_setup
+#graphify/document #graphify/EXTRACTED #community/Community_690

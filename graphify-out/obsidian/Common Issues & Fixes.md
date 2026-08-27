@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-mcpm-doctor/SKILL.md"
 type: "document"
-community: "Skill (i-mcpm-doctor)"
+community: "Community 458"
 location: "L72"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-mcpm-doctor
+  - community/Community_458
 ---
 
 # Common Issues & Fixes
@@ -20,4 +20,4 @@ tags:
 - [[Issue uvx not found]] - `contains` [EXTRACTED]
 - [[Skill MCP Doctor (MCPM-DOCTOR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-mcpm-doctor
+#graphify/document #graphify/EXTRACTED #community/Community_458

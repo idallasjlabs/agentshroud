@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "rationale"
-community: "Prompt Protection (security)"
+community: "Community 659"
 location: "L40"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Prompt_Protection_security
+  - community/Community_659
 ---
 
 # Result of scanning and redacting content.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[RedactionResult_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Prompt_Protection_security
+#graphify/rationale #graphify/EXTRACTED #community/Community_659

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy.py"
 type: "code"
-community: "Mcp Policy"
+community: "Community 34"
 location: "L396"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Mcp_Policy
+  - community/Community_34
 ---
 
 # test_mcp_proxy_allows_policy_permitted_call()
@@ -21,4 +21,4 @@ tags:
 - [[_base_config()_1]] - `calls` [EXTRACTED]
 - [[test_mcp_policy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Mcp_Policy
+#graphify/code #graphify/EXTRACTED #community/Community_34

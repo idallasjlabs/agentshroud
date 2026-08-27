@@ -1,17 +1,17 @@
 ---
 source_file: "docker/QUICKSTART.md"
 type: "document"
-community: "Quickstart (docker)"
+community: "Community 231"
 location: "L271"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Quickstart_docker
+  - community/Community_231
 ---
 
 # OpenClaw Not Responding
 
 ## Connections
-- [[Troubleshooting_4]] - `contains` [EXTRACTED]
+- [[Troubleshooting_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Quickstart_docker
+#graphify/document #graphify/EXTRACTED #community/Community_231

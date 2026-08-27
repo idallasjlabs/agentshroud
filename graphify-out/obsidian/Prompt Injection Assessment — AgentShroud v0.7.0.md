@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/prompt-injection-assessment-2026-02-25.md"
 type: "document"
-community: "Prompt Injection Assessment 2026 (reviews)"
+community: "Community 362"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Prompt_Injection_Assessment_2026_reviews
+  - community/Community_362
 ---
 
 # Prompt Injection Assessment — AgentShroud v0.7.0
@@ -18,4 +18,4 @@ tags:
 - [[prompt-injection-assessment-2026-02-25]] - `contains` [EXTRACTED]
 - [[v0.8.0 Recommendations (Priority Order)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Prompt_Injection_Assessment_2026_reviews
+#graphify/document #graphify/EXTRACTED #community/Community_362

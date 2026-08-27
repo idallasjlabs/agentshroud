@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "rationale"
-community: "Forward (routes)"
+community: "Community 63"
 location: "L363"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Forward_routes
+  - community/Community_63
 ---
 
 # Response from POST /email/send.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[EmailSendResponse]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Forward_routes
+#graphify/rationale #graphify/EXTRACTED #community/Community_63

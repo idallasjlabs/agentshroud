@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/cross_bot_trust_ledger.py"
 type: "code"
-community: "Cross Bot Trust Ledger"
+community: "Community 1016"
 location: "L51"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Cross_Bot_Trust_Ledger
+  - community/Community_1016
 ---
 
 # BotIncidentSeverity
@@ -38,4 +38,4 @@ tags:
 - [[pipeline.py]] - `imports` [EXTRACTED]
 - [[test_cross_bot_trust_ledger.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Cross_Bot_Trust_Ledger
+#graphify/code #graphify/INFERRED #community/Community_1016

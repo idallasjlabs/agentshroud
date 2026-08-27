@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/per-agent-isolation.md"
 type: "document"
-community: "Per Agent Isolation (architecture)"
+community: "Community 702"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Per_Agent_Isolation_architecture
+  - community/Community_702
 ---
 
 # Per-Agent Container Isolation Architecture
@@ -23,4 +23,4 @@ tags:
 - [[Security Verification]] - `contains` [EXTRACTED]
 - [[per-agent-isolation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Per_Agent_Isolation_architecture
+#graphify/document #graphify/EXTRACTED #community/Community_702

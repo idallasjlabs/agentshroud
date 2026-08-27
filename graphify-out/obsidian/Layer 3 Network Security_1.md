@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-sec/SKILL.md"
 type: "document"
-community: "Skill (i-sec)"
+community: "Community 704"
 location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-sec
+  - community/Community_704
 ---
 
 # Layer 3: Network Security
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Review Layers_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-sec
+#graphify/document #graphify/EXTRACTED #community/Community_704

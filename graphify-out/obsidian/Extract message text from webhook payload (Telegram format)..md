@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/webhook_receiver.py"
 type: "rationale"
-community: "Middleware & Session Isolation"
+community: "Community 1137"
 location: "L363"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Middleware__Session_Isolation
+  - community/Community_1137
 ---
 
 # Extract message text from webhook payload (Telegram format).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._extract_message()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Middleware__Session_Isolation
+#graphify/rationale #graphify/EXTRACTED #community/Community_1137

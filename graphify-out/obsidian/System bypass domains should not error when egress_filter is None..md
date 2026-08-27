@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy.py"
 type: "rationale"
-community: "Http Proxy"
+community: "Community 94"
 location: "L355"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Http_Proxy
+  - community/Community_94
 ---
 
 # System bypass domains should not error when egress_filter is None.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_system_bypass_without_egress_filter()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Http_Proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_94

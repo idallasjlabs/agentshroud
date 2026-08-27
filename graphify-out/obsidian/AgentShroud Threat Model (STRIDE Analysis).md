@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/threat-model.md"
 type: "document"
-community: "Threat Model (security)"
+community: "Community 865"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Threat_Model_security
+  - community/Community_865
 ---
 
 # AgentShroud Threat Model (STRIDE Analysis)
@@ -20,4 +20,4 @@ tags:
 - [[Threat Modeling Scope]] - `contains` [EXTRACTED]
 - [[threat-model]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Threat_Model_security
+#graphify/document #graphify/EXTRACTED #community/Community_865

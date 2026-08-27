@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Updating (operations)"
+community: "Community 531"
 location: "L728"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Updating_operations
+  - community/Community_531
 ---
 
 # Update AgentShroud
@@ -21,4 +21,4 @@ tags:
 - [[Updating]] - `contains` [EXTRACTED]
 - [[updating]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Updating_operations
+#graphify/document #graphify/EXTRACTED #community/Community_531

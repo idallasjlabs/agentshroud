@@ -1,11 +1,11 @@
 ---
 source_file: "examples/web-proxy-config.yml"
 type: "rationale"
-community: "Egress Config (examples)"
+community: "Community 1254"
 tags:
   - graphify/rationale
   - graphify/INFERRED
-  - community/Egress_Config_examples
+  - community/Community_1254
 ---
 
 # Default-Allow Web Proxy Design Rationale
@@ -15,4 +15,4 @@ tags:
 - [[Default Monitor-Mode Egress Rationale]] - `semantically_similar_to` [INFERRED]
 - [[MCP Proxy Default-Allow Philosophy]] - `semantically_similar_to` [INFERRED]
 
-#graphify/rationale #graphify/INFERRED #community/Egress_Config_examples
+#graphify/rationale #graphify/INFERRED #community/Community_1254

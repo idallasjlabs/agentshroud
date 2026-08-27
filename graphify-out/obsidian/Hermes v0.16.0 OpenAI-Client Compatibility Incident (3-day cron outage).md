@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_chat_completions_alias.py"
 type: "rationale"
-community: "Chat Completions Alias"
+community: "Community 117"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Chat_Completions_Alias
+  - community/Community_117
 ---
 
 # Hermes v0.16.0 OpenAI-Client Compatibility Incident (3-day cron outage)
@@ -15,4 +15,4 @@ tags:
 - [[test_chat_completions_alias.py]] - `references` [EXTRACTED]
 - [[test_claude_via_openai_path.py]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Chat_Completions_Alias
+#graphify/rationale #graphify/EXTRACTED #community/Community_117

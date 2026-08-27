@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/IMESSAGE_STATUS.md"
 type: "document"
-community: "Imessage Status (setup)"
+community: "Community 392"
 location: "L40"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Imessage_Status_setup
+  - community/Community_392
 ---
 
 # Option 2: Use BlueBubbles (RECOMMENDED ✅)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Solutions]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Imessage_Status_setup
+#graphify/document #graphify/EXTRACTED #community/Community_392

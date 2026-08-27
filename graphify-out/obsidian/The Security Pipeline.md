@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md"
 type: "document"
-community: "Public Info (collaborator-workspace)"
+community: "Community 181"
 location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Public_Info_collaborator-workspace
+  - community/Community_181
 ---
 
 # The Security Pipeline
@@ -17,4 +17,4 @@ tags:
 - [[Inbound Pipeline (User → Agent)]] - `contains` [EXTRACTED]
 - [[Outbound Pipeline (Agent → User)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Public_Info_collaborator-workspace
+#graphify/document #graphify/EXTRACTED #community/Community_181

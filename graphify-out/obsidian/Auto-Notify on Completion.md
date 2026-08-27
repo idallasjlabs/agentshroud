@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/coding-agent/SKILL.md"
 type: "document"
-community: "Skill (coding-agent)"
+community: "Community 292"
 location: "L255"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_coding-agent
+  - community/Community_292
 ---
 
 # Auto-Notify on Completion
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Coding Agent (bash-first)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_coding-agent
+#graphify/document #graphify/EXTRACTED #community/Community_292

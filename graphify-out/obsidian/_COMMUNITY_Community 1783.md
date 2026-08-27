@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[RateLimitGuard.check()]] - code - gateway/security/rate_limit_guard.py
+- [[AgentShroud Open Graph Preview Image]] - image - branding/social/open-graph-1200x630.png
 
 ## Live Query (requires Dataview plugin)
 

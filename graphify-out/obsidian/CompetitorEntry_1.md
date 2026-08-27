@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "Intel Pipeline"
+community: "Community 133"
 location: "L82"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Intel_Pipeline
+  - community/Community_133
 ---
 
 # CompetitorEntry
@@ -35,4 +35,4 @@ tags:
 - [[intel_report.py]] - `contains` [EXTRACTED]
 - [[test_intel_pipeline.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Intel_Pipeline
+#graphify/code #graphify/INFERRED #community/Community_133

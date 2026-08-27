@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/PHASE3_REQUIREMENTS.md"
 type: "document"
-community: "Phase3 Requirements (architecture)"
+community: "Community 352"
 location: "L226"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase3_Requirements_architecture
+  - community/Community_352
 ---
 
 # Part 4: Implementation Checklist
@@ -19,4 +19,4 @@ tags:
 - [[Step 4 Integration Testing (Day 2)]] - `contains` [EXTRACTED]
 - [[Step 5 Documentation (Day 3)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase3_Requirements_architecture
+#graphify/document #graphify/EXTRACTED #community/Community_352

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/export-bot-conversations.py"
 type: "code"
-community: "Export Bot Conversations (scripts)"
+community: "Community 723"
 location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Export_Bot_Conversations_scripts
+  - community/Community_723
 ---
 
 # _docker_read_file()
@@ -19,4 +19,4 @@ tags:
 - [[export_hermes()]] - `calls` [EXTRACTED]
 - [[export_openclaw()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Export_Bot_Conversations_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_723

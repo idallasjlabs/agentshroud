@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/coding-agent/SKILL.md"
 type: "document"
-community: "Skill (coding-agent)"
+community: "Community 292"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_coding-agent
+  - community/Community_292
 ---
 
 # SKILL.md
@@ -22,4 +22,4 @@ tags:
 - [[SKILL_207]] - `semantically_similar_to` [INFERRED]
 - [[SKILL_209]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_coding-agent
+#graphify/document #graphify/EXTRACTED #community/Community_292

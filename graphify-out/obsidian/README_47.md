@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-bs/README.md"
 type: "document"
-community: "Readme (i-bs)"
+community: "Community 1182"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-bs
+  - community/Community_1182
 ---
 
 # README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Branding Specialist (BS)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-bs
+#graphify/document #graphify/EXTRACTED #community/Community_1182

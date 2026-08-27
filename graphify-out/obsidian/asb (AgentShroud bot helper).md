@@ -1,11 +1,11 @@
 ---
 source_file: "scripts/asb"
 type: "code"
-community: "Switch Model (scripts)"
+community: "Community 861"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Switch_Model_scripts
+  - community/Community_861
 ---
 
 # asb (AgentShroud bot helper)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[switch_model.sh]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Switch_Model_scripts
+#graphify/code #graphify/INFERRED #community/Community_861

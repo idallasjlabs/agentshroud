@@ -1,11 +1,11 @@
 ---
 source_file: "AGENTS.md"
 type: "concept"
-community: "Agents"
+community: "Community 822"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Agents
+  - community/Community_822
 ---
 
 # Codex Safe Refactor Role
@@ -14,4 +14,4 @@ tags:
 - [[AGENTS.md — Codex CLI Guidance]] - `references` [EXTRACTED]
 - [[safe-refactor.agent]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Agents
+#graphify/concept #graphify/INFERRED #community/Community_822

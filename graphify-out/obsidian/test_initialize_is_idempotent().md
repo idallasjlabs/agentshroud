@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_store.py"
 type: "code"
-community: "Approval Store"
+community: "Community 24"
 location: "L136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Store
+  - community/Community_24
 ---
 
 # test_initialize_is_idempotent()
@@ -17,4 +17,4 @@ tags:
 - [[Re-initializing must not orphan the first aiosqlite connection.      aiosqlite c]] - `rationale_for` [EXTRACTED]
 - [[test_approval_store.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Store
+#graphify/code #graphify/EXTRACTED #community/Community_24

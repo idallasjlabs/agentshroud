@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-mm/SKILL.md"
 type: "document"
-community: "Readme (i-ti)"
+community: "Community 946"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-ti
+  - community/Community_946
 ---
 
 # Mindmap Architect (MM)
@@ -15,4 +15,4 @@ tags:
 - [[Technical Illustrator (i-ti)]] - `references` [EXTRACTED]
 - [[Technical Writing (i-tw)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-ti
+#graphify/document #graphify/EXTRACTED #community/Community_946

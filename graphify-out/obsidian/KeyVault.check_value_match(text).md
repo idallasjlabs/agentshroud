@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/key_vault.py.md"
 type: "document"
-community: "Key Vault.py (Security Modules)"
+community: "Community 510"
 location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Key_Vaultpy_Security_Modules
+  - community/Community_510
 ---
 
 # KeyVault.check_value_match(text)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Function Details_42]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Key_Vaultpy_Security_Modules
+#graphify/document #graphify/EXTRACTED #community/Community_510

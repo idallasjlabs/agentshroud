@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "A2a Policy"
+community: "Community 82"
 location: "L302"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2a_Policy
+  - community/Community_82
 ---
 
 # is_safe_a2a_callback_url()
@@ -29,4 +29,4 @@ tags:
 - [[test_callback_url_ssrf_bypass_encodings_are_rejected()]] - `calls` [EXTRACTED]
 - [[test_callback_url_unresolvable_hostname_fails_closed()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2a_Policy
+#graphify/code #graphify/EXTRACTED #community/Community_82

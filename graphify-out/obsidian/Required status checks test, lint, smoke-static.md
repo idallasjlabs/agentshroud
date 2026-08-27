@@ -1,11 +1,11 @@
 ---
 source_file: "docs/governance/BRANCH_PROTECTION.md"
 type: "concept"
-community: "Strategy (governance)"
+community: "Community 307"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Strategy_governance
+  - community/Community_307
 ---
 
 # Required status checks: test, lint, smoke-static
@@ -15,4 +15,4 @@ tags:
 - [[GitHub Branch Protection — main (docsgovernanceBRANCH_PROTECTION.md)]] - `conceptually_related_to` [EXTRACTED]
 - [[Test Strategy (docsgovernanceTEST_STRATEGY.md)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Strategy_governance
+#graphify/concept #graphify/INFERRED #community/Community_307

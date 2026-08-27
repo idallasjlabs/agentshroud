@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_agent_cve_registry.py"
 type: "code"
-community: "Agent Cve Registry"
-location: "L337"
+community: "Community 88"
+location: "L350"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Agent_Cve_Registry
+  - community/Community_88
 ---
 
 # test_hermes_all_defense_layers_are_lists()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_agent_cve_registry.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Agent_Cve_Registry
+#graphify/code #graphify/EXTRACTED #community/Community_88

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md"
 type: "document"
-community: "Security Value Proposition Revised (security)"
+community: "Community 284"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Value_Proposition_Revised_security
+  - community/Community_284
 ---
 
 # AgentShroud Security Value Proposition - REVISED
@@ -19,6 +19,7 @@ tags:
 - [[Revised Assessment Nothing is Over-Engineered]] - `contains` [EXTRACTED]
 - [[Revised Threat Model]] - `contains` [EXTRACTED]
 - [[SECURITY_VALUE_PROPOSITION]] - `contains` [EXTRACTED]
+- [[SECURITY_VALUE_PROPOSITION_REVISED]] - `contains` [EXTRACTED]
 - [[What's Actually Over-Engineered (Revised Answer)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Value_Proposition_Revised_security
+#graphify/document #graphify/EXTRACTED #community/Community_284

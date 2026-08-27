@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "Webhook Receiver"
-location: "L498"
+community: "Community 56"
+location: "L496"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Webhook_Receiver
+  - community/Community_56
 ---
 
 # Create a temporary workspace.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.temp_workspace()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Webhook_Receiver
+#graphify/rationale #graphify/EXTRACTED #community/Community_56

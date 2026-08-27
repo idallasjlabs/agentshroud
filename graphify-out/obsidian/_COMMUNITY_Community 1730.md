@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Diagram 11 Trust Boundary (PNG)]] - image - docs/diagrams/images/diagram-11-trust-boundary.png
+- [[SecurityPipeline.process_outbound]] - code - gateway/proxy/pipeline.py
 
 ## Live Query (requires Dataview plugin)
 

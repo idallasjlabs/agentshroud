@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[ToolACLEnforcer._can_use_tool_impl()]] - code - gateway/security/tool_acl.py
+- [[SSHProxy.validate_write_file()]] - code - gateway/ssh_proxy/proxy.py
 
 ## Live Query (requires Dataview plugin)
 

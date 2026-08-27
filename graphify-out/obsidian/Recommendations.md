@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/security-supply-chain.md"
+source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md"
 type: "document"
-community: "Security Supply Chain (security)"
-location: "L116"
+community: "Community 342"
+location: "L213"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Supply_Chain_security
+  - community/Community_342
 ---
 
 # Recommendations
 
 ## Connections
-- [[Security Supply Chain Analysis]] - `contains` [EXTRACTED]
+- [[Blue Team Security Assessment — AgentShroud v0.8.0 Round 2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Supply_Chain_security
+#graphify/document #graphify/EXTRACTED #community/Community_342

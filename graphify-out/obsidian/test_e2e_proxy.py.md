@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "E2e Proxy"
+community: "Community 74"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/E2e_Proxy
+  - community/Community_74
 ---
 
 # test_e2e_proxy.py
@@ -66,4 +66,4 @@ tags:
 - [[test_webhook_strips_pii()]] - `contains` [EXTRACTED]
 - [[trust_manager()_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/E2e_Proxy
+#graphify/code #graphify/EXTRACTED #community/Community_74

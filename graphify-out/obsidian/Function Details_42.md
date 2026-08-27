@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/key_vault.py.md"
 type: "document"
-community: "Key Vault.py (Security Modules)"
+community: "Community 510"
 location: "L41"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Key_Vaultpy_Security_Modules
+  - community/Community_510
 ---
 
 # Function Details
@@ -22,4 +22,4 @@ tags:
 - [[KeyVault.store_key(name, value, scopes)]] - `contains` [EXTRACTED]
 - [[key_vault.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Key_Vaultpy_Security_Modules
+#graphify/document #graphify/EXTRACTED #community/Community_510

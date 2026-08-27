@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[test_alert_telegram_relay.py — AlertTelegramRelay tests]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[test_anthropic_openai_translator.py — AnthropicOpenAI translator tests]] - code - gateway/tests/test_anthropic_openai_translator.py
 
 ## Live Query (requires Dataview plugin)
 

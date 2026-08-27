@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/__init__.py"
 type: "code"
-community: "Installer (web)"
+community: "Community 439"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Installer_web
+  - community/Community_439
 ---
 
 # detect_runtime()
@@ -27,4 +27,4 @@ tags:
 - [[installer.py]] - `imports` [EXTRACTED]
 - [[test_runtime_engines.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Installer_web
+#graphify/code #graphify/EXTRACTED #community/Community_439

@@ -1,20 +1,20 @@
 ---
-source_file: "docs/setup/SETUP_API_KEYS.md"
+source_file: "docs/setup/PAIRING_INSTRUCTIONS.md"
 type: "document"
-community: "Readme (scripts)"
-location: "L204"
+community: "Community 690"
+location: "L53"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_scripts
+  - community/Community_690
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Missing auth for API providers]] - `contains` [EXTRACTED]
-- [[API Keys Setup Guide]] - `contains` [EXTRACTED]
-- [[Bot not responding on Telegram]] - `contains` [EXTRACTED]
-- [[Container won't start after adding Anthropic secret]] - `contains` [EXTRACTED]
+- [[Cannot save token]] - `contains` [EXTRACTED]
+- [[OpenClaw Control UI Pairing Instructions]] - `contains` [EXTRACTED]
+- [[Still shows pairing required]] - `contains` [EXTRACTED]
+- [[Token field not visible]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_scripts
+#graphify/document #graphify/EXTRACTED #community/Community_690

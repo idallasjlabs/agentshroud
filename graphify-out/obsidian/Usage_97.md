@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mac/README.md"
 type: "document"
-community: "Readme (i-mac)"
+community: "Community 1228"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-mac
+  - community/Community_1228
 ---
 
 # Usage
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[macOS System Administrator (MAC)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-mac
+#graphify/document #graphify/EXTRACTED #community/Community_1228

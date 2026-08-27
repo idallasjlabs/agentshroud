@@ -1,12 +1,12 @@
 ---
 source_file: "README.md"
 type: "document"
-community: "Readme"
+community: "Community 403"
 location: "L47"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme
+  - community/Community_403
 ---
 
 # What's New — v1.3.0 "Reliability" (July 2026)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[README_37]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme
+#graphify/document #graphify/EXTRACTED #community/Community_403

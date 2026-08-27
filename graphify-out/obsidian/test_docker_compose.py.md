@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_docker_compose.py"
 type: "code"
-community: "Docker Compose"
+community: "Community 216"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Docker_Compose
+  - community/Community_216
 ---
 
 # test_docker_compose.py
@@ -19,4 +19,4 @@ tags:
 - [[_load_compose()]] - `contains` [EXTRACTED]
 - [[_load_compose_raw()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Docker_Compose
+#graphify/code #graphify/EXTRACTED #community/Community_216

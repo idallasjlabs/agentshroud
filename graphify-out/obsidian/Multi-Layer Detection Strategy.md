@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-architecture.md"
 type: "document"
-community: "Incident Response (operations)"
+community: "Community 154"
 location: "L278"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Incident_Response_operations
+  - community/Community_154
 ---
 
 # Multi-Layer Detection Strategy
@@ -15,6 +15,7 @@ tags:
 - [[Layer 1 Pattern Matching]] - `contains` [EXTRACTED]
 - [[Layer 2 Unicode Normalization]] - `contains` [EXTRACTED]
 - [[Layer 3 Multi-Layer Decoding]] - `contains` [EXTRACTED]
+- [[Prompt Injection Defense]] - `contains` [EXTRACTED]
 - [[Prompt Injection Detected]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Incident_Response_operations
+#graphify/document #graphify/EXTRACTED #community/Community_154

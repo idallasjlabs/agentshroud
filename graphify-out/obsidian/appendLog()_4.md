@@ -1,18 +1,17 @@
 ---
 source_file: ".agents/skills/i-browser/browse.js"
 type: "code"
-community: "Browse (i-browser)"
-location: "L105"
+community: "Community 252"
+location: "function appendLog"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Browse_i-browser
+  - community/Community_252
 ---
 
 # appendLog()
 
 ## Connections
-- [[browse.js_3]] - `contains` [EXTRACTED]
 - [[browserFetch()_4]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Browse_i-browser
+#graphify/code #graphify/EXTRACTED #community/Community_252

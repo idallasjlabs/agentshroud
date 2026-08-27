@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/plan.md"
 type: "document"
-community: "Plan (redteam)"
+community: "Community 1500"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Plan_redteam
+  - community/Community_1500
 ---
 
 # plan
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Plan_redteam
+#graphify/document #graphify/EXTRACTED #community/Community_1500

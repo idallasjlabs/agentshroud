@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "rationale"
-community: "Dns Canvas Coverage"
+community: "Community 278"
 location: "L716"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Dns_Canvas_Coverage
+  - community/Community_278
 ---
 
 # Fake upstream WebSocket: yields scripted messages, records sends.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_FakeUpstreamWS]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Dns_Canvas_Coverage
+#graphify/rationale #graphify/EXTRACTED #community/Community_278

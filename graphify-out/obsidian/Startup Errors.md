@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Error Index.md"
 type: "document"
-community: "Error index (07 - Errors & Troubleshooting)"
+community: "Community 503"
 location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Error_index_07_-_Errors__Troubleshooting
+  - community/Community_503
 ---
 
 # Startup Errors
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Error Index_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Error_index_07_-_Errors__Troubleshooting
+#graphify/document #graphify/EXTRACTED #community/Community_503

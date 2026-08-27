@@ -1,12 +1,12 @@
 ---
 source_file: ".github/agents/test-augmenter.agent.md"
 type: "document"
-community: "Augmenter.agent (agents)"
+community: "Community 491"
 location: "L69"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Augmenteragent_agents
+  - community/Community_491
 ---
 
 # Expected Coverage
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Test Standards]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Augmenteragent_agents
+#graphify/document #graphify/EXTRACTED #community/Community_491

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/SECURITY_VERIFICATION.md"
+source_file: "docs/planning/v0.8/v0.8.0-feature-list-final.md"
 type: "document"
-community: "docs/operations"
-location: "L5"
+community: "Community 738"
+location: "L157"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/operations
+  - community/Community_738
 ---
 
 # Summary
 
 ## Connections
-- [[Security Verification Report]] - `contains` [EXTRACTED]
+- [[AgentShroud™ v0.8.0 Watchtower — Complete Feature List]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/operations
+#graphify/document #graphify/EXTRACTED #community/Community_738

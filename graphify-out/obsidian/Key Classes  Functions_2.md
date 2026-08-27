@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/ledger.py.md"
 type: "document"
-community: "Ledger.py (Gateway Core)"
+community: "Community 622"
 location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Ledgerpy_Gateway_Core
+  - community/Community_622
 ---
 
 # Key Classes / Functions
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ledger.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Ledgerpy_Gateway_Core
+#graphify/document #graphify/EXTRACTED #community/Community_622

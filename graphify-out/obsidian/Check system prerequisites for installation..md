@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/installer.py"
 type: "rationale"
-community: "Installer (web)"
+community: "Community 439"
 location: "L66"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Installer_web
+  - community/Community_439
 ---
 
 # Check system prerequisites for installation.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[check_prerequisites()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Installer_web
+#graphify/rationale #graphify/EXTRACTED #community/Community_439

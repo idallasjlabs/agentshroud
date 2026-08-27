@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[Diagram 18 Runbook]] - image - docs/diagrams/images/diagram-18-runbook.svg
-- [[Diagram 19 Incident Response]] - image - docs/diagrams/images/diagram-19-incident-response.svg
+- [[SKILL_113]] - document - docker/config/hermes/skills/i-sdlc/SKILL.md
+- [[Skill sdlc_1]] - document - docker/config/hermes/skills/i-sdlc/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

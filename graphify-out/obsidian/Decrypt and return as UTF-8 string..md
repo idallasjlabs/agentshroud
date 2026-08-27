@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "rationale"
-community: "Encrypted Store (security)"
+community: "Community 60"
 location: "L196"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Encrypted_Store_security
+  - community/Community_60
 ---
 
 # Decrypt and return as UTF-8 string.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.decrypt_str()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Encrypted_Store_security
+#graphify/rationale #graphify/EXTRACTED #community/Community_60

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "Outbound Filter"
+community: "Community 23"
 location: "L518"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Outbound_Filter
+  - community/Community_23
 ---
 
 # TestFabricatedSecurityNotice
@@ -32,4 +32,4 @@ tags:
 - [[Test cases for the widened fabricated_security_notice pattern.]] - `rationale_for` [EXTRACTED]
 - [[test_outbound_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Outbound_Filter
+#graphify/code #graphify/EXTRACTED #community/Community_23

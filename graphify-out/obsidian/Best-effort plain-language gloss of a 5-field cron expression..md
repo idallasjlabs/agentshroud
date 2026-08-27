@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/generate-job-schedule.py"
 type: "rationale"
-community: "Generate Job Schedule (scripts)"
+community: "Community 917"
 location: "L94"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Generate_Job_Schedule_scripts
+  - community/Community_917
 ---
 
 # Best-effort plain-language gloss of a 5-field cron expression.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[describe_cron()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Generate_Job_Schedule_scripts
+#graphify/rationale #graphify/EXTRACTED #community/Community_917

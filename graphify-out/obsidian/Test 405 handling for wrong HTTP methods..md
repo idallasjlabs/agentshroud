@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "rationale"
-community: "Main Endpoints"
+community: "Community 1845"
 location: "L230"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Main_Endpoints
+  - community/Community_1845
 ---
 
 # Test 405 handling for wrong HTTP methods.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_method_not_allowed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Main_Endpoints
+#graphify/rationale #graphify/EXTRACTED #community/Community_1845

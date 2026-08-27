@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-11-trust-boundary.svg"
 type: "image"
-community: "Data Flow Diagram (flows)"
+community: "Community 903"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/Data_Flow_Diagram_flows
+  - community/Community_903
 ---
 
 # Diagram 11: Trust Boundary
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Trust Manager (Level 1 security component)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/Data_Flow_Diagram_flows
+#graphify/image #graphify/INFERRED #community/Community_903

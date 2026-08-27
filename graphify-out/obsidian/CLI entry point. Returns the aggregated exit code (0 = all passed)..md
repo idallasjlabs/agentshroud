@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tools/multi_host_test.py"
 type: "rationale"
-community: "Multi Host"
+community: "Community 731"
 location: "L313"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Multi_Host
+  - community/Community_731
 ---
 
 # CLI entry point. Returns the aggregated exit code (0 = all passed).
 
 ## Connections
-- [[main()_13]] - `rationale_for` [EXTRACTED]
+- [[main()_14]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Multi_Host
+#graphify/rationale #graphify/EXTRACTED #community/Community_731

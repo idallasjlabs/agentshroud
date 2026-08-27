@@ -1,12 +1,12 @@
 ---
 source_file: "dashboard/README.md"
 type: "document"
-community: "Readme (dashboard)"
+community: "Community 257"
 location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_dashboard
+  - community/Community_257
 ---
 
 # Features
@@ -19,4 +19,4 @@ tags:
 - [[Memory Browser]] - `contains` [EXTRACTED]
 - [[Network Inspector]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_dashboard
+#graphify/document #graphify/EXTRACTED #community/Community_257

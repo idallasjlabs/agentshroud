@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_file_sandbox.py"
 type: "concept"
-community: "Privilege Separation & File Sandbox"
+community: "Community 14"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Privilege_Separation__File_Sandbox
+  - community/Community_14
 ---
 
 # Large-write-then-network-activity staging/exfiltration pattern detection
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[FileSandbox]] - `rationale_for` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Privilege_Separation__File_Sandbox
+#graphify/concept #graphify/EXTRACTED #community/Community_14

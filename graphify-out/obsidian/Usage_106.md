@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/skills/i-pm/README.md"
 type: "document"
-community: "Readme (i-pm)"
+community: "Community 1236"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-pm
+  - community/Community_1236
 ---
 
 # Usage
 
 ## Connections
-- [[Project Management (PM)_1]] - `contains` [EXTRACTED]
+- [[Project Management (PM)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-pm
+#graphify/document #graphify/EXTRACTED #community/Community_1236

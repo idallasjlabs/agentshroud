@@ -1,21 +1,21 @@
 ---
 source_file: "docker/config/openclaw/agents/openclaw-identity.md"
 type: "document"
-community: "Auth.py (Gateway Core)"
+community: "Community 479"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Authpy_Gateway_Core
+  - community/Community_479
 ---
 
 # IDENTITY.md - Who I Am
 
 ## Connections
-- [[Competitive Intelligence Protocol]] - `contains` [EXTRACTED]
+- [[Competitive Intelligence Protocol_1]] - `contains` [EXTRACTED]
 - [[My Owner_1]] - `contains` [EXTRACTED]
-- [[My Responsibilities]] - `contains` [EXTRACTED]
+- [[My Responsibilities_1]] - `contains` [EXTRACTED]
 - [[My Role_1]] - `contains` [EXTRACTED]
 - [[openclaw-identity_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Authpy_Gateway_Core
+#graphify/document #graphify/EXTRACTED #community/Community_479

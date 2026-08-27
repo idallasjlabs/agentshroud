@@ -1,23 +1,17 @@
 ---
-source_file: ".agents/skills/i-athena/SKILL.md"
-type: "document"
-community: "Skill (i-athena)"
+source_file: "docs/architecture/agentic-os.md"
+type: "concept"
+community: "Community 888"
 tags:
-  - graphify/document
+  - graphify/concept
   - graphify/EXTRACTED
-  - community/Skill_i-athena
+  - community/Community_888
 ---
 
 # Athena — Knowledge Distiller
 
 ## Connections
 - [[Apollo — Audio Systems Producer_6]] - `shares_data_with` [EXTRACTED]
-- [[Athena README]] - `references` [EXTRACTED]
-- [[Atlas — Curriculum Architect_6]] - `shares_data_with` [EXTRACTED]
-- [[Input Requirements_1]] - `contains` [EXTRACTED]
-- [[Output Format]] - `contains` [EXTRACTED]
-- [[Persona]] - `contains` [EXTRACTED]
-- [[Role_5]] - `contains` [EXTRACTED]
-- [[SKILL_5]] - `contains` [EXTRACTED]
+- [[Oracle — Feedback Analyst_6]] - `shares_data_with` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-athena
+#graphify/concept #graphify/EXTRACTED #community/Community_888

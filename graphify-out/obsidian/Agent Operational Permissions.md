@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/access-control-matrix.md"
 type: "document"
-community: "Access Control Matrix (security)"
+community: "Community 175"
 location: "L118"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Access_Control_Matrix_security
+  - community/Community_175
 ---
 
 # Agent Operational Permissions
@@ -17,4 +17,4 @@ tags:
 - [[External Service Access]] - `contains` [EXTRACTED]
 - [[Tool and Capability Access]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Access_Control_Matrix_security
+#graphify/document #graphify/EXTRACTED #community/Community_175

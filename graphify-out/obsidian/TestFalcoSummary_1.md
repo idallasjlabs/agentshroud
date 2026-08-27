@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "Falco Monitor (security)"
-location: "L603"
+community: "Community 1131"
+location: "L623"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Falco_Monitor_security
+  - community/Community_1131
 ---
 
 # TestFalcoSummary
@@ -19,4 +19,4 @@ tags:
 - [[AlertDispatcher]] - `uses` [INFERRED]
 - [[test_security_toolchain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Falco_Monitor_security
+#graphify/code #graphify/EXTRACTED #community/Community_1131

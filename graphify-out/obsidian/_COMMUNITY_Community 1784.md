@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[RBACConfig.wire_teams_config()]] - code - gateway/security/rbac_config.py
+- [[AgentShroud Telegram Avatar]] - image - branding/social/telegram-avatar-512x512.png
 
 ## Live Query (requires Dataview plugin)
 

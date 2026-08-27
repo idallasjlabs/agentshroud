@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-inventory.md"
 type: "document"
-community: "Security Inventory (security)"
+community: "Community 423"
 location: "L228"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Inventory_security
+  - community/Community_423
 ---
 
 # Testing Checklist
@@ -16,4 +16,4 @@ tags:
 - [[Owner Testing]] - `contains` [EXTRACTED]
 - [[🛡️ AgentShroud Security Inventory (v0.8.0)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Inventory_security
+#graphify/document #graphify/EXTRACTED #community/Community_423

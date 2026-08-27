@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md"
 type: "document"
-community: "Security Value Proposition Revised (security)"
+community: "Community 284"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Value_Proposition_Revised_security
+  - community/Community_284
 ---
 
 # This is NOT a Personal Tool
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Critical Context (What I Missed)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Value_Proposition_Revised_security
+#graphify/document #graphify/EXTRACTED #community/Community_284

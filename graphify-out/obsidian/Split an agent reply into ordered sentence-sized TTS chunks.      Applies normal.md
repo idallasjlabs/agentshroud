@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/tts.py"
 type: "rationale"
-community: "Tts (voice_gateway)"
+community: "Community 286"
 location: "L284"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Tts_voice_gateway
+  - community/Community_286
 ---
 
 # Split an agent reply into ordered sentence-sized TTS chunks.      Applies normal
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[split_for_speech()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Tts_voice_gateway
+#graphify/rationale #graphify/EXTRACTED #community/Community_286

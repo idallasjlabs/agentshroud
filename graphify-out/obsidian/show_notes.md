@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-athena/SKILL.md"
 type: "document"
-community: "Skill (i-athena)"
+community: "Community 696"
 location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-athena
+  - community/Community_696
 ---
 
 # show_notes.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Output Format]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-athena
+#graphify/document #graphify/EXTRACTED #community/Community_696

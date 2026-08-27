@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_config.py"
 type: "code"
-community: "Web Proxy"
+community: "Community 30"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Web_Proxy
+  - community/Community_30
 ---
 
 # WebProxyConfig
@@ -95,4 +95,4 @@ tags:
 - [[web_config.py]] - `contains` [EXTRACTED]
 - [[web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Web_Proxy
+#graphify/code #graphify/EXTRACTED #community/Community_30

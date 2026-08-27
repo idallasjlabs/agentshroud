@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-browser/browse.js"
+source_file: "gateway/security/audit_store.py"
 type: "code"
-community: "Browse (i-browser)"
-location: "L8"
+community: "Community 232"
+location: "L125"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Browse_i-browser
+  - community/Community_232
 ---
 
-# path
+# Path
 
 ## Connections
-- [[browse.js_3]] - `contains` [EXTRACTED]
+- [[.__init__()_58]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Browse_i-browser
+#graphify/code #graphify/EXTRACTED #community/Community_232

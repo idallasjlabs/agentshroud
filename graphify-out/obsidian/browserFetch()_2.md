@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-browser/browse.js"
 type: "code"
-community: "Browse (i-browser)"
+community: "Community 1089"
 location: "L10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Browse_i-browser
+  - community/Community_1089
 ---
 
 # browserFetch()
@@ -15,4 +15,4 @@ tags:
 - [[appendLog()_2]] - `calls` [EXTRACTED]
 - [[browse.js_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Browse_i-browser
+#graphify/code #graphify/EXTRACTED #community/Community_1089

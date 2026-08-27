@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/MASTER-FEATURE-LIST.md"
 type: "document"
-community: "Master Feature List (planning)"
+community: "Community 733"
 location: "L199"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Master_Feature_List_planning
+  - community/Community_733
 ---
 
 # C. Steve Hay Remediation
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[v0.9.0 — Sentinel (Blue Team Remediation + Data Isolation + SOC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Master_Feature_List_planning
+#graphify/document #graphify/EXTRACTED #community/Community_733

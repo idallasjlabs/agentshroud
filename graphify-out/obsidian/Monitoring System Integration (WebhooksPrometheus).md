@@ -1,11 +1,11 @@
 ---
 source_file: "docs/api/integration-guide.md"
 type: "document"
-community: "Trust Manager.py (Security Modules)"
+community: "Community 1259"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Trust_Managerpy_Security_Modules
+  - community/Community_1259
 ---
 
 # Monitoring System Integration (Webhooks/Prometheus)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Dashboard (WebSocket)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Trust_Managerpy_Security_Modules
+#graphify/document #graphify/INFERRED #community/Community_1259

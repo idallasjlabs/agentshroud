@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/falco_monitor.py"
 type: "rationale"
-community: "Security Toolchain"
+community: "Community 162"
 location: "L147"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Toolchain
+  - community/Community_162
 ---
 
 # Check if a rule is AgentShroud-specific.      Args:         rule_name: Falco rul
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[is_agentshroud_rule()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Toolchain
+#graphify/rationale #graphify/EXTRACTED #community/Community_162

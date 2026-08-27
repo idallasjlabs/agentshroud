@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/03-data.md"
 type: "concept"
-community: "03 Data (diagrams)"
+community: "Community 559"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/03_Data_diagrams
+  - community/Community_559
 ---
 
 # Data Dictionary / Catalog Map
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[03-data]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/03_Data_diagrams
+#graphify/concept #graphify/EXTRACTED #community/Community_559

@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[ui_face.c (kawaii face UI state machine)]] - code - firmware/voice-terminal/main/ui_face.c
+- [[graphify explain command]] - concept - docker/config/openclaw/skills/graphify/references/query.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[SSHProxy.write_file()]] - code - gateway/ssh_proxy/proxy.py
+- [[Zabbix API unittest.mock test pattern]] - concept - docker/config/openclaw/skills/i-tdd/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

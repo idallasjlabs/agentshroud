@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_credential_isolation.py"
 type: "code"
-community: "Credential Isolation"
+community: "Community 611"
 location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Credential_Isolation
+  - community/Community_611
 ---
 
 # TestCredentialInjector
@@ -25,4 +25,4 @@ tags:
 - [[TestCredentialInjection]] - `semantically_similar_to` [INFERRED]
 - [[test_credential_isolation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Credential_Isolation
+#graphify/code #graphify/EXTRACTED #community/Community_611

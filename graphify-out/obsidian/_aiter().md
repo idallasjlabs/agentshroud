@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_stream.py"
 type: "code"
-community: "Forward Stream"
+community: "Community 76"
 location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Forward_Stream
+  - community/Community_76
 ---
 
 # _aiter()
@@ -25,4 +25,4 @@ tags:
 - [[test_sentences_from_deltas_single_delta_full_sentence()]] - `calls` [EXTRACTED]
 - [[test_sentences_from_deltas_splits_on_boundaries()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Forward_Stream
+#graphify/code #graphify/EXTRACTED #community/Community_76

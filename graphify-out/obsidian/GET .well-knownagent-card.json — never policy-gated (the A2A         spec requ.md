@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/a2a_proxy.py"
 type: "rationale"
-community: "A2a Proxy (proxy)"
+community: "Community 158"
 location: "L352"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/A2a_Proxy_proxy
+  - community/Community_158
 ---
 
 # GET /.well-known/agent-card.json — never policy-gated (the A2A         spec requ
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.process_agent_card_request()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/A2a_Proxy_proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_158

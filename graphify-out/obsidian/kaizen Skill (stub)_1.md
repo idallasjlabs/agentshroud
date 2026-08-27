@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-kaizen/SKILL.md"
 type: "document"
-community: "Skill (i-incident-response)"
+community: "Community 1394"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Skill_i-incident-response
+  - community/Community_1394
 ---
 
 # kaizen Skill (stub)
@@ -14,4 +14,4 @@ tags:
 - [[incident-response Skill (stub)_1]] - `conceptually_related_to` [INFERRED]
 - [[kanban Skill (stub)_1]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Skill_i-incident-response
+#graphify/document #graphify/INFERRED #community/Community_1394

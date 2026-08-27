@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/workspace/jira_dev_ticket.py"
 type: "rationale"
-community: "Jira Dev Ticket (workspace)"
+community: "Community 165"
 location: "L163"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Jira_Dev_Ticket_workspace
+  - community/Community_165
 ---
 
 # Build the REST v3 create-issue request body.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[build_create_issue_payload()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Jira_Dev_Ticket_workspace
+#graphify/rationale #graphify/EXTRACTED #community/Community_165

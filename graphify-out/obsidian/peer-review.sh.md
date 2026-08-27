@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/peer-review.sh"
 type: "code"
-community: "Gemini Review (scripts)"
+community: "Community 1048"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gemini_Review_scripts
+  - community/Community_1048
 ---
 
 # peer-review.sh
@@ -16,4 +16,4 @@ tags:
 - [[gemini-review.py]] - `references` [EXTRACTED]
 - [[peer-review.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gemini_Review_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_1048

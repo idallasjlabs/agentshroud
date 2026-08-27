@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "rationale"
-community: "Session Manager (security)"
+community: "Community 174"
 location: "L437"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Session_Manager_security
+  - community/Community_174
 ---
 
 # List session keys that the requesting user is allowed to see.          Returns t
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.list_sessions_for_user()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Session_Manager_security
+#graphify/rationale #graphify/EXTRACTED #community/Community_174

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/auth.py"
 type: "rationale"
-community: "Router (soc)"
+community: "Community 18"
 location: "L139"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Router_soc
+  - community/Community_18
 ---
 
 # Resolved identity of the SCL caller, including role and user_id.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SCLCaller]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Router_soc
+#graphify/rationale #graphify/EXTRACTED #community/Community_18

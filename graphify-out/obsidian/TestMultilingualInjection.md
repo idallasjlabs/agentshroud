@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multilingual_injection.py"
 type: "code"
-community: "Multilingual Injection"
+community: "Community 196"
 location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Multilingual_Injection
+  - community/Community_196
 ---
 
 # TestMultilingualInjection
@@ -33,4 +33,4 @@ tags:
 - [[Test multilingual prompt injection detection across Tier 1 and Tier 2 languages.]] - `rationale_for` [EXTRACTED]
 - [[test_multilingual_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Multilingual_Injection
+#graphify/code #graphify/EXTRACTED #community/Community_196

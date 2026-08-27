@@ -1,17 +1,17 @@
 ---
-source_file: "docs/api/integration-guide.md"
+source_file: "docker/config/openclaw/skills/i-icloud/SKILL.md"
 type: "document"
-community: "Openscap (05 - Dependencies)"
-location: "L22"
+community: "Community 300"
+location: "L125"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Openscap_05_-_Dependencies
+  - community/Community_300
 ---
 
 # Configuration
 
 ## Connections
-- [[OpenClaw Integration (Primary Target)]] - `contains` [EXTRACTED]
+- [[iCloud Services_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Openscap_05_-_Dependencies
+#graphify/document #graphify/EXTRACTED #community/Community_300

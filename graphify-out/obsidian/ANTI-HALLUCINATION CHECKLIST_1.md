@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/workspace/competitive-analysis.md"
 type: "document"
-community: "Competitive Analysis (workspace)"
+community: "Community 846"
 location: "L232"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Competitive_Analysis_workspace
+  - community/Community_846
 ---
 
 # ANTI-HALLUCINATION CHECKLIST
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Competitive Intelligence Report — Standard Prompt]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Competitive_Analysis_workspace
+#graphify/document #graphify/EXTRACTED #community/Community_846

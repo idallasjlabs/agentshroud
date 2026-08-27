@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[i-sre SRE Practices]] - document - docker/config/openclaw/skills/i-sre/SKILL.md
+- [[Behavioral Pattern Analysis]] - concept - docs/project/glossary.md
 
 ## Live Query (requires Dataview plugin)
 

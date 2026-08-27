@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/output_schema.py"
 type: "rationale"
-community: "Output Schema"
+community: "Community 237"
 location: "L85"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Output_Schema
+  - community/Community_237
 ---
 
 # Register or replace a named schema.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.register_schema()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Output_Schema
+#graphify/rationale #graphify/EXTRACTED #community/Community_237

@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[test_wire_llm_settings.js — ~.llm_settings wiring isolation test]] - code - tests/startup_smoke/test_wire_llm_settings.js
+- [[apply-patches.js Behavioral Smoke Test Suite (Node.js)]] - code - tests/startup_smoke/test_apply_patches.js
 
 ## Live Query (requires Dataview plugin)
 

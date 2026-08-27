@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/conftest.py"
 type: "code"
-community: "Conftest"
+community: "Community 1527"
 location: "L90"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Conftest
+  - community/Community_1527
 ---
 
 # test_config fixture
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_ledger fixture]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Conftest
+#graphify/code #graphify/INFERRED #community/Community_1527

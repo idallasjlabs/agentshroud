@@ -1,13 +1,13 @@
 ---
 source_file: "branding/presentation/title-slide-1920x1080.png"
 type: "image"
-community: "Title Slide 1920x1080 (presentation)"
+community: "Community 1724"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Title_Slide_1920x1080_presentation
+  - community/Community_1724
 ---
 
 # AgentShroud Presentation Title Slide
 
-#graphify/image #graphify/EXTRACTED #community/Title_Slide_1920x1080_presentation
+#graphify/image #graphify/EXTRACTED #community/Community_1724

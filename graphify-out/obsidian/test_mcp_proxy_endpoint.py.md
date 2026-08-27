@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_endpoint.py"
 type: "code"
-community: "Mcp Permissions"
+community: "Community 106"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Mcp_Permissions
+  - community/Community_106
 ---
 
 # test_mcp_proxy_endpoint.py
@@ -18,4 +18,4 @@ tags:
 - [[test_mcp_permissions.py]] - `conceptually_related_to` [INFERRED]
 - [[test_mcp_proxy_coverage.py]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Mcp_Permissions
+#graphify/code #graphify/EXTRACTED #community/Community_106

@@ -1,11 +1,11 @@
 ---
 source_file: "skills/custom/browser-fetch/skill.json"
 type: "code"
-community: "Run As Root (browser-fetch)"
+community: "Community 1374"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Run_As_Root_browser-fetch
+  - community/Community_1374
 ---
 
 # browser-fetch skill.json (tool manifest)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[run-as-root.sh]] - `shares_data_with` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Run_As_Root_browser-fetch
+#graphify/code #graphify/INFERRED #community/Community_1374

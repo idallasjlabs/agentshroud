@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "OAuth & Metadata Guard"
+community: "Community 64"
 location: "L279"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/OAuth__Metadata_Guard
+  - community/Community_64
 ---
 
 # Markdown-based injection.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_prompt_leaking_via_markdown()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/OAuth__Metadata_Guard
+#graphify/rationale #graphify/EXTRACTED #community/Community_64

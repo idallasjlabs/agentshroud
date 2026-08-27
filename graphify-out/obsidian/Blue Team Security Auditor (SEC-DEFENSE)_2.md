@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-sec-defense/README.md"
 type: "document"
-community: "Readme (i-sec-defense)"
+community: "Community 1243"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-sec-defense
+  - community/Community_1243
 ---
 
 # Blue Team Security Auditor (SEC-DEFENSE)
@@ -17,4 +17,4 @@ tags:
 - [[Related Skills_112]] - `contains` [EXTRACTED]
 - [[Usage_113]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-sec-defense
+#graphify/document #graphify/EXTRACTED #community/Community_1243

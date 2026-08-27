@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/coding-agent/SKILL.md"
 type: "document"
-community: "Skill (coding-agent)"
+community: "Community 292"
 location: "L195"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_coding-agent
+  - community/Community_292
 ---
 
 # Parallel Issue Fixing with git worktrees
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Coding Agent (bash-first)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_coding-agent
+#graphify/document #graphify/EXTRACTED #community/Community_292

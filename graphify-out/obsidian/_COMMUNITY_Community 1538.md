@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_openclaw_ssh_config_allows_all_lab_hosts()]] - code - gateway/tests/test_config_validation.py
-- [[OpenClaw's SSH client config must have Host blocks for all three lab hosts.]] - rationale - gateway/tests/test_config_validation.py
+- [[SOC Models SecurityEvent Tests]] - code - gateway/tests/test_soc_models.py
+- [[SOC ServiceManager Tests (get_logs, module_filter)]] - code - gateway/tests/test_soc_services.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -17,9 +17,3 @@ members: 2
 TABLE source_file, type FROM #community/Community_1538
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Architecture Docs]]
-
-## Top bridge nodes
-- [[.test_openclaw_ssh_config_allows_all_lab_hosts()]] - degree 2, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_rbac.py"
 type: "rationale"
-community: "Group Rbac"
+community: "Community 75"
 location: "L118"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Group_Rbac
+  - community/Community_75
 ---
 
 # Return True if user_id is at least a member (member or owner).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.is_member_or_higher()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Group_Rbac
+#graphify/rationale #graphify/EXTRACTED #community/Community_75

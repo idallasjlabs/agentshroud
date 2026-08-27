@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/adr/ADR-002-default-allow-security-philosophy.md"
 type: "document"
-community: "Adr 002 Default Allow (adr)"
+community: "Community 789"
 location: "L62"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Adr_002_Default_Allow_adr
+  - community/Community_789
 ---
 
 # Mitigation Strategies
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Consequences_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Adr_002_Default_Allow_adr
+#graphify/document #graphify/EXTRACTED #community/Community_789

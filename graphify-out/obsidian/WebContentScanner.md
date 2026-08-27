@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_content_scanner.py"
 type: "code"
-community: "Url Analyzer"
+community: "Community 5"
 location: "L176"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Url_Analyzer
+  - community/Community_5
 ---
 
 # WebContentScanner
@@ -33,4 +33,4 @@ tags:
 - [[web_content_scanner.py]] - `contains` [EXTRACTED]
 - [[web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Url_Analyzer
+#graphify/code #graphify/INFERRED #community/Community_5

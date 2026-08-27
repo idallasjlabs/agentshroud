@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[openclaw agents_README.txt (50+ specialized agents)]] - document - docker/config/openclaw/agents/_README.txt
+- [[Prune old nodes for changed files before AST re-insert (1178)]] - rationale - docker/config/hermes/skills/graphify/references/update.md
 
 ## Live Query (requires Dataview plugin)
 

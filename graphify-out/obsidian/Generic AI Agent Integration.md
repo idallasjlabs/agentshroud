@@ -1,12 +1,12 @@
 ---
 source_file: "docs/api/integration-guide.md"
 type: "document"
-community: "Integration Guide (api)"
+community: "Community 520"
 location: "L150"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Integration_Guide_api
+  - community/Community_520
 ---
 
 # Generic AI Agent Integration
@@ -15,4 +15,4 @@ tags:
 - [[HTTP Proxy Mode]] - `contains` [EXTRACTED]
 - [[Integration Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Integration_Guide_api
+#graphify/document #graphify/EXTRACTED #community/Community_520

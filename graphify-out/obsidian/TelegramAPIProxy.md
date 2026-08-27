@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "Telegram Proxy Core"
+community: "Community 4"
 location: "L395"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Core
+  - community/Community_4
 ---
 
 # TelegramAPIProxy
@@ -176,7 +176,6 @@ tags:
 - [[TelegramAPIProxy_1]] - `uses` [INFERRED]
 - [[TelegramAPIProxy_2]] - `uses` [INFERRED]
 - [[TelegramAPIProxy_3]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_4]] - `uses` [INFERRED]
 - [[TestBotIsMentioned]] - `uses` [INFERRED]
 - [[TestBuildCollaboratorSafeInfoResponse]] - `uses` [INFERRED]
 - [[TestCollabLockdownNotifications]] - `uses` [INFERRED]
@@ -262,4 +261,4 @@ tags:
 - [[test_telegram_proxy_multibot.py]] - `imports` [EXTRACTED]
 - [[test_telegram_proxy_outbound.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Core
+#graphify/code #graphify/EXTRACTED #community/Community_4

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "rationale"
-community: "Main Endpoints"
+community: "Community 9"
 location: "L509"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Main_Endpoints
+  - community/Community_9
 ---
 
 # Handler returns ok=True when called from 127.0.0.1.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_alerts_accepted_from_localhost()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Main_Endpoints
+#graphify/rationale #graphify/EXTRACTED #community/Community_9

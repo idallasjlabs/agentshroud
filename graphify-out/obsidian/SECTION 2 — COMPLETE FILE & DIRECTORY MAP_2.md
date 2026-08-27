@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-sad/SKILL.md"
 type: "document"
-community: "Skill (i-sad)"
+community: "Community 618"
 location: "L24"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-sad
+  - community/Community_618
 ---
 
 # SECTION 2 — COMPLETE FILE & DIRECTORY MAP
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[System Audit & Documentation_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-sad
+#graphify/document #graphify/EXTRACTED #community/Community_618

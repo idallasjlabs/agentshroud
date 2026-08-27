@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/agentshroud-blueteam/SKILL.md"
 type: "document"
-community: "Skill (agentshroud-blueteam)"
+community: "Community 599"
 location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_agentshroud-blueteam
+  - community/Community_599
 ---
 
 # Audit Procedure
@@ -19,4 +19,4 @@ tags:
 - [[Phase 4 Configuration Audit_3]] - `contains` [EXTRACTED]
 - [[Phase 5 Steve Hay's Specific Probes_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_agentshroud-blueteam
+#graphify/document #graphify/EXTRACTED #community/Community_599

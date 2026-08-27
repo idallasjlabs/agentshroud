@@ -1,12 +1,12 @@
 ---
 source_file: "docs/integrations/README.md"
 type: "document"
-community: "Diagram 11 Trust Boundary (images)"
+community: "Community 1528"
 location: "L1"
 tags:
   - graphify/document
   - graphify/AMBIGUOUS
-  - community/Diagram_11_Trust_Boundary_images
+  - community/Community_1528
 ---
 
 # README.md
@@ -16,4 +16,4 @@ tags:
 - [[Integrations Documentation]] - `contains` [EXTRACTED]
 - [[Network Security  Egress Control Flowchart]] - `conceptually_related_to` [AMBIGUOUS]
 
-#graphify/document #graphify/AMBIGUOUS #community/Diagram_11_Trust_Boundary_images
+#graphify/document #graphify/AMBIGUOUS #community/Community_1528

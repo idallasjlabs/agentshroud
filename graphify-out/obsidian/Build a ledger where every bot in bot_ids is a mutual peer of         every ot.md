@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/cross_bot_trust_ledger.py"
 type: "rationale"
-community: "Pipeline Unit"
+community: "Community 1016"
 location: "L175"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Pipeline_Unit
+  - community/Community_1016
 ---
 
 # Build a ledger where every bot in *bot_ids* is a mutual peer of         every ot
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.build_full_mesh()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Pipeline_Unit
+#graphify/rationale #graphify/EXTRACTED #community/Community_1016

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_multibot.py"
 type: "code"
-community: "Telegram Proxy Multibot"
+community: "Community 445"
 location: "L179"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Multibot
+  - community/Community_445
 ---
 
 # TestMultiBotContextvarRouting
@@ -27,4 +27,4 @@ tags:
 - [[Tests for per-request bot token routing via contextvars.      Regression suite f]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_multibot.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Multibot
+#graphify/code #graphify/EXTRACTED #community/Community_445

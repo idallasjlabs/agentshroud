@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "Mcp Inspector (proxy)"
+community: "Community 106"
 location: "L230"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Mcp_Inspector_proxy
+  - community/Community_106
 ---
 
 # EnhancedApprovalQueue
@@ -21,4 +21,4 @@ tags:
 - [[MCPServerConfig]] - `uses` [INFERRED]
 - [[MCPTransport]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Mcp_Inspector_proxy
+#graphify/code #graphify/INFERRED #community/Community_106

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/PREREQUISITES.md"
 type: "document"
-community: "Prerequisites (reference)"
+community: "Community 329"
 location: "L431"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Prerequisites_reference
+  - community/Community_329
 ---
 
 # 📦 Docker Images & Dependencies
@@ -16,4 +16,4 @@ tags:
 - [[AgentShroud Prerequisites]] - `contains` [EXTRACTED]
 - [[Base Images]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Prerequisites_reference
+#graphify/document #graphify/EXTRACTED #community/Community_329

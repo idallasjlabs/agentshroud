@@ -1,11 +1,11 @@
 ---
 source_file: "scripts/canary-cron.sh"
 type: "code"
-community: "Security Audit & Watchtower Tests"
+community: "Community 74"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Audit__Watchtower_Tests
+  - community/Community_74
 ---
 
 # canary-cron.sh embedded Python main()
@@ -18,4 +18,4 @@ tags:
 - [[TrustManager_1]] - `calls` [EXTRACTED]
 - [[run_canary()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests
+#graphify/code #graphify/EXTRACTED #community/Community_74

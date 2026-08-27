@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_subagent_monitor.py"
 type: "rationale"
-community: "Subagent Monitor"
+community: "Community 97"
 location: "L172"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Subagent_Monitor
+  - community/Community_97
 ---
 
 # In monitor mode, even trust violations are allowed (just flagged).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_monitor_mode_allows_all_tools()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Subagent_Monitor
+#graphify/rationale #graphify/EXTRACTED #community/Community_97

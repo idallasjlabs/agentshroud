@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md"
 type: "document"
-community: "Mcp Inspector.py (Proxy Layer)"
+community: "Community 631"
 location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mcp_Inspectorpy_Proxy_Layer
+  - community/Community_631
 ---
 
 # Function Details
@@ -20,4 +20,4 @@ tags:
 - [[MCPInspector.inspect_tool_result(tool_name, result_content, check_pii, check_encoding)]] - `contains` [EXTRACTED]
 - [[mcp_inspector.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mcp_Inspectorpy_Proxy_Layer
+#graphify/document #graphify/EXTRACTED #community/Community_631

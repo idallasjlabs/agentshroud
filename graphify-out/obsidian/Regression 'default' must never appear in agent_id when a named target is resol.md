@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "rationale"
-community: "Forward Routing"
+community: "Community 167"
 location: "L165"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Forward_Routing
+  - community/Community_167
 ---
 
 # Regression: 'default' must never appear in agent_id when a named target is resol
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_default_not_used_in_pipeline()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Forward_Routing
+#graphify/rationale #graphify/EXTRACTED #community/Community_167

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-architecture.md"
 type: "document"
-community: "Incident Response (operations)"
+community: "Community 154"
 location: "L297"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Incident_Response_operations
+  - community/Community_154
 ---
 
 # Layer 2: Unicode Normalization
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Multi-Layer Detection Strategy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Incident_Response_operations
+#graphify/document #graphify/EXTRACTED #community/Community_154

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "code"
-community: "Mcp Permissions"
+community: "Community 106"
 location: "L153"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Mcp_Permissions
+  - community/Community_106
 ---
 
 # PrivateAccessAttempt
@@ -20,4 +20,4 @@ tags:
 - [[RBACConfig_1]] - `uses` [INFERRED]
 - [[mcp_permissions.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Mcp_Permissions
+#graphify/code #graphify/INFERRED #community/Community_106

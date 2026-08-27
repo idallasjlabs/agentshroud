@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_agent_cve_registry.py"
 type: "code"
-community: "Agent Cve Registry"
+community: "Community 88"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Agent_Cve_Registry
+  - community/Community_88
 ---
 
 # test_agent_cve_registry.py
@@ -21,6 +21,7 @@ tags:
 - [[test_agent_cve_registries_objects_match_lists()]] - `contains` [EXTRACTED]
 - [[test_agent_cve_registry_alias_is_openclaw_list()]] - `contains` [EXTRACTED]
 - [[test_agent_cve_registry_alias_nonempty()]] - `contains` [EXTRACTED]
+- [[test_all_registered_sources_are_wrapped_agents_plus_security_tools()]] - `contains` [EXTRACTED]
 - [[test_ash_ids_are_unique_and_stable_order()]] - `contains` [EXTRACTED]
 - [[test_cve_id_field_only_holds_real_looking_cve_ids()]] - `contains` [EXTRACTED]
 - [[test_default_summary_equals_openclaw_summary()]] - `contains` [EXTRACTED]
@@ -28,6 +29,7 @@ tags:
 - [[test_empty_bot_id_raises_key_error()]] - `contains` [EXTRACTED]
 - [[test_entry_with_cve_id_also_has_ghsa_id()]] - `contains` [EXTRACTED]
 - [[test_every_entry_id_is_synthetic_ash_ref()]] - `contains` [EXTRACTED]
+- [[test_every_security_tool_entry_id_is_synthetic_ash_ref()]] - `contains` [EXTRACTED]
 - [[test_ghsa_id_field_only_holds_real_looking_ghsa_ids()]] - `contains` [EXTRACTED]
 - [[test_hermes_all_cves_have_required_fields()]] - `contains` [EXTRACTED]
 - [[test_hermes_all_cvss_are_numeric()]] - `contains` [EXTRACTED]
@@ -49,8 +51,9 @@ tags:
 - [[test_hermes_verified_ids_are_never_fabricated()]] - `contains` [EXTRACTED]
 - [[test_hermes_wechat_adapter_fully_mitigated()]] - `contains` [EXTRACTED]
 - [[test_list_cve_agents_is_list_of_str()]] - `contains` [EXTRACTED]
-- [[test_list_cve_agents_returns_both()]] - `contains` [EXTRACTED]
+- [[test_list_cve_agents_returns_wrapped_agents_and_security_tools()]] - `contains` [EXTRACTED]
 - [[test_no_entry_id_looks_like_a_cve()]] - `contains` [EXTRACTED]
+- [[test_no_security_tool_entry_id_looks_like_a_cve()]] - `contains` [EXTRACTED]
 - [[test_openclaw_all_cves_have_required_fields()]] - `contains` [EXTRACTED]
 - [[test_openclaw_all_severities_valid()]] - `contains` [EXTRACTED]
 - [[test_openclaw_all_statuses_valid()]] - `contains` [EXTRACTED]
@@ -62,7 +65,12 @@ tags:
 - [[test_openclaw_summary_count_matches_registry()]] - `contains` [EXTRACTED]
 - [[test_openclaw_summary_cves_is_openclaw_list()]] - `contains` [EXTRACTED]
 - [[test_openclaw_summary_keys()]] - `contains` [EXTRACTED]
+- [[test_security_tool_entries_ghsa_and_cve_ids_well_formed()]] - `contains` [EXTRACTED]
+- [[test_security_tool_entries_have_required_fields()]] - `contains` [EXTRACTED]
+- [[test_security_tool_entries_have_valid_status_and_severity()]] - `contains` [EXTRACTED]
+- [[test_security_tool_entries_start_as_under_review_never_pre_claimed_mitigated()]] - `contains` [EXTRACTED]
+- [[test_security_tool_registries_present_in_registries_dict()]] - `contains` [EXTRACTED]
 - [[test_unknown_bot_id_raises_key_error()]] - `contains` [EXTRACTED]
 - [[test_wrapped_agent_constant_unchanged()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Agent_Cve_Registry
+#graphify/code #graphify/EXTRACTED #community/Community_88

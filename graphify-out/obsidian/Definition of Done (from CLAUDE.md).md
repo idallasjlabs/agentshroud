@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-pm/SKILL.md"
 type: "document"
-community: "Skill (i-pm)"
+community: "Community 466"
 location: "L82"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-pm
+  - community/Community_466
 ---
 
 # Definition of Done (from CLAUDE.md)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Task Coordination_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-pm
+#graphify/document #graphify/EXTRACTED #community/Community_466

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "code"
-community: "Mcp Permissions"
+community: "Community 106"
 location: "L378"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Mcp_Permissions
+  - community/Community_106
 ---
 
 # MCPServerConfig
@@ -18,4 +18,4 @@ tags:
 - [[PermissionLevel]] - `uses` [INFERRED]
 - [[RBACConfig_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Mcp_Permissions
+#graphify/code #graphify/INFERRED #community/Community_106

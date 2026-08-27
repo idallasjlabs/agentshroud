@@ -1,11 +1,11 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "concept"
-community: "Agentshroud Ieee Paper (papers)"
+community: "Community 376"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Agentshroud_Ieee_Paper_papers
+  - community/Community_376
 ---
 
 # Log-To-Leak MCP Exfiltration Attack
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[agentshroud-ieee-paper]] - `cites` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Agentshroud_Ieee_Paper_papers
+#graphify/concept #graphify/EXTRACTED #community/Community_376

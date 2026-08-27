@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/url_analyzer.py"
 type: "rationale"
-community: "Url Analyzer"
+community: "Community 5"
 location: "L277"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Url_Analyzer
+  - community/Community_5
 ---
 
 # Resolve hostname to IP. Returns None on failure.          NOTE: DNS rebinding at
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._resolve_host()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Url_Analyzer
+#graphify/rationale #graphify/EXTRACTED #community/Community_5

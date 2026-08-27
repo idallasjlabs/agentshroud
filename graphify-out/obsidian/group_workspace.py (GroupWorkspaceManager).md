@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/group_workspace.py"
 type: "code"
-community: "Group Workspace Manager"
+community: "Community 61"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Group_Workspace_Manager
+  - community/Community_61
 ---
 
 # group_workspace.py (GroupWorkspaceManager)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_group_workspace_manager.py]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Group_Workspace_Manager
+#graphify/code #graphify/EXTRACTED #community/Community_61

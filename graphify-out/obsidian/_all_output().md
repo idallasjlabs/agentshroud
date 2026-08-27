@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "Cli Coverage"
+community: "Community 223"
 location: "L81"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Cli_Coverage
+  - community/Community_223
 ---
 
 # _all_output()
@@ -17,4 +17,4 @@ tags:
 - [[stdout + stderr regardless of click version (mix_stderr removed in 8.2).]] - `rationale_for` [EXTRACTED]
 - [[test_cli_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Cli_Coverage
+#graphify/code #graphify/EXTRACTED #community/Community_223

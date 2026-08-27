@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/audit_export.py"
 type: "code"
-community: "Audit Export"
+community: "Community 713"
 location: "L69"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Audit_Export
+  - community/Community_713
 ---
 
 # TextIO
@@ -16,4 +16,4 @@ tags:
 - [[AuditEvent_1]] - `uses` [INFERRED]
 - [[AuditStore_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Audit_Export
+#graphify/code #graphify/INFERRED #community/Community_713

@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "Browser Security"
+community: "Community 38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Browser_Security
+  - community/Community_38
 ---
 
 # Exception
@@ -21,7 +21,6 @@ tags:
 - [[SecurityError]] - `inherits` [EXTRACTED]
 - [[SecurityError_1]] - `inherits` [EXTRACTED]
 - [[SecurityError_2]] - `inherits` [EXTRACTED]
-- [[SecurityError_4]] - `inherits` [EXTRACTED]
 - [[SecurityError_3]] - `inherits` [EXTRACTED]
 - [[SessionError]] - `inherits` [EXTRACTED]
 - [[SkillGuardBlocked]] - `inherits` [EXTRACTED]
@@ -29,4 +28,4 @@ tags:
 - [[VRAMHeadroomError]] - `inherits` [EXTRACTED]
 - [[test_broadcast_with_failed_client()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Browser_Security
+#graphify/code #graphify/EXTRACTED #community/Community_38

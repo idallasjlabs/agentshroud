@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md"
 type: "concept"
-community: "Deployment Diagram (architecture)"
+community: "Community 864"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Deployment_Diagram_architecture
+  - community/Community_864
 ---
 
 # ADR-001: Transparent Proxy Decision
@@ -16,4 +16,4 @@ tags:
 - [[Proxy Mode (Recommended)]] - `implements` [EXTRACTED]
 - [[Sidecar Mode (Performance Optimized)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/Deployment_Diagram_architecture
+#graphify/concept #graphify/EXTRACTED #community/Community_864

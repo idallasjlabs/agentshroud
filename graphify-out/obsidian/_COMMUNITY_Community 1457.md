@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[SKILL_158]] - document - skills/openclaw/openai-whisper/SKILL.md
-- [[Whisper (CLI)]] - document - skills/openclaw/openai-whisper/SKILL.md
+- [[SKILL_131]] - document - docker/config/openclaw/skills/i-architecture-review/SKILL.md
+- [[Skill architecture-review_2]] - document - docker/config/openclaw/skills/i-architecture-review/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

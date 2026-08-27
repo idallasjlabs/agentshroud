@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[__init__.py_9]] - code - gateway/security/__init__.py
+- [[Skill Package Symlink Security Tests]] - code - skills/openclaw/skill-creator/scripts/test_package_skill.py
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/compliance/eu-ai-act-nist-matrix.md"
 type: "document"
-community: "Eu Ai Act Nist (compliance)"
+community: "Community 1376"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Eu_Ai_Act_Nist_compliance
+  - community/Community_1376
 ---
 
 # EU AI Act & NIST Alignment Matrix
@@ -14,4 +14,4 @@ tags:
 - [[Governance Proxy Positioning (deployer compliance enabler)]] - `references` [EXTRACTED]
 - [[SOC 2 Type II Attestation Path (SCRUM-99)]] - `cites` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Eu_Ai_Act_Nist_compliance
+#graphify/document #graphify/EXTRACTED #community/Community_1376

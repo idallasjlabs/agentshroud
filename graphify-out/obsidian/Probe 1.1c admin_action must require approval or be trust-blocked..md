@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "rationale"
-community: "Redteam Probes"
+community: "Community 66"
 location: "L102"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Redteam_Probes
+  - community/Community_66
 ---
 
 # Probe 1.1c: admin_action must require approval or be trust-blocked.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_admin_action_requires_approval()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Redteam_Probes
+#graphify/rationale #graphify/EXTRACTED #community/Community_66

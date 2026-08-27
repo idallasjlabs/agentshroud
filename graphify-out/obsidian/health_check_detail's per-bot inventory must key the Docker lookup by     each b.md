@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "rationale"
-community: "Slack Proxy Coverage"
+community: "Community 9"
 location: "L534"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Slack_Proxy_Coverage
+  - community/Community_9
 ---
 
 # health_check_detail's per-bot inventory must key the Docker lookup by     each b
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestHealthCheckDetailBotsInventory]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Slack_Proxy_Coverage
+#graphify/rationale #graphify/EXTRACTED #community/Community_9

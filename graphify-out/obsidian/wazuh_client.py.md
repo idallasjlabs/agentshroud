@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/wazuh_client.py"
 type: "code"
-community: "Scanner Integration Coverage"
+community: "Community 162"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Scanner_Integration_Coverage
+  - community/Community_162
 ---
 
 # wazuh_client.py
@@ -29,4 +29,4 @@ tags:
 - [[trivy_report.py]] - `references` [EXTRACTED]
 - [[wazuh-ossec]] - `references` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Scanner_Integration_Coverage
+#graphify/code #graphify/EXTRACTED #community/Community_162

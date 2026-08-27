@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/http_proxy.py"
 type: "rationale"
-community: "Http Proxy Coverage"
+community: "Community 52"
 location: "L89"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Http_Proxy_Coverage
+  - community/Community_52
 ---
 
 # Asyncio HTTP CONNECT proxy server.      Intercepts CONNECT tunnel requests, vali
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[HTTPConnectProxy]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Http_Proxy_Coverage
+#graphify/rationale #graphify/EXTRACTED #community/Community_52

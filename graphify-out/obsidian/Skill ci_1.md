@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-ci/SKILL.md"
 type: "document"
-community: "Skill (i-ci)"
+community: "Community 1443"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-ci
+  - community/Community_1443
 ---
 
 # Skill: ci
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SKILL_77]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-ci
+#graphify/document #graphify/EXTRACTED #community/Community_1443

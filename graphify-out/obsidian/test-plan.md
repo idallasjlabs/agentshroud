@@ -1,12 +1,12 @@
 ---
 source_file: "docs/testing/test-plan.md"
 type: "document"
-community: "Plan (testing)"
+community: "Community 195"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Plan_testing
+  - community/Community_195
 ---
 
 # test-plan.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Test Plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Plan_testing
+#graphify/document #graphify/EXTRACTED #community/Community_195
