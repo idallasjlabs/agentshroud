@@ -1,20 +1,20 @@
 ---
-source_file: "docker/config/openclaw/skills/i-pm/README.md"
+source_file: "docker/config/hermes/skills/i-pm/README.md"
 type: "document"
-community: "Readme (i-pm)"
+community: "Community 1199"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-pm
+  - community/Community_1199
 ---
 
 # Project Management (PM)
 
 ## Connections
-- [[Purpose_96]] - `contains` [EXTRACTED]
-- [[README_101]] - `contains` [EXTRACTED]
-- [[Related Skills_105]] - `contains` [EXTRACTED]
-- [[Usage_106]] - `contains` [EXTRACTED]
+- [[Purpose_59]] - `contains` [EXTRACTED]
+- [[README_64]] - `contains` [EXTRACTED]
+- [[Related Skills_65]] - `contains` [EXTRACTED]
+- [[Usage_66]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-pm
+#graphify/document #graphify/EXTRACTED #community/Community_1199

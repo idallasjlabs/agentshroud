@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md"
 type: "document"
-community: "Openclaw Write Requirements (architecture)"
+community: "Community 209"
 location: "L597"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Openclaw_Write_Requirements_architecture
+  - community/Community_209
 ---
 
 # Answer to Your Question
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[What Does OpenClaw Actually Need to Write]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Openclaw_Write_Requirements_architecture
+#graphify/document #graphify/EXTRACTED #community/Community_209

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/runbook.md"
 type: "document"
-community: "Runbook (operations)"
+community: "Community 91"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Runbook_operations
+  - community/Community_91
 ---
 
 # System Architecture Overview
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Operations Runbook]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Runbook_operations
+#graphify/document #graphify/EXTRACTED #community/Community_91

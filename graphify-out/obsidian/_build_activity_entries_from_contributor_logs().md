@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/dashboard.py"
 type: "code"
-community: "Dashboard"
+community: "Community 0"
 location: "L151"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Dashboard
+  - community/Community_0
 ---
 
 # _build_activity_entries_from_contributor_logs()
@@ -21,4 +21,4 @@ tags:
 - [[test_build_activity_entries_from_contributor_logs_accepts_non_bullet_and_zulu_time()]] - `calls` [EXTRACTED]
 - [[test_dashboard.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Dashboard
+#graphify/code #graphify/EXTRACTED #community/Community_0

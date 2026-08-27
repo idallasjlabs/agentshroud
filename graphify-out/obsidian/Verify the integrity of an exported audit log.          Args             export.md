@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/audit_export.py"
 type: "rationale"
-community: "Audit Export"
+community: "Community 713"
 location: "L266"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Audit_Export
+  - community/Community_713
 ---
 
 # Verify the integrity of an exported audit log.          Args:             export
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.verify_export_integrity()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Audit_Export
+#graphify/rationale #graphify/EXTRACTED #community/Community_713

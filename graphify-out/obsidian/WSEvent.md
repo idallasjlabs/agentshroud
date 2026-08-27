@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "Soc Websocket"
+community: "Community 27"
 location: "L270"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Soc_Websocket
+  - community/Community_27
 ---
 
 # WSEvent
@@ -27,4 +27,4 @@ tags:
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 - [[websocket.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Soc_Websocket
+#graphify/code #graphify/EXTRACTED #community/Community_27

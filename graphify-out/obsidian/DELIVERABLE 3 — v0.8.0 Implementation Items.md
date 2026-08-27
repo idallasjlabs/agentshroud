@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md"
 type: "document"
-community: "Security Assessment V0.8.0 25 (v0.8)"
+community: "Community 1068"
 location: "L225"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Assessment_V080_25_v08
+  - community/Community_1068
 ---
 
 # DELIVERABLE 3 — v0.8.0 Implementation Items
@@ -20,4 +20,4 @@ tags:
 - [[Item 5 Audit Chain Guaranteed Persistence for BLOCK Events — DONE (v0.8.0)]] - `contains` [EXTRACTED]
 - [[Item 6 Update ADR-002 to Reflect Enforce-by-Default — DONE (v0.8.0)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Assessment_V080_25_v08
+#graphify/document #graphify/EXTRACTED #community/Community_1068

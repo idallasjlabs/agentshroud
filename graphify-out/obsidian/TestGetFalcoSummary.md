@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "Wazuh Client (security)"
+community: "Community 85"
 location: "L301"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Wazuh_Client_security
+  - community/Community_85
 ---
 
 # TestGetFalcoSummary
@@ -17,4 +17,4 @@ tags:
 - [[.test_returns_summary_for_empty_dir()]] - `method` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Wazuh_Client_security
+#graphify/code #graphify/EXTRACTED #community/Community_85

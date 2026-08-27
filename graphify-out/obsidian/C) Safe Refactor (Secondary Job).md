@@ -1,12 +1,12 @@
 ---
 source_file: "AGENTS.md"
 type: "document"
-community: "Agents"
+community: "Community 350"
 location: "L69"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Agents
+  - community/Community_350
 ---
 
 # C) Safe Refactor (Secondary Job)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[2) WHAT YOU SHOULD DO (YOUR JOBS)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Agents
+#graphify/document #graphify/EXTRACTED #community/Community_350

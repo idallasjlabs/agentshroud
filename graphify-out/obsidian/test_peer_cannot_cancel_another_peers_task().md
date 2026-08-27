@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_policy.py"
 type: "code"
-community: "A2a Policy"
+community: "Community 82"
 location: "L177"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2a_Policy
+  - community/Community_82
 ---
 
 # test_peer_cannot_cancel_another_peers_task()
@@ -15,4 +15,4 @@ tags:
 - [[A2APolicyEngine_2]] - `references` [EXTRACTED]
 - [[test_a2a_policy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2a_Policy
+#graphify/code #graphify/EXTRACTED #community/Community_82

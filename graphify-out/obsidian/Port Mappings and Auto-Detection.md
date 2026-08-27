@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/deployment-diagram.md"
 type: "document"
-community: "Deployment Diagram (architecture)"
+community: "Community 238"
 location: "L290"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Deployment_Diagram_architecture
+  - community/Community_238
 ---
 
 # Port Mappings and Auto-Detection
@@ -16,4 +16,4 @@ tags:
 - [[Default Port Allocation]] - `contains` [EXTRACTED]
 - [[Multi-Instance Support]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Deployment_Diagram_architecture
+#graphify/document #graphify/EXTRACTED #community/Community_238

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "code"
-community: "RBAC & Ingest Middleware"
+community: "Community 6"
 location: "L925"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/RBAC__Ingest_Middleware
+  - community/Community_6
 ---
 
 # Resource
@@ -61,4 +61,4 @@ tags:
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[XMLLeakFilter]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/RBAC__Ingest_Middleware
+#graphify/code #graphify/INFERRED #community/Community_6

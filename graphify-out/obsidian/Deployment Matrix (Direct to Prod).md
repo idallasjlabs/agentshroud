@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-cicd/SKILL.md"
 type: "concept"
-community: "Skill (i-cicd)"
+community: "Community 848"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Skill_i-cicd
+  - community/Community_848
 ---
 
 # Deployment Matrix (Direct to Prod)
@@ -14,4 +14,4 @@ tags:
 - [[CICD Pipeline Advisor (SKILL)]] - `references` [EXTRACTED]
 - [[Skill CICD Pipeline Advisor (CICD)_1]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Skill_i-cicd
+#graphify/concept #graphify/EXTRACTED #community/Community_848

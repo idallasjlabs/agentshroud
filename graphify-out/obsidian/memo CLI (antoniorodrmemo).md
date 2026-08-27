@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/apple-notes/SKILL.md"
 type: "concept"
-community: "Skill (bear-notes)"
+community: "Community 798"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Skill_bear-notes
+  - community/Community_798
 ---
 
 # memo CLI (antoniorodr/memo)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[SKILL_195]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Skill_bear-notes
+#graphify/concept #graphify/EXTRACTED #community/Community_798

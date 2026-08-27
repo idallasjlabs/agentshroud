@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Auth Errors.md"
 type: "document"
-community: "Auth errors (07 - Errors & Troubleshooting)"
+community: "Community 313"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Auth_errors_07_-_Errors__Troubleshooting
+  - community/Community_313
 ---
 
 # Auth Errors
@@ -17,4 +17,4 @@ tags:
 - [[HTTP 401 — Unauthorized]] - `contains` [EXTRACTED]
 - [[Related Notes_55]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Auth_errors_07_-_Errors__Troubleshooting
+#graphify/document #graphify/EXTRACTED #community/Community_313

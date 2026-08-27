@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY-POLICY-FINAL.md"
 type: "document"
-community: "Security Policy Final (security)"
+community: "Community 450"
 location: "L154"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Policy_Final_security
+  - community/Community_450
 ---
 
 # When executing console commands:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🎓 Response Templates]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Policy_Final_security
+#graphify/document #graphify/EXTRACTED #community/Community_450

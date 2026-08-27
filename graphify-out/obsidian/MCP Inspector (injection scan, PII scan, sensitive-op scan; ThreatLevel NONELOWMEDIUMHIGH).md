@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-14-logic-flow.png"
 type: "concept"
-community: "Diagram 09 Data Lineage (images)"
+community: "Community 353"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Diagram_09_Data_Lineage_images
+  - community/Community_353
 ---
 
 # MCP Inspector (injection scan, PII scan, sensitive-op scan; ThreatLevel NONE/LOW/MEDIUM/HIGH)
@@ -20,4 +20,4 @@ tags:
 - [[Telegram Message Sequence Diagram]] - `conceptually_related_to` [EXTRACTED]
 - [[What Is Instrumented (bot apihealth, gateway status and ledger, MCP audit log, HTTP CONNECT proxy stats)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Diagram_09_Data_Lineage_images
+#graphify/concept #graphify/EXTRACTED #community/Community_353

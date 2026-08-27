@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "rationale"
-community: "Tool ACL & Group RBAC"
+community: "Community 75"
 location: "L499"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Tool_ACL__Group_RBAC
+  - community/Community_75
 ---
 
 # Return True if the user is within rate limits for the given tool.          Side-
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.check_tool_rate_limit()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Tool_ACL__Group_RBAC
+#graphify/rationale #graphify/EXTRACTED #community/Community_75

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_stress.py"
 type: "code"
-community: "Queue (approval_queue)"
+community: "Community 24"
 location: "L91"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Queue_approval_queue
+  - community/Community_24
 ---
 
 # TestApprovalTimeout
@@ -22,4 +22,4 @@ tags:
 - [[Timeout handling for approval requests.]] - `rationale_for` [EXTRACTED]
 - [[test_approval_stress.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Queue_approval_queue
+#graphify/code #graphify/INFERRED #community/Community_24

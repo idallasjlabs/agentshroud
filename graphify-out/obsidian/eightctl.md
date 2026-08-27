@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/eightctl/SKILL.md"
 type: "document"
-community: "Skill (eightctl)"
+community: "Community 1384"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_eightctl
+  - community/Community_1384
 ---
 
 # eightctl
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SKILL_205]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_eightctl
+#graphify/document #graphify/EXTRACTED #community/Community_1384

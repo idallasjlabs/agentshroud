@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "code"
-community: "Subagent Governance (security)"
+community: "Community 1135"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Subagent_Governance_security
+  - community/Community_1135
 ---
 
 # subagent_governance.py
@@ -27,4 +27,4 @@ tags:
 - [[_check_injection_patterns()]] - `contains` [EXTRACTED]
 - [[_check_pii_patterns()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Subagent_Governance_security
+#graphify/code #graphify/EXTRACTED #community/Community_1135

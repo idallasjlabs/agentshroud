@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "RBAC & Ingest Middleware"
+community: "Community 15"
 location: "L25"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/RBAC__Ingest_Middleware
+  - community/Community_15
 ---
 
 # Role
@@ -33,7 +33,6 @@ tags:
 - [[RBACConfig_2]] - `uses` [INFERRED]
 - [[RBACConfig_3]] - `uses` [INFERRED]
 - [[RBACConfig_4]] - `uses` [INFERRED]
-- [[RBACConfig_5]] - `uses` [INFERRED]
 - [[RBACManager_1]] - `uses` [INFERRED]
 - [[Request_1]] - `uses` [INFERRED]
 - [[Resource_1]] - `uses` [INFERRED]
@@ -132,4 +131,4 @@ tags:
 - [[test_tool_acl.py]] - `imports` [EXTRACTED]
 - [[tool_acl.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/RBAC__Ingest_Middleware
+#graphify/code #graphify/INFERRED #community/Community_15

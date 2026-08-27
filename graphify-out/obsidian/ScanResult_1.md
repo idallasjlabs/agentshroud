@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "Pipeline Unit"
+community: "Community 22"
 location: "L36"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Pipeline_Unit
+  - community/Community_22
 ---
 
 # ScanResult
@@ -30,4 +30,4 @@ tags:
 - [[prompt_guard.py]] - `contains` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Pipeline_Unit
+#graphify/code #graphify/INFERRED #community/Community_22

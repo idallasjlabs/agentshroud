@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/GOOGLE-SERVICES-SETUP.md"
 type: "document"
-community: "Google Services Setup (setup)"
+community: "Community 266"
 location: "L115"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Google_Services_Setup_setup
+  - community/Community_266
 ---
 
 # Alternative: Google People API
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[📞 Google Contacts (CardDAV)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Google_Services_Setup_setup
+#graphify/document #graphify/EXTRACTED #community/Community_266

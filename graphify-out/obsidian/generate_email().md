@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/generate_branding_assets.py"
 type: "code"
-community: "Generate Branding Assets (scripts)"
+community: "Community 414"
 location: "L287"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Generate_Branding_Assets_scripts
+  - community/Community_414
 ---
 
 # generate_email()
@@ -15,7 +15,7 @@ tags:
 - [[ensure()]] - `calls` [EXTRACTED]
 - [[generate_branding_assets.py]] - `contains` [EXTRACTED]
 - [[get_font()]] - `calls` [EXTRACTED]
-- [[main()_20]] - `calls` [EXTRACTED]
+- [[main()_21]] - `calls` [EXTRACTED]
 - [[save()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Generate_Branding_Assets_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_414

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/GOOGLE-SERVICES-SETUP.md"
 type: "document"
-community: "Google Services Setup (setup)"
+community: "Community 266"
 location: "L141"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Google_Services_Setup_setup
+  - community/Community_266
 ---
 
 # 📝 Google Keep (Notes)
@@ -16,4 +16,4 @@ tags:
 - [[Problem No Public API]] - `contains` [EXTRACTED]
 - [[Workarounds]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Google_Services_Setup_setup
+#graphify/document #graphify/EXTRACTED #community/Community_266

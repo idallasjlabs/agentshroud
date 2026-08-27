@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/instruction_envelope.py"
 type: "code"
-community: "Pipeline Unit"
+community: "Community 22"
 location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Pipeline_Unit
+  - community/Community_22
 ---
 
 # EnvelopeSigner
@@ -43,4 +43,4 @@ tags:
 - [[test_instruction_envelope.py]] - `imports` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Pipeline_Unit
+#graphify/code #graphify/EXTRACTED #community/Community_22

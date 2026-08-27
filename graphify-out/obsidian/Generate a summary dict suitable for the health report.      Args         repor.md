@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/trivy_report.py"
+source_file: "gateway/security/clamav_scanner.py"
 type: "rationale"
-community: "Daily Cve Report (security)"
-location: "L170"
+community: "Community 162"
+location: "L219"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Daily_Cve_Report_security
+  - community/Community_162
 ---
 
 # Generate a summary dict suitable for the health report.      Args:         repor
 
 ## Connections
-- [[generate_summary()_2]] - `rationale_for` [EXTRACTED]
+- [[generate_summary()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Daily_Cve_Report_security
+#graphify/rationale #graphify/EXTRACTED #community/Community_162

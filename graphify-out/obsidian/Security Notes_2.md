@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/OPENCLAW_SETUP.md"
 type: "document"
-community: "Openclaw Setup (setup)"
+community: "Community 214"
 location: "L412"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Openclaw_Setup_setup
+  - community/Community_214
 ---
 
 # Security Notes
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Current Security Posture]] - `contains` [EXTRACTED]
 - [[OpenClaw Setup Guide - agentshroud.ai Bot]] - `contains` [EXTRACTED]
-- [[Recommendations_1]] - `contains` [EXTRACTED]
+- [[Recommendations_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Openclaw_Setup_setup
+#graphify/document #graphify/EXTRACTED #community/Community_214

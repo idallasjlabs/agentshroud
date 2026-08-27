@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/tmux/SKILL.md"
 type: "document"
-community: "Skill (tmux)"
+community: "Community 549"
 location: "L39"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_tmux
+  - community/Community_549
 ---
 
 # Common Commands
@@ -19,4 +19,4 @@ tags:
 - [[WindowPane Navigation]] - `contains` [EXTRACTED]
 - [[tmux Session Control]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_tmux
+#graphify/document #graphify/EXTRACTED #community/Community_549

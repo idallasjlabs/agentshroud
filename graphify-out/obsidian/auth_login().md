@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "Soc Realtime Coverage"
+community: "Community 19"
 location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Soc_Realtime_Coverage
+  - community/Community_19
 ---
 
 # auth_login()
@@ -19,4 +19,4 @@ tags:
 - [[issue_session_token()]] - `calls` [EXTRACTED]
 - [[router.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Soc_Realtime_Coverage
+#graphify/code #graphify/EXTRACTED #community/Community_19

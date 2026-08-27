@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-architecture-review/SKILL.md"
 type: "document"
-community: "Skill (i-architecture-review)"
+community: "Community 1439"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-architecture-review
+  - community/Community_1439
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill architecture-review_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-architecture-review
+#graphify/document #graphify/EXTRACTED #community/Community_1439

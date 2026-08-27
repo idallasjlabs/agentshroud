@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[verify-greeter-state.sh]] - code - scripts/verify-greeter-state.sh
-- [[verify-greeter-state.sh script]] - code - scripts/verify-greeter-state.sh
+- [[SKILL_224]] - document - skills/openclaw/ordercli/SKILL.md
+- [[ordercli]] - document - skills/openclaw/ordercli/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

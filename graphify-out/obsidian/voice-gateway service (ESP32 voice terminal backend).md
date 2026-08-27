@@ -1,11 +1,11 @@
 ---
 source_file: "docs/integrations/voice-terminal-esp32-s3.md"
 type: "concept"
-community: "Enforcement Audit V0.7.0 (reviews)"
+community: "Community 199"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Enforcement_Audit_V070_reviews
+  - community/Community_199
 ---
 
 # voice-gateway service (ESP32 voice terminal backend)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Voice Terminal — ESP32-S3-BOX-3 Integration Guide]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Enforcement_Audit_V070_reviews
+#graphify/concept #graphify/EXTRACTED #community/Community_199

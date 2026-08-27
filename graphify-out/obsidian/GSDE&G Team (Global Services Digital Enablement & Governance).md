@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-aws/SKILL.md"
 type: "concept"
-community: "Skill (i-aws)"
+community: "Community 848"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Skill_i-aws
+  - community/Community_848
 ---
 
 # GSDE&G Team (Global Services Digital Enablement & Governance)
@@ -16,4 +16,4 @@ tags:
 - [[CICD Pipeline Advisor (SKILL)]] - `references` [EXTRACTED]
 - [[Code Review (CR) (SKILL)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Skill_i-aws
+#graphify/concept #graphify/EXTRACTED #community/Community_848

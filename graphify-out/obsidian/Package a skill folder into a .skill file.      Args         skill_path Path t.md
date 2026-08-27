@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/skill-creator/scripts/package_skill.py"
 type: "rationale"
-community: "Package Skill (scripts)"
+community: "Community 535"
 location: "L21"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Package_Skill_scripts
+  - community/Community_535
 ---
 
 # Package a skill folder into a .skill file.      Args:         skill_path: Path t
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[package_skill()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Package_Skill_scripts
+#graphify/rationale #graphify/EXTRACTED #community/Community_535

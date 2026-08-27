@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_config.py"
 type: "code"
-community: "Mcp Permissions"
+community: "Community 179"
 location: "L23"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Mcp_Permissions
+  - community/Community_179
 ---
 
 # PermissionLevel
@@ -84,4 +84,4 @@ tags:
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Mcp_Permissions
+#graphify/code #graphify/INFERRED #community/Community_179

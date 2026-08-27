@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_file_sandbox.py"
 type: "rationale"
-community: "Privilege Separation & File Sandbox"
+community: "Community 14"
 location: "L79"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Privilege_Separation__File_Sandbox
+  - community/Community_14
 ---
 
 # Even blocked paths are allowed in monitor mode (just flagged).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_monitor_mode_allows_everything()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Privilege_Separation__File_Sandbox
+#graphify/rationale #graphify/EXTRACTED #community/Community_14

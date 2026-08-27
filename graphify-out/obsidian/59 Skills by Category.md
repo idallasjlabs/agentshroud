@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "document"
-community: "Agentic Os (architecture)"
+community: "Community 947"
 location: "L272"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Agentic_Os_architecture
+  - community/Community_947
 ---
 
 # 59 Skills by Category
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[4. Skill System]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Agentic_Os_architecture
+#graphify/document #graphify/EXTRACTED #community/Community_947

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_trust_integration.py"
 type: "code"
-community: "Progressive Trust Integration"
-location: "L419"
+community: "Community 35"
+location: "L417"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Progressive_Trust_Integration
+  - community/Community_35
 ---
 
 # TestEnforcementModeResolver
@@ -25,4 +25,4 @@ tags:
 - [[ViolationType]] - `uses` [INFERRED]
 - [[test_progressive_trust_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Progressive_Trust_Integration
+#graphify/code #graphify/INFERRED #community/Community_35

@@ -1,22 +1,22 @@
 ---
-source_file: "skills/custom/securebrowser/SKILL.md"
+source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "Skill (securebrowser)"
-location: "L317"
+community: "Community 150"
+location: "L293"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_securebrowser
+  - community/Community_150
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Action requires approval but none granted_3]] - `contains` [EXTRACTED]
-- [[Browser timeout_4]] - `contains` [EXTRACTED]
-- [[CAPTCHA detected_4]] - `contains` [EXTRACTED]
-- [[Rate limit exceeded_3]] - `contains` [EXTRACTED]
-- [[URL not in allowlist_4]] - `contains` [EXTRACTED]
-- [[SecureBrowser - Enterprise Secure Browser Automation]] - `contains` [EXTRACTED]
+- [[Approval required but none granted]] - `contains` [EXTRACTED]
+- [[Browser timeout_3]] - `contains` [EXTRACTED]
+- [[CAPTCHA detected_3]] - `contains` [EXTRACTED]
+- [[Credential extraction blocked]] - `contains` [EXTRACTED]
+- [[URL not in allowlist_3]] - `contains` [EXTRACTED]
+- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_securebrowser
+#graphify/document #graphify/EXTRACTED #community/Community_150

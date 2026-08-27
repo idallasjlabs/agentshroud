@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "rationale"
-community: "Tool Chain & CVE Triage"
+community: "Community 78"
 location: "L40"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Tool_Chain__CVE_Triage
+  - community/Community_78
 ---
 
 # Test proper initialization of ToolChainAnalyzer.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_initialization()_4]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Tool_Chain__CVE_Triage
+#graphify/rationale #graphify/EXTRACTED #community/Community_78

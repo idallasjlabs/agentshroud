@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "Scanner Integration (security)"
+community: "Community 59"
 location: "L433"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Scanner_Integration_security
+  - community/Community_59
 ---
 
 # _security_scan_sh_text()
@@ -18,4 +18,4 @@ tags:
 - [[_score_image_signing_provenance()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Scanner_Integration_security
+#graphify/code #graphify/EXTRACTED #community/Community_59

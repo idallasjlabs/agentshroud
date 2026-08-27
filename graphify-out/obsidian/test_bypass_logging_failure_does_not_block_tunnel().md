@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "Http Proxy Coverage"
+community: "Community 52"
 location: "L257"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Http_Proxy_Coverage
+  - community/Community_52
 ---
 
 # test_bypass_logging_failure_does_not_block_tunnel()
@@ -20,4 +20,4 @@ tags:
 - [[log_external_decision raising must not break the CONNECT.]] - `rationale_for` [EXTRACTED]
 - [[test_http_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Http_Proxy_Coverage
+#graphify/code #graphify/EXTRACTED #community/Community_52

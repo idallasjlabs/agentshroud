@@ -1,22 +1,17 @@
 ---
-source_file: "docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md"
+source_file: "docs/setup-telegram.md"
 type: "document"
-community: "Bot Development Team Rpi (setup)"
-location: "L1683"
+community: "Community 739"
+location: "L89"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Development_Team_Rpi_setup
+  - community/Community_739
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist]] - `contains` [EXTRACTED]
-- [[Docker Permission Denied]] - `contains` [EXTRACTED]
-- [[High Temperature]] - `contains` [EXTRACTED]
-- [[Out of Memory]] - `contains` [EXTRACTED]
-- [[SSH Connection Refused]] - `contains` [EXTRACTED]
-- [[Slow Builds_1]] - `contains` [EXTRACTED]
+- [[Telegram Channel Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Development_Team_Rpi_setup
+#graphify/document #graphify/EXTRACTED #community/Community_739

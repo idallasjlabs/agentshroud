@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "A2a Integration"
+community: "Community 104"
 location: "L175"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/A2a_Integration
+  - community/Community_104
 ---
 
 # A2APolicyConfig
@@ -40,4 +40,4 @@ tags:
 - [[test_a2a_proxy.py]] - `imports` [EXTRACTED]
 - [[test_a2a_trust_scoring.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/A2a_Integration
+#graphify/code #graphify/INFERRED #community/Community_104

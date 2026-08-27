@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-supply-chain.md"
 type: "document"
-community: "Security Supply Chain (security)"
+community: "Community 542"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Supply_Chain_security
+  - community/Community_542
 ---
 
 # Detailed Profiles
@@ -26,4 +26,4 @@ tags:
 - [[cryptography (Python) — Encryption Library]] - `contains` [EXTRACTED]
 - [[spaCy + Presidio — PII Detection]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Supply_Chain_security
+#graphify/document #graphify/EXTRACTED #community/Community_542

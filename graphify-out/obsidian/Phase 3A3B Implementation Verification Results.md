@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/VERIFICATION_RESULTS.md"
 type: "document"
-community: "Verification Results (security)"
+community: "Community 383"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Verification_Results_security
+  - community/Community_383
 ---
 
 # Phase 3A/3B Implementation Verification Results
@@ -17,10 +17,11 @@ tags:
 - [[Files ModifiedCreated]] - `contains` [EXTRACTED]
 - [[Kill Switch Testing]] - `contains` [EXTRACTED]
 - [[Phase 3A Implementation Status]] - `contains` [EXTRACTED]
+- [[Phase 3B.1 Implementation Status]] - `contains` [EXTRACTED]
 - [[Remaining Work]] - `contains` [EXTRACTED]
 - [[Security Improvements Delivered]] - `contains` [EXTRACTED]
 - [[Security Verification Results]] - `contains` [EXTRACTED]
 - [[Testing Recommendations]] - `contains` [EXTRACTED]
 - [[VERIFICATION_RESULTS]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Verification_Results_security
+#graphify/document #graphify/EXTRACTED #community/Community_383

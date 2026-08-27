@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "Tool Result Pii"
+community: "Community 513"
 location: "L25"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Tool_Result_Pii
+  - community/Community_513
 ---
 
 # ToolResultPIIConfig
@@ -46,4 +46,4 @@ tags:
 - [[test_tool_result_pii.py]] - `imports` [EXTRACTED]
 - [[tool_result_sanitizer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Tool_Result_Pii
+#graphify/code #graphify/INFERRED #community/Community_513

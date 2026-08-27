@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md"
 type: "document"
-community: "Openclaw Sandbox Mode (04 - Environment Variables)"
+community: "Community 573"
 location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Openclaw_Sandbox_Mode_04_-_Environment_Variables
+  - community/Community_573
 ---
 
 # Set In
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OPENCLAW_SANDBOX_MODE_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Openclaw_Sandbox_Mode_04_-_Environment_Variables
+#graphify/document #graphify/EXTRACTED #community/Community_573

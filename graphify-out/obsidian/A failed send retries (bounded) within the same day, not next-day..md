@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "rationale"
-community: "Daily Cve Report (security)"
-location: "L1442"
+community: "Community 779"
+location: "L1449"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Daily_Cve_Report_security
+  - community/Community_779
 ---
 
 # A failed send retries (bounded) within the same day, not next-day.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_retries_on_failed_send_before_giving_up()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Daily_Cve_Report_security
+#graphify/rationale #graphify/EXTRACTED #community/Community_779

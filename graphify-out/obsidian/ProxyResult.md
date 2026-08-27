@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "Mcp Permissions"
+community: "Community 106"
 location: "L72"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Mcp_Permissions
+  - community/Community_106
 ---
 
 # ProxyResult
@@ -31,4 +31,4 @@ tags:
 - [[test_mcp_proxy_endpoint.py]] - `imports` [EXTRACTED]
 - [[test_mcp_result_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Mcp_Permissions
+#graphify/code #graphify/INFERRED #community/Community_106

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/DEVICE_PAIRING.md"
 type: "document"
-community: "Device Pairing (setup)"
+community: "Community 776"
 location: "L48"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Device_Pairing_setup
+  - community/Community_776
 ---
 
 # Method 1: Via CLI (Recommended)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Finding Pending Pairing Requests]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Device_Pairing_setup
+#graphify/document #graphify/EXTRACTED #community/Community_776

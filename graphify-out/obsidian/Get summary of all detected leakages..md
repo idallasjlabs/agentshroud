@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "rationale"
-community: "Git Guard (security)"
+community: "Community 936"
 location: "L361"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Git_Guard_security
+  - community/Community_936
 ---
 
 # Get summary of all detected leakages.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_leakage_summary()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Git_Guard_security
+#graphify/rationale #graphify/EXTRACTED #community/Community_936

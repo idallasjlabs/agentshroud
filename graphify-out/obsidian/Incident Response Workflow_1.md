@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-production/SKILL.md"
 type: "document"
-community: "Skill (i-production)"
+community: "Community 524"
 location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-production
+  - community/Community_524
 ---
 
 # Incident Response Workflow
@@ -17,4 +17,4 @@ tags:
 - [[Phase 3 MITIGATE (Rollback First!)_1]] - `contains` [EXTRACTED]
 - [[Skill Incident Response (INCIDENT)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-production
+#graphify/document #graphify/EXTRACTED #community/Community_524

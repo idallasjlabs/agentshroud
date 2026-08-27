@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "Git Guard (security)"
+community: "Community 14"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Git_Guard_security
+  - community/Community_14
 ---
 
 # env_guard.py
@@ -23,4 +23,4 @@ tags:
 - [[log_sanitizer.py]] - `semantically_similar_to` [INFERRED]
 - [[scrub_output()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Git_Guard_security
+#graphify/code #graphify/EXTRACTED #community/Community_14

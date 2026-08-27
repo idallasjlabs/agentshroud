@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/ledger.py.md"
 type: "document"
-community: "Main.py (Gateway Core)"
-location: "L433"
+community: "Community 622"
+location: "L70"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mainpy_Gateway_Core
+  - community/Community_622
 ---
 
 # Environment Variables Used
 
 ## Connections
-- [[main.py_4]] - `contains` [EXTRACTED]
+- [[ledger.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mainpy_Gateway_Core
+#graphify/document #graphify/EXTRACTED #community/Community_622

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/skills/manifest.py"
 type: "code"
-community: "Skills Manifest Sync"
+community: "Community 71"
 location: "L164"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Skills_Manifest_Sync
+  - community/Community_71
 ---
 
 # plan_deploy()
@@ -26,4 +26,4 @@ tags:
 - [[manifest.py]] - `contains` [EXTRACTED]
 - [[test_skills_manifest_sync.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Skills_Manifest_Sync
+#graphify/code #graphify/EXTRACTED #community/Community_71

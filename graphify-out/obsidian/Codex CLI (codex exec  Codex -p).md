@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-hdev/SKILL.md"
 type: "concept"
-community: "Skill (i-hdev)"
+community: "Community 660"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Skill_i-hdev
+  - community/Community_660
 ---
 
 # Codex CLI (codex exec / Codex -p)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Hermes Dev Workflow (HDEV) Skill]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Skill_i-hdev
+#graphify/concept #graphify/EXTRACTED #community/Community_660

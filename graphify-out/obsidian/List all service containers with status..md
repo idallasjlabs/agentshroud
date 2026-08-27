@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/cli/main.py"
 type: "rationale"
-community: "Main (cli)"
+community: "Community 92"
 location: "L117"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Main_cli
+  - community/Community_92
 ---
 
 # List all service containers with status.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_services()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Main_cli
+#graphify/rationale #graphify/EXTRACTED #community/Community_92

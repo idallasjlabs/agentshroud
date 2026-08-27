@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/wacli/SKILL.md"
 type: "document"
-community: "Skill (summarize)"
+community: "Community 400"
 location: "L32"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_summarize
+  - community/Community_400
 ---
 
 # wacli
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SKILL_238]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_summarize
+#graphify/document #graphify/EXTRACTED #community/Community_400

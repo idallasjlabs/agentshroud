@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/multi_host_test.py"
 type: "code"
-community: "Multi Host"
+community: "Community 992"
 location: "L60"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Multi_Host
+  - community/Community_992
 ---
 
 # HostStatus
@@ -31,4 +31,4 @@ tags:
 - [[str]] - `inherits` [EXTRACTED]
 - [[test_multi_host_test.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Multi_Host
+#graphify/code #graphify/INFERRED #community/Community_992

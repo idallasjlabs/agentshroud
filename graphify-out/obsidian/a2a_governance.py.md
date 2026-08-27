@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/a2a_governance.py"
 type: "code"
-community: "A2a Governance (security)"
+community: "Community 44"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2a_Governance_security
+  - community/Community_44
 ---
 
 # a2a_governance.py
@@ -23,4 +23,4 @@ tags:
 - [[start.sh]] - `conceptually_related_to` [INFERRED]
 - [[trust_manager.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2a_Governance_security
+#graphify/code #graphify/EXTRACTED #community/Community_44

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/collaborator_tracker.py"
 type: "rationale"
-community: "Collaborator Tracker"
+community: "Community 42"
 location: "L246"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Collaborator_Tracker
+  - community/Community_42
 ---
 
 # Best-effort float timestamp coercion for resilient log reads.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._coerce_timestamp()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Tracker
+#graphify/rationale #graphify/EXTRACTED #community/Community_42

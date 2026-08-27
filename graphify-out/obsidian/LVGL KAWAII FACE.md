@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/components/lvgl_kawaii_face/README.md"
 type: "document"
-community: "Readme (lvgl_kawaii_face)"
+community: "Community 763"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_lvgl_kawaii_face
+  - community/Community_763
 ---
 
 # LVGL KAWAII FACE
@@ -20,4 +20,4 @@ tags:
 - [[Thread safety]] - `contains` [EXTRACTED]
 - [[Usage_127]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_lvgl_kawaii_face
+#graphify/document #graphify/EXTRACTED #community/Community_763

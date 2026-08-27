@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/00 - START HERE/System Overview.md"
 type: "rationale"
-community: "System overview (00 - START HERE)"
+community: "Community 271"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/System_overview_00_-_START_HERE
+  - community/Community_271
 ---
 
 # PII redacted before forwarding
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Security Perimeter]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/System_overview_00_-_START_HERE
+#graphify/rationale #graphify/EXTRACTED #community/Community_271

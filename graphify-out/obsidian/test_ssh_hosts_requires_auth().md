@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dashboard_endpoints.py"
 type: "code"
-community: "Dashboard Endpoints (web)"
+community: "Community 105"
 location: "L110"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Dashboard_Endpoints_web
+  - community/Community_105
 ---
 
 # test_ssh_hosts_requires_auth()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_dashboard_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Dashboard_Endpoints_web
+#graphify/code #graphify/EXTRACTED #community/Community_105

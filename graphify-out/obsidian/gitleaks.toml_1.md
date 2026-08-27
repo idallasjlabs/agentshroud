@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/gitleaks.toml.md"
 type: "document"
-community: "Gitleaks.toml (03 - Configuration)"
+community: "Community 999"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gitleakstoml_03_-_Configuration
+  - community/Community_999
 ---
 
 # gitleaks.toml
@@ -19,4 +19,4 @@ tags:
 - [[What It Checks]] - `contains` [EXTRACTED]
 - [[gitleaks.toml]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gitleakstoml_03_-_Configuration
+#graphify/document #graphify/EXTRACTED #community/Community_999

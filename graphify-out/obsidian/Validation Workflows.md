@@ -1,12 +1,12 @@
 ---
 source_file: ".github/agents/validation-runner.agent.md"
 type: "document"
-community: "Validation Runner.agent (agents)"
+community: "Community 368"
 location: "L51"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Validation_Runneragent_agents
+  - community/Community_368
 ---
 
 # Validation Workflows
@@ -16,4 +16,4 @@ tags:
 - [[Python Validation]] - `contains` [EXTRACTED]
 - [[Validation Runner Specialist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Validation_Runneragent_agents
+#graphify/document #graphify/EXTRACTED #community/Community_368

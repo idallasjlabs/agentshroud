@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/export-telegram-history.py"
 type: "code"
-community: "Export Telegram History (scripts)"
+community: "Community 723"
 location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Export_Telegram_History_scripts
+  - community/Community_723
 ---
 
 # _parse_since()
@@ -17,6 +17,6 @@ tags:
 - [[_parse_since()_1]] - `semantically_similar_to` [INFERRED]
 - [[datetime_8]] - `references` [EXTRACTED]
 - [[export-telegram-history.py]] - `contains` [EXTRACTED]
-- [[main()_17]] - `calls` [EXTRACTED]
+- [[main()_18]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Export_Telegram_History_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_723

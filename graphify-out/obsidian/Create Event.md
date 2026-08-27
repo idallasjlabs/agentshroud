@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-icloud/SKILL.md"
 type: "document"
-community: "Skill (i-icloud)"
+community: "Community 316"
 location: "L24"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-icloud
+  - community/Community_316
 ---
 
 # Create Event
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Calendar Operations]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-icloud
+#graphify/document #graphify/EXTRACTED #community/Community_316

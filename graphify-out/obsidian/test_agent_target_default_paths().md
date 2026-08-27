@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router.py"
 type: "code"
-community: "Router"
+community: "Community 38"
 location: "L233"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Router
+  - community/Community_38
 ---
 
 # test_agent_target_default_paths()
@@ -16,4 +16,4 @@ tags:
 - [[AgentTarget defaults chat_path and health_path correctly.]] - `rationale_for` [EXTRACTED]
 - [[test_router.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Router
+#graphify/code #graphify/EXTRACTED #community/Community_38

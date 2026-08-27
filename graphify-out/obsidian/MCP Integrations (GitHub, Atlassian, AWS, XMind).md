@@ -1,13 +1,13 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "concept"
-community: "Agentic Os (architecture)"
+community: "Community 1573"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Agentic_Os_architecture
+  - community/Community_1573
 ---
 
 # MCP Integrations (GitHub, Atlassian, AWS, XMind)
 
-#graphify/concept #graphify/EXTRACTED #community/Agentic_Os_architecture
+#graphify/concept #graphify/EXTRACTED #community/Community_1573

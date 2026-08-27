@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-bs/SKILL.md"
 type: "document"
-community: "Skill (i-bs)"
+community: "Community 464"
 location: "L89"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-bs
+  - community/Community_464
 ---
 
 # Validate contrast ratio
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SKILL_74]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-bs
+#graphify/document #graphify/EXTRACTED #community/Community_464

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "Resource Guard & Local Model Parity"
-location: "L533"
+community: "Community 7"
+location: "L565"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Resource_Guard__Local_Model_Parity
+  - community/Community_7
 ---
 
 # test_local_secondary_failover_base_routes_correctly()
@@ -15,4 +15,4 @@ tags:
 - [[_local_failover_base resolves correct backend for secondary model.]] - `rationale_for` [EXTRACTED]
 - [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Resource_Guard__Local_Model_Parity
+#graphify/code #graphify/EXTRACTED #community/Community_7

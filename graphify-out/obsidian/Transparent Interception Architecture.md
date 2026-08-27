@@ -1,11 +1,11 @@
 ---
 source_file: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
 type: "concept"
-community: "Uspto Provisional Patent Application (docs)"
+community: "Community 552"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Uspto_Provisional_Patent_Application_docs
+  - community/Community_552
 ---
 
 # Transparent Interception Architecture
@@ -14,4 +14,4 @@ tags:
 - [[ADR-001-proxy-layer-inversion]] - `semantically_similar_to` [INFERRED]
 - [[Enterprise Governance Proxy System (invention)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/INFERRED #community/Uspto_Provisional_Patent_Application_docs
+#graphify/concept #graphify/INFERRED #community/Community_552

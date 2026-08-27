@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_hermes_model_resolver.py"
 type: "code"
-community: "Hermes Model Resolver"
-location: "L209"
+community: "Community 129"
+location: "L237"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Hermes_Model_Resolver
+  - community/Community_129
 ---
 
 # test_local_mode_ignores_stale_cloud_main_model()
@@ -16,4 +16,4 @@ tags:
 - [[resolve_model()]] - `calls` [INFERRED]
 - [[test_hermes_model_resolver.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Hermes_Model_Resolver
+#graphify/code #graphify/EXTRACTED #community/Community_129

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md"
 type: "document"
-community: "Mcp Config.py (Proxy Layer)"
+community: "Community 721"
 location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mcp_Configpy_Proxy_Layer
+  - community/Community_721
 ---
 
 # Key Classes / Functions
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[mcp_config.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mcp_Configpy_Proxy_Layer
+#graphify/document #graphify/EXTRACTED #community/Community_721

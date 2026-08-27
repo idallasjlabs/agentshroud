@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "RBAC & Ingest Middleware"
+community: "Community 15"
 location: "L43"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/RBAC__Ingest_Middleware
+  - community/Community_15
 ---
 
 # ToolTier
@@ -27,4 +27,4 @@ tags:
 - [[rbac_config.py]] - `contains` [EXTRACTED]
 - [[str]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/RBAC__Ingest_Middleware
+#graphify/code #graphify/INFERRED #community/Community_15

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config.py"
 type: "rationale"
-community: "Config"
+community: "Community 273"
 location: "L26"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Config
+  - community/Community_273
 ---
 
 # Test loading configuration from agentshroud.yaml (or the committed example).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_load_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Config
+#graphify/rationale #graphify/EXTRACTED #community/Community_273

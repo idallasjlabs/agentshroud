@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Telegram Proxy Inbound"
+community: "Community 41"
 location: "L7554"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Inbound
+  - community/Community_41
 ---
 
 # Probes containing 'how does' should be caught by _looks_like_safe_collaborator_i
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_how_does_routes_to_local_handler()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Inbound
+#graphify/rationale #graphify/EXTRACTED #community/Community_41

@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/icloud/SKILL.md"
+source_file: "docs/vault/05 - Dependencies/All Dependencies.md"
 type: "document"
-community: "Skill (icloud)"
-location: "L125"
+community: "Community 550"
+location: "L49"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_icloud
+  - community/Community_550
 ---
 
 # Configuration
 
 ## Connections
-- [[iCloud Services_4]] - `contains` [EXTRACTED]
+- [[Gateway Python Dependencies (`gatewayrequirements.txt`)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_icloud
+#graphify/document #graphify/EXTRACTED #community/Community_550

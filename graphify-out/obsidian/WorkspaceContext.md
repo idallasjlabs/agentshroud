@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_workspace.py"
 type: "code"
-community: "Shared Memory Write Acl"
+community: "Community 61"
 location: "L63"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Shared_Memory_Write_Acl
+  - community/Community_61
 ---
 
 # WorkspaceContext
@@ -19,4 +19,4 @@ tags:
 - [[TeamsConfig]] - `uses` [INFERRED]
 - [[group_workspace.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Shared_Memory_Write_Acl
+#graphify/code #graphify/INFERRED #community/Community_61

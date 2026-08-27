@@ -1,17 +1,17 @@
 ---
 source_file: "docs/architecture/WORKSPACE_USAGE.md"
 type: "document"
-community: "Workspace Usage (architecture)"
+community: "Community 159"
 location: "L290"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Workspace_Usage_architecture
+  - community/Community_159
 ---
 
 # Problem: "File not found"
 
 ## Connections
-- [[Troubleshooting_16]] - `contains` [EXTRACTED]
+- [[Troubleshooting_17]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Workspace_Usage_architecture
+#graphify/document #graphify/EXTRACTED #community/Community_159

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "code"
-community: "Agentic Os (architecture)"
+community: "Community 1433"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Agentic_Os_architecture
+  - community/Community_1433
 ---
 
 # asb CLI — Deployment Tool
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Container Architecture (gateway + bot hardening)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Agentic_Os_architecture
+#graphify/code #graphify/EXTRACTED #community/Community_1433

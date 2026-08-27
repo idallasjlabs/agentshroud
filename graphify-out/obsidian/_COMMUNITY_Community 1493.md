@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[test-system.sh]] - code - docker/scripts/test-system.sh
-- [[test-system.sh script]] - code - docker/scripts/test-system.sh
+- [[Daedalus Concept Illustrator README (OpenClaw)]] - document - docker/config/openclaw/skills/i-daedalus/README.md
+- [[Daedalus Concept Illustrator SKILL (OpenClaw)]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

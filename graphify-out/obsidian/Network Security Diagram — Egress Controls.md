@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/04-security.md"
 type: "concept"
-community: "04 Security (diagrams)"
+community: "Community 745"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/04_Security_diagrams
+  - community/Community_745
 ---
 
 # Network Security Diagram — Egress Controls
@@ -14,4 +14,4 @@ tags:
 - [[04-security]] - `conceptually_related_to` [EXTRACTED]
 - [[FR5 Restricted Data Flow]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/04_Security_diagrams
+#graphify/concept #graphify/EXTRACTED #community/Community_745

@@ -1,12 +1,12 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "Main (src)"
+community: "Community 40"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Main_src
+  - community/Community_40
 ---
 
 # main.rs
@@ -87,4 +87,4 @@ tags:
 - [[status_hits_correct_path()]] - `contains` [EXTRACTED]
 - [[status_parses_and_formats()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Main_src
+#graphify/code #graphify/EXTRACTED #community/Community_40

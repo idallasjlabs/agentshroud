@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/browser-fetch/run-as-root.sh"
 type: "code"
-community: "Run As Root (browser-fetch)"
+community: "Community 1374"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Run_As_Root_browser-fetch
+  - community/Community_1374
 ---
 
 # run-as-root.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[run-as-root.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Run_As_Root_browser-fetch
+#graphify/code #graphify/EXTRACTED #community/Community_1374

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/notion/SKILL.md"
 type: "document"
-community: "Skill (notion)"
+community: "Community 764"
 location: "L157"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_notion
+  - community/Community_764
 ---
 
 # Key Differences in 2025-09-03
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[notion]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_notion
+#graphify/document #graphify/EXTRACTED #community/Community_764

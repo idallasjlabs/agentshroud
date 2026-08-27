@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_skills_manifest_sync.py"
 type: "rationale"
-community: "Skills Manifest Sync"
+community: "Community 71"
 location: "L154"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Skills_Manifest_Sync
+  - community/Community_71
 ---
 
 # manifest.json must never appear as an entry even when present in source.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_manifest_json_in_source_is_excluded()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Skills_Manifest_Sync
+#graphify/rationale #graphify/EXTRACTED #community/Community_71

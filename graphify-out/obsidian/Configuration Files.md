@@ -1,19 +1,17 @@
 ---
-source_file: ".github/COPILOT_CLI_SETUP.md"
+source_file: ".agents/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "Copilot Cli Setup (.github)"
-location: "L52"
+community: "Community 225"
+location: "L351"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Copilot_Cli_Setup_github
+  - community/Community_225
 ---
 
 # Configuration Files
 
 ## Connections
-- [[GitHub Copilot CLI Setup Guide]] - `contains` [EXTRACTED]
-- [[MCP Servers]] - `contains` [EXTRACTED]
-- [[User-Level Config]] - `contains` [EXTRACTED]
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Copilot_Cli_Setup_github
+#graphify/document #graphify/EXTRACTED #community/Community_225

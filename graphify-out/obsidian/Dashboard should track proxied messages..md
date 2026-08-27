@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_proxy_dashboard.py"
 type: "rationale"
-community: "Proxy Dashboard"
+community: "Community 84"
 location: "L40"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Proxy_Dashboard
+  - community/Community_84
 ---
 
 # Dashboard should track proxied messages.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_dashboard_message_tracking()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Proxy_Dashboard
+#graphify/rationale #graphify/EXTRACTED #community/Community_84

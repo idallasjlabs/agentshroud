@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "Runbook (operations)"
+community: "Community 91"
 location: "L473"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Runbook_operations
+  - community/Community_91
 ---
 
 # Production Hardening
@@ -16,4 +16,4 @@ tags:
 - [[Performance Tuning]] - `contains` [EXTRACTED]
 - [[Security Hardening]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Runbook_operations
+#graphify/document #graphify/EXTRACTED #community/Community_91

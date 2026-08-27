@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "Security Audit"
+community: "Community 14"
 location: "L113"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Audit
+  - community/Community_14
 ---
 
 # Amex card: 378282246310005 (15 digits starting with 37).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_credit_card_amex()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Audit
+#graphify/rationale #graphify/EXTRACTED #community/Community_14

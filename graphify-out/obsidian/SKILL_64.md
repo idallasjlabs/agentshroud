@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/graphify/SKILL.md"
 type: "document"
-community: "Skill (graphify)"
+community: "Community 356"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_graphify
+  - community/Community_356
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[graphify_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_graphify
+#graphify/document #graphify/EXTRACTED #community/Community_356

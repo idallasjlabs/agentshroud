@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "rationale"
-community: "Security Audit & Watchtower Tests"
+community: "Community 870"
 location: "L518"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Audit__Watchtower_Tests
+  - community/Community_870
 ---
 
 # Remove Claude XML function call blocks from responses          Strips out intern
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.filter_xml_blocks()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Community_870

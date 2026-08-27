@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md"
 type: "document"
-community: "Google Calendar Quick Setup (setup)"
+community: "Community 544"
 location: "L78"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Google_Calendar_Quick_Setup_setup
+  - community/Community_544
 ---
 
 # Run Test
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🚀 Option A Simple Setup (5 minutes)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Google_Calendar_Quick_Setup_setup
+#graphify/document #graphify/EXTRACTED #community/Community_544

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/agentshroud-redteam/references/module-inventory.md"
 type: "document"
-community: "Module Inventory (references)"
+community: "Community 1273"
 location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Inventory_references
+  - community/Community_1273
 ---
 
 # Original 33 Modules (v0.6.0)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Module Inventory_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Inventory_references
+#graphify/document #graphify/EXTRACTED #community/Community_1273

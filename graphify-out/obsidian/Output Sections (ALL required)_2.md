@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-pca/SKILL.md"
 type: "document"
-community: "Skill (i-pca)"
+community: "Community 667"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-pca
+  - community/Community_667
 ---
 
 # Output Sections (ALL required)
@@ -19,7 +19,7 @@ tags:
 - [[5. Known Limits and Assumptions_2]] - `contains` [EXTRACTED]
 - [[6. Alternatives Considered_2]] - `contains` [EXTRACTED]
 - [[7. Open Questions_2]] - `contains` [EXTRACTED]
-- [[8. Verification Plan_1]] - `contains` [EXTRACTED]
+- [[8. Verification Plan_2]] - `contains` [EXTRACTED]
 - [[Skill Pre-Change Analysis (PCA)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-pca
+#graphify/document #graphify/EXTRACTED #community/Community_667

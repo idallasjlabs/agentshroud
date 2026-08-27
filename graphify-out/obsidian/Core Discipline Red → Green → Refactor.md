@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-tdd/SKILL.md"
 type: "document"
-community: "Skill (i-tdd)"
+community: "Community 700"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-tdd
+  - community/Community_700
 ---
 
 # Core Discipline: Red → Green → Refactor
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Test-Driven Development (TDD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-tdd
+#graphify/document #graphify/EXTRACTED #community/Community_700

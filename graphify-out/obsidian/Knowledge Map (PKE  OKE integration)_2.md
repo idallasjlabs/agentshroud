@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mm/SKILL.md"
 type: "document"
-community: "Skill (i-mm)"
+community: "Community 301"
 location: "L214"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-mm
+  - community/Community_301
 ---
 
 # Knowledge Map (PKE / OKE integration)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Use Case Patterns_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-mm
+#graphify/document #graphify/EXTRACTED #community/Community_301

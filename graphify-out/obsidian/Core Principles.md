@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/skill-creator/SKILL.md"
 type: "document"
-community: "Skill (skill-creator)"
+community: "Community 777"
 location: "L24"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_skill-creator
+  - community/Community_777
 ---
 
 # Core Principles
@@ -18,4 +18,4 @@ tags:
 - [[Set Appropriate Degrees of Freedom]] - `contains` [EXTRACTED]
 - [[Skill Creator]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_skill-creator
+#graphify/document #graphify/EXTRACTED #community/Community_777

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "Config Validation & Router"
+community: "Community 754"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Config_Validation__Router
+  - community/Community_754
 ---
 
 # test_config_validation.py
@@ -22,4 +22,4 @@ tags:
 - [[_DropInvalidHTTPRequestFilter]] - `imports` [EXTRACTED]
 - [[_parse_env_file()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Config_Validation__Router
+#graphify/code #graphify/EXTRACTED #community/Community_754

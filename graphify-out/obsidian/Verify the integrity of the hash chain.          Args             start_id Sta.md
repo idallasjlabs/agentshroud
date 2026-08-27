@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/audit_store.py"
 type: "rationale"
-community: "Audit Export"
+community: "Community 1132"
 location: "L304"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Audit_Export
+  - community/Community_1132
 ---
 
 # Verify the integrity of the hash chain.          Args:             start_id: Sta
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.verify_hash_chain()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Audit_Export
+#graphify/rationale #graphify/EXTRACTED #community/Community_1132

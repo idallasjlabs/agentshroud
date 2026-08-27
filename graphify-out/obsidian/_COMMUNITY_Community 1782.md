@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[PromptGuard.scan()]] - code - gateway/security/prompt_guard.py
+- [[AgentShroud LinkedIn Profile Image]] - image - branding/social/linkedin-profile-400x400.png
 
 ## Live Query (requires Dataview plugin)
 

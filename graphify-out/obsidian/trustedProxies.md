@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/apply-patches.js"
 type: "code"
-community: "Apply Patches (openclaw)"
+community: "Community 210"
 location: "L710"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Apply_Patches_openclaw
+  - community/Community_210
 ---
 
 # trustedProxies
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[apply-patches.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Apply_Patches_openclaw
+#graphify/code #graphify/EXTRACTED #community/Community_210

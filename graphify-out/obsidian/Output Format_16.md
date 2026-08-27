@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-daedalus/SKILL.md"
 type: "document"
-community: "Skill (i-daedalus)"
+community: "Community 801"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-daedalus
+  - community/Community_801
 ---
 
 # Output Format
@@ -17,4 +17,4 @@ tags:
 - [[diagramsREADME_1]] - `contains` [EXTRACTED]
 - [[flow.mmd (Mermaid)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-daedalus
+#graphify/document #graphify/EXTRACTED #community/Community_801

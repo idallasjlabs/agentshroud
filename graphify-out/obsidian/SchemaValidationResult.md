@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/output_schema.py"
 type: "code"
-community: "Output Schema"
+community: "Community 237"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Output_Schema
+  - community/Community_237
 ---
 
 # SchemaValidationResult
@@ -17,4 +17,4 @@ tags:
 - [[Result of validating output against a schema.]] - `rationale_for` [EXTRACTED]
 - [[output_schema.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Output_Schema
+#graphify/code #graphify/EXTRACTED #community/Community_237

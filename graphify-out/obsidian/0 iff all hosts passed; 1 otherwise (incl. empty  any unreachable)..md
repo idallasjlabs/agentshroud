@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/multi_host_test.py"
 type: "rationale"
-community: "Multi Host (tools)"
+community: "Community 485"
 location: "L149"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Multi_Host_tools
+  - community/Community_485
 ---
 
 # 0 iff all hosts passed; 1 otherwise (incl. empty / any unreachable).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.exit_code()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Multi_Host_tools
+#graphify/rationale #graphify/EXTRACTED #community/Community_485

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/ws-e-audit-v1.2.md"
 type: "document"
-community: "Ws E Audit V1.2 (security)"
+community: "Community 277"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Ws_E_Audit_V12_security
+  - community/Community_277
 ---
 
 # WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)
@@ -32,4 +32,4 @@ tags:
 - [[rbac.py (5-level RBAC hierarchy)]] - `references` [EXTRACTED]
 - [[ws-e-audit-v1.2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Ws_E_Audit_V12_security
+#graphify/document #graphify/EXTRACTED #community/Community_277

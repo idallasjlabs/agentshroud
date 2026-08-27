@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "rationale"
-community: "Scanner Integration"
+community: "Community 261"
 location: "L1043"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Scanner_Integration
+  - community/Community_261
 ---
 
 # Write a fake image report file in the expected filename format.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_write_image_report()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Scanner_Integration
+#graphify/rationale #graphify/EXTRACTED #community/Community_261

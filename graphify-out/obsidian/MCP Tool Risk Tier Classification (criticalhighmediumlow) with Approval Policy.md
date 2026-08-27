@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/02-human-in-the-loop.md"
 type: "concept"
-community: "02 Human In Loop (redteam)"
+community: "Community 1319"
 location: "Remediation Step 1"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/02_Human_In_Loop_redteam
+  - community/Community_1319
 ---
 
 # MCP Tool Risk Tier Classification (critical/high/medium/low) with Approval Policy
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Red Team Finding 02 No Human Approval for High-Risk Tool Calls]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/02_Human_In_Loop_redteam
+#graphify/concept #graphify/EXTRACTED #community/Community_1319

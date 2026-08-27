@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/dns_forwarder.py"
 type: "rationale"
-community: "Dns Canvas Coverage"
+community: "Community 720"
 location: "L174"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Dns_Canvas_Coverage
+  - community/Community_720
 ---
 
 # Handle incoming DNS query.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.datagram_received()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Dns_Canvas_Coverage
+#graphify/rationale #graphify/EXTRACTED #community/Community_720

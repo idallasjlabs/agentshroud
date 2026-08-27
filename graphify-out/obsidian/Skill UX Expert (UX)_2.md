@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-ux/SKILL.md"
 type: "document"
-community: "Skill (i-ux)"
+community: "Community 248"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-ux
+  - community/Community_248
 ---
 
 # Skill: UX Expert (UX)
@@ -22,9 +22,9 @@ tags:
 - [[Interaction Design Patterns_2]] - `contains` [EXTRACTED]
 - [[Nielsen's 10 Heuristics — GSDE&G Application_2]] - `contains` [EXTRACTED]
 - [[Role_110]] - `contains` [EXTRACTED]
-- [[Rules_25]] - `contains` [EXTRACTED]
+- [[Rules_26]] - `contains` [EXTRACTED]
 - [[SKILL_187]] - `contains` [EXTRACTED]
 - [[Usability Audit Checklist_2]] - `contains` [EXTRACTED]
 - [[User Flow Diagrams_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-ux
+#graphify/document #graphify/EXTRACTED #community/Community_248

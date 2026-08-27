@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_audit.py"
 type: "rationale"
-community: "Mcp Audit (proxy)"
+community: "Community 201"
 location: "L80"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Mcp_Audit_proxy
+  - community/Community_201
 ---
 
 # Record the start time of a tool call for duration tracking.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.start_call()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Mcp_Audit_proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_201

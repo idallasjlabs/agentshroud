@@ -1,20 +1,17 @@
 ---
-source_file: "skills/custom/icloud/SKILL.md"
+source_file: "shortcuts/README.md"
 type: "document"
-community: "Skill (icloud)"
-location: "L142"
+community: "Community 591"
+location: "L291"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_icloud
+  - community/Community_591
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[401 Unauthorized_4]] - `contains` [EXTRACTED]
-- [[CalendarContacts not found_3]] - `contains` [EXTRACTED]
-- [[Connection timeout_4]] - `contains` [EXTRACTED]
-- [[iCloud Services_4]] - `contains` [EXTRACTED]
+- [[iOS  macOS Shortcuts — Relay to AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_icloud
+#graphify/document #graphify/EXTRACTED #community/Community_591

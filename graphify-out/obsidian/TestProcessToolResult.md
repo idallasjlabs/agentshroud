@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "Slack Proxy Coverage"
+community: "Community 109"
 location: "L945"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Slack_Proxy_Coverage
+  - community/Community_109
 ---
 
 # TestProcessToolResult
@@ -22,4 +22,4 @@ tags:
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Slack_Proxy_Coverage
+#graphify/code #graphify/EXTRACTED #community/Community_109

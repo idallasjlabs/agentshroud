@@ -1,13 +1,13 @@
 ---
 source_file: ".agents/skills/i-crpr/SKILL.md"
 type: "document"
-community: "Skill (i-crpr)"
+community: "Community 1668"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-crpr
+  - community/Community_1668
 ---
 
 # Create PR with Pre-Flight Audit (CRPR) Skill
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-crpr
+#graphify/document #graphify/EXTRACTED #community/Community_1668

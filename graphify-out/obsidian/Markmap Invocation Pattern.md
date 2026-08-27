@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-mm/SKILL.md"
 type: "document"
-community: "Skill (i-mm)"
+community: "Community 289"
 location: "L169"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-mm
+  - community/Community_289
 ---
 
 # Markmap Invocation Pattern
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Markmap Generation via MCP]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-mm
+#graphify/document #graphify/EXTRACTED #community/Community_289

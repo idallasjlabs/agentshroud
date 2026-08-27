@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/TELEGRAM_GMAIL_SETUP.md"
 type: "document"
-community: "Telegram Gmail Setup (setup)"
+community: "Community 215"
 location: "L94"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Telegram_Gmail_Setup_setup
+  - community/Community_215
 ---
 
 # Step 5: Test Gmail
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Part 2 Set Up Gmail Integration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Telegram_Gmail_Setup_setup
+#graphify/document #graphify/EXTRACTED #community/Community_215

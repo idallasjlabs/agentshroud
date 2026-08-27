@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/drift_detector.py"
 type: "rationale"
-community: "Security Hardening"
+community: "Community 14"
 location: "L120"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Hardening
+  - community/Community_14
 ---
 
 # Compare current config against baseline, return any drift alerts.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.check_drift()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Hardening
+#graphify/rationale #graphify/EXTRACTED #community/Community_14

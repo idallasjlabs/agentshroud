@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[OpenClaw weather Skill]] - document - skills/openclaw/weather/SKILL.md
-- [[wttr.in Weather API (no key required)]] - concept - skills/openclaw/weather/SKILL.md
+- [[activate-lockdown.sh]] - code - scripts/activate-lockdown.sh
+- [[activate-lockdown.sh script]] - code - scripts/activate-lockdown.sh
 
 ## Live Query (requires Dataview plugin)
 

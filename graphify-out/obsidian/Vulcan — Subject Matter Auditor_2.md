@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-vulcan/README.md"
 type: "document"
-community: "Readme (i-vulcan)"
+community: "Community 1213"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-vulcan
+  - community/Community_1213
 ---
 
 # Vulcan — Subject Matter Auditor
@@ -17,4 +17,4 @@ tags:
 - [[Related Skills_79]] - `contains` [EXTRACTED]
 - [[Usage_80]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-vulcan
+#graphify/document #graphify/EXTRACTED #community/Community_1213

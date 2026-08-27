@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mm/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-bs/SKILL.md"
 type: "document"
-community: "Skill (i-mm)"
-location: "L27"
+community: "Community 467"
+location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-mm
+  - community/Community_467
 ---
 
 # Rules
 
 ## Connections
-- [[Skill Mindmap Architect (MM)_2]] - `contains` [EXTRACTED]
+- [[Skill Branding Specialist (BS)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-mm
+#graphify/document #graphify/EXTRACTED #community/Community_467

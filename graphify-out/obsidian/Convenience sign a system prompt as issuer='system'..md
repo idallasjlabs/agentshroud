@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/instruction_envelope.py"
 type: "rationale"
-community: "Pipeline Unit"
+community: "Community 22"
 location: "L85"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Pipeline_Unit
+  - community/Community_22
 ---
 
 # Convenience: sign a system prompt as issuer='system'.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.wrap_system_prompt()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Pipeline_Unit
+#graphify/rationale #graphify/EXTRACTED #community/Community_22

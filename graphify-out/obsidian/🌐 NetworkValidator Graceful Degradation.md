@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-02-24.md"
 type: "document"
-community: "Phase Review 2026 02 (reviews)"
+community: "Community 727"
 location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_Review_2026_02_reviews
+  - community/Community_727
 ---
 
 # 🌐 **NetworkValidator Graceful Degradation**
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[1. Accomplishments This Phase_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_Review_2026_02_reviews
+#graphify/document #graphify/EXTRACTED #community/Community_727

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "rationale"
-community: "Security Audit & Watchtower Tests"
+community: "Community 116"
 location: "L639"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Audit__Watchtower_Tests
+  - community/Community_116
 ---
 
 # Strip injected fake delimiters and return sanitized message.          Called whe
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.reanchor_delimiters()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Community_116

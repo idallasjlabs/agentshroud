@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_image_verifier.py"
 type: "rationale"
-community: "Image Verifier"
+community: "Community 477"
 location: "L90"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Image_Verifier
+  - community/Community_477
 ---
 
 # verify_images: one succeeds, one fails → results keyed by ref.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_verify_images_mixed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Image_Verifier
+#graphify/rationale #graphify/EXTRACTED #community/Community_477

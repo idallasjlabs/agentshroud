@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_instruction_envelope.py"
 type: "rationale"
-community: "Pipeline Unit"
+community: "Community 22"
 location: "L19"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Pipeline_Unit
+  - community/Community_22
 ---
 
 # sign() + verify() should return True for unmodified content.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_sign_and_verify_roundtrip()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Pipeline_Unit
+#graphify/rationale #graphify/EXTRACTED #community/Community_22

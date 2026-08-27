@@ -1,12 +1,12 @@
 ---
 source_file: "dashboard/README.md"
 type: "document"
-community: "Readme (dashboard)"
+community: "Community 257"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_dashboard
+  - community/Community_257
 ---
 
 # AgentShroud Dashboard
@@ -18,4 +18,4 @@ tags:
 - [[README_40]] - `contains` [EXTRACTED]
 - [[Tech Stack]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_dashboard
+#graphify/document #graphify/EXTRACTED #community/Community_257

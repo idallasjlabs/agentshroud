@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/README.md"
 type: "document"
-community: "Readme (planning)"
+community: "Community 1040"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_planning
+  - community/Community_1040
 ---
 
 # `docs/planning/` — Index
@@ -19,4 +19,4 @@ tags:
 - [[README_123]] - `contains` [EXTRACTED]
 - [[What does NOT live here]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_planning
+#graphify/document #graphify/EXTRACTED #community/Community_1040

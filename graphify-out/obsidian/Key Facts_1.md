@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/workspace/memory/context.md"
 type: "document"
-community: "Developer (workspace)"
+community: "Community 449"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Developer_workspace
+  - community/Community_449
 ---
 
 # Key Facts
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[context]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Developer_workspace
+#graphify/document #graphify/EXTRACTED #community/Community_449

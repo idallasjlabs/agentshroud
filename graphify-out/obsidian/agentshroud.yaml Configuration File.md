@@ -1,11 +1,11 @@
 ---
 source_file: "docs/operations/raspberry-pi.md"
 type: "concept"
-community: "Telegram Issues (project)"
+community: "Community 205"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Telegram_Issues_project
+  - community/Community_205
 ---
 
 # agentshroud.yaml Configuration File
@@ -14,4 +14,4 @@ tags:
 - [[Configuration Reference]] - `contains` [EXTRACTED]
 - [[raspberry-pi]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Telegram_Issues_project
+#graphify/concept #graphify/EXTRACTED #community/Community_205

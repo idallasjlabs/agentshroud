@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy.py"
 type: "code"
-community: "Http Proxy"
+community: "Community 94"
 location: "L110"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Http_Proxy
+  - community/Community_94
 ---
 
 # _DummyTargetWriter
@@ -21,4 +21,4 @@ tags:
 - [[WebProxyConfig]] - `uses` [INFERRED]
 - [[test_http_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Http_Proxy
+#graphify/code #graphify/INFERRED #community/Community_94

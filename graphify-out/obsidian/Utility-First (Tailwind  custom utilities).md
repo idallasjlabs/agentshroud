@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-ui/SKILL.md"
 type: "document"
-community: "Skill (i-ui)"
+community: "Community 291"
 location: "L56"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-ui
+  - community/Community_291
 ---
 
 # Utility-First (Tailwind / custom utilities)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CSS Architecture Recommendations]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-ui
+#graphify/document #graphify/EXTRACTED #community/Community_291

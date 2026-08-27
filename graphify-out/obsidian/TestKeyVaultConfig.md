@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_vault.py"
 type: "code"
-community: "Key Vault"
+community: "Community 22"
 location: "L33"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Key_Vault
+  - community/Community_22
 ---
 
 # TestKeyVaultConfig
@@ -19,4 +19,4 @@ tags:
 - [[KeyVaultConfig]] - `uses` [INFERRED]
 - [[test_key_vault.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Key_Vault
+#graphify/code #graphify/INFERRED #community/Community_22

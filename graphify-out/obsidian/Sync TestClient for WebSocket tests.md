@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dashboard.py"
 type: "rationale"
-community: "Dashboard"
+community: "Community 0"
 location: "L42"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Dashboard
+  - community/Community_0
 ---
 
 # Sync TestClient for WebSocket tests
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[sync_client()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Dashboard
+#graphify/rationale #graphify/EXTRACTED #community/Community_0

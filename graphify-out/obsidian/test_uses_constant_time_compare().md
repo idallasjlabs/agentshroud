@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mfa_guard.py"
 type: "code"
-community: "Mfa Guard"
+community: "Community 69"
 location: "L172"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Mfa_Guard
+  - community/Community_69
 ---
 
 # test_uses_constant_time_compare()
@@ -16,4 +16,4 @@ tags:
 - [[_ref_totp()]] - `calls` [EXTRACTED]
 - [[test_mfa_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Mfa_Guard
+#graphify/code #graphify/EXTRACTED #community/Community_69

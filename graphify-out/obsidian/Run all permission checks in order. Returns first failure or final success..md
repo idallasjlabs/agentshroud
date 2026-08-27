@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "rationale"
-community: "Mcp Permissions"
+community: "Community 106"
 location: "L626"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Mcp_Permissions
+  - community/Community_106
 ---
 
 # Run all permission checks in order. Returns first failure or final success.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.check_all()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Mcp_Permissions
+#graphify/rationale #graphify/EXTRACTED #community/Community_106

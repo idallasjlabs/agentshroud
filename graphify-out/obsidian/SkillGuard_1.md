@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "Skill Guard"
+community: "Community 100"
 location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Skill_Guard
+  - community/Community_100
 ---
 
 # SkillGuard
@@ -49,4 +49,4 @@ tags:
 - [[SkillScanError]] - `uses` [INFERRED]
 - [[guard()_4]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Skill_Guard
+#graphify/code #graphify/EXTRACTED #community/Community_100

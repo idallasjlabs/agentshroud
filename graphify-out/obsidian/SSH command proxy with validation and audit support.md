@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ssh_proxy/proxy.py"
 type: "rationale"
-community: "Ssh Write File Endpoint"
+community: "Community 12"
 location: "L136"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Ssh_Write_File_Endpoint
+  - community/Community_12
 ---
 
 # SSH command proxy with validation and audit support
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SSHProxy]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Ssh_Write_File_Endpoint
+#graphify/rationale #graphify/EXTRACTED #community/Community_12

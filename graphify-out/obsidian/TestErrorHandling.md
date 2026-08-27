@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "Main Endpoints"
+community: "Community 1845"
 location: "L217"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Main_Endpoints
+  - community/Community_1845
 ---
 
 # TestErrorHandling
@@ -18,4 +18,4 @@ tags:
 - [[Test error handling across endpoints.]] - `rationale_for` [EXTRACTED]
 - [[test_main_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Main_Endpoints
+#graphify/code #graphify/EXTRACTED #community/Community_1845

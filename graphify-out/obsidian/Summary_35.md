@@ -1,17 +1,19 @@
 ---
-source_file: "docs/security/CREDENTIAL-SECURITY-POLICY.md"
+source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md"
 type: "document"
-community: "Gateway Test Suite"
-location: "L383"
+community: "Community 342"
+location: "L170"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Community_342
 ---
 
 # Summary
 
 ## Connections
-- [[Credential Security Policy]] - `contains` [EXTRACTED]
+- [[Blue Team Security Assessment — AgentShroud v0.8.0 Round 2]] - `contains` [EXTRACTED]
+- [[Blue Team Security Assessment — AgentShroud v0.8.0 Round 3 (Final)]] - `contains` [EXTRACTED]
+- [[Overall Security Posture STRONG 🟢]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Community_342

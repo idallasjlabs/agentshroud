@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_quota_detector.py"
 type: "code"
-community: "Llm Quota Detector"
+community: "Community 419"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Llm_Quota_Detector
+  - community/Community_419
 ---
 
 # llm_quota_detector.py
@@ -20,4 +20,4 @@ tags:
 - [[is_rate_limited_post_retry()]] - `contains` [EXTRACTED]
 - [[test_llm_quota_detector.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Llm_Quota_Detector
+#graphify/code #graphify/EXTRACTED #community/Community_419

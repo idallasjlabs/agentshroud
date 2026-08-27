@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Telegram Inbound Proxy Tests"
+community: "Community 2"
 location: "L472"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Inbound_Proxy_Tests
+  - community/Community_2
 ---
 
 # Owner /collabs should show known collaborator labels and IDs.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_owner_collabs_command_shows_named_roster()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Inbound_Proxy_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Community_2

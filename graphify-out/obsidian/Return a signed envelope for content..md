@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/instruction_envelope.py"
 type: "rationale"
-community: "Pipeline Unit"
+community: "Community 22"
 location: "L61"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Pipeline_Unit
+  - community/Community_22
 ---
 
 # Return a signed envelope for content.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.sign()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Pipeline_Unit
+#graphify/rationale #graphify/EXTRACTED #community/Community_22

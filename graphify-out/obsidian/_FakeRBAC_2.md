@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "Router (soc)"
+community: "Community 15"
 location: "L164"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Router_soc
+  - community/Community_15
 ---
 
 # _FakeRBAC
@@ -30,4 +30,4 @@ tags:
 - [[SOCWebSocketHandler]] - `uses` [INFERRED]
 - [[test_soc_realtime_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Router_soc
+#graphify/code #graphify/EXTRACTED #community/Community_15

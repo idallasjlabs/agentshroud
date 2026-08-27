@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "Config Validation & Router"
+community: "Community 754"
 location: "L148"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Config_Validation__Router
+  - community/Community_754
 ---
 
 # TestConfigValidation
 
 ## Connections
 - [[.test_chat_console_script_uses_repo_relative_exec()]] - `method` [EXTRACTED]
-- [[.test_compose_sets_fieldflare_local_model_overrides()]] - `method` [EXTRACTED]
+- [[.test_compose_sets_nemotron_local_model_overrides()]] - `method` [EXTRACTED]
 - [[.test_empty_content_rejected()]] - `method` [EXTRACTED]
 - [[.test_gateway_yaml_ssh_hosts_cover_all_lab_hosts()]] - `method` [EXTRACTED]
 - [[.test_hermes_dashboard_insecure_optin_is_loopback_bounded()]] - `method` [EXTRACTED]
@@ -58,4 +58,4 @@ tags:
 - [[RouterConfig]] - `uses` [INFERRED]
 - [[test_config_validation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Config_Validation__Router
+#graphify/code #graphify/EXTRACTED #community/Community_754

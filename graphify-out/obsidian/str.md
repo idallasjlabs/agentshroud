@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "Tool Chain & CVE Triage"
+community: "Community 78"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tool_Chain__CVE_Triage
+  - community/Community_78
 ---
 
 # str
@@ -60,4 +60,4 @@ tags:
 - [[VulnClass]] - `inherits` [EXTRACTED]
 - [[WSEventType]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Tool_Chain__CVE_Triage
+#graphify/code #graphify/EXTRACTED #community/Community_78

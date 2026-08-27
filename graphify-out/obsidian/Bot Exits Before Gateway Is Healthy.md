@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Startup Errors.md"
 type: "document"
-community: "Startup errors (07 - Errors & Troubleshooting)"
+community: "Community 694"
 location: "L114"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Startup_errors_07_-_Errors__Troubleshooting
+  - community/Community_694
 ---
 
 # Bot Exits Before Gateway Is Healthy
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Bot Container Startup Failures]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Startup_errors_07_-_Errors__Troubleshooting
+#graphify/document #graphify/EXTRACTED #community/Community_694

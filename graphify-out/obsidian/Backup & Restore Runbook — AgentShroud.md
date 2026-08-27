@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/backup-restore.md"
 type: "document"
-community: "Backup Restore (runbooks)"
+community: "Community 859"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Backup_Restore_runbooks
+  - community/Community_859
 ---
 
 # Backup & Restore Runbook — AgentShroud
@@ -18,4 +18,4 @@ tags:
 - [[What to Back Up]] - `contains` [EXTRACTED]
 - [[backup-restore]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Backup_Restore_runbooks
+#graphify/document #graphify/EXTRACTED #community/Community_859

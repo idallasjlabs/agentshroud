@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/store.py"
 type: "code"
-community: "Enhanced Approval"
+community: "Community 24"
 location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enhanced_Approval
+  - community/Community_24
 ---
 
 # ApprovalStore
@@ -73,4 +73,4 @@ tags:
 - [[test_submit_does_not_deadlock_on_hung_websocket_client()_1]] - `calls` [EXTRACTED]
 - [[test_websocket_notifications()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enhanced_Approval
+#graphify/code #graphify/EXTRACTED #community/Community_24

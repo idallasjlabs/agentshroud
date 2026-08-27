@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/dashboard_bridge.py"
 type: "code"
-community: "Dashboard Bridge (hermes)"
+community: "Community 495"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Dashboard_Bridge_hermes
+  - community/Community_495
 ---
 
 # dashboard_bridge.py
@@ -19,4 +19,4 @@ tags:
 - [[main()_2]] - `contains` [EXTRACTED]
 - [[rewrite_request_headers()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Dashboard_Bridge_hermes
+#graphify/code #graphify/EXTRACTED #community/Community_495

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/TELEGRAM_GMAIL_SETUP.md"
 type: "document"
-community: "Telegram Gmail Setup (setup)"
+community: "Community 215"
 location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Telegram_Gmail_Setup_setup
+  - community/Community_215
 ---
 
 # Test Now
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Part 1 Test Telegram Bot]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Telegram_Gmail_Setup_setup
+#graphify/document #graphify/EXTRACTED #community/Community_215

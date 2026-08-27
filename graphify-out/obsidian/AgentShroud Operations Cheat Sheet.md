@@ -1,12 +1,12 @@
 ---
 source_file: "CHEATSHEET.md"
 type: "document"
-community: "Cheatsheet"
+community: "Community 434"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Cheatsheet
+  - community/Community_434
 ---
 
 # AgentShroud Operations Cheat Sheet
@@ -28,9 +28,9 @@ tags:
 - [[Secrets]] - `contains` [EXTRACTED]
 - [[Security Scanners]] - `contains` [EXTRACTED]
 - [[Telegram Bot Commands (Owner)]] - `contains` [EXTRACTED]
-- [[Tests_1]] - `contains` [EXTRACTED]
+- [[Tests_5]] - `contains` [EXTRACTED]
 - [[Upgrades & Rollbacks]] - `contains` [EXTRACTED]
 - [[Web Management UI]] - `contains` [EXTRACTED]
 - [[asb Wrapper Script]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Cheatsheet
+#graphify/document #graphify/EXTRACTED #community/Community_434

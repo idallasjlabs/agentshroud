@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/network_validator.py"
 type: "code"
-community: "RBAC & Ingest Middleware"
+community: "Community 6"
 location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBAC__Ingest_Middleware
+  - community/Community_6
 ---
 
 # NetworkValidator
@@ -69,4 +69,4 @@ tags:
 - [[validate_network_security()]] - `references` [EXTRACTED]
 - [[web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBAC__Ingest_Middleware
+#graphify/code #graphify/EXTRACTED #community/Community_6

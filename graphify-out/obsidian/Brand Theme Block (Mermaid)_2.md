@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-ti/SKILL.md"
 type: "document"
-community: "Skill (i-ti)"
+community: "Community 396"
 location: "L34"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-ti
+  - community/Community_396
 ---
 
 # Brand Theme Block (Mermaid)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Technical Illustrator (TI)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-ti
+#graphify/document #graphify/EXTRACTED #community/Community_396

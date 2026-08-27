@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "rationale"
-community: "Security Audit & Watchtower Tests"
+community: "Community 22"
 location: "L318"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Audit__Watchtower_Tests
+  - community/Community_22
 ---
 
 # Main security pipeline that all messages pass through.      Wires together: Prom
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SecurityPipeline]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Community_22

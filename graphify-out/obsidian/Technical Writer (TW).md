@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-tw/README.md"
 type: "document"
-community: "Readme (i-tw)"
+community: "Community 1170"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-tw
+  - community/Community_1170
 ---
 
 # Technical Writer (TW)
@@ -17,4 +17,4 @@ tags:
 - [[Related Skills_38]] - `contains` [EXTRACTED]
 - [[Usage_38]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-tw
+#graphify/document #graphify/EXTRACTED #community/Community_1170

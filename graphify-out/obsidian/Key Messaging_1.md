@@ -1,20 +1,20 @@
 ---
 source_file: "docker/config/openclaw/workspace/BRAND.md"
 type: "document"
-community: "Readme (branding)"
+community: "Community 168"
 location: "L59"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_branding
+  - community/Community_168
 ---
 
 # Key Messaging
 
 ## Connections
-- [[AgentShroud™ Brand Guidelines]] - `contains` [EXTRACTED]
+- [[AgentShroud™ Brand Guidelines_1]] - `contains` [EXTRACTED]
 - [[Elevator pitch_1]] - `contains` [EXTRACTED]
 - [[One-liner_1]] - `contains` [EXTRACTED]
 - [[What it is NOT_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_branding
+#graphify/document #graphify/EXTRACTED #community/Community_168

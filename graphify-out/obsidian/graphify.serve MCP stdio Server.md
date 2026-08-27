@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/references/exports.md"
 type: "concept"
-community: "Skill (graphify)"
+community: "Community 1474"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Skill_graphify
+  - community/Community_1474
 ---
 
 # graphify.serve MCP stdio Server
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[God Nodes Analysis]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Skill_graphify
+#graphify/concept #graphify/EXTRACTED #community/Community_1474

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/management.py"
 type: "code"
-community: "Management (web)"
+community: "Community 1857"
 location: "L933"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Management_web
+  - community/Community_1857
 ---
 
 # EgressAllowlistResponse
@@ -19,4 +19,4 @@ tags:
 - [[get_egress_allowlist()]] - `calls` [EXTRACTED]
 - [[management.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Management_web
+#graphify/code #graphify/EXTRACTED #community/Community_1857

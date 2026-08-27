@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/i-pm/README.md"
 type: "document"
-community: "Readme (i-pm)"
+community: "Community 1199"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-pm
+  - community/Community_1199
 ---
 
 # Purpose
 
 ## Connections
-- [[Project Management (PM)]] - `contains` [EXTRACTED]
+- [[Project Management (PM)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-pm
+#graphify/document #graphify/EXTRACTED #community/Community_1199

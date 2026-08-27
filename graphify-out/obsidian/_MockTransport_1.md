@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_jira_weekly_review.py"
 type: "code"
-community: "Jira Weekly Review"
+community: "Community 279"
 location: "L192"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Jira_Weekly_Review
+  - community/Community_279
 ---
 
 # _MockTransport
@@ -18,4 +18,4 @@ tags:
 - [[test_jira_weekly_review.py]] - `contains` [EXTRACTED]
 - [[test_run_posts_comment_with_basic_auth()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Jira_Weekly_Review
+#graphify/code #graphify/EXTRACTED #community/Community_279

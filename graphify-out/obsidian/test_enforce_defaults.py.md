@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enforce_defaults.py"
 type: "code"
-community: "Security Audit & Watchtower Tests"
+community: "Community 6"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Audit__Watchtower_Tests
+  - community/Community_6
 ---
 
 # test_enforce_defaults.py
@@ -21,4 +21,4 @@ tags:
 - [[check_monitor_mode_warnings()]] - `imports` [EXTRACTED]
 - [[get_module_mode()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests
+#graphify/code #graphify/EXTRACTED #community/Community_6

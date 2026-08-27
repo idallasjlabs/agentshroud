@@ -1,11 +1,11 @@
 ---
 source_file: "docs/reference/PREREQUISITES.md"
 type: "rationale"
-community: "Quick Reference (reference)"
+community: "Community 376"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Quick_Reference_reference
+  - community/Community_376
 ---
 
 # Separation of Concerns / Isolated Bot Accounts
@@ -14,4 +14,4 @@ tags:
 - [[Credential Isolation Architecture]] - `semantically_similar_to` [INFERRED]
 - [[PREREQUISITES]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Quick_Reference_reference
+#graphify/rationale #graphify/EXTRACTED #community/Community_376

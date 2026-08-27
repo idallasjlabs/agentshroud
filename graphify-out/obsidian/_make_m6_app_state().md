@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_bots.py"
 type: "code"
-community: "Soc Bots"
+community: "Community 39"
 location: "L819"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Soc_Bots
+  - community/Community_39
 ---
 
 # _make_m6_app_state()
@@ -17,4 +17,4 @@ tags:
 - [[.test_single_bot_returns_list_of_one()]] - `calls` [EXTRACTED]
 - [[test_soc_bots.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Soc_Bots
+#graphify/code #graphify/EXTRACTED #community/Community_39

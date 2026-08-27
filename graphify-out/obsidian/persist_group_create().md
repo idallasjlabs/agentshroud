@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "Group Config & Collaborator Responses"
+community: "Community 134"
 location: "L312"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Group_Config__Collaborator_Responses
+  - community/Community_134
 ---
 
 # persist_group_create()
@@ -19,4 +19,4 @@ tags:
 - [[group_config.py]] - `contains` [EXTRACTED]
 - [[router.py_1]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Group_Config__Collaborator_Responses
+#graphify/code #graphify/EXTRACTED #community/Community_134

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_differential_pii_detector.py"
 type: "rationale"
-community: "Differential Pii Detector"
+community: "Community 47"
 location: "L122"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Differential_Pii_Detector
+  - community/Community_47
 ---
 
 # When the pinned model loads, Presidio is built with an explicit         ``nlp_en
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_init_wires_explicit_nlp_engine_when_model_present()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Differential_Pii_Detector
+#graphify/rationale #graphify/EXTRACTED #community/Community_47

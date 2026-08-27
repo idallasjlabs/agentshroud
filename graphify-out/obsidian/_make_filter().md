@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "Egress Filter"
+community: "Community 53"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress_Filter
+  - community/Community_53
 ---
 
 # _make_filter()
@@ -46,4 +46,4 @@ tags:
 - [[EgressFilterConfig]] - `calls` [EXTRACTED]
 - [[test_egress_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress_Filter
+#graphify/code #graphify/EXTRACTED #community/Community_53

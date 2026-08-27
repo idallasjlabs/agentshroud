@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/reviews/phase-review-2026-02-24-b.md"
+source_file: "CHANGELOG.md"
 type: "document"
-community: "Phase Review 2026 02 (reviews)"
-location: "L171"
+community: "Community 646"
+location: "L364"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_Review_2026_02_reviews
+  - community/Community_646
 ---
 
 # Summary
 
 ## Connections
-- [[AgentShroud Phase Review — 2026-02-23]] - `contains` [EXTRACTED]
+- [[1.2.2 — releasev1.2.2 (2026-06-28)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_Review_2026_02_reviews
+#graphify/document #graphify/EXTRACTED #community/Community_646

@@ -1,12 +1,12 @@
 ---
 source_file: ".github/PULL_REQUEST_TEMPLATE.md"
 type: "document"
-community: "Pull Request Template (.github)"
+community: "Community 251"
 location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Pull_Request_Template_github
+  - community/Community_251
 ---
 
 # IEC 62443 Reference
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[PULL_REQUEST_TEMPLATE]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Pull_Request_Template_github
+#graphify/document #graphify/EXTRACTED #community/Community_251

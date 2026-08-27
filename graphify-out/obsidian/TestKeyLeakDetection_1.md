@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "Key Vault"
+community: "Community 22"
 location: "L573"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Key_Vault
+  - community/Community_22
 ---
 
 # TestKeyLeakDetection
@@ -37,4 +37,4 @@ tags:
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_pipeline_unit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Key_Vault
+#graphify/code #graphify/INFERRED #community/Community_22

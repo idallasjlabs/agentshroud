@@ -1,0 +1,30 @@
+---
+type: community
+members: 13
+---
+
+# Community 721
+
+**Members:** 13 nodes
+
+## Members
+- [[Configuration  Environment Variables_3]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
+- [[Function Details_9]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
+- [[Key Classes  Functions_12]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
+- [[MCPProxyConfig Fields]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
+- [[MCPProxyConfig.from_dict(data)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
+- [[MCPServerConfig Fields]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
+- [[PermissionLevel Ordering]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
+- [[PermissionLevel comparison operators]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
+- [[Purpose_130]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
+- [[Related_15]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
+- [[Responsibilities_14]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
+- [[mcp_config.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
+- [[mcp_config.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/Community_721
+SORT file.name ASC
+```

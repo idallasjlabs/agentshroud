@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Telegram Proxy Inbound"
+community: "Community 32"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Inbound
+  - community/Community_32
 ---
 
 # test_telegram_proxy_inbound.py
@@ -41,4 +41,4 @@ tags:
 - [[_wrap_response()]] - `contains` [EXTRACTED]
 - [[state.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Inbound
+#graphify/code #graphify/EXTRACTED #community/Community_32

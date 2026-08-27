@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-11-trust-boundary.svg"
 type: "concept"
-community: "Diagram 11 Trust Boundary (images)"
+community: "Community 906"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Diagram_11_Trust_Boundary_images
+  - community/Community_906
 ---
 
 # Trust Zone 3 — External Services (Conditional)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Bot (no direct credentialinternet access)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Diagram_11_Trust_Boundary_images
+#graphify/concept #graphify/EXTRACTED #community/Community_906

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup-slack.md"
 type: "document"
-community: "Setup Slack (docs)"
+community: "Community 739"
 location: "L103"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Slack_docs
+  - community/Community_739
 ---
 
 # Step 8: Configure Environment
@@ -15,4 +15,4 @@ tags:
 - [[Slack Channel Setup]] - `contains` [EXTRACTED]
 - [[Telegram Channel Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Slack_docs
+#graphify/document #graphify/EXTRACTED #community/Community_739

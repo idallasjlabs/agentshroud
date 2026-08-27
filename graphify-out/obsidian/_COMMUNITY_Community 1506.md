@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[test_config fixture]] - code - gateway/tests/conftest.py
-- [[test_ledger fixture]] - code - gateway/tests/conftest.py
+- [[check-status.sh]] - code - docker/scripts/check-status.sh
+- [[check-status.sh script]] - code - docker/scripts/check-status.sh
 
 ## Live Query (requires Dataview plugin)
 

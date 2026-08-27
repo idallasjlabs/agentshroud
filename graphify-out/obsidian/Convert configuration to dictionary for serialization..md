@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/killswitch_config.py"
 type: "rationale"
-community: "Killswitch Monitor & Observatory Mode"
+community: "Community 13"
 location: "L101"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Killswitch_Monitor__Observatory_Mode
+  - community/Community_13
 ---
 
 # Convert configuration to dictionary for serialization.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.to_dict()_10]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Killswitch_Monitor__Observatory_Mode
+#graphify/rationale #graphify/EXTRACTED #community/Community_13

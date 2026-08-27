@@ -1,13 +1,13 @@
 ---
 source_file: ".agents/skills/i-observability/SKILL.md"
 type: "document"
-community: "Skill (i-observability)"
+community: "Community 1675"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-observability
+  - community/Community_1675
 ---
 
 # Observability Skill
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-observability
+#graphify/document #graphify/EXTRACTED #community/Community_1675

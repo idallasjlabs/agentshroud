@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[gateway-start.sh]] - code - docker/scripts/gateway-start.sh
-- [[gateway-start.sh script]] - code - docker/scripts/gateway-start.sh
+- [[SDLC Governance]] - document - .agents/skills/i-sdlc/SKILL.md
+- [[Scrum Ceremony Facilitation]] - document - .agents/skills/i-scrum/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

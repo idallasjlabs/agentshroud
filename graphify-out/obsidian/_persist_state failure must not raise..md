@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_greeter.py"
 type: "rationale"
-community: "Collaborator Greeter"
+community: "Community 122"
 location: "L280"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Collaborator_Greeter
+  - community/Community_122
 ---
 
 # _persist_state failure must not raise.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_persist_state_exception_is_swallowed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Greeter
+#graphify/rationale #graphify/EXTRACTED #community/Community_122

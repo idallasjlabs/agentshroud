@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rate_limit_guard.py"
 type: "code"
-community: "Rate Limit Guard"
+community: "Community 177"
 location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Rate_Limit_Guard
+  - community/Community_177
 ---
 
 # RateLimitConfig
@@ -34,4 +34,4 @@ tags:
 - [[test_under_limit_allows()]] - `calls` [EXTRACTED]
 - [[test_window_slides_and_allows_again()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Rate_Limit_Guard
+#graphify/code #graphify/EXTRACTED #community/Community_177

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
 type: "document"
-community: "Browser Fetch Skill (reference)"
+community: "Community 772"
 location: "L366"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser_Fetch_Skill_reference
+  - community/Community_772
 ---
 
 # Integration with AgentShroud Workflow
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Browser-Fetch Skill for 1Password Share Links]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser_Fetch_Skill_reference
+#graphify/document #graphify/EXTRACTED #community/Community_772

@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-sec-defense/SKILL.md"
 type: "document"
-community: "Skill (i-sec-defense)"
+community: "Community 607"
 location: "L106"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-sec-defense
+  - community/Community_607
 ---
 
 # Phase 4: Configuration Audit
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Audit Procedure]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-sec-defense
+#graphify/document #graphify/EXTRACTED #community/Community_607

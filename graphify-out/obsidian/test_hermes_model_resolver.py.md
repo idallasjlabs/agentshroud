@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_hermes_model_resolver.py"
 type: "code"
-community: "Hermes Model Resolver"
+community: "Community 129"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Hermes_Model_Resolver
+  - community/Community_129
 ---
 
 # test_hermes_model_resolver.py
@@ -25,6 +25,7 @@ tags:
 - [[test_local_mode_empty_local_ref_falls_back_to_default_local_model()]] - `contains` [EXTRACTED]
 - [[test_local_mode_falls_back_to_local_ref_when_main_unset()]] - `contains` [EXTRACTED]
 - [[test_local_mode_ignores_stale_cloud_main_model()]] - `contains` [EXTRACTED]
+- [[test_local_mode_recognizes_nemotron_as_local()]] - `contains` [EXTRACTED]
 - [[test_local_mode_uses_hermes_main_model()]] - `contains` [EXTRACTED]
 - [[test_local_multi_mode_uses_lmstudio_dash_model()]] - `contains` [EXTRACTED]
 - [[test_mode_case_insensitive_and_whitespace_tolerant()]] - `contains` [EXTRACTED]
@@ -36,4 +37,4 @@ tags:
 - [[test_unknown_mode_treated_as_cloud()]] - `contains` [EXTRACTED]
 - [[test_unrelated_model_names_pass_through_uncorrected()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Hermes_Model_Resolver
+#graphify/code #graphify/EXTRACTED #community/Community_129

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "rationale"
-community: "RBAC & Ingest Middleware"
+community: "Community 15"
 location: "L294"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBAC__Ingest_Middleware
+  - community/Community_15
 ---
 
 # Get a summary of permissions for a user.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_user_permissions_summary()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBAC__Ingest_Middleware
+#graphify/rationale #graphify/EXTRACTED #community/Community_15

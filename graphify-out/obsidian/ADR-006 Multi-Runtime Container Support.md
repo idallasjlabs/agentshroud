@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/adr/ADR-006-multi-runtime-support.md"
 type: "document"
-community: "Adr 006 Multi Runtime (adr)"
+community: "Community 208"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Adr_006_Multi_Runtime_adr
+  - community/Community_208
 ---
 
 # ADR-006: Multi-Runtime Container Support
@@ -32,4 +32,4 @@ tags:
 - [[raspberrypi (100.107.248.66, agentshroud-bot user)]] - `conceptually_related_to` [EXTRACTED]
 - [[trillian (100.94.68.61, development node)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Adr_006_Multi_Runtime_adr
+#graphify/document #graphify/EXTRACTED #community/Community_208

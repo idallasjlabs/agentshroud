@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[SecureBrowser.detect_captcha()]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
+- [[ToolChainAnalyzer.score_reversibility (C37)]] - code - gateway/security/tool_chain_analyzer.py
 
 ## Live Query (requires Dataview plugin)
 

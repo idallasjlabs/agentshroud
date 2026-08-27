@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "rationale"
-community: "Slack Proxy"
+community: "Community 593"
 location: "L519"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Slack_Proxy
+  - community/Community_593
 ---
 
 # handle_event is a no-op and does not raise when tracker is None.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_no_tracker_does_not_raise()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Slack_Proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_593

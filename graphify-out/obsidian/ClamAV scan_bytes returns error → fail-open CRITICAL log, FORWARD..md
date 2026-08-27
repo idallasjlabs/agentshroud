@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_clamav_pipeline.py"
 type: "rationale"
-community: "Clamav Pipeline"
+community: "Community 331"
 location: "L164"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Clamav_Pipeline
+  - community/Community_331
 ---
 
 # ClamAV scan_bytes returns error → fail-open: CRITICAL log, FORWARD.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_pipeline_clamav_error_fail_open()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Clamav_Pipeline
+#graphify/rationale #graphify/EXTRACTED #community/Community_331

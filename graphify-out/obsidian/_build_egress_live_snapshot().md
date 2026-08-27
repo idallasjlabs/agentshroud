@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/dashboard.py"
 type: "code"
-community: "Dashboard"
+community: "Community 0"
 location: "L196"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Dashboard
+  - community/Community_0
 ---
 
 # _build_egress_live_snapshot()
@@ -23,4 +23,4 @@ tags:
 - [[test_build_egress_live_snapshot_enriches_pending_metrics()]] - `calls` [EXTRACTED]
 - [[test_dashboard.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Dashboard
+#graphify/code #graphify/EXTRACTED #community/Community_0

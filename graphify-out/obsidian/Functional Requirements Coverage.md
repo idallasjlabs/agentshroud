@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/audit-specification.md"
 type: "document"
-community: "Glossary (project)"
+community: "Community 90"
 location: "L427"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Glossary_project
+  - community/Community_90
 ---
 
 # Functional Requirements Coverage
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[IEC 62443 Industrial Security Framework]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Glossary_project
+#graphify/document #graphify/EXTRACTED #community/Community_90

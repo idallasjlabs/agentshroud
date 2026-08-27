@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "rationale"
-community: "Egress Filter"
+community: "Community 53"
 location: "L92"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Egress_Filter
+  - community/Community_53
 ---
 
 # EgressFilter in monitor mode should allow but log unlisted destinations.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestMonitorMode]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Egress_Filter
+#graphify/rationale #graphify/EXTRACTED #community/Community_53

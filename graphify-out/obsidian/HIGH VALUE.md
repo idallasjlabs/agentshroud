@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION.md"
 type: "document"
-community: "Security Value Proposition (security)"
+community: "Community 194"
 location: "L269"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Value_Proposition_security
+  - community/Community_194
 ---
 
 # HIGH VALUE:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Phase 3 Plan Reality Check]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Value_Proposition_security
+#graphify/document #graphify/EXTRACTED #community/Community_194

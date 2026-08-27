@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/test/test_playback_state/stubs/freertos/FreeRTOS.h"
 type: "code"
-community: "Freertos (freertos)"
+community: "Community 1385"
 location: "L13"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Freertos_freertos
+  - community/Community_1385
 ---
 
 # TickType_t
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[xTaskGetTickCount()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Freertos_freertos
+#graphify/code #graphify/EXTRACTED #community/Community_1385

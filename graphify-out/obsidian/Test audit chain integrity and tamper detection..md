@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "Security Audit & Watchtower Tests"
+community: "Community 14"
 location: "L760"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Audit__Watchtower_Tests
+  - community/Community_14
 ---
 
 # Test audit chain integrity and tamper detection.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAuditTrail_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Community_14

@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[restart.sh]] - code - docker/scripts/restart.sh
-- [[restart.sh script]] - code - docker/scripts/restart.sh
+- [[audio.c (ES7210 mic  ES8311 speaker driver)]] - code - firmware/voice-terminal/main/audio.c
+- [[audio.h (audio public API)]] - code - firmware/voice-terminal/main/audio.h
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-03-05.md"
 type: "document"
-community: "Phase Review 2026 03 (reviews)"
+community: "Community 773"
 location: "L83"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_Review_2026_03_reviews
+  - community/Community_773
 ---
 
 # I2: f-string in logger call
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🟢 INFO (nice to have)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_Review_2026_03_reviews
+#graphify/document #graphify/EXTRACTED #community/Community_773

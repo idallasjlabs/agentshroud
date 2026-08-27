@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/IMESSAGE_FIX.md"
+source_file: "docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md"
 type: "document"
-community: "Secrets Usage And Collaborator (security)"
-location: "L69"
+community: "Community 455"
+location: "L166"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Secrets_Usage_And_Collaborator_security
+  - community/Community_455
 ---
 
 # Verification
 
 ## Connections
-- [[iMessage Integration Fix - Using imsg + imessage-exporter]] - `contains` [EXTRACTED]
+- [[P3 Channel Ownership — Telegram + Email]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Secrets_Usage_And_Collaborator_security
+#graphify/document #graphify/EXTRACTED #community/Community_455

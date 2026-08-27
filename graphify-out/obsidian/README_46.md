@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/README.md"
 type: "document"
-community: "Readme (i-browser)"
+community: "Community 1181"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-browser
+  - community/Community_1181
 ---
 
 # README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Browser — Secure Browser Automation_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-browser
+#graphify/document #graphify/EXTRACTED #community/Community_1181

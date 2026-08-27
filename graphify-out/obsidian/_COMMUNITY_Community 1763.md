@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Project Documentation README]] - document - docs/project/README.md
+- [[MCPPolicyEngine.enforce()]] - code - gateway/security/mcp_policy.py
 
 ## Live Query (requires Dataview plugin)
 

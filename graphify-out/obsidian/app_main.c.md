@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/app_main.c"
 type: "code"
-community: "Ws Client (main)"
+community: "Community 139"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ws_Client_main
+  - community/Community_139
 ---
 
 # app_main.c
@@ -34,4 +34,4 @@ tags:
 - [[wifi_event_handler()]] - `contains` [EXTRACTED]
 - [[wifi_init()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ws_Client_main
+#graphify/code #graphify/EXTRACTED #community/Community_139

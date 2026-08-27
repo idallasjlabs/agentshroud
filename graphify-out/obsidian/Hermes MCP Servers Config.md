@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/mcp/servers.json"
 type: "document"
-community: "Soul (hermes)"
+community: "Community 315"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Soul_hermes
+  - community/Community_315
 ---
 
 # Hermes MCP Servers Config
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[agentshroud-gateway MCP proxy entry (disabled)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Soul_hermes
+#graphify/document #graphify/EXTRACTED #community/Community_315

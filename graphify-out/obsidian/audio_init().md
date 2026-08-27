@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/audio.c"
 type: "code"
-community: "Audio (main)"
+community: "Community 902"
 location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Audio_main
+  - community/Community_902
 ---
 
 # audio_init()
@@ -17,4 +17,4 @@ tags:
 - [[audio_get_saved_volume()]] - `calls` [EXTRACTED]
 - [[esp_err_t_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Audio_main
+#graphify/code #graphify/EXTRACTED #community/Community_902

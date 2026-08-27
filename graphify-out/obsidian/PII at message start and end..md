@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "Security Audit"
+community: "Community 14"
 location: "L183"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Audit
+  - community/Community_14
 ---
 
 # PII at message start and end.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_pii_boundary_handling()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Audit
+#graphify/rationale #graphify/EXTRACTED #community/Community_14

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/VAULT-SHARING-INSTRUCTIONS.md"
 type: "document"
-community: "Vault Sharing Instructions (setup)"
+community: "Community 590"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Vault_Sharing_Instructions_setup
+  - community/Community_590
 ---
 
 # What the bot can currently see:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Current Situation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Vault_Sharing_Instructions_setup
+#graphify/document #graphify/EXTRACTED #community/Community_590

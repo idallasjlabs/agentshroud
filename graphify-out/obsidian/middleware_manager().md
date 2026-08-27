@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "Privilege Separation & File Sandbox"
+community: "Community 6"
 location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Privilege_Separation__File_Sandbox
+  - community/Community_6
 ---
 
 # middleware_manager()
@@ -16,4 +16,4 @@ tags:
 - [[MiddlewareManager]] - `calls` [EXTRACTED]
 - [[test_privilege_separation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Privilege_Separation__File_Sandbox
+#graphify/code #graphify/EXTRACTED #community/Community_6

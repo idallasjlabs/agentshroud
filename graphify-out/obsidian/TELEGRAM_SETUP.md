@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/TELEGRAM_SETUP.md"
 type: "document"
-community: "Llm Provider Setup (setup)"
+community: "Community 371"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Llm_Provider_Setup_setup
+  - community/Community_371
 ---
 
 # TELEGRAM_SETUP.md
@@ -17,4 +17,4 @@ tags:
 - [[SETUP_API_KEYS]] - `conceptually_related_to` [INFERRED]
 - [[Telegram Bot Setup for OpenClaw]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Llm_Provider_Setup_setup
+#graphify/document #graphify/EXTRACTED #community/Community_371

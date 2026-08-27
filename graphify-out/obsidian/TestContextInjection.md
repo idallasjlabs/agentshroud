@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "code"
-community: "Adversarial Injection"
+community: "Community 263"
 location: "L299"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Adversarial_Injection
+  - community/Community_263
 ---
 
 # TestContextInjection
@@ -18,4 +18,4 @@ tags:
 - [[PromptGuard]] - `uses` [INFERRED]
 - [[test_adversarial_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Adversarial_Injection
+#graphify/code #graphify/EXTRACTED #community/Community_263

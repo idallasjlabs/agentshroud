@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/legal/COMMUNICATION-TEMPLATES.md"
 type: "document"
-community: "Team (docs)"
+community: "Community 964"
 location: "L58"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Team_docs
+  - community/Community_964
 ---
 
 # OpenClaw Bot (agentshroud-bot)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[For Agents and Bots]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Team_docs
+#graphify/document #graphify/EXTRACTED #community/Community_964

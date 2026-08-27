@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sync-cve-registry.py"
 type: "rationale"
-community: "Sync Cve Registry (scripts)"
-location: "L824"
+community: "Community 112"
+location: "L809"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Sync_Cve_Registry_scripts
+  - community/Community_112
 ---
 
 # Run the legacy NVD keyword source for OpenClaw + Hermes (unchanged).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_run_nvd_sync()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Sync_Cve_Registry_scripts
+#graphify/rationale #graphify/EXTRACTED #community/Community_112

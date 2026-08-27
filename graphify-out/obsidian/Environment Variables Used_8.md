@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/version_routes.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/ssh_config.py.md"
 type: "document"
-community: "Version Routes.py (Gateway Core)"
-location: "L61"
+community: "Community 753"
+location: "L53"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Version_Routespy_Gateway_Core
+  - community/Community_753
 ---
 
 # Environment Variables Used
 
 ## Connections
-- [[version_routes.py_2]] - `contains` [EXTRACTED]
+- [[ssh_config.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Version_Routespy_Gateway_Core
+#graphify/document #graphify/EXTRACTED #community/Community_753

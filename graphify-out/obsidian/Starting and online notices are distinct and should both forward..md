@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Telegram Proxy Outbound"
+community: "Community 3"
 location: "L2364"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Outbound
+  - community/Community_3
 ---
 
 # Starting and online notices are distinct and should both forward.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_proxy_request_allows_starting_then_online_sequence()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Outbound
+#graphify/rationale #graphify/EXTRACTED #community/Community_3

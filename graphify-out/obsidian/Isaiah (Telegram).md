@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-15-sequence-telegram.svg"
 type: "concept"
-community: "Diagram 15 Sequence Telegram (images)"
+community: "Community 1032"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Diagram_15_Sequence_Telegram_images
+  - community/Community_1032
 ---
 
 # Isaiah (Telegram)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Telegram API_1]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Diagram_15_Sequence_Telegram_images
+#graphify/concept #graphify/EXTRACTED #community/Community_1032

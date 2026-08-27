@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/JavaScript/browser-fetch.js.md"
 type: "document"
-community: "Browser Fetch.js (JavaScript)"
+community: "Community 1107"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser_Fetchjs_JavaScript
+  - community/Community_1107
 ---
 
 # browser-fetch.js.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[browser-fetch.js_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser_Fetchjs_JavaScript
+#graphify/document #graphify/EXTRACTED #community/Community_1107

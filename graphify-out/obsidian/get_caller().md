@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/auth.py"
 type: "code"
-community: "Router (soc)"
+community: "Community 15"
 location: "L205"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Router_soc
+  - community/Community_15
 ---
 
 # get_caller()
@@ -20,4 +20,4 @@ tags:
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 - [[test_soc_router_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Router_soc
+#graphify/code #graphify/EXTRACTED #community/Community_15

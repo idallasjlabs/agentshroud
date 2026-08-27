@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/output_schema.py"
 type: "code"
-community: "Output Schema"
+community: "Community 237"
 location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Output_Schema
+  - community/Community_237
 ---
 
 # OutputSchemaEnforcer
@@ -27,4 +27,4 @@ tags:
 - [[output_schema.py]] - `contains` [EXTRACTED]
 - [[test_output_schema.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Output_Schema
+#graphify/code #graphify/EXTRACTED #community/Community_237

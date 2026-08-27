@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-cr/README.md"
 type: "document"
-community: "Readme (i-mc)"
+community: "Community 489"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-mc
+  - community/Community_489
 ---
 
 # Code Review (CR) README (OpenClaw)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Code Review (CR) SKILL (OpenClaw)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-mc
+#graphify/document #graphify/EXTRACTED #community/Community_489

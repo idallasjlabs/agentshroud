@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/TAILSCALE_SETUP.md"
 type: "document"
-community: "Llm Provider Setup (setup)"
+community: "Community 371"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Llm_Provider_Setup_setup
+  - community/Community_371
 ---
 
 # Tailscale Access to OpenClaw Control UI
@@ -18,6 +18,6 @@ tags:
 - [[Option 3 Bind to Tailscale IP Only (Best Balance)]] - `contains` [EXTRACTED]
 - [[TAILSCALE_SETUP]] - `contains` [EXTRACTED]
 - [[Tailscale ACLs (Recommended)]] - `contains` [EXTRACTED]
-- [[Verification_13]] - `contains` [EXTRACTED]
+- [[Verification_19]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Llm_Provider_Setup_setup
+#graphify/document #graphify/EXTRACTED #community/Community_371

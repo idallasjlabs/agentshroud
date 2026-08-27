@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/privacy_policy.py"
 type: "code"
-community: "Privacy Policy"
+community: "Community 11"
 location: "L178"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Privacy_Policy
+  - community/Community_11
 ---
 
 # PrivacyPolicyEnforcer
@@ -40,4 +40,4 @@ tags:
 - [[privacy_policy.py]] - `contains` [EXTRACTED]
 - [[test_privacy_policy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Privacy_Policy
+#graphify/code #graphify/EXTRACTED #community/Community_11

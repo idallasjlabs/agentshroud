@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_round2_hardening.py"
 type: "code"
-community: "Llm Proxy"
+community: "Community 79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Llm_Proxy
+  - community/Community_79
 ---
 
 # Round 2 Security Hardening Tests
@@ -14,4 +14,4 @@ tags:
 - [[FileSandbox]] - `references` [EXTRACTED]
 - [[LLMProxy]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Llm_Proxy
+#graphify/code #graphify/EXTRACTED #community/Community_79

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "Api (web)"
+community: "Community 528"
 location: "L834"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Api_web
+  - community/Community_528
 ---
 
 # Aggregate security report.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[security_report()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Api_web
+#graphify/rationale #graphify/EXTRACTED #community/Community_528

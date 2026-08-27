@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/ui_face.c"
 type: "code"
-community: "Wakeword (main)"
+community: "Community 249"
 location: "L172"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Wakeword_main
+  - community/Community_249
 ---
 
 # _touch_pressed()
@@ -18,10 +18,12 @@ tags:
 - [[lv_event_t]] - `references` [EXTRACTED]
 - [[ui_face.c]] - `contains` [EXTRACTED]
 - [[ui_face_init()]] - `calls` [EXTRACTED]
+- [[wakeword_ended()]] - `calls` [INFERRED]
 - [[wakeword_ptt_finish()]] - `calls` [INFERRED]
 - [[wakeword_ptt_finish() — tap-to-stop force-end]] - `calls` [EXTRACTED]
 - [[wakeword_ptt_press()]] - `calls` [INFERRED]
 - [[wakeword_ptt_release()]] - `calls` [INFERRED]
+- [[wakeword_triggered()]] - `calls` [INFERRED]
 - [[wakeword_tts_stop_request()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Wakeword_main
+#graphify/code #graphify/INFERRED #community/Community_249

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "Ingest API Main & Models"
+community: "Community 9"
 location: "L232"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Ingest_API_Main__Models
+  - community/Community_9
 ---
 
 # SSHExecRequest
@@ -26,4 +26,4 @@ tags:
 - [[main.py_2]] - `imports` [EXTRACTED]
 - [[models.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Ingest_API_Main__Models
+#graphify/code #graphify/INFERRED #community/Community_9

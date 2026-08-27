@@ -1,12 +1,12 @@
 ---
 source_file: "docs/integrations/voice-terminal-esp32-s3.md"
 type: "document"
-community: "Voice Terminal Esp32 S3 (integrations)"
+community: "Community 399"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Voice_Terminal_Esp32_S3_integrations
+  - community/Community_399
 ---
 
 # Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)
@@ -17,9 +17,9 @@ tags:
 - [[Prerequisites_2]] - `contains` [EXTRACTED]
 - [[Security notes]] - `contains` [EXTRACTED]
 - [[Success pattern — `docker logs agentshroud-voice-gateway`]] - `contains` [EXTRACTED]
-- [[Troubleshooting_17]] - `contains` [EXTRACTED]
+- [[Troubleshooting_18]] - `contains` [EXTRACTED]
 - [[Updating the firmware (OTA — the normal deploy path)]] - `contains` [EXTRACTED]
 - [[Usage_121]] - `contains` [EXTRACTED]
 - [[voice-terminal-esp32-s3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Voice_Terminal_Esp32_S3_integrations
+#graphify/document #graphify/EXTRACTED #community/Community_399

@@ -1,12 +1,12 @@
 ---
 source_file: "dashboard/README.md"
 type: "document"
-community: "Readme (dashboard)"
+community: "Community 257"
 location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_dashboard
+  - community/Community_257
 ---
 
 # Network Inspector
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Features_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_dashboard
+#graphify/document #graphify/EXTRACTED #community/Community_257

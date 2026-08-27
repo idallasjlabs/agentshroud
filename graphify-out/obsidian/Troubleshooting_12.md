@@ -1,20 +1,22 @@
 ---
-source_file: "docker/config/openclaw/skills/i-icloud/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
 type: "document"
-community: "Skill (i-icloud)"
-location: "L142"
+community: "Community 259"
+location: "L281"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-icloud
+  - community/Community_259
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[401 Unauthorized_2]] - `contains` [EXTRACTED]
-- [[CalendarContacts not found_2]] - `contains` [EXTRACTED]
-- [[Connection timeout_2]] - `contains` [EXTRACTED]
-- [[iCloud Services_2]] - `contains` [EXTRACTED]
+- [[Action requires approval but none granted_2]] - `contains` [EXTRACTED]
+- [[Browser timeout_2]] - `contains` [EXTRACTED]
+- [[CAPTCHA detected_2]] - `contains` [EXTRACTED]
+- [[Rate limit exceeded_2]] - `contains` [EXTRACTED]
+- [[URL not in allowlist_2]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-icloud
+#graphify/document #graphify/EXTRACTED #community/Community_259

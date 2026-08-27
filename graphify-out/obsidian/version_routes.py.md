@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/version_routes.py"
 type: "code"
-community: "Agentshroud Manager"
+community: "Community 58"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Agentshroud_Manager
+  - community/Community_58
 ---
 
 # version_routes.py
@@ -32,4 +32,4 @@ tags:
 - [[upgrade()]] - `imports` [EXTRACTED]
 - [[upgrade_version()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Agentshroud_Manager
+#graphify/code #graphify/EXTRACTED #community/Community_58

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md"
 type: "concept"
-community: "Phase 3a 3b Implementation (architecture)"
+community: "Community 226"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Phase_3a_3b_Implementation_architecture
+  - community/Community_226
 ---
 
 # verify-security.sh (13 Security Checks)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[PHASE_3A_3B_IMPLEMENTATION]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Phase_3a_3b_Implementation_architecture
+#graphify/concept #graphify/EXTRACTED #community/Community_226

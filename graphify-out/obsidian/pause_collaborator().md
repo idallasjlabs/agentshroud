@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "Rbac Config (security)"
+community: "Community 134"
 location: "L487"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Rbac_Config_security
+  - community/Community_134
 ---
 
 # pause_collaborator()
@@ -23,4 +23,4 @@ tags:
 - [[router.py_1]] - `imports` [EXTRACTED]
 - [[telegram_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Rbac_Config_security
+#graphify/code #graphify/EXTRACTED #community/Community_134

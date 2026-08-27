@@ -1,19 +1,19 @@
 ---
 source_file: "docs/setup/ICLOUD-SERVICES-SETUP.md"
 type: "document"
-community: "Icloud Services Setup (setup)"
+community: "Community 335"
 location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Icloud_Services_Setup_setup
+  - community/Community_335
 ---
 
 # 📧 iCloud Mail (IMAP/SMTP)
 
 ## Connections
-- [[Server Settings_1]] - `contains` [EXTRACTED]
+- [[Server Settings_2]] - `contains` [EXTRACTED]
 - [[Test IMAP Connection]] - `contains` [EXTRACTED]
 - [[iCloud Services Setup - Complete Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Icloud_Services_Setup_setup
+#graphify/document #graphify/EXTRACTED #community/Community_335

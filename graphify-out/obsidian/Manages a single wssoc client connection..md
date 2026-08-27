@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "rationale"
-community: "Soc Websocket"
+community: "Community 15"
 location: "L27"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Soc_Websocket
+  - community/Community_15
 ---
 
 # Manages a single /ws/soc client connection.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SOCWebSocketHandler]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Soc_Websocket
+#graphify/rationale #graphify/EXTRACTED #community/Community_15

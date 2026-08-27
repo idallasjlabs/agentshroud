@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "Resource Guard & Local Model Parity"
-location: "L478"
+community: "Community 7"
+location: "L510"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Resource_Guard__Local_Model_Parity
+  - community/Community_7
 ---
 
 # test_resource_guard_vram_headroom_check_disabled_when_threshold_zero()
@@ -17,4 +17,4 @@ tags:
 - [[VRAM check is skipped when max_vram_headroom_mb=0 (disabled).]] - `rationale_for` [EXTRACTED]
 - [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Resource_Guard__Local_Model_Parity
+#graphify/code #graphify/EXTRACTED #community/Community_7

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/citation_verifier.py"
 type: "rationale"
-community: "Intel Endpoint"
+community: "Community 113"
 location: "L72"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Intel_Endpoint
+  - community/Community_113
 ---
 
 # Production fetcher: stream the URL and hash the body as proof-of-source.      SE
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[make_httpx_fetcher()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Intel_Endpoint
+#graphify/rationale #graphify/EXTRACTED #community/Community_113

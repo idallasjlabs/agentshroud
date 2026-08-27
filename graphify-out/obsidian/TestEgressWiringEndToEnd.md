@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_module_stats.py"
 type: "code"
-community: "Module Stats"
+community: "Community 256"
 location: "L116"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Stats
+  - community/Community_256
 ---
 
 # TestEgressWiringEndToEnd
@@ -23,4 +23,4 @@ tags:
 - [[ToolACLEnforcer]] - `uses` [INFERRED]
 - [[test_module_stats.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Stats
+#graphify/code #graphify/INFERRED #community/Community_256

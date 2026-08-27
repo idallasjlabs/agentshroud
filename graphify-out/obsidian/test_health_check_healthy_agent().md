@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router.py"
 type: "code"
-community: "Router"
+community: "Community 38"
 location: "L212"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Router
+  - community/Community_38
 ---
 
 # test_health_check_healthy_agent()
@@ -15,4 +15,4 @@ tags:
 - [[Test health check with healthy agent]] - `rationale_for` [EXTRACTED]
 - [[test_router.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Router
+#graphify/code #graphify/EXTRACTED #community/Community_38

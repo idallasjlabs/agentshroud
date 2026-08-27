@@ -1,12 +1,12 @@
 ---
 source_file: "AGENTS.md"
 type: "document"
-community: "Agents"
+community: "Community 350"
 location: "L29"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Agents
+  - community/Community_350
 ---
 
 # 1) REPOSITORY OVERVIEW
@@ -16,4 +16,4 @@ tags:
 - [[Primary Focus_1]] - `contains` [EXTRACTED]
 - [[Supporting Integrations]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Agents
+#graphify/document #graphify/EXTRACTED #community/Community_350

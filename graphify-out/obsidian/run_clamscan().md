@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/clamav_scanner.py"
 type: "code"
-community: "OAuth & Metadata Guard"
+community: "Community 397"
 location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OAuth__Metadata_Guard
+  - community/Community_397
 ---
 
 # run_clamscan()
@@ -23,4 +23,4 @@ tags:
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OAuth__Metadata_Guard
+#graphify/code #graphify/EXTRACTED #community/Community_397

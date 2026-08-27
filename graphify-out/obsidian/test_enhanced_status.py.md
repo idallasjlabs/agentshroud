@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_status.py"
 type: "code"
-community: "Auth"
+community: "Community 344"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Auth
+  - community/Community_344
 ---
 
 # test_enhanced_status.py
@@ -15,4 +15,4 @@ tags:
 - [[StatusResponse]] - `imports` [EXTRACTED]
 - [[TestEnhancedStatus]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Auth
+#graphify/code #graphify/EXTRACTED #community/Community_344

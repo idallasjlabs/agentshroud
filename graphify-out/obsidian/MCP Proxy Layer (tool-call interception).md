@@ -1,11 +1,11 @@
 ---
 source_file: "docs/papers/agentshroud-whitepaper.md"
 type: "concept"
-community: "Enforcement Audit V0.7.0 (reviews)"
+community: "Community 199"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Enforcement_Audit_V070_reviews
+  - community/Community_199
 ---
 
 # MCP Proxy Layer (tool-call interception)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud White Paper v1.1 (Feb 2026)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Enforcement_Audit_V070_reviews
+#graphify/concept #graphify/EXTRACTED #community/Community_199

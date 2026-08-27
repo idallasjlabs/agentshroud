@@ -1,19 +1,17 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "Docker Deploy Scripts"
-location: "L703"
+community: "Community 646"
+location: "L561"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Community_646
 ---
 
 # Added
 
 ## Connections
-- [[P1 HTTP CONNECT Proxy (PR 24)]] - `contains` [EXTRACTED]
-- [[P2 Credential Isolation (PR 25)]] - `contains` [EXTRACTED]
-- [[Unreleased — feathttp-connect-proxy + featcredential-isolation]] - `contains` [EXTRACTED]
+- [[1.1.0 — feat-v1.4.0-shroud-another-bot — Hermes (2026-05-29)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/document #graphify/EXTRACTED #community/Community_646

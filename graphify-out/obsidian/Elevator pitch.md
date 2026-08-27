@@ -1,12 +1,12 @@
 ---
 source_file: "BRAND.md"
 type: "document"
-community: "Readme (branding)"
+community: "Community 168"
 location: "L64"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_branding
+  - community/Community_168
 ---
 
 # Elevator pitch
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Key Messaging]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_branding
+#graphify/document #graphify/EXTRACTED #community/Community_168

@@ -1,19 +1,17 @@
 ---
-source_file: "docs/setup/TELEGRAM_GMAIL_SETUP.md"
+source_file: "CHANGELOG.md"
 type: "document"
-community: "Telegram Gmail Setup (setup)"
-location: "L339"
+community: "Community 1123"
+location: "L959"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Telegram_Gmail_Setup_setup
+  - community/Community_1123
 ---
 
 # Summary
 
 ## Connections
-- [[Quick Start Commands]] - `contains` [EXTRACTED]
-- [[Telegram & Gmail Integration Guide]] - `contains` [EXTRACTED]
-- [[✅ Current Status]] - `contains` [EXTRACTED]
+- [[0.5.0 - 2026-02-21]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Telegram_Gmail_Setup_setup
+#graphify/document #graphify/EXTRACTED #community/Community_1123

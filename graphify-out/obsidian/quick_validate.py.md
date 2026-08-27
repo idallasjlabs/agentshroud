@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/skill-creator/scripts/quick_validate.py"
 type: "code"
-community: "Package Skill (scripts)"
+community: "Community 400"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Package_Skill_scripts
+  - community/Community_400
 ---
 
 # quick_validate.py
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[validate_skill()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Package_Skill_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_400

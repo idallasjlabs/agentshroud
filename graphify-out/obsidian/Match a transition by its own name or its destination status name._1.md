@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/workspace/jira_dev_ticket.py"
 type: "rationale"
-community: "Jira Dev Ticket (workspace)"
+community: "Community 161"
 location: "L183"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Jira_Dev_Ticket_workspace
+  - community/Community_161
 ---
 
 # Match a transition by its own name or its destination status name.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[find_transition_id()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Jira_Dev_Ticket_workspace
+#graphify/rationale #graphify/EXTRACTED #community/Community_161

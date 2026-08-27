@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/06 - Containers & Services/agentshroud-gateway.md"
+source_file: "docs/architecture/WORKSPACE_USAGE.md"
 type: "document"
-community: "Agentshroud Gateway (06 - Containers & Services)"
-location: "L11"
+community: "Community 159"
+location: "L366"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Agentshroud_Gateway_06_-_Containers__Services
+  - community/Community_159
 ---
 
 # Summary
 
 ## Connections
-- [[agentshroud-gateway_1]] - `contains` [EXTRACTED]
+- [[OpenClaw Workspace Usage Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Agentshroud_Gateway_06_-_Containers__Services
+#graphify/document #graphify/EXTRACTED #community/Community_159

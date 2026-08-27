@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/path_isolation.py"
 type: "rationale"
-community: "RBAC & Ingest Middleware"
+community: "Community 6"
 location: "L287"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBAC__Ingest_Middleware
+  - community/Community_6
 ---
 
 # Get statistics about path isolation manager.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_stats()_18]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBAC__Ingest_Middleware
+#graphify/rationale #graphify/EXTRACTED #community/Community_6

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/live-assessment-results.md"
 type: "document"
-community: "Live Assessment Results (redteam)"
+community: "Community 724"
 location: "L59"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Live_Assessment_Results_redteam
+  - community/Community_724
 ---
 
 # Container Security Profile: 12/12 (100%)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[v0.6.0 Baseline Results]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Live_Assessment_Results_redteam
+#graphify/document #graphify/EXTRACTED #community/Community_724

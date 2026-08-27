@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/audit-specification.md"
 type: "document"
-community: "Glossary (project)"
+community: "Community 90"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Glossary_project
+  - community/Community_90
 ---
 
 # audit-specification.md
@@ -19,4 +19,4 @@ tags:
 - [[PII (Personally Identifiable Information)]] - `references` [EXTRACTED]
 - [[cve-mitigation-matrix]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Glossary_project
+#graphify/document #graphify/EXTRACTED #community/Community_90

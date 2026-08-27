@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-16-state-approval-queue.svg"
 type: "concept"
-community: "Diagram 16 State Approval (images)"
+community: "Community 1313"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Diagram_16_State_Approval_images
+  - community/Community_1313
 ---
 
 # pending (bot submits action requiring approval)
@@ -15,4 +15,4 @@ tags:
 - [[expired (1-hour TTL exceeded, auto-transition on load)]] - `calls` [EXTRACTED]
 - [[rejected (action blocked, bot notified)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Diagram_16_State_Approval_images
+#graphify/concept #graphify/EXTRACTED #community/Community_1313

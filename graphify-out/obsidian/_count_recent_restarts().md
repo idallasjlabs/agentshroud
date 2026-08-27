@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/crashwatch.sh"
 type: "code"
-community: "Start (hermes)"
+community: "Community 326"
 location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Start_hermes
+  - community/Community_326
 ---
 
 # _count_recent_restarts()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[crashwatch.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Start_hermes
+#graphify/code #graphify/EXTRACTED #community/Community_326

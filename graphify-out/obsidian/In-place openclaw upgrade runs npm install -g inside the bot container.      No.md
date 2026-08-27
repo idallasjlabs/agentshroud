@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "rationale"
-community: "SOC Router (Collaborator Mgmt)"
+community: "Community 19"
 location: "L2541"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_Router_Collaborator_Mgmt
+  - community/Community_19
 ---
 
 # In-place openclaw upgrade: runs npm install -g inside the bot container.      No
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[upgrade_bot()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_Router_Collaborator_Mgmt
+#graphify/rationale #graphify/EXTRACTED #community/Community_19

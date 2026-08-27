@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/i-mac/SKILL.md"
 type: "document"
-community: "Skill (i-mac)"
+community: "Community 430"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-mac
+  - community/Community_430
 ---
 
 # SKILL.md
 
 ## Connections
-- [[Mac App Discovery Skill]] - `contains` [EXTRACTED]
+- [[Mac App Discovery Skill_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-mac
+#graphify/document #graphify/EXTRACTED #community/Community_430

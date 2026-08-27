@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/audio.c"
 type: "code"
-community: "Audio (main)"
+community: "Community 902"
 location: "L178"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Audio_main
+  - community/Community_902
 ---
 
 # audio_volume_tick()
@@ -15,4 +15,4 @@ tags:
 - [[audio.c]] - `contains` [EXTRACTED]
 - [[tts_task()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Audio_main
+#graphify/code #graphify/INFERRED #community/Community_902

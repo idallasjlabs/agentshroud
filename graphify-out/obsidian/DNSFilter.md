@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/dns_filter.py"
 type: "code"
-community: "Dns Filter"
+community: "Community 46"
 location: "L75"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Dns_Filter
+  - community/Community_46
 ---
 
 # DNSFilter
@@ -51,4 +51,4 @@ tags:
 - [[test_dns_filter.py]] - `imports` [EXTRACTED]
 - [[web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Dns_Filter
+#graphify/code #graphify/EXTRACTED #community/Community_46

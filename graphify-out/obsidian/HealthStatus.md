@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "SOC Services"
+community: "Community 27"
 location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Services
+  - community/Community_27
 ---
 
 # HealthStatus
@@ -25,4 +25,4 @@ tags:
 - [[test_soc_services.py]] - `imports` [EXTRACTED]
 - [[test_soc_services_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Services
+#graphify/code #graphify/EXTRACTED #community/Community_27

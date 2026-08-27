@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "rationale"
-community: "Daily Cve Report"
+community: "Community 184"
 location: "L22"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Daily_Cve_Report
+  - community/Community_184
 ---
 
 # Build a minimal parsed Trivy report.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_make_report()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Daily_Cve_Report
+#graphify/rationale #graphify/EXTRACTED #community/Community_184

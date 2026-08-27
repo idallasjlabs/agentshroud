@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/peekaboo/SKILL.md"
 type: "document"
-community: "Skill (peekaboo)"
+community: "Community 575"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_peekaboo
+  - community/Community_575
 ---
 
 # Peekaboo
@@ -20,4 +20,4 @@ tags:
 - [[Quickstart (happy path)]] - `contains` [EXTRACTED]
 - [[SKILL_225]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_peekaboo
+#graphify/document #graphify/EXTRACTED #community/Community_575

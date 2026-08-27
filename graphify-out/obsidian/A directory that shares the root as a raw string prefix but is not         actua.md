@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_write_file_endpoint.py"
 type: "rationale"
-community: "Ssh Write File Endpoint"
+community: "Community 12"
 location: "L413"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Ssh_Write_File_Endpoint
+  - community/Community_12
 ---
 
 # A directory that shares the root as a raw string prefix but is not         actua
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_prefix_collision_sibling_dir_rejected()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Ssh_Write_File_Endpoint
+#graphify/rationale #graphify/EXTRACTED #community/Community_12

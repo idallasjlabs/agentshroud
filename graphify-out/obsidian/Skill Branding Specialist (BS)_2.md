@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-bs/SKILL.md"
 type: "document"
-community: "Skill (i-bs)"
+community: "Community 467"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-bs
+  - community/Community_467
 ---
 
 # Skill: Branding Specialist (BS)
@@ -17,7 +17,7 @@ tags:
 - [[Core Discipline Audit → Define → Apply → Enforce_2]] - `contains` [EXTRACTED]
 - [[Patterns by Output Type_2]] - `contains` [EXTRACTED]
 - [[Role_80]] - `contains` [EXTRACTED]
-- [[Rules_18]] - `contains` [EXTRACTED]
+- [[Rules_19]] - `contains` [EXTRACTED]
 - [[SKILL_137]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-bs
+#graphify/document #graphify/EXTRACTED #community/Community_467

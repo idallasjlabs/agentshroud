@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/smoke.d/test-skills-sync.sh"
 type: "code"
-community: "Sync Llm Settings (scripts)"
+community: "Community 685"
 location: "L74"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Sync_Llm_Settings_scripts
+  - community/Community_685
 ---
 
 # PYTHONPATH
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test-skills-sync.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Sync_Llm_Settings_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_685

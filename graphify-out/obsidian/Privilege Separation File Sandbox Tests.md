@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "Privilege Separation & File Sandbox"
+community: "Community 14"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Privilege_Separation__File_Sandbox
+  - community/Community_14
 ---
 
 # Privilege Separation File Sandbox Tests
@@ -14,4 +14,4 @@ tags:
 - [[FileSandbox]] - `references` [EXTRACTED]
 - [[Path Isolation Manager Tests]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Privilege_Separation__File_Sandbox
+#graphify/code #graphify/EXTRACTED #community/Community_14

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_workspace_manager.py"
 type: "code"
-community: "Group Workspace Manager"
+community: "Community 61"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Group_Workspace_Manager
+  - community/Community_61
 ---
 
 # test_group_workspace_manager.py
@@ -35,4 +35,4 @@ tags:
 - [[shared_memory.py (SharedMemoryManager)]] - `references` [EXTRACTED]
 - [[teams()_4]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Group_Workspace_Manager
+#graphify/code #graphify/EXTRACTED #community/Community_61

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "Browse (scripts)"
+community: "Community 138"
 location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Browse_scripts
+  - community/Community_138
 ---
 
 # SecureBrowser
@@ -29,8 +29,8 @@ tags:
 - [[.fill_field()_2]] - `method` [EXTRACTED]
 - [[.get_audit_log()_2]] - `method` [EXTRACTED]
 - [[.navigate()_2]] - `method` [EXTRACTED]
-- [[Secure browser automation with enterprise controls      Security guarantees_1]] - `rationale_for` [EXTRACTED]
+- [[Secure browser automation with enterprise controls      Security guarantees_2]] - `rationale_for` [EXTRACTED]
 - [[browse.py_2]] - `contains` [EXTRACTED]
-- [[main()_7]] - `calls` [EXTRACTED]
+- [[main()_8]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Browse_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_138

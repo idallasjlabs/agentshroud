@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-15-sequence-telegram.png"
 type: "image"
-community: "Diagram 09 Data Lineage (images)"
+community: "Community 353"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Diagram_09_Data_Lineage_images
+  - community/Community_353
 ---
 
 # Peer binding: Telegram 8096968754 → agent:main
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Telegram Message Sequence Diagram]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Diagram_09_Data_Lineage_images
+#graphify/image #graphify/EXTRACTED #community/Community_353

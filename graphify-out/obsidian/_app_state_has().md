@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "Scanner Integration (security)"
+community: "Community 59"
 location: "L336"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Scanner_Integration_security
+  - community/Community_59
 ---
 
 # _app_state_has()
@@ -36,4 +36,4 @@ tags:
 - [[_score_tool_use_safety()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Scanner_Integration_security
+#graphify/code #graphify/EXTRACTED #community/Community_59

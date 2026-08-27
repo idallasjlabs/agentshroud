@@ -1,12 +1,12 @@
 ---
 source_file: "docs/governance/TEST_STRATEGY.md"
 type: "document"
-community: "Strategy (governance)"
+community: "Community 307"
 location: "L24"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Strategy_governance
+  - community/Community_307
 ---
 
 # Coverage Thresholds
@@ -15,4 +15,4 @@ tags:
 - [[Test Strategy]] - `contains` [EXTRACTED]
 - [[Test Strategy (docsgovernanceTEST_STRATEGY.md)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Strategy_governance
+#graphify/document #graphify/EXTRACTED #community/Community_307

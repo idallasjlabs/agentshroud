@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "Security Audit & Watchtower Tests"
+community: "Community 374"
 location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Audit__Watchtower_Tests
+  - community/Community_374
 ---
 
 # EventBus
@@ -29,6 +29,7 @@ tags:
 - [[bus()]] - `calls` [EXTRACTED]
 - [[event_bus.py]] - `contains` [EXTRACTED]
 - [[event_bus.py_1]] - `references` [EXTRACTED]
+- [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[state.py]] - `imports` [EXTRACTED]
 - [[test_alert_telegram_relay.py]] - `imports` [EXTRACTED]
@@ -37,4 +38,4 @@ tags:
 - [[test_event_bus.py]] - `imports` [EXTRACTED]
 - [[test_subscribed_relay_receives_bus_emissions()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests
+#graphify/code #graphify/EXTRACTED #community/Community_374

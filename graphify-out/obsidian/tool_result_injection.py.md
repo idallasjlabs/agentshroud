@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_injection.py"
 type: "code"
-community: "Tool Chain & CVE Triage"
+community: "Community 659"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tool_Chain__CVE_Triage
+  - community/Community_659
 ---
 
 # tool_result_injection.py
@@ -23,4 +23,4 @@ tags:
 - [[normalize_input()]] - `imports` [EXTRACTED]
 - [[strip_markdown_exfil()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Tool_Chain__CVE_Triage
+#graphify/code #graphify/EXTRACTED #community/Community_659

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-ps/README.md"
 type: "document"
-community: "Skill (i-sec-defense)"
+community: "Community 415"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Skill_i-sec-defense
+  - community/Community_415
 ---
 
 # i-ps README (Production Safety Checklist)
@@ -14,4 +14,4 @@ tags:
 - [[GSDE&G Skills Reference Guide]] - `references` [EXTRACTED]
 - [[i-ps SKILL (Production Safety Checklist  PROD-SAFETY)]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Skill_i-sec-defense
+#graphify/document #graphify/INFERRED #community/Community_415

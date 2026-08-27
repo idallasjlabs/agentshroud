@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_bots_ssh_exec_wrapper.py"
 type: "rationale"
-community: "Bots Ssh Exec Wrapper"
+community: "Community 140"
 location: "L194"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Bots_Ssh_Exec_Wrapper
+  - community/Community_140
 ---
 
 # Run the wrapper's shell payload builder and return the emitted JSON text.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_build_payload_via_shell()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Bots_Ssh_Exec_Wrapper
+#graphify/rationale #graphify/EXTRACTED #community/Community_140

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
 type: "document"
-community: "Auth.py (Gateway Core)"
+community: "Community 355"
 location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Authpy_Gateway_Core
+  - community/Community_355
 ---
 
 # Key Classes / Functions
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[auth.py_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Authpy_Gateway_Core
+#graphify/document #graphify/EXTRACTED #community/Community_355

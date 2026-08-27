@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/agents/hermes-soul.md"
 type: "document"
-community: "Hermes Soul (agents)"
+community: "Community 958"
 location: "L34"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes_Soul_agents
+  - community/Community_958
 ---
 
 # Remote Hosts (SSH via gateway)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Hermes — System Identity_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes_Soul_agents
+#graphify/document #graphify/EXTRACTED #community/Community_958

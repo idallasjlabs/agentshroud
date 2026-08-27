@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-18-runbook.png"
 type: "image"
-community: "Diagram 11 Trust Boundary (images)"
+community: "Community 320"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Diagram_11_Trust_Boundary_images
+  - community/Community_320
 ---
 
 # Runbook branch: Security alert → review blocked_domain/HIGH threat entries → legitimate action? allowlist vs kill switch
@@ -15,4 +15,4 @@ tags:
 - [[MCP Inspector (injection scan, PII scan, sensitive-op scan; ThreatLevel NONELOWMEDIUMHIGH)]] - `references` [EXTRACTED]
 - [[Troubleshooting Runbook Decision Tree]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Diagram_11_Trust_Boundary_images
+#graphify/image #graphify/EXTRACTED #community/Community_320

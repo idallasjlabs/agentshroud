@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "OAuth & Metadata Guard"
+community: "Community 14"
 location: "L613"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/OAuth__Metadata_Guard
+  - community/Community_14
 ---
 
 # High-entropy domains (potential tunneling).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_dns_entropy_calculator()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/OAuth__Metadata_Guard
+#graphify/rationale #graphify/EXTRACTED #community/Community_14

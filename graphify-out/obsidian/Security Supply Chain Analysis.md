@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-supply-chain.md"
 type: "document"
-community: "Security Supply Chain (security)"
+community: "Community 542"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Supply_Chain_security
+  - community/Community_542
 ---
 
 # Security Supply Chain Analysis
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[Detailed Profiles]] - `contains` [EXTRACTED]
 - [[Overview_14]] - `contains` [EXTRACTED]
-- [[Recommendations]] - `contains` [EXTRACTED]
+- [[Recommendations_1]] - `contains` [EXTRACTED]
 - [[Verdict Summary]] - `contains` [EXTRACTED]
 - [[security-supply-chain]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Supply_Chain_security
+#graphify/document #graphify/EXTRACTED #community/Community_542

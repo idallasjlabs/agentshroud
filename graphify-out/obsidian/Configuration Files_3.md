@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/00 - START HERE/Quick Reference.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "Quick reference (00 - START HERE)"
-location: "L149"
+community: "Community 189"
+location: "L351"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Quick_reference_00_-_START_HERE
+  - community/Community_189
 ---
 
 # Configuration Files
 
 ## Connections
-- [[Quick Reference — AgentShroud]] - `contains` [EXTRACTED]
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Quick_reference_00_-_START_HERE
+#graphify/document #graphify/EXTRACTED #community/Community_189

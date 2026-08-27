@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-aws/README.md"
 type: "document"
-community: "Skill (i-aws)"
+community: "Community 851"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Skill_i-aws
+  - community/Community_851
 ---
 
 # AWS Cloud Management & FinOps (README)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AWS Cloud Management & FinOps Agent (SKILL)]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Skill_i-aws
+#graphify/document #graphify/INFERRED #community/Community_851

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "Cli Coverage"
+community: "Community 319"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Cli_Coverage
+  - community/Community_319
 ---
 
 # test_cli_coverage.py
@@ -39,4 +39,4 @@ tags:
 - [[test_convenience_methods_hit_expected_endpoints()]] - `contains` [EXTRACTED]
 - [[test_main_entrypoint_runs_cli_group()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Cli_Coverage
+#graphify/code #graphify/EXTRACTED #community/Community_319

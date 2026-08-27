@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/cli/main.py"
 type: "code"
-community: "Cli Coverage"
+community: "Community 319"
 location: "L367"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Cli_Coverage
+  - community/Community_319
 ---
 
 # _tail_ws()
@@ -20,4 +20,4 @@ tags:
 - [[tail()]] - `calls` [EXTRACTED]
 - [[test_cli_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Cli_Coverage
+#graphify/code #graphify/EXTRACTED #community/Community_319

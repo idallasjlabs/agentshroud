@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-09-data-lineage.svg"
 type: "concept"
-community: "Diagram 09 Data Lineage (images)"
+community: "Community 758"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Diagram_09_Data_Lineage_images
+  - community/Community_758
 ---
 
 # content_hash = SHA-256(sanitized)
@@ -15,4 +15,4 @@ tags:
 - [[PII Redaction (PHONE_NUMBER, EMAIL_ADDRESS, SSN)]] - `calls` [EXTRACTED]
 - [[ledger row (id, timestamp, source, hashes, sanitized flag, expires_at)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Diagram_09_Data_Lineage_images
+#graphify/concept #graphify/EXTRACTED #community/Community_758

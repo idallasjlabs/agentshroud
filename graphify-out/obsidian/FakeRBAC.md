@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_lockdown.py"
 type: "code"
-community: "Progressive Lockdown"
+community: "Community 62"
 location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Progressive_Lockdown
+  - community/Community_62
 ---
 
 # FakeRBAC
@@ -20,4 +20,4 @@ tags:
 - [[_make_proxy()_1]] - `calls` [EXTRACTED]
 - [[test_progressive_lockdown.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Progressive_Lockdown
+#graphify/code #graphify/EXTRACTED #community/Community_62

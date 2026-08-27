@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Tier 3 Nice-to-Have (2 features, score 2.5)]] - concept - docs/redteam/feature-priorities.md
+- [[RateLimitGuard.check()]] - code - gateway/security/rate_limit_guard.py
 
 ## Live Query (requires Dataview plugin)
 

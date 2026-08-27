@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/backup-bot-memory.sh"
 type: "code"
-community: "Iec 62443 Matrix (compliance)"
+community: "Community 723"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Iec_62443_Matrix_compliance
+  - community/Community_723
 ---
 
 # backup-bot-memory.sh
@@ -17,4 +17,4 @@ tags:
 - [[backup-bot-memory.sh script]] - `contains` [EXTRACTED]
 - [[disaster-recovery-backup.sh]] - `shares_data_with` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Iec_62443_Matrix_compliance
+#graphify/code #graphify/EXTRACTED #community/Community_723

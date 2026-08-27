@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/tailscale-serve.sh"
 type: "code"
-community: "Tailscale Serve (scripts)"
-location: "L60"
+community: "Community 1117"
+location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tailscale_Serve_scripts
+  - community/Community_1117
 ---
 
 # cmd_start()
@@ -16,4 +16,4 @@ tags:
 - [[tailscale-serve.sh]] - `defines` [EXTRACTED]
 - [[tailscale-serve.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Tailscale_Serve_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_1117

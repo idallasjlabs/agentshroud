@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Web Api Coverage"
+community: "Community 113"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Web_Api_Coverage
+  - community/Community_113
 ---
 
 # web/api.py (POST /api/intel/reports)
@@ -17,4 +17,4 @@ tags:
 - [[test_skills_manifest_sync.py]] - `references` [EXTRACTED]
 - [[test_web_api_coverage.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Web_Api_Coverage
+#graphify/code #graphify/EXTRACTED #community/Community_113

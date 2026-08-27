@@ -1,12 +1,12 @@
 ---
 source_file: "docker/README.md"
 type: "document"
-community: "Readme (docker)"
+community: "Community 190"
 location: "L92"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_docker
+  - community/Community_190
 ---
 
 # Core Configuration
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Files]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_docker
+#graphify/document #graphify/EXTRACTED #community/Community_190

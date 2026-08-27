@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_form_outbound_pipeline_sanitized_text_applied()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Pipeline-sanitized text must replace the original in form payloads.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_nonce_first_use_passes()]] - code - gateway/tests/test_session_security.py
+- [[A freshly generated nonce validates on first use.]] - rationale - gateway/tests/test_session_security.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,9 +19,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_ESP32 Firmware]]
-- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_docsvault]]
+- 1 edge to [[_COMMUNITY_Community 712]]
 
 ## Top bridge nodes
-- [[.test_form_outbound_pipeline_sanitized_text_applied()]] - degree 4, connects to 3 communities
+- [[.test_nonce_first_use_passes()]] - degree 2, connects to 1 community

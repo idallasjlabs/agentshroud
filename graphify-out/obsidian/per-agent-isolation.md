@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/per-agent-isolation.md"
 type: "document"
-community: "Per Agent Isolation (architecture)"
+community: "Community 702"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Per_Agent_Isolation_architecture
+  - community/Community_702
 ---
 
 # per-agent-isolation.md
@@ -16,4 +16,4 @@ tags:
 - [[Per-Agent Container Isolation Architecture]] - `contains` [EXTRACTED]
 - [[Shared-Nothing Isolation Design Principle]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Per_Agent_Isolation_architecture
+#graphify/document #graphify/EXTRACTED #community/Community_702

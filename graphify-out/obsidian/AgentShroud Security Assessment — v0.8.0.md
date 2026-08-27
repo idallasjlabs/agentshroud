@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/security-assessment-v0.8.0.md"
 type: "document"
-community: "Security Assessment V0.8.0 (v0.8)"
+community: "Community 597"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Assessment_V080_v08
+  - community/Community_597
 ---
 
 # AgentShroud Security Assessment — v0.8.0
@@ -22,4 +22,4 @@ tags:
 - [[What's Working Well_1]] - `contains` [EXTRACTED]
 - [[security-assessment-v0.8.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Assessment_V080_v08
+#graphify/document #graphify/EXTRACTED #community/Community_597

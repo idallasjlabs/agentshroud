@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_v1_models_synthetic.py"
 type: "code"
-community: "V1 Models Synthetic"
+community: "Community 1065"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/V1_Models_Synthetic
+  - community/Community_1065
 ---
 
 # test_v1_models_synthetic.py
@@ -17,4 +17,4 @@ tags:
 - [[test_v1_models_get_returns_synthetic_200()]] - `contains` [EXTRACTED]
 - [[test_v1_models_post_still_goes_through_proxy()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/V1_Models_Synthetic
+#graphify/code #graphify/EXTRACTED #community/Community_1065

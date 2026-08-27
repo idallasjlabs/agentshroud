@@ -1,12 +1,12 @@
 ---
 source_file: "docs/diagrams/03-data.md"
 type: "document"
-community: "03 Data (diagrams)"
+community: "Community 559"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/03_Data_diagrams
+  - community/Community_559
 ---
 
 # 03-data.md
@@ -19,4 +19,4 @@ tags:
 - [[Entity Relationship Diagram (ledger, approval_items)]] - `conceptually_related_to` [EXTRACTED]
 - [[README_120]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/03_Data_diagrams
+#graphify/document #graphify/EXTRACTED #community/Community_559

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/PHASE3_REQUIREMENTS.md"
 type: "document"
-community: "Phase3 Requirements (architecture)"
+community: "Community 352"
 location: "L302"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase3_Requirements_architecture
+  - community/Community_352
 ---
 
 # Step 5: Documentation (Day 3)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Part 4 Implementation Checklist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase3_Requirements_architecture
+#graphify/document #graphify/EXTRACTED #community/Community_352

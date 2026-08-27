@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_policy.py"
 type: "code"
-community: "A2a Policy"
+community: "Community 82"
 location: "L322"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2a_Policy
+  - community/Community_82
 ---
 
 # _StubApprovalQueue
@@ -26,4 +26,4 @@ tags:
 - [[test_enforce_high_risk_method_rejected_resolves_to_deny()]] - `calls` [EXTRACTED]
 - [[test_enforce_task_ownership_violation_never_reaches_approval_queue()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2a_Policy
+#graphify/code #graphify/EXTRACTED #community/Community_82

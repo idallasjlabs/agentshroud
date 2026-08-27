@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "Tool Chain & CVE Triage"
+community: "Community 6"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tool_Chain__CVE_Triage
+  - community/Community_6
 ---
 
 # web_proxy.py
@@ -40,4 +40,4 @@ tags:
 - [[web_config.py]] - `imports_from` [EXTRACTED]
 - [[web_content_scanner.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Tool_Chain__CVE_Triage
+#graphify/code #graphify/EXTRACTED #community/Community_6

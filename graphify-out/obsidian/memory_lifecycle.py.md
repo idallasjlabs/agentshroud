@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "Memory Lifecycle & Integrity"
+community: "Community 584"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Memory_Lifecycle__Integrity
+  - community/Community_584
 ---
 
 # memory_lifecycle.py
@@ -20,4 +20,4 @@ tags:
 - [[RetentionAction]] - `contains` [EXTRACTED]
 - [[enforcement-audit-script.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Memory_Lifecycle__Integrity
+#graphify/code #graphify/EXTRACTED #community/Community_584

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/progressive_lockdown.py"
 type: "code"
-community: "Progressive Lockdown"
+community: "Community 62"
 location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Progressive_Lockdown
+  - community/Community_62
 ---
 
 # ProgressiveLockdown
@@ -61,4 +61,4 @@ tags:
 - [[test_progressive_lockdown.py]] - `imports` [EXTRACTED]
 - [[test_soc_contributors.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Progressive_Lockdown
+#graphify/code #graphify/EXTRACTED #community/Community_62

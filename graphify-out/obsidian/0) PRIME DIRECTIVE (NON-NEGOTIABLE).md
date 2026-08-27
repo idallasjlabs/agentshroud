@@ -1,12 +1,12 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "Claude"
+community: "Community 241"
 location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Claude
+  - community/Community_241
 ---
 
 # 0) PRIME DIRECTIVE (NON-NEGOTIABLE)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Applies to Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Claude
+#graphify/document #graphify/EXTRACTED #community/Community_241

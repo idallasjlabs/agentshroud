@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_stress.py"
 type: "code"
-community: "Queue (approval_queue)"
+community: "Community 24"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Queue_approval_queue
+  - community/Community_24
 ---
 
 # test_approval_stress.py
@@ -24,4 +24,4 @@ tags:
 - [[queue()]] - `contains` [EXTRACTED]
 - [[store()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Queue_approval_queue
+#graphify/code #graphify/EXTRACTED #community/Community_24

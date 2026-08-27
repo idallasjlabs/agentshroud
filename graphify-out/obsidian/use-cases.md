@@ -1,18 +1,18 @@
 ---
 source_file: "docs/requirements/use-cases.md"
 type: "document"
-community: "Glossary (project)"
+community: "Community 90"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Glossary_project
+  - community/Community_90
 ---
 
 # use-cases.md
 
 ## Connections
-- [[Approval Queue_1]] - `references` [EXTRACTED]
+- [[Approval Queue_2]] - `references` [EXTRACTED]
 - [[Audit Trail_1]] - `references` [EXTRACTED]
 - [[Kill Switch_2]] - `references` [EXTRACTED]
 - [[MCP (Model Context Protocol)]] - `references` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[access-control-matrix]] - `conceptually_related_to` [INFERRED]
 - [[system-requirements]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Glossary_project
+#graphify/document #graphify/EXTRACTED #community/Community_90

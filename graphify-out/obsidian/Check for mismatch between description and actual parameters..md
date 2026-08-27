@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/approval_hardening.py"
 type: "rationale"
-community: "Approval Hardening (security)"
+community: "Community 213"
 location: "L206"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval_Hardening_security
+  - community/Community_213
 ---
 
 # Check for mismatch between description and actual parameters.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._check_description_parameter_mismatch()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval_Hardening_security
+#graphify/rationale #graphify/EXTRACTED #community/Community_213

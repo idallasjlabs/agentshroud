@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-aws/README.md"
 type: "document"
-community: "Readme (i-aws)"
+community: "Community 1180"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-aws
+  - community/Community_1180
 ---
 
 # AWS Cloud Management & FinOps
@@ -17,4 +17,4 @@ tags:
 - [[Related Skills_43]] - `contains` [EXTRACTED]
 - [[Usage_45]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-aws
+#graphify/document #graphify/EXTRACTED #community/Community_1180

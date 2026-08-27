@@ -1,18 +1,19 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "Postmortem (ISSUE_TEMPLATE)"
+community: "Community 435"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Postmortem_ISSUE_TEMPLATE
+  - community/Community_435
 ---
 
 # CLAUDE.md
 
 ## Connections
 - [[Applies to Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary)]] - `contains` [EXTRACTED]
+- [[CLAUDE_1]] - `contains` [EXTRACTED]
 - [[Guidance for Claude Code (claude.aicode) when working in this repository.]] - `contains` [EXTRACTED]
 - [[Keep actions deterministic, minimal, and aligned with how this repo is actually run.]] - `contains` [EXTRACTED]
 - [[Stale Repository-Context Description in COPILOT_CLI_SETUP]] - `conceptually_related_to` [AMBIGUOUS]
@@ -20,4 +21,4 @@ tags:
 - [[gsd]] - `shares_data_with` [INFERRED]
 - [[postmortem]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Postmortem_ISSUE_TEMPLATE
+#graphify/document #graphify/EXTRACTED #community/Community_435

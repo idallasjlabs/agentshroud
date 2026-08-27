@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Scanner Integration Coverage"
+community: "Community 48"
 location: "L685"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Scanner_Integration_Coverage
+  - community/Community_48
 ---
 
 # TestComplianceAuditing
@@ -19,4 +19,4 @@ tags:
 - [[.test_oscap_binary_present_not_run()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Scanner_Integration_Coverage
+#graphify/code #graphify/EXTRACTED #community/Community_48

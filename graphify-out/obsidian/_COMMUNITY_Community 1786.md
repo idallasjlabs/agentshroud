@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[_SCORECARD_DOMAINS (33-domain IEC 62443 scorecard)]] - code - gateway/security/scanner_integration.py
+- [[AgentShroud TwitterX Profile Image]] - image - branding/social/twitter-profile-400x400.png
 
 ## Live Query (requires Dataview plugin)
 

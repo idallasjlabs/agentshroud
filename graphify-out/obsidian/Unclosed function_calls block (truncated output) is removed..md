@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_filter_xml_blocks.py"
 type: "rationale"
-community: "Filter Xml Blocks"
+community: "Community 136"
 location: "L113"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Filter_Xml_Blocks
+  - community/Community_136
 ---
 
 # Unclosed <function_calls> block (truncated output) is removed.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_filters_unclosed_function_calls()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Filter_Xml_Blocks
+#graphify/rationale #graphify/EXTRACTED #community/Community_136

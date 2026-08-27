@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/port_manager.py"
 type: "rationale"
-community: "Port Manager"
+community: "Community 95"
 location: "L267"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Port_Manager
+  - community/Community_95
 ---
 
 # Quick check: are the default ports available? Log and return result.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[check_and_report()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Port_Manager
+#graphify/rationale #graphify/EXTRACTED #community/Community_95

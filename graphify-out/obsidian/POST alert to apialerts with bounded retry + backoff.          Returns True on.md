@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/alert_dispatcher.py"
 type: "rationale"
-community: "Alert Dispatcher (security)"
+community: "Community 262"
 location: "L140"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Alert_Dispatcher_security
+  - community/Community_262
 ---
 
 # POST alert to /api/alerts with bounded retry + backoff.          Returns True on
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._send_notification()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Alert_Dispatcher_security
+#graphify/rationale #graphify/EXTRACTED #community/Community_262

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/voice-call/SKILL.md"
 type: "document"
-community: "Skill (summarize)"
+community: "Community 400"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_summarize
+  - community/Community_400
 ---
 
 # Voice Call
@@ -16,4 +16,4 @@ tags:
 - [[SKILL_237]] - `contains` [EXTRACTED]
 - [[Tool]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_summarize
+#graphify/document #graphify/EXTRACTED #community/Community_400

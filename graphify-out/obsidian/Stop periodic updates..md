@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/dns_blocklist.py"
 type: "rationale"
-community: "Dns Blocklist"
+community: "Community 141"
 location: "L274"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Dns_Blocklist
+  - community/Community_141
 ---
 
 # Stop periodic updates.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.stop()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Dns_Blocklist
+#graphify/rationale #graphify/EXTRACTED #community/Community_141

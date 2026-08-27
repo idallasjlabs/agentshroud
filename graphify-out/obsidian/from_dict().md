@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/event_adapter.py"
 type: "code"
-community: "Event Adapter (soc)"
+community: "Community 501"
 location: "L170"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Event_Adapter_soc
+  - community/Community_501
 ---
 
 # from_dict()
@@ -21,4 +21,4 @@ tags:
 - [[get_security_alerts()]] - `calls` [EXTRACTED]
 - [[router.py_1]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Event_Adapter_soc
+#graphify/code #graphify/EXTRACTED #community/Community_501

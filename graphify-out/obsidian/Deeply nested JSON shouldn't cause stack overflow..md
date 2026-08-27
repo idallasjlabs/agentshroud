@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "Security Audit & Watchtower Tests"
+community: "Community 14"
 location: "L166"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Audit__Watchtower_Tests
+  - community/Community_14
 ---
 
 # Deeply nested JSON shouldn't cause stack overflow.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_deeply_nested_json()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Community_14

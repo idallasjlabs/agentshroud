@@ -1,14 +1,14 @@
 ---
 source_file: "gateway/ssh_proxy/proxy.py"
 type: "code"
-community: "Proxy (ssh_proxy)"
+community: "Community 1788"
 location: "L141"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Proxy_ssh_proxy
+  - community/Community_1788
 ---
 
 # SSHProxy.validate_command()
 
-#graphify/code #graphify/EXTRACTED #community/Proxy_ssh_proxy
+#graphify/code #graphify/EXTRACTED #community/Community_1788

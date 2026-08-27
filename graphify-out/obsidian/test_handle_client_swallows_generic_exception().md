@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "Http Proxy Coverage"
+community: "Community 52"
 location: "L177"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Http_Proxy_Coverage
+  - community/Community_52
 ---
 
 # test_handle_client_swallows_generic_exception()
@@ -18,4 +18,4 @@ tags:
 - [[_MockWriter_1]] - `calls` [EXTRACTED]
 - [[test_http_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Http_Proxy_Coverage
+#graphify/code #graphify/EXTRACTED #community/Community_52

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/canary.py"
 type: "code"
-community: "Security Audit & Watchtower Tests"
+community: "Community 74"
 location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Audit__Watchtower_Tests
+  - community/Community_74
 ---
 
 # run_canary()
@@ -33,4 +33,4 @@ tags:
 - [[test_canary_with_unhealthy_forwarder()]] - `calls` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests
+#graphify/code #graphify/EXTRACTED #community/Community_74

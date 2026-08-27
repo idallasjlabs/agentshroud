@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/aiosqlite.md"
 type: "document"
-community: "Aiosqlite (05 - Dependencies)"
+community: "Community 914"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Aiosqlite_05_-_Dependencies
+  - community/Community_914
 ---
 
 # aiosqlite.md
@@ -18,4 +18,4 @@ tags:
 - [[ledger.py]] - `references` [EXTRACTED]
 - [[store.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Aiosqlite_05_-_Dependencies
+#graphify/document #graphify/EXTRACTED #community/Community_914

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_approval.py"
 type: "rationale"
-community: "Egress Approval (security)"
+community: "Community 21"
 location: "L472"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Egress_Approval_security
+  - community/Community_21
 ---
 
 # Test DELETE /manage/egress/rules/{domain} endpoint logic.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_remove_egress_rule_endpoint()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Egress_Approval_security
+#graphify/rationale #graphify/EXTRACTED #community/Community_21

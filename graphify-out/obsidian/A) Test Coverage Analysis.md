@@ -1,12 +1,12 @@
 ---
 source_file: ".github/agents/test-augmenter.agent.md"
 type: "document"
-community: "Augmenter.agent (agents)"
+community: "Community 928"
 location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Augmenteragent_agents
+  - community/Community_928
 ---
 
 # A) Test Coverage Analysis
@@ -17,4 +17,4 @@ tags:
 - [[AgentShroud v0.7.0 Blue Team Security Audit Report]] - `contains` [EXTRACTED]
 - [[Your Responsibilities]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Augmenteragent_agents
+#graphify/document #graphify/EXTRACTED #community/Community_928

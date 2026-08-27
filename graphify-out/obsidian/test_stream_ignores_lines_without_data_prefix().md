@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router_streaming.py"
 type: "code"
-community: "Router"
+community: "Community 38"
 location: "L257"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Router
+  - community/Community_38
 ---
 
 # test_stream_ignores_lines_without_data_prefix()
@@ -15,4 +15,4 @@ tags:
 - [[AgentTarget]] - `calls` [EXTRACTED]
 - [[test_router_streaming.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Router
+#graphify/code #graphify/EXTRACTED #community/Community_38

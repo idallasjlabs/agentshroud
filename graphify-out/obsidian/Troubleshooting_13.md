@@ -1,22 +1,20 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-icloud/SKILL.md"
 type: "document"
-community: "Skill (i-mcpm-auth-reset)"
-location: "L160"
+community: "Community 300"
+location: "L142"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-mcpm-auth-reset
+  - community/Community_300
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[AWS Token expired (SSO)_2]] - `contains` [EXTRACTED]
-- [[AWS Unable to locate credentials_2]] - `contains` [EXTRACTED]
-- [[Atlassian OAuth flow failed_2]] - `contains` [EXTRACTED]
-- [[GitHub Bad credentials_2]] - `contains` [EXTRACTED]
-- [[GitHub Docker image not found_2]] - `contains` [EXTRACTED]
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_2]] - `contains` [EXTRACTED]
+- [[401 Unauthorized_2]] - `contains` [EXTRACTED]
+- [[CalendarContacts not found_2]] - `contains` [EXTRACTED]
+- [[Connection timeout_2]] - `contains` [EXTRACTED]
+- [[iCloud Services_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-mcpm-auth-reset
+#graphify/document #graphify/EXTRACTED #community/Community_300

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/incident-response.md"
 type: "document"
-community: "Incident Response (security)"
+community: "Community 462"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Incident_Response_security
+  - community/Community_462
 ---
 
 # Incident Response Playbook — AgentShroud
@@ -18,8 +18,9 @@ tags:
 - [[4. Kill Switch Usage Guide]] - `contains` [EXTRACTED]
 - [[5. Evidence Preservation]] - `contains` [EXTRACTED]
 - [[6. Post-Incident Review Template]] - `contains` [EXTRACTED]
+- [[7. Communication Templates]] - `contains` [EXTRACTED]
 - [[8. Contacts and Escalation]] - `contains` [EXTRACTED]
 - [[Communication Templates]] - `contains` [EXTRACTED]
 - [[incident-response_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Incident_Response_security
+#graphify/document #graphify/EXTRACTED #community/Community_462

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-tw/README.md"
 type: "document"
-community: "Readme (i-tw)"
+community: "Community 1212"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-tw
+  - community/Community_1212
 ---
 
 # Purpose
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Technical Writer (TW)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-tw
+#graphify/document #graphify/EXTRACTED #community/Community_1212

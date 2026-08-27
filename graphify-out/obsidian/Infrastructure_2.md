@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-sec-defense/SKILL.md"
+source_file: "docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md"
 type: "document"
-community: "Skill (i-sec-defense)"
-location: "L150"
+community: "Community 181"
+location: "L98"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-sec-defense
+  - community/Community_181
 ---
 
 # Infrastructure
 
 ## Connections
-- [[AgentShroud Blue Team Security Auditor_1]] - `contains` [EXTRACTED]
+- [[Architecture_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-sec-defense
+#graphify/document #graphify/EXTRACTED #community/Community_181

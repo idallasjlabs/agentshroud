@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_proxy_dashboard.py"
 type: "rationale"
-community: "Proxy Dashboard"
+community: "Community 84"
 location: "L78"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Proxy_Dashboard
+  - community/Community_84
 ---
 
 # Dashboard should track direct access status.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_dashboard_direct_access()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Proxy_Dashboard
+#graphify/rationale #graphify/EXTRACTED #community/Community_84

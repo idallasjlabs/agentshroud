@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VERIFICATION.md"
 type: "document"
-community: "Security Verification (security)"
+community: "Community 275"
 location: "L63"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Verification_security
+  - community/Community_275
 ---
 
 # Test 4: Check Remote Repository
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Verification Tests]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Verification_security
+#graphify/document #graphify/EXTRACTED #community/Community_275

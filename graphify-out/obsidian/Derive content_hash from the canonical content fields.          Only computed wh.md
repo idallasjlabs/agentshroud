@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "rationale"
-community: "Intel Report (security)"
+community: "Community 133"
 location: "L146"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Intel_Report_security
+  - community/Community_133
 ---
 
 # Derive content_hash from the canonical content fields.          Only computed wh
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._compute_content_hash()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Intel_Report_security
+#graphify/rationale #graphify/EXTRACTED #community/Community_133

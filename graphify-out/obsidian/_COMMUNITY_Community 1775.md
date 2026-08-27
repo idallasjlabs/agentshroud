@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[SecurityError (exception)]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
+- [[__init__.py_10]] - code - gateway/skills/__init__.py
 
 ## Live Query (requires Dataview plugin)
 

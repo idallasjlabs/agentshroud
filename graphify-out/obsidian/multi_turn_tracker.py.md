@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "code"
-community: "Multi Turn Tracker (security)"
+community: "Community 78"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Multi_Turn_Tracker_security
+  - community/Community_78
 ---
 
 # multi_turn_tracker.py
@@ -25,4 +25,4 @@ tags:
 - [[prompt_guard.py]] - `semantically_similar_to` [INFERRED]
 - [[test_multi_turn_tracker.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Multi_Turn_Tracker_security
+#graphify/code #graphify/EXTRACTED #community/Community_78

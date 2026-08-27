@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/xml_leak_filter.py"
 type: "code"
-community: "Tool Chain & CVE Triage"
+community: "Community 285"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tool_Chain__CVE_Triage
+  - community/Community_285
 ---
 
 # xml_leak_filter.py
@@ -17,4 +17,4 @@ tags:
 - [[SKILL_190]] - `references` [EXTRACTED]
 - [[XMLLeakFilter]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Tool_Chain__CVE_Triage
+#graphify/code #graphify/EXTRACTED #community/Community_285

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "rationale"
-community: "RBAC & Ingest Middleware"
+community: "Community 6"
 location: "L460"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBAC__Ingest_Middleware
+  - community/Community_6
 ---
 
 # Record a guard __init__ exception so the request path can fail closed.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._record_guard_init_failure()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBAC__Ingest_Middleware
+#graphify/rationale #graphify/EXTRACTED #community/Community_6

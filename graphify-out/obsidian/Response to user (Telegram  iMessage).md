@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-09-data-lineage.svg"
 type: "concept"
-community: "Diagram 09 Data Lineage (images)"
+community: "Community 758"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Diagram_09_Data_Lineage_images
+  - community/Community_758
 ---
 
 # Response to user (Telegram / iMessage)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[LLM API call (sanitized text only)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Diagram_09_Data_Lineage_images
+#graphify/concept #graphify/EXTRACTED #community/Community_758

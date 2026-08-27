@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-session-prompt/SKILL.md"
 type: "document"
-community: "Skill (i-session-prompt)"
+community: "Community 698"
 location: "L150"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-session-prompt
+  - community/Community_698
 ---
 
 # Re-injection Command (for reference)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Session Prompt Generator (SESSION-PROMPT)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-session-prompt
+#graphify/document #graphify/EXTRACTED #community/Community_698

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/MASTER-FEATURE-LIST.md"
 type: "document"
-community: "Master Feature List (planning)"
+community: "Community 911"
 location: "L271"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Master_Feature_List_planning
+  - community/Community_911
 ---
 
 # E. Full Documentation
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[v1.0.0 — Fortress (Polish + Public Release)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Master_Feature_List_planning
+#graphify/document #graphify/EXTRACTED #community/Community_911

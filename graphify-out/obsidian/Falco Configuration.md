@@ -1,11 +1,11 @@
 ---
 source_file: "docker/falco/falco.yaml"
 type: "document"
-community: "Setup Https Proxy (openclaw)"
+community: "Community 323"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Https_Proxy_openclaw
+  - community/Community_323
 ---
 
 # Falco Configuration
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Falco Detection Rules]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Https_Proxy_openclaw
+#graphify/document #graphify/EXTRACTED #community/Community_323

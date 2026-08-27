@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/collaborator_responses.py"
 type: "rationale"
-community: "Group Config & Collaborator Responses"
+community: "Community 81"
 location: "L67"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Group_Config__Collaborator_Responses
+  - community/Community_81
 ---
 
 # Format detailed info for a single group.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[format_group_info()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Group_Config__Collaborator_Responses
+#graphify/rationale #graphify/EXTRACTED #community/Community_81

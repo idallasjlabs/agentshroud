@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Runtime/apple_engine.py.md"
 type: "document"
-community: "Apple Engine.py (Runtime)"
+community: "Community 582"
 location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Apple_Enginepy_Runtime
+  - community/Community_582
 ---
 
 # Configuration / Environment Variables
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[apple_engine.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Apple_Enginepy_Runtime
+#graphify/document #graphify/EXTRACTED #community/Community_582

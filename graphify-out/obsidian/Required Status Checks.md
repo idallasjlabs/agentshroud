@@ -1,12 +1,12 @@
 ---
 source_file: "docs/governance/BRANCH_PROTECTION.md"
 type: "document"
-community: "Branch Protection (governance)"
+community: "Community 1100"
 location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Branch_Protection_governance
+  - community/Community_1100
 ---
 
 # Required Status Checks
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Required Settings]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Branch_Protection_governance
+#graphify/document #graphify/EXTRACTED #community/Community_1100

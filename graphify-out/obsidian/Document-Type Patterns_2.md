@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-tw/SKILL.md"
 type: "document"
-community: "Skill (i-tw)"
+community: "Community 322"
 location: "L50"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-tw
+  - community/Community_322
 ---
 
 # Document-Type Patterns
@@ -15,4 +15,4 @@ tags:
 - [[README — Entry Point for a Repo or Service_2]] - `contains` [EXTRACTED]
 - [[Skill Technical Writer (TW)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-tw
+#graphify/document #graphify/EXTRACTED #community/Community_322

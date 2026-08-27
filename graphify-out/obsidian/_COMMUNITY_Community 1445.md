@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[SKILL_146]] - document - skills/openclaw/gog/SKILL.md
-- [[gog]] - document - skills/openclaw/gog/SKILL.md
+- [[SKILL_86]] - document - docker/config/hermes/skills/i-gitops/SKILL.md
+- [[Skill gitops_1]] - document - docker/config/hermes/skills/i-gitops/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

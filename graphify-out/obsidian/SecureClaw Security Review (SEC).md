@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-sec/SKILL.md"
 type: "document"
-community: "Tool Chain & CVE Triage"
+community: "Community 659"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Tool_Chain__CVE_Triage
+  - community/Community_659
 ---
 
 # SecureClaw Security Review (SEC)
@@ -15,4 +15,4 @@ tags:
 - [[Security Review (SEC) README]] - `references` [EXTRACTED]
 - [[dockerscriptsverify-security.sh]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Tool_Chain__CVE_Triage
+#graphify/document #graphify/EXTRACTED #community/Community_659

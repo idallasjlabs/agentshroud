@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy.py"
 type: "rationale"
-community: "Mcp Policy"
+community: "Community 34"
 location: "L397"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Mcp_Policy
+  - community/Community_34
 ---
 
 # A policy-permitted call passes the policy gate (inspection/permission     layers
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_mcp_proxy_allows_policy_permitted_call()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Mcp_Policy
+#graphify/rationale #graphify/EXTRACTED #community/Community_34

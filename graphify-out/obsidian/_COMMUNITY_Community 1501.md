@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[feature-priorities_3]] - document - skills/custom/agentshroud-redteam/references/steve-hay-assessment.md
-- [[steve-hay-assessment_1]] - document - skills/custom/agentshroud-redteam/references/steve-hay-assessment.md
+- [[graphify clone command]] - concept - docker/config/openclaw/skills/graphify/references/github-and-merge.md
+- [[graphify merge-graphs command]] - concept - docker/config/openclaw/skills/graphify/references/github-and-merge.md
 
 ## Live Query (requires Dataview plugin)
 

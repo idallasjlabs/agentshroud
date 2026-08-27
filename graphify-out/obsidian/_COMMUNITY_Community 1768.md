@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Quick Reference Card — AgentShroud operational commands]] - document - docs/reference/QUICK_REFERENCE.md
+- [[_SCORECARD_DOMAINS (33-domain IEC 62443 scorecard)]] - code - gateway/security/scanner_integration.py
 
 ## Live Query (requires Dataview plugin)
 

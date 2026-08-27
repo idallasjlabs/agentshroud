@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "Resource Guard & Local Model Parity"
+community: "Community 7"
 location: "L1030"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Resource_Guard__Local_Model_Parity
+  - community/Community_7
 ---
 
 # TestResourceProtection
@@ -56,4 +56,4 @@ tags:
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_audit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Resource_Guard__Local_Model_Parity
+#graphify/code #graphify/INFERRED #community/Community_7

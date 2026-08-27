@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "rationale"
-community: "Dns Canvas Coverage"
+community: "Community 651"
 location: "L46"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Dns_Canvas_Coverage
+  - community/Community_651
 ---
 
 # Build a minimal DNS query packet in wire format.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[build_dns_query()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Dns_Canvas_Coverage
+#graphify/rationale #graphify/EXTRACTED #community/Community_651

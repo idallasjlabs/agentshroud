@@ -1,19 +1,19 @@
 ---
 source_file: "docs/setup/OPENCLAW_SETUP.md"
 type: "document"
-community: "Glossary (project)"
+community: "Community 90"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Glossary_project
+  - community/Community_90
 ---
 
 # OPENCLAW_SETUP.md
 
 ## Connections
 - [[AgentShroud (security proxy)]] - `references` [EXTRACTED]
-- [[Approval Queue_1]] - `references` [EXTRACTED]
+- [[Approval Queue_2]] - `references` [EXTRACTED]
 - [[HERMES_SETUP]] - `conceptually_related_to` [INFERRED]
 - [[OpenClaw_2]] - `references` [EXTRACTED]
 - [[OpenClaw Bot Container]] - `references` [EXTRACTED]
@@ -22,4 +22,4 @@ tags:
 - [[TELEGRAM_GMAIL_SETUP]] - `conceptually_related_to` [EXTRACTED]
 - [[colima-docker-guide]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Glossary_project
+#graphify/document #graphify/EXTRACTED #community/Community_90

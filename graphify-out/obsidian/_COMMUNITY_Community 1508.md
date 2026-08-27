@@ -1,17 +1,15 @@
 ---
 type: community
-members: 4
+members: 2
 ---
 
 # Community 1508
 
-**Members:** 4 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[Automation Examples]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[CICD Integration]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[Daily Security Check (cron)]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[Weekly Compliance Scan (cron)]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[deploy-gateway.sh]] - code - scripts/deploy-gateway.sh
+- [[deploy-gateway.sh script]] - code - scripts/deploy-gateway.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,9 +17,3 @@ members: 4
 TABLE source_file, type FROM #community/Community_1508
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_docsoperations]]
-
-## Top bridge nodes
-- [[Automation Examples]] - degree 4, connects to 1 community

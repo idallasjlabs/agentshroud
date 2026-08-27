@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Api (web)"
+community: "Community 45"
 location: "L916"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Api_web
+  - community/Community_45
 ---
 
 # ws_updates()
@@ -17,4 +17,4 @@ tags:
 - [[_validate_mgmt_ws_token()]] - `calls` [EXTRACTED]
 - [[api.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Api_web
+#graphify/code #graphify/EXTRACTED #community/Community_45

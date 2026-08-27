@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Scanner Integration Coverage"
+community: "Community 1282"
 location: "L520"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Scanner_Integration_Coverage
+  - community/Community_1282
 ---
 
 # TestAggregateResults
@@ -19,4 +19,4 @@ tags:
 - [[.test_high_means_warning()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Scanner_Integration_Coverage
+#graphify/code #graphify/EXTRACTED #community/Community_1282

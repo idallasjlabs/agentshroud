@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-icloud/README.md"
 type: "document"
-community: "Readme (i-icloud)"
+community: "Community 1156"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-icloud
+  - community/Community_1156
 ---
 
 # README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[iCloud Data Manager (ICLOUD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-icloud
+#graphify/document #graphify/EXTRACTED #community/Community_1156

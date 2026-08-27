@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "rationale"
-community: "Slack Proxy"
+community: "Community 72"
 location: "L319"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Slack_Proxy
+  - community/Community_72
 ---
 
 # Owner channel: pipeline exception → logged but message still forwarded.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_owner_pipeline_exception_fail_open()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Slack_Proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_72

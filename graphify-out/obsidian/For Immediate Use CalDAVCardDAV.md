@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/GOOGLE-SERVICES-SETUP.md"
 type: "document"
-community: "Google Services Setup (setup)"
+community: "Community 266"
 location: "L280"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Google_Services_Setup_setup
+  - community/Community_266
 ---
 
 # For Immediate Use: CalDAV/CardDAV
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🚀 Recommended Approach]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Google_Services_Setup_setup
+#graphify/document #graphify/EXTRACTED #community/Community_266

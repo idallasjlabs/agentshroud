@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "Wazuh Client (security)"
-location: "L657"
+community: "Community 85"
+location: "L673"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Wazuh_Client_security
+  - community/Community_85
 ---
 
 # TestWazuhParser
@@ -21,4 +21,4 @@ tags:
 - [[AlertDispatcher]] - `uses` [INFERRED]
 - [[test_security_toolchain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Wazuh_Client_security
+#graphify/code #graphify/EXTRACTED #community/Community_85

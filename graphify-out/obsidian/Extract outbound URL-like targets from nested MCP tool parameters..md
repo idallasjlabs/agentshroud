@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "Mcp Proxy (proxy)"
+community: "Community 447"
 location: "L267"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Mcp_Proxy_proxy
+  - community/Community_447
 ---
 
 # Extract outbound URL-like targets from nested MCP tool parameters.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._extract_egress_targets()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Mcp_Proxy_proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_447

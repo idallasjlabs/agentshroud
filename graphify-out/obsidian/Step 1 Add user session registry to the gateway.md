@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/03-session-isolation.md"
 type: "document"
-community: "03 Session Isolation (redteam)"
+community: "Community 579"
 location: "L30"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/03_Session_Isolation_redteam
+  - community/Community_579
 ---
 
 # Step 1: Add user session registry to the gateway
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Remediation_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/03_Session_Isolation_redteam
+#graphify/document #graphify/EXTRACTED #community/Community_579

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "rationale"
-community: "Security Audit & Watchtower Tests"
+community: "Community 870"
 location: "L281"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Audit__Watchtower_Tests
+  - community/Community_870
 ---
 
 # E2E-08: Every pipeline event — block or forward — produces an audit entry.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestE2E08AuditChainIntegrity]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Community_870

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_intel_endpoint.py"
 type: "code"
-community: "Intel Endpoint"
+community: "Community 113"
 location: "L188"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Intel_Endpoint
+  - community/Community_113
 ---
 
 # _StreamResp
@@ -25,4 +25,4 @@ tags:
 - [[FetchOutcome]] - `uses` [INFERRED]
 - [[test_intel_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Intel_Endpoint
+#graphify/code #graphify/EXTRACTED #community/Community_113

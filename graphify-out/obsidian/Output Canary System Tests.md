@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_output_canary.py"
 type: "code"
-community: "Prompt Protection (security)"
+community: "Community 182"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Prompt_Protection_security
+  - community/Community_182
 ---
 
 # Output Canary System Tests
@@ -14,4 +14,4 @@ tags:
 - [[OutputCanary]] - `references` [EXTRACTED]
 - [[System Prompt Protection Tests]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Prompt_Protection_security
+#graphify/code #graphify/EXTRACTED #community/Community_182

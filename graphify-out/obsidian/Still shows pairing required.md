@@ -1,17 +1,17 @@
 ---
 source_file: "docs/setup/PAIRING_INSTRUCTIONS.md"
 type: "document"
-community: "Pairing Instructions (setup)"
+community: "Community 690"
 location: "L55"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Pairing_Instructions_setup
+  - community/Community_690
 ---
 
 # Still shows "pairing required"
 
 ## Connections
-- [[Troubleshooting_30]] - `contains` [EXTRACTED]
+- [[Troubleshooting_31]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Pairing_Instructions_setup
+#graphify/document #graphify/EXTRACTED #community/Community_690

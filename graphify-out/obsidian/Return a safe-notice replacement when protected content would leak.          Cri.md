@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Telegram Proxy Core"
+community: "Community 93"
 location: "L3940"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Core
+  - community/Community_93
 ---
 
 # Return a safe-notice replacement when protected content would leak.          Cri
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._check_collaborator_leakage()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Core
+#graphify/rationale #graphify/EXTRACTED #community/Community_93

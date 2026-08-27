@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "Api (web)"
+community: "Community 133"
 location: "L194"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Api_web
+  - community/Community_133
 ---
 
 # IntelReportStore
@@ -52,4 +52,4 @@ tags:
 - [[test_citation_verifier.py]] - `imports` [EXTRACTED]
 - [[test_intel_pipeline.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Api_web
+#graphify/code #graphify/INFERRED #community/Community_133

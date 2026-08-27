@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/approval_hardening.py"
 type: "code"
-community: "Approval Hardening (security)"
+community: "Community 213"
 location: "L119"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Hardening_security
+  - community/Community_213
 ---
 
 # Any
@@ -23,4 +23,4 @@ tags:
 - [[.is_request_in_cooldown()]] - `references` [EXTRACTED]
 - [[.record_denied_request()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Hardening_security
+#graphify/code #graphify/EXTRACTED #community/Community_213

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "rationale"
-community: "Rbac"
+community: "Community 70"
 location: "L51"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Rbac
+  - community/Community_70
 ---
 
 # Test role hierarchy helper methods.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_role_hierarchy_checks()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Rbac
+#graphify/rationale #graphify/EXTRACTED #community/Community_70

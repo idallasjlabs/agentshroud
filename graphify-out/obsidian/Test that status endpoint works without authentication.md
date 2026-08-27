@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_integration.py"
 type: "rationale"
-community: "Integration"
+community: "Community 484"
 location: "L14"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Integration
+  - community/Community_484
 ---
 
 # Test that /status endpoint works without authentication
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_health_check_no_auth()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Integration
+#graphify/rationale #graphify/EXTRACTED #community/Community_484

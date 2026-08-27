@@ -1,21 +1,22 @@
 ---
-source_file: ".agents/skills/i-mcpm-aws-profile/SKILL.md"
+source_file: ".agents/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "Skill (i-mcpm-aws-profile)"
-location: "L246"
+community: "Community 1079"
+location: "L160"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-mcpm-aws-profile
+  - community/Community_1079
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Access Denied]] - `contains` [EXTRACTED]
-- [[Token expired (SSO)]] - `contains` [EXTRACTED]
-- [[Unable to locate credentials]] - `contains` [EXTRACTED]
-- [[MCP Not Using Profile]] - `contains` [EXTRACTED]
-- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - `contains` [EXTRACTED]
+- [[AWS Token expired (SSO)]] - `contains` [EXTRACTED]
+- [[AWS Unable to locate credentials]] - `contains` [EXTRACTED]
+- [[Atlassian OAuth flow failed]] - `contains` [EXTRACTED]
+- [[GitHub Bad credentials]] - `contains` [EXTRACTED]
+- [[GitHub Docker image not found]] - `contains` [EXTRACTED]
+- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-mcpm-aws-profile
+#graphify/document #graphify/EXTRACTED #community/Community_1079

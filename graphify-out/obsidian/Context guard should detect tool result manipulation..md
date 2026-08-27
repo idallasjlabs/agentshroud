@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "Security Audit & Watchtower Tests"
+community: "Community 6"
 location: "L480"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Audit__Watchtower_Tests
+  - community/Community_6
 ---
 
 # Context guard should detect tool result manipulation.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_context_guard_tool_manipulation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Community_6

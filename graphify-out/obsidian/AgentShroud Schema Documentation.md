@@ -1,12 +1,12 @@
 ---
 source_file: "docs/data/schema-documentation.md"
 type: "document"
-community: "Schema Documentation (data)"
+community: "Community 494"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Schema_Documentation_data
+  - community/Community_494
 ---
 
 # AgentShroud Schema Documentation
@@ -18,4 +18,4 @@ tags:
 - [[SQLite Database Schema]] - `contains` [EXTRACTED]
 - [[schema-documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Schema_Documentation_data
+#graphify/document #graphify/EXTRACTED #community/Community_494

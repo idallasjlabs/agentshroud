@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/MASTER-FEATURE-LIST.md"
+source_file: "CHANGELOG.md"
 type: "document"
-community: "Master Feature List (planning)"
-location: "L406"
+community: "Community 1173"
+location: "L155"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Master_Feature_List_planning
+  - community/Community_1173
 ---
 
 # Summary
 
 ## Connections
-- [[AgentShroud — Master Feature List (Everything Ever Mentioned)]] - `contains` [EXTRACTED]
+- [[1.5.0 A2A Governance (2026-08-14)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Master_Feature_List_planning
+#graphify/document #graphify/EXTRACTED #community/Community_1173

@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/app_main.c"
 type: "code"
-community: "Ws Client (main)"
+community: "Community 139"
 location: "L443"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ws_Client_main
+  - community/Community_139
 ---
 
 # _on_tts_pcm()
@@ -17,4 +17,4 @@ tags:
 - [[wakeword_tts_stop_requested()]] - `calls` [INFERRED]
 - [[ws_client_create() — registers callbacks + starts client]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ws_Client_main
+#graphify/code #graphify/EXTRACTED #community/Community_139

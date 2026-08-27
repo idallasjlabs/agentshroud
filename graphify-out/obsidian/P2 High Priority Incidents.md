@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/incident-response.md"
 type: "document"
-community: "Incident Response (operations)"
+community: "Community 154"
 location: "L281"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Incident_Response_operations
+  - community/Community_154
 ---
 
 # P2 High Priority Incidents
@@ -17,4 +17,4 @@ tags:
 - [[PII Leak Incident]] - `contains` [EXTRACTED]
 - [[Prompt Injection Detected]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Incident_Response_operations
+#graphify/document #graphify/EXTRACTED #community/Community_154

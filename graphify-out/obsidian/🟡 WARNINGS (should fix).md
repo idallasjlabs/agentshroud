@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-03-05-r2.md"
 type: "document"
-community: "Phase Review 2026 03 (reviews)"
+community: "Community 1251"
 location: "L65"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_Review_2026_03_reviews
+  - community/Community_1251
 ---
 
 # 🟡 WARNINGS (should fix)
@@ -19,4 +19,4 @@ tags:
 - [[W4 Tailscale image not pinned to SHA256 digest]] - `contains` [EXTRACTED]
 - [[W5 Hardcoded owner ID fallback `'1234567890'` in `lifespan.py`]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_Review_2026_03_reviews
+#graphify/document #graphify/EXTRACTED #community/Community_1251

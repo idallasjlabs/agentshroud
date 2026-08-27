@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "Git Guard (security)"
+community: "Community 14"
 location: "L951"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Git_Guard_security
+  - community/Community_14
 ---
 
 # TestLoggingSecurity
@@ -60,4 +60,4 @@ tags:
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_audit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Git_Guard_security
+#graphify/code #graphify/INFERRED #community/Community_14

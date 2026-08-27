@@ -1,12 +1,12 @@
 ---
 source_file: "branding/INDEX.md"
 type: "document"
-community: "Index (branding)"
+community: "Community 554"
 location: "L65"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Index_branding
+  - community/Community_554
 ---
 
 # 🎨 Quick Access
@@ -17,4 +17,4 @@ tags:
 - [[Documentation_1]] - `contains` [EXTRACTED]
 - [[Logo Files]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Index_branding
+#graphify/document #graphify/EXTRACTED #community/Community_554

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "rationale"
-community: "Llm Proxy"
+community: "Community 79"
 location: "L308"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Llm_Proxy
+  - community/Community_79
 ---
 
 # Fake CredentialInjector that records inject_headers calls and applies Anthropic
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_TrackingInjector]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Llm_Proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_79

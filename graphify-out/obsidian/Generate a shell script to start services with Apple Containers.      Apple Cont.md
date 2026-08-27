@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/compose_generator.py"
 type: "rationale"
-community: "Runtime Engines"
+community: "Community 647"
 location: "L183"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Runtime_Engines
+  - community/Community_647
 ---
 
 # Generate a shell script to start services with Apple Containers.      Apple Cont
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[generate_apple_script()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Runtime_Engines
+#graphify/rationale #graphify/EXTRACTED #community/Community_647

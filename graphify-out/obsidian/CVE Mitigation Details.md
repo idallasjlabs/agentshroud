@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-architecture.md"
 type: "document"
-community: "Security Architecture (security)"
+community: "Community 154"
 location: "L225"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Architecture_security
+  - community/Community_154
 ---
 
 # CVE Mitigation Details
@@ -16,4 +16,4 @@ tags:
 - [[CVE-2026-22708 AI Agent Container Escape via Prompt Injection]] - `contains` [EXTRACTED]
 - [[CVE-2026-25253 PII Exfiltration via DNS Tunneling]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Architecture_security
+#graphify/document #graphify/EXTRACTED #community/Community_154

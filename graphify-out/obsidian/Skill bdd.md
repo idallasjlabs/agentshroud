@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-bdd/SKILL.md"
 type: "document"
-community: "Skill (i-bdd)"
+community: "Community 1419"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-bdd
+  - community/Community_1419
 ---
 
 # Skill: bdd
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SKILL_8]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-bdd
+#graphify/document #graphify/EXTRACTED #community/Community_1419

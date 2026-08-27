@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_replay.py"
 type: "code"
-community: "Telegram Replay"
+community: "Community 148"
 location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Telegram_Replay
+  - community/Community_148
 ---
 
 # UpdateReplayBuffer
@@ -30,4 +30,4 @@ tags:
 - [[test_sqlite_failure_does_not_raise()]] - `calls` [EXTRACTED]
 - [[test_telegram_replay.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Telegram_Replay
+#graphify/code #graphify/EXTRACTED #community/Community_148

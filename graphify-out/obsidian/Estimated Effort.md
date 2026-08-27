@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/v0.8.0-egress-firewall.md"
 type: "document"
-community: "V0.8.0 Egress Firewall (v0.8)"
+community: "Community 655"
 location: "L104"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/V080_Egress_Firewall_v08
+  - community/Community_655
 ---
 
 # Estimated Effort
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Feature Global Monitor-Only Mode (Observatory Mode)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/V080_Egress_Firewall_v08
+#graphify/document #graphify/EXTRACTED #community/Community_655

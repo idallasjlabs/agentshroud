@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "code"
-community: "Security Audit & Watchtower Tests"
+community: "Community 14"
 location: "L32"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Security_Audit__Watchtower_Tests
+  - community/Community_14
 ---
 
 # PIIConfig
@@ -39,4 +39,4 @@ tags:
 - [[TestTimingAttacks]] - `uses` [INFERRED]
 - [[TestWebSecurity]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Security_Audit__Watchtower_Tests
+#graphify/code #graphify/INFERRED #community/Community_14

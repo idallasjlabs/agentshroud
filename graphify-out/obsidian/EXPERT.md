@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-socrates/SKILL.md"
 type: "document"
-community: "Skill (i-socrates)"
+community: "Community 608"
 location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-socrates
+  - community/Community_608
 ---
 
 # EXPERT
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Speaker Definitions]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-socrates
+#graphify/document #graphify/EXTRACTED #community/Community_608

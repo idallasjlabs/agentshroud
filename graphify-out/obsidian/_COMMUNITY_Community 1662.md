@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[__init__.py_4]] - code - gateway/dashboard/__init__.py
+- [[BDD Skill (Gherkin GivenWhenThen specs)]] - document - docker/config/hermes/skills/i-bdd/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

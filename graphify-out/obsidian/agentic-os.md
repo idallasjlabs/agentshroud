@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "document"
-community: "Agentic Os (architecture)"
+community: "Community 131"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Agentic_Os_architecture
+  - community/Community_131
 ---
 
 # agentic-os.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Agentic OS]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Agentic_Os_architecture
+#graphify/document #graphify/EXTRACTED #community/Community_131

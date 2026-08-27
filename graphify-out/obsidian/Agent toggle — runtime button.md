@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/SETUP.md"
 type: "document"
-community: "Setup (voice-terminal)"
+community: "Community 785"
 location: "L450"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_voice-terminal
+  - community/Community_785
 ---
 
 # Agent toggle — runtime button
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[11. Current status (v1.2.0)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_voice-terminal
+#graphify/document #graphify/EXTRACTED #community/Community_785

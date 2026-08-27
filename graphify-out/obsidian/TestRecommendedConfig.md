@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "Config Validation & Router"
+community: "Community 345"
 location: "L122"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Config_Validation__Router
+  - community/Community_345
 ---
 
 # TestRecommendedConfig
@@ -23,4 +23,4 @@ tags:
 - [[recommended.env should balance security and usability.]] - `rationale_for` [EXTRACTED]
 - [[test_config_validation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Config_Validation__Router
+#graphify/code #graphify/EXTRACTED #community/Community_345

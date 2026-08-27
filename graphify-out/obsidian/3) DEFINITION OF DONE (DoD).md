@@ -1,12 +1,12 @@
 ---
 source_file: "AGENTS.md"
 type: "document"
-community: "Agents"
+community: "Community 350"
 location: "L76"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Agents
+  - community/Community_350
 ---
 
 # 3) DEFINITION OF DONE (DoD)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Goal Codex is a secondarytertiary agent used for test augmentation, validation, and safe refactors AFTER tests pass.]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Agents
+#graphify/document #graphify/EXTRACTED #community/Community_350

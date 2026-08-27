@@ -1,11 +1,11 @@
 ---
 source_file: "docs/TEAM.md"
 type: "concept"
-community: "Team (docs)"
+community: "Community 964"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Team_docs
+  - community/Community_964
 ---
 
 # Gemini CLI + Codex — Embedded QA/Test Engineers
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Claude Code — Primary development agent]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Team_docs
+#graphify/concept #graphify/EXTRACTED #community/Community_964

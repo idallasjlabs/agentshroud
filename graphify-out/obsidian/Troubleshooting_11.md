@@ -1,22 +1,21 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
+source_file: "docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "Skill (i-browser)"
-location: "L281"
+community: "Community 188"
+location: "L246"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-browser
+  - community/Community_188
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Action requires approval but none granted_2]] - `contains` [EXTRACTED]
-- [[Browser timeout_2]] - `contains` [EXTRACTED]
-- [[CAPTCHA detected_2]] - `contains` [EXTRACTED]
-- [[Rate limit exceeded_2]] - `contains` [EXTRACTED]
-- [[URL not in allowlist_2]] - `contains` [EXTRACTED]
-- [[Browser — Secure Browser Automation_5]] - `contains` [EXTRACTED]
+- [[Access Denied_1]] - `contains` [EXTRACTED]
+- [[Token expired (SSO)_1]] - `contains` [EXTRACTED]
+- [[Unable to locate credentials_1]] - `contains` [EXTRACTED]
+- [[MCP Not Using Profile_1]] - `contains` [EXTRACTED]
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-browser
+#graphify/document #graphify/EXTRACTED #community/Community_188

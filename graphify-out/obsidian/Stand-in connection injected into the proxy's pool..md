@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "rationale"
-community: "Mcp Proxy Coverage"
+community: "Community 1339"
 location: "L123"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Mcp_Proxy_Coverage
+  - community/Community_1339
 ---
 
 # Stand-in connection injected into the proxy's pool.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[FakeConn]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Mcp_Proxy_Coverage
+#graphify/rationale #graphify/EXTRACTED #community/Community_1339

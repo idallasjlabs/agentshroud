@@ -1,11 +1,11 @@
 ---
 source_file: "docs/operations/linux.md"
 type: "document"
-community: "Diagram 11 Trust Boundary (images)"
+community: "Community 280"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Diagram_11_Trust_Boundary_images
+  - community/Community_280
 ---
 
 # Deploying AgentShroud on Linux (docs/operations/linux.md)
@@ -17,4 +17,4 @@ tags:
 - [[dockersecretssetup-secrets.sh (secret bootstrap step shared by Linux and macOS install guides)]] - `conceptually_related_to` [EXTRACTED]
 - [[systemd service etcsystemdsystemagentshroud.service for auto-start]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Diagram_11_Trust_Boundary_images
+#graphify/document #graphify/EXTRACTED #community/Community_280

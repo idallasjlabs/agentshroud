@@ -1,12 +1,12 @@
 ---
 source_file: "AGENTS.md"
 type: "document"
-community: "Agents"
+community: "Community 350"
 location: "L142"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Agents
+  - community/Community_350
 ---
 
 # Your Role in the Multi-Agent System
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[7) CODEX CLI OPERATIONAL RULES]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Agents
+#graphify/document #graphify/EXTRACTED #community/Community_350

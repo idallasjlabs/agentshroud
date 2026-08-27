@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-pca/SKILL.md"
 type: "document"
-community: "Skill (i-pca)"
+community: "Community 883"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-pca
+  - community/Community_883
 ---
 
 # Output Sections (ALL required)
@@ -19,7 +19,8 @@ tags:
 - [[5. Known Limits and Assumptions]] - `contains` [EXTRACTED]
 - [[6. Alternatives Considered]] - `contains` [EXTRACTED]
 - [[7. Open Questions]] - `contains` [EXTRACTED]
+- [[8. Verification Plan]] - `contains` [EXTRACTED]
 - [[Skill Pre-Change Analysis (PCA)]] - `contains` [EXTRACTED]
 - [[Verification Plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-pca
+#graphify/document #graphify/EXTRACTED #community/Community_883

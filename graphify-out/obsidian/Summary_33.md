@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0.md"
+source_file: "docs/planning/reviews/session-issue-register-2026-03-14.md"
 type: "document"
-community: "docs/governance"
-location: "L74"
+community: "Community 1138"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/governance
+  - community/Community_1138
 ---
 
 # Summary
 
 ## Connections
-- [[AgentShroud v0.8.0 — Blue Team Security Assessment]] - `contains` [EXTRACTED]
+- [[AgentShroud Session Issue Register — 2026-03-14]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/governance
+#graphify/document #graphify/EXTRACTED #community/Community_1138

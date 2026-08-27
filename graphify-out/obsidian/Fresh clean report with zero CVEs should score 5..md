@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scorecard_integrity.py"
 type: "rationale"
-community: "Scorecard Integrity"
+community: "Community 178"
 location: "L94"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Scorecard_Integrity
+  - community/Community_178
 ---
 
 # Fresh clean report with zero CVEs should score 5.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_vuln_fresh_clean_report_scores_5()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Scorecard_Integrity
+#graphify/rationale #graphify/EXTRACTED #community/Community_178

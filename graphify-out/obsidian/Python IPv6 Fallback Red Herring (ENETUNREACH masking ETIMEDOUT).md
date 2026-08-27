@@ -1,11 +1,11 @@
 ---
 source_file: "docker/DOCKER-VPN-NETWORKING.md"
 type: "concept"
-community: "Readme (dashboard)"
+community: "Community 787"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Readme_dashboard
+  - community/Community_787
 ---
 
 # Python IPv6 Fallback Red Herring (ENETUNREACH masking ETIMEDOUT)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[DOCKER-VPN-NETWORKING]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Readme_dashboard
+#graphify/concept #graphify/EXTRACTED #community/Community_787

@@ -1,0 +1,324 @@
+---
+type: community
+members: 225
+---
+
+# Community 1
+
+**Members:** 225 nodes
+
+## Members
+- [[NOTE `timeout or host.max_session_seconds` treats 0 as falsy (same]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.__init__()_13]] - code - gateway/ingest_api/ledger.py
+- [[._hash_content()]] - code - gateway/ingest_api/ledger.py
+- [[.close()_5]] - code - gateway/ingest_api/ledger.py
+- [[.connect()_1]] - code - gateway/approval_queue/queue.py
+- [[.default_config()]] - code - gateway/tests/test_tool_result_pii.py
+- [[.delete_entry()]] - code - gateway/ingest_api/ledger.py
+- [[.disabled_client()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.disconnect()_1]] - code - gateway/approval_queue/queue.py
+- [[.enforce_retention()]] - code - gateway/ingest_api/ledger.py
+- [[.get_entry()]] - code - gateway/ingest_api/ledger.py
+- [[.get_stats()_1]] - code - gateway/ingest_api/ledger.py
+- [[.guard()_2]] - code - gateway/tests/test_performance.py
+- [[.initialize()_2]] - code - gateway/ingest_api/ledger.py
+- [[.ledger()]] - code - gateway/tests/test_performance.py
+- [[.ledger()_1]] - code - gateway/tests/test_performance.py
+- [[.mock_config()]] - code - gateway/tests/test_tool_result_pii.py
+- [[.no_approval_client()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.query()]] - code - gateway/ingest_api/ledger.py
+- [[.record()]] - code - gateway/ingest_api/ledger.py
+- [[.sanitizer()]] - code - gateway/tests/test_performance.py
+- [[.test_10000_lookups_under_1s()]] - code - gateway/tests/test_performance.py
+- [[.test_1000_entries_all_recorded()]] - code - gateway/tests/test_audit_chain.py
+- [[.test_1000_entries_under_5s()]] - code - gateway/tests/test_performance.py
+- [[.test_1000_messages_under_10s()]] - code - gateway/tests/test_performance.py
+- [[.test_1000_messages_under_5s()]] - code - gateway/tests/test_performance.py
+- [[.test_50_concurrent_writes()]] - code - gateway/tests/test_audit_chain.py
+- [[.test_concurrent_write_and_read()]] - code - gateway/tests/test_audit_chain.py
+- [[.test_config_with_tool_result_pii()]] - code - gateway/tests/test_tool_result_pii.py
+- [[.test_content_hashes_are_unique()]] - code - gateway/tests/test_audit_chain.py
+- [[.test_delete_entry_removes_it()]] - code - gateway/tests/test_audit_chain.py
+- [[.test_delete_nonexistent_returns_false()]] - code - gateway/tests/test_audit_chain.py
+- [[.test_detection_accuracy_at_scale()]] - code - gateway/tests/test_performance.py
+- [[.test_enforce_retention_deletes_expired()]] - code - gateway/tests/test_audit_chain.py
+- [[.test_entry_retrieval_by_id()]] - code - gateway/tests/test_audit_chain.py
+- [[.test_hash_is_sha256()]] - code - gateway/tests/test_audit_chain.py
+- [[.test_hash_matches_content()]] - code - gateway/tests/test_audit_chain.py
+- [[.test_non_auto_approved_executes_directly()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_nonexistent_entry_returns_none()]] - code - gateway/tests/test_audit_chain.py
+- [[.test_pii_detection_accuracy_at_scale()]] - code - gateway/tests/test_performance.py
+- [[.test_pii_sanitizer_default_enforcement()]] - code - gateway/tests/test_enforce_defaults.py
+- [[.test_pii_sanitizer_mode_param()]] - code - gateway/tests/test_enforce_defaults.py
+- [[.test_query_after_1000_entries()]] - code - gateway/tests/test_performance.py
+- [[.test_query_filter_by_source()]] - code - gateway/tests/test_audit_chain.py
+- [[.test_query_pagination()]] - code - gateway/tests/test_audit_chain.py
+- [[.test_ssh_exec_auto_approved()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_ssh_exec_command_not_in_allowlist()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_ssh_exec_cwd_accepted_and_forwarded()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_ssh_exec_cwd_invalid_rejects_400()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_ssh_exec_cwd_none_forwards_none()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_ssh_exec_cwd_relative_path_rejects_400()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_ssh_exec_denied_command()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_ssh_exec_disabled_returns_503()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_ssh_exec_injection_attempt()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_ssh_exec_no_auth()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_ssh_exec_requires_approval()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_ssh_exec_unknown_host()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_ssh_history()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_ssh_hosts_list()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_stats_correct()]] - code - gateway/tests/test_audit_chain.py
+- [[.test_trust_update_performance()]] - code - gateway/tests/test_performance.py
+- [[.validate_default_url()]] - code - gateway/ingest_api/config.py
+- [[.validate_targets()]] - code - gateway/ingest_api/config.py
+- [[1000 trust updates (mix of successfailure).]] - rationale - gateway/tests/test_performance.py
+- [[10000 trust lookups in under 1 second.]] - rationale - gateway/tests/test_performance.py
+- [[50 concurrent write operations should all succeed.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Accept a WebSocket connection and add to connected set          Args]] - rationale - gateway/approval_queue/queue.py
+- [[Any_7]] - code - gateway/ingest_api/ledger.py
+- [[AppState]] - code - gateway/ingest_api/state.py
+- [[ApprovalQueue]] - code - gateway/approval_queue/queue.py
+- [[Async SQLite-backed data ledger      Records all content forwarded through the g]] - rationale - gateway/ingest_api/ledger.py
+- [[Audit chain 1000 entries in  5s.]] - rationale - gateway/tests/test_performance.py
+- [[Can retrieve specific entry by ID for verification.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Chain with many entries — verify integrity.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Close database connection]] - rationale - gateway/ingest_api/ledger.py
+- [[Complete gateway configuration]] - rationale - gateway/ingest_api/config.py
+- [[Concurrent writes and reads don't conflict.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Concurrent writes to chain.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Config with all security modules enabled.]] - rationale - gateway/tests/test_security_integration.py
+- [[Container for application-wide state]] - rationale - gateway/ingest_api/state.py
+- [[Content hash should be a valid SHA-256 hex digest.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Create a FastAPI TestClient with test configuration      Note This doesn't init]] - rationale - gateway/tests/conftest.py
+- [[Create a PIISanitizer instance for testing]] - rationale - gateway/tests/conftest.py
+- [[Create a new ledger entry          Args             source Source identifier (]] - rationale - gateway/ingest_api/ledger.py
+- [[Create a test configuration      Uses regex fallback for PII (no spaCy model req]] - rationale - gateway/tests/conftest.py
+- [[Create an initialized in-memory ledger for testing      Yields the ledger, then]] - rationale - gateway/tests/conftest.py
+- [[Create database, tables, and run initial cleanup          Must be called before]] - rationale - gateway/ingest_api/ledger.py
+- [[Data ledger configuration]] - rationale - gateway/ingest_api/config.py
+- [[DataLedger]] - code - gateway/ingest_api/ledger.py
+- [[Default PII configuration for tests]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Delete entries older than retention_days          Returns             Number of]] - rationale - gateway/ingest_api/ledger.py
+- [[Deleted entry is gone (right to erasure).]] - rationale - gateway/tests/test_audit_chain.py
+- [[Deleting nonexistent entry returns False.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Different content should produce different hashes.]] - rationale - gateway/tests/test_audit_chain.py
+- [[End-to-end pipeline latency for a single message.]] - rationale - gateway/tests/test_performance.py
+- [[Export chain and re-verify.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Fetch a single ledger entry by ID          Args             entry_id Entry UUI]] - rationale - gateway/ingest_api/ledger.py
+- [[Filter entries by source.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Forget this' - permanently delete a ledger entry          Implements right to er]] - rationale - gateway/ingest_api/ledger.py
+- [[Gap coverage confirm a real audit-ledger row is created for BOTH a     successf]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[Gap coverage prove the 'content is DATA, not a shell string' design     goal ac]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[GatewayConfig_1]] - code - gateway/ingest_api/config.py
+- [[GatewayConfig_2]] - code - gateway/tests/conftest.py
+- [[GatewayConfig_4]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[Get aggregate statistics          Returns             Dictionary with total ent]] - rationale - gateway/ingest_api/ledger.py
+- [[In-memory approval queue with WebSocket notifications      Actions requiring app]] - rationale - gateway/approval_queue/queue.py
+- [[Injection attempts should be detected even under load.]] - rationale - gateway/tests/test_performance.py
+- [[LedgerConfig]] - code - gateway/ingest_api/config.py
+- [[LedgerConfig_1]] - code - gateway/ingest_api/ledger.py
+- [[LedgerEntry]] - code - gateway/ingest_api/ledger.py
+- [[LedgerQueryResponse]] - code - gateway/ingest_api/ledger.py
+- [[Looking up nonexistent entry returns None.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Mock configuration for middleware tests]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Multi-agent router configuration]] - rationale - gateway/ingest_api/config.py
+- [[Omitting cwd passes cwd=None to proxy.execute().]] - rationale - gateway/tests/test_ssh_endpoints.py
+- [[PII detection and redaction configuration]] - rationale - gateway/ingest_api/config.py
+- [[PII sanitizer 1000 messages in  10s.]] - rationale - gateway/tests/test_performance.py
+- [[PIIConfig]] - code - gateway/ingest_api/config.py
+- [[PIISanitizer_2]] - code - gateway/tests/conftest.py
+- [[Paginated queries return correct subsets.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Process 1000 mixed messages in under 10 seconds.]] - rationale - gateway/tests/test_performance.py
+- [[Prompt guard 1000 messages in  5s.]] - rationale - gateway/tests/test_performance.py
+- [[Query ledger entries with pagination and filters          Args             page]] - rationale - gateway/ingest_api/ledger.py
+- [[Query performance after 1000 entries.]] - rationale - gateway/tests/test_performance.py
+- [[Re-initializing must not orphan the first aiosqlite connection.      aiosqlite c_1]] - rationale - gateway/tests/test_ledger.py
+- [[Remove a WebSocket connection from connected set          Args             webs]] - rationale - gateway/approval_queue/queue.py
+- [[Result of an SSH command execution]] - rationale - gateway/ssh_proxy/proxy.py
+- [[Retention enforcement removes expired entries.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Retention enforcement.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Return Authorization headers with test token]] - rationale - gateway/tests/conftest.py
+- [[RouterConfig]] - code - gateway/ingest_api/config.py
+- [[SHA-256 hash of content string          Args             content Text to hash]] - rationale - gateway/ingest_api/ledger.py
+- [[SSHResult]] - code - gateway/ssh_proxy/proxy.py
+- [[Scan 1000 messages in under 5 seconds.]] - rationale - gateway/tests/test_performance.py
+- [[Set up app state and provide TestClient.]] - rationale - gateway/tests/test_ssh_endpoints.py
+- [[Set up app state and provide TestClient._1]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[Stats reflect actual data.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Store configuration          Actual database connection created in initialize().]] - rationale - gateway/ingest_api/ledger.py
+- [[Tamper detection at various chain positions.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Test PIISanitizer accepts and stores mode parameter.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test PIISanitizer defaults to enforce mode.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test creating a ledger entry]] - rationale - gateway/tests/test_ledger.py
+- [[Test deleting a ledger entry]] - rationale - gateway/tests/test_ledger.py
+- [[Test deleting a non-existent entry]] - rationale - gateway/tests/test_ledger.py
+- [[Test ledger query with source filter]] - rationale - gateway/tests/test_ledger.py
+- [[Test paginated ledger query]] - rationale - gateway/tests/test_ledger.py
+- [[Test querying ledger with forwarded_to filter]] - rationale - gateway/tests/test_ledger.py
+- [[Test querying ledger with time range filters]] - rationale - gateway/tests/test_ledger.py
+- [[Test require_approval=false executes directly (Finding 5)]] - rationale - gateway/tests/test_ssh_endpoints.py
+- [[Test retrieving a ledger entry by ID]] - rationale - gateway/tests/test_ledger.py
+- [[Test stats calculation]] - rationale - gateway/tests/test_ledger.py
+- [[Test that SSH disabled returns 503 (Finding 12)]] - rationale - gateway/tests/test_ssh_endpoints.py
+- [[Test that configuration includes tool result PII settings]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[TestAuditChainIntegrity]] - code - gateway/tests/test_audit_chain.py
+- [[TestAuditChainPerformance]] - code - gateway/tests/test_performance.py
+- [[TestChainExportAndVerification]] - code - gateway/tests/test_audit_chain.py
+- [[TestConcurrentWrites]] - code - gateway/tests/test_audit_chain.py
+- [[TestFullPipelineLatency]] - code - gateway/tests/test_performance.py
+- [[TestMCPProxyConfigLoading]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[TestPIISanitizerPerformance]] - code - gateway/tests/test_performance.py
+- [[TestPromptGuardPerformance]] - code - gateway/tests/test_performance.py
+- [[TestRetention]] - code - gateway/tests/test_audit_chain.py
+- [[TestSSHDisabledEndpoint]] - code - gateway/tests/test_ssh_endpoints.py
+- [[TestSSHExec]] - code - gateway/tests/test_ssh_endpoints.py
+- [[TestSSHHistory]] - code - gateway/tests/test_ssh_endpoints.py
+- [[TestSSHHosts]] - code - gateway/tests/test_ssh_endpoints.py
+- [[TestSSHRequireApprovalFalse]] - code - gateway/tests/test_ssh_endpoints.py
+- [[TestSSHWriteFileLedgerAudit]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[TestSSHWriteFileShellMetacharacterContentRoundTrip]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[TestTamperDetection]] - code - gateway/tests/test_audit_chain.py
+- [[TestTrustManagerPerformance]] - code - gateway/tests/test_performance.py
+- [[Trust check 10000 lookups in  1s.]] - rationale - gateway/tests/test_performance.py
+- [[Validate that default_url uses httphttps and targets an internal Docker host.]] - rationale - gateway/ingest_api/config.py
+- [[Validate that each target URL uses httphttps and targets an internal Docker hos]] - rationale - gateway/ingest_api/config.py
+- [[Verify detection accuracy doesn't degrade at scale.]] - rationale - gateway/tests/test_performance.py
+- [[Verify hash matches SHA-256 of the content.]] - rationale - gateway/tests/test_audit_chain.py
+- [[WebSocket_1]] - code - gateway/approval_queue/queue.py
+- [[When require_approval=false, non-auto-approved commands execute directly.]] - rationale - gateway/tests/test_ssh_endpoints.py
+- [[Write 1000 audit entries in under 5 seconds.]] - rationale - gateway/tests/test_performance.py
+- [[Write 1000 entries and verify they're all there.]] - rationale - gateway/tests/test_audit_chain.py
+- [[__init__.py_12]] - code - gateway/ssh_proxy/__init__.py
+- [[auth_headers()]] - code - gateway/tests/conftest.py
+- [[auth_headers()_2]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[auth_headers()_3]] - code - gateway/tests/test_ssh_endpoints.py
+- [[auth_headers()_4]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[client()_16]] - code - gateway/tests/test_ssh_endpoints.py
+- [[client()_17]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[conftest.py]] - code - gateway/tests/conftest.py
+- [[cwd is validated and passed to proxy.execute().]] - rationale - gateway/tests/test_ssh_endpoints.py
+- [[cwd must be an absolute path.]] - rationale - gateway/tests/test_ssh_endpoints.py
+- [[cwd with shell metacharacters is rejected before execution.]] - rationale - gateway/tests/test_ssh_endpoints.py
+- [[full_pipeline_config()]] - code - gateway/tests/test_security_integration.py
+- [[gatewayingest_apiledger.py (DataLedger)]] - code - gateway/ingest_api/ledger.py
+- [[gatewayingest_apisanitizer.py (PIISanitizer)]] - code - gateway/ingest_api/sanitizer.py
+- [[gatewayingest_apissh_config.py (SSHConfig)]] - code - gateway/ingest_api/ssh_config.py
+- [[gatewayssh_proxyproxy.py]] - code - gateway/ssh_proxy/proxy.py
+- [[ledger()]] - code - gateway/tests/test_audit_chain.py
+- [[ledger()_2]] - code - gateway/tests/test_security_integration.py
+- [[pii_config()]] - code - gateway/tests/test_e2e_proxy.py
+- [[pii_config()_1]] - code - gateway/tests/test_e2e_watchtower.py
+- [[proxy.py]] - code - gateway/ssh_proxy/proxy.py
+- [[sanitizer()]] - code - gateway/tests/conftest.py
+- [[state.py]] - code - gateway/ingest_api/state.py
+- [[test_audit_chain.py]] - code - gateway/tests/test_audit_chain.py
+- [[test_client()]] - code - gateway/tests/conftest.py
+- [[test_config()]] - code - gateway/tests/conftest.py
+- [[test_config()_1]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[test_config_with_ssh()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[test_config_with_ssh()_1]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[test_delete_entry()]] - code - gateway/tests/test_ledger.py
+- [[test_delete_nonexistent()]] - code - gateway/tests/test_ledger.py
+- [[test_get_entry()]] - code - gateway/tests/test_ledger.py
+- [[test_get_stats()_2]] - code - gateway/tests/test_ledger.py
+- [[test_initialize_is_idempotent()_1]] - code - gateway/tests/test_ledger.py
+- [[test_ledger()]] - code - gateway/tests/conftest.py
+- [[test_ledger.py]] - code - gateway/tests/test_ledger.py
+- [[test_mcp_result_endpoint.py]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[test_performance.py]] - code - gateway/tests/test_performance.py
+- [[test_query_ledger()]] - code - gateway/tests/test_ledger.py
+- [[test_query_with_filter()]] - code - gateway/tests/test_ledger.py
+- [[test_query_with_forwarded_to_filter()]] - code - gateway/tests/test_ledger.py
+- [[test_query_with_time_filters()]] - code - gateway/tests/test_ledger.py
+- [[test_record_entry()]] - code - gateway/tests/test_ledger.py
+- [[test_ssh_endpoints.py]] - code - gateway/tests/test_ssh_endpoints.py
+- [[test_ssh_write_file_endpoint.py]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/Community_1
+SORT file.name ASC
+```
+
+## Connections to other communities
+- 90 edges to [[_COMMUNITY_Community 12]]
+- 53 edges to [[_COMMUNITY_Community 870]]
+- 34 edges to [[_COMMUNITY_Community 38]]
+- 32 edges to [[_COMMUNITY_Community 24]]
+- 32 edges to [[_COMMUNITY_Community 513]]
+- 31 edges to [[_COMMUNITY_Community 6]]
+- 17 edges to [[_COMMUNITY_Community 9]]
+- 16 edges to [[_COMMUNITY_Community 1325]]
+- 11 edges to [[_COMMUNITY_Community 212]]
+- 11 edges to [[_COMMUNITY_Community 35]]
+- 10 edges to [[_COMMUNITY_Community 116]]
+- 9 edges to [[_COMMUNITY_Community 255]]
+- 9 edges to [[_COMMUNITY_Community 273]]
+- 9 edges to [[_COMMUNITY_Community 34]]
+- 9 edges to [[_COMMUNITY_Community 265]]
+- 8 edges to [[_COMMUNITY_Community 22]]
+- 7 edges to [[_COMMUNITY_Community 43]]
+- 7 edges to [[_COMMUNITY_Community 74]]
+- 7 edges to [[_COMMUNITY_Community 754]]
+- 6 edges to [[_COMMUNITY_Community 130]]
+- 5 edges to [[_COMMUNITY_Community 3]]
+- 5 edges to [[_COMMUNITY_Community 487]]
+- 5 edges to [[_COMMUNITY_Community 426]]
+- 5 edges to [[_COMMUNITY_Community 775]]
+- 5 edges to [[_COMMUNITY_Community 106]]
+- 4 edges to [[_COMMUNITY_Community 18]]
+- 4 edges to [[_COMMUNITY_Community 99]]
+- 4 edges to [[_COMMUNITY_Community 271]]
+- 3 edges to [[_COMMUNITY_Community 69]]
+- 3 edges to [[_COMMUNITY_Community 50]]
+- 3 edges to [[_COMMUNITY_Community 596]]
+- 3 edges to [[_COMMUNITY_Community 652]]
+- 3 edges to [[_COMMUNITY_Community 345]]
+- 3 edges to [[_COMMUNITY_Community 374]]
+- 2 edges to [[_COMMUNITY_Community 1104]]
+- 2 edges to [[_COMMUNITY_Community 14]]
+- 2 edges to [[_COMMUNITY_Community 136]]
+- 2 edges to [[_COMMUNITY_Community 109]]
+- 2 edges to [[_COMMUNITY_Community 1055]]
+- 2 edges to [[_COMMUNITY_Community 174]]
+- 1 edge to [[_COMMUNITY_Community 124]]
+- 1 edge to [[_COMMUNITY_Community 968]]
+- 1 edge to [[_COMMUNITY_Community 1003]]
+- 1 edge to [[_COMMUNITY_Community 1256]]
+- 1 edge to [[_COMMUNITY_Community 1340]]
+- 1 edge to [[_COMMUNITY_Community 1039]]
+- 1 edge to [[_COMMUNITY_Community 1025]]
+- 1 edge to [[_COMMUNITY_Community 66]]
+- 1 edge to [[_COMMUNITY_Community 454]]
+- 1 edge to [[_COMMUNITY_Community 281]]
+- 1 edge to [[_COMMUNITY_Community 250]]
+- 1 edge to [[_COMMUNITY_Community 1176]]
+- 1 edge to [[_COMMUNITY_Community 474]]
+- 1 edge to [[_COMMUNITY_Community 346]]
+- 1 edge to [[_COMMUNITY_Community 337]]
+- 1 edge to [[_COMMUNITY_Community 20]]
+- 1 edge to [[_COMMUNITY_Community 823]]
+- 1 edge to [[_COMMUNITY_Community 871]]
+- 1 edge to [[_COMMUNITY_Community 42]]
+- 1 edge to [[_COMMUNITY_Community 8]]
+- 1 edge to [[_COMMUNITY_Community 333]]
+- 1 edge to [[_COMMUNITY_Community 793]]
+- 1 edge to [[_COMMUNITY_Community 0]]
+- 1 edge to [[_COMMUNITY_Community 63]]
+- 1 edge to [[_COMMUNITY_Community 30]]
+- 1 edge to [[_COMMUNITY_Community 52]]
+- 1 edge to [[_COMMUNITY_Community 36]]
+- 1 edge to [[_COMMUNITY_Community 251]]
+- 1 edge to [[_COMMUNITY_Community 282]]
+- 1 edge to [[_COMMUNITY_Community 32]]
+- 1 edge to [[_COMMUNITY_Community 448]]
+- 1 edge to [[_COMMUNITY_Community 818]]
+- 1 edge to [[_COMMUNITY_Community 405]]
+
+## Top bridge nodes
+- [[PIIConfig]] - degree 175, connects to 43 communities
+- [[state.py]] - degree 37, connects to 23 communities
+- [[GatewayConfig_1]] - degree 65, connects to 12 communities
+- [[RouterConfig]] - degree 66, connects to 11 communities
+- [[LedgerConfig]] - degree 62, connects to 11 communities

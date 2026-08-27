@@ -1,28 +1,25 @@
 ---
-source_file: "firmware/voice-terminal/test/test_playback_state/test_playback_state.c"
+source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "Playback State (test_playback_state)"
-location: "L307"
+community: "Community 138"
+location: "L431"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Playback_State_test_playback_state
+  - community/Community_138
 ---
 
 # main()
 
 ## Connections
-- [[test_drain_clears_playing_and_returns_idle()]] - `calls` [EXTRACTED]
-- [[test_drain_keeps_face_off_idle_when_retriggered()]] - `calls` [EXTRACTED]
-- [[test_gate_open_sets_speaking_and_tts_playing()]] - `calls` [EXTRACTED]
-- [[test_gate_opens_on_20s_age()]] - `calls` [EXTRACTED]
-- [[test_gate_opens_on_768kb_cap()]] - `calls` [EXTRACTED]
-- [[test_gate_opens_on_reply_complete()]] - `calls` [EXTRACTED]
-- [[test_gate_stays_closed_before_any_cap()]] - `calls` [EXTRACTED]
-- [[test_gate_stays_closed_leaves_state_idle()]] - `calls` [EXTRACTED]
-- [[test_playback_state.c]] - `contains` [EXTRACTED]
-- [[test_resume_offset_first_attempt_is_zero()]] - `calls` [EXTRACTED]
-- [[test_resume_offset_rewinds_8kb()]] - `calls` [EXTRACTED]
-- [[test_track_sent_ok_is_monotonic()]] - `calls` [EXTRACTED]
+- [[._take_screenshot()_2]] - `calls` [EXTRACTED]
+- [[.click()_2]] - `calls` [EXTRACTED]
+- [[.close()_2]] - `calls` [EXTRACTED]
+- [[.extract()_2]] - `calls` [EXTRACTED]
+- [[.fill_field()_2]] - `calls` [EXTRACTED]
+- [[.navigate()_2]] - `calls` [EXTRACTED]
+- [[CLI interface for SecureBrowser_2]] - `rationale_for` [EXTRACTED]
+- [[SecureBrowser_2]] - `calls` [EXTRACTED]
+- [[browse.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Playback_State_test_playback_state
+#graphify/code #graphify/EXTRACTED #community/Community_138

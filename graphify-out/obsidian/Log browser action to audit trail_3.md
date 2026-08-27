@@ -1,18 +1,17 @@
 ---
-source_file: ".agents/skills/i-browser/scripts/browse.py"
+source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "rationale"
-community: "Browse (scripts)"
+community: "Community 143"
 location: "L206"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Browse_scripts
+  - community/Community_143
 ---
 
 # Log browser action to audit trail
 
 ## Connections
-- [[._log_action()]] - `rationale_for` [EXTRACTED]
-- [[._log_action()_4]] - `rationale_for` [EXTRACTED]
+- [[._log_action()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Browse_scripts
+#graphify/rationale #graphify/EXTRACTED #community/Community_143

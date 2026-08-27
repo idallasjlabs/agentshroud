@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-03-05-r2.md"
 type: "document"
-community: "Phase Review 2026 03 (reviews)"
+community: "Community 135"
 location: "L48"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_Review_2026_03_reviews
+  - community/Community_135
 ---
 
 # 🔴 ERRORS (must fix)
@@ -15,4 +15,4 @@ tags:
 - [[3. Round 2 Findings]] - `contains` [EXTRACTED]
 - [[E1 Tailscale sidecar on internal-only network cannot reach control plane]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_Review_2026_03_reviews
+#graphify/document #graphify/EXTRACTED #community/Community_135

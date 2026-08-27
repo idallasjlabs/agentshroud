@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-sad/SKILL.md"
 type: "document"
-community: "Skill (i-sad)"
+community: "Community 606"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-sad
+  - community/Community_606
 ---
 
 # System Audit & Documentation
@@ -27,4 +27,4 @@ tags:
 - [[SECTION 9 — ERROR CATALOG]] - `contains` [EXTRACTED]
 - [[SKILL_47]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-sad
+#graphify/document #graphify/EXTRACTED #community/Community_606

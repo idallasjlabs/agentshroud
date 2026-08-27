@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md"
 type: "document"
-community: "Google Calendar Quick Setup (setup)"
+community: "Community 544"
 location: "L269"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Google_Calendar_Quick_Setup_setup
+  - community/Community_544
 ---
 
 # ⚡ Fastest Path Forward
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Google Calendar & Contacts - Quick Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Google_Calendar_Quick_Setup_setup
+#graphify/document #graphify/EXTRACTED #community/Community_544

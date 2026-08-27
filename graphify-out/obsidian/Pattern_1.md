@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "Egress Monitor"
+community: "Community 14"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress_Monitor
+  - community/Community_14
 ---
 
 # Pattern
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._compile_patterns()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress_Monitor
+#graphify/code #graphify/EXTRACTED #community/Community_14

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Other/text_control_center.py.md"
 type: "document"
-community: "Text Control Center.py (Other)"
+community: "Community 1111"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Text_Control_Centerpy_Other
+  - community/Community_1111
 ---
 
 # text_control_center.py / agentshroud_manager.py
@@ -18,4 +18,4 @@ tags:
 - [[Relationship to Web API]] - `contains` [EXTRACTED]
 - [[text_control_center.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Text_Control_Centerpy_Other
+#graphify/document #graphify/EXTRACTED #community/Community_1111

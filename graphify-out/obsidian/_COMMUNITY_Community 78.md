@@ -1,0 +1,261 @@
+---
+type: community
+members: 172
+---
+
+# Community 78
+
+**Members:** 172 nodes
+
+## Members
+- [[._calculate_risk_score()]] - code - gateway/security/tool_chain_analyzer.py
+- [[._cleanup_old_sessions()_1]] - code - gateway/security/tool_chain_analyzer.py
+- [[._detect_chain_patterns()]] - code - gateway/security/tool_chain_analyzer.py
+- [[._load_custom_patterns()]] - code - gateway/security/tool_chain_analyzer.py
+- [[._matches_source_pattern()]] - code - gateway/security/tool_chain_analyzer.py
+- [[._trigger_alert()_1]] - code - gateway/security/tool_chain_analyzer.py
+- [[.add_pattern()]] - code - gateway/security/tool_chain_analyzer.py
+- [[.analyze_tool_call()]] - code - gateway/security/tool_chain_analyzer.py
+- [[.analyzer()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.analyzer()_1]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.analyzer()_2]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.score_response_consistency()]] - code - gateway/security/multi_turn_tracker.py
+- [[.test_alert_callbacks()_1]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_approval_system()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_basic_tool_call_tracking()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_chain_length_limits()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_clean_params_pass()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_config_file_to_outbound()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_consistent_response_scores_high()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[.test_credential_to_outbound_blocking()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_custom_patterns()_1]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_delete_file_mostly_irreversible()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_disabled_analyzer()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_edge_cases()_3]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_exec_to_network_pattern()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_global_stats()_1]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_initialization()_4]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_language_mismatch_or_anomalies()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[.test_legitimate_file_path_passes()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_multiple_params_scanned()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_normal_tool_sequences_allowed()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_off_topic_response_scores_low()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[.test_param_path_traversal_blocked()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_param_sql_injection_blocked()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_param_template_injection_blocked()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_pattern_configuration()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_rapid_file_enumeration()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_read_file_fully_reversible()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_read_to_http_exfiltration()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_read_to_message_exfiltration()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_reversibility_below_threshold_has_reasoning()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_risk_score_calculation()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_sanitization_returns_cleaned()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_session_cleanup()_1]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_session_stats()_1]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_shell_bleed_bypass_blocked()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_time_window_expiry()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_unknown_tool_defaults_low()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_unsolicited_tool_call_flagged()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[.tracker()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[A detected suspicious chain.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Action to take when a governance limit is hit.]] - rationale - gateway/security/subagent_governance.py
+- [[Actions to take on suspicious chains.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Add a new chain pattern at runtime.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[AgentShroud's stance on one vulnerability class.]] - rationale - scripts/triage-cve-mitigations.py
+- [[AlarmStatus]] - code - gateway/soc/models.py
+- [[Alert severity levels.]] - rationale - gateway/security/multi_turn_tracker.py
+- [[AlertLevel]] - code - gateway/security/multi_turn_tracker.py
+- [[Analyze a tool call for suspicious chain patterns.          Args             se]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Any_77]] - code - scripts/triage-cve-mitigations.py
+- [[Best-effort repo-relative path string for display (falls back to str).]] - rationale - scripts/triage-cve-mitigations.py
+- [[CLI entry point.      Args         argv Optional argv override (for tests).]] - rationale - scripts/triage-cve-mitigations.py
+- [[Calculate risk score for a detected chain.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Categories of information that contribute to disclosure scoring.]] - rationale - gateway/security/multi_turn_tracker.py
+- [[ChainAction]] - code - gateway/security/tool_chain_analyzer.py
+- [[ChainMatch]] - code - gateway/security/tool_chain_analyzer.py
+- [[ChainPattern]] - code - gateway/security/tool_chain_analyzer.py
+- [[Check if a call matches the source pattern, including parameter analysis.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[ClassProfile]] - code - scripts/triage-cve-mitigations.py
+- [[Classify an advisory into its vulnerability class from title+description.      D]] - rationale - scripts/triage-cve-mitigations.py
+- [[Compute a heuristic consistency score between query and response.          Retur]] - rationale - gateway/security/multi_turn_tracker.py
+- [[Compute resulting-status counts and gap themes from triage results.      Args]] - rationale - scripts/triage-cve-mitigations.py
+- [[ConsistencyScore]] - code - gateway/security/multi_turn_tracker.py
+- [[Coverage]] - code - scripts/triage-cve-mitigations.py
+- [[Create a MultiTurnTracker instance for testing.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Create a ToolChainAnalyzer instance for testing.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Create a mock alert callback for testing.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Create a mock alert callback for testing._1]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Decision]] - code - gateway/security/module_stats.py
+- [[Definition of a suspicious tool call pattern.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Detect if current call completes a suspicious pattern.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[DisclosureCategory]] - code - gateway/security/multi_turn_tracker.py
+- [[Enum]] - code
+- [[FindingSeverity]] - code - gateway/proxy/web_content_scanner.py
+- [[Fixed taxonomy of advisory vulnerability classes.]] - rationale - scripts/triage-cve-mitigations.py
+- [[GovernanceAction]] - code - gateway/security/subagent_governance.py
+- [[Heuristic consistency score between a query and its response.]] - rationale - gateway/security/multi_turn_tracker.py
+- [[How reversible an action is (1.0 = fully reversible, 0.0 = irreversible).]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Load custom patterns from configuration.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[ParamScanResult]] - code - gateway/security/tool_chain_analyzer.py
+- [[Parse a dotted numeric version (e.g. ``2026.4.11``) to a tuple.      Returns `]] - rationale - scripts/triage-cve-mitigations.py
+- [[Path_48]] - code - scripts/triage-cve-mitigations.py
+- [[Produce an honest mitigation verdict for a single advisory entry.      Combines]] - rationale - scripts/triage-cve-mitigations.py
+- [[Read the currently pinned OpenClaw version from dockerversions.env.      Return]] - rationale - scripts/triage-cve-mitigations.py
+- [[Remove old sessions to prevent memory bloat._1]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Render a Python list-of-strings literal matching the file's style.]] - rationale - scripts/triage-cve-mitigations.py
+- [[Render the gap report markdown (development plan).      Args         agent_id]] - rationale - scripts/triage-cve-mitigations.py
+- [[Represents a single tool call.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Result of scanning tool parameters for injection patterns.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Return the index just past a field value that may span multiple lines.      Trac]] - rationale - scripts/triage-cve-mitigations.py
+- [[ReversibilityScore]] - code - gateway/security/tool_chain_analyzer.py
+- [[Rewrite ``status``  ``mitigation``  ``defense_layers`` in place.      For each]] - rationale - scripts/triage-cve-mitigations.py
+- [[Risk levels for tool call chains.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[RiskLevel_4]] - code - gateway/security/tool_chain_analyzer.py
+- [[SessionChainContext]] - code - gateway/security/tool_chain_analyzer.py
+- [[Test alert callback functionality._1]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test approval system interface.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test basic tool call tracking functionality.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test cases for ToolChainAnalyzer class.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test cleanup of old sessions._1]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test detection of config file access → outbound pattern.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test detection of exec → network communication pattern.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test detection of rapid file enumeration.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test detection of read → HTTP exfiltration pattern.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test detection of read → message exfiltration pattern.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test edge cases and error conditions._2]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test getting global statistics._1]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test getting session statistics._1]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test loading custom patterns from configuration.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test proper initialization of ToolChainAnalyzer.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test risk score calculation for detected chains.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test that chain length limits are respected.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test that credential access → outbound tools are blocked.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test that disabled analyzer allows all calls.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test that normal tool sequences pass through.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test that patterns are properly configured.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test that patterns don't match outside time windows.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[TestParamSanitization]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[TestResponseConsistency]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[TestReversibilityScoring]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[TestShellBleedPatterns]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[TestToolChainAnalyzer_1]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[The status that will actually be written for a result.      Unapplied verdicts f]] - rationale - scripts/triage-cve-mitigations.py
+- [[The verdict for one advisory.]] - rationale - scripts/triage-cve-mitigations.py
+- [[Threat levels for detected issues.]] - rationale - gateway/security/git_guard.py
+- [[ThreatLevel_2]] - code - gateway/security/git_guard.py
+- [[Tool call chain context for a session.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[ToolCall]] - code - gateway/security/tool_chain_analyzer.py
+- [[Triage every ``under_review`` entry for agent_id (per-agent isolated).      Re]] - rationale - scripts/triage-cve-mitigations.py
+- [[TriageResult]] - code - scripts/triage-cve-mitigations.py
+- [[Trigger alert callbacks for a detected chain.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[True when ``fixed_in`` version is = the running image (already patched).      A]] - rationale - scripts/triage-cve-mitigations.py
+- [[URLVerdict]] - code - gateway/proxy/url_analyzer.py
+- [[Verify expanded _PARAM_INJECTION_PATTERNS catch piped-interpreter and     heredo]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[VulnClass]] - code - scripts/triage-cve-mitigations.py
+- [[_consume_field()]] - code - scripts/triage-cve-mitigations.py
+- [[_py_list_literal()]] - code - scripts/triage-cve-mitigations.py
+- [[_read_running_version()]] - code - scripts/triage-cve-mitigations.py
+- [[_rel()]] - code - scripts/triage-cve-mitigations.py
+- [[classify()_1]] - code - scripts/triage-cve-mitigations.py
+- [[final_status()]] - code - scripts/triage-cve-mitigations.py
+- [[is_source_fixed()]] - code - scripts/triage-cve-mitigations.py
+- [[main()_25]] - code - scripts/triage-cve-mitigations.py
+- [[mock_alert_callback()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[mock_alert_callback()_1]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[module_stats.py]] - code - gateway/security/module_stats.py
+- [[multi_turn_tracker()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[multi_turn_tracker.py]] - code - gateway/security/multi_turn_tracker.py
+- [[parse_version()]] - code - scripts/triage-cve-mitigations.py
+- [[render_gap_report()]] - code - scripts/triage-cve-mitigations.py
+- [[rewrite_registry_text()_1]] - code - scripts/triage-cve-mitigations.py
+- [[str]] - code
+- [[summarize()]] - code - scripts/triage-cve-mitigations.py
+- [[test_multi_turn_tracker.py]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[test_tool_chain_analyzer.py]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[tool_chain_analyzer()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[tool_chain_analyzer.py]] - code - gateway/security/tool_chain_analyzer.py
+- [[triage-cve-mitigations.py]] - code - scripts/triage-cve-mitigations.py
+- [[triage_agent()]] - code - scripts/triage-cve-mitigations.py
+- [[triage_entry()]] - code - scripts/triage-cve-mitigations.py
+- [[url_analyzer.py]] - code - gateway/proxy/url_analyzer.py
+- [[web_content_scanner.py]] - code - gateway/proxy/web_content_scanner.py
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/Community_78
+SORT file.name ASC
+```
+
+## Connections to other communities
+- 34 edges to [[_COMMUNITY_Community 6]]
+- 18 edges to [[_COMMUNITY_Community 27]]
+- 10 edges to [[_COMMUNITY_Community 15]]
+- 7 edges to [[_COMMUNITY_Community 14]]
+- 7 edges to [[_COMMUNITY_Community 1129]]
+- 7 edges to [[_COMMUNITY_Community 256]]
+- 6 edges to [[_COMMUNITY_Community 22]]
+- 6 edges to [[_COMMUNITY_Community 1001]]
+- 6 edges to [[_COMMUNITY_Community 5]]
+- 5 edges to [[_COMMUNITY_Community 36]]
+- 5 edges to [[_COMMUNITY_Community 119]]
+- 5 edges to [[_COMMUNITY_Community 44]]
+- 5 edges to [[_COMMUNITY_Community 659]]
+- 4 edges to [[_COMMUNITY_Community 584]]
+- 4 edges to [[_COMMUNITY_Community 35]]
+- 4 edges to [[_COMMUNITY_Community 18]]
+- 4 edges to [[_COMMUNITY_Community 54]]
+- 3 edges to [[_COMMUNITY_Community 77]]
+- 3 edges to [[_COMMUNITY_Community 75]]
+- 3 edges to [[_COMMUNITY_Community 34]]
+- 3 edges to [[_COMMUNITY_Community 11]]
+- 3 edges to [[_COMMUNITY_Community 62]]
+- 3 edges to [[_COMMUNITY_Community 994]]
+- 3 edges to [[_COMMUNITY_Community 1842]]
+- 2 edges to [[_COMMUNITY_Community 73]]
+- 2 edges to [[_COMMUNITY_Community 137]]
+- 2 edges to [[_COMMUNITY_Community 138]]
+- 2 edges to [[_COMMUNITY_Community 179]]
+- 2 edges to [[_COMMUNITY_Community 86]]
+- 2 edges to [[_COMMUNITY_Community 147]]
+- 2 edges to [[_COMMUNITY_Community 21]]
+- 2 edges to [[_COMMUNITY_Community 282]]
+- 2 edges to [[_COMMUNITY_Community 444]]
+- 2 edges to [[_COMMUNITY_Community 116]]
+- 2 edges to [[_COMMUNITY_Community 1135]]
+- 2 edges to [[_COMMUNITY_Community 16]]
+- 2 edges to [[_COMMUNITY_Community 143]]
+- 2 edges to [[_COMMUNITY_Community 992]]
+- 2 edges to [[_COMMUNITY_Community 115]]
+- 2 edges to [[_COMMUNITY_Community 30]]
+- 2 edges to [[_COMMUNITY_Community 532]]
+- 1 edge to [[_COMMUNITY_Community 106]]
+- 1 edge to [[_COMMUNITY_Community 1016]]
+- 1 edge to [[_COMMUNITY_Community 47]]
+- 1 edge to [[_COMMUNITY_Community 9]]
+- 1 edge to [[_COMMUNITY_Community 53]]
+- 1 edge to [[_COMMUNITY_Community 251]]
+- 1 edge to [[_COMMUNITY_Community 442]]
+- 1 edge to [[_COMMUNITY_Community 233]]
+- 1 edge to [[_COMMUNITY_Community 193]]
+- 1 edge to [[_COMMUNITY_Community 1338]]
+- 1 edge to [[_COMMUNITY_Community 110]]
+- 1 edge to [[_COMMUNITY_Community 97]]
+- 1 edge to [[_COMMUNITY_Community 869]]
+- 1 edge to [[_COMMUNITY_Community 406]]
+- 1 edge to [[_COMMUNITY_Community 397]]
+- 1 edge to [[_COMMUNITY_Community 825]]
+- 1 edge to [[_COMMUNITY_Community 461]]
+- 1 edge to [[_COMMUNITY_Community 1060]]
+- 1 edge to [[_COMMUNITY_Community 481]]
+- 1 edge to [[_COMMUNITY_Community 1067]]
+- 1 edge to [[_COMMUNITY_Community 934]]
+- 1 edge to [[_COMMUNITY_Community 990]]
+
+## Top bridge nodes
+- [[Enum]] - degree 112, connects to 47 communities
+- [[str]] - degree 48, connects to 20 communities
+- [[GovernanceAction]] - degree 12, connects to 8 communities
+- [[multi_turn_tracker.py]] - degree 12, connects to 5 communities
+- [[url_analyzer.py]] - degree 9, connects to 4 communities

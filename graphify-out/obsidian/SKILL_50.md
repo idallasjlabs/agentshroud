@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-sdlc/SKILL.md"
 type: "document"
-community: "Skill (i-sdlc)"
+community: "Community 1430"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-sdlc
+  - community/Community_1430
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill sdlc]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-sdlc
+#graphify/document #graphify/EXTRACTED #community/Community_1430

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Auth Errors.md"
 type: "document"
-community: "Auth errors (07 - Errors & Troubleshooting)"
+community: "Community 313"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Auth_errors_07_-_Errors__Troubleshooting
+  - community/Community_313
 ---
 
 # HTTP 401 — Unauthorized
@@ -18,4 +18,4 @@ tags:
 - [[Token Reset]] - `contains` [EXTRACTED]
 - [[Token Verification]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Auth_errors_07_-_Errors__Troubleshooting
+#graphify/document #graphify/EXTRACTED #community/Community_313

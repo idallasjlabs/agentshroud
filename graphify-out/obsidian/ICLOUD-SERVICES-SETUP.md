@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/ICLOUD-SERVICES-SETUP.md"
 type: "document"
-community: "Secrets Usage And Collaborator (security)"
+community: "Community 236"
 location: "L1"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Secrets_Usage_And_Collaborator_security
+  - community/Community_236
 ---
 
 # ICLOUD-SERVICES-SETUP.md
@@ -16,4 +16,4 @@ tags:
 - [[GOOGLE-SERVICES-SETUP]] - `semantically_similar_to` [INFERRED]
 - [[iCloud Services Setup - Complete Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/Secrets_Usage_And_Collaborator_security
+#graphify/document #graphify/INFERRED #community/Community_236

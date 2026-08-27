@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/github/SKILL.md"
 type: "document"
-community: "Skill (github)"
+community: "Community 672"
 location: "L68"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_github
+  - community/Community_672
 ---
 
 # Pull Requests
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Common Commands_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_github
+#graphify/document #graphify/EXTRACTED #community/Community_672

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/access-control-matrix.md"
 type: "document"
-community: "Access Control Matrix (security)"
+community: "Community 175"
 location: "L240"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Access_Control_Matrix_security
+  - community/Community_175
 ---
 
 # Tool Categories and Trust Requirements
@@ -19,4 +19,4 @@ tags:
 - [[Category E Critical Operations (L4 + Manual Approval)]] - `contains` [EXTRACTED]
 - [[MCP Proxy Tool Authorization]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Access_Control_Matrix_security
+#graphify/document #graphify/EXTRACTED #community/Community_175

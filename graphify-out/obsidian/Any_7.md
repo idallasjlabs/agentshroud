@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "Aiosqlite (05 - Dependencies)"
+community: "Community 1"
 location: "L347"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Aiosqlite_05_-_Dependencies
+  - community/Community_1
 ---
 
 # Any
@@ -17,4 +17,4 @@ tags:
 - [[LedgerEntry_1]] - `uses` [INFERRED]
 - [[LedgerQueryResponse_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Aiosqlite_05_-_Dependencies
+#graphify/code #graphify/INFERRED #community/Community_1

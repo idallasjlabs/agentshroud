@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-mnemosyne/README.md"
 type: "document"
-community: "Readme (i-pm)"
+community: "Community 146"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Readme_i-pm
+  - community/Community_146
 ---
 
 # Mnemosyne Retention Engineer (README)
@@ -14,4 +14,4 @@ tags:
 - [[Mnemosyne Retention Engineer (SKILL)]] - `conceptually_related_to` [INFERRED]
 - [[Skills Guide (catalog)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/Readme_i-pm
+#graphify/document #graphify/INFERRED #community/Community_146

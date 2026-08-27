@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-browser/README.md"
 type: "document"
-community: "Readme (i-browser)"
+community: "Community 1218"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-browser
+  - community/Community_1218
 ---
 
 # README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Browser — Secure Browser Automation_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-browser
+#graphify/document #graphify/EXTRACTED #community/Community_1218

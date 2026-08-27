@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Telegram Proxy Inbound"
+community: "Community 32"
 location: "L8003"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Inbound
+  - community/Community_32
 ---
 
 # TestProgressiveLockdownUX
@@ -41,4 +41,4 @@ tags:
 - [[Tests for lockdown UX unlock fix, collaborator notifications, locked, immunit]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Inbound
+#graphify/code #graphify/EXTRACTED #community/Community_32

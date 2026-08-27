@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "code"
-community: "Soc Websocket"
+community: "Community 27"
 location: "L29"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Soc_Websocket
+  - community/Community_27
 ---
 
 # WebSocket
@@ -18,4 +18,4 @@ tags:
 - [[WSEventType]] - `uses` [INFERRED]
 - [[ws_soc_endpoint()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Soc_Websocket
+#graphify/code #graphify/INFERRED #community/Community_27

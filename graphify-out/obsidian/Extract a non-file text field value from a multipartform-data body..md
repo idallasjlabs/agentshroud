@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Telegram Proxy Core"
+community: "Community 862"
 location: "L3451"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Core
+  - community/Community_862
 ---
 
 # Extract a non-file text field value from a multipart/form-data body.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._multipart_get_field()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Core
+#graphify/rationale #graphify/EXTRACTED #community/Community_862

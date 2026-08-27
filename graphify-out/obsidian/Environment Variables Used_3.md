@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/middleware.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
 type: "document"
-community: "Middleware.py (Gateway Core)"
-location: "L110"
+community: "Community 373"
+location: "L433"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Middlewarepy_Gateway_Core
+  - community/Community_373
 ---
 
 # Environment Variables Used
 
 ## Connections
-- [[middleware.py_2]] - `contains` [EXTRACTED]
+- [[main.py_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Middlewarepy_Gateway_Core
+#graphify/document #graphify/EXTRACTED #community/Community_373

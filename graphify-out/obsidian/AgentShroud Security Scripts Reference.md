@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_SCRIPTS_REFERENCE.md"
 type: "document"
-community: "Security Scripts Reference (security)"
+community: "Community 343"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Scripts_Reference_security
+  - community/Community_343
 ---
 
 # AgentShroud Security Scripts Reference
@@ -18,8 +18,9 @@ tags:
 - [[Monitoring Integration]] - `contains` [EXTRACTED]
 - [[SECURITY_SCRIPTS_REFERENCE]] - `contains` [EXTRACTED]
 - [[Script Permissions]] - `contains` [EXTRACTED]
-- [[Troubleshooting_22]] - `contains` [EXTRACTED]
+- [[Troubleshooting_23]] - `contains` [EXTRACTED]
+- [[killswitch.sh_1]] - `contains` [EXTRACTED]
 - [[scan.sh_1]] - `contains` [EXTRACTED]
 - [[verify-security.sh_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Scripts_Reference_security
+#graphify/document #graphify/EXTRACTED #community/Community_343

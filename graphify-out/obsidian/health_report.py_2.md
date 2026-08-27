@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/health_report.py.md"
 type: "document"
-community: "Health Report.py (Security Modules)"
+community: "Community 537"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Health_Reportpy_Security_Modules
+  - community/Community_537
 ---
 
 # health_report.py
@@ -21,4 +21,4 @@ tags:
 - [[Threat Model_16]] - `contains` [EXTRACTED]
 - [[health_report.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Health_Reportpy_Security_Modules
+#graphify/document #graphify/EXTRACTED #community/Community_537

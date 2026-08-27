@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "Progressive Trust Integration"
-location: "L31"
+community: "Community 35"
+location: "L29"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Progressive_Trust_Integration
+  - community/Community_35
 ---
 
 # TrustLevel
@@ -80,4 +80,4 @@ tags:
 - [[test_trust_manager.py]] - `imports` [EXTRACTED]
 - [[trust_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Progressive_Trust_Integration
+#graphify/code #graphify/INFERRED #community/Community_35

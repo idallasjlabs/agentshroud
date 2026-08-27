@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/gh-issues/SKILL.md"
 type: "document"
-community: "Skill (gh-issues)"
+community: "Community 502"
 location: "L283"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_gh-issues
+  - community/Community_502
 ---
 
 # Phase 5 — Spawn Sub-agents (Parallel)
@@ -17,4 +17,4 @@ tags:
 - [[Timeout Handling]] - `contains` [EXTRACTED]
 - [[gh-issues — Auto-fix GitHub Issues with Parallel Sub-agents]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_gh-issues
+#graphify/document #graphify/EXTRACTED #community/Community_502

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "Scorecard Scoring"
+community: "Community 1281"
 location: "L323"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Scorecard_Scoring
+  - community/Community_1281
 ---
 
 # TestScoreRuntimeProtection
@@ -18,4 +18,4 @@ tags:
 - [[.test_two_with_criticals()]] - `method` [EXTRACTED]
 - [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Scorecard_Scoring
+#graphify/code #graphify/EXTRACTED #community/Community_1281

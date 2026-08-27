@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md"
 type: "document"
-community: "Clamav Scanner.py (Security Modules)"
-location: "L83"
+community: "Community 507"
+location: "L70"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Clamav_Scannerpy_Security_Modules
+  - community/Community_507
 ---
 
 # Configuration
 
 ## Connections
-- [[clamav_scanner.py_2]] - `contains` [EXTRACTED]
+- [[alert_dispatcher.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Clamav_Scannerpy_Security_Modules
+#graphify/document #graphify/EXTRACTED #community/Community_507

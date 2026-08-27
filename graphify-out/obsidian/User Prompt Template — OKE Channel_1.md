@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/i-atlas/SKILL.md"
 type: "document"
-community: "Skill (i-atlas)"
+community: "Community 836"
 location: "L173"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-atlas
+  - community/Community_836
 ---
 
 # User Prompt Template — OKE Channel
 
 ## Connections
-- [[Atlas — Curriculum Architect_2]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-atlas
+#graphify/document #graphify/EXTRACTED #community/Community_836

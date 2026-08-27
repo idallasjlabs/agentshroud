@@ -1,22 +1,20 @@
 ---
-source_file: ".agents/skills/i-mcpm-auth-reset/SKILL.md"
+source_file: ".agents/skills/i-icloud/SKILL.md"
 type: "document"
-community: "Skill (i-mcpm-auth-reset)"
-location: "L160"
+community: "Community 316"
+location: "L142"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-mcpm-auth-reset
+  - community/Community_316
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[AWS Token expired (SSO)]] - `contains` [EXTRACTED]
-- [[AWS Unable to locate credentials]] - `contains` [EXTRACTED]
-- [[Atlassian OAuth flow failed]] - `contains` [EXTRACTED]
-- [[GitHub Bad credentials]] - `contains` [EXTRACTED]
-- [[GitHub Docker image not found]] - `contains` [EXTRACTED]
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)]] - `contains` [EXTRACTED]
+- [[401 Unauthorized]] - `contains` [EXTRACTED]
+- [[CalendarContacts not found]] - `contains` [EXTRACTED]
+- [[Connection timeout]] - `contains` [EXTRACTED]
+- [[iCloud Services]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-mcpm-auth-reset
+#graphify/document #graphify/EXTRACTED #community/Community_316

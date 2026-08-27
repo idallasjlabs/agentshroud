@@ -1,11 +1,11 @@
 ---
 source_file: "docs/data/data-dictionary.md"
 type: "concept"
-community: "Diagram 01 C4 Context (images)"
+community: "Community 407"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Diagram_01_C4_Context_images
+  - community/Community_407
 ---
 
 # ApprovalRequest (data entity)
@@ -15,4 +15,4 @@ tags:
 - [[TrustLevel (data entity)]] - `conceptually_related_to` [INFERRED]
 - [[approval_requests SQLite table]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/INFERRED #community/Diagram_01_C4_Context_images
+#graphify/concept #graphify/INFERRED #community/Community_407

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-22-dependency-graph.png"
 type: "image"
-community: "Diagram 11 Trust Boundary (images)"
+community: "Community 280"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Diagram_11_Trust_Boundary_images
+  - community/Community_280
 ---
 
 # Containers startup order: agentshroud-gateway starts first, agentshroud-bot starts after gateway healthy
@@ -17,4 +17,4 @@ tags:
 - [[Docker Secrets required before containers start (openai_api_key.txt, 1password_bot_ , gateway_password.txt, 1password_service_account)]] - `shares_data_with` [EXTRACTED]
 - [[External Dependencies (no deploy) 1Password Cloud, OpenAIAnthropicTelegram APIs, Tailscale Network via SSH]] - `shares_data_with` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Diagram_11_Trust_Boundary_images
+#graphify/image #graphify/EXTRACTED #community/Community_280

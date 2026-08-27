@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-tw/SKILL.md"
 type: "document"
-community: "Skill (i-tw)"
+community: "Community 322"
 location: "L207"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-tw
+  - community/Community_322
 ---
 
 # Formatting
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Writing Style Rules_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-tw
+#graphify/document #graphify/EXTRACTED #community/Community_322

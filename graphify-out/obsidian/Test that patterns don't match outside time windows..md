@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "rationale"
-community: "Tool Chain & CVE Triage"
+community: "Community 78"
 location: "L229"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Tool_Chain__CVE_Triage
+  - community/Community_78
 ---
 
 # Test that patterns don't match outside time windows.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_time_window_expiry()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Tool_Chain__CVE_Triage
+#graphify/rationale #graphify/EXTRACTED #community/Community_78

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/PHASE3_REQUIREMENTS.md"
 type: "document"
-community: "Phase3 Requirements (architecture)"
+community: "Community 352"
 location: "L86"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase3_Requirements_architecture
+  - community/Community_352
 ---
 
 # Files to Mount in Container
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Part 1 Isaiah's Persona Package]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase3_Requirements_architecture
+#graphify/document #graphify/EXTRACTED #community/Community_352

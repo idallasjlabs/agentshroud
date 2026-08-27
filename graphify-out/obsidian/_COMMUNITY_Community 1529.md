@@ -1,15 +1,17 @@
 ---
 type: community
-members: 2
+members: 4
 ---
 
 # Community 1529
 
-**Members:** 2 nodes
+**Members:** 4 nodes
 
 ## Members
-- [[.test_switch_model_script_uses_current_target_syntax()]] - code - gateway/tests/test_config_validation.py
-- [[Operator guidance should use valid switch_model target syntax (no legacy cloud p]] - rationale - gateway/tests/test_config_validation.py
+- [[Application Fields]] - document - docs/project/legal/USPTO-APPLICATION.md
+- [[Filing Basis]] - document - docs/project/legal/USPTO-APPLICATION.md
+- [[Mark]] - document - docs/project/legal/USPTO-APPLICATION.md
+- [[Owner_3]] - document - docs/project/legal/USPTO-APPLICATION.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +21,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Architecture Docs]]
+- 1 edge to [[_COMMUNITY_Community 762]]
 
 ## Top bridge nodes
-- [[.test_switch_model_script_uses_current_target_syntax()]] - degree 2, connects to 1 community
+- [[Application Fields]] - degree 4, connects to 1 community

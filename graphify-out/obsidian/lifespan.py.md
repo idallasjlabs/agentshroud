@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "Security Audit & Watchtower Tests"
+community: "Community 6"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Audit__Watchtower_Tests
+  - community/Community_6
 ---
 
 # lifespan.py
@@ -42,7 +42,6 @@ tags:
 - [[EnvelopeSigner]] - `imports` [EXTRACTED]
 - [[EventBus]] - `imports` [EXTRACTED]
 - [[FalcoAlertWatcher]] - `imports` [EXTRACTED]
-- [[FastAPI_5]] - `imports_from` [EXTRACTED]
 - [[FastAPI_1]] - `imports_from` [EXTRACTED]
 - [[GroupRegistry]] - `imports` [EXTRACTED]
 - [[HTTPConnectProxy]] - `imports` [EXTRACTED]
@@ -148,4 +147,4 @@ tags:
 - [[web_config.py]] - `imports_from` [EXTRACTED]
 - [[web_proxy.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests
+#graphify/code #graphify/EXTRACTED #community/Community_6

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/08 - Runbooks/First Time Setup.md"
 type: "document"
-community: "First time setup (08 - Runbooks)"
+community: "Community 551"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/First_time_setup_08_-_Runbooks
+  - community/Community_551
 ---
 
 # Prerequisites
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[First Time Setup_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/First_time_setup_08_-_Runbooks
+#graphify/document #graphify/EXTRACTED #community/Community_551

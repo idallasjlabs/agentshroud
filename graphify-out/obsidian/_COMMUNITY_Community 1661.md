@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Prompt Injection Defense (PromptGuard + MCPInspector)]] - concept - docs/SECURITY_PLAN.md
+- [[BDD Skill (stub)]] - document - .agents/skills/i-bdd/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

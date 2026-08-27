@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/management.py"
 type: "code"
-community: "Management (web)"
+community: "Community 45"
 location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Management_web
+  - community/Community_45
 ---
 
 # dashboard_main()
@@ -16,4 +16,4 @@ tags:
 - [[Serve the main dashboard page.]] - `rationale_for` [EXTRACTED]
 - [[management.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Management_web
+#graphify/code #graphify/EXTRACTED #community/Community_45

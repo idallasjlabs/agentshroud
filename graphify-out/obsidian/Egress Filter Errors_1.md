@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md"
 type: "document"
-community: "Egress filter errors (07 - Errors & Troubleshooting)"
+community: "Community 879"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Egress_filter_errors_07_-_Errors__Troubleshooting
+  - community/Community_879
 ---
 
 # Egress Filter Errors
@@ -19,4 +19,4 @@ tags:
 - [[RFC1918 Blocked]] - `contains` [EXTRACTED]
 - [[Related Notes_57]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Egress_filter_errors_07_-_Errors__Troubleshooting
+#graphify/document #graphify/EXTRACTED #community/Community_879

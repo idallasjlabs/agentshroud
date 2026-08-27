@@ -1,11 +1,11 @@
 ---
 source_file: "voice_gateway/stt.py"
 type: "code"
-community: "Voice Stt Model Ab"
+community: "Community 268"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Voice_Stt_Model_Ab
+  - community/Community_268
 ---
 
 # voice_gateway/stt.py
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_voice_stt_model_ab.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Voice_Stt_Model_Ab
+#graphify/code #graphify/EXTRACTED #community/Community_268

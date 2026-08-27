@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/cli/main.py"
 type: "code"
-community: "Main (cli)"
+community: "Community 92"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Main_cli
+  - community/Community_92
 ---
 
 # main.py
@@ -36,7 +36,7 @@ tags:
 - [[get_risk()]] - `contains` [EXTRACTED]
 - [[get_services()]] - `contains` [EXTRACTED]
 - [[get_users()]] - `contains` [EXTRACTED]
-- [[main()_10]] - `contains` [EXTRACTED]
+- [[main()_11]] - `contains` [EXTRACTED]
 - [[restart()]] - `contains` [EXTRACTED]
 - [[restart_service()]] - `contains` [EXTRACTED]
 - [[scan()]] - `contains` [EXTRACTED]
@@ -46,4 +46,4 @@ tags:
 - [[stop_service()]] - `contains` [EXTRACTED]
 - [[tail()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Main_cli
+#graphify/code #graphify/EXTRACTED #community/Community_92

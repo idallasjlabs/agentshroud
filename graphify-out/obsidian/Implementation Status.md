@@ -1,12 +1,12 @@
 ---
 source_file: "browser-extension/README.md"
 type: "document"
-community: "Adr 001 Transparent Proxy (adr)"
+community: "Community 506"
 location: "L90"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Adr_001_Transparent_Proxy_adr
+  - community/Community_506
 ---
 
 # Implementation Status
@@ -20,4 +20,4 @@ tags:
 - [[Step 3 Update agentshroud.yaml]] - `contains` [EXTRACTED]
 - [[Step 4 Test the Protection]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Adr_001_Transparent_Proxy_adr
+#graphify/document #graphify/EXTRACTED #community/Community_506

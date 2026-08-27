@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_hot_reload.py"
 type: "rationale"
-community: "Config"
+community: "Community 1325"
 location: "L246"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Config
+  - community/Community_1325
 ---
 
 # A missing file (mtime -1.0) must not trigger a reload (no reject storm).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_watcher_ignores_missing_file()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Config
+#graphify/rationale #graphify/EXTRACTED #community/Community_1325

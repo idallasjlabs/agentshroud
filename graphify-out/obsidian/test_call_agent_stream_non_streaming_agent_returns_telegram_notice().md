@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "Voice Latency Guard"
-location: "L1047"
+community: "Community 103"
+location: "L1048"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Voice_Latency_Guard
+  - community/Community_103
 ---
 
 # test_call_agent_stream_non_streaming_agent_returns_telegram_notice()
@@ -16,4 +16,4 @@ tags:
 - [[_call_agent_stream()]] - `calls` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Voice_Latency_Guard
+#graphify/code #graphify/EXTRACTED #community/Community_103

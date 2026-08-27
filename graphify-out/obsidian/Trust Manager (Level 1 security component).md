@@ -1,11 +1,11 @@
 ---
 source_file: "docs/flows/data-flow-diagram.md"
 type: "concept"
-community: "Data Flow Diagram (flows)"
+community: "Community 903"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Data_Flow_Diagram_flows
+  - community/Community_903
 ---
 
 # Trust Manager (Level 1 security component)
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud Data Flow Diagrams (doc)]] - `references` [EXTRACTED]
 - [[Diagram 11 Trust Boundary]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/Data_Flow_Diagram_flows
+#graphify/concept #graphify/EXTRACTED #community/Community_903

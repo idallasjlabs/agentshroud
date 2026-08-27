@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-ps/SKILL.md"
 type: "document"
-community: "Skill (i-ps)"
+community: "Community 408"
 location: "L151"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-ps
+  - community/Community_408
 ---
 
 # Immediate (0–15 min)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Post-Deployment Verification]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-ps
+#graphify/document #graphify/EXTRACTED #community/Community_408

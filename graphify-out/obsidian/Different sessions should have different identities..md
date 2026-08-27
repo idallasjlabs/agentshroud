@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "Security Audit & Watchtower Tests"
+community: "Community 14"
 location: "L562"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Audit__Watchtower_Tests
+  - community/Community_14
 ---
 
 # Different sessions should have different identities.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_session_cannot_impersonate()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Community_14

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/system-architecture.md"
 type: "concept"
-community: "Deployment Diagram (architecture)"
+community: "Community 864"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Deployment_Diagram_architecture
+  - community/Community_864
 ---
 
 # PII Sanitizer (Presidio + Regex)
@@ -15,4 +15,4 @@ tags:
 - [[Gateway (FastAPI)]] - `calls` [EXTRACTED]
 - [[sanitizer.py (PII redaction, Presidioregex)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Deployment_Diagram_architecture
+#graphify/concept #graphify/EXTRACTED #community/Community_864

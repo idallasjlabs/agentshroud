@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[SECURITY_VERIFICATION.md (no secrets committed verification)]] - document - docs/security/SECURITY_VERIFICATION.md
+- [[SSHProxy.write_file()]] - code - gateway/ssh_proxy/proxy.py
 
 ## Live Query (requires Dataview plugin)
 

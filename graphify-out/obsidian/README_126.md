@@ -1,12 +1,12 @@
 ---
 source_file: "docs/testing/README.md"
 type: "document"
-community: "Readme (testing)"
+community: "Community 1345"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_testing
+  - community/Community_1345
 ---
 
 # README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Testing Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_testing
+#graphify/document #graphify/EXTRACTED #community/Community_1345

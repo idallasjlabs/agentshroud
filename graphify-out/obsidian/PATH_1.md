@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "Config"
+community: "Community 1325"
 location: "L380"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Config
+  - community/Community_1325
 ---
 
 # Path
@@ -21,4 +21,4 @@ tags:
 - [[reload_config()]] - `references` [EXTRACTED]
 - [[resolve_config_path()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Config
+#graphify/code #graphify/EXTRACTED #community/Community_1325

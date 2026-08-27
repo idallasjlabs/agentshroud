@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Telegram Proxy Outbound"
+community: "Community 474"
 location: "L4678"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Outbound
+  - community/Community_474
 ---
 
 # _contains_internal_approval_banner must only fire on real egress banners.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestInternalBannerMatcher]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Outbound
+#graphify/rationale #graphify/EXTRACTED #community/Community_474

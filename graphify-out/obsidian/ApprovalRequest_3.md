@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "Approval Queue"
+community: "Community 24"
 location: "L82"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Queue
+  - community/Community_24
 ---
 
 # ApprovalRequest
@@ -104,4 +104,4 @@ tags:
 - [[test_submit_approval_request()]] - `calls` [EXTRACTED]
 - [[test_submit_does_not_deadlock_on_hung_websocket_client()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Queue
+#graphify/code #graphify/EXTRACTED #community/Community_24

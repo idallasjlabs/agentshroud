@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Telegram Inbound Proxy Tests"
+community: "Community 2"
 location: "L3384"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Inbound_Proxy_Tests
+  - community/Community_2
 ---
 
 # High-level 'show' policy questions should be treated as conceptual safe-info req
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_collaborator_show_high_level_policy_question_gets_safe_guidance()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Inbound_Proxy_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Community_2

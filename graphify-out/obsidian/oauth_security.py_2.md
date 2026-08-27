@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/oauth_security.py.md"
 type: "document"
-community: "Oauth Security.py (Security Modules)"
+community: "Community 538"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Oauth_Securitypy_Security_Modules
+  - community/Community_538
 ---
 
 # oauth_security.py
@@ -21,4 +21,4 @@ tags:
 - [[Threat Model_20]] - `contains` [EXTRACTED]
 - [[oauth_security.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Oauth_Securitypy_Security_Modules
+#graphify/document #graphify/EXTRACTED #community/Community_538

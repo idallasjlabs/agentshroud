@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/dns_blocklist.py"
 type: "code"
-community: "Dns Blocklist"
+community: "Community 141"
 location: "L61"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Dns_Blocklist
+  - community/Community_141
 ---
 
 # DNSBlocklist
@@ -73,4 +73,4 @@ tags:
 - [[test_dns_blocklist.py]] - `imports` [EXTRACTED]
 - [[test_dns_canvas_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Dns_Blocklist
+#graphify/code #graphify/EXTRACTED #community/Community_141

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/README.md"
 type: "document"
-community: "Readme (docs)"
+community: "Community 218"
 location: "L181"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_docs
+  - community/Community_218
 ---
 
 # Secure Development
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🎯 Use Cases]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_docs
+#graphify/document #graphify/EXTRACTED #community/Community_218

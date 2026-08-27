@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sync-cve-registry.py"
 type: "rationale"
-community: "Sync Cve Registry (scripts)"
-location: "L190"
+community: "Community 112"
+location: "L188"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Sync_Cve_Registry_scripts
+  - community/Community_112
 ---
 
 # Return (status, mitigation, defense_layers).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_classify()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Sync_Cve_Registry_scripts
+#graphify/rationale #graphify/EXTRACTED #community/Community_112

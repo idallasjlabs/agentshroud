@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_security.py"
 type: "rationale"
-community: "Session Security"
+community: "Community 1584"
 location: "L161"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Session_Security
+  - community/Community_1584
 ---
 
 # A freshly generated nonce validates on first use.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_nonce_first_use_passes()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Session_Security
+#graphify/rationale #graphify/EXTRACTED #community/Community_1584

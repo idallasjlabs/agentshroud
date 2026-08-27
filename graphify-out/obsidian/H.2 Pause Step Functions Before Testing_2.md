@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-qa/SKILL.md"
 type: "document"
-community: "Skill (i-qa)"
+community: "Community 437"
 location: "L264"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-qa
+  - community/Community_437
 ---
 
 # H.2 Pause Step Functions Before Testing
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[H. Service Control for Production Testing_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-qa
+#graphify/document #graphify/EXTRACTED #community/Community_437

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md"
 type: "document"
-community: "Openclaw Write Requirements (architecture)"
+community: "Community 209"
 location: "L219"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Openclaw_Write_Requirements_architecture
+  - community/Community_209
 ---
 
 # Current Docker Configuration
@@ -17,4 +17,4 @@ tags:
 - [[✅ Temporary Filesystems (Cleared on Container Restart)]] - `contains` [EXTRACTED]
 - [[❌ Currently Missing (Would Break Read-Only)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Openclaw_Write_Requirements_architecture
+#graphify/document #graphify/EXTRACTED #community/Community_209

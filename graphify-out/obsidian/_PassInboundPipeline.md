@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "E2e Proxy"
+community: "Community 74"
 location: "L421"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/E2e_Proxy
+  - community/Community_74
 ---
 
 # _PassInboundPipeline
@@ -36,4 +36,4 @@ tags:
 - [[test_webhook_outbound_block_withheld()]] - `calls` [EXTRACTED]
 - [[test_webhook_outbound_pipeline_crash_fails_closed()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/E2e_Proxy
+#graphify/code #graphify/INFERRED #community/Community_74

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/data_exfil_volume_guard.py"
 type: "code"
-community: "Data Exfil Volume Guard"
+community: "Community 176"
 location: "L78"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Data_Exfil_Volume_Guard
+  - community/Community_176
 ---
 
 # _SessionState
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[data_exfil_volume_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Data_Exfil_Volume_Guard
+#graphify/code #graphify/EXTRACTED #community/Community_176

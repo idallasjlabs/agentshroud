@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/url_analyzer.py"
 type: "code"
-community: "Url Analyzer"
+community: "Community 5"
 location: "L99"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Url_Analyzer
+  - community/Community_5
 ---
 
 # URLAnalyzer
@@ -41,4 +41,4 @@ tags:
 - [[url_analyzer.py]] - `contains` [EXTRACTED]
 - [[web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Url_Analyzer
+#graphify/code #graphify/INFERRED #community/Community_5

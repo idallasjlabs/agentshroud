@@ -1,11 +1,11 @@
 ---
 source_file: "firmware/voice-terminal/main/remote_log.h"
 type: "code"
-community: "Ws Client (main)"
+community: "Community 139"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ws_Client_main
+  - community/Community_139
 ---
 
 # remote_log.h (WS-mirrored diagnostic log declaration)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[vt_remote_log()]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ws_Client_main
+#graphify/code #graphify/EXTRACTED #community/Community_139

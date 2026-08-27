@@ -1,12 +1,12 @@
 ---
 source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "Brand Guidelines (guidelines)"
+community: "Community 460"
 location: "L74"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Brand_Guidelines_guidelines
+  - community/Community_460
 ---
 
 # Prohibited Uses
@@ -16,4 +16,4 @@ tags:
 - [[Co-Branding Guidelines]] - `contains` [EXTRACTED]
 - [[Logo Usage_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Brand_Guidelines_guidelines
+#graphify/document #graphify/EXTRACTED #community/Community_460

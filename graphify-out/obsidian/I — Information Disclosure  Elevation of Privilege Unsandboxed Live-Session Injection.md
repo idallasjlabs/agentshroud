@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/threat-model.md"
 type: "document"
-community: "Threat Model (security)"
+community: "Community 985"
 location: "L303"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Threat_Model_security
+  - community/Community_985
 ---
 
 # I — Information Disclosure / Elevation of Privilege: Unsandboxed Live-Session Injection
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[A2A (Agent-to-Agent) Protocol Threat Analysis]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Threat_Model_security
+#graphify/document #graphify/EXTRACTED #community/Community_985

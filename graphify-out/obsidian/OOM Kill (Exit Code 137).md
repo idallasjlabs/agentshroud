@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Container Errors.md"
 type: "document"
-community: "Container errors (07 - Errors & Troubleshooting)"
+community: "Community 788"
 location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Container_errors_07_-_Errors__Troubleshooting
+  - community/Community_788
 ---
 
 # OOM Kill (Exit Code 137)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Container Errors_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Container_errors_07_-_Errors__Troubleshooting
+#graphify/document #graphify/EXTRACTED #community/Community_788

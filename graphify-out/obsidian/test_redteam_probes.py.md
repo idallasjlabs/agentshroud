@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "code"
-community: "Redteam Probes"
+community: "Community 66"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Redteam_Probes
+  - community/Community_66
 ---
 
 # test_redteam_probes.py
@@ -52,4 +52,4 @@ tags:
 - [[test_ssn_redacted_outbound()]] - `contains` [EXTRACTED]
 - [[test_trust_escalation_blocked()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Redteam_Probes
+#graphify/code #graphify/EXTRACTED #community/Community_66

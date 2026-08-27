@@ -1,12 +1,12 @@
 ---
 source_file: ".github/agents/safe-refactor.agent.md"
 type: "document"
-community: "Safe Refactor.agent (agents)"
+community: "Community 389"
 location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Safe_Refactoragent_agents
+  - community/Community_389
 ---
 
 # Critical Rules
@@ -16,4 +16,4 @@ tags:
 - [[⚠️ ONLY Refactor When]] - `contains` [EXTRACTED]
 - [[❌ NEVER]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Safe_Refactoragent_agents
+#graphify/document #graphify/EXTRACTED #community/Community_389

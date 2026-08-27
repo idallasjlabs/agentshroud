@@ -1,13 +1,13 @@
 ---
 source_file: "docker-compose.secure.yml"
 type: "document"
-community: "Docker Compose.secure"
+community: "Community 1609"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Composesecure
+  - community/Community_1609
 ---
 
 # docker-compose.secure.yml — Proxy Mode Deployment
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Composesecure
+#graphify/document #graphify/EXTRACTED #community/Community_1609

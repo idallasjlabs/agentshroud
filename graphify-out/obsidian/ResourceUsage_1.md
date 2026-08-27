@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "code"
-community: "Subagent Governance (security)"
+community: "Community 912"
 location: "L134"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Subagent_Governance_security
+  - community/Community_912
 ---
 
 # ResourceUsage
@@ -20,4 +20,4 @@ tags:
 - [[Tracks cumulative resource consumption for a single subagent.]] - `rationale_for` [EXTRACTED]
 - [[subagent_governance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Subagent_Governance_security
+#graphify/code #graphify/EXTRACTED #community/Community_912

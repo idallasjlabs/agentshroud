@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "Telegram Proxy Outbound"
+community: "Community 265"
 location: "L4010"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Telegram_Proxy_Outbound
+  - community/Community_265
 ---
 
 # TestOutboundTextFieldResolution
@@ -21,4 +21,4 @@ tags:
 - [[Unit tests for outbound text field resolution helper behavior.]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Telegram_Proxy_Outbound
+#graphify/code #graphify/INFERRED #community/Community_265

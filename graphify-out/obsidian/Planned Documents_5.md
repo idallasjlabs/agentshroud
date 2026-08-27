@@ -1,12 +1,12 @@
 ---
 source_file: "docs/requirements/README.md"
 type: "document"
-community: "Readme (project)"
+community: "Community 977"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_project
+  - community/Community_977
 ---
 
 # Planned Documents
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Requirements Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_project
+#graphify/document #graphify/EXTRACTED #community/Community_977

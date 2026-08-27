@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/drift_detector.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md"
 type: "document"
-community: "Drift Detector.py (Security Modules)"
-location: "L84"
+community: "Community 536"
+location: "L83"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Drift_Detectorpy_Security_Modules
+  - community/Community_536
 ---
 
 # Configuration
 
 ## Connections
-- [[drift_detector.py_2]] - `contains` [EXTRACTED]
+- [[clamav_scanner.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Drift_Detectorpy_Security_Modules
+#graphify/document #graphify/EXTRACTED #community/Community_536

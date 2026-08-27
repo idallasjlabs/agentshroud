@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/mcporter/SKILL.md"
 type: "document"
-community: "Skill (oracle)"
+community: "Community 718"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_oracle
+  - community/Community_718
 ---
 
 # SKILL.md
@@ -15,4 +15,4 @@ tags:
 - [[SKILL_223]] - `conceptually_related_to` [INFERRED]
 - [[mcporter]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_oracle
+#graphify/document #graphify/EXTRACTED #community/Community_718

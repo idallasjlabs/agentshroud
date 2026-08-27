@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/workspace/jira_dev_ticket.py"
+source_file: "docker/config/hermes/workspace/jira_dev_ticket.py"
 type: "rationale"
-community: "Jira Dev Ticket (workspace)"
+community: "Community 165"
 location: "L151"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Jira_Dev_Ticket_workspace
+  - community/Community_165
 ---
 
 # Build the ADF (Atlassian Document Format) body for POST .../comment.
 
 ## Connections
-- [[build_comment_payload()_2]] - `rationale_for` [EXTRACTED]
+- [[build_comment_payload()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Jira_Dev_Ticket_workspace
+#graphify/rationale #graphify/EXTRACTED #community/Community_165

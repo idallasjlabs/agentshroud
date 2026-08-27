@@ -1,11 +1,11 @@
 ---
 source_file: "docs/data/schema-documentation.md"
 type: "code"
-community: "Adr 005 Sha256 Hash (adr)"
+community: "Community 287"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Adr_005_Sha256_Hash_adr
+  - community/Community_287
 ---
 
 # audit_entries SQLite table
@@ -15,4 +15,4 @@ tags:
 - [[AuditEntry (data entity)]] - `implements` [EXTRACTED]
 - [[mcp_audit_entries SQLite table]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Adr_005_Sha256_Hash_adr
+#graphify/code #graphify/EXTRACTED #community/Community_287

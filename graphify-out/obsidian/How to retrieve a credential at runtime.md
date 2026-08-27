@@ -1,12 +1,12 @@
 ---
 source_file: "docker/SYSTEM-INSTRUCTIONS-SECURITY.md"
 type: "document"
-community: "Bot Capabilities (docker)"
+community: "Community 747"
 location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Capabilities_docker
+  - community/Community_747
 ---
 
 # How to retrieve a credential at runtime
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🏗️ Credential Architecture — How Secrets Are Retrieved]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Capabilities_docker
+#graphify/document #graphify/EXTRACTED #community/Community_747

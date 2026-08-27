@@ -1,17 +1,17 @@
 ---
 source_file: "BRAND.md"
 type: "concept"
-community: "Container Runtime (smoke.d)"
+community: "Community 391"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Container_Runtime_smoked
+  - community/Community_391
 ---
 
 # AgentShroud Tagline
 
 ## Connections
 - [[AgentShroud Taglines List]] - `references` [EXTRACTED]
-- [[AgentShroud™ Brand Guidelines]] - `references` [EXTRACTED]
+- [[AgentShroud™ Brand Guidelines_1]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Container_Runtime_smoked
+#graphify/concept #graphify/EXTRACTED #community/Community_391

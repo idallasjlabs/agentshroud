@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_protection.py"
 type: "code"
-community: "Prompt Protection"
+community: "Community 151"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Prompt_Protection
+  - community/Community_151
 ---
 
 # test_prompt_protection.py
@@ -17,4 +17,4 @@ tags:
 - [[prompt_protection()]] - `contains` [EXTRACTED]
 - [[sample_protected_content()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Prompt_Protection
+#graphify/code #graphify/EXTRACTED #community/Community_151

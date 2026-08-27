@@ -1,12 +1,12 @@
 ---
 source_file: "docs/README.md"
 type: "document"
-community: "Readme (docs)"
+community: "Community 218"
 location: "L61"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_docs
+  - community/Community_218
 ---
 
 # [architecture/](./architecture/) - Architecture & Planning
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[📚 Documentation Structure]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_docs
+#graphify/document #graphify/EXTRACTED #community/Community_218

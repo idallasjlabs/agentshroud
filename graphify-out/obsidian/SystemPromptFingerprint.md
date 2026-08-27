@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "Context Integrity"
+community: "Community 116"
 location: "L54"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Context_Integrity
+  - community/Community_116
 ---
 
 # SystemPromptFingerprint
@@ -26,4 +26,4 @@ tags:
 - [[prompt_guard.py]] - `contains` [EXTRACTED]
 - [[test_prompt_guard.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Context_Integrity
+#graphify/code #graphify/INFERRED #community/Community_116

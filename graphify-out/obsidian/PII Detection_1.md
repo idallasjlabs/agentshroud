@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/All Dependencies.md"
 type: "document"
-community: "All dependencies (05 - Dependencies)"
+community: "Community 550"
 location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/All_dependencies_05_-_Dependencies
+  - community/Community_550
 ---
 
 # PII Detection
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Gateway Python Dependencies (`gatewayrequirements.txt`)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/All_dependencies_05_-_Dependencies
+#graphify/document #graphify/EXTRACTED #community/Community_550

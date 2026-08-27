@@ -1,18 +1,17 @@
 ---
-source_file: ".agents/skills/i-browser/scripts/browse.py"
+source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "rationale"
-community: "Browse (scripts)"
+community: "Community 143"
 location: "L145"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Browse_scripts
+  - community/Community_143
 ---
 
 # Classify action risk level          Security: Determines if approval is needed
 
 ## Connections
-- [[._classify_risk()]] - `rationale_for` [EXTRACTED]
-- [[._classify_risk()_4]] - `rationale_for` [EXTRACTED]
+- [[._classify_risk()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Browse_scripts
+#graphify/rationale #graphify/EXTRACTED #community/Community_143

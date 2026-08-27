@@ -1,11 +1,11 @@
 ---
 source_file: "docker/bots/openclaw/workspace/collaborator-workspace/SOUL.md"
 type: "document"
-community: "Competitive Analysis (workspace)"
+community: "Community 1297"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Competitive_Analysis_workspace
+  - community/Community_1297
 ---
 
 # SOUL.md — Isaiah Jefferson Persona
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Anti-Security-Theater Principle]] - `implements` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Competitive_Analysis_workspace
+#graphify/document #graphify/EXTRACTED #community/Community_1297

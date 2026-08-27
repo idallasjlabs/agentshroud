@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Flows Documentation README (under development - state diagrams, DFDs, sequence diagrams)]] - document - docs/flows/README.md
+- [[ui_face.c (kawaii face UI state machine)]] - code - firmware/voice-terminal/main/ui_face.c
 
 ## Live Query (requires Dataview plugin)
 

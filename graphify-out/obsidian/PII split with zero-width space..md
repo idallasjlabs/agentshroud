@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_differential_pii_detector.py"
 type: "rationale"
-community: "Differential Pii Detector"
+community: "Community 47"
 location: "L318"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Differential_Pii_Detector
+  - community/Community_47
 ---
 
 # PII split with zero-width space.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_zero_width_space_injection_caught()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Differential_Pii_Detector
+#graphify/rationale #graphify/EXTRACTED #community/Community_47

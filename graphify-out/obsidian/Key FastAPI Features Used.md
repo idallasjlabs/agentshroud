@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/fastapi.md"
 type: "document"
-community: "Ci Workflows (03 - Configuration)"
+community: "Community 366"
 location: "L34"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Ci_Workflows_03_-_Configuration
+  - community/Community_366
 ---
 
 # Key FastAPI Features Used
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[FastAPI_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Ci_Workflows_03_-_Configuration
+#graphify/document #graphify/EXTRACTED #community/Community_366

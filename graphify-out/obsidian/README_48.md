@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/i-cicd/README.md"
 type: "document"
-community: "Readme (i-cicd)"
+community: "Community 1183"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-cicd
+  - community/Community_1183
 ---
 
 # README.md
 
 ## Connections
-- [[CICD Pipeline Advisor (CICD)]] - `contains` [EXTRACTED]
+- [[CICD Pipeline Advisor (CICD)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-cicd
+#graphify/document #graphify/EXTRACTED #community/Community_1183

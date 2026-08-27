@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/colima-docker-guide.md"
 type: "document"
-community: "Glossary (project)"
+community: "Community 90"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Glossary_project
+  - community/Community_90
 ---
 
 # colima-docker-guide.md
@@ -18,4 +18,4 @@ tags:
 - [[OPENCLAW_SETUP]] - `conceptually_related_to` [INFERRED]
 - [[setup-guide]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Glossary_project
+#graphify/document #graphify/EXTRACTED #community/Community_90

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "Daily Cve Report"
+community: "Community 184"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Daily_Cve_Report
+  - community/Community_184
 ---
 
 # test_daily_cve_report.py
@@ -38,10 +38,9 @@ tags:
 - [[check_upstream_cves()]] - `imports` [EXTRACTED]
 - [[daily_cve_report module]] - `implements` [EXTRACTED]
 - [[daily_cve_report.py]] - `imports_from` [EXTRACTED]
-- [[datetime_9]] - `imports_from` [EXTRACTED]
 - [[format_cve_report()]] - `imports` [EXTRACTED]
 - [[format_upstream_cve_alert()]] - `imports` [EXTRACTED]
 - [[list_cve_agents()]] - `imports` [EXTRACTED]
 - [[run_and_send_cve_report()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Daily_Cve_Report
+#graphify/code #graphify/EXTRACTED #community/Community_184

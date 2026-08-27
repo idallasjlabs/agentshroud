@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Api (web)"
+community: "Community 45"
 location: "L785"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Api_web
+  - community/Community_45
 ---
 
 # rollback_agentshroud()
@@ -16,4 +16,4 @@ tags:
 - [[_get_engine()]] - `calls` [EXTRACTED]
 - [[api.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Api_web
+#graphify/code #graphify/EXTRACTED #community/Community_45

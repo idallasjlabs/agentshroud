@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/ledger.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/event_bus.py.md"
 type: "document"
-community: "Ledger.py (Gateway Core)"
-location: "L70"
+community: "Community 873"
+location: "L56"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Ledgerpy_Gateway_Core
+  - community/Community_873
 ---
 
 # Environment Variables Used
 
 ## Connections
-- [[ledger.py_2]] - `contains` [EXTRACTED]
+- [[event_bus.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Ledgerpy_Gateway_Core
+#graphify/document #graphify/EXTRACTED #community/Community_873

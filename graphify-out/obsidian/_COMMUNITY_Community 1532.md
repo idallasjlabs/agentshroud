@@ -1,15 +1,19 @@
 ---
 type: community
-members: 2
+members: 6
 ---
 
 # Community 1532
 
-**Members:** 2 nodes
+**Members:** 6 nodes
 
 ## Members
-- [[.test_startup_script_skips_anthropic_when_local_model_selected()]] - code - gateway/tests/test_config_validation.py
-- [[Bot startup should not load Anthropic secrets when Ollama local model is configu]] - rationale - gateway/tests/test_config_validation.py
+- [[AgentShroud Data Assets (root)]] - concept - docs/diagrams/images/diagram-10-data-dictionary.svg
+- [[External Credentials (1Password vault)]] - concept - docs/diagrams/images/diagram-10-data-dictionary.svg
+- [[OpenClaw Volume (openclaw.json, cronjobs.json, sessions)]] - concept - docs/diagrams/images/diagram-10-data-dictionary.svg
+- [[SQLite DBs (Backed by SQLite)]] - concept - docs/diagrams/images/diagram-10-data-dictionary.svg
+- [[approval_items table (pending, approved, rejected, expired; 1h TTL)]] - concept - docs/diagrams/images/diagram-10-data-dictionary.svg
+- [[ledger table (indexed on timestamp, source, forwarded_to)]] - concept - docs/diagrams/images/diagram-10-data-dictionary.svg
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Architecture Docs]]
+- 1 edge to [[_COMMUNITY_Community 353]]
 
 ## Top bridge nodes
-- [[.test_startup_script_skips_anthropic_when_local_model_selected()]] - degree 2, connects to 1 community
+- [[AgentShroud Data Assets (root)]] - degree 4, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_config.py"
 type: "code"
-community: "Intel Report (security)"
+community: "Community 133"
 location: "L133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Intel_Report_security
+  - community/Community_133
 ---
 
 # domain_matches()
@@ -19,4 +19,4 @@ tags:
 - [[citation_verifier.py]] - `imports` [EXTRACTED]
 - [[egress_config.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Intel_Report_security
+#graphify/code #graphify/EXTRACTED #community/Community_133

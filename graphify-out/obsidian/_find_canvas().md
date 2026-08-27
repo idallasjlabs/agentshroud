@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/ui_face.c"
 type: "code"
-community: "Wakeword (main)"
+community: "Community 249"
 location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Wakeword_main
+  - community/Community_249
 ---
 
 # _find_canvas()
@@ -16,4 +16,4 @@ tags:
 - [[lv_obj_t_1]] - `references` [EXTRACTED]
 - [[ui_face.c]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Wakeword_main
+#graphify/code #graphify/EXTRACTED #community/Community_249

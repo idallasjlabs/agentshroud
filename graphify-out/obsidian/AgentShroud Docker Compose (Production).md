@@ -1,17 +1,16 @@
 ---
 source_file: "docker/docker-compose.yml"
 type: "code"
-community: "Apply Patches (openclaw)"
+community: "Community 129"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Apply_Patches_openclaw
+  - community/Community_129
 ---
 
 # AgentShroud Docker Compose (Production)
 
 ## Connections
-- [[CONTINUE-2026-08-17]] - `references` [EXTRACTED]
 - [[Gateway OpenAPI Spec]] - `conceptually_related_to` [INFERRED]
 - [[apply-patches.js]] - `shares_data_with` [EXTRACTED]
 - [[daily_cve_report.py]] - `shares_data_with` [EXTRACTED]
@@ -21,4 +20,4 @@ tags:
 - [[run-standalone.sh]] - `references` [EXTRACTED]
 - [[telegram_proxy.py]] - `shares_data_with` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Apply_Patches_openclaw
+#graphify/code #graphify/EXTRACTED #community/Community_129

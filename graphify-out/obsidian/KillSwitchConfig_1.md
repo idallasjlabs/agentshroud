@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/killswitch_monitor.py"
 type: "code"
-community: "Killswitch Monitor & Observatory Mode"
+community: "Community 13"
 location: "L37"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Killswitch_Monitor__Observatory_Mode
+  - community/Community_13
 ---
 
 # KillSwitchConfig
@@ -15,4 +15,4 @@ tags:
 - [[.__init__()_92]] - `references` [EXTRACTED]
 - [[KillSwitchConfig]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Killswitch_Monitor__Observatory_Mode
+#graphify/code #graphify/INFERRED #community/Community_13

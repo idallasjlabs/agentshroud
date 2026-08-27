@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-cr/SKILL.md"
 type: "document"
-community: "Readme (i-mc)"
+community: "Community 489"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-mc
+  - community/Community_489
 ---
 
 # Code Review (CR) SKILL (OpenClaw)
@@ -18,4 +18,4 @@ tags:
 - [[GIT-GUARD Skill Definition]] - `references` [EXTRACTED]
 - [[GSDE&G Development Master Checklist README]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-mc
+#graphify/document #graphify/EXTRACTED #community/Community_489

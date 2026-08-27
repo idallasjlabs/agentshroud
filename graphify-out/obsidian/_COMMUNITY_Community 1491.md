@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[set-model.sh]] - code - docker/scripts/set-model.sh
-- [[set-model.sh script]] - code - docker/scripts/set-model.sh
+- [[Obsidian workspace.json (open-tab layout)]] - document - docs/vault/.obsidian/workspace.json
+- [[Startup Flow Diagram (vault note)]] - document - docs/vault/09 - Diagrams/Startup Flow Diagram.md
 
 ## Live Query (requires Dataview plugin)
 

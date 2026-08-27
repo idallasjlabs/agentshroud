@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[dashboard.html (Control Center Template)]] - code - gateway/web/templates/dashboard.html
+- [[UserSessionManager Isolation Tests]] - code - gateway/tests/test_session_isolation.py
 
 ## Live Query (requires Dataview plugin)
 

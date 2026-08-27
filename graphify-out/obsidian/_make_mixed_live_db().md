@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_archive.py"
 type: "code"
-community: "Audit Archive"
+community: "Community 820"
 location: "L284"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Audit_Archive
+  - community/Community_820
 ---
 
 # _make_mixed_live_db()
@@ -19,4 +19,4 @@ tags:
 - [[n_noisy events of (egress_filter, INFO); n_denies of (egress_filter, HIGH);]] - `rationale_for` [EXTRACTED]
 - [[test_audit_archive.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Audit_Archive
+#graphify/code #graphify/EXTRACTED #community/Community_820

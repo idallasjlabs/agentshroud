@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/differential_pii_detector.py"
 type: "code"
-community: "Differential Pii Detector"
+community: "Community 47"
 location: "L299"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Differential_Pii_Detector
+  - community/Community_47
 ---
 
 # DifferentialPIIDetector
@@ -51,4 +51,4 @@ tags:
 - [[test_process_inbound_request_binary_part_is_forwarded_unscanned_and_flagged()]] - `calls` [EXTRACTED]
 - [[test_process_inbound_request_pii_in_message_is_redacted_before_forwarding()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Differential_Pii_Detector
+#graphify/code #graphify/EXTRACTED #community/Community_47

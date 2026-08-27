@@ -1,17 +1,17 @@
 ---
 source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "Readme (securebrowser)"
+community: "Community 150"
 location: "L295"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_securebrowser
+  - community/Community_150
 ---
 
 # "URL not in allowlist"
 
 ## Connections
-- [[Troubleshooting_36]] - `contains` [EXTRACTED]
+- [[Troubleshooting_37]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_securebrowser
+#graphify/document #graphify/EXTRACTED #community/Community_150

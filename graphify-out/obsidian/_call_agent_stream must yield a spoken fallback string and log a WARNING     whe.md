@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "Voice Gateway"
-location: "L1711"
+community: "Community 37"
+location: "L1712"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Voice_Gateway
+  - community/Community_37
 ---
 
 # _call_agent_stream must yield a spoken fallback string and log a WARNING     whe
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_call_agent_read_timeout_returns_fallback()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Voice_Gateway
+#graphify/rationale #graphify/EXTRACTED #community/Community_37

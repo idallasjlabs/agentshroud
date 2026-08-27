@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md"
 type: "concept"
-community: "Phase 3a 3b Implementation (architecture)"
+community: "Community 226"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Phase_3a_3b_Implementation_architecture
+  - community/Community_226
 ---
 
 # Kill Switch (freeze / shutdown / disconnect)
@@ -15,4 +15,4 @@ tags:
 - [[Incident Response Flow — Severity & Escalation]] - `conceptually_related_to` [INFERRED]
 - [[PHASE_3A_3B_IMPLEMENTATION]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/INFERRED #community/Phase_3a_3b_Implementation_architecture
+#graphify/concept #graphify/INFERRED #community/Community_226

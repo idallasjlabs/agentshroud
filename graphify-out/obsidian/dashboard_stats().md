@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/dashboard.py"
 type: "code"
-community: "Dashboard"
+community: "Community 0"
 location: "L514"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Dashboard
+  - community/Community_0
 ---
 
 # dashboard_stats()
@@ -18,4 +18,4 @@ tags:
 - [[_build_egress_live_snapshot()]] - `calls` [EXTRACTED]
 - [[dashboard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Dashboard
+#graphify/code #graphify/EXTRACTED #community/Community_0

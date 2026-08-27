@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/OPENCLAW_SSH_SETUP.md"
 type: "document"
-community: "Openclaw Ssh Setup (setup)"
+community: "Community 186"
 location: "L162"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Openclaw_Ssh_Setup_setup
+  - community/Community_186
 ---
 
 # ✅ Security Features Enabled
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Security Considerations]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Openclaw_Ssh_Setup_setup
+#graphify/document #graphify/EXTRACTED #community/Community_186

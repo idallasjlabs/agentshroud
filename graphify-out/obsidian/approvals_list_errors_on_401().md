@@ -1,12 +1,12 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "Main (src)"
+community: "Community 40"
 location: "L1071"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Main_src
+  - community/Community_40
 ---
 
 # approvals_list_errors_on_401()
@@ -16,4 +16,4 @@ tags:
 - [[.with()]] - `calls` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Main_src
+#graphify/code #graphify/EXTRACTED #community/Community_40

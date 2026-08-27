@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "Prompt Protection (security)"
+community: "Community 182"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Prompt_Protection_security
+  - community/Community_182
 ---
 
 # PromptProtection
@@ -36,4 +36,4 @@ tags:
 - [[run()_3]] - `calls` [EXTRACTED]
 - [[test_prompt_protection.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Prompt_Protection_security
+#graphify/code #graphify/EXTRACTED #community/Community_182

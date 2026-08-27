@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/colima-firewall.sh"
 type: "code"
-community: "Container Net Diag (scripts)"
+community: "Community 310"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Container_Net_Diag_scripts
+  - community/Community_310
 ---
 
 # colima-firewall.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[colima-firewall.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Container_Net_Diag_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_310

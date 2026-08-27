@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Scanner Integration Coverage"
+community: "Community 48"
 location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Scanner_Integration_Coverage
+  - community/Community_48
 ---
 
 # Path
@@ -15,4 +15,4 @@ tags:
 - [[_age()]] - `references` [EXTRACTED]
 - [[_w()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Scanner_Integration_Coverage
+#graphify/code #graphify/EXTRACTED #community/Community_48

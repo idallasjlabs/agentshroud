@@ -1,21 +1,27 @@
 ---
 source_file: "docker/scripts/start-agentshroud.sh"
 type: "code"
-community: "Start Agentshroud (scripts)"
+community: "Community 363"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Start_Agentshroud_scripts
+  - community/Community_363
 ---
 
 # start-agentshroud.sh
 
 ## Connections
+- [[_container_age_seconds()]] - `defines` [EXTRACTED]
 - [[_dns_warmup_probe()]] - `defines` [EXTRACTED]
+- [[_enforce_sandbox_cap()]] - `defines` [EXTRACTED]
 - [[_model_runtime_ready()]] - `defines` [EXTRACTED]
+- [[_read_hc_secret()]] - `defines` [EXTRACTED]
 - [[_read_secret_file()]] - `defines` [EXTRACTED]
+- [[_reap_exited_sandboxes()]] - `defines` [EXTRACTED]
+- [[_reap_idle_sandboxes()]] - `defines` [EXTRACTED]
 - [[_reconcile_security_critical_cron()]] - `defines` [EXTRACTED]
+- [[_rename_to_meaningful()]] - `defines` [EXTRACTED]
 - [[_slack_channel_id()]] - `defines` [EXTRACTED]
 - [[_slack_send()]] - `defines` [EXTRACTED]
 - [[_telegram_bot_token()_1]] - `defines` [EXTRACTED]
@@ -30,4 +36,4 @@ tags:
 - [[start-agentshroud.sh script]] - `contains` [EXTRACTED]
 - [[test_openclaw_photo.sh]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Start_Agentshroud_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_363

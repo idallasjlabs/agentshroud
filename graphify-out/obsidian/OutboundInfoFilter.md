@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "Outbound Filter"
+community: "Community 22"
 location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Outbound_Filter
+  - community/Community_22
 ---
 
 # OutboundInfoFilter
@@ -51,4 +51,4 @@ tags:
 - [[test_outbound_filter.py]] - `imports` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Outbound_Filter
+#graphify/code #graphify/EXTRACTED #community/Community_22

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/openclaw/workspace/collaborator-workspace/SOUL.md"
 type: "document"
-community: "Soul (collaborator-workspace)"
+community: "Community 890"
 location: "L76"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Soul_collaborator-workspace
+  - community/Community_890
 ---
 
 # Long-Term Goals
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SOUL_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Soul_collaborator-workspace
+#graphify/document #graphify/EXTRACTED #community/Community_890

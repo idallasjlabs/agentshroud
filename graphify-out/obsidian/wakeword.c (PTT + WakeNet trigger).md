@@ -1,11 +1,11 @@
 ---
 source_file: "firmware/voice-terminal/main/wakeword.c"
 type: "code"
-community: "Playback State (test_playback_state)"
+community: "Community 166"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Playback_State_test_playback_state
+  - community/Community_166
 ---
 
 # wakeword.c (PTT + WakeNet trigger)
@@ -14,4 +14,4 @@ tags:
 - [[test_playback_state.c (host-native unit tests, SCRUM-59)]] - `references` [EXTRACTED]
 - [[wakeword.h (PTTWakeNet public API)]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Playback_State_test_playback_state
+#graphify/code #graphify/EXTRACTED #community/Community_166

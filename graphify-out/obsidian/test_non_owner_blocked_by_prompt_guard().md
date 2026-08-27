@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "code"
-community: "Redteam Probes"
+community: "Community 66"
 location: "L352"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Redteam_Probes
+  - community/Community_66
 ---
 
 # test_non_owner_blocked_by_prompt_guard()
@@ -15,4 +15,4 @@ tags:
 - [[Non-owner collaborators must be blocked by prompt guard.]] - `rationale_for` [EXTRACTED]
 - [[test_redteam_probes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Redteam_Probes
+#graphify/code #graphify/EXTRACTED #community/Community_66

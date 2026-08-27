@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/docker_proxy_relay.py"
 type: "code"
-community: "Dashboard Bridge (hermes)"
+community: "Community 495"
 location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Dashboard_Bridge_hermes
+  - community/Community_495
 ---
 
 # main()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[docker_proxy_relay.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Dashboard_Bridge_hermes
+#graphify/code #graphify/EXTRACTED #community/Community_495

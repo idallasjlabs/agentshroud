@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mc/README.md"
 type: "document"
-community: "Readme (i-mc)"
+community: "Community 1229"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-mc
+  - community/Community_1229
 ---
 
 # Related Skills
 
 ## Connections
-- [[GSDE&G Development Master Checklist (MC)_1]] - `contains` [EXTRACTED]
+- [[GSDE&G Development Master Checklist (MC)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-mc
+#graphify/document #graphify/EXTRACTED #community/Community_1229

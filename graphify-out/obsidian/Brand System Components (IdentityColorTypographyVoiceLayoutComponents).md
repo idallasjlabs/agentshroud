@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-bs/SKILL.md"
 type: "concept"
-community: "Skill (i-aws)"
+community: "Community 848"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Skill_i-aws
+  - community/Community_848
 ---
 
 # Brand System Components (Identity/Color/Typography/Voice/Layout/Components)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Branding Specialist (BS) (SKILL)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Skill_i-aws
+#graphify/concept #graphify/EXTRACTED #community/Community_848

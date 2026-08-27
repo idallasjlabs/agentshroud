@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/canary-deploy.sh"
 type: "code"
-community: "Canary Deploy (scripts)"
+community: "Community 1046"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Canary_Deploy_scripts
+  - community/Community_1046
 ---
 
 # die()
@@ -15,4 +15,4 @@ tags:
 - [[canary-deploy.sh]] - `defines` [EXTRACTED]
 - [[canary-deploy.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Canary_Deploy_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_1046

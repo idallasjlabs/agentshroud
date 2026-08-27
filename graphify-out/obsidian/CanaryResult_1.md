@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/canary_tripwire.py"
 type: "code"
-community: "Security Audit & Watchtower Tests"
+community: "Community 870"
 location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Audit__Watchtower_Tests
+  - community/Community_870
 ---
 
 # CanaryResult
@@ -17,4 +17,4 @@ tags:
 - [[.scan()_2]] - `references` [EXTRACTED]
 - [[canary_tripwire.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests
+#graphify/code #graphify/EXTRACTED #community/Community_870

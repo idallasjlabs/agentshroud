@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "rationale"
-community: "URL Analyzer & Content Scanner"
+community: "Community 54"
 location: "L61"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/URL_Analyzer__Content_Scanner
+  - community/Community_54
 ---
 
 # Context tracking for a single session.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SessionContext_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/URL_Analyzer__Content_Scanner
+#graphify/rationale #graphify/EXTRACTED #community/Community_54

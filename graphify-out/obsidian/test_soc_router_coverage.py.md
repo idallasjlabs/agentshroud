@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "SOC Router Coverage"
+community: "Community 17"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Router_Coverage
+  - community/Community_17
 ---
 
 # test_soc_router_coverage.py
@@ -16,7 +16,6 @@ tags:
 - [[FakeAuditStore_1]] - `contains` [EXTRACTED]
 - [[FakeCaller]] - `contains` [EXTRACTED]
 - [[FakeGroup]] - `contains` [EXTRACTED]
-- [[FastAPI_5]] - `imports_from` [EXTRACTED]
 - [[Role_1]] - `imports` [EXTRACTED]
 - [[_Svc]] - `contains` [EXTRACTED]
 - [[_fake_contributor_manager()]] - `contains` [EXTRACTED]
@@ -165,4 +164,4 @@ tags:
 - [[test_upgrade_hermes_restarts_the_real_container_name()]] - `contains` [EXTRACTED]
 - [[test_websocket_route_dispatch()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Router_Coverage
+#graphify/code #graphify/EXTRACTED #community/Community_17

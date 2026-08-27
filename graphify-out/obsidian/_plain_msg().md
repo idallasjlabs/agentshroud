@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_file_sandbox_message_gate.py"
 type: "code"
-community: "File Sandbox Message Gate"
+community: "Community 187"
 location: "L81"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/File_Sandbox_Message_Gate
+  - community/Community_187
 ---
 
 # _plain_msg()
@@ -21,4 +21,4 @@ tags:
 - [[.test_plain_message_mentioning_memory_not_blocked()]] - `calls` [EXTRACTED]
 - [[test_file_sandbox_message_gate.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/File_Sandbox_Message_Gate
+#graphify/code #graphify/EXTRACTED #community/Community_187

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/TELEGRAM_GMAIL_SETUP.md"
 type: "document"
-community: "Telegram Gmail Setup (setup)"
+community: "Community 215"
 location: "L205"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Telegram_Gmail_Setup_setup
+  - community/Community_215
 ---
 
 # Gmail Not Receiving Emails from Bot
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Part 4 Gmail Troubleshooting]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Telegram_Gmail_Setup_setup
+#graphify/document #graphify/EXTRACTED #community/Community_215

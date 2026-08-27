@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-sav/SKILL.md"
 type: "document"
-community: "Skill (i-sav)"
+community: "Community 243"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-sav
+  - community/Community_243
 ---
 
 # OBSIDIAN VAULT RULES (Follow These Exactly)
@@ -18,4 +18,4 @@ tags:
 - [[Tags_1]] - `contains` [EXTRACTED]
 - [[YAML Frontmatter_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-sav
+#graphify/document #graphify/EXTRACTED #community/Community_243

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_agent_cve_registry.py"
 type: "rationale"
-community: "Agent Cve Registry"
+community: "Community 88"
 location: "L104"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Agent_Cve_Registry
+  - community/Community_88
 ---
 
 # Synthetic ids are unique and numbered 1..N in list order for each agent.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_ash_ids_are_unique_and_stable_order()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Agent_Cve_Registry
+#graphify/rationale #graphify/EXTRACTED #community/Community_88

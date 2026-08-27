@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_agent_cve_registry.py"
 type: "code"
-community: "Agent Cve Registry"
+community: "Community 933"
 location: "L123"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Agent_Cve_Registry
+  - community/Community_933
 ---
 
 # test_ghsa_id_field_only_holds_real_looking_ghsa_ids()
@@ -16,4 +16,4 @@ tags:
 - [[ghsa_id must be either None or a real-looking GHSA id.]] - `rationale_for` [EXTRACTED]
 - [[test_agent_cve_registry.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Agent_Cve_Registry
+#graphify/code #graphify/EXTRACTED #community/Community_933

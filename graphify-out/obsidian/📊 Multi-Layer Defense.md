@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md"
 type: "document"
-community: "Security Implementation Verification (security)"
+community: "Community 589"
 location: "L71"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Implementation_Verification_security
+  - community/Community_589
 ---
 
 # 📊 Multi-Layer Defense
@@ -17,4 +17,4 @@ tags:
 - [[Layer 3 Audit Logging (Monitoring)]] - `contains` [EXTRACTED]
 - [[Security Implementation Verification]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Implementation_Verification_security
+#graphify/document #graphify/EXTRACTED #community/Community_589

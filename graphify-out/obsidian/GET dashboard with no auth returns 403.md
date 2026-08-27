@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "rationale"
-community: "Security Fixes"
+community: "Community 12"
 location: "L196"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Fixes
+  - community/Community_12
 ---
 
 # GET /dashboard with no auth returns 403
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_dashboard_no_auth_returns_403()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Fixes
+#graphify/rationale #graphify/EXTRACTED #community/Community_12

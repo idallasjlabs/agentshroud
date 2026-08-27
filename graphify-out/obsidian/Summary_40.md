@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
+source_file: "docs/security/SECURITY_VERIFICATION.md"
 type: "document"
-community: "skills/openclaw"
-location: "L10"
+community: "Community 275"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Community_275
 ---
 
 # Summary
 
 ## Connections
-- [[Architecture Overview_3]] - `contains` [EXTRACTED]
+- [[Security Verification Report]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/Community_275

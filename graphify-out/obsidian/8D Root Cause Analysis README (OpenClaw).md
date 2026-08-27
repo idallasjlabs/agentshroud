@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-eightd/README.md"
 type: "document"
-community: "Readme (i-data)"
+community: "Community 1314"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-data
+  - community/Community_1314
 ---
 
 # 8D Root Cause Analysis README (OpenClaw)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[8D Root Cause Analysis SKILL (OpenClaw)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-data
+#graphify/document #graphify/EXTRACTED #community/Community_1314

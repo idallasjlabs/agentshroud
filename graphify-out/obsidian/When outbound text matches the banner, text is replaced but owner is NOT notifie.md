@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Telegram Outbound Proxy Tests"
+community: "Community 265"
 location: "L4717"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Outbound_Proxy_Tests
+  - community/Community_265
 ---
 
 # When outbound text matches the banner, text is replaced but owner is NOT notifie
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_redaction_silent_no_owner_notice()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Outbound_Proxy_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Community_265

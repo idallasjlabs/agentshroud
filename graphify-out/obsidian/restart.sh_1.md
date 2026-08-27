@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/README.md"
 type: "document"
-community: "Readme (scripts)"
+community: "Community 304"
 location: "L82"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_scripts
+  - community/Community_304
 ---
 
 # restart.sh
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OpenClaw Management Scripts]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_scripts
+#graphify/document #graphify/EXTRACTED #community/Community_304

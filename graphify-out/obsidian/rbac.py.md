@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "code"
-community: "RBAC & Ingest Middleware"
+community: "Community 15"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBAC__Ingest_Middleware
+  - community/Community_15
 ---
 
 # rbac.py
@@ -27,4 +27,4 @@ tags:
 - [[rbac_config.py]] - `imports_from` [EXTRACTED]
 - [[router.py_1]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBAC__Ingest_Middleware
+#graphify/code #graphify/EXTRACTED #community/Community_15

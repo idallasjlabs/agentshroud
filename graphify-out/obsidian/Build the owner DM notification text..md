@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/group_router.py"
 type: "rationale"
-community: "Group Approval Routing"
+community: "Community 121"
 location: "L125"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Group_Approval_Routing
+  - community/Community_121
 ---
 
 # Build the owner DM notification text.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._build_owner_dm_text()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Group_Approval_Routing
+#graphify/rationale #graphify/EXTRACTED #community/Community_121

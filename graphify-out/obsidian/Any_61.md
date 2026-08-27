@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/soc_correlation.py"
 type: "code"
-community: "Dashboard"
+community: "Community 80"
 location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Dashboard
+  - community/Community_80
 ---
 
 # Any
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.to_dict()_13]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Dashboard
+#graphify/code #graphify/EXTRACTED #community/Community_80

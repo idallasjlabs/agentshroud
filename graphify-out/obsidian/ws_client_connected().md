@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/ws_client.c"
 type: "code"
-community: "Ws Client (main)"
+community: "Community 139"
 location: "L319"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Ws_Client_main
+  - community/Community_139
 ---
 
 # ws_client_connected()
@@ -18,4 +18,4 @@ tags:
 - [[ws_client.c]] - `contains` [EXTRACTED]
 - [[ws_client_handle_t_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Ws_Client_main
+#graphify/code #graphify/INFERRED #community/Community_139

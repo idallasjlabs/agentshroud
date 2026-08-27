@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/agent_cve_registry.py"
 type: "code"
-community: "Generate Cve Page (scripts)"
-location: "L15435"
+community: "Community 112"
+location: "L17072"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Generate_Cve_Page_scripts
+  - community/Community_112
 ---
 
 # get_agent_cve_source()
@@ -19,4 +19,4 @@ tags:
 - [[sync-cve-registry.py]] - `imports` [EXTRACTED]
 - [[sync_agent_ghsa()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Generate_Cve_Page_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_112

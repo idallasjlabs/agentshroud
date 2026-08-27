@@ -1,12 +1,12 @@
 ---
 source_file: "docs/compliance/iec-62443-matrix.md"
 type: "document"
-community: "Iec 62443 Matrix (compliance)"
+community: "Community 799"
 location: "L77"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Iec_62443_Matrix_compliance
+  - community/Community_799
 ---
 
 # FR 5: Restricted Data Flow (RDF)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[IEC 62443 Compliance Matrix — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Iec_62443_Matrix_compliance
+#graphify/document #graphify/EXTRACTED #community/Community_799

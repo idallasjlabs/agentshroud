@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/system-architecture.md"
 type: "concept"
-community: "Trust Manager.py (Security Modules)"
+community: "Community 1259"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Trust_Managerpy_Security_Modules
+  - community/Community_1259
 ---
 
 # Kill Switch (Monitor/Block/Isolate)
@@ -14,4 +14,4 @@ tags:
 - [[Approval Queue (SQLite)]] - `calls` [EXTRACTED]
 - [[Dashboard (WebSocket)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Trust_Managerpy_Security_Modules
+#graphify/concept #graphify/EXTRACTED #community/Community_1259

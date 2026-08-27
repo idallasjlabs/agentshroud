@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/canary.py"
 type: "code"
-community: "Security Audit & Watchtower Tests"
+community: "Community 74"
 location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Audit__Watchtower_Tests
+  - community/Community_74
 ---
 
 # Any
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.to_dict()_6]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests
+#graphify/code #graphify/EXTRACTED #community/Community_74

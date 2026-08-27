@@ -1,22 +1,20 @@
 ---
-source_file: "skills/custom/securebrowser/README.md"
+source_file: "skills/custom/icloud/SKILL.md"
 type: "document"
-community: "Readme (securebrowser)"
-location: "L293"
+community: "Community 327"
+location: "L142"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_securebrowser
+  - community/Community_327
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Approval required but none granted]] - `contains` [EXTRACTED]
-- [[Browser timeout_3]] - `contains` [EXTRACTED]
-- [[CAPTCHA detected_3]] - `contains` [EXTRACTED]
-- [[Credential extraction blocked]] - `contains` [EXTRACTED]
-- [[URL not in allowlist_3]] - `contains` [EXTRACTED]
-- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
+- [[401 Unauthorized_4]] - `contains` [EXTRACTED]
+- [[CalendarContacts not found_3]] - `contains` [EXTRACTED]
+- [[Connection timeout_4]] - `contains` [EXTRACTED]
+- [[iCloud Services_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_securebrowser
+#graphify/document #graphify/EXTRACTED #community/Community_327

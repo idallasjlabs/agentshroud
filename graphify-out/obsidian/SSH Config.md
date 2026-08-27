@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/ssh-config.md"
 type: "document"
-community: "Ssh Config (03 - Configuration)"
+community: "Community 824"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Ssh_Config_03_-_Configuration
+  - community/Community_824
 ---
 
 # SSH Config
@@ -19,4 +19,4 @@ tags:
 - [[Relationship to agentshroud.yaml]] - `contains` [EXTRACTED]
 - [[ssh-config]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Ssh_Config_03_-_Configuration
+#graphify/document #graphify/EXTRACTED #community/Community_824

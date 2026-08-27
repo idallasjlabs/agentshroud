@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-ui/SKILL.md"
 type: "document"
-community: "Skill (i-ui)"
+community: "Community 303"
 location: "L54"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-ui
+  - community/Community_303
 ---
 
 # CSS Architecture Recommendations
@@ -17,4 +17,4 @@ tags:
 - [[Skill UI Expert (UI)_2]] - `contains` [EXTRACTED]
 - [[Utility-First (Tailwind  custom utilities)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-ui
+#graphify/document #graphify/EXTRACTED #community/Community_303

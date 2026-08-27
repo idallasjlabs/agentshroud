@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: "A2a Proxy"
+community: "Community 107"
 location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2a_Proxy
+  - community/Community_107
 ---
 
 # A2AProxy
@@ -40,4 +40,4 @@ tags:
 - [[test_resolve_peer_id_uses_constant_time_comparison()]] - `references` [EXTRACTED]
 - [[test_resolve_peer_id_whitespace_only_token_returns_none()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2a_Proxy
+#graphify/code #graphify/EXTRACTED #community/Community_107

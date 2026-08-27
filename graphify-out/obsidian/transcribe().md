@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/stt.py"
 type: "code"
-community: "Stt (voice_gateway)"
+community: "Community 740"
 location: "L114"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Stt_voice_gateway
+  - community/Community_740
 ---
 
 # transcribe()
@@ -20,4 +20,4 @@ tags:
 - [[stt.py]] - `contains` [EXTRACTED]
 - [[voice_endpoint() — voice WebSocket handler (IDLE→LISTENING→THINKING→SPEAKING state machine)]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Stt_voice_gateway
+#graphify/code #graphify/EXTRACTED #community/Community_740

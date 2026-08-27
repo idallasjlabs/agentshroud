@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/HTTP_PROXY.md"
 type: "document"
-community: "Agentshroud.yaml (03 - Configuration)"
+community: "Community 251"
 location: "L1"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Agentshroudyaml_03_-_Configuration
+  - community/Community_251
 ---
 
 # HTTP_PROXY.md
@@ -17,4 +17,4 @@ tags:
 - [[egress_filter.py]] - `references` [INFERRED]
 - [[http_proxy.py]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Agentshroudyaml_03_-_Configuration
+#graphify/document #graphify/INFERRED #community/Community_251

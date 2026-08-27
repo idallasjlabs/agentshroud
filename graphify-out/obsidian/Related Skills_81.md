@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/skills/i-athena/README.md"
 type: "document"
-community: "Readme (i-athena)"
+community: "Community 1215"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-athena
+  - community/Community_1215
 ---
 
 # Related Skills
 
 ## Connections
-- [[Athena — Knowledge Distiller_3]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-athena
+#graphify/document #graphify/EXTRACTED #community/Community_1215

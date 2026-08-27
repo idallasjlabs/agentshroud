@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/test/test_playback_state/stubs/freertos/task.h"
 type: "code"
-community: "Task (freertos)"
+community: "Community 1386"
 location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Task_freertos
+  - community/Community_1386
 ---
 
 # vTaskDelay()
@@ -15,4 +15,4 @@ tags:
 - [[TickType_t_1]] - `references` [EXTRACTED]
 - [[task.h]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Task_freertos
+#graphify/code #graphify/EXTRACTED #community/Community_1386

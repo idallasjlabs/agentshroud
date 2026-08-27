@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "rationale"
-community: "Dns Canvas Coverage"
+community: "Community 418"
 location: "L592"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Dns_Canvas_Coverage
+  - community/Community_418
 ---
 
 # Stands in for httpx.AsyncClient; records request kwargs.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_FakeAsyncClient]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Dns_Canvas_Coverage
+#graphify/rationale #graphify/EXTRACTED #community/Community_418

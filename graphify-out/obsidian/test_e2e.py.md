@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e.py"
 type: "code"
-community: "Docs Accuracy"
+community: "Community 818"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Docs_Accuracy
+  - community/Community_818
 ---
 
 # test_e2e.py
@@ -27,4 +27,4 @@ tags:
 - [[test_ssh_submit_queues_approval()]] - `contains` [EXTRACTED]
 - [[test_status_endpoint()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Docs_Accuracy
+#graphify/code #graphify/EXTRACTED #community/Community_818

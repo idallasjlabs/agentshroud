@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/06-outbound-info-filter.md"
 type: "document"
-community: "06 Outbound Info Filter (redteam)"
+community: "Community 534"
 location: "L40"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/06_Outbound_Info_Filter_redteam
+  - community/Community_534
 ---
 
 # Remediation
@@ -21,4 +21,4 @@ tags:
 - [[Step 6 Integrate with the PII Sanitizer pipeline]] - `contains` [EXTRACTED]
 - [[Step 7 Add the module to gateway configuration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/06_Outbound_Info_Filter_redteam
+#graphify/document #graphify/EXTRACTED #community/Community_534

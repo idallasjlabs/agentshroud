@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_round2_hardening.py"
 type: "rationale"
-community: "Resource Guard & Local Model Parity"
+community: "Community 7"
 location: "L11"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Resource_Guard__Local_Model_Parity
+  - community/Community_7
 ---
 
 # Verify resource check methods return False (deny) on exception.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestResourceGuardFailClosed]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Resource_Guard__Local_Model_Parity
+#graphify/rationale #graphify/EXTRACTED #community/Community_7

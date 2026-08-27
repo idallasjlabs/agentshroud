@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_config.py"
 type: "rationale"
-community: "Group Config & Collaborator Responses"
+community: "Community 81"
 location: "L232"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Group_Config__Collaborator_Responses
+  - community/Community_81
 ---
 
 # persist_user_collab_mode writes under __user_overrides__ key.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_persist_user_collab_mode()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Group_Config__Collaborator_Responses
+#graphify/rationale #graphify/EXTRACTED #community/Community_81

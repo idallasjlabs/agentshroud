@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/playwright.md"
 type: "document"
-community: "Openclaw (05 - Dependencies)"
+community: "Community 340"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Openclaw_05_-_Dependencies
+  - community/Community_340
 ---
 
 # playwright.md
@@ -16,4 +16,4 @@ tags:
 - [[Playwright]] - `contains` [EXTRACTED]
 - [[volumes]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Openclaw_05_-_Dependencies
+#graphify/document #graphify/EXTRACTED #community/Community_340

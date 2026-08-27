@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/report_store.py"
 type: "code"
-community: "Report Store"
+community: "Community 96"
 location: "L182"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Report_Store
+  - community/Community_96
 ---
 
 # Any
@@ -15,4 +15,4 @@ tags:
 - [[.get()_4]] - `references` [EXTRACTED]
 - [[.list()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Report_Store
+#graphify/code #graphify/EXTRACTED #community/Community_96

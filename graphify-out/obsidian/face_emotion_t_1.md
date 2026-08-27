@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/ui_face.c"
 type: "code"
-community: "Wakeword (main)"
+community: "Community 249"
 location: "L135"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Wakeword_main
+  - community/Community_249
 ---
 
 # face_emotion_t
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_state_to_emotion()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Wakeword_main
+#graphify/code #graphify/EXTRACTED #community/Community_249

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cross_bot_trust_ledger.py"
 type: "rationale"
-community: "Cross Bot Trust Ledger"
+community: "Community 1016"
 location: "L248"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Cross_Bot_Trust_Ledger
+  - community/Community_1016
 ---
 
 # Propagation to a peer with no registered TrustManager must not raise.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_bot_without_registered_trust_manager_is_skipped()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Cross_Bot_Trust_Ledger
+#graphify/rationale #graphify/EXTRACTED #community/Community_1016

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "Key Vault"
+community: "Community 382"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Key_Vault
+  - community/Community_382
 ---
 
 # KeyEntry
@@ -15,4 +15,4 @@ tags:
 - [[.store_key()]] - `calls` [EXTRACTED]
 - [[key_vault.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Key_Vault
+#graphify/code #graphify/EXTRACTED #community/Community_382

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "Url Analyzer"
+community: "Community 5"
 location: "L75"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Url_Analyzer
+  - community/Community_5
 ---
 
 # Any
@@ -19,4 +19,4 @@ tags:
 - [[WebContentScanner]] - `uses` [INFERRED]
 - [[WebProxyConfig]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Url_Analyzer
+#graphify/code #graphify/INFERRED #community/Community_5

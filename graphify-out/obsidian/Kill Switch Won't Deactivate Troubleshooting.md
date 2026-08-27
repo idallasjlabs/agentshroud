@@ -1,11 +1,11 @@
 ---
 source_file: "docs/runbooks/troubleshooting.md"
 type: "concept"
-community: "Troubleshooting (runbooks)"
+community: "Community 314"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Troubleshooting_runbooks
+  - community/Community_314
 ---
 
 # Kill Switch Won't Deactivate Troubleshooting
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[troubleshooting]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Troubleshooting_runbooks
+#graphify/concept #graphify/EXTRACTED #community/Community_314

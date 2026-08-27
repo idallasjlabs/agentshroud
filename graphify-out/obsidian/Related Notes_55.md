@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Auth Errors.md"
 type: "document"
-community: "Auth errors (07 - Errors & Troubleshooting)"
+community: "Community 313"
 location: "L80"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Auth_errors_07_-_Errors__Troubleshooting
+  - community/Community_313
 ---
 
 # Related Notes
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Auth Errors_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Auth_errors_07_-_Errors__Troubleshooting
+#graphify/document #graphify/EXTRACTED #community/Community_313

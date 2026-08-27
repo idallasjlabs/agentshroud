@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_write_file_endpoint.py"
 type: "rationale"
-community: "Security Fixes & SSH Write Endpoint"
+community: "Community 12"
 location: "L128"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Fixes__SSH_Write_Endpoint
+  - community/Community_12
 ---
 
 # Valid request: SSHProxy.write_file() is invoked with decoded path/content
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_write_file_valid_round_trip()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Fixes__SSH_Write_Endpoint
+#graphify/rationale #graphify/EXTRACTED #community/Community_12

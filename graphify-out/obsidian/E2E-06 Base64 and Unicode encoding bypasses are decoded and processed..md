@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "rationale"
-community: "Security Audit & Watchtower Tests"
+community: "Community 870"
 location: "L228"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Audit__Watchtower_Tests
+  - community/Community_870
 ---
 
 # E2E-06: Base64 and Unicode encoding bypasses are decoded and processed.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestE2E06EncodingBypassDetection]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Community_870

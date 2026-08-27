@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_event_bus.py"
 type: "code"
-community: "Soc Egress Endpoints"
+community: "Community 374"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Soc_Egress_Endpoints
+  - community/Community_374
 ---
 
 # test_event_bus.py
@@ -25,4 +25,4 @@ tags:
 - [[test_subscribe_receive_events()]] - `contains` [EXTRACTED]
 - [[test_unsubscribe_stops_events()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Soc_Egress_Endpoints
+#graphify/code #graphify/EXTRACTED #community/Community_374

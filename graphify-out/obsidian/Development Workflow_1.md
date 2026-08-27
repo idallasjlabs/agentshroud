@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md"
 type: "document"
-community: "Development Workflow Read Only (security)"
+community: "Community 185"
 location: "L96"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Development_Workflow_Read_Only_security
+  - community/Community_185
 ---
 
 # Development Workflow
@@ -20,4 +20,4 @@ tags:
 - [[Step 5 Verify OS Immutability]] - `contains` [EXTRACTED]
 - [[Step 6 Revert to Development if Needed]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Development_Workflow_Read_Only_security
+#graphify/document #graphify/EXTRACTED #community/Community_185

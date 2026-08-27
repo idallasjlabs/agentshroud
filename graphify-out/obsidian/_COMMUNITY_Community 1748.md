@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Obsidian core-plugins.json]] - document - docs/vault/.obsidian/core-plugins.json
+- [[build_merge() avoids NetworkX round-trip (801)]] - rationale - docker/config/hermes/skills/graphify/references/update.md
 
 ## Live Query (requires Dataview plugin)
 

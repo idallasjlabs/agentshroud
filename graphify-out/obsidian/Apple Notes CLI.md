@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/apple-notes/SKILL.md"
 type: "document"
-community: "Skill (bear-notes)"
+community: "Community 798"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_bear-notes
+  - community/Community_798
 ---
 
 # Apple Notes CLI
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SKILL_195]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_bear-notes
+#graphify/document #graphify/EXTRACTED #community/Community_798

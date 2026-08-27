@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "rationale"
-community: "Http Proxy Coverage"
+community: "Community 52"
 location: "L533"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Http_Proxy_Coverage
+  - community/Community_52
 ---
 
 # Transport without an underlying socket (None) is skipped cleanly.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_keepalive_skipped_when_socket_is_none()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Http_Proxy_Coverage
+#graphify/rationale #graphify/EXTRACTED #community/Community_52

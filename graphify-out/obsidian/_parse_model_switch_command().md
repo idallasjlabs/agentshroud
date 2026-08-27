@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "code"
-community: "Server (voice_gateway)"
+community: "Community 115"
 location: "L596"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Server_voice_gateway
+  - community/Community_115
 ---
 
 # _parse_model_switch_command()
@@ -16,4 +16,4 @@ tags:
 - [[server.py]] - `contains` [EXTRACTED]
 - [[voice_endpoint()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Server_voice_gateway
+#graphify/code #graphify/EXTRACTED #community/Community_115

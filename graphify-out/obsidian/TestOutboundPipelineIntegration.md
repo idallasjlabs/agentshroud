@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "Telegram Outbound Proxy Tests"
+community: "Community 3"
 location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Telegram_Outbound_Proxy_Tests
+  - community/Community_3
 ---
 
 # TestOutboundPipelineIntegration
@@ -202,4 +202,4 @@ tags:
 - [[Tests that _filter_outbound calls the full security pipeline.]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Telegram_Outbound_Proxy_Tests
+#graphify/code #graphify/EXTRACTED #community/Community_3

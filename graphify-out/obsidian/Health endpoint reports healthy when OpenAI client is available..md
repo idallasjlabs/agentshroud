@@ -1,12 +1,12 @@
 ---
 source_file: "chatbot/test_main.py"
 type: "rationale"
-community: "Main (chatbot)"
+community: "Community 83"
 location: "L125"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Main_chatbot
+  - community/Community_83
 ---
 
 # Health endpoint reports healthy when OpenAI client is available.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_health_healthy_with_client()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Main_chatbot
+#graphify/rationale #graphify/EXTRACTED #community/Community_83

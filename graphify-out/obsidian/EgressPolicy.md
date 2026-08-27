@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "Egress Filter"
+community: "Community 118"
 location: "L47"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Egress_Filter
+  - community/Community_118
 ---
 
 # EgressPolicy
@@ -113,4 +113,4 @@ tags:
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 - [[v0.9.0 cron-email fix SMTPIMAP ports 465587993 allowed for OpenClaw cron email]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Egress_Filter
+#graphify/code #graphify/INFERRED #community/Community_118

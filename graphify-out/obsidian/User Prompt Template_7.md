@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-vulcan/SKILL.md"
 type: "document"
-community: "Skill (i-vulcan)"
+community: "Community 897"
 location: "L108"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-vulcan
+  - community/Community_897
 ---
 
 # User Prompt Template
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Vulcan — Subject Matter Auditor_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-vulcan
+#graphify/document #graphify/EXTRACTED #community/Community_897

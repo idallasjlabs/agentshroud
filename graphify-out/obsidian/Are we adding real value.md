@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-03-03.md"
 type: "document"
-community: "Phase Review 2026 03 (reviews)"
+community: "Community 1045"
 location: "L81"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_Review_2026_03_reviews
+  - community/Community_1045
 ---
 
 # Are we adding real value?
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[3. Brutally Honest Self-Assessment]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_Review_2026_03_reviews
+#graphify/document #graphify/EXTRACTED #community/Community_1045

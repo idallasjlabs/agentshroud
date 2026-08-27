@@ -1,12 +1,12 @@
 ---
 source_file: "docs/data/data-dictionary.md"
 type: "document"
-community: "Data Dictionary (data)"
+community: "Community 394"
 location: "L232"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Data_Dictionary_data
+  - community/Community_394
 ---
 
 # Runtime State Entities
@@ -16,4 +16,4 @@ tags:
 - [[RateLimitBucket]] - `contains` [EXTRACTED]
 - [[SessionState]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Data_Dictionary_data
+#graphify/document #graphify/EXTRACTED #community/Community_394

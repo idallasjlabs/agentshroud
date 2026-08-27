@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_approval_routing.py"
 type: "code"
-community: "Group Approval Routing"
+community: "Community 121"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Group_Approval_Routing
+  - community/Community_121
 ---
 
 # test_group_approval_routing.py
@@ -25,4 +25,4 @@ tags:
 - [[router()]] - `contains` [EXTRACTED]
 - [[router_with_sent()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Group_Approval_Routing
+#graphify/code #graphify/EXTRACTED #community/Community_121

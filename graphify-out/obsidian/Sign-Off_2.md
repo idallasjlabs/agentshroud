@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-ps/SKILL.md"
 type: "document"
-community: "Skill (i-ps)"
+community: "Community 412"
 location: "L167"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-ps
+  - community/Community_412
 ---
 
 # Sign-Off
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Post-Deployment Verification_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-ps
+#graphify/document #graphify/EXTRACTED #community/Community_412

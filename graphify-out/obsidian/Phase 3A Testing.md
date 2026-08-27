@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md"
 type: "document"
-community: "Phase 3a 3b Implementation (architecture)"
+community: "Community 226"
 location: "L198"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_3a_3b_Implementation_architecture
+  - community/Community_226
 ---
 
 # Phase 3A Testing
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Testing Checklist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_3a_3b_Implementation_architecture
+#graphify/document #graphify/EXTRACTED #community/Community_226

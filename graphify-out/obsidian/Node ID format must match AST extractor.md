@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/graphify/references/extraction-spec.md"
 type: "rationale"
-community: "Extraction Spec (references)"
+community: "Community 1741"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Extraction_Spec_references
+  - community/Community_1741
 ---
 
 # Node ID format must match AST extractor
 
-#graphify/rationale #graphify/EXTRACTED #community/Extraction_Spec_references
+#graphify/rationale #graphify/EXTRACTED #community/Community_1741

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "Session Isolation"
+community: "Community 1534"
 location: "line 346"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Session_Isolation
+  - community/Community_1534
 ---
 
 # MiddlewareManager Session Enforcement Tests
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SSHProxy.validate_cwd() Unit Tests]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Session_Isolation
+#graphify/code #graphify/INFERRED #community/Community_1534

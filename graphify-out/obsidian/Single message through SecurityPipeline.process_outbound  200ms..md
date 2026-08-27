@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "rationale"
-community: "Module Group 322"
+community: "Community 775"
 location: "L303"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_322
+  - community/Community_775
 ---
 
 # Single message through SecurityPipeline.process_outbound < 200ms.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_single_outbound_under_200ms()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_322
+#graphify/rationale #graphify/EXTRACTED #community/Community_775

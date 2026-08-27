@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "rationale"
-community: "Llm Proxy (proxy)"
-location: "L1361"
+community: "Community 108"
+location: "L1439"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Llm_Proxy_proxy
+  - community/Community_108
 ---
 
 # Scan request data for PII and injection across different provider formats.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._scan_request_data()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Llm_Proxy_proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_108

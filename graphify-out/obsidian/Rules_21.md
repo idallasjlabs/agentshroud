@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-tdd/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-session-prompt/SKILL.md"
 type: "document"
-community: "Skill (i-tdd)"
-location: "L20"
+community: "Community 708"
+location: "L137"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-tdd
+  - community/Community_708
 ---
 
 # Rules
 
 ## Connections
-- [[Skill Test-Driven Development (TDD)_2]] - `contains` [EXTRACTED]
+- [[Skill Session Prompt Generator (SESSION-PROMPT)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-tdd
+#graphify/document #graphify/EXTRACTED #community/Community_708

@@ -1,12 +1,12 @@
 ---
 source_file: ".github/COPILOT_CLI_SETUP.md"
 type: "document"
-community: "Copilot Cli Setup (.github)"
+community: "Community 991"
 location: "L77"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Copilot_Cli_Setup_github
+  - community/Community_991
 ---
 
 # Custom Agents
@@ -17,4 +17,4 @@ tags:
 - [[3. safe-refactor]] - `contains` [EXTRACTED]
 - [[GitHub Copilot CLI Setup Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Copilot_Cli_Setup_github
+#graphify/document #graphify/EXTRACTED #community/Community_991

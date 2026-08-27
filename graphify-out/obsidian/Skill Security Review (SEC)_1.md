@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-sec/SKILL.md"
 type: "document"
-community: "Skill (i-sec)"
+community: "Community 704"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-sec
+  - community/Community_704
 ---
 
 # Skill: Security Review (SEC)
@@ -21,4 +21,4 @@ tags:
 - [[SecureClaw-Specific Threat Model_1]] - `contains` [EXTRACTED]
 - [[Verification Commands_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-sec
+#graphify/document #graphify/EXTRACTED #community/Community_704

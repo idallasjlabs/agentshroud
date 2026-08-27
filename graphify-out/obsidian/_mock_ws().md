@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "Voice Gateway"
-location: "L2137"
+community: "Community 101"
+location: "L2138"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Voice_Gateway
+  - community/Community_101
 ---
 
 # _mock_ws()
 
 ## Connections
 - [[AsyncMock]] - `calls` [INFERRED]
-- [[Build a MagicMock WebSocket for direct voice_endpoint() tests.]] - `rationale_for` [EXTRACTED]
+- [[Build a MagicMock WebSocket for direct voice_endpoint() tests.      Frames are d]] - `rationale_for` [EXTRACTED]
 - [[test_bare_listen_starts_fresh()]] - `calls` [EXTRACTED]
 - [[test_listen_offset_resumes_partial_upload()]] - `calls` [EXTRACTED]
 - [[test_listen_offset_with_stale_cache_degrades_to_fresh()]] - `calls` [EXTRACTED]
@@ -36,4 +36,4 @@ tags:
 - [[test_ws_volume_query_intercepted_returns_tracked_level()]] - `calls` [EXTRACTED]
 - [[test_ws_volume_query_unknown_state_intercepted()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Voice_Gateway
+#graphify/code #graphify/EXTRACTED #community/Community_101

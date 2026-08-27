@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-mcpm-doctor/SKILL.md"
 type: "document"
-community: "Skill (i-mcpm-doctor)"
+community: "Community 465"
 location: "L72"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-mcpm-doctor
+  - community/Community_465
 ---
 
 # Common Issues & Fixes
@@ -20,4 +20,4 @@ tags:
 - [[Issue uvx not found_1]] - `contains` [EXTRACTED]
 - [[Skill MCP Doctor (MCPM-DOCTOR)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-mcpm-doctor
+#graphify/document #graphify/EXTRACTED #community/Community_465

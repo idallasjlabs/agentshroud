@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "rationale"
-community: "Enhanced Approval"
+community: "Community 24"
 location: "L148"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Enhanced_Approval
+  - community/Community_24
 ---
 
 # Test full approval flow for critical tool.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_critical_tool_approval_flow()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Enhanced_Approval
+#graphify/rationale #graphify/EXTRACTED #community/Community_24

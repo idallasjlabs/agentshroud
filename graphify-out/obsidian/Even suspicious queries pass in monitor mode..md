@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_filter.py"
 type: "rationale"
-community: "Dns Filter"
+community: "Community 46"
 location: "L102"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Dns_Filter
+  - community/Community_46
 ---
 
 # Even suspicious queries pass in monitor mode.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_monitor_mode_never_blocks()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Dns_Filter
+#graphify/rationale #graphify/EXTRACTED #community/Community_46

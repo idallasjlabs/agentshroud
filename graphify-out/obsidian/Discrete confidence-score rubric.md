@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/graphify/references/extraction-spec.md"
 type: "rationale"
-community: "Skill (i-ab)"
+community: "Community 1311"
 tags:
   - graphify/rationale
   - graphify/INFERRED
-  - community/Skill_i-ab
+  - community/Community_1311
 ---
 
 # Discrete confidence-score rubric
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Finding Triage Classes (CONFIRMEDPROBABLESELF_HEALEDFALSE_POSITIVEGOOD_DIRECTION)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/rationale #graphify/INFERRED #community/Skill_i-ab
+#graphify/rationale #graphify/INFERRED #community/Community_1311

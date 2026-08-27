@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/OPENCLAW_SETUP.md"
 type: "document"
-community: "Openclaw Setup (setup)"
+community: "Community 214"
 location: "L204"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Openclaw_Setup_setup
+  - community/Community_214
 ---
 
 # Through AgentShroud Gateway (Port 8080)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Using OpenClaw]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Openclaw_Setup_setup
+#graphify/document #graphify/EXTRACTED #community/Community_214

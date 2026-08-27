@@ -1,12 +1,12 @@
 ---
 source_file: "docker/DOCKER-VPN-NETWORKING.md"
 type: "document"
-community: "Docker Vpn Networking (docker)"
+community: "Community 975"
 location: "L108"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Vpn_Networking_docker
+  - community/Community_975
 ---
 
 # With VPN connected
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Verification]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Vpn_Networking_docker
+#graphify/document #graphify/EXTRACTED #community/Community_975

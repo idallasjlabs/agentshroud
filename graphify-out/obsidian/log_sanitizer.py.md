@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "Egress Monitor"
+community: "Community 14"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress_Monitor
+  - community/Community_14
 ---
 
 # log_sanitizer.py
@@ -20,4 +20,4 @@ tags:
 - [[key_vault.py]] - `semantically_similar_to` [INFERRED]
 - [[session_security.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress_Monitor
+#graphify/code #graphify/EXTRACTED #community/Community_14

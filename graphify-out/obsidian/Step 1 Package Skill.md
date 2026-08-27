@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "Readme (securebrowser)"
+community: "Community 150"
 location: "L357"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_securebrowser
+  - community/Community_150
 ---
 
 # Step 1: Package Skill
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Publishing to ClawHub]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_securebrowser
+#graphify/document #graphify/EXTRACTED #community/Community_150

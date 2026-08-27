@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-devsecops/SKILL.md"
 type: "document"
-community: "Skill (i-devsecops)"
+community: "Community 1462"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-devsecops
+  - community/Community_1462
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill devsecops_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-devsecops
+#graphify/document #graphify/EXTRACTED #community/Community_1462

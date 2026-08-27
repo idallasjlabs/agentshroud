@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/output_canary.py"
 type: "code"
-community: "RBAC & Ingest Middleware"
+community: "Community 6"
 location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBAC__Ingest_Middleware
+  - community/Community_6
 ---
 
 # OutputCanary
@@ -47,4 +47,4 @@ tags:
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_output_canary.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBAC__Ingest_Middleware
+#graphify/code #graphify/EXTRACTED #community/Community_6

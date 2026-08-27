@@ -1,17 +1,21 @@
 ---
-source_file: "docs/reference/QUICK_REFERENCE.md"
+source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
 type: "document"
-community: "Quick Reference (reference)"
-location: "L80"
+community: "Community 1265"
+location: "L237"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Quick_Reference_reference
+  - community/Community_1265
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Quick Reference Card]] - `contains` [EXTRACTED]
+- [[Browser-Fetch Skill for 1Password Share Links]] - `contains` [EXTRACTED]
+- [[Problem 1Password link shows only page shell]] - `contains` [EXTRACTED]
+- [[Problem Browser binaries not found]] - `contains` [EXTRACTED]
+- [[Problem Permission denied executing browser]] - `contains` [EXTRACTED]
+- [[Problem Skill not auto-discovered by bot]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Quick_Reference_reference
+#graphify/document #graphify/EXTRACTED #community/Community_1265

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "rationale"
-community: "Daily Cve Report (security)"
-location: "L1642"
+community: "Community 184"
+location: "L1649"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Daily_Cve_Report_security
+  - community/Community_184
 ---
 
 # Nothing to deliver is a legitimate 'done', not a failure to retry.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_zero_new_cves_marks_checked_immediately()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Daily_Cve_Report_security
+#graphify/rationale #graphify/EXTRACTED #community/Community_184

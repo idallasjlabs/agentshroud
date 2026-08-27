@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sync-cve-registry.py"
 type: "code"
-community: "Sync Cve Registry (scripts)"
-location: "L717"
+community: "Community 112"
+location: "L704"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Sync_Cve_Registry_scripts
+  - community/Community_112
 ---
 
 # sync_agent_ghsa()
@@ -23,4 +23,4 @@ tags:
 - [[run_ghsa_sync()]] - `calls` [EXTRACTED]
 - [[sync-cve-registry.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Sync_Cve_Registry_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_112

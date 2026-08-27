@@ -1,23 +1,17 @@
 ---
-source_file: "scripts/migrate-cve-registry-ghsa.py"
+source_file: "scripts/list_registry_ghsa_ids.py"
 type: "code"
-community: "Migrate Cve Registry Ghsa (scripts)"
-location: "L524"
+community: "Community 990"
+location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Migrate_Cve_Registry_Ghsa_scripts
+  - community/Community_990
 ---
 
 # main()
 
 ## Connections
-- [[build_id_plan()]] - `calls` [EXTRACTED]
-- [[compute_stats()]] - `calls` [EXTRACTED]
-- [[gather_advisories()]] - `calls` [EXTRACTED]
-- [[load_registry()]] - `calls` [EXTRACTED]
-- [[migrate-cve-registry-ghsa.py]] - `contains` [EXTRACTED]
-- [[render_manual_review()]] - `calls` [EXTRACTED]
-- [[rewrite_registry_text()]] - `calls` [EXTRACTED]
+- [[list_registry_ghsa_ids.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Migrate_Cve_Registry_Ghsa_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_990

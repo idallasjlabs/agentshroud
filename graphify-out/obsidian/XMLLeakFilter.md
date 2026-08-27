@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/xml_leak_filter.py"
 type: "code"
-community: "RBAC & Ingest Middleware"
+community: "Community 6"
 location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBAC__Ingest_Middleware
+  - community/Community_6
 ---
 
 # XMLLeakFilter
@@ -40,4 +40,4 @@ tags:
 - [[test_xml_leak_filter.py]] - `imports` [EXTRACTED]
 - [[xml_leak_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBAC__Ingest_Middleware
+#graphify/code #graphify/EXTRACTED #community/Community_6

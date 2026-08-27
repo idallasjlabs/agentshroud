@@ -1,11 +1,11 @@
 ---
 source_file: "docs/claude-security-audit-prompt.md"
 type: "concept"
-community: "Claude Security Audit Prompt (docs)"
+community: "Community 1275"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Claude_Security_Audit_Prompt_docs
+  - community/Community_1275
 ---
 
 # Collaborator Session Isolation (blocked functions/skills)
@@ -14,4 +14,4 @@ tags:
 - [[Advisory Collaborators (Brett, Chris, Gabriel, TJ)]] - `conceptually_related_to` [INFERRED]
 - [[Collaborators_1]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Claude_Security_Audit_Prompt_docs
+#graphify/concept #graphify/INFERRED #community/Community_1275

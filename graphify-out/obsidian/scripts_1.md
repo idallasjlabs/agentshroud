@@ -1,12 +1,12 @@
 ---
 source_file: "browser-extension/package.json"
 type: "code"
-community: "Package (browser-extension)"
+community: "Community 662"
 location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Package_browser-extension
+  - community/Community_662
 ---
 
 # scripts
@@ -16,4 +16,4 @@ tags:
 - [[test_1]] - `contains` [EXTRACTED]
 - [[testcoverage]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Package_browser-extension
+#graphify/code #graphify/EXTRACTED #community/Community_662

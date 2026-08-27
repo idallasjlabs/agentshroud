@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "Voice Gateway"
-location: "L2342"
+community: "Community 37"
+location: "L2401"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Voice_Gateway
+  - community/Community_37
 ---
 
 # Digit, percent, word-number and compound forms; clamping; non-commands.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_parse_volume_command_forms()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Voice_Gateway
+#graphify/rationale #graphify/EXTRACTED #community/Community_37

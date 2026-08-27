@@ -1,11 +1,11 @@
 ---
 source_file: "docs/papers/agentshroud-whitepaper.md"
 type: "concept"
-community: "Diagram 09 Data Lineage (images)"
+community: "Community 353"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Diagram_09_Data_Lineage_images
+  - community/Community_353
 ---
 
 # Approval Queue (human-in-the-loop)
@@ -22,4 +22,4 @@ tags:
 - [[enforcement-audit-script.py (P0P1P2 module smoke test)]] - `implements` [EXTRACTED]
 - [[ledger.db — audit ledger (Layer 3 persistence; hash-only, 90-day retention, auto-purge at expires_at)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Diagram_09_Data_Lineage_images
+#graphify/concept #graphify/EXTRACTED #community/Community_353

@@ -1,21 +1,18 @@
 ---
-source_file: "src/interfaces/chat_console.py"
+source_file: "skills/openclaw/skill-creator/scripts/package_skill.py"
 type: "code"
-community: "Chat Console (interfaces)"
-location: "L120"
+community: "Community 535"
+location: "L99"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Chat_Console_interfaces
+  - community/Community_535
 ---
 
 # main()
 
 ## Connections
-- [[chat_console.py]] - `contains` [EXTRACTED]
-- [[check_status()]] - `calls` [EXTRACTED]
-- [[print_banner()]] - `calls` [EXTRACTED]
-- [[print_help()]] - `calls` [EXTRACTED]
-- [[send_message()]] - `calls` [EXTRACTED]
+- [[package_skill()]] - `calls` [EXTRACTED]
+- [[package_skill.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Chat_Console_interfaces
+#graphify/code #graphify/EXTRACTED #community/Community_535

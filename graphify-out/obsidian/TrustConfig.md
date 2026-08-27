@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "Cross Bot Trust Ledger"
-location: "L55"
+community: "Community 35"
+location: "L53"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Cross_Bot_Trust_Ledger
+  - community/Community_35
 ---
 
 # TrustConfig
@@ -114,4 +114,4 @@ tags:
 - [[trust_manager()_3]] - `calls` [EXTRACTED]
 - [[trust_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Cross_Bot_Trust_Ledger
+#graphify/code #graphify/INFERRED #community/Community_35

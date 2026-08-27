@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/security-scan.sh"
 type: "code"
-community: "Security Scan (scripts)"
+community: "Community 963"
 location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Scan_scripts
+  - community/Community_963
 ---
 
 # log()
@@ -20,4 +20,4 @@ tags:
 - [[security-scan.sh]] - `defines` [EXTRACTED]
 - [[security-scan.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Scan_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_963

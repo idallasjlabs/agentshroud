@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION.md"
 type: "document"
-community: "Security Value Proposition (security)"
+community: "Community 847"
 location: "L168"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Value_Proposition_security
+  - community/Community_847
 ---
 
 # ⚖️ Medium-Value Features (Nice to Have)
@@ -16,4 +16,4 @@ tags:
 - [[6. Separate Bot Accounts (iCloud, Gmail)]] - `contains` [EXTRACTED]
 - [[Where's The REAL Value]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Value_Proposition_security
+#graphify/document #graphify/EXTRACTED #community/Community_847

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_intel_endpoint.py"
 type: "rationale"
-community: "Intel Endpoint"
+community: "Community 113"
 location: "L189"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Intel_Endpoint
+  - community/Community_113
 ---
 
 # Fake httpx.stream context manager yielding a body in chunks.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_StreamResp]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Intel_Endpoint
+#graphify/rationale #graphify/EXTRACTED #community/Community_113

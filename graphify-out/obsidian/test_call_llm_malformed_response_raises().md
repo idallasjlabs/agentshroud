@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "Server (voice_gateway)"
-location: "L571"
+community: "Community 115"
+location: "L572"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Server_voice_gateway
+  - community/Community_115
 ---
 
 # test_call_llm_malformed_response_raises()
@@ -17,4 +17,4 @@ tags:
 - [[_call_llm()]] - `calls` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Server_voice_gateway
+#graphify/code #graphify/EXTRACTED #community/Community_115

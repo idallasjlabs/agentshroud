@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/songsee/SKILL.md"
 type: "document"
-community: "Skill (summarize)"
+community: "Community 400"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_summarize
+  - community/Community_400
 ---
 
 # songsee
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SKILL_230]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_summarize
+#graphify/document #graphify/EXTRACTED #community/Community_400

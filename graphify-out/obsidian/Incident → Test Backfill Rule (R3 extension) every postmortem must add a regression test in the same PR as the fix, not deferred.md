@@ -1,11 +1,11 @@
 ---
 source_file: "docs/governance/TEST_STRATEGY.md"
 type: "rationale"
-community: "Strategy (governance)"
+community: "Community 307"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Strategy_governance
+  - community/Community_307
 ---
 
 # Incident → Test Backfill Rule (R3 extension): every postmortem must add a regression test in the same PR as the fix, not deferred
@@ -20,4 +20,4 @@ tags:
 - [[Bug stale Slack block on restart → A6S7 delete config.channels.slack when no tokens (v1.0.40)]] - `rationale_for` [EXTRACTED]
 - [[Test Strategy (docsgovernanceTEST_STRATEGY.md)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Strategy_governance
+#graphify/rationale #graphify/EXTRACTED #community/Community_307

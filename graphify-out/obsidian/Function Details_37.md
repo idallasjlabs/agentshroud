@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/encrypted_store.py.md"
 type: "document"
-community: "Encrypted Store.py (Security Modules)"
+community: "Community 509"
 location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Encrypted_Storepy_Security_Modules
+  - community/Community_509
 ---
 
 # Function Details
@@ -19,4 +19,4 @@ tags:
 - [[_secure_zero(buffer)]] - `contains` [EXTRACTED]
 - [[encrypted_store.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Encrypted_Storepy_Security_Modules
+#graphify/document #graphify/EXTRACTED #community/Community_509

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Web Api Coverage"
+community: "Community 31"
 location: "L155"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Web_Api_Coverage
+  - community/Community_31
 ---
 
 # ModeRequest
@@ -60,4 +60,4 @@ tags:
 - [[test_observatory_mode.py]] - `imports` [EXTRACTED]
 - [[test_web_api_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Web_Api_Coverage
+#graphify/code #graphify/INFERRED #community/Community_31

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "Enhanced Approval"
+community: "Community 24"
 location: "L191"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Enhanced_Approval
+  - community/Community_24
 ---
 
 # ToolRiskPolicy
@@ -20,6 +20,7 @@ tags:
 - [[ApprovalStore]] - `uses` [INFERRED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[BotConfig]] - `uses` [INFERRED]
+- [[EnhancedApprovalQueue]] - `uses` [INFERRED]
 - [[MFAGuard]] - `uses` [INFERRED]
 - [[Risk policy configuration for a tool tier]] - `rationale_for` [EXTRACTED]
 - [[SSHConfig]] - `uses` [INFERRED]
@@ -36,4 +37,4 @@ tags:
 - [[test_enhanced_approval.py]] - `imports` [EXTRACTED]
 - [[tool_risk_config()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Enhanced_Approval
+#graphify/code #graphify/INFERRED #community/Community_24

@@ -1,0 +1,39 @@
+---
+type: community
+members: 16
+---
+
+# Community 555
+
+**Members:** 16 nodes
+
+## Members
+- [[Accessibility Checklist]] - document - branding/QUICK-REFERENCE.md
+- [[AgentShroud Brand Quick Reference]] - document - branding/QUICK-REFERENCE.md
+- [[CSS Variables]] - document - branding/QUICK-REFERENCE.md
+- [[Common Use Cases]] - document - branding/QUICK-REFERENCE.md
+- [[Dark Mode]] - document - branding/QUICK-REFERENCE.md
+- [[Favicon]] - document - branding/QUICK-REFERENCE.md
+- [[File Locations]] - document - branding/QUICK-REFERENCE.md
+- [[Logo Files_1]] - document - branding/QUICK-REFERENCE.md
+- [[Logo Usage Rules]] - document - branding/QUICK-REFERENCE.md
+- [[Need More Details]] - document - branding/QUICK-REFERENCE.md
+- [[Primary Brand Color]] - document - branding/QUICK-REFERENCE.md
+- [[Quick Color Palette]] - document - branding/QUICK-REFERENCE.md
+- [[Typography]] - document - branding/QUICK-REFERENCE.md
+- [[Website Header]] - document - branding/QUICK-REFERENCE.md
+- [[✅ Do]] - document - branding/QUICK-REFERENCE.md
+- [[❌ Don't]] - document - branding/QUICK-REFERENCE.md
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/Community_555
+SORT file.name ASC
+```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 661]]
+
+## Top bridge nodes
+- [[AgentShroud Brand Quick Reference]] - degree 10, connects to 1 community

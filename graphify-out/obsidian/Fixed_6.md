@@ -1,17 +1,17 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "Bot Container Scripts"
-location: "L349"
+community: "Community 1276"
+location: "L345"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Container_Scripts
+  - community/Community_1276
 ---
 
 # Fixed
 
 ## Connections
-- [[1.2.0 — featesp32-s3-hermes-voice (2026-06-24)]] - `contains` [EXTRACTED]
+- [[1.2.3 — releasev1.2.3 (2026-06-29)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Container_Scripts
+#graphify/document #graphify/EXTRACTED #community/Community_1276

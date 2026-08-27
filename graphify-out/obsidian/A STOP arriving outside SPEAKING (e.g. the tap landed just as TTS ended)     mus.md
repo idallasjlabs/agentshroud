@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "Voice Gateway"
-location: "L2224"
+community: "Community 101"
+location: "L2283"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Voice_Gateway
+  - community/Community_101
 ---
 
 # A STOP arriving outside SPEAKING (e.g. the tap landed just as TTS ended)     mus
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_ws_stale_stop_when_idle_is_ignored()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Voice_Gateway
+#graphify/rationale #graphify/EXTRACTED #community/Community_101

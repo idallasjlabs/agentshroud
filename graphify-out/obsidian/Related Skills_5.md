@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-bs/README.md"
 type: "document"
-community: "Readme (i-bs)"
+community: "Community 1149"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-bs
+  - community/Community_1149
 ---
 
 # Related Skills
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Branding Specialist (BS)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-bs
+#graphify/document #graphify/EXTRACTED #community/Community_1149

@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/eightctl/SKILL.md"
 type: "concept"
-community: "Skill (eightctl)"
+community: "Community 1384"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Skill_eightctl
+  - community/Community_1384
 ---
 
 # eightctl CLI
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[SKILL_205]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Skill_eightctl
+#graphify/concept #graphify/EXTRACTED #community/Community_1384

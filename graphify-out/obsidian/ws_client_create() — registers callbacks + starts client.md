@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/ws_client.c"
 type: "code"
-community: "Ws Client (main)"
+community: "Community 139"
 location: "line 152"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ws_Client_main
+  - community/Community_139
 ---
 
 # ws_client_create() — registers callbacks + starts client
@@ -17,4 +17,4 @@ tags:
 - [[app_main() — boot sequence]] - `calls` [EXTRACTED]
 - [[voice_task()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ws_Client_main
+#graphify/code #graphify/EXTRACTED #community/Community_139

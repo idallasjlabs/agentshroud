@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/SECURITY_PLAN.md"
 type: "document"
-community: "Security Plan (v0.8)"
+community: "Community 387"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Plan_v08
+  - community/Community_387
 ---
 
 # Threat Coverage Matrix
@@ -16,4 +16,4 @@ tags:
 - [[Injection vectors explicitly covered]] - `contains` [EXTRACTED]
 - [[Key points the Cisco finding implies]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Plan_v08
+#graphify/document #graphify/EXTRACTED #community/Community_387

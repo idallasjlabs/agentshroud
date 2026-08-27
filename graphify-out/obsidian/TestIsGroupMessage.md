@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Telegram Proxy Inbound"
+community: "Community 124"
 location: "L8895"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Inbound
+  - community/Community_124
 ---
 
 # TestIsGroupMessage
@@ -23,4 +23,4 @@ tags:
 - [[Unit tests for TelegramAPIProxy._is_group_message().]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Inbound
+#graphify/code #graphify/EXTRACTED #community/Community_124

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "Runbook (operations)"
+community: "Community 91"
 location: "L66"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Runbook_operations
+  - community/Community_91
 ---
 
 # Deployment Modes
@@ -16,4 +16,4 @@ tags:
 - [[Proxy Mode (Recommended)_1]] - `contains` [EXTRACTED]
 - [[Sidecar Mode (Advanced)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Runbook_operations
+#graphify/document #graphify/EXTRACTED #community/Community_91

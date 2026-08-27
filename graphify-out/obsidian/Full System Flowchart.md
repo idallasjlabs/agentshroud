@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/09 - Diagrams/Full System Flowchart.md"
 type: "document"
-community: "Network topology (09 - Diagrams)"
+community: "Community 603"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Network_topology_09_-_Diagrams
+  - community/Community_603
 ---
 
 # Full System Flowchart.md
@@ -17,4 +17,4 @@ tags:
 - [[README_128]] - `conceptually_related_to` [INFERRED]
 - [[Security Pipeline Flow]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Network_topology_09_-_Diagrams
+#graphify/document #graphify/EXTRACTED #community/Community_603

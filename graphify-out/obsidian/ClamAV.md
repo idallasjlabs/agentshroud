@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/clamav.md"
 type: "document"
-community: "Clamav (05 - Dependencies)"
+community: "Community 600"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Clamav_05_-_Dependencies
+  - community/Community_600
 ---
 
 # ClamAV
@@ -19,4 +19,4 @@ tags:
 - [[Related Notes_40]] - `contains` [EXTRACTED]
 - [[clamav]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Clamav_05_-_Dependencies
+#graphify/document #graphify/EXTRACTED #community/Community_600

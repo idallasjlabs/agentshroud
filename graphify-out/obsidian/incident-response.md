@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/incident-response.md"
 type: "document"
-community: "Readme (i-pm)"
+community: "Community 146"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-pm
+  - community/Community_146
 ---
 
 # incident-response.md
@@ -20,4 +20,4 @@ tags:
 - [[Skills Guide (catalog)]] - `references` [EXTRACTED]
 - [[Usage_27]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-pm
+#graphify/document #graphify/EXTRACTED #community/Community_146

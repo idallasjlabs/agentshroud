@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/approval_hardening.py"
 type: "rationale"
-community: "Approval Hardening"
+community: "Community 213"
 location: "L28"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval_Hardening
+  - community/Community_213
 ---
 
 # Result of deception detection analysis.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[DeceptionDetection]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval_Hardening
+#graphify/rationale #graphify/EXTRACTED #community/Community_213

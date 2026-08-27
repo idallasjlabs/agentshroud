@@ -1,12 +1,12 @@
 ---
 source_file: "docs/diagrams/07-team-planning.md"
 type: "document"
-community: "07 Team Planning (diagrams)"
+community: "Community 745"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/07_Team_Planning_diagrams
+  - community/Community_745
 ---
 
 # 07-team-planning.md
@@ -18,4 +18,4 @@ tags:
 - [[README_120]] - `references` [EXTRACTED]
 - [[Roadmap  Timeline — Development Phases]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/07_Team_Planning_diagrams
+#graphify/document #graphify/EXTRACTED #community/Community_745

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "rationale"
-community: "Tool Result Pii"
+community: "Community 513"
 location: "L99"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Tool_Result_Pii
+  - community/Community_513
 ---
 
 # Test content extraction from string results
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_extract_scannable_content_string()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Tool_Result_Pii
+#graphify/rationale #graphify/EXTRACTED #community/Community_513

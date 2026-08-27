@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "rationale"
-community: "Session Manager (security)"
+community: "Community 174"
 location: "L139"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Session_Manager_security
+  - community/Community_174
 ---
 
 # Initialize session manager.          Args:             base_workspace: Base dire
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.__init__()_115]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Session_Manager_security
+#graphify/rationale #graphify/EXTRACTED #community/Community_174

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/infra-check.sh"
 type: "code"
-community: "Proxy Dashboard"
+community: "Community 1051"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Proxy_Dashboard
+  - community/Community_1051
 ---
 
 # infra-check.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[infra-check.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Proxy_Dashboard
+#graphify/code #graphify/EXTRACTED #community/Community_1051

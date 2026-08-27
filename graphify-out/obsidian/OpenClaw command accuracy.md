@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/healthcheck/SKILL.md"
 type: "document"
-community: "Skill (healthcheck)"
+community: "Community 714"
 location: "L204"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_healthcheck
+  - community/Community_714
 ---
 
 # OpenClaw command accuracy
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OpenClaw Host Hardening]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_healthcheck
+#graphify/document #graphify/EXTRACTED #community/Community_714

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "Egress Filter"
+community: "Community 53"
 location: "L445"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress_Filter
+  - community/Community_53
 ---
 
 # test_egress_filter_notifies_on_deny()
@@ -18,4 +18,4 @@ tags:
 - [[EgressPolicy]] - `calls` [EXTRACTED]
 - [[test_egress_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress_Filter
+#graphify/code #graphify/EXTRACTED #community/Community_53

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/icloud/scripts/calendar.js"
 type: "code"
-community: "Calendar (scripts)"
+community: "Community 866"
 location: "L8"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Calendar_scripts
+  - community/Community_866
 ---
 
 # { execSync }
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[calendar.js_3]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Calendar_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_866

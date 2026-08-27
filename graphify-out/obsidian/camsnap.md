@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/camsnap/SKILL.md"
 type: "document"
-community: "Skill (camsnap)"
+community: "Community 1294"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_camsnap
+  - community/Community_1294
 ---
 
 # camsnap
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SKILL_200]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_camsnap
+#graphify/document #graphify/EXTRACTED #community/Community_1294

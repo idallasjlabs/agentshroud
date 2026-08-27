@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/tailscale-check.sh"
 type: "code"
-community: "Proxy Dashboard"
+community: "Community 1051"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Proxy_Dashboard
+  - community/Community_1051
 ---
 
 # tailscale-check.sh script
@@ -17,4 +17,4 @@ tags:
 - [[tailscale-check.sh]] - `contains` [EXTRACTED]
 - [[warn()_4]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Proxy_Dashboard
+#graphify/code #graphify/EXTRACTED #community/Community_1051

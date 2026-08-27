@@ -1,12 +1,12 @@
 ---
 source_file: "docs/README.md"
 type: "document"
-community: "Readme (docs)"
+community: "Community 218"
 location: "L173"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_docs
+  - community/Community_218
 ---
 
 # 🎯 Use Cases
@@ -17,4 +17,4 @@ tags:
 - [[Personal AI Assistant]] - `contains` [EXTRACTED]
 - [[Secure Development]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_docs
+#graphify/document #graphify/EXTRACTED #community/Community_218

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "rationale"
-community: "RBAC & Ingest Middleware"
+community: "Community 6"
 location: "L928"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBAC__Ingest_Middleware
+  - community/Community_6
 ---
 
 # Analyze request to determine RBAC action, resource, and tool tier.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._analyze_request_for_rbac()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBAC__Ingest_Middleware
+#graphify/rationale #graphify/EXTRACTED #community/Community_6

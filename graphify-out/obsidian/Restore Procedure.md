@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/backup-restore.md"
 type: "document"
-community: "Backup Restore (runbooks)"
+community: "Community 859"
 location: "L61"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Backup_Restore_runbooks
+  - community/Community_859
 ---
 
 # Restore Procedure
@@ -16,4 +16,4 @@ tags:
 - [[Disaster Recovery (Full Rebuild)]] - `contains` [EXTRACTED]
 - [[Restore from Backup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Backup_Restore_runbooks
+#graphify/document #graphify/EXTRACTED #community/Community_859

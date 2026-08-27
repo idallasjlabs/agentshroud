@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer.py"
 type: "rationale"
-community: "Security Audit & Watchtower Tests"
+community: "Community 513"
 location: "L135"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Audit__Watchtower_Tests
+  - community/Community_513
 ---
 
 # Recursively extract string content from dictionary
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._extract_dict_content()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Community_513

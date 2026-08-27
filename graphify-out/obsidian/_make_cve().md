@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_generate_cve_page.py"
 type: "code"
-community: "Generate Cve Page"
+community: "Community 172"
 location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Generate_Cve_Page
+  - community/Community_172
 ---
 
 # _make_cve()
@@ -34,4 +34,4 @@ tags:
 - [[.test_under_review_none_cvss_renders_dash()]] - `calls` [EXTRACTED]
 - [[test_generate_cve_page.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Generate_Cve_Page
+#graphify/code #graphify/EXTRACTED #community/Community_172

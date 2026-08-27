@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION.md"
 type: "document"
-community: "Development Workflow Read Only (security)"
+community: "Community 548"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Development_Workflow_Read_Only_security
+  - community/Community_548
 ---
 
 # SECURITY_VALUE_PROPOSITION.md
@@ -23,4 +23,4 @@ tags:
 - [[Ultra-Conservative Credential Display Policy]] - `references` [EXTRACTED]
 - [[VERIFICATION_RESULTS]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Development_Workflow_Read_Only_security
+#graphify/document #graphify/EXTRACTED #community/Community_548

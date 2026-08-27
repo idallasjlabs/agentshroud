@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "RBAC & Ingest Middleware"
+community: "Community 15"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBAC__Ingest_Middleware
+  - community/Community_15
 ---
 
 # test_rbac.py
@@ -26,4 +26,4 @@ tags:
 - [[TestRBACIntegration]] - `contains` [EXTRACTED]
 - [[TestRBACManager]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBAC__Ingest_Middleware
+#graphify/code #graphify/EXTRACTED #community/Community_15

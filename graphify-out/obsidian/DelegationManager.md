@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/delegation.py"
 type: "code"
-community: "Delegation"
+community: "Community 77"
 location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Delegation
+  - community/Community_77
 ---
 
 # DelegationManager
@@ -39,4 +39,4 @@ tags:
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[test_delegation.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Delegation
+#graphify/code #graphify/EXTRACTED #community/Community_77

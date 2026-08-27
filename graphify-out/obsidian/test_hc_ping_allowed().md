@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_heartbeat_egress.py"
 type: "code"
-community: "Web Proxy"
+community: "Community 30"
 location: "L11"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Web_Proxy
+  - community/Community_30
 ---
 
 # test_hc_ping_allowed()
@@ -15,4 +15,4 @@ tags:
 - [[WebProxyConfig]] - `calls` [EXTRACTED]
 - [[test_heartbeat_egress.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Web_Proxy
+#graphify/code #graphify/EXTRACTED #community/Community_30

@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[test_hermes_mcp_reconciliation.sh — Hermes MCP stale-disable regression test]] - code - tests/startup_smoke/test_hermes_mcp_reconciliation.sh
+- [[__init__.py_13]] - code - gateway/tests/__init__.py
 
 ## Live Query (requires Dataview plugin)
 

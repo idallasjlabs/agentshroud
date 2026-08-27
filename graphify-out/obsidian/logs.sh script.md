@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/logs.sh"
 type: "code"
-community: "Logs (scripts)"
+community: "Community 1336"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Logs_scripts
+  - community/Community_1336
 ---
 
 # logs.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[logs.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Logs_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_1336

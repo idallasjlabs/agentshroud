@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "Ingest API Main & Models"
+community: "Community 9"
 location: "L1100"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Ingest_API_Main__Models
+  - community/Community_9
 ---
 
 # Write file content to an allowlisted SSH host via structured transport.      Unl
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ssh_write_file()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Ingest_API_Main__Models
+#graphify/rationale #graphify/EXTRACTED #community/Community_9

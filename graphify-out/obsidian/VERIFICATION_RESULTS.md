@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/VERIFICATION_RESULTS.md"
 type: "document"
-community: "Security Scripts Reference (security)"
+community: "Community 343"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Scripts_Reference_security
+  - community/Community_343
 ---
 
 # VERIFICATION_RESULTS.md
@@ -18,4 +18,4 @@ tags:
 - [[SECURITY_VALUE_PROPOSITION]] - `conceptually_related_to` [INFERRED]
 - [[verify-security.sh_1]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Scripts_Reference_security
+#graphify/document #graphify/EXTRACTED #community/Community_343

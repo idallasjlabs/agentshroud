@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-bs/README.md"
 type: "document"
-community: "Readme (i-bs)"
+community: "Community 1219"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-bs
+  - community/Community_1219
 ---
 
 # Purpose
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Branding Specialist (BS)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-bs
+#graphify/document #graphify/EXTRACTED #community/Community_1219

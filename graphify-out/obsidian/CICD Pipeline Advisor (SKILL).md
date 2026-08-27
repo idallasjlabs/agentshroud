@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-cicd/SKILL.md"
 type: "document"
-community: "Skill (i-data)"
+community: "Community 848"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Skill_i-data
+  - community/Community_848
 ---
 
 # CI/CD Pipeline Advisor (SKILL)
@@ -20,4 +20,4 @@ tags:
 - [[Deployment Matrix (Direct to Prod)]] - `references` [EXTRACTED]
 - [[GSDE&G Team (Global Services Digital Enablement & Governance)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/Skill_i-data
+#graphify/document #graphify/INFERRED #community/Community_848

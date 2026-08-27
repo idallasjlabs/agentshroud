@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/gog/SKILL.md"
 type: "document"
-community: "Ssh Configuration (docs)"
+community: "Community 372"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Ssh_Configuration_docs
+  - community/Community_372
 ---
 
 # SKILL.md
@@ -16,4 +16,4 @@ tags:
 - [[gog]] - `contains` [EXTRACTED]
 - [[gog CLI (Google Workspace)]] - `implements` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Ssh_Configuration_docs
+#graphify/document #graphify/EXTRACTED #community/Community_372

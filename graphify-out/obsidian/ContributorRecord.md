@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/contributors.py"
 type: "code"
-community: "Soc Models"
+community: "Community 49"
 location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Soc_Models
+  - community/Community_49
 ---
 
 # ContributorRecord
@@ -19,4 +19,4 @@ tags:
 - [[Platform]] - `uses` [INFERRED]
 - [[UserRole_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Soc_Models
+#graphify/code #graphify/EXTRACTED #community/Community_49

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/scripts/README.md"
 type: "document"
-community: "Readme (scripts)"
+community: "Community 1015"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_scripts
+  - community/Community_1015
 ---
 
 # docker/scripts README.md
@@ -19,4 +19,4 @@ tags:
 - [[test-network-isolation.sh (planned)]] - `references` [EXTRACTED]
 - [[test-pii-sanitization.sh (planned)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_scripts
+#graphify/document #graphify/EXTRACTED #community/Community_1015

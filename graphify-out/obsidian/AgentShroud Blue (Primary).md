@@ -1,12 +1,12 @@
 ---
 source_file: "branding/colors/palette.md"
 type: "document"
-community: "Palette (colors)"
+community: "Community 370"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Palette_colors
+  - community/Community_370
 ---
 
 # AgentShroud Blue (Primary)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Primary Colors]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Palette_colors
+#graphify/document #graphify/EXTRACTED #community/Community_370

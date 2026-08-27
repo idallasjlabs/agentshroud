@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_quota_detector.py"
 type: "code"
-community: "Llm Quota Detector"
+community: "Community 419"
 location: "L114"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Llm_Quota_Detector
+  - community/Community_419
 ---
 
 # is_quota_exhausted()
@@ -33,4 +33,4 @@ tags:
 - [[test_no_false_positive_on_anthropic_request_rate_limit()]] - `calls` [EXTRACTED]
 - [[test_non_json_body_anthropic_429_no_substring_match()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Llm_Quota_Detector
+#graphify/code #graphify/EXTRACTED #community/Community_419

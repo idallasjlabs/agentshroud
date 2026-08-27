@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-data/README.md"
 type: "document"
-community: "Readme (i-data)"
+community: "Community 1186"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-data
+  - community/Community_1186
 ---
 
 # Related Skills
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Data Validation (DATA-VAL)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-data
+#graphify/document #graphify/EXTRACTED #community/Community_1186

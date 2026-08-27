@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/input_normalizer.py"
 type: "code"
-community: "Telegram Proxy Core"
+community: "Community 263"
 location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Core
+  - community/Community_263
 ---
 
 # normalize_input()
@@ -93,4 +93,4 @@ tags:
 - [[test_adversarial_injection.py]] - `imports` [EXTRACTED]
 - [[tool_result_injection.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Core
+#graphify/code #graphify/EXTRACTED #community/Community_263

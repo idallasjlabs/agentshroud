@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "Tool ACL & Group RBAC"
+community: "Community 75"
 location: "L145"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Tool_ACL__Group_RBAC
+  - community/Community_75
 ---
 
 # ToolRateLimit
@@ -19,4 +19,4 @@ tags:
 - [[Role_1]] - `uses` [INFERRED]
 - [[tool_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Tool_ACL__Group_RBAC
+#graphify/code #graphify/INFERRED #community/Community_75

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/adr/ADR-006-multi-runtime-support.md"
 type: "document"
-community: "Adr 006 Multi Runtime (adr)"
+community: "Community 208"
 location: "L194"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Adr_006_Multi_Runtime_adr
+  - community/Community_208
 ---
 
 # Consequences
@@ -17,4 +17,4 @@ tags:
 - [[Negative]] - `contains` [EXTRACTED]
 - [[Positive]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Adr_006_Multi_Runtime_adr
+#graphify/document #graphify/EXTRACTED #community/Community_208

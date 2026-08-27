@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/skills/manifest.py"
 type: "rationale"
-community: "Skills Manifest Sync"
+community: "Community 71"
 location: "L55"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Skills_Manifest_Sync
+  - community/Community_71
 ---
 
 # A single item in the skills manifest.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ManifestEntry]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Skills_Manifest_Sync
+#graphify/rationale #graphify/EXTRACTED #community/Community_71

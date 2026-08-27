@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-session-prompt/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-mm/SKILL.md"
 type: "document"
-community: "Skill (i-session-prompt)"
-location: "L137"
+community: "Community 301"
+location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-session-prompt
+  - community/Community_301
 ---
 
 # Rules
 
 ## Connections
-- [[Skill Session Prompt Generator (SESSION-PROMPT)_2]] - `contains` [EXTRACTED]
+- [[Skill Mindmap Architect (MM)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-session-prompt
+#graphify/document #graphify/EXTRACTED #community/Community_301

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/TEAM.md"
 type: "concept"
-community: "Team (docs)"
+community: "Community 964"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Team_docs
+  - community/Community_964
 ---
 
 # Git Worktrees — parallel branch development
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Claude Code — Primary development agent]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Team_docs
+#graphify/concept #graphify/EXTRACTED #community/Community_964

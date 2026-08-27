@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/agentshroud_manager.py"
 type: "rationale"
-community: "Agentshroud Manager"
+community: "Community 58"
 location: "L289"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Agentshroud_Manager
+  - community/Community_58
 ---
 
 # Rollback to the previous version.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[rollback()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Agentshroud_Manager
+#graphify/rationale #graphify/EXTRACTED #community/Community_58

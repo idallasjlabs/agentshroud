@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "Pipeline Unit"
+community: "Community 22"
 location: "L387"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Pipeline_Unit
+  - community/Community_22
 ---
 
 # _make_integrity_pipeline()
@@ -26,4 +26,4 @@ tags:
 - [[_FakeIntegrityScore]] - `calls` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Pipeline_Unit
+#graphify/code #graphify/EXTRACTED #community/Community_22

@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "Mcp Audit (proxy)"
+community: "Community 201"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Mcp_Audit_proxy
+  - community/Community_201
 ---
 
 # MCPProxy.process_tool_call
@@ -16,4 +16,4 @@ tags:
 - [[MCPInspector]] - `calls` [EXTRACTED]
 - [[MCPPermissionManager]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Mcp_Audit_proxy
+#graphify/code #graphify/EXTRACTED #community/Community_201

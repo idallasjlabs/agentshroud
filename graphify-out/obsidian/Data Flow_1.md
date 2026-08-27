@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/01 - Architecture/Data Flow.md"
 type: "document"
-community: "Data flow (01 - Architecture)"
+community: "Community 311"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Data_flow_01_-_Architecture
+  - community/Community_311
 ---
 
 # Data Flow
@@ -19,4 +19,4 @@ tags:
 - [[Request Flow Diagram]] - `contains` [EXTRACTED]
 - [[Response Path]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Data_flow_01_-_Architecture
+#graphify/document #graphify/EXTRACTED #community/Community_311

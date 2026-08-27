@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-01-c4-context.svg"
 type: "image"
-community: "Adr 006 Multi Runtime (adr)"
+community: "Community 208"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Adr_006_Multi_Runtime_adr
+  - community/Community_208
 ---
 
 # Tailscale (encrypted overlay network)
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud (system, C4 context)]] - `shares_data_with` [EXTRACTED]
 - [[Tailscale Overlay Network (tail240ea8.ts.net)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Adr_006_Multi_Runtime_adr
+#graphify/image #graphify/EXTRACTED #community/Community_208

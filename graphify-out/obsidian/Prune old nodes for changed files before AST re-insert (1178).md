@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/graphify/references/update.md"
 type: "rationale"
-community: "Update (references)"
+community: "Community 1750"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Update_references
+  - community/Community_1750
 ---
 
 # Prune old nodes for changed files before AST re-insert (#1178)
 
-#graphify/rationale #graphify/EXTRACTED #community/Update_references
+#graphify/rationale #graphify/EXTRACTED #community/Community_1750

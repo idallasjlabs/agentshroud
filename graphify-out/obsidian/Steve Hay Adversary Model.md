@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-sec-offense/SKILL.md"
 type: "concept"
-community: "Tool Chain & CVE Triage"
+community: "Community 659"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Tool_Chain__CVE_Triage
+  - community/Community_659
 ---
 
 # Steve Hay Adversary Model
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud Blue Team Security Auditor (SEC-DEFENSE)]] - `references` [EXTRACTED]
 - [[AgentShroud Red Team Adversarial Tester (SEC-OFFENSE)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Tool_Chain__CVE_Triage
+#graphify/concept #graphify/EXTRACTED #community/Community_659

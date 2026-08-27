@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "code"
-community: "Tool Chain & CVE Triage"
+community: "Community 444"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tool_Chain__CVE_Triage
+  - community/Community_444
 ---
 
 # git_guard.py
@@ -18,4 +18,4 @@ tags:
 - [[ThreatLevel_2]] - `contains` [EXTRACTED]
 - [[scan_repository()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Tool_Chain__CVE_Triage
+#graphify/code #graphify/EXTRACTED #community/Community_444

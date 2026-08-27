@@ -1,17 +1,17 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "Bot Skill Config"
-location: "L388"
+community: "Community 646"
+location: "L370"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Community_646
 ---
 
 # Fixed
 
 ## Connections
-- [[1.1.1 — fixguard-wiring-and-ops-hardening (2026-06-10)]] - `contains` [EXTRACTED]
+- [[1.2.2 — releasev1.2.2 (2026-06-28)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Community_646

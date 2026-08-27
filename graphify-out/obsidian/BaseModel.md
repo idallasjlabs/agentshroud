@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "Router (soc)"
+community: "Community 18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Router_soc
+  - community/Community_18
 ---
 
 # BaseModel
@@ -98,4 +98,4 @@ tags:
 - [[VersionRequest]] - `inherits` [EXTRACTED]
 - [[WSEvent]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Router_soc
+#graphify/code #graphify/EXTRACTED #community/Community_18

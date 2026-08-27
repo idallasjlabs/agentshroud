@@ -1,11 +1,11 @@
 ---
 source_file: ".mcp.json"
 type: "document"
-community: ".mcp"
+community: "Community 717"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mcp
+  - community/Community_717
 ---
 
 # DEVONthink MCP Server
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud MCP Server Registry]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mcp
+#graphify/document #graphify/EXTRACTED #community/Community_717

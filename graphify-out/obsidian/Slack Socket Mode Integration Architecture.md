@@ -1,11 +1,11 @@
 ---
 source_file: "docs/setup-slack.md"
 type: "concept"
-community: "Uspto Provisional Patent Application (docs)"
+community: "Community 1274"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Uspto_Provisional_Patent_Application_docs
+  - community/Community_1274
 ---
 
 # Slack Socket Mode Integration Architecture
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Telegram Bot Setup (BotFather token + gateway config)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Uspto_Provisional_Patent_Application_docs
+#graphify/concept #graphify/EXTRACTED #community/Community_1274

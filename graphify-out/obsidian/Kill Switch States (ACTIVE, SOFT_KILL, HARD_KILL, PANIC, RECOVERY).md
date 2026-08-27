@@ -1,11 +1,11 @@
 ---
 source_file: "docs/flows/state-diagrams.md"
 type: "concept"
-community: "State Diagrams (flows)"
+community: "Community 1098"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/State_Diagrams_flows
+  - community/Community_1098
 ---
 
 # Kill Switch States (ACTIVE, SOFT_KILL, HARD_KILL, PANIC, RECOVERY)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud State Diagrams (doc)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/State_Diagrams_flows
+#graphify/concept #graphify/EXTRACTED #community/Community_1098

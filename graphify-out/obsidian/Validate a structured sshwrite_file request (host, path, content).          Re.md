@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ssh_proxy/proxy.py"
 type: "rationale"
-community: "Ssh Write File Endpoint"
+community: "Community 12"
 location: "L206"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Ssh_Write_File_Endpoint
+  - community/Community_12
 ---
 
 # Validate a structured /ssh/write_file request (host, path, content).          Re
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.validate_write_file()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Ssh_Write_File_Endpoint
+#graphify/rationale #graphify/EXTRACTED #community/Community_12

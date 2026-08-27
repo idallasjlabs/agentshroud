@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "rationale"
-community: "RBAC & Ingest Middleware"
+community: "Community 15"
 location: "L65"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBAC__Ingest_Middleware
+  - community/Community_15
 ---
 
 # Initialize RBAC manager with configuration.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.__init__()_112]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBAC__Ingest_Middleware
+#graphify/rationale #graphify/EXTRACTED #community/Community_15

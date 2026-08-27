@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "rationale"
-community: "Egress Filter (security)"
+community: "Community 282"
 location: "L130"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Egress_Filter_security
+  - community/Community_282
 ---
 
 # Set interactive egress approval queue.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.set_approval_queue()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Egress_Filter_security
+#graphify/rationale #graphify/EXTRACTED #community/Community_282

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/agentshroud-manage.sh"
 type: "code"
-community: "Agentshroud Manage (scripts)"
+community: "Community 1268"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Agentshroud_Manage_scripts
+  - community/Community_1268
 ---
 
 # agentshroud-manage.sh
@@ -17,4 +17,4 @@ tags:
 - [[usage()_3]] - `defines` [EXTRACTED]
 - [[validate_input()]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Agentshroud_Manage_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_1268

@@ -1,18 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md"
+source_file: "CHANGELOG.md"
 type: "document"
-community: "Blue Team Assessment V0.8.0 (v0.8)"
-location: "L170"
+community: "Community 1173"
+location: "L608"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Blue_Team_Assessment_V080_v08
+  - community/Community_1173
 ---
 
 # Summary
 
 ## Connections
-- [[Blue Team Security Assessment — AgentShroud v0.8.0 Round 2]] - `contains` [EXTRACTED]
-- [[Overall Security Posture STRONG 🟢]] - `contains` [EXTRACTED]
+- [[1.0.0 — featv1.0.0 — Fortress (2026-03-31)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Blue_Team_Assessment_V080_v08
+#graphify/document #graphify/EXTRACTED #community/Community_1173

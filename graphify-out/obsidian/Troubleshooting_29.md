@@ -1,21 +1,21 @@
 ---
-source_file: "docs/setup/OPENCLAW_SSH_SETUP.md"
+source_file: "docs/setup/OPENCLAW_SETUP.md"
 type: "document"
-community: "Openclaw Ssh Setup (setup)"
-location: "L242"
+community: "Community 214"
+location: "L356"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Openclaw_Ssh_Setup_setup
+  - community/Community_214
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[OpenClaw Bot SSH Configuration]] - `contains` [EXTRACTED]
-- [[Problem Bad owner or permissions on ~.sshconfig]] - `contains` [EXTRACTED]
-- [[Problem Connection timeout]] - `contains` [EXTRACTED]
-- [[Problem Host key verification failed]] - `contains` [EXTRACTED]
-- [[Problem Permission denied (publickey)]] - `contains` [EXTRACTED]
+- [[Control UI Not Accessible]] - `contains` [EXTRACTED]
+- [[Gateway Can't Reach OpenClaw]] - `contains` [EXTRACTED]
+- [[OpenClaw Setup Guide - agentshroud.ai Bot]] - `contains` [EXTRACTED]
+- [[OpenClaw Won't Start]] - `contains` [EXTRACTED]
+- [[SSH Not Working]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Openclaw_Ssh_Setup_setup
+#graphify/document #graphify/EXTRACTED #community/Community_214

@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[EgressAttempt (Dataclass)]] - code - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
+- [[AgentShroud GitHub Social Preview Image]] - image - branding/social/github-social-preview-1280x640.png
 
 ## Live Query (requires Dataview plugin)
 

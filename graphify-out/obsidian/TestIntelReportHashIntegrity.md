@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_intel_pipeline.py"
 type: "code"
-community: "Intel Pipeline"
+community: "Community 133"
 location: "L162"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Intel_Pipeline
+  - community/Community_133
 ---
 
 # TestIntelReportHashIntegrity
@@ -23,4 +23,4 @@ tags:
 - [[ReportIntegrityError]] - `uses` [INFERRED]
 - [[test_intel_pipeline.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Intel_Pipeline
+#graphify/code #graphify/EXTRACTED #community/Community_133

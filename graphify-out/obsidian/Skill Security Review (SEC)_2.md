@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-sec/SKILL.md"
 type: "document"
-community: "Skill (i-sec)"
+community: "Community 707"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-sec
+  - community/Community_707
 ---
 
 # Skill: Security Review (SEC)
@@ -21,4 +21,4 @@ tags:
 - [[SecureClaw-Specific Threat Model_2]] - `contains` [EXTRACTED]
 - [[Verification Commands_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-sec
+#graphify/document #graphify/EXTRACTED #community/Community_707

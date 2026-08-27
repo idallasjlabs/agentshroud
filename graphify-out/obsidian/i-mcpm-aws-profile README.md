@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mcpm-aws-profile/README.md"
 type: "document"
-community: "Readme (i-mcpm-auth-reset)"
+community: "Community 1038"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-mcpm-auth-reset
+  - community/Community_1038
 ---
 
 # i-mcpm-aws-profile README
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[MCP AWS Profile Configuration Skill]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-mcpm-auth-reset
+#graphify/document #graphify/EXTRACTED #community/Community_1038

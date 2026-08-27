@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-hermes/README.md"
 type: "concept"
-community: "Readme (i-hermes)"
+community: "Community 1393"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Readme_i-hermes
+  - community/Community_1393
 ---
 
 # Podcast Production Pipeline (multi-agent)
@@ -14,4 +14,4 @@ tags:
 - [[Hermes Podcast Production Orchestrator README]] - `conceptually_related_to` [EXTRACTED]
 - [[Hermes Reference Verifier Skill]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/Readme_i-hermes
+#graphify/concept #graphify/EXTRACTED #community/Community_1393

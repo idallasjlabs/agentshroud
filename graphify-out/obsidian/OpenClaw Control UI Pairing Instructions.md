@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/PAIRING_INSTRUCTIONS.md"
 type: "document"
-community: "Pairing Instructions (setup)"
+community: "Community 690"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Pairing_Instructions_setup
+  - community/Community_690
 ---
 
 # OpenClaw Control UI Pairing Instructions
@@ -17,7 +17,7 @@ tags:
 - [[Get Token Again]] - `contains` [EXTRACTED]
 - [[PAIRING_INSTRUCTIONS]] - `contains` [EXTRACTED]
 - [[Security Note]] - `contains` [EXTRACTED]
-- [[Troubleshooting_30]] - `contains` [EXTRACTED]
+- [[Troubleshooting_31]] - `contains` [EXTRACTED]
 - [[✅ Step-by-Step Pairing Process]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Pairing_Instructions_setup
+#graphify/document #graphify/EXTRACTED #community/Community_690

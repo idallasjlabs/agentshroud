@@ -1,12 +1,12 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "Changelog"
-location: "L967"
+community: "Community 1296"
+location: "L1109"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Changelog
+  - community/Community_1296
 ---
 
 # Recommended Steps
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Migration Notes]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Changelog
+#graphify/document #graphify/EXTRACTED #community/Community_1296

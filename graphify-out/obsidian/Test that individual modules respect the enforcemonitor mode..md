@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enforce_defaults.py"
 type: "rationale"
-community: "Security Audit & Watchtower Tests"
+community: "Community 6"
 location: "L122"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Audit__Watchtower_Tests
+  - community/Community_6
 ---
 
 # Test that individual modules respect the enforce/monitor mode.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestModuleEnforcement]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Community_6

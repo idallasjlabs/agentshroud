@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "code"
-community: "Enhanced Approval"
+community: "Community 24"
 location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enhanced_Approval
+  - community/Community_24
 ---
 
 # tool_risk_config()
@@ -17,4 +17,4 @@ tags:
 - [[ToolRiskPolicy_1]] - `calls` [EXTRACTED]
 - [[test_enhanced_approval.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enhanced_Approval
+#graphify/code #graphify/EXTRACTED #community/Community_24

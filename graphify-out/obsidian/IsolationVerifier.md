@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "Security Hardening"
+community: "Community 28"
 location: "L87"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Hardening
+  - community/Community_28
 ---
 
 # IsolationVerifier
@@ -63,4 +63,4 @@ tags:
 - [[test_agent_isolation.py]] - `imports` [EXTRACTED]
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Hardening
+#graphify/code #graphify/EXTRACTED #community/Community_28

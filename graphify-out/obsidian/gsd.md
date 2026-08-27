@@ -1,12 +1,12 @@
 ---
 source_file: ".github/ISSUE_TEMPLATE/gsd.md"
 type: "document"
-community: "Postmortem (ISSUE_TEMPLATE)"
+community: "Community 435"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Postmortem_ISSUE_TEMPLATE
+  - community/Community_435
 ---
 
 # gsd.md
@@ -20,4 +20,4 @@ tags:
 - [[Problem]] - `contains` [EXTRACTED]
 - [[apply-patches.js]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Postmortem_ISSUE_TEMPLATE
+#graphify/document #graphify/EXTRACTED #community/Community_435

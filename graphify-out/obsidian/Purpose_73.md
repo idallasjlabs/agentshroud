@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-vulcan/README.md"
 type: "document"
-community: "Readme (i-vulcan)"
+community: "Community 1213"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-vulcan
+  - community/Community_1213
 ---
 
 # Purpose
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Vulcan — Subject Matter Auditor_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-vulcan
+#graphify/document #graphify/EXTRACTED #community/Community_1213

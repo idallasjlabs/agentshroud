@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "code"
-community: "Security Audit & Watchtower Tests"
+community: "Community 870"
 location: "L30"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Security_Audit__Watchtower_Tests
+  - community/Community_870
 ---
 
 # PIISanitizer
@@ -26,4 +26,4 @@ tags:
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[_make_pii_sanitizer()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Security_Audit__Watchtower_Tests
+#graphify/code #graphify/INFERRED #community/Community_870

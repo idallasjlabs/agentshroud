@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "Security Hardening"
+community: "Community 35"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Hardening
+  - community/Community_35
 ---
 
 # test_security_hardening.py
@@ -43,4 +43,4 @@ tags:
 - [[_secure_zero()]] - `imports` [EXTRACTED]
 - [[test_prompt_guard.py]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Hardening
+#graphify/code #graphify/EXTRACTED #community/Community_35

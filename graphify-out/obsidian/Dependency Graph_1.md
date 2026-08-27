@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/09 - Diagrams/Dependency Graph.md"
 type: "document"
-community: "Aiosqlite (05 - Dependencies)"
+community: "Community 1325"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Aiosqlite_05_-_Dependencies
+  - community/Community_1325
 ---
 
 # Dependency Graph
@@ -18,4 +18,4 @@ tags:
 - [[Python Package Dependencies]] - `contains` [EXTRACTED]
 - [[Related Notes_70]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Aiosqlite_05_-_Dependencies
+#graphify/document #graphify/EXTRACTED #community/Community_1325

@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[SSHProxy.validate_command()]] - code - gateway/ssh_proxy/proxy.py
+- [[PythonBoto3AWS moto test pattern]] - concept - docker/config/openclaw/skills/i-tdd/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

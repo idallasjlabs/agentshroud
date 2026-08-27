@@ -1,23 +1,20 @@
 ---
-source_file: "scripts/triage-cve-mitigations.py"
+source_file: "scripts/sync-cve-registry.py"
 type: "code"
-community: "Tool Chain & CVE Triage"
-location: "L1124"
+community: "Community 112"
+location: "L871"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tool_Chain__CVE_Triage
+  - community/Community_112
 ---
 
 # main()
 
 ## Connections
-- [[CLI entry point.      Args         argv Optional argv override (for tests).]] - `rationale_for` [EXTRACTED]
-- [[_rel()]] - `calls` [EXTRACTED]
-- [[render_gap_report()]] - `calls` [EXTRACTED]
-- [[rewrite_registry_text()_1]] - `calls` [EXTRACTED]
-- [[summarize()]] - `calls` [EXTRACTED]
-- [[triage-cve-mitigations.py]] - `contains` [EXTRACTED]
-- [[triage_agent()]] - `calls` [EXTRACTED]
+- [[Path_47]] - `calls` [EXTRACTED]
+- [[_run_nvd_sync()]] - `calls` [EXTRACTED]
+- [[run_ghsa_sync()]] - `calls` [EXTRACTED]
+- [[sync-cve-registry.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Tool_Chain__CVE_Triage
+#graphify/code #graphify/EXTRACTED #community/Community_112

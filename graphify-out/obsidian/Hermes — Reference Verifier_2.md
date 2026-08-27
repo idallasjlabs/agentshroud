@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-hermes/SKILL.md"
 type: "document"
-community: "Skill (i-hermes)"
+community: "Community 960"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-hermes
+  - community/Community_960
 ---
 
 # Hermes — Reference Verifier
@@ -20,4 +20,4 @@ tags:
 - [[SKILL_151]] - `contains` [EXTRACTED]
 - [[System Prompt_19]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-hermes
+#graphify/document #graphify/EXTRACTED #community/Community_960

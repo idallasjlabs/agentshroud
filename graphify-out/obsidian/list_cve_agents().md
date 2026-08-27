@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/agent_cve_registry.py"
 type: "code"
-community: "Generate Cve Page (scripts)"
-location: "L15480"
+community: "Community 990"
+location: "L17117"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Generate_Cve_Page_scripts
+  - community/Community_990
 ---
 
 # list_cve_agents()
@@ -22,8 +22,9 @@ tags:
 - [[run_upstream_cve_check_all_agents()]] - `calls` [EXTRACTED]
 - [[sync-cve-registry.py]] - `imports` [EXTRACTED]
 - [[test_agent_cve_registry.py]] - `imports` [EXTRACTED]
+- [[test_all_registered_sources_are_wrapped_agents_plus_security_tools()]] - `calls` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `imports` [EXTRACTED]
 - [[test_list_cve_agents_is_list_of_str()]] - `calls` [EXTRACTED]
-- [[test_list_cve_agents_returns_both()]] - `calls` [EXTRACTED]
+- [[test_list_cve_agents_returns_wrapped_agents_and_security_tools()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Generate_Cve_Page_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_990

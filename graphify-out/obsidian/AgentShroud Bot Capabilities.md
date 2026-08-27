@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bot-capabilities.md"
 type: "document"
-community: "Bot Capabilities (docker)"
+community: "Community 746"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Capabilities_docker
+  - community/Community_746
 ---
 
 # AgentShroud Bot Capabilities
@@ -17,4 +17,4 @@ tags:
 - [[Trademark Statements]] - `contains` [EXTRACTED]
 - [[bot-capabilities]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Capabilities_docker
+#graphify/document #graphify/EXTRACTED #community/Community_746

@@ -1,12 +1,12 @@
 ---
 source_file: "README.md"
 type: "document"
-community: "Readme"
+community: "Community 403"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme
+  - community/Community_403
 ---
 
 # README.md
@@ -27,4 +27,4 @@ tags:
 - [[Why AgentShroud]] - `contains` [EXTRACTED]
 - [[test_docs_accuracy.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme
+#graphify/document #graphify/EXTRACTED #community/Community_403

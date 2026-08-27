@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "code"
-community: "Mcp Permissions (proxy)"
+community: "Community 106"
 location: "L175"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Mcp_Permissions_proxy
+  - community/Community_106
 ---
 
 # MCPPermissionManager
@@ -115,4 +115,4 @@ tags:
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Mcp_Permissions_proxy
+#graphify/code #graphify/INFERRED #community/Community_106

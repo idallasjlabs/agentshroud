@@ -1,25 +1,23 @@
 ---
 source_file: "docker/config/openclaw/apply-patches.js"
 type: "code"
-community: "Apply Patches (openclaw)"
+community: "Community 210"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Apply_Patches_openclaw
+  - community/Community_210
 ---
 
 # apply-patches.js
 
 ## Connections
-- [[AGENTS_1]] - `conceptually_related_to` [INFERRED]
+- [[AGENTS_2]] - `conceptually_related_to` [INFERRED]
 - [[AgentShroud Docker Compose (Production)]] - `shares_data_with` [EXTRACTED]
 - [[COLLABORATOR_IDS]] - `contains` [EXTRACTED]
 - [[COLLAB_LOCAL_INFO_ONLY]] - `contains` [EXTRACTED]
-- [[CONTINUE-2026-08-17]] - `references` [EXTRACTED]
 - [[GROUP_CHAT_IDS]] - `contains` [EXTRACTED]
 - [[MODEL_MODE]] - `contains` [EXTRACTED]
-- [[Path_50]] - `imports_from` [EXTRACTED]
 - [[_COLLAB_TOOL_DENY]] - `contains` [EXTRACTED]
 - [[_COLLAB_TOOL_DENY_FULL_ACCESS]] - `contains` [EXTRACTED]
 - [[_GROUP_TOOL_DENY]] - `contains` [EXTRACTED]
@@ -52,4 +50,4 @@ tags:
 - [[trustedProxies]] - `contains` [EXTRACTED]
 - [[{ profile _genericProfile, deny _genericCollabDeny }]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Apply_Patches_openclaw
+#graphify/code #graphify/EXTRACTED #community/Community_210

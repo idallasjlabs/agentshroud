@@ -1,12 +1,12 @@
 ---
 source_file: "docs/ssh-security-review.md"
 type: "document"
-community: "Ssh Security Review (docs)"
+community: "Community 901"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Ssh_Security_Review_docs
+  - community/Community_901
 ---
 
 # Threat Model
@@ -16,8 +16,9 @@ tags:
 - [[2. Host Spoofing  Man-in-the-Middle]] - `contains` [EXTRACTED]
 - [[3. Credential Theft]] - `contains` [EXTRACTED]
 - [[4. Privilege Escalation]] - `contains` [EXTRACTED]
+- [[5. Denial of Service]] - `contains` [EXTRACTED]
 - [[6. Audit Log Tampering  PII Leakage]] - `contains` [EXTRACTED]
 - [[D - Denial of Service]] - `contains` [EXTRACTED]
 - [[SSH Security Review]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Ssh_Security_Review_docs
+#graphify/document #graphify/EXTRACTED #community/Community_901

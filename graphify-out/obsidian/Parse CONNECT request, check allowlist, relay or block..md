@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/http_proxy.py"
 type: "rationale"
-community: "Http Proxy (proxy)"
+community: "Community 671"
 location: "L250"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Http_Proxy_proxy
+  - community/Community_671
 ---
 
 # Parse CONNECT request, check allowlist, relay or block.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._process_connect()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Http_Proxy_proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_671

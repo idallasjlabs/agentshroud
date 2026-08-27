@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/JavaScript/apply-patches.js.md"
 type: "document"
-community: "Apply Patches.js (JavaScript)"
+community: "Community 761"
 location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Apply_Patchesjs_JavaScript
+  - community/Community_761
 ---
 
 # Patches Applied
@@ -18,4 +18,4 @@ tags:
 - [[Patch 3 Telegram Bot Token (if $TELEGRAM_BOT_TOKEN is set)]] - `contains` [EXTRACTED]
 - [[apply-patches.js_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Apply_Patchesjs_JavaScript
+#graphify/document #graphify/EXTRACTED #community/Community_761

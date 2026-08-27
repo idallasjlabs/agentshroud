@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/README.md"
 type: "document"
-community: "Aiosqlite (05 - Dependencies)"
+community: "Community 1325"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Aiosqlite_05_-_Dependencies
+  - community/Community_1325
 ---
 
 # README.md
@@ -24,4 +24,4 @@ tags:
 - [[router.py]] - `references` [EXTRACTED]
 - [[sanitizer.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Aiosqlite_05_-_Dependencies
+#graphify/document #graphify/EXTRACTED #community/Community_1325

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/VERIFICATION_RESULTS.md"
 type: "document"
-community: "Verification Results (security)"
+community: "Community 383"
 location: "L204"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Verification_Results_security
+  - community/Community_383
 ---
 
 # Deployment Readiness
@@ -16,4 +16,4 @@ tags:
 - [[Phase 3A3B Implementation Verification Results]] - `contains` [EXTRACTED]
 - [[Production Environment]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Verification_Results_security
+#graphify/document #graphify/EXTRACTED #community/Community_383

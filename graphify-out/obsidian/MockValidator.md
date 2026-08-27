@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "Key Rotation"
+community: "Community 424"
 location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Key_Rotation
+  - community/Community_424
 ---
 
 # MockValidator
@@ -27,4 +27,4 @@ tags:
 - [[RotationStatus]] - `uses` [INFERRED]
 - [[test_key_rotation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Key_Rotation
+#graphify/code #graphify/EXTRACTED #community/Community_424

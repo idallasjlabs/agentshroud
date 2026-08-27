@@ -1,17 +1,18 @@
 ---
 source_file: ".agents/skills/i-apollo/SKILL.md"
 type: "document"
-community: "Skill (i-apollo)"
+community: "Community 941"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-apollo
+  - community/Community_941
 ---
 
 # Role
 
 ## Connections
-- [[Apollo — Audio Systems Producer_6]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_1]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-apollo
+#graphify/document #graphify/EXTRACTED #community/Community_941

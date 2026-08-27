@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md"
 type: "document"
-community: "Proxy Status.py (Web & Dashboard)"
+community: "Community 1143"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Proxy_Statuspy_Web__Dashboard
+  - community/Community_1143
 ---
 
 # proxy_status.py
@@ -18,4 +18,4 @@ tags:
 - [[Responsibilities_58]] - `contains` [EXTRACTED]
 - [[proxy_status.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Proxy_Statuspy_Web__Dashboard
+#graphify/document #graphify/EXTRACTED #community/Community_1143

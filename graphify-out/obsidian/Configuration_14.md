@@ -1,17 +1,18 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/encrypted_store.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/egress_filter.py.md"
 type: "document"
-community: "Encrypted Store.py (Security Modules)"
-location: "L92"
+community: "Community 626"
+location: "L70"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Encrypted_Storepy_Security_Modules
+  - community/Community_626
 ---
 
 # Configuration
 
 ## Connections
-- [[encrypted_store.py_2]] - `contains` [EXTRACTED]
+- [[EgressFilter_3]] - `contains` [EXTRACTED]
+- [[egress_filter.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Encrypted_Storepy_Security_Modules
+#graphify/document #graphify/EXTRACTED #community/Community_626

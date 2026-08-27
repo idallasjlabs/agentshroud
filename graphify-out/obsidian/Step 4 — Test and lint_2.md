@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-hdev/SKILL.md"
 type: "document"
-community: "Skill (i-hdev)"
+community: "Community 294"
 location: "L179"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-hdev
+  - community/Community_294
 ---
 
 # Step 4 — Test and lint
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Mode A — Single task_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-hdev
+#graphify/document #graphify/EXTRACTED #community/Community_294

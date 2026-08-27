@@ -1,17 +1,17 @@
 ---
-source_file: "docker/bot-capabilities.md"
+source_file: "docker/README.md"
 type: "document"
-community: "Bot Capabilities (docker)"
-location: "L211"
+community: "Community 190"
+location: "L370"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Capabilities_docker
+  - community/Community_190
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Credential Management - 1Password Integration]] - `contains` [EXTRACTED]
+- [[AgentShroud Docker Configuration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Capabilities_docker
+#graphify/document #graphify/EXTRACTED #community/Community_190

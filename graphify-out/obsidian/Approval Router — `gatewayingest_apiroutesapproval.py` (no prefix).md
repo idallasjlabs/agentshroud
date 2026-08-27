@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
 type: "document"
-community: "Main.py (Gateway Core)"
+community: "Community 373"
 location: "L170"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mainpy_Gateway_Core
+  - community/Community_373
 ---
 
 # Approval Router — `gateway/ingest_api/routes/approval.py` (no prefix)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Endpoints_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mainpy_Gateway_Core
+#graphify/document #graphify/EXTRACTED #community/Community_373

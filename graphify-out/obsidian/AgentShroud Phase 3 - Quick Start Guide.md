@@ -1,12 +1,12 @@
 ---
 source_file: "docker/QUICKSTART.md"
 type: "document"
-community: "Quickstart (docker)"
+community: "Community 231"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Quickstart_docker
+  - community/Community_231
 ---
 
 # AgentShroud Phase 3 - Quick Start Guide
@@ -22,7 +22,7 @@ tags:
 - [[Stop the Stack]] - `contains` [EXTRACTED]
 - [[Success Criteria]] - `contains` [EXTRACTED]
 - [[Test the System]] - `contains` [EXTRACTED]
-- [[Troubleshooting_4]] - `contains` [EXTRACTED]
+- [[Troubleshooting_5]] - `contains` [EXTRACTED]
 - [[Voice Terminal (optional — ESP32-S3-BOX-3 + Hermes)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Quickstart_docker
+#graphify/document #graphify/EXTRACTED #community/Community_231

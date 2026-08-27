@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_canary.py"
 type: "rationale"
-community: "Security Audit & Watchtower Tests"
+community: "Community 74"
 location: "L83"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Audit__Watchtower_Tests
+  - community/Community_74
 ---
 
 # Canary should verify audit chain integrity.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_canary_verifies_audit_chain()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Community_74

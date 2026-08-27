@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sync-cve-registry.py"
 type: "rationale"
-community: "Sync Cve Registry (scripts)"
-location: "L544"
+community: "Community 112"
+location: "L535"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Sync_Cve_Registry_scripts
+  - community/Community_112
 ---
 
 # Extract a numeric CVSS base score from an advisory, else None.      GitHub advis
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_ghsa_cvss_score()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Sync_Cve_Registry_scripts
+#graphify/rationale #graphify/EXTRACTED #community/Community_112

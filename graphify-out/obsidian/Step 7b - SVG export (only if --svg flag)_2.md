@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/references/exports.md"
 type: "document"
-community: "Exports (references)"
+community: "Community 959"
 location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Exports_references
+  - community/Community_959
 ---
 
 # Step 7b - SVG export (only if --svg flag)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[graphify reference extra exports and benchmark_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Exports_references
+#graphify/document #graphify/EXTRACTED #community/Community_959

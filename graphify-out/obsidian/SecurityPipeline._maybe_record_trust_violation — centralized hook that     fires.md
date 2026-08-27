@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "rationale"
-community: "Pipeline Unit"
+community: "Community 22"
 location: "L834"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Pipeline_Unit
+  - community/Community_22
 ---
 
 # SecurityPipeline._maybe_record_trust_violation — centralized hook that     fires
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestTrustViolationRecording]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Pipeline_Unit
+#graphify/rationale #graphify/EXTRACTED #community/Community_22

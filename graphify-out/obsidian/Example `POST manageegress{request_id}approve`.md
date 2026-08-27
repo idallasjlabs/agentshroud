@@ -1,12 +1,12 @@
 ---
 source_file: "docs/api/api-reference.md"
 type: "document"
-community: "Api Reference (api)"
+community: "Community 493"
 location: "L142"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Api_Reference_api
+  - community/Community_493
 ---
 
 # Example: `POST /manage/egress/{request_id}/approve`
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[API Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Api_Reference_api
+#graphify/document #graphify/EXTRACTED #community/Community_493

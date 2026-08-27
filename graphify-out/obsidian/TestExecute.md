@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_proxy.py"
 type: "code"
-community: "Ssh Proxy"
+community: "Community 12"
 location: "L117"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ssh_Proxy
+  - community/Community_12
 ---
 
 # TestExecute
@@ -22,4 +22,4 @@ tags:
 - [[SSHResult]] - `uses` [INFERRED]
 - [[test_ssh_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ssh_Proxy
+#graphify/code #graphify/EXTRACTED #community/Community_12

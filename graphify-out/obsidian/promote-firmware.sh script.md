@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/promote-firmware.sh"
 type: "code"
-community: "Promote Firmware (scripts)"
+community: "Community 1404"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Promote_Firmware_scripts
+  - community/Community_1404
 ---
 
 # promote-firmware.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[promote-firmware.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Promote_Firmware_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_1404

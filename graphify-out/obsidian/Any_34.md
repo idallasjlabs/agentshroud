@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/clamav_scanner.py"
 type: "code"
-community: "Security Toolchain"
+community: "Community 397"
 location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Toolchain
+  - community/Community_397
 ---
 
 # Any
@@ -19,4 +19,4 @@ tags:
 - [[scan_bytes()]] - `references` [EXTRACTED]
 - [[update_virus_db()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Toolchain
+#graphify/code #graphify/EXTRACTED #community/Community_397

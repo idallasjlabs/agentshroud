@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/oauth_security.py.md"
 type: "document"
-community: "Oauth Security.py (Security Modules)"
+community: "Community 538"
 location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Oauth_Securitypy_Security_Modules
+  - community/Community_538
 ---
 
 # Function Details
@@ -22,4 +22,4 @@ tags:
 - [[OAuthSecurityValidator.verify_pkce(verifier, challenge, method)]] - `contains` [EXTRACTED]
 - [[oauth_security.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Oauth_Securitypy_Security_Modules
+#graphify/document #graphify/EXTRACTED #community/Community_538

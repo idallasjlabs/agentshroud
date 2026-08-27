@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "Daily Cve Report (security)"
-location: "L1593"
+community: "Community 184"
+location: "L1600"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Daily_Cve_Report_security
+  - community/Community_184
 ---
 
 # TestUpstreamCveCheckSchedulerRetry
@@ -16,4 +16,4 @@ tags:
 - [[.test_zero_new_cves_marks_checked_immediately()]] - `method` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Daily_Cve_Report_security
+#graphify/code #graphify/EXTRACTED #community/Community_184

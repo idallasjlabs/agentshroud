@@ -1,12 +1,12 @@
 ---
 source_file: "docs/data/data-dictionary.md"
 type: "document"
-community: "Data Dictionary (data)"
+community: "Community 394"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Data_Dictionary_data
+  - community/Community_394
 ---
 
 # AgentShroud Data Dictionary
@@ -22,4 +22,4 @@ tags:
 - [[Security Management Entities]] - `contains` [EXTRACTED]
 - [[data-dictionary]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Data_Dictionary_data
+#graphify/document #graphify/EXTRACTED #community/Community_394

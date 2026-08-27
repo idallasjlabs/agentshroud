@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "Soc Egress Endpoints"
+community: "Community 374"
 location: "L110"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Soc_Egress_Endpoints
+  - community/Community_374
 ---
 
 # make_event()
@@ -70,4 +70,4 @@ tags:
 - [[test_ws_egress_receives_privacy_event()]] - `calls` [EXTRACTED]
 - [[test_ws_egress_receives_scanner_event()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Soc_Egress_Endpoints
+#graphify/code #graphify/EXTRACTED #community/Community_374

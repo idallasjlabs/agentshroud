@@ -1,12 +1,12 @@
 ---
 source_file: "chatbot/main.py"
 type: "rationale"
-community: "Main (chatbot)"
+community: "Community 83"
 location: "L127"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Main_chatbot
+  - community/Community_83
 ---
 
 # FastAPI lifespan - initialize OpenAI client and persona once.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[lifespan()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Main_chatbot
+#graphify/rationale #graphify/EXTRACTED #community/Community_83

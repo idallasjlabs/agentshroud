@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "rationale"
-community: "Security Audit & Watchtower Tests"
+community: "Community 870"
 location: "L202"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Audit__Watchtower_Tests
+  - community/Community_870
 ---
 
 # If an agent response contains a registered canary value, block it.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_canary_token_triggers_block()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Community_870

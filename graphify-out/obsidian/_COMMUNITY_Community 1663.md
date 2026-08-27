@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[ConfigurationSetting (data entity)]] - concept - docs/data/data-dictionary.md
+- [[Audit-log-every-fetch design rationale]] - rationale - docker/config/openclaw/skills/i-browser/browse.js
 
 ## Live Query (requires Dataview plugin)
 

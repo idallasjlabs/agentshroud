@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[i-sdlc SKILL]] - document - docker/config/hermes/skills/i-sdlc/SKILL.md
+- [[AI Agent]] - concept - docs/project/glossary.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-tw/SKILL.md"
 type: "document"
-community: "Skill (i-tw)"
+community: "Community 318"
 location: "L114"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-tw
+  - community/Community_318
 ---
 
 # If not → escalate to field team via #ops-alerts
@@ -16,4 +16,4 @@ tags:
 - [[Architecture Decision Record (ADR)]] - `contains` [EXTRACTED]
 - [[SKILL_59]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-tw
+#graphify/document #graphify/EXTRACTED #community/Community_318

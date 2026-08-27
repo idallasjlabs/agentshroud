@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "rationale"
-community: "Http Proxy Coverage"
+community: "Community 52"
 location: "L113"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Http_Proxy_Coverage
+  - community/Community_52
 ---
 
 # asyncio.open_connection replacement returning an immediately-EOF stream.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_eof_target_connection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Http_Proxy_Coverage
+#graphify/rationale #graphify/EXTRACTED #community/Community_52

@@ -1,20 +1,27 @@
 ---
-source_file: "docker/config/openclaw/skills/i-atlas/README.md"
+source_file: "docker/config/hermes/skills/i-atlas/SKILL.md"
 type: "document"
-community: "Readme (i-atlas)"
-location: "L1"
+community: "Community 836"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-atlas
+  - community/Community_836
 ---
 
 # Atlas — Curriculum Architect
 
 ## Connections
-- [[Purpose_76]] - `contains` [EXTRACTED]
-- [[README_81]] - `contains` [EXTRACTED]
-- [[Related Skills_82]] - `contains` [EXTRACTED]
-- [[Usage_84]] - `contains` [EXTRACTED]
+- [[Input Requirements_12]] - `contains` [EXTRACTED]
+- [[OKE Channel — CPA Exam Context_1]] - `contains` [EXTRACTED]
+- [[OKE Channel — CPA Exam Context_3]] - `contains` [EXTRACTED]
+- [[Output Format_14]] - `contains` [EXTRACTED]
+- [[Persona_9]] - `contains` [EXTRACTED]
+- [[Quality Checklist_11]] - `contains` [EXTRACTED]
+- [[Role_43]] - `contains` [EXTRACTED]
+- [[SKILL_70]] - `contains` [EXTRACTED]
+- [[System Prompt_9]] - `contains` [EXTRACTED]
+- [[User Prompt Template_5]] - `contains` [EXTRACTED]
+- [[User Prompt Template — OKE Channel_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-atlas
+#graphify/document #graphify/EXTRACTED #community/Community_836

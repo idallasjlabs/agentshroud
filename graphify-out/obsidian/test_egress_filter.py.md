@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "Egress Filter"
+community: "Community 53"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress_Filter
+  - community/Community_53
 ---
 
 # test_egress_filter.py
@@ -42,4 +42,4 @@ tags:
 - [[test_grant_timed_approval_expired_falls_back_to_deny()]] - `contains` [EXTRACTED]
 - [[test_grant_timed_approval_invalid_iso_is_ignored()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress_Filter
+#graphify/code #graphify/EXTRACTED #community/Community_53

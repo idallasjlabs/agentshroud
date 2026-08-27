@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "rationale"
-community: "Memory Lifecycle & Integrity"
+community: "Community 584"
 location: "L57"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Memory_Lifecycle__Integrity
+  - community/Community_584
 ---
 
 # Create from dictionary for JSON deserialization.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.from_dict()_8]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Memory_Lifecycle__Integrity
+#graphify/rationale #graphify/EXTRACTED #community/Community_584

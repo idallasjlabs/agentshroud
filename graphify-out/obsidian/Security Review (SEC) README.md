@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-sec/README.md"
 type: "document"
-community: "Tool Chain & CVE Triage"
+community: "Community 659"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Tool_Chain__CVE_Triage
+  - community/Community_659
 ---
 
 # Security Review (SEC) README
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[SecureClaw Security Review (SEC)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Tool_Chain__CVE_Triage
+#graphify/document #graphify/EXTRACTED #community/Community_659

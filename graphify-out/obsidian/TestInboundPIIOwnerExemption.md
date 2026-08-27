@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "Pipeline Unit"
+community: "Community 22"
 location: "L724"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Pipeline_Unit
+  - community/Community_22
 ---
 
 # TestInboundPIIOwnerExemption
@@ -33,4 +33,4 @@ tags:
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_pipeline_unit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Pipeline_Unit
+#graphify/code #graphify/INFERRED #community/Community_22

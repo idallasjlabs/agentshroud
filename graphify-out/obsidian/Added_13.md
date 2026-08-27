@@ -1,19 +1,17 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "Docker Deploy Scripts"
-location: "L897"
+community: "Community 1123"
+location: "L980"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Community_1123
 ---
 
 # Added
 
 ## Connections
-- [[Phase 4 SSH Capability]] - `contains` [EXTRACTED]
-- [[Phase 5 Dashboard]] - `contains` [EXTRACTED]
-- [[0.2.0 - 2026-02-17]] - `contains` [EXTRACTED]
+- [[0.5.0 - 2026-02-21]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/document #graphify/EXTRACTED #community/Community_1123

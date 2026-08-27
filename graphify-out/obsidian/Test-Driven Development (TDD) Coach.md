@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/i-tdd/SKILL.md"
 type: "document"
-community: "Readme (i-tdd)"
+community: "Community 592"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-tdd
+  - community/Community_592
 ---
 
 # Test-Driven Development (TDD) Coach
 
 ## Connections
-- [[Technical Illustrator (TI)_2]] - `conceptually_related_to` [INFERRED]
+- [[Technical Illustrator (TI)_3]] - `conceptually_related_to` [INFERRED]
 - [[Test-Driven Development README]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-tdd
+#graphify/document #graphify/EXTRACTED #community/Community_592

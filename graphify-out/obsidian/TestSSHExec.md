@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "code"
-community: "Ssh Proxy"
+community: "Community 1"
 location: "L103"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Ssh_Proxy
+  - community/Community_1
 ---
 
 # TestSSHExec
@@ -38,4 +38,4 @@ tags:
 - [[SSHResult]] - `uses` [INFERRED]
 - [[test_ssh_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Ssh_Proxy
+#graphify/code #graphify/INFERRED #community/Community_1

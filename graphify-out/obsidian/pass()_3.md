@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/verify-proxy.sh"
 type: "code"
-community: "Proxy Dashboard"
+community: "Community 74"
 location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Proxy_Dashboard
+  - community/Community_74
 ---
 
 # pass()
@@ -19,4 +19,4 @@ tags:
 - [[run_quick()]] - `calls` [EXTRACTED]
 - [[verify-proxy.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Proxy_Dashboard
+#graphify/code #graphify/EXTRACTED #community/Community_74

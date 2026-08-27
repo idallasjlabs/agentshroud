@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/GOOGLE-SERVICES-SETUP.md"
 type: "document"
-community: "Google Services Setup (setup)"
+community: "Community 266"
 location: "L17"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Google_Services_Setup_setup
+  - community/Community_266
 ---
 
 # 📅 Google Calendar (CalDAV)
@@ -17,4 +17,4 @@ tags:
 - [[Python Integration]] - `contains` [EXTRACTED]
 - [[Server Settings]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Google_Services_Setup_setup
+#graphify/document #graphify/EXTRACTED #community/Community_266

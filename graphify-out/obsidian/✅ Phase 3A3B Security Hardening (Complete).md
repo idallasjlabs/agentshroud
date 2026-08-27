@@ -1,12 +1,12 @@
 ---
 source_file: "docs/README.md"
 type: "document"
-community: "Readme (docs)"
+community: "Community 218"
 location: "L120"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_docs
+  - community/Community_218
 ---
 
 # ✅ Phase 3A/3B: Security Hardening (Complete)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[📋 Current Status]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_docs
+#graphify/document #graphify/EXTRACTED #community/Community_218

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/progressive_trust_config.py"
 type: "rationale"
-community: "Progressive Trust Integration"
+community: "Community 35"
 location: "L250"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Progressive_Trust_Integration
+  - community/Community_35
 ---
 
 # Get the next trust level for promotion, or None if already at max.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_next_trust_level()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Progressive_Trust_Integration
+#graphify/rationale #graphify/EXTRACTED #community/Community_35

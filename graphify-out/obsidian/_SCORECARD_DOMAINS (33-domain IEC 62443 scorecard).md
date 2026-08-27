@@ -1,14 +1,14 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "Scanner Integration (security)"
+community: "Community 1768"
 location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Scanner_Integration_security
+  - community/Community_1768
 ---
 
 # _SCORECARD_DOMAINS (33-domain IEC 62443 scorecard)
 
-#graphify/code #graphify/EXTRACTED #community/Scanner_Integration_security
+#graphify/code #graphify/EXTRACTED #community/Community_1768

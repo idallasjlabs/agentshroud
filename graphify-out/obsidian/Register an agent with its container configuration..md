@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/agent_isolation.py"
 type: "rationale"
-community: "Security Hardening"
+community: "Community 28"
 location: "L59"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Hardening
+  - community/Community_28
 ---
 
 # Register an agent with its container configuration.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.register()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Hardening
+#graphify/rationale #graphify/EXTRACTED #community/Community_28

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cross_bot_trust_ledger.py"
 type: "rationale"
-community: "Cross Bot Trust Ledger"
+community: "Community 1016"
 location: "L486"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Cross_Bot_Trust_Ledger
+  - community/Community_1016
 ---
 
 # Peer agent not registered in TrustManager should be auto-registered.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_propagation_registers_unregistered_peer_agent()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Cross_Bot_Trust_Ledger
+#graphify/rationale #graphify/EXTRACTED #community/Community_1016

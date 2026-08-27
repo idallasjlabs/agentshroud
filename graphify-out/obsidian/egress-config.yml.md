@@ -1,11 +1,11 @@
 ---
 source_file: "docs/data/schema-documentation.md"
 type: "code"
-community: "Adr 005 Sha256 Hash (adr)"
+community: "Community 170"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Adr_005_Sha256_Hash_adr
+  - community/Community_170
 ---
 
 # egress-config.yml
@@ -14,4 +14,4 @@ tags:
 - [[Blocked by default (private RFC1918 ranges)]] - `conceptually_related_to` [EXTRACTED]
 - [[DNS Filter]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Adr_005_Sha256_Hash_adr
+#graphify/code #graphify/EXTRACTED #community/Community_170

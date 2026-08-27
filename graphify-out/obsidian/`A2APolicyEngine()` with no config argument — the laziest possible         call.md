@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_policy_default_failclosed.py"
 type: "rationale"
-community: "A2a Policy Default Failclosed"
+community: "Community 1001"
 location: "L48"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/A2a_Policy_Default_Failclosed
+  - community/Community_1001
 ---
 
 # `A2APolicyEngine()` with no config argument — the laziest possible         call
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_engine_constructed_with_no_config_at_all_is_fail_closed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/A2a_Policy_Default_Failclosed
+#graphify/rationale #graphify/EXTRACTED #community/Community_1001

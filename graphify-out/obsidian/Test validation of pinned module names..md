@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "rationale"
-community: "Killswitch Monitor & Observatory Mode"
+community: "Community 443"
 location: "L495"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Killswitch_Monitor__Observatory_Mode
+  - community/Community_443
 ---
 
 # Test validation of pinned module names.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_pinned_modules_validation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Killswitch_Monitor__Observatory_Mode
+#graphify/rationale #graphify/EXTRACTED #community/Community_443

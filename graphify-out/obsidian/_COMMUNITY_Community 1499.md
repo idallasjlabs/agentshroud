@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[feature-priorities_2]] - document - skills/custom/agentshroud-blueteam/references/steve-hay-assessment.md
-- [[steve-hay-assessment]] - document - skills/custom/agentshroud-blueteam/references/steve-hay-assessment.md
+- [[feature-priorities_1]] - document - docs/planning/redteam/feature-priorities.md
+- [[feature-priorities]] - document - docs/planning/redteam/feature-priorities.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/migrate-cve-registry-ghsa.py"
 type: "code"
-community: "Migrate Cve Registry Ghsa (scripts)"
+community: "Community 242"
 location: "L480"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Migrate_Cve_Registry_Ghsa_scripts
+  - community/Community_242
 ---
 
 # gather_advisories()
@@ -18,7 +18,7 @@ tags:
 - [[Return per-agent advisory lists from snapshot or live GitHub.]] - `rationale_for` [EXTRACTED]
 - [[fetch_advisories()]] - `calls` [EXTRACTED]
 - [[load_snapshot()]] - `calls` [EXTRACTED]
-- [[main()_22]] - `calls` [EXTRACTED]
+- [[main()_23]] - `calls` [EXTRACTED]
 - [[migrate-cve-registry-ghsa.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Migrate_Cve_Registry_Ghsa_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_242

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/adr/ADR-009-enforce-by-default.md"
 type: "document"
-community: "Adr 009 Enforce By (adr)"
+community: "Community 367"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Adr_009_Enforce_By_adr
+  - community/Community_367
 ---
 
 # ADR-009: Enforce-by-Default Security Philosophy
@@ -20,4 +20,4 @@ tags:
 - [[Related]] - `contains` [EXTRACTED]
 - [[Status_8]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Adr_009_Enforce_By_adr
+#graphify/document #graphify/EXTRACTED #community/Community_367

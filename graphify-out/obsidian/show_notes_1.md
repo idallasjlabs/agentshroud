@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-athena/SKILL.md"
 type: "document"
-community: "Skill (i-athena)"
+community: "Community 748"
 location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-athena
+  - community/Community_748
 ---
 
 # show_notes.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Output Format_13]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-athena
+#graphify/document #graphify/EXTRACTED #community/Community_748

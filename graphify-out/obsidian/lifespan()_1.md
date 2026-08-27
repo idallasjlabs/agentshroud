@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "Security Audit & Watchtower Tests"
+community: "Community 6"
 location: "L107"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Audit__Watchtower_Tests
+  - community/Community_6
 ---
 
 # lifespan()
@@ -38,8 +38,9 @@ tags:
 - [[EgressTelegramNotifier]] - `calls` [EXTRACTED]
 - [[EncodingDetector]] - `calls` [EXTRACTED]
 - [[EncryptedStore]] - `calls` [EXTRACTED]
+- [[EnhancedApprovalQueue]] - `calls` [EXTRACTED]
 - [[EnvelopeSigner]] - `calls` [EXTRACTED]
-- [[FastAPI_5]] - `references` [EXTRACTED]
+- [[EventBus]] - `calls` [EXTRACTED]
 - [[FastAPI_1]] - `references` [EXTRACTED]
 - [[FastAPI app instance]] - `calls` [EXTRACTED]
 - [[FastAPI lifespan - startup and shutdown]] - `rationale_for` [EXTRACTED]
@@ -51,6 +52,7 @@ tags:
 - [[KeyVault]] - `calls` [EXTRACTED]
 - [[KeyVaultConfig]] - `calls` [EXTRACTED]
 - [[KillSwitchMonitor]] - `calls` [EXTRACTED]
+- [[LLMProxy]] - `calls` [EXTRACTED]
 - [[MCPPolicyEngine]] - `calls` [EXTRACTED]
 - [[MCPProxy]] - `calls` [EXTRACTED]
 - [[MCPProxyConfig]] - `calls` [EXTRACTED]
@@ -59,11 +61,11 @@ tags:
 - [[MemoryLifecycleConfig]] - `calls` [EXTRACTED]
 - [[MemoryLifecycleManager]] - `calls` [EXTRACTED]
 - [[MiddlewareManager]] - `calls` [EXTRACTED]
+- [[MultiAgentRouter]] - `calls` [EXTRACTED]
 - [[NetworkValidator]] - `calls` [EXTRACTED]
 - [[OutboundInfoFilter]] - `calls` [EXTRACTED]
 - [[OutputSchemaEnforcer]] - `calls` [EXTRACTED]
 - [[PIISanitizer]] - `calls` [EXTRACTED]
-- [[Path_50]] - `calls` [EXTRACTED]
 - [[PrivacyPolicyEnforcer]] - `calls` [EXTRACTED]
 - [[ProgressiveTrustConfig]] - `calls` [EXTRACTED]
 - [[PromptGuard]] - `calls` [EXTRACTED]
@@ -77,17 +79,23 @@ tags:
 - [[ToolACLEnforcer]] - `calls` [EXTRACTED]
 - [[ToolResultInjectionScanner]] - `calls` [EXTRACTED]
 - [[TrustManager_1]] - `calls` [EXTRACTED]
-- [[TrustManager_6]] - `calls` [INFERRED]
 - [[UserSessionManager]] - `calls` [EXTRACTED]
 - [[WebProxy_1]] - `calls` [EXTRACTED]
 - [[WebProxyConfig]] - `calls` [EXTRACTED]
 - [[XMLLeakFilter]] - `calls` [EXTRACTED]
+- [[_build_per_bot_telegram_tokens()]] - `calls` [EXTRACTED]
 - [[_install_uvicorn_warning_filter()]] - `calls` [EXTRACTED]
+- [[check_monitor_mode_warnings()]] - `calls` [EXTRACTED]
+- [[config_watcher()]] - `calls` [EXTRACTED]
+- [[get_module_mode()]] - `calls` [EXTRACTED]
 - [[install_log_handler()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `contains` [EXTRACTED]
+- [[load_config()]] - `calls` [EXTRACTED]
 - [[main.py_2]] - `imports` [EXTRACTED]
 - [[main.py_3]] - `references` [EXTRACTED]
+- [[resolve_config_path()]] - `calls` [EXTRACTED]
 - [[resolve_enforcement_mode()]] - `calls` [EXTRACTED]
 - [[setup_resource_guard()]] - `calls` [EXTRACTED]
+- [[start_dns_forwarder()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests
+#graphify/code #graphify/EXTRACTED #community/Community_6

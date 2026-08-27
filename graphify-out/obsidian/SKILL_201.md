@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/canvas/SKILL.md"
 type: "document"
-community: "Skill (canvas)"
+community: "Community 341"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_canvas
+  - community/Community_341
 ---
 
 # SKILL.md
@@ -15,4 +15,4 @@ tags:
 - [[Canvas Host Server (port 18793)]] - `implements` [EXTRACTED]
 - [[Canvas Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_canvas
+#graphify/document #graphify/EXTRACTED #community/Community_341

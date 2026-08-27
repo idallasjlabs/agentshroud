@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "Queue (approval_queue)"
+community: "Community 69"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Queue_approval_queue
+  - community/Community_69
 ---
 
 # queue.py
@@ -19,14 +19,12 @@ tags:
 - [[ApprovalQueueConfig_2]] - `imports` [EXTRACTED]
 - [[ApprovalQueueItem_3]] - `imports` [EXTRACTED]
 - [[ApprovalRequest_3]] - `imports` [EXTRACTED]
-- [[FastAPI_5]] - `imports_from` [EXTRACTED]
 - [[MFAGuard_2]] - `imports` [EXTRACTED]
 - [[MFAGuard.verify()]] - `calls` [EXTRACTED]
 - [[README_128]] - `references` [EXTRACTED]
 - [[config.py]] - `imports_from` [EXTRACTED]
-- [[datetime_9]] - `imports_from` [EXTRACTED]
 - [[mfa_guard.py]] - `imports_from` [EXTRACTED]
 - [[models.py]] - `imports_from` [EXTRACTED]
 - [[test_mfa_guard.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Queue_approval_queue
+#graphify/code #graphify/EXTRACTED #community/Community_69

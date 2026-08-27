@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-session-prompt/SKILL.md"
 type: "document"
-community: "Skill (i-sec-defense)"
+community: "Community 415"
 tags:
   - graphify/document
   - graphify/AMBIGUOUS
-  - community/Skill_i-sec-defense
+  - community/Community_415
 ---
 
 # i-session-prompt SKILL (Session Prompt Generator)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[GSDE&G Skills Reference Guide]] - `conceptually_related_to` [AMBIGUOUS]
 
-#graphify/document #graphify/AMBIGUOUS #community/Skill_i-sec-defense
+#graphify/document #graphify/AMBIGUOUS #community/Community_415

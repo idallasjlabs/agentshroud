@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "code"
-community: "Attack Teardowns Rovoblast Cross (papers)"
+community: "Community 872"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Attack_Teardowns_Rovoblast_Cross_papers
+  - community/Community_872
 ---
 
 # context_guard.py Provenance Tagging (ContextSegment)
@@ -14,4 +14,4 @@ tags:
 - [[Cross-Turn Correlation Capability]] - `implements` [EXTRACTED]
 - [[RovoBlast Attack (Atlassian Rovo AI)]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Attack_Teardowns_Rovoblast_Cross_papers
+#graphify/code #graphify/EXTRACTED #community/Community_872

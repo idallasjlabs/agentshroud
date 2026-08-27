@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_workspace_manager.py"
 type: "code"
-community: "Group Workspace Manager"
+community: "Community 61"
 location: "L186"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Group_Workspace_Manager
+  - community/Community_61
 ---
 
 # TestCrossGroupIsolation
@@ -25,4 +25,4 @@ tags:
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_group_workspace_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Group_Workspace_Manager
+#graphify/code #graphify/INFERRED #community/Community_61

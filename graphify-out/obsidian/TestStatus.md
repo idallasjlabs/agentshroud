@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_credential_injector.py"
 type: "code"
-community: "Credential Injector"
+community: "Community 921"
 location: "L176"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Credential_Injector
+  - community/Community_921
 ---
 
 # TestStatus
@@ -16,4 +16,4 @@ tags:
 - [[.test_get_status_structure()]] - `method` [EXTRACTED]
 - [[test_credential_injector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Credential_Injector
+#graphify/code #graphify/EXTRACTED #community/Community_921

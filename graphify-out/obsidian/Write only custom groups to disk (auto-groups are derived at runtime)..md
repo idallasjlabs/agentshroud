@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "Rbac Config (security)"
+community: "Community 1844"
 location: "L337"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Rbac_Config_security
+  - community/Community_1844
 ---
 
 # Write only custom groups to disk (auto-groups are derived at runtime).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_persist_groups()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Rbac_Config_security
+#graphify/rationale #graphify/EXTRACTED #community/Community_1844

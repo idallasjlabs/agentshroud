@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "code"
-community: "Forward Routing"
+community: "Community 167"
 location: "L225"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Forward_Routing
+  - community/Community_167
 ---
 
 # TestOwnerSpoofingViaForwardBody
@@ -21,4 +21,4 @@ tags:
 - [[WS-E SCRUM-7374 a body-supplied user_id must NOT grant owner identity     to t]] - `rationale_for` [EXTRACTED]
 - [[test_forward_routing.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Forward_Routing
+#graphify/code #graphify/EXTRACTED #community/Community_167

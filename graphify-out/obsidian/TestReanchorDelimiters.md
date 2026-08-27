@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_guard.py"
 type: "code"
-community: "Prompt Guard"
+community: "Community 116"
 location: "L213"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Prompt_Guard
+  - community/Community_116
 ---
 
 # TestReanchorDelimiters
@@ -21,4 +21,4 @@ tags:
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[test_prompt_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Prompt_Guard
+#graphify/code #graphify/EXTRACTED #community/Community_116

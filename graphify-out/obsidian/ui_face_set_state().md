@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/ui_face.c"
 type: "code"
-community: "Playback State (test_playback_state)"
-location: "L352"
+community: "Community 166"
+location: "L371"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Playback_State_test_playback_state
+  - community/Community_166
 ---
 
 # ui_face_set_state()
@@ -21,4 +21,4 @@ tags:
 - [[voice_task()]] - `calls` [EXTRACTED]
 - [[ws_vg_state_t_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Playback_State_test_playback_state
+#graphify/code #graphify/EXTRACTED #community/Community_166

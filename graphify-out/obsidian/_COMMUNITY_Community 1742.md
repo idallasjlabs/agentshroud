@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[app_main.c (ESP32 voice terminal entry point)]] - code - firmware/voice-terminal/main/app_main.c
+- [[Per-subfolder graphify-out avoids output clobbering]] - rationale - docker/config/hermes/skills/graphify/references/github-and-merge.md
 
 ## Live Query (requires Dataview plugin)
 

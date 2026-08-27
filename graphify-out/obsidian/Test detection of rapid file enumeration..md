@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "rationale"
-community: "Tool Chain & CVE Triage"
+community: "Community 78"
 location: "L144"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Tool_Chain__CVE_Triage
+  - community/Community_78
 ---
 
 # Test detection of rapid file enumeration.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_rapid_file_enumeration()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Tool_Chain__CVE_Triage
+#graphify/rationale #graphify/EXTRACTED #community/Community_78

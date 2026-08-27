@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_api_contract_fuzz.py"
 type: "code"
-community: "Api Contract Fuzz"
+community: "Community 385"
 location: "L155"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Api_Contract_Fuzz
+  - community/Community_385
 ---
 
 # test_fuzz_surface_is_nonempty()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_api_contract_fuzz.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Api_Contract_Fuzz
+#graphify/code #graphify/EXTRACTED #community/Community_385

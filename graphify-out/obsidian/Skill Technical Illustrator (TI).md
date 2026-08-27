@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-ti/SKILL.md"
 type: "document"
-community: "Skill (i-ti)"
+community: "Community 390"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-ti
+  - community/Community_390
 ---
 
 # Skill: Technical Illustrator (TI)
@@ -24,4 +24,4 @@ tags:
 - [[SKILL_58]] - `contains` [EXTRACTED]
 - [[Validation Checklist_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-ti
+#graphify/document #graphify/EXTRACTED #community/Community_390

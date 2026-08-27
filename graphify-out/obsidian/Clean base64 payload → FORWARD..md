@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_clamav_pipeline.py"
 type: "rationale"
-community: "Clamav Pipeline"
+community: "Community 331"
 location: "L127"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Clamav_Pipeline
+  - community/Community_331
 ---
 
 # Clean base64 payload → FORWARD.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_pipeline_clamav_clean_payload()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Clamav_Pipeline
+#graphify/rationale #graphify/EXTRACTED #community/Community_331

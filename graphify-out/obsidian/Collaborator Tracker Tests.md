@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_collaborator_tracker.py"
 type: "code"
-community: "Collaborator Tracker"
+community: "Community 1137"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Collaborator_Tracker
+  - community/Community_1137
 ---
 
 # Collaborator Tracker Tests
@@ -14,4 +14,4 @@ tags:
 - [[CollaboratorActivityTracker]] - `references` [EXTRACTED]
 - [[WebhookReceiver]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Collaborator_Tracker
+#graphify/code #graphify/EXTRACTED #community/Community_1137

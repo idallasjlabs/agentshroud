@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md"
 type: "document"
-community: "Agentshroud.yaml (03 - Configuration)"
+community: "Community 251"
 location: "L1"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Agentshroudyaml_03_-_Configuration
+  - community/Community_251
 ---
 
 # AGENTSHROUD_MODE.md
@@ -19,4 +19,4 @@ tags:
 - [[mcp_config.py]] - `references` [INFERRED]
 - [[prompt_guard.py]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Agentshroudyaml_03_-_Configuration
+#graphify/document #graphify/INFERRED #community/Community_251

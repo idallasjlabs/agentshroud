@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Ingest API Main & Models"
+community: "Community 9"
 location: "L4278"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ingest_API_Main__Models
+  - community/Community_9
 ---
 
 # llm_openai_chat_alias()
@@ -17,4 +17,4 @@ tags:
 - [[llm_api_proxy()]] - `calls` [EXTRACTED]
 - [[main.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ingest_API_Main__Models
+#graphify/code #graphify/EXTRACTED #community/Community_9

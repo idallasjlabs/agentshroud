@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/a2a_governance.py"
 type: "code"
-community: "A2a Governance (security)"
+community: "Community 44"
 location: "L129"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2a_Governance_security
+  - community/Community_44
 ---
 
 # A2AGovernanceEvent
@@ -17,4 +17,4 @@ tags:
 - [[Audit event for A2A governance decisions.]] - `rationale_for` [EXTRACTED]
 - [[a2a_governance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2a_Governance_security
+#graphify/code #graphify/EXTRACTED #community/Community_44

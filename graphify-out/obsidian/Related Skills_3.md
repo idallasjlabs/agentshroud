@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-aws/README.md"
 type: "document"
-community: "Readme (i-aws)"
+community: "Community 1147"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-aws
+  - community/Community_1147
 ---
 
 # Related Skills
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AWS Cloud Management & FinOps]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-aws
+#graphify/document #graphify/EXTRACTED #community/Community_1147

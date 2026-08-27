@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "Forward (routes)"
+community: "Community 63"
 location: "L329"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Forward_routes
+  - community/Community_63
 ---
 
 # EmailSendRequest
@@ -19,4 +19,4 @@ tags:
 - [[forward.py]] - `imports` [EXTRACTED]
 - [[models.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Forward_routes
+#graphify/code #graphify/EXTRACTED #community/Community_63

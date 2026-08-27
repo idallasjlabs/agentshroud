@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/auth.py"
 type: "rationale"
-community: "Telegram Proxy Inbound"
+community: "Community 124"
 location: "L38"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Inbound
+  - community/Community_124
 ---
 
 # Args:             max_requests: Maximum requests allowed in the time window
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.__init__()_10]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Inbound
+#graphify/rationale #graphify/EXTRACTED #community/Community_124

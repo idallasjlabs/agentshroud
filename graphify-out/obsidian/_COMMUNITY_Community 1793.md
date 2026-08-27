@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[POST socv1delegation]] - code - gateway/soc/router.py
+- [[test_wire_llm_settings.js — ~.llm_settings wiring isolation test]] - code - tests/startup_smoke/test_wire_llm_settings.js
 
 ## Live Query (requires Dataview plugin)
 

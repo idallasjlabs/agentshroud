@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_isolation.py"
 type: "rationale"
-community: "Shared Memory Write Acl"
+community: "Community 26"
 location: "L134"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Shared_Memory_Write_Acl
+  - community/Community_26
 ---
 
 # group-{chat_id} sessions must live under the 'groups' subdirectory.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_group_id_uses_group_prefix_namespace()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Shared_Memory_Write_Acl
+#graphify/rationale #graphify/EXTRACTED #community/Community_26

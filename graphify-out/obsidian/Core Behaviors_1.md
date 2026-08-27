@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/agents/hermes-soul.md"
 type: "document"
-community: "Hermes Soul (agents)"
+community: "Community 953"
 location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes_Soul_agents
+  - community/Community_953
 ---
 
 # Core Behaviors
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Hermes — System Identity_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes_Soul_agents
+#graphify/document #graphify/EXTRACTED #community/Community_953

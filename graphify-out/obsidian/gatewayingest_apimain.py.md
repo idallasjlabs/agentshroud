@@ -1,11 +1,11 @@
 ---
 source_file: "docs/api/api-reference.md"
 type: "code"
-community: "Adr 005 Sha256 Hash (adr)"
+community: "Community 170"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Adr_005_Sha256_Hash_adr
+  - community/Community_170
 ---
 
 # gateway/ingest_api/main.py
@@ -14,4 +14,4 @@ tags:
 - [[Gateway ManagementControl-Plane API (v1.3.0)]] - `implements` [EXTRACTED]
 - [[Ingest API (POST ingest)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Adr_005_Sha256_Hash_adr
+#graphify/code #graphify/EXTRACTED #community/Community_170

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/smoke.sh"
 type: "code"
-community: "Container Runtime (smoke.d)"
+community: "Community 391"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Container_Runtime_smoked
+  - community/Community_391
 ---
 
 # smoke.sh
@@ -20,4 +20,4 @@ tags:
 - [[test_hermes_cron_html_email.sh]] - `references` [EXTRACTED]
 - [[test_openclaw_photo.sh]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Container_Runtime_smoked
+#graphify/code #graphify/EXTRACTED #community/Community_391

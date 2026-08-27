@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[i-gitops SKILL (stub)]] - document - docker/config/hermes/skills/i-gitops/SKILL.md
+- [[curriculum.md (podcast pipeline learning objectives artifact)]] - concept - docker/config/hermes/skills/i-mnemosyne/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

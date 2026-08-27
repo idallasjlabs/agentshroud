@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/smoke.sh"
 type: "code"
-community: "Container Runtime (smoke.d)"
+community: "Community 391"
 location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Container_Runtime_smoked
+  - community/Community_391
 ---
 
 # run_test()
@@ -15,4 +15,4 @@ tags:
 - [[smoke.sh]] - `defines` [EXTRACTED]
 - [[smoke.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Container_Runtime_smoked
+#graphify/code #graphify/EXTRACTED #community/Community_391

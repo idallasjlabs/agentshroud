@@ -1,0 +1,49 @@
+---
+type: community
+members: 26
+---
+
+# Community 327
+
+**Members:** 26 nodes
+
+## Members
+- [[401 Unauthorized_4]] - document - skills/custom/icloud/SKILL.md
+- [[CalendarContacts not found_3]] - document - skills/custom/icloud/SKILL.md
+- [[Connection timeout_4]] - document - skills/custom/icloud/SKILL.md
+- [[Add Contact_3]] - document - skills/custom/icloud/SKILL.md
+- [[Calendar Operations_3]] - document - skills/custom/icloud/SKILL.md
+- [[Configuration_19]] - document - skills/custom/icloud/SKILL.md
+- [[Contact Operations_3]] - document - skills/custom/icloud/SKILL.md
+- [[Create Event_3]] - document - skills/custom/icloud/SKILL.md
+- [[Create Note_3]] - document - skills/custom/icloud/SKILL.md
+- [[Delete Event_3]] - document - skills/custom/icloud/SKILL.md
+- [[List Contacts_3]] - document - skills/custom/icloud/SKILL.md
+- [[List Events_3]] - document - skills/custom/icloud/SKILL.md
+- [[List Messages_3]] - document - skills/custom/icloud/SKILL.md
+- [[List Notes_3]] - document - skills/custom/icloud/SKILL.md
+- [[Mail Operations_3]] - document - skills/custom/icloud/SKILL.md
+- [[Notes Operations_3]] - document - skills/custom/icloud/SKILL.md
+- [[Search Contacts_3]] - document - skills/custom/icloud/SKILL.md
+- [[Search Mail_3]] - document - skills/custom/icloud/SKILL.md
+- [[Search Notes_3]] - document - skills/custom/icloud/SKILL.md
+- [[Security_18]] - document - skills/custom/icloud/SKILL.md
+- [[Send Email_3]] - document - skills/custom/icloud/SKILL.md
+- [[Setup_4]] - document - skills/custom/icloud/SKILL.md
+- [[Troubleshooting_36]] - document - skills/custom/icloud/SKILL.md
+- [[Update Contact_3]] - document - skills/custom/icloud/SKILL.md
+- [[Update Event_3]] - document - skills/custom/icloud/SKILL.md
+- [[iCloud Services_4]] - document - skills/custom/icloud/SKILL.md
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/Community_327
+SORT file.name ASC
+```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 372]]
+
+## Top bridge nodes
+- [[iCloud Services_4]] - degree 9, connects to 1 community

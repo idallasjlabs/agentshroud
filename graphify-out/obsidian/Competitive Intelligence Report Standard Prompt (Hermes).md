@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/workspace/competitive-analysis.md"
 type: "document"
-community: "Competitive Analysis (workspace)"
+community: "Community 1297"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Competitive_Analysis_workspace
+  - community/Community_1297
 ---
 
 # Competitive Intelligence Report Standard Prompt (Hermes)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Gateway-Enforced Intel Verification (SCRUM-75)]] - `implements` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Competitive_Analysis_workspace
+#graphify/document #graphify/EXTRACTED #community/Community_1297

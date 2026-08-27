@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/PHASE3_REQUIREMENTS.md"
 type: "concept"
-community: "Verify Security (scripts)"
+community: "Community 752"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Verify_Security_scripts
+  - community/Community_752
 ---
 
 # Phase 3 Container Security Hardening Baseline
@@ -16,4 +16,4 @@ tags:
 - [[Phase 3 Success Criteria]] - `conceptually_related_to` [EXTRACTED]
 - [[Read-Only Root FS Constraint — what breaks without proper mounts]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Verify_Security_scripts
+#graphify/concept #graphify/INFERRED #community/Community_752

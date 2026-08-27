@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ui/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-tw/SKILL.md"
 type: "document"
-community: "Skill (i-ui)"
-location: "L28"
+community: "Community 322"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-ui
+  - community/Community_322
 ---
 
 # Rules
 
 ## Connections
-- [[Skill UI Expert (UI)_2]] - `contains` [EXTRACTED]
+- [[Skill Technical Writer (TW)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-ui
+#graphify/document #graphify/EXTRACTED #community/Community_322

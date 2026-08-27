@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "rationale"
-community: "Tool Result Sanitizer"
+community: "Community 513"
 location: "L122"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Tool_Result_Sanitizer
+  - community/Community_513
 ---
 
 # Test content extraction from list results
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_extract_scannable_content_list()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Tool_Result_Sanitizer
+#graphify/rationale #graphify/EXTRACTED #community/Community_513

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md"
 type: "document"
-community: "Openclaw Sandbox Mode (04 - Environment Variables)"
+community: "Community 573"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Openclaw_Sandbox_Mode_04_-_Environment_Variables
+  - community/Community_573
 ---
 
 # OPENCLAW_DISABLE_HOST_FILESYSTEM.md
@@ -16,4 +16,4 @@ tags:
 - [[OPENCLAW_SANDBOX_MODE]] - `references` [EXTRACTED]
 - [[agent_isolation.py]] - `references` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Openclaw_Sandbox_Mode_04_-_Environment_Variables
+#graphify/document #graphify/EXTRACTED #community/Community_573

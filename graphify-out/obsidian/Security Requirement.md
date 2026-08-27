@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/CREDENTIAL-SECURITY-POLICY.md"
 type: "document"
-community: "Credential Security Policy (security)"
+community: "Community 506"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Credential_Security_Policy_security
+  - community/Community_506
 ---
 
 # Security Requirement
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Credential Security Policy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Credential_Security_Policy_security
+#graphify/document #graphify/EXTRACTED #community/Community_506

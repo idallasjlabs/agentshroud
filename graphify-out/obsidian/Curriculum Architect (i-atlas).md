@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-atlas/SKILL.md"
 type: "document"
-community: "Readme (i-ti)"
+community: "Community 946"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-ti
+  - community/Community_946
 ---
 
 # Curriculum Architect (i-atlas)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Mindmap Architect (MM)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-ti
+#graphify/document #graphify/EXTRACTED #community/Community_946

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-ux/SKILL.md"
 type: "document"
-community: "Skill (i-ux)"
+community: "Community 244"
 location: "L232"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-ux
+  - community/Community_244
 ---
 
 # Alert Prioritization Display
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Dashboard UX_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-ux
+#graphify/document #graphify/EXTRACTED #community/Community_244

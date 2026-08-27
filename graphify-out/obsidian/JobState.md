@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/cron_state_monitor.py"
 type: "code"
-community: "Cron State Monitor"
+community: "Community 102"
 location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Cron_State_Monitor
+  - community/Community_102
 ---
 
 # JobState
@@ -20,4 +20,4 @@ tags:
 - [[Normalized view of one bot cron job.]] - `rationale_for` [EXTRACTED]
 - [[cron_state_monitor.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Cron_State_Monitor
+#graphify/code #graphify/EXTRACTED #community/Community_102

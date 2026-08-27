@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_killswitch_monitor_behavior.py"
 type: "code"
-community: "Killswitch Monitor & Observatory Mode"
+community: "Community 13"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Killswitch_Monitor__Observatory_Mode
+  - community/Community_13
 ---
 
 # test_killswitch_monitor_behavior.py
@@ -24,4 +24,4 @@ tags:
 - [[killswitch_config.py (KillSwitchConfig)]] - `references` [EXTRACTED]
 - [[killswitch_monitor.py (KillSwitchMonitor)]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Killswitch_Monitor__Observatory_Mode
+#graphify/code #graphify/EXTRACTED #community/Community_13

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/governance/GSD_CADENCE.md"
 type: "document"
-community: "Gsd Cadence (governance)"
+community: "Community 440"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gsd_Cadence_governance
+  - community/Community_440
 ---
 
 # GSD_CADENCE.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GSD Cadence — Get Shit Done Governance]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gsd_Cadence_governance
+#graphify/document #graphify/EXTRACTED #community/Community_440

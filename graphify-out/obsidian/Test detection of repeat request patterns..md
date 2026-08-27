@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "rationale"
-community: "Approval Hardening"
+community: "Community 213"
 location: "L203"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval_Hardening
+  - community/Community_213
 ---
 
 # Test detection of repeat request patterns.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_repeat_request_pattern_detection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval_Hardening
+#graphify/rationale #graphify/EXTRACTED #community/Community_213

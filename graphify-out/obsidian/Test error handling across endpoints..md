@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "rationale"
-community: "Main Endpoints"
+community: "Community 1845"
 location: "L218"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Main_Endpoints
+  - community/Community_1845
 ---
 
 # Test error handling across endpoints.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestErrorHandling]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Main_Endpoints
+#graphify/rationale #graphify/EXTRACTED #community/Community_1845

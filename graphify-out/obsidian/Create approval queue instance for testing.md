@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_queue.py"
 type: "rationale"
-community: "Queue (approval_queue)"
+community: "Community 43"
 location: "L31"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Queue_approval_queue
+  - community/Community_43
 ---
 
 # Create approval queue instance for testing
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[approval_queue()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Queue_approval_queue
+#graphify/rationale #graphify/EXTRACTED #community/Community_43

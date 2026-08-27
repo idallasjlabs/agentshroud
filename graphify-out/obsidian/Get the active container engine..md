@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "Api (web)"
+community: "Community 45"
 location: "L1216"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Api_web
+  - community/Community_45
 ---
 
 # Get the active container engine.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_get_engine()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Api_web
+#graphify/rationale #graphify/EXTRACTED #community/Community_45

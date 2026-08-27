@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/agentshroud-whitepaper.md"
 type: "document"
-community: "Agentshroud Whitepaper (papers)"
+community: "Community 401"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Agentshroud_Whitepaper_papers
+  - community/Community_401
 ---
 
 # agentshroud-whitepaper.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Enterprise Governance for Autonomous AI Agents]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Agentshroud_Whitepaper_papers
+#graphify/document #graphify/EXTRACTED #community/Community_401

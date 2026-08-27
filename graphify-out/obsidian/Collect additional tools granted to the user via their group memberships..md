@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "rationale"
-community: "Tool ACL & Group RBAC"
+community: "Community 75"
 location: "L546"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Tool_ACL__Group_RBAC
+  - community/Community_75
 ---
 
 # Collect additional tools granted to the user via their group memberships.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._get_group_tool_allowlist()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Tool_ACL__Group_RBAC
+#graphify/rationale #graphify/EXTRACTED #community/Community_75

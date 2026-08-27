@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "Mcp Proxy Coverage"
+community: "Community 1339"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Mcp_Proxy_Coverage
+  - community/Community_1339
 ---
 
 # test_mcp_proxy_coverage.py
@@ -47,4 +47,4 @@ tags:
 - [[test_mcp_permissions.py]] - `shares_data_with` [INFERRED]
 - [[test_mcp_proxy_endpoint.py]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Mcp_Proxy_Coverage
+#graphify/code #graphify/EXTRACTED #community/Community_1339

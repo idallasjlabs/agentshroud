@@ -1,18 +1,17 @@
 ---
-source_file: ".agents/skills/i-browser/scripts/browse.py"
+source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "rationale"
-community: "Browse (scripts)"
+community: "Community 143"
 location: "L35"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Browse_scripts
+  - community/Community_143
 ---
 
 # Risk classification for browser actions
 
 ## Connections
-- [[RiskLevel]] - `rationale_for` [EXTRACTED]
-- [[RiskLevel_7]] - `rationale_for` [EXTRACTED]
+- [[RiskLevel_6]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Browse_scripts
+#graphify/rationale #graphify/EXTRACTED #community/Community_143

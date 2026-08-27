@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md"
 type: "document"
-community: "Mcp Inspector.py (Proxy Layer)"
+community: "Community 631"
 location: "L55"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mcp_Inspectorpy_Proxy_Layer
+  - community/Community_631
 ---
 
 # MCPInspector._should_block(findings)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Function Details_10]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mcp_Inspectorpy_Proxy_Layer
+#graphify/document #graphify/EXTRACTED #community/Community_631

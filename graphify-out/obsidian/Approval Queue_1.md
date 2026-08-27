@@ -1,22 +1,17 @@
 ---
-source_file: "docs/project/glossary.md"
-type: "concept"
-community: "Glossary (project)"
+source_file: "gateway/README.md"
+type: "document"
+community: "Community 217"
+location: "L53"
 tags:
-  - graphify/concept
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Glossary_project
+  - community/Community_217
 ---
 
 # Approval Queue
 
 ## Connections
-- [[AgentShroud v0.8.0 Watchtower Release Plan]] - `references` [EXTRACTED]
-- [[HERMES_SETUP]] - `references` [EXTRACTED]
-- [[OPENCLAW_SETUP]] - `references` [EXTRACTED]
-- [[WEB_CONTROL_CENTER_SUMMARY]] - `references` [EXTRACTED]
-- [[access-control-matrix]] - `references` [EXTRACTED]
-- [[system-requirements]] - `references` [EXTRACTED]
-- [[use-cases]] - `references` [EXTRACTED]
+- [[Features_4]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Glossary_project
+#graphify/document #graphify/EXTRACTED #community/Community_217

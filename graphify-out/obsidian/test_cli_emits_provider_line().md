@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_hermes_model_resolver.py"
 type: "code"
-community: "Hermes Model Resolver"
-location: "L253"
+community: "Community 129"
+location: "L281"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Hermes_Model_Resolver
+  - community/Community_129
 ---
 
 # test_cli_emits_provider_line()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_hermes_model_resolver.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Hermes_Model_Resolver
+#graphify/code #graphify/EXTRACTED #community/Community_129

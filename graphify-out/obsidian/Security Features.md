@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
 type: "document"
-community: "Browser Fetch Skill (reference)"
+community: "Community 1320"
 location: "L209"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser_Fetch_Skill_reference
+  - community/Community_1320
 ---
 
 # Security Features
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Technical Details]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser_Fetch_Skill_reference
+#graphify/document #graphify/EXTRACTED #community/Community_1320

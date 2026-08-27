@@ -1,12 +1,12 @@
 ---
 source_file: "branding/INDEX.md"
 type: "document"
-community: "Index (branding)"
+community: "Community 554"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Index_branding
+  - community/Community_554
 ---
 
 # AgentShroud Branding Assets Index
@@ -20,4 +20,4 @@ tags:
 - [[📝 To-Do]] - `contains` [EXTRACTED]
 - [[📞 Contact]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Index_branding
+#graphify/document #graphify/EXTRACTED #community/Community_554

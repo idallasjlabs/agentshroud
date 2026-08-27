@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-browser/SKILL.md"
 type: "document"
-community: "Skill (i-browser)"
+community: "Community 1078"
 location: "L227"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-browser
+  - community/Community_1078
 ---
 
 # Best Practices
@@ -19,4 +19,4 @@ tags:
 - [[5. Never Extract Credentials]] - `contains` [EXTRACTED]
 - [[Browser — Secure Browser Automation_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-browser
+#graphify/document #graphify/EXTRACTED #community/Community_1078

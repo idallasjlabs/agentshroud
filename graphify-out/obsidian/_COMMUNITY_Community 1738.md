@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[lvgl_kawaii_face.h]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/include/lvgl_kawaii_face.h
+- [[Token-reduction benchmark gated at 5,000 words]] - rationale - docker/config/hermes/skills/graphify/references/exports.md
 
 ## Live Query (requires Dataview plugin)
 

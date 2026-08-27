@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-18-runbook.svg"
 type: "concept"
-community: "Diagram 18 Runbook (images)"
+community: "Community 1033"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Diagram_18_Runbook_images
+  - community/Community_1033
 ---
 
 # Bot not responding on Telegram
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[What is the symptom]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Diagram_18_Runbook_images
+#graphify/concept #graphify/EXTRACTED #community/Community_1033

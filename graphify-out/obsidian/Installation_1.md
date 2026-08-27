@@ -1,12 +1,12 @@
 ---
 source_file: "docs/integrations/voice-terminal-esp32-s3.md"
 type: "document"
-community: "Voice Terminal Esp32 S3 (integrations)"
+community: "Community 399"
 location: "L54"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Voice_Terminal_Esp32_S3_integrations
+  - community/Community_399
 ---
 
 # Installation
@@ -19,4 +19,4 @@ tags:
 - [[5. Build and flash the firmware]] - `contains` [EXTRACTED]
 - [[Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Voice_Terminal_Esp32_S3_integrations
+#graphify/document #graphify/EXTRACTED #community/Community_399

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/anthropic_openai_translator.py"
 type: "code"
-community: "Anthropic Openai Translator"
+community: "Community 117"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Anthropic_Openai_Translator
+  - community/Community_117
 ---
 
 # _random_msg_id()
@@ -17,4 +17,4 @@ tags:
 - [[anthropic_to_openai_response()]] - `calls` [EXTRACTED]
 - [[openai_to_anthropic_response()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Anthropic_Openai_Translator
+#graphify/code #graphify/EXTRACTED #community/Community_117

@@ -1,12 +1,12 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "Main (src)"
+community: "Community 40"
 location: "L417"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Main_src
+  - community/Community_40
 ---
 
 # format_decision()
@@ -18,4 +18,4 @@ tags:
 - [[main.rs]] - `contains` [EXTRACTED]
 - [[run_approvals_decide()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Main_src
+#graphify/code #graphify/EXTRACTED #community/Community_40

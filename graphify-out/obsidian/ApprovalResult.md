@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "Egress Filter"
+community: "Community 53"
 location: "L21"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Egress_Filter
+  - community/Community_53
 ---
 
 # ApprovalResult
@@ -35,4 +35,4 @@ tags:
 - [[test_egress_approval.py]] - `imports` [EXTRACTED]
 - [[test_egress_filter.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Egress_Filter
+#graphify/code #graphify/INFERRED #community/Community_53

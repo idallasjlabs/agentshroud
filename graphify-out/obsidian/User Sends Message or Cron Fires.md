@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-14-logic-flow.svg"
 type: "concept"
-community: "Diagram 14 Logic Flow (images)"
+community: "Community 853"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Diagram_14_Logic_Flow_images
+  - community/Community_853
 ---
 
 # User sends message or cron fires
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Main agent (agentshroud_bot)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Diagram_14_Logic_Flow_images
+#graphify/concept #graphify/EXTRACTED #community/Community_853

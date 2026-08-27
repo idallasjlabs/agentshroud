@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_stream.py"
 type: "code"
-community: "Forward Stream"
+community: "Community 76"
 location: "L392"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Forward_Stream
+  - community/Community_76
 ---
 
 # test_forward_stream_records_ledger_entry_with_full_assembled_text()
@@ -16,4 +16,4 @@ tags:
 - [[_post_stream()]] - `calls` [EXTRACTED]
 - [[test_forward_stream.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Forward_Stream
+#graphify/code #graphify/EXTRACTED #community/Community_76

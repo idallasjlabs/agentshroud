@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
 type: "rationale"
-community: "Jira Weekly Review (workspace)"
+community: "Community 245"
 location: "L131"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Jira_Weekly_Review_workspace
+  - community/Community_245
 ---
 
 # Unauthenticated site-to-cloud-ID discovery URL.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[build_tenant_info_url()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Jira_Weekly_Review_workspace
+#graphify/rationale #graphify/EXTRACTED #community/Community_245

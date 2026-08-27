@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-tw/SKILL.md"
 type: "document"
-community: "Skill (i-tw)"
+community: "Community 322"
 location: "L114"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-tw
+  - community/Community_322
 ---
 
 # If not → escalate to field team via #ops-alerts
@@ -16,4 +16,4 @@ tags:
 - [[Architecture Decision Record (ADR)_2]] - `contains` [EXTRACTED]
 - [[SKILL_185]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-tw
+#graphify/document #graphify/EXTRACTED #community/Community_322

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-eightd/SKILL.md"
 type: "document"
-community: "Skill (i-eightd)"
+community: "Community 228"
 location: "L176"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-eightd
+  - community/Community_228
 ---
 
 # Step 5: Establish Baseline
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[D2 — Problem Description (Data Collection & Characterization)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-eightd
+#graphify/document #graphify/EXTRACTED #community/Community_228

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/version_routes.py"
 type: "rationale"
-community: "Agentshroud Manager"
+community: "Community 58"
 location: "L81"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Agentshroud_Manager
+  - community/Community_58
 ---
 
 # Upgrade to a target version. Requires approval_id unless dry_run.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[upgrade_version()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Agentshroud_Manager
+#graphify/rationale #graphify/EXTRACTED #community/Community_58

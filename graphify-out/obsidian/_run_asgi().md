@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "Dns Canvas Coverage"
+community: "Community 278"
 location: "L564"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Dns_Canvas_Coverage
+  - community/Community_278
 ---
 
 # _run_asgi()
@@ -25,4 +25,4 @@ tags:
 - [[Drive the canvas ASGI app with scripted receive events; collect sends.]] - `rationale_for` [EXTRACTED]
 - [[test_dns_canvas_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Dns_Canvas_Coverage
+#graphify/code #graphify/EXTRACTED #community/Community_278

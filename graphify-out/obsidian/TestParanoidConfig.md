@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "Config Validation & Router"
+community: "Community 333"
 location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Config_Validation__Router
+  - community/Community_333
 ---
 
 # TestParanoidConfig
@@ -36,4 +36,4 @@ tags:
 - [[paranoid.env should enable ALL security features.]] - `rationale_for` [EXTRACTED]
 - [[test_config_validation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Config_Validation__Router
+#graphify/code #graphify/EXTRACTED #community/Community_333

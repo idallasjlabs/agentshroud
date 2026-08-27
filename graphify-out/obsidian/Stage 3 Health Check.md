@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/01 - Architecture/Startup Sequence.md"
 type: "document"
-community: "Startup sequence (01 - Architecture)"
+community: "Community 741"
 location: "L90"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Startup_sequence_01_-_Architecture
+  - community/Community_741
 ---
 
 # Stage 3: Health Check
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Boot Sequence (Numbered)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Startup_sequence_01_-_Architecture
+#graphify/document #graphify/EXTRACTED #community/Community_741

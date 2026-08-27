@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-cr/SKILL.md"
 type: "document"
-community: "Skill (i-cr)"
+community: "Community 1008"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-cr
+  - community/Community_1008
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Code Review (CR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-cr
+#graphify/document #graphify/EXTRACTED #community/Community_1008

@@ -1,17 +1,17 @@
 ---
 source_file: "skills/custom/securebrowser/SKILL.md"
 type: "document"
-community: "Skill (securebrowser)"
+community: "Community 235"
 location: "L331"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_securebrowser
+  - community/Community_235
 ---
 
 # "CAPTCHA detected"
 
 ## Connections
-- [[Troubleshooting_37]] - `contains` [EXTRACTED]
+- [[Troubleshooting_38]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_securebrowser
+#graphify/document #graphify/EXTRACTED #community/Community_235

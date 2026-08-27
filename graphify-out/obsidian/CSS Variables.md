@@ -1,12 +1,12 @@
 ---
 source_file: "branding/QUICK-REFERENCE.md"
 type: "document"
-community: "Quick Reference (branding)"
+community: "Community 555"
 location: "L101"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Quick_Reference_branding
+  - community/Community_555
 ---
 
 # CSS Variables
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Common Use Cases]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Quick_Reference_branding
+#graphify/document #graphify/EXTRACTED #community/Community_555

@@ -1,12 +1,12 @@
 ---
 source_file: ".github/agents/validation-runner.agent.md"
 type: "document"
-community: "Validation Runner.agent (agents)"
+community: "Community 368"
 location: "L144"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Validation_Runneragent_agents
+  - community/Community_368
 ---
 
 # Common Validation Commands
@@ -17,4 +17,4 @@ tags:
 - [[Quick Checks]] - `contains` [EXTRACTED]
 - [[Validation Runner Specialist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Validation_Runneragent_agents
+#graphify/document #graphify/EXTRACTED #community/Community_368

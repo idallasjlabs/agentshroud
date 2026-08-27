@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Dashboard Endpoints (web)"
+community: "Community 31"
 location: "L77"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Dashboard_Endpoints_web
+  - community/Community_31
 ---
 
 # require_auth()
@@ -29,4 +29,4 @@ tags:
 - [[test_web_api_coverage.py]] - `imports` [EXTRACTED]
 - [[verify_token()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Dashboard_Endpoints_web
+#graphify/code #graphify/EXTRACTED #community/Community_31

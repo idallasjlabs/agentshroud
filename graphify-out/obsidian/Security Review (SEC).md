@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-sec/README.md"
 type: "document"
-community: "Readme (i-sec)"
+community: "Community 1080"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-sec
+  - community/Community_1080
 ---
 
 # Security Review (SEC)
@@ -18,4 +18,4 @@ tags:
 - [[Usage_34]] - `contains` [EXTRACTED]
 - [[i-security-reviewer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-sec
+#graphify/document #graphify/EXTRACTED #community/Community_1080

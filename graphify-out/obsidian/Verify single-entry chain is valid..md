@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "rationale"
-community: "Pipeline Unit"
+community: "Community 74"
 location: "L567"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Pipeline_Unit
+  - community/Community_74
 ---
 
 # Verify single-entry chain is valid.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_audit_chain_single_entry()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Pipeline_Unit
+#graphify/rationale #graphify/EXTRACTED #community/Community_74

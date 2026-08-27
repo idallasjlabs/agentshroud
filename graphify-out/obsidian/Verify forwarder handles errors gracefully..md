@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "rationale"
-community: "Forwarder (proxy)"
+community: "Community 74"
 location: "L524"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Forwarder_proxy
+  - community/Community_74
 ---
 
 # Verify forwarder handles errors gracefully.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_forwarder_error_handling()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Forwarder_proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_74

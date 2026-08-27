@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/graphify/references/exports.md"
 type: "document"
-community: "Exports (references)"
+community: "Community 940"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Exports_references
+  - community/Community_940
 ---
 
 # graphify reference: extra exports and benchmark
@@ -20,4 +20,4 @@ tags:
 - [[Step 8 - Token reduction benchmark (only if total_words  5000)]] - `contains` [EXTRACTED]
 - [[exports]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Exports_references
+#graphify/document #graphify/EXTRACTED #community/Community_940

@@ -1,12 +1,12 @@
 ---
 source_file: "examples/docker-commands.md"
 type: "document"
-community: "Docker Commands (examples)"
+community: "Community 621"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Commands_examples
+  - community/Community_621
 ---
 
 # Docker Commands Reference
@@ -25,4 +25,4 @@ tags:
 - [[Writing files to containers]] - `contains` [EXTRACTED]
 - [[docker-commands]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Commands_examples
+#graphify/document #graphify/EXTRACTED #community/Community_621

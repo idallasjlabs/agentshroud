@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/icloud/SKILL.md"
+source_file: "docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md"
 type: "document"
-community: "ESP32 Firmware"
-location: "L135"
+community: "Community 937"
+location: "L35"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ESP32_Firmware
+  - community/Community_937
 ---
 
 # Security
 
 ## Connections
-- [[iCloud Services_3]] - `contains` [EXTRACTED]
+- [[GATEWAY_OP_PROXY_URL_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ESP32_Firmware
+#graphify/document #graphify/EXTRACTED #community/Community_937

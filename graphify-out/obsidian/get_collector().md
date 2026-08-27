@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/module_stats.py"
 type: "code"
-community: "Module Stats"
+community: "Community 256"
 location: "L82"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Stats
+  - community/Community_256
 ---
 
 # get_collector()
@@ -24,4 +24,4 @@ tags:
 - [[router.py_1]] - `imports` [EXTRACTED]
 - [[test_module_stats.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Stats
+#graphify/code #graphify/EXTRACTED #community/Community_256

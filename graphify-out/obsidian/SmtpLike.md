@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/email_service.py"
 type: "code"
-community: "Gateway Email Service"
+community: "Community 173"
 location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Email_Service
+  - community/Community_173
 ---
 
 # SmtpLike
@@ -18,4 +18,4 @@ tags:
 - [[The subset of ``smtplib.SMTP_SSL`` the service uses.]] - `rationale_for` [EXTRACTED]
 - [[email_service.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Email_Service
+#graphify/code #graphify/EXTRACTED #community/Community_173

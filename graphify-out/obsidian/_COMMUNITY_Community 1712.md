@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[i-value-stream-mapping SKILL.md (minimal stub)]] - document - docker/config/hermes/skills/i-value-stream-mapping/SKILL.md
+- [[openclaw agents_README.txt (50+ specialized agents)]] - document - docker/config/openclaw/agents/_README.txt
 
 ## Live Query (requires Dataview plugin)
 

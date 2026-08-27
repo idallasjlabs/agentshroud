@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/audit_store.py"
 type: "code"
-community: "Audit Export"
+community: "Community 89"
 location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Audit_Export
+  - community/Community_89
 ---
 
 # AuditEvent
@@ -38,4 +38,4 @@ tags:
 - [[audit_store.py]] - `contains` [EXTRACTED]
 - [[test_audit_export.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Audit_Export
+#graphify/code #graphify/EXTRACTED #community/Community_89

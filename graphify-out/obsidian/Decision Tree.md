@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/incident-response.md"
 type: "document"
-community: "Incident Response (security)"
+community: "Community 462"
 location: "L102"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Incident_Response_security
+  - community/Community_462
 ---
 
 # Decision Tree
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[4. Kill Switch Usage Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Incident_Response_security
+#graphify/document #graphify/EXTRACTED #community/Community_462

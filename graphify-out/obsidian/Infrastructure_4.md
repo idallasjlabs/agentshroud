@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec-defense/SKILL.md"
+source_file: "docker/config/hermes/skills/i-sec-offense/SKILL.md"
 type: "document"
-community: "Skill (i-sec-defense)"
-location: "L150"
+community: "Community 496"
+location: "L367"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-sec-defense
+  - community/Community_496
 ---
 
 # Infrastructure
 
 ## Connections
-- [[AgentShroud Blue Team Security Auditor_2]] - `contains` [EXTRACTED]
+- [[AgentShroud Red Team Adversarial Tester_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-sec-defense
+#graphify/document #graphify/EXTRACTED #community/Community_496

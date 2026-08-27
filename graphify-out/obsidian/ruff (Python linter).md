@@ -1,11 +1,11 @@
 ---
 source_file: ".pre-commit-config.yaml"
 type: "concept"
-community: ".semgrep"
+community: "Community 251"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/semgrep
+  - community/Community_251
 ---
 
 # ruff (Python linter)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Pre-commit Hooks Configuration]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/semgrep
+#graphify/concept #graphify/EXTRACTED #community/Community_251

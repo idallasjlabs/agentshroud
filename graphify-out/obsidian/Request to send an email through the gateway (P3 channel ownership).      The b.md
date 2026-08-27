@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "rationale"
-community: "Forward (routes)"
+community: "Community 63"
 location: "L330"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Forward_routes
+  - community/Community_63
 ---
 
 # Request to send an email through the gateway (P3: channel ownership).      The b
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[EmailSendRequest]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Forward_routes
+#graphify/rationale #graphify/EXTRACTED #community/Community_63

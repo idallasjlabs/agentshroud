@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/redteam/plan.md"
 type: "document"
-community: "Coverage Report (testing)"
+community: "Community 1081"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Coverage_Report_testing
+  - community/Community_1081
 ---
 
 # Red-Team Assessment Plan
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Test Coverage Report (AgentShroud v1.3.0)]] - `cites` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Coverage_Report_testing
+#graphify/document #graphify/EXTRACTED #community/Community_1081

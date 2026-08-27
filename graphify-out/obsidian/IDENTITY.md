@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/workspace/IDENTITY.md"
 type: "document"
-community: "Developer (workspace)"
+community: "Community 449"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Developer_workspace
+  - community/Community_449
 ---
 
 # IDENTITY.md
@@ -16,4 +16,4 @@ tags:
 - [[agentshroud-ssh-exec.sh]] - `references` [EXTRACTED]
 - [[init-openclaw-config.sh]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Developer_workspace
+#graphify/document #graphify/EXTRACTED #community/Community_449

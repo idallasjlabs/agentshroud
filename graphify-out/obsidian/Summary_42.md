@@ -1,17 +1,20 @@
 ---
-source_file: "docs/vault/06 - Containers & Services/agentshroud-bot.md"
+source_file: "docs/setup/TELEGRAM_GMAIL_SETUP.md"
 type: "document"
-community: "docs/vault"
-location: "L11"
+community: "Community 215"
+location: "L339"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Community_215
 ---
 
 # Summary
 
 ## Connections
-- [[agentshroud-bot_1]] - `contains` [EXTRACTED]
+- [[Current Status_10]] - `contains` [EXTRACTED]
+- [[Quick Start Commands]] - `contains` [EXTRACTED]
+- [[Telegram & Gmail Integration Guide]] - `contains` [EXTRACTED]
+- [[✅ Current Status]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Community_215

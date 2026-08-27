@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "A2a Integration"
+community: "Community 1001"
 location: "L382"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2a_Integration
+  - community/Community_1001
 ---
 
 # A2APolicyEngine
@@ -71,4 +71,4 @@ tags:
 - [[test_task_ownership_denial_is_not_bypassable_by_high_risk_approval_path()]] - `calls` [EXTRACTED]
 - [[test_task_ownership_violation_records_a2a_violation_type()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2a_Integration
+#graphify/code #graphify/EXTRACTED #community/Community_1001

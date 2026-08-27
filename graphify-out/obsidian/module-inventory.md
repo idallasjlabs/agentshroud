@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/agentshroud-blueteam/references/module-inventory.md"
 type: "document"
-community: "Module Inventory (references)"
+community: "Community 1272"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Inventory_references
+  - community/Community_1272
 ---
 
 # module-inventory.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Module Inventory]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Inventory_references
+#graphify/document #graphify/EXTRACTED #community/Community_1272

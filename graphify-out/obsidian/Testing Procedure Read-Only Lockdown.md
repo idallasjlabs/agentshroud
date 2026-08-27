@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md"
 type: "document"
-community: "Development Workflow Read Only (security)"
+community: "Community 185"
 location: "L292"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Development_Workflow_Read_Only_security
+  - community/Community_185
 ---
 
 # Testing Procedure: Read-Only Lockdown
@@ -18,4 +18,4 @@ tags:
 - [[Lockdown Procedure]] - `contains` [EXTRACTED]
 - [[Pre-Lockdown Checklist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Development_Workflow_Read_Only_security
+#graphify/document #graphify/EXTRACTED #community/Community_185

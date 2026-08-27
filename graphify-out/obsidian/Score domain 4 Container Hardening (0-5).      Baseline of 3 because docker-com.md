@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "Scanner Integration"
+community: "Community 558"
 location: "L1022"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Scanner_Integration
+  - community/Community_558
 ---
 
 # Score domain 4: Container Hardening (0-5).      Baseline of 3 because docker-com
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_score_container_hardening()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Scanner_Integration
+#graphify/rationale #graphify/EXTRACTED #community/Community_558

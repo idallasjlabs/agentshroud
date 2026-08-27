@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_hot_reload.py"
 type: "code"
-community: "Config"
+community: "Community 1325"
 location: "L245"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Config
+  - community/Community_1325
 ---
 
 # test_watcher_ignores_missing_file()
@@ -18,4 +18,4 @@ tags:
 - [[config_watcher()]] - `calls` [EXTRACTED]
 - [[test_config_hot_reload.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Config
+#graphify/code #graphify/EXTRACTED #community/Community_1325

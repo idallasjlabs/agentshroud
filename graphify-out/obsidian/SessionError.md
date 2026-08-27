@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_security.py"
 type: "code"
-community: "Session Security"
+community: "Community 712"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Session_Security
+  - community/Community_712
 ---
 
 # SessionError
@@ -29,4 +29,4 @@ tags:
 - [[TestSessionValidation]] - `uses` [INFERRED]
 - [[session_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Session_Security
+#graphify/code #graphify/EXTRACTED #community/Community_712

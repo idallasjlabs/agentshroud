@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "Mcp Permissions (proxy)"
+community: "Community 106"
 location: "L112"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Mcp_Permissions_proxy
+  - community/Community_106
 ---
 
 # mgr()
@@ -15,4 +15,4 @@ tags:
 - [[MCPPermissionManager]] - `calls` [EXTRACTED]
 - [[test_mcp_permissions.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Mcp_Permissions_proxy
+#graphify/code #graphify/EXTRACTED #community/Community_106

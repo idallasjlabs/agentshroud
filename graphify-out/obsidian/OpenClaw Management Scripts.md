@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/README.md"
 type: "document"
-community: "Readme (scripts)"
+community: "Community 304"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_scripts
+  - community/Community_304
 ---
 
 # OpenClaw Management Scripts
@@ -18,7 +18,7 @@ tags:
 - [[Quick Reference_3]] - `contains` [EXTRACTED]
 - [[README_116]] - `contains` [EXTRACTED]
 - [[Security Notes]] - `contains` [EXTRACTED]
-- [[Troubleshooting_15]] - `contains` [EXTRACTED]
+- [[Troubleshooting_16]] - `contains` [EXTRACTED]
 - [[check-status.sh_1]] - `contains` [EXTRACTED]
 - [[devices.sh_1]] - `contains` [EXTRACTED]
 - [[logs.sh_1]] - `contains` [EXTRACTED]
@@ -26,4 +26,4 @@ tags:
 - [[set-model.sh_1]] - `contains` [EXTRACTED]
 - [[telegram.sh_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_scripts
+#graphify/document #graphify/EXTRACTED #community/Community_304

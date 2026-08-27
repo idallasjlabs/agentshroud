@@ -1,12 +1,12 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "Claude"
+community: "Community 241"
 location: "L393"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Claude
+  - community/Community_241
 ---
 
 # 10) CLAUDE CODE OPERATIONAL RULES
@@ -15,4 +15,4 @@ tags:
 - [[Applies to Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary)]] - `contains` [EXTRACTED]
 - [[MCP tools available]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Claude
+#graphify/document #graphify/EXTRACTED #community/Community_241

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_approval_routing.py"
 type: "rationale"
-community: "Group Approval Routing"
+community: "Community 121"
 location: "L252"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Group_Approval_Routing
+  - community/Community_121
 ---
 
 # extract_group_chat_id returns None for non-group agent IDs.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_extract_chat_id_returns_none_for_non_group()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Group_Approval_Routing
+#graphify/rationale #graphify/EXTRACTED #community/Community_121

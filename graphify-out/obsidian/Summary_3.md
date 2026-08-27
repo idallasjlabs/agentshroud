@@ -1,18 +1,17 @@
 ---
-source_file: "docs/compliance/iec-62443-matrix.md"
+source_file: "CHANGELOG.md"
 type: "document"
-community: "Iec 62443 Matrix (compliance)"
-location: "L116"
+community: "Community 1342"
+location: "L113"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Iec_62443_Matrix_compliance
+  - community/Community_1342
 ---
 
 # Summary
 
 ## Connections
-- [[IEC 62443 Compliance Matrix — AgentShroud]] - `contains` [EXTRACTED]
-- [[Key Components Referenced (v1.0.0)]] - `contains` [EXTRACTED]
+- [[1.5.1 A2A Governance (2026-08-22)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Iec_62443_Matrix_compliance
+#graphify/document #graphify/EXTRACTED #community/Community_1342

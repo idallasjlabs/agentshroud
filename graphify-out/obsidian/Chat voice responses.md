@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/sag/SKILL.md"
 type: "document"
-community: "Skill (openai-whisper-api)"
+community: "Community 719"
 location: "L69"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_openai-whisper-api
+  - community/Community_719
 ---
 
 # Chat voice responses
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[sag]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_openai-whisper-api
+#graphify/document #graphify/EXTRACTED #community/Community_719

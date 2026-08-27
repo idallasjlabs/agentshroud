@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "Router (soc)"
+community: "Community 18"
 location: "L2040"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Router_soc
+  - community/Community_18
 ---
 
 # ScanRequest
@@ -23,4 +23,4 @@ tags:
 - [[router.py_1]] - `contains` [EXTRACTED]
 - [[run_scanner()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Router_soc
+#graphify/code #graphify/INFERRED #community/Community_18

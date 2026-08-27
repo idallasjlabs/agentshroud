@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/tts.py"
 type: "code"
-community: "Server (voice_gateway)"
+community: "Community 115"
 location: "L39-44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Server_voice_gateway
+  - community/Community_115
 ---
 
 # _get_pipeline() — lazy-inits Kokoro KPipeline singleton
@@ -15,4 +15,4 @@ tags:
 - [[_lifespan()]] - `calls` [EXTRACTED]
 - [[synthesize()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Server_voice_gateway
+#graphify/code #graphify/EXTRACTED #community/Community_115

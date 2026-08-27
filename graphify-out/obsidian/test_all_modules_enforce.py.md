@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_all_modules_enforce.py"
 type: "code"
-community: "RBAC & Ingest Middleware"
+community: "Community 6"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBAC__Ingest_Middleware
+  - community/Community_6
 ---
 
 # test_all_modules_enforce.py
@@ -37,4 +37,4 @@ tags:
 - [[ToolChainAnalyzer]] - `imports` [EXTRACTED]
 - [[get_module_mode()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBAC__Ingest_Middleware
+#graphify/code #graphify/EXTRACTED #community/Community_6

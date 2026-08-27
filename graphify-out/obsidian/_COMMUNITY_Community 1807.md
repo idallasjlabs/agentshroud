@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[voice_gatewaytts.py — Kokoro Text-to-Speech]] - code - voice_gateway/tts.py
+- [[Session Isolation End-to-End Tests]] - code - gateway/tests/test_session_isolation.py
 
 ## Live Query (requires Dataview plugin)
 

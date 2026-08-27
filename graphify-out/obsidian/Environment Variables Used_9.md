@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Other/approval_queue.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/version_routes.py.md"
 type: "document"
-community: "Shutdown & recovery (01 - Architecture)"
-location: "L72"
+community: "Community 563"
+location: "L61"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Shutdown__recovery_01_-_Architecture
+  - community/Community_563
 ---
 
 # Environment Variables Used
 
 ## Connections
-- [[EnhancedApprovalQueue (`enhanced_queue.py`)]] - `contains` [EXTRACTED]
+- [[version_routes.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Shutdown__recovery_01_-_Architecture
+#graphify/document #graphify/EXTRACTED #community/Community_563

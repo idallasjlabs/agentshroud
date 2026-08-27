@@ -1,12 +1,12 @@
 ---
 source_file: "dashboard/README.md"
 type: "document"
-community: "Security Scripts Reference (security)"
+community: "Community 343"
 location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Scripts_Reference_security
+  - community/Community_343
 ---
 
 # Kill Switch
@@ -22,4 +22,4 @@ tags:
 - [[VERIFICATION_RESULTS]] - `references` [EXTRACTED]
 - [[container-policy]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Scripts_Reference_security
+#graphify/document #graphify/EXTRACTED #community/Community_343

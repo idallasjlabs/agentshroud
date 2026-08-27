@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "code"
-community: "Soc Realtime Coverage"
+community: "Community 127"
 location: "L172"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Soc_Realtime_Coverage
+  - community/Community_127
 ---
 
 # ws_soc_endpoint()
@@ -31,4 +31,4 @@ tags:
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 - [[websocket.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Soc_Realtime_Coverage
+#graphify/code #graphify/EXTRACTED #community/Community_127

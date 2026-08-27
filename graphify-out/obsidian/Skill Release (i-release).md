@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-release/SKILL.md"
 type: "document"
-community: "Skill (i-release)"
+community: "Community 716"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-release
+  - community/Community_716
 ---
 
 # Skill: Release (i-release)
@@ -18,4 +18,4 @@ tags:
 - [[SKILL_46]] - `contains` [EXTRACTED]
 - [[Steps]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-release
+#graphify/document #graphify/EXTRACTED #community/Community_716

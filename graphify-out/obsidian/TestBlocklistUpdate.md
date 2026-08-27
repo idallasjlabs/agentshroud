@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "Dns Blocklist"
+community: "Community 141"
 location: "L438"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Dns_Blocklist
+  - community/Community_141
 ---
 
 # TestBlocklistUpdate
@@ -18,4 +18,4 @@ tags:
 - [[DNSForwarderProtocol]] - `uses` [INFERRED]
 - [[test_dns_canvas_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Dns_Blocklist
+#graphify/code #graphify/EXTRACTED #community/Community_141

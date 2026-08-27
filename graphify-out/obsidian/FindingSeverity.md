@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_content_scanner.py"
 type: "code"
-community: "Tool Chain & CVE Triage"
+community: "Community 78"
 location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tool_Chain__CVE_Triage
+  - community/Community_78
 ---
 
 # FindingSeverity
@@ -16,4 +16,4 @@ tags:
 - [[str]] - `inherits` [EXTRACTED]
 - [[web_content_scanner.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Tool_Chain__CVE_Triage
+#graphify/code #graphify/EXTRACTED #community/Community_78

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/diagrams/README.md"
 type: "document"
-community: "04 Security (diagrams)"
+community: "Community 745"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/04_Security_diagrams
+  - community/Community_745
 ---
 
 # README.md
@@ -21,4 +21,4 @@ tags:
 - [[07-team-planning]] - `references` [EXTRACTED]
 - [[AgentShroud — Diagram Library]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/04_Security_diagrams
+#graphify/document #graphify/EXTRACTED #community/Community_745

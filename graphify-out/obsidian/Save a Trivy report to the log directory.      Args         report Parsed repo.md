@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trivy_report.py"
 type: "rationale"
-community: "Daily Cve Report (security)"
-location: "L150"
+community: "Community 482"
+location: "L161"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Daily_Cve_Report_security
+  - community/Community_482
 ---
 
 # Save a Trivy report to the log directory.      Args:         report: Parsed repo
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[save_report()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Daily_Cve_Report_security
+#graphify/rationale #graphify/EXTRACTED #community/Community_482

@@ -8,11 +8,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[12. OTA Wireless Firmware Updates]] - document - firmware/voice-terminal/SETUP.md
-- [[How it works]] - document - firmware/voice-terminal/SETUP.md
-- [[One-time bootstrap (USB flash — do this when back at marvin)]] - document - firmware/voice-terminal/SETUP.md
-- [[Ongoing update workflow (no USB ever again)]] - document - firmware/voice-terminal/SETUP.md
-- [[Troubleshooting OTA]] - document - firmware/voice-terminal/SETUP.md
+- [[Purpose_101]] - document - docker/config/openclaw/skills/i-sad/README.md
+- [[README_106]] - document - docker/config/openclaw/skills/i-sad/README.md
+- [[Related Skills_110]] - document - docker/config/openclaw/skills/i-sad/README.md
+- [[System Audit Documentation_2]] - document - docker/config/openclaw/skills/i-sad/README.md
+- [[Usage_111]] - document - docker/config/openclaw/skills/i-sad/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,9 +20,3 @@ members: 5
 TABLE source_file, type FROM #community/Community_1241
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_docsvault]]
-
-## Top bridge nodes
-- [[12. OTA Wireless Firmware Updates]] - degree 5, connects to 1 community

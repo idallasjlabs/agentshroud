@@ -1,17 +1,18 @@
 ---
 source_file: "docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md"
 type: "document"
-community: "Bot Development Team Rpi (setup)"
+community: "Community 347"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Development_Team_Rpi_setup
+  - community/Community_347
 ---
 
 # Current System Profile
 
 ## Connections
 - [[AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist]] - `contains` [EXTRACTED]
+- [[AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Development_Team_Rpi_setup
+#graphify/document #graphify/EXTRACTED #community/Community_347

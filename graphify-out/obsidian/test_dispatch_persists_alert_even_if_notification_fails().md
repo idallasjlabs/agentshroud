@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_alert_dispatcher_retry.py"
 type: "code"
-community: "Alert Dispatcher Retry"
+community: "Community 986"
 location: "L107"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Alert_Dispatcher_Retry
+  - community/Community_986
 ---
 
 # test_dispatch_persists_alert_even_if_notification_fails()
@@ -16,4 +16,4 @@ tags:
 - [[_alert()]] - `calls` [EXTRACTED]
 - [[test_alert_dispatcher_retry.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher_Retry
+#graphify/code #graphify/EXTRACTED #community/Community_986

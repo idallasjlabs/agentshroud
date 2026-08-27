@@ -1,11 +1,11 @@
 ---
 source_file: "docs/user-guide.md"
 type: "concept"
-community: "Claude Security Audit Prompt (docs)"
+community: "Community 413"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Claude_Security_Audit_Prompt_docs
+  - community/Community_413
 ---
 
 # PII Sanitizer (user-facing description)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[pii_sanitizer module (disabled — false positives)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Claude_Security_Audit_Prompt_docs
+#graphify/concept #graphify/INFERRED #community/Community_413

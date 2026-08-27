@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "Scanner Integration"
+community: "Community 558"
 location: "L1021"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Scanner_Integration
+  - community/Community_558
 ---
 
 # _score_container_hardening()
@@ -21,4 +21,4 @@ tags:
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 - [[test_scanner_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Scanner_Integration
+#graphify/code #graphify/EXTRACTED #community/Community_558

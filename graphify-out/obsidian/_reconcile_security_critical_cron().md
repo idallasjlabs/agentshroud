@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/start-agentshroud.sh"
 type: "code"
-community: "Start Agentshroud (scripts)"
-location: "L402"
+community: "Community 363"
+location: "L702"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Start_Agentshroud_scripts
+  - community/Community_363
 ---
 
 # _reconcile_security_critical_cron()
@@ -15,4 +15,4 @@ tags:
 - [[start-agentshroud.sh]] - `defines` [EXTRACTED]
 - [[start-agentshroud.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Start_Agentshroud_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_363

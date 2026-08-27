@@ -1,17 +1,20 @@
 ---
-source_file: "docs/setup-slack.md"
+source_file: "docs/security/SECURITY_SCRIPTS_REFERENCE.md"
 type: "document"
-community: "Setup Slack (docs)"
-location: "L171"
+community: "Community 343"
+location: "L277"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Slack_docs
+  - community/Community_343
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Slack Channel Setup]] - `contains` [EXTRACTED]
+- [[AgentShroud Security Scripts Reference]] - `contains` [EXTRACTED]
+- [[killswitch.sh doesn't confirm]] - `contains` [EXTRACTED]
+- [[scan.sh reports missing OpenSCAP]] - `contains` [EXTRACTED]
+- [[verify-security.sh fails]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Slack_docs
+#graphify/document #graphify/EXTRACTED #community/Community_343

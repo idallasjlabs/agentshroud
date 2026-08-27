@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "code"
-community: "Multi Turn Tracker (security)"
+community: "Community 54"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Multi_Turn_Tracker_security
+  - community/Community_54
 ---
 
 # DisclosureEvent
@@ -16,4 +16,4 @@ tags:
 - [[A single disclosure event in a session.]] - `rationale_for` [EXTRACTED]
 - [[multi_turn_tracker.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Multi_Turn_Tracker_security
+#graphify/code #graphify/EXTRACTED #community/Community_54

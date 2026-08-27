@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_injection.py"
 type: "rationale"
-community: "Tool Chain & CVE Triage"
+community: "Community 16"
 location: "L224"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Tool_Chain__CVE_Triage
+  - community/Community_16
 ---
 
 # Detect unicode-based obfuscation techniques.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._detect_unicode_obfuscation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Tool_Chain__CVE_Triage
+#graphify/rationale #graphify/EXTRACTED #community/Community_16

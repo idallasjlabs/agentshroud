@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-aws/SKILL.md"
 type: "document"
-community: "Skill (i-aws)"
+community: "Community 1290"
 location: "L264"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-aws
+  - community/Community_1290
 ---
 
 # Script Templates
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Deliverables]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-aws
+#graphify/document #graphify/EXTRACTED #community/Community_1290

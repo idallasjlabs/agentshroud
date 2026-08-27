@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "concept"
-community: "Agentic Os (architecture)"
+community: "Community 1011"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Agentic_Os_architecture
+  - community/Community_1011
 ---
 
 # "Get Shit Done" (GSD) Governance Cadence
@@ -14,4 +14,4 @@ tags:
 - [[CICD Quality Gates (14 jobs, 6 workflows)]] - `conceptually_related_to` [EXTRACTED]
 - [[Git Worktrees (..agentshroud-worktrees)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/Agentic_Os_architecture
+#graphify/concept #graphify/EXTRACTED #community/Community_1011

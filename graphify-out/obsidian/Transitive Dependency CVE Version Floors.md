@@ -1,13 +1,13 @@
 ---
 source_file: "gateway/requirements.txt"
 type: "rationale"
-community: "Requirements (gateway)"
+community: "Community 1639"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Requirements_gateway
+  - community/Community_1639
 ---
 
 # Transitive Dependency CVE Version Floors
 
-#graphify/rationale #graphify/EXTRACTED #community/Requirements_gateway
+#graphify/rationale #graphify/EXTRACTED #community/Community_1639

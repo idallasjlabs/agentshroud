@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/deployment-diagram.md"
 type: "document"
-community: "Deployment Diagram (architecture)"
+community: "Community 238"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Deployment_Diagram_architecture
+  - community/Community_238
 ---
 
 # AgentShroud Deployment Architecture
@@ -21,4 +21,4 @@ tags:
 - [[Zero-Configuration Deployment]] - `contains` [EXTRACTED]
 - [[deployment-diagram]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Deployment_Diagram_architecture
+#graphify/document #graphify/EXTRACTED #community/Community_238

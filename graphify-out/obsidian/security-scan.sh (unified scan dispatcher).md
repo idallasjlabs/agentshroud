@@ -1,11 +1,11 @@
 ---
 source_file: "docker/scripts/security-scan.sh"
 type: "code"
-community: "Tool Chain & CVE Triage"
+community: "Community 505"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Tool_Chain__CVE_Triage
+  - community/Community_505
 ---
 
 # security-scan.sh (unified scan dispatcher)
@@ -18,4 +18,4 @@ tags:
 - [[security-report.sh]] - `shares_data_with` [EXTRACTED]
 - [[security-scheduler.sh]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Tool_Chain__CVE_Triage
+#graphify/code #graphify/INFERRED #community/Community_505

@@ -1,17 +1,18 @@
 ---
 source_file: ".agents/skills/i-production/README.md"
 type: "document"
-community: "Readme (i-pm)"
+community: "Community 146"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-pm
+  - community/Community_146
 ---
 
 # Usage
 
 ## Connections
+- [[Incident Response (INCIDENT)]] - `contains` [EXTRACTED]
 - [[incident-response]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-pm
+#graphify/document #graphify/EXTRACTED #community/Community_146

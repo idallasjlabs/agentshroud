@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/audit_archive.py"
 type: "rationale"
-community: "Audit Archive"
+community: "Community 191"
 location: "L53"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Audit_Archive
+  - community/Community_191
 ---
 
 # Move audit_events older than cutoff_days into archive_path, then delete + VACUUM
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[archive_old_events()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Audit_Archive
+#graphify/rationale #graphify/EXTRACTED #community/Community_191

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/generate_branding_assets.py"
 type: "code"
-community: "Generate Branding Assets (scripts)"
+community: "Community 414"
 location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Generate_Branding_Assets_scripts
+  - community/Community_414
 ---
 
 # get_font()
@@ -19,4 +19,4 @@ tags:
 - [[generate_feature_icons()]] - `calls` [EXTRACTED]
 - [[generate_presentation()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Generate_Branding_Assets_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_414

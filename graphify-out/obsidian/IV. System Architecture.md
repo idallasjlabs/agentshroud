@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "document"
-community: "Agentshroud Ieee Paper (papers)"
+community: "Community 274"
 location: "L66"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Agentshroud_Ieee_Paper_papers
+  - community/Community_274
 ---
 
 # IV. System Architecture
@@ -18,4 +18,4 @@ tags:
 - [[IV-C. Middleware Manager]] - `contains` [EXTRACTED]
 - [[IV-D. MCP Proxy Layer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Agentshroud_Ieee_Paper_papers
+#graphify/document #graphify/EXTRACTED #community/Community_274

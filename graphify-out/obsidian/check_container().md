@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/workspace.sh"
 type: "code"
-community: "Workspace (scripts)"
+community: "Community 732"
 location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Workspace_scripts
+  - community/Community_732
 ---
 
 # check_container()
@@ -22,4 +22,4 @@ tags:
 - [[cmd_tree()]] - `calls` [EXTRACTED]
 - [[workspace.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Workspace_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_732

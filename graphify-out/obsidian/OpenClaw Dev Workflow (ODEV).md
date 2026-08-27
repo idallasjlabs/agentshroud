@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-odev/SKILL.md"
 type: "document"
-community: "Skill (coding-agent)"
+community: "Community 292"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_coding-agent
+  - community/Community_292
 ---
 
 # OpenClaw Dev Workflow (ODEV)
@@ -15,7 +15,6 @@ tags:
 - [[Gemini CLI]] - `references` [EXTRACTED]
 - [[LM Studio local model (Qwen3-14B)]] - `references` [EXTRACTED]
 - [[graphify Skill]] - `references` [EXTRACTED]
-- [[jira_dev_ticket.py_2]] - `calls` [EXTRACTED]
 - [[omlx DeepSeek-R1-Qwen3-8B (local model)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_coding-agent
+#graphify/document #graphify/EXTRACTED #community/Community_292

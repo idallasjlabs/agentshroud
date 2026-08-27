@@ -1,17 +1,17 @@
 ---
 source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "Readme (securebrowser)"
+community: "Community 150"
 location: "L193"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_securebrowser
+  - community/Community_150
 ---
 
 # Full Configuration Example
 
 ## Connections
-- [[Configuration_19]] - `contains` [EXTRACTED]
+- [[Configuration_20]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_securebrowser
+#graphify/document #graphify/EXTRACTED #community/Community_150

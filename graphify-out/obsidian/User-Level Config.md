@@ -1,17 +1,17 @@
 ---
 source_file: ".github/COPILOT_CLI_SETUP.md"
 type: "document"
-community: "Copilot Cli Setup (.github)"
+community: "Community 234"
 location: "L54"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Copilot_Cli_Setup_github
+  - community/Community_234
 ---
 
 # User-Level Config
 
 ## Connections
-- [[Configuration Files]] - `contains` [EXTRACTED]
+- [[Configuration Files_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Copilot_Cli_Setup_github
+#graphify/document #graphify/EXTRACTED #community/Community_234

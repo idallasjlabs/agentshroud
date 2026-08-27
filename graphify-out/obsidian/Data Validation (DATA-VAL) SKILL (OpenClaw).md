@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-data/SKILL.md"
 type: "document"
-community: "Readme (i-data)"
+community: "Community 1314"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-data
+  - community/Community_1314
 ---
 
 # Data Validation (DATA-VAL) SKILL (OpenClaw)
@@ -14,4 +14,4 @@ tags:
 - [[8D Root Cause Analysis SKILL (OpenClaw)]] - `conceptually_related_to` [INFERRED]
 - [[Data Validation (DATA-VAL) README (OpenClaw)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-data
+#graphify/document #graphify/EXTRACTED #community/Community_1314

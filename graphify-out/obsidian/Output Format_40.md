@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/agentshroud-blueteam/SKILL.md"
 type: "document"
-community: "Skill (agentshroud-blueteam)"
+community: "Community 599"
 location: "L129"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_agentshroud-blueteam
+  - community/Community_599
 ---
 
 # Output Format
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Blue Team Security Auditor_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_agentshroud-blueteam
+#graphify/document #graphify/EXTRACTED #community/Community_599

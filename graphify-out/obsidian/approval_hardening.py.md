@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/approval_hardening.py"
 type: "code"
-community: "RBAC & Ingest Middleware"
+community: "Community 213"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBAC__Ingest_Middleware
+  - community/Community_213
 ---
 
 # approval_hardening.py
@@ -19,4 +19,4 @@ tags:
 - [[DeniedRequest]] - `contains` [EXTRACTED]
 - [[SKILL_190]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBAC__Ingest_Middleware
+#graphify/code #graphify/EXTRACTED #community/Community_213

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-cr/SKILL.md"
 type: "document"
-community: "Skill (i-cr)"
+community: "Community 1018"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-cr
+  - community/Community_1018
 ---
 
 # Review Principles
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Code Review (CR)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-cr
+#graphify/document #graphify/EXTRACTED #community/Community_1018

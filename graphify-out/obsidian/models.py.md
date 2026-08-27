@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "Aiosqlite (05 - Dependencies)"
+community: "Community 9"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Aiosqlite_05_-_Dependencies
+  - community/Community_9
 ---
 
 # models.py
@@ -41,4 +41,4 @@ tags:
 - [[store.py]] - `imports_from` [EXTRACTED]
 - [[test_router_openai_translation.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Aiosqlite_05_-_Dependencies
+#graphify/code #graphify/EXTRACTED #community/Community_9

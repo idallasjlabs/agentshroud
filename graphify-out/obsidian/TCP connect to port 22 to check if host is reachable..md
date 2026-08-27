@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/dashboard_endpoints.py"
 type: "rationale"
-community: "Dashboard Endpoints (web)"
+community: "Community 105"
 location: "L98"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Dashboard_Endpoints_web
+  - community/Community_105
 ---
 
 # TCP connect to port 22 to check if host is reachable.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_check_host()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Dashboard_Endpoints_web
+#graphify/rationale #graphify/EXTRACTED #community/Community_105

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/agent_cve_registry.py"
 type: "code"
-community: "Agent Cve Registry"
-location: "L15489"
+community: "Community 88"
+location: "L17126"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Agent_Cve_Registry
+  - community/Community_88
 ---
 
 # get_agent_cve_summary()
@@ -40,4 +40,4 @@ tags:
 - [[test_openclaw_summary_keys()]] - `calls` [EXTRACTED]
 - [[test_unknown_bot_id_raises_key_error()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Agent_Cve_Registry
+#graphify/code #graphify/EXTRACTED #community/Community_88

@@ -1,18 +1,18 @@
 ---
 source_file: "docker/scripts/README.md"
 type: "document"
-community: "Readme (scripts)"
+community: "Community 304"
 location: "L249"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_scripts
+  - community/Community_304
 ---
 
 # "Missing auth" for API providers
 
 ## Connections
-- [[Troubleshooting_15]] - `contains` [EXTRACTED]
-- [[Troubleshooting_31]] - `contains` [EXTRACTED]
+- [[Troubleshooting_16]] - `contains` [EXTRACTED]
+- [[Troubleshooting_32]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_scripts
+#graphify/document #graphify/EXTRACTED #community/Community_304

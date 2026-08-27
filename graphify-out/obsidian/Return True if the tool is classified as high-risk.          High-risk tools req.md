@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_rbac.py"
 type: "rationale"
-community: "Group Rbac"
+community: "Community 75"
 location: "L127"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Group_Rbac
+  - community/Community_75
 ---
 
 # Return True if the tool is classified as high-risk.          High-risk tools req
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.is_high_risk_tool()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Group_Rbac
+#graphify/rationale #graphify/EXTRACTED #community/Community_75

@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[audio.c (ES7210 mic  ES8311 speaker driver)]] - code - firmware/voice-terminal/main/audio.c
-- [[audio.h (audio public API)]] - code - firmware/voice-terminal/main/audio.h
+- [[i-security-reviewer_1]] - document - docker/config/openclaw/agents/i-security-reviewer.md
+- [[security-reviewer_1]] - document - docker/config/openclaw/agents/i-security-reviewer.md
 
 ## Live Query (requires Dataview plugin)
 

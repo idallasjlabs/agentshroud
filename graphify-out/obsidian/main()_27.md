@@ -1,18 +1,28 @@
 ---
-source_file: "skills/openclaw/nano-banana-pro/scripts/generate_image.py"
+source_file: "skills/openclaw/model-usage/scripts/model_usage.py"
 type: "code"
-community: "Gen (scripts)"
-location: "L32"
+community: "Community 463"
+location: "L235"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gen_scripts
+  - community/Community_463
 ---
 
 # main()
 
 ## Connections
-- [[generate_image.py]] - `contains` [EXTRACTED]
-- [[get_api_key()]] - `calls` [EXTRACTED]
+- [[aggregate_costs()]] - `calls` [EXTRACTED]
+- [[build_json_all()]] - `calls` [EXTRACTED]
+- [[build_json_current()]] - `calls` [EXTRACTED]
+- [[eprint()]] - `calls` [EXTRACTED]
+- [[filter_by_days()]] - `calls` [EXTRACTED]
+- [[latest_day_cost()]] - `calls` [EXTRACTED]
+- [[load_payload()]] - `calls` [EXTRACTED]
+- [[model_usage.py]] - `contains` [EXTRACTED]
+- [[parse_daily_entries()]] - `calls` [EXTRACTED]
+- [[pick_current_model()]] - `calls` [EXTRACTED]
+- [[render_text_all()]] - `calls` [EXTRACTED]
+- [[render_text_current()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gen_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_463

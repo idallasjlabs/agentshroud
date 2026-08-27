@@ -1,17 +1,18 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/GATEWAY_URL.md"
+source_file: "docs/vault/02 - Modules/Security Modules/prompt_guard.py.md"
 type: "document"
-community: "Anthropic Base Url (04 - Environment Variables)"
-location: "L34"
+community: "Community 569"
+location: "L89"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Anthropic_Base_Url_04_-_Environment_Variables
+  - community/Community_569
 ---
 
 # Configuration
 
 ## Connections
-- [[GATEWAY_URL_1]] - `contains` [EXTRACTED]
+- [[PromptGuard_2]] - `contains` [EXTRACTED]
+- [[prompt_guard.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Anthropic_Base_Url_04_-_Environment_Variables
+#graphify/document #graphify/EXTRACTED #community/Community_569

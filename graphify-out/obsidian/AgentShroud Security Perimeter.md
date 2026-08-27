@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/00 - START HERE/System Overview.md"
 type: "concept"
-community: "System overview (00 - START HERE)"
+community: "Community 271"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/System_overview_00_-_START_HERE
+  - community/Community_271
 ---
 
 # AgentShroud Security Perimeter
@@ -20,4 +20,4 @@ tags:
 - [[PII redacted before forwarding]] - `rationale_for` [EXTRACTED]
 - [[System Overview]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/System_overview_00_-_START_HERE
+#graphify/concept #graphify/EXTRACTED #community/Community_271

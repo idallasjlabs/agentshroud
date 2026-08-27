@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "Browse (scripts)"
+community: "Community 252"
 location: "class SecurityConfig"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Browse_scripts
+  - community/Community_252
 ---
 
 # SecurityConfig dataclass
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SecureBrowser class]] - `shares_data_with` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Browse_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_252

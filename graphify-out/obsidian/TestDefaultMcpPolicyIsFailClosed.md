@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy_default_failclosed.py"
 type: "code"
-community: "Mcp Policy"
+community: "Community 34"
 location: "L78"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Mcp_Policy
+  - community/Community_34
 ---
 
 # TestDefaultMcpPolicyIsFailClosed
@@ -23,4 +23,4 @@ tags:
 - [[MCPPolicyEngine]] - `uses` [INFERRED]
 - [[test_mcp_policy_default_failclosed.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Mcp_Policy
+#graphify/code #graphify/EXTRACTED #community/Community_34

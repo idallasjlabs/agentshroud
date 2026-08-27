@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-02-c4-container.svg"
 type: "image"
-community: "Diagram 01 C4 Context (images)"
+community: "Community 407"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/Diagram_01_C4_Context_images
+  - community/Community_407
 ---
 
 # Approval DB (SQLite/aiosqlite)
@@ -14,4 +14,4 @@ tags:
 - [[ApprovalRequest (data entity)]] - `implements` [INFERRED]
 - [[Gateway Container (Python 3.11FastAPI 8080)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/image #graphify/INFERRED #community/Diagram_01_C4_Context_images
+#graphify/image #graphify/INFERRED #community/Community_407

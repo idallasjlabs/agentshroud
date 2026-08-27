@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "Scanner Integration (security)"
+community: "Community 178"
 location: "L321"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Scanner_Integration_security
+  - community/Community_178
 ---
 
 # _is_fresh()
@@ -21,4 +21,4 @@ tags:
 - [[_score_vulnerability_management()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Scanner_Integration_security
+#graphify/code #graphify/EXTRACTED #community/Community_178

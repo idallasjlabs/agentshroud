@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_lockdown.py"
 type: "code"
-community: "Progressive Lockdown"
+community: "Community 62"
 location: "L97"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Progressive_Lockdown
+  - community/Community_62
 ---
 
 # TestProgressiveLockdownUnit
@@ -28,4 +28,4 @@ tags:
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_progressive_lockdown.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Progressive_Lockdown
+#graphify/code #graphify/EXTRACTED #community/Community_62

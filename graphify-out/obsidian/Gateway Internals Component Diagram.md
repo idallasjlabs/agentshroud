@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/01-architecture.md"
 type: "concept"
-community: "01 Architecture (diagrams)"
+community: "Community 834"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/01_Architecture_diagrams
+  - community/Community_834
 ---
 
 # Gateway Internals Component Diagram
@@ -15,4 +15,4 @@ tags:
 - [[C4 Level 1 — Container Diagram]] - `references` [INFERRED]
 - [[Rendered Gateway Components Diagram (PNG)]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/01_Architecture_diagrams
+#graphify/concept #graphify/EXTRACTED #community/Community_834

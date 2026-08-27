@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "Skill (i-mcpm-aws-profile)"
+community: "Community 189"
 location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-mcpm-aws-profile
+  - community/Community_189
 ---
 
 # AWS Profile Basics
@@ -16,4 +16,4 @@ tags:
 - [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_2]] - `contains` [EXTRACTED]
 - [[What is an AWS Profile_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-mcpm-aws-profile
+#graphify/document #graphify/EXTRACTED #community/Community_189

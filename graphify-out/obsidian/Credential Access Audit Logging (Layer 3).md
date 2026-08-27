@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md"
 type: "rationale"
-community: "Credential Protection Implemented (security)"
+community: "Community 254"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Credential_Protection_Implemented_security
+  - community/Community_254
 ---
 
 # Credential Access Audit Logging (Layer 3)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[CREDENTIAL-PROTECTION-IMPLEMENTED]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Credential_Protection_Implemented_security
+#graphify/rationale #graphify/EXTRACTED #community/Community_254

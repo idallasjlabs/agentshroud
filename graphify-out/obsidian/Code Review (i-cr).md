@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-cr/SKILL.md"
 type: "document"
-community: "Readme (i-pm)"
+community: "Community 592"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-pm
+  - community/Community_592
 ---
 
 # Code Review (i-cr)
@@ -17,4 +17,4 @@ tags:
 - [[Related Skills_7]] - `contains` [EXTRACTED]
 - [[Usage_9]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-pm
+#graphify/document #graphify/EXTRACTED #community/Community_592

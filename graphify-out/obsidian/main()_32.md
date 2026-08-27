@@ -1,19 +1,21 @@
 ---
-source_file: "src/interfaces/text_control_center.py"
+source_file: "src/interfaces/chat_console.py"
 type: "code"
-community: "Text Control Center (interfaces)"
-location: "L427"
+community: "Community 760"
+location: "L120"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Text_Control_Center_interfaces
+  - community/Community_760
 ---
 
 # main()
 
 ## Connections
-- [[.run()_6]] - `calls` [EXTRACTED]
-- [[ControlCenter]] - `calls` [EXTRACTED]
-- [[text_control_center.py]] - `contains` [EXTRACTED]
+- [[chat_console.py]] - `contains` [EXTRACTED]
+- [[check_status()]] - `calls` [EXTRACTED]
+- [[print_banner()]] - `calls` [EXTRACTED]
+- [[print_help()]] - `calls` [EXTRACTED]
+- [[send_message()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Text_Control_Center_interfaces
+#graphify/code #graphify/EXTRACTED #community/Community_760

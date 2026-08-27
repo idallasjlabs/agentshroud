@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_url_analyzer.py"
 type: "code"
-community: "Url Analyzer"
+community: "Community 1129"
 location: "L175"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Url_Analyzer
+  - community/Community_1129
 ---
 
 # TestDataExfiltration
@@ -24,4 +24,4 @@ tags:
 - [[URLVerdict]] - `uses` [INFERRED]
 - [[test_url_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Url_Analyzer
+#graphify/code #graphify/EXTRACTED #community/Community_1129

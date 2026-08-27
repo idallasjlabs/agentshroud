@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-sav/SKILL.md"
 type: "document"
-community: "Skill (i-sav)"
+community: "Community 239"
 location: "L103"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-sav
+  - community/Community_239
 ---
 
 # REQUIRED NOTES — PRODUCE EVERY ONE OF THESE
@@ -35,4 +35,4 @@ tags:
 - [[`09 - DiagramsFull System Flowchart.md`]] - `contains` [EXTRACTED]
 - [[`09 - DiagramsStartup Flow Diagram.md`]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-sav
+#graphify/document #graphify/EXTRACTED #community/Community_239

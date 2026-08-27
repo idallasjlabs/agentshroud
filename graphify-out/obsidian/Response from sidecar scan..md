@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/sidecar.py"
 type: "rationale"
-community: "E2e Proxy"
+community: "Community 74"
 location: "L44"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/E2e_Proxy
+  - community/Community_74
 ---
 
 # Response from sidecar scan.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ScanResponse]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/E2e_Proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_74

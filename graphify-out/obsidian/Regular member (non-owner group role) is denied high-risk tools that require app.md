@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "rationale"
-community: "Tool ACL & Group RBAC"
+community: "Community 75"
 location: "L274"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Tool_ACL__Group_RBAC
+  - community/Community_75
 ---
 
 # Regular member (non-owner group role) is denied high-risk tools that require app
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_member_denied_high_risk_tools_in_group()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Tool_ACL__Group_RBAC
+#graphify/rationale #graphify/EXTRACTED #community/Community_75

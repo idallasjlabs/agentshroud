@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-odev/SKILL.md"
 type: "document"
-community: "Skill (i-odev)"
+community: "Community 297"
 location: "L122"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-odev
+  - community/Community_297
 ---
 
 # Mode A — Single task
@@ -28,4 +28,4 @@ tags:
 - [[Step 9 — Push and open the PR_3]] - `contains` [EXTRACTED]
 - [[Step 9b — Update the Jira ticket with the PR link_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-odev
+#graphify/document #graphify/EXTRACTED #community/Community_297

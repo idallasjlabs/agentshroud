@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/shared_memory.py"
 type: "rationale"
-community: "Shared Memory Write Acl"
+community: "Community 61"
 location: "L307"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Shared_Memory_Write_Acl
+  - community/Community_61
 ---
 
 # Return memory from groups whose focus_topics match the query text.          For
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_topic_scoped_memory()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Shared_Memory_Write_Acl
+#graphify/rationale #graphify/EXTRACTED #community/Community_61

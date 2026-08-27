@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/ota.c"
 type: "code"
-community: "Ota (main)"
+community: "Community 711"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ota_main
+  - community/Community_711
 ---
 
 # ota.c
@@ -17,6 +17,7 @@ tags:
 - [[_nvs_get_etag()]] - `contains` [EXTRACTED]
 - [[_nvs_set_etag()]] - `contains` [EXTRACTED]
 - [[_ws_to_https_base()]] - `contains` [EXTRACTED]
+- [[ota.c]] - `imports` [EXTRACTED]
 - [[ota_check()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ota_main
+#graphify/code #graphify/EXTRACTED #community/Community_711

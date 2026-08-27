@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/legal/TRADEMARK.md"
 type: "document"
-community: "Trademark (legal)"
+community: "Community 1109"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Trademark_legal
+  - community/Community_1109
 ---
 
 # Trademark Notice
@@ -18,4 +18,4 @@ tags:
 - [[Trademark Details]] - `contains` [EXTRACTED]
 - [[Usage Guidelines_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Trademark_legal
+#graphify/document #graphify/EXTRACTED #community/Community_1109

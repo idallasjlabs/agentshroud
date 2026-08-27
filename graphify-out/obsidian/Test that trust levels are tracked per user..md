@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "Middleware & Session Isolation"
+community: "Community 56"
 location: "L209"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Middleware__Session_Isolation
+  - community/Community_56
 ---
 
 # Test that trust levels are tracked per user.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_trust_level_per_user()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Middleware__Session_Isolation
+#graphify/rationale #graphify/EXTRACTED #community/Community_56

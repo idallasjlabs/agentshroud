@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sync-version.sh"
 type: "code"
-community: "Sync Version (scripts)"
+community: "Community 1405"
 location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Sync_Version_scripts
+  - community/Community_1405
 ---
 
 # check_or_fix()
@@ -15,4 +15,4 @@ tags:
 - [[sync-version.sh]] - `defines` [EXTRACTED]
 - [[sync-version.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Sync_Version_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_1405

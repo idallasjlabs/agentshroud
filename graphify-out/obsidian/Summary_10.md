@@ -1,18 +1,17 @@
 ---
-source_file: "docs/planning/reviews/phase-review-2026-03-05-r3.md"
+source_file: "CHANGELOG.md"
 type: "document"
-community: "Phase Review 2026 03 (reviews)"
-location: "L11"
+community: "Community 984"
+location: "L455"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_Review_2026_03_reviews
+  - community/Community_984
 ---
 
 # Summary
 
 ## Connections
-- [[AgentShroud v0.8.0 Peer Review Round 3 (FINAL)]] - `contains` [EXTRACTED]
-- [[Test Results]] - `contains` [EXTRACTED]
+- [[1.2.0 — featesp32-s3-hermes-voice (2026-06-24)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_Review_2026_03_reviews
+#graphify/document #graphify/EXTRACTED #community/Community_984

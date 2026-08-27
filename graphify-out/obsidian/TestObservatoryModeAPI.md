@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "Killswitch Monitor & Observatory Mode"
+community: "Community 924"
 location: "L509"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Killswitch_Monitor__Observatory_Mode
+  - community/Community_924
 ---
 
 # TestObservatoryModeAPI
@@ -21,4 +21,4 @@ tags:
 - [[SecurityPipeline]] - `uses` [INFERRED]
 - [[test_observatory_mode.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Killswitch_Monitor__Observatory_Mode
+#graphify/code #graphify/INFERRED #community/Community_924

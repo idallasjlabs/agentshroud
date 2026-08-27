@@ -1,13 +1,13 @@
 ---
 source_file: "voice_gateway/__init__.py"
 type: "code"
-community: "Init (voice_gateway)"
+community: "Community 1828"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Init_voice_gateway
+  - community/Community_1828
 ---
 
 # Voice Gateway Python Package Init
 
-#graphify/code #graphify/EXTRACTED #community/Init_voice_gateway
+#graphify/code #graphify/EXTRACTED #community/Community_1828

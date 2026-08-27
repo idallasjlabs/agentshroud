@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/dns_filter.py"
 type: "code"
-community: "Dns Filter"
+community: "Community 6"
 location: "L40"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Dns_Filter
+  - community/Community_6
 ---
 
 # DNSFilterConfig
@@ -62,4 +62,4 @@ tags:
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 - [[web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Dns_Filter
+#graphify/code #graphify/INFERRED #community/Community_6

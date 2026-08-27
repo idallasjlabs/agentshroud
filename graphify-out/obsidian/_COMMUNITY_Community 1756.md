@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[esp_err.h stub (playback state test)]] - code - firmware/voice-terminal/test/test_playback_state/stubs/esp_err.h
+- [[SecureBrowser.get_audit_log()]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
 
 ## Live Query (requires Dataview plugin)
 

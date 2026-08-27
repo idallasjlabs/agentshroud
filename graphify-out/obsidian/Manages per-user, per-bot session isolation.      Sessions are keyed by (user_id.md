@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "rationale"
-community: "Middleware & Session Isolation"
+community: "Community 174"
 location: "L122"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Middleware__Session_Isolation
+  - community/Community_174
 ---
 
 # Manages per-user, per-bot session isolation.      Sessions are keyed by (user_id
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[UserSessionManager]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Middleware__Session_Isolation
+#graphify/rationale #graphify/EXTRACTED #community/Community_174

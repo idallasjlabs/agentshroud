@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/All Environment Variables.md"
+source_file: "CHANGELOG.md"
 type: "document"
-community: "Deployment (runbooks)"
-location: "L11"
+community: "Community 646"
+location: "L1036"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Deployment_runbooks
+  - community/Community_646
 ---
 
 # Summary
 
 ## Connections
-- [[4. Environment Variables]] - `contains` [EXTRACTED]
+- [[0.2.0 - 2026-02-17]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Deployment_runbooks
+#graphify/document #graphify/EXTRACTED #community/Community_646

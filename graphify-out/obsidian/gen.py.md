@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/openai-image-gen/scripts/gen.py"
 type: "code"
-community: "Gen (scripts)"
+community: "Community 359"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gen_scripts
+  - community/Community_359
 ---
 
 # gen.py
@@ -15,10 +15,10 @@ tags:
 - [[SKILL_220]] - `references` [EXTRACTED]
 - [[default_out_dir()]] - `contains` [EXTRACTED]
 - [[get_model_defaults()]] - `contains` [EXTRACTED]
-- [[main()_28]] - `contains` [EXTRACTED]
+- [[main()_29]] - `contains` [EXTRACTED]
 - [[pick_prompts()]] - `contains` [EXTRACTED]
 - [[request_images()]] - `contains` [EXTRACTED]
 - [[slugify()]] - `contains` [EXTRACTED]
 - [[write_gallery()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gen_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_359

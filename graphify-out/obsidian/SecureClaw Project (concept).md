@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-pm/SKILL.md"
 type: "concept"
-community: "Skill (i-pm)"
+community: "Community 1759"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Skill_i-pm
+  - community/Community_1759
 ---
 
 # SecureClaw Project (concept)
 
-#graphify/concept #graphify/EXTRACTED #community/Skill_i-pm
+#graphify/concept #graphify/EXTRACTED #community/Community_1759

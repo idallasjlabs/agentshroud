@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "Middleware & Session Isolation"
+community: "Community 56"
 location: "L351"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Middleware__Session_Isolation
+  - community/Community_56
 ---
 
 # Create a temporary workspace.
@@ -15,4 +15,4 @@ tags:
 - [[.temp_workspace()_2]] - `rationale_for` [EXTRACTED]
 - [[.temp_workspace()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Middleware__Session_Isolation
+#graphify/rationale #graphify/EXTRACTED #community/Community_56

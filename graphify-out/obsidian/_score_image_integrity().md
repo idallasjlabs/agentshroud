@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "Scanner Integration (security)"
+community: "Community 123"
 location: "L927"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Scanner_Integration_security
+  - community/Community_123
 ---
 
 # _score_image_integrity()
@@ -23,4 +23,4 @@ tags:
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 - [[test_scanner_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Scanner_Integration_security
+#graphify/code #graphify/EXTRACTED #community/Community_123

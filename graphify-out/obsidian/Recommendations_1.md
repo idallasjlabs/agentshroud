@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/OPENCLAW_SETUP.md"
+source_file: "docs/security/security-supply-chain.md"
 type: "document"
-community: "Openclaw Setup (setup)"
-location: "L435"
+community: "Community 542"
+location: "L116"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Openclaw_Setup_setup
+  - community/Community_542
 ---
 
 # Recommendations
 
 ## Connections
-- [[Security Notes_2]] - `contains` [EXTRACTED]
+- [[Security Supply Chain Analysis]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Openclaw_Setup_setup
+#graphify/document #graphify/EXTRACTED #community/Community_542

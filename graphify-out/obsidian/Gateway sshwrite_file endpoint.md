@@ -1,11 +1,11 @@
 ---
 source_file: "docker/scripts/agentshroud-ssh-write-file.sh"
 type: "concept"
-community: "Developer (workspace)"
+community: "Community 449"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Developer_workspace
+  - community/Community_449
 ---
 
 # Gateway /ssh/write_file endpoint
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[agentshroud-ssh-write-file.sh]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Developer_workspace
+#graphify/concept #graphify/EXTRACTED #community/Community_449

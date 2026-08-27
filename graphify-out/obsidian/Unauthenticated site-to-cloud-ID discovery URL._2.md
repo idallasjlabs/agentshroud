@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/workspace/jira_dev_ticket.py"
 type: "rationale"
-community: "Jira Dev Ticket (workspace)"
+community: "Community 161"
 location: "L130"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Jira_Dev_Ticket_workspace
+  - community/Community_161
 ---
 
 # Unauthenticated site-to-cloud-ID discovery URL.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[build_tenant_info_url()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Jira_Dev_Ticket_workspace
+#graphify/rationale #graphify/EXTRACTED #community/Community_161

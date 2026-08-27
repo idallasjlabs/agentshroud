@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/delegation.py"
 type: "rationale"
-community: "Delegation"
+community: "Community 77"
 location: "L55"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Delegation
+  - community/Community_77
 ---
 
 # Raised when a delegation operation is invalid.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[DelegationError]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Delegation
+#graphify/rationale #graphify/EXTRACTED #community/Community_77

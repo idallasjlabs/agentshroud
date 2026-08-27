@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-odev/SKILL.md"
 type: "document"
-community: "Skill (i-odev)"
+community: "Community 290"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-odev
+  - community/Community_290
 ---
 
 # Invocation
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill OpenClaw Dev Workflow (ODEV)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-odev
+#graphify/document #graphify/EXTRACTED #community/Community_290

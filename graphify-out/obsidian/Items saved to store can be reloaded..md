@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_stress.py"
 type: "rationale"
-community: "Queue (approval_queue)"
+community: "Community 24"
 location: "L138"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Queue_approval_queue
+  - community/Community_24
 ---
 
 # Items saved to store can be reloaded.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_store_save_and_load()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Queue_approval_queue
+#graphify/rationale #graphify/EXTRACTED #community/Community_24

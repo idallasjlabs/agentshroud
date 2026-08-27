@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "Skill (i-mcpm-auth-reset)"
+community: "Community 895"
 location: "L127"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-mcpm-auth-reset
+  - community/Community_895
 ---
 
 # Option B: Named Profile
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[3. AWS API MCP Authentication Reset_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-mcpm-auth-reset
+#graphify/document #graphify/EXTRACTED #community/Community_895

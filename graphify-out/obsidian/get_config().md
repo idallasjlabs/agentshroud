@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "Soc Bots"
+community: "Community 39"
 location: "L1928"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Soc_Bots
+  - community/Community_39
 ---
 
 # get_config()
@@ -17,9 +17,8 @@ tags:
 - [[.test_no_bot_id_returns_global_config()]] - `calls` [EXTRACTED]
 - [[.test_unknown_bot_id_returns_error()]] - `calls` [EXTRACTED]
 - [[SCLCaller_1]] - `references` [EXTRACTED]
-- [[SCLCaller_3]] - `references` [EXTRACTED]
 - [[_app_state()]] - `calls` [EXTRACTED]
 - [[router.py_1]] - `contains` [EXTRACTED]
 - [[test_soc_bots.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Soc_Bots
+#graphify/code #graphify/EXTRACTED #community/Community_39

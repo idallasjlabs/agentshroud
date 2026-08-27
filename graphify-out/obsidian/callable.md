@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "code"
-community: "Multi Turn Tracker (security)"
+community: "Community 6"
 location: "L445"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Multi_Turn_Tracker_security
+  - community/Community_6
 ---
 
 # callable
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.add_alert_callback()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Multi_Turn_Tracker_security
+#graphify/code #graphify/EXTRACTED #community/Community_6

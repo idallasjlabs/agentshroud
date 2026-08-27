@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-daedalus/README.md"
 type: "document"
-community: "Readme (i-daedalus)"
+community: "Community 1151"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-daedalus
+  - community/Community_1151
 ---
 
 # Daedalus — Concept Illustrator
@@ -17,4 +17,4 @@ tags:
 - [[Related Skills_8]] - `contains` [EXTRACTED]
 - [[Usage_10]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-daedalus
+#graphify/document #graphify/EXTRACTED #community/Community_1151

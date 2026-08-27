@@ -1,12 +1,12 @@
 ---
 source_file: "branding/INDEX.md"
 type: "document"
-community: "Index (branding)"
+community: "Community 554"
 location: "L94"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Index_branding
+  - community/Community_554
 ---
 
 # Icon Sets
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[📊 Asset Summary]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Index_branding
+#graphify/document #graphify/EXTRACTED #community/Community_554

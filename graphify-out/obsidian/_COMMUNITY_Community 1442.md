@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[Gemini CLI]] - document - skills/openclaw/gemini/SKILL.md
-- [[SKILL_142]] - document - skills/openclaw/gemini/SKILL.md
+- [[SKILL_76]] - document - docker/config/hermes/skills/i-chaos-engineering/SKILL.md
+- [[Skill chaos-engineering_1]] - document - docker/config/hermes/skills/i-chaos-engineering/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

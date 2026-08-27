@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/06 - Containers & Services/agentshroud-bot.md"
+source_file: "CHANGELOG.md"
 type: "document"
-community: "Agentshroud Bot (06 - Containers & Services)"
-location: "L11"
+community: "Community 629"
+location: "L1063"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Agentshroud_Bot_06_-_Containers__Services
+  - community/Community_629
 ---
 
 # Summary
 
 ## Connections
-- [[agentshroud-bot_1]] - `contains` [EXTRACTED]
+- [[0.1.0 - 2026-02-16]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Agentshroud_Bot_06_-_Containers__Services
+#graphify/document #graphify/EXTRACTED #community/Community_629

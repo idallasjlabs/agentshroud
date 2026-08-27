@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "Config Validation & Router"
+community: "Community 754"
 location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Config_Validation__Router
+  - community/Community_754
 ---
 
 # ForwardRequest
@@ -70,4 +70,4 @@ tags:
 - [[test_shortcut_source_accepted()]] - `calls` [EXTRACTED]
 - [[test_valid_sources()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Config_Validation__Router
+#graphify/code #graphify/EXTRACTED #community/Community_754

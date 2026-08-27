@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_bots.py"
 type: "code"
-community: "Soc Bots"
+community: "Community 39"
 location: "L472"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Soc_Bots
+  - community/Community_39
 ---
 
 # TestServicesBotFilter
@@ -19,4 +19,4 @@ tags:
 - [[list_bots()]] - `conceptually_related_to` [INFERRED]
 - [[test_soc_bots.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Soc_Bots
+#graphify/code #graphify/INFERRED #community/Community_39

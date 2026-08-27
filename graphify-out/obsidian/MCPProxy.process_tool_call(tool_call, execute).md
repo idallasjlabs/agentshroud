@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md"
 type: "document"
-community: "Mcp Proxy.py (Proxy Layer)"
+community: "Community 632"
 location: "L39"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mcp_Proxypy_Proxy_Layer
+  - community/Community_632
 ---
 
 # MCPProxy.process_tool_call(tool_call, execute)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Function Details_12]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mcp_Proxypy_Proxy_Layer
+#graphify/document #graphify/EXTRACTED #community/Community_632

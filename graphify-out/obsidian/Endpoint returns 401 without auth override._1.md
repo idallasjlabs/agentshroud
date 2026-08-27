@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_op_proxy.py"
+source_file: "gateway/tests/test_channel_ownership.py"
 type: "rationale"
-community: "Op Proxy"
-location: "L140"
+community: "Community 648"
+location: "L122"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Op_Proxy
+  - community/Community_648
 ---
 
 # Endpoint returns 401 without auth override.
 
 ## Connections
-- [[.test_requires_auth()_4]] - `rationale_for` [EXTRACTED]
+- [[.test_requires_auth()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Op_Proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_648

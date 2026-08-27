@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "Queue (approval_queue)"
+community: "Community 1"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Queue_approval_queue
+  - community/Community_1
 ---
 
 # ApprovalQueue
@@ -64,4 +64,4 @@ tags:
 - [[test_store_persists_submit_and_decision()]] - `calls` [EXTRACTED]
 - [[test_store_restores_items_on_init()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Queue_approval_queue
+#graphify/code #graphify/EXTRACTED #community/Community_1

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "Forwarder (proxy)"
+community: "Community 74"
 location: "L523"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Forwarder_proxy
+  - community/Community_74
 ---
 
 # test_forwarder_error_handling()
@@ -18,4 +18,4 @@ tags:
 - [[Verify forwarder handles errors gracefully.]] - `rationale_for` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Forwarder_proxy
+#graphify/code #graphify/EXTRACTED #community/Community_74

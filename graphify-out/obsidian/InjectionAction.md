@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_injection.py"
 type: "code"
-community: "Tool Chain & CVE Triage"
+community: "Community 22"
 location: "L30"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Tool_Chain__CVE_Triage
+  - community/Community_22
 ---
 
 # InjectionAction
@@ -47,4 +47,4 @@ tags:
 - [[test_ws_e_rt2_inbound_encoding.py]] - `imports` [EXTRACTED]
 - [[tool_result_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Tool_Chain__CVE_Triage
+#graphify/code #graphify/INFERRED #community/Community_22

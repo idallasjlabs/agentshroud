@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-aws/README.md"
 type: "document"
-community: "Readme (i-aws)"
+community: "Community 1217"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-aws
+  - community/Community_1217
 ---
 
 # AWS Cloud Management & FinOps
@@ -17,4 +17,4 @@ tags:
 - [[Related Skills_83]] - `contains` [EXTRACTED]
 - [[Usage_85]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-aws
+#graphify/document #graphify/EXTRACTED #community/Community_1217

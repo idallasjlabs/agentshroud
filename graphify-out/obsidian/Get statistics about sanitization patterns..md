@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/log_sanitizer.py"
 type: "rationale"
-community: "Egress Monitor"
+community: "Community 14"
 location: "L158"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Egress_Monitor
+  - community/Community_14
 ---
 
 # Get statistics about sanitization patterns.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_sanitizer_stats()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Egress_Monitor
+#graphify/rationale #graphify/EXTRACTED #community/Community_14

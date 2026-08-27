@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/progressive_trust_config.py"
 type: "rationale"
-community: "Progressive Trust Integration"
+community: "Community 35"
 location: "L77"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Progressive_Trust_Integration
+  - community/Community_35
 ---
 
 # Threshold for promoting to a trust level.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[PromotionThreshold]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Progressive_Trust_Integration
+#graphify/rationale #graphify/EXTRACTED #community/Community_35

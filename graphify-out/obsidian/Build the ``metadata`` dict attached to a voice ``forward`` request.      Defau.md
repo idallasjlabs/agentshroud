@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "rationale"
-community: "Voice Latency Guard"
+community: "Community 103"
 location: "L114"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Voice_Latency_Guard
+  - community/Community_103
 ---
 
 # Build the ``metadata`` dict attached to a voice ``/forward`` request.      Defau
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_voice_forward_metadata()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Voice_Latency_Guard
+#graphify/rationale #graphify/EXTRACTED #community/Community_103

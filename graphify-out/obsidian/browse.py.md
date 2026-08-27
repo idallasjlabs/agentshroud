@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "Browse (scripts)"
+community: "Community 73"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Browse_scripts
+  - community/Community_73
 ---
 
 # browse.py
@@ -19,4 +19,4 @@ tags:
 - [[SecurityError]] - `contains` [EXTRACTED]
 - [[main()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Browse_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_73

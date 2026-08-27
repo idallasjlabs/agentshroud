@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/workspace/competitive-analysis.md"
 type: "document"
-community: "Competitive Analysis (workspace)"
+community: "Community 841"
 location: "L255"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Competitive_Analysis_workspace
+  - community/Community_841
 ---
 
 # ANTI-HALLUCINATION CHECKLIST
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Competitive Intelligence Report — Standard Prompt (Hermes Agent)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Competitive_Analysis_workspace
+#graphify/document #graphify/EXTRACTED #community/Community_841

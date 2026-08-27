@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "Daily Cve Report"
-location: "L882"
+community: "Community 184"
+location: "L889"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Daily_Cve_Report
+  - community/Community_184
 ---
 
 # TestAlreadyCheckedUpstreamToday
@@ -17,4 +17,4 @@ tags:
 - [[.test_returns_true_when_checked_today()]] - `method` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Daily_Cve_Report
+#graphify/code #graphify/EXTRACTED #community/Community_184

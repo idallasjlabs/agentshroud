@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "Soc Models"
+community: "Community 27"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Soc_Models
+  - community/Community_27
 ---
 
 # models.py
@@ -37,10 +37,9 @@ tags:
 - [[_new_uuid()]] - `contains` [EXTRACTED]
 - [[_now_iso()]] - `contains` [EXTRACTED]
 - [[contributors.py]] - `imports_from` [EXTRACTED]
-- [[datetime_9]] - `imports_from` [EXTRACTED]
 - [[event_adapter.py]] - `imports_from` [EXTRACTED]
 - [[router.py_1]] - `imports_from` [EXTRACTED]
 - [[services.py]] - `imports_from` [EXTRACTED]
 - [[websocket.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Soc_Models
+#graphify/code #graphify/EXTRACTED #community/Community_27

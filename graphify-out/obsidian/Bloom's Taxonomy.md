@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/i-atlas/SKILL.md"
 type: "concept"
-community: "Skill (i-athena)"
+community: "Community 1029"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Skill_i-athena
+  - community/Community_1029
 ---
 
 # Bloom's Taxonomy
 
 ## Connections
-- [[Atlas — Curriculum Architect_6]] - `references` [EXTRACTED]
+- [[Atlas — Curriculum Architect_7]] - `references` [EXTRACTED]
 - [[Atlas — Curriculum Architect (SKILL)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Skill_i-athena
+#graphify/concept #graphify/EXTRACTED #community/Community_1029

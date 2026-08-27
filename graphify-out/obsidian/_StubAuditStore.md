@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: "A2a Proxy"
+community: "Community 107"
 location: "L444"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/A2a_Proxy
+  - community/Community_107
 ---
 
 # _StubAuditStore
@@ -25,4 +25,4 @@ tags:
 - [[test_process_inbound_request_denial_is_also_logged_to_audit_store()]] - `calls` [EXTRACTED]
 - [[test_process_inbound_request_logs_to_audit_store_when_configured()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/A2a_Proxy
+#graphify/code #graphify/INFERRED #community/Community_107

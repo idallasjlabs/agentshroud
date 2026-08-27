@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_credential_injector.py"
 type: "code"
-community: "Credential Injector"
+community: "Community 921"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Credential_Injector
+  - community/Community_921
 ---
 
 # test_credential_injector.py
@@ -20,4 +20,4 @@ tags:
 - [[injector()]] - `contains` [EXTRACTED]
 - [[secrets_dir()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Credential_Injector
+#graphify/code #graphify/EXTRACTED #community/Community_921

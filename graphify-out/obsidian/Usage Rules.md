@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/legal/COMMUNICATION-TEMPLATES.md"
 type: "document"
-community: "Communication Templates (legal)"
+community: "Community 1108"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Communication_Templates_legal
+  - community/Community_1108
 ---
 
 # Usage Rules
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud™ Communication Templates]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Communication_Templates_legal
+#graphify/document #graphify/EXTRACTED #community/Community_1108

@@ -1,16 +1,16 @@
 ---
 source_file: ".agents/skills/i-aws/SKILL.md"
 type: "rationale"
-community: "Skill (i-aws)"
+community: "Community 518"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Skill_i-aws
+  - community/Community_518
 ---
 
 # FY26 40% Cost Reduction Target
 
 ## Connections
-- [[AWS Cloud Management & FinOps Agent_2]] - `references` [EXTRACTED]
+- [[AWS Cloud Management & FinOps Agent_3]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Skill_i-aws
+#graphify/rationale #graphify/EXTRACTED #community/Community_518

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/xurl/SKILL.md"
 type: "document"
-community: "Skill (xurl)"
+community: "Community 388"
 location: "L84"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_xurl
+  - community/Community_388
 ---
 
 # Register an app (recommended)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Prerequisites_15]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_xurl
+#graphify/document #graphify/EXTRACTED #community/Community_388

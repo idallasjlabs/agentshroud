@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy_coverage.py"
 type: "rationale"
-community: "Slack Proxy Coverage"
+community: "Community 25"
 location: "L347"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Slack_Proxy_Coverage
+  - community/Community_25
 ---
 
 # Connection failure → {'ok': False, 'error': <exc>} (no exception leaks).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_network_error_returns_synthetic_failure()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Slack_Proxy_Coverage
+#graphify/rationale #graphify/EXTRACTED #community/Community_25

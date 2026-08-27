@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "Http Proxy Coverage"
+community: "Community 735"
 location: "L87"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Http_Proxy_Coverage
+  - community/Community_735
 ---
 
 # _DummyTargetWriter
@@ -22,4 +22,4 @@ tags:
 - [[_CloseRaisesTargetWriter]] - `inherits` [EXTRACTED]
 - [[test_http_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Http_Proxy_Coverage
+#graphify/code #graphify/EXTRACTED #community/Community_735

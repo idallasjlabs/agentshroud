@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/killswitch_monitor.py"
 type: "rationale"
-community: "Killswitch Monitor & Observatory Mode"
+community: "Community 13"
 location: "L503"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Killswitch_Monitor__Observatory_Mode
+  - community/Community_13
 ---
 
 # Check if tool call rate is abnormal.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._check_tool_call_rate()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Killswitch_Monitor__Observatory_Mode
+#graphify/rationale #graphify/EXTRACTED #community/Community_13

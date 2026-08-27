@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_workspace.py"
 type: "rationale"
-community: "Group Workspace Manager"
+community: "Community 61"
 location: "L241"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Group_Workspace_Manager
+  - community/Community_61
 ---
 
 # Append to a group's shared memory, gated by member access (fail-closed).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.append_group_memory()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Group_Workspace_Manager
+#graphify/rationale #graphify/EXTRACTED #community/Community_61

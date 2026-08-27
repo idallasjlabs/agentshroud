@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/linux.md"
 type: "document"
-community: "Linux (operations)"
+community: "Community 572"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Linux_operations
+  - community/Community_572
 ---
 
 # Fresh Install
@@ -20,4 +20,4 @@ tags:
 - [[6. Verify]] - `contains` [EXTRACTED]
 - [[Deploying AgentShroud on Linux (x86_64  aarch64)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Linux_operations
+#graphify/document #graphify/EXTRACTED #community/Community_572

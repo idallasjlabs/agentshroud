@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/event_bus.py.md"
 type: "document"
-community: "Event Bus.py (Gateway Core)"
+community: "Community 873"
 location: "L74"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Event_Buspy_Gateway_Core
+  - community/Community_873
 ---
 
 # Imports From / Exports To
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[event_bus.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Event_Buspy_Gateway_Core
+#graphify/document #graphify/EXTRACTED #community/Community_873

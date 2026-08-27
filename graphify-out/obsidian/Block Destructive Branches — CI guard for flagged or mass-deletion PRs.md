@@ -1,13 +1,13 @@
 ---
 source_file: ".github/workflows/block-destructive-branch.yml"
 type: "document"
-community: "Block Destructive Branch (workflows)"
+community: "Community 1835"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Block_Destructive_Branch_workflows
+  - community/Community_1835
 ---
 
 # Block Destructive Branches — CI guard for flagged or mass-deletion PRs
 
-#graphify/document #graphify/EXTRACTED #community/Block_Destructive_Branch_workflows
+#graphify/document #graphify/EXTRACTED #community/Community_1835

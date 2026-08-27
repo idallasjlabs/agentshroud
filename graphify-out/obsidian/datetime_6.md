@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/export-bot-conversations.py"
 type: "code"
-community: "Export Bot Conversations (scripts)"
+community: "Community 723"
 location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Export_Bot_Conversations_scripts
+  - community/Community_723
 ---
 
 # datetime
@@ -17,4 +17,4 @@ tags:
 - [[export_hermes()]] - `references` [EXTRACTED]
 - [[export_openclaw()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Export_Bot_Conversations_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_723

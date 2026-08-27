@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/test/test_playback_state/stubs/iot_button.h"
 type: "code"
-community: "Iot Button (stubs)"
+community: "Community 1094"
 location: "L11"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Iot_Button_stubs
+  - community/Community_1094
 ---
 
 # button_handle_t
@@ -15,4 +15,4 @@ tags:
 - [[iot_button_delete()]] - `references` [EXTRACTED]
 - [[iot_button_register_cb()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Iot_Button_stubs
+#graphify/code #graphify/EXTRACTED #community/Community_1094

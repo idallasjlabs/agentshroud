@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "Rbac Config (security)"
+community: "Community 134"
 location: "L409"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Rbac_Config_security
+  - community/Community_134
 ---
 
 # load_removed_collaborator_ids()
@@ -17,4 +17,4 @@ tags:
 - [[_load_collab_store()]] - `calls` [EXTRACTED]
 - [[rbac_config.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Rbac_Config_security
+#graphify/code #graphify/EXTRACTED #community/Community_134

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/workspace/jira_dev_ticket.py"
 type: "code"
-community: "Start Agentshroud (scripts)"
+community: "Community 449"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Start_Agentshroud_scripts
+  - community/Community_449
 ---
 
 # Jira Dev-Ticket Helper Module
@@ -14,4 +14,4 @@ tags:
 - [[init-openclaw-config.sh]] - `references` [EXTRACTED]
 - [[jira_weekly_review.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Start_Agentshroud_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_449

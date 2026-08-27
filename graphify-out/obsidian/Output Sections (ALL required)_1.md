@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-pca/SKILL.md"
 type: "document"
-community: "Skill (i-pca)"
+community: "Community 665"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-pca
+  - community/Community_665
 ---
 
 # Output Sections (ALL required)
@@ -19,7 +19,7 @@ tags:
 - [[5. Known Limits and Assumptions_1]] - `contains` [EXTRACTED]
 - [[6. Alternatives Considered_1]] - `contains` [EXTRACTED]
 - [[7. Open Questions_1]] - `contains` [EXTRACTED]
-- [[8. Verification Plan]] - `contains` [EXTRACTED]
+- [[8. Verification Plan_1]] - `contains` [EXTRACTED]
 - [[Skill Pre-Change Analysis (PCA)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-pca
+#graphify/document #graphify/EXTRACTED #community/Community_665

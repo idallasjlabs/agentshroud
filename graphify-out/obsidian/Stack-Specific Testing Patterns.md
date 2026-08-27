@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-tdd/SKILL.md"
 type: "document"
-community: "Skill (i-tdd)"
+community: "Community 700"
 location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-tdd
+  - community/Community_700
 ---
 
 # Stack-Specific Testing Patterns
@@ -19,4 +19,4 @@ tags:
 - [[Step Function Input Validation]] - `contains` [EXTRACTED]
 - [[Zabbix API  →  `unittest.mock`]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-tdd
+#graphify/document #graphify/EXTRACTED #community/Community_700

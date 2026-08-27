@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "Aiosqlite (05 - Dependencies)"
+community: "Community 9"
 location: "L139"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Aiosqlite_05_-_Dependencies
+  - community/Community_9
 ---
 
 # LedgerEntry
@@ -32,4 +32,4 @@ tags:
 - [[main.py_2]] - `imports` [EXTRACTED]
 - [[models.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Aiosqlite_05_-_Dependencies
+#graphify/code #graphify/INFERRED #community/Community_9

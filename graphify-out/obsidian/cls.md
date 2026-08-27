@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "Manifest (skills)"
+community: "Community 557"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Manifest_skills
+  - community/Community_557
 ---
 
 # cls
@@ -33,4 +33,4 @@ tags:
 - [[.from_source()]] - `calls` [INFERRED]
 - [[_Instr]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Manifest_skills
+#graphify/code #graphify/INFERRED #community/Community_557

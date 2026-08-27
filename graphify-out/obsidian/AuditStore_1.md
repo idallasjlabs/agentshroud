@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/audit_store.py"
 type: "code"
-community: "Audit Export"
+community: "Community 232"
 location: "L122"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Audit_Export
+  - community/Community_232
 ---
 
 # AuditStore
@@ -49,4 +49,4 @@ tags:
 - [[test_audit_export.py]] - `imports` [EXTRACTED]
 - [[test_audit_store_initialize_is_idempotent()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Audit_Export
+#graphify/code #graphify/EXTRACTED #community/Community_232

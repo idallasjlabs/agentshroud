@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/triage-cve-mitigations.py"
 type: "code"
-community: "Tool Chain & CVE Triage"
+community: "Community 78"
 location: "L694"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tool_Chain__CVE_Triage
+  - community/Community_78
 ---
 
 # is_source_fixed()
@@ -17,4 +17,4 @@ tags:
 - [[triage-cve-mitigations.py]] - `contains` [EXTRACTED]
 - [[triage_entry()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Tool_Chain__CVE_Triage
+#graphify/code #graphify/EXTRACTED #community/Community_78

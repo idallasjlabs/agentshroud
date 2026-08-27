@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_hermes_model_resolver.py"
 type: "rationale"
-community: "Hermes Model Resolver"
-location: "L186"
+community: "Community 129"
+location: "L214"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Hermes_Model_Resolver
+  - community/Community_129
 ---
 
 # cloud mode with everything unset → safe Anthropic default, never empty.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_cloud_mode_no_refs_returns_safe_default()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Hermes_Model_Resolver
+#graphify/rationale #graphify/EXTRACTED #community/Community_129

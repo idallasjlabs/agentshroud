@@ -1,12 +1,12 @@
 ---
 source_file: "docs/governance/AGENT_ROLES.md"
 type: "document"
-community: "Gsd Cadence (governance)"
+community: "Community 440"
 location: "L48"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gsd_Cadence_governance
+  - community/Community_440
 ---
 
 # Security-Sensitive Paths
@@ -16,4 +16,4 @@ tags:
 - [[Multi-Agent Role Matrix (AGENT_ROLES.md)]] - `references` [EXTRACTED]
 - [[Rule 1 — GSD Issue Before the Branch]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Gsd_Cadence_governance
+#graphify/document #graphify/EXTRACTED #community/Community_440

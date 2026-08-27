@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/event_bus.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
 type: "document"
-community: "Event Bus.py (Gateway Core)"
+community: "Community 355"
 location: "L56"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Event_Buspy_Gateway_Core
+  - community/Community_355
 ---
 
 # Environment Variables Used
 
 ## Connections
-- [[event_bus.py_2]] - `contains` [EXTRACTED]
+- [[auth.py_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Event_Buspy_Gateway_Core
+#graphify/document #graphify/EXTRACTED #community/Community_355

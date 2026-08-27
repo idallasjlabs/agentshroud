@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/runbook.md"
 type: "document"
-community: "Runbook (operations)"
+community: "Community 1590"
 location: "L314"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Runbook_operations
+  - community/Community_1590
 ---
 
 # High Alert Response
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[4. Handling Alerts]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Runbook_operations
+#graphify/document #graphify/EXTRACTED #community/Community_1590

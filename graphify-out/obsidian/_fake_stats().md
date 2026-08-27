@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_killswitch_monitor_behavior.py"
 type: "code"
-community: "Killswitch Monitor & Observatory Mode"
+community: "Community 13"
 location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Killswitch_Monitor__Observatory_Mode
+  - community/Community_13
 ---
 
 # _fake_stats()
@@ -23,4 +23,4 @@ tags:
 - [[.test_system_resource_memory_anomaly()]] - `calls` [EXTRACTED]
 - [[test_killswitch_monitor_behavior.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Killswitch_Monitor__Observatory_Mode
+#graphify/code #graphify/EXTRACTED #community/Community_13

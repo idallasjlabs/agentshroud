@@ -1,11 +1,11 @@
 ---
 source_file: "docs/runbooks/RUNBOOK.md"
 type: "concept"
-community: "Telegram Issues (project)"
+community: "Community 205"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Telegram_Issues_project
+  - community/Community_205
 ---
 
 # Colima Troubleshooting Procedures
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[RUNBOOK]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Telegram_Issues_project
+#graphify/concept #graphify/EXTRACTED #community/Community_205

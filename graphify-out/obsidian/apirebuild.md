@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/web/templates/management.html"
 type: "concept"
-community: "Management (templates)"
+community: "Community 886"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Management_templates
+  - community/Community_886
 ---
 
 # /api/rebuild
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Management Dashboard]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Management_templates
+#graphify/concept #graphify/EXTRACTED #community/Community_886

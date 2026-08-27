@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "rationale"
-community: "Prompt Protection (security)"
+community: "Community 182"
 location: "L279"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Prompt_Protection_security
+  - community/Community_182
 ---
 
 # Add bot container hostnames to the infrastructure detection patterns.          C
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.register_bot_hostnames()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Prompt_Protection_security
+#graphify/rationale #graphify/EXTRACTED #community/Community_182

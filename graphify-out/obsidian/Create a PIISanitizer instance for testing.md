@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/conftest.py"
 type: "rationale"
-community: "Security Fixes & SSH Write Endpoint"
+community: "Community 1"
 location: "L174"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Fixes__SSH_Write_Endpoint
+  - community/Community_1
 ---
 
 # Create a PIISanitizer instance for testing
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[sanitizer()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Fixes__SSH_Write_Endpoint
+#graphify/rationale #graphify/EXTRACTED #community/Community_1

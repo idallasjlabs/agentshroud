@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_simple.py"
 type: "code"
-community: "Main Simple"
+community: "Community 9"
 location: "L195"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Main_Simple
+  - community/Community_9
 ---
 
 # test_global_exception_handler_http_exception()
@@ -16,4 +16,4 @@ tags:
 - [[global_exception_handler()]] - `calls` [EXTRACTED]
 - [[test_main_simple.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Main_Simple
+#graphify/code #graphify/EXTRACTED #community/Community_9

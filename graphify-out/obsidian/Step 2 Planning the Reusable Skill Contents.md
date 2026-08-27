@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/skill-creator/SKILL.md"
 type: "document"
-community: "Skill (skill-creator)"
+community: "Community 545"
 location: "L239"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_skill-creator
+  - community/Community_545
 ---
 
 # Step 2: Planning the Reusable Skill Contents
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Creation Process]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_skill-creator
+#graphify/document #graphify/EXTRACTED #community/Community_545

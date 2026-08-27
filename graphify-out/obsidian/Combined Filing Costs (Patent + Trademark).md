@@ -1,12 +1,12 @@
 ---
 source_file: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
 type: "document"
-community: "Uspto Provisional Patent Application (docs)"
+community: "Community 807"
 location: "L858"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Uspto_Provisional_Patent_Application_docs
+  - community/Community_807
 ---
 
 # Combined Filing Costs (Patent + Trademark)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SECTION 6 ESTIMATED COSTS]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Uspto_Provisional_Patent_Application_docs
+#graphify/document #graphify/EXTRACTED #community/Community_807

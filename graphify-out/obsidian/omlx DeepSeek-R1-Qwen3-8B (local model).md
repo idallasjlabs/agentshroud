@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-odev/SKILL.md"
 type: "concept"
-community: "Skill (coding-agent)"
+community: "Community 292"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Skill_coding-agent
+  - community/Community_292
 ---
 
 # omlx DeepSeek-R1-Qwen3-8B (local model)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[OpenClaw Dev Workflow (ODEV)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Skill_coding-agent
+#graphify/concept #graphify/EXTRACTED #community/Community_292

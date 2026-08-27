@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-session-prompt/SKILL.md"
 type: "document"
-community: "Skill (i-session-prompt)"
+community: "Community 705"
 location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-session-prompt
+  - community/Community_705
 ---
 
 # Step 1 — Survey the Repo
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Workflow Survey → Draft → Inject → Confirm_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-session-prompt
+#graphify/document #graphify/EXTRACTED #community/Community_705

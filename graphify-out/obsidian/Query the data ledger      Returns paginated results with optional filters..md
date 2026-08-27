@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "Ingest API Main & Models"
+community: "Community 9"
 location: "L852"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Ingest_API_Main__Models
+  - community/Community_9
 ---
 
 # Query the data ledger      Returns paginated results with optional filters.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[query_ledger()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Ingest_API_Main__Models
+#graphify/rationale #graphify/EXTRACTED #community/Community_9

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "rationale"
-community: "Resource Guard & Local Model Parity"
+community: "Community 7"
 location: "L50"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Resource_Guard__Local_Model_Parity
+  - community/Community_7
 ---
 
 # Configuration for resource limits.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ResourceLimits]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Resource_Guard__Local_Model_Parity
+#graphify/rationale #graphify/EXTRACTED #community/Community_7

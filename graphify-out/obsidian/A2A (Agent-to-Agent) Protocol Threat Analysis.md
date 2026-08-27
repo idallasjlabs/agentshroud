@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/threat-model.md"
 type: "document"
-community: "Threat Model (security)"
+community: "Community 985"
 location: "L239"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Threat_Model_security
+  - community/Community_985
 ---
 
 # A2A (Agent-to-Agent) Protocol Threat Analysis
@@ -21,4 +21,4 @@ tags:
 - [[S — Spoofing Peer Identity Collapse Behind a Reverse Proxy]] - `contains` [EXTRACTED]
 - [[T — Tampering Cross-Tenant Task Ownership via `contextId` Collision]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Threat_Model_security
+#graphify/document #graphify/EXTRACTED #community/Community_985

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: "Llm Proxy"
-location: "L170"
+community: "Community 79"
+location: "L216"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Llm_Proxy
+  - community/Community_79
 ---
 
 # LLMProxy
@@ -56,6 +56,7 @@ tags:
 - [[__init__.py_7]] - `conceptually_related_to` [INFERRED]
 - [[_make_proxy()]] - `calls` [EXTRACTED]
 - [[_proxy_with_connect_refused()]] - `calls` [EXTRACTED]
+- [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[list_security_modules()]] - `conceptually_related_to` [INFERRED]
 - [[llm_proxy.py]] - `contains` [EXTRACTED]
@@ -91,4 +92,4 @@ tags:
 - [[test_streaming_tool_acl_blocks_terminal_tool()]] - `calls` [EXTRACTED]
 - [[test_streaming_tool_acl_skips_unknown_user()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Llm_Proxy
+#graphify/code #graphify/EXTRACTED #community/Community_79

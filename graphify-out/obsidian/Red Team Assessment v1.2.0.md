@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/v1.2/red-team-assessment-v1.2.0.md"
 type: "document"
-community: "V1.2.0 Master Plan (v1.2)"
+community: "Community 923"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/V120_Master_Plan_v12
+  - community/Community_923
 ---
 
 # Red Team Assessment v1.2.0
@@ -19,4 +19,4 @@ tags:
 - [[SharedMemoryManager Per-User Per-Bot Memory Isolation]] - `references` [EXTRACTED]
 - [[TrustManager Progressive Trust Scoring (5 Levels)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/V120_Master_Plan_v12
+#graphify/document #graphify/EXTRACTED #community/Community_923

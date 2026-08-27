@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/graphify/references/query.md"
 type: "document"
-community: "Query (references)"
+community: "Community 1075"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Query_references
+  - community/Community_1075
 ---
 
 # graphify reference: query, path, explain
@@ -18,4 +18,4 @@ tags:
 - [[Step 1 — Traversal]] - `contains` [EXTRACTED]
 - [[query]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Query_references
+#graphify/document #graphify/EXTRACTED #community/Community_1075

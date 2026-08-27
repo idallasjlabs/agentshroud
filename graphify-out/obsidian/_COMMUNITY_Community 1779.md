@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[EgressAction (Enum)]] - code - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
+- [[soc.html — unified SOC web dashboard SPA template]] - document - gateway/soc/templates/soc.html
 
 ## Live Query (requires Dataview plugin)
 

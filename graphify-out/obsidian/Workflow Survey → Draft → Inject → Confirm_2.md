@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-session-prompt/SKILL.md"
 type: "document"
-community: "Skill (i-session-prompt)"
+community: "Community 708"
 location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-session-prompt
+  - community/Community_708
 ---
 
 # Workflow: Survey → Draft → Inject → Confirm
@@ -20,4 +20,4 @@ tags:
 - [[Step 5 — Inject into All Three LLMs_2]] - `contains` [EXTRACTED]
 - [[Step 6 — Confirm_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-session-prompt
+#graphify/document #graphify/EXTRACTED #community/Community_708

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-bs/SKILL.md"
 type: "document"
-community: "Skill (i-bs)"
+community: "Community 464"
 location: "L91"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-bs
+  - community/Community_464
 ---
 
 # Required: ≥ 4.5 for text, ≥ 3.0 for UI elements
@@ -22,4 +22,4 @@ tags:
 - [[Typography Scale_1]] - `contains` [EXTRACTED]
 - [[Voice & Tone Guide_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-bs
+#graphify/document #graphify/EXTRACTED #community/Community_464

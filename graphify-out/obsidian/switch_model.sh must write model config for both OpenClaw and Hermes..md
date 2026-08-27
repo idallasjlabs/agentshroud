@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_switch_model_idempotent.py"
 type: "rationale"
-community: "Switch Model Idempotent"
+community: "Community 128"
 location: "L226"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Switch_Model_Idempotent
+  - community/Community_128
 ---
 
 # switch_model.sh must write model config for both OpenClaw and Hermes.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSwitchModelBothBots]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Switch_Model_Idempotent
+#graphify/rationale #graphify/EXTRACTED #community/Community_128

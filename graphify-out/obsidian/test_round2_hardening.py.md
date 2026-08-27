@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_round2_hardening.py"
 type: "code"
-community: "Git Guard (security)"
+community: "Community 14"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Git_Guard_security
+  - community/Community_14
 ---
 
 # test_round2_hardening.py
@@ -30,4 +30,4 @@ tags:
 - [[Tests for Round 2 hardening — 9 fixes.]] - `rationale_for` [EXTRACTED]
 - [[scan_repository()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Git_Guard_security
+#graphify/code #graphify/EXTRACTED #community/Community_14

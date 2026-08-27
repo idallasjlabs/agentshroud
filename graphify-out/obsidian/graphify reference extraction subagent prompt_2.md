@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/references/extraction-spec.md"
 type: "document"
-community: "Extraction Spec (references)"
+community: "Community 1455"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Extraction_Spec_references
+  - community/Community_1455
 ---
 
 # graphify reference: extraction subagent prompt
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[extraction-spec_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Extraction_Spec_references
+#graphify/document #graphify/EXTRACTED #community/Community_1455

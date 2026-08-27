@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Main Endpoints"
+community: "Community 9"
 location: "L4845"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Main_Endpoints
+  - community/Community_9
 ---
 
 # hermes_dashboard_proxy()
@@ -20,4 +20,4 @@ tags:
 - [[main.py_2]] - `contains` [EXTRACTED]
 - [[test_main_endpoints.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Main_Endpoints
+#graphify/code #graphify/EXTRACTED #community/Community_9

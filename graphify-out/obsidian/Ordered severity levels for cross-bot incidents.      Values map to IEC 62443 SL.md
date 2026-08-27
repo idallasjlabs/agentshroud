@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/cross_bot_trust_ledger.py"
 type: "rationale"
-community: "Cross Bot Trust Ledger"
+community: "Community 1016"
 location: "L52"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Cross_Bot_Trust_Ledger
+  - community/Community_1016
 ---
 
 # Ordered severity levels for cross-bot incidents.      Values map to IEC 62443 SL
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[BotIncidentSeverity]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Cross_Bot_Trust_Ledger
+#graphify/rationale #graphify/EXTRACTED #community/Community_1016

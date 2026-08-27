@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/cve-mitigation-matrix.md"
 type: "document"
-community: "Cve Mitigation Matrix (security)"
+community: "Community 332"
 location: "L445"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Cve_Mitigation_Matrix_security
+  - community/Community_332
 ---
 
 # CWE Coverage
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud™ CVE Mitigation Matrix]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Cve_Mitigation_Matrix_security
+#graphify/document #graphify/EXTRACTED #community/Community_332

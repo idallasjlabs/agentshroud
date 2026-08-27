@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/IDENTITY.md"
 type: "document"
-community: "Identity (architecture)"
+community: "Community 831"
 location: "L57"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Identity_architecture
+  - community/Community_831
 ---
 
 # Via Control UI:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[💬 Communication Flow]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Identity_architecture
+#graphify/document #graphify/EXTRACTED #community/Community_831

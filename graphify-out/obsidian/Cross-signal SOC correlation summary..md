@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "Ingest API Main & Models"
+community: "Community 9"
 location: "L2323"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Ingest_API_Main__Models
+  - community/Community_9
 ---
 
 # Cross-signal SOC correlation summary.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[soc_correlation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Ingest_API_Main__Models
+#graphify/rationale #graphify/EXTRACTED #community/Community_9

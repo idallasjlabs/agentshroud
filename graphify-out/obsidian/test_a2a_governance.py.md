@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_governance.py"
 type: "code"
-community: "A2a Governance (security)"
+community: "Community 44"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2a_Governance_security
+  - community/Community_44
 ---
 
 # test_a2a_governance.py
@@ -34,4 +34,4 @@ tags:
 - [[trusted_peer()]] - `contains` [EXTRACTED]
 - [[untrusted_peer()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2a_Governance_security
+#graphify/code #graphify/EXTRACTED #community/Community_44

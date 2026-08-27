@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "code"
-community: "Tool Result Pii"
+community: "Community 513"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tool_Result_Pii
+  - community/Community_513
 ---
 
 # test_tool_result_pii.py
@@ -26,4 +26,4 @@ tags:
 - [[ToolResultPIIConfig]] - `imports` [EXTRACTED]
 - [[ToolResultSanitizer]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Tool_Result_Pii
+#graphify/code #graphify/EXTRACTED #community/Community_513

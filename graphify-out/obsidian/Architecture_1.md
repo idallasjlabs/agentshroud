@@ -1,12 +1,12 @@
 ---
 source_file: "docker/README.md"
 type: "document"
-community: "Readme (docker)"
+community: "Community 190"
 location: "L107"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_docker
+  - community/Community_190
 ---
 
 # Architecture
@@ -16,4 +16,4 @@ tags:
 - [[Container Stack]] - `contains` [EXTRACTED]
 - [[Security Features (Implemented)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_docker
+#graphify/document #graphify/EXTRACTED #community/Community_190

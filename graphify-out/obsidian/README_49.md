@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/i-cr/README.md"
 type: "document"
-community: "Readme (i-cr)"
+community: "Community 1184"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-cr
+  - community/Community_1184
 ---
 
 # README.md
 
 ## Connections
-- [[Code Review (CR)]] - `contains` [EXTRACTED]
+- [[Code Review (CR)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-cr
+#graphify/document #graphify/EXTRACTED #community/Community_1184

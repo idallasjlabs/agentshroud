@@ -1,12 +1,12 @@
 ---
 source_file: "docs/governance/GSD_CADENCE.md"
 type: "document"
-community: "Gsd Cadence (governance)"
+community: "Community 440"
 location: "L47"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gsd_Cadence_governance
+  - community/Community_440
 ---
 
 # Rule 3 — Weekly Kaizen + Monthly Chaos Drill
@@ -17,4 +17,4 @@ tags:
 - [[Monthly (1st of month)]] - `contains` [EXTRACTED]
 - [[Weekly (every Friday)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gsd_Cadence_governance
+#graphify/document #graphify/EXTRACTED #community/Community_440

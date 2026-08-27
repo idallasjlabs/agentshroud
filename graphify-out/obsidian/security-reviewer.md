@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/agents/i-security-reviewer.md"
+source_file: "docker/config/hermes/agents/i-security-reviewer.md"
 type: "document"
-community: "I Security Reviewer (agents)"
+community: "Community 1080"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/I_Security_Reviewer_agents
+  - community/Community_1080
 ---
 
 # security-reviewer
 
 ## Connections
-- [[i-security-reviewer_1]] - `contains` [EXTRACTED]
+- [[i-security-reviewer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/I_Security_Reviewer_agents
+#graphify/document #graphify/EXTRACTED #community/Community_1080

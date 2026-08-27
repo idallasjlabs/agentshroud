@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ssh_proxy/proxy.py"
 type: "code"
-community: "Ssh Proxy"
+community: "Community 1"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ssh_Proxy
+  - community/Community_1
 ---
 
 # proxy.py
@@ -22,4 +22,4 @@ tags:
 - [[main.py_2]] - `imports_from` [EXTRACTED]
 - [[state.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ssh_Proxy
+#graphify/code #graphify/EXTRACTED #community/Community_1

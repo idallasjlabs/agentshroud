@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/app_main.c"
 type: "code"
-community: "Ws Client (main)"
-location: "L538"
+community: "Community 139"
+location: "L549"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Ws_Client_main
+  - community/Community_139
 ---
 
 # rlog_task()
@@ -18,4 +18,4 @@ tags:
 - [[ws_client_connected() — lock-free flag read]] - `calls` [EXTRACTED]
 - [[ws_client_send_log()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Ws_Client_main
+#graphify/code #graphify/INFERRED #community/Community_139

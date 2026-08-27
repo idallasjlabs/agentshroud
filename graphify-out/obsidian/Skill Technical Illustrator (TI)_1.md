@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-ti/SKILL.md"
 type: "document"
-community: "Skill (i-ti)"
+community: "Community 395"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-ti
+  - community/Community_395
 ---
 
 # Skill: Technical Illustrator (TI)
@@ -24,4 +24,4 @@ tags:
 - [[SKILL_121]] - `contains` [EXTRACTED]
 - [[Validation Checklist_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-ti
+#graphify/document #graphify/EXTRACTED #community/Community_395

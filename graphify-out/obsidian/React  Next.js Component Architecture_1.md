@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-ui/SKILL.md"
 type: "document"
-community: "Skill (i-ui)"
+community: "Community 298"
 location: "L338"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-ui
+  - community/Community_298
 ---
 
 # React / Next.js Component Architecture
@@ -16,4 +16,4 @@ tags:
 - [[Component file structure_1]] - `contains` [EXTRACTED]
 - [[Skill UI Expert (UI)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-ui
+#graphify/document #graphify/EXTRACTED #community/Community_298

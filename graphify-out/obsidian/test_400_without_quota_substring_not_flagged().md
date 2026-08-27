@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_quota_detector.py"
 type: "code"
-community: "Llm Quota Detector"
+community: "Community 419"
 location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Llm_Quota_Detector
+  - community/Community_419
 ---
 
 # test_400_without_quota_substring_not_flagged()
@@ -16,4 +16,4 @@ tags:
 - [[is_quota_exhausted()]] - `calls` [EXTRACTED]
 - [[test_llm_quota_detector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Llm_Quota_Detector
+#graphify/code #graphify/EXTRACTED #community/Community_419

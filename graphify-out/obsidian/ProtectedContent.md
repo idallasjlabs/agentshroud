@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "Prompt Protection (security)"
+community: "Community 182"
 location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Prompt_Protection_security
+  - community/Community_182
 ---
 
 # ProtectedContent
@@ -18,4 +18,4 @@ tags:
 - [[A piece of content that should be protected from disclosure.]] - `rationale_for` [EXTRACTED]
 - [[prompt_protection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Prompt_Protection_security
+#graphify/code #graphify/EXTRACTED #community/Community_182

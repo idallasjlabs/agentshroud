@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/09 - Diagrams/Network Topology.md"
 type: "document"
-community: "Network topology (09 - Diagrams)"
+community: "Community 603"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Network_topology_09_-_Diagrams
+  - community/Community_603
 ---
 
 # Network Topology.md
@@ -16,4 +16,4 @@ tags:
 - [[Full System Flowchart]] - `references` [EXTRACTED]
 - [[Network Topology_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Network_topology_09_-_Diagrams
+#graphify/document #graphify/EXTRACTED #community/Community_603

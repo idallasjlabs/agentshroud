@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "Rbac Config (security)"
+community: "Community 15"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Rbac_Config_security
+  - community/Community_15
 ---
 
 # rbac_config.py
@@ -39,4 +39,4 @@ tags:
 - [[revoke_approved_collaborator()]] - `contains` [EXTRACTED]
 - [[unpause_collaborator()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Rbac_Config_security
+#graphify/code #graphify/EXTRACTED #community/Community_15

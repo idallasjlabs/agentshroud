@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Diagram 20 Observability Map]] - image - docs/diagrams/images/diagram-20-observability-map.svg
+- [[graphify add URL Ingestion]] - concept - docker/config/openclaw/skills/graphify/references/add-watch.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "Intel Report (security)"
+community: "Community 133"
 location: "L166"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Intel_Report_security
+  - community/Community_133
 ---
 
 # _compute_hash()
@@ -18,4 +18,4 @@ tags:
 - [[Compute SHA-256 over the canonical content fields of a report.      Fields inclu]] - `rationale_for` [EXTRACTED]
 - [[intel_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Intel_Report_security
+#graphify/code #graphify/EXTRACTED #community/Community_133

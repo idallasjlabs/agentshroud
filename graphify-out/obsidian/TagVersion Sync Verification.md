@@ -1,12 +1,12 @@
 ---
 source_file: ".github/workflows/release.yml"
 type: "rationale"
-community: "Release (workflows)"
+community: "Community 1558"
 location: "lines 38-50"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Release_workflows
+  - community/Community_1558
 ---
 
 # Tag/Version Sync Verification
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Release Workflow]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Release_workflows
+#graphify/rationale #graphify/EXTRACTED #community/Community_1558

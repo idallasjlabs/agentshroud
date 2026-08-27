@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VERIFICATION.md"
 type: "document"
-community: "Security Verification (security)"
+community: "Community 275"
 location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Verification_security
+  - community/Community_275
 ---
 
 # Gitignore Protection (Multi-Layer)
@@ -16,4 +16,4 @@ tags:
 - [[Security Verification Report]] - `contains` [EXTRACTED]
 - [[docker.gitignore]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Verification_security
+#graphify/document #graphify/EXTRACTED #community/Community_275

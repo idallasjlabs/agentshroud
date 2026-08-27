@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/check-vendor-compat.sh"
 type: "code"
-community: "Check Vendor Compat (scripts)"
+community: "Community 987"
 location: "L61"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Check_Vendor_Compat_scripts
+  - community/Community_987
 ---
 
 # check_openclaw()
@@ -18,4 +18,4 @@ tags:
 - [[pass()_2]] - `calls` [EXTRACTED]
 - [[warn()_2]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Check_Vendor_Compat_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_987

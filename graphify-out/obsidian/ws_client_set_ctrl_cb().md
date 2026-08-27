@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/ws_client.c"
 type: "code"
-community: "Ws Client (main)"
+community: "Community 139"
 location: "L314"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ws_Client_main
+  - community/Community_139
 ---
 
 # ws_client_set_ctrl_cb()
@@ -20,4 +20,4 @@ tags:
 - [[ws_client_handle_t_1]] - `references` [EXTRACTED]
 - [[ws_ctrl_cb_t]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ws_Client_main
+#graphify/code #graphify/EXTRACTED #community/Community_139

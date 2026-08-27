@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "Deployment Procedure (operations)"
+community: "Community 571"
 location: "L184"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Deployment_Procedure_operations
+  - community/Community_571
 ---
 
 # Option A: Self-Signed Certificate (Development/Testing)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Step 4 SSL Certificate Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Deployment_Procedure_operations
+#graphify/document #graphify/EXTRACTED #community/Community_571

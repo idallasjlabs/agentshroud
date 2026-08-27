@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/security-inventory.md"
+source_file: "docs/security/CREDENTIAL-SECURITY-POLICY.md"
 type: "document"
-community: "docs/reference"
-location: "L215"
+community: "Community 506"
+location: "L383"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/reference
+  - community/Community_506
 ---
 
 # Summary
 
 ## Connections
-- [[🛡️ AgentShroud Security Inventory (v0.8.0)]] - `contains` [EXTRACTED]
+- [[Credential Security Policy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/reference
+#graphify/document #graphify/EXTRACTED #community/Community_506

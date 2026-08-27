@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/agent_isolation.py"
 type: "rationale"
-community: "Security Hardening"
+community: "Community 28"
 location: "L80"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Hardening
+  - community/Community_28
 ---
 
 # Deserialize registry from dict.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.from_dict()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Hardening
+#graphify/rationale #graphify/EXTRACTED #community/Community_28

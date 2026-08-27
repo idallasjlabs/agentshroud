@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "document"
-community: "Agentic Os (architecture)"
+community: "Community 947"
 location: "L285"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Agentic_Os_architecture
+  - community/Community_947
 ---
 
 # Key Skills in Detail
@@ -19,4 +19,4 @@ tags:
 - [[`sec-offense` — Red Team Adversarial Tester]] - `contains` [EXTRACTED]
 - [[`tdd` — Test-Driven Development Coach]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Agentic_Os_architecture
+#graphify/document #graphify/EXTRACTED #community/Community_947

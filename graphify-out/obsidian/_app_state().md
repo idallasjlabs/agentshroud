@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "SOC Router (Collaborator Mgmt)"
+community: "Community 19"
 location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Router_Collaborator_Mgmt
+  - community/Community_19
 ---
 
 # _app_state()
@@ -69,4 +69,4 @@ tags:
 - [[set_user_collab_mode()]] - `calls` [EXTRACTED]
 - [[verify_audit_chain()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Router_Collaborator_Mgmt
+#graphify/code #graphify/EXTRACTED #community/Community_19

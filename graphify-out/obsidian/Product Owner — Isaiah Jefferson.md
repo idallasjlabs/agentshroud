@@ -1,11 +1,11 @@
 ---
 source_file: "docs/TEAM.md"
 type: "concept"
-community: "Team (docs)"
+community: "Community 964"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Team_docs
+  - community/Community_964
 ---
 
 # Product Owner — Isaiah Jefferson
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Scrum Master  Agile Coach — AgentShroud Bot (OpenClaw)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Team_docs
+#graphify/concept #graphify/EXTRACTED #community/Community_964

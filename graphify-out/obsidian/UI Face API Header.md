@@ -1,13 +1,13 @@
 ---
 source_file: "firmware/voice-terminal/main/ui_face.h"
 type: "code"
-community: "Ui Face (main)"
+community: "Community 1704"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ui_Face_main
+  - community/Community_1704
 ---
 
 # UI Face API Header
 
-#graphify/code #graphify/EXTRACTED #community/Ui_Face_main
+#graphify/code #graphify/EXTRACTED #community/Community_1704

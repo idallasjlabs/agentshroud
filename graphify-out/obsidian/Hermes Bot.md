@@ -1,11 +1,11 @@
 ---
 source_file: "README.md"
 type: "concept"
-community: "Cheatsheet"
+community: "Community 434"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Cheatsheet
+  - community/Community_434
 ---
 
 # Hermes Bot
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud™ README]] - `references` [EXTRACTED]
 - [[Hermes Control Interface (HCI)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Cheatsheet
+#graphify/concept #graphify/EXTRACTED #community/Community_434

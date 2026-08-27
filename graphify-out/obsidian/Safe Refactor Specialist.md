@@ -1,12 +1,12 @@
 ---
 source_file: ".github/agents/safe-refactor.agent.md"
 type: "document"
-community: "Safe Refactor.agent (agents)"
+community: "Community 389"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Safe_Refactoragent_agents
+  - community/Community_389
 ---
 
 # Safe Refactor Specialist
@@ -20,7 +20,8 @@ tags:
 - [[Repository Context_1]] - `contains` [EXTRACTED]
 - [[Role Definition]] - `contains` [EXTRACTED]
 - [[What You CAN Refactor]] - `contains` [EXTRACTED]
+- [[What You CANNOT Refactor]] - `contains` [EXTRACTED]
 - [[When in Doubt]] - `contains` [EXTRACTED]
 - [[safe-refactor.agent]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Safe_Refactoragent_agents
+#graphify/document #graphify/EXTRACTED #community/Community_389

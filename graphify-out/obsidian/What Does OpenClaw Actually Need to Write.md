@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md"
 type: "document"
-community: "Openclaw Write Requirements (architecture)"
+community: "Community 209"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Openclaw_Write_Requirements_architecture
+  - community/Community_209
 ---
 
 # What Does OpenClaw Actually Need to Write?
@@ -26,4 +26,4 @@ tags:
 - [[What OpenClaw Writes During Normal Operation]] - `contains` [EXTRACTED]
 - [[Your Shared Folder The Workspace]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Openclaw_Write_Requirements_architecture
+#graphify/document #graphify/EXTRACTED #community/Community_209

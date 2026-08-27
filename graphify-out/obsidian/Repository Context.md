@@ -1,12 +1,12 @@
 ---
 source_file: ".github/COPILOT_CLI_SETUP.md"
 type: "document"
-community: "Copilot Cli Setup (.github)"
+community: "Community 234"
 location: "L262"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Copilot_Cli_Setup_github
+  - community/Community_234
 ---
 
 # Repository Context
@@ -17,4 +17,4 @@ tags:
 - [[Key Testing Requirements]] - `contains` [EXTRACTED]
 - [[Primary Focus]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Copilot_Cli_Setup_github
+#graphify/document #graphify/EXTRACTED #community/Community_234

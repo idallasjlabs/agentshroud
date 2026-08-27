@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-pr/README.md"
 type: "document"
-community: "Readme (i-pr)"
+community: "Community 1237"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-pr
+  - community/Community_1237
 ---
 
 # Pull Request Generator (PR)
@@ -17,4 +17,4 @@ tags:
 - [[Related Skills_106]] - `contains` [EXTRACTED]
 - [[Usage_107]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-pr
+#graphify/document #graphify/EXTRACTED #community/Community_1237

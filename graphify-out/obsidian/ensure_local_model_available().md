@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/switch_model.sh"
 type: "code"
-community: "Switch Model (scripts)"
+community: "Community 861"
 location: "L373"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Switch_Model_scripts
+  - community/Community_861
 ---
 
 # ensure_local_model_available()
@@ -16,4 +16,4 @@ tags:
 - [[switch_model.sh script]] - `calls` [EXTRACTED]
 - [[wait_for_local_model()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Switch_Model_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_861

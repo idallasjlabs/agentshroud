@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_inspector.py"
 type: "rationale"
-community: "Mcp Inspector (proxy)"
+community: "Community 106"
 location: "L98"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Mcp_Inspector_proxy
+  - community/Community_106
 ---
 
 # Result of inspecting a tool call or response.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[InspectionResult]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Mcp_Inspector_proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_106

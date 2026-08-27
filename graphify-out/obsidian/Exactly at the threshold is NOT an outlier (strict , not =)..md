@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_latency_guard.py"
 type: "rationale"
-community: "Voice Latency Guard"
+community: "Community 103"
 location: "L71"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Voice_Latency_Guard
+  - community/Community_103
 ---
 
 # Exactly at the threshold is NOT an outlier (strict >, not >=).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_record_turn_latency_boundary_is_not_outlier()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Voice_Latency_Guard
+#graphify/rationale #graphify/EXTRACTED #community/Community_103

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/a2a_proxy.py"
 type: "code"
-community: "A2a Integration"
+community: "Community 104"
 location: "L123"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2a_Integration
+  - community/Community_104
 ---
 
 # A2AProxy
@@ -51,4 +51,4 @@ tags:
 - [[test_ssrf_callback_rejection_triggers_severe_demotion()]] - `calls` [EXTRACTED]
 - [[test_task_ownership_violation_records_a2a_violation_type()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2a_Integration
+#graphify/code #graphify/EXTRACTED #community/Community_104

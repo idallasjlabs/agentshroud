@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "Middleware & Session Isolation"
+community: "Community 1137"
 location: "L225"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Middleware__Session_Isolation
+  - community/Community_1137
 ---
 
 # TestWebhookReceiverIntegration
@@ -26,4 +26,4 @@ tags:
 - [[WebhookReceiver]] - `uses` [INFERRED]
 - [[test_session_isolation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Middleware__Session_Isolation
+#graphify/code #graphify/EXTRACTED #community/Community_1137

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/collaborator_responses.py"
 type: "code"
-community: "Group Config & Collaborator Responses"
+community: "Community 81"
 location: "L130"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Group_Config__Collaborator_Responses
+  - community/Community_81
 ---
 
 # build_project_context_injection()
@@ -19,4 +19,4 @@ tags:
 - [[format_groups_list()]] - `conceptually_related_to` [INFERRED]
 - [[test_collaborator_responses.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Group_Config__Collaborator_Responses
+#graphify/code #graphify/EXTRACTED #community/Community_81

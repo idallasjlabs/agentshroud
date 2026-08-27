@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
 type: "document"
-community: "Skill (i-browser)"
+community: "Community 259"
 location: "L295"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-browser
+  - community/Community_259
 ---
 
 # "CAPTCHA detected"
 
 ## Connections
-- [[Troubleshooting_11]] - `contains` [EXTRACTED]
+- [[Troubleshooting_12]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-browser
+#graphify/document #graphify/EXTRACTED #community/Community_259

@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-browser/browse.js"
 type: "code"
-community: "Browse (i-browser)"
+community: "Community 1077"
 location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Browse_i-browser
+  - community/Community_1077
 ---
 
 # { chromium }
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[browse.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Browse_i-browser
+#graphify/code #graphify/EXTRACTED #community/Community_1077

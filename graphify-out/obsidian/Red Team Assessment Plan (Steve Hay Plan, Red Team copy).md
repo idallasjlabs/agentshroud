@@ -1,11 +1,11 @@
 ---
 source_file: "skills/custom/agentshroud-redteam/references/steve-hay-plan.md"
 type: "document"
-community: "Tool Chain & CVE Triage"
+community: "Community 659"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Tool_Chain__CVE_Triage
+  - community/Community_659
 ---
 
 # Red Team Assessment Plan (Steve Hay Plan, Red Team copy)
@@ -14,4 +14,4 @@ tags:
 - [[SKILL_190]] - `references` [INFERRED]
 - [[STPA-Sec Methodology_1]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/Tool_Chain__CVE_Triage
+#graphify/document #graphify/INFERRED #community/Community_659

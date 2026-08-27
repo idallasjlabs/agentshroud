@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/shared_memory.py"
 type: "code"
-community: "Shared Memory Write Acl"
+community: "Community 61"
 location: "L54"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Shared_Memory_Write_Acl
+  - community/Community_61
 ---
 
 # SharedMemoryManager
@@ -69,4 +69,4 @@ tags:
 - [[test_shared_memory.py]] - `imports` [EXTRACTED]
 - [[test_shared_memory_write_acl.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Shared_Memory_Write_Acl
+#graphify/code #graphify/INFERRED #community/Community_61

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "rationale"
-community: "Tool ACL & Group RBAC"
+community: "Community 75"
 location: "L285"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Tool_ACL__Group_RBAC
+  - community/Community_75
 ---
 
 # Rate limits are tracked independently per user.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_per_user_isolation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Tool_ACL__Group_RBAC
+#graphify/rationale #graphify/EXTRACTED #community/Community_75

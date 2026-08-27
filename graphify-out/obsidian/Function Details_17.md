@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md"
 type: "document"
-community: "Web Content Scanner.py (Proxy Layer)"
+community: "Community 634"
 location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Web_Content_Scannerpy_Proxy_Layer
+  - community/Community_634
 ---
 
 # Function Details
@@ -20,4 +20,4 @@ tags:
 - [[WebContentScanner.scan(content, content_type)]] - `contains` [EXTRACTED]
 - [[web_content_scanner.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Web_Content_Scannerpy_Proxy_Layer
+#graphify/document #graphify/EXTRACTED #community/Community_634

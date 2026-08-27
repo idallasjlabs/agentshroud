@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/preflight-check.sh"
 type: "code"
-community: "Proxy Dashboard"
+community: "Community 1051"
 location: "L1"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Proxy_Dashboard
+  - community/Community_1051
 ---
 
 # preflight-check.sh
@@ -17,4 +17,4 @@ tags:
 - [[preflight-check.sh script]] - `contains` [EXTRACTED]
 - [[verify-proxy.sh]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Proxy_Dashboard
+#graphify/code #graphify/INFERRED #community/Community_1051

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/conftest.py"
 type: "code"
-community: "Security Fixes & SSH Write Endpoint"
+community: "Community 1"
 location: "L173"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Security_Fixes__SSH_Write_Endpoint
+  - community/Community_1
 ---
 
 # PIISanitizer
@@ -21,4 +21,4 @@ tags:
 - [[RouterConfig]] - `uses` [INFERRED]
 - [[sanitizer()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Security_Fixes__SSH_Write_Endpoint
+#graphify/code #graphify/INFERRED #community/Community_1

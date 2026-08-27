@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/agents/openclaw-identity.md"
 type: "document"
-community: "Developer (workspace)"
+community: "Community 449"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Developer_workspace
+  - community/Community_449
 ---
 
 # openclaw-identity.md (OpenClaw bot identity)
@@ -15,4 +15,4 @@ tags:
 - [[competitive-analysis.md (bot workspace competitive-intel source of truth)]] - `references` [EXTRACTED]
 - [[hermes-soul.md (Hermes system identity)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Developer_workspace
+#graphify/document #graphify/EXTRACTED #community/Community_449

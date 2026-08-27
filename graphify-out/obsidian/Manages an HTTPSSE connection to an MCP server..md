@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "Mcp Proxy Coverage"
+community: "Community 1339"
 location: "L159"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Mcp_Proxy_Coverage
+  - community/Community_1339
 ---
 
 # Manages an HTTP/SSE connection to an MCP server.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[HttpSseConnection]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Mcp_Proxy_Coverage
+#graphify/rationale #graphify/EXTRACTED #community/Community_1339

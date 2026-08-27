@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "code"
-community: "Security Audit & Watchtower Tests"
+community: "Community 212"
 location: "L299"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Audit__Watchtower_Tests
+  - community/Community_212
 ---
 
 # test_encrypted_store_in_pipeline()
@@ -15,4 +15,4 @@ tags:
 - [[Sensitive audit data can be encrypted at rest.]] - `rationale_for` [EXTRACTED]
 - [[test_security_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests
+#graphify/code #graphify/EXTRACTED #community/Community_212

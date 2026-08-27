@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "rationale"
-community: "Security Fixes & SSH Write Endpoint"
+community: "Community 12"
 location: "L304"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Fixes__SSH_Write_Endpoint
+  - community/Community_12
 ---
 
 # Cookie secure=False on HTTP requests
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_cookie_not_secure_on_http()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Fixes__SSH_Write_Endpoint
+#graphify/rationale #graphify/EXTRACTED #community/Community_12

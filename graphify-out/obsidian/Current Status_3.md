@@ -1,12 +1,12 @@
 ---
 source_file: "docs/flows/README.md"
 type: "document"
-community: "Diagram 09 Data Lineage (images)"
+community: "Community 353"
 location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Diagram_09_Data_Lineage_images
+  - community/Community_353
 ---
 
 # Current Status
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Flows Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Diagram_09_Data_Lineage_images
+#graphify/document #graphify/EXTRACTED #community/Community_353

@@ -1,28 +1,20 @@
 ---
-source_file: "docker/config/hermes/skills/i-socrates/SKILL.md"
+source_file: "docker/config/hermes/skills/i-socrates/README.md"
 type: "document"
-community: "Skill (i-socrates)"
-location: "L6"
+community: "Community 1209"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-socrates
+  - community/Community_1209
 ---
 
 # Socrates — Dialogue Architect
 
 ## Connections
-- [[Dialogue Techniques_1]] - `contains` [EXTRACTED]
-- [[ElevenLabs v3 Audio Tags_1]] - `contains` [EXTRACTED]
-- [[Input Requirements_18]] - `contains` [EXTRACTED]
-- [[OKE Channel — CPA Exam Prep Dialogue Guidelines_1]] - `contains` [EXTRACTED]
-- [[Output Format_24]] - `contains` [EXTRACTED]
-- [[Persona_14]] - `contains` [EXTRACTED]
-- [[Quality Checklist_16]] - `contains` [EXTRACTED]
-- [[Role_69]] - `contains` [EXTRACTED]
-- [[SKILL_118]] - `contains` [EXTRACTED]
-- [[Speaker Definitions_1]] - `contains` [EXTRACTED]
-- [[System Prompt_14]] - `contains` [EXTRACTED]
-- [[User Prompt Template_6]] - `contains` [EXTRACTED]
+- [[Purpose_69]] - `contains` [EXTRACTED]
+- [[README_74]] - `contains` [EXTRACTED]
+- [[Related Skills_75]] - `contains` [EXTRACTED]
+- [[Usage_76]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-socrates
+#graphify/document #graphify/EXTRACTED #community/Community_1209

@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-qa/SKILL.md"
 type: "document"
-community: "Skill (i-qa)"
+community: "Community 431"
 location: "L101"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-qa
+  - community/Community_431
 ---
 
 # C. AWS Athena
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-qa
+#graphify/document #graphify/EXTRACTED #community/Community_431

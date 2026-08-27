@@ -1,11 +1,11 @@
 ---
 source_file: "firmware/voice-terminal/components/lvgl_kawaii_face/examples/basic_cycle/CMakeLists.txt"
 type: "code"
-community: "Idf Component (main)"
+community: "Community 908"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Idf_Component_main
+  - community/Community_908
 ---
 
 # Kawaii Face Basic Cycle Example Root CMakeLists
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[LVGL Kawaii Face Component CMakeLists]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Idf_Component_main
+#graphify/code #graphify/EXTRACTED #community/Community_908

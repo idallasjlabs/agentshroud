@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/run-standalone.sh"
 type: "code"
-community: "Run Standalone (hermes)"
-location: "L84"
+community: "Community 530"
+location: "L100"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Run_Standalone_hermes
+  - community/Community_530
 ---
 
 # _wait_for_gateway_healthy()
@@ -15,4 +15,4 @@ tags:
 - [[cmd_up()]] - `calls` [EXTRACTED]
 - [[run-standalone.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Run_Standalone_hermes
+#graphify/code #graphify/EXTRACTED #community/Community_530

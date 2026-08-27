@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/agentshroud.yaml.md"
 type: "document"
-community: "Agentshroud.yaml (03 - Configuration)"
+community: "Community 251"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Agentshroudyaml_03_-_Configuration
+  - community/Community_251
 ---
 
 # agentshroud.yaml.md
@@ -21,4 +21,4 @@ tags:
 - [[mcp_config.py]] - `references` [INFERRED]
 - [[ssh-config]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Agentshroudyaml_03_-_Configuration
+#graphify/document #graphify/EXTRACTED #community/Community_251

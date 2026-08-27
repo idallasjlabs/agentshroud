@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/WORKSPACE_USAGE.md"
 type: "document"
-community: "Workspace Usage (architecture)"
+community: "Community 159"
 location: "L49"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Workspace_Usage_architecture
+  - community/Community_159
 ---
 
 # Common Workflows
@@ -19,4 +19,4 @@ tags:
 - [[Workflow 4 Bulk File Operations]] - `contains` [EXTRACTED]
 - [[Workflow 5 Interactive Editing]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Workspace_Usage_architecture
+#graphify/document #graphify/EXTRACTED #community/Community_159

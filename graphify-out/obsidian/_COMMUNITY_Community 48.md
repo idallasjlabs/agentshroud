@@ -1,0 +1,197 @@
+---
+type: community
+members: 170
+---
+
+# Community 48
+
+**Members:** 170 nodes
+
+## Members
+- [[._build_modules()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_all_pillars_scores_five()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_all_scorers_optimizing_with_full_stack()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_all_scorers_zero_without_modules_or_state()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_bare_environment()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_baseline_only()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_baseline_only()_1]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_bot_filter_matches_normalised_image()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_clamd_running_true_with_connectable_socket()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_clean_fresh_and_stale_reports()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_clean_no_report_three()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_clean_when_installed_not_running()_2]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_clean_when_installed_without_report()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_compact_timestamp_normalised_to_iso()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_compliance_levels()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_compose_text_empty_when_absent()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_compose_text_skips_unreadable_then_reads()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_containerized_compose_equivalents()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_containerized_compose_internal_network()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_containerized_compose_private_registry()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_containerized_fallback_evidence()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_containerized_no_compose_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_containerized_no_cosign_no_pipeline_evidence()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_containerized_pipeline_evidence_full()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_containerized_public_image_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_cosign_with_runtime_verification()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_cosign_with_wired_verifier_module()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_critical_and_warning_statuses()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_critical_high_medium_branches()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_distinct_namespaces_partial_caps()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_docker_config_auths_full()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_empty_auths_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_empty_dir_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_empty_files_skipped()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_empty_sbom_scores_two()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_failures_score_two()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_falco_no_proc_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_falco_running_detected()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_falco_zombie_only_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_fluent_bit_running_false_without_pidfile()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_fluent_bit_running_true_with_live_pid()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_fresh_clean_is_optimizing()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_fresh_file_returns_true()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_full_attestation_chain()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_full_compose()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_full_daemon_json()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_full_host_evidence()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_full_root_caps_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_full_stack()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_full_stack()_1]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_full_stack()_2]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_full_stack_scores_five()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_full_stack_with_review_evidence()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_fully_isolated_container_scores_five()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_garbage_timestamp_falls_back_to_mtime()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_gates_pass_with_full_evidence()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_gates_zero_affected_domains()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_icc_disabled_with_validator()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_icc_only()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_iec_sl_levels()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_import_failure_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_installed_not_running()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_installed_not_running_is_clean_note()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_invalid_json()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_invalid_json_returns_empty()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_invalid_then_valid()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_malware_30h_old_scan_measured()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_malware_fresh_scan_optimizing()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_malware_running_but_nothing_scanned()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_missing_auth_module_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_missing_dir()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_missing_dir_returns_empty()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_missing_dir_returns_none()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_missing_rbac_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_namespace_check_exception_assumes_isolated()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_no_compose_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_no_config_not_containerized_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_no_cosign_outside_container_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_no_files()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_no_kernel_info_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_no_sbom_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_not_containerized_no_config_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_not_installed()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_not_installed_not_running()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_not_run()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_not_run_no_binary()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_not_run_when_not_installed()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_not_run_without_binary_or_report()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_not_running()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_old_file_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_oscap_binary_present_not_run()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_plain_name_and_mtime_timestamp()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_reads_daemon_json()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_rich_environment()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_running_no_alert_dir()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_running_report_mtime_timestamp()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_running_with_alert_dir()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_running_with_alerts_sets_timestamp()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_running_with_fresh_log()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_running_without_alert_dir()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_running_without_logs()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_running_without_report()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_runtime_noncritical_findings_scores_four()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_sbom_with_packages_trivy_branches()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_secrets_path_is_file_iterdir_error()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_security_scan_sh_empty_when_absent()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_security_scan_sh_read()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_shared_mount_namespace_returns_one()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_stale_report_caps_at_one()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_stat_error_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_timestamp_falls_back_to_file_mtime()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_timestamp_suffix_strip_branch()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_true_and_false_against_real_app_state()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_two_day_old_clean_is_measured()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_unreadable_first_path_falls_through()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_unreadable_status_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_valid()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_wazuh_agent_absent()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_wazuh_agent_detected()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_weighted_subscore_empty_map()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_weighted_subscore_partial()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[Path_37]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[Redirect every Path(...) constructed inside the module into a sandbox.      Abso]] - rationale - gateway/tests/test_scanner_integration_coverage.py
+- [[Replace _app_state_has with a controllable membership set.]] - rationale - gateway/tests/test_scanner_integration_coverage.py
+- [[Replace shutil.which with a controllable name → path mapping.]] - rationale - gateway/tests/test_scanner_integration_coverage.py
+- [[Set a file's mtime to `hours` hours in the past.]] - rationale - gateway/tests/test_scanner_integration_coverage.py
+- [[TestAccessControl_1]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestAgenticScorers]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestAiModelSupplyChain]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestAppStateHas]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestClamavSummary]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestComplianceAuditing]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestComplianceMaths]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestComputeScorecard_1]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestContainerRuntimeIsolation]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestDaemonConfigReader]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestDataConfidentiality]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestDockerDaemonConfig]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestFalcoSummary]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestFluentBitSummary]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestGetSbom_1]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestHostOsHardening]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestIdentityAuth]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestImageSigningProvenance]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestIncidentResponse]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestIsFresh]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestLoadLatestJson_1]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestLoggingMonitoring]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestMandatoryGates]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestNetworkSegmentation]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestOpenscapSummary]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestProcScans]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestRegistrySecurity]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestResourceAvailability]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestRuntimeProtectionAndMalware]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestSecretsManagement]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestSocketAndPidProbes]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestSupplyChain]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestTextReaders]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestTrivyImageSummaries]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestTrivySummary]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestVulnerabilityManagement]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestWazuhSummary]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[Write a file under the sandbox root, creating parents.]] - rationale - gateway/tests/test_scanner_integration_coverage.py
+- [[_age()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[_w()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[flags()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[fs()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[test_scanner_integration_coverage.py]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[tools()]] - code - gateway/tests/test_scanner_integration_coverage.py
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/Community_48
+SORT file.name ASC
+```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_Community 162]]
+- 2 edges to [[_COMMUNITY_Community 926]]
+- 2 edges to [[_COMMUNITY_Community 1282]]
+- 1 edge to [[_COMMUNITY_Community 38]]
+- 1 edge to [[_COMMUNITY_Community 1366]]
+
+## Top bridge nodes
+- [[test_scanner_integration_coverage.py]] - degree 50, connects to 5 communities

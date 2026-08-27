@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_simple.py"
 type: "code"
-community: "Main Simple"
+community: "Community 9"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Main_Simple
+  - community/Community_9
 ---
 
 # test_main_simple.py
@@ -35,4 +35,4 @@ tags:
 - [[test_security_headers_middleware_normal_response()]] - `contains` [EXTRACTED]
 - [[test_security_headers_middleware_reraises_non_group()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Main_Simple
+#graphify/code #graphify/EXTRACTED #community/Community_9

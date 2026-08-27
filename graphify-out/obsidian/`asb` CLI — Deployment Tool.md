@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "document"
-community: "Agentic Os (architecture)"
+community: "Community 1271"
 location: "L752"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Agentic_Os_architecture
+  - community/Community_1271
 ---
 
 # `asb` CLI — Deployment Tool
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[10. Infrastructure & Runtime]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Agentic_Os_architecture
+#graphify/document #graphify/EXTRACTED #community/Community_1271

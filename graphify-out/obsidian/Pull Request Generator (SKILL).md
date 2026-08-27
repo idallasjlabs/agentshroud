@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-pr/SKILL.md"
 type: "document"
-community: "Readme (i-pm)"
+community: "Community 592"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-pm
+  - community/Community_592
 ---
 
 # Pull Request Generator (SKILL)
@@ -15,4 +15,4 @@ tags:
 - [[Project Management (SKILL)]] - `references` [EXTRACTED]
 - [[Pull Request Generator (README)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-pm
+#graphify/document #graphify/EXTRACTED #community/Community_592

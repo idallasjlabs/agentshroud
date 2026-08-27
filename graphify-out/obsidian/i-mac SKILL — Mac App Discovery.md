@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-mac/SKILL.md"
 type: "document"
-community: "Readme (i-mac)"
+community: "Community 1481"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-mac
+  - community/Community_1481
 ---
 
 # i-mac SKILL — Mac App Discovery
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[i-mac README — macOS System Administrator (MAC)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-mac
+#graphify/document #graphify/EXTRACTED #community/Community_1481

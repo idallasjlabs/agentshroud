@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "rationale"
-community: "Mcp Result Endpoint"
+community: "Community 487"
 location: "L73"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Mcp_Result_Endpoint
+  - community/Community_487
 ---
 
 # A result with no threats should be accepted and audited (200).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_clean_result_accepted()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Mcp_Result_Endpoint
+#graphify/rationale #graphify/EXTRACTED #community/Community_487

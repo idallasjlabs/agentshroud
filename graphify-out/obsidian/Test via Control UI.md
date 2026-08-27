@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/SETUP_API_KEYS.md"
 type: "document"
-community: "Setup Api Keys (setup)"
+community: "Community 317"
 location: "L195"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Api_Keys_setup
+  - community/Community_317
 ---
 
 # Test via Control UI
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Step 7 Test the Bot]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Api_Keys_setup
+#graphify/document #graphify/EXTRACTED #community/Community_317

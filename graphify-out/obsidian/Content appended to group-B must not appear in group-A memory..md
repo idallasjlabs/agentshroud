@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_isolation.py"
 type: "rationale"
-community: "Shared Memory Write Acl"
+community: "Community 26"
 location: "L106"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Shared_Memory_Write_Acl
+  - community/Community_26
 ---
 
 # Content appended to group-B must not appear in group-A memory.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_group_b_write_invisible_from_group_a()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Shared_Memory_Write_Acl
+#graphify/rationale #graphify/EXTRACTED #community/Community_26

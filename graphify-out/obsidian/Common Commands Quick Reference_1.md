@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md"
 type: "document"
-community: "Skills Guide (i-reference)"
+community: "Community 272"
 location: "L144"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skills_Guide_i-reference
+  - community/Community_272
 ---
 
 # Common Commands Quick Reference
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GSDE&G Skills Reference_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skills_Guide_i-reference
+#graphify/document #graphify/EXTRACTED #community/Community_272

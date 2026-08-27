@@ -1,15 +1,18 @@
 ---
 type: community
-members: 2
+members: 5
 ---
 
 # Community 1528
 
-**Members:** 2 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[.test_switch_model_script_exists_with_supported_targets()]] - code - gateway/tests/test_config_validation.py
-- [[Model switch helper should support local and major cloud providers.]] - rationale - gateway/tests/test_config_validation.py
+- [[Current Status_4]] - document - docs/integrations/README.md
+- [[Integrations Documentation]] - document - docs/integrations/README.md
+- [[Network Security  Egress Control Flowchart]] - image - docs/diagrams/images/diagram-13-network-security-egress.png
+- [[Planned Documents_3]] - document - docs/integrations/README.md
+- [[README_122]] - document - docs/integrations/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +22,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Architecture Docs]]
+- 1 edge to [[_COMMUNITY_Community 320]]
+- 1 edge to [[_COMMUNITY_Community 280]]
 
 ## Top bridge nodes
-- [[.test_switch_model_script_exists_with_supported_targets()]] - degree 2, connects to 1 community
+- [[README_122]] - degree 3, connects to 1 community
+- [[Network Security  Egress Control Flowchart]] - degree 2, connects to 1 community

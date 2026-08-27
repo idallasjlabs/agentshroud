@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/lib/container-runtime.sh"
 type: "code"
-community: "Container Runtime (lib)"
+community: "Community 1090"
 location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Container_Runtime_lib
+  - community/Community_1090
 ---
 
 # detect_container_runtime()
@@ -16,4 +16,4 @@ tags:
 - [[_cr_plugin_works()]] - `calls` [EXTRACTED]
 - [[container-runtime.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Container_Runtime_lib
+#graphify/code #graphify/EXTRACTED #community/Community_1090

@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "code"
-community: "Server (voice_gateway)"
+community: "Community 115"
 location: "L685"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Server_voice_gateway
+  - community/Community_115
 ---
 
 # _call_llm()
@@ -24,4 +24,4 @@ tags:
 - [[test_ws_use_model_command_intercepted()]] - `conceptually_related_to` [INFERRED]
 - [[voice_endpoint()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Server_voice_gateway
+#graphify/code #graphify/EXTRACTED #community/Community_115

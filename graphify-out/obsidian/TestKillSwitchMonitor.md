@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_killswitch_monitor.py"
 type: "code"
-community: "Killswitch Monitor & Observatory Mode"
+community: "Community 13"
 location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Killswitch_Monitor__Observatory_Mode
+  - community/Community_13
 ---
 
 # TestKillSwitchMonitor
@@ -23,4 +23,4 @@ tags:
 - [[Test kill switch monitor functionality.]] - `rationale_for` [EXTRACTED]
 - [[test_killswitch_monitor.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Killswitch_Monitor__Observatory_Mode
+#graphify/code #graphify/EXTRACTED #community/Community_13

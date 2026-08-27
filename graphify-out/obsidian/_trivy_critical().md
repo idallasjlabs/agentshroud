@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "Scanner Integration"
+community: "Community 123"
 location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Scanner_Integration
+  - community/Community_123
 ---
 
 # _trivy_critical()
@@ -17,4 +17,4 @@ tags:
 - [[Any_70]] - `references` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Scanner_Integration
+#graphify/code #graphify/EXTRACTED #community/Community_123

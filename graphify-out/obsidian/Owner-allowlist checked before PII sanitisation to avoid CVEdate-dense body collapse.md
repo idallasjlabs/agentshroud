@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_email_owner_bypasses_pii.py"
 type: "rationale"
-community: "Forward (routes)"
+community: "Community 63"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Forward_routes
+  - community/Community_63
 ---
 
 # Owner-allowlist checked before PII sanitisation to avoid CVE/date-dense body collapse
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[email_send()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Forward_routes
+#graphify/rationale #graphify/EXTRACTED #community/Community_63

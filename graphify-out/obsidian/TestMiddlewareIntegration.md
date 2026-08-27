@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "code"
-community: "Tool Result Pii"
+community: "Community 513"
 location: "L264"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tool_Result_Pii
+  - community/Community_513
 ---
 
 # TestMiddlewareIntegration
@@ -30,4 +30,4 @@ tags:
 - [[ToolResultSanitizer]] - `uses` [INFERRED]
 - [[test_tool_result_pii.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Tool_Result_Pii
+#graphify/code #graphify/EXTRACTED #community/Community_513

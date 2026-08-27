@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/citation_verifier.py"
 type: "rationale"
-community: "Intel Endpoint"
+community: "Community 113"
 location: "L56"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Intel_Endpoint
+  - community/Community_113
 ---
 
 # A source counts as proven only on a 2xx with non-empty content.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.ok()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Intel_Endpoint
+#graphify/rationale #graphify/EXTRACTED #community/Community_113

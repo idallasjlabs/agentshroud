@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/v0.8.0-feature-list-final.md"
+source_file: "CHANGELOG.md"
 type: "document"
-community: "V0.8.0 Feature List Final (v0.8)"
-location: "L157"
+community: "Community 984"
+location: "L772"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/V080_Feature_List_Final_v08
+  - community/Community_984
 ---
 
 # Summary
 
 ## Connections
-- [[AgentShroud™ v0.8.0 Watchtower — Complete Feature List]] - `contains` [EXTRACTED]
+- [[Unreleased — featv0.8.0-enforcement-hardening (session 3 — 2026-03-15)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/V080_Feature_List_Final_v08
+#graphify/document #graphify/EXTRACTED #community/Community_984

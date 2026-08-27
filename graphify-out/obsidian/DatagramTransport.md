@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/dns_forwarder.py"
 type: "code"
-community: "Dns Forwarder (proxy)"
+community: "Community 560"
 location: "L279"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Dns_Forwarder_proxy
+  - community/Community_560
 ---
 
 # DatagramTransport
@@ -15,4 +15,4 @@ tags:
 - [[DNSBlocklist]] - `uses` [INFERRED]
 - [[start_dns_forwarder()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Dns_Forwarder_proxy
+#graphify/code #graphify/INFERRED #community/Community_560

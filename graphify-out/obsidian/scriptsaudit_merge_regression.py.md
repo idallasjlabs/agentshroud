@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-ab/SKILL.md"
 type: "concept"
-community: "Skill (i-ab)"
+community: "Community 1311"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Skill_i-ab
+  - community/Community_1311
 ---
 
 # scripts/audit_merge_regression.py
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[GSDL-715 (silent regression incident)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Skill_i-ab
+#graphify/concept #graphify/EXTRACTED #community/Community_1311

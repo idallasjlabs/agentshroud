@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router_streaming.py"
 type: "code"
-community: "Router"
+community: "Community 38"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Router
+  - community/Community_38
 ---
 
 # test_router_streaming.py
@@ -30,4 +30,4 @@ tags:
 - [[test_stream_skips_chunk_missing_choices_key_and_continues()]] - `contains` [EXTRACTED]
 - [[test_stream_yields_content_deltas_in_order()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Router
+#graphify/code #graphify/EXTRACTED #community/Community_38

@@ -1,18 +1,17 @@
 ---
-source_file: ".agents/skills/i-browser/scripts/browse.py"
+source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "rationale"
-community: "Browse (scripts)"
+community: "Community 143"
 location: "L427"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Browse_scripts
+  - community/Community_143
 ---
 
 # Raised when security policy is violated
 
 ## Connections
-- [[SecurityError]] - `rationale_for` [EXTRACTED]
-- [[SecurityError_4]] - `rationale_for` [EXTRACTED]
+- [[SecurityError_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Browse_scripts
+#graphify/rationale #graphify/EXTRACTED #community/Community_143

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "rationale"
-community: "Slack Proxy"
+community: "Community 593"
 location: "L503"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Slack_Proxy
+  - community/Community_593
 ---
 
 # handle_event ignores non-message event types.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_non_message_event_ignored()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Slack_Proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_593

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md"
 type: "document"
-community: "Web Proxy.py (Proxy Layer)"
+community: "Community 722"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Web_Proxypy_Proxy_Layer
+  - community/Community_722
 ---
 
 # web_proxy.py
@@ -21,4 +21,4 @@ tags:
 - [[Security Check Order (check_request)]] - `contains` [EXTRACTED]
 - [[web_proxy.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Web_Proxypy_Proxy_Layer
+#graphify/document #graphify/EXTRACTED #community/Community_722

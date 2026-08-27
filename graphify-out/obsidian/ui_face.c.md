@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/ui_face.c"
 type: "code"
-community: "Wakeword (main)"
+community: "Community 249"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Wakeword_main
+  - community/Community_249
 ---
 
 # ui_face.c
@@ -21,8 +21,9 @@ tags:
 - [[_touch_pressed()]] - `contains` [EXTRACTED]
 - [[_touch_start_only()]] - `contains` [EXTRACTED]
 - [[remote_log.h]] - `imports` [EXTRACTED]
+- [[ui_face.c]] - `imports` [EXTRACTED]
 - [[ui_face_init()]] - `contains` [EXTRACTED]
 - [[ui_face_set_agent()]] - `contains` [EXTRACTED]
 - [[ui_face_set_state()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Wakeword_main
+#graphify/code #graphify/EXTRACTED #community/Community_249

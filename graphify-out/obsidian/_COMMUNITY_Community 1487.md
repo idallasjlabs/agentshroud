@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[op-wrapper.sh]] - code - docker/scripts/op-wrapper.sh
-- [[op-wrapper.sh script]] - code - docker/scripts/op-wrapper.sh
+- [[installapiprerequisites endpoint]] - concept - gateway/web/templates/installer.html
+- [[checkPrereqs()]] - code - gateway/web/templates/installer.html
 
 ## Live Query (requires Dataview plugin)
 

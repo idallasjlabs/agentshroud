@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "RBAC & Ingest Middleware"
+community: "Community 6"
 location: "L60"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/RBAC__Ingest_Middleware
+  - community/Community_6
 ---
 
 # SubagentMonitorConfig
@@ -43,4 +43,4 @@ tags:
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_subagent_monitor.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/RBAC__Ingest_Middleware
+#graphify/code #graphify/INFERRED #community/Community_6

@@ -1,13 +1,13 @@
 ---
 source_file: "branding/logos/variants/logo-on-brand-blue-1024x1024.png"
 type: "image"
-community: "Logo On Brand Blue (variants)"
+community: "Community 1825"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Logo_On_Brand_Blue_variants
+  - community/Community_1825
 ---
 
 # AgentShroud Logo on Brand Blue Background
 
-#graphify/image #graphify/EXTRACTED #community/Logo_On_Brand_Blue_variants
+#graphify/image #graphify/EXTRACTED #community/Community_1825

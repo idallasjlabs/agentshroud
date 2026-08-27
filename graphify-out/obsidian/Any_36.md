@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_integrity.py"
 type: "code"
-community: "Context Integrity"
+community: "Community 116"
 location: "L64"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Context_Integrity
+  - community/Community_116
 ---
 
 # Any
@@ -17,4 +17,4 @@ tags:
 - [[PromptGuard]] - `uses` [INFERRED]
 - [[SystemPromptFingerprint]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Context_Integrity
+#graphify/code #graphify/INFERRED #community/Community_116

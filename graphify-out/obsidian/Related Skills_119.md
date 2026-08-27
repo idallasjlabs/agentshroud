@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-vulcan/README.md"
 type: "document"
-community: "Readme (i-vulcan)"
+community: "Community 1250"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-vulcan
+  - community/Community_1250
 ---
 
 # Related Skills
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Vulcan — Subject Matter Auditor_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-vulcan
+#graphify/document #graphify/EXTRACTED #community/Community_1250

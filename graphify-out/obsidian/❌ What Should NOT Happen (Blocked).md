@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/CREDENTIAL-SECURITY-POLICY.md"
 type: "document"
-community: "Credential Security Policy (security)"
+community: "Community 506"
 location: "L152"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Credential_Security_Policy_security
+  - community/Community_506
 ---
 
 # ❌ What Should NOT Happen (Blocked)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Behavior Examples]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Credential_Security_Policy_security
+#graphify/document #graphify/EXTRACTED #community/Community_506

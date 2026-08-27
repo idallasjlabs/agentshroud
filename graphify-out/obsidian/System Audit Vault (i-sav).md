@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-sav/SKILL.md"
 type: "document"
-community: "Readme (i-pm)"
+community: "Community 146"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-pm
+  - community/Community_146
 ---
 
 # System Audit Vault (i-sav)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[System Audit Documentation (README)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-pm
+#graphify/document #graphify/EXTRACTED #community/Community_146

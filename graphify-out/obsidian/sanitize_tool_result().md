@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
 type: "code"
-community: "RBAC & Ingest Middleware"
+community: "Community 156"
 location: "L258"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBAC__Ingest_Middleware
+  - community/Community_156
 ---
 
 # sanitize_tool_result()
@@ -20,4 +20,4 @@ tags:
 - [[test_tool_result_sanitizer_enhanced.py]] - `imports` [EXTRACTED]
 - [[tool_result_sanitizer_enhanced.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBAC__Ingest_Middleware
+#graphify/code #graphify/EXTRACTED #community/Community_156

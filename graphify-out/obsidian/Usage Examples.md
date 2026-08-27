@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bot-capabilities.md"
 type: "document"
-community: "Bot Capabilities (docker)"
+community: "Community 746"
 location: "L58"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Capabilities_docker
+  - community/Community_746
 ---
 
 # Usage Examples
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Credential Management - 1Password Integration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Capabilities_docker
+#graphify/document #graphify/EXTRACTED #community/Community_746

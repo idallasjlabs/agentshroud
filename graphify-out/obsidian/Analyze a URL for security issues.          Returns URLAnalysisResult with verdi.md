@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/url_analyzer.py"
 type: "rationale"
-community: "Url Analyzer"
+community: "Community 5"
 location: "L111"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Url_Analyzer
+  - community/Community_5
 ---
 
 # Analyze a URL for security issues.          Returns URLAnalysisResult with verdi
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.analyze()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Url_Analyzer
+#graphify/rationale #graphify/EXTRACTED #community/Community_5

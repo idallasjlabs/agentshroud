@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-14-logic-flow.png"
 type: "image"
-community: "Diagram 09 Data Lineage (images)"
+community: "Community 353"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Diagram_09_Data_Lineage_images
+  - community/Community_353
 ---
 
 # Agent Decision Logic Flowchart
@@ -16,4 +16,4 @@ tags:
 - [[MCP Inspector (injection scan, PII scan, sensitive-op scan; ThreatLevel NONELOWMEDIUMHIGH)]] - `conceptually_related_to` [EXTRACTED]
 - [[Telegram Message Sequence Diagram]] - `semantically_similar_to` [INFERRED]
 
-#graphify/image #graphify/EXTRACTED #community/Diagram_09_Data_Lineage_images
+#graphify/image #graphify/EXTRACTED #community/Community_353

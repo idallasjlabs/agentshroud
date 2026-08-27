@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/seccomp-profiles.md"
 type: "document"
-community: "Docker Compose.yml (03 - Configuration)"
+community: "Community 428"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Composeyml_03_-_Configuration
+  - community/Community_428
 ---
 
 # seccomp-profiles.md
@@ -15,4 +15,4 @@ tags:
 - [[Seccomp Profiles]] - `contains` [EXTRACTED]
 - [[docker-compose.yml]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Composeyml_03_-_Configuration
+#graphify/document #graphify/EXTRACTED #community/Community_428

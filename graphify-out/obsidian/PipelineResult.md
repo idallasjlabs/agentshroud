@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "Pipeline (proxy)"
+community: "Community 86"
 location: "L51"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Pipeline_proxy
+  - community/Community_86
 ---
 
 # PipelineResult
@@ -39,4 +39,4 @@ tags:
 - [[pipeline.py]] - `contains` [EXTRACTED]
 - [[test_telegram_pipeline.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Pipeline_proxy
+#graphify/code #graphify/INFERRED #community/Community_86

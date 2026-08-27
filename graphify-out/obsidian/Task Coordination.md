@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-pm/SKILL.md"
 type: "document"
-community: "Skill (i-pm)"
+community: "Community 459"
 location: "L68"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-pm
+  - community/Community_459
 ---
 
 # Task Coordination
@@ -17,4 +17,4 @@ tags:
 - [[Skill Project Management (PM)]] - `contains` [EXTRACTED]
 - [[Tracking Format]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-pm
+#graphify/document #graphify/EXTRACTED #community/Community_459

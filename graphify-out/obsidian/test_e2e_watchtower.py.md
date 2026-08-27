@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "Security Audit & Watchtower Tests"
+community: "Community 870"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Audit__Watchtower_Tests
+  - community/Community_870
 ---
 
 # test_e2e_watchtower.py
@@ -43,4 +43,4 @@ tags:
 - [[test_pipeline_owner_exempt_from_fail_closed()]] - `contains` [EXTRACTED]
 - [[trust_manager()_3]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests
+#graphify/code #graphify/EXTRACTED #community/Community_870

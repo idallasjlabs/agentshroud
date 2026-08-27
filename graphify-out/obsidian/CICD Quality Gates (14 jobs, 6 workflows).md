@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "concept"
-community: "Agentic Os (architecture)"
+community: "Community 1011"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Agentic_Os_architecture
+  - community/Community_1011
 ---
 
 # CI/CD Quality Gates (14 jobs, 6 workflows)
@@ -17,4 +17,4 @@ tags:
 - [[GitHub Actions CI (test + lint + security-scan)]] - `conceptually_related_to` [EXTRACTED]
 - [[PrePost Tool Hook Enforcement Layer]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Agentic_Os_architecture
+#graphify/concept #graphify/EXTRACTED #community/Community_1011

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-ux/SKILL.md"
 type: "document"
-community: "Skill (i-ux)"
+community: "Community 244"
 location: "L84"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-ux
+  - community/Community_244
 ---
 
 # Interaction Design Patterns
@@ -18,4 +18,4 @@ tags:
 - [[Progressive Disclosure_1]] - `contains` [EXTRACTED]
 - [[Skill UX Expert (UX)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-ux
+#graphify/document #graphify/EXTRACTED #community/Community_244

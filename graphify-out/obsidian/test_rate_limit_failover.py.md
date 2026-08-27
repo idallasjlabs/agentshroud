@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rate_limit_failover.py"
 type: "code"
-community: "Rate Limit Failover"
+community: "Community 979"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Rate_Limit_Failover
+  - community/Community_979
 ---
 
 # test_rate_limit_failover.py
@@ -19,4 +19,4 @@ tags:
 - [[test_detector_skips_non_429()]] - `contains` [EXTRACTED]
 - [[test_proxy_failover_on_post_retry_429()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Rate_Limit_Failover
+#graphify/code #graphify/EXTRACTED #community/Community_979

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "rationale"
-community: "MCP Inspector & Audit"
+community: "Community 106"
 location: "L133"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCP_Inspector__Audit
+  - community/Community_106
 ---
 
 # Result of a permission check.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[PermissionCheck]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCP_Inspector__Audit
+#graphify/rationale #graphify/EXTRACTED #community/Community_106

@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[Branding Specialist README (OpenClaw)]] - document - docker/config/openclaw/skills/i-bs/README.md
-- [[Branding Specialist SKILL (OpenClaw)]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[SKILL_139]] - document - docker/config/openclaw/skills/i-chaos-engineering/SKILL.md
+- [[Skill chaos-engineering_2]] - document - docker/config/openclaw/skills/i-chaos-engineering/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

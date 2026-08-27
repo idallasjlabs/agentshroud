@@ -1,13 +1,13 @@
 ---
 source_file: ".agents/skills/i-daedalus/SKILL.md"
 type: "document"
-community: "Skill (i-daedalus)"
+community: "Community 1669"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-daedalus
+  - community/Community_1669
 ---
 
 # Daedalus — Concept Illustrator Skill
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-daedalus
+#graphify/document #graphify/EXTRACTED #community/Community_1669

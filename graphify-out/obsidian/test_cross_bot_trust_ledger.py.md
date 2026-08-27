@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cross_bot_trust_ledger.py"
 type: "code"
-community: "Cross Bot Trust Ledger"
+community: "Community 1016"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Cross_Bot_Trust_Ledger
+  - community/Community_1016
 ---
 
 # test_cross_bot_trust_ledger.py
@@ -30,4 +30,4 @@ tags:
 - [[openclaw_tm()]] - `contains` [EXTRACTED]
 - [[policy()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Cross_Bot_Trust_Ledger
+#graphify/code #graphify/EXTRACTED #community/Community_1016

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/user-guide.md"
 type: "document"
-community: "User Guide (docs)"
+community: "Community 306"
 location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/User_Guide_docs
+  - community/Community_306
 ---
 
 # Getting Started
@@ -17,4 +17,4 @@ tags:
 - [[3. Start Chatting]] - `contains` [EXTRACTED]
 - [[AgentShroud User Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/User_Guide_docs
+#graphify/document #graphify/EXTRACTED #community/Community_306

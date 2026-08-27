@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Telegram Issues SSH Key Regeneration on Restart]] - rationale - docs/project/TELEGRAM_ISSUES.md
+- [[PromptGuard.scan()]] - code - gateway/security/prompt_guard.py
 
 ## Live Query (requires Dataview plugin)
 

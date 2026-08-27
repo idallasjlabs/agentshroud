@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/skill-creator/SKILL.md"
 type: "document"
-community: "Skill (skill-creator)"
+community: "Community 777"
 location: "L70"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_skill-creator
+  - community/Community_777
 ---
 
 # Bundled Resources (optional)
@@ -17,4 +17,4 @@ tags:
 - [[References (`references`)]] - `contains` [EXTRACTED]
 - [[Scripts (`scripts`)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_skill-creator
+#graphify/document #graphify/EXTRACTED #community/Community_777

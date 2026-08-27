@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Other/ssh_proxy.py.md"
 type: "document"
-community: "Ssh Proxy.py (Other)"
+community: "Community 909"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Ssh_Proxypy_Other
+  - community/Community_909
 ---
 
 # ssh_proxy.py
@@ -20,4 +20,4 @@ tags:
 - [[Security Notes_5]] - `contains` [EXTRACTED]
 - [[ssh_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Ssh_Proxypy_Other
+#graphify/document #graphify/EXTRACTED #community/Community_909

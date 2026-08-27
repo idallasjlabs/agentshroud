@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Setup Guide (setup)"
+community: "Community 384"
 location: "L262"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Guide_setup
+  - community/Community_384
 ---
 
 # Step 4: Choose Security Mode
@@ -16,4 +16,4 @@ tags:
 - [[Sidecar Mode]] - `contains` [EXTRACTED]
 - [[Step-by-Step Installation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Guide_setup
+#graphify/document #graphify/EXTRACTED #community/Community_384

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/emergency-rollback.sh"
 type: "code"
-community: "Emergency Rollback (scripts)"
+community: "Community 1510"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Emergency_Rollback_scripts
+  - community/Community_1510
 ---
 
 # emergency-rollback.sh
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[emergency-rollback.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Emergency_Rollback_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_1510

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/nano-banana-pro/scripts/generate_image.py"
 type: "code"
-community: "Gen (scripts)"
+community: "Community 359"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gen_scripts
+  - community/Community_359
 ---
 
 # generate_image.py
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[SKILL_216]] - `references` [EXTRACTED]
 - [[get_api_key()]] - `contains` [EXTRACTED]
-- [[main()_27]] - `contains` [EXTRACTED]
+- [[main()_28]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gen_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_359

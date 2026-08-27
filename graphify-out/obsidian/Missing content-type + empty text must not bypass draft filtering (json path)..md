@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Module Group 723"
+community: "Community 324"
 location: "L2041"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_723
+  - community/Community_324
 ---
 
 # Missing content-type + empty text must not bypass draft filtering (json path).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_json_without_content_type_empty_text_with_draft_is_still_filtered()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_723
+#graphify/rationale #graphify/EXTRACTED #community/Community_324

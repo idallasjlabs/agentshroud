@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "rationale"
-community: "Killswitch Monitor & Observatory Mode"
+community: "Community 443"
 location: "L390"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Killswitch_Monitor__Observatory_Mode
+  - community/Community_443
 ---
 
 # Test set_global_mode handles missing components gracefully.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_security_pipeline_set_global_mode_missing_components()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Killswitch_Monitor__Observatory_Mode
+#graphify/rationale #graphify/EXTRACTED #community/Community_443

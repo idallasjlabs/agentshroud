@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/TELEGRAM_SETUP.md"
 type: "document"
-community: "Telegram Setup (setup)"
+community: "Community 649"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Telegram_Setup_setup
+  - community/Community_649
 ---
 
 # Telegram Bot Setup for OpenClaw
@@ -21,6 +21,6 @@ tags:
 - [[Step 2 Configure OpenClaw to Use Telegram]] - `contains` [EXTRACTED]
 - [[Step 3 Start Chatting]] - `contains` [EXTRACTED]
 - [[TELEGRAM_SETUP]] - `contains` [EXTRACTED]
-- [[Troubleshooting_32]] - `contains` [EXTRACTED]
+- [[Troubleshooting_33]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Telegram_Setup_setup
+#graphify/document #graphify/EXTRACTED #community/Community_649

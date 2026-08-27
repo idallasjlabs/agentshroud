@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/openclaw/config/workspace/PUBLIC-INFO.md"
 type: "document"
-community: "Public Info (collaborator-workspace)"
+community: "Community 181"
 location: "L48"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Public_Info_collaborator-workspace
+  - community/Community_181
 ---
 
 # Contact
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud — Collaborator Knowledge Base]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Public_Info_collaborator-workspace
+#graphify/document #graphify/EXTRACTED #community/Community_181

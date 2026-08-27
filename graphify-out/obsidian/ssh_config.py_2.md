@@ -1,19 +1,19 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/ssh_config.py.md"
 type: "document"
-community: "Ssh Config.py (Gateway Core)"
+community: "Community 753"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Ssh_Configpy_Gateway_Core
+  - community/Community_753
 ---
 
 # ssh_config.py
 
 ## Connections
 - [[Config Keys Read_7]] - `contains` [EXTRACTED]
-- [[Environment Variables Used_7]] - `contains` [EXTRACTED]
+- [[Environment Variables Used_8]] - `contains` [EXTRACTED]
 - [[Imports From  Exports To_7]] - `contains` [EXTRACTED]
 - [[Key Classes  Functions_7]] - `contains` [EXTRACTED]
 - [[Known Issues  Notes_8]] - `contains` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[SSHHostConfig Fields]] - `contains` [EXTRACTED]
 - [[ssh_config.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Ssh_Configpy_Gateway_Core
+#graphify/document #graphify/EXTRACTED #community/Community_753

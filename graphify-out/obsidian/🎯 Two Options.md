@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md"
 type: "document"
-community: "Google Calendar Quick Setup (setup)"
+community: "Community 544"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Google_Calendar_Quick_Setup_setup
+  - community/Community_544
 ---
 
 # 🎯 Two Options
@@ -16,4 +16,4 @@ tags:
 - [[Option A Simple (App Password + CalDAV) - RECOMMENDED FOR NOW]] - `contains` [EXTRACTED]
 - [[Option B Full (OAuth2 + Google APIs) - Better for production]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Google_Calendar_Quick_Setup_setup
+#graphify/document #graphify/EXTRACTED #community/Community_544

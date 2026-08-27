@@ -1,18 +1,17 @@
 ---
-source_file: ".agents/skills/i-browser/scripts/browse.py"
+source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "rationale"
-community: "Browse (scripts)"
+community: "Community 143"
 location: "L44"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Browse_scripts
+  - community/Community_143
 ---
 
 # Security configuration for browser automation
 
 ## Connections
-- [[SecurityConfig]] - `rationale_for` [EXTRACTED]
-- [[SecurityConfig_5]] - `rationale_for` [EXTRACTED]
+- [[SecurityConfig_4]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Browse_scripts
+#graphify/rationale #graphify/EXTRACTED #community/Community_143

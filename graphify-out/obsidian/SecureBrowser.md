@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "Browse (scripts)"
+community: "Community 73"
 location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Browse_scripts
+  - community/Community_73
 ---
 
 # SecureBrowser
@@ -29,8 +29,8 @@ tags:
 - [[.fill_field()]] - `method` [EXTRACTED]
 - [[.get_audit_log()]] - `method` [EXTRACTED]
 - [[.navigate()]] - `method` [EXTRACTED]
-- [[Secure browser automation with enterprise controls      Security guarantees_3]] - `rationale_for` [EXTRACTED]
+- [[Secure browser automation with enterprise controls      Security guarantees]] - `rationale_for` [EXTRACTED]
 - [[browse.py]] - `contains` [EXTRACTED]
 - [[main()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Browse_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_73

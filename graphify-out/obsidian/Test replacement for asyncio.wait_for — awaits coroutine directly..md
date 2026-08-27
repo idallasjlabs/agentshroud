@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_clamav_pipeline.py"
 type: "rationale"
-community: "Clamav Pipeline"
+community: "Community 331"
 location: "L69"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Clamav_Pipeline
+  - community/Community_331
 ---
 
 # Test replacement for asyncio.wait_for — awaits coroutine directly.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_instant_wait_for()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Clamav_Pipeline
+#graphify/rationale #graphify/EXTRACTED #community/Community_331

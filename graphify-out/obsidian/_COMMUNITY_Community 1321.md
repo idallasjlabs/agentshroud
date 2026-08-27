@@ -1,0 +1,27 @@
+---
+type: community
+members: 4
+---
+
+# Community 1321
+
+**Members:** 4 nodes
+
+## Members
+- [[Manual Usage (Current Method)]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Step 1 Create 1Password Share Link]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Step 2 Fetch with Browser-Fetch Skill]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Step 3 Parse Output]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/Community_1321
+SORT file.name ASC
+```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 772]]
+
+## Top bridge nodes
+- [[Manual Usage (Current Method)]] - degree 4, connects to 1 community

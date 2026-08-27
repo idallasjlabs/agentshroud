@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-gg/SKILL.md"
 type: "document"
-community: "Skill (i-gg)"
+community: "Community 894"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-gg
+  - community/Community_894
 ---
 
 # Skill: Git Workflow Guardian (GIT-GUARD)
@@ -21,4 +21,4 @@ tags:
 - [[Role_50]] - `contains` [EXTRACTED]
 - [[SKILL_85]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-gg
+#graphify/document #graphify/EXTRACTED #community/Community_894

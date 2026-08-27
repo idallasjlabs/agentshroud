@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "Voice Gateway"
-location: "L981"
+community: "Community 37"
+location: "L982"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Voice_Gateway
+  - community/Community_37
 ---
 
 # /voice is the one endpoint reachable over the public internet (Tailscale     Fun
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_ws_token_check_uses_constant_time_comparison()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Voice_Gateway
+#graphify/rationale #graphify/EXTRACTED #community/Community_37

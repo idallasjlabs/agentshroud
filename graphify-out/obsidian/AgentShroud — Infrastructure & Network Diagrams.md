@@ -1,12 +1,12 @@
 ---
 source_file: "docs/diagrams/02-infrastructure.md"
 type: "document"
-community: "02 Infrastructure (diagrams)"
+community: "Community 800"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/02_Infrastructure_diagrams
+  - community/Community_800
 ---
 
 # AgentShroud — Infrastructure & Network Diagrams
@@ -17,4 +17,4 @@ tags:
 - [[5. Network Topology Diagram]] - `contains` [EXTRACTED]
 - [[6. Deployment Diagram — What Runs Where]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/02_Infrastructure_diagrams
+#graphify/document #graphify/EXTRACTED #community/Community_800

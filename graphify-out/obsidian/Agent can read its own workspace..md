@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "Privilege Separation & File Sandbox"
+community: "Community 14"
 location: "L213"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Privilege_Separation__File_Sandbox
+  - community/Community_14
 ---
 
 # Agent can read its own workspace.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_workspace_read_allowed()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Privilege_Separation__File_Sandbox
+#graphify/rationale #graphify/EXTRACTED #community/Community_14

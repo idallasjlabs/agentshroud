@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/clamav_scanner.py"
 type: "code"
-community: "Security Toolchain"
+community: "Community 397"
 location: "L91"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Toolchain
+  - community/Community_397
 ---
 
 # parse_clamscan_output()
@@ -31,4 +31,4 @@ tags:
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Toolchain
+#graphify/code #graphify/EXTRACTED #community/Community_397

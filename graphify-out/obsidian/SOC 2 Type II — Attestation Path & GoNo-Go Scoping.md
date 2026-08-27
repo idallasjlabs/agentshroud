@@ -1,12 +1,12 @@
 ---
 source_file: "docs/compliance/soc2-attestation-path.md"
 type: "document"
-community: "Soc2 Attestation Path (compliance)"
+community: "Community 522"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Soc2_Attestation_Path_compliance
+  - community/Community_522
 ---
 
 # SOC 2 Type II — Attestation Path & Go/No-Go Scoping
@@ -20,4 +20,4 @@ tags:
 - [[Why this is on the board]] - `contains` [EXTRACTED]
 - [[soc2-attestation-path]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Soc2_Attestation_Path_compliance
+#graphify/document #graphify/EXTRACTED #community/Community_522

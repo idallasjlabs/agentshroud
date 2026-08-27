@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md"
 type: "document"
-community: "Alert Dispatcher.py (Security Modules)"
+community: "Community 507"
 location: "L66"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Alert_Dispatcherpy_Security_Modules
+  - community/Community_507
 ---
 
 # AlertDispatcher.cleanup_seen()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Function Details_27]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Alert_Dispatcherpy_Security_Modules
+#graphify/document #graphify/EXTRACTED #community/Community_507

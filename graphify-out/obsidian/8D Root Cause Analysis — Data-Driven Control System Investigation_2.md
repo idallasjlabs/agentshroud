@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-eightd/SKILL.md"
 type: "document"
-community: "Skill (i-eightd)"
+community: "Community 230"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-eightd
+  - community/Community_230
 ---
 
 # 8D Root Cause Analysis — Data-Driven Control System Investigation
@@ -22,4 +22,4 @@ tags:
 - [[The 8D Investigation Process_2]] - `contains` [EXTRACTED]
 - [[XML Configuration File Parsing_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-eightd
+#graphify/document #graphify/EXTRACTED #community/Community_230

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/project/legal/COMMUNICATION-TEMPLATES.md"
 type: "concept"
-community: "Communication Templates (legal)"
+community: "Community 1262"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Communication_Templates_legal
+  - community/Community_1262
 ---
 
 # Option 1 — Clean & Professional Trademark Notice
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[COMMUNICATION-TEMPLATES]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Communication_Templates_legal
+#graphify/concept #graphify/EXTRACTED #community/Community_1262

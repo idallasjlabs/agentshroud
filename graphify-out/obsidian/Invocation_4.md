@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-crpr/SKILL.md"
 type: "document"
-community: "Skill (i-crpr)"
+community: "Community 613"
 location: "L17"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-crpr
+  - community/Community_613
 ---
 
 # Invocation
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Create PR with Pre-Flight Audit (CRPR)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-crpr
+#graphify/document #graphify/EXTRACTED #community/Community_613

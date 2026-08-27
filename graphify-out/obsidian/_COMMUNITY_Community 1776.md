@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[egress_config.py (getset_egress_config)]] - code - gateway/security/egress_config.py
+- [[CodexBar Model Cost Usage CLI Summarizer]] - code - skills/openclaw/model-usage/scripts/model_usage.py
 
 ## Live Query (requires Dataview plugin)
 

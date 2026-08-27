@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-gg/README.md"
 type: "document"
-community: "Readme (i-gg)"
+community: "Community 1225"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-gg
+  - community/Community_1225
 ---
 
 # Purpose
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Git Workflow Guardian (GIT-GUARD)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-gg
+#graphify/document #graphify/EXTRACTED #community/Community_1225

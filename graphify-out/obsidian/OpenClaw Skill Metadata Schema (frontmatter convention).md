@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/skill-creator/scripts/quick_validate.py"
 type: "concept"
-community: "Skill (summarize)"
+community: "Community 400"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Skill_summarize
+  - community/Community_400
 ---
 
 # OpenClaw Skill Metadata Schema (frontmatter convention)
@@ -25,4 +25,4 @@ tags:
 - [[SKILL_240]] - `conceptually_related_to` [INFERRED]
 - [[validate_skill()]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/INFERRED #community/Skill_summarize
+#graphify/concept #graphify/INFERRED #community/Community_400

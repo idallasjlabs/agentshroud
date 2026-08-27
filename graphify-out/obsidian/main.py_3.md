@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
 type: "document"
-community: "System overview (00 - START HERE)"
+community: "Community 271"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/System_overview_00_-_START_HERE
+  - community/Community_271
 ---
 
 # main.py.md
@@ -31,4 +31,4 @@ tags:
 - [[main.py_4]] - `contains` [EXTRACTED]
 - [[middleware.py_1]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/System_overview_00_-_START_HERE
+#graphify/document #graphify/EXTRACTED #community/Community_271

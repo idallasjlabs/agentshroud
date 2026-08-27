@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "Web Proxy"
+community: "Community 30"
 location: "L95"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Web_Proxy
+  - community/Community_30
 ---
 
 # RateLimiter
@@ -42,4 +42,4 @@ tags:
 - [[test_web_proxy.py]] - `imports` [EXTRACTED]
 - [[web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Web_Proxy
+#graphify/code #graphify/INFERRED #community/Community_30

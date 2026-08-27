@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "rationale"
-community: "Key Rotation"
+community: "Community 756"
 location: "L112"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Key_Rotation
+  - community/Community_756
 ---
 
 # Test warning threshold calculation.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_should_warn()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Key_Rotation
+#graphify/rationale #graphify/EXTRACTED #community/Community_756

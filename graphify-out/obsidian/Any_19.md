@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "Pipeline (proxy)"
+community: "Community 86"
 location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Pipeline_proxy
+  - community/Community_86
 ---
 
 # Any
@@ -27,4 +27,4 @@ tags:
 - [[RBACConfig_1]] - `uses` [INFERRED]
 - [[ViolationType]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Pipeline_proxy
+#graphify/code #graphify/EXTRACTED #community/Community_86

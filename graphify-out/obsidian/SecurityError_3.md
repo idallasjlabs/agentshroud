@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "code"
-community: "Browse (scripts)"
+community: "Community 143"
 location: "L426"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Browse_scripts
+  - community/Community_143
 ---
 
 # SecurityError
@@ -17,7 +17,7 @@ tags:
 - [[.fill_field()_3]] - `calls` [EXTRACTED]
 - [[.navigate()_3]] - `calls` [EXTRACTED]
 - [[Exception]] - `inherits` [EXTRACTED]
-- [[Raised when security policy is violated_2]] - `rationale_for` [EXTRACTED]
+- [[Raised when security policy is violated_3]] - `rationale_for` [EXTRACTED]
 - [[browse.py_3]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Browse_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_143

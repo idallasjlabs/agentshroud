@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "Web Proxy"
+community: "Community 30"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Web_Proxy
+  - community/Community_30
 ---
 
 # test_web_proxy.py
@@ -40,4 +40,4 @@ tags:
 - [[passthrough_proxy()_1]] - `contains` [EXTRACTED]
 - [[proxy()_4]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Web_Proxy
+#graphify/code #graphify/EXTRACTED #community/Community_30

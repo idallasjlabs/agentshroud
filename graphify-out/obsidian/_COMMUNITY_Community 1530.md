@@ -1,15 +1,19 @@
 ---
 type: community
-members: 2
+members: 6
 ---
 
 # Community 1530
 
-**Members:** 2 nodes
+**Members:** 6 nodes
 
 ## Members
-- [[.test_openclaw_patch_defaults_to_qwen_local_model()]] - code - gateway/tests/test_config_validation.py
-- [[OpenClaw patch script should default to local Ollama but keep API adapter config]] - rationale - gateway/tests/test_config_validation.py
+- [[options.js]] - code - browser-extension/options.js
+- [[restore()]] - code - browser-extension/options.js
+- [[save()]] - code - browser-extension/options.js
+- [[savedEl]] - code - browser-extension/options.js
+- [[tokenEl]] - code - browser-extension/options.js
+- [[urlEl]] - code - browser-extension/options.js
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Architecture Docs]]
+- 1 edge to [[_COMMUNITY_Community 433]]
 
 ## Top bridge nodes
-- [[.test_openclaw_patch_defaults_to_qwen_local_model()]] - degree 2, connects to 1 community
+- [[save()]] - degree 2, connects to 1 community

@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Obsidian app.json (empty)]] - document - docs/vault/.obsidian/app.json
+- [[Self-Written Whisper Domain-Hint Prompt]] - concept - docker/config/openclaw/skills/graphify/references/transcribe.md
 
 ## Live Query (requires Dataview plugin)
 

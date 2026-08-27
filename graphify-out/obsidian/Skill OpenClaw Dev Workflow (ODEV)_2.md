@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-odev/SKILL.md"
 type: "document"
-community: "Skill (i-odev)"
+community: "Community 302"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-odev
+  - community/Community_302
 ---
 
 # Skill: OpenClaw Dev Workflow (ODEV)
@@ -22,4 +22,4 @@ tags:
 - [[SKILL_165]] - `contains` [EXTRACTED]
 - [[Tools you have for this workflow_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-odev
+#graphify/document #graphify/EXTRACTED #community/Community_302

@@ -1,14 +1,14 @@
 ---
 source_file: "voice_gateway/tts.py"
 type: "code"
-community: "Tts (voice_gateway)"
+community: "Community 1833"
 location: "L1-430"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tts_voice_gateway
+  - community/Community_1833
 ---
 
 # voice_gateway/tts.py — Kokoro Text-to-Speech
 
-#graphify/code #graphify/EXTRACTED #community/Tts_voice_gateway
+#graphify/code #graphify/EXTRACTED #community/Community_1833

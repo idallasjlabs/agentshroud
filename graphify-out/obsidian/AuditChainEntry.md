@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "Pipeline (proxy)"
+community: "Community 86"
 location: "L119"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Pipeline_proxy
+  - community/Community_86
 ---
 
 # AuditChainEntry
@@ -24,4 +24,4 @@ tags:
 - [[ViolationType]] - `uses` [INFERRED]
 - [[pipeline.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Pipeline_proxy
+#graphify/code #graphify/EXTRACTED #community/Community_86

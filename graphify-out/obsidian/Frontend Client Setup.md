@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/HERMES_SETUP.md"
 type: "document"
-community: "Hermes Setup (setup)"
+community: "Community 404"
 location: "L115"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes_Setup_setup
+  - community/Community_404
 ---
 
 # Frontend Client Setup
@@ -17,4 +17,4 @@ tags:
 - [[LibreChat]] - `contains` [EXTRACTED]
 - [[Open WebUI]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes_Setup_setup
+#graphify/document #graphify/EXTRACTED #community/Community_404

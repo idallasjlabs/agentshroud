@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_clamav_pipeline.py"
 type: "code"
-community: "Clamav Pipeline"
+community: "Community 331"
 location: "L106"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Clamav_Pipeline
+  - community/Community_331
 ---
 
 # _make_pipeline()
@@ -21,4 +21,4 @@ tags:
 - [[test_pipeline_clamav_not_configured()]] - `calls` [EXTRACTED]
 - [[test_pipeline_short_base64_not_scanned()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Clamav_Pipeline
+#graphify/code #graphify/EXTRACTED #community/Community_331

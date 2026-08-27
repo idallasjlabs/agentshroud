@@ -1,18 +1,19 @@
 ---
 source_file: ".agents/skills/i-browser/browse.js"
 type: "code"
-community: "Browse (i-browser)"
-location: "L10"
+community: "Community 252"
+location: "function browserFetch"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Browse_i-browser
+  - community/Community_252
 ---
 
 # browserFetch()
 
 ## Connections
+- [[Browser — Secure Browser Automation (SKILL)]] - `references` [EXTRACTED]
 - [[appendLog()_4]] - `calls` [EXTRACTED]
-- [[browse.js_3]] - `contains` [EXTRACTED]
+- [[browser-fetch package.json_3]] - `references` [AMBIGUOUS]
 
-#graphify/code #graphify/EXTRACTED #community/Browse_i-browser
+#graphify/code #graphify/EXTRACTED #community/Community_252

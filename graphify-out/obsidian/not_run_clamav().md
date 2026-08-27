@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "Scorecard Scoring"
+community: "Community 653"
 location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Scorecard_Scoring
+  - community/Community_653
 ---
 
 # not_run_clamav()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Scorecard_Scoring
+#graphify/code #graphify/EXTRACTED #community/Community_653

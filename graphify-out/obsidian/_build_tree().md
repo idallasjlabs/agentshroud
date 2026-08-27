@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/skills/scan.py"
 type: "code"
-community: "Skill Guard (security)"
+community: "Community 110"
 location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Skill_Guard_security
+  - community/Community_110
 ---
 
 # _build_tree()
@@ -15,7 +15,7 @@ tags:
 - [[Path_22]] - `references` [EXTRACTED]
 - [[Read every manifest entry under source, failing CLOSED on unreadable files.]] - `rationale_for` [EXTRACTED]
 - [[SkillsManifest.from_source()]] - `calls` [EXTRACTED]
-- [[main()_12]] - `calls` [EXTRACTED]
+- [[main()_13]] - `calls` [EXTRACTED]
 - [[scan.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Skill_Guard_security
+#graphify/code #graphify/EXTRACTED #community/Community_110

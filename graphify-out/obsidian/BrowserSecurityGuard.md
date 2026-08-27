@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/browser_security.py"
 type: "code"
-community: "RBAC & Ingest Middleware"
+community: "Community 6"
 location: "L103"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/RBAC__Ingest_Middleware
+  - community/Community_6
 ---
 
 # BrowserSecurityGuard
@@ -46,4 +46,4 @@ tags:
 - [[test_browser_security.py]] - `calls` [EXTRACTED]
 - [[web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/RBAC__Ingest_Middleware
+#graphify/code #graphify/INFERRED #community/Community_6

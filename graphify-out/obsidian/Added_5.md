@@ -1,17 +1,17 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "ESP32 Firmware"
-location: "L419"
+community: "Community 984"
+location: "L464"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ESP32_Firmware
+  - community/Community_984
 ---
 
 # Added
 
 ## Connections
-- [[1.1.0 — feat-v1.4.0-shroud-another-bot — Hermes (2026-05-29)]] - `contains` [EXTRACTED]
+- [[1.2.0 — featesp32-s3-hermes-voice (2026-06-24)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ESP32_Firmware
+#graphify/document #graphify/EXTRACTED #community/Community_984

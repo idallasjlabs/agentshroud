@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_round2_hardening.py"
 type: "code"
-community: "Git Guard (security)"
+community: "Community 14"
 location: "L141"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Git_Guard_security
+  - community/Community_14
 ---
 
 # TestLLMProxyEndpoints
@@ -23,4 +23,4 @@ tags:
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_round2_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Git_Guard_security
+#graphify/code #graphify/INFERRED #community/Community_14

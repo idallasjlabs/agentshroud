@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/IMESSAGE_FIX.md"
 type: "document"
-community: "Secrets Usage And Collaborator (security)"
+community: "Community 236"
 location: "L60"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Secrets_Usage_And_Collaborator_security
+  - community/Community_236
 ---
 
 # Option 2: Check if Messages.app is Signed In
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[The Fix]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Secrets_Usage_And_Collaborator_security
+#graphify/document #graphify/EXTRACTED #community/Community_236

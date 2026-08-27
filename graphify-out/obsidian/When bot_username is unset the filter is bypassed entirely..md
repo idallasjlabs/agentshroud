@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Telegram Proxy Inbound"
+community: "Community 32"
 location: "L8995"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Inbound
+  - community/Community_32
 ---
 
 # When bot_username is unset the filter is bypassed entirely.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_no_bot_username_does_not_set_eligibility()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Inbound
+#graphify/rationale #graphify/EXTRACTED #community/Community_32

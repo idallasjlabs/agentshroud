@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_sanitizer.py"
 type: "rationale"
-community: "Sanitizer"
+community: "Community 405"
 location: "L26"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Sanitizer
+  - community/Community_405
 ---
 
 # Test email address redaction
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_email_detection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Sanitizer
+#graphify/rationale #graphify/EXTRACTED #community/Community_405

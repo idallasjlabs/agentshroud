@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_differential_pii_detector.py"
 type: "code"
-community: "Differential Pii Detector"
+community: "Community 47"
 location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Differential_Pii_Detector
+  - community/Community_47
 ---
 
 # TestDeterministicPresidioInit
@@ -24,4 +24,4 @@ tags:
 - [[Presidio init must be deterministic and must NEVER trigger a runtime     model a]] - `rationale_for` [EXTRACTED]
 - [[test_differential_pii_detector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Differential_Pii_Detector
+#graphify/code #graphify/EXTRACTED #community/Community_47

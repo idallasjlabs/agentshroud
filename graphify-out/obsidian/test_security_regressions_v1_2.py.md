@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "code"
-community: "Security Regressions V1 2"
+community: "Community 26"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Regressions_V1_2
+  - community/Community_26
 ---
 
 # test_security_regressions_v1_2.py
@@ -32,4 +32,4 @@ tags:
 - [[tmp_workspace()_1]] - `contains` [EXTRACTED]
 - [[trust_manager()_5]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Regressions_V1_2
+#graphify/code #graphify/EXTRACTED #community/Community_26

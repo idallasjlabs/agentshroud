@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-athena/README.md"
 type: "document"
-community: "Readme (i-athena)"
+community: "Community 1145"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-athena
+  - community/Community_1145
 ---
 
 # Athena — Knowledge Distiller
@@ -17,4 +17,4 @@ tags:
 - [[Related Skills_1]] - `contains` [EXTRACTED]
 - [[Usage_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-athena
+#graphify/document #graphify/EXTRACTED #community/Community_1145

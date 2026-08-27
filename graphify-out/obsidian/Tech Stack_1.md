@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/README.md"
 type: "document"
-community: "Readme (gateway)"
+community: "Community 217"
 location: "L109"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_gateway
+  - community/Community_217
 ---
 
 # Tech Stack
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Gateway Layer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_gateway
+#graphify/document #graphify/EXTRACTED #community/Community_217

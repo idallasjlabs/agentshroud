@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/apple-reminders/SKILL.md"
 type: "document"
-community: "Skill (apple-reminders)"
+community: "Community 609"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_apple-reminders
+  - community/Community_609
 ---
 
 # Apple Reminders CLI (remindctl)
@@ -20,4 +20,4 @@ tags:
 - [[When NOT to Use]] - `contains` [EXTRACTED]
 - [[When to Use_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_apple-reminders
+#graphify/document #graphify/EXTRACTED #community/Community_609

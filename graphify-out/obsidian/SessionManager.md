@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_security.py"
 type: "code"
-community: "Session Security (security)"
+community: "Community 155"
 location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Session_Security_security
+  - community/Community_155
 ---
 
 # SessionManager
@@ -53,4 +53,4 @@ tags:
 - [[middleware.py]] - `imports` [EXTRACTED]
 - [[session_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Session_Security_security
+#graphify/code #graphify/EXTRACTED #community/Community_155

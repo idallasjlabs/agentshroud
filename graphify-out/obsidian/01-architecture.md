@@ -1,12 +1,12 @@
 ---
 source_file: "docs/diagrams/01-architecture.md"
 type: "document"
-community: "01 Architecture (diagrams)"
+community: "Community 834"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/01_Architecture_diagrams
+  - community/Community_834
 ---
 
 # 01-architecture.md
@@ -18,4 +18,4 @@ tags:
 - [[Gateway Internals Component Diagram]] - `conceptually_related_to` [EXTRACTED]
 - [[README_120]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/01_Architecture_diagrams
+#graphify/document #graphify/EXTRACTED #community/Community_834

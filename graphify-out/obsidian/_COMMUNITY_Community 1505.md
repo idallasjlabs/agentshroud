@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[SKILL_167]] - document - skills/openclaw/spotify-player/SKILL.md
-- [[spogo  spotify_player]] - document - skills/openclaw/spotify-player/SKILL.md
+- [[canary-cron.sh]] - code - scripts/canary-cron.sh
+- [[canary-cron.sh script]] - code - scripts/canary-cron.sh
 
 ## Live Query (requires Dataview plugin)
 

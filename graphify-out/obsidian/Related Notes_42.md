@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/httpx.md"
 type: "document"
-community: "Ci Workflows (03 - Configuration)"
+community: "Community 889"
 location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Ci_Workflows_03_-_Configuration
+  - community/Community_889
 ---
 
 # Related Notes
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[httpx_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Ci_Workflows_03_-_Configuration
+#graphify/document #graphify/EXTRACTED #community/Community_889

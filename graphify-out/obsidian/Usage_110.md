@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/skills/i-qa/README.md"
 type: "document"
-community: "Readme (i-qa)"
+community: "Community 1240"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-qa
+  - community/Community_1240
 ---
 
 # Usage
 
 ## Connections
-- [[Quality Assurance (QA)_1]] - `contains` [EXTRACTED]
+- [[Quality Assurance (QA)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-qa
+#graphify/document #graphify/EXTRACTED #community/Community_1240

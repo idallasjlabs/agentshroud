@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/graphify/references/transcribe.md"
 type: "document"
-community: "Transcribe (references)"
+community: "Community 1380"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Transcribe_references
+  - community/Community_1380
 ---
 
 # graphify reference: transcribe video and audio
@@ -15,4 +15,4 @@ tags:
 - [[Step 2.5 - Transcribe video  audio files (only if video files detected)_1]] - `contains` [EXTRACTED]
 - [[transcribe_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Transcribe_references
+#graphify/document #graphify/EXTRACTED #community/Community_1380

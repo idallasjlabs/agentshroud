@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "Telegram Proxy Outbound"
+community: "Community 1176"
 location: "L4466"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Outbound
+  - community/Community_1176
 ---
 
 # TestForwardToTelegramTimeouts
@@ -22,4 +22,4 @@ tags:
 - [[Tests that _forward_to_telegram uses correct urlopen timeouts.      Regression g]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Outbound
+#graphify/code #graphify/EXTRACTED #community/Community_1176

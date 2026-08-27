@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-gitops/SKILL.md"
 type: "document"
-community: "Skill (i-hdev)"
+community: "Community 660"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Skill_i-hdev
+  - community/Community_660
 ---
 
 # gitops Skill (stub)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[GIT-GUARD Skill]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Skill_i-hdev
+#graphify/document #graphify/INFERRED #community/Community_660

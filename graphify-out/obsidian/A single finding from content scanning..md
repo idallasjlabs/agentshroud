@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_content_scanner.py"
 type: "rationale"
-community: "Url Analyzer"
+community: "Community 5"
 location: "L35"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Url_Analyzer
+  - community/Community_5
 ---
 
 # A single finding from content scanning.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ContentFinding]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Url_Analyzer
+#graphify/rationale #graphify/EXTRACTED #community/Community_5

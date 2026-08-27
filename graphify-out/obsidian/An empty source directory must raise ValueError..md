@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_skills_manifest_sync.py"
 type: "rationale"
-community: "Skills Manifest Sync"
+community: "Community 71"
 location: "L144"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Skills_Manifest_Sync
+  - community/Community_71
 ---
 
 # An empty source directory must raise ValueError.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_from_empty_source_raises()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Skills_Manifest_Sync
+#graphify/rationale #graphify/EXTRACTED #community/Community_71

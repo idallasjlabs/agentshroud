@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "Cli Coverage"
+community: "Community 223"
 location: "L446"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Cli_Coverage
+  - community/Community_223
 ---
 
 # TestLifecycleCommands
@@ -21,4 +21,4 @@ tags:
 - [[SCLClient]] - `uses` [INFERRED]
 - [[test_cli_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Cli_Coverage
+#graphify/code #graphify/EXTRACTED #community/Community_223

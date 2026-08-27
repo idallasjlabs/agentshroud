@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cron_jobs_prompts.py"
 type: "rationale"
-community: "Cron Jobs Prompts"
+community: "Community 566"
 location: "L68"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Cron_Jobs_Prompts
+  - community/Community_566
 ---
 
 # Every collaborator report prompt must instruct LLM to exclude short UIDs.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_cron_prompts_exclude_short_uids()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Cron_Jobs_Prompts
+#graphify/rationale #graphify/EXTRACTED #community/Community_566

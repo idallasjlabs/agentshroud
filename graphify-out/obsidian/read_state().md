@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/colima-health-check.sh"
 type: "code"
-community: "Container Net Diag (scripts)"
+community: "Community 310"
 location: "L92"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Container_Net_Diag_scripts
+  - community/Community_310
 ---
 
 # read_state()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[colima-health-check.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Container_Net_Diag_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_310

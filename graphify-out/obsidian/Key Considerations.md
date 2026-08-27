@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md"
 type: "document"
-community: "Adr 001 Transparent Proxy (adr)"
+community: "Community 429"
 location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Adr_001_Transparent_Proxy_adr
+  - community/Community_429
 ---
 
 # Key Considerations
@@ -18,4 +18,4 @@ tags:
 - [[Transparent Proxy Cons]] - `contains` [EXTRACTED]
 - [[Transparent Proxy Pros]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Adr_001_Transparent_Proxy_adr
+#graphify/document #graphify/EXTRACTED #community/Community_429

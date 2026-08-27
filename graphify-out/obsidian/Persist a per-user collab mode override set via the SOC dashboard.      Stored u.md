@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "rationale"
-community: "SOC Router (Collaborator Mgmt)"
+community: "Community 134"
 location: "L301"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_Router_Collaborator_Mgmt
+  - community/Community_134
 ---
 
 # Persist a per-user collab mode override set via the SOC dashboard.      Stored u
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[persist_user_collab_mode()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_Router_Collaborator_Mgmt
+#graphify/rationale #graphify/EXTRACTED #community/Community_134

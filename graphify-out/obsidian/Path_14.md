@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "Intel Report (security)"
+community: "Community 133"
 location: "L205"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Intel_Report_security
+  - community/Community_133
 ---
 
 # Path
@@ -16,4 +16,4 @@ tags:
 - [[._load_latest_file()]] - `references` [EXTRACTED]
 - [[.save()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Intel_Report_security
+#graphify/code #graphify/EXTRACTED #community/Community_133

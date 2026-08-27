@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/dashboard.py"
 type: "code"
-community: "Dashboard"
+community: "Community 0"
 location: "L401"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Dashboard
+  - community/Community_0
 ---
 
 # get_collaborators()
@@ -22,4 +22,4 @@ tags:
 - [[_parse_collaborator_log_dirs()]] - `calls` [EXTRACTED]
 - [[dashboard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Dashboard
+#graphify/code #graphify/EXTRACTED #community/Community_0

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/daily_cve_report.py"
 type: "code"
-community: "Daily Cve Report (security)"
+community: "Community 779"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Daily_Cve_Report_security
+  - community/Community_779
 ---
 
 # daily_cve_report.py
@@ -23,7 +23,6 @@ tags:
 - [[check_upstream_cves()]] - `contains` [EXTRACTED]
 - [[cron_state_monitor.py]] - `semantically_similar_to` [INFERRED]
 - [[cve_report_scheduler()]] - `contains` [EXTRACTED]
-- [[datetime_9]] - `imports_from` [EXTRACTED]
 - [[datetime_2]] - `imports_from` [EXTRACTED]
 - [[format_cve_report()]] - `contains` [EXTRACTED]
 - [[format_upstream_cve_alert()]] - `contains` [EXTRACTED]
@@ -44,4 +43,4 @@ tags:
 - [[trivy_report.py]] - `imports_from` [EXTRACTED]
 - [[upstream_cve_check_scheduler()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Daily_Cve_Report_security
+#graphify/code #graphify/EXTRACTED #community/Community_779

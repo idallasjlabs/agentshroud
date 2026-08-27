@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-sec-offense/README.md"
 type: "document"
-community: "Readme (i-sec-offense)"
+community: "Community 1168"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-sec-offense
+  - community/Community_1168
 ---
 
 # Red Team Adversarial Tester (SEC-OFFENSE)
@@ -17,4 +17,4 @@ tags:
 - [[Related Skills_33]] - `contains` [EXTRACTED]
 - [[Usage_33]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-sec-offense
+#graphify/document #graphify/EXTRACTED #community/Community_1168

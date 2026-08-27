@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/PAIRING_INSTRUCTIONS.md"
 type: "document"
-community: "Llm Provider Setup (setup)"
+community: "Community 371"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Llm_Provider_Setup_setup
+  - community/Community_371
 ---
 
 # PAIRING_INSTRUCTIONS.md
@@ -17,4 +17,4 @@ tags:
 - [[TAILSCALE_SETUP]] - `conceptually_related_to` [INFERRED]
 - [[TELEGRAM_SETUP]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Llm_Provider_Setup_setup
+#graphify/document #graphify/EXTRACTED #community/Community_371

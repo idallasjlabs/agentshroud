@@ -1,14 +1,14 @@
 ---
 source_file: "docs/agentshroud-knowledge.md"
 type: "document"
-community: "Agentshroud Knowledge (docs)"
+community: "Community 1612"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Agentshroud_Knowledge_docs
+  - community/Community_1612
 ---
 
 # agentshroud-knowledge.md
 
-#graphify/document #graphify/EXTRACTED #community/Agentshroud_Knowledge_docs
+#graphify/document #graphify/EXTRACTED #community/Community_1612

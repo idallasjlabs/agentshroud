@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-gg/SKILL.md"
 type: "document"
-community: "Readme (i-pm)"
+community: "Community 592"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-pm
+  - community/Community_592
 ---
 
 # GitHub Workflow Standards (i-gg)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Project Management (SKILL)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-pm
+#graphify/document #graphify/EXTRACTED #community/Community_592

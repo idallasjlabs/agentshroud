@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-mcpm/README.md"
 type: "document"
-community: "Readme (i-mcpm)"
+community: "Community 1196"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-mcpm
+  - community/Community_1196
 ---
 
 # MCP Tools Usage (MCPM)
@@ -17,4 +17,4 @@ tags:
 - [[Related Skills_62]] - `contains` [EXTRACTED]
 - [[Usage_63]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-mcpm
+#graphify/document #graphify/EXTRACTED #community/Community_1196

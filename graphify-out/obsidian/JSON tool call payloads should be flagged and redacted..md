@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_output_schema.py"
 type: "rationale"
-community: "Output Schema"
+community: "Community 237"
 location: "L39"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Output_Schema
+  - community/Community_237
 ---
 
 # JSON tool call payloads should be flagged and redacted.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_raw_tool_payload_stripped()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Output_Schema
+#graphify/rationale #graphify/EXTRACTED #community/Community_237

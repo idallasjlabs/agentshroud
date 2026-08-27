@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/04-separation-of-privilege.md"
 type: "document"
-community: "04 Separation Of Privilege (redteam)"
+community: "Community 635"
 location: "L34"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/04_Separation_Of_Privilege_redteam
+  - community/Community_635
 ---
 
 # Remediation
@@ -20,4 +20,4 @@ tags:
 - [[Step 5 Add integrity checking for security-critical files]] - `contains` [EXTRACTED]
 - [[Step 6 Enforce read-only at the Docker layer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/04_Separation_Of_Privilege_redteam
+#graphify/document #graphify/EXTRACTED #community/Community_635

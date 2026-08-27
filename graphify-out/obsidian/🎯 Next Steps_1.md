@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/GOOGLE-SERVICES-SETUP.md"
 type: "document"
-community: "Google Services Setup (setup)"
+community: "Community 266"
 location: "L400"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Google_Services_Setup_setup
+  - community/Community_266
 ---
 
 # 🎯 Next Steps
@@ -17,4 +17,4 @@ tags:
 - [[Option B Full OAuth Setup]] - `contains` [EXTRACTED]
 - [[Option C Alternative Notes Solution]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Google_Services_Setup_setup
+#graphify/document #graphify/EXTRACTED #community/Community_266

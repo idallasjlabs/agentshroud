@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "OAuth & Metadata Guard"
+community: "Community 14"
 location: "L620"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/OAuth__Metadata_Guard
+  - community/Community_14
 ---
 
 # Legit domains have lower entropy.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_dns_low_entropy_legit()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/OAuth__Metadata_Guard
+#graphify/rationale #graphify/EXTRACTED #community/Community_14

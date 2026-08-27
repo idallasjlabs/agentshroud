@@ -1,11 +1,11 @@
 ---
 source_file: "scripts/gen-code-graph.sh"
 type: "concept"
-community: "Gen Code Graph (scripts)"
+community: "Community 1377"
 tags:
   - graphify/concept
   - graphify/AMBIGUOUS
-  - community/Gen_Code_Graph_scripts
+  - community/Community_1377
 ---
 
 # Obsidian code-architecture vault (.obsidian-vaults/code-architecture)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[gen-code-graph.sh]] - `references` [AMBIGUOUS]
 
-#graphify/concept #graphify/AMBIGUOUS #community/Gen_Code_Graph_scripts
+#graphify/concept #graphify/AMBIGUOUS #community/Community_1377

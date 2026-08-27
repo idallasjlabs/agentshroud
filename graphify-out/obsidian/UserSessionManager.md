@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "Middleware & Session Isolation"
+community: "Community 174"
 location: "L121"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Middleware__Session_Isolation
+  - community/Community_174
 ---
 
 # UserSessionManager
@@ -161,4 +161,4 @@ tags:
 - [[usm()]] - `calls` [EXTRACTED]
 - [[webhook_receiver.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Middleware__Session_Isolation
+#graphify/code #graphify/INFERRED #community/Community_174

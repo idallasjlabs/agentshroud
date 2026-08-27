@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "Main Simple"
+community: "Community 9"
 location: "L393"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Main_Simple
+  - community/Community_9
 ---
 
 # Catch-all error handler      Never leaks stack traces or internal details to cli
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[global_exception_handler()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Main_Simple
+#graphify/rationale #graphify/EXTRACTED #community/Community_9

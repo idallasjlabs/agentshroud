@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "Resource Guard & Local Model Parity"
+community: "Community 7"
 location: "L49"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Resource_Guard__Local_Model_Parity
+  - community/Community_7
 ---
 
 # ResourceLimits
@@ -62,4 +62,4 @@ tags:
 - [[test_resource_guard_wiring.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Resource_Guard__Local_Model_Parity
+#graphify/code #graphify/INFERRED #community/Community_7

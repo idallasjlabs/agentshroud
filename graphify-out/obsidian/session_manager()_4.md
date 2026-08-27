@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory_write_acl.py"
 type: "code"
-community: "Shared Memory Write Acl"
+community: "Community 26"
 location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Shared_Memory_Write_Acl
+  - community/Community_26
 ---
 
 # session_manager()
@@ -15,4 +15,4 @@ tags:
 - [[UserSessionManager]] - `calls` [EXTRACTED]
 - [[test_shared_memory_write_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Shared_Memory_Write_Acl
+#graphify/code #graphify/EXTRACTED #community/Community_26

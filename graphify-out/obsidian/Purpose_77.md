@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-aws/README.md"
 type: "document"
-community: "Readme (i-aws)"
+community: "Community 1217"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-aws
+  - community/Community_1217
 ---
 
 # Purpose
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AWS Cloud Management & FinOps_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-aws
+#graphify/document #graphify/EXTRACTED #community/Community_1217

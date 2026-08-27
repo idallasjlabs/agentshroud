@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/system-architecture.md"
 type: "document"
-community: "System Architecture (architecture)"
+community: "Community 703"
 location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/System_Architecture_architecture
+  - community/Community_703
 ---
 
 # Core Components
@@ -26,4 +26,4 @@ tags:
 - [[9. DNS Filter]] - `contains` [EXTRACTED]
 - [[Component Architecture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/System_Architecture_architecture
+#graphify/document #graphify/EXTRACTED #community/Community_703

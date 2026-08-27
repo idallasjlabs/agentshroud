@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-architecture.md"
 type: "document"
-community: "Security Architecture (security)"
+community: "Community 154"
 location: "L247"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Architecture_security
+  - community/Community_154
 ---
 
 # PII Detection System
@@ -17,4 +17,4 @@ tags:
 - [[Detection Patterns]] - `contains` [EXTRACTED]
 - [[Effectiveness Metrics]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Architecture_security
+#graphify/document #graphify/EXTRACTED #community/Community_154

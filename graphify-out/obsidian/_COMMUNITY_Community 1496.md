@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[PromptGuard.reanchor_delimiters() (C8)]] - code - gateway/security/prompt_guard.py
-- [[UserSessionManager.reanchor_system_prompt() (C16)]] - code - gateway/security/session_manager.py
+- [[bspesp-bsp.h stub (playback state test)]] - code - firmware/voice-terminal/test/test_playback_state/stubs/bsp/esp-bsp.h
+- [[iot_button.h stub (playback state test)]] - code - firmware/voice-terminal/test/test_playback_state/stubs/iot_button.h
 
 ## Live Query (requires Dataview plugin)
 

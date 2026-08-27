@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "code"
-community: "Tool Chain & CVE Triage"
+community: "Community 78"
 location: "L551"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Tool_Chain__CVE_Triage
+  - community/Community_78
 ---
 
 # TestShellBleedPatterns
@@ -24,4 +24,4 @@ tags:
 - [[Verify expanded _PARAM_INJECTION_PATTERNS catch piped-interpreter and     heredo]] - `rationale_for` [EXTRACTED]
 - [[test_tool_chain_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Tool_Chain__CVE_Triage
+#graphify/code #graphify/INFERRED #community/Community_78

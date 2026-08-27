@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/audit_archive.py"
 type: "code"
-community: "Audit Archive"
+community: "Community 820"
 location: "L150"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Audit_Archive
+  - community/Community_820
 ---
 
 # purge_low_value_events()
@@ -23,4 +23,4 @@ tags:
 - [[audit_archive.py]] - `contains` [EXTRACTED]
 - [[test_audit_archive.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Audit_Archive
+#graphify/code #graphify/EXTRACTED #community/Community_820

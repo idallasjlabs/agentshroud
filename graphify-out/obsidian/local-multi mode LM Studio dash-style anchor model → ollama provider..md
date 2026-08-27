@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_hermes_model_resolver.py"
 type: "rationale"
-community: "Hermes Model Resolver"
-location: "L138"
+community: "Community 129"
+location: "L166"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Hermes_Model_Resolver
+  - community/Community_129
 ---
 
 # local-multi mode: LM Studio dash-style anchor model → ollama provider.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_local_multi_mode_uses_lmstudio_dash_model()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Hermes_Model_Resolver
+#graphify/rationale #graphify/EXTRACTED #community/Community_129

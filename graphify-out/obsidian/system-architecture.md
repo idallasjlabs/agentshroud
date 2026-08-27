@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/system-architecture.md"
 type: "document"
-community: "System Architecture (architecture)"
+community: "Community 701"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/System_Architecture_architecture
+  - community/Community_701
 ---
 
 # system-architecture.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud System Architecture Document (SAD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/System_Architecture_architecture
+#graphify/document #graphify/EXTRACTED #community/Community_701

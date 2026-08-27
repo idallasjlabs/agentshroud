@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "OAuth & Metadata Guard"
+community: "Community 64"
 location: "L269"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/OAuth__Metadata_Guard
+  - community/Community_64
 ---
 
 # Normal messages should pass.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_clean_message_not_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/OAuth__Metadata_Guard
+#graphify/rationale #graphify/EXTRACTED #community/Community_64

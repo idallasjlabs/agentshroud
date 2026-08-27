@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/app_main.c"
 type: "code"
-community: "Ws Client (main)"
+community: "Community 139"
 location: "L504"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ws_Client_main
+  - community/Community_139
 ---
 
 # vt_remote_log()
@@ -22,4 +22,4 @@ tags:
 - [[wakeword_push_frame() — AFE feed + VAD endpointing]] - `calls` [EXTRACTED]
 - [[wifi_event_handler()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ws_Client_main
+#graphify/code #graphify/EXTRACTED #community/Community_139

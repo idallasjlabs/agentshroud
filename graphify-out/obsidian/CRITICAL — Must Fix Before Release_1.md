@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0.md"
 type: "document"
-community: "Blue Team Assessment V0.8.0 (v0.8)"
+community: "Community 1552"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Blue_Team_Assessment_V080_v08
+  - community/Community_1552
 ---
 
 # CRITICAL — Must Fix Before Release
@@ -17,4 +17,4 @@ tags:
 - [[C3 Bot Tokens Partially Exposed in Chat History]] - `contains` [EXTRACTED]
 - [[Findings]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Blue_Team_Assessment_V080_v08
+#graphify/document #graphify/EXTRACTED #community/Community_1552

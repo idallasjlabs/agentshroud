@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "Middleware & Session Isolation"
+community: "Community 130"
 location: "L370"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Middleware__Session_Isolation
+  - community/Community_130
 ---
 
 # TestMultiTurnTracker
@@ -21,4 +21,4 @@ tags:
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Middleware__Session_Isolation
+#graphify/code #graphify/INFERRED #community/Community_130

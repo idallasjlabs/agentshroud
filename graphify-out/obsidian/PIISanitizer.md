@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "code"
-community: "Security Audit & Watchtower Tests"
+community: "Community 870"
 location: "L25"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Security_Audit__Watchtower_Tests
+  - community/Community_870
 ---
 
 # PIISanitizer
@@ -170,4 +170,4 @@ tags:
 - [[test_ws_e_rt2_inbound_encoding.py]] - `imports` [EXTRACTED]
 - [[tool_result_sanitizer.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Security_Audit__Watchtower_Tests
+#graphify/code #graphify/INFERRED #community/Community_870

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trivy_report.py"
 type: "code"
-community: "Security Toolchain"
-location: "L88"
+community: "Community 482"
+location: "L99"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Toolchain
+  - community/Community_482
 ---
 
 # parse_trivy_output()
@@ -36,4 +36,4 @@ tags:
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]
 - [[trivy_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Toolchain
+#graphify/code #graphify/EXTRACTED #community/Community_482

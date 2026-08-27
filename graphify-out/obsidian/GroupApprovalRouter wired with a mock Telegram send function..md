@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_approval_routing.py"
 type: "rationale"
-community: "Group Approval Routing"
+community: "Community 121"
 location: "L53"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Group_Approval_Routing
+  - community/Community_121
 ---
 
 # GroupApprovalRouter wired with a mock Telegram send function.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[router()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Group_Approval_Routing
+#graphify/rationale #graphify/EXTRACTED #community/Community_121

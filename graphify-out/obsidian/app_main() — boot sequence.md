@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/app_main.c"
 type: "code"
-community: "Ota (main)"
+community: "Community 711"
 location: "line 901"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ota_main
+  - community/Community_711
 ---
 
 # app_main() — boot sequence
@@ -22,4 +22,4 @@ tags:
 - [[ws_client_create() — registers callbacks + starts client]] - `calls` [EXTRACTED]
 - [[ws_client_set_ctrl_cb()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ota_main
+#graphify/code #graphify/EXTRACTED #community/Community_711

@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[SecureBrowser (class)]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
+- [[Apache License 2.0 (skill-creator)]] - document - skills/openclaw/skill-creator/license.txt
 
 ## Live Query (requires Dataview plugin)
 

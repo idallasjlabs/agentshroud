@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-incident-response/SKILL.md"
 type: "document"
-community: "Skill (i-incident-response)"
+community: "Community 1446"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-incident-response
+  - community/Community_1446
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill incident-response_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-incident-response
+#graphify/document #graphify/EXTRACTED #community/Community_1446

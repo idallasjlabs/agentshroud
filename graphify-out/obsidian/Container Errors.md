@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Container Errors.md"
 type: "document"
-community: "Container errors (07 - Errors & Troubleshooting)"
+community: "Community 788"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Container_errors_07_-_Errors__Troubleshooting
+  - community/Community_788
 ---
 
 # Container Errors.md
@@ -17,4 +17,4 @@ tags:
 - [[Error Index]] - `references` [EXTRACTED]
 - [[Startup Errors_1]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Container_errors_07_-_Errors__Troubleshooting
+#graphify/document #graphify/EXTRACTED #community/Community_788

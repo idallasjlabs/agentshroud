@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "Tool Chain & CVE Triage"
+community: "Community 14"
 location: "L20"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Tool_Chain__CVE_Triage
+  - community/Community_14
 ---
 
 # IsolationStatus
@@ -48,4 +48,4 @@ tags:
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Tool_Chain__CVE_Triage
+#graphify/code #graphify/INFERRED #community/Community_14

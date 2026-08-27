@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "SOC Router (Collaborator Mgmt)"
+community: "Community 19"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Router_Collaborator_Mgmt
+  - community/Community_19
 ---
 
 # router.py
@@ -29,7 +29,6 @@ tags:
 - [[EgressScope]] - `imports` [EXTRACTED]
 - [[EgressScopeRequest]] - `contains` [EXTRACTED]
 - [[EmergencyBlockRequest]] - `contains` [EXTRACTED]
-- [[FastAPI_5]] - `imports_from` [EXTRACTED]
 - [[GroupConfig]] - `imports` [EXTRACTED]
 - [[LoginRequest]] - `contains` [EXTRACTED]
 - [[RBACConfig_1]] - `imports` [EXTRACTED]
@@ -77,7 +76,6 @@ tags:
 - [[compute_scorecard()]] - `imports` [EXTRACTED]
 - [[create_delegation()]] - `contains` [EXTRACTED]
 - [[create_group()]] - `contains` [EXTRACTED]
-- [[datetime_9]] - `imports_from` [EXTRACTED]
 - [[delete_group()]] - `contains` [EXTRACTED]
 - [[deny_egress()]] - `contains` [EXTRACTED]
 - [[deny_request()]] - `contains` [EXTRACTED]
@@ -177,4 +175,4 @@ tags:
 - [[verify_audit_chain()]] - `contains` [EXTRACTED]
 - [[ws_soc_endpoint()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Router_Collaborator_Mgmt
+#graphify/code #graphify/EXTRACTED #community/Community_19

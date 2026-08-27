@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-tw/SKILL.md"
 type: "document"
-community: "Skill (i-tw)"
+community: "Community 322"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-tw
+  - community/Community_322
 ---
 
 # Skill: Technical Writer (TW)
@@ -17,7 +17,7 @@ tags:
 - [[Document Structure_2]] - `contains` [EXTRACTED]
 - [[Document-Type Patterns_2]] - `contains` [EXTRACTED]
 - [[Role_108]] - `contains` [EXTRACTED]
-- [[Rules_23]] - `contains` [EXTRACTED]
+- [[Rules_24]] - `contains` [EXTRACTED]
 - [[SKILL_185]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-tw
+#graphify/document #graphify/EXTRACTED #community/Community_322

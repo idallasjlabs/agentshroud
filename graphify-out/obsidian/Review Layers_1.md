@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-sec/SKILL.md"
 type: "document"
-community: "Skill (i-sec)"
+community: "Community 704"
 location: "L17"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-sec
+  - community/Community_704
 ---
 
 # Review Layers
@@ -18,4 +18,4 @@ tags:
 - [[Layer 4 Data Flow Security_1]] - `contains` [EXTRACTED]
 - [[Skill Security Review (SEC)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-sec
+#graphify/document #graphify/EXTRACTED #community/Community_704

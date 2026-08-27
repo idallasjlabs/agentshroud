@@ -45,8 +45,8 @@
     "semantic_hash": "6c8414270b956cb8e017a338accbfe90"
   },
   "docker/bots/hermes/init-config.sh": {
-    "mtime": 1787492160.916846,
-    "ast_hash": "436e3cc7ae0ae524e3bfb8040cd77bb2",
+    "mtime": 1787845365.830168,
+    "ast_hash": "b54efeb3cff7e8c55865ca7dec8e8a23",
     "semantic_hash": ""
   },
   "docker/bots/hermes/start.sh": {
@@ -55,9 +55,9 @@
     "semantic_hash": "ec1965d1312fe005ffb9018ba5b56a81"
   },
   "docker/bots/openclaw/config/cron/jobs.json": {
-    "mtime": 1786737990.3535383,
-    "ast_hash": "e3c8a676d4508ff4c5bb058aeb145910",
-    "semantic_hash": "e3c8a676d4508ff4c5bb058aeb145910"
+    "mtime": 1787602982.7847707,
+    "ast_hash": "59052ddaccd01f16373467d20a4c8f7a",
+    "semantic_hash": ""
   },
   "docker/config/openclaw/apply-patches.js": {
     "mtime": 1787314726.449726,
@@ -65,9 +65,9 @@
     "semantic_hash": "e906ffa2534d9e3b1d853424e88e9bcb"
   },
   "docker/config/openclaw/cron/jobs.json": {
-    "mtime": 1786737990.3540795,
-    "ast_hash": "e3c8a676d4508ff4c5bb058aeb145910",
-    "semantic_hash": "e3c8a676d4508ff4c5bb058aeb145910"
+    "mtime": 1787602982.7861958,
+    "ast_hash": "59052ddaccd01f16373467d20a4c8f7a",
+    "semantic_hash": ""
   },
   "docker/config/openclaw/setup-https-proxy.js": {
     "mtime": 1778728432.1656475,
@@ -90,9 +90,9 @@
     "semantic_hash": "f87f0124026c0f7c08fb3902d692fcbb"
   },
   "docker/scripts/colima-health-check.sh": {
-    "mtime": 1780182904.9736955,
-    "ast_hash": "2227125fefc9a00059d45d0c723fe82f",
-    "semantic_hash": "2227125fefc9a00059d45d0c723fe82f"
+    "mtime": 1787816252.4022148,
+    "ast_hash": "487e7d572e2dfa5c9651560364718fdd",
+    "semantic_hash": ""
   },
   "docker/scripts/container-net-diag.sh": {
     "mtime": 1775099399.9034328,
@@ -115,9 +115,9 @@
     "semantic_hash": "2c72c77e3c61d11f6a4c7c3d5c9b6738"
   },
   "docker/scripts/gateway-start.sh": {
-    "mtime": 1781729433.5910318,
-    "ast_hash": "ed0dcff010485cdc1da80070f4f04961",
-    "semantic_hash": "ed0dcff010485cdc1da80070f4f04961"
+    "mtime": 1787577474.1020076,
+    "ast_hash": "c373ffeb73eeb94790f419e62f97bcd8",
+    "semantic_hash": ""
   },
   "docker/scripts/health-check.sh": {
     "mtime": 1782812716.651703,
@@ -215,9 +215,9 @@
     "semantic_hash": "cbaef6040e332b41ba9f6fdd27b86eb2"
   },
   "docker/scripts/start-agentshroud.sh": {
-    "mtime": 1785877198.7806745,
-    "ast_hash": "058af38d508848b41a97fe258602711e",
-    "semantic_hash": "058af38d508848b41a97fe258602711e"
+    "mtime": 1787816252.4026608,
+    "ast_hash": "e7a90807ccd9f68513ebff3d426ef11c",
+    "semantic_hash": ""
   },
   "docker/scripts/telegram.sh": {
     "mtime": 1782812716.6523209,
@@ -290,9 +290,9 @@
     "semantic_hash": "fd184f63f6b82100667a3270470b602d"
   },
   "gateway/__init__.py": {
-    "mtime": 1787434463.6063359,
-    "ast_hash": "9c754cdde0e873e53ecda6d0499a9ad6",
-    "semantic_hash": "9c754cdde0e873e53ecda6d0499a9ad6"
+    "mtime": 1787514399.211547,
+    "ast_hash": "48d93d969ddf1e2551e892776614803e",
+    "semantic_hash": ""
   },
   "gateway/approval_queue/__init__.py": {
     "mtime": 1775203929.7912166,
@@ -490,8 +490,8 @@
     "semantic_hash": "b23118b76107331e4e058135ff37adff"
   },
   "gateway/proxy/llm_proxy.py": {
-    "mtime": 1787492160.9182198,
-    "ast_hash": "8fcc67776c9fb68913cf10a826383d38",
+    "mtime": 1787845365.8311796,
+    "ast_hash": "8f295104a32322a5a5b71125468fdc74",
     "semantic_hash": ""
   },
   "gateway/proxy/llm_quota_detector.py": {
@@ -630,8 +630,8 @@
     "semantic_hash": "5d5e2c9e80fb6eb52ee3bebbaf0fc169"
   },
   "gateway/security/agent_cve_registry.py": {
-    "mtime": 1787492276.6456845,
-    "ast_hash": "40a1f286a03b81f2b97863ab74044072",
+    "mtime": 1787502313.4847832,
+    "ast_hash": "247f254b68d2b3eaf4cde0335f3a5db8",
     "semantic_hash": ""
   },
   "gateway/security/agent_isolation.py": {
@@ -985,14 +985,14 @@
     "semantic_hash": "5d8660dc4e0fa3299c4ff8a72ba3837e"
   },
   "gateway/security/trivy_report.py": {
-    "mtime": 1780070801.235725,
-    "ast_hash": "39b61b0d61f5165139c41478d9ee5b6e",
-    "semantic_hash": "39b61b0d61f5165139c41478d9ee5b6e"
+    "mtime": 1787574733.549321,
+    "ast_hash": "f6b7c8421353182d6c5fec4dae2f8eeb",
+    "semantic_hash": ""
   },
   "gateway/security/trust_manager.py": {
-    "mtime": 1786647633.247752,
-    "ast_hash": "284fb6b52da93846f5168d680f36782b",
-    "semantic_hash": "284fb6b52da93846f5168d680f36782b"
+    "mtime": 1787828246.6516166,
+    "ast_hash": "6242a4c5dc4c7a7e572ee7f5bfc1b581",
+    "semantic_hash": ""
   },
   "gateway/security/wazuh_client.py": {
     "mtime": 1775099399.9730775,
@@ -1190,9 +1190,9 @@
     "semantic_hash": "661f8d1eb32390ea3f3253617e2b420c"
   },
   "gateway/tests/test_config_validation.py": {
-    "mtime": 1786615563.8075984,
-    "ast_hash": "2cd7e3fa03a140d9ee9bf46aad7b3c77",
-    "semantic_hash": "2cd7e3fa03a140d9ee9bf46aad7b3c77"
+    "mtime": 1787828246.652137,
+    "ast_hash": "bfe0cfa0b7f4d62e11cb6339b28158e5",
+    "semantic_hash": ""
   },
   "gateway/tests/test_consent_framework.py": {
     "mtime": 1775203929.770239,
@@ -1390,8 +1390,8 @@
     "semantic_hash": "2e91ffe0949bf92482bd4cc7516f0503"
   },
   "gateway/tests/test_hermes_cron_seed.py": {
-    "mtime": 1787492160.9211764,
-    "ast_hash": "7b9b80da5c5daa4f7d3fa0904dc4e1cb",
+    "mtime": 1787845365.8316283,
+    "ast_hash": "f4441e800487ed996be4e8de5ab94f0a",
     "semantic_hash": ""
   },
   "gateway/tests/test_heuristic_classifier.py": {
@@ -1685,9 +1685,9 @@
     "semantic_hash": "52753028091cefdc17ddbbd46a5a12de"
   },
   "gateway/tests/test_security_toolchain.py": {
-    "mtime": 1786647633.2646224,
-    "ast_hash": "2995bcb8d633949f6e82b0b1beec7a0f",
-    "semantic_hash": "2995bcb8d633949f6e82b0b1beec7a0f"
+    "mtime": 1787828246.6536028,
+    "ast_hash": "f4ff3680bc10b6f037a4a55550428aba",
+    "semantic_hash": ""
   },
   "gateway/tests/test_session_isolation.py": {
     "mtime": 1782602471.723337,
@@ -2030,9 +2030,9 @@
     "semantic_hash": "2d597e4ef233bef5e43119d87b3584ff"
   },
   "scripts/post-deploy-check.sh": {
-    "mtime": 1785351807.2946594,
-    "ast_hash": "919e5194b9a3415b3d844e75317545ba",
-    "semantic_hash": "919e5194b9a3415b3d844e75317545ba"
+    "mtime": 1787842023.5348423,
+    "ast_hash": "158b25b29c6ad313bb793e7022b606e9",
+    "semantic_hash": ""
   },
   "scripts/pre-commit-hook.sh": {
     "mtime": 1772932941.5581214,
@@ -2080,8 +2080,8 @@
     "semantic_hash": "d09146c250423466b8d8d7ab4e51db31"
   },
   "scripts/tailscale-serve.sh": {
-    "mtime": 1787487408.1358428,
-    "ast_hash": "da6fbdbaee2c79545628b9f3ca2f3c58",
+    "mtime": 1787502313.4862704,
+    "ast_hash": "e344f7ad7fcf2ce8b207de3fe403edcc",
     "semantic_hash": ""
   },
   "scripts/update-agentshroud.sh": {
@@ -2325,8 +2325,8 @@
     "semantic_hash": "9905fc4b5b1dd43fc6137dfcc7606f25"
   },
   "CHANGELOG.md": {
-    "mtime": 1787474290.5314627,
-    "ast_hash": "3f3cc72d28b5133bb57d0a8849778a44",
+    "mtime": 1787514426.8700337,
+    "ast_hash": "e4e8a3030d1158b5ddb4d65a6c47801c",
     "semantic_hash": ""
   },
   "CHEATSHEET.md": {
@@ -2335,9 +2335,9 @@
     "semantic_hash": "0180f22752851cc91f6abbb7a39a364c"
   },
   "CLAUDE.md": {
-    "mtime": 1787434557.477824,
-    "ast_hash": "d4e60e26b7c43d05e70a50f7b0bc6543",
-    "semantic_hash": "d4e60e26b7c43d05e70a50f7b0bc6543"
+    "mtime": 1787514405.2743037,
+    "ast_hash": "734b2196a9b92618641c05f652875199",
+    "semantic_hash": ""
   },
   "CONTRIBUTING.md": {
     "mtime": 1782744723.065125,
@@ -2460,7 +2460,7 @@
     "semantic_hash": "5a8b423805ebe88f6ea22f385bf14445"
   },
   "docker/config/hermes/cron/jobs.yaml": {
-    "mtime": 1787492160.9175744,
+    "mtime": 1787503103.3985908,
     "ast_hash": "eb2f6b9b3ea685f711bf511dadd3342c",
     "semantic_hash": ""
   },
@@ -2510,9 +2510,9 @@
     "semantic_hash": "099683145b7d4c802a73b2d2b163413d"
   },
   "docker/docker-compose.yml": {
-    "mtime": 1787434815.5627687,
-    "ast_hash": "597790b31338061e7efdfab1d195b950",
-    "semantic_hash": "597790b31338061e7efdfab1d195b950"
+    "mtime": 1787847000.7543533,
+    "ast_hash": "2c09a81da42934bf698339431d00c1d1",
+    "semantic_hash": ""
   },
   "docker/falco/falco.yaml": {
     "mtime": 1775099399.9014487,
@@ -3960,9 +3960,9 @@
     "semantic_hash": "d65f279b5cfb9f33008c37ecb146e8d6"
   },
   "gateway/requirements.txt": {
-    "mtime": 1786738000.6623392,
-    "ast_hash": "3b9732bec80cc13b87fef8dea5d6417d",
-    "semantic_hash": "3b9732bec80cc13b87fef8dea5d6417d"
+    "mtime": 1787832341.6501136,
+    "ast_hash": "6e06af050417245ec389b0b3c1a535c4",
+    "semantic_hash": ""
   },
   "gateway/soc/templates/soc.html": {
     "mtime": 1784130146.5396962,
@@ -4880,9 +4880,9 @@
     "semantic_hash": "336a7fea415d3b86948ad6ede2648045"
   },
   "gateway/openapi.json": {
-    "mtime": 1787440235.4673507,
-    "ast_hash": "06798e00b21b96372caf94cbbeadbab5",
-    "semantic_hash": "06798e00b21b96372caf94cbbeadbab5"
+    "mtime": 1787514412.5520768,
+    "ast_hash": "0d3c61acf677c1b5828ebf9f1da8ae6f",
+    "semantic_hash": ""
   },
   "gateway/tests/test_cli_coverage.py": {
     "mtime": 1781729433.6054413,
@@ -4915,9 +4915,9 @@
     "semantic_hash": "00b6c14c18c7386973394cb75129767c"
   },
   "gateway/tests/test_progressive_trust_integration.py": {
-    "mtime": 1786647633.2533054,
-    "ast_hash": "06971bb629e240b7a6be80334e6ab827",
-    "semantic_hash": "06971bb629e240b7a6be80334e6ab827"
+    "mtime": 1787828246.6531596,
+    "ast_hash": "ef01bbd2092655717440b7f65d136011",
+    "semantic_hash": ""
   },
   "gateway/tests/test_resource_guard_wiring.py": {
     "mtime": 1781729433.6125362,
@@ -5025,14 +5025,14 @@
     "semantic_hash": "db7373aebc5128a1784b5cc57cf53779"
   },
   "docker/bots/hermes/resolve_model.py": {
-    "mtime": 1787492160.917228,
+    "mtime": 1787503103.3982263,
     "ast_hash": "e6ea8fe1bde88213743b1c99ecea982b",
     "semantic_hash": ""
   },
   "docker/bots/hermes/run-standalone.sh": {
-    "mtime": 1787432220.4921143,
-    "ast_hash": "7bec2edc4b1bbf87e8b87b80c4d46b6d",
-    "semantic_hash": "7bec2edc4b1bbf87e8b87b80c4d46b6d"
+    "mtime": 1787816252.4013023,
+    "ast_hash": "86aff20b43f57febb045d40b35a77f8c",
+    "semantic_hash": ""
   },
   "docker/config/hermes/manifest.json": {
     "mtime": 1786370679.9367867,
@@ -5060,9 +5060,9 @@
     "semantic_hash": "b72759ab7aca195deaa0af84171cb75f"
   },
   "docker/scripts/agentshroud-ssh-exec.sh": {
-    "mtime": 1785937447.1398215,
-    "ast_hash": "0303a35e78efb035a9e372b0d4d19fd2",
-    "semantic_hash": "0303a35e78efb035a9e372b0d4d19fd2"
+    "mtime": 1787513629.411236,
+    "ast_hash": "cf8ba6bf9d560ad055342e0dfdf55a1f",
+    "semantic_hash": ""
   },
   "docs/planning/reviews/enforcement-audit-script.py": {
     "mtime": 1785877198.791414,
@@ -5085,9 +5085,9 @@
     "semantic_hash": "ac1815d76871c6ac717ebd9e834290e9"
   },
   "firmware/voice-terminal/main/app_main.c": {
-    "mtime": 1786193726.3544033,
-    "ast_hash": "82a54d6013c51322b01061964a07629e",
-    "semantic_hash": "82a54d6013c51322b01061964a07629e"
+    "mtime": 1787816252.403209,
+    "ast_hash": "21c3388a7b7d83944f2f114ea804b50b",
+    "semantic_hash": ""
   },
   "firmware/voice-terminal/main/audio.c": {
     "mtime": 1783527857.3754559,
@@ -5120,9 +5120,9 @@
     "semantic_hash": "3f24f73846c30cf7e8fa66a3b7199e9f"
   },
   "firmware/voice-terminal/main/ui_face.c": {
-    "mtime": 1784127166.6033137,
-    "ast_hash": "1d5495e5ec8c938664fafdf542f70051",
-    "semantic_hash": "1d5495e5ec8c938664fafdf542f70051"
+    "mtime": 1787816252.4035628,
+    "ast_hash": "25a25750e2c7355662ca69cdfcd1f4e9",
+    "semantic_hash": ""
   },
   "firmware/voice-terminal/main/ui_face.h": {
     "mtime": 1782826232.4588625,
@@ -5130,9 +5130,9 @@
     "semantic_hash": "9039a94bc9489d1ccce27facf436bd3e"
   },
   "firmware/voice-terminal/main/wakeword.c": {
-    "mtime": 1783527857.3767657,
-    "ast_hash": "4563f0bd21f4dc37a45a70a1d2955cdb",
-    "semantic_hash": "4563f0bd21f4dc37a45a70a1d2955cdb"
+    "mtime": 1787816252.403944,
+    "ast_hash": "71bd0a23ee87a565a75d9c646cca7007",
+    "semantic_hash": ""
   },
   "firmware/voice-terminal/main/wakeword.h": {
     "mtime": 1783527857.3771935,
@@ -5420,7 +5420,7 @@
     "semantic_hash": "46220461d4d485da8de4d73bfbc5c3e1"
   },
   "gateway/tests/test_hermes_model_resolver.py": {
-    "mtime": 1787492160.9215605,
+    "mtime": 1787503103.4003465,
     "ast_hash": "bc5429714c00cb201fa833cf389d612d",
     "semantic_hash": ""
   },
@@ -5450,7 +5450,7 @@
     "semantic_hash": "0c0878c360d44028e22fb945236b9c02"
   },
   "gateway/tests/test_llm_proxy_local_parity.py": {
-    "mtime": 1787492160.9219248,
+    "mtime": 1787503103.400779,
     "ast_hash": "32d8240210c2471b88198388b7977045",
     "semantic_hash": ""
   },
@@ -5535,9 +5535,9 @@
     "semantic_hash": "4d6b6299748f590bf3d9ded5d55264d5"
   },
   "gateway/tests/test_voice_gateway.py": {
-    "mtime": 1786647633.2890444,
-    "ast_hash": "b9b7f09557050efbf827f0a7a5edcf5f",
-    "semantic_hash": "b9b7f09557050efbf827f0a7a5edcf5f"
+    "mtime": 1787828246.6544957,
+    "ast_hash": "99d523e9baf70b7b1dc15b9a2b4c1239",
+    "semantic_hash": ""
   },
   "gateway/tests/test_voice_latency_guard.py": {
     "mtime": 1786737990.3729005,
@@ -5630,9 +5630,9 @@
     "semantic_hash": "054488724e70937f1301724229fefcfb"
   },
   "voice_gateway/server.py": {
-    "mtime": 1786193730.2618089,
-    "ast_hash": "7ae78a737479fb7d011e68b7e6453603",
-    "semantic_hash": "7ae78a737479fb7d011e68b7e6453603"
+    "mtime": 1787828246.6555967,
+    "ast_hash": "773b58ed120993848f3f360559e242ca",
+    "semantic_hash": ""
   },
   "voice_gateway/stt.py": {
     "mtime": 1784056343.149246,
@@ -6140,8 +6140,8 @@
     "semantic_hash": "bf05982a6433bc1f470580493defee6d"
   },
   "scripts/check-vendor-compat.sh": {
-    "mtime": 1787492276.6474247,
-    "ast_hash": "c8e058fbfe0f30c42e9634d16908cbb8",
+    "mtime": 1787502313.4858,
+    "ast_hash": "f67c731d0b5e09792fa15761d4730e2b",
     "semantic_hash": ""
   },
   "scripts/promote-firmware.sh": {
@@ -7220,9 +7220,9 @@
     "semantic_hash": "dce15053d7f7b9788280f0895fc29df1"
   },
   "docker/scripts/agentshroud-ssh-write-file.sh": {
-    "mtime": 1785928088.857155,
-    "ast_hash": "deb8fe15d47e8773c33dad47ce7c5b02",
-    "semantic_hash": "deb8fe15d47e8773c33dad47ce7c5b02"
+    "mtime": 1787513629.4118116,
+    "ast_hash": "cc05e2921f40772a75ccef024169df0d",
+    "semantic_hash": ""
   },
   "gateway/tests/test_ssh_write_file_endpoint.py": {
     "mtime": 1785976230.7652347,
@@ -7370,9 +7370,9 @@
     "semantic_hash": "22c0c8c8b572ee62b6f6ce959eac33b4"
   },
   "docs/job-schedule.html": {
-    "mtime": 1786737990.356632,
-    "ast_hash": "5a47a9848d1161bc3ef62e86ff280888",
-    "semantic_hash": "5a47a9848d1161bc3ef62e86ff280888"
+    "mtime": 1787502368.529927,
+    "ast_hash": "a162f2803c56144322e91f88fa4f8ee4",
+    "semantic_hash": ""
   },
   ".agents/skills/i-browser/browse.js": {
     "mtime": 1787350678.3000581,
@@ -7395,9 +7395,9 @@
     "semantic_hash": "69dbb3336e795a2506d3d633e0d0a815"
   },
   "docker/bots/hermes/patch_telegram_send_base_url.py": {
-    "mtime": 1787314726.4474883,
-    "ast_hash": "e80a42a69fe584fb458b5097cb7442ef",
-    "semantic_hash": "e80a42a69fe584fb458b5097cb7442ef"
+    "mtime": 1787513629.4092693,
+    "ast_hash": "c5e7f4bf76e3ae0384db052634d09f8f",
+    "semantic_hash": ""
   },
   "gateway/proxy/telegram_gateway_relay.py": {
     "mtime": 1786738261.1779501,
@@ -8003,5 +8003,185 @@
     "mtime": 1787390101.5062451,
     "ast_hash": "e0f5410ad2f4b2e896eec89709359c27",
     "semantic_hash": "e0f5410ad2f4b2e896eec89709359c27"
+  },
+  "docker/config/openclaw/cron/scripts/cve_prefetch.py": {
+    "mtime": 1787574733.5461707,
+    "ast_hash": "7fc6e0cc36a877efd67ddc129c28922b",
+    "semantic_hash": ""
+  },
+  "docker/config/openclaw/cron/scripts/daily-checkin.sh": {
+    "mtime": 1787574733.5464098,
+    "ast_hash": "3bb2d5ada417e1a2272ce972ea5c72f4",
+    "semantic_hash": ""
+  },
+  "docker/config/openclaw/cron/scripts/prefetch-ghsa-registry.sh": {
+    "mtime": 1787574733.5466146,
+    "ast_hash": "8681bfecf117d21b81bbe366cab1656c",
+    "semantic_hash": ""
+  },
+  "docker/config/hermes/cron/JOBS-REFERENCE.md": {
+    "mtime": 1787602982.7852814,
+    "ast_hash": "95a59e0ec276d650f906065e8f91d729",
+    "semantic_hash": ""
+  },
+  "docker/config/hermes/cron/prompts/agentshroud-daily-check-in.txt": {
+    "mtime": 1787566587.6152465,
+    "ast_hash": "88234d339cf2e6fb088781ea9dfe9bdf",
+    "semantic_hash": ""
+  },
+  "docker/config/hermes/cron/prompts/agentshroud-weekly-summary.txt": {
+    "mtime": 1787566587.616296,
+    "ast_hash": "cc771c2cf4985e8ce15dd2b50d389e5b",
+    "semantic_hash": ""
+  },
+  "docker/config/hermes/cron/prompts/daily-component-health-digest.txt": {
+    "mtime": 1787566587.6181414,
+    "ast_hash": "e60937c6dda6c92c093b137b48261d37",
+    "semantic_hash": ""
+  },
+  "docker/config/hermes/cron/prompts/daily-memory-journal.txt": {
+    "mtime": 1787566587.619266,
+    "ast_hash": "8a81452a80f3a28175391378428d7195",
+    "semantic_hash": ""
+  },
+  "docker/config/hermes/cron/prompts/hermes-competitive-intelligence-email-am-pm.txt": {
+    "mtime": 1787566587.6201632,
+    "ast_hash": "c6a21dcc5196bf2889f8ac78736d2ffb",
+    "semantic_hash": ""
+  },
+  "docker/config/hermes/cron/prompts/hermes-competitive-landscape-update-am-pm.txt": {
+    "mtime": 1787566587.6208198,
+    "ast_hash": "901fd3e387407b185844bc790d80f629",
+    "semantic_hash": ""
+  },
+  "docker/config/hermes/cron/prompts/jira-weekly-review.txt": {
+    "mtime": 1787566587.6214824,
+    "ast_hash": "b689ff60e34f7f4ec15bb0ba5e038cca",
+    "semantic_hash": ""
+  },
+  "docker/config/hermes/cron/prompts/monthly-chaos-engineering-drill.txt": {
+    "mtime": 1787566587.6221595,
+    "ast_hash": "a6039f7cefd42f5045c28757ce1f7bdd",
+    "semantic_hash": ""
+  },
+  "docker/config/hermes/cron/prompts/newsletter-chat-front-ends-search-infra.txt": {
+    "mtime": 1787566587.622974,
+    "ast_hash": "222040977f721c742d1fd8651be7977f",
+    "semantic_hash": ""
+  },
+  "docker/config/hermes/cron/prompts/newsletter-coding-agent-clis.txt": {
+    "mtime": 1787566587.6236365,
+    "ast_hash": "81da447f7576b51169902c2e538cfafb",
+    "semantic_hash": ""
+  },
+  "docker/config/hermes/cron/prompts/newsletter-local-inference-engines.txt": {
+    "mtime": 1787566587.6242585,
+    "ast_hash": "3b99a14f06587c2a22878bfee955647c",
+    "semantic_hash": ""
+  },
+  "docker/config/hermes/cron/prompts/newsletter-mac-clustering.txt": {
+    "mtime": 1787566587.62466,
+    "ast_hash": "529280ff3fda4ab66a46a2c26af9f484",
+    "semantic_hash": ""
+  },
+  "docker/config/hermes/cron/prompts/newsletter-model-version-tracker.txt": {
+    "mtime": 1787566587.625095,
+    "ast_hash": "6ed36c38d8b6628f6edf25104972ef8f",
+    "semantic_hash": ""
+  },
+  "docker/config/hermes/cron/prompts/newsletter-moe-streaming-ssd-offload.txt": {
+    "mtime": 1787566587.6262436,
+    "ast_hash": "44c15764d396e392ba9cdc59fa9f6000",
+    "semantic_hash": ""
+  },
+  "docker/config/hermes/cron/prompts/newsletter-personal-ai-assistants.txt": {
+    "mtime": 1787566587.6267145,
+    "ast_hash": "bcd13248769a9b1022ba5411378aa42f",
+    "semantic_hash": ""
+  },
+  "docker/config/hermes/cron/prompts/omlx-moe-streaming-health-check.txt": {
+    "mtime": 1787566587.6270833,
+    "ast_hash": "1ca2d9c8dae4ddd9c94ca40f5b18e9bb",
+    "semantic_hash": ""
+  },
+  "docker/config/hermes/cron/prompts/today-in-ai.txt": {
+    "mtime": 1787566587.627496,
+    "ast_hash": "557d76bba9d00acbb7ec13ca802de4d7",
+    "semantic_hash": ""
+  },
+  "docker/config/hermes/cron/prompts/turbo-fieldfare-fix-watch.txt": {
+    "mtime": 1787566587.627799,
+    "ast_hash": "37af0b08397c000d8be5a4eb6c274779",
+    "semantic_hash": ""
+  },
+  "docker/config/hermes/cron/prompts/weekly-hermes-stability-report.txt": {
+    "mtime": 1787566587.6281521,
+    "ast_hash": "52bb1fedc0883043804d938e0b257484",
+    "semantic_hash": ""
+  },
+  "docker/config/hermes/cron/prompts/weekly-kaizen-review.txt": {
+    "mtime": 1787566587.6284962,
+    "ast_hash": "ad4edbc0efc989a150facbba4eaad2f2",
+    "semantic_hash": ""
+  },
+  "docker/config/openclaw/cron/JOBS-REFERENCE.md": {
+    "mtime": 1787602982.7857528,
+    "ast_hash": "f0f17e8434c49b77115078c15d1d6844",
+    "semantic_hash": ""
+  },
+  "docker/config/openclaw/cron/prompts/agentic-ai-threat-intelligence.txt": {
+    "mtime": 1787574733.544118,
+    "ast_hash": "6d058de45cc19b695533d9f40d6bdd10",
+    "semantic_hash": ""
+  },
+  "docker/config/openclaw/cron/prompts/agentshroud-weekly-summary.txt": {
+    "mtime": 1787574733.544395,
+    "ast_hash": "cac6b6243cf970ecd24ec63fff040a94",
+    "semantic_hash": ""
+  },
+  "docker/config/openclaw/cron/prompts/ai-security-standards-watch.txt": {
+    "mtime": 1787574733.5448387,
+    "ast_hash": "350b914d699f1cafe5e0eaa8ae1b89de",
+    "semantic_hash": ""
+  },
+  "docker/config/openclaw/cron/prompts/collaborator-daily-digest.txt": {
+    "mtime": 1787574733.5450478,
+    "ast_hash": "aea395710133230f826d64a45773ecea",
+    "semantic_hash": ""
+  },
+  "docker/config/openclaw/cron/prompts/collaborator-report-evening.txt": {
+    "mtime": 1787574733.5452607,
+    "ast_hash": "9b94f847c8b0bc0eb77f7c7e0dc89a0b",
+    "semantic_hash": ""
+  },
+  "docker/config/openclaw/cron/prompts/collaborator-report-morning.txt": {
+    "mtime": 1787574733.5454123,
+    "ast_hash": "fb07164d29fd9c1785c895004b3113f8",
+    "semantic_hash": ""
+  },
+  "docker/config/openclaw/cron/prompts/cve-triage-report.txt": {
+    "mtime": 1787574733.545654,
+    "ast_hash": "1db0263280ab33f1cdc2f6e13abebf76",
+    "semantic_hash": ""
+  },
+  "docker/config/openclaw/cron/prompts/daily-memory-journal.txt": {
+    "mtime": 1787574733.545913,
+    "ast_hash": "e129baf5823ae48b1eaa946666be8787",
+    "semantic_hash": ""
+  },
+  "docker/config/openclaw/cron/templates/html-report-instructions.md": {
+    "mtime": 1787574733.5468848,
+    "ast_hash": "7bd38ef7077f52288a279a1a098e784e",
+    "semantic_hash": ""
+  },
+  "docker/config/openclaw/cron/templates/report-template.html": {
+    "mtime": 1787574733.547311,
+    "ast_hash": "9b537fc1c348a863a49dffd221b7db09",
+    "semantic_hash": ""
+  },
+  "CONTINUE-2026-08-27.md": {
+    "mtime": 1787814014.3353834,
+    "ast_hash": "933f59caa46b61266be54f79e848013e",
+    "semantic_hash": ""
   }
 }

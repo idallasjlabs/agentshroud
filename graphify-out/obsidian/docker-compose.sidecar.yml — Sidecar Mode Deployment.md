@@ -1,13 +1,13 @@
 ---
 source_file: "docker-compose.sidecar.yml"
 type: "document"
-community: "Docker Compose.sidecar"
+community: "Community 1610"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Composesidecar
+  - community/Community_1610
 ---
 
 # docker-compose.sidecar.yml — Sidecar Mode Deployment
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Composesidecar
+#graphify/document #graphify/EXTRACTED #community/Community_1610

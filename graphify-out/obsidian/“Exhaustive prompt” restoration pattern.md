@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/oracle/SKILL.md"
 type: "document"
-community: "Skill (oracle)"
+community: "Community 718"
 location: "L117"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_oracle
+  - community/Community_718
 ---
 
 # “Exhaustive prompt” restoration pattern
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[oracle — best use]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_oracle
+#graphify/document #graphify/EXTRACTED #community/Community_718

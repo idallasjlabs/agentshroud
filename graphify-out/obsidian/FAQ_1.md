@@ -1,12 +1,12 @@
 ---
 source_file: "docs/user-guide.md"
 type: "document"
-community: "User Guide (docs)"
+community: "Community 306"
 location: "L116"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/User_Guide_docs
+  - community/Community_306
 ---
 
 # FAQ
@@ -21,4 +21,4 @@ tags:
 - [[Q What happens if I accidentally send a password]] - `contains` [EXTRACTED]
 - [[Q What's the kill switch]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/User_Guide_docs
+#graphify/document #graphify/EXTRACTED #community/Community_306

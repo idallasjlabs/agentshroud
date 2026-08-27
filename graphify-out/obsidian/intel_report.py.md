@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "Intel Report (security)"
+community: "Community 133"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Intel_Report_security
+  - community/Community_133
 ---
 
 # intel_report.py
@@ -20,4 +20,4 @@ tags:
 - [[_compute_hash()]] - `contains` [EXTRACTED]
 - [[citation_verifier.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Intel_Report_security
+#graphify/code #graphify/EXTRACTED #community/Community_133

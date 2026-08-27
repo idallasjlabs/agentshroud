@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-sec-defense/SKILL.md"
 type: "document"
-community: "Tool Chain & CVE Triage"
+community: "Community 659"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Tool_Chain__CVE_Triage
+  - community/Community_659
 ---
 
 # AgentShroud Blue Team Security Auditor (SEC-DEFENSE)
@@ -25,7 +25,6 @@ tags:
 - [[encoding_detector.py]] - `references` [EXTRACTED]
 - [[enhanced_queue.py]] - `references` [EXTRACTED]
 - [[file_sandbox.py]] - `references` [EXTRACTED]
-- [[gatewaysecuritycredential_injector.py (CredentialInjector)]] - `references` [EXTRACTED]
 - [[key_rotation.py]] - `references` [EXTRACTED]
 - [[killswitch_monitor.py]] - `references` [EXTRACTED]
 - [[main.py_2]] - `references` [EXTRACTED]
@@ -42,4 +41,4 @@ tags:
 - [[trust_manager.py]] - `references` [EXTRACTED]
 - [[xml_leak_filter.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Tool_Chain__CVE_Triage
+#graphify/document #graphify/EXTRACTED #community/Community_659

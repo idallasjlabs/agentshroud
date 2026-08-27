@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/OPENCLAW_SETUP.md"
 type: "document"
-community: "Openclaw Setup (setup)"
+community: "Community 214"
 location: "L261"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Openclaw_Setup_setup
+  - community/Community_214
 ---
 
 # ✅ MCP Servers
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OpenClaw Features Now Available]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Openclaw_Setup_setup
+#graphify/document #graphify/EXTRACTED #community/Community_214

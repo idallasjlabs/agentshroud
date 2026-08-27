@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_browser_security.py"
 type: "code"
-community: "Browser Security"
+community: "Community 147"
 location: "L118"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Browser_Security
+  - community/Community_147
 ---
 
 # TestScreenshotAnalysis
@@ -21,4 +21,4 @@ tags:
 - [[ThreatLevel_1]] - `uses` [INFERRED]
 - [[test_browser_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Browser_Security
+#graphify/code #graphify/INFERRED #community/Community_147

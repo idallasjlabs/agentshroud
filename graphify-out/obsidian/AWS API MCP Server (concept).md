@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-mcpm/SKILL.md"
 type: "concept"
-community: "Skill (i-mcpm)"
+community: "Community 1575"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Skill_i-mcpm
+  - community/Community_1575
 ---
 
 # AWS API MCP Server (concept)
 
-#graphify/concept #graphify/EXTRACTED #community/Skill_i-mcpm
+#graphify/concept #graphify/EXTRACTED #community/Community_1575

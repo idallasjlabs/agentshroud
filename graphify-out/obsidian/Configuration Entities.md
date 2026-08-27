@@ -1,12 +1,12 @@
 ---
 source_file: "docs/data/data-dictionary.md"
 type: "document"
-community: "Data Dictionary (data)"
+community: "Community 394"
 location: "L208"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Data_Dictionary_data
+  - community/Community_394
 ---
 
 # Configuration Entities
@@ -14,5 +14,6 @@ tags:
 ## Connections
 - [[AgentShroud Data Dictionary]] - `contains` [EXTRACTED]
 - [[Configuration Setup]] - `contains` [EXTRACTED]
+- [[ConfigurationSetting]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Data_Dictionary_data
+#graphify/document #graphify/EXTRACTED #community/Community_394

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: "Llm Proxy (proxy)"
-location: "L1663"
+community: "Community 108"
+location: "L1741"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Llm_Proxy_proxy
+  - community/Community_108
 ---
 
 # Any
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._filter_streaming_event()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Llm_Proxy_proxy
+#graphify/code #graphify/EXTRACTED #community/Community_108

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/consent_framework.py.md"
 type: "document"
-community: "Consent Framework.py (Security Modules)"
+community: "Community 687"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Consent_Frameworkpy_Security_Modules
+  - community/Community_687
 ---
 
 # consent_framework.py
@@ -22,4 +22,4 @@ tags:
 - [[Threat Model_7]] - `contains` [EXTRACTED]
 - [[consent_framework.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Consent_Frameworkpy_Security_Modules
+#graphify/document #graphify/EXTRACTED #community/Community_687

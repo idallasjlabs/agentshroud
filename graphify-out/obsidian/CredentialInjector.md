@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_credential_injector.py"
 type: "code"
-community: "Credential Isolation"
+community: "Community 611"
 location: "L209"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Credential_Isolation
+  - community/Community_611
 ---
 
 # CredentialInjector
@@ -26,4 +26,4 @@ tags:
 - [[.test_strip_headers_removes_conflicting_header()]] - `calls` [EXTRACTED]
 - [[injector()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Credential_Isolation
+#graphify/code #graphify/EXTRACTED #community/Community_611

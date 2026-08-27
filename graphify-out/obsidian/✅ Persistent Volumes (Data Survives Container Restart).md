@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md"
 type: "document"
-community: "Openclaw Write Requirements (architecture)"
+community: "Community 209"
 location: "L223"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Openclaw_Write_Requirements_architecture
+  - community/Community_209
 ---
 
 # ✅ Persistent Volumes (Data Survives Container Restart)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Current Docker Configuration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Openclaw_Write_Requirements_architecture
+#graphify/document #graphify/EXTRACTED #community/Community_209

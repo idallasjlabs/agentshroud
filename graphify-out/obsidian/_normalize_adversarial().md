@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/differential_pii_detector.py"
 type: "code"
-community: "Differential Pii Detector"
+community: "Community 47"
 location: "L138"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Differential_Pii_Detector
+  - community/Community_47
 ---
 
 # _normalize_adversarial()
@@ -16,4 +16,4 @@ tags:
 - [[Strip common adversarial encoding tricks, return (normalized, count_removed).]] - `rationale_for` [EXTRACTED]
 - [[differential_pii_detector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Differential_Pii_Detector
+#graphify/code #graphify/EXTRACTED #community/Community_47

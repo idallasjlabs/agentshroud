@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-icloud/SKILL.md"
+source_file: "skills/openclaw/himalaya/references/configuration.md"
 type: "document"
-community: "Skill (i-icloud)"
-location: "L125"
+community: "Community 581"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-icloud
+  - community/Community_581
 ---
 
-# Configuration
+# configuration.md
 
 ## Connections
-- [[iCloud Services_1]] - `contains` [EXTRACTED]
+- [[Himalaya Configuration Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-icloud
+#graphify/document #graphify/EXTRACTED #community/Community_581

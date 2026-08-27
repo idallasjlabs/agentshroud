@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/workspace/jira_dev_ticket.py"
 type: "code"
-community: "Jira Dev Ticket (workspace)"
+community: "Community 165"
 location: "L83"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Jira_Dev_Ticket_workspace
+  - community/Community_165
 ---
 
 # build_op_proxy_request()
@@ -16,4 +16,4 @@ tags:
 - [[fetch_op_secret()]] - `calls` [EXTRACTED]
 - [[jira_dev_ticket.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Jira_Dev_Ticket_workspace
+#graphify/code #graphify/EXTRACTED #community/Community_165

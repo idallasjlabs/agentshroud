@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/02-infrastructure.md"
 type: "concept"
-community: "02 Infrastructure (diagrams)"
+community: "Community 800"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/02_Infrastructure_diagrams
+  - community/Community_800
 ---
 
 # Infrastructure Diagram — Hosting & Servers
@@ -15,4 +15,4 @@ tags:
 - [[Network Topology Diagram]] - `references` [INFERRED]
 - [[Rendered Infrastructure Hosting Diagram (PNG)]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/02_Infrastructure_diagrams
+#graphify/concept #graphify/EXTRACTED #community/Community_800

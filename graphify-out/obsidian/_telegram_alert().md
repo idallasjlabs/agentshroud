@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/crashwatch.sh"
 type: "code"
-community: "Start (hermes)"
+community: "Community 326"
 location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Start_hermes
+  - community/Community_326
 ---
 
 # _telegram_alert()
@@ -16,4 +16,4 @@ tags:
 - [[crashwatch.sh]] - `defines` [EXTRACTED]
 - [[crashwatch.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Start_hermes
+#graphify/code #graphify/EXTRACTED #community/Community_326

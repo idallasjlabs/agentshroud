@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md"
 type: "document"
-community: "Mcp Permissions.py (Proxy Layer)"
+community: "Community 677"
 location: "L44"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mcp_Permissionspy_Proxy_Layer
+  - community/Community_677
 ---
 
 # MCPPermissionManager.infer_permission_level(tool_name, server_config)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Function Details_11]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mcp_Permissionspy_Proxy_Layer
+#graphify/document #graphify/EXTRACTED #community/Community_677

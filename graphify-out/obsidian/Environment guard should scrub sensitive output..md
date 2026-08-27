@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "Git Guard (security)"
+community: "Community 14"
 location: "L420"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Git_Guard_security
+  - community/Community_14
 ---
 
 # Environment guard should scrub sensitive output.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_env_guard_scrubs_output()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Git_Guard_security
+#graphify/rationale #graphify/EXTRACTED #community/Community_14

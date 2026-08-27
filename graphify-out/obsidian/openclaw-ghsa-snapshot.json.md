@@ -1,11 +1,11 @@
 ---
 source_file: "scripts/data/openclaw-ghsa-snapshot.json"
 type: "document"
-community: "Sync Cve Registry (scripts)"
+community: "Community 112"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Sync_Cve_Registry_scripts
+  - community/Community_112
 ---
 
 # openclaw-ghsa-snapshot.json
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[sync-cve-registry.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Sync_Cve_Registry_scripts
+#graphify/document #graphify/EXTRACTED #community/Community_112

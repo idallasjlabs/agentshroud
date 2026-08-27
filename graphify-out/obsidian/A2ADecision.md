@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/a2a_governance.py"
 type: "code"
-community: "A2a Governance (security)"
+community: "Community 44"
 location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2a_Governance_security
+  - community/Community_44
 ---
 
 # A2ADecision
@@ -37,4 +37,4 @@ tags:
 - [[str]] - `inherits` [EXTRACTED]
 - [[test_a2a_governance.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2a_Governance_security
+#graphify/code #graphify/EXTRACTED #community/Community_44

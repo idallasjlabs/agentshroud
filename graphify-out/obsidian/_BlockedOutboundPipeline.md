@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "code"
-community: "Router"
+community: "Community 38"
 location: "L305"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Router
+  - community/Community_38
 ---
 
 # _BlockedOutboundPipeline
@@ -20,4 +20,4 @@ tags:
 - [[Inbound passes; outbound returns blocked=True with the original text intact.]] - `rationale_for` [EXTRACTED]
 - [[test_forward_routing.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Router
+#graphify/code #graphify/EXTRACTED #community/Community_38

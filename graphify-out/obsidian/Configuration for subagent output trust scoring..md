@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "rationale"
-community: "Subagent Governance"
+community: "Community 934"
 location: "L62"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Subagent_Governance
+  - community/Community_934
 ---
 
 # Configuration for subagent output trust scoring.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OutputTrustConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Subagent_Governance
+#graphify/rationale #graphify/EXTRACTED #community/Community_934

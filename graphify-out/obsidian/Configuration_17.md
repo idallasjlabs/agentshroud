@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/All Dependencies.md"
+source_file: "docs/vault/04 - Environment Variables/GATEWAY_URL.md"
 type: "document"
-community: "All dependencies (05 - Dependencies)"
-location: "L49"
+community: "Community 488"
+location: "L34"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/All_dependencies_05_-_Dependencies
+  - community/Community_488
 ---
 
 # Configuration
 
 ## Connections
-- [[Gateway Python Dependencies (`gatewayrequirements.txt`)]] - `contains` [EXTRACTED]
+- [[GATEWAY_URL_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/All_dependencies_05_-_Dependencies
+#graphify/document #graphify/EXTRACTED #community/Community_488

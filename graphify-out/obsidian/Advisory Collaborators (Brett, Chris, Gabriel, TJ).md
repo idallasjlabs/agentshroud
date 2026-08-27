@@ -1,11 +1,11 @@
 ---
 source_file: "docs/TEAM.md"
 type: "concept"
-community: "Claude Security Audit Prompt (docs)"
+community: "Community 1275"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Claude_Security_Audit_Prompt_docs
+  - community/Community_1275
 ---
 
 # Advisory Collaborators (Brett, Chris, Gabriel, TJ)
@@ -14,4 +14,4 @@ tags:
 - [[Collaborator Session Isolation (blocked functionsskills)]] - `conceptually_related_to` [INFERRED]
 - [[Steve Hay — Collaborator (Telegram ID 8279589982)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Claude_Security_Audit_Prompt_docs
+#graphify/concept #graphify/EXTRACTED #community/Community_1275

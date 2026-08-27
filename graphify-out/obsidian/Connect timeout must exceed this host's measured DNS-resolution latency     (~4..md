@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "rationale"
-community: "Llm Proxy"
+community: "Community 79"
 location: "L673"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Llm_Proxy
+  - community/Community_79
 ---
 
 # Connect timeout must exceed this host's measured DNS-resolution latency     (~4.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_llm_connect_timeout_clears_observed_dns_latency()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Llm_Proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_79

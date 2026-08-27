@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "Performance"
+community: "Community 775"
 location: "L264"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Performance
+  - community/Community_775
 ---
 
 # TestSecurityPipelineChainLatency
@@ -28,4 +28,4 @@ tags:
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_performance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Performance
+#graphify/code #graphify/EXTRACTED #community/Community_775

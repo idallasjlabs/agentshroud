@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/live-assessment-results.md"
 type: "document"
-community: "Live Assessment Results (redteam)"
+community: "Community 724"
 location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Live_Assessment_Results_redteam
+  - community/Community_724
 ---
 
 # Test Environment
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Red Team Assessment — Live Results]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Live_Assessment_Results_redteam
+#graphify/document #graphify/EXTRACTED #community/Community_724

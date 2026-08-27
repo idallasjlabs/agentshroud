@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/proxy/web_content_scanner.py"
 type: "code"
-community: "Url Analyzer (proxy)"
+community: "Community 1498"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Url_Analyzer_proxy
+  - community/Community_1498
 ---
 
 # _RESPONSE_PII_PATTERNS (content PII regex set)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[_PII_PATTERNS (URL PII regex set)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Url_Analyzer_proxy
+#graphify/code #graphify/INFERRED #community/Community_1498

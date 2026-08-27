@@ -1,12 +1,12 @@
 ---
 source_file: "docs/governance/BRANCH_PROTECTION.md"
 type: "document"
-community: "Branch Protection (governance)"
+community: "Community 1100"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Branch_Protection_governance
+  - community/Community_1100
 ---
 
 # Required Settings
@@ -15,4 +15,4 @@ tags:
 - [[GitHub Branch Protection — `main`]] - `contains` [EXTRACTED]
 - [[Required Status Checks]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Branch_Protection_governance
+#graphify/document #graphify/EXTRACTED #community/Community_1100

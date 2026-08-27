@@ -1,17 +1,18 @@
 ---
-source_file: "docs/planning/reviews/session-issue-register-2026-03-14.md"
+source_file: "docs/planning/reviews/phase-review-2026-02-24-b.md"
 type: "document"
-community: "Gateway Test Suite"
-location: "L8"
+community: "Community 1115"
+location: "L171"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Community_1115
 ---
 
 # Summary
 
 ## Connections
-- [[AgentShroud Session Issue Register — 2026-03-14]] - `contains` [EXTRACTED]
+- [[AgentShroud Phase Review — 2026-02-23]] - `contains` [EXTRACTED]
+- [[AgentShroud Phase Review — 2026-02-24-b]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Community_1115

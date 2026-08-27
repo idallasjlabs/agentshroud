@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_skills_manifest_sync.py"
 type: "code"
-community: "Skills Manifest Sync"
+community: "Community 71"
 location: "L380"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Skills_Manifest_Sync
+  - community/Community_71
 ---
 
 # TestPlanDeploy
@@ -24,4 +24,4 @@ tags:
 - [[The plan is a pure function it maps canonical source entries to each     per-bo]] - `rationale_for` [EXTRACTED]
 - [[test_skills_manifest_sync.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Skills_Manifest_Sync
+#graphify/code #graphify/EXTRACTED #community/Community_71

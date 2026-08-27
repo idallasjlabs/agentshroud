@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/container-security-audit-v0.8.0.md"
 type: "document"
-community: "Container Security Audit V0.8.0 (v0.8)"
+community: "Community 516"
 location: "L89"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Container_Security_Audit_V080_v08
+  - community/Community_516
 ---
 
 # 🔴 C3: PID1 Environment Readable (`/proc/1/environ`)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Findings & Mitigations]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Container_Security_Audit_V080_v08
+#graphify/document #graphify/EXTRACTED #community/Community_516

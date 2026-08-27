@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_channel_ownership.py"
 type: "code"
-community: "Forward (routes)"
+community: "Community 63"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Forward_routes
+  - community/Community_63
 ---
 
 # test_channel_ownership.py
@@ -21,4 +21,4 @@ tags:
 - [[client()_2]] - `contains` [EXTRACTED]
 - [[forward.py]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Forward_routes
+#graphify/code #graphify/EXTRACTED #community/Community_63

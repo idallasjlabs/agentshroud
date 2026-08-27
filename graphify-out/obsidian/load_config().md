@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "Config"
+community: "Community 34"
 location: "L406"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Config
+  - community/Community_34
 ---
 
 # load_config()
@@ -32,7 +32,6 @@ tags:
 - [[Load and validate configuration from agentshroud.yaml      Search order     1.]] - `rationale_for` [EXTRACTED]
 - [[PIIConfig]] - `calls` [EXTRACTED]
 - [[Path_1]] - `references` [EXTRACTED]
-- [[Path_50]] - `references` [EXTRACTED]
 - [[RouterConfig]] - `calls` [EXTRACTED]
 - [[SSHConfig]] - `calls` [EXTRACTED]
 - [[SecurityConfig_3]] - `calls` [EXTRACTED]
@@ -50,8 +49,10 @@ tags:
 - [[api.py]] - `imports` [EXTRACTED]
 - [[config.py]] - `contains` [EXTRACTED]
 - [[daily_cve_report.py]] - `imports` [EXTRACTED]
+- [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[rebuild()]] - `calls` [EXTRACTED]
+- [[reload_config()]] - `calls` [EXTRACTED]
 - [[require_auth()_1]] - `calls` [EXTRACTED]
 - [[resolve_config_path()]] - `calls` [EXTRACTED]
 - [[router.py_1]] - `imports` [EXTRACTED]
@@ -63,4 +64,4 @@ tags:
 - [[upgrade_agentshroud()]] - `calls` [EXTRACTED]
 - [[upgrade_hermes()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Config
+#graphify/code #graphify/EXTRACTED #community/Community_34

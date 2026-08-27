@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md"
+source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0.md"
 type: "document"
-community: "Gateway Test Suite"
-location: "L604"
+community: "Community 386"
+location: "L74"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Community_386
 ---
 
 # Summary
 
 ## Connections
-- [[Development Workflow Read-Only Filesystem Strategy]] - `contains` [EXTRACTED]
+- [[AgentShroud v0.8.0 — Blue Team Security Assessment]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Community_386

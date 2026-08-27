@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_contributors.py"
 type: "code"
-community: "Router (soc)"
+community: "Community 49"
 location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Router_soc
+  - community/Community_49
 ---
 
 # TestLockdownLevelWiring
@@ -22,4 +22,4 @@ tags:
 - [[Role_1]] - `uses` [INFERRED]
 - [[test_soc_contributors.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Router_soc
+#graphify/code #graphify/EXTRACTED #community/Community_49

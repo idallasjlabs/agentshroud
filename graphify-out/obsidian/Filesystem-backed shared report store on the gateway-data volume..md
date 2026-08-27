@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/report_store.py"
 type: "rationale"
-community: "Report Store"
+community: "Community 96"
 location: "L64"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Report_Store
+  - community/Community_96
 ---
 
 # Filesystem-backed shared report store on the gateway-data volume.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ReportStore]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Report_Store
+#graphify/rationale #graphify/EXTRACTED #community/Community_96

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/OPENCLAW_SSH_SETUP.md"
 type: "document"
-community: "Openclaw Ssh Setup (setup)"
+community: "Community 186"
 location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Openclaw_Ssh_Setup_setup
+  - community/Community_186
 ---
 
 # Setup Instructions
@@ -17,4 +17,4 @@ tags:
 - [[Step 2 Test SSH Connection from OpenClaw Bot]] - `contains` [EXTRACTED]
 - [[Step 3 Verify from OpenClaw UI or Telegram]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Openclaw_Ssh_Setup_setup
+#graphify/document #graphify/EXTRACTED #community/Community_186

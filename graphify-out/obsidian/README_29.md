@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-sec-defense/README.md"
 type: "document"
-community: "Readme (i-sec-defense)"
+community: "Community 1167"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-sec-defense
+  - community/Community_1167
 ---
 
 # README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Blue Team Security Auditor (SEC-DEFENSE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-sec-defense
+#graphify/document #graphify/EXTRACTED #community/Community_1167

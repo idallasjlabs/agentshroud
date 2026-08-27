@@ -1,17 +1,18 @@
 ---
 source_file: "docs/planning/v1.0/POST_FABLE5_TASK_DELEGATION.md"
 type: "document"
-community: "Release Announcement V1.0.0 (v1.0)"
+community: "Community 365"
 location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Release_Announcement_V100_v10
+  - community/Community_365
 ---
 
 # Notes
 
 ## Connections
 - [[POST_FABLE5_TASK_DELEGATION]] - `contains` [EXTRACTED]
+- [[Post-fable-5 Task Delegation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Release_Announcement_V100_v10
+#graphify/document #graphify/EXTRACTED #community/Community_365

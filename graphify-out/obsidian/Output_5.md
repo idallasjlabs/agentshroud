@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-sec-offense/SKILL.md"
 type: "document"
-community: "Skill (i-sec-offense)"
+community: "Community 498"
 location: "L354"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-sec-offense
+  - community/Community_498
 ---
 
 # Output
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Red Team Adversarial Tester_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-sec-offense
+#graphify/document #graphify/EXTRACTED #community/Community_498

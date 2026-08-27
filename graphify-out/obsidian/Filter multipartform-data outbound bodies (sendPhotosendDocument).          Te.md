@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Telegram Proxy Core"
+community: "Community 862"
 location: "L3490"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Core
+  - community/Community_862
 ---
 
 # Filter multipart/form-data outbound bodies (sendPhoto/sendDocument).          Te
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._filter_outbound_multipart()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Core
+#graphify/rationale #graphify/EXTRACTED #community/Community_862

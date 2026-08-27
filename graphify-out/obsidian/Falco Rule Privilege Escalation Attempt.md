@@ -1,11 +1,11 @@
 ---
 source_file: "docker/falco/rules.yaml"
 type: "concept"
-community: "Setup Https Proxy (openclaw)"
+community: "Community 323"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Setup_Https_Proxy_openclaw
+  - community/Community_323
 ---
 
 # Falco Rule: Privilege Escalation Attempt
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Falco Detection Rules]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Setup_Https_Proxy_openclaw
+#graphify/concept #graphify/EXTRACTED #community/Community_323

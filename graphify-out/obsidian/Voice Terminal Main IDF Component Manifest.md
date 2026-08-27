@@ -1,11 +1,11 @@
 ---
 source_file: "firmware/voice-terminal/main/idf_component.yml"
 type: "code"
-community: "Idf Component (main)"
+community: "Community 908"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Idf_Component_main
+  - community/Community_908
 ---
 
 # Voice Terminal Main IDF Component Manifest
@@ -14,4 +14,4 @@ tags:
 - [[esp-box-3 BSP v3.2.0 (Board Support Package)]] - `references` [EXTRACTED]
 - [[esp-sr Speech Recognition Library (WakeNet WN9)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Idf_Component_main
+#graphify/code #graphify/EXTRACTED #community/Community_908

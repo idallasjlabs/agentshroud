@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "Voice Gateway"
-location: "L211"
+community: "Community 145"
+location: "L212"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Voice_Gateway
+  - community/Community_145
 ---
 
 # TestNormalizeForSpeech
@@ -52,4 +52,4 @@ tags:
 - [[Unit tests for voice_gateway.tts.normalize_for_speech.]] - `rationale_for` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Voice_Gateway
+#graphify/code #graphify/EXTRACTED #community/Community_145

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "rationale"
-community: "Security Toolchain"
-location: "L400"
+community: "Community 595"
+location: "L428"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Toolchain
+  - community/Community_595
 ---
 
 # Summary status is derived correctly for compound 'trivy:image:...' keys.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_image_key_summary_severity_computed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Toolchain
+#graphify/rationale #graphify/EXTRACTED #community/Community_595

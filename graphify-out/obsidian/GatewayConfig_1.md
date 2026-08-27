@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "Security Fixes & SSH Write Endpoint"
+community: "Community 1"
 location: "L296"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Security_Fixes__SSH_Write_Endpoint
+  - community/Community_1
 ---
 
 # GatewayConfig
@@ -78,4 +78,4 @@ tags:
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 - [[test_tool_result_pii.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Security_Fixes__SSH_Write_Endpoint
+#graphify/code #graphify/INFERRED #community/Community_1

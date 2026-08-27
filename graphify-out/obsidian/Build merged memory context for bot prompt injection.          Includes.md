@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/shared_memory.py"
 type: "rationale"
-community: "Shared Memory Write Acl"
+community: "Community 61"
 location: "L233"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Shared_Memory_Write_Acl
+  - community/Community_61
 ---
 
 # Build merged memory context for bot prompt injection.          Includes:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_merged_memory_for_user()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Shared_Memory_Write_Acl
+#graphify/rationale #graphify/EXTRACTED #community/Community_61

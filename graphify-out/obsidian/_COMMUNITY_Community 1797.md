@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[test_bot_boot_static.sh — static bot boot assembly assertions]] - code - tests/startup_smoke/test_bot_boot_static.sh
+- [[goStep()]] - code - gateway/web/templates/installer.html
 
 ## Live Query (requires Dataview plugin)
 

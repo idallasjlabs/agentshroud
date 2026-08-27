@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sync-cve-registry.py"
 type: "rationale"
-community: "Sync Cve Registry (scripts)"
-location: "L582"
+community: "Community 112"
+location: "L573"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Sync_Cve_Registry_scripts
+  - community/Community_112
 ---
 
 # Diff *advisories* against an agent's OWN *registry* and build under_review entri
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[process_ghsa_advisories()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Sync_Cve_Registry_scripts
+#graphify/rationale #graphify/EXTRACTED #community/Community_112

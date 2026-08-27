@@ -1,12 +1,12 @@
 ---
 source_file: ".github/agents/validation-runner.agent.md"
 type: "document"
-community: "Validation Runner.agent (agents)"
+community: "Community 368"
 location: "L177"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Validation_Runneragent_agents
+  - community/Community_368
 ---
 
 # Error Handling
@@ -16,4 +16,4 @@ tags:
 - [[When Environment Issues]] - `contains` [EXTRACTED]
 - [[When Validation Fails]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Validation_Runneragent_agents
+#graphify/document #graphify/EXTRACTED #community/Community_368

@@ -1,20 +1,20 @@
 ---
-source_file: "docker/config/hermes/skills/i-cr/README.md"
+source_file: ".agents/skills/i-cr/README.md"
 type: "document"
-community: "Readme (i-cr)"
+community: "Community 592"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-cr
+  - community/Community_592
 ---
 
 # Code Review (CR)
 
 ## Connections
-- [[Purpose_44]] - `contains` [EXTRACTED]
-- [[README_49]] - `contains` [EXTRACTED]
-- [[Related Skills_47]] - `contains` [EXTRACTED]
-- [[Usage_50]] - `contains` [EXTRACTED]
+- [[Purpose_7]] - `contains` [EXTRACTED]
+- [[README_7]] - `contains` [EXTRACTED]
+- [[Related Skills_7]] - `contains` [EXTRACTED]
+- [[Usage_9]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-cr
+#graphify/document #graphify/EXTRACTED #community/Community_592

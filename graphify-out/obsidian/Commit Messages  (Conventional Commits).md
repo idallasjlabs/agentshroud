@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-gg/SKILL.md"
 type: "document"
-community: "Skill (i-gg)"
+community: "Community 880"
 location: "L47"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-gg
+  - community/Community_880
 ---
 
 # Commit Messages  (Conventional Commits)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Git Workflow Guardian (GIT-GUARD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-gg
+#graphify/document #graphify/EXTRACTED #community/Community_880

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "rationale"
-community: "Key Rotation (security)"
+community: "Community 160"
 location: "L103"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Key_Rotation_security
+  - community/Community_160
 ---
 
 # Whether credential needs rotation based on age.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.should_rotate()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Key_Rotation_security
+#graphify/rationale #graphify/EXTRACTED #community/Community_160

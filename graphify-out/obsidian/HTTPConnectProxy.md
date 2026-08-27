@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/http_proxy.py"
 type: "code"
-community: "Http Proxy Coverage"
+community: "Community 52"
 location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Http_Proxy_Coverage
+  - community/Community_52
 ---
 
 # HTTPConnectProxy
@@ -106,4 +106,4 @@ tags:
 - [[test_tunnel_retries_then_succeeds()]] - `calls` [EXTRACTED]
 - [[test_tunnel_target_writer_close_failure_swallowed()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Http_Proxy_Coverage
+#graphify/code #graphify/EXTRACTED #community/Community_52

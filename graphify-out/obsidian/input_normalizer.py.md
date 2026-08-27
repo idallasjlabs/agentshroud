@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/input_normalizer.py"
 type: "code"
-community: "Tool Result Injection (security)"
+community: "Community 862"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tool_Result_Injection_security
+  - community/Community_862
 ---
 
 # input_normalizer.py
@@ -17,4 +17,4 @@ tags:
 - [[normalize_input()]] - `contains` [EXTRACTED]
 - [[strip_markdown_exfil()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Tool_Result_Injection_security
+#graphify/code #graphify/EXTRACTED #community/Community_862

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cli_coverage.py"
 type: "rationale"
-community: "Cli Coverage"
+community: "Community 1128"
 location: "L34"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Cli_Coverage
+  - community/Community_1128
 ---
 
 # Context-manager stand-in for the object urlopen() yields.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_FakeHTTPResponse]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Cli_Coverage
+#graphify/rationale #graphify/EXTRACTED #community/Community_1128

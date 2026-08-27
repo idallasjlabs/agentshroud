@@ -1,20 +1,21 @@
 ---
-source_file: "scripts/export-email-reports.py"
+source_file: "scripts/export-bot-conversations.py"
 type: "code"
-community: "Export Email Reports (scripts)"
-location: "L136"
+community: "Community 723"
+location: "L232"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Export_Email_Reports_scripts
+  - community/Community_723
 ---
 
 # main()
 
 ## Connections
-- [[Path_43]] - `calls` [EXTRACTED]
-- [[_parse_since()_1]] - `calls` [EXTRACTED]
-- [[export-email-reports.py]] - `contains` [EXTRACTED]
-- [[export_bot()]] - `calls` [EXTRACTED]
+- [[Path_42]] - `calls` [EXTRACTED]
+- [[_parse_since()]] - `calls` [EXTRACTED]
+- [[export-bot-conversations.py]] - `contains` [EXTRACTED]
+- [[export_hermes()]] - `calls` [EXTRACTED]
+- [[export_openclaw()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Export_Email_Reports_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_723

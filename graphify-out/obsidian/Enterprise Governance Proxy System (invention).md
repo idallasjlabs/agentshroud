@@ -1,11 +1,11 @@
 ---
 source_file: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
 type: "concept"
-community: "Uspto Provisional Patent Application (docs)"
+community: "Community 552"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Uspto_Provisional_Patent_Application_docs
+  - community/Community_552
 ---
 
 # Enterprise Governance Proxy System (invention)
@@ -20,4 +20,4 @@ tags:
 - [[Transparent Interception Architecture]] - `conceptually_related_to` [EXTRACTED]
 - [[Trust-Differentiated Processing (RBAC tiers)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Uspto_Provisional_Patent_Application_docs
+#graphify/concept #graphify/EXTRACTED #community/Community_552

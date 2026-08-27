@@ -1,13 +1,13 @@
 ---
 source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "Enhanced Queue (approval_queue)"
+community: "Community 1565"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enhanced_Queue_approval_queue
+  - community/Community_1565
 ---
 
 # EnhancedApprovalQueue.broadcast (SCRUM-154 bounded)
 
-#graphify/code #graphify/EXTRACTED #community/Enhanced_Queue_approval_queue
+#graphify/code #graphify/EXTRACTED #community/Community_1565

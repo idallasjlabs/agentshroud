@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-tw/README.md"
 type: "document"
-community: "Readme (i-tw)"
+community: "Community 1249"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-tw
+  - community/Community_1249
 ---
 
 # Technical Writer (TW)
@@ -17,4 +17,4 @@ tags:
 - [[Related Skills_118]] - `contains` [EXTRACTED]
 - [[Usage_119]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-tw
+#graphify/document #graphify/EXTRACTED #community/Community_1249

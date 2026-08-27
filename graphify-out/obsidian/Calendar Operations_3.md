@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/icloud/SKILL.md"
 type: "document"
-community: "Skill (icloud)"
+community: "Community 327"
 location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_icloud
+  - community/Community_327
 ---
 
 # Calendar Operations
@@ -18,4 +18,4 @@ tags:
 - [[Update Event_3]] - `contains` [EXTRACTED]
 - [[iCloud Services_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_icloud
+#graphify/document #graphify/EXTRACTED #community/Community_327

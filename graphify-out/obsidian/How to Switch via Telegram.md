@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/LLM_PROVIDER_SETUP.md"
 type: "document"
-community: "Llm Provider Setup (setup)"
+community: "Community 371"
 location: "L54"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Llm_Provider_Setup_setup
+  - community/Community_371
 ---
 
 # How to Switch via Telegram:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[3. Switching Models in OpenClaw]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Llm_Provider_Setup_setup
+#graphify/document #graphify/EXTRACTED #community/Community_371

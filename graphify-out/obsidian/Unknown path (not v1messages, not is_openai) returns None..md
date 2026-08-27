@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "rationale"
-community: "Resource Guard & Local Model Parity"
-location: "L811"
+community: "Community 7"
+location: "L860"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Resource_Guard__Local_Model_Parity
+  - community/Community_7
 ---
 
 # Unknown path (not /v1/messages, not is_openai) returns None.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_local_secondary_failover_unknown_path_returns_none()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Resource_Guard__Local_Model_Parity
+#graphify/rationale #graphify/EXTRACTED #community/Community_7

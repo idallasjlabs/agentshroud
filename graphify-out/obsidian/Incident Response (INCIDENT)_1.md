@@ -1,20 +1,20 @@
 ---
-source_file: "docker/config/openclaw/skills/i-production/README.md"
+source_file: "docker/config/hermes/skills/i-production/README.md"
 type: "document"
-community: "Readme (i-production)"
+community: "Community 1201"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-production
+  - community/Community_1201
 ---
 
 # Incident Response (INCIDENT)
 
 ## Connections
-- [[Purpose_98]] - `contains` [EXTRACTED]
-- [[README_103]] - `contains` [EXTRACTED]
-- [[Related Skills_107]] - `contains` [EXTRACTED]
-- [[Usage_108]] - `contains` [EXTRACTED]
+- [[Purpose_61]] - `contains` [EXTRACTED]
+- [[README_66]] - `contains` [EXTRACTED]
+- [[Related Skills_67]] - `contains` [EXTRACTED]
+- [[Usage_68]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-production
+#graphify/document #graphify/EXTRACTED #community/Community_1201

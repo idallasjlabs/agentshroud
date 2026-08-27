@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/openclaw.md"
 type: "document"
-community: "Openclaw (05 - Dependencies)"
+community: "Community 340"
 location: "L56"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Openclaw_05_-_Dependencies
+  - community/Community_340
 ---
 
 # Related Notes
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OpenClaw]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Openclaw_05_-_Dependencies
+#graphify/document #graphify/EXTRACTED #community/Community_340

@@ -1,13 +1,13 @@
 ---
 source_file: "gateway/tests/test_tool_injection_scan.py"
 type: "code"
-community: "Tool Injection Scan"
+community: "Community 1641"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tool_Injection_Scan
+  - community/Community_1641
 ---
 
 # ToolResultInjectionScanner Test Suite
 
-#graphify/code #graphify/EXTRACTED #community/Tool_Injection_Scan
+#graphify/code #graphify/EXTRACTED #community/Community_1641

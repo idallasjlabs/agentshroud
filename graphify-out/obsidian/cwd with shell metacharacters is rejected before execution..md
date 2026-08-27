@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "rationale"
-community: "Ssh Proxy"
+community: "Community 1"
 location: "L198"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Ssh_Proxy
+  - community/Community_1
 ---
 
 # cwd with shell metacharacters is rejected before execution.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_ssh_exec_cwd_invalid_rejects_400()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Ssh_Proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_1

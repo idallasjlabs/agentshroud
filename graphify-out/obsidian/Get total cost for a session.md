@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/session-logs/SKILL.md"
 type: "document"
-community: "Skill (session-logs)"
+community: "Community 253"
 location: "L64"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_session-logs
+  - community/Community_253
 ---
 
 # Get total cost for a session
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Common Queries]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_session-logs
+#graphify/document #graphify/EXTRACTED #community/Community_253

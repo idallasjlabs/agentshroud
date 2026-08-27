@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "rationale"
-community: "Llm Proxy"
+community: "Community 79"
 location: "L491"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Llm_Proxy
+  - community/Community_79
 ---
 
 # Allowed tool blocks must pass through unchanged.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_streaming_tool_acl_allows_permitted_tool()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Llm_Proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_79

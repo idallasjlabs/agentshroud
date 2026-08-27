@@ -1,17 +1,23 @@
 ---
-source_file: "shortcuts/README.md"
+source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Readme (shortcuts)"
-location: "L291"
+community: "Community 336"
+location: "L787"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_shortcuts
+  - community/Community_336
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[iOS  macOS Shortcuts — Relay to AgentShroud]] - `contains` [EXTRACTED]
+- [[1Password Authentication Failed]] - `contains` [EXTRACTED]
+- [[AgentShroud Setup Guide]] - `contains` [EXTRACTED]
+- [[Container Unhealthy]] - `contains` [EXTRACTED]
+- [[Gmail Connection Issues]] - `contains` [EXTRACTED]
+- [[Performance Issues_1]] - `contains` [EXTRACTED]
+- [[Port Already in Use_1]] - `contains` [EXTRACTED]
+- [[Tests Failing_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_shortcuts
+#graphify/document #graphify/EXTRACTED #community/Community_336

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/OPENCLAW_SETUP.md"
 type: "document"
-community: "Openclaw Setup (setup)"
+community: "Community 214"
 location: "L168"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Openclaw_Setup_setup
+  - community/Community_214
 ---
 
 # Step 5: Configure SSH Access (For Bot to Work on Remote Systems)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Initial Configuration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Openclaw_Setup_setup
+#graphify/document #graphify/EXTRACTED #community/Community_214

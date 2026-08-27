@@ -1,12 +1,12 @@
 ---
 source_file: ".claude/statusline.sh"
 type: "code"
-community: "Statusline (.claude)"
+community: "Community 1375"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Statusline_claude
+  - community/Community_1375
 ---
 
 # statusline.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[statusline.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Statusline_claude
+#graphify/code #graphify/EXTRACTED #community/Community_1375

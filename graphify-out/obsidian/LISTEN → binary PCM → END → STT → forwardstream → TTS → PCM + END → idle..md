@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "Voice Gateway"
-location: "L814"
+community: "Community 101"
+location: "L815"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Voice_Gateway
+  - community/Community_101
 ---
 
 # LISTEN → binary PCM → END → STT → /forward/stream → TTS → PCM + END → idle.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_ws_full_utterance_state_sequence()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Voice_Gateway
+#graphify/rationale #graphify/EXTRACTED #community/Community_101

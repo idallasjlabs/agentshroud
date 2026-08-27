@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/oauth_security.py"
 type: "code"
-community: "OAuth & Metadata Guard"
+community: "Community 64"
 location: "L39"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/OAuth__Metadata_Guard
+  - community/Community_64
 ---
 
 # RedirectMismatch
@@ -34,4 +34,4 @@ tags:
 - [[oauth_security.py]] - `contains` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/OAuth__Metadata_Guard
+#graphify/code #graphify/INFERRED #community/Community_64

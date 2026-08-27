@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[telegram.sh]] - code - docker/scripts/telegram.sh
-- [[telegram.sh script]] - code - docker/scripts/telegram.sh
+- [[Branding Specialist README (OpenClaw)]] - document - docker/config/openclaw/skills/i-bs/README.md
+- [[Branding Specialist SKILL (OpenClaw)]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

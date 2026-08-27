@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "Middleware & Session Isolation"
+community: "Community 652"
 location: "L625"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Middleware__Session_Isolation
+  - community/Community_652
 ---
 
 # TestPathIsolationStep
@@ -21,4 +21,4 @@ tags:
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Middleware__Session_Isolation
+#graphify/code #graphify/INFERRED #community/Community_652

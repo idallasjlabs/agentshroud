@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/access-control-matrix.md"
 type: "document"
-community: "Access Control Matrix (security)"
+community: "Community 175"
 location: "L233"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Access_Control_Matrix_security
+  - community/Community_175
 ---
 
 # Recovery Timeframes
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Trust Degradation Rules]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Access_Control_Matrix_security
+#graphify/document #graphify/EXTRACTED #community/Community_175

@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-ti/SKILL.md"
 type: "document"
-community: "Readme (i-ti)"
+community: "Community 946"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-ti
+  - community/Community_946
 ---
 
 # Technical Illustrator (i-ti)
@@ -17,4 +17,4 @@ tags:
 - [[Related Skills_37]] - `contains` [EXTRACTED]
 - [[Usage_37]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-ti
+#graphify/document #graphify/EXTRACTED #community/Community_946

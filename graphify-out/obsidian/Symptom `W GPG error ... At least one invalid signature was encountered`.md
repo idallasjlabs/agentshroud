@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/colima-docker-guide.md"
 type: "document"
-community: "Colima Docker Guide (runbooks)"
+community: "Community 149"
 location: "L331"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Colima_Docker_Guide_runbooks
+  - community/Community_149
 ---
 
 # Symptom: `W: GPG error: ... At least one invalid signature was encountered`
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[7. Build Troubleshooting]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Colima_Docker_Guide_runbooks
+#graphify/document #graphify/EXTRACTED #community/Community_149

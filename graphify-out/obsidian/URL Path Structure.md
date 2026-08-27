@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/canvas/SKILL.md"
 type: "document"
-community: "Skill (canvas)"
+community: "Community 341"
 location: "L181"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_canvas
+  - community/Community_341
 ---
 
 # URL Path Structure
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Canvas Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_canvas
+#graphify/document #graphify/EXTRACTED #community/Community_341

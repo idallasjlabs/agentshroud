@@ -1,15 +1,19 @@
 ---
 type: community
-members: 2
+members: 6
 ---
 
 # Community 1545
 
-**Members:** 2 nodes
+**Members:** 6 nodes
 
 ## Members
-- [[.test_protection_stats()]] - code - gateway/tests/test_prompt_protection.py
-- [[Test getting protection statistics.]] - rationale - gateway/tests/test_prompt_protection.py
+- [[.test_collaborator_internal_network_probe_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_collaborator_internal_network_probe_returns_protect_egress_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_collaborator_obfuscated_command_probe_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[Blocked internal-network probes should return deterministic Protect egress wordi]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Internal-network target probes should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Obfuscated decode+execute prompts should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +23,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_docsrunbooks]]
+- 15 edges to [[_COMMUNITY_Community 2]]
+- 3 edges to [[_COMMUNITY_Community 32]]
 
 ## Top bridge nodes
-- [[.test_protection_stats()]] - degree 2, connects to 1 community
+- [[.test_collaborator_internal_network_probe_is_blocked_and_quarantined()]] - degree 8, connects to 2 communities
+- [[.test_collaborator_internal_network_probe_returns_protect_egress_notice()]] - degree 8, connects to 2 communities
+- [[.test_collaborator_obfuscated_command_probe_is_blocked_and_quarantined()]] - degree 7, connects to 2 communities

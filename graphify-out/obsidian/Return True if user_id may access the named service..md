@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/privacy_policy.py"
 type: "rationale"
-community: "Privacy Policy"
+community: "Community 11"
 location: "L198"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Privacy_Policy
+  - community/Community_11
 ---
 
 # Return True if user_id may access the named service.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.is_service_allowed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Privacy_Policy
+#graphify/rationale #graphify/EXTRACTED #community/Community_11

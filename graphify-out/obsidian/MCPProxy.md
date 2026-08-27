@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "Mcp Proxy"
+community: "Community 36"
 location: "L224"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Mcp_Proxy
+  - community/Community_36
 ---
 
 # MCPProxy
@@ -103,4 +103,4 @@ tags:
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_real_queue_high_risk_never_executes_without_approval()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Mcp_Proxy
+#graphify/code #graphify/INFERRED #community/Community_36

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bot-capabilities.md"
 type: "document"
-community: "System Instructions Security (docker)"
+community: "Community 746"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/System_Instructions_Security_docker
+  - community/Community_746
 ---
 
 # bot-capabilities.md
@@ -17,4 +17,4 @@ tags:
 - [[Never Display Credentials in Chat Policy (Ultra-Conservative)]] - `references` [EXTRACTED]
 - [[SYSTEM-INSTRUCTIONS-SECURITY]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/System_Instructions_Security_docker
+#graphify/document #graphify/EXTRACTED #community/Community_746

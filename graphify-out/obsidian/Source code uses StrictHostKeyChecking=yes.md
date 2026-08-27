@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "rationale"
-community: "Security Fixes & SSH Write Endpoint"
+community: "Community 12"
 location: "L52"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Fixes__SSH_Write_Endpoint
+  - community/Community_12
 ---
 
 # Source code uses StrictHostKeyChecking=yes
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_strict_host_key_checking_in_source()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Fixes__SSH_Write_Endpoint
+#graphify/rationale #graphify/EXTRACTED #community/Community_12

@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/test/test_playback_state/test_playback_state.c"
 type: "code"
-community: "Playback State (test_playback_state)"
+community: "Community 166"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Playback_State_test_playback_state
+  - community/Community_166
 ---
 
 # test_playback_state.c
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[String]] - `imports` [EXTRACTED]
 - [[face_set_state()]] - `contains` [EXTRACTED]
-- [[main()_8]] - `contains` [EXTRACTED]
+- [[main()_9]] - `contains` [EXTRACTED]
 - [[playback_step()]] - `contains` [EXTRACTED]
 - [[reset_all()]] - `contains` [EXTRACTED]
 - [[test_drain_clears_playing_and_returns_idle()]] - `contains` [EXTRACTED]
@@ -31,4 +31,4 @@ tags:
 - [[vt_agent_count()_1]] - `contains` [EXTRACTED]
 - [[vt_remote_log()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Playback_State_test_playback_state
+#graphify/code #graphify/EXTRACTED #community/Community_166

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_multibot.py"
 type: "code"
-community: "Config"
+community: "Community 273"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Config
+  - community/Community_273
 ---
 
 # test_telegram_proxy_multibot.py
@@ -22,4 +22,4 @@ tags:
 - [[telegram_api_proxy()]] - `imports` [EXTRACTED]
 - [[telegram_proxy.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Config
+#graphify/code #graphify/EXTRACTED #community/Community_273

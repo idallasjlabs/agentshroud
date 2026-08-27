@@ -1,12 +1,12 @@
 ---
 source_file: "docker/SYSTEM-INSTRUCTIONS-SECURITY.md"
 type: "document"
-community: "System Instructions Security (docker)"
+community: "Community 620"
 location: "L324"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/System_Instructions_Security_docker
+  - community/Community_620
 ---
 
 # Via Control UI
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[💬 Example Conversations]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/System_Instructions_Security_docker
+#graphify/document #graphify/EXTRACTED #community/Community_620

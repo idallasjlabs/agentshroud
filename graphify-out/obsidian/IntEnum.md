@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "Skill Guard"
+community: "Community 100"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Skill_Guard
+  - community/Community_100
 ---
 
 # IntEnum
@@ -19,4 +19,4 @@ tags:
 - [[ThreatLevel_1]] - `inherits` [EXTRACTED]
 - [[TrustLevel_1]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Skill_Guard
+#graphify/code #graphify/EXTRACTED #community/Community_100

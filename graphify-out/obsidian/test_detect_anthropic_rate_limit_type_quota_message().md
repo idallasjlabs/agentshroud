@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_quota_detector.py"
 type: "code"
-community: "Llm Quota Detector"
+community: "Community 419"
 location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Llm_Quota_Detector
+  - community/Community_419
 ---
 
 # test_detect_anthropic_rate_limit_type_quota_message()
@@ -15,4 +15,4 @@ tags:
 - [[is_quota_exhausted()]] - `calls` [EXTRACTED]
 - [[test_llm_quota_detector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Llm_Quota_Detector
+#graphify/code #graphify/EXTRACTED #community/Community_419

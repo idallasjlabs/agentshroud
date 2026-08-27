@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "rationale"
-community: "Tool ACL & Group RBAC"
+community: "Community 75"
 location: "L303"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Tool_ACL__Group_RBAC
+  - community/Community_75
 ---
 
 # terminal_tool must be in PRIVATE_TOOLS and blocked for non-owner principals.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestCVE2026_9367TerminalToolDenied]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Tool_ACL__Group_RBAC
+#graphify/rationale #graphify/EXTRACTED #community/Community_75

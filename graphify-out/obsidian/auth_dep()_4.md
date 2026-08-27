@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/health.py"
 type: "code"
-community: "Auth"
+community: "Community 99"
 location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Auth
+  - community/Community_99
 ---
 
 # auth_dep()
@@ -17,4 +17,4 @@ tags:
 - [[create_auth_dependency()]] - `calls` [EXTRACTED]
 - [[health.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Auth
+#graphify/code #graphify/EXTRACTED #community/Community_99

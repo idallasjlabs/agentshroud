@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/references/update.md"
 type: "document"
-community: "Update (references)"
+community: "Community 1305"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Update_references
+  - community/Community_1305
 ---
 
 # graphify reference: incremental update and cluster-only
@@ -16,4 +16,4 @@ tags:
 - [[For --update (incremental re-extraction)_2]] - `contains` [EXTRACTED]
 - [[update_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Update_references
+#graphify/document #graphify/EXTRACTED #community/Community_1305

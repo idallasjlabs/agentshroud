@@ -1,11 +1,11 @@
 ---
 source_file: "docs/agentshroud-knowledge.md"
 type: "rationale"
-community: "Uspto Provisional Patent Application (docs)"
+community: "Community 552"
 tags:
   - graphify/rationale
   - graphify/INFERRED
-  - community/Uspto_Provisional_Patent_Application_docs
+  - community/Community_552
 ---
 
 # Competitive Positioning — Proxy-Layer Inversion Differentiator
@@ -14,4 +14,4 @@ tags:
 - [[ADR-001-proxy-layer-inversion]] - `semantically_similar_to` [INFERRED]
 - [[Enterprise Governance Proxy System (invention)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/rationale #graphify/INFERRED #community/Uspto_Provisional_Patent_Application_docs
+#graphify/rationale #graphify/INFERRED #community/Community_552

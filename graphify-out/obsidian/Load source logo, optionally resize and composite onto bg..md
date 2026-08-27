@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/generate_branding_assets.py"
 type: "rationale"
-community: "Generate Branding Assets (scripts)"
+community: "Community 414"
 location: "L71"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Generate_Branding_Assets_scripts
+  - community/Community_414
 ---
 
 # Load source logo, optionally resize and composite onto bg.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[load_logo()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Generate_Branding_Assets_scripts
+#graphify/rationale #graphify/EXTRACTED #community/Community_414

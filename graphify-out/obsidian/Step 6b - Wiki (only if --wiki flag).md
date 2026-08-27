@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/graphify/references/exports.md"
 type: "document"
-community: "Exports (references)"
+community: "Community 940"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Exports_references
+  - community/Community_940
 ---
 
 # Step 6b - Wiki (only if --wiki flag)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[graphify reference extra exports and benchmark]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Exports_references
+#graphify/document #graphify/EXTRACTED #community/Community_940

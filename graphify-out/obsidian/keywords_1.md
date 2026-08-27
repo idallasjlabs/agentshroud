@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/package.json"
 type: "code"
-community: "Package (i-browser)"
+community: "Community 837"
 location: "L9"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Package_i-browser
+  - community/Community_837
 ---
 
 # keywords
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[package.json_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Package_i-browser
+#graphify/code #graphify/EXTRACTED #community/Community_837

@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-sec/SKILL.md"
 type: "document"
-community: "Skill (i-sec)"
+community: "Community 697"
 location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-sec
+  - community/Community_697
 ---
 
 # Layer 2: Container Security
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Review Layers]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-sec
+#graphify/document #graphify/EXTRACTED #community/Community_697

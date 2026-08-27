@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "SOC Services"
+community: "Community 27"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Services
+  - community/Community_27
 ---
 
 # services.py
@@ -27,4 +27,4 @@ tags:
 - [[load_config()]] - `imports` [EXTRACTED]
 - [[models.py_1]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Services
+#graphify/code #graphify/EXTRACTED #community/Community_27

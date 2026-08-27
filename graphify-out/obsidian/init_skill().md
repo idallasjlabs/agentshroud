@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/skill-creator/scripts/init_skill.py"
 type: "code"
-community: "Init Skill (scripts)"
+community: "Community 812"
 location: "L255"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Init_Skill_scripts
+  - community/Community_812
 ---
 
 # init_skill()
@@ -15,7 +15,7 @@ tags:
 - [[Initialize a new skill directory with template SKILL.md.      Args         skil]] - `rationale_for` [EXTRACTED]
 - [[create_resource_dirs()]] - `calls` [EXTRACTED]
 - [[init_skill.py]] - `contains` [EXTRACTED]
-- [[main()_29]] - `calls` [EXTRACTED]
+- [[main()_30]] - `calls` [EXTRACTED]
 - [[title_case_skill_name()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Init_Skill_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_812

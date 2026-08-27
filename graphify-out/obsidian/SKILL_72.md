@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-bdd/SKILL.md"
 type: "document"
-community: "Skill (i-bdd)"
+community: "Community 1440"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-bdd
+  - community/Community_1440
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill bdd_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-bdd
+#graphify/document #graphify/EXTRACTED #community/Community_1440

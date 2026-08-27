@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-icloud/README.md"
 type: "document"
-community: "Skill (i-icloud)"
+community: "Community 1030"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-icloud
+  - community/Community_1030
 ---
 
 # i-icloud README — iCloud Data Manager (ICLOUD)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[i-icloud SKILL — iCloud Services]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-icloud
+#graphify/document #graphify/EXTRACTED #community/Community_1030

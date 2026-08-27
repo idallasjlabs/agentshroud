@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_credential_injector.py"
 type: "rationale"
-community: "Credential Injector"
+community: "Community 867"
 location: "L113"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Credential_Injector
+  - community/Community_867
 ---
 
 # Default Anthropic mapping must strip x-api-key (regression guard).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_anthropic_default_strips_x_api_key()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Credential_Injector
+#graphify/rationale #graphify/EXTRACTED #community/Community_867

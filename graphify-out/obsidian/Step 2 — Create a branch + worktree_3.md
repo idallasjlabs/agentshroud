@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-odev/SKILL.md"
 type: "document"
-community: "Skill (i-odev)"
+community: "Community 297"
 location: "L135"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_i-odev
+  - community/Community_297
 ---
 
 # Step 2 — Create a branch + worktree
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Mode A — Single task_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_i-odev
+#graphify/document #graphify/EXTRACTED #community/Community_297

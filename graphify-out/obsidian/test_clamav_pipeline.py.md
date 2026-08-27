@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_clamav_pipeline.py"
 type: "code"
-community: "Clamav Pipeline"
+community: "Community 331"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Clamav_Pipeline
+  - community/Community_331
 ---
 
 # test_clamav_pipeline.py
@@ -31,4 +31,4 @@ tags:
 - [[test_scan_bytes_infected()]] - `contains` [EXTRACTED]
 - [[test_scan_bytes_timeout()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Clamav_Pipeline
+#graphify/code #graphify/EXTRACTED #community/Community_331

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md"
+source_file: ".agents/skills/i-sec-offense/SKILL.md"
 type: "document"
-community: "Public Info (collaborator-workspace)"
-location: "L98"
+community: "Community 490"
+location: "L367"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Public_Info_collaborator-workspace
+  - community/Community_490
 ---
 
 # Infrastructure
 
 ## Connections
-- [[Architecture_2]] - `contains` [EXTRACTED]
+- [[AgentShroud Red Team Adversarial Tester]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Public_Info_collaborator-workspace
+#graphify/document #graphify/EXTRACTED #community/Community_490

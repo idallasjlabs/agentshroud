@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-mac/README.md"
 type: "document"
-community: "Readme (i-mac)"
+community: "Community 1157"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Readme_i-mac
+  - community/Community_1157
 ---
 
 # macOS System Administrator (MAC)
@@ -17,4 +17,4 @@ tags:
 - [[Related Skills_14]] - `contains` [EXTRACTED]
 - [[Usage_16]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Readme_i-mac
+#graphify/document #graphify/EXTRACTED #community/Community_1157

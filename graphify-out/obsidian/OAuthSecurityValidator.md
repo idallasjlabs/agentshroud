@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/oauth_security.py"
 type: "code"
-community: "OAuth & Metadata Guard"
+community: "Community 64"
 location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OAuth__Metadata_Guard
+  - community/Community_64
 ---
 
 # OAuthSecurityValidator
@@ -45,4 +45,4 @@ tags:
 - [[validator()]] - `calls` [EXTRACTED]
 - [[web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OAuth__Metadata_Guard
+#graphify/code #graphify/EXTRACTED #community/Community_64

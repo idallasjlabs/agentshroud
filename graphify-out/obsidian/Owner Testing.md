@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-inventory.md"
 type: "document"
-community: "Security Inventory (security)"
+community: "Community 423"
 location: "L230"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Inventory_security
+  - community/Community_423
 ---
 
 # Owner Testing
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Testing Checklist_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Inventory_security
+#graphify/document #graphify/EXTRACTED #community/Community_423

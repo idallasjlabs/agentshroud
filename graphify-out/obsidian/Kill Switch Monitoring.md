@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/08 - Runbooks/Kill Switch Procedure.md"
 type: "document"
-community: "Kill switch procedure (08 - Runbooks)"
+community: "Community 695"
 location: "L128"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Kill_switch_procedure_08_-_Runbooks
+  - community/Community_695
 ---
 
 # Kill Switch Monitoring
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Kill Switch Procedure_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Kill_switch_procedure_08_-_Runbooks
+#graphify/document #graphify/EXTRACTED #community/Community_695

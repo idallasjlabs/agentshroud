@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_trust_integration.py"
 type: "code"
-community: "Progressive Trust Integration"
-location: "L34"
+community: "Community 35"
+location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Progressive_Trust_Integration
+  - community/Community_35
 ---
 
 # _fast_ladder()
@@ -26,4 +26,4 @@ tags:
 - [[PromotionThreshold]] - `calls` [EXTRACTED]
 - [[test_progressive_trust_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Progressive_Trust_Integration
+#graphify/code #graphify/EXTRACTED #community/Community_35

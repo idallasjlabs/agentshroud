@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory.py"
 type: "code"
-community: "Shared Memory Write Acl"
+community: "Community 61"
 location: "L175"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Shared_Memory_Write_Acl
+  - community/Community_61
 ---
 
 # TestPrivateContentDetection
@@ -26,4 +26,4 @@ tags:
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_shared_memory.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Shared_Memory_Write_Acl
+#graphify/code #graphify/EXTRACTED #community/Community_61

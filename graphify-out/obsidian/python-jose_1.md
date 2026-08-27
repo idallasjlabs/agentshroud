@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/python-jose.md"
 type: "document"
-community: "Auth"
+community: "Community 99"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Auth
+  - community/Community_99
 ---
 
 # python-jose
@@ -20,4 +20,4 @@ tags:
 - [[Security Note_2]] - `contains` [EXTRACTED]
 - [[python-jose]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Auth
+#graphify/document #graphify/EXTRACTED #community/Community_99

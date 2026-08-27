@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_path_isolation.py"
 type: "rationale"
-community: "Path Isolation"
+community: "Community 29"
 location: "L183"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Path_Isolation
+  - community/Community_29
 ---
 
 # Test blocking cross-user namespace access.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_block_cross_user_access()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Path_Isolation
+#graphify/rationale #graphify/EXTRACTED #community/Community_29

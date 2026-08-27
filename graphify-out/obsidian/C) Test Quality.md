@@ -1,12 +1,12 @@
 ---
 source_file: ".github/agents/test-augmenter.agent.md"
 type: "document"
-community: "Augmenter.agent (agents)"
+community: "Community 928"
 location: "L37"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Augmenteragent_agents
+  - community/Community_928
 ---
 
 # C) Test Quality
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Your Responsibilities]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Augmenteragent_agents
+#graphify/document #graphify/EXTRACTED #community/Community_928

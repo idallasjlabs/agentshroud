@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_lifespan_prune.py"
 type: "code"
-community: "Collaborator Tracker"
+community: "Community 42"
 location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Collaborator_Tracker
+  - community/Community_42
 ---
 
 # test_prune_walks_all_contributor_dirs()
@@ -19,4 +19,4 @@ tags:
 - [[_prune_fixture_markdown()]] - `calls` [EXTRACTED]
 - [[test_lifespan_prune.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Collaborator_Tracker
+#graphify/code #graphify/EXTRACTED #community/Community_42

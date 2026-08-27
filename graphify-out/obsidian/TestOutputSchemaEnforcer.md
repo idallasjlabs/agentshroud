@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_output_schema.py"
 type: "code"
-community: "Output Schema"
+community: "Community 237"
 location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Output_Schema
+  - community/Community_237
 ---
 
 # TestOutputSchemaEnforcer
@@ -23,4 +23,4 @@ tags:
 - [[SchemaRule]] - `uses` [INFERRED]
 - [[test_output_schema.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Output_Schema
+#graphify/code #graphify/EXTRACTED #community/Community_237

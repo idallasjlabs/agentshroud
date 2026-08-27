@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/sanitizer.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/router.py.md"
 type: "document"
-community: "Sanitizer.py (Gateway Core)"
+community: "Community 669"
 location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Sanitizerpy_Gateway_Core
+  - community/Community_669
 ---
 
 # Environment Variables Used
 
 ## Connections
-- [[sanitizer.py_2]] - `contains` [EXTRACTED]
+- [[router.py_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Sanitizerpy_Gateway_Core
+#graphify/document #graphify/EXTRACTED #community/Community_669

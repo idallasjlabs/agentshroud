@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "rationale"
-community: "E2e Proxy"
+community: "Community 74"
 location: "L160"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/E2e_Proxy
+  - community/Community_74
 ---
 
 # Send command requiring approval — verify queued, not forwarded.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_approval_queue_enforced()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/E2e_Proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_74

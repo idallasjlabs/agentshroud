@@ -1,17 +1,17 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "docs/vault"
-location: "L264"
+community: "Community 984"
+location: "L302"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Community_984
 ---
 
 # Fixed
 
 ## Connections
-- [[1.2.1 — releasev1.2.1-quality-sweep (2026-06-27)]] - `contains` [EXTRACTED]
+- [[1.2.4 — releasev1.2.4 (2026-06-29)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Community_984

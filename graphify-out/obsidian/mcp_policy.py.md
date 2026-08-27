@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/mcp_policy.py"
 type: "code"
-community: "Mcp Policy"
+community: "Community 34"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Mcp_Policy
+  - community/Community_34
 ---
 
 # mcp_policy.py
@@ -25,4 +25,4 @@ tags:
 - [[test_mcp_policy.py]] - `references` [EXTRACTED]
 - [[test_mcp_policy_default_failclosed.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Mcp_Policy
+#graphify/code #graphify/EXTRACTED #community/Community_34

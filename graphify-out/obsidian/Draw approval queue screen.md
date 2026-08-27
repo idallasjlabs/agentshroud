@@ -1,12 +1,12 @@
 ---
 source_file: "src/interfaces/text_control_center.py"
 type: "rationale"
-community: "Text Control Center (interfaces)"
+community: "Community 264"
 location: "L221"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Text_Control_Center_interfaces
+  - community/Community_264
 ---
 
 # Draw approval queue screen
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.draw_approvals()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Text_Control_Center_interfaces
+#graphify/rationale #graphify/EXTRACTED #community/Community_264

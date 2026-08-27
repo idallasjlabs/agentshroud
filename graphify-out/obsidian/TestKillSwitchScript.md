@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_killswitch_modes.py"
 type: "code"
-community: "Killswitch Modes"
+community: "Community 425"
 location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Killswitch_Modes
+  - community/Community_425
 ---
 
 # TestKillSwitchScript
@@ -28,4 +28,4 @@ tags:
 - [[Verify the kill switch script structure and modes.]] - `rationale_for` [EXTRACTED]
 - [[test_killswitch_modes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Killswitch_Modes
+#graphify/code #graphify/EXTRACTED #community/Community_425

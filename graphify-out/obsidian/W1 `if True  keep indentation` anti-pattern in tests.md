@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-03-05.md"
 type: "document"
-community: "Phase Review 2026 03 (reviews)"
+community: "Community 773"
 location: "L53"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Phase_Review_2026_03_reviews
+  - community/Community_773
 ---
 
 # W1: `if True: # keep indentation` anti-pattern in tests
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🟡 WARNINGS (should fix)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Phase_Review_2026_03_reviews
+#graphify/document #graphify/EXTRACTED #community/Community_773

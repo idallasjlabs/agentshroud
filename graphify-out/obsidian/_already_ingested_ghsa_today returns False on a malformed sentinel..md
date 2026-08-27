@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "rationale"
-community: "Daily Cve Report (security)"
-location: "L1300"
+community: "Community 779"
+location: "L1307"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Daily_Cve_Report_security
+  - community/Community_779
 ---
 
 # _already_ingested_ghsa_today returns False on a malformed sentinel.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_already_ingested_helper_swallows_read_error()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Daily_Cve_Report_security
+#graphify/rationale #graphify/EXTRACTED #community/Community_779

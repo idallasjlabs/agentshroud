@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/access-control-matrix.md"
 type: "document"
-community: "Access Control Matrix (security)"
+community: "Community 175"
 location: "L155"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Access_Control_Matrix_security
+  - community/Community_175
 ---
 
 # Data Handling Permissions
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Agent Operational Permissions]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Access_Control_Matrix_security
+#graphify/document #graphify/EXTRACTED #community/Community_175

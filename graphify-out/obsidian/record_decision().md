@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/module_stats.py"
 type: "code"
-community: "A2a Policy (security)"
+community: "Community 1001"
 location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2a_Policy_security
+  - community/Community_1001
 ---
 
 # record_decision()
@@ -30,4 +30,4 @@ tags:
 - [[test_module_stats.py]] - `imports` [EXTRACTED]
 - [[tool_acl.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2a_Policy_security
+#graphify/code #graphify/EXTRACTED #community/Community_1001

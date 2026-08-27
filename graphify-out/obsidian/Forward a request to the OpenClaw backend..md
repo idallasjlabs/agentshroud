@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/forwarder.py"
 type: "rationale"
-community: "Forwarder (proxy)"
+community: "Community 74"
 location: "L79"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Forwarder_proxy
+  - community/Community_74
 ---
 
 # Forward a request to the OpenClaw backend.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.forward()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Forwarder_proxy
+#graphify/rationale #graphify/EXTRACTED #community/Community_74

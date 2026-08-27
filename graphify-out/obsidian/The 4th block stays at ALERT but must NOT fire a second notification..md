@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_lockdown.py"
 type: "rationale"
-community: "Progressive Lockdown"
+community: "Community 863"
 location: "L231"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Progressive_Lockdown
+  - community/Community_863
 ---
 
 # The 4th block stays at ALERT but must NOT fire a second notification.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_collab_notified_only_once_per_level()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Progressive_Lockdown
+#graphify/rationale #graphify/EXTRACTED #community/Community_863

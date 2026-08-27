@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/threat-model.md"
 type: "document"
-community: "Ssh Security Review (docs)"
+community: "Community 901"
 location: "L161"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Ssh_Security_Review_docs
+  - community/Community_901
 ---
 
 # D - Denial of Service
@@ -17,4 +17,4 @@ tags:
 - [[Threat Context Window Stuffing]] - `contains` [EXTRACTED]
 - [[Threat Resource Exhaustion]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Ssh_Security_Review_docs
+#graphify/document #graphify/EXTRACTED #community/Community_901

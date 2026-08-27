@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/launch-instance.sh"
 type: "code"
-community: "Launch Instance (scripts)"
+community: "Community 1269"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Launch_Instance_scripts
+  - community/Community_1269
 ---
 
 # launch-instance.sh
@@ -17,4 +17,4 @@ tags:
 - [[find_port()]] - `defines` [EXTRACTED]
 - [[launch-instance.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Launch_Instance_scripts
+#graphify/code #graphify/EXTRACTED #community/Community_1269

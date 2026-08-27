@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/legal/USPTO-APPLICATION.md"
 type: "document"
-community: "Uspto Application (legal)"
+community: "Community 1036"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Uspto_Application_legal
+  - community/Community_1036
 ---
 
 # USPTO-APPLICATION.md
@@ -19,4 +19,4 @@ tags:
 - [[USPTO Class 042 Filing (ScientificTechnological Services)]] - `references` [EXTRACTED]
 - [[USPTO Trademark Application — AgentShroud™]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Uspto_Application_legal
+#graphify/document #graphify/EXTRACTED #community/Community_1036

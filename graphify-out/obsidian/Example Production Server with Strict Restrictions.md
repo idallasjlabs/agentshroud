@@ -1,12 +1,12 @@
 ---
 source_file: "docs/ssh-configuration.md"
 type: "document"
-community: "Ssh Configuration (docs)"
+community: "Community 372"
 location: "L150"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Ssh_Configuration_docs
+  - community/Community_372
 ---
 
 # Example: Production Server with Strict Restrictions
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SSH Configuration Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Ssh_Configuration_docs
+#graphify/document #graphify/EXTRACTED #community/Community_372

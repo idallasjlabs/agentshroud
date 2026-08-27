@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "code"
-community: "Security Audit & Watchtower Tests"
+community: "Community 66"
 location: "L318"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Audit__Watchtower_Tests
+  - community/Community_66
 ---
 
 # test_pipeline_fails_closed_without_pii()
@@ -17,4 +17,4 @@ tags:
 - [[SecurityPipeline_1]] - `calls` [EXTRACTED]
 - [[test_redteam_probes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests
+#graphify/code #graphify/EXTRACTED #community/Community_66

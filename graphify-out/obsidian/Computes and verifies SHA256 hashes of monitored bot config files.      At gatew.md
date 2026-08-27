@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/config_integrity.py"
 type: "rationale"
-community: "Config Integrity Monitor"
+community: "Community 202"
 location: "L34"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Config_Integrity_Monitor
+  - community/Community_202
 ---
 
 # Computes and verifies SHA256 hashes of monitored bot config files.      At gatew
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ConfigIntegrityMonitor]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Config_Integrity_Monitor
+#graphify/rationale #graphify/EXTRACTED #community/Community_202

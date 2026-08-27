@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "Tool ACL & Group RBAC"
+community: "Community 15"
 location: "L162"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Tool_ACL__Group_RBAC
+  - community/Community_15
 ---
 
 # Set role for a user ID (owner-only operation).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.set_user_role()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Tool_ACL__Group_RBAC
+#graphify/rationale #graphify/EXTRACTED #community/Community_15

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/shared_memory.py"
 type: "rationale"
-community: "Shared Memory Write Acl"
+community: "Community 61"
 location: "L78"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Shared_Memory_Write_Acl
+  - community/Community_61
 ---
 
 # Return True if ``author_id`` may WRITE to ``group_id`` shared memory.          R
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._is_authorized_group_writer()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Shared_Memory_Write_Acl
+#graphify/rationale #graphify/EXTRACTED #community/Community_61

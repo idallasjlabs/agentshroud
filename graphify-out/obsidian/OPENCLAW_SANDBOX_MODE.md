@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md"
 type: "document"
-community: "Openclaw Sandbox Mode (04 - Environment Variables)"
+community: "Community 573"
 location: "L1"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Openclaw_Sandbox_Mode_04_-_Environment_Variables
+  - community/Community_573
 ---
 
 # OPENCLAW_SANDBOX_MODE.md
@@ -17,4 +17,4 @@ tags:
 - [[OPENCLAW_SANDBOX_MODE_1]] - `contains` [EXTRACTED]
 - [[agent_isolation.py]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Openclaw_Sandbox_Mode_04_-_Environment_Variables
+#graphify/document #graphify/INFERRED #community/Community_573
