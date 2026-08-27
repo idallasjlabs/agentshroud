@@ -1757,11 +1757,14 @@ async def test_ws_direct_agent_pipeline_error_pops_history_and_recovery_send_fai
 
     # send_text side_effect:
     #  call 1 → initial _send_state(IDLE) — succeeds
-    #  call 2 → _send_state(LISTENING)    — succeeds
-    #  call 3 → _send_state(THINKING)     — succeeds
-    #  call 4 → recovery _send_state(IDLE) after pipeline error — raises → line 343-344
+    #  call 2 → connect-time set_agent_label (agent=direct shows the live
+    #           VOICE_MODEL on the device screen) — succeeds
+    #  call 3 → _send_state(LISTENING)    — succeeds
+    #  call 4 → _send_state(THINKING)     — succeeds
+    #  call 5 → recovery _send_state(IDLE) after pipeline error — raises → line 343-344
     ws.send_text = AsyncMock(
         side_effect=[
+            None,
             None,
             None,
             None,
@@ -2457,7 +2460,7 @@ async def test_ws_volume_command_intercepted(monkeypatch):
     await srv.voice_endpoint(ws)
 
     sent_texts = [c.args[0] for c in ws.send_text.call_args_list]
-    ctrl = [t for t in sent_texts if '"cmd"' in t]
+    ctrl = [t for t in sent_texts if '"cmd"' in t and "set_agent_label" not in t]
     assert ctrl, "no control frame sent for the volume command"
     assert json.loads(ctrl[0]) == {"cmd": "set_volume", "value": 80}
     assert any("80 percent" in t for t in spoken), f"confirmation not spoken; synthesized: {spoken}"
@@ -2513,7 +2516,7 @@ async def test_ws_volume_command_with_chained_question(monkeypatch):
     await srv.voice_endpoint(ws)
 
     sent_texts = [c.args[0] for c in ws.send_text.call_args_list]
-    ctrl = [t for t in sent_texts if '"cmd"' in t]
+    ctrl = [t for t in sent_texts if '"cmd"' in t and "set_agent_label" not in t]
     assert ctrl and json.loads(ctrl[0])["value"] == 80
     assert agent_calls, "chained question was swallowed — agent never called"
     assert (
@@ -2618,7 +2621,7 @@ async def test_ws_volume_query_intercepted_returns_tracked_level(monkeypatch):
     await srv.voice_endpoint(ws)
 
     sent_texts = [c.args[0] for c in ws.send_text.call_args_list]
-    ctrl = [t for t in sent_texts if '"cmd"' in t]
+    ctrl = [t for t in sent_texts if '"cmd"' in t and "set_agent_label" not in t]
     assert not ctrl, "a read query must not send a set_volume control frame"
     assert any("80 percent" in t for t in spoken), f"tracked level not spoken: {spoken}"
     states = []

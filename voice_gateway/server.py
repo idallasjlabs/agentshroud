@@ -871,6 +871,21 @@ async def voice_endpoint(ws: WebSocket) -> None:
         # is delivered is caught by the existing WebSocketDisconnect handler below,
         # producing one clean INFO log instead of an unhandled ASGI traceback.
         await _send_state(ws, state)
+        # Tell the device which model actually answers on the "direct" fast
+        # path: the firmware's agent table only knows the slot ("direct"),
+        # not the server-side VOICE_MODEL behind it — a hardcoded label
+        # there went stale twice ("Qwen3" on screen while gemma answered,
+        # 2026-08-27). The firmware already handles set_agent_label (built
+        # for spoken model switches; unknown cmds are ignored by older
+        # firmware, so this is safe regardless of what's flashed). Sent
+        # AFTER the initial idle frame — the idle-first contract
+        # (test_ws_connect_sends_idle_first) is what the firmware keys its
+        # startup UI state on. Spoken sticky overrides (_model_override)
+        # win over the env default, matching what will really answer.
+        if agent == "direct":
+            await ws.send_text(
+                json.dumps({"cmd": "set_agent_label", "value": _effective_voice_model()})
+            )
         heartbeat = asyncio.create_task(_keepalive(ws))
         _loop = asyncio.get_running_loop()
 
