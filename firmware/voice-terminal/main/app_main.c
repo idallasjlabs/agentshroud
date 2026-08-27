@@ -44,19 +44,25 @@ typedef struct {
 } vt_agent_t;
 
 static const vt_agent_t VT_AGENTS[] = {
-    /* Local model (Qwen3 via LM Studio, gateway direct fast-path) first =
-     * boot default (owner directive 2026-08-07, supersedes the 2026-07-06
-     * Hermes-first directive below): Hermes's agentic-loop latency is
-     * highly variable (6-60+s observed live) and was making the device
-     * "nearly unusable" as a boot default; the fast local path answers in
-     * 1-6s. Middle button cycles to Hermes for full agentic control (email,
-     * systems, browsing) or say "tell Hermes"/"ask Hermes" from any state —
-     * spoken switches are sticky for the server-side session but do not
-     * survive a device reboot, hence changing the boot default itself here.
+    /* Local model (gateway direct fast-path) first = boot default (owner
+     * directive 2026-08-07, supersedes the 2026-07-06 Hermes-first
+     * directive below): Hermes's agentic-loop latency is highly variable
+     * (6-60+s observed live) and was making the device "nearly unusable"
+     * as a boot default; the fast local path answers in 1-6s. Middle
+     * button cycles to Hermes for full agentic control (email, systems,
+     * browsing) or say "tell Hermes"/"ask Hermes" from any state — spoken
+     * switches are sticky for the server-side session but do not survive
+     * a device reboot, hence changing the boot default itself here.
+     * Display label is deliberately model-agnostic ("Local"): the actual
+     * model behind "direct" is the voice-gateway's VOICE_MODEL env
+     * (docker-compose.yml) and has already changed twice (qwen3-14b →
+     * gemma-4-12B-it-4bit, 2026-08-27) — a hardcoded model name here goes
+     * stale on every server-side swap, which is exactly how the screen
+     * ended up claiming "Qwen3" while gemma answered.
      * Historical context (2026-07-06): "the ESP32 is the owner's ADMIN
      * VOICE ACCESS to Hermes, not a generic chat box" — still true, just no
      * longer the boot default; Hermes is one voice command away. */
-    { "direct",  "Qwen3"    },   /* Low-latency gateway LLM proxy — no agentic tools          */
+    { "direct",  "Local"    },   /* Low-latency gateway LLM proxy — no agentic tools          */
     { "hermes",  "Hermes"   },   /* Hermes agentic assistant — synchronous OpenAI-compat reply */
     { "openclaw","OpenClaw" },   /* OpenClaw — async Telegram bot; replies on Telegram         */
 };
