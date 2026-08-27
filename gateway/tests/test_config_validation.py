@@ -595,16 +595,19 @@ class TestConfigValidation:
         assert "anthropic/claude-opus-4-6" in script
         assert "agents.defaults.model" in script or "config.agents.defaults.model" in script
 
-    def test_compose_sets_fieldflare_local_model_overrides(self):
+    def test_compose_sets_nemotron_local_model_overrides(self):
         """Main compose stack should expose a single model-mode switch with local/cloud refs.
 
-        Default local model is Turbo Fieldflare (gemma-4-26b-a4b-it, MLX) as of
-        2026-08 — see docs/planning/LOCAL_LLM_REVIEW.md.
+        Default local model is Nemotron 3.5 Lightning via rapid-mlx (:8002) as
+        of 2026-08-27 (PR #407) — won the 2026-08-19 tool-call eval; the prior
+        Turbo Fieldflare default (gemma-4-26b-a4b-it) had confirmed single-slot
+        queueing + large-prompt decode failures. See the rationale comment in
+        docker/docker-compose.yml at the gateway service's model env block.
         """
         compose = (REPO_ROOT / "docker" / "docker-compose.yml").read_text()
         assert "AGENTSHROUD_MODEL_MODE=${AGENTSHROUD_MODEL_MODE:-cloud}" in compose
         assert (
-            "AGENTSHROUD_LOCAL_MODEL_REF=${AGENTSHROUD_LOCAL_MODEL_REF:-openai-local/gemma-4-26b-a4b-it}"
+            "AGENTSHROUD_LOCAL_MODEL_REF=${AGENTSHROUD_LOCAL_MODEL_REF:-openai-local/nemotron-3.5-lightning-rapid}"
             in compose
         )
         assert (
