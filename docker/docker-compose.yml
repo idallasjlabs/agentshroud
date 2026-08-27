@@ -114,8 +114,21 @@ services:
       - AGENTSHROUD_PROGRESSIVE_ENFORCEMENT=${AGENTSHROUD_PROGRESSIVE_ENFORCEMENT:-enforce}
       - AGENTSHROUD_MODEL_MODE=${AGENTSHROUD_MODEL_MODE:-cloud}
       - AGENTSHROUD_CLOUD_MODEL_REF=${AGENTSHROUD_CLOUD_MODEL_REF:-anthropic/claude-opus-4-6}
-      - AGENTSHROUD_LOCAL_MODEL_REF=${AGENTSHROUD_LOCAL_MODEL_REF:-openai-local/gemma-4-26b-a4b-it}
-      - AGENTSHROUD_LOCAL_MODEL=${AGENTSHROUD_LOCAL_MODEL:-gemma-4-26b-a4b-it}
+      # Changed 2026-08-27 from gemma-4-26b-a4b-it/Turbo Fieldflare to
+      # nemotron-3.5-lightning-rapid/rapid-mlx (:8002) for general agentic/
+      # tool-calling duty — Nemotron won the 2026-08-19 eval outright (3/3
+      # clean tool calls at both difficulties, beating qwen3-coder-30b and
+      # qwen3-14b) and survived an adversarial bake-off against oMLX
+      # 2026-08-25/26. NOT used for Hermes's content-generation cron jobs —
+      # those are pinned per-job in docker/bots/hermes/init-config.sh to
+      # gemma-4-12b-it-4bit/oMLX instead, after live-testing showed Nemotron
+      # burns ~83% of its output on invisible reasoning tokens on that
+      # workload (99s wall time on a simplified test prompt, vs 14.8s clean
+      # for gemma-4-12b) — consistent with the 2026-08-23 bake-off finding
+      # that led to those jobs being pinned away from Nemotron in the first
+      # place, not a coincidence.
+      - AGENTSHROUD_LOCAL_MODEL_REF=${AGENTSHROUD_LOCAL_MODEL_REF:-openai-local/nemotron-3.5-lightning-rapid}
+      - AGENTSHROUD_LOCAL_MODEL=${AGENTSHROUD_LOCAL_MODEL:-nemotron-3.5-lightning-rapid}
       - AGENTSHROUD_LOCAL_SECONDARY_MODEL_REF=${AGENTSHROUD_LOCAL_SECONDARY_MODEL_REF:-}
       - AGENTSHROUD_LOCAL_FAILOVER_ON_OOM=${AGENTSHROUD_LOCAL_FAILOVER_ON_OOM:-1}
       - AGENTSHROUD_FAILOVER_ON_QUOTA=${AGENTSHROUD_FAILOVER_ON_QUOTA:-1}
@@ -366,11 +379,11 @@ services:
       - OLLAMA_BASE_URL=${OLLAMA_BASE_URL:-http://gateway:8080/v1}
       - OLLAMA_API_KEY=${OLLAMA_API_KEY:-ollama-local}
       - AGENTSHROUD_MODEL_MODE=${AGENTSHROUD_MODEL_MODE:-cloud}
-      - AGENTSHROUD_LOCAL_MODEL_REF=${AGENTSHROUD_LOCAL_MODEL_REF:-openai-local/gemma-4-26b-a4b-it}
+      - AGENTSHROUD_LOCAL_MODEL_REF=${AGENTSHROUD_LOCAL_MODEL_REF:-openai-local/nemotron-3.5-lightning-rapid}
       - AGENTSHROUD_CLOUD_MODEL_REF=${AGENTSHROUD_CLOUD_MODEL_REF:-anthropic/claude-opus-4-6}
       - OPENCLAW_MAIN_MODEL=${OPENCLAW_MAIN_MODEL:-}
       - OPENCLAW_OLLAMA_API=${OPENCLAW_OLLAMA_API:-ollama}
-      - AGENTSHROUD_LOCAL_MODEL=${AGENTSHROUD_LOCAL_MODEL:-gemma-4-26b-a4b-it}
+      - AGENTSHROUD_LOCAL_MODEL=${AGENTSHROUD_LOCAL_MODEL:-nemotron-3.5-lightning-rapid}
       - LMSTUDIO_API_BASE=${LMSTUDIO_API_BASE:-}
       - AGENTSHROUD_ANCHOR_MODEL=${AGENTSHROUD_ANCHOR_MODEL:-qwen3.8-27b-mlx}
       - AGENTSHROUD_CODING_MODEL=${AGENTSHROUD_CODING_MODEL:-qwen2.5-coder:32b}
@@ -529,8 +542,8 @@ services:
       # Local-model parity (Workstream C): Hermes can run fully on local LLMs.
       # These mirror the gateway env vars so both bots switch atomically via switch_model.sh.
       AGENTSHROUD_MODEL_MODE: ${AGENTSHROUD_MODEL_MODE:-cloud}
-      AGENTSHROUD_LOCAL_MODEL_REF: ${AGENTSHROUD_LOCAL_MODEL_REF:-openai-local/gemma-4-26b-a4b-it}
-      AGENTSHROUD_LOCAL_MODEL: ${AGENTSHROUD_LOCAL_MODEL:-gemma-4-26b-a4b-it}
+      AGENTSHROUD_LOCAL_MODEL_REF: ${AGENTSHROUD_LOCAL_MODEL_REF:-openai-local/nemotron-3.5-lightning-rapid}
+      AGENTSHROUD_LOCAL_MODEL: ${AGENTSHROUD_LOCAL_MODEL:-nemotron-3.5-lightning-rapid}
       # Cloud ref is the cloud-mode fallback for resolve_model.py (SCRUM-70 WS-C)
       # when HERMES_MAIN_MODEL is unset — keeps Hermes on a valid cloud model.
       AGENTSHROUD_CLOUD_MODEL_REF: ${AGENTSHROUD_CLOUD_MODEL_REF:-anthropic/claude-opus-4-6}
@@ -644,6 +657,30 @@ services:
     container_name: agentshroud-voice-gateway
     hostname: agentshroud-voice-gateway
     restart: unless-stopped
+    # Relative CPU priority, not a cap: default docker cpu_shares is 1024 for
+    # every container, so voice-gateway was competing on equal footing with
+    # a dozen+ openclaw-sbx sandboxes, hermes-v2, openclaw, etc. in this same
+    # VM. 4096 (4x default) means the kernel scheduler favors this container
+    # under contention — cgroup shares only bite when cores are actually
+    # oversubscribed, otherwise this is a no-op. Added 2026-08-26 to rule
+    # overload in/out as a cause of slow TTS delivery + playback clicks; does
+    # NOT address contention from agentshroud-bot's separate Colima VM (a
+    # different macOS user's own VM process, outside this cgroup entirely —
+    # that needs host-level `renice`, which requires root this session
+    # doesn't have).
+    cpu_shares: 4096
+    # Hard core pinning, added alongside cpu_shares above: shares are only a
+    # priority weight (helps under contention, does nothing when idle cores
+    # are free but the scheduler still bounces this container across all 8),
+    # this actually restricts it to 2 specific cores — less cross-core
+    # migration/cache-thrashing, and a much stronger claim on those 2 cores
+    # specifically since nothing else in this compose file is pinned there.
+    # Honest limit: only binds containers docker-compose itself creates.
+    # OpenClaw's own sandbox containers (openclaw-sbx-*) are spawned by
+    # OpenClaw at runtime, not through this file, so they can still land on
+    # cores 0-1 too — this reduces contention, it doesn't guarantee exclusive
+    # isolation from that particular class of container.
+    cpuset: "0,1"
     depends_on:
       gateway:
         condition: service_healthy
@@ -677,10 +714,23 @@ services:
       VOICE_GW_AUTH_TOKEN_FILE: /run/secrets/voice_gateway_token
       # Default agent for voice → proxied-agent routing.  Override per-connection via ?agent=,
       # or say "use Claude"/"use local" mid-session (sticky override, SCRUM-113 follow-on).
-      # "direct" = fast local LLM (LM Studio qwen3-14b, /no_think) — default: Hermes's own
-      # agentic-loop latency measured ~9s to first sentence, too slow for voice (2026-08-06).
+      # "direct" = fast local LLM, /no_think — default: Hermes's own agentic-loop
+      # latency measured ~9s to first sentence, too slow for voice (2026-08-06).
       # "hermes" = Hermes agentic assistant (streaming OpenAI-compat reply via /forward/stream).
       VOICE_DEFAULT_AGENT: "direct"
+      # Matches server.py's own default (_VOICE_MODEL="qwen3-14b" → LM Studio),
+      # made explicit here after a live outage (2026-08-26): LM Studio had no
+      # model loaded (idle-unloaded), so every "direct" voice reply 400'd with
+      # "No models loaded". Routing this to Rapid-MLX/Nemotron instead (that
+      # backend's own model, already loaded) was tried and rejected — that
+      # model ignores the gateway's /no_think suppression and burns the voice
+      # reply's small max_tokens budget on a visible reasoning preamble instead
+      # of the answer. qwen3-14b actually honors /no_think and is the model
+      # this fast/no-tool-calling path was designed around; its documented
+      # tool-call unreliability doesn't apply to voice's plain chat completion.
+      # Loaded via `lms load qwen/qwen3-14b` (no --ttl, stays resident) —
+      # if it gets idle-unloaded again, reload with the same command.
+      VOICE_MODEL: "qwen3-14b"
       FIRMWARE_BIN_PATH: /firmware/build/voice_terminal.bin
       # TTS naturalness: 0.92× pacing reads noticeably less robotic on the
       # BOX-3 speaker than the 1.0 default (owner feedback 2026-07-03).

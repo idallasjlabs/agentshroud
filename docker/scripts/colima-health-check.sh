@@ -137,6 +137,38 @@ Time: $(date -u '+%H:%M UTC')
   exit 1
 fi
 
+# 1b. Enforce dev-VM CPU niceness. Self-heals every run (this script already
+# runs every 5 min) instead of hooking colima's actual start — there's no
+# single reliable "colima start" event to catch (no LaunchAgent, manual or
+# cron-restarted), but a stale/wrong nice value gets corrected within 5 min
+# either way. Owner directive 2026-08-26: this account's Colima VM must not
+# compete at equal priority with the interactive/production account on the
+# same physical host (marvin) until dev moves to its own hardware. +10 is a
+# moderate deprioritization, not a starve — the VM still gets real CPU share
+# whenever the host isn't contended, it only loses out to default-priority
+# (nice 0) work when both sides are genuinely busy at once. Gated on account
+# name as defense-in-depth even though this script is currently only
+# cron-invoked on this account (confirmed 2026-08-26: prod/ijefferson.admin
+# has no cron job calling it) — if that ever changes, this must not fire on
+# the production account.
+DEV_VM_NICE_TARGET=10
+if [ "$(whoami)" = "agentshroud-bot" ]; then
+  DEV_VM_PID=$(pgrep -u "$(whoami)" -f "Virtualization.framework.*VirtualMachine" 2>/dev/null | head -1)
+  if [ -n "$DEV_VM_PID" ]; then
+    CURRENT_NICE=$(ps -o nice= -p "$DEV_VM_PID" 2>/dev/null | tr -d ' ')
+    if [ -n "$CURRENT_NICE" ] && [ "$CURRENT_NICE" != "$DEV_VM_NICE_TARGET" ]; then
+      if renice "$DEV_VM_NICE_TARGET" -p "$DEV_VM_PID" >/dev/null 2>&1; then
+        log "AUTO-HEAL: Colima VM (pid $DEV_VM_PID) reniced $CURRENT_NICE -> $DEV_VM_NICE_TARGET"
+        HEALED=true
+      else
+        log "WARNING: renice of Colima VM (pid $DEV_VM_PID) to $DEV_VM_NICE_TARGET failed"
+      fi
+    fi
+  else
+    log "WARNING: could not find this account's Colima VM process to renice"
+  fi
+fi
+
 # 2. Check Colima VM internet access (informational only — VPN commonly blocks this)
 # Route auto-heal requires colima ssh as admin user; not available in cron context.
 # Do NOT add to FAILURES — false-positives behind VPN would generate hourly alerts.
