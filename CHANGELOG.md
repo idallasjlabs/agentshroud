@@ -8,6 +8,72 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.6.0] (2026-08-28)
+
+### Summary
+
+Voice terminal release: the ESP32 screen now shows the live model actually
+answering (e.g. `gemma-4-12B-it-4bit`) instead of a stale hardcoded name, the
+"direct" voice path streams sentence-by-sentence so speech starts on the first
+sentence instead of after the full reply, and a day of live hardware debugging
+closed out a chain of TLS-connect, audio-clicking, and build-config
+reliability issues. Also rolls up the ops/model-routing fixes merged since
+v1.5.3 (#397–#411).
+
+### Added
+
+- **Streaming direct voice path** (`_call_llm_stream`) — the fast local-model
+  path now streams SSE deltas and yields each sentence to TTS as its boundary
+  is crossed, mirroring the Hermes path (PR #416; the full blocking wait was
+  live-measured as the largest slice of a ~10s voice round trip).
+- `scripts/omlx-keepwarm.sh` + owner crontab (every 4 min) — keeps the gemma
+  model resident; cold reload measured 5.06s vs 0.69s warm.
+- Firmware SETUP.md troubleshooting entries for the TLS-connect blackhole and
+  slow-first-reply failure modes.
+
+### Fixed
+
+- **ESP32 live model label** (#413/#415/#416) — three stacked causes: a
+  ctrl-callback registration race silently dropped the server's connect-time
+  label push (callback now passed into `ws_client_create()`); the firmware's
+  hardcoded "Local" placeholder clobbered the server-pushed label (now
+  server-authoritative for the "direct" slot); and "use local" pinned a stale
+  hardcoded model (now resolves live off `VOICE_MODEL`).
+- **Firmware TLS connect reliability** — connect timeout 5s→10s: the
+  DERP-relayed handshake reached HTTP 101 and the client's own timeout killed
+  the nearly-finished connection in a permanent retry storm.
+- **Build-config pinning** — `sdkconfig.defaults` now pins previously
+  cache-only menuconfig values (`TCP_MSS=1152`, main-task stack 20480, WDT
+  20s, TCP buffers 4608, LVGL 32KB); a clean sdkconfig regen silently
+  reverted them, and the MSS fallback to 1440 alone blackholed every TLS
+  connect on the hotspot+Tailscale path.
+- **Audio clicking** — TTS resume no longer re-sends 8KB of already-delivered
+  PCM on reconnect (duplicated audio played as loud clicking); idle speaker
+  feed uses ±1 LSB dither (codec automute pop); voice-gateway cpuset widened
+  2→4 cores (slow synth pushed replies past the firmware's 20s playback gate,
+  and the receive-during-playback overlap is the clicking mechanism).
+- **Voice robustness** — volume command tolerates STT mishearings of "set"
+  ("Except/accept volume 100" previously fell through to the LLM, which
+  falsely claimed compliance); direct-path stream uses a 100s read timeout
+  (flat 30s spoke a false "trouble connecting" under host load); stream-error
+  logging uses `repr` (httpx timeouts stringify to empty).
+- Rolled up since v1.5.3: VOICE_MODEL switched to gemma-4-12B-it-4bit via
+  oMLX (#411); cron model pins reverted to Fieldflare + oMLX 26B route
+  registered (#410); deploy-check false-negative classes eliminated (#409);
+  SCRUM-145 macos/3.11 CI hang root-caused and fixed (#408); ESP32 TLS
+  stability + tap-to-stop (#407); sandbox reaper cleanup fixes (#403/#406);
+  Trivy scan fixes (#404/#405); Hermes provider validation + real version
+  reporting + healthchecks (#399–#402); Claude Code hook scripts tracked
+  (#398); dependency updates (#383/#397).
+
+### Testing
+
+- `gateway/tests/test_voice_gateway.py`: 135 → 136 tests, all passing; full
+  4-platform CI matrix green (7,606 passed on release verification).
+- Firmware built (IDF v5.4) and live-verified on the physical BOX-3.
+
+---
+
 ## [1.5.3] (2026-08-23)
 
 ### Summary
