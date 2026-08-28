@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/agent_isolation.py.md"
 type: "document"
-community: "Community 640"
+community: "Community 633"
 location: "L44"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_640
+  - community/Community_633
 ---
 
 # Function Details
@@ -18,4 +18,4 @@ tags:
 - [[IsolationVerifier.verify_volume_isolation()]] - `contains` [EXTRACTED]
 - [[agent_isolation.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_640
+#graphify/document #graphify/EXTRACTED #community/Community_633

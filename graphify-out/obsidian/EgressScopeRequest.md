@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "Community 18"
+community: "Community 14"
 location: "L433"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_18
+  - community/Community_14
 ---
 
 # EgressScopeRequest
@@ -22,4 +22,4 @@ tags:
 - [[ServiceManager]] - `uses` [INFERRED]
 - [[router.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_18
+#graphify/code #graphify/INFERRED #community/Community_14

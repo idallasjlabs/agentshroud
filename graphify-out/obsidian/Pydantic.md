@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/pydantic.md"
 type: "document"
-community: "Community 366"
+community: "Community 1005"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_366
+  - community/Community_1005
 ---
 
 # Pydantic
@@ -20,4 +20,4 @@ tags:
 - [[pydantic]] - `contains` [EXTRACTED]
 - [[v2 vs v1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_366
+#graphify/document #graphify/EXTRACTED #community/Community_1005

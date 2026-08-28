@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/patch-slack-sdk.sh"
 type: "code"
-community: "Community 449"
+community: "Community 620"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_449
+  - community/Community_620
 ---
 
 # patch-slack-sdk.sh
@@ -15,4 +15,4 @@ tags:
 - [[init-openclaw-config.sh]] - `calls` [EXTRACTED]
 - [[patch-slack-sdk.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_449
+#graphify/code #graphify/EXTRACTED #community/Community_620

@@ -1,29 +1,30 @@
 ---
 type: community
-members: 16
+cohesion: 0.13
+members: 15
 ---
 
 # Community 596
 
-**Members:** 16 nodes
+**Cohesion:** 0.13 - loosely connected
+**Members:** 15 nodes
 
 ## Members
-- [[.__init__()_176]] - code - gateway/tests/test_middleware_coverage.py
-- [[.check_permission()_1]] - code - gateway/tests/test_middleware_coverage.py
-- [[.check_tool_permission()_2]] - code - gateway/tests/test_middleware_coverage.py
-- [[.get_user_role()_2]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_fallback_without_rbac_manager()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_rbac_denied()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_rbac_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_rbac_pass_logs_role_and_allows()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_rbac_requires_approval()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_tool_permission_denied()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_tool_permission_requires_approval()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_with_rbac_manager()]] - code - gateway/tests/test_middleware_coverage.py
-- [[Deterministic stand-in for RBACManager.]] - rationale - gateway/tests/test_middleware_coverage.py
-- [[TestIsOwner]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestProcessRequestRBAC]] - code - gateway/tests/test_middleware_coverage.py
-- [[_FakeRBAC]] - code - gateway/tests/test_middleware_coverage.py
+- [[Bot Network Isolation Design]] - rationale - docs/vault/09 - Diagrams/Network Topology.md
+- [[Complete System Diagram]] - document - docs/vault/09 - Diagrams/Full System Flowchart.md
+- [[Container Network Diagram]] - document - docs/vault/09 - Diagrams/Network Topology.md
+- [[Full System Flowchart_1]] - document - docs/vault/09 - Diagrams/Full System Flowchart.md
+- [[Full System Flowchart]] - document - docs/vault/09 - Diagrams/Full System Flowchart.md
+- [[Hostname Resolution]] - document - docs/vault/09 - Diagrams/Network Topology.md
+- [[Legend]] - document - docs/vault/09 - Diagrams/Full System Flowchart.md
+- [[Network Security Notes]] - document - docs/vault/09 - Diagrams/Network Topology.md
+- [[Network Topology_3]] - document - docs/vault/09 - Diagrams/Network Topology.md
+- [[Network Topology_2]] - document - docs/vault/09 - Diagrams/Network Topology.md
+- [[Related Notes_71]] - document - docs/vault/09 - Diagrams/Full System Flowchart.md
+- [[Related Notes_72]] - document - docs/vault/09 - Diagrams/Network Topology.md
+- [[Security Pipeline Flow]] - document - docs/vault/09 - Diagrams/Security Pipeline Flow.md
+- [[Security Pipeline Layer Order]] - concept - docs/vault/09 - Diagrams/Security Pipeline Flow.md
+- [[Traffic Routing]] - document - docs/vault/09 - Diagrams/Network Topology.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,17 +34,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_Community 130]]
-- 6 edges to [[_COMMUNITY_Community 6]]
-- 3 edges to [[_COMMUNITY_Community 1]]
-- 3 edges to [[_COMMUNITY_Community 174]]
-- 3 edges to [[_COMMUNITY_Community 426]]
-- 1 edge to [[_COMMUNITY_Community 1003]]
-- 1 edge to [[_COMMUNITY_Community 652]]
+- 1 edge to [[_COMMUNITY_Community 741]]
+- 1 edge to [[_COMMUNITY_Community 43]]
 
 ## Top bridge nodes
-- [[_FakeRBAC]] - degree 21, connects to 7 communities
-- [[TestProcessRequestRBAC]] - degree 11, connects to 4 communities
-- [[TestIsOwner]] - degree 7, connects to 4 communities
-- [[.test_rbac_denied()]] - degree 3, connects to 1 community
-- [[.test_rbac_requires_approval()]] - degree 3, connects to 1 community
+- [[Full System Flowchart]] - degree 4, connects to 1 community
+- [[Security Pipeline Flow]] - degree 3, connects to 1 community

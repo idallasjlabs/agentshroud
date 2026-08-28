@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.20
 members: 10
 ---
 
 # Community 867
 
+**Cohesion:** 0.20 - loosely connected
 **Members:** 10 nodes
 
 ## Members
@@ -27,11 +29,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 611]]
-- 1 edge to [[_COMMUNITY_Community 921]]
+- 4 edges to [[_COMMUNITY_Community 605]]
+- 1 edge to [[_COMMUNITY_Community 915]]
 
 ## Top bridge nodes
 - [[TestCredentialInjection]] - degree 9, connects to 2 communities
-- [[.test_strip_headers_removes_conflicting_header()]] - degree 3, connects to 1 community
 - [[.test_anthropic_default_strips_x_api_key()]] - degree 3, connects to 1 community
+- [[.test_strip_headers_removes_conflicting_header()]] - degree 3, connects to 1 community
 - [[.test_injection_disabled()]] - degree 2, connects to 1 community

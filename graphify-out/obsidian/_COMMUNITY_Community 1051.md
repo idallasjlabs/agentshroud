@@ -1,23 +1,22 @@
 ---
 type: community
-members: 10
+cohesion: 0.33
+members: 7
 ---
 
 # Community 1051
 
-**Members:** 10 nodes
+**Cohesion:** 0.33 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[check()_1]] - code - scripts/preflight-check.sh
-- [[fail()_4]] - code - scripts/tailscale-check.sh
-- [[infra-check.sh]] - code - scripts/infra-check.sh
-- [[infra-check.sh script]] - code - scripts/infra-check.sh
-- [[ok()_1]] - code - scripts/tailscale-check.sh
-- [[preflight-check.sh]] - code - scripts/preflight-check.sh
-- [[preflight-check.sh script]] - code - scripts/preflight-check.sh
-- [[tailscale-check.sh]] - code - scripts/tailscale-check.sh
-- [[tailscale-check.sh script]] - code - scripts/tailscale-check.sh
-- [[warn()_4]] - code - scripts/tailscale-check.sh
+- [[Call Gemini API and return the review text and exit code.      Returns]] - rationale - scripts/gemini-review.py
+- [[PATH_4]] - code - scripts/peer-review.sh
+- [[call_gemini()]] - code - scripts/gemini-review.py
+- [[gemini-review.py]] - code - scripts/gemini-review.py
+- [[main()_19]] - code - scripts/gemini-review.py
+- [[peer-review.sh]] - code - scripts/peer-review.sh
+- [[peer-review.sh script]] - code - scripts/peer-review.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,9 +24,3 @@ members: 10
 TABLE source_file, type FROM #community/Community_1051
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 74]]
-
-## Top bridge nodes
-- [[preflight-check.sh]] - degree 4, connects to 1 community

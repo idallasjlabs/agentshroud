@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-data/README.md"
 type: "document"
-community: "Community 1082"
+community: "Community 1075"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1082
+  - community/Community_1075
 ---
 
 # i-data README — Data Validation (DATA-VAL)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[i-data SKILL — Data Validation (DATA-VAL)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1082
+#graphify/document #graphify/EXTRACTED #community/Community_1075

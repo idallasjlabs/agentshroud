@@ -1,29 +1,31 @@
 ---
 type: community
+cohesion: 0.12
 members: 16
 ---
 
 # Community 574
 
+**Cohesion:** 0.12 - loosely connected
 **Members:** 16 nodes
 
 ## Members
-- [[3. Security Controls]] - document - docs/papers/agentshroud-whitepaper.md
-- [[3.1 PII Sanitizer]] - document - docs/papers/agentshroud-whitepaper.md
-- [[3.10 Egress Filtering — Phase 7]] - document - docs/papers/agentshroud-whitepaper.md
-- [[3.11 Drift Detection — Phase 7]] - document - docs/papers/agentshroud-whitepaper.md
-- [[3.12 Container Hardening]] - document - docs/papers/agentshroud-whitepaper.md
-- [[3.13 MCP Proxy Layer — Phase 9]] - document - docs/papers/agentshroud-whitepaper.md
-- [[3.14 Web Traffic Proxy — Phase 10]] - document - docs/papers/agentshroud-whitepaper.md
-- [[3.15 Full Egress Control — Phase 11]] - document - docs/papers/agentshroud-whitepaper.md
-- [[3.2 Audit Ledger]] - document - docs/papers/agentshroud-whitepaper.md
-- [[3.3 Approval Queue]] - document - docs/papers/agentshroud-whitepaper.md
-- [[3.4 Kill Switch]] - document - docs/papers/agentshroud-whitepaper.md
-- [[3.5 SSH Proxy]] - document - docs/papers/agentshroud-whitepaper.md
-- [[3.6 Live Security Dashboard]] - document - docs/papers/agentshroud-whitepaper.md
-- [[3.7 Encrypted Memory (AES-256-GCM) — Phase 7]] - document - docs/papers/agentshroud-whitepaper.md
-- [[3.8 Prompt Injection Defense — Phase 7]] - document - docs/papers/agentshroud-whitepaper.md
-- [[3.9 Progressive Trust System — Phase 7]] - document - docs/papers/agentshroud-whitepaper.md
+- [[03-session-isolation]] - document - docs/planning/redteam/03-session-isolation.md
+- [[Constraints_6]] - document - docs/planning/redteam/03-session-isolation.md
+- [[Evidence_3]] - document - docs/planning/redteam/03-session-isolation.md
+- [[Implement per-user session isolation using Telegram user ID]] - document - docs/planning/redteam/03-session-isolation.md
+- [[Problem_6]] - document - docs/planning/redteam/03-session-isolation.md
+- [[Remediation_4]] - document - docs/planning/redteam/03-session-isolation.md
+- [[Root Cause_5]] - document - docs/planning/redteam/03-session-isolation.md
+- [[Severity_6]] - document - docs/planning/redteam/03-session-isolation.md
+- [[Step 1 Add user session registry to the gateway]] - document - docs/planning/redteam/03-session-isolation.md
+- [[Step 2 Partition conversation context at the gateway]] - document - docs/planning/redteam/03-session-isolation.md
+- [[Step 3 Isolate file workspaces per user]] - document - docs/planning/redteam/03-session-isolation.md
+- [[Step 4 Scope the system prompt per session]] - document - docs/planning/redteam/03-session-isolation.md
+- [[Step 5 Isolate memory persistence]] - document - docs/planning/redteam/03-session-isolation.md
+- [[Step 6 Add cross-session access controls to sessions_send]] - document - docs/planning/redteam/03-session-isolation.md
+- [[Step 7 Add session listing protections]] - document - docs/planning/redteam/03-session-isolation.md
+- [[Verification_5]] - document - docs/planning/redteam/03-session-isolation.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,9 +33,3 @@ members: 16
 TABLE source_file, type FROM #community/Community_574
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 401]]
-
-## Top bridge nodes
-- [[3. Security Controls]] - degree 16, connects to 1 community

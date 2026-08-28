@@ -1,24 +1,32 @@
 ---
 type: community
-members: 11
+cohesion: 0.13
+members: 17
 ---
 
 # Community 529
 
-**Members:** 11 nodes
+**Cohesion:** 0.13 - loosely connected
+**Members:** 17 nodes
 
 ## Members
-- [[Added_10]] - document - CHANGELOG.md
-- [[Added_12]] - document - CHANGELOG.md
-- [[Changed_6]] - document - CHANGELOG.md
-- [[Fixed_13]] - document - CHANGELOG.md
-- [[Fixed_15]] - document - CHANGELOG.md
-- [[Security_6]] - document - CHANGELOG.md
-- [[Summary_17]] - document - CHANGELOG.md
-- [[Summary_19]] - document - CHANGELOG.md
-- [[Tests_4]] - document - CHANGELOG.md
-- [[0.6.0 - 2026-02-23]] - document - CHANGELOG.md
-- [[Unreleased — feathttp-connect-proxy + featcredential-isolation]] - document - CHANGELOG.md
+- [[Check Current Version]] - document - docs/operations/updating.md
+- [[Checking the Changelog]] - document - docs/operations/updating.md
+- [[Database Migrations]] - document - docs/operations/updating.md
+- [[Manual Update Process]] - document - docs/setup/setup-guide.md
+- [[Rollback If Needed]] - document - docs/setup/setup-guide.md
+- [[Rollback Procedure]] - document - docs/operations/updating.md
+- [[Tracking Main Branch]] - document - docs/operations/updating.md
+- [[Tracking a Tagged Release]] - document - docs/operations/updating.md
+- [[Update AgentShroud]] - document - docs/setup/setup-guide.md
+- [[Update OpenClaw]] - document - docs/setup/setup-guide.md
+- [[Update from Git]] - document - docs/operations/updating.md
+- [[Update from Release Tarball]] - document - docs/operations/updating.md
+- [[Updating]] - document - docs/setup/setup-guide.md
+- [[With Git]] - document - docs/operations/updating.md
+- [[Without Git]] - document - docs/operations/updating.md
+- [[deployment]] - document - docs/runbooks/deployment.md
+- [[updating]] - document - docs/operations/updating.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,12 +36,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Community 984]]
-- 3 edges to [[_COMMUNITY_Community 169]]
-- 2 edges to [[_COMMUNITY_Community 1296]]
-- 1 edge to [[_COMMUNITY_Community 646]]
-- 1 edge to [[_COMMUNITY_Community 629]]
+- 2 edges to [[_COMMUNITY_Community 284]]
+- 1 edge to [[_COMMUNITY_Community 680]]
+- 1 edge to [[_COMMUNITY_Community 334]]
 
 ## Top bridge nodes
-- [[Unreleased — feathttp-connect-proxy + featcredential-isolation]] - degree 14, connects to 5 communities
-- [[0.6.0 - 2026-02-23]] - degree 8, connects to 3 communities
+- [[deployment]] - degree 4, connects to 2 communities
+- [[Updating]] - degree 5, connects to 1 community

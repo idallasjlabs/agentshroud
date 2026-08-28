@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "rationale"
-community: "Community 75"
+community: "Progressive Trust"
 location: "L493"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_75
+  - community/Progressive_Trust
 ---
 
 # Return per-user tool denial counts since last restart (V9-2: SOC correlation).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_denial_counts()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_75
+#graphify/rationale #graphify/EXTRACTED #community/Progressive_Trust

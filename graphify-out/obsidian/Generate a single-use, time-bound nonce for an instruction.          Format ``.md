@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_security.py"
 type: "rationale"
-community: "Community 155"
+community: "Community 478"
 location: "L138"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_155
+  - community/Community_478
 ---
 
 # Generate a single-use, time-bound nonce for an instruction.          Format: ``<
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.generate_instruction_nonce()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_155
+#graphify/rationale #graphify/EXTRACTED #community/Community_478

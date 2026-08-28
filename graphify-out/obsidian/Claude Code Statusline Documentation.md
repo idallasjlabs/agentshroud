@@ -1,11 +1,11 @@
 ---
 source_file: ".claude/statusline.sh"
 type: "document"
-community: "Community 1375"
+community: "Community 1381"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1375
+  - community/Community_1381
 ---
 
 # Claude Code Statusline Documentation
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[statusline.sh]] - `cites` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1375
+#graphify/document #graphify/EXTRACTED #community/Community_1381

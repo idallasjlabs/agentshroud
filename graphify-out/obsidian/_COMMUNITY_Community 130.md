@@ -1,47 +1,60 @@
 ---
 type: community
-members: 34
+cohesion: 0.07
+members: 45
 ---
 
 # Community 130
 
-**Members:** 34 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 45 nodes
 
 ## Members
-- [[.test_blocked_non_owner_denied()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_blocked_owner_exempted()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_browser_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_command_indicator_allowed_when_check_passes()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_command_indicator_blocked()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_critical_attack_blocked()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_critical_finding_blocked()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_env_guard_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_existing_session_context_not_reinjected()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_git_guard_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_guard_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_high_threat_blocked()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_invisible_chars_normalized()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_isolation_error_denied()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_isolation_fail_closed_without_session_manager()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_low_finding_allowed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_low_severity_not_blocking()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_low_threat_allowed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_message_dict_is_stringified_and_normalized()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_no_user_id_denied()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_outer_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_owner_bypass()_1]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_owner_bypass()_2]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_plain_message_skips_check()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_repetition_attack_not_blocking()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_session_context_injected()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_tracker_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestBrowserSecurity]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestContextGuard]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestEnvGuard]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestGitGuard_1]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestMultiTurnTracker]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestProcessRequestIdentity]] - code - gateway/tests/test_middleware_coverage.py
-- [[_req()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.__init__()_88]] - code - gateway/security/key_rotation.py
+- [[._generate_new_credential()]] - code - gateway/security/key_rotation.py
+- [[._read_credential_from_1password()]] - code - gateway/security/key_rotation.py
+- [[._retire_old_credential_after_grace_period()]] - code - gateway/security/key_rotation.py
+- [[._store_credential_in_1password()]] - code - gateway/security/key_rotation.py
+- [[._validate_credential()]] - code - gateway/security/key_rotation.py
+- [[.check_and_rotate_due_credentials()]] - code - gateway/security/key_rotation.py
+- [[.cleanup_retired_credentials()]] - code - gateway/security/key_rotation.py
+- [[.emergency_rotate_credential()]] - code - gateway/security/key_rotation.py
+- [[.get_all_credentials_status()]] - code - gateway/security/key_rotation.py
+- [[.get_credential_status()]] - code - gateway/security/key_rotation.py
+- [[.get_health_score()]] - code - gateway/security/key_rotation.py
+- [[.register_credential()]] - code - gateway/security/key_rotation.py
+- [[.register_validator()]] - code - gateway/security/key_rotation.py
+- [[.rotate_credential()]] - code - gateway/security/key_rotation.py
+- [[.should_rotate()]] - code - gateway/security/key_rotation.py
+- [[.should_warn()]] - code - gateway/security/key_rotation.py
+- [[.validate()]] - code - gateway/security/key_rotation.py
+- [[Any_43]] - code - gateway/security/key_rotation.py
+- [[Calculate overall credential health score.]] - rationale - gateway/security/key_rotation.py
+- [[Check all credentials and rotate those that are due.]] - rationale - gateway/security/key_rotation.py
+- [[Clean up any credentials past their grace period.]] - rationale - gateway/security/key_rotation.py
+- [[Get detailed status for a credential.]] - rationale - gateway/security/key_rotation.py
+- [[Get overall credential health score and status summary.]] - rationale - gateway/web/management.py
+- [[Get status for all managed credentials.]] - rationale - gateway/security/key_rotation.py
+- [[Get status of all managed credentials including age and rotation schedule.]] - rationale - gateway/web/management.py
+- [[Initialize the key rotation manager.]] - rationale - gateway/security/key_rotation.py
+- [[KeyRotationManager]] - code - gateway/security/key_rotation.py
+- [[Manages automated rotation of credentials with zero downtime.]] - rationale - gateway/security/key_rotation.py
+- [[Perform emergency rotation of a credential.]] - rationale - gateway/security/key_rotation.py
+- [[Register a credential for rotation management.]] - rationale - gateway/security/key_rotation.py
+- [[Register a validator for a credential type.]] - rationale - gateway/security/key_rotation.py
+- [[Retire old credential after grace period ends.]] - rationale - gateway/security/key_rotation.py
+- [[Rotate a single credential with zero downtime.          Workflow generate new →]] - rationale - gateway/security/key_rotation.py
+- [[Safely read a credential from 1Password using op CLI.]] - rationale - gateway/security/key_rotation.py
+- [[Store a new credential in 1Password.]] - rationale - gateway/security/key_rotation.py
+- [[Trigger manual rotation for a specific credential (owner only).]] - rationale - gateway/web/management.py
+- [[Validate a credential using registered validator.]] - rationale - gateway/security/key_rotation.py
+- [[Validate a credential.          Returns             tuple (is_valid, message)]] - rationale - gateway/security/key_rotation.py
+- [[Whether credential age warrants a warning.]] - rationale - gateway/security/key_rotation.py
+- [[Whether credential needs rotation based on age.]] - rationale - gateway/security/key_rotation.py
+- [[EXPERIMENTAL Generate a new credential value.          WARNING This method ge]] - rationale - gateway/security/key_rotation.py
+- [[credentials_health()]] - code - gateway/web/management.py
+- [[credentials_status()]] - code - gateway/web/management.py
+- [[rotate_credential()]] - code - gateway/web/management.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -51,19 +64,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 12 edges to [[_COMMUNITY_Community 6]]
-- 11 edges to [[_COMMUNITY_Community 426]]
-- 8 edges to [[_COMMUNITY_Community 596]]
-- 6 edges to [[_COMMUNITY_Community 1]]
+- 13 edges to [[_COMMUNITY_Community 295]]
+- 10 edges to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
+- 10 edges to [[_COMMUNITY_Community 226]]
 - 6 edges to [[_COMMUNITY_Community 174]]
-- 4 edges to [[_COMMUNITY_Community 1003]]
-- 2 edges to [[_COMMUNITY_Community 1256]]
-- 1 edge to [[_COMMUNITY_Community 200]]
-- 1 edge to [[_COMMUNITY_Community 652]]
+- 4 edges to [[_COMMUNITY_Community 533]]
+- 4 edges to [[_COMMUNITY_Community 432]]
+- 2 edges to [[_COMMUNITY_Community 810]]
+- 2 edges to [[_COMMUNITY_Community 692]]
+- 1 edge to [[_COMMUNITY_Middleware & Lifespan]]
+- 1 edge to [[_COMMUNITY_Community 1271]]
 
 ## Top bridge nodes
-- [[_req()]] - degree 44, connects to 6 communities
-- [[TestProcessRequestIdentity]] - degree 13, connects to 4 communities
-- [[TestContextGuard]] - degree 10, connects to 4 communities
-- [[TestEnvGuard]] - degree 9, connects to 4 communities
-- [[TestGitGuard_1]] - degree 9, connects to 4 communities
+- [[KeyRotationManager]] - degree 55, connects to 10 communities
+- [[.should_rotate()]] - degree 7, connects to 2 communities
+- [[.should_warn()]] - degree 6, connects to 2 communities
+- [[.register_credential()]] - degree 5, connects to 2 communities
+- [[credentials_health()]] - degree 4, connects to 2 communities

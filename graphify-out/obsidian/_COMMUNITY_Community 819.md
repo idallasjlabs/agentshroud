@@ -1,25 +1,26 @@
 ---
 type: community
-members: 12
+cohesion: 0.18
+members: 11
 ---
 
 # Community 819
 
-**Members:** 12 nodes
+**Cohesion:** 0.18 - loosely connected
+**Members:** 11 nodes
 
 ## Members
-- [[Approval Queue Health]] - document - docs/vault/08 - Runbooks/Health Checks.md
-- [[Basic Status (No Auth)]] - document - docs/vault/08 - Runbooks/Health Checks.md
-- [[Bot Health Check]] - document - docs/vault/08 - Runbooks/Health Checks.md
-- [[Container Health Check]] - document - docs/vault/08 - Runbooks/Health Checks.md
-- [[Full Health Report (Auth Required)]] - document - docs/vault/08 - Runbooks/Health Checks.md
-- [[Gateway Health Endpoints]] - document - docs/vault/08 - Runbooks/Health Checks.md
-- [[Health Check Intervals (Docker)]] - document - docs/vault/08 - Runbooks/Health Checks.md
-- [[Health Checks_2]] - document - docs/vault/08 - Runbooks/Health Checks.md
-- [[Ledger Health]] - document - docs/vault/08 - Runbooks/Health Checks.md
-- [[Monitoring Script]] - document - docs/vault/08 - Runbooks/Health Checks.md
-- [[Related Notes_67]] - document - docs/vault/08 - Runbooks/Health Checks.md
-- [[Security Health Report]] - document - docs/vault/08 - Runbooks/Health Checks.md
+- [[1. Owner & Governance Context]] - document - docker/config/openclaw/workspace/DEVELOPER.md
+- [[2. Project]] - document - docker/config/openclaw/workspace/DEVELOPER.md
+- [[3. Prime Directive]] - document - docker/config/openclaw/workspace/DEVELOPER.md
+- [[4. Development Rules (TDD)]] - document - docker/config/openclaw/workspace/DEVELOPER.md
+- [[5. Language & Tooling Standards]] - document - docker/config/openclaw/workspace/DEVELOPER.md
+- [[6. Runtime Environment (CRITICAL)]] - document - docker/config/openclaw/workspace/DEVELOPER.md
+- [[7. SSH Development Workflow]] - document - docker/config/openclaw/workspace/DEVELOPER.md
+- [[8. Agent Orchestration]] - document - docker/config/openclaw/workspace/DEVELOPER.md
+- [[9. Repository Guardrails]] - document - docker/config/openclaw/workspace/DEVELOPER.md
+- [[9. Skill Lookup]] - document - docker/config/openclaw/workspace/DEVELOPER.md
+- [[DEVELOPER.md — Development Context for AgentShroud]] - document - docker/config/openclaw/workspace/DEVELOPER.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,7 +30,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 788]]
+- 1 edge to [[_COMMUNITY_Community 666]]
 
 ## Top bridge nodes
-- [[Health Checks_2]] - degree 10, connects to 1 community
+- [[DEVELOPER.md — Development Context for AgentShroud]] - degree 11, connects to 1 community

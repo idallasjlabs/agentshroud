@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_vault.py"
 type: "code"
-community: "Community 180"
+community: "Key Vault & Audit Chain"
 location: "L80"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_180
+  - community/Key_Vault__Audit_Chain
 ---
 
 # TestKeyInjection
@@ -21,4 +21,4 @@ tags:
 - [[KeyVaultConfig]] - `uses` [INFERRED]
 - [[test_key_vault.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_180
+#graphify/code #graphify/INFERRED #community/Key_Vault__Audit_Chain

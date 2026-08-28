@@ -1,24 +1,26 @@
 ---
 type: community
+cohesion: 0.18
 members: 11
 ---
 
 # Community 805
 
+**Cohesion:** 0.18 - loosely connected
 **Members:** 11 nodes
 
 ## Members
-- [[1. System Profiler (most comprehensive single source)_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[10. Spotlight Catch-All_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[2. Applications Folders (catch drag-and-drop installs)_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[3. Homebrew (formulae + casks)_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[4. Mac App Store (via `mas` CLI)_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[5. Setapp Detection_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[6. Package Receipts (direct .pkg installs)_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[7. CLI Tools & Utilities (non-.app installs)_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[8. Launch Agents & Daemons (background services)_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[9. Browser Extensions (optional but useful)_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[Phase 1 — Raw Collection_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[0.1 Code Inventory ✅_1]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
+- [[0.2 Current State ✅_1]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
+- [[1.1 The Problem_1]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
+- [[1.2 Fix Shipped ✅]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
+- [[AgentShroud Recovery Plan v0.4.0_1]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
+- [[EXECUTIVE SUMMARY_1]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
+- [[PHASE 0 STABILIZATION ✅ COMPLETE_1]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
+- [[PHASE 1 SECURITY FIX ✅ COMPLETE (v0.4.0)]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
+- [[PHASE 2 NEXT SESSION (v0.5.0)]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
+- [[RECOVERY_PLAN_PARTIAL]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
+- [[RELEASE HISTORY]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,9 +28,3 @@ members: 11
 TABLE source_file, type FROM #community/Community_805
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 1022]]
-
-## Top bridge nodes
-- [[Phase 1 — Raw Collection_2]] - degree 11, connects to 1 community

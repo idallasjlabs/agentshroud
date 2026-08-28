@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1281
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[.test_five_running_zero_findings()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_four_running_with_noncritical_findings()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_one_when_not_run()_1]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_two_with_criticals()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[TestScoreRuntimeProtection_1]] - code - gateway/tests/test_scorecard_scoring.py
+- [[.test_five_with_soc_correlation_and_killswitch()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[.test_four_with_soc_correlation()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[.test_one_baseline_neither_running()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[.test_three_with_falco_and_wazuh()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[TestScoreIncidentResponse_1]] - code - gateway/tests/test_scorecard_scoring.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,7 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 653]]
+- 1 edge to [[_COMMUNITY_Community 646]]
 
 ## Top bridge nodes
-- [[TestScoreRuntimeProtection_1]] - degree 5, connects to 1 community
+- [[TestScoreIncidentResponse_1]] - degree 5, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "Community 152"
+community: "Community 259"
 location: "L360"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_152
+  - community/Community_259
 ---
 
 # TestClient
@@ -22,4 +22,4 @@ tags:
 - [[SkillGuard]] - `uses` [INFERRED]
 - [[SkillScanError]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_152
+#graphify/code #graphify/INFERRED #community/Community_259

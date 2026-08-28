@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Community 9"
+community: "Community 21"
 location: "L2352"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_9
+  - community/Community_21
 ---
 
 # soc_report()
@@ -23,4 +23,4 @@ tags:
 - [[main.py_2]] - `contains` [EXTRACTED]
 - [[soc_correlation()]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_9
+#graphify/code #graphify/EXTRACTED #community/Community_21

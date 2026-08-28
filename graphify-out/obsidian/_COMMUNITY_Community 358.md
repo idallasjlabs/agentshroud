@@ -1,39 +1,39 @@
 ---
 type: community
-members: 26
+cohesion: 0.08
+members: 24
 ---
 
 # Community 358
 
-**Members:** 26 nodes
+**Cohesion:** 0.08 - loosely connected
+**Members:** 24 nodes
 
 ## Members
-- [[.__init__()_46]] - code - gateway/runtime/apple_engine.py
-- [[._cmd()]] - code - gateway/runtime/apple_engine.py
-- [[.build()]] - code - gateway/runtime/apple_engine.py
-- [[.compose_down()]] - code - gateway/runtime/apple_engine.py
-- [[.compose_up()]] - code - gateway/runtime/apple_engine.py
-- [[.exec()]] - code - gateway/runtime/apple_engine.py
-- [[.health_check()_2]] - code - gateway/runtime/apple_engine.py
-- [[.inspect()]] - code - gateway/runtime/apple_engine.py
-- [[.logs()]] - code - gateway/runtime/apple_engine.py
-- [[.network_create()]] - code - gateway/runtime/apple_engine.py
-- [[.network_rm()]] - code - gateway/runtime/apple_engine.py
-- [[.pause()]] - code - gateway/runtime/apple_engine.py
-- [[.ps()]] - code - gateway/runtime/apple_engine.py
-- [[.pull()]] - code - gateway/runtime/apple_engine.py
-- [[.push()]] - code - gateway/runtime/apple_engine.py
-- [[.rm()]] - code - gateway/runtime/apple_engine.py
-- [[.run()_1]] - code - gateway/runtime/apple_engine.py
-- [[.stop()_5]] - code - gateway/runtime/apple_engine.py
-- [[.unpause()]] - code - gateway/runtime/apple_engine.py
-- [[.volume_create()]] - code - gateway/runtime/apple_engine.py
-- [[.volume_rm()]] - code - gateway/runtime/apple_engine.py
-- [[Any_25]] - code - gateway/runtime/apple_engine.py
-- [[AppleContainerEngine]] - code - gateway/runtime/apple_engine.py
-- [[Container engine backed by Apple's `container` CLI.]] - rationale - gateway/runtime/apple_engine.py
-- [[ContainerInfo]] - code - gateway/runtime/apple_engine.py
-- [[get_engine]] - code - gateway/runtime/__init__.py
+- [[graphify_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
+- [[For --update and --cluster-only_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
+- [[For graphify add and --watch_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
+- [[For graphify query_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
+- [[For the commit hook and native CLAUDE.md integration_1]] - document - docker/config/openclaw/skills/graphify/SKILL.md
+- [[Honesty Rules_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
+- [[Interpreter guard for subcommands_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
+- [[Part A - Structural extraction for code files_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
+- [[Part B - Semantic extraction (parallel subagents)_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
+- [[Part C - Merge AST + semantic into final extraction_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
+- [[SKILL_127]] - document - docker/config/openclaw/skills/graphify/SKILL.md
+- [[Step 0 - GitHub repos and multi-path merge (only if a URL or several paths)_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
+- [[Step 1 - Ensure graphify is installed_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
+- [[Step 2 - Detect files_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
+- [[Step 2.5 - Video and audio (only if video files detected)_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
+- [[Step 3 - Extract entities and relationships_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
+- [[Step 4 - Build graph, cluster, analyze, generate outputs_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
+- [[Step 5 - Label communities_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
+- [[Step 6 - Generate Obsidian vault (opt-in) + HTML_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
+- [[Step 9 - Save manifest, update cost tracker, clean up, and report_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
+- [[Steps 6b-8 - Wiki, Neo4j, SVG, GraphML, MCP, benchmark (only on their flags)_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
+- [[Usage_81]] - document - docker/config/openclaw/skills/graphify/SKILL.md
+- [[What You Must Do When Invoked_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
+- [[What graphify is for_2]] - document - docker/config/openclaw/skills/graphify/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -41,22 +41,3 @@ members: 26
 TABLE source_file, type FROM #community/Community_358
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 9 edges to [[_COMMUNITY_Community 197]]
-- 3 edges to [[_COMMUNITY_Community 453]]
-- 3 edges to [[_COMMUNITY_Community 198]]
-- 2 edges to [[_COMMUNITY_Community 528]]
-- 2 edges to [[_COMMUNITY_Community 647]]
-- 1 edge to [[_COMMUNITY_Community 354]]
-- 1 edge to [[_COMMUNITY_Community 439]]
-- 1 edge to [[_COMMUNITY_Community 364]]
-- 1 edge to [[_COMMUNITY_Community 1058]]
-- 1 edge to [[_COMMUNITY_Community 220]]
-- 1 edge to [[_COMMUNITY_Community 330]]
-- 1 edge to [[_COMMUNITY_Community 693]]
-
-## Top bridge nodes
-- [[AppleContainerEngine]] - degree 45, connects to 12 communities
-- [[ContainerInfo]] - degree 3, connects to 2 communities
-- [[Any_25]] - degree 3, connects to 2 communities

@@ -1,42 +1,47 @@
 ---
 type: community
-members: 29
+cohesion: 0.06
+members: 32
 ---
 
 # Community 233
 
-**Members:** 29 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 32 nodes
 
 ## Members
-- [[.__init__()_88]] - code - gateway/security/key_rotation.py
-- [[.add_custom_policy()]] - code - gateway/security/key_rotation_config.py
-- [[.get_op_reference()]] - code - gateway/security/key_rotation_config.py
-- [[.get_policy()_1]] - code - gateway/security/key_rotation_config.py
-- [[.is_emergency_trigger_enabled()]] - code - gateway/security/key_rotation_config.py
-- [[.test_add_custom_policy()]] - code - gateway/tests/test_key_rotation.py
-- [[.test_default_config_has_common_policies()]] - code - gateway/tests/test_key_rotation.py
-- [[.test_get_op_reference_builds_correctly()]] - code - gateway/tests/test_key_rotation.py
-- [[.test_get_policy_returns_default_for_unknown_type()]] - code - gateway/tests/test_key_rotation.py
-- [[Add or update a rotation policy for a specific credential type.]] - rationale - gateway/security/key_rotation_config.py
-- [[Build a complete op reference for a credential.]] - rationale - gateway/security/key_rotation_config.py
-- [[Check if a specific emergency trigger is enabled.]] - rationale - gateway/security/key_rotation_config.py
-- [[Configuration for key rotation policies and schedules.]] - rationale - gateway/security/key_rotation_config.py
-- [[CredentialRotationPolicy]] - code - gateway/security/key_rotation.py
-- [[CredentialRotationPolicy_1]] - code - gateway/security/key_rotation_config.py
-- [[Get rotation policy for a credential type, falling back to api_key default.]] - rationale - gateway/security/key_rotation_config.py
-- [[Initialize the key rotation manager.]] - rationale - gateway/security/key_rotation.py
-- [[KeyRotationConfig]] - code - gateway/security/key_rotation.py
-- [[KeyRotationConfig_1]] - code - gateway/security/key_rotation_config.py
-- [[Rotation policy for a specific credential type.]] - rationale - gateway/security/key_rotation_config.py
-- [[Test adding custom policy for new credential type.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test default config includes policies for common credential types.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test get_policy falls back to api_key for unknown types.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test key rotation configuration.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test op reference building.]] - rationale - gateway/tests/test_key_rotation.py
-- [[TestKeyRotationConfig]] - code - gateway/tests/test_key_rotation.py
-- [[datetime_4]] - code - gateway/security/key_rotation.py
-- [[key_rotation.py]] - code - gateway/security/key_rotation.py
-- [[key_rotation_config.py]] - code - gateway/security/key_rotation_config.py
+- [[Access Denied]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Token expired (SSO)]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Unable to locate credentials]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[AWS Profile Basics]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[AWS SSO Configuration]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Best Practices_1]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Configure New Profile]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Default Profile vs Named Profiles]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Initial SSO Setup]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Login to SSO]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[MCP Not Using Profile]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[MCP-Specific]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Method 1 Set Environment Variable (Session)]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Method 2 Set Permanently (Shell Config)]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Method 3 Configure in .mcp.json]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Multi-Account AWS Access]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Option 1 Interactive Configuration]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Option 2 Manual Configuration]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Organization]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Quick Reference]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Related Skills_19]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Role_17]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[SKILL_32]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Scenario Development → Production]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Security_1]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Switch AWS Profile for MCP]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Troubleshooting_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Use SSO Profile with MCP]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Using AssumeRole for Cross-Account Access]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[What is an AWS Profile]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[When to Invoke_1]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -46,20 +51,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 17 edges to [[_COMMUNITY_Community 193]]
-- 11 edges to [[_COMMUNITY_Community 756]]
-- 10 edges to [[_COMMUNITY_Community 160]]
-- 6 edges to [[_COMMUNITY_Community 1059]]
-- 6 edges to [[_COMMUNITY_Community 424]]
-- 6 edges to [[_COMMUNITY_Community 1857]]
-- 2 edges to [[_COMMUNITY_Community 659]]
-- 1 edge to [[_COMMUNITY_Community 78]]
-- 1 edge to [[_COMMUNITY_Community 6]]
-- 1 edge to [[_COMMUNITY_Community 251]]
+- 1 edge to [[_COMMUNITY_Community 317]]
+- 1 edge to [[_COMMUNITY_Community 378]]
 
 ## Top bridge nodes
-- [[key_rotation.py]] - degree 13, connects to 7 communities
-- [[KeyRotationConfig_1]] - degree 44, connects to 6 communities
-- [[CredentialRotationPolicy_1]] - degree 24, connects to 5 communities
-- [[TestKeyRotationConfig]] - degree 12, connects to 4 communities
-- [[CredentialRotationPolicy]] - degree 4, connects to 1 community
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - degree 14, connects to 2 communities

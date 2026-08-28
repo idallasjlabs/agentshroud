@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/model-usage/SKILL.md"
 type: "document"
-community: "Community 253"
+community: "Community 254"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_253
+  - community/Community_254
 ---
 
 # SKILL.md
@@ -16,4 +16,4 @@ tags:
 - [[SKILL_227]] - `conceptually_related_to` [AMBIGUOUS]
 - [[codexbar-cli]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_253
+#graphify/document #graphify/EXTRACTED #community/Community_254

@@ -1,19 +1,21 @@
 ---
 type: community
+cohesion: 0.40
 members: 6
 ---
 
 # Community 1090
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 6 nodes
 
 ## Members
-- [[Container runtime auto-detection contract (SCRUM-92)]] - rationale - docker/README.md
-- [[_cr_plugin_works()]] - code - scripts/lib/container-runtime.sh
-- [[container-runtime.sh]] - code - scripts/lib/container-runtime.sh
-- [[container-runtime.sh script]] - code - scripts/lib/container-runtime.sh
-- [[container_runtime_engine()]] - code - scripts/lib/container-runtime.sh
-- [[detect_container_runtime()]] - code - scripts/lib/container-runtime.sh
+- [[button_cb_t]] - code - firmware/voice-terminal/test/test_playback_state/stubs/iot_button.h
+- [[button_event_t]] - code - firmware/voice-terminal/test/test_playback_state/stubs/iot_button.h
+- [[button_handle_t_1]] - code - firmware/voice-terminal/test/test_playback_state/stubs/iot_button.h
+- [[iot_button.h]] - code - firmware/voice-terminal/test/test_playback_state/stubs/iot_button.h
+- [[iot_button_delete()]] - code - firmware/voice-terminal/test/test_playback_state/stubs/iot_button.h
+- [[iot_button_register_cb()]] - code - firmware/voice-terminal/test/test_playback_state/stubs/iot_button.h
 
 ## Live Query (requires Dataview plugin)
 

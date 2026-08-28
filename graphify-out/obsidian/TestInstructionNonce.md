@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_security.py"
 type: "code"
-community: "Community 712"
+community: "Community 870"
 location: "L150"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_712
+  - community/Community_870
 ---
 
 # TestInstructionNonce
@@ -25,4 +25,4 @@ tags:
 - [[SessionManager]] - `uses` [INFERRED]
 - [[test_session_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_712
+#graphify/code #graphify/INFERRED #community/Community_870

@@ -1,33 +1,27 @@
 ---
 type: community
-members: 20
+cohesion: 0.17
+members: 12
 ---
 
 # Community 745
 
-**Members:** 20 nodes
+**Cohesion:** 0.17 - loosely connected
+**Members:** 12 nodes
 
 ## Members
-- [[04-security]] - document - docs/diagrams/04-security.md
-- [[07-team-planning]] - document - docs/diagrams/07-team-planning.md
-- [[11. Trust Boundary Diagram]] - document - docs/diagrams/04-security.md
-- [[12. Credential Flow Diagram]] - document - docs/diagrams/04-security.md
-- [[13. Network Security Diagram — Egress Controls]] - document - docs/diagrams/04-security.md
-- [[21. Agile Team Diagram — Structure & Roles]] - document - docs/diagrams/07-team-planning.md
-- [[22. Dependency Graph — Component Dependencies]] - document - docs/diagrams/07-team-planning.md
-- [[23. Roadmap  Timeline — Development Phases]] - document - docs/diagrams/07-team-planning.md
-- [[AgentShroud — Diagram Library]] - document - docs/diagrams/README.md
-- [[AgentShroud — Security & Access Diagrams]] - document - docs/diagrams/04-security.md
-- [[AgentShroud — Team, Planning & Dependency Diagrams]] - document - docs/diagrams/07-team-planning.md
-- [[Agile Team Diagram — Structure & Roles]] - concept - docs/diagrams/07-team-planning.md
-- [[Credential Flow Diagram (op-proxy)]] - concept - docs/diagrams/04-security.md
-- [[Dependency Graph — Component Deployment Order]] - concept - docs/diagrams/07-team-planning.md
-- [[Diagrams Not Yet Implemented]] - document - docs/diagrams/README.md
-- [[Index]] - document - docs/diagrams/README.md
-- [[Network Security Diagram — Egress Controls]] - concept - docs/diagrams/04-security.md
-- [[Priority Reading Order]] - document - docs/diagrams/README.md
-- [[README_120]] - document - docs/diagrams/README.md
-- [[Roadmap  Timeline — Development Phases]] - concept - docs/diagrams/07-team-planning.md
+- [[Competitive Intelligence Protocol]] - document - docker/config/hermes/agents/openclaw-identity.md
+- [[Competitive Intelligence Protocol_1]] - document - docker/config/openclaw/agents/openclaw-identity.md
+- [[IDENTITY.md - Who I Am]] - document - docker/config/hermes/agents/openclaw-identity.md
+- [[IDENTITY.md - Who I Am_1]] - document - docker/config/openclaw/agents/openclaw-identity.md
+- [[My Owner]] - document - docker/config/hermes/agents/openclaw-identity.md
+- [[My Owner_1]] - document - docker/config/openclaw/agents/openclaw-identity.md
+- [[My Responsibilities]] - document - docker/config/openclaw/agents/openclaw-identity.md
+- [[My Role]] - document - docker/config/hermes/agents/openclaw-identity.md
+- [[My Role_1]] - document - docker/config/openclaw/agents/openclaw-identity.md
+- [[Responsibilities]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
+- [[openclaw-identity]] - document - docker/config/hermes/agents/openclaw-identity.md
+- [[openclaw-identity_1]] - document - docker/config/openclaw/agents/openclaw-identity.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,18 +31,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 800]]
-- 2 edges to [[_COMMUNITY_Community 799]]
-- 1 edge to [[_COMMUNITY_Community 226]]
-- 1 edge to [[_COMMUNITY_Community 834]]
-- 1 edge to [[_COMMUNITY_Community 559]]
-- 1 edge to [[_COMMUNITY_Community 280]]
-- 1 edge to [[_COMMUNITY_Community 835]]
-- 1 edge to [[_COMMUNITY_Community 983]]
+- 1 edge to [[_COMMUNITY_Community 315]]
+- 1 edge to [[_COMMUNITY_Community 711]]
 
 ## Top bridge nodes
-- [[README_120]] - degree 8, connects to 5 communities
-- [[04-security]] - degree 5, connects to 1 community
-- [[Credential Flow Diagram (op-proxy)]] - degree 2, connects to 1 community
-- [[Network Security Diagram — Egress Controls]] - degree 2, connects to 1 community
-- [[Dependency Graph — Component Deployment Order]] - degree 2, connects to 1 community
+- [[Competitive Intelligence Protocol_1]] - degree 3, connects to 1 community
+- [[Responsibilities]] - degree 2, connects to 1 community

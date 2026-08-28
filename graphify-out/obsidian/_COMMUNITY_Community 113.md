@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.08
 members: 51
 ---
 
 # Community 113
 
+**Cohesion:** 0.08 - loosely connected
 **Members:** 51 nodes
 
 ## Members
@@ -68,13 +70,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 22 edges to [[_COMMUNITY_Community 171]]
-- 10 edges to [[_COMMUNITY_Community 133]]
-- 2 edges to [[_COMMUNITY_Community 31]]
-- 1 edge to [[_COMMUNITY_Community 45]]
-- 1 edge to [[_COMMUNITY_Community 14]]
-- 1 edge to [[_COMMUNITY_Community 152]]
-- 1 edge to [[_COMMUNITY_Community 71]]
+- 22 edges to [[_COMMUNITY_Community 105]]
+- 10 edges to [[_COMMUNITY_Community 58]]
+- 2 edges to [[_COMMUNITY_Community 29]]
+- 1 edge to [[_COMMUNITY_Community 37]]
+- 1 edge to [[_COMMUNITY_Security Audit & Drift Detection]]
+- 1 edge to [[_COMMUNITY_Community 102]]
+- 1 edge to [[_COMMUNITY_Community 73]]
 
 ## Top bridge nodes
 - [[webapi.py (POST apiintelreports)]] - degree 5, connects to 4 communities

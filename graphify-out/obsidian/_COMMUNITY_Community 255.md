@@ -1,34 +1,46 @@
 ---
 type: community
-members: 21
+cohesion: 0.07
+members: 31
 ---
 
 # Community 255
 
-**Members:** 21 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 31 nodes
 
 ## Members
-- [[._append_audit_event()]] - code - gateway/approval_queue/queue.py
-- [[._expire_stale()]] - code - gateway/approval_queue/queue.py
-- [[._persist_pending_store()]] - code - gateway/approval_queue/queue.py
-- [[.broadcast()_1]] - code - gateway/approval_queue/queue.py
-- [[.cleanup_decided()]] - code - gateway/approval_queue/queue.py
-- [[.decide()_1]] - code - gateway/approval_queue/queue.py
-- [[.get_item()_1]] - code - gateway/approval_queue/queue.py
-- [[.get_pending()_1]] - code - gateway/approval_queue/queue.py
-- [[.submit()_1]] - code - gateway/approval_queue/queue.py
-- [[Add an action to the approval queue          Args             request Approval]] - rationale - gateway/approval_queue/queue.py
-- [[Any_2]] - code - gateway/approval_queue/queue.py
-- [[ApprovalQueueItem_1]] - code - gateway/approval_queue/queue.py
-- [[ApprovalRequest_2]] - code - gateway/approval_queue/queue.py
-- [[Best-effort JSONL persistence for queue lifecycle events.]] - rationale - gateway/approval_queue/queue.py
-- [[Check all pending items and expire those past timeout          Returns]] - rationale - gateway/approval_queue/queue.py
-- [[Fetch a single queue item by ID          Args             request_id Request U]] - rationale - gateway/approval_queue/queue.py
-- [[Get all pending (not expired, not decided) items          First expires any stal]] - rationale - gateway/approval_queue/queue.py
-- [[Persist queue items to disk for restart durability (best effort).          Uses]] - rationale - gateway/approval_queue/queue.py
-- [[Process an approval decision          Args             request_id Request UUID]] - rationale - gateway/approval_queue/queue.py
-- [[Remove decided (approvedrejectedexpired) items older than max_age_seconds.]] - rationale - gateway/approval_queue/queue.py
-- [[Send a JSON message to all connected WebSocket clients          Silently removes]] - rationale - gateway/approval_queue/queue.py
+- [[COLLABORATOR_IDS]] - code - docker/config/openclaw/apply-patches.js
+- [[COLLAB_LOCAL_INFO_ONLY]] - code - docker/config/openclaw/apply-patches.js
+- [[GROUP_CHAT_IDS]] - code - docker/config/openclaw/apply-patches.js
+- [[MODEL_MODE]] - code - docker/config/openclaw/apply-patches.js
+- [[_COLLAB_TOOL_DENY]] - code - docker/config/openclaw/apply-patches.js
+- [[_COLLAB_TOOL_DENY_FULL_ACCESS]] - code - docker/config/openclaw/apply-patches.js
+- [[_GROUP_TOOL_DENY]] - code - docker/config/openclaw/apply-patches.js
+- [[_is_global_full_access]] - code - docker/config/openclaw/apply-patches.js
+- [[_rawGroupIds]] - code - docker/config/openclaw/apply-patches.js
+- [[_resolveCollabDenyList()]] - code - docker/config/openclaw/apply-patches.js
+- [[_resolveCollabToolConfig()]] - code - docker/config/openclaw/apply-patches.js
+- [[_userOverrides]] - code - docker/config/openclaw/apply-patches.js
+- [[allAllowedOrigins]] - code - docker/config/openclaw/apply-patches.js
+- [[allowedOrigins]] - code - docker/config/openclaw/apply-patches.js
+- [[apply-patches.js]] - code - docker/config/openclaw/apply-patches.js
+- [[cIdx]] - code - docker/config/openclaw/apply-patches.js
+- [[config]] - code - docker/config/openclaw/apply-patches.js
+- [[desiredAllowFrom]] - code - docker/config/openclaw/apply-patches.js
+- [[desiredProvider]] - code - docker/config/openclaw/apply-patches.js
+- [[extraOrigins]] - code - docker/config/openclaw/apply-patches.js
+- [[fs_2]] - code - docker/config/openclaw/apply-patches.js
+- [[gpIdx]] - code - docker/config/openclaw/apply-patches.js
+- [[hasMain]] - code - docker/config/openclaw/apply-patches.js
+- [[hasOwnerBinding]] - code - docker/config/openclaw/apply-patches.js
+- [[missingOrigins]] - code - docker/config/openclaw/apply-patches.js
+- [[missingProxies]] - code - docker/config/openclaw/apply-patches.js
+- [[path_2]] - code - docker/config/openclaw/apply-patches.js
+- [[providerModels]] - code - docker/config/openclaw/apply-patches.js
+- [[staleGroupBindings]] - code - docker/config/openclaw/apply-patches.js
+- [[trustedProxies]] - code - docker/config/openclaw/apply-patches.js
+- [[{ profile _genericProfile, deny _genericCollabDeny }]] - code - docker/config/openclaw/apply-patches.js
 
 ## Live Query (requires Dataview plugin)
 
@@ -38,12 +50,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_Community 1]]
-- 1 edge to [[_COMMUNITY_Community 486]]
+- 1 edge to [[_COMMUNITY_Community 441]]
+- 1 edge to [[_COMMUNITY_Community 762]]
+- 1 edge to [[_COMMUNITY_Community 123]]
+- 1 edge to [[_COMMUNITY_Community 616]]
+- 1 edge to [[_COMMUNITY_RBAC & SOC Realtime]]
+- 1 edge to [[_COMMUNITY_Community 620]]
 
 ## Top bridge nodes
-- [[.decide()_1]] - degree 7, connects to 2 communities
-- [[.submit()_1]] - degree 7, connects to 1 community
-- [[._expire_stale()]] - degree 6, connects to 1 community
-- [[.broadcast()_1]] - degree 6, connects to 1 community
-- [[._append_audit_event()]] - degree 6, connects to 1 community
+- [[apply-patches.js]] - degree 36, connects to 6 communities

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/compliance/soc2-attestation-path.md"
 type: "document"
-community: "Community 1376"
+community: "Community 1382"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1376
+  - community/Community_1382
 ---
 
 # SOC 2 Type II Attestation Path (SCRUM-99)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[EU AI Act & NIST Alignment Matrix]] - `cites` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1376
+#graphify/document #graphify/EXTRACTED #community/Community_1382

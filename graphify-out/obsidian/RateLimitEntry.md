@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "code"
-community: "Community 106"
+community: "Community 39"
 location: "L144"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_106
+  - community/Community_39
 ---
 
 # RateLimitEntry
@@ -20,4 +20,4 @@ tags:
 - [[Track rate limit state for a tool+agent combo.]] - `rationale_for` [EXTRACTED]
 - [[mcp_permissions.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_106
+#graphify/code #graphify/INFERRED #community/Community_39

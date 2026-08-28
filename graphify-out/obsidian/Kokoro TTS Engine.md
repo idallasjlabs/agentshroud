@@ -1,11 +1,11 @@
 ---
 source_file: "voice_gateway/requirements.txt"
 type: "concept"
-community: "Community 1546"
+community: "Community 1136"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1546
+  - community/Community_1136
 ---
 
 # Kokoro TTS Engine
@@ -14,4 +14,4 @@ tags:
 - [[Voice Gateway Python Requirements (faster-whisper, kokoro)]] - `references` [EXTRACTED]
 - [[Voice Gateway Service (STTTTS WebSocket Bridge to Governed Path)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1546
+#graphify/concept #graphify/EXTRACTED #community/Community_1136

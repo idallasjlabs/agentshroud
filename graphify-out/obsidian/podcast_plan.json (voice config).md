@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/openclaw/skills/i-apollo/SKILL.md"
 type: "concept"
-community: "Community 1657"
+community: "Community 1744"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1657
+  - community/Community_1744
 ---
 
 # podcast_plan.json (voice config)
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1657
+#graphify/concept #graphify/EXTRACTED #community/Community_1744

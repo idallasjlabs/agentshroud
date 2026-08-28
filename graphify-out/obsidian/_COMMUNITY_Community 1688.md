@@ -1,14 +1,16 @@
 ---
 type: community
+cohesion: 1.00
 members: 1
 ---
 
 # Community 1688
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[Diagram 20 Observability Map]] - image - docs/diagrams/images/diagram-20-observability-map.svg
+- [[__init__.py]] - code - chatbot/__init__.py
 
 ## Live Query (requires Dataview plugin)
 

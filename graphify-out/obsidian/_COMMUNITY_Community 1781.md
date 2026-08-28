@@ -1,14 +1,16 @@
 ---
 type: community
+cohesion: 1.00
 members: 1
 ---
 
 # Community 1781
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[AgentShroud LinkedIn Banner]] - image - branding/social/linkedin-banner-1584x396.png
+- [[_run_hermes_dashboard_forwarder() — TCP tunnel gateway9119-hermes]] - code - gateway/ingest_api/lifespan.py
 
 ## Live Query (requires Dataview plugin)
 

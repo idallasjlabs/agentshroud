@@ -1,12 +1,12 @@
 ---
 source_file: "branding/guidelines/brand-guidelines.md"
 type: "concept"
-community: "Community 460"
+community: "Community 108"
 location: "L82-96"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_460
+  - community/Community_108
 ---
 
 # Color Usage (AgentShroud Blue #1583f0)
@@ -16,4 +16,4 @@ tags:
 - [[Logo Usage Rules_1]] - `conceptually_related_to` [EXTRACTED]
 - [[brand-guidelines]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_460
+#graphify/concept #graphify/EXTRACTED #community/Community_108

@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1238
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[Incident Response (INCIDENT)_2]] - document - docker/config/openclaw/skills/i-production/README.md
-- [[Purpose_98]] - document - docker/config/openclaw/skills/i-production/README.md
-- [[README_103]] - document - docker/config/openclaw/skills/i-production/README.md
-- [[Related Skills_107]] - document - docker/config/openclaw/skills/i-production/README.md
-- [[Usage_108]] - document - docker/config/openclaw/skills/i-production/README.md
+- [[Blue Team Security Auditor (SEC-DEFENSE)_2]] - document - docker/config/openclaw/skills/i-sec-defense/README.md
+- [[Purpose_103]] - document - docker/config/openclaw/skills/i-sec-defense/README.md
+- [[README_108]] - document - docker/config/openclaw/skills/i-sec-defense/README.md
+- [[Related Skills_112]] - document - docker/config/openclaw/skills/i-sec-defense/README.md
+- [[Usage_113]] - document - docker/config/openclaw/skills/i-sec-defense/README.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,23 +1,27 @@
 ---
 type: community
-members: 10
+cohesion: 0.17
+members: 12
 ---
 
 # Community 774
 
-**Members:** 10 nodes
+**Cohesion:** 0.17 - loosely connected
+**Members:** 12 nodes
 
 ## Members
-- [[.test_blocked_entry_logged()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_chain_entries_linked()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_hash_chain_changes_on_append()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_hash_chain_genesis()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_hash_chain_valid()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_log_tool_call()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_log_tool_result()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_pii_redacted_flag()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_tampered_chain_detected()]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestAuditTrail]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_group_a_write_invisible_from_group_b()]] - code - gateway/tests/test_group_isolation.py
+- [[.test_group_b_write_invisible_from_group_a()]] - code - gateway/tests/test_group_isolation.py
+- [[.test_group_id_uses_group_prefix_namespace()]] - code - gateway/tests/test_group_isolation.py
+- [[.test_group_memory_physically_isolated()]] - code - gateway/tests/test_group_isolation.py
+- [[.test_group_writes_are_independent_namespaces()]] - code - gateway/tests/test_group_isolation.py
+- [[Both groups store separate content with no cross-contamination.]] - rationale - gateway/tests/test_group_isolation.py
+- [[Content appended to group-A memory must not appear in group-B memory.]] - rationale - gateway/tests/test_group_isolation.py
+- [[Content appended to group-B must not appear in group-A memory.]] - rationale - gateway/tests/test_group_isolation.py
+- [[TestGroupMemoryNamespaceIsolation]] - code - gateway/tests/test_group_isolation.py
+- [[Writes in group-A must not be readable from group-B.]] - rationale - gateway/tests/test_group_isolation.py
+- [[group-A and group-B memory files must be in separate directories.]] - rationale - gateway/tests/test_group_isolation.py
+- [[group-{chat_id} sessions must live under the 'groups' subdirectory.]] - rationale - gateway/tests/test_group_isolation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,11 +31,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_Community 36]]
-- 3 edges to [[_COMMUNITY_Community 106]]
-- 1 edge to [[_COMMUNITY_Community 201]]
-- 1 edge to [[_COMMUNITY_Community 179]]
-- 1 edge to [[_COMMUNITY_Community 283]]
+- 2 edges to [[_COMMUNITY_Community 51]]
+- 2 edges to [[_COMMUNITY_Community 27]]
+- 1 edge to [[_COMMUNITY_RBAC & SOC Realtime]]
+- 1 edge to [[_COMMUNITY_Session Management]]
+- 1 edge to [[_COMMUNITY_Community 62]]
 
 ## Top bridge nodes
-- [[TestAuditTrail]] - degree 23, connects to 5 communities
+- [[TestGroupMemoryNamespaceIsolation]] - degree 13, connects to 5 communities

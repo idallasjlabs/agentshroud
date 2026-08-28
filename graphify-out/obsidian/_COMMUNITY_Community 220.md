@@ -1,48 +1,49 @@
 ---
 type: community
-members: 35
+cohesion: 0.06
+members: 34
 ---
 
 # Community 220
 
-**Members:** 35 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 34 nodes
 
 ## Members
-- [[.__init__()_48]] - code - gateway/runtime/podman_engine.py
-- [[._cmd()_2]] - code - gateway/runtime/podman_engine.py
-- [[._detect_compose()]] - code - gateway/runtime/podman_engine.py
-- [[.build()_3]] - code - gateway/runtime/podman_engine.py
-- [[.compose_down()_3]] - code - gateway/runtime/podman_engine.py
-- [[.compose_up()_3]] - code - gateway/runtime/podman_engine.py
-- [[.exec()_3]] - code - gateway/runtime/podman_engine.py
-- [[.generate_systemd()]] - code - gateway/runtime/podman_engine.py
-- [[.health_check()_5]] - code - gateway/runtime/podman_engine.py
-- [[.inspect()_3]] - code - gateway/runtime/podman_engine.py
-- [[.logs()_3]] - code - gateway/runtime/podman_engine.py
-- [[.network_create()_3]] - code - gateway/runtime/podman_engine.py
-- [[.network_rm()_3]] - code - gateway/runtime/podman_engine.py
-- [[.pause()_3]] - code - gateway/runtime/podman_engine.py
-- [[.ps()_3]] - code - gateway/runtime/podman_engine.py
-- [[.pull()_3]] - code - gateway/runtime/podman_engine.py
-- [[.push()_3]] - code - gateway/runtime/podman_engine.py
-- [[.rm()_3]] - code - gateway/runtime/podman_engine.py
-- [[.run()_3]] - code - gateway/runtime/podman_engine.py
-- [[.setup_method()_24]] - code - gateway/tests/test_runtime_engines.py
-- [[.stop()_8]] - code - gateway/runtime/podman_engine.py
-- [[.test_generate_systemd()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_health_check()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_ps_json()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_run_selinux_volumes()]] - code - gateway/tests/test_runtime_engines.py
-- [[.unpause()_3]] - code - gateway/runtime/podman_engine.py
-- [[.volume_create()_3]] - code - gateway/runtime/podman_engine.py
-- [[.volume_rm()_3]] - code - gateway/runtime/podman_engine.py
-- [[Any_28]] - code - gateway/runtime/podman_engine.py
-- [[Container engine backed by the Podman CLI.]] - rationale - gateway/runtime/podman_engine.py
-- [[ContainerInfo_3]] - code - gateway/runtime/podman_engine.py
-- [[Detect podman compose or podman-compose.]] - rationale - gateway/runtime/podman_engine.py
-- [[Generate a systemd unit file for a container.]] - rationale - gateway/runtime/podman_engine.py
-- [[PodmanEngine]] - code - gateway/runtime/podman_engine.py
-- [[TestPodmanEngine]] - code - gateway/tests/test_runtime_engines.py
+- [[.compose()_2]] - code - gateway/tests/test_docker_compose.py
+- [[.compose()]] - code - gateway/tests/test_docker_compose.py
+- [[.compose()_1]] - code - gateway/tests/test_docker_compose.py
+- [[.test_file_exists_and_parses()]] - code - gateway/tests/test_docker_compose.py
+- [[.test_gateway_has_healthcheck()]] - code - gateway/tests/test_docker_compose.py
+- [[.test_gateway_has_logging_config()]] - code - gateway/tests/test_docker_compose.py
+- [[.test_gateway_has_pids_limit()]] - code - gateway/tests/test_docker_compose.py
+- [[.test_gateway_has_ports()]] - code - gateway/tests/test_docker_compose.py
+- [[.test_gateway_has_resource_limits()]] - code - gateway/tests/test_docker_compose.py
+- [[.test_gateway_has_tmpfs()]] - code - gateway/tests/test_docker_compose.py
+- [[.test_gateway_no_new_privileges()]] - code - gateway/tests/test_docker_compose.py
+- [[.test_gateway_ports_bound_to_localhost()]] - code - gateway/tests/test_docker_compose.py
+- [[.test_gateway_read_only()]] - code - gateway/tests/test_docker_compose.py
+- [[.test_has_at_least_one_service()]] - code - gateway/tests/test_docker_compose.py
+- [[.test_has_gateway_service()]] - code - gateway/tests/test_docker_compose.py
+- [[.test_has_gateway_service()_1]] - code - gateway/tests/test_docker_compose.py
+- [[.test_has_services_key()]] - code - gateway/tests/test_docker_compose.py
+- [[.test_has_volume_definitions()]] - code - gateway/tests/test_docker_compose.py
+- [[.test_has_volumes()]] - code - gateway/tests/test_docker_compose.py
+- [[.test_healthcheck_has_interval()]] - code - gateway/tests/test_docker_compose.py
+- [[.test_valid_yaml()]] - code - gateway/tests/test_docker_compose.py
+- [[All compose files should be valid YAML.]] - rationale - gateway/tests/test_docker_compose.py
+- [[Load a docker-compose YAML file.]] - rationale - gateway/tests/test_docker_compose.py
+- [[Load raw text of a compose file.]] - rationale - gateway/tests/test_docker_compose.py
+- [[TestAllComposeFilesValid]] - code - gateway/tests/test_docker_compose.py
+- [[TestDockerComposeMain]] - code - gateway/tests/test_docker_compose.py
+- [[TestMinimalCompose]] - code - gateway/tests/test_docker_compose.py
+- [[TestProductionCompose]] - code - gateway/tests/test_docker_compose.py
+- [[Validate dockerdocker-compose.yml (main compose).]] - rationale - gateway/tests/test_docker_compose.py
+- [[Validate examplesdocker-compose.minimal.yml.]] - rationale - gateway/tests/test_docker_compose.py
+- [[Validate examplesdocker-compose.production.yml.]] - rationale - gateway/tests/test_docker_compose.py
+- [[_load_compose()]] - code - gateway/tests/test_docker_compose.py
+- [[_load_compose_raw()]] - code - gateway/tests/test_docker_compose.py
+- [[test_docker_compose.py]] - code - gateway/tests/test_docker_compose.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -50,23 +51,3 @@ members: 35
 TABLE source_file, type FROM #community/Community_220
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 10 edges to [[_COMMUNITY_Community 197]]
-- 3 edges to [[_COMMUNITY_Community 453]]
-- 3 edges to [[_COMMUNITY_Community 198]]
-- 2 edges to [[_COMMUNITY_Community 528]]
-- 2 edges to [[_COMMUNITY_Community 354]]
-- 2 edges to [[_COMMUNITY_Community 647]]
-- 1 edge to [[_COMMUNITY_Community 358]]
-- 1 edge to [[_COMMUNITY_Community 439]]
-- 1 edge to [[_COMMUNITY_Community 364]]
-- 1 edge to [[_COMMUNITY_Community 1058]]
-- 1 edge to [[_COMMUNITY_Community 330]]
-- 1 edge to [[_COMMUNITY_Community 693]]
-
-## Top bridge nodes
-- [[PodmanEngine]] - degree 45, connects to 11 communities
-- [[TestPodmanEngine]] - degree 11, connects to 4 communities
-- [[ContainerInfo_3]] - degree 3, connects to 2 communities
-- [[Any_28]] - degree 3, connects to 2 communities

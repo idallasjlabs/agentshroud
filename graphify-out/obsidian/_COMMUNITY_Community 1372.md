@@ -1,16 +1,19 @@
 ---
 type: community
-members: 3
+cohesion: 0.50
+members: 4
 ---
 
 # Community 1372
 
-**Members:** 3 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[SKILL_198]] - document - skills/openclaw/blogwatcher/SKILL.md
-- [[blogwatcher]] - document - skills/openclaw/blogwatcher/SKILL.md
-- [[blogwatcher CLI]] - concept - skills/openclaw/blogwatcher/SKILL.md
+- [[Gateway container (8 CRITICAL CVEs)]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[Hermes container — Not scanned]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[OpenClaw container (17 CRITICAL CVEs)]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[§5 — Trivy Container Scan Results]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -18,3 +21,9 @@ members: 3
 TABLE source_file, type FROM #community/Community_1372
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 924]]
+
+## Top bridge nodes
+- [[§5 — Trivy Container Scan Results]] - degree 4, connects to 1 community

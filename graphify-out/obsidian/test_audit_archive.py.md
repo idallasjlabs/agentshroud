@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_archive.py"
 type: "code"
-community: "Community 820"
+community: "Community 769"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_820
+  - community/Community_769
 ---
 
 # test_audit_archive.py
@@ -21,4 +21,4 @@ tags:
 - [[now()]] - `contains` [EXTRACTED]
 - [[purge_low_value_events()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_820
+#graphify/code #graphify/EXTRACTED #community/Community_769

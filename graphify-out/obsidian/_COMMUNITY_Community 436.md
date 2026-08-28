@@ -1,33 +1,35 @@
 ---
 type: community
+cohesion: 0.10
 members: 20
 ---
 
 # Community 436
 
+**Cohesion:** 0.10 - loosely connected
 **Members:** 20 nodes
 
 ## Members
-- [[A. AWS Glue Jobs_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[B. AWS Step Functions_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[C. AWS Athena_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[D. PostgreSQL — RDS (`fe-gsdl-poc-database`)_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[E. MySQL — On-Site Zabbix Databases (200+ sites)_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[F. IAM Policies_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[G. Tailscale  Network_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[General Rules_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[H. Service Control for Production Testing_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[H.1 Pause Glue Jobs Before Testing_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[H.2 Pause Step Functions Before Testing_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[H.3 Database Tables for Test Data_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[H.4 Cleanup Verification Checklist_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[Objective_3]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[Output Format_21]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[Role_66]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[SKILL_109]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[Skill Quality Assurance (QA)_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[Testing Hierarchy_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
+- [[Allowed Syscall Categories]] - document - docs/vault/03 - Configuration/seccomp-profiles.md
+- [[Alternate Compose Files]] - document - docs/vault/03 - Configuration/docker-compose.yml.md
+- [[Applied By]] - document - docs/vault/03 - Configuration/seccomp-profiles.md
+- [[Architecture Support]] - document - docs/vault/03 - Configuration/seccomp-profiles.md
+- [[Blocked Syscalls (Notable)]] - document - docs/vault/03 - Configuration/seccomp-profiles.md
+- [[Default Action]] - document - docs/vault/03 - Configuration/seccomp-profiles.md
+- [[Gateway vs Bot Profile Differences]] - document - docs/vault/03 - Configuration/seccomp-profiles.md
+- [[Networks]] - document - docs/vault/03 - Configuration/docker-compose.yml.md
+- [[Purpose_181]] - document - docs/vault/03 - Configuration/seccomp-profiles.md
+- [[Related Notes_21]] - document - docs/vault/03 - Configuration/docker-compose.yml.md
+- [[Related Notes_25]] - document - docs/vault/03 - Configuration/seccomp-profiles.md
+- [[Seccomp Profiles]] - document - docs/vault/03 - Configuration/seccomp-profiles.md
+- [[Secrets Files]] - document - docs/vault/03 - Configuration/docker-compose.yml.md
+- [[Services]] - document - docs/vault/03 - Configuration/docker-compose.yml.md
+- [[Volumes]] - document - docs/vault/03 - Configuration/docker-compose.yml.md
+- [[agentshroud (agentshroud-bot)]] - document - docs/vault/03 - Configuration/docker-compose.yml.md
+- [[docker-compose.yml_1]] - document - docs/vault/03 - Configuration/docker-compose.yml.md
+- [[docker-compose.yml]] - document - docs/vault/03 - Configuration/docker-compose.yml.md
+- [[gateway (agentshroud-gateway)]] - document - docs/vault/03 - Configuration/docker-compose.yml.md
+- [[seccomp-profiles]] - document - docs/vault/03 - Configuration/seccomp-profiles.md
 
 ## Live Query (requires Dataview plugin)
 

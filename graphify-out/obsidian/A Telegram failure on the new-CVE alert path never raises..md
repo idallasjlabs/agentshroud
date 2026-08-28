@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "rationale"
-community: "Community 451"
+community: "Community 455"
 location: "L748"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_451
+  - community/Community_455
 ---
 
 # A Telegram failure on the new-CVE alert path never raises.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_alert_send_failure_is_swallowed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_451
+#graphify/rationale #graphify/EXTRACTED #community/Community_455

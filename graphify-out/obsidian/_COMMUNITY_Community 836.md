@@ -1,14 +1,16 @@
 ---
 type: community
+cohesion: 0.20
 members: 10
 ---
 
 # Community 836
 
+**Cohesion:** 0.20 - loosely connected
 **Members:** 10 nodes
 
 ## Members
-- [[Atlas — Curriculum Architect_3]] - document - docker/config/hermes/skills/i-atlas/SKILL.md
+- [[Atlas — Curriculum Architect_2]] - document - docker/config/hermes/skills/i-atlas/SKILL.md
 - [[Input Requirements_12]] - document - docker/config/hermes/skills/i-atlas/SKILL.md
 - [[Output Format_14]] - document - docker/config/hermes/skills/i-atlas/SKILL.md
 - [[Persona_9]] - document - docker/config/hermes/skills/i-atlas/SKILL.md
@@ -27,7 +29,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 893]]
+- 1 edge to [[_COMMUNITY_Community 888]]
 
 ## Top bridge nodes
-- [[Atlas — Curriculum Architect_3]] - degree 11, connects to 1 community
+- [[Atlas — Curriculum Architect_2]] - degree 10, connects to 1 community

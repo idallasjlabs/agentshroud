@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "Community 541"
+community: "Community 539"
 location: "L149"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_541
+  - community/Community_539
 ---
 
 # TestLoadLatestJson
@@ -21,4 +21,4 @@ tags:
 - [[.test_skips_empty_files_returns_next_valid()]] - `method` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_541
+#graphify/code #graphify/EXTRACTED #community/Community_539

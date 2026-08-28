@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Community 31"
+community: "Community 29"
 location: "L155"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_31
+  - community/Community_29
 ---
 
 # ModeRequest
@@ -25,7 +25,7 @@ tags:
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[CitationVerifier]] - `uses` [INFERRED]
 - [[DraftEntry]] - `uses` [INFERRED]
-- [[FastAPI_2]] - `uses` [INFERRED]
+- [[FastAPI_3]] - `uses` [INFERRED]
 - [[IntelReportStore]] - `uses` [INFERRED]
 - [[Path_35]] - `uses` [INFERRED]
 - [[SimpleNamespace_1]] - `uses` [INFERRED]
@@ -60,4 +60,4 @@ tags:
 - [[test_observatory_mode.py]] - `imports` [EXTRACTED]
 - [[test_web_api_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_31
+#graphify/code #graphify/INFERRED #community/Community_29

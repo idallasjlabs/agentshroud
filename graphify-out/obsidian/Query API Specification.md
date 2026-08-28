@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/audit-specification.md"
 type: "document"
-community: "Community 183"
+community: "Community 189"
 location: "L310"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_183
+  - community/Community_189
 ---
 
 # Query API Specification
@@ -17,4 +17,4 @@ tags:
 - [[Chain Verification Query]] - `contains` [EXTRACTED]
 - [[Query Capabilities]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_183
+#graphify/document #graphify/EXTRACTED #community/Community_189

@@ -1,34 +1,46 @@
 ---
 type: community
-members: 21
+cohesion: 0.07
+members: 31
 ---
 
 # Community 250
 
-**Members:** 21 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 31 nodes
 
 ## Members
-- [[.test_extract_first_egress_target_accepts_uppercase_http_scheme()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_extract_first_egress_target_does_not_treat_email_as_domain_target()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_extract_first_egress_target_handles_bare_domain_with_query()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_extract_first_egress_target_handles_empty_inputs()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_extract_first_egress_target_ignores_markdown_filename_token()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_extract_first_egress_target_ignores_non_http_scheme_and_uses_bare_domain()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_extract_first_egress_target_ignores_text_filename_token()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_extract_first_egress_target_ignores_version_like_tokens()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_extract_first_egress_target_prefers_first_http_url()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_extract_first_egress_target_rejects_ip_literal_bare_target()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_extract_first_egress_target_returns_none_when_no_url_or_domain()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_extract_first_egress_target_skips_email_then_finds_http_url()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_extract_first_egress_target_skips_protocol_relative_host_without_tld()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_extract_first_egress_target_strips_markdown_wrapper_punctuation()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_extract_first_egress_target_strips_trailing_punctuation()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_extract_first_egress_target_supports_parenthesized_bare_domain()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_extract_first_egress_target_supports_protocol_relative_urls()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_extract_first_egress_target_supports_protocol_relative_with_query()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_extract_first_egress_target_trims_wrapping_quotes()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[TestEgressTargetExtraction]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Unit tests for outbound target extraction helper used by egress preflight.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[1. GitHub MCP Authentication Reset_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[2. Atlassian MCP Authentication Reset_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[3. AWS API MCP Authentication Reset_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[AWS Credentials_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[AWS Token expired (SSO)_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[AWS Unable to locate credentials_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[Atlassian OAuth_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[Atlassian OAuth flow failed_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[Authentication Reset Procedures_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[GitHub PAT_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[GitHub Bad credentials_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[GitHub Docker image not found_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[If Using SSO_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[Manual Re-authentication_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[Option A Default AWS Profile_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[Option B Named Profile_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[Related Skills_97]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[Role_89]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[SKILL_158]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[Security Best Practices_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[Step 1 Generate New Personal Access Token_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[Step 2 Update .env File_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[Step 3 Verify Authentication_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[Step 4 Restart Claude Code]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[Troubleshooting_13]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[Usage_100]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[Verification Checklist_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[Verify Authentication_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[When Authentication Expires_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[When to Invoke_6]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,13 +48,3 @@ members: 21
 TABLE source_file, type FROM #community/Community_250
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 1]]
-- 1 edge to [[_COMMUNITY_Community 870]]
-- 1 edge to [[_COMMUNITY_Community 4]]
-- 1 edge to [[_COMMUNITY_Community 42]]
-- 1 edge to [[_COMMUNITY_Community 265]]
-
-## Top bridge nodes
-- [[TestEgressTargetExtraction]] - degree 25, connects to 5 communities

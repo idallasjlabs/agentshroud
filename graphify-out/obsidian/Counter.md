@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/migrate-cve-registry-ghsa.py"
 type: "code"
-community: "Community 242"
+community: "Community 246"
 location: "L204"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_242
+  - community/Community_246
 ---
 
 # Counter
@@ -17,4 +17,4 @@ tags:
 - [[build_id_plan()]] - `calls` [EXTRACTED]
 - [[match_entry()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_242
+#graphify/code #graphify/INFERRED #community/Community_246

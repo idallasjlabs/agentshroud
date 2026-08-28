@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/audit_store.py"
 type: "rationale"
-community: "Community 1132"
+community: "Community 342"
 location: "L103"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1132
+  - community/Community_342
 ---
 
 # Compute SHA-256 hash of event content (excluding hashes).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.compute_content_hash()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1132
+#graphify/rationale #graphify/EXTRACTED #community/Community_342

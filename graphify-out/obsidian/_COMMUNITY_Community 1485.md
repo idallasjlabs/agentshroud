@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 1.00
 members: 2
 ---
 
 # Community 1485
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[Alert Thresholds (approval queue 1h timeout, context 200K hard limit, op-proxy 6 retries)]] - concept - docs/diagrams/images/diagram-20-observability-map.svg
-- [[Bot observability (docker logs, GET apihealth, context tokens 200K limit)]] - concept - docs/diagrams/images/diagram-20-observability-map.svg
+- [[SKILL_176]] - document - docker/config/openclaw/skills/i-sdlc/SKILL.md
+- [[Skill sdlc_2]] - document - docker/config/openclaw/skills/i-sdlc/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,14 +1,16 @@
 ---
 type: community
+cohesion: 1.00
 members: 1
 ---
 
 # Community 1840
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[On-site Zabbix MySQL (200+ sites)]] - concept - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[Phase Review v0.8.0 Enforcement Hardening Round 1 — 2026-03-05]] - document - docs/planning/reviews/phase-review-2026-03-05.md
 
 ## Live Query (requires Dataview plugin)
 

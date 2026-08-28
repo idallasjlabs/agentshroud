@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md"
 type: "document"
-community: "Community 284"
+community: "Community 285"
 location: "L253"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_284
+  - community/Community_285
 ---
 
 # Immediate Action Plan (Phase 3A - Completion)
@@ -18,4 +18,4 @@ tags:
 - [[Priority 3 Create IEC 62443 Compliance Matrix (HIGH)]] - `contains` [EXTRACTED]
 - [[Priority 4 Create Security Verification Script (HIGH)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_284
+#graphify/document #graphify/EXTRACTED #community/Community_285

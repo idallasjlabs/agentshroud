@@ -1,12 +1,12 @@
 ---
 source_file: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
 type: "document"
-community: "Community 966"
+community: "Community 965"
 location: "L272"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_966
+  - community/Community_965
 ---
 
 # FIGURE 1 — System Context Diagram
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SECTION 3 DRAWINGS]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_966
+#graphify/document #graphify/EXTRACTED #community/Community_965

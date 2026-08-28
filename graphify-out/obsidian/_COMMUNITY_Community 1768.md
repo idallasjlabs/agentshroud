@@ -1,14 +1,16 @@
 ---
 type: community
+cohesion: 1.00
 members: 1
 ---
 
 # Community 1768
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[_SCORECARD_DOMAINS (33-domain IEC 62443 scorecard)]] - code - gateway/security/scanner_integration.py
+- [[Value Stream Mapping Skill]] - document - .agents/skills/i-value-stream-mapping/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

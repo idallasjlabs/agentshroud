@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1252
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[Collaborator System (multi-user agentic workspace)]] - concept - docs/agentshroud-knowledge.md
-- [[Dashboard Overview (request volume, security events, audit trail)]] - concept - docs/user-guide.md
-- [[Kill Switch (freezeshutdowndisconnect)]] - concept - docs/user-guide.md
-- [[OpenClaw — primary integration target agent]] - concept - docs/agentshroud-knowledge.md
-- [[SOC Command Center — Five Pillars]] - concept - docs/agentshroud-knowledge.md
+- [[._sanitize_text()]] - code - gateway/security/log_sanitizer.py
+- [[.filter()_1]] - code - gateway/security/log_sanitizer.py
+- [[Filter log record, sanitizing sensitive content.]] - rationale - gateway/security/log_sanitizer.py
+- [[LogRecord_1]] - code - gateway/security/log_sanitizer.py
+- [[Sanitize sensitive data in text.]] - rationale - gateway/security/log_sanitizer.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,3 +22,10 @@ members: 5
 TABLE source_file, type FROM #community/Community_1252
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_Security Audit & Drift Detection]]
+
+## Top bridge nodes
+- [[.filter()_1]] - degree 4, connects to 1 community
+- [[._sanitize_text()]] - degree 3, connects to 1 community

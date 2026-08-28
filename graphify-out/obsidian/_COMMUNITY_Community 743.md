@@ -1,27 +1,27 @@
 ---
 type: community
-members: 14
+cohesion: 0.17
+members: 12
 ---
 
 # Community 743
 
-**Members:** 14 nodes
+**Cohesion:** 0.17 - loosely connected
+**Members:** 12 nodes
 
 ## Members
-- [[1. Pull Latest Code]] - document - docs/runbooks/deployment.md
-- [[2. Run Tests]] - document - docs/runbooks/deployment.md
-- [[3. Update Dependencies (if changed)]] - document - docs/runbooks/deployment.md
-- [[4. Build Containers]] - document - docs/runbooks/deployment.md
-- [[5. Deploy]] - document - docs/runbooks/deployment.md
-- [[6. Verify_3]] - document - docs/runbooks/deployment.md
-- [[Deployment Runbook — AgentShroud]] - document - docs/runbooks/deployment.md
-- [[Environment Variables]] - document - docs/runbooks/deployment.md
-- [[First-Time Setup]] - document - docs/runbooks/deployment.md
-- [[Prerequisites_8]] - document - docs/runbooks/deployment.md
-- [[Quick Summary]] - document - docs/runbooks/deployment.md
-- [[Rolling Back]] - document - docs/runbooks/deployment.md
-- [[Standard Deployment]] - document - docs/runbooks/deployment.md
-- [[Version Tagging]] - document - docs/runbooks/deployment.md
+- [[Advanced 1Password Access]] - document - docker/bot-capabilities.md
+- [[Available Commands]] - document - docker/bot-capabilities.md
+- [[Credential Management - 1Password Integration]] - document - docker/bot-capabilities.md
+- [[Security Decision Tree]] - document - docker/bot-capabilities.md
+- [[Security Rules (Ultra-Conservative)]] - document - docker/bot-capabilities.md
+- [[Troubleshooting_6]] - document - docker/bot-capabilities.md
+- [[Usage Examples]] - document - docker/bot-capabilities.md
+- [[Vault Access]] - document - docker/bot-capabilities.md
+- [[Why Ultra-Conservative]] - document - docker/bot-capabilities.md
+- [[🔴 Chat Interfaces (NEVER display credentials)]] - document - docker/bot-capabilities.md
+- [[🟢 Console Commands (ALWAYS display)]] - document - docker/bot-capabilities.md
+- [[🟢 Internal Use (ALWAYS allowed)]] - document - docker/bot-capabilities.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,11 +31,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 517]]
-- 1 edge to [[_COMMUNITY_Community 531]]
-- 1 edge to [[_COMMUNITY_Community 120]]
-- 1 edge to [[_COMMUNITY_Community 355]]
+- 1 edge to [[_COMMUNITY_Community 1017]]
 
 ## Top bridge nodes
-- [[Environment Variables]] - degree 4, connects to 3 communities
-- [[Deployment Runbook — AgentShroud]] - degree 7, connects to 1 community
+- [[Credential Management - 1Password Integration]] - degree 9, connects to 1 community

@@ -1,15 +1,18 @@
 ---
 type: community
-members: 2
+cohesion: 1.00
+members: 3
 ---
 
 # Community 1421
 
-**Members:** 2 nodes
+**Cohesion:** 1.00 - tightly connected
+**Members:** 3 nodes
 
 ## Members
-- [[SKILL_12]] - document - .agents/skills/i-chaos-engineering/SKILL.md
-- [[Skill chaos-engineering]] - document - .agents/skills/i-chaos-engineering/SKILL.md
+- [[check()_8]] - code - tests/startup_smoke/test_hermes_mcp_reconciliation.sh
+- [[test_hermes_mcp_reconciliation.sh]] - code - tests/startup_smoke/test_hermes_mcp_reconciliation.sh
+- [[test_hermes_mcp_reconciliation.sh script]] - code - tests/startup_smoke/test_hermes_mcp_reconciliation.sh
 
 ## Live Query (requires Dataview plugin)
 

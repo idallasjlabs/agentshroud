@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-kaizen/SKILL.md"
 type: "document"
-community: "Community 1426"
+community: "Community 1442"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1426
+  - community/Community_1442
 ---
 
 # Skill: kaizen
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SKILL_27]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1426
+#graphify/document #graphify/EXTRACTED #community/Community_1442

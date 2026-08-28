@@ -1,28 +1,30 @@
 ---
 type: community
+cohesion: 0.13
 members: 15
 ---
 
 # Community 630
 
+**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
-- [[Configuration  Environment Variables_2]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[Function Details_8]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[Hash Chain Structure_2]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[Key Classes  Functions_11]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[MCPAuditTrail.generate_report()]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[MCPAuditTrail.log_tool_call(agent_id, server_name, tool_name, parameters, findings_count, threat_level, blocked, block_reason, pii_redacted, call_id)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[MCPAuditTrail.log_tool_result(call_id, agent_id, server_name, tool_name, success, error_message, result_summary, findings_count, threat_level, pii_redacted)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[MCPAuditTrail.start_call(call_id)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[MCPAuditTrail.verify_chain()]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[Purpose_129]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[Query Methods]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[Related_14]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[Responsibilities_13]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[mcp_audit.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[mcp_audit.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
+- [[Configuration  Environment Variables_16]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[Docker Security Options Used]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[DockerEngine._cmd(args, kwargs)]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[DockerEngine.compose_up(file, detach)]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[DockerEngine.health_check()]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[DockerEngine.inspect(name)]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[DockerEngine.ps(all)]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[DockerEngine.run(image, name, , ports, volumes, networks, env, privileged, caps, seccomp, detach, read_only, no_new_privileges)]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[Function Details_22]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[Key Classes  Functions_25]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[Purpose_143]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[Related_29]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[Responsibilities_27]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[docker_engine.py_2]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[docker_engine.py_1]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
 
 ## Live Query (requires Dataview plugin)
 

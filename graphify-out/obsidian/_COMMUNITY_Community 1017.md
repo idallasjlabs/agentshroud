@@ -1,20 +1,22 @@
 ---
 type: community
+cohesion: 0.29
 members: 7
 ---
 
 # Community 1017
 
+**Cohesion:** 0.29 - loosely connected
 **Members:** 7 nodes
 
 ## Members
-- [[Deployment Matrix  (Direct to Prod)_1]] - document - docker/config/hermes/skills/i-cicd/SKILL.md
-- [[GitHub Actions Best Practices_1]] - document - docker/config/hermes/skills/i-cicd/SKILL.md
-- [[Quality Gates  (execution order)_1]] - document - docker/config/hermes/skills/i-cicd/SKILL.md
-- [[Review Flags  (block the merge)_1]] - document - docker/config/hermes/skills/i-cicd/SKILL.md
-- [[Role_45]] - document - docker/config/hermes/skills/i-cicd/SKILL.md
-- [[SKILL_78]] - document - docker/config/hermes/skills/i-cicd/SKILL.md
-- [[Skill CICD Pipeline Advisor (CICD)_1]] - document - docker/config/hermes/skills/i-cicd/SKILL.md
+- [[AgentShroud Bot Capabilities]] - document - docker/bot-capabilities.md
+- [[Option 1 — Professional (email, formal)]] - document - docker/bot-capabilities.md
+- [[Option 2 — Compact (Telegram, Slack — default)]] - document - docker/bot-capabilities.md
+- [[Option 3 — Full Collaborator Notice (first contact only)]] - document - docker/bot-capabilities.md
+- [[Rules_9]] - document - docker/bot-capabilities.md
+- [[Trademark Statements]] - document - docker/bot-capabilities.md
+- [[Which statement to use]] - document - docker/bot-capabilities.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,7 +26,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 848]]
+- 1 edge to [[_COMMUNITY_Community 1171]]
+- 1 edge to [[_COMMUNITY_Community 744]]
+- 1 edge to [[_COMMUNITY_Community 743]]
 
 ## Top bridge nodes
-- [[Skill CICD Pipeline Advisor (CICD)_1]] - degree 7, connects to 1 community
+- [[AgentShroud Bot Capabilities]] - degree 4, connects to 3 communities

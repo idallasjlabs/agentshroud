@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-sav/SKILL.md"
 type: "document"
-community: "Community 1260"
+community: "Community 1312"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1260
+  - community/Community_1312
 ---
 
 # System Audit Vault (SAV)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[System Audit Vault README]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1260
+#graphify/document #graphify/EXTRACTED #community/Community_1312

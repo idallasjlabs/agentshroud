@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "rationale"
-community: "Community 870"
+community: "PII Sanitizer & E2E Tests"
 location: "L172"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_870
+  - community/PII_Sanitizer__E2E_Tests
 ---
 
 # Detect and redact PII from content          Args:             content: Text to s
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.sanitize()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_870
+#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer__E2E_Tests

@@ -1,46 +1,48 @@
 ---
 type: community
+cohesion: 0.09
 members: 33
 ---
 
 # Community 225
 
+**Cohesion:** 0.09 - loosely connected
 **Members:** 33 nodes
 
 ## Members
-- [[Access Denied]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Token expired (SSO)]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Unable to locate credentials]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[AWS Profile Basics]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[AWS SSO Configuration]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Best Practices_1]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Configuration Files]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Configure New Profile]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Default Profile vs Named Profiles]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Initial SSO Setup]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Login to SSO]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[MCP Not Using Profile]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[MCP-Specific]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Method 1 Set Environment Variable (Session)]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Method 2 Set Permanently (Shell Config)]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Method 3 Configure in .mcp.json]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Multi-Account AWS Access]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Option 1 Interactive Configuration]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Option 2 Manual Configuration]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Organization]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Quick Reference]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Related Skills_19]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Role_17]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[SKILL_32]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Scenario Development → Production]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Security_1]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Switch AWS Profile for MCP]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Troubleshooting_3]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Use SSO Profile with MCP]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Using AssumeRole for Cross-Account Access]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[What is an AWS Profile]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[When to Invoke_1]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[.block_credentials()_2]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[.filter_xml_blocks()_2]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[.sanitize()_4]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[.test_cleanup_keeps_fresh_agents()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[.test_cleanup_removes_stale_agents()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[.test_cleanup_tolerates_missing_file()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[.test_cleanup_unlinks_existing_and_clears_registry()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[.test_disabled_when_threshold_zero()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[.test_get_resource_guard_is_lazy_singleton()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[.test_get_usage_stats_for_agent()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[.test_get_usage_stats_system_wide()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[.test_passes_with_sufficient_headroom()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[.test_register_blocks_over_limit()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[.test_register_under_limit()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[.test_rejects_insufficient_headroom()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[.test_start_request_tracking_records_baseline()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[.test_start_request_tracking_survives_psutil_error()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[Configuration for resource limits.]] - rationale - gateway/security/resource_guard.py
+- [[Get the global resource guard instance, creating it lazily on first call.]] - rationale - gateway/security/resource_guard.py
+- [[LLMProxy_2]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[Raised when a local-model call is rejected because estimated VRAM usage     woul]] - rationale - gateway/security/resource_guard.py
+- [[ResourceLimits]] - code - gateway/security/resource_guard.py
+- [[TestExpiredUsageCleanup]] - code - gateway/tests/test_resource_guard_limits.py
+- [[TestGlobalAccessor]] - code - gateway/tests/test_resource_guard_limits.py
+- [[TestTempFiles]] - code - gateway/tests/test_resource_guard_limits.py
+- [[TestUsageStatsAndTracking]] - code - gateway/tests/test_resource_guard_limits.py
+- [[TestVramHeadroom]] - code - gateway/tests/test_resource_guard_limits.py
+- [[VRAMHeadroomError]] - code - gateway/security/resource_guard.py
+- [[_FakeSanitizer_1]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[get_resource_guard()]] - code - gateway/security/resource_guard.py
+- [[guard()_3]] - code - gateway/tests/test_resource_guard_limits.py
+- [[resource_guard.py]] - code - gateway/security/resource_guard.py
+- [[test_resource_guard_limits.py]] - code - gateway/tests/test_resource_guard_limits.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -50,8 +52,24 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 317]]
-- 1 edge to [[_COMMUNITY_Community 372]]
+- 23 edges to [[_COMMUNITY_Community 88]]
+- 12 edges to [[_COMMUNITY_Security Audit & Drift Detection]]
+- 7 edges to [[_COMMUNITY_Community 807]]
+- 6 edges to [[_COMMUNITY_Community 54]]
+- 4 edges to [[_COMMUNITY_Community 351]]
+- 3 edges to [[_COMMUNITY_Community 918]]
+- 2 edges to [[_COMMUNITY_Community 83]]
+- 2 edges to [[_COMMUNITY_Community 850]]
+- 1 edge to [[_COMMUNITY_Community 165]]
+- 1 edge to [[_COMMUNITY_Ingest API & Approval Routes]]
+- 1 edge to [[_COMMUNITY_Community 95]]
+- 1 edge to [[_COMMUNITY_Community 347]]
+- 1 edge to [[_COMMUNITY_Community 97]]
+- 1 edge to [[_COMMUNITY_Community 18]]
 
 ## Top bridge nodes
-- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - degree 15, connects to 2 communities
+- [[ResourceLimits]] - degree 49, connects to 9 communities
+- [[resource_guard.py]] - degree 10, connects to 5 communities
+- [[VRAMHeadroomError]] - degree 15, connects to 4 communities
+- [[_FakeSanitizer_1]] - degree 9, connects to 3 communities
+- [[LLMProxy_2]] - degree 5, connects to 3 communities

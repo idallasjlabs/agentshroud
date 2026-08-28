@@ -1,11 +1,11 @@
 ---
 source_file: "docs/compliance/iec-62443-matrix.md"
 type: "concept"
-community: "Community 75"
+community: "Community 19"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_75
+  - community/Community_19
 ---
 
 # FR2: Use Control
@@ -20,4 +20,4 @@ tags:
 - [[rbac.py]] - `references` [EXTRACTED]
 - [[tool_acl.py]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_75
+#graphify/concept #graphify/EXTRACTED #community/Community_19

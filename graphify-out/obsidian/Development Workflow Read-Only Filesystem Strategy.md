@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md"
 type: "document"
-community: "Community 185"
+community: "Community 190"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_185
+  - community/Community_190
 ---
 
 # Development Workflow: Read-Only Filesystem Strategy
@@ -21,10 +21,10 @@ tags:
 - [[Emergency Rollback]] - `contains` [EXTRACTED]
 - [[Planned Features Write Requirements]] - `contains` [EXTRACTED]
 - [[Read-Only Compatibility Checklist]] - `contains` [EXTRACTED]
-- [[Summary_39]] - `contains` [EXTRACTED]
+- [[Summary_17]] - `contains` [EXTRACTED]
 - [[Testing Procedure Read-Only Lockdown]] - `contains` [EXTRACTED]
 - [[The Challenge]] - `contains` [EXTRACTED]
 - [[Three-Phase Approach]] - `contains` [EXTRACTED]
 - [[Write Paths Inventory]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_185
+#graphify/document #graphify/EXTRACTED #community/Community_190

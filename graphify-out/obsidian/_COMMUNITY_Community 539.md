@@ -1,30 +1,32 @@
 ---
 type: community
+cohesion: 0.18
 members: 17
 ---
 
 # Community 539
 
+**Cohesion:** 0.18 - loosely connected
 **Members:** 17 nodes
 
 ## Members
-- [[Configuration  Environment Variables_28]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
-- [[Function Details_47]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
-- [[Key Classes  Functions_50]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
-- [[Purpose_168]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
-- [[Related_54]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
-- [[Responsibilities_52]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
-- [[SessionManager.__init__(max_session_age, max_sessions_per_ip, rate_limit_window)]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
-- [[SessionManager.cleanup_expired()]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
-- [[SessionManager.create_session(ip, user_agent)]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
-- [[SessionManager.destroy_session(session_id)]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
-- [[SessionManager.register_event_source(session_id, source)]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
-- [[SessionManager.rotate_session(old_session_id, ip, user_agent)]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
-- [[SessionManager.validate_event(session_id, source, event)]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
-- [[SessionManager.validate_session(session_id, ip, user_agent)]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
-- [[Threat Model_23]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
-- [[session_security.py_2]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
-- [[session_security.py_1]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[.test_clean_report()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_critical_on_critical_findings()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_not_run_when_no_report()_1]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_prefix_filter()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_returns_most_recent_file()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_returns_none_for_empty_directory()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_returns_none_for_missing_directory()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_returns_none_on_invalid_json()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_returns_none_when_all_files_empty()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_skips_empty_files_returns_next_valid()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_warning_on_failures()]] - code - gateway/tests/test_scanner_integration.py
+- [[Load the most recent JSON report file from a directory.      Args         direc]] - rationale - gateway/security/scanner_integration.py
+- [[Return latest OpenSCAP compliance summary from saved reports.]] - rationale - gateway/security/scanner_integration.py
+- [[TestGetOpenscapSummary]] - code - gateway/tests/test_scanner_integration.py
+- [[TestLoadLatestJson]] - code - gateway/tests/test_scanner_integration.py
+- [[_load_latest_json()]] - code - gateway/security/scanner_integration.py
+- [[get_openscap_summary()]] - code - gateway/security/scanner_integration.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,3 +34,19 @@ members: 17
 TABLE source_file, type FROM #community/Community_539
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 4 edges to [[_COMMUNITY_Community 187]]
+- 3 edges to [[_COMMUNITY_Community 72]]
+- 3 edges to [[_COMMUNITY_Community 196]]
+- 1 edge to [[_COMMUNITY_Community 983]]
+- 1 edge to [[_COMMUNITY_Community 863]]
+- 1 edge to [[_COMMUNITY_Community 201]]
+- 1 edge to [[_COMMUNITY_Community 399]]
+
+## Top bridge nodes
+- [[_load_latest_json()]] - degree 15, connects to 5 communities
+- [[get_openscap_summary()]] - degree 11, connects to 4 communities
+- [[TestLoadLatestJson]] - degree 8, connects to 1 community
+- [[TestGetOpenscapSummary]] - degree 5, connects to 1 community
+- [[.test_not_run_when_no_report()_1]] - degree 3, connects to 1 community

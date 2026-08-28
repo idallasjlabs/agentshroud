@@ -1,46 +1,49 @@
 ---
 type: community
-members: 33
+cohesion: 0.06
+members: 34
 ---
 
 # Community 219
 
-**Members:** 33 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 34 nodes
 
 ## Members
-- [[.llm_settingsmcp-serversatlassianagentshroudmcp-atlassian.sh]] - code - .mcp.json
-- [[.llm_settingsmcp-serversatlassianfluencemcp-atlassian.sh]] - code - .mcp.json
-- [[.llm_settingsmcp-serversatlassianidallasjmcp-atlassian.sh]] - code - .mcp.json
-- [[.llm_settingsmcp-serversdevonthinkmcp-devonthink.sh]] - code - .mcp.json
-- [[.llm_settingsmcp-serversgithubagentshroudgithub-mcp-wrapper.sh]] - code - .mcp.json
-- [[.llm_settingsmcp-serversgithubdefaultgithub-mcp-wrapper.sh]] - code - .mcp.json
-- [[.llm_settingsmcp-serversgithubfluencegithub-mcp-wrapper.sh]] - code - .mcp.json
-- [[.llm_settingsmcp-serversgithubidallasjgithub-mcp-wrapper.sh]] - code - .mcp.json
-- [[.llm_settingsmcp-servershome-assistantmcp-ha.sh]] - code - .mcp.json
-- [[.mcp.json]] - code - .mcp.json
-- [[Usersijefferson.admin.nvmversionsnodev20.20.2binnpx]] - code - .mcp.json
-- [[opthomebrewbinuvx]] - code - .mcp.json
-- [[AWS_PROFILE]] - code - .mcp.json
-- [[AWS_REGION]] - code - .mcp.json
-- [[FASTMCP_LOG_LEVEL]] - code - .mcp.json
-- [[FASTMCP_NO_BANNER]] - code - .mcp.json
-- [[PATH]] - code - .mcp.json
-- [[atlassian-agentshroud]] - code - .mcp.json
-- [[atlassian-fluence]] - code - .mcp.json
-- [[atlassian-idallasj]] - code - .mcp.json
-- [[autoOpenFile]] - code - .mcp.json
-- [[awslabs.aws-api-mcp-server]] - code - .mcp.json
-- [[devonthink]] - code - .mcp.json
-- [[github]] - code - .mcp.json
-- [[github-agentshroud]] - code - .mcp.json
-- [[github-fluence]] - code - .mcp.json
-- [[github-idallasj]] - code - .mcp.json
-- [[home-assistant]] - code - .mcp.json
-- [[outputPath]] - code - .mcp.json
-- [[safari]] - code - .mcp.json
-- [[safari-mcp]] - code - .mcp.json
-- [[xmind]] - code - .mcp.json
-- [[xmind-generator-mcp]] - code - .mcp.json
+- [[Bot was blocked by user Error]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[IMAP not enabled Error]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[Invalid credentials Error]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[1. Backup Configuration]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[2. Regular Health Checks]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[3. Auto-Restart on Reboot]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[4. Monitor Logs]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[5. Test Regularly]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[Bot Not Responding]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[Bot Responds Slowly]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[Documentation Created]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[Gmail Not Detecting New Emails]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[Gmail Not Receiving Emails from Bot]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[If Bot Doesn't Respond]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[Monthly Checklist]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[Part 1 Test Telegram Bot]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[Part 2 Set Up Gmail Integration]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[Part 3 Ensure Functionality Remains]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[Part 4 Gmail Troubleshooting]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[Part 5 Telegram Troubleshooting]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[Part 6 Complete System Test]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[Part 7 Maintaining Functionality]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[Prerequisites_11]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[Quick Start Commands]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[Step 1 Enable IMAP in Gmail]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[Step 2 Create Gmail App Password]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[Step 3 Add Gmail to OpenClaw]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[Step 4 Verify Gmail Channel]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[Step 5 Test Gmail]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[Summary_20]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[Telegram & Gmail Integration Guide]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[Test Now]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[When Upgrading macOS]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
+- [[✅ Current Status]] - document - docs/setup/TELEGRAM_GMAIL_SETUP.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -48,3 +51,9 @@ members: 33
 TABLE source_file, type FROM #community/Community_219
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 92]]
+
+## Top bridge nodes
+- [[Telegram & Gmail Integration Guide]] - degree 10, connects to 1 community

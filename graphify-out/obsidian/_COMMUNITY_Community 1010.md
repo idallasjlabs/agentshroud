@@ -1,20 +1,22 @@
 ---
 type: community
+cohesion: 0.29
 members: 7
 ---
 
 # Community 1010
 
+**Cohesion:** 0.29 - loosely connected
 **Members:** 7 nodes
 
 ## Members
-- [[1. GitHub MCP]] - document - .agents/skills/i-mcpm/SKILL.md
-- [[2. Atlassian MCP (Jira + Confluence)]] - document - .agents/skills/i-mcpm/SKILL.md
-- [[3. AWS API MCP]] - document - .agents/skills/i-mcpm/SKILL.md
-- [[Available MCP Servers]] - document - .agents/skills/i-mcpm/SKILL.md
-- [[Role_19]] - document - .agents/skills/i-mcpm/SKILL.md
-- [[SKILL_34]] - document - .agents/skills/i-mcpm/SKILL.md
-- [[Skill MCP Tools Usage (MCP-TOOLS)]] - document - .agents/skills/i-mcpm/SKILL.md
+- [[Feedback Guidelines]] - document - .agents/skills/i-cr/SKILL.md
+- [[Output Format_2]] - document - .agents/skills/i-cr/SKILL.md
+- [[Production-Specific Review Checks]] - document - .agents/skills/i-cr/SKILL.md
+- [[Review Principles]] - document - .agents/skills/i-cr/SKILL.md
+- [[Role_9]] - document - .agents/skills/i-cr/SKILL.md
+- [[SKILL_15]] - document - .agents/skills/i-cr/SKILL.md
+- [[Skill Code Review (CR)]] - document - .agents/skills/i-cr/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,9 +24,3 @@ members: 7
 TABLE source_file, type FROM #community/Community_1010
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 553]]
-
-## Top bridge nodes
-- [[Skill MCP Tools Usage (MCP-TOOLS)]] - degree 5, connects to 1 community

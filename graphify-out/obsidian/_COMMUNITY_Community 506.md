@@ -1,31 +1,33 @@
 ---
 type: community
+cohesion: 0.11
 members: 18
 ---
 
 # Community 506
 
+**Cohesion:** 0.11 - loosely connected
 **Members:** 18 nodes
 
 ## Members
-- [[Access Control (7)]] - document - docs/security/security-inventory.md
-- [[Access Control Matrix]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Audit Logging_3]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Behavior Examples]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Credential Security Policy]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Emergency Override]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[FAQ]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Implementation Status]] - document - browser-extension/README.md
-- [[Implementation Steps]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Recommended Configuration (All 4 Options Combined)]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Security Requirement]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Step 1 Update Gateway to Block Credentials in Telegram]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Step 2 Add Command Restrictions]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Step 3 Update agentshroud.yaml]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Step 4 Test the Protection]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Summary_38]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[✅ What SHOULD Happen]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[❌ What Should NOT Happen (Blocked)]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
+- [[Configuration  Environment Variables_27]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
+- [[Default Limits]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
+- [[Function Details_46]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
+- [[Key Classes  Functions_49]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
+- [[Purpose_167]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
+- [[Related_53]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
+- [[ResourceGuard.__init__(limits)]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
+- [[ResourceGuard.add_alert_callback(callback)]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
+- [[ResourceGuard.check_cpu_limit(agent_id)  check_memory_limit(agent_id)  check_disk_write_limit(agent_id)]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
+- [[ResourceGuard.check_resource(agent_id, resource_type, amount)]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
+- [[ResourceGuard.cleanup_temp_files(agent_id)]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
+- [[ResourceGuard.get_usage_stats(agent_id)]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
+- [[ResourceGuard.register_temp_file(agent_id, file_path)]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
+- [[ResourceGuard.start_request_tracking(agent_id)]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
+- [[Responsibilities_51]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
+- [[Threat Model_22]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
+- [[resource_guard.py_2]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
+- [[resource_guard.py_1]] - document - docs/vault/02 - Modules/Security Modules/resource_guard.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,14 +35,3 @@ members: 18
 TABLE source_file, type FROM #community/Community_506
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 849]]
-- 1 edge to [[_COMMUNITY_Community 556]]
-- 1 edge to [[_COMMUNITY_Community 429]]
-- 1 edge to [[_COMMUNITY_Community 423]]
-
-## Top bridge nodes
-- [[Implementation Status]] - degree 7, connects to 2 communities
-- [[Credential Security Policy]] - degree 13, connects to 1 community
-- [[Access Control (7)]] - degree 2, connects to 1 community

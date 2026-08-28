@@ -1,28 +1,30 @@
 ---
 type: community
+cohesion: 0.13
 members: 15
 ---
 
 # Community 609
 
+**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
-- [[Apple Reminders CLI (remindctl)]] - document - skills/openclaw/apple-reminders/SKILL.md
-- [[Clawdbot cron tool as reminder alternative]] - rationale - skills/openclaw/apple-reminders/SKILL.md
-- [[Common Commands]] - document - skills/openclaw/apple-reminders/SKILL.md
-- [[CompleteDelete]] - document - skills/openclaw/apple-reminders/SKILL.md
-- [[Create Reminders]] - document - skills/openclaw/apple-reminders/SKILL.md
-- [[Date Formats]] - document - skills/openclaw/apple-reminders/SKILL.md
-- [[Example Clarifying User Intent]] - document - skills/openclaw/apple-reminders/SKILL.md
-- [[Manage Lists]] - document - skills/openclaw/apple-reminders/SKILL.md
-- [[Output Formats]] - document - skills/openclaw/apple-reminders/SKILL.md
-- [[SKILL_196]] - document - skills/openclaw/apple-reminders/SKILL.md
-- [[Setup_5]] - document - skills/openclaw/apple-reminders/SKILL.md
-- [[View Reminders]] - document - skills/openclaw/apple-reminders/SKILL.md
-- [[When NOT to Use]] - document - skills/openclaw/apple-reminders/SKILL.md
-- [[When to Use_1]] - document - skills/openclaw/apple-reminders/SKILL.md
-- [[remindctl CLI]] - concept - skills/openclaw/apple-reminders/SKILL.md
+- [[AgentShroud Blue Team Security Auditor_1]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[Audit Procedure_1]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[Critical Rules_5]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[Heat Map Legend_1]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[Infrastructure_2]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[Loss Categories_1]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[Methodology_1]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[Output Format_22]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[Phase 1 Code-Level Module Audit_1]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[Phase 2 Heat Map Reconstruction_1]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[Phase 3 Integration Gap Analysis_1]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[Phase 4 Configuration Audit_1]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[Phase 5 Steve Hay's Specific Probes_1]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[SKILL_114]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
+- [[Unsafe Control Actions (UCAs)_1]] - document - docker/config/hermes/skills/i-sec-defense/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

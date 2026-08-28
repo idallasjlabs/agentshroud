@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-hermes/SKILL.md"
 type: "document"
-community: "Community 943"
+community: "Community 941"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_943
+  - community/Community_941
 ---
 
 # Hermes — Reference Verifier
@@ -20,4 +20,4 @@ tags:
 - [[SKILL_24]] - `contains` [EXTRACTED]
 - [[System Prompt_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_943
+#graphify/document #graphify/EXTRACTED #community/Community_941

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "Community 734"
+community: "Community 732"
 location: "L492"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_734
+  - community/Community_732
 ---
 
 # TestCanvasAuthHelpers
@@ -27,4 +27,4 @@ tags:
 - [[DNSForwarderProtocol]] - `uses` [INFERRED]
 - [[test_dns_canvas_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_734
+#graphify/code #graphify/EXTRACTED #community/Community_732

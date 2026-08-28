@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Findings]] - `contains` [EXTRACTED]
 - [[Remediation Plan]] - `contains` [EXTRACTED]
-- [[Summary_36]] - `contains` [EXTRACTED]
+- [[Summary_14]] - `contains` [EXTRACTED]
 - [[blue-team-assessment-v0.8.0]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Community_386

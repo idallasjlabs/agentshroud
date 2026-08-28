@@ -1,21 +1,23 @@
 ---
 type: community
+cohesion: 0.29
 members: 8
 ---
 
 # Community 950
 
+**Cohesion:** 0.29 - loosely connected
 **Members:** 8 nodes
 
 ## Members
-- [[1. EU AI Act — high-risk operational requirements]] - document - docs/compliance/eu-ai-act-nist-matrix.md
-- [[2. NIST AI RMF 1.0 mapping]] - document - docs/compliance/eu-ai-act-nist-matrix.md
-- [[3. NIST AI Agent Standards Initiative (2026) — identity & authorization themes]] - document - docs/compliance/eu-ai-act-nist-matrix.md
-- [[4. Honest gap list (with tracking)]] - document - docs/compliance/eu-ai-act-nist-matrix.md
-- [[5. Evidence trail — where an auditor looks]] - document - docs/compliance/eu-ai-act-nist-matrix.md
-- [[EU AI Act & NIST Alignment Matrix — AgentShroud™]] - document - docs/compliance/eu-ai-act-nist-matrix.md
-- [[Positioning]] - document - docs/compliance/eu-ai-act-nist-matrix.md
-- [[eu-ai-act-nist-matrix]] - document - docs/compliance/eu-ai-act-nist-matrix.md
+- [[AgentShroud Recovery Plan v0.4.0 (Partial)]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
+- [[AgentShroud Session Issue Register — 2026-03-14]] - document - docs/planning/reviews/session-issue-register-2026-03-14.md
+- [[Issue Register]] - document - docs/planning/reviews/session-issue-register-2026-03-14.md
+- [[Linked Artifacts]] - document - docs/planning/reviews/session-issue-register-2026-03-14.md
+- [[Recommended Next Closure Sequence]] - document - docs/planning/reviews/session-issue-register-2026-03-14.md
+- [[Summary_11]] - document - docs/planning/reviews/session-issue-register-2026-03-14.md
+- [[XMLFunction-Call Leak Filter]] - concept - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
+- [[session-issue-register-2026-03-14]] - document - docs/planning/reviews/session-issue-register-2026-03-14.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,3 +25,10 @@ members: 8
 TABLE source_file, type FROM #community/Community_950
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 3 edges to [[_COMMUNITY_Community 185]]
+
+## Top bridge nodes
+- [[AgentShroud Session Issue Register — 2026-03-14]] - degree 8, connects to 1 community
+- [[XMLFunction-Call Leak Filter]] - degree 4, connects to 1 community

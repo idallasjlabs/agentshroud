@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_turn_tracker.py"
 type: "rationale"
-community: "Community 1842"
+community: "Community 19"
 location: "L137"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1842
+  - community/Community_19
 ---
 
 # Test detection of system information queries.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_system_info_detection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1842
+#graphify/rationale #graphify/EXTRACTED #community/Community_19

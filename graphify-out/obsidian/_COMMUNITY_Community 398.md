@@ -1,35 +1,37 @@
 ---
 type: community
+cohesion: 0.09
 members: 22
 ---
 
 # Community 398
 
+**Cohesion:** 0.09 - loosely connected
 **Members:** 22 nodes
 
 ## Members
-- [[.test_allowed_path_different_item()]] - code - gateway/tests/test_op_proxy.py
-- [[.test_allowed_path_passes()]] - code - gateway/tests/test_op_proxy.py
-- [[.test_allowed_path_without_space_variant()]] - code - gateway/tests/test_op_proxy.py
-- [[.test_atlassian_token_allowed()]] - code - gateway/tests/test_op_proxy.py
-- [[.test_disallowed_vault_blocked()]] - code - gateway/tests/test_op_proxy.py
-- [[.test_disallowed_vault_returns_403()]] - code - gateway/tests/test_op_proxy.py
-- [[.test_empty_reference_blocked()]] - code - gateway/tests/test_op_proxy.py
-- [[.test_malformed_reference_returns_422()]] - code - gateway/tests/test_op_proxy.py
-- [[.test_missing_op_prefix_blocked()]] - code - gateway/tests/test_op_proxy.py
-- [[.test_op_subprocess_failure_returns_502()]] - code - gateway/tests/test_op_proxy.py
-- [[.test_path_traversal_blocked()]] - code - gateway/tests/test_op_proxy.py
-- [[.test_path_traversal_returns_403()]] - code - gateway/tests/test_op_proxy.py
-- [[.test_requires_auth()_4]] - code - gateway/tests/test_op_proxy.py
-- [[.test_valid_reference_returns_value()]] - code - gateway/tests/test_op_proxy.py
-- [[Endpoint returns 401 without auth override._2]] - rationale - gateway/tests/test_op_proxy.py
-- [[Return True if the op reference matches an allowed path pattern.]] - rationale - gateway/ingest_api/main.py
-- [[SCRUM-81 Hermes weekly Jira review needs tokenemaildomain fields.]] - rationale - gateway/tests/test_op_proxy.py
-- [[TestIsOpReferenceAllowed]] - code - gateway/tests/test_op_proxy.py
-- [[TestOpProxyEndpoint]] - code - gateway/tests/test_op_proxy.py
-- [[_is_op_reference_allowed()]] - code - gateway/ingest_api/main.py
-- [[client()_12]] - code - gateway/tests/test_op_proxy.py
-- [[test_op_proxy.py]] - code - gateway/tests/test_op_proxy.py
+- [[ASCII Art (fallback — no renderer available)_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[Anti-Patterns to Flag_20]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[Architecture (C4  block) — System boundaries and components_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[Brand Theme Block (Mermaid)_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[Core Discipline Understand → Diagram → Validate → Export_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[Data Flow — How data moves and transforms_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[Dependencies_14]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[Diagram Types and Data Lakehouse Examples_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[ER Diagram — Table relationships and control schema_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[File and Directory Conventions_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[Gantt — Daily pipeline schedule_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[Online renderer_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[Render locally with mmdc_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[Rendering and Export_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[Role_107]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[Rules_23]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[SKILL_184]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[Sequence — Order of operations between systems_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[Skill Technical Illustrator (TI)_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[State Diagram — Job or process lifecycle_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[Validate syntax without exporting_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[Validation Checklist_7]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,10 +39,3 @@ members: 22
 TABLE source_file, type FROM #community/Community_398
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 9]]
-
-## Top bridge nodes
-- [[_is_op_reference_allowed()]] - degree 12, connects to 1 community
-- [[test_op_proxy.py]] - degree 6, connects to 1 community

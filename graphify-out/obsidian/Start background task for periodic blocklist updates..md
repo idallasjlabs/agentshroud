@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/dns_blocklist.py"
 type: "rationale"
-community: "Community 670"
+community: "Community 664"
 location: "L261"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_670
+  - community/Community_664
 ---
 
 # Start background task for periodic blocklist updates.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.start_periodic_updates()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_670
+#graphify/rationale #graphify/EXTRACTED #community/Community_664

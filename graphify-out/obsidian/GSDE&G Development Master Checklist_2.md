@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mc/SKILL.md"
 type: "document"
-community: "Community 751"
+community: "Community 750"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_751
+  - community/Community_750
 ---
 
 # GSDE&G Development Master Checklist
@@ -24,4 +24,4 @@ tags:
 - [[SKILL_157]] - `contains` [EXTRACTED]
 - [[Skill Index_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_751
+#graphify/document #graphify/EXTRACTED #community/Community_750

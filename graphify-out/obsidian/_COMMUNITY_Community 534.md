@@ -1,30 +1,32 @@
 ---
 type: community
+cohesion: 0.12
 members: 17
 ---
 
 # Community 534
 
+**Cohesion:** 0.12 - loosely connected
 **Members:** 17 nodes
 
 ## Members
-- [[06-outbound-info-filter]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Constraints_9]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Evidence_6]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Implement gateway-level outbound information filtering module]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Problem_9]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Relationship to chunk 00-information-disclosure]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Remediation_7]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Root Cause_7]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Severity_9]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Step 1 Create the Outbound Information Filter module]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Step 2 Define deny-list patterns]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Step 3 Implement the filter engine]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Step 4 Configure per-trust-level disclosure rules]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Step 5 Add response classification for high-density matches]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Step 6 Integrate with the PII Sanitizer pipeline]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Step 7 Add the module to gateway configuration]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Verification_8]] - document - docs/planning/redteam/06-outbound-info-filter.md
+- [[Configuration_11]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[Environment Variables_8]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[Error Handling_7]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[Function Details_30]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[Key Classes  Functions_33]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[Mode Enforce vs Monitor_3]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[Purpose_151]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[Related_37]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[Responsibilities_35]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[Threat Model_6]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[clamav_scanner.py_2]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[clamav_scanner.py_1]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[generate_summary(report)]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[parse_clamscan_output(output, returncode)]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[run_clamscan(target, recursive, timeout, clamscan_bin, exclude_patterns)]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[save_report(report, log_dir)]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[update_virus_db(freshclam_bin, timeout)]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
 
 ## Live Query (requires Dataview plugin)
 

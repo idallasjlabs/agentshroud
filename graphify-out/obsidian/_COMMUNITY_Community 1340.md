@@ -1,18 +1,19 @@
 ---
 type: community
-members: 5
+cohesion: 0.83
+members: 4
 ---
 
 # Community 1340
 
-**Members:** 5 nodes
+**Cohesion:** 0.83 - tightly connected
+**Members:** 4 nodes
 
 ## Members
-- [[.test_direct_field()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_metadata_fallback()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_missing_returns_none()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_session_context_priority()]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestExtractUserId]] - code - gateway/tests/test_middleware_coverage.py
+- [[check_fail()]] - code - docker/scripts/health-check.sh
+- [[check_pass()]] - code - docker/scripts/health-check.sh
+- [[health-check.sh]] - code - docker/scripts/health-check.sh
+- [[health-check.sh script]] - code - docker/scripts/health-check.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,12 +21,3 @@ members: 5
 TABLE source_file, type FROM #community/Community_1340
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 6]]
-- 1 edge to [[_COMMUNITY_Community 1]]
-- 1 edge to [[_COMMUNITY_Community 174]]
-- 1 edge to [[_COMMUNITY_Community 426]]
-
-## Top bridge nodes
-- [[TestExtractUserId]] - degree 9, connects to 4 communities

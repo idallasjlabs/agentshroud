@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_all_modules_enforce.py"
 type: "rationale"
-community: "Community 6"
+community: "Community 157"
 location: "L38"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/Community_157
 ---
 
 # Verify SecurityConfig and SecurityModuleConfig default to enforce.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSecurityConfigDefaults]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_6
+#graphify/rationale #graphify/EXTRACTED #community/Community_157

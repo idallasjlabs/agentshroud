@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/killswitch_monitor.py"
 type: "code"
-community: "Community 13"
+community: "Community 41"
 location: "L497"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_13
+  - community/Community_41
 ---
 
 # deque
@@ -21,4 +21,4 @@ tags:
 - [[.analyze_message()]] - `calls` [INFERRED]
 - [[KillSwitchConfig]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_13
+#graphify/code #graphify/INFERRED #community/Community_41

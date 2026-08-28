@@ -1,24 +1,17 @@
 ---
-source_file: "gateway/soc/router.py"
+source_file: "gateway/ingest_api/routes/health.py"
 type: "code"
-community: "Community 18"
-location: "L2717"
+community: "Ingest API & Approval Routes"
+location: "L18"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_18
+  - graphify/EXTRACTED
+  - community/Ingest_API__Approval_Routes
 ---
 
 # Request
 
 ## Connections
-- [[AuditLogEntry]] - `uses` [INFERRED]
-- [[AuditResult]] - `uses` [INFERRED]
-- [[ContributorManager]] - `uses` [INFERRED]
-- [[SCLCaller]] - `uses` [INFERRED]
-- [[SCLConfirmationRequired]] - `uses` [INFERRED]
-- [[SCLInterface]] - `uses` [INFERRED]
-- [[ServiceManager]] - `uses` [INFERRED]
-- [[soc_dashboard()]] - `references` [EXTRACTED]
+- [[auth_dep()_4]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_18
+#graphify/code #graphify/EXTRACTED #community/Ingest_API__Approval_Routes

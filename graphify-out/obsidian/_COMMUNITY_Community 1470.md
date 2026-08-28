@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 1.00
 members: 2
 ---
 
 # Community 1470
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[SKILL_182]] - document - docker/config/openclaw/skills/i-sre/SKILL.md
-- [[Skill sre_2]] - document - docker/config/openclaw/skills/i-sre/SKILL.md
+- [[i-security-reviewer_1]] - document - docker/config/openclaw/agents/i-security-reviewer.md
+- [[security-reviewer]] - document - docker/config/openclaw/agents/i-security-reviewer.md
 
 ## Live Query (requires Dataview plugin)
 

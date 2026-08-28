@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/mfa_guard.py"
 type: "code"
-community: "Community 69"
+community: "Community 63"
 location: "line:209"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_69
+  - community/Community_63
 ---
 
 # MFAGuard.verify()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[queue.py]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_69
+#graphify/code #graphify/EXTRACTED #community/Community_63

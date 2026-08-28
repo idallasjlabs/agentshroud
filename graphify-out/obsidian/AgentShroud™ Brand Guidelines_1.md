@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/workspace/BRAND.md"
 type: "document"
-community: "Community 168"
+community: "Community 146"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_168
+  - community/Community_146
 ---
 
 # AgentShroud™ Brand Guidelines
@@ -42,4 +42,4 @@ tags:
 - [[Voice & Tone_1]] - `references` [EXTRACTED]
 - [[Voice & Tone_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_168
+#graphify/document #graphify/EXTRACTED #community/Community_146

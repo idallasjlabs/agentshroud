@@ -1,20 +1,23 @@
 ---
 type: community
-members: 7
+cohesion: 0.25
+members: 8
 ---
 
 # Community 936
 
-**Members:** 7 nodes
+**Cohesion:** 0.25 - loosely connected
+**Members:** 8 nodes
 
 ## Members
-- [[.export_leakage_report()]] - code - gateway/security/env_guard.py
-- [[.get_leakage_summary()]] - code - gateway/security/env_guard.py
-- [[.monitor_environment_access()]] - code - gateway/security/env_guard.py
-- [[Any_39]] - code - gateway/security/env_guard.py
-- [[Export leakage findings to a report file.]] - rationale - gateway/security/env_guard.py
-- [[Get summary of all detected leakages.]] - rationale - gateway/security/env_guard.py
-- [[Monitor an agent's environment access attempts.          Args             agent]] - rationale - gateway/security/env_guard.py
+- [[Globally Denied Command]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
+- [[HTTP 403 — SSH Host Not Allowed]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
+- [[Related Notes_62]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
+- [[SSH Connection Timeout]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
+- [[SSH Key Not Found]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
+- [[SSH Proxy Errors_1]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
+- [[SSH Proxy Errors]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
+- [[Session Duration Exceeded]] - document - docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,9 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 14]]
+- 1 edge to [[_COMMUNITY_Community 230]]
 
 ## Top bridge nodes
-- [[.get_leakage_summary()]] - degree 4, connects to 1 community
-- [[.monitor_environment_access()]] - degree 3, connects to 1 community
-- [[.export_leakage_report()]] - degree 3, connects to 1 community
+- [[SSH Proxy Errors]] - degree 2, connects to 1 community

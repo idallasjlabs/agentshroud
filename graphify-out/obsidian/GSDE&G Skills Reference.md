@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md"
 type: "document"
-community: "Community 876"
+community: "Community 523"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_876
+  - community/Community_523
 ---
 
 # GSDE&G Skills Reference
@@ -17,11 +17,10 @@ tags:
 - [[GitHub Workflow Integration]] - `contains` [EXTRACTED]
 - [[Production Testing Guidelines]] - `contains` [EXTRACTED]
 - [[Quick Reference When to Use Each Skill]] - `contains` [EXTRACTED]
-- [[Related Documentation]] - `contains` [EXTRACTED]
 - [[SKILLS_GUIDE]] - `contains` [EXTRACTED]
 - [[Skill Directory Structure]] - `contains` [EXTRACTED]
 - [[Skill Invocation Examples]] - `contains` [EXTRACTED]
 - [[Skills by Category]] - `contains` [EXTRACTED]
 - [[📚 Created Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_876
+#graphify/document #graphify/EXTRACTED #community/Community_523

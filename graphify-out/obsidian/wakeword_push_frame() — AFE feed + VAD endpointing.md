@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/wakeword.c"
 type: "code"
-community: "Community 139"
+community: "Community 90"
 location: "line 276"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_139
+  - community/Community_90
 ---
 
 # wakeword_push_frame() — AFE feed + VAD endpointing
@@ -15,4 +15,4 @@ tags:
 - [[voice_task()]] - `calls` [EXTRACTED]
 - [[vt_remote_log()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_139
+#graphify/code #graphify/EXTRACTED #community/Community_90

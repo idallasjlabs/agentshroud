@@ -1,20 +1,22 @@
 ---
 type: community
+cohesion: 0.29
 members: 7
 ---
 
 # Community 1020
 
+**Cohesion:** 0.29 - loosely connected
 **Members:** 7 nodes
 
 ## Members
-- [[Deployment Matrix  (Direct to Prod)_2]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
-- [[GitHub Actions Best Practices_2]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
-- [[Quality Gates  (execution order)_2]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
-- [[Review Flags  (block the merge)_2]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
-- [[Role_81]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
-- [[SKILL_141]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
-- [[Skill CICD Pipeline Advisor (CICD)_2]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
+- [[A. `mac_app_catalog.json` — Machine-readable manifest_1]] - document - docker/config/hermes/skills/i-mac/SKILL.md
+- [[B. `mac_app_catalog.md` — Human-readable catalog_1]] - document - docker/config/hermes/skills/i-mac/SKILL.md
+- [[Discovery Strategy_1]] - document - docker/config/hermes/skills/i-mac/SKILL.md
+- [[Phase 2 — Deduplication & Normalization_1]] - document - docker/config/hermes/skills/i-mac/SKILL.md
+- [[Phase 3 — Categorization_1]] - document - docker/config/hermes/skills/i-mac/SKILL.md
+- [[Phase 4 — Enrichment_1]] - document - docker/config/hermes/skills/i-mac/SKILL.md
+- [[Phase 5 — Output Generation_1]] - document - docker/config/hermes/skills/i-mac/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,3 +24,10 @@ members: 7
 TABLE source_file, type FROM #community/Community_1020
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 390]]
+- 1 edge to [[_COMMUNITY_Community 794]]
+
+## Top bridge nodes
+- [[Discovery Strategy_1]] - degree 6, connects to 2 communities

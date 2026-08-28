@@ -1,32 +1,34 @@
 ---
 type: community
+cohesion: 0.11
 members: 19
 ---
 
 # Community 463
 
+**Cohesion:** 0.11 - loosely connected
 **Members:** 19 nodes
 
 ## Members
-- [[Any_78]] - code - skills/openclaw/model-usage/scripts/model_usage.py
-- [[ModelCost]] - code - skills/openclaw/model-usage/scripts/model_usage.py
-- [[aggregate_costs()]] - code - skills/openclaw/model-usage/scripts/model_usage.py
-- [[build_json_all()]] - code - skills/openclaw/model-usage/scripts/model_usage.py
-- [[build_json_current()]] - code - skills/openclaw/model-usage/scripts/model_usage.py
-- [[date]] - code - skills/openclaw/model-usage/scripts/model_usage.py
-- [[eprint()]] - code - skills/openclaw/model-usage/scripts/model_usage.py
-- [[filter_by_days()]] - code - skills/openclaw/model-usage/scripts/model_usage.py
-- [[latest_day_cost()]] - code - skills/openclaw/model-usage/scripts/model_usage.py
-- [[load_payload()]] - code - skills/openclaw/model-usage/scripts/model_usage.py
-- [[main()_27]] - code - skills/openclaw/model-usage/scripts/model_usage.py
-- [[model_usage.py]] - code - skills/openclaw/model-usage/scripts/model_usage.py
-- [[parse_daily_entries()]] - code - skills/openclaw/model-usage/scripts/model_usage.py
-- [[parse_date()]] - code - skills/openclaw/model-usage/scripts/model_usage.py
-- [[pick_current_model()]] - code - skills/openclaw/model-usage/scripts/model_usage.py
-- [[render_text_all()]] - code - skills/openclaw/model-usage/scripts/model_usage.py
-- [[render_text_current()]] - code - skills/openclaw/model-usage/scripts/model_usage.py
-- [[run_codexbar_cost()]] - code - skills/openclaw/model-usage/scripts/model_usage.py
-- [[usd()]] - code - skills/openclaw/model-usage/scripts/model_usage.py
+- [[Assigning Work]] - document - .agents/skills/i-pm/SKILL.md
+- [[CHANGELOG.md Updates]] - document - .agents/skills/i-pm/SKILL.md
+- [[Continuity Files]] - document - .agents/skills/i-pm/SKILL.md
+- [[Definition of Done (from AGENTS.md)]] - document - .agents/skills/i-pm/SKILL.md
+- [[Escalation]] - document - .agents/skills/i-pm/SKILL.md
+- [[Known Risks]] - document - .agents/skills/i-pm/SKILL.md
+- [[Project Roadmap]] - document - .agents/skills/i-pm/SKILL.md
+- [[Quick Status (for chatTelegram)]] - document - .agents/skills/i-pm/SKILL.md
+- [[README.md Updates]] - document - .agents/skills/i-pm/SKILL.md
+- [[Risk Management]] - document - .agents/skills/i-pm/SKILL.md
+- [[Role_25]] - document - .agents/skills/i-pm/SKILL.md
+- [[SKILL_41]] - document - .agents/skills/i-pm/SKILL.md
+- [[Skill Project Management (PM)]] - document - .agents/skills/i-pm/SKILL.md
+- [[Status Reporting]] - document - .agents/skills/i-pm/SKILL.md
+- [[Task Coordination]] - document - .agents/skills/i-pm/SKILL.md
+- [[Tracking Format]] - document - .agents/skills/i-pm/SKILL.md
+- [[`session-notesCONTINUE-YYYY-MM-DD.md` (daily snapshot)]] - document - .agents/skills/i-pm/SKILL.md
+- [[`session-notesCONTINUE.md` (always current)]] - document - .agents/skills/i-pm/SKILL.md
+- [[`session-notesSESSION_SUMMARY_YYYY-MM-DD.md` (session report)]] - document - .agents/skills/i-pm/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

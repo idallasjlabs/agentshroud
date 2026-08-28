@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 1.00
 members: 2
 ---
 
 # Community 1443
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[SKILL_77]] - document - docker/config/hermes/skills/i-ci/SKILL.md
-- [[Skill ci_1]] - document - docker/config/hermes/skills/i-ci/SKILL.md
+- [[SKILL_28]] - document - .agents/skills/i-kanban/SKILL.md
+- [[Skill kanban]] - document - .agents/skills/i-kanban/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

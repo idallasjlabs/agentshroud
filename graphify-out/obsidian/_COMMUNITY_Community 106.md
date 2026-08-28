@@ -1,117 +1,70 @@
 ---
 type: community
-members: 104
+cohesion: 0.09
+members: 55
 ---
 
 # Community 106
 
-**Members:** 104 nodes
+**Cohesion:** 0.09 - loosely connected
+**Members:** 55 nodes
 
 ## Members
-- [[.__init__()_27]] - code - gateway/proxy/mcp_permissions.py
-- [[.__init__()_31]] - code - gateway/proxy/mcp_proxy.py
-- [[._load_privacy_policy()]] - code - gateway/proxy/mcp_permissions.py
-- [[._recompile_private_data_patterns()]] - code - gateway/proxy/mcp_permissions.py
-- [[._record_private_access_attempt()]] - code - gateway/proxy/mcp_permissions.py
-- [[.check_agent_server_access()]] - code - gateway/proxy/mcp_permissions.py
-- [[.check_all()]] - code - gateway/proxy/mcp_permissions.py
-- [[.check_rate_limit()]] - code - gateway/proxy/mcp_permissions.py
-- [[.check_tool_parameters()]] - code - gateway/proxy/mcp_permissions.py
-- [[.check_tool_permission()]] - code - gateway/proxy/mcp_permissions.py
-- [[.get_privacy_policy_status()]] - code - gateway/proxy/mcp_permissions.py
-- [[.get_private_access_events()]] - code - gateway/proxy/mcp_permissions.py
-- [[.get_private_access_summary()]] - code - gateway/proxy/mcp_permissions.py
-- [[.get_private_data_patterns()]] - code - gateway/proxy/mcp_permissions.py
-- [[.get_private_redaction_events()]] - code - gateway/proxy/mcp_permissions.py
-- [[.get_private_redaction_summary()]] - code - gateway/proxy/mcp_permissions.py
-- [[.get_trust_level()]] - code - gateway/proxy/mcp_permissions.py
-- [[.has_findings()]] - code - gateway/proxy/mcp_inspector.py
-- [[.highest_threat()]] - code - gateway/proxy/mcp_inspector.py
-- [[.infer_permission_level()]] - code - gateway/proxy/mcp_permissions.py
-- [[.record_private_data_redaction()]] - code - gateway/proxy/mcp_permissions.py
-- [[.set_trust_level()]] - code - gateway/proxy/mcp_permissions.py
-- [[.test_all_pass()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_audit_entry_created()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_clamp_high()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_clamp_low()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_clean_call_allowed()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_combined_blocks_private_data_parameter()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_default_trust_is_1()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_disabled_server_blocked()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_egress_allows_non_url_tool_call()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_egress_denied_blocks_url_tool_call()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_full_access()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_injection_blocked()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_no_limit_always_allowed()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_permission_denied()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_pii_redacted_in_params()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_rate_limit_enforced()_1]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_rate_limit_per_agent()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_server_denied_stops_early()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_set_and_get()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_trust_0_read_only()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_trust_1_write()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_trust_2_execute()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_trust_3_admin()]] - code - gateway/tests/test_mcp_permissions.py
-- [[Aggregate recent private-data redaction events.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Aggregate recent private-tool violations for SOC reporting.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Audit signal for blocked admin-private tool access attempts.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Audit signal when admin-private data is redacted from tool results.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Block non-owner tool calls that reference admin-private data pathscontent.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Check and update rate limits for a tool call.          Returns allowed=True and]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Check if an agent can access a server at all.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Check if an agent can call a specific tool.          Default-allow only blocks]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Compile private data patterns once for efficient repeated use.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Configuration for an MCP server.]] - rationale - gateway/proxy/mcp_config.py
-- [[EnhancedApprovalQueue_1]] - code - gateway/proxy/mcp_proxy.py
-- [[Get trust level, defaulting to 1 (write) for unknown agents.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Infer the permission level needed for a tool based on its name.          Checks]] - rationale - gateway/proxy/mcp_permissions.py
-- [[InspectionResult]] - code - gateway/proxy/mcp_inspector.py
-- [[Load optional admin-private tool patterns from policy file.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[MCPAuditTrail_1]] - code - gateway/proxy/mcp_proxy.py
-- [[MCPInspector_1]] - code - gateway/proxy/mcp_proxy.py
-- [[MCPPermissionManager]] - code - gateway/proxy/mcp_permissions.py
-- [[MCPPermissionManager_1]] - code - gateway/proxy/mcp_proxy.py
-- [[MCPProxyConfig]] - code - gateway/proxy/mcp_config.py
-- [[MCPProxyConfig_1]] - code - gateway/proxy/mcp_permissions.py
-- [[MCPProxyConfig_2]] - code - gateway/proxy/mcp_proxy.py
-- [[MCPServerConfig]] - code - gateway/proxy/mcp_config.py
-- [[MCPServerConfig_1]] - code - gateway/proxy/mcp_permissions.py
-- [[Manages permissions for MCP tool calls.      Default-allow philosophy tools wor]] - rationale - gateway/proxy/mcp_permissions.py
-- [[PermissionCheck]] - code - gateway/proxy/mcp_permissions.py
-- [[PermissionLevel_1]] - code - gateway/proxy/mcp_permissions.py
-- [[PrivateAccessAttempt]] - code - gateway/proxy/mcp_permissions.py
-- [[PrivateRedactionEvent]] - code - gateway/proxy/mcp_permissions.py
-- [[ProxyResult]] - code - gateway/proxy/mcp_proxy.py
-- [[RateLimitEntry]] - code - gateway/proxy/mcp_permissions.py
-- [[Record admin-private data redaction event for compliance audit.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Record blocked private-tool access attempts for SOCaudit views.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Result of a permission check.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Result of inspecting a tool call or response.]] - rationale - gateway/proxy/mcp_inspector.py
-- [[Result of proxying an MCP tool call.]] - rationale - gateway/proxy/mcp_proxy.py
-- [[Return configured admin-private data redaction patterns.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Return privacy policy file load status for dashboardaudit APIs.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Return recent blocked private-tool attempts for auditing.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Return recent private-data redaction events.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Return the highest threat level from all findings.]] - rationale - gateway/proxy/mcp_inspector.py
-- [[Run all permission checks in order. Returns first failure or final success.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Set trust level for an agent.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[TestCheckAll]] - code - gateway/tests/test_mcp_permissions.py
-- [[TestProxyInterception]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestRateLimiting_2]] - code - gateway/tests/test_mcp_permissions.py
-- [[TestTrustLevels]] - code - gateway/tests/test_mcp_permissions.py
-- [[TestTrustMapping]] - code - gateway/tests/test_mcp_permissions.py
-- [[Track rate limit state for a tool+agent combo.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[__init__.py_7]] - code - gateway/proxy/__init__.py
-- [[config()_2]] - code - gateway/tests/test_mcp_permissions.py
-- [[config()_3]] - code - gateway/tests/test_mcp_proxy.py
-- [[mcp_audit.py]] - code - gateway/proxy/mcp_audit.py
-- [[mcp_config.py]] - code - gateway/proxy/mcp_config.py
-- [[mcp_permissions.py]] - code - gateway/proxy/mcp_permissions.py
-- [[mcp_proxy.py]] - code - gateway/proxy/mcp_proxy.py
-- [[mgr()_1]] - code - gateway/tests/test_mcp_permissions.py
-- [[test_mcp_permissions.py]] - code - gateway/tests/test_mcp_permissions.py
-- [[test_mcp_proxy_endpoint.py]] - code - gateway/tests/test_mcp_proxy_endpoint.py
+- [[.__call__()_5]] - code - gateway/tests/test_cron_state_monitor.py
+- [[.__call__()_4]] - code - gateway/tests/test_cron_state_monitor.py
+- [[.__init__()_67]] - code - gateway/security/cron_state_monitor.py
+- [[.__init__()_147]] - code - gateway/tests/test_cron_state_monitor.py
+- [[.__init__()_146]] - code - gateway/tests/test_cron_state_monitor.py
+- [[._dispatch_aggregate()]] - code - gateway/security/cron_state_monitor.py
+- [[._episode_id()]] - code - gateway/security/cron_state_monitor.py
+- [[._evaluate()]] - code - gateway/security/cron_state_monitor.py
+- [[._run()_1]] - code - gateway/security/cron_state_monitor.py
+- [[._safe_dispatch()]] - code - gateway/security/cron_state_monitor.py
+- [[.check()_3]] - code - gateway/security/cron_state_monitor.py
+- [[.parse_store()]] - code - gateway/security/cron_state_monitor.py
+- [[.start()_2]] - code - gateway/security/cron_state_monitor.py
+- [[.stop()_9]] - code - gateway/security/cron_state_monitor.py
+- [[.test_alert_ids_stable_per_job_episode()]] - code - gateway/tests/test_cron_state_monitor.py
+- [[.test_corrupt_file_returns_empty()]] - code - gateway/tests/test_cron_state_monitor.py
+- [[.test_disabled_jobs_ignored()]] - code - gateway/tests/test_cron_state_monitor.py
+- [[.test_dispatch_failure_does_not_raise()]] - code - gateway/tests/test_cron_state_monitor.py
+- [[.test_first_sight_failing_alerts_once()]] - code - gateway/tests/test_cron_state_monitor.py
+- [[.test_flood_capped_with_aggregate_alert()]] - code - gateway/tests/test_cron_state_monitor.py
+- [[.test_hermes_jobs_reach_critical_via_observed_runs()]] - code - gateway/tests/test_cron_state_monitor.py
+- [[.test_job_name_capped_in_alert()]] - code - gateway/tests/test_cron_state_monitor.py
+- [[.test_malformed_consecutive_errors_does_not_blind_store()]] - code - gateway/tests/test_cron_state_monitor.py
+- [[.test_missing_file_returns_empty()]] - code - gateway/tests/test_cron_state_monitor.py
+- [[.test_multiple_stores_checked()]] - code - gateway/tests/test_cron_state_monitor.py
+- [[.test_ok_jobs_not_failing()]] - code - gateway/tests/test_cron_state_monitor.py
+- [[.test_ok_to_fail_dispatches_high_alert()]] - code - gateway/tests/test_cron_state_monitor.py
+- [[.test_oversized_store_skipped()]] - code - gateway/tests/test_cron_state_monitor.py
+- [[.test_parses_hermes_schema()]] - code - gateway/tests/test_cron_state_monitor.py
+- [[.test_parses_openclaw_schema()]] - code - gateway/tests/test_cron_state_monitor.py
+- [[.test_recovery_refail_realerts_through_real_dedup()]] - code - gateway/tests/test_cron_state_monitor.py
+- [[.test_recovery_resets_alerting()]] - code - gateway/tests/test_cron_state_monitor.py
+- [[.test_repeated_failure_escalates_to_critical()]] - code - gateway/tests/test_cron_state_monitor.py
+- [[.test_start_is_idempotent()]] - code - gateway/tests/test_cron_state_monitor.py
+- [[CronStateMonitor]] - code - gateway/security/cron_state_monitor.py
+- [[Evaluate one job.  Returns 1 if a NEW episode was alerted.          Flood guard]] - rationale - gateway/security/cron_state_monitor.py
+- [[JobState]] - code - gateway/security/cron_state_monitor.py
+- [[Mimics AlertDispatcher's id-based 24h dedup — the real downstream.]] - rationale - gateway/tests/test_cron_state_monitor.py
+- [[Normalized view of one bot cron job.]] - rationale - gateway/security/cron_state_monitor.py
+- [[One poll pass over all stores.  Never raises.]] - rationale - gateway/security/cron_state_monitor.py
+- [[Poll bot cron stores; dispatch AlertDispatcher alerts on failures.]] - rationale - gateway/security/cron_state_monitor.py
+- [[Read one bot's cron store; tolerate absencecorruption.]] - rationale - gateway/security/cron_state_monitor.py
+- [[Start the poll loop as an asyncio task (idempotent).]] - rationale - gateway/security/cron_state_monitor.py
+- [[TestAdversarial]] - code - gateway/tests/test_cron_state_monitor.py
+- [[TestParsing]] - code - gateway/tests/test_cron_state_monitor.py
+- [[TestTransitions]] - code - gateway/tests/test_cron_state_monitor.py
+- [[_DedupDispatchFake]] - code - gateway/tests/test_cron_state_monitor.py
+- [[_DispatchSpy]] - code - gateway/tests/test_cron_state_monitor.py
+- [[_hermes_job()]] - code - gateway/tests/test_cron_state_monitor.py
+- [[_hermes_store()]] - code - gateway/tests/test_cron_state_monitor.py
+- [[_oc_job()]] - code - gateway/tests/test_cron_state_monitor.py
+- [[_openclaw_store()]] - code - gateway/tests/test_cron_state_monitor.py
+- [[cron_state_monitor.py]] - code - gateway/security/cron_state_monitor.py
+- [[test_cron_state_monitor.py]] - code - gateway/tests/test_cron_state_monitor.py
+- [[test_poll_loop_runs_and_stops()]] - code - gateway/tests/test_cron_state_monitor.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -121,36 +74,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 130 edges to [[_COMMUNITY_Community 36]]
-- 58 edges to [[_COMMUNITY_Community 1339]]
-- 31 edges to [[_COMMUNITY_Community 179]]
-- 21 edges to [[_COMMUNITY_Community 1540]]
-- 19 edges to [[_COMMUNITY_Community 201]]
-- 16 edges to [[_COMMUNITY_Community 283]]
-- 11 edges to [[_COMMUNITY_Community 15]]
-- 6 edges to [[_COMMUNITY_Community 447]]
-- 6 edges to [[_COMMUNITY_Community 325]]
-- 5 edges to [[_COMMUNITY_Community 1]]
-- 4 edges to [[_COMMUNITY_Community 6]]
-- 3 edges to [[_COMMUNITY_Community 67]]
-- 3 edges to [[_COMMUNITY_Community 774]]
-- 3 edges to [[_COMMUNITY_Community 952]]
-- 3 edges to [[_COMMUNITY_Community 1012]]
-- 2 edges to [[_COMMUNITY_Community 24]]
-- 2 edges to [[_COMMUNITY_Community 251]]
-- 2 edges to [[_COMMUNITY_Community 452]]
-- 1 edge to [[_COMMUNITY_Community 78]]
-- 1 edge to [[_COMMUNITY_Community 623]]
-- 1 edge to [[_COMMUNITY_Community 374]]
-- 1 edge to [[_COMMUNITY_Community 9]]
-- 1 edge to [[_COMMUNITY_Community 79]]
-- 1 edge to [[_COMMUNITY_Community 12]]
-- 1 edge to [[_COMMUNITY_Community 487]]
-- 1 edge to [[_COMMUNITY_Community 818]]
+- 2 edges to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
+- 1 edge to [[_COMMUNITY_Security Audit & Drift Detection]]
+- 1 edge to [[_COMMUNITY_Community 100]]
+- 1 edge to [[_COMMUNITY_Community 90]]
 
 ## Top bridge nodes
-- [[MCPPermissionManager]] - degree 102, connects to 13 communities
-- [[MCPProxyConfig]] - degree 88, connects to 13 communities
-- [[MCPServerConfig]] - degree 90, connects to 11 communities
-- [[mcp_proxy.py]] - degree 27, connects to 10 communities
-- [[__init__.py_7]] - degree 24, connects to 6 communities
+- [[CronStateMonitor]] - degree 36, connects to 2 communities
+- [[.start()_2]] - degree 4, connects to 1 community
+- [[cron_state_monitor.py]] - degree 3, connects to 1 community

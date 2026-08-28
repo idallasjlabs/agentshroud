@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.16
 members: 19
 ---
 
 # Community 485
 
+**Cohesion:** 0.16 - loosely connected
 **Members:** 19 nodes
 
 ## Members
@@ -36,15 +38,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_Community 904]]
-- 4 edges to [[_COMMUNITY_Community 992]]
-- 4 edges to [[_COMMUNITY_Community 816]]
+- 8 edges to [[_COMMUNITY_Community 898]]
+- 4 edges to [[_COMMUNITY_Community 993]]
+- 4 edges to [[_COMMUNITY_Community 813]]
 - 4 edges to [[_COMMUNITY_Community 869]]
-- 3 edges to [[_COMMUNITY_Community 731]]
-- 2 edges to [[_COMMUNITY_Community 817]]
-- 2 edges to [[_COMMUNITY_Community 993]]
-- 2 edges to [[_COMMUNITY_Community 1102]]
-- 2 edges to [[_COMMUNITY_Community 1257]]
+- 3 edges to [[_COMMUNITY_Community 728]]
+- 2 edges to [[_COMMUNITY_Community 814]]
+- 2 edges to [[_COMMUNITY_Community 994]]
+- 2 edges to [[_COMMUNITY_Community 1098]]
+- 2 edges to [[_COMMUNITY_Community 1254]]
 
 ## Top bridge nodes
 - [[MultiHostResult]] - degree 25, connects to 9 communities

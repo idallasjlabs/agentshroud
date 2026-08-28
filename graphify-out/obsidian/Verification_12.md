@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md"
+source_file: "docs/setup/IMESSAGE_FIX.md"
 type: "document"
-community: "Community 455"
-location: "L166"
+community: "Community 428"
+location: "L69"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_455
+  - community/Community_428
 ---
 
 # Verification
 
 ## Connections
-- [[P3 Channel Ownership — Telegram + Email]] - `contains` [EXTRACTED]
+- [[iMessage Integration Fix - Using imsg + imessage-exporter]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_455
+#graphify/document #graphify/EXTRACTED #community/Community_428

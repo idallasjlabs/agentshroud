@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "code"
-community: "Community 15"
+community: "RBAC & SOC Realtime"
 location: "L33"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_15
+  - community/RBAC__SOC_Realtime
 ---
 
 # Action
@@ -32,7 +32,7 @@ tags:
 - [[RBACConfig_3]] - `uses` [INFERRED]
 - [[RBACConfig_1]] - `uses` [INFERRED]
 - [[RBACManager]] - `uses` [INFERRED]
-- [[Request_1]] - `uses` [INFERRED]
+- [[Request_2]] - `uses` [INFERRED]
 - [[Resource]] - `uses` [INFERRED]
 - [[Role_1]] - `uses` [INFERRED]
 - [[SOCWebSocketHandler_1]] - `uses` [INFERRED]
@@ -64,7 +64,7 @@ tags:
 - [[TestWSSOCEndpoint]] - `uses` [INFERRED]
 - [[ToolTier]] - `uses` [INFERRED]
 - [[ToolTier_2]] - `uses` [INFERRED]
-- [[WebSocket_2]] - `uses` [INFERRED]
+- [[WebSocket_3]] - `uses` [INFERRED]
 - [[_FakeBus]] - `uses` [INFERRED]
 - [[_FakeRBAC_2]] - `uses` [INFERRED]
 - [[auth.py_1]] - `imports` [EXTRACTED]
@@ -77,4 +77,4 @@ tags:
 - [[test_rbac.py]] - `imports` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_15
+#graphify/code #graphify/INFERRED #community/RBAC__SOC_Realtime

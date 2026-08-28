@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1158
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[MCP Auth Reset (MCPM-AUTH-RESET)]] - document - .agents/skills/i-mcpm-auth-reset/README.md
-- [[Purpose_16]] - document - .agents/skills/i-mcpm-auth-reset/README.md
-- [[README_16]] - document - .agents/skills/i-mcpm-auth-reset/README.md
-- [[Related Skills_16]] - document - .agents/skills/i-mcpm-auth-reset/README.md
-- [[Usage_18]] - document - .agents/skills/i-mcpm-auth-reset/README.md
+- [[Closing Gate]] - document - .agents/skills/i-pca/SKILL.md
+- [[Output Format Rules]] - document - .agents/skills/i-pca/SKILL.md
+- [[Role_24]] - document - .agents/skills/i-pca/SKILL.md
+- [[SKILL_40]] - document - .agents/skills/i-pca/SKILL.md
+- [[Skill Pre-Change Analysis (PCA)]] - document - .agents/skills/i-pca/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,3 +22,9 @@ members: 5
 TABLE source_file, type FROM #community/Community_1158
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 878]]
+
+## Top bridge nodes
+- [[Skill Pre-Change Analysis (PCA)]] - degree 5, connects to 1 community

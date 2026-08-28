@@ -1,17 +1,17 @@
 ---
 source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md"
 type: "document"
-community: "Community 342"
+community: "Community 345"
 location: "L179"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_342
+  - community/Community_345
 ---
 
 # Overall Security Posture: **STRONG** 🟢
 
 ## Connections
-- [[Summary_35]] - `contains` [EXTRACTED]
+- [[Summary_13]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_342
+#graphify/document #graphify/EXTRACTED #community/Community_345

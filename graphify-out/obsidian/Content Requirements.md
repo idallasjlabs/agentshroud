@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-pr/SKILL.md"
 type: "document"
-community: "Community 884"
+community: "Community 879"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_884
+  - community/Community_879
 ---
 
 # Content Requirements
@@ -17,4 +17,4 @@ tags:
 - [[Skill Pull Request (PR) Generator]] - `contains` [EXTRACTED]
 - [[Technical Detail]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_884
+#graphify/document #graphify/EXTRACTED #community/Community_879

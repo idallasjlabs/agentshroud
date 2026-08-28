@@ -1,25 +1,25 @@
 ---
 type: community
-members: 12
+cohesion: 0.20
+members: 10
 ---
 
 # Community 820
 
-**Members:** 12 nodes
+**Cohesion:** 0.20 - loosely connected
+**Members:** 10 nodes
 
 ## Members
-- [[.test_idempotent_rerun_finds_nothing_left()]] - code - gateway/tests/test_audit_archive.py
-- [[.test_missing_db_reported_not_raised()]] - code - gateway/tests/test_audit_archive.py
-- [[.test_no_matching_rows_is_a_clean_noop()]] - code - gateway/tests/test_audit_archive.py
-- [[.test_processes_in_multiple_batches()]] - code - gateway/tests/test_audit_archive.py
-- [[.test_purges_only_matching_event_type_and_severity()]] - code - gateway/tests/test_audit_archive.py
-- [[Archive+delete ALL rows matching (event_type, severity), regardless of age.]] - rationale - gateway/security/audit_archive.py
-- [[TestPurgeLowValueEvents]] - code - gateway/tests/test_audit_archive.py
-- [[_make_mixed_live_db()]] - code - gateway/tests/test_audit_archive.py
-- [[n_noisy events of (egress_filter, INFO); n_denies of (egress_filter, HIGH);]] - rationale - gateway/tests/test_audit_archive.py
-- [[now()]] - code - gateway/tests/test_audit_archive.py
-- [[purge_low_value_events()]] - code - gateway/security/audit_archive.py
-- [[test_audit_archive.py]] - code - gateway/tests/test_audit_archive.py
+- [[Build Stages]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
+- [[Dockerfile — Gateway]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
+- [[Dockerfile.gateway]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
+- [[Image Labels (OCI)_1]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
+- [[Pre-installed Tools_1]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
+- [[Related Notes_18]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
+- [[Runtime Command]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
+- [[Security Hardening_2]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
+- [[Stage 1 Builder (`python3.13-slim AS builder`)]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
+- [[Stage 2 Runtime (`python3.13-slim`)]] - document - docs/vault/03 - Configuration/Dockerfile.gateway.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,8 +29,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_Community 191]]
+- 1 edge to [[_COMMUNITY_Community 410]]
+- 1 edge to [[_COMMUNITY_Community 549]]
+- 1 edge to [[_COMMUNITY_Community 680]]
+- 1 edge to [[_COMMUNITY_Community 779]]
+- 1 edge to [[_COMMUNITY_Community 694]]
 
 ## Top bridge nodes
-- [[purge_low_value_events()]] - degree 10, connects to 1 community
-- [[test_audit_archive.py]] - degree 8, connects to 1 community
+- [[Dockerfile — Gateway]] - degree 12, connects to 5 communities

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "rationale"
-community: "Community 6"
+community: "Middleware & Lifespan"
 location: "L1264"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/Middleware__Lifespan
 ---
 
 # Scan tool result for injection attempts and return sanitized content.          A
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.scan_tool_result()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_6
+#graphify/rationale #graphify/EXTRACTED #community/Middleware__Lifespan

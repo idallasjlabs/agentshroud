@@ -1,18 +1,17 @@
 ---
-source_file: "CHANGELOG.md"
+source_file: "docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md"
 type: "document"
-community: "Community 529"
-location: "L839"
+community: "Community 190"
+location: "L604"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_529
+  - community/Community_190
 ---
 
 # Summary
 
 ## Connections
-- [[0.6.0 - 2026-02-23]] - `contains` [EXTRACTED]
-- [[Unreleased — feathttp-connect-proxy + featcredential-isolation]] - `contains` [EXTRACTED]
+- [[Development Workflow Read-Only Filesystem Strategy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_529
+#graphify/document #graphify/EXTRACTED #community/Community_190

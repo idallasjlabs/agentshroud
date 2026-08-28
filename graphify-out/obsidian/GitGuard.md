@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "code"
-community: "Community 444"
+community: "Community 18"
 location: "L50"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_444
+  - community/Community_18
 ---
 
 # GitGuard
@@ -98,4 +98,4 @@ tags:
 - [[test_round2_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_444
+#graphify/code #graphify/INFERRED #community/Community_18

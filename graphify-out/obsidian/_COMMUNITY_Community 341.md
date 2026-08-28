@@ -1,38 +1,40 @@
 ---
 type: community
+cohesion: 0.08
 members: 25
 ---
 
 # Community 341
 
+**Cohesion:** 0.08 - loosely connected
 **Members:** 25 nodes
 
 ## Members
-- [[node not connected error]] - document - skills/openclaw/canvas/SKILL.md
-- [[node required error]] - document - skills/openclaw/canvas/SKILL.md
-- [[1. Create HTML content]] - document - skills/openclaw/canvas/SKILL.md
-- [[2. Find your canvas host URL]] - document - skills/openclaw/canvas/SKILL.md
-- [[3. Find connected nodes]] - document - skills/openclaw/canvas/SKILL.md
-- [[4. Present content]] - document - skills/openclaw/canvas/SKILL.md
-- [[5. Navigate, snapshot, or hide]] - document - skills/openclaw/canvas/SKILL.md
-- [[Actions]] - document - skills/openclaw/canvas/SKILL.md
-- [[Architecture_13]] - document - skills/openclaw/canvas/SKILL.md
-- [[Canvas Host Server (port 18793)]] - concept - skills/openclaw/canvas/SKILL.md
-- [[Canvas Skill]] - document - skills/openclaw/canvas/SKILL.md
-- [[Configuration_22]] - document - skills/openclaw/canvas/SKILL.md
-- [[Content not updating]] - document - skills/openclaw/canvas/SKILL.md
-- [[Debugging]] - document - skills/openclaw/canvas/SKILL.md
-- [[How It Works_3]] - document - skills/openclaw/canvas/SKILL.md
-- [[Live Reload]] - document - skills/openclaw/canvas/SKILL.md
-- [[Node App (MaciOSAndroid WebView)]] - concept - skills/openclaw/canvas/SKILL.md
-- [[Node Bridge (port 18790)]] - concept - skills/openclaw/canvas/SKILL.md
-- [[Overview_26]] - document - skills/openclaw/canvas/SKILL.md
-- [[SKILL_201]] - document - skills/openclaw/canvas/SKILL.md
-- [[Tailscale Integration]] - document - skills/openclaw/canvas/SKILL.md
-- [[Tips_1]] - document - skills/openclaw/canvas/SKILL.md
-- [[URL Path Structure]] - document - skills/openclaw/canvas/SKILL.md
-- [[White screen  content not loading]] - document - skills/openclaw/canvas/SKILL.md
-- [[Workflow_5]] - document - skills/openclaw/canvas/SKILL.md
+- [[Action requires approval but none granted]] - document - .agents/skills/i-browser/SKILL.md
+- [[Browser timeout]] - document - .agents/skills/i-browser/SKILL.md
+- [[CAPTCHA detected]] - document - .agents/skills/i-browser/SKILL.md
+- [[Rate limit exceeded]] - document - .agents/skills/i-browser/SKILL.md
+- [[URL not in allowlist]] - document - .agents/skills/i-browser/SKILL.md
+- [[1. GitHub MCP]] - document - .agents/skills/i-mcpm/SKILL.md
+- [[10. Troubleshooting]] - document - firmware/voice-terminal/SETUP.md
+- [[2. Atlassian MCP (Jira + Confluence)]] - document - .agents/skills/i-mcpm/SKILL.md
+- [[3. AWS API MCP]] - document - .agents/skills/i-mcpm/SKILL.md
+- [[Authentication Issues]] - document - .agents/skills/i-mcpm/SKILL.md
+- [[Available MCP Servers]] - document - .agents/skills/i-mcpm/SKILL.md
+- [[Boot loop — abort() in i2c.c before app_main]] - document - firmware/voice-terminal/SETUP.md
+- [[Button component v4.x API error at build time]] - document - firmware/voice-terminal/SETUP.md
+- [[Common Errors]] - document - .agents/skills/i-mcpm/SKILL.md
+- [[First reply is slow (~5-7 s extra thinking)]] - document - firmware/voice-terminal/SETUP.md
+- [[LVGL compile error — undefined symbol `lv_screen_active` or `.rotate` field]] - document - firmware/voice-terminal/SETUP.md
+- [[Opening serial monitor resets the device]] - document - firmware/voice-terminal/SETUP.md
+- [[PSRAM shows 0 KB in logs]] - document - firmware/voice-terminal/SETUP.md
+- [[Role_19]] - document - .agents/skills/i-mcpm/SKILL.md
+- [[SKILL_34]] - document - .agents/skills/i-mcpm/SKILL.md
+- [[Skill MCP Tools Usage (MCP-TOOLS)]] - document - .agents/skills/i-mcpm/SKILL.md
+- [[Undeclared symbol `lv_font_montserrat_28`]] - document - firmware/voice-terminal/SETUP.md
+- [[WebSocket connect times out forever (handshake reaches HTTP 101, then dies)]] - document - firmware/voice-terminal/SETUP.md
+- [[WiFi won't connect — reason=201 NO_AP_FOUND]] - document - firmware/voice-terminal/SETUP.md
+- [[sdkconfig.defaults SSID change doesn't take]] - document - firmware/voice-terminal/SETUP.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -40,3 +42,10 @@ members: 25
 TABLE source_file, type FROM #community/Community_341
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 355]]
+- 1 edge to [[_COMMUNITY_Community 279]]
+
+## Top bridge nodes
+- [[10. Troubleshooting]] - degree 20, connects to 2 communities

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "code"
-community: "Community 174"
+community: "Session Management"
 location: "L148"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_174
+  - community/Session_Management
 ---
 
 # TestTrustLevel
@@ -17,4 +17,4 @@ tags:
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_session_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_174
+#graphify/code #graphify/INFERRED #community/Session_Management

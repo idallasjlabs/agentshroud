@@ -1,53 +1,55 @@
 ---
 type: community
+cohesion: 0.08
 members: 40
 ---
 
 # Community 164
 
+**Cohesion:** 0.08 - loosely connected
 **Members:** 40 nodes
 
 ## Members
-- [[Deep Hardening Release]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Acknowledgments_1]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Breaking Changes and Migration]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Deployment and Operations]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Executive Summary_8]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Installation and Upgrade Instructions]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Known Issues and Limitations]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Latency Measurements]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Performance Benchmarks]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Release Notes - AgentShroud v0.9.0]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Security Enhancements]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Security Module Performance]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Support and Resources]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Testing and Quality Assurance]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Throughput Improvements]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[What's New in v0.9.0]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[release-notes-v0.9.0]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[⚠️ Breaking Changes]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[⚡ Performance Optimizations]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🏁 Quick Start]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🏗️ Repository and Code Organization]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🏢 Enterprise Partners]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🐛 Known Issues]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[👥 Contributors]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[📈 Future Enhancements]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[📊 Monitoring and Observability]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[📋 System Requirements]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[📖 Documentation]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[📚 Comprehensive Documentation Suite]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🔄 Migration Guide]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🔍 Advanced Audit Capabilities]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🔒 Deep Security Hardening]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🔒 Security Research]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🔒 Security Testing]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🔧 Troubleshooting]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🚀 Enhanced Deployment Options]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🛡️ Vulnerability Remediation]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🤖 AI-Powered Security]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🤝 Community and Support]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🧪 Test Coverage Excellence]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
+- [[Add a comment to an existing Jira issue._1]] - rationale - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[ArgumentParser_1]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[Build (url, body, headers) for a POST to the gateway op-proxy._1]] - rationale - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[Build the ADF (Atlassian Document Format) body for POST ...comment.]] - rationale - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[Build the REST v3 create-issue request body._1]] - rationale - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[Create a Jira issue. Returns the new issue key (e.g. 'SCRUM-124')._1]] - rationale - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[Fetch one secret field from the gateway op-proxy. Returns the value._2]] - rationale - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[Issue one HTTP request and return (status_code, response_text).      HTTPError i_1]] - rationale - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[Match a transition by its own name or its destination status name._1]] - rationale - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[Move an issue to the named status (matched against available transitions)._1]] - rationale - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[Parse argv, resolve credentials, dispatch the subcommand. Returns exit code._1]] - rationale - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[REST v3 URL for creating an issue._1]] - rationale - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[REST v3 add-comment URL for an arbitrary issue key._1]] - rationale - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[REST v3 transitions URL (GET to list, POST to apply) for an issue._1]] - rationale - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[Resolve (token, email, cloud_id) via the gateway op-proxy plus a public     tena_1]] - rationale - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[Resolve a site domain to its Atlassian cloud ID via the public,     unauthentica_2]] - rationale - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[Return the HTTP Basic auth header value base64(emailtoken)._2]] - rationale - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[Unauthenticated site-to-cloud-ID discovery URL._2]] - rationale - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[_adf_doc()_1]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[_auth_headers()_1]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[_build_arg_parser()_1]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[_cloud_base_url()_1]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[_http_request()_1]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[add_comment()_1]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[build_basic_auth_header()_2]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[build_comment_payload()_2]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[build_comment_url()_2]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[build_create_issue_payload()_1]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[build_issue_url()_1]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[build_op_proxy_request()_2]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[build_tenant_info_url()_2]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[build_transitions_url()_1]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[create_issue()_1]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[fetch_credentials()_1]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[fetch_op_secret()_2]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[find_transition_id()_1]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[jira_dev_ticket.py_1]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[resolve_cloud_id()_2]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[run()_2]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[transition_issue()_1]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
 
 ## Live Query (requires Dataview plugin)
 

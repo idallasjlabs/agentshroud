@@ -1,14 +1,16 @@
 ---
 type: community
+cohesion: 1.00
 members: 1
 ---
 
 # Community 1689
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[Diagram 22 Dependency Graph]] - image - docs/diagrams/images/diagram-22-dependency-graph.svg
+- [[Chatbot Service Dependencies (requirements.txt)]] - code - chatbot/requirements.txt
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "Community 513"
+community: "PII Sanitizer & E2E Tests"
 location: "L71"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_513
+  - community/PII_Sanitizer__E2E_Tests
 ---
 
 # RedactionResult
@@ -17,4 +17,4 @@ tags:
 - [[PIISanitizer]] - `uses` [INFERRED]
 - [[RedactionResult]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_513
+#graphify/code #graphify/INFERRED #community/PII_Sanitizer__E2E_Tests

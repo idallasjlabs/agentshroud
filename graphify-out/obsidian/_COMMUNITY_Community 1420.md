@@ -1,15 +1,18 @@
 ---
 type: community
-members: 2
+cohesion: 1.00
+members: 3
 ---
 
 # Community 1420
 
-**Members:** 2 nodes
+**Cohesion:** 1.00 - tightly connected
+**Members:** 3 nodes
 
 ## Members
-- [[SKILL_11]] - document - .agents/skills/i-cd/SKILL.md
-- [[Skill cd]] - document - .agents/skills/i-cd/SKILL.md
+- [[check()_5]] - code - tests/startup_smoke/test_bot_boot_static.sh
+- [[test_bot_boot_static.sh]] - code - tests/startup_smoke/test_bot_boot_static.sh
+- [[test_bot_boot_static.sh script]] - code - tests/startup_smoke/test_bot_boot_static.sh
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,19 +1,21 @@
 ---
 type: community
+cohesion: 0.47
 members: 6
 ---
 
 # Community 1097
 
+**Cohesion:** 0.47 - moderately connected
 **Members:** 6 nodes
 
 ## Members
-- [[1. Agent Trust Levels]] - document - docs/flows/state-diagrams.md
-- [[2. Kill Switch States]] - document - docs/flows/state-diagrams.md
-- [[3. Approval Queue States]] - document - docs/flows/state-diagrams.md
-- [[4. Gateway Operational Modes]] - document - docs/flows/state-diagrams.md
-- [[AgentShroud State Diagrams]] - document - docs/flows/state-diagrams.md
-- [[state-diagrams]] - document - docs/flows/state-diagrams.md
+- [[_seed_cron()]] - code - docker/bots/hermes/init-config.sh
+- [[_seed_cron() (idempotent native cron job seeding)]] - code - docker/bots/hermes/init-config.sh
+- [[_write_soul()]] - code - docker/bots/hermes/init-config.sh
+- [[_write_soul() (ownership-tolerant SOUL.md write)]] - code - docker/bots/hermes/init-config.sh
+- [[init-config.sh]] - code - docker/bots/hermes/init-config.sh
+- [[init-config.sh script]] - code - docker/bots/hermes/init-config.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,3 +23,10 @@ members: 6
 TABLE source_file, type FROM #community/Community_1097
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 1031]]
+- 1 edge to [[_COMMUNITY_Community 549]]
+
+## Top bridge nodes
+- [[init-config.sh]] - degree 7, connects to 2 communities

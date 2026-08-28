@@ -1,31 +1,31 @@
 ---
 type: community
-members: 18
+cohesion: 0.14
+members: 16
 ---
 
 # Community 553
 
-**Members:** 18 nodes
+**Cohesion:** 0.14 - loosely connected
+**Members:** 16 nodes
 
 ## Members
-- [[Action requires approval but none granted]] - document - .agents/skills/i-browser/SKILL.md
-- [[Browser timeout]] - document - .agents/skills/i-browser/SKILL.md
-- [[CAPTCHA detected]] - document - .agents/skills/i-browser/SKILL.md
-- [[Rate limit exceeded]] - document - .agents/skills/i-browser/SKILL.md
-- [[URL not in allowlist]] - document - .agents/skills/i-browser/SKILL.md
-- [[10. Troubleshooting]] - document - firmware/voice-terminal/SETUP.md
-- [[Authentication Issues]] - document - .agents/skills/i-mcpm/SKILL.md
-- [[Boot loop — abort() in i2c.c before app_main]] - document - firmware/voice-terminal/SETUP.md
-- [[Button component v4.x API error at build time]] - document - firmware/voice-terminal/SETUP.md
-- [[Common Errors]] - document - .agents/skills/i-mcpm/SKILL.md
-- [[LVGL compile error — undefined symbol `lv_screen_active` or `.rotate` field]] - document - firmware/voice-terminal/SETUP.md
-- [[MCP Troubleshooting]] - document - .agents/skills/i-mcpm/SKILL.md
-- [[Opening serial monitor resets the device]] - document - firmware/voice-terminal/SETUP.md
-- [[PSRAM shows 0 KB in logs]] - document - firmware/voice-terminal/SETUP.md
-- [[Troubleshooting]] - document - .agents/skills/i-browser/SKILL.md
-- [[Undeclared symbol `lv_font_montserrat_28`]] - document - firmware/voice-terminal/SETUP.md
-- [[WiFi won't connect — reason=201 NO_AP_FOUND]] - document - firmware/voice-terminal/SETUP.md
-- [[sdkconfig.defaults SSID change doesn't take]] - document - firmware/voice-terminal/SETUP.md
+- [[.from_dict()_1]] - code - gateway/runtime/config.py
+- [[.from_env()]] - code - gateway/runtime/config.py
+- [[.from_env()_1]] - code - gateway/security/killswitch_config.py
+- [[.from_env()_2]] - code - gateway/security/memory_config.py
+- [[.from_environment()]] - code - gateway/security/egress_config.py
+- [[.from_file()]] - code - gateway/skills/manifest.py
+- [[.from_source()]] - code - gateway/skills/manifest.py
+- [[Build a ManifestEntry by reading path from disk.]] - rationale - gateway/skills/manifest.py
+- [[Build a manifest by walking source (``~.llm_settings``).          Raises]] - rationale - gateway/skills/manifest.py
+- [[Create config from environment variables and AGENTSHROUD_MODE.]] - rationale - gateway/security/egress_config.py
+- [[Create configuration from environment variables.]] - rationale - gateway/security/memory_config.py
+- [[Load configuration from environment variables.]] - rationale - gateway/runtime/config.py
+- [[Load configuration from environment variables._1]] - rationale - gateway/security/killswitch_config.py
+- [[Load from a config dictionary (e.g. from YAML).]] - rationale - gateway/runtime/config.py
+- [[Path_21]] - code - gateway/skills/manifest.py
+- [[cls]] - code
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,11 +35,27 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 794]]
-- 2 edges to [[_COMMUNITY_Community 1010]]
-- 1 edge to [[_COMMUNITY_Community 785]]
+- 5 edges to [[_COMMUNITY_Community 73]]
+- 2 edges to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
+- 2 edges to [[_COMMUNITY_Community 87]]
+- 2 edges to [[_COMMUNITY_Community 348]]
+- 1 edge to [[_COMMUNITY_Community 476]]
+- 1 edge to [[_COMMUNITY_Community 39]]
+- 1 edge to [[_COMMUNITY_Community 81]]
+- 1 edge to [[_COMMUNITY_Community 51]]
+- 1 edge to [[_COMMUNITY_Community 41]]
+- 1 edge to [[_COMMUNITY_Community 82]]
+- 1 edge to [[_COMMUNITY_Security Audit & Drift Detection]]
+- 1 edge to [[_COMMUNITY_Community 20]]
+- 1 edge to [[_COMMUNITY_Community 33]]
+- 1 edge to [[_COMMUNITY_Community 63]]
+- 1 edge to [[_COMMUNITY_Session Management]]
+- 1 edge to [[_COMMUNITY_Community 50]]
+- 1 edge to [[_COMMUNITY_Community 25]]
 
 ## Top bridge nodes
-- [[10. Troubleshooting]] - degree 18, connects to 3 communities
-- [[Troubleshooting]] - degree 6, connects to 1 community
-- [[MCP Troubleshooting]] - degree 3, connects to 1 community
+- [[cls]] - degree 21, connects to 13 communities
+- [[Path_21]] - degree 5, connects to 1 community
+- [[.from_file()]] - degree 5, connects to 1 community
+- [[.from_source()]] - degree 5, connects to 1 community
+- [[.from_dict()_1]] - degree 3, connects to 1 community

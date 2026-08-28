@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.15
 members: 13
 ---
 
 # Community 702
 
+**Cohesion:** 0.15 - loosely connected
 **Members:** 13 nodes
 
 ## Members
@@ -30,8 +32,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 226]]
-- 1 edge to [[_COMMUNITY_Community 280]]
+- 1 edge to [[_COMMUNITY_Community 373]]
+- 1 edge to [[_COMMUNITY_Community 554]]
 
 ## Top bridge nodes
 - [[Shared-Nothing Isolation Design Principle]] - degree 3, connects to 2 communities

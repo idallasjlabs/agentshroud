@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_contributors.py"
 type: "rationale"
-community: "Community 49"
+community: "Community 14"
 location: "L137"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_49
+  - community/Community_14
 ---
 
 # _load_paused_ids must never crash record-building if the persisted         store
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_load_paused_ids_defaults_to_empty_set_on_error()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_49
+#graphify/rationale #graphify/EXTRACTED #community/Community_14

@@ -1,14 +1,16 @@
 ---
 type: community
+cohesion: 1.00
 members: 1
 ---
 
 # Community 1783
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[AgentShroud Open Graph Preview Image]] - image - branding/social/open-graph-1200x630.png
+- [[POST forwardstream (streaming voice pipeline)]] - code - gateway/ingest_api/routes/forward.py
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Community 1176"
+community: "PII Sanitizer & E2E Tests"
 location: "L4467"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1176
+  - community/PII_Sanitizer__E2E_Tests
 ---
 
 # Tests that _forward_to_telegram uses correct urlopen timeouts.      Regression g
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestForwardToTelegramTimeouts]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1176
+#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer__E2E_Tests

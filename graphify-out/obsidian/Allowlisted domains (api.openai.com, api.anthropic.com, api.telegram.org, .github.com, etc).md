@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-13-network-security-egress.svg"
 type: "concept"
-community: "Community 1031"
+community: "Community 1036"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1031
+  - community/Community_1036
 ---
 
 # Allowlisted domains (api.openai.com, api.anthropic.com, api.telegram.org, *.github.com, etc)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Domain allowlisted (agentshroud.yaml proxy.allowed_domains)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1031
+#graphify/concept #graphify/EXTRACTED #community/Community_1036

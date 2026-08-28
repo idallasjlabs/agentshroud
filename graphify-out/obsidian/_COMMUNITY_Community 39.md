@@ -1,105 +1,108 @@
 ---
 type: community
-members: 92
+cohesion: 0.04
+members: 93
 ---
 
 # Community 39
 
-**Members:** 92 nodes
+**Cohesion:** 0.04 - loosely connected
+**Members:** 93 nodes
 
 ## Members
-- [[._make_state_with_bot()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_bot_dict_has_required_keys()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_bot_id_augments_result_with_image_scan()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_bot_id_calls_compute_bot_scorecard()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_bot_id_returns_per_bot_config()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_bots_backward_compat_no_bots_config()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_bots_no_config_returns_synthetic_entry()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_bots_returns_correct_structure()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_bots_returns_default_true_on_default_bot()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_clean_image_score_100()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_config_none_returns_empty_dict()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_domains_has_vuln_and_egress()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_egress_filter_exception_defaults_denials_zero()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_filters_activity_by_bot_id_in_source()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_filters_egress_log_by_bot_id()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_filters_events_by_exact_bot_id()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_filters_history_by_bot_id()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_filters_pending_by_bot_id()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_filters_services_by_bot_image()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_formula_combined_penalty()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_formula_critical_penalty()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_formula_egress_denials_penalty()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_formula_high_penalty()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_formula_medium_penalty()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_known_bot_returns_cve_summary()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_missing_bot_returns_empty_image()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_no_bot_id_calls_global_scorecard()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_no_bot_id_defaults_to_openclaw()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_no_bot_id_omits_bot_keys()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_no_bot_id_returns_all_events()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_no_bot_id_returns_all_pending()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_no_bot_id_returns_all_services()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_no_bot_id_returns_full_history()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_no_bot_id_returns_global_config()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_no_scan_data_defaults_zeros()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_result_structure_has_required_keys()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_returns_default_when_config_is_none()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_returns_default_when_no_bots_config()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_returns_registered_bots()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_risk_level_red_below_50()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_risk_level_yellow_50_to_79()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_score_clamped_to_hundred()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_score_clamped_to_zero()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_security_events_filters_by_bot_id()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_security_events_nonexistent_bot_returns_empty_not_404()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_single_bot_returns_list_of_one()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_unknown_bot_id_returns_error()]] - code - gateway/tests/test_soc_bots.py
-- [[.test_unknown_bot_returns_error()]] - code - gateway/tests/test_soc_bots.py
-- [[Backward-compat config attr absent → return single OpenClaw default.]] - rationale - gateway/tests/test_soc_bots.py
-- [[Backward-compat no bots section → return single OpenClaw default.]] - rationale - gateway/tests/test_soc_bots.py
-- [[Bot not in config → image='', scan skipped, score based on egress only.]] - rationale - gateway/tests/test_soc_bots.py
-- [[Bot with no image scan data should default criticalhighmedium to 0.]] - rationale - gateway/tests/test_soc_bots.py
-- [[Build an SCLCaller with OWNER role — no FastAPI dependency resolution.]] - rationale - gateway/tests/test_soc_bots.py
-- [[Container Security Scorecard — 12-domain maturity assessment.      Standards bas]] - rationale - gateway/soc/router.py
-- [[If egress_filter.get_stats raises, denials defaults to 0 (no crash).]] - rationale - gateway/tests/test_soc_bots.py
-- [[Per-bot scorecard scoped to a single bot's image scan and egress stats.      Sco]] - rationale - gateway/security/scanner_integration.py
-- [[Return egress decision history (approvedenytimeout) (CC-40).]] - rationale - gateway/soc/router.py
-- [[Return the list of registered bots. Falls back to backward-compat OpenClaw defau]] - rationale - gateway/soc/router.py
-- [[Return the tracked advisory registry for the wrapped AI agent.      When bot_id]] - rationale - gateway/soc/router.py
-- [[TestAgentCvesBotId]] - code - gateway/tests/test_soc_bots.py
-- [[TestBotSelectorFrontend]] - code - gateway/tests/test_soc_bots.py
-- [[TestCollaboratorActivityBotFilter]] - code - gateway/tests/test_soc_bots.py
-- [[TestComputeBotScorecard_1]] - code - gateway/tests/test_soc_bots.py
-- [[TestConfigBotId]] - code - gateway/tests/test_soc_bots.py
-- [[TestEgressHistoryBotFilter]] - code - gateway/tests/test_soc_bots.py
-- [[TestEgressLogBotFilter]] - code - gateway/tests/test_soc_bots.py
-- [[TestEgressPendingBotFilter]] - code - gateway/tests/test_soc_bots.py
-- [[TestListBots]] - code - gateway/tests/test_soc_bots.py
-- [[TestScannersBotId]] - code - gateway/tests/test_soc_bots.py
-- [[TestScorecardBotId]] - code - gateway/tests/test_soc_bots.py
-- [[TestSecurityEventsBotFilter]] - code - gateway/tests/test_soc_bots.py
-- [[TestServicesBotFilter]] - code - gateway/tests/test_soc_bots.py
-- [[Unified scanner aggregation Trivy, Falco, ClamAV, Wazuh, OpenSCAP.      Returns]] - rationale - gateway/soc/router.py
-- [[Unit tests for the M6 bot selector backend — socv1bots + bot_id filtering.]] - rationale - gateway/tests/test_soc_bots.py
-- [[When app_state.config is None, return empty dict (backward-compat).]] - rationale - gateway/tests/test_soc_bots.py
-- [[When bot_id is given, services whose image matches the bot's image are returned.]] - rationale - gateway/tests/test_soc_bots.py
-- [[_make_app_state()]] - code - gateway/tests/test_soc_bots.py
-- [[_make_bot_config()]] - code - gateway/tests/test_soc_bots.py
-- [[_make_m6_app_state()]] - code - gateway/tests/test_soc_bots.py
-- [[_make_m6_bot_config()]] - code - gateway/tests/test_soc_bots.py
-- [[_make_m6_caller()]] - code - gateway/tests/test_soc_bots.py
-- [[_make_owner_caller()]] - code - gateway/tests/test_soc_bots.py
-- [[compute_bot_scorecard()]] - code - gateway/security/scanner_integration.py
-- [[get_agent_cves()]] - code - gateway/soc/router.py
-- [[get_config()]] - code - gateway/soc/router.py
-- [[get_egress_history()]] - code - gateway/soc/router.py
-- [[get_egress_pending()_1]] - code - gateway/soc/router.py
-- [[get_scanner_results()]] - code - gateway/soc/router.py
-- [[get_security_events()]] - code - gateway/soc/router.py
-- [[get_security_scorecard()]] - code - gateway/soc/router.py
-- [[list_bots()]] - code - gateway/soc/router.py
-- [[test_soc_bots.py]] - code - gateway/tests/test_soc_bots.py
+- [[.__ge__()]] - code - gateway/proxy/mcp_config.py
+- [[.__gt__()]] - code - gateway/proxy/mcp_config.py
+- [[.__le__()]] - code - gateway/proxy/mcp_config.py
+- [[.__lt__()]] - code - gateway/proxy/mcp_config.py
+- [[._record_private_access_attempt()]] - code - gateway/proxy/mcp_permissions.py
+- [[.check_agent_server_access()]] - code - gateway/proxy/mcp_permissions.py
+- [[.check_all()]] - code - gateway/proxy/mcp_permissions.py
+- [[.check_rate_limit()]] - code - gateway/proxy/mcp_permissions.py
+- [[.check_tool_parameters()]] - code - gateway/proxy/mcp_permissions.py
+- [[.check_tool_permission()]] - code - gateway/proxy/mcp_permissions.py
+- [[.from_dict()]] - code - gateway/proxy/mcp_config.py
+- [[.get_trust_level()]] - code - gateway/proxy/mcp_permissions.py
+- [[.infer_permission_level()]] - code - gateway/proxy/mcp_permissions.py
+- [[.level_value()]] - code - gateway/proxy/mcp_config.py
+- [[.test_admin_ge_read()]] - code - gateway/tests/test_mcp_permissions.py
+- [[.test_all_pass()]] - code - gateway/tests/test_mcp_permissions.py
+- [[.test_allowed_agent()]] - code - gateway/tests/test_mcp_permissions.py
+- [[.test_clamp_high()]] - code - gateway/tests/test_mcp_permissions.py
+- [[.test_clamp_low()]] - code - gateway/tests/test_mcp_permissions.py
+- [[.test_combined_blocks_private_data_parameter()]] - code - gateway/tests/test_mcp_permissions.py
+- [[.test_default_trust_is_1()]] - code - gateway/tests/test_mcp_permissions.py
+- [[.test_default_write()]] - code - gateway/tests/test_mcp_permissions.py
+- [[.test_denied_agent()]] - code - gateway/tests/test_mcp_permissions.py
+- [[.test_disabled_server()]] - code - gateway/tests/test_mcp_permissions.py
+- [[.test_disabled_server_blocked()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_execute_lt_admin()]] - code - gateway/tests/test_mcp_permissions.py
+- [[.test_explicit_config()]] - code - gateway/tests/test_mcp_permissions.py
+- [[.test_full_access()]] - code - gateway/tests/test_mcp_permissions.py
+- [[.test_level_values()]] - code - gateway/tests/test_mcp_permissions.py
+- [[.test_no_limit_always_allowed()]] - code - gateway/tests/test_mcp_permissions.py
+- [[.test_not_in_allowlist()]] - code - gateway/tests/test_mcp_permissions.py
+- [[.test_pattern_delete()]] - code - gateway/tests/test_mcp_permissions.py
+- [[.test_pattern_list()]] - code - gateway/tests/test_mcp_permissions.py
+- [[.test_pattern_read()]] - code - gateway/tests/test_mcp_permissions.py
+- [[.test_pattern_sensitive()]] - code - gateway/tests/test_mcp_permissions.py
+- [[.test_permission_denied()]] - code - gateway/tests/test_mcp_permissions.py
+- [[.test_rate_limit_enforced()_1]] - code - gateway/tests/test_mcp_permissions.py
+- [[.test_rate_limit_per_agent()]] - code - gateway/tests/test_mcp_permissions.py
+- [[.test_read_le_read()]] - code - gateway/tests/test_mcp_permissions.py
+- [[.test_read_lt_write()]] - code - gateway/tests/test_mcp_permissions.py
+- [[.test_server_denied_stops_early()]] - code - gateway/tests/test_mcp_permissions.py
+- [[.test_set_and_get()]] - code - gateway/tests/test_mcp_permissions.py
+- [[.test_trust_0_read_only()]] - code - gateway/tests/test_mcp_permissions.py
+- [[.test_trust_1_write()]] - code - gateway/tests/test_mcp_permissions.py
+- [[.test_trust_2_execute()]] - code - gateway/tests/test_mcp_permissions.py
+- [[.test_trust_3_admin()]] - code - gateway/tests/test_mcp_permissions.py
+- [[.test_trust_sufficient_for_server()]] - code - gateway/tests/test_mcp_permissions.py
+- [[.test_trust_too_low_for_server()]] - code - gateway/tests/test_mcp_permissions.py
+- [[.test_unknown_server_default_allow()]] - code - gateway/tests/test_mcp_permissions.py
+- [[.test_write_lt_execute()]] - code - gateway/tests/test_mcp_permissions.py
+- [[Any_16]] - code - gateway/proxy/mcp_config.py
+- [[Audit signal for blocked admin-private tool access attempts.]] - rationale - gateway/proxy/mcp_permissions.py
+- [[Audit signal when admin-private data is redacted from tool results.]] - rationale - gateway/proxy/mcp_permissions.py
+- [[Block non-owner tool calls that reference admin-private data pathscontent.]] - rationale - gateway/proxy/mcp_permissions.py
+- [[Check and update rate limits for a tool call.          Returns allowed=True and]] - rationale - gateway/proxy/mcp_permissions.py
+- [[Check if an agent can access a server at all.]] - rationale - gateway/proxy/mcp_permissions.py
+- [[Check if an agent can call a specific tool.          Default-allow only blocks]] - rationale - gateway/proxy/mcp_permissions.py
+- [[Configuration for an MCP server.]] - rationale - gateway/proxy/mcp_config.py
+- [[Get trust level, defaulting to 1 (write) for unknown agents.]] - rationale - gateway/proxy/mcp_permissions.py
+- [[Infer the permission level needed for a tool based on its name.          Checks]] - rationale - gateway/proxy/mcp_permissions.py
+- [[MCPProxyConfig_1]] - code - gateway/proxy/mcp_permissions.py
+- [[MCPProxyConfig]] - code - gateway/proxy/mcp_config.py
+- [[MCPServerConfig_1]] - code - gateway/proxy/mcp_permissions.py
+- [[MCPServerConfig]] - code - gateway/proxy/mcp_config.py
+- [[Parse config from a dictionary (e.g. loaded from YAML).]] - rationale - gateway/proxy/mcp_config.py
+- [[PermissionCheck]] - code - gateway/proxy/mcp_permissions.py
+- [[PermissionLevel_1]] - code - gateway/proxy/mcp_permissions.py
+- [[PermissionLevel]] - code - gateway/proxy/mcp_config.py
+- [[PrivateAccessAttempt]] - code - gateway/proxy/mcp_permissions.py
+- [[PrivateRedactionEvent]] - code - gateway/proxy/mcp_permissions.py
+- [[ProxyResult]] - code - gateway/proxy/mcp_proxy.py
+- [[RateLimitEntry]] - code - gateway/proxy/mcp_permissions.py
+- [[Record blocked private-tool access attempts for SOCaudit views.]] - rationale - gateway/proxy/mcp_permissions.py
+- [[Result of permission check.]] - rationale - gateway/security/rbac.py
+- [[Result of proxying an MCP tool call.]] - rationale - gateway/proxy/mcp_proxy.py
+- [[Run all permission checks in order. Returns first failure or final success.]] - rationale - gateway/proxy/mcp_permissions.py
+- [[TestCheckAll]] - code - gateway/tests/test_mcp_permissions.py
+- [[TestInferPermission]] - code - gateway/tests/test_mcp_permissions.py
+- [[TestPermissionLevel]] - code - gateway/tests/test_mcp_permissions.py
+- [[TestRateLimiting_2]] - code - gateway/tests/test_mcp_permissions.py
+- [[TestServerAccess]] - code - gateway/tests/test_mcp_permissions.py
+- [[TestTrustLevels]] - code - gateway/tests/test_mcp_permissions.py
+- [[TestTrustMapping]] - code - gateway/tests/test_mcp_permissions.py
+- [[Track rate limit state for a tool+agent combo.]] - rationale - gateway/proxy/mcp_permissions.py
+- [[__init__.py_7]] - code - gateway/proxy/__init__.py
+- [[config()_2]] - code - gateway/tests/test_mcp_permissions.py
+- [[config()_3]] - code - gateway/tests/test_mcp_proxy.py
+- [[mcp_audit.py]] - code - gateway/proxy/mcp_audit.py
+- [[mcp_config.py]] - code - gateway/proxy/mcp_config.py
+- [[mcp_permissions.py]] - code - gateway/proxy/mcp_permissions.py
+- [[mcp_proxy.py]] - code - gateway/proxy/mcp_proxy.py
+- [[test_mcp_permissions.py]] - code - gateway/tests/test_mcp_permissions.py
+- [[test_mcp_proxy_endpoint.py]] - code - gateway/tests/test_mcp_proxy_endpoint.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -109,21 +112,36 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 31 edges to [[_COMMUNITY_Community 19]]
-- 30 edges to [[_COMMUNITY_Community 15]]
-- 9 edges to [[_COMMUNITY_Community 109]]
-- 5 edges to [[_COMMUNITY_Community 501]]
-- 5 edges to [[_COMMUNITY_Community 27]]
-- 2 edges to [[_COMMUNITY_Community 123]]
-- 2 edges to [[_COMMUNITY_Community 18]]
-- 1 edge to [[_COMMUNITY_Community 88]]
-- 1 edge to [[_COMMUNITY_Community 59]]
-- 1 edge to [[_COMMUNITY_Community 125]]
-- 1 edge to [[_COMMUNITY_Community 374]]
+- 99 edges to [[_COMMUNITY_Community 44]]
+- 44 edges to [[_COMMUNITY_Community 103]]
+- 33 edges to [[_COMMUNITY_Community 109]]
+- 25 edges to [[_COMMUNITY_Community 154]]
+- 16 edges to [[_COMMUNITY_Community 261]]
+- 14 edges to [[_COMMUNITY_Community 324]]
+- 10 edges to [[_COMMUNITY_Community 206]]
+- 9 edges to [[_COMMUNITY_RBAC & SOC Realtime]]
+- 4 edges to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
+- 4 edges to [[_COMMUNITY_Community 26]]
+- 4 edges to [[_COMMUNITY_Community 473]]
+- 3 edges to [[_COMMUNITY_Community 19]]
+- 3 edges to [[_COMMUNITY_Community 917]]
+- 3 edges to [[_COMMUNITY_Community 992]]
+- 2 edges to [[_COMMUNITY_Community 23]]
+- 2 edges to [[_COMMUNITY_Community 456]]
+- 1 edge to [[_COMMUNITY_Community 553]]
+- 1 edge to [[_COMMUNITY_Community 21]]
+- 1 edge to [[_COMMUNITY_Ingest API & Approval Routes]]
+- 1 edge to [[_COMMUNITY_Community 83]]
+- 1 edge to [[_COMMUNITY_Community 203]]
+- 1 edge to [[_COMMUNITY_Community 353]]
+- 1 edge to [[_COMMUNITY_Community 15]]
+- 1 edge to [[_COMMUNITY_Community 43]]
+- 1 edge to [[_COMMUNITY_Community 508]]
+- 1 edge to [[_COMMUNITY_Community 884]]
 
 ## Top bridge nodes
-- [[test_soc_bots.py]] - degree 38, connects to 5 communities
-- [[compute_bot_scorecard()]] - degree 23, connects to 4 communities
-- [[.test_filters_egress_log_by_bot_id()]] - degree 6, connects to 3 communities
-- [[_make_owner_caller()]] - degree 29, connects to 2 communities
-- [[get_security_events()]] - degree 10, connects to 2 communities
+- [[MCPProxyConfig]] - degree 88, connects to 12 communities
+- [[mcp_proxy.py]] - degree 27, connects to 12 communities
+- [[MCPServerConfig]] - degree 90, connects to 10 communities
+- [[PermissionLevel]] - degree 71, connects to 9 communities
+- [[ProxyResult]] - degree 18, connects to 9 communities

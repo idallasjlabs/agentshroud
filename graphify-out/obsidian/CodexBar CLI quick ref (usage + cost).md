@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/model-usage/references/codexbar-cli.md"
 type: "document"
-community: "Community 253"
+community: "Community 254"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_253
+  - community/Community_254
 ---
 
 # CodexBar CLI quick ref (usage + cost)
@@ -18,4 +18,4 @@ tags:
 - [[Notes_5]] - `contains` [EXTRACTED]
 - [[codexbar-cli]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_253
+#graphify/document #graphify/EXTRACTED #community/Community_254

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/06 - Containers & Services/agentshroud-bot.md"
 type: "document"
-community: "Community 601"
+community: "Community 595"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_601
+  - community/Community_595
 ---
 
 # agentshroud-bot
@@ -23,9 +23,9 @@ tags:
 - [[Resource Limits]] - `contains` [EXTRACTED]
 - [[Secrets_2]] - `contains` [EXTRACTED]
 - [[Security Hardening_3]] - `contains` [EXTRACTED]
-- [[Summary_45]] - `contains` [EXTRACTED]
+- [[Summary_23]] - `contains` [EXTRACTED]
 - [[Volumes_1]] - `contains` [EXTRACTED]
 - [[agentshroud-bot]] - `contains` [EXTRACTED]
 - [[tmpfs Mounts]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_601
+#graphify/document #graphify/EXTRACTED #community/Community_595

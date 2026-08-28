@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_pipeline.py"
 type: "rationale"
-community: "Community 86"
+community: "Community 47"
 location: "L40"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_86
+  - community/Community_47
 ---
 
 # Build a TelegramAPIProxy with mocked RBAC and rate limiter.      RBACConfig and
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_make_proxy()_4]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_86
+#graphify/rationale #graphify/EXTRACTED #community/Community_47

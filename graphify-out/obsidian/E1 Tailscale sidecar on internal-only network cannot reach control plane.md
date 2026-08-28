@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-03-05-r2.md"
 type: "document"
-community: "Community 135"
+community: "Community 629"
 location: "L50"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_135
+  - community/Community_629
 ---
 
 # E1: Tailscale sidecar on internal-only network cannot reach control plane
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🔴 ERRORS (must fix)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_135
+#graphify/document #graphify/EXTRACTED #community/Community_629

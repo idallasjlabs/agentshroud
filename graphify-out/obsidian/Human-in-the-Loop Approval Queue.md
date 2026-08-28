@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/00 - START HERE/System Overview.md"
 type: "rationale"
-community: "Community 271"
+community: "Community 85"
 tags:
   - graphify/rationale
   - graphify/INFERRED
-  - community/Community_271
+  - community/Community_85
 ---
 
 # Human-in-the-loop approval queue
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud Security Perimeter]] - `rationale_for` [EXTRACTED]
 - [[EnhancedApprovalQueue]] - `conceptually_related_to` [INFERRED]
 
-#graphify/rationale #graphify/INFERRED #community/Community_271
+#graphify/rationale #graphify/INFERRED #community/Community_85

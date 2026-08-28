@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Community 1282"
+community: "Community 967"
 location: "L516"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1282
+  - community/Community_967
 ---
 
 # Any
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_stub_summary()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1282
+#graphify/code #graphify/EXTRACTED #community/Community_967

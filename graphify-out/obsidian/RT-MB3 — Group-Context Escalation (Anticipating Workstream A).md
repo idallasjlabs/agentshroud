@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.2/red-team-assessment-v1.2.0.md"
 type: "document"
-community: "Community 1071"
+community: "Community 1067"
 location: "L236"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1071
+  - community/Community_1067
 ---
 
 # RT-MB3 — Group-Context Escalation (Anticipating Workstream A)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[§2 — New Multi-Bot Attack Scenarios (v1.1+ Surface)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1071
+#graphify/document #graphify/EXTRACTED #community/Community_1067

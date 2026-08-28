@@ -1,20 +1,22 @@
 ---
 type: community
+cohesion: 0.29
 members: 7
 ---
 
 # Community 1015
 
+**Cohesion:** 0.29 - loosely connected
 **Members:** 7 nodes
 
 ## Members
-- [[dockerscripts README]] - document - docker/scripts/README.md
-- [[drift-detector.sh (planned)]] - concept - scripts/README.md
-- [[memory-scrubber.py (planned)]] - concept - scripts/README.md
-- [[security-audit.sh (planned)]] - concept - scripts/README.md
-- [[skill-scanner.sh (planned)]] - concept - scripts/README.md
-- [[test-network-isolation.sh (planned)]] - concept - scripts/README.md
-- [[test-pii-sanitization.sh (planned)]] - concept - scripts/README.md
+- [[Migration Path (SSH → Distributed Node)]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Step 1 Verify Option 1 Working]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Step 2 Install OpenClaw on Pi]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Step 3 Pair Nodes]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Step 4 Test Basic Communication]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Step 5 Migrate Workflows]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Step 6 Deprecate SSH (Optional)]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,7 +26,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 363]]
+- 1 edge to [[_COMMUNITY_Community 439]]
 
 ## Top bridge nodes
-- [[dockerscripts README]] - degree 7, connects to 1 community
+- [[Migration Path (SSH → Distributed Node)]] - degree 7, connects to 1 community

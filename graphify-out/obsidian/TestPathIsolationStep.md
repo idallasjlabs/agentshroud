@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "Community 652"
+community: "Middleware & Lifespan"
 location: "L625"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_652
+  - community/Middleware__Lifespan
 ---
 
 # TestPathIsolationStep
@@ -21,4 +21,4 @@ tags:
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_652
+#graphify/code #graphify/INFERRED #community/Middleware__Lifespan

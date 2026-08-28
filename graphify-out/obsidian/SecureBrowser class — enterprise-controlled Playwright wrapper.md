@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "code"
-community: "Community 1324"
+community: "Community 1325"
 location: "L53-423"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1324
+  - community/Community_1325
 ---
 
 # SecureBrowser class — enterprise-controlled Playwright wrapper
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SecureBrowser config.yaml — allowlistapprovalaudit security config]] - `shares_data_with` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1324
+#graphify/code #graphify/EXTRACTED #community/Community_1325

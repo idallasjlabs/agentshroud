@@ -1,23 +1,25 @@
 ---
 type: community
+cohesion: 0.20
 members: 10
 ---
 
 # Community 826
 
+**Cohesion:** 0.20 - loosely connected
 **Members:** 10 nodes
 
 ## Members
-- [[ADR-004-api-keys-never-in-agent-container]] - document - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
-- [[ADR-004 API Keys Never in Agent Container]] - document - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
-- [[Consequences_3]] - document - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
-- [[Context_3]] - document - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
-- [[Decision_5]] - document - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
-- [[Implementation]] - document - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
-- [[Mitigation_1]] - document - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
-- [[Negative Consequences_3]] - document - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
-- [[Positive Consequences_3]] - document - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
-- [[Status_3]] - document - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
+- [[author]] - code - .agents/skills/i-browser/package.json
+- [[description]] - code - .agents/skills/i-browser/package.json
+- [[keywords]] - code - .agents/skills/i-browser/package.json
+- [[license]] - code - .agents/skills/i-browser/package.json
+- [[main]] - code - .agents/skills/i-browser/package.json
+- [[name]] - code - .agents/skills/i-browser/package.json
+- [[package.json]] - code - .agents/skills/i-browser/package.json
+- [[scripts]] - code - .agents/skills/i-browser/package.json
+- [[test]] - code - .agents/skills/i-browser/package.json
+- [[version]] - code - .agents/skills/i-browser/package.json
 
 ## Live Query (requires Dataview plugin)
 

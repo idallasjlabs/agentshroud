@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/system-architecture.md"
 type: "concept"
-community: "Community 864"
+community: "Community 514"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Community_864
+  - community/Community_514
 ---
 
 # Gateway (FastAPI)
@@ -16,4 +16,4 @@ tags:
 - [[Gateway Container (Python 3.11FastAPI 8080)]] - `conceptually_related_to` [EXTRACTED]
 - [[PII Sanitizer (Presidio + Regex)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/INFERRED #community/Community_864
+#graphify/concept #graphify/INFERRED #community/Community_514

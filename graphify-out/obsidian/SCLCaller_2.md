@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_bots.py"
 type: "code"
-community: "Community 15"
+community: "RBAC & SOC Realtime"
 location: "L42"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_15
+  - community/RBAC__SOC_Realtime
 ---
 
 # SCLCaller
@@ -17,4 +17,4 @@ tags:
 - [[_make_m6_caller()]] - `references` [EXTRACTED]
 - [[_make_owner_caller()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_15
+#graphify/code #graphify/INFERRED #community/RBAC__SOC_Realtime

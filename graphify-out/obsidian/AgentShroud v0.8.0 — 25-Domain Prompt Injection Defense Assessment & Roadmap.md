@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md"
 type: "document"
-community: "Community 995"
+community: "Community 999"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_995
+  - community/Community_999
 ---
 
 # AgentShroud v0.8.0 — 25-Domain Prompt Injection Defense Assessment & Roadmap
@@ -24,4 +24,4 @@ tags:
 - [[Verification Plan]] - `contains` [EXTRACTED]
 - [[security-assessment-v0.8.0-25-domain]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_995
+#graphify/document #graphify/EXTRACTED #community/Community_999

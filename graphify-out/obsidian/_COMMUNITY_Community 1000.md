@@ -1,21 +1,23 @@
 ---
 type: community
+cohesion: 0.25
 members: 8
 ---
 
 # Community 1000
 
+**Cohesion:** 0.25 - loosely connected
 **Members:** 8 nodes
 
 ## Members
-- [[Layer 1 — Core Pipeline (P0)]] - document - SECURITY.md
-- [[Layer 2 — Middleware (P1)]] - document - SECURITY.md
-- [[Layer 3 — Output Protection]] - document - SECURITY.md
-- [[Layer 4 — Tool & Agent Control]] - document - SECURITY.md
-- [[Layer 5 — Network & Egress]] - document - SECURITY.md
-- [[Layer 6 — File & Memory Integrity]] - document - SECURITY.md
-- [[Layer 7 — Infrastructure & Supply Chain]] - document - SECURITY.md
-- [[Security Architecture_1]] - document - SECURITY.md
+- [[Also in v0.9.0]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[Blocked By]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[Components]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[Goal]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[Prerequisites_7]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[Secure Voice Conversations (ElevenLabs + Twilio)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[Status_9]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[v0.9.0 — Apple Messages Integration]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,7 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 521]]
+- 1 edge to [[_COMMUNITY_Community 362]]
 
 ## Top bridge nodes
-- [[Security Architecture_1]] - degree 8, connects to 1 community
+- [[v0.9.0 — Apple Messages Integration]] - degree 8, connects to 1 community

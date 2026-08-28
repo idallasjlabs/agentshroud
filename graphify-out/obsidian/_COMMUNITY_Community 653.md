@@ -1,28 +1,29 @@
 ---
 type: community
-members: 15
+cohesion: 0.24
+members: 14
 ---
 
 # Community 653
 
-**Members:** 15 nodes
+**Cohesion:** 0.24 - loosely connected
+**Members:** 14 nodes
 
 ## Members
-- [[.test_five_all_sdl_configs_present()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_one_baseline_no_configs()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_returns_false_on_import_error()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_returns_true_when_attr_set()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[TestAppStateHas_1]] - code - gateway/tests/test_scorecard_scoring.py
-- [[TestScoreSecureDevelopment_1]] - code - gateway/tests/test_scorecard_scoring.py
-- [[clean_clamav()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[clean_falco()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[clean_openscap_with_zero_fails()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[clean_trivy()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[not_run_clamav()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[not_run_falco()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[not_run_openscap()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[not_run_trivy()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[test_scorecard_scoring.py]] - code - gateway/tests/test_scorecard_scoring.py
+- [[background.js]] - code - browser-extension/background.js
+- [[clipPage()]] - code - browser-extension/background.js
+- [[extractPageContent()]] - code - browser-extension/background.js
+- [[forwardUrl()]] - code - browser-extension/background.js
+- [[getActiveTab()]] - code - browser-extension/background.js
+- [[icon48.png — solid blue (2b6cff) placeholder icon, no logotext]] - image - browser-extension/icons/icon48.png
+- [[loadConfig()]] - code - browser-extension/background.js
+- [[notify()]] - code - browser-extension/background.js
+- [[popup.html (toolbar popup UI)]] - code - browser-extension/popup.html
+- [[popup.js]] - code - browser-extension/popup.js
+- [[reportResult()]] - code - browser-extension/background.js
+- [[send()]] - code - browser-extension/popup.js
+- [[setStatus()]] - code - browser-extension/popup.js
+- [[statusEl]] - code - browser-extension/popup.js
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,18 +33,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 654]]
-- 2 edges to [[_COMMUNITY_Community 927]]
-- 2 edges to [[_COMMUNITY_Community 1062]]
-- 1 edge to [[_COMMUNITY_Community 59]]
-- 1 edge to [[_COMMUNITY_Community 1350]]
-- 1 edge to [[_COMMUNITY_Community 1280]]
-- 1 edge to [[_COMMUNITY_Community 1351]]
-- 1 edge to [[_COMMUNITY_Community 1133]]
-- 1 edge to [[_COMMUNITY_Community 1352]]
-- 1 edge to [[_COMMUNITY_Community 1281]]
-- 1 edge to [[_COMMUNITY_Community 1415]]
-- 1 edge to [[_COMMUNITY_Community 1134]]
+- 1 edge to [[_COMMUNITY_Community 415]]
+- 1 edge to [[_COMMUNITY_Community 552]]
+- 1 edge to [[_COMMUNITY_Community 1077]]
 
 ## Top bridge nodes
-- [[test_scorecard_scoring.py]] - degree 27, connects to 12 communities
+- [[background.js]] - degree 11, connects to 2 communities
+- [[loadConfig()]] - degree 4, connects to 1 community

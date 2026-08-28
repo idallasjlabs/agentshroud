@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Community 2"
+community: "Telegram Proxy Inbound"
 location: "L6612"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2
+  - community/Telegram_Proxy_Inbound
 ---
 
 # Consecutive-dot domains in URLs should not queue preflight approvals.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_non_owner_consecutive_dot_domain_does_not_queue_egress_preflight()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Inbound

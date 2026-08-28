@@ -1,16 +1,18 @@
 ---
 type: community
+cohesion: 0.67
 members: 3
 ---
 
 # Community 1379
 
+**Cohesion:** 0.67 - moderately connected
 **Members:** 3 nodes
 
 ## Members
-- [[Step 0 - Clone GitHub repo(s) (only if a GitHub URL was given)_1]] - document - docker/config/hermes/skills/graphify/references/github-and-merge.md
-- [[github-and-merge_1]] - document - docker/config/hermes/skills/graphify/references/github-and-merge.md
-- [[graphify reference GitHub clone and cross-repo merge_1]] - document - docker/config/hermes/skills/graphify/references/github-and-merge.md
+- [[SKILL_199]] - document - skills/openclaw/blucli/SKILL.md
+- [[blu CLI (BluesoundNAD control)]] - concept - skills/openclaw/blucli/SKILL.md
+- [[blucli (blu)]] - document - skills/openclaw/blucli/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

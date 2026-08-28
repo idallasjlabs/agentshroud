@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_consent_framework.py"
 type: "code"
-community: "Community 207"
+community: "Community 132"
 location: "L116"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_207
+  - community/Community_132
 ---
 
 # TestConsentDecision
@@ -21,4 +21,4 @@ tags:
 - [[ShellInjectionDetected]] - `uses` [INFERRED]
 - [[test_consent_framework.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_207
+#graphify/code #graphify/INFERRED #community/Community_132

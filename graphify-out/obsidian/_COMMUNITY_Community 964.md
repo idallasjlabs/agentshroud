@@ -1,22 +1,23 @@
 ---
 type: community
-members: 9
+cohesion: 0.25
+members: 8
 ---
 
 # Community 964
 
-**Members:** 9 nodes
+**Cohesion:** 0.25 - loosely connected
+**Members:** 8 nodes
 
 ## Members
-- [[Claude Code (primary developer)]] - document - docs/project/legal/COMMUNICATION-TEMPLATES.md
-- [[Claude Code — Primary development agent]] - concept - docs/TEAM.md
-- [[For Agents and Bots]] - document - docs/project/legal/COMMUNICATION-TEMPLATES.md
-- [[Gemini CLI + Codex — Embedded QATest Engineers]] - concept - docs/TEAM.md
-- [[Gemini CLI  ChatGPT Codex (secondary agents)]] - document - docs/project/legal/COMMUNICATION-TEMPLATES.md
-- [[Git Worktrees — parallel branch development]] - concept - docs/TEAM.md
-- [[OpenClaw Bot (agentshroud-bot)]] - document - docs/project/legal/COMMUNICATION-TEMPLATES.md
-- [[Product Owner — Isaiah Jefferson]] - concept - docs/TEAM.md
-- [[Scrum Master  Agile Coach — AgentShroud Bot (OpenClaw)]] - concept - docs/TEAM.md
+- [[1.1 Application Type]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[1.2 Inventor(s)]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[1.3 Title of Invention]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[1.4 Correspondence Address]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[1.5 AttorneyAgent (if applicable)]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[1.6 U.S. Government Interest]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[1.7 Entity Status]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[SECTION 1 COVER SHEET (Form PTOSB16)]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,7 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 1108]]
+- 1 edge to [[_COMMUNITY_Community 801]]
 
 ## Top bridge nodes
-- [[For Agents and Bots]] - degree 5, connects to 1 community
+- [[SECTION 1 COVER SHEET (Form PTOSB16)]] - degree 8, connects to 1 community

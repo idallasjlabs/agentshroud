@@ -1,26 +1,28 @@
 ---
 type: community
+cohesion: 0.15
 members: 13
 ---
 
 # Community 695
 
+**Cohesion:** 0.15 - loosely connected
 **Members:** 13 nodes
 
 ## Members
-- [[After Disconnect]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
-- [[After Freeze]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
-- [[After Shutdown]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
-- [[Kill Switch Actions]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
-- [[Kill Switch Monitoring]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
-- [[Kill Switch Procedure_1]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
-- [[Method 1 Dashboard (Recommended)]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
-- [[Method 2 API]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
-- [[Method 3 Script]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
-- [[Method 4 Docker Direct (Last Resort)]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
-- [[Post-Kill Switch Procedure]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
-- [[Related Notes_68]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
-- [[When to Use]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[Bot Container Startup Failures]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
+- [[Bot Exits Before Gateway Is Healthy]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
+- [[Gateway Container Startup Failures]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
+- [[Gateway Health Check Never Passes]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
+- [[OpenClaw Not Starting]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
+- [[Related Notes_63]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
+- [[Startup Errors_2]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
+- [[`Could not load Claude OAuth token after retries`]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
+- [[`FileNotFoundError No agentshroud.yaml found`]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
+- [[`No auth_token found in secret file`]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
+- [[`ValueError Invalid YAML structure`]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
+- [[`startup Warning Gateway password file not found`]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
+- [[spaCy Model Not Loading]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,7 +32,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 788]]
+- 1 edge to [[_COMMUNITY_Community 289]]
 
 ## Top bridge nodes
-- [[Kill Switch Procedure_1]] - degree 10, connects to 1 community
+- [[Startup Errors_2]] - degree 4, connects to 1 community

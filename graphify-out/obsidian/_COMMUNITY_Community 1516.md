@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 1.00
 members: 2
 ---
 
 # Community 1516
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[test-system.sh]] - code - docker/scripts/test-system.sh
-- [[test-system.sh script]] - code - docker/scripts/test-system.sh
+- [[plan_1]] - document - docs/planning/redteam/plan.md
+- [[plan]] - document - docs/planning/redteam/plan.md
 
 ## Live Query (requires Dataview plugin)
 

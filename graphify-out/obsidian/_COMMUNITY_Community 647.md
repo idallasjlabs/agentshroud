@@ -1,28 +1,30 @@
 ---
 type: community
+cohesion: 0.20
 members: 15
 ---
 
 # Community 647
 
+**Cohesion:** 0.20 - loosely connected
 **Members:** 15 nodes
 
 ## Members
-- [[.test_apple_script_custom_services()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_compose_depends_on()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_compose_has_security_opts()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_compose_healthcheck()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_generate_apple_script()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_generate_custom_services()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_generate_docker_compose()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_generate_podman_compose()]] - code - gateway/tests/test_runtime_engines.py
-- [[Definition of a single service for compose generation.]] - rationale - gateway/runtime/compose_generator.py
-- [[Generate a compose YAML file for Docker or Podman.      Args         services]] - rationale - gateway/runtime/compose_generator.py
-- [[Generate a shell script to start services with Apple Containers.      Apple Cont]] - rationale - gateway/runtime/compose_generator.py
-- [[ServiceDef]] - code - gateway/runtime/compose_generator.py
-- [[TestComposeGenerator]] - code - gateway/tests/test_runtime_engines.py
-- [[generate_apple_script()]] - code - gateway/runtime/compose_generator.py
-- [[generate_compose()]] - code - gateway/runtime/compose_generator.py
+- [[.test_five_optimal()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[.test_five_sbom_and_trivy_clean()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[.test_four_sbom_and_trivy_with_criticals()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[.test_four_with_zero_highs()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[.test_one_when_only_sbom_exists()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[.test_three_sbom_has_packages_no_trivy()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[.test_three_with_sbom_trivy_no_criticals_but_has_highs()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[.test_two_empty_sbom()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[.test_zero_when_nothing_present()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[.test_zero_without_sbom()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[Return a mock Path that exists and whose glob() returns named mock files.]] - rationale - gateway/tests/test_scorecard_scoring.py
+- [[TestScoreImageIntegrity_1]] - code - gateway/tests/test_scorecard_scoring.py
+- [[TestScoreSupplyChain_1]] - code - gateway/tests/test_scorecard_scoring.py
+- [[_mock_dir_with_files()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[_mock_missing_dir()]] - code - gateway/tests/test_scorecard_scoring.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,20 +34,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_Community 197]]
-- 4 edges to [[_COMMUNITY_Community 453]]
-- 2 edges to [[_COMMUNITY_Community 358]]
-- 2 edges to [[_COMMUNITY_Community 220]]
-- 2 edges to [[_COMMUNITY_Community 330]]
-- 1 edge to [[_COMMUNITY_Community 439]]
-- 1 edge to [[_COMMUNITY_Community 364]]
-- 1 edge to [[_COMMUNITY_Community 528]]
-- 1 edge to [[_COMMUNITY_Community 1058]]
-- 1 edge to [[_COMMUNITY_Community 693]]
-- 1 edge to [[_COMMUNITY_Community 354]]
+- 4 edges to [[_COMMUNITY_Community 646]]
+- 3 edges to [[_COMMUNITY_Community 921]]
+- 2 edges to [[_COMMUNITY_Community 1061]]
+- 2 edges to [[_COMMUNITY_Community 1129]]
+- 1 edge to [[_COMMUNITY_Community 1130]]
 
 ## Top bridge nodes
-- [[ServiceDef]] - degree 20, connects to 9 communities
-- [[TestComposeGenerator]] - degree 14, connects to 4 communities
-- [[generate_compose()]] - degree 11, connects to 3 communities
-- [[generate_apple_script()]] - degree 7, connects to 3 communities
+- [[_mock_dir_with_files()]] - degree 13, connects to 5 communities
+- [[_mock_missing_dir()]] - degree 6, connects to 3 communities
+- [[TestScoreImageIntegrity_1]] - degree 7, connects to 2 communities
+- [[TestScoreSupplyChain_1]] - degree 6, connects to 1 community
+- [[.test_five_optimal()]] - degree 2, connects to 1 community

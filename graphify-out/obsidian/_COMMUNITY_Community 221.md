@@ -1,47 +1,48 @@
 ---
 type: community
-members: 34
+cohesion: 0.06
+members: 33
 ---
 
 # Community 221
 
-**Members:** 34 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 33 nodes
 
 ## Members
-- [[A healthy 200 message body must NOT be failed over.]] - rationale - gateway/tests/test_llm_proxy_failover.py
-- [[A real production incident a stalled chunked response from a local     model ba]] - rationale - gateway/tests/test_llm_proxy_failover.py
-- [[Failover for a qwen3 local ref must dispatch to LM Studio (not Ollama,     which]] - rationale - gateway/tests/test_llm_proxy_failover.py
-- [[HTTP 200 with an overloaded_error body must trigger local failover.]] - rationale - gateway/tests/test_llm_proxy_failover.py
-- [[HTTP 529 with an overloaded_error body must trigger local failover.]] - rationale - gateway/tests/test_llm_proxy_failover.py
-- [[LLMProxy_1]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[Same freeze, but on the HTTPError branch's e.read() — also moved off     the eve]] - rationale - gateway/tests/test_llm_proxy_failover.py
-- [[Updated 2026-06-15 a plain 429 that escaped the upstream retry loop     NOW tri]] - rationale - gateway/tests/test_llm_proxy_failover.py
-- [[Without the interactive flag the 3-retry loop is unchanged (guards the     herme]] - rationale - gateway/tests/test_llm_proxy_failover.py
-- [[_call_proxy()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[make_proxy()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_already_local_request_does_not_failover()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_failover_notification_cooldown()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_failover_notification_distinguishes_translated_vs_not()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_failover_routes_qwen3_to_lm_studio_with_normalized_model()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_forward_request_default_still_retries_429()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_forward_request_interactive_header_skips_retries()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_forward_request_slow_http_error_read_does_not_block_event_loop()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_forward_request_slow_read_does_not_block_event_loop()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_llm_proxy_failover.py]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_per_request_opt_out_header_skips_failover()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_proxy_failover_anthropic_overloaded_529()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_proxy_failover_anthropic_overloaded_http200()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_proxy_failover_anthropic_quota_success()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_proxy_failover_flag_off_returns_429()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_proxy_failover_gemini_ollama_down_no_false_notice()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_proxy_failover_gemini_quota_success()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_proxy_failover_gemini_streaming_passthrough()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_proxy_failover_gemini_tools_passthrough()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_proxy_failover_ollama_unreachable_returns_original_429()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_proxy_failover_openai_quota_dropin()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_proxy_normal_200_passthrough_untouched()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[test_proxy_post_retry_429_now_failovers()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[x-agentshroud-interactive 1 → the first 429 returns immediately (no     2s4s8]] - rationale - gateway/tests/test_llm_proxy_failover.py
+- [[Active Protections]] - document - docs/README.md
+- [[AgentShroud Documentation]] - document - docs/README.md
+- [[Bot Development Team (Future)]] - document - docs/README.md
+- [[Documentation Issues]] - document - docs/README.md
+- [[For Developers]] - document - docs/README.md
+- [[For New Users]] - document - docs/README.md
+- [[Naming Conventions]] - document - docs/README.md
+- [[Personal AI Assistant]] - document - docs/README.md
+- [[README_117]] - document - docs/README.md
+- [[Secure Development]] - document - docs/README.md
+- [[Security Tools]] - document - docs/README.md
+- [[Service Status]] - document - docs/README.md
+- [[System Issues]] - document - docs/README.md
+- [[architecture(.architecture) - Architecture & Planning]] - document - docs/README.md
+- [[deploy(.deploy) - Deployment Guides]] - document - docs/README.md
+- [[reference(.reference) - Reference Guides]] - document - docs/README.md
+- [[security(.security) - Security Documentation]] - document - docs/README.md
+- [[setup(.setup) - Setup & Configuration Guides]] - document - docs/README.md
+- [[⏳ Phase 4 SSH Capability (In Progress)]] - document - docs/README.md
+- [[✅ Phase 1 Foundation (Complete)]] - document - docs/README.md
+- [[✅ Phase 2 Gateway & Integration (Complete)]] - document - docs/README.md
+- [[✅ Phase 3A3B Security Hardening (Complete)]] - document - docs/README.md
+- [[✅ SSH Capability (Complete)]] - document - docs/README.md
+- [[🎯 Use Cases]] - document - docs/README.md
+- [[📋 Current Status]] - document - docs/README.md
+- [[📋 Phase 5 Live Action Dashboard (Planned)]] - document - docs/README.md
+- [[📋 Phase 6 Tailscale + Documentation (Planned)]] - document - docs/README.md
+- [[📚 Documentation Structure]] - document - docs/README.md
+- [[📝 Contributing]] - document - docs/README.md
+- [[📞 Getting Help]] - document - docs/README.md
+- [[🔐 Security Features]] - document - docs/README.md
+- [[🗂️ Archive]] - document - docs/README.md
+- [[🚀 Quick Start]] - document - docs/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -49,12 +50,3 @@ members: 34
 TABLE source_file, type FROM #community/Community_221
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 79]]
-- 1 edge to [[_COMMUNITY_Community 38]]
-
-## Top bridge nodes
-- [[test_llm_proxy_failover.py]] - degree 25, connects to 2 communities
-- [[make_proxy()]] - degree 24, connects to 1 community
-- [[LLMProxy_1]] - degree 2, connects to 1 community

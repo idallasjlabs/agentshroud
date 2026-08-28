@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/GOOGLE-SERVICES-SETUP.md"
 type: "document"
-community: "Community 266"
+community: "Community 263"
 location: "L380"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_266
+  - community/Community_263
 ---
 
 # ✅ Quick Start Command
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Google Services Setup - Calendar, Contacts, Keep]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_266
+#graphify/document #graphify/EXTRACTED #community/Community_263

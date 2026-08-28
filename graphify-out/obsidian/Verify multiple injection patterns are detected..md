@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "rationale"
-community: "Community 74"
+community: "Community 28"
 location: "L534"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_74
+  - community/Community_28
 ---
 
 # Verify multiple injection patterns are detected.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_multiple_prompt_patterns()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_74
+#graphify/rationale #graphify/EXTRACTED #community/Community_28

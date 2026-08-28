@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "code"
-community: "Community 143"
+community: "Community 144"
 location: "L426"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_143
+  - community/Community_144
 ---
 
 # SecurityError
@@ -20,4 +20,4 @@ tags:
 - [[Raised when security policy is violated_3]] - `rationale_for` [EXTRACTED]
 - [[browse.py_3]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_143
+#graphify/code #graphify/EXTRACTED #community/Community_144

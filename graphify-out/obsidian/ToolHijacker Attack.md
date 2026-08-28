@@ -1,11 +1,11 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "concept"
-community: "Community 376"
+community: "Community 166"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_376
+  - community/Community_166
 ---
 
 # ToolHijacker Attack
@@ -14,4 +14,4 @@ tags:
 - [[Prompt Injection Defense (Ensemble of 20+ Patterns)]] - `conceptually_related_to` [INFERRED]
 - [[agentshroud-ieee-paper]] - `cites` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_376
+#graphify/concept #graphify/EXTRACTED #community/Community_166

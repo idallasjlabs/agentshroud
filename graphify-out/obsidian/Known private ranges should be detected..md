@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_filter.py"
 type: "rationale"
-community: "Community 46"
+community: "Memory Lifecycle & Egress Filtering"
 location: "L226"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_46
+  - community/Memory_Lifecycle__Egress_Filtering
 ---
 
 # Known private ranges should be detected.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_private_ip_detection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_46
+#graphify/rationale #graphify/EXTRACTED #community/Memory_Lifecycle__Egress_Filtering

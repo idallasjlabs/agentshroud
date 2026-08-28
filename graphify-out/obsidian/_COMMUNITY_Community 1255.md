@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1255
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[AgentShroud Data Flow Diagrams]] - document - docs/flows/data-flow-diagram.md
-- [[Level 0 Context Diagram]] - document - docs/flows/data-flow-diagram.md
-- [[Level 1 Security Components]] - document - docs/flows/data-flow-diagram.md
-- [[Level 2 MCP Proxy Detail]] - document - docs/flows/data-flow-diagram.md
-- [[data-flow-diagram]] - document - docs/flows/data-flow-diagram.md
+- [[Agent Not Found]] - document - .github/COPILOT_CLI_SETUP.md
+- [[Authentication Issues_1]] - document - .github/COPILOT_CLI_SETUP.md
+- [[Configuration Not Loading]] - document - .github/COPILOT_CLI_SETUP.md
+- [[Path Permission Denied]] - document - .github/COPILOT_CLI_SETUP.md
+- [[Troubleshooting_3]] - document - .github/COPILOT_CLI_SETUP.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,3 +22,9 @@ members: 5
 TABLE source_file, type FROM #community/Community_1255
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 172]]
+
+## Top bridge nodes
+- [[Troubleshooting_3]] - degree 5, connects to 1 community

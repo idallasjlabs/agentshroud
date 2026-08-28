@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1271
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[10. Infrastructure & Runtime]] - document - docs/architecture/agentic-os.md
-- [[Container Architecture_1]] - document - docs/architecture/agentic-os.md
-- [[Container Hardening Summary]] - document - docs/architecture/agentic-os.md
-- [[Multi-Runtime Support]] - document - docs/architecture/agentic-os.md
-- [[`asb` CLI — Deployment Tool]] - document - docs/architecture/agentic-os.md
+- [[.test_read_generic_exception_yields_none()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[.test_read_nonzero_returncode_yields_none()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[.test_read_success_strips_whitespace()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[.test_read_timeout_yields_none()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[TestReadFrom1Password]] - code - gateway/tests/test_key_rotation_internals.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,7 +24,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 131]]
+- 3 edges to [[_COMMUNITY_Community 226]]
+- 1 edge to [[_COMMUNITY_Community 533]]
+- 1 edge to [[_COMMUNITY_Community 130]]
+- 1 edge to [[_COMMUNITY_Community 295]]
 
 ## Top bridge nodes
-- [[10. Infrastructure & Runtime]] - degree 5, connects to 1 community
+- [[TestReadFrom1Password]] - degree 10, connects to 4 communities

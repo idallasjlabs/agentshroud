@@ -1,23 +1,30 @@
 ---
 type: community
-members: 10
+cohesion: 0.13
+members: 15
 ---
 
 # Community 625
 
-**Members:** 10 nodes
+**Cohesion:** 0.13 - loosely connected
+**Members:** 15 nodes
 
 ## Members
-- [[AgentShroud Security Overview v0.8.0]] - document - docs/planning/v0.8/agentshroud-security-overview-v0.8.0.md
-- [[AgentShroud Security Overview — v0.8.0]] - document - docs/planning/v0.8/agentshroud-security-overview-v0.8.0.md
-- [[Before & After Security Finding Remediation]] - document - docs/planning/v0.8/agentshroud-security-overview-v0.8.0.md
-- [[Memory Refresh Context]] - document - docs/planning/v0.8/agentshroud-security-overview-v0.8.0.md
-- [[Security Assessment v0.8.0]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[Test Coverage Summary (Post-Remediation)]] - document - docs/planning/v0.8/agentshroud-security-overview-v0.8.0.md
-- [[agentshroud-security-overview-v0.8.0]] - document - docs/planning/v0.8/agentshroud-security-overview-v0.8.0.md
-- [[v0.9.0  v1.0.0 Roadmap]] - document - docs/planning/v0.8/agentshroud-security-overview-v0.8.0.md
-- [[v0.9.0 — Production Hardening]] - document - docs/planning/v0.8/agentshroud-security-overview-v0.8.0.md
-- [[v1.0.0 — Zero-Trust Compute]] - document - docs/planning/v0.8/agentshroud-security-overview-v0.8.0.md
+- [[Configuration  Environment Variables_6]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
+- [[ConnectionPool.get_or_create(server_name, config)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
+- [[Function Details_12]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
+- [[Key Classes  Functions_15]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
+- [[MCPProxy._execute_tool_call(tool_call, sanitized_params)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
+- [[MCPProxy.check_approval_required(tool_call)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
+- [[MCPProxy.get_stats()]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
+- [[MCPProxy.process_tool_call(tool_call, execute)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
+- [[MCPProxy.process_tool_result(tool_result, agent_id)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
+- [[Purpose_133]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
+- [[Related_18]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
+- [[Responsibilities_17]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
+- [[StdioConnection.send_request(method, params)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
+- [[mcp_proxy.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
+- [[mcp_proxy.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,9 +32,3 @@ members: 10
 TABLE source_file, type FROM #community/Community_625
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 1582]]
-
-## Top bridge nodes
-- [[Security Assessment v0.8.0]] - degree 2, connects to 1 community

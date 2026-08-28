@@ -1,41 +1,43 @@
 ---
 type: community
+cohesion: 0.10
 members: 28
 ---
 
 # Community 286
 
+**Cohesion:** 0.10 - loosely connected
 **Members:** 28 nodes
 
 ## Members
-- [[Any_79]] - code - voice_gateway/tts.py
-- [[Frequencies well below the Nyquist (≤3 kHz) must pass through with minimal     a]] - rationale - gateway/tests/test_voice_gateway.py
-- [[Kaiser-windowed sinc anti-aliasing filter suppresses content above the output]] - rationale - gateway/tests/test_voice_gateway.py
-- [[Resample raw S16LE mono PCM from src_rate Hz to dst_rate Hz.      For downsa]] - rationale - voice_gateway/tts.py
-- [[Return text suitable for TTS synthesis on the ESP32 voice interface.      Two]] - rationale - voice_gateway/tts.py
-- [[Split an agent reply into ordered sentence-sized TTS chunks.      Applies normal]] - rationale - voice_gateway/tts.py
-- [[Synthesize text to raw S16LE PCM mono audio bytes at TARGET_SAMPLE_RATE.]] - rationale - voice_gateway/tts.py
-- [[_TTS_LEAD_SILENCE — 0.8s leading silence pad constant]] - code - voice_gateway/server.py
-- [[_TTS_SENTENCE_GAP — 60ms inter-sentence silence constant]] - code - voice_gateway/server.py
-- [[_call_agent_stream() — SSE streaming from gateway forwardstream]] - code - voice_gateway/server.py
-- [[_call_llm() — fast-path POST to gateway v1chatcompletions]] - code - voice_gateway/server.py
-- [[_get_pipeline()]] - code - voice_gateway/tts.py
-- [[_parse_model_switch_command() — parses spoken usetellswitch commands]] - code - voice_gateway/server.py
-- [[_parse_volume_command() — parses spoken 'set volume X%' command]] - code - voice_gateway/server.py
-- [[_record_turn_latency() — structured per-turn latency logging]] - code - voice_gateway/server.py
-- [[_resample_s16le_mono()]] - code - voice_gateway/tts.py
-- [[_resample_s16le_mono() — Kaiser-windowed sinc resampler]] - code - voice_gateway/tts.py
-- [[_voice_forward_metadata() — builds no_memory metadata for forward]] - code - voice_gateway/server.py
-- [[_voice_system_message() — AGENTSHROUD_VERSION-grounded system prompt]] - code - voice_gateway/server.py
-- [[normalize_for_speech()]] - code - voice_gateway/tts.py
-- [[normalize_for_speech() — redaction-token + markdown normalization]] - code - voice_gateway/tts.py
-- [[split_for_speech()]] - code - voice_gateway/tts.py
-- [[split_for_speech() — splits reply into sentence-sized TTS chunks]] - code - voice_gateway/tts.py
-- [[synthesize()]] - code - voice_gateway/tts.py
-- [[test_resample_antialias_attenuates_above_nyquist()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_resample_passband_preserved()]] - code - gateway/tests/test_voice_gateway.py
-- [[tts.py]] - code - voice_gateway/tts.py
-- [[voice_endpoint() — voice WebSocket handler (IDLE→LISTENING→THINKING→SPEAKING state machine)]] - code - voice_gateway/server.py
+- [[.test_empty_tool_calls_not_a_tool_call()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[.test_empty_tool_results_not_a_tool_call()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[.test_non_owner_cross_path_plain_message_still_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[.test_owner_message_mentioning_other_users_file_not_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[.test_owner_plain_message_with_path_not_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[.test_plain_chat_not_a_tool_call()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[.test_plain_message_mentioning_config_yaml_not_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[.test_plain_message_mentioning_etc_passwd_not_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[.test_plain_message_mentioning_memory_not_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[.test_tool_call_with_unauthorized_path_still_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[.test_tool_calls_key_detected()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[.test_tool_results_key_detected()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[.test_type_field_message_not_tool_call()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[.test_type_field_tool_call()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[FileSandbox must NOT block plain chat messages that mention file-like words.]] - rationale - gateway/tests/test_file_sandbox_message_gate.py
+- [[MiddlewareManager with real session_manager, all other deps mocked.      Uses __]] - rationale - gateway/tests/test_file_sandbox_message_gate.py
+- [[Owner (8096968754) must not be blocked by content-pattern scanning.     They sho]] - rationale - gateway/tests/test_file_sandbox_message_gate.py
+- [[TestFileSandboxSkippedForPlainMessages]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[TestIsToolCallRequest]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[TestOwnerBypassContentPatternChecks]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[Unit tests for the _is_tool_call_request helper (TDD RED phase).]] - rationale - gateway/tests/test_file_sandbox_message_gate.py
+- [[_plain_msg()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[_tool_call_msg()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[_tool_result_msg()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[manager()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[session_manager()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[temp_workspace()]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[test_file_sandbox_message_gate.py]] - code - gateway/tests/test_file_sandbox_message_gate.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -45,15 +47,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_Community 37]]
-- 2 edges to [[_COMMUNITY_Community 115]]
-- 1 edge to [[_COMMUNITY_Community 145]]
-- 1 edge to [[_COMMUNITY_Community 781]]
-- 1 edge to [[_COMMUNITY_Community 740]]
+- 5 edges to [[_COMMUNITY_Session Management]]
+- 4 edges to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
+- 4 edges to [[_COMMUNITY_Middleware & Lifespan]]
 
 ## Top bridge nodes
-- [[tts.py]] - degree 7, connects to 2 communities
-- [[normalize_for_speech()]] - degree 6, connects to 2 communities
-- [[split_for_speech()]] - degree 5, connects to 2 communities
-- [[voice_endpoint() — voice WebSocket handler (IDLE→LISTENING→THINKING→SPEAKING state machine)]] - degree 10, connects to 1 community
-- [[synthesize()]] - degree 9, connects to 1 community
+- [[test_file_sandbox_message_gate.py]] - degree 12, connects to 3 communities
+- [[TestIsToolCallRequest]] - degree 12, connects to 3 communities
+- [[TestFileSandboxSkippedForPlainMessages]] - degree 9, connects to 3 communities
+- [[TestOwnerBypassContentPatternChecks]] - degree 8, connects to 3 communities
+- [[session_manager()]] - degree 2, connects to 1 community

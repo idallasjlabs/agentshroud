@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_email_owner_bypasses_pii.py"
 type: "rationale"
-community: "Community 109"
+community: "Community 1059"
 location: "L114"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_109
+  - community/Community_1059
 ---
 
 # Unknown recipient's body is PII-scrubbed before approval queue submission.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_unknown_recipient_body_still_scrubbed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_109
+#graphify/rationale #graphify/EXTRACTED #community/Community_1059

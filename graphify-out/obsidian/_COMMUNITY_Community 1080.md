@@ -1,20 +1,21 @@
 ---
 type: community
-members: 7
+cohesion: 0.53
+members: 6
 ---
 
 # Community 1080
 
-**Members:** 7 nodes
+**Cohesion:** 0.53 - moderately connected
+**Members:** 6 nodes
 
 ## Members
-- [[Purpose_31]] - document - .agents/skills/i-sec/README.md
-- [[README_31]] - document - .agents/skills/i-sec/README.md
-- [[Related Skills_34]] - document - .agents/skills/i-sec/README.md
-- [[Security Review (SEC)]] - document - .agents/skills/i-sec/README.md
-- [[Usage_34]] - document - .agents/skills/i-sec/README.md
-- [[i-security-reviewer]] - document - docker/config/hermes/agents/i-security-reviewer.md
-- [[security-reviewer]] - document - docker/config/hermes/agents/i-security-reviewer.md
+- [[StreamReader_1]] - code - docker/bots/hermes/docker_proxy_relay.py
+- [[StreamWriter_1]] - code - docker/bots/hermes/docker_proxy_relay.py
+- [[_handle()_1]] - code - docker/bots/hermes/docker_proxy_relay.py
+- [[_pump()]] - code - docker/bots/hermes/docker_proxy_relay.py
+- [[docker_proxy_relay.py]] - code - docker/bots/hermes/docker_proxy_relay.py
+- [[main()_3]] - code - docker/bots/hermes/docker_proxy_relay.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,3 +23,11 @@ members: 7
 TABLE source_file, type FROM #community/Community_1080
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 835]]
+- 1 edge to [[_COMMUNITY_Community 528]]
+- 1 edge to [[_COMMUNITY_Community 476]]
+
+## Top bridge nodes
+- [[docker_proxy_relay.py]] - degree 6, connects to 3 communities

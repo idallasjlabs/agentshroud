@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/stt.py"
 type: "code"
-community: "Community 740"
+community: "Community 737"
 location: "L114"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_740
+  - community/Community_737
 ---
 
 # transcribe()
@@ -18,6 +18,5 @@ tags:
 - [[record_transcription_latency()]] - `calls` [EXTRACTED]
 - [[record_transcription_latency() — RTFlatency structured log]] - `calls` [EXTRACTED]
 - [[stt.py]] - `contains` [EXTRACTED]
-- [[voice_endpoint() — voice WebSocket handler (IDLE→LISTENING→THINKING→SPEAKING state machine)]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_740
+#graphify/code #graphify/EXTRACTED #community/Community_737

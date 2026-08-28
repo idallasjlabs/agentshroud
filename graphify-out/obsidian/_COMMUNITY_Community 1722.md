@@ -1,14 +1,16 @@
 ---
 type: community
+cohesion: 1.00
 members: 1
 ---
 
 # Community 1722
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[PostgreSQL RDS (fe-gsdl-poc-database)]] - concept - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[esp_err.h_1]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/esp_err.h
 
 ## Live Query (requires Dataview plugin)
 

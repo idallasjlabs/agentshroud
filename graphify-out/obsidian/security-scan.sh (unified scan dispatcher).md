@@ -1,11 +1,11 @@
 ---
 source_file: "docker/scripts/security-scan.sh"
 type: "code"
-community: "Community 505"
+community: "Community 427"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_505
+  - community/Community_427
 ---
 
 # security-scan.sh (unified scan dispatcher)
@@ -18,4 +18,4 @@ tags:
 - [[security-report.sh]] - `shares_data_with` [EXTRACTED]
 - [[security-scheduler.sh]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_505
+#graphify/code #graphify/INFERRED #community/Community_427

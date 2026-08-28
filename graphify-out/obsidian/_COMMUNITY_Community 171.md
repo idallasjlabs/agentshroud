@@ -1,69 +1,54 @@
 ---
 type: community
-members: 56
+cohesion: 0.08
+members: 39
 ---
 
 # Community 171
 
-**Members:** 56 nodes
+**Cohesion:** 0.08 - loosely connected
+**Members:** 39 nodes
 
 ## Members
-- [[.__call__()_2]] - code - gateway/tests/test_citation_verifier.py
-- [[.__init__()_61]] - code - gateway/security/citation_verifier.py
-- [[.__init__()_141]] - code - gateway/tests/test_citation_verifier.py
-- [[.__init__()_196]] - code - gateway/web/api.py
-- [[._verifier()]] - code - gateway/tests/test_citation_verifier.py
-- [[._verifier()_1]] - code - gateway/tests/test_citation_verifier.py
-- [[._verify_url()]] - code - gateway/security/citation_verifier.py
-- [[.test_allowlisted_live_source_kept()]] - code - gateway/tests/test_citation_verifier.py
-- [[.test_dropped_count_is_tamper_evident()]] - code - gateway/tests/test_citation_verifier.py
-- [[.test_generated_at_is_preserved()]] - code - gateway/tests/test_citation_verifier.py
-- [[.test_host_confusion_urls_rejected_and_never_fetched()]] - code - gateway/tests/test_citation_verifier.py
-- [[.test_mixed_valid_and_invalid_keeps_only_valid()]] - code - gateway/tests/test_citation_verifier.py
-- [[.test_multiple_valid_citations_all_kept()]] - code - gateway/tests/test_citation_verifier.py
-- [[.test_no_candidate_urls_dropped()]] - code - gateway/tests/test_citation_verifier.py
-- [[.test_not_ok_on_non_2xx()]] - code - gateway/tests/test_citation_verifier.py
-- [[.test_not_ok_without_content()]] - code - gateway/tests/test_citation_verifier.py
-- [[.test_off_allowlist_url_dropped_and_not_fetched()]] - code - gateway/tests/test_citation_verifier.py
-- [[.test_ok_requires_2xx_and_content()]] - code - gateway/tests/test_citation_verifier.py
-- [[.test_report_all_unverified_is_empty()]] - code - gateway/tests/test_citation_verifier.py
-- [[.test_report_keeps_verified_and_counts_dropped()]] - code - gateway/tests/test_citation_verifier.py
-- [[.test_self_asserted_verified_is_ignored()]] - code - gateway/tests/test_citation_verifier.py
-- [[.test_source_without_content_dropped()]] - code - gateway/tests/test_citation_verifier.py
-- [[.test_ssrf_unsafe_urls_rejected_before_fetch()]] - code - gateway/tests/test_citation_verifier.py
-- [[.test_unparseable_url_dropped()]] - code - gateway/tests/test_citation_verifier.py
-- [[.test_unreachable_source_dropped()]] - code - gateway/tests/test_citation_verifier.py
-- [[.test_verified_report_persists_with_intact_hashchain()]] - code - gateway/tests/test_citation_verifier.py
-- [[.test_wildcard_allowlist_match_kept()]] - code - gateway/tests/test_citation_verifier.py
-- [[.verify_entry()]] - code - gateway/security/citation_verifier.py
-- [[.verify_report()]] - code - gateway/security/citation_verifier.py
-- [[A draft competitive-intel report submitted for citation verification.]] - rationale - gateway/web/api.py
-- [[An unverified competitor claim submitted for citation checking.]] - rationale - gateway/security/citation_verifier.py
-- [[Build a CitationVerifier wired to the production (httpx) fetcher.      Isolated]] - rationale - gateway/web/api.py
-- [[CitationVerifier]] - code - gateway/security/citation_verifier.py
-- [[Deterministic fetcher maps url - (status, sha_or_None). Records calls.]] - rationale - gateway/tests/test_citation_verifier.py
-- [[DraftEntry]] - code - gateway/security/citation_verifier.py
-- [[FetchOutcome_1]] - code - gateway/tests/test_citation_verifier.py
-- [[IntelDraftEntry]] - code - gateway/web/api.py
-- [[IntelDraftRequest]] - code - gateway/web/api.py
-- [[One unverified competitor claim + its candidate source URLs.]] - rationale - gateway/web/api.py
-- [[Raised when SkillGuard blocks a dangerous skill tree before deploy.]] - rationale - gateway/web/api.py
-- [[Re-fetch url and return a Citation iff it is allowlisted + live.          SSRF]] - rationale - gateway/security/citation_verifier.py
-- [[Return a CompetitorEntry with only its valid citations, or None.          None m]] - rationale - gateway/security/citation_verifier.py
-- [[SkillGuardBlocked]] - code - gateway/web/api.py
-- [[TestFetchOutcome]] - code - gateway/tests/test_citation_verifier.py
-- [[TestVerifyEntry]] - code - gateway/tests/test_citation_verifier.py
-- [[TestVerifyReport]] - code - gateway/tests/test_citation_verifier.py
-- [[Verifies competitor claims against re-fetched, allowlisted sources.]] - rationale - gateway/security/citation_verifier.py
-- [[Verify and persist a draft competitive-intel report (SCRUM-75).      Each draft]] - rationale - gateway/web/api.py
-- [[Verify every draft claim; return a report of only verified claims.          Clai]] - rationale - gateway/security/citation_verifier.py
-- [[_FakeFetcher]] - code - gateway/tests/test_citation_verifier.py
-- [[_intel_verifier()]] - code - gateway/web/api.py
-- [[citation_verifier module]] - code - gateway/security/citation_verifier.py
-- [[intel_report module (CompetitiveIntelReport, IntelReportStore)]] - code - gateway/security/intel_report.py
-- [[submit_competitive_intel()]] - code - gateway/web/api.py
-- [[test_citation_verifier.py]] - code - gateway/tests/test_citation_verifier.py
-- [[test_default_allowlist_uses_permanent_egress_domains()]] - code - gateway/tests/test_citation_verifier.py
+- [[Add a comment to an existing Jira issue.]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[ArgumentParser]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[Build (url, body, headers) for a POST to the gateway op-proxy.]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[Build the REST v3 create-issue request body.]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[Create a Jira issue. Returns the new issue key (e.g. 'SCRUM-124').]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[Fetch one secret field from the gateway op-proxy. Returns the value.]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[Issue one HTTP request and return (status_code, response_text).      HTTPError i]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[Match a transition by its own name or its destination status name.]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[Move an issue to the named status (matched against available transitions).]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[Parse argv, resolve credentials, dispatch the subcommand. Returns exit code.]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[REST v3 URL for creating an issue.]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[REST v3 add-comment URL for an arbitrary issue key.]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[REST v3 transitions URL (GET to list, POST to apply) for an issue.]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[Resolve (token, email, cloud_id) via the gateway op-proxy plus a public     tena]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[Resolve a site domain to its Atlassian cloud ID via the public,     unauthentica]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[Return the HTTP Basic auth header value base64(emailtoken).]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[Unauthenticated site-to-cloud-ID discovery URL.]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[_adf_doc()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[_auth_headers()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[_build_arg_parser()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[_cloud_base_url()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[_http_request()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[add_comment()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[build_basic_auth_header()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[build_comment_payload()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[build_comment_url()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[build_create_issue_payload()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[build_issue_url()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[build_op_proxy_request()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[build_tenant_info_url()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[build_transitions_url()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[create_issue()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[fetch_credentials()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[fetch_op_secret()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[find_transition_id()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[jira_dev_ticket.py]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[resolve_cloud_id()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[run()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[transition_issue()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -73,17 +58,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 30 edges to [[_COMMUNITY_Community 133]]
-- 22 edges to [[_COMMUNITY_Community 113]]
-- 16 edges to [[_COMMUNITY_Community 45]]
-- 8 edges to [[_COMMUNITY_Community 31]]
-- 2 edges to [[_COMMUNITY_Community 18]]
-- 1 edge to [[_COMMUNITY_Community 38]]
-- 1 edge to [[_COMMUNITY_Community 1349]]
+- 1 edge to [[_COMMUNITY_Community 249]]
 
 ## Top bridge nodes
-- [[DraftEntry]] - degree 45, connects to 4 communities
-- [[CitationVerifier]] - degree 43, connects to 4 communities
-- [[SkillGuardBlocked]] - degree 8, connects to 4 communities
-- [[IntelDraftRequest]] - degree 7, connects to 3 communities
-- [[IntelDraftEntry]] - degree 6, connects to 3 communities
+- [[build_comment_payload()]] - degree 4, connects to 1 community

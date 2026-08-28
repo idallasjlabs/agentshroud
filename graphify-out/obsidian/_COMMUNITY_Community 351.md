@@ -1,37 +1,40 @@
 ---
 type: community
-members: 24
+cohesion: 0.08
+members: 25
 ---
 
 # Community 351
 
-**Members:** 24 nodes
+**Cohesion:** 0.08 - loosely connected
+**Members:** 25 nodes
 
 ## Members
-- [[graphify]] - document - .agents/skills/graphify/SKILL.md
-- [[For --update and --cluster-only]] - document - .agents/skills/graphify/SKILL.md
-- [[For graphify add and --watch]] - document - .agents/skills/graphify/SKILL.md
-- [[For graphify query]] - document - .agents/skills/graphify/SKILL.md
-- [[For the commit hook and native AGENTS.md integration]] - document - .agents/skills/graphify/SKILL.md
-- [[Honesty Rules]] - document - .agents/skills/graphify/SKILL.md
-- [[Interpreter guard for subcommands]] - document - .agents/skills/graphify/SKILL.md
-- [[Part A - Structural extraction for code files]] - document - .agents/skills/graphify/SKILL.md
-- [[Part B - Semantic extraction (parallel subagents)]] - document - .agents/skills/graphify/SKILL.md
-- [[Part C - Merge AST + semantic into final extraction]] - document - .agents/skills/graphify/SKILL.md
-- [[SKILL]] - document - .agents/skills/graphify/SKILL.md
-- [[Step 0 - GitHub repos and multi-path merge (only if a URL or several paths)]] - document - .agents/skills/graphify/SKILL.md
-- [[Step 1 - Ensure graphify is installed]] - document - .agents/skills/graphify/SKILL.md
-- [[Step 2 - Detect files]] - document - .agents/skills/graphify/SKILL.md
-- [[Step 2.5 - Video and audio (only if video files detected)]] - document - .agents/skills/graphify/SKILL.md
-- [[Step 3 - Extract entities and relationships]] - document - .agents/skills/graphify/SKILL.md
-- [[Step 4 - Build graph, cluster, analyze, generate outputs]] - document - .agents/skills/graphify/SKILL.md
-- [[Step 5 - Label communities]] - document - .agents/skills/graphify/SKILL.md
-- [[Step 6 - Generate Obsidian vault (opt-in) + HTML]] - document - .agents/skills/graphify/SKILL.md
-- [[Step 9 - Save manifest, update cost tracker, clean up, and report]] - document - .agents/skills/graphify/SKILL.md
-- [[Steps 6b-8 - Wiki, Neo4j, SVG, GraphML, MCP, benchmark (only on their flags)]] - document - .agents/skills/graphify/SKILL.md
-- [[Usage]] - document - .agents/skills/graphify/SKILL.md
-- [[What You Must Do When Invoked]] - document - .agents/skills/graphify/SKILL.md
-- [[What graphify is for]] - document - .agents/skills/graphify/SKILL.md
+- [[.setup_method()_22]] - code - gateway/tests/test_resource_guard.py
+- [[.teardown_method()_5]] - code - gateway/tests/test_resource_guard.py
+- [[.test_brief_spike_below_debounce_does_not_alert()]] - code - gateway/tests/test_resource_guard.py
+- [[.test_check_resource_over_limit_blocked()]] - code - gateway/tests/test_resource_guard.py
+- [[.test_check_resource_temp_files_limit()]] - code - gateway/tests/test_resource_guard.py
+- [[.test_check_resource_under_limit_passes()]] - code - gateway/tests/test_resource_guard.py
+- [[.test_invalid_resource_type()]] - code - gateway/tests/test_resource_guard.py
+- [[.test_multiple_agents_isolated()]] - code - gateway/tests/test_resource_guard.py
+- [[.test_request_count_limiting()]] - code - gateway/tests/test_resource_guard.py
+- [[.test_resource_guard_config()]] - code - gateway/tests/test_resource_guard.py
+- [[.test_stop_cancels_monitor_task()]] - code - gateway/tests/test_resource_guard.py
+- [[.test_system_resource_monitoring_alerts_after_debounce()]] - code - gateway/tests/test_resource_guard.py
+- [[.test_window_expiry_resets_usage()]] - code - gateway/tests/test_resource_guard.py
+- [[A single over-threshold sample followed by an under-threshold sample is suppress]] - rationale - gateway/tests/test_resource_guard.py
+- [[Sustained high CPU fires the alert after debounce samples are crossed.]] - rationale - gateway/tests/test_resource_guard.py
+- [[Test ResourceGuardConfig dataclass.]] - rationale - gateway/tests/test_resource_guard.py
+- [[Test handling of invalid resource types.]] - rationale - gateway/tests/test_resource_guard.py
+- [[Test request count per minute limiting.]] - rationale - gateway/tests/test_resource_guard.py
+- [[Test temp file count limiting.]] - rationale - gateway/tests/test_resource_guard.py
+- [[Test that different agents have isolated resource tracking.]] - rationale - gateway/tests/test_resource_guard.py
+- [[Test that resource usage over limits is blocked.]] - rationale - gateway/tests/test_resource_guard.py
+- [[Test that resource usage resets after time window.]] - rationale - gateway/tests/test_resource_guard.py
+- [[Test that resource usage under limits passes.]] - rationale - gateway/tests/test_resource_guard.py
+- [[TestResourceGuard]] - code - gateway/tests/test_resource_guard.py
+- [[stop() should cancel background monitor cleanly.]] - rationale - gateway/tests/test_resource_guard.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,3 +42,14 @@ members: 24
 TABLE source_file, type FROM #community/Community_351
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 4 edges to [[_COMMUNITY_Community 225]]
+- 3 edges to [[_COMMUNITY_Community 88]]
+- 1 edge to [[_COMMUNITY_Community 807]]
+
+## Top bridge nodes
+- [[TestResourceGuard]] - degree 16, connects to 3 communities
+- [[.test_stop_cancels_monitor_task()]] - degree 4, connects to 2 communities
+- [[.setup_method()_22]] - degree 3, connects to 2 communities
+- [[.test_resource_guard_config()]] - degree 3, connects to 1 community

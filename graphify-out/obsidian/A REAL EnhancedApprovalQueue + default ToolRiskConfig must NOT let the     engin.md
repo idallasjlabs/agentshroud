@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy.py"
 type: "rationale"
-community: "Community 34"
+community: "Community 33"
 location: "L465"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_34
+  - community/Community_33
 ---
 
 # A REAL EnhancedApprovalQueue + default ToolRiskConfig must NOT let the     engin
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_enforce_real_queue_high_risk_not_downgraded_to_allow()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_34
+#graphify/rationale #graphify/EXTRACTED #community/Community_33

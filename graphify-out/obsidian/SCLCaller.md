@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/auth.py"
 type: "code"
-community: "Community 18"
+community: "Community 14"
 location: "L138"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_18
+  - community/Community_14
 ---
 
 # SCLCaller
@@ -38,7 +38,7 @@ tags:
 - [[JSONResponse]] - `uses` [INFERRED]
 - [[LoginRequest]] - `uses` [INFERRED]
 - [[RenameGroupRequest]] - `uses` [INFERRED]
-- [[Request_6]] - `uses` [INFERRED]
+- [[Request_7]] - `uses` [INFERRED]
 - [[Resolved identity of the SCL caller, including role and user_id.]] - `rationale_for` [EXTRACTED]
 - [[SCLCaller_1]] - `uses` [INFERRED]
 - [[SCLInterface_1]] - `uses` [INFERRED]
@@ -50,7 +50,7 @@ tags:
 - [[SetRoleRequest]] - `uses` [INFERRED]
 - [[SetUserModeRequest]] - `uses` [INFERRED]
 - [[UpdateDisplayNameRequest]] - `uses` [INFERRED]
-- [[WebSocket_5]] - `uses` [INFERRED]
+- [[WebSocket_6]] - `uses` [INFERRED]
 - [[_make_owner_caller()]] - `calls` [EXTRACTED]
 - [[_resolve_caller()]] - `references` [EXTRACTED]
 - [[auth.py_1]] - `contains` [EXTRACTED]
@@ -59,4 +59,4 @@ tags:
 - [[test_soc_bots.py]] - `imports` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_18
+#graphify/code #graphify/INFERRED #community/Community_14

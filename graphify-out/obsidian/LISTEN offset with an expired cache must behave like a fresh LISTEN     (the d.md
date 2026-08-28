@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "Community 101"
-location: "L3219"
+community: "Community 89"
+location: "L3415"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_101
+  - community/Community_89
 ---
 
 # LISTEN <offset> with an expired cache must behave like a fresh LISTEN     (the d
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_listen_offset_with_stale_cache_degrades_to_fresh()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_101
+#graphify/rationale #graphify/EXTRACTED #community/Community_89

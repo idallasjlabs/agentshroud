@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
 type: "document"
-community: "Community 1042"
+community: "Community 1045"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1042
+  - community/Community_1045
 ---
 
 # BROWSER_FETCH_SKILL.md
@@ -19,4 +19,4 @@ tags:
 - [[Playwright Headless Chromium Decryption]] - `references` [EXTRACTED]
 - [[SecureBrowser Skill_1]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1042
+#graphify/document #graphify/EXTRACTED #community/Community_1045

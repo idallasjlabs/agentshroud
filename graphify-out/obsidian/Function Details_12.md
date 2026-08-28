@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md"
 type: "document"
-community: "Community 632"
+community: "Community 625"
 location: "L37"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_632
+  - community/Community_625
 ---
 
 # Function Details
@@ -21,4 +21,4 @@ tags:
 - [[StdioConnection.send_request(method, params)]] - `contains` [EXTRACTED]
 - [[mcp_proxy.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_632
+#graphify/document #graphify/EXTRACTED #community/Community_625

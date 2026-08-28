@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/healthcheck/SKILL.md"
 type: "document"
-community: "Community 714"
+community: "Community 712"
 location: "L180"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_714
+  - community/Community_712
 ---
 
 # Required prompt to schedule (always)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Periodic checks]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_714
+#graphify/document #graphify/EXTRACTED #community/Community_712

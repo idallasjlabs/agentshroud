@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "Community 1338"
+community: "Community 996"
 location: "L20"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1338
+  - community/Community_996
 ---
 
 # Test suite for the outbound information filter.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestOutboundInfoFilter]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1338
+#graphify/rationale #graphify/EXTRACTED #community/Community_996

@@ -1,29 +1,31 @@
 ---
 type: community
+cohesion: 0.14
 members: 16
 ---
 
 # Community 556
 
+**Cohesion:** 0.14 - loosely connected
 **Members:** 16 nodes
 
 ## Members
-- [[1. URL Forwarder]] - document - browser-extension/README.md
-- [[2. Page Clipper]] - document - browser-extension/README.md
-- [[3. Form Fill Request (Reverse Flow)]] - document - browser-extension/README.md
-- [[4. Tab Session Exporter]] - document - browser-extension/README.md
-- [[5. Reading List Queue]] - document - browser-extension/README.md
-- [[Browser Extension]] - document - browser-extension/README.md
-- [[Browser Support]] - document - browser-extension/README.md
-- [[Features]] - document - browser-extension/README.md
-- [[ForwardRequest handler (forward endpoint)]] - code - gateway/ingest_api/routes/forward.py
-- [[Gateway wiring]] - document - browser-extension/README.md
-- [[Privacy Features]] - document - browser-extension/README.md
-- [[README_39]] - document - browser-extension/README.md
-- [[Safari]] - document - browser-extension/README.md
-- [[Structure]] - document - browser-extension/README.md
-- [[Tests_6]] - document - browser-extension/README.md
-- [[browser-extension package.json (Jest test harness)]] - code - browser-extension/package.json
+- [[03-data]] - document - docs/diagrams/03-data.md
+- [[10. Data Dictionary  Catalog Map]] - document - docs/diagrams/03-data.md
+- [[7. Data Flow Diagram — How Data Moves Through the System]] - document - docs/diagrams/03-data.md
+- [[8. Entity Relationship Diagram (ERD)]] - document - docs/diagrams/03-data.md
+- [[9. Data Lineage Diagram]] - document - docs/diagrams/03-data.md
+- [[AgentShroud — Data Diagrams]] - document - docs/diagrams/03-data.md
+- [[Current Status_2]] - document - docs/data/README.md
+- [[Data Dictionary  Catalog Map]] - concept - docs/diagrams/03-data.md
+- [[Data Documentation]] - document - docs/data/README.md
+- [[Data Flow Diagram]] - concept - docs/diagrams/03-data.md
+- [[Data Lineage Diagram]] - concept - docs/diagrams/03-data.md
+- [[Entity Relationship Diagram (ledger, approval_items)]] - concept - docs/diagrams/03-data.md
+- [[Planned Documents_1]] - document - docs/data/README.md
+- [[README_119]] - document - docs/data/README.md
+- [[Rendered Data Flow Diagram (PNG)]] - image - docs/diagrams/images/diagram-07-data-flow.png
+- [[Rendered ERD Diagram (PNG)]] - image - docs/diagrams/images/diagram-08-erd.png
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,9 +35,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 433]]
-- 1 edge to [[_COMMUNITY_Community 506]]
+- 1 edge to [[_COMMUNITY_Community 442]]
+- 1 edge to [[_COMMUNITY_Community 834]]
 
 ## Top bridge nodes
-- [[Browser Extension]] - degree 6, connects to 1 community
-- [[README_39]] - degree 4, connects to 1 community
+- [[03-data]] - degree 6, connects to 1 community
+- [[Entity Relationship Diagram (ledger, approval_items)]] - degree 5, connects to 1 community

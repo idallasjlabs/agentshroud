@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "Community 36"
+community: "Community 44"
 location: "L125"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_36
+  - community/Community_44
 ---
 
 # Exception
@@ -28,4 +28,4 @@ tags:
 - [[PermissionLevel]] - `uses` [INFERRED]
 - [[StdioConnection]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_36
+#graphify/code #graphify/INFERRED #community/Community_44

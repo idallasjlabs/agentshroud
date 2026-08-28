@@ -1,16 +1,18 @@
 ---
 type: community
+cohesion: 1.00
 members: 3
 ---
 
 # Community 1395
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 3 nodes
 
 ## Members
-- [[Diagram 08 Entity Relationship Diagram]] - image - docs/diagrams/images/diagram-08-erd.svg
-- [[Diagram 09 Data Lineage]] - image - docs/diagrams/images/diagram-09-data-lineage.svg
-- [[Diagram 10 Data Dictionary (Mindmap)]] - image - docs/diagrams/images/diagram-10-data-dictionary.svg
+- [[MemoryIntegrityMonitor Tamper Detection]] - code - gateway/security/memory_integrity.py
+- [[MemoryLifecycleManager PII Scan and Retention]] - code - gateway/security/memory_lifecycle.py
+- [[Test Memory Lifecycle and Integrity]] - code - gateway/tests/test_memory_lifecycle.py
 
 ## Live Query (requires Dataview plugin)
 

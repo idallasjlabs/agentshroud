@@ -1,24 +1,29 @@
 ---
 type: community
-members: 11
+cohesion: 0.14
+members: 14
 ---
 
 # Community 675
 
-**Members:** 11 nodes
+**Cohesion:** 0.14 - loosely connected
+**Members:** 14 nodes
 
 ## Members
-- [[4. Compliance & Standards Alignment]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
-- [[4.1 IEC 62443 (Industrial Automation Security)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.2 EU AI Act]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.3 NIST AI Risk Management Framework (AI RMF)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4a. OT  Industrial Security (P1 — Critical)]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
-- [[4b. Enterprise IT (P2 — High)]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
-- [[4c. Container & Cloud Security (P2 — High)]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
-- [[4d. Regulatory Compliance (P3 — Medium)]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
-- [[4e. Tooling Integration (P3 — Medium)]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
-- [[4f. Documentation Deliverables]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
-- [[5. Compliance & Standards Alignment]] - document - docs/papers/agentshroud-whitepaper.md
+- [[Configuration  Environment Variables_9]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
+- [[Function Details_15]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
+- [[Key Classes  Functions_18]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
+- [[Purpose_136]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
+- [[Related_22]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
+- [[Responsibilities_20]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
+- [[SSRF Detection Coverage]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
+- [[URLAnalyzer._check_base64(parsed, result)]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
+- [[URLAnalyzer._is_private_ip(ip_str)]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
+- [[URLAnalyzer._is_ssrf(hostname)]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
+- [[URLAnalyzer.analyze(url)]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
+- [[URLAnalyzer.analyze_and_pin(url)]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
+- [[url_analyzer.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
+- [[url_analyzer.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,11 +31,3 @@ members: 11
 TABLE source_file, type FROM #community/Community_675
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 401]]
-- 1 edge to [[_COMMUNITY_Community 360]]
-
-## Top bridge nodes
-- [[4. Compliance & Standards Alignment]] - degree 11, connects to 2 communities
-- [[5. Compliance & Standards Alignment]] - degree 4, connects to 1 community

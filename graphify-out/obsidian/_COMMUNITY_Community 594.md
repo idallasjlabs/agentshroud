@@ -1,29 +1,30 @@
 ---
 type: community
-members: 16
+cohesion: 0.14
+members: 15
 ---
 
 # Community 594
 
-**Members:** 16 nodes
+**Cohesion:** 0.14 - loosely connected
+**Members:** 15 nodes
 
 ## Members
-- [[API Endpoints (`gatewayingest_apimain.py`)]] - document - docs/ssh-capability.md
-- [[Approval-Required Commands]] - document - docs/ssh-capability.md
-- [[Architecture_11]] - document - docs/ssh-capability.md
-- [[Auto-Approved Commands]] - document - docs/ssh-capability.md
-- [[Components_1]] - document - docs/ssh-capability.md
-- [[Denied Commands]] - document - docs/ssh-capability.md
-- [[Overview_18]] - document - docs/ssh-capability.md
-- [[Request Flow]] - document - docs/ssh-capability.md
-- [[RequestResponse Models (`gatewayingest_apimodels.py`)]] - document - docs/ssh-capability.md
-- [[SSH Capability Architecture Document]] - document - docs/ssh-capability.md
-- [[SSH Capability — Architecture Document]] - document - docs/ssh-capability.md
-- [[SSHProxy Controlled Remote Command Execution via Gateway API]] - concept - docs/ssh-capability.md
-- [[Security Layers]] - document - docs/ssh-capability.md
-- [[`SSHConfig`  `SSHHostConfig` (`gatewayingest_apissh_config.py`)]] - document - docs/ssh-capability.md
-- [[`SSHProxy` (`gatewayssh_proxyproxy.py`)]] - document - docs/ssh-capability.md
-- [[ssh-capability]] - document - docs/ssh-capability.md
+- [[ARM64 Support]] - document - docs/vault/05 - Dependencies/trivy.md
+- [[ClamAV]] - document - docs/vault/05 - Dependencies/clamav.md
+- [[First Boot]] - document - docs/vault/05 - Dependencies/clamav.md
+- [[Gateway Usage]] - document - docs/vault/05 - Dependencies/clamav.md
+- [[Gateway Usage_1]] - document - docs/vault/05 - Dependencies/trivy.md
+- [[Installation_2]] - document - docs/vault/05 - Dependencies/clamav.md
+- [[Purpose_185]] - document - docs/vault/05 - Dependencies/clamav.md
+- [[Purpose_195]] - document - docs/vault/05 - Dependencies/trivy.md
+- [[Related Notes_40]] - document - docs/vault/05 - Dependencies/clamav.md
+- [[Related Notes_50]] - document - docs/vault/05 - Dependencies/trivy.md
+- [[Script Usage]] - document - docs/vault/05 - Dependencies/trivy.md
+- [[Trivy]] - document - docs/vault/05 - Dependencies/trivy.md
+- [[clamav]] - document - docs/vault/05 - Dependencies/clamav.md
+- [[openscap]] - document - docs/vault/05 - Dependencies/openscap.md
+- [[trivy]] - document - docs/vault/05 - Dependencies/trivy.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,7 +34,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 923]]
+- 2 edges to [[_COMMUNITY_Community 410]]
+- 2 edges to [[_COMMUNITY_Community 243]]
+- 1 edge to [[_COMMUNITY_Community 650]]
+- 1 edge to [[_COMMUNITY_Community 339]]
 
 ## Top bridge nodes
-- [[SSHProxy Controlled Remote Command Execution via Gateway API]] - degree 2, connects to 1 community
+- [[clamav]] - degree 6, connects to 2 communities
+- [[openscap]] - degree 4, connects to 2 communities
+- [[trivy]] - degree 4, connects to 1 community

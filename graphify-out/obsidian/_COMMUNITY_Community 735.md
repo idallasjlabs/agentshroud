@@ -1,26 +1,28 @@
 ---
 type: community
+cohesion: 0.15
 members: 13
 ---
 
 # Community 735
 
+**Cohesion:** 0.15 - loosely connected
 **Members:** 13 nodes
 
 ## Members
-- [[.__init__()_162]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[.__init__()_163]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[.close()_17]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[.close()_18]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[.drain()_3]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[.readline()_1]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[.write()_3]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[First readline returns the request line; the next stalls.]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[_CloseRaisesTargetWriter]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[_DummyTargetWriter_1]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[_HeaderTimeoutReader]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[start() binds a real loopback server; a client gets a parsed response;     stop(]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[test_start_serves_and_stop_closes_loopback()]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[Add a comment to a card]] - document - skills/openclaw/trello/SKILL.md
+- [[Archive a card]] - document - skills/openclaw/trello/SKILL.md
+- [[Create a card]] - document - skills/openclaw/trello/SKILL.md
+- [[Examples_1]] - document - skills/openclaw/trello/SKILL.md
+- [[List boards]] - document - skills/openclaw/trello/SKILL.md
+- [[List cards in a list]] - document - skills/openclaw/trello/SKILL.md
+- [[List lists in a board]] - document - skills/openclaw/trello/SKILL.md
+- [[Move a card to another list]] - document - skills/openclaw/trello/SKILL.md
+- [[Notes_8]] - document - skills/openclaw/trello/SKILL.md
+- [[SKILL_235]] - document - skills/openclaw/trello/SKILL.md
+- [[Setup_8]] - document - skills/openclaw/trello/SKILL.md
+- [[Trello Skill]] - document - skills/openclaw/trello/SKILL.md
+- [[Usage_131]] - document - skills/openclaw/trello/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,11 +32,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_Community 52]]
-- 6 edges to [[_COMMUNITY_Community 30]]
+- 1 edge to [[_COMMUNITY_Community 401]]
 
 ## Top bridge nodes
-- [[_DummyTargetWriter_1]] - degree 9, connects to 2 communities
-- [[_HeaderTimeoutReader]] - degree 8, connects to 2 communities
-- [[_CloseRaisesTargetWriter]] - degree 6, connects to 2 communities
-- [[test_start_serves_and_stop_closes_loopback()]] - degree 8, connects to 1 community
+- [[SKILL_235]] - degree 2, connects to 1 community

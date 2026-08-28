@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/audit-specification.md"
 type: "document"
-community: "Community 183"
+community: "Community 189"
 location: "L251"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_183
+  - community/Community_189
 ---
 
 # Retention Policies
@@ -16,4 +16,4 @@ tags:
 - [[Archival Process]] - `contains` [EXTRACTED]
 - [[Tier-Based Retention Strategy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_183
+#graphify/document #graphify/EXTRACTED #community/Community_189

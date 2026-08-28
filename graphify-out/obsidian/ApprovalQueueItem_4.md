@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_store.py"
 type: "code"
-community: "Community 24"
+community: "Community 125"
 location: "L19"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_24
+  - community/Community_125
 ---
 
 # ApprovalQueueItem
@@ -17,4 +17,4 @@ tags:
 - [[AuditStore_1]] - `uses` [INFERRED]
 - [[_make_item()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_24
+#graphify/code #graphify/INFERRED #community/Community_125

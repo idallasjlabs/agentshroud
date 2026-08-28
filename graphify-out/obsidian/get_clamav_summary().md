@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "Community 1002"
+community: "Community 983"
 location: "L598"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1002
+  - community/Community_983
 ---
 
 # get_clamav_summary()
@@ -26,4 +26,4 @@ tags:
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 - [[test_scanner_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1002
+#graphify/code #graphify/EXTRACTED #community/Community_983

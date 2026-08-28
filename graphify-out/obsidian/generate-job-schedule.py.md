@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/generate-job-schedule.py"
 type: "code"
-community: "Community 917"
+community: "Community 909"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_917
+  - community/Community_909
 ---
 
 # generate-job-schedule.py
@@ -20,4 +20,4 @@ tags:
 - [[main()_20]] - `contains` [EXTRACTED]
 - [[render_html()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_917
+#graphify/code #graphify/EXTRACTED #community/Community_909

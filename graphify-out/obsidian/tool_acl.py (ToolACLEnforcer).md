@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "Community 75"
+community: "Group RBAC & Tool ACL"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_75
+  - community/Group_RBAC__Tool_ACL
 ---
 
 # tool_acl.py (ToolACLEnforcer)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_group_rbac.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_75
+#graphify/code #graphify/EXTRACTED #community/Group_RBAC__Tool_ACL

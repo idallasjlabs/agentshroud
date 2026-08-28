@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_hermes_cron_seed.py"
 type: "code"
-community: "Community 568"
+community: "Community 381"
 location: "L105"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_568
+  - community/Community_381
 ---
 
 # test_jira_weekly_review_job_present()
@@ -17,4 +17,4 @@ tags:
 - [[_parse_job_names_from_yaml()]] - `calls` [EXTRACTED]
 - [[test_hermes_cron_seed.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_568
+#graphify/code #graphify/EXTRACTED #community/Community_381

@@ -1,12 +1,12 @@
 ---
 source_file: "branding/colors/palette.md"
 type: "document"
-community: "Community 370"
+community: "Community 375"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_370
+  - community/Community_375
 ---
 
 # AgentShroud Color Palette
@@ -21,4 +21,4 @@ tags:
 - [[Usage Guidelines_1]] - `contains` [EXTRACTED]
 - [[palette]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_370
+#graphify/document #graphify/EXTRACTED #community/Community_375

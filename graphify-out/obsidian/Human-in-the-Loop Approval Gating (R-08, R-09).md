@@ -1,11 +1,11 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "concept"
-community: "Community 376"
+community: "Community 166"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_376
+  - community/Community_166
 ---
 
 # Human-in-the-Loop Approval Gating (R-08, R-09)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[STPA-Sec Analysis of AgentShroud]] - `rationale_for` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_376
+#graphify/concept #graphify/EXTRACTED #community/Community_166

@@ -1,51 +1,52 @@
 ---
 type: community
-members: 38
+cohesion: 0.08
+members: 37
 ---
 
 # Community 193
 
-**Members:** 38 nodes
+**Cohesion:** 0.08 - loosely connected
+**Members:** 37 nodes
 
 ## Members
-- [[.test_emergency_disabled_trigger_rejected()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[.test_generate_returns_typed_token()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[.test_get_all_credentials_status_lists_registered()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[.test_get_credential_status_none_for_unknown()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[.test_health_score_empty_is_perfect()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[.test_in_progress_is_rejected()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[.test_max_attempts_exceeded_is_rejected()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[.test_read_generic_exception_yields_none()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[.test_read_nonzero_returncode_yields_none()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[.test_read_success_strips_whitespace()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[.test_read_timeout_yields_none()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[.test_retire_clears_old_reference_when_grace_expired()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[.test_retire_noop_when_no_grace_period()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[.test_scheduled_rotation_disabled_short_circuits()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[.test_store_failure_marks_failed()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[.test_store_nonzero_returncode_is_false()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[.test_store_rejects_malformed_reference()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[.test_store_success()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[.test_store_timeout_is_false()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[.test_unknown_credential_returns_error()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[.test_validate_with_validator_that_raises_fails_closed()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[.test_validate_without_registered_validator_passes()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[Base class for credential validators.]] - rationale - gateway/security/key_rotation.py
-- [[CredentialValidator]] - code - gateway/security/key_rotation.py
-- [[RotationStatus]] - code - gateway/security/key_rotation.py
-- [[Status of a credential rotation.]] - rationale - gateway/security/key_rotation.py
-- [[TestCheckAndRotateDisabled]] - code - gateway/tests/test_key_rotation_internals.py
-- [[TestEmergencyAndRetire]] - code - gateway/tests/test_key_rotation_internals.py
-- [[TestGenerateAndValidate]] - code - gateway/tests/test_key_rotation_internals.py
-- [[TestReadFrom1Password]] - code - gateway/tests/test_key_rotation_internals.py
-- [[TestRotateGuardBranches]] - code - gateway/tests/test_key_rotation_internals.py
-- [[TestStatusHelpers]] - code - gateway/tests/test_key_rotation_internals.py
-- [[TestStoreIn1Password]] - code - gateway/tests/test_key_rotation_internals.py
-- [[_old_cred()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[key_rotation.py (KeyRotationManager)]] - code - gateway/security/key_rotation.py
-- [[key_rotation_config.py (KeyRotationConfig)]] - code - gateway/security/key_rotation_config.py
-- [[manager()_2]] - code - gateway/tests/test_key_rotation_internals.py
-- [[test_key_rotation_internals.py]] - code - gateway/tests/test_key_rotation_internals.py
+- [[.test_containerized_compose_equivalents()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_containerized_compose_internal_network()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_containerized_compose_private_registry()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_containerized_fallback_evidence()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_containerized_no_compose_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_containerized_no_cosign_no_pipeline_evidence()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_containerized_pipeline_evidence_full()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_containerized_public_image_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_cosign_with_runtime_verification()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_cosign_with_wired_verifier_module()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_distinct_namespaces_partial_caps()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_docker_config_auths_full()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_empty_auths_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_empty_sbom_scores_two()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_full_daemon_json()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_full_host_evidence()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_full_root_caps_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_fully_isolated_container_scores_five()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_icc_disabled_with_validator()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_icc_only()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_namespace_check_exception_assumes_isolated()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_no_config_not_containerized_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_no_cosign_outside_container_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_no_kernel_info_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_not_containerized_no_config_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_sbom_with_packages_trivy_branches()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_shared_mount_namespace_returns_one()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_unreadable_status_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestContainerRuntimeIsolation]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestDockerDaemonConfig]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestHostOsHardening]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestImageSigningProvenance]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestNetworkSegmentation]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestRegistrySecurity]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestSupplyChain]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[Write a file under the sandbox root, creating parents.]] - rationale - gateway/tests/test_scanner_integration_coverage.py
+- [[_w()]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -55,16 +56,31 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 17 edges to [[_COMMUNITY_Community 233]]
-- 14 edges to [[_COMMUNITY_Community 756]]
-- 11 edges to [[_COMMUNITY_Community 160]]
-- 5 edges to [[_COMMUNITY_Community 1059]]
-- 4 edges to [[_COMMUNITY_Community 424]]
-- 1 edge to [[_COMMUNITY_Community 78]]
+- 14 edges to [[_COMMUNITY_Community 288]]
+- 8 edges to [[_COMMUNITY_Community 475]]
+- 4 edges to [[_COMMUNITY_Community 1128]]
+- 3 edges to [[_COMMUNITY_Community 1277]]
+- 3 edges to [[_COMMUNITY_Community 1279]]
+- 2 edges to [[_COMMUNITY_Community 1426]]
+- 2 edges to [[_COMMUNITY_Community 1275]]
+- 2 edges to [[_COMMUNITY_Community 1276]]
+- 2 edges to [[_COMMUNITY_Community 1352]]
+- 2 edges to [[_COMMUNITY_Community 1428]]
+- 2 edges to [[_COMMUNITY_Community 1353]]
+- 2 edges to [[_COMMUNITY_Community 1429]]
+- 2 edges to [[_COMMUNITY_Community 1278]]
+- 1 edge to [[_COMMUNITY_Community 1425]]
+- 1 edge to [[_COMMUNITY_Community 1272]]
+- 1 edge to [[_COMMUNITY_Community 1274]]
+- 1 edge to [[_COMMUNITY_Community 1351]]
+- 1 edge to [[_COMMUNITY_Community 1427]]
+- 1 edge to [[_COMMUNITY_Community 1354]]
+- 1 edge to [[_COMMUNITY_Community 1355]]
+- 1 edge to [[_COMMUNITY_Community 1280]]
 
 ## Top bridge nodes
-- [[CredentialValidator]] - degree 21, connects to 5 communities
-- [[RotationStatus]] - degree 20, connects to 5 communities
-- [[test_key_rotation_internals.py]] - degree 17, connects to 4 communities
-- [[TestRotateGuardBranches]] - degree 11, connects to 3 communities
-- [[TestReadFrom1Password]] - degree 10, connects to 3 communities
+- [[_w()]] - degree 73, connects to 21 communities
+- [[TestContainerRuntimeIsolation]] - degree 7, connects to 1 community
+- [[TestDockerDaemonConfig]] - degree 6, connects to 1 community
+- [[TestImageSigningProvenance]] - degree 6, connects to 1 community
+- [[TestRegistrySecurity]] - degree 6, connects to 1 community

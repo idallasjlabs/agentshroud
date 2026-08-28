@@ -1,17 +1,19 @@
 ---
 type: community
+cohesion: 0.67
 members: 4
 ---
 
 # Community 1311
 
+**Cohesion:** 0.67 - moderately connected
 **Members:** 4 nodes
 
 ## Members
-- [[Discrete confidence-score rubric]] - rationale - docker/config/hermes/skills/graphify/references/extraction-spec.md
-- [[Finding Triage Classes (CONFIRMEDPROBABLESELF_HEALEDFALSE_POSITIVEGOOD_DIRECTION)]] - concept - docker/config/openclaw/skills/i-ab/SKILL.md
-- [[GSDL-715 (silent regression incident)]] - concept - docker/config/hermes/skills/i-ab/SKILL.md
-- [[scriptsaudit_merge_regression.py]] - concept - docker/config/hermes/skills/i-ab/SKILL.md
+- [[8D Root Cause Analysis README]] - document - .agents/skills/i-eightd/README.md
+- [[8D Root Cause Analysis Skill]] - document - .agents/skills/i-eightd/SKILL.md
+- [[AWS Agent (data retrieval layer)]] - concept - .agents/skills/i-eightd/SKILL.md
+- [[AWS Athena  BESS Telemetry Data Lake]] - concept - .agents/skills/i-eightd/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,19 +1,19 @@
 ---
 type: community
-members: 6
+cohesion: 0.67
+members: 4
 ---
 
 # Community 1316
 
-**Members:** 6 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[.test_expired_session_rejected()]] - code - gateway/tests/test_session_security.py
-- [[.test_unknown_session_rejected()]] - code - gateway/tests/test_session_security.py
-- [[.test_valid_session_accepted()]] - code - gateway/tests/test_session_security.py
-- [[.test_wrong_ip_rejected()]] - code - gateway/tests/test_session_security.py
-- [[.test_wrong_user_agent_rejected()]] - code - gateway/tests/test_session_security.py
-- [[TestSessionValidation]] - code - gateway/tests/test_session_security.py
+- [[1Password item Apple ID - therealidallasj]] - concept - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[calendar.js (iCloud CalDAV script)]] - code - docker/config/openclaw/skills/i-icloud/scripts/calendar.js
+- [[i-icloud README (ICLOUD Data Manager)]] - document - docker/config/openclaw/skills/i-icloud/README.md
+- [[iCloud Services Skill]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,11 +21,3 @@ members: 6
 TABLE source_file, type FROM #community/Community_1316
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 6 edges to [[_COMMUNITY_Community 712]]
-- 2 edges to [[_COMMUNITY_Community 155]]
-
-## Top bridge nodes
-- [[TestSessionValidation]] - degree 12, connects to 2 communities
-- [[.test_expired_session_rejected()]] - degree 2, connects to 1 community

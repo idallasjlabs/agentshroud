@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "rationale"
-community: "Community 513"
+community: "Community 55"
 location: "L269"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_513
+  - community/Community_55
 ---
 
 # Track every MiddlewareManager instantiated in this class and         close its s
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._close_middleware_after()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_513
+#graphify/rationale #graphify/EXTRACTED #community/Community_55

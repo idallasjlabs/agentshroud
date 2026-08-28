@@ -1,11 +1,11 @@
 ---
 source_file: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
 type: "concept"
-community: "Community 552"
+community: "Community 780"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_552
+  - community/Community_780
 ---
 
 # PII Detection and Redaction Engine
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Enterprise Governance Proxy System (invention)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_552
+#graphify/concept #graphify/EXTRACTED #community/Community_780

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-sav/README.md"
 type: "document"
-community: "Community 1242"
+community: "Community 1237"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1242
+  - community/Community_1237
 ---
 
 # System Audit Vault
@@ -17,4 +17,4 @@ tags:
 - [[Related Skills_111]] - `contains` [EXTRACTED]
 - [[Usage_112]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1242
+#graphify/document #graphify/EXTRACTED #community/Community_1237

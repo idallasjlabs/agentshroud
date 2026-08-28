@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION.md"
 type: "document"
-community: "Community 194"
+community: "Community 384"
 location: "L259"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_194
+  - community/Community_384
 ---
 
 # Phase 3 Plan Reality Check
@@ -19,4 +19,4 @@ tags:
 - [[MEDIUM VALUE]] - `contains` [EXTRACTED]
 - [[SKIP (Over-Engineering)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_194
+#graphify/document #graphify/EXTRACTED #community/Community_384

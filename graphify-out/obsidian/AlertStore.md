@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "Community 105"
+community: "Community 273"
 location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_105
+  - community/Community_273
 ---
 
 # AlertStore
@@ -22,4 +22,4 @@ tags:
 - [[test_alert_store_push_and_summary()]] - `calls` [EXTRACTED]
 - [[test_dashboard_endpoints.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_105
+#graphify/code #graphify/EXTRACTED #community/Community_273

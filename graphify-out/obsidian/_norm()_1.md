@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/mcp_policy.py"
 type: "code"
-community: "Community 34"
+community: "Community 33"
 location: "L224"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_34
+  - community/Community_33
 ---
 
 # _norm()
@@ -18,4 +18,4 @@ tags:
 - [[Normalize a servertool reference for robust, evasion-resistant matching.      A]] - `rationale_for` [EXTRACTED]
 - [[mcp_policy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_34
+#graphify/code #graphify/EXTRACTED #community/Community_33

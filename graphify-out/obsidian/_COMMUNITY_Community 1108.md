@@ -1,19 +1,21 @@
 ---
 type: community
+cohesion: 0.33
 members: 6
 ---
 
 # Community 1108
 
+**Cohesion:** 0.33 - loosely connected
 **Members:** 6 nodes
 
 ## Members
-- [[AgentShroud™ Communication Templates]] - document - docs/project/legal/COMMUNICATION-TEMPLATES.md
-- [[Option 1 — Clean & Professional]] - document - docs/project/legal/COMMUNICATION-TEMPLATES.md
-- [[Option 2 — Compact]] - document - docs/project/legal/COMMUNICATION-TEMPLATES.md
-- [[Option 3 — Full Collaborator Notice]] - document - docs/project/legal/COMMUNICATION-TEMPLATES.md
-- [[Option 4 — Documentation Footer]] - document - docs/project/legal/COMMUNICATION-TEMPLATES.md
-- [[Usage Rules]] - document - docs/project/legal/COMMUNICATION-TEMPLATES.md
+- [[Key Operations (Inferred)]] - document - docs/vault/02 - Modules/Other/text_control_center.py.md
+- [[Purpose_126]] - document - docs/vault/02 - Modules/Other/text_control_center.py.md
+- [[Related Notes_12]] - document - docs/vault/02 - Modules/Other/text_control_center.py.md
+- [[Relationship to Web API]] - document - docs/vault/02 - Modules/Other/text_control_center.py.md
+- [[text_control_center.py  agentshroud_manager.py]] - document - docs/vault/02 - Modules/Other/text_control_center.py.md
+- [[text_control_center.py_1]] - document - docs/vault/02 - Modules/Other/text_control_center.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,10 +23,3 @@ members: 6
 TABLE source_file, type FROM #community/Community_1108
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 1262]]
-- 1 edge to [[_COMMUNITY_Community 964]]
-
-## Top bridge nodes
-- [[AgentShroud™ Communication Templates]] - degree 7, connects to 2 communities

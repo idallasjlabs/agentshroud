@@ -1,17 +1,17 @@
 ---
-source_file: "firmware/voice-terminal/SETUP.md"
+source_file: "docs/integrations/voice-terminal-esp32-s3.md"
 type: "document"
-community: "Community 785"
-location: "L457"
+community: "Community 400"
+location: "L269"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_785
+  - community/Community_400
 ---
 
 # Adding a future agent
 
 ## Connections
-- [[11. Current status (v1.2.0)]] - `contains` [EXTRACTED]
+- [[Usage_121]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_785
+#graphify/document #graphify/EXTRACTED #community/Community_400

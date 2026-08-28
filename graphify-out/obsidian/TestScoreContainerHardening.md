@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "Community 558"
+community: "Community 187"
 location: "L702"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_558
+  - community/Community_187
 ---
 
 # TestScoreContainerHardening
@@ -17,4 +17,4 @@ tags:
 - [[.test_four_when_openscap_running_with_failures()]] - `method` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_558
+#graphify/code #graphify/EXTRACTED #community/Community_187

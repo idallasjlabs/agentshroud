@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Community 9"
+community: "RBAC & SOC Realtime"
 location: "L392"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_9
+  - community/RBAC__SOC_Realtime
 ---
 
 # Exception
@@ -29,4 +29,4 @@ tags:
 - [[SSHWriteFileResponse]] - `uses` [INFERRED]
 - [[global_exception_handler()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_9
+#graphify/code #graphify/INFERRED #community/RBAC__SOC_Realtime

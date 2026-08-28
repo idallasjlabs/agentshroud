@@ -1,31 +1,35 @@
 ---
 type: community
-members: 18
+cohesion: 0.12
+members: 20
 ---
 
 # Community 448
 
-**Members:** 18 nodes
+**Cohesion:** 0.12 - loosely connected
+**Members:** 20 nodes
 
 ## Members
-- [[Agent Isolation Module Badge Icon]] - image - branding/icons/modules/agent-isolation-256x256.png
-- [[AgentShroud App Icon (64x64)]] - image - branding/icons/app/icon-64x64.png
-- [[AgentShroud BadgeAvatar Logo Variant (120x120)]] - image - branding/logos/variants/badge-120x120.png
-- [[AgentShroud Brand Collateral Mockup]] - image - branding/logos/png/logo-mockup.png
-- [[AgentShroud Logo (SVG Wrapper, Embedded Raster)]] - image - branding/logos/svg/logo.svg
-- [[AgentShroud Logo - GlowTransparent Variant]] - image - branding/logos/png/logo-transparent.png
-- [[AgentShroud Primary Logo Lockup]] - image - branding/logos/png/logo.png
-- [[AgentShroud macOS App Icon (1024x1024, Rounded Squircle)]] - image - branding/icons/app/icon-macos-rounded-1024x1024.png
-- [[Audit Ledger Module Badge Icon]] - image - branding/icons/modules/audit-ledger-256x256.png
-- [[Credential Isolation Module Badge Icon]] - image - branding/icons/modules/credential-iso-256x256.png
-- [[Drift Detector Module Badge Icon]] - image - branding/icons/modules/drift-detector-256x256.png
-- [[Egress Filter Module Badge Icon]] - image - branding/icons/modules/egress-filter-256x256.png
-- [[HTTP Proxy Module Badge Icon]] - image - branding/icons/modules/http-proxy-256x256.png
-- [[Live Dashboard Module Badge Icon]] - image - branding/icons/modules/live-dashboard-256x256.png
-- [[PII Sanitizer Module Badge Icon]] - image - branding/icons/modules/pii-sanitizer-256x256.png
-- [[Prompt Guard Module Badge Icon]] - image - branding/icons/modules/prompt-guard-256x256.png
-- [[SSH Proxy Module Badge Icon]] - image - branding/icons/modules/ssh-proxy-256x256.png
-- [[Trust Manager Module Badge Icon]] - image - branding/icons/modules/trust-manager-256x256.png
+- [[AGENT_ROLES]] - document - docs/governance/AGENT_ROLES.md
+- [[Authorization Matrix_1]] - document - docs/governance/AGENT_ROLES.md
+- [[Decision Tree for New Tasks]] - document - docs/governance/AGENT_ROLES.md
+- [[Diagram 21 Team Structure]] - image - docs/diagrams/images/diagram-21-team-structure.svg
+- [[Diagram 23 Roadmap Gantt (2026)]] - image - docs/diagrams/images/diagram-23-roadmap-gantt.svg
+- [[Escalation Path]] - document - docs/governance/AGENT_ROLES.md
+- [[GSD Cadence — Get Shit Done Governance]] - document - docs/governance/GSD_CADENCE.md
+- [[GSD Cadence — Get Shit Done Governance (doc)]] - document - docs/governance/GSD_CADENCE.md
+- [[GSD_CADENCE]] - document - docs/governance/GSD_CADENCE.md
+- [[Monthly (1st of month)]] - document - docs/governance/GSD_CADENCE.md
+- [[Multi-Agent Role Matrix]] - document - docs/governance/AGENT_ROLES.md
+- [[Multi-Agent Role Matrix (AGENT_ROLES.md)]] - document - docs/governance/AGENT_ROLES.md
+- [[Out of Scope]] - document - docs/governance/GSD_CADENCE.md
+- [[References_2]] - document - docs/governance/AGENT_ROLES.md
+- [[Rule 1 — GSD Issue Before the Branch]] - document - docs/governance/GSD_CADENCE.md
+- [[Rule 2 — Approval Tag (approvedisaiah) for High-Severity Changes]] - concept - docs/governance/GSD_CADENCE.md
+- [[Rule 2 — Approval Tag for High-Severity Changes]] - document - docs/governance/GSD_CADENCE.md
+- [[Rule 3 — Weekly Kaizen + Monthly Chaos Drill]] - document - docs/governance/GSD_CADENCE.md
+- [[Security-Sensitive Paths]] - document - docs/governance/AGENT_ROLES.md
+- [[Weekly (every Friday)]] - document - docs/governance/GSD_CADENCE.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,25 +37,3 @@ members: 18
 TABLE source_file, type FROM #community/Community_448
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 30]]
-- 1 edge to [[_COMMUNITY_Community 14]]
-- 1 edge to [[_COMMUNITY_Community 232]]
-- 1 edge to [[_COMMUNITY_Community 47]]
-- 1 edge to [[_COMMUNITY_Community 397]]
-- 1 edge to [[_COMMUNITY_Community 251]]
-- 1 edge to [[_COMMUNITY_Community 116]]
-- 1 edge to [[_COMMUNITY_Community 35]]
-- 1 edge to [[_COMMUNITY_Community 1]]
-- 1 edge to [[_COMMUNITY_Community 6]]
-- 1 edge to [[_COMMUNITY_Community 69]]
-- 1 edge to [[_COMMUNITY_Community 799]]
-- 1 edge to [[_COMMUNITY_Community 13]]
-
-## Top bridge nodes
-- [[AgentShroud macOS App Icon (1024x1024, Rounded Squircle)]] - degree 16, connects to 3 communities
-- [[Agent Isolation Module Badge Icon]] - degree 2, connects to 1 community
-- [[Audit Ledger Module Badge Icon]] - degree 2, connects to 1 community
-- [[Drift Detector Module Badge Icon]] - degree 2, connects to 1 community
-- [[Egress Filter Module Badge Icon]] - degree 2, connects to 1 community

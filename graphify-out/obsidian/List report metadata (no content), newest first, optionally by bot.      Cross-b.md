@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "Community 9"
+community: "Ingest API & Approval Routes"
 location: "L936"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_9
+  - community/Ingest_API__Approval_Routes
 ---
 
 # List report metadata (no content), newest first, optionally by bot.      Cross-b
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[list_reports()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_9
+#graphify/rationale #graphify/EXTRACTED #community/Ingest_API__Approval_Routes

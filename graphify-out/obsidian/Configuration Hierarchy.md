@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/adr/ADR-007-zero-config-security.md"
 type: "document"
-community: "Community 791"
+community: "Community 783"
 location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_791
+  - community/Community_783
 ---
 
 # Configuration Hierarchy
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Decision_8]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_791
+#graphify/document #graphify/EXTRACTED #community/Community_783

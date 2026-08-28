@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_rbac.py"
 type: "rationale"
-community: "Community 75"
+community: "Group RBAC & Tool ACL"
 location: "L79"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_75
+  - community/Group_RBAC__Tool_ACL
 ---
 
 # Resolve per-group roles for Telegram group workspace members.      Args:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GroupRoleResolver]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_75
+#graphify/rationale #graphify/EXTRACTED #community/Group_RBAC__Tool_ACL

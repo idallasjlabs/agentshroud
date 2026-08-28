@@ -1,39 +1,41 @@
 ---
 type: community
+cohesion: 0.08
 members: 26
 ---
 
 # Community 331
 
+**Cohesion:** 0.08 - loosely connected
 **Members:** 26 nodes
 
 ## Members
-- [[Build a minimal SecurityPipeline with passthrough PII + optional clamav.]] - rationale - gateway/tests/test_clamav_pipeline.py
-- [[ClamAV scan_bytes returns error → fail-open CRITICAL log, FORWARD.]] - rationale - gateway/tests/test_clamav_pipeline.py
-- [[Clean base64 payload → FORWARD.]] - rationale - gateway/tests/test_clamav_pipeline.py
-- [[Malware-infected base64 payload → BLOCK with signature in block_reason.]] - rationale - gateway/tests/test_clamav_pipeline.py
-- [[No clamav_scanner configured → step skipped, no error.]] - rationale - gateway/tests/test_clamav_pipeline.py
-- [[Short base64 (64 groups of 4) skips ClamAV scan.]] - rationale - gateway/tests/test_clamav_pipeline.py
-- [[Stream bytes to clamdscan for inline malware scanning.      Uses ``clamdscan --s]] - rationale - gateway/security/clamav_scanner.py
-- [[Test replacement for asyncio.wait_for — awaits coroutine directly.]] - rationale - gateway/tests/test_clamav_pipeline.py
-- [[Test replacement for asyncio.wait_for — raises TimeoutError.      Closes the un-]] - rationale - gateway/tests/test_clamav_pipeline.py
-- [[Wrap bytes in a long-enough base64 chunk to trigger the scan (= 64 groups of 4)]] - rationale - gateway/tests/test_clamav_pipeline.py
-- [[_b64_payload()]] - code - gateway/tests/test_clamav_pipeline.py
-- [[_instant_wait_for()]] - code - gateway/tests/test_clamav_pipeline.py
-- [[_make_pipeline()]] - code - gateway/tests/test_clamav_pipeline.py
-- [[_timeout_wait_for()]] - code - gateway/tests/test_clamav_pipeline.py
-- [[scan_bytes()]] - code - gateway/security/clamav_scanner.py
-- [[test_clamav_pipeline.py]] - code - gateway/tests/test_clamav_pipeline.py
-- [[test_pipeline_clamav_clean_payload()]] - code - gateway/tests/test_clamav_pipeline.py
-- [[test_pipeline_clamav_error_fail_open()]] - code - gateway/tests/test_clamav_pipeline.py
-- [[test_pipeline_clamav_malware_blocked()]] - code - gateway/tests/test_clamav_pipeline.py
-- [[test_pipeline_clamav_not_configured()]] - code - gateway/tests/test_clamav_pipeline.py
-- [[test_pipeline_short_base64_not_scanned()]] - code - gateway/tests/test_clamav_pipeline.py
-- [[test_scan_bytes_binary_not_found()]] - code - gateway/tests/test_clamav_pipeline.py
-- [[test_scan_bytes_clean()]] - code - gateway/tests/test_clamav_pipeline.py
-- [[test_scan_bytes_empty_input()]] - code - gateway/tests/test_clamav_pipeline.py
-- [[test_scan_bytes_infected()]] - code - gateway/tests/test_clamav_pipeline.py
-- [[test_scan_bytes_timeout()]] - code - gateway/tests/test_clamav_pipeline.py
+- [[AgentShroud Infrastructure — Container Image Vulnerabilities]] - document - docs/security/cve-mitigation-matrix.md
+- [[AgentShroud™ CVE Mitigation Matrix]] - document - docs/security/cve-mitigation-matrix.md
+- [[Application CVEs (OpenClaw  Hermes)]] - document - docs/security/cve-mitigation-matrix.md
+- [[CRITICAL (CVSS 9.0+)]] - document - docs/security/cve-mitigation-matrix.md
+- [[CVE-2026-30741 — CVSS 9.8 CRITICAL — RCE via Request-Side Prompt Injection]] - document - docs/security/cve-mitigation-matrix.md
+- [[CVE-2026-34425 — CVSS 5.4 MEDIUM — Preflight Validation Bypass (Shell-Bleed)]] - document - docs/security/cve-mitigation-matrix.md
+- [[CVE-2026-3690 — CVSS 7.4 HIGH — Canvas Authentication Bypass]] - document - docs/security/cve-mitigation-matrix.md
+- [[CWE Coverage]] - document - docs/security/cve-mitigation-matrix.md
+- [[Currently Unmitigable Residual (verified no fix exists anywhere yet)]] - document - docs/security/cve-mitigation-matrix.md
+- [[Executive Summary_11]] - document - docs/security/cve-mitigation-matrix.md
+- [[Gateway image (fresh-DB residual 5C  132H — all `fix NONE` or in-place-unfixable)]] - document - docs/security/cve-mitigation-matrix.md
+- [[HIGH (CVSS 7.0–8.9)]] - document - docs/security/cve-mitigation-matrix.md
+- [[Hermes Agent (7 tracked)]] - document - docs/security/cve-mitigation-matrix.md
+- [[MEDIUM (CVSS 4.0–6.9)]] - document - docs/security/cve-mitigation-matrix.md
+- [[OWASP Agentic AI (ASI) Coverage]] - document - docs/security/cve-mitigation-matrix.md
+- [[OpenClaw (816 tracked)]] - document - docs/security/cve-mitigation-matrix.md
+- [[Previously Partial — Now Fully Mitigated]] - document - docs/security/cve-mitigation-matrix.md
+- [[Representative Examples]] - document - docs/security/cve-mitigation-matrix.md
+- [[Three-status taxonomy (SCRUM-101, 2026-07-14)]] - document - docs/security/cve-mitigation-matrix.md
+- [[Tier 1 — Hand-Curated CVEs (AgentShroud-Specific Mitigations)]] - document - docs/security/cve-mitigation-matrix.md
+- [[Tier 3 — NVD-Sourced Bulk CVEs (276 entries)]] - document - docs/security/cve-mitigation-matrix.md
+- [[Verification_11]] - document - docs/security/cve-mitigation-matrix.md
+- [[hermes image (93 residual, all Debian, all `fix NONE`)]] - document - docs/security/cve-mitigation-matrix.md
+- [[openclaw image (2 residual)]] - document - docs/security/cve-mitigation-matrix.md
+- [[v1.3.0 fresh-DB verification (2026-07-15) — authoritative numbers]] - document - docs/security/cve-mitigation-matrix.md
+- [[voice-gateway image (4 residual, all Debian, all `fix NONE`)]] - document - docs/security/cve-mitigation-matrix.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -43,16 +45,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_Community 109]]
-- 3 edges to [[_COMMUNITY_Community 397]]
-- 2 edges to [[_COMMUNITY_Community 22]]
-- 1 edge to [[_COMMUNITY_Community 6]]
-- 1 edge to [[_COMMUNITY_Community 86]]
-- 1 edge to [[_COMMUNITY_Community 74]]
+- 1 edge to [[_COMMUNITY_Community 92]]
 
 ## Top bridge nodes
-- [[test_clamav_pipeline.py]] - degree 18, connects to 3 communities
-- [[scan_bytes()]] - degree 11, connects to 2 communities
-- [[_make_pipeline()]] - degree 8, connects to 1 community
-- [[test_pipeline_clamav_clean_payload()]] - degree 5, connects to 1 community
-- [[test_pipeline_clamav_malware_blocked()]] - degree 5, connects to 1 community
+- [[AgentShroud™ CVE Mitigation Matrix]] - degree 10, connects to 1 community

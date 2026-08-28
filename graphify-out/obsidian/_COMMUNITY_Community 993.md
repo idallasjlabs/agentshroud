@@ -1,21 +1,23 @@
 ---
 type: community
+cohesion: 0.36
 members: 8
 ---
 
 # Community 993
 
+**Cohesion:** 0.36 - loosely connected
 **Members:** 8 nodes
 
 ## Members
-- [[.test_empty()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_keeps_last_n_lines()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_only_newlines()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_shorter_than_n()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_strips_trailing_newline()_1]] - code - gateway/tests/test_multi_host_test.py
-- [[Return the last ``lines`` non-trailing-empty lines of ``text``.]] - rationale - gateway/tools/multi_host_test.py
-- [[TestTail]] - code - gateway/tests/test_multi_host_test.py
-- [[tail()_1]] - code - gateway/tools/multi_host_test.py
+- [[.test_255_is_unreachable()]] - code - gateway/tests/test_multi_host_test.py
+- [[.test_nonzero_is_fail()]] - code - gateway/tests/test_multi_host_test.py
+- [[.test_zero_is_pass()]] - code - gateway/tests/test_multi_host_test.py
+- [[HostStatus]] - code - gateway/tools/multi_host_test.py
+- [[Map a runner exit code to a HostStatus.]] - rationale - gateway/tools/multi_host_test.py
+- [[Outcome classification for a single host.]] - rationale - gateway/tools/multi_host_test.py
+- [[TestClassify]] - code - gateway/tests/test_multi_host_test.py
+- [[classify()]] - code - gateway/tools/multi_host_test.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,12 +27,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 904]]
-- 2 edges to [[_COMMUNITY_Community 485]]
-- 1 edge to [[_COMMUNITY_Community 992]]
-- 1 edge to [[_COMMUNITY_Community 869]]
-- 1 edge to [[_COMMUNITY_Community 816]]
+- 5 edges to [[_COMMUNITY_Community 898]]
+- 4 edges to [[_COMMUNITY_Community 485]]
+- 3 edges to [[_COMMUNITY_Community 869]]
+- 2 edges to [[_COMMUNITY_Community 19]]
+- 2 edges to [[_COMMUNITY_Community 813]]
+- 1 edge to [[_COMMUNITY_Community 814]]
+- 1 edge to [[_COMMUNITY_Community 994]]
+- 1 edge to [[_COMMUNITY_Community 1098]]
+- 1 edge to [[_COMMUNITY_Community 1254]]
+- 1 edge to [[_COMMUNITY_Community 728]]
 
 ## Top bridge nodes
-- [[TestTail]] - degree 9, connects to 3 communities
-- [[tail()_1]] - degree 9, connects to 3 communities
+- [[HostStatus]] - degree 18, connects to 10 communities
+- [[classify()]] - degree 8, connects to 3 communities
+- [[TestClassify]] - degree 7, connects to 2 communities

@@ -1,17 +1,17 @@
 ---
 type: community
-members: 4
+cohesion: 1.00
+members: 2
 ---
 
 # Community 1529
 
-**Members:** 4 nodes
+**Cohesion:** 1.00 - tightly connected
+**Members:** 2 nodes
 
 ## Members
-- [[Application Fields]] - document - docs/project/legal/USPTO-APPLICATION.md
-- [[Filing Basis]] - document - docs/project/legal/USPTO-APPLICATION.md
-- [[Mark]] - document - docs/project/legal/USPTO-APPLICATION.md
-- [[Owner_3]] - document - docs/project/legal/USPTO-APPLICATION.md
+- [[omlx-keepwarm.sh]] - code - scripts/omlx-keepwarm.sh
+- [[omlx-keepwarm.sh script]] - code - scripts/omlx-keepwarm.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,9 +19,3 @@ members: 4
 TABLE source_file, type FROM #community/Community_1529
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 762]]
-
-## Top bridge nodes
-- [[Application Fields]] - degree 4, connects to 1 community

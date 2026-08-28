@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "rationale"
-community: "Community 444"
+community: "Community 18"
 location: "L303"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_444
+  - community/Community_18
 ---
 
 # Scan pyproject.toml for suspicious build scripts.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._scan_pyproject_toml()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_444
+#graphify/rationale #graphify/EXTRACTED #community/Community_18

@@ -1,20 +1,22 @@
 ---
 type: community
+cohesion: 0.29
 members: 7
 ---
 
 # Community 1024
 
+**Cohesion:** 0.29 - loosely connected
 **Members:** 7 nodes
 
 ## Members
-- [[SKILL_207]] - document - skills/openclaw/gh-issues/SKILL.md
-- [[SKILL_209]] - document - skills/openclaw/github/SKILL.md
-- [[gh CLI (GitHub)]] - concept - skills/openclaw/github/SKILL.md
-- [[gh-issues Claims File (dedup tracking)]] - concept - skills/openclaw/gh-issues/SKILL.md
-- [[gh-issues Cursor File (cron sequential tracking)]] - concept - skills/openclaw/gh-issues/SKILL.md
-- [[gh-issues PR Review Handler (Phase 6)]] - concept - skills/openclaw/gh-issues/SKILL.md
-- [[gh-issues Sub-agent Spawn (Phase 5)]] - concept - skills/openclaw/gh-issues/SKILL.md
+- [[1. Normal Message Flow]] - document - docs/flows/sequence-diagrams.md
+- [[2. MCP Tool Call Flow]] - document - docs/flows/sequence-diagrams.md
+- [[3. Kill Switch Activation Flow]] - document - docs/flows/sequence-diagrams.md
+- [[4. SSH Command Flow]] - document - docs/flows/sequence-diagrams.md
+- [[5. Web Fetch Flow]] - document - docs/flows/sequence-diagrams.md
+- [[AgentShroud Sequence Diagrams]] - document - docs/flows/sequence-diagrams.md
+- [[sequence-diagrams]] - document - docs/flows/sequence-diagrams.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,14 +24,3 @@ members: 7
 TABLE source_file, type FROM #community/Community_1024
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 292]]
-- 1 edge to [[_COMMUNITY_Community 502]]
-- 1 edge to [[_COMMUNITY_Community 672]]
-- 1 edge to [[_COMMUNITY_Community 714]]
-
-## Top bridge nodes
-- [[SKILL_207]] - degree 7, connects to 2 communities
-- [[SKILL_209]] - degree 4, connects to 2 communities
-- [[gh-issues Cursor File (cron sequential tracking)]] - degree 3, connects to 1 community

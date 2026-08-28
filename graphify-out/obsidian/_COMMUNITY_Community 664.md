@@ -1,27 +1,29 @@
 ---
 type: community
+cohesion: 0.14
 members: 14
 ---
 
 # Community 664
 
+**Cohesion:** 0.14 - loosely connected
 **Members:** 14 nodes
 
 ## Members
-- [[API Call Structure_1]] - document - docker/config/hermes/skills/i-apollo/SKILL.md
-- [[Apollo — Audio Systems Producer_3]] - document - docker/config/hermes/skills/i-apollo/SKILL.md
-- [[Audio Quality Settings_1]] - document - docker/config/hermes/skills/i-apollo/SKILL.md
-- [[Error Handling_3]] - document - docker/config/hermes/skills/i-apollo/SKILL.md
-- [[Input Requirements_10]] - document - docker/config/hermes/skills/i-apollo/SKILL.md
-- [[Output_2]] - document - docker/config/hermes/skills/i-apollo/SKILL.md
-- [[Primary API Text-to-Dialogue_1]] - document - docker/config/hermes/skills/i-apollo/SKILL.md
-- [[Quality Checklist_9]] - document - docker/config/hermes/skills/i-apollo/SKILL.md
-- [[Quick Mode Create Podcast API_1]] - document - docker/config/hermes/skills/i-apollo/SKILL.md
-- [[Role_41]] - document - docker/config/hermes/skills/i-apollo/SKILL.md
-- [[SKILL_67]] - document - docker/config/hermes/skills/i-apollo/SKILL.md
-- [[Script Parsing_1]] - document - docker/config/hermes/skills/i-apollo/SKILL.md
-- [[Technical Specification_1]] - document - docker/config/hermes/skills/i-apollo/SKILL.md
-- [[Voice Configuration_1]] - document - docker/config/hermes/skills/i-apollo/SKILL.md
+- [[.__init__()_20]] - code - gateway/proxy/dns_blocklist.py
+- [[._periodic_update_loop()]] - code - gateway/proxy/dns_blocklist.py
+- [[.download_blocklist()]] - code - gateway/proxy/dns_blocklist.py
+- [[.load_from_text()]] - code - gateway/proxy/dns_blocklist.py
+- [[.parse_hosts_line()]] - code - gateway/proxy/dns_blocklist.py
+- [[.start_periodic_updates()]] - code - gateway/proxy/dns_blocklist.py
+- [[.update()]] - code - gateway/proxy/dns_blocklist.py
+- [[Background loop update blocklists every UPDATE_INTERVAL_SECONDS.]] - rationale - gateway/proxy/dns_blocklist.py
+- [[Download a blocklist URL. Uses the gateway's own HTTP client.]] - rationale - gateway/proxy/dns_blocklist.py
+- [[Download all blocklists and rebuild the blocked domains set.]] - rationale - gateway/proxy/dns_blocklist.py
+- [[Parse a single line from a hosts-format or domain-only blocklist.          Suppo]] - rationale - gateway/proxy/dns_blocklist.py
+- [[Parse blocklist text and add domains. Returns count of new domains.]] - rationale - gateway/proxy/dns_blocklist.py
+- [[Path_3]] - code - gateway/proxy/dns_blocklist.py
+- [[Start background task for periodic blocklist updates.]] - rationale - gateway/proxy/dns_blocklist.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,3 +31,13 @@ members: 14
 TABLE source_file, type FROM #community/Community_664
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 7 edges to [[_COMMUNITY_Community 142]]
+
+## Top bridge nodes
+- [[.update()]] - degree 6, connects to 1 community
+- [[.parse_hosts_line()]] - degree 4, connects to 1 community
+- [[._periodic_update_loop()]] - degree 4, connects to 1 community
+- [[.download_blocklist()]] - degree 3, connects to 1 community
+- [[.__init__()_20]] - degree 3, connects to 1 community

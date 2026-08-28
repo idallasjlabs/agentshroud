@@ -1,20 +1,22 @@
 ---
 type: community
+cohesion: 0.33
 members: 7
 ---
 
 # Community 1050
 
+**Cohesion:** 0.33 - loosely connected
 **Members:** 7 nodes
 
 ## Members
-- [[Competitive Security Matrix — AgentShroud vs AI Agent Platforms]] - document - docs/security/competitive-security-matrix.md
-- [[Container Security Toolchain Comparison]] - document - docs/security/competitive-security-matrix.md
-- [[Key Takeaways]] - document - docs/security/competitive-security-matrix.md
-- [[Module Comparison]] - document - docs/security/competitive-security-matrix.md
-- [[Security Score (out of 28)]] - document - docs/security/competitive-security-matrix.md
-- [[Updated Magic Quadrant Position]] - document - docs/security/competitive-security-matrix.md
-- [[competitive-security-matrix]] - document - docs/security/competitive-security-matrix.md
+- [[Notes_9]] - document - skills/openclaw/video-frames/SKILL.md
+- [[Quick start_4]] - document - skills/openclaw/video-frames/SKILL.md
+- [[SKILL_236]] - document - skills/openclaw/video-frames/SKILL.md
+- [[Video Frames (ffmpeg)]] - document - skills/openclaw/video-frames/SKILL.md
+- [[frame.sh]] - code - skills/openclaw/video-frames/scripts/frame.sh
+- [[frame.sh script]] - code - skills/openclaw/video-frames/scripts/frame.sh
+- [[usage()_8]] - code - skills/openclaw/video-frames/scripts/frame.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,3 +24,9 @@ members: 7
 TABLE source_file, type FROM #community/Community_1050
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 401]]
+
+## Top bridge nodes
+- [[SKILL_236]] - degree 3, connects to 1 community

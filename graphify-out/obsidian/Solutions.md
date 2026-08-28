@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/IMESSAGE_STATUS.md"
 type: "document"
-community: "Community 392"
+community: "Community 393"
 location: "L34"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_392
+  - community/Community_393
 ---
 
 # Solutions
@@ -16,4 +16,4 @@ tags:
 - [[Option 2 Use BlueBubbles (RECOMMENDED ✅)]] - `contains` [EXTRACTED]
 - [[iMessage Integration Status]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_392
+#graphify/document #graphify/EXTRACTED #community/Community_393

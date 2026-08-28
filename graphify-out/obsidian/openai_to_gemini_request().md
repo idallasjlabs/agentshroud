@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/gemini_openai_translator.py"
 type: "code"
-community: "Community 142"
+community: "Community 143"
 location: "L165"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_142
+  - community/Community_143
 ---
 
 # openai_to_gemini_request()
@@ -26,4 +26,4 @@ tags:
 - [[test_openai_to_gemini_no_system_message_omits_system_instruction()]] - `calls` [EXTRACTED]
 - [[test_openai_to_gemini_stop_sequences_normalized_to_list()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_142
+#graphify/code #graphify/EXTRACTED #community/Community_143

@@ -1,12 +1,12 @@
 ---
 source_file: "README.md"
 type: "document"
-community: "Community 403"
+community: "Community 118"
 location: "L250"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_403
+  - community/Community_118
 ---
 
 # Terminal Control Center
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Control Centers]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_403
+#graphify/document #graphify/EXTRACTED #community/Community_118

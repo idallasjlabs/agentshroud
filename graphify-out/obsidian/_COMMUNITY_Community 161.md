@@ -1,53 +1,56 @@
 ---
 type: community
-members: 40
+cohesion: 0.07
+members: 41
 ---
 
 # Community 161
 
-**Members:** 40 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 41 nodes
 
 ## Members
-- [[Add a comment to an existing Jira issue._1]] - rationale - docker/config/openclaw/workspace/jira_dev_ticket.py
-- [[ArgumentParser_1]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
-- [[Build (url, body, headers) for a POST to the gateway op-proxy._1]] - rationale - docker/config/openclaw/workspace/jira_dev_ticket.py
-- [[Build the ADF (Atlassian Document Format) body for POST ...comment._1]] - rationale - docker/config/openclaw/workspace/jira_dev_ticket.py
-- [[Build the REST v3 create-issue request body._1]] - rationale - docker/config/openclaw/workspace/jira_dev_ticket.py
-- [[Create a Jira issue. Returns the new issue key (e.g. 'SCRUM-124')._1]] - rationale - docker/config/openclaw/workspace/jira_dev_ticket.py
-- [[Fetch one secret field from the gateway op-proxy. Returns the value._2]] - rationale - docker/config/openclaw/workspace/jira_dev_ticket.py
-- [[Issue one HTTP request and return (status_code, response_text).      HTTPError i_1]] - rationale - docker/config/openclaw/workspace/jira_dev_ticket.py
-- [[Match a transition by its own name or its destination status name._1]] - rationale - docker/config/openclaw/workspace/jira_dev_ticket.py
-- [[Move an issue to the named status (matched against available transitions)._1]] - rationale - docker/config/openclaw/workspace/jira_dev_ticket.py
-- [[Parse argv, resolve credentials, dispatch the subcommand. Returns exit code._1]] - rationale - docker/config/openclaw/workspace/jira_dev_ticket.py
-- [[REST v3 URL for creating an issue._1]] - rationale - docker/config/openclaw/workspace/jira_dev_ticket.py
-- [[REST v3 add-comment URL for an arbitrary issue key._1]] - rationale - docker/config/openclaw/workspace/jira_dev_ticket.py
-- [[REST v3 transitions URL (GET to list, POST to apply) for an issue._1]] - rationale - docker/config/openclaw/workspace/jira_dev_ticket.py
-- [[Resolve (token, email, cloud_id) via the gateway op-proxy plus a public     tena_1]] - rationale - docker/config/openclaw/workspace/jira_dev_ticket.py
-- [[Resolve a site domain to its Atlassian cloud ID via the public,     unauthentica_2]] - rationale - docker/config/openclaw/workspace/jira_dev_ticket.py
-- [[Return the HTTP Basic auth header value base64(emailtoken)._2]] - rationale - docker/config/openclaw/workspace/jira_dev_ticket.py
-- [[Unauthenticated site-to-cloud-ID discovery URL._2]] - rationale - docker/config/openclaw/workspace/jira_dev_ticket.py
-- [[_adf_doc()_1]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
-- [[_auth_headers()_1]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
-- [[_build_arg_parser()_1]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
-- [[_cloud_base_url()_1]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
-- [[_http_request()_1]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
-- [[add_comment()_1]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
-- [[build_basic_auth_header()_2]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
-- [[build_comment_payload()_2]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
-- [[build_comment_url()_2]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
-- [[build_create_issue_payload()_1]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
-- [[build_issue_url()_1]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
-- [[build_op_proxy_request()_2]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
-- [[build_tenant_info_url()_2]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
-- [[build_transitions_url()_1]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
-- [[create_issue()_1]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
-- [[fetch_credentials()_1]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
-- [[fetch_op_secret()_2]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
-- [[find_transition_id()_1]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket.py_1]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
-- [[resolve_cloud_id()_2]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
-- [[run()_2]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
-- [[transition_issue()_1]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[.__init__()_36]] - code - gateway/proxy/slack_socket_client.py
+- [[._connect_and_handle()]] - code - gateway/proxy/slack_socket_client.py
+- [[._get_wss_url()]] - code - gateway/proxy/slack_socket_client.py
+- [[.run()]] - code - gateway/proxy/slack_socket_client.py
+- [[.stop()_4]] - code - gateway/proxy/slack_socket_client.py
+- [[.test_capped_at_cap_for_large_attempts()]] - code - gateway/tests/test_slack_socket_client.py
+- [[.test_events_api_envelope_dispatches_handle_event()]] - code - gateway/tests/test_slack_socket_client.py
+- [[.test_first_attempt_uses_base()]] - code - gateway/tests/test_slack_socket_client.py
+- [[.test_get_wss_url_raises_on_api_error()]] - code - gateway/tests/test_slack_socket_client.py
+- [[.test_get_wss_url_returns_url_on_success()]] - code - gateway/tests/test_slack_socket_client.py
+- [[.test_grows_exponentially_with_attempt()]] - code - gateway/tests/test_slack_socket_client.py
+- [[.test_hello_message_not_dispatched()]] - code - gateway/tests/test_slack_socket_client.py
+- [[.test_jitter_stays_within_half_to_full_ceiling()]] - code - gateway/tests/test_slack_socket_client.py
+- [[.test_run_resets_backoff_after_successful_connect()]] - code - gateway/tests/test_slack_socket_client.py
+- [[.test_stop_sets_running_false()]] - code - gateway/tests/test_slack_socket_client.py
+- [[A successful WSS connection resets the attempt counter to 0.]] - rationale - gateway/tests/test_slack_socket_client.py
+- [[Attempt 0 waits at most the base interval (1s default).]] - rationale - gateway/tests/test_slack_socket_client.py
+- [[Backoff never exceeds the cap, even for huge attempt counts.]] - rationale - gateway/tests/test_slack_socket_client.py
+- [[Call apps.connections.open to get a fresh WSS URL.]] - rationale - gateway/proxy/slack_socket_client.py
+- [[Capped exponential backoff with jitter for reconnect attempts.      Returns a wa]] - rationale - gateway/proxy/slack_socket_client.py
+- [[Jitter scales the wait between 50% and 100% of the ceiling.]] - rationale - gateway/tests/test_slack_socket_client.py
+- [[Main reconnect loop. Runs until stop() is called.]] - rationale - gateway/proxy/slack_socket_client.py
+- [[Maintains a persistent Socket Mode WebSocket connection to Slack.      Call run(]] - rationale - gateway/proxy/slack_socket_client.py
+- [[Open the WebSocket and process events until Slack requests disconnect.]] - rationale - gateway/proxy/slack_socket_client.py
+- [[Signal the run loop to exit.]] - rationale - gateway/proxy/slack_socket_client.py
+- [[SlackSocketClient]] - code - gateway/proxy/slack_socket_client.py
+- [[SlackSocketClient_1]] - code - gateway/tests/test_slack_socket_client.py
+- [[TestComputeBackoff]] - code - gateway/tests/test_slack_socket_client.py
+- [[TestSlackSocketClient]] - code - gateway/tests/test_slack_socket_client.py
+- [[Unit tests for SlackSocketClient.]] - rationale - gateway/tests/test_slack_socket_client.py
+- [[Unit tests for the reconnect backoff calculation.]] - rationale - gateway/tests/test_slack_socket_client.py
+- [[With jitter pinned to max, backoff doubles per attempt until the cap.]] - rationale - gateway/tests/test_slack_socket_client.py
+- [[_get_wss_url raises RuntimeError when apps.connections.open fails.]] - rationale - gateway/tests/test_slack_socket_client.py
+- [[_get_wss_url returns the WSS URL from apps.connections.open.]] - rationale - gateway/tests/test_slack_socket_client.py
+- [[_make_client()]] - code - gateway/tests/test_slack_socket_client.py
+- [[compute_backoff()]] - code - gateway/proxy/slack_socket_client.py
+- [[events_api envelopes call proxy.handle_event with the payload.]] - rationale - gateway/tests/test_slack_socket_client.py
+- [[hello messages are silently consumed without calling handle_event.]] - rationale - gateway/tests/test_slack_socket_client.py
+- [[slack_socket_client.py]] - code - gateway/proxy/slack_socket_client.py
+- [[stop() signals the run loop to exit.]] - rationale - gateway/tests/test_slack_socket_client.py
+- [[test_slack_socket_client.py]] - code - gateway/tests/test_slack_socket_client.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -55,3 +58,13 @@ members: 40
 TABLE source_file, type FROM #community/Community_161
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 5 edges to [[_COMMUNITY_Community 24]]
+
+## Top bridge nodes
+- [[SlackSocketClient]] - degree 13, connects to 1 community
+- [[_make_client()]] - degree 10, connects to 1 community
+- [[.test_events_api_envelope_dispatches_handle_event()]] - degree 4, connects to 1 community
+- [[.test_hello_message_not_dispatched()]] - degree 4, connects to 1 community
+- [[slack_socket_client.py]] - degree 3, connects to 1 community

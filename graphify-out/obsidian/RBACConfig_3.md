@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "Community 70"
+community: "RBAC & SOC Realtime"
 location: "L471"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_70
+  - community/RBAC__SOC_Realtime
 ---
 
 # RBACConfig
@@ -31,4 +31,4 @@ tags:
 - [[Role_1]] - `uses` [INFERRED]
 - [[ToolTier_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_70
+#graphify/code #graphify/EXTRACTED #community/RBAC__SOC_Realtime

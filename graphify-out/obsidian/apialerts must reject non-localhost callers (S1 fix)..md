@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "rationale"
-community: "Community 9"
+community: "Ingest API & Approval Routes"
 location: "L497"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_9
+  - community/Ingest_API__Approval_Routes
 ---
 
 # /api/alerts must reject non-localhost callers (S1 fix).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAlertsLocalhostEnforcement]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_9
+#graphify/rationale #graphify/EXTRACTED #community/Ingest_API__Approval_Routes

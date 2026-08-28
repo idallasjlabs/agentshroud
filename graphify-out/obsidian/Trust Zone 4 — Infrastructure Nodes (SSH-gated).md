@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-11-trust-boundary.svg"
 type: "concept"
-community: "Community 906"
+community: "Community 900"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_906
+  - community/Community_900
 ---
 
 # Trust Zone 4 — Infrastructure Nodes (SSH-gated)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Gateway (holds 1Password service account)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_906
+#graphify/concept #graphify/EXTRACTED #community/Community_900

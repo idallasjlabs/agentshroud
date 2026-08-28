@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/ui_face.c"
 type: "code"
-community: "Community 249"
+community: "Community 90"
 location: "L172"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_249
+  - community/Community_90
 ---
 
 # _touch_pressed()
@@ -17,7 +17,9 @@ tags:
 - [[face_set_emotion()]] - `calls` [INFERRED]
 - [[lv_event_t]] - `references` [EXTRACTED]
 - [[ui_face.c]] - `contains` [EXTRACTED]
+- [[ui_face.c_1]] - `contains` [EXTRACTED]
 - [[ui_face_init()]] - `calls` [EXTRACTED]
+- [[vt_remote_log()]] - `calls` [INFERRED]
 - [[wakeword_ended()]] - `calls` [INFERRED]
 - [[wakeword_ptt_finish()]] - `calls` [INFERRED]
 - [[wakeword_ptt_finish() — tap-to-stop force-end]] - `calls` [EXTRACTED]
@@ -26,4 +28,4 @@ tags:
 - [[wakeword_triggered()]] - `calls` [INFERRED]
 - [[wakeword_tts_stop_request()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_249
+#graphify/code #graphify/INFERRED #community/Community_90

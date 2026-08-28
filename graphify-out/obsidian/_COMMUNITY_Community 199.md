@@ -1,41 +1,51 @@
 ---
 type: community
-members: 28
+cohesion: 0.08
+members: 36
 ---
 
 # Community 199
 
-**Members:** 28 nodes
+**Cohesion:** 0.08 - loosely connected
+**Members:** 36 nodes
 
 ## Members
-- [[AgentShroud White Paper (HTML rendering)]] - paper - docs/papers/agentshroud-whitepaper.html
-- [[AgentShroud White Paper v1.1 (Feb 2026)]] - paper - docs/papers/agentshroud-whitepaper.md
-- [[AgentShroud v0.7.0 Enforcement Audit Results]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[AgentShroud v0.7.0 — Enforcement Audit Results]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[ContextGuard (context window poisoning defense)]] - concept - docs/papers/agentshroud-whitepaper.md
-- [[Egress Filter  SSRF Protection]] - concept - docs/papers/agentshroud-whitepaper.md
-- [[End-to-End Verification]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[FileSandbox (path isolation)]] - concept - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[GitGuard (supply-chain hook scanning)]] - concept - docs/papers/agentshroud-whitepaper.md
-- [[Known Gaps (Documented for v0.8.0)]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[MCP Proxy Layer (tool-call interception)]] - concept - docs/papers/agentshroud-whitepaper.md
-- [[P0 — Critical Path (1616 ✅)]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[P1 — Active Defense (1414 ✅)]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[P2 — Infrastructure (1010 ✅)]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[PromptGuard (Prompt Injection Defense)]] - concept - docs/papers/agentshroud-whitepaper.md
-- [[RBAC (Role-Based Access Control)]] - concept - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[Summary_28]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[Verdict ✅ CONDITIONAL GO]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[Voice Terminal — ESP32-S3-BOX-3 Integration Guide]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Wazuh CVE-2025-24016 (CVSS 9.9 RCE)]] - concept - docs/papers/agentshroud-whitepaper.md
-- [[enforcement-audit-script.py (P0P1P2 module smoke test)]] - code - docs/planning/reviews/enforcement-audit-script.py
-- [[enforcement-audit-v0.7.0]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[v0.8.0 Feature Interactive Egress Firewall + Observatory Mode]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
-- [[voice-gateway service (ESP32 voice terminal backend)]] - concept - docs/integrations/voice-terminal-esp32-s3.md
-- [[⚠️ Warning ContextGuard Enforcement]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[⚠️ Warning SecurityPipeline]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[⚠️ Warning killswitch.sh Path]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[⚠️ Warnings]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
+- [[.__init__()_77]] - code - gateway/security/encoding_detector.py
+- [[.analyze()_1]] - code - gateway/security/encoding_detector.py
+- [[.decode_base64_segments()]] - code - gateway/security/encoding_detector.py
+- [[.decode_hex()]] - code - gateway/security/encoding_detector.py
+- [[.decode_rot13()]] - code - gateway/security/encoding_detector.py
+- [[.decode_url()]] - code - gateway/security/encoding_detector.py
+- [[.replace_homoglyphs()]] - code - gateway/security/encoding_detector.py
+- [[.setup_method()_5]] - code - gateway/tests/test_encoding_detector.py
+- [[.strip_zero_width()]] - code - gateway/security/encoding_detector.py
+- [[.test_base64_detected()]] - code - gateway/tests/test_encoding_detector.py
+- [[.test_config_disable_base64()]] - code - gateway/tests/test_encoding_detector.py
+- [[.test_empty_input()_1]] - code - gateway/tests/test_encoding_detector.py
+- [[.test_homoglyph_replaced()]] - code - gateway/tests/test_encoding_detector.py
+- [[.test_nested_encoding()]] - code - gateway/tests/test_encoding_detector.py
+- [[.test_plain_text_no_detection()]] - code - gateway/tests/test_encoding_detector.py
+- [[.test_short_base64_not_flagged()]] - code - gateway/tests/test_encoding_detector.py
+- [[.test_url_encoding_detected()]] - code - gateway/tests/test_encoding_detector.py
+- [[.test_zero_width_stripped()]] - code - gateway/tests/test_encoding_detector.py
+- [[Cleartext injection is not re-rotated into noise (indicator already present).]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[Decode rot13-obfuscated injection payloads.          rot13 is self-inverse and a]] - rationale - gateway/security/encoding_detector.py
+- [[DecodedLayer]] - code - gateway/security/encoding_detector.py
+- [[Empty inbound text is handled without error.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[EncodingConfig]] - code - gateway/security/encoding_detector.py
+- [[EncodingDetector]] - code - gateway/security/encoding_detector.py
+- [[EncodingResult]] - code - gateway/security/encoding_detector.py
+- [[TestEncodingDetector]] - code - gateway/tests/test_encoding_detector.py
+- [[The check_rot13 config flag gates the rot13 layer.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[encoding_detector.py]] - code - gateway/security/encoding_detector.py
+- [[rot13 decode is NOT applied to benign prose (no injection indicators).]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[rot13 layer is surfaced when the decoded text reveals injection language.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_encoding_detector.py]] - code - gateway/tests/test_encoding_detector.py
+- [[test_encoding_detector_decodes_rot13_injection()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_encoding_detector_rot13_can_be_disabled()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_encoding_detector_rot13_empty_text()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_encoding_detector_rot13_ignores_benign_prose()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_encoding_detector_rot13_skips_already_visible_injection()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -45,16 +55,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_Community 91]]
-- 6 edges to [[_COMMUNITY_Community 204]]
-- 3 edges to [[_COMMUNITY_Community 1138]]
-- 2 edges to [[_COMMUNITY_Community 353]]
-- 1 edge to [[_COMMUNITY_Community 342]]
-- 1 edge to [[_COMMUNITY_Community 516]]
+- 20 edges to [[_COMMUNITY_PII Sanitizer & E2E Tests]]
+- 8 edges to [[_COMMUNITY_Community 47]]
+- 4 edges to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
+- 2 edges to [[_COMMUNITY_Community 46]]
+- 2 edges to [[_COMMUNITY_Community 116]]
+- 1 edge to [[_COMMUNITY_Community 45]]
+- 1 edge to [[_COMMUNITY_Community 137]]
 
 ## Top bridge nodes
-- [[AgentShroud v0.7.0 Enforcement Audit Results]] - degree 20, connects to 3 communities
-- [[enforcement-audit-script.py (P0P1P2 module smoke test)]] - degree 11, connects to 3 communities
-- [[AgentShroud White Paper v1.1 (Feb 2026)]] - degree 12, connects to 2 communities
-- [[Egress Filter  SSRF Protection]] - degree 7, connects to 2 communities
-- [[PromptGuard (Prompt Injection Defense)]] - degree 4, connects to 1 community
+- [[EncodingDetector]] - degree 45, connects to 4 communities
+- [[encoding_detector.py]] - degree 8, connects to 3 communities
+- [[EncodingConfig]] - degree 8, connects to 2 communities
+- [[test_encoding_detector_rot13_can_be_disabled()]] - degree 4, connects to 1 community
+- [[test_encoding_detector_decodes_rot13_injection()]] - degree 3, connects to 1 community

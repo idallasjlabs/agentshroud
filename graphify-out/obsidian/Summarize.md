@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/summarize/SKILL.md"
 type: "document"
-community: "Community 856"
+community: "Community 401"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_856
+  - community/Community_401
 ---
 
 # Summarize
@@ -20,4 +20,4 @@ tags:
 - [[When to use (trigger phrases)]] - `contains` [EXTRACTED]
 - [[YouTube summary vs transcript]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_856
+#graphify/document #graphify/EXTRACTED #community/Community_401

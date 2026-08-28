@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "Community 39"
+community: "Community 42"
 location: "L2617"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_39
+  - community/Community_42
 ---
 
 # compute_bot_scorecard()
@@ -36,4 +36,4 @@ tags:
 - [[test_manage_soc_report_endpoint()]] - `shares_data_with` [INFERRED]
 - [[test_soc_bots.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_39
+#graphify/code #graphify/EXTRACTED #community/Community_42

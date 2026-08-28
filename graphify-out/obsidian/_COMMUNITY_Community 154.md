@@ -1,64 +1,57 @@
 ---
 type: community
-members: 51
+cohesion: 0.07
+members: 42
 ---
 
 # Community 154
 
-**Members:** 51 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 42 nodes
 
 ## Members
-- [[API Key Security]] - document - docs/security/security-architecture.md
-- [[AgentShroud Security Architecture]] - document - docs/security/security-architecture.md
-- [[Approval Queue Workflow]] - document - docs/security/security-architecture.md
-- [[Architecture Diagram_1]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[Audit Ledger (SQLite)]] - rationale - docs/security/SECURITY_ARCHITECTURE.md
-- [[Audit Log Encryption]] - document - docs/security/security-architecture.md
-- [[Authentication and Authorization Framework]] - document - docs/security/security-architecture.md
-- [[CVE Mitigation Details]] - document - docs/security/security-architecture.md
-- [[CVE-2026-22708 AI Agent Container Escape via Prompt Injection]] - document - docs/security/security-architecture.md
-- [[CVE-2026-25253 PII Exfiltration via DNS Tunneling]] - document - docs/security/security-architecture.md
-- [[Contributing]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[Data Entry Points (All User-Controlled)]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[Data Flow Control]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[Defense-in-Depth]] - concept - docs/project/glossary.md
-- [[Defense-in-Depth Architecture]] - document - docs/security/security-architecture.md
-- [[Deployment Security]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[Detection Locations]] - document - docs/security/security-architecture.md
-- [[Detection Patterns]] - document - docs/security/security-architecture.md
-- [[Docker Network Isolation (agentshroud-isolated)]] - concept - docs/security/SECURITY_ARCHITECTURE.md
-- [[Effectiveness Metrics]] - document - docs/security/security-architecture.md
-- [[Emergency Procedures_2]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[Encryption and Cryptographic Controls]] - document - docs/security/security-architecture.md
-- [[Executive Summary_10]] - document - docs/security/security-architecture.md
-- [[For Open-Source Contributors]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[Kill Switch Triggered]] - document - docs/operations/incident-response.md
-- [[Known Issues (Accepted Risks)]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[Layer 1 Pattern Matching]] - document - docs/security/security-architecture.md
-- [[Layer 2 Unicode Normalization]] - document - docs/security/security-architecture.md
-- [[Layer 3 Multi-Layer Decoding]] - document - docs/security/security-architecture.md
-- [[Limitations & Residual Risks]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[Memory Encryption]] - document - docs/security/security-architecture.md
-- [[Multi-Layer Detection Strategy]] - document - docs/security/security-architecture.md
-- [[P2 High Priority Incidents]] - document - docs/operations/incident-response.md
-- [[PII Detection System]] - document - docs/security/security-architecture.md
-- [[PII Leak Incident]] - document - docs/operations/incident-response.md
-- [[PII Sanitization at Gateway Boundary]] - rationale - docs/security/SECURITY_ARCHITECTURE.md
-- [[Principle You Decide What The Agent Sees]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[Project Goals_1]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[Prompt Guard System (Module 25)]] - concept - docs/security/security-architecture.md
-- [[Prompt Injection Defense]] - document - docs/security/security-architecture.md
-- [[Prompt Injection Detected]] - document - docs/operations/incident-response.md
-- [[Quick Reference_6]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[Recommended Production Setup]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[Security Checklist]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[Threat Model]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[Transport Encryption]] - document - docs/security/security-architecture.md
-- [[Trust Level Progression]] - document - docs/security/security-architecture.md
-- [[What AgentShroud DOES NOT Protect Against]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[What AgentShroud Does]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[What We're Protecting Against]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[security-architecture]] - document - docs/security/security-architecture.md
+- [[.__init__()_29]] - code - gateway/proxy/mcp_proxy.py
+- [[.__init__()_28]] - code - gateway/proxy/mcp_proxy.py
+- [[._fake_aiohttp()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.get_or_create()]] - code - gateway/proxy/mcp_proxy.py
+- [[.is_running()]] - code - gateway/proxy/mcp_proxy.py
+- [[.kill()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.send_request()]] - code - gateway/proxy/mcp_proxy.py
+- [[.send_request()_2]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.shutdown()]] - code - gateway/proxy/mcp_proxy.py
+- [[.start()_1]] - code - gateway/proxy/mcp_proxy.py
+- [[.stop()_3]] - code - gateway/proxy/mcp_proxy.py
+- [[.stop()_2]] - code - gateway/proxy/mcp_proxy.py
+- [[.stop()_12]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.stop_all()]] - code - gateway/proxy/mcp_proxy.py
+- [[.terminate()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_bare_host_in_destination_field()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_bare_host_in_non_destination_field_ignored()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_direct_urls_dedup_and_lists()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_invalid_url_without_netloc_ignored()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_list_inherits_parent_key()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_missing_aiohttp_raises_runtime_error()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_non_matching_text_in_destination_field()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_send_request_and_session_reuse()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_start_send_and_stop()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_start_without_env_passes_none()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_stop_kills_on_wait_timeout()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.wait()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[Clean shutdown — close all connections.]] - rationale - gateway/proxy/mcp_proxy.py
+- [[FakeProcess]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[Get existing connection or create a new one.]] - rationale - gateway/proxy/mcp_proxy.py
+- [[HttpSseConnection]] - code - gateway/proxy/mcp_proxy.py
+- [[MCPServerConfig_2]] - code - gateway/proxy/mcp_proxy.py
+- [[Manages a stdio connection to an MCP server process.]] - rationale - gateway/proxy/mcp_proxy.py
+- [[Manages an HTTPSSE connection to an MCP server.]] - rationale - gateway/proxy/mcp_proxy.py
+- [[Send a JSON-RPC request and read the response.]] - rationale - gateway/proxy/mcp_proxy.py
+- [[Stand-in for asyncio.subprocess.Process — no real child process.]] - rationale - gateway/tests/test_mcp_proxy_coverage.py
+- [[Start the MCP server process.]] - rationale - gateway/proxy/mcp_proxy.py
+- [[StdioConnection]] - code - gateway/proxy/mcp_proxy.py
+- [[Stop the MCP server process.]] - rationale - gateway/proxy/mcp_proxy.py
+- [[TestExtractEgressTargets]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[TestHttpSseConnection]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[TestStdioConnection]] - code - gateway/tests/test_mcp_proxy_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -68,14 +61,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_Community 90]]
-- 1 edge to [[_COMMUNITY_Community 343]]
-- 1 edge to [[_COMMUNITY_Community 91]]
-- 1 edge to [[_COMMUNITY_Community 548]]
-- 1 edge to [[_COMMUNITY_Community 236]]
-- 1 edge to [[_COMMUNITY_Community 638]]
-- 1 edge to [[_COMMUNITY_Community 276]]
+- 36 edges to [[_COMMUNITY_Community 103]]
+- 31 edges to [[_COMMUNITY_Community 44]]
+- 25 edges to [[_COMMUNITY_Community 39]]
+- 8 edges to [[_COMMUNITY_Community 261]]
+- 7 edges to [[_COMMUNITY_Community 206]]
+- 7 edges to [[_COMMUNITY_Community 109]]
+- 3 edges to [[_COMMUNITY_Community 324]]
+- 3 edges to [[_COMMUNITY_Community 473]]
+- 1 edge to [[_COMMUNITY_Community 24]]
 
 ## Top bridge nodes
-- [[AgentShroud Security Architecture]] - degree 33, connects to 6 communities
-- [[P2 High Priority Incidents]] - degree 4, connects to 1 community
+- [[HttpSseConnection]] - degree 35, connects to 8 communities
+- [[StdioConnection]] - degree 38, connects to 7 communities
+- [[FakeProcess]] - degree 23, connects to 7 communities
+- [[TestExtractEgressTargets]] - degree 21, connects to 6 communities
+- [[TestHttpSseConnection]] - degree 18, connects to 6 communities

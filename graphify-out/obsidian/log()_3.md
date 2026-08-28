@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/security-report.sh"
 type: "code"
-community: "Community 505"
+community: "Community 427"
 location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_505
+  - community/Community_427
 ---
 
 # log()
@@ -15,4 +15,4 @@ tags:
 - [[security-report.sh]] - `defines` [EXTRACTED]
 - [[security-report.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_505
+#graphify/code #graphify/EXTRACTED #community/Community_427

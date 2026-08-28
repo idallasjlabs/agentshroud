@@ -1,33 +1,41 @@
 ---
 type: community
-members: 20
+cohesion: 0.09
+members: 26
 ---
 
 # Community 333
 
-**Members:** 20 nodes
+**Cohesion:** 0.09 - loosely connected
+**Members:** 26 nodes
 
 ## Members
-- [[.test_approval_queue_enabled()]] - code - gateway/tests/test_config_validation.py
-- [[.test_container_hardening()]] - code - gateway/tests/test_config_validation.py
-- [[.test_drift_detector_enabled()]] - code - gateway/tests/test_config_validation.py
-- [[.test_egress_filter_enabled()]] - code - gateway/tests/test_config_validation.py
-- [[.test_encrypted_store_enabled()]] - code - gateway/tests/test_config_validation.py
-- [[.test_extensive_approval_actions()]] - code - gateway/tests/test_config_validation.py
-- [[.test_has_auth_token_placeholder()]] - code - gateway/tests/test_config_validation.py
-- [[.test_has_memory_limit()]] - code - gateway/tests/test_config_validation.py
-- [[.test_has_seccomp_profile()]] - code - gateway/tests/test_config_validation.py
-- [[.test_kill_switch_enabled()]] - code - gateway/tests/test_config_validation.py
-- [[.test_long_retention()]] - code - gateway/tests/test_config_validation.py
-- [[.test_pii_enabled()]] - code - gateway/tests/test_config_validation.py
-- [[.test_pii_engine_presidio()]] - code - gateway/tests/test_config_validation.py
-- [[.test_prompt_guard_enabled()]] - code - gateway/tests/test_config_validation.py
-- [[.test_rootless()]] - code - gateway/tests/test_config_validation.py
-- [[.test_ssh_requires_approval()]] - code - gateway/tests/test_config_validation.py
-- [[.test_telemetry_disabled()]] - code - gateway/tests/test_config_validation.py
-- [[.test_trust_manager_enabled()]] - code - gateway/tests/test_config_validation.py
-- [[TestParanoidConfig]] - code - gateway/tests/test_config_validation.py
-- [[paranoid.env should enable ALL security features.]] - rationale - gateway/tests/test_config_validation.py
+- [[401 Unauthorized_3]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[403 Forbidden]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[Connection timeout_3]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[Notes folder not found]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[Access Notes via IMAP]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[Challenge]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[Discovery Process]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[Generate App-Specific Password]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[Server Settings_1]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[Step 1 Generate App-Specific Password]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[Step 2 Install Dependencies]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[Step 3 Test Services]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[Step 4 Verify All Working]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[Test CalDAV Connection]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[Test IMAP Connection]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[iCloud Services Setup - Complete Guide]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[✅ Setup Checklist_1]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[🎯 Next Steps After Setup]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[📅 iCloud Calendar (CalDAV)]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[📝 iCloud Notes]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[📞 iCloud Contacts (CardDAV)]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[📦 Required Node.js Packages]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[📧 iCloud Mail (IMAPSMTP)]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[🔍 Troubleshooting]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[🔐 Important App-Specific Passwords]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[🚀 Complete Setup Script]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,9 +45,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 754]]
-- 1 edge to [[_COMMUNITY_Community 1]]
-- 1 edge to [[_COMMUNITY_Community 345]]
+- 1 edge to [[_COMMUNITY_Community 428]]
 
 ## Top bridge nodes
-- [[TestParanoidConfig]] - degree 23, connects to 3 communities
+- [[iCloud Services Setup - Complete Guide]] - degree 11, connects to 1 community

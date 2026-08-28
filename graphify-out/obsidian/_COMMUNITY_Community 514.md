@@ -1,37 +1,32 @@
 ---
 type: community
-members: 24
+cohesion: 0.15
+members: 17
 ---
 
 # Community 514
 
-**Members:** 24 nodes
+**Cohesion:** 0.15 - loosely connected
+**Members:** 17 nodes
 
 ## Members
-- [[1Password Session Expiry (op-proxy)]] - rationale - docs/project/TELEGRAM_ISSUES.md
-- [[Anthropic API Credits & Rate Limits Issue]] - rationale - docs/project/TELEGRAM_ISSUES.md
-- [[Anthropic API Credits Exhausted Blocker]] - rationale - docs/project/SYSTEM_STATUS.md
-- [[Bot Not Responding to Telegram Messages]] - document - docs/runbooks/troubleshooting.md
-- [[Bot Token Migration Confusion]] - rationale - docs/project/TELEGRAM_ISSUES.md
-- [[ColimaDocker Stability Issue (Marvin)]] - rationale - docs/project/TELEGRAM_ISSUES.md
-- [[Common Issues_1]] - document - docs/runbooks/troubleshooting.md
-- [[Container Keeps Restarting]] - document - docs/runbooks/troubleshooting.md
-- [[ContextGuard False Positive Collaborator Block]] - rationale - docs/project/TELEGRAM_ISSUES.md
-- [[Dashboard Not Loading]] - document - docs/runbooks/troubleshooting.md
-- [[Hallucinated Competitor Report (Zetherion AI)]] - rationale - docs/project/TELEGRAM_ISSUES.md
-- [[Kill Switch Won't Deactivate]] - document - docs/runbooks/troubleshooting.md
-- [[PII Sanitizer Blocking Legitimate Content]] - document - docs/runbooks/troubleshooting.md
-- [[PandocLaTeX Dependency Issue]] - rationale - docs/project/TELEGRAM_ISSUES.md
-- [[SMTP Port Block Email Failure]] - rationale - docs/project/TELEGRAM_ISSUES.md
-- [[SSH Command Approval Stuck]] - document - docs/runbooks/troubleshooting.md
-- [[SSH Key Regeneration on Container Restart]] - rationale - docs/project/TELEGRAM_ISSUES.md
-- [[SYSTEM_STATUS]] - document - docs/project/SYSTEM_STATUS.md
-- [[TELEGRAM_ISSUES]] - document - docs/project/TELEGRAM_ISSUES.md
-- [[Tailscale Serve Not Working]] - document - docs/runbooks/troubleshooting.md
-- [[Tests Failing]] - document - docs/runbooks/troubleshooting.md
-- [[apply-patches.js Invalid Config Injection Bug]] - rationale - docs/project/TELEGRAM_ISSUES.md
-- [[iMessage Automation Permission Blocker]] - rationale - docs/project/SYSTEM_STATUS.md
-- [[iMessage Integration Permissions Issue]] - rationale - docs/project/TELEGRAM_ISSUES.md
+- [[1Password (credential vault)]] - image - docs/diagrams/images/diagram-01-c4-context.svg
+- [[1Password Integration (service account)]] - document - docs/api/integration-guide.md
+- [[ADR-004 Proxy-Side API Key Management]] - concept - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
+- [[AgentShroud (system, C4 context)]] - image - docs/diagrams/images/diagram-01-c4-context.svg
+- [[AgentShroud Bot Container (Node.js 22OpenClaw 18789)]] - image - docs/diagrams/images/diagram-02-c4-container.svg
+- [[Anthropic API (external system)]] - image - docs/diagrams/images/diagram-01-c4-context.svg
+- [[Brave Search API (external system)]] - image - docs/diagrams/images/diagram-01-c4-context.svg
+- [[External Collaborators]] - image - docs/diagrams/images/diagram-01-c4-context.svg
+- [[Gateway (FastAPI)]] - concept - docs/architecture/system-architecture.md
+- [[Gateway Container (Python 3.11FastAPI 8080)]] - image - docs/diagrams/images/diagram-02-c4-container.svg
+- [[GitHub (external system)]] - image - docs/diagrams/images/diagram-01-c4-context.svg
+- [[Isaiah Jefferson (ArchitectOwner)]] - image - docs/diagrams/images/diagram-01-c4-context.svg
+- [[OpenAI API (external system)]] - image - docs/diagrams/images/diagram-01-c4-context.svg
+- [[PII Sanitizer (Presidio + Regex)]] - concept - docs/architecture/system-architecture.md
+- [[Running Containers (gateway + bot, healthy)]] - image - docs/diagrams/images/diagram-06-cicd-deployment.svg
+- [[Telegram (external system)]] - image - docs/diagrams/images/diagram-01-c4-context.svg
+- [[sanitizer.py (PII redaction, Presidioregex)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
 
 ## Live Query (requires Dataview plugin)
 
@@ -41,14 +36,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 205]]
-- 1 edge to [[_COMMUNITY_Community 576]]
-- 1 edge to [[_COMMUNITY_Community 377]]
-- 1 edge to [[_COMMUNITY_Community 314]]
-- 1 edge to [[_COMMUNITY_Community 504]]
+- 1 edge to [[_COMMUNITY_Community 290]]
+- 1 edge to [[_COMMUNITY_Community 414]]
+- 1 edge to [[_COMMUNITY_Community 211]]
+- 1 edge to [[_COMMUNITY_Community 937]]
+- 1 edge to [[_COMMUNITY_Community 597]]
 
 ## Top bridge nodes
-- [[TELEGRAM_ISSUES]] - degree 14, connects to 2 communities
-- [[Common Issues_1]] - degree 9, connects to 1 community
-- [[SYSTEM_STATUS]] - degree 3, connects to 1 community
-- [[PII Sanitizer Blocking Legitimate Content]] - degree 3, connects to 1 community
+- [[Gateway Container (Python 3.11FastAPI 8080)]] - degree 9, connects to 2 communities
+- [[AgentShroud (system, C4 context)]] - degree 9, connects to 1 community
+- [[Gateway (FastAPI)]] - degree 4, connects to 1 community
+- [[PII Sanitizer (Presidio + Regex)]] - degree 3, connects to 1 community

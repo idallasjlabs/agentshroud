@@ -1,14 +1,17 @@
 ---
 type: community
-members: 1
+cohesion: 1.00
+members: 2
 ---
 
 # Community 1661
 
-**Members:** 1 nodes
+**Cohesion:** 1.00 - tightly connected
+**Members:** 2 nodes
 
 ## Members
-- [[BDD Skill (stub)]] - document - .agents/skills/i-bdd/SKILL.md
+- [[v0.8.0 Comprehensive Wiring Audit]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[v0.8.0 Watchtower Complete Feature List Final]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
 
 ## Live Query (requires Dataview plugin)
 

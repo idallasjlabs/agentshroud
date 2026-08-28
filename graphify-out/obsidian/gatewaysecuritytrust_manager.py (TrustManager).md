@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "Community 14"
+community: "Security Audit & Drift Detection"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_14
+  - community/Security_Audit__Drift_Detection
 ---
 
 # gateway/security/trust_manager.py (TrustManager)
@@ -15,4 +15,4 @@ tags:
 - [[test_security_audit_advanced.py]] - `references` [INFERRED]
 - [[test_security_regressions_v1_2.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_14
+#graphify/code #graphify/EXTRACTED #community/Security_Audit__Drift_Detection

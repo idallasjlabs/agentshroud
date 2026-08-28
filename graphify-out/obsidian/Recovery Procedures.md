@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/08 - Runbooks/Crash Recovery.md"
 type: "document"
-community: "Community 456"
+community: "Community 460"
 location: "L77"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_456
+  - community/Community_460
 ---
 
 # Recovery Procedures
@@ -19,4 +19,4 @@ tags:
 - [[Option 4 Volume-Safe Reset]] - `contains` [EXTRACTED]
 - [[Option 5 Nuclear Reset (DATA LOSS WARNING)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_456
+#graphify/document #graphify/EXTRACTED #community/Community_460

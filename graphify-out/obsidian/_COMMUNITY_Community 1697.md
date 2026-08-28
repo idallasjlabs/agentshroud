@@ -1,14 +1,16 @@
 ---
 type: community
+cohesion: 1.00
 members: 1
 ---
 
 # Community 1697
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[text_control_center.py — Terminal TUI control center]] - code - src/interfaces/text_control_center.py
+- [[docker-compose.secure.yml — Proxy Mode Deployment]] - document - docker-compose.secure.yml
 
 ## Live Query (requires Dataview plugin)
 

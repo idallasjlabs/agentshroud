@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1180
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[AWS Cloud Management & FinOps_1]] - document - docker/config/hermes/skills/i-aws/README.md
-- [[Purpose_40]] - document - docker/config/hermes/skills/i-aws/README.md
-- [[README_45]] - document - docker/config/hermes/skills/i-aws/README.md
-- [[Related Skills_43]] - document - docker/config/hermes/skills/i-aws/README.md
-- [[Usage_45]] - document - docker/config/hermes/skills/i-aws/README.md
+- [[Daedalus — Concept Illustrator_2]] - document - docker/config/hermes/skills/i-daedalus/README.md
+- [[Purpose_45]] - document - docker/config/hermes/skills/i-daedalus/README.md
+- [[README_50]] - document - docker/config/hermes/skills/i-daedalus/README.md
+- [[Related Skills_48]] - document - docker/config/hermes/skills/i-daedalus/README.md
+- [[Usage_51]] - document - docker/config/hermes/skills/i-daedalus/README.md
 
 ## Live Query (requires Dataview plugin)
 

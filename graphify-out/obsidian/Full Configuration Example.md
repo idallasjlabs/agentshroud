@@ -12,6 +12,6 @@ tags:
 # Full Configuration Example
 
 ## Connections
-- [[Configuration_20]] - `contains` [EXTRACTED]
+- [[Configuration_19]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Community_150

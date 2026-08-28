@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "Community 1540"
+community: "Community 154"
 location: "L164"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_1540
+  - community/Community_154
 ---
 
 # TestStdioConnection
@@ -31,4 +31,4 @@ tags:
 - [[StdioConnection]] - `uses` [INFERRED]
 - [[test_mcp_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_1540
+#graphify/code #graphify/INFERRED #community/Community_154

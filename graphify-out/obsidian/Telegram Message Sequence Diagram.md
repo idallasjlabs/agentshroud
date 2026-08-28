@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-15-sequence-telegram.png"
 type: "image"
-community: "Community 353"
+community: "Community 376"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Community_353
+  - community/Community_376
 ---
 
 # Telegram Message Sequence Diagram
@@ -19,4 +19,4 @@ tags:
 - [[README_121]] - `conceptually_related_to` [AMBIGUOUS]
 - [[ledger.db — audit ledger (Layer 3 persistence; hash-only, 90-day retention, auto-purge at expires_at)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Community_353
+#graphify/image #graphify/EXTRACTED #community/Community_376

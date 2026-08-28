@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-session-prompt/SKILL.md"
 type: "document"
-community: "Community 698"
+community: "Community 699"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_698
+  - community/Community_699
 ---
 
 # Skill: Session Prompt Generator (SESSION-PROMPT)
@@ -19,4 +19,4 @@ tags:
 - [[Trigger]] - `contains` [EXTRACTED]
 - [[Workflow Survey → Draft → Inject → Confirm]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_698
+#graphify/document #graphify/EXTRACTED #community/Community_699

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "rationale"
-community: "Community 1059"
+community: "Community 810"
 location: "L51"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1059
+  - community/Community_810
 ---
 
 # Test default policy has reasonable values.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_default_policy_values()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1059
+#graphify/rationale #graphify/EXTRACTED #community/Community_810

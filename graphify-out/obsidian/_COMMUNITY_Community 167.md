@@ -1,44 +1,55 @@
 ---
 type: community
-members: 31
+cohesion: 0.08
+members: 40
 ---
 
 # Community 167
 
-**Members:** 31 nodes
+**Cohesion:** 0.08 - loosely connected
+**Members:** 40 nodes
 
 ## Members
-- [[.__init__()_156]] - code - gateway/tests/test_forward_routing.py
-- [[._post()]] - code - gateway/tests/test_forward_routing.py
-- [[._run_forward()]] - code - gateway/tests/test_forward_routing.py
-- [[.process_inbound()_3]] - code - gateway/tests/test_forward_routing.py
-- [[.process_inbound()_5]] - code - gateway/tests/test_forward_routing.py
-- [[.process_outbound()_3]] - code - gateway/tests/test_forward_routing.py
-- [[.process_outbound()_5]] - code - gateway/tests/test_forward_routing.py
-- [[.test_agent_id_propagated_for_hermes()]] - code - gateway/tests/test_forward_routing.py
-- [[.test_agent_id_propagated_for_openclaw()]] - code - gateway/tests/test_forward_routing.py
-- [[.test_body_owner_id_with_matching_trusted_header_is_honored()]] - code - gateway/tests/test_forward_routing.py
-- [[.test_body_owner_id_without_trusted_header_is_stripped()]] - code - gateway/tests/test_forward_routing.py
-- [[.test_default_not_used_in_pipeline()]] - code - gateway/tests/test_forward_routing.py
-- [[.test_forward_passes_user_id_in_metadata_to_process_inbound()]] - code - gateway/tests/test_forward_routing.py
-- [[.test_non_owner_body_user_id_passes_through()]] - code - gateway/tests/test_forward_routing.py
-- [[A non-owner user_id is not a spoof risk and must pass through unchanged]] - rationale - gateway/tests/test_forward_routing.py
-- [[Build a minimal mock app_state that returns a target with the given bot name.]] - rationale - gateway/tests/test_forward_routing.py
-- [[Legitimate voice-gateway path owner ID in body + matching trusted         heade]] - rationale - gateway/tests/test_forward_routing.py
-- [[Minimal pipeline mock that records which agent_id it was called with.]] - rationale - gateway/tests/test_forward_routing.py
-- [[Owner ID claimed in the body with NO trusted header must not reach the         p]] - rationale - gateway/tests/test_forward_routing.py
-- [[Pipeline receives 'hermes' as agent_id when routed to hermes.]] - rationale - gateway/tests/test_forward_routing.py
-- [[Pipeline receives 'openclaw' as agent_id when routed to openclaw.]] - rationale - gateway/tests/test_forward_routing.py
-- [[Regression 'default' must never appear in agent_id when a named target is resol]] - rationale - gateway/tests/test_forward_routing.py
-- [[TestAgentIdPropagatedFromTarget]] - code - gateway/tests/test_forward_routing.py
-- [[TestOwnerSpoofingViaForwardBody]] - code - gateway/tests/test_forward_routing.py
-- [[Verify that the resolved target.name is used as agent_id in pipeline calls.]] - rationale - gateway/tests/test_forward_routing.py
-- [[WS-E SCRUM-7374 a body-supplied user_id must NOT grant owner identity     to t]] - rationale - gateway/tests/test_forward_routing.py
-- [[_PipelineCaptor]] - code - gateway/tests/test_forward_routing.py
-- [[_make_mock_app_state()]] - code - gateway/tests/test_forward_routing.py
-- [[forward-routing agent_id propagation into security pipeline]] - code - gateway/ingest_api/routes/forward.py
-- [[process_inbound must receive metadata={'user_id' ...} from forward so that]] - rationale - gateway/tests/test_forward_routing.py
-- [[test_forward_routing.py]] - code - gateway/tests/test_forward_routing.py
+- [[.__init__()_60]] - code - gateway/security/canary_tripwire.py
+- [[._check_encoded()]] - code - gateway/security/canary_tripwire.py
+- [[._check_plain()]] - code - gateway/security/canary_tripwire.py
+- [[._normalize()]] - code - gateway/security/canary_tripwire.py
+- [[._record()]] - code - gateway/security/canary_tripwire.py
+- [[.detection_count()]] - code - gateway/security/canary_tripwire.py
+- [[.register_canary()]] - code - gateway/security/canary_tripwire.py
+- [[.scan()_2]] - code - gateway/security/canary_tripwire.py
+- [[.scan_response()_1]] - code - gateway/security/canary_tripwire.py
+- [[.setup_method()_1]] - code - gateway/tests/test_canary_tripwire.py
+- [[.test_api_key_canary()]] - code - gateway/tests/test_canary_tripwire.py
+- [[.test_base64_canary()]] - code - gateway/tests/test_canary_tripwire.py
+- [[.test_case_insensitive()]] - code - gateway/tests/test_canary_tripwire.py
+- [[.test_code_word_canary()]] - code - gateway/tests/test_canary_tripwire.py
+- [[.test_counter_increments()]] - code - gateway/tests/test_canary_tripwire.py
+- [[.test_custom_config()_1]] - code - gateway/tests/test_canary_tripwire.py
+- [[.test_empty_input()]] - code - gateway/tests/test_canary_tripwire.py
+- [[.test_no_canaries()]] - code - gateway/tests/test_canary_tripwire.py
+- [[.test_normal_content_passes()]] - code - gateway/tests/test_canary_tripwire.py
+- [[.test_plain_canary_detected()]] - code - gateway/tests/test_canary_tripwire.py
+- [[.test_reversed_canary()]] - code - gateway/tests/test_canary_tripwire.py
+- [[.test_rot13_canary()]] - code - gateway/tests/test_canary_tripwire.py
+- [[.test_scan_response_blocks_on_canary()]] - code - gateway/tests/test_canary_tripwire.py
+- [[.test_scan_response_no_block_when_block_disabled()]] - code - gateway/tests/test_canary_tripwire.py
+- [[.test_scan_response_passes_clean_text()]] - code - gateway/tests/test_canary_tripwire.py
+- [[.test_scan_response_records_scan_method()]] - code - gateway/tests/test_canary_tripwire.py
+- [[.test_scan_response_returns_tripwire_response()]] - code - gateway/tests/test_canary_tripwire.py
+- [[.test_spaced_canary()]] - code - gateway/tests/test_canary_tripwire.py
+- [[.test_url_encoded_canary()]] - code - gateway/tests/test_canary_tripwire.py
+- [[.test_zero_width_bypass()]] - code - gateway/tests/test_canary_tripwire.py
+- [[Bridge result returned by scan_response() for pipeline compatibility.]] - rationale - gateway/security/canary_tripwire.py
+- [[CanaryConfig]] - code - gateway/security/canary_tripwire.py
+- [[CanaryResult_1]] - code - gateway/security/canary_tripwire.py
+- [[CanaryTripwire]] - code - gateway/security/canary_tripwire.py
+- [[Pipeline-compatible bridge scan response text and return TripwireResponse.]] - rationale - gateway/security/canary_tripwire.py
+- [[Register a new canary value at runtime for dynamic tripwire testing.]] - rationale - gateway/security/canary_tripwire.py
+- [[TestCanaryTripwire]] - code - gateway/tests/test_canary_tripwire.py
+- [[TripwireResponse]] - code - gateway/security/canary_tripwire.py
+- [[canary_tripwire.py]] - code - gateway/security/canary_tripwire.py
+- [[test_canary_tripwire.py]] - code - gateway/tests/test_canary_tripwire.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -48,16 +59,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_Community 38]]
-- 5 edges to [[_COMMUNITY_Community 754]]
-- 5 edges to [[_COMMUNITY_Community 500]]
-- 1 edge to [[_COMMUNITY_Community 63]]
-- 1 edge to [[_COMMUNITY_Community 35]]
-- 1 edge to [[_COMMUNITY_Community 109]]
+- 14 edges to [[_COMMUNITY_PII Sanitizer & E2E Tests]]
+- 4 edges to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
+- 2 edges to [[_COMMUNITY_Community 46]]
 
 ## Top bridge nodes
-- [[test_forward_routing.py]] - degree 13, connects to 4 communities
-- [[_PipelineCaptor]] - degree 16, connects to 2 communities
-- [[_make_mock_app_state()]] - degree 9, connects to 2 communities
-- [[TestAgentIdPropagatedFromTarget]] - degree 9, connects to 2 communities
-- [[TestOwnerSpoofingViaForwardBody]] - degree 8, connects to 2 communities
+- [[CanaryTripwire]] - degree 34, connects to 2 communities
+- [[canary_tripwire.py]] - degree 6, connects to 1 community

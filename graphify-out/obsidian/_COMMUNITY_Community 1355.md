@@ -1,17 +1,19 @@
 ---
 type: community
+cohesion: 0.50
 members: 4
 ---
 
 # Community 1355
 
+**Cohesion:** 0.50 - moderately connected
 **Members:** 4 nodes
 
 ## Members
-- [[.test_collaborator_unquoted_tool_payload_text_is_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_collaborator_web_access_request_queues_owner_approval_and_pending_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[Collaborator URL web-access prompts should queue owner approval and return pendi]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Collaborator unquoted key payload should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_clean_when_installed_without_report()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_not_run_without_binary_or_report()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_timestamp_falls_back_to_file_mtime()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestTrivySummary]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +23,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_Community 2]]
-- 2 edges to [[_COMMUNITY_Community 32]]
+- 1 edge to [[_COMMUNITY_Community 288]]
+- 1 edge to [[_COMMUNITY_Community 193]]
 
 ## Top bridge nodes
-- [[.test_collaborator_web_access_request_queues_owner_approval_and_pending_notice()]] - degree 8, connects to 2 communities
-- [[.test_collaborator_unquoted_tool_payload_text_is_quarantined()]] - degree 7, connects to 2 communities
+- [[TestTrivySummary]] - degree 4, connects to 1 community
+- [[.test_timestamp_falls_back_to_file_mtime()]] - degree 2, connects to 1 community

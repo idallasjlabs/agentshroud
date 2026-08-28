@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-mcpm-aws-profile/README.md"
 type: "document"
-community: "Community 830"
+community: "Community 829"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_830
+  - community/Community_829
 ---
 
 # MCP AWS Profile Configuration README
@@ -17,4 +17,4 @@ tags:
 - [[Related Skills_18]] - `contains` [EXTRACTED]
 - [[Usage_20]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_830
+#graphify/document #graphify/EXTRACTED #community/Community_829

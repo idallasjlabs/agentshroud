@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VERIFICATION.md"
 type: "document"
-community: "Community 548"
+community: "Community 730"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_548
+  - community/Community_730
 ---
 
 # SECURITY_VERIFICATION.md
@@ -17,4 +17,4 @@ tags:
 - [[Security Verification Report]] - `contains` [EXTRACTED]
 - [[history-purge-plan]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_548
+#graphify/document #graphify/EXTRACTED #community/Community_730

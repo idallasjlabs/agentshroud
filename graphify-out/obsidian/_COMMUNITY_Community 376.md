@@ -1,53 +1,38 @@
 ---
 type: community
-members: 40
+cohesion: 0.14
+members: 23
 ---
 
 # Community 376
 
-**Members:** 40 nodes
+**Cohesion:** 0.14 - loosely connected
+**Members:** 23 nodes
 
 ## Members
-- [[AgentShroud Threat Model (L-1..L-4 Loss Categories)]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Agents Rule of Two]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[CVE-2026-22708 (Indirect Prompt Injection via Web Browsing)]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[CVE-2026-25253 (OpenClaw RCE)]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Credential Isolation Architecture]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[DNS-Layer Enforcement]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Debenedetti et al., The Attacker Moves Second (2025)]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[Enforce-by-Default Semantics (R-02, R-03)]] - rationale - docs/papers/agentshroud-ieee-paper.md
-- [[Hay, Enterprise Security Feature Priorities Assessment (2026)]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[Human-in-the-Loop Approval Gating (R-08, R-09)]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Leveson, Engineering a Safer World (2012)]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[Log-To-Leak MCP Exfiltration Attack]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[MCP Proxy Layer]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Microsoft Presidio PII Detection Engine]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[MiddlewareManager (35 Modules)]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Mutual TLS Container Communication]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[NanoClaw Agent Platform]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[OpenClaw Agent Platform]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Outbound Information Filter (R-01)]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[PII Sanitizer_2]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Per-User Session Isolation (R-04, R-05)]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Pi-hole DNS Filtering]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Prompt Injection Defense (Ensemble of 20+ Patterns)]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[RELEASE-PLAN]] - document - docs/planning/RELEASE-PLAN.md
-- [[STPA-Sec Analysis of AgentShroud]] - rationale - docs/papers/agentshroud-ieee-paper.md
-- [[SecurityPipeline (8-Guard Ordered Sequence)]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Separation of Concerns  Isolated Bot Accounts]] - rationale - docs/reference/PREREQUISITES.md
-- [[Separation of Privilege (R-06, R-07)]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Steve Hay Blue Team Assessment]] - concept - docs/planning/RELEASE-PLAN.md
-- [[ToolHijacker Attack]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Transparent Proxy Architecture]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Zetherion AI Platform]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[agentshroud-ieee-paper]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[step-ca Private Certificate Authority]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[v0.8.0 Watchtower — Security Fixes + Module Wiring]] - concept - docs/planning/RELEASE-PLAN.md
-- [[v0.9.0 Sentinel — Data Isolation + SOC]] - concept - docs/planning/RELEASE-PLAN.md
-- [[v1.0.0 Fortress — Ship-Ready Public Release]] - concept - docs/planning/RELEASE-PLAN.md
-- [[v1.1.0 Groups — Workspaces for Teams]] - concept - docs/planning/RELEASE-PLAN.md
-- [[v1.2.0 Local LLMs — Offline Model Support]] - concept - docs/planning/RELEASE-PLAN.md
-- [[v1.3.0 — Platform Expansion]] - concept - docs/planning/RELEASE-PLAN.md
+- [[Agent Decision Logic Flowchart]] - image - docs/diagrams/images/diagram-14-logic-flow.png
+- [[Agent routing (bindings config; e.g. Telegram ID 8096968754 → main agent)]] - image - docs/diagrams/images/diagram-14-logic-flow.png
+- [[AgentShroud Data Assets Mind Map (data dictionary; mostly illegible black-on-black render)]] - image - docs/diagrams/images/diagram-10-data-dictionary.png
+- [[Approval Queue (human-in-the-loop)_1]] - concept - docs/papers/agentshroud-whitepaper.md
+- [[Approval Queue State Diagram (pending → approvedrejectedexpired)]] - image - docs/diagrams/images/diagram-16-state-approval-queue.png
+- [[Approval queue data (in-memory, backed by SQLite)]] - image - docs/diagrams/images/diagram-10-data-dictionary.png
+- [[Current Status_3]] - document - docs/flows/README.md
+- [[Data Lineage Diagram (5-Layer Pipeline)]] - image - docs/diagrams/images/diagram-09-data-lineage.png
+- [[EphemeralTransient data (never persisted raw)]] - concept - docs/diagrams/images/diagram-10-data-dictionary.svg
+- [[Flows Documentation]] - document - docs/flows/README.md
+- [[Layer 1 — Source (TelegramiMessageCron)]] - image - docs/diagrams/images/diagram-09-data-lineage.png
+- [[Layer 4 — Processing (Bot LLM API call, MCP-inspected tool call)]] - image - docs/diagrams/images/diagram-09-data-lineage.png
+- [[Layer 5 — Consumption (auto-delete at expires_at, audit query, user response)]] - image - docs/diagrams/images/diagram-09-data-lineage.png
+- [[MCP Inspector (injection scan, PII scan, sensitive-op scan; ThreatLevel NONELOWMEDIUMHIGH)]] - concept - docs/diagrams/images/diagram-14-logic-flow.png
+- [[MCP inspection result (in-memory only, logged to gateway stdout)]] - image - docs/diagrams/images/diagram-10-data-dictionary.png
+- [[PII Redaction (Presidio-style pattern matching PHONE_NUMBER, EMAIL_ADDRESS, SSN, etc.)]] - concept - docs/diagrams/images/diagram-09-data-lineage.png
+- [[PII redaction result (hash only in ledger, never persisted raw)]] - image - docs/diagrams/images/diagram-10-data-dictionary.png
+- [[Peer binding Telegram 8096968754 → agentmain]] - image - docs/diagrams/images/diagram-15-sequence-telegram.png
+- [[Planned Documents_2]] - document - docs/flows/README.md
+- [[README_121]] - document - docs/flows/README.md
+- [[SHA-256 content hashing (original_content_hash + sanitized content_hash)]] - concept - docs/diagrams/images/diagram-09-data-lineage.png
+- [[Telegram Message Sequence Diagram]] - image - docs/diagrams/images/diagram-15-sequence-telegram.png
+- [[ledger.db — audit ledger (Layer 3 persistence; hash-only, 90-day retention, auto-purge at expires_at)]] - concept - docs/diagrams/images/diagram-09-data-lineage.png
 
 ## Live Query (requires Dataview plugin)
 
@@ -57,12 +42,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 274]]
-- 1 edge to [[_COMMUNITY_Community 859]]
-- 1 edge to [[_COMMUNITY_Community 360]]
-- 1 edge to [[_COMMUNITY_Community 725]]
+- 6 edges to [[_COMMUNITY_Community 604]]
+- 3 edges to [[_COMMUNITY_Community 492]]
+- 2 edges to [[_COMMUNITY_Community 185]]
+- 1 edge to [[_COMMUNITY_Community 1099]]
+- 1 edge to [[_COMMUNITY_Community 554]]
 
 ## Top bridge nodes
-- [[agentshroud-ieee-paper]] - degree 24, connects to 2 communities
-- [[RELEASE-PLAN]] - degree 7, connects to 1 community
-- [[Separation of Concerns  Isolated Bot Accounts]] - degree 2, connects to 1 community
+- [[Approval Queue (human-in-the-loop)_1]] - degree 10, connects to 3 communities
+- [[MCP Inspector (injection scan, PII scan, sensitive-op scan; ThreatLevel NONELOWMEDIUMHIGH)]] - degree 8, connects to 2 communities
+- [[Telegram Message Sequence Diagram]] - degree 7, connects to 2 communities
+- [[ledger.db — audit ledger (Layer 3 persistence; hash-only, 90-day retention, auto-purge at expires_at)]] - degree 8, connects to 1 community
+- [[EphemeralTransient data (never persisted raw)]] - degree 5, connects to 1 community

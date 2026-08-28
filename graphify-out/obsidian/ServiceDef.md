@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/compose_generator.py"
 type: "code"
-community: "Community 647"
+community: "Community 329"
 location: "L24"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_647
+  - community/Community_329
 ---
 
 # ServiceDef
@@ -33,4 +33,4 @@ tags:
 - [[generate_compose()]] - `references` [EXTRACTED]
 - [[test_runtime_engines.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_647
+#graphify/code #graphify/INFERRED #community/Community_329

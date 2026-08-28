@@ -1,20 +1,22 @@
 ---
 type: community
+cohesion: 0.29
 members: 7
 ---
 
 # Community 1061
 
+**Cohesion:** 0.29 - loosely connected
 **Members:** 7 nodes
 
 ## Members
-- [[2026-08-24 incident history (for context, not action items)]] - document - docker/config/openclaw/cron/JOBS-REFERENCE.md
-- [[How to recreate a job_1]] - document - docker/config/openclaw/cron/JOBS-REFERENCE.md
-- [[JOBS-REFERENCE_1]] - document - docker/config/openclaw/cron/JOBS-REFERENCE.md
-- [[Job index_1]] - document - docker/config/openclaw/cron/JOBS-REFERENCE.md
-- [[Known drift from `dockerconfigopenclawcronjobs.json`]] - document - docker/config/openclaw/cron/JOBS-REFERENCE.md
-- [[OpenClaw Cron Jobs — Reference & Recreation Guide]] - document - docker/config/openclaw/cron/JOBS-REFERENCE.md
-- [[Shared dependencies (must exist before dependent jobs run)]] - document - docker/config/openclaw/cron/JOBS-REFERENCE.md
+- [[.test_returns_false_for_empty_dir()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[.test_returns_false_for_missing_dir()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[.test_returns_false_for_stale_file()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[.test_returns_true_for_fresh_file()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[.test_three_zero_failures_no_report_on_disk()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[TestIsFresh_1]] - code - gateway/tests/test_scorecard_scoring.py
+- [[_mock_empty_dir()]] - code - gateway/tests/test_scorecard_scoring.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,3 +24,15 @@ members: 7
 TABLE source_file, type FROM #community/Community_1061
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_Community 646]]
+- 2 edges to [[_COMMUNITY_Community 647]]
+- 2 edges to [[_COMMUNITY_Community 921]]
+
+## Top bridge nodes
+- [[TestIsFresh_1]] - degree 5, connects to 1 community
+- [[_mock_empty_dir()]] - degree 3, connects to 1 community
+- [[.test_returns_false_for_missing_dir()]] - degree 2, connects to 1 community
+- [[.test_returns_false_for_stale_file()]] - degree 2, connects to 1 community
+- [[.test_returns_true_for_fresh_file()]] - degree 2, connects to 1 community

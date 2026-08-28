@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_filter_xml_blocks.py"
 type: "code"
-community: "Community 136"
+community: "PII Sanitizer & E2E Tests"
 location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_136
+  - community/PII_Sanitizer__E2E_Tests
 ---
 
 # sanitizer()
@@ -16,4 +16,4 @@ tags:
 - [[PIISanitizer]] - `calls` [EXTRACTED]
 - [[test_filter_xml_blocks.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_136
+#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer__E2E_Tests

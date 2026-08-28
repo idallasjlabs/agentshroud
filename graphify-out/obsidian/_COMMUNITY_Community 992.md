@@ -1,21 +1,23 @@
 ---
 type: community
+cohesion: 0.25
 members: 8
 ---
 
 # Community 992
 
+**Cohesion:** 0.25 - loosely connected
 **Members:** 8 nodes
 
 ## Members
-- [[.test_255_is_unreachable()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_nonzero_is_fail()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_zero_is_pass()]] - code - gateway/tests/test_multi_host_test.py
-- [[HostStatus]] - code - gateway/tools/multi_host_test.py
-- [[Map a runner exit code to a HostStatus.]] - rationale - gateway/tools/multi_host_test.py
-- [[Outcome classification for a single host.]] - rationale - gateway/tools/multi_host_test.py
-- [[TestClassify]] - code - gateway/tests/test_multi_host_test.py
-- [[classify()]] - code - gateway/tools/multi_host_test.py
+- [[.test_clean_result_passes_through()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_credit_card_detected()_1]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_credit_card_redacted()_1]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_email_detected_but_low_threat()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_pii_in_tool_result_redacted()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_ssn_detected_in_params()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_ssn_redacted_in_params()]] - code - gateway/tests/test_mcp_proxy.py
+- [[TestPIIDetection]] - code - gateway/tests/test_mcp_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,18 +27,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Community 904]]
-- 4 edges to [[_COMMUNITY_Community 485]]
-- 3 edges to [[_COMMUNITY_Community 869]]
-- 2 edges to [[_COMMUNITY_Community 78]]
-- 2 edges to [[_COMMUNITY_Community 816]]
-- 1 edge to [[_COMMUNITY_Community 817]]
-- 1 edge to [[_COMMUNITY_Community 993]]
-- 1 edge to [[_COMMUNITY_Community 1102]]
-- 1 edge to [[_COMMUNITY_Community 1257]]
-- 1 edge to [[_COMMUNITY_Community 731]]
+- 8 edges to [[_COMMUNITY_Community 44]]
+- 3 edges to [[_COMMUNITY_Community 39]]
+- 1 edge to [[_COMMUNITY_Community 206]]
+- 1 edge to [[_COMMUNITY_Community 109]]
+- 1 edge to [[_COMMUNITY_Community 261]]
 
 ## Top bridge nodes
-- [[HostStatus]] - degree 18, connects to 10 communities
-- [[classify()]] - degree 8, connects to 3 communities
-- [[TestClassify]] - degree 7, connects to 2 communities
+- [[TestPIIDetection]] - degree 21, connects to 5 communities

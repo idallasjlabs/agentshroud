@@ -1,24 +1,24 @@
 ---
 type: community
-members: 11
+cohesion: 0.22
+members: 9
 ---
 
 # Community 915
 
-**Members:** 11 nodes
+**Cohesion:** 0.22 - loosely connected
+**Members:** 9 nodes
 
 ## Members
-- [[3. Remaining Work — Prioritized by Security Value]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[3. Remaining Work — Prioritized by Value]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[4. Remaining Work — Prioritized by Value]] - document - docs/planning/reviews/phase-review-2026-03-03.md
-- [[Deprioritized (complexity without proportional value)]] - document - docs/planning/reviews/phase-review-2026-03-03.md
-- [[Tier 1 Critical (directly increases real security)]] - document - docs/planning/reviews/phase-review-2026-03-03.md
-- [[Tier 2 Important (hardens existing security)]] - document - docs/planning/reviews/phase-review-2026-03-03.md
-- [[Tier 3 Nice to Have (adds value but not critical)]] - document - docs/planning/reviews/phase-review-2026-03-03.md
-- [[📊 P2 — Operational Excellence (Medium Value)]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[🔧 P1 — Enhanced Security Capabilities (High Value)]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[🔬 P3 — Advanced Features (Lower Priority)]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[🚨 P0 — Critical Security Gaps (Immediate)]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
+- [[.test_credential_never_in_logs()]] - code - gateway/tests/test_credential_injector.py
+- [[.test_get_status_structure()]] - code - gateway/tests/test_credential_injector.py
+- [[Create a temp secrets directory with a test credential.]] - rationale - gateway/tests/test_credential_injector.py
+- [[CredentialInjector with a custom mapping pointing at the temp secrets.]] - rationale - gateway/tests/test_credential_injector.py
+- [[TestStatus]] - code - gateway/tests/test_credential_injector.py
+- [[Verify that raw credential values never appear in log output.]] - rationale - gateway/tests/test_credential_injector.py
+- [[injector()]] - code - gateway/tests/test_credential_injector.py
+- [[secrets_dir()]] - code - gateway/tests/test_credential_injector.py
+- [[test_credential_injector.py]] - code - gateway/tests/test_credential_injector.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,11 +28,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 135]]
-- 1 edge to [[_COMMUNITY_Community 1116]]
-- 1 edge to [[_COMMUNITY_Community 1045]]
+- 1 edge to [[_COMMUNITY_Community 867]]
+- 1 edge to [[_COMMUNITY_Community 987]]
+- 1 edge to [[_COMMUNITY_Community 1055]]
+- 1 edge to [[_COMMUNITY_Community 563]]
+- 1 edge to [[_COMMUNITY_Community 605]]
 
 ## Top bridge nodes
-- [[3. Remaining Work — Prioritized by Value]] - degree 9, connects to 1 community
-- [[3. Remaining Work — Prioritized by Security Value]] - degree 5, connects to 1 community
-- [[4. Remaining Work — Prioritized by Value]] - degree 5, connects to 1 community
+- [[test_credential_injector.py]] - degree 7, connects to 4 communities
+- [[injector()]] - degree 3, connects to 1 community

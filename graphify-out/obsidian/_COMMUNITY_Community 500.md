@@ -1,31 +1,33 @@
 ---
 type: community
+cohesion: 0.13
 members: 18
 ---
 
 # Community 500
 
+**Cohesion:** 0.13 - loosely connected
 **Members:** 18 nodes
 
 ## Members
-- [[.__init__()_157]] - code - gateway/tests/test_forward_routing.py
-- [[._post_forward()]] - code - gateway/tests/test_forward_routing.py
-- [[.test_empty_user_id_does_not_elevate_trust()]] - code - gateway/tests/test_forward_routing.py
-- [[.test_no_user_id_does_not_elevate_trust()]] - code - gateway/tests/test_forward_routing.py
-- [[.test_non_owner_user_id_does_not_elevate_trust()]] - code - gateway/tests/test_forward_routing.py
-- [[.test_owner_id_without_trusted_header_does_not_elevate_trust()]] - code - gateway/tests/test_forward_routing.py
-- [[.test_owner_user_id_elevates_trust_to_full()]] - code - gateway/tests/test_forward_routing.py
-- [[A collaborator's user_id must NOT trigger the owner elevation.]] - rationale - gateway/tests/test_forward_routing.py
-- [[An empty string user_id must not match the owner.]] - rationale - gateway/tests/test_forward_routing.py
-- [[Minimal app_state for owner-trust tests.]] - rationale - gateway/tests/test_forward_routing.py
-- [[Pipeline mock that records the user_trust_level passed to process_outbound.]] - rationale - gateway/tests/test_forward_routing.py
-- [[Requests with no user_id must not be elevated to FULL.]] - rationale - gateway/tests/test_forward_routing.py
-- [[SCRUM-46 verify forward.py elevates trust to FULL for the owner's user_id.]] - rationale - gateway/tests/test_forward_routing.py
-- [[TestOwnerTrustElevation]] - code - gateway/tests/test_forward_routing.py
-- [[WS-E SCRUM-7374 a spoofed owner user_id in the body WITHOUT the         truste]] - rationale - gateway/tests/test_forward_routing.py
-- [[When request.user_id matches _owner_user_id (with the trusted header),         p]] - rationale - gateway/tests/test_forward_routing.py
-- [[_TrustCaptor]] - code - gateway/tests/test_forward_routing.py
-- [[_make_trust_app_state()]] - code - gateway/tests/test_forward_routing.py
+- [[Access Control (7)]] - document - docs/security/security-inventory.md
+- [[Audit Logging_3]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
+- [[Behavior Examples]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
+- [[CREDENTIAL-SECURITY-POLICY]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
+- [[Credential Security Policy]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
+- [[Emergency Override]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
+- [[FAQ]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
+- [[Implementation Strategy]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
+- [[Option 1 Gateway-Level Filtering]] - rationale - docs/security/CREDENTIAL-SECURITY-POLICY.md
+- [[Option 1 Gateway-Level Filtering (Recommended)]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
+- [[Option 2 Approval Queue for Credential Ops]] - rationale - docs/security/CREDENTIAL-SECURITY-POLICY.md
+- [[Option 3 Disable Credential Commands via Telegram]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
+- [[Option 4 Role-Based Access Control]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
+- [[Recommended Configuration (All 4 Options Combined)]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
+- [[Security Requirement]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
+- [[Summary_16]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
+- [[✅ What SHOULD Happen]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
+- [[❌ What Should NOT Happen (Blocked)]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,12 +37,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Community 167]]
-- 3 edges to [[_COMMUNITY_Community 38]]
-- 2 edges to [[_COMMUNITY_Community 754]]
-- 1 edge to [[_COMMUNITY_Community 109]]
+- 1 edge to [[_COMMUNITY_Community 32]]
+- 1 edge to [[_COMMUNITY_Community 43]]
+- 1 edge to [[_COMMUNITY_Community 437]]
+- 1 edge to [[_COMMUNITY_Community 313]]
+- 1 edge to [[_COMMUNITY_Community 580]]
+- 1 edge to [[_COMMUNITY_Community 772]]
 
 ## Top bridge nodes
-- [[_TrustCaptor]] - degree 13, connects to 3 communities
-- [[TestOwnerTrustElevation]] - degree 10, connects to 3 communities
-- [[_make_trust_app_state()]] - degree 6, connects to 3 communities
+- [[CREDENTIAL-SECURITY-POLICY]] - degree 9, connects to 4 communities
+- [[Credential Security Policy]] - degree 11, connects to 1 community
+- [[Access Control (7)]] - degree 2, connects to 1 community

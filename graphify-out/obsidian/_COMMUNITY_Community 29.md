@@ -1,90 +1,123 @@
 ---
 type: community
-members: 77
+cohesion: 0.04
+members: 108
 ---
 
 # Community 29
 
-**Members:** 77 nodes
+**Cohesion:** 0.04 - loosely connected
+**Members:** 108 nodes
 
 ## Members
-- [[._apply_path_rewriting()]] - code - gateway/security/path_isolation.py
-- [[._check_cross_user_access()]] - code - gateway/security/path_isolation.py
-- [[._cleanup_user_directory()]] - code - gateway/security/path_isolation.py
-- [[._ensure_user_directory()]] - code - gateway/security/path_isolation.py
-- [[._get_user_temp_dir()]] - code - gateway/security/path_isolation.py
-- [[._is_base_directory_access()]] - code - gateway/security/path_isolation.py
-- [[._sanitize_user_id()]] - code - gateway/security/path_isolation.py
-- [[.cleanup_abandoned_directories()]] - code - gateway/security/path_isolation.py
-- [[.config()_4]] - code - gateway/tests/test_path_isolation.py
-- [[.end_user_session()]] - code - gateway/security/path_isolation.py
-- [[.get_user_temp_path()]] - code - gateway/security/path_isolation.py
-- [[.manager()_1]] - code - gateway/tests/test_path_isolation.py
-- [[.register_user_session()]] - code - gateway/security/path_isolation.py
-- [[.rewrite_path()]] - code - gateway/security/path_isolation.py
-- [[.temp_dir()]] - code - gateway/tests/test_path_isolation.py
-- [[.test_allow_own_namespace_access()]] - code - gateway/tests/test_path_isolation.py
-- [[.test_already_isolated_paths_not_rewritten()]] - code - gateway/tests/test_path_isolation.py
-- [[.test_basic_result()]] - code - gateway/tests/test_path_isolation.py
-- [[.test_block_base_directory_access()]] - code - gateway/tests/test_path_isolation.py
-- [[.test_block_cross_user_access()]] - code - gateway/tests/test_path_isolation.py
-- [[.test_blocked_result()]] - code - gateway/tests/test_path_isolation.py
-- [[.test_cleanup_abandoned_directories()]] - code - gateway/tests/test_path_isolation.py
-- [[.test_custom_config()_2]] - code - gateway/tests/test_path_isolation.py
-- [[.test_default_config()_5]] - code - gateway/tests/test_path_isolation.py
-- [[.test_dont_cleanup_active_user_directories()]] - code - gateway/tests/test_path_isolation.py
-- [[.test_end_user_session()]] - code - gateway/tests/test_path_isolation.py
-- [[.test_get_active_users()]] - code - gateway/tests/test_path_isolation.py
-- [[.test_get_user_temp_path()]] - code - gateway/tests/test_path_isolation.py
-- [[.test_initialization()_2]] - code - gateway/tests/test_path_isolation.py
-- [[.test_path_rewriting_nested_paths()]] - code - gateway/tests/test_path_isolation.py
-- [[.test_path_rewriting_no_rewrite_needed()]] - code - gateway/tests/test_path_isolation.py
-- [[.test_path_rewriting_temp_files()]] - code - gateway/tests/test_path_isolation.py
-- [[.test_register_user_session()]] - code - gateway/tests/test_path_isolation.py
-- [[.test_user_id_sanitization()]] - code - gateway/tests/test_path_isolation.py
-- [[Apply path rewriting rules to isolate paths per user.]] - rationale - gateway/security/path_isolation.py
-- [[Check if path is trying to access another user's isolated namespace.          Re]] - rationale - gateway/security/path_isolation.py
-- [[Check if path is trying to access the base AgentShroud directory.]] - rationale - gateway/security/path_isolation.py
-- [[Clean up a user's isolated directory.]] - rationale - gateway/security/path_isolation.py
-- [[Clean up abandoned user directories based on max age.]] - rationale - gateway/security/path_isolation.py
-- [[Create path isolation manager for testing.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Create temporary directory for testing.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Create test configuration._1]] - rationale - gateway/tests/test_path_isolation.py
-- [[End a user session and optionally clean up their isolated directory.]] - rationale - gateway/security/path_isolation.py
-- [[Ensure user's isolated directory exists.]] - rationale - gateway/security/path_isolation.py
-- [[Get a path within the user's isolated temp directory.]] - rationale - gateway/security/path_isolation.py
-- [[Get the isolated temp directory path for a user.]] - rationale - gateway/security/path_isolation.py
-- [[PathRewriteResult]] - code - gateway/security/path_isolation.py
-- [[Register a new user session and create their isolated directory.]] - rationale - gateway/security/path_isolation.py
-- [[Result of path rewriting operation.]] - rationale - gateway/security/path_isolation.py
-- [[Rewrite a path to isolate it to the user's namespace.          Args]] - rationale - gateway/security/path_isolation.py
-- [[Sanitize user ID to prevent path traversal attacks.]] - rationale - gateway/security/path_isolation.py
-- [[Test PathRewriteResult dataclass.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test allowing access to own namespace.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test basic result creation.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test blocked result creation.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test blocking cross-user namespace access.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test blocking direct access to base agentshroud directory.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test cleanup of abandoned user directories.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test custom configuration values._1]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test default configuration values._4]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test ending user session.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test getting active users.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test getting user temp path.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test manager initialization.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test path isolation configuration.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test path isolation manager.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test path rewriting for tmp files.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test path rewriting for nested tmp paths.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test paths that don't need rewriting.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test that active user directories are not cleaned up.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test that already isolated paths are not double-rewritten.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test user ID sanitization.]] - rationale - gateway/tests/test_path_isolation.py
-- [[Test user session registration.]] - rationale - gateway/tests/test_path_isolation.py
-- [[TestPathIsolationConfig]] - code - gateway/tests/test_path_isolation.py
-- [[TestPathIsolationManager]] - code - gateway/tests/test_path_isolation.py
-- [[TestPathRewriteResult]] - code - gateway/tests/test_path_isolation.py
-- [[test_path_isolation.py]] - code - gateway/tests/test_path_isolation.py
+- [[.test_check_bot_updates_npm_failure_and_exec_failure()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_check_bot_updates_npm_missing_binary()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_check_bot_updates_update_available()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_check_openclaw_updates_alias()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_check_updates_git_failure_returns_error()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_check_updates_reports_behind()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_create_purges_expired_tokens()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_create_returns_registered_prefixed_token()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_custom_revert_minutes()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_default_bot_dockerfile_used()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_default_revert_minutes()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_disconnect_reports_failure_on_engine_errors()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_disconnect_stops_and_removes_bot()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_echoes_status_until_disconnect()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_fallback_when_config_load_fails()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_fallback_when_default_bot_has_no_dockerfile()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_fallback_when_no_bots()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_first_bot_used_when_no_default_flag()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_freeze_reports_failure_when_pause_fails()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_get_engine_uses_runtime_config()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_get_logs_combined_handles_partial_failure()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_get_logs_for_service()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_get_logs_service_not_found_returns_404()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_get_logs_unknown_service_rejected()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_get_mode_default_enforce()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_invalid_mode_rejected()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_invalid_service_name_rejected()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_invalid_token_closes_4003()_1]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_invalid_token_raises_401()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_killswitch_action_default_unconfirmed()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_master_token_rejected_4003()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_missing_token_closes_4001()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_missing_token_closes_4001()_1]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_mode_request_defaults()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_rebuild_failure_returns_500()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_rebuild_success()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_report_with_healthy_runtime()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_report_with_unhealthy_runtime_falls_back_to_docker()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_requires_confirmation()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_restart_service_failure_returns_500()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_restart_service_success()_1]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_rollback_agentshroud_failure_returns_500()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_rollback_agentshroud_success()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_rollback_bot()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_rollback_openclaw_alias()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_set_mode_cancels_previous_revert_task()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_set_mode_clamps_high_revert()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_set_mode_enforce_revert_task_is_noop()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_set_mode_invalid_returns_400()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_set_mode_monitor_auto_reverts()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_shutdown_brings_stack_down()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_shutdown_failure_reports_error()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_start_service_failure_returns_500()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_start_service_success()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_status_runtime_failure_degrades_gracefully()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_status_with_running_and_stopped_containers()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_stop_service_failure_returns_500()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_stop_service_success()_1]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_streams_logs_then_cleans_up_on_disconnect()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_update_history_git_failure_returns_empty()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_update_history_returns_commits()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_update_request_defaults()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_upgrade_bot_failure_reports_error_step()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_upgrade_bot_success()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_upgrade_openclaw_alias()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_upgrade_pull_failure_triggers_rollback()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_upgrade_skip_tests_skips_test_step()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_upgrade_success_with_tests_and_security_review()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_upgrade_test_failure_triggers_rollback()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_valid_modes_constant()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_valid_token_authenticates()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_validate_is_single_use()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_validate_rejects_empty_and_unprefixed()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_validate_rejects_expired_token()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_validate_rejects_unknown_token()]] - code - gateway/tests/test_web_api_coverage.py
+- [[Build a subprocess.run double that simulates the upgrade git flow.]] - rationale - gateway/tests/test_web_api_coverage.py
+- [[HTTPAuthorizationCredentials_1]] - code - gateway/web/api.py
+- [[KillSwitchAction]] - code - gateway/web/api.py
+- [[ModeRequest]] - code - gateway/web/api.py
+- [[Require valid Bearer token for all management endpoints.]] - rationale - gateway/web/api.py
+- [[Restore AGENTSHROUD_MODE, revert task, and WS token registry per test.]] - rationale - gateway/tests/test_web_api_coverage.py
+- [[SimpleNamespace_1]] - code - gateway/tests/test_web_api_coverage.py
+- [[TestAgentshroudUpdates]] - code - gateway/tests/test_web_api_coverage.py
+- [[TestBotUpdates]] - code - gateway/tests/test_web_api_coverage.py
+- [[TestDefaultBotDockerfile]] - code - gateway/tests/test_web_api_coverage.py
+- [[TestGetEngineHelper]] - code - gateway/tests/test_web_api_coverage.py
+- [[TestKillSwitch_1]] - code - gateway/tests/test_web_api_coverage.py
+- [[TestLogs]] - code - gateway/tests/test_web_api_coverage.py
+- [[TestMgmtWsTokens]] - code - gateway/tests/test_web_api_coverage.py
+- [[TestMode]] - code - gateway/tests/test_web_api_coverage.py
+- [[TestModeRequestModel]] - code - gateway/tests/test_observatory_mode.py
+- [[TestOpenclawAliases]] - code - gateway/tests/test_web_api_coverage.py
+- [[TestRebuild]] - code - gateway/tests/test_web_api_coverage.py
+- [[TestRequireAuth]] - code - gateway/tests/test_web_api_coverage.py
+- [[TestSecurityReport]] - code - gateway/tests/test_web_api_coverage.py
+- [[TestServiceControl]] - code - gateway/tests/test_web_api_coverage.py
+- [[TestStatus_1]] - code - gateway/tests/test_web_api_coverage.py
+- [[TestWsLogs]] - code - gateway/tests/test_web_api_coverage.py
+- [[TestWsUpdates]] - code - gateway/tests/test_web_api_coverage.py
+- [[UpdateRequest]] - code - gateway/web/api.py
+- [[_container()]] - code - gateway/tests/test_web_api_coverage.py
+- [[_engine()]] - code - gateway/tests/test_web_api_coverage.py
+- [[_fake_ws()]] - code - gateway/tests/test_web_api_coverage.py
+- [[_gitless_run()]] - code - gateway/tests/test_web_api_coverage.py
+- [[_module_state_guard()]] - code - gateway/tests/test_web_api_coverage.py
+- [[client()_20]] - code - gateway/tests/test_web_api_coverage.py
+- [[require_auth()_1]] - code - gateway/web/api.py
+- [[test_web_api_coverage.py]] - code - gateway/tests/test_web_api_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -94,12 +127,29 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 25 edges to [[_COMMUNITY_Community 6]]
-- 1 edge to [[_COMMUNITY_Community 1842]]
+- 13 edges to [[_COMMUNITY_Community 156]]
+- 13 edges to [[_COMMUNITY_Community 37]]
+- 8 edges to [[_COMMUNITY_Community 105]]
+- 5 edges to [[_COMMUNITY_Community 24]]
+- 4 edges to [[_COMMUNITY_Community 58]]
+- 4 edges to [[_COMMUNITY_Community 25]]
+- 4 edges to [[_COMMUNITY_Community 872]]
+- 3 edges to [[_COMMUNITY_Community 14]]
+- 2 edges to [[_COMMUNITY_Community 113]]
+- 1 edge to [[_COMMUNITY_Ingest API & Approval Routes]]
+- 1 edge to [[_COMMUNITY_Community 43]]
+- 1 edge to [[_COMMUNITY_PII Sanitizer & E2E Tests]]
+- 1 edge to [[_COMMUNITY_Community 810]]
+- 1 edge to [[_COMMUNITY_Community 457]]
+- 1 edge to [[_COMMUNITY_Community 329]]
+- 1 edge to [[_COMMUNITY_Community 102]]
+- 1 edge to [[_COMMUNITY_Community 73]]
+- 1 edge to [[_COMMUNITY_Community 273]]
+- 1 edge to [[_COMMUNITY_Community 174]]
 
 ## Top bridge nodes
-- [[TestPathIsolationManager]] - degree 24, connects to 2 communities
-- [[PathRewriteResult]] - degree 9, connects to 1 community
-- [[._get_user_temp_dir()]] - degree 8, connects to 1 community
-- [[.rewrite_path()]] - degree 7, connects to 1 community
-- [[TestPathIsolationConfig]] - degree 7, connects to 1 community
+- [[require_auth()_1]] - degree 16, connects to 11 communities
+- [[ModeRequest]] - degree 47, connects to 8 communities
+- [[UpdateRequest]] - degree 29, connects to 5 communities
+- [[KillSwitchAction]] - degree 27, connects to 5 communities
+- [[test_web_api_coverage.py]] - degree 30, connects to 3 communities

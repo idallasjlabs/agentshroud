@@ -1,20 +1,21 @@
 ---
 type: community
-members: 7
+cohesion: 0.33
+members: 6
 ---
 
 # Community 1126
 
-**Members:** 7 nodes
+**Cohesion:** 0.33 - loosely connected
+**Members:** 6 nodes
 
 ## Members
-- [[7. Pi-hole DNS Security Layer (Built-In)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[AgentShroud Web Console Integration]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[Architecture_8]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[Configuration_7]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[Default Blocklists (Auto-Updated)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[Deliverables_3]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[Design Philosophy_1]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[.test_google_proxy_json_body_passthrough()]] - code - gateway/tests/test_main_endpoints.py
+- [[.test_google_proxy_non_json_body_passthrough()]] - code - gateway/tests/test_main_endpoints.py
+- [[JSON upstream responses must stay JSON.]] - rationale - gateway/tests/test_main_endpoints.py
+- [[Plain-text upstream errors must not turn into gateway 500s.]] - rationale - gateway/tests/test_main_endpoints.py
+- [[Regression tests for v1beta proxy response handling.]] - rationale - gateway/tests/test_main_endpoints.py
+- [[TestGoogleAPIProxy]] - code - gateway/tests/test_main_endpoints.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,7 +25,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 360]]
+- 2 edges to [[_COMMUNITY_Community 24]]
+- 1 edge to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
+- 1 edge to [[_COMMUNITY_Ingest API & Approval Routes]]
 
 ## Top bridge nodes
-- [[7. Pi-hole DNS Security Layer (Built-In)]] - degree 7, connects to 1 community
+- [[TestGoogleAPIProxy]] - degree 5, connects to 2 communities
+- [[.test_google_proxy_json_body_passthrough()]] - degree 3, connects to 1 community
+- [[.test_google_proxy_non_json_body_passthrough()]] - degree 3, connects to 1 community

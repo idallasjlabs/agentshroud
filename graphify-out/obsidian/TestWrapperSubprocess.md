@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_host_test.py"
 type: "code"
-community: "Community 904"
+community: "Community 898"
 location: "L345"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_904
+  - community/Community_898
 ---
 
 # TestWrapperSubprocess
@@ -21,4 +21,4 @@ tags:
 - [[MultiHostResult]] - `uses` [INFERRED]
 - [[test_multi_host_test.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_904
+#graphify/code #graphify/EXTRACTED #community/Community_898

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "rationale"
-community: "Community 482"
+community: "Community 122"
 location: "L954"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_482
+  - community/Community_122
 ---
 
 # Regression guard: AGENTSHROUD_TRIVY_IMAGES used to be the ONLY         source of
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_always_includes_every_configured_bot_image()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_482
+#graphify/rationale #graphify/EXTRACTED #community/Community_122

@@ -1,11 +1,11 @@
 ---
 source_file: "examples/docker-compose.production.yml"
 type: "document"
-community: "Community 621"
+community: "Community 289"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Community_621
+  - community/Community_289
 ---
 
 # AgentShroud Production Docker Compose
@@ -15,4 +15,4 @@ tags:
 - [[Health Checks_1]] - `conceptually_related_to` [INFERRED]
 - [[docker-commands]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Community_621
+#graphify/document #graphify/INFERRED #community/Community_289

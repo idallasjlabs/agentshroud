@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security.py"
 type: "code"
-community: "Community 10"
+community: "Config Validation & Router"
 location: "L188"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_10
+  - community/Config_Validation__Router
 ---
 
 # test_nested_pii_patterns()
@@ -15,4 +15,4 @@ tags:
 - [[Test overlapping or nested PII patterns]] - `rationale_for` [EXTRACTED]
 - [[test_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_10
+#graphify/code #graphify/EXTRACTED #community/Config_Validation__Router

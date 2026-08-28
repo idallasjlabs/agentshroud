@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "Community 52"
+community: "Community 67"
 location: "L477"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_52
+  - community/Community_67
 ---
 
 # _SocketTransportWriter
@@ -21,4 +21,4 @@ tags:
 - [[test_http_proxy_coverage.py]] - `contains` [EXTRACTED]
 - [[test_keepalive_set_on_both_tunnel_ends()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_52
+#graphify/code #graphify/EXTRACTED #community/Community_67

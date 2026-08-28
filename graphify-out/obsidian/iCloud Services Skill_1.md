@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-icloud/SKILL.md"
 type: "document"
-community: "Community 570"
+community: "Community 1400"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Community_570
+  - community/Community_1400
 ---
 
 # iCloud Services Skill
@@ -14,4 +14,4 @@ tags:
 - [[1Password item Apple ID - therealidallasj_1]] - `shares_data_with` [EXTRACTED]
 - [[iCloud Data Manager README]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Community_570
+#graphify/document #graphify/INFERRED #community/Community_1400

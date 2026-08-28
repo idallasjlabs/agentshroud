@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Runtime/config.py.md"
 type: "document"
-community: "Community 730"
+community: "Community 727"
 location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_730
+  - community/Community_727
 ---
 
 # Function Details
@@ -17,4 +17,4 @@ tags:
 - [[RuntimeConfig.from_env()]] - `contains` [EXTRACTED]
 - [[config.py_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_730
+#graphify/document #graphify/EXTRACTED #community/Community_727

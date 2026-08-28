@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c"
 type: "code"
-community: "Community 375"
+community: "Community 90"
 location: "L187"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_375
+  - community/Community_90
 ---
 
 # main()
@@ -20,4 +20,4 @@ tags:
 - [[test_tap_in_idle_starts_listen()]] - `calls` [EXTRACTED]
 - [[test_vad_timeout_fires_without_audio()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_375
+#graphify/code #graphify/EXTRACTED #community/Community_90

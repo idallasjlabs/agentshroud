@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "rationale"
-community: "Community 79"
+community: "Community 83"
 location: "L683"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_79
+  - community/Community_83
 ---
 
 # No streaming call site may hardcode its own connect timeout literal.      Guards
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_all_streaming_clients_use_the_shared_connect_timeout_constant()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_79
+#graphify/rationale #graphify/EXTRACTED #community/Community_83

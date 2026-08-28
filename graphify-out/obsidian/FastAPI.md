@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/fastapi.md"
 type: "document"
-community: "Community 366"
+community: "Community 243"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_366
+  - community/Community_243
 ---
 
 # fastapi.md
@@ -17,4 +17,4 @@ tags:
 - [[main.py_3]] - `references` [INFERRED]
 - [[pydantic]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_366
+#graphify/document #graphify/EXTRACTED #community/Community_243

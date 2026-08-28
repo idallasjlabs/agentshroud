@@ -1,21 +1,23 @@
 ---
 type: community
+cohesion: 0.25
 members: 8
 ---
 
 # Community 988
 
+**Cohesion:** 0.25 - loosely connected
 **Members:** 8 nodes
 
 ## Members
-- [[.test_aws_key_detected()]] - code - gateway/tests/test_credential_injector.py
-- [[.test_clean_content_passes()]] - code - gateway/tests/test_credential_injector.py
-- [[.test_github_token_detected()]] - code - gateway/tests/test_credential_injector.py
-- [[.test_jwt_detected()]] - code - gateway/tests/test_credential_injector.py
-- [[.test_leak_detection_disabled()]] - code - gateway/tests/test_credential_injector.py
-- [[.test_openai_key_detected()]] - code - gateway/tests/test_credential_injector.py
-- [[.test_slack_token_detected()]] - code - gateway/tests/test_credential_injector.py
-- [[TestLeakDetection]] - code - gateway/tests/test_credential_injector.py
+- [[.setup_method()_4]] - code - gateway/tests/test_dns_blocklist.py
+- [[.test_allowlist_skip()]] - code - gateway/tests/test_dns_blocklist.py
+- [[.test_comments_skipped()]] - code - gateway/tests/test_dns_blocklist.py
+- [[.test_deduplication()_1]] - code - gateway/tests/test_dns_blocklist.py
+- [[.test_empty_text()]] - code - gateway/tests/test_dns_blocklist.py
+- [[.test_multi_line_parsing()]] - code - gateway/tests/test_dns_blocklist.py
+- [[TestLoadFromText]] - code - gateway/tests/test_dns_blocklist.py
+- [[load_from_text() — multi-line parsing, dedup, allowlist skip.]] - rationale - gateway/tests/test_dns_blocklist.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,9 +27,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 921]]
-- 1 edge to [[_COMMUNITY_Community 611]]
+- 3 edges to [[_COMMUNITY_Community 142]]
 
 ## Top bridge nodes
-- [[TestLeakDetection]] - degree 8, connects to 1 community
-- [[.test_leak_detection_disabled()]] - degree 2, connects to 1 community
+- [[TestLoadFromText]] - degree 9, connects to 1 community
+- [[.setup_method()_4]] - degree 2, connects to 1 community

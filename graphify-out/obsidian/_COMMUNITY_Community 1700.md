@@ -1,14 +1,16 @@
 ---
 type: community
+cohesion: 1.00
 members: 1
 ---
 
 # Community 1700
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[app_main.c (ESP32 voice terminal entry point)]] - code - firmware/voice-terminal/main/app_main.c
+- [[agentshroud-knowledge]] - document - docs/agentshroud-knowledge.md
 
 ## Live Query (requires Dataview plugin)
 

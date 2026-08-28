@@ -1,36 +1,51 @@
 ---
 type: community
-members: 23
+cohesion: 0.06
+members: 36
 ---
 
 # Community 194
 
-**Members:** 23 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 36 nodes
 
 ## Members
-- [[AgentShroud Security Value Proposition]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[CRITICAL (Do First)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[Comparison Three Deployment Options]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[HIGH VALUE]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[Is AgentShroud worth the effort]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[LOW VALUE (Maybe Later)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[MEDIUM VALUE]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[My Recommendation]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[Option 1 OpenClaw Directly on Mac (Non-Admin User)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[Option 2 OpenClaw in Basic Docker Container]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[Option 3 AgentShroud (Current Architecture)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[Option A MVP (Minimum Viable Product)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[Option B Full Vision (All Phase 3+ Features)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[Option C Abandon AgentShroud]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[Phase 3 Plan Reality Check]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[SKIP (Over-Engineering)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[TL;DR - The Honest Answer]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[The Bottom Line]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[The Honest Assessment]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[The Real Security Value]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[What Makes AgentShroud Different]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[What Should You Do Next]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[What's Worth the Effort]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[Access Denied_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Token expired (SSO)_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Unable to locate credentials_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[AWS Profile Basics_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[AWS SSO Configuration_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Best Practices_3]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Check Current Profile_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Configuration Files_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Configure New Profile_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Default Profile vs Named Profiles_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Initial SSO Setup_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[List Available Profiles_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Login to SSO_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[MCP Not Using Profile_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[MCP-Specific_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Method 1 Set Environment Variable (Session)_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Method 2 Set Permanently (Shell Config)_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Method 3 Configure in .mcp.json_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Multi-Account AWS Access_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Option 1 Interactive Configuration_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Option 2 Manual Configuration_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Organization_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Quick Reference_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Related Skills_59]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Role_54]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[SKILL_96]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Scenario Development → Production_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Security_4]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Switch AWS Profile for MCP_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Troubleshooting_10]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Use SSO Profile with MCP_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[Using AssumeRole for Cross-Account Access_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[View Configured Profiles]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[What is an AWS Profile_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[When to Invoke_4]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -38,10 +53,3 @@ members: 23
 TABLE source_file, type FROM #community/Community_194
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 548]]
-- 1 edge to [[_COMMUNITY_Community 847]]
-
-## Top bridge nodes
-- [[AgentShroud Security Value Proposition]] - degree 11, connects to 2 communities

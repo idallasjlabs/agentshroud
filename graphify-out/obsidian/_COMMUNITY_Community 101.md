@@ -1,69 +1,72 @@
 ---
 type: community
-members: 56
+cohesion: 0.06
+members: 57
 ---
 
 # Community 101
 
-**Members:** 56 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 57 nodes
 
 ## Members
-- [[agent=direct must route to _call_llm (fast path), not forward.]] - rationale - gateway/tests/test_voice_gateway.py
-- [[agent=hermes must route to _call_agent (gateway forward), not _call_llm.]] - rationale - gateway/tests/test_voice_gateway.py
-- [[A 'set volume' updates the tracked level so a later query reports it —     prove]] - rationale - gateway/tests/test_voice_gateway.py
-- [[A 'use Claude' override must survive a reconnect a later connection     with no]] - rationale - gateway/tests/test_voice_gateway.py
-- [[A STOP arriving outside SPEAKING (e.g. the tap landed just as TTS ended)     mus]] - rationale - gateway/tests/test_voice_gateway.py
-- [[A bare 'tell Hermes' must NOT reach any agent yet it only sets the     sticky a]] - rationale - gateway/tests/test_voice_gateway.py
-- [[A bare 'use Claude' must NOT reach any agent the server updates the     sticky]] - rationale - gateway/tests/test_voice_gateway.py
-- [[A bare LISTEN after a stale partial upload must NOT prepend old audio.]] - rationale - gateway/tests/test_voice_gateway.py
-- [[A device 'STOP' text frame during the TTS send phase must abort the     remainin]] - rationale - gateway/tests/test_voice_gateway.py
-- [[A drop mid-upload must not force a full resend the next connection     sends 'L]] - rationale - gateway/tests/test_voice_gateway.py
-- [[A resume cache older than the freshness window must not replay.]] - rationale - gateway/tests/test_voice_gateway.py
-- [[A wedged TTS synthesis (e.g. blocked voice-pack download — live incident     202]] - rationale - gateway/tests/test_voice_gateway.py
-- [[Before any set, 'what is the volume' speaks the unknown-state reply and     stil]] - rationale - gateway/tests/test_voice_gateway.py
-- [[Build a MagicMock WebSocket for direct voice_endpoint() tests.      Frames are d]] - rationale - gateway/tests/test_voice_gateway.py
-- [[Empty STT result no LLM call, state goes directly to idle.]] - rationale - gateway/tests/test_voice_gateway.py
-- [[If the socket dies during the TTS downlink, the NEXT connection must     receive]] - rationale - gateway/tests/test_voice_gateway.py
-- [[LISTEN offset with an expired cache must behave like a fresh LISTEN     (the d]] - rationale - gateway/tests/test_voice_gateway.py
-- [[LISTEN → binary PCM → END → STT → forwardstream → TTS → PCM + END → idle.]] - rationale - gateway/tests/test_voice_gateway.py
-- [[Minimal S16LE silence.]] - rationale - gateway/tests/test_voice_gateway.py
-- [[Regression a single-sentence reply still produces exactly one synthesize call.]] - rationale - gateway/tests/test_voice_gateway.py
-- [[Remote-diag {log...} frames arriving DURING the TTS send phase must be     lo]] - rationale - gateway/tests/test_voice_gateway.py
-- [[Sentence-chunked TTS synthesize() is called once per sentence; all PCM arrives]] - rationale - gateway/tests/test_voice_gateway.py
-- [[Set volume 80. What time is it' must apply the volume AND route the     remaini]] - rationale - gateway/tests/test_voice_gateway.py
-- [[Tell Hermes to check my email.' must switch the agent AND route the     remainin]] - rationale - gateway/tests/test_voice_gateway.py
-- [[Use Claude. What's on my calendar' must switch the model AND route     the rema]] - rationale - gateway/tests/test_voice_gateway.py
-- [[What's the volume' must NOT reach the agent after a prior set the     server s]] - rationale - gateway/tests/test_voice_gateway.py
-- [[When split_for_speech returns multiple sentences, the pipelined TTS loop must]] - rationale - gateway/tests/test_voice_gateway.py
-- [[_mock_ws()]] - code - gateway/tests/test_voice_gateway.py
-- [[_pcm_bytes()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_bare_listen_starts_fresh()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_listen_offset_resumes_partial_upload()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_listen_offset_with_stale_cache_degrades_to_fresh()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_switch_overrides_persist_across_reconnect()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_tts_resume_after_mid_stream_disconnect()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_tts_resume_stale_cache_ignored()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_device_log_during_speaking_still_recorded()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_direct_agent_calls_call_llm()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_empty_transcript_goes_idle()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_full_utterance_state_sequence()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_hermes_agent_calls_call_agent()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_hung_tts_synthesis_still_returns_idle()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_one_sentence_reply_unchanged()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_sentence_chunked_tts_calls_synthesize_per_sentence()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_set_then_query_reports_the_set_level()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_stale_stop_when_idle_is_ignored()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_stop_during_speaking_aborts_tts()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_tell_agent_command_intercepted()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_tell_agent_command_with_chained_instruction()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_tts_pipeline_sends_all_sentences()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_use_local_command_confirms_with_model_name()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_use_model_command_intercepted()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_use_model_command_with_chained_question()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_volume_command_with_chained_question()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_volume_query_intercepted_returns_tracked_level()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_ws_volume_query_unknown_state_intercepted()]] - code - gateway/tests/test_voice_gateway.py
-- [[use qwen' sets agent='direct', model='qwen3-14b', and confirms with     the actu]] - rationale - gateway/tests/test_voice_gateway.py
+- [[.__init__()_113]] - code - gateway/security/report_store.py
+- [[._check_size()]] - code - gateway/security/report_store.py
+- [[._enforce_count_cap()]] - code - gateway/security/report_store.py
+- [[._persist()]] - code - gateway/security/report_store.py
+- [[._sanitize_async()]] - code - gateway/security/report_store.py
+- [[._sanitize_sync()]] - code - gateway/security/report_store.py
+- [[._valid_id()]] - code - gateway/security/report_store.py
+- [[.client()_1]] - code - gateway/tests/test_report_store.py
+- [[.delete()_1]] - code - gateway/security/report_store.py
+- [[.get()_4]] - code - gateway/security/report_store.py
+- [[.list()]] - code - gateway/security/report_store.py
+- [[.save()_2]] - code - gateway/security/report_store.py
+- [[.save_async()]] - code - gateway/security/report_store.py
+- [[.test_async_sanitizer_refused_on_sync_save()]] - code - gateway/tests/test_report_store.py
+- [[.test_bot_and_title_length_capped()]] - code - gateway/tests/test_report_store.py
+- [[.test_content_cap_default_is_1mb()]] - code - gateway/tests/test_report_store.py
+- [[.test_content_size_cap()]] - code - gateway/tests/test_report_store.py
+- [[.test_corrupt_metadata_skipped_in_list()]] - code - gateway/tests/test_report_store.py
+- [[.test_count_cap_prunes_oldest()]] - code - gateway/tests/test_report_store.py
+- [[.test_create_list_get_roundtrip()]] - code - gateway/tests/test_report_store.py
+- [[.test_cross_bot_visibility()]] - code - gateway/tests/test_report_store.py
+- [[.test_delete()]] - code - gateway/tests/test_report_store.py
+- [[.test_get_missing_returns_none()_1]] - code - gateway/tests/test_report_store.py
+- [[.test_get_rejects_path_traversal()]] - code - gateway/tests/test_report_store.py
+- [[.test_list_filter_by_bot()]] - code - gateway/tests/test_report_store.py
+- [[.test_list_returns_metadata_without_content()]] - code - gateway/tests/test_report_store.py
+- [[.test_missing_content_422()]] - code - gateway/tests/test_report_store.py
+- [[.test_pii_redacted_on_save()]] - code - gateway/tests/test_report_store.py
+- [[.test_report_id_is_path_safe()]] - code - gateway/tests/test_report_store.py
+- [[.test_round_trip()]] - code - gateway/tests/test_report_store.py
+- [[.test_save_async_size_cap()]] - code - gateway/tests/test_report_store.py
+- [[.test_save_async_with_async_sanitizer()]] - code - gateway/tests/test_report_store.py
+- [[.test_save_async_with_sync_sanitizer()]] - code - gateway/tests/test_report_store.py
+- [[.test_survives_new_instance()]] - code - gateway/tests/test_report_store.py
+- [[.test_tags_preserved()]] - code - gateway/tests/test_report_store.py
+- [[.test_title_and_tags_sanitized_async()]] - code - gateway/tests/test_report_store.py
+- [[.test_title_and_tags_sanitized_sync()]] - code - gateway/tests/test_report_store.py
+- [[.test_traversal_id_rejected_not_500()]] - code - gateway/tests/test_report_store.py
+- [[.test_unknown_report_404()]] - code - gateway/tests/test_report_store.py
+- [[Any_56]] - code - gateway/security/report_store.py
+- [[Filesystem-backed shared report store on the gateway-data volume.]] - rationale - gateway/security/report_store.py
+- [[Metadata (no content) for all reports, newest first.          O(n) file reads pe]] - rationale - gateway/security/report_store.py
+- [[Persist a report (sync sanitizer path); return its id.          Sanitizes ALL fr]] - rationale - gateway/security/report_store.py
+- [[Persist a report awaiting an async sanitizer (presidio) if injected.          Sa]] - rationale - gateway/security/report_store.py
+- [[Prune oldest reports so the shared volume can't be filled.]] - rationale - gateway/security/report_store.py
+- [[ReportStore]] - code - gateway/security/report_store.py
+- [[Route-level POSTGET apireports through the FastAPI app (SCRUM-79).]] - rationale - gateway/tests/test_report_store.py
+- [[SCRUM-79 adversarial-review follow-ups (2026-07-13).]] - rationale - gateway/tests/test_report_store.py
+- [[TestAsyncSave]] - code - gateway/tests/test_report_store.py
+- [[TestPersistence_1]] - code - gateway/tests/test_report_store.py
+- [[TestReportAPI]] - code - gateway/tests/test_report_store.py
+- [[TestReviewHardening]] - code - gateway/tests/test_report_store.py
+- [[TestSaveAndGet]] - code - gateway/tests/test_report_store.py
+- [[TestSecurity]] - code - gateway/tests/test_report_store.py
+- [[report_store.py]] - code - gateway/security/report_store.py
+- [[store()_2]] - code - gateway/tests/test_report_store.py
+- [[test_report_store.py]] - code - gateway/tests/test_report_store.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -73,14 +76,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 28 edges to [[_COMMUNITY_Community 37]]
-- 3 edges to [[_COMMUNITY_Community 109]]
-- 2 edges to [[_COMMUNITY_Community 103]]
-- 1 edge to [[_COMMUNITY_Community 115]]
+- 5 edges to [[_COMMUNITY_Ingest API & Approval Routes]]
+- 2 edges to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
 
 ## Top bridge nodes
-- [[_mock_ws()]] - degree 23, connects to 3 communities
-- [[_pcm_bytes()]] - degree 24, connects to 2 communities
-- [[test_ws_stop_during_speaking_aborts_tts()]] - degree 5, connects to 2 communities
-- [[test_ws_use_model_command_intercepted()]] - degree 5, connects to 2 communities
-- [[test_ws_empty_transcript_goes_idle()]] - degree 4, connects to 2 communities
+- [[ReportStore]] - degree 37, connects to 2 communities
+- [[test_report_store.py]] - degree 10, connects to 1 community
+- [[.get()_4]] - degree 6, connects to 1 community
+- [[._persist()]] - degree 5, connects to 1 community
+- [[.delete()_1]] - degree 4, connects to 1 community

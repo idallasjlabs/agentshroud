@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "code"
-community: "Community 110"
+community: "Community 272"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_110
+  - community/Community_272
 ---
 
 # skill_guard.py
@@ -22,4 +22,4 @@ tags:
 - [[_Rule]] - `contains` [EXTRACTED]
 - [[_c()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_110
+#graphify/code #graphify/EXTRACTED #community/Community_272

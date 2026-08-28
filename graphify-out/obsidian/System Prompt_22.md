@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/skills/i-socrates/SKILL.md"
 type: "document"
-community: "Community 499"
+community: "Community 497"
 location: "L96"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_499
+  - community/Community_497
 ---
 
 # System Prompt
 
 ## Connections
-- [[Socrates — Dialogue Architect_5]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_499
+#graphify/document #graphify/EXTRACTED #community/Community_497

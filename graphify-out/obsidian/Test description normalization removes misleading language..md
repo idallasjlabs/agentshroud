@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "rationale"
-community: "Community 213"
+community: "Community 34"
 location: "L67"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_213
+  - community/Community_34
 ---
 
 # Test description normalization removes misleading language.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_normalize_description_removes_misleading_phrases()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_213
+#graphify/rationale #graphify/EXTRACTED #community/Community_34

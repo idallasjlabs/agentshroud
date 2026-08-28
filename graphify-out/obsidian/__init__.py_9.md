@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/__init__.py"
 type: "code"
-community: "Community 1174"
+community: "Community 1169"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1174
+  - community/Community_1169
 ---
 
 # __init__.py
@@ -17,4 +17,4 @@ tags:
 - [[Trivy (container vulnerability scanning)]] - `references` [EXTRACTED]
 - [[Wazuh (file integrity monitoring)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1174
+#graphify/code #graphify/EXTRACTED #community/Community_1169

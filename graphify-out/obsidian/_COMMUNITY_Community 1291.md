@@ -1,18 +1,19 @@
 ---
 type: community
-members: 5
+cohesion: 0.50
+members: 4
 ---
 
 # Community 1291
 
-**Members:** 5 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[CVE Triage — Gaps & Development Plan (OpenClaw)]] - document - docs/security/cve-triage-gaps.md
-- [[Gap detail (development plan)]] - document - docs/security/cve-triage-gaps.md
-- [[Gap themes]] - document - docs/security/cve-triage-gaps.md
-- [[Resulting status breakdown]] - document - docs/security/cve-triage-gaps.md
-- [[cve-triage-gaps]] - document - docs/security/cve-triage-gaps.md
+- [[Dialogue Adaptations]] - document - .agents/skills/i-socrates/SKILL.md
+- [[Episode Closing (Mandatory for OKE)]] - document - .agents/skills/i-socrates/SKILL.md
+- [[Expert Persona]] - document - .agents/skills/i-socrates/SKILL.md
+- [[OKE Channel — CPA Exam Prep Dialogue Guidelines]] - document - .agents/skills/i-socrates/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,7 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 90]]
+- 1 edge to [[_COMMUNITY_Community 601]]
 
 ## Top bridge nodes
-- [[cve-triage-gaps]] - degree 2, connects to 1 community
+- [[OKE Channel — CPA Exam Prep Dialogue Guidelines]] - degree 4, connects to 1 community

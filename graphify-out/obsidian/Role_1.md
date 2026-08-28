@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "Community 15"
+community: "RBAC & SOC Realtime"
 location: "L25"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_15
+  - community/RBAC__SOC_Realtime
 ---
 
 # Role
@@ -34,7 +34,7 @@ tags:
 - [[RBACConfig_3]] - `uses` [INFERRED]
 - [[RBACConfig_4]] - `uses` [INFERRED]
 - [[RBACManager_1]] - `uses` [INFERRED]
-- [[Request_1]] - `uses` [INFERRED]
+- [[Request_2]] - `uses` [INFERRED]
 - [[Resource_1]] - `uses` [INFERRED]
 - [[Role]] - `uses` [INFERRED]
 - [[SCLCaller_2]] - `uses` [INFERRED]
@@ -106,7 +106,7 @@ tags:
 - [[ToolTier_1]] - `uses` [INFERRED]
 - [[TrustLevel_1]] - `conceptually_related_to` [INFERRED]
 - [[User roles in AgentShroud RBAC system.      Hierarchy (highest to lowest)]] - `rationale_for` [EXTRACTED]
-- [[WebSocket_2]] - `uses` [INFERRED]
+- [[WebSocket_3]] - `uses` [INFERRED]
 - [[_FakeBus]] - `uses` [INFERRED]
 - [[_FakeRBAC_1]] - `uses` [INFERRED]
 - [[_FakeRBAC_2]] - `uses` [INFERRED]
@@ -131,4 +131,4 @@ tags:
 - [[test_tool_acl.py]] - `imports` [EXTRACTED]
 - [[tool_acl.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_15
+#graphify/code #graphify/INFERRED #community/RBAC__SOC_Realtime

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/slack_socket_client.py"
 type: "rationale"
-community: "Community 157"
+community: "Community 161"
 location: "L98"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_157
+  - community/Community_161
 ---
 
 # Call apps.connections.open to get a fresh WSS URL.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._get_wss_url()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_157
+#graphify/rationale #graphify/EXTRACTED #community/Community_161

@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.70
 members: 5
 ---
 
 # Community 1264
 
+**Cohesion:** 0.70 - tightly connected
 **Members:** 5 nodes
 
 ## Members
-- [[Container Won't Start_1]] - document - docs/operations/deployment-procedure.md
-- [[Database Connection Issues]] - document - docs/operations/deployment-procedure.md
-- [[Port Already in Use]] - document - docs/operations/deployment-procedure.md
-- [[SSL Certificate Issues]] - document - docs/operations/deployment-procedure.md
-- [[Troubleshooting Common Issues]] - document - docs/operations/deployment-procedure.md
+- [[agentshroud-manage.sh]] - code - scripts/agentshroud-manage.sh
+- [[agentshroud-manage.sh script]] - code - scripts/agentshroud-manage.sh
+- [[api_call()]] - code - scripts/agentshroud-manage.sh
+- [[usage()_3]] - code - scripts/agentshroud-manage.sh
+- [[validate_input()]] - code - scripts/agentshroud-manage.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,9 +22,3 @@ members: 5
 TABLE source_file, type FROM #community/Community_1264
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 91]]
-
-## Top bridge nodes
-- [[Troubleshooting Common Issues]] - degree 5, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "Community 22"
+community: "Community 47"
 location: "L54"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_22
+  - community/Community_47
 ---
 
 # FilterResult
@@ -23,4 +23,4 @@ tags:
 - [[outbound_filter.py]] - `contains` [EXTRACTED]
 - [[pipeline.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_22
+#graphify/code #graphify/INFERRED #community/Community_47

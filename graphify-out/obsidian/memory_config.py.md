@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_config.py"
 type: "code"
-community: "Community 584"
+community: "Memory Lifecycle & Egress Filtering"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_584
+  - community/Memory_Lifecycle__Egress_Filtering
 ---
 
 # memory_config.py
@@ -16,4 +16,4 @@ tags:
 - [[MemoryLifecycleConfig]] - `contains` [EXTRACTED]
 - [[MemorySecurityConfig]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_584
+#graphify/code #graphify/EXTRACTED #community/Memory_Lifecycle__Egress_Filtering

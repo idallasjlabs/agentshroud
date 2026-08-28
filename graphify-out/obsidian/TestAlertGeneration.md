@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_monitor.py"
 type: "code"
-community: "Community 442"
+community: "Community 95"
 location: "L235"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_442
+  - community/Community_95
 ---
 
 # TestAlertGeneration
@@ -22,4 +22,4 @@ tags:
 - [[EgressMonitorConfig]] - `uses` [INFERRED]
 - [[test_egress_monitor.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_442
+#graphify/code #graphify/INFERRED #community/Community_95

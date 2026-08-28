@@ -1,24 +1,26 @@
 ---
 type: community
+cohesion: 0.27
 members: 11
 ---
 
 # Community 816
 
+**Cohesion:** 0.27 - loosely connected
 **Members:** 11 nodes
 
 ## Members
-- [[.test_all_pass()_1]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_empty_host_list_is_not_ok()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_mixed_pass_fail_unreachable()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_on_host_callback_invoked_per_host()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_output_tail_is_truncated()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_runner_exception_marks_unreachable()]] - code - gateway/tests/test_multi_host_test.py
-- [[Return a runner that looks up (exit_code, output) by host name.]] - rationale - gateway/tests/test_multi_host_test.py
-- [[Run ``command`` on each host via ``runner`` and aggregate the results.      A ru]] - rationale - gateway/tools/multi_host_test.py
-- [[TestRunMultiHost]] - code - gateway/tests/test_multi_host_test.py
-- [[_fake_runner()]] - code - gateway/tests/test_multi_host_test.py
-- [[run_multi_host()]] - code - gateway/tools/multi_host_test.py
+- [[._make_owner_proxy()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_parse_mode_preserved_and_placeholder_escaped_email_fallback_path()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_parse_mode_preserved_and_placeholder_escaped_phone_fallback_path()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_parse_mode_preserved_and_placeholder_escaped_pipeline_path()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_parse_mode_preserved_when_no_pii_detected()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[PII redaction must not strip parse_mode for the whole message (owner, fallback p]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[PII redaction via the pipeline path must not strip parse_mode either (owner, pip]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Regression tests for Telegram HTML parse error caused by PII placeholders.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Return a TelegramAPIProxy configured with a mock owner RBAC.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestParseModeStrippedAfterPIIRedaction]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[parse_mode=HTML must be preserved for owner when text contains no PII.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,15 +30,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 731]]
-- 4 edges to [[_COMMUNITY_Community 485]]
-- 3 edges to [[_COMMUNITY_Community 904]]
-- 2 edges to [[_COMMUNITY_Community 992]]
-- 1 edge to [[_COMMUNITY_Community 869]]
-- 1 edge to [[_COMMUNITY_Community 993]]
-- 1 edge to [[_COMMUNITY_Community 1102]]
+- 4 edges to [[_COMMUNITY_Community 93]]
+- 3 edges to [[_COMMUNITY_PII Sanitizer & E2E Tests]]
+- 1 edge to [[_COMMUNITY_Adversarial Injection Guards]]
+- 1 edge to [[_COMMUNITY_Community 17]]
+- 1 edge to [[_COMMUNITY_Community 96]]
 
 ## Top bridge nodes
-- [[run_multi_host()]] - degree 15, connects to 7 communities
-- [[TestRunMultiHost]] - degree 10, connects to 3 communities
-- [[_fake_runner()]] - degree 10, connects to 2 communities
+- [[TestParseModeStrippedAfterPIIRedaction]] - degree 11, connects to 3 communities
+- [[._make_owner_proxy()]] - degree 7, connects to 1 community
+- [[.test_parse_mode_preserved_and_placeholder_escaped_email_fallback_path()]] - degree 4, connects to 1 community
+- [[.test_parse_mode_preserved_and_placeholder_escaped_phone_fallback_path()]] - degree 4, connects to 1 community
+- [[.test_parse_mode_preserved_and_placeholder_escaped_pipeline_path()]] - degree 4, connects to 1 community

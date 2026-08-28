@@ -1,17 +1,17 @@
 ---
 type: community
-members: 4
+cohesion: 1.00
+members: 2
 ---
 
 # Community 1589
 
-**Members:** 4 nodes
+**Cohesion:** 1.00 - tightly connected
+**Members:** 2 nodes
 
 ## Members
-- [[Audit Chain Tampering]] - document - docs/operations/incident-response.md
-- [[Container Escape Attempt]] - document - docs/operations/incident-response.md
-- [[Data Exfiltration Detected]] - document - docs/operations/incident-response.md
-- [[P1 Critical Incidents]] - document - docs/operations/incident-response.md
+- [[.test_skill_sandbox_message_without_healthcheck_is_not_rewritten()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Sandbox SKILL.md messages must include healthcheck context before rewrite.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,7 +21,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 91]]
+- 1 edge to [[_COMMUNITY_Community 93]]
+- 1 edge to [[_COMMUNITY_Community 80]]
+- 1 edge to [[_COMMUNITY_Community 96]]
 
 ## Top bridge nodes
-- [[P1 Critical Incidents]] - degree 4, connects to 1 community
+- [[.test_skill_sandbox_message_without_healthcheck_is_not_rewritten()]] - degree 4, connects to 3 communities

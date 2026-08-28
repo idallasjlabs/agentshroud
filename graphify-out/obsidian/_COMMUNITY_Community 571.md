@@ -1,29 +1,31 @@
 ---
 type: community
+cohesion: 0.12
 members: 16
 ---
 
 # Community 571
 
+**Cohesion:** 0.12 - loosely connected
 **Members:** 16 nodes
 
 ## Members
-- [[Option A Manual Secret Creation]] - document - docs/operations/deployment-procedure.md
-- [[Option A Self-Signed Certificate (DevelopmentTesting)]] - document - docs/operations/deployment-procedure.md
-- [[Option B 1Password Integration]] - document - docs/operations/deployment-procedure.md
-- [[Option B Let's Encrypt Certificate (Production)]] - document - docs/operations/deployment-procedure.md
-- [[Option C Corporate Certificate Authority]] - document - docs/operations/deployment-procedure.md
-- [[Step 10 Initial Configuration]] - document - docs/operations/deployment-procedure.md
-- [[Step 1 System Preparation]] - document - docs/operations/deployment-procedure.md
-- [[Step 2 Repository Clone and Configuration]] - document - docs/operations/deployment-procedure.md
-- [[Step 3 Secret Configuration]] - document - docs/operations/deployment-procedure.md
-- [[Step 4 SSL Certificate Setup]] - document - docs/operations/deployment-procedure.md
-- [[Step 5 Configuration Customization]] - document - docs/operations/deployment-procedure.md
-- [[Step 6 Port Configuration]] - document - docs/operations/deployment-procedure.md
-- [[Step 7 Docker Secrets Creation]] - document - docs/operations/deployment-procedure.md
-- [[Step 8 Service Startup]] - document - docs/operations/deployment-procedure.md
-- [[Step 9 Health Verification]] - document - docs/operations/deployment-procedure.md
-- [[Step-by-Step Deployment]] - document - docs/operations/deployment-procedure.md
+- [[AgentShroud System Status Report]] - document - docs/project/SYSTEM_STATUS.md
+- [[Critical Issues]] - document - docs/project/SYSTEM_STATUS.md
+- [[Features Confirmed Working]] - document - docs/project/SYSTEM_STATUS.md
+- [[Immediate (Required for Bot to Work)]] - document - docs/project/SYSTEM_STATUS.md
+- [[Infrastructure_7]] - document - docs/project/SYSTEM_STATUS.md
+- [[Local]] - document - docs/project/SYSTEM_STATUS.md
+- [[Remote (Tailscale)]] - document - docs/project/SYSTEM_STATUS.md
+- [[When Ready to Continue]] - document - docs/project/SYSTEM_STATUS.md
+- [[iMessage Fix Required]] - document - docs/project/SYSTEM_STATUS.md
+- [[⚠️ What's NOT Working]] - document - docs/project/SYSTEM_STATUS.md
+- [[✅ What's WORKING]] - document - docs/project/SYSTEM_STATUS.md
+- [[🎯 Current Focus]] - document - docs/project/SYSTEM_STATUS.md
+- [[📁 Documentation]] - document - docs/project/SYSTEM_STATUS.md
+- [[📊 Container Status]] - document - docs/project/SYSTEM_STATUS.md
+- [[📋 Next Steps for User]] - document - docs/project/SYSTEM_STATUS.md
+- [[🔧 System Access]] - document - docs/project/SYSTEM_STATUS.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,7 +35,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 91]]
+- 1 edge to [[_COMMUNITY_Community 284]]
 
 ## Top bridge nodes
-- [[Step-by-Step Deployment]] - degree 11, connects to 1 community
+- [[AgentShroud System Status Report]] - degree 8, connects to 1 community

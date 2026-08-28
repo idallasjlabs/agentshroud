@@ -1,32 +1,34 @@
 ---
 type: community
+cohesion: 0.11
 members: 19
 ---
 
 # Community 467
 
+**Cohesion:** 0.11 - loosely connected
 **Members:** 19 nodes
 
 ## Members
-- [[Anti-Patterns to Flag_16]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
-- [[Brand Audit Checklist_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
-- [[Brand System Components_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
-- [[Color Token Definition_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
-- [[Core Discipline Audit → Define → Apply → Enforce_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
-- [[Deck  Slide Master Rules_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
-- [[Dependencies_12]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
-- [[Diagram Theme Block (Mermaid)_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
-- [[File & Directory Conventions_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
-- [[HTML  CSS Brand Variables_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
-- [[Patterns by Output Type_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
-- [[Required ≥ 4.5 for text, ≥ 3.0 for UI elements_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
-- [[Role_80]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
-- [[Rules_19]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
-- [[SKILL_137]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
-- [[Skill Branding Specialist (BS)_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
-- [[Typography Scale_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
-- [[Validate contrast ratio_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
-- [[Voice & Tone Guide_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[1. Check MCP Configuration_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[2. Test GitHub MCP Server_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[3. Test Atlassian MCP Server_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[4. Test AWS API MCP Server_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[Common Issues & Fixes_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[Diagnostic Capabilities_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[Diagnostic Workflow_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[Issue AWS credentials not found_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[Issue Atlassian OAuth token expired_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[Issue Docker not found_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[Issue GitHub MCP authentication failed_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[Issue npx not found_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[Issue uvx not found_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[Output Format_18]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[Related Skills_61]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[Role_55]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[SKILL_97]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[Skill MCP Doctor (MCPM-DOCTOR)_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[When to Invoke_5]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

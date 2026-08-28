@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/ledger.py.md"
 type: "document"
-community: "Community 271"
+community: "Community 85"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_271
+  - community/Community_85
 ---
 
 # ledger.py.md
@@ -20,4 +20,4 @@ tags:
 - [[main.py_3]] - `references` [EXTRACTED]
 - [[volumes]] - `references` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_271
+#graphify/document #graphify/EXTRACTED #community/Community_85

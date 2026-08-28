@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "code"
-community: "Community 444"
+community: "Community 18"
 location: "L219"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_444
+  - community/Community_18
 ---
 
 # Path
@@ -22,4 +22,4 @@ tags:
 - [[._scan_setup_py()]] - `references` [EXTRACTED]
 - [[.scan_git_repository()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_444
+#graphify/code #graphify/EXTRACTED #community/Community_18

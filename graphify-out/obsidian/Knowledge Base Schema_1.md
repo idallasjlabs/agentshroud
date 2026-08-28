@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-eightd/SKILL.md"
 type: "document"
-community: "Community 228"
+community: "Community 235"
 location: "L430"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_228
+  - community/Community_235
 ---
 
 # Knowledge Base Schema
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Learning System (Continuous Improvement)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_228
+#graphify/document #graphify/EXTRACTED #community/Community_235

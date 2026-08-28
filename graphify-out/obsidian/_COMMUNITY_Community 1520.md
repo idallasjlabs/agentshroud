@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 1.00
 members: 2
 ---
 
 # Community 1520
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[ToolACLEnforcer._can_use_tool_impl()]] - code - gateway/security/tool_acl.py
-- [[TrustManager.is_tool_allowed()]] - code - gateway/security/trust_manager.py
+- [[activate-lockdown.sh]] - code - scripts/activate-lockdown.sh
+- [[activate-lockdown.sh script]] - code - scripts/activate-lockdown.sh
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "code"
-community: "Community 870"
+community: "PII Sanitizer & E2E Tests"
 location: "L30"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_870
+  - community/PII_Sanitizer__E2E_Tests
 ---
 
 # PIISanitizer
@@ -26,4 +26,4 @@ tags:
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[_make_pii_sanitizer()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_870
+#graphify/code #graphify/INFERRED #community/PII_Sanitizer__E2E_Tests

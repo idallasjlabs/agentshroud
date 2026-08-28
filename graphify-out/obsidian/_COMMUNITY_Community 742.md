@@ -1,25 +1,27 @@
 ---
 type: community
+cohesion: 0.17
 members: 12
 ---
 
 # Community 742
 
+**Cohesion:** 0.17 - loosely connected
 **Members:** 12 nodes
 
 ## Members
-- [[Backup]] - document - docs/vault/06 - Containers & Services/volumes.md
-- [[Cleanup Warning]] - document - docs/vault/06 - Containers & Services/volumes.md
-- [[Docker Volumes]] - document - docs/vault/06 - Containers & Services/volumes.md
-- [[Inspecting Volumes]] - document - docs/vault/06 - Containers & Services/volumes.md
-- [[Related Notes_54]] - document - docs/vault/06 - Containers & Services/volumes.md
-- [[Volume Details]] - document - docs/vault/06 - Containers & Services/volumes.md
-- [[Volume Inventory]] - document - docs/vault/06 - Containers & Services/volumes.md
-- [[agentshroud-browsers]] - document - docs/vault/06 - Containers & Services/volumes.md
-- [[agentshroud-config]] - document - docs/vault/06 - Containers & Services/volumes.md
-- [[agentshroud-ssh]] - document - docs/vault/06 - Containers & Services/volumes.md
-- [[agentshroud-workspace]] - document - docs/vault/06 - Containers & Services/volumes.md
-- [[gateway-data]] - document - docs/vault/06 - Containers & Services/volumes.md
+- [[Emergency Hotfix_1]] - document - .agents/skills/i-mc/SKILL.md
+- [[GSDE&G Development Master Checklist]] - document - .agents/skills/i-mc/SKILL.md
+- [[Phase 1 · Plan & Branch  → `ggSKILL.md`]] - document - .agents/skills/i-mc/SKILL.md
+- [[Phase 2 · TDD  → `tddSKILL.md`]] - document - .agents/skills/i-mc/SKILL.md
+- [[Phase 3 · QA  → `qaSKILL.md`]] - document - .agents/skills/i-mc/SKILL.md
+- [[Phase 4 · Code Review  → `crSKILL.md`]] - document - .agents/skills/i-mc/SKILL.md
+- [[Phase 5 · Pull Request  → `prSKILL.md`]] - document - .agents/skills/i-mc/SKILL.md
+- [[Phase 6 · CI  → `cicdSKILL.md`]] - document - .agents/skills/i-mc/SKILL.md
+- [[Phase 7 · Deploy  → `psSKILL.md`]] - document - .agents/skills/i-mc/SKILL.md
+- [[Quick Commands]] - document - .agents/skills/i-mc/SKILL.md
+- [[SKILL_30]] - document - .agents/skills/i-mc/SKILL.md
+- [[Skill Index]] - document - .agents/skills/i-mc/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,9 +29,3 @@ members: 12
 TABLE source_file, type FROM #community/Community_742
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 340]]
-
-## Top bridge nodes
-- [[Docker Volumes]] - degree 7, connects to 1 community

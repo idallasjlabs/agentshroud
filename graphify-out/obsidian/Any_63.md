@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "Community 513"
+community: "Community 55"
 location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_513
+  - community/Community_55
 ---
 
 # Any
@@ -21,4 +21,4 @@ tags:
 - [[PIISanitizer]] - `uses` [INFERRED]
 - [[RedactionResult]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_513
+#graphify/code #graphify/EXTRACTED #community/Community_55

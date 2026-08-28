@@ -1,19 +1,19 @@
 ---
-source_file: ".agents/skills/i-mcpm/SKILL.md"
+source_file: "docker/config/hermes/skills/i-mcpm/SKILL.md"
 type: "document"
-community: "Community 553"
+community: "Community 840"
 location: "L125"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_553
+  - community/Community_840
 ---
 
 # MCP Troubleshooting
 
 ## Connections
-- [[Authentication Issues]] - `contains` [EXTRACTED]
-- [[Common Errors]] - `contains` [EXTRACTED]
-- [[Skill MCP Tools Usage (MCP-TOOLS)]] - `contains` [EXTRACTED]
+- [[Authentication Issues_2]] - `contains` [EXTRACTED]
+- [[Common Errors_1]] - `contains` [EXTRACTED]
+- [[Skill MCP Tools Usage (MCP-TOOLS)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_553
+#graphify/document #graphify/EXTRACTED #community/Community_840

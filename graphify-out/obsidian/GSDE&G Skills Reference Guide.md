@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md"
 type: "document"
-community: "Community 415"
+community: "Community 421"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_415
+  - community/Community_421
 ---
 
 # GSDE&G Skills Reference Guide
@@ -30,4 +30,4 @@ tags:
 - [[i-socrates README (Dialogue Architect)]] - `references` [EXTRACTED]
 - [[i-socrates SKILL (Dialogue Architect, podcast pipeline)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_415
+#graphify/document #graphify/EXTRACTED #community/Community_421

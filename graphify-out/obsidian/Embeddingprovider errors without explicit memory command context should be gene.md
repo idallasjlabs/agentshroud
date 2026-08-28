@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Community 3"
+community: "Community 80"
 location: "L863"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_3
+  - community/Community_80
 ---
 
 # Embedding/provider errors without explicit memory command context should be gene
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_memory_provider_error_is_rewritten_to_generic_runtime_guidance()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_3
+#graphify/rationale #graphify/EXTRACTED #community/Community_80

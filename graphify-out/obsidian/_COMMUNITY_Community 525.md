@@ -1,30 +1,32 @@
 ---
 type: community
+cohesion: 0.12
 members: 17
 ---
 
 # Community 525
 
+**Cohesion:** 0.12 - loosely connected
 **Members:** 17 nodes
 
 ## Members
-- [[Atlas — Curriculum Architect_5]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
-- [[CPA Curriculum Frontmatter Addition_2]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
-- [[Coverage Types_2]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
-- [[Episode Closing_2]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
-- [[Exam Weight Integration_2]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
-- [[Gleim Unit Mapping_2]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
-- [[Input Requirements_22]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
-- [[Mandatory Acronym Expansion_2]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
-- [[OKE Channel — CPA Exam Context_2]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
-- [[Output Format_27]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
-- [[Persona_17]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
-- [[Quality Checklist_20]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
-- [[Role_79]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
-- [[SKILL_133]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
-- [[System Prompt_17]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
-- [[User Prompt Template_9]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
-- [[User Prompt Template — OKE Channel_2]] - document - docker/config/openclaw/skills/i-atlas/SKILL.md
+- [[Follow-up (within 48 hours)_2]] - document - docker/config/openclaw/skills/i-production/SKILL.md
+- [[Glue Job Rollback_2]] - document - docker/config/openclaw/skills/i-production/SKILL.md
+- [[Immediate (within 2 hours)_2]] - document - docker/config/openclaw/skills/i-production/SKILL.md
+- [[Incident Response Workflow_2]] - document - docker/config/openclaw/skills/i-production/SKILL.md
+- [[Phase 1 ASSESS (Max 5 minutes)_2]] - document - docker/config/openclaw/skills/i-production/SKILL.md
+- [[Phase 2 COMMUNICATE (Concurrent with assess)_2]] - document - docker/config/openclaw/skills/i-production/SKILL.md
+- [[Phase 3 MITIGATE (Rollback First!)_2]] - document - docker/config/openclaw/skills/i-production/SKILL.md
+- [[Post-Incident_2]] - document - docker/config/openclaw/skills/i-production/SKILL.md
+- [[Post-Mortem Template_2]] - document - docker/config/openclaw/skills/i-production/SKILL.md
+- [[RDS Rollback (Point-in-Time or Snapshot)_2]] - document - docker/config/openclaw/skills/i-production/SKILL.md
+- [[Role_100]] - document - docker/config/openclaw/skills/i-production/SKILL.md
+- [[S3 Data Rollback_2]] - document - docker/config/openclaw/skills/i-production/SKILL.md
+- [[SKILL_170]] - document - docker/config/openclaw/skills/i-production/SKILL.md
+- [[Severity Matrix_2]] - document - docker/config/openclaw/skills/i-production/SKILL.md
+- [[Skill Incident Response (INCIDENT)_2]] - document - docker/config/openclaw/skills/i-production/SKILL.md
+- [[Step Function Rollback_2]] - document - docker/config/openclaw/skills/i-production/SKILL.md
+- [[Zabbix Rollback_2]] - document - docker/config/openclaw/skills/i-production/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

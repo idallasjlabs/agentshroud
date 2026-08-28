@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: "Community 107"
+community: "Community 110"
 location: "L42"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_107
+  - community/Community_110
 ---
 
 # A2APolicyEngine
@@ -23,4 +23,4 @@ tags:
 - [[test_process_inbound_request_denied_peer_never_reaches_hermes()]] - `calls` [EXTRACTED]
 - [[test_process_inbound_request_task_ownership_violation_blocked()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_107
+#graphify/code #graphify/INFERRED #community/Community_110

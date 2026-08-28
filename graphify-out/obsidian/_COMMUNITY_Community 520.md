@@ -1,31 +1,32 @@
 ---
 type: community
-members: 18
+cohesion: 0.12
+members: 17
 ---
 
 # Community 520
 
-**Members:** 18 nodes
+**Cohesion:** 0.12 - loosely connected
+**Members:** 17 nodes
 
 ## Members
-- [[1Password Integration]] - document - docs/api/integration-guide.md
-- [[AgentShroud v0.9.0]] - document - docs/api/integration-guide.md
-- [[AgentShroud v1.3.0]] - document - docs/api/api-reference.md
-- [[CICD Pipeline Integration]] - document - docs/api/integration-guide.md
-- [[Docker Security Scanning]] - document - docs/api/integration-guide.md
-- [[Generic AI Agent Integration]] - document - docs/api/integration-guide.md
-- [[GitHub Actions Integration]] - document - docs/api/integration-guide.md
-- [[HTTP Proxy Mode]] - document - docs/api/integration-guide.md
-- [[Integration Guide]] - document - docs/api/integration-guide.md
-- [[MCP Proxy Configuration]] - document - docs/api/integration-guide.md
-- [[MCP Server Integration_1]] - document - docs/api/integration-guide.md
-- [[Monitoring System Integration]] - document - docs/api/integration-guide.md
-- [[Overview_4]] - document - docs/api/api-reference.md
-- [[Overview_5]] - document - docs/api/integration-guide.md
-- [[Prometheus Metrics]] - document - docs/api/integration-guide.md
-- [[Service Account Setup]] - document - docs/api/integration-guide.md
-- [[Webhook Alerts]] - document - docs/api/integration-guide.md
-- [[integration-guide]] - document - docs/api/integration-guide.md
+- [[10. Security Supply Chain Analysis]] - document - docs/papers/agentshroud-whitepaper.md
+- [[10.1 Core Runtime Dependencies]] - document - docs/papers/agentshroud-whitepaper.md
+- [[10.2 Security-Specific Dependencies]] - document - docs/papers/agentshroud-whitepaper.md
+- [[10.3 Container Security Tools]] - document - docs/papers/agentshroud-whitepaper.md
+- [[10.4 High-Risk Dependency Wazuh]] - document - docs/papers/agentshroud-whitepaper.md
+- [[10.5 Supply Chain Security Practices]] - document - docs/papers/agentshroud-whitepaper.md
+- [[Cost & timeline (indicative)]] - document - docs/compliance/soc2-attestation-path.md
+- [[Immediate Actions (Pre-Merge)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[Long-Term Strategic Items]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[Next Phase Priorities]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[Readiness assessment — existing controls vs SOC 2 Common Criteria]] - document - docs/compliance/soc2-attestation-path.md
+- [[Recommendation_1]] - document - docs/compliance/soc2-attestation-path.md
+- [[SOC 2 Type II — Attestation Path & GoNo-Go Scoping]] - document - docs/compliance/soc2-attestation-path.md
+- [[Tracking]] - document - docs/compliance/soc2-attestation-path.md
+- [[What SOC 2 Type II actually requires]] - document - docs/compliance/soc2-attestation-path.md
+- [[Why this is on the board]] - document - docs/compliance/soc2-attestation-path.md
+- [[soc2-attestation-path]] - document - docs/compliance/soc2-attestation-path.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,9 +36,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 493]]
-- 1 edge to [[_COMMUNITY_Community 657]]
+- 1 edge to [[_COMMUNITY_Community 311]]
+- 1 edge to [[_COMMUNITY_Community 345]]
+- 1 edge to [[_COMMUNITY_Community 402]]
 
 ## Top bridge nodes
-- [[Integration Guide]] - degree 9, connects to 1 community
-- [[AgentShroud v1.3.0]] - degree 4, connects to 1 community
+- [[Recommendation_1]] - degree 7, connects to 2 communities
+- [[10. Security Supply Chain Analysis]] - degree 7, connects to 1 community

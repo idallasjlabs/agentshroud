@@ -1,63 +1,66 @@
 ---
 type: community
-members: 50
+cohesion: 0.05
+members: 51
 ---
 
 # Community 112
 
-**Members:** 50 nodes
+**Cohesion:** 0.05 - loosely connected
+**Members:** 51 nodes
 
 ## Members
-- [[Any_76]] - code - scripts/sync-cve-registry.py
-- [[Append new_entries to AGENT_CVE_REGISTRY (OpenClaw).  Returns count appended.]] - rationale - scripts/sync-cve-registry.py
-- [[Append new_entries to _HERMES_CVE_REGISTRY.  Returns count appended.      Insert]] - rationale - scripts/sync-cve-registry.py
-- [[Append under_review new_entries to agent_id's OWN registry list.      Insert]] - rationale - scripts/sync-cve-registry.py
-- [[Diff advisories against an agent's OWN registry and build under_review entri]] - rationale - scripts/sync-cve-registry.py
-- [[Extract a numeric CVSS base score from an advisory, else None.      GitHub advis]] - rationale - scripts/sync-cve-registry.py
-- [[Fetch every published GitHub Security Advisory for repo (cursor-paginated)._1]] - rationale - scripts/sync-cve-registry.py
-- [[Namespace_1]] - code - scripts/sync-cve-registry.py
-- [[Parse raw NVD vulnerability records into registry entry dicts.]] - rationale - scripts/sync-cve-registry.py
-- [[Path_47]] - code - scripts/sync-cve-registry.py
-- [[Print a human-readable breakdown of new entries by severitystatus.]] - rationale - scripts/sync-cve-registry.py
-- [[Read a vendor version from dockerversions.env — the single source of     truth]] - rationale - scripts/sync-cve-registry.py
-- [[Return (status, mitigation, defense_layers).]] - rationale - scripts/sync-cve-registry.py
-- [[Return True if version a = version b.]] - rationale - scripts/sync-cve-registry.py
-- [[Return the CVE-pipeline config for bot_id (raises KeyError if unknown).      A]] - rationale - gateway/security/agent_cve_registry.py
-- [[Return the first patched version string across the advisory's vulns, else ''.]] - rationale - scripts/sync-cve-registry.py
-- [[Return the next zero-padded ASH id number for an agent's registry list.]] - rationale - scripts/sync-cve-registry.py
-- [[Run ONE agent's full, independent GHSA pipeline. Returns count registered.]] - rationale - scripts/sync-cve-registry.py
-- [[Run the GHSA pipeline for EVERY registered agent, each on its OWN path.      Ret]] - rationale - scripts/sync-cve-registry.py
-- [[Run the legacy NVD keyword source for OpenClaw + Hermes (unchanged).]] - rationale - scripts/sync-cve-registry.py
-- [[Serialize an under_review entry to Python source matching the file schema.]] - rationale - scripts/sync-cve-registry.py
-- [[_classify()]] - code - scripts/sync-cve-registry.py
-- [[_entry_to_py()]] - code - scripts/sync-cve-registry.py
-- [[_extract_affected_max()]] - code - scripts/sync-cve-registry.py
-- [[_extract_fix_version()]] - code - scripts/sync-cve-registry.py
-- [[_get_cvss()]] - code - scripts/sync-cve-registry.py
-- [[_ghsa_cvss_score()]] - code - scripts/sync-cve-registry.py
-- [[_ghsa_entry_to_py()]] - code - scripts/sync-cve-registry.py
-- [[_ghsa_patched_version()]] - code - scripts/sync-cve-registry.py
-- [[_make_title()]] - code - scripts/sync-cve-registry.py
-- [[_next_ash_number()]] - code - scripts/sync-cve-registry.py
-- [[_parse_ver()]] - code - scripts/sync-cve-registry.py
-- [[_print_summary()]] - code - scripts/sync-cve-registry.py
-- [[_process_nvd_results()]] - code - scripts/sync-cve-registry.py
-- [[_read_pinned_version()]] - code - scripts/sync-cve-registry.py
-- [[_run_nvd_sync()]] - code - scripts/sync-cve-registry.py
-- [[_ver_gt()]] - code - scripts/sync-cve-registry.py
-- [[_ver_gte()]] - code - scripts/sync-cve-registry.py
-- [[append_ghsa_entries()]] - code - scripts/sync-cve-registry.py
-- [[append_to_hermes_registry()]] - code - scripts/sync-cve-registry.py
-- [[append_to_registry()]] - code - scripts/sync-cve-registry.py
-- [[fetch_ghsa_advisories()]] - code - scripts/sync-cve-registry.py
-- [[fetch_nvd_cves()]] - code - scripts/sync-cve-registry.py
-- [[get_agent_cve_source()]] - code - gateway/security/agent_cve_registry.py
-- [[main()_24]] - code - scripts/sync-cve-registry.py
-- [[openclaw-ghsa-snapshot.json]] - document - scripts/data/openclaw-ghsa-snapshot.json
-- [[process_ghsa_advisories()]] - code - scripts/sync-cve-registry.py
-- [[run_ghsa_sync()]] - code - scripts/sync-cve-registry.py
-- [[sync-cve-registry.py]] - code - scripts/sync-cve-registry.py
-- [[sync_agent_ghsa()]] - code - scripts/sync-cve-registry.py
+- [[.__init__()_80]] - code - gateway/security/falco_monitor.py
+- [[.test_categorize_empty()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_categorize_mixed()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_clamav_binary_not_found()]] - code - gateway/tests/test_security_audit.py
+- [[.test_is_agentshroud_rule_false()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_is_agentshroud_rule_true()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_parse_container_info()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_parse_critical_alert()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_parse_empty_alert()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_parse_valid_alert()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_read_alerts_missing_dir()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_run_not_found()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_summary_clean()_2]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_summary_clean()_3]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_summary_top_rules()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_summary_with_alerts()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_summary_with_rootkit()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_update_db_not_found()]] - code - gateway/tests/test_security_toolchain.py
+- [[Any_34]] - code - gateway/security/clamav_scanner.py
+- [[Any_40]] - code - gateway/security/falco_monitor.py
+- [[Categorize alerts by severity.      Args         alerts List of parsed alerts.]] - rationale - gateway/security/falco_monitor.py
+- [[Check if a rule is AgentShroud-specific.      Args         rule_name Falco rul]] - rationale - gateway/security/falco_monitor.py
+- [[Generate a summary dict suitable for the health report.      Args         alert]] - rationale - gateway/security/falco_monitor.py
+- [[Parse a single Falco alert.      Args         raw Raw Falco alert JSON.      R]] - rationale - gateway/security/falco_monitor.py
+- [[Path_8]] - code - gateway/security/clamav_scanner.py
+- [[Path_11]] - code - gateway/security/falco_monitor.py
+- [[Read Falco alerts from the alert directory.      Args         alert_dir Direct]] - rationale - gateway/security/falco_monitor.py
+- [[Run ClamAV scan and return parsed results.      Args         target Directory]] - rationale - gateway/security/clamav_scanner.py
+- [[Save a ClamAV report to the log directory.]] - rationale - gateway/security/clamav_scanner.py
+- [[TestClamAVRun]] - code - gateway/tests/test_security_toolchain.py
+- [[TestFalcoCategorize]] - code - gateway/tests/test_security_toolchain.py
+- [[TestFalcoParser]] - code - gateway/tests/test_security_toolchain.py
+- [[TestFalcoSummary_1]] - code - gateway/tests/test_security_toolchain.py
+- [[TestWazuhSummary_1]] - code - gateway/tests/test_security_toolchain.py
+- [[Update ClamAV virus database using freshclam.      Args         freshclam_bin]] - rationale - gateway/security/clamav_scanner.py
+- [[categorize_alerts()]] - code - gateway/security/falco_monitor.py
+- [[datetime_3]] - code - gateway/security/falco_monitor.py
+- [[gatewaysecurityclamav_scanner.py]] - code - gateway/security/clamav_scanner.py
+- [[gatewaysecurityfalco_monitor.py]] - code - gateway/security/falco_monitor.py
+- [[gatewaysecurityhealth_report.py]] - code - gateway/security/health_report.py
+- [[gatewaysecuritytrivy_report.py]] - code - gateway/security/trivy_report.py
+- [[gatewaysecuritywazuh_client.py]] - code - gateway/security/wazuh_client.py
+- [[generate_summary()]] - code - gateway/security/clamav_scanner.py
+- [[generate_summary()_1]] - code - gateway/security/falco_monitor.py
+- [[is_agentshroud_rule()]] - code - gateway/security/falco_monitor.py
+- [[parse_alert()]] - code - gateway/security/falco_monitor.py
+- [[read_alerts()]] - code - gateway/security/falco_monitor.py
+- [[run_clamscan()]] - code - gateway/security/clamav_scanner.py
+- [[save_report()]] - code - gateway/security/clamav_scanner.py
+- [[test_security_toolchain.py]] - code - gateway/tests/test_security_toolchain.py
+- [[update_virus_db()]] - code - gateway/security/clamav_scanner.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -67,11 +70,25 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_Community 990]]
-- 2 edges to [[_COMMUNITY_Community 779]]
+- 13 edges to [[_COMMUNITY_Security Audit & Drift Detection]]
+- 10 edges to [[_COMMUNITY_Community 410]]
+- 7 edges to [[_COMMUNITY_Community 347]]
+- 6 edges to [[_COMMUNITY_Community 215]]
+- 6 edges to [[_COMMUNITY_Community 216]]
+- 5 edges to [[_COMMUNITY_Community 579]]
+- 3 edges to [[_COMMUNITY_Community 72]]
+- 3 edges to [[_COMMUNITY_Community 501]]
+- 3 edges to [[_COMMUNITY_Community 632]]
+- 2 edges to [[_COMMUNITY_Community 640]]
+- 1 edge to [[_COMMUNITY_Community 48]]
+- 1 edge to [[_COMMUNITY_Community 665]]
+- 1 edge to [[_COMMUNITY_Community 330]]
+- 1 edge to [[_COMMUNITY_Community 734]]
+- 1 edge to [[_COMMUNITY_Community 590]]
 
 ## Top bridge nodes
-- [[get_agent_cve_source()]] - degree 6, connects to 2 communities
-- [[sync-cve-registry.py]] - degree 31, connects to 1 community
-- [[sync_agent_ghsa()]] - degree 10, connects to 1 community
-- [[run_ghsa_sync()]] - degree 6, connects to 1 community
+- [[test_security_toolchain.py]] - degree 47, connects to 9 communities
+- [[run_clamscan()]] - degree 10, connects to 5 communities
+- [[generate_summary()_1]] - degree 8, connects to 3 communities
+- [[read_alerts()]] - degree 10, connects to 2 communities
+- [[Any_34]] - degree 6, connects to 2 communities

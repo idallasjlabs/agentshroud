@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "Community 558"
+community: "Community 187"
 location: "L794"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_558
+  - community/Community_187
 ---
 
 # TestScoreComplianceAuditing
@@ -18,4 +18,4 @@ tags:
 - [[.test_zero_when_not_run()]] - `method` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_558
+#graphify/code #graphify/EXTRACTED #community/Community_187

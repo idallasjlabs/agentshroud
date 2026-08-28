@@ -1,12 +1,12 @@
 ---
 source_file: "docs/integrations/README.md"
 type: "document"
-community: "Community 1528"
+community: "Community 492"
 location: "L1"
 tags:
   - graphify/document
   - graphify/AMBIGUOUS
-  - community/Community_1528
+  - community/Community_492
 ---
 
 # README.md
@@ -16,4 +16,4 @@ tags:
 - [[Integrations Documentation]] - `contains` [EXTRACTED]
 - [[Network Security  Egress Control Flowchart]] - `conceptually_related_to` [AMBIGUOUS]
 
-#graphify/document #graphify/AMBIGUOUS #community/Community_1528
+#graphify/document #graphify/AMBIGUOUS #community/Community_492

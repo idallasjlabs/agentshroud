@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/legal/TRADEMARK.md"
 type: "document"
-community: "Community 1109"
+community: "Community 1105"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1109
+  - community/Community_1105
 ---
 
 # TRADEMARK.md
@@ -18,4 +18,4 @@ tags:
 - [[USPTO-APPLICATION]] - `references` [EXTRACTED]
 - [[Usage Guidelines_3]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1109
+#graphify/document #graphify/EXTRACTED #community/Community_1105

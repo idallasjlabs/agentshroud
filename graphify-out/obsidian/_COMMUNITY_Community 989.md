@@ -1,21 +1,23 @@
 ---
 type: community
+cohesion: 0.39
 members: 8
 ---
 
 # Community 989
 
+**Cohesion:** 0.39 - loosely connected
 **Members:** 8 nodes
 
 ## Members
-- [[.setup_method()_4]] - code - gateway/tests/test_dns_blocklist.py
-- [[.test_allowlist_skip()]] - code - gateway/tests/test_dns_blocklist.py
-- [[.test_comments_skipped()]] - code - gateway/tests/test_dns_blocklist.py
-- [[.test_deduplication()_1]] - code - gateway/tests/test_dns_blocklist.py
-- [[.test_empty_text()]] - code - gateway/tests/test_dns_blocklist.py
-- [[.test_multi_line_parsing()]] - code - gateway/tests/test_dns_blocklist.py
-- [[TestLoadFromText]] - code - gateway/tests/test_dns_blocklist.py
-- [[load_from_text() — multi-line parsing, dedup, allowlist skip.]] - rationale - gateway/tests/test_dns_blocklist.py
+- [[.test_against_the_real_registry()]] - code - gateway/tests/test_list_registry_ghsa_ids.py
+- [[.test_empty_registries_print_nothing()]] - code - gateway/tests/test_list_registry_ghsa_ids.py
+- [[.test_prints_every_ghsa_id_one_per_line()]] - code - gateway/tests/test_list_registry_ghsa_ids.py
+- [[.test_skips_none_ghsa_id_entries()]] - code - gateway/tests/test_list_registry_ghsa_ids.py
+- [[Smoke test against the actual committed registry — every real         ghsa_id cu]] - rationale - gateway/tests/test_list_registry_ghsa_ids.py
+- [[TestListRegistryGhsaIds]] - code - gateway/tests/test_list_registry_ghsa_ids.py
+- [[_script()]] - code - gateway/tests/test_list_registry_ghsa_ids.py
+- [[test_list_registry_ghsa_ids.py]] - code - gateway/tests/test_list_registry_ghsa_ids.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,8 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 141]]
+- 1 edge to [[_COMMUNITY_Community 380]]
 
 ## Top bridge nodes
-- [[TestLoadFromText]] - degree 9, connects to 1 community
-- [[.setup_method()_4]] - degree 2, connects to 1 community
+- [[test_list_registry_ghsa_ids.py]] - degree 3, connects to 1 community

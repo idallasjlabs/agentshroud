@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/a2a_proxy.py"
 type: "code"
-community: "Community 104"
+community: "Community 205"
 location: "L123"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_104
+  - community/Community_205
 ---
 
 # A2AProxy
@@ -26,8 +26,8 @@ tags:
 - [[A2APolicyEngine_1]] - `uses` [INFERRED]
 - [[A2AProxy_1]] - `uses` [INFERRED]
 - [[HermesA2AForwarder]] - `calls` [EXTRACTED]
-- [[Request_7]] - `uses` [INFERRED]
-- [[Response]] - `uses` [INFERRED]
+- [[Request_8]] - `uses` [INFERRED]
+- [[Response_1]] - `uses` [INFERRED]
 - [[Terminates inbound A2A HTTP requests, enforces policy, forwards.      Usage]] - `rationale_for` [EXTRACTED]
 - [[TrustManager_2]] - `uses` [INFERRED]
 - [[TrustManager_1]] - `calls` [EXTRACTED]
@@ -51,4 +51,4 @@ tags:
 - [[test_ssrf_callback_rejection_triggers_severe_demotion()]] - `calls` [EXTRACTED]
 - [[test_task_ownership_violation_records_a2a_violation_type()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_104
+#graphify/code #graphify/EXTRACTED #community/Community_205

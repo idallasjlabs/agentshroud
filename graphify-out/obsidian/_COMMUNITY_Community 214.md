@@ -1,47 +1,49 @@
 ---
 type: community
+cohesion: 0.11
 members: 34
 ---
 
 # Community 214
 
+**Cohesion:** 0.11 - loosely connected
 **Members:** 34 nodes
 
 ## Members
-- [[1. Build and Start OpenClaw]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[2. Access OpenClaw Control UI]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Architecture Overview_1]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Communication Channels]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Control UI Not Accessible]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Current Security Posture]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Data Locations]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Gateway Can't Reach OpenClaw]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Initial Configuration]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Inside Container]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Next Steps_7]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[On Host (Docker Volumes)]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[OpenClaw Features Now Available]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[OpenClaw Setup Guide - agentshroud.ai Bot]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[OpenClaw Won't Start]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Quick Start_2]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Recommendations_2]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[SSH Not Working]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Security Notes_2]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Step 1 Add Your OpenAI API Key]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Step 2 Configure Bot Identity]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Step 3 Load Persona (Optional)]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Step 4 Set Up Channels (Optional)]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Step 5 Configure SSH Access (For Bot to Work on Remote Systems)]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Through AgentShroud Gateway (Port 8080)]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Through Control UI (Port 18789)]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Troubleshooting_29]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Using OpenClaw]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[Via CLI]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[What Changed]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[✅ Agents]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[✅ MCP Servers]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[✅ Multi-LLM Support]] - document - docs/setup/OPENCLAW_SETUP.md
-- [[✅ Skills]] - document - docs/setup/OPENCLAW_SETUP.md
+- [[.__init__()_63]] - code - gateway/security/config_integrity.py
+- [[._hash_file()]] - code - gateway/security/config_integrity.py
+- [[._load_baseline()]] - code - gateway/security/config_integrity.py
+- [[._save_baseline()]] - code - gateway/security/config_integrity.py
+- [[.check()_2]] - code - gateway/security/config_integrity.py
+- [[.format_alert_text()]] - code - gateway/security/config_integrity.py
+- [[.reset_baseline()]] - code - gateway/security/config_integrity.py
+- [[Accept current file hashes as the new baseline (owner-acknowledged rebuild).]] - rationale - gateway/security/config_integrity.py
+- [[Compare current file hashes against baseline.          Returns a list of change]] - rationale - gateway/security/config_integrity.py
+- [[Computes and verifies SHA256 hashes of monitored bot config files.      At gatew]] - rationale - gateway/security/config_integrity.py
+- [[ConfigIntegrityMonitor]] - code - gateway/security/config_integrity.py
+- [[Format Telegram alert text for detected config changes.]] - rationale - gateway/security/config_integrity.py
+- [[Load the last known baseline from disk. Returns empty dict if not found.]] - rationale - gateway/security/config_integrity.py
+- [[Path_10]] - code - gateway/security/config_integrity.py
+- [[Persist the current hashes as the new baseline.]] - rationale - gateway/security/config_integrity.py
+- [[Return (bot_config_dir, baseline_path) rooted in an isolated tmp dir.]] - rationale - gateway/tests/test_config_integrity_monitor.py
+- [[Return hex SHA256 of a file, or None if the file does not exist.]] - rationale - gateway/security/config_integrity.py
+- [[_write_openclaw()]] - code - gateway/tests/test_config_integrity_monitor.py
+- [[dirs()]] - code - gateway/tests/test_config_integrity_monitor.py
+- [[test_added_file_is_detected()]] - code - gateway/tests/test_config_integrity_monitor.py
+- [[test_baseline_advances_only_when_clean()]] - code - gateway/tests/test_config_integrity_monitor.py
+- [[test_config_integrity_monitor.py]] - code - gateway/tests/test_config_integrity_monitor.py
+- [[test_first_boot_establishes_baseline_without_alerts()]] - code - gateway/tests/test_config_integrity_monitor.py
+- [[test_format_alert_text_handles_missing_hashes()]] - code - gateway/tests/test_config_integrity_monitor.py
+- [[test_format_alert_text_includes_event_and_hash_prefixes()]] - code - gateway/tests/test_config_integrity_monitor.py
+- [[test_hash_file_is_stable_and_content_sensitive()]] - code - gateway/tests/test_config_integrity_monitor.py
+- [[test_hash_file_returns_none_for_missing()]] - code - gateway/tests/test_config_integrity_monitor.py
+- [[test_load_baseline_missing_file_returns_empty()]] - code - gateway/tests/test_config_integrity_monitor.py
+- [[test_load_baseline_tolerates_corrupt_json()]] - code - gateway/tests/test_config_integrity_monitor.py
+- [[test_modified_file_is_detected()]] - code - gateway/tests/test_config_integrity_monitor.py
+- [[test_removed_file_is_detected()]] - code - gateway/tests/test_config_integrity_monitor.py
+- [[test_reset_baseline_accepts_current_state()]] - code - gateway/tests/test_config_integrity_monitor.py
+- [[test_tamper_baseline_is_not_advanced_so_alert_refires()]] - code - gateway/tests/test_config_integrity_monitor.py
+- [[test_unchanged_second_run_reports_no_changes()]] - code - gateway/tests/test_config_integrity_monitor.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -51,7 +53,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 90]]
+- 2 edges to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
+- 1 edge to [[_COMMUNITY_Community 137]]
 
 ## Top bridge nodes
-- [[OpenClaw Setup Guide - agentshroud.ai Bot]] - degree 12, connects to 1 community
+- [[ConfigIntegrityMonitor]] - degree 26, connects to 2 communities

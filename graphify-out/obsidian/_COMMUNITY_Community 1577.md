@@ -1,14 +1,17 @@
 ---
 type: community
-members: 1
+cohesion: 1.00
+members: 2
 ---
 
 # Community 1577
 
-**Members:** 1 nodes
+**Cohesion:** 1.00 - tightly connected
+**Members:** 2 nodes
 
 ## Members
-- [[AWS Glue Jobs]] - concept - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[SOC Models SecurityEvent Tests]] - code - gateway/tests/test_soc_models.py
+- [[SOC ServiceManager Tests (get_logs, module_filter)]] - code - gateway/tests/test_soc_services.py
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,19 +1,18 @@
 ---
 source_file: "gateway/runtime/security.py"
 type: "code"
-community: "Community 330"
+community: "Community 453"
 location: "L134"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_330
+  - community/Community_453
 ---
 
 # get_missing_features()
 
 ## Connections
 - [[.test_missing_features()]] - `calls` [EXTRACTED]
-- [[Return features NOT available for a given runtime.]] - `rationale_for` [EXTRACTED]
 - [[Return features available for a given runtime.]] - `rationale_for` [EXTRACTED]
 - [[SecurityFeature]] - `references` [EXTRACTED]
 - [[_validate_runtime()]] - `calls` [EXTRACTED]
@@ -21,4 +20,4 @@ tags:
 - [[test_runtime_engines.py]] - `imports` [EXTRACTED]
 - [[warn_missing_features()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_330
+#graphify/code #graphify/EXTRACTED #community/Community_453

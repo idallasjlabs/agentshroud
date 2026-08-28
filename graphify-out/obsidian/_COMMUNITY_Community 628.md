@@ -1,28 +1,30 @@
 ---
 type: community
+cohesion: 0.13
 members: 15
 ---
 
 # Community 628
 
+**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
-- [[Advanced Integrations]] - document - docs/planning/RELEASE-PLAN.md
-- [[Browser Extension_2]] - document - docs/planning/RELEASE-PLAN.md
-- [[Command Center — CLITUI (moved from v1.0.0 on 2026-03-20)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Full Configuration System]] - document - docs/planning/RELEASE-PLAN.md
-- [[Infrastructure (moved from v0.9.0 on 2026-03-04)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Integration Hub]] - document - docs/planning/RELEASE-PLAN.md
-- [[Mac Mini Onboarding]] - document - docs/planning/RELEASE-PLAN.md
-- [[Multi-Host Deployment_1]] - document - docs/planning/RELEASE-PLAN.md
-- [[Multi-Platform Container Support_1]] - document - docs/planning/RELEASE-PLAN.md
-- [[Personal Infrastructure Monitor]] - document - docs/planning/RELEASE-PLAN.md
-- [[SSH Chat Interface (moved from v1.0.0 on 2026-03-20)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Secure Voice (moved from v0.9.0 on 2026-03-04)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Security Hardening_1]] - document - docs/planning/RELEASE-PLAN.md
-- [[iOSmacOS Shortcuts_1]] - document - docs/planning/RELEASE-PLAN.md
-- [[v1.3.0 — Platform Expansion (53 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[04-separation-of-privilege]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Constraints_7]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Evidence_4]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Make gateway source code, config, and security policies read-only to the agent]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Problem_7]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Remediation_5]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Root Cause_6]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Severity_7]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Step 1 Mount gateway source as read-only Docker volumes]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Step 2 Add AgentShroud paths to File IO Sandboxing deny list]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Step 3 Block SSH commands targeting the gateway host]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Step 4 Make SOUL.md and system prompts immutable]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Step 5 Add integrity checking for security-critical files]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Step 6 Enforce read-only at the Docker layer]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Verification_6]] - document - docs/planning/redteam/04-separation-of-privilege.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,9 +32,3 @@ members: 15
 TABLE source_file, type FROM #community/Community_628
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 360]]
-
-## Top bridge nodes
-- [[v1.3.0 — Platform Expansion (53 items)]] - degree 15, connects to 1 community

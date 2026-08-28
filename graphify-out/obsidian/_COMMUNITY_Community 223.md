@@ -1,46 +1,48 @@
 ---
 type: community
+cohesion: 0.07
 members: 33
 ---
 
 # Community 223
 
+**Cohesion:** 0.07 - loosely connected
 **Members:** 33 nodes
 
 ## Members
-- [[.test_add_collaborator()]] - code - gateway/tests/test_cli_coverage.py
-- [[.test_add_group_member()]] - code - gateway/tests/test_cli_coverage.py
-- [[.test_approve()]] - code - gateway/tests/test_cli_coverage.py
-- [[.test_default_format_is_json_when_not_tty()]] - code - gateway/tests/test_cli_coverage.py
-- [[.test_deny()]] - code - gateway/tests/test_cli_coverage.py
-- [[.test_freeze_confirmation_required()]] - code - gateway/tests/test_cli_coverage.py
-- [[.test_freeze_success()]] - code - gateway/tests/test_cli_coverage.py
-- [[.test_get_events_passes_severity_and_limit()]] - code - gateway/tests/test_cli_coverage.py
-- [[.test_get_logs_echoes_lines()]] - code - gateway/tests/test_cli_coverage.py
-- [[.test_get_logs_non_dict_result_prints_nothing()]] - code - gateway/tests/test_cli_coverage.py
-- [[.test_get_services()]] - code - gateway/tests/test_cli_coverage.py
-- [[.test_restart_service_confirmation_required()]] - code - gateway/tests/test_cli_coverage.py
-- [[.test_restart_service_success()]] - code - gateway/tests/test_cli_coverage.py
-- [[.test_scan()]] - code - gateway/tests/test_cli_coverage.py
-- [[.test_scan_invalid_scanner_rejected()]] - code - gateway/tests/test_cli_coverage.py
-- [[.test_set_mode_invalid_choice_rejected()]] - code - gateway/tests/test_cli_coverage.py
-- [[.test_set_mode_valid_choice()]] - code - gateway/tests/test_cli_coverage.py
-- [[.test_simple_get_subcommands()]] - code - gateway/tests/test_cli_coverage.py
-- [[.test_stop_service_confirmation_required()]] - code - gateway/tests/test_cli_coverage.py
-- [[.test_stop_service_success()]] - code - gateway/tests/test_cli_coverage.py
-- [[.test_tail_import_error_prints_message()]] - code - gateway/tests/test_cli_coverage.py
-- [[.test_tail_keyboard_interrupt_prints_disconnected()]] - code - gateway/tests/test_cli_coverage.py
-- [[.test_tail_runs_stream_and_uses_client_token()]] - code - gateway/tests/test_cli_coverage.py
-- [[.test_token_falls_back_to_gateway_password_env()]] - code - gateway/tests/test_cli_coverage.py
-- [[Replace SCLClient in main with a MagicMock factory; return the instance.]] - rationale - gateway/tests/test_cli_coverage.py
-- [[TestEgressAndAdminCommands]] - code - gateway/tests/test_cli_coverage.py
-- [[TestGetCommands]] - code - gateway/tests/test_cli_coverage.py
-- [[TestLifecycleCommands]] - code - gateway/tests/test_cli_coverage.py
-- [[TestTailCommand]] - code - gateway/tests/test_cli_coverage.py
-- [[_all_output()]] - code - gateway/tests/test_cli_coverage.py
-- [[_invoke()]] - code - gateway/tests/test_cli_coverage.py
-- [[_stub_client()]] - code - gateway/tests/test_cli_coverage.py
-- [[stdout + stderr regardless of click version (mix_stderr removed in 8.2).]] - rationale - gateway/tests/test_cli_coverage.py
+- [[.__init__()_122]] - code - gateway/security/tool_chain_analyzer.py
+- [[._load_custom_patterns()]] - code - gateway/security/tool_chain_analyzer.py
+- [[._load_default_patterns()]] - code - gateway/security/tool_chain_analyzer.py
+- [[.add_alert_callback()_2]] - code - gateway/security/tool_chain_analyzer.py
+- [[.add_pattern()]] - code - gateway/security/tool_chain_analyzer.py
+- [[.approve_pending_call()]] - code - gateway/security/tool_chain_analyzer.py
+- [[.get_global_stats()_1]] - code - gateway/security/tool_chain_analyzer.py
+- [[.get_session_stats()_1]] - code - gateway/security/tool_chain_analyzer.py
+- [[.sanitize_tool_params()]] - code - gateway/security/tool_chain_analyzer.py
+- [[.score_reversibility()]] - code - gateway/security/tool_chain_analyzer.py
+- [[.test_custom_patterns()_1]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_disabled_analyzer()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_tool_chain_analyzer_instantiates()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[Add a callback function for chain detection alerts.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Add a new chain pattern at runtime.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Any_62]] - code - gateway/security/tool_chain_analyzer.py
+- [[Approve a pending tool call that required approval.          Args             s]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Create a ToolChainAnalyzer instance for testing.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Get global analyzer statistics.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Get statistics for a session._1]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Initialize the tool chain analyzer.          Args             config Configura]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Load custom patterns from configuration.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Load default suspicious chain patterns.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Main tool chain analysis engine.      Tracks sequences of tool calls and identif]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Return a reversibility score for the given tool call (1.0 = safe, 0.1 = irrevers]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Scan tool parameters for injection payloads and return sanitized copy.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Test loading custom patterns from configuration.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test that disabled analyzer allows all calls.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[ToolChainAnalyzer]] - code - gateway/security/tool_chain_analyzer.py
+- [[ToolChainAnalyzer._load_custom_patterns]] - code - gateway/security/tool_chain_analyzer.py
+- [[ToolChainAnalyzer._load_default_patterns]] - code - gateway/security/tool_chain_analyzer.py
+- [[callable_1]] - code - gateway/security/tool_chain_analyzer.py
+- [[tool_chain_analyzer()]] - code - gateway/tests/test_tool_chain_analyzer.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -50,12 +52,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_Community 319]]
-- 4 edges to [[_COMMUNITY_Community 153]]
+- 15 edges to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
+- 12 edges to [[_COMMUNITY_Community 262]]
+- 11 edges to [[_COMMUNITY_Community 431]]
+- 3 edges to [[_COMMUNITY_Community 169]]
+- 1 edge to [[_COMMUNITY_Middleware & Lifespan]]
+- 1 edge to [[_COMMUNITY_Community 1253]]
+- 1 edge to [[_COMMUNITY_Community 157]]
 
 ## Top bridge nodes
-- [[TestEgressAndAdminCommands]] - degree 10, connects to 2 communities
-- [[TestGetCommands]] - degree 9, connects to 2 communities
-- [[TestLifecycleCommands]] - degree 8, connects to 2 communities
-- [[TestTailCommand]] - degree 5, connects to 2 communities
-- [[_stub_client()]] - degree 26, connects to 1 community
+- [[ToolChainAnalyzer]] - degree 49, connects to 7 communities
+- [[._load_custom_patterns()]] - degree 6, connects to 2 communities
+- [[Any_62]] - degree 6, connects to 1 community
+- [[._load_default_patterns()]] - degree 4, connects to 1 community
+- [[.sanitize_tool_params()]] - degree 4, connects to 1 community

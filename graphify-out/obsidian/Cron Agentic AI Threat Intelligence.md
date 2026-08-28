@@ -1,11 +1,11 @@
 ---
 source_file: "docker/bots/openclaw/config/cron/jobs.json"
 type: "document"
-community: "Community 293"
+community: "Community 395"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_293
+  - community/Community_395
 ---
 
 # Cron: Agentic AI Threat Intelligence
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Hermes Cron Jobs Config]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_293
+#graphify/document #graphify/EXTRACTED #community/Community_395

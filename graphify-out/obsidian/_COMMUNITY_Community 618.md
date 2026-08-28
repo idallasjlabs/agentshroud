@@ -1,28 +1,30 @@
 ---
 type: community
+cohesion: 0.18
 members: 15
 ---
 
 # Community 618
 
+**Cohesion:** 0.18 - loosely connected
 **Members:** 15 nodes
 
 ## Members
-- [[SECTION 1 — SYSTEM OVERVIEW (Plain English)_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
-- [[SECTION 10 — SHUTDOWN & RECOVERY SEQUENCE_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
-- [[SECTION 11 — KNOWN FAILURE MODES & TROUBLESHOOTING MATRIX_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
-- [[SECTION 12 — MERMAID FLOWCHART (Complete System Map)_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
-- [[SECTION 13 — QUICK REFERENCE CARD_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
-- [[SECTION 2 — COMPLETE FILE & DIRECTORY MAP_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
-- [[SECTION 3 — EVERY ENVIRONMENT VARIABLE_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
-- [[SECTION 4 — ALL EXTERNAL DEPENDENCIES_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
-- [[SECTION 5 — PREREQUISITE SETUP (Step-by-Step)_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
-- [[SECTION 6 — STARTUP SEQUENCE (Exact Order of Operations)_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
-- [[SECTION 7 — EVERY MODULE & FUNCTION REFERENCE_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
-- [[SECTION 8 — DATA FLOW_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
-- [[SECTION 9 — ERROR CATALOG_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
-- [[SKILL_173]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
-- [[System Audit & Documentation_2]] - document - docker/config/openclaw/skills/i-sad/SKILL.md
+- [[.test_event_without_user_ignored()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_message_event_records_activity()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_message_preview_truncated_to_80_chars()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_no_tracker_does_not_raise()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_non_message_event_ignored()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_tracker_error_does_not_propagate()]] - code - gateway/tests/test_slack_proxy.py
+- [[SlackAPIProxy_1]] - code - gateway/tests/test_slack_proxy.py
+- [[TestHandleEvent]] - code - gateway/tests/test_slack_proxy.py
+- [[Tests for SlackAPIProxy.handle_event() — inbound Socket Mode event processing.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[handle_event ignores message events with no user field.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[handle_event ignores non-message event types.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[handle_event is a no-op and does not raise when tracker is None.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[handle_event records inbound activity for message events.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[handle_event swallows tracker exceptions (non-fatal).]] - rationale - gateway/tests/test_slack_proxy.py
+- [[handle_event truncates message_preview to 80 characters.]] - rationale - gateway/tests/test_slack_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,3 +32,12 @@ members: 15
 TABLE source_file, type FROM #community/Community_618
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_Community 24]]
+- 2 edges to [[_COMMUNITY_Community 28]]
+- 2 edges to [[_COMMUNITY_Community 74]]
+
+## Top bridge nodes
+- [[TestHandleEvent]] - degree 10, connects to 3 communities
+- [[SlackAPIProxy_1]] - degree 9, connects to 3 communities

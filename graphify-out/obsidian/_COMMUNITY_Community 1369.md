@@ -1,16 +1,19 @@
 ---
 type: community
-members: 3
+cohesion: 0.50
+members: 4
 ---
 
 # Community 1369
 
-**Members:** 3 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[Step 2.5 - Transcribe video  audio files (only if video files detected)]] - document - .agents/skills/graphify/references/transcribe.md
-- [[graphify reference transcribe video and audio]] - document - .agents/skills/graphify/references/transcribe.md
-- [[transcribe]] - document - .agents/skills/graphify/references/transcribe.md
+- [[.test_collaborator_approval_action_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_collaborator_system_prompt_probe_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[Collaborator attempts to approvedeny requests should be blocked.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[System promptinstruction leakage probes should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -18,3 +21,11 @@ members: 3
 TABLE source_file, type FROM #community/Community_1369
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 10 edges to [[_COMMUNITY_Telegram Proxy Inbound]]
+- 2 edges to [[_COMMUNITY_Community 31]]
+
+## Top bridge nodes
+- [[.test_collaborator_approval_action_request_is_blocked_and_quarantined()]] - degree 8, connects to 2 communities
+- [[.test_collaborator_system_prompt_probe_is_blocked_and_quarantined()]] - degree 7, connects to 2 communities

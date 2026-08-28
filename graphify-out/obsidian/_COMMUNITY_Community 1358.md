@@ -1,17 +1,19 @@
 ---
 type: community
+cohesion: 0.50
 members: 4
 ---
 
 # Community 1358
 
+**Cohesion:** 0.50 - moderately connected
 **Members:** 4 nodes
 
 ## Members
-- [[.test_collaborator_incremental_exfil_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_collaborator_memory_access_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[Chunked extraction prompts should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Direct memory-content requests should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_five_with_icc_disabled_and_validator()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[.test_four_with_icc_disabled()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[.test_three_baseline()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[TestScoreNetworkSegmentation_1]] - code - gateway/tests/test_scorecard_scoring.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_Community 2]]
-- 2 edges to [[_COMMUNITY_Community 32]]
+- 1 edge to [[_COMMUNITY_Community 646]]
 
 ## Top bridge nodes
-- [[.test_collaborator_incremental_exfil_request_is_blocked_and_quarantined()]] - degree 8, connects to 2 communities
-- [[.test_collaborator_memory_access_request_is_blocked_and_quarantined()]] - degree 7, connects to 2 communities
+- [[TestScoreNetworkSegmentation_1]] - degree 4, connects to 1 community

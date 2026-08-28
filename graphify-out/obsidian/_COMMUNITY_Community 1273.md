@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1273
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[AgentShroud Module Inventory_1]] - document - skills/custom/agentshroud-redteam/references/module-inventory.md
-- [[Original 33 Modules (v0.6.0)_1]] - document - skills/custom/agentshroud-redteam/references/module-inventory.md
-- [[Pipeline Integration Points_1]] - document - skills/custom/agentshroud-redteam/references/module-inventory.md
-- [[module-inventory_1]] - document - skills/custom/agentshroud-redteam/references/module-inventory.md
-- [[v0.7.0 New Modules (Tier 2+3 + Hardening)_1]] - document - skills/custom/agentshroud-redteam/references/module-inventory.md
+- [[.test_compliance_levels()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_iec_sl_levels()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_weighted_subscore_empty_map()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_weighted_subscore_partial()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestComplianceMaths]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,3 +22,9 @@ members: 5
 TABLE source_file, type FROM #community/Community_1273
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 288]]
+
+## Top bridge nodes
+- [[TestComplianceMaths]] - degree 5, connects to 1 community

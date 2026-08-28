@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1198
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[Oracle — Feedback Analyst_2]] - document - docker/config/hermes/skills/i-oracle/README.md
-- [[Purpose_58]] - document - docker/config/hermes/skills/i-oracle/README.md
-- [[README_63]] - document - docker/config/hermes/skills/i-oracle/README.md
-- [[Related Skills_64]] - document - docker/config/hermes/skills/i-oracle/README.md
-- [[Usage_65]] - document - docker/config/hermes/skills/i-oracle/README.md
+- [[Purpose_63]] - document - docker/config/hermes/skills/i-qa/README.md
+- [[Quality Assurance (QA)]] - document - docker/config/hermes/skills/i-qa/README.md
+- [[README_68]] - document - docker/config/hermes/skills/i-qa/README.md
+- [[Related Skills_69]] - document - docker/config/hermes/skills/i-qa/README.md
+- [[Usage_70]] - document - docker/config/hermes/skills/i-qa/README.md
 
 ## Live Query (requires Dataview plugin)
 

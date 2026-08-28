@@ -1,12 +1,12 @@
 ---
 source_file: "tests/startup_smoke/test_hermes_cron_html_email.sh"
 type: "code"
-community: "Community 391"
+community: "Community 549"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_391
+  - community/Community_549
 ---
 
 # test_hermes_cron_html_email.sh script
@@ -15,4 +15,4 @@ tags:
 - [[check()_7]] - `calls` [EXTRACTED]
 - [[test_hermes_cron_html_email.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_391
+#graphify/code #graphify/EXTRACTED #community/Community_549

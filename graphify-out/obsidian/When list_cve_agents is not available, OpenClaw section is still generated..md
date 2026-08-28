@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_generate_cve_page.py"
 type: "rationale"
-community: "Community 172"
+community: "Community 177"
 location: "L336"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_172
+  - community/Community_177
 ---
 
 # When list_cve_agents is not available, OpenClaw section is still generated.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_legacy_fallback_openclaw_only()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_172
+#graphify/rationale #graphify/EXTRACTED #community/Community_177

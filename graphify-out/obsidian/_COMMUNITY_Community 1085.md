@@ -1,19 +1,21 @@
 ---
 type: community
+cohesion: 0.40
 members: 6
 ---
 
 # Community 1085
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 6 nodes
 
 ## Members
-- [[For graphify explain_1]] - document - docker/config/hermes/skills/graphify/references/query.md
-- [[For graphify path_1]] - document - docker/config/hermes/skills/graphify/references/query.md
-- [[Step 0 — Constrained query expansion (REQUIRED before traversal)_1]] - document - docker/config/hermes/skills/graphify/references/query.md
-- [[Step 1 — Traversal_1]] - document - docker/config/hermes/skills/graphify/references/query.md
-- [[graphify reference query, path, explain_1]] - document - docker/config/hermes/skills/graphify/references/query.md
-- [[query_1]] - document - docker/config/hermes/skills/graphify/references/query.md
+- [[appendLog()_2]] - code - docker/config/openclaw/skills/i-browser/browse.js
+- [[browse.js_2]] - code - docker/config/openclaw/skills/i-browser/browse.js
+- [[browserFetch()_2]] - code - docker/config/openclaw/skills/i-browser/browse.js
+- [[fs_3]] - code - docker/config/openclaw/skills/i-browser/browse.js
+- [[path_3]] - code - docker/config/openclaw/skills/i-browser/browse.js
+- [[{ chromium }_2]] - code - docker/config/openclaw/skills/i-browser/browse.js
 
 ## Live Query (requires Dataview plugin)
 

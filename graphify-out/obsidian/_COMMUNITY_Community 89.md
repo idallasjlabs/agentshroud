@@ -1,59 +1,77 @@
 ---
 type: community
-members: 46
+cohesion: 0.04
+members: 62
 ---
 
 # Community 89
 
-**Members:** 46 nodes
+**Cohesion:** 0.04 - loosely connected
+**Members:** 62 nodes
 
 ## Members
-- [[.__init__()_56]] - code - gateway/security/audit_export.py
-- [[.__init__()_57]] - code - gateway/security/audit_store.py
-- [[._generate_event_id()]] - code - gateway/security/audit_store.py
-- [[.export_config()]] - code - gateway/tests/test_audit_export.py
-- [[.test_content_hash()]] - code - gateway/tests/test_audit_export.py
-- [[.test_entry_hash_chain()]] - code - gateway/tests/test_audit_export.py
-- [[.test_event_creation()]] - code - gateway/tests/test_audit_export.py
-- [[.test_export_cef()]] - code - gateway/tests/test_audit_export.py
-- [[.test_export_filtering()]] - code - gateway/tests/test_audit_export.py
-- [[.test_export_json()]] - code - gateway/tests/test_audit_export.py
-- [[.test_export_json_ld()]] - code - gateway/tests/test_audit_export.py
-- [[.test_hash_chain_integrity()]] - code - gateway/tests/test_audit_export.py
-- [[.test_log_event()]] - code - gateway/tests/test_audit_export.py
-- [[.test_query_events()]] - code - gateway/tests/test_audit_export.py
-- [[.test_stats()]] - code - gateway/tests/test_audit_export.py
-- [[.test_tamper_detection()]] - code - gateway/tests/test_audit_export.py
-- [[.test_verify_export_integrity()]] - code - gateway/tests/test_audit_export.py
-- [[.to_dict()_5]] - code - gateway/security/audit_store.py
-- [[AuditEvent_1]] - code - gateway/security/audit_store.py
-- [[AuditExporter]] - code - gateway/security/audit_export.py
-- [[AuditStore]] - code - gateway/security/audit_export.py
-- [[Convert to dictionary representation.]] - rationale - gateway/security/audit_store.py
-- [[Create test export configuration.]] - rationale - gateway/tests/test_audit_export.py
-- [[Exports audit events in various compliance formats.]] - rationale - gateway/security/audit_export.py
-- [[Generate a unique event ID based on timestamp + random.]] - rationale - gateway/security/audit_store.py
-- [[Represents a single audit event.      The ``bot_id`` field identifies which bot]] - rationale - gateway/security/audit_store.py
-- [[Test AuditEvent functionality.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test AuditExporter functionality.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test AuditStore functionality.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test CEF export format.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test JSON export format.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test JSON-LD export format.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test audit store statistics.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test basic audit event creation.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test content hash computation.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test export integrity verification.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test export with filters.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test hash chain computation.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test hash chain maintains integrity.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test logging audit events.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test querying events with filters.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test tamper detection in exports.]] - rationale - gateway/tests/test_audit_export.py
-- [[TestAuditEvent]] - code - gateway/tests/test_audit_export.py
-- [[TestAuditExporter]] - code - gateway/tests/test_audit_export.py
-- [[TestAuditStore]] - code - gateway/tests/test_audit_export.py
-- [[test_audit_export.py]] - code - gateway/tests/test_audit_export.py
+- [[agent=direct must route to _call_llm (fast path), not forward.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[agent=hermes must route to _call_agent (gateway forward), not _call_llm.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[A 'set volume' updates the tracked level so a later query reports it —     prove]] - rationale - gateway/tests/test_voice_gateway.py
+- [[A 'use Claude' override must survive a reconnect a later connection     with no]] - rationale - gateway/tests/test_voice_gateway.py
+- [[A STOP arriving outside SPEAKING (e.g. the tap landed just as TTS ended)     mus]] - rationale - gateway/tests/test_voice_gateway.py
+- [[A bare 'tell Hermes' must NOT reach any agent yet it only sets the     sticky a]] - rationale - gateway/tests/test_voice_gateway.py
+- [[A bare 'use Claude' must NOT reach any agent the server updates the     sticky]] - rationale - gateway/tests/test_voice_gateway.py
+- [[A bare LISTEN after a stale partial upload must NOT prepend old audio.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[A device 'STOP' text frame during the TTS send phase must abort the     remainin]] - rationale - gateway/tests/test_voice_gateway.py
+- [[A drop mid-upload must not force a full resend the next connection     sends 'L]] - rationale - gateway/tests/test_voice_gateway.py
+- [[A resume cache older than the freshness window must not replay.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[A wedged TTS synthesis (e.g. blocked voice-pack download — live incident     202]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Before any set, 'what is the volume' speaks the unknown-state reply and     stil]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Build a MagicMock WebSocket for direct voice_endpoint() tests.      Frames are d]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Direct-path replies must start TTS synthesis on the first sentence     while the]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Empty STT result no LLM call, state goes directly to idle.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[If the socket dies during the TTS downlink, the NEXT connection must     receive]] - rationale - gateway/tests/test_voice_gateway.py
+- [[LISTEN offset with an expired cache must behave like a fresh LISTEN     (the d]] - rationale - gateway/tests/test_voice_gateway.py
+- [[LISTEN → binary PCM → END → STT → forwardstream → TTS → PCM + END → idle.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Minimal S16LE silence.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Regression a single-sentence reply still produces exactly one synthesize call.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Remote-diag {log...} frames arriving DURING the TTS send phase must be     lo]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Sentence-chunked TTS synthesize() is called once per sentence; all PCM arrives]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Set volume 80. What time is it' must apply the volume AND route the     remaini]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Tell Hermes to check my email.' must switch the agent AND route the     remainin]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Use Claude. What's on my calendar' must switch the model AND route     the rema]] - rationale - gateway/tests/test_voice_gateway.py
+- [[What's the volume' must NOT reach the agent after a prior set the     server s]] - rationale - gateway/tests/test_voice_gateway.py
+- [[When agent= is absent the default agent must be 'direct' (fast local     model)]] - rationale - gateway/tests/test_voice_gateway.py
+- [[When split_for_speech returns multiple sentences, the pipelined TTS loop must]] - rationale - gateway/tests/test_voice_gateway.py
+- [[_mock_ws()]] - code - gateway/tests/test_voice_gateway.py
+- [[_pcm_bytes()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_bare_listen_starts_fresh()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_listen_offset_resumes_partial_upload()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_listen_offset_with_stale_cache_degrades_to_fresh()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_switch_overrides_persist_across_reconnect()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_tts_resume_after_mid_stream_disconnect()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_tts_resume_stale_cache_ignored()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_ws_default_agent_is_direct()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_ws_device_log_during_speaking_still_recorded()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_ws_direct_agent_calls_call_llm()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_ws_direct_agent_streams_tts_before_full_reply()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_ws_empty_transcript_goes_idle()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_ws_full_utterance_state_sequence()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_ws_hermes_agent_calls_call_agent()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_ws_hung_tts_synthesis_still_returns_idle()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_ws_one_sentence_reply_unchanged()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_ws_sentence_chunked_tts_calls_synthesize_per_sentence()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_ws_set_then_query_reports_the_set_level()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_ws_stale_stop_when_idle_is_ignored()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_ws_stop_during_speaking_aborts_tts()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_ws_tell_agent_command_intercepted()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_ws_tell_agent_command_with_chained_instruction()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_ws_tts_pipeline_sends_all_sentences()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_ws_use_local_command_confirms_with_model_name()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_ws_use_local_command_reflects_live_voice_model()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_ws_use_model_command_intercepted()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_ws_use_model_command_with_chained_question()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_ws_volume_command_with_chained_question()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_ws_volume_query_intercepted_returns_tracked_level()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_ws_volume_query_unknown_state_intercepted()]] - code - gateway/tests/test_voice_gateway.py
+- [[use local' must confirm with and display whatever _VOICE_MODEL     currently is,]] - rationale - gateway/tests/test_voice_gateway.py
+- [[use qwen' sets agent='direct', model='qwen3-14b', and confirms with     the actu]] - rationale - gateway/tests/test_voice_gateway.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -63,15 +81,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 18 edges to [[_COMMUNITY_Community 9]]
-- 14 edges to [[_COMMUNITY_Community 232]]
-- 8 edges to [[_COMMUNITY_Community 713]]
-- 3 edges to [[_COMMUNITY_Community 916]]
-- 3 edges to [[_COMMUNITY_Community 1132]]
+- 31 edges to [[_COMMUNITY_Community 35]]
+- 3 edges to [[_COMMUNITY_Community 24]]
+- 2 edges to [[_COMMUNITY_Community 107]]
 
 ## Top bridge nodes
-- [[AuditEvent_1]] - degree 25, connects to 5 communities
-- [[AuditExporter]] - degree 33, connects to 4 communities
-- [[test_audit_export.py]] - degree 8, connects to 3 communities
-- [[TestAuditExporter]] - degree 15, connects to 2 communities
-- [[TestAuditStore]] - degree 12, connects to 2 communities
+- [[_mock_ws()]] - degree 25, connects to 3 communities
+- [[_pcm_bytes()]] - degree 26, connects to 2 communities
+- [[test_ws_stop_during_speaking_aborts_tts()]] - degree 5, connects to 2 communities
+- [[test_ws_empty_transcript_goes_idle()]] - degree 4, connects to 2 communities
+- [[test_switch_overrides_persist_across_reconnect()]] - degree 4, connects to 1 community

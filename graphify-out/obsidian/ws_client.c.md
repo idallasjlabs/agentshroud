@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/ws_client.c"
 type: "code"
-community: "Community 139"
+community: "Community 418"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_139
+  - community/Community_418
 ---
 
 # ws_client.c
@@ -15,7 +15,6 @@ tags:
 - [[String]] - `imports` [EXTRACTED]
 - [[_on_event()]] - `contains` [EXTRACTED]
 - [[remote_log.h]] - `imports` [EXTRACTED]
-- [[ws_client.c]] - `imports` [EXTRACTED]
 - [[ws_client_connected()]] - `contains` [EXTRACTED]
 - [[ws_client_create()]] - `contains` [EXTRACTED]
 - [[ws_client_destroy()]] - `contains` [EXTRACTED]
@@ -26,6 +25,5 @@ tags:
 - [[ws_client_send_log()]] - `contains` [EXTRACTED]
 - [[ws_client_send_pcm()]] - `contains` [EXTRACTED]
 - [[ws_client_send_stop()]] - `contains` [EXTRACTED]
-- [[ws_client_set_ctrl_cb()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_139
+#graphify/code #graphify/EXTRACTED #community/Community_418

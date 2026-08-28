@@ -1,30 +1,24 @@
 ---
 type: community
-members: 17
+cohesion: 0.22
+members: 9
 ---
 
 # Community 911
 
-**Members:** 17 nodes
+**Cohesion:** 0.22 - loosely connected
+**Members:** 9 nodes
 
 ## Members
-- [[A. One-Click Install & Updates]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[AgentShroud Shared Tasks]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[AgentShroud Tasks (all overdue, added to v0.8.0)]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[AgentShroud — Master Feature List (Everything Ever Mentioned)]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Apple Reminders — Items Recovered]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[B. Professional Branded Web Command Center]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[C. TextCLI Command Center]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Collaborators]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[D. SSH Chat Interface]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[E. Full Documentation]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[F. Final Hardening + Release]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[G. Trademark  IP]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Infrastructure_7]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[MASTER-FEATURE-LIST]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Summary_26]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[v1.0.0 — Fortress (Polish + Public Release)]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[⚠️ STATUS UPDATE — 2026-07-09 (read before the per-item marks below)]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[Collaborator Testing]] - document - docs/security/security-inventory.md
+- [[Owner Testing]] - document - docs/security/security-inventory.md
+- [[Security Architecture Documents (24)]] - document - docs/security/security-inventory.md
+- [[Security Configuration Files (9)]] - document - docs/security/security-inventory.md
+- [[Security Test Files (38)]] - document - docs/security/security-inventory.md
+- [[Summary_19]] - document - docs/security/security-inventory.md
+- [[Testing Checklist_1]] - document - docs/security/security-inventory.md
+- [[security-inventory]] - document - docs/security/security-inventory.md
+- [[🛡️ AgentShroud Security Inventory (v0.8.0)]] - document - docs/security/security-inventory.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,9 +28,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 767]]
-- 1 edge to [[_COMMUNITY_Community 402]]
-- 1 edge to [[_COMMUNITY_Community 733]]
+- 1 edge to [[_COMMUNITY_Community 772]]
 
 ## Top bridge nodes
-- [[AgentShroud — Master Feature List (Everything Ever Mentioned)]] - degree 10, connects to 3 communities
+- [[🛡️ AgentShroud Security Inventory (v0.8.0)]] - degree 7, connects to 1 community

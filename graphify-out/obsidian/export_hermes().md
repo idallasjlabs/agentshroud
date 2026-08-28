@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/export-bot-conversations.py"
 type: "code"
-community: "Community 723"
+community: "Community 176"
 location: "L82"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_723
+  - community/Community_176
 ---
 
 # export_hermes()
@@ -19,4 +19,4 @@ tags:
 - [[export-bot-conversations.py]] - `contains` [EXTRACTED]
 - [[main()_16]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_723
+#graphify/code #graphify/EXTRACTED #community/Community_176

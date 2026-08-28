@@ -14,7 +14,6 @@ tags:
 ## Connections
 - [[8. Performance & Testing]] - `contains` [EXTRACTED]
 - [[AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist]] - `contains` [EXTRACTED]
-- [[AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist_1]] - `contains` [EXTRACTED]
 - [[Docker Test]] - `contains` [EXTRACTED]
 - [[GitHub Integration Test]] - `contains` [EXTRACTED]
 - [[System Verification]] - `contains` [EXTRACTED]

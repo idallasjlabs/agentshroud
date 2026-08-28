@@ -1,16 +1,18 @@
 ---
 type: community
+cohesion: 0.67
 members: 3
 ---
 
 # Community 1390
 
+**Cohesion:** 0.67 - moderately connected
 **Members:** 3 nodes
 
 ## Members
-- [[SKILL_208]] - document - skills/openclaw/gifgrep/SKILL.md
-- [[gifgrep]] - document - skills/openclaw/gifgrep/SKILL.md
-- [[gifgrep CLI]] - concept - skills/openclaw/gifgrep/SKILL.md
+- [[SKILL_205]] - document - skills/openclaw/eightctl/SKILL.md
+- [[eightctl]] - document - skills/openclaw/eightctl/SKILL.md
+- [[eightctl CLI]] - concept - skills/openclaw/eightctl/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

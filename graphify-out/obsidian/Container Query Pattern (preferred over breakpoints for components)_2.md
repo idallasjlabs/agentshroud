@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-ui/SKILL.md"
 type: "document"
-community: "Community 303"
+community: "Community 305"
 location: "L252"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_303
+  - community/Community_305
 ---
 
 # Container Query Pattern (preferred over breakpoints for components)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Responsive Layout System_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_303
+#graphify/document #graphify/EXTRACTED #community/Community_305

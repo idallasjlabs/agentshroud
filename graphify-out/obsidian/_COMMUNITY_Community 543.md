@@ -1,30 +1,32 @@
 ---
 type: community
+cohesion: 0.12
 members: 17
 ---
 
 # Community 543
 
+**Cohesion:** 0.12 - loosely connected
 **Members:** 17 nodes
 
 ## Members
-- [[.test_forward_file_download_aborts_at_size_limit()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_forward_file_download_returns_raw_body_sentinel()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_oversized_document_update_is_dropped()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_proxy_request_api_path_still_json_parsed()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_proxy_request_file_download_error_returns_502()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_proxy_request_file_prefix_returns_binary_sentinel()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_within_limit_document_update_passes()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[ri for a user not in immune set must say so.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Inbound update with document.file_size  limit must be dropped (CVE-2026-32049).]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Inbound update with document.file_size within limit must pass (CVE-2026-32049).]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[TestFileDownload]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[Tests for _forward_file_download() and proxy_request() binary path.      Regress]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[_forward_file_download must raise when streamed bytes exceed limit (CVE-2026-320]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[_forward_file_download returns dict with _raw_body, _content_type, _status_code.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[proxy_request returns 502 sentinel when file download raises.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[proxy_request with path_prefix='file' returns _raw_body sentinel (no JSON parse]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[proxy_request without file prefix still JSON-parses the response.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[About Skills]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Body]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Frontmatter]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Learn Proven Design Patterns]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[SKILL_228]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Skill Creation Process]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Skill Creator]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Skill Naming]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Start with Reusable Skill Contents]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Step 1 Understanding the Skill with Concrete Examples]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Step 2 Planning the Reusable Skill Contents]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Step 3 Initializing the Skill]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Step 4 Edit the Skill]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Step 5 Packaging a Skill]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Step 6 Iterate]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Update SKILL]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[What Skills Provide]] - document - skills/openclaw/skill-creator/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,16 +36,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 11 edges to [[_COMMUNITY_Community 2]]
-- 4 edges to [[_COMMUNITY_Community 32]]
-- 1 edge to [[_COMMUNITY_Community 124]]
-- 1 edge to [[_COMMUNITY_Community 6]]
-- 1 edge to [[_COMMUNITY_Community 4]]
-- 1 edge to [[_COMMUNITY_Community 486]]
+- 1 edge to [[_COMMUNITY_Community 806]]
+- 1 edge to [[_COMMUNITY_Community 532]]
+- 1 edge to [[_COMMUNITY_Community 773]]
 
 ## Top bridge nodes
-- [[TestFileDownload]] - degree 12, connects to 4 communities
-- [[.test_oversized_document_update_is_dropped()]] - degree 6, connects to 2 communities
-- [[.test_within_limit_document_update_passes()]] - degree 6, connects to 2 communities
-- [[.test_forward_file_download_aborts_at_size_limit()]] - degree 4, connects to 2 communities
-- [[.test_forward_file_download_returns_raw_body_sentinel()]] - degree 4, connects to 1 community
+- [[SKILL_228]] - degree 3, connects to 2 communities
+- [[Skill Creator]] - degree 4, connects to 1 community

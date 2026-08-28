@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "rationale"
-community: "Community 779"
+community: "Community 685"
 location: "L270"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_779
+  - community/Community_685
 ---
 
 # Stub urllib.request.urlopen to return a list of advisories.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._patch_urllib()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_779
+#graphify/rationale #graphify/EXTRACTED #community/Community_685

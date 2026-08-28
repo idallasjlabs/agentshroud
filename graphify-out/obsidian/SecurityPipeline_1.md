@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "code"
-community: "Community 35"
+community: "PII Sanitizer & E2E Tests"
 location: "L47"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_35
+  - community/PII_Sanitizer__E2E_Tests
 ---
 
 # SecurityPipeline
@@ -27,4 +27,4 @@ tags:
 - [[_make_full_pipeline()]] - `references` [EXTRACTED]
 - [[test_pipeline_fails_closed_without_pii()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_35
+#graphify/code #graphify/INFERRED #community/PII_Sanitizer__E2E_Tests

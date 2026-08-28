@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/gh-issues/SKILL.md"
 type: "document"
-community: "Community 502"
+community: "Community 498"
 location: "L501"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_502
+  - community/Community_498
 ---
 
 # Timeout Handling
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Phase 5 — Spawn Sub-agents (Parallel)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_502
+#graphify/document #graphify/EXTRACTED #community/Community_498

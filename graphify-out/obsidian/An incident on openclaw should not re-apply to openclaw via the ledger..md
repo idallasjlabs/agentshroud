@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cross_bot_trust_ledger.py"
 type: "rationale"
-community: "Community 1016"
+community: "Community 41"
 location: "L223"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1016
+  - community/Community_41
 ---
 
 # An incident on openclaw should not re-apply to openclaw via the ledger.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_no_self_propagation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1016
+#graphify/rationale #graphify/EXTRACTED #community/Community_41

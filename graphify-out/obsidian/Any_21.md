@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "Community 93"
+community: "Community 70"
 location: "L2713"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_93
+  - community/Community_70
 ---
 
 # Any
@@ -30,4 +30,4 @@ tags:
 - [[RBACConfig_1]] - `uses` [INFERRED]
 - [[RateLimiter]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_93
+#graphify/code #graphify/EXTRACTED #community/Community_70

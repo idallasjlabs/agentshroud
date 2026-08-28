@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md"
 type: "document"
-community: "Community 226"
+community: "Community 373"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_226
+  - community/Community_373
 ---
 
 # PHASE_3A_3B_IMPLEMENTATION.md
@@ -18,7 +18,6 @@ tags:
 - [[Kill Switch (freeze  shutdown  disconnect)]] - `conceptually_related_to` [EXTRACTED]
 - [[NET_RAW Capability Removal]] - `conceptually_related_to` [EXTRACTED]
 - [[Next Steps_2]] - `contains` [EXTRACTED]
-- [[Phase 3A & 3B Implementation Summary]] - `contains` [EXTRACTED]
 - [[Phase 3A Security Completion (COMPLETE)]] - `contains` [EXTRACTED]
 - [[Phase 3B.1 Kill Switch (COMPLETE)]] - `contains` [EXTRACTED]
 - [[Re-enable Seccomp Profiles (ARM64 syscalls)]] - `conceptually_related_to` [EXTRACTED]
@@ -28,4 +27,4 @@ tags:
 - [[Testing Checklist]] - `contains` [EXTRACTED]
 - [[verify-security.sh (13 Security Checks)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_226
+#graphify/document #graphify/EXTRACTED #community/Community_373

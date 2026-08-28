@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-athena/SKILL.md"
 type: "document"
-community: "Community 748"
+community: "Community 746"
 location: "L61"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_748
+  - community/Community_746
 ---
 
 # <description of what this does>
@@ -18,4 +18,4 @@ tags:
 - [[User Prompt Template_4]] - `contains` [EXTRACTED]
 - [[cheatsheet_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_748
+#graphify/document #graphify/EXTRACTED #community/Community_746

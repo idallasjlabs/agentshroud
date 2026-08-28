@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_gmail_credential_retrieval.py"
 type: "rationale"
-community: "Community 567"
+community: "Community 565"
 location: "L126"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_567
+  - community/Community_565
 ---
 
 # OP_SESSION is set — primary op read path.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestGetGmailAppPasswordWithSession]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_567
+#graphify/rationale #graphify/EXTRACTED #community/Community_565

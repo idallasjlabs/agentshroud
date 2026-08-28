@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_gateway_relay.py"
 type: "code"
-community: "Community 855"
+community: "Community 856"
 location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_855
+  - community/Community_856
 ---
 
 # TelegramGatewayRelay
@@ -18,4 +18,4 @@ tags:
 - [[Relay Telegram messages through the gateway control plane.      This enables con]] - `rationale_for` [EXTRACTED]
 - [[telegram_gateway_relay.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_855
+#graphify/code #graphify/EXTRACTED #community/Community_856

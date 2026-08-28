@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/IDENTITY.md"
 type: "concept"
-community: "Community 1274"
+community: "Community 1248"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Community_1274
+  - community/Community_1248
 ---
 
 # Owner vs Bot Telegram Identity Separation
@@ -15,4 +15,4 @@ tags:
 - [[Telegram Bot Setup (BotFather token + gateway config)]] - `conceptually_related_to` [INFERRED]
 - [[Trust-Differentiated Processing (RBAC tiers)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Community_1274
+#graphify/concept #graphify/INFERRED #community/Community_1248

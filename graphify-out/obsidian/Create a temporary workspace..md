@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "Community 56"
+community: "Session Management"
 location: "L351"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_56
+  - community/Session_Management
 ---
 
 # Create a temporary workspace.
@@ -15,4 +15,4 @@ tags:
 - [[.temp_workspace()_2]] - `rationale_for` [EXTRACTED]
 - [[.temp_workspace()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_56
+#graphify/rationale #graphify/EXTRACTED #community/Session_Management

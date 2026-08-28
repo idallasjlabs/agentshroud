@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/cron/JOBS-REFERENCE.md"
 type: "document"
-community: "Community 87"
+community: "Community 282"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_87
+  - community/Community_282
 ---
 
 # How to recreate a job
 
 ## Connections
-- [[Hermes Cron Jobs — Reference & Recreation Guide]] - `contains` [EXTRACTED]
+- [[Hermes Cron Jobs Reference & Recreation Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_87
+#graphify/document #graphify/EXTRACTED #community/Community_282

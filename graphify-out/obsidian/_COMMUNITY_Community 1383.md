@@ -1,16 +1,18 @@
 ---
 type: community
+cohesion: 0.67
 members: 3
 ---
 
 # Community 1383
 
+**Cohesion:** 0.67 - moderately connected
 **Members:** 3 nodes
 
 ## Members
-- [[Trillian Host Compose Override]] - document - docker/docker-compose.agentshroud-bot.trillian.yml
-- [[upgrade.sh]] - code - docker/upgrade.sh
-- [[upgrade.sh script]] - code - docker/upgrade.sh
+- [[Obsidian code-architecture vault (.obsidian-vaultscode-architecture)]] - concept - scripts/gen-code-graph.sh
+- [[gen-code-graph.sh]] - code - scripts/gen-code-graph.sh
+- [[gen-code-graph.sh script]] - code - scripts/gen-code-graph.sh
 
 ## Live Query (requires Dataview plugin)
 

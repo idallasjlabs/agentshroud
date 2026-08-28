@@ -1,44 +1,46 @@
 ---
 type: community
+cohesion: 0.06
 members: 31
 ---
 
 # Community 248
 
+**Cohesion:** 0.06 - loosely connected
 **Members:** 31 nodes
 
 ## Members
-- [[Alert Prioritization Display_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Anti-Patterns to Flag_23]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[CLI  TUI UX_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[CLI UX Rules_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Confirmation Patterns_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Content Organization Patterns_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Contextual Actions_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Core Discipline Discover → Define → Design → Validate_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Dashboard UX_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Data Density Rules_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Dependencies_17]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Drill-Down Pattern_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Error Message Patterns_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Feedback Loops (response time standards)_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Field Design Rules_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Form UX_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Generic Task Flow Template_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Information Architecture_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Interaction Design Patterns_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Navigation Hierarchy Rules_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Nielsen's 10 Heuristics — GSDE&G Application_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Progressive Disclosure_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Progressive Form Pattern (for multi-step workflows)_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Role_110]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Rules_26]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[SKILL_187]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Site Alarm Acknowledgment Flow_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Skill UX Expert (UX)_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Usability Audit Checklist_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[User Flow Diagrams_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Wayfinding_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[Alert Prioritization Display_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[Anti-Patterns to Flag_15]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[CLI  TUI UX_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[CLI UX Rules_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[Confirmation Patterns_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[Content Organization Patterns_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[Contextual Actions_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[Core Discipline Discover → Define → Design → Validate_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[Dashboard UX_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[Data Density Rules_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[Dependencies_11]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[Drill-Down Pattern_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[Error Message Patterns_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[Feedback Loops (response time standards)_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[Field Design Rules_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[Form UX_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[Generic Task Flow Template_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[Information Architecture_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[Interaction Design Patterns_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[Navigation Hierarchy Rules_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[Nielsen's 10 Heuristics — GSDE&G Application_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[Progressive Disclosure_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[Progressive Form Pattern (for multi-step workflows)_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[Role_74]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[Rules_17]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[SKILL_124]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[Site Alarm Acknowledgment Flow_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[Skill UX Expert (UX)_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[Usability Audit Checklist_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[User Flow Diagrams_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[Wayfinding_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

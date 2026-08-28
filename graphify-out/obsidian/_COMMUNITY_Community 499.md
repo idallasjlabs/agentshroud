@@ -1,31 +1,33 @@
 ---
 type: community
+cohesion: 0.11
 members: 18
 ---
 
 # Community 499
 
+**Cohesion:** 0.11 - loosely connected
 **Members:** 18 nodes
 
 ## Members
-- [[Dialogue Adaptations_2]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
-- [[Dialogue Techniques_2]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
-- [[EXPERT_2]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
-- [[ElevenLabs v3 Audio Tags_2]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
-- [[Episode Closing (Mandatory for OKE)_2]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
-- [[Expert Persona_2]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
-- [[HOST_2]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
-- [[Input Requirements_28]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
-- [[OKE Channel — CPA Exam Prep Dialogue Guidelines_2]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
-- [[Output Format_37]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
-- [[Persona_22]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
-- [[Quality Checklist_25]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
-- [[Role_105]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
-- [[SKILL_181]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
-- [[Socrates — Dialogue Architect_5]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
-- [[Speaker Definitions_2]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
-- [[System Prompt_22]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
-- [[User Prompt Template_10]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
+- [[ClamAV `SelfCheck Database status OK.`]] - document - docs/runbooks/troubleshooting.md
+- [[ClamAV `Socket for clamd not found yet, retrying (N1800)...`]] - document - docs/runbooks/troubleshooting.md
+- [[ClamAV `WARNING Can't query current.cvd.clamav.net`  `ERROR Database update process failed`]] - document - docs/runbooks/troubleshooting.md
+- [[Gateway `CONNECT tunnel established wss-primary.slack.com443`]] - document - docs/runbooks/troubleshooting.md
+- [[Gateway `GET status - 200 (0.000s)` every 30 seconds]] - document - docs/runbooks/troubleshooting.md
+- [[Gateway `POST telegram-apibotgetUpdates - 200 (30–32s)`]] - document - docs/runbooks/troubleshooting.md
+- [[Gateway duplicate access log lines for every request]] - document - docs/runbooks/troubleshooting.md
+- [[Known Log Messages]] - document - docs/runbooks/troubleshooting.md
+- [[`POST apialerts - 404 (Nms)` (resolved in v0.9.0)]] - document - docs/runbooks/troubleshooting.md
+- [[`ERROR socket-modeSocketModeClientN Failed to retrieve a new WSS URL`]] - document - docs/runbooks/troubleshooting.md
+- [[`WARN bolt-app http request failed connect ECONNREFUSED 10.254.110.28181`]] - document - docs/runbooks/troubleshooting.md
+- [[`WARN bolt-app http request failed getaddrinfo ENOTFOUND gateway`]] - document - docs/runbooks/troubleshooting.md
+- [[`WARN socket-modeSlackWebSocketN A pong wasn't received from the server before the timeout of 5000ms!`]] - document - docs/runbooks/troubleshooting.md
+- [[`agentembedded embedded run agent end isError=true error=Ollama API stream ended without a final response`]] - document - docs/runbooks/troubleshooting.md
+- [[`gateway ⚠️ Gateway is binding to a non-loopback address`]] - document - docs/runbooks/troubleshooting.md
+- [[`health-monitor slackdefault health-monitor restarting (reason stale-socket)`]] - document - docs/runbooks/troubleshooting.md
+- [[`openclaw Non-fatal unhandled rejection (continuing) Error A request error occurred`]] - document - docs/runbooks/troubleshooting.md
+- [[`telegram autoSelectFamily=false (config)`  `fetch fallback forcing autoSelectFamily=false + dnsResultOrder=ipv4first`]] - document - docs/runbooks/troubleshooting.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,3 +35,9 @@ members: 18
 TABLE source_file, type FROM #community/Community_499
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_Community 314]]
+
+## Top bridge nodes
+- [[Known Log Messages]] - degree 19, connects to 1 community

@@ -1,27 +1,29 @@
 ---
 type: community
+cohesion: 0.14
 members: 14
 ---
 
 # Community 673
 
+**Cohesion:** 0.14 - loosely connected
 **Members:** 14 nodes
 
 ## Members
-- [[Environment Variables_2]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
-- [[Fail-Closed Design]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
-- [[Fail-Closed Patch]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
-- [[Gateway Communication]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
-- [[Gateway Endpoints Called]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
-- [[How It Works_1]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
-- [[Key Behavior]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
-- [[Message Types Intercepted]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
-- [[Process Architecture]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
-- [[Purpose_122]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
-- [[Related Notes_8]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
-- [[Usage_123]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
-- [[mcp-proxy-wrapper.js_2]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
-- [[mcp-proxy-wrapper.js_1]] - document - docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md
+- [[1. Anthropic API Credits & Rate Limits]] - document - docs/project/TELEGRAM_ISSUES.md
+- [[10. Seccomp Profile Conflicts (x86_64)]] - document - docs/project/TELEGRAM_ISSUES.md
+- [[11. Bot Token Migration Confusion]] - document - docs/project/TELEGRAM_ISSUES.md
+- [[12. PandocLaTeX Dependency Issues]] - document - docs/project/TELEGRAM_ISSUES.md
+- [[13. Hallucination in Competitor Reports]] - document - docs/project/TELEGRAM_ISSUES.md
+- [[2. Bot Startup Crash-Loops (Config Errors)]] - document - docs/project/TELEGRAM_ISSUES.md
+- [[3. 1Password Session Expiry (`op-proxy`)]] - document - docs/project/TELEGRAM_ISSUES.md
+- [[4. SSH Key Regeneration on Restart]] - document - docs/project/TELEGRAM_ISSUES.md
+- [[8. Colima  Docker Stability (Marvin)]] - document - docs/project/TELEGRAM_ISSUES.md
+- [[9. Glibc TLS Incompatibility (Trillian)]] - document - docs/project/TELEGRAM_ISSUES.md
+- [[AgentShroud™ Telegram-Reported Issues]] - document - docs/project/TELEGRAM_ISSUES.md
+- [[🔴 CRITICAL System Blockers]] - document - docs/project/TELEGRAM_ISSUES.md
+- [[🔵 LOW User Experience & Documentation]] - document - docs/project/TELEGRAM_ISSUES.md
+- [[🟡 MEDIUM Infrastructure & Deployment]] - document - docs/project/TELEGRAM_ISSUES.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,3 +31,10 @@ members: 14
 TABLE source_file, type FROM #community/Community_673
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 284]]
+- 1 edge to [[_COMMUNITY_Community 906]]
+
+## Top bridge nodes
+- [[AgentShroud™ Telegram-Reported Issues]] - degree 5, connects to 2 communities

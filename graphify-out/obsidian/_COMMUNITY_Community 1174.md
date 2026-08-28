@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1174
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[ClamAV (malware detection)]] - concept - gateway/security/__init__.py
-- [[Falco (runtime security monitoring)]] - concept - gateway/security/__init__.py
-- [[Trivy (container vulnerability scanning)]] - concept - gateway/security/__init__.py
-- [[Wazuh (file integrity monitoring)]] - concept - gateway/security/__init__.py
-- [[__init__.py_9]] - code - gateway/security/__init__.py
+- [[Atlas — Curriculum Architect_1]] - document - docker/config/hermes/skills/i-atlas/README.md
+- [[Purpose_39]] - document - docker/config/hermes/skills/i-atlas/README.md
+- [[README_44]] - document - docker/config/hermes/skills/i-atlas/README.md
+- [[Related Skills_42]] - document - docker/config/hermes/skills/i-atlas/README.md
+- [[Usage_44]] - document - docker/config/hermes/skills/i-atlas/README.md
 
 ## Live Query (requires Dataview plugin)
 

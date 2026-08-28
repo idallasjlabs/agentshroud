@@ -1,43 +1,45 @@
 ---
 type: community
+cohesion: 0.16
 members: 30
 ---
 
 # Community 259
 
+**Cohesion:** 0.16 - loosely connected
 **Members:** 30 nodes
 
 ## Members
-- [[Action requires approval but none granted_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[Browser timeout_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[CAPTCHA detected_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[Rate limit exceeded_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[URL not in allowlist_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[1. Always Specify Risk Level_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[2. Use Allowlisting Liberally_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[3. Take Screenshots for Audit Trail_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[4. Handle CAPTCHAs Gracefully_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[5. Never Extract Credentials_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[Approval Integration_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[Audit Logging_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[Best Practices_4]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[Browser — Secure Browser Automation_5]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[Click Element_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[Core Security Principles_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[Example Apple ID Creation (Semi-Automated)_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[Extract Data_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[Fetch JavaScript-Heavy Page (Node.js)_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[Fill Form_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[Limitations_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[Navigate to URL_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[Risk Levels_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[SKILL_136]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[Security Architecture_3]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[Security Configuration_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[Security Guarantees_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[Take Screenshot_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[Troubleshooting_12]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[Usage_87]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
+- [[._run_sync()]] - code - gateway/tests/test_skill_guard.py
+- [[.client()_6]] - code - gateway/tests/test_skill_guard.py
+- [[.test_cli_allows_clean_tree_zero()]] - code - gateway/tests/test_skill_guard.py
+- [[.test_cli_blocks_dangerous_tree_nonzero()]] - code - gateway/tests/test_skill_guard.py
+- [[.test_cli_fails_closed_on_unreadable_file()]] - code - gateway/tests/test_skill_guard.py
+- [[.test_cli_missing_source_nonzero()]] - code - gateway/tests/test_skill_guard.py
+- [[.test_main_clean_tree_returns_ok()]] - code - gateway/tests/test_skill_guard.py
+- [[.test_main_dangerous_tree_returns_blocked()]] - code - gateway/tests/test_skill_guard.py
+- [[.test_main_empty_source_returns_usage()]] - code - gateway/tests/test_skill_guard.py
+- [[.test_main_flag_only_tree_returns_ok()]] - code - gateway/tests/test_skill_guard.py
+- [[.test_main_missing_source_returns_usage()]] - code - gateway/tests/test_skill_guard.py
+- [[.test_main_unreadable_file_fails_closed()]] - code - gateway/tests/test_skill_guard.py
+- [[.test_reload_allows_clean_skill()]] - code - gateway/tests/test_skill_guard.py
+- [[.test_reload_blocks_dangerous_skill()]] - code - gateway/tests/test_skill_guard.py
+- [[.test_reload_fails_closed_on_unreadable_file()]] - code - gateway/tests/test_skill_guard.py
+- [[.test_sync_aborts_on_dangerous_tree()]] - code - gateway/tests/test_skill_guard.py
+- [[.test_sync_allows_clean_tree()]] - code - gateway/tests/test_skill_guard.py
+- [[.test_sync_dry_run_does_not_write_but_still_scans()]] - code - gateway/tests/test_skill_guard.py
+- [[Exercise ``gateway.skills.scan.main`` directly for exit-code coverage.]] - rationale - gateway/tests/test_skill_guard.py
+- [[Path_38]] - code - gateway/tests/test_skill_guard.py
+- [[Raised when SkillGuard is handed content it cannot scan.]] - rationale - gateway/security/skill_guard.py
+- [[SkillScanError]] - code - gateway/security/skill_guard.py
+- [[TestClient]] - code - gateway/tests/test_skill_guard.py
+- [[TestReloadIntegration]] - code - gateway/tests/test_skill_guard.py
+- [[TestScanEntrypoint]] - code - gateway/tests/test_skill_guard.py
+- [[TestScanEntrypointInProcess]] - code - gateway/tests/test_skill_guard.py
+- [[TestSyncScriptPreflight]] - code - gateway/tests/test_skill_guard.py
+- [[The parallel bash sync path must invoke SkillGuard before copying.]] - rationale - gateway/tests/test_skill_guard.py
+- [[_run_scan_cli()]] - code - gateway/tests/test_skill_guard.py
+- [[_write_tree()]] - code - gateway/tests/test_skill_guard.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -45,3 +47,15 @@ members: 30
 TABLE source_file, type FROM #community/Community_259
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 33 edges to [[_COMMUNITY_Community 102]]
+- 14 edges to [[_COMMUNITY_Community 272]]
+- 1 edge to [[_COMMUNITY_Community 82]]
+
+## Top bridge nodes
+- [[SkillScanError]] - degree 24, connects to 3 communities
+- [[Path_38]] - degree 24, connects to 2 communities
+- [[TestScanEntrypointInProcess]] - degree 13, connects to 2 communities
+- [[TestSyncScriptPreflight]] - degree 11, connects to 2 communities
+- [[TestReloadIntegration]] - degree 10, connects to 2 communities

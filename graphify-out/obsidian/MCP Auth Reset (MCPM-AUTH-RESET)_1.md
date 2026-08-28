@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-mcpm-auth-reset/README.md"
 type: "document"
-community: "Community 1193"
+community: "Community 1188"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1193
+  - community/Community_1188
 ---
 
 # MCP Auth Reset (MCPM-AUTH-RESET)
@@ -17,4 +17,4 @@ tags:
 - [[Related Skills_56]] - `contains` [EXTRACTED]
 - [[Usage_59]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1193
+#graphify/document #graphify/EXTRACTED #community/Community_1188

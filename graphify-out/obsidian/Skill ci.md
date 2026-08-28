@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-ci/SKILL.md"
 type: "document"
-community: "Community 1422"
+community: "Community 1438"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1422
+  - community/Community_1438
 ---
 
 # Skill: ci
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SKILL_13]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1422
+#graphify/document #graphify/EXTRACTED #community/Community_1438

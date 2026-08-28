@@ -1,35 +1,47 @@
 ---
 type: community
-members: 22
+cohesion: 0.06
+members: 32
 ---
 
 # Community 238
 
-**Members:** 22 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 32 nodes
 
 ## Members
-- [[ADR-007 Zero-Config Security]] - concept - docs/architecture/adr/ADR-007-zero-config-security.md
-- [[AgentShroud Deployment Architecture]] - document - docs/architecture/deployment-diagram.md
-- [[Apple Containers (macOS)]] - document - docs/architecture/deployment-diagram.md
-- [[Cloud Provider Secrets]] - document - docs/architecture/deployment-diagram.md
-- [[DNS Routing Configuration]] - document - docs/architecture/deployment-diagram.md
-- [[Default Port Allocation]] - document - docs/architecture/deployment-diagram.md
-- [[Deployment Validation]] - document - docs/architecture/deployment-diagram.md
-- [[Docker Runtime]] - document - docs/architecture/deployment-diagram.md
-- [[Docker Secrets]] - document - docs/architecture/deployment-diagram.md
-- [[HashiCorp Vault Integration]] - document - docs/architecture/deployment-diagram.md
-- [[Multi-Instance Support]] - document - docs/architecture/deployment-diagram.md
-- [[Multi-Runtime Support_1]] - document - docs/architecture/deployment-diagram.md
-- [[Network Topology]] - document - docs/architecture/deployment-diagram.md
-- [[Overview_6]] - document - docs/architecture/deployment-diagram.md
-- [[Persistent Storage Architecture]] - document - docs/architecture/deployment-diagram.md
-- [[Podman Support]] - document - docs/architecture/deployment-diagram.md
-- [[Port Mappings and Auto-Detection]] - document - docs/architecture/deployment-diagram.md
-- [[Secrets Management Integration]] - document - docs/architecture/deployment-diagram.md
-- [[Three-Network Architecture]] - document - docs/architecture/deployment-diagram.md
-- [[Volume Mounts and Secrets Management]] - document - docs/architecture/deployment-diagram.md
-- [[Zero-Configuration Deployment]] - document - docs/architecture/deployment-diagram.md
-- [[deployment-diagram]] - document - docs/architecture/deployment-diagram.md
+- [[1. Health Check (Gateway)]] - document - docker/QUICKSTART.md
+- [[2. Get Auth Token (Gateway)]] - document - docker/QUICKSTART.md
+- [[3. Send Test Message]] - document - docker/QUICKSTART.md
+- [[4. Verify Isaiah's Personality]] - document - docker/QUICKSTART.md
+- [[API Key Error]] - document - docker/QUICKSTART.md
+- [[AgentShroud Phase 3 - Quick Start Guide]] - document - docker/QUICKSTART.md
+- [[Architecture Diagram]] - document - docker/QUICKSTART.md
+- [[Check File Permissions]] - document - docker/QUICKSTART.md
+- [[Check Status]] - document - docker/QUICKSTART.md
+- [[Container Won't Start]] - document - docker/QUICKSTART.md
+- [[Firmware setup (ESP32-S3-BOX-3)]] - document - docker/QUICKSTART.md
+- [[Gateway Returns 401 Unauthorized]] - document - docker/QUICKSTART.md
+- [[Graceful Shutdown]] - document - docker/QUICKSTART.md
+- [[Hermes Setup (full profile only)]] - document - docker/QUICKSTART.md
+- [[Launch the Stack]] - document - docker/QUICKSTART.md
+- [[Next Steps]] - document - docker/QUICKSTART.md
+- [[Nuclear Option (Reset Everything)]] - document - docker/QUICKSTART.md
+- [[OpenClaw Not Responding]] - document - docker/QUICKSTART.md
+- [[Prerequisites_1]] - document - docker/QUICKSTART.md
+- [[QUICKSTART]] - document - docker/QUICKSTART.md
+- [[Security Validation]] - document - docker/QUICKSTART.md
+- [[Server-side setup]] - document - docker/QUICKSTART.md
+- [[Setup (One-Time)]] - document - docker/QUICKSTART.md
+- [[Start Everything]] - document - docker/QUICKSTART.md
+- [[Step 1 Add Your API Key]] - document - docker/QUICKSTART.md
+- [[Stop the Stack]] - document - docker/QUICKSTART.md
+- [[Success Criteria]] - document - docker/QUICKSTART.md
+- [[Test the System]] - document - docker/QUICKSTART.md
+- [[Troubleshooting_4]] - document - docker/QUICKSTART.md
+- [[Verify]] - document - docker/QUICKSTART.md
+- [[Verify Isolation]] - document - docker/QUICKSTART.md
+- [[Voice Terminal (optional — ESP32-S3-BOX-3 + Hermes)]] - document - docker/QUICKSTART.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,9 +49,3 @@ members: 22
 TABLE source_file, type FROM #community/Community_238
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 864]]
-
-## Top bridge nodes
-- [[AgentShroud Deployment Architecture]] - degree 8, connects to 1 community

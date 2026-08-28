@@ -1,20 +1,22 @@
 ---
 type: community
+cohesion: 0.29
 members: 7
 ---
 
 # Community 1058
 
+**Cohesion:** 0.29 - loosely connected
 **Members:** 7 nodes
 
 ## Members
-- [[.client()_3]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_install()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_installer_page()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_prerequisites()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_runtimes()]] - code - gateway/tests/test_runtime_engines.py
-- [[Installer must not fake completion SCRUM-107.          The endpoint has no auto]] - rationale - gateway/tests/test_runtime_engines.py
-- [[TestInstallerAPI]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_base64_in_subdomain_flagged()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_enforce_mode_blocks_tunneling()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_hex_encoded_subdomain_flagged()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_high_entropy_subdomain_flagged()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_multiple_long_labels_flagged()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_very_long_subdomain_flagged()]] - code - gateway/tests/test_dns_filter.py
+- [[TestDNSTunnelingDetection]] - code - gateway/tests/test_dns_filter.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,11 +26,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 197]]
-- 1 edge to [[_COMMUNITY_Community 358]]
-- 1 edge to [[_COMMUNITY_Community 647]]
-- 1 edge to [[_COMMUNITY_Community 354]]
-- 1 edge to [[_COMMUNITY_Community 220]]
+- 3 edges to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
+- 1 edge to [[_COMMUNITY_Security Audit & Drift Detection]]
 
 ## Top bridge nodes
-- [[TestInstallerAPI]] - degree 11, connects to 5 communities
+- [[TestDNSTunnelingDetection]] - degree 10, connects to 2 communities

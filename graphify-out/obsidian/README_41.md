@@ -1,12 +1,12 @@
 ---
 source_file: "docker/README.md"
 type: "document"
-community: "Community 190"
+community: "Community 186"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_190
+  - community/Community_186
 ---
 
 # README.md
@@ -19,4 +19,4 @@ tags:
 - [[Network DMZ — IEC 62443 FR5 (SCRUM-93)]] - `references` [EXTRACTED]
 - [[Progressive-Trust Enforcement Mode (SCRUM-78)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_190
+#graphify/document #graphify/EXTRACTED #community/Community_186

@@ -1,14 +1,17 @@
 ---
 type: community
-members: 1
+cohesion: 1.00
+members: 2
 ---
 
 # Community 1664
 
-**Members:** 1 nodes
+**Cohesion:** 1.00 - tightly connected
+**Members:** 2 nodes
 
 ## Members
-- [[browser-fetch package.json]] - document - docker/config/hermes/skills/i-browser/package.json
+- [[CI Workflow]] - code - .github/workflows/ci.yml
+- [[Leak Gate Scoped to ubuntu+3.11]] - rationale - .github/workflows/ci.yml
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,16 +1,18 @@
 ---
 type: community
+cohesion: 0.67
 members: 3
 ---
 
 # Community 1391
 
+**Cohesion:** 0.67 - moderately connected
 **Members:** 3 nodes
 
 ## Members
-- [[SKILL_211]] - document - skills/openclaw/goplaces/SKILL.md
-- [[goplaces]] - document - skills/openclaw/goplaces/SKILL.md
-- [[goplaces CLI]] - concept - skills/openclaw/goplaces/SKILL.md
+- [[FreeRTOS.h]] - code - firmware/voice-terminal/test/test_playback_state/stubs/freertos/FreeRTOS.h
+- [[TickType_t]] - code - firmware/voice-terminal/test/test_playback_state/stubs/freertos/FreeRTOS.h
+- [[xTaskGetTickCount()]] - code - firmware/voice-terminal/test/test_playback_state/stubs/freertos/FreeRTOS.h
 
 ## Live Query (requires Dataview plugin)
 

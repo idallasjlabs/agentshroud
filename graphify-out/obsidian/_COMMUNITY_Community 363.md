@@ -1,32 +1,39 @@
 ---
 type: community
-members: 19
+cohesion: 0.11
+members: 24
 ---
 
 # Community 363
 
-**Members:** 19 nodes
+**Cohesion:** 0.11 - loosely connected
+**Members:** 24 nodes
 
 ## Members
-- [[_container_age_seconds()]] - code - docker/scripts/start-agentshroud.sh
-- [[_dns_warmup_probe()]] - code - docker/scripts/start-agentshroud.sh
-- [[_enforce_sandbox_cap()]] - code - docker/scripts/start-agentshroud.sh
-- [[_model_runtime_ready()]] - code - docker/scripts/start-agentshroud.sh
-- [[_read_hc_secret()]] - code - docker/scripts/start-agentshroud.sh
-- [[_read_secret_file()]] - code - docker/scripts/start-agentshroud.sh
-- [[_reap_exited_sandboxes()]] - code - docker/scripts/start-agentshroud.sh
-- [[_reap_idle_sandboxes()]] - code - docker/scripts/start-agentshroud.sh
-- [[_reconcile_security_critical_cron()]] - code - docker/scripts/start-agentshroud.sh
-- [[_rename_to_meaningful()]] - code - docker/scripts/start-agentshroud.sh
-- [[_slack_channel_id()]] - code - docker/scripts/start-agentshroud.sh
-- [[_slack_send()]] - code - docker/scripts/start-agentshroud.sh
-- [[_telegram_bot_token()_1]] - code - docker/scripts/start-agentshroud.sh
-- [[_telegram_get_me_ready()_1]] - code - docker/scripts/start-agentshroud.sh
-- [[_telegram_send()_1]] - code - docker/scripts/start-agentshroud.sh
-- [[_telegram_send_photo()_1]] - code - docker/scripts/start-agentshroud.sh
-- [[op_proxy_read_with_retry()]] - code - docker/scripts/start-agentshroud.sh
-- [[start-agentshroud.sh]] - code - docker/scripts/start-agentshroud.sh
-- [[start-agentshroud.sh script]] - code - docker/scripts/start-agentshroud.sh
+- [[.__init__()_37]] - code - gateway/proxy/telegram_egress_notify.py
+- [[._api_url()]] - code - gateway/proxy/telegram_egress_notify.py
+- [[._async_send()]] - code - gateway/proxy/telegram_egress_notify.py
+- [[._send_request()]] - code - gateway/proxy/telegram_egress_notify.py
+- [[._token_for()]] - code - gateway/proxy/telegram_egress_notify.py
+- [[.answer_callback()]] - code - gateway/proxy/telegram_egress_notify.py
+- [[.cleanup_expired()]] - code - gateway/proxy/telegram_egress_notify.py
+- [[.edit_decision_message()]] - code - gateway/proxy/telegram_egress_notify.py
+- [[.get_pending_count()]] - code - gateway/proxy/telegram_egress_notify.py
+- [[.handle_callback()]] - code - gateway/proxy/telegram_egress_notify.py
+- [[.notify_pending()]] - code - gateway/proxy/telegram_egress_notify.py
+- [[.send_text()]] - code - gateway/proxy/telegram_egress_notify.py
+- [[Async wrapper around sync Telegram API call.]] - rationale - gateway/proxy/telegram_egress_notify.py
+- [[EgressTelegramNotifier]] - code - gateway/proxy/telegram_egress_notify.py
+- [[Process inline button callback. Returns action result.          Actions allow_1]] - rationale - gateway/proxy/telegram_egress_notify.py
+- [[Remove pending requests older than max_age_seconds. Returns count removed.]] - rationale - gateway/proxy/telegram_egress_notify.py
+- [[Replace the inline keyboard approval message with a decision record.          Re]] - rationale - gateway/proxy/telegram_egress_notify.py
+- [[Return the Telegram bot token to use for a given agent_id.          If the agent]] - rationale - gateway/proxy/telegram_egress_notify.py
+- [[Send Telegram message with time-limited approvedeny buttons.          Buttons]] - rationale - gateway/proxy/telegram_egress_notify.py
+- [[Send a plain text message — public transport for other gateway         component]] - rationale - gateway/proxy/telegram_egress_notify.py
+- [[Send a request to Telegram Bot API (sync, run in executor).]] - rationale - gateway/proxy/telegram_egress_notify.py
+- [[Send answerCallbackQuery to dismiss the button loading state.          Pass ``to]] - rationale - gateway/proxy/telegram_egress_notify.py
+- [[Sends Telegram inline keyboard notifications for egress approval.      Supports]] - rationale - gateway/proxy/telegram_egress_notify.py
+- [[Telegram callback_query TTL expiry logged at DEBUG not ERROR]] - rationale - gateway/tests/test_egress_callback_stale.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,9 +43,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 449]]
-- 1 edge to [[_COMMUNITY_Community 1015]]
-- 1 edge to [[_COMMUNITY_Community 391]]
+- 5 edges to [[_COMMUNITY_Community 916]]
+- 3 edges to [[_COMMUNITY_Community 1095]]
+- 3 edges to [[_COMMUNITY_Community 209]]
+- 2 edges to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
 
 ## Top bridge nodes
-- [[start-agentshroud.sh]] - degree 23, connects to 3 communities
+- [[EgressTelegramNotifier]] - degree 25, connects to 4 communities
+- [[.answer_callback()]] - degree 4, connects to 1 community
+- [[.edit_decision_message()]] - degree 4, connects to 1 community

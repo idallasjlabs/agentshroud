@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "Community 265"
+community: "PII Sanitizer & E2E Tests"
 location: "L4526"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_265
+  - community/PII_Sanitizer__E2E_Tests
 ---
 
 # TestTelegram400Retry
@@ -22,4 +22,4 @@ tags:
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_265
+#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer__E2E_Tests

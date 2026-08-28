@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_injection.py"
 type: "code"
-community: "Community 22"
+community: "Key Vault & Audit Chain"
 location: "L30"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_22
+  - community/Key_Vault__Audit_Chain
 ---
 
 # InjectionAction
@@ -47,4 +47,4 @@ tags:
 - [[test_ws_e_rt2_inbound_encoding.py]] - `imports` [EXTRACTED]
 - [[tool_result_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_22
+#graphify/code #graphify/INFERRED #community/Key_Vault__Audit_Chain

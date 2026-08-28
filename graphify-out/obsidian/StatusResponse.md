@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "Community 344"
+community: "Community 663"
 location: "L161"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_344
+  - community/Community_663
 ---
 
 # StatusResponse
@@ -23,4 +23,4 @@ tags:
 - [[models.py]] - `contains` [EXTRACTED]
 - [[test_enhanced_status.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_344
+#graphify/code #graphify/EXTRACTED #community/Community_663

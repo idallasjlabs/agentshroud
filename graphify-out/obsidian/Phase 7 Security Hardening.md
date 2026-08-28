@@ -1,18 +1,17 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "Community 169"
+community: "Community 99"
 location: "L1001"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_169
+  - community/Community_99
 ---
 
 # Phase 7: Security Hardening
 
 ## Connections
 - [[Added]] - `contains` [EXTRACTED]
-- [[Added_14]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_169
+#graphify/document #graphify/EXTRACTED #community/Community_99

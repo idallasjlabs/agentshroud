@@ -1,24 +1,23 @@
 ---
 type: community
-members: 11
+cohesion: 0.25
+members: 8
 ---
 
 # Community 933
 
-**Members:** 11 nodes
+**Cohesion:** 0.25 - loosely connected
+**Members:** 8 nodes
 
 ## Members
-- [[A real CVE always came from a GHSA advisory, so cve_id implies ghsa_id.]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[CRITICAL GUARD no entry `id` may look like a real CVE id.      This is the load]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[Every `id` must be a zero-padded ASH-OCLAW-NNN  ASH-HERMES-NNN ref.]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[_all_entries()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[cve_id must be either None or a real-looking CVE id — never junk.]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[ghsa_id must be either None or a real-looking GHSA id.]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[test_cve_id_field_only_holds_real_looking_cve_ids()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_entry_with_cve_id_also_has_ghsa_id()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_every_entry_id_is_synthetic_ash_ref()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_ghsa_id_field_only_holds_real_looking_ghsa_ids()]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_no_entry_id_looks_like_a_cve()]] - code - gateway/tests/test_agent_cve_registry.py
+- [[Config Location]] - document - docs/vault/05 - Dependencies/openclaw.md
+- [[Key Intercepted Paths]] - document - docs/vault/05 - Dependencies/openclaw.md
+- [[OpenClaw]] - document - docs/vault/05 - Dependencies/openclaw.md
+- [[Purpose_188]] - document - docs/vault/05 - Dependencies/openclaw.md
+- [[Related Notes_43]] - document - docs/vault/05 - Dependencies/openclaw.md
+- [[Role in AgentShroud]] - document - docs/vault/05 - Dependencies/openclaw.md
+- [[Version Note]] - document - docs/vault/05 - Dependencies/openclaw.md
+- [[openclaw]] - document - docs/vault/05 - Dependencies/openclaw.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,11 +27,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_Community 88]]
+- 1 edge to [[_COMMUNITY_Community 243]]
+- 1 edge to [[_COMMUNITY_Community 339]]
 
 ## Top bridge nodes
-- [[_all_entries()]] - degree 6, connects to 1 community
-- [[test_no_entry_id_looks_like_a_cve()]] - degree 3, connects to 1 community
-- [[test_every_entry_id_is_synthetic_ash_ref()]] - degree 3, connects to 1 community
-- [[test_cve_id_field_only_holds_real_looking_cve_ids()]] - degree 3, connects to 1 community
-- [[test_ghsa_id_field_only_holds_real_looking_ghsa_ids()]] - degree 3, connects to 1 community
+- [[openclaw]] - degree 3, connects to 2 communities

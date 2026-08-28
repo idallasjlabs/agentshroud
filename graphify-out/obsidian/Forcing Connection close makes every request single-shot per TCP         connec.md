@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_hermes_dashboard_bridge.py"
 type: "rationale"
-community: "Community 757"
+community: "Community 756"
 location: "L61"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_757
+  - community/Community_756
 ---
 
 # Forcing Connection: close makes every request single-shot per TCP         connec
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_forces_connection_close_on_plain_request()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_757
+#graphify/rationale #graphify/EXTRACTED #community/Community_756

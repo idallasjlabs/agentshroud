@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cron_jobs_prompts.py"
 type: "code"
-community: "Community 566"
+community: "Community 564"
 location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_566
+  - community/Community_564
 ---
 
 # _collab_jobs()
@@ -18,4 +18,4 @@ tags:
 - [[test_cron_prompts_exclude_short_uids()]] - `calls` [EXTRACTED]
 - [[test_cron_prompts_warn_against_denied_token()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_566
+#graphify/code #graphify/EXTRACTED #community/Community_564

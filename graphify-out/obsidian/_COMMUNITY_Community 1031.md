@@ -1,20 +1,22 @@
 ---
 type: community
+cohesion: 0.52
 members: 7
 ---
 
 # Community 1031
 
+**Cohesion:** 0.52 - moderately connected
 **Members:** 7 nodes
 
 ## Members
-- [[Allowlisted domains (api.openai.com, api.anthropic.com, api.telegram.org, .github.com, etc)]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
-- [[Blocked (403 Forbidden) — all other domains + RFC1918]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
-- [[Bot makes outbound request (any HTTPS connection)]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
-- [[Connection logged (timestamp, domain, allowedblocked, count)]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
-- [[Domain allowlisted (agentshroud.yaml proxy.allowed_domains)]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
-- [[HTTP CONNECT tunnel to gateway8181]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
-- [[HTTP_PROXY set (httpgateway8181)]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
+- [[Apply inline Markdown spans to plain text (no recursive nesting).]] - rationale - docker/bots/hermes/render_md_email.py
+- [[_esc()]] - code - docker/bots/hermes/render_md_email.py
+- [[_inline()]] - code - docker/bots/hermes/render_md_email.py
+- [[_render_table()]] - code - docker/bots/hermes/render_md_email.py
+- [[main()_4]] - code - docker/bots/hermes/render_md_email.py
+- [[render()]] - code - docker/bots/hermes/render_md_email.py
+- [[render_md_email.py]] - code - docker/bots/hermes/render_md_email.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,3 +24,9 @@ members: 7
 TABLE source_file, type FROM #community/Community_1031
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 1097]]
+
+## Top bridge nodes
+- [[render_md_email.py]] - degree 6, connects to 1 community

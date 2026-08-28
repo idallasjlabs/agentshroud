@@ -1,51 +1,53 @@
 ---
 type: community
+cohesion: 0.12
 members: 38
 ---
 
 # Community 177
 
+**Cohesion:** 0.12 - loosely connected
 **Members:** 38 nodes
 
 ## Members
-- [[.__call__()_9]] - code - gateway/tests/test_rate_limit_guard.py
-- [[.__init__()_111]] - code - gateway/security/rate_limit_guard.py
-- [[.__init__()_178]] - code - gateway/tests/test_rate_limit_guard.py
-- [[._burst_limit()]] - code - gateway/security/rate_limit_guard.py
-- [[._sustained_limit()]] - code - gateway/security/rate_limit_guard.py
-- [[.advance()]] - code - gateway/tests/test_rate_limit_guard.py
-- [[.check()_6]] - code - gateway/security/rate_limit_guard.py
-- [[.get_stats()_19]] - code - gateway/security/rate_limit_guard.py
-- [[Adaptive per-agent  per-tool sliding-window rate limiter with burst detection.]] - rationale - gateway/security/rate_limit_guard.py
-- [[Build a SecurityPipeline with only the guards needed to exercise the     RateLim]] - rationale - gateway/tests/test_rate_limit_guard.py
-- [[Configuration for class`RateLimitGuard`.      All windows are per (agent_id, t]] - rationale - gateway/security/rate_limit_guard.py
-- [[FakeClock]] - code - gateway/tests/test_rate_limit_guard.py
-- [[No injected clock the guard falls back to time.monotonic and still works.]] - rationale - gateway/tests/test_rate_limit_guard.py
-- [[RateLimitConfig]] - code - gateway/security/rate_limit_guard.py
-- [[RateLimitDecision]] - code - gateway/security/rate_limit_guard.py
-- [[RateLimitGuard]] - code - gateway/security/rate_limit_guard.py
-- [[Record one request for (agent_id, tool) and decide allowblock.          Fail-cl]] - rationale - gateway/security/rate_limit_guard.py
-- [[Structured verdict returned by meth`RateLimitGuard.check`.]] - rationale - gateway/security/rate_limit_guard.py
-- [[_make_pipeline()_3]] - code - gateway/tests/test_rate_limit_guard.py
-- [[clock()]] - code - gateway/tests/test_rate_limit_guard.py
-- [[config-off equivalence absent guard leaves inbound behaviour identical.]] - rationale - gateway/tests/test_rate_limit_guard.py
-- [[rate_limit_guard.py]] - code - gateway/security/rate_limit_guard.py
-- [[test_burst_clears_after_burst_window()]] - code - gateway/tests/test_rate_limit_guard.py
-- [[test_burst_detection_blocks()]] - code - gateway/tests/test_rate_limit_guard.py
-- [[test_default_clock_is_monotonic()]] - code - gateway/tests/test_rate_limit_guard.py
-- [[test_disabled_never_blocks()_1]] - code - gateway/tests/test_rate_limit_guard.py
-- [[test_fail_closed_on_internal_error()]] - code - gateway/tests/test_rate_limit_guard.py
-- [[test_limits_are_per_agent()]] - code - gateway/tests/test_rate_limit_guard.py
-- [[test_limits_are_per_tool()]] - code - gateway/tests/test_rate_limit_guard.py
-- [[test_per_tool_override()]] - code - gateway/tests/test_rate_limit_guard.py
-- [[test_pipeline_blocks_and_downstream_not_reached()_1]] - code - gateway/tests/test_rate_limit_guard.py
-- [[test_pipeline_disabled_guard_passthrough()]] - code - gateway/tests/test_rate_limit_guard.py
-- [[test_pipeline_no_guard_is_unchanged()_1]] - code - gateway/tests/test_rate_limit_guard.py
-- [[test_rate_limit_guard.py]] - code - gateway/tests/test_rate_limit_guard.py
-- [[test_stats_counts_blocks()]] - code - gateway/tests/test_rate_limit_guard.py
-- [[test_sustained_limit_blocks_on_overflow()]] - code - gateway/tests/test_rate_limit_guard.py
-- [[test_under_limit_allows()]] - code - gateway/tests/test_rate_limit_guard.py
-- [[test_window_slides_and_allows_again()]] - code - gateway/tests/test_rate_limit_guard.py
+- [[._call()]] - code - gateway/tests/test_generate_cve_page.py
+- [[._call()_1]] - code - gateway/tests/test_generate_cve_page.py
+- [[._run_generate()]] - code - gateway/tests/test_generate_cve_page.py
+- [[.test_all_four_sentinel_pairs_present()]] - code - gateway/tests/test_generate_cve_page.py
+- [[.test_all_mitigated_only_when_no_under_review()]] - code - gateway/tests/test_generate_cve_page.py
+- [[.test_cve_row_contains_id_and_title()]] - code - gateway/tests/test_generate_cve_page.py
+- [[.test_generate_returns_false_when_no_change()]] - code - gateway/tests/test_generate_cve_page.py
+- [[.test_generate_returns_true_when_changed()]] - code - gateway/tests/test_generate_cve_page.py
+- [[.test_hermes_all_mitigated()]] - code - gateway/tests/test_generate_cve_page.py
+- [[.test_hermes_h2_correct()]] - code - gateway/tests/test_generate_cve_page.py
+- [[.test_hermes_markers_and_tbody_id()]] - code - gateway/tests/test_generate_cve_page.py
+- [[.test_legacy_fallback_openclaw_only()]] - code - gateway/tests/test_generate_cve_page.py
+- [[.test_no_stale_hermes_markers()]] - code - gateway/tests/test_generate_cve_page.py
+- [[.test_no_stale_openclaw_markers()]] - code - gateway/tests/test_generate_cve_page.py
+- [[.test_open_status_phrase()]] - code - gateway/tests/test_generate_cve_page.py
+- [[.test_openclaw_all_mitigated()]] - code - gateway/tests/test_generate_cve_page.py
+- [[.test_openclaw_h2_correct()]] - code - gateway/tests/test_generate_cve_page.py
+- [[.test_openclaw_markers_and_tbody_id()]] - code - gateway/tests/test_generate_cve_page.py
+- [[.test_pagination_js_uses_unique_prefix()]] - code - gateway/tests/test_generate_cve_page.py
+- [[.test_partial_status_phrase()]] - code - gateway/tests/test_generate_cve_page.py
+- [[.test_under_review_badge_rendered()]] - code - gateway/tests/test_generate_cve_page.py
+- [[.test_under_review_in_heading_not_all_mitigated()]] - code - gateway/tests/test_generate_cve_page.py
+- [[.test_under_review_none_cvss_renders_dash()]] - code - gateway/tests/test_generate_cve_page.py
+- [[.test_zero_cves()]] - code - gateway/tests/test_generate_cve_page.py
+- [[Path_29]] - code - gateway/tests/test_generate_cve_page.py
+- [[Return the generate-cve-page module (already loaded above).]] - rationale - gateway/tests/test_generate_cve_page.py
+- [[TestBuildHeading]] - code - gateway/tests/test_generate_cve_page.py
+- [[TestBuildTable]] - code - gateway/tests/test_generate_cve_page.py
+- [[TestGenerate]] - code - gateway/tests/test_generate_cve_page.py
+- [[When list_cve_agents is not available, OpenClaw section is still generated.]] - rationale - gateway/tests/test_generate_cve_page.py
+- [[When some advisories are under_review the heading is honest, NOT 'all mitigated']] - rationale - gateway/tests/test_generate_cve_page.py
+- [[Write a fake index.html, invoke generate(), return updated HTML.]] - rationale - gateway/tests/test_generate_cve_page.py
+- [[_build_heading returns correct H2 text and sentinel markers.]] - rationale - gateway/tests/test_generate_cve_page.py
+- [[_build_table returns correct sentinel markers and unique element ids.]] - rationale - gateway/tests/test_generate_cve_page.py
+- [[_get_mod()]] - code - gateway/tests/test_generate_cve_page.py
+- [[_make_cve()]] - code - gateway/tests/test_generate_cve_page.py
+- [[generate() rewrites index.html with correct sections for both agents.]] - rationale - gateway/tests/test_generate_cve_page.py
+- [[test_generate_cve_page.py]] - code - gateway/tests/test_generate_cve_page.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -55,14 +57,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 6]]
-- 4 edges to [[_COMMUNITY_Community 22]]
-- 2 edges to [[_COMMUNITY_Community 109]]
-- 1 edge to [[_COMMUNITY_Community 75]]
+- 2 edges to [[_COMMUNITY_Community 380]]
 
 ## Top bridge nodes
-- [[RateLimitGuard]] - degree 26, connects to 2 communities
-- [[_make_pipeline()_3]] - degree 6, connects to 2 communities
-- [[test_pipeline_no_guard_is_unchanged()_1]] - degree 4, connects to 2 communities
-- [[test_rate_limit_guard.py]] - degree 22, connects to 1 community
-- [[RateLimitConfig]] - degree 21, connects to 1 community
+- [[test_generate_cve_page.py]] - degree 7, connects to 1 community

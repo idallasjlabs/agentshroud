@@ -1,0 +1,286 @@
+---
+type: community
+cohesion: 0.02
+members: 215
+---
+
+# Adversarial Injection Guards
+
+**Cohesion:** 0.02 - loosely connected
+**Members:** 215 nodes
+
+## Members
+- [[._active_bot_id()]] - code - gateway/proxy/telegram_proxy.py
+- [[._active_send_token()]] - code - gateway/proxy/telegram_proxy.py
+- [[._answer_callback_query()]] - code - gateway/proxy/telegram_proxy.py
+- [[._apply_outbound_status_notices()]] - code - gateway/proxy/telegram_proxy.py
+- [[._bot_is_mentioned()]] - code - gateway/proxy/telegram_proxy.py
+- [[._build_collaborator_safe_info_response()]] - code - gateway/proxy/telegram_proxy.py
+- [[._collaborator_rate_limit_retry_after_seconds()]] - code - gateway/proxy/telegram_proxy.py
+- [[._contains_internal_approval_banner()]] - code - gateway/proxy/telegram_proxy.py
+- [[._contains_legacy_block_notice()]] - code - gateway/proxy/telegram_proxy.py
+- [[._edit_telegram_message()]] - code - gateway/proxy/telegram_proxy.py
+- [[._enforce_group_workspace_access()]] - code - gateway/proxy/telegram_proxy.py
+- [[._extract_first_egress_target()]] - code - gateway/proxy/telegram_proxy.py
+- [[._extract_owner_target()]] - code - gateway/proxy/telegram_proxy.py
+- [[._extract_owner_target_resolved()]] - code - gateway/proxy/telegram_proxy.py
+- [[._filter_inbound_updates()]] - code - gateway/proxy/telegram_proxy.py
+- [[._forward_file_download()]] - code - gateway/proxy/telegram_proxy.py
+- [[._forward_to_telegram()]] - code - gateway/proxy/telegram_proxy.py
+- [[._get_user_projects()]] - code - gateway/proxy/telegram_proxy.py
+- [[._group_workspace_manager()]] - code - gateway/proxy/telegram_proxy.py
+- [[._is_group_message()]] - code - gateway/proxy/telegram_proxy.py
+- [[._is_immune()]] - code - gateway/proxy/telegram_proxy.py
+- [[._is_no_reply_token()]] - code - gateway/proxy/telegram_proxy.py
+- [[._is_suppressed_outbound_payload()]] - code - gateway/proxy/telegram_proxy.py
+- [[._is_valid_domain_name()]] - code - gateway/proxy/telegram_proxy.py
+- [[._is_within_project_scope()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_allowlist_bypass_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_approval_action_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_approval_queue_probe()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_approval_token_probe()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_archive_exfil_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_collaborator_privacy_query()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_command_enumeration_query()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_cross_tenant_data_probe()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_cross_user_messaging_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_encoded_exfil_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_env_secret_probe()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_execution_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_file_metadata_question()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_file_query()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_filename_reference()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_guardrail_modification_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_hidden_channel_exfil_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_hypothetical_execution_question()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_identity_enumeration_query()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_incremental_exfil_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_internal_network_probe()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_log_access_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_memory_access_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_metadata_endpoint_probe()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_model_status_question()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_model_switch_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_obfuscated_command_probe()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_pairing_or_access_probe()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_path_traversal_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_plugin_discovery_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_policy_bypass_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_safe_collaborator_info_query()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_scheduler_or_autorun_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_secret_value_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_sensitive_path_probe()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_service_control_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_system_prompt_probe()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_tool_payload_text()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_tool_trace_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_unicode_obfuscation_bypass_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_unsafe_scheme_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_web_access_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._matches_presence_probe()]] - code - gateway/proxy/telegram_proxy.py
+- [[._mirror_to_owner_if_collaborator()]] - code - gateway/proxy/telegram_proxy.py
+- [[._normalize_command_token()]] - code - gateway/proxy/telegram_proxy.py
+- [[._notify_collaborator_command_blocked()]] - code - gateway/proxy/telegram_proxy.py
+- [[._proxy_request_impl()]] - code - gateway/proxy/telegram_proxy.py
+- [[._quarantine_blocked_message()]] - code - gateway/proxy/telegram_proxy.py
+- [[._queue_collaborator_access_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._resolve_collaborator_mode()]] - code - gateway/proxy/telegram_proxy.py
+- [[._resolve_display_name()]] - code - gateway/proxy/telegram_proxy.py
+- [[._resolve_pending_username_target()]] - code - gateway/proxy/telegram_proxy.py
+- [[._resolve_text_field()]] - code - gateway/proxy/telegram_proxy.py
+- [[._send_collaborator_pending_notice()]] - code - gateway/proxy/telegram_proxy.py
+- [[._send_collaborator_safe_info_response()]] - code - gateway/proxy/telegram_proxy.py
+- [[._send_disclosure()]] - code - gateway/proxy/telegram_proxy.py
+- [[._send_local_healthcheck_notice()]] - code - gateway/proxy/telegram_proxy.py
+- [[._send_local_help_notice()]] - code - gateway/proxy/telegram_proxy.py
+- [[._send_local_model_notice()]] - code - gateway/proxy/telegram_proxy.py
+- [[._send_local_notice_with_fallback()]] - code - gateway/proxy/telegram_proxy.py
+- [[._send_local_start_notice()]] - code - gateway/proxy/telegram_proxy.py
+- [[._send_local_status_notice()]] - code - gateway/proxy/telegram_proxy.py
+- [[._send_local_whoami_notice()]] - code - gateway/proxy/telegram_proxy.py
+- [[._send_owner_activity_notice()]] - code - gateway/proxy/telegram_proxy.py
+- [[._send_owner_collabs_notice()]] - code - gateway/proxy/telegram_proxy.py
+- [[._send_owner_pending_notice()]] - code - gateway/proxy/telegram_proxy.py
+- [[._send_rate_limit_notice()]] - code - gateway/proxy/telegram_proxy.py
+- [[._send_stranger_rate_limit_notice()]] - code - gateway/proxy/telegram_proxy.py
+- [[._send_telegram_text()]] - code - gateway/proxy/telegram_proxy.py
+- [[._send_telegram_with_keyboard()]] - code - gateway/proxy/telegram_proxy.py
+- [[._strip_json_fence()]] - code - gateway/proxy/telegram_proxy.py
+- [[._suppress_duplicate_system_notice()]] - code - gateway/proxy/telegram_proxy.py
+- [[._teams_config()]] - code - gateway/proxy/telegram_proxy.py
+- [[._telegram_create_invite_link()]] - code - gateway/proxy/telegram_proxy.py
+- [[._telegram_kick_member()]] - code - gateway/proxy/telegram_proxy.py
+- [[._trigger_web_fetch_approval()]] - code - gateway/proxy/telegram_proxy.py
+- [[._username_for_bot()]] - code - gateway/proxy/telegram_proxy.py
+- [[.get_stats()_9]] - code - gateway/proxy/telegram_proxy.py
+- [[.proxy_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[.test_url_encoded_payload_normalized()]] - code - gateway/tests/test_adversarial_injection.py
+- [[.test_zero_width_space_stripped()]] - code - gateway/tests/test_adversarial_injection.py
+- [[Allow conceptual securityprocess questions that don't request executiondata ac]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Best-effort Telegram sender with bounded retries.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Best-effort check to avoid treating local file names as egress domains.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Best-effort guardrail collaborator prompts requesting direct file access.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Build a GroupWorkspaceManager from current teamsRBAC config.          Returns a]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Build informative but non-sensitive response for collaborator conceptual questio]] - rationale - gateway/proxy/telegram_proxy.py
+- [[CollaboratorActivityTracker.record_activity]] - code - gateway/security/collaborator_tracker.py
+- [[Create a single-use invite link for a Telegram group. Returns URL or None.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect chunkedpartial extraction prompts intended to bypass output controls.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator probes asking for direct commandtool inventories.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts asking about other userssessionsidentities.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts asking for raw secrettokenpassword values.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts asking to bypass controls via unicodeinvisible tric]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts asking to bypassdisable approvals or protections.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts asking to decodedeobfuscate and execute commands.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts attempting cross-tenantworkspace data access.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts attempting ownercollaborator identity disclosure.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts attempting path traversal style file access.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts attempting scheduledautomatic task execution.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts attempting securityconfig guardrail changes.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts attempting servicecontainer lifecycle control.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts attempting to approvedeny queued actions.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts probing sensitive filesystem pathssecrets.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts requesting archivebulk export of internal content.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts requesting direct memory contentsearch access.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts requesting direct systemaudit log contents.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts requesting environment variablesecret listings.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts requesting external webnetwork fetch behavior.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts requesting pairingaccess bootstrap artifacts.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts requesting plugintool auto-discovery inventory.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts requesting raw tool tracesargumentsresults.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts requesting system promptagent instruction leakage.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts targeting cloud metadata endpoints.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts targeting localinternal network hosts.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts trying to bypass domain allowlistegress policy.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts trying to inspect approval queue internalsmetadata.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts trying to obtaincraft approval callback tokens.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts trying to switch runtime modelprovider configuratio]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator requests to run commands or perform direct execution.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator requests using disallowed URL schemes.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect conceptual file-purpose questions without direct content requests.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect internal approvalegress banner text that must remain owner-only.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect legacy bracket-style block notices for collaborator normalization.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect plain NO_REPLY sentinel with light punctuation wrapping.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect plain-language model status questions for deterministic local reply.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect policy questions about execution behavior (not actual execution asks).]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect rawembedded tool payload text in user input.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect requests to encode sensitiveinternal content for exfiltration.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect requests to extract hidden-channel content from sensitiveinternal source]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Dismiss the Telegram inline button spinner with a brief toast.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Edit an existing Telegram message in-place (removes inline keyboard too).]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Encoding bypass variants — validates InputNormalizer multi-pass decode.]] - rationale - gateway/tests/test_adversarial_injection.py
+- [[Estimate seconds until collaborator rate limit window opens again.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Extract first outbound web target (URL or bare domain) for egress preflight.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Fail-closed member check for a group-context inbound message.          Returns T]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Forward a Telegram file download and return a raw-binary sentinel dict.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Forward request to real Telegram API and return parsed response.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Kick (ban + unban) a user from a Telegram group. Returns True on success.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Map internal statuspolicy texts to user-safe replacement notices.          Pure]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Normalize first command token so small obfuscations don't bypass local handlers.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Normalize input text to defeat encoding-based evasion.      Applied before all s]] - rationale - gateway/security/input_normalizer.py
+- [[Notify a collaborator that a privileged command is not available.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Notify a collaborator they have exceeded the hourly rate limit.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Notify an unknownunapproved user they have exceeded the access request rate lim]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Parse owner command target as numeric id or known collaborator alias.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Per-request bot token for gateway-originated Telegram sends.          Returns th]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Per-request bot_id for activity tracking.          Returns the bot_id set by pro]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Persist blocked inbound messages for admin review.          Also records the blo]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Proxies Telegram Bot API calls through the security pipeline.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Proxy a single Telegram API request.          For getUpdates responses scan eac]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Queue an interactive egress approval when raw web_fetch JSON leaks.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Queue owner approval request for unknownrevoked users.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Resolve a readable label for user id when available.          Priority user sel]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Resolve effective collaboration mode for a user.          Resolution order]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Resolve owner target from pending-request username aliases (e.g., approve ana).]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Resolve target by id, static alias, or pending username alias.          Resoluti]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Return (field_name, text_value) for Telegram-style outbound payloads.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Return TeamsConfig from app_state if available.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Return True if message originates from a group or supergroup chat.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Return True if text has any keyword overlap with the user's project focus_topics]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Return True if the bot is @mentioned or a bot_command targets this bot.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Return True if user_id has active (non-expired) immunity.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Return True when ``text`` is a bare liveness-check phrase.          Strips a lea]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Return list of ProjectConfig objects for this user, or empty list.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Return the @username (without @) for the given bot_id.          Looks up ``_bot_]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Scan inbound messages from getUpdates for security threats.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Send a Telegram message with an inline keyboard.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Send a rate-limited activity mirror to the owner chat for collaborator messages.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Send deterministic help command list without model invocation.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Send deterministic start notice without model invocation.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Send deterministic status summary without model invocation.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Send deterministic gateway health status without model invocation.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Send deterministic identityrole notice to simplify approval workflows.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Send deterministic model status without model invocation.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Send deterministic owner pending-approval snapshot.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Send deterministic pending-approval notice to unknownrevoked users.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Send local command response with deterministic fallback text.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Send owner a summary of recent collaborator activity (last hour).]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Send owner-friendly collaborator roster with known labels.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Send tailored safe informational response for collaborator conceptual query.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Send the one-time collaborator disclosure notice.          Picks the appropriate]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Strip optional markdown json fences around model output.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Suppress repeated startupshutdown system notices in short windows.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[TelegramAPIProxy]] - code - gateway/proxy/telegram_proxy.py
+- [[TestEncodingBypass]] - code - gateway/tests/test_adversarial_injection.py
+- [[Thin wrapper sets per-request bot identity in contextvars so local replies]] - rationale - gateway/proxy/telegram_proxy.py
+- [[True when filtered payload should be dropped instead of forwarded.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Validate normalized domain labels to avoid malformed allowlist entries.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[normalize_input()]] - code - gateway/security/input_normalizer.py
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/Adversarial_Injection_Guards
+SORT file.name ASC
+```
+
+## Connections to other communities
+- 53 edges to [[_COMMUNITY_Community 70]]
+- 19 edges to [[_COMMUNITY_Community 49]]
+- 13 edges to [[_COMMUNITY_Community 60]]
+- 12 edges to [[_COMMUNITY_Community 47]]
+- 11 edges to [[_COMMUNITY_Community 57]]
+- 10 edges to [[_COMMUNITY_Community 52]]
+- 9 edges to [[_COMMUNITY_Community 18]]
+- 9 edges to [[_COMMUNITY_PII Sanitizer & E2E Tests]]
+- 5 edges to [[_COMMUNITY_Community 115]]
+- 5 edges to [[_COMMUNITY_Community 31]]
+- 5 edges to [[_COMMUNITY_Community 91]]
+- 4 edges to [[_COMMUNITY_Community 24]]
+- 4 edges to [[_COMMUNITY_Telegram Proxy Inbound]]
+- 4 edges to [[_COMMUNITY_Community 17]]
+- 3 edges to [[_COMMUNITY_RBAC & SOC Realtime]]
+- 3 edges to [[_COMMUNITY_Community 509]]
+- 3 edges to [[_COMMUNITY_SOC Collaborators]]
+- 2 edges to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
+- 2 edges to [[_COMMUNITY_Community 96]]
+- 2 edges to [[_COMMUNITY_Community 82]]
+- 2 edges to [[_COMMUNITY_Community 198]]
+- 1 edge to [[_COMMUNITY_Ingest API & Approval Routes]]
+- 1 edge to [[_COMMUNITY_Community 148]]
+- 1 edge to [[_COMMUNITY_Community 20]]
+- 1 edge to [[_COMMUNITY_Community 88]]
+- 1 edge to [[_COMMUNITY_Community 815]]
+- 1 edge to [[_COMMUNITY_Community 38]]
+- 1 edge to [[_COMMUNITY_Community 546]]
+- 1 edge to [[_COMMUNITY_Community 510]]
+- 1 edge to [[_COMMUNITY_Community 871]]
+- 1 edge to [[_COMMUNITY_Community 451]]
+- 1 edge to [[_COMMUNITY_Community 239]]
+- 1 edge to [[_COMMUNITY_Community 486]]
+- 1 edge to [[_COMMUNITY_Community 434]]
+- 1 edge to [[_COMMUNITY_Community 693]]
+- 1 edge to [[_COMMUNITY_Community 408]]
+- 1 edge to [[_COMMUNITY_Community 336]]
+- 1 edge to [[_COMMUNITY_Community 80]]
+- 1 edge to [[_COMMUNITY_Community 591]]
+- 1 edge to [[_COMMUNITY_Community 816]]
+- 1 edge to [[_COMMUNITY_Community 775]]
+- 1 edge to [[_COMMUNITY_Community 30]]
+- 1 edge to [[_COMMUNITY_Community 862]]
+
+## Top bridge nodes
+- [[TelegramAPIProxy]] - degree 248, connects to 37 communities
+- [[normalize_input()]] - degree 80, connects to 7 communities
+- [[._filter_inbound_updates()]] - degree 87, connects to 5 communities
+- [[._send_telegram_text()]] - degree 11, connects to 2 communities
+- [[TestEncodingBypass]] - degree 9, connects to 2 communities

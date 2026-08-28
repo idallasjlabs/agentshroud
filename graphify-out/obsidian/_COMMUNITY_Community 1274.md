@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1274
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[Isaiah's Persona Package (IDENTITY.mdSOUL.mdUSER.md)]] - concept - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[Owner vs Bot Telegram Identity Separation]] - concept - docs/architecture/IDENTITY.md
-- [[Slack Socket Mode Integration Architecture]] - concept - docs/setup-slack.md
-- [[Telegram Bot Setup (BotFather token + gateway config)]] - concept - docs/setup-telegram.md
-- [[Trust-Differentiated Processing (RBAC tiers)]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[.test_installed_not_running_is_clean_note()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_not_installed_not_running()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_running_with_alerts_sets_timestamp()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_running_without_alert_dir()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestFalcoSummary]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,7 +24,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 552]]
+- 1 edge to [[_COMMUNITY_Community 288]]
+- 1 edge to [[_COMMUNITY_Community 193]]
 
 ## Top bridge nodes
-- [[Trust-Differentiated Processing (RBAC tiers)]] - degree 2, connects to 1 community
+- [[TestFalcoSummary]] - degree 5, connects to 1 community
+- [[.test_installed_not_running_is_clean_note()]] - degree 2, connects to 1 community

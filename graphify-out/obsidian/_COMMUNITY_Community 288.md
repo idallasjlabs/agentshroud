@@ -1,40 +1,43 @@
 ---
 type: community
-members: 27
+cohesion: 0.07
+members: 28
 ---
 
 # Community 288
 
-**Members:** 27 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 28 nodes
 
 ## Members
-- [[Guardrails_3]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Invocation_1]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Jira ticket — every development batch gets one]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Mode A — Single task]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Mode B — Comprehensive review sweep]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Reviewers and fixer available to you]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Role_14]] - document - .agents/skills/i-hdev/SKILL.md
-- [[SKILL_23]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Skill Hermes Dev Workflow (HDEV)]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Step 1 — One branch + worktree for the whole sweep]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Step 1 — Sync and confirm clean state]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Step 10 — Notify the owner]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Step 11 — Merge (only on explicit owner instruction)]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Step 12 — Clean up]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Step 2 — Create a branch + worktree]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Step 2 — Work through directories one at a time]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Step 2b — Create the Jira ticket]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Step 3 — After the last directory (or a natural stopping point)]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Step 3 — Write and edit code]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Step 4 — Test and lint]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Step 5 — Multi-LLM review]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Step 6 — Build and validate containers]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Step 7 — Update documentation and website]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Step 8 — Update the knowledge graph]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Step 9 — Push and open the PR]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Step 9b — Update the Jira ticket with the PR link]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Tools you have for this workflow]] - document - .agents/skills/i-hdev/SKILL.md
+- [[._build_modules()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_all_pillars_scores_five()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_all_scorers_optimizing_with_full_stack()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_all_scorers_zero_without_modules_or_state()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_bare_environment()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_baseline_only()_1]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_baseline_only()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_full_stack()_2]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_full_stack()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_full_stack_with_review_evidence()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_import_failure_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_missing_rbac_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_rich_environment()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_true_and_false_against_real_app_state()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[Redirect every Path(...) constructed inside the module into a sandbox.      Abso]] - rationale - gateway/tests/test_scanner_integration_coverage.py
+- [[Replace _app_state_has with a controllable membership set.]] - rationale - gateway/tests/test_scanner_integration_coverage.py
+- [[Replace shutil.which with a controllable name → path mapping.]] - rationale - gateway/tests/test_scanner_integration_coverage.py
+- [[TestAccessControl_1]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestAgenticScorers]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestAppStateHas]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestComputeScorecard_1]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestDataConfidentiality]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestIncidentResponse]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestLoggingMonitoring]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[flags()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[fs()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[test_scanner_integration_coverage.py]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[tools()]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -42,3 +45,39 @@ members: 27
 TABLE source_file, type FROM #community/Community_288
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 14 edges to [[_COMMUNITY_Community 193]]
+- 4 edges to [[_COMMUNITY_Community 475]]
+- 2 edges to [[_COMMUNITY_Community 410]]
+- 2 edges to [[_COMMUNITY_Community 920]]
+- 2 edges to [[_COMMUNITY_Community 967]]
+- 1 edge to [[_COMMUNITY_Community 32]]
+- 1 edge to [[_COMMUNITY_Community 1425]]
+- 1 edge to [[_COMMUNITY_Community 1272]]
+- 1 edge to [[_COMMUNITY_Community 1273]]
+- 1 edge to [[_COMMUNITY_Community 1127]]
+- 1 edge to [[_COMMUNITY_Community 1426]]
+- 1 edge to [[_COMMUNITY_Community 1274]]
+- 1 edge to [[_COMMUNITY_Community 1351]]
+- 1 edge to [[_COMMUNITY_Community 1275]]
+- 1 edge to [[_COMMUNITY_Community 1427]]
+- 1 edge to [[_COMMUNITY_Community 1276]]
+- 1 edge to [[_COMMUNITY_Community 1352]]
+- 1 edge to [[_COMMUNITY_Community 1428]]
+- 1 edge to [[_COMMUNITY_Community 1277]]
+- 1 edge to [[_COMMUNITY_Community 1128]]
+- 1 edge to [[_COMMUNITY_Community 1353]]
+- 1 edge to [[_COMMUNITY_Community 1429]]
+- 1 edge to [[_COMMUNITY_Community 1354]]
+- 1 edge to [[_COMMUNITY_Community 1278]]
+- 1 edge to [[_COMMUNITY_Community 1279]]
+- 1 edge to [[_COMMUNITY_Community 1355]]
+- 1 edge to [[_COMMUNITY_Community 1280]]
+
+## Top bridge nodes
+- [[test_scanner_integration_coverage.py]] - degree 50, connects to 27 communities
+- [[._build_modules()]] - degree 3, connects to 1 community
+- [[.test_full_stack_with_review_evidence()]] - degree 2, connects to 1 community
+- [[.test_rich_environment()]] - degree 2, connects to 1 community
+- [[.test_full_stack()_2]] - degree 2, connects to 1 community

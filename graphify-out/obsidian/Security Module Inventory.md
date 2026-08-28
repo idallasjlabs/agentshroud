@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-architecture.md"
 type: "document"
-community: "Community 276"
+community: "Community 275"
 location: "L53"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_276
+  - community/Community_275
 ---
 
 # Security Module Inventory
@@ -21,4 +21,4 @@ tags:
 - [[Layer 6 Data Security (4 Modules)]] - `contains` [EXTRACTED]
 - [[Layer 7 Application Security (2 Modules)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_276
+#graphify/document #graphify/EXTRACTED #community/Community_275

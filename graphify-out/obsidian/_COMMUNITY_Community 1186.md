@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1186
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[Data Validation (DATA-VAL)_1]] - document - docker/config/hermes/skills/i-data/README.md
-- [[Purpose_46]] - document - docker/config/hermes/skills/i-data/README.md
-- [[README_51]] - document - docker/config/hermes/skills/i-data/README.md
-- [[Related Skills_49]] - document - docker/config/hermes/skills/i-data/README.md
-- [[Usage_52]] - document - docker/config/hermes/skills/i-data/README.md
+- [[Purpose_51]] - document - docker/config/hermes/skills/i-mac/README.md
+- [[README_56]] - document - docker/config/hermes/skills/i-mac/README.md
+- [[Related Skills_54]] - document - docker/config/hermes/skills/i-mac/README.md
+- [[Usage_57]] - document - docker/config/hermes/skills/i-mac/README.md
+- [[macOS System Administrator (MAC)_1]] - document - docker/config/hermes/skills/i-mac/README.md
 
 ## Live Query (requires Dataview plugin)
 

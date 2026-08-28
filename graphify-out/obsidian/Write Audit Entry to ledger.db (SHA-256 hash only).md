@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-14-logic-flow.svg"
 type: "concept"
-community: "Community 853"
+community: "Community 854"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_853
+  - community/Community_854
 ---
 
 # Write audit entry to ledger.db (SHA-256 hash only)
@@ -14,4 +14,4 @@ tags:
 - [[Execute action via HTTP CONNECT proxy]] - `calls` [EXTRACTED]
 - [[Response delivered to user]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_853
+#graphify/concept #graphify/EXTRACTED #community/Community_854

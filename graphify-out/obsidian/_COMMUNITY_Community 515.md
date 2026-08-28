@@ -1,31 +1,32 @@
 ---
 type: community
-members: 18
+cohesion: 0.13
+members: 17
 ---
 
 # Community 515
 
-**Members:** 18 nodes
+**Cohesion:** 0.13 - loosely connected
+**Members:** 17 nodes
 
 ## Members
-- [[.test_default_collab_outbound_still_blocked_by_leakage_filter()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_default_disclosure_text()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_full_access_collaborator_passes_despite_middleware_block()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_full_access_collaborator_passes_despite_multi_turn_middleware_block_without_interrogative()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_full_access_disclosure_text()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_full_access_outbound_not_blocked_by_leakage_filter()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_per_user_mode_override_controls_outbound_filter()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_project_scoped_collaborator_still_blocked_by_middleware()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[Middleware block must be bypassed for full_access collaborators.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Per-user mode override is respected by the outbound filter.          A collabora]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[TestFullAccessMiddlewareBypass]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[full_access bypass applies even when the message has no interrogative marker.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[full_access collaborator must receive the general-access disclosure message.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[full_access collaborator outbound must pass through even when leakage filter wou]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[full_access collaborators must pass through middleware and secondary pipeline bl]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[local_only collaborator must receive the restricted-scope disclosure message.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[local_only collaborators must still be blocked by the leakage filter.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[project_scoped collaborators are still blocked when middleware blocks (non-multi]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[AWS Cloud Management & FinOps Agent_2]] - document - .agents/skills/i-aws/SKILL.md
+- [[AWS Cloud Management & FinOps README]] - document - .agents/skills/i-aws/README.md
+- [[Audit Branch (Merge Regression Detection)]] - document - .agents/skills/i-ab/SKILL.md
+- [[CDAS — Central Data Acquisition Systems]] - concept - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Cross-Account & Future Proofing]] - document - .agents/skills/i-aws/SKILL.md
+- [[Expertise]] - document - .agents/skills/i-aws/SKILL.md
+- [[FODL — Fluence Operational Data Lakehouse]] - concept - docker/config/hermes/skills/i-aws/SKILL.md
+- [[FY26 40% Cost Reduction Target]] - rationale - .agents/skills/i-aws/SKILL.md
+- [[FY26 Cost Reduction Plan (40% target)]] - concept - docker/config/hermes/skills/i-aws/SKILL.md
+- [[GSDE&G Team]] - concept - .agents/skills/i-aws/SKILL.md
+- [[GSDL-715 (Merge Regression Ticket)]] - concept - .agents/skills/i-ab/SKILL.md
+- [[Guardrails_1]] - document - .agents/skills/i-aws/SKILL.md
+- [[Identity]] - document - .agents/skills/i-aws/SKILL.md
+- [[Resource Inventory CSV Schema]] - document - .agents/skills/i-aws/SKILL.md
+- [[SKILL_7]] - document - .agents/skills/i-aws/SKILL.md
+- [[Workflow]] - document - .agents/skills/i-aws/SKILL.md
+- [[i-crpr — Production-Ready PR Skill]] - document - .agents/skills/i-crpr/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,15 +36,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 19 edges to [[_COMMUNITY_Community 2]]
-- 4 edges to [[_COMMUNITY_Community 32]]
-- 1 edge to [[_COMMUNITY_Community 124]]
-- 1 edge to [[_COMMUNITY_Community 6]]
-- 1 edge to [[_COMMUNITY_Community 4]]
+- 1 edge to [[_COMMUNITY_Community 1008]]
+- 1 edge to [[_COMMUNITY_Community 1376]]
+- 1 edge to [[_COMMUNITY_Community 1289]]
+- 1 edge to [[_COMMUNITY_Community 1070]]
+- 1 edge to [[_COMMUNITY_Community 1290]]
+- 1 edge to [[_COMMUNITY_Community 853]]
 
 ## Top bridge nodes
-- [[TestFullAccessMiddlewareBypass]] - degree 13, connects to 4 communities
-- [[.test_full_access_collaborator_passes_despite_middleware_block()]] - degree 6, connects to 2 communities
-- [[.test_full_access_collaborator_passes_despite_multi_turn_middleware_block_without_interrogative()]] - degree 6, connects to 2 communities
-- [[.test_project_scoped_collaborator_still_blocked_by_middleware()]] - degree 6, connects to 2 communities
-- [[.test_full_access_outbound_not_blocked_by_leakage_filter()]] - degree 4, connects to 1 community
+- [[AWS Cloud Management & FinOps Agent_2]] - degree 18, connects to 5 communities
+- [[FY26 Cost Reduction Plan (40% target)]] - degree 3, connects to 1 community

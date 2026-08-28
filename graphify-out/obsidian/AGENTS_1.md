@@ -1,17 +1,19 @@
 ---
-source_file: "AGENTS.md"
+source_file: "docker/config/openclaw/AGENTS.md"
 type: "document"
-community: "Community 350"
+community: "Community 762"
 location: "L1"
 tags:
   - graphify/document
-  - graphify/EXTRACTED
-  - community/Community_350
+  - graphify/INFERRED
+  - community/Community_762
 ---
 
 # AGENTS.md
 
 ## Connections
-- [[AGENTS]] - `contains` [EXTRACTED]
+- [[AgentShroud™ — OpenClaw Local-Model Tool-Use Instructions]] - `contains` [EXTRACTED]
+- [[apply-patches.js]] - `conceptually_related_to` [INFERRED]
+- [[llm_proxy.py]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_350
+#graphify/document #graphify/INFERRED #community/Community_762

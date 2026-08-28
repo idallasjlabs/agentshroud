@@ -1,19 +1,21 @@
 ---
 type: community
+cohesion: 0.33
 members: 6
 ---
 
 # Community 1128
 
+**Cohesion:** 0.33 - loosely connected
 **Members:** 6 nodes
 
 ## Members
-- [[.__enter__()_1]] - code - gateway/tests/test_cli_coverage.py
-- [[.__exit__()_1]] - code - gateway/tests/test_cli_coverage.py
-- [[.__init__()_143]] - code - gateway/tests/test_cli_coverage.py
-- [[.read()]] - code - gateway/tests/test_cli_coverage.py
-- [[Context-manager stand-in for the object urlopen() yields.]] - rationale - gateway/tests/test_cli_coverage.py
-- [[_FakeHTTPResponse]] - code - gateway/tests/test_cli_coverage.py
+- [[.test_falco_no_proc_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_falco_running_detected()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_falco_zombie_only_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_wazuh_agent_absent()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_wazuh_agent_detected()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestProcScans]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,8 +25,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 153]]
-- 1 edge to [[_COMMUNITY_Community 319]]
+- 4 edges to [[_COMMUNITY_Community 193]]
+- 1 edge to [[_COMMUNITY_Community 288]]
 
 ## Top bridge nodes
-- [[_FakeHTTPResponse]] - degree 7, connects to 2 communities
+- [[TestProcScans]] - degree 6, connects to 1 community
+- [[.test_falco_running_detected()]] - degree 2, connects to 1 community
+- [[.test_falco_zombie_only_returns_false()]] - degree 2, connects to 1 community
+- [[.test_wazuh_agent_absent()]] - degree 2, connects to 1 community
+- [[.test_wazuh_agent_detected()]] - degree 2, connects to 1 community

@@ -1,22 +1,24 @@
 ---
 type: community
+cohesion: 0.22
 members: 9
 ---
 
 # Community 900
 
+**Cohesion:** 0.22 - loosely connected
 **Members:** 9 nodes
 
 ## Members
-- [[Input Requirements_29]] - document - docker/config/openclaw/skills/i-vulcan/SKILL.md
-- [[Output Format_38]] - document - docker/config/openclaw/skills/i-vulcan/SKILL.md
-- [[Persona_23]] - document - docker/config/openclaw/skills/i-vulcan/SKILL.md
-- [[Quality Checklist_26]] - document - docker/config/openclaw/skills/i-vulcan/SKILL.md
-- [[Role_111]] - document - docker/config/openclaw/skills/i-vulcan/SKILL.md
-- [[SKILL_189]] - document - docker/config/openclaw/skills/i-vulcan/SKILL.md
-- [[System Prompt_23]] - document - docker/config/openclaw/skills/i-vulcan/SKILL.md
-- [[User Prompt Template_11]] - document - docker/config/openclaw/skills/i-vulcan/SKILL.md
-- [[Vulcan — Subject Matter Auditor_5]] - document - docker/config/openclaw/skills/i-vulcan/SKILL.md
+- [[1Password (trusted for secrets, gateway-only access)]] - concept - docs/diagrams/images/diagram-11-trust-boundary.svg
+- [[AgentShroud Bot (no direct credentialinternet access)]] - concept - docs/diagrams/images/diagram-11-trust-boundary.svg
+- [[AgentShroud Gateway (holds 1Password service account)]] - concept - docs/diagrams/images/diagram-11-trust-boundary.svg
+- [[Isaiah Jefferson (full control)]] - concept - docs/diagrams/images/diagram-11-trust-boundary.svg
+- [[Trust Zone 0 — Owner (Highest Trust)]] - concept - docs/diagrams/images/diagram-11-trust-boundary.svg
+- [[Trust Zone 1 — Gateway (Trusted Enforcer)]] - concept - docs/diagrams/images/diagram-11-trust-boundary.svg
+- [[Trust Zone 2 — Bot (Supervised Agent)]] - concept - docs/diagrams/images/diagram-11-trust-boundary.svg
+- [[Trust Zone 3 — External Services (Conditional)]] - concept - docs/diagrams/images/diagram-11-trust-boundary.svg
+- [[Trust Zone 4 — Infrastructure Nodes (SSH-gated)]] - concept - docs/diagrams/images/diagram-11-trust-boundary.svg
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/graphify/references/extraction-spec.md"
 type: "document"
-community: "Community 441"
+community: "Community 449"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_441
+  - community/Community_449
 ---
 
 # graphify Extraction Subagent Prompt Spec
@@ -15,4 +15,4 @@ tags:
 - [[Structural (AST) Extraction — Part A]] - `references` [EXTRACTED]
 - [[graphify Skill]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_441
+#graphify/document #graphify/EXTRACTED #community/Community_449

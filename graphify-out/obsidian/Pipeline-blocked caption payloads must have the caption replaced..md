@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Community 20"
+community: "Community 591"
 location: "L5233"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_20
+  - community/Community_591
 ---
 
 # Pipeline-blocked caption payloads must have the caption replaced.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_json_caption_pipeline_block_replaces_caption()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_20
+#graphify/rationale #graphify/EXTRACTED #community/Community_591

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "code"
-community: "Community 66"
+community: "PII Sanitizer & E2E Tests"
 location: "L318"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_66
+  - community/PII_Sanitizer__E2E_Tests
 ---
 
 # test_pipeline_fails_closed_without_pii()
@@ -17,4 +17,4 @@ tags:
 - [[SecurityPipeline_1]] - `calls` [EXTRACTED]
 - [[test_redteam_probes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_66
+#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer__E2E_Tests

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/gog/SKILL.md"
 type: "document"
-community: "Community 372"
+community: "Community 378"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_372
+  - community/Community_378
 ---
 
 # SKILL.md
@@ -16,4 +16,4 @@ tags:
 - [[gog]] - `contains` [EXTRACTED]
 - [[gog CLI (Google Workspace)]] - `implements` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_372
+#graphify/document #graphify/EXTRACTED #community/Community_378

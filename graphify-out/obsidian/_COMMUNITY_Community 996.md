@@ -1,20 +1,23 @@
 ---
 type: community
-members: 7
+cohesion: 0.25
+members: 8
 ---
 
 # Community 996
 
-**Members:** 7 nodes
+**Cohesion:** 0.25 - loosely connected
+**Members:** 8 nodes
 
 ## Members
-- [[Acceptance_1]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
-- [[B.1 — Lock the lead 26+ modules]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
-- [[B.2 — Strengthen the report pipeline itself]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
-- [[Source of truth_1]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
-- [[Tests to add_1]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
-- [[Workstream B — Security features from competitive intel]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
-- [[Workstream B Security Features from Competitive Intel]] - concept - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[.test_agentshroud_name_not_redacted()]] - code - gateway/tests/test_outbound_filter.py
+- [[.test_mcp_tool_filtering()]] - code - gateway/tests/test_outbound_filter.py
+- [[.test_workspace_internal_path_filtering()]] - code - gateway/tests/test_outbound_filter.py
+- [[AgentShroud brand name must pass through unredacted (Fix C).]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Test suite for the outbound information filter.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Test that sensitive MCP tool names are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[TestOutboundInfoFilter]] - code - gateway/tests/test_outbound_filter.py
+- [[Workspace runtime paths should be redacted.]] - rationale - gateway/tests/test_outbound_filter.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,11 +27,35 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 98]]
-- 2 edges to [[_COMMUNITY_Community 380]]
-- 1 edge to [[_COMMUNITY_Community 923]]
+- 2 edges to [[_COMMUNITY_Community 137]]
+- 2 edges to [[_COMMUNITY_Community 1424]]
+- 1 edge to [[_COMMUNITY_Key Vault & Audit Chain]]
+- 1 edge to [[_COMMUNITY_Community 1553]]
+- 1 edge to [[_COMMUNITY_Community 1555]]
+- 1 edge to [[_COMMUNITY_Community 1551]]
+- 1 edge to [[_COMMUNITY_Community 1554]]
+- 1 edge to [[_COMMUNITY_Community 1546]]
+- 1 edge to [[_COMMUNITY_Community 1568]]
+- 1 edge to [[_COMMUNITY_Community 1564]]
+- 1 edge to [[_COMMUNITY_Community 1549]]
+- 1 edge to [[_COMMUNITY_Community 1566]]
+- 1 edge to [[_COMMUNITY_Community 1562]]
+- 1 edge to [[_COMMUNITY_Community 1557]]
+- 1 edge to [[_COMMUNITY_Community 1561]]
+- 1 edge to [[_COMMUNITY_Community 1570]]
+- 1 edge to [[_COMMUNITY_Community 1559]]
+- 1 edge to [[_COMMUNITY_Community 1556]]
+- 1 edge to [[_COMMUNITY_Community 1550]]
+- 1 edge to [[_COMMUNITY_Community 1552]]
+- 1 edge to [[_COMMUNITY_Community 1563]]
+- 1 edge to [[_COMMUNITY_Community 1571]]
+- 1 edge to [[_COMMUNITY_Community 1560]]
+- 1 edge to [[_COMMUNITY_Community 1548]]
+- 1 edge to [[_COMMUNITY_Community 1567]]
+- 1 edge to [[_COMMUNITY_Community 1569]]
+- 1 edge to [[_COMMUNITY_Community 1565]]
+- 1 edge to [[_COMMUNITY_Community 1547]]
+- 1 edge to [[_COMMUNITY_Community 1558]]
 
 ## Top bridge nodes
-- [[Workstream B Security Features from Competitive Intel]] - degree 7, connects to 3 communities
-- [[Workstream B — Security features from competitive intel]] - degree 6, connects to 1 community
-- [[Source of truth_1]] - degree 4, connects to 1 community
+- [[TestOutboundInfoFilter]] - degree 35, connects to 29 communities

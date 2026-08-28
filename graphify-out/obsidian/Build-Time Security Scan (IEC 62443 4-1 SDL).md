@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "document"
-community: "Community 131"
+community: "Community 162"
 location: "L840"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_131
+  - community/Community_162
 ---
 
 # Build-Time Security Scan (IEC 62443 4-1 SDL)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[13. Compliance Alignment]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_131
+#graphify/document #graphify/EXTRACTED #community/Community_162

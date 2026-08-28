@@ -1,14 +1,16 @@
 ---
 type: community
+cohesion: 1.00
 members: 1
 ---
 
 # Community 1739
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[Neo4j Export  Push]] - concept - docker/config/openclaw/skills/graphify/references/exports.md
+- [[.githubworkflowsmerge-regression-audit.yml_1]] - concept - docker/config/openclaw/skills/i-ab/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

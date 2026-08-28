@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "rationale"
-community: "Community 1"
+community: "Community 26"
 location: "L290"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1
+  - community/Community_26
 ---
 
 # Fetch a single ledger entry by ID          Args:             entry_id: Entry UUI
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_entry()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1
+#graphify/rationale #graphify/EXTRACTED #community/Community_26

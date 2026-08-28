@@ -1,28 +1,29 @@
 ---
 type: community
-members: 15
+cohesion: 0.14
+members: 14
 ---
 
 # Community 652
 
-**Members:** 15 nodes
+**Cohesion:** 0.14 - loosely connected
+**Members:** 14 nodes
 
 ## Members
-- [[.test_allowed_chain_passes()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_analyzer_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_blocked_rewrite_denied()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_blocked_with_chain_match()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_blocked_without_chain_match()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_cross_user_path_blocked()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_isolation_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_own_workspace_path_allowed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_owner_bypasses_sandbox()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_sandbox_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_unblocked_rewrite_allowed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestFileSandboxStep]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestPathIsolationStep]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestToolChainAnalyzer]] - code - gateway/tests/test_middleware_coverage.py
-- [[_tool_req()]] - code - gateway/tests/test_middleware_coverage.py
+- [[AgentShroud Blue Team Security Auditor_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
+- [[Audit Procedure_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
+- [[Critical Rules_10]] - document - skills/custom/agentshroud-blueteam/SKILL.md
+- [[Heat Map Legend_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
+- [[Infrastructure_9]] - document - skills/custom/agentshroud-blueteam/SKILL.md
+- [[Loss Categories_4]] - document - skills/custom/agentshroud-blueteam/SKILL.md
+- [[Methodology_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
+- [[Output Format_40]] - document - skills/custom/agentshroud-blueteam/SKILL.md
+- [[Phase 1 Code-Level Module Audit_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
+- [[Phase 2 Heat Map Reconstruction_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
+- [[Phase 3 Integration Gap Analysis_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
+- [[Phase 4 Configuration Audit_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
+- [[Phase 5 Steve Hay's Specific Probes_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
+- [[Unsafe Control Actions (UCAs)_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,16 +33,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_Community 6]]
-- 4 edges to [[_COMMUNITY_Community 426]]
-- 3 edges to [[_COMMUNITY_Community 1]]
-- 3 edges to [[_COMMUNITY_Community 174]]
-- 1 edge to [[_COMMUNITY_Community 596]]
-- 1 edge to [[_COMMUNITY_Community 130]]
+- 1 edge to [[_COMMUNITY_Community 46]]
 
 ## Top bridge nodes
-- [[TestToolChainAnalyzer]] - degree 9, connects to 4 communities
-- [[TestFileSandboxStep]] - degree 9, connects to 4 communities
-- [[TestPathIsolationStep]] - degree 8, connects to 4 communities
-- [[_tool_req()]] - degree 13, connects to 2 communities
-- [[.test_owner_bypasses_sandbox()]] - degree 3, connects to 1 community
+- [[AgentShroud Blue Team Security Auditor_3]] - degree 6, connects to 1 community

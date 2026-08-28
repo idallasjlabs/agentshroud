@@ -1,27 +1,29 @@
 ---
 type: community
+cohesion: 0.15
 members: 14
 ---
 
 # Community 666
 
+**Cohesion:** 0.15 - loosely connected
 **Members:** 14 nodes
 
 ## Members
-- [[API Call Structure_2]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
-- [[Apollo — Audio Systems Producer_5]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
-- [[Audio Quality Settings_2]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
-- [[Error Handling_5]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
-- [[Input Requirements_20]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
-- [[Output_4]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
-- [[Primary API Text-to-Dialogue_2]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
-- [[Quality Checklist_18]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
-- [[Quick Mode Create Podcast API_2]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
-- [[Role_77]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
-- [[SKILL_130]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
-- [[Script Parsing_2]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
-- [[Technical Specification_2]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
-- [[Voice Configuration_2]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
+- [[DEVELOPER]] - document - docker/config/openclaw/workspace/DEVELOPER.md
+- [[Gateway sshexec endpoint]] - concept - docker/scripts/agentshroud-ssh-exec.sh
+- [[Gateway sshwrite_file endpoint]] - concept - docker/scripts/agentshroud-ssh-write-file.sh
+- [[_json_escape()]] - code - docker/scripts/agentshroud-ssh-exec.sh
+- [[_json_escape()_1]] - code - docker/scripts/agentshroud-ssh-write-file.sh
+- [[_read_token_file()]] - code - docker/scripts/agentshroud-ssh-exec.sh
+- [[_read_token_file()_1]] - code - docker/scripts/agentshroud-ssh-write-file.sh
+- [[agentshroud-ssh-exec.sh]] - code - docker/scripts/agentshroud-ssh-exec.sh
+- [[agentshroud-ssh-exec.sh script]] - code - docker/scripts/agentshroud-ssh-exec.sh
+- [[agentshroud-ssh-write-file.sh]] - code - docker/scripts/agentshroud-ssh-write-file.sh
+- [[agentshroud-ssh-write-file.sh script]] - code - docker/scripts/agentshroud-ssh-write-file.sh
+- [[competitive-analysis.md (bot workspace competitive-intel source of truth)]] - document - docker/config/openclaw/workspace/competitive-analysis.md
+- [[hermes-soul.md (Hermes system identity)]] - document - docker/config/openclaw/agents/hermes-soul.md
+- [[openclaw-identity.md (OpenClaw bot identity)]] - document - docker/config/openclaw/agents/openclaw-identity.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,3 +31,13 @@ members: 14
 TABLE source_file, type FROM #community/Community_666
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_Community 620]]
+- 1 edge to [[_COMMUNITY_Community 482]]
+- 1 edge to [[_COMMUNITY_Community 1138]]
+- 1 edge to [[_COMMUNITY_Community 819]]
+
+## Top bridge nodes
+- [[agentshroud-ssh-exec.sh]] - degree 11, connects to 3 communities
+- [[DEVELOPER]] - degree 3, connects to 2 communities

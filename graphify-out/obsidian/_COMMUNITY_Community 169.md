@@ -1,32 +1,55 @@
 ---
 type: community
-members: 19
+cohesion: 0.05
+members: 40
 ---
 
 # Community 169
 
-**Members:** 19 nodes
+**Cohesion:** 0.05 - loosely connected
+**Members:** 40 nodes
 
 ## Members
-- [[Added]] - document - CHANGELOG.md
-- [[Added_9]] - document - CHANGELOG.md
-- [[Added_14]] - document - CHANGELOG.md
-- [[Added_15]] - document - CHANGELOG.md
-- [[Added_16]] - document - CHANGELOG.md
-- [[Changed_7]] - document - CHANGELOG.md
-- [[P1 HTTP CONNECT Proxy (PR 24)]] - document - CHANGELOG.md
-- [[P2 Credential Isolation (PR 25)]] - document - CHANGELOG.md
-- [[Phase 1 Foundation]] - document - CHANGELOG.md
-- [[Phase 2 Gateway Layer]] - document - CHANGELOG.md
-- [[Phase 3A3B Security Hardening]] - document - CHANGELOG.md
-- [[Phase 4 SSH Capability]] - document - CHANGELOG.md
-- [[Phase 5 Dashboard]] - document - CHANGELOG.md
-- [[Phase 6 Tailscale & Documentation]] - document - CHANGELOG.md
-- [[Phase 7 Security Hardening]] - document - CHANGELOG.md
-- [[Phase 8 Polish & Publish]] - document - CHANGELOG.md
-- [[Security_9]] - document - CHANGELOG.md
-- [[Summary_21]] - document - CHANGELOG.md
-- [[0.4.0 - 2026-02-19]] - document - CHANGELOG.md
+- [[.test_alert_callbacks()_1]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_approval_system()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_basic_tool_call_tracking()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_chain_length_limits()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_config_file_to_outbound()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_credential_to_outbound_blocking()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_edge_cases()_3]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_exec_to_network_pattern()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_global_stats()_1]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_initialization()_4]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_normal_tool_sequences_allowed()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_pattern_configuration()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_rapid_file_enumeration()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_read_to_http_exfiltration()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_read_to_message_exfiltration()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_risk_score_calculation()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_session_cleanup()_1]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_session_stats()_1]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_time_window_expiry()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[Test alert callback functionality._1]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test approval system interface.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test basic tool call tracking functionality.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test cases for ToolChainAnalyzer class.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test cleanup of old sessions._1]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test detection of config file access → outbound pattern.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test detection of exec → network communication pattern.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test detection of rapid file enumeration.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test detection of read → HTTP exfiltration pattern.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test detection of read → message exfiltration pattern.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test edge cases and error conditions._2]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test getting global statistics.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test getting session statistics._1]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test proper initialization of ToolChainAnalyzer.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test risk score calculation for detected chains.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test that chain length limits are respected.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test that credential access → outbound tools are blocked.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test that normal tool sequences pass through.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test that patterns are properly configured.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test that patterns don't match outside time windows.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[TestToolChainAnalyzer_1]] - code - gateway/tests/test_tool_chain_analyzer.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,18 +59,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 984]]
-- 4 edges to [[_COMMUNITY_Community 629]]
-- 4 edges to [[_COMMUNITY_Community 646]]
-- 3 edges to [[_COMMUNITY_Community 529]]
-- 2 edges to [[_COMMUNITY_Community 1296]]
-- 1 edge to [[_COMMUNITY_Community 1123]]
-- 1 edge to [[_COMMUNITY_Community 1332]]
-- 1 edge to [[_COMMUNITY_Community 1342]]
+- 5 edges to [[_COMMUNITY_Community 262]]
+- 3 edges to [[_COMMUNITY_Community 223]]
+- 1 edge to [[_COMMUNITY_Community 431]]
 
 ## Top bridge nodes
-- [[Added]] - degree 24, connects to 8 communities
-- [[0.4.0 - 2026-02-19]] - degree 9, connects to 4 communities
-- [[Added_16]] - degree 4, connects to 1 community
-- [[Added_9]] - degree 3, connects to 1 community
-- [[Added_15]] - degree 3, connects to 1 community
+- [[TestToolChainAnalyzer_1]] - degree 29, connects to 3 communities

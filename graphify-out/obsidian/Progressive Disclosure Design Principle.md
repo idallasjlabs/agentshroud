@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/skill-creator/SKILL.md"
 type: "document"
-community: "Community 777"
+community: "Community 773"
 location: "L113"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_777
+  - community/Community_773
 ---
 
 # Progressive Disclosure Design Principle
@@ -15,4 +15,4 @@ tags:
 - [[Core Principles]] - `contains` [EXTRACTED]
 - [[Progressive Disclosure Patterns]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_777
+#graphify/document #graphify/EXTRACTED #community/Community_773

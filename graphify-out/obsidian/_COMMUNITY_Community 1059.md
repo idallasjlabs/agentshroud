@@ -1,25 +1,22 @@
 ---
 type: community
-members: 12
+cohesion: 0.29
+members: 7
 ---
 
 # Community 1059
 
-**Members:** 12 nodes
+**Cohesion:** 0.29 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[.test_default_policy_values()]] - code - gateway/tests/test_key_rotation.py
-- [[Test Gmail Credential Retrieval]] - code - gateway/tests/test_gmail_credential_retrieval.py
-- [[Test credential rotation policy configuration.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test default policy has reasonable values.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test the managecredentialshealth endpoint.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test the managecredentialsstatus endpoint.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test the POST managecredentialsrotate{credential_id} endpoint.]] - rationale - gateway/tests/test_key_rotation.py
-- [[TestCredentialRotationPolicy]] - code - gateway/tests/test_key_rotation.py
-- [[test_credentials_health_endpoint()]] - code - gateway/tests/test_key_rotation.py
-- [[test_credentials_status_endpoint()]] - code - gateway/tests/test_key_rotation.py
-- [[test_key_rotation.py]] - code - gateway/tests/test_key_rotation.py
-- [[test_rotate_credential_endpoint()]] - code - gateway/tests/test_key_rotation.py
+- [[.test_owner_recipient_body_preserved()]] - code - gateway/tests/test_email_owner_bypasses_pii.py
+- [[.test_send_owner_endpoint_also_bypasses_pii()]] - code - gateway/tests/test_email_owner_bypasses_pii.py
+- [[.test_unknown_recipient_body_still_scrubbed()]] - code - gateway/tests/test_email_owner_bypasses_pii.py
+- [[emailsend-owner delegates to email_send and also skips PII for the owner.]] - rationale - gateway/tests/test_email_owner_bypasses_pii.py
+- [[Owner-allowlisted recipient receives body verbatim; pii_redacted=False.]] - rationale - gateway/tests/test_email_owner_bypasses_pii.py
+- [[TestOwnerEmailBypassesPii]] - code - gateway/tests/test_email_owner_bypasses_pii.py
+- [[Unknown recipient's body is PII-scrubbed before approval queue submission.]] - rationale - gateway/tests/test_email_owner_bypasses_pii.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,14 +26,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_Community 233]]
-- 5 edges to [[_COMMUNITY_Community 193]]
-- 4 edges to [[_COMMUNITY_Community 756]]
-- 2 edges to [[_COMMUNITY_Community 160]]
-- 2 edges to [[_COMMUNITY_Community 424]]
-- 1 edge to [[_COMMUNITY_Community 31]]
+- 3 edges to [[_COMMUNITY_Community 24]]
+- 1 edge to [[_COMMUNITY_Community 159]]
 
 ## Top bridge nodes
-- [[test_key_rotation.py]] - degree 18, connects to 6 communities
-- [[TestCredentialRotationPolicy]] - degree 9, connects to 4 communities
-- [[.test_default_policy_values()]] - degree 3, connects to 1 community
+- [[TestOwnerEmailBypassesPii]] - degree 4, connects to 1 community
+- [[.test_owner_recipient_body_preserved()]] - degree 3, connects to 1 community
+- [[.test_send_owner_endpoint_also_bypasses_pii()]] - degree 3, connects to 1 community
+- [[.test_unknown_recipient_body_still_scrubbed()]] - degree 3, connects to 1 community

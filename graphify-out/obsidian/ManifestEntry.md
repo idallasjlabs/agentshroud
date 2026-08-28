@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/skills/manifest.py"
 type: "code"
-community: "Community 71"
+community: "Community 73"
 location: "L54"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_71
+  - community/Community_73
 ---
 
 # ManifestEntry
@@ -28,4 +28,4 @@ tags:
 - [[manifest.py]] - `contains` [EXTRACTED]
 - [[test_skills_manifest_sync.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_71
+#graphify/code #graphify/INFERRED #community/Community_73

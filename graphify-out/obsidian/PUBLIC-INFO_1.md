@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md"
 type: "document"
-community: "Community 181"
+community: "Community 184"
 location: "L1"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Community_181
+  - community/Community_184
 ---
 
 # PUBLIC-INFO.md
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud™ — Project Knowledge Base]] - `contains` [EXTRACTED]
 - [[PUBLIC-INFO]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Community_181
+#graphify/document #graphify/INFERRED #community/Community_184

@@ -1,17 +1,19 @@
 ---
 type: community
+cohesion: 0.50
 members: 4
 ---
 
 # Community 1302
 
+**Cohesion:** 0.50 - moderately connected
 **Members:** 4 nodes
 
 ## Members
-- [[For --cluster-only_1]] - document - docker/config/hermes/skills/graphify/references/update.md
-- [[For --update (incremental re-extraction)_1]] - document - docker/config/hermes/skills/graphify/references/update.md
-- [[graphify reference incremental update and cluster-only_1]] - document - docker/config/hermes/skills/graphify/references/update.md
-- [[update_1]] - document - docker/config/hermes/skills/graphify/references/update.md
+- [[For --watch_2]] - document - docker/config/openclaw/skills/graphify/references/add-watch.md
+- [[For graphify add_2]] - document - docker/config/openclaw/skills/graphify/references/add-watch.md
+- [[add-watch_2]] - document - docker/config/openclaw/skills/graphify/references/add-watch.md
+- [[graphify reference add a URL and watch a folder_2]] - document - docker/config/openclaw/skills/graphify/references/add-watch.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/gemini/SKILL.md"
 type: "document"
-community: "Community 292"
+community: "Community 319"
 location: "L1"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Community_292
+  - community/Community_319
 ---
 
 # SKILL.md
@@ -15,4 +15,4 @@ tags:
 - [[Gemini CLI]] - `contains` [EXTRACTED]
 - [[SKILL_203]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Community_292
+#graphify/document #graphify/INFERRED #community/Community_319

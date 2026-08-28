@@ -1,36 +1,24 @@
 ---
 type: community
-members: 23
+cohesion: 0.22
+members: 9
 ---
 
 # Community 876
 
-**Members:** 23 nodes
+**Cohesion:** 0.22 - loosely connected
+**Members:** 9 nodes
 
 ## Members
-- [[Cloud & FinOps]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
-- [[Common Commands Quick Reference]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
-- [[Content & Communication]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
-- [[Core Development]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
-- [[Data Operations]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
-- [[Emergency Contacts]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
-- [[Emergency Procedures]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
-- [[GSDE&G Skills Reference]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
-- [[Investigation]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
-- [[MCP Tools]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
-- [[P1 Incident Response]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
-- [[Production Safety]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
-- [[Production Testing Guidelines]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
-- [[Quick Reference When to Use Each Skill]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
-- [[Reference_1]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
-- [[Related Documentation]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
-- [[SKILLS_GUIDE]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
-- [[SecureClaw (Project-Specific)]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
-- [[Skill Directory Structure]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
-- [[Skill Invocation Examples]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
-- [[Skills by Category]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
-- [[System Utilities]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
-- [[Workflow_2]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[1. GitHub MCP Authentication Reset]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[1. GitHub MCP Authentication Reset_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[Step 1 Generate New Personal Access Token]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[Step 1 Generate New Personal Access Token_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[Step 2 Update .env File]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[Step 2 Update .env File_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[Step 3 Verify Authentication]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[Step 3 Verify Authentication_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[Step 4 Restart Codex]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -40,8 +28,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 1124]]
-- 1 edge to [[_COMMUNITY_Community 254]]
+- 1 edge to [[_COMMUNITY_Community 877]]
+- 1 edge to [[_COMMUNITY_Community 890]]
 
 ## Top bridge nodes
-- [[GSDE&G Skills Reference]] - degree 11, connects to 2 communities
+- [[1. GitHub MCP Authentication Reset]] - degree 5, connects to 1 community
+- [[1. GitHub MCP Authentication Reset_1]] - degree 5, connects to 1 community

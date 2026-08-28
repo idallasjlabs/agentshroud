@@ -1,21 +1,24 @@
 ---
 type: community
-members: 8
+cohesion: 0.22
+members: 9
 ---
 
 # Community 878
 
-**Members:** 8 nodes
+**Cohesion:** 0.22 - loosely connected
+**Members:** 9 nodes
 
 ## Members
-- [[.test_collaborator_empty_text_with_caption_payload_is_normalized_json()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_collaborator_empty_text_with_content_payload_is_normalized_json()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_collaborator_empty_text_with_draft_payload_is_normalized_json()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_collaborator_empty_text_with_message_payload_is_normalized_json()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Empty text field must not bypass filtering when caption contains tool payload.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Empty text field must not bypass filtering when content contains tool payload.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Empty text field must not bypass filtering when draft contains tool payload.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Empty text field must not bypass filtering when message contains tool payload.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[1. Scope of Change]] - document - .agents/skills/i-pca/SKILL.md
+- [[2. What Changes and Why]] - document - .agents/skills/i-pca/SKILL.md
+- [[3. Scalability Gate]] - document - .agents/skills/i-pca/SKILL.md
+- [[4. Blast Radius]] - document - .agents/skills/i-pca/SKILL.md
+- [[5. Known Limits and Assumptions]] - document - .agents/skills/i-pca/SKILL.md
+- [[6. Alternatives Considered]] - document - .agents/skills/i-pca/SKILL.md
+- [[7. Open Questions]] - document - .agents/skills/i-pca/SKILL.md
+- [[Output Sections (ALL required)]] - document - .agents/skills/i-pca/SKILL.md
+- [[Verification Plan]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,10 +28,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 12 edges to [[_COMMUNITY_Community 3]]
+- 1 edge to [[_COMMUNITY_Community 1158]]
+- 1 edge to [[_COMMUNITY_Community 999]]
 
 ## Top bridge nodes
-- [[.test_collaborator_empty_text_with_message_payload_is_normalized_json()]] - degree 5, connects to 1 community
-- [[.test_collaborator_empty_text_with_content_payload_is_normalized_json()]] - degree 5, connects to 1 community
-- [[.test_collaborator_empty_text_with_draft_payload_is_normalized_json()]] - degree 5, connects to 1 community
-- [[.test_collaborator_empty_text_with_caption_payload_is_normalized_json()]] - degree 4, connects to 1 community
+- [[Output Sections (ALL required)]] - degree 9, connects to 1 community
+- [[Verification Plan]] - degree 2, connects to 1 community

@@ -1,17 +1,19 @@
 ---
 type: community
+cohesion: 0.50
 members: 4
 ---
 
 # Community 1304
 
+**Cohesion:** 0.50 - moderately connected
 **Members:** 4 nodes
 
 ## Members
-- [[For git commit hook_2]] - document - docker/config/openclaw/skills/graphify/references/hooks.md
-- [[For native CLAUDE.md integration_2]] - document - docker/config/openclaw/skills/graphify/references/hooks.md
-- [[graphify reference commit hook and native CLAUDE.md integration_2]] - document - docker/config/openclaw/skills/graphify/references/hooks.md
-- [[hooks_2]] - document - docker/config/openclaw/skills/graphify/references/hooks.md
+- [[For --cluster-only_2]] - document - docker/config/openclaw/skills/graphify/references/update.md
+- [[For --update (incremental re-extraction)_2]] - document - docker/config/openclaw/skills/graphify/references/update.md
+- [[graphify reference incremental update and cluster-only_2]] - document - docker/config/openclaw/skills/graphify/references/update.md
+- [[update_2]] - document - docker/config/openclaw/skills/graphify/references/update.md
 
 ## Live Query (requires Dataview plugin)
 

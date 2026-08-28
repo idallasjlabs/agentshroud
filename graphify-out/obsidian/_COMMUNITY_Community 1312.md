@@ -1,17 +1,19 @@
 ---
 type: community
+cohesion: 0.50
 members: 4
 ---
 
 # Community 1312
 
+**Cohesion:** 0.50 - moderately connected
 **Members:** 4 nodes
 
 ## Members
-- [[8D Root Cause Analysis README]] - document - .agents/skills/i-eightd/README.md
-- [[8D Root Cause Analysis Skill]] - document - .agents/skills/i-eightd/SKILL.md
-- [[AWS Agent (data retrieval layer)]] - concept - .agents/skills/i-eightd/SKILL.md
-- [[AWS Athena  BESS Telemetry Data Lake]] - concept - .agents/skills/i-eightd/SKILL.md
+- [[Session Prompt Generator]] - document - .agents/skills/i-session-prompt/SKILL.md
+- [[System Audit Documentation (SAD)]] - document - .agents/skills/i-sad/SKILL.md
+- [[System Audit Vault (SAV)]] - document - .agents/skills/i-sav/SKILL.md
+- [[System Audit Vault README]] - document - .agents/skills/i-sav/README.md
 
 ## Live Query (requires Dataview plugin)
 

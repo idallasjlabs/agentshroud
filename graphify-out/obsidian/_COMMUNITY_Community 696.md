@@ -1,27 +1,28 @@
 ---
 type: community
-members: 14
+cohesion: 0.15
+members: 13
 ---
 
 # Community 696
 
-**Members:** 14 nodes
+**Cohesion:** 0.15 - loosely connected
+**Members:** 13 nodes
 
 ## Members
-- [[description of what this does]] - document - .agents/skills/i-athena/SKILL.md
-- [[Athena README]] - document - .agents/skills/i-athena/README.md
-- [[Athena — Knowledge Distiller_1]] - document - .agents/skills/i-athena/SKILL.md
-- [[Athena — Knowledge Distiller_7]] - document - .agents/skills/i-athena/SKILL.md
-- [[Input Requirements_1]] - document - .agents/skills/i-athena/SKILL.md
-- [[Output Format]] - document - .agents/skills/i-athena/SKILL.md
-- [[Persona]] - document - .agents/skills/i-athena/SKILL.md
-- [[Quality Checklist_1]] - document - .agents/skills/i-athena/SKILL.md
-- [[Role_5]] - document - .agents/skills/i-athena/SKILL.md
-- [[SKILL_5]] - document - .agents/skills/i-athena/SKILL.md
-- [[System Prompt]] - document - .agents/skills/i-athena/SKILL.md
-- [[User Prompt Template]] - document - .agents/skills/i-athena/SKILL.md
-- [[cheatsheet]] - document - .agents/skills/i-athena/SKILL.md
-- [[show_notes]] - document - .agents/skills/i-athena/SKILL.md
+- [[After Disconnect]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[After Freeze]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[After Shutdown]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[Kill Switch Actions]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[Kill Switch Monitoring]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[Kill Switch Procedure_1]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[Method 1 Dashboard (Recommended)]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[Method 2 API]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[Method 3 Script]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[Method 4 Docker Direct (Last Resort)]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[Post-Kill Switch Procedure]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[Related Notes_68]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[When to Use]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,8 +32,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 941]]
-- 1 edge to [[_COMMUNITY_Community 658]]
+- 1 edge to [[_COMMUNITY_Community 289]]
 
 ## Top bridge nodes
-- [[Athena — Knowledge Distiller_7]] - degree 8, connects to 2 communities
+- [[Kill Switch Procedure_1]] - degree 10, connects to 1 community

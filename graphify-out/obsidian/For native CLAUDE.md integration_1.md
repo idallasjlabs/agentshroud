@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/graphify/references/hooks.md"
 type: "document"
-community: "Community 1301"
+community: "Community 1300"
 location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1301
+  - community/Community_1300
 ---
 
 # For native CLAUDE.md integration
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[graphify reference commit hook and native CLAUDE.md integration_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1301
+#graphify/document #graphify/EXTRACTED #community/Community_1300

@@ -1,11 +1,11 @@
 ---
 source_file: ".pre-commit-config.yaml"
 type: "concept"
-community: "Community 251"
+community: "Community 420"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_251
+  - community/Community_420
 ---
 
 # ruff (Python linter)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Pre-commit Hooks Configuration]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_251
+#graphify/concept #graphify/EXTRACTED #community/Community_420

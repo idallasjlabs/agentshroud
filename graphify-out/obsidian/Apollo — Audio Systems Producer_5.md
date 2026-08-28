@@ -1,22 +1,18 @@
 ---
-source_file: "docker/config/openclaw/skills/i-apollo/SKILL.md"
-type: "document"
-community: "Community 666"
-location: "L6"
+source_file: "docs/architecture/agentic-os.md"
+type: "concept"
+community: "Community 882"
 tags:
-  - graphify/document
+  - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_666
+  - community/Community_882
 ---
 
 # Apollo — Audio Systems Producer
 
 ## Connections
-- [[Input Requirements_20]] - `contains` [EXTRACTED]
-- [[Output_4]] - `contains` [EXTRACTED]
-- [[Quality Checklist_18]] - `contains` [EXTRACTED]
-- [[Role_77]] - `contains` [EXTRACTED]
-- [[SKILL_130]] - `contains` [EXTRACTED]
-- [[Technical Specification_2]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_5]] - `shares_data_with` [EXTRACTED]
+- [[Mnemosyne — Retention Engineer_6]] - `shares_data_with` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor_6]] - `shares_data_with` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_666
+#graphify/concept #graphify/EXTRACTED #community/Community_882

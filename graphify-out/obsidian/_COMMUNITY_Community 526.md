@@ -1,30 +1,32 @@
 ---
 type: community
+cohesion: 0.12
 members: 17
 ---
 
 # Community 526
 
+**Cohesion:** 0.12 - loosely connected
 **Members:** 17 nodes
 
 ## Members
-- [[Follow-up (within 48 hours)_2]] - document - docker/config/openclaw/skills/i-production/SKILL.md
-- [[Glue Job Rollback_2]] - document - docker/config/openclaw/skills/i-production/SKILL.md
-- [[Immediate (within 2 hours)_2]] - document - docker/config/openclaw/skills/i-production/SKILL.md
-- [[Incident Response Workflow_2]] - document - docker/config/openclaw/skills/i-production/SKILL.md
-- [[Phase 1 ASSESS (Max 5 minutes)_2]] - document - docker/config/openclaw/skills/i-production/SKILL.md
-- [[Phase 2 COMMUNICATE (Concurrent with assess)_2]] - document - docker/config/openclaw/skills/i-production/SKILL.md
-- [[Phase 3 MITIGATE (Rollback First!)_2]] - document - docker/config/openclaw/skills/i-production/SKILL.md
-- [[Post-Incident_2]] - document - docker/config/openclaw/skills/i-production/SKILL.md
-- [[Post-Mortem Template_2]] - document - docker/config/openclaw/skills/i-production/SKILL.md
-- [[RDS Rollback (Point-in-Time or Snapshot)_2]] - document - docker/config/openclaw/skills/i-production/SKILL.md
-- [[Role_100]] - document - docker/config/openclaw/skills/i-production/SKILL.md
-- [[S3 Data Rollback_2]] - document - docker/config/openclaw/skills/i-production/SKILL.md
-- [[SKILL_170]] - document - docker/config/openclaw/skills/i-production/SKILL.md
-- [[Severity Matrix_2]] - document - docker/config/openclaw/skills/i-production/SKILL.md
-- [[Skill Incident Response (INCIDENT)_2]] - document - docker/config/openclaw/skills/i-production/SKILL.md
-- [[Step Function Rollback_2]] - document - docker/config/openclaw/skills/i-production/SKILL.md
-- [[Zabbix Rollback_2]] - document - docker/config/openclaw/skills/i-production/SKILL.md
+- [[AgentTarget_3]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
+- [[Config Keys Read_4]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
+- [[EmailSendRequest_2]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
+- [[Environment Variables Used_4]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
+- [[ForwardRequest_3]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
+- [[ForwardResponse_1]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
+- [[Imports From  Exports To_4]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
+- [[Key Classes  Functions_4]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
+- [[Known Issues  Notes_5]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
+- [[Model Details]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
+- [[Purpose_115]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
+- [[RedactionDetail_1]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
+- [[Related_6]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
+- [[Responsibilities_4]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
+- [[SSHExecRequest  SSHExecResponse]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
+- [[models.py_3]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
+- [[models.py_2]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
 
 ## Live Query (requires Dataview plugin)
 

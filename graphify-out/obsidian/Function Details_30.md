@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md"
 type: "document"
-community: "Community 536"
+community: "Community 534"
 location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_536
+  - community/Community_534
 ---
 
 # Function Details
@@ -19,4 +19,4 @@ tags:
 - [[save_report(report, log_dir)]] - `contains` [EXTRACTED]
 - [[update_virus_db(freshclam_bin, timeout)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_536
+#graphify/document #graphify/EXTRACTED #community/Community_534

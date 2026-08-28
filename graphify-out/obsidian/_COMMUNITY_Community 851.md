@@ -1,21 +1,25 @@
 ---
 type: community
-members: 8
+cohesion: 0.20
+members: 10
 ---
 
 # Community 851
 
-**Members:** 8 nodes
+**Cohesion:** 0.20 - loosely connected
+**Members:** 10 nodes
 
 ## Members
-- [[.scripts Numbered Script Library Convention]] - concept - docker/config/openclaw/skills/i-aws/SKILL.md
-- [[AWS Cloud Management & FinOps (README)]] - document - docker/config/hermes/skills/i-aws/README.md
-- [[AWS Cloud Management & FinOps Agent (SKILL)]] - document - docker/config/hermes/skills/i-aws/SKILL.md
-- [[CDAS — Central Data Acquisition Systems]] - concept - docker/config/hermes/skills/i-aws/SKILL.md
-- [[EBS Performance Analysis Pattern]] - concept - docker/config/hermes/skills/i-aws/SKILL.md
-- [[FODL — Fluence Operational Data Lakehouse]] - concept - docker/config/hermes/skills/i-aws/SKILL.md
-- [[FY26 Cost Reduction Plan (40% target)]] - concept - docker/config/hermes/skills/i-aws/SKILL.md
-- [[Production-Specific Review Checklist (blast radius, rollback, Athena cost guard)]] - concept - docker/config/hermes/skills/i-cr/SKILL.md
+- [[0) Model self-check (non-blocking)]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[1) Establish context (read-only)]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[2) Run OpenClaw security audits (read-only)]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[3) Check OpenClaw versionupdate status (read-only)]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[4) Determine risk tolerance (after system context)]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[5) Produce a remediation plan]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[6) Offer execution options]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[7) Execute with confirmations]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[8) Verify and report]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[Workflow (follow in order)]] - document - skills/openclaw/healthcheck/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,11 +29,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 848]]
-- 2 edges to [[_COMMUNITY_Community 518]]
+- 1 edge to [[_COMMUNITY_Community 712]]
 
 ## Top bridge nodes
-- [[AWS Cloud Management & FinOps Agent (SKILL)]] - degree 5, connects to 1 community
-- [[CDAS — Central Data Acquisition Systems]] - degree 2, connects to 1 community
-- [[FODL — Fluence Operational Data Lakehouse]] - degree 2, connects to 1 community
-- [[Production-Specific Review Checklist (blast radius, rollback, Athena cost guard)]] - degree 2, connects to 1 community
+- [[Workflow (follow in order)]] - degree 10, connects to 1 community

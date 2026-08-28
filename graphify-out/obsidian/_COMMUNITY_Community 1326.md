@@ -1,17 +1,19 @@
 ---
 type: community
+cohesion: 0.50
 members: 4
 ---
 
 # Community 1326
 
+**Cohesion:** 0.50 - moderately connected
 **Members:** 4 nodes
 
 ## Members
-- [[.test_self_diagnose_dedupe_handles_missing_update_id_same_message()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_self_diagnostic_dedupe_handles_missing_update_id_same_message()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[When update_id is missing, same message_id should dedupe self-diagnose notices.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[When update_id is missing, same message_id should dedupe self-diagnostic notices]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[2. Steve Hay Heat Map Assessment]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[2.1 Loss Categories]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[2.2 Heat Map Matrix]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[2.3 Coverage Analysis]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_Community 2]]
-- 2 edges to [[_COMMUNITY_Community 32]]
+- 1 edge to [[_COMMUNITY_Community 185]]
 
 ## Top bridge nodes
-- [[.test_self_diagnose_dedupe_handles_missing_update_id_same_message()]] - degree 8, connects to 2 communities
-- [[.test_self_diagnostic_dedupe_handles_missing_update_id_same_message()]] - degree 7, connects to 2 communities
+- [[2. Steve Hay Heat Map Assessment]] - degree 4, connects to 1 community

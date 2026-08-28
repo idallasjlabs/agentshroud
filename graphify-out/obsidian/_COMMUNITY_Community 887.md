@@ -1,21 +1,24 @@
 ---
 type: community
-members: 8
+cohesion: 0.22
+members: 9
 ---
 
 # Community 887
 
-**Members:** 8 nodes
+**Cohesion:** 0.22 - loosely connected
+**Members:** 9 nodes
 
 ## Members
-- [[.test_collaborator_form_empty_text_with_caption_payload_is_normalized()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_collaborator_form_empty_text_with_content_payload_is_normalized()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_collaborator_form_empty_text_with_draft_payload_is_normalized()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_collaborator_form_empty_text_with_message_payload_is_normalized()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Form payload empty text should not shadow caption filtering.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Form payload empty text should not shadow content filtering.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Form payload empty text should not shadow draft filtering.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Form payload empty text should not shadow message filtering.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Common Actions (Examples)]] - document - skills/openclaw/discord/SKILL.md
+- [[Discord (Via `message`)]] - document - skills/openclaw/discord/SKILL.md
+- [[Discord Components v2 preferred over legacy embeds]] - rationale - skills/openclaw/discord/SKILL.md
+- [[Guidelines]] - document - skills/openclaw/discord/SKILL.md
+- [[Musts]] - document - skills/openclaw/discord/SKILL.md
+- [[SKILL_204]] - document - skills/openclaw/discord/SKILL.md
+- [[Targets]] - document - skills/openclaw/discord/SKILL.md
+- [[Writing Style (Discord)]] - document - skills/openclaw/discord/SKILL.md
+- [[message tool (channel=discord)]] - concept - skills/openclaw/discord/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,12 +26,3 @@ members: 8
 TABLE source_file, type FROM #community/Community_887
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 12 edges to [[_COMMUNITY_Community 3]]
-
-## Top bridge nodes
-- [[.test_collaborator_form_empty_text_with_message_payload_is_normalized()]] - degree 5, connects to 1 community
-- [[.test_collaborator_form_empty_text_with_content_payload_is_normalized()]] - degree 5, connects to 1 community
-- [[.test_collaborator_form_empty_text_with_draft_payload_is_normalized()]] - degree 5, connects to 1 community
-- [[.test_collaborator_form_empty_text_with_caption_payload_is_normalized()]] - degree 4, connects to 1 community

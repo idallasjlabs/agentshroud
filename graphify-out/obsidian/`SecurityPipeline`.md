@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/pipeline.py.md"
 type: "document"
-community: "Community 692"
+community: "Community 741"
 location: "L169"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_692
+  - community/Community_741
 ---
 
 # `SecurityPipeline`
@@ -24,4 +24,4 @@ tags:
 - [[Related Notes_73]] - `contains` [EXTRACTED]
 - [[Security Pipeline Flow]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_692
+#graphify/document #graphify/EXTRACTED #community/Community_741

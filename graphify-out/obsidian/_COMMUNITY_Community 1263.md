@@ -1,17 +1,20 @@
 ---
 type: community
-members: 4
+cohesion: 0.40
+members: 5
 ---
 
 # Community 1263
 
-**Members:** 4 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[Audit Branch (Merge Regression Detection)]] - document - .agents/skills/i-ab/SKILL.md
-- [[GSDE&G Team]] - concept - .agents/skills/i-aws/SKILL.md
-- [[GSDL-715 (Merge Regression Ticket)]] - concept - .agents/skills/i-ab/SKILL.md
-- [[i-crpr — Production-Ready PR Skill]] - document - .agents/skills/i-crpr/SKILL.md
+- [[2. Security Value Audit — Real Protection vs. Theater Assessment]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
+- [[⚠️ MEDIUM-VALUE COMPONENTS (Good Intent, Implementation Gaps)]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
+- [[✅ HIGH-VALUE SECURITY COMPONENTS (Real Protection)]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
+- [[✅ OVERALL ASSESSMENT GENUINE SECURITY FRAMEWORK]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
+- [[🔍 NEEDS STRENGTHENING (Risk of Security Theater)]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,8 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 518]]
+- 1 edge to [[_COMMUNITY_Community 133]]
 
 ## Top bridge nodes
-- [[Audit Branch (Merge Regression Detection)]] - degree 4, connects to 1 community
-- [[GSDE&G Team]] - degree 2, connects to 1 community
+- [[2. Security Value Audit — Real Protection vs. Theater Assessment]] - degree 5, connects to 1 community

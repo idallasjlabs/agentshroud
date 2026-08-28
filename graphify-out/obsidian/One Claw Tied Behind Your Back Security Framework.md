@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/SKILL.md"
 type: "concept"
-community: "Community 252"
+community: "Community 253"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_252
+  - community/Community_253
 ---
 
 # "One Claw Tied Behind Your Back" Security Framework
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Browser — Secure Browser Automation (SKILL)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_252
+#graphify/concept #graphify/EXTRACTED #community/Community_253

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-19-incident-response.png"
 type: "image"
-community: "Community 320"
+community: "Community 492"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Community_320
+  - community/Community_492
 ---
 
 # Severity matrix P1 Critical / P2 High / P3 Medium / P4 Low, with owners and response windows
@@ -16,4 +16,4 @@ tags:
 - [[Incident Response Severity Flowchart]] - `conceptually_related_to` [EXTRACTED]
 - [[Troubleshooting Runbook Decision Tree]] - `semantically_similar_to` [INFERRED]
 
-#graphify/image #graphify/EXTRACTED #community/Community_320
+#graphify/image #graphify/EXTRACTED #community/Community_492

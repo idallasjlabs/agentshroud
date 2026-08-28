@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_simple.py"
 type: "code"
-community: "Community 754"
+community: "Config Validation & Router"
 location: "L236"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_754
+  - community/Config_Validation__Router
 ---
 
 # test_forward_request_valid()
@@ -16,4 +16,4 @@ tags:
 - [[Test ForwardRequest with valid data]] - `rationale_for` [EXTRACTED]
 - [[test_main_simple.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_754
+#graphify/code #graphify/EXTRACTED #community/Config_Validation__Router

@@ -1,42 +1,53 @@
 ---
 type: community
-members: 29
+cohesion: 0.05
+members: 38
 ---
 
 # Community 180
 
-**Members:** 29 nodes
+**Cohesion:** 0.05 - loosely connected
+**Members:** 38 nodes
 
 ## Members
-- [[.__init__()_90]] - code - gateway/security/key_vault.py
-- [[.test_delete_key()]] - code - gateway/tests/test_key_vault.py
-- [[.test_inject_auth_header()]] - code - gateway/tests/test_key_vault.py
-- [[.test_inject_fails_for_unscoped()]] - code - gateway/tests/test_key_vault.py
-- [[.test_inject_preserves_existing_headers()]] - code - gateway/tests/test_key_vault.py
-- [[.test_key_not_found()]] - code - gateway/tests/test_key_vault.py
-- [[.test_key_redacted_from_string()]] - code - gateway/tests/test_key_vault.py
-- [[.test_list_keys_no_values()]] - code - gateway/tests/test_key_vault.py
-- [[.test_multiple_keys_redacted()]] - code - gateway/tests/test_key_vault.py
-- [[.test_no_keys_unchanged()]] - code - gateway/tests/test_key_vault.py
-- [[.test_old_key_in_redaction_after_rotation()]] - code - gateway/tests/test_key_vault.py
-- [[.test_partial_key_redacted()]] - code - gateway/tests/test_key_vault.py
-- [[.test_rotate_key()]] - code - gateway/tests/test_key_vault.py
-- [[.test_rotate_nonexistent_raises()]] - code - gateway/tests/test_key_vault.py
-- [[.test_rotation_logged()]] - code - gateway/tests/test_key_vault.py
-- [[.test_scope_enforcement_logged()]] - code - gateway/tests/test_key_vault.py
-- [[.test_scoped_agent_can_access()]] - code - gateway/tests/test_key_vault.py
-- [[.test_store_and_retrieve()]] - code - gateway/tests/test_key_vault.py
-- [[.test_unscoped_agent_denied()]] - code - gateway/tests/test_key_vault.py
-- [[.test_wildcard_scope_allows_all()]] - code - gateway/tests/test_key_vault.py
-- [[KeyInjector]] - code - gateway/security/key_vault.py
-- [[TestKeyInjection]] - code - gateway/tests/test_key_vault.py
-- [[TestKeyRedaction]] - code - gateway/tests/test_key_vault.py
-- [[TestKeyRotation]] - code - gateway/tests/test_key_vault.py
-- [[TestKeyScoping]] - code - gateway/tests/test_key_vault.py
-- [[TestKeyStorage]] - code - gateway/tests/test_key_vault.py
-- [[config()]] - code - gateway/tests/test_key_vault.py
-- [[test_key_vault.py]] - code - gateway/tests/test_key_vault.py
-- [[vault()]] - code - gateway/tests/test_key_vault.py
+- [[Admin (admin)]] - document - docs/security/access-control-matrix.md
+- [[Administrative Roles]] - document - docs/security/access-control-matrix.md
+- [[Agent Management]] - document - docs/security/access-control-matrix.md
+- [[Agent Operational Permissions]] - document - docs/security/access-control-matrix.md
+- [[Agent Trust Levels]] - document - docs/security/access-control-matrix.md
+- [[AgentShroud Access Control Matrix]] - document - docs/security/access-control-matrix.md
+- [[Approval Queue Management]] - document - docs/security/access-control-matrix.md
+- [[Automatic Progression Criteria]] - document - docs/security/access-control-matrix.md
+- [[Category A Safe Operations (All Levels)]] - document - docs/security/access-control-matrix.md
+- [[Category B Standard Operations (L1+)]] - document - docs/security/access-control-matrix.md
+- [[Category C Privileged Operations (L2+)]] - document - docs/security/access-control-matrix.md
+- [[Category D Administrative Operations (L3+)]] - document - docs/security/access-control-matrix.md
+- [[Category E Critical Operations (L4 + Manual Approval)]] - document - docs/security/access-control-matrix.md
+- [[Data Handling Permissions]] - document - docs/security/access-control-matrix.md
+- [[Dynamic Permission Adjustment]] - document - docs/security/access-control-matrix.md
+- [[External Service Access]] - document - docs/security/access-control-matrix.md
+- [[Level 0 → Level 1]] - document - docs/security/access-control-matrix.md
+- [[Level 1 → Level 2]] - document - docs/security/access-control-matrix.md
+- [[Level 2 → Level 3]] - document - docs/security/access-control-matrix.md
+- [[Level 3 → Level 4]] - document - docs/security/access-control-matrix.md
+- [[MCP Proxy Tool Authorization]] - document - docs/security/access-control-matrix.md
+- [[Monitoring and Audit]] - document - docs/security/access-control-matrix.md
+- [[Operator (operator)]] - document - docs/security/access-control-matrix.md
+- [[Overview_12]] - document - docs/security/access-control-matrix.md
+- [[Permission Matrix]] - document - docs/security/access-control-matrix.md
+- [[RBAC Role Definitions]] - document - docs/security/access-control-matrix.md
+- [[Recovery Timeframes]] - document - docs/security/access-control-matrix.md
+- [[Security Violation Penalties]] - document - docs/security/access-control-matrix.md
+- [[System Administration]] - document - docs/security/access-control-matrix.md
+- [[Tool Categories and Trust Requirements]] - document - docs/security/access-control-matrix.md
+- [[Tool and Capability Access]] - document - docs/security/access-control-matrix.md
+- [[Trust Degradation Rules]] - document - docs/security/access-control-matrix.md
+- [[Trust Level 0 (agent_l0)]] - document - docs/security/access-control-matrix.md
+- [[Trust Level 1 (agent_l1)]] - document - docs/security/access-control-matrix.md
+- [[Trust Level 2 (agent_l2)]] - document - docs/security/access-control-matrix.md
+- [[Trust Level 3 (agent_l3)]] - document - docs/security/access-control-matrix.md
+- [[Trust Level Progression Rules]] - document - docs/security/access-control-matrix.md
+- [[Viewer (viewer)]] - document - docs/security/access-control-matrix.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -46,12 +57,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 17 edges to [[_COMMUNITY_Community 22]]
-- 10 edges to [[_COMMUNITY_Community 382]]
+- 1 edge to [[_COMMUNITY_Community 92]]
 
 ## Top bridge nodes
-- [[KeyInjector]] - degree 14, connects to 2 communities
-- [[test_key_vault.py]] - degree 13, connects to 2 communities
-- [[TestKeyStorage]] - degree 9, connects to 2 communities
-- [[TestKeyScoping]] - degree 9, connects to 2 communities
-- [[TestKeyRedaction]] - degree 9, connects to 2 communities
+- [[AgentShroud Access Control Matrix]] - degree 7, connects to 1 community

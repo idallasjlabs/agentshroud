@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 1.00
 members: 2
 ---
 
 # Community 1452
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[SKILL_119]] - document - docker/config/hermes/skills/i-sre/SKILL.md
-- [[Skill sre_1]] - document - docker/config/hermes/skills/i-sre/SKILL.md
+- [[.gitguardian.yaml — ggshield CLI secret scanning allowlist config]] - document - .gitguardian.yaml
+- [[GitGuardian ignored-paths + ignored-matches for synthetic test fixtures]] - concept - .gitguardian.yaml
 
 ## Live Query (requires Dataview plugin)
 

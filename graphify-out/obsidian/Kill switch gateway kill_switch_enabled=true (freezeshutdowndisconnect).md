@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-18-runbook.svg"
 type: "concept"
-community: "Community 1033"
+community: "Community 1038"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1033
+  - community/Community_1038
 ---
 
 # Kill switch: gateway kill_switch_enabled=true (freeze/shutdown/disconnect)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Security alert (blocked domain, HIGH MCP threat, canary token triggered)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1033
+#graphify/concept #graphify/EXTRACTED #community/Community_1038

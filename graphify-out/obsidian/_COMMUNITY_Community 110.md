@@ -1,49 +1,67 @@
 ---
 type: community
-members: 36
+cohesion: 0.08
+members: 52
 ---
 
 # Community 110
 
-**Members:** 36 nodes
+**Cohesion:** 0.08 - loosely connected
+**Members:** 52 nodes
 
 ## Members
-- [[.__init__()_118]] - code - gateway/security/skill_guard.py
-- [[._line_at()]] - code - gateway/security/skill_guard.py
-- [[._scan_opaque_blobs()]] - code - gateway/security/skill_guard.py
-- [[.blocked()]] - code - gateway/security/skill_guard.py
-- [[.extend()]] - code - gateway/security/skill_guard.py
-- [[.recommendation()]] - code - gateway/security/skill_guard.py
-- [[.scan_file()_1]] - code - gateway/security/skill_guard.py
-- [[.scan_skill_tree()]] - code - gateway/security/skill_guard.py
-- [[.severity()]] - code - gateway/security/skill_guard.py
-- [[A single supply-chain finding within a scanned skill artefact.]] - rationale - gateway/security/skill_guard.py
-- [[ALLOW below MEDIUM, FLAG at MEDIUMHIGH, BLOCK at CRITICAL.]] - rationale - gateway/security/skill_guard.py
-- [[Aggregated result of scanning a skill file or an entire skill tree.]] - rationale - gateway/security/skill_guard.py
-- [[CompletedProcess_3]] - code - gateway/tests/test_skill_guard.py
-- [[Finding]] - code - gateway/security/skill_guard.py
-- [[Flag long opaque base64hex runs as probable obfuscated payloads.]] - rationale - gateway/security/skill_guard.py
-- [[Highest severity across all findings (``NONE`` when clean).]] - rationale - gateway/security/skill_guard.py
-- [[Path_22]] - code - gateway/skills/scan.py
-- [[Read every manifest entry under source, failing CLOSED on unreadable files.]] - rationale - gateway/skills/scan.py
-- [[Recommendation]] - code - gateway/security/skill_guard.py
-- [[Scan every file in a skillMCPagent tree and aggregate findings.          ``fil]] - rationale - gateway/security/skill_guard.py
-- [[Scan one skill artefact (``name`` = relative path, ``content`` = text).]] - rationale - gateway/security/skill_guard.py
-- [[Scan skill  MCP  agent-definition payloads for supply-chain risk.      Usage]] - rationale - gateway/security/skill_guard.py
-- [[ScanResult_2]] - code - gateway/security/skill_guard.py
-- [[ScanResult_3]] - code - gateway/skills/scan.py
-- [[ScanResult_4]] - code - gateway/tests/test_skill_guard.py
-- [[SkillGuard]] - code - gateway/security/skill_guard.py
-- [[SkillGuard.scan_skill_tree()]] - code - gateway/security/skill_guard.py
-- [[SkillsManifest.from_source()]] - code - gateway/skills/manifest.py
-- [[What the caller should do with the scanned skill.]] - rationale - gateway/security/skill_guard.py
-- [[_Rule]] - code - gateway/security/skill_guard.py
-- [[_build_tree()]] - code - gateway/skills/scan.py
-- [[_c()]] - code - gateway/security/skill_guard.py
-- [[_print_findings()]] - code - gateway/skills/scan.py
-- [[main()_13]] - code - gateway/skills/scan.py
-- [[scan.py]] - code - gateway/skills/scan.py
-- [[skill_guard.py]] - code - gateway/security/skill_guard.py
+- [[.__init__()_139]] - code - gateway/tests/test_a2a_proxy.py
+- [[.__init__()_137]] - code - gateway/tests/test_a2a_proxy.py
+- [[.forward()_2]] - code - gateway/tests/test_a2a_proxy.py
+- [[A SendMessage containing PII must have it redacted in what's forwarded     to He]] - rationale - gateway/tests/test_a2a_proxy.py
+- [[A filedata Part must not be silently dropped or mis-scanned as text —     it's]] - rationale - gateway/tests/test_a2a_proxy.py
+- [[A2APolicyEngine_3]] - code - gateway/tests/test_a2a_proxy.py
+- [[A2AProxy_1]] - code - gateway/tests/test_a2a_proxy.py
+- [[An unparseable request must be rejected through the same     process_inbound_req]] - rationale - gateway/tests/test_a2a_proxy.py
+- [[GET .well-knownagent-card.json must pass through with NO authpeer     require]] - rationale - gateway/tests/test_a2a_proxy.py
+- [[Pre-1.0 peers send lowercasepath-style method names — Hermes accepts     both f]] - rationale - gateway/tests/test_a2a_proxy.py
+- [[Records what it was asked to forward; returns a canned response.]] - rationale - gateway/tests/test_a2a_proxy.py
+- [[Token comparison must not leak timing information — same guarantee as     Hermes]] - rationale - gateway/tests/test_a2a_proxy.py
+- [[Upstream Hermes Gap 80534 — Peer Identity Resolved From SocketX-Forwarded-For Instead Of Bearer Token]] - concept - gateway/tests/test_a2a_proxy.py
+- [[_StubAuditStore]] - code - gateway/tests/test_a2a_proxy.py
+- [[_StubForwarder]] - code - gateway/tests/test_a2a_proxy.py
+- [[_base_policy_engine()]] - code - gateway/tests/test_a2a_proxy.py
+- [[_jsonrpc()_1]] - code - gateway/tests/test_a2a_proxy.py
+- [[forwarder()]] - code - gateway/tests/test_a2a_proxy.py
+- [[proxy()_1]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_a2a_proxy.py]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_agent_card_discovery_is_never_policy_gated()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_agent_card_discovery_is_still_audited()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_extract_text_concatenates_text_parts()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_extract_text_empty_message_returns_empty_string()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_extract_text_flags_binary_parts_without_scanning_them()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_extract_text_handles_missing_parts_key()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_extract_text_skips_non_dict_entries_in_parts()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_parse_jsonrpc_accepts_legacy_path_style_method_alias()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_parse_jsonrpc_extracts_callback_url_from_set_push_config()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_parse_jsonrpc_extracts_method_and_task_id_from_send_message()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_parse_jsonrpc_extracts_task_id_from_get_task()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_parse_jsonrpc_missing_method_field_raises_value_error()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_parse_jsonrpc_non_dict_body_raises_value_error()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_parse_jsonrpc_tolerates_non_dict_params()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_parse_jsonrpc_unknown_method_raises_value_error()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_process_inbound_request_allowed_peer_low_risk_forwards()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_process_inbound_request_binary_part_is_forwarded_unscanned_and_flagged()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_process_inbound_request_denial_is_also_logged_to_audit_store()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_process_inbound_request_denied_peer_never_reaches_hermes()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_process_inbound_request_high_risk_method_without_approval_queue_denied()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_process_inbound_request_logs_to_audit_store_when_configured()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_process_inbound_request_malformed_body_is_blocked()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_process_inbound_request_missing_auth_is_blocked_and_never_forwarded()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_process_inbound_request_pii_in_message_is_redacted_before_forwarding()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_process_inbound_request_task_ownership_violation_blocked()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_process_inbound_request_unknown_token_is_blocked()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_resolve_peer_id_from_known_bearer_token()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_resolve_peer_id_malformed_header_returns_none()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_resolve_peer_id_missing_header_returns_none()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_resolve_peer_id_unknown_token_returns_none()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_resolve_peer_id_uses_constant_time_comparison()]] - code - gateway/tests/test_a2a_proxy.py
+- [[test_resolve_peer_id_whitespace_only_token_returns_none()]] - code - gateway/tests/test_a2a_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -53,16 +71,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 39 edges to [[_COMMUNITY_Community 100]]
-- 27 edges to [[_COMMUNITY_Community 152]]
-- 4 edges to [[_COMMUNITY_Community 71]]
-- 1 edge to [[_COMMUNITY_Community 78]]
-- 1 edge to [[_COMMUNITY_Community 45]]
-- 1 edge to [[_COMMUNITY_Community 1349]]
+- 21 edges to [[_COMMUNITY_Community 205]]
+- 14 edges to [[_COMMUNITY_Community 45]]
+- 11 edges to [[_COMMUNITY_Community 81]]
 
 ## Top bridge nodes
-- [[SkillGuard]] - degree 34, connects to 5 communities
-- [[skill_guard.py]] - degree 9, connects to 3 communities
-- [[ScanResult_2]] - degree 32, connects to 2 communities
-- [[Recommendation]] - degree 27, connects to 2 communities
-- [[scan.py]] - degree 8, connects to 2 communities
+- [[test_a2a_proxy.py]] - degree 50, connects to 3 communities
+- [[A2AProxy_1]] - degree 27, connects to 3 communities
+- [[_StubForwarder]] - degree 26, connects to 3 communities
+- [[_StubAuditStore]] - degree 12, connects to 3 communities
+- [[A2APolicyEngine_3]] - degree 10, connects to 3 communities

@@ -1,31 +1,30 @@
 ---
 type: community
-members: 18
+cohesion: 0.13
+members: 15
 ---
 
 # Community 638
 
-**Members:** 18 nodes
+**Cohesion:** 0.13 - loosely connected
+**Members:** 15 nodes
 
 ## Members
-- [[1. Container Isolation]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[2. Capability Dropping]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[2. Network Isolation]] - document - docs/security/container-policy.md
-- [[2.1 Docker Networks]] - document - docs/security/container-policy.md
-- [[2.2 Exposed Ports]] - document - docs/security/container-policy.md
-- [[2.3 Tailscale Network]] - document - docs/security/container-policy.md
-- [[3. Resource Limits]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[4. Network Isolation]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[5. Audit Ledger]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[5. Network Isolation]] - document - docs/security/security-architecture.md
-- [[6. Approval Queue]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[6. DNS Filter]] - document - docs/security/security-architecture.md
-- [[7. Secrets Management]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[7. TLS Termination and Inspection]] - document - docs/security/security-architecture.md
-- [[8. Bot Identity Separation]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[8. Network Rate Limiter]] - document - docs/security/security-architecture.md
-- [[Layer 2 Network Security (4 Modules)]] - document - docs/security/security-architecture.md
-- [[Security Controls]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[Environment Variables_14]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
+- [[Function Details_41]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
+- [[Invisible Characters Stripped]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
+- [[Key Classes  Functions_44]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
+- [[Mode Enforce vs Monitor_9]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
+- [[Purpose_162]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
+- [[Related_48]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
+- [[Responsibilities_46]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
+- [[Threat Model_17]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
+- [[Usage Context]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
+- [[detect_base64_payloads(text)]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
+- [[input_normalizer.py_2]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
+- [[input_normalizer.py_1]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
+- [[normalize_input(text)]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
+- [[strip_markdown_exfil(text)]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,14 +32,3 @@ members: 18
 TABLE source_file, type FROM #community/Community_638
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 154]]
-- 1 edge to [[_COMMUNITY_Community 312]]
-- 1 edge to [[_COMMUNITY_Community 421]]
-- 1 edge to [[_COMMUNITY_Community 276]]
-
-## Top bridge nodes
-- [[Security Controls]] - degree 11, connects to 2 communities
-- [[2. Network Isolation]] - degree 6, connects to 1 community
-- [[Layer 2 Network Security (4 Modules)]] - degree 6, connects to 1 community

@@ -1,19 +1,21 @@
 ---
 type: community
+cohesion: 0.33
 members: 6
 ---
 
 # Community 1101
 
+**Cohesion:** 0.33 - loosely connected
 **Members:** 6 nodes
 
 ## Members
-- [[_seed_cron()]] - code - docker/bots/hermes/init-config.sh
-- [[_seed_cron() (idempotent native cron job seeding)]] - code - docker/bots/hermes/init-config.sh
-- [[_write_soul()]] - code - docker/bots/hermes/init-config.sh
-- [[_write_soul() (ownership-tolerant SOUL.md write)]] - code - docker/bots/hermes/init-config.sh
-- [[init-config.sh]] - code - docker/bots/hermes/init-config.sh
-- [[init-config.sh script]] - code - docker/bots/hermes/init-config.sh
+- [[1password_service_account Docker secret]] - concept - docs/diagrams/images/diagram-22-dependency-graph.svg
+- [[agentshroud-bot container (starts after gateway healthy)]] - concept - docs/diagrams/images/diagram-22-dependency-graph.svg
+- [[agentshroud-gateway container (starts first)]] - concept - docs/diagrams/images/diagram-22-dependency-graph.svg
+- [[docker-agentshroud image (FROM node22-bookworm-slim)]] - concept - docs/diagrams/images/diagram-22-dependency-graph.svg
+- [[docker-gateway image (FROM python3.11-slim, gatewayDockerfile)]] - concept - docs/diagrams/images/diagram-22-dependency-graph.svg
+- [[gateway_password.txt Docker secret]] - concept - docs/diagrams/images/diagram-22-dependency-graph.svg
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,10 +23,3 @@ members: 6
 TABLE source_file, type FROM #community/Community_1101
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 715]]
-- 1 edge to [[_COMMUNITY_Community 391]]
-
-## Top bridge nodes
-- [[init-config.sh]] - degree 7, connects to 2 communities

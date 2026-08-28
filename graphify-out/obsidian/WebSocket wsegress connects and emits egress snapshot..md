@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dashboard.py"
 type: "rationale"
-community: "Community 0"
+community: "Community 21"
 location: "L179"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_0
+  - community/Community_21
 ---
 
 # WebSocket /ws/egress connects and emits egress snapshot.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_ws_egress_connects_and_snapshot()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_0
+#graphify/rationale #graphify/EXTRACTED #community/Community_21

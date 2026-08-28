@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/event_adapter.py"
 type: "code"
-community: "Community 501"
+community: "SOC Collaborators"
 location: "L92"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_501
+  - community/SOC_Collaborators
 ---
 
 # from_pipeline_result()
@@ -18,4 +18,4 @@ tags:
 - [[SecurityEvent_1]] - `calls` [EXTRACTED]
 - [[event_adapter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_501
+#graphify/code #graphify/EXTRACTED #community/SOC_Collaborators

@@ -12,6 +12,6 @@ tags:
 # "Calendar/Contacts not found"
 
 ## Connections
-- [[Troubleshooting_1]] - `contains` [EXTRACTED]
+- [[Troubleshooting]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Community_316

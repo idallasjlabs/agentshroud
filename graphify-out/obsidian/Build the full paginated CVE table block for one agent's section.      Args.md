@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/generate-cve-page.py"
 type: "rationale"
-community: "Community 990"
+community: "Community 380"
 location: "L194"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_990
+  - community/Community_380
 ---
 
 # Build the full paginated CVE table block for one agent's section.      Args:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_build_table()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_990
+#graphify/rationale #graphify/EXTRACTED #community/Community_380

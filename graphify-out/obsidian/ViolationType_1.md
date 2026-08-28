@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "Community 35"
+community: "Progressive Trust"
 location: "L221"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_35
+  - community/Progressive_Trust
 ---
 
 # ViolationType
@@ -17,4 +17,4 @@ tags:
 - [[TrustLevel]] - `uses` [INFERRED]
 - [[ViolationType]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_35
+#graphify/code #graphify/INFERRED #community/Progressive_Trust

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/USPTO_TRADEMARK_APPLICATION.md"
 type: "document"
-community: "Community 1253"
+community: "Community 1249"
 location: "L265"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1253
+  - community/Community_1249
 ---
 
 # SECTION 9: IMPORTANT NOTES
@@ -18,4 +18,4 @@ tags:
 - [[Trademark vs. Patent]] - `contains` [EXTRACTED]
 - [[Why Standard Character Mark First]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1253
+#graphify/document #graphify/EXTRACTED #community/Community_1249

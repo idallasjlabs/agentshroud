@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1208
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_68]] - document - docker/config/hermes/skills/i-sec/README.md
-- [[README_73]] - document - docker/config/hermes/skills/i-sec/README.md
-- [[Related Skills_74]] - document - docker/config/hermes/skills/i-sec/README.md
-- [[Security Review (SEC)_1]] - document - docker/config/hermes/skills/i-sec/README.md
-- [[Usage_75]] - document - docker/config/hermes/skills/i-sec/README.md
+- [[Purpose_73]] - document - docker/config/hermes/skills/i-vulcan/README.md
+- [[README_78]] - document - docker/config/hermes/skills/i-vulcan/README.md
+- [[Related Skills_79]] - document - docker/config/hermes/skills/i-vulcan/README.md
+- [[Usage_80]] - document - docker/config/hermes/skills/i-vulcan/README.md
+- [[Vulcan — Subject Matter Auditor_2]] - document - docker/config/hermes/skills/i-vulcan/README.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/metadata_guard.py"
 type: "rationale"
-community: "Community 585"
+community: "Community 581"
 location: "L183"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_585
+  - community/Community_581
 ---
 
 # Look up a document tag by its SHA-256 content hash.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_document_tag()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_585
+#graphify/rationale #graphify/EXTRACTED #community/Community_581

@@ -1,12 +1,12 @@
 ---
 source_file: "AGENTS.md"
 type: "document"
-community: "Community 350"
+community: "Community 280"
 location: "L51"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_350
+  - community/Community_280
 ---
 
 # A) Test Augmenter (Primary Job)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[2) WHAT YOU SHOULD DO (YOUR JOBS)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_350
+#graphify/document #graphify/EXTRACTED #community/Community_280

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_egress_endpoints.py"
 type: "rationale"
-community: "Community 374"
+community: "Community 197"
 location: "L550"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_374
+  - community/Community_197
 ---
 
 # Status query param filters by summary.status.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_soc_scanners_recent_status_filter()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_374
+#graphify/rationale #graphify/EXTRACTED #community/Community_197

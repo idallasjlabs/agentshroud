@@ -1,54 +1,57 @@
 ---
 type: community
-members: 41
+cohesion: 0.08
+members: 42
 ---
 
 # Community 157
 
-**Members:** 41 nodes
+**Cohesion:** 0.08 - loosely connected
+**Members:** 42 nodes
 
 ## Members
-- [[.__init__()_36]] - code - gateway/proxy/slack_socket_client.py
-- [[._connect_and_handle()]] - code - gateway/proxy/slack_socket_client.py
-- [[._get_wss_url()]] - code - gateway/proxy/slack_socket_client.py
-- [[.run()]] - code - gateway/proxy/slack_socket_client.py
-- [[.stop()_4]] - code - gateway/proxy/slack_socket_client.py
-- [[.test_capped_at_cap_for_large_attempts()]] - code - gateway/tests/test_slack_socket_client.py
-- [[.test_events_api_envelope_dispatches_handle_event()]] - code - gateway/tests/test_slack_socket_client.py
-- [[.test_first_attempt_uses_base()]] - code - gateway/tests/test_slack_socket_client.py
-- [[.test_get_wss_url_raises_on_api_error()]] - code - gateway/tests/test_slack_socket_client.py
-- [[.test_get_wss_url_returns_url_on_success()]] - code - gateway/tests/test_slack_socket_client.py
-- [[.test_grows_exponentially_with_attempt()]] - code - gateway/tests/test_slack_socket_client.py
-- [[.test_hello_message_not_dispatched()]] - code - gateway/tests/test_slack_socket_client.py
-- [[.test_jitter_stays_within_half_to_full_ceiling()]] - code - gateway/tests/test_slack_socket_client.py
-- [[.test_run_resets_backoff_after_successful_connect()]] - code - gateway/tests/test_slack_socket_client.py
-- [[.test_stop_sets_running_false()]] - code - gateway/tests/test_slack_socket_client.py
-- [[A successful WSS connection resets the attempt counter to 0.]] - rationale - gateway/tests/test_slack_socket_client.py
-- [[Attempt 0 waits at most the base interval (1s default).]] - rationale - gateway/tests/test_slack_socket_client.py
-- [[Backoff never exceeds the cap, even for huge attempt counts.]] - rationale - gateway/tests/test_slack_socket_client.py
-- [[Call apps.connections.open to get a fresh WSS URL.]] - rationale - gateway/proxy/slack_socket_client.py
-- [[Capped exponential backoff with jitter for reconnect attempts.      Returns a wa]] - rationale - gateway/proxy/slack_socket_client.py
-- [[Jitter scales the wait between 50% and 100% of the ceiling.]] - rationale - gateway/tests/test_slack_socket_client.py
-- [[Main reconnect loop. Runs until stop() is called.]] - rationale - gateway/proxy/slack_socket_client.py
-- [[Maintains a persistent Socket Mode WebSocket connection to Slack.      Call run(]] - rationale - gateway/proxy/slack_socket_client.py
-- [[Open the WebSocket and process events until Slack requests disconnect.]] - rationale - gateway/proxy/slack_socket_client.py
-- [[Signal the run loop to exit.]] - rationale - gateway/proxy/slack_socket_client.py
-- [[SlackSocketClient]] - code - gateway/proxy/slack_socket_client.py
-- [[SlackSocketClient_1]] - code - gateway/tests/test_slack_socket_client.py
-- [[TestComputeBackoff]] - code - gateway/tests/test_slack_socket_client.py
-- [[TestSlackSocketClient]] - code - gateway/tests/test_slack_socket_client.py
-- [[Unit tests for SlackSocketClient.]] - rationale - gateway/tests/test_slack_socket_client.py
-- [[Unit tests for the reconnect backoff calculation.]] - rationale - gateway/tests/test_slack_socket_client.py
-- [[With jitter pinned to max, backoff doubles per attempt until the cap.]] - rationale - gateway/tests/test_slack_socket_client.py
-- [[_get_wss_url raises RuntimeError when apps.connections.open fails.]] - rationale - gateway/tests/test_slack_socket_client.py
-- [[_get_wss_url returns the WSS URL from apps.connections.open.]] - rationale - gateway/tests/test_slack_socket_client.py
-- [[_make_client()]] - code - gateway/tests/test_slack_socket_client.py
-- [[compute_backoff()]] - code - gateway/proxy/slack_socket_client.py
-- [[events_api envelopes call proxy.handle_event with the payload.]] - rationale - gateway/tests/test_slack_socket_client.py
-- [[hello messages are silently consumed without calling handle_event.]] - rationale - gateway/tests/test_slack_socket_client.py
-- [[slack_socket_client.py]] - code - gateway/proxy/slack_socket_client.py
-- [[stop() signals the run loop to exit.]] - rationale - gateway/tests/test_slack_socket_client.py
-- [[test_slack_socket_client.py]] - code - gateway/tests/test_slack_socket_client.py
+- [[.test_get_module_mode_enforce_override()]] - code - gateway/tests/test_enforce_defaults.py
+- [[.test_get_module_mode_no_env_override()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_get_module_mode_no_override()]] - code - gateway/tests/test_enforce_defaults.py
+- [[.test_get_module_mode_with_override()]] - code - gateway/tests/test_enforce_defaults.py
+- [[.test_global_monitor_override_downgrades_all()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_monitor_mode_warning_message_format()]] - code - gateway/tests/test_enforce_defaults.py
+- [[.test_monitor_mode_warnings_all_modules()]] - code - gateway/tests/test_enforce_defaults.py
+- [[.test_monitor_mode_warnings_no_warnings_in_enforce()]] - code - gateway/tests/test_enforce_defaults.py
+- [[.test_pii_sanitizer_default_action()]] - code - gateway/tests/test_enforce_defaults.py
+- [[.test_security_config_all_defaults_enforce()]] - code - gateway/tests/test_enforce_defaults.py
+- [[.test_security_config_dns_filter_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_security_config_egress_filter_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_security_config_egress_monitor_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_security_config_killswitch_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_security_config_mcp_proxy_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_security_config_pii_sanitizer_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_security_config_prompt_guard_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_security_config_subagent_monitor_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_security_module_config_default_mode()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_security_module_config_defaults()]] - code - gateway/tests/test_enforce_defaults.py
+- [[AGENTSHROUD_MODE=monitor must downgrade ALL modules to monitor.]] - rationale - gateway/tests/test_all_modules_enforce.py
+- [[Complete security configuration]] - rationale - gateway/ingest_api/config.py
+- [[Log warnings for any core modules running in monitor mode.]] - rationale - gateway/ingest_api/config.py
+- [[Return module mode, respecting the global permissive override.]] - rationale - gateway/ingest_api/config.py
+- [[Security module configuration]] - rationale - gateway/ingest_api/config.py
+- [[SecurityConfig_3]] - code - gateway/ingest_api/config.py
+- [[SecurityModuleConfig]] - code - gateway/ingest_api/config.py
+- [[Test get_module_mode returns enforce when explicitly set.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test get_module_mode returns enforce when no override set.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test get_module_mode returns monitor when AGENTSHROUD_MODE=monitor.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test that PII sanitizer defaults to redact action.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test that SecurityModuleConfig defaults to enforce mode.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test that all core modules default to enforce mode.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test that core security modules default to enforce mode.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test that monitor mode warnings contain required information.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test that no warnings are logged when all modules are in enforce mode.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test that warnings are logged for all core modules in monitor mode.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[TestEnforceDefaults]] - code - gateway/tests/test_enforce_defaults.py
+- [[TestSecurityConfigDefaults]] - code - gateway/tests/test_all_modules_enforce.py
+- [[Verify SecurityConfig and SecurityModuleConfig default to enforce.]] - rationale - gateway/tests/test_all_modules_enforce.py
+- [[check_monitor_mode_warnings()]] - code - gateway/ingest_api/config.py
+- [[get_module_mode()]] - code - gateway/ingest_api/config.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -58,12 +61,25 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 109]]
-- 2 edges to [[_COMMUNITY_Community 25]]
+- 22 edges to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
+- 10 edges to [[_COMMUNITY_PII Sanitizer & E2E Tests]]
+- 8 edges to [[_COMMUNITY_Community 43]]
+- 3 edges to [[_COMMUNITY_Security Audit & Drift Detection]]
+- 2 edges to [[_COMMUNITY_Community 14]]
+- 2 edges to [[_COMMUNITY_Community 91]]
+- 2 edges to [[_COMMUNITY_Community 15]]
+- 2 edges to [[_COMMUNITY_Community 78]]
+- 1 edge to [[_COMMUNITY_Community 156]]
+- 1 edge to [[_COMMUNITY_Community 457]]
+- 1 edge to [[_COMMUNITY_Community 95]]
+- 1 edge to [[_COMMUNITY_Community 18]]
+- 1 edge to [[_COMMUNITY_Community 25]]
+- 1 edge to [[_COMMUNITY_Community 160]]
+- 1 edge to [[_COMMUNITY_Community 223]]
 
 ## Top bridge nodes
-- [[SlackSocketClient]] - degree 13, connects to 1 community
-- [[_make_client()]] - degree 10, connects to 1 community
-- [[.test_events_api_envelope_dispatches_handle_event()]] - degree 4, connects to 1 community
-- [[.test_hello_message_not_dispatched()]] - degree 4, connects to 1 community
-- [[slack_socket_client.py]] - degree 3, connects to 1 community
+- [[TestSecurityConfigDefaults]] - degree 30, connects to 10 communities
+- [[SecurityConfig_3]] - degree 30, connects to 6 communities
+- [[SecurityModuleConfig]] - degree 15, connects to 6 communities
+- [[get_module_mode()]] - degree 14, connects to 5 communities
+- [[check_monitor_mode_warnings()]] - degree 9, connects to 3 communities

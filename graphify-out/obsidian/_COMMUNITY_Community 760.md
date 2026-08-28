@@ -1,25 +1,27 @@
 ---
 type: community
+cohesion: 0.18
 members: 12
 ---
 
 # Community 760
 
+**Cohesion:** 0.18 - loosely connected
 **Members:** 12 nodes
 
 ## Members
-- [[Check gateway and bot status]] - rationale - src/interfaces/chat_console.py
-- [[Display chat console banner]] - rationale - src/interfaces/chat_console.py
-- [[Read gateway password from secrets file or environment.]] - rationale - src/interfaces/chat_console.py
-- [[Send message to OpenClaw via gateway]] - rationale - src/interfaces/chat_console.py
-- [[_read_auth_token()]] - code - src/interfaces/chat_console.py
-- [[chat-console launcher]] - code - scripts/chat-console
-- [[chat_console.py]] - code - src/interfaces/chat_console.py
-- [[check_status()]] - code - src/interfaces/chat_console.py
-- [[main()_32]] - code - src/interfaces/chat_console.py
-- [[print_banner()]] - code - src/interfaces/chat_console.py
-- [[print_help()]] - code - src/interfaces/chat_console.py
-- [[send_message()]] - code - src/interfaces/chat_console.py
+- [[1. Create a parent panel]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
+- [[2. Initialise]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
+- [[3. Set an emotion]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
+- [[4. Reposition]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
+- [[Adding to your project]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
+- [[Emotions]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
+- [[LVGL KAWAII FACE]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
+- [[License_2]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
+- [[README_127]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
+- [[Requirements_1]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
+- [[Thread safety]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
+- [[Usage_127]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
 
 ## Live Query (requires Dataview plugin)
 

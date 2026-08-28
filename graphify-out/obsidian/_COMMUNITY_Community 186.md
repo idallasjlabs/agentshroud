@@ -1,51 +1,52 @@
 ---
 type: community
-members: 38
+cohesion: 0.06
+members: 37
 ---
 
 # Community 186
 
-**Members:** 38 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 37 nodes
 
 ## Members
-- [[1. Add Public Key to Target Host]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[2. Add Host Configuration (Optional but Recommended)]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[3. Test Connection]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Adding Additional Hosts]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Backup SSH Keys]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Backup and Recovery]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Configured Hosts]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Default Settings (All Hosts)]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[From Docker Command Line]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[From OpenClaw Bot (Natural Language)]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Next Steps_8]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[OPENCLAW_SSH_SETUP]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[One-Liner to Add to Pi]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[OpenClaw Bot SSH Configuration]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Problem Bad owner or permissions on ~.sshconfig]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Problem Connection timeout]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Problem Host key verification failed]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Problem Permission denied (publickey)]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Public Key]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Public Key (Copy-Paste Ready)]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Quick Reference_7]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Raspberry Pi (pi-dev)]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Restore SSH Keys]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[SSH Config File Location]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[SSH Configuration Details]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[SSH Key Generated]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Security Considerations]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Setup Instructions]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Step 1 Add Public Key to Raspberry Pi]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Step 2 Test SSH Connection from OpenClaw Bot]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Step 3 Verify from OpenClaw UI or Telegram]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Test Connection]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Troubleshooting_30]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Usage Examples_1]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Verification Checklist_3]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[⚠️ Important Security Notes]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[✅ Security Features Enabled]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[🔐 Credentials in 1Password]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[AgentShroud Docker Configuration]] - document - docker/README.md
+- [[Architecture_1]] - document - docker/README.md
+- [[Check Status_1]] - document - docker/README.md
+- [[Container Runtime Support (SCRUM-92)]] - document - docker/README.md
+- [[Container Stack]] - document - docker/README.md
+- [[Core Configuration]] - document - docker/README.md
+- [[Cron Failure Alerting (SCRUM-61)]] - document - docker/README.md
+- [[Detection contract]] - document - docker/README.md
+- [[Development_1]] - document - docker/README.md
+- [[Documentation_3]] - document - docker/README.md
+- [[Exec into Container]] - document - docker/README.md
+- [[Files]] - document - docker/README.md
+- [[Hermes  HCI]] - document - docker/README.md
+- [[MFA for High-Risk Approvals — IEC 62443 FR1 (SCRUM-93)]] - concept - docker/README.md
+- [[Multi-Bot Shared Report Store (SCRUM-79)]] - document - docker/README.md
+- [[Network DMZ — IEC 62443 FR5 (Restricted Data Flow) · SCRUM-93]] - document - docker/README.md
+- [[Network DMZ — IEC 62443 FR5 (SCRUM-93)]] - concept - docker/README.md
+- [[Next Steps (Phase 4+)]] - document - docker/README.md
+- [[Port Reference]] - document - docker/README.md
+- [[Progressive-Trust Enforcement Mode (SCRUM-78)]] - document - docker/README.md
+- [[Quick Start_1]] - document - docker/README.md
+- [[README_41]] - document - docker/README.md
+- [[Rebuild Containers]] - document - docker/README.md
+- [[Reference]] - document - docker/README.md
+- [[Reproducible dev shell (Nix flake)]] - document - docker/README.md
+- [[SOC Per-Module Enforcement Heat-Map (SCRUM-80)]] - document - docker/README.md
+- [[Secrets_1]] - document - docker/README.md
+- [[Security Features (Deferred to Phase 5+)]] - document - docker/README.md
+- [[Security Features (Implemented)]] - document - docker/README.md
+- [[Start the Stack]] - document - docker/README.md
+- [[Startup Warnings Reference]] - document - docker/README.md
+- [[Stop the Stack_1]] - document - docker/README.md
+- [[Test Chat]] - document - docker/README.md
+- [[Troubleshooting_5]] - document - docker/README.md
+- [[Usage_40]] - document - docker/README.md
+- [[Verify Security]] - document - docker/README.md
+- [[View Logs]] - document - docker/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -55,7 +56,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 90]]
+- 1 edge to [[_COMMUNITY_Community 63]]
+- 1 edge to [[_COMMUNITY_Community 227]]
 
 ## Top bridge nodes
-- [[OpenClaw Bot SSH Configuration]] - degree 13, connects to 1 community
+- [[MFA for High-Risk Approvals — IEC 62443 FR1 (SCRUM-93)]] - degree 3, connects to 1 community
+- [[SOC Per-Module Enforcement Heat-Map (SCRUM-80)]] - degree 2, connects to 1 community

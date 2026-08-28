@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_port_manager.py"
 type: "rationale"
-community: "Community 95"
+community: "Community 94"
 location: "L80"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_95
+  - community/Community_94
 ---
 
 # If all ports in range are excluded, raises RuntimeError.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_raises_if_no_port_found()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_95
+#graphify/rationale #graphify/EXTRACTED #community/Community_94

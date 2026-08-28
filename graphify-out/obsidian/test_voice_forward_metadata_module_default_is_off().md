@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_latency_guard.py"
 type: "code"
-community: "Community 103"
+community: "Community 107"
 location: "L113"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_103
+  - community/Community_107
 ---
 
 # test_voice_forward_metadata_module_default_is_off()
@@ -15,4 +15,4 @@ tags:
 - [[The module-level default flag is OFF unless VG_VOICE_NO_MEMORY is set.]] - `rationale_for` [EXTRACTED]
 - [[test_voice_latency_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_103
+#graphify/code #graphify/EXTRACTED #community/Community_107

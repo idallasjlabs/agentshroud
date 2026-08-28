@@ -1,22 +1,24 @@
 ---
 type: community
+cohesion: 0.31
 members: 9
 ---
 
 # Community 910
 
+**Cohesion:** 0.31 - loosely connected
 **Members:** 9 nodes
 
 ## Members
-- [[Approval Request Workflow (user-facing)]] - concept - docs/user-guide.md
-- [[Command Injection Threat — regex + no-shell exec mitigation]] - rationale - docs/ssh-security-review.md
-- [[Host SpoofingMITM Threat — TOFU model residual risk]] - rationale - docs/ssh-security-review.md
-- [[Option 1 Direct SSH (current approach)]] - concept - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Production Deployment Recommendations]] - concept - docs/ssh-security-review.md
-- [[SSH AllowDeny List Evaluation Order]] - concept - docs/ssh-configuration.md
-- [[SSH Auto-Approve Commands]] - concept - docs/ssh-configuration.md
-- [[SSH Proxy Config Schema (agentshroud.yaml ssh section)]] - concept - docs/ssh-configuration.md
-- [[SSH Proxy Threat Model (6 threats)]] - concept - docs/ssh-security-review.md
+- [[confirm()]] - code - docker/scripts/killswitch.sh
+- [[killswitch.sh]] - code - docker/scripts/killswitch.sh
+- [[killswitch.sh script]] - code - docker/scripts/killswitch.sh
+- [[op-auth-common.sh]] - code - docker/scripts/op-auth-common.sh
+- [[op-auth-common.sh script]] - code - docker/scripts/op-auth-common.sh
+- [[op-wrapper.sh]] - code - docker/scripts/op-wrapper.sh
+- [[op-wrapper.sh script]] - code - docker/scripts/op-wrapper.sh
+- [[op_authenticate()]] - code - docker/scripts/op-auth-common.sh
+- [[usage()_1]] - code - docker/scripts/killswitch.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,9 +26,3 @@ members: 9
 TABLE source_file, type FROM #community/Community_910
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 413]]
-
-## Top bridge nodes
-- [[SSH Proxy Threat Model (6 threats)]] - degree 5, connects to 1 community

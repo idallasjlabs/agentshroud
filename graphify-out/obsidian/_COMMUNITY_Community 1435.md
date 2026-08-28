@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 1.00
 members: 2
 ---
 
 # Community 1435
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[Control-Plane  Data-Plane Separation]] - rationale - docs/planning/HEXSTRIKE_PROXY_PLAN.md
-- [[HexStrike MCP Proxy Plan]] - document - docs/planning/HEXSTRIKE_PROXY_PLAN.md
+- [[SKILL_8]] - document - .agents/skills/i-bdd/SKILL.md
+- [[Skill bdd]] - document - .agents/skills/i-bdd/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

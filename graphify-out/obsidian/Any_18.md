@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "Community 447"
+community: "Community 473"
 location: "L119"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_447
+  - community/Community_473
 ---
 
 # Any
@@ -26,4 +26,4 @@ tags:
 - [[MCPServerConfig]] - `uses` [INFERRED]
 - [[MCPTransport]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_447
+#graphify/code #graphify/INFERRED #community/Community_473

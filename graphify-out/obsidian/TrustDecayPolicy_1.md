@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cross_bot_trust_ledger.py"
 type: "code"
-community: "Community 1016"
+community: "Community 41"
 location: "L41"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_1016
+  - community/Community_41
 ---
 
 # TrustDecayPolicy
@@ -25,4 +25,4 @@ tags:
 - [[ledger()_1]] - `references` [EXTRACTED]
 - [[policy()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_1016
+#graphify/code #graphify/INFERRED #community/Community_41

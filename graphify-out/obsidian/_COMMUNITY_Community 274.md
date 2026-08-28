@@ -1,48 +1,44 @@
 ---
 type: community
-members: 35
+cohesion: 0.07
+members: 29
 ---
 
 # Community 274
 
-**Members:** 35 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 29 nodes
 
 ## Members
-- [[Abstract]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[AgentShroud A Transparent Proxy Framework for Enterprise Governance of Autonomous AI Agents]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[I. Introduction]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[II-A. AI Agent Security]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[II-B. STPA-Sec]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[II-C. Transparent Proxy Architectures]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[II. Related Work]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[III-A. Attacker Model]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[III. Threat Model]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[IV-A. Transparent Proxy Design]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[IV-B. Security Pipeline]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[IV-C. Middleware Manager]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[IV-D. MCP Proxy Layer]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[IV. System Architecture]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[IX-A. Limitations]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[IX-B. STPA-Sec as Applied to AI Agent Systems]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[IX-C. Industry Implications]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[IX. Discussion]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[References_3]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[TABLE II Unsafe Control Action Distribution]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[TABLE III STPA-Sec Requirement Tiers]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[TABLE IV Test Coverage by Defense Layer]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[TABLE V Phase 8.5 E2E Verification Scenarios]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[TABLE VI Post-Remediation Coverage Summary]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[TABLE VII Security Module Comparison]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[VI-A. Methodology]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[VI-B. Findings]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[VI-C. Requirements]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[VI. STPA-Sec Analysis]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[VIII-A. Test Coverage]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[VIII-B. Enforcement Verification]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[VIII-C. Module Coverage Matrix]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[VIII-D. Competitive Analysis]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[VIII. Evaluation]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[X. Conclusion and Future Work]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[1. Container Hardening]] - document - docs/security/container-policy.md
+- [[1.1 Capabilities]] - document - docs/security/container-policy.md
+- [[1.2 Seccomp Profile]] - document - docs/security/container-policy.md
+- [[1.3 Read-Only Filesystem (Planned)]] - document - docs/security/container-policy.md
+- [[1.4 Non-Root Execution]] - document - docs/security/container-policy.md
+- [[1.5 Resource Limits]] - document - docs/security/container-policy.md
+- [[2. Network Isolation]] - document - docs/security/container-policy.md
+- [[2.1 Docker Networks]] - document - docs/security/container-policy.md
+- [[2.2 Exposed Ports]] - document - docs/security/container-policy.md
+- [[2.3 Tailscale Network]] - document - docs/security/container-policy.md
+- [[3. Secret Management]] - document - docs/security/container-policy.md
+- [[3.1 Hierarchy]] - document - docs/security/container-policy.md
+- [[3.2 Rules]] - document - docs/security/container-policy.md
+- [[3.3 Secret Rotation]] - document - docs/security/container-policy.md
+- [[4. Image Provenance and Updates]] - document - docs/security/container-policy.md
+- [[4.1 Base Images]] - document - docs/security/container-policy.md
+- [[4.2 Dependencies]] - document - docs/security/container-policy.md
+- [[4.3 Image Build]] - document - docs/security/container-policy.md
+- [[4.4 Image Storage]] - document - docs/security/container-policy.md
+- [[5. Runtime Monitoring]] - document - docs/security/container-policy.md
+- [[5.1 Health Checks]] - document - docs/security/container-policy.md
+- [[5.2 Logging]] - document - docs/security/container-policy.md
+- [[5.3 Monitoring Checklist]] - document - docs/security/container-policy.md
+- [[6. DNS Filter]] - document - docs/security/security-architecture.md
+- [[6. Incident Response (Container-Specific)]] - document - docs/security/container-policy.md
+- [[7. TLS Termination and Inspection]] - document - docs/security/security-architecture.md
+- [[8. Network Rate Limiter]] - document - docs/security/security-architecture.md
+- [[Container Security Policy — AgentShroud]] - document - docs/security/container-policy.md
+- [[Layer 2 Network Security (4 Modules)]] - document - docs/security/security-architecture.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -52,9 +48,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 521]]
-- 1 edge to [[_COMMUNITY_Community 376]]
-- 1 edge to [[_COMMUNITY_Community 951]]
+- 1 edge to [[_COMMUNITY_Community 117]]
+- 1 edge to [[_COMMUNITY_Community 428]]
+- 1 edge to [[_COMMUNITY_Community 275]]
 
 ## Top bridge nodes
-- [[AgentShroud A Transparent Proxy Framework for Enterprise Governance of Autonomous AI Agents]] - degree 14, connects to 3 communities
+- [[Container Security Policy — AgentShroud]] - degree 7, connects to 1 community
+- [[2. Network Isolation]] - degree 6, connects to 1 community
+- [[Layer 2 Network Security (4 Modules)]] - degree 5, connects to 1 community

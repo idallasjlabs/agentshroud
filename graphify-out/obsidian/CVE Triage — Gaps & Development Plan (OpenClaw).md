@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/cve-triage-gaps.md"
 type: "document"
-community: "Community 1291"
+community: "Community 92"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1291
+  - community/Community_92
 ---
 
 # CVE Triage — Gaps & Development Plan (OpenClaw)
@@ -17,4 +17,4 @@ tags:
 - [[Resulting status breakdown]] - `contains` [EXTRACTED]
 - [[cve-triage-gaps]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1291
+#graphify/document #graphify/EXTRACTED #community/Community_92

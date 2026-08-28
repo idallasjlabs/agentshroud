@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Community 1139"
+community: "Telegram Proxy Inbound"
 location: "L4234"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1139
+  - community/Telegram_Proxy_Inbound
 ---
 
 # Collaborator scheduler/autorun requests should be blocked and quarantined.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_collaborator_scheduler_autorun_request_is_blocked_and_quarantined()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1139
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Inbound

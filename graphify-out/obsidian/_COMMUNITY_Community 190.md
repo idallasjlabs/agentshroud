@@ -1,51 +1,52 @@
 ---
 type: community
-members: 38
+cohesion: 0.05
+members: 37
 ---
 
 # Community 190
 
-**Members:** 38 nodes
+**Cohesion:** 0.05 - loosely connected
+**Members:** 37 nodes
 
 ## Members
-- [[AgentShroud Docker Configuration]] - document - docker/README.md
-- [[Architecture_1]] - document - docker/README.md
-- [[Check Status_1]] - document - docker/README.md
-- [[Container Runtime Support (SCRUM-92)]] - document - docker/README.md
-- [[Container Stack]] - document - docker/README.md
-- [[Core Configuration]] - document - docker/README.md
-- [[Cron Failure Alerting (SCRUM-61)]] - document - docker/README.md
-- [[Detection contract]] - document - docker/README.md
-- [[Development_1]] - document - docker/README.md
-- [[Documentation_3]] - document - docker/README.md
-- [[Exec into Container]] - document - docker/README.md
-- [[Files]] - document - docker/README.md
-- [[Hermes  HCI]] - document - docker/README.md
-- [[MFA for High-Risk Approvals — IEC 62443 FR1 (SCRUM-93)]] - concept - docker/README.md
-- [[MFA for High-Risk Approvals — IEC 62443 FR1 · SCRUM-93]] - document - docker/README.md
-- [[Multi-Bot Shared Report Store (SCRUM-79)]] - document - docker/README.md
-- [[Network DMZ — IEC 62443 FR5 (Restricted Data Flow) · SCRUM-93]] - document - docker/README.md
-- [[Network DMZ — IEC 62443 FR5 (SCRUM-93)]] - concept - docker/README.md
-- [[Next Steps (Phase 4+)]] - document - docker/README.md
-- [[Port Reference]] - document - docker/README.md
-- [[Progressive-Trust Enforcement Mode (SCRUM-78)]] - document - docker/README.md
-- [[Quick Start_1]] - document - docker/README.md
-- [[README_41]] - document - docker/README.md
-- [[Rebuild Containers]] - document - docker/README.md
-- [[Reference]] - document - docker/README.md
-- [[Reproducible dev shell (Nix flake)]] - document - docker/README.md
-- [[SOC Per-Module Enforcement Heat-Map (SCRUM-80)]] - document - docker/README.md
-- [[Secrets_1]] - document - docker/README.md
-- [[Security Features (Deferred to Phase 5+)]] - document - docker/README.md
-- [[Security Features (Implemented)]] - document - docker/README.md
-- [[Start the Stack]] - document - docker/README.md
-- [[Startup Warnings Reference]] - document - docker/README.md
-- [[Stop the Stack_1]] - document - docker/README.md
-- [[Test Chat]] - document - docker/README.md
-- [[Troubleshooting_6]] - document - docker/README.md
-- [[Usage_40]] - document - docker/README.md
-- [[Verify Security]] - document - docker/README.md
-- [[View Logs]] - document - docker/README.md
+- [[1. What Needs to WRITE]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[2. What Needs to PERSIST]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[3. What's System-Level]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Current Configuration Status]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Current Features Write Requirements]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Current Recommendation]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Currently Documented]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Development Mode Script]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Development Workflow_1]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Development Workflow Read-Only Filesystem Strategy]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Emergency Rollback]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Feature 1Password Integration]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Feature Gateway (FastAPI)]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Feature Kill Switch (Phase 3B)]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Feature OpenSCAP Scanning (Phase 3A)]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Feature SSH Proxy (Phase 4)]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Feature SecureBrowser (Playwright)]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Feature iCloudGmail Services]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[For Each New Feature, Document]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Functional Testing (Read-Only Mode)]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[If Any Test Fails]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Lockdown Procedure]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Planned Features Write Requirements]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Potentially Needed (Discovered During Testing)]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Pre-Lockdown Checklist]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Read-Only Compatibility Checklist]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Step 1 Add Feature (read_only false)]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Step 2 Document Write Paths]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Step 3 Test Read-Only Compatibility]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Step 4 Add Missing Mounts]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Step 5 Verify OS Immutability]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Step 6 Revert to Development if Needed]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Summary_17]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Testing Procedure Read-Only Lockdown]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[The Challenge]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[What's Currently Writable (Development Mode)]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
+- [[Write Paths Inventory]] - document - docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -55,9 +56,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 69]]
-- 1 edge to [[_COMMUNITY_Community 1001]]
+- 2 edges to [[_COMMUNITY_Community 580]]
 
 ## Top bridge nodes
-- [[MFA for High-Risk Approvals — IEC 62443 FR1 (SCRUM-93)]] - degree 3, connects to 1 community
-- [[SOC Per-Module Enforcement Heat-Map (SCRUM-80)]] - degree 2, connects to 1 community
+- [[Development Workflow Read-Only Filesystem Strategy]] - degree 14, connects to 1 community

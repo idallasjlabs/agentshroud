@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 1.00
 members: 2
 ---
 
 # Community 1453
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[SKILL_125]] - document - docker/config/hermes/skills/i-value-stream-mapping/SKILL.md
-- [[Skill value-stream-mapping_1]] - document - docker/config/hermes/skills/i-value-stream-mapping/SKILL.md
+- [[extraction-spec_1]] - document - docker/config/hermes/skills/graphify/references/extraction-spec.md
+- [[graphify reference extraction subagent prompt_1]] - document - docker/config/hermes/skills/graphify/references/extraction-spec.md
 
 ## Live Query (requires Dataview plugin)
 

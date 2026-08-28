@@ -1,14 +1,14 @@
 ---
 source_file: "tests/startup_smoke/test_hermes_mcp_reconciliation.sh"
 type: "code"
-community: "Community 1792"
+community: "Community 1881"
 location: "L1-111"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1792
+  - community/Community_1881
 ---
 
 # test_hermes_mcp_reconciliation.sh — Hermes MCP stale-disable regression test
 
-#graphify/code #graphify/EXTRACTED #community/Community_1792
+#graphify/code #graphify/EXTRACTED #community/Community_1881

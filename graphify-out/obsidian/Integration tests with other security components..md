@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "Community 1338"
+community: "Community 137"
 location: "L601"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1338
+  - community/Community_137
 ---
 
 # Integration tests with other security components.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestIntegration]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1338
+#graphify/rationale #graphify/EXTRACTED #community/Community_137

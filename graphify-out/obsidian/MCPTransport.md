@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_config.py"
 type: "code"
-community: "Community 36"
+community: "Community 44"
 location: "L18"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_36
+  - community/Community_44
 ---
 
 # MCPTransport
@@ -76,4 +76,4 @@ tags:
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_36
+#graphify/code #graphify/INFERRED #community/Community_44

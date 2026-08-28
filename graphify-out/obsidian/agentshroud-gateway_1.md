@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/06 - Containers & Services/agentshroud-gateway.md"
 type: "document"
-community: "Community 602"
+community: "Community 339"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_602
+  - community/Community_339
 ---
 
 # agentshroud-gateway
@@ -23,9 +23,9 @@ tags:
 - [[Resource Limits_1]] - `contains` [EXTRACTED]
 - [[Secrets_3]] - `contains` [EXTRACTED]
 - [[Security Hardening_4]] - `contains` [EXTRACTED]
-- [[Summary_46]] - `contains` [EXTRACTED]
+- [[Summary_24]] - `contains` [EXTRACTED]
 - [[Volumes_2]] - `contains` [EXTRACTED]
 - [[agentshroud-gateway]] - `contains` [EXTRACTED]
 - [[tmpfs Mounts_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_602
+#graphify/document #graphify/EXTRACTED #community/Community_339

@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1175
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[Secret Backend Cascade (macOS Keychain → 1Password CLI → homedir file)]] - concept - docker/tests/test-op-auth.sh
-- [[fail()_1]] - code - docker/tests/test-op-auth.sh
-- [[pass()_1]] - code - docker/tests/test-op-auth.sh
-- [[test-op-auth.sh]] - code - docker/tests/test-op-auth.sh
-- [[test-op-auth.sh script]] - code - docker/tests/test-op-auth.sh
+- [[AWS Cloud Management & FinOps_1]] - document - docker/config/hermes/skills/i-aws/README.md
+- [[Purpose_40]] - document - docker/config/hermes/skills/i-aws/README.md
+- [[README_45]] - document - docker/config/hermes/skills/i-aws/README.md
+- [[Related Skills_43]] - document - docker/config/hermes/skills/i-aws/README.md
+- [[Usage_45]] - document - docker/config/hermes/skills/i-aws/README.md
 
 ## Live Query (requires Dataview plugin)
 

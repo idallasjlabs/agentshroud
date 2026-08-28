@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/skills/manifest.py"
 type: "rationale"
-community: "Community 71"
+community: "Community 73"
 location: "L150"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_71
+  - community/Community_73
 ---
 
 # One unit of work in a deploy plan (canonical entry -> per-bot path).      ``acti
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[PlannedAction]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_71
+#graphify/rationale #graphify/EXTRACTED #community/Community_73

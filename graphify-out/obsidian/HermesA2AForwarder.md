@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/a2a_proxy.py"
 type: "code"
-community: "Community 104"
+community: "Community 81"
 location: "L425"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_104
+  - community/Community_81
 ---
 
 # HermesA2AForwarder
@@ -20,8 +20,8 @@ tags:
 - [[A2APolicyEngine_1]] - `uses` [INFERRED]
 - [[A2AProxy]] - `calls` [EXTRACTED]
 - [[Real HTTP forwarder to Hermes's internal A2A JSON-RPC listener.      Matches the]] - `rationale_for` [EXTRACTED]
-- [[Request_7]] - `uses` [INFERRED]
-- [[Response]] - `uses` [INFERRED]
+- [[Request_8]] - `uses` [INFERRED]
+- [[Response_1]] - `uses` [INFERRED]
 - [[ViolationType]] - `uses` [INFERRED]
 - [[a2a_proxy.py]] - `contains` [EXTRACTED]
 - [[test_a2a_integration.py]] - `imports` [EXTRACTED]
@@ -31,4 +31,4 @@ tags:
 - [[test_full_round_trip_denied_request_never_reaches_the_peer()]] - `calls` [EXTRACTED]
 - [[test_legitimate_callback_url_is_forwarded_over_real_http()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_104
+#graphify/code #graphify/EXTRACTED #community/Community_81

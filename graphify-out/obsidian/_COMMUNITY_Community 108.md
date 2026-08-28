@@ -1,63 +1,68 @@
 ---
 type: community
-members: 50
+cohesion: 0.05
+members: 53
 ---
 
 # Community 108
 
-**Members:** 50 nodes
+**Cohesion:** 0.05 - loosely connected
+**Members:** 53 nodes
 
 ## Members
-- [[._apply_filters()]] - code - gateway/proxy/llm_proxy.py
-- [[._build_timeout_fallback_response()]] - code - gateway/proxy/llm_proxy.py
-- [[._emit_failover_notice()]] - code - gateway/proxy/llm_proxy.py
-- [[._enforce_tool_acl()]] - code - gateway/proxy/llm_proxy.py
-- [[._failover_request()]] - code - gateway/proxy/llm_proxy.py
-- [[._filter_outbound()]] - code - gateway/proxy/llm_proxy.py
-- [[._filter_outbound_streaming()]] - code - gateway/proxy/llm_proxy.py
-- [[._filter_streaming_event()]] - code - gateway/proxy/llm_proxy.py
-- [[._forward_request()]] - code - gateway/proxy/llm_proxy.py
-- [[._get_local_model()]] - code - gateway/proxy/llm_proxy.py
-- [[._get_local_secondary_model()]] - code - gateway/proxy/llm_proxy.py
-- [[._is_connect_error()]] - code - gateway/proxy/llm_proxy.py
-- [[._is_local_oom()]] - code - gateway/proxy/llm_proxy.py
-- [[._local_backend_headers()]] - code - gateway/proxy/llm_proxy.py
-- [[._local_backend_unavailable_response()]] - code - gateway/proxy/llm_proxy.py
-- [[._local_failover_base()]] - code - gateway/proxy/llm_proxy.py
-- [[._local_secondary_failover_request()]] - code - gateway/proxy/llm_proxy.py
-- [[._normalize_local_model()]] - code - gateway/proxy/llm_proxy.py
-- [[._record_failover_event()]] - code - gateway/proxy/llm_proxy.py
-- [[._scan_inbound()]] - code - gateway/proxy/llm_proxy.py
-- [[._scan_request_data()]] - code - gateway/proxy/llm_proxy.py
-- [[._suppress_qwen3_thinking()]] - code - gateway/proxy/llm_proxy.py
-- [[._widen_optional_tool_param_types()]] - code - gateway/proxy/llm_proxy.py
-- [[.proxy_messages()]] - code - gateway/proxy/llm_proxy.py
-- [[.proxy_messages_streaming()]] - code - gateway/proxy/llm_proxy.py
-- [[Add 'null' as an accepted type for every non-required tool parameter, in place.]] - rationale - gateway/proxy/llm_proxy.py
-- [[Any_14]] - code - gateway/proxy/llm_proxy.py
-- [[Append 'no_think' to the last user message, in place, if not already present.]] - rationale - gateway/proxy/llm_proxy.py
-- [[Apply XML and credential filters to text.]] - rationale - gateway/proxy/llm_proxy.py
-- [[Apply outbound text filters to known streaming response formats.          Also e]] - rationale - gateway/proxy/llm_proxy.py
-- [[Attempt a cloud→local failover dispatch.          Returns (status, headers, body]] - rationale - gateway/proxy/llm_proxy.py
-- [[Attempt a local→local-secondary failover when the primary local model hits OOM.]] - rationale - gateway/proxy/llm_proxy.py
-- [[BaseException]] - code - gateway/proxy/llm_proxy.py
-- [[Build a structured 503 for an unreachable local backend.          Logs one WARNI]] - rationale - gateway/proxy/llm_proxy.py
-- [[Build provider-compatible timeout fallback message to avoid silent Telegram fail]] - rationale - gateway/proxy/llm_proxy.py
-- [[Filter buffered SSE-like streaming responses for XMLcredential leaks and ToolAC]] - rationale - gateway/proxy/llm_proxy.py
-- [[Filter outbound LLM response for credential leaks and XML.]] - rationale - gateway/proxy/llm_proxy.py
-- [[Forward request to the real LLM API provider.          Retries up to 3 times on]] - rationale - gateway/proxy/llm_proxy.py
-- [[Inject per-backend auth for local backends that require it.          Unlike LM S]] - rationale - gateway/proxy/llm_proxy.py
-- [[Persist a failover event to the audit chain if wired.]] - rationale - gateway/proxy/llm_proxy.py
-- [[Proxy a streaming LLM API request, yielding SSE chunks as they arrive.]] - rationale - gateway/proxy/llm_proxy.py
-- [[Proxy an LLM API request.          Returns (status_code, response_headers, respo]] - rationale - gateway/proxy/llm_proxy.py
-- [[Resolve the local backend for failover dispatch via LOCAL_MODEL_ROUTES.]] - rationale - gateway/proxy/llm_proxy.py
-- [[Return True if the response indicates a local-model OOM or backend_unavailable.]] - rationale - gateway/proxy/llm_proxy.py
-- [[Return the bare secondary local model name, or None if not configured.]] - rationale - gateway/proxy/llm_proxy.py
-- [[Scan Anthropic tool_use blocks; replace denied tools with a text error block.]] - rationale - gateway/proxy/llm_proxy.py
-- [[Scan inbound user message text for PII and injection.]] - rationale - gateway/proxy/llm_proxy.py
-- [[Scan request data for PII and injection across different provider formats.]] - rationale - gateway/proxy/llm_proxy.py
-- [[Send a single Telegram notice per cooldown window when failover activates.]] - rationale - gateway/proxy/llm_proxy.py
-- [[True for connection-level failures (refused  unreachable  reset).          Unw]] - rationale - gateway/proxy/llm_proxy.py
+- [[About AgentShroud™]] - document - branding/guidelines/brand-guidelines.md
+- [[Accessibility Requirements (WCAG 2.1 AA, prefers-reduced-motion)]] - concept - branding/guidelines/brand-guidelines.md
+- [[AgentShroud Brand Guidelines]] - document - branding/guidelines/brand-guidelines.md
+- [[AgentShroud Premium Email Signature Template]] - code - branding/email/signature-template.html
+- [[Animation Guidelines  Motion Principles]] - rationale - branding/guidelines/brand-guidelines.md
+- [[App Icon 16x16 (AgentShroud logo mark)]] - image - branding/icons/app/icon-16x16.png
+- [[App Icon 32x32 (AgentShroud logo mark)]] - image - branding/icons/app/icon-32x32.png
+- [[Approval Process]] - document - branding/guidelines/brand-guidelines.md
+- [[Approved Logo Assets for Media]] - document - branding/guidelines/brand-guidelines.md
+- [[Backgrounds]] - document - branding/guidelines/brand-guidelines.md
+- [[Brand Applications]] - document - branding/guidelines/brand-guidelines.md
+- [[Brand Applications (website, docs, social, presentations, print)]] - concept - branding/guidelines/brand-guidelines.md
+- [[Brand Approval Process]] - document - branding/guidelines/brand-guidelines.md
+- [[Brand Identity_1]] - document - branding/guidelines/brand-guidelines.md
+- [[Brand Mission]] - concept - branding/guidelines/brand-guidelines.md
+- [[Brand Personality]] - document - branding/guidelines/brand-guidelines.md
+- [[Brand Values (Security First, Transparency, Privacy, Trust, Innovation)]] - concept - branding/guidelines/brand-guidelines.md
+- [[Brand Vision]] - concept - branding/guidelines/brand-guidelines.md
+- [[Clear Space]] - document - branding/guidelines/brand-guidelines.md
+- [[Co-Branding Guidelines]] - document - branding/guidelines/brand-guidelines.md
+- [[Color Constraints]] - document - branding/guidelines/brand-guidelines.md
+- [[Color Profiles]] - document - branding/guidelines/brand-guidelines.md
+- [[Color Usage (AgentShroud Blue 1583f0)]] - concept - branding/guidelines/brand-guidelines.md
+- [[Contact]] - document - branding/guidelines/brand-guidelines.md
+- [[Documentation_2]] - document - branding/guidelines/brand-guidelines.md
+- [[ExternalPartnership Use]] - document - branding/guidelines/brand-guidelines.md
+- [[File Formats & Deliverables]] - document - branding/guidelines/brand-guidelines.md
+- [[Hierarchy]] - document - branding/guidelines/brand-guidelines.md
+- [[Internal Use]] - document - branding/guidelines/brand-guidelines.md
+- [[Key Facts]] - document - branding/guidelines/brand-guidelines.md
+- [[Logo Files_2]] - document - branding/guidelines/brand-guidelines.md
+- [[Logo Usage_2]] - document - branding/guidelines/brand-guidelines.md
+- [[Logo Usage Rules_1]] - concept - branding/guidelines/brand-guidelines.md
+- [[Media Contact]] - document - branding/guidelines/brand-guidelines.md
+- [[Minimum Size]] - document - branding/guidelines/brand-guidelines.md
+- [[Mission]] - document - branding/guidelines/brand-guidelines.md
+- [[Placement Rules]] - document - branding/guidelines/brand-guidelines.md
+- [[Presentations]] - document - branding/guidelines/brand-guidelines.md
+- [[Press Kit]] - document - branding/guidelines/brand-guidelines.md
+- [[Press Kit (About AgentShroud, boilerplate, key facts)]] - document - branding/guidelines/brand-guidelines.md
+- [[Principles]] - document - branding/guidelines/brand-guidelines.md
+- [[Print Materials]] - document - branding/guidelines/brand-guidelines.md
+- [[Prohibited Uses]] - document - branding/guidelines/brand-guidelines.md
+- [[Readability]] - document - branding/guidelines/brand-guidelines.md
+- [[Social Media_1]] - document - branding/guidelines/brand-guidelines.md
+- [[Typography in Practice]] - document - branding/guidelines/brand-guidelines.md
+- [[Values]] - document - branding/guidelines/brand-guidelines.md
+- [[Vision]] - document - branding/guidelines/brand-guidelines.md
+- [[Voice & Tone_2]] - document - branding/guidelines/brand-guidelines.md
+- [[Voice & Tone Guidelines]] - concept - branding/guidelines/brand-guidelines.md
+- [[Website]] - document - branding/guidelines/brand-guidelines.md
+- [[Writing Style]] - document - branding/guidelines/brand-guidelines.md
+- [[brand-guidelines]] - document - branding/guidelines/brand-guidelines.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -67,17 +72,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 25 edges to [[_COMMUNITY_Community 79]]
-- 6 edges to [[_COMMUNITY_Community 142]]
-- 3 edges to [[_COMMUNITY_Community 126]]
-- 2 edges to [[_COMMUNITY_Community 117]]
-- 1 edge to [[_COMMUNITY_Community 308]]
-- 1 edge to [[_COMMUNITY_Community 419]]
-- 1 edge to [[_COMMUNITY_Community 979]]
+- 2 edges to [[_COMMUNITY_Community 899]]
+- 1 edge to [[_COMMUNITY_Community 790]]
 
 ## Top bridge nodes
-- [[.proxy_messages()]] - degree 28, connects to 6 communities
-- [[._failover_request()]] - degree 13, connects to 3 communities
-- [[._local_secondary_failover_request()]] - degree 9, connects to 2 communities
-- [[.proxy_messages_streaming()]] - degree 8, connects to 1 community
-- [[._local_backend_headers()]] - degree 6, connects to 1 community
+- [[brand-guidelines]] - degree 15, connects to 1 community
+- [[AgentShroud Brand Guidelines]] - degree 13, connects to 1 community

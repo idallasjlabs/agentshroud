@@ -13,6 +13,5 @@ tags:
 
 ## Connections
 - [[Phase 10 Validation Checklist]] - `contains` [EXTRACTED]
-- [[Phase 10 Validation Checklist_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Community_972

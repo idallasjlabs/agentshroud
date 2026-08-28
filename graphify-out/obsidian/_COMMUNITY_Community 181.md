@@ -1,50 +1,53 @@
 ---
 type: community
-members: 37
+cohesion: 0.11
+members: 38
 ---
 
 # Community 181
 
-**Members:** 37 nodes
+**Cohesion:** 0.11 - loosely connected
+**Members:** 38 nodes
 
 ## Members
-- [[About the Creator]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[AgentShroud — Collaborator Knowledge Base]] - document - docker/bots/openclaw/config/workspace/PUBLIC-INFO.md
-- [[AgentShroud™ — Project Knowledge Base]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[Architecture_2]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[Architecture Review]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[Collaboration Guidelines]] - document - docker/bots/openclaw/config/workspace/PUBLIC-INFO.md
-- [[Contact_1]] - document - docker/bots/openclaw/config/workspace/PUBLIC-INFO.md
-- [[Current Status]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[Design Philosophy]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[Development Phases]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[Documentation & Ideas]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[Egress Pipeline (Agent → Internet)]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[Frequently Asked Questions]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[How He Works]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[How to Contribute]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[Inbound Pipeline (User → Agent)]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[Infrastructure_2]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[Multi-Platform Support]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[Outbound Pipeline (Agent → User)]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[PUBLIC-INFO]] - document - docker/bots/openclaw/config/workspace/PUBLIC-INFO.md
-- [[PUBLIC-INFO_1]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[Project Goals]] - document - docker/bots/openclaw/config/workspace/PUBLIC-INFO.md
-- [[Red Team Testing (Most Valuable!)]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[Security Modules]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[Technology Stack]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[The Conjecture]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[The Problem]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[The Security Pipeline]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[The Solution]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[The Thesis]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[What Does It Do]] - document - docker/bots/openclaw/config/workspace/PUBLIC-INFO.md
-- [[What He Builds]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[What Is AgentShroud]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[What is AgentShroud]] - document - docker/bots/openclaw/config/workspace/PUBLIC-INFO.md
-- [[Who Can Use It]] - document - docker/bots/openclaw/config/workspace/PUBLIC-INFO.md
-- [[Why AgentShroud Exists]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[v0.8.0 Focus Areas]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
+- [[.__init__()_69]] - code - gateway/security/data_exfil_volume_guard.py
+- [[._size()]] - code - gateway/security/data_exfil_volume_guard.py
+- [[.get_stats()_15]] - code - gateway/security/data_exfil_volume_guard.py
+- [[.observe()]] - code - gateway/security/data_exfil_volume_guard.py
+- [[.reset_session()]] - code - gateway/security/data_exfil_volume_guard.py
+- [[A blocked (undelivered) response must not consume the session budget,     otherw]] - rationale - gateway/tests/test_data_exfil_volume_guard.py
+- [[Clear cumulative + baseline state for a session (e.g. on new session).]] - rationale - gateway/security/data_exfil_volume_guard.py
+- [[Configuration for class`DataExfilVolumeGuard`.]] - rationale - gateway/security/data_exfil_volume_guard.py
+- [[Cumulative + adaptive outbound-volume anomaly detector, per session.]] - rationale - gateway/security/data_exfil_volume_guard.py
+- [[DataExfilVolumeConfig]] - code - gateway/security/data_exfil_volume_guard.py
+- [[DataExfilVolumeGuard]] - code - gateway/security/data_exfil_volume_guard.py
+- [[If the guard raises, non-owner outbound is blocked (fail-closed).]] - rationale - gateway/tests/test_data_exfil_volume_guard.py
+- [[Observe one outbound response and decide allowblock.          A blocked respons]] - rationale - gateway/security/data_exfil_volume_guard.py
+- [[Structured verdict returned by meth`DataExfilVolumeGuard.observe`.]] - rationale - gateway/security/data_exfil_volume_guard.py
+- [[The rolling baseline deque is trimmed to adaptive_window; old samples drop.]] - rationale - gateway/tests/test_data_exfil_volume_guard.py
+- [[Tiny baselines must not turn ordinary small growth into spikes.]] - rationale - gateway/tests/test_data_exfil_volume_guard.py
+- [[VolumeVerdict]] - code - gateway/security/data_exfil_volume_guard.py
+- [[_SessionState]] - code - gateway/security/data_exfil_volume_guard.py
+- [[_make_pipeline()_1]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[data_exfil_volume_guard.py]] - code - gateway/security/data_exfil_volume_guard.py
+- [[test_accepts_str_and_bytes()]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[test_adaptive_floor_prevents_noise_blocks()]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[test_adaptive_needs_min_samples()]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[test_adaptive_spike_blocks()]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[test_adaptive_window_bounds_baseline_memory()]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[test_blocked_response_does_not_add_to_cumulative()]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[test_cumulative_cap_blocks_when_crossed()]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[test_cumulative_is_per_session()]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[test_data_exfil_volume_guard.py]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[test_disabled_never_blocks()]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[test_get_stats()]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[test_pipeline_allows_small_response()]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[test_pipeline_blocks_and_downstream_not_reached()]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[test_pipeline_fail_closed_for_non_owner_on_error()]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[test_pipeline_no_guard_is_unchanged()]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[test_reset_session_clears_state()]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[test_single_response_over_cap_blocks()]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[test_under_single_cap_allows()]] - code - gateway/tests/test_data_exfil_volume_guard.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -52,3 +55,17 @@ members: 37
 TABLE source_file, type FROM #community/Community_181
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 4 edges to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
+- 3 edges to [[_COMMUNITY_PII Sanitizer & E2E Tests]]
+- 3 edges to [[_COMMUNITY_Community 24]]
+- 1 edge to [[_COMMUNITY_Community 420]]
+- 1 edge to [[_COMMUNITY_Community 78]]
+
+## Top bridge nodes
+- [[DataExfilVolumeGuard]] - degree 26, connects to 2 communities
+- [[_make_pipeline()_1]] - degree 6, connects to 2 communities
+- [[test_pipeline_no_guard_is_unchanged()]] - degree 3, connects to 2 communities
+- [[DataExfilVolumeConfig]] - degree 21, connects to 1 community
+- [[test_data_exfil_volume_guard.py]] - degree 21, connects to 1 community

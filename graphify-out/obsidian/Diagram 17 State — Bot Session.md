@@ -1,13 +1,13 @@
 ---
 source_file: "docs/diagrams/images/diagram-17-state-bot-session.svg"
 type: "image"
-community: "Community 1687"
+community: "Community 1774"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Community_1687
+  - community/Community_1774
 ---
 
 # Diagram 17: State — Bot Session
 
-#graphify/image #graphify/EXTRACTED #community/Community_1687
+#graphify/image #graphify/EXTRACTED #community/Community_1774

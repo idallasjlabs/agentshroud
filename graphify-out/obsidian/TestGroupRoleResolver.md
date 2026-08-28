@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "code"
-community: "Community 471"
+community: "Group RBAC & Tool ACL"
 location: "L108"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_471
+  - community/Group_RBAC__Tool_ACL
 ---
 
 # TestGroupRoleResolver
@@ -31,4 +31,4 @@ tags:
 - [[ToolACLEnforcer]] - `uses` [INFERRED]
 - [[test_group_rbac.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_471
+#graphify/code #graphify/EXTRACTED #community/Group_RBAC__Tool_ACL

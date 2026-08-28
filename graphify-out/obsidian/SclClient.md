@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/cli/client.py"
 type: "code"
-community: "Community 153"
+community: "Community 152"
 location: "L14"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_153
+  - community/Community_152
 ---
 
 # SCLClient
@@ -68,4 +68,4 @@ tags:
 - [[test_cli_coverage.py]] - `imports` [EXTRACTED]
 - [[test_convenience_methods_hit_expected_endpoints()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_153
+#graphify/code #graphify/EXTRACTED #community/Community_152

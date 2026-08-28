@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md"
 type: "document"
-community: "Community 589"
+community: "Community 585"
 location: "L132"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_589
+  - community/Community_585
 ---
 
 # ✅ Verification Tests
@@ -18,4 +18,4 @@ tags:
 - [[Test 3 Console Access (Should Display)]] - `contains` [EXTRACTED]
 - [[Test 4 Internal Use (Should Work)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_589
+#graphify/document #graphify/EXTRACTED #community/Community_585

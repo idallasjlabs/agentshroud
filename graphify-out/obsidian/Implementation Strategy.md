@@ -1,17 +1,21 @@
 ---
-source_file: "docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md"
+source_file: "docs/security/CREDENTIAL-SECURITY-POLICY.md"
 type: "document"
-community: "Community 429"
-location: "L54"
+community: "Community 500"
+location: "L32"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_429
+  - community/Community_500
 ---
 
 # Implementation Strategy
 
 ## Connections
-- [[Decision_2]] - `contains` [EXTRACTED]
+- [[Credential Security Policy]] - `contains` [EXTRACTED]
+- [[Option 1 Gateway-Level Filtering (Recommended)]] - `contains` [EXTRACTED]
+- [[Option 2 Approval Queue for Credential Ops]] - `contains` [EXTRACTED]
+- [[Option 3 Disable Credential Commands via Telegram]] - `contains` [EXTRACTED]
+- [[Option 4 Role-Based Access Control]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_429
+#graphify/document #graphify/EXTRACTED #community/Community_500

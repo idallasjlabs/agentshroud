@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_subagent_governance.py"
 type: "code"
-community: "Community 934"
+community: "Community 1062"
 location: "L74"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_934
+  - community/Community_1062
 ---
 
 # TestToolAuthorization
@@ -27,4 +27,4 @@ tags:
 - [[SubagentGovernance]] - `uses` [INFERRED]
 - [[test_subagent_governance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_934
+#graphify/code #graphify/INFERRED #community/Community_1062

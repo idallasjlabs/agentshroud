@@ -1,27 +1,29 @@
 ---
 type: community
+cohesion: 0.22
 members: 14
 ---
 
 # Community 665
 
+**Cohesion:** 0.22 - loosely connected
 **Members:** 14 nodes
 
 ## Members
-- [[1. Scope of Change_1]] - document - docker/config/hermes/skills/i-pca/SKILL.md
-- [[2. What Changes and Why_1]] - document - docker/config/hermes/skills/i-pca/SKILL.md
-- [[3. Scalability Gate_1]] - document - docker/config/hermes/skills/i-pca/SKILL.md
-- [[4. Blast Radius_2]] - document - docker/config/hermes/skills/i-pca/SKILL.md
-- [[5. Known Limits and Assumptions_1]] - document - docker/config/hermes/skills/i-pca/SKILL.md
-- [[6. Alternatives Considered_1]] - document - docker/config/hermes/skills/i-pca/SKILL.md
-- [[7. Open Questions_1]] - document - docker/config/hermes/skills/i-pca/SKILL.md
-- [[8. Verification Plan_1]] - document - docker/config/hermes/skills/i-pca/SKILL.md
-- [[Closing Gate_1]] - document - docker/config/hermes/skills/i-pca/SKILL.md
-- [[Output Format Rules_1]] - document - docker/config/hermes/skills/i-pca/SKILL.md
-- [[Output Sections (ALL required)_1]] - document - docker/config/hermes/skills/i-pca/SKILL.md
-- [[Role_61]] - document - docker/config/hermes/skills/i-pca/SKILL.md
-- [[SKILL_104]] - document - docker/config/hermes/skills/i-pca/SKILL.md
-- [[Skill Pre-Change Analysis (PCA)_1]] - document - docker/config/hermes/skills/i-pca/SKILL.md
+- [[._agent_id_for_peer()]] - code - gateway/proxy/http_proxy.py
+- [[._clamav_scan_bytes()]] - code - gateway/proxy/http_proxy.py
+- [[._handle_client()]] - code - gateway/proxy/http_proxy.py
+- [[._process_connect()]] - code - gateway/proxy/http_proxy.py
+- [[._relay()]] - code - gateway/proxy/http_proxy.py
+- [[._relay_and_scan()]] - code - gateway/proxy/http_proxy.py
+- [[Copy bytes from reader to writer until EOF.          ``idle_timeout`` (default 1]] - rationale - gateway/proxy/http_proxy.py
+- [[Copy bytes from reader to writer, sampling the first scan_limit bytes         fo]] - rationale - gateway/proxy/http_proxy.py
+- [[Handle a single incoming client connection.]] - rationale - gateway/proxy/http_proxy.py
+- [[Parse CONNECT request, check allowlist, relay or block.]] - rationale - gateway/proxy/http_proxy.py
+- [[Resolve source IP to a bot_id; lazily extends registry via DNS.          The sta]] - rationale - gateway/proxy/http_proxy.py
+- [[StreamReader_2]] - code - gateway/proxy/http_proxy.py
+- [[StreamWriter_2]] - code - gateway/proxy/http_proxy.py
+- [[Write data to a temp file and scan with ClamAV.          Runs in a thread execut]] - rationale - gateway/proxy/http_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,3 +31,15 @@ members: 14
 TABLE source_file, type FROM #community/Community_665
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 6 edges to [[_COMMUNITY_Community 75]]
+- 4 edges to [[_COMMUNITY_Community 22]]
+- 1 edge to [[_COMMUNITY_Community 112]]
+
+## Top bridge nodes
+- [[._clamav_scan_bytes()]] - degree 4, connects to 2 communities
+- [[._process_connect()]] - degree 8, connects to 1 community
+- [[._relay_and_scan()]] - degree 7, connects to 1 community
+- [[StreamReader_2]] - degree 6, connects to 1 community
+- [[StreamWriter_2]] - degree 6, connects to 1 community

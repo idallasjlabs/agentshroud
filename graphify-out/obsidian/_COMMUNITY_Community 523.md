@@ -1,31 +1,32 @@
 ---
 type: community
-members: 18
+cohesion: 0.12
+members: 17
 ---
 
 # Community 523
 
-**Members:** 18 nodes
+**Cohesion:** 0.12 - loosely connected
+**Members:** 17 nodes
 
 ## Members
-- [[CONTRIBUTING]] - document - CONTRIBUTING.md
-- [[Code Style]] - document - CONTRIBUTING.md
-- [[Code of Conduct]] - document - CONTRIBUTING.md
-- [[Contributing to AgentShroud™]] - document - CONTRIBUTING.md
-- [[Development Scripts]] - document - scripts/README.md
-- [[Development Setup]] - document - CONTRIBUTING.md
-- [[Implementation Status_3]] - document - scripts/README.md
-- [[Maintenance Scripts]] - document - scripts/README.md
-- [[Pull Request Process]] - document - CONTRIBUTING.md
-- [[Questions_1]] - document - CONTRIBUTING.md
-- [[README_129]] - document - scripts/README.md
-- [[Requirements]] - document - CONTRIBUTING.md
-- [[Response SLA]] - document - CONTRIBUTING.md
-- [[Scripts (to be implemented throughout development)]] - document - scripts/README.md
-- [[Security Scripts]] - document - scripts/README.md
-- [[Test Guidelines]] - document - CONTRIBUTING.md
-- [[Utility Scripts]] - document - scripts/README.md
-- [[What to Contribute]] - document - CONTRIBUTING.md
+- [[1. Branch Creation]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[2. Development (TDD)]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[3. Production Testing (if needed)]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[4. Pull Request]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[5. Pre-Merge]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[Common Commands Quick Reference]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[Emergency Contacts]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[Emergency Procedures]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[GSDE&G Skills Reference]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[GitHub Workflow Integration]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[P1 Incident Response]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[Production Testing Guidelines]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[Quick Reference When to Use Each Skill]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[SKILLS_GUIDE]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[Skill Directory Structure]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[Skill Invocation Examples]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[📚 Created Documentation]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,7 +36,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 57]]
+- 1 edge to [[_COMMUNITY_Community 748]]
+- 1 edge to [[_COMMUNITY_Community 313]]
 
 ## Top bridge nodes
-- [[CONTRIBUTING]] - degree 2, connects to 1 community
+- [[GSDE&G Skills Reference]] - degree 10, connects to 1 community
+- [[📚 Created Documentation]] - degree 2, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-cicd/SKILL.md"
 type: "document"
-community: "Community 1007"
+community: "Community 1009"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1007
+  - community/Community_1009
 ---
 
 # Skill: CI/CD Pipeline Advisor (CICD)
@@ -19,4 +19,4 @@ tags:
 - [[Role_8]] - `contains` [EXTRACTED]
 - [[SKILL_14]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1007
+#graphify/document #graphify/EXTRACTED #community/Community_1009

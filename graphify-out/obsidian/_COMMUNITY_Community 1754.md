@@ -1,14 +1,16 @@
 ---
 type: community
+cohesion: 1.00
 members: 1
 ---
 
 # Community 1754
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[SecureBrowser.close()]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
+- [[Chaos Engineering Skill_1]] - document - .agents/skills/i-chaos-engineering/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

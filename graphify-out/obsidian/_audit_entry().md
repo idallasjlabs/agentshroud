@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "Community 780"
+community: "RBAC & SOC Realtime"
 location: "L297"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_780
+  - community/RBAC__SOC_Realtime
 ---
 
 # _audit_entry()
@@ -25,4 +25,4 @@ tags:
 - [[SimpleNamespace]] - `references` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_780
+#graphify/code #graphify/EXTRACTED #community/RBAC__SOC_Realtime

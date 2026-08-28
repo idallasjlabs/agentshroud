@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_policy.py"
 type: "rationale"
-community: "Community 82"
+community: "Community 71"
 location: "L441"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_82
+  - community/Community_71
 ---
 
 # Real JSON-RPC payloads deliver the method as a plain string — evaluate()     mus
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_evaluate_accepts_a_plain_string_method_not_just_the_enum()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_82
+#graphify/rationale #graphify/EXTRACTED #community/Community_71

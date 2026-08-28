@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/legal/PRIOR-USE.md"
 type: "document"
-community: "Community 1036"
+community: "Community 1041"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1036
+  - community/Community_1041
 ---
 
 # PRIOR-USE.md
@@ -18,4 +18,4 @@ tags:
 - [[TRADEMARK]] - `conceptually_related_to` [INFERRED]
 - [[USPTO-APPLICATION]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1036
+#graphify/document #graphify/EXTRACTED #community/Community_1041

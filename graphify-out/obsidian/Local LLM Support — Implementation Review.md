@@ -1,18 +1,17 @@
 ---
 source_file: "docs/planning/v1.2/LOCAL_LLM_REVIEW.md"
 type: "document"
-community: "Community 783"
+community: "Community 736"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_783
+  - community/Community_736
 ---
 
 # Local LLM Support — Implementation Review
 
 ## Connections
-- [[1. Architecture Overview]] - `contains` [EXTRACTED]
 - [[10. Known Gaps  Open Items]] - `contains` [EXTRACTED]
 - [[11. Quick Reference — Switching to Local Mode]] - `contains` [EXTRACTED]
 - [[2. Source Files]] - `contains` [EXTRACTED]
@@ -26,4 +25,4 @@ tags:
 - [[Architecture Overview]] - `contains` [EXTRACTED]
 - [[LOCAL_LLM_REVIEW]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_783
+#graphify/document #graphify/EXTRACTED #community/Community_736

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/collaborator_tracker.py"
 type: "code"
-community: "Community 4"
+community: "Adversarial Injection Guards"
 location: "line 125"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_4
+  - community/Adversarial_Injection_Guards
 ---
 
 # CollaboratorActivityTracker.record_activity
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TelegramAPIProxy]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_4
+#graphify/code #graphify/INFERRED #community/Adversarial_Injection_Guards

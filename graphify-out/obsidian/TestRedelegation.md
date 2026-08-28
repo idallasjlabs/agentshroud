@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_delegation.py"
 type: "code"
-community: "Community 77"
+community: "Community 82"
 location: "L141"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_77
+  - community/Community_82
 ---
 
 # TestRedelegation
@@ -19,4 +19,4 @@ tags:
 - [[DelegationPrivilege]] - `uses` [INFERRED]
 - [[test_delegation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_77
+#graphify/code #graphify/INFERRED #community/Community_82

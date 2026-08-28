@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-daedalus/SKILL.md"
 type: "document"
-community: "Community 804"
+community: "Community 796"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_804
+  - community/Community_796
 ---
 
 # Output Format
@@ -17,4 +17,4 @@ tags:
 - [[diagramsREADME_2]] - `contains` [EXTRACTED]
 - [[flow.mmd (Mermaid)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_804
+#graphify/document #graphify/EXTRACTED #community/Community_796

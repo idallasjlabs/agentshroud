@@ -1,53 +1,53 @@
 ---
 type: community
-members: 40
+cohesion: 0.08
+members: 38
 ---
 
 # Community 178
 
-**Members:** 40 nodes
+**Cohesion:** 0.08 - loosely connected
+**Members:** 38 nodes
 
 ## Members
-- [[.test_initial_when_has_criticals()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_initial_when_infected()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_initial_when_not_run()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_initial_when_not_run()_2]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_managed_when_no_criticals_but_high()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_measured_or_higher_when_fully_clean()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_measured_when_clean_not_fresh()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_optimizing_when_installed_clean_no_timestamp()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_optimizing_when_installed_clean_no_timestamp()_1]] - code - gateway/tests/test_scanner_integration.py
-- [[A report that is 48h old must not score above 1.]] - rationale - gateway/tests/test_scorecard_integrity.py
-- [[Fresh clean report with zero CVEs should score 5.]] - rationale - gateway/tests/test_scorecard_integrity.py
-- [[Return True if the most recent report file was written within max_age_hours.]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 2 Vulnerability Management (0-5).      1=module installed but no r]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 6 Malware Defense (0-5).      1=module installed or not_run, 3=cla]] - rationale - gateway/security/scanner_integration.py
-- [[Stale ClamAV report (48h) must not score above 1.]] - rationale - gateway/tests/test_scorecard_integrity.py
-- [[TestScoreMalwareDefense]] - code - gateway/tests/test_scanner_integration.py
-- [[TestScoreVulnerabilityManagement]] - code - gateway/tests/test_scanner_integration.py
-- [[_clean_clamav()]] - code - gateway/tests/test_scorecard_integrity.py
-- [[_clean_trivy()]] - code - gateway/tests/test_scorecard_integrity.py
-- [[_is_fresh()]] - code - gateway/security/scanner_integration.py
-- [[_not_run_clamav()]] - code - gateway/tests/test_scorecard_integrity.py
-- [[_not_run_trivy()]] - code - gateway/tests/test_scorecard_integrity.py
-- [[_score_malware_defense()]] - code - gateway/security/scanner_integration.py
-- [[_score_vulnerability_management()]] - code - gateway/security/scanner_integration.py
-- [[test_empty_collaborator_activity_no_score()]] - code - gateway/tests/test_scorecard_integrity.py
-- [[test_empty_key_rotation_log_no_score()]] - code - gateway/tests/test_scorecard_integrity.py
-- [[test_host_hardening_empty_audit_log_no_bonus()]] - code - gateway/tests/test_scorecard_integrity.py
-- [[test_host_hardening_nonempty_audit_log_adds_score()]] - code - gateway/tests/test_scorecard_integrity.py
-- [[test_malware_fresh_clean_scores_5()]] - code - gateway/tests/test_scorecard_integrity.py
-- [[test_malware_not_run_scores_1()]] - code - gateway/tests/test_scorecard_integrity.py
-- [[test_malware_stale_report_scores_1()]] - code - gateway/tests/test_scorecard_integrity.py
-- [[test_no_scan_reports_malware_defense_le_1()]] - code - gateway/tests/test_scorecard_integrity.py
-- [[test_no_scan_reports_vuln_management_le_1()]] - code - gateway/tests/test_scorecard_integrity.py
-- [[test_nonempty_collaborator_activity_adds_score()]] - code - gateway/tests/test_scorecard_integrity.py
-- [[test_nonempty_key_rotation_log_adds_score()]] - code - gateway/tests/test_scorecard_integrity.py
-- [[test_scorecard_integrity.py]] - code - gateway/tests/test_scorecard_integrity.py
-- [[test_vuln_fresh_clean_report_scores_5()]] - code - gateway/tests/test_scorecard_integrity.py
-- [[test_vuln_no_report_dir_scores_1()]] - code - gateway/tests/test_scorecard_integrity.py
-- [[test_vuln_not_run_scores_1()]] - code - gateway/tests/test_scorecard_integrity.py
-- [[test_vuln_stale_report_scores_1()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[.__enter__()_2]] - code - gateway/tests/test_gateway_email_service.py
+- [[.__exit__()_2]] - code - gateway/tests/test_gateway_email_service.py
+- [[.__init__()_11]] - code - gateway/ingest_api/email_service.py
+- [[.__init__()_159]] - code - gateway/tests/test_gateway_email_service.py
+- [[.build_message()]] - code - gateway/ingest_api/email_service.py
+- [[.login()]] - code - gateway/ingest_api/email_service.py
+- [[.login()_1]] - code - gateway/tests/test_gateway_email_service.py
+- [[.send()]] - code - gateway/ingest_api/email_service.py
+- [[.sender()]] - code - gateway/ingest_api/email_service.py
+- [[.sendmail()]] - code - gateway/ingest_api/email_service.py
+- [[.sendmail()_1]] - code - gateway/tests/test_gateway_email_service.py
+- [[.test_default_transport_is_smtp_ssl()]] - code - gateway/tests/test_gateway_email_service.py
+- [[.test_email_send_routes_through_injectable_service()]] - code - gateway/tests/test_gateway_email_service.py
+- [[.test_html_message_has_plain_fallback_then_html()]] - code - gateway/tests/test_gateway_email_service.py
+- [[.test_plain_message_has_single_plain_part()]] - code - gateway/tests/test_gateway_email_service.py
+- [[.test_send_html_uses_html_payload()]] - code - gateway/tests/test_gateway_email_service.py
+- [[.test_send_logs_in_and_sendmails_over_injected_transport()]] - code - gateway/tests/test_gateway_email_service.py
+- [[.test_send_propagates_auth_error()]] - code - gateway/tests/test_gateway_email_service.py
+- [[.test_send_propagates_generic_smtp_error()]] - code - gateway/tests/test_gateway_email_service.py
+- [[Build the MIME message string (multipartalternative).          For HTML mail th]] - rationale - gateway/ingest_api/email_service.py
+- [[GatewayEmailService_1]] - code - gateway/tests/test_gateway_email_service.py
+- [[GatewayEmailService]] - code - gateway/ingest_api/email_service.py
+- [[POST emailsend to the owner sends via forward._email_service — proving]] - rationale - gateway/tests/test_gateway_email_service.py
+- [[Protocol]] - code
+- [[Records loginsendmail; usable as a context manager like SMTP_SSL.]] - rationale - gateway/tests/test_gateway_email_service.py
+- [[Send one email synchronously.  Blocking — call in an executor.          Raises t]] - rationale - gateway/ingest_api/email_service.py
+- [[Sends owner-comms email over an injectable SMTP transport.]] - rationale - gateway/ingest_api/email_service.py
+- [[SmtpLike]] - code - gateway/ingest_api/email_service.py
+- [[TestBuildMessage]] - code - gateway/tests/test_gateway_email_service.py
+- [[TestEndpointUsesService]] - code - gateway/tests/test_gateway_email_service.py
+- [[TestSend]] - code - gateway/tests/test_gateway_email_service.py
+- [[The subset of ``smtplib.SMTP_SSL`` the service uses.]] - rationale - gateway/ingest_api/email_service.py
+- [[TransportFactory]] - code - gateway/ingest_api/email_service.py
+- [[_FakeSmtp]] - code - gateway/tests/test_gateway_email_service.py
+- [[_service()]] - code - gateway/tests/test_gateway_email_service.py
+- [[email_service.py]] - code - gateway/ingest_api/email_service.py
+- [[test_gateway_email_service.py]] - code - gateway/tests/test_gateway_email_service.py
+- [[test_sender_property()]] - code - gateway/tests/test_gateway_email_service.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -57,15 +57,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 12 edges to [[_COMMUNITY_Community 123]]
-- 4 edges to [[_COMMUNITY_Community 59]]
-- 2 edges to [[_COMMUNITY_Community 125]]
-- 1 edge to [[_COMMUNITY_Community 512]]
-- 1 edge to [[_COMMUNITY_Community 558]]
+- 3 edges to [[_COMMUNITY_Community 159]]
+- 1 edge to [[_COMMUNITY_Ingest API & Approval Routes]]
 
 ## Top bridge nodes
-- [[_is_fresh()]] - degree 8, connects to 4 communities
-- [[_score_vulnerability_management()]] - degree 17, connects to 3 communities
-- [[_score_malware_defense()]] - degree 15, connects to 3 communities
-- [[TestScoreVulnerabilityManagement]] - degree 6, connects to 1 community
-- [[TestScoreMalwareDefense]] - degree 5, connects to 1 community
+- [[GatewayEmailService]] - degree 16, connects to 1 community
+- [[test_gateway_email_service.py]] - degree 8, connects to 1 community
+- [[email_service.py]] - degree 3, connects to 1 community

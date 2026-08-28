@@ -1,79 +1,92 @@
 ---
 type: community
-members: 66
+cohesion: 0.05
+members: 77
 ---
 
 # Community 59
 
-**Members:** 66 nodes
+**Cohesion:** 0.05 - loosely connected
+**Members:** 77 nodes
 
 ## Members
-- [[Apply mandatory gate overrides to domain scores.      Returns updated scores dic]] - rationale - gateway/security/scanner_integration.py
-- [[Path_17]] - code - gateway/security/scanner_integration.py
-- [[Read and return the Docker daemon config from daemon.json, or {} if unavailable.]] - rationale - gateway/security/scanner_integration.py
-- [[Return True if a non-zombie falco process is running inside this container.]] - rationale - gateway/security/scanner_integration.py
-- [[Return True if app_state has a non-None attribute with the given name.]] - rationale - gateway/security/scanner_integration.py
-- [[Return True if fluent-bit pidfile tmpfluent-bit.pid exists with a live PID.]] - rationale - gateway/security/scanner_integration.py
-- [[Return True if running inside a Docker container (.dockerenv present).]] - rationale - gateway/security/scanner_integration.py
-- [[Return True if the named Docker container is currently in 'running' state.]] - rationale - gateway/security/scanner_integration.py
-- [[Return True if wazuh-agentd is running as a local process inside this container.]] - rationale - gateway/security/scanner_integration.py
-- [[Return docker-compose.yml text for containerized-deployment evidence checks.]] - rationale - gateway/security/scanner_integration.py
-- [[Return scriptssecurity-scan.sh text, or empty string.]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 13 Identity & Authentication (0-5). IEC 62443 FR1.      1=API toke]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 14 Access Control & Authorization (0-5). IEC 62443 FR2.      1=rol]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 15 Data Confidentiality & Encryption (0-5). IEC 62443 FR4.      1=]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 16 Resource Availability & Limits (0-5). IEC 62443 FR7.      1=mem]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 17 Image Signing & Provenance (0-5). NIST 800-190 §3.1.      0=no]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 18 Registry Security (0-5). NIST 800-190 §3.2.      0=public regis]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 19 Host OS Hardening (0-5). NIST 800-190 §3.5.      0=no info, 1=k]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 20 Docker Daemon Configuration (0-5). CIS Sections 2 & 3.      0=d]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 21 Container Runtime Isolation (0-5). CIS Section 5.      0=privil]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 22 Prompt Injection Defense (0-5). OWASP ASI-07, MITRE AML.T0051.]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 23 Agent Goal & Behavior Integrity (0-5). OWASP ASI-01, NIST AI RM]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 24 Tool Use Safety & Validation (0-5). OWASP ASI-02, CSA MAESTRO.]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 25 Least Agency Enforcement (0-5). OWASP ASI-05, NIST AI Agent Sta]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 26 Agent Identity & NHI (0-5). OWASP ASI-09, NIST AI Agent Standar]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 27 Memory Integrity (0-5). OWASP ASI-08, MITRE ATLAS.      1=memor]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 28 Inter-Agent Trust & Orchestration Security (0-5). OWASP ASI-03]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 30 AI Observability & Audit Trail (0-5). NIST AI RMF MEASURE, IEC]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 31 Human-in-the-Loop Controls (0-5). NIST AI RMF MANAGE, ISO 42001]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 32 Rogue Agent Containment & Killswitch (0-5). OWASP ASI-03, CSA M]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 33 Data Exfiltration Prevention (0-5). OWASP ASI-06, MITRE ATLAS,]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 7 Network Segmentation (0-5).      3=Docker network architecture b]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 8 Secrets Management (0-5).      2=Docker secrets + key_vault base]] - rationale - gateway/security/scanner_integration.py
-- [[_app_state_has()]] - code - gateway/security/scanner_integration.py
-- [[_evaluate_mandatory_gates()]] - code - gateway/security/scanner_integration.py
-- [[_is_container_running()]] - code - gateway/security/scanner_integration.py
-- [[_is_containerized()]] - code - gateway/security/scanner_integration.py
-- [[_is_falco_running()]] - code - gateway/security/scanner_integration.py
-- [[_is_fluent_bit_running()]] - code - gateway/security/scanner_integration.py
-- [[_is_wazuh_agent_running()]] - code - gateway/security/scanner_integration.py
-- [[_read_compose_text()]] - code - gateway/security/scanner_integration.py
-- [[_read_docker_daemon_config()]] - code - gateway/security/scanner_integration.py
-- [[_score_access_control_authorization()]] - code - gateway/security/scanner_integration.py
-- [[_score_agent_behavior_integrity()]] - code - gateway/security/scanner_integration.py
-- [[_score_agent_identity_nhi()]] - code - gateway/security/scanner_integration.py
-- [[_score_ai_observability()]] - code - gateway/security/scanner_integration.py
-- [[_score_container_runtime_isolation()]] - code - gateway/security/scanner_integration.py
-- [[_score_data_confidentiality_encryption()]] - code - gateway/security/scanner_integration.py
-- [[_score_data_exfiltration_prevention()]] - code - gateway/security/scanner_integration.py
-- [[_score_docker_daemon_config()]] - code - gateway/security/scanner_integration.py
-- [[_score_host_os_hardening()]] - code - gateway/security/scanner_integration.py
-- [[_score_human_in_the_loop()]] - code - gateway/security/scanner_integration.py
-- [[_score_identity_authentication()]] - code - gateway/security/scanner_integration.py
-- [[_score_image_signing_provenance()]] - code - gateway/security/scanner_integration.py
-- [[_score_inter_agent_trust()]] - code - gateway/security/scanner_integration.py
-- [[_score_least_agency()]] - code - gateway/security/scanner_integration.py
-- [[_score_memory_integrity()]] - code - gateway/security/scanner_integration.py
-- [[_score_network_segmentation()]] - code - gateway/security/scanner_integration.py
-- [[_score_prompt_injection_defense()]] - code - gateway/security/scanner_integration.py
-- [[_score_registry_security()]] - code - gateway/security/scanner_integration.py
-- [[_score_resource_availability()]] - code - gateway/security/scanner_integration.py
-- [[_score_rogue_agent_containment()]] - code - gateway/security/scanner_integration.py
-- [[_score_secrets_management()]] - code - gateway/security/scanner_integration.py
-- [[_score_tool_use_safety()]] - code - gateway/security/scanner_integration.py
-- [[_security_scan_sh_text()]] - code - gateway/security/scanner_integration.py
-- [[scanner_integration.py]] - code - gateway/security/scanner_integration.py
+- [[.test_after_operations()]] - code - gateway/tests/test_agentshroud_manager.py
+- [[.test_after_upgrade()]] - code - gateway/tests/test_agentshroud_manager.py
+- [[.test_blocked_on_invalid()]] - code - gateway/tests/test_agentshroud_manager.py
+- [[.test_blocked_on_invalid_version()]] - code - gateway/tests/test_agentshroud_manager.py
+- [[.test_dry_run()_1]] - code - gateway/tests/test_agentshroud_manager.py
+- [[.test_dry_run()]] - code - gateway/tests/test_agentshroud_manager.py
+- [[.test_empty_history()]] - code - gateway/tests/test_agentshroud_manager.py
+- [[.test_has_timestamp()]] - code - gateway/tests/test_agentshroud_manager.py
+- [[.test_invalid_version_format()]] - code - gateway/tests/test_agentshroud_manager.py
+- [[.test_masks_bearer()]] - code - gateway/tests/test_agentshroud_manager.py
+- [[.test_masks_password()]] - code - gateway/tests/test_agentshroud_manager.py
+- [[.test_masks_token()]] - code - gateway/tests/test_agentshroud_manager.py
+- [[.test_no_history()]] - code - gateway/tests/test_agentshroud_manager.py
+- [[.test_no_history_unknown()]] - code - gateway/tests/test_agentshroud_manager.py
+- [[.test_no_mask_short_values()]] - code - gateway/tests/test_agentshroud_manager.py
+- [[.test_no_previous_version()]] - code - gateway/tests/test_agentshroud_manager.py
+- [[.test_plain_text_unchanged()]] - code - gateway/tests/test_agentshroud_manager.py
+- [[.test_returns_versions()]] - code - gateway/tests/test_agentshroud_manager.py
+- [[.test_sequential_upgrades()]] - code - gateway/tests/test_agentshroud_manager.py
+- [[.test_successful_downgrade()]] - code - gateway/tests/test_agentshroud_manager.py
+- [[.test_successful_rollback()]] - code - gateway/tests/test_agentshroud_manager.py
+- [[.test_successful_upgrade()]] - code - gateway/tests/test_agentshroud_manager.py
+- [[.test_valid_version()]] - code - gateway/tests/test_agentshroud_manager.py
+- [[.test_with_env_var()]] - code - gateway/tests/test_agentshroud_manager.py
+- [[Any_10]] - code - gateway/ingest_api/version_routes.py
+- [[Any_73]] - code - gateway/tools/agentshroud_manager.py
+- [[Check the currently installed OpenClaw version.]] - rationale - gateway/tools/agentshroud_manager.py
+- [[Connection_1]] - code - gateway/tools/agentshroud_manager.py
+- [[Create a temporary database for testing.]] - rationale - gateway/tests/test_agentshroud_manager.py
+- [[Downgrade OpenClaw to a previous version.      Requires security review (risk of]] - rationale - gateway/tools/agentshroud_manager.py
+- [[Downgrade to a previous version. Requires approval_id unless dry_run.]] - rationale - gateway/ingest_api/version_routes.py
+- [[Get SQLite connection for version history.]] - rationale - gateway/tools/agentshroud_manager.py
+- [[Get the currently installed OpenClaw version.]] - rationale - gateway/ingest_api/version_routes.py
+- [[Get version change history.]] - rationale - gateway/ingest_api/version_routes.py
+- [[List all version history entries.]] - rationale - gateway/tools/agentshroud_manager.py
+- [[List available OpenClaw versions (from git tags or known versions).]] - rationale - gateway/tools/agentshroud_manager.py
+- [[List available OpenClaw versions.]] - rationale - gateway/ingest_api/version_routes.py
+- [[Mask sensitive credentials in text output.]] - rationale - gateway/tools/agentshroud_manager.py
+- [[Perform a security review before version change.      Checks     - Known CVEs f]] - rationale - gateway/tools/agentshroud_manager.py
+- [[Perform security review for a target version (no approval needed).]] - rationale - gateway/ingest_api/version_routes.py
+- [[Request for rollback operation.]] - rationale - gateway/ingest_api/version_routes.py
+- [[Request for version change operations.]] - rationale - gateway/ingest_api/version_routes.py
+- [[Rollback to the previous version.]] - rationale - gateway/tools/agentshroud_manager.py
+- [[Rollback to the previous version. Requires approval_id.]] - rationale - gateway/ingest_api/version_routes.py
+- [[RollbackRequest]] - code - gateway/ingest_api/version_routes.py
+- [[TestCheckCurrentVersion]] - code - gateway/tests/test_agentshroud_manager.py
+- [[TestDowngrade]] - code - gateway/tests/test_agentshroud_manager.py
+- [[TestListAvailableVersions]] - code - gateway/tests/test_agentshroud_manager.py
+- [[TestListVersions]] - code - gateway/tests/test_agentshroud_manager.py
+- [[TestMaskCredentials]] - code - gateway/tests/test_agentshroud_manager.py
+- [[TestRollback]] - code - gateway/tests/test_agentshroud_manager.py
+- [[TestSecurityReview]] - code - gateway/tests/test_agentshroud_manager.py
+- [[TestUpgrade]] - code - gateway/tests/test_agentshroud_manager.py
+- [[Upgrade OpenClaw to a target version.      Requires a prior security review and]] - rationale - gateway/tools/agentshroud_manager.py
+- [[Upgrade to a target version. Requires approval_id unless dry_run.]] - rationale - gateway/ingest_api/version_routes.py
+- [[VersionRequest]] - code - gateway/ingest_api/version_routes.py
+- [[_get_db()]] - code - gateway/tools/agentshroud_manager.py
+- [[agentshroud_manager (version manager)]] - code - gateway/tools/agentshroud_manager.py
+- [[agentshroud_manager.py]] - code - gateway/tools/agentshroud_manager.py
+- [[check_current_version()]] - code - gateway/tools/agentshroud_manager.py
+- [[downgrade()]] - code - gateway/tools/agentshroud_manager.py
+- [[downgrade_version()]] - code - gateway/ingest_api/version_routes.py
+- [[get_available_versions()]] - code - gateway/ingest_api/version_routes.py
+- [[get_current_version()]] - code - gateway/ingest_api/version_routes.py
+- [[get_version_history()]] - code - gateway/ingest_api/version_routes.py
+- [[list_available_versions()]] - code - gateway/tools/agentshroud_manager.py
+- [[list_versions()]] - code - gateway/tools/agentshroud_manager.py
+- [[mask_credentials()]] - code - gateway/tools/agentshroud_manager.py
+- [[review_version()]] - code - gateway/ingest_api/version_routes.py
+- [[rollback()]] - code - gateway/tools/agentshroud_manager.py
+- [[rollback_version()]] - code - gateway/ingest_api/version_routes.py
+- [[security_review()]] - code - gateway/tools/agentshroud_manager.py
+- [[test_agentshroud_manager.py]] - code - gateway/tests/test_agentshroud_manager.py
+- [[tmp_db()]] - code - gateway/tests/test_agentshroud_manager.py
+- [[upgrade()]] - code - gateway/tools/agentshroud_manager.py
+- [[upgrade_version()]] - code - gateway/ingest_api/version_routes.py
+- [[version_routes.py]] - code - gateway/ingest_api/version_routes.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -83,23 +96,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 27 edges to [[_COMMUNITY_Community 125]]
-- 20 edges to [[_COMMUNITY_Community 123]]
-- 8 edges to [[_COMMUNITY_Community 85]]
-- 5 edges to [[_COMMUNITY_Community 512]]
-- 4 edges to [[_COMMUNITY_Community 178]]
-- 3 edges to [[_COMMUNITY_Community 162]]
-- 3 edges to [[_COMMUNITY_Community 1002]]
-- 3 edges to [[_COMMUNITY_Community 541]]
-- 2 edges to [[_COMMUNITY_Community 558]]
-- 1 edge to [[_COMMUNITY_Community 1131]]
-- 1 edge to [[_COMMUNITY_Community 39]]
-- 1 edge to [[_COMMUNITY_Community 261]]
-- 1 edge to [[_COMMUNITY_Community 653]]
+- 2 edges to [[_COMMUNITY_Community 14]]
+- 2 edges to [[_COMMUNITY_Community 37]]
+- 1 edge to [[_COMMUNITY_Ingest API & Approval Routes]]
+- 1 edge to [[_COMMUNITY_Community 980]]
 
 ## Top bridge nodes
-- [[scanner_integration.py]] - degree 67, connects to 13 communities
-- [[Path_17]] - degree 34, connects to 6 communities
-- [[_score_network_segmentation()]] - degree 9, connects to 2 communities
-- [[_score_secrets_management()]] - degree 7, connects to 2 communities
-- [[_evaluate_mandatory_gates()]] - degree 7, connects to 2 communities
+- [[version_routes.py]] - degree 19, connects to 1 community
+- [[upgrade()]] - degree 19, connects to 1 community
+- [[rollback()]] - degree 12, connects to 1 community
+- [[security_review()]] - degree 12, connects to 1 community
+- [[VersionRequest]] - degree 7, connects to 1 community

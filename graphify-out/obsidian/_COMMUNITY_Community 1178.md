@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1178
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[Athena — Knowledge Distiller_2]] - document - docker/config/hermes/skills/i-athena/README.md
-- [[Purpose_38]] - document - docker/config/hermes/skills/i-athena/README.md
-- [[README_43]] - document - docker/config/hermes/skills/i-athena/README.md
-- [[Related Skills_41]] - document - docker/config/hermes/skills/i-athena/README.md
-- [[Usage_43]] - document - docker/config/hermes/skills/i-athena/README.md
+- [[CICD Pipeline Advisor (CICD)]] - document - docker/config/hermes/skills/i-cicd/README.md
+- [[Purpose_43]] - document - docker/config/hermes/skills/i-cicd/README.md
+- [[README_48]] - document - docker/config/hermes/skills/i-cicd/README.md
+- [[Related Skills_46]] - document - docker/config/hermes/skills/i-cicd/README.md
+- [[Usage_49]] - document - docker/config/hermes/skills/i-cicd/README.md
 
 ## Live Query (requires Dataview plugin)
 

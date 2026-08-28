@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/playback_logic.h"
 type: "code"
-community: "Community 166"
+community: "Community 271"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_166
+  - community/Community_271
 ---
 
 # playback_logic.h
@@ -17,4 +17,4 @@ tags:
 - [[delivery_track_sent_ok()]] - `contains` [EXTRACTED]
 - [[playback_gate_should_open()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_166
+#graphify/code #graphify/EXTRACTED #community/Community_271

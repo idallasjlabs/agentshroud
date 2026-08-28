@@ -1,14 +1,14 @@
 ---
 source_file: "firmware/voice-terminal/main/ota.h"
 type: "code"
-community: "Community 1627"
+community: "Community 1714"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1627
+  - community/Community_1714
 ---
 
 # ota.h
 
-#graphify/code #graphify/EXTRACTED #community/Community_1627
+#graphify/code #graphify/EXTRACTED #community/Community_1714

@@ -1,23 +1,21 @@
 ---
 type: community
-members: 10
+cohesion: 0.33
+members: 6
 ---
 
 # Community 1112
 
-**Members:** 10 nodes
+**Cohesion:** 0.33 - loosely connected
+**Members:** 6 nodes
 
 ## Members
-- [[4. Function Call Exposure (XML Leak)]] - document - docs/project/REPORTED_ISSUES.md
-- [[5. ContextGuard False Positives (Collaborator Block)]] - document - docs/project/TELEGRAM_ISSUES.md
-- [[5. `main.py` Async Bug in Email Module]] - document - docs/project/REPORTED_ISSUES.md
-- [[6. SSH Bypass in `is_auto_approved`]] - document - docs/project/REPORTED_ISSUES.md
-- [[6. iMessage Integration Permissions]] - document - docs/project/TELEGRAM_ISSUES.md
-- [[7. CI Safety Issue Pytest Exit Codes Swallowed]] - document - docs/project/REPORTED_ISSUES.md
-- [[7. SMTP Port Blocks (Email Failures)]] - document - docs/project/TELEGRAM_ISSUES.md
-- [[8. ForwardResponse Type Mismatch]] - document - docs/project/REPORTED_ISSUES.md
-- [[🟠 HIGH Security & Core Logic Issues]] - document - docs/project/REPORTED_ISSUES.md
-- [[🟠 HIGH Security & Logic Issues]] - document - docs/project/TELEGRAM_ISSUES.md
+- [[1. Accomplishments This Phase_1]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[🎯 Binary Detection & Graceful Degradation]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[📊 Complete Security Module Integration]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[🔧 Security Module Constructor Fixes — Critical Infrastructure Repairs]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[🚀 New Management Endpoints — Real-Time Security Visibility]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[🛡️ Environment Resilience — TestProduction Compatibility]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,9 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 475]]
-- 1 edge to [[_COMMUNITY_Community 377]]
+- 1 edge to [[_COMMUNITY_Community 133]]
 
 ## Top bridge nodes
-- [[🟠 HIGH Security & Logic Issues]] - degree 10, connects to 2 communities
-- [[🟠 HIGH Security & Core Logic Issues]] - degree 6, connects to 1 community
+- [[1. Accomplishments This Phase_1]] - degree 6, connects to 1 community

@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 1.00
 members: 2
 ---
 
 # Community 1500
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[plan_1]] - document - docs/planning/redteam/plan.md
-- [[plan]] - document - docs/planning/redteam/plan.md
+- [[Diagram 18 Runbook]] - image - docs/diagrams/images/diagram-18-runbook.svg
+- [[Diagram 19 Incident Response]] - image - docs/diagrams/images/diagram-19-incident-response.svg
 
 ## Live Query (requires Dataview plugin)
 

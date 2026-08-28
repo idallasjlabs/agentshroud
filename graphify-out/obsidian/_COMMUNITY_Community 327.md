@@ -1,39 +1,41 @@
 ---
 type: community
+cohesion: 0.08
 members: 26
 ---
 
 # Community 327
 
+**Cohesion:** 0.08 - loosely connected
 **Members:** 26 nodes
 
 ## Members
-- [[401 Unauthorized_4]] - document - skills/custom/icloud/SKILL.md
-- [[CalendarContacts not found_3]] - document - skills/custom/icloud/SKILL.md
-- [[Connection timeout_4]] - document - skills/custom/icloud/SKILL.md
-- [[Add Contact_3]] - document - skills/custom/icloud/SKILL.md
-- [[Calendar Operations_3]] - document - skills/custom/icloud/SKILL.md
-- [[Configuration_19]] - document - skills/custom/icloud/SKILL.md
-- [[Contact Operations_3]] - document - skills/custom/icloud/SKILL.md
-- [[Create Event_3]] - document - skills/custom/icloud/SKILL.md
-- [[Create Note_3]] - document - skills/custom/icloud/SKILL.md
-- [[Delete Event_3]] - document - skills/custom/icloud/SKILL.md
-- [[List Contacts_3]] - document - skills/custom/icloud/SKILL.md
-- [[List Events_3]] - document - skills/custom/icloud/SKILL.md
-- [[List Messages_3]] - document - skills/custom/icloud/SKILL.md
-- [[List Notes_3]] - document - skills/custom/icloud/SKILL.md
-- [[Mail Operations_3]] - document - skills/custom/icloud/SKILL.md
-- [[Notes Operations_3]] - document - skills/custom/icloud/SKILL.md
-- [[Search Contacts_3]] - document - skills/custom/icloud/SKILL.md
-- [[Search Mail_3]] - document - skills/custom/icloud/SKILL.md
-- [[Search Notes_3]] - document - skills/custom/icloud/SKILL.md
-- [[Security_18]] - document - skills/custom/icloud/SKILL.md
-- [[Send Email_3]] - document - skills/custom/icloud/SKILL.md
-- [[Setup_4]] - document - skills/custom/icloud/SKILL.md
-- [[Troubleshooting_36]] - document - skills/custom/icloud/SKILL.md
-- [[Update Contact_3]] - document - skills/custom/icloud/SKILL.md
-- [[Update Event_3]] - document - skills/custom/icloud/SKILL.md
-- [[iCloud Services_4]] - document - skills/custom/icloud/SKILL.md
+- [[A]] - document - docs/project/glossary.md
+- [[AgentShroud Project Terminology]] - document - docs/project/glossary.md
+- [[B]] - document - docs/project/glossary.md
+- [[C]] - document - docs/project/glossary.md
+- [[D]] - document - docs/project/glossary.md
+- [[E]] - document - docs/project/glossary.md
+- [[F]] - document - docs/project/glossary.md
+- [[Glossary]] - document - docs/project/glossary.md
+- [[H]] - document - docs/project/glossary.md
+- [[I]] - document - docs/project/glossary.md
+- [[K]] - document - docs/project/glossary.md
+- [[M]] - document - docs/project/glossary.md
+- [[N]] - document - docs/project/glossary.md
+- [[O]] - document - docs/project/glossary.md
+- [[Operational Terms]] - document - docs/project/glossary.md
+- [[P]] - document - docs/project/glossary.md
+- [[R]] - document - docs/project/glossary.md
+- [[S]] - document - docs/project/glossary.md
+- [[Security Terms]] - document - docs/project/glossary.md
+- [[T_1]] - document - docs/project/glossary.md
+- [[Technical Abbreviations]] - document - docs/project/glossary.md
+- [[U]] - document - docs/project/glossary.md
+- [[V]] - document - docs/project/glossary.md
+- [[W]] - document - docs/project/glossary.md
+- [[Z]] - document - docs/project/glossary.md
+- [[glossary]] - document - docs/project/glossary.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -41,9 +43,3 @@ members: 26
 TABLE source_file, type FROM #community/Community_327
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 372]]
-
-## Top bridge nodes
-- [[iCloud Services_4]] - degree 9, connects to 1 community

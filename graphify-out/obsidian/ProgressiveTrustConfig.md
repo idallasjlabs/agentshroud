@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/progressive_trust_config.py"
 type: "code"
-community: "Community 35"
+community: "Progressive Trust"
 location: "L86"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_35
+  - community/Progressive_Trust
 ---
 
 # ProgressiveTrustConfig
@@ -20,8 +20,8 @@ tags:
 - [[Configuration for the progressive trust system.]] - `rationale_for` [EXTRACTED]
 - [[ProgressiveTrustConfig_1]] - `uses` [INFERRED]
 - [[ProgressiveTrustConfig_2]] - `uses` [INFERRED]
-- [[Request_7]] - `uses` [INFERRED]
-- [[Response]] - `uses` [INFERRED]
+- [[Request_8]] - `uses` [INFERRED]
+- [[Response_1]] - `uses` [INFERRED]
 - [[TestBackwardCompat]] - `uses` [INFERRED]
 - [[TestEnforcementMode]] - `uses` [INFERRED]
 - [[TestEnforcementModeResolver]] - `uses` [INFERRED]
@@ -53,4 +53,4 @@ tags:
 - [[trust_manager()_1]] - `calls` [EXTRACTED]
 - [[trust_manager.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_35
+#graphify/code #graphify/INFERRED #community/Progressive_Trust

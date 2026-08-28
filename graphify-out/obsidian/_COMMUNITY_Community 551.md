@@ -1,26 +1,31 @@
 ---
 type: community
-members: 13
+cohesion: 0.12
+members: 16
 ---
 
 # Community 551
 
-**Members:** 13 nodes
+**Cohesion:** 0.12 - loosely connected
+**Members:** 16 nodes
 
 ## Members
-- [[First Time Setup_1]] - document - docs/vault/08 - Runbooks/First Time Setup.md
-- [[Prerequisites_13]] - document - docs/vault/08 - Runbooks/First Time Setup.md
-- [[Related Notes_66]] - document - docs/vault/08 - Runbooks/First Time Setup.md
-- [[Step 1 Create Secret Files]] - document - docs/vault/08 - Runbooks/First Time Setup.md
-- [[Step 2 Configure agentshroud.yaml]] - document - docs/vault/08 - Runbooks/First Time Setup.md
-- [[Step 3 Configure 1Password Items]] - document - docs/vault/08 - Runbooks/First Time Setup.md
-- [[Step 4 Build Container Images]] - document - docs/vault/08 - Runbooks/First Time Setup.md
-- [[Step 5 Configure agentshroud.yaml]] - document - docs/setup-telegram.md
-- [[Step 5 Start Containers]] - document - docs/vault/08 - Runbooks/First Time Setup.md
-- [[Step 6 Verify Setup]] - document - docs/vault/08 - Runbooks/First Time Setup.md
-- [[Step 7 Configure iOS Shortcuts (Optional)]] - document - docs/vault/08 - Runbooks/First Time Setup.md
-- [[Step 8 Verify Security Posture]] - document - docs/vault/08 - Runbooks/First Time Setup.md
-- [[Troubleshooting First Setup]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[Accessibility Checklist]] - document - branding/QUICK-REFERENCE.md
+- [[AgentShroud Brand Quick Reference]] - document - branding/QUICK-REFERENCE.md
+- [[CSS Variables]] - document - branding/QUICK-REFERENCE.md
+- [[Common Use Cases]] - document - branding/QUICK-REFERENCE.md
+- [[Dark Mode]] - document - branding/QUICK-REFERENCE.md
+- [[Favicon]] - document - branding/QUICK-REFERENCE.md
+- [[File Locations]] - document - branding/QUICK-REFERENCE.md
+- [[Logo Files_1]] - document - branding/QUICK-REFERENCE.md
+- [[Logo Usage Rules]] - document - branding/QUICK-REFERENCE.md
+- [[Need More Details]] - document - branding/QUICK-REFERENCE.md
+- [[Primary Brand Color]] - document - branding/QUICK-REFERENCE.md
+- [[Quick Color Palette]] - document - branding/QUICK-REFERENCE.md
+- [[Typography]] - document - branding/QUICK-REFERENCE.md
+- [[Website Header]] - document - branding/QUICK-REFERENCE.md
+- [[✅ Do]] - document - branding/QUICK-REFERENCE.md
+- [[❌ Don't]] - document - branding/QUICK-REFERENCE.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,9 +35,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 739]]
-- 1 edge to [[_COMMUNITY_Community 788]]
+- 1 edge to [[_COMMUNITY_Community 790]]
 
 ## Top bridge nodes
-- [[First Time Setup_1]] - degree 13, connects to 1 community
-- [[Step 5 Configure agentshroud.yaml]] - degree 2, connects to 1 community
+- [[AgentShroud Brand Quick Reference]] - degree 10, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/OPENCLAW_SETUP.md"
 type: "document"
-community: "Community 214"
+community: "Community 218"
 location: "L245"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_214
+  - community/Community_218
 ---
 
 # OpenClaw Features Now Available
@@ -18,4 +18,4 @@ tags:
 - [[✅ Multi-LLM Support]] - `contains` [EXTRACTED]
 - [[✅ Skills]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_214
+#graphify/document #graphify/EXTRACTED #community/Community_218

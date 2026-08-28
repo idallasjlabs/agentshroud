@@ -1,11 +1,11 @@
 ---
 source_file: "docs/user-guide.md"
 type: "concept"
-community: "Community 910"
+community: "Community 847"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Community_910
+  - community/Community_847
 ---
 
 # Approval Request Workflow (user-facing)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[SSH Auto-Approve Commands]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Community_910
+#graphify/concept #graphify/INFERRED #community/Community_847

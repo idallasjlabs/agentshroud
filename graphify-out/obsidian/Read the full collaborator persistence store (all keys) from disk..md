@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "Community 134"
+community: "SOC Collaborators"
 location: "L380"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_134
+  - community/SOC_Collaborators
 ---
 
 # Read the full collaborator persistence store (all keys) from disk.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_load_collab_store()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_134
+#graphify/rationale #graphify/EXTRACTED #community/SOC_Collaborators

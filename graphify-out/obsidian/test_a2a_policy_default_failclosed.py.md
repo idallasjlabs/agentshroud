@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_policy_default_failclosed.py"
 type: "code"
-community: "Community 1001"
+community: "Community 81"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1001
+  - community/Community_81
 ---
 
 # test_a2a_policy_default_failclosed.py
@@ -18,4 +18,4 @@ tags:
 - [[A2APolicyEngine_1]] - `imports` [EXTRACTED]
 - [[TestDefaultA2APolicyIsFailClosed]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1001
+#graphify/code #graphify/EXTRACTED #community/Community_81

@@ -1,17 +1,18 @@
 ---
 type: community
-members: 4
+cohesion: 0.67
+members: 3
 ---
 
 # Community 1412
 
-**Members:** 4 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[.test_handle_callback_approve_1h()]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[.test_handle_callback_approve_4h()]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[Test handling 1-hour time-limited approval callback.]] - rationale - gateway/tests/test_egress_telegram_notify.py
-- [[Test handling 4-hour time-limited approval callback.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[3. Viewing Audit Logs]] - document - docs/operations/runbook.md
+- [[Command-Line Access]] - document - docs/operations/runbook.md
+- [[Web Interface Access]] - document - docs/operations/runbook.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,8 +22,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 206]]
+- 1 edge to [[_COMMUNITY_Community 128]]
 
 ## Top bridge nodes
-- [[.test_handle_callback_approve_4h()]] - degree 3, connects to 1 community
-- [[.test_handle_callback_approve_1h()]] - degree 2, connects to 1 community
+- [[3. Viewing Audit Logs]] - degree 3, connects to 1 community

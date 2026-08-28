@@ -1,52 +1,55 @@
 ---
 type: community
-members: 39
+cohesion: 0.06
+members: 40
 ---
 
 # Community 166
 
-**Members:** 39 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 40 nodes
 
 ## Members
-- [[_on_vg_state()]] - code - firmware/voice-terminal/main/app_main.c
-- [[audio_volume_tick() — zipper-free ramp + NVS persist]] - code - firmware/voice-terminal/main/audio.c
-- [[delivery_resume_offset()]] - code - firmware/voice-terminal/main/playback_logic.h
-- [[delivery_track_sent_ok()]] - code - firmware/voice-terminal/main/playback_logic.h
-- [[face_set_state()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
-- [[face_state_t]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
-- [[main()_9]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
-- [[playback_gate_should_open()]] - code - firmware/voice-terminal/main/playback_logic.h
-- [[playback_logic.h]] - code - firmware/voice-terminal/main/playback_logic.h
-- [[playback_logic.h (pure END-gateresume math, extracted for host testing)]] - code - firmware/voice-terminal/main/playback_logic.h
-- [[playback_step()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
-- [[playback_step() — reproduces tts_task's gate-opendrain branches for testing]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
-- [[reset_all()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
-- [[stubsaudio.h (host-test stub replacing audio.h constants)]] - code - firmware/voice-terminal/test/test_playback_state/stubs/audio.h
-- [[test_drain_clears_playing_and_returns_idle()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
-- [[test_drain_keeps_face_off_idle_when_retriggered()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
-- [[test_gate_open_sets_speaking_and_tts_playing()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
-- [[test_gate_opens_on_20s_age()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
-- [[test_gate_opens_on_768kb_cap()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
-- [[test_gate_opens_on_reply_complete()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
-- [[test_gate_stays_closed_before_any_cap()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
-- [[test_gate_stays_closed_leaves_state_idle()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
-- [[test_playback_state.c]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
-- [[test_playback_state.c (host-native unit tests, SCRUM-59)]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
-- [[test_resume_offset_first_attempt_is_zero()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
-- [[test_resume_offset_rewinds_8kb()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
-- [[test_track_sent_ok_is_monotonic()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
-- [[tts_task()]] - code - firmware/voice-terminal/main/app_main.c
-- [[ui_face_set_state()]] - code - firmware/voice-terminal/main/ui_face.c
-- [[vt_agent_count()_1]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
-- [[vt_remote_log()_1]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
-- [[wakeword.c (PTT + WakeNet trigger)]] - code - firmware/voice-terminal/main/wakeword.c
-- [[wakeword.h (PTTWakeNet public API)]] - code - firmware/voice-terminal/main/wakeword.h
-- [[wakeword_set_tts_playing()]] - code - firmware/voice-terminal/main/wakeword.c
-- [[wakeword_triggered()]] - code - firmware/voice-terminal/main/wakeword.c
-- [[wakeword_tts_playing()]] - code - firmware/voice-terminal/main/wakeword.c
-- [[wakeword_tts_stop_clear()]] - code - firmware/voice-terminal/main/wakeword.c
-- [[wakeword_tts_stop_requested()]] - code - firmware/voice-terminal/main/wakeword.c
-- [[ws_vg_state_t]] - code - firmware/voice-terminal/main/app_main.c
+- [[AgentShroud Threat Model (L-1..L-4 Loss Categories)]] - concept - docs/papers/agentshroud-ieee-paper.md
+- [[Agents Rule of Two]] - concept - docs/papers/agentshroud-ieee-paper.md
+- [[CVE-2026-22708 (Indirect Prompt Injection via Web Browsing)]] - concept - docs/papers/agentshroud-ieee-paper.md
+- [[CVE-2026-25253 (OpenClaw RCE)]] - concept - docs/papers/agentshroud-ieee-paper.md
+- [[Credential Isolation Architecture]] - concept - docs/papers/agentshroud-ieee-paper.md
+- [[DNS-Layer Enforcement]] - concept - docs/papers/agentshroud-ieee-paper.md
+- [[Debenedetti et al., The Attacker Moves Second (2025)]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[Enforce-by-Default Semantics (R-02, R-03)]] - rationale - docs/papers/agentshroud-ieee-paper.md
+- [[Hay, Enterprise Security Feature Priorities Assessment (2026)]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[Human-in-the-Loop Approval Gating (R-08, R-09)]] - concept - docs/papers/agentshroud-ieee-paper.md
+- [[Leveson, Engineering a Safer World (2012)]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[Log-To-Leak MCP Exfiltration Attack]] - concept - docs/papers/agentshroud-ieee-paper.md
+- [[MCP Proxy Layer]] - concept - docs/papers/agentshroud-ieee-paper.md
+- [[Microsoft Presidio PII Detection Engine]] - concept - docs/papers/agentshroud-ieee-paper.md
+- [[MiddlewareManager (35 Modules)]] - concept - docs/papers/agentshroud-ieee-paper.md
+- [[Mutual TLS Container Communication]] - concept - docs/papers/agentshroud-ieee-paper.md
+- [[NanoClaw Agent Platform]] - concept - docs/papers/agentshroud-ieee-paper.md
+- [[OpenClaw Agent Platform]] - concept - docs/papers/agentshroud-ieee-paper.md
+- [[Outbound Information Filter (R-01)]] - concept - docs/papers/agentshroud-ieee-paper.md
+- [[PII Sanitizer_2]] - concept - docs/papers/agentshroud-ieee-paper.md
+- [[Per-User Session Isolation (R-04, R-05)]] - concept - docs/papers/agentshroud-ieee-paper.md
+- [[Pi-hole DNS Filtering]] - concept - docs/papers/agentshroud-ieee-paper.md
+- [[Prompt Injection Defense (Ensemble of 20+ Patterns)]] - concept - docs/papers/agentshroud-ieee-paper.md
+- [[RELEASE-PLAN]] - document - docs/planning/RELEASE-PLAN.md
+- [[STPA-Sec Analysis of AgentShroud]] - rationale - docs/papers/agentshroud-ieee-paper.md
+- [[SecurityPipeline (8-Guard Ordered Sequence)]] - concept - docs/papers/agentshroud-ieee-paper.md
+- [[Separation of Concerns  Isolated Bot Accounts]] - rationale - docs/reference/PREREQUISITES.md
+- [[Separation of Privilege (R-06, R-07)]] - concept - docs/papers/agentshroud-ieee-paper.md
+- [[Steve Hay Blue Team Assessment]] - concept - docs/planning/RELEASE-PLAN.md
+- [[ToolHijacker Attack]] - concept - docs/papers/agentshroud-ieee-paper.md
+- [[Transparent Proxy Architecture]] - concept - docs/papers/agentshroud-ieee-paper.md
+- [[Zetherion AI Platform]] - concept - docs/papers/agentshroud-ieee-paper.md
+- [[agentshroud-ieee-paper]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[step-ca Private Certificate Authority]] - concept - docs/papers/agentshroud-ieee-paper.md
+- [[v0.8.0 Watchtower — Security Fixes + Module Wiring]] - concept - docs/planning/RELEASE-PLAN.md
+- [[v0.9.0 Sentinel — Data Isolation + SOC]] - concept - docs/planning/RELEASE-PLAN.md
+- [[v1.0.0 Fortress — Ship-Ready Public Release]] - concept - docs/planning/RELEASE-PLAN.md
+- [[v1.1.0 Groups — Workspaces for Teams]] - concept - docs/planning/RELEASE-PLAN.md
+- [[v1.2.0 Local LLMs — Offline Model Support]] - concept - docs/planning/RELEASE-PLAN.md
+- [[v1.3.0 — Platform Expansion]] - concept - docs/planning/RELEASE-PLAN.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -56,16 +59,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 15 edges to [[_COMMUNITY_Community 139]]
-- 14 edges to [[_COMMUNITY_Community 375]]
-- 5 edges to [[_COMMUNITY_Community 249]]
-- 2 edges to [[_COMMUNITY_Community 902]]
-- 1 edge to [[_COMMUNITY_Community 40]]
-- 1 edge to [[_COMMUNITY_Community 711]]
+- 1 edge to [[_COMMUNITY_Community 158]]
+- 1 edge to [[_COMMUNITY_Community 621]]
+- 1 edge to [[_COMMUNITY_Community 362]]
+- 1 edge to [[_COMMUNITY_Community 361]]
 
 ## Top bridge nodes
-- [[wakeword_triggered()]] - degree 16, connects to 3 communities
-- [[ui_face_set_state()]] - degree 8, connects to 3 communities
-- [[tts_task()]] - degree 10, connects to 2 communities
-- [[wakeword_tts_playing()]] - degree 8, connects to 2 communities
-- [[wakeword_tts_stop_requested()]] - degree 6, connects to 2 communities
+- [[agentshroud-ieee-paper]] - degree 24, connects to 2 communities
+- [[RELEASE-PLAN]] - degree 7, connects to 1 community
+- [[Separation of Concerns  Isolated Bot Accounts]] - degree 2, connects to 1 community

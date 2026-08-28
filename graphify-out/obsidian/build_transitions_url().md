@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/workspace/jira_dev_ticket.py"
 type: "code"
-community: "Community 165"
+community: "Community 171"
 location: "L122"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_165
+  - community/Community_171
 ---
 
 # build_transitions_url()
@@ -17,4 +17,4 @@ tags:
 - [[jira_dev_ticket.py]] - `contains` [EXTRACTED]
 - [[transition_issue()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_165
+#graphify/code #graphify/EXTRACTED #community/Community_171

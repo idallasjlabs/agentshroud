@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-vulcan/SKILL.md"
 type: "document"
-community: "Community 885"
+community: "Community 880"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_885
+  - community/Community_880
 ---
 
 # Vulcan — Subject Matter Auditor
@@ -21,4 +21,4 @@ tags:
 - [[System Prompt_7]] - `contains` [EXTRACTED]
 - [[User Prompt Template_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_885
+#graphify/document #graphify/EXTRACTED #community/Community_880

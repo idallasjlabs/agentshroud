@@ -1,28 +1,30 @@
 ---
 type: community
+cohesion: 0.13
 members: 15
 ---
 
 # Community 611
 
+**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
-- [[.injector()]] - code - gateway/tests/test_credential_isolation.py
-- [[.injector()_1]] - code - gateway/tests/test_credential_isolation.py
-- [[.injector_with_secrets()]] - code - gateway/tests/test_credential_isolation.py
-- [[.test_has_credential()]] - code - gateway/tests/test_credential_isolation.py
-- [[.test_inject_anthropic_key()]] - code - gateway/tests/test_credential_isolation.py
-- [[.test_inject_openai_key()]] - code - gateway/tests/test_credential_isolation.py
-- [[.test_leak_detection_disabled()_1]] - code - gateway/tests/test_credential_isolation.py
-- [[.test_no_injection_unknown_domain()]] - code - gateway/tests/test_credential_isolation.py
-- [[.test_no_injection_when_disabled()]] - code - gateway/tests/test_credential_isolation.py
-- [[.test_no_secrets_loaded_from_empty_dir()]] - code - gateway/tests/test_credential_isolation.py
-- [[.test_status_report()]] - code - gateway/tests/test_credential_isolation.py
-- [[Agent container should have no secrets.]] - rationale - gateway/tests/test_credential_isolation.py
-- [[CredentialInjector]] - code - gateway/tests/test_credential_injector.py
-- [[Test the CredentialInjector module.]] - rationale - gateway/tests/test_credential_isolation.py
-- [[TestCredentialInjector]] - code - gateway/tests/test_credential_isolation.py
+- [[Guardrails_13]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
+- [[Invocation_7]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
+- [[Role_83]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
+- [[SKILL_143]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
+- [[Skill Create PR with Pre-Flight Audit (CRPR)_2]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
+- [[Step 0 — Pre-flight checks_2]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
+- [[Step 1 — Check for an in-progress merge_2]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
+- [[Step 2 — Merge without committing_2]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
+- [[Step 3 — Audit the pending merge_2]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
+- [[Step 3a — Present and resolve confirmed regressions_2]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
+- [[Step 3b — Re-audit to confirm clean_2]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
+- [[Step 3c — Commit the merge_2]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
+- [[Step 4 — Push the branch_2]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
+- [[Step 5 — Generate the PR description_2]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
+- [[Step 6 — Create the PR_2]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,19 +32,3 @@ members: 15
 TABLE source_file, type FROM #community/Community_611
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 867]]
-- 2 edges to [[_COMMUNITY_Community 868]]
-- 1 edge to [[_COMMUNITY_Community 6]]
-- 1 edge to [[_COMMUNITY_Community 921]]
-- 1 edge to [[_COMMUNITY_Community 988]]
-- 1 edge to [[_COMMUNITY_Community 565]]
-- 1 edge to [[_COMMUNITY_Community 1056]]
-- 1 edge to [[_COMMUNITY_Community 1057]]
-
-## Top bridge nodes
-- [[CredentialInjector]] - degree 13, connects to 6 communities
-- [[TestCredentialInjector]] - degree 12, connects to 2 communities
-- [[.injector()_1]] - degree 2, connects to 1 community
-- [[.test_leak_detection_disabled()_1]] - degree 2, connects to 1 community

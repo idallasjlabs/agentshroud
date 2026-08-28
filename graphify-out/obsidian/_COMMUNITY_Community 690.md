@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.14
 members: 14
 ---
 
 # Community 690
 
+**Cohesion:** 0.14 - loosely connected
 **Members:** 14 nodes
 
 ## Members
@@ -20,7 +22,7 @@ members: 14
 - [[Step 4 Verify Connection]] - document - docs/setup/PAIRING_INSTRUCTIONS.md
 - [[Still shows pairing required]] - document - docs/setup/PAIRING_INSTRUCTIONS.md
 - [[Token field not visible]] - document - docs/setup/PAIRING_INSTRUCTIONS.md
-- [[Troubleshooting_31]] - document - docs/setup/PAIRING_INSTRUCTIONS.md
+- [[Troubleshooting_30]] - document - docs/setup/PAIRING_INSTRUCTIONS.md
 - [[✅ Step-by-Step Pairing Process]] - document - docs/setup/PAIRING_INSTRUCTIONS.md
 
 ## Live Query (requires Dataview plugin)
@@ -31,7 +33,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 371]]
+- 1 edge to [[_COMMUNITY_Community 377]]
 
 ## Top bridge nodes
 - [[OpenClaw Control UI Pairing Instructions]] - degree 7, connects to 1 community

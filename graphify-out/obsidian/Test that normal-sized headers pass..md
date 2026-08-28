@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_metadata_guard.py"
 type: "rationale"
-community: "Community 348"
+community: "Community 350"
 location: "L91"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_348
+  - community/Community_350
 ---
 
 # Test that normal-sized headers pass.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_check_oversized_headers_passes_normal_headers()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_348
+#graphify/rationale #graphify/EXTRACTED #community/Community_350

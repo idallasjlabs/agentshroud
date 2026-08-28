@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "rationale"
-community: "Community 813"
+community: "Community 809"
 location: "L1050"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_813
+  - community/Community_809
 ---
 
 # Return value includes image_scans list.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_image_scan_result_in_return_value()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_813
+#graphify/rationale #graphify/EXTRACTED #community/Community_809

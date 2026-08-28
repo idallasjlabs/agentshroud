@@ -1,16 +1,16 @@
 ---
 source_file: ".agents/skills/i-apollo/README.md"
 type: "document"
-community: "Community 941"
+community: "Community 939"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_941
+  - community/Community_939
 ---
 
 # Apollo README
 
 ## Connections
-- [[Apollo — Audio Systems Producer_7]] - `references` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_6]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_941
+#graphify/document #graphify/EXTRACTED #community/Community_939

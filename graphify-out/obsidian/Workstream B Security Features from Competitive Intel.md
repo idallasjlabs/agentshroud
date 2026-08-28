@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.2/v1.2.0-master-plan.md"
 type: "concept"
-community: "Community 996"
+community: "Community 368"
 location: "Workstream B"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_996
+  - community/Community_368
 ---
 
 # Workstream B: Security Features from Competitive Intel
@@ -20,4 +20,4 @@ tags:
 - [[Source of truth_1]] - `contains` [EXTRACTED]
 - [[Tests to add]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_996
+#graphify/concept #graphify/EXTRACTED #community/Community_368

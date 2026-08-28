@@ -1,16 +1,18 @@
 ---
 type: community
+cohesion: 0.67
 members: 3
 ---
 
 # Community 1404
 
+**Cohesion:** 0.67 - moderately connected
 **Members:** 3 nodes
 
 ## Members
-- [[OTA Promotion Gate Rationale (2026-07-27 incident)]] - rationale - scripts/promote-firmware.sh
-- [[promote-firmware.sh]] - code - scripts/promote-firmware.sh
-- [[promote-firmware.sh script]] - code - scripts/promote-firmware.sh
+- [[installapiinstall endpoint]] - concept - gateway/web/templates/installer.html
+- [[buildSummary()]] - code - gateway/web/templates/installer.html
+- [[startInstall()]] - code - gateway/web/templates/installer.html
 
 ## Live Query (requires Dataview plugin)
 

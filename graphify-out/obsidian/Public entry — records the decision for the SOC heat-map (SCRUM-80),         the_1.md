@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "rationale"
-community: "Community 75"
+community: "Progressive Trust"
 location: "L234"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_75
+  - community/Progressive_Trust
 ---
 
 # Public entry — records the decision for the SOC heat-map (SCRUM-80),         the
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.can_use_tool()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_75
+#graphify/rationale #graphify/EXTRACTED #community/Progressive_Trust

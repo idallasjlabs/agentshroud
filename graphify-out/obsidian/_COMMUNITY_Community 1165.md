@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1165
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_27]] - document - .agents/skills/i-sad/README.md
-- [[README_27]] - document - .agents/skills/i-sad/README.md
-- [[Related Skills_30]] - document - .agents/skills/i-sad/README.md
-- [[System Audit Documentation]] - document - .agents/skills/i-sad/README.md
-- [[Usage_30]] - document - .agents/skills/i-sad/README.md
+- [[Purpose_35]] - document - .agents/skills/i-tw/README.md
+- [[README_35]] - document - .agents/skills/i-tw/README.md
+- [[Related Skills_38]] - document - .agents/skills/i-tw/README.md
+- [[Technical Writer (TW)]] - document - .agents/skills/i-tw/README.md
+- [[Usage_38]] - document - .agents/skills/i-tw/README.md
 
 ## Live Query (requires Dataview plugin)
 

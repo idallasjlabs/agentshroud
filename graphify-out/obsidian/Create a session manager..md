@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "Community 1137"
+community: "Session Management"
 location: "L237"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1137
+  - community/Session_Management
 ---
 
 # Create a session manager.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.session_manager()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1137
+#graphify/rationale #graphify/EXTRACTED #community/Session_Management

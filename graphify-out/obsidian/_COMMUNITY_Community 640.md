@@ -1,29 +1,30 @@
 ---
 type: community
-members: 16
+cohesion: 0.21
+members: 15
 ---
 
 # Community 640
 
-**Members:** 16 nodes
+**Cohesion:** 0.21 - loosely connected
+**Members:** 15 nodes
 
 ## Members
-- [[ContainerConfig Defaults]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[Environment Variables_5]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[Function Details_26]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[Integration Notes]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[IsolationVerifier.generate_compose()]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[IsolationVerifier.verify_network_isolation()]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[IsolationVerifier.verify_shared_nothing()]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[IsolationVerifier.verify_volume_isolation()]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[Key Classes  Functions_29]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[Mode Enforce vs Monitor]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[Purpose_147]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[Related_33]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[Responsibilities_31]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[Threat Model_2]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[agent_isolation.py_2]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[agent_isolation.py_1]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
+- [[.test_run_binary_not_found()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_run_empty_stdout_is_error_not_clean()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_run_image_scan_type()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_run_nonzero_exit_code_is_error()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_run_parse_error()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_run_success()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_run_timeout()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_run_whitespace_only_stdout_is_error()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_trivy_binary_not_found()]] - code - gateway/tests/test_security_audit.py
+- [[A 0-byteempty stdout means the scan failed to produce output --         it must]] - rationale - gateway/tests/test_security_toolchain.py
+- [[Run a Trivy scan and return parsed results.      Args         target Scan targ]] - rationale - gateway/security/trivy_report.py
+- [[TestTrivyRun]] - code - gateway/tests/test_security_toolchain.py
+- [[returncode 0 = clean, 1 = vulns found (both expected); anything         else mea]] - rationale - gateway/tests/test_security_toolchain.py
+- [[run_trivy_scan()_1]] - code - gateway/security/trivy_report.py
+- [[scan_type='image' is passed correctly to the trivy binary.]] - rationale - gateway/tests/test_security_toolchain.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,7 +34,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 657]]
+- 4 edges to [[_COMMUNITY_Community 215]]
+- 3 edges to [[_COMMUNITY_Security Audit & Drift Detection]]
+- 2 edges to [[_COMMUNITY_Community 112]]
+- 1 edge to [[_COMMUNITY_Community 100]]
+- 1 edge to [[_COMMUNITY_Community 122]]
+- 1 edge to [[_COMMUNITY_Community 410]]
 
 ## Top bridge nodes
-- [[agent_isolation.py_2]] - degree 12, connects to 1 community
+- [[run_trivy_scan()_1]] - degree 17, connects to 6 communities
+- [[TestTrivyRun]] - degree 10, connects to 2 communities
+- [[.test_run_empty_stdout_is_error_not_clean()]] - degree 4, connects to 1 community
+- [[.test_run_nonzero_exit_code_is_error()]] - degree 4, connects to 1 community
+- [[.test_trivy_binary_not_found()]] - degree 2, connects to 1 community

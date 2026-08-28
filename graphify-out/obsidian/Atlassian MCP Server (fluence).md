@@ -1,11 +1,11 @@
 ---
 source_file: ".mcp.json"
 type: "document"
-community: "Community 717"
+community: "Community 714"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_717
+  - community/Community_714
 ---
 
 # Atlassian MCP Server (fluence)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud MCP Server Registry]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_717
+#graphify/document #graphify/EXTRACTED #community/Community_714

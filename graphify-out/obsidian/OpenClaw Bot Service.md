@@ -1,19 +1,20 @@
 ---
 source_file: "docker/docker-compose.yml"
 type: "code"
-community: "AGENTS.md"
-location: "lines 237-378"
+community: "Community 798"
+location: "services.openclaw"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AGENTSmd
+  - community/Community_798
 ---
 
 # OpenClaw Bot Service
 
 ## Connections
-- [[Hermes Dev Workflow Skill (i-hdev)]] - `references` [EXTRACTED]
-- [[OpenClaw Dev Workflow Skill (i-odev)]] - `references` [EXTRACTED]
-- [[switch_model.sh]] - `references` [EXTRACTED]
+- [[AgentShroud Production Docker Compose Stack]] - `references` [EXTRACTED]
+- [[Docker Socket Proxy Service]] - `calls` [EXTRACTED]
+- [[Gateway Service (security proxy  sole egress)]] - `calls` [EXTRACTED]
+- [[Stdin-Pipe Deploy Pattern (never docker cp)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/AGENTSmd
+#graphify/code #graphify/EXTRACTED #community/Community_798

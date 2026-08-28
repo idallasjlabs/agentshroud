@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/legal/PRIOR-USE.md"
 type: "document"
-community: "Community 1037"
+community: "Community 1042"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1037
+  - community/Community_1042
 ---
 
 # AgentShroud™ — Trademark Prior Use Record
@@ -20,4 +20,4 @@ tags:
 - [[Next Steps Federal Registration]] - `contains` [EXTRACTED]
 - [[PRIOR-USE]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1037
+#graphify/document #graphify/EXTRACTED #community/Community_1042

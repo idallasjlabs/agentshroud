@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1161
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[Mnemosyne — Retention Engineer]] - document - .agents/skills/i-mnemosyne/README.md
-- [[Purpose_20]] - document - .agents/skills/i-mnemosyne/README.md
-- [[README_20]] - document - .agents/skills/i-mnemosyne/README.md
-- [[Related Skills_23]] - document - .agents/skills/i-mnemosyne/README.md
-- [[Usage_23]] - document - .agents/skills/i-mnemosyne/README.md
+- [[Purpose_28]] - document - .agents/skills/i-sav/README.md
+- [[README_28]] - document - .agents/skills/i-sav/README.md
+- [[Related Skills_31]] - document - .agents/skills/i-sav/README.md
+- [[System Audit Vault]] - document - .agents/skills/i-sav/README.md
+- [[Usage_31]] - document - .agents/skills/i-sav/README.md
 
 ## Live Query (requires Dataview plugin)
 

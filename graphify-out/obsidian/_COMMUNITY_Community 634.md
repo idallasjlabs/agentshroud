@@ -1,28 +1,30 @@
 ---
 type: community
+cohesion: 0.13
 members: 15
 ---
 
 # Community 634
 
+**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
-- [[Configuration  Environment Variables_11]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
-- [[Function Details_17]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
-- [[Injection Pattern Weights]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
-- [[Key Classes  Functions_20]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
-- [[Purpose_138]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
-- [[Related_24]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
-- [[Responsibilities_22]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
-- [[WebContentScanner._scan_encoded_payloads(content, result)]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
-- [[WebContentScanner._scan_hidden_content(content, result)]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
-- [[WebContentScanner._scan_pii(content, result)]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
-- [[WebContentScanner._scan_prompt_injection(content, result)]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
-- [[WebContentScanner._scan_zero_width(content, result)]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
-- [[WebContentScanner.scan(content, content_type)]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
-- [[web_content_scanner.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
-- [[web_content_scanner.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
+- [[BrowserSecurityGuard.analyze_content(content)]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
+- [[BrowserSecurityGuard.analyze_screenshot(image_data)]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
+- [[BrowserSecurityGuard.can_enter_credentials(url)]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
+- [[BrowserSecurityGuard.check_url_reputation(url)]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
+- [[BrowserSecurityGuard.register_screenshot_hook(hook)]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
+- [[Function Details_28]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
+- [[Key Classes  Functions_31]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
+- [[Purpose_149]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
+- [[Related_35]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
+- [[Responsibilities_33]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
+- [[Social Engineering Patterns]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
+- [[Threat Model_4]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
+- [[URL Reputation Signals]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
+- [[browser_security.py_2]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
+- [[browser_security.py_1]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
 
 ## Live Query (requires Dataview plugin)
 

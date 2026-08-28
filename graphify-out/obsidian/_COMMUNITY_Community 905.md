@@ -1,20 +1,24 @@
 ---
 type: community
-members: 7
+cohesion: 0.22
+members: 9
 ---
 
 # Community 905
 
-**Members:** 7 nodes
+**Cohesion:** 0.22 - loosely connected
+**Members:** 9 nodes
 
 ## Members
-- [[Fallback Behavior]] - document - docs/vault/05 - Dependencies/spacy.md
-- [[First-Boot Performance]] - document - docs/vault/05 - Dependencies/spacy.md
-- [[Model]] - document - docs/vault/05 - Dependencies/spacy.md
-- [[Purpose_194]] - document - docs/vault/05 - Dependencies/spacy.md
-- [[Related Notes_49]] - document - docs/vault/05 - Dependencies/spacy.md
-- [[Where Used_5]] - document - docs/vault/05 - Dependencies/spacy.md
-- [[spaCy]] - document - docs/vault/05 - Dependencies/spacy.md
+- [[Gateway Pipeline]] - document - docs/planning/RELEASE-PLAN.md
+- [[Module Enforcement]] - document - docs/planning/RELEASE-PLAN.md
+- [[Prompt Injection Hardening]] - document - docs/planning/RELEASE-PLAN.md
+- [[v0.8.0 Watchtower — Security Fixes + Module Wiring (104 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[📊 Exit Criteria (5 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[🔧 Code Quality (2 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[🔴 P0 — Security Fixes (17 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[🟡 P1 — High Priority (8 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[🟢 P2 — Quick Wins (11 items)]] - document - docs/planning/RELEASE-PLAN.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,7 +28,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 938]]
+- 1 edge to [[_COMMUNITY_Community 362]]
 
 ## Top bridge nodes
-- [[spaCy]] - degree 7, connects to 1 community
+- [[v0.8.0 Watchtower — Security Fixes + Module Wiring (104 items)]] - degree 6, connects to 1 community

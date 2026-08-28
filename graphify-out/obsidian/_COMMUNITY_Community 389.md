@@ -1,11 +1,13 @@
 ---
 type: community
-members: 23
+cohesion: 0.09
+members: 22
 ---
 
 # Community 389
 
-**Members:** 23 nodes
+**Cohesion:** 0.09 - loosely connected
+**Members:** 22 nodes
 
 ## Members
 - [[Bad API Change (FORBIDDEN)]] - document - .github/agents/safe-refactor.agent.md
@@ -27,7 +29,6 @@ members: 23
 - [[Step 3 Verify Tests Still Pass]] - document - .github/agents/safe-refactor.agent.md
 - [[Step 4 Check Code Quality]] - document - .github/agents/safe-refactor.agent.md
 - [[What You CAN Refactor]] - document - .github/agents/safe-refactor.agent.md
-- [[What You CANNOT Refactor]] - document - .github/agents/safe-refactor.agent.md
 - [[When in Doubt]] - document - .github/agents/safe-refactor.agent.md
 - [[⚠️ ONLY Refactor When]] - document - .github/agents/safe-refactor.agent.md
 - [[❌ NEVER]] - document - .github/agents/safe-refactor.agent.md
@@ -40,7 +41,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 822]]
+- 1 edge to [[_COMMUNITY_Community 785]]
 
 ## Top bridge nodes
-- [[Safe Refactor Specialist]] - degree 11, connects to 1 community
+- [[Safe Refactor Specialist]] - degree 10, connects to 1 community

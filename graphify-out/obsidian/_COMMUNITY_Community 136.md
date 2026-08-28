@@ -1,59 +1,59 @@
 ---
 type: community
-members: 46
+cohesion: 0.08
+members: 44
 ---
 
 # Community 136
 
-**Members:** 46 nodes
+**Cohesion:** 0.08 - loosely connected
+**Members:** 44 nodes
 
 ## Members
-- [[Closed function_calls block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Closed function_results block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Closed invoke block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Closed parameter block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Closed system-reminder block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Closed thinking block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Empty string input returns empty string, not filtered.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Large XML block spanning many lines is fully removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Multiple XML blocks in one response are all removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Nested invoke inside function_calls is fully removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Normal text without XML blocks is returned unchanged.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Regular HTML-like tags that are NOT in the block list are not removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Result is stripped of leadingtrailing whitespace.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Return type is always (str, bool).]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Text before and after XML blocks is preserved.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Three or more consecutive newlines are collapsed to two.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Unclosed function_calls block (truncated output) is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Unclosed function_results block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Unclosed system-reminder block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Unclosed thinking block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[sanitizer()_3]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_collapses_excessive_newlines()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_does_not_filter_normal_text()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_does_not_filter_regular_html_tags()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_empty_string_returns_unchanged()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filter_xml_blocks.py]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filters_blocks_preserves_surrounding_text()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filters_function_calls_block()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filters_function_results_block()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filters_invoke_block()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filters_large_block()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filters_multiple_blocks()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filters_nested_invoke_inside_function_calls()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filters_parameter_block()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filters_system_reminder_block()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filters_thinking_block()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filters_unclosed_function_calls()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filters_unclosed_function_results()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filters_unclosed_system_reminder()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filters_unclosed_thinking()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_returns_tuple_of_str_and_bool()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_strips_leading_trailing_whitespace()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_was_filtered_false_when_no_blocks()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_was_filtered_true_when_block_present()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[was_filtered is False when no XML blocks are present.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[was_filtered is True when an XML block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[.__init__()]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[._classify_risk()]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[._domain_matches()]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[._init_browser()]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[._load_config()]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[._log_action()]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[._log_security_event()]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[._requires_approval()]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[._take_screenshot()]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[._validate_url()]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[.click()]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[.close()]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[.detect_captcha()]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[.extract()]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[.fill_field()]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[.get_audit_log()]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[.navigate()]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[CLI interface for SecureBrowser]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[Check if action requires approval          Security Approval queue integration]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[Check if domain matches pattern (supports wildcards)]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[Classify action risk level          Security Determines if approval is needed]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[Clean up browser resources]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[Click an element          Security Risk classification for destructive actions]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[Detect if CAPTCHA is present on page]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[Extract data from page          Security No credential extraction allowed]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[Fill a single form field          Security Risk classification, approval for se]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[Initialize browser with security settings]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[Load security configuration]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[Log browser action to audit trail]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[Log security-related events]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[Navigate to URL          Security URL validation, audit logging]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[Raised when security policy is violated]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[Return complete audit log]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[Risk classification for browser actions]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[RiskLevel]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[Secure browser automation with enterprise controls      Security guarantees]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[SecureBrowser]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[Security configuration for browser automation]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[SecurityConfig]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[SecurityError]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[Take screenshot and save to audit directory]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[Validate URL against allowlistblocklist          Security This is the primary]] - rationale - .agents/skills/i-browser/scripts/browse.py
+- [[browse.py]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[main()]] - code - .agents/skills/i-browser/scripts/browse.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -63,9 +63,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 1]]
-- 2 edges to [[_COMMUNITY_Community 870]]
+- 2 edges to [[_COMMUNITY_Community 19]]
+- 1 edge to [[_COMMUNITY_Community 165]]
 
 ## Top bridge nodes
-- [[test_filter_xml_blocks.py]] - degree 25, connects to 2 communities
-- [[sanitizer()_3]] - degree 3, connects to 2 communities
+- [[SecurityError]] - degree 7, connects to 1 community
+- [[browse.py]] - degree 6, connects to 1 community
+- [[RiskLevel]] - degree 6, connects to 1 community

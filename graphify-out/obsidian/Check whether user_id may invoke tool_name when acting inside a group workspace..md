@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "rationale"
-community: "Community 75"
+community: "Progressive Trust"
 location: "L377"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_75
+  - community/Progressive_Trust
 ---
 
 # Check whether user_id may invoke tool_name when acting inside a group workspace.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.can_use_tool_in_group_context()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_75
+#graphify/rationale #graphify/EXTRACTED #community/Progressive_Trust

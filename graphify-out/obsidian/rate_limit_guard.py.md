@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rate_limit_guard.py"
 type: "code"
-community: "Community 177"
+community: "Community 182"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_177
+  - community/Community_182
 ---
 
 # rate_limit_guard.py
@@ -17,4 +17,4 @@ tags:
 - [[RateLimitGuard]] - `contains` [EXTRACTED]
 - [[test_rate_limit_guard.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_177
+#graphify/code #graphify/EXTRACTED #community/Community_182

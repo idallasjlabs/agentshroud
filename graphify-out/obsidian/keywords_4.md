@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/browser-fetch/skill.json"
 type: "code"
-community: "Community 663"
+community: "Community 655"
 location: "L6"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_663
+  - community/Community_655
 ---
 
 # keywords
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[skill.json]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_663
+#graphify/code #graphify/EXTRACTED #community/Community_655

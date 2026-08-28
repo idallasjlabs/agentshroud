@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "Community 60"
+community: "Security Audit & Drift Detection"
 location: "L45"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_60
+  - community/Security_Audit__Drift_Detection
 ---
 
 # Encryption/decryption time should not leak plaintext length.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_encrypted_store_constant_time()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_60
+#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Drift_Detection

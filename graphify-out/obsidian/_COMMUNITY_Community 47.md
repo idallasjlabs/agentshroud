@@ -1,97 +1,100 @@
 ---
 type: community
-members: 84
+cohesion: 0.05
+members: 85
 ---
 
 # Community 47
 
-**Members:** 84 nodes
+**Cohesion:** 0.05 - loosely connected
+**Members:** 85 nodes
 
 ## Members
-- [[.__init__()_71]] - code - gateway/security/differential_pii_detector.py
-- [[.__init__()_148]] - code - gateway/tests/test_differential_pii_detector.py
-- [[._deduplicate()]] - code - gateway/security/differential_pii_detector.py
-- [[._detect_pii()]] - code - gateway/security/differential_pii_detector.py
-- [[._detect_presidio()]] - code - gateway/security/differential_pii_detector.py
-- [[._detect_regex()]] - code - gateway/security/differential_pii_detector.py
-- [[._detector_with_fake()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[._init_presidio()_1]] - code - gateway/security/differential_pii_detector.py
-- [[._redact()]] - code - gateway/security/differential_pii_detector.py
-- [[._scan()]] - code - gateway/security/differential_pii_detector.py
-- [[.from_confidence()]] - code - gateway/security/differential_pii_detector.py
-- [[.scan_prompt()]] - code - gateway/security/differential_pii_detector.py
-- [[.scan_tool_result()_1]] - code - gateway/security/differential_pii_detector.py
-- [[.test_bare_city_name_not_flagged_but_street_address_is()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[.test_cannot_set_tool_floor_above_prompt_floor()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[.test_cannot_set_tool_floor_below_minimum()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[.test_clean_content_no_hits()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[.test_core_ssn_unioned_when_presidio_misses_it()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[.test_default_config_has_correct_floors()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[.test_dotted_email_caught_in_tool_result()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[.test_email_redacted_in_output()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[.test_init_does_not_construct_bare_analyzer_engine()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[.test_init_wires_explicit_nlp_engine_when_model_present()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[.test_pii_hit_fields()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[.test_plain_email_caught_in_prompt()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[.test_plain_email_caught_in_tool_result()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[.test_presidio_analyze_restricted_to_pii_entities()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[.test_presidio_exception_falls_back_to_regex()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[.test_presidio_result_becomes_pii_hit()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[.test_redact_on_hit_false_preserves_original()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[.test_redacted_content_is_original_when_no_pii()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[.test_regex_fallback_when_model_absent()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[.test_report_has_required_fields()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[.test_scan_produces_report_with_correct_floor_used()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[.test_spaced_email_caught_in_tool_result()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[.test_tool_specific_floor_override()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[.test_unknown_tool_uses_default_floor()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[.test_us_ssn_caught_in_tool_result()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[.test_weak_hit_present_in_tool_result_only()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[.test_zero_width_space_injection_caught()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[A single PII detection result.]] - rationale - gateway/security/differential_pii_detector.py
-- [[A weak-confidence hit (0.75) must appear in tool results but not prompts.]] - rationale - gateway/tests/test_differential_pii_detector.py
-- [[Asymmetric PII detector lower floor for tool results, 0.9 for prompts.      Thi]] - rationale - gateway/security/differential_pii_detector.py
-- [[Attempt to initialise Presidio deterministically; else regex.          SECURITY]] - rationale - gateway/security/differential_pii_detector.py
-- [[Core scan normalize adversarial patterns, then run PII recognition.]] - rationale - gateway/security/differential_pii_detector.py
-- [[DifferentialPIIConfig_1]] - code - gateway/tests/test_differential_pii_detector.py
-- [[DifferentialPIIDetector]] - code - gateway/security/differential_pii_detector.py
-- [[DifferentialPIIDetector_1]] - code - gateway/tests/test_differential_pii_detector.py
-- [[Email with Unicode dot separators.]] - rationale - gateway/tests/test_differential_pii_detector.py
-- [[Email with spaces added to defeat naive regex a l i c e @ e x a m p l e . c o m]] - rationale - gateway/tests/test_differential_pii_detector.py
-- [[Exercise the Presidio detection path with an injected fake analyzer.      The re]] - rationale - gateway/tests/test_differential_pii_detector.py
-- [[Full scan result for a tool result or prompt.]] - rationale - gateway/security/differential_pii_detector.py
-- [[PII Sanitizer Mitigation (Presidio + custom regex)]] - rationale - docs/security/threat-model.md
-- [[PII split with zero-width space.]] - rationale - gateway/tests/test_differential_pii_detector.py
-- [[PIIHit]] - code - gateway/security/differential_pii_detector.py
-- [[PIIHitSeverity]] - code - gateway/security/differential_pii_detector.py
-- [[Presidio init must be deterministic and must NEVER trigger a runtime     model a]] - rationale - gateway/tests/test_differential_pii_detector.py
-- [[Regex-based PII detection (Presidio fallback).]] - rationale - gateway/security/differential_pii_detector.py
-- [[Relative risk of a detected PII entity.]] - rationale - gateway/security/differential_pii_detector.py
-- [[Remove overlapping hits, preferring higher confidence.]] - rationale - gateway/security/differential_pii_detector.py
-- [[Replace detected PII tokens with ENTITY_TYPE placeholders.]] - rationale - gateway/security/differential_pii_detector.py
-- [[Run PII detection, returning hits at or above floor.]] - rationale - gateway/security/differential_pii_detector.py
-- [[Scan a prompt with the standard (higher) confidence floor.          Args]] - rationale - gateway/security/differential_pii_detector.py
-- [[Scan a tool result with the lower confidence floor.          Args             t]] - rationale - gateway/security/differential_pii_detector.py
-- [[Strip common adversarial encoding tricks, return (normalized, count_removed).]] - rationale - gateway/security/differential_pii_detector.py
-- [[TestAdversarialFormattingCaught]] - code - gateway/tests/test_differential_pii_detector.py
-- [[TestAsymmetricFloor]] - code - gateway/tests/test_differential_pii_detector.py
-- [[TestDeterministicPresidioInit]] - code - gateway/tests/test_differential_pii_detector.py
-- [[TestDifferentialPIIDetectorConstruction]] - code - gateway/tests/test_differential_pii_detector.py
-- [[TestPerToolConfiguration]] - code - gateway/tests/test_differential_pii_detector.py
-- [[TestPresidioPathContract]] - code - gateway/tests/test_differential_pii_detector.py
-- [[TestRedaction]] - code - gateway/tests/test_differential_pii_detector.py
-- [[TestStandardPIIAlwaysCaught]] - code - gateway/tests/test_differential_pii_detector.py
-- [[TestToolResultPIIReport]] - code - gateway/tests/test_differential_pii_detector.py
-- [[The default-model auto-download path must never be taken.          If Presidio i]] - rationale - gateway/tests/test_differential_pii_detector.py
-- [[ToolResultPIIReport]] - code - gateway/security/differential_pii_detector.py
-- [[Use Presidio (entity-restricted) unioned with the core regex.          Two guara]] - rationale - gateway/security/differential_pii_detector.py
-- [[When the pinned model loads, Presidio is built with an explicit         ``nlp_en]] - rationale - gateway/tests/test_differential_pii_detector.py
-- [[_FakeRecognizerResult]] - code - gateway/tests/test_differential_pii_detector.py
-- [[_normalize_adversarial()]] - code - gateway/security/differential_pii_detector.py
-- [[default_config()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[detector()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[differential_pii_detector.py]] - code - gateway/security/differential_pii_detector.py
-- [[test_differential_pii_detector.py]] - code - gateway/tests/test_differential_pii_detector.py
+- [[._maybe_record_trust_violation()]] - code - gateway/proxy/pipeline.py
+- [[._process_inbound_core()]] - code - gateway/proxy/pipeline.py
+- [[._process_outbound_core()]] - code - gateway/proxy/pipeline.py
+- [[.append()]] - code - gateway/proxy/pipeline.py
+- [[.append_block()]] - code - gateway/proxy/pipeline.py
+- [[.append_owner_bypass()]] - code - gateway/proxy/pipeline.py
+- [[.process_inbound()]] - code - gateway/proxy/pipeline.py
+- [[.process_outbound()]] - code - gateway/proxy/pipeline.py
+- [[.test_blocked_non_owner_drops_update_and_increments_stats()]] - code - gateway/tests/test_telegram_pipeline.py
+- [[.test_blocked_owner_message_allowed_through_with_sanitized_text()]] - code - gateway/tests/test_telegram_pipeline.py
+- [[.test_no_pipeline_falls_back_to_direct_sanitizer()]] - code - gateway/tests/test_telegram_pipeline.py
+- [[.test_outbound_blocked_replaces_text()]] - code - gateway/tests/test_telegram_pipeline.py
+- [[.test_pipeline_exception_allows_owner_through()]] - code - gateway/tests/test_telegram_pipeline.py
+- [[.test_pipeline_exception_fails_closed_for_non_owner()]] - code - gateway/tests/test_telegram_pipeline.py
+- [[.test_pipeline_process_inbound_called_with_skip_context_guard()]] - code - gateway/tests/test_telegram_pipeline.py
+- [[.test_pipeline_process_outbound_called_for_send_message()]] - code - gateway/tests/test_telegram_pipeline.py
+- [[.test_send_message_draft_also_runs_outbound_filtering()]] - code - gateway/tests/test_telegram_pipeline.py
+- [[.to_dict()_1]] - code - gateway/proxy/pipeline.py
+- [[A homoglyph-obfuscated injection is normalized-and-blocked inbound.      The pay]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[A nested base64(base64(injection)) payload is peeled and blocked.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[A plain unencoded benign message is untouched by the encoding step.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[An entry in the SHA-256 hash chain audit ledger.]] - rationale - gateway/proxy/pipeline.py
+- [[Any_19]] - code - gateway/proxy/pipeline.py
+- [[Append to the chain with guaranteed SQLite persistence.          Used exclusivel]] - rationale - gateway/proxy/pipeline.py
+- [[AuditChainEntry]] - code - gateway/proxy/pipeline.py
+- [[Build a TelegramAPIProxy with mocked RBAC and rate limiter.      RBACConfig and]] - rationale - gateway/tests/test_telegram_pipeline.py
+- [[Double-base64 encoded lower-ranked injection is caught (was top-5 only).]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[End-to-end scanner STRIPs a base64-encoded lower-ranked injection.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[FilterResult]] - code - gateway/security/outbound_filter.py
+- [[Fully percent-encoded injection is decoded-and-blocked on inbound.      The dete]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[If the encoding detector raises, non-owner traffic is blocked (fail-closed).]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[Ordinary base64 content with no injection indicators is forwarded.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[Owner encoded-injection is audited and allowed, never blocked.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[Pipeline wired with the guards relevant to inbound encoding defence.      No Tru]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[PipelineAction]] - code - gateway/proxy/pipeline.py
+- [[PipelineResult_1]] - code - gateway/tests/test_telegram_pipeline.py
+- [[PipelineResult]] - code - gateway/proxy/pipeline.py
+- [[Process an inbound message through the full security pipeline.]] - rationale - gateway/proxy/pipeline.py
+- [[Process an inbound message through the full security pipeline.          Thin wra]] - rationale - gateway/proxy/pipeline.py
+- [[Process an outbound response through the security pipeline.]] - rationale - gateway/proxy/pipeline.py
+- [[Process an outbound response through the security pipeline.          Thin wrappe]] - rationale - gateway/proxy/pipeline.py
+- [[Record a trust-score violation and propagate cross-bot decay.          Called on]] - rationale - gateway/proxy/pipeline.py
+- [[Record an owner guard-bypass in the tamper-evident chain (SCRUM-95).          Th]] - rationale - gateway/proxy/pipeline.py
+- [[Result of filtering agent response content.]] - rationale - gateway/security/outbound_filter.py
+- [[Result of running a message through the security pipeline.]] - rationale - gateway/proxy/pipeline.py
+- [[TestInboundFallbackToDirectSanitizer]] - code - gateway/tests/test_telegram_pipeline.py
+- [[TestInboundPipelineBlockedNonOwner]] - code - gateway/tests/test_telegram_pipeline.py
+- [[TestInboundPipelineBlockedOwner]] - code - gateway/tests/test_telegram_pipeline.py
+- [[TestInboundPipelineExceptionNonOwner]] - code - gateway/tests/test_telegram_pipeline.py
+- [[TestInboundPipelineExceptionOwner]] - code - gateway/tests/test_telegram_pipeline.py
+- [[TestInboundPipelineWired]] - code - gateway/tests/test_telegram_pipeline.py
+- [[TestOutboundPipelineBlocked]] - code - gateway/tests/test_telegram_pipeline.py
+- [[TestOutboundPipelineWired]] - code - gateway/tests/test_telegram_pipeline.py
+- [[_getUpdates_response()]] - code - gateway/tests/test_telegram_pipeline.py
+- [[_make_pipeline()_4]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[_make_pipeline_result()]] - code - gateway/tests/test_telegram_pipeline.py
+- [[_make_proxy()_4]] - code - gateway/tests/test_telegram_pipeline.py
+- [[_make_update()_1]] - code - gateway/tests/test_telegram_pipeline.py
+- [[`_check_encoded_content` now matches rules beyond the old top-5 slice.      Fail]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[`_detect_encoded_injection` matches rules beyond the old top-6 slice.      `jail]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[base64-wrapped DAN injection is decoded-and-blocked on the inbound path.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[hex-encoded injection is decoded-and-blocked on the inbound path.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[hex-encoded lower-ranked injection is caught by the full ruleset.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[pipeline.py]] - code - gateway/proxy/pipeline.py
+- [[rot13-looking prose with no injection indicators is left alone.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[rot13-obfuscated injection is decoded-and-blocked on the inbound path.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[sendMessageDraft must be suppressed to prevent draft flicker leaks.]] - rationale - gateway/tests/test_telegram_pipeline.py
+- [[test_inbound_base64_injection_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_inbound_benign_base64_not_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_inbound_benign_rot13_prose_not_decoded_or_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_inbound_encoding_detector_error_fails_closed()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_inbound_hex_injection_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_inbound_nested_base64_injection_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_inbound_owner_encoded_injection_allowed()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_inbound_plain_benign_message_not_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_inbound_rot13_injection_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_inbound_unicode_homoglyph_injection_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_inbound_url_encoded_injection_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_prompt_guard_double_encoded_uses_full_ruleset()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_prompt_guard_encoded_check_uses_full_ruleset()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_telegram_pipeline.py]] - code - gateway/tests/test_telegram_pipeline.py
+- [[test_tool_injection_encoded_check_uses_full_ruleset()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_tool_injection_hex_encoded_uses_full_ruleset()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_tool_injection_scan_blocks_encoded_lower_ranked_rule()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_ws_e_rt2_inbound_encoding.py]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -101,18 +104,26 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 23 edges to [[_COMMUNITY_Community 107]]
-- 2 edges to [[_COMMUNITY_Community 6]]
-- 1 edge to [[_COMMUNITY_Community 78]]
-- 1 edge to [[_COMMUNITY_Community 100]]
-- 1 edge to [[_COMMUNITY_Community 448]]
-- 1 edge to [[_COMMUNITY_Community 50]]
-- 1 edge to [[_COMMUNITY_Community 872]]
-- 1 edge to [[_COMMUNITY_Community 513]]
+- 32 edges to [[_COMMUNITY_PII Sanitizer & E2E Tests]]
+- 27 edges to [[_COMMUNITY_Key Vault & Audit Chain]]
+- 12 edges to [[_COMMUNITY_Adversarial Injection Guards]]
+- 9 edges to [[_COMMUNITY_Community 24]]
+- 8 edges to [[_COMMUNITY_Community 199]]
+- 6 edges to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
+- 5 edges to [[_COMMUNITY_Community 41]]
+- 5 edges to [[_COMMUNITY_Progressive Trust]]
+- 5 edges to [[_COMMUNITY_RBAC & SOC Realtime]]
+- 3 edges to [[_COMMUNITY_Community 19]]
+- 3 edges to [[_COMMUNITY_Community 28]]
+- 2 edges to [[_COMMUNITY_Community 137]]
+- 1 edge to [[_COMMUNITY_Ingest API & Approval Routes]]
+- 1 edge to [[_COMMUNITY_Community 26]]
+- 1 edge to [[_COMMUNITY_Community 330]]
+- 1 edge to [[_COMMUNITY_Community 80]]
 
 ## Top bridge nodes
-- [[DifferentialPIIDetector]] - degree 38, connects to 4 communities
-- [[differential_pii_detector.py]] - degree 9, connects to 4 communities
-- [[DifferentialPIIDetector_1]] - degree 31, connects to 1 community
-- [[PIIHitSeverity]] - degree 17, connects to 1 community
-- [[test_differential_pii_detector.py]] - degree 16, connects to 1 community
+- [[pipeline.py]] - degree 15, connects to 9 communities
+- [[PipelineAction]] - degree 50, connects to 8 communities
+- [[PipelineResult]] - degree 26, connects to 6 communities
+- [[test_ws_e_rt2_inbound_encoding.py]] - degree 31, connects to 4 communities
+- [[Any_19]] - degree 14, connects to 4 communities

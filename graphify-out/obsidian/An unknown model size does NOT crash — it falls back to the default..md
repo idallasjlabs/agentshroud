@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_stt_model_ab.py"
 type: "rationale"
-community: "Community 268"
+community: "Community 267"
 location: "L53"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_268
+  - community/Community_267
 ---
 
 # An unknown model size does NOT crash — it falls back to the default.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_select_model_size_invalid_falls_back_to_default()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_268
+#graphify/rationale #graphify/EXTRACTED #community/Community_267

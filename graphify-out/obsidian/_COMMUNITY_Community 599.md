@@ -1,27 +1,30 @@
 ---
 type: community
-members: 14
+cohesion: 0.13
+members: 15
 ---
 
 # Community 599
 
-**Members:** 14 nodes
+**Cohesion:** 0.13 - loosely connected
+**Members:** 15 nodes
 
 ## Members
-- [[AgentShroud Blue Team Security Auditor_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[Audit Procedure_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[Critical Rules_10]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[Heat Map Legend_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[Infrastructure_10]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[Loss Categories_4]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[Methodology_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[Output Format_40]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[Phase 1 Code-Level Module Audit_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[Phase 2 Heat Map Reconstruction_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[Phase 3 Integration Gap Analysis_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[Phase 4 Configuration Audit_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[Phase 5 Steve Hay's Specific Probes_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[Unsafe Control Actions (UCAs)_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
+- [[Guardrails_2]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Invocation]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Role_10]] - document - .agents/skills/i-crpr/SKILL.md
+- [[SKILL_16]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Skill Create PR with Pre-Flight Audit (CRPR)]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Step 0 — Pre-flight checks]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Step 1 — Check for an in-progress merge]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Step 2 — Merge without committing]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Step 3 — Audit the pending merge]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Step 3a — Present and resolve confirmed regressions]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Step 3b — Re-audit to confirm clean]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Step 3c — Commit the merge]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Step 4 — Push the branch]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Step 5 — Generate the PR description]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Step 6 — Create the PR]] - document - .agents/skills/i-crpr/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,9 +32,3 @@ members: 14
 TABLE source_file, type FROM #community/Community_599
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 659]]
-
-## Top bridge nodes
-- [[AgentShroud Blue Team Security Auditor_3]] - degree 6, connects to 1 community

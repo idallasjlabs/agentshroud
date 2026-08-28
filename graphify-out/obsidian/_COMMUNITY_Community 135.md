@@ -1,45 +1,60 @@
 ---
 type: community
-members: 32
+cohesion: 0.04
+members: 45
 ---
 
 # Community 135
 
-**Members:** 32 nodes
+**Cohesion:** 0.04 - loosely connected
+**Members:** 45 nodes
 
 ## Members
-- [[1. Changes in This Diff]] - document - docs/planning/reviews/phase-review-2026-03-04.md
-- [[1. Changes in This Diff (Summary)]] - document - docs/planning/reviews/phase-review-2026-03-05.md
-- [[1. Prior Review Verification]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
-- [[2. New Blue Team Changes Since Round 1]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
-- [[3. Code Quality]] - document - docs/planning/reviews/phase-review-2026-03-04.md
-- [[3. Round 2 Findings]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
-- [[3a. IEEE Paper]] - document - docs/planning/reviews/phase-review-2026-03-04.md
-- [[3b. Restore Script Simplification]] - document - docs/planning/reviews/phase-review-2026-03-04.md
-- [[3c. Deleted Files]] - document - docs/planning/reviews/phase-review-2026-03-04.md
-- [[4. Test Coverage Assessment]] - document - docs/planning/reviews/phase-review-2026-03-05.md
-- [[4. Test Results Summary]] - document - docs/planning/reviews/phase-review-2026-03-04.md
-- [[5. Errors & Warnings Summary]] - document - docs/planning/reviews/phase-review-2026-03-04.md
-- [[5. Errors & Warnings Summary_1]] - document - docs/planning/reviews/phase-review-2026-03-05.md
-- [[5. Summary]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
-- [[6. Verdict]] - document - docs/planning/reviews/phase-review-2026-03-04.md
-- [[6. Verdict_1]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
-- [[6. Verdict_2]] - document - docs/planning/reviews/phase-review-2026-03-05.md
-- [[7. Fix Log]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
-- [[7. Post-Fix Verification]] - document - docs/planning/reviews/phase-review-2026-03-05.md
-- [[Action Items Before Merge]] - document - docs/planning/reviews/phase-review-2026-03-04.md
-- [[AgentShroud Phase Review — 2026-02-23]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[AgentShroud Phase Review — 2026-03-04]] - document - docs/planning/reviews/phase-review-2026-03-04.md
-- [[AgentShroud Phase Review — 2026-03-05]] - document - docs/planning/reviews/phase-review-2026-03-05.md
-- [[AgentShroud Phase Review — 2026-03-05 (Round 2)]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
-- [[E1 Tailscale sidecar on internal-only network cannot reach control plane]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
-- [[Fix Status]] - document - docs/planning/reviews/phase-review-2026-03-05.md
-- [[Summary_29]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[phase-review-2026-02-23]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[phase-review-2026-03-04]] - document - docs/planning/reviews/phase-review-2026-03-04.md
-- [[phase-review-2026-03-05-r2]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
-- [[phase-review-2026-03-05]] - document - docs/planning/reviews/phase-review-2026-03-05.md
-- [[🔴 ERRORS (must fix)]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[Closed function_calls block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[Closed function_results block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[Closed invoke block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[Closed parameter block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[Closed system-reminder block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[Closed thinking block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[Empty string input returns empty string, not filtered.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[Large XML block spanning many lines is fully removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[Multiple XML blocks in one response are all removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[Nested invoke inside function_calls is fully removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[Normal text without XML blocks is returned unchanged.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[Regular HTML-like tags that are NOT in the block list are not removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[Result is stripped of leadingtrailing whitespace.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[Return type is always (str, bool).]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[Text before and after XML blocks is preserved.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[Three or more consecutive newlines are collapsed to two.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[Unclosed function_calls block (truncated output) is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[Unclosed function_results block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[Unclosed system-reminder block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[Unclosed thinking block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[test_collapses_excessive_newlines()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_does_not_filter_normal_text()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_does_not_filter_regular_html_tags()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_empty_string_returns_unchanged()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_filter_xml_blocks.py]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_filters_blocks_preserves_surrounding_text()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_filters_function_calls_block()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_filters_function_results_block()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_filters_invoke_block()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_filters_large_block()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_filters_multiple_blocks()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_filters_nested_invoke_inside_function_calls()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_filters_parameter_block()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_filters_system_reminder_block()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_filters_thinking_block()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_filters_unclosed_function_calls()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_filters_unclosed_function_results()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_filters_unclosed_system_reminder()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_filters_unclosed_thinking()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_returns_tuple_of_str_and_bool()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_strips_leading_trailing_whitespace()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_was_filtered_false_when_no_blocks()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[test_was_filtered_true_when_block_present()]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[was_filtered is False when no XML blocks are present.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[was_filtered is True when an XML block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -49,25 +64,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_Community 727]]
-- 5 edges to [[_COMMUNITY_Community 1115]]
-- 5 edges to [[_COMMUNITY_Community 1116]]
-- 5 edges to [[_COMMUNITY_Community 1045]]
-- 4 edges to [[_COMMUNITY_Community 681]]
-- 2 edges to [[_COMMUNITY_Community 342]]
-- 2 edges to [[_COMMUNITY_Community 773]]
-- 1 edge to [[_COMMUNITY_Community 1044]]
-- 1 edge to [[_COMMUNITY_Community 1541]]
-- 1 edge to [[_COMMUNITY_Community 915]]
-- 1 edge to [[_COMMUNITY_Community 891]]
-- 1 edge to [[_COMMUNITY_Community 728]]
-- 1 edge to [[_COMMUNITY_Community 309]]
-- 1 edge to [[_COMMUNITY_Community 636]]
-- 1 edge to [[_COMMUNITY_Community 1251]]
+- 3 edges to [[_COMMUNITY_PII Sanitizer & E2E Tests]]
 
 ## Top bridge nodes
-- [[AgentShroud Phase Review — 2026-02-23]] - degree 49, connects to 13 communities
-- [[AgentShroud Phase Review — 2026-03-05]] - degree 8, connects to 2 communities
-- [[3. Round 2 Findings]] - degree 5, connects to 2 communities
-- [[AgentShroud Phase Review — 2026-03-05 (Round 2)]] - degree 8, connects to 1 community
-- [[AgentShroud Phase Review — 2026-03-04]] - degree 7, connects to 1 community
+- [[test_filter_xml_blocks.py]] - degree 25, connects to 1 community

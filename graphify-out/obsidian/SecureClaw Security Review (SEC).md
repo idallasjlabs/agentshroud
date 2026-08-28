@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-sec/SKILL.md"
 type: "document"
-community: "Community 659"
+community: "Community 46"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_659
+  - community/Community_46
 ---
 
 # SecureClaw Security Review (SEC)
@@ -15,4 +15,4 @@ tags:
 - [[Security Review (SEC) README]] - `references` [EXTRACTED]
 - [[dockerscriptsverify-security.sh]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_659
+#graphify/document #graphify/EXTRACTED #community/Community_46

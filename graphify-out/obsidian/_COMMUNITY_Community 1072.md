@@ -1,20 +1,21 @@
 ---
 type: community
-members: 7
+cohesion: 0.33
+members: 6
 ---
 
 # Community 1072
 
-**Members:** 7 nodes
+**Cohesion:** 0.33 - loosely connected
+**Members:** 6 nodes
 
 ## Members
-- [[Endpoints (Inferred)]] - document - docs/vault/02 - Modules/Web & Dashboard/installer.py.md
-- [[Key Features]] - document - docs/vault/02 - Modules/Web & Dashboard/installer.py.md
-- [[Purpose_174]] - document - docs/vault/02 - Modules/Web & Dashboard/installer.py.md
-- [[Related Notes_14]] - document - docs/vault/02 - Modules/Web & Dashboard/installer.py.md
-- [[When Used]] - document - docs/vault/02 - Modules/Web & Dashboard/installer.py.md
-- [[installer.py_2]] - document - docs/vault/02 - Modules/Web & Dashboard/installer.py.md
-- [[installer.py_1]] - document - docs/vault/02 - Modules/Web & Dashboard/installer.py.md
+- [[AWS Token expired (SSO)]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[AWS Unable to locate credentials]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[Atlassian OAuth flow failed]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[GitHub Bad credentials]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[GitHub Docker image not found]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[Troubleshooting_1]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,3 +23,9 @@ members: 7
 TABLE source_file, type FROM #community/Community_1072
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 788]]
+
+## Top bridge nodes
+- [[Troubleshooting_1]] - degree 6, connects to 1 community

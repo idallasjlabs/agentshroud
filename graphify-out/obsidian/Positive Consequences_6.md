@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/adr/ADR-008-progressive-trust-levels.md"
 type: "document"
-community: "Community 792"
+community: "Community 784"
 location: "L41"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_792
+  - community/Community_784
 ---
 
 # Positive Consequences
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Consequences_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_792
+#graphify/document #graphify/EXTRACTED #community/Community_784

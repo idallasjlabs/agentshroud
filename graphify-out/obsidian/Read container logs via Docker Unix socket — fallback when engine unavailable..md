@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "rationale"
-community: "Community 18"
+community: "Community 14"
 location: "L397"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_18
+  - community/Community_14
 ---
 
 # Read container logs via Docker Unix socket — fallback when engine unavailable.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._logs_via_socket()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_18
+#graphify/rationale #graphify/EXTRACTED #community/Community_14

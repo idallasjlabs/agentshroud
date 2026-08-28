@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/WEB_CONTROL_CENTER_SUMMARY.md"
 type: "document"
-community: "Community 533"
+community: "Community 530"
 location: "L92"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_533
+  - community/Community_530
 ---
 
 # 🔄 Next Steps
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Web Control Center - Implementation Summary]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_533
+#graphify/document #graphify/EXTRACTED #community/Community_530

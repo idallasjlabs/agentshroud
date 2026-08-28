@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md"
 type: "document"
-community: "Community 1330"
+community: "Community 337"
 location: "L112"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1330
+  - community/Community_337
 ---
 
 # LOW — Informational
@@ -19,4 +19,4 @@ tags:
 - [[L8 `python-jose` Dependency Has Known CVEs]] - `contains` [EXTRACTED]
 - [[New Findings]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1330
+#graphify/document #graphify/EXTRACTED #community/Community_337

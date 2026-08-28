@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "Community 870"
+community: "PII Sanitizer & E2E Tests"
 location: "L383"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_870
+  - community/PII_Sanitizer__E2E_Tests
 ---
 
 # _BrokenOutputCanary
@@ -28,4 +28,4 @@ tags:
 - [[test_e2e_watchtower.py]] - `contains` [EXTRACTED]
 - [[test_pipeline_fails_closed_on_output_canary_error()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_870
+#graphify/code #graphify/INFERRED #community/PII_Sanitizer__E2E_Tests

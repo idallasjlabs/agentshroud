@@ -1,44 +1,46 @@
 ---
 type: community
+cohesion: 0.07
 members: 31
 ---
 
 # Community 243
 
+**Cohesion:** 0.07 - loosely connected
 **Members:** 31 nodes
 
 ## Members
-- [[Folder Structure_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
-- [[Linking_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
-- [[NOW ANALYZE THE FOLLOWING CODEBASE AND PRODUCE THE COMPLETE OBSIDIAN VAULT_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
-- [[OBSIDIAN VAULT RULES (Follow These Exactly)_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
-- [[OUTPUT FORMAT_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
-- [[REQUIRED NOTES — PRODUCE EVERY ONE OF THESE_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
-- [[SKILL_111]] - document - docker/config/hermes/skills/i-sav/SKILL.md
-- [[System Audit Vault (Obsidian)_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
-- [[Tags_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
-- [[YAML Frontmatter_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
-- [[`00 - START HEREHome.md`_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
-- [[`00 - START HEREQuick Reference.md`_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
-- [[`00 - START HERESystem Overview.md`_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
-- [[`01 - ArchitectureArchitecture Overview.md`_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
-- [[`01 - ArchitectureData Flow.md`_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
-- [[`01 - ArchitectureShutdown & Recovery.md`_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
-- [[`01 - ArchitectureStartup Sequence.md`_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
-- [[`02 - ModulesFileName.md` — ONE PER SOURCE FILE_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
-- [[`03 - ConfigurationConfigFile.md` — ONE PER CONFIG FILE_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
-- [[`04 - Environment VariablesVAR_NAME.md` — ONE PER ENV VAR_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
-- [[`05 - DependenciesAll Dependencies.md`_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
-- [[`05 - DependenciesPackageName.md` — ONE PER MAJOR DEPENDENCY_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
-- [[`06 - Containers & ServicesContainerName.md` — ONE PER CONTAINERSERVICE_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
-- [[`07 - Errors & TroubleshootingError Index.md`_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
-- [[`07 - Errors & TroubleshootingTroubleshooting Matrix.md`_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
-- [[`07 - Errors & TroubleshootingErrorName.md` — ONE PER ERROR CATEGORY_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
-- [[`08 - RunbooksCrash Recovery.md`_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
-- [[`08 - RunbooksFirst Time Setup.md`_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
-- [[`08 - RunbooksRestart Procedure.md`_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
-- [[`09 - DiagramsFull System Flowchart.md`_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
-- [[`09 - DiagramsStartup Flow Diagram.md`_1]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[All Dependencies]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[Auth Methods]] - document - docs/vault/05 - Dependencies/python-jose.md
+- [[CI Workflows]] - document - docs/vault/03 - Configuration/ci-workflows.md
+- [[Coverage Threshold]] - document - docs/vault/03 - Configuration/ci-workflows.md
+- [[Current Usage]] - document - docs/vault/05 - Dependencies/python-jose.md
+- [[Expected Pipeline (Inferred)]] - document - docs/vault/03 - Configuration/ci-workflows.md
+- [[FastAPI_4]] - document - docs/vault/05 - Dependencies/fastapi.md
+- [[Key FastAPI Features Used]] - document - docs/vault/05 - Dependencies/fastapi.md
+- [[Key Features_1]] - document - docs/vault/05 - Dependencies/python-jose.md
+- [[Key Features Used]] - document - docs/vault/05 - Dependencies/httpx.md
+- [[Key Test Command]] - document - docs/vault/03 - Configuration/ci-workflows.md
+- [[Purpose_177]] - document - docs/vault/03 - Configuration/ci-workflows.md
+- [[Purpose_186]] - document - docs/vault/05 - Dependencies/fastapi.md
+- [[Purpose_187]] - document - docs/vault/05 - Dependencies/httpx.md
+- [[Purpose_193]] - document - docs/vault/05 - Dependencies/python-jose.md
+- [[Related Notes_20]] - document - docs/vault/03 - Configuration/ci-workflows.md
+- [[Related Notes_41]] - document - docs/vault/05 - Dependencies/fastapi.md
+- [[Related Notes_42]] - document - docs/vault/05 - Dependencies/httpx.md
+- [[Related Notes_48]] - document - docs/vault/05 - Dependencies/python-jose.md
+- [[Security Note_1]] - document - docs/vault/05 - Dependencies/httpx.md
+- [[Security Note_2]] - document - docs/vault/05 - Dependencies/python-jose.md
+- [[Where Used_1]] - document - docs/vault/05 - Dependencies/fastapi.md
+- [[Where Used_2]] - document - docs/vault/05 - Dependencies/httpx.md
+- [[ci-workflows]] - document - docs/vault/03 - Configuration/ci-workflows.md
+- [[fastapi]] - document - docs/vault/05 - Dependencies/fastapi.md
+- [[httpx_1]] - document - docs/vault/05 - Dependencies/httpx.md
+- [[httpx]] - document - docs/vault/05 - Dependencies/httpx.md
+- [[pydantic]] - document - docs/vault/05 - Dependencies/pydantic.md
+- [[pytest.ini]] - document - docs/vault/03 - Configuration/pytest.ini.md
+- [[python-jose_1]] - document - docs/vault/05 - Dependencies/python-jose.md
+- [[python-jose]] - document - docs/vault/05 - Dependencies/python-jose.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -46,3 +48,22 @@ members: 31
 TABLE source_file, type FROM #community/Community_243
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_Community 594]]
+- 2 edges to [[_COMMUNITY_Community 230]]
+- 1 edge to [[_COMMUNITY_Ingest API & Approval Routes]]
+- 1 edge to [[_COMMUNITY_Community 85]]
+- 1 edge to [[_COMMUNITY_Community 929]]
+- 1 edge to [[_COMMUNITY_Community 289]]
+- 1 edge to [[_COMMUNITY_Community 548]]
+- 1 edge to [[_COMMUNITY_Community 933]]
+- 1 edge to [[_COMMUNITY_Community 1004]]
+- 1 edge to [[_COMMUNITY_Community 1005]]
+
+## Top bridge nodes
+- [[All Dependencies]] - degree 14, connects to 6 communities
+- [[fastapi]] - degree 4, connects to 1 community
+- [[pytest.ini]] - degree 3, connects to 1 community
+- [[pydantic]] - degree 3, connects to 1 community
+- [[python-jose]] - degree 3, connects to 1 community

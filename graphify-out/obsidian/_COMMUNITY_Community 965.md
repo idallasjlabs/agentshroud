@@ -1,21 +1,23 @@
 ---
 type: community
+cohesion: 0.25
 members: 8
 ---
 
 # Community 965
 
+**Cohesion:** 0.25 - loosely connected
 **Members:** 8 nodes
 
 ## Members
-- [[1.1 Application Type]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[1.2 Inventor(s)]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[1.3 Title of Invention]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[1.4 Correspondence Address]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[1.5 AttorneyAgent (if applicable)]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[1.6 U.S. Government Interest]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[1.7 Entity Status]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[SECTION 1 COVER SHEET (Form PTOSB16)]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[Drawing Preparation Checklist]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[FIGURE 1 — System Context Diagram]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[FIGURE 2 — Security Pipeline Flow Diagram]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[FIGURE 3 — Approval Queue Flow Diagram]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[FIGURE 4 — Trust-Differentiated Processing]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[FIGURE 5 — Multi-Agent Governance with Isolation]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[FIGURE 6 — Delegated Authority Model]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[SECTION 3 DRAWINGS]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,7 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 807]]
+- 1 edge to [[_COMMUNITY_Community 801]]
 
 ## Top bridge nodes
-- [[SECTION 1 COVER SHEET (Form PTOSB16)]] - degree 8, connects to 1 community
+- [[SECTION 3 DRAWINGS]] - degree 8, connects to 1 community

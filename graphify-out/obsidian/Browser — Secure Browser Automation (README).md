@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/README.md"
 type: "document"
-community: "Community 252"
+community: "Community 253"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Community_252
+  - community/Community_253
 ---
 
 # Browser — Secure Browser Automation (README)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Browser — Secure Browser Automation (SKILL)]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Community_252
+#graphify/document #graphify/INFERRED #community/Community_253

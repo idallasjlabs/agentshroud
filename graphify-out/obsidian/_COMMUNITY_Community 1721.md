@@ -1,14 +1,16 @@
 ---
 type: community
+cohesion: 1.00
 members: 1
 ---
 
 # Community 1721
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[show_notes.md (podcast pipeline distilled content artifact)]] - concept - docker/config/hermes/skills/i-oracle/SKILL.md
+- [[audio.h_2]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/audio.h
 
 ## Live Query (requires Dataview plugin)
 

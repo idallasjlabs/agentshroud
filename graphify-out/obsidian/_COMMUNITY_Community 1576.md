@@ -1,14 +1,17 @@
 ---
 type: community
-members: 1
+cohesion: 1.00
+members: 2
 ---
 
 # Community 1576
 
-**Members:** 1 nodes
+**Cohesion:** 1.00 - tightly connected
+**Members:** 2 nodes
 
 ## Members
-- [[AWS Athena (data lakehouse)]] - concept - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[SOC Auth WS Token IssuanceRedemption Tests]] - code - gateway/tests/test_soc_auth.py
+- [[SOCWebSocketHandler Subscription Filter Tests]] - code - gateway/tests/test_soc_websocket.py
 
 ## Live Query (requires Dataview plugin)
 

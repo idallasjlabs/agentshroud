@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 1.00
 members: 2
 ---
 
 # Community 1476
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[ElevenLabs Text-to-Dialogue API]] - concept - docker/config/hermes/skills/i-apollo/SKILL.md
-- [[eleven_v3 model]] - concept - docker/config/openclaw/skills/i-apollo/SKILL.md
+- [[SKILL_139]] - document - docker/config/openclaw/skills/i-chaos-engineering/SKILL.md
+- [[Skill chaos-engineering_2]] - document - docker/config/openclaw/skills/i-chaos-engineering/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

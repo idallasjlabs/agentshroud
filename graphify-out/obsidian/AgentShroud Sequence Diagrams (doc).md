@@ -1,11 +1,11 @@
 ---
 source_file: "docs/flows/sequence-diagrams.md"
 type: "document"
-community: "Community 1096"
+community: "Community 1092"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1096
+  - community/Community_1092
 ---
 
 # AgentShroud Sequence Diagrams (doc)
@@ -16,4 +16,4 @@ tags:
 - [[SSH Command Flow (injection check, approval queue, executor, audit)]] - `references` [EXTRACTED]
 - [[Web Fetch Flow (URL analysis, SSRF protection, content scanning)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1096
+#graphify/document #graphify/EXTRACTED #community/Community_1092

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/dns_forwarder.py"
 type: "rationale"
-community: "Community 560"
+community: "Community 557"
 location: "L1"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_560
+  - community/Community_557
 ---
 
 # AgentShroud DNS Forwarder — Lightweight DNS proxy for gateway container.  Routes
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dns_forwarder.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_560
+#graphify/rationale #graphify/EXTRACTED #community/Community_557

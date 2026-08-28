@@ -1,22 +1,28 @@
 ---
 type: community
-members: 9
+cohesion: 0.18
+members: 13
 ---
 
 # Community 733
 
-**Members:** 9 nodes
+**Cohesion:** 0.18 - loosely connected
+**Members:** 13 nodes
 
 ## Members
-- [[A. Private Service Data Isolation]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[B. Security Operations Center (SOC)]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[C. Steve Hay Remediation]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[D. Apple Messages Integration]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[E. Security Tools (Full Integration, Not Stubs)]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[G. Multi-Agent Architecture]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[H. Development Infrastructure]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[L. Multi-Agent Architecture]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[v0.9.0 — Sentinel (Blue Team Remediation + Data Isolation + SOC)]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[.__init__()_163]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[.__init__()_162]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[.close()_18]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[.close()_17]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[.drain()_3]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[.readline()_1]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[.write()_3]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[First readline returns the request line; the next stalls.]] - rationale - gateway/tests/test_http_proxy_coverage.py
+- [[_CloseRaisesTargetWriter]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[_DummyTargetWriter_1]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[_HeaderTimeoutReader]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[start() binds a real loopback server; a client gets a parsed response;     stop(]] - rationale - gateway/tests/test_http_proxy_coverage.py
+- [[test_start_serves_and_stop_closes_loopback()]] - code - gateway/tests/test_http_proxy_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,10 +32,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 911]]
-- 1 edge to [[_COMMUNITY_Community 402]]
-- 1 edge to [[_COMMUNITY_Community 607]]
+- 6 edges to [[_COMMUNITY_Community 22]]
+- 6 edges to [[_COMMUNITY_Community 67]]
+- 4 edges to [[_COMMUNITY_Community 75]]
 
 ## Top bridge nodes
-- [[v0.9.0 — Sentinel (Blue Team Remediation + Data Isolation + SOC)]] - degree 10, connects to 2 communities
-- [[L. Multi-Agent Architecture]] - degree 2, connects to 1 community
+- [[_DummyTargetWriter_1]] - degree 9, connects to 3 communities
+- [[_HeaderTimeoutReader]] - degree 8, connects to 3 communities
+- [[_CloseRaisesTargetWriter]] - degree 6, connects to 3 communities
+- [[test_start_serves_and_stop_closes_loopback()]] - degree 8, connects to 2 communities

@@ -1,78 +1,64 @@
 ---
 type: community
-members: 65
+cohesion: 0.07
+members: 49
 ---
 
 # Community 121
 
-**Members:** 65 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 49 nodes
 
 ## Members
-- [[.__init__()_4]] - code - gateway/approval_queue/group_router.py
-- [[._build_group_reply_text()]] - code - gateway/approval_queue/group_router.py
-- [[._build_owner_dm_text()]] - code - gateway/approval_queue/group_router.py
-- [[._default_send()]] - code - gateway/approval_queue/group_router.py
-- [[.extract_group_chat_id()]] - code - gateway/approval_queue/group_router.py
-- [[.is_group_context()]] - code - gateway/approval_queue/group_router.py
-- [[.route_approval()]] - code - gateway/approval_queue/group_router.py
-- [[.test_both_owner_dm_and_group_notified()]] - code - gateway/tests/test_group_approval_routing.py
-- [[.test_default_send_stub_returns_ok()]] - code - gateway/tests/test_group_approval_routing.py
-- [[.test_dm_approval_no_group_side_effect()]] - code - gateway/tests/test_group_approval_routing.py
-- [[.test_dm_approval_routes_only_to_owner()]] - code - gateway/tests/test_group_approval_routing.py
-- [[.test_extract_chat_id_from_group_agent_id()]] - code - gateway/tests/test_group_approval_routing.py
-- [[.test_extract_chat_id_returns_none_for_non_group()]] - code - gateway/tests/test_group_approval_routing.py
-- [[.test_group_chat_receives_thread_reply()]] - code - gateway/tests/test_group_approval_routing.py
-- [[.test_is_group_context_false_for_collab_agent_id()]] - code - gateway/tests/test_group_approval_routing.py
-- [[.test_is_group_context_false_for_default()]] - code - gateway/tests/test_group_approval_routing.py
-- [[.test_is_group_context_true_for_group_agent_id()]] - code - gateway/tests/test_group_approval_routing.py
-- [[.test_owner_dm_contains_action_type()]] - code - gateway/tests/test_group_approval_routing.py
-- [[.test_owner_dm_references_group_chat_id()]] - code - gateway/tests/test_group_approval_routing.py
-- [[.test_owner_receives_dm_for_group_approval()]] - code - gateway/tests/test_group_approval_routing.py
-- [[.test_route_approval_auto_detects_group_context()]] - code - gateway/tests/test_group_approval_routing.py
-- [[.test_router_works_without_send_fn()]] - code - gateway/tests/test_group_approval_routing.py
-- [[A single group-context approval triggers both owner DM AND group reply.]] - rationale - gateway/tests/test_group_approval_routing.py
-- [[Any_1]] - code - gateway/approval_queue/group_router.py
-- [[ApprovalRequest_1]] - code - gateway/approval_queue/group_router.py
-- [[Build the group thread reply notification text.]] - rationale - gateway/approval_queue/group_router.py
-- [[Build the owner DM notification text.]] - rationale - gateway/approval_queue/group_router.py
-- [[Cover the no-op _default_send stub used when no transport is injected.]] - rationale - gateway/tests/test_group_approval_routing.py
-- [[DM approval must not send any message to a group chat ID.]] - rationale - gateway/tests/test_group_approval_routing.py
-- [[DM-context approvals must not trigger group notifications.]] - rationale - gateway/tests/test_group_approval_routing.py
-- [[Extract the raw chat_id from a group-{chat_id} agent_id.]] - rationale - gateway/tests/test_group_approval_routing.py
-- [[Extract the raw chat_id from a group-{chat_id} agent_id.          Returns None i]] - rationale - gateway/approval_queue/group_router.py
-- [[GroupApprovalRouter]] - code - gateway/approval_queue/group_router.py
-- [[GroupApprovalRouter must correctly distinguish group vs DM context.]] - rationale - gateway/tests/test_group_approval_routing.py
-- [[GroupApprovalRouter wired with a mock Telegram send function.]] - rationale - gateway/tests/test_group_approval_routing.py
-- [[GroupApprovalRouter._default_send returns {ok True} without raising.]] - rationale - gateway/tests/test_group_approval_routing.py
-- [[Mock async Telegram sendMessage to capture DM and group notifications.]] - rationale - gateway/tests/test_group_approval_routing.py
-- [[No-op send stub — used when no transport is injected.]] - rationale - gateway/approval_queue/group_router.py
-- [[Owner DM message text must reference the originating group chat_id.]] - rationale - gateway/tests/test_group_approval_routing.py
-- [[Owner DM must describe the action_type that requires approval.]] - rationale - gateway/tests/test_group_approval_routing.py
-- [[Owner must receive a DM when an approval originates from a group chat.]] - rationale - gateway/tests/test_group_approval_routing.py
-- [[Return (router, sent_list) tuple for assertion convenience.]] - rationale - gateway/tests/test_group_approval_routing.py
-- [[Return True if agent_id represents a Telegram group workspace.]] - rationale - gateway/approval_queue/group_router.py
-- [[Route an approval notification to the appropriate recipients.          Routing l]] - rationale - gateway/approval_queue/group_router.py
-- [[Router with no send_message_fn uses the default stub (no network calls).]] - rationale - gateway/tests/test_group_approval_routing.py
-- [[Routes approval notifications to owner DM and (optionally) group thread.      Ar]] - rationale - gateway/approval_queue/group_router.py
-- [[TestDMApprovalOwnerOnly]] - code - gateway/tests/test_group_approval_routing.py
-- [[TestGroupApprovalOwnerDM]] - code - gateway/tests/test_group_approval_routing.py
-- [[TestGroupApprovalRouterContextDetection]] - code - gateway/tests/test_group_approval_routing.py
-- [[TestGroupApprovalRouterDefaultSend]] - code - gateway/tests/test_group_approval_routing.py
-- [[The originating group chat must receive a thread-reply notification.]] - rationale - gateway/tests/test_group_approval_routing.py
-- [[When group_chat_id is None, only the owner receives a notification.]] - rationale - gateway/tests/test_group_approval_routing.py
-- [[agent_id starting with 'collab-' is NOT recognized as group context.]] - rationale - gateway/tests/test_group_approval_routing.py
-- [[agent_id starting with 'group-' is recognized as group context.]] - rationale - gateway/tests/test_group_approval_routing.py
-- [[agent_id='default' is NOT recognized as group context.]] - rationale - gateway/tests/test_group_approval_routing.py
-- [[extract_group_chat_id returns None for non-group agent IDs.]] - rationale - gateway/tests/test_group_approval_routing.py
-- [[gatewayapproval_queuegroup_router.py (group-{chatId} agent-id scheme, referenced)]] - code - gateway/approval_queue/group_router.py
-- [[group_router.py (GroupApprovalRouter)]] - code - gateway/approval_queue/group_router.py
-- [[ingest_api models.py (ApprovalRequest)]] - code - gateway/ingest_api/models.py
-- [[mock_send_message()]] - code - gateway/tests/test_group_approval_routing.py
-- [[owner_chat_id receives a DM notification for every group-context approval.]] - rationale - gateway/tests/test_group_approval_routing.py
-- [[route_approval auto-detects group context when group_chat_id not explicitly pass]] - rationale - gateway/tests/test_group_approval_routing.py
-- [[router()]] - code - gateway/tests/test_group_approval_routing.py
-- [[router_with_sent()]] - code - gateway/tests/test_group_approval_routing.py
-- [[test_group_approval_routing.py]] - code - gateway/tests/test_group_approval_routing.py
+- [[.__init__()_192]] - code - gateway/tests/test_web_proxy_security.py
+- [[.__init__()_194]] - code - gateway/tests/test_web_proxy_security.py
+- [[.__init__()_193]] - code - gateway/tests/test_web_proxy_security.py
+- [[._audit()_1]] - code - gateway/proxy/web_proxy.py
+- [[.check()_1]] - code - gateway/proxy/web_proxy.py
+- [[.check_request()]] - code - gateway/proxy/web_proxy.py
+- [[.flagged()_2]] - code - gateway/proxy/web_proxy.py
+- [[.scan_response()]] - code - gateway/proxy/web_proxy.py
+- [[.setUp()]] - code - gateway/tests/test_web_proxy_security.py
+- [[.test_browser_security_blocks_high_risk_urls()]] - code - gateway/tests/test_web_proxy_security.py
+- [[.test_browser_security_flags_medium_risk_urls()]] - code - gateway/tests/test_web_proxy_security.py
+- [[.test_browser_security_skips_non_browser_user_agents()]] - code - gateway/tests/test_web_proxy_security.py
+- [[.test_dns_filter_blocks_suspicious_domains()]] - code - gateway/tests/test_web_proxy_security.py
+- [[.test_dns_filter_flags_but_allows_questionable_domains()]] - code - gateway/tests/test_web_proxy_security.py
+- [[.test_egress_monitor_logs_responses()]] - code - gateway/tests/test_web_proxy_security.py
+- [[.test_graceful_degradation_browser_security_error()]] - code - gateway/tests/test_web_proxy_security.py
+- [[.test_graceful_degradation_dns_error()]] - code - gateway/tests/test_web_proxy_security.py
+- [[.test_graceful_degradation_egress_error()]] - code - gateway/tests/test_web_proxy_security.py
+- [[.test_multiple_security_modules_integration()]] - code - gateway/tests/test_web_proxy_security.py
+- [[.test_oauth_security_error_handling()]] - code - gateway/tests/test_web_proxy_security.py
+- [[.test_oauth_security_flags_auth_headers()]] - code - gateway/tests/test_web_proxy_security.py
+- [[Check an outbound HTTP request before it's sent.          This is the pre-flight]] - rationale - gateway/proxy/web_proxy.py
+- [[Check if request is within rate limit. Returns True if allowed.]] - rationale - gateway/proxy/web_proxy.py
+- [[MockDNSVerdict]] - code - gateway/tests/test_web_proxy_security.py
+- [[MockEgressChannel]] - code - gateway/tests/test_web_proxy_security.py
+- [[MockEgressEvent]] - code - gateway/tests/test_web_proxy_security.py
+- [[MockThreatLevel]] - code - gateway/tests/test_web_proxy_security.py
+- [[MockURLResult]] - code - gateway/tests/test_web_proxy_security.py
+- [[ProxyAction]] - code - gateway/proxy/web_proxy.py
+- [[Record an audit entry in the hash chain.]] - rationale - gateway/proxy/web_proxy.py
+- [[Result of proxying a web request.]] - rationale - gateway/proxy/web_proxy.py
+- [[Scan a response body for prompt injection, PII, and hidden content.          Thi]] - rationale - gateway/proxy/web_proxy.py
+- [[Set up test fixtures._4]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[Test that DNS filter blocks suspicious domains.]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[Test that DNS filter errors cause fail-closed behavior.]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[Test that DNS filter flags questionable domains but allows them through.]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[Test that OAuth security errors don't block requests.]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[Test that OAuth security flags requests with authorization headers.]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[Test that browser security blocks high-risk URLs for browser user agents.]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[Test that browser security checks are skipped for non-browser user agents.]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[Test that browser security errors cause fail-closed behavior.]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[Test that browser security flags medium-risk URLs.]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[Test that egress monitor logs all outbound connections.]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[Test that egress monitoring errors don't break response processing.]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[Test that multiple security modules work together correctly.]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[Test that security modules are properly integrated into web proxy.]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[TestWebProxySecurityIntegration]] - code - gateway/tests/test_web_proxy_security.py
+- [[WebProxyResult]] - code - gateway/proxy/web_proxy.py
+- [[test_web_proxy_security.py]] - code - gateway/tests/test_web_proxy_security.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -82,11 +68,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 18 edges to [[_COMMUNITY_Community 24]]
+- 31 edges to [[_COMMUNITY_Community 22]]
+- 6 edges to [[_COMMUNITY_Community 48]]
+- 5 edges to [[_COMMUNITY_Community 19]]
+- 5 edges to [[_COMMUNITY_Community 95]]
+- 1 edge to [[_COMMUNITY_Community 777]]
+- 1 edge to [[_COMMUNITY_Community 165]]
+- 1 edge to [[_COMMUNITY_Community 410]]
 
 ## Top bridge nodes
-- [[GroupApprovalRouter]] - degree 23, connects to 1 community
-- [[test_group_approval_routing.py]] - degree 12, connects to 1 community
-- [[TestGroupApprovalRouterContextDetection]] - degree 10, connects to 1 community
-- [[TestGroupApprovalOwnerDM]] - degree 9, connects to 1 community
-- [[TestDMApprovalOwnerOnly]] - degree 6, connects to 1 community
+- [[ProxyAction]] - degree 31, connects to 5 communities
+- [[WebProxyResult]] - degree 16, connects to 3 communities
+- [[MockEgressChannel]] - degree 6, connects to 3 communities
+- [[MockThreatLevel]] - degree 6, connects to 3 communities
+- [[MockDNSVerdict]] - degree 15, connects to 2 communities

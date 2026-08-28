@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "Community 277"
+community: "Community 276"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_277
+  - community/Community_276
 ---
 
 # gateway/ingest_api/routes/forward.py
@@ -14,4 +14,4 @@ tags:
 - [[RT-6 — Owner-Identity Spoofing via forward body (FIXED)]] - `rationale_for` [EXTRACTED]
 - [[WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_277
+#graphify/code #graphify/EXTRACTED #community/Community_276

@@ -1,20 +1,23 @@
 ---
 type: community
-members: 7
+cohesion: 0.29
+members: 8
 ---
 
 # Community 951
 
-**Members:** 7 nodes
+**Cohesion:** 0.29 - loosely connected
+**Members:** 8 nodes
 
 ## Members
-- [[VII-A. Enforce-by-Default (R-02, R-03)]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[VII-B. Outbound Information Filter (R-01)]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[VII-C. Per-User Session Isolation (R-04, R-05)]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[VII-D. Separation of Privilege (R-06, R-07)]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[VII-E. Human-in-the-Loop (R-08, R-09)]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[VII-F. Credential Isolation (R-10, R-11, R-12)]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[VII. v0.8.0 Remediation]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[06-operations]] - document - docs/diagrams/06-operations.md
+- [[18. Runbook  Decision Tree — On-Call Logic]] - document - docs/diagrams/06-operations.md
+- [[19. Incident Response Flow — Severity & Escalation]] - document - docs/diagrams/06-operations.md
+- [[20. Monitoring & Observability Map]] - document - docs/diagrams/06-operations.md
+- [[AgentShroud — Operations & Reliability Diagrams]] - document - docs/diagrams/06-operations.md
+- [[Incident Response Flow — Severity & Escalation]] - concept - docs/diagrams/06-operations.md
+- [[Monitoring & Observability Map]] - concept - docs/diagrams/06-operations.md
+- [[Runbook  Decision Tree — On-Call Logic]] - concept - docs/diagrams/06-operations.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,7 +27,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 274]]
+- 2 edges to [[_COMMUNITY_Community 373]]
+- 1 edge to [[_COMMUNITY_Community 442]]
 
 ## Top bridge nodes
-- [[VII. v0.8.0 Remediation]] - degree 7, connects to 1 community
+- [[06-operations]] - degree 5, connects to 1 community
+- [[Incident Response Flow — Severity & Escalation]] - degree 3, connects to 1 community
+- [[Runbook  Decision Tree — On-Call Logic]] - degree 3, connects to 1 community

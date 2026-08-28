@@ -1,26 +1,30 @@
 ---
 type: community
-members: 13
+cohesion: 0.13
+members: 15
 ---
 
 # Community 646
 
-**Members:** 13 nodes
+**Cohesion:** 0.13 - loosely connected
+**Members:** 15 nodes
 
 ## Members
-- [[Added_7]] - document - CHANGELOG.md
-- [[Changed]] - document - CHANGELOG.md
-- [[Changed_3]] - document - CHANGELOG.md
-- [[Changed_4]] - document - CHANGELOG.md
-- [[Changed_8]] - document - CHANGELOG.md
-- [[Fixed_7]] - document - CHANGELOG.md
-- [[Security_5]] - document - CHANGELOG.md
-- [[Summary_8]] - document - CHANGELOG.md
-- [[Summary_12]] - document - CHANGELOG.md
-- [[Summary_22]] - document - CHANGELOG.md
-- [[0.2.0 - 2026-02-17]] - document - CHANGELOG.md
-- [[1.1.0 — feat-v1.4.0-shroud-another-bot — Hermes (2026-05-29)]] - document - CHANGELOG.md
-- [[1.2.2 — releasev1.2.2 (2026-06-28)]] - document - CHANGELOG.md
+- [[.test_five_all_sdl_configs_present()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[.test_one_baseline_no_configs()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[.test_returns_false_on_import_error()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[.test_returns_true_when_attr_set()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[TestAppStateHas_1]] - code - gateway/tests/test_scorecard_scoring.py
+- [[TestScoreSecureDevelopment_1]] - code - gateway/tests/test_scorecard_scoring.py
+- [[clean_clamav()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[clean_falco()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[clean_openscap_with_zero_fails()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[clean_trivy()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[not_run_clamav()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[not_run_falco()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[not_run_openscap()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[not_run_trivy()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[test_scorecard_scoring.py]] - code - gateway/tests/test_scorecard_scoring.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,16 +34,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Community 984]]
-- 4 edges to [[_COMMUNITY_Community 169]]
-- 3 edges to [[_COMMUNITY_Community 1296]]
-- 1 edge to [[_COMMUNITY_Community 1173]]
-- 1 edge to [[_COMMUNITY_Community 1276]]
-- 1 edge to [[_COMMUNITY_Community 529]]
-- 1 edge to [[_COMMUNITY_Community 629]]
+- 4 edges to [[_COMMUNITY_Community 647]]
+- 2 edges to [[_COMMUNITY_Community 921]]
+- 2 edges to [[_COMMUNITY_Community 1061]]
+- 1 edge to [[_COMMUNITY_Community 72]]
+- 1 edge to [[_COMMUNITY_Community 1356]]
+- 1 edge to [[_COMMUNITY_Community 1281]]
+- 1 edge to [[_COMMUNITY_Community 1357]]
+- 1 edge to [[_COMMUNITY_Community 1129]]
+- 1 edge to [[_COMMUNITY_Community 1358]]
+- 1 edge to [[_COMMUNITY_Community 1282]]
+- 1 edge to [[_COMMUNITY_Community 1430]]
+- 1 edge to [[_COMMUNITY_Community 1130]]
 
 ## Top bridge nodes
-- [[Changed]] - degree 8, connects to 5 communities
-- [[1.1.0 — feat-v1.4.0-shroud-another-bot — Hermes (2026-05-29)]] - degree 9, connects to 4 communities
-- [[0.2.0 - 2026-02-17]] - degree 7, connects to 3 communities
-- [[1.2.2 — releasev1.2.2 (2026-06-28)]] - degree 7, connects to 2 communities
+- [[test_scorecard_scoring.py]] - degree 27, connects to 12 communities

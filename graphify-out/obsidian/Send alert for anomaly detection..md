@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/killswitch_monitor.py"
 type: "rationale"
-community: "Community 13"
+community: "Community 25"
 location: "L624"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_13
+  - community/Community_25
 ---
 
 # Send alert for anomaly detection.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._send_anomaly_alert()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_13
+#graphify/rationale #graphify/EXTRACTED #community/Community_25

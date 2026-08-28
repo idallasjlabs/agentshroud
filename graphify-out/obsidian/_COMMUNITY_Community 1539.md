@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 1.00
 members: 2
 ---
 
 # Community 1539
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[.test_handle_callback_invalid_format()]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[Test handling invalid callback data.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[PRIVATE_TOOLS (owner-only tool set)]] - code - gateway/security/tool_acl.py
+- [[ToolACLEnforcer.can_use_tool_in_group_context()]] - code - gateway/security/tool_acl.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -17,9 +19,3 @@ members: 2
 TABLE source_file, type FROM #community/Community_1539
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_gatewayruntime]]
-
-## Top bridge nodes
-- [[.test_handle_callback_invalid_format()]] - degree 2, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_policy.py"
 type: "code"
-community: "Community 82"
+community: "Community 71"
 location: "L138"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_82
+  - community/Community_71
 ---
 
 # test_owner_bypass_defaults_false_and_does_not_bypass_a2a_high_risk()
@@ -17,4 +17,4 @@ tags:
 - [[A2APolicyEngine_2]] - `calls` [EXTRACTED]
 - [[test_a2a_policy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_82
+#graphify/code #graphify/EXTRACTED #community/Community_71

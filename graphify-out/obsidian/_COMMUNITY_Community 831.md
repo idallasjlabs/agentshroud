@@ -1,23 +1,25 @@
 ---
 type: community
+cohesion: 0.24
 members: 10
 ---
 
 # Community 831
 
+**Cohesion:** 0.24 - loosely connected
 **Members:** 10 nodes
 
 ## Members
-- [[IDENTITY_1]] - document - docs/architecture/IDENTITY.md
-- [[Identity Reference - AgentShroud System]] - document - docs/architecture/IDENTITY.md
-- [[Via Control UI_1]] - document - docs/architecture/IDENTITY.md
-- [[Via Telegram_1]] - document - docs/architecture/IDENTITY.md
-- [[🎯 Bot Identity Configuration]] - document - docs/architecture/IDENTITY.md
-- [[👤 You (The Real Person)]] - document - docs/architecture/IDENTITY.md
-- [[💬 Communication Flow]] - document - docs/architecture/IDENTITY.md
-- [[📱 How It Works]] - document - docs/architecture/IDENTITY.md
-- [[🔐 Security]] - document - docs/architecture/IDENTITY.md
-- [[🤖 Your AI Bot]] - document - docs/architecture/IDENTITY.md
+- [[._export_cef()]] - code - gateway/security/audit_export.py
+- [[._export_json()]] - code - gateway/security/audit_export.py
+- [[._export_jsonld()]] - code - gateway/security/audit_export.py
+- [[.export_events()]] - code - gateway/security/audit_export.py
+- [[AuditEvent]] - code - gateway/security/audit_export.py
+- [[Export audit events in the specified format.          Args             start_ti]] - rationale - gateway/security/audit_export.py
+- [[Export events in Common Event Format (CEF).          CEF Format CEFVersionDev]] - rationale - gateway/security/audit_export.py
+- [[Export events in JSON-LD format with security ontology.]] - rationale - gateway/security/audit_export.py
+- [[Export events in standard JSON format.]] - rationale - gateway/security/audit_export.py
+- [[TextIO]] - code - gateway/security/audit_export.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,3 +27,15 @@ members: 10
 TABLE source_file, type FROM #community/Community_831
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 5 edges to [[_COMMUNITY_Community 208]]
+- 2 edges to [[_COMMUNITY_Community 342]]
+- 2 edges to [[_COMMUNITY_Community 258]]
+
+## Top bridge nodes
+- [[AuditEvent]] - degree 6, connects to 3 communities
+- [[TextIO]] - degree 3, connects to 2 communities
+- [[.export_events()]] - degree 6, connects to 1 community
+- [[._export_cef()]] - degree 4, connects to 1 community
+- [[._export_json()]] - degree 4, connects to 1 community

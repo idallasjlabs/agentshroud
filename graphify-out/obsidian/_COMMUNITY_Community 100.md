@@ -1,61 +1,72 @@
 ---
 type: community
-members: 48
+cohesion: 0.05
+members: 57
 ---
 
 # Community 100
 
-**Members:** 48 nodes
+**Cohesion:** 0.05 - loosely connected
+**Members:** 57 nodes
 
 ## Members
-- [[.test_1password_env_dump_flags()]] - code - gateway/tests/test_skill_guard.py
-- [[.test_absolute_system_path_write_flags()]] - code - gateway/tests/test_skill_guard.py
-- [[.test_at_limit_file_scans_normally()]] - code - gateway/tests/test_skill_guard.py
-- [[.test_base64_exec_payload_blocks()]] - code - gateway/tests/test_skill_guard.py
-- [[.test_binary_content_is_scanned_not_crash()]] - code - gateway/tests/test_skill_guard.py
-- [[.test_clean_skill_allows()]] - code - gateway/tests/test_skill_guard.py
-- [[.test_clean_skill_tree_allows()]] - code - gateway/tests/test_skill_guard.py
-- [[.test_crypto_miner_indicator_flags()]] - code - gateway/tests/test_skill_guard.py
-- [[.test_curl_pipe_to_shell_blocks()]] - code - gateway/tests/test_skill_guard.py
-- [[.test_dotdot_traversal_flags()]] - code - gateway/tests/test_skill_guard.py
-- [[.test_empty_content_allows()]] - code - gateway/tests/test_skill_guard.py
-- [[.test_eval_of_decoded_blocks()]] - code - gateway/tests/test_skill_guard.py
-- [[.test_large_opaque_base64_blob_flags()]] - code - gateway/tests/test_skill_guard.py
-- [[.test_line_at_out_of_range_returns_empty()]] - code - gateway/tests/test_skill_guard.py
-- [[.test_manifest_all_tools_wildcard_flags()]] - code - gateway/tests/test_skill_guard.py
-- [[.test_manifest_disable_approval_flags()]] - code - gateway/tests/test_skill_guard.py
-- [[.test_manifest_sudo_command_flags()]] - code - gateway/tests/test_skill_guard.py
-- [[.test_normal_relative_import_no_false_positive()]] - code - gateway/tests/test_skill_guard.py
-- [[.test_oversized_file_blocks()]] - code - gateway/tests/test_skill_guard.py
-- [[.test_reads_aws_credentials_flags()]] - code - gateway/tests/test_skill_guard.py
-- [[.test_reads_env_secrets_file_flags()]] - code - gateway/tests/test_skill_guard.py
-- [[.test_reads_ssh_private_key_flags()]] - code - gateway/tests/test_skill_guard.py
-- [[.test_requests_post_to_external_host_flags()]] - code - gateway/tests/test_skill_guard.py
-- [[.test_reverse_shell_indicator_blocks()]] - code - gateway/tests/test_skill_guard.py
-- [[.test_scan_rejects_non_string_content()]] - code - gateway/tests/test_skill_guard.py
-- [[.test_severity_ordering()]] - code - gateway/tests/test_skill_guard.py
-- [[.test_single_dotdot_traversal_flags()]] - code - gateway/tests/test_skill_guard.py
-- [[.test_subprocess_shell_true_flags()]] - code - gateway/tests/test_skill_guard.py
-- [[.test_tree_blocks_on_any_critical()]] - code - gateway/tests/test_skill_guard.py
-- [[.test_tree_flags_on_medium()]] - code - gateway/tests/test_skill_guard.py
-- [[.test_urllib_urlopen_flags()]] - code - gateway/tests/test_skill_guard.py
-- [[.test_wget_pipe_sh_blocks()]] - code - gateway/tests/test_skill_guard.py
-- [[IntEnum]] - code
-- [[Ordered severity ladder (``IntEnum`` so comparisons work).]] - rationale - gateway/security/skill_guard.py
-- [[Severity]] - code - gateway/security/skill_guard.py
-- [[SkillGuard_1]] - code - gateway/tests/test_skill_guard.py
-- [[TestAggregation]] - code - gateway/tests/test_skill_guard.py
-- [[TestCleanSkill]] - code - gateway/tests/test_skill_guard.py
-- [[TestExecOfDownload]] - code - gateway/tests/test_skill_guard.py
-- [[TestExfiltration]] - code - gateway/tests/test_skill_guard.py
-- [[TestKnownMalicious]] - code - gateway/tests/test_skill_guard.py
-- [[TestObfuscation]] - code - gateway/tests/test_skill_guard.py
-- [[TestOversizedUnscannable]] - code - gateway/tests/test_skill_guard.py
-- [[TestPathTraversal]] - code - gateway/tests/test_skill_guard.py
-- [[TestPrivilegeEscalation_1]] - code - gateway/tests/test_skill_guard.py
-- [[TestSecretAccess]] - code - gateway/tests/test_skill_guard.py
-- [[_finding_categories()]] - code - gateway/tests/test_skill_guard.py
-- [[guard()_4]] - code - gateway/tests/test_skill_guard.py
+- [[.test_already_ingested_helper_swallows_read_error()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_gives_up_and_marks_sent_after_max_retries()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_ingest_records_even_when_disk_write_fails()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_per_agent_check_error_is_isolated_not_fatal()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_retries_on_failed_send_before_giving_up()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_returns_false_when_file_missing()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_returns_false_when_sent_yesterday()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_returns_true_when_sent_today()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_runs_ingest_records_then_skips_next_iteration()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_skips_ingest_when_marked_done_after_wake()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_skips_when_already_ingested_today()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_successful_send_marks_sent_immediately_no_retry()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_undelivered_new_advisory_retries_not_marked_ingested()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_undelivered_new_cves_retries_not_marked_checked()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_zero_new_cves_marks_checked_immediately()]] - code - gateway/tests/test_daily_cve_report.py
+- [[A disk-write failure on the sentinel is swallowed; in-memory guard set.]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[A failed send retries (bounded) within the same day, not next-day.]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[A raised per-agent check error is ISOLATED — the ingest still completes.]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[After sleeping, if the day is now marked done, the loop skips ingest.]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[After the retry cap, the day IS marked done so the loop moves on.]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[Any_37]] - code - gateway/security/daily_cve_report.py
+- [[Background loop checks for new upstream agent CVEs once per day at report_hour]] - rationale - gateway/security/daily_cve_report.py
+- [[Background loop pull the GHSA feed as source of truth once per day.      This i]] - rationale - gateway/security/daily_cve_report.py
+- [[Background loop sends one CVE report per day at ``report_hour`` UTC.      Runs]] - rationale - gateway/security/daily_cve_report.py
+- [[Check if a Trivy report was already sent today (disk-based, secondary to _sent_d]] - rationale - gateway/security/daily_cve_report.py
+- [[Check if the GHSA ingest already ran today (disk-based, secondary guard).]] - rationale - gateway/security/daily_cve_report.py
+- [[Check if the upstream CVE watch already ran today (disk-based).]] - rationale - gateway/security/daily_cve_report.py
+- [[Fetch one agent's upstream CVEs, alert via Telegram, honestly.      Runs a singl]] - rationale - gateway/security/daily_cve_report.py
+- [[First iteration ingests + records; second sees dedup and skips.]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[Gateway OpenAPI Spec]] - document - gateway/openapi.json
+- [[If already ingested today, the loop bumps to tomorrow and never ingests.]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[Nothing to deliver is a legitimate 'done', not a failure to retry.]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[OpenAPI dashboard endpoint group]] - concept - gateway/openapi.json
+- [[OpenAPI management endpoint group]] - concept - gateway/openapi.json
+- [[OpenAPI soc endpoint group]] - concept - gateway/openapi.json
+- [[OpenAPI versions endpoint group]] - concept - gateway/openapi.json
+- [[Return the CVE-pipeline config for bot_id (raises KeyError if unknown).      A]] - rationale - gateway/security/agent_cve_registry.py
+- [[Run the upstream CVE check for EVERY registered agent, independently.      Itera]] - rationale - gateway/security/daily_cve_report.py
+- [[Send a message via Telegram Bot API. Returns True on success.      ``text`` is d]] - rationale - gateway/security/daily_cve_report.py
+- [[TestAlreadySentToday]] - code - gateway/tests/test_daily_cve_report.py
+- [[TestCveReportSchedulerRetry]] - code - gateway/tests/test_daily_cve_report.py
+- [[TestGhsaIngestScheduler]] - code - gateway/tests/test_daily_cve_report.py
+- [[TestGhsaIngestSchedulerRetry]] - code - gateway/tests/test_daily_cve_report.py
+- [[TestUpstreamCveCheckSchedulerRetry]] - code - gateway/tests/test_daily_cve_report.py
+- [[_already_checked_upstream_today()]] - code - gateway/security/daily_cve_report.py
+- [[_already_ingested_ghsa_today returns False on a malformed sentinel.]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[_already_ingested_ghsa_today()]] - code - gateway/security/daily_cve_report.py
+- [[_already_sent_today()]] - code - gateway/security/daily_cve_report.py
+- [[_send_telegram()]] - code - gateway/security/daily_cve_report.py
+- [[cve_report_scheduler()]] - code - gateway/security/daily_cve_report.py
+- [[daily_cve_report.py]] - code - gateway/security/daily_cve_report.py
+- [[datetime_2]] - code - gateway/security/daily_cve_report.py
+- [[get_agent_cve_source()]] - code - gateway/security/agent_cve_registry.py
+- [[ghsa_ingest_scheduler()]] - code - gateway/security/daily_cve_report.py
+- [[run_upstream_cve_check()]] - code - gateway/security/daily_cve_report.py
+- [[run_upstream_cve_check_all_agents()]] - code - gateway/security/daily_cve_report.py
+- [[upstream_cve_check_scheduler()]] - code - gateway/security/daily_cve_report.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -65,17 +76,24 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 39 edges to [[_COMMUNITY_Community 110]]
-- 30 edges to [[_COMMUNITY_Community 152]]
-- 1 edge to [[_COMMUNITY_Community 147]]
-- 1 edge to [[_COMMUNITY_Community 1016]]
-- 1 edge to [[_COMMUNITY_Community 47]]
-- 1 edge to [[_COMMUNITY_Community 442]]
-- 1 edge to [[_COMMUNITY_Community 35]]
+- 14 edges to [[_COMMUNITY_Community 122]]
+- 5 edges to [[_COMMUNITY_Community 380]]
+- 3 edges to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
+- 3 edges to [[_COMMUNITY_Community 685]]
+- 3 edges to [[_COMMUNITY_Community 631]]
+- 2 edges to [[_COMMUNITY_Community 120]]
+- 2 edges to [[_COMMUNITY_Community 215]]
+- 1 edge to [[_COMMUNITY_Community 43]]
+- 1 edge to [[_COMMUNITY_Community 49]]
+- 1 edge to [[_COMMUNITY_Community 106]]
+- 1 edge to [[_COMMUNITY_Community 410]]
+- 1 edge to [[_COMMUNITY_Community 640]]
+- 1 edge to [[_COMMUNITY_Community 347]]
+- 1 edge to [[_COMMUNITY_Community 374]]
 
 ## Top bridge nodes
-- [[IntEnum]] - degree 7, connects to 6 communities
-- [[SkillGuard_1]] - degree 36, connects to 2 communities
-- [[_finding_categories()]] - degree 25, connects to 2 communities
-- [[Severity]] - degree 24, connects to 2 communities
-- [[TestAggregation]] - degree 12, connects to 2 communities
+- [[daily_cve_report.py]] - degree 29, connects to 12 communities
+- [[Any_37]] - degree 6, connects to 3 communities
+- [[run_upstream_cve_check()]] - degree 8, connects to 2 communities
+- [[get_agent_cve_source()]] - degree 6, connects to 2 communities
+- [[cve_report_scheduler()]] - degree 6, connects to 2 communities

@@ -1,11 +1,11 @@
 ---
 source_file: "AGENTS.md"
 type: "rationale"
-community: "Community 822"
+community: "Community 785"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_822
+  - community/Community_785
 ---
 
 # Codex Prime Directive: Not Primary Developer
@@ -14,4 +14,4 @@ tags:
 - [[AGENTS.md — Codex CLI Guidance]] - `references` [EXTRACTED]
 - [[Claude Code — Primary Developer]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_822
+#graphify/rationale #graphify/EXTRACTED #community/Community_785

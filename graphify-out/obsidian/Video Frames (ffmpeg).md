@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/video-frames/SKILL.md"
 type: "document"
-community: "Community 1047"
+community: "Community 1050"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1047
+  - community/Community_1050
 ---
 
 # Video Frames (ffmpeg)
@@ -16,4 +16,4 @@ tags:
 - [[Quick start_4]] - `contains` [EXTRACTED]
 - [[SKILL_236]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1047
+#graphify/document #graphify/EXTRACTED #community/Community_1050

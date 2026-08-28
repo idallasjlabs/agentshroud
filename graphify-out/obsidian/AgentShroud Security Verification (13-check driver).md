@@ -1,11 +1,11 @@
 ---
 source_file: "docker/scripts/verify-security.sh"
 type: "code"
-community: "Community 752"
+community: "Community 751"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_752
+  - community/Community_751
 ---
 
 # AgentShroud Security Verification (13-check driver)
@@ -19,4 +19,4 @@ tags:
 - [[check_warn()]] - `calls` [EXTRACTED]
 - [[toggle-readonly.sh mode switcher]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_752
+#graphify/code #graphify/INFERRED #community/Community_751

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_injection.py"
 type: "rationale"
-community: "Community 16"
+community: "Community 134"
 location: "L123"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_16
+  - community/Community_134
 ---
 
 # Zero-width chars are stripped by normalize_input, so injection is still caught.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_zero_width_chars_dont_bypass_detection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_16
+#graphify/rationale #graphify/EXTRACTED #community/Community_134

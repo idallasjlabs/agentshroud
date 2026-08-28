@@ -1,12 +1,12 @@
 ---
 source_file: "docs/integrations/README.md"
 type: "document"
-community: "Community 1528"
+community: "Community 492"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1528
+  - community/Community_492
 ---
 
 # Integrations Documentation
@@ -16,4 +16,4 @@ tags:
 - [[Planned Documents_3]] - `contains` [EXTRACTED]
 - [[README_122]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1528
+#graphify/document #graphify/EXTRACTED #community/Community_492

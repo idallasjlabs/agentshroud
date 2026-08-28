@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/incident-response.md"
 type: "document"
-community: "Community 1344"
+community: "Community 128"
 location: "L478"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1344
+  - community/Community_128
 ---
 
 # Post-Incident Review Template
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Post-Incident Activities]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1344
+#graphify/document #graphify/EXTRACTED #community/Community_128

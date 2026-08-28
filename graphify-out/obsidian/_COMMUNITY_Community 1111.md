@@ -1,19 +1,21 @@
 ---
 type: community
+cohesion: 0.33
 members: 6
 ---
 
 # Community 1111
 
+**Cohesion:** 0.33 - loosely connected
 **Members:** 6 nodes
 
 ## Members
-- [[Key Operations (Inferred)]] - document - docs/vault/02 - Modules/Other/text_control_center.py.md
-- [[Purpose_126]] - document - docs/vault/02 - Modules/Other/text_control_center.py.md
-- [[Related Notes_12]] - document - docs/vault/02 - Modules/Other/text_control_center.py.md
-- [[Relationship to Web API]] - document - docs/vault/02 - Modules/Other/text_control_center.py.md
-- [[text_control_center.py  agentshroud_manager.py]] - document - docs/vault/02 - Modules/Other/text_control_center.py.md
-- [[text_control_center.py_1]] - document - docs/vault/02 - Modules/Other/text_control_center.py.md
+- [[Future Enhancements_1]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Priority 1 Auto-Discovery]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Priority 2 Enhanced Extraction]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Priority 3 Screenshot Capture]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Priority 4 Multi-Page Support]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Priority 5 Direct Gmail Configuration]] - document - docs/reference/BROWSER_FETCH_SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,3 +23,9 @@ members: 6
 TABLE source_file, type FROM #community/Community_1111
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 767]]
+
+## Top bridge nodes
+- [[Future Enhancements_1]] - degree 6, connects to 1 community

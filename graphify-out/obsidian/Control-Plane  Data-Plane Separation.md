@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/HEXSTRIKE_PROXY_PLAN.md"
 type: "rationale"
-community: "Community 1435"
+community: "Community 1451"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1435
+  - community/Community_1451
 ---
 
 # Control-Plane / Data-Plane Separation
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[HexStrike MCP Proxy Plan]] - `implements` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1435
+#graphify/rationale #graphify/EXTRACTED #community/Community_1451

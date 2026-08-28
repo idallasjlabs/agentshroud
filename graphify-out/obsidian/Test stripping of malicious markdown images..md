@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "rationale"
-community: "Community 156"
+community: "Memory Lifecycle & Egress Filtering"
 location: "L124"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_156
+  - community/Memory_Lifecycle__Egress_Filtering
 ---
 
 # Test stripping of malicious markdown images.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_malicious_image_stripping()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_156
+#graphify/rationale #graphify/EXTRACTED #community/Memory_Lifecycle__Egress_Filtering

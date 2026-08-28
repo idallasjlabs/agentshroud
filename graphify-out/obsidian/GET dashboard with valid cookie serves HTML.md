@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_dashboard.py"
+source_file: "gateway/tests/test_security_fixes.py"
 type: "rationale"
-community: "Community 818"
-location: "L52"
+community: "Community 15"
+location: "L177"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_818
+  - community/Community_15
 ---
 
 # GET /dashboard with valid cookie serves HTML
 
 ## Connections
-- [[test_dashboard_serves_html()]] - `rationale_for` [EXTRACTED]
+- [[.test_dashboard_cookie_auth_serves_html()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_818
+#graphify/rationale #graphify/EXTRACTED #community/Community_15

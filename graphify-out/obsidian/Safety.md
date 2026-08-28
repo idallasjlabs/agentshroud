@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-pr/SKILL.md"
 type: "document"
-community: "Community 884"
+community: "Community 879"
 location: "L34"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_884
+  - community/Community_879
 ---
 
 # Safety
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Content Requirements]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_884
+#graphify/document #graphify/EXTRACTED #community/Community_879

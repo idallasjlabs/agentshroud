@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/skill-creator/scripts/package_skill.py"
 type: "code"
-community: "Community 535"
+community: "Community 532"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_535
+  - community/Community_532
 ---
 
 # package_skill.py
@@ -16,4 +16,4 @@ tags:
 - [[main()_31]] - `contains` [EXTRACTED]
 - [[package_skill()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_535
+#graphify/code #graphify/EXTRACTED #community/Community_532

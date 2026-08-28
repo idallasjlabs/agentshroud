@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-architecture.md"
 type: "document"
-community: "Community 154"
+community: "Community 153"
 location: "L324"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_154
+  - community/Community_153
 ---
 
 # Encryption and Cryptographic Controls
@@ -17,4 +17,4 @@ tags:
 - [[Memory Encryption]] - `contains` [EXTRACTED]
 - [[Transport Encryption]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_154
+#graphify/document #graphify/EXTRACTED #community/Community_153

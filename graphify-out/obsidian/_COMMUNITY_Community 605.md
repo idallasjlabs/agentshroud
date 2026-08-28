@@ -1,28 +1,30 @@
 ---
 type: community
+cohesion: 0.15
 members: 15
 ---
 
 # Community 605
 
+**Cohesion:** 0.15 - loosely connected
 **Members:** 15 nodes
 
 ## Members
-- [[Guardrails_2]] - document - .agents/skills/i-crpr/SKILL.md
-- [[Invocation]] - document - .agents/skills/i-crpr/SKILL.md
-- [[Role_10]] - document - .agents/skills/i-crpr/SKILL.md
-- [[SKILL_16]] - document - .agents/skills/i-crpr/SKILL.md
-- [[Skill Create PR with Pre-Flight Audit (CRPR)]] - document - .agents/skills/i-crpr/SKILL.md
-- [[Step 0 — Pre-flight checks]] - document - .agents/skills/i-crpr/SKILL.md
-- [[Step 1 — Check for an in-progress merge]] - document - .agents/skills/i-crpr/SKILL.md
-- [[Step 2 — Merge without committing]] - document - .agents/skills/i-crpr/SKILL.md
-- [[Step 3 — Audit the pending merge]] - document - .agents/skills/i-crpr/SKILL.md
-- [[Step 3a — Present and resolve confirmed regressions]] - document - .agents/skills/i-crpr/SKILL.md
-- [[Step 3b — Re-audit to confirm clean]] - document - .agents/skills/i-crpr/SKILL.md
-- [[Step 3c — Commit the merge]] - document - .agents/skills/i-crpr/SKILL.md
-- [[Step 4 — Push the branch]] - document - .agents/skills/i-crpr/SKILL.md
-- [[Step 5 — Generate the PR description]] - document - .agents/skills/i-crpr/SKILL.md
-- [[Step 6 — Create the PR]] - document - .agents/skills/i-crpr/SKILL.md
+- [[.injector()]] - code - gateway/tests/test_credential_isolation.py
+- [[.injector()_1]] - code - gateway/tests/test_credential_isolation.py
+- [[.injector_with_secrets()]] - code - gateway/tests/test_credential_isolation.py
+- [[.test_has_credential()]] - code - gateway/tests/test_credential_isolation.py
+- [[.test_inject_anthropic_key()]] - code - gateway/tests/test_credential_isolation.py
+- [[.test_inject_openai_key()]] - code - gateway/tests/test_credential_isolation.py
+- [[.test_leak_detection_disabled()_1]] - code - gateway/tests/test_credential_isolation.py
+- [[.test_no_injection_unknown_domain()]] - code - gateway/tests/test_credential_isolation.py
+- [[.test_no_injection_when_disabled()]] - code - gateway/tests/test_credential_isolation.py
+- [[.test_no_secrets_loaded_from_empty_dir()]] - code - gateway/tests/test_credential_isolation.py
+- [[.test_status_report()]] - code - gateway/tests/test_credential_isolation.py
+- [[Agent container should have no secrets.]] - rationale - gateway/tests/test_credential_isolation.py
+- [[CredentialInjector]] - code - gateway/tests/test_credential_injector.py
+- [[Test the CredentialInjector module.]] - rationale - gateway/tests/test_credential_isolation.py
+- [[TestCredentialInjector]] - code - gateway/tests/test_credential_isolation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,3 +32,19 @@ members: 15
 TABLE source_file, type FROM #community/Community_605
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 4 edges to [[_COMMUNITY_Community 867]]
+- 2 edges to [[_COMMUNITY_Community 868]]
+- 1 edge to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
+- 1 edge to [[_COMMUNITY_Community 915]]
+- 1 edge to [[_COMMUNITY_Community 987]]
+- 1 edge to [[_COMMUNITY_Community 563]]
+- 1 edge to [[_COMMUNITY_Community 1055]]
+- 1 edge to [[_COMMUNITY_Community 1056]]
+
+## Top bridge nodes
+- [[CredentialInjector]] - degree 13, connects to 6 communities
+- [[TestCredentialInjector]] - degree 12, connects to 2 communities
+- [[.injector()_1]] - degree 2, connects to 1 community
+- [[.test_leak_detection_disabled()_1]] - degree 2, connects to 1 community

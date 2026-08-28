@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/v0.9/v0.9.0-release-plan.md"
 type: "document"
-community: "Community 90"
+community: "Community 92"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_90
+  - community/Community_92
 ---
 
 # AgentShroud v0.9.0 Multi-Runtime & Multi-Platform Release Plan
@@ -19,4 +19,4 @@ tags:
 - [[Raspberry Pi (host, arm64, low-resource)]] - `references` [EXTRACTED]
 - [[Trillian (host, x86_64)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_90
+#graphify/document #graphify/EXTRACTED #community/Community_92

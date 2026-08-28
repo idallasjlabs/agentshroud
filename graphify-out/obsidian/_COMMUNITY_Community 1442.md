@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 1.00
 members: 2
 ---
 
 # Community 1442
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[SKILL_76]] - document - docker/config/hermes/skills/i-chaos-engineering/SKILL.md
-- [[Skill chaos-engineering_1]] - document - docker/config/hermes/skills/i-chaos-engineering/SKILL.md
+- [[SKILL_27]] - document - .agents/skills/i-kaizen/SKILL.md
+- [[Skill kaizen]] - document - .agents/skills/i-kaizen/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

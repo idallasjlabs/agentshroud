@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "Community 134"
+community: "SOC Collaborators"
 location: "L488"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_134
+  - community/SOC_Collaborators
 ---
 
 # Pause a collaborator's bot access without removing their record (file-locked).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[pause_collaborator()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_134
+#graphify/rationale #graphify/EXTRACTED #community/SOC_Collaborators

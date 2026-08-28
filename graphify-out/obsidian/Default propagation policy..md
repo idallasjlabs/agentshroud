@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cross_bot_trust_ledger.py"
 type: "rationale"
-community: "Community 1016"
+community: "Community 41"
 location: "L42"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1016
+  - community/Community_41
 ---
 
 # Default propagation policy.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[policy()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1016
+#graphify/rationale #graphify/EXTRACTED #community/Community_41

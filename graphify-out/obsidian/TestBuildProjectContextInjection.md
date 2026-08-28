@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_responses.py"
 type: "code"
-community: "Community 81"
+community: "Community 49"
 location: "L145"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_81
+  - community/Community_49
 ---
 
 # TestBuildProjectContextInjection
@@ -19,4 +19,4 @@ tags:
 - [[TeamsConfig]] - `uses` [INFERRED]
 - [[test_collaborator_responses.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_81
+#graphify/code #graphify/INFERRED #community/Community_49

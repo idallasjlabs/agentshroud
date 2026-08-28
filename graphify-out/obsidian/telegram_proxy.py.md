@@ -1,18 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "Community 134"
+community: "Community 49"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_134
+  - community/Community_49
 ---
 
 # telegram_proxy.py
 
 ## Connections
-- [[AgentShroud Docker Compose (Production)]] - `shares_data_with` [EXTRACTED]
 - [[ApprovalMode]] - `imports` [EXTRACTED]
 - [[DOCKER-VPN-NETWORKING]] - `references` [EXTRACTED]
 - [[DelegationPrivilege]] - `imports` [EXTRACTED]
@@ -53,4 +52,4 @@ tags:
 - [[test_telegram_proxy_multibot.py]] - `imports_from` [EXTRACTED]
 - [[unpause_collaborator()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_134
+#graphify/code #graphify/EXTRACTED #community/Community_49

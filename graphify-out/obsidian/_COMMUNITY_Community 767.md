@@ -1,25 +1,27 @@
 ---
 type: community
+cohesion: 0.17
 members: 12
 ---
 
 # Community 767
 
+**Cohesion:** 0.17 - loosely connected
 **Members:** 12 nodes
 
 ## Members
-- [[Advanced Integrations (Phase 19)]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Browser Extension_1]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Full Configuration System (Phase 18)]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Infrastructure — Deferred (moved from v0.9.0 → post-v1.0.0 on 2026-03-04)]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Integration Hub (Phase 13)]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Mac Mini Onboarding (Phase 14)]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Multi-Host Deployment]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Multi-Platform Container Support]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Personal Infrastructure Monitor (Phase 15)]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Post-v1.0.0 — Deferred]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Secure Voice (moved from v0.9.0 → post-v1.0.0 on 2026-03-04)]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[iOSmacOS Shortcuts]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[AgentShroud Method ✅]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Audit Log Format]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Browser-Fetch Skill for 1Password Share Links]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Future Telegram Integration (When Auto-Discovered)]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Installation Status]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Integration with AgentShroud Workflow]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Overview_9]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Performance]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Quick Reference_5]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Tested Scenarios]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Traditional (Insecure) Method ❌]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Workflow Secure Credential Sharing]] - document - docs/reference/BROWSER_FETCH_SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,7 +31,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 911]]
+- 1 edge to [[_COMMUNITY_Community 1045]]
+- 1 edge to [[_COMMUNITY_Community 1111]]
+- 1 edge to [[_COMMUNITY_Community 1322]]
+- 1 edge to [[_COMMUNITY_Community 1321]]
+- 1 edge to [[_COMMUNITY_Community 1261]]
 
 ## Top bridge nodes
-- [[Post-v1.0.0 — Deferred]] - degree 12, connects to 1 community
+- [[Browser-Fetch Skill for 1Password Share Links]] - degree 14, connects to 5 communities

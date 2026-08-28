@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "Community 7"
+community: "Security Audit & Drift Detection"
 location: "L1031"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_7
+  - community/Security_Audit__Drift_Detection
 ---
 
 # Test resource limits and DoS prevention.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestResourceProtection]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_7
+#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Drift_Detection

@@ -1,31 +1,33 @@
 ---
 type: community
+cohesion: 0.11
 members: 18
 ---
 
 # Community 493
 
+**Cohesion:** 0.11 - loosely connected
 **Members:** 18 nodes
 
 ## Members
-- [[API Reference]] - document - docs/api/api-reference.md
-- [[Agent-facing proxy endpoints (not control-plane)]] - document - docs/api/api-reference.md
-- [[Audit  ledger]] - document - docs/api/api-reference.md
-- [[Authentication_1]] - document - docs/api/api-reference.md
-- [[DNS]] - document - docs/api/api-reference.md
-- [[Egress control]] - document - docs/api/api-reference.md
-- [[Error responses]] - document - docs/api/api-reference.md
-- [[Example `GET managehealth`]] - document - docs/api/api-reference.md
-- [[Example `POST manageegress{request_id}approve`]] - document - docs/api/api-reference.md
-- [[Health & status]] - document - docs/api/api-reference.md
-- [[Quarantine]] - document - docs/api/api-reference.md
-- [[RBAC]] - document - docs/api/api-reference.md
-- [[Route map (by router)]] - document - docs/api/api-reference.md
-- [[SOC — Shared Command Layer (`socv1`, `gatewaysocrouter.py`)]] - document - docs/api/api-reference.md
-- [[Scanning]] - document - docs/api/api-reference.md
-- [[Source of truth]] - document - docs/api/api-reference.md
-- [[Web control center (`gatewaywebapi.py`)]] - document - docs/api/api-reference.md
-- [[api-reference]] - document - docs/api/api-reference.md
+- [[AgentShroud Schema Documentation]] - document - docs/data/schema-documentation.md
+- [[Approval Queue Schema]] - document - docs/data/schema-documentation.md
+- [[Audit Chain State]] - document - docs/data/schema-documentation.md
+- [[Configuration File Schemas]] - document - docs/data/schema-documentation.md
+- [[Database Connection Configuration]] - document - docs/data/schema-documentation.md
+- [[Docker Secrets Structure]] - document - docs/data/schema-documentation.md
+- [[Egress Configuration (egress-config.yml)]] - document - docs/data/schema-documentation.md
+- [[In-Memory Data Structures]] - document - docs/data/schema-documentation.md
+- [[MCP Configuration (mcp-config.yml)]] - document - docs/data/schema-documentation.md
+- [[Main Configuration (agentshroud.yaml)]] - document - docs/data/schema-documentation.md
+- [[Rate Limiter State]] - document - docs/data/schema-documentation.md
+- [[SQLite Database Schema]] - document - docs/data/schema-documentation.md
+- [[Secret Content Examples]] - document - docs/data/schema-documentation.md
+- [[Secret Definitions (docker-compose.yml)]] - document - docs/data/schema-documentation.md
+- [[Secret File Structure]] - document - docs/data/schema-documentation.md
+- [[Secret Rotation Script]] - document - docs/data/schema-documentation.md
+- [[Trust Level Cache]] - document - docs/data/schema-documentation.md
+- [[schema-documentation]] - document - docs/data/schema-documentation.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,9 +35,3 @@ members: 18
 TABLE source_file, type FROM #community/Community_493
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 520]]
-
-## Top bridge nodes
-- [[API Reference]] - degree 8, connects to 1 community

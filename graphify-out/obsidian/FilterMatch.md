@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "Community 22"
+community: "Community 137"
 location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_22
+  - community/Community_137
 ---
 
 # FilterMatch
@@ -17,4 +17,4 @@ tags:
 - [[A single match found by the outbound filter.]] - `rationale_for` [EXTRACTED]
 - [[outbound_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_22
+#graphify/code #graphify/EXTRACTED #community/Community_137

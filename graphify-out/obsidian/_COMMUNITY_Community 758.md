@@ -1,25 +1,27 @@
 ---
 type: community
+cohesion: 0.23
 members: 12
 ---
 
 # Community 758
 
+**Cohesion:** 0.23 - loosely connected
 **Members:** 12 nodes
 
 ## Members
-- [[Audit query GET ledger (hashes only)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
-- [[Auto-delete at expires_at]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
-- [[Cron trigger (no user content)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
-- [[LLM API call (sanitized text only)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
-- [[PII Redaction (PHONE_NUMBER, EMAIL_ADDRESS, SSN)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
-- [[Response to user (Telegram  iMessage)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
-- [[Telegram message (raw user text)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
-- [[Tool call (MCP-inspected)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
-- [[content_hash = SHA-256(sanitized)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
-- [[iMessage (raw user text)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
-- [[ledger row (id, timestamp, source, hashes, sanitized flag, expires_at)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
-- [[original_content_hash = SHA-256(raw)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
+- [[Check gateway and bot status]] - rationale - src/interfaces/chat_console.py
+- [[Display chat console banner]] - rationale - src/interfaces/chat_console.py
+- [[Read gateway password from secrets file or environment.]] - rationale - src/interfaces/chat_console.py
+- [[Send message to OpenClaw via gateway]] - rationale - src/interfaces/chat_console.py
+- [[_read_auth_token()]] - code - src/interfaces/chat_console.py
+- [[chat-console launcher]] - code - scripts/chat-console
+- [[chat_console.py]] - code - src/interfaces/chat_console.py
+- [[check_status()]] - code - src/interfaces/chat_console.py
+- [[main()_32]] - code - src/interfaces/chat_console.py
+- [[print_banner()]] - code - src/interfaces/chat_console.py
+- [[print_help()]] - code - src/interfaces/chat_console.py
+- [[send_message()]] - code - src/interfaces/chat_console.py
 
 ## Live Query (requires Dataview plugin)
 

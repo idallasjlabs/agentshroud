@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-02-c4-container.svg"
 type: "image"
-community: "Community 407"
+community: "Community 514"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Community_407
+  - community/Community_514
 ---
 
 # Gateway Container (Python 3.11/FastAPI :8080)
@@ -21,4 +21,4 @@ tags:
 - [[Running Containers (gateway + bot, healthy)]] - `conceptually_related_to` [EXTRACTED]
 - [[Telegram (external system)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Community_407
+#graphify/image #graphify/EXTRACTED #community/Community_514

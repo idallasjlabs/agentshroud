@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/SYSTEM_STATUS.md"
 type: "document"
-community: "Community 576"
+community: "Community 571"
 location: "L48"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_576
+  - community/Community_571
 ---
 
 # 📋 Next Steps for User
@@ -16,4 +16,4 @@ tags:
 - [[Immediate (Required for Bot to Work)]] - `contains` [EXTRACTED]
 - [[When Ready to Continue]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_576
+#graphify/document #graphify/EXTRACTED #community/Community_571

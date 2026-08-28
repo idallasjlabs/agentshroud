@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/cron/templates/html-report-instructions.md"
 type: "document"
-community: "Community 586"
+community: "Community 213"
 location: "L94"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_586
+  - community/Community_213
 ---
 
 # Verification checklist (run before saving any report)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Source Verification Policy (MANDATORY)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_586
+#graphify/document #graphify/EXTRACTED #community/Community_213

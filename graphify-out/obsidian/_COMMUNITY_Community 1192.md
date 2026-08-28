@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1192
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[GSDE&G Development Master Checklist (MC)_1]] - document - docker/config/hermes/skills/i-mc/README.md
-- [[Purpose_52]] - document - docker/config/hermes/skills/i-mc/README.md
-- [[README_57]] - document - docker/config/hermes/skills/i-mc/README.md
-- [[Related Skills_55]] - document - docker/config/hermes/skills/i-mc/README.md
-- [[Usage_58]] - document - docker/config/hermes/skills/i-mc/README.md
+- [[Mnemosyne — Retention Engineer_2]] - document - docker/config/hermes/skills/i-mnemosyne/README.md
+- [[Purpose_57]] - document - docker/config/hermes/skills/i-mnemosyne/README.md
+- [[README_62]] - document - docker/config/hermes/skills/i-mnemosyne/README.md
+- [[Related Skills_63]] - document - docker/config/hermes/skills/i-mnemosyne/README.md
+- [[Usage_64]] - document - docker/config/hermes/skills/i-mnemosyne/README.md
 
 ## Live Query (requires Dataview plugin)
 

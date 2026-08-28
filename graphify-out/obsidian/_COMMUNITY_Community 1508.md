@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 1.00
 members: 2
 ---
 
 # Community 1508
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[deploy-gateway.sh]] - code - scripts/deploy-gateway.sh
-- [[deploy-gateway.sh script]] - code - scripts/deploy-gateway.sh
+- [[Branding Specialist README (OpenClaw)]] - document - docker/config/openclaw/skills/i-bs/README.md
+- [[Branding Specialist SKILL (OpenClaw)]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

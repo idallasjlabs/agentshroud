@@ -1,11 +1,11 @@
 ---
 source_file: "docs/compliance/iec-62443-matrix.md"
 type: "concept"
-community: "Community 799"
+community: "Community 137"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_799
+  - community/Community_137
 ---
 
 # FR4: Data Confidentiality
@@ -20,4 +20,4 @@ tags:
 - [[outbound_filter.py]] - `references` [EXTRACTED]
 - [[sanitizer.py]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_799
+#graphify/concept #graphify/EXTRACTED #community/Community_137

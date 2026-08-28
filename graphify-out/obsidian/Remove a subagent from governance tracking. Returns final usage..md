@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "rationale"
-community: "Community 912"
+community: "Community 864"
 location: "L440"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_912
+  - community/Community_864
 ---
 
 # Remove a subagent from governance tracking. Returns final usage.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.deregister()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_912
+#graphify/rationale #graphify/EXTRACTED #community/Community_864

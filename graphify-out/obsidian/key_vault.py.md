@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "Community 382"
+community: "Key Vault & Audit Chain"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_382
+  - community/Key_Vault__Audit_Chain
 ---
 
 # key_vault.py
@@ -26,4 +26,4 @@ tags:
 - [[env_guard.py]] - `semantically_similar_to` [INFERRED]
 - [[log_sanitizer.py]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_382
+#graphify/code #graphify/EXTRACTED #community/Key_Vault__Audit_Chain

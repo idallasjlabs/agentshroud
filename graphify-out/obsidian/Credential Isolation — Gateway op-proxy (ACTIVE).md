@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bot-capabilities.md"
 type: "document"
-community: "Community 747"
+community: "Community 744"
 location: "L220"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_747
+  - community/Community_744
 ---
 
 # Credential Isolation — Gateway op-proxy (ACTIVE)
@@ -20,4 +20,4 @@ tags:
 - [[Known working credentials]] - `contains` [EXTRACTED]
 - [[What NEVER to do_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_747
+#graphify/document #graphify/EXTRACTED #community/Community_744

@@ -1,23 +1,24 @@
 ---
 type: community
-members: 10
+cohesion: 0.22
+members: 9
 ---
 
 # Community 883
 
-**Members:** 10 nodes
+**Cohesion:** 0.22 - loosely connected
+**Members:** 9 nodes
 
 ## Members
-- [[1. Scope of Change]] - document - .agents/skills/i-pca/SKILL.md
-- [[2. What Changes and Why]] - document - .agents/skills/i-pca/SKILL.md
-- [[3. Scalability Gate]] - document - .agents/skills/i-pca/SKILL.md
-- [[4. Blast Radius]] - document - .agents/skills/i-pca/SKILL.md
-- [[5. Known Limits and Assumptions]] - document - .agents/skills/i-pca/SKILL.md
-- [[6. Alternatives Considered]] - document - .agents/skills/i-pca/SKILL.md
-- [[7. Open Questions]] - document - .agents/skills/i-pca/SKILL.md
-- [[8. Verification Plan]] - document - .agents/skills/i-pca/SKILL.md
-- [[Output Sections (ALL required)]] - document - .agents/skills/i-pca/SKILL.md
-- [[Verification Plan]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[3A.1 Re-enable seccomp profiles ✅]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[3A.2 Make OpenClaw container read-only ✅]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[3A.3 Remove NET_RAW capability ✅]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[3A.4 Add mDNSBonjour disable ✅]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[3A.5 Move gateway password to Docker secrets ✅]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[3A.6 Create verify-security.sh ✅]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[3A.7 Create scan.sh (OpenSCAP) ✅]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[3A.8 Change DM policy to allowlist ✅]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[Phase 3A Security Completion (COMPLETE)]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,9 +28,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 1163]]
-- 1 edge to [[_COMMUNITY_Community 995]]
+- 1 edge to [[_COMMUNITY_Community 373]]
 
 ## Top bridge nodes
-- [[Output Sections (ALL required)]] - degree 10, connects to 1 community
-- [[Verification Plan]] - degree 2, connects to 1 community
+- [[Phase 3A Security Completion (COMPLETE)]] - degree 9, connects to 1 community

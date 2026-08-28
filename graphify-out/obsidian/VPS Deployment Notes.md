@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/linux.md"
 type: "document"
-community: "Community 572"
+community: "Community 568"
 location: "L71"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_572
+  - community/Community_568
 ---
 
 # VPS Deployment Notes
@@ -16,4 +16,4 @@ tags:
 - [[Firewall]] - `contains` [EXTRACTED]
 - [[Non-Root User]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_572
+#graphify/document #graphify/EXTRACTED #community/Community_568

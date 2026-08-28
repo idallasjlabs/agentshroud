@@ -1,20 +1,22 @@
 ---
 type: community
+cohesion: 0.29
 members: 7
 ---
 
 # Community 1011
 
+**Cohesion:** 0.29 - loosely connected
 **Members:** 7 nodes
 
 ## Members
-- [[Get Shit Done (GSD) Governance Cadence]] - concept - docs/architecture/agentic-os.md
-- [[CICD Pipeline Integration Guide]] - document - docs/api/integration-guide.md
-- [[CICD Quality Gates (14 jobs, 6 workflows)]] - concept - docs/architecture/agentic-os.md
-- [[Gap Analysis & Recommendations]] - concept - docs/architecture/agentic-os.md
-- [[Git Worktrees (..agentshroud-worktrees)]] - image - docs/diagrams/images/diagram-06-cicd-deployment.svg
-- [[GitHub Actions CI (test + lint + security-scan)]] - image - docs/diagrams/images/diagram-06-cicd-deployment.svg
-- [[PrePost Tool Hook Enforcement Layer]] - concept - docs/architecture/agentic-os.md
+- [[A. `mac_app_catalog.json` — Machine-readable manifest]] - document - .agents/skills/i-mac/SKILL.md
+- [[B. `mac_app_catalog.md` — Human-readable catalog]] - document - .agents/skills/i-mac/SKILL.md
+- [[Discovery Strategy]] - document - .agents/skills/i-mac/SKILL.md
+- [[Phase 2 — Deduplication & Normalization]] - document - .agents/skills/i-mac/SKILL.md
+- [[Phase 3 — Categorization]] - document - .agents/skills/i-mac/SKILL.md
+- [[Phase 4 — Enrichment]] - document - .agents/skills/i-mac/SKILL.md
+- [[Phase 5 — Output Generation]] - document - .agents/skills/i-mac/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,3 +24,10 @@ members: 7
 TABLE source_file, type FROM #community/Community_1011
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_Community 390]]
+- 1 edge to [[_COMMUNITY_Community 787]]
+
+## Top bridge nodes
+- [[Discovery Strategy]] - degree 7, connects to 2 communities

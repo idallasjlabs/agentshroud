@@ -1,11 +1,11 @@
 ---
 source_file: "docs/ssh-configuration.md"
 type: "concept"
-community: "Community 910"
+community: "Community 847"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_910
+  - community/Community_847
 ---
 
 # SSH Allow/Deny List Evaluation Order
@@ -14,4 +14,4 @@ tags:
 - [[Production Deployment Recommendations]] - `conceptually_related_to` [INFERRED]
 - [[SSH Proxy Config Schema (agentshroud.yaml ssh section)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_910
+#graphify/concept #graphify/EXTRACTED #community/Community_847

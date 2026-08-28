@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/generate-cve-page.py"
 type: "rationale"
-community: "Community 990"
+community: "Community 380"
 location: "L109"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_990
+  - community/Community_380
 ---
 
 # Return the human-readable display name for a bot_id.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_agent_display_name()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_990
+#graphify/rationale #graphify/EXTRACTED #community/Community_380

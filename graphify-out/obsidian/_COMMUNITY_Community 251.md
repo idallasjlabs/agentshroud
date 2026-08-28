@@ -1,75 +1,46 @@
 ---
 type: community
-members: 62
+cohesion: 0.06
+members: 31
 ---
 
 # Community 251
 
-**Members:** 62 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 31 nodes
 
 ## Members
-- [[.test_config_roundtrip()]] - code - gateway/tests/test_egress_enforce.py
-- [[AGENTSHROUD_CONFIG_1]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md
-- [[AGENTSHROUD_CONFIG]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md
-- [[AGENTSHROUD_MODE_1]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
-- [[AGENTSHROUD_MODE]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
-- [[Affected Modules]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
-- [[AgentShroud Semgrep SAST Configuration]] - document - .semgrep.yml
-- [[Behavior_1]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
-- [[Checklist]] - document - .github/PULL_REQUEST_TEMPLATE.md
-- [[Current Status_12]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
-- [[Debug Mode]] - document - docs/vault/04 - Environment Variables/LOG_LEVEL.md
-- [[Default Search Order (when NOT set)]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md
-- [[Description]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md
-- [[Description_1]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
-- [[Description_5]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
-- [[Description_6]] - document - docs/vault/04 - Environment Variables/LOG_LEVEL.md
-- [[Gateway Proxy Port]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
-- [[Get the global egress filter configuration.]] - rationale - gateway/security/egress_config.py
-- [[HTTP_PROXY  HTTPS_PROXY]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
-- [[HTTP_PROXY]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
-- [[IEC 62443 Reference]] - document - .github/PULL_REQUEST_TEMPLATE.md
-- [[LOG_LEVEL_1]] - document - docs/vault/04 - Environment Variables/LOG_LEVEL.md
-- [[LOG_LEVEL]] - document - docs/vault/04 - Environment Variables/LOG_LEVEL.md
-- [[PULL_REQUEST_TEMPLATE]] - document - .github/PULL_REQUEST_TEMPLATE.md
-- [[Pre-commit Hooks Configuration]] - document - .pre-commit-config.yaml
-- [[Related Notes_28]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md
-- [[Related Notes_29]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
-- [[Related Notes_33]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
-- [[Related Notes_34]] - document - docs/vault/04 - Environment Variables/LOG_LEVEL.md
-- [[Rule agentshroud-assert-security-check]] - concept - .semgrep.yml
-- [[Rule agentshroud-hardcoded-password]] - concept - .semgrep.yml
-- [[Rule agentshroud-log-sensitive-key]] - concept - .semgrep.yml
-- [[Rule agentshroud-pickle-load]] - concept - .semgrep.yml
-- [[Rule agentshroud-sql-injection]] - concept - .semgrep.yml
-- [[Rule agentshroud-ssrf-httpx]] - concept - .semgrep.yml
-- [[Rule agentshroud-ssrf-requests]] - concept - .semgrep.yml
-- [[Rule agentshroud-subprocess-shell-true]] - concept - .semgrep.yml
-- [[Rule agentshroud-subprocess-unvalidated-input]] - concept - .semgrep.yml
-- [[Set In_2]] - document - docs/vault/04 - Environment Variables/LOG_LEVEL.md
-- [[Set the global egress filter configuration.]] - rationale - gateway/security/egress_config.py
-- [[Startup Warnings]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
-- [[Summary]] - document - .github/PULL_REQUEST_TEMPLATE.md
-- [[Test that config can be saved and retrieved.]] - rationale - gateway/tests/test_egress_enforce.py
-- [[Type of Change]] - document - .github/PULL_REQUEST_TEMPLATE.md
-- [[Update egress allowlist configuration (owner only).]] - rationale - gateway/web/management.py
-- [[Usage_125]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md
-- [[Usage_126]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
-- [[Value_3]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
-- [[Values_2]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
-- [[Values_3]] - document - docs/vault/04 - Environment Variables/LOG_LEVEL.md
-- [[When Enabled]] - document - docs/vault/04 - Environment Variables/HTTP_PROXY.md
-- [[When to Set]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md
-- [[agentshroud.yaml]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md
-- [[black (Python formatter)]] - concept - .pre-commit-config.yaml
-- [[detect-secrets (Yelp secret scanner)]] - concept - .pre-commit-config.yaml
-- [[egress_config.py]] - code - gateway/security/egress_config.py
-- [[egress_filter.py]] - code - gateway/security/egress_filter.py
-- [[get_egress_config()]] - code - gateway/security/egress_config.py
-- [[gitleaks (secret scanner)]] - concept - .pre-commit-config.yaml
-- [[ruff (Python linter)]] - concept - .pre-commit-config.yaml
-- [[set_egress_config()]] - code - gateway/security/egress_config.py
-- [[update_egress_allowlist()]] - code - gateway/web/management.py
+- [[Folder Structure_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[Linking_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[NOW ANALYZE THE FOLLOWING CODEBASE AND PRODUCE THE COMPLETE OBSIDIAN VAULT_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[OBSIDIAN VAULT RULES (Follow These Exactly)_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[OUTPUT FORMAT_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[REQUIRED NOTES — PRODUCE EVERY ONE OF THESE_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[SKILL_174]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[System Audit Vault (Obsidian)_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[Tags_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[YAML Frontmatter_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[`00 - START HEREHome.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[`00 - START HEREQuick Reference.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[`00 - START HERESystem Overview.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[`01 - ArchitectureArchitecture Overview.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[`01 - ArchitectureData Flow.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[`01 - ArchitectureShutdown & Recovery.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[`01 - ArchitectureStartup Sequence.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[`02 - ModulesFileName.md` — ONE PER SOURCE FILE_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[`03 - ConfigurationConfigFile.md` — ONE PER CONFIG FILE_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[`04 - Environment VariablesVAR_NAME.md` — ONE PER ENV VAR_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[`05 - DependenciesAll Dependencies.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[`05 - DependenciesPackageName.md` — ONE PER MAJOR DEPENDENCY_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[`06 - Containers & ServicesContainerName.md` — ONE PER CONTAINERSERVICE_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[`07 - Errors & TroubleshootingError Index.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[`07 - Errors & TroubleshootingTroubleshooting Matrix.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[`07 - Errors & TroubleshootingErrorName.md` — ONE PER ERROR CATEGORY_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[`08 - RunbooksCrash Recovery.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[`08 - RunbooksFirst Time Setup.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[`08 - RunbooksRestart Procedure.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[`09 - DiagramsFull System Flowchart.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[`09 - DiagramsStartup Flow Diagram.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -77,45 +48,3 @@ members: 62
 TABLE source_file, type FROM #community/Community_251
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 13 edges to [[_COMMUNITY_Community 282]]
-- 6 edges to [[_COMMUNITY_Community 1857]]
-- 3 edges to [[_COMMUNITY_Community 30]]
-- 2 edges to [[_COMMUNITY_Community 6]]
-- 2 edges to [[_COMMUNITY_Community 106]]
-- 2 edges to [[_COMMUNITY_Community 133]]
-- 2 edges to [[_COMMUNITY_Community 659]]
-- 2 edges to [[_COMMUNITY_Community 799]]
-- 2 edges to [[_COMMUNITY_Community 116]]
-- 1 edge to [[_COMMUNITY_Community 78]]
-- 1 edge to [[_COMMUNITY_Community 374]]
-- 1 edge to [[_COMMUNITY_Community 1]]
-- 1 edge to [[_COMMUNITY_Community 397]]
-- 1 edge to [[_COMMUNITY_Community 147]]
-- 1 edge to [[_COMMUNITY_Community 207]]
-- 1 edge to [[_COMMUNITY_Community 176]]
-- 1 edge to [[_COMMUNITY_Community 46]]
-- 1 edge to [[_COMMUNITY_Community 21]]
-- 1 edge to [[_COMMUNITY_Community 442]]
-- 1 edge to [[_COMMUNITY_Community 382]]
-- 1 edge to [[_COMMUNITY_Community 97]]
-- 1 edge to [[_COMMUNITY_Community 448]]
-- 1 edge to [[_COMMUNITY_Community 33]]
-- 1 edge to [[_COMMUNITY_Community 118]]
-- 1 edge to [[_COMMUNITY_Community 1001]]
-- 1 edge to [[_COMMUNITY_Community 35]]
-- 1 edge to [[_COMMUNITY_Community 14]]
-- 1 edge to [[_COMMUNITY_Community 862]]
-- 1 edge to [[_COMMUNITY_Community 233]]
-- 1 edge to [[_COMMUNITY_Community 814]]
-- 1 edge to [[_COMMUNITY_Community 824]]
-- 1 edge to [[_COMMUNITY_Community 573]]
-- 1 edge to [[_COMMUNITY_Community 65]]
-
-## Top bridge nodes
-- [[egress_filter.py]] - degree 27, connects to 18 communities
-- [[egress_config.py]] - degree 17, connects to 12 communities
-- [[agentshroud.yaml]] - degree 8, connects to 3 communities
-- [[AGENTSHROUD_MODE]] - degree 6, connects to 3 communities
-- [[AgentShroud Semgrep SAST Configuration]] - degree 13, connects to 2 communities

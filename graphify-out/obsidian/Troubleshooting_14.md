@@ -1,22 +1,21 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "Community 246"
-location: "L160"
+community: "Community 195"
+location: "L246"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_246
+  - community/Community_195
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[AWS Token expired (SSO)_2]] - `contains` [EXTRACTED]
-- [[AWS Unable to locate credentials_2]] - `contains` [EXTRACTED]
-- [[Atlassian OAuth flow failed_2]] - `contains` [EXTRACTED]
-- [[GitHub Bad credentials_2]] - `contains` [EXTRACTED]
-- [[GitHub Docker image not found_2]] - `contains` [EXTRACTED]
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_2]] - `contains` [EXTRACTED]
+- [[Access Denied_2]] - `contains` [EXTRACTED]
+- [[Token expired (SSO)_2]] - `contains` [EXTRACTED]
+- [[Unable to locate credentials_2]] - `contains` [EXTRACTED]
+- [[MCP Not Using Profile_2]] - `contains` [EXTRACTED]
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_246
+#graphify/document #graphify/EXTRACTED #community/Community_195

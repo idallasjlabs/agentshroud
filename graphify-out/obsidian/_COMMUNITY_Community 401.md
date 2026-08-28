@@ -1,33 +1,37 @@
 ---
 type: community
-members: 20
+cohesion: 0.10
+members: 22
 ---
 
 # Community 401
 
-**Members:** 20 nodes
+**Cohesion:** 0.10 - loosely connected
+**Members:** 22 nodes
 
 ## Members
-- [[1. The Problem Unsecured AI Agents]] - document - docs/papers/agentshroud-whitepaper.md
-- [[1.1 The New Attack Surface]] - document - docs/papers/agentshroud-whitepaper.md
-- [[1.2 The Industry Gap]] - document - docs/papers/agentshroud-whitepaper.md
-- [[1.3 Threat Model]] - document - docs/papers/agentshroud-whitepaper.md
-- [[12. Roadmap]] - document - docs/papers/agentshroud-whitepaper.md
-- [[13. Conclusion]] - document - docs/papers/agentshroud-whitepaper.md
-- [[2. Architecture Overview]] - document - docs/papers/agentshroud-whitepaper.md
-- [[2.1 Design Principle Transparent Proxy]] - document - docs/papers/agentshroud-whitepaper.md
-- [[2.2 Why Transparent Proxy]] - document - docs/papers/agentshroud-whitepaper.md
-- [[2.3 Data Flow]] - document - docs/papers/agentshroud-whitepaper.md
-- [[8. Performance & Testing]] - document - docs/papers/agentshroud-whitepaper.md
-- [[8.1 Test Coverage]] - document - docs/papers/agentshroud-whitepaper.md
-- [[8.2 Resource Footprint]] - document - docs/papers/agentshroud-whitepaper.md
-- [[8.3 Latency]] - document - docs/papers/agentshroud-whitepaper.md
-- [[AgentShroud Enterprise Governance for Autonomous AI Agents]] - document - docs/papers/agentshroud-whitepaper.md
-- [[Architecture Overview]] - document - docs/api/integration-guide.md
-- [[Completed Phases]] - document - docs/papers/agentshroud-whitepaper.md
-- [[Executive Summary]] - document - docs/papers/agentshroud-whitepaper.md
-- [[Future Phases (Planned)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[agentshroud-whitepaper]] - document - docs/papers/agentshroud-whitepaper.md
+- [[CLI]] - document - skills/openclaw/voice-call/SKILL.md
+- [[Config]] - document - skills/openclaw/summarize/SKILL.md
+- [[Model + keys]] - document - skills/openclaw/summarize/SKILL.md
+- [[OpenClaw Skill Metadata Schema (frontmatter convention)]] - concept - skills/openclaw/skill-creator/scripts/quick_validate.py
+- [[Quick start_3]] - document - skills/openclaw/summarize/SKILL.md
+- [[SKILL_230]] - document - skills/openclaw/songsee/SKILL.md
+- [[SKILL_231]] - document - skills/openclaw/spotify-player/SKILL.md
+- [[SKILL_232]] - document - skills/openclaw/summarize/SKILL.md
+- [[SKILL_233]] - document - skills/openclaw/things-mac/SKILL.md
+- [[SKILL_237]] - document - skills/openclaw/voice-call/SKILL.md
+- [[SKILL_238]] - document - skills/openclaw/wacli/SKILL.md
+- [[SKILL_240]] - document - skills/openclaw/xurl/SKILL.md
+- [[Summarize]] - document - skills/openclaw/summarize/SKILL.md
+- [[Things 3 CLI]] - document - skills/openclaw/things-mac/SKILL.md
+- [[Tool]] - document - skills/openclaw/voice-call/SKILL.md
+- [[Useful flags_1]] - document - skills/openclaw/summarize/SKILL.md
+- [[Voice Call]] - document - skills/openclaw/voice-call/SKILL.md
+- [[When to use (trigger phrases)]] - document - skills/openclaw/summarize/SKILL.md
+- [[YouTube summary vs transcript]] - document - skills/openclaw/summarize/SKILL.md
+- [[songsee]] - document - skills/openclaw/songsee/SKILL.md
+- [[spogo  spotify_player]] - document - skills/openclaw/spotify-player/SKILL.md
+- [[wacli]] - document - skills/openclaw/wacli/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,19 +41,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 675]]
-- 1 edge to [[_COMMUNITY_Community 657]]
-- 1 edge to [[_COMMUNITY_Community 783]]
-- 1 edge to [[_COMMUNITY_Community 522]]
-- 1 edge to [[_COMMUNITY_Community 1064]]
-- 1 edge to [[_COMMUNITY_Community 574]]
-- 1 edge to [[_COMMUNITY_Community 925]]
-- 1 edge to [[_COMMUNITY_Community 1346]]
-- 1 edge to [[_COMMUNITY_Community 824]]
-- 1 edge to [[_COMMUNITY_Community 854]]
-- 1 edge to [[_COMMUNITY_Community 972]]
+- 1 edge to [[_COMMUNITY_Community 532]]
+- 1 edge to [[_COMMUNITY_Community 544]]
+- 1 edge to [[_COMMUNITY_Community 981]]
+- 1 edge to [[_COMMUNITY_Community 735]]
+- 1 edge to [[_COMMUNITY_Community 1050]]
+- 1 edge to [[_COMMUNITY_Community 778]]
+- 1 edge to [[_COMMUNITY_Community 388]]
 
 ## Top bridge nodes
-- [[AgentShroud Enterprise Governance for Autonomous AI Agents]] - degree 17, connects to 8 communities
-- [[Architecture Overview]] - degree 6, connects to 2 communities
-- [[8. Performance & Testing]] - degree 5, connects to 1 community
+- [[OpenClaw Skill Metadata Schema (frontmatter convention)]] - degree 13, connects to 6 communities
+- [[SKILL_240]] - degree 3, connects to 1 community

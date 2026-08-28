@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/event_adapter.py"
 type: "code"
-community: "Community 501"
+community: "SOC Collaborators"
 location: "L145"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_501
+  - community/SOC_Collaborators
 ---
 
 # from_anomaly_alert()
@@ -19,4 +19,4 @@ tags:
 - [[_map_severity()]] - `calls` [EXTRACTED]
 - [[event_adapter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_501
+#graphify/code #graphify/EXTRACTED #community/SOC_Collaborators

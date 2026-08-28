@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "Community 9"
+community: "Ingest API & Approval Routes"
 location: "L4297"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_9
+  - community/Ingest_API__Approval_Routes
 ---
 
 # Alias for Hermes Anthropic SDK's /api/v1/* preflight path.      Some Anthropic S
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[llm_api_v1_prefix_alias()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_9
+#graphify/rationale #graphify/EXTRACTED #community/Ingest_API__Approval_Routes

@@ -1,25 +1,27 @@
 ---
 type: community
+cohesion: 0.17
 members: 12
 ---
 
 # Community 777
 
+**Cohesion:** 0.17 - loosely connected
 **Members:** 12 nodes
 
 ## Members
-- [[Anatomy of a Skill]] - document - skills/openclaw/skill-creator/SKILL.md
-- [[Assets (`assets`)]] - document - skills/openclaw/skill-creator/SKILL.md
-- [[Bundled Resources (optional)]] - document - skills/openclaw/skill-creator/SKILL.md
-- [[Concise is Key]] - document - skills/openclaw/skill-creator/SKILL.md
-- [[Core Principles]] - document - skills/openclaw/skill-creator/SKILL.md
-- [[Progressive Disclosure Design Principle]] - document - skills/openclaw/skill-creator/SKILL.md
-- [[Progressive Disclosure Patterns]] - document - skills/openclaw/skill-creator/SKILL.md
-- [[References (`references`)]] - document - skills/openclaw/skill-creator/SKILL.md
-- [[SKILL.md (required)]] - document - skills/openclaw/skill-creator/SKILL.md
-- [[Scripts (`scripts`)]] - document - skills/openclaw/skill-creator/SKILL.md
-- [[Set Appropriate Degrees of Freedom]] - document - skills/openclaw/skill-creator/SKILL.md
-- [[What to Not Include in a Skill]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[.test_10_x_blocked()_1]] - code - gateway/tests/test_web_proxy.py
+- [[.test_127_0_0_1_blocked()_1]] - code - gateway/tests/test_web_proxy.py
+- [[.test_169_254_blocked()]] - code - gateway/tests/test_web_proxy.py
+- [[.test_192_168_blocked()_1]] - code - gateway/tests/test_web_proxy.py
+- [[.test_decimal_ip_blocked()_1]] - code - gateway/tests/test_web_proxy.py
+- [[.test_hex_ip_blocked()_1]] - code - gateway/tests/test_web_proxy.py
+- [[.test_ipv4_mapped_ipv6_192_168_blocked()]] - code - gateway/tests/test_web_proxy.py
+- [[.test_ipv4_mapped_ipv6_blocked()_2]] - code - gateway/tests/test_web_proxy.py
+- [[.test_ipv6_loopback_blocked()_1]] - code - gateway/tests/test_web_proxy.py
+- [[.test_localhost_blocked()_1]] - code - gateway/tests/test_web_proxy.py
+- [[.test_public_ip_allowed()_1]] - code - gateway/tests/test_web_proxy.py
+- [[TestSSRFBlocking]] - code - gateway/tests/test_web_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,7 +31,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 545]]
+- 5 edges to [[_COMMUNITY_Community 22]]
+- 1 edge to [[_COMMUNITY_Key Vault & Audit Chain]]
+- 1 edge to [[_COMMUNITY_Community 121]]
 
 ## Top bridge nodes
-- [[Core Principles]] - degree 5, connects to 1 community
+- [[TestSSRFBlocking]] - degree 18, connects to 3 communities

@@ -1,27 +1,34 @@
 ---
 type: community
-members: 14
+cohesion: 0.18
+members: 19
 ---
 
 # Community 474
 
-**Members:** 14 nodes
+**Cohesion:** 0.18 - loosely connected
+**Members:** 19 nodes
 
 ## Members
-- [[.test_false_on_empty_string()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_false_on_non_string()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_no_false_positive_on_domain_mention()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_no_false_positive_on_generic_llm_response()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_true_on_callback_token()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_true_on_deny_token()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_true_on_real_egress_banner_header()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Common LLM prose with 'risk', 'tool', 'id' must NOT trigger the matcher.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Generic 'domain' mention without the egress emoji must not trigger.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Inline-keyboard callback tokens must always match (egress_allow_always_uuid).]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[TestInternalBannerMatcher]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[The canonical 🌐 Egress Request header from TelegramEgressNotifier must match.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[_contains_internal_approval_banner must only fire on real egress banners.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[egress_deny_ callback token must match.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[.register_event_source()]] - code - gateway/security/session_security.py
+- [[.rotate_session()]] - code - gateway/security/session_security.py
+- [[.test_create_session()]] - code - gateway/tests/test_session_security.py
+- [[.test_rotate_session()]] - code - gateway/tests/test_session_security.py
+- [[.test_rotated_session_valid()]] - code - gateway/tests/test_session_security.py
+- [[.test_session_bound_to_identity()]] - code - gateway/tests/test_session_security.py
+- [[.test_session_id_is_cryptographically_random()]] - code - gateway/tests/test_session_security.py
+- [[.validate_event()]] - code - gateway/security/session_security.py
+- [[.validate_session()]] - code - gateway/security/session_security.py
+- [[Any_60]] - code - gateway/security/session_security.py
+- [[Chen et al. 2026 (arXiv2602.14364) — Session Hijacking]] - paper - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[EventInjectionError]] - code - gateway/security/session_security.py
+- [[SessionBindingError]] - code - gateway/security/session_security.py
+- [[SessionError]] - code - gateway/security/session_security.py
+- [[SessionExpired]] - code - gateway/security/session_security.py
+- [[TestSessionCreation]] - code - gateway/tests/test_session_security.py
+- [[TestSessionRotation]] - code - gateway/tests/test_session_security.py
+- [[Wang et al. 2026 (arXiv2602.08412) — Confused Deputy  Event Injection Attacks]] - paper - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
+- [[session_security.py]] - code - gateway/security/session_security.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,11 +38,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 1]]
-- 1 edge to [[_COMMUNITY_Community 870]]
-- 1 edge to [[_COMMUNITY_Community 4]]
-- 1 edge to [[_COMMUNITY_Community 42]]
-- 1 edge to [[_COMMUNITY_Community 265]]
+- 20 edges to [[_COMMUNITY_Community 478]]
+- 7 edges to [[_COMMUNITY_Community 1132]]
+- 4 edges to [[_COMMUNITY_Community 870]]
+- 4 edges to [[_COMMUNITY_Community 1133]]
+- 2 edges to [[_COMMUNITY_Community 165]]
+- 2 edges to [[_COMMUNITY_Community 175]]
+- 2 edges to [[_COMMUNITY_Security Audit & Drift Detection]]
+- 1 edge to [[_COMMUNITY_Community 95]]
+- 1 edge to [[_COMMUNITY_Community 97]]
 
 ## Top bridge nodes
-- [[TestInternalBannerMatcher]] - degree 13, connects to 5 communities
+- [[session_security.py]] - degree 14, connects to 7 communities
+- [[SessionError]] - degree 16, connects to 5 communities
+- [[EventInjectionError]] - degree 10, connects to 4 communities
+- [[SessionBindingError]] - degree 10, connects to 4 communities
+- [[SessionExpired]] - degree 10, connects to 4 communities

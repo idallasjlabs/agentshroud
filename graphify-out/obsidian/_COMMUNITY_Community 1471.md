@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 1.00
 members: 2
 ---
 
 # Community 1471
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[SKILL_188]] - document - docker/config/openclaw/skills/i-value-stream-mapping/SKILL.md
-- [[Skill value-stream-mapping_2]] - document - docker/config/openclaw/skills/i-value-stream-mapping/SKILL.md
+- [[extraction-spec_2]] - document - docker/config/openclaw/skills/graphify/references/extraction-spec.md
+- [[graphify reference extraction subagent prompt_2]] - document - docker/config/openclaw/skills/graphify/references/extraction-spec.md
 
 ## Live Query (requires Dataview plugin)
 

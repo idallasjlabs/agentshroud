@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "Community 1003"
+community: "Middleware & Lifespan"
 location: "L1026"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1003
+  - community/Middleware__Lifespan
 ---
 
 # TestCriticalGuardInitFailClosed
@@ -25,4 +25,4 @@ tags:
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1003
+#graphify/code #graphify/EXTRACTED #community/Middleware__Lifespan

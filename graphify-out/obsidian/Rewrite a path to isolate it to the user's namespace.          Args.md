@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/path_isolation.py"
 type: "rationale"
-community: "Community 29"
+community: "Community 61"
 location: "L120"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_29
+  - community/Community_61
 ---
 
 # Rewrite a path to isolate it to the user's namespace.          Args:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.rewrite_path()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_29
+#graphify/rationale #graphify/EXTRACTED #community/Community_61

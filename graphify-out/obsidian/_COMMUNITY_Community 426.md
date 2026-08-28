@@ -1,33 +1,36 @@
 ---
 type: community
-members: 20
+cohesion: 0.10
+members: 21
 ---
 
 # Community 426
 
-**Members:** 20 nodes
+**Cohesion:** 0.10 - loosely connected
+**Members:** 21 nodes
 
 ## Members
-- [[.test_absolute_and_relative_paths()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_editor_command_and_quotes()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_exception_fails_open()_1]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_expected_write_registered()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_filter_applied()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_filter_not_applied()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_headers_sanitized()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_metadata_exception_non_blocking()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_no_filter_passthrough()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_no_path_match_no_registration()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_no_paths()]] - code - gateway/tests/test_middleware_coverage.py
-- [[MiddlewareManager built via __new__ — every module attr explicitly None     so e]] - rationale - gateway/tests/test_middleware_coverage.py
-- [[TestExtractFilePaths]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestFilterOutboundResponse]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestMemoryIntegrityRegistration]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestMetadataGuard_1]] - code - gateway/tests/test_middleware_coverage.py
-- [[mm()]] - code - gateway/tests/test_middleware_coverage.py
-- [[temp_workspace()_1]] - code - gateway/tests/test_middleware_coverage.py
-- [[test_middleware_coverage.py]] - code - gateway/tests/test_middleware_coverage.py
-- [[usm()]] - code - gateway/tests/test_middleware_coverage.py
+- [[Audit Access]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[Audit Retention]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[Audit Trail Standards]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[Automated Tests]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[Compliance_1]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[Future Enhancements_2]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[Incident Playbook]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[Incident Response]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[Manual Security Review]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[Planned Features]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[Risk Classification Matrix]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[Risk Elevation Factors]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[SecureBrowser Security Policies]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[Security Event Triggers]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[Security Testing_1]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[Standards Alignment]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[Threat Model_28]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[What Gets Logged]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[What We Don't Protect Against]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[What We Protect Against]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[security-policies]] - document - skills/custom/securebrowser/references/security-policies.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,24 +40,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 13 edges to [[_COMMUNITY_Community 6]]
-- 11 edges to [[_COMMUNITY_Community 130]]
-- 7 edges to [[_COMMUNITY_Community 174]]
-- 5 edges to [[_COMMUNITY_Community 1]]
-- 4 edges to [[_COMMUNITY_Community 652]]
-- 3 edges to [[_COMMUNITY_Community 596]]
-- 2 edges to [[_COMMUNITY_Community 1055]]
-- 2 edges to [[_COMMUNITY_Community 1025]]
-- 2 edges to [[_COMMUNITY_Community 109]]
-- 1 edge to [[_COMMUNITY_Community 968]]
-- 1 edge to [[_COMMUNITY_Community 1003]]
-- 1 edge to [[_COMMUNITY_Community 1256]]
-- 1 edge to [[_COMMUNITY_Community 1340]]
-- 1 edge to [[_COMMUNITY_Community 1039]]
+- 1 edge to [[_COMMUNITY_Community 396]]
+- 1 edge to [[_COMMUNITY_Community 364]]
 
 ## Top bridge nodes
-- [[test_middleware_coverage.py]] - degree 40, connects to 14 communities
-- [[TestFilterOutboundResponse]] - degree 9, connects to 3 communities
-- [[TestExtractFilePaths]] - degree 8, connects to 3 communities
-- [[TestMemoryIntegrityRegistration]] - degree 7, connects to 3 communities
-- [[TestMetadataGuard_1]] - degree 7, connects to 3 communities
+- [[SecureBrowser Security Policies]] - degree 10, connects to 2 communities

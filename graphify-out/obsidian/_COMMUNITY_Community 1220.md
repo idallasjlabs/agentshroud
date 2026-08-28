@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1220
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[CICD Pipeline Advisor (CICD)_2]] - document - docker/config/openclaw/skills/i-cicd/README.md
-- [[Purpose_80]] - document - docker/config/openclaw/skills/i-cicd/README.md
-- [[README_85]] - document - docker/config/openclaw/skills/i-cicd/README.md
-- [[Related Skills_86]] - document - docker/config/openclaw/skills/i-cicd/README.md
-- [[Usage_89]] - document - docker/config/openclaw/skills/i-cicd/README.md
+- [[Git Workflow Guardian (GIT-GUARD)_2]] - document - docker/config/openclaw/skills/i-gg/README.md
+- [[Purpose_85]] - document - docker/config/openclaw/skills/i-gg/README.md
+- [[README_90]] - document - docker/config/openclaw/skills/i-gg/README.md
+- [[Related Skills_91]] - document - docker/config/openclaw/skills/i-gg/README.md
+- [[Usage_94]] - document - docker/config/openclaw/skills/i-gg/README.md
 
 ## Live Query (requires Dataview plugin)
 

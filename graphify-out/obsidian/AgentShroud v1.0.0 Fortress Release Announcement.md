@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/v1.0/RELEASE-ANNOUNCEMENT-v1.0.0.md"
 type: "document"
-community: "Community 365"
+community: "Community 366"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_365
+  - community/Community_366
 ---
 
 # AgentShroud v1.0.0 Fortress Release Announcement
@@ -19,4 +19,4 @@ tags:
 - [[RELEASE-ANNOUNCEMENT-v1.0.0]] - `contains` [EXTRACTED]
 - [[v0.8.0 25-Domain Prompt Injection Defense Assessment]] - `implements` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_365
+#graphify/document #graphify/EXTRACTED #community/Community_366

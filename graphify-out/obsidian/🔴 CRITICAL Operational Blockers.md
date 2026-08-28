@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/REPORTED_ISSUES.md"
 type: "document"
-community: "Community 475"
+community: "Community 717"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_475
+  - community/Community_717
 ---
 
 # 🔴 CRITICAL: Operational Blockers
@@ -16,6 +16,5 @@ tags:
 - [[2. iMessage Integration Permission Denied]] - `contains` [EXTRACTED]
 - [[3. Unpinned Base Image in Dockerfile]] - `contains` [EXTRACTED]
 - [[AgentShroud Consolidated Issues Report]] - `contains` [EXTRACTED]
-- [[AgentShroud™ Consolidated Issues Report]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_475
+#graphify/document #graphify/EXTRACTED #community/Community_717

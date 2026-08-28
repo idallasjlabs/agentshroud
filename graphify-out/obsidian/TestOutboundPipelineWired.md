@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_pipeline.py"
 type: "code"
-community: "Community 86"
+community: "Community 47"
 location: "L197"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_86
+  - community/Community_47
 ---
 
 # TestOutboundPipelineWired
@@ -19,4 +19,4 @@ tags:
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_telegram_pipeline.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_86
+#graphify/code #graphify/INFERRED #community/Community_47

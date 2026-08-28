@@ -1,24 +1,26 @@
 ---
 type: community
+cohesion: 0.18
 members: 11
 ---
 
 # Community 800
 
+**Cohesion:** 0.18 - loosely connected
 **Members:** 11 nodes
 
 ## Members
-- [[02-infrastructure]] - document - docs/diagrams/02-infrastructure.md
-- [[4. Infrastructure Diagram — Hosting & Servers]] - document - docs/diagrams/02-infrastructure.md
-- [[5. Network Topology Diagram]] - document - docs/diagrams/02-infrastructure.md
-- [[6. Deployment Diagram — What Runs Where]] - document - docs/diagrams/02-infrastructure.md
-- [[AgentShroud — Infrastructure & Network Diagrams]] - document - docs/diagrams/02-infrastructure.md
-- [[Deployment Diagram — What Runs Where]] - concept - docs/diagrams/02-infrastructure.md
-- [[Infrastructure Diagram — Hosting & Servers]] - concept - docs/diagrams/02-infrastructure.md
-- [[Network Topology Diagram]] - concept - docs/diagrams/02-infrastructure.md
-- [[Rendered CICD Deployment Diagram (PNG)]] - image - docs/diagrams/images/diagram-06-cicd-deployment.png
-- [[Rendered Infrastructure Hosting Diagram (PNG)]] - image - docs/diagrams/images/diagram-04-infrastructure-hosting.png
-- [[Rendered Network Topology Diagram (PNG)]] - image - docs/diagrams/images/diagram-05-network-topology.png
+- [[1. Pre-populate known_hosts]] - document - docs/ssh-security-review.md
+- [[2. Network Segmentation]] - document - docs/ssh-security-review.md
+- [[3. Key Rotation]] - document - docs/ssh-security-review.md
+- [[4. Rate Limiting]] - document - docs/ssh-security-review.md
+- [[5. Output Sanitization]] - document - docs/ssh-security-review.md
+- [[6. Least-Privilege SSH Users]] - document - docs/ssh-security-review.md
+- [[Comparison Direct SSH vs. AgentShroud SSH Proxy]] - document - docs/ssh-security-review.md
+- [[Recommendations for Production Deployment]] - document - docs/ssh-security-review.md
+- [[Risk Summary]] - document - docs/ssh-security-review.md
+- [[SSH Security Review]] - document - docs/ssh-security-review.md
+- [[ssh-security-review]] - document - docs/ssh-security-review.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,8 +30,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 745]]
+- 1 edge to [[_COMMUNITY_Community 896]]
 
 ## Top bridge nodes
-- [[02-infrastructure]] - degree 5, connects to 1 community
-- [[Deployment Diagram — What Runs Where]] - degree 3, connects to 1 community
+- [[SSH Security Review]] - degree 5, connects to 1 community

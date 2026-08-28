@@ -1,29 +1,31 @@
 ---
 type: community
+cohesion: 0.12
 members: 16
 ---
 
 # Community 559
 
+**Cohesion:** 0.12 - loosely connected
 **Members:** 16 nodes
 
 ## Members
-- [[03-data]] - document - docs/diagrams/03-data.md
-- [[10. Data Dictionary  Catalog Map]] - document - docs/diagrams/03-data.md
-- [[7. Data Flow Diagram — How Data Moves Through the System]] - document - docs/diagrams/03-data.md
-- [[8. Entity Relationship Diagram (ERD)]] - document - docs/diagrams/03-data.md
-- [[9. Data Lineage Diagram]] - document - docs/diagrams/03-data.md
-- [[AgentShroud — Data Diagrams]] - document - docs/diagrams/03-data.md
-- [[Current Status_2]] - document - docs/data/README.md
-- [[Data Dictionary  Catalog Map]] - concept - docs/diagrams/03-data.md
-- [[Data Documentation]] - document - docs/data/README.md
-- [[Data Flow Diagram]] - concept - docs/diagrams/03-data.md
-- [[Data Lineage Diagram]] - concept - docs/diagrams/03-data.md
-- [[Entity Relationship Diagram (ledger, approval_items)]] - concept - docs/diagrams/03-data.md
-- [[Planned Documents_1]] - document - docs/data/README.md
-- [[README_119]] - document - docs/data/README.md
-- [[Rendered Data Flow Diagram (PNG)]] - image - docs/diagrams/images/diagram-07-data-flow.png
-- [[Rendered ERD Diagram (PNG)]] - image - docs/diagrams/images/diagram-08-erd.png
+- [[Config Keys Read_3]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
+- [[Environment Variables Used_3]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
+- [[Extended v0.8.0 Modules]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
+- [[FileSandbox Configuration (hardcoded in __init__)]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
+- [[Imports From  Exports To_3]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
+- [[Key Classes  Functions_3]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
+- [[Known Issues  Notes_4]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
+- [[Memory Security]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
+- [[P1 Core Guards]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
+- [[Purpose_114]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
+- [[Related_5]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
+- [[Responsibilities_3]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
+- [[Security Modules Initialized]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
+- [[Tool Security]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
+- [[middleware.py_2]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
+- [[process_request Flow]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,9 +35,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 745]]
-- 1 edge to [[_COMMUNITY_Community 835]]
+- 1 edge to [[_COMMUNITY_Middleware & Lifespan]]
 
 ## Top bridge nodes
-- [[03-data]] - degree 6, connects to 1 community
-- [[Entity Relationship Diagram (ledger, approval_items)]] - degree 5, connects to 1 community
+- [[middleware.py_2]] - degree 12, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "code"
-community: "Community 444"
+community: "Community 18"
 location: "L490"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_444
+  - community/Community_18
 ---
 
 # scan_repository()
@@ -18,4 +18,4 @@ tags:
 - [[git_guard.py]] - `contains` [EXTRACTED]
 - [[test_round2_hardening.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_444
+#graphify/code #graphify/EXTRACTED #community/Community_18

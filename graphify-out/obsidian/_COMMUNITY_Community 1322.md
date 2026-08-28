@@ -1,17 +1,19 @@
 ---
 type: community
+cohesion: 0.50
 members: 4
 ---
 
 # Community 1322
 
+**Cohesion:** 0.50 - moderately connected
 **Members:** 4 nodes
 
 ## Members
-- [[Add Long Description]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[Add Screenshots]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[Add Security Badge]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[🎨 Customize Skill Page (Optional)]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[Manual Usage (Current Method)]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Step 1 Create 1Password Share Link]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Step 2 Fetch with Browser-Fetch Skill]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Step 3 Parse Output]] - document - docs/reference/BROWSER_FETCH_SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,7 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 858]]
+- 1 edge to [[_COMMUNITY_Community 767]]
 
 ## Top bridge nodes
-- [[🎨 Customize Skill Page (Optional)]] - degree 4, connects to 1 community
+- [[Manual Usage (Current Method)]] - degree 4, connects to 1 community

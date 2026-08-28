@@ -1,34 +1,36 @@
 ---
 type: community
+cohesion: 0.10
 members: 21
 ---
 
 # Community 412
 
+**Cohesion:** 0.10 - loosely connected
 **Members:** 21 nodes
 
 ## Members
-- [[1. Change Documentation_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[2. Testing Evidence_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[3. Backups & Rollback_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[4. Blast Radius_5]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[5. Observability_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[6. Security_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[7. Communication_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[8. Service Control Commands_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[Emergency Stop (P1 Incidents Only)_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[If Something Goes Wrong_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[Immediate (0–15 min)_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[Invoke Before_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[Pause Before Testing (Copy-Paste Ready)_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[Post-Deployment Verification_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[Pre-Deployment Checklist_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[Resume After Testing (MANDATORY)_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[Role_101]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[SKILL_171]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[Short-Term (15 min – 24 hr)_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[Sign-Off_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[Skill Production Safety Checklist (PROD-SAFETY)_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
+- [[Blocked by default (private RFC1918 ranges)]] - image - docs/diagrams/images/diagram-05-network-topology.svg
+- [[DNS Filter]] - concept - docs/architecture/system-architecture.md
+- [[Egress Monitor]] - concept - docs/architecture/system-architecture.md
+- [[Gateway ManagementControl-Plane API (v1.3.0)]] - document - docs/api/api-reference.md
+- [[Ingest API (POST ingest)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
+- [[InspectionResult (data entity)]] - concept - docs/data/data-dictionary.md
+- [[MCP Proxy]] - concept - docs/architecture/system-architecture.md
+- [[MCP Server Integration Guide]] - document - docs/api/integration-guide.md
+- [[Op-Proxy (Credential Gateway)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
+- [[OpenClaw Integration Guide (v0.9.0)]] - document - docs/api/integration-guide.md
+- [[Proxy Layer_1]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
+- [[SecurityFinding (data entity)]] - concept - docs/data/data-dictionary.md
+- [[URLAnalysisResult (data entity)]] - concept - docs/data/data-dictionary.md
+- [[Web Proxy]] - concept - docs/architecture/system-architecture.md
+- [[egress-config.yml]] - code - docs/data/schema-documentation.md
+- [[gatewayingest_apimain.py]] - code - docs/api/api-reference.md
+- [[gatewaywebapi.py (Web control center)]] - code - docs/api/api-reference.md
+- [[http_proxy.py (HTTP CONNECT 8181, domain allowlist)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
+- [[mcp-config.yml]] - code - docs/data/schema-documentation.md
+- [[mcp_proxy.py (MCP tool call gate)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
+- [[web_proxy.py (domain allowlist engine)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,3 +38,14 @@ members: 21
 TABLE source_file, type FROM #community/Community_412
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 372]]
+- 1 edge to [[_COMMUNITY_Community 597]]
+- 1 edge to [[_COMMUNITY_Community 370]]
+- 1 edge to [[_COMMUNITY_Community 414]]
+
+## Top bridge nodes
+- [[Gateway ManagementControl-Plane API (v1.3.0)]] - degree 7, connects to 2 communities
+- [[Proxy Layer_1]] - degree 5, connects to 1 community
+- [[MCP Proxy]] - degree 4, connects to 1 community

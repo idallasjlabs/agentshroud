@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_auth.py"
 type: "rationale"
-community: "Community 99"
+community: "Ingest API & Approval Routes"
 location: "L80"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_99
+  - community/Ingest_API__Approval_Routes
 ---
 
 # Test rate limiter cleans up old requests
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_rate_limiter_window_cleanup()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_99
+#graphify/rationale #graphify/EXTRACTED #community/Ingest_API__Approval_Routes

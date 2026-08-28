@@ -1,14 +1,16 @@
 ---
 type: community
+cohesion: 1.00
 members: 1
 ---
 
 # Community 1758
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[SCRUM-154 — blocking response.read() froze the gateway event loop]] - concept - gateway/tests/test_llm_proxy_failover.py
+- [[i-devsecops SKILL (stub)]] - document - docker/config/hermes/skills/i-devsecops/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,14 +1,14 @@
 ---
 source_file: "gateway/security/rate_limit_guard.py"
 type: "code"
-community: "Community 1766"
+community: "Community 1855"
 location: "L108"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1766
+  - community/Community_1855
 ---
 
 # RateLimitGuard.check()
 
-#graphify/code #graphify/EXTRACTED #community/Community_1766
+#graphify/code #graphify/EXTRACTED #community/Community_1855

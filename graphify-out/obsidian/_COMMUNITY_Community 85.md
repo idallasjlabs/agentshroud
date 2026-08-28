@@ -1,47 +1,78 @@
 ---
 type: community
-members: 34
+cohesion: 0.04
+members: 63
 ---
 
 # Community 85
 
-**Members:** 34 nodes
+**Cohesion:** 0.04 - loosely connected
+**Members:** 63 nodes
 
 ## Members
-- [[.test_clean_when_installed_not_running()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_clean_when_installed_not_running()_1]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_get_fim_events()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_get_rootkit_events()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_level_to_severity()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_not_run_when_no_alert_dir()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_not_run_when_no_alert_dir()_1]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_parse_empty()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_parse_fim_event()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_parse_rootkit_event()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_returns_summary_for_empty_dir()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_returns_summary_for_empty_dir()_1]] - code - gateway/tests/test_scanner_integration.py
-- [[Any_65]] - code - gateway/security/wazuh_client.py
-- [[Filter alerts to file integrity monitoring events only.      Args         alert]] - rationale - gateway/security/wazuh_client.py
-- [[Filter alerts to rootkit detection events only.      Args         alerts List]] - rationale - gateway/security/wazuh_client.py
-- [[Generate a summary dict suitable for the health report.      Args         alert_1]] - rationale - gateway/security/wazuh_client.py
-- [[Map Wazuh alert level to severity string.      Args         level Wazuh alert]] - rationale - gateway/security/wazuh_client.py
-- [[Parse a single Wazuh alert.      Args         raw Raw Wazuh alert JSON.      R]] - rationale - gateway/security/wazuh_client.py
-- [[Path_20]] - code - gateway/security/wazuh_client.py
-- [[Read Wazuh alerts from the alert directory.      Args         alert_dir Direct]] - rationale - gateway/security/wazuh_client.py
-- [[Return latest Falco alert summary from the local alert directory.      CC-20 If]] - rationale - gateway/security/scanner_integration.py
-- [[Return latest Wazuh alert summary from the shared alert volume.      wazuh-agent]] - rationale - gateway/security/scanner_integration.py
-- [[TestGetFalcoSummary]] - code - gateway/tests/test_scanner_integration.py
-- [[TestGetWazuhSummary]] - code - gateway/tests/test_scanner_integration.py
-- [[TestWazuhParser]] - code - gateway/tests/test_security_toolchain.py
-- [[datetime_5]] - code - gateway/security/wazuh_client.py
-- [[generate_summary()_3]] - code - gateway/security/wazuh_client.py
-- [[get_falco_summary()]] - code - gateway/security/scanner_integration.py
-- [[get_fim_events()]] - code - gateway/security/wazuh_client.py
-- [[get_rootkit_events()]] - code - gateway/security/wazuh_client.py
-- [[get_wazuh_summary()]] - code - gateway/security/scanner_integration.py
-- [[level_to_severity()]] - code - gateway/security/wazuh_client.py
-- [[parse_alert()_1]] - code - gateway/security/wazuh_client.py
-- [[read_alerts()_1]] - code - gateway/security/wazuh_client.py
+- [[1Password credential isolation]] - rationale - docs/vault/00 - START HERE/System Overview.md
+- [[AgentShroud Security Perimeter]] - concept - docs/vault/00 - START HERE/System Overview.md
+- [[AgentShroud — System Overview]] - document - docs/vault/00 - START HERE/System Overview.md
+- [[AgentShroud — Vault Home]] - document - docs/vault/00 - START HERE/Home.md
+- [[Architecture Overview_3]] - document - docs/vault/01 - Architecture/Architecture Overview.md
+- [[Architecture Overview_2]] - document - docs/vault/01 - Architecture/Architecture Overview.md
+- [[Audit ledger (hash-verifiable chain)]] - rationale - docs/vault/00 - START HERE/System Overview.md
+- [[Boot Sequence (Numbered)]] - document - docs/vault/01 - Architecture/Startup Sequence.md
+- [[Bot Container (`agentshroud-bot`)]] - document - docs/vault/01 - Architecture/Architecture Overview.md
+- [[Common Issues_2]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Common Startup Failures]] - document - docs/vault/01 - Architecture/Startup Sequence.md
+- [[Components_2]] - document - docs/vault/00 - START HERE/System Overview.md
+- [[Configuration & Infrastructure]] - document - docs/vault/00 - START HERE/Home.md
+- [[Configuration Files_3]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Container Architecture_2]] - document - docs/vault/01 - Architecture/Architecture Overview.md
+- [[Data Flow]] - document - docs/vault/01 - Architecture/Data Flow.md
+- [[Diagrams]] - document - docs/vault/00 - START HERE/Home.md
+- [[Enforce mode by default]] - rationale - docs/vault/00 - START HERE/System Overview.md
+- [[Environment Variables (required)]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Fail-closed by default]] - rationale - docs/vault/00 - START HERE/System Overview.md
+- [[First-Boot Notes]] - document - docs/vault/01 - Architecture/Startup Sequence.md
+- [[Full System Diagram]] - document - docs/vault/01 - Architecture/Architecture Overview.md
+- [[Gateway Container (`agentshroud-gateway`)]] - document - docs/vault/01 - Architecture/Architecture Overview.md
+- [[Gateway Internal Layer Order]] - document - docs/vault/01 - Architecture/Architecture Overview.md
+- [[Health Checks]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Home]] - document - docs/vault/00 - START HERE/Home.md
+- [[Human-in-the-loop approval queue]] - rationale - docs/vault/00 - START HERE/System Overview.md
+- [[Key Design Decisions]] - document - docs/vault/00 - START HERE/System Overview.md
+- [[Key Ports]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Kill Switch_1]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Least privilege MCP permissions]] - rationale - docs/vault/00 - START HERE/System Overview.md
+- [[Logs_1]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Module Index]] - document - docs/vault/00 - START HERE/Home.md
+- [[Navigate This Vault]] - document - docs/vault/00 - START HERE/Home.md
+- [[Network Topology_1]] - document - docs/vault/01 - Architecture/Architecture Overview.md
+- [[Operations]] - document - docs/vault/00 - START HERE/Home.md
+- [[Overview_20]] - document - docs/vault/01 - Architecture/Startup Sequence.md
+- [[PII redacted before forwarding]] - rationale - docs/vault/00 - START HERE/System Overview.md
+- [[Quick Reference — AgentShroud]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Quick Reference_9]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Related Notes]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Related Notes_1]] - document - docs/vault/00 - START HERE/System Overview.md
+- [[Related Notes_2]] - document - docs/vault/01 - Architecture/Architecture Overview.md
+- [[Related Notes_5]] - document - docs/vault/01 - Architecture/Startup Sequence.md
+- [[Security Layers (in order)]] - document - docs/vault/00 - START HERE/System Overview.md
+- [[Security Mode Toggle]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Shutdown & Recovery]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
+- [[Stage 1 Gateway Container Startup]] - document - docs/vault/01 - Architecture/Startup Sequence.md
+- [[Stage 2 Gateway Application Initialization (main.py lifespan)]] - document - docs/vault/01 - Architecture/Startup Sequence.md
+- [[Stage 3 Health Check]] - document - docs/vault/01 - Architecture/Startup Sequence.md
+- [[Stage 4 Bot Container Startup]] - document - docs/vault/01 - Architecture/Startup Sequence.md
+- [[Stage 5 Fully Operational]] - document - docs/vault/01 - Architecture/Startup Sequence.md
+- [[Start  Stop]] - document - docs/vault/00 - START HERE/Quick Reference.md
+- [[Startup Indicators]] - document - docs/vault/01 - Architecture/Startup Sequence.md
+- [[Startup Sequence_1]] - document - docs/vault/01 - Architecture/Startup Sequence.md
+- [[Startup Sequence]] - document - docs/vault/01 - Architecture/Startup Sequence.md
+- [[Summary_21]] - document - docs/vault/01 - Architecture/Architecture Overview.md
+- [[System Overview]] - document - docs/vault/00 - START HERE/System Overview.md
+- [[What It Is]] - document - docs/vault/00 - START HERE/System Overview.md
+- [[Who Depends On It]] - document - docs/vault/00 - START HERE/System Overview.md
+- [[Why It Exists]] - document - docs/vault/00 - START HERE/System Overview.md
+- [[ledger.py_1]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
+- [[main.py_3]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -51,19 +82,26 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 14 edges to [[_COMMUNITY_Community 162]]
-- 8 edges to [[_COMMUNITY_Community 59]]
-- 8 edges to [[_COMMUNITY_Community 123]]
-- 3 edges to [[_COMMUNITY_Community 261]]
-- 2 edges to [[_COMMUNITY_Community 125]]
-- 1 edge to [[_COMMUNITY_Community 6]]
-- 1 edge to [[_COMMUNITY_Community 14]]
-- 1 edge to [[_COMMUNITY_Community 512]]
-- 1 edge to [[_COMMUNITY_Community 1002]]
+- 5 edges to [[_COMMUNITY_PII Sanitizer & E2E Tests]]
+- 4 edges to [[_COMMUNITY_Community 23]]
+- 4 edges to [[_COMMUNITY_Community 26]]
+- 3 edges to [[_COMMUNITY_Middleware & Lifespan]]
+- 3 edges to [[_COMMUNITY_Community 78]]
+- 1 edge to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
+- 1 edge to [[_COMMUNITY_Community 32]]
+- 1 edge to [[_COMMUNITY_Progressive Trust]]
+- 1 edge to [[_COMMUNITY_Community 117]]
+- 1 edge to [[_COMMUNITY_Community 593]]
+- 1 edge to [[_COMMUNITY_Ingest API & Approval Routes]]
+- 1 edge to [[_COMMUNITY_Community 21]]
+- 1 edge to [[_COMMUNITY_Community 339]]
+- 1 edge to [[_COMMUNITY_Community 615]]
+- 1 edge to [[_COMMUNITY_Community 243]]
+- 1 edge to [[_COMMUNITY_Community 379]]
 
 ## Top bridge nodes
-- [[generate_summary()_3]] - degree 13, connects to 5 communities
-- [[get_wazuh_summary()]] - degree 14, connects to 4 communities
-- [[get_falco_summary()]] - degree 13, connects to 3 communities
-- [[read_alerts()_1]] - degree 9, connects to 2 communities
-- [[TestWazuhParser]] - degree 8, connects to 2 communities
+- [[main.py_3]] - degree 18, connects to 11 communities
+- [[Data Flow]] - degree 11, connects to 5 communities
+- [[Startup Sequence]] - degree 10, connects to 5 communities
+- [[ledger.py_1]] - degree 7, connects to 3 communities
+- [[Shutdown & Recovery]] - degree 3, connects to 1 community

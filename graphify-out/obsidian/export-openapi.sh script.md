@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/export-openapi.sh"
 type: "code"
-community: "Community 1511"
+community: "Community 1527"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1511
+  - community/Community_1527
 ---
 
 # export-openapi.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[export-openapi.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1511
+#graphify/code #graphify/EXTRACTED #community/Community_1527

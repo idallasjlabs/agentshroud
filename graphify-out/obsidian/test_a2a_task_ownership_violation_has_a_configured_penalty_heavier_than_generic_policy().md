@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_trust_scoring.py"
 type: "code"
-community: "Community 104"
+community: "Community 81"
 location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_104
+  - community/Community_81
 ---
 
 # test_a2a_task_ownership_violation_has_a_configured_penalty_heavier_than_generic_policy()
@@ -15,4 +15,4 @@ tags:
 - [[ProgressiveTrustConfig]] - `calls` [EXTRACTED]
 - [[test_a2a_trust_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_104
+#graphify/code #graphify/EXTRACTED #community/Community_81

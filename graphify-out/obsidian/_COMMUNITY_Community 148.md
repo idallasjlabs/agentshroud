@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.07
 members: 43
 ---
 
 # Community 148
 
+**Cohesion:** 0.07 - loosely connected
 **Members:** 43 nodes
 
 ## Members
@@ -60,8 +62,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 9]]
-- 1 edge to [[_COMMUNITY_Community 4]]
+- 2 edges to [[_COMMUNITY_Ingest API & Approval Routes]]
+- 1 edge to [[_COMMUNITY_Adversarial Injection Guards]]
 
 ## Top bridge nodes
 - [[UpdateReplayBuffer]] - degree 17, connects to 2 communities

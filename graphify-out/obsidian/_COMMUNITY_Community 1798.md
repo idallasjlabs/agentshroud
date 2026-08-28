@@ -1,14 +1,16 @@
 ---
 type: community
+cohesion: 1.00
 members: 1
 ---
 
 # Community 1798
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[__init__.py_13]] - code - gateway/tests/__init__.py
+- [[Obsidian core-plugins.json]] - document - docs/vault/.obsidian/core-plugins.json
 
 ## Live Query (requires Dataview plugin)
 

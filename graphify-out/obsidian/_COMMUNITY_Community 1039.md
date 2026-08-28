@@ -1,21 +1,22 @@
 ---
 type: community
-members: 8
+cohesion: 0.29
+members: 7
 ---
 
 # Community 1039
 
-**Members:** 8 nodes
+**Cohesion:** 0.29 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[.test_default_deny()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_exception_fails_secure()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_no_session_manager_denied()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_other_user_under_users_base_denied()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_own_workspace_allowed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_owner_bypass()_3]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_users_heuristic_denied()]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestIsPathAllowedForUser]] - code - gateway/tests/test_middleware_coverage.py
+- [[Phase 1 — Foundation (Bot Container + Telegram, Gateway API + Ledger)]] - concept - docs/diagrams/images/diagram-23-roadmap-gantt.svg
+- [[Phase 2 — Security Core (HMAC Auth + PII Sanitizer, HTTP CONNECT Proxy, Approval Queue)]] - concept - docs/diagrams/images/diagram-23-roadmap-gantt.svg
+- [[Phase 3 — Credential Isolation (Op-Proxy, 1Password service account)]] - concept - docs/diagrams/images/diagram-23-roadmap-gantt.svg
+- [[Phase 4 — Channels (iMessage MCP, iCloud Email, MCP Proxy Inspector)]] - concept - docs/diagrams/images/diagram-23-roadmap-gantt.svg
+- [[Phase 5 — Stability (context limit fix, cascading retry + startup)]] - concept - docs/diagrams/images/diagram-23-roadmap-gantt.svg
+- [[Phase 6 — Observability (Prometheus + Grafana, log aggregation)]] - concept - docs/diagrams/images/diagram-23-roadmap-gantt.svg
+- [[Phase 7 — Enterprise Hardening (multi-tenant isolation, IEC 62443 policy docs, external contributor access)]] - concept - docs/diagrams/images/diagram-23-roadmap-gantt.svg
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,12 +24,3 @@ members: 8
 TABLE source_file, type FROM #community/Community_1039
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 6]]
-- 1 edge to [[_COMMUNITY_Community 1]]
-- 1 edge to [[_COMMUNITY_Community 174]]
-- 1 edge to [[_COMMUNITY_Community 426]]
-
-## Top bridge nodes
-- [[TestIsPathAllowedForUser]] - degree 12, connects to 4 communities

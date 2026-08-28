@@ -1,23 +1,30 @@
 ---
 type: community
-members: 10
+cohesion: 0.13
+members: 15
 ---
 
 # Community 610
 
-**Members:** 10 nodes
+**Cohesion:** 0.13 - loosely connected
+**Members:** 15 nodes
 
 ## Members
-- [[1.4 Implementation Plan]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[Implementation Plan]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Phase 1 Pi Preparation (Prerequisites)]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Phase 2 Node Pairing]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Phase 3 Security Configuration]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Phase 4 Skill Development]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Phase 5 Distributed Workflows]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Workflow 1 Automated Testing on Pi]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Workflow 2 Continuous Development]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Workflow 3 IoT + AI Integration]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Check A — Substantive change on the losing side_2]] - document - docker/config/openclaw/skills/i-ab/SKILL.md
+- [[Check B — Tied to a real ticket_2]] - document - docker/config/openclaw/skills/i-ab/SKILL.md
+- [[Check C — Still broken at HEAD (not self-healed)_2]] - document - docker/config/openclaw/skills/i-ab/SKILL.md
+- [[Guardrails_11]] - document - docker/config/openclaw/skills/i-ab/SKILL.md
+- [[Invocation Forms_2]] - document - docker/config/openclaw/skills/i-ab/SKILL.md
+- [[Jira  PR Comment Format_2]] - document - docker/config/openclaw/skills/i-ab/SKILL.md
+- [[Role_76]] - document - docker/config/openclaw/skills/i-ab/SKILL.md
+- [[SKILL_128]] - document - docker/config/openclaw/skills/i-ab/SKILL.md
+- [[Skill Audit Branch (AB) — Merge Regression Detection_2]] - document - docker/config/openclaw/skills/i-ab/SKILL.md
+- [[Step 1 — Verify the script exists_2]] - document - docker/config/openclaw/skills/i-ab/SKILL.md
+- [[Step 2 — Determine the target_2]] - document - docker/config/openclaw/skills/i-ab/SKILL.md
+- [[Step 3 — Run the audit script_2]] - document - docker/config/openclaw/skills/i-ab/SKILL.md
+- [[Step 4 — Triage each finding_2]] - document - docker/config/openclaw/skills/i-ab/SKILL.md
+- [[Step 5 — Classify findings_2]] - document - docker/config/openclaw/skills/i-ab/SKILL.md
+- [[Step 6 — Output the report_2]] - document - docker/config/openclaw/skills/i-ab/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,11 +32,3 @@ members: 10
 TABLE source_file, type FROM #community/Community_610
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 432]]
-- 1 edge to [[_COMMUNITY_Community 1041]]
-
-## Top bridge nodes
-- [[1.4 Implementation Plan]] - degree 7, connects to 2 communities
-- [[Implementation Plan]] - degree 6, connects to 1 community

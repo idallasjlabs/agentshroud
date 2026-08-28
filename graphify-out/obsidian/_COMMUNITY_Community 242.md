@@ -1,44 +1,47 @@
 ---
 type: community
-members: 31
+cohesion: 0.10
+members: 32
 ---
 
 # Community 242
 
-**Members:** 31 nodes
+**Cohesion:** 0.10 - loosely connected
+**Members:** 32 nodes
 
 ## Members
-- [[.__init__()_199]] - code - scripts/migrate-cve-registry-ghsa.py
-- [[.confident()]] - code - scripts/migrate-cve-registry-ghsa.py
-- [[Any_75]] - code - scripts/migrate-cve-registry-ghsa.py
-- [[Compute the per-entry rewrite plan and manual-review buckets.      Returns]] - rationale - scripts/migrate-cve-registry-ghsa.py
-- [[Counter]] - code - scripts/migrate-cve-registry-ghsa.py
-- [[Fetch every published GitHub Security Advisory for repo (cursor-paginated).]] - rationale - scripts/migrate-cve-registry-ghsa.py
-- [[Import the current OpenClaw + Hermes registry lists (in file order).]] - rationale - scripts/migrate-cve-registry-ghsa.py
-- [[Lowercase alphanumericunderscore tokens, minus stopwords and short noise.]] - rationale - scripts/migrate-cve-registry-ghsa.py
-- [[Match a single registry entry to at most one advisory, honestly.      Returns]] - rationale - scripts/migrate-cve-registry-ghsa.py
-- [[MatchResult]] - code - scripts/migrate-cve-registry-ghsa.py
-- [[Namespace]] - code - scripts/migrate-cve-registry-ghsa.py
-- [[Outcome of matching one registry entry to the advisory feed.]] - rationale - scripts/migrate-cve-registry-ghsa.py
-- [[Path_46]] - code - scripts/migrate-cve-registry-ghsa.py
-- [[Render the manual-review markdown listing every unmatched entry.]] - rationale - scripts/migrate-cve-registry-ghsa.py
-- [[Return per-agent advisory lists from snapshot or live GitHub.]] - rationale - scripts/migrate-cve-registry-ghsa.py
-- [[Rewrite every ``id old`` line and set ghsa_idcve_id right after it.]] - rationale - scripts/migrate-cve-registry-ghsa.py
-- [[_advisory_patched_versions()]] - code - scripts/migrate-cve-registry-ghsa.py
-- [[_advisory_text_tokens()]] - code - scripts/migrate-cve-registry-ghsa.py
-- [[_py_literal()]] - code - scripts/migrate-cve-registry-ghsa.py
-- [[_tokens()]] - code - scripts/migrate-cve-registry-ghsa.py
-- [[build_id_plan()]] - code - scripts/migrate-cve-registry-ghsa.py
-- [[compute_stats()]] - code - scripts/migrate-cve-registry-ghsa.py
-- [[fetch_advisories()]] - code - scripts/migrate-cve-registry-ghsa.py
-- [[gather_advisories()]] - code - scripts/migrate-cve-registry-ghsa.py
-- [[load_registry()]] - code - scripts/migrate-cve-registry-ghsa.py
-- [[load_snapshot()]] - code - scripts/migrate-cve-registry-ghsa.py
-- [[main()_23]] - code - scripts/migrate-cve-registry-ghsa.py
-- [[match_entry()]] - code - scripts/migrate-cve-registry-ghsa.py
-- [[migrate-cve-registry-ghsa.py]] - code - scripts/migrate-cve-registry-ghsa.py
-- [[render_manual_review()]] - code - scripts/migrate-cve-registry-ghsa.py
-- [[rewrite_registry_text()]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[.test_execute_nonzero_exit()]] - code - gateway/tests/test_ssh_proxy.py
+- [[.test_execute_success()]] - code - gateway/tests/test_ssh_proxy.py
+- [[.test_execute_timeout()]] - code - gateway/tests/test_ssh_proxy.py
+- [[.test_execute_unknown_host()]] - code - gateway/tests/test_ssh_proxy.py
+- [[.test_is_auto_approved_no()]] - code - gateway/tests/test_ssh_proxy.py
+- [[.test_is_auto_approved_unknown_host()]] - code - gateway/tests/test_ssh_proxy.py
+- [[.test_is_auto_approved_yes()]] - code - gateway/tests/test_ssh_proxy.py
+- [[.test_validate_auto_approve_exact_only()]] - code - gateway/tests/test_ssh_proxy.py
+- [[.test_validate_command_allowed()]] - code - gateway/tests/test_ssh_proxy.py
+- [[.test_validate_command_backslash_n_injection()]] - code - gateway/tests/test_ssh_proxy.py
+- [[.test_validate_command_carriage_return_injection()]] - code - gateway/tests/test_ssh_proxy.py
+- [[.test_validate_command_denied()]] - code - gateway/tests/test_ssh_proxy.py
+- [[.test_validate_command_dollar_brace_injection()]] - code - gateway/tests/test_ssh_proxy.py
+- [[.test_validate_command_dollar_var_injection()]] - code - gateway/tests/test_ssh_proxy.py
+- [[.test_validate_command_global_denied()]] - code - gateway/tests/test_ssh_proxy.py
+- [[.test_validate_command_injection_blocked_and()]] - code - gateway/tests/test_ssh_proxy.py
+- [[.test_validate_command_injection_blocked_backticks()]] - code - gateway/tests/test_ssh_proxy.py
+- [[.test_validate_command_injection_blocked_dollar_paren()]] - code - gateway/tests/test_ssh_proxy.py
+- [[.test_validate_command_injection_blocked_or()]] - code - gateway/tests/test_ssh_proxy.py
+- [[.test_validate_command_injection_blocked_pipe()]] - code - gateway/tests/test_ssh_proxy.py
+- [[.test_validate_command_injection_blocked_semicolon()]] - code - gateway/tests/test_ssh_proxy.py
+- [[.test_validate_command_newline_injection()]] - code - gateway/tests/test_ssh_proxy.py
+- [[.test_validate_command_not_in_allowlist()]] - code - gateway/tests/test_ssh_proxy.py
+- [[.test_validate_command_unknown_host()]] - code - gateway/tests/test_ssh_proxy.py
+- [[.test_validate_empty_command()]] - code - gateway/tests/test_ssh_proxy.py
+- [[Auto-approve must be exact match, not prefix (Finding 3)]] - rationale - gateway/tests/test_ssh_proxy.py
+- [[SSHProxy_1]] - code - gateway/tests/test_ssh_proxy.py
+- [[Test newline-based injection attempts (Finding 11)]] - rationale - gateway/tests/test_ssh_proxy.py
+- [[TestExecute]] - code - gateway/tests/test_ssh_proxy.py
+- [[TestInjectionNewline]] - code - gateway/tests/test_ssh_proxy.py
+- [[TestIsAutoApproved]] - code - gateway/tests/test_ssh_proxy.py
+- [[TestValidateCommand]] - code - gateway/tests/test_ssh_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -48,10 +51,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 990]]
-- 1 edge to [[_COMMUNITY_Community 33]]
-- 1 edge to [[_COMMUNITY_Community 19]]
+- 20 edges to [[_COMMUNITY_Community 15]]
+- 5 edges to [[_COMMUNITY_Community 64]]
+- 3 edges to [[_COMMUNITY_Community 24]]
 
 ## Top bridge nodes
-- [[Counter]] - degree 4, connects to 2 communities
-- [[migrate-cve-registry-ghsa.py]] - degree 16, connects to 1 community
+- [[SSHProxy_1]] - degree 30, connects to 2 communities
+- [[TestValidateCommand]] - degree 17, connects to 2 communities
+- [[TestInjectionNewline]] - degree 12, connects to 2 communities
+- [[TestExecute]] - degree 9, connects to 2 communities
+- [[TestIsAutoApproved]] - degree 8, connects to 2 communities

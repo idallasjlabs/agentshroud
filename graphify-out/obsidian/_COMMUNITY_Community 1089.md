@@ -1,19 +1,21 @@
 ---
 type: community
+cohesion: 0.33
 members: 6
 ---
 
 # Community 1089
 
+**Cohesion:** 0.33 - loosely connected
 **Members:** 6 nodes
 
 ## Members
-- [[appendLog()_2]] - code - docker/config/openclaw/skills/i-browser/browse.js
-- [[browse.js_2]] - code - docker/config/openclaw/skills/i-browser/browse.js
-- [[browserFetch()_2]] - code - docker/config/openclaw/skills/i-browser/browse.js
-- [[fs_3]] - code - docker/config/openclaw/skills/i-browser/browse.js
-- [[path_3]] - code - docker/config/openclaw/skills/i-browser/browse.js
-- [[{ chromium }_2]] - code - docker/config/openclaw/skills/i-browser/browse.js
+- [[AGENTSHROUD standard character mark]] - concept - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[Class 42 — Software as a Service (SaaS)]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[Class 9 — Computer Software]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[Class 9 — Downloadable Computer Software]] - concept - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[Filing Basis (Section 1(a) Use in Commerce  1(b) Intent to Use)]] - concept - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[SECTION 3 GOODS AND SERVICES]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,3 +23,9 @@ members: 6
 TABLE source_file, type FROM #community/Community_1089
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 661]]
+
+## Top bridge nodes
+- [[SECTION 3 GOODS AND SERVICES]] - degree 3, connects to 1 community

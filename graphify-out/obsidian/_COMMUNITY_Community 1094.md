@@ -1,19 +1,21 @@
 ---
 type: community
+cohesion: 0.33
 members: 6
 ---
 
 # Community 1094
 
+**Cohesion:** 0.33 - loosely connected
 **Members:** 6 nodes
 
 ## Members
-- [[button_cb_t]] - code - firmware/voice-terminal/test/test_playback_state/stubs/iot_button.h
-- [[button_event_t]] - code - firmware/voice-terminal/test/test_playback_state/stubs/iot_button.h
-- [[button_handle_t_1]] - code - firmware/voice-terminal/test/test_playback_state/stubs/iot_button.h
-- [[iot_button.h]] - code - firmware/voice-terminal/test/test_playback_state/stubs/iot_button.h
-- [[iot_button_delete()]] - code - firmware/voice-terminal/test/test_playback_state/stubs/iot_button.h
-- [[iot_button_register_cb()]] - code - firmware/voice-terminal/test/test_playback_state/stubs/iot_button.h
+- [[Agent Trust Levels (UNTRUSTED, BASIC, STANDARD, TRUSTED, ADMIN)]] - concept - docs/flows/state-diagrams.md
+- [[AgentShroud State Diagrams (doc)]] - document - docs/flows/state-diagrams.md
+- [[Approval Queue States (PENDING, APPROVED, DENIED, TIMED_OUT, EXECUTED, ARCHIVED)]] - concept - docs/flows/state-diagrams.md
+- [[Diagram 16 State — Approval Queue]] - image - docs/diagrams/images/diagram-16-state-approval-queue.svg
+- [[Gateway Operational Modes (MONITOR, ENFORCE, LOCKDOWN, EMERGENCY, RECOVERY)]] - concept - docs/flows/state-diagrams.md
+- [[Kill Switch States (ACTIVE, SOFT_KILL, HARD_KILL, PANIC, RECOVERY)]] - concept - docs/flows/state-diagrams.md
 
 ## Live Query (requires Dataview plugin)
 

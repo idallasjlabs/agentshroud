@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.29
 members: 12
 ---
 
 # Community 755
 
+**Cohesion:** 0.29 - loosely connected
 **Members:** 12 nodes
 
 ## Members
@@ -30,7 +32,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_Community 126]]
-- 1 edge to [[_COMMUNITY_Community 134]]
+- 1 edge to [[_COMMUNITY_Community 49]]
 
 ## Top bridge nodes
 - [[egress_retry.py]] - degree 7, connects to 2 communities

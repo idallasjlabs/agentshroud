@@ -1,12 +1,12 @@
 ---
 source_file: "docs/README.md"
 type: "document"
-community: "Community 218"
+community: "Community 221"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_218
+  - community/Community_221
 ---
 
 # 📚 Documentation Structure
@@ -19,4 +19,4 @@ tags:
 - [[security(.security) - Security Documentation]] - `contains` [EXTRACTED]
 - [[setup(.setup) - Setup & Configuration Guides]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_218
+#graphify/document #graphify/EXTRACTED #community/Community_221

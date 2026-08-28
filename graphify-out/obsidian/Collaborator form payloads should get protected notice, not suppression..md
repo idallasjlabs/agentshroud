@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Community 3"
+community: "Community 1598"
 location: "L2056"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_3
+  - community/Community_1598
 ---
 
 # Collaborator form payloads should get protected notice, not suppression.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_urlencoded_collaborator_no_reply_gets_protected_notice()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_3
+#graphify/rationale #graphify/EXTRACTED #community/Community_1598

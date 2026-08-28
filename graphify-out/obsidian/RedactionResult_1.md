@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "code"
-community: "Community 870"
+community: "PII Sanitizer & E2E Tests"
 location: "L171"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_870
+  - community/PII_Sanitizer__E2E_Tests
 ---
 
 # RedactionResult
@@ -19,4 +19,4 @@ tags:
 - [[RedactionDetail]] - `uses` [INFERRED]
 - [[RedactionResult]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_870
+#graphify/code #graphify/INFERRED #community/PII_Sanitizer__E2E_Tests

@@ -1,26 +1,28 @@
 ---
 type: community
+cohesion: 0.19
 members: 13
 ---
 
 # Community 737
 
+**Cohesion:** 0.19 - loosely connected
 **Members:** 13 nodes
 
 ## Members
-- [[Add a comment to a card]] - document - skills/openclaw/trello/SKILL.md
-- [[Archive a card]] - document - skills/openclaw/trello/SKILL.md
-- [[Create a card]] - document - skills/openclaw/trello/SKILL.md
-- [[Examples_1]] - document - skills/openclaw/trello/SKILL.md
-- [[List boards]] - document - skills/openclaw/trello/SKILL.md
-- [[List cards in a list]] - document - skills/openclaw/trello/SKILL.md
-- [[List lists in a board]] - document - skills/openclaw/trello/SKILL.md
-- [[Move a card to another list]] - document - skills/openclaw/trello/SKILL.md
-- [[Notes_8]] - document - skills/openclaw/trello/SKILL.md
-- [[SKILL_235]] - document - skills/openclaw/trello/SKILL.md
-- [[Setup_8]] - document - skills/openclaw/trello/SKILL.md
-- [[Trello Skill]] - document - skills/openclaw/trello/SKILL.md
-- [[Usage_131]] - document - skills/openclaw/trello/SKILL.md
+- [[Emit a structured per-transcription latency record for the STT AB.      Tags ea]] - rationale - voice_gateway/stt.py
+- [[Read WHISPER_MODEL_SIZE from the environment and validate it (AB knob).]] - rationale - voice_gateway/stt.py
+- [[Release the loaded model (for testing  memory pressure).]] - rationale - voice_gateway/stt.py
+- [[Resolve a requested Whisper model size, with a safe default fallback.      Pure]] - rationale - voice_gateway/stt.py
+- [[Transcribe raw 16-bit signed PCM mono audio to text.      Args         pcm_byte]] - rationale - voice_gateway/stt.py
+- [[_get_model()]] - code - voice_gateway/stt.py
+- [[_resolve_model_size()]] - code - voice_gateway/stt.py
+- [[record_transcription_latency()]] - code - voice_gateway/stt.py
+- [[record_transcription_latency() — RTFlatency structured log]] - code - voice_gateway/stt.py
+- [[reset_model()]] - code - voice_gateway/stt.py
+- [[select_model_size()]] - code - voice_gateway/stt.py
+- [[stt.py]] - code - voice_gateway/stt.py
+- [[transcribe()]] - code - voice_gateway/stt.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,7 +32,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 400]]
+- 2 edges to [[_COMMUNITY_Community 114]]
+- 1 edge to [[_COMMUNITY_Community 35]]
+- 1 edge to [[_COMMUNITY_Community 267]]
 
 ## Top bridge nodes
-- [[SKILL_235]] - degree 2, connects to 1 community
+- [[stt.py]] - degree 9, connects to 3 communities
+- [[transcribe()]] - degree 6, connects to 1 community

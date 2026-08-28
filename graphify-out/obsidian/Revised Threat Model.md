@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md"
 type: "document"
-community: "Community 284"
+community: "Community 285"
 location: "L161"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_284
+  - community/Community_285
 ---
 
 # Revised Threat Model
@@ -18,4 +18,4 @@ tags:
 - [[Scenario 3 Prompt Injection → System Compromise]] - `contains` [EXTRACTED]
 - [[Scenario 4 Supply Chain Attack (Malicious Skill)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_284
+#graphify/document #graphify/EXTRACTED #community/Community_285

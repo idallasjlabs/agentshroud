@@ -1,12 +1,12 @@
 ---
 source_file: "docker/README.md"
 type: "document"
-community: "Community 190"
+community: "Community 186"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_190
+  - community/Community_186
 ---
 
 # AgentShroud Docker Configuration
@@ -18,7 +18,6 @@ tags:
 - [[Development_1]] - `contains` [EXTRACTED]
 - [[Files]] - `contains` [EXTRACTED]
 - [[MFA for High-Risk Approvals — IEC 62443 FR1 (SCRUM-93)]] - `contains` [EXTRACTED]
-- [[MFA for High-Risk Approvals — IEC 62443 FR1 · SCRUM-93]] - `contains` [EXTRACTED]
 - [[Multi-Bot Shared Report Store (SCRUM-79)]] - `contains` [EXTRACTED]
 - [[Network DMZ — IEC 62443 FR5 (Restricted Data Flow) · SCRUM-93]] - `contains` [EXTRACTED]
 - [[Next Steps (Phase 4+)]] - `contains` [EXTRACTED]
@@ -29,7 +28,7 @@ tags:
 - [[SOC Per-Module Enforcement Heat-Map (SCRUM-80)]] - `contains` [EXTRACTED]
 - [[Security Features (Deferred to Phase 5+)]] - `contains` [EXTRACTED]
 - [[Startup Warnings Reference]] - `contains` [EXTRACTED]
-- [[Troubleshooting_6]] - `contains` [EXTRACTED]
+- [[Troubleshooting_5]] - `contains` [EXTRACTED]
 - [[Usage_40]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_190
+#graphify/document #graphify/EXTRACTED #community/Community_186

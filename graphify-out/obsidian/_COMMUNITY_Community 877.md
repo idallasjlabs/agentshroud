@@ -1,23 +1,24 @@
 ---
 type: community
-members: 10
+cohesion: 0.25
+members: 9
 ---
 
 # Community 877
 
-**Members:** 10 nodes
+**Cohesion:** 0.25 - loosely connected
+**Members:** 9 nodes
 
 ## Members
-- [[._scan_for_canary()]] - code - gateway/security/output_canary.py
-- [[.check_response()]] - code - gateway/security/output_canary.py
-- [[.get_status()_1]] - code - gateway/security/output_canary.py
-- [[Any_53]] - code - gateway/security/output_canary.py
-- [[CanaryResult_2]] - code - gateway/security/output_canary.py
-- [[Check if response contains the session's canary (prompt leakage detected).]] - rationale - gateway/security/output_canary.py
-- [[Result of checking a response for canary presence.]] - rationale - gateway/security/output_canary.py
-- [[Return canary status for dashboard.          Args             session_id Sessi]] - rationale - gateway/security/output_canary.py
-- [[Scan response text for a specific canary.          Args             session_id]] - rationale - gateway/security/output_canary.py
-- [[output_canary.py]] - code - gateway/security/output_canary.py
+- [[2. Atlassian MCP Authentication Reset]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[3. AWS API MCP Authentication Reset]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[Authentication Reset Procedures]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[If Using SSO]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[Manual Re-authentication]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[Option A Default AWS Profile]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[Option B Named Profile]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[Verify Authentication]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[When Authentication Expires]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,11 +28,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 6]]
-- 1 edge to [[_COMMUNITY_Community 132]]
+- 1 edge to [[_COMMUNITY_Community 788]]
+- 1 edge to [[_COMMUNITY_Community 876]]
 
 ## Top bridge nodes
-- [[output_canary.py]] - degree 3, connects to 2 communities
-- [[._scan_for_canary()]] - degree 5, connects to 1 community
-- [[.check_response()]] - degree 4, connects to 1 community
-- [[.get_status()_1]] - degree 3, connects to 1 community
+- [[Authentication Reset Procedures]] - degree 4, connects to 2 communities

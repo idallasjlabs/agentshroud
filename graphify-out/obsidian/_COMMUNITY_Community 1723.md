@@ -1,14 +1,16 @@
 ---
 type: community
+cohesion: 1.00
 members: 1
 ---
 
 # Community 1723
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[AgentShroud Presentation Content Slide Template]] - image - branding/presentation/content-slide-template-1920x1080.png
+- [[esp_log.h_1]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/esp_log.h
 
 ## Live Query (requires Dataview plugin)
 

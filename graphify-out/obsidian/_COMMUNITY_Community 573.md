@@ -1,28 +1,31 @@
 ---
 type: community
-members: 15
+cohesion: 0.12
+members: 16
 ---
 
 # Community 573
 
-**Members:** 15 nodes
+**Cohesion:** 0.12 - loosely connected
+**Members:** 16 nodes
 
 ## Members
-- [[Combination with Other Settings]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
-- [[Description_7]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
-- [[Description_8]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
-- [[Effect]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
-- [[OPENCLAW_DISABLE_HOST_FILESYSTEM_1]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
-- [[OPENCLAW_DISABLE_HOST_FILESYSTEM]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
-- [[OPENCLAW_SANDBOX_MODE_1]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
-- [[OPENCLAW_SANDBOX_MODE]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
-- [[Production Setting]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
-- [[Related Notes_35]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
-- [[Related Notes_36]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
-- [[Set In_3]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
-- [[Set In_4]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
-- [[Value_4]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
-- [[Values_4]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
+- [[02-human-in-the-loop]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Constraints_5]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Evidence_2]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Problem_5]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Remediation_3]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Root Cause_4]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Severity_5]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Step 1 Define MCP tool risk tiers]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Step 2 Configure approval requirements per tier]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Step 3 Wire MCP Proxy to Approval Queue]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Step 4 Set Approval Queue to enforce mode]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Step 5 Add approval UI to the control center dashboard]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Step 6 Add Telegram admin notification for critical-tier tools]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Step 7 Return clear error messages to the agent]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Verification_4]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Wire the Approval Queue to enforce mode for high-risk tool calls]] - document - docs/planning/redteam/02-human-in-the-loop.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,11 +33,3 @@ members: 15
 TABLE source_file, type FROM #community/Community_573
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 14]]
-- 1 edge to [[_COMMUNITY_Community 251]]
-
-## Top bridge nodes
-- [[OPENCLAW_SANDBOX_MODE]] - degree 4, connects to 2 communities
-- [[OPENCLAW_DISABLE_HOST_FILESYSTEM]] - degree 3, connects to 1 community

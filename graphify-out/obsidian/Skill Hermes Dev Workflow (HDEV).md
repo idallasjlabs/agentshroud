@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-hdev/SKILL.md"
 type: "document"
-community: "Community 288"
+community: "Community 291"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_288
+  - community/Community_291
 ---
 
 # Skill: Hermes Dev Workflow (HDEV)
@@ -22,4 +22,4 @@ tags:
 - [[SKILL_23]] - `contains` [EXTRACTED]
 - [[Tools you have for this workflow]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_288
+#graphify/document #graphify/EXTRACTED #community/Community_291

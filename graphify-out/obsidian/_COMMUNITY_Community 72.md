@@ -1,75 +1,83 @@
 ---
 type: community
-members: 62
+cohesion: 0.05
+members: 68
 ---
 
 # Community 72
 
-**Members:** 62 nodes
+**Cohesion:** 0.05 - loosely connected
+**Members:** 68 nodes
 
 ## Members
-- [[.test_attachments_scanned()]] - code - gateway/tests/test_slack_proxy.py
-- [[.test_blocks_scanned_even_when_text_present()]] - code - gateway/tests/test_slack_proxy.py
-- [[.test_chat_postmessage_content_scanned()]] - code - gateway/tests/test_slack_proxy.py
-- [[.test_chat_update_content_scanned()]] - code - gateway/tests/test_slack_proxy.py
-- [[.test_connections_open_missing_url_passthrough()]] - code - gateway/tests/test_slack_proxy.py
-- [[.test_connections_open_rewrites_url()]] - code - gateway/tests/test_slack_proxy.py
-- [[.test_connections_open_skips_content_pipeline()]] - code - gateway/tests/test_slack_proxy.py
-- [[.test_connections_open_slack_error_passthrough()]] - code - gateway/tests/test_slack_proxy.py
-- [[.test_consume_relay_token_one_time()]] - code - gateway/tests/test_slack_proxy.py
-- [[.test_consume_relay_token_unknown()]] - code - gateway/tests/test_slack_proxy.py
-- [[.test_each_reconnect_issues_unique_token()]] - code - gateway/tests/test_slack_proxy.py
-- [[.test_file_upload_initial_comment_scanned()]] - code - gateway/tests/test_slack_proxy.py
-- [[.test_get_stats_returns_counters()]] - code - gateway/tests/test_slack_proxy.py
-- [[.test_is_owner_channel_empty_owner_uid_always_false()]] - code - gateway/tests/test_slack_proxy.py
-- [[.test_is_owner_channel_matches_owner_uid()]] - code - gateway/tests/test_slack_proxy.py
-- [[.test_is_owner_channel_no_match_for_other()]] - code - gateway/tests/test_slack_proxy.py
-- [[.test_no_bot_token_returns_error()]] - code - gateway/tests/test_slack_proxy.py
-- [[.test_non_message_method_not_scanned()]] - code - gateway/tests/test_slack_proxy.py
-- [[.test_non_owner_clean_message_passes()]] - code - gateway/tests/test_slack_proxy.py
-- [[.test_non_owner_high_risk_leakage_blocked_before_pipeline()]] - code - gateway/tests/test_slack_proxy.py
-- [[.test_non_owner_info_filter_redaction_blocks()]] - code - gateway/tests/test_slack_proxy.py
-- [[.test_non_owner_pipeline_exception_fail_closed()]] - code - gateway/tests/test_slack_proxy.py
-- [[.test_non_owner_tailscale_hostname_blocked()]] - code - gateway/tests/test_slack_proxy.py
-- [[.test_outbound_blocked_returns_error()]] - code - gateway/tests/test_slack_proxy.py
-- [[.test_owner_channel_uses_full_trust()]] - code - gateway/tests/test_slack_proxy.py
-- [[.test_owner_pipeline_exception_fail_open()]] - code - gateway/tests/test_slack_proxy.py
-- [[.test_post_ephemeral_scanned()]] - code - gateway/tests/test_slack_proxy.py
-- [[.test_sanitized_text_replaces_original()]] - code - gateway/tests/test_slack_proxy.py
-- [[.test_structured_field_sanitization_blocks_delivery()]] - code - gateway/tests/test_slack_proxy.py
-- [[.test_system_notification_skips_pipeline()]] - code - gateway/tests/test_slack_proxy.py
-- [[.test_text_sanitization_still_applied()]] - code - gateway/tests/test_slack_proxy.py
-- [[.test_urlencoded_body_parsed()]] - code - gateway/tests/test_slack_proxy.py
-- [[A secret hidden in blocks must be caught even if `text` is benign.]] - rationale - gateway/tests/test_slack_proxy.py
-- [[Create a SlackAPIProxy with test credentials and no real IO.]] - rationale - gateway/tests/test_slack_proxy.py
-- [[Each call to apps.connections.open issues a distinct relay token.]] - rationale - gateway/tests/test_slack_proxy.py
-- [[If the pipeline wants to redact inside blocks JSON, delivery is blocked]] - rationale - gateway/tests/test_slack_proxy.py
-- [[Legacy attachments are scanned for leaked content.]] - rationale - gateway/tests/test_slack_proxy.py
-- [[Non-owner channel Tailscale hostname triggers leakage pre-check → blocked.]] - rationale - gateway/tests/test_slack_proxy.py
-- [[Non-owner channel clean message with no leakage passes through.]] - rationale - gateway/tests/test_slack_proxy.py
-- [[Non-owner channel high-risk leakage detected before pipeline → blocked.]] - rationale - gateway/tests/test_slack_proxy.py
-- [[Non-owner channel pipeline exception → blocked (fail-closed).]] - rationale - gateway/tests/test_slack_proxy.py
-- [[Non-owner channel pipeline passes but info_filter_redaction_count  0 → blocked]] - rationale - gateway/tests/test_slack_proxy.py
-- [[Owner channel pipeline called with user_trust_level=FULL, message forwarded.]] - rationale - gateway/tests/test_slack_proxy.py
-- [[Owner channel pipeline exception → logged but message still forwarded.]] - rationale - gateway/tests/test_slack_proxy.py
-- [[P0 security Slack outbound must differentiate owner vs collaborator channels.]] - rationale - gateway/tests/test_slack_proxy.py
-- [[Plain-text sanitization keeps working (redacted text forwarded).]] - rationale - gateway/tests/test_slack_proxy.py
-- [[TestMultiFieldOutboundScanning]] - code - gateway/tests/test_slack_proxy.py
-- [[TestOwnerChannelFiltering]] - code - gateway/tests/test_slack_proxy.py
-- [[TestProxyOutbound]] - code - gateway/tests/test_slack_proxy.py
-- [[TestSocketModeRelay]] - code - gateway/tests/test_slack_proxy.py
-- [[_make_proxy()_2]] - code - gateway/tests/test_slack_proxy.py
-- [[_pass_result()]] - code - gateway/tests/test_slack_proxy.py
-- [[apps.connections.open Slack error response returned unchanged.]] - rationale - gateway/tests/test_slack_proxy.py
-- [[apps.connections.open pipeline is NOT invoked (not a message method).]] - rationale - gateway/tests/test_slack_proxy.py
-- [[apps.connections.open real WSS URL is stored and relay URL returned.]] - rationale - gateway/tests/test_slack_proxy.py
-- [[apps.connections.open response without url field returned unchanged.]] - rationale - gateway/tests/test_slack_proxy.py
-- [[blocksattachments and upload text must be scanned, not just `text`.      Regres]] - rationale - gateway/tests/test_slack_proxy.py
-- [[chat.postEphemeral text goes through the pipeline like postMessage.]] - rationale - gateway/tests/test_slack_proxy.py
-- [[consume_relay_token returns None for unknown tokens.]] - rationale - gateway/tests/test_slack_proxy.py
-- [[consume_relay_token returns the URL once then None.]] - rationale - gateway/tests/test_slack_proxy.py
-- [[files.upload initial_commenttitle text is scanned.]] - rationale - gateway/tests/test_slack_proxy.py
-- [[test_slack_proxy.py]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_baseline_three_without_daemon_config()]] - code - gateway/tests/test_scanner_integration.py
+- [[Apply mandatory gate overrides to domain scores.      Returns updated scores dic]] - rationale - gateway/security/scanner_integration.py
+- [[Path_17]] - code - gateway/security/scanner_integration.py
+- [[Read and return the Docker daemon config from daemon.json, or {} if unavailable.]] - rationale - gateway/security/scanner_integration.py
+- [[Return True if a non-zombie falco process is running inside this container.]] - rationale - gateway/security/scanner_integration.py
+- [[Return True if app_state has a non-None attribute with the given name.]] - rationale - gateway/security/scanner_integration.py
+- [[Return True if fluent-bit pidfile tmpfluent-bit.pid exists with a live PID.]] - rationale - gateway/security/scanner_integration.py
+- [[Return True if running inside a Docker container (.dockerenv present).]] - rationale - gateway/security/scanner_integration.py
+- [[Return True if the named Docker container is currently in 'running' state.]] - rationale - gateway/security/scanner_integration.py
+- [[Return True if wazuh-agentd is running as a local process inside this container.]] - rationale - gateway/security/scanner_integration.py
+- [[Return docker-compose.yml text for containerized-deployment evidence checks.]] - rationale - gateway/security/scanner_integration.py
+- [[Return scriptssecurity-scan.sh text, or empty string.]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 13 Identity & Authentication (0-5). IEC 62443 FR1.      1=API toke]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 14 Access Control & Authorization (0-5). IEC 62443 FR2.      1=rol]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 15 Data Confidentiality & Encryption (0-5). IEC 62443 FR4.      1=]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 16 Resource Availability & Limits (0-5). IEC 62443 FR7.      1=mem]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 17 Image Signing & Provenance (0-5). NIST 800-190 §3.1.      0=no]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 18 Registry Security (0-5). NIST 800-190 §3.2.      0=public regis]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 19 Host OS Hardening (0-5). NIST 800-190 §3.5.      0=no info, 1=k]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 20 Docker Daemon Configuration (0-5). CIS Sections 2 & 3.      0=d]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 21 Container Runtime Isolation (0-5). CIS Section 5.      0=privil]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 22 Prompt Injection Defense (0-5). OWASP ASI-07, MITRE AML.T0051.]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 23 Agent Goal & Behavior Integrity (0-5). OWASP ASI-01, NIST AI RM]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 24 Tool Use Safety & Validation (0-5). OWASP ASI-02, CSA MAESTRO.]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 25 Least Agency Enforcement (0-5). OWASP ASI-05, NIST AI Agent Sta]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 26 Agent Identity & NHI (0-5). OWASP ASI-09, NIST AI Agent Standar]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 27 Memory Integrity (0-5). OWASP ASI-08, MITRE ATLAS.      1=memor]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 28 Inter-Agent Trust & Orchestration Security (0-5). OWASP ASI-03]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 30 AI Observability & Audit Trail (0-5). NIST AI RMF MEASURE, IEC]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 31 Human-in-the-Loop Controls (0-5). NIST AI RMF MANAGE, ISO 42001]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 32 Rogue Agent Containment & Killswitch (0-5). OWASP ASI-03, CSA M]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 33 Data Exfiltration Prevention (0-5). OWASP ASI-06, MITRE ATLAS,]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 7 Network Segmentation (0-5).      3=Docker network architecture b]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 8 Secrets Management (0-5).      2=Docker secrets + key_vault base]] - rationale - gateway/security/scanner_integration.py
+- [[TestScoreNetworkSegmentation]] - code - gateway/tests/test_scanner_integration.py
+- [[_app_state_has()]] - code - gateway/security/scanner_integration.py
+- [[_evaluate_mandatory_gates()]] - code - gateway/security/scanner_integration.py
+- [[_is_container_running()]] - code - gateway/security/scanner_integration.py
+- [[_is_containerized()]] - code - gateway/security/scanner_integration.py
+- [[_is_falco_running()]] - code - gateway/security/scanner_integration.py
+- [[_is_fluent_bit_running()]] - code - gateway/security/scanner_integration.py
+- [[_is_wazuh_agent_running()]] - code - gateway/security/scanner_integration.py
+- [[_read_compose_text()]] - code - gateway/security/scanner_integration.py
+- [[_read_docker_daemon_config()]] - code - gateway/security/scanner_integration.py
+- [[_score_access_control_authorization()]] - code - gateway/security/scanner_integration.py
+- [[_score_agent_behavior_integrity()]] - code - gateway/security/scanner_integration.py
+- [[_score_agent_identity_nhi()]] - code - gateway/security/scanner_integration.py
+- [[_score_ai_observability()]] - code - gateway/security/scanner_integration.py
+- [[_score_container_runtime_isolation()]] - code - gateway/security/scanner_integration.py
+- [[_score_data_confidentiality_encryption()]] - code - gateway/security/scanner_integration.py
+- [[_score_data_exfiltration_prevention()]] - code - gateway/security/scanner_integration.py
+- [[_score_docker_daemon_config()]] - code - gateway/security/scanner_integration.py
+- [[_score_host_os_hardening()]] - code - gateway/security/scanner_integration.py
+- [[_score_human_in_the_loop()]] - code - gateway/security/scanner_integration.py
+- [[_score_identity_authentication()]] - code - gateway/security/scanner_integration.py
+- [[_score_image_signing_provenance()]] - code - gateway/security/scanner_integration.py
+- [[_score_inter_agent_trust()]] - code - gateway/security/scanner_integration.py
+- [[_score_least_agency()]] - code - gateway/security/scanner_integration.py
+- [[_score_memory_integrity()]] - code - gateway/security/scanner_integration.py
+- [[_score_network_segmentation()]] - code - gateway/security/scanner_integration.py
+- [[_score_prompt_injection_defense()]] - code - gateway/security/scanner_integration.py
+- [[_score_registry_security()]] - code - gateway/security/scanner_integration.py
+- [[_score_resource_availability()]] - code - gateway/security/scanner_integration.py
+- [[_score_rogue_agent_containment()]] - code - gateway/security/scanner_integration.py
+- [[_score_secrets_management()]] - code - gateway/security/scanner_integration.py
+- [[_score_tool_use_safety()]] - code - gateway/security/scanner_integration.py
+- [[_security_scan_sh_text()]] - code - gateway/security/scanner_integration.py
+- [[scanner_integration.py]] - code - gateway/security/scanner_integration.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -79,14 +87,24 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 26 edges to [[_COMMUNITY_Community 109]]
-- 6 edges to [[_COMMUNITY_Community 25]]
-- 6 edges to [[_COMMUNITY_Community 1137]]
-- 2 edges to [[_COMMUNITY_Community 593]]
+- 27 edges to [[_COMMUNITY_Community 201]]
+- 13 edges to [[_COMMUNITY_Community 196]]
+- 9 edges to [[_COMMUNITY_Community 187]]
+- 8 edges to [[_COMMUNITY_Community 216]]
+- 5 edges to [[_COMMUNITY_Community 863]]
+- 3 edges to [[_COMMUNITY_Community 112]]
+- 3 edges to [[_COMMUNITY_Community 983]]
+- 3 edges to [[_COMMUNITY_Community 539]]
+- 2 edges to [[_COMMUNITY_Community 771]]
+- 2 edges to [[_COMMUNITY_Community 183]]
+- 1 edge to [[_COMMUNITY_Community 42]]
+- 1 edge to [[_COMMUNITY_Community 399]]
+- 1 edge to [[_COMMUNITY_Community 215]]
+- 1 edge to [[_COMMUNITY_Community 646]]
 
 ## Top bridge nodes
-- [[test_slack_proxy.py]] - degree 10, connects to 3 communities
-- [[_make_proxy()_2]] - degree 36, connects to 2 communities
-- [[TestOwnerChannelFiltering]] - degree 14, connects to 2 communities
-- [[TestProxyOutbound]] - degree 12, connects to 2 communities
-- [[TestSocketModeRelay]] - degree 10, connects to 2 communities
+- [[scanner_integration.py]] - degree 67, connects to 14 communities
+- [[Path_17]] - degree 34, connects to 6 communities
+- [[_score_network_segmentation()]] - degree 9, connects to 2 communities
+- [[_evaluate_mandatory_gates()]] - degree 7, connects to 2 communities
+- [[_score_secrets_management()]] - degree 7, connects to 2 communities

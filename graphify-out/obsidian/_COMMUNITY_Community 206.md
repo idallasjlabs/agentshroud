@@ -1,48 +1,50 @@
 ---
 type: community
+cohesion: 0.09
 members: 35
 ---
 
 # Community 206
 
+**Cohesion:** 0.09 - loosely connected
 **Members:** 35 nodes
 
 ## Members
-- [[.notifier()]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[.test_answer_callback_error()]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[.test_answer_callback_success()]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[.test_cleanup_expired_requests()_1]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[.test_get_pending_count()]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[.test_handle_callback_allow_always_returns_agent_id()]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[.test_handle_callback_approve_permanent()]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[.test_handle_callback_deny()]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[.test_handle_callback_deny_returns_agent_id()]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[.test_handle_callback_invalid_format()]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[.test_handle_callback_missing_agent_id_safe()]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[.test_handle_callback_request_not_found()]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[.test_handle_callback_returns_agent_id()]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[.test_notification_recipients_owner_only_by_default()]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[.test_notify_pending_failure()]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[.test_notify_pending_success()]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[.test_risk_emoji_mapping()]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[Collaborators are never added to notification_recipients — only owner gets egres]] - rationale - gateway/tests/test_egress_telegram_notify.py
-- [[Denial result also includes agent_id so collaborator can be notified.]] - rationale - gateway/tests/test_egress_telegram_notify.py
-- [[Missing agent_id in stored request returns empty string, not a crash.]] - rationale - gateway/tests/test_egress_telegram_notify.py
-- [[Permanent approval also includes agent_id in result.]] - rationale - gateway/tests/test_egress_telegram_notify.py
-- [[Test Telegram egress notification system.]] - rationale - gateway/tests/test_egress_telegram_notify.py
-- [[Test answer_callback handles errors.]] - rationale - gateway/tests/test_egress_telegram_notify.py
-- [[Test answering callback query.]] - rationale - gateway/tests/test_egress_telegram_notify.py
-- [[Test callback for non-existent request.]] - rationale - gateway/tests/test_egress_telegram_notify.py
-- [[Test cleanup removes expired pending requests.]] - rationale - gateway/tests/test_egress_telegram_notify.py
-- [[Test handling deny callback.]] - rationale - gateway/tests/test_egress_telegram_notify.py
-- [[Test handling invalid callback data.]] - rationale - gateway/tests/test_egress_telegram_notify.py
-- [[Test handling permanent (allow_always) approval callback.]] - rationale - gateway/tests/test_egress_telegram_notify.py
-- [[Test notification handles API failure gracefully.]] - rationale - gateway/tests/test_egress_telegram_notify.py
-- [[Test risk level emoji display.]] - rationale - gateway/tests/test_egress_telegram_notify.py
-- [[Test successful notification sending.]] - rationale - gateway/tests/test_egress_telegram_notify.py
-- [[TestEgressTelegramNotify]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[handle_callback must include agent_id so the proxy can notify the originating co]] - rationale - gateway/tests/test_egress_telegram_notify.py
-- [[test_egress_telegram_notify.py]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[.__len__()]] - code - gateway/proxy/mcp_audit.py
+- [[._compute_chain_hash()]] - code - gateway/proxy/mcp_audit.py
+- [[.entries()]] - code - gateway/proxy/mcp_audit.py
+- [[.generate_report()]] - code - gateway/proxy/mcp_audit.py
+- [[.get_blocked_entries()]] - code - gateway/proxy/mcp_audit.py
+- [[.get_entries_for_agent()]] - code - gateway/proxy/mcp_audit.py
+- [[.get_entries_for_server()]] - code - gateway/proxy/mcp_audit.py
+- [[.get_entries_for_tool()]] - code - gateway/proxy/mcp_audit.py
+- [[.get_failed_entries()]] - code - gateway/proxy/mcp_audit.py
+- [[.last_hash()]] - code - gateway/proxy/mcp_audit.py
+- [[.log_tool_call()]] - code - gateway/proxy/mcp_audit.py
+- [[.log_tool_result()]] - code - gateway/proxy/mcp_audit.py
+- [[.start_call()]] - code - gateway/proxy/mcp_audit.py
+- [[.test_default_window_is_10k()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_report_total_reflects_all_appended()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_tamper_in_retained_window_detected()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_verify_chain_valid_after_wrap()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_window_capped_at_max_entries()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.total_appended()]] - code - gateway/proxy/mcp_audit.py
+- [[.verify_chain()]] - code - gateway/proxy/mcp_audit.py
+- [[A single MCP tool call audit entry.]] - rationale - gateway/proxy/mcp_audit.py
+- [[Any_15]] - code - gateway/proxy/mcp_audit.py
+- [[Audit trail for MCP tool calls, integrated with SHA-256 hash chain.]] - rationale - gateway/proxy/mcp_audit.py
+- [[Compute hash chain values. Returns (content_hash, chain_hash).]] - rationale - gateway/proxy/mcp_audit.py
+- [[Generate an MCP audit report summary.]] - rationale - gateway/proxy/mcp_audit.py
+- [[In-memory MCP audit window must be bounded (mirrors AuditChain).]] - rationale - gateway/tests/test_mcp_proxy.py
+- [[Log an incoming MCP tool result.]] - rationale - gateway/proxy/mcp_audit.py
+- [[Log an outgoing MCP tool call.]] - rationale - gateway/proxy/mcp_audit.py
+- [[MCPAuditEntry]] - code - gateway/proxy/mcp_audit.py
+- [[MCPAuditTrail]] - code - gateway/proxy/mcp_audit.py
+- [[MCPProxy.process_tool_call]] - code - gateway/proxy/mcp_proxy.py
+- [[Record the start time of a tool call for duration tracking.]] - rationale - gateway/proxy/mcp_audit.py
+- [[TestAuditTrailBounded]] - code - gateway/tests/test_mcp_proxy.py
+- [[Verify integrity of the retained MCP audit hash-chain window.          Anchors a]] - rationale - gateway/proxy/mcp_audit.py
+- [[audit()]] - code - gateway/tests/test_mcp_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -52,10 +54,24 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 361]]
-- 2 edges to [[_COMMUNITY_Community 1412]]
+- 32 edges to [[_COMMUNITY_Community 44]]
+- 14 edges to [[_COMMUNITY_Community 103]]
+- 10 edges to [[_COMMUNITY_Community 39]]
+- 7 edges to [[_COMMUNITY_Community 154]]
+- 6 edges to [[_COMMUNITY_Community 261]]
+- 5 edges to [[_COMMUNITY_Community 324]]
+- 5 edges to [[_COMMUNITY_Community 109]]
+- 1 edge to [[_COMMUNITY_Community 616]]
+- 1 edge to [[_COMMUNITY_Community 23]]
+- 1 edge to [[_COMMUNITY_Community 473]]
+- 1 edge to [[_COMMUNITY_Community 41]]
+- 1 edge to [[_COMMUNITY_Key Vault & Audit Chain]]
+- 1 edge to [[_COMMUNITY_Community 917]]
+- 1 edge to [[_COMMUNITY_Community 992]]
 
 ## Top bridge nodes
-- [[TestEgressTelegramNotify]] - degree 22, connects to 2 communities
-- [[test_egress_telegram_notify.py]] - degree 2, connects to 1 community
-- [[.notifier()]] - degree 2, connects to 1 community
+- [[MCPAuditTrail]] - degree 91, connects to 13 communities
+- [[TestAuditTrailBounded]] - degree 20, connects to 4 communities
+- [[MCPProxy.process_tool_call]] - degree 4, connects to 3 communities
+- [[MCPAuditEntry]] - degree 11, connects to 1 community
+- [[audit()]] - degree 2, connects to 1 community

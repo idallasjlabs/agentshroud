@@ -1,23 +1,25 @@
 ---
 type: community
+cohesion: 0.20
 members: 10
 ---
 
 # Community 855
 
+**Cohesion:** 0.20 - loosely connected
 **Members:** 10 nodes
 
 ## Members
-- [[.__init__()_38]] - code - gateway/proxy/telegram_gateway_relay.py
-- [[.send_message()]] - code - gateway/proxy/telegram_gateway_relay.py
-- [[.send_status_update()]] - code - gateway/proxy/telegram_gateway_relay.py
-- [[Relay Telegram messages through the gateway control plane.      This enables con]] - rationale - gateway/proxy/telegram_gateway_relay.py
-- [[Result of a Telegram send operation via gateway.]] - rationale - gateway/proxy/telegram_gateway_relay.py
-- [[Send a Telegram message via the gateway relay.          Args             chat_i]] - rationale - gateway/proxy/telegram_gateway_relay.py
-- [[Send a formatted status update via Telegram.          Formats the message with a]] - rationale - gateway/proxy/telegram_gateway_relay.py
-- [[TelegramGatewayRelay]] - code - gateway/proxy/telegram_gateway_relay.py
-- [[TelegramSendResult]] - code - gateway/proxy/telegram_gateway_relay.py
-- [[telegram_gateway_relay.py]] - code - gateway/proxy/telegram_gateway_relay.py
+- [[9. Deep Security Hardening (v0.9.0)]] - document - docs/papers/agentshroud-whitepaper.md
+- [[9.1 Log Sanitizer (gatewaysecuritylog_sanitizer.py)]] - document - docs/papers/agentshroud-whitepaper.md
+- [[9.2 Environment Leakage Guard (gatewaysecurityenv_guard.py)]] - document - docs/papers/agentshroud-whitepaper.md
+- [[9.3 Context Window Poisoning Defense (gatewaysecuritycontext_guard.py)]] - document - docs/papers/agentshroud-whitepaper.md
+- [[9.4 Git Hook Guard (gatewaysecuritygit_guard.py)]] - document - docs/papers/agentshroud-whitepaper.md
+- [[9.5 Metadata Channel Guard (gatewaysecuritymetadata_guard.py)]] - document - docs/papers/agentshroud-whitepaper.md
+- [[9.6 Network Isolation Validator (gatewaysecuritynetwork_validator.py)]] - document - docs/papers/agentshroud-whitepaper.md
+- [[9.7 Resource Exhaustion Guard (gatewaysecurityresource_guard.py)]] - document - docs/papers/agentshroud-whitepaper.md
+- [[9.8 Tool Result Injection Scanning (MCP Inspector Enhancement)]] - document - docs/papers/agentshroud-whitepaper.md
+- [[9.9 Deep Hardening Impact]] - document - docs/papers/agentshroud-whitepaper.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,8 +29,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 326]]
-- 1 edge to [[_COMMUNITY_Community 134]]
+- 1 edge to [[_COMMUNITY_Community 402]]
 
 ## Top bridge nodes
-- [[telegram_gateway_relay.py]] - degree 4, connects to 2 communities
+- [[9. Deep Security Hardening (v0.9.0)]] - degree 10, connects to 1 community

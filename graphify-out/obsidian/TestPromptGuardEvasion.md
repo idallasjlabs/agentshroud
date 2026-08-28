@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "Community 55"
+community: "Community 30"
 location: "L797"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_55
+  - community/Community_30
 ---
 
 # TestPromptGuardEvasion
@@ -39,4 +39,4 @@ tags:
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_55
+#graphify/code #graphify/INFERRED #community/Community_30

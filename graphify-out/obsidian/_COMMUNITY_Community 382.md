@@ -1,33 +1,38 @@
 ---
 type: community
-members: 20
+cohesion: 0.09
+members: 23
 ---
 
 # Community 382
 
-**Members:** 20 nodes
+**Cohesion:** 0.09 - loosely connected
+**Members:** 23 nodes
 
 ## Members
-- [[._agent_in_scope()]] - code - gateway/security/key_vault.py
-- [[._log_audit()]] - code - gateway/security/key_vault.py
-- [[.check_value_match()]] - code - gateway/security/key_vault.py
-- [[.delete_key()]] - code - gateway/security/key_vault.py
-- [[.get_audit_log()_5]] - code - gateway/security/key_vault.py
-- [[.get_key()]] - code - gateway/security/key_vault.py
-- [[.inject_for_request()]] - code - gateway/security/key_vault.py
-- [[.list_keys()]] - code - gateway/security/key_vault.py
-- [[.redact()]] - code - gateway/security/key_vault.py
-- [[.rotate_key()]] - code - gateway/security/key_vault.py
-- [[.scan_outbound()]] - code - gateway/security/key_vault.py
-- [[.store_key()]] - code - gateway/security/key_vault.py
-- [[Check if any stored key values appear in text. Returns matching key names.]] - rationale - gateway/security/key_vault.py
-- [[KeyAuditEvent]] - code - gateway/security/key_vault.py
-- [[KeyEntry]] - code - gateway/security/key_vault.py
-- [[KeyScope]] - code - gateway/security/key_vault.py
-- [[KeyVault]] - code - gateway/security/key_vault.py
-- [[LeakScanResult]] - code - gateway/security/key_vault.py
-- [[Per-agent API key scoping, redaction, leak detection, and rotation]] - concept - gateway/tests/test_key_vault.py
-- [[key_vault.py]] - code - gateway/security/key_vault.py
+- [[CONNECT Retry Logic]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Configuration  Environment Variables_1]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Constructor Parameters]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Domain Policy Decision Tree]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Function Details_7]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Internal State (`_stats`)]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Key Classes]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Module-level Constants]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Purpose_128]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Related_12]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Responsibilities_12]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Security Notes_6]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[TCP Keepalive]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[`HTTPConnectProxy._agent_id_for_peer(peer)`]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[`HTTPConnectProxy._clamav_scan_bytes(data bytes, host str)`]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[`HTTPConnectProxy._handle_client(reader, writer)`]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[`HTTPConnectProxy._process_connect(reader, writer)`]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[`HTTPConnectProxy._relay(reader, writer, idle_timeout=120.0)` (static)]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[`HTTPConnectProxy._relay_and_scan(reader, writer, host, scan_limit=410241024)`]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[`HTTPConnectProxy.get_stats()`]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[`HTTPConnectProxy.stop()`]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[http_proxy.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[http_proxy.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,20 +40,3 @@ members: 20
 TABLE source_file, type FROM #community/Community_382
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 22 edges to [[_COMMUNITY_Community 22]]
-- 14 edges to [[_COMMUNITY_Community 14]]
-- 10 edges to [[_COMMUNITY_Community 180]]
-- 2 edges to [[_COMMUNITY_Community 6]]
-- 1 edge to [[_COMMUNITY_Community 251]]
-- 1 edge to [[_COMMUNITY_Community 442]]
-- 1 edge to [[_COMMUNITY_Community 799]]
-- 1 edge to [[_COMMUNITY_Community 64]]
-- 1 edge to [[_COMMUNITY_Community 7]]
-
-## Top bridge nodes
-- [[KeyVault]] - degree 55, connects to 6 communities
-- [[key_vault.py]] - degree 13, connects to 6 communities
-- [[.scan_outbound()]] - degree 4, connects to 1 community
-- [[.inject_for_request()]] - degree 2, connects to 1 community

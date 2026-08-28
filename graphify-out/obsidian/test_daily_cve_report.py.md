@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "Community 184"
+community: "Community 122"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_184
+  - community/Community_122
 ---
 
 # test_daily_cve_report.py
@@ -43,4 +43,4 @@ tags:
 - [[list_cve_agents()]] - `imports` [EXTRACTED]
 - [[run_and_send_cve_report()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_184
+#graphify/code #graphify/EXTRACTED #community/Community_122

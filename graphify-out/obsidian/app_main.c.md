@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/app_main.c"
 type: "code"
-community: "Community 139"
+community: "Community 308"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_139
+  - community/Community_308
 ---
 
 # app_main.c
@@ -21,7 +21,7 @@ tags:
 - [[_on_vg_state()]] - `contains` [EXTRACTED]
 - [[_on_ws_ctrl()]] - `contains` [EXTRACTED]
 - [[_send_status_beacon()]] - `contains` [EXTRACTED]
-- [[app_main()_1]] - `contains` [EXTRACTED]
+- [[app_main()]] - `contains` [EXTRACTED]
 - [[playback_logic.h]] - `imports` [EXTRACTED]
 - [[remote_log.h]] - `imports` [EXTRACTED]
 - [[rlog_task()]] - `contains` [EXTRACTED]
@@ -34,4 +34,4 @@ tags:
 - [[wifi_event_handler()]] - `contains` [EXTRACTED]
 - [[wifi_init()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_139
+#graphify/code #graphify/EXTRACTED #community/Community_308

@@ -1,39 +1,38 @@
 ---
 type: community
-members: 26
+cohesion: 0.09
+members: 23
 ---
 
 # Community 384
 
-**Members:** 26 nodes
+**Cohesion:** 0.09 - loosely connected
+**Members:** 23 nodes
 
 ## Members
-- [[Auto-Detection]] - document - docs/setup/setup-guide.md
-- [[Dashboard Access_1]] - document - docs/setup/setup-guide.md
-- [[Default Configuration]] - document - docs/setup/setup-guide.md
-- [[Development (local testing)]] - document - docs/setup/setup-guide.md
-- [[Health Check]] - document - docs/setup/setup-guide.md
-- [[Option A Docker (Most Common)]] - document - docs/setup/setup-guide.md
-- [[Option A macOS Keychain (Default — no software required)]] - document - docs/setup/setup-guide.md
-- [[Option B Linux (secret-tool  GNOME Keyring — Default on Linux)]] - document - docs/setup/setup-guide.md
-- [[Option B Podman (Red HatEnterprise)]] - document - docs/setup/setup-guide.md
-- [[Option C 1Password Service Account (Optional — Teams  Shared Credentials)]] - document - docs/setup/setup-guide.md
-- [[Option C Apple Containers (macOS 26+)]] - document - docs/setup/setup-guide.md
-- [[Option D Docker Secrets (Swarm Mode)]] - document - docs/setup/setup-guide.md
-- [[Option E Environment Variables (Development Only)]] - document - docs/setup/setup-guide.md
-- [[Production (background daemon)]] - document - docs/setup/setup-guide.md
-- [[Production with Restart Policy]] - document - docs/setup/setup-guide.md
-- [[Proxy Mode (Default)]] - document - docs/setup/setup-guide.md
-- [[Sidecar Mode]] - document - docs/setup/setup-guide.md
-- [[Step 1 Clone the Repository]] - document - docs/setup/setup-guide.md
-- [[Step 2 Choose Your Container Runtime]] - document - docs/setup/setup-guide.md
-- [[Step 3 Configure Secrets Management]] - document - docs/setup/setup-guide.md
-- [[Step 4 Choose Security Mode]] - document - docs/setup/setup-guide.md
-- [[Step 5 Configure Ports]] - document - docs/setup/setup-guide.md
-- [[Step 6 Deploy AgentShroud]] - document - docs/setup/setup-guide.md
-- [[Step 7 Verify Installation]] - document - docs/setup/setup-guide.md
-- [[Step-by-Step Installation]] - document - docs/setup/setup-guide.md
-- [[Test a Message]] - document - docs/setup/setup-guide.md
+- [[AgentShroud Security Value Proposition]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[CRITICAL (Do First)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[Comparison Three Deployment Options]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[HIGH VALUE]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[Is AgentShroud worth the effort]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[LOW VALUE (Maybe Later)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[MEDIUM VALUE]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[My Recommendation]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[Option 1 OpenClaw Directly on Mac (Non-Admin User)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[Option 2 OpenClaw in Basic Docker Container]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[Option 3 AgentShroud (Current Architecture)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[Option A MVP (Minimum Viable Product)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[Option B Full Vision (All Phase 3+ Features)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[Option C Abandon AgentShroud]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[Phase 3 Plan Reality Check]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[SKIP (Over-Engineering)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[TL;DR - The Honest Answer]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[The Bottom Line]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[The Honest Assessment]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[The Real Security Value]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[What Makes AgentShroud Different]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[What Should You Do Next]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[What's Worth the Effort]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -43,8 +42,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 336]]
+- 1 edge to [[_COMMUNITY_Community 580]]
+- 1 edge to [[_COMMUNITY_Community 731]]
 
 ## Top bridge nodes
-- [[Step-by-Step Installation]] - degree 8, connects to 1 community
-- [[Step 5 Configure Ports]] - degree 4, connects to 1 community
+- [[AgentShroud Security Value Proposition]] - degree 11, connects to 2 communities

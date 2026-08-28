@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_sanitizer.py"
 type: "code"
-community: "Community 405"
+community: "Community 407"
 location: "L116"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_405
+  - community/Community_407
 ---
 
 # test_regex_fallback_requires_separator()
@@ -15,4 +15,4 @@ tags:
 - [[Regex-only path must not match bare 10-digit digit string as phone number.]] - `rationale_for` [EXTRACTED]
 - [[test_sanitizer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_405
+#graphify/code #graphify/EXTRACTED #community/Community_407

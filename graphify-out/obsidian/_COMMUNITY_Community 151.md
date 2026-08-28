@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.05
 members: 43
 ---
 
 # Community 151
 
+**Cohesion:** 0.05 - loosely connected
 **Members:** 43 nodes
 
 ## Members
@@ -60,7 +62,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Community 182]]
+- 5 edges to [[_COMMUNITY_Community 46]]
 
 ## Top bridge nodes
 - [[TestPromptProtection]] - degree 21, connects to 1 community

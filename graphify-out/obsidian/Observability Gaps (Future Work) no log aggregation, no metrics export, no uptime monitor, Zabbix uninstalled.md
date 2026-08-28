@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-20-observability-map.svg"
 type: "concept"
-community: "Community 1396"
+community: "Community 1403"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Community_1396
+  - community/Community_1403
 ---
 
 # Observability Gaps (Future Work): no log aggregation, no metrics export, no uptime monitor, Zabbix uninstalled
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Gateway observability (GET status, GET ledger, MCP audit log, HTTP CONNECT proxy stats)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Community_1396
+#graphify/concept #graphify/INFERRED #community/Community_1403

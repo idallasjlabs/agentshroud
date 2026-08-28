@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "code"
-community: "Community 60"
+community: "Security Audit & Drift Detection"
 location: "L58"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_60
+  - community/Security_Audit__Drift_Detection
 ---
 
 # EncryptedStore
@@ -78,4 +78,4 @@ tags:
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_60
+#graphify/code #graphify/INFERRED #community/Security_Audit__Drift_Detection

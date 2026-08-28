@@ -1,17 +1,17 @@
 ---
-source_file: "CHANGELOG.md"
+source_file: "browser-extension/README.md"
 type: "document"
-community: "Community 984"
-location: "L785"
+community: "Community 552"
+location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_984
+  - community/Community_552
 ---
 
 # Tests
 
 ## Connections
-- [[Unreleased — featv0.8.0-enforcement-hardening (session 3 — 2026-03-15)]] - `contains` [EXTRACTED]
+- [[Structure]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_984
+#graphify/document #graphify/EXTRACTED #community/Community_552

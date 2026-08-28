@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "Community 870"
+community: "PII Sanitizer & E2E Tests"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_870
+  - community/PII_Sanitizer__E2E_Tests
 ---
 
 # ToolResultSanitizer._extract_dict_content
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[ToolResultSanitizer._extract_scannable_content]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_870
+#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer__E2E_Tests

@@ -1,26 +1,27 @@
 ---
 type: community
-members: 13
+cohesion: 0.17
+members: 12
 ---
 
 # Community 747
 
-**Members:** 13 nodes
+**Cohesion:** 0.17 - loosely connected
+**Members:** 12 nodes
 
 ## Members
-- [[Allowlist]] - document - docker/bot-capabilities.md
-- [[Already in your environment at startup]] - document - docker/bot-capabilities.md
-- [[Credential Isolation — Gateway op-proxy (ACTIVE)]] - document - docker/bot-capabilities.md
-- [[Credential flow]] - document - docker/bot-capabilities.md
-- [[Credentials set at startup (already in environment)]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[How to retrieve a credential]] - document - docker/bot-capabilities.md
-- [[How to retrieve a credential at runtime]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[Known working credential paths]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[Known working credentials]] - document - docker/bot-capabilities.md
-- [[What NEVER to do]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[What NEVER to do_1]] - document - docker/bot-capabilities.md
-- [[You do NOT have direct 1Password access]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[🏗️ Credential Architecture — How Secrets Are Retrieved]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[Emergency Hotfix_3]] - document - docker/config/hermes/skills/i-mc/SKILL.md
+- [[GSDE&G Development Master Checklist_1]] - document - docker/config/hermes/skills/i-mc/SKILL.md
+- [[Phase 1 · Plan & Branch  → `ggSKILL.md`_1]] - document - docker/config/hermes/skills/i-mc/SKILL.md
+- [[Phase 2 · TDD  → `tddSKILL.md`_1]] - document - docker/config/hermes/skills/i-mc/SKILL.md
+- [[Phase 3 · QA  → `qaSKILL.md`_1]] - document - docker/config/hermes/skills/i-mc/SKILL.md
+- [[Phase 4 · Code Review  → `crSKILL.md`_1]] - document - docker/config/hermes/skills/i-mc/SKILL.md
+- [[Phase 5 · Pull Request  → `prSKILL.md`_1]] - document - docker/config/hermes/skills/i-mc/SKILL.md
+- [[Phase 6 · CI  → `cicdSKILL.md`_1]] - document - docker/config/hermes/skills/i-mc/SKILL.md
+- [[Phase 7 · Deploy  → `psSKILL.md`_1]] - document - docker/config/hermes/skills/i-mc/SKILL.md
+- [[Quick Commands_1]] - document - docker/config/hermes/skills/i-mc/SKILL.md
+- [[SKILL_94]] - document - docker/config/hermes/skills/i-mc/SKILL.md
+- [[Skill Index_1]] - document - docker/config/hermes/skills/i-mc/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,11 +29,3 @@ members: 13
 TABLE source_file, type FROM #community/Community_747
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 620]]
-- 1 edge to [[_COMMUNITY_Community 746]]
-
-## Top bridge nodes
-- [[🏗️ Credential Architecture — How Secrets Are Retrieved]] - degree 7, connects to 1 community
-- [[Credential Isolation — Gateway op-proxy (ACTIVE)]] - degree 7, connects to 1 community

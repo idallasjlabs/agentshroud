@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/DEVICE_PAIRING.md"
 type: "document"
-community: "Community 776"
+community: "Community 588"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_776
+  - community/Community_588
 ---
 
 # AgentShroud Device Pairing Management
@@ -26,7 +26,7 @@ tags:
 - [[Revoking Device Access]] - `contains` [EXTRACTED]
 - [[Security Best Practices_3]] - `contains` [EXTRACTED]
 - [[Security Notes_1]] - `contains` [EXTRACTED]
-- [[Troubleshooting_27]] - `contains` [EXTRACTED]
+- [[Troubleshooting_26]] - `contains` [EXTRACTED]
 - [[Why Device Pairing Matters]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_776
+#graphify/document #graphify/EXTRACTED #community/Community_588

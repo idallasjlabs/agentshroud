@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.60
 members: 5
 ---
 
 # Community 1250
 
+**Cohesion:** 0.60 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_110]] - document - docker/config/openclaw/skills/i-vulcan/README.md
-- [[README_115]] - document - docker/config/openclaw/skills/i-vulcan/README.md
-- [[Related Skills_119]] - document - docker/config/openclaw/skills/i-vulcan/README.md
-- [[Usage_120]] - document - docker/config/openclaw/skills/i-vulcan/README.md
-- [[Vulcan — Subject Matter Auditor_4]] - document - docker/config/openclaw/skills/i-vulcan/README.md
+- [[AgentShroud Egress Control Configuration]] - document - examples/egress-config.yml
+- [[AgentShroud MCP Proxy Configuration]] - document - examples/mcp-config.yml
+- [[Default Monitor-Mode Egress Rationale]] - rationale - examples/egress-config.yml
+- [[Default-Allow Web Proxy Design Rationale]] - rationale - examples/web-proxy-config.yml
+- [[MCP Proxy Default-Allow Philosophy]] - rationale - examples/mcp-config.yml
 
 ## Live Query (requires Dataview plugin)
 

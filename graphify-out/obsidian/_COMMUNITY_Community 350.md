@@ -1,44 +1,40 @@
 ---
 type: community
-members: 31
+cohesion: 0.08
+members: 25
 ---
 
 # Community 350
 
-**Members:** 31 nodes
+**Cohesion:** 0.08 - loosely connected
+**Members:** 25 nodes
 
 ## Members
-- [[0) PRIME DIRECTIVE (CODEX ROLE - NON-NEGOTIABLE)]] - document - AGENTS.md
-- [[1) REPOSITORY OVERVIEW]] - document - AGENTS.md
-- [[10) MCP SERVERS (EXTERNAL INTEGRATIONS)]] - document - AGENTS.md
-- [[2) WHAT YOU SHOULD DO (YOUR JOBS)]] - document - AGENTS.md
-- [[3) DEFINITION OF DONE (DoD)]] - document - AGENTS.md
-- [[4) LANGUAGE & TOOLING STANDARDS]] - document - AGENTS.md
-- [[5) LANGUAGE & TOOLING STANDARDS]] - document - CLAUDE.md
-- [[6) SECURITY & SAFETY REQUIREMENTS]] - document - AGENTS.md
-- [[7) CODEX CLI OPERATIONAL RULES]] - document - AGENTS.md
-- [[8) CODEX CLI CONFIGURATION]] - document - AGENTS.md
-- [[9) CONFIGURATION FILES]] - document - AGENTS.md
-- [[A) Test Augmenter (Primary Job)]] - document - AGENTS.md
-- [[AGENTS]] - document - AGENTS.md
-- [[AGENTS_1]] - document - AGENTS.md
-- [[B) Validation Runner (Primary Job)]] - document - AGENTS.md
-- [[C) Safe Refactor (Secondary Job)]] - document - AGENTS.md
-- [[Cross-platform requirement]] - document - CLAUDE.md
-- [[Goal Codex is a secondarytertiary agent used for test augmentation, validation, and safe refactors AFTER tests pass.]] - document - AGENTS.md
-- [[Guidance for ChatGPT Codex CLI when working in this repository.]] - document - AGENTS.md
-- [[Next.js  UI Standards]] - document - AGENTS.md
-- [[Primary Focus_1]] - document - AGENTS.md
-- [[Provisioning philosophy]] - document - CLAUDE.md
-- [[Python]] - document - CLAUDE.md
-- [[Python Standards]] - document - AGENTS.md
-- [[Rules_8]] - document - AGENTS.md
-- [[Supporting Integrations]] - document - AGENTS.md
-- [[What You Can Own]] - document - AGENTS.md
-- [[What You Don't Have]] - document - AGENTS.md
-- [[What You Have]] - document - AGENTS.md
-- [[When to Defer to Claude Code]] - document - AGENTS.md
-- [[Your Role in the Multi-Agent System]] - document - AGENTS.md
+- [[.setup_method()_12]] - code - gateway/tests/test_metadata_guard.py
+- [[.test_all_unicode_control_chars_stripped()]] - code - gateway/tests/test_metadata_guard.py
+- [[.test_check_for_exif_detects_magic_bytes()]] - code - gateway/tests/test_metadata_guard.py
+- [[.test_check_oversized_headers_flags_large_headers()]] - code - gateway/tests/test_metadata_guard.py
+- [[.test_check_oversized_headers_passes_normal_headers()]] - code - gateway/tests/test_metadata_guard.py
+- [[.test_internal_ip_patterns_comprehensive()]] - code - gateway/tests/test_metadata_guard.py
+- [[.test_sanitize_filename_normalizes_unicode()]] - code - gateway/tests/test_metadata_guard.py
+- [[.test_sanitize_filename_strips_control_chars()]] - code - gateway/tests/test_metadata_guard.py
+- [[.test_sanitize_headers_redacts_internal_ips()]] - code - gateway/tests/test_metadata_guard.py
+- [[.test_sanitize_headers_strips_sensitive()]] - code - gateway/tests/test_metadata_guard.py
+- [[.test_sanitize_headers_truncates_on_size_limit()]] - code - gateway/tests/test_metadata_guard.py
+- [[.test_sanitize_image_metadata_preserves_non_exif()]] - code - gateway/tests/test_metadata_guard.py
+- [[.test_sanitize_image_metadata_removes_exif()]] - code - gateway/tests/test_metadata_guard.py
+- [[Test comprehensive internal IP pattern matching.]] - rationale - gateway/tests/test_metadata_guard.py
+- [[Test that EXIF metadata is removed from image data.]] - rationale - gateway/tests/test_metadata_guard.py
+- [[Test that all specified unicode control characters are stripped.]] - rationale - gateway/tests/test_metadata_guard.py
+- [[Test that header sanitization stops at size limit.]] - rationale - gateway/tests/test_metadata_guard.py
+- [[Test that internal IPs are redacted from headers.]] - rationale - gateway/tests/test_metadata_guard.py
+- [[Test that non-EXIF data is preserved.]] - rationale - gateway/tests/test_metadata_guard.py
+- [[Test that normal-sized headers pass.]] - rationale - gateway/tests/test_metadata_guard.py
+- [[Test that oversized headers are flagged.]] - rationale - gateway/tests/test_metadata_guard.py
+- [[Test that sensitive headers are stripped.]] - rationale - gateway/tests/test_metadata_guard.py
+- [[Test that unicode control characters are stripped.]] - rationale - gateway/tests/test_metadata_guard.py
+- [[Test that unicode is normalized with NFKC.]] - rationale - gateway/tests/test_metadata_guard.py
+- [[TestMetadataGuard]] - code - gateway/tests/test_metadata_guard.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -48,10 +44,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 368]]
-- 1 edge to [[_COMMUNITY_Community 372]]
-- 1 edge to [[_COMMUNITY_Community 241]]
+- 2 edges to [[_COMMUNITY_Community 581]]
+- 2 edges to [[_COMMUNITY_Security Audit & Drift Detection]]
 
 ## Top bridge nodes
-- [[Goal Codex is a secondarytertiary agent used for test augmentation, validation, and safe refactors AFTER tests pass.]] - degree 14, connects to 2 communities
-- [[5) LANGUAGE & TOOLING STANDARDS]] - degree 7, connects to 1 community
+- [[TestMetadataGuard]] - degree 16, connects to 2 communities
+- [[.setup_method()_12]] - degree 2, connects to 1 community

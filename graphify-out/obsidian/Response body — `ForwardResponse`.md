@@ -1,12 +1,12 @@
 ---
 source_file: "shortcuts/README.md"
 type: "document"
-community: "Community 591"
+community: "Community 589"
 location: "L51"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_591
+  - community/Community_589
 ---
 
 # Response body — `ForwardResponse`
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[The `forward` contract (authoritative)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_591
+#graphify/document #graphify/EXTRACTED #community/Community_589

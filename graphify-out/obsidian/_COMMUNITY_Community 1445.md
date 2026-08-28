@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 1.00
 members: 2
 ---
 
 # Community 1445
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[SKILL_86]] - document - docker/config/hermes/skills/i-gitops/SKILL.md
-- [[Skill gitops_1]] - document - docker/config/hermes/skills/i-gitops/SKILL.md
+- [[SKILL_49]] - document - .agents/skills/i-scrum/SKILL.md
+- [[Skill scrum]] - document - .agents/skills/i-scrum/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/cross_bot_trust_ledger.py"
 type: "code"
-community: "Community 1016"
+community: "Community 41"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1016
+  - community/Community_41
 ---
 
 # cross_bot_trust_ledger.py
@@ -19,4 +19,4 @@ tags:
 - [[TrustDecayPolicy]] - `contains` [EXTRACTED]
 - [[TrustManager_1]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1016
+#graphify/code #graphify/EXTRACTED #community/Community_41

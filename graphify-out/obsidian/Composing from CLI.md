@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/himalaya/references/message-composition.md"
 type: "document"
-community: "Community 446"
+community: "Community 452"
 location: "L156"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_446
+  - community/Community_452
 ---
 
 # Composing from CLI
@@ -19,4 +19,4 @@ tags:
 - [[Reply (opens editor with quoted message)]] - `contains` [EXTRACTED]
 - [[Send from stdin]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_446
+#graphify/document #graphify/EXTRACTED #community/Community_452

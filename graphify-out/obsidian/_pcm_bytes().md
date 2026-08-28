@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "Community 101"
-location: "L809"
+community: "Community 89"
+location: "L909"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_101
+  - community/Community_89
 ---
 
 # _pcm_bytes()
@@ -18,6 +18,7 @@ tags:
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 - [[test_ws_device_log_during_speaking_still_recorded()]] - `calls` [EXTRACTED]
 - [[test_ws_direct_agent_calls_call_llm()]] - `calls` [EXTRACTED]
+- [[test_ws_direct_agent_streams_tts_before_full_reply()]] - `calls` [EXTRACTED]
 - [[test_ws_empty_transcript_goes_idle()]] - `calls` [EXTRACTED]
 - [[test_ws_full_utterance_state_sequence()]] - `calls` [EXTRACTED]
 - [[test_ws_hermes_agent_calls_call_agent()]] - `calls` [EXTRACTED]
@@ -30,6 +31,7 @@ tags:
 - [[test_ws_tell_agent_command_with_chained_instruction()]] - `calls` [EXTRACTED]
 - [[test_ws_tts_pipeline_sends_all_sentences()]] - `calls` [EXTRACTED]
 - [[test_ws_use_local_command_confirms_with_model_name()]] - `calls` [EXTRACTED]
+- [[test_ws_use_local_command_reflects_live_voice_model()]] - `calls` [EXTRACTED]
 - [[test_ws_use_model_command_intercepted()]] - `calls` [EXTRACTED]
 - [[test_ws_use_model_command_with_chained_question()]] - `calls` [EXTRACTED]
 - [[test_ws_volume_command_intercepted()]] - `calls` [EXTRACTED]
@@ -37,4 +39,4 @@ tags:
 - [[test_ws_volume_query_intercepted_returns_tracked_level()]] - `calls` [EXTRACTED]
 - [[test_ws_volume_query_unknown_state_intercepted()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_101
+#graphify/code #graphify/EXTRACTED #community/Community_89

@@ -1,14 +1,16 @@
 ---
 type: community
+cohesion: 1.00
 members: 1
 ---
 
 # Community 1778
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[__init__.py_11]] - code - gateway/soc/__init__.py
+- [[_audit_chain_heartbeat() — 60s hash-chain verify loop]] - code - gateway/ingest_api/lifespan.py
 
 ## Live Query (requires Dataview plugin)
 

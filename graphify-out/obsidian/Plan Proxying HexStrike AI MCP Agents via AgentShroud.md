@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/HEXSTRIKE_PROXY_PLAN.md"
 type: "document"
-community: "Community 809"
+community: "Community 803"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_809
+  - community/Community_803
 ---
 
 # Plan: Proxying HexStrike AI MCP Agents via AgentShroud
@@ -23,4 +23,4 @@ tags:
 - [[Verification (of the planning deliverable, once implementation begins)]] - `contains` [EXTRACTED]
 - [[What already exists (no build needed)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_809
+#graphify/document #graphify/EXTRACTED #community/Community_803

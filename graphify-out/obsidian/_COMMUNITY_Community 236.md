@@ -1,29 +1,47 @@
 ---
 type: community
-members: 16
+cohesion: 0.06
+members: 32
 ---
 
 # Community 236
 
-**Members:** 16 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 32 nodes
 
 ## Members
-- [[APPLE-SERVICES-SETUP]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[BOT_DEVELOPMENT_TEAM_RPI_SETUP]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Bot Identity Separation (Separate Accounts)]] - rationale - docs/security/SECURITY_ARCHITECTURE.md
-- [[Current Setup (CORRECT)]] - document - docs/setup/IMESSAGE_FIX.md
-- [[GOOGLE-CALENDAR-QUICK-SETUP]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[GOOGLE-SERVICES-SETUP]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
-- [[ICLOUD-SERVICES-SETUP]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
-- [[IMESSAGE_FIX]] - document - docs/setup/IMESSAGE_FIX.md
-- [[Next Steps_5]] - document - docs/setup/IMESSAGE_FIX.md
-- [[Option 1 Grant Automation Permission (REQUIRED)]] - document - docs/setup/IMESSAGE_FIX.md
-- [[Option 2 Check if Messages.app is Signed In]] - document - docs/setup/IMESSAGE_FIX.md
-- [[Status_10]] - document - docs/setup/IMESSAGE_FIX.md
-- [[The Fix]] - document - docs/setup/IMESSAGE_FIX.md
-- [[The Problem_1]] - document - docs/setup/IMESSAGE_FIX.md
-- [[Verification_18]] - document - docs/setup/IMESSAGE_FIX.md
-- [[iMessage Integration Fix - Using imsg + imessage-exporter]] - document - docs/setup/IMESSAGE_FIX.md
+- [[AWS Cloud Management & FinOps Agent_1]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Cost Optimization Priority_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Cross-Account & Future Proofing_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Decision Framework_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Deliverables_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[EBS Performance Analysis (Critical Pattern)_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Expertise_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[FY26 Cost Reduction Context_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Guardrails_12]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Identity_3]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[In-Scope Departments (Cost Reduction)_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Infrastructure You Must Know_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Operating Rules (Non-Negotiable)_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Out-of-Scope Departments (Inventory & Tag Only)_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Reports (`.reports`)_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Required Tags (All Resources)_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Resource Inventory CSV Schema_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Rightsizing Logic_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Rule 1 All Regions, Every Time_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Rule 2 Default Read-Only_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Rule 3 Script Everything_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Rule 4 Evidence-First Recommendations_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Rule 5 Safe Tagging_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Rule 6 Never Delete Automatically_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[SKILL_134]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Savings Levers (Ranked by Impact)_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Script Templates_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Scripts (`.scripts`)_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Tag Audit Process_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Tagging Standard_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Target 40% Full-Year Reduction on Global Services Resources_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Workflow_3]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,19 +49,3 @@ members: 16
 TABLE source_file, type FROM #community/Community_236
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 347]]
-- 1 edge to [[_COMMUNITY_Community 154]]
-- 1 edge to [[_COMMUNITY_Community 833]]
-- 1 edge to [[_COMMUNITY_Community 334]]
-- 1 edge to [[_COMMUNITY_Community 544]]
-- 1 edge to [[_COMMUNITY_Community 266]]
-- 1 edge to [[_COMMUNITY_Community 335]]
-
-## Top bridge nodes
-- [[BOT_DEVELOPMENT_TEAM_RPI_SETUP]] - degree 4, connects to 2 communities
-- [[APPLE-SERVICES-SETUP]] - degree 4, connects to 1 community
-- [[GOOGLE-SERVICES-SETUP]] - degree 3, connects to 1 community
-- [[ICLOUD-SERVICES-SETUP]] - degree 3, connects to 1 community
-- [[GOOGLE-CALENDAR-QUICK-SETUP]] - degree 2, connects to 1 community

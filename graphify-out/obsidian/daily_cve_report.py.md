@@ -1,18 +1,17 @@
 ---
 source_file: "gateway/security/daily_cve_report.py"
 type: "code"
-community: "Community 779"
+community: "Community 100"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_779
+  - community/Community_100
 ---
 
 # daily_cve_report.py
 
 ## Connections
-- [[AgentShroud Docker Compose (Production)]] - `shares_data_with` [EXTRACTED]
 - [[OpenAPI soc endpoint group]] - `references` [EXTRACTED]
 - [[Security Scan Workflow]] - `semantically_similar_to` [INFERRED]
 - [[_already_checked_upstream_today()]] - `contains` [EXTRACTED]
@@ -43,4 +42,4 @@ tags:
 - [[trivy_report.py]] - `imports_from` [EXTRACTED]
 - [[upstream_cve_check_scheduler()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_779
+#graphify/code #graphify/EXTRACTED #community/Community_100

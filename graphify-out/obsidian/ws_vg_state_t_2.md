@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/app_main.c"
 type: "code"
-community: "ESP32 Firmware"
-location: "L392"
+community: "Community 308"
+location: "L409"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ESP32_Firmware
+  - community/Community_308
 ---
 
 # ws_vg_state_t
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_on_vg_state()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ESP32_Firmware
+#graphify/code #graphify/EXTRACTED #community/Community_308

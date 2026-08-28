@@ -1,61 +1,78 @@
 ---
 type: community
-members: 48
+cohesion: 0.04
+members: 63
 ---
 
 # Community 86
 
-**Members:** 48 nodes
+**Cohesion:** 0.04 - loosely connected
+**Members:** 63 nodes
 
 ## Members
-- [[._maybe_record_trust_violation()]] - code - gateway/proxy/pipeline.py
-- [[._process_inbound_core()]] - code - gateway/proxy/pipeline.py
-- [[._process_outbound_core()]] - code - gateway/proxy/pipeline.py
-- [[.append()]] - code - gateway/proxy/pipeline.py
-- [[.append_block()]] - code - gateway/proxy/pipeline.py
-- [[.append_owner_bypass()]] - code - gateway/proxy/pipeline.py
-- [[.entries()_1]] - code - gateway/proxy/pipeline.py
-- [[.process_inbound()]] - code - gateway/proxy/pipeline.py
-- [[.process_outbound()]] - code - gateway/proxy/pipeline.py
-- [[.test_blocked_non_owner_drops_update_and_increments_stats()]] - code - gateway/tests/test_telegram_pipeline.py
-- [[.test_blocked_owner_message_allowed_through_with_sanitized_text()]] - code - gateway/tests/test_telegram_pipeline.py
-- [[.test_no_pipeline_falls_back_to_direct_sanitizer()]] - code - gateway/tests/test_telegram_pipeline.py
-- [[.test_outbound_blocked_replaces_text()]] - code - gateway/tests/test_telegram_pipeline.py
-- [[.test_pipeline_exception_allows_owner_through()]] - code - gateway/tests/test_telegram_pipeline.py
-- [[.test_pipeline_exception_fails_closed_for_non_owner()]] - code - gateway/tests/test_telegram_pipeline.py
-- [[.test_pipeline_process_inbound_called_with_skip_context_guard()]] - code - gateway/tests/test_telegram_pipeline.py
-- [[.test_pipeline_process_outbound_called_for_send_message()]] - code - gateway/tests/test_telegram_pipeline.py
-- [[.test_send_message_draft_also_runs_outbound_filtering()]] - code - gateway/tests/test_telegram_pipeline.py
-- [[.to_dict()_1]] - code - gateway/proxy/pipeline.py
-- [[An entry in the SHA-256 hash chain audit ledger.]] - rationale - gateway/proxy/pipeline.py
-- [[Any_19]] - code - gateway/proxy/pipeline.py
-- [[Append to the chain with guaranteed SQLite persistence.          Used exclusivel]] - rationale - gateway/proxy/pipeline.py
-- [[AuditChainEntry]] - code - gateway/proxy/pipeline.py
-- [[Build a TelegramAPIProxy with mocked RBAC and rate limiter.      RBACConfig and]] - rationale - gateway/tests/test_telegram_pipeline.py
-- [[PipelineAction]] - code - gateway/proxy/pipeline.py
-- [[PipelineResult]] - code - gateway/proxy/pipeline.py
-- [[PipelineResult_1]] - code - gateway/tests/test_telegram_pipeline.py
-- [[Process an inbound message through the full security pipeline.]] - rationale - gateway/proxy/pipeline.py
-- [[Process an inbound message through the full security pipeline.          Thin wra]] - rationale - gateway/proxy/pipeline.py
-- [[Process an outbound response through the security pipeline.]] - rationale - gateway/proxy/pipeline.py
-- [[Process an outbound response through the security pipeline.          Thin wrappe]] - rationale - gateway/proxy/pipeline.py
-- [[Record a trust-score violation and propagate cross-bot decay.          Called on]] - rationale - gateway/proxy/pipeline.py
-- [[Record an owner guard-bypass in the tamper-evident chain (SCRUM-95).          Th]] - rationale - gateway/proxy/pipeline.py
-- [[Result of running a message through the security pipeline.]] - rationale - gateway/proxy/pipeline.py
-- [[TestInboundFallbackToDirectSanitizer]] - code - gateway/tests/test_telegram_pipeline.py
-- [[TestInboundPipelineBlockedNonOwner]] - code - gateway/tests/test_telegram_pipeline.py
-- [[TestInboundPipelineBlockedOwner]] - code - gateway/tests/test_telegram_pipeline.py
-- [[TestInboundPipelineExceptionNonOwner]] - code - gateway/tests/test_telegram_pipeline.py
-- [[TestInboundPipelineExceptionOwner]] - code - gateway/tests/test_telegram_pipeline.py
-- [[TestInboundPipelineWired]] - code - gateway/tests/test_telegram_pipeline.py
-- [[TestOutboundPipelineBlocked]] - code - gateway/tests/test_telegram_pipeline.py
-- [[TestOutboundPipelineWired]] - code - gateway/tests/test_telegram_pipeline.py
-- [[_getUpdates_response()]] - code - gateway/tests/test_telegram_pipeline.py
-- [[_make_pipeline_result()]] - code - gateway/tests/test_telegram_pipeline.py
-- [[_make_proxy()_4]] - code - gateway/tests/test_telegram_pipeline.py
-- [[_make_update()_1]] - code - gateway/tests/test_telegram_pipeline.py
-- [[sendMessageDraft must be suppressed to prevent draft flicker leaks.]] - rationale - gateway/tests/test_telegram_pipeline.py
-- [[test_telegram_pipeline.py]] - code - gateway/tests/test_telegram_pipeline.py
+- [[.test_chat_allows_valid_token()]] - code - chatbot/test_main.py
+- [[.test_chat_allows_when_no_token_configured()]] - code - chatbot/test_main.py
+- [[.test_chat_requires_auth_when_token_set()]] - code - chatbot/test_main.py
+- [[.test_chat_success_returns_parsed_response()]] - code - chatbot/test_main.py
+- [[.test_get_auth_token_falls_back_to_env_when_no_secret_file()]] - code - chatbot/test_main.py
+- [[.test_get_auth_token_reads_secret_file_over_env()]] - code - chatbot/test_main.py
+- [[.test_health_degraded_without_client()]] - code - chatbot/test_main.py
+- [[.test_health_healthy_with_client()]] - code - chatbot/test_main.py
+- [[.test_internal_error_not_leaked()]] - code - chatbot/test_main.py
+- [[.test_lifespan_logs_when_auth_token_configured()]] - code - chatbot/test_main.py
+- [[.test_lifespan_reads_api_key_from_secret_file()]] - code - chatbot/test_main.py
+- [[.test_lifespan_with_api_key_initializes_async_client()]] - code - chatbot/test_main.py
+- [[.test_lifespan_without_api_key_leaves_client_none()]] - code - chatbot/test_main.py
+- [[.test_openai_auth_error_returns_503()]] - code - chatbot/test_main.py
+- [[.test_openai_rate_limit_error_returns_429()]] - code - chatbot/test_main.py
+- [[.test_rate_limit_enforced()]] - code - chatbot/test_main.py
+- [[.test_uses_async_openai_client()]] - code - chatbot/test_main.py
+- [[A successful OpenAI completion returns 200 with the parsed fields         via th]] - rationale - chatbot/test_main.py
+- [[ChatRequest]] - code - chatbot/main.py
+- [[ChatResponse]] - code - chatbot/main.py
+- [[Exceeding the rate limit returns 429.]] - rationale - chatbot/test_main.py
+- [[FastAPI_1]] - code - chatbot/main.py
+- [[FastAPI lifespan - initialize OpenAI client and persona once.]] - rationale - chatbot/main.py
+- [[HTTPAuthorizationCredentials]] - code - chatbot/main.py
+- [[Health check endpoint for Docker.      Reports degraded status when the OpenAI c]] - rationale - chatbot/main.py
+- [[Health endpoint reports degraded when OpenAI client is not available.]] - rationale - chatbot/test_main.py
+- [[Health endpoint reports healthy when OpenAI client is available.]] - rationale - chatbot/test_main.py
+- [[Import chatbot.main with a fresh module state (no real OpenAI).]] - rationale - chatbot/test_main.py
+- [[Isaiah Chat Service - Phase 3 MVP Minimal chat service with Isaiah's personality]] - rationale - chatbot/main.py
+- [[Load Isaiah's persona from IDENTITY, SOUL, and USER files.]] - rationale - chatbot/main.py
+- [[OpenAI AuthenticationError returns 503 without leaking the key.]] - rationale - chatbot/test_main.py
+- [[OpenAI exceptions should not leak internal details to the client.]] - rationale - chatbot/test_main.py
+- [[OpenAI's own RateLimitError is translated to a 429 for the caller.]] - rationale - chatbot/test_main.py
+- [[Process chat message with Isaiah's personality.]] - rationale - chatbot/main.py
+- [[Raise 429 if the client has exceeded the rate limit.]] - rationale - chatbot/main.py
+- [[Read the expected auth token from env or secrets.]] - rationale - chatbot/main.py
+- [[Request_1]] - code - chatbot/main.py
+- [[Require valid Bearer token for chat endpoints.      When CHATBOT_AUTH_TOKEN is n]] - rationale - chatbot/main.py
+- [[TestAsyncClient]] - code - chatbot/test_main.py
+- [[TestAuth]] - code - chatbot/test_main.py
+- [[TestAuthTokenSource]] - code - chatbot/test_main.py
+- [[TestErrorSanitization]] - code - chatbot/test_main.py
+- [[TestHealthCheck]] - code - chatbot/test_main.py
+- [[TestLifespan]] - code - chatbot/test_main.py
+- [[TestRateLimit]] - code - chatbot/test_main.py
+- [[Tests for chatbotmain.py.  Covers the four SCRUM-109 fixes 1. Auth enforcement]] - rationale - chatbot/test_main.py
+- [[Verify the module uses AsyncOpenAI, not sync OpenAI.]] - rationale - chatbot/test_main.py
+- [[When CHATBOT_AUTH_TOKEN is not set, chat is open (backward compat).]] - rationale - chatbot/test_main.py
+- [[When CHATBOT_AUTH_TOKEN is set and correct token given, request proceeds.]] - rationale - chatbot/test_main.py
+- [[When CHATBOT_AUTH_TOKEN is set, chat without a token returns 401.]] - rationale - chatbot/test_main.py
+- [[When the Docker secret file exists, it wins over the env var.]] - rationale - chatbot/test_main.py
+- [[When the Docker secret file for the OpenAI key exists, it wins         over the]] - rationale - chatbot/test_main.py
+- [[_check_rate_limit()]] - code - chatbot/main.py
+- [[_get_auth_token()]] - code - chatbot/main.py
+- [[app()]] - code - chatbot/test_main.py
+- [[chat()]] - code - chatbot/main.py
+- [[client()]] - code - chatbot/test_main.py
+- [[health_check()]] - code - chatbot/main.py
+- [[lifespan()]] - code - chatbot/main.py
+- [[load_persona_files()]] - code - chatbot/main.py
+- [[main.py]] - code - chatbot/main.py
+- [[require_auth()]] - code - chatbot/main.py
+- [[test_main.py]] - code - chatbot/test_main.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -65,22 +82,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 34 edges to [[_COMMUNITY_Community 22]]
-- 13 edges to [[_COMMUNITY_Community 870]]
-- 12 edges to [[_COMMUNITY_Community 4]]
-- 9 edges to [[_COMMUNITY_Community 109]]
-- 4 edges to [[_COMMUNITY_Community 1016]]
-- 4 edges to [[_COMMUNITY_Community 35]]
-- 4 edges to [[_COMMUNITY_Community 15]]
-- 3 edges to [[_COMMUNITY_Community 74]]
-- 2 edges to [[_COMMUNITY_Community 78]]
-- 2 edges to [[_COMMUNITY_Community 50]]
-- 1 edge to [[_COMMUNITY_Community 331]]
-- 1 edge to [[_COMMUNITY_Community 3]]
+- 4 edges to [[_COMMUNITY_Community 24]]
+- 2 edges to [[_COMMUNITY_Community 14]]
 
 ## Top bridge nodes
-- [[PipelineAction]] - degree 50, connects to 9 communities
-- [[PipelineResult]] - degree 26, connects to 6 communities
-- [[Any_19]] - degree 14, connects to 4 communities
-- [[AuditChainEntry]] - degree 11, connects to 4 communities
-- [[test_telegram_pipeline.py]] - degree 15, connects to 1 community
+- [[ChatRequest]] - degree 3, connects to 1 community
+- [[ChatResponse]] - degree 3, connects to 1 community
+- [[.test_chat_success_returns_parsed_response()]] - degree 3, connects to 1 community
+- [[.test_openai_rate_limit_error_returns_429()]] - degree 3, connects to 1 community
+- [[.test_internal_error_not_leaked()]] - degree 3, connects to 1 community

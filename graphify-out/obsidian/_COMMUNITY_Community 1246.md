@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1246
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_106]] - document - docker/config/openclaw/skills/i-socrates/README.md
-- [[README_111]] - document - docker/config/openclaw/skills/i-socrates/README.md
-- [[Related Skills_115]] - document - docker/config/openclaw/skills/i-socrates/README.md
-- [[Socrates — Dialogue Architect_4]] - document - docker/config/openclaw/skills/i-socrates/README.md
-- [[Usage_116]] - document - docker/config/openclaw/skills/i-socrates/README.md
+- [[Example 1 User Asks for Password (Chat)]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[Example 2 User Asks for Password (Console)]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[Example 3 User Wants Service Configured]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[Example 4 User Insists on Seeing Password]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[🧪 Decision Examples]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,3 +22,9 @@ members: 5
 TABLE source_file, type FROM #community/Community_1246
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 558]]
+
+## Top bridge nodes
+- [[🧪 Decision Examples]] - degree 5, connects to 1 community

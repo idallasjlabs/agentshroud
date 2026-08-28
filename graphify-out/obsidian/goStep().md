@@ -1,13 +1,13 @@
 ---
 source_file: "gateway/web/templates/installer.html"
 type: "code"
-community: "Community 1797"
+community: "Community 1886"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1797
+  - community/Community_1886
 ---
 
 # goStep()
 
-#graphify/code #graphify/EXTRACTED #community/Community_1797
+#graphify/code #graphify/EXTRACTED #community/Community_1886

@@ -1,33 +1,30 @@
 ---
 type: community
-members: 20
+cohesion: 0.13
+members: 15
 ---
 
 # Community 608
 
-**Members:** 20 nodes
+**Cohesion:** 0.13 - loosely connected
+**Members:** 15 nodes
 
 ## Members
-- [[Dialogue Adaptations]] - document - .agents/skills/i-socrates/SKILL.md
-- [[Dialogue Techniques]] - document - .agents/skills/i-socrates/SKILL.md
-- [[EXPERT]] - document - .agents/skills/i-socrates/SKILL.md
-- [[ElevenLabs v3 Audio Tags]] - document - .agents/skills/i-socrates/SKILL.md
-- [[Episode Closing (Mandatory for OKE)]] - document - .agents/skills/i-socrates/SKILL.md
-- [[Expert Persona]] - document - .agents/skills/i-socrates/SKILL.md
-- [[HOST]] - document - .agents/skills/i-socrates/SKILL.md
-- [[Input Requirements_8]] - document - .agents/skills/i-socrates/SKILL.md
-- [[OKE Channel — CPA Exam Prep Dialogue Guidelines]] - document - .agents/skills/i-socrates/SKILL.md
-- [[Output Format_11]] - document - .agents/skills/i-socrates/SKILL.md
-- [[Persona_6]] - document - .agents/skills/i-socrates/SKILL.md
-- [[Quality Checklist_7]] - document - .agents/skills/i-socrates/SKILL.md
-- [[Role_33]] - document - .agents/skills/i-socrates/SKILL.md
-- [[SKILL_55]] - document - .agents/skills/i-socrates/SKILL.md
-- [[Socrates Dialogue Architect README]] - document - .agents/skills/i-socrates/README.md
-- [[Socrates — Dialogue Architect_1]] - document - .agents/skills/i-socrates/SKILL.md
-- [[Socrates — Dialogue Architect_7]] - document - .agents/skills/i-socrates/SKILL.md
-- [[Speaker Definitions]] - document - .agents/skills/i-socrates/SKILL.md
-- [[System Prompt_6]] - document - .agents/skills/i-socrates/SKILL.md
-- [[User Prompt Template_2]] - document - .agents/skills/i-socrates/SKILL.md
+- [[SECTION 1 — SYSTEM OVERVIEW (Plain English)_1]] - document - docker/config/hermes/skills/i-sad/SKILL.md
+- [[SECTION 10 — SHUTDOWN & RECOVERY SEQUENCE_1]] - document - docker/config/hermes/skills/i-sad/SKILL.md
+- [[SECTION 11 — KNOWN FAILURE MODES & TROUBLESHOOTING MATRIX_1]] - document - docker/config/hermes/skills/i-sad/SKILL.md
+- [[SECTION 12 — MERMAID FLOWCHART (Complete System Map)_1]] - document - docker/config/hermes/skills/i-sad/SKILL.md
+- [[SECTION 13 — QUICK REFERENCE CARD_1]] - document - docker/config/hermes/skills/i-sad/SKILL.md
+- [[SECTION 2 — COMPLETE FILE & DIRECTORY MAP_1]] - document - docker/config/hermes/skills/i-sad/SKILL.md
+- [[SECTION 3 — EVERY ENVIRONMENT VARIABLE_1]] - document - docker/config/hermes/skills/i-sad/SKILL.md
+- [[SECTION 4 — ALL EXTERNAL DEPENDENCIES_1]] - document - docker/config/hermes/skills/i-sad/SKILL.md
+- [[SECTION 5 — PREREQUISITE SETUP (Step-by-Step)_1]] - document - docker/config/hermes/skills/i-sad/SKILL.md
+- [[SECTION 6 — STARTUP SEQUENCE (Exact Order of Operations)_1]] - document - docker/config/hermes/skills/i-sad/SKILL.md
+- [[SECTION 7 — EVERY MODULE & FUNCTION REFERENCE_1]] - document - docker/config/hermes/skills/i-sad/SKILL.md
+- [[SECTION 8 — DATA FLOW_1]] - document - docker/config/hermes/skills/i-sad/SKILL.md
+- [[SECTION 9 — ERROR CATALOG_1]] - document - docker/config/hermes/skills/i-sad/SKILL.md
+- [[SKILL_110]] - document - docker/config/hermes/skills/i-sad/SKILL.md
+- [[System Audit & Documentation_1]] - document - docker/config/hermes/skills/i-sad/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,9 +32,3 @@ members: 20
 TABLE source_file, type FROM #community/Community_608
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 658]]
-
-## Top bridge nodes
-- [[Socrates — Dialogue Architect_7]] - degree 14, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/raspberry-pi.md"
 type: "document"
-community: "Community 417"
+community: "Community 422"
 location: "L93"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_417
+  - community/Community_422
 ---
 
 # Updating to Latest Release
@@ -16,4 +16,4 @@ tags:
 - [[From Git (tracking main)]] - `contains` [EXTRACTED]
 - [[From a Tagged Release]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_417
+#graphify/document #graphify/EXTRACTED #community/Community_422

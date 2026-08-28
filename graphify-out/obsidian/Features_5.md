@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/browser-fetch/SKILL.md"
 type: "document"
-community: "Community 1083"
+community: "Community 1078"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1083
+  - community/Community_1078
 ---
 
 # Features
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Browser Fetch Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1083
+#graphify/document #graphify/EXTRACTED #community/Community_1078

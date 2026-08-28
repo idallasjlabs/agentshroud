@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_image_verifier.py"
 type: "code"
-community: "Community 477"
+community: "Community 480"
 location: "L106"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_477
+  - community/Community_480
 ---
 
 # test_verify_images_exception_handled()
@@ -16,4 +16,4 @@ tags:
 - [[verify_images()]] - `calls` [EXTRACTED]
 - [[verify_images exception from one task is caught, others continue.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_477
+#graphify/code #graphify/EXTRACTED #community/Community_480

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/agentshroud-redteam/references/module-inventory.md"
 type: "document"
-community: "Community 1273"
+community: "Community 1269"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1273
+  - community/Community_1269
 ---
 
 # AgentShroud Module Inventory
@@ -17,4 +17,4 @@ tags:
 - [[module-inventory_1]] - `contains` [EXTRACTED]
 - [[v0.7.0 New Modules (Tier 2+3 + Hardening)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1273
+#graphify/document #graphify/EXTRACTED #community/Community_1269

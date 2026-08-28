@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-mcpm-doctor/SKILL.md"
 type: "document"
-community: "Community 458"
+community: "Community 462"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_458
+  - community/Community_462
 ---
 
 # Skill: MCP Doctor (MCPM-DOCTOR)
@@ -21,4 +21,4 @@ tags:
 - [[SKILL_33]] - `contains` [EXTRACTED]
 - [[When to Invoke_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_458
+#graphify/document #graphify/EXTRACTED #community/Community_462

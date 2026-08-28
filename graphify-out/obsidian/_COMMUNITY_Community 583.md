@@ -1,29 +1,31 @@
 ---
 type: community
+cohesion: 0.12
 members: 16
 ---
 
 # Community 583
 
+**Cohesion:** 0.12 - loosely connected
 **Members:** 16 nodes
 
 ## Members
-- [[Configuration  Environment Variables_18]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[Function Details_24]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[Key Classes  Functions_27]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[Key Differences from DockerEngine]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[PodmanEngine.__init__(cli)]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[PodmanEngine._detect_compose()]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[PodmanEngine.compose_up(file, detach)  compose_down(file)]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[PodmanEngine.generate_systemd(name)]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[PodmanEngine.health_check()]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[PodmanEngine.ps(all)]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[PodmanEngine.run(image, name, , volumes, ...)]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[Purpose_145]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[Related_31]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[Responsibilities_29]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[podman_engine.py_2]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
-- [[podman_engine.py_1]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
+- [[Allowlist Behavior]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
+- [[Audit Log]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
+- [[Configuration (DNSFilterConfig)]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
+- [[DNSFilter._detect_tunneling(domain)]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
+- [[DNSFilter.check(domain, agent_id)]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
+- [[EntropyCalculator.shannon_entropy(s)]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
+- [[Environment Variables_9]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
+- [[Function Details_32]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
+- [[Key Classes  Functions_35]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
+- [[Mode Enforce vs Monitor_4]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
+- [[Purpose_153]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
+- [[Related_39]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
+- [[Responsibilities_37]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
+- [[Threat Model_8]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
+- [[dns_filter.py_2]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
+- [[dns_filter.py_1]] - document - docs/vault/02 - Modules/Security Modules/dns_filter.py.md
 
 ## Live Query (requires Dataview plugin)
 

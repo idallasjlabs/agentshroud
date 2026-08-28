@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1232
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[MCP Doctor (MCPM-DOCTOR)_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/README.md
-- [[Purpose_92]] - document - docker/config/openclaw/skills/i-mcpm-doctor/README.md
-- [[README_97]] - document - docker/config/openclaw/skills/i-mcpm-doctor/README.md
-- [[Related Skills_100]] - document - docker/config/openclaw/skills/i-mcpm-doctor/README.md
-- [[Usage_102]] - document - docker/config/openclaw/skills/i-mcpm-doctor/README.md
+- [[Pull Request Generator (PR)_2]] - document - docker/config/openclaw/skills/i-pr/README.md
+- [[Purpose_97]] - document - docker/config/openclaw/skills/i-pr/README.md
+- [[README_102]] - document - docker/config/openclaw/skills/i-pr/README.md
+- [[Related Skills_106]] - document - docker/config/openclaw/skills/i-pr/README.md
+- [[Usage_107]] - document - docker/config/openclaw/skills/i-pr/README.md
 
 ## Live Query (requires Dataview plugin)
 

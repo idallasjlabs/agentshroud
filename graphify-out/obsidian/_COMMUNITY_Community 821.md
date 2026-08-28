@@ -1,25 +1,25 @@
 ---
 type: community
-members: 12
+cohesion: 0.20
+members: 10
 ---
 
 # Community 821
 
-**Members:** 12 nodes
+**Cohesion:** 0.20 - loosely connected
+**Members:** 10 nodes
 
 ## Members
-- [[.test_ai_security_research_domains_in_allowlist()]] - code - gateway/tests/test_security_regressions_v1_2.py
-- [[.test_duckduckgo_in_permanent_allowlist()]] - code - gateway/tests/test_security_regressions_v1_2.py
-- [[.test_failover_search_engines_in_allowlist()]] - code - gateway/tests/test_security_regressions_v1_2.py
-- [[.test_hc_ping_in_permanent_allowlist()]] - code - gateway/tests/test_security_regressions_v1_2.py
-- [[.test_nousresearch_in_permanent_allowlist()]] - code - gateway/tests/test_security_regressions_v1_2.py
-- [[AI-security researchcompetitive-intel domains must be allowlisted.          The]] - rationale - gateway/tests/test_security_regressions_v1_2.py
-- [[Hermes base image is from nousresearch.com — must be in egress allowlist.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
-- [[Hermes ddgs-based web search requires duckduckgo.com.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
-- [[Hermes heartbeat uses hc-ping.com for dead-man's switch.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
-- [[PR190 failover search engines must be allowlisted.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
-- [[TestHermesEgressAllowlist]] - code - gateway/tests/test_security_regressions_v1_2.py
-- [[Verify that Hermes-specific egress destinations are in the canonical allowlist.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[7. Deployment]] - document - docs/papers/agentshroud-whitepaper.md
+- [[7.1 Supported Platforms]] - document - docs/papers/agentshroud-whitepaper.md
+- [[7.2 Quick Start]] - document - docs/papers/agentshroud-whitepaper.md
+- [[Applied By_1]] - document - docs/vault/03 - Configuration/ssh-config.md
+- [[Key Configuration]] - document - docs/vault/03 - Configuration/ssh-config.md
+- [[Purpose_182]] - document - docs/vault/03 - Configuration/ssh-config.md
+- [[Related Notes_26]] - document - docs/vault/03 - Configuration/ssh-config.md
+- [[Relationship to agentshroud.yaml]] - document - docs/vault/03 - Configuration/ssh-config.md
+- [[SSH Config]] - document - docs/vault/03 - Configuration/ssh-config.md
+- [[ssh-config]] - document - docs/vault/03 - Configuration/ssh-config.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,10 +29,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 35]]
-- 1 edge to [[_COMMUNITY_Community 174]]
-- 1 edge to [[_COMMUNITY_Community 61]]
-- 1 edge to [[_COMMUNITY_Community 26]]
+- 1 edge to [[_COMMUNITY_Community 316]]
+- 1 edge to [[_COMMUNITY_Community 402]]
+- 1 edge to [[_COMMUNITY_Community 203]]
 
 ## Top bridge nodes
-- [[TestHermesEgressAllowlist]] - degree 11, connects to 4 communities
+- [[7. Deployment]] - degree 4, connects to 1 community
+- [[Key Configuration]] - degree 3, connects to 1 community
+- [[ssh-config]] - degree 2, connects to 1 community

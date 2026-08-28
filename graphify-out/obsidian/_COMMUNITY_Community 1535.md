@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 1.00
 members: 2
 ---
 
 # Community 1535
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[SharedMemoryManager Merged Memory Tests]] - code - gateway/tests/test_shared_memory.py
-- [[SharedMemoryManager Topic-Scoped Memory Tests]] - code - gateway/tests/test_shared_memory.py
+- [[toggle-readonly.sh]] - code - docker/scripts/toggle-readonly.sh
+- [[toggle-readonly.sh script]] - code - docker/scripts/toggle-readonly.sh
 
 ## Live Query (requires Dataview plugin)
 

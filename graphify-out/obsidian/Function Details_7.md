@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md"
 type: "document"
-community: "Community 378"
+community: "Community 382"
 location: "L68"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_378
+  - community/Community_382
 ---
 
 # Function Details
@@ -19,8 +19,7 @@ tags:
 - [[`HTTPConnectProxy._relay(reader, writer, idle_timeout=120.0)` (static)]] - `contains` [EXTRACTED]
 - [[`HTTPConnectProxy._relay_and_scan(reader, writer, host, scan_limit=410241024)`]] - `contains` [EXTRACTED]
 - [[`HTTPConnectProxy.get_stats()`]] - `contains` [EXTRACTED]
-- [[`HTTPConnectProxy.start()`]] - `contains` [EXTRACTED]
 - [[`HTTPConnectProxy.stop()`]] - `contains` [EXTRACTED]
 - [[http_proxy.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_378
+#graphify/document #graphify/EXTRACTED #community/Community_382

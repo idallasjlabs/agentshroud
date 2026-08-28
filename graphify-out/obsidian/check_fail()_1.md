@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/verify-security.sh"
 type: "code"
-community: "Community 752"
+community: "Community 751"
 location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_752
+  - community/Community_751
 ---
 
 # check_fail()
@@ -16,4 +16,4 @@ tags:
 - [[verify-security.sh]] - `defines` [EXTRACTED]
 - [[verify-security.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_752
+#graphify/code #graphify/EXTRACTED #community/Community_751

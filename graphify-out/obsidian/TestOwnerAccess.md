@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "Community 75"
+community: "Group RBAC & Tool ACL"
 location: "L55"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_75
+  - community/Group_RBAC__Tool_ACL
 ---
 
 # TestOwnerAccess
@@ -23,4 +23,4 @@ tags:
 - [[ToolACLEnforcer]] - `uses` [INFERRED]
 - [[test_tool_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_75
+#graphify/code #graphify/INFERRED #community/Group_RBAC__Tool_ACL

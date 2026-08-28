@@ -1,41 +1,52 @@
 ---
 type: community
-members: 28
+cohesion: 0.10
+members: 37
 ---
 
 # Community 187
 
-**Members:** 28 nodes
+**Cohesion:** 0.10 - loosely connected
+**Members:** 37 nodes
 
 ## Members
-- [[.test_empty_tool_calls_not_a_tool_call()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[.test_empty_tool_results_not_a_tool_call()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[.test_non_owner_cross_path_plain_message_still_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[.test_owner_message_mentioning_other_users_file_not_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[.test_owner_plain_message_with_path_not_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[.test_plain_chat_not_a_tool_call()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[.test_plain_message_mentioning_config_yaml_not_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[.test_plain_message_mentioning_etc_passwd_not_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[.test_plain_message_mentioning_memory_not_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[.test_tool_call_with_unauthorized_path_still_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[.test_tool_calls_key_detected()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[.test_tool_results_key_detected()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[.test_type_field_message_not_tool_call()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[.test_type_field_tool_call()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[FileSandbox must NOT block plain chat messages that mention file-like words.]] - rationale - gateway/tests/test_file_sandbox_message_gate.py
-- [[MiddlewareManager with real session_manager, all other deps mocked.      Uses __]] - rationale - gateway/tests/test_file_sandbox_message_gate.py
-- [[Owner (8096968754) must not be blocked by content-pattern scanning.     They sho]] - rationale - gateway/tests/test_file_sandbox_message_gate.py
-- [[TestFileSandboxSkippedForPlainMessages]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[TestIsToolCallRequest]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[TestOwnerBypassContentPatternChecks]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[Unit tests for the _is_tool_call_request helper (TDD RED phase).]] - rationale - gateway/tests/test_file_sandbox_message_gate.py
-- [[_plain_msg()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[_tool_call_msg()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[_tool_result_msg()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[manager()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[session_manager()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[temp_workspace()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[test_file_sandbox_message_gate.py]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[.test_at_least_one()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_baseline_at_least_two()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_baseline_three_when_openscap_not_run()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_capped_at_five()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_defined_when_all_passing_no_report_on_disk()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_defined_when_oscap_binary_present()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_five_when_openscap_clean()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_four_when_openscap_running_with_failures()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_four_when_sbom_and_clean_trivy()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_managed_when_has_failures()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_one_when_sbom_exists()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_three_when_semgrep_and_precommit_present()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_zero_when_no_sbom_no_trivy()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_zero_when_not_run()]] - code - gateway/tests/test_scanner_integration.py
+- [[Any_70]] - code - gateway/tests/test_scanner_integration.py
+- [[Score domain 10 Compliance Auditing (0-5).      0=not run, 2=has failures, 3=ze]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 11 Secure Development (0-5).      1=Trivy in build, 2=semgrep conf]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 1 Image Integrity (0-5).      1=SBOM exists, 2=Trivy ran, 3=zero c]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 4 Container Hardening (0-5).      Baseline of 3 because docker-com]] - rationale - gateway/security/scanner_integration.py
+- [[TestScoreComplianceAuditing]] - code - gateway/tests/test_scanner_integration.py
+- [[TestScoreContainerHardening]] - code - gateway/tests/test_scanner_integration.py
+- [[TestScoreImageIntegrity]] - code - gateway/tests/test_scanner_integration.py
+- [[TestScoreSecretsManagement]] - code - gateway/tests/test_scanner_integration.py
+- [[TestScoreSecureDevelopment]] - code - gateway/tests/test_scanner_integration.py
+- [[_clamav_clean()]] - code - gateway/tests/test_scanner_integration.py
+- [[_clamav_infected()]] - code - gateway/tests/test_scanner_integration.py
+- [[_openscap_clean()]] - code - gateway/tests/test_scanner_integration.py
+- [[_openscap_not_run()]] - code - gateway/tests/test_scanner_integration.py
+- [[_openscap_warn()]] - code - gateway/tests/test_scanner_integration.py
+- [[_score_compliance_auditing()]] - code - gateway/security/scanner_integration.py
+- [[_score_container_hardening()]] - code - gateway/security/scanner_integration.py
+- [[_score_image_integrity()]] - code - gateway/security/scanner_integration.py
+- [[_score_secure_development()]] - code - gateway/security/scanner_integration.py
+- [[_trivy_clean()]] - code - gateway/tests/test_scanner_integration.py
+- [[_trivy_critical()]] - code - gateway/tests/test_scanner_integration.py
+- [[_trivy_not_run()]] - code - gateway/tests/test_scanner_integration.py
+- [[test_scanner_integration.py]] - code - gateway/tests/test_scanner_integration.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -45,12 +56,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_Community 6]]
-- 5 edges to [[_COMMUNITY_Community 174]]
+- 27 edges to [[_COMMUNITY_Community 196]]
+- 12 edges to [[_COMMUNITY_Community 201]]
+- 9 edges to [[_COMMUNITY_Community 72]]
+- 9 edges to [[_COMMUNITY_Community 183]]
+- 8 edges to [[_COMMUNITY_Community 399]]
+- 4 edges to [[_COMMUNITY_Community 863]]
+- 4 edges to [[_COMMUNITY_Community 539]]
+- 4 edges to [[_COMMUNITY_Community 216]]
+- 4 edges to [[_COMMUNITY_Community 771]]
+- 2 edges to [[_COMMUNITY_Community 983]]
 
 ## Top bridge nodes
-- [[test_file_sandbox_message_gate.py]] - degree 12, connects to 2 communities
-- [[TestIsToolCallRequest]] - degree 12, connects to 2 communities
-- [[TestFileSandboxSkippedForPlainMessages]] - degree 9, connects to 2 communities
-- [[TestOwnerBypassContentPatternChecks]] - degree 8, connects to 2 communities
-- [[session_manager()]] - degree 2, connects to 1 community
+- [[test_scanner_integration.py]] - degree 61, connects to 10 communities
+- [[_score_compliance_auditing()]] - degree 10, connects to 4 communities
+- [[_score_image_integrity()]] - degree 10, connects to 4 communities
+- [[_score_container_hardening()]] - degree 8, connects to 3 communities
+- [[_trivy_clean()]] - degree 7, connects to 3 communities

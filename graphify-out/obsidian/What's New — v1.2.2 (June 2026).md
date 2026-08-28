@@ -1,12 +1,12 @@
 ---
 source_file: "README.md"
 type: "document"
-community: "Community 403"
+community: "Community 118"
 location: "L57"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_403
+  - community/Community_118
 ---
 
 # What's New — v1.2.2 (June 2026)
@@ -18,4 +18,4 @@ tags:
 - [[v1.2.0 Voice (June 2026)]] - `contains` [EXTRACTED]
 - [[v1.2.1 (2026-06-27) — Quality sweep]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_403
+#graphify/document #graphify/EXTRACTED #community/Community_118

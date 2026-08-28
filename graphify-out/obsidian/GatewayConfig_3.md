@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_hot_reload.py"
 type: "code"
-community: "Community 1325"
+community: "Community 43"
 location: "L63"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_1325
+  - community/Community_43
 ---
 
 # GatewayConfig
@@ -15,4 +15,4 @@ tags:
 - [[GatewayConfig_1]] - `uses` [INFERRED]
 - [[_load()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_1325
+#graphify/code #graphify/INFERRED #community/Community_43

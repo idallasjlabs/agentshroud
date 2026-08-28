@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Community 273"
+community: "Community 91"
 location: "L4576"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_273
+  - community/Community_91
 ---
 
 # telegram_api_proxy()
@@ -19,7 +19,7 @@ tags:
 - [[BotConfig]] - `shares_data_with` [INFERRED]
 - [[JSONResponse]] - `calls` [EXTRACTED]
 - [[Proxy Telegram Bot API calls through security pipeline.]] - `rationale_for` [EXTRACTED]
-- [[Request_1]] - `references` [EXTRACTED]
+- [[Request_2]] - `references` [EXTRACTED]
 - [[TestTelegramTokenRegistry]] - `conceptually_related_to` [EXTRACTED]
 - [[TestTelegramTokenRegistryRebuildOnMiss]] - `calls` [EXTRACTED]
 - [[_build_telegram_token_registry()]] - `calls` [EXTRACTED]
@@ -27,4 +27,4 @@ tags:
 - [[test_security_fixes.py]] - `imports` [EXTRACTED]
 - [[test_telegram_proxy_multibot.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_273
+#graphify/code #graphify/EXTRACTED #community/Community_91

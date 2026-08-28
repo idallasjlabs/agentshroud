@@ -1,25 +1,26 @@
 ---
 type: community
-members: 12
+cohesion: 0.18
+members: 11
 ---
 
 # Community 781
 
-**Members:** 12 nodes
+**Cohesion:** 0.18 - loosely connected
+**Members:** 11 nodes
 
 ## Members
-- [[._s()]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_empty_after_normalise_returns_empty_list()]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_empty_string_returns_empty_list()]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_long_sentence_wrapped_at_max_chars()]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_multi_sentence_returns_ordered_chunks()]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_per_chunk_normalisation()]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_short_fragment_merged_forward()]] - code - gateway/tests/test_voice_gateway.py
-- [[.test_single_sentence_returns_one_chunk()]] - code - gateway/tests/test_voice_gateway.py
-- [[A fragment under 12 chars is merged into the following chunk.]] - rationale - gateway/tests/test_voice_gateway.py
-- [[TestSplitForSpeech]] - code - gateway/tests/test_voice_gateway.py
-- [[Unit tests for voice_gateway.tts.split_for_speech (pure function, no IO).]] - rationale - gateway/tests/test_voice_gateway.py
-- [[split_for_speech normalises the full text so no markdown or tokens survive.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[ADR-002-default-allow-security-philosophy]] - document - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
+- [[ADR-002 Default-Allow Security Philosophy]] - document - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
+- [[Consequences_1]] - document - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
+- [[Context_1]] - document - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
+- [[Decision_3]] - document - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
+- [[Evaluation Criteria]] - document - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
+- [[Implementation Approach]] - document - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
+- [[Mitigation Strategies_1]] - document - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
+- [[Negative Consequences_1]] - document - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
+- [[Positive Consequences_1]] - document - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
+- [[Status_1]] - document - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,11 +28,3 @@ members: 12
 TABLE source_file, type FROM #community/Community_781
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 37]]
-- 1 edge to [[_COMMUNITY_Community 286]]
-
-## Top bridge nodes
-- [[TestSplitForSpeech]] - degree 10, connects to 1 community
-- [[._s()]] - degree 9, connects to 1 community

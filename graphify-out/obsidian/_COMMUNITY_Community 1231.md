@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1231
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/README.md
-- [[Purpose_91]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/README.md
-- [[README_96]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/README.md
-- [[Related Skills_98]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/README.md
-- [[Usage_101]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/README.md
+- [[Project Management (PM)_1]] - document - docker/config/openclaw/skills/i-pm/README.md
+- [[Purpose_96]] - document - docker/config/openclaw/skills/i-pm/README.md
+- [[README_101]] - document - docker/config/openclaw/skills/i-pm/README.md
+- [[Related Skills_105]] - document - docker/config/openclaw/skills/i-pm/README.md
+- [[Usage_106]] - document - docker/config/openclaw/skills/i-pm/README.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "Community 101"
-location: "L2782"
+community: "Community 89"
+location: "L2911"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_101
+  - community/Community_89
 ---
 
 # A bare 'use Claude' must NOT reach any agent: the server updates the     sticky
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_ws_use_model_command_intercepted()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_101
+#graphify/rationale #graphify/EXTRACTED #community/Community_89

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/tmux/scripts/find-sessions.sh"
 type: "code"
-community: "Community 982"
+community: "Community 981"
 location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_982
+  - community/Community_981
 ---
 
 # list_sessions()
@@ -15,4 +15,4 @@ tags:
 - [[find-sessions.sh]] - `defines` [EXTRACTED]
 - [[find-sessions.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_982
+#graphify/code #graphify/EXTRACTED #community/Community_981

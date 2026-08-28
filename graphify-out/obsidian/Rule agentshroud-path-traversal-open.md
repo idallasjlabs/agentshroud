@@ -1,11 +1,11 @@
 ---
 source_file: ".semgrep.yml"
 type: "concept"
-community: "Community 65"
+community: "Community 79"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_65
+  - community/Community_79
 ---
 
 # Rule: agentshroud-path-traversal-open
@@ -15,4 +15,4 @@ tags:
 - [[file_sandbox.py]] - `references` [EXTRACTED]
 - [[path_isolation.py]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_65
+#graphify/concept #graphify/EXTRACTED #community/Community_79

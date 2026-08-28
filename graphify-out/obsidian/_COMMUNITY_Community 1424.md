@@ -1,15 +1,18 @@
 ---
 type: community
-members: 2
+cohesion: 0.67
+members: 3
 ---
 
 # Community 1424
 
-**Members:** 2 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[SKILL_22]] - document - .agents/skills/i-gitops/SKILL.md
-- [[Skill gitops]] - document - .agents/skills/i-gitops/SKILL.md
+- [[._time_one_filter()]] - code - gateway/tests/test_outbound_filter.py
+- [[.test_performance()]] - code - gateway/tests/test_outbound_filter.py
+- [[Test that filtering performance is acceptable.]] - rationale - gateway/tests/test_outbound_filter.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -17,3 +20,10 @@ members: 2
 TABLE source_file, type FROM #community/Community_1424
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_Community 996]]
+
+## Top bridge nodes
+- [[.test_performance()]] - degree 3, connects to 1 community
+- [[._time_one_filter()]] - degree 2, connects to 1 community

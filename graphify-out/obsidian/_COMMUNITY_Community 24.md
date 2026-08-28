@@ -1,196 +1,132 @@
 ---
 type: community
-members: 183
+cohesion: 0.03
+members: 117
 ---
 
 # Community 24
 
-**Members:** 183 nodes
+**Cohesion:** 0.03 - loosely connected
+**Members:** 117 nodes
 
 ## Members
-- [[.__init__()_3]] - code - gateway/approval_queue/enhanced_queue.py
-- [[.__init__()_6]] - code - gateway/approval_queue/store.py
-- [[._notify_telegram()]] - code - gateway/approval_queue/enhanced_queue.py
-- [[._schedule_timeout()]] - code - gateway/approval_queue/enhanced_queue.py
-- [[._timeout_request()]] - code - gateway/approval_queue/enhanced_queue.py
-- [[.broadcast()]] - code - gateway/approval_queue/enhanced_queue.py
-- [[.close()_3]] - code - gateway/approval_queue/enhanced_queue.py
-- [[.close()_4]] - code - gateway/approval_queue/store.py
-- [[.connect()]] - code - gateway/approval_queue/enhanced_queue.py
-- [[.decide()]] - code - gateway/approval_queue/enhanced_queue.py
-- [[.disconnect()]] - code - gateway/approval_queue/enhanced_queue.py
-- [[.get_item()]] - code - gateway/approval_queue/enhanced_queue.py
-- [[.get_pending()]] - code - gateway/approval_queue/enhanced_queue.py
-- [[.get_policy_for_tier()]] - code - gateway/approval_queue/enhanced_queue.py
-- [[.get_tool_risk_tier()]] - code - gateway/approval_queue/enhanced_queue.py
-- [[.initialize()]] - code - gateway/approval_queue/enhanced_queue.py
-- [[.initialize()_1]] - code - gateway/approval_queue/store.py
-- [[.load_all()]] - code - gateway/approval_queue/store.py
-- [[.load_pending()]] - code - gateway/approval_queue/store.py
-- [[.mcp_proxy_with_approval()]] - code - gateway/tests/test_enhanced_approval.py
-- [[.requires_approval()]] - code - gateway/approval_queue/enhanced_queue.py
-- [[.save()]] - code - gateway/approval_queue/store.py
-- [[.send_json()_1]] - code - gateway/tests/test_enhanced_approval.py
-- [[.submit()]] - code - gateway/approval_queue/enhanced_queue.py
-- [[.submit_tool_request()]] - code - gateway/approval_queue/enhanced_queue.py
-- [[.test_100_concurrent_submissions()]] - code - gateway/tests/test_approval_stress.py
-- [[.test_concurrent_submit_and_decide()]] - code - gateway/tests/test_approval_stress.py
-- [[.test_critical_tool_approval_flow()]] - code - gateway/tests/test_enhanced_approval.py
-- [[.test_critical_tool_denial_flow()]] - code - gateway/tests/test_enhanced_approval.py
-- [[.test_critical_tool_requires_approval()]] - code - gateway/tests/test_enhanced_approval.py
-- [[.test_double_decide_raises()]] - code - gateway/tests/test_approval_stress.py
-- [[.test_enforce_mode_disabled()]] - code - gateway/tests/test_enhanced_approval.py
-- [[.test_expired_request_cannot_be_decided()]] - code - gateway/tests/test_approval_stress.py
-- [[.test_get_pending_expires_stale()]] - code - gateway/tests/test_approval_stress.py
-- [[.test_get_tool_risk_tier()]] - code - gateway/tests/test_enhanced_approval.py
-- [[.test_low_risk_tool_allowed()]] - code - gateway/tests/test_enhanced_approval.py
-- [[.test_low_risk_tool_no_approval()]] - code - gateway/tests/test_enhanced_approval.py
-- [[.test_owner_bypass()]] - code - gateway/tests/test_enhanced_approval.py
-- [[.test_requires_approval()]] - code - gateway/tests/test_enhanced_approval.py
-- [[.test_restart_recovery_preserves_timeout_action()]] - code - gateway/tests/test_enhanced_approval.py
-- [[.test_restore_pending_items()]] - code - gateway/tests/test_enhanced_approval.py
-- [[.test_store_expires_old_items()]] - code - gateway/tests/test_approval_stress.py
-- [[.test_store_persists_across_reopen()]] - code - gateway/tests/test_approval_stress.py
-- [[.test_store_save_and_load()]] - code - gateway/tests/test_approval_stress.py
-- [[.test_store_update_status()]] - code - gateway/tests/test_approval_stress.py
-- [[.test_timeout_auto_deny()]] - code - gateway/tests/test_enhanced_approval.py
-- [[.test_wait_for_decision()]] - code - gateway/tests/test_enhanced_approval.py
-- [[.update_status()]] - code - gateway/approval_queue/store.py
-- [[.wait_for_decision()]] - code - gateway/approval_queue/enhanced_queue.py
-- [[100 concurrent approval requests.]] - rationale - gateway/tests/test_approval_stress.py
-- [[A WebSocket stand-in whose send_json never returns.      Models a real-world dea]] - rationale - gateway/tests/test_enhanced_approval.py
-- [[A pending approval request in the queue]] - rationale - gateway/ingest_api/models.py
-- [[Accept a WebSocket connection and add to connected set.]] - rationale - gateway/approval_queue/enhanced_queue.py
-- [[Add an action to the approval queue with policy-based timeout.]] - rationale - gateway/approval_queue/enhanced_queue.py
-- [[Any]] - code - gateway/approval_queue/enhanced_queue.py
-- [[Approval queue configuration]] - rationale - gateway/ingest_api/config.py
-- [[ApprovalQueue_1]] - code - gateway/tests/test_mfa_guard.py
-- [[ApprovalQueueConfig]] - code - gateway/approval_queue/enhanced_queue.py
-- [[ApprovalQueueConfig_2]] - code - gateway/ingest_api/config.py
-- [[ApprovalQueueItem]] - code - gateway/approval_queue/enhanced_queue.py
-- [[ApprovalQueueItem_2]] - code - gateway/approval_queue/store.py
-- [[ApprovalQueueItem_3]] - code - gateway/ingest_api/models.py
-- [[ApprovalQueueItem_4]] - code - gateway/tests/test_approval_store.py
-- [[ApprovalRequest]] - code - gateway/approval_queue/enhanced_queue.py
-- [[ApprovalRequest_3]] - code - gateway/ingest_api/models.py
-- [[ApprovalStore]] - code - gateway/approval_queue/enhanced_queue.py
-- [[ApprovalStore_1]] - code - gateway/approval_queue/store.py
-- [[AuditStore same idempotency contract as ApprovalStore.]] - rationale - gateway/tests/test_approval_store.py
-- [[Auto-expire old requests.]] - rationale - gateway/tests/test_approval_stress.py
-- [[Build a REAL EnhancedApprovalQueue with a default ToolRiskConfig.      The defau]] - rationale - gateway/tests/test_mcp_policy.py
-- [[Check if a tool requires approval based on risk tier and policy.]] - rationale - gateway/approval_queue/enhanced_queue.py
-- [[Close the database connection.]] - rationale - gateway/approval_queue/store.py
-- [[Close the store and cancel timeout tasks.]] - rationale - gateway/approval_queue/enhanced_queue.py
-- [[Create a temporary SQLite store for testing.]] - rationale - gateway/tests/test_enhanced_approval.py
-- [[Create a test tool risk configuration.]] - rationale - gateway/tests/test_enhanced_approval.py
-- [[Create an MCP proxy with approval queue.]] - rationale - gateway/tests/test_enhanced_approval.py
-- [[Create an enhanced approval queue for testing.]] - rationale - gateway/tests/test_enhanced_approval.py
-- [[Deciding an item persists the new status.]] - rationale - gateway/tests/test_approval_store.py
-- [[Deciding on already-decided request raises ValueError.]] - rationale - gateway/tests/test_approval_stress.py
-- [[Enhanced approval queue with enforce mode and tool risk tiers.      Features]] - rationale - gateway/approval_queue/enhanced_queue.py
-- [[EnhancedApprovalQueue]] - code - gateway/approval_queue/enhanced_queue.py
-- [[EnhancedApprovalQueue_2]] - code - gateway/tests/test_mfa_guard.py
-- [[Expired items are marked expired during load_pending.]] - rationale - gateway/tests/test_approval_store.py
-- [[Expired request raises ValueError on decide.]] - rationale - gateway/tests/test_approval_stress.py
-- [[Fetch a single queue item by ID.]] - rationale - gateway/approval_queue/enhanced_queue.py
-- [[Get all pending approval items.]] - rationale - gateway/approval_queue/enhanced_queue.py
-- [[Get the policy for a risk tier.]] - rationale - gateway/approval_queue/enhanced_queue.py
-- [[Get the risk tier for a tool.]] - rationale - gateway/approval_queue/enhanced_queue.py
-- [[Handle timeout for a pending request.]] - rationale - gateway/approval_queue/enhanced_queue.py
-- [[Initialize enhanced approval queue.          Args             config Basic app]] - rationale - gateway/approval_queue/enhanced_queue.py
-- [[Initialize the store and restore pending items.]] - rationale - gateway/approval_queue/enhanced_queue.py
-- [[Insert or replace an approval item.]] - rationale - gateway/approval_queue/store.py
-- [[Items saved by one store instance are visible to another.]] - rationale - gateway/tests/test_approval_store.py
-- [[Items saved to store can be reloaded.]] - rationale - gateway/tests/test_approval_stress.py
-- [[Items survive store closereopen cycle.]] - rationale - gateway/tests/test_approval_stress.py
-- [[Load all items (for auditdebugging).]] - rationale - gateway/approval_queue/store.py
-- [[Load all pending (non-expired, non-decided) items.          Items whose expires_]] - rationale - gateway/approval_queue/store.py
-- [[MCPProxy.check_approval_required]] - code - gateway/proxy/mcp_proxy.py
-- [[MFAGuard]] - code - gateway/approval_queue/enhanced_queue.py
-- [[Open the database and create the schema. Idempotent a second call         must]] - rationale - gateway/approval_queue/store.py
-- [[Path]] - code - gateway/approval_queue/store.py
-- [[Path_24]] - code - gateway/tests/test_approval_store.py
-- [[Process an approval decision.          IEC 62443 FR1 approving a high-risk acti]] - rationale - gateway/approval_queue/enhanced_queue.py
-- [[Queue persistence across restart.]] - rationale - gateway/tests/test_approval_stress.py
-- [[Re-initializing must not orphan the first aiosqlite connection.      aiosqlite c]] - rationale - gateway/tests/test_approval_store.py
-- [[Remove a WebSocket connection from connected set.]] - rationale - gateway/approval_queue/enhanced_queue.py
-- [[Request for human approval of a sensitive action      Submitted by an agent when]] - rationale - gateway/ingest_api/models.py
-- [[Risk policy configuration for a tool tier]] - rationale - gateway/ingest_api/config.py
-- [[SCRUM-110 restart recovery must reschedule the timeout with the         item's]] - rationale - gateway/tests/test_enhanced_approval.py
-- [[SCRUM-154 a dead WebSocket client must never wedge the approval lock.      subm_1]] - rationale - gateway/tests/test_enhanced_approval.py
-- [[SQLite-backed persistence for approval queue items.]] - rationale - gateway/approval_queue/store.py
-- [[Schedule a timeout task for a request.]] - rationale - gateway/approval_queue/enhanced_queue.py
-- [[Send Telegram notification for approval requests.          Sends a formatted mes]] - rationale - gateway/approval_queue/enhanced_queue.py
-- [[Send a JSON message to all connected WebSocket clients.          SCRUM-154 boun]] - rationale - gateway/approval_queue/enhanced_queue.py
-- [[Simulates a full restart cycle save, close, reopen, verify.]] - rationale - gateway/tests/test_approval_store.py
-- [[Status updates persist.]] - rationale - gateway/tests/test_approval_stress.py
-- [[Store marks expired items on load.]] - rationale - gateway/tests/test_approval_stress.py
-- [[Submit 100 requests concurrently — all should succeed.]] - rationale - gateway/tests/test_approval_stress.py
-- [[Submit a tool call request for approval.          Args             tool_name T]] - rationale - gateway/approval_queue/enhanced_queue.py
-- [[Submit and decide requests concurrently.]] - rationale - gateway/tests/test_approval_stress.py
-- [[Test ApprovalRequest with valid data]] - rationale - gateway/tests/test_main_simple.py
-- [[Test MCP proxy integration with approval queue.]] - rationale - gateway/tests/test_enhanced_approval.py
-- [[Test SQLite persistence across restarts.]] - rationale - gateway/tests/test_enhanced_approval.py
-- [[Test approval requirement logic.]] - rationale - gateway/tests/test_enhanced_approval.py
-- [[Test denial flow for critical tool.]] - rationale - gateway/tests/test_enhanced_approval.py
-- [[Test full approval flow for critical tool.]] - rationale - gateway/tests/test_enhanced_approval.py
-- [[Test owner bypass for high-tier tools.]] - rationale - gateway/tests/test_enhanced_approval.py
-- [[Test risk tier lookup.]] - rationale - gateway/tests/test_enhanced_approval.py
-- [[Test that approval events are generated for WebSocket notification.]] - rationale - gateway/tests/test_enhanced_approval.py
-- [[Test that approval is bypassed when enforce mode is disabled.]] - rationale - gateway/tests/test_enhanced_approval.py
-- [[Test that critical tools are identified as requiring approval.]] - rationale - gateway/tests/test_enhanced_approval.py
-- [[Test that low-risk tools are allowed without approval.]] - rationale - gateway/tests/test_enhanced_approval.py
-- [[Test that low-risk tools don't require approval.]] - rationale - gateway/tests/test_enhanced_approval.py
-- [[Test that pending items are restored after restart.]] - rationale - gateway/tests/test_enhanced_approval.py
-- [[Test the complete approval workflow.]] - rationale - gateway/tests/test_enhanced_approval.py
-- [[Test timeout with auto-deny.]] - rationale - gateway/tests/test_enhanced_approval.py
-- [[Test tool risk tier classification.]] - rationale - gateway/tests/test_enhanced_approval.py
-- [[Test waiting for approval decision.]] - rationale - gateway/tests/test_enhanced_approval.py
-- [[TestApprovalStorePersistence]] - code - gateway/tests/test_approval_stress.py
-- [[TestApprovalTimeout]] - code - gateway/tests/test_approval_stress.py
-- [[TestApprovalWorkflow]] - code - gateway/tests/test_enhanced_approval.py
-- [[TestAutoExpire]] - code - gateway/tests/test_approval_stress.py
-- [[TestConcurrentApprovalRequests]] - code - gateway/tests/test_approval_stress.py
-- [[TestMCPProxyIntegration]] - code - gateway/tests/test_enhanced_approval.py
-- [[TestPersistence]] - code - gateway/tests/test_enhanced_approval.py
-- [[TestToolRiskClassification]] - code - gateway/tests/test_enhanced_approval.py
-- [[Timeout handling for approval requests.]] - rationale - gateway/tests/test_approval_stress.py
-- [[Tool risk tier configuration]] - rationale - gateway/ingest_api/config.py
-- [[ToolRiskConfig]] - code - gateway/approval_queue/enhanced_queue.py
-- [[ToolRiskConfig_1]] - code - gateway/ingest_api/config.py
-- [[ToolRiskPolicy]] - code - gateway/approval_queue/enhanced_queue.py
-- [[ToolRiskPolicy_1]] - code - gateway/ingest_api/config.py
-- [[Update the status of an existing item.]] - rationale - gateway/approval_queue/store.py
-- [[Wait for an approval decision.          Returns             True if approved, F]] - rationale - gateway/approval_queue/enhanced_queue.py
-- [[WebSocket]] - code - gateway/approval_queue/enhanced_queue.py
-- [[_HangingWebSocket_1]] - code - gateway/tests/test_enhanced_approval.py
-- [[_make_item()]] - code - gateway/tests/test_approval_store.py
-- [[_real_queue()]] - code - gateway/tests/test_mcp_policy.py
-- [[broadcast() itself must bound its wait per-client, not just rely on     callers]] - rationale - gateway/tests/test_enhanced_approval.py
-- [[enhanced_mfa_queue()]] - code - gateway/tests/test_mfa_guard.py
-- [[enhanced_queue()]] - code - gateway/tests/test_enhanced_approval.py
-- [[enhanced_queue.py]] - code - gateway/approval_queue/enhanced_queue.py
-- [[get_pending should expire stale items.]] - rationale - gateway/tests/test_approval_stress.py
-- [[group_router.py]] - code - gateway/approval_queue/group_router.py
-- [[queue()]] - code - gateway/tests/test_approval_stress.py
-- [[store()]] - code - gateway/tests/test_approval_store.py
-- [[store()_1]] - code - gateway/tests/test_approval_stress.py
-- [[store.py]] - code - gateway/approval_queue/store.py
-- [[temp_store()]] - code - gateway/tests/test_enhanced_approval.py
-- [[test_approval_request_valid()]] - code - gateway/tests/test_main_simple.py
-- [[test_approval_store.py]] - code - gateway/tests/test_approval_store.py
-- [[test_approval_stress.py]] - code - gateway/tests/test_approval_stress.py
-- [[test_audit_store_initialize_is_idempotent()]] - code - gateway/tests/test_approval_store.py
-- [[test_broadcast_does_not_hang_forever_on_dead_client()_1]] - code - gateway/tests/test_enhanced_approval.py
-- [[test_decide_persists()]] - code - gateway/tests/test_approval_store.py
-- [[test_enhanced_approval.py]] - code - gateway/tests/test_enhanced_approval.py
-- [[test_expired_items_on_reload()]] - code - gateway/tests/test_approval_store.py
-- [[test_initialize_is_idempotent()]] - code - gateway/tests/test_approval_store.py
-- [[test_persist_and_reload()]] - code - gateway/tests/test_approval_store.py
-- [[test_store_survives_restart()]] - code - gateway/tests/test_approval_store.py
-- [[test_submit_does_not_deadlock_on_hung_websocket_client()_1]] - code - gateway/tests/test_enhanced_approval.py
-- [[test_websocket_notifications()]] - code - gateway/tests/test_enhanced_approval.py
-- [[tool_risk_config()]] - code - gateway/tests/test_enhanced_approval.py
+- [[.__call__()_10]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.__init__()_35]] - code - gateway/proxy/slack_proxy.py
+- [[.__init__()_173]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.__init__()_180]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.__init__()_191]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[._passthrough_pii()]] - code - gateway/tests/test_pipeline_unit.py
+- [[.consume_relay_token()]] - code - gateway/proxy/slack_proxy.py
+- [[.get_stats()_8]] - code - gateway/proxy/slack_proxy.py
+- [[.handle_event()]] - code - gateway/proxy/slack_proxy.py
+- [[.info_filter_redaction_count()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.mock_forwarder()]] - code - gateway/tests/test_session_isolation.py
+- [[.mock_pipeline()]] - code - gateway/tests/test_session_isolation.py
+- [[.test_already_in_channel_is_idempotent_true()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_bots_inventory_matches_the_real_container_name()]] - code - gateway/tests/test_main_endpoints.py
+- [[.test_cached_corr_without_colon_falls_back_to_channel()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_cached_inbound_corr_skips_history_lookup()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_cant_kick_self_is_idempotent_true()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_close_stops_resource_guard()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_close_swallows_stop_errors()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_dm_reply_recovers_inbound_via_conversations_history()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_history_error_records_outbound_without_correlation()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_malformed_json_body_forwards_with_empty_payload()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_missing_args_return_false()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_missing_args_return_false()_1]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_missing_channel_or_text_skips_tracking()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_name_truncated_to_80_chars()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_network_error_returns_synthetic_failure()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_no_sanitizer_passthrough()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_no_token_returns_false()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_no_token_returns_false()_1]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_no_token_returns_none()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_not_in_channel_is_idempotent_true()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_other_error_returns_false()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_other_error_returns_false()_1]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_recovery_exception_is_non_fatal()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_redaction_count_access_error_is_non_fatal()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_sanitized_with_redactions()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_sanitized_without_redactions()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_sanitizer_error_fails_open()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_slack_error_returns_none()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_store_error_returns_empty()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_structured_text_serialized_for_preview()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_success_posts_with_bearer_token()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_success_returns_channel_id_with_sanitized_name()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_success_returns_true()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_success_returns_true()_1]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_system_message_not_tracked()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_thread_reply_recovers_inbound_via_conversations_replies()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_tracker_exception_does_not_break_response()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_unknown_content_type_ignored()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[A dict text payload is JSON-serialized before the 80-char preview.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[AsyncMock]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[Bodies with an unrecognized Content-Type are not parsed at all.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[Cached correlation for the channel → no Slack history call; outbound         is]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[Channel name is lowercased, spacesunderscores → hyphens, symbols dropped.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[Connection failure → {'ok' False, 'error' exc} (no exception leaks).]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[Correlation ID with no '' separator → outbound attributed to channel id.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[Create a SlackAPIProxy with a fake token and no real secretfile IO.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[Create a mock forwarder.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Create a mock security pipeline.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Exception during inbound recovery → swallowed; outbound still recorded.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[Handle an inbound Slack event payload received via Socket Mode.          Called]] - rationale - gateway/proxy/slack_proxy.py
+- [[Happy path POSTs to slack.comapimethod with injected bot token.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[History lookup returns ok=False → no inbound record; outbound still         logg]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[Minimal async callable for monkeypatching.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Non-owner channel error reading info_filter_redaction_count is swallowed]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[Non-thread reply → conversations.history lookup; bot and subtype         message]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[Pipeline result whose redaction-count attribute raises on access.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[Pop and return the real WSS URL for a relay token (one-time use).          Retur]] - rationale - gateway/proxy/slack_proxy.py
+- [[Proxies bot Slack Web API calls through SecurityPipeline.      Outbound flow (bo]] - rationale - gateway/proxy/slack_proxy.py
+- [[SlackAPIProxy_2]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[SlackAPIProxy]] - code - gateway/proxy/slack_proxy.py
+- [[TestBodyParsing]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[TestCallSlackApi]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[TestHealthCheckDetailBotsInventory]] - code - gateway/tests/test_main_endpoints.py
+- [[TestInviteChannelMember]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[TestKickChannelMember]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[TestOutboundTracking]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[TestProcessToolResult]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestProvisionGroupChannel]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[TestRedactionCountErrorSwallow]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[Thread reply with no cached corr → conversations.replies lookup recovers]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[Tracker errors are non-fatal — Slack response still returned to bot.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[Unparseable JSON body → warning logged, empty payload forwarded (no crash).]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[_RaisingRedactionResult]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[_make_proxy()_3]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[chat.postMessage without channeltext → nothing recorded, no lookups.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[health_check_detail's per-bot inventory must key the Docker lookup by     each b]] - rationale - gateway/tests/test_main_endpoints.py
+- [[is_system=True chat.postMessage bypasses the tracker entirely.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[slack_proxy.py]] - code - gateway/proxy/slack_proxy.py
+- [[test_approvals_approve_and_deny()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_approvals_approve_raises()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_audit_export_cef()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_audit_export_exporter_raises()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_audit_export_json_dict_payload()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_cve_report_queued()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_egress_approve_missing_or_raises()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_egress_approve_mode_mapping()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_egress_history_revoke()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_egress_history_with_bot_filter()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_egress_pending_non_list_and_missing()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_egress_pending_queue_raises()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_egress_pending_with_bot_filter()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_egress_rule_override_scoped()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_egress_rule_remove()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_egress_rules_fallback_empty()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_egress_rules_source_tagging()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_launch_scan_background_exec_failure()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_launch_scan_background_success()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_log_audit_appends_to_audit_store()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_rollback_gateway_paths()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_run_scanner_validation_and_launch()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_slack_proxy_coverage.py]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[test_ssh_compose_success()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_ssh_compose_timeout_and_exception()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_upgrade_bot_paths()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_upgrade_gateway_paths()]] - code - gateway/tests/test_soc_router_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -200,35 +136,60 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 35 edges to [[_COMMUNITY_Community 69]]
-- 32 edges to [[_COMMUNITY_Community 1]]
-- 23 edges to [[_COMMUNITY_Community 34]]
-- 22 edges to [[_COMMUNITY_Community 43]]
-- 18 edges to [[_COMMUNITY_Community 9]]
-- 18 edges to [[_COMMUNITY_Community 121]]
-- 15 edges to [[_COMMUNITY_Community 36]]
-- 7 edges to [[_COMMUNITY_Community 12]]
-- 6 edges to [[_COMMUNITY_Community 6]]
-- 5 edges to [[_COMMUNITY_Community 18]]
-- 4 edges to [[_COMMUNITY_Community 271]]
-- 4 edges to [[_COMMUNITY_Community 232]]
-- 3 edges to [[_COMMUNITY_Community 273]]
-- 3 edges to [[_COMMUNITY_Community 1325]]
-- 2 edges to [[_COMMUNITY_Community 659]]
-- 2 edges to [[_COMMUNITY_Community 106]]
-- 2 edges to [[_COMMUNITY_Community 788]]
-- 2 edges to [[_COMMUNITY_Community 212]]
-- 2 edges to [[_COMMUNITY_Community 793]]
-- 2 edges to [[_COMMUNITY_Community 63]]
-- 1 edge to [[_COMMUNITY_Community 210]]
-- 1 edge to [[_COMMUNITY_Community 201]]
-- 1 edge to [[_COMMUNITY_Community 486]]
-- 1 edge to [[_COMMUNITY_Community 914]]
-- 1 edge to [[_COMMUNITY_Community 487]]
+- 33 edges to [[_COMMUNITY_Community 74]]
+- 26 edges to [[_COMMUNITY_Community 16]]
+- 13 edges to [[_COMMUNITY_Key Vault & Audit Chain]]
+- 10 edges to [[_COMMUNITY_RBAC & SOC Realtime]]
+- 9 edges to [[_COMMUNITY_Community 42]]
+- 9 edges to [[_COMMUNITY_Community 47]]
+- 7 edges to [[_COMMUNITY_Community 35]]
+- 7 edges to [[_COMMUNITY_Community 676]]
+- 7 edges to [[_COMMUNITY_Community 330]]
+- 5 edges to [[_COMMUNITY_Community 161]]
+- 5 edges to [[_COMMUNITY_Community 55]]
+- 5 edges to [[_COMMUNITY_Community 29]]
+- 4 edges to [[_COMMUNITY_Community 86]]
+- 4 edges to [[_COMMUNITY_Ingest API & Approval Routes]]
+- 4 edges to [[_COMMUNITY_Middleware & Lifespan]]
+- 4 edges to [[_COMMUNITY_Adversarial Injection Guards]]
+- 4 edges to [[_COMMUNITY_Community 142]]
+- 4 edges to [[_COMMUNITY_Community 643]]
+- 4 edges to [[_COMMUNITY_Community 119]]
+- 4 edges to [[_COMMUNITY_Community 31]]
+- 3 edges to [[_COMMUNITY_Community 89]]
+- 3 edges to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
+- 3 edges to [[_COMMUNITY_Session Management]]
+- 3 edges to [[_COMMUNITY_Community 228]]
+- 3 edges to [[_COMMUNITY_Community 181]]
+- 3 edges to [[_COMMUNITY_Community 1059]]
+- 3 edges to [[_COMMUNITY_Community 104]]
+- 3 edges to [[_COMMUNITY_Community 103]]
+- 3 edges to [[_COMMUNITY_Community 242]]
+- 2 edges to [[_COMMUNITY_PII Sanitizer & E2E Tests]]
+- 2 edges to [[_COMMUNITY_Community 618]]
+- 2 edges to [[_COMMUNITY_Community 56]]
+- 2 edges to [[_COMMUNITY_Community 480]]
+- 2 edges to [[_COMMUNITY_Community 991]]
+- 2 edges to [[_COMMUNITY_Community 1124]]
+- 2 edges to [[_COMMUNITY_Community 1126]]
+- 2 edges to [[_COMMUNITY_Community 182]]
+- 2 edges to [[_COMMUNITY_Community 91]]
+- 2 edges to [[_COMMUNITY_Community 69]]
+- 1 edge to [[_COMMUNITY_Community 115]]
+- 1 edge to [[_COMMUNITY_Community 49]]
+- 1 edge to [[_COMMUNITY_Community 450]]
+- 1 edge to [[_COMMUNITY_Community 20]]
+- 1 edge to [[_COMMUNITY_Community 501]]
+- 1 edge to [[_COMMUNITY_Community 83]]
+- 1 edge to [[_COMMUNITY_Community 1349]]
+- 1 edge to [[_COMMUNITY_Community 1350]]
+- 1 edge to [[_COMMUNITY_Community 154]]
+- 1 edge to [[_COMMUNITY_Community 116]]
+- 1 edge to [[_COMMUNITY_Community 197]]
 
 ## Top bridge nodes
-- [[ApprovalQueueConfig_2]] - degree 80, connects to 10 communities
-- [[EnhancedApprovalQueue]] - degree 60, connects to 8 communities
-- [[ApprovalRequest_3]] - degree 91, connects to 7 communities
-- [[ToolRiskConfig_1]] - degree 38, connects to 6 communities
-- [[enhanced_queue.py]] - degree 15, connects to 5 communities
+- [[AsyncMock]] - degree 231, connects to 42 communities
+- [[SlackAPIProxy]] - degree 38, connects to 7 communities
+- [[TestProcessToolResult]] - degree 9, connects to 4 communities
+- [[slack_proxy.py]] - degree 4, connects to 3 communities
+- [[TestHealthCheckDetailBotsInventory]] - degree 4, connects to 2 communities

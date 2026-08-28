@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/openai-whisper-api/SKILL.md"
 type: "document"
-community: "Community 719"
+community: "Community 716"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_719
+  - community/Community_716
 ---
 
 # SKILL.md
@@ -17,4 +17,4 @@ tags:
 - [[SKILL_226]] - `semantically_similar_to` [INFERRED]
 - [[transcribe.sh]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_719
+#graphify/document #graphify/EXTRACTED #community/Community_716

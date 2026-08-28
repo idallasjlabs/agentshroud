@@ -1,45 +1,46 @@
 ---
 type: community
-members: 32
+cohesion: 0.12
+members: 31
 ---
 
 # Community 246
 
-**Members:** 32 nodes
+**Cohesion:** 0.12 - loosely connected
+**Members:** 31 nodes
 
 ## Members
-- [[1. GitHub MCP Authentication Reset_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[2. Atlassian MCP Authentication Reset_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[3. AWS API MCP Authentication Reset_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[AWS Credentials_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[AWS Token expired (SSO)_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[AWS Unable to locate credentials_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Atlassian OAuth_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Atlassian OAuth flow failed_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Authentication Reset Procedures_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[GitHub PAT_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[GitHub Bad credentials_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[GitHub Docker image not found_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[If Using SSO_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Manual Re-authentication_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Option A Default AWS Profile_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Option B Named Profile_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Related Skills_97]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Role_89]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[SKILL_158]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Security Best Practices_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Step 1 Generate New Personal Access Token_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Step 2 Update .env File_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Step 3 Verify Authentication_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Step 4 Restart Claude Code_1]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Troubleshooting_14]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Usage_100]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Verification Checklist_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Verify Authentication_4]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Verify Authentication_5]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[When Authentication Expires_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[When to Invoke_6]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[.__init__()_199]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[.confident()]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[Any_75]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[Compute the per-entry rewrite plan and manual-review buckets.      Returns]] - rationale - scripts/migrate-cve-registry-ghsa.py
+- [[Counter]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[Fetch every published GitHub Security Advisory for repo (cursor-paginated).]] - rationale - scripts/migrate-cve-registry-ghsa.py
+- [[Import the current OpenClaw + Hermes registry lists (in file order).]] - rationale - scripts/migrate-cve-registry-ghsa.py
+- [[Lowercase alphanumericunderscore tokens, minus stopwords and short noise.]] - rationale - scripts/migrate-cve-registry-ghsa.py
+- [[Match a single registry entry to at most one advisory, honestly.      Returns]] - rationale - scripts/migrate-cve-registry-ghsa.py
+- [[MatchResult]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[Namespace]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[Outcome of matching one registry entry to the advisory feed.]] - rationale - scripts/migrate-cve-registry-ghsa.py
+- [[Path_46]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[Render the manual-review markdown listing every unmatched entry.]] - rationale - scripts/migrate-cve-registry-ghsa.py
+- [[Return per-agent advisory lists from snapshot or live GitHub.]] - rationale - scripts/migrate-cve-registry-ghsa.py
+- [[Rewrite every ``id old`` line and set ghsa_idcve_id right after it.]] - rationale - scripts/migrate-cve-registry-ghsa.py
+- [[_advisory_patched_versions()]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[_advisory_text_tokens()]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[_py_literal()]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[_tokens()]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[build_id_plan()]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[compute_stats()]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[fetch_advisories()]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[gather_advisories()]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[load_registry()]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[load_snapshot()]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[main()_23]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[match_entry()]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[migrate-cve-registry-ghsa.py]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[render_manual_review()]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[rewrite_registry_text()]] - code - scripts/migrate-cve-registry-ghsa.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -47,3 +48,12 @@ members: 32
 TABLE source_file, type FROM #community/Community_246
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 380]]
+- 1 edge to [[_COMMUNITY_Community 78]]
+- 1 edge to [[_COMMUNITY_SOC Collaborators]]
+
+## Top bridge nodes
+- [[Counter]] - degree 4, connects to 2 communities
+- [[migrate-cve-registry-ghsa.py]] - degree 16, connects to 1 community

@@ -1,22 +1,23 @@
 ---
 type: community
-members: 9
+cohesion: 0.25
+members: 8
 ---
 
 # Community 931
 
-**Members:** 9 nodes
+**Cohesion:** 0.25 - loosely connected
+**Members:** 8 nodes
 
 ## Members
-- [[Key Endpoints]] - document - docs/vault/02 - Modules/Web & Dashboard/api.py.md
-- [[Purpose_173]] - document - docs/vault/02 - Modules/Web & Dashboard/api.py.md
-- [[Pydantic Models]] - document - docs/vault/02 - Modules/Web & Dashboard/api.py.md
-- [[Related Notes_13]] - document - docs/vault/02 - Modules/Web & Dashboard/api.py.md
-- [[Responsibilities_57]] - document - docs/vault/02 - Modules/Web & Dashboard/api.py.md
-- [[Runtime Engine Integration]] - document - docs/vault/02 - Modules/Web & Dashboard/api.py.md
-- [[Security_15]] - document - docs/vault/02 - Modules/Web & Dashboard/api.py.md
-- [[api.py_2]] - document - docs/vault/02 - Modules/Web & Dashboard/api.py.md
-- [[api.py_1]] - document - docs/vault/02 - Modules/Web & Dashboard/api.py.md
+- [[ANTHROPIC_BASE_URL_1]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
+- [[Description_2]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
+- [[How It Works_2]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
+- [[Related Notes_30]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
+- [[SDK Patch]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
+- [[Set In]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
+- [[Value_1]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
+- [[Why It's Critical]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,3 +25,9 @@ members: 9
 TABLE source_file, type FROM #community/Community_931
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 822]]
+
+## Top bridge nodes
+- [[ANTHROPIC_BASE_URL_1]] - degree 8, connects to 1 community

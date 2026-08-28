@@ -1,50 +1,51 @@
 ---
 type: community
-members: 37
+cohesion: 0.10
+members: 36
 ---
 
 # Community 200
 
-**Members:** 37 nodes
+**Cohesion:** 0.10 - loosely connected
+**Members:** 36 nodes
 
 ## Members
-- [[.__call__()]] - code - gateway/ingest_api/alert_telegram_relay.py
-- [[.__call__()_1]] - code - gateway/tests/test_alert_telegram_relay.py
-- [[.__init__()_9]] - code - gateway/ingest_api/alert_telegram_relay.py
-- [[.__init__()_140]] - code - gateway/tests/test_alert_telegram_relay.py
-- [[._clean_tool()]] - code - gateway/ingest_api/alert_telegram_relay.py
-- [[._coerce()]] - code - gateway/ingest_api/alert_telegram_relay.py
-- [[._dedup_key()]] - code - gateway/ingest_api/alert_telegram_relay.py
-- [[._handle()]] - code - gateway/ingest_api/alert_telegram_relay.py
-- [[._spawn_send()]] - code - gateway/ingest_api/alert_telegram_relay.py
-- [[.flush()]] - code - gateway/ingest_api/alert_telegram_relay.py
-- [[Accept GatewayEvent objects or plain dicts from legacy emitters.]] - rationale - gateway/ingest_api/alert_telegram_relay.py
-- [[AlertTelegramRelay]] - code - gateway/ingest_api/alert_telegram_relay.py
-- [[Any_5]] - code - gateway/ingest_api/alert_telegram_relay.py
-- [[Await in-flight sends (testshutdown helper).]] - rationale - gateway/ingest_api/alert_telegram_relay.py
-- [[Regression (SCRUM-61) apialerts used to call event_bus.publish(),     a metho]] - rationale - gateway/tests/test_alert_telegram_relay.py
-- [[Subscribe to the gateway EventBus; relay security alerts to Telegram.]] - rationale - gateway/ingest_api/alert_telegram_relay.py
-- [[_SendSpy]] - code - gateway/tests/test_alert_telegram_relay.py
-- [[_alert_event()]] - code - gateway/tests/test_alert_telegram_relay.py
-- [[alert_telegram_relay.py]] - code - gateway/ingest_api/alert_telegram_relay.py
-- [[test_alert_telegram_relay.py]] - code - gateway/tests/test_alert_telegram_relay.py
-- [[test_api_alerts_endpoint_emits_bus_event()]] - code - gateway/tests/test_alert_telegram_relay.py
-- [[test_async_sanitizer_supported()]] - code - gateway/tests/test_alert_telegram_relay.py
-- [[test_critical_alert_relayed_to_owner()]] - code - gateway/tests/test_alert_telegram_relay.py
-- [[test_dedup_key_includes_source()]] - code - gateway/tests/test_alert_telegram_relay.py
-- [[test_dedup_same_alert_sent_once()]] - code - gateway/tests/test_alert_telegram_relay.py
-- [[test_final_text_capped_below_telegram_limit()]] - code - gateway/tests/test_alert_telegram_relay.py
-- [[test_info_severity_not_relayed()]] - code - gateway/tests/test_alert_telegram_relay.py
-- [[test_non_alert_events_ignored()]] - code - gateway/tests/test_alert_telegram_relay.py
-- [[test_outgoing_text_passes_through_sanitizer()]] - code - gateway/tests/test_alert_telegram_relay.py
-- [[test_plain_dict_event_tolerated()]] - code - gateway/tests/test_alert_telegram_relay.py
-- [[test_rate_limit_caps_sends_per_hour()]] - code - gateway/tests/test_alert_telegram_relay.py
-- [[test_send_failure_rolls_back_dedup_for_retry()]] - code - gateway/tests/test_alert_telegram_relay.py
-- [[test_send_failure_swallowed()]] - code - gateway/tests/test_alert_telegram_relay.py
-- [[test_subscribed_relay_receives_bus_emissions()]] - code - gateway/tests/test_alert_telegram_relay.py
-- [[test_tool_field_control_chars_stripped_and_capped()]] - code - gateway/tests/test_alert_telegram_relay.py
-- [[test_warning_alert_relayed_with_orange_marker()]] - code - gateway/tests/test_alert_telegram_relay.py
-- [[test_warning_flood_cannot_starve_critical()]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[._make_rbac()]] - code - gateway/tests/test_rbac.py
+- [[.add_member()]] - code - gateway/security/rbac_config.py
+- [[.create_group()]] - code - gateway/security/rbac_config.py
+- [[.delete_group()]] - code - gateway/security/rbac_config.py
+- [[.get_group()]] - code - gateway/security/rbac_config.py
+- [[.init_auto_groups()]] - code - gateway/security/rbac_config.py
+- [[.is_member()_1]] - code - gateway/security/rbac_config.py
+- [[.list_groups()]] - code - gateway/security/rbac_config.py
+- [[.remove_member()]] - code - gateway/security/rbac_config.py
+- [[.test_add_remove_member()]] - code - gateway/tests/test_rbac.py
+- [[.test_auto_groups_created()]] - code - gateway/tests/test_rbac.py
+- [[.test_cannot_create_reserved_group_id()]] - code - gateway/tests/test_rbac.py
+- [[.test_cannot_delete_auto_group()]] - code - gateway/tests/test_rbac.py
+- [[.test_create_custom_group()]] - code - gateway/tests/test_rbac.py
+- [[.test_delete_custom_group()]] - code - gateway/tests/test_rbac.py
+- [[.test_everyone_group_contains_all_users()]] - code - gateway/tests/test_rbac.py
+- [[.test_is_member_unknown_group_returns_false()]] - code - gateway/tests/test_rbac.py
+- [[.test_slack_group_contains_slack_ids()]] - code - gateway/tests/test_rbac.py
+- [[.test_telegram_group_contains_numeric_ids()]] - code - gateway/tests/test_rbac.py
+- [[A named group of users.]] - rationale - gateway/security/rbac_config.py
+- [[Add a user to a group (auto-groups are updated in-memory only).]] - rationale - gateway/security/rbac_config.py
+- [[Create or replace a custom group and persist it.]] - rationale - gateway/security/rbac_config.py
+- [[Delete a custom group. Returns True if deleted, False if not found.]] - rationale - gateway/security/rbac_config.py
+- [[Derive and reset auto-groups from current RBAC user list, then load custom group]] - rationale - gateway/security/rbac_config.py
+- [[Group]] - code - gateway/security/rbac_config.py
+- [[GroupRegistry]] - code - gateway/security/rbac_config.py
+- [[Manages user groups including auto-groups and custom groups.]] - rationale - gateway/security/rbac_config.py
+- [[Read custom groups from disk.]] - rationale - gateway/security/rbac_config.py
+- [[Remove a user from a group (auto-groups are updated in-memory only).]] - rationale - gateway/security/rbac_config.py
+- [[Return True if user_id is in the group.]] - rationale - gateway/security/rbac_config.py
+- [[Return group by ID, or None.]] - rationale - gateway/security/rbac_config.py
+- [[TestGroupRegistry]] - code - gateway/tests/test_rbac.py
+- [[Tests for GroupRegistry auto-groups and custom group management.]] - rationale - gateway/tests/test_rbac.py
+- [[Write only custom groups to disk (auto-groups are derived at runtime).]] - rationale - gateway/security/rbac_config.py
+- [[_load_persisted_groups()]] - code - gateway/security/rbac_config.py
+- [[_persist_groups()]] - code - gateway/security/rbac_config.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -54,14 +55,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_Community 374]]
-- 5 edges to [[_COMMUNITY_Community 6]]
-- 1 edge to [[_COMMUNITY_Community 9]]
-- 1 edge to [[_COMMUNITY_Community 130]]
+- 18 edges to [[_COMMUNITY_RBAC & SOC Realtime]]
+- 4 edges to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
+- 2 edges to [[_COMMUNITY_Middleware & Lifespan]]
+- 2 edges to [[_COMMUNITY_Community 27]]
+- 1 edge to [[_COMMUNITY_Community 49]]
+- 1 edge to [[_COMMUNITY_Community 335]]
 
 ## Top bridge nodes
-- [[test_alert_telegram_relay.py]] - degree 23, connects to 2 communities
-- [[test_api_alerts_endpoint_emits_bus_event()]] - degree 4, connects to 2 communities
-- [[AlertTelegramRelay]] - degree 33, connects to 1 community
-- [[_SendSpy]] - degree 21, connects to 1 community
-- [[_alert_event()]] - degree 16, connects to 1 community
+- [[GroupRegistry]] - degree 34, connects to 5 communities
+- [[TestGroupRegistry]] - degree 21, connects to 2 communities
+- [[Group]] - degree 9, connects to 2 communities
+- [[_persist_groups()]] - degree 8, connects to 2 communities
+- [[._make_rbac()]] - degree 12, connects to 1 community

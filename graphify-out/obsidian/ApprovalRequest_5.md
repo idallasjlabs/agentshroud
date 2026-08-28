@@ -1,12 +1,12 @@
 ---
 source_file: "docs/data/data-dictionary.md"
 type: "document"
-community: "Community 394"
+community: "Community 396"
 location: "L57"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_394
+  - community/Community_396
 ---
 
 # ApprovalRequest
@@ -15,4 +15,4 @@ tags:
 - [[Approval Workflows]] - `contains` [EXTRACTED]
 - [[Security Management Entities]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_394
+#graphify/document #graphify/EXTRACTED #community/Community_396

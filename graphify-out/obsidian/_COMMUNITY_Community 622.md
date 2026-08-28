@@ -1,28 +1,30 @@
 ---
 type: community
+cohesion: 0.13
 members: 15
 ---
 
 # Community 622
 
+**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
-- [[Config Keys Read_2]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[Database Schema]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[Environment Variables Used_2]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[Function Details_2]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[Imports From  Exports To_2]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[Key Classes  Functions_2]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[Known Issues  Notes_2]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[Purpose_113]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[Related_3]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[Responsibilities_2]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[enforce_retention()]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[initialize()]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[ledger.py_2]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[query(page, page_size, source, since, until, forwarded_to)]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[record(source, content, original_content, sanitized, redaction_count, redaction_types, forwarded_to, content_type, metadata)]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
+- [[Advanced Integrations]] - document - docs/planning/RELEASE-PLAN.md
+- [[Browser Extension_2]] - document - docs/planning/RELEASE-PLAN.md
+- [[Command Center — CLITUI (moved from v1.0.0 on 2026-03-20)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Full Configuration System]] - document - docs/planning/RELEASE-PLAN.md
+- [[Infrastructure (moved from v0.9.0 on 2026-03-04)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Integration Hub]] - document - docs/planning/RELEASE-PLAN.md
+- [[Mac Mini Onboarding]] - document - docs/planning/RELEASE-PLAN.md
+- [[Multi-Host Deployment_1]] - document - docs/planning/RELEASE-PLAN.md
+- [[Multi-Platform Container Support_1]] - document - docs/planning/RELEASE-PLAN.md
+- [[Personal Infrastructure Monitor]] - document - docs/planning/RELEASE-PLAN.md
+- [[SSH Chat Interface (moved from v1.0.0 on 2026-03-20)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Secure Voice (moved from v0.9.0 on 2026-03-04)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Security Hardening_1]] - document - docs/planning/RELEASE-PLAN.md
+- [[iOSmacOS Shortcuts_1]] - document - docs/planning/RELEASE-PLAN.md
+- [[v1.3.0 — Platform Expansion (53 items)]] - document - docs/planning/RELEASE-PLAN.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,7 +34,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 271]]
+- 1 edge to [[_COMMUNITY_Community 362]]
 
 ## Top bridge nodes
-- [[ledger.py_2]] - degree 11, connects to 1 community
+- [[v1.3.0 — Platform Expansion (53 items)]] - degree 15, connects to 1 community

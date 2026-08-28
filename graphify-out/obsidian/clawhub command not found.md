@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/PUBLISH-TO-CLAWHUB.md"
 type: "document"
-community: "Community 1266"
+community: "Community 1262"
 location: "L366"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1266
+  - community/Community_1262
 ---
 
 # "clawhub: command not found"
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🆘 Troubleshooting_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1266
+#graphify/document #graphify/EXTRACTED #community/Community_1262

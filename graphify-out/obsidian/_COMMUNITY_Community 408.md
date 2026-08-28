@@ -1,34 +1,37 @@
 ---
 type: community
-members: 21
+cohesion: 0.13
+members: 22
 ---
 
 # Community 408
 
-**Members:** 21 nodes
+**Cohesion:** 0.13 - loosely connected
+**Members:** 22 nodes
 
 ## Members
-- [[1. Change Documentation]] - document - .agents/skills/i-ps/SKILL.md
-- [[2. Testing Evidence]] - document - .agents/skills/i-ps/SKILL.md
-- [[3. Backups & Rollback]] - document - .agents/skills/i-ps/SKILL.md
-- [[4. Blast Radius_1]] - document - .agents/skills/i-ps/SKILL.md
-- [[5. Observability]] - document - .agents/skills/i-ps/SKILL.md
-- [[6. Security]] - document - .agents/skills/i-ps/SKILL.md
-- [[7. Communication]] - document - .agents/skills/i-ps/SKILL.md
-- [[8. Service Control Commands]] - document - .agents/skills/i-ps/SKILL.md
-- [[Emergency Stop (P1 Incidents Only)]] - document - .agents/skills/i-ps/SKILL.md
-- [[If Something Goes Wrong]] - document - .agents/skills/i-ps/SKILL.md
-- [[Immediate (0–15 min)]] - document - .agents/skills/i-ps/SKILL.md
-- [[Invoke Before]] - document - .agents/skills/i-ps/SKILL.md
-- [[Pause Before Testing (Copy-Paste Ready)]] - document - .agents/skills/i-ps/SKILL.md
-- [[Post-Deployment Verification]] - document - .agents/skills/i-ps/SKILL.md
-- [[Pre-Deployment Checklist]] - document - .agents/skills/i-ps/SKILL.md
-- [[Resume After Testing (MANDATORY)]] - document - .agents/skills/i-ps/SKILL.md
-- [[Role_28]] - document - .agents/skills/i-ps/SKILL.md
-- [[SKILL_44]] - document - .agents/skills/i-ps/SKILL.md
-- [[Short-Term (15 min – 24 hr)]] - document - .agents/skills/i-ps/SKILL.md
-- [[Sign-Off]] - document - .agents/skills/i-ps/SKILL.md
-- [[Skill Production Safety Checklist (PROD-SAFETY)]] - document - .agents/skills/i-ps/SKILL.md
+- [[.test_multipart_fails_closed_for_non_owner()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_multipart_outbound_pipeline_called()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_multipart_overlength_caption_blocked_for_non_owner()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_multipart_owner_exempt_from_fail_closed()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_multipart_pipeline_block_non_owner()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_multipart_sanitized_caption_applied_binary_intact()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_multipart_sanitizer_fallback_redacts_pii()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_multipart_text_field_scanned_when_no_caption()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_multipart_without_text_part_passes_through()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[A multipart 'text' field (sendMessage via multipart) is scanned too.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Build a multipartform-data body with text fields and an optional binary part.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[If the pipeline crashes on a multipart body, non-owner captions are blocked.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Multipart bodies with no captiontext part are forwarded unchanged.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Multipart captions must get the full pipeline scan, not just the XML filter.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Over-length multipart captions to non-owners are blocked like JSONform.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Owner multipart messages still pass through on pipeline crash (parity).]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Pipeline-blocked captions to non-owners are replaced with a safe notice.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Redacted caption replaces the original; binary part stays byte-identical.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestMultipartOutboundPipeline]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Without a pipeline, the sanitizer fallback still redacts caption PII.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[_make_multipart_body()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[process_outbound must run on multipart caption text.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,3 +39,19 @@ members: 21
 TABLE source_file, type FROM #community/Community_408
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 9 edges to [[_COMMUNITY_Community 93]]
+- 9 edges to [[_COMMUNITY_Community 96]]
+- 4 edges to [[_COMMUNITY_PII Sanitizer & E2E Tests]]
+- 1 edge to [[_COMMUNITY_Adversarial Injection Guards]]
+- 1 edge to [[_COMMUNITY_Community 17]]
+- 1 edge to [[_COMMUNITY_Community 509]]
+- 1 edge to [[_COMMUNITY_Community 591]]
+
+## Top bridge nodes
+- [[TestMultipartOutboundPipeline]] - degree 15, connects to 3 communities
+- [[.test_multipart_pipeline_block_non_owner()]] - degree 6, connects to 3 communities
+- [[_make_multipart_body()]] - degree 12, connects to 2 communities
+- [[.test_multipart_fails_closed_for_non_owner()]] - degree 5, connects to 2 communities
+- [[.test_multipart_outbound_pipeline_called()]] - degree 5, connects to 2 communities

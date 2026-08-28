@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "code"
-community: "Community 156"
+community: "Memory Lifecycle & Egress Filtering"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_156
+  - community/Memory_Lifecycle__Egress_Filtering
 ---
 
 # TestToolResultSanitizer
@@ -30,10 +30,9 @@ tags:
 - [[.test_malicious_link_stripping()]] - `method` [EXTRACTED]
 - [[.test_mixed_content_sanitization()]] - `method` [EXTRACTED]
 - [[.test_warn_mode()]] - `method` [EXTRACTED]
-- [[Test ToolResultSanitizer functionality.]] - `rationale_for` [EXTRACTED]
 - [[Test ToolResultSanitizerConfig.]] - `rationale_for` [EXTRACTED]
 - [[ToolResultSanitizer_1]] - `uses` [INFERRED]
 - [[ToolResultSanitizerConfig]] - `uses` [INFERRED]
 - [[test_tool_result_sanitizer_enhanced.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_156
+#graphify/code #graphify/EXTRACTED #community/Memory_Lifecycle__Egress_Filtering

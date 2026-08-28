@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "Community 37"
-location: "L1736"
+community: "Community 35"
+location: "L1836"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_37
+  - community/Community_35
 ---
 
 # When the LLM raises in the 'direct' agent path:       - the user message appende
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_ws_direct_agent_pipeline_error_pops_history_and_recovery_send_fails()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_37
+#graphify/rationale #graphify/EXTRACTED #community/Community_35

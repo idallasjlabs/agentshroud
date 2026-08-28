@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/REPORTED_ISSUES.md"
 type: "document"
-community: "Community 475"
+community: "Community 1109"
 location: "L55"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_475
+  - community/Community_1109
 ---
 
 # 🟡 MEDIUM: Technical Debt & Bugs
@@ -18,6 +18,5 @@ tags:
 - [[13. Duplicate Imports & Verbose Pydantic Init]] - `contains` [EXTRACTED]
 - [[9. Streaming Responses Bypass Outbound Filtering]] - `contains` [EXTRACTED]
 - [[AgentShroud Consolidated Issues Report]] - `contains` [EXTRACTED]
-- [[AgentShroud™ Consolidated Issues Report]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_475
+#graphify/document #graphify/EXTRACTED #community/Community_1109

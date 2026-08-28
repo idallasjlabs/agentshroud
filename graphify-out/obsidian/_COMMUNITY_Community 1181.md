@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1181
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[Browser — Secure Browser Automation_2]] - document - docker/config/hermes/skills/i-browser/README.md
-- [[Purpose_41]] - document - docker/config/hermes/skills/i-browser/README.md
-- [[README_46]] - document - docker/config/hermes/skills/i-browser/README.md
-- [[Related Skills_44]] - document - docker/config/hermes/skills/i-browser/README.md
-- [[Usage_46]] - document - docker/config/hermes/skills/i-browser/README.md
+- [[Data Validation (DATA-VAL)_1]] - document - docker/config/hermes/skills/i-data/README.md
+- [[Purpose_46]] - document - docker/config/hermes/skills/i-data/README.md
+- [[README_51]] - document - docker/config/hermes/skills/i-data/README.md
+- [[Related Skills_49]] - document - docker/config/hermes/skills/i-data/README.md
+- [[Usage_52]] - document - docker/config/hermes/skills/i-data/README.md
 
 ## Live Query (requires Dataview plugin)
 

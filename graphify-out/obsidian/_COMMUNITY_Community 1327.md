@@ -1,17 +1,19 @@
 ---
 type: community
+cohesion: 0.50
 members: 4
 ---
 
 # Community 1327
 
+**Cohesion:** 0.50 - moderately connected
 **Members:** 4 nodes
 
 ## Members
-- [[.test_self_diagnose_dedupe_handles_missing_update_id_different_messages()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_self_diagnostic_dedupe_handles_missing_update_id_different_messages()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[When update_id is missing, different message_id values should not dedupe self-di]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[When update_id is missing, different message_id values should not dedupe togethe]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[3. Critical Findings & Risks]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[3.1 HIGH Priority Issues]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[3.2 MEDIUM Priority Issues]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[3.3 LOW Priority Issues]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_Community 2]]
-- 2 edges to [[_COMMUNITY_Community 32]]
+- 1 edge to [[_COMMUNITY_Community 185]]
 
 ## Top bridge nodes
-- [[.test_self_diagnose_dedupe_handles_missing_update_id_different_messages()]] - degree 8, connects to 2 communities
-- [[.test_self_diagnostic_dedupe_handles_missing_update_id_different_messages()]] - degree 7, connects to 2 communities
+- [[3. Critical Findings & Risks]] - degree 4, connects to 1 community

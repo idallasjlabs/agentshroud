@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "document"
-community: "Community 131"
+community: "Community 162"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_131
+  - community/Community_162
 ---
 
 # AgentShroud Agentic OS
@@ -22,7 +22,6 @@ tags:
 - [[3. Agent Inventory]] - `contains` [EXTRACTED]
 - [[4. Skill System]] - `contains` [EXTRACTED]
 - [[5. Orchestration Flow]] - `contains` [EXTRACTED]
-- [[6. Security Pipeline]] - `contains` [EXTRACTED]
 - [[7. CICD Quality Gates]] - `contains` [EXTRACTED]
 - [[8. Governance Model]] - `contains` [EXTRACTED]
 - [[9. Human-in-the-Loop Controls]] - `contains` [EXTRACTED]
@@ -32,4 +31,4 @@ tags:
 - [[`SecurityPipeline`]] - `contains` [EXTRACTED]
 - [[agentic-os]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_131
+#graphify/document #graphify/EXTRACTED #community/Community_162

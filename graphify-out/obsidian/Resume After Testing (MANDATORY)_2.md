@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-ps/SKILL.md"
 type: "document"
-community: "Community 412"
+community: "Community 417"
 location: "L123"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_412
+  - community/Community_417
 ---
 
 # Resume After Testing (MANDATORY)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[8. Service Control Commands_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_412
+#graphify/document #graphify/EXTRACTED #community/Community_417

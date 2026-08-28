@@ -1,24 +1,26 @@
 ---
 type: community
+cohesion: 0.18
 members: 11
 ---
 
 # Community 817
 
+**Cohesion:** 0.18 - loosely connected
 **Members:** 11 nodes
 
 ## Members
-- [[.test_comma_separated()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_custom_default()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_dedup_preserves_first_order()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_empty_string_returns_defaults()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_mixed_separators_and_stripping()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_none_returns_defaults()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_only_separators_falls_back_to_default()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_whitespace_separated()]] - code - gateway/tests/test_multi_host_test.py
-- [[Parse a commawhitespace-separated host list into a de-duplicated list.      Emp]] - rationale - gateway/tools/multi_host_test.py
-- [[TestParseHosts]] - code - gateway/tests/test_multi_host_test.py
-- [[parse_hosts()]] - code - gateway/tools/multi_host_test.py
+- [[.test_demotion_on_violations()]] - code - gateway/tests/test_trust_manager.py
+- [[.test_failure_decreases_score()_1]] - code - gateway/tests/test_trust_manager.py
+- [[.test_promotion_on_threshold()]] - code - gateway/tests/test_trust_manager.py
+- [[.test_score_floor_at_zero()]] - code - gateway/tests/test_trust_manager.py
+- [[.test_success_increases_score()_1]] - code - gateway/tests/test_trust_manager.py
+- [[.test_violation_severe_penalty()]] - code - gateway/tests/test_trust_manager.py
+- [[Agent should be demoted on violations.]] - rationale - gateway/tests/test_trust_manager.py
+- [[Agent should be promoted when score crosses threshold.]] - rationale - gateway/tests/test_trust_manager.py
+- [[Score should not go below 0.]] - rationale - gateway/tests/test_trust_manager.py
+- [[Test earning and losing trust.]] - rationale - gateway/tests/test_trust_manager.py
+- [[TestTrustProgression]] - code - gateway/tests/test_trust_manager.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,12 +30,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 904]]
-- 2 edges to [[_COMMUNITY_Community 485]]
-- 1 edge to [[_COMMUNITY_Community 992]]
-- 1 edge to [[_COMMUNITY_Community 869]]
-- 1 edge to [[_COMMUNITY_Community 731]]
+- 4 edges to [[_COMMUNITY_Progressive Trust]]
 
 ## Top bridge nodes
-- [[TestParseHosts]] - degree 12, connects to 3 communities
-- [[parse_hosts()]] - degree 12, connects to 3 communities
+- [[TestTrustProgression]] - degree 11, connects to 1 community

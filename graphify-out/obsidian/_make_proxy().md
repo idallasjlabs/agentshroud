@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "Community 7"
+community: "Community 54"
 location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_7
+  - community/Community_54
 ---
 
 # _make_proxy()
@@ -14,6 +14,7 @@ tags:
 ## Connections
 - [[LLMProxy]] - `calls` [EXTRACTED]
 - [[LLMProxy_2]] - `references` [EXTRACTED]
+- [[LLMProxy_3]] - `references` [EXTRACTED]
 - [[_FakeSanitizer_1]] - `calls` [EXTRACTED]
 - [[test_cloud_mode_anthropic_tool_use_shape_passes_through()]] - `calls` [EXTRACTED]
 - [[test_deepseek_r1_routes_to_mlxlm()]] - `calls` [EXTRACTED]
@@ -38,4 +39,4 @@ tags:
 - [[test_normalize_local_model_provider_prefix_stripped_before_normalize()]] - `calls` [EXTRACTED]
 - [[test_stats_local_secondary_failover_succeeded_incremented()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_7
+#graphify/code #graphify/EXTRACTED #community/Community_54

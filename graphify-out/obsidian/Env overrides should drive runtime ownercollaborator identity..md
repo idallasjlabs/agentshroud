@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "rationale"
-community: "Community 70"
+community: "RBAC & SOC Realtime"
 location: "L107"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_70
+  - community/RBAC__SOC_Realtime
 ---
 
 # Env overrides should drive runtime owner/collaborator identity.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_owner_and_collaborators_can_be_overridden_from_env()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_70
+#graphify/rationale #graphify/EXTRACTED #community/RBAC__SOC_Realtime

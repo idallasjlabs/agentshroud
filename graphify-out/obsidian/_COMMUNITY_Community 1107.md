@@ -1,19 +1,21 @@
 ---
 type: community
+cohesion: 0.33
 members: 6
 ---
 
 # Community 1107
 
+**Cohesion:** 0.33 - loosely connected
 **Members:** 6 nodes
 
 ## Members
-- [[Expected Behavior]] - document - docs/vault/02 - Modules/JavaScript/browser-fetch.js.md
-- [[Purpose_121]] - document - docs/vault/02 - Modules/JavaScript/browser-fetch.js.md
-- [[Related Notes_7]] - document - docs/vault/02 - Modules/JavaScript/browser-fetch.js.md
-- [[Security Controls_1]] - document - docs/vault/02 - Modules/JavaScript/browser-fetch.js.md
-- [[browser-fetch.js_2]] - document - docs/vault/02 - Modules/JavaScript/browser-fetch.js.md
-- [[browser-fetch.js_1]] - document - docs/vault/02 - Modules/JavaScript/browser-fetch.js.md
+- [[8. Common Troubleshooting Scenarios]] - document - docs/operations/runbook.md
+- [[Database Locked Errors]] - document - docs/operations/runbook.md
+- [[High Memory Usage]] - document - docs/operations/runbook.md
+- [[Performance Issues]] - document - docs/operations/runbook.md
+- [[SSLTLS Certificate Issues]] - document - docs/operations/runbook.md
+- [[Service Won't Start]] - document - docs/operations/runbook.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,3 +23,9 @@ members: 6
 TABLE source_file, type FROM #community/Community_1107
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 128]]
+
+## Top bridge nodes
+- [[8. Common Troubleshooting Scenarios]] - degree 6, connects to 1 community

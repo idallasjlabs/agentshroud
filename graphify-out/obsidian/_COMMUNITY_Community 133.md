@@ -1,73 +1,60 @@
 ---
 type: community
-members: 60
+cohesion: 0.04
+members: 45
 ---
 
 # Community 133
 
-**Members:** 60 nodes
+**Cohesion:** 0.04 - loosely connected
+**Members:** 45 nodes
 
 ## Members
-- [[.__init__()_87]] - code - gateway/security/intel_report.py
-- [[._compute_content_hash()]] - code - gateway/security/intel_report.py
-- [[._load_latest_file()]] - code - gateway/security/intel_report.py
-- [[.load_all()_1]] - code - gateway/security/intel_report.py
-- [[.load_latest()]] - code - gateway/security/intel_report.py
-- [[.matches_allowlist()]] - code - gateway/security/egress_config.py
-- [[.report_id_not_empty()]] - code - gateway/security/intel_report.py
-- [[.save()_1]] - code - gateway/security/intel_report.py
-- [[.source_not_empty()]] - code - gateway/security/intel_report.py
-- [[.test_content_hash_is_deterministic()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_different_content_different_hash()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_empty_report_id_rejected()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_empty_source_rejected()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_full_valid_report()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_minimal_valid_report()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_missing_required_fields_raises()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_negative_security_score_rejected()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_report_has_content_hash()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_report_roundtrips_via_json()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_report_serialises_to_json()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_security_score_above_max_rejected()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_verify_integrity_fails_after_tampering()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_verify_integrity_passes_for_valid_report()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.verify_chain()_2]] - code - gateway/security/intel_report.py
-- [[.verify_integrity()]] - code - gateway/security/intel_report.py
-- [[A single competitor record in a competitive intel report.]] - rationale - gateway/security/intel_report.py
-- [[A verified source backing a competitor claim.      A Citation is only created by]] - rationale - gateway/security/intel_report.py
-- [[Citation]] - code - gateway/security/citation_verifier.py
-- [[Citation_1]] - code - gateway/security/intel_report.py
-- [[CitationVerifier.verify_report()]] - code - gateway/security/citation_verifier.py
-- [[CompetitiveIntelReport]] - code - gateway/security/citation_verifier.py
-- [[CompetitiveIntelReport_1]] - code - gateway/security/intel_report.py
-- [[CompetitiveIntelReport_2]] - code - gateway/tests/test_intel_pipeline.py
-- [[CompetitorEntry]] - code - gateway/security/citation_verifier.py
-- [[CompetitorEntry_1]] - code - gateway/security/intel_report.py
-- [[Compute SHA-256 over the canonical content fields of a report.      Fields inclu]] - rationale - gateway/security/intel_report.py
-- [[Derive content_hash from the canonical content fields.          Only computed wh]] - rationale - gateway/security/intel_report.py
-- [[Fetcher]] - code - gateway/security/citation_verifier.py
-- [[IntelReportStore]] - code - gateway/security/intel_report.py
-- [[Load all reports in chronological order (oldest first).]] - rationale - gateway/security/intel_report.py
-- [[Load the most recently saved report.          Args             verify If True,]] - rationale - gateway/security/intel_report.py
-- [[Path_14]] - code - gateway/security/intel_report.py
-- [[Persist report to the store, linking it to the previous report.          Sets]] - rationale - gateway/security/intel_report.py
-- [[Persistent store for competitive intelligence reports.      Each report is saved]] - rationale - gateway/security/intel_report.py
-- [[Public does domain match any pattern in the effective default allowlist]] - rationale - gateway/security/egress_config.py
-- [[Raised when a loaded report fails its hash integrity check.]] - rationale - gateway/security/intel_report.py
-- [[ReportIntegrityError]] - code - gateway/security/intel_report.py
-- [[Return True if domain matches any pattern (exact or ``.`` wildcard).      Sin]] - rationale - gateway/security/egress_config.py
-- [[Return True iff the stored content_hash matches recomputation.]] - rationale - gateway/security/intel_report.py
-- [[Return the most recent JSON file in the store, or None.]] - rationale - gateway/security/intel_report.py
-- [[Schema for a Hermes-generated competitive intelligence report.      The ``conten]] - rationale - gateway/security/intel_report.py
-- [[TestCompetitiveIntelReportSchema]] - code - gateway/tests/test_intel_pipeline.py
-- [[TestIntelReportHashIntegrity]] - code - gateway/tests/test_intel_pipeline.py
-- [[Tests for Pydantic model validation.]] - rationale - gateway/tests/test_intel_pipeline.py
-- [[Walk the entire report chain and verify hash linkage.          Returns]] - rationale - gateway/security/intel_report.py
-- [[_compute_hash()]] - code - gateway/security/intel_report.py
-- [[citation_verifier.py]] - code - gateway/security/citation_verifier.py
-- [[domain_matches()]] - code - gateway/security/egress_config.py
-- [[intel_report.py]] - code - gateway/security/intel_report.py
-- [[test_intel_pipeline.py]] - code - gateway/tests/test_intel_pipeline.py
+- [[GO — Continue Development]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[High Risk]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[High Value (Critical Security Gaps)]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[Lower Value (Nice-to-Have)]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[Medium Risk]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[Medium Value (Enhancement & Hardening)]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[Monitoring Blindspots]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[⚠️ Moderate Risks]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[💡 Design Gaps]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[🔴 Priority 1 Critical Security Gaps]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[🚨 Critical Risks]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[🟡 Priority 2 Operational Security Maturity]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[🟢 Priority 3 Security Enhancement]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[1. Accomplishments This Phase (Feb 25 – Mar 3)]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[1. Changes in This Diff]] - document - docs/planning/reviews/phase-review-2026-03-04.md
+- [[1. Changes in This Diff (Summary)]] - document - docs/planning/reviews/phase-review-2026-03-05.md
+- [[1. Prior Review Verification]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[2. New Blue Team Changes Since Round 1]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[3. Remaining Work — Prioritized by Value_2]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[3. Remaining Work — Prioritized by Value_1]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[4. Risks & Gaps_2]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[4. Risks & Gaps_1]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[4. Test Coverage Assessment]] - document - docs/planning/reviews/phase-review-2026-03-05.md
+- [[4. Test Results Summary]] - document - docs/planning/reviews/phase-review-2026-03-04.md
+- [[5. Errors & Warnings Summary]] - document - docs/planning/reviews/phase-review-2026-03-04.md
+- [[5. Errors & Warnings Summary_1]] - document - docs/planning/reviews/phase-review-2026-03-05.md
+- [[5. Summary]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[6. Go  No-Go Recommendation]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[6. Verdict]] - document - docs/planning/reviews/phase-review-2026-03-04.md
+- [[6. Verdict_2]] - document - docs/planning/reviews/phase-review-2026-03-05.md
+- [[6. Verdict_1]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[7. Fix Log]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[7. Post-Fix Verification]] - document - docs/planning/reviews/phase-review-2026-03-05.md
+- [[Action Items Before Merge]] - document - docs/planning/reviews/phase-review-2026-03-04.md
+- [[AgentShroud Phase Review — 2026-02-23]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[Conditions for Continued Investment]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[Delivered]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[Fix Status]] - document - docs/planning/reviews/phase-review-2026-03-05.md
+- [[Next Milestone That Validates the Investment]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[Summary_7]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[Summary_8]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[Summary_9]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[What This Means]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[What Would Change This to NO-GO]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[phase-review-2026-02-23]] - document - docs/planning/reviews/phase-review-2026-02-23.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -77,19 +64,28 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 30 edges to [[_COMMUNITY_Community 171]]
-- 16 edges to [[_COMMUNITY_Community 211]]
-- 10 edges to [[_COMMUNITY_Community 113]]
-- 7 edges to [[_COMMUNITY_Community 45]]
-- 4 edges to [[_COMMUNITY_Community 31]]
-- 3 edges to [[_COMMUNITY_Community 18]]
-- 2 edges to [[_COMMUNITY_Community 251]]
-- 2 edges to [[_COMMUNITY_Community 282]]
-- 1 edge to [[_COMMUNITY_Community 38]]
+- 2 edges to [[_COMMUNITY_Community 345]]
+- 2 edges to [[_COMMUNITY_Community 311]]
+- 2 edges to [[_COMMUNITY_Community 725]]
+- 1 edge to [[_COMMUNITY_Community 1047]]
+- 1 edge to [[_COMMUNITY_Community 1329]]
+- 1 edge to [[_COMMUNITY_Community 908]]
+- 1 edge to [[_COMMUNITY_Community 979]]
+- 1 edge to [[_COMMUNITY_Community 724]]
+- 1 edge to [[_COMMUNITY_Community 1330]]
+- 1 edge to [[_COMMUNITY_Community 1331]]
+- 1 edge to [[_COMMUNITY_Community 1112]]
+- 1 edge to [[_COMMUNITY_Community 1332]]
+- 1 edge to [[_COMMUNITY_Community 1113]]
+- 1 edge to [[_COMMUNITY_Community 1263]]
+- 1 edge to [[_COMMUNITY_Community 1333]]
+- 1 edge to [[_COMMUNITY_Community 1334]]
+- 1 edge to [[_COMMUNITY_Community 1335]]
+- 1 edge to [[_COMMUNITY_Community 1048]]
+- 1 edge to [[_COMMUNITY_Community 678]]
+- 1 edge to [[_COMMUNITY_Community 1336]]
+- 1 edge to [[_COMMUNITY_Community 768]]
+- 1 edge to [[_COMMUNITY_Community 629]]
 
 ## Top bridge nodes
-- [[IntelReportStore]] - degree 39, connects to 5 communities
-- [[CompetitiveIntelReport_1]] - degree 36, connects to 4 communities
-- [[CompetitorEntry_1]] - degree 22, connects to 4 communities
-- [[Citation_1]] - degree 11, connects to 3 communities
-- [[citation_verifier.py]] - degree 10, connects to 3 communities
+- [[AgentShroud Phase Review — 2026-02-23]] - degree 49, connects to 22 communities

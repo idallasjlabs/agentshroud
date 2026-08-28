@@ -1,18 +1,19 @@
 ---
 type: community
-members: 5
+cohesion: 0.50
+members: 4
 ---
 
 # Community 1332
 
-**Members:** 5 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[Added_11]] - document - CHANGELOG.md
-- [[Fixed_14]] - document - CHANGELOG.md
-- [[Security_7]] - document - CHANGELOG.md
-- [[Summary_18]] - document - CHANGELOG.md
-- [[0.7.0 - 2026-02-25]] - document - CHANGELOG.md
+- [[2. Security Value Audit — Genuine Protection vs. Security Theater]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[⚠️ Potential Security Theater Risks]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[✅ Genuine Security Value Delivered]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[🎯 Overall Assessment GENUINE SECURITY VALUE]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,10 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 984]]
-- 1 edge to [[_COMMUNITY_Community 1296]]
-- 1 edge to [[_COMMUNITY_Community 169]]
-- 1 edge to [[_COMMUNITY_Community 629]]
+- 1 edge to [[_COMMUNITY_Community 133]]
 
 ## Top bridge nodes
-- [[0.7.0 - 2026-02-25]] - degree 9, connects to 4 communities
+- [[2. Security Value Audit — Genuine Protection vs. Security Theater]] - degree 4, connects to 1 community

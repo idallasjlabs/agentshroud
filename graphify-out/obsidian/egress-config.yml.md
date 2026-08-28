@@ -1,11 +1,11 @@
 ---
 source_file: "docs/data/schema-documentation.md"
 type: "code"
-community: "Community 170"
+community: "Community 412"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_170
+  - community/Community_412
 ---
 
 # egress-config.yml
@@ -14,4 +14,4 @@ tags:
 - [[Blocked by default (private RFC1918 ranges)]] - `conceptually_related_to` [EXTRACTED]
 - [[DNS Filter]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_170
+#graphify/code #graphify/EXTRACTED #community/Community_412

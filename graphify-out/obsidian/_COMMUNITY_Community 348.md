@@ -1,38 +1,40 @@
 ---
 type: community
+cohesion: 0.14
 members: 25
 ---
 
 # Community 348
 
+**Cohesion:** 0.14 - loosely connected
 **Members:** 25 nodes
 
 ## Members
-- [[.setup_method()_12]] - code - gateway/tests/test_metadata_guard.py
-- [[.test_all_unicode_control_chars_stripped()]] - code - gateway/tests/test_metadata_guard.py
-- [[.test_check_for_exif_detects_magic_bytes()]] - code - gateway/tests/test_metadata_guard.py
-- [[.test_check_oversized_headers_flags_large_headers()]] - code - gateway/tests/test_metadata_guard.py
-- [[.test_check_oversized_headers_passes_normal_headers()]] - code - gateway/tests/test_metadata_guard.py
-- [[.test_internal_ip_patterns_comprehensive()]] - code - gateway/tests/test_metadata_guard.py
-- [[.test_sanitize_filename_normalizes_unicode()]] - code - gateway/tests/test_metadata_guard.py
-- [[.test_sanitize_filename_strips_control_chars()]] - code - gateway/tests/test_metadata_guard.py
-- [[.test_sanitize_headers_redacts_internal_ips()]] - code - gateway/tests/test_metadata_guard.py
-- [[.test_sanitize_headers_strips_sensitive()]] - code - gateway/tests/test_metadata_guard.py
-- [[.test_sanitize_headers_truncates_on_size_limit()]] - code - gateway/tests/test_metadata_guard.py
-- [[.test_sanitize_image_metadata_preserves_non_exif()]] - code - gateway/tests/test_metadata_guard.py
-- [[.test_sanitize_image_metadata_removes_exif()]] - code - gateway/tests/test_metadata_guard.py
-- [[Test comprehensive internal IP pattern matching.]] - rationale - gateway/tests/test_metadata_guard.py
-- [[Test that EXIF metadata is removed from image data.]] - rationale - gateway/tests/test_metadata_guard.py
-- [[Test that all specified unicode control characters are stripped.]] - rationale - gateway/tests/test_metadata_guard.py
-- [[Test that header sanitization stops at size limit.]] - rationale - gateway/tests/test_metadata_guard.py
-- [[Test that internal IPs are redacted from headers.]] - rationale - gateway/tests/test_metadata_guard.py
-- [[Test that non-EXIF data is preserved.]] - rationale - gateway/tests/test_metadata_guard.py
-- [[Test that normal-sized headers pass.]] - rationale - gateway/tests/test_metadata_guard.py
-- [[Test that oversized headers are flagged.]] - rationale - gateway/tests/test_metadata_guard.py
-- [[Test that sensitive headers are stripped.]] - rationale - gateway/tests/test_metadata_guard.py
-- [[Test that unicode control characters are stripped.]] - rationale - gateway/tests/test_metadata_guard.py
-- [[Test that unicode is normalized with NFKC.]] - rationale - gateway/tests/test_metadata_guard.py
-- [[TestMetadataGuard]] - code - gateway/tests/test_metadata_guard.py
+- [[.effective_rootless()]] - code - gateway/runtime/config.py
+- [[.ps()_2]] - code - gateway/runtime/engine.py
+- [[.test_defaults()_1]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_effective_rootless_docker()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_effective_rootless_override()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_effective_rootless_podman()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_from_dict()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_from_env_defaults()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_from_env_set()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_with_data()]] - code - gateway/tests/test_runtime_engines.py
+- [[Configuration for container runtime selection and behavior.      Loaded from env]] - rationale - gateway/runtime/config.py
+- [[ContainerInfo_2]] - code - gateway/runtime/engine.py
+- [[Lightweight container metadata returned by psinspect.]] - rationale - gateway/runtime/engine.py
+- [[Resolve rootless setting based on runtime.]] - rationale - gateway/runtime/config.py
+- [[RuntimeConfig]] - code - gateway/runtime/config.py
+- [[TestContainerInfo]] - code - gateway/tests/test_runtime_engines.py
+- [[TestRuntimeConfig]] - code - gateway/tests/test_runtime_engines.py
+- [[__init__.py_8]] - code - gateway/runtime/__init__.py
+- [[apple_engine.py]] - code - gateway/runtime/apple_engine.py
+- [[compose_generator.py]] - code - gateway/runtime/compose_generator.py
+- [[config.py_1]] - code - gateway/runtime/config.py
+- [[docker_engine.py]] - code - gateway/runtime/docker_engine.py
+- [[engine.py]] - code - gateway/runtime/engine.py
+- [[podman_engine.py]] - code - gateway/runtime/podman_engine.py
+- [[security.py]] - code - gateway/runtime/security.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -42,9 +44,24 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 585]]
-- 2 edges to [[_COMMUNITY_Community 14]]
+- 12 edges to [[_COMMUNITY_Community 329]]
+- 8 edges to [[_COMMUNITY_Community 207]]
+- 7 edges to [[_COMMUNITY_Community 325]]
+- 7 edges to [[_COMMUNITY_Community 320]]
+- 7 edges to [[_COMMUNITY_Community 204]]
+- 6 edges to [[_COMMUNITY_Community 453]]
+- 5 edges to [[_COMMUNITY_Community 37]]
+- 3 edges to [[_COMMUNITY_Community 447]]
+- 2 edges to [[_COMMUNITY_Community 849]]
+- 2 edges to [[_COMMUNITY_Community 553]]
+- 1 edge to [[_COMMUNITY_Community 919]]
+- 1 edge to [[_COMMUNITY_Community 365]]
+- 1 edge to [[_COMMUNITY_Community 1060]]
+- 1 edge to [[_COMMUNITY_Community 645]]
 
 ## Top bridge nodes
-- [[TestMetadataGuard]] - degree 16, connects to 2 communities
-- [[.setup_method()_12]] - degree 2, connects to 1 community
+- [[ContainerInfo_2]] - degree 31, connects to 11 communities
+- [[__init__.py_8]] - degree 10, connects to 6 communities
+- [[TestRuntimeConfig]] - degree 12, connects to 4 communities
+- [[TestContainerInfo]] - degree 8, connects to 4 communities
+- [[RuntimeConfig]] - degree 13, connects to 3 communities

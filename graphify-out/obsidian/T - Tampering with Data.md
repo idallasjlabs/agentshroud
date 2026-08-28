@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/threat-model.md"
 type: "document"
-community: "Community 1365"
+community: "Community 913"
 location: "L65"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1365
+  - community/Community_913
 ---
 
 # T - Tampering with Data
@@ -16,4 +16,4 @@ tags:
 - [[Threat Audit Log Tampering]] - `contains` [EXTRACTED]
 - [[Threat Configuration Drift]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1365
+#graphify/document #graphify/EXTRACTED #community/Community_913

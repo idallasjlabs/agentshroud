@@ -1,17 +1,19 @@
 ---
 type: community
+cohesion: 0.50
 members: 4
 ---
 
 # Community 1352
 
+**Cohesion:** 0.50 - moderately connected
 **Members:** 4 nodes
 
 ## Members
-- [[.test_five_with_icc_disabled_and_validator()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_four_with_icc_disabled()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_three_baseline()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[TestScoreNetworkSegmentation_1]] - code - gateway/tests/test_scorecard_scoring.py
+- [[.test_empty_files_skipped()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_invalid_then_valid()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_missing_dir_returns_none()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestLoadLatestJson_1]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,7 +23,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 653]]
+- 2 edges to [[_COMMUNITY_Community 193]]
+- 1 edge to [[_COMMUNITY_Community 288]]
 
 ## Top bridge nodes
-- [[TestScoreNetworkSegmentation_1]] - degree 4, connects to 1 community
+- [[TestLoadLatestJson_1]] - degree 4, connects to 1 community
+- [[.test_empty_files_skipped()]] - degree 2, connects to 1 community
+- [[.test_invalid_then_valid()]] - degree 2, connects to 1 community

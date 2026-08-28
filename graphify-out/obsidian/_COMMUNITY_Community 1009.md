@@ -1,20 +1,22 @@
 ---
 type: community
+cohesion: 0.29
 members: 7
 ---
 
 # Community 1009
 
+**Cohesion:** 0.29 - loosely connected
 **Members:** 7 nodes
 
 ## Members
-- [[A. `mac_app_catalog.json` — Machine-readable manifest]] - document - .agents/skills/i-mac/SKILL.md
-- [[B. `mac_app_catalog.md` — Human-readable catalog]] - document - .agents/skills/i-mac/SKILL.md
-- [[Discovery Strategy]] - document - .agents/skills/i-mac/SKILL.md
-- [[Phase 2 — Deduplication & Normalization]] - document - .agents/skills/i-mac/SKILL.md
-- [[Phase 3 — Categorization]] - document - .agents/skills/i-mac/SKILL.md
-- [[Phase 4 — Enrichment]] - document - .agents/skills/i-mac/SKILL.md
-- [[Phase 5 — Output Generation]] - document - .agents/skills/i-mac/SKILL.md
+- [[Deployment Matrix  (Direct to Prod)]] - document - .agents/skills/i-cicd/SKILL.md
+- [[GitHub Actions Best Practices]] - document - .agents/skills/i-cicd/SKILL.md
+- [[Quality Gates  (execution order)]] - document - .agents/skills/i-cicd/SKILL.md
+- [[Review Flags  (block the merge)]] - document - .agents/skills/i-cicd/SKILL.md
+- [[Role_8]] - document - .agents/skills/i-cicd/SKILL.md
+- [[SKILL_14]] - document - .agents/skills/i-cicd/SKILL.md
+- [[Skill CICD Pipeline Advisor (CICD)]] - document - .agents/skills/i-cicd/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,10 +24,3 @@ members: 7
 TABLE source_file, type FROM #community/Community_1009
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 430]]
-- 1 edge to [[_COMMUNITY_Community 796]]
-
-## Top bridge nodes
-- [[Discovery Strategy]] - degree 7, connects to 2 communities

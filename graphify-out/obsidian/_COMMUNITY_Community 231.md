@@ -1,45 +1,47 @@
 ---
 type: community
+cohesion: 0.07
 members: 32
 ---
 
 # Community 231
 
+**Cohesion:** 0.07 - loosely connected
 **Members:** 32 nodes
 
 ## Members
-- [[1. Health Check (Gateway)]] - document - docker/QUICKSTART.md
-- [[2. Get Auth Token (Gateway)]] - document - docker/QUICKSTART.md
-- [[3. Send Test Message]] - document - docker/QUICKSTART.md
-- [[4. Verify Isaiah's Personality]] - document - docker/QUICKSTART.md
-- [[API Key Error]] - document - docker/QUICKSTART.md
-- [[AgentShroud Phase 3 - Quick Start Guide]] - document - docker/QUICKSTART.md
-- [[Architecture Diagram]] - document - docker/QUICKSTART.md
-- [[Check File Permissions]] - document - docker/QUICKSTART.md
-- [[Check Status]] - document - docker/QUICKSTART.md
-- [[Container Won't Start]] - document - docker/QUICKSTART.md
-- [[Firmware setup (ESP32-S3-BOX-3)]] - document - docker/QUICKSTART.md
-- [[Gateway Returns 401 Unauthorized]] - document - docker/QUICKSTART.md
-- [[Graceful Shutdown]] - document - docker/QUICKSTART.md
-- [[Hermes Setup (full profile only)]] - document - docker/QUICKSTART.md
-- [[Launch the Stack]] - document - docker/QUICKSTART.md
-- [[Next Steps]] - document - docker/QUICKSTART.md
-- [[Nuclear Option (Reset Everything)]] - document - docker/QUICKSTART.md
-- [[OpenClaw Not Responding]] - document - docker/QUICKSTART.md
-- [[Prerequisites_1]] - document - docker/QUICKSTART.md
-- [[QUICKSTART]] - document - docker/QUICKSTART.md
-- [[Security Validation]] - document - docker/QUICKSTART.md
-- [[Server-side setup]] - document - docker/QUICKSTART.md
-- [[Setup (One-Time)]] - document - docker/QUICKSTART.md
-- [[Start Everything]] - document - docker/QUICKSTART.md
-- [[Step 1 Add Your API Key]] - document - docker/QUICKSTART.md
-- [[Stop the Stack]] - document - docker/QUICKSTART.md
-- [[Success Criteria]] - document - docker/QUICKSTART.md
-- [[Test the System]] - document - docker/QUICKSTART.md
-- [[Troubleshooting_5]] - document - docker/QUICKSTART.md
-- [[Verify]] - document - docker/QUICKSTART.md
-- [[Verify Isolation]] - document - docker/QUICKSTART.md
-- [[Voice Terminal (optional — ESP32-S3-BOX-3 + Hermes)]] - document - docker/QUICKSTART.md
+- [[Code Review (i-cr)]] - document - .agents/skills/i-cr/SKILL.md
+- [[Environment Management (env — unresolved reference)]] - concept - .agents/skills/i-env/SKILL.md
+- [[GitHub Workflow Standards (i-gg)]] - document - .agents/skills/i-gg/SKILL.md
+- [[MCP Tools Usage (README)]] - document - .agents/skills/i-mcpm/README.md
+- [[MCP Tools Usage (SKILL)]] - document - .agents/skills/i-mcpm/SKILL.md
+- [[Mnemosyne Retention Engineer (README)]] - document - .agents/skills/i-mnemosyne/README.md
+- [[Mnemosyne Retention Engineer (SKILL)]] - document - .agents/skills/i-mnemosyne/SKILL.md
+- [[Oracle Feedback Analyst (README)]] - document - .agents/skills/i-oracle/README.md
+- [[Oracle Feedback Analyst (SKILL)]] - document - .agents/skills/i-oracle/SKILL.md
+- [[Production-Ready PR (i-crpr)]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Project Management (README)]] - document - .agents/skills/i-pm/README.md
+- [[Project Management (SKILL)]] - document - .agents/skills/i-pm/SKILL.md
+- [[Pull Request Generator (README)]] - document - .agents/skills/i-pr/README.md
+- [[Pull Request Generator (SKILL)]] - document - .agents/skills/i-pr/SKILL.md
+- [[Purpose_7]] - document - .agents/skills/i-cr/README.md
+- [[Purpose_22]] - document - .agents/skills/i-pm/README.md
+- [[Purpose_33]] - document - .agents/skills/i-tdd/README.md
+- [[README_7]] - document - .agents/skills/i-cr/README.md
+- [[README_22]] - document - .agents/skills/i-pm/README.md
+- [[README_33]] - document - .agents/skills/i-tdd/README.md
+- [[Related Skills_7]] - document - .agents/skills/i-cr/README.md
+- [[Related Skills_25]] - document - .agents/skills/i-pm/README.md
+- [[Related Skills_36]] - document - .agents/skills/i-tdd/README.md
+- [[Security Audit (i-sec)]] - document - .agents/skills/i-sec/SKILL.md
+- [[Skills Guide (catalog)]] - document - .agents/skills/reference/SKILLS_GUIDE.md
+- [[System Audit Documentation (README)]] - document - .agents/skills/i-sad/README.md
+- [[System Audit Vault (i-sav)]] - document - .agents/skills/i-sav/SKILL.md
+- [[Test-Driven Development (TDD) Coach]] - document - .agents/skills/i-tdd/SKILL.md
+- [[Test-Driven Development README]] - document - .agents/skills/i-tdd/README.md
+- [[Usage_9]] - document - .agents/skills/i-cr/README.md
+- [[Usage_25]] - document - .agents/skills/i-pm/README.md
+- [[Usage_36]] - document - .agents/skills/i-tdd/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -47,3 +49,12 @@ members: 32
 TABLE source_file, type FROM #community/Community_231
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 4 edges to [[_COMMUNITY_Community 516]]
+- 1 edge to [[_COMMUNITY_Community 1034]]
+
+## Top bridge nodes
+- [[Skills Guide (catalog)]] - degree 9, connects to 1 community
+- [[Project Management (SKILL)]] - degree 8, connects to 1 community
+- [[Test-Driven Development (TDD) Coach]] - degree 2, connects to 1 community

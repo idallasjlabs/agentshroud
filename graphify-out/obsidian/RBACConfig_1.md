@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "Community 15"
+community: "RBAC & SOC Realtime"
 location: "L53"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_15
+  - community/RBAC__SOC_Realtime
 ---
 
 # RBACConfig
@@ -50,7 +50,7 @@ tags:
 - [[ContributorManager]] - `references` [EXTRACTED]
 - [[EmailSendRequest_1]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
-- [[FastAPI_1]] - `uses` [INFERRED]
+- [[FastAPI_2]] - `uses` [INFERRED]
 - [[ForwardRequest_2]] - `uses` [INFERRED]
 - [[GroupAccessDenied]] - `uses` [INFERRED]
 - [[GroupWorkspaceManager]] - `uses` [INFERRED]
@@ -88,7 +88,7 @@ tags:
 - [[RBACManager]] - `uses` [INFERRED]
 - [[RBACManager_1]] - `uses` [INFERRED]
 - [[RateLimitEntry]] - `uses` [INFERRED]
-- [[Request_4]] - `uses` [INFERRED]
+- [[Request_5]] - `uses` [INFERRED]
 - [[Resource]] - `uses` [INFERRED]
 - [[Resource_1]] - `uses` [INFERRED]
 - [[Role]] - `uses` [INFERRED]
@@ -241,4 +241,4 @@ tags:
 - [[websocket.py]] - `imports` [EXTRACTED]
 - [[ws_soc_endpoint()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_15
+#graphify/code #graphify/INFERRED #community/RBAC__SOC_Realtime

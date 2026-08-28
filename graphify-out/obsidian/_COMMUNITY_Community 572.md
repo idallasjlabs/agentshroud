@@ -1,29 +1,31 @@
 ---
 type: community
+cohesion: 0.12
 members: 16
 ---
 
 # Community 572
 
+**Cohesion:** 0.12 - loosely connected
 **Members:** 16 nodes
 
 ## Members
-- [[1. Clone the Repository]] - document - docs/operations/linux.md
-- [[2. Install Docker]] - document - docs/operations/linux.md
-- [[3. Set Up Secrets]] - document - docs/operations/linux.md
-- [[4. Configure AgentShroud]] - document - docs/operations/linux.md
-- [[5. Build and Start]] - document - docs/operations/linux.md
-- [[6. Verify]] - document - docs/operations/linux.md
-- [[Architecture Notes]] - document - docs/operations/linux.md
-- [[Deploying AgentShroud on Linux (x86_64  aarch64)]] - document - docs/operations/linux.md
-- [[Firewall]] - document - docs/operations/linux.md
-- [[Fresh Install]] - document - docs/operations/linux.md
-- [[Non-Root User]] - document - docs/operations/linux.md
-- [[Prerequisites_4]] - document - docs/operations/linux.md
-- [[Systemd Service for Auto-Start]] - document - docs/operations/linux.md
-- [[Updating to Latest Release]] - document - docs/operations/linux.md
-- [[VPS Deployment Notes]] - document - docs/operations/linux.md
-- [[linux]] - document - docs/operations/linux.md
+- [[0.1 Code Inventory ✅]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[0.2 Current State ✅]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[2.1 Top Up Anthropic API Credits]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[2.2 Grant iMessage Automation Permission]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[2.3 Verify Both Working]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[3.1 Test Manual Send from Host]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[3.2 Test from Container]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[3.3 Test via OpenClaw chat Endpoint]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[3.4 Verify End-to-End Message Flow]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[AgentShroud Recovery Plan v0.4.0]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[EXECUTIVE SUMMARY]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[NEXT STEPS]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[PHASE 0 STABILIZATION ✅ COMPLETE]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[PHASE 2 USER ACTIONS REQUIRED]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[PHASE 3 iMESSAGE INTEGRATION TEST]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[RECOVERY_PLAN]] - document - docs/planning/recovery/RECOVERY_PLAN.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,3 +33,10 @@ members: 16
 TABLE source_file, type FROM #community/Community_572
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 603]]
+- 1 edge to [[_COMMUNITY_Community 1110]]
+
+## Top bridge nodes
+- [[AgentShroud Recovery Plan v0.4.0]] - degree 8, connects to 2 communities

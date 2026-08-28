@@ -1,18 +1,18 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md"
 type: "document"
-community: "Community 379"
+community: "Community 383"
 location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_379
+  - community/Community_383
 ---
 
 # llm_proxy.py
 
 ## Connections
-- [[Configuration_9]] - `contains` [EXTRACTED]
+- [[Configuration_8]] - `contains` [EXTRACTED]
 - [[Key Classes  Functions_10]] - `contains` [EXTRACTED]
 - [[LLM Providers]] - `contains` [EXTRACTED]
 - [[Overview_22]] - `contains` [EXTRACTED]
@@ -21,4 +21,4 @@ tags:
 - [[Streaming]] - `contains` [EXTRACTED]
 - [[llm_proxy.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_379
+#graphify/document #graphify/EXTRACTED #community/Community_383

@@ -1,14 +1,16 @@
 ---
 type: community
+cohesion: 1.00
 members: 1
 ---
 
 # Community 1782
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[AgentShroud LinkedIn Profile Image]] - image - branding/social/linkedin-profile-400x400.png
+- [[_startup_scanner() — ClamAV+Trivy startup scan]] - code - gateway/ingest_api/lifespan.py
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,24 +1,24 @@
 ---
 type: community
-members: 11
+cohesion: 0.22
+members: 9
 ---
 
 # Community 919
 
-**Members:** 11 nodes
+**Cohesion:** 0.22 - loosely connected
+**Members:** 9 nodes
 
 ## Members
-- [[I - Information Disclosure]] - document - docs/security/threat-model.md
-- [[R - Repudiation]] - document - docs/security/threat-model.md
-- [[S - Spoofing Identity]] - document - docs/security/threat-model.md
-- [[STRIDE Threat Analysis]] - document - docs/security/threat-model.md
-- [[Threat API Key Impersonation]] - document - docs/security/threat-model.md
-- [[Threat Agent Identity Spoofing]] - document - docs/security/threat-model.md
-- [[Threat DNS Data Exfiltration]] - document - docs/security/threat-model.md
-- [[Threat Environment Variable Leakage]] - document - docs/security/threat-model.md
-- [[Threat Non-Repudiation Bypass]] - document - docs/security/threat-model.md
-- [[Threat PII Leakage in Logs]] - document - docs/security/threat-model.md
-- [[Threat SSRF (Server-Side Request Forgery)]] - document - docs/security/threat-model.md
+- [[.setup_method()_25]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_compose_not_supported()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_health_check()_1]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_inspect_non_json()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_network_graceful_fail()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_pause_fallback()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_ps_text_parse()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_run_ignores_seccomp()]] - code - gateway/tests/test_runtime_engines.py
+- [[TestAppleContainerEngine]] - code - gateway/tests/test_runtime_engines.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,10 +28,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 865]]
-- 1 edge to [[_COMMUNITY_Community 901]]
-- 1 edge to [[_COMMUNITY_Community 1341]]
-- 1 edge to [[_COMMUNITY_Community 1365]]
+- 2 edges to [[_COMMUNITY_Community 325]]
+- 2 edges to [[_COMMUNITY_Community 329]]
+- 1 edge to [[_COMMUNITY_Community 320]]
+- 1 edge to [[_COMMUNITY_Community 348]]
+- 1 edge to [[_COMMUNITY_Community 207]]
 
 ## Top bridge nodes
-- [[STRIDE Threat Analysis]] - degree 7, connects to 4 communities
+- [[TestAppleContainerEngine]] - degree 14, connects to 5 communities
+- [[.setup_method()_25]] - degree 2, connects to 1 community

@@ -1,20 +1,22 @@
 ---
 type: community
+cohesion: 0.43
 members: 7
 ---
 
 # Community 1043
 
+**Cohesion:** 0.43 - moderately connected
 **Members:** 7 nodes
 
 ## Members
-- [[Step 1 Install ClawHub CLI]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[Step 2 Create ClawHub Account]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[Step 3 Verify Skill Ready]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[Step 4 Publish to ClawHub]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[Step 5 Verify Publication]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[Step 6 Test Installation (Optional)]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[📋 Detailed Step-by-Step]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[MCP AWS Profile Configuration Skill]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
+- [[MCP Auth Reset Skill]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[MCP Tools Usage Skill]] - document - docker/config/openclaw/skills/i-mcpm/SKILL.md
+- [[i-mcpm README (MCP Tools Usage)]] - document - docker/config/openclaw/skills/i-mcpm/README.md
+- [[i-mcpm-auth-reset README]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/README.md
+- [[i-mcpm-aws-profile README]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/README.md
+- [[mcpm-doctor Skill (referenced, sibling dir)]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,9 +24,3 @@ members: 7
 TABLE source_file, type FROM #community/Community_1043
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 858]]
-
-## Top bridge nodes
-- [[📋 Detailed Step-by-Step]] - degree 7, connects to 1 community

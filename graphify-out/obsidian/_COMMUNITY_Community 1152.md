@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1152
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[Data Validation (DATA-VAL)]] - document - .agents/skills/i-data/README.md
-- [[Purpose_9]] - document - .agents/skills/i-data/README.md
-- [[README_9]] - document - .agents/skills/i-data/README.md
-- [[Related Skills_9]] - document - .agents/skills/i-data/README.md
-- [[Usage_11]] - document - .agents/skills/i-data/README.md
+- [[Purpose_14]] - document - .agents/skills/i-mac/README.md
+- [[README_14]] - document - .agents/skills/i-mac/README.md
+- [[Related Skills_14]] - document - .agents/skills/i-mac/README.md
+- [[Usage_16]] - document - .agents/skills/i-mac/README.md
+- [[macOS System Administrator (MAC)]] - document - .agents/skills/i-mac/README.md
 
 ## Live Query (requires Dataview plugin)
 

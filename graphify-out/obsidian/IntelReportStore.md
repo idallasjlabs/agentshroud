@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "Community 133"
+community: "Community 58"
 location: "L194"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_133
+  - community/Community_58
 ---
 
 # IntelReportStore
@@ -42,7 +42,7 @@ tags:
 - [[TestVerifyEntry]] - `uses` [INFERRED]
 - [[TestVerifyReport]] - `uses` [INFERRED]
 - [[UpdateRequest]] - `uses` [INFERRED]
-- [[WebSocket_7]] - `uses` [INFERRED]
+- [[WebSocket_8]] - `uses` [INFERRED]
 - [[_FakeFetcher]] - `uses` [INFERRED]
 - [[_FakeStreamResponse]] - `uses` [INFERRED]
 - [[_intel_store()]] - `calls` [EXTRACTED]
@@ -52,4 +52,4 @@ tags:
 - [[test_citation_verifier.py]] - `imports` [EXTRACTED]
 - [[test_intel_pipeline.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_133
+#graphify/code #graphify/INFERRED #community/Community_58

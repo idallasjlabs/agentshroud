@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "rationale"
-community: "Community 461"
+community: "Community 483"
 location: "L505"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_461
+  - community/Community_483
 ---
 
 # Check if a resource budget is exceeded.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._check_budget()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_461
+#graphify/rationale #graphify/EXTRACTED #community/Community_483

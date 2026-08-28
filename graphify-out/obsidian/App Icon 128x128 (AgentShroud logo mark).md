@@ -1,13 +1,13 @@
 ---
 source_file: "branding/icons/app/icon-128x128.png"
 type: "image"
-community: "Community 1562"
+community: "Community 1668"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Community_1562
+  - community/Community_1668
 ---
 
 # App Icon 128x128 (AgentShroud logo mark)
 
-#graphify/image #graphify/EXTRACTED #community/Community_1562
+#graphify/image #graphify/EXTRACTED #community/Community_1668

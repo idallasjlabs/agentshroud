@@ -1,72 +1,63 @@
 ---
 type: community
-members: 59
+cohesion: 0.06
+members: 48
 ---
 
 # Community 123
 
-**Members:** 59 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 48 nodes
 
 ## Members
-- [[._patch_all_not_run()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_at_least_one()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_baseline_at_least_two()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_baseline_three_without_daemon_config()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_capped_at_five()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_four_when_sbom_and_clean_trivy()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_initial_when_not_run()_1]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_managed_when_has_criticals()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_one_when_no_tools()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_one_when_no_wazuh_no_fluent()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_one_when_sbom_exists()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_optimizing_when_clean_zero_findings()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_overall_clean_when_all_clean()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_overall_critical_when_any_critical()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_overall_not_configured_when_all_not_run()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_overall_warning_when_high_only()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_scanners_dict_has_all_tools()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_three_when_both_running()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_three_when_semgrep_and_precommit_present()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_timestamp_present()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_totals_sum_across_scanners()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_two_when_falco_running()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_two_when_wazuh_running()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_zero_when_no_sbom_no_trivy()]] - code - gateway/tests/test_scanner_integration.py
-- [[Aggregate results from all security scanners into a unified dict.      Returns]] - rationale - gateway/security/scanner_integration.py
-- [[Any_58]] - code - gateway/security/scanner_integration.py
-- [[Any_70]] - code - gateway/tests/test_scanner_integration.py
-- [[Return Fluent Bit log collector status.      Fluent Bit is a log shipper, not a]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 11 Secure Development (0-5).      1=Trivy in build, 2=semgrep conf]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 12 Incident Response (0-5).      1=SOC exists, 2=Falco running, 3=]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 1 Image Integrity (0-5).      1=SBOM exists, 2=Trivy ran, 3=zero c]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 5 Runtime Protection (0-5).      1=module exists, 2=running with c]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 9 Logging & Monitoring (0-5).      1=SOC exists, 2=Wazuh running,]] - rationale - gateway/security/scanner_integration.py
-- [[TestAggregateResults]] - code - gateway/tests/test_scanner_integration.py
-- [[TestScoreImageIntegrity]] - code - gateway/tests/test_scanner_integration.py
-- [[TestScoreIncidentResponse]] - code - gateway/tests/test_scanner_integration.py
-- [[TestScoreLoggingMonitoring]] - code - gateway/tests/test_scanner_integration.py
-- [[TestScoreNetworkSegmentation]] - code - gateway/tests/test_scanner_integration.py
-- [[TestScoreRuntimeProtection]] - code - gateway/tests/test_scanner_integration.py
-- [[TestScoreSecretsManagement]] - code - gateway/tests/test_scanner_integration.py
-- [[TestScoreSecureDevelopment]] - code - gateway/tests/test_scanner_integration.py
-- [[_clamav_clean()]] - code - gateway/tests/test_scanner_integration.py
-- [[_clamav_infected()]] - code - gateway/tests/test_scanner_integration.py
-- [[_falco_clean()]] - code - gateway/tests/test_scanner_integration.py
-- [[_falco_critical()]] - code - gateway/tests/test_scanner_integration.py
-- [[_falco_not_run()]] - code - gateway/tests/test_scanner_integration.py
-- [[_score_image_integrity()]] - code - gateway/security/scanner_integration.py
-- [[_score_incident_response()]] - code - gateway/security/scanner_integration.py
-- [[_score_logging_monitoring()]] - code - gateway/security/scanner_integration.py
-- [[_score_runtime_protection()]] - code - gateway/security/scanner_integration.py
-- [[_score_secure_development()]] - code - gateway/security/scanner_integration.py
-- [[_trivy_clean()]] - code - gateway/tests/test_scanner_integration.py
-- [[_trivy_critical()]] - code - gateway/tests/test_scanner_integration.py
-- [[_trivy_not_run()]] - code - gateway/tests/test_scanner_integration.py
-- [[_wazuh_clean()]] - code - gateway/tests/test_scanner_integration.py
-- [[_wazuh_not_run()]] - code - gateway/tests/test_scanner_integration.py
-- [[aggregate_results()]] - code - gateway/security/scanner_integration.py
-- [[get_fluent_bit_summary()]] - code - gateway/security/scanner_integration.py
-- [[test_scanner_integration.py]] - code - gateway/tests/test_scanner_integration.py
+- [[.__init__()_4]] - code - gateway/approval_queue/group_router.py
+- [[._build_group_reply_text()]] - code - gateway/approval_queue/group_router.py
+- [[._build_owner_dm_text()]] - code - gateway/approval_queue/group_router.py
+- [[._default_send()]] - code - gateway/approval_queue/group_router.py
+- [[.extract_group_chat_id()]] - code - gateway/approval_queue/group_router.py
+- [[.is_group_context()]] - code - gateway/approval_queue/group_router.py
+- [[.route_approval()]] - code - gateway/approval_queue/group_router.py
+- [[.test_default_send_stub_returns_ok()]] - code - gateway/tests/test_group_approval_routing.py
+- [[.test_extract_chat_id_from_group_agent_id()]] - code - gateway/tests/test_group_approval_routing.py
+- [[.test_extract_chat_id_returns_none_for_non_group()]] - code - gateway/tests/test_group_approval_routing.py
+- [[.test_is_group_context_false_for_collab_agent_id()]] - code - gateway/tests/test_group_approval_routing.py
+- [[.test_is_group_context_false_for_default()]] - code - gateway/tests/test_group_approval_routing.py
+- [[.test_is_group_context_true_for_group_agent_id()]] - code - gateway/tests/test_group_approval_routing.py
+- [[.test_route_approval_auto_detects_group_context()]] - code - gateway/tests/test_group_approval_routing.py
+- [[.test_router_works_without_send_fn()]] - code - gateway/tests/test_group_approval_routing.py
+- [[Any_1]] - code - gateway/approval_queue/group_router.py
+- [[ApprovalRequest_1]] - code - gateway/approval_queue/group_router.py
+- [[Build the group thread reply notification text.]] - rationale - gateway/approval_queue/group_router.py
+- [[Build the owner DM notification text.]] - rationale - gateway/approval_queue/group_router.py
+- [[Cover the no-op _default_send stub used when no transport is injected.]] - rationale - gateway/tests/test_group_approval_routing.py
+- [[Extract the raw chat_id from a group-{chat_id} agent_id.]] - rationale - gateway/tests/test_group_approval_routing.py
+- [[Extract the raw chat_id from a group-{chat_id} agent_id.          Returns None i]] - rationale - gateway/approval_queue/group_router.py
+- [[GroupApprovalRouter]] - code - gateway/approval_queue/group_router.py
+- [[GroupApprovalRouter must correctly distinguish group vs DM context.]] - rationale - gateway/tests/test_group_approval_routing.py
+- [[GroupApprovalRouter wired with a mock Telegram send function.]] - rationale - gateway/tests/test_group_approval_routing.py
+- [[GroupApprovalRouter._default_send returns {ok True} without raising.]] - rationale - gateway/tests/test_group_approval_routing.py
+- [[Mock async Telegram sendMessage to capture DM and group notifications.]] - rationale - gateway/tests/test_group_approval_routing.py
+- [[No-op send stub — used when no transport is injected.]] - rationale - gateway/approval_queue/group_router.py
+- [[Return (router, sent_list) tuple for assertion convenience.]] - rationale - gateway/tests/test_group_approval_routing.py
+- [[Return True if agent_id represents a Telegram group workspace.]] - rationale - gateway/approval_queue/group_router.py
+- [[Route an approval notification to the appropriate recipients.          Routing l]] - rationale - gateway/approval_queue/group_router.py
+- [[Router with no send_message_fn uses the default stub (no network calls).]] - rationale - gateway/tests/test_group_approval_routing.py
+- [[Routes approval notifications to owner DM and (optionally) group thread.      Ar]] - rationale - gateway/approval_queue/group_router.py
+- [[TestGroupApprovalRouterContextDetection]] - code - gateway/tests/test_group_approval_routing.py
+- [[TestGroupApprovalRouterDefaultSend]] - code - gateway/tests/test_group_approval_routing.py
+- [[agent_id starting with 'collab-' is NOT recognized as group context.]] - rationale - gateway/tests/test_group_approval_routing.py
+- [[agent_id starting with 'group-' is recognized as group context.]] - rationale - gateway/tests/test_group_approval_routing.py
+- [[agent_id='default' is NOT recognized as group context.]] - rationale - gateway/tests/test_group_approval_routing.py
+- [[extract_group_chat_id returns None for non-group agent IDs.]] - rationale - gateway/tests/test_group_approval_routing.py
+- [[gatewayapproval_queuegroup_router.py (group-{chatId} agent-id scheme, referenced)]] - code - gateway/approval_queue/group_router.py
+- [[group_router.py]] - code - gateway/approval_queue/group_router.py
+- [[group_router.py (GroupApprovalRouter)]] - code - gateway/approval_queue/group_router.py
+- [[ingest_api models.py (ApprovalRequest)]] - code - gateway/ingest_api/models.py
+- [[mock_send_message()]] - code - gateway/tests/test_group_approval_routing.py
+- [[route_approval auto-detects group context when group_chat_id not explicitly pass]] - rationale - gateway/tests/test_group_approval_routing.py
+- [[router()]] - code - gateway/tests/test_group_approval_routing.py
+- [[router_with_sent()]] - code - gateway/tests/test_group_approval_routing.py
+- [[test_group_approval_routing.py]] - code - gateway/tests/test_group_approval_routing.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -76,21 +67,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 20 edges to [[_COMMUNITY_Community 59]]
-- 16 edges to [[_COMMUNITY_Community 125]]
-- 14 edges to [[_COMMUNITY_Community 558]]
-- 12 edges to [[_COMMUNITY_Community 178]]
-- 9 edges to [[_COMMUNITY_Community 512]]
-- 9 edges to [[_COMMUNITY_Community 261]]
-- 8 edges to [[_COMMUNITY_Community 85]]
-- 7 edges to [[_COMMUNITY_Community 541]]
-- 4 edges to [[_COMMUNITY_Community 1002]]
-- 2 edges to [[_COMMUNITY_Community 39]]
-- 1 edge to [[_COMMUNITY_Community 19]]
+- 13 edges to [[_COMMUNITY_Community 56]]
+- 1 edge to [[_COMMUNITY_Community 255]]
+- 1 edge to [[_COMMUNITY_Community 23]]
 
 ## Top bridge nodes
-- [[Any_58]] - degree 22, connects to 10 communities
-- [[test_scanner_integration.py]] - degree 61, connects to 9 communities
-- [[aggregate_results()]] - degree 19, connects to 7 communities
-- [[_score_image_integrity()]] - degree 10, connects to 3 communities
-- [[Any_70]] - degree 16, connects to 2 communities
+- [[group_router.py]] - degree 4, connects to 3 communities
+- [[GroupApprovalRouter]] - degree 23, connects to 1 community
+- [[test_group_approval_routing.py]] - degree 12, connects to 1 community
+- [[TestGroupApprovalRouterContextDetection]] - degree 10, connects to 1 community
+- [[TestGroupApprovalRouterDefaultSend]] - degree 6, connects to 1 community

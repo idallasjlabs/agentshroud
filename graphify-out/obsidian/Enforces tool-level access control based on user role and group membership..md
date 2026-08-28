@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "rationale"
-community: "Community 75"
+community: "Progressive Trust"
 location: "L207"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_75
+  - community/Progressive_Trust
 ---
 
 # Enforces tool-level access control based on user role and group membership.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ToolACLEnforcer]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_75
+#graphify/rationale #graphify/EXTRACTED #community/Progressive_Trust

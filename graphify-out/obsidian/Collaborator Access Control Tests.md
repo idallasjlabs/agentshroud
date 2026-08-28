@@ -1,12 +1,12 @@
 ---
 source_file: "docs/claude-security-audit-prompt.md"
 type: "document"
-community: "Community 438"
+community: "Community 445"
 location: "L230"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_438
+  - community/Community_445
 ---
 
 # Collaborator Access Control Tests
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Your Tasks]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_438
+#graphify/document #graphify/EXTRACTED #community/Community_445

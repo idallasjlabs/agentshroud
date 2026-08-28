@@ -1,14 +1,16 @@
 ---
 type: community
+cohesion: 1.00
 members: 1
 ---
 
 # Community 1752
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[__init__.py_6]] - code - gateway/ingest_api/routes/__init__.py
+- [[Browser — Secure Browser Automation README]] - document - .agents/skills/i-browser/README.md
 
 ## Live Query (requires Dataview plugin)
 

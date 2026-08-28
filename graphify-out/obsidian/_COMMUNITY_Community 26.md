@@ -1,114 +1,128 @@
 ---
 type: community
-members: 101
+cohesion: 0.02
+members: 113
 ---
 
 # Community 26
 
-**Members:** 101 nodes
+**Cohesion:** 0.02 - loosely connected
+**Members:** 113 nodes
 
 ## Members
-- [[.test_bot_agent_ids_are_namespace_separated_from_user_ids()]] - code - gateway/tests/test_security_regressions_v1_2.py
-- [[.test_empty_author_is_denied()]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[.test_foreign_writer_blocked()]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[.test_get_user_memory_openclaw_and_hermes_are_separate_paths()]] - code - gateway/tests/test_security_regressions_v1_2.py
-- [[.test_group_a_write_invisible_from_group_b()]] - code - gateway/tests/test_group_isolation.py
-- [[.test_group_b_write_invisible_from_group_a()]] - code - gateway/tests/test_group_isolation.py
-- [[.test_group_id_uses_group_prefix_namespace()]] - code - gateway/tests/test_group_isolation.py
-- [[.test_group_memory_physically_isolated()]] - code - gateway/tests/test_group_isolation.py
-- [[.test_group_write_invisible_from_user_dm()]] - code - gateway/tests/test_group_isolation.py
-- [[.test_group_write_io_failure_returns_false()]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[.test_group_writes_are_independent_namespaces()]] - code - gateway/tests/test_group_isolation.py
-- [[.test_hermes_dashboard_forwarder_bind_address_is_documented()]] - code - gateway/tests/test_security_regressions_v1_2.py
-- [[.test_hermes_dashboard_stays_loopback_and_gateway_uses_the_bridge_port()]] - code - gateway/tests/test_security_regressions_v1_2.py
-- [[.test_hermes_memory_write_does_not_appear_in_openclaw_memory()]] - code - gateway/tests/test_security_regressions_v1_2.py
-- [[.test_hermes_registered_with_standard_trust()]] - code - gateway/tests/test_security_regressions_v1_2.py
-- [[.test_hermes_violation_does_not_affect_openclaw_trust()]] - code - gateway/tests/test_security_regressions_v1_2.py
-- [[.test_legacy_no_author_write_still_appends()]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[.test_member_authorized()]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[.test_merged_memory_separates_group_and_dm()]] - code - gateway/tests/test_group_isolation.py
-- [[.test_missing_rbac_is_denied()]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[.test_openclaw_memory_write_does_not_appear_in_hermes_memory()]] - code - gateway/tests/test_security_regressions_v1_2.py
-- [[.test_openclaw_violation_does_not_affect_hermes_trust()]] - code - gateway/tests/test_security_regressions_v1_2.py
-- [[.test_owner_write_into_user_memory_succeeds()]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[.test_path_traversal_rejected_for_crafted_bot_id()]] - code - gateway/tests/test_security_regressions_v1_2.py
-- [[.test_path_traversal_rejected_for_crafted_user_id()]] - code - gateway/tests/test_security_regressions_v1_2.py
-- [[.test_run_standalone_sets_matching_bridge_port()]] - code - gateway/tests/test_security_regressions_v1_2.py
-- [[.test_self_write_succeeds()]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[.test_shared_memory_manager_get_user_memory_accepts_bot_id()]] - code - gateway/tests/test_security_regressions_v1_2.py
-- [[.test_user_dm_write_invisible_from_group()]] - code - gateway/tests/test_group_isolation.py
-- [[.test_user_dm_write_invisible_from_other_group()]] - code - gateway/tests/test_group_isolation.py
-- [[.test_user_session_paths_contain_bot_id()]] - code - gateway/tests/test_security_regressions_v1_2.py
-- [[.test_user_write_io_failure_returns_false()]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[A non-owner author cannot write into another user's private memory.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
-- [[A user may write into their own private memory.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
-- [[An emptyNone author is never authorized.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
-- [[BT-H1 SharedMemoryManager.get_user_memory must accept a bot_id parameter.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
-- [[BT-H3 The filesystem paths for openclaw and hermes sessions differ.          Re]] - rationale - gateway/tests/test_security_regressions_v1_2.py
-- [[BT-H4 (reverse) Writing to Hermes workspace does not bleed into OpenClaw.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
-- [[BT-H4 Writing to the openclaw workspace must not leak into the hermes workspace]] - rationale - gateway/tests/test_security_regressions_v1_2.py
-- [[BT-M1 The Hermes TCP dashboard forwarder (port 9119) binds on 0.0.0.0.      Thi]] - rationale - gateway/tests/test_security_regressions_v1_2.py
-- [[BT-M1 Verify the forwarder bind address — currently 0.0.0.0 (accepted risk).]] - rationale - gateway/tests/test_security_regressions_v1_2.py
-- [[Back-compat existing callers that pass no author_idrbac_config keep working.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
-- [[Both groups store separate content with no cross-contamination.]] - rationale - gateway/tests/test_group_isolation.py
-- [[Content appended to group-A memory must not appear in group-B memory.]] - rationale - gateway/tests/test_group_isolation.py
-- [[Content appended to group-B must not appear in group-A memory.]] - rationale - gateway/tests/test_group_isolation.py
-- [[Content written to a group must not appear in any user's private DM memory.]] - rationale - gateway/tests/test_group_isolation.py
-- [[Content written to a user DM must not appear in any group memory.]] - rationale - gateway/tests/test_group_isolation.py
-- [[Finding BT-H1BT-H2BT-H3 SharedMemoryManager must not collapse bot workspaces.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
-- [[Finding RT-N1RT-N2 TrustManager uses shared in-memory DB keyed by agent_id.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
-- [[Group workspace content must not leak into any user's DM workspace.]] - rationale - gateway/tests/test_group_isolation.py
-- [[Hermes's dashboard binds 127.0.0.1 inside its own container (vendor     hermes-a]] - rationale - gateway/tests/test_security_regressions_v1_2.py
-- [[If the underlying session store raises, the authorized write reports         fai]] - rationale - gateway/tests/test_shared_memory_write_acl.py
-- [[Isolated temporary workspace for session manager.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
-- [[No RBAC principal → cannot authorize → deny (fail-closed).]] - rationale - gateway/tests/test_shared_memory_write_acl.py
-- [[RT-N1 (reverse) Hermes violation must not demote OpenClaw.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
-- [[RT-N1 Recording a violation against openclaw MUST NOT change hermes trust.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
-- [[RT-N2 Bot agent IDs ('openclaw', 'hermes') are separate from user IDs.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
-- [[RT-N3 After seeding, hermes trust level is STANDARD (matching lifespan.py).]] - rationale - gateway/tests/test_security_regressions_v1_2.py
-- [[RT-N3 lifespan.py seeds 'hermes' with STANDARD trust.      Verifies the seeding]] - rationale - gateway/tests/test_security_regressions_v1_2.py
-- [[Session directory path must embed bot_id so filesystem confirms isolation.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
-- [[Session manager must reject bot_id with path traversal characters.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
-- [[Session manager must reject user_id with path traversal characters.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
-- [[Test Group Config]] - code - gateway/tests/test_group_config.py
-- [[TestAuthorizationHelper]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[TestBotIdIsolationInSharedMemory]] - code - gateway/tests/test_security_regressions_v1_2.py
-- [[TestCrossBotTrustPivot]] - code - gateway/tests/test_security_regressions_v1_2.py
-- [[TestGroupMemoryInvisibleFromDM]] - code - gateway/tests/test_group_isolation.py
-- [[TestGroupMemoryNamespaceIsolation]] - code - gateway/tests/test_group_isolation.py
-- [[TestHermesDashboardBridgeReachability]] - code - gateway/tests/test_security_regressions_v1_2.py
-- [[TestHermesDashboardForwarderBinding]] - code - gateway/tests/test_security_regressions_v1_2.py
-- [[TestHermesTrustSeeding]] - code - gateway/tests/test_security_regressions_v1_2.py
-- [[TestSessionPathSeparation]] - code - gateway/tests/test_security_regressions_v1_2.py
-- [[TestUserMemoryWriteACL]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[TestWriteFailurePath]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[The owner may write into any user's private memory.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
-- [[User DM content must not leak into a group the user is NOT a member of.]] - rationale - gateway/tests/test_group_isolation.py
-- [[Verifies per-bot session path layout is correctly separated.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
-- [[Writes in group-A must not be readable from group-B.]] - rationale - gateway/tests/test_group_isolation.py
-- [[agent_isolation.py (AgentRegistry)]] - code - gateway/security/agent_isolation.py
-- [[get_merged_memory_for_user returns group section and private section separately.]] - rationale - gateway/tests/test_group_isolation.py
-- [[group-A and group-B memory files must be in separate directories.]] - rationale - gateway/tests/test_group_isolation.py
-- [[group-{chat_id} sessions must live under the 'groups' subdirectory.]] - rationale - gateway/tests/test_group_isolation.py
-- [[group_config.py (TeamsConfig)]] - code - gateway/security/group_config.py
-- [[rbac()]] - code - gateway/tests/test_group_isolation.py
-- [[rbac()_5]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[run-standalone.sh is the actual deploy path for Hermes (docker run, not]] - rationale - gateway/tests/test_security_regressions_v1_2.py
-- [[session_manager()_1]] - code - gateway/tests/test_group_isolation.py
-- [[session_manager()_3]] - code - gateway/tests/test_security_regressions_v1_2.py
-- [[session_manager()_4]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[session_manager.py (UserSessionManager)]] - code - gateway/security/session_manager.py
-- [[shared_memory()]] - code - gateway/tests/test_group_isolation.py
-- [[shared_memory()_2]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[shared_memory.py (SharedMemoryManager)]] - code - gateway/security/shared_memory.py
-- [[smm()]] - code - gateway/tests/test_security_regressions_v1_2.py
-- [[teams()_2]] - code - gateway/tests/test_group_isolation.py
-- [[test_group_isolation.py]] - code - gateway/tests/test_group_isolation.py
-- [[test_security_regressions_v1_2.py]] - code - gateway/tests/test_security_regressions_v1_2.py
-- [[test_shared_memory_write_acl.py]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[tmp_workspace()]] - code - gateway/tests/test_group_isolation.py
-- [[tmp_workspace()_1]] - code - gateway/tests/test_security_regressions_v1_2.py
-- [[trust_manager()_5]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[.__init__()_13]] - code - gateway/ingest_api/ledger.py
+- [[._hash_content()]] - code - gateway/ingest_api/ledger.py
+- [[.close()_5]] - code - gateway/ingest_api/ledger.py
+- [[.delete_entry()]] - code - gateway/ingest_api/ledger.py
+- [[.enforce_retention()]] - code - gateway/ingest_api/ledger.py
+- [[.get_entry()]] - code - gateway/ingest_api/ledger.py
+- [[.get_stats()_1]] - code - gateway/ingest_api/ledger.py
+- [[.initialize()_2]] - code - gateway/ingest_api/ledger.py
+- [[.ledger()]] - code - gateway/tests/test_performance.py
+- [[.ledger()_1]] - code - gateway/tests/test_performance.py
+- [[.record()]] - code - gateway/ingest_api/ledger.py
+- [[.test_1000_entries_all_recorded()]] - code - gateway/tests/test_audit_chain.py
+- [[.test_50_concurrent_writes()]] - code - gateway/tests/test_audit_chain.py
+- [[.test_concurrent_write_and_read()]] - code - gateway/tests/test_audit_chain.py
+- [[.test_content_hashes_are_unique()]] - code - gateway/tests/test_audit_chain.py
+- [[.test_delete_entry_removes_it()]] - code - gateway/tests/test_audit_chain.py
+- [[.test_delete_nonexistent_returns_false()]] - code - gateway/tests/test_audit_chain.py
+- [[.test_enforce_retention_deletes_expired()]] - code - gateway/tests/test_audit_chain.py
+- [[.test_entry_retrieval_by_id()]] - code - gateway/tests/test_audit_chain.py
+- [[.test_hash_is_sha256()]] - code - gateway/tests/test_audit_chain.py
+- [[.test_hash_matches_content()]] - code - gateway/tests/test_audit_chain.py
+- [[.test_nonexistent_entry_returns_none()]] - code - gateway/tests/test_audit_chain.py
+- [[.test_query_filter_by_source()]] - code - gateway/tests/test_audit_chain.py
+- [[.test_query_pagination()]] - code - gateway/tests/test_audit_chain.py
+- [[.test_stats_correct()]] - code - gateway/tests/test_audit_chain.py
+- [[50 concurrent write operations should all succeed.]] - rationale - gateway/tests/test_audit_chain.py
+- [[AppState]] - code - gateway/ingest_api/state.py
+- [[Async SQLite-backed data ledger      Records all content forwarded through the g]] - rationale - gateway/ingest_api/ledger.py
+- [[CI has no real agentshroud.yaml (gitignored, per-deployment secret     config) —]] - rationale - gateway/tests/conftest.py
+- [[Can retrieve specific entry by ID for verification.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Chain with many entries — verify integrity.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Close database connection]] - rationale - gateway/ingest_api/ledger.py
+- [[Concurrent writes and reads don't conflict.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Concurrent writes to chain.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Config with all security modules enabled.]] - rationale - gateway/tests/test_security_integration.py
+- [[Container for application-wide state]] - rationale - gateway/ingest_api/state.py
+- [[Content hash should be a valid SHA-256 hex digest.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Create a FastAPI TestClient with test configuration      Note This doesn't init]] - rationale - gateway/tests/conftest.py
+- [[Create a PIISanitizer instance for testing]] - rationale - gateway/tests/conftest.py
+- [[Create a new ledger entry          Args             source Source identifier (]] - rationale - gateway/ingest_api/ledger.py
+- [[Create a test configuration      Uses regex fallback for PII (no spaCy model req]] - rationale - gateway/tests/conftest.py
+- [[Create an initialized in-memory ledger for testing      Yields the ledger, then]] - rationale - gateway/tests/conftest.py
+- [[Create database, tables, and run initial cleanup          Must be called before]] - rationale - gateway/ingest_api/ledger.py
+- [[Data ledger configuration]] - rationale - gateway/ingest_api/config.py
+- [[DataLedger]] - code - gateway/ingest_api/ledger.py
+- [[Delete entries older than retention_days          Returns             Number of]] - rationale - gateway/ingest_api/ledger.py
+- [[Deleted entry is gone (right to erasure).]] - rationale - gateway/tests/test_audit_chain.py
+- [[Deleting nonexistent entry returns False.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Different content should produce different hashes.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Export chain and re-verify.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Fetch a single ledger entry by ID          Args             entry_id Entry UUI]] - rationale - gateway/ingest_api/ledger.py
+- [[Filter entries by source.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Forget this' - permanently delete a ledger entry          Implements right to er]] - rationale - gateway/ingest_api/ledger.py
+- [[GatewayConfig_2]] - code - gateway/tests/conftest.py
+- [[GatewayConfig_4]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[Get aggregate statistics          Returns             Dictionary with total ent]] - rationale - gateway/ingest_api/ledger.py
+- [[LedgerConfig]] - code - gateway/ingest_api/config.py
+- [[Looking up nonexistent entry returns None.]] - rationale - gateway/tests/test_audit_chain.py
+- [[PIISanitizer_2]] - code - gateway/tests/conftest.py
+- [[Paginated queries return correct subsets.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Re-initializing must not orphan the first aiosqlite connection.      aiosqlite c_1]] - rationale - gateway/tests/test_ledger.py
+- [[Retention enforcement removes expired entries.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Retention enforcement.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Return Authorization headers with test token]] - rationale - gateway/tests/conftest.py
+- [[SHA-256 hash of content string          Args             content Text to hash]] - rationale - gateway/ingest_api/ledger.py
+- [[Stats reflect actual data.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Store configuration          Actual database connection created in initialize().]] - rationale - gateway/ingest_api/ledger.py
+- [[Tamper detection at various chain positions.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Test creating a ledger entry]] - rationale - gateway/tests/test_ledger.py
+- [[Test deleting a ledger entry]] - rationale - gateway/tests/test_ledger.py
+- [[Test deleting a non-existent entry]] - rationale - gateway/tests/test_ledger.py
+- [[Test ledger query with source filter]] - rationale - gateway/tests/test_ledger.py
+- [[Test paginated ledger query]] - rationale - gateway/tests/test_ledger.py
+- [[Test querying ledger with forwarded_to filter]] - rationale - gateway/tests/test_ledger.py
+- [[Test querying ledger with time range filters]] - rationale - gateway/tests/test_ledger.py
+- [[Test retrieving a ledger entry by ID]] - rationale - gateway/tests/test_ledger.py
+- [[Test stats calculation]] - rationale - gateway/tests/test_ledger.py
+- [[TestAuditChainIntegrity]] - code - gateway/tests/test_audit_chain.py
+- [[TestChainExportAndVerification]] - code - gateway/tests/test_audit_chain.py
+- [[TestConcurrentWrites]] - code - gateway/tests/test_audit_chain.py
+- [[TestRetention]] - code - gateway/tests/test_audit_chain.py
+- [[TestTamperDetection]] - code - gateway/tests/test_audit_chain.py
+- [[Verify hash matches SHA-256 of the content.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Write 1000 entries and verify they're all there.]] - rationale - gateway/tests/test_audit_chain.py
+- [[_ensure_agentshroud_config_resolvable()]] - code - gateway/tests/conftest.py
+- [[auth_headers()]] - code - gateway/tests/conftest.py
+- [[auth_headers()_2]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[client()_10]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[conftest.py]] - code - gateway/tests/conftest.py
+- [[full_pipeline_config()]] - code - gateway/tests/test_security_integration.py
+- [[ledger()]] - code - gateway/tests/test_audit_chain.py
+- [[ledger()_2]] - code - gateway/tests/test_security_integration.py
+- [[ledger.py]] - code - gateway/ingest_api/ledger.py
+- [[sanitizer()]] - code - gateway/tests/conftest.py
+- [[state.py]] - code - gateway/ingest_api/state.py
+- [[test_audit_chain.py]] - code - gateway/tests/test_audit_chain.py
+- [[test_client()]] - code - gateway/tests/conftest.py
+- [[test_config()]] - code - gateway/tests/conftest.py
+- [[test_config()_1]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[test_config_with_ssh()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[test_delete_entry()]] - code - gateway/tests/test_ledger.py
+- [[test_delete_nonexistent()]] - code - gateway/tests/test_ledger.py
+- [[test_get_entry()]] - code - gateway/tests/test_ledger.py
+- [[test_get_stats()_2]] - code - gateway/tests/test_ledger.py
+- [[test_initialize_is_idempotent()_1]] - code - gateway/tests/test_ledger.py
+- [[test_ledger()]] - code - gateway/tests/conftest.py
+- [[test_ledger.py]] - code - gateway/tests/test_ledger.py
+- [[test_mcp_result_endpoint.py]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[test_query_ledger()]] - code - gateway/tests/test_ledger.py
+- [[test_query_with_filter()]] - code - gateway/tests/test_ledger.py
+- [[test_query_with_forwarded_to_filter()]] - code - gateway/tests/test_ledger.py
+- [[test_query_with_time_filters()]] - code - gateway/tests/test_ledger.py
+- [[test_record_entry()]] - code - gateway/tests/test_ledger.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -118,21 +132,39 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 19 edges to [[_COMMUNITY_Community 61]]
-- 18 edges to [[_COMMUNITY_Community 174]]
-- 15 edges to [[_COMMUNITY_Community 35]]
-- 9 edges to [[_COMMUNITY_Community 81]]
-- 9 edges to [[_COMMUNITY_Community 15]]
-- 7 edges to [[_COMMUNITY_Community 28]]
-- 2 edges to [[_COMMUNITY_Community 14]]
+- 39 edges to [[_COMMUNITY_PII Sanitizer & E2E Tests]]
+- 28 edges to [[_COMMUNITY_Community 15]]
+- 21 edges to [[_COMMUNITY_Community 43]]
+- 14 edges to [[_COMMUNITY_RBAC & SOC Realtime]]
+- 12 edges to [[_COMMUNITY_Community 32]]
+- 11 edges to [[_COMMUNITY_Community 23]]
+- 9 edges to [[_COMMUNITY_Community 64]]
+- 6 edges to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
+- 5 edges to [[_COMMUNITY_Ingest API & Approval Routes]]
+- 4 edges to [[_COMMUNITY_Community 85]]
+- 4 edges to [[_COMMUNITY_Community 39]]
+- 3 edges to [[_COMMUNITY_Community 21]]
+- 2 edges to [[_COMMUNITY_Community 508]]
+- 2 edges to [[_COMMUNITY_Session Management]]
+- 2 edges to [[_COMMUNITY_Progressive Trust]]
+- 1 edge to [[_COMMUNITY_Community 14]]
+- 1 edge to [[_COMMUNITY_Community 91]]
+- 1 edge to [[_COMMUNITY_Community 289]]
+- 1 edge to [[_COMMUNITY_Middleware & Lifespan]]
+- 1 edge to [[_COMMUNITY_Community 159]]
+- 1 edge to [[_COMMUNITY_Community 48]]
 - 1 edge to [[_COMMUNITY_Community 75]]
-- 1 edge to [[_COMMUNITY_Community 757]]
-- 1 edge to [[_COMMUNITY_Community 821]]
-- 1 edge to [[_COMMUNITY_Community 778]]
+- 1 edge to [[_COMMUNITY_Community 44]]
+- 1 edge to [[_COMMUNITY_Community 47]]
+- 1 edge to [[_COMMUNITY_Community 420]]
+- 1 edge to [[_COMMUNITY_Community 78]]
+- 1 edge to [[_COMMUNITY_Community 30]]
+- 1 edge to [[_COMMUNITY_Community 31]]
+- 1 edge to [[_COMMUNITY_Community 884]]
 
 ## Top bridge nodes
-- [[test_security_regressions_v1_2.py]] - degree 19, connects to 6 communities
-- [[test_group_isolation.py]] - degree 19, connects to 5 communities
-- [[test_shared_memory_write_acl.py]] - degree 14, connects to 5 communities
-- [[TestGroupMemoryNamespaceIsolation]] - degree 13, connects to 5 communities
-- [[TestGroupMemoryInvisibleFromDM]] - degree 12, connects to 5 communities
+- [[state.py]] - degree 37, connects to 21 communities
+- [[LedgerConfig]] - degree 62, connects to 9 communities
+- [[DataLedger]] - degree 67, connects to 7 communities
+- [[test_mcp_result_endpoint.py]] - degree 16, connects to 7 communities
+- [[AppState]] - degree 8, connects to 5 communities

@@ -1,20 +1,22 @@
 ---
 type: community
+cohesion: 0.29
 members: 7
 ---
 
 # Community 1047
 
+**Cohesion:** 0.29 - loosely connected
 **Members:** 7 nodes
 
 ## Members
-- [[Notes_9]] - document - skills/openclaw/video-frames/SKILL.md
-- [[Quick start_4]] - document - skills/openclaw/video-frames/SKILL.md
-- [[SKILL_236]] - document - skills/openclaw/video-frames/SKILL.md
-- [[Video Frames (ffmpeg)]] - document - skills/openclaw/video-frames/SKILL.md
-- [[frame.sh]] - code - skills/openclaw/video-frames/scripts/frame.sh
-- [[frame.sh script]] - code - skills/openclaw/video-frames/scripts/frame.sh
-- [[usage()_8]] - code - skills/openclaw/video-frames/scripts/frame.sh
+- [[1. Accomplishments This Phase]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[featureterminal-control-center (1 commit)]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[featureweb-control-center (2 commits)]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[p0pipeline-wiring (4 commits)]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[p1middleware-modules (3 commits, builds on p0)]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[p2network-modules (3 commits)]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[p3infra-modules (0 commits)]] - document - docs/planning/reviews/phase-review-2026-02-23.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,7 +26,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 400]]
+- 1 edge to [[_COMMUNITY_Community 133]]
 
 ## Top bridge nodes
-- [[SKILL_236]] - degree 3, connects to 1 community
+- [[1. Accomplishments This Phase]] - degree 7, connects to 1 community

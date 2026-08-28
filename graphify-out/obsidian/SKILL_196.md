@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/apple-reminders/SKILL.md"
 type: "document"
-community: "Community 609"
+community: "Community 602"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_609
+  - community/Community_602
 ---
 
 # SKILL.md
@@ -16,4 +16,4 @@ tags:
 - [[Clawdbot cron tool as reminder alternative]] - `conceptually_related_to` [EXTRACTED]
 - [[remindctl CLI]] - `implements` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_609
+#graphify/document #graphify/EXTRACTED #community/Community_602

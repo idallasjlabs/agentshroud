@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
 type: "document"
-community: "Community 1320"
+community: "Community 1321"
 location: "L140"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1320
+  - community/Community_1321
 ---
 
 # Technical Details
@@ -17,4 +17,4 @@ tags:
 - [[Files_1]] - `contains` [EXTRACTED]
 - [[Security Features]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1320
+#graphify/document #graphify/EXTRACTED #community/Community_1321

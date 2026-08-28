@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_archive.py"
 type: "code"
-community: "Community 191"
+community: "Community 359"
 location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_191
+  - community/Community_359
 ---
 
 # _chain_events()
@@ -23,4 +23,4 @@ tags:
 - [[Build n chained events, oldest first, spaced spacing_days apart ending at `start]] - `rationale_for` [EXTRACTED]
 - [[test_audit_archive.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_191
+#graphify/code #graphify/EXTRACTED #community/Community_359

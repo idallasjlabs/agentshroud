@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1247
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_107]] - document - docker/config/openclaw/skills/i-tdd/README.md
-- [[README_112]] - document - docker/config/openclaw/skills/i-tdd/README.md
-- [[Related Skills_116]] - document - docker/config/openclaw/skills/i-tdd/README.md
-- [[Test-Driven Development (TDD)_2]] - document - docker/config/openclaw/skills/i-tdd/README.md
-- [[Usage_117]] - document - docker/config/openclaw/skills/i-tdd/README.md
+- [[Collaborator System (multi-user agentic workspace)]] - concept - docs/agentshroud-knowledge.md
+- [[Dashboard Overview (request volume, security events, audit trail)]] - concept - docs/user-guide.md
+- [[Kill Switch (freezeshutdowndisconnect)]] - concept - docs/user-guide.md
+- [[OpenClaw — primary integration target agent]] - concept - docs/agentshroud-knowledge.md
+- [[SOC Command Center — Five Pillars]] - concept - docs/agentshroud-knowledge.md
 
 ## Live Query (requires Dataview plugin)
 

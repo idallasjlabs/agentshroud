@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/03-data.md"
 type: "concept"
-community: "Community 559"
+community: "Community 556"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_559
+  - community/Community_556
 ---
 
 # Data Flow Diagram
@@ -15,4 +15,4 @@ tags:
 - [[Data Lineage Diagram]] - `shares_data_with` [INFERRED]
 - [[Rendered Data Flow Diagram (PNG)]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_559
+#graphify/concept #graphify/EXTRACTED #community/Community_556

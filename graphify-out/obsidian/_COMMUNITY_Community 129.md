@@ -1,62 +1,60 @@
 ---
 type: community
-members: 49
+cohesion: 0.06
+members: 45
 ---
 
 # Community 129
 
-**Members:** 49 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 45 nodes
 
 ## Members
-- [[A HERMES_MAIN_MODEL naming the anchor model directly (not via the     'qwen3-14b]] - rationale - gateway/tests/test_hermes_model_resolver.py
-- [[AgentShroud Docker Compose (Production)]] - code - docker/docker-compose.yml
-- [[An unrecognized mode value is treated conservatively as cloud.]] - rationale - gateway/tests/test_hermes_model_resolver.py
-- [[CLI `resolve_model.py modelprovider`. Defaults to 'model'.]] - rationale - docker/bots/hermes/resolve_model.py
-- [[Mode comparison tolerates case and surrounding whitespace from env files.]] - rationale - gateway/tests/test_hermes_model_resolver.py
-- [[No arg → emit the model (start.sh convenience).]] - rationale - gateway/tests/test_hermes_model_resolver.py
-- [[Resolve (model, provider) for Hermes from the container environment.      Preced]] - rationale - docker/bots/hermes/resolve_model.py
-- [[Return the Hermes provider key for a bare model name.      Local models (qwenll]] - rationale - docker/bots/hermes/resolve_model.py
-- [[Strip a known provider prefix from a model ref, leaving the bare model name.]] - rationale - docker/bots/hermes/resolve_model.py
-- [[_apply_stale_alias_correction()]] - code - docker/bots/hermes/resolve_model.py
-- [[_load_resolver()]] - code - gateway/tests/test_hermes_model_resolver.py
-- [[_resolve_from_env()]] - code - docker/bots/hermes/resolve_model.py
-- [[cloud mode with a Claude HERMES_MAIN_MODEL → that model + anthropic provider.]] - rationale - gateway/tests/test_hermes_model_resolver.py
-- [[cloud mode with an OpenAI HERMES_MAIN_MODEL → openai provider.]] - rationale - gateway/tests/test_hermes_model_resolver.py
-- [[cloud mode with everything unset → safe Anthropic default, never empty.]] - rationale - gateway/tests/test_hermes_model_resolver.py
-- [[cloud mode, HERMES_MAIN_MODEL empty → use AGENTSHROUD_CLOUD_MODEL_REF.]] - rationale - gateway/tests/test_hermes_model_resolver.py
-- [[local mode must not use a stale cloud HERMES_MAIN_MODEL.      Guards against the]] - rationale - gateway/tests/test_hermes_model_resolver.py
-- [[local mode requested but neither HERMES_MAIN_MODEL nor local ref is local.]] - rationale - gateway/tests/test_hermes_model_resolver.py
-- [[local mode with HERMES_MAIN_MODEL set → bare local model + ollama provider.]] - rationale - gateway/tests/test_hermes_model_resolver.py
-- [[local mode, HERMES_MAIN_MODEL empty → use AGENTSHROUD_LOCAL_MODEL_REF.]] - rationale - gateway/tests/test_hermes_model_resolver.py
-- [[local-multi mode LM Studio dash-style anchor model → ollama provider.]] - rationale - gateway/tests/test_hermes_model_resolver.py
-- [[main()_5]] - code - docker/bots/hermes/resolve_model.py
-- [[provider_for_model()]] - code - docker/bots/hermes/resolve_model.py
-- [[resolve_model()]] - code - docker/bots/hermes/resolve_model.py
-- [[resolve_model.py]] - code - docker/bots/hermes/resolve_model.py
-- [[strip_provider_prefix()]] - code - docker/bots/hermes/resolve_model.py
-- [[test_cli_default_key_is_model()]] - code - gateway/tests/test_hermes_model_resolver.py
-- [[test_cli_emits_model_line()]] - code - gateway/tests/test_hermes_model_resolver.py
-- [[test_cli_emits_provider_line()]] - code - gateway/tests/test_hermes_model_resolver.py
-- [[test_cli_unknown_key_returns_nonzero()]] - code - gateway/tests/test_hermes_model_resolver.py
-- [[test_cloud_mode_falls_back_to_cloud_ref_when_main_unset()]] - code - gateway/tests/test_hermes_model_resolver.py
-- [[test_cloud_mode_no_refs_returns_safe_default()]] - code - gateway/tests/test_hermes_model_resolver.py
-- [[test_cloud_mode_openai_model()]] - code - gateway/tests/test_hermes_model_resolver.py
-- [[test_cloud_mode_uses_hermes_main_model_when_claude()]] - code - gateway/tests/test_hermes_model_resolver.py
-- [[test_hermes_model_resolver.py]] - code - gateway/tests/test_hermes_model_resolver.py
-- [[test_local_mode_empty_local_ref_falls_back_to_default_local_model()]] - code - gateway/tests/test_hermes_model_resolver.py
-- [[test_local_mode_falls_back_to_local_ref_when_main_unset()]] - code - gateway/tests/test_hermes_model_resolver.py
-- [[test_local_mode_ignores_stale_cloud_main_model()]] - code - gateway/tests/test_hermes_model_resolver.py
-- [[test_local_mode_recognizes_nemotron_as_local()]] - code - gateway/tests/test_hermes_model_resolver.py
-- [[test_local_mode_uses_hermes_main_model()]] - code - gateway/tests/test_hermes_model_resolver.py
-- [[test_local_multi_mode_uses_lmstudio_dash_model()]] - code - gateway/tests/test_hermes_model_resolver.py
-- [[test_mode_case_insensitive_and_whitespace_tolerant()]] - code - gateway/tests/test_hermes_model_resolver.py
-- [[test_provider_for_model()]] - code - gateway/tests/test_hermes_model_resolver.py
-- [[test_resolve_model_corrects_stale_alias_from_hermes_main_model()]] - code - gateway/tests/test_hermes_model_resolver.py
-- [[test_resolve_model_corrects_stale_alias_from_local_model_ref()]] - code - gateway/tests/test_hermes_model_resolver.py
-- [[test_stale_qwen3_rapid_alias_corrected_to_nemotron()]] - code - gateway/tests/test_hermes_model_resolver.py
-- [[test_strip_provider_prefix()]] - code - gateway/tests/test_hermes_model_resolver.py
-- [[test_unknown_mode_treated_as_cloud()]] - code - gateway/tests/test_hermes_model_resolver.py
-- [[test_unrelated_model_names_pass_through_uncorrected()]] - code - gateway/tests/test_hermes_model_resolver.py
+- [[._apply_filters()]] - code - gateway/proxy/llm_proxy.py
+- [[._build_timeout_fallback_response()]] - code - gateway/proxy/llm_proxy.py
+- [[._emit_failover_notice()]] - code - gateway/proxy/llm_proxy.py
+- [[._enforce_tool_acl()]] - code - gateway/proxy/llm_proxy.py
+- [[._failover_request()]] - code - gateway/proxy/llm_proxy.py
+- [[._filter_outbound()]] - code - gateway/proxy/llm_proxy.py
+- [[._filter_outbound_streaming()]] - code - gateway/proxy/llm_proxy.py
+- [[._filter_streaming_event()]] - code - gateway/proxy/llm_proxy.py
+- [[._forward_request()]] - code - gateway/proxy/llm_proxy.py
+- [[._get_local_model()]] - code - gateway/proxy/llm_proxy.py
+- [[._get_local_secondary_model()]] - code - gateway/proxy/llm_proxy.py
+- [[._is_local_oom()]] - code - gateway/proxy/llm_proxy.py
+- [[._local_backend_headers()]] - code - gateway/proxy/llm_proxy.py
+- [[._local_failover_base()]] - code - gateway/proxy/llm_proxy.py
+- [[._local_secondary_failover_request()]] - code - gateway/proxy/llm_proxy.py
+- [[._normalize_local_model()]] - code - gateway/proxy/llm_proxy.py
+- [[._record_failover_event()]] - code - gateway/proxy/llm_proxy.py
+- [[._scan_inbound()]] - code - gateway/proxy/llm_proxy.py
+- [[._scan_request_data()]] - code - gateway/proxy/llm_proxy.py
+- [[._suppress_qwen3_thinking()]] - code - gateway/proxy/llm_proxy.py
+- [[._widen_optional_tool_param_types()]] - code - gateway/proxy/llm_proxy.py
+- [[.proxy_messages()]] - code - gateway/proxy/llm_proxy.py
+- [[.proxy_messages_streaming()]] - code - gateway/proxy/llm_proxy.py
+- [[Add 'null' as an accepted type for every non-required tool parameter, in place.]] - rationale - gateway/proxy/llm_proxy.py
+- [[Any_14]] - code - gateway/proxy/llm_proxy.py
+- [[Append 'no_think' to the last user message, in place, if not already present.]] - rationale - gateway/proxy/llm_proxy.py
+- [[Apply XML and credential filters to text.]] - rationale - gateway/proxy/llm_proxy.py
+- [[Apply outbound text filters to known streaming response formats.          Also e]] - rationale - gateway/proxy/llm_proxy.py
+- [[Attempt a cloud→local failover dispatch.          Returns (status, headers, body]] - rationale - gateway/proxy/llm_proxy.py
+- [[Attempt a local→local-secondary failover when the primary local model hits OOM.]] - rationale - gateway/proxy/llm_proxy.py
+- [[Build provider-compatible timeout fallback message to avoid silent Telegram fail]] - rationale - gateway/proxy/llm_proxy.py
+- [[Filter buffered SSE-like streaming responses for XMLcredential leaks and ToolAC]] - rationale - gateway/proxy/llm_proxy.py
+- [[Filter outbound LLM response for credential leaks and XML.]] - rationale - gateway/proxy/llm_proxy.py
+- [[Forward request to the real LLM API provider.          Retries up to 3 times on]] - rationale - gateway/proxy/llm_proxy.py
+- [[Inject per-backend auth for local backends that require it.          Unlike LM S]] - rationale - gateway/proxy/llm_proxy.py
+- [[Persist a failover event to the audit chain if wired.]] - rationale - gateway/proxy/llm_proxy.py
+- [[Proxy a streaming LLM API request, yielding SSE chunks as they arrive.]] - rationale - gateway/proxy/llm_proxy.py
+- [[Proxy an LLM API request.          Returns (status_code, response_headers, respo]] - rationale - gateway/proxy/llm_proxy.py
+- [[Resolve the local backend for failover dispatch via LOCAL_MODEL_ROUTES.]] - rationale - gateway/proxy/llm_proxy.py
+- [[Return True if the response indicates a local-model OOM or backend_unavailable.]] - rationale - gateway/proxy/llm_proxy.py
+- [[Return the bare secondary local model name, or None if not configured.]] - rationale - gateway/proxy/llm_proxy.py
+- [[Scan Anthropic tool_use blocks; replace denied tools with a text error block.]] - rationale - gateway/proxy/llm_proxy.py
+- [[Scan inbound user message text for PII and injection.]] - rationale - gateway/proxy/llm_proxy.py
+- [[Scan request data for PII and injection across different provider formats.]] - rationale - gateway/proxy/llm_proxy.py
+- [[Send a single Telegram notice per cooldown window when failover activates.]] - rationale - gateway/proxy/llm_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -66,17 +64,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 861]]
-- 2 edges to [[_COMMUNITY_Community 779]]
-- 1 edge to [[_COMMUNITY_Community 495]]
-- 1 edge to [[_COMMUNITY_Community 126]]
-- 1 edge to [[_COMMUNITY_Community 326]]
-- 1 edge to [[_COMMUNITY_Community 530]]
-- 1 edge to [[_COMMUNITY_Community 210]]
-- 1 edge to [[_COMMUNITY_Community 449]]
-- 1 edge to [[_COMMUNITY_Community 134]]
+- 23 edges to [[_COMMUNITY_Community 83]]
+- 6 edges to [[_COMMUNITY_Community 143]]
+- 4 edges to [[_COMMUNITY_Community 126]]
+- 2 edges to [[_COMMUNITY_Community 1076]]
+- 1 edge to [[_COMMUNITY_Community 450]]
+- 1 edge to [[_COMMUNITY_Community 310]]
+- 1 edge to [[_COMMUNITY_Community 425]]
+- 1 edge to [[_COMMUNITY_Community 978]]
 
 ## Top bridge nodes
-- [[AgentShroud Docker Compose (Production)]] - degree 8, connects to 6 communities
-- [[resolve_model.py]] - degree 10, connects to 3 communities
-- [[test_hermes_model_resolver.py]] - degree 24, connects to 1 community
+- [[.proxy_messages()]] - degree 28, connects to 8 communities
+- [[._failover_request()]] - degree 13, connects to 3 communities
+- [[._local_secondary_failover_request()]] - degree 9, connects to 2 communities
+- [[.proxy_messages_streaming()]] - degree 8, connects to 1 community
+- [[._local_backend_headers()]] - degree 6, connects to 1 community

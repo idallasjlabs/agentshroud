@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1183
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[CICD Pipeline Advisor (CICD)_1]] - document - docker/config/hermes/skills/i-cicd/README.md
-- [[Purpose_43]] - document - docker/config/hermes/skills/i-cicd/README.md
-- [[README_48]] - document - docker/config/hermes/skills/i-cicd/README.md
-- [[Related Skills_46]] - document - docker/config/hermes/skills/i-cicd/README.md
-- [[Usage_49]] - document - docker/config/hermes/skills/i-cicd/README.md
+- [[Git Workflow Guardian (GIT-GUARD)_1]] - document - docker/config/hermes/skills/i-gg/README.md
+- [[Purpose_48]] - document - docker/config/hermes/skills/i-gg/README.md
+- [[README_53]] - document - docker/config/hermes/skills/i-gg/README.md
+- [[Related Skills_51]] - document - docker/config/hermes/skills/i-gg/README.md
+- [[Usage_54]] - document - docker/config/hermes/skills/i-gg/README.md
 
 ## Live Query (requires Dataview plugin)
 

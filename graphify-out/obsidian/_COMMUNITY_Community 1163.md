@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1163
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[Closing Gate]] - document - .agents/skills/i-pca/SKILL.md
-- [[Output Format Rules]] - document - .agents/skills/i-pca/SKILL.md
-- [[Role_24]] - document - .agents/skills/i-pca/SKILL.md
-- [[SKILL_40]] - document - .agents/skills/i-pca/SKILL.md
-- [[Skill Pre-Change Analysis (PCA)]] - document - .agents/skills/i-pca/SKILL.md
+- [[Purpose_30]] - document - .agents/skills/i-sec-offense/README.md
+- [[README_30]] - document - .agents/skills/i-sec-offense/README.md
+- [[Red Team Adversarial Tester (SEC-OFFENSE)]] - document - .agents/skills/i-sec-offense/README.md
+- [[Related Skills_33]] - document - .agents/skills/i-sec-offense/README.md
+- [[Usage_33]] - document - .agents/skills/i-sec-offense/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,9 +22,3 @@ members: 5
 TABLE source_file, type FROM #community/Community_1163
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 883]]
-
-## Top bridge nodes
-- [[Skill Pre-Change Analysis (PCA)]] - degree 5, connects to 1 community

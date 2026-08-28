@@ -1,27 +1,40 @@
 ---
 type: community
-members: 14
+cohesion: 0.08
+members: 25
 ---
 
 # Community 344
 
-**Members:** 14 nodes
+**Cohesion:** 0.08 - loosely connected
+**Members:** 25 nodes
 
 ## Members
-- [[.test_status_response_model()]] - code - gateway/tests/test_enhanced_status.py
-- [[.test_status_response_monitor_mode()]] - code - gateway/tests/test_enhanced_status.py
-- [[.test_status_response_optional_fields()]] - code - gateway/tests/test_enhanced_status.py
-- [[AuthRequired_4]] - code - gateway/ingest_api/routes/health.py
-- [[Detailed health check endpoint — authentication required.      Returns full syst]] - rationale - gateway/ingest_api/routes/health.py
-- [[Health check response with v0.8.0 security dashboard data]] - rationale - gateway/ingest_api/models.py
-- [[StatusResponse]] - code - gateway/ingest_api/models.py
-- [[Test enhanced status endpoint with observatory mode and egress info.]] - rationale - gateway/tests/test_enhanced_status.py
-- [[Test status response in monitor mode.]] - rationale - gateway/tests/test_enhanced_status.py
-- [[Test that StatusResponse model accepts new fields.]] - rationale - gateway/tests/test_enhanced_status.py
-- [[Test that new fields are optional (backward compat).]] - rationale - gateway/tests/test_enhanced_status.py
-- [[TestEnhancedStatus]] - code - gateway/tests/test_enhanced_status.py
-- [[health_check_detail()]] - code - gateway/ingest_api/routes/health.py
-- [[test_enhanced_status.py]] - code - gateway/tests/test_enhanced_status.py
+- [[0) PRIME DIRECTIVE (NON-NEGOTIABLE)]] - document - CLAUDE.md
+- [[0.1) MULTI-AGENT HIERARCHY]] - document - CLAUDE.md
+- [[1) PROJECT IDENTITY]] - document - CLAUDE.md
+- [[10) CLAUDE CODE OPERATIONAL RULES]] - document - CLAUDE.md
+- [[3) SDLC — HOW TO WORK IN THIS REPO]] - document - CLAUDE.md
+- [[4) TEST-DRIVEN DEVELOPMENT (DEFAULT)]] - document - CLAUDE.md
+- [[6) SECURITY & SAFETY REQUIREMENTS_1]] - document - CLAUDE.md
+- [[7) AGENTSHROUD-SPECIFIC CONSTRAINTS]] - document - CLAUDE.md
+- [[75 Active Security Modules — No Stubs]] - document - CLAUDE.md
+- [[8) OUTPUT FORMATTING CONTRACT]] - document - CLAUDE.md
+- [[9) GOVERNANCE & DECISION-MAKING]] - document - CLAUDE.md
+- [[Applies to Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary)]] - document - CLAUDE.md
+- [[Avoid]] - document - CLAUDE.md
+- [[Development commands]] - document - CLAUDE.md
+- [[Hard constraints]] - document - CLAUDE.md
+- [[KNOWLEDGE MAP — READ THIS FIRST]] - document - CLAUDE.md
+- [[Key source directories]] - document - CLAUDE.md
+- [[MCP tools available]] - document - CLAUDE.md
+- [[Preferred workflow]] - document - CLAUDE.md
+- [[Red → Green → Refactor]] - document - CLAUDE.md
+- [[Session start checklist]] - document - CLAUDE.md
+- [[Test quality rules]] - document - CLAUDE.md
+- [[When to act]] - document - CLAUDE.md
+- [[When to clarify]] - document - CLAUDE.md
+- [[When to defer]] - document - CLAUDE.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,9 +44,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 9]]
-- 1 edge to [[_COMMUNITY_Community 18]]
+- 1 edge to [[_COMMUNITY_Community 280]]
+- 1 edge to [[_COMMUNITY_Community 441]]
+- 1 edge to [[_COMMUNITY_Community 1079]]
 
 ## Top bridge nodes
-- [[StatusResponse]] - degree 10, connects to 2 communities
-- [[health_check_detail()]] - degree 4, connects to 1 community
+- [[Applies to Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary)]] - degree 14, connects to 3 communities

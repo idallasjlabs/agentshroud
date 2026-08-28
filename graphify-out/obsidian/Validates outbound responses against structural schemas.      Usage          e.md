@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/output_schema.py"
 type: "rationale"
-community: "Community 237"
+community: "Community 241"
 location: "L57"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_237
+  - community/Community_241
 ---
 
 # Validates outbound responses against structural schemas.      Usage::          e
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OutputSchemaEnforcer]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_237
+#graphify/rationale #graphify/EXTRACTED #community/Community_241

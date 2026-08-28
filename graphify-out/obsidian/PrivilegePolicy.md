@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "code"
-community: "Community 1135"
+community: "Community 639"
 location: "L72"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_1135
+  - community/Community_639
 ---
 
 # PrivilegePolicy
@@ -22,4 +22,4 @@ tags:
 - [[subagent_governance.py]] - `contains` [EXTRACTED]
 - [[test_subagent_governance.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_1135
+#graphify/code #graphify/INFERRED #community/Community_639

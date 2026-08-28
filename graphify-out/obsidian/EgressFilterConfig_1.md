@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "Community 282"
+community: "Memory Lifecycle & Egress Filtering"
 location: "L105"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_282
+  - community/Memory_Lifecycle__Egress_Filtering
 ---
 
 # EgressFilterConfig
@@ -17,4 +17,4 @@ tags:
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
 - [[run()_3]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_282
+#graphify/code #graphify/EXTRACTED #community/Memory_Lifecycle__Egress_Filtering

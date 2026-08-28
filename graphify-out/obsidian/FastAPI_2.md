@@ -1,22 +1,27 @@
 ---
-source_file: "gateway/tests/test_observatory_mode.py"
+source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "Community 924"
-location: "L60"
+community: "Memory Lifecycle & Egress Filtering"
+location: "L107"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_924
+  - community/Memory_Lifecycle__Egress_Filtering
 ---
 
 # FastAPI
 
 ## Connections
-- [[KillSwitchConfig]] - `uses` [INFERRED]
-- [[KillSwitchMonitor]] - `uses` [INFERRED]
-- [[ModeRequest]] - `uses` [INFERRED]
-- [[SecurityPipeline]] - `uses` [INFERRED]
-- [[_make_app()]] - `references` [EXTRACTED]
-- [[test_observatory_mode.py]] - `imports_from` [EXTRACTED]
+- [[AlertTelegramRelay]] - `uses` [INFERRED]
+- [[DataLedger]] - `uses` [INFERRED]
+- [[EventBus]] - `uses` [INFERRED]
+- [[GroupRegistry]] - `uses` [INFERRED]
+- [[MiddlewareManager]] - `uses` [INFERRED]
+- [[MultiAgentRouter]] - `uses` [INFERRED]
+- [[PIISanitizer]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[UserSessionManager]] - `uses` [INFERRED]
+- [[lifespan()_1]] - `references` [EXTRACTED]
+- [[lifespan.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_924
+#graphify/code #graphify/INFERRED #community/Memory_Lifecycle__Egress_Filtering

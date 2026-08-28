@@ -1,22 +1,24 @@
 ---
 type: community
+cohesion: 0.22
 members: 9
 ---
 
 # Community 913
 
+**Cohesion:** 0.22 - loosely connected
 **Members:** 9 nodes
 
 ## Members
-- [[Gateway Pipeline]] - document - docs/planning/RELEASE-PLAN.md
-- [[Module Enforcement]] - document - docs/planning/RELEASE-PLAN.md
-- [[Prompt Injection Hardening]] - document - docs/planning/RELEASE-PLAN.md
-- [[v0.8.0 Watchtower — Security Fixes + Module Wiring (104 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[📊 Exit Criteria (5 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[🔧 Code Quality (2 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[🔴 P0 — Security Fixes (17 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[🟡 P1 — High Priority (8 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[🟢 P2 — Quick Wins (11 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[R - Repudiation]] - document - docs/security/threat-model.md
+- [[S - Spoofing Identity]] - document - docs/security/threat-model.md
+- [[STRIDE Threat Analysis]] - document - docs/security/threat-model.md
+- [[T - Tampering with Data]] - document - docs/security/threat-model.md
+- [[Threat API Key Impersonation]] - document - docs/security/threat-model.md
+- [[Threat Agent Identity Spoofing]] - document - docs/security/threat-model.md
+- [[Threat Audit Log Tampering]] - document - docs/security/threat-model.md
+- [[Threat Configuration Drift]] - document - docs/security/threat-model.md
+- [[Threat Non-Repudiation Bypass]] - document - docs/security/threat-model.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,7 +28,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 360]]
+- 1 edge to [[_COMMUNITY_Community 865]]
+- 1 edge to [[_COMMUNITY_Community 896]]
+- 1 edge to [[_COMMUNITY_Community 1343]]
+- 1 edge to [[_COMMUNITY_Community 1267]]
 
 ## Top bridge nodes
-- [[v0.8.0 Watchtower — Security Fixes + Module Wiring (104 items)]] - degree 6, connects to 1 community
+- [[STRIDE Threat Analysis]] - degree 7, connects to 4 communities

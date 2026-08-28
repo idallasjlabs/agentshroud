@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 1.00
 members: 2
 ---
 
 # Community 1491
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[Obsidian workspace.json (open-tab layout)]] - document - docs/vault/.obsidian/workspace.json
-- [[Startup Flow Diagram (vault note)]] - document - docs/vault/09 - Diagrams/Startup Flow Diagram.md
+- [[i-tdd README]] - document - docker/config/hermes/skills/i-tdd/README.md
+- [[i-tdd SKILL.md (TDD Coach, Red-Green-Refactor)]] - document - docker/config/hermes/skills/i-tdd/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 1.00
 members: 2
 ---
 
 # Community 1497
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[freertosFreeRTOS.h stub (playback state test)]] - code - firmware/voice-terminal/test/test_playback_state/stubs/freertos/FreeRTOS.h
-- [[freertostask.h stub (playback state test)]] - code - firmware/voice-terminal/test/test_playback_state/stubs/freertos/task.h
+- [[i-mac README — macOS System Administrator (MAC)]] - document - docker/config/hermes/skills/i-mac/README.md
+- [[i-mac SKILL — Mac App Discovery]] - document - docker/config/hermes/skills/i-mac/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

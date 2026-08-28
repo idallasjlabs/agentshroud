@@ -1,20 +1,22 @@
 ---
 type: community
+cohesion: 0.29
 members: 7
 ---
 
 # Community 1048
 
+**Cohesion:** 0.29 - loosely connected
 **Members:** 7 nodes
 
 ## Members
-- [[Call Gemini API and return the review text and exit code.      Returns]] - rationale - scripts/gemini-review.py
-- [[PATH_4]] - code - scripts/peer-review.sh
-- [[call_gemini()]] - code - scripts/gemini-review.py
-- [[gemini-review.py]] - code - scripts/gemini-review.py
-- [[main()_19]] - code - scripts/gemini-review.py
-- [[peer-review.sh]] - code - scripts/peer-review.sh
-- [[peer-review.sh script]] - code - scripts/peer-review.sh
+- [[3. Brutally Honest Self-Assessment]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[Are we adding real value]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[Are we covering known attack vectors]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[Are we scanning for emerging threats]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[Have we implemented real security]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[Is the investment still justified]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[Should we continue or cut losses]] - document - docs/planning/reviews/phase-review-2026-03-03.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,3 +24,9 @@ members: 7
 TABLE source_file, type FROM #community/Community_1048
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 133]]
+
+## Top bridge nodes
+- [[3. Brutally Honest Self-Assessment]] - degree 7, connects to 1 community

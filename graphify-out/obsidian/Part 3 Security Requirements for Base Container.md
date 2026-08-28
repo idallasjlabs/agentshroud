@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/PHASE3_REQUIREMENTS.md"
 type: "document"
-community: "Community 352"
+community: "Community 356"
 location: "L171"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_352
+  - community/Community_356
 ---
 
 # Part 3: Security Requirements for Base Container
@@ -16,4 +16,4 @@ tags:
 - [[Must-Implement Security Controls (from 10_skills_to_harden_openclaw.txt)]] - `contains` [EXTRACTED]
 - [[Phase 3 Requirements Working Chat Container]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_352
+#graphify/document #graphify/EXTRACTED #community/Community_356

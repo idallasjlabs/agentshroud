@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trivy_report.py"
 type: "rationale"
-community: "Community 679"
+community: "Community 640"
 location: "L34"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_679
+  - community/Community_640
 ---
 
 # Run a Trivy scan and return parsed results.      Args:         target: Scan targ
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[run_trivy_scan()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_679
+#graphify/rationale #graphify/EXTRACTED #community/Community_640

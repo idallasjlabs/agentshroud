@@ -1,88 +1,97 @@
 ---
 type: community
-members: 75
+cohesion: 0.05
+members: 82
 ---
 
 # Community 53
 
-**Members:** 75 nodes
+**Cohesion:** 0.05 - loosely connected
+**Members:** 82 nodes
 
 ## Members
-- [[.__init__()_155]] - code - gateway/tests/test_egress_filter.py
-- [[.log_event()_2]] - code - gateway/tests/test_egress_filter.py
-- [[.test_allow_is_not_persisted_to_audit_store()]] - code - gateway/tests/test_egress_filter.py
-- [[.test_allowed_cidr()]] - code - gateway/tests/test_egress_filter.py
-- [[.test_allowed_domain_passes()]] - code - gateway/tests/test_egress_filter.py
-- [[.test_allowed_domain_still_allowed_in_monitor()]] - code - gateway/tests/test_egress_filter.py
-- [[.test_allowed_ip()]] - code - gateway/tests/test_egress_filter.py
-- [[.test_allowlisted_domain_still_prompts_when_approval_all_enabled()]] - code - gateway/tests/test_egress_filter.py
-- [[.test_attempt_fields()]] - code - gateway/tests/test_egress_filter.py
-- [[.test_bare_hostname()]] - code - gateway/tests/test_egress_filter.py
-- [[.test_denied_domain_overrides_allow()]] - code - gateway/tests/test_egress_filter.py
-- [[.test_deny_has_details()]] - code - gateway/tests/test_egress_filter.py
-- [[.test_deny_is_persisted_to_audit_store()]] - code - gateway/tests/test_egress_filter.py
-- [[.test_emits_egress_event_to_event_bus()]] - code - gateway/tests/test_egress_filter.py
-- [[.test_full_url()]] - code - gateway/tests/test_egress_filter.py
-- [[.test_host_port_format()]] - code - gateway/tests/test_egress_filter.py
-- [[.test_ipv4_mapped_ipv6_blocked()]] - code - gateway/tests/test_egress_filter.py
-- [[.test_localhost_hostname_blocked()]] - code - gateway/tests/test_egress_filter.py
-- [[.test_log_filters_by_agent()]] - code - gateway/tests/test_egress_filter.py
-- [[.test_log_records_attempts()]] - code - gateway/tests/test_egress_filter.py
-- [[.test_log_size_limit()]] - code - gateway/tests/test_egress_filter.py
-- [[.test_port_not_allowed()]] - code - gateway/tests/test_egress_filter.py
-- [[.test_private_ip_allowed_if_in_policy_allowlist()]] - code - gateway/tests/test_egress_filter.py
-- [[.test_private_ip_blocked_ssrf()]] - code - gateway/tests/test_egress_filter.py
-- [[.test_stats_counts()]] - code - gateway/tests/test_egress_filter.py
-- [[.test_unknown_domain_allowed_when_approved()]] - code - gateway/tests/test_egress_filter.py
-- [[.test_unknown_domain_denied_when_denied()]] - code - gateway/tests/test_egress_filter.py
-- [[.test_unlisted_domain_allowed_in_monitor()]] - code - gateway/tests/test_egress_filter.py
-- [[.test_unlisted_domain_blocked()]] - code - gateway/tests/test_egress_filter.py
-- [[.test_wildcard_does_not_match_deep_subdomain()]] - code - gateway/tests/test_egress_filter.py
-- [[.test_wildcard_matches_base_domain()]] - code - gateway/tests/test_egress_filter.py
-- [[.test_wildcard_one_level()]] - code - gateway/tests/test_egress_filter.py
-- [[A domain with an active timed approval should be allowed.]] - rationale - gateway/tests/test_egress_filter.py
-- [[An expired timed approval should be evicted and the domain denied.]] - rationale - gateway/tests/test_egress_filter.py
-- [[ApprovalResult]] - code - gateway/security/egress_approval.py
-- [[CIDR in policy allowlist should match.]] - rationale - gateway/tests/test_egress_filter.py
-- [[Create an EgressFilter with a simple config.]] - rationale - gateway/tests/test_egress_filter.py
-- [[EgressAttempt stores the right fields.]] - rationale - gateway/tests/test_egress_filter.py
-- [[EgressFilter_2]] - code - gateway/tests/test_egress_filter.py
-- [[EgressFilter correctly parses URLs, hostport, and bare hostnames.]] - rationale - gateway/tests/test_egress_filter.py
-- [[EgressFilter in enforce mode should block unlisted destinations.]] - rationale - gateway/tests/test_egress_filter.py
-- [[EgressFilter in monitor mode should allow but log unlisted destinations.]] - rationale - gateway/tests/test_egress_filter.py
-- [[EgressFilter must NOT notify when domain is allowed.]] - rationale - gateway/tests/test_egress_filter.py
-- [[EgressFilter must call notifier when blocking an unknown domain.]] - rationale - gateway/tests/test_egress_filter.py
-- [[EgressFilter records attempts and provides stats.]] - rationale - gateway/tests/test_egress_filter.py
-- [[FakeAuditStore]] - code - gateway/tests/test_egress_filter.py
-- [[IP allowlist and private-IP SSRF protection.]] - rationale - gateway/tests/test_egress_filter.py
-- [[Interactive egress approval flow (allow once  deny).]] - rationale - gateway/tests/test_egress_filter.py
-- [[Only DENY decisions are persisted to the tamper-evident audit store.      ALLOW]] - rationale - gateway/tests/test_egress_filter.py
-- [[Private IPs are blocked by default to prevent SSRF.]] - rationale - gateway/tests/test_egress_filter.py
-- [[Private IPs pass if explicitly in the EgressPolicy allowlist (SSRF check).]] - rationale - gateway/tests/test_egress_filter.py
-- [[Result of an approval request.]] - rationale - gateway/security/egress_approval.py
-- [[TestAuditStorePersistence]] - code - gateway/tests/test_egress_filter.py
-- [[TestEgressAttempt]] - code - gateway/tests/test_egress_filter.py
-- [[TestEnforceMode]] - code - gateway/tests/test_egress_filter.py
-- [[TestIPRules]] - code - gateway/tests/test_egress_filter.py
-- [[TestInteractiveApproval]] - code - gateway/tests/test_egress_filter.py
-- [[TestLogging]] - code - gateway/tests/test_egress_filter.py
-- [[TestMonitorMode]] - code - gateway/tests/test_egress_filter.py
-- [[TestURLParsing]] - code - gateway/tests/test_egress_filter.py
-- [[Timed approval for one domain must not allow other domains.]] - rationale - gateway/tests/test_egress_filter.py
-- [[_make_deny_all_filter()]] - code - gateway/tests/test_egress_filter.py
-- [[_make_filter()]] - code - gateway/tests/test_egress_filter.py
-- [[flush_notifications with no notifier set should not crash.]] - rationale - gateway/tests/test_egress_filter.py
-- [[grant_timed_approval should purge expired entries on each call.]] - rationale - gateway/tests/test_egress_filter.py
-- [[grant_timed_approval with a malformed date should not raise or store anything.]] - rationale - gateway/tests/test_egress_filter.py
-- [[test_egress_filter.py]] - code - gateway/tests/test_egress_filter.py
-- [[test_egress_filter_flush_without_notifier()]] - code - gateway/tests/test_egress_filter.py
-- [[test_egress_filter_no_notification_on_allow()]] - code - gateway/tests/test_egress_filter.py
-- [[test_egress_filter_notifies_on_deny()]] - code - gateway/tests/test_egress_filter.py
-- [[test_grant_timed_approval_allows_domain()]] - code - gateway/tests/test_egress_filter.py
-- [[test_grant_timed_approval_cleans_stale_entries()]] - code - gateway/tests/test_egress_filter.py
-- [[test_grant_timed_approval_does_not_affect_other_domains()]] - code - gateway/tests/test_egress_filter.py
-- [[test_grant_timed_approval_expired_falls_back_to_deny()]] - code - gateway/tests/test_egress_filter.py
-- [[test_grant_timed_approval_invalid_iso_is_ignored()]] - code - gateway/tests/test_egress_filter.py
+- [[._results()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[.test_all_mapped_layers_exist_in_registry()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[.test_append_targets_correct_agent_marker()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_apply_writes_registry_and_gap()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[.test_classification_is_deterministic()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[.test_confidence_is_bounded()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[.test_cvss_none_when_absent()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_dedup_by_cve_id()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_dedup_by_ghsa_id()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_dry_run_writes_nothing()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_dry_run_writes_nothing()_1]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[.test_duplicate_within_same_feed_page_registered_once()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_entry_to_py_handles_none_cvss()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_entry_to_py_roundtrips()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_fetch_paginates_via_link_cursor()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_gap_report_renders_and_lists_gaps()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[.test_gaps_are_honest_not_mitigated_or_under_review()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[.test_hermes_snapshot_zero_new()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_id_numbering_continues_from_max()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_idempotent_on_rerun()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_live_registry_is_idempotent_no_new_backlog()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_low_confidence_partial_stays_under_review()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[.test_mitigation_narrative_nonempty_when_applied()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[.test_multiline_parenthesised_value_consumed()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[.test_never_fabricates_ids_skips_advisory_without_ghsa()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_new_advisory_becomes_under_review()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_not_source_fixed_full_class_is_fully_mitigated_without_source_fix()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[.test_not_source_fixed_newer()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[.test_not_source_fixed_partial_class_is_partially_mitigated()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[.test_openclaw_advisory_does_not_touch_hermes_registry()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_openclaw_snapshot_registers_backlog_as_under_review()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_parse_non_numeric()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[.test_parse_none_and_empty()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[.test_parse_numeric()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[.test_per_agent_prefix_applied()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[.test_priority_rce_before_generic_injection()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[.test_representative_titles()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[.test_rewrite_is_idempotent()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[.test_rewrite_never_touches_hermes()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[.test_rewrite_sets_status_and_layers()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[.test_rewrite_untargeted_id_unchanged()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[.test_running_version_matches_pinned_openclaw_version()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[.test_source_fixed_equal()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[.test_source_fixed_full_class_is_fully_mitigated()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[.test_source_fixed_older()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[.test_source_fixed_partial_class_upgrades_to_fully()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[.test_summary_counts_sum_to_total()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[.test_triage_agent_does_not_read_hermes()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[.test_triage_agent_openclaw_all_under_review_processed()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[.test_uncovered_class_not_source_fixed_is_gap()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[.test_uncovered_class_source_fixed_uses_source_fix()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[.test_unknown_agent_errors()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[.test_unknown_class_not_source_fixed_stays_under_review()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[.test_unmatched_is_unknown()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[.test_unparseable_is_not_source_fixed()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[.test_unterminated_field_returns_end()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[An OpenClaw advisory diffed against the Hermes list yields it as 'new'.]] - rationale - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[Every layer the engine can emit must already be used by a mitigated         entr]] - rationale - gateway/tests/test_triage_cve_mitigations.py
+- [[Re-running against the LIVE registry adds nothing (backlog already synced).]] - rationale - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[Regression guard for the 2026-07-29 staleness incident.          RUNNING_VERSION]] - rationale - gateway/tests/test_triage_cve_mitigations.py
+- [[TestClassify_1]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[TestConsumeFieldEdge]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[TestDefenseLayerVocabulary]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[TestDriverIsolation]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[TestFetch]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[TestMain_1]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[TestPerAgentIsolation]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[TestProcessGhsaAdvisories]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[TestRewrite]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[TestSerialization_2]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[TestSnapshotSmoke]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[TestTriageEntry]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[TestVersion]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[The committed snapshot yields a real backlog, all honest under_review.]] - rationale - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[_adv()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[_entry()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[_sync()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[_t()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[scriptssync-cve-registry.py (GHSA auto-register)]] - code - scripts/sync-cve-registry.py
+- [[scriptstriage-cve-mitigations.py (mitigation-triage engine)]] - code - scripts/triage-cve-mitigations.py
+- [[test_sync_cve_registry_ghsa.py]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[test_triage_cve_mitigations.py]] - code - gateway/tests/test_triage_cve_mitigations.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -90,18 +99,3 @@ members: 75
 TABLE source_file, type FROM #community/Community_53
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 46 edges to [[_COMMUNITY_Community 282]]
-- 28 edges to [[_COMMUNITY_Community 118]]
-- 11 edges to [[_COMMUNITY_Community 33]]
-- 6 edges to [[_COMMUNITY_Community 21]]
-- 3 edges to [[_COMMUNITY_Community 1339]]
-- 1 edge to [[_COMMUNITY_Community 78]]
-
-## Top bridge nodes
-- [[ApprovalResult]] - degree 22, connects to 4 communities
-- [[TestEnforceMode]] - degree 16, connects to 4 communities
-- [[test_egress_filter.py]] - degree 29, connects to 3 communities
-- [[EgressFilter_2]] - degree 21, connects to 3 communities
-- [[TestIPRules]] - degree 14, connects to 3 communities

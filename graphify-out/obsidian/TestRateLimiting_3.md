@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_security.py"
 type: "code"
-community: "Community 155"
+community: "Community 478"
 location: "L110"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_155
+  - community/Community_478
 ---
 
 # TestRateLimiting
@@ -23,4 +23,4 @@ tags:
 - [[SessionManager]] - `uses` [INFERRED]
 - [[test_session_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_155
+#graphify/code #graphify/INFERRED #community/Community_478

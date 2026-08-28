@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-sec-defense/SKILL.md"
 type: "document"
-community: "Community 607"
+community: "Community 371"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_607
+  - community/Community_371
 ---
 
 # Methodology
@@ -17,4 +17,4 @@ tags:
 - [[Loss Categories]] - `contains` [EXTRACTED]
 - [[Unsafe Control Actions (UCAs)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_607
+#graphify/document #graphify/EXTRACTED #community/Community_371

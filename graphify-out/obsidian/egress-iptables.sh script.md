@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/egress-iptables.sh"
 type: "code"
-community: "Community 1509"
+community: "Community 1525"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1509
+  - community/Community_1525
 ---
 
 # egress-iptables.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[egress-iptables.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1509
+#graphify/code #graphify/EXTRACTED #community/Community_1525

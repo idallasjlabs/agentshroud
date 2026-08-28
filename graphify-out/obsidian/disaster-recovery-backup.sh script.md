@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/disaster-recovery-backup.sh"
 type: "code"
-community: "Community 723"
+community: "Community 176"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_723
+  - community/Community_176
 ---
 
 # disaster-recovery-backup.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[disaster-recovery-backup.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_723
+#graphify/code #graphify/EXTRACTED #community/Community_176

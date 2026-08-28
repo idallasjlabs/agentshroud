@@ -1,57 +1,59 @@
 ---
 type: community
+cohesion: 0.08
 members: 44
 ---
 
 # Community 139
 
+**Cohesion:** 0.08 - loosely connected
 **Members:** 44 nodes
 
 ## Members
-- [[_build_ws_url()]] - code - firmware/voice-terminal/main/app_main.c
-- [[_deliver_utterance()]] - code - firmware/voice-terminal/main/app_main.c
-- [[_lvgl_flush_wait_yield()]] - code - firmware/voice-terminal/main/app_main.c
-- [[_on_event()]] - code - firmware/voice-terminal/main/ws_client.c
-- [[_on_event() — dispatches statepcmctrl frames to registered callbacks]] - code - firmware/voice-terminal/main/ws_client.c
-- [[_on_tts_pcm()]] - code - firmware/voice-terminal/main/app_main.c
-- [[_on_ws_ctrl()]] - code - firmware/voice-terminal/main/app_main.c
-- [[_send_status_beacon()]] - code - firmware/voice-terminal/main/app_main.c
-- [[app_main()_1]] - code - firmware/voice-terminal/main/app_main.c
-- [[app_main.c]] - code - firmware/voice-terminal/main/app_main.c
-- [[audio_set_volume() — spoken volume command target]] - code - firmware/voice-terminal/main/audio.c
-- [[esp_err_t_4]] - code - firmware/voice-terminal/main/ws_client.c
-- [[esp_event_base_t]] - code - firmware/voice-terminal/main/app_main.c
-- [[esp_event_base_t_1]] - code - firmware/voice-terminal/main/ws_client.c
-- [[lv_display_t]] - code - firmware/voice-terminal/main/app_main.c
-- [[remote_log.h (WS-mirrored diagnostic log declaration)]] - code - firmware/voice-terminal/main/remote_log.h
-- [[rlog_task()]] - code - firmware/voice-terminal/main/app_main.c
-- [[ui_init()]] - code - firmware/voice-terminal/main/app_main.c
-- [[ui_state_t]] - code - firmware/voice-terminal/main/app_main.c
-- [[ui_update()]] - code - firmware/voice-terminal/main/app_main.c
-- [[voice_task()]] - code - firmware/voice-terminal/main/app_main.c
-- [[vt_remote_log()]] - code - firmware/voice-terminal/main/app_main.c
-- [[wakeword_push_frame() — AFE feed + VAD endpointing]] - code - firmware/voice-terminal/main/wakeword.c
-- [[wifi_event_handler()]] - code - firmware/voice-terminal/main/app_main.c
-- [[wifi_init()]] - code - firmware/voice-terminal/main/app_main.c
-- [[ws_client.c]] - code - firmware/voice-terminal/main/ws_client.c
-- [[ws_client_connected()]] - code - firmware/voice-terminal/main/ws_client.c
-- [[ws_client_connected() — lock-free flag read]] - code - firmware/voice-terminal/main/ws_client.c
-- [[ws_client_create()]] - code - firmware/voice-terminal/main/ws_client.c
-- [[ws_client_create() — registers callbacks + starts client]] - code - firmware/voice-terminal/main/ws_client.c
-- [[ws_client_destroy()]] - code - firmware/voice-terminal/main/ws_client.c
-- [[ws_client_handle_t]] - code - firmware/voice-terminal/main/app_main.c
-- [[ws_client_handle_t_1]] - code - firmware/voice-terminal/main/ws_client.c
-- [[ws_client_send_end()]] - code - firmware/voice-terminal/main/ws_client.c
-- [[ws_client_send_keepalive()]] - code - firmware/voice-terminal/main/ws_client.c
-- [[ws_client_send_listen()]] - code - firmware/voice-terminal/main/ws_client.c
-- [[ws_client_send_listen_resume()]] - code - firmware/voice-terminal/main/ws_client.c
-- [[ws_client_send_log()]] - code - firmware/voice-terminal/main/ws_client.c
-- [[ws_client_send_pcm()]] - code - firmware/voice-terminal/main/ws_client.c
-- [[ws_client_send_stop()]] - code - firmware/voice-terminal/main/ws_client.c
-- [[ws_client_set_ctrl_cb()]] - code - firmware/voice-terminal/main/ws_client.c
-- [[ws_ctrl_cb_t]] - code - firmware/voice-terminal/main/ws_client.c
-- [[ws_pcm_cb_t]] - code - firmware/voice-terminal/main/ws_client.c
-- [[ws_state_cb_t]] - code - firmware/voice-terminal/main/ws_client.c
+- [[.__init__()_2]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[._classify_risk()_2]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[._domain_matches()_2]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[._init_browser()_2]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[._load_config()_2]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[._log_action()_2]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[._log_security_event()_2]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[._requires_approval()_2]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[._take_screenshot()_2]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[._validate_url()_2]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[.click()_2]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[.close()_2]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[.detect_captcha()_2]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[.extract()_2]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[.fill_field()_2]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[.get_audit_log()_2]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[.navigate()_2]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[CLI interface for SecureBrowser_2]] - rationale - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[Check if action requires approval          Security Approval queue integration_2]] - rationale - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[Check if domain matches pattern (supports wildcards)_2]] - rationale - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[Classify action risk level          Security Determines if approval is needed_2]] - rationale - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[Clean up browser resources_2]] - rationale - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[Click an element          Security Risk classification for destructive actions_2]] - rationale - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[Detect if CAPTCHA is present on page_2]] - rationale - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[Extract data from page          Security No credential extraction allowed_2]] - rationale - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[Fill a single form field          Security Risk classification, approval for se_2]] - rationale - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[Initialize browser with security settings_2]] - rationale - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[Load security configuration_2]] - rationale - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[Log browser action to audit trail_2]] - rationale - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[Log security-related events_2]] - rationale - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[Navigate to URL          Security URL validation, audit logging_2]] - rationale - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[Raised when security policy is violated_2]] - rationale - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[Return complete audit log_2]] - rationale - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[Risk classification for browser actions_2]] - rationale - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[RiskLevel_2]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[Secure browser automation with enterprise controls      Security guarantees_2]] - rationale - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[SecureBrowser_2]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[Security configuration for browser automation_2]] - rationale - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[SecurityConfig_2]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[SecurityError_2]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[Take screenshot and save to audit directory_2]] - rationale - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[Validate URL against allowlistblocklist          Security This is the primary_2]] - rationale - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[browse.py_2]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[main()_8]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -61,16 +63,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 15 edges to [[_COMMUNITY_Community 166]]
-- 12 edges to [[_COMMUNITY_Community 375]]
-- 7 edges to [[_COMMUNITY_Community 249]]
-- 4 edges to [[_COMMUNITY_Community 902]]
-- 4 edges to [[_COMMUNITY_Community 711]]
-- 2 edges to [[_COMMUNITY_Community 40]]
+- 2 edges to [[_COMMUNITY_Community 19]]
+- 1 edge to [[_COMMUNITY_Community 165]]
 
 ## Top bridge nodes
-- [[voice_task()]] - degree 29, connects to 4 communities
-- [[app_main.c]] - degree 21, connects to 4 communities
-- [[app_main()_1]] - degree 14, connects to 4 communities
-- [[ws_client.c]] - degree 16, connects to 2 communities
-- [[_on_ws_ctrl()]] - degree 7, connects to 2 communities
+- [[SecurityError_2]] - degree 7, connects to 1 community
+- [[browse.py_2]] - degree 6, connects to 1 community
+- [[RiskLevel_2]] - degree 6, connects to 1 community

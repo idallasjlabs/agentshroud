@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1146
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[Atlas — Curriculum Architect]] - document - .agents/skills/i-atlas/README.md
-- [[Purpose_2]] - document - .agents/skills/i-atlas/README.md
-- [[README_2]] - document - .agents/skills/i-atlas/README.md
-- [[Related Skills_2]] - document - .agents/skills/i-atlas/README.md
-- [[Usage_3]] - document - .agents/skills/i-atlas/README.md
+- [[Daedalus — Concept Illustrator]] - document - .agents/skills/i-daedalus/README.md
+- [[Purpose_8]] - document - .agents/skills/i-daedalus/README.md
+- [[README_8]] - document - .agents/skills/i-daedalus/README.md
+- [[Related Skills_8]] - document - .agents/skills/i-daedalus/README.md
+- [[Usage_10]] - document - .agents/skills/i-daedalus/README.md
 
 ## Live Query (requires Dataview plugin)
 

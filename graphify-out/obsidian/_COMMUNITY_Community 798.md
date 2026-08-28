@@ -1,24 +1,26 @@
 ---
 type: community
+cohesion: 0.27
 members: 11
 ---
 
 # Community 798
 
+**Cohesion:** 0.27 - loosely connected
 **Members:** 11 nodes
 
 ## Members
-- [[Apple Notes CLI]] - document - skills/openclaw/apple-notes/SKILL.md
-- [[Bear Notes]] - document - skills/openclaw/bear-notes/SKILL.md
-- [[Common Commands_1]] - document - skills/openclaw/bear-notes/SKILL.md
-- [[Configuration_21]] - document - skills/openclaw/bear-notes/SKILL.md
-- [[Getting a Bear Token]] - document - skills/openclaw/bear-notes/SKILL.md
-- [[Notes_3]] - document - skills/openclaw/bear-notes/SKILL.md
-- [[Options]] - document - skills/openclaw/bear-notes/SKILL.md
-- [[SKILL_195]] - document - skills/openclaw/apple-notes/SKILL.md
-- [[SKILL_197]] - document - skills/openclaw/bear-notes/SKILL.md
-- [[grizzly CLI (Bear notes)]] - concept - skills/openclaw/bear-notes/SKILL.md
-- [[memo CLI (antoniorodrmemo)]] - concept - skills/openclaw/apple-notes/SKILL.md
+- [[AgentShroud Production Docker Compose Stack]] - code - docker/docker-compose.yml
+- [[Docker Socket Proxy Service]] - code - docker/docker-compose.yml
+- [[Gateway Service (security proxy  sole egress)]] - code - docker/docker-compose.yml
+- [[Hermes Bot Service]] - code - docker/docker-compose.yml
+- [[Local Model Routing Split (Nemotron agentic vs Gemma content-gen)]] - rationale - docker/docker-compose.yml
+- [[OpenClaw Bot Service]] - code - docker/docker-compose.yml
+- [[Three-Tier Network Segmentation (IEC 62443 FR5)]] - rationale - docker/docker-compose.yml
+- [[Turbo Fieldfare Fix Watch Prompt]] - document - docker/config/hermes/cron/prompts/turbo-fieldfare-fix-watch.txt
+- [[Turbo Fieldfare Issue 84 (tool-call decoder_consume bug)]] - concept - docker/config/hermes/cron/prompts/turbo-fieldfare-fix-watch.txt
+- [[Voice Gateway Service (ESP32 STTTTS bridge)]] - code - docker/docker-compose.yml
+- [[Weekly Hermes Stability Report Prompt]] - document - docker/config/hermes/cron/prompts/weekly-hermes-stability-report.txt
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,3 +28,12 @@ members: 11
 TABLE source_file, type FROM #community/Community_798
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_Community 279]]
+- 1 edge to [[_COMMUNITY_Community 213]]
+
+## Top bridge nodes
+- [[Hermes Bot Service]] - degree 5, connects to 1 community
+- [[OpenClaw Bot Service]] - degree 4, connects to 1 community
+- [[Voice Gateway Service (ESP32 STTTTS bridge)]] - degree 3, connects to 1 community

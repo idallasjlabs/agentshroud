@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/adr/ADR-008-progressive-trust-levels.md"
 type: "document"
-community: "Community 792"
+community: "Community 784"
 location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_792
+  - community/Community_784
 ---
 
 # Trust Calculation
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Decision_9]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_792
+#graphify/document #graphify/EXTRACTED #community/Community_784

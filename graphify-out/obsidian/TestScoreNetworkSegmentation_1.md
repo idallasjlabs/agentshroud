@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "Community 1352"
+community: "Community 1358"
 location: "L380"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1352
+  - community/Community_1358
 ---
 
 # TestScoreNetworkSegmentation
@@ -17,4 +17,4 @@ tags:
 - [[.test_three_baseline()]] - `method` [EXTRACTED]
 - [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1352
+#graphify/code #graphify/EXTRACTED #community/Community_1358

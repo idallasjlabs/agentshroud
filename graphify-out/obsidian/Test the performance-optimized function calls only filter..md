@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_xml_leak_filter.py"
 type: "rationale"
-community: "Community 285"
+community: "Community 46"
 location: "L78"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_285
+  - community/Community_46
 ---
 
 # Test the performance-optimized function calls only filter.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_quick_function_calls_filter()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_285
+#graphify/rationale #graphify/EXTRACTED #community/Community_46

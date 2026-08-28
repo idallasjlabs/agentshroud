@@ -1,43 +1,44 @@
 ---
 type: community
-members: 30
+cohesion: 0.07
+members: 29
 ---
 
 # Community 269
 
-**Members:** 30 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 29 nodes
 
 ## Members
-- [[1. SOC Command Center (Web UI)]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[2. Telegram Command Testing]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[3. Collaborator Experience Testing]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[4. Shared Memory Testing]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[5. Log Monitoring]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[6. Security Scan]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[7. Pre-Merge Checklist]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[API Endpoints — Direct Verification]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[Access and Login]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[AgentShroud v0.9.0 — Human Interface Testing Guide]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[Dashboard Tabs to Verify]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[Delegation_1]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[Egress Firewall]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[Egress Tab]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[Group Management]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[Groups Tab]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[Prerequisites — Start the Stack]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[Role and Collaborator Management]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[Scanners Tab]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[Scorecard Tab]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[Security Immunity]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[Security Tab]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[Status Commands]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[Team Configuration Reference]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[Test Delegation privilege enforcement]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[Test full_access mode]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[Test local_only mode]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[Test project_scoped mode]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[Users Tab]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[v0.9.0-testing-guide]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
+- [[1. Branch Creation_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[2. Development (TDD)_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[3. Production Testing (if needed)_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[4. Pull Request_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[5. Pre-Merge_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[Cloud & FinOps_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[Common Commands Quick Reference_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[Content & Communication_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[Core Development_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[Data Operations_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[Emergency Contacts_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[Emergency Procedures_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[GSDE&G Skills Reference_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[GitHub Workflow Integration_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[Investigation_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[MCP Tools_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[P1 Incident Response_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[Production Safety_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[Production Testing Guidelines_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[Quick Reference When to Use Each Skill_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[Reference_2]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[Related Documentation]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[SKILLS_GUIDE_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[SecureClaw (Project-Specific)_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[Skill Directory Structure_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[Skill Invocation Examples_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[Skills by Category_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[System Utilities_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[Workflow_4]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
 
 ## Live Query (requires Dataview plugin)
 

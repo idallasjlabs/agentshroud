@@ -1,14 +1,17 @@
 ---
 type: community
-members: 1
+cohesion: 1.00
+members: 2
 ---
 
 # Community 1563
 
-**Members:** 1 nodes
+**Cohesion:** 1.00 - tightly connected
+**Members:** 2 nodes
 
 ## Members
-- [[App Icon 256x256 (AgentShroud logo mark)]] - image - branding/icons/app/icon-256x256.png
+- [[.test_pattern_overlaps()]] - code - gateway/tests/test_outbound_filter.py
+- [[Test handling of overlapping patterns.]] - rationale - gateway/tests/test_outbound_filter.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -16,3 +19,9 @@ members: 1
 TABLE source_file, type FROM #community/Community_1563
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 996]]
+
+## Top bridge nodes
+- [[.test_pattern_overlaps()]] - degree 2, connects to 1 community

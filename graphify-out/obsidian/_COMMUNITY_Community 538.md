@@ -1,30 +1,32 @@
 ---
 type: community
+cohesion: 0.12
 members: 17
 ---
 
 # Community 538
 
+**Cohesion:** 0.12 - loosely connected
 **Members:** 17 nodes
 
 ## Members
-- [[Configuration  Environment Variables_26]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
-- [[Function Details_44]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
-- [[Key Classes  Functions_47]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
-- [[OAuthSecurityValidator.__init__(allowed_redirect_uris, require_pkce)]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
-- [[OAuthSecurityValidator.create_consent_cookie(client_id, scopes, user_id)]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
-- [[OAuthSecurityValidator.record_state_used(state)  check_state_reuse(state)]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
-- [[OAuthSecurityValidator.register_known_shared_ids(ids)]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
-- [[OAuthSecurityValidator.validate_consent_cookie(cookie, client_id, scopes, user_id)]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
-- [[OAuthSecurityValidator.validate_redirect_uri(uri)]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
-- [[OAuthSecurityValidator.validate_request(req)]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
-- [[OAuthSecurityValidator.verify_pkce(verifier, challenge, method)]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
-- [[Purpose_165]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
-- [[Related_51]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
-- [[Responsibilities_49]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
-- [[Threat Model_20]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
-- [[oauth_security.py_2]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
-- [[oauth_security.py_1]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
+- [[Configuration  Environment Variables_29]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
+- [[Function Details_48]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
+- [[Key Classes  Functions_51]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
+- [[Purpose_169]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
+- [[Related_55]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
+- [[Responsibilities_53]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
+- [[SubagentMonitor.check_tool_usage(session_id, agent_id, tool_name, required_trust)]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
+- [[SubagentMonitor.deregister(session_id, agent_id)]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
+- [[SubagentMonitor.get_active(session_id)]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
+- [[SubagentMonitor.get_audit_log(session_id, agent_id)]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
+- [[SubagentMonitor.get_flagged_events(session_id)]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
+- [[SubagentMonitor.kill_agent(session_id, agent_id)]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
+- [[SubagentMonitor.kill_all(session_id)]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
+- [[SubagentMonitor.register_spawn(session_id, agent_id, parent_id, parent_trust)]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
+- [[Threat Model_24]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
+- [[subagent_monitor.py_2]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
+- [[subagent_monitor.py_1]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
 
 ## Live Query (requires Dataview plugin)
 

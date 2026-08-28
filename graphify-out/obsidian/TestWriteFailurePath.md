@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory_write_acl.py"
 type: "code"
-community: "Community 26"
+community: "Community 27"
 location: "L230"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_26
+  - community/Community_27
 ---
 
 # TestWriteFailurePath
@@ -20,4 +20,4 @@ tags:
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_shared_memory_write_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_26
+#graphify/code #graphify/INFERRED #community/Community_27

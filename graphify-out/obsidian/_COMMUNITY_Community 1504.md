@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 1.00
 members: 2
 ---
 
 # Community 1504
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[activate-lockdown.sh]] - code - scripts/activate-lockdown.sh
-- [[activate-lockdown.sh script]] - code - scripts/activate-lockdown.sh
+- [[installapiprerequisites endpoint]] - concept - gateway/web/templates/installer.html
+- [[checkPrereqs()]] - code - gateway/web/templates/installer.html
 
 ## Live Query (requires Dataview plugin)
 

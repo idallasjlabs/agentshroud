@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/email_service.py"
 type: "rationale"
-community: "Community 173"
+community: "Community 178"
 location: "L96"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_173
+  - community/Community_178
 ---
 
 # Send one email synchronously.  Blocking — call in an executor.          Raises t
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.send()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_173
+#graphify/rationale #graphify/EXTRACTED #community/Community_178

@@ -1,24 +1,26 @@
 ---
 type: community
+cohesion: 0.27
 members: 11
 ---
 
 # Community 806
 
+**Cohesion:** 0.27 - loosely connected
 **Members:** 11 nodes
 
 ## Members
-- [[1. Pre-populate known_hosts]] - document - docs/ssh-security-review.md
-- [[2. Network Segmentation]] - document - docs/ssh-security-review.md
-- [[3. Key Rotation]] - document - docs/ssh-security-review.md
-- [[4. Rate Limiting]] - document - docs/ssh-security-review.md
-- [[5. Output Sanitization]] - document - docs/ssh-security-review.md
-- [[6. Least-Privilege SSH Users]] - document - docs/ssh-security-review.md
-- [[Comparison Direct SSH vs. AgentShroud SSH Proxy]] - document - docs/ssh-security-review.md
-- [[Recommendations for Production Deployment]] - document - docs/ssh-security-review.md
-- [[Risk Summary]] - document - docs/ssh-security-review.md
-- [[SSH Security Review]] - document - docs/ssh-security-review.md
-- [[ssh-security-review]] - document - docs/ssh-security-review.md
+- [[TODO Add actual script logic here]] - rationale - skills/openclaw/skill-creator/scripts/init_skill.py
+- [[Convert hyphenated skill name to Title Case for display.]] - rationale - skills/openclaw/skill-creator/scripts/init_skill.py
+- [[Initialize a new skill directory with template SKILL.md.      Args         skil]] - rationale - skills/openclaw/skill-creator/scripts/init_skill.py
+- [[Normalize a skill name to lowercase hyphen-case.]] - rationale - skills/openclaw/skill-creator/scripts/init_skill.py
+- [[create_resource_dirs()]] - code - skills/openclaw/skill-creator/scripts/init_skill.py
+- [[init_skill()]] - code - skills/openclaw/skill-creator/scripts/init_skill.py
+- [[init_skill.py]] - code - skills/openclaw/skill-creator/scripts/init_skill.py
+- [[main()_30]] - code - skills/openclaw/skill-creator/scripts/init_skill.py
+- [[normalize_skill_name()]] - code - skills/openclaw/skill-creator/scripts/init_skill.py
+- [[parse_resources()]] - code - skills/openclaw/skill-creator/scripts/init_skill.py
+- [[title_case_skill_name()]] - code - skills/openclaw/skill-creator/scripts/init_skill.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,7 +30,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 901]]
+- 1 edge to [[_COMMUNITY_Community 532]]
+- 1 edge to [[_COMMUNITY_Community 543]]
 
 ## Top bridge nodes
-- [[SSH Security Review]] - degree 5, connects to 1 community
+- [[init_skill.py]] - degree 9, connects to 2 communities

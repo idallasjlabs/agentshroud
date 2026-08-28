@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/WORKSPACE_USAGE.md"
 type: "document"
-community: "Community 159"
+community: "Community 163"
 location: "L202"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_159
+  - community/Community_163
 ---
 
 # Create Structure
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Workspace Organization Tips]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_159
+#graphify/document #graphify/EXTRACTED #community/Community_163

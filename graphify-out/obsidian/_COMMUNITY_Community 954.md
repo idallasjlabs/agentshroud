@@ -1,21 +1,23 @@
 ---
 type: community
+cohesion: 0.25
 members: 8
 ---
 
 # Community 954
 
+**Cohesion:** 0.25 - loosely connected
 **Members:** 8 nodes
 
 ## Members
-- [[Step 6b - Wiki (only if --wiki flag)_1]] - document - docker/config/hermes/skills/graphify/references/exports.md
-- [[Step 7 - Neo4j export (only if --neo4j or --neo4j-push flag)_1]] - document - docker/config/hermes/skills/graphify/references/exports.md
-- [[Step 7b - SVG export (only if --svg flag)_1]] - document - docker/config/hermes/skills/graphify/references/exports.md
-- [[Step 7c - GraphML export (only if --graphml flag)_1]] - document - docker/config/hermes/skills/graphify/references/exports.md
-- [[Step 7d - MCP server (only if --mcp flag)_1]] - document - docker/config/hermes/skills/graphify/references/exports.md
-- [[Step 8 - Token reduction benchmark (only if total_words  5000)_1]] - document - docker/config/hermes/skills/graphify/references/exports.md
-- [[exports_1]] - document - docker/config/hermes/skills/graphify/references/exports.md
-- [[graphify reference extra exports and benchmark_1]] - document - docker/config/hermes/skills/graphify/references/exports.md
+- [[Hermes — Reference Verifier_1]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
+- [[Input Requirements_15]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
+- [[Output Format_17]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
+- [[Persona_11]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
+- [[Quality Checklist_13]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
+- [[Role_52]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
+- [[SKILL_88]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
+- [[System Prompt_11]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

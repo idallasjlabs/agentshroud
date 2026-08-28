@@ -1,24 +1,34 @@
 ---
 type: community
-members: 11
+cohesion: 0.14
+members: 19
 ---
 
 # Community 484
 
-**Members:** 11 nodes
+**Cohesion:** 0.14 - loosely connected
+**Members:** 19 nodes
 
 ## Members
-- [[Test forward endpoint rejects requests without auth]] - rationale - gateway/tests/test_integration.py
-- [[Test forward endpoint with proper authentication]] - rationale - gateway/tests/test_integration.py
-- [[Test WebSocket authentication flow]] - rationale - gateway/tests/test_integration.py
-- [[Test ledger query endpoint]] - rationale - gateway/tests/test_integration.py
-- [[Test that status endpoint works without authentication]] - rationale - gateway/tests/test_integration.py
-- [[test_forward_with_auth()]] - code - gateway/tests/test_integration.py
-- [[test_forward_without_auth()]] - code - gateway/tests/test_integration.py
-- [[test_health_check_no_auth()]] - code - gateway/tests/test_integration.py
-- [[test_integration.py]] - code - gateway/tests/test_integration.py
-- [[test_ledger_query()]] - code - gateway/tests/test_integration.py
-- [[test_websocket_auth()]] - code - gateway/tests/test_integration.py
+- [[._time_fn()]] - code - gateway/tests/test_benchmark_regression.py
+- [[.setup_method()]] - code - gateway/tests/test_benchmark_regression.py
+- [[.test_100_inbound_requests()]] - code - gateway/tests/test_benchmark_regression.py
+- [[.test_baseline_file_exists()]] - code - gateway/tests/test_benchmark_regression.py
+- [[.test_baseline_values_are_reasonable()]] - code - gateway/tests/test_benchmark_regression.py
+- [[.test_single_inbound_latency()]] - code - gateway/tests/test_benchmark_regression.py
+- [[.test_single_outbound_latency()]] - code - gateway/tests/test_benchmark_regression.py
+- [[100 sequential inbound requests should stay within baseline.          Baseline k]] - rationale - gateway/tests/test_benchmark_regression.py
+- [[Assert measured value is within THRESHOLD of baseline.]] - rationale - gateway/tests/test_benchmark_regression.py
+- [[Baseline file must exist and contain expected keys.]] - rationale - gateway/tests/test_benchmark_regression.py
+- [[Baseline values should be positive and within expected ranges.]] - rationale - gateway/tests/test_benchmark_regression.py
+- [[Benchmark regression tests — ensure latency stays within 20% of baseline.]] - rationale - gateway/tests/test_benchmark_regression.py
+- [[Single inbound request processing should stay within baseline.]] - rationale - gateway/tests/test_benchmark_regression.py
+- [[Single outbound request processing should stay within baseline.]] - rationale - gateway/tests/test_benchmark_regression.py
+- [[TestBenchmarkRegression]] - code - gateway/tests/test_benchmark_regression.py
+- [[Time a function over N iterations, return mean ms.]] - rationale - gateway/tests/test_benchmark_regression.py
+- [[assert_within_threshold()]] - code - gateway/tests/test_benchmark_regression.py
+- [[load_baseline()]] - code - gateway/tests/test_benchmark_regression.py
+- [[test_benchmark_regression.py]] - code - gateway/tests/test_benchmark_regression.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,7 +38,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 57]]
+- 1 edge to [[_COMMUNITY_Community 75]]
 
 ## Top bridge nodes
-- [[test_integration.py]] - degree 6, connects to 1 community
+- [[TestBenchmarkRegression]] - degree 10, connects to 1 community

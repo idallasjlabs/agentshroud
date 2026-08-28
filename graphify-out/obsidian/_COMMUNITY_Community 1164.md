@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1164
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[Pull Request Generator (PR)]] - document - .agents/skills/i-pr/README.md
-- [[Purpose_23]] - document - .agents/skills/i-pr/README.md
-- [[README_23]] - document - .agents/skills/i-pr/README.md
-- [[Related Skills_26]] - document - .agents/skills/i-pr/README.md
-- [[Usage_26]] - document - .agents/skills/i-pr/README.md
+- [[Purpose_32]] - document - .agents/skills/i-socrates/README.md
+- [[README_32]] - document - .agents/skills/i-socrates/README.md
+- [[Related Skills_35]] - document - .agents/skills/i-socrates/README.md
+- [[Socrates — Dialogue Architect]] - document - .agents/skills/i-socrates/README.md
+- [[Usage_35]] - document - .agents/skills/i-socrates/README.md
 
 ## Live Query (requires Dataview plugin)
 

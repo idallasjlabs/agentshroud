@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "Community 1283"
+community: "Community 1259"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1283
+  - community/Community_1259
 ---
 
 # Prerequisites
@@ -18,4 +18,4 @@ tags:
 - [[Software Dependencies]] - `contains` [EXTRACTED]
 - [[System Requirements]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1283
+#graphify/document #graphify/EXTRACTED #community/Community_1259

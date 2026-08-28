@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/dns_forwarder.py"
 type: "code"
-community: "Community 418"
+community: "Community 424"
 location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_418
+  - community/Community_424
 ---
 
 # parse_domain_name()
@@ -21,4 +21,4 @@ tags:
 - [[parse_query()]] - `calls` [EXTRACTED]
 - [[test_dns_canvas_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_418
+#graphify/code #graphify/EXTRACTED #community/Community_424

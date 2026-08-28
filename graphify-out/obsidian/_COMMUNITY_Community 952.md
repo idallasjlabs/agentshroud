@@ -1,22 +1,23 @@
 ---
 type: community
-members: 9
+cohesion: 0.25
+members: 8
 ---
 
 # Community 952
 
-**Members:** 9 nodes
+**Cohesion:** 0.25 - loosely connected
+**Members:** 8 nodes
 
 ## Members
-- [[.test_clean_params_no_findings()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_fake_system_prompt_blocked()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_identity_override_blocked()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_low_confidence_not_blocked()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_nested_injection_caught()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_normal_text_not_flagged()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_prompt_override_blocked()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_special_token_injection()]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestInjectionDetection]] - code - gateway/tests/test_mcp_proxy.py
+- [[AgentShroud Hermes — System Identity_1]] - document - docker/config/hermes/agents/hermes-soul.md
+- [[Capabilities_1]] - document - docker/config/hermes/agents/hermes-soul.md
+- [[Core Behaviors_1]] - document - docker/config/hermes/agents/hermes-soul.md
+- [[Owner_1]] - document - docker/config/hermes/agents/hermes-soul.md
+- [[Remote Hosts (SSH via gateway)_1]] - document - docker/config/hermes/agents/hermes-soul.md
+- [[Trademark Notice_1]] - document - docker/config/hermes/agents/hermes-soul.md
+- [[Your Role_1]] - document - docker/config/hermes/agents/hermes-soul.md
+- [[hermes-soul]] - document - docker/config/hermes/agents/hermes-soul.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,13 +25,3 @@ members: 9
 TABLE source_file, type FROM #community/Community_952
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 8 edges to [[_COMMUNITY_Community 36]]
-- 3 edges to [[_COMMUNITY_Community 106]]
-- 1 edge to [[_COMMUNITY_Community 201]]
-- 1 edge to [[_COMMUNITY_Community 179]]
-- 1 edge to [[_COMMUNITY_Community 283]]
-
-## Top bridge nodes
-- [[TestInjectionDetection]] - degree 22, connects to 5 communities

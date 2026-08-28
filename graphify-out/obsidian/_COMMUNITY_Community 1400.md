@@ -1,16 +1,18 @@
 ---
 type: community
+cohesion: 0.67
 members: 3
 ---
 
 # Community 1400
 
+**Cohesion:** 0.67 - moderately connected
 **Members:** 3 nodes
 
 ## Members
-- [[Hermes — Reference Verifier Skill]] - document - docker/config/openclaw/skills/i-hermes/SKILL.md
-- [[Podcast Production Pipeline (multi-agent)]] - concept - docker/config/openclaw/skills/i-hermes/SKILL.md
-- [[i-hermes README (Podcast Production Orchestrator)]] - document - docker/config/openclaw/skills/i-hermes/README.md
+- [[1Password item Apple ID - therealidallasj_1]] - concept - .agents/skills/i-icloud/scripts/calendar.js
+- [[iCloud Data Manager README]] - document - .agents/skills/i-icloud/README.md
+- [[iCloud Services Skill_1]] - document - .agents/skills/i-icloud/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

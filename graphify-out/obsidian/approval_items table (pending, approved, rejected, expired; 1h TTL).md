@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-10-data-dictionary.svg"
 type: "concept"
-community: "Community 1532"
+community: "Community 1099"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1532
+  - community/Community_1099
 ---
 
 # approval_items table (pending, approved, rejected, expired; 1h TTL)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[SQLite DBs (Backed by SQLite)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1532
+#graphify/concept #graphify/EXTRACTED #community/Community_1099

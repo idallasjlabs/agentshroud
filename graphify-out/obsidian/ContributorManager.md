@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/contributors.py"
 type: "code"
-community: "Community 49"
+community: "Community 14"
 location: "L24"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_49
+  - community/Community_14
 ---
 
 # ContributorManager
@@ -48,7 +48,7 @@ tags:
 - [[ProgressiveLockdown]] - `calls` [EXTRACTED]
 - [[RBACConfig_1]] - `references` [EXTRACTED]
 - [[RenameGroupRequest]] - `uses` [INFERRED]
-- [[Request_6]] - `uses` [INFERRED]
+- [[Request_7]] - `uses` [INFERRED]
 - [[SCLCaller_1]] - `uses` [INFERRED]
 - [[SCLInterface_1]] - `uses` [INFERRED]
 - [[ScanRequest_1]] - `uses` [INFERRED]
@@ -62,7 +62,7 @@ tags:
 - [[TestPausedFieldWiring]] - `uses` [INFERRED]
 - [[UpdateDisplayNameRequest]] - `uses` [INFERRED]
 - [[UserRole_1]] - `uses` [INFERRED]
-- [[WebSocket_5]] - `uses` [INFERRED]
+- [[WebSocket_6]] - `uses` [INFERRED]
 - [[_FakeRBAC_1]] - `uses` [INFERRED]
 - [[contributors.py]] - `contains` [EXTRACTED]
 - [[get_user()]] - `calls` [EXTRACTED]
@@ -71,4 +71,4 @@ tags:
 - [[router.py_1]] - `imports` [EXTRACTED]
 - [[test_soc_contributors.py]] - `tests` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_49
+#graphify/code #graphify/INFERRED #community/Community_14

@@ -1,22 +1,24 @@
 ---
 type: community
+cohesion: 0.42
 members: 9
 ---
 
 # Community 909
 
+**Cohesion:** 0.42 - moderately connected
 **Members:** 9 nodes
 
 ## Members
-- [[Configured Hosts_1]] - document - docs/vault/02 - Modules/Other/ssh_proxy.py.md
-- [[Key Class `SSHProxy`]] - document - docs/vault/02 - Modules/Other/ssh_proxy.py.md
-- [[Purpose_125]] - document - docs/vault/02 - Modules/Other/ssh_proxy.py.md
-- [[Related Notes_11]] - document - docs/vault/02 - Modules/Other/ssh_proxy.py.md
-- [[Responsibilities_10]] - document - docs/vault/02 - Modules/Other/ssh_proxy.py.md
-- [[Security Notes_5]] - document - docs/vault/02 - Modules/Other/ssh_proxy.py.md
-- [[`execute(host str, command str, session_id str) → SSHExecResult`]] - document - docs/vault/02 - Modules/Other/ssh_proxy.py.md
-- [[ssh_proxy.py_1]] - document - docs/vault/02 - Modules/Other/ssh_proxy.py.md
-- [[ssh_proxy.py]] - document - docs/vault/02 - Modules/Other/ssh_proxy.py.md
+- [[Best-effort plain-language gloss of a 5-field cron expression.]] - rationale - scripts/generate-job-schedule.py
+- [[describe_cron()]] - code - scripts/generate-job-schedule.py
+- [[docker_exec()]] - code - scripts/generate-job-schedule.py
+- [[fmt_ts()]] - code - scripts/generate-job-schedule.py
+- [[generate-job-schedule.py]] - code - scripts/generate-job-schedule.py
+- [[load_hermes_jobs()]] - code - scripts/generate-job-schedule.py
+- [[load_openclaw_jobs()]] - code - scripts/generate-job-schedule.py
+- [[main()_20]] - code - scripts/generate-job-schedule.py
+- [[render_html()]] - code - scripts/generate-job-schedule.py
 
 ## Live Query (requires Dataview plugin)
 

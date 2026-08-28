@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
+source_file: "docs/reference/PREREQUISITES.md"
 type: "document"
-community: "Community 1126"
-location: "L267"
+community: "Community 328"
+location: "L552"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1126
+  - community/Community_328
 ---
 
 # Configuration
 
 ## Connections
-- [[7. Pi-hole DNS Security Layer (Built-In)]] - `contains` [EXTRACTED]
+- [[✅ Setup Checklist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1126
+#graphify/document #graphify/EXTRACTED #community/Community_328

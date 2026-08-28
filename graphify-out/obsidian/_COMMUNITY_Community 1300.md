@@ -1,17 +1,19 @@
 ---
 type: community
+cohesion: 0.50
 members: 4
 ---
 
 # Community 1300
 
+**Cohesion:** 0.50 - moderately connected
 **Members:** 4 nodes
 
 ## Members
-- [[For --watch_1]] - document - docker/config/hermes/skills/graphify/references/add-watch.md
-- [[For graphify add_1]] - document - docker/config/hermes/skills/graphify/references/add-watch.md
-- [[add-watch_1]] - document - docker/config/hermes/skills/graphify/references/add-watch.md
-- [[graphify reference add a URL and watch a folder_1]] - document - docker/config/hermes/skills/graphify/references/add-watch.md
+- [[For git commit hook_1]] - document - docker/config/hermes/skills/graphify/references/hooks.md
+- [[For native CLAUDE.md integration_1]] - document - docker/config/hermes/skills/graphify/references/hooks.md
+- [[graphify reference commit hook and native CLAUDE.md integration_1]] - document - docker/config/hermes/skills/graphify/references/hooks.md
+- [[hooks_1]] - document - docker/config/hermes/skills/graphify/references/hooks.md
 
 ## Live Query (requires Dataview plugin)
 

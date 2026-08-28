@@ -1,23 +1,30 @@
 ---
 type: community
-members: 10
+cohesion: 0.13
+members: 15
 ---
 
 # Community 624
 
-**Members:** 10 nodes
+**Cohesion:** 0.13 - loosely connected
+**Members:** 15 nodes
 
 ## Members
-- [[.test_healthcheck_skill_error_is_rewritten_for_form_content_field()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_healthcheck_skill_error_is_rewritten_for_form_message_field()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_healthcheck_skill_error_is_rewritten_for_json_caption_field()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_healthcheck_skill_error_is_rewritten_for_json_content_field()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_healthcheck_skill_error_is_rewritten_for_json_message_field()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Healthcheck SKILL.md sandbox errors should rewrite when form payload uses messag]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Healthcheck SKILL.md sandbox errors should rewrite when payload uses caption fie]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Healthcheck SKILL.md sandbox errors should rewrite when payload uses message fie]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Healthcheck sandbox SKILL.md errors should rewrite when form payload uses conten]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Healthcheck sandbox SKILL.md errors should rewrite when payload uses content fie]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Configuration  Environment Variables_4]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[Detection Patterns_1]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[Function Details_10]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[Key Classes  Functions_13]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[MCPInspector._redact_pii(value)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[MCPInspector._scan_text(text, path, findings, ...)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[MCPInspector._scan_value(value, path, findings, ...)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[MCPInspector._should_block(findings)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[MCPInspector.inspect_tool_call(tool_name, params, check_injection, check_pii, check_encoding, check_sensitive)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[MCPInspector.inspect_tool_result(tool_name, result_content, check_pii, check_encoding)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[Purpose_131]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[Related_16]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[Responsibilities_15]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[mcp_inspector.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[mcp_inspector.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,13 +32,3 @@ members: 10
 TABLE source_file, type FROM #community/Community_624
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 15 edges to [[_COMMUNITY_Community 3]]
-
-## Top bridge nodes
-- [[.test_healthcheck_skill_error_is_rewritten_for_json_message_field()]] - degree 5, connects to 1 community
-- [[.test_healthcheck_skill_error_is_rewritten_for_json_content_field()]] - degree 5, connects to 1 community
-- [[.test_healthcheck_skill_error_is_rewritten_for_form_content_field()]] - degree 5, connects to 1 community
-- [[.test_healthcheck_skill_error_is_rewritten_for_form_message_field()]] - degree 5, connects to 1 community
-- [[.test_healthcheck_skill_error_is_rewritten_for_json_caption_field()]] - degree 4, connects to 1 community

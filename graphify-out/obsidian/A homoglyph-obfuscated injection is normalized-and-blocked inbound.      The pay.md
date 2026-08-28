@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ws_e_rt2_inbound_encoding.py"
 type: "rationale"
-community: "Community 50"
+community: "Community 47"
 location: "L130"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_50
+  - community/Community_47
 ---
 
 # A homoglyph-obfuscated injection is normalized-and-blocked inbound.      The pay
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_inbound_unicode_homoglyph_injection_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_50
+#graphify/rationale #graphify/EXTRACTED #community/Community_47

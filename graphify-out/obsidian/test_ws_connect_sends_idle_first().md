@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "Community 37"
-location: "L880"
+community: "Community 35"
+location: "L980"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_37
+  - community/Community_35
 ---
 
 # test_ws_connect_sends_idle_first()
@@ -15,4 +15,4 @@ tags:
 - [[The very first frame after WS accept must be idle, not listening.]] - `rationale_for` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_37
+#graphify/code #graphify/EXTRACTED #community/Community_35

@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-hermes/README.md"
 type: "document"
-community: "Community 1155"
+community: "Community 1150"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1155
+  - community/Community_1150
 ---
 
 # Hermes — Podcast Production Orchestrator
@@ -17,4 +17,4 @@ tags:
 - [[Related Skills_12]] - `contains` [EXTRACTED]
 - [[Usage_14]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1155
+#graphify/document #graphify/EXTRACTED #community/Community_1150

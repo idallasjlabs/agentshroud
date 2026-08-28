@@ -1,29 +1,31 @@
 ---
 type: community
+cohesion: 0.12
 members: 16
 ---
 
 # Community 566
 
+**Cohesion:** 0.12 - loosely connected
 **Members:** 16 nodes
 
 ## Members
-- [[Bootstrap cron copy must also exclude short UIDs.]] - rationale - gateway/tests/test_cron_jobs_prompts.py
-- [[Bootstrap cron copy must also have denial-token avoidance.]] - rationale - gateway/tests/test_cron_jobs_prompts.py
-- [[Every collaborator report prompt must instruct LLM to exclude short UIDs.]] - rationale - gateway/tests/test_cron_jobs_prompts.py
-- [[Every collaborator report prompt must instruct the LLM to avoid 'denied'.]] - rationale - gateway/tests/test_cron_jobs_prompts.py
-- [[Path_28]] - code - gateway/tests/test_cron_jobs_prompts.py
-- [[SSH config must have a Host .tail240ea8.ts.net block BEFORE Host  block.]] - rationale - gateway/tests/test_cron_jobs_prompts.py
-- [[Tailnet Host block must route through the gateway CONNECT proxy.]] - rationale - gateway/tests/test_cron_jobs_prompts.py
-- [[_collab_jobs()]] - code - gateway/tests/test_cron_jobs_prompts.py
-- [[_load_jobs()]] - code - gateway/tests/test_cron_jobs_prompts.py
-- [[test_bots_cron_prompts_exclude_short_uids()]] - code - gateway/tests/test_cron_jobs_prompts.py
-- [[test_bots_cron_prompts_warn_against_denied_token()]] - code - gateway/tests/test_cron_jobs_prompts.py
-- [[test_cron_jobs_prompts.py]] - code - gateway/tests/test_cron_jobs_prompts.py
-- [[test_cron_prompts_exclude_short_uids()]] - code - gateway/tests/test_cron_jobs_prompts.py
-- [[test_cron_prompts_warn_against_denied_token()]] - code - gateway/tests/test_cron_jobs_prompts.py
-- [[test_ssh_config_routes_tailnet_fqdn()]] - code - gateway/tests/test_cron_jobs_prompts.py
-- [[test_ssh_tailnet_block_has_proxy_command()]] - code - gateway/tests/test_cron_jobs_prompts.py
+- [[Configuration_15]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
+- [[Dependencies_19]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
+- [[Environment Variables_15]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
+- [[Function Details_45]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
+- [[Key Classes  Functions_48]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
+- [[Mode Enforce vs Monitor_10]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
+- [[Pattern Categories and Weights]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
+- [[PromptGuard_2]] - concept - docker/config/hermes/SOUL.md
+- [[PromptGuard.__init__(block_threshold, warn_threshold, custom_patterns)]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
+- [[PromptGuard._check_encoded_content(text)]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
+- [[PromptGuard._check_unicode_tricks(text)]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
+- [[PromptGuard.scan(text)]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
+- [[Purpose_166]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
+- [[Related_52]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
+- [[Responsibilities_50]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
+- [[Threat Model_21]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,3 +33,10 @@ members: 16
 TABLE source_file, type FROM #community/Community_566
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 315]]
+- 1 edge to [[_COMMUNITY_Community 117]]
+
+## Top bridge nodes
+- [[PromptGuard_2]] - degree 13, connects to 2 communities

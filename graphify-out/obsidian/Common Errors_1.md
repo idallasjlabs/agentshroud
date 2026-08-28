@@ -12,6 +12,6 @@ tags:
 # Common Errors
 
 ## Connections
-- [[MCP Troubleshooting_1]] - `contains` [EXTRACTED]
+- [[MCP Troubleshooting]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Community_840

@@ -1,30 +1,32 @@
 ---
 type: community
+cohesion: 0.12
 members: 17
 ---
 
 # Community 537
 
+**Cohesion:** 0.12 - loosely connected
 **Members:** 17 nodes
 
 ## Members
-- [[Configuration  Environment Variables_23]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
-- [[Function Details_40]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
-- [[Key Classes  Functions_43]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
-- [[Purpose_161]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
-- [[Related_47]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
-- [[Responsibilities_45]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
-- [[Threat Model_16]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
-- [[calculate_overall_score(summaries)]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
-- [[calculate_tool_score(summary)]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
-- [[format_report(report)]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
-- [[generate_report(summaries, db_path, save_history)]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
-- [[get_trend(days, db_path)]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
-- [[health_report.py_2]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
-- [[health_report.py_1]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
-- [[init_db(db_path)]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
-- [[save_to_history(score, grade, details, db_path)]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
-- [[score_to_grade(score)]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
+- [[Configuration  Environment Variables_28]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[Function Details_47]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[Key Classes  Functions_50]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[Purpose_168]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[Related_54]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[Responsibilities_52]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[SessionManager.__init__(max_session_age, max_sessions_per_ip, rate_limit_window)]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[SessionManager.cleanup_expired()]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[SessionManager.create_session(ip, user_agent)]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[SessionManager.destroy_session(session_id)]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[SessionManager.register_event_source(session_id, source)]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[SessionManager.rotate_session(old_session_id, ip, user_agent)]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[SessionManager.validate_event(session_id, source, event)]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[SessionManager.validate_session(session_id, ip, user_agent)]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[Threat Model_23]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[session_security.py_2]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[session_security.py_1]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
 
 ## Live Query (requires Dataview plugin)
 

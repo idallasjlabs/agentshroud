@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "code"
-community: "Community 481"
+community: "Community 541"
 location: "L617"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_481
+  - community/Community_541
 ---
 
 # _check_injection_patterns()
@@ -20,4 +20,4 @@ tags:
 - [[subagent_governance.py]] - `contains` [EXTRACTED]
 - [[test_subagent_governance.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_481
+#graphify/code #graphify/EXTRACTED #community/Community_541

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "rationale"
-community: "Community 106"
+community: "Community 39"
 location: "L446"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_106
+  - community/Community_39
 ---
 
 # Check if an agent can call a specific tool.          Default-allow: only blocks
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.check_tool_permission()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_106
+#graphify/rationale #graphify/EXTRACTED #community/Community_39

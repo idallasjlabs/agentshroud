@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/migrate-cve-registry-ghsa.py"
 type: "rationale"
-community: "Community 242"
+community: "Community 246"
 location: "L369"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_242
+  - community/Community_246
 ---
 
 # Rewrite every ``"id": "<old>"`` line and set ghsa_id/cve_id right after it.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[rewrite_registry_text()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_242
+#graphify/rationale #graphify/EXTRACTED #community/Community_246

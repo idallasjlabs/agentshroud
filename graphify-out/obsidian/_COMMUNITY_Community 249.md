@@ -1,63 +1,46 @@
 ---
 type: community
-members: 50
+cohesion: 0.09
+members: 31
 ---
 
 # Community 249
 
-**Members:** 50 nodes
+**Cohesion:** 0.09 - loosely connected
+**Members:** 31 nodes
 
 ## Members
-- [[Task]] - code - gateway/security/cron_state_monitor.py
-- [[_apply_agent_cb()]] - code - firmware/voice-terminal/main/ui_face.c
-- [[_apply_state_cb()]] - code - firmware/voice-terminal/main/ui_face.c
-- [[_find_canvas()]] - code - firmware/voice-terminal/main/ui_face.c
-- [[_report_and_place_canvas()]] - code - firmware/voice-terminal/main/ui_face.c
-- [[_state_to_emotion()]] - code - firmware/voice-terminal/main/ui_face.c
-- [[_touch_pressed()]] - code - firmware/voice-terminal/main/ui_face.c
-- [[_touch_start_only()]] - code - firmware/voice-terminal/main/ui_face.c
-- [[animation_timer_cb()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[app_main()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/examples/basic_cycle/main/main.c
-- [[draw_eye()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[draw_mouth()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[emotion_cycle_task()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/examples/basic_cycle/main/main.c
-- [[esp_err_t]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[face_animation_deinit()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[face_animation_init()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[face_animation_pause()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[face_animation_pause() — freezes canvas redraw to protect WiFi stack]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[face_animation_update()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[face_config_t]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[face_emotion_t]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[face_emotion_t_1]] - code - firmware/voice-terminal/main/ui_face.c
-- [[face_get_container()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[face_get_emotion()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[face_lock()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[face_malloc_canvas()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[face_set_auto_blink()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[face_set_emotion()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[face_set_emotion() (declared in header; drives eyemouth canvases)]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[face_set_eye_openness()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[face_set_lvgl_lock_fns()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[face_set_mouth_shape()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[face_set_position()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[face_trigger_blink()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[face_unlock()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[lv_event_t]] - code - firmware/voice-terminal/main/ui_face.c
-- [[lv_obj_t]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[lv_obj_t_1]] - code - firmware/voice-terminal/main/ui_face.c
-- [[lv_timer_t]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[lvgl_kawaii_face.c]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[lvgl_kawaii_face.h]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/include/lvgl_kawaii_face.h
-- [[main.c]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/examples/basic_cycle/main/main.c
-- [[remote_log.h]] - code - firmware/voice-terminal/main/remote_log.h
-- [[ui_face.c]] - code - firmware/voice-terminal/main/ui_face.c
-- [[ui_face_init()]] - code - firmware/voice-terminal/main/ui_face.c
-- [[ui_face_set_agent()]] - code - firmware/voice-terminal/main/ui_face.c
-- [[update_emotion_parameters()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[wakeword_ptt_finish() — tap-to-stop force-end]] - code - firmware/voice-terminal/main/wakeword.c
-- [[wakeword_tts_stop_request()]] - code - firmware/voice-terminal/main/wakeword.c
-- [[ws_vg_state_t_1]] - code - firmware/voice-terminal/main/ui_face.c
+- [[Build (url, body, headers) for a POST to the gateway op-proxy.      Mirrors emai]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
+- [[Build the Atlassian Document Format (ADF) body for POST ...comment.      The RE]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
+- [[Build the REST v3 add-comment URL against the cloud-id gateway.]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
+- [[Compose the human-readable weekly summary posted as the comment.      - commits]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
+- [[Extract SCRUM-n keys mentioned in commit subjects.]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
+- [[Fetch creds, build summary, post the comment. Returns a process exit code.]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
+- [[Fetch one secret field from the gateway op-proxy. Returns the value._1]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
+- [[GET and return (status_code, response_text). HTTPError is treated as a     norma]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
+- [[POST and return (status_code, response_text). Raises urllib errors up.]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
+- [[POST the ADF comment to Jira with Basic auth. Returns (status, text).]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
+- [[Resolve a site domain to its Atlassian cloud ID via the public,     unauthentica_1]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
+- [[Return 'shorthash subject' lines for commits in the last 7 days.      Degrades t]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
+- [[Return the HTTP Basic auth header value base64(emailtoken)._1]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
+- [[Unauthenticated site-to-cloud-ID discovery URL._1]] - rationale - docker/config/hermes/workspace/jira_weekly_review.py
+- [[_adf_paragraph()]] - code - docker/config/hermes/workspace/jira_weekly_review.py
+- [[_git_commits_last_week()]] - code - docker/config/hermes/workspace/jira_weekly_review.py
+- [[_http_get()]] - code - docker/config/hermes/workspace/jira_weekly_review.py
+- [[_http_post_json()]] - code - docker/config/hermes/workspace/jira_weekly_review.py
+- [[build_basic_auth_header()_1]] - code - docker/config/hermes/workspace/jira_weekly_review.py
+- [[build_comment_payload()_1]] - code - docker/config/hermes/workspace/jira_weekly_review.py
+- [[build_comment_url()_1]] - code - docker/config/hermes/workspace/jira_weekly_review.py
+- [[build_op_proxy_request()_1]] - code - docker/config/hermes/workspace/jira_weekly_review.py
+- [[build_tenant_info_url()_1]] - code - docker/config/hermes/workspace/jira_weekly_review.py
+- [[build_weekly_summary()]] - code - docker/config/hermes/workspace/jira_weekly_review.py
+- [[datetime]] - code - docker/config/hermes/workspace/jira_weekly_review.py
+- [[extract_scrum_items()]] - code - docker/config/hermes/workspace/jira_weekly_review.py
+- [[fetch_op_secret()_1]] - code - docker/config/hermes/workspace/jira_weekly_review.py
+- [[jira_weekly_review.py]] - code - docker/config/hermes/workspace/jira_weekly_review.py
+- [[post_comment()]] - code - docker/config/hermes/workspace/jira_weekly_review.py
+- [[resolve_cloud_id()_1]] - code - docker/config/hermes/workspace/jira_weekly_review.py
+- [[run()_1]] - code - docker/config/hermes/workspace/jira_weekly_review.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -67,16 +50,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_Community 375]]
-- 7 edges to [[_COMMUNITY_Community 139]]
-- 5 edges to [[_COMMUNITY_Community 166]]
-- 2 edges to [[_COMMUNITY_Community 40]]
-- 2 edges to [[_COMMUNITY_Community 711]]
-- 1 edge to [[_COMMUNITY_Community 102]]
+- 4 edges to [[_COMMUNITY_Community 649]]
+- 1 edge to [[_COMMUNITY_Community 171]]
+- 1 edge to [[_COMMUNITY_Community 620]]
+- 1 edge to [[_COMMUNITY_Community 278]]
 
 ## Top bridge nodes
-- [[Task]] - degree 4, connects to 3 communities
-- [[ui_face.c]] - degree 14, connects to 2 communities
-- [[_touch_pressed()]] - degree 13, connects to 2 communities
-- [[ui_face_init()]] - degree 9, connects to 2 communities
-- [[_touch_start_only()]] - degree 7, connects to 2 communities
+- [[run()_1]] - degree 11, connects to 2 communities
+- [[jira_weekly_review.py]] - degree 17, connects to 1 community
+- [[resolve_cloud_id()_1]] - degree 5, connects to 1 community
+- [[build_basic_auth_header()_1]] - degree 4, connects to 1 community
+- [[build_op_proxy_request()_1]] - degree 4, connects to 1 community

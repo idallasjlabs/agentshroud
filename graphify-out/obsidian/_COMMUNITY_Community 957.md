@@ -1,21 +1,23 @@
 ---
 type: community
+cohesion: 0.25
 members: 8
 ---
 
 # Community 957
 
+**Cohesion:** 0.25 - loosely connected
 **Members:** 8 nodes
 
 ## Members
-- [[Input Requirements_17]] - document - docker/config/hermes/skills/i-oracle/SKILL.md
-- [[Oracle — Feedback Analyst_3]] - document - docker/config/hermes/skills/i-oracle/SKILL.md
-- [[Output Format_20]] - document - docker/config/hermes/skills/i-oracle/SKILL.md
-- [[Persona_13]] - document - docker/config/hermes/skills/i-oracle/SKILL.md
-- [[Quality Checklist_15]] - document - docker/config/hermes/skills/i-oracle/SKILL.md
-- [[Role_60]] - document - docker/config/hermes/skills/i-oracle/SKILL.md
-- [[SKILL_103]] - document - docker/config/hermes/skills/i-oracle/SKILL.md
-- [[System Prompt_13]] - document - docker/config/hermes/skills/i-oracle/SKILL.md
+- [[AgentShroud Hermes — System Identity_2]] - document - docker/config/openclaw/agents/hermes-soul.md
+- [[Capabilities_2]] - document - docker/config/openclaw/agents/hermes-soul.md
+- [[Core Behaviors_2]] - document - docker/config/openclaw/agents/hermes-soul.md
+- [[Owner_2]] - document - docker/config/openclaw/agents/hermes-soul.md
+- [[Remote Hosts (SSH via gateway)_2]] - document - docker/config/openclaw/agents/hermes-soul.md
+- [[Trademark Notice_2]] - document - docker/config/openclaw/agents/hermes-soul.md
+- [[Your Role_2]] - document - docker/config/openclaw/agents/hermes-soul.md
+- [[hermes-soul_1]] - document - docker/config/openclaw/agents/hermes-soul.md
 
 ## Live Query (requires Dataview plugin)
 

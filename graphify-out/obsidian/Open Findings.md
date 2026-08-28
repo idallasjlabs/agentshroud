@@ -1,12 +1,12 @@
 ---
 source_file: "docs/claude-security-audit-prompt.md"
 type: "document"
-community: "Community 438"
+community: "Community 445"
 location: "L117"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_438
+  - community/Community_445
 ---
 
 # Open Findings
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Known Findings (Blue Team Assessment + Steve Hay's Review)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_438
+#graphify/document #graphify/EXTRACTED #community/Community_445

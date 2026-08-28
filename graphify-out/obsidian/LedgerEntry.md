@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "Community 1"
+community: "RBAC & SOC Realtime"
 location: "L114"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_1
+  - community/RBAC__SOC_Realtime
 ---
 
 # LedgerEntry
@@ -19,4 +19,4 @@ tags:
 - [[LedgerEntry_1]] - `uses` [INFERRED]
 - [[LedgerQueryResponse_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_1
+#graphify/code #graphify/INFERRED #community/RBAC__SOC_Realtime

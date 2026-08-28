@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "rationale"
-community: "Community 52"
+community: "Community 67"
 location: "L374"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_52
+  - community/Community_67
 ---
 
 # Real-world regression (2026-07-29): uvloop (the active event loop under     uvic
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_tunnel_connect_falls_back_when_happy_eyeballs_unsupported()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_52
+#graphify/rationale #graphify/EXTRACTED #community/Community_67

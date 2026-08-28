@@ -1,29 +1,30 @@
 ---
 type: community
-members: 16
+cohesion: 0.15
+members: 15
 ---
 
 # Community 597
 
-**Members:** 16 nodes
+**Cohesion:** 0.15 - loosely connected
+**Members:** 15 nodes
 
 ## Members
-- [[AgentShroud Security Assessment — v0.8.0]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[CRITICAL-1 `history.env` committed to git with live Telegram credentials]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[CRITICAL-2 No request body size limits on API models]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[Critical Findings_1]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[Executive Summary_5]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[HIGH-1 ML injection classifier is entirely a stub]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[HIGH-2 Approval queue Telegram notifications unimplemented]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[HIGH-3 Credential generation in key rotation is a placeholder]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[HIGH-4 In-memory audit chain not persisted]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[High-Priority Gaps]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[Low-Priority  Informational]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[Medium-Priority Gaps]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[Remediation Status (Post-v0.8.0)]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[Scorecard Are We Achieving Our Goal]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[What's Working Well_1]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[security-assessment-v0.8.0]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
+- [[ADR-005-sha256-hash-chain-audit-integrity]] - document - docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md
+- [[ADR-005 SHA-256 Hash Chain Audit Integrity]] - concept - docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md
+- [[AuditEntry (data entity)]] - concept - docs/data/data-dictionary.md
+- [[Consequences_4]] - document - docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md
+- [[Context_4]] - document - docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md
+- [[Decision_6]] - document - docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md
+- [[Hash Chain Structure]] - document - docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md
+- [[Implementation Details]] - document - docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md
+- [[Ledger DB (SQLiteaiosqlite)]] - image - docs/diagrams/images/diagram-02-c4-container.svg
+- [[Negative Consequences_4]] - document - docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md
+- [[Positive Consequences_4]] - document - docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md
+- [[Status_4]] - document - docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md
+- [[audit_entries SQLite table]] - code - docs/data/schema-documentation.md
+- [[ledger.py (audit trail, SHA-256 hashing)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
+- [[mcp_audit_entries SQLite table]] - code - docs/data/schema-documentation.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,3 +32,12 @@ members: 16
 TABLE source_file, type FROM #community/Community_597
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 412]]
+- 1 edge to [[_COMMUNITY_Community 414]]
+- 1 edge to [[_COMMUNITY_Community 514]]
+
+## Top bridge nodes
+- [[ADR-005 SHA-256 Hash Chain Audit Integrity]] - degree 10, connects to 2 communities
+- [[Ledger DB (SQLiteaiosqlite)]] - degree 2, connects to 1 community

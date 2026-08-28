@@ -1,19 +1,21 @@
 ---
 type: community
+cohesion: 0.33
 members: 6
 ---
 
 # Community 1078
 
+**Cohesion:** 0.33 - loosely connected
 **Members:** 6 nodes
 
 ## Members
-- [[1. Always Specify Risk Level]] - document - .agents/skills/i-browser/SKILL.md
-- [[2. Use Allowlisting Liberally]] - document - .agents/skills/i-browser/SKILL.md
-- [[3. Take Screenshots for Audit Trail]] - document - .agents/skills/i-browser/SKILL.md
-- [[4. Handle CAPTCHAs Gracefully]] - document - .agents/skills/i-browser/SKILL.md
-- [[5. Never Extract Credentials]] - document - .agents/skills/i-browser/SKILL.md
-- [[Best Practices]] - document - .agents/skills/i-browser/SKILL.md
+- [[Browser Fetch Skill]] - document - skills/custom/browser-fetch/SKILL.md
+- [[Features_5]] - document - skills/custom/browser-fetch/SKILL.md
+- [[SKILL_192]] - document - skills/custom/browser-fetch/SKILL.md
+- [[Security_9]] - document - skills/custom/browser-fetch/SKILL.md
+- [[Usage_129]] - document - skills/custom/browser-fetch/SKILL.md
+- [[Use Cases_3]] - document - skills/custom/browser-fetch/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +23,3 @@ members: 6
 TABLE source_file, type FROM #community/Community_1078
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 794]]
-
-## Top bridge nodes
-- [[Best Practices]] - degree 6, connects to 1 community

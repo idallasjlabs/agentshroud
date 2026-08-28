@@ -1,20 +1,22 @@
 ---
 type: community
+cohesion: 0.48
 members: 7
 ---
 
 # Community 1034
 
+**Cohesion:** 0.48 - moderately connected
 **Members:** 7 nodes
 
 ## Members
-- [[Phase 1 — Foundation (Bot Container + Telegram, Gateway API + Ledger)]] - concept - docs/diagrams/images/diagram-23-roadmap-gantt.svg
-- [[Phase 2 — Security Core (HMAC Auth + PII Sanitizer, HTTP CONNECT Proxy, Approval Queue)]] - concept - docs/diagrams/images/diagram-23-roadmap-gantt.svg
-- [[Phase 3 — Credential Isolation (Op-Proxy, 1Password service account)]] - concept - docs/diagrams/images/diagram-23-roadmap-gantt.svg
-- [[Phase 4 — Channels (iMessage MCP, iCloud Email, MCP Proxy Inspector)]] - concept - docs/diagrams/images/diagram-23-roadmap-gantt.svg
-- [[Phase 5 — Stability (context limit fix, cascading retry + startup)]] - concept - docs/diagrams/images/diagram-23-roadmap-gantt.svg
-- [[Phase 6 — Observability (Prometheus + Grafana, log aggregation)]] - concept - docs/diagrams/images/diagram-23-roadmap-gantt.svg
-- [[Phase 7 — Enterprise Hardening (multi-tenant isolation, IEC 62443 policy docs, external contributor access)]] - concept - docs/diagrams/images/diagram-23-roadmap-gantt.svg
+- [[Branding Specialist Skill (i-bs, external)]] - concept - .agents/skills/i-bs/SKILL.md
+- [[Technical Illustrator (TI)_2]] - document - .agents/skills/i-ti/SKILL.md
+- [[Technical Illustrator README]] - document - .agents/skills/i-ti/README.md
+- [[Technical Writer (TW)_3]] - document - .agents/skills/i-tw/SKILL.md
+- [[Technical Writer README]] - document - .agents/skills/i-tw/README.md
+- [[UI Expert (UI)]] - document - .agents/skills/i-ui/SKILL.md
+- [[UX Skill (i-ux, external)]] - concept - .agents/skills/i-ux/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,3 +24,9 @@ members: 7
 TABLE source_file, type FROM #community/Community_1034
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 231]]
+
+## Top bridge nodes
+- [[Technical Illustrator (TI)_2]] - degree 6, connects to 1 community

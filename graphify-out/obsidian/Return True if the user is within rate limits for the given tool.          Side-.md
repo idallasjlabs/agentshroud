@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "rationale"
-community: "Community 75"
+community: "Progressive Trust"
 location: "L499"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_75
+  - community/Progressive_Trust
 ---
 
 # Return True if the user is within rate limits for the given tool.          Side-
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.check_tool_rate_limit()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_75
+#graphify/rationale #graphify/EXTRACTED #community/Progressive_Trust

@@ -1,32 +1,34 @@
 ---
 type: community
+cohesion: 0.11
 members: 19
 ---
 
 # Community 481
 
+**Cohesion:** 0.11 - loosely connected
 **Members:** 19 nodes
 
 ## Members
-- [[.score_output()]] - code - gateway/security/subagent_governance.py
-- [[.test_api_key_patterns()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_clean_text_no_patterns()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_credit_card_pattern()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_email_pattern()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_exfil_base64()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_exfil_hex()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_exfil_webhook()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_injection_role()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_injection_system_prompt()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_ssn_pattern()]] - code - gateway/tests/test_subagent_governance.py
-- [[Check text for PII patterns. Returns list of pattern names found.]] - rationale - gateway/security/subagent_governance.py
-- [[Check text for data exfiltration patterns.]] - rationale - gateway/security/subagent_governance.py
-- [[Check text for prompt injection patterns.]] - rationale - gateway/security/subagent_governance.py
-- [[Score a subagent's output for safety and quality.          In a full deployment,]] - rationale - gateway/security/subagent_governance.py
-- [[TestPatternDetection]] - code - gateway/tests/test_subagent_governance.py
-- [[_check_exfil_patterns()]] - code - gateway/security/subagent_governance.py
-- [[_check_injection_patterns()]] - code - gateway/security/subagent_governance.py
-- [[_check_pii_patterns()]] - code - gateway/security/subagent_governance.py
+- [[1. Purpose and Scope]] - document - docs/requirements/system-requirements.md
+- [[1.1 Purpose]] - document - docs/requirements/system-requirements.md
+- [[1.2 Scope]] - document - docs/requirements/system-requirements.md
+- [[1.3 Intended Audience]] - document - docs/requirements/system-requirements.md
+- [[2. Functional Requirements]] - document - docs/requirements/system-requirements.md
+- [[2.1 Core Security Modules]] - document - docs/requirements/system-requirements.md
+- [[3. Non-Functional Requirements]] - document - docs/requirements/system-requirements.md
+- [[4. Constraints and Assumptions]] - document - docs/requirements/system-requirements.md
+- [[4.1 Technical Constraints]] - document - docs/requirements/system-requirements.md
+- [[4.2 Operational Constraints]] - document - docs/requirements/system-requirements.md
+- [[4.3 Assumptions]] - document - docs/requirements/system-requirements.md
+- [[5. Compliance Requirements]] - document - docs/requirements/system-requirements.md
+- [[5.1 Security Standards]] - document - docs/requirements/system-requirements.md
+- [[5.2 Audit Requirements]] - document - docs/requirements/system-requirements.md
+- [[6. Risk Assessment]] - document - docs/requirements/system-requirements.md
+- [[6.1 Security Risks]] - document - docs/requirements/system-requirements.md
+- [[6.2 Operational Risks]] - document - docs/requirements/system-requirements.md
+- [[AgentShroud v0.9.0]] - document - docs/requirements/system-requirements.md
+- [[System Requirements Specification (SRS)]] - document - docs/requirements/system-requirements.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,16 +38,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_Community 532]]
-- 5 edges to [[_COMMUNITY_Community 1135]]
-- 3 edges to [[_COMMUNITY_Community 461]]
-- 1 edge to [[_COMMUNITY_Community 78]]
-- 1 edge to [[_COMMUNITY_Community 934]]
-- 1 edge to [[_COMMUNITY_Community 994]]
+- 1 edge to [[_COMMUNITY_Community 92]]
 
 ## Top bridge nodes
-- [[TestPatternDetection]] - degree 18, connects to 6 communities
-- [[_check_pii_patterns()]] - degree 9, connects to 2 communities
-- [[_check_exfil_patterns()]] - degree 8, connects to 2 communities
-- [[.score_output()]] - degree 7, connects to 2 communities
-- [[_check_injection_patterns()]] - degree 7, connects to 2 communities
+- [[System Requirements Specification (SRS)]] - degree 2, connects to 1 community

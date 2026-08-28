@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "Community 14"
+community: "Security Audit & Drift Detection"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_14
+  - community/Security_Audit__Drift_Detection
 ---
 
 # gateway/security/key_vault.py (KeyVault)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_security_audit.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_14
+#graphify/code #graphify/EXTRACTED #community/Security_Audit__Drift_Detection

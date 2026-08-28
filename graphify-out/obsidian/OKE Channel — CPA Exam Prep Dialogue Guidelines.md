@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-socrates/SKILL.md"
 type: "document"
-community: "Community 608"
+community: "Community 1291"
 location: "L133"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_608
+  - community/Community_1291
 ---
 
 # OKE Channel — CPA Exam Prep Dialogue Guidelines
@@ -15,7 +15,6 @@ tags:
 - [[Dialogue Adaptations]] - `contains` [EXTRACTED]
 - [[Episode Closing (Mandatory for OKE)]] - `contains` [EXTRACTED]
 - [[Expert Persona]] - `contains` [EXTRACTED]
-- [[Socrates — Dialogue Architect_1]] - `contains` [EXTRACTED]
-- [[Socrates — Dialogue Architect_7]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_608
+#graphify/document #graphify/EXTRACTED #community/Community_1291

@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 1.00
 members: 2
 ---
 
 # Community 1488
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[installapiruntimes endpoint]] - concept - gateway/web/templates/installer.html
-- [[loadRuntimes()]] - code - gateway/web/templates/installer.html
+- [[LogSanitizer PII-Scrubbing Log Filter]] - code - gateway/security/log_sanitizer.py
+- [[Test Log Sanitizer PII Scrubbing]] - code - gateway/tests/test_log_sanitizer.py
 
 ## Live Query (requires Dataview plugin)
 

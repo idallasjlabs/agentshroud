@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Community 374"
+community: "Community 197"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_374
+  - community/Community_197
 ---
 
 # app_state
@@ -16,4 +16,4 @@ tags:
 - [[test_manage_soc_report_endpoint()]] - `shares_data_with` [EXTRACTED]
 - [[test_soc_scanners_recent_returns_history()]] - `shares_data_with` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_374
+#graphify/code #graphify/EXTRACTED #community/Community_197

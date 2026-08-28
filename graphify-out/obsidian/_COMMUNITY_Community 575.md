@@ -1,29 +1,31 @@
 ---
 type: community
+cohesion: 0.12
 members: 16
 ---
 
 # Community 575
 
+**Cohesion:** 0.12 - loosely connected
 **Members:** 16 nodes
 
 ## Members
-- [[App + window management]] - document - skills/openclaw/peekaboo/SKILL.md
-- [[Capture screenshots + analyze]] - document - skills/openclaw/peekaboo/SKILL.md
-- [[Common capture parameters]] - document - skills/openclaw/peekaboo/SKILL.md
-- [[Common motiontyping parameters]] - document - skills/openclaw/peekaboo/SKILL.md
-- [[Common targeting parameters (most interaction commands)]] - document - skills/openclaw/peekaboo/SKILL.md
-- [[Examples]] - document - skills/openclaw/peekaboo/SKILL.md
-- [[Features (all CLI capabilities, excluding agentMCP)]] - document - skills/openclaw/peekaboo/SKILL.md
-- [[Keyboard input]] - document - skills/openclaw/peekaboo/SKILL.md
-- [[Live capture (motion-aware)]] - document - skills/openclaw/peekaboo/SKILL.md
-- [[Menus, menubar, dock]] - document - skills/openclaw/peekaboo/SKILL.md
-- [[Mouse + gesture input]] - document - skills/openclaw/peekaboo/SKILL.md
-- [[Peekaboo]] - document - skills/openclaw/peekaboo/SKILL.md
-- [[Quickstart (happy path)]] - document - skills/openclaw/peekaboo/SKILL.md
-- [[SKILL_225]] - document - skills/openclaw/peekaboo/SKILL.md
-- [[See - click - type (most reliable flow)]] - document - skills/openclaw/peekaboo/SKILL.md
-- [[Target by window id]] - document - skills/openclaw/peekaboo/SKILL.md
+- [[05-credential-isolation]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Constraints_8]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Evidence_5]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Problem_8]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Remediation_6]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Remove secret mounts from agent container and implement transparent credential injection]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Severity_8]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Step 1 Audit current secret mounts]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Step 2 Move all secrets to gateway-only Docker Secrets]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Step 3 Remove credential environment variables from agent container]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Step 4 Implement transparent credential injection in the gateway]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Step 5 Route all outbound requests through the gateway egress proxy]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Step 6 Handle 1Password specifically]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Step 7 Add credential leak detection to egress filtering]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Step 8 Verify no credentials remain in agent container]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Verification_7]] - document - docs/planning/redteam/05-credential-isolation.md
 
 ## Live Query (requires Dataview plugin)
 

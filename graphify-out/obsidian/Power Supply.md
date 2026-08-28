@@ -1,18 +1,17 @@
 ---
 source_file: "docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md"
 type: "document"
-community: "Community 1052"
+community: "Community 1054"
 location: "L1655"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1052
+  - community/Community_1054
 ---
 
 # Power Supply
 
 ## Connections
 - [[Important Notes]] - `contains` [EXTRACTED]
-- [[Important Notes_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1052
+#graphify/document #graphify/EXTRACTED #community/Community_1054

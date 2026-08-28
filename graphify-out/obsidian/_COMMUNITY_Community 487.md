@@ -1,31 +1,33 @@
 ---
 type: community
+cohesion: 0.11
 members: 18
 ---
 
 # Community 487
 
+**Cohesion:** 0.11 - loosely connected
 **Members:** 18 nodes
 
 ## Members
-- [[.test_body_agent_id_used_without_header()]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[.test_clean_result_accepted()]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[.test_header_user_id_overrides_body_agent_id()_1]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[.test_invalid_header_identity_rejected()_1]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[.test_owner_body_identity_rejected_without_header()_1]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[.test_result_missing_server_name_rejected()]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[.test_result_requires_auth()]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[.test_result_returns_processing_time()]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[.test_result_with_null_content()]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[.test_result_with_pii_is_audited_not_blocked()]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[A result containing PII is audited and redacted — never blocked (results are nev]] - rationale - gateway/tests/test_mcp_result_endpoint.py
-- [[A result with no threats should be accepted and audited (200).]] - rationale - gateway/tests/test_mcp_result_endpoint.py
-- [[Body-only owner identity must be rejected to prevent impersonation._1]] - rationale - gateway/tests/test_mcp_result_endpoint.py
-- [[Null content is handled gracefully.]] - rationale - gateway/tests/test_mcp_result_endpoint.py
-- [[Request missing required server_name is rejected with 422.]] - rationale - gateway/tests/test_mcp_result_endpoint.py
-- [[Response includes processing_time_ms.]] - rationale - gateway/tests/test_mcp_result_endpoint.py
-- [[TestMCPResultEndpoint]] - code - gateway/tests/test_mcp_result_endpoint.py
-- [[Unauthenticated request is rejected.]] - rationale - gateway/tests/test_mcp_result_endpoint.py
+- [[Adversary Model]] - document - .agents/skills/i-sec-offense/SKILL.md
+- [[AgentShroud Red Team Adversarial Tester]] - document - .agents/skills/i-sec-offense/SKILL.md
+- [[Attack Phases]] - document - .agents/skills/i-sec-offense/SKILL.md
+- [[Attack Techniques Reference]] - document - .agents/skills/i-sec-offense/SKILL.md
+- [[Coverage Requirements]] - document - .agents/skills/i-sec-offense/SKILL.md
+- [[Critical Rules_2]] - document - .agents/skills/i-sec-offense/SKILL.md
+- [[Infrastructure]] - document - .agents/skills/i-sec-offense/SKILL.md
+- [[Key Principle]] - document - .agents/skills/i-sec-offense/SKILL.md
+- [[Output_1]] - document - .agents/skills/i-sec-offense/SKILL.md
+- [[Phase 1 Reconnaissance & Trust Probing]] - document - .agents/skills/i-sec-offense/SKILL.md
+- [[Phase 2 Prompt Injection]] - document - .agents/skills/i-sec-offense/SKILL.md
+- [[Phase 3 Indirect Injection]] - document - .agents/skills/i-sec-offense/SKILL.md
+- [[Phase 4 Data Exfiltration]] - document - .agents/skills/i-sec-offense/SKILL.md
+- [[Phase 5 Exploitation Chains]] - document - .agents/skills/i-sec-offense/SKILL.md
+- [[Phase 6 Detection Validation]] - document - .agents/skills/i-sec-offense/SKILL.md
+- [[SKILL_52]] - document - .agents/skills/i-sec-offense/SKILL.md
+- [[Test Structure]] - document - .agents/skills/i-sec-offense/SKILL.md
+- [[Writing Exploit Tests]] - document - .agents/skills/i-sec-offense/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,11 +35,3 @@ members: 18
 TABLE source_file, type FROM #community/Community_487
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 5 edges to [[_COMMUNITY_Community 1]]
-- 1 edge to [[_COMMUNITY_Community 24]]
-- 1 edge to [[_COMMUNITY_Community 106]]
-
-## Top bridge nodes
-- [[TestMCPResultEndpoint]] - degree 17, connects to 3 communities

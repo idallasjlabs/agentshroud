@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/07-team-planning.md"
 type: "concept"
-community: "Community 745"
+community: "Community 442"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_745
+  - community/Community_442
 ---
 
 # Agile Team Diagram — Structure & Roles
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[07-team-planning]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_745
+#graphify/concept #graphify/EXTRACTED #community/Community_442

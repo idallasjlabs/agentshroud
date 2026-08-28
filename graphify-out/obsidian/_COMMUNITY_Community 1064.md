@@ -1,20 +1,22 @@
 ---
 type: community
+cohesion: 0.29
 members: 7
 ---
 
 # Community 1064
 
+**Cohesion:** 0.29 - loosely connected
 **Members:** 7 nodes
 
 ## Members
-- [[11. Competitive Security Comparison Matrix]] - document - docs/papers/agentshroud-whitepaper.md
-- [[11.1 Complete 26-Module Security Matrix]] - document - docs/papers/agentshroud-whitepaper.md
-- [[11.2 Unique AgentShroud Modules (No Competitor Implementation)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[11.3 Competitor Analysis Details]] - document - docs/papers/agentshroud-whitepaper.md
-- [[11.4 Security Coverage Gap Analysis]] - document - docs/papers/agentshroud-whitepaper.md
-- [[11.5 Security Score Evolution]] - document - docs/papers/agentshroud-whitepaper.md
-- [[11.6 Industry Implications]] - document - docs/papers/agentshroud-whitepaper.md
+- [[DELIVERABLE 3 — v0.8.0 Implementation Items]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Item 1 Streaming Response Outbound Filtering — DONE (v0.8.0)]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Item 2 Wire MemoryIntegrityLifecycle at Startup — DONE (v0.8.0)]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Item 3 LLM Proxy User Identity Propagation — DONE (v0.8.0)]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Item 4 Adversarial Prompt Injection Test Suite — DONE (v0.8.0)]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Item 5 Audit Chain Guaranteed Persistence for BLOCK Events — DONE (v0.8.0)]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Item 6 Update ADR-002 to Reflect Enforce-by-Default — DONE (v0.8.0)]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,7 +26,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 401]]
+- 1 edge to [[_COMMUNITY_Community 999]]
 
 ## Top bridge nodes
-- [[11. Competitive Security Comparison Matrix]] - degree 7, connects to 1 community
+- [[DELIVERABLE 3 — v0.8.0 Implementation Items]] - degree 7, connects to 1 community

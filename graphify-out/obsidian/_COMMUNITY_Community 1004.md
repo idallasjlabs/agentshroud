@@ -1,20 +1,22 @@
 ---
 type: community
+cohesion: 0.29
 members: 7
 ---
 
 # Community 1004
 
+**Cohesion:** 0.29 - loosely connected
 **Members:** 7 nodes
 
 ## Members
-- [[CPA Curriculum Frontmatter Addition]] - document - .agents/skills/i-atlas/SKILL.md
-- [[Coverage Types]] - document - .agents/skills/i-atlas/SKILL.md
-- [[Episode Closing]] - document - .agents/skills/i-atlas/SKILL.md
-- [[Exam Weight Integration]] - document - .agents/skills/i-atlas/SKILL.md
-- [[Gleim Unit Mapping]] - document - .agents/skills/i-atlas/SKILL.md
-- [[Mandatory Acronym Expansion]] - document - .agents/skills/i-atlas/SKILL.md
-- [[OKE Channel — CPA Exam Context]] - document - .agents/skills/i-atlas/SKILL.md
+- [[Container Integration]] - document - docs/vault/05 - Dependencies/playwright.md
+- [[Playwright]] - document - docs/vault/05 - Dependencies/playwright.md
+- [[Purpose_190]] - document - docs/vault/05 - Dependencies/playwright.md
+- [[Related Notes_45]] - document - docs/vault/05 - Dependencies/playwright.md
+- [[Security Controls_2]] - document - docs/vault/05 - Dependencies/playwright.md
+- [[Volume]] - document - docs/vault/05 - Dependencies/playwright.md
+- [[playwright_1]] - document - docs/vault/05 - Dependencies/playwright.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,7 +26,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 658]]
+- 1 edge to [[_COMMUNITY_Community 243]]
+- 1 edge to [[_COMMUNITY_Community 339]]
 
 ## Top bridge nodes
-- [[OKE Channel — CPA Exam Context]] - degree 8, connects to 1 community
+- [[playwright_1]] - degree 3, connects to 2 communities

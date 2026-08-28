@@ -1,37 +1,39 @@
 ---
 type: community
+cohesion: 0.08
 members: 24
 ---
 
 # Community 364
 
+**Cohesion:** 0.08 - loosely connected
 **Members:** 24 nodes
 
 ## Members
-- [[.setup_method()_23]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_build()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_build_with_args()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_compose_down()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_compose_up()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_exec()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_health_check_fail()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_health_check_ok()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_inspect()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_logs()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_network_create()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_network_create_internal()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_pause_unpause()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_ps()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_ps_empty()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_pull()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_push()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_rm()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_rm_force()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_run_basic()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_run_with_options()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_stop()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_volume_create()]] - code - gateway/tests/test_runtime_engines.py
-- [[TestDockerEngine]] - code - gateway/tests/test_runtime_engines.py
+- [[1. ContextGuard NEVER BLOCKS (Severity HIGH)]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
+- [[1. Least Privilege]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[2. Defense in Depth]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[2. Regex-Only Detection (Severity MEDIUM-HIGH)]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
+- [[2. Simple Rules Are Secure]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[3. Bot's Superior Reasoning]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[3. Explicit Over Implicit]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[3. No Cross-Turn Analysis (Severity HIGH)]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
+- [[4. Fail Secure]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[4. No Semantic Understanding (Severity MEDIUM)]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
+- [[Core Security Principles_4]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[Critical Findings]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
+- [[Current Defenses (3 Layers)]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
+- [[Layer 1 PromptGuard (11 regex patterns) — P0, ACTIVE]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
+- [[Layer 2 ContextGuard (23 patterns + session tracking) — P1, ACTIVE]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
+- [[Layer 3 ToolResultInjectionScanner (12 patterns) — P1, ACTIVE]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
+- [[Layer 4 PromptProtection (outbound) — P2, ACTIVE]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
+- [[P0 — Ship Blockers]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
+- [[P1 — High Value]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
+- [[Prompt Injection Assessment — AgentShroud v0.7.0]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
+- [[Threat Matrix What Gets Through]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
+- [[prompt-injection-assessment-2026-02-25]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
+- [[v0.8.0 Recommendations (Priority Order)]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
+- [[🎓 Key Principles]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -41,12 +43,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 354]]
-- 2 edges to [[_COMMUNITY_Community 197]]
-- 1 edge to [[_COMMUNITY_Community 358]]
-- 1 edge to [[_COMMUNITY_Community 647]]
-- 1 edge to [[_COMMUNITY_Community 220]]
+- 1 edge to [[_COMMUNITY_Community 585]]
+- 1 edge to [[_COMMUNITY_Community 426]]
 
 ## Top bridge nodes
-- [[TestDockerEngine]] - degree 29, connects to 5 communities
-- [[.setup_method()_23]] - degree 2, connects to 1 community
+- [[Core Security Principles_4]] - degree 5, connects to 1 community
+- [[🎓 Key Principles]] - degree 4, connects to 1 community

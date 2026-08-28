@@ -1,16 +1,19 @@
 ---
 type: community
-members: 3
+cohesion: 0.50
+members: 4
 ---
 
 # Community 1371
 
-**Members:** 3 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[Claude Code (PRIMARY agent)]] - concept - docs/architecture/agentic-os.md
-- [[Codex CLI (TERTIARY agent)]] - concept - docs/architecture/agentic-os.md
-- [[Gemini CLI (SECONDARY agent)]] - concept - docs/architecture/agentic-os.md
+- [[DELIVERABLE 4 — v1.0 Roadmap]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Phase 1 Foundation Hardening (v0.8.0, completed)]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Phase 2 Detection Enhancement (v0.9.3–v0.9.5, Weeks 5-10)]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Phase 3 Operational Maturity (v0.9.6–v1.0.0, Weeks 11-16)]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -18,3 +21,9 @@ members: 3
 TABLE source_file, type FROM #community/Community_1371
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 999]]
+
+## Top bridge nodes
+- [[DELIVERABLE 4 — v1.0 Roadmap]] - degree 4, connects to 1 community

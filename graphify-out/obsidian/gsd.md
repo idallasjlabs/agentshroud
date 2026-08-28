@@ -1,12 +1,12 @@
 ---
 source_file: ".github/ISSUE_TEMPLATE/gsd.md"
 type: "document"
-community: "Community 435"
+community: "Community 441"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_435
+  - community/Community_441
 ---
 
 # gsd.md
@@ -20,4 +20,4 @@ tags:
 - [[Problem]] - `contains` [EXTRACTED]
 - [[apply-patches.js]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_435
+#graphify/document #graphify/EXTRACTED #community/Community_441

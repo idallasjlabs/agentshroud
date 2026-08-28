@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Community 1348"
+community: "Adversarial Injection Guards"
 location: "L7753"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1348
+  - community/Adversarial_Injection_Guards
 ---
 
 # Build a GroupWorkspaceManager from current teams/RBAC config.          Returns a
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._group_workspace_manager()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1348
+#graphify/rationale #graphify/EXTRACTED #community/Adversarial_Injection_Guards

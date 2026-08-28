@@ -1,34 +1,36 @@
 ---
 type: community
+cohesion: 0.10
 members: 21
 ---
 
 # Community 422
 
+**Cohesion:** 0.10 - loosely connected
 **Members:** 21 nodes
 
 ## Members
-- [[Blocked Command Patterns (via `_contains_env_access_patterns`)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[Blocked Commands]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[Blocked Paths]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[Environment Variables_13]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[EnvironmentGuard.check_command_execution(command, agent_id)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[EnvironmentGuard.check_file_access(file_path, agent_id)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[EnvironmentGuard.monitor_environment_access(agent_id)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[EnvironmentGuard.scrub_command_output(output, command)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[Function Details_38]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[Global Singleton]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[Key Classes  Functions_41]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[Mode Enforce vs Monitor_8]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[Purpose_159]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[Related_45]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[Responsibilities_43]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[Threat Model_14]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[Tracked Credential Variable Names (subset)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[check_command(cmd)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[env_guard.py_2]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[env_guard.py_1]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[scrub_output(text)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[1. Clone the Repository_2]] - document - docs/operations/raspberry-pi.md
+- [[2. Install Docker_1]] - document - docs/operations/raspberry-pi.md
+- [[3. Set Up Secrets_2]] - document - docs/operations/raspberry-pi.md
+- [[4. Configure AgentShroud_2]] - document - docs/operations/raspberry-pi.md
+- [[5. Build and Start_2]] - document - docs/operations/raspberry-pi.md
+- [[6. Verify_2]] - document - docs/operations/raspberry-pi.md
+- [[ARM64 Builds]] - document - docs/operations/raspberry-pi.md
+- [[Container Won't Start_2]] - document - docs/operations/raspberry-pi.md
+- [[Deploying AgentShroud on Raspberry Pi (aarch64)]] - document - docs/operations/raspberry-pi.md
+- [[Fresh Install_2]] - document - docs/operations/raspberry-pi.md
+- [[From Git (tracking main)]] - document - docs/operations/raspberry-pi.md
+- [[From a Tagged Release]] - document - docs/operations/raspberry-pi.md
+- [[Memory and Swap]] - document - docs/operations/raspberry-pi.md
+- [[Out-of-Memory (OOM) Kills]] - document - docs/operations/raspberry-pi.md
+- [[Pi-Specific Notes]] - document - docs/operations/raspberry-pi.md
+- [[Prerequisites_6]] - document - docs/operations/raspberry-pi.md
+- [[Slow Builds]] - document - docs/operations/raspberry-pi.md
+- [[Tailscale Remote Access (Optional)]] - document - docs/operations/raspberry-pi.md
+- [[Troubleshooting_18]] - document - docs/operations/raspberry-pi.md
+- [[Updating to Latest Release_2]] - document - docs/operations/raspberry-pi.md
+- [[seccomp on ARM64]] - document - docs/operations/raspberry-pi.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,3 +38,9 @@ members: 21
 TABLE source_file, type FROM #community/Community_422
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 284]]
+
+## Top bridge nodes
+- [[Deploying AgentShroud on Raspberry Pi (aarch64)]] - degree 7, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/user-guide.md"
 type: "document"
-community: "Community 306"
+community: "Community 307"
 location: "L78"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_306
+  - community/Community_307
 ---
 
 # Dashboard Overview
@@ -16,4 +16,4 @@ tags:
 - [[Reading the Audit Trail]] - `contains` [EXTRACTED]
 - [[What You'll See]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_306
+#graphify/document #graphify/EXTRACTED #community/Community_307

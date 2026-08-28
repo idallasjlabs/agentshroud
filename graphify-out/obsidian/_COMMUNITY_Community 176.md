@@ -1,51 +1,53 @@
 ---
 type: community
+cohesion: 0.10
 members: 38
 ---
 
 # Community 176
 
+**Cohesion:** 0.10 - loosely connected
 **Members:** 38 nodes
 
 ## Members
-- [[.__init__()_69]] - code - gateway/security/data_exfil_volume_guard.py
-- [[._size()]] - code - gateway/security/data_exfil_volume_guard.py
-- [[.get_stats()_15]] - code - gateway/security/data_exfil_volume_guard.py
-- [[.observe()]] - code - gateway/security/data_exfil_volume_guard.py
-- [[.reset_session()]] - code - gateway/security/data_exfil_volume_guard.py
-- [[A blocked (undelivered) response must not consume the session budget,     otherw]] - rationale - gateway/tests/test_data_exfil_volume_guard.py
-- [[Clear cumulative + baseline state for a session (e.g. on new session).]] - rationale - gateway/security/data_exfil_volume_guard.py
-- [[Configuration for class`DataExfilVolumeGuard`.]] - rationale - gateway/security/data_exfil_volume_guard.py
-- [[Cumulative + adaptive outbound-volume anomaly detector, per session.]] - rationale - gateway/security/data_exfil_volume_guard.py
-- [[DataExfilVolumeConfig]] - code - gateway/security/data_exfil_volume_guard.py
-- [[DataExfilVolumeGuard]] - code - gateway/security/data_exfil_volume_guard.py
-- [[If the guard raises, non-owner outbound is blocked (fail-closed).]] - rationale - gateway/tests/test_data_exfil_volume_guard.py
-- [[Observe one outbound response and decide allowblock.          A blocked respons]] - rationale - gateway/security/data_exfil_volume_guard.py
-- [[Structured verdict returned by meth`DataExfilVolumeGuard.observe`.]] - rationale - gateway/security/data_exfil_volume_guard.py
-- [[The rolling baseline deque is trimmed to adaptive_window; old samples drop.]] - rationale - gateway/tests/test_data_exfil_volume_guard.py
-- [[Tiny baselines must not turn ordinary small growth into spikes.]] - rationale - gateway/tests/test_data_exfil_volume_guard.py
-- [[VolumeVerdict]] - code - gateway/security/data_exfil_volume_guard.py
-- [[_SessionState]] - code - gateway/security/data_exfil_volume_guard.py
-- [[_make_pipeline()_1]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[data_exfil_volume_guard.py]] - code - gateway/security/data_exfil_volume_guard.py
-- [[test_accepts_str_and_bytes()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_adaptive_floor_prevents_noise_blocks()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_adaptive_needs_min_samples()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_adaptive_spike_blocks()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_adaptive_window_bounds_baseline_memory()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_blocked_response_does_not_add_to_cumulative()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_cumulative_cap_blocks_when_crossed()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_cumulative_is_per_session()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_data_exfil_volume_guard.py]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_disabled_never_blocks()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_get_stats()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_pipeline_allows_small_response()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_pipeline_blocks_and_downstream_not_reached()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_pipeline_fail_closed_for_non_owner_on_error()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_pipeline_no_guard_is_unchanged()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_reset_session_clears_state()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_single_response_over_cap_blocks()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_under_single_cap_allows()]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[FR7 Resource Availability]] - concept - docs/compliance/iec-62443-matrix.md
+- [[OpenClaw message content is a list of blocks (texttool_usetool_result...);]] - rationale - scripts/export-bot-conversations.py
+- [[Parse --since into a UTC-aware datetime. Accepts 'YYYY-MM-DD' or     'YYYY-MM-DD]] - rationale - scripts/export-bot-conversations.py
+- [[Parse --since into a UTC-aware datetime. Accepts 'YYYY-MM-DD' or     'YYYY-MM-DD_1]] - rationale - scripts/export-email-reports.py
+- [[Parse --since into a UTC-aware datetime. Accepts 'YYYY-MM-DD' or     'YYYY-MM-DD_2]] - rationale - scripts/export-telegram-history.py
+- [[Path_42]] - code - scripts/export-bot-conversations.py
+- [[Path_43]] - code - scripts/export-email-reports.py
+- [[Path_44]] - code - scripts/export-telegram-history.py
+- [[Read a file out of a container via `exec cat` rather than `docker cp` —     on t]] - rationale - scripts/export-bot-conversations.py
+- [[Why exec cat replaced docker cp for reading container files]] - rationale - scripts/export-bot-conversations.py
+- [[Why report .md source files stand in for a missing sent-mail ledger]] - rationale - scripts/export-email-reports.py
+- [[_docker_read_file()]] - code - scripts/export-bot-conversations.py
+- [[_extract_text()]] - code - scripts/export-bot-conversations.py
+- [[_list_report_files()]] - code - scripts/export-email-reports.py
+- [[_parse_since()]] - code - scripts/export-bot-conversations.py
+- [[_parse_since()_1]] - code - scripts/export-email-reports.py
+- [[_parse_since()_2]] - code - scripts/export-telegram-history.py
+- [[_report_date()]] - code - scripts/export-email-reports.py
+- [[_require_env()]] - code - scripts/export-telegram-history.py
+- [[_serialize()]] - code - scripts/export-telegram-history.py
+- [[agentshroud-openclaw bot container]] - concept - scripts/backup-bot-memory.sh
+- [[backup-bot-memory.sh]] - code - scripts/backup-bot-memory.sh
+- [[backup-bot-memory.sh script]] - code - scripts/backup-bot-memory.sh
+- [[datetime_6]] - code - scripts/export-bot-conversations.py
+- [[datetime_7]] - code - scripts/export-email-reports.py
+- [[datetime_8]] - code - scripts/export-telegram-history.py
+- [[disaster-recovery-backup.sh]] - code - scripts/disaster-recovery-backup.sh
+- [[disaster-recovery-backup.sh script]] - code - scripts/disaster-recovery-backup.sh
+- [[export()]] - code - scripts/export-telegram-history.py
+- [[export-bot-conversations.py]] - code - scripts/export-bot-conversations.py
+- [[export-email-reports.py]] - code - scripts/export-email-reports.py
+- [[export-telegram-history.py]] - code - scripts/export-telegram-history.py
+- [[export_bot()]] - code - scripts/export-email-reports.py
+- [[export_hermes()]] - code - scripts/export-bot-conversations.py
+- [[export_openclaw()]] - code - scripts/export-bot-conversations.py
+- [[main()_16]] - code - scripts/export-bot-conversations.py
+- [[main()_17]] - code - scripts/export-email-reports.py
+- [[main()_18]] - code - scripts/export-telegram-history.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -55,15 +57,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 6]]
-- 3 edges to [[_COMMUNITY_Community 22]]
-- 3 edges to [[_COMMUNITY_Community 109]]
-- 1 edge to [[_COMMUNITY_Community 251]]
-- 1 edge to [[_COMMUNITY_Community 282]]
+- 1 edge to [[_COMMUNITY_Community 347]]
+- 1 edge to [[_COMMUNITY_Community 137]]
 
 ## Top bridge nodes
-- [[DataExfilVolumeGuard]] - degree 26, connects to 2 communities
-- [[_make_pipeline()_1]] - degree 6, connects to 2 communities
-- [[test_pipeline_no_guard_is_unchanged()]] - degree 3, connects to 2 communities
-- [[DataExfilVolumeConfig]] - degree 21, connects to 1 community
-- [[test_data_exfil_volume_guard.py]] - degree 21, connects to 1 community
+- [[FR7 Resource Availability]] - degree 3, connects to 2 communities

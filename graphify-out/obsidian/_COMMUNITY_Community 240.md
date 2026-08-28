@@ -1,44 +1,47 @@
 ---
 type: community
-members: 31
+cohesion: 0.06
+members: 32
 ---
 
 # Community 240
 
-**Members:** 31 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 32 nodes
 
 ## Members
-- [[Alert Prioritization Display]] - document - .agents/skills/i-ux/SKILL.md
-- [[Anti-Patterns to Flag_7]] - document - .agents/skills/i-ux/SKILL.md
-- [[CLI  TUI UX]] - document - .agents/skills/i-ux/SKILL.md
-- [[CLI UX Rules]] - document - .agents/skills/i-ux/SKILL.md
-- [[Confirmation Patterns]] - document - .agents/skills/i-ux/SKILL.md
-- [[Content Organization Patterns]] - document - .agents/skills/i-ux/SKILL.md
-- [[Contextual Actions]] - document - .agents/skills/i-ux/SKILL.md
-- [[Core Discipline Discover → Define → Design → Validate]] - document - .agents/skills/i-ux/SKILL.md
-- [[Dashboard UX]] - document - .agents/skills/i-ux/SKILL.md
-- [[Data Density Rules]] - document - .agents/skills/i-ux/SKILL.md
-- [[Dependencies_5]] - document - .agents/skills/i-ux/SKILL.md
-- [[Drill-Down Pattern]] - document - .agents/skills/i-ux/SKILL.md
-- [[Error Message Patterns]] - document - .agents/skills/i-ux/SKILL.md
-- [[Feedback Loops (response time standards)]] - document - .agents/skills/i-ux/SKILL.md
-- [[Field Design Rules]] - document - .agents/skills/i-ux/SKILL.md
-- [[Form UX]] - document - .agents/skills/i-ux/SKILL.md
-- [[Generic Task Flow Template]] - document - .agents/skills/i-ux/SKILL.md
-- [[Information Architecture]] - document - .agents/skills/i-ux/SKILL.md
-- [[Interaction Design Patterns]] - document - .agents/skills/i-ux/SKILL.md
-- [[Navigation Hierarchy Rules]] - document - .agents/skills/i-ux/SKILL.md
-- [[Nielsen's 10 Heuristics — GSDE&G Application]] - document - .agents/skills/i-ux/SKILL.md
-- [[Progressive Disclosure]] - document - .agents/skills/i-ux/SKILL.md
-- [[Progressive Form Pattern (for multi-step workflows)]] - document - .agents/skills/i-ux/SKILL.md
-- [[Role_38]] - document - .agents/skills/i-ux/SKILL.md
-- [[Rules_7]] - document - .agents/skills/i-ux/SKILL.md
-- [[SKILL_61]] - document - .agents/skills/i-ux/SKILL.md
-- [[Site Alarm Acknowledgment Flow]] - document - .agents/skills/i-ux/SKILL.md
-- [[Skill UX Expert (UX)]] - document - .agents/skills/i-ux/SKILL.md
-- [[Usability Audit Checklist]] - document - .agents/skills/i-ux/SKILL.md
-- [[User Flow Diagrams]] - document - .agents/skills/i-ux/SKILL.md
-- [[Wayfinding]] - document - .agents/skills/i-ux/SKILL.md
+- [[Action requires approval but none granted_3]] - document - skills/custom/securebrowser/SKILL.md
+- [[Browser timeout_4]] - document - skills/custom/securebrowser/SKILL.md
+- [[CAPTCHA detected_4]] - document - skills/custom/securebrowser/SKILL.md
+- [[Rate limit exceeded_3]] - document - skills/custom/securebrowser/SKILL.md
+- [[URL not in allowlist_4]] - document - skills/custom/securebrowser/SKILL.md
+- [[1. Always Specify Risk Level_3]] - document - skills/custom/securebrowser/SKILL.md
+- [[1Password Integration_2]] - document - skills/custom/securebrowser/SKILL.md
+- [[2. Use Allowlisting Liberally_3]] - document - skills/custom/securebrowser/SKILL.md
+- [[3. Take Screenshots for Audit Trail_3]] - document - skills/custom/securebrowser/SKILL.md
+- [[4. Handle CAPTCHAs Gracefully_3]] - document - skills/custom/securebrowser/SKILL.md
+- [[5. Never Extract Credentials_3]] - document - skills/custom/securebrowser/SKILL.md
+- [[Approval Integration_3]] - document - skills/custom/securebrowser/SKILL.md
+- [[Audit Logging_4]] - document - skills/custom/securebrowser/SKILL.md
+- [[Best Practices_7]] - document - skills/custom/securebrowser/SKILL.md
+- [[Click Element_3]] - document - skills/custom/securebrowser/SKILL.md
+- [[Core Security Principles_3]] - document - skills/custom/securebrowser/SKILL.md
+- [[Example Apple ID Creation (Semi-Automated)_3]] - document - skills/custom/securebrowser/SKILL.md
+- [[Extract Data_3]] - document - skills/custom/securebrowser/SKILL.md
+- [[Gateway Integration]] - document - skills/custom/securebrowser/SKILL.md
+- [[Integration with AgentShroud]] - document - skills/custom/securebrowser/SKILL.md
+- [[Limitations_4]] - document - skills/custom/securebrowser/SKILL.md
+- [[Navigate to URL_3]] - document - skills/custom/securebrowser/SKILL.md
+- [[Risk Levels_3]] - document - skills/custom/securebrowser/SKILL.md
+- [[SKILL_194]] - document - skills/custom/securebrowser/SKILL.md
+- [[SecureBrowser - Enterprise Secure Browser Automation]] - document - skills/custom/securebrowser/SKILL.md
+- [[Security Architecture_5]] - document - skills/custom/securebrowser/SKILL.md
+- [[Security Configuration_3]] - document - skills/custom/securebrowser/SKILL.md
+- [[Security Guarantees_5]] - document - skills/custom/securebrowser/SKILL.md
+- [[See Also]] - document - skills/custom/securebrowser/SKILL.md
+- [[Take Screenshot_3]] - document - skills/custom/securebrowser/SKILL.md
+- [[Troubleshooting_37]] - document - skills/custom/securebrowser/SKILL.md
+- [[Usage_130]] - document - skills/custom/securebrowser/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

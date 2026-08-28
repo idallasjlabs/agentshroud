@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/citation_verifier.py"
 type: "code"
-community: "Community 171"
+community: "Community 105"
 location: "L123"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_171
+  - community/Community_105
 ---
 
 # CitationVerifier
@@ -42,7 +42,7 @@ tags:
 - [[TestVerifyReport]] - `uses` [INFERRED]
 - [[UpdateRequest]] - `uses` [INFERRED]
 - [[Verifies competitor claims against re-fetched, allowlisted sources.]] - `rationale_for` [EXTRACTED]
-- [[WebSocket_7]] - `uses` [INFERRED]
+- [[WebSocket_8]] - `uses` [INFERRED]
 - [[_FakeFetcher]] - `uses` [INFERRED]
 - [[_FakeFetcher_1]] - `uses` [INFERRED]
 - [[_FakeStreamResponse]] - `uses` [INFERRED]
@@ -56,4 +56,4 @@ tags:
 - [[test_default_allowlist_uses_permanent_egress_domains()]] - `calls` [EXTRACTED]
 - [[test_intel_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_171
+#graphify/code #graphify/INFERRED #community/Community_105

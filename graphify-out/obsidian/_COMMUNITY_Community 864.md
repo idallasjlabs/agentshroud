@@ -1,22 +1,25 @@
 ---
 type: community
-members: 9
+cohesion: 0.22
+members: 10
 ---
 
 # Community 864
 
-**Members:** 9 nodes
+**Cohesion:** 0.22 - loosely connected
+**Members:** 10 nodes
 
 ## Members
-- [[ADR-001 Transparent Proxy Decision]] - concept - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
-- [[ADR-004 Proxy-Side API Key Management]] - concept - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
-- [[Agent Modification Approach (rejected alternative)]] - concept - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
-- [[Deployment Modes]] - document - docs/architecture/deployment-diagram.md
-- [[Gateway (FastAPI)]] - concept - docs/architecture/system-architecture.md
-- [[PII Sanitizer (Presidio + Regex)]] - concept - docs/architecture/system-architecture.md
-- [[Proxy Mode (Recommended)]] - document - docs/architecture/deployment-diagram.md
-- [[Sidecar Mode (Performance Optimized)]] - document - docs/architecture/deployment-diagram.md
-- [[sanitizer.py (PII redaction, Presidioregex)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
+- [[.deregister()]] - code - gateway/security/subagent_governance.py
+- [[.get_summary()_1]] - code - gateway/security/subagent_governance.py
+- [[.get_usage()]] - code - gateway/security/subagent_governance.py
+- [[.runtime_seconds()]] - code - gateway/security/subagent_governance.py
+- [[.to_dict()_14]] - code - gateway/security/subagent_governance.py
+- [[Get a summary of all subagent governance state for a session.]] - rationale - gateway/security/subagent_governance.py
+- [[Get current resource usage for a subagent.]] - rationale - gateway/security/subagent_governance.py
+- [[Remove a subagent from governance tracking. Returns final usage.]] - rationale - gateway/security/subagent_governance.py
+- [[ResourceUsage_1]] - code - gateway/security/subagent_governance.py
+- [[Tracks cumulative resource consumption for a single subagent.]] - rationale - gateway/security/subagent_governance.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,11 +29,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 238]]
-- 1 edge to [[_COMMUNITY_Community 407]]
-- 1 edge to [[_COMMUNITY_Community 409]]
+- 4 edges to [[_COMMUNITY_Community 483]]
+- 1 edge to [[_COMMUNITY_Community 982]]
 
 ## Top bridge nodes
-- [[Gateway (FastAPI)]] - degree 4, connects to 1 community
-- [[Deployment Modes]] - degree 3, connects to 1 community
-- [[PII Sanitizer (Presidio + Regex)]] - degree 3, connects to 1 community
+- [[ResourceUsage_1]] - degree 7, connects to 2 communities
+- [[.deregister()]] - degree 4, connects to 1 community
+- [[.get_summary()_1]] - degree 3, connects to 1 community
+- [[.get_usage()]] - degree 3, connects to 1 community

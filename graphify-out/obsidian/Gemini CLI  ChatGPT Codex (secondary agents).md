@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/legal/COMMUNICATION-TEMPLATES.md"
 type: "document"
-community: "Community 964"
+community: "Community 963"
 location: "L63"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_964
+  - community/Community_963
 ---
 
 # Gemini CLI / ChatGPT Codex (secondary agents)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[For Agents and Bots]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_964
+#graphify/document #graphify/EXTRACTED #community/Community_963

@@ -1,28 +1,30 @@
 ---
 type: community
+cohesion: 0.21
 members: 15
 ---
 
 # Community 632
 
+**Cohesion:** 0.21 - loosely connected
 **Members:** 15 nodes
 
 ## Members
-- [[Configuration  Environment Variables_6]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[ConnectionPool.get_or_create(server_name, config)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[Function Details_12]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[Key Classes  Functions_15]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[MCPProxy._execute_tool_call(tool_call, sanitized_params)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[MCPProxy.check_approval_required(tool_call)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[MCPProxy.get_stats()]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[MCPProxy.process_tool_call(tool_call, execute)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[MCPProxy.process_tool_result(tool_result, agent_id)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[Purpose_133]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[Related_18]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[Responsibilities_17]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[StdioConnection.send_request(method, params)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[mcp_proxy.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
-- [[mcp_proxy.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md
+- [[.test_error_status_gets_50()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_grade_a()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_grade_b()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_grade_c()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_grade_d()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_grade_f()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_mixed_severities()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_one_critical()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_perfect_score()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_score_floor()]] - code - gateway/tests/test_security_toolchain.py
+- [[Calculate score for a single tool (0-100).      Args         summary Tool summ]] - rationale - gateway/security/health_report.py
+- [[Convert score to letter grade.      Args         score Numeric score (0-100).]] - rationale - gateway/security/health_report.py
+- [[TestHealthScoring]] - code - gateway/tests/test_security_toolchain.py
+- [[calculate_tool_score()]] - code - gateway/security/health_report.py
+- [[score_to_grade()]] - code - gateway/security/health_report.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,3 +32,13 @@ members: 15
 TABLE source_file, type FROM #community/Community_632
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 6 edges to [[_COMMUNITY_Community 347]]
+- 3 edges to [[_COMMUNITY_Community 112]]
+- 1 edge to [[_COMMUNITY_Security Audit & Drift Detection]]
+
+## Top bridge nodes
+- [[TestHealthScoring]] - degree 12, connects to 2 communities
+- [[calculate_tool_score()]] - degree 11, connects to 2 communities
+- [[score_to_grade()]] - degree 9, connects to 2 communities

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/skill-creator/scripts/test_package_skill.py"
 type: "code"
-community: "Community 535"
+community: "Community 532"
 location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_535
+  - community/Community_532
 ---
 
 # TestPackageSkillSecurity
@@ -22,4 +22,4 @@ tags:
 - [[TestCase]] - `inherits` [EXTRACTED]
 - [[test_package_skill.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_535
+#graphify/code #graphify/EXTRACTED #community/Community_532

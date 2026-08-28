@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "Community 1137"
+community: "Community 24"
 location: "L266"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1137
+  - community/Community_24
 ---
 
 # Create a mock forwarder.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.mock_forwarder()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1137
+#graphify/rationale #graphify/EXTRACTED #community/Community_24

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "Community 679"
+community: "Community 640"
 location: "L184"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_679
+  - community/Community_640
 ---
 
 # TestTrivyRun
@@ -23,4 +23,4 @@ tags:
 - [[AlertDispatcher]] - `uses` [INFERRED]
 - [[test_security_toolchain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_679
+#graphify/code #graphify/EXTRACTED #community/Community_640

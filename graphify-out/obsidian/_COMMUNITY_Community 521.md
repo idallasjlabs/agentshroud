@@ -1,49 +1,32 @@
 ---
 type: community
-members: 36
+cohesion: 0.17
+members: 17
 ---
 
 # Community 521
 
-**Members:** 36 nodes
+**Cohesion:** 0.17 - loosely connected
+**Members:** 17 nodes
 
 ## Members
-- [[7-Layer Security Architecture]] - concept - SECURITY.md
-- [[75 Security Modules]] - document - README.md
-- [[Agent Containment]] - document - README.md
-- [[AgentShroud™ README]] - document - README.md
-- [[AgentShroud™ Security Policy]] - document - SECURITY.md
-- [[Architecture]] - document - README.md
-- [[CI Security Scanning Toolchain]] - concept - SECURITY.md
-- [[Compliance Alignment]] - document - SECURITY.md
-- [[Content & Context Guards]] - document - README.md
-- [[Core Security Pipeline]] - document - README.md
-- [[Daily CVE Sync + Page Update Workflow]] - document - .github/workflows/update-cve-page.yml
-- [[Emergency Response]] - document - SECURITY.md
-- [[GitHub Pages Deploy Workflow]] - document - .github/workflows/pages.yml
-- [[Infrastructure & Monitoring]] - document - README.md
-- [[Kill Switch Operations]] - concept - CHEATSHEET.md
-- [[Monitor Mode Warning]] - document - SECURITY.md
-- [[OpenClaw Bot]] - concept - README.md
-- [[Pinned Vendor Versions Single Source of Truth (dockerversions.env)]] - rationale - .github/workflows/update-cve-page.yml
-- [[Proxy & Network Layer]] - document - README.md
-- [[Reporting a Vulnerability]] - document - SECURITY.md
-- [[Response Timeline]] - document - SECURITY.md
-- [[SECURITY]] - document - SECURITY.md
-- [[Security Scan Workflow]] - document - .github/workflows/security-scan.yml
-- [[Security Scanning]] - document - SECURITY.md
-- [[Supported Versions]] - document - SECURITY.md
-- [[Supporting Infrastructure]] - document - README.md
-- [[TABLE I Security Module Inventory (52 Modules)]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[Trademark]] - document - BRAND.md
-- [[Upstream Agent CVE Tracking]] - document - SECURITY.md
-- [[V-A. PII Sanitizer]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[V-B. Prompt Injection Defense]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[V-C. Credential Isolation]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[V-D. Encrypted Container Communication]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[V-E. DNS-Layer Enforcement]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[V-F. Tamper-Evident Audit]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[V. Security Modules]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[AI Security Standards Watch Prompt]] - document - docker/config/openclaw/cron/prompts/ai-security-standards-watch.txt
+- [[Agentic AI Threat Intelligence Prompt]] - document - docker/config/openclaw/cron/prompts/agentic-ai-threat-intelligence.txt
+- [[ApprovalQueue Security Module]] - concept - docker/config/openclaw/cron/prompts/agentic-ai-threat-intelligence.txt
+- [[AuditChain Security Module]] - concept - docker/config/openclaw/cron/prompts/agentic-ai-threat-intelligence.txt
+- [[CVE Triage 3-Job Pipeline]] - rationale - docker/config/openclaw/cron/JOBS-REFERENCE.md
+- [[Daily CVE Triage & Remediation Scan Prompt]] - document - docker/config/openclaw/cron/prompts/cve-triage-report.txt
+- [[Daily Memory Journal Prompt]] - document - docker/config/hermes/cron/prompts/daily-memory-journal.txt
+- [[EgressFilter Security Module]] - concept - docker/config/openclaw/cron/prompts/agentic-ai-threat-intelligence.txt
+- [[Gateway Python Dependencies]] - code - gateway/requirements.txt
+- [[Governed forward Voice Path]] - rationale - firmware/voice-terminal/SETUP.md
+- [[NO_REPLY Suppression Token]] - concept - docker/config/openclaw/cron/prompts/cve-triage-report.txt
+- [[Presidio PII Detection (analyzer + anonymizer)]] - code - gateway/requirements.txt
+- [[PromptGuard Security Module]] - concept - docker/config/openclaw/cron/prompts/agentic-ai-threat-intelligence.txt
+- [[Today in AI Newsletter Cron Prompt]] - document - docker/config/hermes/cron/prompts/today-in-ai.txt
+- [[ToolACL Security Module]] - concept - docker/config/openclaw/cron/prompts/agentic-ai-threat-intelligence.txt
+- [[append_finding.py Finding Appender]] - code - docker/config/hermes/cron/prompts/today-in-ai.txt
+- [[cve_prefetch.py (CVE fetch-and-diff)]] - code - docker/config/openclaw/cron/scripts/cve_prefetch.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -53,17 +36,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 434]]
-- 3 edges to [[_COMMUNITY_Community 403]]
-- 2 edges to [[_COMMUNITY_Community 168]]
-- 2 edges to [[_COMMUNITY_Community 274]]
-- 1 edge to [[_COMMUNITY_Community 779]]
-- 1 edge to [[_COMMUNITY_Community 57]]
-- 1 edge to [[_COMMUNITY_Community 1000]]
+- 5 edges to [[_COMMUNITY_Community 213]]
+- 1 edge to [[_COMMUNITY_Community 282]]
+- 1 edge to [[_COMMUNITY_Community 279]]
 
 ## Top bridge nodes
-- [[75 Security Modules]] - degree 18, connects to 2 communities
-- [[AgentShroud™ README]] - degree 9, connects to 2 communities
-- [[AgentShroud™ Security Policy]] - degree 14, connects to 1 community
-- [[V. Security Modules]] - degree 8, connects to 1 community
-- [[Trademark]] - degree 4, connects to 1 community
+- [[Daily Memory Journal Prompt]] - degree 3, connects to 2 communities
+- [[Agentic AI Threat Intelligence Prompt]] - degree 7, connects to 1 community
+- [[AI Security Standards Watch Prompt]] - degree 6, connects to 1 community
+- [[Daily CVE Triage & Remediation Scan Prompt]] - degree 6, connects to 1 community
+- [[Governed forward Voice Path]] - degree 4, connects to 1 community

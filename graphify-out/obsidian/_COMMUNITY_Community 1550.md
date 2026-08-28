@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 1.00
 members: 2
 ---
 
 # Community 1550
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[.test_disabled_protection()]] - code - gateway/tests/test_prompt_protection.py
-- [[Test that disabled protection passes through content unchanged.]] - rationale - gateway/tests/test_prompt_protection.py
+- [[.test_operational_path_filtering()]] - code - gateway/tests/test_outbound_filter.py
+- [[Test that internal file paths are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,8 +21,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Gateway Security Module]]
-- 1 edge to [[_COMMUNITY_docsrunbooks]]
+- 1 edge to [[_COMMUNITY_Community 996]]
 
 ## Top bridge nodes
-- [[.test_disabled_protection()]] - degree 3, connects to 2 communities
+- [[.test_operational_path_filtering()]] - degree 2, connects to 1 community

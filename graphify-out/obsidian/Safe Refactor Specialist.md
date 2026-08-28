@@ -20,7 +20,6 @@ tags:
 - [[Repository Context_1]] - `contains` [EXTRACTED]
 - [[Role Definition]] - `contains` [EXTRACTED]
 - [[What You CAN Refactor]] - `contains` [EXTRACTED]
-- [[What You CANNOT Refactor]] - `contains` [EXTRACTED]
 - [[When in Doubt]] - `contains` [EXTRACTED]
 - [[safe-refactor.agent]] - `contains` [EXTRACTED]
 

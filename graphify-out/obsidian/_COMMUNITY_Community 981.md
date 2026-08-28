@@ -1,25 +1,23 @@
 ---
 type: community
-members: 12
+cohesion: 0.36
+members: 8
 ---
 
 # Community 981
 
-**Members:** 12 nodes
+**Cohesion:** 0.36 - loosely connected
+**Members:** 8 nodes
 
 ## Members
-- [[.test_10_x_blocked()_1]] - code - gateway/tests/test_web_proxy.py
-- [[.test_127_0_0_1_blocked()_1]] - code - gateway/tests/test_web_proxy.py
-- [[.test_169_254_blocked()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_192_168_blocked()_1]] - code - gateway/tests/test_web_proxy.py
-- [[.test_decimal_ip_blocked()_1]] - code - gateway/tests/test_web_proxy.py
-- [[.test_hex_ip_blocked()_1]] - code - gateway/tests/test_web_proxy.py
-- [[.test_ipv4_mapped_ipv6_192_168_blocked()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_ipv4_mapped_ipv6_blocked()_2]] - code - gateway/tests/test_web_proxy.py
-- [[.test_ipv6_loopback_blocked()_1]] - code - gateway/tests/test_web_proxy.py
-- [[.test_localhost_blocked()_1]] - code - gateway/tests/test_web_proxy.py
-- [[.test_public_ip_allowed()_1]] - code - gateway/tests/test_web_proxy.py
-- [[TestSSRFBlocking]] - code - gateway/tests/test_web_proxy.py
+- [[SKILL_234]] - document - skills/openclaw/tmux/SKILL.md
+- [[find-sessions.sh]] - code - skills/openclaw/tmux/scripts/find-sessions.sh
+- [[find-sessions.sh script]] - code - skills/openclaw/tmux/scripts/find-sessions.sh
+- [[list_sessions()]] - code - skills/openclaw/tmux/scripts/find-sessions.sh
+- [[usage()_6]] - code - skills/openclaw/tmux/scripts/find-sessions.sh
+- [[usage()_7]] - code - skills/openclaw/tmux/scripts/wait-for-text.sh
+- [[wait-for-text.sh]] - code - skills/openclaw/tmux/scripts/wait-for-text.sh
+- [[wait-for-text.sh script]] - code - skills/openclaw/tmux/scripts/wait-for-text.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,9 +27,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Community 30]]
-- 1 edge to [[_COMMUNITY_Community 22]]
-- 1 edge to [[_COMMUNITY_Community 119]]
+- 1 edge to [[_COMMUNITY_Community 401]]
+- 1 edge to [[_COMMUNITY_Community 547]]
 
 ## Top bridge nodes
-- [[TestSSRFBlocking]] - degree 18, connects to 3 communities
+- [[SKILL_234]] - degree 4, connects to 2 communities

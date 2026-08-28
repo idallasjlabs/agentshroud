@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-mcpm-doctor/README.md"
 type: "document"
-community: "Community 830"
+community: "Community 829"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Community_830
+  - community/Community_829
 ---
 
 # MCP Doctor README
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[MCP Doctor Skill]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Community_830
+#graphify/document #graphify/INFERRED #community/Community_829

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/SYSTEM-INSTRUCTIONS-SECURITY.md"
 type: "document"
-community: "Community 747"
+community: "Community 744"
 location: "L46"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_747
+  - community/Community_744
 ---
 
 # What NEVER to do
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🏗️ Credential Architecture — How Secrets Are Retrieved]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_747
+#graphify/document #graphify/EXTRACTED #community/Community_744

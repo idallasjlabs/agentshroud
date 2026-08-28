@@ -1,47 +1,50 @@
 ---
 type: community
-members: 34
+cohesion: 0.06
+members: 35
 ---
 
 # Community 209
 
-**Members:** 34 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 35 nodes
 
 ## Members
-- [[1. Skills Installation (`.openclawskills`)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[2. Conversation Memory (`.openclawMEMORY.md`)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[3. Workspace Files (`workspace`)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[4. npm Cache (`.npm`, `.cache`)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[5. Temporary Files (`tmp`)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[6. Session Configuration (`.config`, `.local`)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Answer to Your Question]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Bind Mount vs Docker Volume]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Can We Use ONLY a Shared Folder]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Configuration_4]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Current Docker Configuration]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Current Location]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[For Read-Only to Work]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Goals]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[How to Access Workspace Files]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Minimum Required Configuration]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[OPENCLAW_WRITE_REQUIREMENTS]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Option 1 Docker Volume (Current Setup - Recommended)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Option 2 Bind Mount (Alternative - More Accessible)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Option A Docker Volume (Current)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Option B Bind Mount (Easier for You)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Recommended Configuration for Your Use Case]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Summary What the Bot Needs to Write]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[TL;DR]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[What Does OpenClaw Actually Need to Write]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[What Does the Bot NOT Need to Write]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[What OpenClaw Writes During Normal Operation]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[What You Can Do]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Your Shared Folder The Workspace]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[✅ Persistent Volumes (Data Survives Container Restart)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[✅ Temporary Filesystems (Cleared on Container Restart)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[❌ Currently Missing (Would Break Read-Only)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[❌ NO - Here's What Would Break]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[❌ System Directories (Read-Only in Production)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
+- [[.notifier()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[.test_answer_callback_error()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[.test_answer_callback_success()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[.test_cleanup_expired_requests()_1]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[.test_get_pending_count()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[.test_handle_callback_allow_always_returns_agent_id()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[.test_handle_callback_approve_permanent()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[.test_handle_callback_deny()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[.test_handle_callback_deny_returns_agent_id()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[.test_handle_callback_invalid_format()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[.test_handle_callback_missing_agent_id_safe()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[.test_handle_callback_request_not_found()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[.test_handle_callback_returns_agent_id()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[.test_notification_recipients_owner_only_by_default()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[.test_notify_pending_failure()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[.test_notify_pending_success()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[.test_risk_emoji_mapping()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[Collaborators are never added to notification_recipients — only owner gets egres]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[Denial result also includes agent_id so collaborator can be notified.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[Missing agent_id in stored request returns empty string, not a crash.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[Permanent approval also includes agent_id in result.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[Test Telegram egress notification system.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[Test answer_callback handles errors.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[Test answering callback query.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[Test callback for non-existent request.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[Test cleanup removes expired pending requests.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[Test handling deny callback.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[Test handling invalid callback data.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[Test handling permanent (allow_always) approval callback.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[Test notification handles API failure gracefully.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[Test risk level emoji display.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[Test successful notification sending.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[TestEgressTelegramNotify]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[handle_callback must include agent_id so the proxy can notify the originating co]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[test_egress_telegram_notify.py]] - code - gateway/tests/test_egress_telegram_notify.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -49,3 +52,12 @@ members: 34
 TABLE source_file, type FROM #community/Community_209
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 3 edges to [[_COMMUNITY_Community 363]]
+- 2 edges to [[_COMMUNITY_Community 1422]]
+
+## Top bridge nodes
+- [[TestEgressTelegramNotify]] - degree 22, connects to 2 communities
+- [[test_egress_telegram_notify.py]] - degree 2, connects to 1 community
+- [[.notifier()]] - degree 2, connects to 1 community

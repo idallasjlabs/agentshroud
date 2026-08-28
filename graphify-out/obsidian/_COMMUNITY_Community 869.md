@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.24
 members: 10
 ---
 
 # Community 869
 
+**Cohesion:** 0.24 - loosely connected
 **Members:** 10 nodes
 
 ## Members
@@ -28,15 +30,15 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 4 edges to [[_COMMUNITY_Community 485]]
-- 3 edges to [[_COMMUNITY_Community 904]]
-- 3 edges to [[_COMMUNITY_Community 992]]
-- 3 edges to [[_COMMUNITY_Community 731]]
-- 1 edge to [[_COMMUNITY_Community 78]]
-- 1 edge to [[_COMMUNITY_Community 1257]]
-- 1 edge to [[_COMMUNITY_Community 817]]
-- 1 edge to [[_COMMUNITY_Community 816]]
-- 1 edge to [[_COMMUNITY_Community 1102]]
-- 1 edge to [[_COMMUNITY_Community 993]]
+- 3 edges to [[_COMMUNITY_Community 898]]
+- 3 edges to [[_COMMUNITY_Community 993]]
+- 3 edges to [[_COMMUNITY_Community 728]]
+- 1 edge to [[_COMMUNITY_Community 19]]
+- 1 edge to [[_COMMUNITY_Community 1254]]
+- 1 edge to [[_COMMUNITY_Community 814]]
+- 1 edge to [[_COMMUNITY_Community 813]]
+- 1 edge to [[_COMMUNITY_Community 1098]]
+- 1 edge to [[_COMMUNITY_Community 994]]
 
 ## Top bridge nodes
 - [[multi_host_test.py]] - degree 15, connects to 10 communities

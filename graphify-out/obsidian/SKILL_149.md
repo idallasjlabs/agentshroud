@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-gitops/SKILL.md"
 type: "document"
-community: "Community 1463"
+community: "Community 1479"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1463
+  - community/Community_1479
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill gitops_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1463
+#graphify/document #graphify/EXTRACTED #community/Community_1479

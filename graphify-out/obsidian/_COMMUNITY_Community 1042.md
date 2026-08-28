@@ -1,20 +1,22 @@
 ---
 type: community
+cohesion: 0.29
 members: 7
 ---
 
 # Community 1042
 
+**Cohesion:** 0.29 - loosely connected
 **Members:** 7 nodes
 
 ## Members
-- [[BROWSER_FETCH_SKILL]] - document - docs/reference/BROWSER_FETCH_SKILL.md
-- [[Browser-Fetch Approval Queue Integration]] - concept - docs/reference/BROWSER_FETCH_SKILL.md
-- [[Browser-Fetch Audit Logging]] - concept - docs/reference/BROWSER_FETCH_SKILL.md
-- [[Browser-Fetch ClawHub Auto-Discovery Plan]] - rationale - docs/reference/BROWSER_FETCH_SKILL.md
-- [[PUBLISH-TO-CLAWHUB]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[Playwright Headless Chromium Decryption]] - concept - docs/reference/BROWSER_FETCH_SKILL.md
-- [[SecureBrowser Skill_1]] - concept - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[AgentShroud™ — Trademark Prior Use Record]] - document - docs/project/legal/PRIOR-USE.md
+- [[Asset Creation Timeline]] - document - docs/project/legal/PRIOR-USE.md
+- [[First Use in Commerce]] - document - docs/project/legal/PRIOR-USE.md
+- [[GitHub Repository Evidence]] - document - docs/project/legal/PRIOR-USE.md
+- [[How to Supplement This Record]] - document - docs/project/legal/PRIOR-USE.md
+- [[Mission Statement (Timestamped Record)]] - document - docs/project/legal/PRIOR-USE.md
+- [[Next Steps Federal Registration]] - document - docs/project/legal/PRIOR-USE.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,9 +26,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 772]]
-- 1 edge to [[_COMMUNITY_Community 858]]
+- 1 edge to [[_COMMUNITY_Community 1041]]
 
 ## Top bridge nodes
-- [[BROWSER_FETCH_SKILL]] - degree 6, connects to 1 community
-- [[PUBLISH-TO-CLAWHUB]] - degree 3, connects to 1 community
+- [[AgentShroud™ — Trademark Prior Use Record]] - degree 7, connects to 1 community

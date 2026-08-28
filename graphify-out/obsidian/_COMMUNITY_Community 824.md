@@ -1,24 +1,25 @@
 ---
 type: community
-members: 11
+cohesion: 0.20
+members: 10
 ---
 
 # Community 824
 
-**Members:** 11 nodes
+**Cohesion:** 0.20 - loosely connected
+**Members:** 10 nodes
 
 ## Members
-- [[7. Deployment]] - document - docs/papers/agentshroud-whitepaper.md
-- [[7.1 Supported Platforms]] - document - docs/papers/agentshroud-whitepaper.md
-- [[7.2 Quick Start]] - document - docs/papers/agentshroud-whitepaper.md
-- [[7.3 Configuration]] - document - docs/papers/agentshroud-whitepaper.md
-- [[Applied By_1]] - document - docs/vault/03 - Configuration/ssh-config.md
-- [[Key Configuration]] - document - docs/vault/03 - Configuration/ssh-config.md
-- [[Purpose_182]] - document - docs/vault/03 - Configuration/ssh-config.md
-- [[Related Notes_26]] - document - docs/vault/03 - Configuration/ssh-config.md
-- [[Relationship to agentshroud.yaml]] - document - docs/vault/03 - Configuration/ssh-config.md
-- [[SSH Config]] - document - docs/vault/03 - Configuration/ssh-config.md
-- [[ssh-config]] - document - docs/vault/03 - Configuration/ssh-config.md
+- [[After Config Change]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
+- [[After Secret Rotation]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
+- [[Bot Only Restart]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
+- [[Full Stack Restart]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
+- [[Gateway Only Restart]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
+- [[Related Notes_69]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
+- [[Restart Procedure_2]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
+- [[Restart Verification]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
+- [[When to Restart]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
+- [[Zero-Downtime Restart (Advanced)]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,11 +29,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 316]]
-- 1 edge to [[_COMMUNITY_Community 401]]
-- 1 edge to [[_COMMUNITY_Community 251]]
+- 1 edge to [[_COMMUNITY_Community 289]]
 
 ## Top bridge nodes
-- [[7. Deployment]] - degree 5, connects to 1 community
-- [[Key Configuration]] - degree 3, connects to 1 community
-- [[ssh-config]] - degree 2, connects to 1 community
+- [[Restart Procedure_2]] - degree 10, connects to 1 community

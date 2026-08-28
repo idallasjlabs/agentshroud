@@ -1,24 +1,26 @@
 ---
 type: community
+cohesion: 0.18
 members: 11
 ---
 
 # Community 811
 
+**Cohesion:** 0.18 - loosely connected
 **Members:** 11 nodes
 
 ## Members
-- [[0.1 Code Inventory ✅_1]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[0.2 Current State ✅_1]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[1.1 The Problem_1]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[1.2 Fix Shipped ✅]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[AgentShroud Recovery Plan v0.4.0_1]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[EXECUTIVE SUMMARY_1]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[PHASE 0 STABILIZATION ✅ COMPLETE_1]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[PHASE 1 SECURITY FIX ✅ COMPLETE (v0.4.0)]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[PHASE 2 NEXT SESSION (v0.5.0)]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[RECOVERY_PLAN_PARTIAL]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[RELEASE HISTORY]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
+- [[Test forward endpoint rejects requests without auth]] - rationale - gateway/tests/test_integration.py
+- [[Test forward endpoint with proper authentication]] - rationale - gateway/tests/test_integration.py
+- [[Test WebSocket authentication flow]] - rationale - gateway/tests/test_integration.py
+- [[Test ledger query endpoint]] - rationale - gateway/tests/test_integration.py
+- [[Test that status endpoint works without authentication]] - rationale - gateway/tests/test_integration.py
+- [[test_forward_with_auth()]] - code - gateway/tests/test_integration.py
+- [[test_forward_without_auth()]] - code - gateway/tests/test_integration.py
+- [[test_health_check_no_auth()]] - code - gateway/tests/test_integration.py
+- [[test_integration.py]] - code - gateway/tests/test_integration.py
+- [[test_ledger_query()]] - code - gateway/tests/test_integration.py
+- [[test_websocket_auth()]] - code - gateway/tests/test_integration.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,3 +28,9 @@ members: 11
 TABLE source_file, type FROM #community/Community_811
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 159]]
+
+## Top bridge nodes
+- [[test_integration.py]] - degree 6, connects to 1 community

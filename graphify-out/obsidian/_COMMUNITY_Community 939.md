@@ -1,24 +1,23 @@
 ---
 type: community
-members: 11
+cohesion: 0.25
+members: 8
 ---
 
 # Community 939
 
-**Members:** 11 nodes
+**Cohesion:** 0.25 - loosely connected
+**Members:** 8 nodes
 
 ## Members
-- [[Collaborator Setup Checklist]] - document - docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md
-- [[Executive Summary_9]] - document - docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md
-- [[Files intentionally not for collaborators]] - document - docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md
-- [[Optional local tooling]] - document - docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md
-- [[Required for local model-profile persistence]] - document - docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md
-- [[Required for standard Docker runtime]] - document - docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md
-- [[Required if using 1Password-backed secret retrieval]] - document - docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md
-- [[Required if using external LLM providers]] - document - docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md
-- [[Restore Priority After Clean Build]] - document - docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md
-- [[Root `.env`]] - document - docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md
-- [[Secrets Usage and Collaborator Checklist]] - document - docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md
+- [[Apollo README]] - document - .agents/skills/i-apollo/README.md
+- [[Apollo — Audio Systems Producer_6]] - document - .agents/skills/i-apollo/SKILL.md
+- [[ElevenLabs Text-to-Dialogue API_1]] - concept - .agents/skills/i-apollo/SKILL.md
+- [[Input Requirements]] - document - .agents/skills/i-apollo/SKILL.md
+- [[Output]] - document - .agents/skills/i-apollo/SKILL.md
+- [[Quality Checklist]] - document - .agents/skills/i-apollo/SKILL.md
+- [[Role_4]] - document - .agents/skills/i-apollo/SKILL.md
+- [[SKILL_3]] - document - .agents/skills/i-apollo/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,7 +27,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 9]]
+- 1 edge to [[_COMMUNITY_Community 940]]
+- 1 edge to [[_COMMUNITY_Community 697]]
 
 ## Top bridge nodes
-- [[Secrets Usage and Collaborator Checklist]] - degree 6, connects to 1 community
+- [[Apollo — Audio Systems Producer_6]] - degree 9, connects to 2 communities

@@ -1,31 +1,33 @@
 ---
 type: community
+cohesion: 0.11
 members: 18
 ---
 
 # Community 488
 
+**Cohesion:** 0.11 - loosely connected
 **Members:** 18 nodes
 
 ## Members
-- [[ANTHROPIC_BASE_URL_1]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
-- [[ANTHROPIC_BASE_URL]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
-- [[Configuration_17]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
-- [[Description_2]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
-- [[Description_4]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
-- [[GATEWAY_URL_1]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
-- [[GATEWAY_URL]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
-- [[How It Works_2]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
-- [[Related Notes_30]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
-- [[Related Notes_32]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
-- [[SDK Patch]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
-- [[Set In]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
-- [[Typical Value]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
-- [[Usage Contexts]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
-- [[Value_1]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
-- [[Why It's Critical]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
-- [[patch-anthropic-sdk.sh]] - code - docker/scripts/patch-anthropic-sdk.sh
-- [[patch-anthropic-sdk.sh script]] - code - docker/scripts/patch-anthropic-sdk.sh
+- [[6.1 Enforcement Test Coverage]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[6.2 Attack Simulation Coverage]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[A) Test Coverage Analysis]] - document - .github/agents/test-augmenter.agent.md
+- [[B) Edge Case Identification]] - document - .github/agents/test-augmenter.agent.md
+- [[C) Test Quality]] - document - .github/agents/test-augmenter.agent.md
+- [[Definition of Done_1]] - document - .github/agents/test-augmenter.agent.md
+- [[Environment_1]] - document - .github/agents/test-augmenter.agent.md
+- [[Expected Coverage]] - document - .github/agents/test-augmenter.agent.md
+- [[Python Tests (pytest)]] - document - .github/agents/test-augmenter.agent.md
+- [[Remember_1]] - document - .github/agents/test-augmenter.agent.md
+- [[Repository Context_2]] - document - .github/agents/test-augmenter.agent.md
+- [[Role Definition_1]] - document - .github/agents/test-augmenter.agent.md
+- [[Test Augmentation Specialist]] - document - .github/agents/test-augmenter.agent.md
+- [[Test Commands]] - document - .github/agents/test-augmenter.agent.md
+- [[Test Standards]] - document - .github/agents/test-augmenter.agent.md
+- [[Tooling Standards]] - document - .github/agents/test-augmenter.agent.md
+- [[What You CANNOT Do]] - document - .github/agents/test-augmenter.agent.md
+- [[Your Responsibilities]] - document - .github/agents/test-augmenter.agent.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,9 +37,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 449]]
-- 1 edge to [[_COMMUNITY_Community 126]]
+- 1 edge to [[_COMMUNITY_Community 785]]
+- 1 edge to [[_COMMUNITY_Community 185]]
 
 ## Top bridge nodes
-- [[ANTHROPIC_BASE_URL]] - degree 4, connects to 1 community
-- [[patch-anthropic-sdk.sh]] - degree 3, connects to 1 community
+- [[Test Augmentation Specialist]] - degree 10, connects to 1 community
+- [[A) Test Coverage Analysis]] - degree 4, connects to 1 community

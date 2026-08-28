@@ -1,14 +1,14 @@
 ---
 source_file: "docker/config/hermes/skills/i-hdev/SKILL.md"
 type: "rationale"
-community: "Community 1673"
+community: "Community 1760"
 location: "lines 70-101"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1673
+  - community/Community_1760
 ---
 
 # Jira Ticket Per Dev Batch (Standing Rule)
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1673
+#graphify/rationale #graphify/EXTRACTED #community/Community_1760

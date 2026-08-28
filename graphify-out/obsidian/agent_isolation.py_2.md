@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/agent_isolation.py.md"
 type: "document"
-community: "Community 640"
+community: "Community 633"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_640
+  - community/Community_633
 ---
 
 # agent_isolation.py
@@ -15,7 +15,6 @@ tags:
 - [[ContainerConfig Defaults]] - `contains` [EXTRACTED]
 - [[Environment Variables_5]] - `contains` [EXTRACTED]
 - [[Function Details_26]] - `contains` [EXTRACTED]
-- [[Integration Notes]] - `contains` [EXTRACTED]
 - [[Integration Testing]] - `contains` [EXTRACTED]
 - [[Key Classes  Functions_29]] - `contains` [EXTRACTED]
 - [[Mode Enforce vs Monitor]] - `contains` [EXTRACTED]
@@ -25,4 +24,4 @@ tags:
 - [[Threat Model_2]] - `contains` [EXTRACTED]
 - [[agent_isolation.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_640
+#graphify/document #graphify/EXTRACTED #community/Community_633

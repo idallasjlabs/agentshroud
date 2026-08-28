@@ -1,12 +1,12 @@
 ---
 source_file: "src/interfaces/chat_console.py"
 type: "code"
-community: "Community 760"
+community: "Community 758"
 location: "L120"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_760
+  - community/Community_758
 ---
 
 # main()
@@ -18,4 +18,4 @@ tags:
 - [[print_help()]] - `calls` [EXTRACTED]
 - [[send_message()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_760
+#graphify/code #graphify/EXTRACTED #community/Community_758

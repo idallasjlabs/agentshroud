@@ -1,25 +1,28 @@
 ---
 type: community
-members: 12
+cohesion: 0.15
+members: 13
 ---
 
 # Community 710
 
-**Members:** 12 nodes
+**Cohesion:** 0.15 - loosely connected
+**Members:** 13 nodes
 
 ## Members
-- [[.test_default_revert_minutes_is_30()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_invalid_mode_returns_400()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_response_includes_previous_mode()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_response_includes_revert_minutes()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_revert_minutes_clamped_max()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_revert_minutes_clamped_min()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_set_enforce_mode()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_set_monitor_mode()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_set_observatory_mode()]] - code - gateway/tests/test_observatory_mode.py
-- [[TestSetMode]] - code - gateway/tests/test_observatory_mode.py
-- [[revert_after_minutes above 480 is clamped to 480.]] - rationale - gateway/tests/test_observatory_mode.py
-- [[revert_after_minutes below 1 is clamped to 1.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Docker Desktop Network Settings — Cisco AnyConnect VPN Compatibility]] - document - docker/DOCKER-VPN-NETWORKING.md
+- [[How to Apply]] - document - docker/DOCKER-VPN-NETWORKING.md
+- [[If It Stops Working After a VPN Reconnect]] - document - docker/DOCKER-VPN-NETWORKING.md
+- [[Network Architecture (unchanged)]] - document - docker/DOCKER-VPN-NETWORKING.md
+- [[Primary gVisor networking mode]] - document - docker/DOCKER-VPN-NETWORKING.md
+- [[Problem_1]] - document - docker/DOCKER-VPN-NETWORKING.md
+- [[Related Files]] - document - docker/DOCKER-VPN-NETWORKING.md
+- [[Root Cause_1]] - document - docker/DOCKER-VPN-NETWORKING.md
+- [[Secondary Python IPv6 fallback (misleading error)]] - document - docker/DOCKER-VPN-NETWORKING.md
+- [[Secondary transparent HTTPS proxy]] - document - docker/DOCKER-VPN-NETWORKING.md
+- [[Settings Changed]] - document - docker/DOCKER-VPN-NETWORKING.md
+- [[Verification]] - document - docker/DOCKER-VPN-NETWORKING.md
+- [[With VPN connected]] - document - docker/DOCKER-VPN-NETWORKING.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,10 +32,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 13]]
-- 1 edge to [[_COMMUNITY_Community 22]]
-- 1 edge to [[_COMMUNITY_Community 924]]
-- 1 edge to [[_COMMUNITY_Community 31]]
+- 1 edge to [[_COMMUNITY_Community 791]]
 
 ## Top bridge nodes
-- [[TestSetMode]] - degree 14, connects to 4 communities
+- [[Docker Desktop Network Settings — Cisco AnyConnect VPN Compatibility]] - degree 9, connects to 1 community

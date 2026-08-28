@@ -1,28 +1,30 @@
 ---
 type: community
+cohesion: 0.15
 members: 15
 ---
 
 # Community 649
 
+**Cohesion:** 0.15 - loosely connected
 **Members:** 15 nodes
 
 ## Members
-- [[Advanced Telegram Commands]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[Bot doesn't respond]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[Cannot find bot]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[How Messages Flow]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[Important Notes_2]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[Messages delayed]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[Multi-Device Access]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[Next Steps_9]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[Optional Restrict Bot Access]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[Security Considerations_1]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[Step 1 Create a Telegram Bot]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[Step 2 Configure OpenClaw to Use Telegram]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[Step 3 Start Chatting]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[Telegram Bot Setup for OpenClaw]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[Troubleshooting_33]] - document - docs/setup/TELEGRAM_SETUP.md
+- [[jira_dev_ticket add_comment()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[jira_dev_ticket build_basic_auth_header()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[jira_dev_ticket build_comment_url()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[jira_dev_ticket build_issue_url()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[jira_dev_ticket build_op_proxy_request()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[jira_dev_ticket build_tenant_info_url()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[jira_dev_ticket build_transitions_url()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[jira_dev_ticket create_issue()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[jira_dev_ticket fetch_credentials()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[jira_dev_ticket fetch_op_secret()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[jira_dev_ticket find_transition_id()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[jira_dev_ticket resolve_cloud_id()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[jira_dev_ticket run()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[jira_dev_ticket transition_issue()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[jira_dev_ticket.py (OpenClaw copy)]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,7 +34,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 371]]
+- 4 edges to [[_COMMUNITY_Community 249]]
+- 2 edges to [[_COMMUNITY_Community 168]]
 
 ## Top bridge nodes
-- [[Telegram Bot Setup for OpenClaw]] - degree 10, connects to 1 community
+- [[jira_dev_ticket run()]] - degree 7, connects to 2 communities
+- [[jira_dev_ticket build_basic_auth_header()]] - degree 4, connects to 1 community
+- [[jira_dev_ticket resolve_cloud_id()]] - degree 3, connects to 1 community
+- [[jira_dev_ticket build_op_proxy_request()]] - degree 2, connects to 1 community
+- [[jira_dev_ticket.py (OpenClaw copy)]] - degree 2, connects to 1 community

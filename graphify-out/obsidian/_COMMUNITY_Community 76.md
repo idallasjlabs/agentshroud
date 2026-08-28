@@ -1,62 +1,80 @@
 ---
 type: community
-members: 49
+cohesion: 0.05
+members: 65
 ---
 
 # Community 76
 
-**Members:** 49 nodes
+**Cohesion:** 0.05 - loosely connected
+**Members:** 65 nodes
 
 ## Members
-- [[.__init__()_158]] - code - gateway/tests/test_forward_stream.py
-- [[.process_inbound()_6]] - code - gateway/tests/test_forward_stream.py
-- [[.process_outbound()_6]] - code - gateway/tests/test_forward_stream.py
-- [[.process_outbound()_7]] - code - gateway/tests/test_forward_stream.py
-- [[2-sentence sliding window over `sentences` each window (previous +     current,]] - rationale - gateway/ingest_api/routes/forward.py
-- [[AgentTarget_2]] - code - gateway/ingest_api/routes/forward.py
-- [[Buffer streamed text deltas and yield each complete sentence as soon as     its]] - rationale - gateway/ingest_api/routes/forward.py
-- [[Build a mock app_state whose router streams `sentences_out` as raw     text delt]] - rationale - gateway/tests/test_forward_stream.py
-- [[Mock pipeline that blocks any window containing the word 'secret'.]] - rationale - gateway/tests/test_forward_stream.py
-- [[Mock pipeline whose process_outbound returns the window text unchanged     — ver]] - rationale - gateway/tests/test_forward_stream.py
-- [[Resolve the outbound trust level for `request`, shared by the blocking     and s]] - rationale - gateway/ingest_api/routes/forward.py
-- [[Sliding-window sentinel-joined security filter for streaming voice pipeline]] - concept - gateway/tests/test_forward_stream.py
-- [[_BlockingPipeline]] - code - gateway/tests/test_forward_stream.py
-- [[_PassthroughPipeline]] - code - gateway/tests/test_forward_stream.py
-- [[_aiter()]] - code - gateway/tests/test_forward_stream.py
-- [[_filtered_sentence_stream()]] - code - gateway/ingest_api/routes/forward.py
-- [[_make_stream_app_state()]] - code - gateway/tests/test_forward_stream.py
-- [[_parse_sse_events()]] - code - gateway/tests/test_forward_stream.py
-- [[_post_stream()]] - code - gateway/tests/test_forward_stream.py
-- [[_request()]] - code - gateway/tests/test_forward_stream.py
-- [[_resolve_user_trust_level()]] - code - gateway/ingest_api/routes/forward.py
-- [[_sentences_from_deltas()]] - code - gateway/ingest_api/routes/forward.py
-- [[_target()]] - code - gateway/tests/test_forward_stream.py
-- [[test_filtered_stream_blocked_final_sentence_yields_nothing()]] - code - gateway/tests/test_forward_stream.py
-- [[test_filtered_stream_blocked_window_releases_nothing_for_that_window()]] - code - gateway/tests/test_forward_stream.py
-- [[test_filtered_stream_redaction_applies_to_released_sentence()]] - code - gateway/tests/test_forward_stream.py
-- [[test_filtered_stream_releases_sentences_in_order()]] - code - gateway/tests/test_forward_stream.py
-- [[test_filtered_stream_sentinel_stripped_fails_safe_by_releasing_all()]] - code - gateway/tests/test_forward_stream.py
-- [[test_filtered_stream_single_sentence_flushed_alone()]] - code - gateway/tests/test_forward_stream.py
-- [[test_filtered_stream_windows_are_pairs_joined_by_sentinel()]] - code - gateway/tests/test_forward_stream.py
-- [[test_forward_stream.py]] - code - gateway/tests/test_forward_stream.py
-- [[test_forward_stream_503_when_no_pipeline_configured()]] - code - gateway/tests/test_forward_stream.py
-- [[test_forward_stream_drops_credential_bearing_sentence()]] - code - gateway/tests/test_forward_stream.py
-- [[test_forward_stream_emits_sentence_events_then_done()]] - code - gateway/tests/test_forward_stream.py
-- [[test_forward_stream_forward_error_still_emits_done_event()]] - code - gateway/tests/test_forward_stream.py
-- [[test_forward_stream_ledger_failure_still_emits_done_event()]] - code - gateway/tests/test_forward_stream.py
-- [[test_forward_stream_records_ledger_entry_with_full_assembled_text()]] - code - gateway/tests/test_forward_stream.py
-- [[test_forward_stream_rejects_non_openai_compat_target()]] - code - gateway/tests/test_forward_stream.py
-- [[test_forward_stream_returns_early_response_when_queued_for_approval()]] - code - gateway/tests/test_forward_stream.py
-- [[test_forward_stream_unexpected_error_still_emits_done_event()]] - code - gateway/tests/test_forward_stream.py
-- [[test_resolve_trust_level_maps_trust_score_to_tier()]] - code - gateway/tests/test_forward_stream.py
-- [[test_resolve_trust_level_no_trust_info_for_target_defaults_untrusted()]] - code - gateway/tests/test_forward_stream.py
-- [[test_resolve_trust_level_no_trust_manager_defaults_untrusted()]] - code - gateway/tests/test_forward_stream.py
-- [[test_resolve_trust_level_non_owner_user_id_does_not_upgrade()]] - code - gateway/tests/test_forward_stream.py
-- [[test_resolve_trust_level_owner_user_id_upgrades_to_full()]] - code - gateway/tests/test_forward_stream.py
-- [[test_sentences_from_deltas_empty_stream_yields_nothing()]] - code - gateway/tests/test_forward_stream.py
-- [[test_sentences_from_deltas_flushes_trailing_fragment_without_punctuation()]] - code - gateway/tests/test_forward_stream.py
-- [[test_sentences_from_deltas_single_delta_full_sentence()]] - code - gateway/tests/test_forward_stream.py
-- [[test_sentences_from_deltas_splits_on_boundaries()]] - code - gateway/tests/test_forward_stream.py
+- [[.test_default_format_for_pipe()]] - code - gateway/tests/test_cli_coverage.py
+- [[.test_is_tty_and_default_format_for_tty()]] - code - gateway/tests/test_cli_coverage.py
+- [[.test_output_json()]] - code - gateway/tests/test_cli_coverage.py
+- [[.test_output_table_caps_columns_at_eight()]] - code - gateway/tests/test_cli_coverage.py
+- [[.test_output_table_dict()]] - code - gateway/tests/test_cli_coverage.py
+- [[.test_output_table_empty_list()]] - code - gateway/tests/test_cli_coverage.py
+- [[.test_output_table_list_of_dicts()]] - code - gateway/tests/test_cli_coverage.py
+- [[.test_output_table_list_of_scalars()]] - code - gateway/tests/test_cli_coverage.py
+- [[.test_output_table_scalar()]] - code - gateway/tests/test_cli_coverage.py
+- [[.test_output_yaml()]] - code - gateway/tests/test_cli_coverage.py
+- [[.test_output_yaml_falls_back_to_json_without_pyyaml()]] - code - gateway/tests/test_cli_coverage.py
+- [[.test_print_table_empty_rows_is_noop()]] - code - gateway/tests/test_cli_coverage.py
+- [[Add a collaborator by Telegram user ID.]] - rationale - gateway/cli/main.py
+- [[Add a user to a group.]] - rationale - gateway/cli/main.py
+- [[AgentShroud SOC CLI — Shared Command Layer.]] - rationale - gateway/cli/main.py
+- [[Aggregate health report.]] - rationale - gateway/cli/main.py
+- [[Any_4]] - code - gateway/cli/main.py
+- [[Approve an egress request by ID.]] - rationale - gateway/cli/main.py
+- [[Deny an egress request by ID.]] - rationale - gateway/cli/main.py
+- [[Emergency freeze pause all bot containers.]] - rationale - gateway/cli/main.py
+- [[Get container logs for a service.]] - rationale - gateway/cli/main.py
+- [[List all contributors with roles and groups.]] - rationale - gateway/cli/main.py
+- [[List all service containers with status.]] - rationale - gateway/cli/main.py
+- [[Print data in the requested format.]] - rationale - gateway/cli/main.py
+- [[Query recent security events.]] - rationale - gateway/cli/main.py
+- [[Restart a service container.]] - rationale - gateway/cli/main.py
+- [[Set collaboration mode for a group.]] - rationale - gateway/cli/main.py
+- [[Set configuration values.]] - rationale - gateway/cli/main.py
+- [[Show SOC correlation summary.]] - rationale - gateway/cli/main.py
+- [[Show current risk score and level.]] - rationale - gateway/cli/main.py
+- [[Show pending egress approval requests.]] - rationale - gateway/cli/main.py
+- [[Stop a service container.]] - rationale - gateway/cli/main.py
+- [[Stream real-time events or logs via WebSocket.]] - rationale - gateway/cli/main.py
+- [[TestOutputHelpers]] - code - gateway/tests/test_cli_coverage.py
+- [[Trigger a security scan.]] - rationale - gateway/cli/main.py
+- [[_default_format()]] - code - gateway/cli/main.py
+- [[_is_tty()]] - code - gateway/cli/main.py
+- [[_output()]] - code - gateway/cli/main.py
+- [[_print_table()]] - code - gateway/cli/main.py
+- [[add_collaborator()]] - code - gateway/cli/main.py
+- [[add_group_member()]] - code - gateway/cli/main.py
+- [[approve()]] - code - gateway/cli/main.py
+- [[cli()]] - code - gateway/cli/main.py
+- [[deny()]] - code - gateway/cli/main.py
+- [[freeze()]] - code - gateway/cli/main.py
+- [[get()]] - code - gateway/cli/main.py
+- [[get_correlation()]] - code - gateway/cli/main.py
+- [[get_egress_pending()]] - code - gateway/cli/main.py
+- [[get_events()]] - code - gateway/cli/main.py
+- [[get_groups()]] - code - gateway/cli/main.py
+- [[get_health()]] - code - gateway/cli/main.py
+- [[get_logs()]] - code - gateway/cli/main.py
+- [[get_risk()]] - code - gateway/cli/main.py
+- [[get_services()]] - code - gateway/cli/main.py
+- [[get_users()]] - code - gateway/cli/main.py
+- [[main()_11]] - code - gateway/cli/main.py
+- [[main.py_1]] - code - gateway/cli/main.py
+- [[restart()]] - code - gateway/cli/main.py
+- [[restart_service()]] - code - gateway/cli/main.py
+- [[scan()]] - code - gateway/cli/main.py
+- [[set()]] - code - gateway/cli/main.py
+- [[set_mode()]] - code - gateway/cli/main.py
+- [[stop()]] - code - gateway/cli/main.py
+- [[stop_service()]] - code - gateway/cli/main.py
+- [[tail()]] - code - gateway/cli/main.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -66,17 +84,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_Community 38]]
-- 7 edges to [[_COMMUNITY_Community 63]]
-- 4 edges to [[_COMMUNITY_Community 754]]
-- 4 edges to [[_COMMUNITY_Community 109]]
-- 1 edge to [[_COMMUNITY_Community 9]]
-- 1 edge to [[_COMMUNITY_Community 15]]
-- 1 edge to [[_COMMUNITY_Community 57]]
+- 9 edges to [[_COMMUNITY_Community 464]]
+- 5 edges to [[_COMMUNITY_Community 152]]
+- 1 edge to [[_COMMUNITY_Community 948]]
+- 1 edge to [[_COMMUNITY_Ingest API & Approval Routes]]
 
 ## Top bridge nodes
-- [[test_forward_stream.py]] - degree 42, connects to 5 communities
-- [[_make_stream_app_state()]] - degree 14, connects to 2 communities
-- [[_PassthroughPipeline]] - degree 12, connects to 2 communities
-- [[_BlockingPipeline]] - degree 8, connects to 2 communities
-- [[test_forward_stream_rejects_non_openai_compat_target()]] - degree 5, connects to 2 communities
+- [[main.py_1]] - degree 33, connects to 4 communities
+- [[TestOutputHelpers]] - degree 14, connects to 2 communities
+- [[cli()]] - degree 7, connects to 2 communities
+- [[tail()]] - degree 5, connects to 2 communities
+- [[_output()]] - degree 31, connects to 1 community

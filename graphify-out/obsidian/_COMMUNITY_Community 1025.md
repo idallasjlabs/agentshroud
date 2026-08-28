@@ -1,21 +1,22 @@
 ---
 type: community
-members: 8
+cohesion: 0.29
+members: 7
 ---
 
 # Community 1025
 
-**Members:** 8 nodes
+**Cohesion:** 0.29 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[.test_exception_fails_open()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_log_action_no_patterns_returns_original()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_log_action_with_patterns_returns_original()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_no_scanner_passthrough()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_strip_action_returns_sanitized()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_warn_action_returns_sanitized()]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestScanToolResult]] - code - gateway/tests/test_middleware_coverage.py
-- [[_scan_result()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.export_attack_report()]] - code - gateway/security/context_guard.py
+- [[.get_attack_summary()]] - code - gateway/security/context_guard.py
+- [[.get_session_risk_level()]] - code - gateway/security/context_guard.py
+- [[Any_35]] - code - gateway/security/context_guard.py
+- [[Export attack detection report.]] - rationale - gateway/security/context_guard.py
+- [[Get risk level for a session based on detected attacks.]] - rationale - gateway/security/context_guard.py
+- [[Get summary of detected attacks.]] - rationale - gateway/security/context_guard.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,11 +26,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 6]]
-- 2 edges to [[_COMMUNITY_Community 426]]
-- 1 edge to [[_COMMUNITY_Community 1]]
-- 1 edge to [[_COMMUNITY_Community 174]]
+- 3 edges to [[_COMMUNITY_Security Audit & Drift Detection]]
 
 ## Top bridge nodes
-- [[TestScanToolResult]] - degree 11, connects to 4 communities
-- [[_scan_result()]] - degree 5, connects to 1 community
+- [[.get_attack_summary()]] - degree 5, connects to 1 community
+- [[.export_attack_report()]] - degree 3, connects to 1 community
+- [[.get_session_risk_level()]] - degree 3, connects to 1 community

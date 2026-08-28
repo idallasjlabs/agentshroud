@@ -1,30 +1,32 @@
 ---
 type: community
+cohesion: 0.18
 members: 17
 ---
 
 # Community 541
 
+**Cohesion:** 0.18 - loosely connected
 **Members:** 17 nodes
 
 ## Members
-- [[.test_clean_report()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_critical_on_critical_findings()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_not_run_when_no_report()_1]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_prefix_filter()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_returns_most_recent_file()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_returns_none_for_empty_directory()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_returns_none_for_missing_directory()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_returns_none_on_invalid_json()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_returns_none_when_all_files_empty()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_skips_empty_files_returns_next_valid()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_warning_on_failures()]] - code - gateway/tests/test_scanner_integration.py
-- [[Load the most recent JSON report file from a directory.      Args         direc]] - rationale - gateway/security/scanner_integration.py
-- [[Return latest OpenSCAP compliance summary from saved reports.]] - rationale - gateway/security/scanner_integration.py
-- [[TestGetOpenscapSummary]] - code - gateway/tests/test_scanner_integration.py
-- [[TestLoadLatestJson]] - code - gateway/tests/test_scanner_integration.py
-- [[_load_latest_json()]] - code - gateway/security/scanner_integration.py
-- [[get_openscap_summary()]] - code - gateway/security/scanner_integration.py
+- [[.test_api_key_patterns()]] - code - gateway/tests/test_subagent_governance.py
+- [[.test_clean_text_no_patterns()]] - code - gateway/tests/test_subagent_governance.py
+- [[.test_credit_card_pattern()]] - code - gateway/tests/test_subagent_governance.py
+- [[.test_email_pattern()]] - code - gateway/tests/test_subagent_governance.py
+- [[.test_exfil_base64()]] - code - gateway/tests/test_subagent_governance.py
+- [[.test_exfil_hex()]] - code - gateway/tests/test_subagent_governance.py
+- [[.test_exfil_webhook()]] - code - gateway/tests/test_subagent_governance.py
+- [[.test_injection_role()]] - code - gateway/tests/test_subagent_governance.py
+- [[.test_injection_system_prompt()]] - code - gateway/tests/test_subagent_governance.py
+- [[.test_ssn_pattern()]] - code - gateway/tests/test_subagent_governance.py
+- [[Check text for PII patterns. Returns list of pattern names found.]] - rationale - gateway/security/subagent_governance.py
+- [[Check text for data exfiltration patterns.]] - rationale - gateway/security/subagent_governance.py
+- [[Check text for prompt injection patterns.]] - rationale - gateway/security/subagent_governance.py
+- [[TestPatternDetection]] - code - gateway/tests/test_subagent_governance.py
+- [[_check_exfil_patterns()]] - code - gateway/security/subagent_governance.py
+- [[_check_injection_patterns()]] - code - gateway/security/subagent_governance.py
+- [[_check_pii_patterns()]] - code - gateway/security/subagent_governance.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,16 +36,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_Community 123]]
-- 3 edges to [[_COMMUNITY_Community 59]]
-- 1 edge to [[_COMMUNITY_Community 1002]]
-- 1 edge to [[_COMMUNITY_Community 512]]
-- 1 edge to [[_COMMUNITY_Community 125]]
-- 1 edge to [[_COMMUNITY_Community 261]]
+- 6 edges to [[_COMMUNITY_Community 507]]
+- 4 edges to [[_COMMUNITY_Community 982]]
+- 4 edges to [[_COMMUNITY_Community 483]]
+- 2 edges to [[_COMMUNITY_Community 639]]
+- 1 edge to [[_COMMUNITY_Community 912]]
 
 ## Top bridge nodes
-- [[_load_latest_json()]] - degree 15, connects to 4 communities
-- [[get_openscap_summary()]] - degree 11, connects to 3 communities
-- [[TestLoadLatestJson]] - degree 8, connects to 1 community
-- [[TestGetOpenscapSummary]] - degree 5, connects to 1 community
-- [[.test_not_run_when_no_report()_1]] - degree 3, connects to 1 community
+- [[TestPatternDetection]] - degree 18, connects to 5 communities
+- [[_check_pii_patterns()]] - degree 9, connects to 3 communities
+- [[_check_exfil_patterns()]] - degree 8, connects to 3 communities
+- [[_check_injection_patterns()]] - degree 7, connects to 3 communities

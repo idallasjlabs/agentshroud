@@ -1,29 +1,31 @@
 ---
 type: community
+cohesion: 0.19
 members: 16
 ---
 
 # Community 564
 
+**Cohesion:** 0.19 - loosely connected
 **Members:** 16 nodes
 
 ## Members
-- [[ASGI application auth-gated transparent reverse proxy for Canvas.      Handles]] - rationale - gateway/proxy/canvas_proxy.py
-- [[Any_12]] - code - gateway/proxy/canvas_proxy.py
-- [[Build headers to forward upstream, stripping hop-by-hop and Authorization.]] - rationale - gateway/proxy/canvas_proxy.py
-- [[Proxy a WebSocket connection after validating auth.      Auth is extracted from]] - rationale - gateway/proxy/canvas_proxy.py
-- [[Proxy an HTTP request after validating Basic Auth.]] - rationale - gateway/proxy/canvas_proxy.py
-- [[Return gateway password from secret file or env var.]] - rationale - gateway/proxy/canvas_proxy.py
-- [[Validate HTTP Basic Auth credentials against the gateway password.]] - rationale - gateway/proxy/canvas_proxy.py
-- [[Validate token query parameter against the gateway password.]] - rationale - gateway/proxy/canvas_proxy.py
-- [[_build_proxy_headers()]] - code - gateway/proxy/canvas_proxy.py
-- [[_check_basic_auth()]] - code - gateway/proxy/canvas_proxy.py
-- [[_check_token_auth()]] - code - gateway/proxy/canvas_proxy.py
-- [[_handle_http()]] - code - gateway/proxy/canvas_proxy.py
-- [[_handle_websocket()]] - code - gateway/proxy/canvas_proxy.py
-- [[_read_gateway_password()]] - code - gateway/proxy/canvas_proxy.py
-- [[canvas_proxy.py]] - code - gateway/proxy/canvas_proxy.py
-- [[canvas_proxy_app()]] - code - gateway/proxy/canvas_proxy.py
+- [[Bootstrap cron copy must also exclude short UIDs.]] - rationale - gateway/tests/test_cron_jobs_prompts.py
+- [[Bootstrap cron copy must also have denial-token avoidance.]] - rationale - gateway/tests/test_cron_jobs_prompts.py
+- [[Every collaborator report prompt must instruct LLM to exclude short UIDs.]] - rationale - gateway/tests/test_cron_jobs_prompts.py
+- [[Every collaborator report prompt must instruct the LLM to avoid 'denied'.]] - rationale - gateway/tests/test_cron_jobs_prompts.py
+- [[Path_28]] - code - gateway/tests/test_cron_jobs_prompts.py
+- [[SSH config must have a Host .tail240ea8.ts.net block BEFORE Host  block.]] - rationale - gateway/tests/test_cron_jobs_prompts.py
+- [[Tailnet Host block must route through the gateway CONNECT proxy.]] - rationale - gateway/tests/test_cron_jobs_prompts.py
+- [[_collab_jobs()]] - code - gateway/tests/test_cron_jobs_prompts.py
+- [[_load_jobs()]] - code - gateway/tests/test_cron_jobs_prompts.py
+- [[test_bots_cron_prompts_exclude_short_uids()]] - code - gateway/tests/test_cron_jobs_prompts.py
+- [[test_bots_cron_prompts_warn_against_denied_token()]] - code - gateway/tests/test_cron_jobs_prompts.py
+- [[test_cron_jobs_prompts.py]] - code - gateway/tests/test_cron_jobs_prompts.py
+- [[test_cron_prompts_exclude_short_uids()]] - code - gateway/tests/test_cron_jobs_prompts.py
+- [[test_cron_prompts_warn_against_denied_token()]] - code - gateway/tests/test_cron_jobs_prompts.py
+- [[test_ssh_config_routes_tailnet_fqdn()]] - code - gateway/tests/test_cron_jobs_prompts.py
+- [[test_ssh_tailnet_block_has_proxy_command()]] - code - gateway/tests/test_cron_jobs_prompts.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,11 +33,3 @@ members: 16
 TABLE source_file, type FROM #community/Community_564
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 6]]
-- 1 edge to [[_COMMUNITY_Community 52]]
-- 1 edge to [[_COMMUNITY_Community 418]]
-
-## Top bridge nodes
-- [[canvas_proxy_app()]] - degree 8, connects to 3 communities

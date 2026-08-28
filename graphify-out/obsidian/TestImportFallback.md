@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "Community 418"
+community: "Community 424"
 location: "L346"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_418
+  - community/Community_424
 ---
 
 # TestImportFallback
@@ -17,4 +17,4 @@ tags:
 - [[DNSForwarderProtocol]] - `uses` [INFERRED]
 - [[test_dns_canvas_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_418
+#graphify/code #graphify/INFERRED #community/Community_424

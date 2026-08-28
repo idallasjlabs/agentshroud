@@ -12,7 +12,7 @@ tags:
 # llm_proxy.py
 
 ## Connections
-- [[AGENTS_2]] - `conceptually_related_to` [INFERRED]
+- [[AGENTS_1]] - `conceptually_related_to` [INFERRED]
 - [[ANTHROPIC_BASE_URL]] - `references` [INFERRED]
 - [[LLMProxy]] - `contains` [EXTRACTED]
 - [[anthropic_to_openai_request()]] - `imports` [EXTRACTED]

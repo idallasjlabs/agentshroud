@@ -1,14 +1,16 @@
 ---
 type: community
+cohesion: 1.00
 members: 1
 ---
 
 # Community 1757
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[Collaborator Greeter State Debug Helper]] - code - scripts/verify-greeter-state.sh
+- [[DevSecOps Skill]] - document - .agents/skills/i-devsecops/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

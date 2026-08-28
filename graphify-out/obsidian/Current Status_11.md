@@ -1,17 +1,17 @@
 ---
-source_file: "docs/testing/README.md"
+source_file: "docs/vault/04 - Environment Variables/HTTP_PROXY.md"
 type: "document"
-community: "Community 1345"
-location: "L14"
+community: "Community 203"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1345
+  - community/Community_203
 ---
 
 # Current Status
 
 ## Connections
-- [[Testing Documentation]] - `contains` [EXTRACTED]
+- [[HTTP_PROXY  HTTPS_PROXY]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1345
+#graphify/document #graphify/EXTRACTED #community/Community_203

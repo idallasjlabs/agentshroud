@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/tmux/SKILL.md"
 type: "document"
-community: "Community 982"
+community: "Community 981"
 location: "L1"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Community_982
+  - community/Community_981
 ---
 
 # SKILL.md
@@ -17,4 +17,4 @@ tags:
 - [[tmux Session Control]] - `contains` [EXTRACTED]
 - [[wait-for-text.sh]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Community_982
+#graphify/document #graphify/INFERRED #community/Community_981
