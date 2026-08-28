@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "Community 870"
+community: "PII Sanitizer & E2E Tests"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_870
+  - community/PII_Sanitizer__E2E_Tests
 ---
 
 # test_e2e_watchtower.py
@@ -43,4 +43,4 @@ tags:
 - [[test_pipeline_owner_exempt_from_fail_closed()]] - `contains` [EXTRACTED]
 - [[trust_manager()_3]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_870
+#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer__E2E_Tests

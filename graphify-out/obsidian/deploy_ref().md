@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/canary-deploy.sh"
 type: "code"
-community: "Community 1046"
+community: "Community 1049"
 location: "L123"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1046
+  - community/Community_1049
 ---
 
 # deploy_ref()
@@ -17,4 +17,4 @@ tags:
 - [[run()_4]] - `calls` [EXTRACTED]
 - [[run_in_repo()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1046
+#graphify/code #graphify/EXTRACTED #community/Community_1049

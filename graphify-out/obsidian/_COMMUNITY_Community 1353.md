@@ -1,17 +1,19 @@
 ---
 type: community
+cohesion: 0.50
 members: 4
 ---
 
 # Community 1353
 
+**Cohesion:** 0.50 - moderately connected
 **Members:** 4 nodes
 
 ## Members
-- [[.test_owner_deny_ambiguous_multiple_pending_shows_usage()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_owner_deny_without_target_auto_selects_single_pending()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[Owner deny with one pending request should deny that request.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Owner deny without target, with 2+ pending collaborator         requests, is ge]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_full_compose()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_no_compose_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_unreadable_first_path_falls_through()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestResourceAvailability]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +23,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_Community 2]]
-- 2 edges to [[_COMMUNITY_Community 32]]
+- 2 edges to [[_COMMUNITY_Community 193]]
+- 1 edge to [[_COMMUNITY_Community 288]]
 
 ## Top bridge nodes
-- [[.test_owner_deny_without_target_auto_selects_single_pending()]] - degree 8, connects to 2 communities
-- [[.test_owner_deny_ambiguous_multiple_pending_shows_usage()]] - degree 7, connects to 2 communities
+- [[TestResourceAvailability]] - degree 4, connects to 1 community
+- [[.test_full_compose()]] - degree 2, connects to 1 community
+- [[.test_unreadable_first_path_falls_through()]] - degree 2, connects to 1 community

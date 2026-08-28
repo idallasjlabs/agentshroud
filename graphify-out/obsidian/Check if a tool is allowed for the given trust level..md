@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/progressive_trust_config.py"
 type: "rationale"
-community: "Community 35"
+community: "Progressive Trust"
 location: "L230"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_35
+  - community/Progressive_Trust
 ---
 
 # Check if a tool is allowed for the given trust level.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.is_tool_allowed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_35
+#graphify/rationale #graphify/EXTRACTED #community/Progressive_Trust

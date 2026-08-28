@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/agents/openclaw-identity.md"
 type: "document"
-community: "Community 479"
+community: "Community 745"
 location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_479
+  - community/Community_745
 ---
 
 # Competitive Intelligence Protocol
@@ -16,4 +16,4 @@ tags:
 - [[IDENTITY.md - Who I Am_1]] - `contains` [EXTRACTED]
 - [[OpenClawAgentShroud Bot Identity]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_479
+#graphify/document #graphify/EXTRACTED #community/Community_745

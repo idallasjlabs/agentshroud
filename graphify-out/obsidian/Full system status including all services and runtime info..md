@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "Community 528"
+community: "Community 37"
 location: "L233"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_528
+  - community/Community_37
 ---
 
 # Full system status including all services and runtime info.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_status()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_528
+#graphify/rationale #graphify/EXTRACTED #community/Community_37

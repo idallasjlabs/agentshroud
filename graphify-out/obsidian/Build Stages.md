@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/Dockerfile.gateway.md"
 type: "document"
-community: "Community 120"
+community: "Community 820"
 location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_120
+  - community/Community_820
 ---
 
 # Build Stages
@@ -16,4 +16,4 @@ tags:
 - [[Stage 1 Builder (`python3.13-slim AS builder`)]] - `contains` [EXTRACTED]
 - [[Stage 2 Runtime (`python3.13-slim`)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_120
+#graphify/document #graphify/EXTRACTED #community/Community_820

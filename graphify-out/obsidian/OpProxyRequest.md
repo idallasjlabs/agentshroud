@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Community 9"
+community: "RBAC & SOC Realtime"
 location: "L144"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_9
+  - community/RBAC__SOC_Realtime
 ---
 
 # OpProxyRequest
@@ -31,4 +31,4 @@ tags:
 - [[main.py_2]] - `contains` [EXTRACTED]
 - [[op_proxy()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_9
+#graphify/code #graphify/INFERRED #community/RBAC__SOC_Realtime

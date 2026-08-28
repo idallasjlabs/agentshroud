@@ -1,14 +1,16 @@
 ---
 type: community
+cohesion: 1.00
 members: 1
 ---
 
 # Community 1759
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[SecureClaw Project (concept)]] - concept - docker/config/hermes/skills/i-pm/SKILL.md
+- [[i-gitops SKILL (stub)]] - document - docker/config/hermes/skills/i-gitops/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

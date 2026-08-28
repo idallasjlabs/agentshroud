@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1275
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[Advisory Collaborators (Brett, Chris, Gabriel, TJ)]] - concept - docs/TEAM.md
-- [[Collaborator Session Isolation (blocked functionsskills)]] - concept - docs/claude-security-audit-prompt.md
-- [[Collaborators_1]] - document - docs/setup-slack.md
-- [[Collaborators_2]] - document - docs/setup-telegram.md
-- [[Steve Hay — Collaborator (Telegram ID 8279589982)]] - concept - docs/TEAM.md
+- [[.test_invalid_json()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_missing_dir()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_no_files()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_valid()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestGetSbom_1]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,11 +24,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 305]]
-- 1 edge to [[_COMMUNITY_Community 739]]
-- 1 edge to [[_COMMUNITY_Community 413]]
+- 2 edges to [[_COMMUNITY_Community 193]]
+- 1 edge to [[_COMMUNITY_Community 288]]
 
 ## Top bridge nodes
-- [[Collaborators_1]] - degree 3, connects to 1 community
-- [[Collaborators_2]] - degree 2, connects to 1 community
-- [[Steve Hay — Collaborator (Telegram ID 8279589982)]] - degree 2, connects to 1 community
+- [[TestGetSbom_1]] - degree 5, connects to 1 community
+- [[.test_invalid_json()]] - degree 2, connects to 1 community
+- [[.test_valid()]] - degree 2, connects to 1 community

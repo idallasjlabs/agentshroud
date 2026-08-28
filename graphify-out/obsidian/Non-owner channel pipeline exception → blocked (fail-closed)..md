@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "rationale"
-community: "Community 72"
+community: "Community 74"
 location: "L299"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_72
+  - community/Community_74
 ---
 
 # Non-owner channel: pipeline exception → blocked (fail-closed).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_non_owner_pipeline_exception_fail_closed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_72
+#graphify/rationale #graphify/EXTRACTED #community/Community_74

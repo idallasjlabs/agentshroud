@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md"
 type: "document"
-community: "Community 548"
+community: "Community 580"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_548
+  - community/Community_580
 ---
 
 # Three-Phase Approach
@@ -18,4 +18,4 @@ tags:
 - [[Phase B Compatibility Testing]] - `contains` [EXTRACTED]
 - [[Phase C Production Lockdown]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_548
+#graphify/document #graphify/EXTRACTED #community/Community_580

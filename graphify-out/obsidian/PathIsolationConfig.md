@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/path_isolation.py"
 type: "code"
-community: "Community 6"
+community: "Memory Lifecycle & Egress Filtering"
 location: "L27"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_6
+  - community/Memory_Lifecycle__Egress_Filtering
 ---
 
 # PathIsolationConfig
@@ -43,4 +43,4 @@ tags:
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_path_isolation.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_6
+#graphify/code #graphify/INFERRED #community/Memory_Lifecycle__Egress_Filtering

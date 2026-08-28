@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION.md"
 type: "document"
-community: "Community 194"
+community: "Community 384"
 location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_194
+  - community/Community_384
 ---
 
 # Option 1: OpenClaw Directly on Mac (Non-Admin User)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Comparison Three Deployment Options]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_194
+#graphify/document #graphify/EXTRACTED #community/Community_384

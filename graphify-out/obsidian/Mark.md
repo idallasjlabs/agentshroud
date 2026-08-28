@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/legal/USPTO-APPLICATION.md"
 type: "document"
-community: "Community 1529"
+community: "Community 1314"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1529
+  - community/Community_1314
 ---
 
 # Mark
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Application Fields]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1529
+#graphify/document #graphify/EXTRACTED #community/Community_1314

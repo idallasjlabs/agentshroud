@@ -1,16 +1,19 @@
 ---
 type: community
-members: 3
+cohesion: 0.50
+members: 4
 ---
 
 # Community 1365
 
-**Members:** 3 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[T - Tampering with Data]] - document - docs/security/threat-model.md
-- [[Threat Audit Log Tampering]] - document - docs/security/threat-model.md
-- [[Threat Configuration Drift]] - document - docs/security/threat-model.md
+- [[.test_collaborator_incremental_exfil_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_collaborator_memory_access_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[Chunked extraction prompts should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Direct memory-content requests should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,7 +23,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 919]]
+- 10 edges to [[_COMMUNITY_Telegram Proxy Inbound]]
+- 2 edges to [[_COMMUNITY_Community 31]]
 
 ## Top bridge nodes
-- [[T - Tampering with Data]] - degree 3, connects to 1 community
+- [[.test_collaborator_incremental_exfil_request_is_blocked_and_quarantined()]] - degree 8, connects to 2 communities
+- [[.test_collaborator_memory_access_request_is_blocked_and_quarantined()]] - degree 7, connects to 2 communities

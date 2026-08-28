@@ -1,34 +1,37 @@
 ---
 type: community
-members: 21
+cohesion: 0.09
+members: 22
 ---
 
 # Community 409
 
-**Members:** 21 nodes
+**Cohesion:** 0.09 - loosely connected
+**Members:** 22 nodes
 
 ## Members
-- [[1Password (op-proxy)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[Anthropic API]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[Approval Queue (human gate)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[Audit Ledger (SHA-256 hash only)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[Cron Scheduler (8 scheduled jobs)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[Execute Action (tool call  reply)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[GitHub API]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[HTTP CONNECT Proxy (domain allowlist)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[LLM Inference (OpenAI  Anthropic)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[MCP Inspector]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[OpenAI API]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[PII Sanitizer (Presidio  regex)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[Receive message  cron trigger]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[SSH Proxy]] - concept - docs/architecture/system-architecture.md
-- [[Telegram API]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[Telegram Input (@agentshroud_bot)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[Web UI Input (localhost18790)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[agentshroud-config volume (openclaw.json)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[iMessage Input (imsg-ssh bridge)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[ledger.db (90-day retention)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[ssh_proxy (approved hosts only)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
+- [[.test_0_0_0_0_blocked()]] - code - gateway/tests/test_url_analyzer.py
+- [[.test_10_255_blocked()]] - code - gateway/tests/test_url_analyzer.py
+- [[.test_10_x_blocked()]] - code - gateway/tests/test_url_analyzer.py
+- [[.test_127_0_0_1_blocked()]] - code - gateway/tests/test_url_analyzer.py
+- [[.test_127_x_blocked()]] - code - gateway/tests/test_url_analyzer.py
+- [[.test_169_254_link_local_blocked()]] - code - gateway/tests/test_url_analyzer.py
+- [[.test_172_16_blocked()]] - code - gateway/tests/test_url_analyzer.py
+- [[.test_172_31_blocked()]] - code - gateway/tests/test_url_analyzer.py
+- [[.test_192_168_blocked()]] - code - gateway/tests/test_url_analyzer.py
+- [[.test_decimal_ip_blocked()]] - code - gateway/tests/test_url_analyzer.py
+- [[.test_hex_ip_blocked()]] - code - gateway/tests/test_url_analyzer.py
+- [[.test_ip6_localhost_blocked()]] - code - gateway/tests/test_url_analyzer.py
+- [[.test_ipv4_mapped_ipv6_blocked()_1]] - code - gateway/tests/test_url_analyzer.py
+- [[.test_ipv4_mapped_ipv6_private_blocked()]] - code - gateway/tests/test_url_analyzer.py
+- [[.test_ipv6_link_local_blocked()]] - code - gateway/tests/test_url_analyzer.py
+- [[.test_ipv6_loopback_blocked()]] - code - gateway/tests/test_url_analyzer.py
+- [[.test_ipv6_ula_blocked()]] - code - gateway/tests/test_url_analyzer.py
+- [[.test_localhost_blocked()]] - code - gateway/tests/test_url_analyzer.py
+- [[0x7f000001 = 127.0.0.1 in hex.]] - rationale - gateway/tests/test_url_analyzer.py
+- [[2130706433 = 127.0.0.1 in decimal.]] - rationale - gateway/tests/test_url_analyzer.py
+- [[SSRF blocking — the one hard block.]] - rationale - gateway/tests/test_url_analyzer.py
+- [[TestSSRFDetection]] - code - gateway/tests/test_url_analyzer.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -38,13 +41,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 312]]
-- 1 edge to [[_COMMUNITY_Community 369]]
-- 1 edge to [[_COMMUNITY_Community 287]]
-- 1 edge to [[_COMMUNITY_Community 864]]
-- 1 edge to [[_COMMUNITY_Community 170]]
+- 2 edges to [[_COMMUNITY_Community 48]]
+- 1 edge to [[_COMMUNITY_Community 19]]
 
 ## Top bridge nodes
-- [[Audit Ledger (SHA-256 hash only)]] - degree 7, connects to 3 communities
-- [[Approval Queue (human gate)]] - degree 3, connects to 1 community
-- [[ssh_proxy (approved hosts only)]] - degree 2, connects to 1 community
+- [[TestSSRFDetection]] - degree 22, connects to 2 communities

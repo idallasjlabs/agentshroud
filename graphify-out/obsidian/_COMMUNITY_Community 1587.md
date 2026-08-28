@@ -1,14 +1,17 @@
 ---
 type: community
-members: 1
+cohesion: 1.00
+members: 2
 ---
 
 # Community 1587
 
-**Members:** 1 nodes
+**Cohesion:** 1.00 - tightly connected
+**Members:** 2 nodes
 
 ## Members
-- [[Hermes Local-Model Temperature Repetition-Loop Investigation]] - concept - CONTINUE-2026-08-17.md
+- [[.test_memory_error_without_embedding_provider_hint_is_not_rewritten()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Non-embedding memory errors should not be forced into embedding guidance text.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -16,3 +19,11 @@ members: 1
 TABLE source_file, type FROM #community/Community_1587
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 93]]
+- 1 edge to [[_COMMUNITY_Community 80]]
+- 1 edge to [[_COMMUNITY_Community 96]]
+
+## Top bridge nodes
+- [[.test_memory_error_without_embedding_provider_hint_is_not_rewritten()]] - degree 4, connects to 3 communities

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ssh_proxy/proxy.py"
 type: "rationale"
-community: "Community 12"
+community: "Community 64"
 location: "L186"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_12
+  - community/Community_64
 ---
 
 # Check if a command is auto-approved (no human approval needed).          Auto-ap
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.is_auto_approved()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_12
+#graphify/rationale #graphify/EXTRACTED #community/Community_64

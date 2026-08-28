@@ -1,19 +1,21 @@
 ---
 type: community
+cohesion: 0.40
 members: 6
 ---
 
 # Community 1076
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 6 nodes
 
 ## Members
-- [[FY26 Cost Reduction Context]] - document - .agents/skills/i-aws/SKILL.md
-- [[In-Scope Departments (Cost Reduction)]] - document - .agents/skills/i-aws/SKILL.md
-- [[Infrastructure You Must Know]] - document - .agents/skills/i-aws/SKILL.md
-- [[Out-of-Scope Departments (Inventory & Tag Only)]] - document - .agents/skills/i-aws/SKILL.md
-- [[Savings Levers (Ranked by Impact)]] - document - .agents/skills/i-aws/SKILL.md
-- [[Target 40% Full-Year Reduction on Global Services Resources]] - document - .agents/skills/i-aws/SKILL.md
+- [[._is_connect_error()]] - code - gateway/proxy/llm_proxy.py
+- [[._local_backend_unavailable_response()]] - code - gateway/proxy/llm_proxy.py
+- [[BaseException_2]] - code - gateway/proxy/llm_proxy.py
+- [[BaseException]] - code - gateway/proxy/llm_proxy.py
+- [[Build a structured 503 for an unreachable local backend.          Logs one WARNI]] - rationale - gateway/proxy/llm_proxy.py
+- [[True for connection-level failures (refused  unreachable  reset).          Unw]] - rationale - gateway/proxy/llm_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +25,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 518]]
+- 2 edges to [[_COMMUNITY_Community 83]]
+- 2 edges to [[_COMMUNITY_Community 129]]
 
 ## Top bridge nodes
-- [[FY26 Cost Reduction Context]] - degree 7, connects to 1 community
+- [[._is_connect_error()]] - degree 5, connects to 2 communities
+- [[._local_backend_unavailable_response()]] - degree 5, connects to 2 communities

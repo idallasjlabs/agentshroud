@@ -1,12 +1,12 @@
 ---
 source_file: "tests/startup_smoke/test_apply_patches.js"
 type: "code"
-community: "Community 920"
+community: "Community 914"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_920
+  - community/Community_914
 ---
 
 # test_apply_patches.js
@@ -21,4 +21,4 @@ tags:
 - [[runPatches()]] - `contains` [EXTRACTED]
 - [[{ spawnSync }]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_920
+#graphify/code #graphify/EXTRACTED #community/Community_914

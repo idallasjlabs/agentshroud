@@ -1,40 +1,42 @@
 ---
 type: community
+cohesion: 0.14
 members: 27
 ---
 
 # Community 312
 
+**Cohesion:** 0.14 - loosely connected
 **Members:** 27 nodes
 
 ## Members
-- [[AI Security Standards Tracker job]] - concept - docker/config/hermes/cron/jobs.yaml
-- [[Approval Queue]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
-- [[Auto-Restart]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
-- [[Crash Recovery]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
-- [[Data Integrity After Crash]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
-- [[Detecting a Crash]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
-- [[EnhancedApprovalQueue (`enhanced_queue.py`)]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
-- [[Environment Variables Used_10]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
-- [[Graceful Shutdown_1]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
-- [[Key Class `EnhancedApprovalQueue`]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
-- [[Kill Switch (Emergency Stop)]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
-- [[Ledger Database]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
-- [[Manual Recovery]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
-- [[Normal Stop]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
-- [[OOM Recovery]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
-- [[Persistence]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
-- [[Purpose_123]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
-- [[Related Notes_4]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
-- [[Related Notes_9]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
-- [[Responsibilities_9]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
-- [[Shutdown & Recovery_1]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
-- [[Shutdown Sequence]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
-- [[State After Recovery]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
-- [[Timeout Behavior]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
-- [[Tool Risk Tiers]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
-- [[WebSocket Notifications]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
-- [[approval_queue.py]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
+- [[PATH_1]] - code - docker/scripts/colima-health-check.sh
+- [[cmd_buildkit()]] - code - docker/scripts/docker-cleanup.sh
+- [[cmd_diagnose()]] - code - docker/scripts/docker-cleanup.sh
+- [[cmd_nuclear()]] - code - docker/scripts/docker-cleanup.sh
+- [[cmd_restart()]] - code - docker/scripts/docker-cleanup.sh
+- [[cmd_safe_prune()]] - code - docker/scripts/docker-cleanup.sh
+- [[colima-firewall.sh]] - code - docker/scripts/colima-firewall.sh
+- [[colima-firewall.sh script]] - code - docker/scripts/colima-firewall.sh
+- [[colima-health-check.sh]] - code - docker/scripts/colima-health-check.sh
+- [[colima-health-check.sh script]] - code - docker/scripts/colima-health-check.sh
+- [[container-net-diag.sh]] - code - docker/scripts/container-net-diag.sh
+- [[container-net-diag.sh script]] - code - docker/scripts/container-net-diag.sh
+- [[docker-cleanup.sh]] - code - docker/scripts/docker-cleanup.sh
+- [[docker-cleanup.sh script]] - code - docker/scripts/docker-cleanup.sh
+- [[fail()]] - code - docker/scripts/container-net-diag.sh
+- [[has()]] - code - docker/scripts/container-net-diag.sh
+- [[header()]] - code - docker/scripts/container-net-diag.sh
+- [[http_test()]] - code - docker/scripts/container-net-diag.sh
+- [[info()]] - code - docker/scripts/container-net-diag.sh
+- [[log()]] - code - docker/scripts/colima-health-check.sh
+- [[notify()_1]] - code - docker/scripts/colima-health-check.sh
+- [[pass()]] - code - docker/scripts/container-net-diag.sh
+- [[read_state()]] - code - docker/scripts/colima-health-check.sh
+- [[tcp_test()]] - code - docker/scripts/container-net-diag.sh
+- [[usage()]] - code - docker/scripts/docker-cleanup.sh
+- [[warn()]] - code - docker/scripts/container-net-diag.sh
+- [[write_state()]] - code - docker/scripts/colima-health-check.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -42,19 +44,3 @@ members: 27
 TABLE source_file, type FROM #community/Community_312
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 315]]
-- 1 edge to [[_COMMUNITY_Community 638]]
-- 1 edge to [[_COMMUNITY_Community 311]]
-- 1 edge to [[_COMMUNITY_Community 271]]
-- 1 edge to [[_COMMUNITY_Community 413]]
-- 1 edge to [[_COMMUNITY_Community 409]]
-- 1 edge to [[_COMMUNITY_Community 569]]
-- 1 edge to [[_COMMUNITY_Community 626]]
-- 1 edge to [[_COMMUNITY_Community 293]]
-
-## Top bridge nodes
-- [[approval_queue.py]] - degree 8, connects to 5 communities
-- [[AI Security Standards Tracker job]] - degree 4, connects to 3 communities
-- [[Shutdown & Recovery_1]] - degree 7, connects to 1 community

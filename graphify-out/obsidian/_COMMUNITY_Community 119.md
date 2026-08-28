@@ -1,62 +1,64 @@
 ---
 type: community
+cohesion: 0.10
 members: 49
 ---
 
 # Community 119
 
+**Cohesion:** 0.10 - loosely connected
 **Members:** 49 nodes
 
 ## Members
-- [[.__init__()_192]] - code - gateway/tests/test_web_proxy_security.py
-- [[.__init__()_193]] - code - gateway/tests/test_web_proxy_security.py
-- [[.__init__()_194]] - code - gateway/tests/test_web_proxy_security.py
-- [[._audit()_1]] - code - gateway/proxy/web_proxy.py
-- [[.check()_1]] - code - gateway/proxy/web_proxy.py
-- [[.check_request()]] - code - gateway/proxy/web_proxy.py
-- [[.flagged()_2]] - code - gateway/proxy/web_proxy.py
-- [[.scan_response()]] - code - gateway/proxy/web_proxy.py
-- [[.setUp()]] - code - gateway/tests/test_web_proxy_security.py
-- [[.test_browser_security_blocks_high_risk_urls()]] - code - gateway/tests/test_web_proxy_security.py
-- [[.test_browser_security_flags_medium_risk_urls()]] - code - gateway/tests/test_web_proxy_security.py
-- [[.test_browser_security_skips_non_browser_user_agents()]] - code - gateway/tests/test_web_proxy_security.py
-- [[.test_dns_filter_blocks_suspicious_domains()]] - code - gateway/tests/test_web_proxy_security.py
-- [[.test_dns_filter_flags_but_allows_questionable_domains()]] - code - gateway/tests/test_web_proxy_security.py
-- [[.test_egress_monitor_logs_responses()]] - code - gateway/tests/test_web_proxy_security.py
-- [[.test_graceful_degradation_browser_security_error()]] - code - gateway/tests/test_web_proxy_security.py
-- [[.test_graceful_degradation_dns_error()]] - code - gateway/tests/test_web_proxy_security.py
-- [[.test_graceful_degradation_egress_error()]] - code - gateway/tests/test_web_proxy_security.py
-- [[.test_multiple_security_modules_integration()]] - code - gateway/tests/test_web_proxy_security.py
-- [[.test_oauth_security_error_handling()]] - code - gateway/tests/test_web_proxy_security.py
-- [[.test_oauth_security_flags_auth_headers()]] - code - gateway/tests/test_web_proxy_security.py
-- [[Check an outbound HTTP request before it's sent.          This is the pre-flight]] - rationale - gateway/proxy/web_proxy.py
-- [[Check if request is within rate limit. Returns True if allowed.]] - rationale - gateway/proxy/web_proxy.py
-- [[MockDNSVerdict]] - code - gateway/tests/test_web_proxy_security.py
-- [[MockEgressChannel]] - code - gateway/tests/test_web_proxy_security.py
-- [[MockEgressEvent]] - code - gateway/tests/test_web_proxy_security.py
-- [[MockThreatLevel]] - code - gateway/tests/test_web_proxy_security.py
-- [[MockURLResult]] - code - gateway/tests/test_web_proxy_security.py
-- [[ProxyAction]] - code - gateway/proxy/web_proxy.py
-- [[Record an audit entry in the hash chain.]] - rationale - gateway/proxy/web_proxy.py
-- [[Result of proxying a web request.]] - rationale - gateway/proxy/web_proxy.py
-- [[Scan a response body for prompt injection, PII, and hidden content.          Thi]] - rationale - gateway/proxy/web_proxy.py
-- [[Set up test fixtures._4]] - rationale - gateway/tests/test_web_proxy_security.py
-- [[Test that DNS filter blocks suspicious domains.]] - rationale - gateway/tests/test_web_proxy_security.py
-- [[Test that DNS filter errors cause fail-closed behavior.]] - rationale - gateway/tests/test_web_proxy_security.py
-- [[Test that DNS filter flags questionable domains but allows them through.]] - rationale - gateway/tests/test_web_proxy_security.py
-- [[Test that OAuth security errors don't block requests.]] - rationale - gateway/tests/test_web_proxy_security.py
-- [[Test that OAuth security flags requests with authorization headers.]] - rationale - gateway/tests/test_web_proxy_security.py
-- [[Test that browser security blocks high-risk URLs for browser user agents.]] - rationale - gateway/tests/test_web_proxy_security.py
-- [[Test that browser security checks are skipped for non-browser user agents.]] - rationale - gateway/tests/test_web_proxy_security.py
-- [[Test that browser security errors cause fail-closed behavior.]] - rationale - gateway/tests/test_web_proxy_security.py
-- [[Test that browser security flags medium-risk URLs.]] - rationale - gateway/tests/test_web_proxy_security.py
-- [[Test that egress monitor logs all outbound connections.]] - rationale - gateway/tests/test_web_proxy_security.py
-- [[Test that egress monitoring errors don't break response processing.]] - rationale - gateway/tests/test_web_proxy_security.py
-- [[Test that multiple security modules work together correctly.]] - rationale - gateway/tests/test_web_proxy_security.py
-- [[Test that security modules are properly integrated into web proxy.]] - rationale - gateway/tests/test_web_proxy_security.py
-- [[TestWebProxySecurityIntegration]] - code - gateway/tests/test_web_proxy_security.py
-- [[WebProxyResult]] - code - gateway/proxy/web_proxy.py
-- [[test_web_proxy_security.py]] - code - gateway/tests/test_web_proxy_security.py
+- [[.__init__()_158]] - code - gateway/tests/test_forward_stream.py
+- [[.process_inbound()_6]] - code - gateway/tests/test_forward_stream.py
+- [[.process_outbound()_7]] - code - gateway/tests/test_forward_stream.py
+- [[.process_outbound()_6]] - code - gateway/tests/test_forward_stream.py
+- [[2-sentence sliding window over `sentences` each window (previous +     current,]] - rationale - gateway/ingest_api/routes/forward.py
+- [[AgentTarget_2]] - code - gateway/ingest_api/routes/forward.py
+- [[Buffer streamed text deltas and yield each complete sentence as soon as     its]] - rationale - gateway/ingest_api/routes/forward.py
+- [[Build a mock app_state whose router streams `sentences_out` as raw     text delt]] - rationale - gateway/tests/test_forward_stream.py
+- [[Mock pipeline that blocks any window containing the word 'secret'.]] - rationale - gateway/tests/test_forward_stream.py
+- [[Mock pipeline whose process_outbound returns the window text unchanged     — ver]] - rationale - gateway/tests/test_forward_stream.py
+- [[Resolve the outbound trust level for `request`, shared by the blocking     and s]] - rationale - gateway/ingest_api/routes/forward.py
+- [[Sliding-window sentinel-joined security filter for streaming voice pipeline]] - concept - gateway/tests/test_forward_stream.py
+- [[_BlockingPipeline]] - code - gateway/tests/test_forward_stream.py
+- [[_PassthroughPipeline]] - code - gateway/tests/test_forward_stream.py
+- [[_aiter()]] - code - gateway/tests/test_forward_stream.py
+- [[_filtered_sentence_stream()]] - code - gateway/ingest_api/routes/forward.py
+- [[_make_stream_app_state()]] - code - gateway/tests/test_forward_stream.py
+- [[_parse_sse_events()]] - code - gateway/tests/test_forward_stream.py
+- [[_post_stream()]] - code - gateway/tests/test_forward_stream.py
+- [[_request()]] - code - gateway/tests/test_forward_stream.py
+- [[_resolve_user_trust_level()]] - code - gateway/ingest_api/routes/forward.py
+- [[_sentences_from_deltas()]] - code - gateway/ingest_api/routes/forward.py
+- [[_target()]] - code - gateway/tests/test_forward_stream.py
+- [[test_filtered_stream_blocked_final_sentence_yields_nothing()]] - code - gateway/tests/test_forward_stream.py
+- [[test_filtered_stream_blocked_window_releases_nothing_for_that_window()]] - code - gateway/tests/test_forward_stream.py
+- [[test_filtered_stream_redaction_applies_to_released_sentence()]] - code - gateway/tests/test_forward_stream.py
+- [[test_filtered_stream_releases_sentences_in_order()]] - code - gateway/tests/test_forward_stream.py
+- [[test_filtered_stream_sentinel_stripped_fails_safe_by_releasing_all()]] - code - gateway/tests/test_forward_stream.py
+- [[test_filtered_stream_single_sentence_flushed_alone()]] - code - gateway/tests/test_forward_stream.py
+- [[test_filtered_stream_windows_are_pairs_joined_by_sentinel()]] - code - gateway/tests/test_forward_stream.py
+- [[test_forward_stream.py]] - code - gateway/tests/test_forward_stream.py
+- [[test_forward_stream_503_when_no_pipeline_configured()]] - code - gateway/tests/test_forward_stream.py
+- [[test_forward_stream_drops_credential_bearing_sentence()]] - code - gateway/tests/test_forward_stream.py
+- [[test_forward_stream_emits_sentence_events_then_done()]] - code - gateway/tests/test_forward_stream.py
+- [[test_forward_stream_forward_error_still_emits_done_event()]] - code - gateway/tests/test_forward_stream.py
+- [[test_forward_stream_ledger_failure_still_emits_done_event()]] - code - gateway/tests/test_forward_stream.py
+- [[test_forward_stream_records_ledger_entry_with_full_assembled_text()]] - code - gateway/tests/test_forward_stream.py
+- [[test_forward_stream_rejects_non_openai_compat_target()]] - code - gateway/tests/test_forward_stream.py
+- [[test_forward_stream_returns_early_response_when_queued_for_approval()]] - code - gateway/tests/test_forward_stream.py
+- [[test_forward_stream_unexpected_error_still_emits_done_event()]] - code - gateway/tests/test_forward_stream.py
+- [[test_resolve_trust_level_maps_trust_score_to_tier()]] - code - gateway/tests/test_forward_stream.py
+- [[test_resolve_trust_level_no_trust_info_for_target_defaults_untrusted()]] - code - gateway/tests/test_forward_stream.py
+- [[test_resolve_trust_level_no_trust_manager_defaults_untrusted()]] - code - gateway/tests/test_forward_stream.py
+- [[test_resolve_trust_level_non_owner_user_id_does_not_upgrade()]] - code - gateway/tests/test_forward_stream.py
+- [[test_resolve_trust_level_owner_user_id_upgrades_to_full()]] - code - gateway/tests/test_forward_stream.py
+- [[test_sentences_from_deltas_empty_stream_yields_nothing()]] - code - gateway/tests/test_forward_stream.py
+- [[test_sentences_from_deltas_flushes_trailing_fragment_without_punctuation()]] - code - gateway/tests/test_forward_stream.py
+- [[test_sentences_from_deltas_single_delta_full_sentence()]] - code - gateway/tests/test_forward_stream.py
+- [[test_sentences_from_deltas_splits_on_boundaries()]] - code - gateway/tests/test_forward_stream.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -66,19 +68,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 31 edges to [[_COMMUNITY_Community 30]]
-- 6 edges to [[_COMMUNITY_Community 5]]
-- 5 edges to [[_COMMUNITY_Community 78]]
-- 2 edges to [[_COMMUNITY_Community 6]]
-- 2 edges to [[_COMMUNITY_Community 442]]
-- 1 edge to [[_COMMUNITY_Community 981]]
-- 1 edge to [[_COMMUNITY_Community 147]]
-- 1 edge to [[_COMMUNITY_Community 46]]
-- 1 edge to [[_COMMUNITY_Community 14]]
+- 10 edges to [[_COMMUNITY_Community 32]]
+- 8 edges to [[_COMMUNITY_Community 159]]
+- 4 edges to [[_COMMUNITY_Config Validation & Router]]
+- 4 edges to [[_COMMUNITY_Community 24]]
+- 1 edge to [[_COMMUNITY_Ingest API & Approval Routes]]
+- 1 edge to [[_COMMUNITY_RBAC & SOC Realtime]]
 
 ## Top bridge nodes
-- [[ProxyAction]] - degree 31, connects to 5 communities
-- [[WebProxyResult]] - degree 16, connects to 3 communities
-- [[MockThreatLevel]] - degree 6, connects to 3 communities
-- [[MockEgressChannel]] - degree 6, connects to 3 communities
-- [[MockDNSVerdict]] - degree 15, connects to 2 communities
+- [[test_forward_stream.py]] - degree 42, connects to 4 communities
+- [[_make_stream_app_state()]] - degree 14, connects to 2 communities
+- [[_PassthroughPipeline]] - degree 12, connects to 2 communities
+- [[_BlockingPipeline]] - degree 8, connects to 2 communities
+- [[test_forward_stream_rejects_non_openai_compat_target()]] - degree 5, connects to 2 communities

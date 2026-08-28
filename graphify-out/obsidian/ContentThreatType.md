@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "Community 584"
+community: "Memory Lifecycle & Egress Filtering"
 location: "L29"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_584
+  - community/Memory_Lifecycle__Egress_Filtering
 ---
 
 # ContentThreatType
@@ -22,4 +22,4 @@ tags:
 - [[memory_lifecycle.py]] - `contains` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_584
+#graphify/code #graphify/INFERRED #community/Memory_Lifecycle__Egress_Filtering

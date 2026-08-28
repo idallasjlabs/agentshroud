@@ -1,12 +1,12 @@
 ---
 source_file: "docs/diagrams/07-team-planning.md"
 type: "document"
-community: "Community 745"
+community: "Community 442"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_745
+  - community/Community_442
 ---
 
 # AgentShroud — Team, Planning & Dependency Diagrams
@@ -17,4 +17,4 @@ tags:
 - [[22. Dependency Graph — Component Dependencies]] - `contains` [EXTRACTED]
 - [[23. Roadmap  Timeline — Development Phases]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_745
+#graphify/document #graphify/EXTRACTED #community/Community_442

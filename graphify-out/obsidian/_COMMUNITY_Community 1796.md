@@ -1,14 +1,16 @@
 ---
 type: community
+cohesion: 1.00
 members: 1
 ---
 
 # Community 1796
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[Zabbix API unittest.mock test pattern]] - concept - docker/config/openclaw/skills/i-tdd/SKILL.md
+- [[Obsidian app.json (empty)]] - document - docs/vault/.obsidian/app.json
 
 ## Live Query (requires Dataview plugin)
 

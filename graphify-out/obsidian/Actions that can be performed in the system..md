@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "rationale"
-community: "Community 15"
+community: "RBAC & SOC Realtime"
 location: "L34"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_15
+  - community/RBAC__SOC_Realtime
 ---
 
 # Actions that can be performed in the system.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Action_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_15
+#graphify/rationale #graphify/EXTRACTED #community/RBAC__SOC_Realtime

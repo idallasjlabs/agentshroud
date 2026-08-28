@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/trivy_report.py"
 type: "code"
-community: "Community 162"
+community: "Community 112"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_162
+  - community/Community_112
 ---
 
 # gateway/security/trivy_report.py
@@ -14,4 +14,4 @@ tags:
 - [[test_security_audit.py]] - `references` [EXTRACTED]
 - [[test_security_toolchain.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_162
+#graphify/code #graphify/EXTRACTED #community/Community_112

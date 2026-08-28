@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "Community 924"
+community: "Community 156"
 location: "L174"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_924
+  - community/Community_156
 ---
 
 # TestAutoRevert
@@ -21,4 +21,4 @@ tags:
 - [[SecurityPipeline]] - `uses` [INFERRED]
 - [[test_observatory_mode.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_924
+#graphify/code #graphify/INFERRED #community/Community_156

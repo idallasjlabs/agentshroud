@@ -1,17 +1,17 @@
 ---
 type: community
-members: 4
+cohesion: 1.00
+members: 2
 ---
 
 # Community 1543
 
-**Members:** 4 nodes
+**Cohesion:** 1.00 - tightly connected
+**Members:** 2 nodes
 
 ## Members
-- [[curl_json()]] - code - docker/config/openclaw/cron/scripts/cve_prefetch.py
-- [[cve_prefetch.py]] - code - docker/config/openclaw/cron/scripts/cve_prefetch.py
-- [[known_ghsa_ids()]] - code - docker/config/openclaw/cron/scripts/cve_prefetch.py
-- [[main()_7]] - code - docker/config/openclaw/cron/scripts/cve_prefetch.py
+- [[plan_3]] - document - skills/custom/agentshroud-redteam/references/steve-hay-plan.md
+- [[steve-hay-plan_1]] - document - skills/custom/agentshroud-redteam/references/steve-hay-plan.md
 
 ## Live Query (requires Dataview plugin)
 

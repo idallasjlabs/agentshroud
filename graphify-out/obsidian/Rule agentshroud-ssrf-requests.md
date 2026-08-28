@@ -1,11 +1,11 @@
 ---
 source_file: ".semgrep.yml"
 type: "concept"
-community: "Community 251"
+community: "Community 420"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_251
+  - community/Community_420
 ---
 
 # Rule: agentshroud-ssrf-requests
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud Semgrep SAST Configuration]] - `references` [EXTRACTED]
 - [[egress_filter.py]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_251
+#graphify/concept #graphify/EXTRACTED #community/Community_420

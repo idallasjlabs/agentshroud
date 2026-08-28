@@ -1,39 +1,40 @@
 ---
 type: community
-members: 26
+cohesion: 0.09
+members: 25
 ---
 
 # Community 339
 
-**Members:** 26 nodes
+**Cohesion:** 0.09 - loosely connected
+**Members:** 25 nodes
 
 ## Members
-- [[DELIVERABLE 1 — Domain-by-Domain Assessment]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Domain 1 — Threat Modeling and Security Boundaries]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Domain 10 — Human Approval Design]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Domain 11 — Prompt and Policy Hardening]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Domain 12 — Output Validation and Secondary Controls]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Domain 13 — Sandboxing and Execution Isolation]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Domain 14 — Browser and Document Ingestion Hardening]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Domain 15 — Secret Management and Anti-Exfiltration Design]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Domain 16 — Detection Engineering and Monitoring]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Domain 17 — Canary and Tripwire Strategies]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Domain 18 — Policy-as-Code and Formal Guardrails]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Domain 19 — Resilience Against Long-Horizon Attacks]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Domain 2 — Instruction  Data Separation]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Domain 20 — Training, Tuning, and Specialized Models]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Domain 21 — Secure UX and Operator Ergonomics]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Domain 22 — Incident Response and Recovery]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Domain 23 — Red Teaming and Continuous Evaluation]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Domain 24 — Supply Chain and Ecosystem Controls]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Domain 25 — Governance and Change Control]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Domain 3 — Taint Tracking and Data Lineage]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Domain 4 — Capability Security and Least Privilege]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Domain 5 — Tool-Call Governance]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Domain 6 — Egress Control and Exfiltration Resistance]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Domain 7 — Retrieval and RAG Hardening]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Domain 8 — Memory Hardening]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Domain 9 — Multi-Agent Trust Architecture]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Container Properties_1]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[DNS Resolution]] - document - docs/vault/06 - Containers & Services/networks.md
+- [[Docker Networks]] - document - docs/vault/06 - Containers & Services/networks.md
+- [[Environment Variables_17]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Health Check_2]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Key Endpoints_1]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Logs_3]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Network Architecture]] - document - docs/vault/06 - Containers & Services/networks.md
+- [[Networks_1]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Ports_1]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Related Notes_52]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Related Notes_53]] - document - docs/vault/06 - Containers & Services/networks.md
+- [[Resource Limits_1]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Secrets_3]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Security Hardening_4]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Summary_24]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Volumes_2]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[agentshroud-bot]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
+- [[agentshroud-gateway_1]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[agentshroud-gateway]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[agentshroud-internal]] - document - docs/vault/06 - Containers & Services/networks.md
+- [[agentshroud-isolated]] - document - docs/vault/06 - Containers & Services/networks.md
+- [[networks]] - document - docs/vault/06 - Containers & Services/networks.md
+- [[tmpfs Mounts_1]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[volumes]] - document - docs/vault/06 - Containers & Services/volumes.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -43,7 +44,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 995]]
+- 1 edge to [[_COMMUNITY_Community 85]]
+- 1 edge to [[_COMMUNITY_Community 933]]
+- 1 edge to [[_COMMUNITY_Community 594]]
+- 1 edge to [[_COMMUNITY_Community 1004]]
+- 1 edge to [[_COMMUNITY_Community 595]]
+- 1 edge to [[_COMMUNITY_Community 738]]
 
 ## Top bridge nodes
-- [[DELIVERABLE 1 — Domain-by-Domain Assessment]] - degree 26, connects to 1 community
+- [[volumes]] - degree 5, connects to 3 communities
+- [[agentshroud-bot]] - degree 5, connects to 2 communities
+- [[agentshroud-gateway]] - degree 5, connects to 1 community

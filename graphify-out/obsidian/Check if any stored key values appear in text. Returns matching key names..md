@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_vault.py"
 type: "rationale"
-community: "Community 382"
+community: "Key Vault & Audit Chain"
 location: "L131"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_382
+  - community/Key_Vault__Audit_Chain
 ---
 
 # Check if any stored key values appear in text. Returns matching key names.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.check_value_match()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_382
+#graphify/rationale #graphify/EXTRACTED #community/Key_Vault__Audit_Chain

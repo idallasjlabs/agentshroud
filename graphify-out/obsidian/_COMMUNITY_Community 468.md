@@ -1,32 +1,34 @@
 ---
 type: community
+cohesion: 0.11
 members: 19
 ---
 
 # Community 468
 
+**Cohesion:** 0.11 - loosely connected
 **Members:** 19 nodes
 
 ## Members
-- [[1. Check MCP Configuration_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
-- [[2. Test GitHub MCP Server_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
-- [[3. Test Atlassian MCP Server_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
-- [[4. Test AWS API MCP Server_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
-- [[Common Issues & Fixes_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
-- [[Diagnostic Capabilities_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
-- [[Diagnostic Workflow_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
-- [[Issue AWS credentials not found_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
-- [[Issue Atlassian OAuth token expired_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
-- [[Issue Docker not found_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
-- [[Issue GitHub MCP authentication failed_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
-- [[Issue npx not found_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
-- [[Issue uvx not found_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
-- [[Output Format_31]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
-- [[Related Skills_101]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
-- [[Role_91]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
-- [[SKILL_160]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
-- [[Skill MCP Doctor (MCPM-DOCTOR)_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
-- [[When to Invoke_8]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
+- [[Assigning Work_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
+- [[CHANGELOG.md Updates_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
+- [[Continuity Files_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
+- [[Definition of Done (from CLAUDE.md)]] - document - docker/config/hermes/skills/i-pm/SKILL.md
+- [[Escalation_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
+- [[Known Risks_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
+- [[Project Roadmap_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
+- [[Quick Status (for chatTelegram)_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
+- [[README.md Updates_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
+- [[Risk Management_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
+- [[Role_62]] - document - docker/config/hermes/skills/i-pm/SKILL.md
+- [[SKILL_105]] - document - docker/config/hermes/skills/i-pm/SKILL.md
+- [[Skill Project Management (PM)_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
+- [[Status Reporting_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
+- [[Task Coordination_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
+- [[Tracking Format_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
+- [[`session-notesCONTINUE-YYYY-MM-DD.md` (daily snapshot)_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
+- [[`session-notesCONTINUE.md` (always current)_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
+- [[`session-notesSESSION_SUMMARY_YYYY-MM-DD.md` (session report)_1]] - document - docker/config/hermes/skills/i-pm/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/playback_logic.h"
 type: "code"
-community: "Community 166"
+community: "Community 271"
 location: "L53"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_166
+  - community/Community_271
 ---
 
 # playback_gate_should_open()
@@ -21,4 +21,4 @@ tags:
 - [[test_gate_stays_closed_before_any_cap()]] - `calls` [INFERRED]
 - [[tts_task()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_166
+#graphify/code #graphify/INFERRED #community/Community_271

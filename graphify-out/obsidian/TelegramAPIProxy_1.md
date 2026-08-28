@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_lockdown.py"
 type: "code"
-community: "Community 62"
+community: "Community 60"
 location: "L86"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_62
+  - community/Community_60
 ---
 
 # TelegramAPIProxy
@@ -19,4 +19,4 @@ tags:
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[_make_proxy()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_62
+#graphify/code #graphify/INFERRED #community/Community_60

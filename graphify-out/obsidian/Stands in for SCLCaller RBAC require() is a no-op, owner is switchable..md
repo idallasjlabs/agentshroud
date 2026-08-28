@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "rationale"
-community: "Community 17"
+community: "Community 16"
 location: "L39"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_17
+  - community/Community_16
 ---
 
 # Stands in for SCLCaller: RBAC require() is a no-op, owner is switchable.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[FakeCaller]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_17
+#graphify/rationale #graphify/EXTRACTED #community/Community_16

@@ -1,53 +1,55 @@
 ---
 type: community
+cohesion: 0.05
 members: 40
 ---
 
 # Community 163
 
+**Cohesion:** 0.05 - loosely connected
 **Members:** 40 nodes
 
 ## Members
-- [[.__call__()_7]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[.__init__()_167]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[Records requests; serves op-proxy secrets then a scripted Jira response.]] - rationale - gateway/tests/test_jira_dev_ticket.py
-- [[_MockTransport]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[_load_module()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_basic_auth_header_is_base64_email_colon_token()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_basic_auth_header_rejects_empty()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_comment_payload_is_valid_adf_doc()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_comment_payload_never_empty()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_comment_url_rejects_empty_issue_key()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_comment_url_targets_arbitrary_issue()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_create_issue_payload_full()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_create_issue_payload_minimal()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_create_issue_payload_rejects_missing_project()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_create_issue_payload_rejects_missing_summary()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_find_transition_id_matches_destination_status_name()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_find_transition_id_matches_transition_name()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_find_transition_id_returns_none_when_no_match()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_issue_url_rejects_empty_cloud_id()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_issue_url_targets_cloud_id_gateway()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_jira_dev_ticket.py]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_op_proxy_request_has_bearer_and_system_header()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_op_refs_target_the_atlassian_item()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_openclaw_copy_is_byte_identical_to_hermes_copy()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_resolve_cloud_id_parses_response()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_resolve_cloud_id_raises_on_non_200()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_resolve_cloud_id_raises_when_field_missing()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_run_aborts_without_gateway_token()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_run_comment_posts_to_correct_issue()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_run_create_posts_issue_with_basic_auth()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_run_create_with_labels_and_parent()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_run_returns_1_on_jira_rejection()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_run_returns_1_when_op_proxy_denies()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_run_transition_applies_matching_transition()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_run_transition_fails_when_no_matching_transition()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_tenant_info_url_accepts_full_https_domain()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_tenant_info_url_rejects_empty_domain()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_tenant_info_url_targets_edge_endpoint()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_transitions_url_rejects_empty_issue_key()]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[test_transitions_url_targets_arbitrary_issue()]] - code - gateway/tests/test_jira_dev_ticket.py
+- [[Advanced Direct Docker Commands]] - document - docs/architecture/WORKSPACE_USAGE.md
+- [[Backup Workspace]] - document - docs/architecture/WORKSPACE_USAGE.md
+- [[Backup and Restore]] - document - docs/architecture/WORKSPACE_USAGE.md
+- [[Common Workflows_1]] - document - docs/architecture/WORKSPACE_USAGE.md
+- [[Configuration_4]] - document - docs/architecture/WORKSPACE_DECISION.md
+- [[Create Structure]] - document - docs/architecture/WORKSPACE_USAGE.md
+- [[Current Setup (Kept)]] - document - docs/architecture/WORKSPACE_DECISION.md
+- [[Decision Summary]] - document - docs/architecture/WORKSPACE_DECISION.md
+- [[Docker Volume Chosen Over Bind Mount]] - rationale - docs/architecture/WORKSPACE_DECISION.md
+- [[File Permissions]] - document - docs/architecture/WORKSPACE_USAGE.md
+- [[Files Created]] - document - docs/architecture/WORKSPACE_DECISION.md
+- [[Helper Script]] - document - docs/architecture/WORKSPACE_DECISION.md
+- [[Integration with Bot]] - document - docs/architecture/WORKSPACE_USAGE.md
+- [[Next Steps_3]] - document - docs/architecture/WORKSPACE_DECISION.md
+- [[OpenClaw Workspace Usage Guide]] - document - docs/architecture/WORKSPACE_USAGE.md
+- [[Problem Container not running]] - document - docs/architecture/WORKSPACE_USAGE.md
+- [[Problem File not found]] - document - docs/architecture/WORKSPACE_USAGE.md
+- [[Problem Permission denied]] - document - docs/architecture/WORKSPACE_USAGE.md
+- [[Quick Reference_4]] - document - docs/architecture/WORKSPACE_USAGE.md
+- [[Recommended Structure]] - document - docs/architecture/WORKSPACE_USAGE.md
+- [[Restore Workspace]] - document - docs/architecture/WORKSPACE_USAGE.md
+- [[Summary_2]] - document - docs/architecture/WORKSPACE_USAGE.md
+- [[Troubleshooting_16]] - document - docs/architecture/WORKSPACE_USAGE.md
+- [[Using the Helper Script]] - document - docs/architecture/WORKSPACE_USAGE.md
+- [[Via Skills]] - document - docs/architecture/WORKSPACE_USAGE.md
+- [[Via Telegram_2]] - document - docs/architecture/WORKSPACE_USAGE.md
+- [[WORKSPACE_DECISION]] - document - docs/architecture/WORKSPACE_DECISION.md
+- [[WORKSPACE_USAGE]] - document - docs/architecture/WORKSPACE_USAGE.md
+- [[What is the Workspace]] - document - docs/architecture/WORKSPACE_USAGE.md
+- [[Why Docker Volume vs Bind Mount]] - document - docs/architecture/WORKSPACE_USAGE.md
+- [[Why This Matters for Read-Only Filesystem]] - document - docs/architecture/WORKSPACE_DECISION.md
+- [[Workflow 1 Give Bot a File to Process]] - document - docs/architecture/WORKSPACE_USAGE.md
+- [[Workflow 2 Bot Creates Files for You]] - document - docs/architecture/WORKSPACE_USAGE.md
+- [[Workflow 3 Bot Takes Screenshots]] - document - docs/architecture/WORKSPACE_USAGE.md
+- [[Workflow 4 Bulk File Operations]] - document - docs/architecture/WORKSPACE_USAGE.md
+- [[Workflow 5 Interactive Editing]] - document - docs/architecture/WORKSPACE_USAGE.md
+- [[Workspace Configuration Decision]] - document - docs/architecture/WORKSPACE_DECISION.md
+- [[Workspace Organization Tips]] - document - docs/architecture/WORKSPACE_USAGE.md
+- [[Workspace Size]] - document - docs/architecture/WORKSPACE_USAGE.md
+- [[workspace.sh Helper Script]] - concept - docs/architecture/WORKSPACE_USAGE.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -55,9 +57,3 @@ members: 40
 TABLE source_file, type FROM #community/Community_163
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 656]]
-
-## Top bridge nodes
-- [[test_jira_dev_ticket.py]] - degree 38, connects to 1 community

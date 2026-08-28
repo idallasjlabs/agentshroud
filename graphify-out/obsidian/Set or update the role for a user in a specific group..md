@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_rbac.py"
 type: "rationale"
-community: "Community 75"
+community: "Group RBAC & Tool ACL"
 location: "L138"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_75
+  - community/Group_RBAC__Tool_ACL
 ---
 
 # Set or update the role for a user in a specific group.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.set_role()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_75
+#graphify/rationale #graphify/EXTRACTED #community/Group_RBAC__Tool_ACL

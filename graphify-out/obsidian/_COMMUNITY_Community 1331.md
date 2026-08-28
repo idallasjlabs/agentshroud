@@ -1,19 +1,19 @@
 ---
 type: community
-members: 6
+cohesion: 0.50
+members: 4
 ---
 
 # Community 1331
 
-**Members:** 6 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[M4 Pi-hole Auth Token Passed in URL Query String]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
-- [[M5 LLM Proxy Endpoint `v1{path}` Has No Authentication]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
-- [[M6 Telegram API Proxy Passes Raw Bot Token Without Validation]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
-- [[M7 Dockerfile Uses `curl  sh` for Trivy Installation]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
-- [[M8 Unpinned Base Images and `@latest` Tags]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
-- [[MEDIUM — Fix Soon]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[Container Health]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[Live System Status]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[Unit Test Suite]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[5. Test Results]] - document - docs/planning/reviews/phase-review-2026-02-24.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 338]]
+- 1 edge to [[_COMMUNITY_Community 133]]
 
 ## Top bridge nodes
-- [[MEDIUM — Fix Soon]] - degree 6, connects to 1 community
+- [[5. Test Results]] - degree 4, connects to 1 community

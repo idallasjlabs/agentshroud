@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Community 336"
+community: "Community 334"
 location: "L914"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_336
+  - community/Community_334
 ---
 
 # Security Verification
@@ -19,4 +19,4 @@ tags:
 - [[Production Checklist]] - `contains` [EXTRACTED]
 - [[Security Testing]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_336
+#graphify/document #graphify/EXTRACTED #community/Community_334

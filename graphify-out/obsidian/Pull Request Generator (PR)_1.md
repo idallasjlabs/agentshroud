@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-pr/README.md"
 type: "document"
-community: "Community 1200"
+community: "Community 1195"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1200
+  - community/Community_1195
 ---
 
 # Pull Request Generator (PR)
@@ -17,4 +17,4 @@ tags:
 - [[Related Skills_66]] - `contains` [EXTRACTED]
 - [[Usage_67]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1200
+#graphify/document #graphify/EXTRACTED #community/Community_1195

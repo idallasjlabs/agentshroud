@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "Community 754"
+community: "Config Validation & Router"
 location: "L382"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_754
+  - community/Config_Validation__Router
 ---
 
 # Online notice must appear after readiness probes to avoid premature status signa
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_startup_online_notice_sent_only_after_readiness_gate()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_754
+#graphify/rationale #graphify/EXTRACTED #community/Config_Validation__Router

@@ -1,28 +1,30 @@
 ---
 type: community
+cohesion: 0.13
 members: 15
 ---
 
 # Community 635
 
+**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
-- [[04-separation-of-privilege]] - document - docs/planning/redteam/04-separation-of-privilege.md
-- [[Constraints_7]] - document - docs/planning/redteam/04-separation-of-privilege.md
-- [[Evidence_4]] - document - docs/planning/redteam/04-separation-of-privilege.md
-- [[Make gateway source code, config, and security policies read-only to the agent]] - document - docs/planning/redteam/04-separation-of-privilege.md
-- [[Problem_7]] - document - docs/planning/redteam/04-separation-of-privilege.md
-- [[Remediation_5]] - document - docs/planning/redteam/04-separation-of-privilege.md
-- [[Root Cause_6]] - document - docs/planning/redteam/04-separation-of-privilege.md
-- [[Severity_7]] - document - docs/planning/redteam/04-separation-of-privilege.md
-- [[Step 1 Mount gateway source as read-only Docker volumes]] - document - docs/planning/redteam/04-separation-of-privilege.md
-- [[Step 2 Add AgentShroud paths to File IO Sandboxing deny list]] - document - docs/planning/redteam/04-separation-of-privilege.md
-- [[Step 3 Block SSH commands targeting the gateway host]] - document - docs/planning/redteam/04-separation-of-privilege.md
-- [[Step 4 Make SOUL.md and system prompts immutable]] - document - docs/planning/redteam/04-separation-of-privilege.md
-- [[Step 5 Add integrity checking for security-critical files]] - document - docs/planning/redteam/04-separation-of-privilege.md
-- [[Step 6 Enforce read-only at the Docker layer]] - document - docs/planning/redteam/04-separation-of-privilege.md
-- [[Verification_6]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Configuration  Environment Variables_20]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[Default Allowlist]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[Default Denylist Categories]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[EgressFilterConfig._matches_any_pattern(domain, patterns)]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[EgressFilterConfig.from_environment()]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[EgressFilterConfig.get_effective_allowlist(agent_id)]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[EgressFilterConfig.is_denylisted(domain)]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[Function Details_34]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[Key Classes  Functions_37]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[Purpose_155]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[Related_41]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[Responsibilities_39]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[Threat Model_10]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[egress_config.py_2]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[egress_config.py_1]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
 
 ## Live Query (requires Dataview plugin)
 

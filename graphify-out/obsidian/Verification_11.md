@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md"
+source_file: "docs/security/cve-mitigation-matrix.md"
 type: "document"
-community: "Community 455"
-location: "L135"
+community: "Community 331"
+location: "L487"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_455
+  - community/Community_331
 ---
 
 # Verification
 
 ## Connections
-- [[P2 Credential Isolation (op-proxy)]] - `contains` [EXTRACTED]
+- [[AgentShroud™ CVE Mitigation Matrix]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_455
+#graphify/document #graphify/EXTRACTED #community/Community_331

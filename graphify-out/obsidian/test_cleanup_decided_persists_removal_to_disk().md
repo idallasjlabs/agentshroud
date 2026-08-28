@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_queue.py"
 type: "code"
-community: "Community 43"
+community: "Community 56"
 location: "L440"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_43
+  - community/Community_56
 ---
 
 # test_cleanup_decided_persists_removal_to_disk()
@@ -17,4 +17,4 @@ tags:
 - [[SCRUM-110 cleanup_decided() must persist the removal, not just mutate     the i]] - `rationale_for` [EXTRACTED]
 - [[test_approval_queue.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_43
+#graphify/code #graphify/EXTRACTED #community/Community_56

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "Community 14"
+community: "Security Audit & Drift Detection"
 location: "L1098"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_14
+  - community/Security_Audit__Drift_Detection
 ---
 
 # Dockerfile should be present for reproducible builds.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_dockerfile_exists()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_14
+#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Drift_Detection

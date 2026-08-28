@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1239
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[Production Safety Checklist (PROD-SAFETY)_2]] - document - docker/config/openclaw/skills/i-ps/README.md
-- [[Purpose_99]] - document - docker/config/openclaw/skills/i-ps/README.md
-- [[README_104]] - document - docker/config/openclaw/skills/i-ps/README.md
-- [[Related Skills_108]] - document - docker/config/openclaw/skills/i-ps/README.md
-- [[Usage_109]] - document - docker/config/openclaw/skills/i-ps/README.md
+- [[Purpose_104]] - document - docker/config/openclaw/skills/i-sec-offense/README.md
+- [[README_109]] - document - docker/config/openclaw/skills/i-sec-offense/README.md
+- [[Red Team Adversarial Tester (SEC-OFFENSE)_2]] - document - docker/config/openclaw/skills/i-sec-offense/README.md
+- [[Related Skills_113]] - document - docker/config/openclaw/skills/i-sec-offense/README.md
+- [[Usage_114]] - document - docker/config/openclaw/skills/i-sec-offense/README.md
 
 ## Live Query (requires Dataview plugin)
 

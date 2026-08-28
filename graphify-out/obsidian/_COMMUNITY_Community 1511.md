@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 1.00
 members: 2
 ---
 
 # Community 1511
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[export-openapi.sh]] - code - scripts/export-openapi.sh
-- [[export-openapi.sh script]] - code - scripts/export-openapi.sh
+- [[SKILL_224]] - document - skills/openclaw/ordercli/SKILL.md
+- [[ordercli]] - document - skills/openclaw/ordercli/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

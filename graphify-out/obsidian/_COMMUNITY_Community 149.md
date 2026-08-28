@@ -1,11 +1,13 @@
 ---
 type: community
-members: 44
+cohesion: 0.05
+members: 43
 ---
 
 # Community 149
 
-**Members:** 44 nodes
+**Cohesion:** 0.05 - loosely connected
+**Members:** 43 nodes
 
 ## Members
 - [[1. Environment Overview]] - document - docs/runbooks/colima-docker-guide.md
@@ -48,7 +50,6 @@ members: 44
 - [[Start (required flags)]] - document - docs/runbooks/colima-docker-guide.md
 - [[Status & Info]] - document - docs/runbooks/colima-docker-guide.md
 - [[Stop  Restart]] - document - docs/runbooks/colima-docker-guide.md
-- [[Symptom `E You don't have enough free space in apt-dl` — Docker data partition has plenty of free space]] - document - docs/runbooks/colima-docker-guide.md
 - [[Symptom `E You don't have enough free space in apt-dl` — Docker data partition is 80% full]] - document - docs/runbooks/colima-docker-guide.md
 - [[Symptom `W GPG error ... At least one invalid signature was encountered`]] - document - docs/runbooks/colima-docker-guide.md
 - [[Symptom `exit code 100` on apt-get install]] - document - docs/runbooks/colima-docker-guide.md
@@ -61,7 +62,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 90]]
+- 1 edge to [[_COMMUNITY_Community 92]]
 
 ## Top bridge nodes
 - [[Colima & Docker Operations Guide — AgentShroud]] - degree 13, connects to 1 community

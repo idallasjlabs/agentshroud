@@ -1,103 +1,110 @@
 ---
 type: community
-members: 90
+cohesion: 0.06
+members: 95
 ---
 
 # Community 36
 
-**Members:** 90 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 95 nodes
 
 ## Members
-- [[.__init__()_26]] - code - gateway/proxy/mcp_inspector.py
-- [[.__post_init__()]] - code - gateway/proxy/mcp_proxy.py
-- [[.set_event_bus()]] - code - gateway/proxy/mcp_proxy.py
-- [[.test_blocked_entries()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_chain_includes_blocked()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_chain_valid_after_calls()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_deeply_nested_pii()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_elevated_agent_can_execute()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_empty_params()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_execute_none_content_result_does_not_unbind()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_execute_with_content_still_inspects()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_failed_entries()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_filter_by_agent()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_filter_by_server()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_filter_by_tool()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_from_dict_basic()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_from_dict_defaults()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_from_dict_http_transport()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_gateway_data_parameter_violation_blocks_non_owner()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_generate_report()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_heavy_url_encoding_flagged()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_highest_threat_high()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_highest_threat_none()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_inspection_result_threat_level()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_large_base64_flagged()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_list_params()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_network_request_flagged()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_no_pii_scan()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_none_values_in_params()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_passthrough_allows_everything()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_passthrough_still_audits()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_private_parameter_violation_blocks_non_owner()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_private_tool_violation_emits_event()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_processing_time_recorded()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_rate_limit_enforced()_2]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_read_only_agent_can_read()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_read_only_agent_denied_execute()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_sensitive_blocked_strict_with_injection()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_sensitive_not_blocked_default()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_session_store_parameter_violation_blocks_non_owner()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_shell_command_flagged()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_small_base64_ok()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_stats_blocked_counted()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_stats_tracking()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_tool_result_none_content()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_tool_result_string_content()]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_unknown_server_default_allow()_1]] - code - gateway/tests/test_mcp_proxy.py
-- [[.test_workspace_contributor_parameter_violation_blocks_non_owner()]] - code - gateway/tests/test_mcp_proxy.py
-- [[Configuration for a specific MCP tool.]] - rationale - gateway/proxy/mcp_config.py
-- [[Exception_4]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[FindingType]] - code - gateway/proxy/mcp_inspector.py
-- [[In strict mode, sensitive ops with injection ARE blocked.]] - rationale - gateway/tests/test_mcp_proxy.py
-- [[Inspects MCP tool calls and responses for security threats.]] - rationale - gateway/proxy/mcp_inspector.py
-- [[MCPInspector]] - code - gateway/proxy/mcp_inspector.py
-- [[MCPProxy]] - code - gateway/proxy/mcp_proxy.py
-- [[MCPProxy.process_tool_result]] - code - gateway/proxy/mcp_proxy.py
-- [[MCPProxyConfig_3]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[MCPToolCall]] - code - gateway/proxy/mcp_proxy.py
-- [[MCPToolConfig]] - code - gateway/proxy/mcp_config.py
-- [[MCPTransport]] - code - gateway/proxy/mcp_config.py
-- [[Main MCP proxy that intercepts tool calls and routes through security.      Tran]] - rationale - gateway/proxy/mcp_proxy.py
-- [[Regression result_inspection was possibly-unbound when the executed tool     re]] - rationale - gateway/tests/test_mcp_proxy.py
-- [[Represents an MCP tool_use request.]] - rationale - gateway/proxy/mcp_proxy.py
-- [[Sensitive ops are flagged but not blocked in default mode.]] - rationale - gateway/tests/test_mcp_proxy.py
-- [[TestAllowDenyList]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestAuditQueries]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestChainIntegrityMultiple]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestConfigParsing]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestExecuteResultInspectionBinding]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestHashChainIntegration]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestInspectorEdgeCases]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestPassthroughMode]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestPrivacyPolicyEvents]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestProcessingTime]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestProxyPermissions]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestProxyRateLimiting]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestProxyStats]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestSensitiveOps]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestSuspiciousEncoding]] - code - gateway/tests/test_mcp_proxy.py
-- [[TestThreatLevelCalc]] - code - gateway/tests/test_mcp_proxy.py
-- [[Threat level classification.]] - rationale - gateway/proxy/mcp_inspector.py
-- [[ThreatLevel]] - code - gateway/proxy/mcp_inspector.py
-- [[Type of security finding.]] - rationale - gateway/proxy/mcp_inspector.py
-- [[Wire optional event bus for privacysecurity telemetry.]] - rationale - gateway/proxy/mcp_proxy.py
-- [[inspector()]] - code - gateway/tests/test_mcp_proxy.py
-- [[mcp_inspector.py]] - code - gateway/proxy/mcp_inspector.py
-- [[passthrough_proxy()]] - code - gateway/tests/test_mcp_proxy.py
-- [[proxy()_2]] - code - gateway/tests/test_mcp_proxy.py
-- [[strict_inspector()]] - code - gateway/tests/test_mcp_proxy.py
-- [[test_mcp_proxy.py]] - code - gateway/tests/test_mcp_proxy.py
+- [[.get()]] - code - cli/src/main.rs
+- [[.get()_1]] - code - cli/src/main.rs
+- [[.new()_1]] - code - cli/src/main.rs
+- [[.new()]] - code - cli/src/main.rs
+- [[.new()_2]] - code - cli/src/main.rs
+- [[.ok()]] - code - cli/src/main.rs
+- [[.post()]] - code - cli/src/main.rs
+- [[.post()_1]] - code - cli/src/main.rs
+- [[.request()_1]] - code - cli/src/main.rs
+- [[.request()]] - code - cli/src/main.rs
+- [[.with()]] - code - cli/src/main.rs
+- [[AddResource]] - code - cli/src/main.rs
+- [[ApprovalAction]] - code - cli/src/main.rs
+- [[Cli]] - code - cli/src/main.rs
+- [[Client]] - code - cli/src/main.rs
+- [[Commands]] - code - cli/src/main.rs
+- [[Commands_1]] - code - cli/src/main.rs
+- [[FakeTransport]] - code - cli/src/main.rs
+- [[GatewayClient]] - code - cli/src/main.rs
+- [[GatewayClientT]] - code - cli/src/main.rs
+- [[GetResource]] - code - cli/src/main.rs
+- [[HttpResponse]] - code - cli/src/main.rs
+- [[HttpTransport]] - code - cli/src/main.rs
+- [[Method]] - code - cli/src/main.rs
+- [[Option]] - code - cli/src/main.rs
+- [[OutputFormat]] - code - cli/src/main.rs
+- [[OutputFormat_1]] - code - cli/src/main.rs
+- [[RefCell]] - code - cli/src/main.rs
+- [[ReqwestTransport]] - code - cli/src/main.rs
+- [[Result]] - code - cli/src/main.rs
+- [[SclClient]] - code - cli/src/main.rs
+- [[Self]] - code - cli/src/main.rs
+- [[ServiceTarget]] - code - cli/src/main.rs
+- [[SetTarget]] - code - cli/src/main.rs
+- [[String]] - code - cli/src/main.rs
+- [[T]] - code - cli/src/main.rs
+- [[Value]] - code - cli/src/main.rs
+- [[Vec]] - code - cli/src/main.rs
+- [[approvals_list_empty()]] - code - cli/src/main.rs
+- [[approvals_list_errors_on_401()]] - code - cli/src/main.rs
+- [[approvals_list_formats_rows()]] - code - cli/src/main.rs
+- [[approve_sends_correct_body_and_path()]] - code - cli/src/main.rs
+- [[build_url()]] - code - cli/src/main.rs
+- [[build_url_trims_slashes()]] - code - cli/src/main.rs
+- [[cves_counts_array_when_no_total()]] - code - cli/src/main.rs
+- [[cves_formats_summary()]] - code - cli/src/main.rs
+- [[cves_reads_nested_summary()]] - code - cli/src/main.rs
+- [[cves_reads_summary_total_fallback()]] - code - cli/src/main.rs
+- [[cves_reports_unknown_bot_error()]] - code - cli/src/main.rs
+- [[cves_with_bot_id_appends_query()]] - code - cli/src/main.rs
+- [[decide_errors_on_404()]] - code - cli/src/main.rs
+- [[decide_errors_on_409_conflict()]] - code - cli/src/main.rs
+- [[deny_sends_false_and_formats()]] - code - cli/src/main.rs
+- [[deploy_status_errors_when_version_unauthorized()]] - code - cli/src/main.rs
+- [[deploy_status_formats_version_and_services()]] - code - cli/src/main.rs
+- [[deploy_status_no_services()]] - code - cli/src/main.rs
+- [[deploy_status_reads_version_endpoint()]] - code - cli/src/main.rs
+- [[encode_path_component()]] - code - cli/src/main.rs
+- [[encode_path_component_encodes_dots_and_dashes()]] - code - cli/src/main.rs
+- [[encode_path_component_encodes_special_chars()]] - code - cli/src/main.rs
+- [[encode_path_component_passes_simple()]] - code - cli/src/main.rs
+- [[format_approvals()]] - code - cli/src/main.rs
+- [[format_approvals_single_object()]] - code - cli/src/main.rs
+- [[format_cves()]] - code - cli/src/main.rs
+- [[format_decision()]] - code - cli/src/main.rs
+- [[format_deploy_status()]] - code - cli/src/main.rs
+- [[format_status()]] - code - cli/src/main.rs
+- [[format_status_handles_missing_fields()]] - code - cli/src/main.rs
+- [[json_str()]] - code - cli/src/main.rs
+- [[main()_1]] - code - cli/src/main.rs
+- [[main.rs]] - code - cli/src/main.rs
+- [[map_http_error()]] - code - cli/src/main.rs
+- [[map_http_error_401_message()]] - code - cli/src/main.rs
+- [[map_http_error_generic_status()]] - code - cli/src/main.rs
+- [[map_http_error_includes_detail()]] - code - cli/src/main.rs
+- [[map_http_error_none_on_success()]] - code - cli/src/main.rs
+- [[print_output()]] - code - cli/src/main.rs
+- [[render_output_json_is_still_pretty_json()]] - code - cli/src/main.rs
+- [[render_output_lines()]] - code - cli/src/main.rs
+- [[render_output_table_array_matches_prior_per_item_plus_separator_shape()]] - code - cli/src/main.rs
+- [[render_output_table_empty_array_produces_no_lines()]] - code - cli/src/main.rs
+- [[render_output_yaml_produces_real_yaml_not_json()]] - code - cli/src/main.rs
+- [[resolve_token()]] - code - cli/src/main.rs
+- [[resolve_token_empty_when_none()]] - code - cli/src/main.rs
+- [[resolve_token_falls_back_to_env()]] - code - cli/src/main.rs
+- [[resolve_token_prefers_cli()]] - code - cli/src/main.rs
+- [[run_approvals_decide()]] - code - cli/src/main.rs
+- [[run_approvals_list()]] - code - cli/src/main.rs
+- [[run_cves()]] - code - cli/src/main.rs
+- [[run_deploy_status()]] - code - cli/src/main.rs
+- [[run_status()]] - code - cli/src/main.rs
+- [[status_errors_on_401()]] - code - cli/src/main.rs
+- [[status_errors_when_gateway_down()]] - code - cli/src/main.rs
+- [[status_hits_correct_path()]] - code - cli/src/main.rs
+- [[status_parses_and_formats()]] - code - cli/src/main.rs
 
 ## Live Query (requires Dataview plugin)
 
@@ -107,30 +114,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 130 edges to [[_COMMUNITY_Community 106]]
-- 80 edges to [[_COMMUNITY_Community 1339]]
-- 42 edges to [[_COMMUNITY_Community 283]]
-- 32 edges to [[_COMMUNITY_Community 201]]
-- 24 edges to [[_COMMUNITY_Community 179]]
-- 21 edges to [[_COMMUNITY_Community 1540]]
-- 16 edges to [[_COMMUNITY_Community 34]]
-- 15 edges to [[_COMMUNITY_Community 24]]
-- 12 edges to [[_COMMUNITY_Community 447]]
-- 8 edges to [[_COMMUNITY_Community 774]]
-- 8 edges to [[_COMMUNITY_Community 952]]
-- 8 edges to [[_COMMUNITY_Community 1012]]
-- 7 edges to [[_COMMUNITY_Community 67]]
-- 5 edges to [[_COMMUNITY_Community 78]]
-- 2 edges to [[_COMMUNITY_Community 6]]
-- 2 edges to [[_COMMUNITY_Community 9]]
-- 1 edge to [[_COMMUNITY_Community 623]]
-- 1 edge to [[_COMMUNITY_Community 1]]
-- 1 edge to [[_COMMUNITY_Community 325]]
-- 1 edge to [[_COMMUNITY_Community 22]]
+- 3 edges to [[_COMMUNITY_Community 90]]
+- 2 edges to [[_COMMUNITY_Community 308]]
+- 2 edges to [[_COMMUNITY_Community 1298]]
+- 2 edges to [[_COMMUNITY_Community 446]]
+- 2 edges to [[_COMMUNITY_Community 126]]
+- 1 edge to [[_COMMUNITY_Community 418]]
+- 1 edge to [[_COMMUNITY_Community 966]]
+- 1 edge to [[_COMMUNITY_Community 270]]
+- 1 edge to [[_COMMUNITY_Community 271]]
 
 ## Top bridge nodes
-- [[MCPProxy]] - degree 90, connects to 15 communities
-- [[MCPToolCall]] - degree 102, connects to 12 communities
-- [[MCPTransport]] - degree 63, connects to 11 communities
-- [[MCPInspector]] - degree 77, connects to 10 communities
-- [[MCPToolConfig]] - degree 59, connects to 10 communities
+- [[String]] - degree 34, connects to 8 communities
+- [[main.rs]] - degree 74, connects to 1 community
+- [[Result]] - degree 14, connects to 1 community

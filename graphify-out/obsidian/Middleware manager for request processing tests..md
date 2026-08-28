@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "Community 6"
+community: "Middleware & Lifespan"
 location: "L46"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/Middleware__Lifespan
 ---
 
 # Middleware manager for request processing tests.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[middleware_manager()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_6
+#graphify/rationale #graphify/EXTRACTED #community/Middleware__Lifespan

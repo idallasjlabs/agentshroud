@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_policy.py"
 type: "code"
-community: "Community 1001"
+community: "Community 71"
 location: "L38"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_1001
+  - community/Community_71
 ---
 
 # A2APolicyConfig
@@ -19,4 +19,4 @@ tags:
 - [[A2APolicyEngine_1]] - `uses` [INFERRED]
 - [[_base_config()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_1001
+#graphify/code #graphify/INFERRED #community/Community_71

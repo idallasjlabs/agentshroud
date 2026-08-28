@@ -1,22 +1,23 @@
 ---
 type: community
-members: 9
+cohesion: 0.25
+members: 8
 ---
 
 # Community 946
 
-**Members:** 9 nodes
+**Cohesion:** 0.25 - loosely connected
+**Members:** 8 nodes
 
 ## Members
-- [[Curriculum Architect (i-atlas)]] - document - .agents/skills/i-atlas/SKILL.md
-- [[Mindmap Architect (MM)]] - document - .agents/skills/i-mm/SKILL.md
-- [[Purpose_34]] - document - .agents/skills/i-ti/README.md
-- [[README_34]] - document - .agents/skills/i-ti/README.md
-- [[Related Skills_37]] - document - .agents/skills/i-ti/README.md
-- [[Technical Illustrator (TI)]] - document - .agents/skills/i-ti/README.md
-- [[Technical Illustrator (i-ti)]] - document - .agents/skills/i-ti/SKILL.md
-- [[Technical Writing (i-tw)]] - document - .agents/skills/i-tw/SKILL.md
-- [[Usage_37]] - document - .agents/skills/i-ti/README.md
+- [[4. Skill System]] - document - docs/architecture/agentic-os.md
+- [[59 Skills by Category]] - document - docs/architecture/agentic-os.md
+- [[Key Skills in Detail]] - document - docs/architecture/agentic-os.md
+- [[`cr` — Code Review]] - document - docs/architecture/agentic-os.md
+- [[`gg` — Git Workflow Guardian]] - document - docs/architecture/agentic-os.md
+- [[`sec-defense` — Blue Team STPA-Sec Auditor]] - document - docs/architecture/agentic-os.md
+- [[`sec-offense` — Red Team Adversarial Tester]] - document - docs/architecture/agentic-os.md
+- [[`tdd` — Test-Driven Development Coach]] - document - docs/architecture/agentic-os.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,3 +25,9 @@ members: 9
 TABLE source_file, type FROM #community/Community_946
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 162]]
+
+## Top bridge nodes
+- [[4. Skill System]] - degree 3, connects to 1 community

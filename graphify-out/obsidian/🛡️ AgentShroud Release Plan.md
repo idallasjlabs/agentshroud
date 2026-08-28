@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/RELEASE-PLAN.md"
 type: "document"
-community: "Community 360"
+community: "Community 362"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_360
+  - community/Community_362
 ---
 
 # 🛡️ AgentShroud Release Plan
@@ -20,7 +20,7 @@ tags:
 - [[RELEASE-PLAN]] - `contains` [EXTRACTED]
 - [[Risk Register]] - `contains` [EXTRACTED]
 - [[Success Criteria_2]] - `contains` [EXTRACTED]
-- [[Summary_27]] - `contains` [EXTRACTED]
+- [[Summary_5]] - `contains` [EXTRACTED]
 - [[v0.8.0 Watchtower — Security Fixes + Module Wiring (104 items)]] - `contains` [EXTRACTED]
 - [[v0.8.0-release-plan]] - `contains` [EXTRACTED]
 - [[v0.9.0 Sentinel — Data Isolation + SOC + Remediation (37 items)]] - `contains` [EXTRACTED]
@@ -31,4 +31,4 @@ tags:
 - [[v1.2.0 Local LLMs — Offline Model Support (4 items)]] - `contains` [EXTRACTED]
 - [[v1.3.0 — Platform Expansion (53 items)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_360
+#graphify/document #graphify/EXTRACTED #community/Community_362

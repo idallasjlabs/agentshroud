@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/troubleshooting.md"
 type: "document"
-community: "Community 504"
+community: "Community 499"
 location: "L221"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_504
+  - community/Community_499
 ---
 
 # `POST /api/alerts -> 404 (Nms)` *(resolved in v0.9.0)*
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Known Log Messages]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_504
+#graphify/document #graphify/EXTRACTED #community/Community_499

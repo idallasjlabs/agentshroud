@@ -1,12 +1,12 @@
 ---
 source_file: "docs/testing/test-coverage-report.md"
 type: "concept"
-community: "Community 1081"
+community: "Community 1074"
 location: "line 11"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1081
+  - community/Community_1074
 ---
 
 # NO SECURITY THEATER Policy (CLAUDE.md §2)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Test Coverage Report (AgentShroud v1.3.0)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1081
+#graphify/concept #graphify/EXTRACTED #community/Community_1074

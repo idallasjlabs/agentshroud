@@ -1,13 +1,13 @@
 ---
 source_file: "branding/favicons/favicon-32x32.png"
 type: "image"
-community: "Community 1622"
+community: "Community 1709"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Community_1622
+  - community/Community_1709
 ---
 
 # Favicon 32x32 (AgentShroud logo mark)
 
-#graphify/image #graphify/EXTRACTED #community/Community_1622
+#graphify/image #graphify/EXTRACTED #community/Community_1709

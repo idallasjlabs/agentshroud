@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "Community 1325"
+community: "Community 43"
 location: "L775"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1325
+  - community/Community_43
 ---
 
 # _default_mtime()
@@ -18,4 +18,4 @@ tags:
 - [[test_config_hot_reload.py]] - `imports` [EXTRACTED]
 - [[test_default_mtime_reads_real_file_and_handles_missing()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1325
+#graphify/code #graphify/EXTRACTED #community/Community_43

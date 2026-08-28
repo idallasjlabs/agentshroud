@@ -1,12 +1,12 @@
 ---
 source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "Community 1125"
+community: "Community 899"
 location: "L261"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1125
+  - community/Community_899
 ---
 
 # Motion Principles
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Animation Guidelines]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1125
+#graphify/document #graphify/EXTRACTED #community/Community_899

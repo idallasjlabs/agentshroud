@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_context_integrity.py"
 type: "code"
-community: "Community 116"
+community: "Community 155"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_116
+  - community/Community_155
 ---
 
 # test_context_integrity.py
@@ -21,4 +21,4 @@ tags:
 - [[guard()_1]] - `contains` [EXTRACTED]
 - [[scorer()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_116
+#graphify/code #graphify/EXTRACTED #community/Community_155

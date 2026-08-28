@@ -1,22 +1,24 @@
 ---
 type: community
+cohesion: 0.22
 members: 9
 ---
 
 # Community 925
 
+**Cohesion:** 0.22 - loosely connected
 **Members:** 9 nodes
 
 ## Members
-- [[4. Defense-in-Depth Container Security]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.1 Build-Time Image Scanning (Trivy)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.2 Runtime Malware Detection (ClamAV)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.3 Runtime Syscall Monitoring (Falco)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.4 Host Integrity Monitoring (Wazuh)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.5 Compliance Scanning (OpenSCAP)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.6 Daily Security Health Report]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.7 Zero-Configuration Security]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.8 Container Security — Competitive Comparison]] - document - docs/papers/agentshroud-whitepaper.md
+- [[AgentShroud v1.2.0 — Red Team Assessment]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[Methodology note]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[RT-00 — Tool inventory disclosure]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[RT-MB4 — Hermes cron job injection via jobs.yaml]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[red-team-assessment-v1.2.0]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[§3 — SAST Scan Summary]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[§4 — Findings Summary]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[§5 — Acceptance Rationales (Signed Off)]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[§6 — Regression Test Index]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,7 +28,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 401]]
+- 1 edge to [[_COMMUNITY_Community 924]]
+- 1 edge to [[_COMMUNITY_Community 1002]]
+- 1 edge to [[_COMMUNITY_Community 1067]]
 
 ## Top bridge nodes
-- [[4. Defense-in-Depth Container Security]] - degree 9, connects to 1 community
+- [[AgentShroud v1.2.0 — Red Team Assessment]] - degree 8, connects to 2 communities
+- [[red-team-assessment-v1.2.0]] - degree 2, connects to 1 community

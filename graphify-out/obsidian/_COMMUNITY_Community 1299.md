@@ -1,17 +1,19 @@
 ---
 type: community
+cohesion: 0.50
 members: 4
 ---
 
 # Community 1299
 
+**Cohesion:** 0.50 - moderately connected
 **Members:** 4 nodes
 
 ## Members
-- [[.fmt()]] - code - cli/src/main.rs
-- [[CollabMode]] - code - cli/src/main.rs
-- [[Display]] - code - cli/src/main.rs
-- [[Formatter]] - code - cli/src/main.rs
+- [[For --watch_1]] - document - docker/config/hermes/skills/graphify/references/add-watch.md
+- [[For graphify add_1]] - document - docker/config/hermes/skills/graphify/references/add-watch.md
+- [[add-watch_1]] - document - docker/config/hermes/skills/graphify/references/add-watch.md
+- [[graphify reference add a URL and watch a folder_1]] - document - docker/config/hermes/skills/graphify/references/add-watch.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,10 +21,3 @@ members: 4
 TABLE source_file, type FROM #community/Community_1299
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 40]]
-
-## Top bridge nodes
-- [[CollabMode]] - degree 3, connects to 1 community
-- [[.fmt()]] - degree 3, connects to 1 community

@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 1.00
 members: 2
 ---
 
 # Community 1538
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[SOC Models SecurityEvent Tests]] - code - gateway/tests/test_soc_models.py
-- [[SOC ServiceManager Tests (get_logs, module_filter)]] - code - gateway/tests/test_soc_services.py
+- [[ToolACLEnforcer._can_use_tool_impl()]] - code - gateway/security/tool_acl.py
+- [[TrustManager.is_tool_allowed()]] - code - gateway/security/trust_manager.py
 
 ## Live Query (requires Dataview plugin)
 

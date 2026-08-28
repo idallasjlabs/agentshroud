@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sync-cve-registry.py"
 type: "rationale"
-community: "Community 112"
+community: "Community 120"
 location: "L667"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_112
+  - community/Community_120
 ---
 
 # Append under_review *new_entries* to *agent_id*'s OWN registry list.      Insert
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[append_ghsa_entries()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_112
+#graphify/rationale #graphify/EXTRACTED #community/Community_120

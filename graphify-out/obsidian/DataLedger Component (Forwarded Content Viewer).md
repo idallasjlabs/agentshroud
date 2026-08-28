@@ -1,11 +1,11 @@
 ---
 source_file: "dashboard/README.md"
 type: "concept"
-community: "Community 257"
+community: "Community 791"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_257
+  - community/Community_791
 ---
 
 # DataLedger Component (Forwarded Content Viewer)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[README_40]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_257
+#graphify/concept #graphify/EXTRACTED #community/Community_791

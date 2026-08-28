@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/PHASE3_REQUIREMENTS.md"
 type: "document"
-community: "Community 352"
+community: "Community 356"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_352
+  - community/Community_356
 ---
 
 # Phase 3 Requirements: Working Chat Container
@@ -23,4 +23,4 @@ tags:
 - [[Success Criteria_1]] - `contains` [EXTRACTED]
 - [[Timeline_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_352
+#graphify/document #graphify/EXTRACTED #community/Community_356

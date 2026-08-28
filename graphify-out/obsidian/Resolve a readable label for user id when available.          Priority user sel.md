@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Community 4"
+community: "Adversarial Injection Guards"
 location: "L822"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_4
+  - community/Adversarial_Injection_Guards
 ---
 
 # Resolve a readable label for user id when available.          Priority: user sel
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._resolve_display_name()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_4
+#graphify/rationale #graphify/EXTRACTED #community/Adversarial_Injection_Guards

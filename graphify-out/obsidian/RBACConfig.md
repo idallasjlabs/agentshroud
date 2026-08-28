@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "code"
-community: "Community 15"
+community: "RBAC & SOC Realtime"
 location: "L64"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_15
+  - community/RBAC__SOC_Realtime
 ---
 
 # RBACConfig
@@ -17,4 +17,4 @@ tags:
 - [[Role_1]] - `uses` [INFERRED]
 - [[ToolTier_2]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_15
+#graphify/code #graphify/INFERRED #community/RBAC__SOC_Realtime

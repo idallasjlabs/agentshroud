@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "Community 1844"
+community: "Community 200"
 location: "L212"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1844
+  - community/Community_200
 ---
 
 # GroupRegistry
@@ -30,7 +30,7 @@ tags:
 - [[.test_is_member_unknown_group_returns_false()]] - `calls` [EXTRACTED]
 - [[.test_slack_group_contains_slack_ids()]] - `calls` [EXTRACTED]
 - [[.test_telegram_group_contains_numeric_ids()]] - `calls` [EXTRACTED]
-- [[FastAPI_1]] - `uses` [INFERRED]
+- [[FastAPI_2]] - `uses` [INFERRED]
 - [[LogRecord]] - `uses` [INFERRED]
 - [[Manages user groups including auto-groups and custom groups.]] - `rationale_for` [EXTRACTED]
 - [[RBACConfig_3]] - `uses` [INFERRED]
@@ -47,4 +47,4 @@ tags:
 - [[rbac_config.py]] - `contains` [EXTRACTED]
 - [[test_rbac.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1844
+#graphify/code #graphify/EXTRACTED #community/Community_200

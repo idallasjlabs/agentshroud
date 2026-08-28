@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1209
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_69]] - document - docker/config/hermes/skills/i-socrates/README.md
-- [[README_74]] - document - docker/config/hermes/skills/i-socrates/README.md
-- [[Related Skills_75]] - document - docker/config/hermes/skills/i-socrates/README.md
-- [[Socrates — Dialogue Architect_2]] - document - docker/config/hermes/skills/i-socrates/README.md
-- [[Usage_76]] - document - docker/config/hermes/skills/i-socrates/README.md
+- [[Apollo — Audio Systems Producer_3]] - document - docker/config/openclaw/skills/i-apollo/README.md
+- [[Purpose_74]] - document - docker/config/openclaw/skills/i-apollo/README.md
+- [[README_79]] - document - docker/config/openclaw/skills/i-apollo/README.md
+- [[Related Skills_80]] - document - docker/config/openclaw/skills/i-apollo/README.md
+- [[Usage_82]] - document - docker/config/openclaw/skills/i-apollo/README.md
 
 ## Live Query (requires Dataview plugin)
 

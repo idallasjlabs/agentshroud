@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1225
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[Git Workflow Guardian (GIT-GUARD)_2]] - document - docker/config/openclaw/skills/i-gg/README.md
-- [[Purpose_85]] - document - docker/config/openclaw/skills/i-gg/README.md
-- [[README_90]] - document - docker/config/openclaw/skills/i-gg/README.md
-- [[Related Skills_91]] - document - docker/config/openclaw/skills/i-gg/README.md
-- [[Usage_94]] - document - docker/config/openclaw/skills/i-gg/README.md
+- [[MCP Auth Reset (MCPM-AUTH-RESET)_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/README.md
+- [[Purpose_90]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/README.md
+- [[README_95]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/README.md
+- [[Related Skills_96]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/README.md
+- [[Usage_99]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/README.md
 
 ## Live Query (requires Dataview plugin)
 

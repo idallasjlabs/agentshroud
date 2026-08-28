@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "Community 265"
+community: "PII Sanitizer & E2E Tests"
 location: "L4010"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_265
+  - community/PII_Sanitizer__E2E_Tests
 ---
 
 # TestOutboundTextFieldResolution
@@ -21,4 +21,4 @@ tags:
 - [[Unit tests for outbound text field resolution helper behavior.]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_265
+#graphify/code #graphify/INFERRED #community/PII_Sanitizer__E2E_Tests

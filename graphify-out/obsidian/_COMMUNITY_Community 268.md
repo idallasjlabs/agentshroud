@@ -1,43 +1,45 @@
 ---
 type: community
+cohesion: 0.07
 members: 30
 ---
 
 # Community 268
 
+**Cohesion:** 0.07 - loosely connected
 **Members:** 30 nodes
 
 ## Members
-- [[A garbage WHISPER_MODEL_SIZE env value does not break startup.]] - rationale - gateway/tests/test_voice_stt_model_ab.py
-- [[A valid requested value overrides the default (the AB knob).]] - rationale - gateway/tests/test_voice_stt_model_ab.py
-- [[An unknown model size does NOT crash — it falls back to the default.]] - rationale - gateway/tests/test_voice_stt_model_ab.py
-- [[Duration is rounded for stable, log-friendly records.]] - rationale - gateway/tests/test_voice_stt_model_ab.py
-- [[No requested value → the default is used (behaviour unchanged).]] - rationale - gateway/tests/test_voice_stt_model_ab.py
-- [[Operator-friendly trims + lowercases before matching.]] - rationale - gateway/tests/test_voice_stt_model_ab.py
-- [[Setting WHISPER_MODEL_SIZE=base.en flips the resolved model (AB).]] - rationale - gateway/tests/test_voice_stt_model_ab.py
-- [[The AB measurement fires on the real transcribe path (model mocked).      Prove]] - rationale - gateway/tests/test_voice_stt_model_ab.py
-- [[The documented AB knob values are all accepted.]] - rationale - gateway/tests/test_voice_stt_model_ab.py
-- [[The fallback is visible to operators (WARNING, not silent).]] - rationale - gateway/tests/test_voice_stt_model_ab.py
-- [[The helper returns a record tagged with model size + duration.]] - rationale - gateway/tests/test_voice_stt_model_ab.py
-- [[The record is emitted through the module logger for AB comparison.]] - rationale - gateway/tests/test_voice_stt_model_ab.py
-- [[With WHISPER_MODEL_SIZE unset, the resolved size stays small.en.]] - rationale - gateway/tests/test_voice_stt_model_ab.py
-- [[Zero  unknown audio length → rtf is None (no divide-by-zero).]] - rationale - gateway/tests/test_voice_stt_model_ab.py
-- [[test_module_model_size_defaults_to_small_en()]] - code - gateway/tests/test_voice_stt_model_ab.py
-- [[test_module_model_size_env_override()]] - code - gateway/tests/test_voice_stt_model_ab.py
-- [[test_module_model_size_invalid_env_falls_back()]] - code - gateway/tests/test_voice_stt_model_ab.py
-- [[test_record_transcription_latency_handles_zero_audio()]] - code - gateway/tests/test_voice_stt_model_ab.py
-- [[test_record_transcription_latency_logs_info()]] - code - gateway/tests/test_voice_stt_model_ab.py
-- [[test_record_transcription_latency_returns_structured_record()]] - code - gateway/tests/test_voice_stt_model_ab.py
-- [[test_record_transcription_latency_rounds_duration()]] - code - gateway/tests/test_voice_stt_model_ab.py
-- [[test_select_model_size_default_when_unset()]] - code - gateway/tests/test_voice_stt_model_ab.py
-- [[test_select_model_size_env_override_selects_configured_model()]] - code - gateway/tests/test_voice_stt_model_ab.py
-- [[test_select_model_size_invalid_falls_back_to_default()]] - code - gateway/tests/test_voice_stt_model_ab.py
-- [[test_select_model_size_invalid_logs_warning()]] - code - gateway/tests/test_voice_stt_model_ab.py
-- [[test_select_model_size_is_case_and_whitespace_insensitive()]] - code - gateway/tests/test_voice_stt_model_ab.py
-- [[test_transcribe_emits_latency_record()]] - code - gateway/tests/test_voice_stt_model_ab.py
-- [[test_valid_model_sizes_contains_documented_ab_set()]] - code - gateway/tests/test_voice_stt_model_ab.py
-- [[test_voice_stt_model_ab.py]] - code - gateway/tests/test_voice_stt_model_ab.py
-- [[voice_gatewaystt.py]] - code - voice_gateway/stt.py
+- [[1. SOC Command Center (Web UI)]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
+- [[2. Telegram Command Testing]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
+- [[3. Collaborator Experience Testing]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
+- [[4. Shared Memory Testing]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
+- [[5. Log Monitoring]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
+- [[6. Security Scan]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
+- [[7. Pre-Merge Checklist]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
+- [[API Endpoints — Direct Verification]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
+- [[Access and Login]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
+- [[AgentShroud v0.9.0 — Human Interface Testing Guide]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
+- [[Dashboard Tabs to Verify]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
+- [[Delegation_1]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
+- [[Egress Firewall]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
+- [[Egress Tab]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
+- [[Group Management]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
+- [[Groups Tab]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
+- [[Prerequisites — Start the Stack]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
+- [[Role and Collaborator Management]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
+- [[Scanners Tab]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
+- [[Scorecard Tab]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
+- [[Security Immunity]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
+- [[Security Tab]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
+- [[Status Commands]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
+- [[Team Configuration Reference]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
+- [[Test Delegation privilege enforcement]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
+- [[Test full_access mode]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
+- [[Test local_only mode]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
+- [[Test project_scoped mode]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
+- [[Users Tab]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
+- [[v0.9.0-testing-guide]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -45,9 +47,3 @@ members: 30
 TABLE source_file, type FROM #community/Community_268
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 740]]
-
-## Top bridge nodes
-- [[test_voice_stt_model_ab.py]] - degree 16, connects to 1 community

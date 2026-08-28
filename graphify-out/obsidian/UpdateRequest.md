@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Community 31"
+community: "Community 29"
 location: "L150"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_31
+  - community/Community_29
 ---
 
 # UpdateRequest
@@ -42,4 +42,4 @@ tags:
 - [[upgrade_bot()_1]] - `references` [EXTRACTED]
 - [[upgrade_openclaw()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_31
+#graphify/code #graphify/INFERRED #community/Community_29

@@ -1,48 +1,41 @@
 ---
 type: community
-members: 35
+cohesion: 0.12
+members: 26
 ---
 
 # Community 329
 
-**Members:** 35 nodes
+**Cohesion:** 0.12 - loosely connected
+**Members:** 26 nodes
 
 ## Members
-- [[1. Phone Number (Separate from Main)]] - document - docs/reference/PREREQUISITES.md
-- [[1Password (Optional — Teams  Shared Credentials)]] - document - docs/reference/PREREQUISITES.md
-- [[2. Gmail Account (Dedicated for Bot)]] - document - docs/reference/PREREQUISITES.md
-- [[3. Telegram Account (Bot Communication)]] - document - docs/reference/PREREQUISITES.md
-- [[4. Secrets Backend (Credential Management)]] - document - docs/reference/PREREQUISITES.md
-- [[5. OpenAI Account (LLM API)]] - document - docs/reference/PREREQUISITES.md
-- [[6. Anthropic Account (Claude API)]] - document - docs/reference/PREREQUISITES.md
-- [[Accounts]] - document - docs/reference/PREREQUISITES.md
-- [[Additional Tools in Containers]] - document - docs/reference/PREREQUISITES.md
-- [[AgentShroud Prerequisites]] - document - docs/reference/PREREQUISITES.md
-- [[Annually]] - document - docs/reference/PREREQUISITES.md
-- [[Base Images]] - document - docs/reference/PREREQUISITES.md
-- [[Common Issues]] - document - docs/reference/PREREQUISITES.md
-- [[Configuration_8]] - document - docs/reference/PREREQUISITES.md
-- [[Monthly]] - document - docs/reference/PREREQUISITES.md
-- [[Network Security]] - document - docs/reference/PREREQUISITES.md
-- [[Overview_10]] - document - docs/reference/PREREQUISITES.md
-- [[Quarterly]] - document - docs/reference/PREREQUISITES.md
-- [[Secrets Management]] - document - docs/reference/PREREQUISITES.md
-- [[Software]] - document - docs/reference/PREREQUISITES.md
-- [[Verification_16]] - document - docs/reference/PREREQUISITES.md
-- [[macOS Keychain (Default)]] - document - docs/reference/PREREQUISITES.md
-- [[✅ Setup Checklist]] - document - docs/reference/PREREQUISITES.md
-- [[✅ Your Current Setup Status]] - document - docs/reference/PREREQUISITES.md
-- [[🆘 Troubleshooting]] - document - docs/reference/PREREQUISITES.md
-- [[🎯 Philosophy Separation of Concerns]] - document - docs/reference/PREREQUISITES.md
-- [[🎯 You're Not Missing Anything!]] - document - docs/reference/PREREQUISITES.md
-- [[📊 Cost Breakdown]] - document - docs/reference/PREREQUISITES.md
-- [[📚 Additional Resources]] - document - docs/reference/PREREQUISITES.md
-- [[📦 Docker Images & Dependencies]] - document - docs/reference/PREREQUISITES.md
-- [[📱 Required Accounts & Services]] - document - docs/reference/PREREQUISITES.md
-- [[🔄 Maintenance Requirements]] - document - docs/reference/PREREQUISITES.md
-- [[🔐 Security Requirements]] - document - docs/reference/PREREQUISITES.md
-- [[🗂️ File Structure]] - document - docs/reference/PREREQUISITES.md
-- [[🚀 Quick Start Command]] - document - docs/reference/PREREQUISITES.md
+- [[.client()_5]] - code - gateway/tests/test_runtime_engines.py
+- [[.client()_4]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_apple_script_custom_services()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_compose_depends_on()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_compose_has_security_opts()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_compose_healthcheck()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_dashboard_page()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_generate_apple_script()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_generate_custom_services()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_generate_docker_compose()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_generate_podman_compose()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_put_then_get()]] - code - gateway/tests/test_runtime_engines.py
+- [[Definition of a single service for compose generation.]] - rationale - gateway/runtime/compose_generator.py
+- [[Generate a compose YAML file for Docker or Podman.      Args         services]] - rationale - gateway/runtime/compose_generator.py
+- [[Generate a shell script to start services with Apple Containers.      Apple Cont]] - rationale - gateway/runtime/compose_generator.py
+- [[ServiceDef]] - code - gateway/runtime/compose_generator.py
+- [[TestComposeGenerator]] - code - gateway/tests/test_runtime_engines.py
+- [[TestConfigRoundTrip]] - code - gateway/tests/test_runtime_engines.py
+- [[TestManagementPage]] - code - gateway/tests/test_runtime_engines.py
+- [[gatewayruntimeconfig.py (RuntimeConfig)]] - code - gateway/runtime/config.py
+- [[gatewayruntimedocker_engine.py (DockerEngine)]] - code - gateway/runtime/docker_engine.py
+- [[gatewayruntimepodman_engine.py (PodmanEngine)]] - code - gateway/runtime/podman_engine.py
+- [[gatewayruntimesecurity.py (get_features_for_runtime)]] - code - gateway/runtime/security.py
+- [[generate_apple_script()]] - code - gateway/runtime/compose_generator.py
+- [[generate_compose()]] - code - gateway/runtime/compose_generator.py
+- [[test_runtime_engines.py]] - code - gateway/tests/test_runtime_engines.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -52,8 +45,23 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 725]]
-- 1 edge to [[_COMMUNITY_Community 857]]
+- 12 edges to [[_COMMUNITY_Community 348]]
+- 6 edges to [[_COMMUNITY_Community 207]]
+- 6 edges to [[_COMMUNITY_Community 453]]
+- 5 edges to [[_COMMUNITY_Community 325]]
+- 4 edges to [[_COMMUNITY_Community 320]]
+- 3 edges to [[_COMMUNITY_Community 447]]
+- 3 edges to [[_COMMUNITY_Community 849]]
+- 2 edges to [[_COMMUNITY_Community 919]]
+- 2 edges to [[_COMMUNITY_Community 365]]
+- 2 edges to [[_COMMUNITY_Community 1060]]
+- 2 edges to [[_COMMUNITY_Community 645]]
+- 2 edges to [[_COMMUNITY_Community 37]]
+- 1 edge to [[_COMMUNITY_Community 29]]
 
 ## Top bridge nodes
-- [[AgentShroud Prerequisites]] - degree 16, connects to 2 communities
+- [[test_runtime_engines.py]] - degree 33, connects to 13 communities
+- [[ServiceDef]] - degree 20, connects to 9 communities
+- [[TestComposeGenerator]] - degree 14, connects to 4 communities
+- [[TestConfigRoundTrip]] - degree 8, connects to 4 communities
+- [[TestManagementPage]] - degree 8, connects to 4 communities

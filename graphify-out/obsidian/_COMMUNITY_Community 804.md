@@ -1,24 +1,26 @@
 ---
 type: community
+cohesion: 0.18
 members: 11
 ---
 
 # Community 804
 
+**Cohesion:** 0.18 - loosely connected
 **Members:** 11 nodes
 
 ## Members
-- [[Daedalus — Concept Illustrator_5]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
-- [[Input Requirements_23]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
-- [[Output Format_29]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
-- [[Persona_18]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
-- [[Quality Checklist_21]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
-- [[Role_84]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
-- [[SKILL_144]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
-- [[System Prompt_18]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
-- [[architecture.puml (PlantUML)_2]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
-- [[diagramsREADME_2]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
-- [[flow.mmd (Mermaid)_2]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
+- [[Configuration  Environment Variables_7]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
+- [[Function Details_13]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
+- [[Key Classes  Functions_16]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
+- [[Purpose_134]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
+- [[Related_20]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
+- [[Responsibilities_18]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
+- [[Security Limitation Warning]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
+- [[SidecarScanner.get_stats()]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
+- [[SidecarScanner.scan(request)]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
+- [[sidecar.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
+- [[sidecar.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "Community 27"
+community: "Community 69"
 location: "L270"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_27
+  - community/Community_69
 ---
 
 # WSEvent
@@ -19,7 +19,7 @@ tags:
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[SOCWebSocketHandler]] - `uses` [INFERRED]
 - [[WSEvent_1]] - `uses` [INFERRED]
-- [[WebSocket_6]] - `uses` [INFERRED]
+- [[WebSocket_7]] - `uses` [INFERRED]
 - [[_coerce_to_ws_event()]] - `calls` [EXTRACTED]
 - [[_connectWS()]] - `shares_data_with` [INFERRED]
 - [[models.py_1]] - `contains` [EXTRACTED]
@@ -27,4 +27,4 @@ tags:
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 - [[websocket.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_27
+#graphify/code #graphify/EXTRACTED #community/Community_69

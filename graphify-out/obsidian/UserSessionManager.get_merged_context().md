@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "Community 15"
+community: "RBAC & SOC Realtime"
 location: "L532"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_15
+  - community/RBAC__SOC_Realtime
 ---
 
 # UserSessionManager.get_merged_context()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[RBACConfig_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_15
+#graphify/code #graphify/EXTRACTED #community/RBAC__SOC_Realtime

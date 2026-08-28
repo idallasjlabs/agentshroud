@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privacy_policy.py"
 type: "code"
-community: "Community 11"
+community: "Community 87"
 location: "L152"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_11
+  - community/Community_87
 ---
 
 # TestAuditAndAlert
@@ -25,4 +25,4 @@ tags:
 - [[TeamsConfig]] - `uses` [INFERRED]
 - [[test_privacy_policy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_11
+#graphify/code #graphify/INFERRED #community/Community_87

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/webhook_receiver.py"
 type: "rationale"
-community: "Community 174"
+community: "Community 28"
 location: "L90"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_174
+  - community/Community_28
 ---
 
 # Check if we can create the given directory path.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._can_create_directory()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_174
+#graphify/rationale #graphify/EXTRACTED #community/Community_28

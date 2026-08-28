@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/SETUP.md"
 type: "document"
-community: "Community 553"
+community: "Community 341"
 location: "L378"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_553
+  - community/Community_341
 ---
 
 # Button component v4.x API error at build time
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[10. Troubleshooting]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_553
+#graphify/document #graphify/EXTRACTED #community/Community_341

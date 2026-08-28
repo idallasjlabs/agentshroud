@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router.py"
 type: "rationale"
-community: "Community 754"
+community: "Config Validation & Router"
 location: "L61"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_754
+  - community/Config_Validation__Router
 ---
 
 # Test routing with invalid explicit target falls back to default
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_resolve_target_invalid_explicit()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_754
+#graphify/rationale #graphify/EXTRACTED #community/Config_Validation__Router

@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.70
 members: 5
 ---
 
 # Community 1266
 
+**Cohesion:** 0.70 - tightly connected
 **Members:** 5 nodes
 
 ## Members
-- [[Authentication required]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[Permission denied]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[Skill validation failed]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[clawhub command not found]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[🆘 Troubleshooting_1]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[log()_7]] - code - scripts/openclaw_triage.sh
+- [[openclaw_triage.sh]] - code - scripts/openclaw_triage.sh
+- [[openclaw_triage.sh script]] - code - scripts/openclaw_triage.sh
+- [[save_cmd()]] - code - scripts/openclaw_triage.sh
+- [[save_shell()]] - code - scripts/openclaw_triage.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,9 +22,3 @@ members: 5
 TABLE source_file, type FROM #community/Community_1266
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 858]]
-
-## Top bridge nodes
-- [[🆘 Troubleshooting_1]] - degree 5, connects to 1 community

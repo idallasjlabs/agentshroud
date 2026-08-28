@@ -1,11 +1,11 @@
 ---
 source_file: "docs/user-guide.md"
 type: "concept"
-community: "Community 1252"
+community: "Community 1247"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Community_1252
+  - community/Community_1247
 ---
 
 # Dashboard Overview (request volume, security events, audit trail)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[SOC Command Center — Five Pillars]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Community_1252
+#graphify/concept #graphify/INFERRED #community/Community_1247

@@ -1,21 +1,20 @@
 ---
-source_file: "gateway/ingest_api/routes/dashboard.py"
+source_file: "gateway/ingest_api/routes/approval.py"
 type: "code"
-community: "Community 0"
-location: "L385"
+community: "Ingest API & Approval Routes"
+location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_0
+  - community/Ingest_API__Approval_Routes
 ---
 
 # Request
 
 ## Connections
-- [[auth_dep()_2]] - `references` [EXTRACTED]
-- [[dashboard_stats()]] - `references` [EXTRACTED]
-- [[dashboard_ws_token()]] - `references` [EXTRACTED]
-- [[get_collaborators()]] - `references` [EXTRACTED]
-- [[serve_dashboard()]] - `references` [EXTRACTED]
+- [[auth_dep()_1]] - `references` [EXTRACTED]
+- [[decide_approval()]] - `references` [EXTRACTED]
+- [[list_pending_approvals()]] - `references` [EXTRACTED]
+- [[submit_approval_request()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_0
+#graphify/code #graphify/EXTRACTED #community/Ingest_API__Approval_Routes

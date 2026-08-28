@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "Community 1264"
+community: "Community 1260"
 location: "L563"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1264
+  - community/Community_1260
 ---
 
 # Troubleshooting Common Issues
@@ -18,4 +18,4 @@ tags:
 - [[Port Already in Use]] - `contains` [EXTRACTED]
 - [[SSL Certificate Issues]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1264
+#graphify/document #graphify/EXTRACTED #community/Community_1260

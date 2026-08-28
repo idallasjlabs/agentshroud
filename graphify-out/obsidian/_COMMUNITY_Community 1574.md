@@ -1,14 +1,17 @@
 ---
 type: community
-members: 1
+cohesion: 1.00
+members: 2
 ---
 
 # Community 1574
 
-**Members:** 1 nodes
+**Cohesion:** 1.00 - tightly connected
+**Members:** 2 nodes
 
 ## Members
-- [[Atlassian MCP Server (Jira + Confluence, concept)]] - concept - docker/config/hermes/skills/i-mcpm/SKILL.md
+- [[SharedMemoryManager Merged Memory Tests]] - code - gateway/tests/test_shared_memory.py
+- [[SharedMemoryManager Topic-Scoped Memory Tests]] - code - gateway/tests/test_shared_memory.py
 
 ## Live Query (requires Dataview plugin)
 

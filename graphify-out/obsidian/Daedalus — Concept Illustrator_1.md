@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-daedalus/SKILL.md"
 type: "document"
-community: "Community 795"
+community: "Community 786"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_795
+  - community/Community_786
 ---
 
 # Daedalus — Concept Illustrator
@@ -20,4 +20,4 @@ tags:
 - [[SKILL_17]] - `contains` [EXTRACTED]
 - [[System Prompt_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_795
+#graphify/document #graphify/EXTRACTED #community/Community_786

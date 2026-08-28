@@ -1,15 +1,18 @@
 ---
 type: community
-members: 2
+cohesion: 0.67
+members: 3
 ---
 
 # Community 1417
 
-**Members:** 2 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[SKILL_2]] - document - .agents/skills/i-agile/SKILL.md
-- [[Skill agile]] - document - .agents/skills/i-agile/SKILL.md
+- [[OTA Promotion Gate Rationale (2026-07-27 incident)]] - rationale - scripts/promote-firmware.sh
+- [[promote-firmware.sh]] - code - scripts/promote-firmware.sh
+- [[promote-firmware.sh script]] - code - scripts/promote-firmware.sh
 
 ## Live Query (requires Dataview plugin)
 

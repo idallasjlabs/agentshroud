@@ -1,26 +1,28 @@
 ---
 type: community
+cohesion: 0.17
 members: 13
 ---
 
 # Community 716
 
+**Cohesion:** 0.17 - loosely connected
 **Members:** 13 nodes
 
 ## Members
-- [[1. Verify CI and update the PR]] - document - .agents/skills/i-release/SKILL.md
-- [[2. Merge]] - document - .agents/skills/i-release/SKILL.md
-- [[3. Update graphify]] - document - .agents/skills/i-release/SKILL.md
-- [[4. Tag and release]] - document - .agents/skills/i-release/SKILL.md
-- [[5. Documentation and version visibility]] - document - .agents/skills/i-release/SKILL.md
-- [[6. Close Jira]] - document - .agents/skills/i-release/SKILL.md
-- [[7. Rebuildrestart prod and dev from main]] - document - .agents/skills/i-release/SKILL.md
-- [[Guardrails_5]] - document - .agents/skills/i-release/SKILL.md
-- [[Invocation_3]] - document - .agents/skills/i-release/SKILL.md
-- [[Role_30]] - document - .agents/skills/i-release/SKILL.md
-- [[SKILL_46]] - document - .agents/skills/i-release/SKILL.md
-- [[Skill Release (i-release)]] - document - .agents/skills/i-release/SKILL.md
-- [[Steps]] - document - .agents/skills/i-release/SKILL.md
+- [[API key]] - document - skills/openclaw/openai-whisper-api/SKILL.md
+- [[Chat voice responses]] - document - skills/openclaw/sag/SKILL.md
+- [[OpenAI Whisper API (curl)]] - document - skills/openclaw/openai-whisper-api/SKILL.md
+- [[Quick start_2]] - document - skills/openclaw/openai-whisper-api/SKILL.md
+- [[SKILL_221]] - document - skills/openclaw/openai-whisper-api/SKILL.md
+- [[SKILL_222]] - document - skills/openclaw/openai-whisper/SKILL.md
+- [[SKILL_226]] - document - skills/openclaw/sag/SKILL.md
+- [[Useful flags]] - document - skills/openclaw/openai-whisper-api/SKILL.md
+- [[Whisper (CLI)]] - document - skills/openclaw/openai-whisper/SKILL.md
+- [[sag]] - document - skills/openclaw/sag/SKILL.md
+- [[transcribe.sh]] - code - skills/openclaw/openai-whisper-api/scripts/transcribe.sh
+- [[transcribe.sh script]] - code - skills/openclaw/openai-whisper-api/scripts/transcribe.sh
+- [[usage()_5]] - code - skills/openclaw/openai-whisper-api/scripts/transcribe.sh
 
 ## Live Query (requires Dataview plugin)
 

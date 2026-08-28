@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "Community 63"
+community: "Community 159"
 location: "L176"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_63
+  - community/Community_159
 ---
 
 # email_send()
@@ -20,10 +20,10 @@ tags:
 - [[GatewayEmailService]] - `calls` [EXTRACTED]
 - [[JSONResponse]] - `calls` [INFERRED]
 - [[Owner-allowlist checked before PII sanitisation to avoid CVEdate-dense body collapse]] - `rationale_for` [EXTRACTED]
-- [[Request_4]] - `references` [EXTRACTED]
+- [[Request_5]] - `references` [EXTRACTED]
 - [[_is_email_recipient_allowed()]] - `calls` [EXTRACTED]
 - [[email_send_owner()]] - `calls` [EXTRACTED]
 - [[forward.py]] - `contains` [EXTRACTED]
 - [[test_email_owner_bypasses_pii.py]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_63
+#graphify/code #graphify/EXTRACTED #community/Community_159

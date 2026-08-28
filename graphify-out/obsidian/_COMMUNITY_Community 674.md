@@ -1,27 +1,29 @@
 ---
 type: community
+cohesion: 0.14
 members: 14
 ---
 
 # Community 674
 
+**Cohesion:** 0.14 - loosely connected
 **Members:** 14 nodes
 
 ## Members
-- [[1. Clone the Repository_1]] - document - docs/operations/macos.md
-- [[2. Install Docker Desktop]] - document - docs/operations/macos.md
-- [[3. Set Up Secrets_1]] - document - docs/operations/macos.md
-- [[4. Configure AgentShroud_1]] - document - docs/operations/macos.md
-- [[5. Build and Start_1]] - document - docs/operations/macos.md
-- [[6. Verify_1]] - document - docs/operations/macos.md
-- [[Apple Silicon vs Intel]] - document - docs/operations/macos.md
-- [[Deploying AgentShroud on macOS (Apple Silicon  Intel)]] - document - docs/operations/macos.md
-- [[Docker Desktop Resource Allocation]] - document - docs/operations/macos.md
-- [[Fresh Install_1]] - document - docs/operations/macos.md
-- [[Prerequisites_5]] - document - docs/operations/macos.md
-- [[Running Without Docker (Native Python)]] - document - docs/operations/macos.md
-- [[Updating to Latest Release_1]] - document - docs/operations/macos.md
-- [[macos]] - document - docs/operations/macos.md
+- [[Configuration  Environment Variables_5]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
+- [[Function Details_11]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
+- [[Key Classes  Functions_14]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
+- [[MCPPermissionManager.check_agent_server_access(agent_id, server_name)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
+- [[MCPPermissionManager.check_all(agent_id, server_name, tool_name)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
+- [[MCPPermissionManager.check_rate_limit(agent_id, server_name, tool_name)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
+- [[MCPPermissionManager.get_trust_level(agent_id)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
+- [[MCPPermissionManager.infer_permission_level(tool_name, server_config)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
+- [[Purpose_132]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
+- [[Related_17]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
+- [[Responsibilities_16]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
+- [[Trust Level Reference]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
+- [[mcp_permissions.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
+- [[mcp_permissions.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
 
 ## Live Query (requires Dataview plugin)
 

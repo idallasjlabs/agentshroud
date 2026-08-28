@@ -1,35 +1,37 @@
 ---
 type: community
+cohesion: 0.09
 members: 22
 ---
 
 # Community 392
 
+**Cohesion:** 0.09 - loosely connected
 **Members:** 22 nodes
 
 ## Members
-- [[BlueBubbles (native macOS iMessage relay)]] - concept - docs/setup/IMESSAGE_STATUS.md
-- [[Current Configuration]] - document - docs/setup/IMESSAGE_STATUS.md
-- [[Current State Partially Working]] - document - docs/setup/IMESSAGE_STATUS.md
-- [[Current Status_8]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
-- [[Current Status Summary]] - document - docs/setup/IMESSAGE_STATUS.md
-- [[How to Fix (5 Minutes)]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
-- [[IMESSAGE_PERMISSION_FIX]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
-- [[IMESSAGE_STATUS]] - document - docs/setup/IMESSAGE_STATUS.md
-- [[If It Still Doesn't Work]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
-- [[Next Steps_6]] - document - docs/setup/IMESSAGE_STATUS.md
-- [[Option 1 Grant Permissions (NOT RECOMMENDED - Won't Work from Container)]] - document - docs/setup/IMESSAGE_STATUS.md
-- [[Option 2 Use BlueBubbles (RECOMMENDED ✅)]] - document - docs/setup/IMESSAGE_STATUS.md
-- [[Solutions]] - document - docs/setup/IMESSAGE_STATUS.md
-- [[Step 1 Switch to agentshroud-bot User]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
-- [[Step 2 Grant Automation Permission]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
-- [[Step 3 Test It]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
-- [[Step 4 Verify from Docker]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
-- [[The Error]] - document - docs/setup/IMESSAGE_STATUS.md
-- [[The Error We're Getting]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
-- [[What This Means_1]] - document - docs/setup/IMESSAGE_STATUS.md
-- [[iMessage Integration Status]] - document - docs/setup/IMESSAGE_STATUS.md
-- [[iMessage Permission Fix - Step by Step]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
+- [[ASCII Art (fallback — no renderer available)]] - document - .agents/skills/i-ti/SKILL.md
+- [[Anti-Patterns to Flag_4]] - document - .agents/skills/i-ti/SKILL.md
+- [[Architecture (C4  block) — System boundaries and components]] - document - .agents/skills/i-ti/SKILL.md
+- [[Brand Theme Block (Mermaid)]] - document - .agents/skills/i-ti/SKILL.md
+- [[Core Discipline Understand → Diagram → Validate → Export]] - document - .agents/skills/i-ti/SKILL.md
+- [[Data Flow — How data moves and transforms]] - document - .agents/skills/i-ti/SKILL.md
+- [[Dependencies_2]] - document - .agents/skills/i-ti/SKILL.md
+- [[Diagram Types and Data Lakehouse Examples]] - document - .agents/skills/i-ti/SKILL.md
+- [[ER Diagram — Table relationships and control schema]] - document - .agents/skills/i-ti/SKILL.md
+- [[File and Directory Conventions]] - document - .agents/skills/i-ti/SKILL.md
+- [[Gantt — Daily pipeline schedule]] - document - .agents/skills/i-ti/SKILL.md
+- [[Online renderer]] - document - .agents/skills/i-ti/SKILL.md
+- [[Render locally with mmdc]] - document - .agents/skills/i-ti/SKILL.md
+- [[Rendering and Export]] - document - .agents/skills/i-ti/SKILL.md
+- [[Role_35]] - document - .agents/skills/i-ti/SKILL.md
+- [[Rules_4]] - document - .agents/skills/i-ti/SKILL.md
+- [[SKILL_58]] - document - .agents/skills/i-ti/SKILL.md
+- [[Sequence — Order of operations between systems]] - document - .agents/skills/i-ti/SKILL.md
+- [[Skill Technical Illustrator (TI)]] - document - .agents/skills/i-ti/SKILL.md
+- [[State Diagram — Job or process lifecycle]] - document - .agents/skills/i-ti/SKILL.md
+- [[Validate syntax without exporting]] - document - .agents/skills/i-ti/SKILL.md
+- [[Validation Checklist_1]] - document - .agents/skills/i-ti/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,9 +39,3 @@ members: 22
 TABLE source_file, type FROM #community/Community_392
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 371]]
-
-## Top bridge nodes
-- [[IMESSAGE_PERMISSION_FIX]] - degree 3, connects to 1 community

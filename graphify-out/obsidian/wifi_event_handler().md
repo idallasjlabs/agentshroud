@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/app_main.c"
 type: "code"
-community: "Community 139"
-location: "L193"
+community: "Community 308"
+location: "L199"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_139
+  - community/Community_308
 ---
 
 # wifi_event_handler()
@@ -17,4 +17,4 @@ tags:
 - [[ui_update()]] - `calls` [EXTRACTED]
 - [[vt_remote_log()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_139
+#graphify/code #graphify/EXTRACTED #community/Community_308

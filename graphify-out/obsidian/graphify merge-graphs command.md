@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/references/github-and-merge.md"
 type: "concept"
-community: "Community 1501"
+community: "Community 1517"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1501
+  - community/Community_1517
 ---
 
 # graphify merge-graphs command
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[graphify clone command]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1501
+#graphify/concept #graphify/EXTRACTED #community/Community_1517

@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/agent_cve_registry.py"
 type: "code"
-community: "Community 990"
+community: "Community 380"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_990
+  - community/Community_380
 ---
 
 # gateway/security/agent_cve_registry.py (known CVE registry, referenced)
@@ -17,4 +17,4 @@ tags:
 - [[test_agent_cve_registry.py]] - `imports_from` [EXTRACTED]
 - [[triage-cve-mitigations.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_990
+#graphify/code #graphify/EXTRACTED #community/Community_380

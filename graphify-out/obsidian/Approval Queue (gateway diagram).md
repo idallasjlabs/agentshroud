@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-03-gateway-components.svg"
 type: "image"
-community: "Community 1259"
+community: "Community 372"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Community_1259
+  - community/Community_372
 ---
 
 # Approval Queue (gateway diagram)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Approval Queue (SQLite)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Community_1259
+#graphify/image #graphify/EXTRACTED #community/Community_372

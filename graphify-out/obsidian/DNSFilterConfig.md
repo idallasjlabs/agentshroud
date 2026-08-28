@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/dns_filter.py"
 type: "code"
-community: "Community 6"
+community: "Memory Lifecycle & Egress Filtering"
 location: "L40"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_6
+  - community/Memory_Lifecycle__Egress_Filtering
 ---
 
 # DNSFilterConfig
@@ -62,4 +62,4 @@ tags:
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 - [[web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_6
+#graphify/code #graphify/INFERRED #community/Memory_Lifecycle__Egress_Filtering

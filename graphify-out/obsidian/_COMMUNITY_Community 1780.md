@@ -1,14 +1,16 @@
 ---
 type: community
+cohesion: 1.00
 members: 1
 ---
 
 # Community 1780
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[AgentShroud GitHub Social Preview Image]] - image - branding/social/github-social-preview-1280x640.png
+- [[_run_hermes_api_forwarder() — TCP tunnel gateway8642-hermes]] - code - gateway/ingest_api/lifespan.py
 
 ## Live Query (requires Dataview plugin)
 

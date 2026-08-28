@@ -1,77 +1,80 @@
 ---
 type: community
-members: 64
+cohesion: 0.04
+members: 65
 ---
 
 # Community 79
 
-**Members:** 64 nodes
+**Cohesion:** 0.04 - loosely connected
+**Members:** 65 nodes
 
 ## Members
-- [[.__init__()_24]] - code - gateway/proxy/llm_proxy.py
-- [[.__init__()_170]] - code - gateway/tests/test_llm_proxy.py
-- [[.__init__()_171]] - code - gateway/tests/test_llm_proxy.py
-- [[.block_credentials()_1]] - code - gateway/tests/test_llm_proxy.py
-- [[.can_use_tool()_1]] - code - gateway/tests/test_llm_proxy.py
-- [[.filter_xml_blocks()_1]] - code - gateway/tests/test_llm_proxy.py
-- [[.get_stats()_4]] - code - gateway/proxy/llm_proxy.py
-- [[.inject_headers()]] - code - gateway/tests/test_llm_proxy.py
-- [[.sanitize()_3]] - code - gateway/tests/test_llm_proxy.py
-- [[A known secret value echoed in a streaming delta must be scrubbed.]] - rationale - gateway/tests/test_llm_proxy.py
-- [[Allowed tool blocks must pass through unchanged.]] - rationale - gateway/tests/test_llm_proxy.py
-- [[Anthropic-bound request with x-api-key injector injects Bearer + beta, strips x]] - rationale - gateway/tests/test_llm_proxy.py
-- [[Connect failures to cloud providers keep the existing 502 behavior.]] - rationale - gateway/tests/test_llm_proxy.py
-- [[Connect timeout must exceed this host's measured DNS-resolution latency     (~4.]] - rationale - gateway/tests/test_llm_proxy.py
-- [[Events from 'unknown' user_id must not be blocked (not authenticated).]] - rationale - gateway/tests/test_llm_proxy.py
-- [[Fake CredentialInjector that records inject_headers calls and applies Anthropic]] - rationale - gateway/tests/test_llm_proxy.py
-- [[LLMProxy]] - code - gateway/proxy/llm_proxy.py
-- [[LM Studio down → 503 backend_unavailable with LM Studio hint.]] - rationale - gateway/tests/test_llm_proxy.py
-- [[Localnon-Anthropic destination injector must NOT be called.]] - rationale - gateway/tests/test_llm_proxy.py
-- [[Minimal ToolACLEnforcer stub that denies a named tool.]] - rationale - gateway/tests/test_llm_proxy.py
-- [[No streaming call site may hardcode its own connect timeout literal.      Guards]] - rationale - gateway/tests/test_llm_proxy.py
-- [[Ollama down → 503 backend_unavailable with ollama serve hint.]] - rationale - gateway/tests/test_llm_proxy.py
-- [[OpenClaw already sends Authorization Bearer — injector must leave it untouched.]] - rationale - gateway/tests/test_llm_proxy.py
-- [[Post-Retry Rate Limit Failover Tests]] - code - gateway/tests/test_rate_limit_failover.py
-- [[Proxies LLM API calls (Anthropic, OpenAI, Google) through the security pipeline.]] - rationale - gateway/proxy/llm_proxy.py
-- [[Regression 2026-08-07 a plain (non-Claude, non-Gemini, non-local)     OpenAI-mo]] - rationale - gateway/tests/test_llm_proxy.py
-- [[Repeated connect failures log one WARNING per window, not per request.]] - rationale - gateway/tests/test_llm_proxy.py
-- [[Return a monkeypatched urlopen that captures the Request headers.]] - rationale - gateway/tests/test_llm_proxy.py
-- [[Round 2 Security Hardening Tests]] - code - gateway/tests/test_round2_hardening.py
-- [[Streaming Anthropic request triggers inject_headers before httpx connects.]] - rationale - gateway/tests/test_llm_proxy.py
-- [[_FakeSanitizer]] - code - gateway/tests/test_llm_proxy.py
-- [[_FakeToolACL]] - code - gateway/tests/test_llm_proxy.py
-- [[_TrackingInjector]] - code - gateway/tests/test_llm_proxy.py
-- [[_is_connect_error matches connection-level failures only.]] - rationale - gateway/tests/test_llm_proxy.py
-- [[_make_fake_urlopen()]] - code - gateway/tests/test_llm_proxy.py
-- [[_proxy_with_connect_refused()]] - code - gateway/tests/test_llm_proxy.py
-- [[content_block_start with terminal_tool must be replaced with a text error block.]] - rationale - gateway/tests/test_llm_proxy.py
-- [[mlx_lm down (connection refused) → 503 backend_unavailable with start hint.]] - rationale - gateway/tests/test_llm_proxy.py
-- [[test_all_streaming_clients_use_the_shared_connect_timeout_constant()]] - code - gateway/tests/test_llm_proxy.py
-- [[test_backend_unavailable_warning_rate_limited()]] - code - gateway/tests/test_llm_proxy.py
-- [[test_cloud_backend_connect_failure_still_returns_502()]] - code - gateway/tests/test_llm_proxy.py
-- [[test_credential_injector_called_in_streaming_path()]] - code - gateway/tests/test_llm_proxy.py
-- [[test_credential_injector_does_not_overwrite_existing_bearer()]] - code - gateway/tests/test_llm_proxy.py
-- [[test_credential_injector_injects_bearer_for_anthropic_x_api_key()]] - code - gateway/tests/test_llm_proxy.py
-- [[test_credential_injector_not_applied_for_non_anthropic_dest()]] - code - gateway/tests/test_llm_proxy.py
-- [[test_filter_outbound_streaming_filters_anthropic_content_text()]] - code - gateway/tests/test_llm_proxy.py
-- [[test_filter_outbound_streaming_filters_openai_delta_content()]] - code - gateway/tests/test_llm_proxy.py
-- [[test_is_connect_error_classification()]] - code - gateway/tests/test_llm_proxy.py
-- [[test_llm_connect_timeout_clears_observed_dns_latency()]] - code - gateway/tests/test_llm_proxy.py
-- [[test_llm_proxy.py]] - code - gateway/tests/test_llm_proxy.py
-- [[test_lmstudio_connect_failure_returns_structured_503()]] - code - gateway/tests/test_llm_proxy.py
-- [[test_mlxlm_connect_failure_returns_structured_503()]] - code - gateway/tests/test_llm_proxy.py
-- [[test_ollama_connect_failure_returns_structured_503()]] - code - gateway/tests/test_llm_proxy.py
-- [[test_proxy_messages_cloud_mode_keeps_claude_and_uses_anthropic()]] - code - gateway/tests/test_llm_proxy.py
-- [[test_proxy_messages_plain_openai_model_substitutes_real_key()]] - code - gateway/tests/test_llm_proxy.py
-- [[test_proxy_messages_rewrites_claude_opus_to_local_model()]] - code - gateway/tests/test_llm_proxy.py
-- [[test_proxy_messages_strips_ollama_prefix_for_openai_compat()]] - code - gateway/tests/test_llm_proxy.py
-- [[test_proxy_messages_timeout_returns_anthropic_compatible_fallback()]] - code - gateway/tests/test_llm_proxy.py
-- [[test_proxy_messages_timeout_returns_openai_compatible_fallback()]] - code - gateway/tests/test_llm_proxy.py
-- [[test_scan_request_data_scans_messages_without_name_error()]] - code - gateway/tests/test_llm_proxy.py
-- [[test_streaming_secret_value_redacted()]] - code - gateway/tests/test_llm_proxy.py
-- [[test_streaming_tool_acl_allows_permitted_tool()]] - code - gateway/tests/test_llm_proxy.py
-- [[test_streaming_tool_acl_blocks_terminal_tool()]] - code - gateway/tests/test_llm_proxy.py
-- [[test_streaming_tool_acl_skips_unknown_user()]] - code - gateway/tests/test_llm_proxy.py
+- [[._check()]] - code - gateway/security/file_sandbox.py
+- [[._detect_raw_traversal()]] - code - gateway/security/file_sandbox.py
+- [[._is_immutable_file()]] - code - gateway/security/file_sandbox.py
+- [[._match_pattern()]] - code - gateway/security/file_sandbox.py
+- [[._matches_allowed_paths()]] - code - gateway/security/file_sandbox.py
+- [[._matches_blocked()]] - code - gateway/security/file_sandbox.py
+- [[.check_read()]] - code - gateway/security/file_sandbox.py
+- [[.check_write()]] - code - gateway/security/file_sandbox.py
+- [[.detect_staging_patterns()]] - code - gateway/security/file_sandbox.py
+- [[.get_audit_log()_4]] - code - gateway/security/file_sandbox.py
+- [[.get_security_violations()]] - code - gateway/security/file_sandbox.py
+- [[.scan()_3]] - code - gateway/security/file_sandbox.py
+- [[.test_api_key_pattern_detected()]] - code - gateway/tests/test_file_sandbox.py
+- [[.test_audit_has_path()]] - code - gateway/tests/test_file_sandbox.py
+- [[.test_credential_file_flagged()]] - code - gateway/tests/test_file_sandbox.py
+- [[.test_credit_card_detected()]] - code - gateway/tests/test_file_sandbox.py
+- [[.test_default_blocks_sensitive_paths()]] - code - gateway/tests/test_file_sandbox.py
+- [[.test_default_has_reasonable_allowed_paths()]] - code - gateway/tests/test_file_sandbox.py
+- [[.test_default_mode_is_enforce()_2]] - code - gateway/tests/test_file_sandbox.py
+- [[.test_email_detected()]] - code - gateway/tests/test_file_sandbox.py
+- [[.test_enforce_blocks_outside_allowed()]] - code - gateway/tests/test_file_sandbox.py
+- [[.test_enforce_blocks_sensitive()]] - code - gateway/tests/test_file_sandbox.py
+- [[.test_env_file_flagged()]] - code - gateway/tests/test_file_sandbox.py
+- [[.test_etc_passwd_flagged()]] - code - gateway/tests/test_file_sandbox.py
+- [[.test_etc_shadow_flagged()]] - code - gateway/tests/test_file_sandbox.py
+- [[.test_large_write_then_network_flagged()]] - code - gateway/tests/test_file_sandbox.py
+- [[.test_large_write_without_network_not_flagged()]] - code - gateway/tests/test_file_sandbox.py
+- [[.test_no_pii_clean()]] - code - gateway/tests/test_file_sandbox.py
+- [[.test_pii_in_write_flagged()]] - code - gateway/tests/test_file_sandbox.py
+- [[.test_project_files_allowed()]] - code - gateway/tests/test_file_sandbox.py
+- [[.test_read_logged()]] - code - gateway/tests/test_file_sandbox.py
+- [[.test_small_writes_not_flagged()]] - code - gateway/tests/test_file_sandbox.py
+- [[.test_ssh_private_key_flagged()]] - code - gateway/tests/test_file_sandbox.py
+- [[.test_ssn_detected()]] - code - gateway/tests/test_file_sandbox.py
+- [[.test_temp_file_tracking()]] - code - gateway/tests/test_file_sandbox.py
+- [[.test_tmp_read_allowed()]] - code - gateway/tests/test_file_sandbox.py
+- [[.test_tmp_write_allowed()]] - code - gateway/tests/test_file_sandbox.py
+- [[.test_workspace_read_allowed()]] - code - gateway/tests/test_file_sandbox.py
+- [[.test_workspace_write_allowed()]] - code - gateway/tests/test_file_sandbox.py
+- [[.test_write_logged()]] - code - gateway/tests/test_file_sandbox.py
+- [[Check if path is within any allowed pattern.]] - rationale - gateway/security/file_sandbox.py
+- [[Check if path matches any blocked pattern.]] - rationale - gateway/security/file_sandbox.py
+- [[Check if this is an immutable security file by name.]] - rationale - gateway/security/file_sandbox.py
+- [[Detect path traversal attempts in raw input before normalization.]] - rationale - gateway/security/file_sandbox.py
+- [[Enhanced pattern matching for file paths.]] - rationale - gateway/security/file_sandbox.py
+- [[FileOperation]] - code - gateway/security/file_sandbox.py
+- [[FileVerdict]] - code - gateway/security/file_sandbox.py
+- [[Get all flagged operations that indicate security violations.]] - rationale - gateway/security/file_sandbox.py
+- [[PIIFinding]] - code - gateway/security/file_sandbox.py
+- [[PIIScanResult]] - code - gateway/security/file_sandbox.py
+- [[PIIScanner]] - code - gateway/security/file_sandbox.py
+- [[Rule agentshroud-path-traversal-open]] - concept - .semgrep.yml
+- [[StagingPattern]] - code - gateway/security/file_sandbox.py
+- [[TestFileAudit]] - code - gateway/tests/test_file_sandbox.py
+- [[TestFileSandboxConfig]] - code - gateway/tests/test_file_sandbox.py
+- [[TestNormalFileOperations]] - code - gateway/tests/test_file_sandbox.py
+- [[TestPIIScanning]] - code - gateway/tests/test_file_sandbox.py
+- [[TestSensitivePathBlocking]] - code - gateway/tests/test_file_sandbox.py
+- [[TestStagingPatternDetection]] - code - gateway/tests/test_file_sandbox.py
+- [[default_config()_3]] - code - gateway/tests/test_file_sandbox.py
+- [[file_sandbox.py]] - code - gateway/security/file_sandbox.py
+- [[sandbox()]] - code - gateway/tests/test_file_sandbox.py
+- [[strict_config()_1]] - code - gateway/tests/test_file_sandbox.py
+- [[strict_sandbox()]] - code - gateway/tests/test_file_sandbox.py
+- [[test_file_sandbox.py]] - code - gateway/tests/test_file_sandbox.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -81,23 +84,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 25 edges to [[_COMMUNITY_Community 108]]
-- 7 edges to [[_COMMUNITY_Community 117]]
-- 4 edges to [[_COMMUNITY_Community 7]]
-- 3 edges to [[_COMMUNITY_Community 221]]
-- 2 edges to [[_COMMUNITY_Community 6]]
-- 2 edges to [[_COMMUNITY_Community 74]]
-- 2 edges to [[_COMMUNITY_Community 126]]
-- 2 edges to [[_COMMUNITY_Community 979]]
-- 1 edge to [[_COMMUNITY_Community 9]]
-- 1 edge to [[_COMMUNITY_Community 870]]
-- 1 edge to [[_COMMUNITY_Community 106]]
-- 1 edge to [[_COMMUNITY_Community 22]]
-- 1 edge to [[_COMMUNITY_Community 14]]
-- 1 edge to [[_COMMUNITY_Community 109]]
+- 33 edges to [[_COMMUNITY_Security Audit & Drift Detection]]
+- 2 edges to [[_COMMUNITY_Community 46]]
+- 1 edge to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
+- 1 edge to [[_COMMUNITY_Community 420]]
 
 ## Top bridge nodes
-- [[LLMProxy]] - degree 79, connects to 12 communities
-- [[test_llm_proxy.py]] - degree 32, connects to 1 community
-- [[test_scan_request_data_scans_messages_without_name_error()]] - degree 4, connects to 1 community
-- [[Round 2 Security Hardening Tests]] - degree 2, connects to 1 community
+- [[file_sandbox.py]] - degree 11, connects to 2 communities
+- [[Rule agentshroud-path-traversal-open]] - degree 3, connects to 2 communities
+- [[PIIScanner]] - degree 15, connects to 1 community
+- [[test_file_sandbox.py]] - degree 13, connects to 1 community
+- [[TestSensitivePathBlocking]] - degree 11, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "rationale"
-community: "Community 35"
+community: "Progressive Trust"
 location: "L73"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_35
+  - community/Progressive_Trust
 ---
 
 # Test agent registration and initial trust.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAgentRegistration]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_35
+#graphify/rationale #graphify/EXTRACTED #community/Progressive_Trust

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-02-23.md"
 type: "document"
-community: "Community 1541"
+community: "Community 1329"
 location: "L71"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1541
+  - community/Community_1329
 ---
 
 # 🚫 Security Theater
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[2. Security Value Audit]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1541
+#graphify/document #graphify/EXTRACTED #community/Community_1329

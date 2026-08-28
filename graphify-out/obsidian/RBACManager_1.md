@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "code"
-community: "Community 15"
+community: "RBAC & SOC Realtime"
 location: "L61"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_15
+  - community/RBAC__SOC_Realtime
 ---
 
 # RBACManager
@@ -62,4 +62,4 @@ tags:
 - [[set_user_role()_1]] - `calls` [EXTRACTED]
 - [[test_rbac.py]] - `tests` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_15
+#graphify/code #graphify/EXTRACTED #community/RBAC__SOC_Realtime

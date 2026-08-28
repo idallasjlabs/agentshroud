@@ -1,12 +1,12 @@
 ---
 source_file: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
 type: "document"
-community: "Community 965"
+community: "Community 964"
 location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_965
+  - community/Community_964
 ---
 
 # SECTION 1: COVER SHEET (Form PTO/SB/16)
@@ -21,4 +21,4 @@ tags:
 - [[1.7 Entity Status]] - `contains` [EXTRACTED]
 - [[AgentShroud -- USPTO Provisional Patent Application]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_965
+#graphify/document #graphify/EXTRACTED #community/Community_964

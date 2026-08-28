@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/cron/JOBS-REFERENCE.md"
 type: "document"
-community: "Community 87"
+community: "Community 283"
 location: "L76"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_87
+  - community/Community_283
 ---
 
 # Job details
@@ -24,9 +24,9 @@ tags:
 - [[Email Model Version Tracker]] - `contains` [EXTRACTED]
 - [[Email Personal AI Assistants]] - `contains` [EXTRACTED]
 - [[Email Today in AI]] - `contains` [EXTRACTED]
-- [[Hermes Competitive Intelligence Email (AMPM)]] - `contains` [EXTRACTED]
-- [[Hermes Competitive Landscape Update (AMPM)]] - `contains` [EXTRACTED]
-- [[Hermes Cron Jobs — Reference & Recreation Guide]] - `contains` [EXTRACTED]
+- [[Hermes Competitive Intelligence Email job]] - `contains` [EXTRACTED]
+- [[Hermes Competitive Landscape Update job]] - `contains` [EXTRACTED]
+- [[Hermes Cron Jobs Reference & Recreation Guide]] - `contains` [EXTRACTED]
 - [[Monthly Chaos Engineering Drill]] - `contains` [EXTRACTED]
 - [[Newsletter Chat Front-Ends & Search Infra]] - `contains` [EXTRACTED]
 - [[Newsletter Coding-Agent CLIs]] - `contains` [EXTRACTED]
@@ -43,4 +43,4 @@ tags:
 - [[Weekly job-log cleanup]] - `contains` [EXTRACTED]
 - [[jira-weekly-review]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_87
+#graphify/document #graphify/EXTRACTED #community/Community_283

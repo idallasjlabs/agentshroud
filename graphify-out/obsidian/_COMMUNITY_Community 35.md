@@ -1,208 +1,111 @@
 ---
 type: community
-members: 195
+cohesion: 0.02
+members: 96
 ---
 
 # Community 35
 
-**Members:** 195 nodes
+**Cohesion:** 0.02 - loosely connected
+**Members:** 96 nodes
 
 ## Members
-- [[.__init__()_127]] - code - gateway/security/trust_manager.py
-- [[.__post_init__()_9]] - code - gateway/security/trust_manager.py
-- [[._apply_decay()]] - code - gateway/security/trust_manager.py
-- [[._force_demotion()]] - code - gateway/security/trust_manager.py
-- [[._init_db()_2]] - code - gateway/security/trust_manager.py
-- [[._promotion_allowed()]] - code - gateway/security/trust_manager.py
-- [[._score_to_level()]] - code - gateway/security/trust_manager.py
-- [[._update_score()]] - code - gateway/security/trust_manager.py
-- [[.close()_11]] - code - gateway/security/trust_manager.py
-- [[.get_history()]] - code - gateway/security/trust_manager.py
-- [[.get_next_trust_level()]] - code - gateway/security/progressive_trust_config.py
-- [[.get_previous_trust_level()]] - code - gateway/security/progressive_trust_config.py
-- [[.get_trust()]] - code - gateway/security/trust_manager.py
-- [[.get_trust_level_order()]] - code - gateway/security/progressive_trust_config.py
-- [[.is_action_allowed()]] - code - gateway/security/trust_manager.py
-- [[.is_tool_allowed()]] - code - gateway/security/progressive_trust_config.py
-- [[.is_tool_allowed()_1]] - code - gateway/security/trust_manager.py
-- [[.record_failure()]] - code - gateway/security/trust_manager.py
-- [[.record_success()]] - code - gateway/security/trust_manager.py
-- [[.record_violation()]] - code - gateway/security/trust_manager.py
-- [[.register_agent()]] - code - gateway/security/trust_manager.py
-- [[.setup_method()_28]] - code - gateway/tests/test_security_hardening.py
-- [[.teardown_method()_6]] - code - gateway/tests/test_security_hardening.py
-- [[.test_action_allowed_basic()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_action_denied_high_trust()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_action_unknown_agent()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_basic_can_read()]] - code - gateway/tests/test_trust_manager.py
-- [[.test_custom_points()]] - code - gateway/tests/test_trust_manager.py
-- [[.test_default_config()_8]] - code - gateway/tests/test_trust_manager.py
-- [[.test_default_mode_is_enforce()_4]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[.test_default_penalties_cover_all_violation_types()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[.test_demotion_recorded_in_history()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[.test_enforce_mode_blocks()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[.test_enforcer_without_trust_manager_unchanged()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[.test_event_type_validation()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_everything_else_fails_closed_to_enforce()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[.test_failure_decreases_score()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_full_level_wildcard_allows_everything()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[.test_get_trust()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_get_trust_registered()]] - code - gateway/tests/test_trust_manager.py
-- [[.test_get_trust_respects_stored_ceiling()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[.test_get_trust_unknown()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_get_trust_unregistered()]] - code - gateway/tests/test_trust_manager.py
-- [[.test_history()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_history_empty_for_new_agent()]] - code - gateway/tests/test_trust_manager.py
-- [[.test_history_recorded()]] - code - gateway/tests/test_trust_manager.py
-- [[.test_is_tool_allowed_per_level()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[.test_is_tool_allowed_returns_none_without_config()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[.test_is_tool_allowed_wildcard()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[.test_key_rotation_with_zeroing()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_level_order()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[.test_mapping_is_bijective_and_total()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[.test_monitor_mode_logs_but_does_not_block_via_trust_gate()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[.test_monitor_mode_still_allows_permitted_tools()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[.test_monitor_token_resolves_monitor()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[.test_next_and_previous_levels()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[.test_non_severe_typed_violation_does_not_force_demotion()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[.test_persistence_across_instances()]] - code - gateway/tests/test_trust_manager.py
-- [[.test_promotion_granted_once_thresholds_met()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[.test_rate_limiting_prevents_rapid_escalation()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_register_agent()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_register_idempotent()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_register_idempotent()_1]] - code - gateway/tests/test_trust_manager.py
-- [[.test_register_new_agent()]] - code - gateway/tests/test_trust_manager.py
-- [[.test_renamed_rungs_map_correctly()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[.test_score_alone_cannot_promote_with_ladder()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[.test_score_alone_promotes_without_config()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[.test_score_never_negative()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_secure_zero_bytearray()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_secure_zero_empty()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_severe_violation_forces_demotion()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[.test_sqlite_persistence()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_success_increases_score()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_thresholds_populated()]] - code - gateway/tests/test_trust_manager.py
-- [[.test_tool_allowed_at_level()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[.test_tool_denied_above_level()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[.test_trust_deny_wins_over_acl()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[.test_trust_escalation_attack()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_trust_level_enforcement()]] - code - gateway/tests/test_security_audit.py
-- [[.test_trust_level_ordering()]] - code - gateway/tests/test_trust_manager.py
-- [[.test_trust_level_progression()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_trust_recovery()]] - code - gateway/tests/test_security_audit.py
-- [[.test_typed_penalty_from_config()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[.test_unknown_tool_falls_through_to_acl()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[.test_unknown_tool_returns_none()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[.test_unregistered_agent_returns_none()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[.test_unregistered_denied()]] - code - gateway/tests/test_trust_manager.py
-- [[.test_untrusted_limited()]] - code - gateway/tests/test_trust_manager.py
-- [[.test_untyped_violation_uses_legacy_points()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[.test_violation_large_decrease()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_vouching_required_for_top_rung()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[.vouch_for_agent()]] - code - gateway/security/trust_manager.py
-- [[A ladder with thresholds small enough for unit tests.]] - rationale - gateway/tests/test_progressive_trust_integration.py
-- [[Apply time-based decay to score.]] - rationale - gateway/security/trust_manager.py
-- [[Best-effort zeroing of key material using ctypes.memset.      Works on bytearray]] - rationale - gateway/security/encrypted_store.py
-- [[Check if a tool is allowed for the given trust level.]] - rationale - gateway/security/progressive_trust_config.py
-- [[Check if an agent's trust level allows a given action.]] - rationale - gateway/security/trust_manager.py
-- [[Check the progressive ladder's threshold for promotion to target_level.]] - rationale - gateway/security/trust_manager.py
-- [[Config with strict thresholds.]] - rationale - gateway/tests/test_trust_manager.py
-- [[Configuration for the progressive trust system.]] - rationale - gateway/security/progressive_trust_config.py
-- [[Convert score to trust level based on thresholds.]] - rationale - gateway/security/trust_manager.py
-- [[Create a temporary trust database.]] - rationale - gateway/tests/test_trust_manager.py
-- [[Create a trust manager with temp DB.]] - rationale - gateway/tests/test_trust_manager.py
-- [[Drop an agent one trust level immediately (severe violations).]] - rationale - gateway/security/trust_manager.py
-- [[Fail-closed resolver for the enforcement-mode env var (SCRUM-78).      Returns]] - rationale - gateway/security/progressive_trust_config.py
-- [[First-ever unit tests for the config object itself.]] - rationale - gateway/tests/test_progressive_trust_integration.py
-- [[Get current trust level and score for an agent.]] - rationale - gateway/security/trust_manager.py
-- [[Get the next trust level for promotion, or None if already at max.]] - rationale - gateway/security/progressive_trust_config.py
-- [[Get the previous trust level for demotion, or None if already at min.]] - rationale - gateway/security/progressive_trust_config.py
-- [[Get trust history for an agent.]] - rationale - gateway/security/trust_manager.py
-- [[Get trust levels in ascending order.]] - rationale - gateway/security/progressive_trust_config.py
-- [[High score with too few interactions must NOT climb the ladder.]] - rationale - gateway/tests/test_progressive_trust_integration.py
-- [[Low-trust agents should be blocked from high-risk actions.]] - rationale - gateway/tests/test_security_audit.py
-- [[MALICIOUS_INTENT drops a level even when the score would not.]] - rationale - gateway/tests/test_progressive_trust_integration.py
-- [[Manage progressive trust for agents.]] - rationale - gateway/security/trust_manager.py
-- [[Owner vouches for an agent, unlocking VERIFIEDFULL promotion.]] - rationale - gateway/security/trust_manager.py
-- [[PatternRule]] - code - gateway/security/prompt_guard.py
-- [[Per-level tool gate from the progressive trust ladder.          Tri-state True]] - rationale - gateway/security/trust_manager.py
-- [[ProgressiveTrustConfig]] - code - gateway/security/progressive_trust_config.py
-- [[ProgressiveTrustConfig_1]] - code - gateway/security/trust_manager.py
-- [[ProgressiveTrustConfig_2]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[PromotionThreshold]] - code - gateway/security/progressive_trust_config.py
-- [[Rapid successes should be capped by rate limiting.]] - rationale - gateway/tests/test_security_hardening.py
-- [[Record a failedblocked action, decreasing trust.]] - rationale - gateway/security/trust_manager.py
-- [[Record a security violation, significantly decreasing trust.          With a pro]] - rationale - gateway/security/trust_manager.py
-- [[Record a successful action, increasing trust.]] - rationale - gateway/security/trust_manager.py
-- [[Register a new agent with initial trust.]] - rationale - gateway/security/trust_manager.py
-- [[SCRUM-78 — operational monitor↔enforce lever.]] - rationale - gateway/tests/test_progressive_trust_integration.py
-- [[SCRUM-78 — the env-var resolver must fail CLOSED (enforce).]] - rationale - gateway/tests/test_progressive_trust_integration.py
-- [[SecurityPipeline_1]] - code - gateway/tests/test_redteam_probes.py
-- [[Seed stored scorelevel directly (same technique lifespan.py uses).]] - rationale - gateway/tests/test_progressive_trust_integration.py
-- [[Stored level is the promotion ceiling when the ladder is active.]] - rationale - gateway/tests/test_progressive_trust_integration.py
-- [[Test agent registration and initial trust.]] - rationale - gateway/tests/test_trust_manager.py
-- [[Test configuration options.]] - rationale - gateway/tests/test_trust_manager.py
-- [[Test that actions are gated by trust level.]] - rationale - gateway/tests/test_trust_manager.py
-- [[Test trust history tracking.]] - rationale - gateway/tests/test_trust_manager.py
-- [[Test trust level hierarchy and thresholds.]] - rationale - gateway/tests/test_trust_manager.py
-- [[Test trust survives restart.]] - rationale - gateway/tests/test_trust_manager.py
-- [[TestActionGating]] - code - gateway/tests/test_trust_manager.py
-- [[TestAgentRegistration]] - code - gateway/tests/test_trust_manager.py
-- [[TestBackwardCompat]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[TestConfig]] - code - gateway/tests/test_trust_manager.py
-- [[TestDriftDetectorHardened]] - code - gateway/tests/test_security_hardening.py
-- [[TestEnforcementMode]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[TestEnforcementModeResolver]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[TestEnumMapping]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[TestGatedPromotion]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[TestHistory]] - code - gateway/tests/test_trust_manager.py
-- [[TestPersistence_2]] - code - gateway/tests/test_trust_manager.py
-- [[TestProgressiveTrustConfigUnit]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[TestSecureZero]] - code - gateway/tests/test_security_hardening.py
-- [[TestToolACLComposition]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[TestToolGating]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[TestTrustLevels_1]] - code - gateway/tests/test_trust_manager.py
-- [[TestTrustManager]] - code - gateway/tests/test_security_hardening.py
-- [[TestTrustManagerHardened]] - code - gateway/tests/test_security_hardening.py
-- [[TestTypedViolations]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[Tests for drift detector hardening.]] - rationale - gateway/tests/test_security_hardening.py
-- [[Tests for key material zeroing (C2 fix).]] - rationale - gateway/tests/test_security_hardening.py
-- [[Tests for trust manager hardening.]] - rationale - gateway/tests/test_security_hardening.py
-- [[Threshold for promoting to a trust level.]] - rationale - gateway/security/progressive_trust_config.py
-- [[Tools outside the ladder vocabulary get no opinion (ACL decides).]] - rationale - gateway/tests/test_progressive_trust_integration.py
-- [[Trust levels from untrusted to verified.]] - rationale - gateway/security/progressive_trust_config.py
-- [[Trust manager starting at untrusted.]] - rationale - gateway/tests/test_trust_manager.py
-- [[Trust should recover after good behavior.]] - rationale - gateway/tests/test_security_audit.py
-- [[TrustConfig]] - code - gateway/security/trust_manager.py
-- [[TrustLevel]] - code - gateway/security/progressive_trust_config.py
-- [[TrustLevel_1]] - code - gateway/security/trust_manager.py
-- [[TrustLevel_2]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[TrustManager_1]] - code - gateway/security/trust_manager.py
-- [[TrustManager_4]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[TrustManager WITHOUT a progressive config must behave exactly as before.]] - rationale - gateway/tests/test_progressive_trust_integration.py
-- [[TrustManager._update_score() (progressive promotion gate)]] - code - gateway/security/trust_manager.py
-- [[Types of security violations.]] - rationale - gateway/security/progressive_trust_config.py
-- [[Unknown event types should not inject SQL.]] - rationale - gateway/tests/test_security_hardening.py
-- [[Verify you can't jump from UNTRUSTED to FULL in one step.]] - rationale - gateway/tests/test_security_hardening.py
-- [[ViolationType]] - code - gateway/security/progressive_trust_config.py
-- [[ViolationType_1]] - code - gateway/security/trust_manager.py
-- [[_fast_ladder()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[_make_tm()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[_secure_zero()]] - code - gateway/security/encrypted_store.py
-- [[_set_state()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[manager()_4]] - code - gateway/tests/test_trust_manager.py
-- [[progressive_trust_config.py]] - code - gateway/security/progressive_trust_config.py
-- [[resolve_enforcement_mode()]] - code - gateway/security/progressive_trust_config.py
-- [[strict_config()_3]] - code - gateway/tests/test_trust_manager.py
-- [[strict_manager()]] - code - gateway/tests/test_trust_manager.py
-- [[test_agent_cve_registry.py — agent CVE advisory registry integrity tests]] - code - gateway/tests/test_agent_cve_registry.py
-- [[test_progressive_trust_integration.py]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[test_security_hardening.py]] - code - gateway/tests/test_security_hardening.py
-- [[test_trust_manager.py]] - code - gateway/tests/test_trust_manager.py
-- [[trust_db()]] - code - gateway/tests/test_trust_manager.py
-- [[trust_manager()_2]] - code - gateway/tests/test_e2e_proxy.py
-- [[trust_manager()_3]] - code - gateway/tests/test_e2e_watchtower.py
-- [[trust_manager.py]] - code - gateway/security/trust_manager.py
+- [[usetellasktalk toswitch to... modelagent - ('model', gateway     mo]] - rationale - gateway/tests/test_voice_gateway.py
+- [[voice is the one endpoint reachable over the public internet (Tailscale     Fun]] - rationale - gateway/tests/test_voice_gateway.py
+- [[A modelpipeline warm-up failure at startup must NOT down the gateway.      Regr]] - rationale - gateway/tests/test_voice_gateway.py
+- [[A stalemismatched If-None-Match must serve the full new binary (200).]] - rationale - gateway/tests/test_voice_gateway.py
+- [[After a set, the read query reports the tracked level in percent.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Authenticated request but no firmware on disk → 404 (not a 500empty 200).]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Before any set, the read query reports an unknown-state calibration hint.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Build a mock httpx.Response usable as the yield value of a mocked     AsyncClien]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Connection with correct token= query param is accepted and gets idle state.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Connection with no token is rejected when auth is configured.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Connection with wrong token= is closed (server returns no state frame).]] - rationale - gateway/tests/test_voice_gateway.py
+- [[ConnectionClosedError (WS code 1006 — ungraceful ESP disconnect, e.g. device]] - rationale - gateway/tests/test_voice_gateway.py
+- [[ConnectionClosedOK (WS code 10001001 — clean websockets-library close path)]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Default _MODEL_SIZE is 'small.en' when WHISPER_MODEL_SIZE is not set.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Digit, percent, word-number and compound forms; clamping; non-commands.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Directly invoke ``voice_endpoint`` with a mocked WebSocket whose second     ``re]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Each synthesized sentence must ramp inout over ~5 ms so per-sentence     Kokoro]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Empty allowlist = OTA un-gated any non-empty token is accepted (200).]] - rationale - gateway/tests/test_voice_gateway.py
+- [[GATEWAY_OWNER_USER_ID is sent as X-AgentShroud-User-Id header (not a body field)]] - rationale - gateway/tests/test_voice_gateway.py
+- [[GET firmwarebin token gate, 200 + quoted SHA-256 ETag, HEAD ETag parity.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[If a device sends LISTEN but never sends END (crash  stuck firmware), the     s]] - rationale - gateway/tests/test_voice_gateway.py
+- [[If the Kokoro pipeline can't be constructed, synthesize() raises RuntimeError.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[If the pipeline raises mid-synthesis, synthesize() raises RuntimeError.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[If-None-Match equal to the current ETag → 304 with no body.      This is the who]] - rationale - gateway/tests/test_voice_gateway.py
+- [[No agent= param → _DEFAULT_AGENT is used for routing.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[No fabricated version when the env var is genuinely unset — say     'unknown' ra]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Read phrasings match; set commands and unrelated speech do not.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Regression 2026-08-08 the voice assistant answered what version is     AgentSh]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Text that normalises to emptywhitespace returns b'' without invoking Kokoro.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[The very first frame after WS accept must be idle, not listening.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[WHISPER_MODEL_DIR (baked path) beats WHISPER_MODEL_SIZE — preserves offline guar]] - rationale - gateway/tests/test_voice_gateway.py
+- [[WHISPER_MODEL_DIR env var is honoured _MODEL_PATH resolves to the directory]] - rationale - gateway/tests/test_voice_gateway.py
+- [[WHISPER_MODEL_SIZE overrides the default when WHISPER_MODEL_DIR is unset.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[When _VG_AUTH_TOKEN is empty, any connection is accepted (dev  backward compat)]] - rationale - gateway/tests/test_voice_gateway.py
+- [[When secret file is absent, _GATEWAY_TOKEN falls back to GATEWAY_AUTH_TOKEN env]] - rationale - gateway/tests/test_voice_gateway.py
+- [[When the LLM raises in the 'direct' agent path       - the user message appende]] - rationale - gateway/tests/test_voice_gateway.py
+- [[When the STT→LLM→TTS pipeline raises, the inner exception handler must       1.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[When the WS dirty-closes (code 1006) before the initial _send_state(IDLE) frame]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Wire the firmwarebin route to a fake binary + a fixed OTA token allowlist.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[_GATEWAY_TOKEN is read from the secret file when it exists.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[_call_agent_stream must pass a structured httpx.Timeout to AsyncClient.      The]] - rationale - gateway/tests/test_voice_gateway.py
+- [[_call_agent_stream must yield a spoken fallback string and log a WARNING     whe]] - rationale - gateway/tests/test_voice_gateway.py
+- [[_fw_client()]] - code - gateway/tests/test_voice_gateway.py
+- [[_load_ota_tokens merges env + secret file and falls back to the WS token.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[_mock_llm_stream_resp()]] - code - gateway/tests/test_voice_gateway.py
+- [[_mock_stream_resp()]] - code - gateway/tests/test_voice_gateway.py
+- [[_reset_reply_resume()]] - code - gateway/tests/test_voice_gateway.py
+- [[_run_disconnect_test()]] - code - gateway/tests/test_voice_gateway.py
+- [[pcm_chunks must stop growing once _PCM_MAX_BYTES is reached.      A device that]] - rationale - gateway/tests/test_voice_gateway.py
+- [[test_answer_volume_query_returns_tracked_level()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_answer_volume_query_unknown_before_any_set()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_call_agent_read_timeout_returns_fallback()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_call_agent_uses_structured_timeout()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_firmware_bin_304_on_matching_if_none_match()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_firmware_bin_404_when_absent()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_firmware_bin_auth_and_etag()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_firmware_bin_stale_if_none_match_returns_body()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_firmware_bin_ungated_when_allowlist_empty()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_health_returns_ok()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_is_volume_query_forms()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_lifespan_tolerates_warmup_failure()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_listen_without_end_times_out()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_load_ota_tokens_sources()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_owner_user_id_propagated_as_header()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_parse_model_switch_command_forms()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_parse_volume_command_forms()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_pcm_buffer_bounded()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_stt_default_model_size_is_small_en()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_stt_model_dir_wins_over_model_size()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_stt_model_size_env_override()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_stt_transcribe_empty_bytes_returns_empty()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_stt_transcribe_mocked_model()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_stt_uses_local_model_dir_when_env_set()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_token_falls_back_to_env_when_no_file()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_token_loaded_from_secret_file()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_tts_empty_text_returns_empty()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_tts_kokoro_pipeline_load_failure_raises()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_tts_kokoro_synthesis_failure_raises()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_tts_synthesize_fades_sentence_edges()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_tts_synthesize_only_whitespace_after_normalise_returns_empty()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_voice_gateway.py]] - code - gateway/tests/test_voice_gateway.py
+- [[test_voice_system_message_includes_agentshroud_version()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_voice_system_message_version_unknown_when_env_unset()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_ws_accepts_correct_token()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_ws_accepts_when_auth_not_configured()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_ws_agent_query_param_absent_uses_default()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_ws_connect_sends_idle_first()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_ws_connectionclosed_error_logs_info_no_traceback()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_ws_connectionclosed_ok_logs_info_no_traceback()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_ws_direct_agent_pipeline_error_pops_history_and_recovery_send_fails()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_ws_dirty_close_before_initial_state_is_handled_cleanly()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_ws_pipeline_error_logs_and_recovers_to_idle()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_ws_rejects_missing_token()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_ws_rejects_wrong_token()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_ws_token_check_uses_constant_time_comparison()]] - code - gateway/tests/test_voice_gateway.py
+- [[transcribe() calls the model and returns joined segment text.]] - rationale - gateway/tests/test_voice_gateway.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -212,54 +115,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 45 edges to [[_COMMUNITY_Community 14]]
-- 38 edges to [[_COMMUNITY_Community 22]]
-- 36 edges to [[_COMMUNITY_Community 870]]
-- 36 edges to [[_COMMUNITY_Community 1016]]
-- 26 edges to [[_COMMUNITY_Community 104]]
-- 22 edges to [[_COMMUNITY_Community 282]]
-- 20 edges to [[_COMMUNITY_Community 28]]
-- 20 edges to [[_COMMUNITY_Community 75]]
-- 16 edges to [[_COMMUNITY_Community 60]]
-- 16 edges to [[_COMMUNITY_Community 116]]
-- 15 edges to [[_COMMUNITY_Community 26]]
-- 12 edges to [[_COMMUNITY_Community 74]]
-- 11 edges to [[_COMMUNITY_Community 6]]
-- 11 edges to [[_COMMUNITY_Community 1]]
-- 7 edges to [[_COMMUNITY_Community 66]]
-- 6 edges to [[_COMMUNITY_Community 118]]
-- 5 edges to [[_COMMUNITY_Community 782]]
-- 5 edges to [[_COMMUNITY_Community 55]]
-- 4 edges to [[_COMMUNITY_Community 78]]
-- 4 edges to [[_COMMUNITY_Community 1001]]
-- 4 edges to [[_COMMUNITY_Community 86]]
-- 4 edges to [[_COMMUNITY_Community 967]]
-- 3 edges to [[_COMMUNITY_Community 212]]
-- 2 edges to [[_COMMUNITY_Community 9]]
-- 2 edges to [[_COMMUNITY_Community 174]]
-- 2 edges to [[_COMMUNITY_Community 97]]
-- 2 edges to [[_COMMUNITY_Community 659]]
-- 2 edges to [[_COMMUNITY_Community 821]]
-- 2 edges to [[_COMMUNITY_Community 775]]
-- 1 edge to [[_COMMUNITY_Community 158]]
-- 1 edge to [[_COMMUNITY_Community 44]]
-- 1 edge to [[_COMMUNITY_Community 397]]
-- 1 edge to [[_COMMUNITY_Community 100]]
-- 1 edge to [[_COMMUNITY_Community 251]]
-- 1 edge to [[_COMMUNITY_Community 50]]
-- 1 edge to [[_COMMUNITY_Community 799]]
-- 1 edge to [[_COMMUNITY_Community 62]]
-- 1 edge to [[_COMMUNITY_Community 15]]
-- 1 edge to [[_COMMUNITY_Community 448]]
-- 1 edge to [[_COMMUNITY_Community 818]]
-- 1 edge to [[_COMMUNITY_Community 271]]
-- 1 edge to [[_COMMUNITY_Community 167]]
-- 1 edge to [[_COMMUNITY_Community 64]]
-- 1 edge to [[_COMMUNITY_Community 7]]
+- 31 edges to [[_COMMUNITY_Community 89]]
+- 11 edges to [[_COMMUNITY_Community 107]]
+- 8 edges to [[_COMMUNITY_Community 114]]
+- 7 edges to [[_COMMUNITY_Community 24]]
+- 6 edges to [[_COMMUNITY_Community 511]]
+- 4 edges to [[_COMMUNITY_Community 998]]
+- 1 edge to [[_COMMUNITY_Community 145]]
+- 1 edge to [[_COMMUNITY_Community 776]]
+- 1 edge to [[_COMMUNITY_Community 737]]
 
 ## Top bridge nodes
-- [[TrustManager_1]] - degree 195, connects to 28 communities
-- [[TrustLevel_1]] - degree 67, connects to 19 communities
-- [[TrustConfig]] - degree 101, connects to 13 communities
-- [[trust_manager.py]] - degree 21, connects to 13 communities
-- [[test_security_hardening.py]] - degree 30, connects to 9 communities
+- [[test_voice_gateway.py]] - degree 113, connects to 8 communities
+- [[_run_disconnect_test()]] - degree 5, connects to 1 community
+- [[test_listen_without_end_times_out()]] - degree 3, connects to 1 community
+- [[test_owner_user_id_propagated_as_header()]] - degree 3, connects to 1 community
+- [[test_pcm_buffer_bounded()]] - degree 3, connects to 1 community

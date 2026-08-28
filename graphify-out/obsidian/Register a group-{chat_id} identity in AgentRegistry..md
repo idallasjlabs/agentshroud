@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_isolation.py"
 type: "rationale"
-community: "Community 28"
+community: "Community 51"
 location: "L195"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_28
+  - community/Community_51
 ---
 
 # Register a group-{chat_id} identity in AgentRegistry.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_register_group_agent_identity()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_28
+#graphify/rationale #graphify/EXTRACTED #community/Community_51

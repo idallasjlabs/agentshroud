@@ -1,19 +1,21 @@
 ---
 type: community
+cohesion: 0.33
 members: 6
 ---
 
 # Community 1118
 
+**Cohesion:** 0.33 - loosely connected
 **Members:** 6 nodes
 
 ## Members
-- [[._looks_like_command_enumeration_query()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_file_query()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_safe_collaborator_info_query()]] - code - gateway/proxy/telegram_proxy.py
-- [[Allow conceptual securityprocess questions that don't request executiondata ac]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Best-effort guardrail collaborator prompts requesting direct file access.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator probes asking for direct commandtool inventories.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[CPU Throttling]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Disk IO]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Memory Management]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Network]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Performance Considerations]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Temperature Management]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,10 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_Community 4]]
-- 3 edges to [[_COMMUNITY_Community 263]]
+- 1 edge to [[_COMMUNITY_Community 349]]
 
 ## Top bridge nodes
-- [[._looks_like_safe_collaborator_info_query()]] - degree 6, connects to 2 communities
-- [[._looks_like_file_query()]] - degree 5, connects to 2 communities
-- [[._looks_like_command_enumeration_query()]] - degree 5, connects to 2 communities
+- [[Performance Considerations]] - degree 6, connects to 1 community

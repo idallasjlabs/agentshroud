@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "Community 779"
+community: "Community 685"
 location: "L268"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_779
+  - community/Community_685
 ---
 
 # TestCheckUpstreamCves
@@ -22,4 +22,4 @@ tags:
 - [[.test_uses_github_token_in_header()]] - `method` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_779
+#graphify/code #graphify/EXTRACTED #community/Community_685

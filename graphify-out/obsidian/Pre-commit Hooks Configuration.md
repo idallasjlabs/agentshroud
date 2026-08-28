@@ -1,11 +1,11 @@
 ---
 source_file: ".pre-commit-config.yaml"
 type: "document"
-community: "Community 251"
+community: "Community 420"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_251
+  - community/Community_420
 ---
 
 # Pre-commit Hooks Configuration
@@ -17,4 +17,4 @@ tags:
 - [[gitleaks (secret scanner)]] - `references` [EXTRACTED]
 - [[ruff (Python linter)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_251
+#graphify/document #graphify/EXTRACTED #community/Community_420

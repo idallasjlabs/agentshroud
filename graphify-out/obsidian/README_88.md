@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-data/README.md"
 type: "document"
-community: "Community 1223"
+community: "Community 1218"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1223
+  - community/Community_1218
 ---
 
 # README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Data Validation (DATA-VAL)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1223
+#graphify/document #graphify/EXTRACTED #community/Community_1218

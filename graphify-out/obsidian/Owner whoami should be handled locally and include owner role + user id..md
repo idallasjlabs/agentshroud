@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Community 2"
+community: "Telegram Proxy Inbound"
 location: "L530"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2
+  - community/Telegram_Proxy_Inbound
 ---
 
 # Owner /whoami should be handled locally and include owner role + user id.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_owner_whoami_uses_local_notice()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Inbound

@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1206
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[Blue Team Security Auditor (SEC-DEFENSE)_1]] - document - docker/config/hermes/skills/i-sec-defense/README.md
-- [[Purpose_66]] - document - docker/config/hermes/skills/i-sec-defense/README.md
-- [[README_71]] - document - docker/config/hermes/skills/i-sec-defense/README.md
-- [[Related Skills_72]] - document - docker/config/hermes/skills/i-sec-defense/README.md
-- [[Usage_73]] - document - docker/config/hermes/skills/i-sec-defense/README.md
+- [[Purpose_71]] - document - docker/config/hermes/skills/i-ti/README.md
+- [[README_76]] - document - docker/config/hermes/skills/i-ti/README.md
+- [[Related Skills_77]] - document - docker/config/hermes/skills/i-ti/README.md
+- [[Technical Illustrator (TI)]] - document - docker/config/hermes/skills/i-ti/README.md
+- [[Usage_78]] - document - docker/config/hermes/skills/i-ti/README.md
 
 ## Live Query (requires Dataview plugin)
 

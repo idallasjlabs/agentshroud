@@ -391,6 +391,28 @@ Add `CONFIG_LV_FONT_MONTSERRAT_28=y` to `sdkconfig.defaults` and run
 Normal behaviour — the native USB-JTAG RTS line triggers a reset when the monitor
 opens. The device reboots and reconnects to WiFi in ~10 seconds.
 
+### WebSocket connect times out forever (handshake reaches HTTP 101, then dies)
+Two causes seen live 2026-08-28, both config:
+1. **`CONFIG_LWIP_TCP_MSS` fell back to 1440** — a clean `rm sdkconfig && idf.py
+   reconfigure` once silently reverted menuconfig-tuned values; at MSS 1440 the
+   full-size TLS handshake packets are blackholed on the cellular-hotspot +
+   Tailscale path and no `wss://` connect ever completes. The tuned values
+   (MSS 1152, main-task stack 20480, WDT 20 s, TCP buffers 4608, LVGL 32 KB)
+   are now pinned in `sdkconfig.defaults` — verify `grep TCP_MSS sdkconfig`
+   says 1152 after any reconfigure.
+2. **Connect timeout too short for the DERP-relayed path** — `ws_client.c` uses
+   `network_timeout_ms = 10000`; at the old 5000 the handshake reached HTTP 101
+   and the client's own timeout then killed the nearly-finished connection in
+   a permanent retry storm.
+
+### First reply is slow (~5-7 s extra "thinking")
+The gemma model pages out of the host's memory after a few idle minutes and the
+next voice query pays a cold reload. `scripts/omlx-keepwarm.sh` (installed in the
+owner's crontab, every 4 min) keeps it resident — measured 5.06 s cold vs 0.69 s
+warm for an identical completion. Voice is also degraded whenever a scheduled
+OpenClaw/Hermes job saturates the host (load avg 30+); wait it out or coordinate
+job schedules.
+
 ### sdkconfig.defaults SSID change doesn't take
 The real `sdkconfig` (gitignored) wins over `sdkconfig.defaults`. After changing the
 SSID/password in `wifi_credentials.h`, run `idf.py reconfigure` so the new values

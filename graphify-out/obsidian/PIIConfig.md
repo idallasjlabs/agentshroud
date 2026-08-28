@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "Community 1"
+community: "PII Sanitizer & E2E Tests"
 location: "L31"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_1
+  - community/PII_Sanitizer__E2E_Tests
 ---
 
 # PIIConfig
@@ -188,4 +188,4 @@ tags:
 - [[test_ws_e_rt2_inbound_encoding.py]] - `imports` [EXTRACTED]
 - [[tool_result_sanitizer.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_1
+#graphify/code #graphify/INFERRED #community/PII_Sanitizer__E2E_Tests

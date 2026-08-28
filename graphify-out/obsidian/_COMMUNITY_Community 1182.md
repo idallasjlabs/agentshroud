@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1182
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[Branding Specialist (BS)_1]] - document - docker/config/hermes/skills/i-bs/README.md
-- [[Purpose_42]] - document - docker/config/hermes/skills/i-bs/README.md
-- [[README_47]] - document - docker/config/hermes/skills/i-bs/README.md
-- [[Related Skills_45]] - document - docker/config/hermes/skills/i-bs/README.md
-- [[Usage_48]] - document - docker/config/hermes/skills/i-bs/README.md
+- [[8D Root Cause Analysis_1]] - document - docker/config/hermes/skills/i-eightd/README.md
+- [[Purpose_47]] - document - docker/config/hermes/skills/i-eightd/README.md
+- [[README_52]] - document - docker/config/hermes/skills/i-eightd/README.md
+- [[Related Skills_50]] - document - docker/config/hermes/skills/i-eightd/README.md
+- [[Usage_53]] - document - docker/config/hermes/skills/i-eightd/README.md
 
 ## Live Query (requires Dataview plugin)
 

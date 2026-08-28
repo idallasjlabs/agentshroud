@@ -1,35 +1,37 @@
 ---
 type: community
+cohesion: 0.09
 members: 22
 ---
 
 # Community 405
 
+**Cohesion:** 0.09 - loosely connected
 **Members:** 22 nodes
 
 ## Members
-- [[Bare 10-digit Telegram UID must pass through unchanged — no PHONE_NUMBER.]] - rationale - gateway/tests/test_sanitizer.py
-- [[Phone number with separator must still be redacted.]] - rationale - gateway/tests/test_sanitizer.py
-- [[Regex-only path must not match bare 10-digit digit string as phone number.]] - rationale - gateway/tests/test_sanitizer.py
-- [[Test content with multiple PII types]] - rationale - gateway/tests/test_sanitizer.py
-- [[Test content with no PII]] - rationale - gateway/tests/test_sanitizer.py
-- [[Test credit card redaction]] - rationale - gateway/tests/test_sanitizer.py
-- [[Test email address redaction]] - rationale - gateway/tests/test_sanitizer.py
-- [[Test empty content handling]] - rationale - gateway/tests/test_sanitizer.py
-- [[Test phone number redaction]] - rationale - gateway/tests/test_sanitizer.py
-- [[UID in parens — as written in contributor logs — must not be redacted.]] - rationale - gateway/tests/test_sanitizer.py
-- [[test_credit_card_detection()]] - code - gateway/tests/test_sanitizer.py
-- [[test_email_detection()]] - code - gateway/tests/test_sanitizer.py
-- [[test_empty_content()]] - code - gateway/tests/test_sanitizer.py
-- [[test_mixed_pii()]] - code - gateway/tests/test_sanitizer.py
-- [[test_no_pii()]] - code - gateway/tests/test_sanitizer.py
-- [[test_phone_detection()]] - code - gateway/tests/test_sanitizer.py
-- [[test_real_phone_still_redacted()]] - code - gateway/tests/test_sanitizer.py
-- [[test_regex_fallback_requires_separator()]] - code - gateway/tests/test_sanitizer.py
-- [[test_sanitizer.py]] - code - gateway/tests/test_sanitizer.py
-- [[test_ssn_detection()]] - code - gateway/tests/test_sanitizer.py
-- [[test_telegram_uid_not_redacted_as_phone()]] - code - gateway/tests/test_sanitizer.py
-- [[test_uid_inside_parens_preserved()]] - code - gateway/tests/test_sanitizer.py
+- [[API Key Setup]] - document - docs/setup/HERMES_SETUP.md
+- [[Authentication Flow]] - document - docs/setup/HERMES_SETUP.md
+- [[Chatbox]] - document - docs/setup/HERMES_SETUP.md
+- [[Frontend Client Setup]] - document - docs/setup/HERMES_SETUP.md
+- [[HCI (Hermes Control Interface)]] - document - docs/setup/HERMES_SETUP.md
+- [[HCI Network Access]] - document - docs/setup/HERMES_SETUP.md
+- [[HCI Tailscale Serve Configuration]] - document - docs/setup/HERMES_SETUP.md
+- [[Hermes Agent — Connection Setup]] - document - docs/setup/HERMES_SETUP.md
+- [[Hermes OpenAI-Compatible API]] - document - docs/setup/HERMES_SETUP.md
+- [[Inbound Path]] - document - docs/setup/HERMES_SETUP.md
+- [[LibreChat]] - document - docs/setup/HERMES_SETUP.md
+- [[Mitigations in Place]] - document - docs/setup/HERMES_SETUP.md
+- [[Network Access]] - document - docs/setup/HERMES_SETUP.md
+- [[Open WebUI]] - document - docs/setup/HERMES_SETUP.md
+- [[Outbound Path]] - document - docs/setup/HERMES_SETUP.md
+- [[Overview_16]] - document - docs/setup/HERMES_SETUP.md
+- [[Prerequisites_10]] - document - docs/setup/HERMES_SETUP.md
+- [[Security Model]] - document - docs/setup/HERMES_SETUP.md
+- [[Starting the HCI Container]] - document - docs/setup/HERMES_SETUP.md
+- [[Table of Contents_1]] - document - docs/setup/HERMES_SETUP.md
+- [[Tailscale Serve Configuration]] - document - docs/setup/HERMES_SETUP.md
+- [[Troubleshooting_27]] - document - docs/setup/HERMES_SETUP.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,7 +41,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 1]]
+- 1 edge to [[_COMMUNITY_Community 92]]
 
 ## Top bridge nodes
-- [[test_sanitizer.py]] - degree 12, connects to 1 community
+- [[Hermes Agent — Connection Setup]] - degree 8, connects to 1 community

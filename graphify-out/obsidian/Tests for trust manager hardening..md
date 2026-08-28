@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "rationale"
-community: "Community 35"
+community: "Community 30"
 location: "L888"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_35
+  - community/Community_30
 ---
 
 # Tests for trust manager hardening.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestTrustManagerHardened]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_35
+#graphify/rationale #graphify/EXTRACTED #community/Community_30

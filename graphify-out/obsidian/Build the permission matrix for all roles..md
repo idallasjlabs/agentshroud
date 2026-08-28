@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "rationale"
-community: "Community 15"
+community: "RBAC & SOC Realtime"
 location: "L77"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_15
+  - community/RBAC__SOC_Realtime
 ---
 
 # Build the permission matrix for all roles.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._build_permission_matrix()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_15
+#graphify/rationale #graphify/EXTRACTED #community/RBAC__SOC_Realtime

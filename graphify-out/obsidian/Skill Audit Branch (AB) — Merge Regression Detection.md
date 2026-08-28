@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-ab/SKILL.md"
 type: "document"
-community: "Community 604"
+community: "Community 598"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_604
+  - community/Community_598
 ---
 
 # Skill: Audit Branch (AB) — Merge Regression Detection
@@ -24,4 +24,4 @@ tags:
 - [[Step 5 — Classify findings]] - `contains` [EXTRACTED]
 - [[Step 6 — Output the report]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_604
+#graphify/document #graphify/EXTRACTED #community/Community_598

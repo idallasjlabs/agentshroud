@@ -1,12 +1,12 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "Community 241"
+community: "Community 344"
 location: "L187"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_241
+  - community/Community_344
 ---
 
 # Session start checklist
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[3) SDLC — HOW TO WORK IN THIS REPO]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_241
+#graphify/document #graphify/EXTRACTED #community/Community_344

@@ -1,17 +1,17 @@
 ---
-source_file: "CHANGELOG.md"
+source_file: "docs/planning/reviews/phase-review-2026-02-23.md"
 type: "document"
-community: "Community 1276"
-location: "L322"
+community: "Community 133"
+location: "L132"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1276
+  - community/Community_133
 ---
 
 # Summary
 
 ## Connections
-- [[1.2.3 — releasev1.2.3 (2026-06-29)]] - `contains` [EXTRACTED]
+- [[AgentShroud Phase Review — 2026-02-23]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1276
+#graphify/document #graphify/EXTRACTED #community/Community_133

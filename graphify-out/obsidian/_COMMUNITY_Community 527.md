@@ -1,30 +1,32 @@
 ---
 type: community
+cohesion: 0.14
 members: 17
 ---
 
 # Community 527
 
+**Cohesion:** 0.14 - loosely connected
 **Members:** 17 nodes
 
 ## Members
-- [[AgentTarget_3]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
-- [[Config Keys Read_4]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
-- [[EmailSendRequest_2]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
-- [[Environment Variables Used_5]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
-- [[ForwardRequest_3]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
-- [[ForwardResponse_1]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
-- [[Imports From  Exports To_4]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
-- [[Key Classes  Functions_4]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
-- [[Known Issues  Notes_5]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
-- [[Model Details]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
-- [[Purpose_115]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
-- [[RedactionDetail_1]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
-- [[Related_6]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
-- [[Responsibilities_4]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
-- [[SSHExecRequest  SSHExecResponse]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
-- [[models.py_3]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
-- [[models.py_2]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
+- [[._format_alert_message()]] - code - gateway/security/alert_dispatcher.py
+- [[._is_duplicate()]] - code - gateway/security/alert_dispatcher.py
+- [[._is_rate_limited()]] - code - gateway/security/alert_dispatcher.py
+- [[._log_alert()]] - code - gateway/security/alert_dispatcher.py
+- [[._send_notification()]] - code - gateway/security/alert_dispatcher.py
+- [[.dispatch()]] - code - gateway/security/alert_dispatcher.py
+- [[.get_digest()]] - code - gateway/security/alert_dispatcher.py
+- [[.get_stats()_12]] - code - gateway/security/alert_dispatcher.py
+- [[Any_31]] - code - gateway/security/alert_dispatcher.py
+- [[Append alert to JSONL log file.]] - rationale - gateway/security/alert_dispatcher.py
+- [[Check if alert was already seen within dedup window.]] - rationale - gateway/security/alert_dispatcher.py
+- [[Check if we've exceeded the rate limit.]] - rationale - gateway/security/alert_dispatcher.py
+- [[Dispatch an alert based on severity.          Args             alert Alert dic]] - rationale - gateway/security/alert_dispatcher.py
+- [[Format alert as human-readable message.]] - rationale - gateway/security/alert_dispatcher.py
+- [[Get buffered alerts for daily digest.          Args             clear Clear bu]] - rationale - gateway/security/alert_dispatcher.py
+- [[Get dispatcher statistics.]] - rationale - gateway/security/alert_dispatcher.py
+- [[POST alert to apialerts with bounded retry + backoff.          Returns True on]] - rationale - gateway/security/alert_dispatcher.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,3 +34,13 @@ members: 17
 TABLE source_file, type FROM #community/Community_527
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 8 edges to [[_COMMUNITY_Security Audit & Drift Detection]]
+
+## Top bridge nodes
+- [[.dispatch()]] - degree 7, connects to 1 community
+- [[._send_notification()]] - degree 5, connects to 1 community
+- [[._format_alert_message()]] - degree 4, connects to 1 community
+- [[._log_alert()]] - degree 4, connects to 1 community
+- [[.get_digest()]] - degree 3, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "Community 37"
-location: "L732"
+community: "Community 35"
+location: "L832"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_37
+  - community/Community_35
 ---
 
 # WHISPER_MODEL_SIZE overrides the default when WHISPER_MODEL_DIR is unset.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_stt_model_size_env_override()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_37
+#graphify/rationale #graphify/EXTRACTED #community/Community_35

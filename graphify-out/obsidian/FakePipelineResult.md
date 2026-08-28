@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_lockdown.py"
 type: "code"
-community: "Community 62"
+community: "Community 60"
 location: "L43"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_62
+  - community/Community_60
 ---
 
 # FakePipelineResult
@@ -18,4 +18,4 @@ tags:
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_progressive_lockdown.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_62
+#graphify/code #graphify/INFERRED #community/Community_60

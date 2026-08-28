@@ -1,37 +1,52 @@
 ---
 type: community
-members: 24
+cohesion: 0.05
+members: 37
 ---
 
 # Community 191
 
-**Members:** 24 nodes
+**Cohesion:** 0.05 - loosely connected
+**Members:** 37 nodes
 
 ## Members
-- [[.test_archived_rows_preserved_verbatim()]] - code - gateway/tests/test_audit_archive.py
-- [[.test_archives_only_events_older_than_cutoff()]] - code - gateway/tests/test_audit_archive.py
-- [[.test_live_forward_chain_still_valid_after_archival()]] - code - gateway/tests/test_audit_archive.py
-- [[.test_missing_db_is_reported_not_raised()]] - code - gateway/tests/test_audit_archive.py
-- [[.test_no_events_to_archive_is_a_noop()]] - code - gateway/tests/test_audit_archive.py
-- [[.test_no_vacuum_flag_skips_vacuum()]] - code - gateway/tests/test_audit_archive.py
-- [[.test_running_twice_is_idempotent()]] - code - gateway/tests/test_audit_archive.py
-- [[.test_vacuum_failure_does_not_discard_a_successful_archive()]] - code - gateway/tests/test_audit_archive.py
-- [[.test_vacuum_reduces_file_size_after_bulk_delete()]] - code - gateway/tests/test_audit_archive.py
-- [[.test_waits_out_a_concurrent_writer_lock_instead_of_failing()]] - code - gateway/tests/test_audit_archive.py
-- [[A full disk (or any VACUUM-specific OperationalError) must not         raise pas]] - rationale - gateway/tests/test_audit_archive.py
-- [[Build n chained events, oldest first, spaced spacing_days apart ending at `start]] - rationale - gateway/tests/test_audit_archive.py
-- [[Move audit_events older than cutoff_days into archive_path, then delete + VACUUM]] - rationale - gateway/security/audit_archive.py
-- [[Path_6]] - code - gateway/security/audit_archive.py
-- [[TestArchiveOldEvents]] - code - gateway/tests/test_audit_archive.py
-- [[The remaining live rows' own internal chain (row N's prev_hash ==         row N-]] - rationale - gateway/tests/test_audit_archive.py
-- [[_chain_events()]] - code - gateway/tests/test_audit_archive.py
-- [[_cli()]] - code - gateway/security/audit_archive.py
-- [[_make_live_db()]] - code - gateway/tests/test_audit_archive.py
-- [[archive_old_events()]] - code - gateway/security/audit_archive.py
-- [[audit.db uses SQLite's default DELETE journal mode, which requires         an ex]] - rationale - gateway/tests/test_audit_archive.py
-- [[audit_archive.py]] - code - gateway/security/audit_archive.py
-- [[datetime_1]] - code - gateway/security/audit_archive.py
-- [[events list of (event_id, timestamp, prev_hash, entry_hash).]] - rationale - gateway/tests/test_audit_archive.py
+- [[1. Add Public Key to Target Host]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[2. Add Host Configuration (Optional but Recommended)]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[3. Test Connection]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Adding Additional Hosts]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Backup SSH Keys]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Backup and Recovery]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Configured Hosts]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Default Settings (All Hosts)]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[From Docker Command Line]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[From OpenClaw Bot (Natural Language)]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Next Steps_8]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[One-Liner to Add to Pi]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[OpenClaw Bot SSH Configuration]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Problem Bad owner or permissions on ~.sshconfig]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Problem Connection timeout]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Problem Host key verification failed]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Problem Permission denied (publickey)]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Public Key]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Public Key (Copy-Paste Ready)]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Quick Reference_7]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Raspberry Pi (pi-dev)]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Restore SSH Keys]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[SSH Config File Location]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[SSH Configuration Details]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[SSH Key Generated]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Security Considerations]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Setup Instructions]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Step 1 Add Public Key to Raspberry Pi]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Step 2 Test SSH Connection from OpenClaw Bot]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Step 3 Verify from OpenClaw UI or Telegram]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Test Connection]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Troubleshooting_29]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Usage Examples_1]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Verification Checklist_3]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[⚠️ Important Security Notes]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[✅ Security Features Enabled]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[🔐 Credentials in 1Password]] - document - docs/setup/OPENCLAW_SSH_SETUP.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -41,12 +56,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_Community 820]]
-- 1 edge to [[_COMMUNITY_Community 232]]
+- 1 edge to [[_COMMUNITY_Community 92]]
 
 ## Top bridge nodes
-- [[archive_old_events()]] - degree 17, connects to 2 communities
-- [[TestArchiveOldEvents]] - degree 11, connects to 1 community
-- [[_make_live_db()]] - degree 10, connects to 1 community
-- [[_chain_events()]] - degree 10, connects to 1 community
-- [[audit_archive.py]] - degree 4, connects to 1 community
+- [[OpenClaw Bot SSH Configuration]] - degree 12, connects to 1 community

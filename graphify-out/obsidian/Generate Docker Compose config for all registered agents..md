@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/agent_isolation.py"
 type: "rationale"
-community: "Community 766"
+community: "Community 51"
 location: "L180"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_766
+  - community/Community_51
 ---
 
 # Generate Docker Compose config for all registered agents.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.generate_compose()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_766
+#graphify/rationale #graphify/EXTRACTED #community/Community_51

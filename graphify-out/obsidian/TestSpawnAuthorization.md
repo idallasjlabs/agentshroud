@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_subagent_governance.py"
 type: "code"
-community: "Community 1067"
+community: "Community 912"
 location: "L40"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_1067
+  - community/Community_912
 ---
 
 # TestSpawnAuthorization
@@ -27,4 +27,4 @@ tags:
 - [[SubagentGovernance]] - `uses` [INFERRED]
 - [[test_subagent_governance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_1067
+#graphify/code #graphify/INFERRED #community/Community_912

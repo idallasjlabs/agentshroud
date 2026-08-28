@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 1.00
 members: 2
 ---
 
 # Community 1586
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[.test_nonce_expired_rejected()]] - code - gateway/tests/test_session_security.py
-- [[A nonce with a timestamp outside the 5-min window is rejected.]] - rationale - gateway/tests/test_session_security.py
+- [[.test_outbound_owner_exempt_from_fail_closed()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[If pipeline crashes, owner messages should still go through.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +21,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 712]]
+- 1 edge to [[_COMMUNITY_Community 93]]
+- 1 edge to [[_COMMUNITY_Community 80]]
+- 1 edge to [[_COMMUNITY_Community 96]]
 
 ## Top bridge nodes
-- [[.test_nonce_expired_rejected()]] - degree 2, connects to 1 community
+- [[.test_outbound_owner_exempt_from_fail_closed()]] - degree 4, connects to 3 communities

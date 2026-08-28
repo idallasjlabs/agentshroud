@@ -1,35 +1,45 @@
 ---
 type: community
-members: 22
+cohesion: 0.09
+members: 30
 ---
 
 # Community 261
 
-**Members:** 22 nodes
+**Cohesion:** 0.09 - loosely connected
+**Members:** 30 nodes
 
 ## Members
-- [[.test_bot_id_filter_matches_bot_image()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_bot_id_filter_unknown_bot_returns_all()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_corrupt_report_file_is_skipped()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_critical_report_status_is_critical()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_each_entry_has_image_key()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_ignores_non_image_prefixed_files()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_returns_empty_list_when_dir_missing()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_returns_empty_when_no_image_reports()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_returns_one_entry_per_report_file()]] - code - gateway/tests/test_scanner_integration.py
-- [[A JSON-corrupt file is silently skipped, others are still returned.]] - rationale - gateway/tests/test_scanner_integration.py
-- [[Directory exists but contains only fs scan files — returns .]] - rationale - gateway/tests/test_scanner_integration.py
-- [[Files named trivy-.json (fs scans) are not included.]] - rationale - gateway/tests/test_scanner_integration.py
-- [[Path_36]] - code - gateway/tests/test_scanner_integration.py
-- [[Return per-image Trivy scan summaries from saved image reports.      Reads repor]] - rationale - gateway/security/scanner_integration.py
-- [[TestGetTrivyImageSummaries]] - code - gateway/tests/test_scanner_integration.py
-- [[Unknown bot_id with no config match falls through and returns all entries.]] - rationale - gateway/tests/test_scanner_integration.py
-- [[Write a fake image report file in the expected filename format.]] - rationale - gateway/tests/test_scanner_integration.py
-- [[_clean_trivy_report()]] - code - gateway/tests/test_scanner_integration.py
-- [[_critical_trivy_report()]] - code - gateway/tests/test_scanner_integration.py
-- [[_write_image_report()]] - code - gateway/tests/test_scanner_integration.py
-- [[bot_id + config param restricts results to that bot's image.]] - rationale - gateway/tests/test_scanner_integration.py
-- [[get_trivy_image_summaries()]] - code - gateway/security/scanner_integration.py
+- [[.__post_init__()_1]] - code - gateway/proxy/mcp_proxy.py
+- [[.test_admin_private_data_not_redacted_for_owner()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_admin_private_data_redacted_for_non_owner()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_blocked_entry_logged()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_chain_entries_linked()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_clean_result_passes()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_error_result_logged()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_gateway_contributor_paths_redacted_for_non_owner()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_hash_chain_changes_on_append()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_hash_chain_genesis()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_hash_chain_valid()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_log_tool_call()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_log_tool_result()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_memory_markers_redacted_for_non_owner()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_mixed_allowed_blocked_chain()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_pii_redacted_flag()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_pii_redacted_in_result()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_private_redaction_emits_privacy_event()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_result_audit_logged()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_result_processing_time()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_tampered_chain_detected()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_tool_call_generates_id_and_timestamp()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_tool_result_timestamp_default()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[MCPToolCall_1]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[MCPToolResult]] - code - gateway/proxy/mcp_proxy.py
+- [[Mix of allowed, blocked, and result entries all in one chain.]] - rationale - gateway/tests/test_mcp_proxy.py
+- [[Represents an MCP tool result.]] - rationale - gateway/proxy/mcp_proxy.py
+- [[TestAuditTrail]] - code - gateway/tests/test_mcp_proxy.py
+- [[TestDataclasses]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[TestProxyResultProcessing]] - code - gateway/tests/test_mcp_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,16 +49,23 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_Community 123]]
-- 3 edges to [[_COMMUNITY_Community 85]]
-- 3 edges to [[_COMMUNITY_Community 512]]
-- 2 edges to [[_COMMUNITY_Community 1002]]
-- 1 edge to [[_COMMUNITY_Community 59]]
-- 1 edge to [[_COMMUNITY_Community 541]]
+- 50 edges to [[_COMMUNITY_Community 44]]
+- 19 edges to [[_COMMUNITY_Community 103]]
+- 16 edges to [[_COMMUNITY_Community 39]]
+- 8 edges to [[_COMMUNITY_Community 154]]
+- 6 edges to [[_COMMUNITY_Community 206]]
+- 6 edges to [[_COMMUNITY_Community 109]]
+- 5 edges to [[_COMMUNITY_Community 33]]
+- 2 edges to [[_COMMUNITY_Ingest API & Approval Routes]]
+- 2 edges to [[_COMMUNITY_Community 473]]
+- 1 edge to [[_COMMUNITY_Community 324]]
+- 1 edge to [[_COMMUNITY_Community 23]]
+- 1 edge to [[_COMMUNITY_Community 917]]
+- 1 edge to [[_COMMUNITY_Community 992]]
 
 ## Top bridge nodes
-- [[Path_36]] - degree 18, connects to 4 communities
-- [[get_trivy_image_summaries()]] - degree 14, connects to 3 communities
-- [[_write_image_report()]] - degree 11, connects to 1 community
-- [[_clean_trivy_report()]] - degree 10, connects to 1 community
-- [[TestGetTrivyImageSummaries]] - degree 10, connects to 1 community
+- [[MCPToolResult]] - degree 79, connects to 13 communities
+- [[TestDataclasses]] - degree 17, connects to 6 communities
+- [[MCPToolCall_1]] - degree 16, connects to 6 communities
+- [[TestAuditTrail]] - degree 23, connects to 4 communities
+- [[TestProxyResultProcessing]] - degree 23, connects to 4 communities

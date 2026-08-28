@@ -1,18 +1,24 @@
 ---
-source_file: "docs/architecture/agentic-os.md"
-type: "concept"
-community: "Community 888"
+source_file: ".agents/skills/i-apollo/SKILL.md"
+type: "document"
+community: "Community 939"
 tags:
-  - graphify/concept
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Community_888
+  - community/Community_939
 ---
 
 # Apollo — Audio Systems Producer
 
 ## Connections
+- [[Apollo README]] - `references` [EXTRACTED]
 - [[Athena — Knowledge Distiller_6]] - `shares_data_with` [EXTRACTED]
-- [[Mnemosyne — Retention Engineer_6]] - `shares_data_with` [EXTRACTED]
-- [[Vulcan — Subject Matter Auditor_6]] - `shares_data_with` [EXTRACTED]
+- [[ElevenLabs Text-to-Dialogue API_1]] - `references` [EXTRACTED]
+- [[Input Requirements]] - `contains` [EXTRACTED]
+- [[Output]] - `contains` [EXTRACTED]
+- [[Quality Checklist]] - `contains` [EXTRACTED]
+- [[Role_4]] - `contains` [EXTRACTED]
+- [[SKILL_3]] - `contains` [EXTRACTED]
+- [[Technical Specification]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_888
+#graphify/document #graphify/EXTRACTED #community/Community_939

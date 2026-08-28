@@ -1,59 +1,72 @@
 ---
 type: community
-members: 46
+cohesion: 0.08
+members: 57
 ---
 
 # Community 99
 
-**Members:** 46 nodes
+**Cohesion:** 0.08 - loosely connected
+**Members:** 57 nodes
 
 ## Members
-- [[.check()]] - code - gateway/ingest_api/auth.py
-- [[Auth Methods]] - document - docs/vault/05 - Dependencies/python-jose.md
-- [[Auth dependency that uses the app state config._3]] - rationale - gateway/ingest_api/routes/health.py
-- [[Check if client is within rate limit          Args             client_id Usual]] - rationale - gateway/ingest_api/auth.py
-- [[Create authentication dependency callable      This is a synchronous wrapper tha]] - rationale - gateway/ingest_api/auth.py
-- [[Current Usage]] - document - docs/vault/05 - Dependencies/python-jose.md
-- [[Factory that returns authentication dependency for FastAPI      This allows us t]] - rationale - gateway/ingest_api/auth.py
-- [[GatewayConfig]] - code - gateway/ingest_api/auth.py
-- [[Key Features_1]] - document - docs/vault/05 - Dependencies/python-jose.md
-- [[Purpose_193]] - document - docs/vault/05 - Dependencies/python-jose.md
-- [[Related Notes_48]] - document - docs/vault/05 - Dependencies/python-jose.md
-- [[Request_5]] - code - gateway/ingest_api/routes/health.py
-- [[Security Note_2]] - document - docs/vault/05 - Dependencies/python-jose.md
-- [[Test auth dependency with invalid auth scheme]] - rationale - gateway/tests/test_auth.py
-- [[Test auth dependency with invalid token]] - rationale - gateway/tests/test_auth.py
-- [[Test auth dependency with missing Authorization header]] - rationale - gateway/tests/test_auth.py
-- [[Test auth dependency with valid token]] - rationale - gateway/tests/test_auth.py
-- [[Test rate limiter allows requests under limit]] - rationale - gateway/tests/test_auth.py
-- [[Test rate limiter blocks requests over limit]] - rationale - gateway/tests/test_auth.py
-- [[Test rate limiter cleans up old requests]] - rationale - gateway/tests/test_auth.py
-- [[Test rate limiter tracks clients separately]] - rationale - gateway/tests/test_auth.py
-- [[Test that token verification uses constant-time comparison]] - rationale - gateway/tests/test_auth.py
-- [[Test token verification with invalid token]] - rationale - gateway/tests/test_auth.py
-- [[Test token verification with valid token]] - rationale - gateway/tests/test_auth.py
-- [[Verify token using constant-time comparison      Uses hmac.compare_digest to pre]] - rationale - gateway/ingest_api/auth.py
-- [[auth.py]] - code - gateway/ingest_api/auth.py
-- [[auth.py_2]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
-- [[auth_dep()_4]] - code - gateway/ingest_api/routes/health.py
-- [[create_auth_dependency()]] - code - gateway/ingest_api/auth.py
-- [[get_auth_dependency()]] - code - gateway/ingest_api/auth.py
-- [[python-jose_1]] - document - docs/vault/05 - Dependencies/python-jose.md
-- [[python-jose]] - document - docs/vault/05 - Dependencies/python-jose.md
-- [[rate_limiter (module-level instance)]] - code - gateway/ingest_api/auth.py
-- [[test_auth.py]] - code - gateway/tests/test_auth.py
-- [[test_auth_dependency_invalid_scheme()]] - code - gateway/tests/test_auth.py
-- [[test_auth_dependency_invalid_token()]] - code - gateway/tests/test_auth.py
-- [[test_auth_dependency_missing_header()]] - code - gateway/tests/test_auth.py
-- [[test_auth_dependency_valid_token()]] - code - gateway/tests/test_auth.py
-- [[test_rate_limiter_allows_requests()]] - code - gateway/tests/test_auth.py
-- [[test_rate_limiter_blocks_excess_requests()]] - code - gateway/tests/test_auth.py
-- [[test_rate_limiter_separate_clients()]] - code - gateway/tests/test_auth.py
-- [[test_rate_limiter_window_cleanup()]] - code - gateway/tests/test_auth.py
-- [[test_verify_token_constant_time()]] - code - gateway/tests/test_auth.py
-- [[test_verify_token_invalid()]] - code - gateway/tests/test_auth.py
-- [[test_verify_token_valid()]] - code - gateway/tests/test_auth.py
-- [[verify_token()]] - code - gateway/ingest_api/auth.py
+- [[Added]] - document - CHANGELOG.md
+- [[Added — Tranche 1 True Collaboration Architecture]] - document - CHANGELOG.md
+- [[Added — Tranche 2 Private Service Data Isolation]] - document - CHANGELOG.md
+- [[Added — Tranche 3 Security Tools (IEC 62443 Alignment)]] - document - CHANGELOG.md
+- [[Agent Routing (P0)]] - document - CHANGELOG.md
+- [[CHANGELOG]] - document - CHANGELOG.md
+- [[Changed]] - document - CHANGELOG.md
+- [[Changelog — AgentShroud™]] - document - CHANGELOG.md
+- [[Compliance]] - document - CHANGELOG.md
+- [[Container Security Scorecard — Baseline Scores]] - document - CHANGELOG.md
+- [[Deferred to post-v1.0.0]] - document - CHANGELOG.md
+- [[Fixed]] - document - CHANGELOG.md
+- [[Hardened]] - document - CHANGELOG.md
+- [[Known gaps (not yet closed)]] - document - CHANGELOG.md
+- [[Known issues]] - document - CHANGELOG.md
+- [[Migration Notes]] - document - CHANGELOG.md
+- [[P1 HTTP CONNECT Proxy (PR 24)]] - document - CHANGELOG.md
+- [[P2 Credential Isolation (PR 25)]] - document - CHANGELOG.md
+- [[Performance Baselines (arm64  macOS  Python 3.13)]] - document - CHANGELOG.md
+- [[Phase 1 Foundation]] - document - CHANGELOG.md
+- [[Phase 2 Gateway Layer]] - document - CHANGELOG.md
+- [[Phase 3A3B Security Hardening]] - document - CHANGELOG.md
+- [[Phase 4 SSH Capability]] - document - CHANGELOG.md
+- [[Phase 5 Dashboard]] - document - CHANGELOG.md
+- [[Phase 6 Tailscale & Documentation]] - document - CHANGELOG.md
+- [[Phase 7 Security Hardening]] - document - CHANGELOG.md
+- [[Phase 8 Polish & Publish]] - document - CHANGELOG.md
+- [[Recommended Steps]] - document - CHANGELOG.md
+- [[Removed]] - document - CHANGELOG.md
+- [[Security_2]] - document - CHANGELOG.md
+- [[Summary_1]] - document - CHANGELOG.md
+- [[Tests]] - document - CHANGELOG.md
+- [[Tranche Status]] - document - CHANGELOG.md
+- [[0.1.0 - 2026-02-16]] - document - CHANGELOG.md
+- [[0.2.0 - 2026-02-17]] - document - CHANGELOG.md
+- [[0.4.0 - 2026-02-19]] - document - CHANGELOG.md
+- [[0.5.0 - 2026-02-21]] - document - CHANGELOG.md
+- [[0.6.0 - 2026-02-23]] - document - CHANGELOG.md
+- [[0.7.0 - 2026-02-25]] - document - CHANGELOG.md
+- [[0.9.0 — featv0.9.0-soc-team-collab — Sentinel (2026-03-18)]] - document - CHANGELOG.md
+- [[1.0.0 — featv1.0.0 — Fortress (2026-03-31)]] - document - CHANGELOG.md
+- [[1.1.0 — feat-v1.4.0-shroud-another-bot — Hermes (2026-05-29)]] - document - CHANGELOG.md
+- [[1.1.1 — fixguard-wiring-and-ops-hardening (2026-06-10)]] - document - CHANGELOG.md
+- [[1.2.0 — featesp32-s3-hermes-voice (2026-06-24)]] - document - CHANGELOG.md
+- [[1.2.1 — releasev1.2.1-quality-sweep (2026-06-27)]] - document - CHANGELOG.md
+- [[1.2.2 — releasev1.2.2 (2026-06-28)]] - document - CHANGELOG.md
+- [[1.2.3 — releasev1.2.3 (2026-06-29)]] - document - CHANGELOG.md
+- [[1.2.4 — releasev1.2.4 (2026-06-29)]] - document - CHANGELOG.md
+- [[1.3.0 Reliability (2026-07-21)]] - document - CHANGELOG.md
+- [[1.5.0 A2A Governance (2026-08-14)]] - document - CHANGELOG.md
+- [[1.5.1 A2A Governance (2026-08-22)]] - document - CHANGELOG.md
+- [[1.5.2 (2026-08-23)]] - document - CHANGELOG.md
+- [[1.5.3 (2026-08-23)]] - document - CHANGELOG.md
+- [[Unreleased — feathttp-connect-proxy + featcredential-isolation]] - document - CHANGELOG.md
+- [[Unreleased — featv0.8.0-enforcement-hardening (session 3 — 2026-03-15)]] - document - CHANGELOG.md
+- [[v0.3.0 → v0.4.0]] - document - CHANGELOG.md
+- [[v0.4.0 → v0.5.0]] - document - CHANGELOG.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -61,26 +74,3 @@ members: 46
 TABLE source_file, type FROM #community/Community_99
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 8 edges to [[_COMMUNITY_Community 124]]
-- 6 edges to [[_COMMUNITY_Community 9]]
-- 4 edges to [[_COMMUNITY_Community 1]]
-- 3 edges to [[_COMMUNITY_Community 793]]
-- 3 edges to [[_COMMUNITY_Community 0]]
-- 3 edges to [[_COMMUNITY_Community 63]]
-- 3 edges to [[_COMMUNITY_Community 10]]
-- 2 edges to [[_COMMUNITY_Community 1325]]
-- 2 edges to [[_COMMUNITY_Community 45]]
-- 1 edge to [[_COMMUNITY_Community 31]]
-- 1 edge to [[_COMMUNITY_Community 313]]
-- 1 edge to [[_COMMUNITY_Community 355]]
-- 1 edge to [[_COMMUNITY_Community 271]]
-- 1 edge to [[_COMMUNITY_Community 366]]
-
-## Top bridge nodes
-- [[auth.py]] - degree 13, connects to 8 communities
-- [[auth.py_2]] - degree 10, connects to 5 communities
-- [[create_auth_dependency()]] - degree 20, connects to 4 communities
-- [[verify_token()]] - degree 13, connects to 3 communities
-- [[test_auth.py]] - degree 14, connects to 1 community

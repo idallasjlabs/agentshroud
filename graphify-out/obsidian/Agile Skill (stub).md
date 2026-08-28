@@ -1,13 +1,13 @@
 ---
 source_file: ".agents/skills/i-agile/SKILL.md"
 type: "document"
-community: "Community 1656"
+community: "Community 1743"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1656
+  - community/Community_1743
 ---
 
 # Agile Skill (stub)
 
-#graphify/document #graphify/EXTRACTED #community/Community_1656
+#graphify/document #graphify/EXTRACTED #community/Community_1743

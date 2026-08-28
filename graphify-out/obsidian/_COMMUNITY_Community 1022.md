@@ -1,20 +1,22 @@
 ---
 type: community
+cohesion: 0.29
 members: 7
 ---
 
 # Community 1022
 
+**Cohesion:** 0.29 - loosely connected
 **Members:** 7 nodes
 
 ## Members
-- [[A. `mac_app_catalog.json` — Machine-readable manifest_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[B. `mac_app_catalog.md` — Human-readable catalog_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[Discovery Strategy_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[Phase 2 — Deduplication & Normalization_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[Phase 3 — Categorization_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[Phase 4 — Enrichment_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
-- [[Phase 5 — Output Generation_2]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[Feedback Guidelines_2]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
+- [[Output Format_28]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
+- [[Production-Specific Review Checks_2]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
+- [[Review Principles_2]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
+- [[Role_82]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
+- [[SKILL_142]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
+- [[Skill Code Review (CR)_2]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,10 +24,3 @@ members: 7
 TABLE source_file, type FROM #community/Community_1022
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 430]]
-- 1 edge to [[_COMMUNITY_Community 805]]
-
-## Top bridge nodes
-- [[Discovery Strategy_2]] - degree 7, connects to 2 communities

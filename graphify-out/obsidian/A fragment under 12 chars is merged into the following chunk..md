@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "Community 781"
-location: "L481"
+community: "Community 776"
+location: "L480"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_781
+  - community/Community_776
 ---
 
 # A fragment under 12 chars is merged into the following chunk.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_short_fragment_merged_forward()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_781
+#graphify/rationale #graphify/EXTRACTED #community/Community_776

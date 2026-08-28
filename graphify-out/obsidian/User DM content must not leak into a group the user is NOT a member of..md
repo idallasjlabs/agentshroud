@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_isolation.py"
 type: "rationale"
-community: "Community 26"
+community: "Community 27"
 location: "L165"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_26
+  - community/Community_27
 ---
 
 # User DM content must not leak into a group the user is NOT a member of.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_user_dm_write_invisible_from_other_group()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_26
+#graphify/rationale #graphify/EXTRACTED #community/Community_27

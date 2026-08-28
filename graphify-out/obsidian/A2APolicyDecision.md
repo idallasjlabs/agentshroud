@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "Community 1001"
+community: "Community 71"
 location: "L143"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1001
+  - community/Community_71
 ---
 
 # A2APolicyDecision
@@ -26,4 +26,4 @@ tags:
 - [[test_a2a_policy.py]] - `imports` [EXTRACTED]
 - [[test_decision_allowed_property_only_true_for_terminal_allow()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1001
+#graphify/code #graphify/EXTRACTED #community/Community_71

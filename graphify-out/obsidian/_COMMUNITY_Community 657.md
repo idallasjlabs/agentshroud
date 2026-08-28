@@ -1,24 +1,29 @@
 ---
 type: community
-members: 11
+cohesion: 0.14
+members: 14
 ---
 
 # Community 657
 
-**Members:** 11 nodes
+**Cohesion:** 0.14 - loosely connected
+**Members:** 14 nodes
 
 ## Members
-- [[Configuration_3]] - document - docs/api/integration-guide.md
-- [[Installation in Gateway]] - document - docs/vault/05 - Dependencies/openscap.md
-- [[Integration Point]] - document - docs/vault/05 - Dependencies/openscap.md
-- [[Integration Testing]] - document - docs/api/integration-guide.md
-- [[Key Commands]] - document - docs/vault/05 - Dependencies/openscap.md
-- [[OpenClaw Integration (Primary Target)]] - document - docs/api/integration-guide.md
-- [[OpenSCAP]] - document - docs/vault/05 - Dependencies/openscap.md
-- [[Purpose_189]] - document - docs/vault/05 - Dependencies/openscap.md
-- [[Related Notes_44]] - document - docs/vault/05 - Dependencies/openscap.md
-- [[Relationship to Other Security Tools]] - document - docs/vault/05 - Dependencies/openscap.md
-- [[What It Checks_1]] - document - docs/vault/05 - Dependencies/openscap.md
+- [[1. Scope of Change_1]] - document - docker/config/hermes/skills/i-pca/SKILL.md
+- [[2. What Changes and Why_1]] - document - docker/config/hermes/skills/i-pca/SKILL.md
+- [[3. Scalability Gate_1]] - document - docker/config/hermes/skills/i-pca/SKILL.md
+- [[4. Blast Radius_2]] - document - docker/config/hermes/skills/i-pca/SKILL.md
+- [[5. Known Limits and Assumptions_1]] - document - docker/config/hermes/skills/i-pca/SKILL.md
+- [[6. Alternatives Considered_1]] - document - docker/config/hermes/skills/i-pca/SKILL.md
+- [[7. Open Questions_1]] - document - docker/config/hermes/skills/i-pca/SKILL.md
+- [[8. Verification Plan]] - document - docker/config/hermes/skills/i-pca/SKILL.md
+- [[Closing Gate_1]] - document - docker/config/hermes/skills/i-pca/SKILL.md
+- [[Output Format Rules_1]] - document - docker/config/hermes/skills/i-pca/SKILL.md
+- [[Output Sections (ALL required)_1]] - document - docker/config/hermes/skills/i-pca/SKILL.md
+- [[Role_61]] - document - docker/config/hermes/skills/i-pca/SKILL.md
+- [[SKILL_104]] - document - docker/config/hermes/skills/i-pca/SKILL.md
+- [[Skill Pre-Change Analysis (PCA)_1]] - document - docker/config/hermes/skills/i-pca/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,14 +31,3 @@ members: 11
 TABLE source_file, type FROM #community/Community_657
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 520]]
-- 1 edge to [[_COMMUNITY_Community 401]]
-- 1 edge to [[_COMMUNITY_Community 640]]
-- 1 edge to [[_COMMUNITY_Community 600]]
-
-## Top bridge nodes
-- [[OpenClaw Integration (Primary Target)]] - degree 4, connects to 2 communities
-- [[OpenSCAP]] - degree 9, connects to 1 community
-- [[Integration Testing]] - degree 3, connects to 1 community

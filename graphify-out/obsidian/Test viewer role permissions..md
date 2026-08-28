@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "rationale"
-community: "Community 15"
+community: "RBAC & SOC Realtime"
 location: "L143"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_15
+  - community/RBAC__SOC_Realtime
 ---
 
 # Test viewer role permissions.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_permission_matrix_viewer()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_15
+#graphify/rationale #graphify/EXTRACTED #community/RBAC__SOC_Realtime

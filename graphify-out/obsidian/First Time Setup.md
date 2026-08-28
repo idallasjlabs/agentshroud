@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/08 - Runbooks/First Time Setup.md"
 type: "document"
-community: "Community 788"
+community: "Community 289"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_788
+  - community/Community_289
 ---
 
 # First Time Setup.md
@@ -16,4 +16,4 @@ tags:
 - [[Restart Procedure_1]] - `references` [EXTRACTED]
 - [[Startup Errors_1]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_788
+#graphify/document #graphify/EXTRACTED #community/Community_289

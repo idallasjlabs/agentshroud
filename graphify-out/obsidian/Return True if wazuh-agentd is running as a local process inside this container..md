@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "Community 59"
+community: "Community 72"
 location: "L680"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_59
+  - community/Community_72
 ---
 
 # Return True if wazuh-agentd is running as a local process inside this container.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_is_wazuh_agent_running()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_59
+#graphify/rationale #graphify/EXTRACTED #community/Community_72

@@ -1,19 +1,19 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/middleware.py.md"
 type: "document"
-community: "Community 561"
+community: "Community 559"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_561
+  - community/Community_559
 ---
 
 # middleware.py
 
 ## Connections
 - [[Config Keys Read_3]] - `contains` [EXTRACTED]
-- [[Environment Variables Used_4]] - `contains` [EXTRACTED]
+- [[Environment Variables Used_3]] - `contains` [EXTRACTED]
 - [[FileSandbox Configuration (hardcoded in __init__)]] - `contains` [EXTRACTED]
 - [[Imports From  Exports To_3]] - `contains` [EXTRACTED]
 - [[Key Classes  Functions_3]] - `contains` [EXTRACTED]
@@ -25,4 +25,4 @@ tags:
 - [[middleware.py_1]] - `contains` [EXTRACTED]
 - [[process_request Flow]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_561
+#graphify/document #graphify/EXTRACTED #community/Community_559

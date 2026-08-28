@@ -1,12 +1,12 @@
 ---
 source_file: ".github/agents/validation-runner.agent.md"
 type: "document"
-community: "Community 368"
+community: "Community 340"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_368
+  - community/Community_340
 ---
 
 # Validation Runner Specialist
@@ -15,7 +15,6 @@ tags:
 - [[5) ENVIRONMENT SETUP]] - `contains` [EXTRACTED]
 - [[Common Validation Commands]] - `contains` [EXTRACTED]
 - [[Definition of Done_2]] - `contains` [EXTRACTED]
-- [[Environment Setup]] - `contains` [EXTRACTED]
 - [[Error Handling_2]] - `contains` [EXTRACTED]
 - [[Remember_2]] - `contains` [EXTRACTED]
 - [[Report Format]] - `contains` [EXTRACTED]
@@ -26,4 +25,4 @@ tags:
 - [[Your Responsibilities_1]] - `contains` [EXTRACTED]
 - [[validation-runner.agent]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_368
+#graphify/document #graphify/EXTRACTED #community/Community_340

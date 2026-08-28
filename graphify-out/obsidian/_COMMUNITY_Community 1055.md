@@ -1,20 +1,22 @@
 ---
 type: community
+cohesion: 0.29
 members: 7
 ---
 
 # Community 1055
 
+**Cohesion:** 0.29 - loosely connected
 **Members:** 7 nodes
 
 ## Members
-- [[.test_bots_resolution_error_swallowed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_default_bot_and_sanitizer_configured()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_no_bots_keeps_fallback_workspace()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_non_default_bot_fallback()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_sanitizer_construction_error_sets_none()]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestSetConfig]] - code - gateway/tests/test_middleware_coverage.py
-- [[_bot()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_get_all_loaded_values_method()]] - code - gateway/tests/test_credential_injector.py
+- [[.test_returns_empty_when_dir_missing()]] - code - gateway/tests/test_credential_injector.py
+- [[.test_returns_values_meeting_min_len()]] - code - gateway/tests/test_credential_injector.py
+- [[.test_strips_trailing_newline()]] - code - gateway/tests/test_credential_injector.py
+- [[CredentialInjector.get_all_loaded_values returns all loaded credential values.]] - rationale - gateway/tests/test_credential_injector.py
+- [[TestLoadAllSecretFileValues]] - code - gateway/tests/test_credential_injector.py
+- [[load_all_secret_file_values reads all Docker secret files for scrubbing.]] - rationale - gateway/tests/test_credential_injector.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,12 +26,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 1]]
-- 2 edges to [[_COMMUNITY_Community 6]]
-- 2 edges to [[_COMMUNITY_Community 426]]
-- 1 edge to [[_COMMUNITY_Community 174]]
+- 1 edge to [[_COMMUNITY_Community 915]]
+- 1 edge to [[_COMMUNITY_Community 605]]
 
 ## Top bridge nodes
-- [[TestSetConfig]] - degree 10, connects to 4 communities
-- [[_bot()]] - degree 3, connects to 1 community
-- [[.test_default_bot_and_sanitizer_configured()]] - degree 3, connects to 1 community
+- [[TestLoadAllSecretFileValues]] - degree 6, connects to 1 community
+- [[.test_get_all_loaded_values_method()]] - degree 3, connects to 1 community

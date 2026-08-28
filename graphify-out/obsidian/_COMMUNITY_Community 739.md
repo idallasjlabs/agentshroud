@@ -1,24 +1,27 @@
 ---
 type: community
-members: 11
+cohesion: 0.17
+members: 12
 ---
 
 # Community 739
 
-**Members:** 11 nodes
+**Cohesion:** 0.17 - loosely connected
+**Members:** 12 nodes
 
 ## Members
-- [[Prerequisites_9]] - document - docs/setup-telegram.md
-- [[Step 1 Create a Bot]] - document - docs/setup-telegram.md
-- [[Step 2 Write the Token to Secrets]] - document - docs/setup-telegram.md
-- [[Step 3 Find Your Telegram User ID]] - document - docs/setup-telegram.md
-- [[Step 4 Configure Environment]] - document - docs/setup-telegram.md
-- [[Step 6 Rebuild and Start]] - document - docs/setup-telegram.md
-- [[Step 7 Verify]] - document - docs/setup-telegram.md
-- [[Step 8 Configure Environment]] - document - docs/setup-slack.md
-- [[Telegram Channel Setup]] - document - docs/setup-telegram.md
-- [[Troubleshooting_25]] - document - docs/setup-telegram.md
-- [[setup-telegram]] - document - docs/setup-telegram.md
+- [[First Time Setup_1]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[Prerequisites_13]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[Related Notes_66]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[Step 1 Create Secret Files]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[Step 3 Configure 1Password Items]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[Step 4 Build Container Images]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[Step 5 Configure agentshroud.yaml]] - document - docs/setup-telegram.md
+- [[Step 5 Start Containers]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[Step 6 Verify Setup]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[Step 7 Configure iOS Shortcuts (Optional)]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[Step 8 Verify Security Posture]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[Troubleshooting First Setup]] - document - docs/vault/08 - Runbooks/First Time Setup.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,10 +31,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 305]]
-- 1 edge to [[_COMMUNITY_Community 1275]]
-- 1 edge to [[_COMMUNITY_Community 551]]
+- 1 edge to [[_COMMUNITY_Community 752]]
+- 1 edge to [[_COMMUNITY_Community 289]]
 
 ## Top bridge nodes
-- [[Telegram Channel Setup]] - degree 12, connects to 2 communities
-- [[Step 8 Configure Environment]] - degree 2, connects to 1 community
+- [[First Time Setup_1]] - degree 12, connects to 1 community
+- [[Step 5 Configure agentshroud.yaml]] - degree 2, connects to 1 community

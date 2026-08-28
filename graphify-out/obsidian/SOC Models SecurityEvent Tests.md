@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_models.py"
 type: "code"
-community: "Community 1538"
+community: "Community 1577"
 location: "line 26"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_1538
+  - community/Community_1577
 ---
 
 # SOC Models SecurityEvent Tests
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SOC ServiceManager Tests (get_logs, module_filter)]] - `shares_data_with` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_1538
+#graphify/code #graphify/INFERRED #community/Community_1577

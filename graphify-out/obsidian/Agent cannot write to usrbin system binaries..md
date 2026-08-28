@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "Community 14"
+community: "Security Audit & Drift Detection"
 location: "L170"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_14
+  - community/Security_Audit__Drift_Detection
 ---
 
 # Agent cannot write to /usr/bin/ system binaries.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_usr_bin_write_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_14
+#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Drift_Detection

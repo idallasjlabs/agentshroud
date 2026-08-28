@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/web/templates/installer.html"
 type: "code"
-community: "Community 1397"
+community: "Community 1404"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_1397
+  - community/Community_1404
 ---
 
 # buildSummary()
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[startInstall()]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_1397
+#graphify/code #graphify/INFERRED #community/Community_1404

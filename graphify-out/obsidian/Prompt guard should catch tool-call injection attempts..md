@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "Community 14"
+community: "Security Audit & Drift Detection"
 location: "L472"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_14
+  - community/Security_Audit__Drift_Detection
 ---
 
 # Prompt guard should catch tool-call injection attempts.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_prompt_guard_catches_tool_injection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_14
+#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Drift_Detection

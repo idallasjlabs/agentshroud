@@ -1,37 +1,27 @@
 ---
 type: community
-members: 24
+cohesion: 0.17
+members: 12
 ---
 
 # Community 746
 
-**Members:** 24 nodes
+**Cohesion:** 0.17 - loosely connected
+**Members:** 12 nodes
 
 ## Members
-- [[Advanced 1Password Access]] - document - docker/bot-capabilities.md
-- [[AgentShroud Bot Capabilities]] - document - docker/bot-capabilities.md
-- [[Available Commands]] - document - docker/bot-capabilities.md
-- [[Credential Management - 1Password Integration]] - document - docker/bot-capabilities.md
-- [[Docker Compose Override — Raspberry Pi Bot Host]] - code - docker/docker-compose.agentshroud-bot.raspberrypi.yml
-- [[Gateway credentialsop-proxy Endpoint (1Password isolation)]] - concept - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[Never Display Credentials in Chat Policy (Ultra-Conservative)]] - rationale - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[Option 1 — Professional (email, formal)]] - document - docker/bot-capabilities.md
-- [[Option 2 — Compact (Telegram, Slack — default)]] - document - docker/bot-capabilities.md
-- [[Option 3 — Full Collaborator Notice (first contact only)]] - document - docker/bot-capabilities.md
-- [[Rules_9]] - document - docker/bot-capabilities.md
-- [[SYSTEM-INSTRUCTIONS-SECURITY]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[Security Decision Tree]] - document - docker/bot-capabilities.md
-- [[Security Rules (Ultra-Conservative)]] - document - docker/bot-capabilities.md
-- [[Trademark Statements]] - document - docker/bot-capabilities.md
-- [[Troubleshooting_7]] - document - docker/bot-capabilities.md
-- [[Usage Examples]] - document - docker/bot-capabilities.md
-- [[Vault Access]] - document - docker/bot-capabilities.md
-- [[Which statement to use]] - document - docker/bot-capabilities.md
-- [[Why Ultra-Conservative]] - document - docker/bot-capabilities.md
-- [[bot-capabilities]] - document - docker/bot-capabilities.md
-- [[🔴 Chat Interfaces (NEVER display credentials)]] - document - docker/bot-capabilities.md
-- [[🟢 Console Commands (ALWAYS display)]] - document - docker/bot-capabilities.md
-- [[🟢 Internal Use (ALWAYS allowed)]] - document - docker/bot-capabilities.md
+- [[description of what this does_1]] - document - docker/config/hermes/skills/i-athena/SKILL.md
+- [[Athena — Knowledge Distiller_2]] - document - docker/config/hermes/skills/i-athena/SKILL.md
+- [[Input Requirements_11]] - document - docker/config/hermes/skills/i-athena/SKILL.md
+- [[Output Format_13]] - document - docker/config/hermes/skills/i-athena/SKILL.md
+- [[Persona_8]] - document - docker/config/hermes/skills/i-athena/SKILL.md
+- [[Quality Checklist_10]] - document - docker/config/hermes/skills/i-athena/SKILL.md
+- [[Role_42]] - document - docker/config/hermes/skills/i-athena/SKILL.md
+- [[SKILL_69]] - document - docker/config/hermes/skills/i-athena/SKILL.md
+- [[System Prompt_8]] - document - docker/config/hermes/skills/i-athena/SKILL.md
+- [[User Prompt Template_4]] - document - docker/config/hermes/skills/i-athena/SKILL.md
+- [[cheatsheet_1]] - document - docker/config/hermes/skills/i-athena/SKILL.md
+- [[show_notes_1]] - document - docker/config/hermes/skills/i-athena/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,11 +29,3 @@ members: 24
 TABLE source_file, type FROM #community/Community_746
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 620]]
-- 1 edge to [[_COMMUNITY_Community 747]]
-
-## Top bridge nodes
-- [[SYSTEM-INSTRUCTIONS-SECURITY]] - degree 4, connects to 1 community
-- [[AgentShroud Bot Capabilities]] - degree 4, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/mfa_guard.py"
 type: "rationale"
-community: "Community 69"
+community: "Community 63"
 location: "L100"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_69
+  - community/Community_63
 ---
 
 # Verify a TOTP second factor for high-risk operations (fail-closed).      Args:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MFAGuard_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_69
+#graphify/rationale #graphify/EXTRACTED #community/Community_63

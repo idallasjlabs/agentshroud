@@ -1,18 +1,18 @@
 ---
 source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "Community 460"
+community: "Community 108"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_460
+  - community/Community_108
 ---
 
 # brand-guidelines.md
 
 ## Connections
-- [[AgentShroud Brand Guidelines_1]] - `contains` [EXTRACTED]
+- [[AgentShroud Brand Guidelines]] - `contains` [EXTRACTED]
 - [[Animation Guidelines  Motion Principles]] - `conceptually_related_to` [EXTRACTED]
 - [[Brand Applications (website, docs, social, presentations, print)]] - `conceptually_related_to` [EXTRACTED]
 - [[Brand Approval Process]] - `conceptually_related_to` [EXTRACTED]
@@ -28,4 +28,4 @@ tags:
 - [[Typography in Practice]] - `conceptually_related_to` [EXTRACTED]
 - [[Voice & Tone Guidelines]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_460
+#graphify/document #graphify/EXTRACTED #community/Community_108

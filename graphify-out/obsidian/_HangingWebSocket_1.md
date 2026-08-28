@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "code"
-community: "Community 24"
+community: "Community 23"
 location: "L478"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_24
+  - community/Community_23
 ---
 
 # _HangingWebSocket
@@ -26,4 +26,4 @@ tags:
 - [[test_enhanced_approval.py]] - `contains` [EXTRACTED]
 - [[test_submit_does_not_deadlock_on_hung_websocket_client()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_24
+#graphify/code #graphify/INFERRED #community/Community_23

@@ -1,20 +1,17 @@
 ---
-source_file: "firmware/voice-terminal/main/audio.c"
+source_file: "firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c"
 type: "code"
-community: "Community 902"
-location: "L41"
+community: "Community 270"
+location: "L157"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_902
+  - community/Community_270
 ---
 
 # esp_err_t
 
 ## Connections
-- [[audio_init()]] - `references` [EXTRACTED]
-- [[audio_play()]] - `references` [EXTRACTED]
-- [[audio_preinit()]] - `references` [EXTRACTED]
-- [[audio_set_volume()]] - `references` [EXTRACTED]
+- [[face_animation_init()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_902
+#graphify/code #graphify/EXTRACTED #community/Community_270

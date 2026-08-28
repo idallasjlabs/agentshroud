@@ -1,21 +1,23 @@
 ---
 type: community
+cohesion: 0.25
 members: 8
 ---
 
 # Community 995
 
+**Cohesion:** 0.25 - loosely connected
 **Members:** 8 nodes
 
 ## Members
-- [[Additional Controls Checklist]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[AgentShroud v0.8.0 — 25-Domain Prompt Injection Defense Assessment & Roadmap]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Context_11]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Critical Files (v0.8.0 Changes)]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[DELIVERABLE 2 — Maturity Scorecard]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Implementation Sequence (v0.8.0 Execution Order)]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Top-10 Gaps by Exploitability x Impact (Post v0.8.0)]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[security-assessment-v0.8.0-25-domain]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[.test_disallowed_vault_returns_403()]] - code - gateway/tests/test_op_proxy.py
+- [[.test_malformed_reference_returns_422()]] - code - gateway/tests/test_op_proxy.py
+- [[.test_op_subprocess_failure_returns_502()]] - code - gateway/tests/test_op_proxy.py
+- [[.test_path_traversal_returns_403()]] - code - gateway/tests/test_op_proxy.py
+- [[.test_requires_auth()_4]] - code - gateway/tests/test_op_proxy.py
+- [[.test_valid_reference_returns_value()]] - code - gateway/tests/test_op_proxy.py
+- [[Endpoint returns 401 without auth override._1]] - rationale - gateway/tests/test_op_proxy.py
+- [[TestOpProxyEndpoint]] - code - gateway/tests/test_op_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,10 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 339]]
-- 1 edge to [[_COMMUNITY_Community 1068]]
-- 1 edge to [[_COMMUNITY_Community 1363]]
-- 1 edge to [[_COMMUNITY_Community 883]]
+- 1 edge to [[_COMMUNITY_Community 668]]
 
 ## Top bridge nodes
-- [[AgentShroud v0.8.0 — 25-Domain Prompt Injection Defense Assessment & Roadmap]] - degree 11, connects to 4 communities
+- [[TestOpProxyEndpoint]] - degree 7, connects to 1 community

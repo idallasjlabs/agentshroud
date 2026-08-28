@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-pca/SKILL.md"
 type: "document"
-community: "Community 665"
+community: "Community 657"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_665
+  - community/Community_657
 ---
 
 # Skill: Pre-Change Analysis (PCA)
@@ -18,4 +18,4 @@ tags:
 - [[Role_61]] - `contains` [EXTRACTED]
 - [[SKILL_104]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_665
+#graphify/document #graphify/EXTRACTED #community/Community_657

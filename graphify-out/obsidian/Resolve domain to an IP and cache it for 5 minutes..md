@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/dns_filter.py"
 type: "rationale"
-community: "Community 46"
+community: "Memory Lifecycle & Egress Filtering"
 location: "L182"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_46
+  - community/Memory_Lifecycle__Egress_Filtering
 ---
 
 # Resolve domain to an IP and cache it for 5 minutes.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.resolve_and_cache()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_46
+#graphify/rationale #graphify/EXTRACTED #community/Memory_Lifecycle__Egress_Filtering

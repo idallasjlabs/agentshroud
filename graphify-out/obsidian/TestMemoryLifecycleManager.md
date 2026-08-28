@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "Community 584"
+community: "Memory Lifecycle & Egress Filtering"
 location: "L189"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_584
+  - community/Memory_Lifecycle__Egress_Filtering
 ---
 
 # TestMemoryLifecycleManager
@@ -33,4 +33,4 @@ tags:
 - [[Test memory lifecycle management.]] - `rationale_for` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_584
+#graphify/code #graphify/EXTRACTED #community/Memory_Lifecycle__Egress_Filtering

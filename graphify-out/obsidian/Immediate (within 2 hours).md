@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-production/SKILL.md"
 type: "document"
-community: "Community 519"
+community: "Community 517"
 location: "L132"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_519
+  - community/Community_517
 ---
 
 # Immediate (within 2 hours)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Post-Incident]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_519
+#graphify/document #graphify/EXTRACTED #community/Community_517

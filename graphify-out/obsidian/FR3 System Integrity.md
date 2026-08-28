@@ -1,11 +1,11 @@
 ---
 source_file: "docs/compliance/iec-62443-matrix.md"
 type: "concept"
-community: "Community 799"
+community: "Community 137"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_799
+  - community/Community_137
 ---
 
 # FR3: System Integrity
@@ -21,4 +21,4 @@ tags:
 - [[prompt_guard.py]] - `references` [EXTRACTED]
 - [[security-scan.sh (unified scan dispatcher)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_799
+#graphify/concept #graphify/EXTRACTED #community/Community_137

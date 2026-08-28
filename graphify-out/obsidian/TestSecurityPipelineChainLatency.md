@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "Community 775"
+community: "PII Sanitizer & E2E Tests"
 location: "L264"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_775
+  - community/PII_Sanitizer__E2E_Tests
 ---
 
 # TestSecurityPipelineChainLatency
@@ -28,4 +28,4 @@ tags:
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_performance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_775
+#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer__E2E_Tests

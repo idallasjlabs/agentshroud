@@ -1,35 +1,37 @@
 ---
 type: community
+cohesion: 0.16
 members: 22
 ---
 
 # Community 404
 
+**Cohesion:** 0.16 - loosely connected
 **Members:** 22 nodes
 
 ## Members
-- [[API Key Setup]] - document - docs/setup/HERMES_SETUP.md
-- [[Authentication Flow]] - document - docs/setup/HERMES_SETUP.md
-- [[Chatbox]] - document - docs/setup/HERMES_SETUP.md
-- [[Frontend Client Setup]] - document - docs/setup/HERMES_SETUP.md
-- [[HCI (Hermes Control Interface)]] - document - docs/setup/HERMES_SETUP.md
-- [[HCI Network Access]] - document - docs/setup/HERMES_SETUP.md
-- [[HCI Tailscale Serve Configuration]] - document - docs/setup/HERMES_SETUP.md
-- [[Hermes Agent — Connection Setup]] - document - docs/setup/HERMES_SETUP.md
-- [[Hermes OpenAI-Compatible API]] - document - docs/setup/HERMES_SETUP.md
-- [[Inbound Path]] - document - docs/setup/HERMES_SETUP.md
-- [[LibreChat]] - document - docs/setup/HERMES_SETUP.md
-- [[Mitigations in Place]] - document - docs/setup/HERMES_SETUP.md
-- [[Network Access]] - document - docs/setup/HERMES_SETUP.md
-- [[Open WebUI]] - document - docs/setup/HERMES_SETUP.md
-- [[Outbound Path]] - document - docs/setup/HERMES_SETUP.md
-- [[Overview_16]] - document - docs/setup/HERMES_SETUP.md
-- [[Prerequisites_10]] - document - docs/setup/HERMES_SETUP.md
-- [[Security Model]] - document - docs/setup/HERMES_SETUP.md
-- [[Starting the HCI Container]] - document - docs/setup/HERMES_SETUP.md
-- [[Table of Contents_1]] - document - docs/setup/HERMES_SETUP.md
-- [[Tailscale Serve Configuration]] - document - docs/setup/HERMES_SETUP.md
-- [[Troubleshooting_28]] - document - docs/setup/HERMES_SETUP.md
+- [[.test_allows_env_in_name()]] - code - gateway/tests/test_env_guard.py
+- [[.test_allows_natural_language_mixed_quotes()]] - code - gateway/tests/test_env_guard.py
+- [[.test_allows_natural_language_question()]] - code - gateway/tests/test_env_guard.py
+- [[.test_allows_natural_language_social_phrasing()]] - code - gateway/tests/test_env_guard.py
+- [[.test_allows_safe_command()]] - code - gateway/tests/test_env_guard.py
+- [[.test_blocks_dollar_env()]] - code - gateway/tests/test_env_guard.py
+- [[.test_blocks_env_pipe()]] - code - gateway/tests/test_env_guard.py
+- [[.test_blocks_printenv()]] - code - gateway/tests/test_env_guard.py
+- [[.test_blocks_proc_environ()]] - code - gateway/tests/test_env_guard.py
+- [[.test_blocks_proc_star_environ()]] - code - gateway/tests/test_env_guard.py
+- [[.test_clean_text_unchanged()]] - code - gateway/tests/test_env_guard.py
+- [[.test_scrubs_aws_key()]] - code - gateway/tests/test_env_guard.py
+- [[.test_scrubs_github_token()]] - code - gateway/tests/test_env_guard.py
+- [[.test_scrubs_multiple_keys()]] - code - gateway/tests/test_env_guard.py
+- [[.test_scrubs_openai_key()]] - code - gateway/tests/test_env_guard.py
+- [[Check if command execution should be allowed.      Args         cmd Command to]] - rationale - gateway/security/env_guard.py
+- [[Scrub API keys and sensitive patterns from text output.      Args         text]] - rationale - gateway/security/env_guard.py
+- [[TestCheckCommand]] - code - gateway/tests/test_env_guard.py
+- [[TestScrubOutput]] - code - gateway/tests/test_env_guard.py
+- [[check_command()]] - code - gateway/security/env_guard.py
+- [[scrub_output()]] - code - gateway/security/env_guard.py
+- [[test_env_guard.py]] - code - gateway/tests/test_env_guard.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,7 +41,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 90]]
+- 4 edges to [[_COMMUNITY_Community 18]]
 
 ## Top bridge nodes
-- [[Hermes Agent — Connection Setup]] - degree 8, connects to 1 community
+- [[check_command()]] - degree 15, connects to 1 community
+- [[scrub_output()]] - degree 8, connects to 1 community

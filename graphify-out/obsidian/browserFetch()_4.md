@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-browser/browse.js"
 type: "code"
-community: "Community 252"
+community: "Community 253"
 location: "function browserFetch"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_252
+  - community/Community_253
 ---
 
 # browserFetch()
@@ -16,4 +16,4 @@ tags:
 - [[appendLog()_4]] - `calls` [EXTRACTED]
 - [[browser-fetch package.json_3]] - `references` [AMBIGUOUS]
 
-#graphify/code #graphify/EXTRACTED #community/Community_252
+#graphify/code #graphify/EXTRACTED #community/Community_253

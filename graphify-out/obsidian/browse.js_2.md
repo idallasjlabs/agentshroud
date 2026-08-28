@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-browser/browse.js"
 type: "code"
-community: "Community 1089"
+community: "Community 1085"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1089
+  - community/Community_1085
 ---
 
 # browse.js
@@ -18,4 +18,4 @@ tags:
 - [[path_3]] - `contains` [EXTRACTED]
 - [[{ chromium }_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1089
+#graphify/code #graphify/EXTRACTED #community/Community_1085

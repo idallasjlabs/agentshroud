@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-11-trust-boundary.png"
 type: "image"
-community: "Community 280"
+community: "Community 554"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Community_280
+  - community/Community_554
 ---
 
 # Trust Zone 4 — Infrastructure Nodes (raspberrypi, marvin, trillian; SSH-gated)
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud Gateway (Trust Zone 1) holds 1Password service account, enforces policy, signs ledger entries, controls approval queue, HMACJWT validation]] - `conceptually_related_to` [EXTRACTED]
 - [[Trust Boundary Diagram]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Community_280
+#graphify/image #graphify/EXTRACTED #community/Community_554

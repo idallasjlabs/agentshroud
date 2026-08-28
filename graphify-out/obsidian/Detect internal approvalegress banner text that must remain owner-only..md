@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Community 93"
+community: "Adversarial Injection Guards"
 location: "L2650"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_93
+  - community/Adversarial_Injection_Guards
 ---
 
 # Detect internal approval/egress banner text that must remain owner-only.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._contains_internal_approval_banner()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_93
+#graphify/rationale #graphify/EXTRACTED #community/Adversarial_Injection_Guards

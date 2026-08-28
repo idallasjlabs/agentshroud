@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: "Community 79"
+community: "Community 83"
 location: "L216"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_79
+  - community/Community_83
 ---
 
 # LLMProxy
@@ -43,6 +43,7 @@ tags:
 - [[Hermes v0.16.0 OpenAI-Client Compatibility Incident (3-day cron outage)]] - `rationale_for` [EXTRACTED]
 - [[LLMProxy_1]] - `uses` [INFERRED]
 - [[LLMProxy_2]] - `uses` [INFERRED]
+- [[LLMProxy_3]] - `uses` [INFERRED]
 - [[PIISanitizer]] - `shares_data_with` [EXTRACTED]
 - [[Post-Retry Rate Limit Failover Tests]] - `references` [EXTRACTED]
 - [[Proxies LLM API calls (Anthropic, OpenAI, Google) through the security pipeline.]] - `rationale_for` [EXTRACTED]
@@ -92,4 +93,4 @@ tags:
 - [[test_streaming_tool_acl_blocks_terminal_tool()]] - `calls` [EXTRACTED]
 - [[test_streaming_tool_acl_skips_unknown_user()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_79
+#graphify/code #graphify/EXTRACTED #community/Community_83

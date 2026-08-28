@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/graphify/references/query.md"
 type: "document"
-community: "Community 1085"
+community: "Community 1081"
 location: "L89"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1085
+  - community/Community_1081
 ---
 
 # For /graphify explain
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[graphify reference query, path, explain_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1085
+#graphify/document #graphify/EXTRACTED #community/Community_1081

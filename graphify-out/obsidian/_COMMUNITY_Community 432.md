@@ -1,33 +1,36 @@
 ---
 type: community
-members: 20
+cohesion: 0.10
+members: 21
 ---
 
 # Community 432
 
-**Members:** 20 nodes
+**Cohesion:** 0.10 - loosely connected
+**Members:** 21 nodes
 
 ## Members
-- [[Additional Costs (Option 2 vs Option 1)]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Architecture Comparison]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Benefits Gained]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Best Use Cases for Distributed Node Approach]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Comparison Matrix]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Concept Overview]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Conclusion]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Cost-Benefit Analysis]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Current Approach (Option 1 Direct SSH)]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Decision Points]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Defense in Depth]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Distributed OpenClaw Node Architecture — Raspberry Pi 4]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Future Approach (Option 2 Distributed Node)]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Implementation Timeline]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Next Steps_1]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Not Ideal For]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Prerequisites (Before Implementation)]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Security Architecture_4]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Use Cases]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[.__init__()_169]] - code - gateway/tests/test_key_rotation.py
+- [[.setup_manager_with_credential()]] - code - gateway/tests/test_key_rotation.py
+- [[.test_check_and_rotate_due_credentials()]] - code - gateway/tests/test_key_rotation.py
+- [[.test_emergency_rotation()]] - code - gateway/tests/test_key_rotation.py
+- [[.test_grace_period_cleanup()]] - code - gateway/tests/test_key_rotation.py
+- [[.test_register_validator()]] - code - gateway/tests/test_key_rotation.py
+- [[.test_rotation_with_validation_failure()]] - code - gateway/tests/test_key_rotation.py
+- [[.test_successful_rotation_workflow()]] - code - gateway/tests/test_key_rotation.py
+- [[.validate()_2]] - code - gateway/tests/test_key_rotation.py
+- [[Mock validation that can be controlled.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Mock validator for testing.]] - rationale - gateway/tests/test_key_rotation.py
+- [[MockValidator]] - code - gateway/tests/test_key_rotation.py
+- [[Set up manager with a credential that needs rotation.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test bulk rotation check and execution.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test complete successful rotation workflow.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test emergency rotation workflow.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test grace period and old credential cleanup.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test rotation workflow with validation failure and rollback.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test the complete rotation workflow.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test validator registration.]] - rationale - gateway/tests/test_key_rotation.py
+- [[TestKeyRotationWorkflow]] - code - gateway/tests/test_key_rotation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,11 +40,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 610]]
-- 2 edges to [[_COMMUNITY_Community 701]]
-- 1 edge to [[_COMMUNITY_Community 1172]]
-- 1 edge to [[_COMMUNITY_Community 1014]]
-- 1 edge to [[_COMMUNITY_Community 1293]]
+- 6 edges to [[_COMMUNITY_Community 295]]
+- 4 edges to [[_COMMUNITY_Community 226]]
+- 4 edges to [[_COMMUNITY_Community 533]]
+- 4 edges to [[_COMMUNITY_Community 130]]
+- 2 edges to [[_COMMUNITY_Community 810]]
+- 1 edge to [[_COMMUNITY_Community 692]]
 
 ## Top bridge nodes
-- [[Distributed OpenClaw Node Architecture — Raspberry Pi 4]] - degree 16, connects to 5 communities
+- [[MockValidator]] - degree 14, connects to 5 communities
+- [[TestKeyRotationWorkflow]] - degree 14, connects to 5 communities
+- [[.setup_manager_with_credential()]] - degree 6, connects to 3 communities
+- [[.test_check_and_rotate_due_credentials()]] - degree 6, connects to 3 communities
+- [[.test_register_validator()]] - degree 3, connects to 1 community

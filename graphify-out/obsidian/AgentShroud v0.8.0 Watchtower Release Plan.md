@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
 type: "document"
-community: "Community 90"
+community: "Community 92"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_90
+  - community/Community_92
 ---
 
 # AgentShroud v0.8.0 "Watchtower" Release Plan
@@ -26,4 +26,4 @@ tags:
 - [[Steven Hay (Security Advisor)]] - `references` [EXTRACTED]
 - [[Trillian (host, x86_64)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_90
+#graphify/document #graphify/EXTRACTED #community/Community_92

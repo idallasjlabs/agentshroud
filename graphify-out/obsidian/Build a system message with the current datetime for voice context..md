@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "rationale"
-community: "Community 115"
-location: "L658"
+community: "Community 114"
+location: "L677"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_115
+  - community/Community_114
 ---
 
 # Build a system message with the current date/time for voice context.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_voice_system_message()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_115
+#graphify/rationale #graphify/EXTRACTED #community/Community_114

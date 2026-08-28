@@ -1,12 +1,12 @@
 ---
 source_file: "docs/claude-security-audit-prompt.md"
 type: "document"
-community: "Community 438"
+community: "Community 445"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_438
+  - community/Community_445
 ---
 
 # AgentShroud v0.8.0 — Full Security & Functionality Audit
@@ -22,4 +22,4 @@ tags:
 - [[Your Tasks]] - `contains` [EXTRACTED]
 - [[claude-security-audit-prompt]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_438
+#graphify/document #graphify/EXTRACTED #community/Community_445

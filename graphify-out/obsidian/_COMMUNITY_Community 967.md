@@ -1,24 +1,23 @@
 ---
 type: community
-members: 11
+cohesion: 0.39
+members: 8
 ---
 
 # Community 967
 
-**Members:** 11 nodes
+**Cohesion:** 0.39 - loosely connected
+**Members:** 8 nodes
 
 ## Members
-- [[.test_demotion_on_violations()]] - code - gateway/tests/test_trust_manager.py
-- [[.test_failure_decreases_score()_1]] - code - gateway/tests/test_trust_manager.py
-- [[.test_promotion_on_threshold()]] - code - gateway/tests/test_trust_manager.py
-- [[.test_score_floor_at_zero()]] - code - gateway/tests/test_trust_manager.py
-- [[.test_success_increases_score()_1]] - code - gateway/tests/test_trust_manager.py
-- [[.test_violation_severe_penalty()]] - code - gateway/tests/test_trust_manager.py
-- [[Agent should be demoted on violations.]] - rationale - gateway/tests/test_trust_manager.py
-- [[Agent should be promoted when score crosses threshold.]] - rationale - gateway/tests/test_trust_manager.py
-- [[Score should not go below 0.]] - rationale - gateway/tests/test_trust_manager.py
-- [[Test earning and losing trust.]] - rationale - gateway/tests/test_trust_manager.py
-- [[TestTrustProgression]] - code - gateway/tests/test_trust_manager.py
+- [[._patch_all()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_all_clean()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_all_not_run_is_not_configured()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_critical_dominates()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_high_means_warning()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[Any_71]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestAggregateResults_1]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[_stub_summary()]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,7 +27,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 35]]
+- 2 edges to [[_COMMUNITY_Community 288]]
 
 ## Top bridge nodes
-- [[TestTrustProgression]] - degree 11, connects to 1 community
+- [[TestAggregateResults_1]] - degree 6, connects to 1 community
+- [[_stub_summary()]] - degree 3, connects to 1 community

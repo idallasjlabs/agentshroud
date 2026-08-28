@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_greeter.py"
 type: "rationale"
-community: "Community 122"
+community: "Community 173"
 location: "L264"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_122
+  - community/Community_173
 ---
 
 # _load_state returns {} when state file is a JSON list (not a dict).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_load_state_non_dict_json_returns_empty()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_122
+#graphify/rationale #graphify/EXTRACTED #community/Community_173

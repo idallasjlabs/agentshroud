@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Community 4"
+community: "Adversarial Injection Guards"
 location: "L2891"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_4
+  - community/Adversarial_Injection_Guards
 ---
 
 # Per-request bot_id for activity tracking.          Returns the bot_id set by pro
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._active_bot_id()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_4
+#graphify/rationale #graphify/EXTRACTED #community/Adversarial_Injection_Guards

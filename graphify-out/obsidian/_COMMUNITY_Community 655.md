@@ -1,29 +1,29 @@
 ---
 type: community
-members: 16
+cohesion: 0.14
+members: 14
 ---
 
 # Community 655
 
-**Members:** 16 nodes
+**Cohesion:** 0.14 - loosely connected
+**Members:** 14 nodes
 
 ## Members
-- [[API Response]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
-- [[Architecture (high-level)]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
-- [[Concept]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
-- [[Concept_1]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
-- [[Console Management]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
-- [[Design]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
-- [[Estimated Effort]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
-- [[Feature Global Monitor-Only Mode (Observatory Mode)]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
-- [[Implementation Priority]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
-- [[Key Behaviors]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
-- [[Open Questions (for v0.8.0 planning)]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
-- [[Risk Assessment Heuristic]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
-- [[Use Cases_1]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
-- [[User Experience]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
-- [[v0.8.0 Feature Interactive Egress Firewall (Little Snitch for Agents)]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
-- [[v0.8.0-egress-firewall]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
+- [[auditLogging]] - code - skills/custom/browser-fetch/skill.json
+- [[author_4]] - code - skills/custom/browser-fetch/skill.json
+- [[dependencies]] - code - skills/custom/browser-fetch/skill.json
+- [[description_6]] - code - skills/custom/browser-fetch/skill.json
+- [[filesystemAccess]] - code - skills/custom/browser-fetch/skill.json
+- [[keywords_4]] - code - skills/custom/browser-fetch/skill.json
+- [[name_6]] - code - skills/custom/browser-fetch/skill.json
+- [[networkAccess]] - code - skills/custom/browser-fetch/skill.json
+- [[playwright]] - code - skills/custom/browser-fetch/skill.json
+- [[requiresApproval]] - code - skills/custom/browser-fetch/skill.json
+- [[security]] - code - skills/custom/browser-fetch/skill.json
+- [[skill.json]] - code - skills/custom/browser-fetch/skill.json
+- [[tools]] - code - skills/custom/browser-fetch/skill.json
+- [[version_8]] - code - skills/custom/browser-fetch/skill.json
 
 ## Live Query (requires Dataview plugin)
 

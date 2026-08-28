@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "Community 31"
+community: "Community 29"
 location: "L246"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_31
+  - community/Community_29
 ---
 
 # TestModeRequestModel
@@ -21,4 +21,4 @@ tags:
 - [[SecurityPipeline]] - `uses` [INFERRED]
 - [[test_observatory_mode.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_31
+#graphify/code #graphify/INFERRED #community/Community_29

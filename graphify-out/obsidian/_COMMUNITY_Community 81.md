@@ -1,135 +1,79 @@
 ---
 type: community
-members: 122
+cohesion: 0.06
+members: 64
 ---
 
 # Community 81
 
-**Members:** 122 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 64 nodes
 
 ## Members
-- [[.coerce_members()]] - code - gateway/security/group_config.py
-- [[.get_active_project_for_user()]] - code - gateway/security/group_config.py
-- [[.get_all_member_ids()]] - code - gateway/security/group_config.py
-- [[.get_group_admin_ids()]] - code - gateway/security/group_config.py
-- [[.get_group_safe_response_prefix()]] - code - gateway/security/group_config.py
-- [[.get_user_collab_mode()]] - code - gateway/security/group_config.py
-- [[.get_user_groups()]] - code - gateway/security/group_config.py
-- [[.get_user_projects()]] - code - gateway/security/group_config.py
-- [[.is_admin()]] - code - gateway/security/group_config.py
-- [[.is_group_admin()]] - code - gateway/security/group_config.py
-- [[.is_member()]] - code - gateway/security/group_config.py
-- [[.matches_topic()]] - code - gateway/security/group_config.py
-- [[.model_post_init()_1]] - code - gateway/security/group_config.py
-- [[.normalise_topics()]] - code - gateway/security/group_config.py
-- [[.test_addtogroup_success()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_already_member()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_apply_persisted_overrides_skips_user_overrides_key()]] - code - gateway/tests/test_group_config.py
-- [[.test_collab_outside_scope_not_empty()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_collab_unavailable_not_empty()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_contains_allowed_tools()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_contains_group_and_project()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_empty_prefix_string_not_returned()]] - code - gateway/tests/test_group_config.py
-- [[.test_empty_teams_parses()]] - code - gateway/tests/test_group_config.py
-- [[.test_get_all_member_ids()]] - code - gateway/tests/test_group_config.py
-- [[.test_get_user_collab_mode_falls_back_to_group()]] - code - gateway/tests/test_group_config.py
-- [[.test_get_user_groups_member()]] - code - gateway/tests/test_group_config.py
-- [[.test_get_user_groups_multi_group()]] - code - gateway/tests/test_group_config.py
-- [[.test_get_user_groups_non_member()]] - code - gateway/tests/test_group_config.py
-- [[.test_get_user_projects_member()]] - code - gateway/tests/test_group_config.py
-- [[.test_get_user_projects_non_member()]] - code - gateway/tests/test_group_config.py
-- [[.test_group_config_safe_response_prefix_field()]] - code - gateway/tests/test_group_config.py
-- [[.test_group_config_safe_response_prefix_set()]] - code - gateway/tests/test_group_config.py
-- [[.test_is_group_admin_correct()]] - code - gateway/tests/test_group_config.py
-- [[.test_is_group_admin_unknown_group()]] - code - gateway/tests/test_group_config.py
-- [[.test_is_group_admin_wrong_user()]] - code - gateway/tests/test_group_config.py
-- [[.test_local_only_mode()]] - code - gateway/tests/test_group_config.py
-- [[.test_member_sees_group()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_member_sees_project()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_no_duplicate_projects()]] - code - gateway/tests/test_group_config.py
-- [[.test_no_groups_for_unknown_user()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_no_groups_not_empty()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_no_permission()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_no_prefix_by_default()]] - code - gateway/tests/test_group_config.py
-- [[.test_no_projects_for_unknown_user()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_no_projects_not_empty()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_not_member()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_parses_groups()]] - code - gateway/tests/test_group_config.py
-- [[.test_parses_projects()]] - code - gateway/tests/test_group_config.py
-- [[.test_persist_user_collab_mode()]] - code - gateway/tests/test_group_config.py
-- [[.test_persist_user_collab_mode_update()]] - code - gateway/tests/test_group_config.py
-- [[.test_prefix_not_returned_for_non_member()]] - code - gateway/tests/test_group_config.py
-- [[.test_prefix_returned_for_member()]] - code - gateway/tests/test_group_config.py
-- [[.test_project_scoped_mode()]] - code - gateway/tests/test_group_config.py
-- [[.test_rmfromgroup_success()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_setmode_success_group()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_setmode_success_user()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_shows_admin()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_shows_projects()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_unknown_group()]] - code - gateway/tests/test_collaborator_responses.py
-- [[.test_unknown_user_returns_local_only()]] - code - gateway/tests/test_group_config.py
-- [[.test_unknown_user_returns_none()]] - code - gateway/tests/test_group_config.py
-- [[.test_user_override_takes_precedence_over_group()]] - code - gateway/tests/test_group_config.py
-- [[.validate_mode()]] - code - gateway/security/group_config.py
-- [[A project defines a scoped focus area for a team.]] - rationale - gateway/security/group_config.py
-- [[A team group with members, admin, projects, and collab mode.]] - rationale - gateway/security/group_config.py
-- [[Build the system-prompt injection for project_scoped mode.]] - rationale - gateway/proxy/collaborator_responses.py
-- [[Calling persist_user_collab_mode twice updates the stored value.]] - rationale - gateway/tests/test_group_config.py
-- [[Format a user's accessible projects for display.]] - rationale - gateway/proxy/collaborator_responses.py
-- [[Format a user's group memberships for display.]] - rationale - gateway/proxy/collaborator_responses.py
-- [[Format detailed info for a single group.]] - rationale - gateway/proxy/collaborator_responses.py
-- [[GroupConfig]] - code - gateway/security/group_config.py
-- [[Merge group_overrides.json additions into the in-memory TeamsConfig.]] - rationale - gateway/security/group_config.py
-- [[Per-user collab_mode override persists to group_overrides.json and takes     pr]] - rationale - gateway/tests/test_group_config.py
-- [[Per-user override beats group-derived collab_mode.]] - rationale - gateway/tests/test_group_config.py
-- [[ProjectConfig]] - code - gateway/security/group_config.py
-- [[Return True if any focus_topic appears in the text (case-insensitive).]] - rationale - gateway/security/group_config.py
-- [[Return all groups the user belongs to.]] - rationale - gateway/security/group_config.py
-- [[Return all projects accessible to the user via group membership.]] - rationale - gateway/security/group_config.py
-- [[Return deduplicated list of all user IDs across all groups.]] - rationale - gateway/security/group_config.py
-- [[Return mapping of group_id → admin_user_id for all groups that have an admin.]] - rationale - gateway/security/group_config.py
-- [[Return the effective collab_mode for a user.          Resolution order]] - rationale - gateway/security/group_config.py
-- [[Return the first project accessible to a user (primary project).]] - rationale - gateway/security/group_config.py
-- [[Return the safe_response_prefix for the first group that the user belongs to]] - rationale - gateway/security/group_config.py
-- [[TeamsConfig]] - code - gateway/security/group_config.py
-- [[TeamsConfig_1]] - code - gateway/tests/test_group_config.py
-- [[TestAdminChecks]] - code - gateway/tests/test_group_config.py
-- [[TestBuildProjectContextInjection]] - code - gateway/tests/test_collaborator_responses.py
-- [[TestCollabMode]] - code - gateway/tests/test_group_config.py
-- [[TestConstantMessages]] - code - gateway/tests/test_collaborator_responses.py
-- [[TestErrorFormatters]] - code - gateway/tests/test_collaborator_responses.py
-- [[TestFormatGroupInfo]] - code - gateway/tests/test_collaborator_responses.py
-- [[TestFormatGroupsList]] - code - gateway/tests/test_collaborator_responses.py
-- [[TestFormatProjectsList]] - code - gateway/tests/test_collaborator_responses.py
-- [[TestGroupSafeResponsePrefix]] - code - gateway/tests/test_group_config.py
-- [[TestMembershipQueries]] - code - gateway/tests/test_group_config.py
-- [[TestMutationFormatters]] - code - gateway/tests/test_collaborator_responses.py
-- [[TestProjectQueries]] - code - gateway/tests/test_group_config.py
-- [[TestTeamsConfigParsing]] - code - gateway/tests/test_group_config.py
-- [[TestUserCollabModeOverride]] - code - gateway/tests/test_group_config.py
-- [[Top-level teams configuration parsed from agentshroud.yaml `teams` section.]] - rationale - gateway/security/group_config.py
-- [[Without a per-user override, group-derived mode is returned.]] - rationale - gateway/tests/test_group_config.py
-- [[__user_overrides__ key must not be treated as a group_id.]] - rationale - gateway/tests/test_group_config.py
-- [[_apply_persisted_overrides()]] - code - gateway/security/group_config.py
-- [[build_project_context_injection()]] - code - gateway/proxy/collaborator_responses.py
-- [[collaborator_responses.py]] - code - gateway/proxy/collaborator_responses.py
-- [[format_addtogroup_success()]] - code - gateway/proxy/collaborator_responses.py
-- [[format_already_member()]] - code - gateway/proxy/collaborator_responses.py
-- [[format_group_info()]] - code - gateway/proxy/collaborator_responses.py
-- [[format_groups_list()]] - code - gateway/proxy/collaborator_responses.py
-- [[format_no_permission()]] - code - gateway/proxy/collaborator_responses.py
-- [[format_not_member()]] - code - gateway/proxy/collaborator_responses.py
-- [[format_projects_list()]] - code - gateway/proxy/collaborator_responses.py
-- [[format_rmfromgroup_success()]] - code - gateway/proxy/collaborator_responses.py
-- [[format_setmode_success()]] - code - gateway/proxy/collaborator_responses.py
-- [[format_unknown_group()]] - code - gateway/proxy/collaborator_responses.py
-- [[persist_user_collab_mode writes under __user_overrides__ key.]] - rationale - gateway/tests/test_group_config.py
-- [[project()]] - code - gateway/tests/test_collaborator_responses.py
-- [[slack_proxy.py]] - code - gateway/proxy/slack_proxy.py
-- [[teams()]] - code - gateway/tests/test_collaborator_responses.py
-- [[teams()_1]] - code - gateway/tests/test_group_config.py
-- [[test_collaborator_responses.py]] - code - gateway/tests/test_collaborator_responses.py
-- [[test_group_config.py]] - code - gateway/tests/test_group_config.py
+- [[.__init__()_18]] - code - gateway/proxy/a2a_proxy.py
+- [[.__init__()_50]] - code - gateway/security/a2a_policy.py
+- [[.__init__()_134]] - code - gateway/tests/test_a2a_integration.py
+- [[._handle()_1]] - code - gateway/tests/test_a2a_integration.py
+- [[.close()_7]] - code - gateway/proxy/a2a_proxy.py
+- [[.forward()_3]] - code - gateway/tests/test_a2a_trust_scoring.py
+- [[.from_dict()_2]] - code - gateway/security/a2a_policy.py
+- [[.test_bare_config_denies_every_peer()]] - code - gateway/tests/test_a2a_policy_default_failclosed.py
+- [[.test_configured_allowlist_still_works_alongside_fail_closed_default()]] - code - gateway/tests/test_a2a_policy_default_failclosed.py
+- [[.test_engine_constructed_with_no_config_at_all_is_fail_closed()]] - code - gateway/tests/test_a2a_policy_default_failclosed.py
+- [[.test_from_dict_empty_dict_is_fail_closed()]] - code - gateway/tests/test_a2a_policy_default_failclosed.py
+- [[.test_from_dict_none_is_fail_closed()]] - code - gateway/tests/test_a2a_policy_default_failclosed.py
+- [[.test_invalid_default_action_string_falls_back_to_deny()]] - code - gateway/tests/test_a2a_policy_default_failclosed.py
+- [[.test_owner_bypass_is_always_false_regardless_of_input()]] - code - gateway/tests/test_a2a_policy_default_failclosed.py
+- [[A plain default-deny (unknownunlisted peer) is a routing decision, not     evid]] - rationale - gateway/tests/test_a2a_trust_scoring.py
+- [[A typo'd default_action (e.g. 'allow-all') must not silently open         the ga]] - rationale - gateway/tests/test_a2a_policy_default_failclosed.py
+- [[A2APeerTestDouble]] - code - gateway/tests/test_a2a_integration.py
+- [[A2APolicyAction]] - code - gateway/security/a2a_policy.py
+- [[A2APolicyConfig]] - code - gateway/security/a2a_policy.py
+- [[A2APolicyConfig() with no arguments — the shape a fresh deploy gets         if n]] - rationale - gateway/tests/test_a2a_policy_default_failclosed.py
+- [[A2APolicyEngine_1]] - code - gateway/security/a2a_policy.py
+- [[Any_29]] - code - gateway/security/a2a_policy.py
+- [[Decides allow  deny  require-approval for inbound A2A requests.      Usage]] - rationale - gateway/security/a2a_policy.py
+- [[Declarative A2A security policy.      Loaded from the ``a2a_policy`` section of]] - rationale - gateway/security/a2a_policy.py
+- [[Fail-closed-by-default must not mean impossible to allow anything         — an]] - rationale - gateway/tests/test_a2a_policy_default_failclosed.py
+- [[HermesA2AForwarder]] - code - gateway/proxy/a2a_proxy.py
+- [[Minimal JSON-RPC 2.0 responder standing in for a real A2A peer.      Explicitly]] - rationale - gateway/tests/test_a2a_integration.py
+- [[Negative control for the SSRF suite above — a genuinely public     callback URL]] - rationale - gateway/tests/test_a2a_integration.py
+- [[Parse a policy config from a plain dict (e.g. loaded from YAML).]] - rationale - gateway/security/a2a_policy.py
+- [[Real HTTP forwarder to Hermes's internal A2A JSON-RPC listener.      Matches the]] - rationale - gateway/proxy/a2a_proxy.py
+- [[Request_8]] - code - gateway/tests/test_a2a_integration.py
+- [[Response_1]] - code - gateway/tests/test_a2a_integration.py
+- [[TestDefaultA2APolicyIsFailClosed]] - code - gateway/tests/test_a2a_policy_default_failclosed.py
+- [[The three terminal policy outcomes for an MCP tool call.]] - rationale - gateway/security/mcp_policy.py
+- [[TrustManager_2]] - code - gateway/tests/test_a2a_trust_scoring.py
+- [[Unambiguous malicious intent — immediate demotion, not a slow decay.]] - rationale - gateway/tests/test_a2a_trust_scoring.py
+- [[Unlike MCP, owner_bypass is not operator-configurable for A2A at         all — a]] - rationale - gateway/tests/test_a2a_policy_default_failclosed.py
+- [[Upstream A2A Gap 78298 — SSRF Push-Notification Callback URL Bypass]] - concept - gateway/tests/test_a2a_integration.py
+- [[Upstream A2A Gap 83701 — TaskContextId Collision Hijack]] - concept - gateway/tests/test_a2a_integration.py
+- [[_StubForwarder_1]] - code - gateway/tests/test_a2a_trust_scoring.py
+- [[_jsonrpc()]] - code - gateway/tests/test_a2a_integration.py
+- [[_jsonrpc()_2]] - code - gateway/tests/test_a2a_trust_scoring.py
+- [[`A2APolicyEngine()` with no config argument — the laziest possible         call]] - rationale - gateway/tests/test_a2a_policy_default_failclosed.py
+- [[alice legitimately creates a task; bob (a distinct, also-allowlisted     peer) a]] - rationale - gateway/tests/test_a2a_integration.py
+- [[load_config-style callers pass whatever the YAML section resolved         to, wh]] - rationale - gateway/tests/test_a2a_policy_default_failclosed.py
+- [[test_a2a_integration.py]] - code - gateway/tests/test_a2a_integration.py
+- [[test_a2a_policy_default_failclosed.py]] - code - gateway/tests/test_a2a_policy_default_failclosed.py
+- [[test_a2a_ssrf_callback_is_a_severe_violation_by_default()]] - code - gateway/tests/test_a2a_trust_scoring.py
+- [[test_a2a_ssrf_callback_penalty_matches_malicious_intent_tier()]] - code - gateway/tests/test_a2a_trust_scoring.py
+- [[test_a2a_task_ownership_violation_has_a_configured_penalty_heavier_than_generic_policy()]] - code - gateway/tests/test_a2a_trust_scoring.py
+- [[test_a2a_trust_scoring.py]] - code - gateway/tests/test_a2a_trust_scoring.py
+- [[test_a2a_violation_types_exist()]] - code - gateway/tests/test_a2a_trust_scoring.py
+- [[test_adversarial_ssrf_callback_bypass_attempts_over_real_http()]] - code - gateway/tests/test_a2a_integration.py
+- [[test_adversarial_task_ownership_hijack_attempt_over_real_http()]] - code - gateway/tests/test_a2a_integration.py
+- [[test_double_peer()]] - code - gateway/tests/test_a2a_integration.py
+- [[test_full_round_trip_allowed_request_reaches_the_peer()]] - code - gateway/tests/test_a2a_integration.py
+- [[test_full_round_trip_denied_request_never_reaches_the_peer()]] - code - gateway/tests/test_a2a_integration.py
+- [[test_generic_denial_does_not_record_a2a_specific_violation_types()]] - code - gateway/tests/test_a2a_trust_scoring.py
+- [[test_legitimate_callback_url_is_forwarded_over_real_http()]] - code - gateway/tests/test_a2a_integration.py
+- [[test_proxy_without_trust_manager_does_not_raise()]] - code - gateway/tests/test_a2a_trust_scoring.py
+- [[test_ssrf_callback_rejection_triggers_severe_demotion()]] - code - gateway/tests/test_a2a_trust_scoring.py
+- [[test_task_ownership_violation_records_a2a_violation_type()]] - code - gateway/tests/test_a2a_trust_scoring.py
+- [[trust_manager is an optional dependency — a proxy built without one     (e.g. be]] - rationale - gateway/tests/test_a2a_trust_scoring.py
+- [[trust_manager()_1]] - code - gateway/tests/test_a2a_trust_scoring.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -139,27 +83,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 21 edges to [[_COMMUNITY_Community 61]]
-- 19 edges to [[_COMMUNITY_Community 75]]
-- 16 edges to [[_COMMUNITY_Community 134]]
-- 11 edges to [[_COMMUNITY_Community 4]]
-- 9 edges to [[_COMMUNITY_Community 26]]
-- 7 edges to [[_COMMUNITY_Community 11]]
-- 4 edges to [[_COMMUNITY_Community 15]]
-- 3 edges to [[_COMMUNITY_Community 18]]
+- 32 edges to [[_COMMUNITY_Community 205]]
+- 24 edges to [[_COMMUNITY_Community 71]]
+- 23 edges to [[_COMMUNITY_Progressive Trust]]
+- 11 edges to [[_COMMUNITY_Community 110]]
+- 7 edges to [[_COMMUNITY_Community 281]]
 - 2 edges to [[_COMMUNITY_Community 19]]
-- 2 edges to [[_COMMUNITY_Community 1844]]
-- 1 edge to [[_COMMUNITY_Community 1325]]
-- 1 edge to [[_COMMUNITY_Community 34]]
-- 1 edge to [[_COMMUNITY_Community 9]]
-- 1 edge to [[_COMMUNITY_Community 25]]
-- 1 edge to [[_COMMUNITY_Community 28]]
-- 1 edge to [[_COMMUNITY_Community 471]]
-- 1 edge to [[_COMMUNITY_Community 778]]
+- 1 edge to [[_COMMUNITY_Community 553]]
+- 1 edge to [[_COMMUNITY_Community 97]]
+- 1 edge to [[_COMMUNITY_Community 33]]
 
 ## Top bridge nodes
-- [[TeamsConfig]] - degree 99, connects to 13 communities
-- [[GroupConfig]] - degree 32, connects to 3 communities
-- [[slack_proxy.py]] - degree 4, connects to 3 communities
-- [[ProjectConfig]] - degree 18, connects to 2 communities
-- [[format_groups_list()]] - degree 8, connects to 2 communities
+- [[A2APolicyEngine_1]] - degree 58, connects to 5 communities
+- [[A2APolicyConfig]] - degree 27, connects to 4 communities
+- [[A2APolicyAction]] - degree 13, connects to 3 communities
+- [[test_a2a_trust_scoring.py]] - degree 19, connects to 2 communities
+- [[HermesA2AForwarder]] - degree 18, connects to 2 communities

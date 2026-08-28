@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/security-inventory.md"
 type: "document"
-community: "Community 923"
+community: "Community 770"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_923
+  - community/Community_770
 ---
 
 # AgentShroud Security Inventory v0.8.0 (58 Modules)
@@ -18,4 +18,4 @@ tags:
 - [[TrustManager Progressive Trust Scoring (5 Levels)]] - `references` [EXTRACTED]
 - [[Workstream E Blue and Red Team Security Scan (Both Bots)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_923
+#graphify/document #graphify/EXTRACTED #community/Community_770

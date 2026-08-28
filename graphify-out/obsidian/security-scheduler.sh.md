@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/security-scheduler.sh"
 type: "code"
-community: "Community 505"
+community: "Community 427"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_505
+  - community/Community_427
 ---
 
 # security-scheduler.sh
@@ -22,4 +22,4 @@ tags:
 - [[security-scan.sh (unified scan dispatcher)]] - `calls` [EXTRACTED]
 - [[security-scheduler.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_505
+#graphify/code #graphify/EXTRACTED #community/Community_427

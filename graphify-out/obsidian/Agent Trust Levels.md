@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/access-control-matrix.md"
 type: "document"
-community: "Community 175"
+community: "Community 180"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_175
+  - community/Community_180
 ---
 
 # Agent Trust Levels
@@ -17,6 +17,5 @@ tags:
 - [[Trust Level 1 (agent_l1)]] - `contains` [EXTRACTED]
 - [[Trust Level 2 (agent_l2)]] - `contains` [EXTRACTED]
 - [[Trust Level 3 (agent_l3)]] - `contains` [EXTRACTED]
-- [[Trust Level 4 (agent_l4)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_175
+#graphify/document #graphify/EXTRACTED #community/Community_180

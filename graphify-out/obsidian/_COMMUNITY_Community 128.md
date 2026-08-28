@@ -1,60 +1,60 @@
 ---
 type: community
-members: 47
+cohesion: 0.05
+members: 45
 ---
 
 # Community 128
 
-**Members:** 47 nodes
+**Cohesion:** 0.05 - loosely connected
+**Members:** 45 nodes
 
 ## Members
-- [[--verify flag causes switch_model.sh to check both bots are healthy.]] - rationale - gateway/tests/test_switch_model_idempotent.py
-- [[._run_and_read()]] - code - gateway/tests/test_switch_model_idempotent.py
-- [[._run_and_read()_1]] - code - gateway/tests/test_switch_model_idempotent.py
-- [[._run_twice()]] - code - gateway/tests/test_switch_model_idempotent.py
-- [[.test_anthropic_sets_cloud_mode()]] - code - gateway/tests/test_switch_model_idempotent.py
-- [[.test_cloud_anthropic_idempotent()]] - code - gateway/tests/test_switch_model_idempotent.py
-- [[.test_cloud_switch_writes_hermes_main_model()]] - code - gateway/tests/test_switch_model_idempotent.py
-- [[.test_local_anchor_idempotent()]] - code - gateway/tests/test_switch_model_idempotent.py
-- [[.test_local_coder_idempotent()]] - code - gateway/tests/test_switch_model_idempotent.py
-- [[.test_local_coder_sets_local_multi_mode()]] - code - gateway/tests/test_switch_model_idempotent.py
-- [[.test_local_coder_switch_both_bots()]] - code - gateway/tests/test_switch_model_idempotent.py
-- [[.test_local_default_idempotent()]] - code - gateway/tests/test_switch_model_idempotent.py
-- [[.test_local_model_mode_is_local()]] - code - gateway/tests/test_switch_model_idempotent.py
-- [[.test_local_multi_writes_anchor_coding_reasoning()]] - code - gateway/tests/test_switch_model_idempotent.py
-- [[.test_local_sets_required_keys()]] - code - gateway/tests/test_switch_model_idempotent.py
-- [[.test_local_switch_hermes_and_openclaw_models_match()]] - code - gateway/tests/test_switch_model_idempotent.py
-- [[.test_local_switch_writes_hermes_main_model()]] - code - gateway/tests/test_switch_model_idempotent.py
-- [[.test_local_with_explicit_model_idempotent()]] - code - gateway/tests/test_switch_model_idempotent.py
-- [[.test_local_with_model_ref_sets_correct_model()]] - code - gateway/tests/test_switch_model_idempotent.py
-- [[.test_verify_flag_accepted_without_error()]] - code - gateway/tests/test_switch_model_idempotent.py
-- [[.test_verify_flag_with_model_ref()]] - code - gateway/tests/test_switch_model_idempotent.py
-- [[After cloud switch, HERMES_MAIN_MODEL is written for Hermes too.]] - rationale - gateway/tests/test_switch_model_idempotent.py
-- [[After local switch, HERMES_MAIN_MODEL is written to .env.]] - rationale - gateway/tests/test_switch_model_idempotent.py
-- [[CompletedProcess_4]] - code - gateway/tests/test_switch_model_idempotent.py
-- [[Expected keys are present in docker.env after a switch.]] - rationale - gateway/tests/test_switch_model_idempotent.py
-- [[HERMES_MAIN_MODEL and OPENCLAW_MAIN_MODEL must reference the same model.]] - rationale - gateway/tests/test_switch_model_idempotent.py
-- [[Parse a docker.env file into a dict.]] - rationale - gateway/tests/test_switch_model_idempotent.py
-- [[Path_40]] - code - gateway/tests/test_switch_model_idempotent.py
-- [[Returns (env_after_first_run, env_after_second_run).]] - rationale - gateway/tests/test_switch_model_idempotent.py
-- [[Run switch_model.sh with mocked external commands.]] - rationale - gateway/tests/test_switch_model_idempotent.py
-- [[TestSwitchModelBothBots]] - code - gateway/tests/test_switch_model_idempotent.py
-- [[TestSwitchModelEnvKeys]] - code - gateway/tests/test_switch_model_idempotent.py
-- [[TestSwitchModelIdempotent]] - code - gateway/tests/test_switch_model_idempotent.py
-- [[TestSwitchModelVerifyFlag]] - code - gateway/tests/test_switch_model_idempotent.py
-- [[_read_env()]] - code - gateway/tests/test_switch_model_idempotent.py
-- [[_run_switch()]] - code - gateway/tests/test_switch_model_idempotent.py
-- [[anthropic target second run leaves env identical.]] - rationale - gateway/tests/test_switch_model_idempotent.py
-- [[local qwen314b second run leaves env identical.]] - rationale - gateway/tests/test_switch_model_idempotent.py
-- [[local target second run leaves env identical.]] - rationale - gateway/tests/test_switch_model_idempotent.py
-- [[local-anchor target second run leaves env identical.]] - rationale - gateway/tests/test_switch_model_idempotent.py
-- [[local-coder switch writes matching HERMES_MAIN_MODEL.]] - rationale - gateway/tests/test_switch_model_idempotent.py
-- [[local-coder target second run leaves env identical.]] - rationale - gateway/tests/test_switch_model_idempotent.py
-- [[switch_model.sh local --verify exits 0 (mocked health checks).]] - rationale - gateway/tests/test_switch_model_idempotent.py
-- [[switch_model.sh local m twice must leave docker.env unchanged on second run.]] - rationale - gateway/tests/test_switch_model_idempotent.py
-- [[switch_model.sh local qwen314b --verify exits 0.]] - rationale - gateway/tests/test_switch_model_idempotent.py
-- [[switch_model.sh must write model config for both OpenClaw and Hermes.]] - rationale - gateway/tests/test_switch_model_idempotent.py
-- [[test_switch_model_idempotent.py]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[1. Starting and Stopping AgentShroud]] - document - docs/operations/runbook.md
+- [[2. Health Monitoring]] - document - docs/operations/runbook.md
+- [[5. API Key Rotation]] - document - docs/operations/runbook.md
+- [[6. System Updates]] - document - docs/operations/runbook.md
+- [[Admin API Token]] - document - docs/operations/runbook.md
+- [[AgentShroud Deployment Procedure]] - document - docs/operations/deployment-procedure.md
+- [[AgentShroud Incident Response Plan]] - document - docs/operations/incident-response.md
+- [[AgentShroud Operations Runbook]] - document - docs/operations/runbook.md
+- [[AgentShroud Updates]] - document - docs/operations/runbook.md
+- [[Configuration Updates]] - document - docs/operations/runbook.md
+- [[Dashboard Access]] - document - docs/operations/runbook.md
+- [[Escalation Chain]] - document - docs/operations/incident-response.md
+- [[Evidence Preservation]] - document - docs/operations/incident-response.md
+- [[Functional Testing]] - document - docs/operations/deployment-procedure.md
+- [[Grafana Dashboard Configuration]] - document - docs/operations/deployment-procedure.md
+- [[Incident Classification System]] - document - docs/operations/incident-response.md
+- [[Incident Response Team Structure]] - document - docs/operations/incident-response.md
+- [[Kill Switch (FREEZESHUTDOWNDISCONNECT)]] - concept - docs/papers/agentshroud-whitepaper.md
+- [[Lessons Learned Integration]] - document - docs/operations/incident-response.md
+- [[Monitoring Setup]] - document - docs/operations/deployment-procedure.md
+- [[OpenClaw API Key]] - document - docs/operations/runbook.md
+- [[P3 Medium Priority Incidents]] - document - docs/operations/incident-response.md
+- [[PII Sanitizer (Presidio + regex hybrid)]] - concept - docs/papers/agentshroud-whitepaper.md
+- [[Performance Tuning]] - document - docs/operations/deployment-procedure.md
+- [[Post-Deployment Validation]] - document - docs/operations/deployment-procedure.md
+- [[Post-Incident Activities]] - document - docs/operations/incident-response.md
+- [[Post-Incident Review Template]] - document - docs/operations/incident-response.md
+- [[Primary Roles]] - document - docs/operations/incident-response.md
+- [[Priority Levels]] - document - docs/operations/incident-response.md
+- [[Production Hardening]] - document - docs/operations/deployment-procedure.md
+- [[Prometheus Configuration]] - document - docs/operations/deployment-procedure.md
+- [[Restart Procedure]] - document - docs/operations/runbook.md
+- [[SSL Certificates]] - document - docs/operations/runbook.md
+- [[Security Hardening]] - document - docs/operations/deployment-procedure.md
+- [[Security Validation_1]] - document - docs/operations/deployment-procedure.md
+- [[Severity Assessment Matrix]] - document - docs/operations/incident-response.md
+- [[Starting the System]] - document - docs/operations/runbook.md
+- [[Stopping the System]] - document - docs/operations/runbook.md
+- [[System Architecture Overview]] - document - docs/operations/runbook.md
+- [[System Health Checks]] - document - docs/operations/runbook.md
+- [[Trust Level Anomaly]] - document - docs/operations/incident-response.md
+- [[Trust Manager  Progressive Trust System]] - concept - docs/papers/agentshroud-whitepaper.md
+- [[Unauthorized SSH Access Attempt]] - document - docs/operations/incident-response.md
+- [[deployment-procedure]] - document - docs/operations/deployment-procedure.md
+- [[runbook]] - document - docs/operations/runbook.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -62,3 +62,27 @@ members: 47
 TABLE source_file, type FROM #community/Community_128
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 9 edges to [[_COMMUNITY_Community 185]]
+- 1 edge to [[_COMMUNITY_Community 1409]]
+- 1 edge to [[_COMMUNITY_Community 1410]]
+- 1 edge to [[_COMMUNITY_Community 1259]]
+- 1 edge to [[_COMMUNITY_Community 567]]
+- 1 edge to [[_COMMUNITY_Community 1260]]
+- 1 edge to [[_COMMUNITY_Community 516]]
+- 1 edge to [[_COMMUNITY_Community 1411]]
+- 1 edge to [[_COMMUNITY_Community 1317]]
+- 1 edge to [[_COMMUNITY_Community 970]]
+- 1 edge to [[_COMMUNITY_Community 378]]
+- 1 edge to [[_COMMUNITY_Community 1412]]
+- 1 edge to [[_COMMUNITY_Community 1318]]
+- 1 edge to [[_COMMUNITY_Community 1413]]
+- 1 edge to [[_COMMUNITY_Community 1107]]
+
+## Top bridge nodes
+- [[AgentShroud Incident Response Plan]] - degree 14, connects to 5 communities
+- [[AgentShroud Deployment Procedure]] - degree 13, connects to 5 communities
+- [[AgentShroud Operations Runbook]] - degree 14, connects to 4 communities
+- [[PII Sanitizer (Presidio + regex hybrid)]] - degree 7, connects to 1 community
+- [[Trust Manager  Progressive Trust System]] - degree 5, connects to 1 community

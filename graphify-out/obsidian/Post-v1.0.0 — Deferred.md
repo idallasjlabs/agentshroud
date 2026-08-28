@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/MASTER-FEATURE-LIST.md"
 type: "document"
-community: "Community 767"
+community: "Community 423"
 location: "L294"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_767
+  - community/Community_423
 ---
 
 # Post-v1.0.0 — Deferred
@@ -25,4 +25,4 @@ tags:
 - [[Secure Voice (moved from v0.9.0 → post-v1.0.0 on 2026-03-04)]] - `contains` [EXTRACTED]
 - [[iOSmacOS Shortcuts]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_767
+#graphify/document #graphify/EXTRACTED #community/Community_423

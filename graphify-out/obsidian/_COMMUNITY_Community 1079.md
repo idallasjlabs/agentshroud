@@ -1,19 +1,21 @@
 ---
 type: community
+cohesion: 0.33
 members: 6
 ---
 
 # Community 1079
 
+**Cohesion:** 0.33 - loosely connected
 **Members:** 6 nodes
 
 ## Members
-- [[AWS Token expired (SSO)]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
-- [[AWS Unable to locate credentials]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
-- [[Atlassian OAuth flow failed]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
-- [[GitHub Bad credentials]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
-- [[GitHub Docker image not found]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
-- [[Troubleshooting_2]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[2) ⚠️ NO SECURITY THEATER (NON-NEGOTIABLE)]] - document - CLAUDE.md
+- [[RULE A — NO STUBS. NO PLACEHOLDERS. NO FAKE GREEN.]] - document - CLAUDE.md
+- [[RULE B — VERIFY BEFORE CLAIMING. CITE FILES AND LINES.]] - document - CLAUDE.md
+- [[RULE C — INTEGRATION PROOF FORMAT]] - document - CLAUDE.md
+- [[RULE D — TEST TABLE FORMAT FOR STATUS REPORTS]] - document - CLAUDE.md
+- [[RULE E — DEFINITION OF DONE]] - document - CLAUDE.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 797]]
+- 1 edge to [[_COMMUNITY_Community 344]]
 
 ## Top bridge nodes
-- [[Troubleshooting_2]] - degree 6, connects to 1 community
+- [[2) ⚠️ NO SECURITY THEATER (NON-NEGOTIABLE)]] - degree 6, connects to 1 community

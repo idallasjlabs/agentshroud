@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "Community 418"
+community: "Community 424"
 location: "L617"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_418
+  - community/Community_424
 ---
 
 # fake_httpx_client()
@@ -15,4 +15,4 @@ tags:
 - [[_FakeUpstreamResponse]] - `calls` [EXTRACTED]
 - [[test_dns_canvas_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_418
+#graphify/code #graphify/EXTRACTED #community/Community_424

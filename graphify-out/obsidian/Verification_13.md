@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md"
+source_file: "docs/setup/TAILSCALE_SETUP.md"
 type: "document"
-community: "Community 455"
-location: "L195"
+community: "Community 377"
+location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_455
+  - community/Community_377
 ---
 
 # Verification
 
 ## Connections
-- [[P4 Wire MCP Proxy]] - `contains` [EXTRACTED]
+- [[Tailscale Access to OpenClaw Control UI]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_455
+#graphify/document #graphify/EXTRACTED #community/Community_377

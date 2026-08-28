@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Community 9"
+community: "Ingest API & Approval Routes"
 location: "L2176"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_9
+  - community/Ingest_API__Approval_Routes
 ---
 
 # list_blocked_outbound_quarantine()
@@ -14,7 +14,6 @@ tags:
 ## Connections
 - [[AuthRequired]] - `references` [EXTRACTED]
 - [[List quarantined blocked inbound messages for admin review.]] - `rationale_for` [EXTRACTED]
-- [[List quarantined blocked outbound messages for admin review.]] - `rationale_for` [EXTRACTED]
 - [[main.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_9
+#graphify/code #graphify/EXTRACTED #community/Ingest_API__Approval_Routes

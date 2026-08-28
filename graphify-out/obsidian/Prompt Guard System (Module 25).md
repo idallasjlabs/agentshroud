@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/security-architecture.md"
 type: "concept"
-community: "Community 154"
+community: "Community 153"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_154
+  - community/Community_153
 ---
 
 # Prompt Guard System (Module #25)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Security Architecture]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_154
+#graphify/concept #graphify/EXTRACTED #community/Community_153

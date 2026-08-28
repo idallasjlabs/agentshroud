@@ -1,17 +1,17 @@
 ---
-source_file: "CHANGELOG.md"
+source_file: "docs/architecture/WORKSPACE_USAGE.md"
 type: "document"
-community: "Community 1296"
-location: "L48"
+community: "Community 163"
+location: "L366"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1296
+  - community/Community_163
 ---
 
 # Summary
 
 ## Connections
-- [[1.5.2 (2026-08-23)]] - `contains` [EXTRACTED]
+- [[OpenClaw Workspace Usage Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1296
+#graphify/document #graphify/EXTRACTED #community/Community_163

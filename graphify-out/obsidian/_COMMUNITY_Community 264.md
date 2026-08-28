@@ -1,43 +1,45 @@
 ---
 type: community
+cohesion: 0.07
 members: 30
 ---
 
 # Community 264
 
+**Cohesion:** 0.07 - loosely connected
 **Members:** 30 nodes
 
 ## Members
-- [[.__init__()_201]] - code - src/interfaces/text_control_center.py
-- [[.clear_screen()]] - code - src/interfaces/text_control_center.py
-- [[.draw_approvals()]] - code - src/interfaces/text_control_center.py
-- [[.draw_box()]] - code - src/interfaces/text_control_center.py
-- [[.draw_dashboard()]] - code - src/interfaces/text_control_center.py
-- [[.draw_kill_switch()]] - code - src/interfaces/text_control_center.py
-- [[.draw_log()]] - code - src/interfaces/text_control_center.py
-- [[.draw_modules()]] - code - src/interfaces/text_control_center.py
-- [[.draw_ssh_hosts()]] - code - src/interfaces/text_control_center.py
-- [[.get_auth()]] - code - src/interfaces/text_control_center.py
-- [[.get_key()_1]] - code - src/interfaces/text_control_center.py
-- [[.make_api_request()]] - code - src/interfaces/text_control_center.py
-- [[.run()_6]] - code - src/interfaces/text_control_center.py
-- [[ANSI]] - code - src/interfaces/text_control_center.py
-- [[Clear screen and position cursor at home]] - rationale - src/interfaces/text_control_center.py
-- [[ControlCenter]] - code - src/interfaces/text_control_center.py
-- [[Draw SSH hosts status screen]] - rationale - src/interfaces/text_control_center.py
-- [[Draw a box with title]] - rationale - src/interfaces/text_control_center.py
-- [[Draw approval queue screen]] - rationale - src/interfaces/text_control_center.py
-- [[Draw audit log screen]] - rationale - src/interfaces/text_control_center.py
-- [[Draw kill switch screen]] - rationale - src/interfaces/text_control_center.py
-- [[Draw main dashboard screen]] - rationale - src/interfaces/text_control_center.py
-- [[Draw modules list screen]] - rationale - src/interfaces/text_control_center.py
-- [[Get a single keypress (non-blocking)]] - rationale - src/interfaces/text_control_center.py
-- [[Get gateway authentication]] - rationale - src/interfaces/text_control_center.py
-- [[Main control center loop]] - rationale - src/interfaces/text_control_center.py
-- [[Make authenticated API request to gateway]] - rationale - src/interfaces/text_control_center.py
-- [[main()_33]] - code - src/interfaces/text_control_center.py
-- [[start-control-center]] - code - scripts/start-control-center
-- [[text_control_center.py]] - code - src/interfaces/text_control_center.py
+- [[Auto-Detection]] - document - docs/setup/setup-guide.md
+- [[Dashboard Access_1]] - document - docs/setup/setup-guide.md
+- [[Default Configuration]] - document - docs/setup/setup-guide.md
+- [[Development (local testing)]] - document - docs/setup/setup-guide.md
+- [[Environment Variables_1]] - document - docs/setup/setup-guide.md
+- [[Health Check]] - document - docs/setup/setup-guide.md
+- [[Mac Studio Example]] - document - docs/setup/setup-guide.md
+- [[Multi-Instance Setup]] - document - docs/setup/setup-guide.md
+- [[Option A Docker (Most Common)]] - document - docs/setup/setup-guide.md
+- [[Option A macOS Keychain (Default — no software required)]] - document - docs/setup/setup-guide.md
+- [[Option B Linux (secret-tool  GNOME Keyring — Default on Linux)]] - document - docs/setup/setup-guide.md
+- [[Option B Podman (Red HatEnterprise)]] - document - docs/setup/setup-guide.md
+- [[Option C 1Password Service Account (Optional — Teams  Shared Credentials)]] - document - docs/setup/setup-guide.md
+- [[Option C Apple Containers (macOS 26+)]] - document - docs/setup/setup-guide.md
+- [[Option D Docker Secrets (Swarm Mode)]] - document - docs/setup/setup-guide.md
+- [[Option E Environment Variables (Development Only)]] - document - docs/setup/setup-guide.md
+- [[Port Auto-Detection]] - document - docs/setup/setup-guide.md
+- [[Production (background daemon)]] - document - docs/setup/setup-guide.md
+- [[Production with Restart Policy]] - document - docs/setup/setup-guide.md
+- [[Proxy Mode (Default)]] - document - docs/setup/setup-guide.md
+- [[Sidecar Mode]] - document - docs/setup/setup-guide.md
+- [[Step 1 Clone the Repository]] - document - docs/setup/setup-guide.md
+- [[Step 2 Choose Your Container Runtime]] - document - docs/setup/setup-guide.md
+- [[Step 3 Configure Secrets Management]] - document - docs/setup/setup-guide.md
+- [[Step 4 Choose Security Mode]] - document - docs/setup/setup-guide.md
+- [[Step 5 Configure Ports]] - document - docs/setup/setup-guide.md
+- [[Step 6 Deploy AgentShroud]] - document - docs/setup/setup-guide.md
+- [[Step 7 Verify Installation]] - document - docs/setup/setup-guide.md
+- [[Step-by-Step Installation]] - document - docs/setup/setup-guide.md
+- [[Test a Message]] - document - docs/setup/setup-guide.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -45,3 +47,10 @@ members: 30
 TABLE source_file, type FROM #community/Community_264
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_Community 334]]
+
+## Top bridge nodes
+- [[Step-by-Step Installation]] - degree 8, connects to 1 community
+- [[Multi-Instance Setup]] - degree 5, connects to 1 community

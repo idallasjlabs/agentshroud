@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-sec-defense/README.md"
 type: "document"
-community: "Community 1167"
+community: "Community 1162"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1167
+  - community/Community_1162
 ---
 
 # Blue Team Security Auditor (SEC-DEFENSE)
@@ -17,4 +17,4 @@ tags:
 - [[Related Skills_32]] - `contains` [EXTRACTED]
 - [[Usage_32]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1167
+#graphify/document #graphify/EXTRACTED #community/Community_1162

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/output_canary.py"
 type: "rationale"
-community: "Community 877"
+community: "Community 131"
 location: "L234"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_877
+  - community/Community_131
 ---
 
 # Scan response text for a specific canary.          Args:             session_id:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._scan_for_canary()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_877
+#graphify/rationale #graphify/EXTRACTED #community/Community_131

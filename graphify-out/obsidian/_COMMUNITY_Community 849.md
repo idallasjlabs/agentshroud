@@ -1,21 +1,25 @@
 ---
 type: community
-members: 8
+cohesion: 0.31
+members: 10
 ---
 
 # Community 849
 
-**Members:** 8 nodes
+**Cohesion:** 0.31 - loosely connected
+**Members:** 10 nodes
 
 ## Members
-- [[CREDENTIAL-SECURITY-POLICY]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Implementation Strategy_1]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Option 1 Gateway-Level Filtering]] - rationale - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Option 1 Gateway-Level Filtering (Recommended)]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Option 2 Approval Queue for All Credential Operations]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Option 2 Approval Queue for Credential Ops]] - rationale - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Option 3 Disable Credential Commands via Telegram]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Option 4 Role-Based Access Control]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
+- [[.test_auto_detect_priority()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_explicit_apple()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_explicit_docker()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_explicit_podman()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_invalid_runtime()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_no_runtime_available()]] - code - gateway/tests/test_runtime_engines.py
+- [[ContainerEngine]] - code - gateway/runtime/__init__.py
+- [[Return an appropriate container engine instance.      Args         preference]] - rationale - gateway/runtime/__init__.py
+- [[TestGetEngine]] - code - gateway/tests/test_runtime_engines.py
+- [[get_engine()]] - code - gateway/runtime/__init__.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,12 +29,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 506]]
-- 1 edge to [[_COMMUNITY_Community 38]]
-- 1 edge to [[_COMMUNITY_Community 1325]]
-- 1 edge to [[_COMMUNITY_Community 254]]
-- 1 edge to [[_COMMUNITY_Community 548]]
+- 3 edges to [[_COMMUNITY_Community 329]]
+- 3 edges to [[_COMMUNITY_Community 37]]
+- 2 edges to [[_COMMUNITY_Community 348]]
+- 2 edges to [[_COMMUNITY_Community 325]]
+- 2 edges to [[_COMMUNITY_Community 320]]
+- 2 edges to [[_COMMUNITY_Community 207]]
+- 1 edge to [[_COMMUNITY_Ingest API & Approval Routes]]
+- 1 edge to [[_COMMUNITY_Community 447]]
+- 1 edge to [[_COMMUNITY_Community 14]]
+- 1 edge to [[_COMMUNITY_Community 204]]
 
 ## Top bridge nodes
-- [[CREDENTIAL-SECURITY-POLICY]] - degree 9, connects to 5 communities
-- [[Implementation Strategy_1]] - degree 6, connects to 1 community
+- [[get_engine()]] - degree 16, connects to 6 communities
+- [[TestGetEngine]] - degree 12, connects to 5 communities
+- [[ContainerEngine]] - degree 5, connects to 4 communities

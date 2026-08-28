@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Community 2"
+community: "Telegram Proxy Inbound"
 location: "L8922"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2
+  - community/Telegram_Proxy_Inbound
 ---
 
 # TelegramAPIProxy
@@ -251,4 +251,4 @@ tags:
 - [[RateLimiter]] - `uses` [INFERRED]
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2
+#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Inbound

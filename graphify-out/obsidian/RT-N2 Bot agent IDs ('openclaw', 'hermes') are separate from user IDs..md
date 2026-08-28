@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "rationale"
-community: "Community 26"
+community: "Community 62"
 location: "L230"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_26
+  - community/Community_62
 ---
 
 # RT-N2: Bot agent IDs ('openclaw', 'hermes') are separate from user IDs.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_bot_agent_ids_are_namespace_separated_from_user_ids()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_26
+#graphify/rationale #graphify/EXTRACTED #community/Community_62

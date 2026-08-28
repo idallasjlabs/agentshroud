@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Community 9"
+community: "RBAC & SOC Realtime"
 location: "L961"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_9
+  - community/RBAC__SOC_Realtime
 ---
 
 # SSHExecRequest
@@ -28,4 +28,4 @@ tags:
 - [[SSHWriteFileResponse]] - `uses` [INFERRED]
 - [[ssh_exec()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_9
+#graphify/code #graphify/INFERRED #community/RBAC__SOC_Realtime

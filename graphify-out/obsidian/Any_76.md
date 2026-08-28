@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sync-cve-registry.py"
 type: "code"
-community: "Community 112"
+community: "Community 120"
 location: "L491"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_112
+  - community/Community_120
 ---
 
 # Any
@@ -20,4 +20,4 @@ tags:
 - [[fetch_ghsa_advisories()]] - `references` [EXTRACTED]
 - [[process_ghsa_advisories()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_112
+#graphify/code #graphify/EXTRACTED #community/Community_120

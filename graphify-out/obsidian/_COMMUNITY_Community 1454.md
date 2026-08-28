@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 1.00
 members: 2
 ---
 
 # Community 1454
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[i-security-reviewer_1]] - document - docker/config/openclaw/agents/i-security-reviewer.md
-- [[security-reviewer_1]] - document - docker/config/openclaw/agents/i-security-reviewer.md
+- [[SKILL_66]] - document - docker/config/hermes/skills/i-agile/SKILL.md
+- [[Skill agile_1]] - document - docker/config/hermes/skills/i-agile/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

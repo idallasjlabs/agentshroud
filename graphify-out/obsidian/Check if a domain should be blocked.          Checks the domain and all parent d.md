@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/dns_blocklist.py"
 type: "rationale"
-community: "Community 141"
+community: "Community 142"
 location: "L96"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_141
+  - community/Community_142
 ---
 
 # Check if a domain should be blocked.          Checks the domain and all parent d
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.is_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_141
+#graphify/rationale #graphify/EXTRACTED #community/Community_142

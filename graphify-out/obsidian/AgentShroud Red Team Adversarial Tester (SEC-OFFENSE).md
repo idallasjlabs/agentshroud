@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-sec-offense/SKILL.md"
 type: "document"
-community: "Community 659"
+community: "Community 46"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_659
+  - community/Community_46
 ---
 
 # AgentShroud Red Team Adversarial Tester (SEC-OFFENSE)
@@ -19,4 +19,4 @@ tags:
 - [[gatewayteststest_redteam_probes.py]] - `references` [EXTRACTED]
 - [[main.py_2]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_659
+#graphify/document #graphify/EXTRACTED #community/Community_46

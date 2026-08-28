@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "Community 134"
+community: "SOC Collaborators"
 location: "L405"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_134
+  - community/SOC_Collaborators
 ---
 
 # Read dynamically approved collaborator IDs from disk.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[load_persisted_collaborators()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_134
+#graphify/rationale #graphify/EXTRACTED #community/SOC_Collaborators

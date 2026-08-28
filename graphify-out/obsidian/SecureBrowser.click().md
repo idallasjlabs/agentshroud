@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "Community 252"
+community: "Community 253"
 location: "browse.py:320"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_252
+  - community/Community_253
 ---
 
 # SecureBrowser.click()
@@ -18,4 +18,4 @@ tags:
 - [[SecureBrowser._log_security_event()]] - `calls` [EXTRACTED]
 - [[SecureBrowser._requires_approval()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_252
+#graphify/code #graphify/EXTRACTED #community/Community_253

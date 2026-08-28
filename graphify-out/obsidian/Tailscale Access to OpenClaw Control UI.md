@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/TAILSCALE_SETUP.md"
 type: "document"
-community: "Community 371"
+community: "Community 377"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_371
+  - community/Community_377
 ---
 
 # Tailscale Access to OpenClaw Control UI
@@ -18,6 +18,6 @@ tags:
 - [[Option 3 Bind to Tailscale IP Only (Best Balance)]] - `contains` [EXTRACTED]
 - [[TAILSCALE_SETUP]] - `contains` [EXTRACTED]
 - [[Tailscale ACLs (Recommended)]] - `contains` [EXTRACTED]
-- [[Verification_19]] - `contains` [EXTRACTED]
+- [[Verification_13]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_371
+#graphify/document #graphify/EXTRACTED #community/Community_377

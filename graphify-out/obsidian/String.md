@@ -1,12 +1,12 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "Community 40"
+community: "Community 36"
 location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_40
+  - community/Community_36
 ---
 
 # String
@@ -42,7 +42,9 @@ tags:
 - [[test_playback_state.c]] - `imports` [EXTRACTED]
 - [[test_ptt_state.c]] - `imports` [EXTRACTED]
 - [[ui_face.c]] - `imports` [EXTRACTED]
+- [[ui_face.c_1]] - `imports` [EXTRACTED]
 - [[wakeword.c]] - `imports` [EXTRACTED]
+- [[wakeword.c_1]] - `imports` [EXTRACTED]
 - [[ws_client.c]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_40
+#graphify/code #graphify/EXTRACTED #community/Community_36

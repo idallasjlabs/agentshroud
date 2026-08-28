@@ -1,14 +1,17 @@
 ---
 type: community
-members: 1
+cohesion: 1.00
+members: 2
 ---
 
 # Community 1636
 
-**Members:** 1 nodes
+**Cohesion:** 1.00 - tightly connected
+**Members:** 2 nodes
 
 ## Members
-- [[esp_log.h_1]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/esp_log.h
+- [[.test_no_reply_tool_token_is_rewritten_to_wait_message()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[NO_REPLY tool JSON should be converted into a user-safe wait message.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -16,3 +19,11 @@ members: 1
 TABLE source_file, type FROM #community/Community_1636
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 93]]
+- 1 edge to [[_COMMUNITY_Community 80]]
+- 1 edge to [[_COMMUNITY_Community 96]]
+
+## Top bridge nodes
+- [[.test_no_reply_tool_token_is_rewritten_to_wait_message()]] - degree 4, connects to 3 communities

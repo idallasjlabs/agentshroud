@@ -1,11 +1,11 @@
 ---
 source_file: "docs/setup/OPENCLAW_SSH_SETUP.md"
 type: "concept"
-community: "Community 371"
+community: "Community 377"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_371
+  - community/Community_377
 ---
 
 # OpenClaw Bot Container
@@ -19,4 +19,4 @@ tags:
 - [[TELEGRAM_SETUP]] - `references` [EXTRACTED]
 - [[VAULT-SHARING-INSTRUCTIONS]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_371
+#graphify/concept #graphify/EXTRACTED #community/Community_377

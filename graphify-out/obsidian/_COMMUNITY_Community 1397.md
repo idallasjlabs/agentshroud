@@ -1,16 +1,18 @@
 ---
 type: community
+cohesion: 0.67
 members: 3
 ---
 
 # Community 1397
 
+**Cohesion:** 0.67 - moderately connected
 **Members:** 3 nodes
 
 ## Members
-- [[installapiinstall endpoint]] - concept - gateway/web/templates/installer.html
-- [[buildSummary()]] - code - gateway/web/templates/installer.html
-- [[startInstall()]] - code - gateway/web/templates/installer.html
+- [[SKILL_211]] - document - skills/openclaw/goplaces/SKILL.md
+- [[goplaces]] - document - skills/openclaw/goplaces/SKILL.md
+- [[goplaces CLI]] - concept - skills/openclaw/goplaces/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

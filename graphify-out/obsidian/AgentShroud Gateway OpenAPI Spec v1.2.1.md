@@ -1,13 +1,13 @@
 ---
 source_file: "docs/api/openapi.json"
 type: "document"
-community: "Community 1561"
+community: "Community 1667"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1561
+  - community/Community_1667
 ---
 
 # AgentShroud Gateway OpenAPI Spec v1.2.1
 
-#graphify/document #graphify/EXTRACTED #community/Community_1561
+#graphify/document #graphify/EXTRACTED #community/Community_1667

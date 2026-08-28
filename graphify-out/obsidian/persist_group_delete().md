@@ -1,23 +1,22 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "Community 134"
+community: "Community 49"
 location: "L334"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_134
+  - community/Community_49
 ---
 
 # persist_group_delete()
 
 ## Connections
 - [[Persist a runtime group creation so it survives container restarts.]] - `rationale_for` [EXTRACTED]
-- [[Persist a runtime group deletion so it survives container restarts.]] - `rationale_for` [EXTRACTED]
 - [[_load_overrides()]] - `calls` [EXTRACTED]
 - [[_save_overrides()]] - `calls` [EXTRACTED]
 - [[delete_group()]] - `calls` [EXTRACTED]
 - [[group_config.py]] - `contains` [EXTRACTED]
 - [[router.py_1]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_134
+#graphify/code #graphify/EXTRACTED #community/Community_49

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/sidecar.py.md"
 type: "document"
-community: "Community 810"
+community: "Community 804"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_810
+  - community/Community_804
 ---
 
 # sidecar.py
@@ -21,4 +21,4 @@ tags:
 - [[Security Limitation Warning]] - `contains` [EXTRACTED]
 - [[sidecar.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_810
+#graphify/document #graphify/EXTRACTED #community/Community_804

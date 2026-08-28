@@ -1,27 +1,28 @@
 ---
 type: community
-members: 14
+cohesion: 0.15
+members: 13
 ---
 
 # Community 713
 
-**Members:** 14 nodes
+**Cohesion:** 0.15 - loosely connected
+**Members:** 13 nodes
 
 ## Members
-- [[._export_cef()]] - code - gateway/security/audit_export.py
-- [[._export_json()]] - code - gateway/security/audit_export.py
-- [[._export_jsonld()]] - code - gateway/security/audit_export.py
-- [[._parse_cef_for_verification()]] - code - gateway/security/audit_export.py
-- [[.export_events()]] - code - gateway/security/audit_export.py
-- [[.verify_export_integrity()]] - code - gateway/security/audit_export.py
-- [[AuditEvent]] - code - gateway/security/audit_export.py
-- [[Export audit events in the specified format.          Args             start_ti]] - rationale - gateway/security/audit_export.py
-- [[Export events in Common Event Format (CEF).          CEF Format CEFVersionDev]] - rationale - gateway/security/audit_export.py
-- [[Export events in JSON-LD format with security ontology.]] - rationale - gateway/security/audit_export.py
-- [[Export events in standard JSON format.]] - rationale - gateway/security/audit_export.py
-- [[Parse CEF lines and extract entryHashpreviousHash for chain verification.]] - rationale - gateway/security/audit_export.py
-- [[TextIO]] - code - gateway/security/audit_export.py
-- [[Verify the integrity of an exported audit log.          Args             export]] - rationale - gateway/security/audit_export.py
+- [[1. Verify CI and update the PR]] - document - .agents/skills/i-release/SKILL.md
+- [[2. Merge]] - document - .agents/skills/i-release/SKILL.md
+- [[3. Update graphify]] - document - .agents/skills/i-release/SKILL.md
+- [[4. Tag and release]] - document - .agents/skills/i-release/SKILL.md
+- [[5. Documentation and version visibility]] - document - .agents/skills/i-release/SKILL.md
+- [[6. Close Jira]] - document - .agents/skills/i-release/SKILL.md
+- [[7. Rebuildrestart prod and dev from main]] - document - .agents/skills/i-release/SKILL.md
+- [[Guardrails_5]] - document - .agents/skills/i-release/SKILL.md
+- [[Invocation_3]] - document - .agents/skills/i-release/SKILL.md
+- [[Role_30]] - document - .agents/skills/i-release/SKILL.md
+- [[SKILL_46]] - document - .agents/skills/i-release/SKILL.md
+- [[Skill Release (i-release)]] - document - .agents/skills/i-release/SKILL.md
+- [[Steps]] - document - .agents/skills/i-release/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,14 +30,3 @@ members: 14
 TABLE source_file, type FROM #community/Community_713
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 8 edges to [[_COMMUNITY_Community 89]]
-- 2 edges to [[_COMMUNITY_Community 232]]
-
-## Top bridge nodes
-- [[AuditEvent]] - degree 6, connects to 2 communities
-- [[TextIO]] - degree 3, connects to 2 communities
-- [[.export_events()]] - degree 6, connects to 1 community
-- [[._export_cef()]] - degree 4, connects to 1 community
-- [[._export_jsonld()]] - degree 4, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-mac/SKILL.md"
 type: "document"
-community: "Community 430"
+community: "Community 390"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_430
+  - community/Community_390
 ---
 
 # Mac App Discovery Skill
@@ -19,4 +19,4 @@ tags:
 - [[SKILL_29]] - `contains` [EXTRACTED]
 - [[When to Use This Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_430
+#graphify/document #graphify/EXTRACTED #community/Community_390

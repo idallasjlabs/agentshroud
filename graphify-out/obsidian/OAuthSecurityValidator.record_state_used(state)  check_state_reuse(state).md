@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/oauth_security.py.md"
 type: "document"
-community: "Community 538"
+community: "Community 536"
 location: "L58"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_538
+  - community/Community_536
 ---
 
 # OAuthSecurityValidator.record_state_used(state) / check_state_reuse(state)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Function Details_44]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_538
+#graphify/document #graphify/EXTRACTED #community/Community_536

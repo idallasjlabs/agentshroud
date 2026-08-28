@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "Community 14"
+community: "Community 18"
 location: "L33"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_14
+  - community/Community_18
 ---
 
 # EnvironmentGuard
@@ -87,4 +87,4 @@ tags:
 - [[test_round2_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_14
+#graphify/code #graphify/INFERRED #community/Community_18

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy.py"
 type: "code"
-community: "Community 34"
+community: "Community 23"
 location: "L252"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_34
+  - community/Community_23
 ---
 
 # MonkeyPatch
@@ -26,4 +26,4 @@ tags:
 - [[ToolRiskConfig_1]] - `uses` [INFERRED]
 - [[test_decision_records_soc_heatmap()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_34
+#graphify/code #graphify/INFERRED #community/Community_23

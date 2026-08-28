@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-gg/SKILL.md"
 type: "document"
-community: "Community 898"
+community: "Community 893"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_898
+  - community/Community_893
 ---
 
 # Skill: Git Workflow Guardian (GIT-GUARD)
@@ -21,4 +21,4 @@ tags:
 - [[Role_86]] - `contains` [EXTRACTED]
 - [[SKILL_148]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_898
+#graphify/document #graphify/EXTRACTED #community/Community_893

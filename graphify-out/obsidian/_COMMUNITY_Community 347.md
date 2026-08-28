@@ -1,42 +1,40 @@
 ---
 type: community
-members: 29
+cohesion: 0.14
+members: 25
 ---
 
 # Community 347
 
-**Members:** 29 nodes
+**Cohesion:** 0.14 - loosely connected
+**Members:** 25 nodes
 
 ## Members
-- [[Additional Dev Tools_1]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist_1]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Cost Estimate]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Cost Estimate_1]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Current System Profile]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Current System Profile_1]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Docker & Docker Compose_1]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Git Configuration_1]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Next Steps After Setup]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Node.js (for OpenClaw & AgentShroud)_1]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Phase 1 OS Hardening & Cleanup]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Phase 2 Development Tools_1]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Phase 4 Project Structure]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Phase 4 Project Structure_1]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Phase 5 CICD Pipeline (GitHub Actions)]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Phase 5 CICD Pipeline (GitHub Actions)_1]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Phase 6 Docker Configuration]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Phase 6 Docker Configuration_1]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Phase 7 Secret Management]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Phase 7 Secret Management_1]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Phase 8 Monitoring & Observability]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Phase 8 Monitoring & Observability_1]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Phase 9 OpenClaw Agent Configuration]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Phase 9 OpenClaw Agent Configuration_1]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Python (for testing tools)_1]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[SSH Hardening]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Snap Cleanup (Free Resources)]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[System Updates]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[.test_all_clean()_1]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_empty_summaries()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_format_report_string()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_generate_report()_1]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_history_persistence()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_partial_tools()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_trend_empty_db()]] - code - gateway/tests/test_security_toolchain.py
+- [[Any_42]] - code - gateway/security/health_report.py
+- [[Calculate weighted overall security score.      Args         summaries Dict ma]] - rationale - gateway/security/health_report.py
+- [[Connection]] - code - gateway/security/health_report.py
+- [[Format a health report as a human-readable string.      Args         report Fu]] - rationale - gateway/security/health_report.py
+- [[Generate a full health report.      Args         summaries Dict mapping tool n]] - rationale - gateway/security/health_report.py
+- [[Get score trend for the last N days.      Args         days Number of days to]] - rationale - gateway/security/health_report.py
+- [[Initialize the SQLite database for history tracking.      Args         db_path]] - rationale - gateway/security/health_report.py
+- [[Path_13]] - code - gateway/security/health_report.py
+- [[Save a health report to history.      Args         score Overall score.]] - rationale - gateway/security/health_report.py
+- [[TestHealthOverallScore]] - code - gateway/tests/test_security_toolchain.py
+- [[TestHealthReport]] - code - gateway/tests/test_security_toolchain.py
+- [[calculate_overall_score()]] - code - gateway/security/health_report.py
+- [[format_report()]] - code - gateway/security/health_report.py
+- [[generate_report()]] - code - gateway/security/health_report.py
+- [[get_trend()]] - code - gateway/security/health_report.py
+- [[health_report.py]] - code - gateway/security/health_report.py
+- [[init_db()]] - code - gateway/security/health_report.py
+- [[save_to_history()]] - code - gateway/security/health_report.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -46,15 +44,21 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 1052]]
-- 3 edges to [[_COMMUNITY_Community 972]]
-- 3 edges to [[_COMMUNITY_Community 852]]
-- 2 edges to [[_COMMUNITY_Community 236]]
-- 2 edges to [[_COMMUNITY_Community 1542]]
-- 2 edges to [[_COMMUNITY_Community 1122]]
-- 2 edges to [[_COMMUNITY_Community 1063]]
-- 1 edge to [[_COMMUNITY_Community 1307]]
+- 7 edges to [[_COMMUNITY_Community 112]]
+- 6 edges to [[_COMMUNITY_Community 632]]
+- 3 edges to [[_COMMUNITY_Security Audit & Drift Detection]]
+- 3 edges to [[_COMMUNITY_Community 410]]
+- 1 edge to [[_COMMUNITY_Community 147]]
+- 1 edge to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
+- 1 edge to [[_COMMUNITY_Community 100]]
+- 1 edge to [[_COMMUNITY_Community 176]]
+- 1 edge to [[_COMMUNITY_Community 225]]
+- 1 edge to [[_COMMUNITY_Community 215]]
+- 1 edge to [[_COMMUNITY_Community 216]]
 
 ## Top bridge nodes
-- [[AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist_1]] - degree 30, connects to 8 communities
-- [[AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist]] - degree 17, connects to 7 communities
+- [[health_report.py]] - degree 20, connects to 11 communities
+- [[generate_report()]] - degree 12, connects to 2 communities
+- [[calculate_overall_score()]] - degree 9, connects to 2 communities
+- [[TestHealthReport]] - degree 6, connects to 2 communities
+- [[TestHealthOverallScore]] - degree 5, connects to 2 communities

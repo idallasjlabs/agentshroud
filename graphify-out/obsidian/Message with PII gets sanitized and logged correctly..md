@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "rationale"
-community: "Community 212"
+community: "PII Sanitizer & E2E Tests"
 location: "L150"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_212
+  - community/PII_Sanitizer__E2E_Tests
 ---
 
 # Message with PII gets sanitized and logged correctly.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_full_pipeline_pii_message()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_212
+#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer__E2E_Tests

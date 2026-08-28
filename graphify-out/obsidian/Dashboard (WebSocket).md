@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/system-architecture.md"
 type: "concept"
-community: "Community 1259"
+community: "Community 372"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1259
+  - community/Community_372
 ---
 
 # Dashboard (WebSocket)
@@ -15,4 +15,4 @@ tags:
 - [[Kill Switch (MonitorBlockIsolate)]] - `calls` [EXTRACTED]
 - [[Monitoring System Integration (WebhooksPrometheus)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1259
+#graphify/concept #graphify/EXTRACTED #community/Community_372

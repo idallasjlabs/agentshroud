@@ -1,34 +1,36 @@
 ---
 type: community
+cohesion: 0.12
 members: 21
 ---
 
 # Community 424
 
+**Cohesion:** 0.12 - loosely connected
 **Members:** 21 nodes
 
 ## Members
-- [[.__init__()_169]] - code - gateway/tests/test_key_rotation.py
-- [[.setup_manager_with_credential()]] - code - gateway/tests/test_key_rotation.py
-- [[.test_check_and_rotate_due_credentials()]] - code - gateway/tests/test_key_rotation.py
-- [[.test_emergency_rotation()]] - code - gateway/tests/test_key_rotation.py
-- [[.test_grace_period_cleanup()]] - code - gateway/tests/test_key_rotation.py
-- [[.test_register_validator()]] - code - gateway/tests/test_key_rotation.py
-- [[.test_rotation_with_validation_failure()]] - code - gateway/tests/test_key_rotation.py
-- [[.test_successful_rotation_workflow()]] - code - gateway/tests/test_key_rotation.py
-- [[.validate()_2]] - code - gateway/tests/test_key_rotation.py
-- [[Mock validation that can be controlled.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Mock validator for testing.]] - rationale - gateway/tests/test_key_rotation.py
-- [[MockValidator]] - code - gateway/tests/test_key_rotation.py
-- [[Set up manager with a credential that needs rotation.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test bulk rotation check and execution.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test complete successful rotation workflow.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test emergency rotation workflow.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test grace period and old credential cleanup.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test rotation workflow with validation failure and rollback.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test the complete rotation workflow.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test validator registration.]] - rationale - gateway/tests/test_key_rotation.py
-- [[TestKeyRotationWorkflow]] - code - gateway/tests/test_key_rotation.py
+- [[.__aenter__()_1]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[.__aexit__()_1]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[.__init__()_150]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[.__init__()_149]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[.request()_2]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[.test_compression_pointer()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[.test_dns_blocklist_import_failure_sets_none()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[.test_pointer_loop_bounded()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[.test_simple_name()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[.test_truncated_name_breaks()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[Parse a DNS domain name from wire format, handling compression pointers.]] - rationale - gateway/proxy/dns_forwarder.py
+- [[Provision a gateway password file and return the password.]] - rationale - gateway/tests/test_dns_canvas_coverage.py
+- [[Stands in for httpx.AsyncClient; records request kwargs.]] - rationale - gateway/tests/test_dns_canvas_coverage.py
+- [[TestImportFallback]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[TestParseDomainName]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[_FakeAsyncClient]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[_FakeUpstreamResponse]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[fake_httpx_client()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[gateway_password()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[parse_domain_name()]] - code - gateway/proxy/dns_forwarder.py
+- [[test_dns_canvas_coverage.py]] - code - gateway/tests/test_dns_canvas_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -38,15 +40,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_Community 233]]
-- 5 edges to [[_COMMUNITY_Community 756]]
-- 4 edges to [[_COMMUNITY_Community 193]]
-- 4 edges to [[_COMMUNITY_Community 160]]
-- 2 edges to [[_COMMUNITY_Community 1059]]
+- 9 edges to [[_COMMUNITY_Community 142]]
+- 8 edges to [[_COMMUNITY_Community 557]]
+- 8 edges to [[_COMMUNITY_Community 277]]
+- 3 edges to [[_COMMUNITY_Community 718]]
+- 3 edges to [[_COMMUNITY_Community 977]]
+- 3 edges to [[_COMMUNITY_Community 643]]
+- 2 edges to [[_COMMUNITY_Community 732]]
+- 1 edge to [[_COMMUNITY_Community 562]]
+- 1 edge to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
 
 ## Top bridge nodes
-- [[MockValidator]] - degree 14, connects to 5 communities
-- [[TestKeyRotationWorkflow]] - degree 14, connects to 5 communities
-- [[.setup_manager_with_credential()]] - degree 6, connects to 3 communities
-- [[.test_check_and_rotate_due_credentials()]] - degree 6, connects to 3 communities
-- [[.test_register_validator()]] - degree 3, connects to 1 community
+- [[test_dns_canvas_coverage.py]] - degree 35, connects to 9 communities
+- [[parse_domain_name()]] - degree 8, connects to 2 communities
+- [[_FakeAsyncClient]] - degree 8, connects to 2 communities
+- [[TestParseDomainName]] - degree 7, connects to 2 communities
+- [[_FakeUpstreamResponse]] - degree 5, connects to 2 communities

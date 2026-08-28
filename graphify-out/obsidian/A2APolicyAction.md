@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "Community 1001"
+community: "Community 81"
 location: "L134"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1001
+  - community/Community_81
 ---
 
 # A2APolicyAction
@@ -18,7 +18,6 @@ tags:
 - [[A2APolicyEngine_2]] - `uses` [INFERRED]
 - [[Enum]] - `inherits` [EXTRACTED]
 - [[TestDefaultA2APolicyIsFailClosed]] - `uses` [INFERRED]
-- [[The three terminal policy outcomes for an A2A request.]] - `rationale_for` [EXTRACTED]
 - [[The three terminal policy outcomes for an MCP tool call.]] - `rationale_for` [EXTRACTED]
 - [[_LegacyStubApprovalQueue]] - `uses` [INFERRED]
 - [[_StubApprovalQueue]] - `uses` [INFERRED]
@@ -27,4 +26,4 @@ tags:
 - [[test_a2a_policy.py]] - `imports` [EXTRACTED]
 - [[test_a2a_policy_default_failclosed.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1001
+#graphify/code #graphify/EXTRACTED #community/Community_81

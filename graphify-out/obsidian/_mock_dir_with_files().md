@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "Community 654"
+community: "Community 647"
 location: "L105"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_654
+  - community/Community_647
 ---
 
 # _mock_dir_with_files()
@@ -26,4 +26,4 @@ tags:
 - [[Return a mock Path that exists and whose glob() returns named mock files.]] - `rationale_for` [EXTRACTED]
 - [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_654
+#graphify/code #graphify/EXTRACTED #community/Community_647

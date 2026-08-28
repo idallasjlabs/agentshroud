@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-bdd/SKILL.md"
 type: "document"
-community: "Community 1458"
+community: "Community 1474"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1458
+  - community/Community_1474
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill bdd_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1458
+#graphify/document #graphify/EXTRACTED #community/Community_1474

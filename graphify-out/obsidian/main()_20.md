@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/generate-job-schedule.py"
 type: "code"
-community: "Community 917"
+community: "Community 909"
 location: "L259"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_917
+  - community/Community_909
 ---
 
 # main()
@@ -17,4 +17,4 @@ tags:
 - [[load_openclaw_jobs()]] - `calls` [EXTRACTED]
 - [[render_html()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_917
+#graphify/code #graphify/EXTRACTED #community/Community_909

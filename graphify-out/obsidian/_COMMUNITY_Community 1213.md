@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1213
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_73]] - document - docker/config/hermes/skills/i-vulcan/README.md
-- [[README_78]] - document - docker/config/hermes/skills/i-vulcan/README.md
-- [[Related Skills_79]] - document - docker/config/hermes/skills/i-vulcan/README.md
-- [[Usage_80]] - document - docker/config/hermes/skills/i-vulcan/README.md
-- [[Vulcan — Subject Matter Auditor_2]] - document - docker/config/hermes/skills/i-vulcan/README.md
+- [[Browser — Secure Browser Automation_4]] - document - docker/config/openclaw/skills/i-browser/README.md
+- [[Purpose_78]] - document - docker/config/openclaw/skills/i-browser/README.md
+- [[README_83]] - document - docker/config/openclaw/skills/i-browser/README.md
+- [[Related Skills_84]] - document - docker/config/openclaw/skills/i-browser/README.md
+- [[Usage_86]] - document - docker/config/openclaw/skills/i-browser/README.md
 
 ## Live Query (requires Dataview plugin)
 

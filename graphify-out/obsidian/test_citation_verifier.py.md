@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_citation_verifier.py"
 type: "code"
-community: "Community 171"
+community: "Community 105"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_171
+  - community/Community_105
 ---
 
 # test_citation_verifier.py
@@ -28,4 +28,4 @@ tags:
 - [[make_httpx_fetcher()]] - `imports` [EXTRACTED]
 - [[test_default_allowlist_uses_permanent_egress_domains()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_171
+#graphify/code #graphify/EXTRACTED #community/Community_105

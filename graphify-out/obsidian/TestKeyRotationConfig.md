@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "Community 233"
+community: "Community 295"
 location: "L61"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_233
+  - community/Community_295
 ---
 
 # TestKeyRotationConfig
@@ -25,4 +25,4 @@ tags:
 - [[Test key rotation configuration.]] - `rationale_for` [EXTRACTED]
 - [[test_key_rotation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_233
+#graphify/code #graphify/INFERRED #community/Community_295

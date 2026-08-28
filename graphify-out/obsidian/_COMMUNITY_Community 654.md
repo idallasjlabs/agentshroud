@@ -1,28 +1,29 @@
 ---
 type: community
-members: 15
+cohesion: 0.14
+members: 14
 ---
 
 # Community 654
 
-**Members:** 15 nodes
+**Cohesion:** 0.14 - loosely connected
+**Members:** 14 nodes
 
 ## Members
-- [[.test_five_optimal()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_five_sbom_and_trivy_clean()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_four_sbom_and_trivy_with_criticals()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_four_with_zero_highs()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_one_when_only_sbom_exists()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_three_sbom_has_packages_no_trivy()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_three_with_sbom_trivy_no_criticals_but_has_highs()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_two_empty_sbom()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_zero_when_nothing_present()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_zero_without_sbom()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[Return a mock Path that exists and whose glob() returns named mock files.]] - rationale - gateway/tests/test_scorecard_scoring.py
-- [[TestScoreImageIntegrity_1]] - code - gateway/tests/test_scorecard_scoring.py
-- [[TestScoreSupplyChain_1]] - code - gateway/tests/test_scorecard_scoring.py
-- [[_mock_dir_with_files()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[_mock_missing_dir()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[collectCoverageFrom]] - code - browser-extension/package.json
+- [[description_2]] - code - browser-extension/package.json
+- [[devDependencies]] - code - browser-extension/package.json
+- [[jest]] - code - browser-extension/package.json
+- [[jest_1]] - code - browser-extension/package.json
+- [[license_1]] - code - browser-extension/package.json
+- [[name_2]] - code - browser-extension/package.json
+- [[package.json_1]] - code - browser-extension/package.json
+- [[private]] - code - browser-extension/package.json
+- [[scripts_1]] - code - browser-extension/package.json
+- [[test_1]] - code - browser-extension/package.json
+- [[testcoverage]] - code - browser-extension/package.json
+- [[testEnvironment]] - code - browser-extension/package.json
+- [[version_2]] - code - browser-extension/package.json
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,17 +31,3 @@ members: 15
 TABLE source_file, type FROM #community/Community_654
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 653]]
-- 3 edges to [[_COMMUNITY_Community 927]]
-- 2 edges to [[_COMMUNITY_Community 1062]]
-- 2 edges to [[_COMMUNITY_Community 1133]]
-- 1 edge to [[_COMMUNITY_Community 1134]]
-
-## Top bridge nodes
-- [[_mock_dir_with_files()]] - degree 13, connects to 5 communities
-- [[_mock_missing_dir()]] - degree 6, connects to 3 communities
-- [[TestScoreImageIntegrity_1]] - degree 7, connects to 2 communities
-- [[TestScoreSupplyChain_1]] - degree 6, connects to 1 community
-- [[.test_five_optimal()]] - degree 2, connects to 1 community

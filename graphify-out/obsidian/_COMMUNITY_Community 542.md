@@ -1,30 +1,32 @@
 ---
 type: community
+cohesion: 0.12
 members: 17
 ---
 
 # Community 542
 
+**Cohesion:** 0.12 - loosely connected
 **Members:** 17 nodes
 
 ## Members
-- [[ClamAV — Malware Detection]] - document - docs/security/security-supply-chain.md
-- [[Detailed Profiles]] - document - docs/security/security-supply-chain.md
-- [[Docker Engine]] - document - docs/security/security-supply-chain.md
-- [[Falco — Runtime Security Monitoring]] - document - docs/security/security-supply-chain.md
-- [[FastAPI  Starlette  Uvicorn — Web Framework]] - document - docs/security/security-supply-chain.md
-- [[OpenSCAP — Compliance Scanning]] - document - docs/security/security-supply-chain.md
-- [[Overview_14]] - document - docs/security/security-supply-chain.md
-- [[Podman]] - document - docs/security/security-supply-chain.md
-- [[Python 3.11 — Runtime]] - document - docs/security/security-supply-chain.md
-- [[Recommendations_1]] - document - docs/security/security-supply-chain.md
-- [[SQLite — Approval Queue  Audit Storage]] - document - docs/security/security-supply-chain.md
-- [[Security Supply Chain Analysis]] - document - docs/security/security-supply-chain.md
-- [[Trivy — Container Image Scanning]] - document - docs/security/security-supply-chain.md
-- [[Verdict Summary]] - document - docs/security/security-supply-chain.md
-- [[Wazuh — Host Integrity Monitoring ⚠️]] - document - docs/security/security-supply-chain.md
-- [[cryptography (Python) — Encryption Library]] - document - docs/security/security-supply-chain.md
-- [[spaCy + Presidio — PII Detection]] - document - docs/security/security-supply-chain.md
+- [[Create Test Script]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
+- [[Google Calendar & Contacts - Quick Setup]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
+- [[Install Node CalDAV Client]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
+- [[Option A Simple (App Password + CalDAV) - RECOMMENDED FOR NOW]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
+- [[Option B Full (OAuth2 + Google APIs) - Better for production]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
+- [[Run Test]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
+- [[Step 1 Create Google Cloud Project]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
+- [[Step 2 Create OAuth Credentials]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
+- [[Step 3 Get OAuth Token (One-Time)]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
+- [[Step 4 Use Google Calendar]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
+- [[⚡ Fastest Path Forward]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
+- [[✅ Next Steps]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
+- [[🎮 Option B Using Google APIs (Better but requires OAuth)]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
+- [[🎯 My Recommendation]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
+- [[🎯 Two Options]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
+- [[📊 Comparison]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
+- [[🚀 Option A Simple Setup (5 minutes)]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,7 +36,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 833]]
+- 1 edge to [[_COMMUNITY_Community 428]]
 
 ## Top bridge nodes
-- [[Security Supply Chain Analysis]] - degree 5, connects to 1 community
+- [[Google Calendar & Contacts - Quick Setup]] - degree 8, connects to 1 community

@@ -1,17 +1,19 @@
 ---
 type: community
+cohesion: 0.50
 members: 4
 ---
 
 # Community 1354
 
+**Cohesion:** 0.50 - moderately connected
 **Members:** 4 nodes
 
 ## Members
-- [[.test_allowed_collaborator_model_command_with_mention_is_handled_locally()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_unapproved_collaborator_slash_command_with_mention_and_punctuation_is_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[Allowed collaborator local command should survive mentionpunctuation normalizat]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Unknown collaborator slash commands should stay blocked with mentionpunctuation]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_clamd_running_true_with_connectable_socket()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_fluent_bit_running_false_without_pidfile()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_fluent_bit_running_true_with_live_pid()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestSocketAndPidProbes]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +23,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_Community 2]]
-- 2 edges to [[_COMMUNITY_Community 32]]
+- 1 edge to [[_COMMUNITY_Community 288]]
+- 1 edge to [[_COMMUNITY_Community 193]]
 
 ## Top bridge nodes
-- [[.test_allowed_collaborator_model_command_with_mention_is_handled_locally()]] - degree 8, connects to 2 communities
-- [[.test_unapproved_collaborator_slash_command_with_mention_and_punctuation_is_quarantined()]] - degree 7, connects to 2 communities
+- [[TestSocketAndPidProbes]] - degree 4, connects to 1 community
+- [[.test_fluent_bit_running_true_with_live_pid()]] - degree 2, connects to 1 community

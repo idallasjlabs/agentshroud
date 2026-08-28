@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "Community 1339"
+community: "Community 103"
 location: "L198"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_1339
+  - community/Community_103
 ---
 
 # ConnectionPool
@@ -49,4 +49,4 @@ tags:
 - [[mcp_proxy.py]] - `contains` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_1339
+#graphify/code #graphify/INFERRED #community/Community_103

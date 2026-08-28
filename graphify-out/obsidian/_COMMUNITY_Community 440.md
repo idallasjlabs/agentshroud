@@ -1,33 +1,35 @@
 ---
 type: community
+cohesion: 0.10
 members: 20
 ---
 
 # Community 440
 
+**Cohesion:** 0.10 - loosely connected
 **Members:** 20 nodes
 
 ## Members
-- [[AGENT_ROLES]] - document - docs/governance/AGENT_ROLES.md
-- [[Authorization Matrix_1]] - document - docs/governance/AGENT_ROLES.md
-- [[Decision Tree for New Tasks]] - document - docs/governance/AGENT_ROLES.md
-- [[Diagram 21 Team Structure]] - image - docs/diagrams/images/diagram-21-team-structure.svg
-- [[Diagram 23 Roadmap Gantt (2026)]] - image - docs/diagrams/images/diagram-23-roadmap-gantt.svg
-- [[Escalation Path]] - document - docs/governance/AGENT_ROLES.md
-- [[GSD Cadence — Get Shit Done Governance]] - document - docs/governance/GSD_CADENCE.md
-- [[GSD Cadence — Get Shit Done Governance (doc)]] - document - docs/governance/GSD_CADENCE.md
-- [[GSD_CADENCE]] - document - docs/governance/GSD_CADENCE.md
-- [[Monthly (1st of month)]] - document - docs/governance/GSD_CADENCE.md
-- [[Multi-Agent Role Matrix]] - document - docs/governance/AGENT_ROLES.md
-- [[Multi-Agent Role Matrix (AGENT_ROLES.md)]] - document - docs/governance/AGENT_ROLES.md
-- [[Out of Scope]] - document - docs/governance/GSD_CADENCE.md
-- [[References_2]] - document - docs/governance/AGENT_ROLES.md
-- [[Rule 1 — GSD Issue Before the Branch]] - document - docs/governance/GSD_CADENCE.md
-- [[Rule 2 — Approval Tag (approvedisaiah) for High-Severity Changes]] - concept - docs/governance/GSD_CADENCE.md
-- [[Rule 2 — Approval Tag for High-Severity Changes]] - document - docs/governance/GSD_CADENCE.md
-- [[Rule 3 — Weekly Kaizen + Monthly Chaos Drill]] - document - docs/governance/GSD_CADENCE.md
-- [[Security-Sensitive Paths]] - document - docs/governance/AGENT_ROLES.md
-- [[Weekly (every Friday)]] - document - docs/governance/GSD_CADENCE.md
+- [[AgentShroud Operations Cheat Sheet]] - document - CHEATSHEET.md
+- [[CHEATSHEET]] - document - CHEATSHEET.md
+- [[Colima VM]] - document - CHEATSHEET.md
+- [[Container Basics]] - document - CHEATSHEET.md
+- [[Hermes Agent Management]] - document - CHEATSHEET.md
+- [[Hermes Bot]] - concept - README.md
+- [[Hermes Control Interface (HCI)]] - concept - CHEATSHEET.md
+- [[Host IPs (extra_hosts)]] - document - CHEATSHEET.md
+- [[Key Paths]] - document - CHEATSHEET.md
+- [[Kill Switch (Emergency)]] - document - CHEATSHEET.md
+- [[Network Diagnostics]] - document - CHEATSHEET.md
+- [[OpenClaw (Bot) Management]] - document - CHEATSHEET.md
+- [[SOC API]] - concept - CHEATSHEET.md
+- [[SOC API — Common Queries]] - document - CHEATSHEET.md
+- [[Secrets]] - document - CHEATSHEET.md
+- [[Security Scanners]] - document - CHEATSHEET.md
+- [[Telegram Bot Commands (Owner)]] - document - CHEATSHEET.md
+- [[Tests_1]] - document - CHEATSHEET.md
+- [[Upgrades & Rollbacks]] - document - CHEATSHEET.md
+- [[Web Management UI]] - document - CHEATSHEET.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,3 +37,11 @@ members: 20
 TABLE source_file, type FROM #community/Community_440
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_Community 118]]
+- 1 edge to [[_COMMUNITY_Community 374]]
+
+## Top bridge nodes
+- [[AgentShroud Operations Cheat Sheet]] - degree 20, connects to 2 communities
+- [[Hermes Bot]] - degree 2, connects to 1 community

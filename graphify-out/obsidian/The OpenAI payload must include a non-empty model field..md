@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router_openai_translation.py"
 type: "rationale"
-community: "Community 38"
+community: "Community 32"
 location: "L236"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_38
+  - community/Community_32
 ---
 
 # The OpenAI payload must include a non-empty model field.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_openai_payload_includes_model()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_38
+#graphify/rationale #graphify/EXTRACTED #community/Community_32

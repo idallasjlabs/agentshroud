@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "Community 174"
+community: "Session Management"
 location: "L121"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_174
+  - community/Session_Management
 ---
 
 # UserSessionManager
@@ -48,7 +48,7 @@ tags:
 - [[Any_24]] - `uses` [INFERRED]
 - [[AppState]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
-- [[FastAPI_1]] - `uses` [INFERRED]
+- [[FastAPI_2]] - `uses` [INFERRED]
 - [[LogRecord]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[Manages per-user, per-bot session isolation.      Sessions are keyed by (user_id]] - `rationale_for` [EXTRACTED]
@@ -161,4 +161,4 @@ tags:
 - [[usm()]] - `calls` [EXTRACTED]
 - [[webhook_receiver.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_174
+#graphify/code #graphify/INFERRED #community/Session_Management

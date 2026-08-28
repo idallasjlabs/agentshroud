@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_simple.py"
 type: "rationale"
-community: "Community 9"
+community: "Ingest API & Approval Routes"
 location: "L286"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_9
+  - community/Ingest_API__Approval_Routes
 ---
 
 # Test FastAPI lifespan initialization
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_lifespan_initialization()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_9
+#graphify/rationale #graphify/EXTRACTED #community/Ingest_API__Approval_Routes

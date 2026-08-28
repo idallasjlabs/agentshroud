@@ -1,26 +1,28 @@
 ---
 type: community
+cohesion: 0.15
 members: 13
 ---
 
 # Community 711
 
+**Cohesion:** 0.15 - loosely connected
 **Members:** 13 nodes
 
 ## Members
-- [[_http_event_handler()]] - code - firmware/voice-terminal/main/ota.c
-- [[_nvs_get_etag()]] - code - firmware/voice-terminal/main/ota.c
-- [[_nvs_set_etag()]] - code - firmware/voice-terminal/main/ota.c
-- [[_ws_to_https_base()]] - code - firmware/voice-terminal/main/ota.c
-- [[app_main() — boot sequence]] - code - firmware/voice-terminal/main/app_main.c
-- [[audio_init() — micspeaker codec init]] - code - firmware/voice-terminal/main/audio.c
-- [[audio_preinit() — claims I2S at 16 kHz before display init]] - code - firmware/voice-terminal/main/audio.c
-- [[esp_err_t_2]] - code - firmware/voice-terminal/main/ota.c
-- [[esp_err_t_3]] - code - firmware/voice-terminal/main/wakeword.c
-- [[esp_http_client_event_t]] - code - firmware/voice-terminal/main/ota.c
-- [[ota.c]] - code - firmware/voice-terminal/main/ota.c
-- [[ota_check()]] - code - firmware/voice-terminal/main/ota.c
-- [[wakeword_init()]] - code - firmware/voice-terminal/main/wakeword.c
+- [[Config Keys Read]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
+- [[Function Details]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
+- [[HTTP Responses]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
+- [[Imports From  Exports To]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
+- [[Key Classes  Functions]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
+- [[Known Issues  Notes]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
+- [[Purpose_111]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
+- [[RateLimiter.check(client_id)]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
+- [[Related_1]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
+- [[auth.py_3]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
+- [[create_auth_dependency(config)]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
+- [[get_auth_dependency(config)]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
+- [[verify_token(token, expected_token)]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,14 +32,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 139]]
-- 2 edges to [[_COMMUNITY_Community 249]]
-- 1 edge to [[_COMMUNITY_Community 40]]
-- 1 edge to [[_COMMUNITY_Community 166]]
-- 1 edge to [[_COMMUNITY_Community 375]]
+- 1 edge to [[_COMMUNITY_Community 680]]
+- 1 edge to [[_COMMUNITY_Ingest API & Approval Routes]]
+- 1 edge to [[_COMMUNITY_Community 745]]
 
 ## Top bridge nodes
-- [[app_main() — boot sequence]] - degree 9, connects to 3 communities
-- [[wakeword_init()]] - degree 4, connects to 2 communities
-- [[ota.c]] - degree 8, connects to 1 community
-- [[ota_check()]] - degree 7, connects to 1 community
+- [[auth.py_3]] - degree 11, connects to 3 communities

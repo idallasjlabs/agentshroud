@@ -1,11 +1,11 @@
 ---
 source_file: ".github/COPILOT_CLI_SETUP.md"
 type: "rationale"
-community: "Community 435"
+community: "Community 441"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_435
+  - community/Community_441
 ---
 
 # Stale Repository-Context Description in COPILOT_CLI_SETUP.md
@@ -14,4 +14,4 @@ tags:
 - [[CLAUDE]] - `conceptually_related_to` [AMBIGUOUS]
 - [[COPILOT_CLI_SETUP]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_435
+#graphify/rationale #graphify/EXTRACTED #community/Community_441

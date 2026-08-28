@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rate_limit_guard.py"
 type: "rationale"
-community: "Community 177"
+community: "Community 182"
 location: "L67"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_177
+  - community/Community_182
 ---
 
 # Structured verdict returned by :meth:`RateLimitGuard.check`.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[RateLimitDecision]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_177
+#graphify/rationale #graphify/EXTRACTED #community/Community_182

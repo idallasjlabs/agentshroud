@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "rationale"
-community: "Community 924"
+community: "Community 156"
 location: "L542"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_924
+  - community/Community_156
 ---
 
 # Test POST /manage/mode endpoint request/response.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_set_observatory_mode_endpoint()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_924
+#graphify/rationale #graphify/EXTRACTED #community/Community_156

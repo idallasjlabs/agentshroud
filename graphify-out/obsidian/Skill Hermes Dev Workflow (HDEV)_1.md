@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-hdev/SKILL.md"
 type: "document"
-community: "Community 294"
+community: "Community 296"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_294
+  - community/Community_296
 ---
 
 # Skill: Hermes Dev Workflow (HDEV)
@@ -22,4 +22,4 @@ tags:
 - [[SKILL_87]] - `contains` [EXTRACTED]
 - [[Tools you have for this workflow_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_294
+#graphify/document #graphify/EXTRACTED #community/Community_296

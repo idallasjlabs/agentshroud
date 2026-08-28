@@ -1,11 +1,11 @@
 ---
 source_file: "firmware/voice-terminal/main/audio.c"
 type: "code"
-community: "Community 1489"
+community: "Community 1506"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1489
+  - community/Community_1506
 ---
 
 # audio.c (ES7210 mic / ES8311 speaker driver)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[audio.h (audio public API)]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1489
+#graphify/code #graphify/EXTRACTED #community/Community_1506

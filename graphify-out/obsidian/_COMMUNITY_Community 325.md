@@ -1,35 +1,41 @@
 ---
 type: community
-members: 22
+cohesion: 0.12
+members: 26
 ---
 
 # Community 325
 
-**Members:** 22 nodes
+**Cohesion:** 0.12 - loosely connected
+**Members:** 26 nodes
 
 ## Members
-- [[.test_admin_allowed_at_trust_3()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_admin_denied_at_trust_2()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_admin_private_tool_allowed_for_owner()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_admin_private_tool_denied_for_non_owner()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_exec_denied_at_trust_1()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_memory_dot_search_denied_for_non_owner()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_memory_get_denied_for_non_owner()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_privacy_policy_overrides_patterns()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_privacy_policy_status_when_missing_file()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_private_data_parameter_allowed_for_owner()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_private_data_parameter_denied_for_agentshroud_memory_subpath()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_private_data_parameter_denied_for_gateway_contributor_logs()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_private_data_parameter_denied_for_memory_subpath()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_private_data_parameter_denied_for_nested_private_reference()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_private_data_parameter_denied_for_non_owner()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_private_data_parameter_denied_for_session_store_path()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_private_data_parameter_denied_for_workspace_contributor_logs()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_private_redaction_event_summary()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_read_tool_at_trust_0()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_write_tool_allowed_at_trust_1()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_write_tool_denied_at_trust_0()]] - code - gateway/tests/test_mcp_permissions.py
-- [[TestToolPermission]] - code - gateway/tests/test_mcp_permissions.py
+- [[.__init__()_46]] - code - gateway/runtime/apple_engine.py
+- [[._cmd()]] - code - gateway/runtime/apple_engine.py
+- [[.build()]] - code - gateway/runtime/apple_engine.py
+- [[.compose_down()]] - code - gateway/runtime/apple_engine.py
+- [[.compose_up()]] - code - gateway/runtime/apple_engine.py
+- [[.exec()]] - code - gateway/runtime/apple_engine.py
+- [[.health_check()_2]] - code - gateway/runtime/apple_engine.py
+- [[.inspect()]] - code - gateway/runtime/apple_engine.py
+- [[.logs()]] - code - gateway/runtime/apple_engine.py
+- [[.network_create()]] - code - gateway/runtime/apple_engine.py
+- [[.network_rm()]] - code - gateway/runtime/apple_engine.py
+- [[.pause()]] - code - gateway/runtime/apple_engine.py
+- [[.ps()]] - code - gateway/runtime/apple_engine.py
+- [[.pull()]] - code - gateway/runtime/apple_engine.py
+- [[.push()]] - code - gateway/runtime/apple_engine.py
+- [[.rm()]] - code - gateway/runtime/apple_engine.py
+- [[.run()_1]] - code - gateway/runtime/apple_engine.py
+- [[.stop()_5]] - code - gateway/runtime/apple_engine.py
+- [[.unpause()]] - code - gateway/runtime/apple_engine.py
+- [[.volume_create()]] - code - gateway/runtime/apple_engine.py
+- [[.volume_rm()]] - code - gateway/runtime/apple_engine.py
+- [[Any_25]] - code - gateway/runtime/apple_engine.py
+- [[AppleContainerEngine]] - code - gateway/runtime/apple_engine.py
+- [[Container engine backed by Apple's `container` CLI.]] - rationale - gateway/runtime/apple_engine.py
+- [[ContainerInfo]] - code - gateway/runtime/apple_engine.py
+- [[get_engine]] - code - gateway/runtime/__init__.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,11 +45,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_Community 106]]
-- 1 edge to [[_COMMUNITY_Community 179]]
-- 1 edge to [[_COMMUNITY_Community 36]]
+- 7 edges to [[_COMMUNITY_Community 348]]
+- 5 edges to [[_COMMUNITY_Community 329]]
+- 3 edges to [[_COMMUNITY_Community 204]]
+- 2 edges to [[_COMMUNITY_Community 849]]
+- 2 edges to [[_COMMUNITY_Community 919]]
+- 1 edge to [[_COMMUNITY_Community 320]]
+- 1 edge to [[_COMMUNITY_Community 447]]
+- 1 edge to [[_COMMUNITY_Community 365]]
+- 1 edge to [[_COMMUNITY_Community 1060]]
+- 1 edge to [[_COMMUNITY_Community 207]]
+- 1 edge to [[_COMMUNITY_Community 453]]
+- 1 edge to [[_COMMUNITY_Community 645]]
 
 ## Top bridge nodes
-- [[TestToolPermission]] - degree 27, connects to 3 communities
-- [[.test_privacy_policy_overrides_patterns()]] - degree 2, connects to 1 community
-- [[.test_privacy_policy_status_when_missing_file()]] - degree 2, connects to 1 community
+- [[AppleContainerEngine]] - degree 45, connects to 12 communities
+- [[Any_25]] - degree 3, connects to 2 communities
+- [[ContainerInfo]] - degree 3, connects to 2 communities

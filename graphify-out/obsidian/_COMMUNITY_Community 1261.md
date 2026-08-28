@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1261
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[active]] - concept - docs/diagrams/images/diagram-17-state-bot-session.svg
-- [[compacting (token count approaches reserveTokensFloor, 196K of 200K)]] - concept - docs/diagrams/images/diagram-17-state-bot-session.svg
-- [[fresh (container starts, new session created)]] - concept - docs/diagrams/images/diagram-17-state-bot-session.svg
-- [[idle (health monitor 300s interval)]] - concept - docs/diagrams/images/diagram-17-state-bot-session.svg
-- [[reset (new session UUID created, previous archived)]] - concept - docs/diagrams/images/diagram-17-state-bot-session.svg
+- [[Problem 1Password link shows only page shell]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Problem Browser binaries not found]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Problem Permission denied executing browser]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Problem Skill not auto-discovered by bot]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Troubleshooting_19]] - document - docs/reference/BROWSER_FETCH_SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,3 +22,9 @@ members: 5
 TABLE source_file, type FROM #community/Community_1261
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 767]]
+
+## Top bridge nodes
+- [[Troubleshooting_19]] - degree 5, connects to 1 community

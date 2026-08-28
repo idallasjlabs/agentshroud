@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/himalaya/references/configuration.md"
 type: "document"
-community: "Community 581"
+community: "Community 576"
 location: "L178"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_581
+  - community/Community_576
 ---
 
 # Editor for composing
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Additional Options]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_581
+#graphify/document #graphify/EXTRACTED #community/Community_576

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "Community 14"
+community: "Security Audit & Drift Detection"
 location: "L99"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_14
+  - community/Security_Audit__Drift_Detection
 ---
 
 # Agent cannot modify security policies and behavioral instructions.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSecurityPolicyProtection]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_14
+#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Drift_Detection

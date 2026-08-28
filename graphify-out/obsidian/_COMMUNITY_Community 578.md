@@ -1,29 +1,31 @@
 ---
 type: community
+cohesion: 0.12
 members: 16
 ---
 
 # Community 578
 
+**Cohesion:** 0.12 - loosely connected
 **Members:** 16 nodes
 
 ## Members
-- [[02-human-in-the-loop]] - document - docs/planning/redteam/02-human-in-the-loop.md
-- [[Constraints_5]] - document - docs/planning/redteam/02-human-in-the-loop.md
-- [[Evidence_2]] - document - docs/planning/redteam/02-human-in-the-loop.md
-- [[Problem_5]] - document - docs/planning/redteam/02-human-in-the-loop.md
-- [[Remediation_3]] - document - docs/planning/redteam/02-human-in-the-loop.md
-- [[Root Cause_4]] - document - docs/planning/redteam/02-human-in-the-loop.md
-- [[Severity_5]] - document - docs/planning/redteam/02-human-in-the-loop.md
-- [[Step 1 Define MCP tool risk tiers]] - document - docs/planning/redteam/02-human-in-the-loop.md
-- [[Step 2 Configure approval requirements per tier]] - document - docs/planning/redteam/02-human-in-the-loop.md
-- [[Step 3 Wire MCP Proxy to Approval Queue]] - document - docs/planning/redteam/02-human-in-the-loop.md
-- [[Step 4 Set Approval Queue to enforce mode]] - document - docs/planning/redteam/02-human-in-the-loop.md
-- [[Step 5 Add approval UI to the control center dashboard]] - document - docs/planning/redteam/02-human-in-the-loop.md
-- [[Step 6 Add Telegram admin notification for critical-tier tools]] - document - docs/planning/redteam/02-human-in-the-loop.md
-- [[Step 7 Return clear error messages to the agent]] - document - docs/planning/redteam/02-human-in-the-loop.md
-- [[Verification_4]] - document - docs/planning/redteam/02-human-in-the-loop.md
-- [[Wire the Approval Queue to enforce mode for high-risk tool calls]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Configuration  Environment Variables_18]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
+- [[Function Details_24]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
+- [[Key Classes  Functions_27]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
+- [[Key Differences from DockerEngine]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
+- [[PodmanEngine.__init__(cli)]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
+- [[PodmanEngine._detect_compose()]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
+- [[PodmanEngine.compose_up(file, detach)  compose_down(file)]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
+- [[PodmanEngine.generate_systemd(name)]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
+- [[PodmanEngine.health_check()]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
+- [[PodmanEngine.ps(all)]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
+- [[PodmanEngine.run(image, name, , volumes, ...)]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
+- [[Purpose_145]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
+- [[Related_31]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
+- [[Responsibilities_29]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
+- [[podman_engine.py_2]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
+- [[podman_engine.py_1]] - document - docs/vault/02 - Modules/Runtime/podman_engine.py.md
 
 ## Live Query (requires Dataview plugin)
 

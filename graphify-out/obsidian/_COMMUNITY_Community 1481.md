@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 1.00
 members: 2
 ---
 
 # Community 1481
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[i-mac README — macOS System Administrator (MAC)]] - document - docker/config/hermes/skills/i-mac/README.md
-- [[i-mac SKILL — Mac App Discovery]] - document - docker/config/hermes/skills/i-mac/SKILL.md
+- [[SKILL_154]] - document - docker/config/openclaw/skills/i-kaizen/SKILL.md
+- [[Skill kaizen_2]] - document - docker/config/openclaw/skills/i-kaizen/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

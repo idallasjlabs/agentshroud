@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "rationale"
-community: "Community 19"
+community: "SOC Collaborators"
 location: "L2137"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_19
+  - community/SOC_Collaborators
 ---
 
 # Recent scanner events from the in-process startup/scheduled scan history.      C
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_scanner_recent_events()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_19
+#graphify/rationale #graphify/EXTRACTED #community/SOC_Collaborators

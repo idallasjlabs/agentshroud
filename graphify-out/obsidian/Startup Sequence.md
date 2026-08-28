@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/01 - Architecture/Startup Sequence.md"
 type: "document"
-community: "Community 271"
+community: "Community 85"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_271
+  - community/Community_85
 ---
 
 # Startup Sequence.md
@@ -23,4 +23,4 @@ tags:
 - [[Startup Sequence_1]] - `contains` [EXTRACTED]
 - [[main.py_3]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_271
+#graphify/document #graphify/EXTRACTED #community/Community_85

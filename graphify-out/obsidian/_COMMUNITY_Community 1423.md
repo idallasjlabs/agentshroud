@@ -1,15 +1,18 @@
 ---
 type: community
-members: 2
+cohesion: 0.67
+members: 3
 ---
 
 # Community 1423
 
-**Members:** 2 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[SKILL_19]] - document - .agents/skills/i-devsecops/SKILL.md
-- [[Skill devsecops]] - document - .agents/skills/i-devsecops/SKILL.md
+- [[Test Kill Switch Monitor]] - code - gateway/tests/test_killswitch_monitor.py
+- [[Test Kill Switch Script Modes]] - code - gateway/tests/test_killswitch_modes.py
+- [[Test Observatory Mode API and Kill Switch Verification]] - code - gateway/tests/test_observatory_mode.py
 
 ## Live Query (requires Dataview plugin)
 

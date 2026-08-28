@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "Community 14"
+community: "Security Audit & Drift Detection"
 location: "L93"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_14
+  - community/Security_Audit__Drift_Detection
 ---
 
 # FileSandboxConfig
@@ -94,4 +94,4 @@ tags:
 - [[test_round2_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_14
+#graphify/code #graphify/INFERRED #community/Security_Audit__Drift_Detection

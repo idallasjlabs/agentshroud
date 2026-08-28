@@ -1,40 +1,43 @@
 ---
 type: community
-members: 27
+cohesion: 0.07
+members: 28
 ---
 
 # Community 285
 
-**Members:** 27 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 28 nodes
 
 ## Members
-- [[.filter_response()_2]] - code - gateway/security/xml_leak_filter.py
-- [[.scan_command_injection()]] - code - gateway/security/xml_leak_filter.py
-- [[.setup_method()_38]] - code - gateway/tests/test_xml_leak_filter.py
-- [[.test_clean_response_passes_through()]] - code - gateway/tests/test_xml_leak_filter.py
-- [[.test_clean_text_passes()]] - code - gateway/tests/test_xml_leak_filter.py
-- [[.test_empty_text_returns_clean()]] - code - gateway/tests/test_xml_leak_filter.py
-- [[.test_file_path_removal()]] - code - gateway/tests/test_xml_leak_filter.py
-- [[.test_function_calls_xml_removal()]] - code - gateway/tests/test_xml_leak_filter.py
-- [[.test_python_eval_detected()]] - code - gateway/tests/test_xml_leak_filter.py
-- [[.test_quick_function_calls_filter()]] - code - gateway/tests/test_xml_leak_filter.py
-- [[.test_shell_injection_detected()]] - code - gateway/tests/test_xml_leak_filter.py
-- [[.test_sql_injection_detected()]] - code - gateway/tests/test_xml_leak_filter.py
-- [[.xml_filter()]] - code - gateway/tests/test_xml_leak_filter.py
-- [[Filter outbound response content to remove sensitive information.          Args]] - rationale - gateway/security/xml_leak_filter.py
-- [[FilterResult_1]] - code - gateway/security/xml_leak_filter.py
-- [[Result from XML leak filtering.]] - rationale - gateway/security/xml_leak_filter.py
-- [[Scan outbound text for command  code injection patterns.          Does NOT modi]] - rationale - gateway/security/xml_leak_filter.py
-- [[Set up test fixtures._5]] - rationale - gateway/tests/test_xml_leak_filter.py
-- [[Test cases for XMLLeakFilter.]] - rationale - gateway/tests/test_xml_leak_filter.py
-- [[Test removal of file paths from responses.]] - rationale - gateway/tests/test_xml_leak_filter.py
-- [[Test removal of function call XML blocks.]] - rationale - gateway/tests/test_xml_leak_filter.py
-- [[Test that clean responses pass through unchanged.]] - rationale - gateway/tests/test_xml_leak_filter.py
-- [[Test the performance-optimized function calls only filter.]] - rationale - gateway/tests/test_xml_leak_filter.py
-- [[TestCommandInjectionScan]] - code - gateway/tests/test_xml_leak_filter.py
-- [[TestXMLLeakFilter]] - code - gateway/tests/test_xml_leak_filter.py
-- [[test_xml_leak_filter.py]] - code - gateway/tests/test_xml_leak_filter.py
-- [[xml_leak_filter.py]] - code - gateway/security/xml_leak_filter.py
+- [[1. Re-enable Seccomp Profiles]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[2. Enable Read-Only Filesystem]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[3. Remove NET_RAW Capability]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[4. Disable mDNSBonjour Broadcasting]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[5. Set DM Policy to Allowlist]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[AgentShroud Security Value Proposition - REVISED]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[Bottom Line (Corrected)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[Create scan.sh Script]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[Critical Context (What I Missed)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[Immediate Action Plan (Phase 3A - Completion)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[Immediate Next Steps (This Session)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[NOTHING is over-engineered. Everything has a purpose.]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[OpenSCAP & IEC 62443 Compliance - CRITICAL ✅]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[Priority 1 Fix Broken Security (CRITICAL)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[Priority 2 Add OpenSCAP Scanning (HIGH)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[Priority 3 Create IEC 62443 Compliance Matrix (HIGH)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[Priority 4 Create Security Verification Script (HIGH)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[Read-Only Filesystem - CRITICAL ✅]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[Revised Assessment Nothing is Over-Engineered]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[Revised Threat Model]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[Scenario 1 Multi-User Bot Access]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[Scenario 2 External Hosting (AWSGCP)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[Scenario 3 Prompt Injection → System Compromise]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[Scenario 4 Supply Chain Attack (Malicious Skill)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[Seccomp Profiles - CRITICAL ✅]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[This is NOT a Personal Tool]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[Ultra-Conservative Credential Policy - CRITICAL ✅]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[What's Actually Over-Engineered (Revised Answer)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -44,12 +47,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_Community 6]]
-- 2 edges to [[_COMMUNITY_Community 659]]
+- 1 edge to [[_COMMUNITY_Community 580]]
 
 ## Top bridge nodes
-- [[xml_leak_filter.py]] - degree 4, connects to 2 communities
-- [[TestXMLLeakFilter]] - degree 9, connects to 1 community
-- [[TestCommandInjectionScan]] - degree 9, connects to 1 community
-- [[FilterResult_1]] - degree 8, connects to 1 community
-- [[test_xml_leak_filter.py]] - degree 4, connects to 1 community
+- [[AgentShroud Security Value Proposition - REVISED]] - degree 8, connects to 1 community

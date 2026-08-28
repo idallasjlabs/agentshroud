@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-eightd/SKILL.md"
 type: "document"
-community: "Community 228"
+community: "Community 235"
 location: "L128"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_228
+  - community/Community_235
 ---
 
 # D2 — Problem Description (Data Collection & Characterization)
@@ -19,4 +19,4 @@ tags:
 - [[Step 5 Establish Baseline_1]] - `contains` [EXTRACTED]
 - [[The 8D Investigation Process_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_228
+#graphify/document #graphify/EXTRACTED #community/Community_235

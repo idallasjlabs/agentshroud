@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "Community 14"
+community: "Security Audit & Drift Detection"
 location: "L320"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_14
+  - community/Security_Audit__Drift_Detection
 ---
 
 # Very long messages should be handled without crash.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_very_long_message()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_14
+#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Drift_Detection

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-vulcan/SKILL.md"
 type: "document"
-community: "Community 900"
+community: "Community 895"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_900
+  - community/Community_895
 ---
 
 # Vulcan — Subject Matter Auditor
@@ -21,4 +21,4 @@ tags:
 - [[System Prompt_23]] - `contains` [EXTRACTED]
 - [[User Prompt Template_11]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_900
+#graphify/document #graphify/EXTRACTED #community/Community_895

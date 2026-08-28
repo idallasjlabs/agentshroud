@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md"
 type: "document"
-community: "Community 1053"
+community: "Community 936"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1053
+  - community/Community_936
 ---
 
 # SSH Proxy Errors
@@ -20,4 +20,4 @@ tags:
 - [[SSH Proxy Errors]] - `contains` [EXTRACTED]
 - [[Session Duration Exceeded]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1053
+#graphify/document #graphify/EXTRACTED #community/Community_936

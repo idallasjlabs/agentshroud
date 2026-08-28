@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_isolation.py"
 type: "code"
-community: "Community 28"
+community: "Community 51"
 location: "L191"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_28
+  - community/Community_51
 ---
 
 # TestAgentRegistryGroupIdentity
@@ -25,4 +25,4 @@ tags:
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_group_isolation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_28
+#graphify/code #graphify/INFERRED #community/Community_51

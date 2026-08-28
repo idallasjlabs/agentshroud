@@ -1,33 +1,35 @@
 ---
 type: community
+cohesion: 0.14
 members: 20
 ---
 
 # Community 451
 
+**Cohesion:** 0.14 - loosely connected
 **Members:** 20 nodes
 
 ## Members
-- [[.test_agent_label_falls_back_when_source_missing()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_alert_send_failure_is_swallowed()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_all_agents_omitting_bot_tokens_preserves_default_behavior()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_all_agents_runs_each_independently_and_isolates_failure()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_all_agents_uses_per_agent_token_when_provided()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_check_scoped_to_agent_registry_and_repo()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_hermes_zero_stays_silent_via_all_agents()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_hermes_zero_still_reports_when_always_report_zero()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_openclaw_zero_stays_silent()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_zero_report_send_failure_is_swallowed()]] - code - gateway/tests/test_daily_cve_report.py
-- [[2026-08-04 fix Hermes zero-CVE heartbeats confused the owner because         th]] - rationale - gateway/tests/test_daily_cve_report.py
-- [[2026-08-04 each wrapped agent's alert must go out via ITS OWN bot         token]] - rationale - gateway/tests/test_daily_cve_report.py
-- [[A Telegram failure on the new-CVE alert path never raises.]] - rationale - gateway/tests/test_daily_cve_report.py
-- [[A Telegram failure on the zero-report path never raises.]] - rationale - gateway/tests/test_daily_cve_report.py
-- [[Backward compatibility no bot_tokens arg means every agent still         gets t]] - rationale - gateway/tests/test_daily_cve_report.py
-- [[If the per-agent source config is missing, the label falls back gracefully.]] - rationale - gateway/tests/test_daily_cve_report.py
-- [[OpenClaw and Hermes are processed on fully separate paths; one failing         n]] - rationale - gateway/tests/test_daily_cve_report.py
-- [[Owner wants to SEE a Hermes report even with 0 new advisories.]] - rationale - gateway/tests/test_daily_cve_report.py
-- [[TestPerAgentUpstreamChecks]] - code - gateway/tests/test_daily_cve_report.py
-- [[check_upstream_cves(agent_id=...) selects that agent's OWN repo + list.]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[._make_proxy()_4]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[.test_active_bot_id_falls_back_to_openclaw()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[.test_active_bot_id_returns_contextvar_when_set()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[.test_active_send_token_returns_contextvar_inside_request()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[.test_active_send_token_returns_default_outside_request()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[.test_proxy_request_contextvar_visible_inside_impl()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[.test_proxy_request_resets_contextvar_after_return()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[.test_send_telegram_text_falls_back_to_default_token()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[.test_send_telegram_text_uses_inbound_token()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[After proxy_request returns, _inbound_bot_token is reset to its prior value.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
+- [[Cross-bot reply misrouting fix via contextvar-scoped send token]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
+- [[Outside a proxy_request call, _active_bot_id() returns 'openclaw'.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
+- [[Outside a proxy_request call, _active_send_token() returns self._bot_token.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
+- [[TestMultiBotContextvarRouting]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[Tests for per-request bot token routing via contextvars.      Regression suite f]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
+- [[The contextvar set by proxy_request is visible throughout _proxy_request_impl.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
+- [[When _inbound_bot_id is set, _active_bot_id() returns it.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
+- [[When _inbound_bot_token is set, _active_send_token() returns it.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
+- [[Without contextvar, _send_telegram_text uses self._bot_token.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
+- [[_send_telegram_text uses the inbound contextvar token, not self._bot_token.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,7 +39,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 184]]
+- 2 edges to [[_COMMUNITY_Community 91]]
+- 1 edge to [[_COMMUNITY_Adversarial Injection Guards]]
 
 ## Top bridge nodes
-- [[TestPerAgentUpstreamChecks]] - degree 11, connects to 1 community
+- [[TestMultiBotContextvarRouting]] - degree 14, connects to 2 communities

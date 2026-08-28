@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "Community 1533"
+community: "Community 1572"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_1533
+  - community/Community_1572
 ---
 
 # Scorecard Domain Scorer 0-5 Scale Tests
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Scorecard Data Integrity Tests (no stub inflation)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_1533
+#graphify/code #graphify/INFERRED #community/Community_1572

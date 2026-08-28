@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/reviews/phase-review-p0-2026-02-23.md"
 type: "document"
-community: "Community 309"
+community: "Community 311"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_309
+  - community/Community_311
 ---
 
 # Phase Review: P0 — Core Pipeline Wiring
@@ -22,4 +22,4 @@ tags:
 - [[Recommendation_1]] - `contains` [EXTRACTED]
 - [[phase-review-p0-2026-02-23]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_309
+#graphify/document #graphify/EXTRACTED #community/Community_311

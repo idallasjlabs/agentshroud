@@ -13,7 +13,7 @@ Device → gateway protocol:
 
 Gateway → device protocol:
   • Text JSON      — {"state": "listening|thinking|speaking|idle"}
-  • Binary frame   — raw S16LE TTS PCM chunk (22050 Hz, mono)
+  • Binary frame   — raw S16LE TTS PCM chunk (16000 Hz, mono)
   • Text "END"     — TTS stream complete, device may start next utterance
 
 Required env vars (set by docker-compose):
@@ -60,7 +60,7 @@ _CHUNK_SIZE = 4096  # bytes per TTS chunk
 
 _OWNER_USER_ID = os.environ.get("GATEWAY_OWNER_USER_ID", "")
 
-# Default model for voice — used only by the "direct" fast-path (_call_llm),
+# Default model for voice — used only by the "direct" fast-path (_call_llm_stream),
 # overridden per-session by _model_override (see "use <model>" below). Other
 # agents (hermes, openclaw, …) route through /forward → gateway pipeline and
 # pick their own model server-side.
@@ -80,7 +80,7 @@ _VOICE_MODEL = os.environ.get("VOICE_MODEL", "qwen3-14b")
 #   "use gemini"                -> direct fast path, Google
 #   "tell hermes"               -> full agentic path, tool use / control
 #   "tell openclaw"             -> full agentic path, tool use / control
-# See _parse_model_switch_command. "direct" = fast path (_call_llm, bypasses
+# See _parse_model_switch_command. "direct" = fast path (_call_llm_stream, bypasses
 # /forward pipeline). Any other value = gateway /forward with route_to=<value>.
 _DEFAULT_AGENT = os.environ.get("VOICE_DEFAULT_AGENT", "direct")
 
@@ -310,7 +310,7 @@ _reply_resume: dict | None = None
 # across connection drops so the device resumes with "LISTEN <offset>".
 _utterance_resume: dict | None = None
 _RESUME_MAX_AGE_S: float = 30.0
-_RESUME_REWIND_BYTES: int = 8192  # re-send this much before the recorded
+_RESUME_REWIND_BYTES: int = 0  # re-send this much before the recorded
 # offset — covers frames lost in flight
 _PCM_MAX_BYTES: int = 16000 * 2 * 20  # 20 s × 16 kHz × 2 bytes/sample S16LE mono
 
@@ -465,7 +465,14 @@ _UNIT_WORDS = {
 
 _VOLUME_RE = re.compile(
     # "[,:]?" — Whisper often punctuates the command ("Set volume, 90%").
-    r"\bset\s+(?:the\s+)?volume[,:]?\s+(?:to\s+)?"
+    # "except|accept|said" — live mishearings of a spoken "set" (2026-08-28:
+    # real transcript was "Except volume 100%" for a spoken "set volume 100";
+    # the command silently fell through to the LLM, which then falsely
+    # CLAIMED to have set the volume — same STT-proper-noun failure class as
+    # the "Claude"→"CLAWD" aliases in _MODEL_SWITCH_TARGETS). Only these
+    # attested/plausible mishearings are aliased, not any bare "volume N",
+    # so ordinary speech about volumes can't trigger an accidental write.
+    r"\b(?:set|except|accept|said)\s+(?:the\s+)?volume[,:]?\s+(?:to\s+)?"
     r"(\d{1,3}|[a-z]+(?:[ -][a-z]+)?)\s*(?:%|percent)?\b",
     re.IGNORECASE,
 )
@@ -563,7 +570,14 @@ _SWITCH_FILLER = r"(?:\s+\w+){0,2}?"
 # mishearings rather than require the one exact spelling STT is unlikely to
 # produce for a name it doesn't recognize.
 _MODEL_SWITCH_TARGETS: dict[str, tuple[str, str]] = {
-    "local": ("qwen3-14b", "Qwen3"),
+    # Placeholder — never read. Kept only so "local" stays in _SWITCH_WORDS
+    # (built from this dict's keys) for the regex below. The real value is
+    # resolved fresh off _VOICE_MODEL in _parse_model_switch_command: a fixed
+    # snapshot here is exactly what went stale when VOICE_MODEL swapped
+    # qwen3-14b -> gemma-4-12B-it-4bit (2026-08-27), leaving the device screen
+    # claiming "Qwen3" (then the generic placeholder "Local") while gemma
+    # actually answered.
+    "local": ("", ""),
     "qwen": ("qwen3-14b", "Qwen3"),
     "claude": ("claude-haiku-4-5-20251001", "Claude"),
     "clawd": ("claude-haiku-4-5-20251001", "Claude"),
@@ -613,6 +627,11 @@ def _parse_model_switch_command(
     if not m:
         return None
     word = m.group(1)
+    if word == "local":
+        # Always the live default, never a hardcoded snapshot — see the
+        # _MODEL_SWITCH_TARGETS["local"] comment above.
+        live = _VOICE_MODEL
+        return ("model", live, live)
     if word in _MODEL_SWITCH_TARGETS:
         model_name, label = _MODEL_SWITCH_TARGETS[word]
         return ("model", model_name, label)
@@ -682,8 +701,21 @@ def _voice_system_message() -> Dict[str, str]:
     return {"role": "system", "content": content}
 
 
-async def _call_llm(history: List[Dict[str, str]]) -> str:
-    """POST conversation history to the gateway's OpenAI-compat endpoint.
+# Sentence-boundary splitter for streamed LLM deltas — same pattern as
+# gateway/ingest_api/routes/forward.py's _sentences_from_deltas (voice_gateway
+# and gateway are separate deployed services with no shared import path, so
+# this mirrors rather than imports that proven algorithm).
+_LLM_SENTENCE_BOUNDARY_RE = re.compile(r"(?<=[.!?])\s+")
+
+
+async def _call_llm_stream(history: List[Dict[str, str]]) -> AsyncIterator[str]:
+    """Stream conversation history through the gateway's OpenAI-compat
+    endpoint, yielding each complete sentence as soon as its boundary is
+    crossed so TTS can start on the first sentence instead of waiting for the
+    full reply to finish generating (the direct path never got the same
+    streaming treatment _call_agent_stream already gives the Hermes path —
+    the full blocking wait was the single largest slice of a ~10s voice
+    round trip, live-measured 2026-08-27).
 
     Fast path — bypasses the full agentic loop for lower latency. Used only
     when ?agent=direct (or _DEFAULT_AGENT=="direct"). Gateway substitutes its
@@ -692,31 +724,90 @@ async def _call_llm(history: List[Dict[str, str]]) -> str:
 
     The model is _model_override (a sticky "use claude"/"use chatgpt"/etc.
     spoken switch) when set, else the module default _VOICE_MODEL.
+
+    Returns the full accumulated reply via the StopAsyncIteration-adjacent
+    convention used elsewhere in this file: callers that need the complete
+    text (multi-turn history bookkeeping) accumulate the yielded sentences
+    themselves, same as they already do for _call_agent_stream's output.
+
+    Never raises for httpx-level failures (timeout, connection error, bad
+    status) — mirrors _call_agent_stream's fallback-message convention.
+    Necessary here specifically because this generator is now consumed
+    lazily inside the background TTS synthesis task rather than awaited
+    eagerly before it starts; an exception raised there would previously
+    have reached the pipeline's outer error handler (idle-state reset +
+    history rollback) but is silently swallowed once buried inside that
+    task, so this function must resolve its own failures instead of relying
+    on that handler to see them.
     """
-    async with httpx.AsyncClient(timeout=30.0, trust_env=False) as client:
-        resp = await client.post(
-            f"{_GATEWAY_URL}/v1/chat/completions",
-            json={
-                "model": _effective_voice_model(),
-                "messages": history,
-                "max_tokens": 150,  # ~100 words — keep voice replies brief
-            },
-            headers={
-                # IP allowlist passes (isolated network); proxy substitutes Anthropic key.
-                "Authorization": f"Bearer {_GATEWAY_TOKEN}",
-                # Propagate owner identity for RBAC and audit trail.
-                "X-AgentShroud-User-Id": _OWNER_USER_ID or "voice",
-                # Voice is interactive: on upstream 429, skip the ~15 s retry
-                # preamble and fail over to the local model immediately.
-                "X-AgentShroud-Interactive": "1",
-            },
-        )
-    resp.raise_for_status()
-    data = resp.json()
+    buf = ""
+    yielded_any = False
+    # Same timeout shape as _call_agent_stream: a generous read timeout, not
+    # a flat 30s — under host CPU contention (live 2026-08-28: load avg 34-48
+    # from a Fieldflare-served OpenClaw cron burst) gemma's first token can
+    # stall well past 30s, and the flat timeout turned a slow-but-correct
+    # reply into a spoken "trouble connecting" failure.
+    _read_s = float(os.environ.get("VG_AGENT_READ_TIMEOUT_S", "100"))
+    _timeout = httpx.Timeout(connect=10.0, read=_read_s, write=10.0, pool=5.0)
     try:
-        return data["choices"][0]["message"]["content"].strip()
-    except (KeyError, IndexError, TypeError) as exc:
-        raise RuntimeError(f"Unexpected LLM response shape: {exc}") from exc
+        async with httpx.AsyncClient(timeout=_timeout, trust_env=False) as client:
+            async with client.stream(
+                "POST",
+                f"{_GATEWAY_URL}/v1/chat/completions",
+                json={
+                    "model": _effective_voice_model(),
+                    "messages": history,
+                    "max_tokens": 150,  # ~100 words — keep voice replies brief
+                    "stream": True,
+                },
+                headers={
+                    # IP allowlist passes (isolated network); proxy substitutes Anthropic key.
+                    "Authorization": f"Bearer {_GATEWAY_TOKEN}",
+                    # Propagate owner identity for RBAC and audit trail.
+                    "X-AgentShroud-User-Id": _OWNER_USER_ID or "voice",
+                    # Voice is interactive: on upstream 429, skip the ~15 s retry
+                    # preamble and fail over to the local model immediately.
+                    "X-AgentShroud-Interactive": "1",
+                },
+            ) as resp:
+                resp.raise_for_status()
+                async for line in resp.aiter_lines():
+                    if not line or not line.startswith("data:"):
+                        continue
+                    payload = line[len("data:") :].strip()
+                    if payload == "[DONE]":
+                        break
+                    try:
+                        chunk = json.loads(payload)
+                    except json.JSONDecodeError:
+                        logger.warning(
+                            "Malformed SSE line from /v1/chat/completions: %r", line[:120]
+                        )
+                        continue
+                    try:
+                        delta = chunk["choices"][0]["delta"].get("content") or ""
+                    except (KeyError, IndexError, TypeError):
+                        continue
+                    if not delta:
+                        continue
+                    buf += delta
+                    parts = _LLM_SENTENCE_BOUNDARY_RE.split(buf)
+                    for complete in parts[:-1]:
+                        complete = complete.strip()
+                        if complete:
+                            yielded_any = True
+                            yield complete
+                    buf = parts[-1]
+    except httpx.HTTPError as exc:
+        # repr, not str — httpx timeout exceptions stringify to "" (live
+        # 2026-08-28: the log line "stream error: " hid which failure fired).
+        logger.warning("Direct-path LLM stream error: %r", exc)
+        if not yielded_any:
+            yield "I'm having trouble connecting right now. Please try again in a moment."
+        return
+    tail = buf.strip()
+    if tail:
+        yield tail
 
 
 async def _call_agent_stream(transcript: str, agent: str) -> AsyncIterator[str]:
@@ -1131,52 +1222,62 @@ async def voice_endpoint(ws: WebSocket) -> None:
                             agent_text = _answer_volume_query()
                             _dispatch = False
 
-                        # Dispatch to the appropriate agent. The proxied-agent
-                        # (Hermes) path streams: _hermes_stream is set instead of
-                        # resolving agent_text up front, so synthesis can start on
-                        # the FIRST sentence the gateway releases rather than
-                        # waiting for the complete reply to finish generating
-                        # (SCRUM-113 — voice was "nearly unusable" waiting for
-                        # full-response generation before any audio began).
-                        _hermes_stream: "AsyncIterator[str] | None" = None
+                        # Dispatch to the appropriate agent. Both the "direct"
+                        # fast path and proxied agents (Hermes) stream:
+                        # _agent_stream is set instead of resolving agent_text
+                        # up front, so synthesis can start on the FIRST
+                        # sentence released rather than waiting for the
+                        # complete reply to finish generating (SCRUM-113 for
+                        # Hermes; the direct path got the same treatment
+                        # 2026-08-27 after live-measuring the full blocking
+                        # wait as the single largest slice of a ~10s voice
+                        # round trip — see _call_llm_stream).
+                        _agent_stream: "AsyncIterator[str] | None" = None
                         if _dispatch and agent == "direct":
                             # Fast path: multi-turn LLM proxy (no agentic tools).
-                            # Not streamed — single blocking call, unchanged.
                             history.append({"role": "user", "content": _query_text})
-                            agent_text = _confirm_prefix + await _call_llm(history)
-                            logger.info("Agent reply: %r", agent_text)
+                            logger.info("Agent reply: streaming from direct")
+                            _agent_stream = _call_llm_stream(history)
                         elif _dispatch:
                             # Proxied agent path: full AgentShroud pipeline via
                             # /forward/stream. Hermes and future OpenAI-compat
                             # agents stream a real reply; async agents (OpenClaw)
                             # get an honest Telegram notice as their one "sentence".
                             logger.info("Agent reply: streaming from %r", agent)
-                            _hermes_stream = _call_agent_stream(_query_text, agent)
+                            _agent_stream = _call_agent_stream(_query_text, agent)
                         else:
                             logger.info("Agent reply: %r", agent_text)
 
-                        # Maintain multi-turn history only for the "direct" fast path.
-                        # Proxied agents (Hermes, etc.) manage their own conversation state.
-                        # A pure volume command never touched history (no user turn).
-                        if agent == "direct" and _dispatch:
-                            history.append({"role": "assistant", "content": agent_text})
-                            if len(history) > 1 + _MAX_HISTORY_TURNS * 2:
-                                history = (
-                                    history[:1] + history[-(_MAX_HISTORY_TURNS * 2) :]
-                                )
+                        # Multi-turn history for the "direct" fast path is
+                        # updated after the stream fully drains (below,
+                        # alongside _reply_accum) — the full reply text isn't
+                        # known until then. Proxied agents (Hermes, etc.)
+                        # manage their own conversation state. A pure volume
+                        # command / switch-only reply never touched history
+                        # (no user turn — _dispatch is False in both cases).
+
+                        # Collects the direct path's streamed sentences so the
+                        # full reply can be appended to history once the
+                        # stream drains (see the post-loop history update
+                        # below) — proxied agents don't need this, they own
+                        # their own history.
+                        _reply_accum: List[str] = []
 
                         # Unified raw-text source for synthesis: either the one
-                        # already-resolved agent_text (direct/volume paths), or
-                        # the confirm prefix followed by each sentence as Hermes
-                        # streams it in — re-run through split_for_speech() either
-                        # way for markdown-aware normalization + TTS-sized chunking.
+                        # already-resolved agent_text (volume/switch-only
+                        # paths), or the confirm prefix followed by each
+                        # sentence as it streams in (direct or Hermes) — re-run
+                        # through split_for_speech() either way for
+                        # markdown-aware normalization + TTS-sized chunking.
                         async def _raw_text_chunks() -> AsyncIterator[str]:
-                            if _hermes_stream is None:
+                            if _agent_stream is None:
                                 yield agent_text
                                 return
                             if _confirm_prefix:
                                 yield _confirm_prefix
-                            async for _sentence in _hermes_stream:
+                            async for _sentence in _agent_stream:
+                                if agent == "direct":
+                                    _reply_accum.append(_sentence)
                                 yield _sentence
 
                         _synth_q: asyncio.Queue[bytes | None] = asyncio.Queue(maxsize=2)
@@ -1269,13 +1370,37 @@ async def voice_endpoint(ws: WebSocket) -> None:
                         try:
                             while not _stop_requested.is_set():
                                 _get = asyncio.create_task(_synth_q.get())
+                                # synth_task must be in this wait set too: if it
+                                # dies before ever reaching a sentinel put() (an
+                                # exception from _raw_text_chunks()/_agent_stream,
+                                # not just from the TTS-synth try/except that
+                                # already sentinels on failure), _synth_q.get()
+                                # would otherwise never complete and this loop
+                                # would hang forever waiting for a queue item
+                                # that's never coming (live regression introduced
+                                # 2026-08-27 by making the direct path stream —
+                                # the old blocking _call_llm raised before this
+                                # loop even started, so this race didn't exist).
+                                # Once synth_task finishes it stays "done" for
+                                # every later asyncio.wait() call too, so a
+                                # SUCCESSFUL finish must not short-circuit this
+                                # loop before its already-queued items (up to and
+                                # including the sentinel) are actually drained —
+                                # only break on synth_task's completion when the
+                                # queue is confirmed empty (nothing more is ever
+                                # coming); otherwise loop again so a fresh _get
+                                # picks up what's already sitting in the queue.
                                 _done, _ = await asyncio.wait(
-                                    {_get, _stop_wait},
+                                    {_get, _stop_wait, synth_task},
                                     return_when=asyncio.FIRST_COMPLETED,
                                 )
                                 if _get not in _done:
                                     _get.cancel()
-                                    break
+                                    if _stop_wait in _done:
+                                        break
+                                    if _synth_q.empty():
+                                        break
+                                    continue
                                 pcm = _get.result()
                                 if pcm is None:
                                     break
@@ -1319,17 +1444,40 @@ async def voice_endpoint(ws: WebSocket) -> None:
                             # cancel at its next suspension point.
                             while not _synth_q.empty():
                                 _synth_q.get_nowait()
+                            # synth_task's exception (if any) is re-raised below,
+                            # once every task has been drained/awaited here —
+                            # unlike watcher/_stop_wait (fire-and-forget
+                            # infrastructure tasks; the watcher may hold a
+                            # WebSocketDisconnect from a mid-stream close,
+                            # swallowed here since the main receive loop observes
+                            # the close itself on its next ws.receive()),
+                            # synth_task carries the actual reply generation —
+                            # an unexpected exception there (TTS, or the
+                            # underlying LLM/agent stream) must still reach the
+                            # pipeline's outer error handler for the usual
+                            # idle-state reset + history rollback, same as
+                            # before this path streamed rather than blocked.
+                            _synth_exc: Exception | None = None
                             for _task in (watcher, _stop_wait, synth_task):
-                                # The watcher may hold a WebSocketDisconnect from a
-                                # mid-stream close; swallow it here — the main
-                                # receive loop observes the close itself on its
-                                # next ws.receive().
                                 try:
                                     await _task
                                 except asyncio.CancelledError:
                                     pass
-                                except Exception:
-                                    pass
+                                except Exception as _t_exc:
+                                    if _task is synth_task:
+                                        _synth_exc = _t_exc
+                        if _synth_exc is not None:
+                            raise _synth_exc
+
+                        # Now that the stream has fully drained (or been
+                        # STOPped — _reply_accum holds whatever was actually
+                        # spoken either way), persist the direct path's full
+                        # reply to multi-turn history.
+                        if agent == "direct" and _agent_stream is not None and _reply_accum:
+                            _full_reply = _confirm_prefix + " ".join(_reply_accum)
+                            history.append({"role": "assistant", "content": _full_reply})
+                            if len(history) > 1 + _MAX_HISTORY_TURNS * 2:
+                                history = history[:1] + history[-(_MAX_HISTORY_TURNS * 2) :]
 
                         await ws.send_text("END")
                         state = _State.IDLE

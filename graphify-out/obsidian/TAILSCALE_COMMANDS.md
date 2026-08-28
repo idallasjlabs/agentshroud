@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/TAILSCALE_COMMANDS.md"
 type: "document"
-community: "Community 725"
+community: "Community 361"
 location: "L1"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Community_725
+  - community/Community_361
 ---
 
 # TAILSCALE_COMMANDS.md
@@ -17,4 +17,4 @@ tags:
 - [[Tailscale Remote Access Setup]] - `contains` [EXTRACTED]
 - [[troubleshooting]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Community_725
+#graphify/document #graphify/INFERRED #community/Community_361

@@ -1,22 +1,24 @@
 ---
 type: community
+cohesion: 0.22
 members: 9
 ---
 
 # Community 885
 
+**Cohesion:** 0.22 - loosely connected
 **Members:** 9 nodes
 
 ## Members
-- [[Input Requirements_9]] - document - .agents/skills/i-vulcan/SKILL.md
-- [[Output Format_12]] - document - .agents/skills/i-vulcan/SKILL.md
-- [[Persona_7]] - document - .agents/skills/i-vulcan/SKILL.md
-- [[Quality Checklist_8]] - document - .agents/skills/i-vulcan/SKILL.md
-- [[Role_39]] - document - .agents/skills/i-vulcan/SKILL.md
-- [[SKILL_63]] - document - .agents/skills/i-vulcan/SKILL.md
-- [[System Prompt_7]] - document - .agents/skills/i-vulcan/SKILL.md
-- [[User Prompt Template_3]] - document - .agents/skills/i-vulcan/SKILL.md
-- [[Vulcan — Subject Matter Auditor_1]] - document - .agents/skills/i-vulcan/SKILL.md
+- [[Current Focus (AgentShroud v1.2.x — Fortress)]] - document - docker/bots/openclaw/workspace/collaborator-workspace/SOUL.md
+- [[Decision-Making Style]] - document - docker/bots/openclaw/workspace/collaborator-workspace/SOUL.md
+- [[How to Represent Isaiah]] - document - docker/bots/openclaw/workspace/collaborator-workspace/SOUL.md
+- [[Identity_1]] - document - docker/bots/openclaw/workspace/collaborator-workspace/SOUL.md
+- [[Long-Term Goals]] - document - docker/bots/openclaw/workspace/collaborator-workspace/SOUL.md
+- [[SOUL_1]] - document - docker/bots/openclaw/workspace/collaborator-workspace/SOUL.md
+- [[SOUL]] - document - docker/bots/openclaw/workspace/collaborator-workspace/SOUL.md
+- [[Thinking Style]] - document - docker/bots/openclaw/workspace/collaborator-workspace/SOUL.md
+- [[Values_1]] - document - docker/bots/openclaw/workspace/collaborator-workspace/SOUL.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,49 +1,63 @@
 ---
 type: community
-members: 36
+cohesion: 0.06
+members: 48
 ---
 
 # Community 125
 
-**Members:** 36 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 48 nodes
 
 ## Members
-- [[._all_not_run_patches()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_all_domains_have_required_fields()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_clean_tools_improve_score()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_compliance_new_keys_present()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_compute_weighted_subscore_full_score()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_compute_weighted_subscore_zero_for_empty_map()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_disa_stig_domain_map_valid()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_eu_ai_act_domain_map_valid()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_iso_42001_domain_map_valid()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_maturity_labels_valid()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_network_segmentation_baseline_three()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_nist_csf_domain_map_valid()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_overall_maturity_present()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_returns_thirty_three_domains()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_scorecard_domain_ids_are_sequential()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_secrets_management_baseline_two()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_standard_basis_present()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_timestamp_present()_1]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_totals_present()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_version_is_v090()]] - code - gateway/tests/test_scanner_integration.py
-- [[Compute the 33-domain Security Scorecard.      Domains 1–21 Container infrastru]] - rationale - gateway/security/scanner_integration.py
-- [[DISA STIG domain map references only valid domain IDs.]] - rationale - gateway/tests/test_scanner_integration.py
-- [[Determine composite compliance level using the weakest-link rule.      All 7 sub]] - rationale - gateway/security/scanner_integration.py
-- [[Determine the highest achieved IEC 62443 Security Level.      SL 1 All IEC-mapp]] - rationale - gateway/security/scanner_integration.py
-- [[EU AI Act domain map references only valid domain IDs.]] - rationale - gateway/tests/test_scanner_integration.py
-- [[ISO 42001 domain map references only valid domain IDs.]] - rationale - gateway/tests/test_scanner_integration.py
-- [[NIST CSF domain map references only valid domain IDs.]] - rationale - gateway/tests/test_scanner_integration.py
-- [[New compliance sub-scores (EU AI Act, ISO 42001, NIST CSF, DISA STIG) appear in]] - rationale - gateway/tests/test_scanner_integration.py
-- [[Return weighted sub-score as 0.0–100.0 percentage.]] - rationale - gateway/security/scanner_integration.py
-- [[TestComputeScorecard]] - code - gateway/tests/test_scanner_integration.py
-- [[_compute_weighted_subscore returns 0.0 for an empty domain map.]] - rationale - gateway/tests/test_scanner_integration.py
-- [[_compute_weighted_subscore returns 100.0 when all domains score 5.]] - rationale - gateway/tests/test_scanner_integration.py
-- [[_compute_weighted_subscore()]] - code - gateway/security/scanner_integration.py
-- [[_determine_compliance_level()]] - code - gateway/security/scanner_integration.py
-- [[_determine_iec_sl()]] - code - gateway/security/scanner_integration.py
-- [[compute_scorecard()]] - code - gateway/security/scanner_integration.py
+- [[.test_100_concurrent_submissions()]] - code - gateway/tests/test_approval_stress.py
+- [[.test_concurrent_submit_and_decide()]] - code - gateway/tests/test_approval_stress.py
+- [[.test_double_decide_raises()]] - code - gateway/tests/test_approval_stress.py
+- [[.test_expired_request_cannot_be_decided()]] - code - gateway/tests/test_approval_stress.py
+- [[.test_get_pending_expires_stale()]] - code - gateway/tests/test_approval_stress.py
+- [[.test_store_expires_old_items()]] - code - gateway/tests/test_approval_stress.py
+- [[.test_store_persists_across_reopen()]] - code - gateway/tests/test_approval_stress.py
+- [[.test_store_save_and_load()]] - code - gateway/tests/test_approval_stress.py
+- [[.test_store_update_status()]] - code - gateway/tests/test_approval_stress.py
+- [[100 concurrent approval requests.]] - rationale - gateway/tests/test_approval_stress.py
+- [[A pending approval request in the queue]] - rationale - gateway/ingest_api/models.py
+- [[ApprovalQueueItem_4]] - code - gateway/tests/test_approval_store.py
+- [[ApprovalQueueItem_3]] - code - gateway/ingest_api/models.py
+- [[AuditStore same idempotency contract as ApprovalStore.]] - rationale - gateway/tests/test_approval_store.py
+- [[Auto-expire old requests.]] - rationale - gateway/tests/test_approval_stress.py
+- [[Deciding an item persists the new status.]] - rationale - gateway/tests/test_approval_store.py
+- [[Deciding on already-decided request raises ValueError.]] - rationale - gateway/tests/test_approval_stress.py
+- [[Expired items are marked expired during load_pending.]] - rationale - gateway/tests/test_approval_store.py
+- [[Expired request raises ValueError on decide.]] - rationale - gateway/tests/test_approval_stress.py
+- [[Items saved by one store instance are visible to another.]] - rationale - gateway/tests/test_approval_store.py
+- [[Items saved to store can be reloaded.]] - rationale - gateway/tests/test_approval_stress.py
+- [[Items survive store closereopen cycle.]] - rationale - gateway/tests/test_approval_stress.py
+- [[Path_24]] - code - gateway/tests/test_approval_store.py
+- [[Queue persistence across restart.]] - rationale - gateway/tests/test_approval_stress.py
+- [[Re-initializing must not orphan the first aiosqlite connection.      aiosqlite c]] - rationale - gateway/tests/test_approval_store.py
+- [[Simulates a full restart cycle save, close, reopen, verify.]] - rationale - gateway/tests/test_approval_store.py
+- [[Status updates persist.]] - rationale - gateway/tests/test_approval_stress.py
+- [[Store marks expired items on load.]] - rationale - gateway/tests/test_approval_stress.py
+- [[Submit 100 requests concurrently — all should succeed.]] - rationale - gateway/tests/test_approval_stress.py
+- [[Submit and decide requests concurrently.]] - rationale - gateway/tests/test_approval_stress.py
+- [[TestApprovalStorePersistence]] - code - gateway/tests/test_approval_stress.py
+- [[TestApprovalTimeout]] - code - gateway/tests/test_approval_stress.py
+- [[TestAutoExpire]] - code - gateway/tests/test_approval_stress.py
+- [[TestConcurrentApprovalRequests]] - code - gateway/tests/test_approval_stress.py
+- [[Timeout handling for approval requests.]] - rationale - gateway/tests/test_approval_stress.py
+- [[_make_item()]] - code - gateway/tests/test_approval_store.py
+- [[get_pending should expire stale items.]] - rationale - gateway/tests/test_approval_stress.py
+- [[queue()]] - code - gateway/tests/test_approval_stress.py
+- [[store()]] - code - gateway/tests/test_approval_store.py
+- [[store()_1]] - code - gateway/tests/test_approval_stress.py
+- [[test_approval_store.py]] - code - gateway/tests/test_approval_store.py
+- [[test_approval_stress.py]] - code - gateway/tests/test_approval_stress.py
+- [[test_audit_store_initialize_is_idempotent()]] - code - gateway/tests/test_approval_store.py
+- [[test_decide_persists()]] - code - gateway/tests/test_approval_store.py
+- [[test_expired_items_on_reload()]] - code - gateway/tests/test_approval_store.py
+- [[test_initialize_is_idempotent()]] - code - gateway/tests/test_approval_store.py
+- [[test_persist_and_reload()]] - code - gateway/tests/test_approval_store.py
+- [[test_store_survives_restart()]] - code - gateway/tests/test_approval_store.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -53,20 +67,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 27 edges to [[_COMMUNITY_Community 59]]
-- 16 edges to [[_COMMUNITY_Community 123]]
-- 4 edges to [[_COMMUNITY_Community 558]]
-- 3 edges to [[_COMMUNITY_Community 512]]
-- 2 edges to [[_COMMUNITY_Community 85]]
-- 2 edges to [[_COMMUNITY_Community 178]]
-- 1 edge to [[_COMMUNITY_Community 1002]]
-- 1 edge to [[_COMMUNITY_Community 541]]
-- 1 edge to [[_COMMUNITY_Community 19]]
-- 1 edge to [[_COMMUNITY_Community 39]]
+- 33 edges to [[_COMMUNITY_Community 23]]
+- 9 edges to [[_COMMUNITY_Community 56]]
+- 6 edges to [[_COMMUNITY_Community 15]]
+- 4 edges to [[_COMMUNITY_Community 258]]
+- 1 edge to [[_COMMUNITY_Community 14]]
+- 1 edge to [[_COMMUNITY_Community 63]]
+- 1 edge to [[_COMMUNITY_Community 289]]
+- 1 edge to [[_COMMUNITY_RBAC & SOC Realtime]]
+- 1 edge to [[_COMMUNITY_Ingest API & Approval Routes]]
 
 ## Top bridge nodes
-- [[compute_scorecard()]] - degree 61, connects to 10 communities
-- [[._all_not_run_patches()]] - degree 18, connects to 2 communities
-- [[.test_clean_tools_improve_score()]] - degree 8, connects to 2 communities
-- [[_compute_weighted_subscore()]] - degree 6, connects to 2 communities
-- [[TestComputeScorecard]] - degree 21, connects to 1 community
+- [[ApprovalQueueItem_3]] - degree 30, connects to 6 communities
+- [[test_approval_stress.py]] - degree 11, connects to 3 communities
+- [[TestApprovalStorePersistence]] - degree 11, connects to 3 communities
+- [[TestApprovalTimeout]] - degree 9, connects to 3 communities
+- [[TestConcurrentApprovalRequests]] - degree 9, connects to 3 communities

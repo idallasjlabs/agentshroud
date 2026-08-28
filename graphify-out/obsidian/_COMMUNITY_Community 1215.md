@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1215
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[Athena — Knowledge Distiller_4]] - document - docker/config/openclaw/skills/i-athena/README.md
-- [[Purpose_75]] - document - docker/config/openclaw/skills/i-athena/README.md
-- [[README_80]] - document - docker/config/openclaw/skills/i-athena/README.md
-- [[Related Skills_81]] - document - docker/config/openclaw/skills/i-athena/README.md
-- [[Usage_83]] - document - docker/config/openclaw/skills/i-athena/README.md
+- [[CICD Pipeline Advisor (CICD)_1]] - document - docker/config/openclaw/skills/i-cicd/README.md
+- [[Purpose_80]] - document - docker/config/openclaw/skills/i-cicd/README.md
+- [[README_85]] - document - docker/config/openclaw/skills/i-cicd/README.md
+- [[Related Skills_86]] - document - docker/config/openclaw/skills/i-cicd/README.md
+- [[Usage_89]] - document - docker/config/openclaw/skills/i-cicd/README.md
 
 ## Live Query (requires Dataview plugin)
 

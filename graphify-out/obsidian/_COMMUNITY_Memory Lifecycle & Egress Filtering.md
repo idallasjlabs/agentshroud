@@ -1,0 +1,524 @@
+---
+type: community
+cohesion: 0.01
+members: 372
+---
+
+# Memory Lifecycle & Egress Filtering
+
+**Cohesion:** 0.01 - loosely connected
+**Members:** 372 nodes
+
+## Members
+- [[NOTE Gateway-side Slack Socket Mode listener removed.]] - rationale - gateway/ingest_api/lifespan.py
+- [[.__init__()_14]] - code - gateway/ingest_api/middleware.py
+- [[.__init__()_44]] - code - gateway/proxy/web_proxy.py
+- [[.__init__()_54]] - code - gateway/security/approval_hardening.py
+- [[.__init__()_59]] - code - gateway/security/browser_security.py
+- [[.__init__()_72]] - code - gateway/security/dns_filter.py
+- [[.__init__()_95]] - code - gateway/security/memory_integrity.py
+- [[.__init__()_96]] - code - gateway/security/memory_lifecycle.py
+- [[.__init__()_102]] - code - gateway/security/oauth_security.py
+- [[.__init__()_106]] - code - gateway/security/path_isolation.py
+- [[.__init__()_126]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[.__init__()_128]] - code - gateway/security/xml_leak_filter.py
+- [[.__post_init__()_6]] - code - gateway/security/memory_lifecycle.py
+- [[.__post_init__()_7]] - code - gateway/security/memory_lifecycle.py
+- [[._analyze_request_for_rbac()]] - code - gateway/ingest_api/middleware.py
+- [[._check_cross_session_access()]] - code - gateway/ingest_api/middleware.py
+- [[._check_rbac_permissions()]] - code - gateway/ingest_api/middleware.py
+- [[._cleanup_old_actions()]] - code - gateway/security/memory_lifecycle.py
+- [[._cleanup_old_threats()]] - code - gateway/security/memory_lifecycle.py
+- [[._compute_file_hash()]] - code - gateway/security/memory_integrity.py
+- [[._detect_modification_source()]] - code - gateway/security/memory_integrity.py
+- [[._domain_matches_pattern()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[._enforce_session_isolation()]] - code - gateway/ingest_api/middleware.py
+- [[._ensure_base_directory()]] - code - gateway/security/path_isolation.py
+- [[._extract_code_blocks()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[._extract_user_id()]] - code - gateway/ingest_api/middleware.py
+- [[._is_domain_allowed()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[._is_in_write_window()]] - code - gateway/security/memory_integrity.py
+- [[._is_internal_link()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[._is_private_ip()_1]] - code - gateway/security/dns_filter.py
+- [[._is_tool_call_request()]] - code - gateway/ingest_api/middleware.py
+- [[._load_integrity_database()]] - code - gateway/security/memory_integrity.py
+- [[._load_write_windows()]] - code - gateway/security/memory_integrity.py
+- [[._record_guard_init_failure()]] - code - gateway/ingest_api/middleware.py
+- [[._restore_code_blocks()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[._save_integrity_database()]] - code - gateway/security/memory_integrity.py
+- [[._save_write_windows()]] - code - gateway/security/memory_integrity.py
+- [[._url_has_blocked_patterns()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[.archive_file()]] - code - gateway/security/memory_lifecycle.py
+- [[.check_rebinding()]] - code - gateway/security/dns_filter.py
+- [[.cleanup_expired_canaries()]] - code - gateway/security/output_canary.py
+- [[.clear_old_alerts()]] - code - gateway/security/memory_integrity.py
+- [[.create_consent_cookie()]] - code - gateway/security/oauth_security.py
+- [[.dns_filter()]] - code - gateway/tests/test_dns_filter.py
+- [[.enforce_daily_notes_retention()]] - code - gateway/security/memory_lifecycle.py
+- [[.enforce_memory_md_size_limit()]] - code - gateway/security/memory_lifecycle.py
+- [[.filter_function_calls_only()]] - code - gateway/security/xml_leak_filter.py
+- [[.from_dict()_8]] - code - gateway/security/memory_integrity.py
+- [[.get_active_users()]] - code - gateway/security/path_isolation.py
+- [[.get_integrity_status()]] - code - gateway/security/memory_integrity.py
+- [[.get_lifecycle_status()]] - code - gateway/security/memory_lifecycle.py
+- [[.get_recent_actions()]] - code - gateway/security/memory_lifecycle.py
+- [[.get_recent_alerts()]] - code - gateway/security/memory_integrity.py
+- [[.get_recent_threats()]] - code - gateway/security/memory_lifecycle.py
+- [[.get_stats()_18]] - code - gateway/security/path_isolation.py
+- [[.process_request()]] - code - gateway/ingest_api/middleware.py
+- [[.record_state_used()]] - code - gateway/security/oauth_security.py
+- [[.register_expected_write()]] - code - gateway/security/memory_integrity.py
+- [[.register_known_shared_ids()]] - code - gateway/security/oauth_security.py
+- [[.register_screenshot_hook()]] - code - gateway/security/browser_security.py
+- [[.resolve_and_cache()]] - code - gateway/security/dns_filter.py
+- [[.run_lifecycle_maintenance()]] - code - gateway/security/memory_lifecycle.py
+- [[.sanitize()_1]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[.sanitize_content()]] - code - gateway/security/memory_lifecycle.py
+- [[.sanitize_images()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[.sanitize_links()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[.scan_all_monitored_files()]] - code - gateway/security/memory_integrity.py
+- [[.scan_content_for_threats()]] - code - gateway/security/memory_lifecycle.py
+- [[.scan_file()]] - code - gateway/security/memory_integrity.py
+- [[.setup_method()_9]] - code - gateway/tests/test_memory_lifecycle.py
+- [[.setup_method()_10]] - code - gateway/tests/test_memory_lifecycle.py
+- [[.setup_method()_11]] - code - gateway/tests/test_memory_lifecycle.py
+- [[.setup_method()_37]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.teardown_method()_1]] - code - gateway/tests/test_memory_lifecycle.py
+- [[.teardown_method()_2]] - code - gateway/tests/test_memory_lifecycle.py
+- [[.teardown_method()_3]] - code - gateway/tests/test_memory_lifecycle.py
+- [[.test_allowlist_blocks_unlisted_in_enforce()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_allowlist_permits_listed_domain()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_allowlist_permits_subdomain()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_blocked_pattern_detection()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_browser_security_guard_instantiates()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_burst_queries_flagged()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_code_blocks_preserved()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_config_from_env()]] - code - gateway/tests/test_memory_lifecycle.py
+- [[.test_content_sanitization()]] - code - gateway/tests/test_memory_lifecycle.py
+- [[.test_context_guard_instantiates()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_convenience_function()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_cooldown_disabled_when_feature_disabled()]] - code - gateway/tests/test_approval_hardening.py
+- [[.test_custom_config()_3]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_daily_notes_retention()]] - code - gateway/tests/test_memory_lifecycle.py
+- [[.test_deception_detection_disabled()]] - code - gateway/tests/test_approval_hardening.py
+- [[.test_default_config()_4]] - code - gateway/tests/test_memory_lifecycle.py
+- [[.test_default_config()_7]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_defaults()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_denied_with_reason()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_dns_filter_default_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_domain_matching_patterns()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_edge_cases()_4]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_empty_alt_text_handling()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_empty_or_none_input()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_empty_string()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_expected_write_window()]] - code - gateway/tests/test_memory_lifecycle.py
+- [[.test_external_domain_stripping()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_file_monitoring_new_file()]] - code - gateway/tests/test_memory_lifecycle.py
+- [[.test_flagged_queries_in_log()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_git_guard_instantiates()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_hash_computation()]] - code - gateway/tests/test_memory_lifecycle.py
+- [[.test_high_entropy_string()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_integrated_memory_protection()]] - code - gateway/tests/test_memory_lifecycle.py
+- [[.test_integrity_database_persistence()]] - code - gateway/tests/test_memory_lifecycle.py
+- [[.test_internal_link_detection()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_internal_links_preserved()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_is_domain_allowed()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_legitimate_links_preserved()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_lifecycle_maintenance()]] - code - gateway/tests/test_memory_lifecycle.py
+- [[.test_log_contains_timestamp()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_log_contains_verdict()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_logging()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_low_entropy_string()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_malicious_image_stripping()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_malicious_link_stripping()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_memory_md_size_limit()]] - code - gateway/tests/test_memory_lifecycle.py
+- [[.test_memory_write_validation()]] - code - gateway/tests/test_memory_lifecycle.py
+- [[.test_mixed_content_sanitization()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_multi_turn_tracker_instantiates()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_no_allowlist_allows_all()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_normal_rate_not_flagged()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_output_canary_instantiates()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_path_isolation_instantiates()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_performance_with_large_content()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_pii_detection()]] - code - gateway/tests/test_memory_lifecycle.py
+- [[.test_private_ip_detection()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_prompt_injection_detection()]] - code - gateway/tests/test_memory_lifecycle.py
+- [[.test_public_ip_not_private()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_queries_logged()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_realistic_web_scraping_result()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.test_resolve_and_cache_empty_domain_graceful()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_stable_resolution_passes()]] - code - gateway/tests/test_dns_filter.py
+- [[.test_status_reporting()]] - code - gateway/tests/test_memory_lifecycle.py
+- [[.test_subagent_monitor_default_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_tampering_detection()]] - code - gateway/tests/test_memory_lifecycle.py
+- [[.test_threat_cleanup()]] - code - gateway/tests/test_memory_lifecycle.py
+- [[.test_warn_mode()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[.to_dict()_11]] - code - gateway/security/memory_integrity.py
+- [[.validate_consent_cookie()]] - code - gateway/security/oauth_security.py
+- [[.validate_memory_write()]] - code - gateway/security/memory_lifecycle.py
+- [[.verify_pkce()]] - code - gateway/security/oauth_security.py
+- [[Action]] - code - gateway/ingest_api/middleware.py
+- [[Action taken during retention policy enforcement.]] - rationale - gateway/security/memory_lifecycle.py
+- [[Analyze request to determine RBAC action, resource, and tool tier.]] - rationale - gateway/ingest_api/middleware.py
+- [[Anti-social-engineering hardening for approval queue.]] - rationale - gateway/security/approval_hardening.py
+- [[Any_8]] - code - gateway/ingest_api/middleware.py
+- [[Any_48]] - code - gateway/security/memory_integrity.py
+- [[Any_49]] - code - gateway/security/memory_lifecycle.py
+- [[ApprovalHardening]] - code - gateway/security/approval_hardening.py
+- [[ApprovalHardeningConfig]] - code - gateway/security/approval_hardening.py
+- [[Archive a file to the archive directory.]] - rationale - gateway/security/memory_lifecycle.py
+- [[Attach BufferHandler to the root agentshroud logger.]] - rationale - gateway/web/dashboard_endpoints.py
+- [[Attempt to detect the source of a file modification.          Detection strategy]] - rationale - gateway/security/memory_integrity.py
+- [[BrowserSecurityGuard]] - code - gateway/security/browser_security.py
+- [[Check RBAC permissions for the request.]] - rationale - gateway/ingest_api/middleware.py
+- [[Check for unauthorized cross-session access attempts.          Implementation]] - rationale - gateway/ingest_api/middleware.py
+- [[Check if URL contains any blocked patterns.]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
+- [[Check if a URL's domain is in the allowlist.]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
+- [[Check if a file is currently in a write grace window.]] - rationale - gateway/security/memory_integrity.py
+- [[Check if domain matches pattern (supports wildcards).]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
+- [[Check if this is an internal link (relative, anchor, etc.).]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
+- [[Clean up integration test environment.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Clean up old canaries to prevent memory leaks.          Args             max_ag]] - rationale - gateway/security/output_canary.py
+- [[Clean up old retention action records.]] - rationale - gateway/security/memory_lifecycle.py
+- [[Clean up old threat records.]] - rationale - gateway/security/memory_lifecycle.py
+- [[Clean up test environment.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Clear alerts older than N days.]] - rationale - gateway/security/memory_integrity.py
+- [[Combined memory security configuration.]] - rationale - gateway/security/memory_config.py
+- [[Compute SHA-256 hash of a file.]] - rationale - gateway/security/memory_integrity.py
+- [[Configuration for approval queue hardening.]] - rationale - gateway/security/approval_hardening.py
+- [[Configuration for memory file integrity monitoring.]] - rationale - gateway/security/memory_config.py
+- [[Configuration for memory lifecycle management.]] - rationale - gateway/security/memory_config.py
+- [[Configuration for path isolation system.]] - rationale - gateway/security/path_isolation.py
+- [[Configuration for tool result markdown sanitization.]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
+- [[ContentThreat]] - code - gateway/security/memory_lifecycle.py
+- [[ContentThreatType]] - code - gateway/security/memory_lifecycle.py
+- [[Convenience function to sanitize tool result content.      Args         content]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
+- [[Convert to dictionary for JSON serialization.]] - rationale - gateway/security/memory_integrity.py
+- [[Create base agentshroud temp directory if it doesn't exist.]] - rationale - gateway/security/path_isolation.py
+- [[Create from dictionary for JSON deserialization.]] - rationale - gateway/security/memory_integrity.py
+- [[DNSFilter]] - code - gateway/security/dns_filter.py
+- [[DNSFilterConfig]] - code - gateway/security/dns_filter.py
+- [[Detected threat in memory file content.]] - rationale - gateway/security/memory_lifecycle.py
+- [[EgressFilterConfig_1]] - code - gateway/security/egress_filter.py
+- [[Enforce per-user, per-bot session isolation rules.          Each (user_id, bot_i]] - rationale - gateway/ingest_api/middleware.py
+- [[Enforce retention policy for daily notes.]] - rationale - gateway/security/memory_lifecycle.py
+- [[Enforce size limit for MEMORY.md file.]] - rationale - gateway/security/memory_lifecycle.py
+- [[Enhanced markdown sanitizer with configurable domain allowlist.]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
+- [[Exception_2]] - code - gateway/ingest_api/middleware.py
+- [[Extract code blocks to preserve them during sanitization.]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
+- [[Extract user ID from request data.]] - rationale - gateway/ingest_api/middleware.py
+- [[FastAPI_2]] - code - gateway/ingest_api/lifespan.py
+- [[FastAPI lifespan - startup and shutdown]] - rationale - gateway/ingest_api/lifespan.py
+- [[FileIntegrityRecord]] - code - gateway/security/memory_integrity.py
+- [[Filter to remove sensitive XML and path information from outbound responses.]] - rationale - gateway/security/xml_leak_filter.py
+- [[Get alerts from the last N hours.]] - rationale - gateway/security/memory_integrity.py
+- [[Get current integrity monitoring status.]] - rationale - gateway/security/memory_integrity.py
+- [[Get current lifecycle management status.]] - rationale - gateway/security/memory_lifecycle.py
+- [[Get retention actions taken in the last N hours.]] - rationale - gateway/security/memory_lifecycle.py
+- [[Get set of currently active users.]] - rationale - gateway/security/path_isolation.py
+- [[Get statistics about path isolation manager.]] - rationale - gateway/security/path_isolation.py
+- [[Get threats detected in the last N hours.]] - rationale - gateway/security/memory_lifecycle.py
+- [[Initialize all security modules.]] - rationale - gateway/ingest_api/middleware.py
+- [[Initialize the filter with predefined patterns.]] - rationale - gateway/security/xml_leak_filter.py
+- [[Install warning filter once for uvicorn logger.]] - rationale - gateway/ingest_api/lifespan.py
+- [[Integration tests for the sanitizer.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Known private ranges should be detected.]] - rationale - gateway/tests/test_dns_filter.py
+- [[Load active write windows from disk.]] - rationale - gateway/security/memory_integrity.py
+- [[Load integrity database from disk.]] - rationale - gateway/security/memory_integrity.py
+- [[LogSanitizer]] - code - gateway/ingest_api/middleware.py
+- [[Main Output Canary System for detecting prompt leakage.      This system generat]] - rationale - gateway/security/output_canary.py
+- [[Manages memory file lifecycle and content security.]] - rationale - gateway/security/memory_lifecycle.py
+- [[Manages per-user path isolation for temporary files and directories.]] - rationale - gateway/security/path_isolation.py
+- [[MemoryIntegrityConfig_1]] - code - gateway/security/memory_integrity.py
+- [[MemoryIntegrityConfig]] - code - gateway/security/memory_config.py
+- [[MemoryIntegrityMonitor]] - code - gateway/security/memory_integrity.py
+- [[MemoryLifecycleConfig_1]] - code - gateway/security/memory_lifecycle.py
+- [[MemoryLifecycleConfig]] - code - gateway/security/memory_config.py
+- [[MemoryLifecycleManager]] - code - gateway/security/memory_lifecycle.py
+- [[MemorySecurityConfig]] - code - gateway/security/memory_config.py
+- [[MiddlewareResult]] - code - gateway/ingest_api/middleware.py
+- [[ModificationSource]] - code - gateway/security/memory_integrity.py
+- [[Monitors integrity of critical memory files.]] - rationale - gateway/security/memory_integrity.py
+- [[OAuthSecurityValidator]] - code - gateway/security/oauth_security.py
+- [[OutputCanary]] - code - gateway/security/output_canary.py
+- [[Path_15]] - code - gateway/security/memory_integrity.py
+- [[Path_16]] - code - gateway/security/memory_lifecycle.py
+- [[Path Isolation Manager Tests]] - code - gateway/tests/test_path_isolation.py
+- [[PathIsolationConfig]] - code - gateway/security/path_isolation.py
+- [[PathIsolationManager]] - code - gateway/security/path_isolation.py
+- [[Process request through all middleware modules.]] - rationale - gateway/ingest_api/middleware.py
+- [[Public IPs should not be flagged as private.]] - rationale - gateway/tests/test_dns_filter.py
+- [[Quick filter that only removes function call XML (for performance).          Arg]] - rationale - gateway/security/xml_leak_filter.py
+- [[RBACManager]] - code - gateway/ingest_api/middleware.py
+- [[Record a guard __init__ exception so the request path can fail closed.]] - rationale - gateway/ingest_api/middleware.py
+- [[Record of a file's integrity state.]] - rationale - gateway/security/memory_integrity.py
+- [[Register an expected write to a file to prevent false alerts.]] - rationale - gateway/security/memory_integrity.py
+- [[Remove or warn about markdown images pointing to non-allowlisted domains.]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
+- [[Resolve domain to an IP and cache it for 5 minutes.]] - rationale - gateway/security/dns_filter.py
+- [[Resolve each configured bot's OWN Telegram token, distinct from the default.]] - rationale - gateway/ingest_api/lifespan.py
+- [[Resolving a domain that fails should return empty string gracefully.]] - rationale - gateway/tests/test_dns_filter.py
+- [[Resource]] - code - gateway/ingest_api/middleware.py
+- [[Restore code blocks after sanitization.]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
+- [[Result from middleware processing.]] - rationale - gateway/ingest_api/middleware.py
+- [[RetentionAction]] - code - gateway/security/memory_lifecycle.py
+- [[Return True if a DNS rebinding attack is detected.          Re-resolves the doma]] - rationale - gateway/security/dns_filter.py
+- [[Return True if the IP address is in a private  loopback range.]] - rationale - gateway/security/dns_filter.py
+- [[Return True only when the request contains actual tool calls or tool results.]] - rationale - gateway/ingest_api/middleware.py
+- [[Run all lifecycle maintenance tasks.]] - rationale - gateway/security/memory_lifecycle.py
+- [[Sanitize content by removingredacting threats.]] - rationale - gateway/security/memory_lifecycle.py
+- [[Sanitize tool result content by filtering markdown links and images.          Ar]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py
+- [[Save active write windows to disk.]] - rationale - gateway/security/memory_integrity.py
+- [[Save integrity database to disk.]] - rationale - gateway/security/memory_integrity.py
+- [[Scan a single file for integrity changes.]] - rationale - gateway/security/memory_integrity.py
+- [[Scan all configured monitored files and directories.]] - rationale - gateway/security/memory_integrity.py
+- [[Scan memory file content for security threats.]] - rationale - gateway/security/memory_lifecycle.py
+- [[Scanner for detecting prompt injection in tool results.]] - rationale - gateway/security/tool_result_injection.py
+- [[Seeding the same IP twice should not flag rebinding.]] - rationale - gateway/tests/test_dns_filter.py
+- [[Set up integration test environment.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Set up test environment.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Set up test fixtures._3]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Source of a file modification.]] - rationale - gateway/security/memory_integrity.py
+- [[SubagentMonitorConfig]] - code - gateway/security/subagent_monitor.py
+- [[Suppress noisy uvicorn warning spam for malformed probe traffic.]] - rationale - gateway/ingest_api/lifespan.py
+- [[Test MEMORY.md size limit enforcement.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test PII detection in memory content.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test ToolResultSanitizerConfig.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test cleanup of old threat records.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test complete lifecycle maintenance run.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test complete memory protection workflow.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test configuration from environment variables.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test content sanitization removes threats.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test cooldown is disabled when feature is disabled.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test custom configuration.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test default configuration values._3]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test default configuration values._5]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test detection of blocked patterns in URLs.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test detection of internalrelative links.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test detection of unauthorized modifications.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test domain allowlist checking.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test domain pattern matching including wildcards.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test edge cases and malformed inputs.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test file hash computation.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test handling of empty or None input.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test handling of images with empty alt text.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test integration of memory security components.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test integrity database saves and loads correctly.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test memory integrity configuration.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test memory integrity monitoring.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test memory lifecycle management.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test monitoring a new file.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test performance with large content.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test prompt injection detection.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test retention policy for daily notes.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test sanitization of mixed legitimate and malicious content.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test sanitizing a realistic web scraping result.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test status reporting from both components.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test stripping of links to non-allowlisted domains.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test stripping of malicious markdown images.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test stripping of malicious markdown links.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test that appropriate logging occurs.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test that code blocks with URLs are preserved.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test that deception detection can be disabled.]] - rationale - gateway/tests/test_approval_hardening.py
+- [[Test that internalrelative links are preserved.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test that legitimate links are preserved.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test the convenience sanitize_tool_result function.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test validation before writing to memory files.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test warn mode that marks but preserves external content.]] - rationale - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[Test write grace window prevents false alerts.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[TestAuditLogging]] - code - gateway/tests/test_dns_filter.py
+- [[TestDNSAllowlist]] - code - gateway/tests/test_dns_filter.py
+- [[TestDNSRebinding]] - code - gateway/tests/test_dns_filter.py
+- [[TestEntropyCalculator]] - code - gateway/tests/test_dns_filter.py
+- [[TestGetModuleModeEnforceDefault]] - code - gateway/tests/test_all_modules_enforce.py
+- [[TestIntegration_1]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[TestMemoryIntegrityConfig]] - code - gateway/tests/test_memory_lifecycle.py
+- [[TestMemoryIntegrityMonitor]] - code - gateway/tests/test_memory_lifecycle.py
+- [[TestMemoryLifecycleManager]] - code - gateway/tests/test_memory_lifecycle.py
+- [[TestMemorySecurityIntegration]] - code - gateway/tests/test_memory_lifecycle.py
+- [[TestMiddlewareResult]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestModuleConfigDefaults]] - code - gateway/tests/test_all_modules_enforce.py
+- [[TestModuleInstantiationInEnforceMode]] - code - gateway/tests/test_all_modules_enforce.py
+- [[TestRateLimiting_1]] - code - gateway/tests/test_dns_filter.py
+- [[TestToolResultSanitizer_1]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[TestToolResultSanitizerConfig]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[ToolResultInjectionScanner]] - code - gateway/security/tool_result_injection.py
+- [[ToolResultSanitizer_1]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[ToolResultSanitizerConfig]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[ToolTier]] - code - gateway/ingest_api/middleware.py
+- [[Types of content threats detected in memory files.]] - rationale - gateway/security/memory_lifecycle.py
+- [[Validate content before writing to memory file.]] - rationale - gateway/security/memory_lifecycle.py
+- [[Verify get_module_mode returns enforce when no override is set.]] - rationale - gateway/tests/test_all_modules_enforce.py
+- [[Verify individual module configs default to enforce mode.]] - rationale - gateway/tests/test_all_modules_enforce.py
+- [[Verify modules can instantiate and operate in enforce mode.]] - rationale - gateway/tests/test_all_modules_enforce.py
+- [[Wu et al. 2026 — Browser-based attacks on AI agents (arXiv2601.07263)]] - paper - gateway/security/browser_security.py
+- [[XMLLeakFilter]] - code - gateway/security/xml_leak_filter.py
+- [[_DropInvalidHTTPRequestFilter]] - code - gateway/ingest_api/lifespan.py
+- [[_build_bridge() — test-local reimplementation of the ResourceGuard→AlertDispatcher bridge closure]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[_build_per_bot_telegram_tokens()]] - code - gateway/ingest_api/lifespan.py
+- [[_install_uvicorn_warning_filter()]] - code - gateway/ingest_api/lifespan.py
+- [[any]] - code - gateway/security/path_isolation.py
+- [[default_config()_1]] - code - gateway/tests/test_dns_filter.py
+- [[dns_filter()]] - code - gateway/tests/test_dns_filter.py
+- [[enforcement-audit-script.py]] - code - docs/planning/reviews/enforcement-audit-script.py
+- [[fail()_2]] - code - docs/planning/reviews/enforcement-audit-script.py
+- [[install_log_handler()]] - code - gateway/web/dashboard_endpoints.py
+- [[lifespan()_1]] - code - gateway/ingest_api/lifespan.py
+- [[lifespan.py]] - code - gateway/ingest_api/lifespan.py
+- [[memory_config.py]] - code - gateway/security/memory_config.py
+- [[memory_integrity.py]] - code - gateway/security/memory_integrity.py
+- [[memory_lifecycle.py]] - code - gateway/security/memory_lifecycle.py
+- [[middleware.py]] - code - gateway/ingest_api/middleware.py
+- [[monitor_config()]] - code - gateway/tests/test_dns_filter.py
+- [[monitor_filter()]] - code - gateway/tests/test_dns_filter.py
+- [[ok()]] - code - docs/planning/reviews/enforcement-audit-script.py
+- [[path_isolation.py]] - code - gateway/security/path_isolation.py
+- [[run()_3]] - code - docs/planning/reviews/enforcement-audit-script.py
+- [[sanitize_tool_result()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[strict_config()]] - code - gateway/tests/test_dns_filter.py
+- [[strict_filter()]] - code - gateway/tests/test_dns_filter.py
+- [[test_all_modules_enforce.py]] - code - gateway/tests/test_all_modules_enforce.py
+- [[test_dns_filter.py]] - code - gateway/tests/test_dns_filter.py
+- [[test_memory_lifecycle.py]] - code - gateway/tests/test_memory_lifecycle.py
+- [[test_tool_result_sanitizer_enhanced.py]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[tool_result_sanitizer_enhanced.py]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[warn()_1]] - code - docs/planning/reviews/enforcement-audit-script.py
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/Memory_Lifecycle__Egress_Filtering
+SORT file.name ASC
+```
+
+## Connections to other communities
+- 116 edges to [[_COMMUNITY_Security Audit & Drift Detection]]
+- 72 edges to [[_COMMUNITY_Middleware & Lifespan]]
+- 57 edges to [[_COMMUNITY_RBAC & SOC Realtime]]
+- 32 edges to [[_COMMUNITY_Community 95]]
+- 31 edges to [[_COMMUNITY_PII Sanitizer & E2E Tests]]
+- 31 edges to [[_COMMUNITY_Community 34]]
+- 29 edges to [[_COMMUNITY_Community 18]]
+- 25 edges to [[_COMMUNITY_Community 61]]
+- 23 edges to [[_COMMUNITY_Community 97]]
+- 22 edges to [[_COMMUNITY_Community 157]]
+- 19 edges to [[_COMMUNITY_Community 46]]
+- 19 edges to [[_COMMUNITY_Community 55]]
+- 18 edges to [[_COMMUNITY_Community 25]]
+- 17 edges to [[_COMMUNITY_Session Management]]
+- 16 edges to [[_COMMUNITY_Community 51]]
+- 15 edges to [[_COMMUNITY_Community 160]]
+- 15 edges to [[_COMMUNITY_Community 223]]
+- 13 edges to [[_COMMUNITY_Community 66]]
+- 13 edges to [[_COMMUNITY_Community 134]]
+- 12 edges to [[_COMMUNITY_Progressive Trust]]
+- 12 edges to [[_COMMUNITY_Community 43]]
+- 12 edges to [[_COMMUNITY_Community 410]]
+- 12 edges to [[_COMMUNITY_Community 175]]
+- 11 edges to [[_COMMUNITY_Key Vault & Audit Chain]]
+- 11 edges to [[_COMMUNITY_Community 165]]
+- 10 edges to [[_COMMUNITY_Ingest API & Approval Routes]]
+- 10 edges to [[_COMMUNITY_Community 132]]
+- 10 edges to [[_COMMUNITY_Community 130]]
+- 10 edges to [[_COMMUNITY_Community 88]]
+- 10 edges to [[_COMMUNITY_Community 478]]
+- 10 edges to [[_COMMUNITY_Community 131]]
+- 9 edges to [[_COMMUNITY_Community 78]]
+- 6 edges to [[_COMMUNITY_Community 23]]
+- 6 edges to [[_COMMUNITY_Community 26]]
+- 6 edges to [[_COMMUNITY_Community 48]]
+- 6 edges to [[_COMMUNITY_Community 47]]
+- 6 edges to [[_COMMUNITY_Community 22]]
+- 5 edges to [[_COMMUNITY_Community 32]]
+- 5 edges to [[_COMMUNITY_Community 17]]
+- 5 edges to [[_COMMUNITY_Community 31]]
+- 4 edges to [[_COMMUNITY_Community 19]]
+- 4 edges to [[_COMMUNITY_Community 258]]
+- 4 edges to [[_COMMUNITY_Community 167]]
+- 4 edges to [[_COMMUNITY_Community 199]]
+- 4 edges to [[_COMMUNITY_Community 124]]
+- 4 edges to [[_COMMUNITY_Community 21]]
+- 4 edges to [[_COMMUNITY_Community 557]]
+- 4 edges to [[_COMMUNITY_Community 39]]
+- 4 edges to [[_COMMUNITY_Community 181]]
+- 4 edges to [[_COMMUNITY_Community 182]]
+- 4 edges to [[_COMMUNITY_Community 200]]
+- 4 edges to [[_COMMUNITY_Telegram Proxy Inbound]]
+- 4 edges to [[_COMMUNITY_Community 286]]
+- 4 edges to [[_COMMUNITY_Community 115]]
+- 3 edges to [[_COMMUNITY_Community 100]]
+- 3 edges to [[_COMMUNITY_Community 33]]
+- 3 edges to [[_COMMUNITY_Community 87]]
+- 3 edges to [[_COMMUNITY_Community 807]]
+- 3 edges to [[_COMMUNITY_Community 273]]
+- 3 edges to [[_COMMUNITY_Community 24]]
+- 3 edges to [[_COMMUNITY_Community 509]]
+- 3 edges to [[_COMMUNITY_Community 1123]]
+- 3 edges to [[_COMMUNITY_Community 1058]]
+- 3 edges to [[_COMMUNITY_Community 1057]]
+- 3 edges to [[_COMMUNITY_Community 1026]]
+- 3 edges to [[_COMMUNITY_Community 70]]
+- 2 edges to [[_COMMUNITY_Community 553]]
+- 2 edges to [[_COMMUNITY_Community 50]]
+- 2 edges to [[_COMMUNITY_Community 142]]
+- 2 edges to [[_COMMUNITY_Community 75]]
+- 2 edges to [[_COMMUNITY_Community 83]]
+- 2 edges to [[_COMMUNITY_Community 44]]
+- 2 edges to [[_COMMUNITY_Community 363]]
+- 2 edges to [[_COMMUNITY_Community 214]]
+- 2 edges to [[_COMMUNITY_Community 155]]
+- 2 edges to [[_COMMUNITY_Community 106]]
+- 2 edges to [[_COMMUNITY_Community 82]]
+- 2 edges to [[_COMMUNITY_Community 45]]
+- 2 edges to [[_COMMUNITY_Community 20]]
+- 2 edges to [[_COMMUNITY_Community 174]]
+- 2 edges to [[_COMMUNITY_Community 217]]
+- 2 edges to [[_COMMUNITY_Community 52]]
+- 2 edges to [[_COMMUNITY_Community 241]]
+- 2 edges to [[_COMMUNITY_Community 101]]
+- 2 edges to [[_COMMUNITY_Community 64]]
+- 2 edges to [[_COMMUNITY_Config Validation & Router]]
+- 2 edges to [[_COMMUNITY_Adversarial Injection Guards]]
+- 2 edges to [[_COMMUNITY_Community 991]]
+- 1 edge to [[_COMMUNITY_Community 295]]
+- 1 edge to [[_COMMUNITY_Community 562]]
+- 1 edge to [[_COMMUNITY_Community 65]]
+- 1 edge to [[_COMMUNITY_Community 330]]
+- 1 edge to [[_COMMUNITY_Community 41]]
+- 1 edge to [[_COMMUNITY_Community 420]]
+- 1 edge to [[_COMMUNITY_Community 501]]
+- 1 edge to [[_COMMUNITY_Community 347]]
+- 1 edge to [[_COMMUNITY_Community 480]]
+- 1 edge to [[_COMMUNITY_Community 137]]
+- 1 edge to [[_COMMUNITY_Community 30]]
+- 1 edge to [[_COMMUNITY_Community 863]]
+- 1 edge to [[_COMMUNITY_Community 216]]
+- 1 edge to [[_COMMUNITY_SOC Collaborators]]
+- 1 edge to [[_COMMUNITY_Community 15]]
+- 1 edge to [[_COMMUNITY_Community 428]]
+- 1 edge to [[_COMMUNITY_Community 1063]]
+- 1 edge to [[_COMMUNITY_Community 85]]
+- 1 edge to [[_COMMUNITY_Community 159]]
+- 1 edge to [[_COMMUNITY_Community 1124]]
+- 1 edge to [[_COMMUNITY_Community 1125]]
+- 1 edge to [[_COMMUNITY_Community 1126]]
+- 1 edge to [[_COMMUNITY_Community 239]]
+- 1 edge to [[_COMMUNITY_Community 1350]]
+- 1 edge to [[_COMMUNITY_Community 812]]
+- 1 edge to [[_COMMUNITY_Community 1349]]
+- 1 edge to [[_COMMUNITY_Community 815]]
+- 1 edge to [[_COMMUNITY_Community 38]]
+- 1 edge to [[_COMMUNITY_Community 546]]
+- 1 edge to [[_COMMUNITY_Community 510]]
+- 1 edge to [[_COMMUNITY_Community 871]]
+- 1 edge to [[_COMMUNITY_Community 605]]
+- 1 edge to [[_COMMUNITY_Community 63]]
+- 1 edge to [[_COMMUNITY_Community 79]]
+- 1 edge to [[_COMMUNITY_Community 281]]
+- 1 edge to [[_COMMUNITY_Community 424]]
+
+## Top bridge nodes
+- [[lifespan.py]] - degree 134, connects to 73 communities
+- [[lifespan()_1]] - degree 85, connects to 51 communities
+- [[MiddlewareResult]] - degree 124, connects to 38 communities
+- [[middleware.py]] - degree 56, connects to 21 communities
+- [[Any_8]] - degree 55, connects to 18 communities

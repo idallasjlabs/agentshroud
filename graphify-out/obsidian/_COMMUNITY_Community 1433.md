@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 1.00
 members: 2
 ---
 
 # Community 1433
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[Container Architecture (gateway + bot hardening)]] - concept - docs/architecture/agentic-os.md
-- [[asb CLI — Deployment Tool]] - code - docs/architecture/agentic-os.md
+- [[SKILL_2]] - document - .agents/skills/i-agile/SKILL.md
+- [[Skill agile]] - document - .agents/skills/i-agile/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

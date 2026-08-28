@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-atlas/README.md"
 type: "document"
-community: "Community 1029"
+community: "Community 1033"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Community_1029
+  - community/Community_1033
 ---
 
 # Atlas — Curriculum Architect (README)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Atlas — Curriculum Architect (SKILL)]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Community_1029
+#graphify/document #graphify/INFERRED #community/Community_1033

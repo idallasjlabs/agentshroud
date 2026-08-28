@@ -1,20 +1,22 @@
 ---
 type: community
+cohesion: 0.29
 members: 7
 ---
 
 # Community 1005
 
+**Cohesion:** 0.29 - loosely connected
 **Members:** 7 nodes
 
 ## Members
-- [[Operating Rules (Non-Negotiable)]] - document - .agents/skills/i-aws/SKILL.md
-- [[Rule 1 All Regions, Every Time]] - document - .agents/skills/i-aws/SKILL.md
-- [[Rule 2 Default Read-Only]] - document - .agents/skills/i-aws/SKILL.md
-- [[Rule 3 Script Everything]] - document - .agents/skills/i-aws/SKILL.md
-- [[Rule 4 Evidence-First Recommendations]] - document - .agents/skills/i-aws/SKILL.md
-- [[Rule 5 Safe Tagging]] - document - .agents/skills/i-aws/SKILL.md
-- [[Rule 6 Never Delete Automatically]] - document - .agents/skills/i-aws/SKILL.md
+- [[Field Validators]] - document - docs/vault/05 - Dependencies/pydantic.md
+- [[Key Configuration Models]] - document - docs/vault/05 - Dependencies/pydantic.md
+- [[Purpose_192]] - document - docs/vault/05 - Dependencies/pydantic.md
+- [[Pydantic]] - document - docs/vault/05 - Dependencies/pydantic.md
+- [[Related Notes_47]] - document - docs/vault/05 - Dependencies/pydantic.md
+- [[Where Used_4]] - document - docs/vault/05 - Dependencies/pydantic.md
+- [[v2 vs v1]] - document - docs/vault/05 - Dependencies/pydantic.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,7 +26,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 518]]
+- 1 edge to [[_COMMUNITY_Community 243]]
 
 ## Top bridge nodes
-- [[Operating Rules (Non-Negotiable)]] - degree 8, connects to 1 community
+- [[Pydantic]] - degree 7, connects to 1 community

@@ -1,31 +1,32 @@
 ---
 type: community
-members: 18
+cohesion: 0.12
+members: 17
 ---
 
 # Community 516
 
-**Members:** 18 nodes
+**Cohesion:** 0.12 - loosely connected
+**Members:** 17 nodes
 
 ## Members
-- [[Architecture_7]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[Audit Methodology]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[Colima VM Networking]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[Container Security Audit — AgentShroud v0.8.0]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[Controls Summary]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[Findings & Mitigations]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[Items Pending Image Rebuild]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[container-security-audit-v0.8.0]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[🔴 C1 SSH Config Bypass (`-F devnull`)]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[🔴 C2 Raw TCP to Host Port 22]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[🔴 C3 PID1 Environment Readable (`proc1environ`)]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[🟠 H1 Writable `~.ssh` Directory]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[🟠 H2 Secrets in Environment Variables]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[🟠 H3 `resolv.conf` Leaks DNS Architecture]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[🟠 H4 All Internal Container Ports Reachable]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[🟡 M1 `apt` Available (Permissions Blocked)]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[🟡 M2 `perl` and `bash` Available as Interpreters]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
-- [[🟡 M3 `proc1ns` Namespace Files Visible]] - document - docs/planning/v0.8/container-security-audit-v0.8.0.md
+- [[Incident Response (SKILL)]] - document - .agents/skills/i-production/SKILL.md
+- [[Production Safety Checklist (SKILL)]] - document - .agents/skills/i-ps/SKILL.md
+- [[Purpose_24]] - document - .agents/skills/i-production/README.md
+- [[Purpose_25]] - document - .agents/skills/i-ps/README.md
+- [[Purpose_26]] - document - .agents/skills/i-qa/README.md
+- [[Quality Assurance (README)]] - document - .agents/skills/i-qa/README.md
+- [[Quality Assurance (SKILL)]] - document - .agents/skills/i-qa/SKILL.md
+- [[README_24]] - document - .agents/skills/i-production/README.md
+- [[README_25]] - document - .agents/skills/i-ps/README.md
+- [[README_26]] - document - .agents/skills/i-qa/README.md
+- [[Related Skills_27]] - document - .agents/skills/i-production/README.md
+- [[Related Skills_28]] - document - .agents/skills/i-ps/README.md
+- [[Related Skills_29]] - document - .agents/skills/i-qa/README.md
+- [[Usage_27]] - document - .agents/skills/i-production/README.md
+- [[Usage_28]] - document - .agents/skills/i-ps/README.md
+- [[Usage_29]] - document - .agents/skills/i-qa/README.md
+- [[incident-response]] - document - docs/operations/incident-response.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,8 +36,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 342]]
-- 1 edge to [[_COMMUNITY_Community 199]]
+- 4 edges to [[_COMMUNITY_Community 231]]
+- 1 edge to [[_COMMUNITY_Community 128]]
 
 ## Top bridge nodes
-- [[Container Security Audit — AgentShroud v0.8.0]] - degree 9, connects to 2 communities
+- [[incident-response]] - degree 7, connects to 2 communities
+- [[Production Safety Checklist (SKILL)]] - degree 7, connects to 1 community
+- [[Quality Assurance (SKILL)]] - degree 7, connects to 1 community
+- [[Quality Assurance (README)]] - degree 2, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/TELEGRAM_SETUP.md"
 type: "document"
-community: "Community 649"
+community: "Community 641"
 location: "L51"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_649
+  - community/Community_641
 ---
 
 # Multi-Device Access
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Telegram Bot Setup for OpenClaw]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_649
+#graphify/document #graphify/EXTRACTED #community/Community_641

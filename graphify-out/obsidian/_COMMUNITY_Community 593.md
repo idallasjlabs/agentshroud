@@ -1,28 +1,30 @@
 ---
 type: community
+cohesion: 0.13
 members: 15
 ---
 
 # Community 593
 
+**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
-- [[.test_event_without_user_ignored()]] - code - gateway/tests/test_slack_proxy.py
-- [[.test_message_event_records_activity()]] - code - gateway/tests/test_slack_proxy.py
-- [[.test_message_preview_truncated_to_80_chars()]] - code - gateway/tests/test_slack_proxy.py
-- [[.test_no_tracker_does_not_raise()]] - code - gateway/tests/test_slack_proxy.py
-- [[.test_non_message_event_ignored()]] - code - gateway/tests/test_slack_proxy.py
-- [[.test_tracker_error_does_not_propagate()]] - code - gateway/tests/test_slack_proxy.py
-- [[SlackAPIProxy_1]] - code - gateway/tests/test_slack_proxy.py
-- [[TestHandleEvent]] - code - gateway/tests/test_slack_proxy.py
-- [[Tests for SlackAPIProxy.handle_event() — inbound Socket Mode event processing.]] - rationale - gateway/tests/test_slack_proxy.py
-- [[handle_event ignores message events with no user field.]] - rationale - gateway/tests/test_slack_proxy.py
-- [[handle_event ignores non-message event types.]] - rationale - gateway/tests/test_slack_proxy.py
-- [[handle_event is a no-op and does not raise when tracker is None.]] - rationale - gateway/tests/test_slack_proxy.py
-- [[handle_event records inbound activity for message events.]] - rationale - gateway/tests/test_slack_proxy.py
-- [[handle_event swallows tracker exceptions (non-fatal).]] - rationale - gateway/tests/test_slack_proxy.py
-- [[handle_event truncates message_preview to 80 characters.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Approval Queue]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
+- [[Auto-Restart]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
+- [[Crash Recovery]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
+- [[Data Integrity After Crash]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
+- [[Detecting a Crash]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
+- [[Graceful Shutdown_1]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
+- [[Kill Switch (Emergency Stop)]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
+- [[Ledger Database]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
+- [[Manual Recovery]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
+- [[Normal Stop]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
+- [[OOM Recovery]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
+- [[Related Notes_4]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
+- [[Shutdown & Recovery_1]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
+- [[Shutdown Sequence]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
+- [[State After Recovery]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,10 +34,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 25]]
-- 2 edges to [[_COMMUNITY_Community 1137]]
-- 2 edges to [[_COMMUNITY_Community 72]]
+- 1 edge to [[_COMMUNITY_Community 85]]
+- 1 edge to [[_COMMUNITY_Community 117]]
 
 ## Top bridge nodes
-- [[TestHandleEvent]] - degree 10, connects to 3 communities
-- [[SlackAPIProxy_1]] - degree 9, connects to 3 communities
+- [[Shutdown & Recovery_1]] - degree 7, connects to 1 community
+- [[Data Integrity After Crash]] - degree 4, connects to 1 community

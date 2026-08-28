@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/switch_model.sh"
 type: "code"
-community: "Community 861"
+community: "Community 860"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_861
+  - community/Community_860
 ---
 
 # switch_model.sh
@@ -25,4 +25,4 @@ tags:
 - [[verify_both_bots_healthy()]] - `defines` [EXTRACTED]
 - [[wait_for_local_model()]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_861
+#graphify/code #graphify/EXTRACTED #community/Community_860

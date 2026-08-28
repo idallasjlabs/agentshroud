@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "rationale"
-community: "Community 6"
+community: "Memory Lifecycle & Egress Filtering"
 location: "L73"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/Memory_Lifecycle__Egress_Filtering
 ---
 
 # Manages memory file lifecycle and content security.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MemoryLifecycleManager]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_6
+#graphify/rationale #graphify/EXTRACTED #community/Memory_Lifecycle__Egress_Filtering

@@ -1,25 +1,26 @@
 ---
 type: community
-members: 12
+cohesion: 0.31
+members: 11
 ---
 
 # Community 814
 
-**Members:** 12 nodes
+**Cohesion:** 0.31 - loosely connected
+**Members:** 11 nodes
 
 ## Members
-- [[Config Search Order]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md
-- [[Purpose_176]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md
-- [[Related Notes_19]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md
-- [[Top-Level Sections]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md
-- [[agentshroud.yaml_1]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md
-- [[channels section]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md
-- [[gateway section]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md
-- [[mcp_proxy section]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md
-- [[proxy section]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md
-- [[security section]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md
-- [[security_modules section]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md
-- [[ssh section]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md
+- [[.test_comma_separated()]] - code - gateway/tests/test_multi_host_test.py
+- [[.test_custom_default()]] - code - gateway/tests/test_multi_host_test.py
+- [[.test_dedup_preserves_first_order()]] - code - gateway/tests/test_multi_host_test.py
+- [[.test_empty_string_returns_defaults()]] - code - gateway/tests/test_multi_host_test.py
+- [[.test_mixed_separators_and_stripping()]] - code - gateway/tests/test_multi_host_test.py
+- [[.test_none_returns_defaults()]] - code - gateway/tests/test_multi_host_test.py
+- [[.test_only_separators_falls_back_to_default()]] - code - gateway/tests/test_multi_host_test.py
+- [[.test_whitespace_separated()]] - code - gateway/tests/test_multi_host_test.py
+- [[Parse a commawhitespace-separated host list into a de-duplicated list.      Emp]] - rationale - gateway/tools/multi_host_test.py
+- [[TestParseHosts]] - code - gateway/tests/test_multi_host_test.py
+- [[parse_hosts()]] - code - gateway/tools/multi_host_test.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,7 +30,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 251]]
+- 2 edges to [[_COMMUNITY_Community 898]]
+- 2 edges to [[_COMMUNITY_Community 485]]
+- 1 edge to [[_COMMUNITY_Community 993]]
+- 1 edge to [[_COMMUNITY_Community 869]]
+- 1 edge to [[_COMMUNITY_Community 728]]
 
 ## Top bridge nodes
-- [[agentshroud.yaml_1]] - degree 12, connects to 1 community
+- [[TestParseHosts]] - degree 12, connects to 3 communities
+- [[parse_hosts()]] - degree 12, connects to 3 communities

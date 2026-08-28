@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ws_e_rt2_inbound_encoding.py"
 type: "code"
-community: "Community 50"
+community: "PII Sanitizer & E2E Tests"
 location: "L53"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_50
+  - community/PII_Sanitizer__E2E_Tests
 ---
 
 # SecurityPipeline
@@ -23,4 +23,4 @@ tags:
 - [[ToolResultInjectionScanner]] - `uses` [INFERRED]
 - [[_make_pipeline()_4]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_50
+#graphify/code #graphify/INFERRED #community/PII_Sanitizer__E2E_Tests

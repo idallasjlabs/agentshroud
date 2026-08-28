@@ -1,68 +1,72 @@
 ---
 type: community
-members: 55
+cohesion: 0.09
+members: 57
 ---
 
 # Community 102
 
-**Members:** 55 nodes
+**Cohesion:** 0.09 - loosely connected
+**Members:** 57 nodes
 
 ## Members
-- [[.__call__()_4]] - code - gateway/tests/test_cron_state_monitor.py
-- [[.__call__()_5]] - code - gateway/tests/test_cron_state_monitor.py
-- [[.__init__()_67]] - code - gateway/security/cron_state_monitor.py
-- [[.__init__()_146]] - code - gateway/tests/test_cron_state_monitor.py
-- [[.__init__()_147]] - code - gateway/tests/test_cron_state_monitor.py
-- [[._dispatch_aggregate()]] - code - gateway/security/cron_state_monitor.py
-- [[._episode_id()]] - code - gateway/security/cron_state_monitor.py
-- [[._evaluate()]] - code - gateway/security/cron_state_monitor.py
-- [[._run()_1]] - code - gateway/security/cron_state_monitor.py
-- [[._safe_dispatch()]] - code - gateway/security/cron_state_monitor.py
-- [[.check()_3]] - code - gateway/security/cron_state_monitor.py
-- [[.parse_store()]] - code - gateway/security/cron_state_monitor.py
-- [[.start()_2]] - code - gateway/security/cron_state_monitor.py
-- [[.stop()_9]] - code - gateway/security/cron_state_monitor.py
-- [[.test_alert_ids_stable_per_job_episode()]] - code - gateway/tests/test_cron_state_monitor.py
-- [[.test_corrupt_file_returns_empty()]] - code - gateway/tests/test_cron_state_monitor.py
-- [[.test_disabled_jobs_ignored()]] - code - gateway/tests/test_cron_state_monitor.py
-- [[.test_dispatch_failure_does_not_raise()]] - code - gateway/tests/test_cron_state_monitor.py
-- [[.test_first_sight_failing_alerts_once()]] - code - gateway/tests/test_cron_state_monitor.py
-- [[.test_flood_capped_with_aggregate_alert()]] - code - gateway/tests/test_cron_state_monitor.py
-- [[.test_hermes_jobs_reach_critical_via_observed_runs()]] - code - gateway/tests/test_cron_state_monitor.py
-- [[.test_job_name_capped_in_alert()]] - code - gateway/tests/test_cron_state_monitor.py
-- [[.test_malformed_consecutive_errors_does_not_blind_store()]] - code - gateway/tests/test_cron_state_monitor.py
-- [[.test_missing_file_returns_empty()]] - code - gateway/tests/test_cron_state_monitor.py
-- [[.test_multiple_stores_checked()]] - code - gateway/tests/test_cron_state_monitor.py
-- [[.test_ok_jobs_not_failing()]] - code - gateway/tests/test_cron_state_monitor.py
-- [[.test_ok_to_fail_dispatches_high_alert()]] - code - gateway/tests/test_cron_state_monitor.py
-- [[.test_oversized_store_skipped()]] - code - gateway/tests/test_cron_state_monitor.py
-- [[.test_parses_hermes_schema()]] - code - gateway/tests/test_cron_state_monitor.py
-- [[.test_parses_openclaw_schema()]] - code - gateway/tests/test_cron_state_monitor.py
-- [[.test_recovery_refail_realerts_through_real_dedup()]] - code - gateway/tests/test_cron_state_monitor.py
-- [[.test_recovery_resets_alerting()]] - code - gateway/tests/test_cron_state_monitor.py
-- [[.test_repeated_failure_escalates_to_critical()]] - code - gateway/tests/test_cron_state_monitor.py
-- [[.test_start_is_idempotent()]] - code - gateway/tests/test_cron_state_monitor.py
-- [[CronStateMonitor]] - code - gateway/security/cron_state_monitor.py
-- [[Evaluate one job.  Returns 1 if a NEW episode was alerted.          Flood guard]] - rationale - gateway/security/cron_state_monitor.py
-- [[JobState]] - code - gateway/security/cron_state_monitor.py
-- [[Mimics AlertDispatcher's id-based 24h dedup — the real downstream.]] - rationale - gateway/tests/test_cron_state_monitor.py
-- [[Normalized view of one bot cron job.]] - rationale - gateway/security/cron_state_monitor.py
-- [[One poll pass over all stores.  Never raises.]] - rationale - gateway/security/cron_state_monitor.py
-- [[Poll bot cron stores; dispatch AlertDispatcher alerts on failures.]] - rationale - gateway/security/cron_state_monitor.py
-- [[Read one bot's cron store; tolerate absencecorruption.]] - rationale - gateway/security/cron_state_monitor.py
-- [[Start the poll loop as an asyncio task (idempotent).]] - rationale - gateway/security/cron_state_monitor.py
-- [[TestAdversarial]] - code - gateway/tests/test_cron_state_monitor.py
-- [[TestParsing]] - code - gateway/tests/test_cron_state_monitor.py
-- [[TestTransitions]] - code - gateway/tests/test_cron_state_monitor.py
-- [[_DedupDispatchFake]] - code - gateway/tests/test_cron_state_monitor.py
-- [[_DispatchSpy]] - code - gateway/tests/test_cron_state_monitor.py
-- [[_hermes_job()]] - code - gateway/tests/test_cron_state_monitor.py
-- [[_hermes_store()]] - code - gateway/tests/test_cron_state_monitor.py
-- [[_oc_job()]] - code - gateway/tests/test_cron_state_monitor.py
-- [[_openclaw_store()]] - code - gateway/tests/test_cron_state_monitor.py
-- [[cron_state_monitor.py]] - code - gateway/security/cron_state_monitor.py
-- [[test_cron_state_monitor.py]] - code - gateway/tests/test_cron_state_monitor.py
-- [[test_poll_loop_runs_and_stops()]] - code - gateway/tests/test_cron_state_monitor.py
+- [[.test_1password_env_dump_flags()]] - code - gateway/tests/test_skill_guard.py
+- [[.test_absolute_system_path_write_flags()]] - code - gateway/tests/test_skill_guard.py
+- [[.test_at_limit_file_scans_normally()]] - code - gateway/tests/test_skill_guard.py
+- [[.test_base64_exec_payload_blocks()]] - code - gateway/tests/test_skill_guard.py
+- [[.test_binary_content_is_scanned_not_crash()]] - code - gateway/tests/test_skill_guard.py
+- [[.test_clean_skill_allows()]] - code - gateway/tests/test_skill_guard.py
+- [[.test_clean_skill_tree_allows()]] - code - gateway/tests/test_skill_guard.py
+- [[.test_crypto_miner_indicator_flags()]] - code - gateway/tests/test_skill_guard.py
+- [[.test_curl_pipe_to_shell_blocks()]] - code - gateway/tests/test_skill_guard.py
+- [[.test_dotdot_traversal_flags()]] - code - gateway/tests/test_skill_guard.py
+- [[.test_empty_content_allows()]] - code - gateway/tests/test_skill_guard.py
+- [[.test_eval_of_decoded_blocks()]] - code - gateway/tests/test_skill_guard.py
+- [[.test_large_opaque_base64_blob_flags()]] - code - gateway/tests/test_skill_guard.py
+- [[.test_line_at_out_of_range_returns_empty()]] - code - gateway/tests/test_skill_guard.py
+- [[.test_manifest_all_tools_wildcard_flags()]] - code - gateway/tests/test_skill_guard.py
+- [[.test_manifest_disable_approval_flags()]] - code - gateway/tests/test_skill_guard.py
+- [[.test_manifest_sudo_command_flags()]] - code - gateway/tests/test_skill_guard.py
+- [[.test_normal_relative_import_no_false_positive()]] - code - gateway/tests/test_skill_guard.py
+- [[.test_oversized_file_blocks()]] - code - gateway/tests/test_skill_guard.py
+- [[.test_reads_aws_credentials_flags()]] - code - gateway/tests/test_skill_guard.py
+- [[.test_reads_env_secrets_file_flags()]] - code - gateway/tests/test_skill_guard.py
+- [[.test_reads_ssh_private_key_flags()]] - code - gateway/tests/test_skill_guard.py
+- [[.test_requests_post_to_external_host_flags()]] - code - gateway/tests/test_skill_guard.py
+- [[.test_reverse_shell_indicator_blocks()]] - code - gateway/tests/test_skill_guard.py
+- [[.test_scan_rejects_non_string_content()]] - code - gateway/tests/test_skill_guard.py
+- [[.test_severity_ordering()]] - code - gateway/tests/test_skill_guard.py
+- [[.test_single_dotdot_traversal_flags()]] - code - gateway/tests/test_skill_guard.py
+- [[.test_subprocess_shell_true_flags()]] - code - gateway/tests/test_skill_guard.py
+- [[.test_tree_blocks_on_any_critical()]] - code - gateway/tests/test_skill_guard.py
+- [[.test_tree_flags_on_medium()]] - code - gateway/tests/test_skill_guard.py
+- [[.test_urllib_urlopen_flags()]] - code - gateway/tests/test_skill_guard.py
+- [[.test_wget_pipe_sh_blocks()]] - code - gateway/tests/test_skill_guard.py
+- [[CompletedProcess_3]] - code - gateway/tests/test_skill_guard.py
+- [[IntEnum]] - code
+- [[Ordered severity ladder (``IntEnum`` so comparisons work).]] - rationale - gateway/security/skill_guard.py
+- [[Recommendation]] - code - gateway/security/skill_guard.py
+- [[ScanResult_3]] - code - gateway/skills/scan.py
+- [[ScanResult_4]] - code - gateway/tests/test_skill_guard.py
+- [[Severity]] - code - gateway/security/skill_guard.py
+- [[SkillGuard_1]] - code - gateway/tests/test_skill_guard.py
+- [[TestAggregation]] - code - gateway/tests/test_skill_guard.py
+- [[TestCleanSkill]] - code - gateway/tests/test_skill_guard.py
+- [[TestExecOfDownload]] - code - gateway/tests/test_skill_guard.py
+- [[TestExfiltration]] - code - gateway/tests/test_skill_guard.py
+- [[TestKnownMalicious]] - code - gateway/tests/test_skill_guard.py
+- [[TestObfuscation]] - code - gateway/tests/test_skill_guard.py
+- [[TestOversizedUnscannable]] - code - gateway/tests/test_skill_guard.py
+- [[TestPathTraversal]] - code - gateway/tests/test_skill_guard.py
+- [[TestPrivilegeEscalation_1]] - code - gateway/tests/test_skill_guard.py
+- [[TestSecretAccess]] - code - gateway/tests/test_skill_guard.py
+- [[What the caller should do with the scanned skill.]] - rationale - gateway/security/skill_guard.py
+- [[_finding_categories()]] - code - gateway/tests/test_skill_guard.py
+- [[_print_findings()]] - code - gateway/skills/scan.py
+- [[gatewaysecurityskill_guard.py (SkillGuard)]] - code - gateway/security/skill_guard.py
+- [[guard()_4]] - code - gateway/tests/test_skill_guard.py
+- [[scan.py]] - code - gateway/skills/scan.py
+- [[test_skill_guard.py]] - code - gateway/tests/test_skill_guard.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -72,12 +76,21 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 6]]
-- 1 edge to [[_COMMUNITY_Community 14]]
-- 1 edge to [[_COMMUNITY_Community 779]]
-- 1 edge to [[_COMMUNITY_Community 249]]
+- 40 edges to [[_COMMUNITY_Community 272]]
+- 33 edges to [[_COMMUNITY_Community 259]]
+- 2 edges to [[_COMMUNITY_Community 73]]
+- 1 edge to [[_COMMUNITY_Community 165]]
+- 1 edge to [[_COMMUNITY_Community 41]]
+- 1 edge to [[_COMMUNITY_Community 45]]
+- 1 edge to [[_COMMUNITY_Community 95]]
+- 1 edge to [[_COMMUNITY_Progressive Trust]]
+- 1 edge to [[_COMMUNITY_Community 684]]
+- 1 edge to [[_COMMUNITY_Community 113]]
+- 1 edge to [[_COMMUNITY_Community 29]]
 
 ## Top bridge nodes
-- [[CronStateMonitor]] - degree 36, connects to 2 communities
-- [[.start()_2]] - degree 4, connects to 1 community
-- [[cron_state_monitor.py]] - degree 3, connects to 1 community
+- [[test_skill_guard.py]] - degree 28, connects to 5 communities
+- [[IntEnum]] - degree 7, connects to 5 communities
+- [[SkillGuard_1]] - degree 36, connects to 2 communities
+- [[Recommendation]] - degree 27, connects to 2 communities
+- [[Severity]] - degree 24, connects to 2 communities

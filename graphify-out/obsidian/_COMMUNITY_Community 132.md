@@ -1,48 +1,60 @@
 ---
 type: community
-members: 35
+cohesion: 0.08
+members: 45
 ---
 
 # Community 132
 
-**Members:** 35 nodes
+**Cohesion:** 0.08 - loosely connected
+**Members:** 45 nodes
 
 ## Members
-- [[.__init__()_104]] - code - gateway/security/output_canary.py
-- [[.setup_method()_19]] - code - gateway/tests/test_output_canary.py
-- [[.test_canary_cleanup()]] - code - gateway/tests/test_output_canary.py
-- [[.test_canary_generation_per_session()]] - code - gateway/tests/test_output_canary.py
-- [[.test_clean_response_passes()]] - code - gateway/tests/test_output_canary.py
-- [[.test_detection_patterns_creation()]] - code - gateway/tests/test_output_canary.py
-- [[.test_different_sessions_get_different_canaries()]] - code - gateway/tests/test_output_canary.py
-- [[.test_incident_logging()]] - code - gateway/tests/test_output_canary.py
-- [[.test_invisible_canary_creation()]] - code - gateway/tests/test_output_canary.py
-- [[.test_leaked_canary_detected_in_response()]] - code - gateway/tests/test_output_canary.py
-- [[.test_partial_canary_match_handling()]] - code - gateway/tests/test_output_canary.py
-- [[.test_session_without_canary_returns_safe_result()]] - code - gateway/tests/test_output_canary.py
-- [[.test_status_reporting()_1]] - code - gateway/tests/test_output_canary.py
-- [[.test_unicode_normalization_resistance()]] - code - gateway/tests/test_output_canary.py
-- [[.test_zero_width_character_detection()]] - code - gateway/tests/test_output_canary.py
-- [[CanaryConfig_1]] - code - gateway/security/output_canary.py
-- [[Configuration for the Output Canary System.]] - rationale - gateway/security/output_canary.py
-- [[Initialize the Output Canary System.          Args             config Optional]] - rationale - gateway/security/output_canary.py
-- [[Set up test fixtures._1]] - rationale - gateway/tests/test_output_canary.py
-- [[Test canary status reporting for dashboard.]] - rationale - gateway/tests/test_output_canary.py
-- [[Test cases for the Output Canary System.]] - rationale - gateway/tests/test_output_canary.py
-- [[Test cleanup of expired canaries.]] - rationale - gateway/tests/test_output_canary.py
-- [[Test detection of canaries with zero-width characters.]] - rationale - gateway/tests/test_output_canary.py
-- [[Test handling of partial canary matches.]] - rationale - gateway/tests/test_output_canary.py
-- [[Test that canaries work with different Unicode representations.]] - rationale - gateway/tests/test_output_canary.py
-- [[Test that clean responses pass without detection.]] - rationale - gateway/tests/test_output_canary.py
-- [[Test that detection patterns are created correctly.]] - rationale - gateway/tests/test_output_canary.py
-- [[Test that different sessions get different canaries.]] - rationale - gateway/tests/test_output_canary.py
-- [[Test that incidents are logged when enabled.]] - rationale - gateway/tests/test_output_canary.py
-- [[Test that invisible canaries are created properly.]] - rationale - gateway/tests/test_output_canary.py
-- [[Test that leaked canaries are detected in responses.]] - rationale - gateway/tests/test_output_canary.py
-- [[Test that sessions without canaries return safe results.]] - rationale - gateway/tests/test_output_canary.py
-- [[Test that unique canaries are generated per session.]] - rationale - gateway/tests/test_output_canary.py
-- [[TestOutputCanary]] - code - gateway/tests/test_output_canary.py
-- [[test_output_canary.py]] - code - gateway/tests/test_output_canary.py
+- [[.__init__()_64]] - code - gateway/security/consent_framework.py
+- [[.add_to_blacklist()]] - code - gateway/security/consent_framework.py
+- [[.add_to_whitelist()]] - code - gateway/security/consent_framework.py
+- [[.get_blacklist()]] - code - gateway/security/consent_framework.py
+- [[.get_whitelist()]] - code - gateway/security/consent_framework.py
+- [[.remove_from_blacklist()]] - code - gateway/security/consent_framework.py
+- [[.remove_from_whitelist()]] - code - gateway/security/consent_framework.py
+- [[.test_add_and_remove_blacklist()]] - code - gateway/tests/test_consent_framework.py
+- [[.test_add_and_remove_whitelist()]] - code - gateway/tests/test_consent_framework.py
+- [[.test_blacklisted_command_rejected()]] - code - gateway/tests/test_consent_framework.py
+- [[.test_decision_approved()]] - code - gateway/tests/test_consent_framework.py
+- [[.test_decision_denied()]] - code - gateway/tests/test_consent_framework.py
+- [[.test_decision_has_timestamp()]] - code - gateway/tests/test_consent_framework.py
+- [[.test_empty_command_rejected()]] - code - gateway/tests/test_consent_framework.py
+- [[.test_env_with_path_manipulation()]] - code - gateway/tests/test_consent_framework.py
+- [[.test_env_with_secrets_in_value_warned()]] - code - gateway/tests/test_consent_framework.py
+- [[.test_known_dangerous_patterns_detected()]] - code - gateway/tests/test_consent_framework.py
+- [[.test_multiple_configs_validated()]] - code - gateway/tests/test_consent_framework.py
+- [[.test_safe_env_no_warnings()]] - code - gateway/tests/test_consent_framework.py
+- [[.test_shell_injection_backtick_detected()]] - code - gateway/tests/test_consent_framework.py
+- [[.test_shell_injection_curl_detected()]] - code - gateway/tests/test_consent_framework.py
+- [[.test_shell_injection_dollar_paren()]] - code - gateway/tests/test_consent_framework.py
+- [[.test_shell_injection_pipe_to_sh()]] - code - gateway/tests/test_consent_framework.py
+- [[.test_shell_injection_rm_rf_detected()]] - code - gateway/tests/test_consent_framework.py
+- [[.test_shell_injection_wget_detected()]] - code - gateway/tests/test_consent_framework.py
+- [[.test_valid_config_passes()]] - code - gateway/tests/test_consent_framework.py
+- [[.test_whitelisted_command_auto_approved()]] - code - gateway/tests/test_consent_framework.py
+- [[.validate_config()]] - code - gateway/security/consent_framework.py
+- [[.validate_configs()]] - code - gateway/security/consent_framework.py
+- [[Chen et al. 2026 (arXiv2602.14364) — MCP config shell injection  secret exfiltration]] - paper - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
+- [[Chen et al. 2026 — Agent configuration vulnerabilities  session hijacking (arXiv2602.14364)]] - paper - gateway/security/consent_framework.py
+- [[ConfigValidationError]] - code - gateway/security/consent_framework.py
+- [[ConsentFramework]] - code - gateway/security/consent_framework.py
+- [[Maloyan & Namiot 2026 (arXiv2601.17548) — Malicious MCP server configuration attacks]] - paper - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
+- [[Maloyan & Namiot 2026 — MCP security analysis (arXiv2601.17548)]] - paper - gateway/security/consent_framework.py
+- [[ServerConfig]] - code - gateway/security/consent_framework.py
+- [[ShellInjectionDetected]] - code - gateway/security/consent_framework.py
+- [[TestConsentDecision]] - code - gateway/tests/test_consent_framework.py
+- [[TestEnvironmentValidation]] - code - gateway/tests/test_consent_framework.py
+- [[TestServerConfigValidation]] - code - gateway/tests/test_consent_framework.py
+- [[TestWhitelistBlacklist]] - code - gateway/tests/test_consent_framework.py
+- [[Validate a server configuration before execution.]] - rationale - gateway/security/consent_framework.py
+- [[consent_framework.py]] - code - gateway/security/consent_framework.py
+- [[framework()]] - code - gateway/tests/test_consent_framework.py
+- [[test_consent_framework.py]] - code - gateway/tests/test_consent_framework.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -52,12 +64,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_Community 6]]
-- 1 edge to [[_COMMUNITY_Community 877]]
+- 10 edges to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
+- 10 edges to [[_COMMUNITY_Security Audit & Drift Detection]]
+- 2 edges to [[_COMMUNITY_Community 165]]
+- 2 edges to [[_COMMUNITY_Community 478]]
+- 1 edge to [[_COMMUNITY_Middleware & Lifespan]]
+- 1 edge to [[_COMMUNITY_Community 174]]
+- 1 edge to [[_COMMUNITY_Community 175]]
+- 1 edge to [[_COMMUNITY_Community 18]]
 
 ## Top bridge nodes
-- [[TestOutputCanary]] - degree 18, connects to 1 community
-- [[CanaryConfig_1]] - degree 8, connects to 1 community
-- [[.setup_method()_19]] - degree 4, connects to 1 community
-- [[.test_partial_canary_match_handling()]] - degree 4, connects to 1 community
-- [[.test_incident_logging()]] - degree 4, connects to 1 community
+- [[ConsentFramework]] - degree 31, connects to 4 communities
+- [[consent_framework.py]] - degree 11, connects to 4 communities
+- [[TestServerConfigValidation]] - degree 13, connects to 1 community
+- [[TestEnvironmentValidation]] - degree 10, connects to 1 community
+- [[TestWhitelistBlacklist]] - degree 9, connects to 1 community

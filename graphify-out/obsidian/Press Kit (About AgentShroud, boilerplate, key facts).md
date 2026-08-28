@@ -1,12 +1,12 @@
 ---
 source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "Community 460"
+community: "Community 108"
 location: "L179-214"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Community_460
+  - community/Community_108
 ---
 
 # Press Kit (About AgentShroud, boilerplate, key facts)
@@ -17,4 +17,4 @@ tags:
 - [[Voice & Tone Guidelines]] - `conceptually_related_to` [INFERRED]
 - [[brand-guidelines]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/Community_460
+#graphify/document #graphify/INFERRED #community/Community_108

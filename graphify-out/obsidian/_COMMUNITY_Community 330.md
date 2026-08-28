@@ -1,35 +1,41 @@
 ---
 type: community
-members: 22
+cohesion: 0.12
+members: 26
 ---
 
 # Community 330
 
-**Members:** 22 nodes
+**Cohesion:** 0.12 - loosely connected
+**Members:** 26 nodes
 
 ## Members
-- [[.test_get_features_apple()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_get_features_docker()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_get_features_podman()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_missing_features()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_security_options_apple()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_security_options_docker()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_security_options_podman()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_security_options_unknown()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_warn_missing()]] - code - gateway/tests/test_runtime_engines.py
-- [[A security feature with runtime support info.]] - rationale - gateway/runtime/security.py
-- [[Return features NOT available for a given runtime.]] - rationale - gateway/runtime/security.py
-- [[Return features available for a given runtime.]] - rationale - gateway/runtime/security.py
-- [[Return recommended security CLI options for a runtime.]] - rationale - gateway/runtime/security.py
-- [[Return warning messages for missing security features.]] - rationale - gateway/runtime/security.py
-- [[SecurityFeature]] - code - gateway/runtime/security.py
-- [[TestSecurityFeatures]] - code - gateway/tests/test_runtime_engines.py
-- [[Validate runtime name to prevent attribute access injection.]] - rationale - gateway/runtime/security.py
-- [[_validate_runtime()]] - code - gateway/runtime/security.py
-- [[get_features_for_runtime()]] - code - gateway/runtime/security.py
-- [[get_missing_features()]] - code - gateway/runtime/security.py
-- [[get_security_options()]] - code - gateway/runtime/security.py
-- [[warn_missing_features()]] - code - gateway/runtime/security.py
+- [[Build a minimal SecurityPipeline with passthrough PII + optional clamav.]] - rationale - gateway/tests/test_clamav_pipeline.py
+- [[ClamAV scan_bytes returns error → fail-open CRITICAL log, FORWARD.]] - rationale - gateway/tests/test_clamav_pipeline.py
+- [[Clean base64 payload → FORWARD.]] - rationale - gateway/tests/test_clamav_pipeline.py
+- [[Malware-infected base64 payload → BLOCK with signature in block_reason.]] - rationale - gateway/tests/test_clamav_pipeline.py
+- [[No clamav_scanner configured → step skipped, no error.]] - rationale - gateway/tests/test_clamav_pipeline.py
+- [[Short base64 (64 groups of 4) skips ClamAV scan.]] - rationale - gateway/tests/test_clamav_pipeline.py
+- [[Stream bytes to clamdscan for inline malware scanning.      Uses ``clamdscan --s]] - rationale - gateway/security/clamav_scanner.py
+- [[Test replacement for asyncio.wait_for — awaits coroutine directly.]] - rationale - gateway/tests/test_clamav_pipeline.py
+- [[Test replacement for asyncio.wait_for — raises TimeoutError.      Closes the un-]] - rationale - gateway/tests/test_clamav_pipeline.py
+- [[Wrap bytes in a long-enough base64 chunk to trigger the scan (= 64 groups of 4)]] - rationale - gateway/tests/test_clamav_pipeline.py
+- [[_b64_payload()]] - code - gateway/tests/test_clamav_pipeline.py
+- [[_instant_wait_for()]] - code - gateway/tests/test_clamav_pipeline.py
+- [[_make_pipeline()]] - code - gateway/tests/test_clamav_pipeline.py
+- [[_timeout_wait_for()]] - code - gateway/tests/test_clamav_pipeline.py
+- [[scan_bytes()]] - code - gateway/security/clamav_scanner.py
+- [[test_clamav_pipeline.py]] - code - gateway/tests/test_clamav_pipeline.py
+- [[test_pipeline_clamav_clean_payload()]] - code - gateway/tests/test_clamav_pipeline.py
+- [[test_pipeline_clamav_error_fail_open()]] - code - gateway/tests/test_clamav_pipeline.py
+- [[test_pipeline_clamav_malware_blocked()]] - code - gateway/tests/test_clamav_pipeline.py
+- [[test_pipeline_clamav_not_configured()]] - code - gateway/tests/test_clamav_pipeline.py
+- [[test_pipeline_short_base64_not_scanned()]] - code - gateway/tests/test_clamav_pipeline.py
+- [[test_scan_bytes_binary_not_found()]] - code - gateway/tests/test_clamav_pipeline.py
+- [[test_scan_bytes_clean()]] - code - gateway/tests/test_clamav_pipeline.py
+- [[test_scan_bytes_empty_input()]] - code - gateway/tests/test_clamav_pipeline.py
+- [[test_scan_bytes_infected()]] - code - gateway/tests/test_clamav_pipeline.py
+- [[test_scan_bytes_timeout()]] - code - gateway/tests/test_clamav_pipeline.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,18 +45,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_Community 197]]
-- 6 edges to [[_COMMUNITY_Community 453]]
-- 3 edges to [[_COMMUNITY_Community 528]]
-- 2 edges to [[_COMMUNITY_Community 647]]
-- 1 edge to [[_COMMUNITY_Community 358]]
-- 1 edge to [[_COMMUNITY_Community 354]]
-- 1 edge to [[_COMMUNITY_Community 220]]
-- 1 edge to [[_COMMUNITY_Community 45]]
+- 7 edges to [[_COMMUNITY_Community 24]]
+- 2 edges to [[_COMMUNITY_PII Sanitizer & E2E Tests]]
+- 1 edge to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
+- 1 edge to [[_COMMUNITY_Community 47]]
+- 1 edge to [[_COMMUNITY_Community 410]]
+- 1 edge to [[_COMMUNITY_Community 112]]
+- 1 edge to [[_COMMUNITY_Community 579]]
+- 1 edge to [[_COMMUNITY_Community 65]]
 
 ## Top bridge nodes
-- [[TestSecurityFeatures]] - degree 16, connects to 6 communities
-- [[warn_missing_features()]] - degree 9, connects to 4 communities
-- [[get_security_options()]] - degree 9, connects to 3 communities
-- [[get_features_for_runtime()]] - degree 8, connects to 2 communities
-- [[get_missing_features()]] - degree 8, connects to 2 communities
+- [[scan_bytes()]] - degree 11, connects to 4 communities
+- [[test_clamav_pipeline.py]] - degree 18, connects to 3 communities
+- [[_make_pipeline()]] - degree 8, connects to 1 community
+- [[test_pipeline_clamav_clean_payload()]] - degree 5, connects to 1 community
+- [[test_pipeline_clamav_error_fail_open()]] - degree 5, connects to 1 community

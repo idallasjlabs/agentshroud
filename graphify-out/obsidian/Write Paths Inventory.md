@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md"
 type: "document"
-community: "Community 185"
+community: "Community 190"
 location: "L479"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_185
+  - community/Community_190
 ---
 
 # Write Paths Inventory
@@ -16,4 +16,4 @@ tags:
 - [[Development Workflow Read-Only Filesystem Strategy]] - `contains` [EXTRACTED]
 - [[Potentially Needed (Discovered During Testing)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_185
+#graphify/document #graphify/EXTRACTED #community/Community_190

@@ -1,40 +1,42 @@
 ---
 type: community
+cohesion: 0.07
 members: 27
 ---
 
 # Community 293
 
+**Cohesion:** 0.07 - loosely connected
 **Members:** 27 nodes
 
 ## Members
-- [[AgentShroud Daily Check-in job]] - concept - docker/config/hermes/cron/jobs.yaml
-- [[AgentShroud Weekly Summary job]] - concept - docker/config/hermes/cron/jobs.yaml
-- [[Agentic AI CVE and Exploit Watch job]] - concept - docker/config/hermes/cron/jobs.yaml
-- [[Cron AI Security Standards Watch]] - document - docker/bots/openclaw/config/cron/jobs.json
-- [[Cron AgentShroud Daily Check-in]] - document - docker/bots/openclaw/config/cron/jobs.json
-- [[Cron Agentic AI Threat Intelligence]] - document - docker/bots/openclaw/config/cron/jobs.json
-- [[Cron Collaborator Daily Digest]] - document - docker/bots/openclaw/config/cron/jobs.json
-- [[Cron Collaborator Report - Evening]] - document - docker/bots/openclaw/config/cron/jobs.json
-- [[Cron Collaborator Report - Morning]] - document - docker/bots/openclaw/config/cron/jobs.json
-- [[Cron Competitive Analysis Email (Afternoon)]] - document - docker/bots/openclaw/config/cron/jobs.json
-- [[Cron Competitive Landscape Update (Afternoon)]] - document - docker/bots/openclaw/config/cron/jobs.json
-- [[Cron Daily CVE Triage & Remediation Scan]] - document - docker/bots/openclaw/config/cron/jobs.json
-- [[Cron Daily Competitive Analysis Email]] - document - docker/bots/openclaw/config/cron/jobs.json
-- [[Cron Daily Competitive Landscape Update]] - document - docker/bots/openclaw/config/cron/jobs.json
-- [[Cron Monthly Chaos Engineering Drill]] - document - docker/bots/openclaw/config/cron/jobs.json
-- [[Daily Memory Journal job]] - concept - docker/config/hermes/cron/jobs.yaml
-- [[Hermes Competitive Intelligence Email job]] - concept - docker/config/hermes/cron/jobs.yaml
-- [[Hermes Competitive Landscape Update job]] - concept - docker/config/hermes/cron/jobs.yaml
-- [[Hermes Cron Jobs Config]] - document - docker/config/hermes/cron/jobs.yaml
-- [[Monthly Chaos Engineering Drill job]] - concept - docker/config/hermes/cron/jobs.yaml
-- [[SCRUM-81 (Jira ticket)]] - concept - docker/config/hermes/cron/jobs.yaml
-- [[Weekly Hermes Stability Report job]] - concept - docker/config/hermes/cron/jobs.yaml
-- [[Weekly Kaizen Review job]] - concept - docker/config/hermes/cron/jobs.yaml
-- [[agentshroud-email-send.sh]] - concept - docker/config/hermes/cron/jobs.yaml
-- [[jira-weekly-review job]] - concept - docker/config/hermes/cron/jobs.yaml
-- [[jira_weekly_review.py_1]] - concept - docker/config/hermes/cron/jobs.yaml
-- [[render_md_email.py_1]] - concept - docker/config/hermes/cron/jobs.yaml
+- [[Guardrails_4]] - document - .agents/skills/i-odev/SKILL.md
+- [[Invocation_2]] - document - .agents/skills/i-odev/SKILL.md
+- [[Jira ticket — every development batch gets one_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Mode A — Single task_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Mode B — Comprehensive review sweep_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Reviewers and fixer available to you_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Role_22]] - document - .agents/skills/i-odev/SKILL.md
+- [[SKILL_38]] - document - .agents/skills/i-odev/SKILL.md
+- [[Skill OpenClaw Dev Workflow (ODEV)]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 1 — One branch + worktree for the whole sweep_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 1 — Sync and confirm clean state_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 10 — Notify the owner_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 11 — Merge (only on explicit owner instruction)_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 12 — Clean up_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 2 — Create a branch + worktree_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 2 — Work through directories one at a time_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 2b — Create the Jira ticket_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 3 — After the last directory (or a natural stopping point)_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 3 — Write and edit code_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 4 — Test and lint_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 5 — Multi-LLM review_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 6 — Build and validate containers_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 7 — Update documentation and website_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 8 — Update the knowledge graph_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 9 — Push and open the PR_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 9b — Update the Jira ticket with the PR link_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Tools you have for this workflow_1]] - document - .agents/skills/i-odev/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -42,10 +44,3 @@ members: 27
 TABLE source_file, type FROM #community/Community_293
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 391]]
-- 1 edge to [[_COMMUNITY_Community 312]]
-
-## Top bridge nodes
-- [[Hermes Cron Jobs Config]] - degree 24, connects to 2 communities

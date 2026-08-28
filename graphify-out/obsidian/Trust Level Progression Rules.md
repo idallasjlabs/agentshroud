@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/access-control-matrix.md"
 type: "document"
-community: "Community 175"
+community: "Community 180"
 location: "L170"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_175
+  - community/Community_180
 ---
 
 # Trust Level Progression Rules
@@ -16,4 +16,4 @@ tags:
 - [[Automatic Progression Criteria]] - `contains` [EXTRACTED]
 - [[Trust Degradation Rules]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_175
+#graphify/document #graphify/EXTRACTED #community/Community_180

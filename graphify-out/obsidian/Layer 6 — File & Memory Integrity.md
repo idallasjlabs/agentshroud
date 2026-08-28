@@ -1,12 +1,12 @@
 ---
 source_file: "SECURITY.md"
 type: "document"
-community: "Community 1000"
+community: "Community 374"
 location: "L37"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1000
+  - community/Community_374
 ---
 
 # Layer 6 — File & Memory Integrity
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Security Architecture_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1000
+#graphify/document #graphify/EXTRACTED #community/Community_374

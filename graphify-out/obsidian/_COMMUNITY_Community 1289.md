@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.50
 members: 4
 ---
 
 # Community 1289
 
+**Cohesion:** 0.50 - moderately connected
 **Members:** 4 nodes
 
 ## Members
@@ -21,7 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 518]]
+- 1 edge to [[_COMMUNITY_Community 515]]
 
 ## Top bridge nodes
-- [[Decision Framework]] - degree 5, connects to 1 community
+- [[Decision Framework]] - degree 4, connects to 1 community

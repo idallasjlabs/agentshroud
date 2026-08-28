@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "Community 781"
-location: "L430"
+community: "Community 776"
+location: "L429"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_781
+  - community/Community_776
 ---
 
 # TestSplitForSpeech
@@ -23,4 +23,4 @@ tags:
 - [[Unit tests for voice_gateway.tts.split_for_speech (pure function, no IO).]] - `rationale_for` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_781
+#graphify/code #graphify/EXTRACTED #community/Community_776

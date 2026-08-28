@@ -1,22 +1,24 @@
 ---
 type: community
+cohesion: 0.22
 members: 9
 ---
 
 # Community 917
 
+**Cohesion:** 0.22 - loosely connected
 **Members:** 9 nodes
 
 ## Members
-- [[Best-effort plain-language gloss of a 5-field cron expression.]] - rationale - scripts/generate-job-schedule.py
-- [[describe_cron()]] - code - scripts/generate-job-schedule.py
-- [[docker_exec()]] - code - scripts/generate-job-schedule.py
-- [[fmt_ts()]] - code - scripts/generate-job-schedule.py
-- [[generate-job-schedule.py]] - code - scripts/generate-job-schedule.py
-- [[load_hermes_jobs()]] - code - scripts/generate-job-schedule.py
-- [[load_openclaw_jobs()]] - code - scripts/generate-job-schedule.py
-- [[main()_20]] - code - scripts/generate-job-schedule.py
-- [[render_html()]] - code - scripts/generate-job-schedule.py
+- [[.test_clean_params_no_findings()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_fake_system_prompt_blocked()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_identity_override_blocked()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_low_confidence_not_blocked()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_nested_injection_caught()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_normal_text_not_flagged()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_prompt_override_blocked()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_special_token_injection()]] - code - gateway/tests/test_mcp_proxy.py
+- [[TestInjectionDetection]] - code - gateway/tests/test_mcp_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,3 +26,13 @@ members: 9
 TABLE source_file, type FROM #community/Community_917
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 8 edges to [[_COMMUNITY_Community 44]]
+- 3 edges to [[_COMMUNITY_Community 39]]
+- 1 edge to [[_COMMUNITY_Community 206]]
+- 1 edge to [[_COMMUNITY_Community 109]]
+- 1 edge to [[_COMMUNITY_Community 261]]
+
+## Top bridge nodes
+- [[TestInjectionDetection]] - degree 22, connects to 5 communities

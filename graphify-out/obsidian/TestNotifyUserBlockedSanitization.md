@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_round2_hardening.py"
 type: "code"
-community: "Community 444"
+community: "Community 18"
 location: "L194"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_444
+  - community/Community_18
 ---
 
 # TestNotifyUserBlockedSanitization
@@ -23,4 +23,4 @@ tags:
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_round2_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_444
+#graphify/code #graphify/INFERRED #community/Community_18

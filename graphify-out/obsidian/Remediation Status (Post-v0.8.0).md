@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/security-assessment-v0.8.0.md"
 type: "document"
-community: "Community 597"
+community: "Community 592"
 location: "L139"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_597
+  - community/Community_592
 ---
 
 # Remediation Status (Post-v0.8.0)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Security Assessment — v0.8.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_597
+#graphify/document #graphify/EXTRACTED #community/Community_592

@@ -1,37 +1,40 @@
 ---
 type: community
-members: 24
+cohesion: 0.08
+members: 25
 ---
 
 # Community 343
 
-**Members:** 24 nodes
+**Cohesion:** 0.08 - loosely connected
+**Members:** 25 nodes
 
 ## Members
-- [[AgentShroud Security Scripts Reference]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[Alerting]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[Automation Examples]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[Best Practices_6]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[CICD Integration]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[Daily Security Check (cron)]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[Kill Switch]] - document - dashboard/README.md
-- [[Logging]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[Mode 1 freeze]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[Mode 2 shutdown]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[Mode 3 disconnect (⚠️ DANGEROUS)]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[Monitoring Integration]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[PrometheusGrafana]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[SECURITY_SCRIPTS_REFERENCE]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[Script Permissions]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[Troubleshooting_23]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[VERIFICATION_RESULTS]] - document - docs/security/VERIFICATION_RESULTS.md
-- [[Weekly Compliance Scan (cron)]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[killswitch.sh_1]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[killswitch.sh doesn't confirm]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[scan.sh_1]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[scan.sh reports missing OpenSCAP]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[verify-security.sh_1]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[verify-security.sh fails]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[node not connected error]] - document - skills/openclaw/canvas/SKILL.md
+- [[node required error]] - document - skills/openclaw/canvas/SKILL.md
+- [[1. Create HTML content]] - document - skills/openclaw/canvas/SKILL.md
+- [[2. Find your canvas host URL]] - document - skills/openclaw/canvas/SKILL.md
+- [[3. Find connected nodes]] - document - skills/openclaw/canvas/SKILL.md
+- [[4. Present content]] - document - skills/openclaw/canvas/SKILL.md
+- [[5. Navigate, snapshot, or hide]] - document - skills/openclaw/canvas/SKILL.md
+- [[Actions]] - document - skills/openclaw/canvas/SKILL.md
+- [[Architecture_13]] - document - skills/openclaw/canvas/SKILL.md
+- [[Canvas Host Server (port 18793)]] - concept - skills/openclaw/canvas/SKILL.md
+- [[Canvas Skill]] - document - skills/openclaw/canvas/SKILL.md
+- [[Configuration_21]] - document - skills/openclaw/canvas/SKILL.md
+- [[Content not updating]] - document - skills/openclaw/canvas/SKILL.md
+- [[Debugging]] - document - skills/openclaw/canvas/SKILL.md
+- [[How It Works_3]] - document - skills/openclaw/canvas/SKILL.md
+- [[Live Reload]] - document - skills/openclaw/canvas/SKILL.md
+- [[Node App (MaciOSAndroid WebView)]] - concept - skills/openclaw/canvas/SKILL.md
+- [[Node Bridge (port 18790)]] - concept - skills/openclaw/canvas/SKILL.md
+- [[Overview_26]] - document - skills/openclaw/canvas/SKILL.md
+- [[SKILL_201]] - document - skills/openclaw/canvas/SKILL.md
+- [[Tailscale Integration]] - document - skills/openclaw/canvas/SKILL.md
+- [[Tips_1]] - document - skills/openclaw/canvas/SKILL.md
+- [[URL Path Structure]] - document - skills/openclaw/canvas/SKILL.md
+- [[White screen  content not loading]] - document - skills/openclaw/canvas/SKILL.md
+- [[Workflow_5]] - document - skills/openclaw/canvas/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,14 +42,3 @@ members: 24
 TABLE source_file, type FROM #community/Community_343
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 548]]
-- 1 edge to [[_COMMUNITY_Community 257]]
-- 1 edge to [[_COMMUNITY_Community 154]]
-- 1 edge to [[_COMMUNITY_Community 833]]
-- 1 edge to [[_COMMUNITY_Community 383]]
-
-## Top bridge nodes
-- [[Kill Switch]] - degree 9, connects to 3 communities
-- [[VERIFICATION_RESULTS]] - degree 5, connects to 2 communities

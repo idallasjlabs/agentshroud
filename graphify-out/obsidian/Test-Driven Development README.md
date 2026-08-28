@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-tdd/README.md"
 type: "document"
-community: "Community 592"
+community: "Community 231"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_592
+  - community/Community_231
 ---
 
 # Test-Driven Development README
@@ -18,4 +18,4 @@ tags:
 - [[Test-Driven Development (TDD) Coach]] - `references` [EXTRACTED]
 - [[Usage_36]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_592
+#graphify/document #graphify/EXTRACTED #community/Community_231

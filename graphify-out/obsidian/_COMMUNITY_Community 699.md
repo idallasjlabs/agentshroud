@@ -1,20 +1,28 @@
 ---
 type: community
-members: 7
+cohesion: 0.15
+members: 13
 ---
 
 # Community 699
 
-**Members:** 7 nodes
+**Cohesion:** 0.15 - loosely connected
+**Members:** 13 nodes
 
 ## Members
-- [[Branding Specialist Skill (i-bs, external)]] - concept - .agents/skills/i-bs/SKILL.md
-- [[Technical Illustrator (TI)_3]] - document - .agents/skills/i-ti/SKILL.md
-- [[Technical Illustrator README]] - document - .agents/skills/i-ti/README.md
-- [[Technical Writer (TW)_3]] - document - .agents/skills/i-tw/SKILL.md
-- [[Technical Writer README]] - document - .agents/skills/i-tw/README.md
-- [[UI Expert (UI)]] - document - .agents/skills/i-ui/SKILL.md
-- [[UX Skill (i-ux, external)]] - concept - .agents/skills/i-ux/SKILL.md
+- [[Re-injection Command (for reference)]] - document - .agents/skills/i-session-prompt/SKILL.md
+- [[Role_32]] - document - .agents/skills/i-session-prompt/SKILL.md
+- [[Rules_2]] - document - .agents/skills/i-session-prompt/SKILL.md
+- [[SKILL_54]] - document - .agents/skills/i-session-prompt/SKILL.md
+- [[Skill Session Prompt Generator (SESSION-PROMPT)]] - document - .agents/skills/i-session-prompt/SKILL.md
+- [[Step 1 — Survey the Repo]] - document - .agents/skills/i-session-prompt/SKILL.md
+- [[Step 2 — Answer Six Questions]] - document - .agents/skills/i-session-prompt/SKILL.md
+- [[Step 3 — Write SESSION_PROMPT]] - document - .agents/skills/i-session-prompt/SKILL.md
+- [[Step 4 — Write the File]] - document - .agents/skills/i-session-prompt/SKILL.md
+- [[Step 5 — Inject into All Three LLMs]] - document - .agents/skills/i-session-prompt/SKILL.md
+- [[Step 6 — Confirm]] - document - .agents/skills/i-session-prompt/SKILL.md
+- [[Trigger]] - document - .agents/skills/i-session-prompt/SKILL.md
+- [[Workflow Survey → Draft → Inject → Confirm]] - document - .agents/skills/i-session-prompt/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,9 +30,3 @@ members: 7
 TABLE source_file, type FROM #community/Community_699
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 592]]
-
-## Top bridge nodes
-- [[Technical Illustrator (TI)_3]] - degree 6, connects to 1 community

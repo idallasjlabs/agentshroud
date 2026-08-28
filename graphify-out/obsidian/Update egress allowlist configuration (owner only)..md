@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/management.py"
 type: "rationale"
-community: "Community 251"
+community: "Community 174"
 location: "L952"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_251
+  - community/Community_174
 ---
 
 # Update egress allowlist configuration (owner only).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[update_egress_allowlist()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_251
+#graphify/rationale #graphify/EXTRACTED #community/Community_174

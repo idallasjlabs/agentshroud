@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "Community 1339"
+community: "Community 103"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1339
+  - community/Community_103
 ---
 
 # make_config()
@@ -21,4 +21,4 @@ tags:
 - [[make_proxy()_1]] - `calls` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1339
+#graphify/code #graphify/EXTRACTED #community/Community_103

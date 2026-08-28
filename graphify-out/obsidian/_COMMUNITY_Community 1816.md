@@ -1,14 +1,16 @@
 ---
 type: community
+cohesion: 1.00
 members: 1
 ---
 
 # Community 1816
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[SOC Models ServiceDescriptor Tests]] - code - gateway/tests/test_soc_models.py
+- [[Threat Intelligence]] - concept - docs/project/glossary.md
 
 ## Live Query (requires Dataview plugin)
 

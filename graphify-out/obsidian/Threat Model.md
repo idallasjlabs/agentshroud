@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_ARCHITECTURE.md"
 type: "document"
-community: "Community 154"
+community: "Community 153"
 location: "L24"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_154
+  - community/Community_153
 ---
 
 # Threat Model
@@ -16,4 +16,4 @@ tags:
 - [[What AgentShroud Does]] - `contains` [EXTRACTED]
 - [[What We're Protecting Against]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_154
+#graphify/document #graphify/EXTRACTED #community/Community_153

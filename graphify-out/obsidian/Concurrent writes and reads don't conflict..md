@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "rationale"
-community: "Community 1"
+community: "Community 26"
 location: "L240"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1
+  - community/Community_26
 ---
 
 # Concurrent writes and reads don't conflict.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_concurrent_write_and_read()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1
+#graphify/rationale #graphify/EXTRACTED #community/Community_26

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/management.py"
 type: "rationale"
-community: "Community 1857"
+community: "Community 130"
 location: "L1002"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1857
+  - community/Community_130
 ---
 
 # Trigger manual rotation for a specific credential (owner only).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[rotate_credential()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1857
+#graphify/rationale #graphify/EXTRACTED #community/Community_130

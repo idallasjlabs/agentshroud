@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_failover.py"
 type: "rationale"
-community: "Community 221"
+community: "Community 224"
 location: "L799"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_221
+  - community/Community_224
 ---
 
 # Same freeze, but on the HTTPError branch's e.read() — also moved off     the eve
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_forward_request_slow_http_error_read_does_not_block_event_loop()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_221
+#graphify/rationale #graphify/EXTRACTED #community/Community_224

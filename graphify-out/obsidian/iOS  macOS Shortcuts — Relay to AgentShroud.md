@@ -1,12 +1,12 @@
 ---
 source_file: "shortcuts/README.md"
 type: "document"
-community: "Community 591"
+community: "Community 589"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_591
+  - community/Community_589
 ---
 
 # iOS / macOS Shortcuts — Relay to AgentShroud
@@ -23,6 +23,6 @@ tags:
 - [[Recipe E — Share Sheet photo relay]] - `contains` [EXTRACTED]
 - [[Status_11]] - `contains` [EXTRACTED]
 - [[The `forward` contract (authoritative)]] - `contains` [EXTRACTED]
-- [[Troubleshooting_35]] - `contains` [EXTRACTED]
+- [[Troubleshooting_34]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_591
+#graphify/document #graphify/EXTRACTED #community/Community_589

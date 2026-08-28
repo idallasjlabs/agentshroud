@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "Community 134"
+community: "SOC Collaborators"
 location: "L519"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_134
+  - community/SOC_Collaborators
 ---
 
 # unpause_collaborator()
@@ -22,4 +22,4 @@ tags:
 - [[telegram_proxy.py]] - `imports` [EXTRACTED]
 - [[unpause_collaborator_endpoint()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_134
+#graphify/code #graphify/EXTRACTED #community/SOC_Collaborators

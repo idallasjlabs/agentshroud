@@ -1,19 +1,30 @@
 ---
 type: community
-members: 6
+cohesion: 0.13
+members: 15
 ---
 
 # Community 636
 
-**Members:** 6 nodes
+**Cohesion:** 0.13 - loosely connected
+**Members:** 15 nodes
 
 ## Members
-- [[I1 Missing trailing newlines in route files]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
-- [[I2 Duplicated constants between `main.py` and `routesforward.py`]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
-- [[I3 `managednsblocklist` reads pihole password inline]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
-- [[I4 `AppState` class missing dynamically-set attributes]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
-- [[I5 Inline import on hot path in LLM proxy]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
-- [[🟢 INFO (nice to have)]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[Alert Actions]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
+- [[Configuration  Environment Variables_21]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
+- [[Default Thresholds]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
+- [[EgressMonitor.check_anomalies(agent_id)]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
+- [[EgressMonitor.daily_summary(agent_id)]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
+- [[EgressMonitor.get_events(agent_id, channel)]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
+- [[EgressMonitor.record(event)]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
+- [[Function Details_36]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
+- [[Key Classes  Functions_39]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
+- [[Purpose_157]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
+- [[Related_43]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
+- [[Responsibilities_41]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
+- [[Threat Model_12]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
+- [[egress_monitor.py_2]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
+- [[egress_monitor.py_1]] - document - docs/vault/02 - Modules/Security Modules/egress_monitor.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +32,3 @@ members: 6
 TABLE source_file, type FROM #community/Community_636
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 135]]
-
-## Top bridge nodes
-- [[🟢 INFO (nice to have)]] - degree 6, connects to 1 community

@@ -12,7 +12,6 @@ tags:
 # Metrics to Track
 
 ## Connections
-- [[Monitoring & Observability]] - `contains` [EXTRACTED]
 - [[Monitoring and Observability]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Community_701

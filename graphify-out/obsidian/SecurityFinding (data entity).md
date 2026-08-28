@@ -1,11 +1,11 @@
 ---
 source_file: "docs/data/data-dictionary.md"
 type: "concept"
-community: "Community 170"
+community: "Community 412"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_170
+  - community/Community_412
 ---
 
 # SecurityFinding (data entity)
@@ -14,4 +14,4 @@ tags:
 - [[InspectionResult (data entity)]] - `shares_data_with` [EXTRACTED]
 - [[URLAnalysisResult (data entity)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_170
+#graphify/concept #graphify/EXTRACTED #community/Community_412

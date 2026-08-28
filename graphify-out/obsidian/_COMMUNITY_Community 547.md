@@ -1,30 +1,32 @@
 ---
 type: community
+cohesion: 0.12
 members: 17
 ---
 
 # Community 547
 
+**Cohesion:** 0.12 - loosely connected
 **Members:** 17 nodes
 
 ## Members
-- [[.client()]] - code - gateway/tests/test_api_contract.py
-- [[.test_health_endpoint_unauthenticated()]] - code - gateway/tests/test_api_contract.py
-- [[.test_no_500_on_empty_requests()]] - code - gateway/tests/test_api_contract.py
-- [[.test_openapi_schema_is_valid()]] - code - gateway/tests/test_api_contract.py
-- [[.test_openapi_snapshot_matches_live_schema()]] - code - gateway/tests/test_api_contract.py
-- [[.test_protected_endpoints_reject_unauthenticated()]] - code - gateway/tests/test_api_contract.py
-- [[.test_version_consistency()]] - code - gateway/tests/test_api_contract.py
-- [[API endpoints should not return 500 on malformedempty requests.]] - rationale - gateway/tests/test_api_contract.py
-- [[API version in OpenAPI schema matches gateway package version.]] - rationale - gateway/tests/test_api_contract.py
-- [[Create a FastAPI test client.]] - rationale - gateway/tests/test_api_contract.py
-- [[Healthstatus endpoint must be accessible without authentication.]] - rationale - gateway/tests/test_api_contract.py
-- [[OpenAPI schema and version consistency tests.]] - rationale - gateway/tests/test_api_contract.py
-- [[OpenAPI schema endpoint returns valid JSON schema.]] - rationale - gateway/tests/test_api_contract.py
-- [[Protected API endpoints must reject requests without auth tokens.]] - rationale - gateway/tests/test_api_contract.py
-- [[TestOpenAPIContract]] - code - gateway/tests/test_api_contract.py
-- [[The committed gatewayopenapi.json snapshot must match the live schema.]] - rationale - gateway/tests/test_api_contract.py
-- [[test_api_contract.py]] - code - gateway/tests/test_api_contract.py
+- [[Approve Claude Code Prompt]] - document - skills/openclaw/tmux/SKILL.md
+- [[Capture Output]] - document - skills/openclaw/tmux/SKILL.md
+- [[Check All Sessions Status]] - document - skills/openclaw/tmux/SKILL.md
+- [[Check if Session Needs Input]] - document - skills/openclaw/tmux/SKILL.md
+- [[Claude Code Session Patterns]] - document - skills/openclaw/tmux/SKILL.md
+- [[Common Commands_3]] - document - skills/openclaw/tmux/SKILL.md
+- [[Example Sessions]] - document - skills/openclaw/tmux/SKILL.md
+- [[List Sessions]] - document - skills/openclaw/tmux/SKILL.md
+- [[Notes_7]] - document - skills/openclaw/tmux/SKILL.md
+- [[Send Keys]] - document - skills/openclaw/tmux/SKILL.md
+- [[Send Task to Session]] - document - skills/openclaw/tmux/SKILL.md
+- [[Sending Input Safely]] - document - skills/openclaw/tmux/SKILL.md
+- [[Session Management]] - document - skills/openclaw/tmux/SKILL.md
+- [[When NOT to Use_2]] - document - skills/openclaw/tmux/SKILL.md
+- [[When to Use_3]] - document - skills/openclaw/tmux/SKILL.md
+- [[WindowPane Navigation]] - document - skills/openclaw/tmux/SKILL.md
+- [[tmux Session Control]] - document - skills/openclaw/tmux/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,7 +36,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 57]]
+- 1 edge to [[_COMMUNITY_Community 981]]
 
 ## Top bridge nodes
-- [[TestOpenAPIContract]] - degree 10, connects to 1 community
+- [[tmux Session Control]] - degree 8, connects to 1 community

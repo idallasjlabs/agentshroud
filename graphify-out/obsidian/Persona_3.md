@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-hermes/SKILL.md"
 type: "document"
-community: "Community 943"
+community: "Community 941"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_943
+  - community/Community_941
 ---
 
 # Persona
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Hermes — Reference Verifier]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_943
+#graphify/document #graphify/EXTRACTED #community/Community_941

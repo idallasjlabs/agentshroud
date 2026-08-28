@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/system-architecture.md"
 type: "concept"
-community: "Community 1259"
+community: "Community 372"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1259
+  - community/Community_372
 ---
 
 # Approval Queue (SQLite)
@@ -16,4 +16,4 @@ tags:
 - [[Kill Switch (MonitorBlockIsolate)]] - `calls` [EXTRACTED]
 - [[TrustManager_5]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1259
+#graphify/concept #graphify/EXTRACTED #community/Community_372

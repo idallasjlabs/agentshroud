@@ -1,24 +1,25 @@
 ---
 type: community
-members: 11
+cohesion: 0.20
+members: 10
 ---
 
 # Community 830
 
-**Members:** 11 nodes
+**Cohesion:** 0.20 - loosely connected
+**Members:** 10 nodes
 
 ## Members
-- [[MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - document - .agents/skills/i-mcpm-aws-profile/README.md
-- [[MCP AWS Profile Configuration README]] - document - .agents/skills/i-mcpm-aws-profile/README.md
-- [[MCP AWS Profile Configuration Skill_1]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[MCP Auth Reset README]] - document - .agents/skills/i-mcpm-auth-reset/README.md
-- [[MCP Auth Reset Skill_1]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
-- [[MCP Doctor README]] - document - .agents/skills/i-mcpm-doctor/README.md
-- [[MCP Doctor Skill]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[Purpose_17]] - document - .agents/skills/i-mcpm-aws-profile/README.md
-- [[README_17]] - document - .agents/skills/i-mcpm-aws-profile/README.md
-- [[Related Skills_18]] - document - .agents/skills/i-mcpm-aws-profile/README.md
-- [[Usage_20]] - document - .agents/skills/i-mcpm-aws-profile/README.md
+- [[IDENTITY_1]] - document - docs/architecture/IDENTITY.md
+- [[Identity Reference - AgentShroud System]] - document - docs/architecture/IDENTITY.md
+- [[Via Control UI_1]] - document - docs/architecture/IDENTITY.md
+- [[Via Telegram_1]] - document - docs/architecture/IDENTITY.md
+- [[🎯 Bot Identity Configuration]] - document - docs/architecture/IDENTITY.md
+- [[👤 You (The Real Person)]] - document - docs/architecture/IDENTITY.md
+- [[💬 Communication Flow]] - document - docs/architecture/IDENTITY.md
+- [[📱 How It Works]] - document - docs/architecture/IDENTITY.md
+- [[🔐 Security]] - document - docs/architecture/IDENTITY.md
+- [[🤖 Your AI Bot]] - document - docs/architecture/IDENTITY.md
 
 ## Live Query (requires Dataview plugin)
 

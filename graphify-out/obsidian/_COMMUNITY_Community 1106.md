@@ -1,19 +1,21 @@
 ---
 type: community
+cohesion: 0.47
 members: 6
 ---
 
 # Community 1106
 
+**Cohesion:** 0.47 - moderately connected
 **Members:** 6 nodes
 
 ## Members
-- [[1password_service_account Docker secret]] - concept - docs/diagrams/images/diagram-22-dependency-graph.svg
-- [[agentshroud-bot container (starts after gateway healthy)]] - concept - docs/diagrams/images/diagram-22-dependency-graph.svg
-- [[agentshroud-gateway container (starts first)]] - concept - docs/diagrams/images/diagram-22-dependency-graph.svg
-- [[docker-agentshroud image (FROM node22-bookworm-slim)]] - concept - docs/diagrams/images/diagram-22-dependency-graph.svg
-- [[docker-gateway image (FROM python3.11-slim, gatewayDockerfile)]] - concept - docs/diagrams/images/diagram-22-dependency-graph.svg
-- [[gateway_password.txt Docker secret]] - concept - docs/diagrams/images/diagram-22-dependency-graph.svg
+- [[check()_2]] - code - scripts/smoke.d/test-container-runtime.sh
+- [[container-runtime.sh (detection shim)]] - code - scripts/lib/container-runtime.sh
+- [[make_fake_bin()]] - code - scripts/smoke.d/test-container-runtime.sh
+- [[run_detect()]] - code - scripts/smoke.d/test-container-runtime.sh
+- [[test-container-runtime.sh]] - code - scripts/smoke.d/test-container-runtime.sh
+- [[test-container-runtime.sh script]] - code - scripts/smoke.d/test-container-runtime.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,3 +23,9 @@ members: 6
 TABLE source_file, type FROM #community/Community_1106
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 549]]
+
+## Top bridge nodes
+- [[test-container-runtime.sh]] - degree 6, connects to 1 community

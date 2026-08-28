@@ -1,15 +1,18 @@
 ---
 type: community
-members: 2
+cohesion: 1.00
+members: 3
 ---
 
 # Community 1418
 
-**Members:** 2 nodes
+**Cohesion:** 1.00 - tightly connected
+**Members:** 3 nodes
 
 ## Members
-- [[SKILL_4]] - document - .agents/skills/i-architecture-review/SKILL.md
-- [[Skill architecture-review]] - document - .agents/skills/i-architecture-review/SKILL.md
+- [[check_or_fix()]] - code - scripts/sync-version.sh
+- [[sync-version.sh]] - code - scripts/sync-version.sh
+- [[sync-version.sh script]] - code - scripts/sync-version.sh
 
 ## Live Query (requires Dataview plugin)
 

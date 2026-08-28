@@ -1,24 +1,29 @@
 ---
 type: community
-members: 11
+cohesion: 0.14
+members: 14
 ---
 
 # Community 661
 
-**Members:** 11 nodes
+**Cohesion:** 0.14 - loosely connected
+**Members:** 14 nodes
 
 ## Members
-- [[AgentShroud Blue — 1583f0]] - concept - branding/QUICK-REFERENCE.md
-- [[AgentShroud Email Banner (600x150)]] - image - branding/email/email-banner-600x150.png
-- [[AgentShroud Logo — Dark Background Variant]] - image - branding/agentshroud-logo-dark-bg.png
-- [[AgentShroud MerchandiseStationery Mockup]] - image - branding/agentshroud-mockup.png
-- [[AgentShroud Primary Logo]] - image - branding/logo.png
-- [[INDEX]] - document - branding/INDEX.md
-- [[Inter Typeface (Primary)]] - concept - branding/typography/typography.md
-- [[JetBrains Mono Typeface (Monospace)]] - concept - branding/typography/typography.md
-- [[QUICK-REFERENCE]] - document - branding/QUICK-REFERENCE.md
-- [[README_38]] - document - branding/README.md
-- [[typography]] - document - branding/typography/typography.md
+- [[1.1 Owner  Applicant]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[1.2 Attorney Information]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[AgentShroud -- USPTO Trademark Application]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[Filing Reference_1]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[Option A Section 1(a) — Use in Commerce (if mark is already in use)]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[Option B Section 1(b) — Intent to Use (if not yet in commerce)]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[Recommended Searches]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[SECTION 10 ESTIMATED COSTS]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[SECTION 1 APPLICANT INFORMATION]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[SECTION 4 FILING BASIS]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[SECTION 5 DECLARATION  SIGNATURE]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[SECTION 6 PRIOR SEARCH RESULTS]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[SECTION 8 POST-FILING TIMELINE]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[USPTO_TRADEMARK_APPLICATION]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,14 +33,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 168]]
-- 1 edge to [[_COMMUNITY_Community 554]]
-- 1 edge to [[_COMMUNITY_Community 460]]
-- 1 edge to [[_COMMUNITY_Community 555]]
-- 1 edge to [[_COMMUNITY_Community 427]]
+- 1 edge to [[_COMMUNITY_Community 1088]]
+- 1 edge to [[_COMMUNITY_Community 1089]]
+- 1 edge to [[_COMMUNITY_Community 1306]]
+- 1 edge to [[_COMMUNITY_Community 1249]]
 
 ## Top bridge nodes
-- [[INDEX]] - degree 5, connects to 2 communities
-- [[README_38]] - degree 6, connects to 1 community
-- [[QUICK-REFERENCE]] - degree 4, connects to 1 community
-- [[typography]] - degree 4, connects to 1 community
+- [[AgentShroud -- USPTO Trademark Application]] - degree 12, connects to 4 communities

@@ -1,26 +1,30 @@
 ---
 type: community
-members: 13
+cohesion: 0.13
+members: 15
 ---
 
 # Community 603
 
-**Members:** 13 nodes
+**Cohesion:** 0.13 - loosely connected
+**Members:** 15 nodes
 
 ## Members
-- [[Bot Network Isolation Design]] - rationale - docs/vault/09 - Diagrams/Network Topology.md
-- [[Complete System Diagram]] - document - docs/vault/09 - Diagrams/Full System Flowchart.md
-- [[Container Network Diagram]] - document - docs/vault/09 - Diagrams/Network Topology.md
-- [[Full System Flowchart_1]] - document - docs/vault/09 - Diagrams/Full System Flowchart.md
-- [[Full System Flowchart]] - document - docs/vault/09 - Diagrams/Full System Flowchart.md
-- [[Hostname Resolution]] - document - docs/vault/09 - Diagrams/Network Topology.md
-- [[Legend]] - document - docs/vault/09 - Diagrams/Full System Flowchart.md
-- [[Network Security Notes]] - document - docs/vault/09 - Diagrams/Network Topology.md
-- [[Network Topology_3]] - document - docs/vault/09 - Diagrams/Network Topology.md
-- [[Network Topology_2]] - document - docs/vault/09 - Diagrams/Network Topology.md
-- [[Related Notes_71]] - document - docs/vault/09 - Diagrams/Full System Flowchart.md
-- [[Related Notes_72]] - document - docs/vault/09 - Diagrams/Network Topology.md
-- [[Traffic Routing]] - document - docs/vault/09 - Diagrams/Network Topology.md
+- [[1.1 The Problem]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[1.2 Root Cause Analysis]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[1.3 Solution Options]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[1.4 Implementation Plan]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[1.5 Testing Strategy]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[1.6 Success Criteria]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[PHASE 1 SECURITY FIX (CURRENT PRIORITY)]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[Phase 1 Pi Preparation (Prerequisites)]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Phase 2 Node Pairing]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Phase 3 Security Configuration]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Phase 4 Skill Development]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Phase 5 Distributed Workflows]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Workflow 1 Automated Testing on Pi]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Workflow 2 Continuous Development]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Workflow 3 IoT + AI Integration]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,8 +34,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 692]]
-- 1 edge to [[_COMMUNITY_Community 1325]]
+- 1 edge to [[_COMMUNITY_Community 439]]
+- 1 edge to [[_COMMUNITY_Community 572]]
 
 ## Top bridge nodes
-- [[Full System Flowchart]] - degree 4, connects to 2 communities
+- [[1.4 Implementation Plan]] - degree 7, connects to 1 community
+- [[PHASE 1 SECURITY FIX (CURRENT PRIORITY)]] - degree 7, connects to 1 community

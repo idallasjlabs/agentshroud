@@ -1,20 +1,23 @@
 ---
 type: community
-members: 7
+cohesion: 0.25
+members: 8
 ---
 
 # Community 928
 
-**Members:** 7 nodes
+**Cohesion:** 0.25 - loosely connected
+**Members:** 8 nodes
 
 ## Members
-- [[6. Test Coverage Analysis]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[6.1 Enforcement Test Coverage]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[6.2 Attack Simulation Coverage]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[A) Test Coverage Analysis]] - document - .github/agents/test-augmenter.agent.md
-- [[B) Edge Case Identification]] - document - .github/agents/test-augmenter.agent.md
-- [[C) Test Quality]] - document - .github/agents/test-augmenter.agent.md
-- [[Your Responsibilities]] - document - .github/agents/test-augmenter.agent.md
+- [[Integration]] - document - docs/vault/03 - Configuration/falco-rules.md
+- [[Network Enforcement]] - document - docs/vault/03 - Configuration/falco-rules.md
+- [[Priority Levels_1]] - document - docs/vault/03 - Configuration/falco-rules.md
+- [[Purpose_178]] - document - docs/vault/03 - Configuration/falco-rules.md
+- [[Related Notes_22]] - document - docs/vault/03 - Configuration/falco-rules.md
+- [[Rules Defined]] - document - docs/vault/03 - Configuration/falco-rules.md
+- [[Shell Spawning Exceptions]] - document - docs/vault/03 - Configuration/falco-rules.md
+- [[falco-rules.yaml]] - document - docs/vault/03 - Configuration/falco-rules.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,10 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 204]]
-- 1 edge to [[_COMMUNITY_Community 491]]
+- 1 edge to [[_COMMUNITY_Community 410]]
 
 ## Top bridge nodes
-- [[Your Responsibilities]] - degree 4, connects to 1 community
-- [[A) Test Coverage Analysis]] - degree 4, connects to 1 community
-- [[6. Test Coverage Analysis]] - degree 3, connects to 1 community
+- [[falco-rules.yaml]] - degree 8, connects to 1 community

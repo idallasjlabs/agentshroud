@@ -1,27 +1,18 @@
 ---
-source_file: "gateway/ingest_api/lifespan.py"
+source_file: "chatbot/main.py"
 type: "code"
-community: "Community 6"
-location: "L107"
+community: "Community 86"
+location: "L126"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_6
+  - graphify/EXTRACTED
+  - community/Community_86
 ---
 
 # FastAPI
 
 ## Connections
-- [[AlertTelegramRelay]] - `uses` [INFERRED]
-- [[DataLedger]] - `uses` [INFERRED]
-- [[EventBus]] - `uses` [INFERRED]
-- [[GroupRegistry]] - `uses` [INFERRED]
-- [[MiddlewareManager]] - `uses` [INFERRED]
-- [[MultiAgentRouter]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[UserSessionManager]] - `uses` [INFERRED]
-- [[lifespan()_1]] - `references` [EXTRACTED]
-- [[lifespan.py]] - `imports_from` [EXTRACTED]
+- [[lifespan()]] - `references` [EXTRACTED]
+- [[main.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_6
+#graphify/code #graphify/EXTRACTED #community/Community_86

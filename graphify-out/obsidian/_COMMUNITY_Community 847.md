@@ -1,26 +1,25 @@
 ---
 type: community
-members: 13
+cohesion: 0.22
+members: 10
 ---
 
 # Community 847
 
-**Members:** 13 nodes
+**Cohesion:** 0.22 - loosely connected
+**Members:** 10 nodes
 
 ## Members
-- [[1. Approval Queue (Gateway)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[2. PII Sanitization (Gateway)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[3. Audit Ledger (Gateway)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[4. Persona System (Gateway)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[5. Docker Isolation]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[6. Separate Bot Accounts (iCloud, Gmail)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[7. Ultra-Conservative Credential Policy]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[8. Seccomp Profiles (Currently Disabled)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[9. Read-Only Filesystem (Currently Disabled)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[Where's The REAL Value]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[⚖️ Medium-Value Features (Nice to Have)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[❓ Low-Value Features (Questionable ROI)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
-- [[🎯 High-Value Features (Justify the Effort)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[Approval Request Workflow (user-facing)]] - concept - docs/user-guide.md
+- [[Command Injection Threat — regex + no-shell exec mitigation]] - rationale - docs/ssh-security-review.md
+- [[Host SpoofingMITM Threat — TOFU model residual risk]] - rationale - docs/ssh-security-review.md
+- [[Open Findings (C3-C5, H4-H7, M1-M5)]] - concept - docs/claude-security-audit-prompt.md
+- [[Option 1 Direct SSH (current approach)]] - concept - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Production Deployment Recommendations]] - concept - docs/ssh-security-review.md
+- [[SSH AllowDeny List Evaluation Order]] - concept - docs/ssh-configuration.md
+- [[SSH Auto-Approve Commands]] - concept - docs/ssh-configuration.md
+- [[SSH Proxy Config Schema (agentshroud.yaml ssh section)]] - concept - docs/ssh-configuration.md
+- [[SSH Proxy Threat Model (6 threats)]] - concept - docs/ssh-security-review.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,7 +29,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 194]]
+- 1 edge to [[_COMMUNITY_Community 799]]
 
 ## Top bridge nodes
-- [[Where's The REAL Value]] - degree 4, connects to 1 community
+- [[Open Findings (C3-C5, H4-H7, M1-M5)]] - degree 2, connects to 1 community

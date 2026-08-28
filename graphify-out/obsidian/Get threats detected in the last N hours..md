@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "rationale"
-community: "Community 584"
+community: "Memory Lifecycle & Egress Filtering"
 location: "L370"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_584
+  - community/Memory_Lifecycle__Egress_Filtering
 ---
 
 # Get threats detected in the last N hours.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_recent_threats()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_584
+#graphify/rationale #graphify/EXTRACTED #community/Memory_Lifecycle__Egress_Filtering

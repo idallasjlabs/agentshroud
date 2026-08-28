@@ -1,11 +1,11 @@
 ---
 source_file: "firmware/voice-terminal/CMakeLists.txt"
 type: "code"
-community: "Community 785"
+community: "Community 279"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_785
+  - community/Community_279
 ---
 
 # Voice Terminal CMakeLists (IDF v5.4 BSP patch)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[SETUP]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_785
+#graphify/code #graphify/EXTRACTED #community/Community_279

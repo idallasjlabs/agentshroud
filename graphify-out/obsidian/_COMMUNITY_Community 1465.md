@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 1.00
 members: 2
 ---
 
 # Community 1465
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[SKILL_154]] - document - docker/config/openclaw/skills/i-kaizen/SKILL.md
-- [[Skill kaizen_2]] - document - docker/config/openclaw/skills/i-kaizen/SKILL.md
+- [[SKILL_101]] - document - docker/config/hermes/skills/i-observability/SKILL.md
+- [[Skill observability_1]] - document - docker/config/hermes/skills/i-observability/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

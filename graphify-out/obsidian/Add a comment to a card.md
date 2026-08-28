@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/trello/SKILL.md"
 type: "document"
-community: "Community 737"
+community: "Community 735"
 location: "L64"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_737
+  - community/Community_735
 ---
 
 # Add a comment to a card
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Usage_131]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_737
+#graphify/document #graphify/EXTRACTED #community/Community_735

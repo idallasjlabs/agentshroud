@@ -1,28 +1,30 @@
 ---
 type: community
+cohesion: 0.13
 members: 15
 ---
 
 # Community 627
 
+**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
-- [[BOT_CONTAINER]] - code - scripts/update-bot-agents.sh
-- [[BOT_DEFAULTS_DIR]] - code - scripts/update-bot-agents.sh
-- [[BOT_LIVE_SKILLS_DIR]] - code - scripts/update-bot-agents.sh
-- [[How to start a task]] - document - docs/runbooks/hermes-openclaw-dev-workflow.md
-- [[Monitoring progress]] - document - docs/runbooks/hermes-openclaw-dev-workflow.md
-- [[Multi-LLM Review Loop (Codex+Gemini review, Claude fixer)]] - concept - docker/config/hermes/skills/i-hdev/SKILL.md
-- [[Source of truth_4]] - document - docs/runbooks/hermes-openclaw-dev-workflow.md
-- [[Starting a Development Task via Hermes  OpenClaw]] - document - docs/runbooks/hermes-openclaw-dev-workflow.md
-- [[Status ready to use, with 4 known gaps (see below)]] - document - docs/runbooks/hermes-openclaw-dev-workflow.md
-- [[Things that will make a task halt and ask you, not fail silently]] - document - docs/runbooks/hermes-openclaw-dev-workflow.md
-- [[What happens automatically (confirmed real, in]] - document - docs/runbooks/hermes-openclaw-dev-workflow.md
-- [[What is not currently automated (the 4 gaps)]] - document - docs/runbooks/hermes-openclaw-dev-workflow.md
-- [[hermes-openclaw-dev-workflow]] - document - docs/runbooks/hermes-openclaw-dev-workflow.md
-- [[update-bot-agents.sh]] - code - scripts/update-bot-agents.sh
-- [[update-bot-agents.sh script]] - code - scripts/update-bot-agents.sh
+- [[Configuration  Environment Variables_11]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
+- [[Function Details_17]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
+- [[Injection Pattern Weights]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
+- [[Key Classes  Functions_20]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
+- [[Purpose_138]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
+- [[Related_24]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
+- [[Responsibilities_22]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
+- [[WebContentScanner._scan_encoded_payloads(content, result)]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
+- [[WebContentScanner._scan_hidden_content(content, result)]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
+- [[WebContentScanner._scan_pii(content, result)]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
+- [[WebContentScanner._scan_prompt_injection(content, result)]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
+- [[WebContentScanner._scan_zero_width(content, result)]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
+- [[WebContentScanner.scan(content, content_type)]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
+- [[web_content_scanner.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
+- [[web_content_scanner.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,14 +1,17 @@
 ---
 type: community
-members: 1
+cohesion: 1.00
+members: 2
 ---
 
 # Community 1642
 
-**Members:** 1 nodes
+**Cohesion:** 1.00 - tightly connected
+**Members:** 2 nodes
 
 ## Members
-- [[GitHub FUNDING Configuration]] - document - .github/FUNDING.yml
+- [[.test_collaborator_legacy_block_notice_is_normalized_json()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Legacy bracket-style block notices should normalize to Protect wording.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -16,3 +19,11 @@ members: 1
 TABLE source_file, type FROM #community/Community_1642
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 93]]
+- 1 edge to [[_COMMUNITY_Community 80]]
+- 1 edge to [[_COMMUNITY_Community 96]]
+
+## Top bridge nodes
+- [[.test_collaborator_legacy_block_notice_is_normalized_json()]] - degree 4, connects to 3 communities

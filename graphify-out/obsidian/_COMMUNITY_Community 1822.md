@@ -1,14 +1,16 @@
 ---
 type: community
+cohesion: 1.00
 members: 1
 ---
 
 # Community 1822
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[v0.9.0 Human Interface Testing Guide]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
+- [[SCRUM-154 hung WebSocket client must not wedge the approval lock]] - rationale - gateway/tests/test_enhanced_approval.py
 
 ## Live Query (requires Dataview plugin)
 

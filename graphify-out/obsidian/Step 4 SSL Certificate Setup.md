@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "Community 571"
+community: "Community 567"
 location: "L182"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_571
+  - community/Community_567
 ---
 
 # Step 4: SSL Certificate Setup
@@ -17,4 +17,4 @@ tags:
 - [[Option C Corporate Certificate Authority]] - `contains` [EXTRACTED]
 - [[Step-by-Step Deployment]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_571
+#graphify/document #graphify/EXTRACTED #community/Community_567

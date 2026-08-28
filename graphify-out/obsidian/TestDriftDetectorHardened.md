@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "Community 35"
+community: "Community 30"
 location: "L919"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_35
+  - community/Community_30
 ---
 
 # TestDriftDetectorHardened
@@ -33,4 +33,4 @@ tags:
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_35
+#graphify/code #graphify/INFERRED #community/Community_30

@@ -1,18 +1,17 @@
 ---
 source_file: "docs/ssh-capability.md"
 type: "document"
-community: "Community 594"
+community: "Community 614"
 location: "L66"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_594
+  - community/Community_614
 ---
 
 # Security Layers
 
 ## Connections
 - [[SSH Capability Architecture Document]] - `contains` [EXTRACTED]
-- [[SSH Capability — Architecture Document]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_594
+#graphify/document #graphify/EXTRACTED #community/Community_614

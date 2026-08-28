@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "Community 6"
+community: "Security Audit & Drift Detection"
 location: "L480"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/Security_Audit__Drift_Detection
 ---
 
 # Context guard should detect tool result manipulation.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_context_guard_tool_manipulation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_6
+#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Drift_Detection

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_report_store.py"
 type: "code"
-community: "Community 96"
+community: "Community 101"
 location: "L188"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_96
+  - community/Community_101
 ---
 
 # TestReviewHardening
@@ -21,4 +21,4 @@ tags:
 - [[SCRUM-79 adversarial-review follow-ups (2026-07-13).]] - `rationale_for` [EXTRACTED]
 - [[test_report_store.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_96
+#graphify/code #graphify/EXTRACTED #community/Community_101

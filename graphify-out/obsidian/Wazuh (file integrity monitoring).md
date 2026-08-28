@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/__init__.py"
 type: "concept"
-community: "Community 1174"
+community: "Community 1169"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1174
+  - community/Community_1169
 ---
 
 # Wazuh (file integrity monitoring)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[__init__.py_9]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1174
+#graphify/concept #graphify/EXTRACTED #community/Community_1169

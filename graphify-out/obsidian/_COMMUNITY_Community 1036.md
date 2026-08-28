@@ -1,20 +1,22 @@
 ---
 type: community
+cohesion: 0.29
 members: 7
 ---
 
 # Community 1036
 
+**Cohesion:** 0.29 - loosely connected
 **Members:** 7 nodes
 
 ## Members
-- [[AgentShroud Mission Statement (Timestamped)]] - rationale - docs/project/legal/PRIOR-USE.md
-- [[First Use in Commerce (Feb 20, 2026)]] - concept - docs/project/legal/PRIOR-USE.md
-- [[PRIOR-USE]] - document - docs/project/legal/PRIOR-USE.md
-- [[TEAS Plus Filing Process]] - concept - docs/project/legal/USPTO-APPLICATION.md
-- [[USPTO Class 009 Filing (Downloadable Software)]] - concept - docs/project/legal/USPTO-APPLICATION.md
-- [[USPTO Class 042 Filing (ScientificTechnological Services)]] - concept - docs/project/legal/USPTO-APPLICATION.md
-- [[USPTO-APPLICATION]] - document - docs/project/legal/USPTO-APPLICATION.md
+- [[Allowlisted domains (api.openai.com, api.anthropic.com, api.telegram.org, .github.com, etc)]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
+- [[Blocked (403 Forbidden) — all other domains + RFC1918]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
+- [[Bot makes outbound request (any HTTPS connection)]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
+- [[Connection logged (timestamp, domain, allowedblocked, count)]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
+- [[Domain allowlisted (agentshroud.yaml proxy.allowed_domains)]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
+- [[HTTP CONNECT tunnel to gateway8181]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
+- [[HTTP_PROXY set (httpgateway8181)]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,12 +24,3 @@ members: 7
 TABLE source_file, type FROM #community/Community_1036
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 1109]]
-- 1 edge to [[_COMMUNITY_Community 1037]]
-- 1 edge to [[_COMMUNITY_Community 762]]
-
-## Top bridge nodes
-- [[USPTO-APPLICATION]] - degree 6, connects to 2 communities
-- [[PRIOR-USE]] - degree 5, connects to 2 communities

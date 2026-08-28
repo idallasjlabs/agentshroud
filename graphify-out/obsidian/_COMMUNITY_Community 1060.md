@@ -1,20 +1,22 @@
 ---
 type: community
+cohesion: 0.29
 members: 7
 ---
 
 # Community 1060
 
+**Cohesion:** 0.29 - loosely connected
 **Members:** 7 nodes
 
 ## Members
-- [[.test_api_key_detected()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_clean_output_high_score()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_exfil_pattern_detected()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_injection_detected()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_low_agent_trust_penalty()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_pii_detected_lowers_score()]] - code - gateway/tests/test_subagent_governance.py
-- [[TestOutputTrustScoring]] - code - gateway/tests/test_subagent_governance.py
+- [[.client()_3]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_install()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_installer_page()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_prerequisites()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_runtimes()]] - code - gateway/tests/test_runtime_engines.py
+- [[Installer must not fake completion SCRUM-107.          The endpoint has no auto]] - rationale - gateway/tests/test_runtime_engines.py
+- [[TestInstallerAPI]] - code - gateway/tests/test_runtime_engines.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,12 +26,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 532]]
-- 1 edge to [[_COMMUNITY_Community 78]]
-- 1 edge to [[_COMMUNITY_Community 934]]
-- 1 edge to [[_COMMUNITY_Community 1135]]
-- 1 edge to [[_COMMUNITY_Community 994]]
-- 1 edge to [[_COMMUNITY_Community 461]]
+- 2 edges to [[_COMMUNITY_Community 329]]
+- 1 edge to [[_COMMUNITY_Community 325]]
+- 1 edge to [[_COMMUNITY_Community 320]]
+- 1 edge to [[_COMMUNITY_Community 348]]
+- 1 edge to [[_COMMUNITY_Community 207]]
 
 ## Top bridge nodes
-- [[TestOutputTrustScoring]] - degree 14, connects to 6 communities
+- [[TestInstallerAPI]] - degree 11, connects to 5 communities

@@ -1,17 +1,19 @@
 ---
 type: community
+cohesion: 0.50
 members: 4
 ---
 
 # Community 1347
 
+**Cohesion:** 0.50 - moderately connected
 **Members:** 4 nodes
 
 ## Members
-- [[._looks_like_cross_user_messaging_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_memory_access_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts requesting direct memory contentsearch access.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts requesting direct messaging to other users.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[oMLX requires a bearer token, unlike LM Studiomlx_lmFieldflare.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[oMLX's gemma-4-12B-it-4bit must win over the generic 'gemma' LM Studio     route]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_local_backend_headers_injects_bearer_token_for_omlx()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_local_failover_base_routes_omlx_gemma_before_generic_gemma()]] - code - gateway/tests/test_llm_proxy_local_parity.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +23,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 4]]
-- 2 edges to [[_COMMUNITY_Community 263]]
+- 2 edges to [[_COMMUNITY_Community 54]]
 
 ## Top bridge nodes
-- [[._looks_like_cross_user_messaging_request()]] - degree 5, connects to 2 communities
-- [[._looks_like_memory_access_request()]] - degree 4, connects to 2 communities
+- [[test_local_backend_headers_injects_bearer_token_for_omlx()]] - degree 3, connects to 1 community
+- [[test_local_failover_base_routes_omlx_gemma_before_generic_gemma()]] - degree 2, connects to 1 community

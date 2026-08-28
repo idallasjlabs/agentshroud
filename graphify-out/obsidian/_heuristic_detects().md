@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "code"
-community: "Community 263"
+community: "Community 52"
 location: "L228"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_263
+  - community/Community_52
 ---
 
 # _heuristic_detects()
@@ -17,4 +17,4 @@ tags:
 - [[_any_detector_fires()]] - `calls` [EXTRACTED]
 - [[test_adversarial_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_263
+#graphify/code #graphify/EXTRACTED #community/Community_52

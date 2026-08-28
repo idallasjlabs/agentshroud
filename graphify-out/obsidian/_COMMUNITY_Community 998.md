@@ -1,21 +1,23 @@
 ---
 type: community
+cohesion: 0.25
 members: 8
 ---
 
 # Community 998
 
+**Cohesion:** 0.25 - loosely connected
 **Members:** 8 nodes
 
 ## Members
-- [[Scenario 00 — Information Disclosure (Phase 0 finding)]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
-- [[Scenario 01 — Enforce-by-Default]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
-- [[Scenario 02 — Human-in-the-Loop Bypass]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
-- [[Scenario 03 — Session Isolation]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
-- [[Scenario 04 — Separation of Privilege]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
-- [[Scenario 05 — Credential Isolation]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
-- [[Scenario 06 — Outbound Information Filter]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
-- [[§1 — Re-run of Prior Scenarios]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[Stand-in for kokoro.KPipeline a callable yielding (graphemes, phonemes,     aud]] - rationale - gateway/tests/test_voice_gateway.py
+- [[When OUTPUT_SAMPLE_RATE (24000, Kokoro native) != TARGET_SAMPLE_RATE     (16000)]] - rationale - gateway/tests/test_voice_gateway.py
+- [[_fake_kokoro_pipeline()]] - code - gateway/tests/test_voice_gateway.py
+- [[synthesize() feeds the normalised (no-markdown, no-token) text to Kokoro.      V]] - rationale - gateway/tests/test_voice_gateway.py
+- [[synthesize() runs the Kokoro pipeline; when rates match no resampling occurs.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[test_tts_resamples_24000_to_16000()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_tts_synthesize_passes_normalised_text_to_kokoro()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_tts_synthesize_via_kokoro()]] - code - gateway/tests/test_voice_gateway.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,7 +27,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 930]]
+- 4 edges to [[_COMMUNITY_Community 35]]
 
 ## Top bridge nodes
-- [[§1 — Re-run of Prior Scenarios]] - degree 8, connects to 1 community
+- [[_fake_kokoro_pipeline()]] - degree 5, connects to 1 community
+- [[test_tts_resamples_24000_to_16000()]] - degree 3, connects to 1 community
+- [[test_tts_synthesize_passes_normalised_text_to_kokoro()]] - degree 3, connects to 1 community
+- [[test_tts_synthesize_via_kokoro()]] - degree 3, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "rationale"
-community: "Community 513"
+community: "Middleware & Lifespan"
 location: "L334"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_513
+  - community/Middleware__Lifespan
 ---
 
 # Test middleware configuration with missing tool_result_pii config
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_middleware_set_config_missing()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_513
+#graphify/rationale #graphify/EXTRACTED #community/Middleware__Lifespan

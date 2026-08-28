@@ -1,21 +1,23 @@
 ---
 type: community
+cohesion: 0.68
 members: 8
 ---
 
 # Community 962
 
+**Cohesion:** 0.68 - moderately connected
 **Members:** 8 nodes
 
 ## Members
-- [[Input Requirements_27]] - document - docker/config/openclaw/skills/i-oracle/SKILL.md
-- [[Oracle — Feedback Analyst_5]] - document - docker/config/openclaw/skills/i-oracle/SKILL.md
-- [[Output Format_33]] - document - docker/config/openclaw/skills/i-oracle/SKILL.md
-- [[Persona_21]] - document - docker/config/openclaw/skills/i-oracle/SKILL.md
-- [[Quality Checklist_24]] - document - docker/config/openclaw/skills/i-oracle/SKILL.md
-- [[Role_96]] - document - docker/config/openclaw/skills/i-oracle/SKILL.md
-- [[SKILL_166]] - document - docker/config/openclaw/skills/i-oracle/SKILL.md
-- [[System Prompt_21]] - document - docker/config/openclaw/skills/i-oracle/SKILL.md
+- [[alert_if_critical()]] - code - docker/scripts/security-scan.sh
+- [[log()_4]] - code - docker/scripts/security-scan.sh
+- [[run_clamav()]] - code - docker/scripts/security-scan.sh
+- [[run_oscap()]] - code - docker/scripts/security-scan.sh
+- [[run_sbom()]] - code - docker/scripts/security-scan.sh
+- [[run_trivy()]] - code - docker/scripts/security-scan.sh
+- [[security-scan.sh]] - code - docker/scripts/security-scan.sh
+- [[security-scan.sh script]] - code - docker/scripts/security-scan.sh
 
 ## Live Query (requires Dataview plugin)
 

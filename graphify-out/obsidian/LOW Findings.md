@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md"
 type: "document"
-community: "Community 342"
+community: "Community 345"
 location: "L158"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_342
+  - community/Community_345
 ---
 
 # LOW Findings
@@ -17,4 +17,4 @@ tags:
 - [[R2-L2 WebSocket Connection Leak in `webapi.py`]] - `contains` [EXTRACTED]
 - [[R2-L3 OCI Image Version Labels Outdated]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_342
+#graphify/document #graphify/EXTRACTED #community/Community_345

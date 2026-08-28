@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-04-infrastructure-hosting.svg"
 type: "image"
-community: "Community 208"
+community: "Community 211"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Community_208
+  - community/Community_211
 ---
 
 # Tailscale Overlay Network (tail240ea8.ts.net)
@@ -17,4 +17,4 @@ tags:
 - [[raspberrypi (100.107.248.66, agentshroud-bot user)]] - `shares_data_with` [EXTRACTED]
 - [[trillian (100.94.68.61, development node)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Community_208
+#graphify/image #graphify/EXTRACTED #community/Community_211

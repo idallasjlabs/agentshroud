@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 1.00
 members: 2
 ---
 
 # Community 1490
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[ws_client.c (Voice Gateway WebSocket client)]] - code - firmware/voice-terminal/main/ws_client.c
-- [[ws_client.h (WS client public API + callback typedefs)]] - code - firmware/voice-terminal/main/ws_client.h
+- [[God Nodes Analysis]] - concept - docker/config/openclaw/skills/graphify/SKILL.md
+- [[graphify.serve MCP stdio Server]] - concept - docker/config/openclaw/skills/graphify/references/exports.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-mc/SKILL.md"
 type: "document"
-community: "Community 744"
+community: "Community 742"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_744
+  - community/Community_742
 ---
 
 # GSDE&G Development Master Checklist
@@ -24,4 +24,4 @@ tags:
 - [[SKILL_30]] - `contains` [EXTRACTED]
 - [[Skill Index]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_744
+#graphify/document #graphify/EXTRACTED #community/Community_742

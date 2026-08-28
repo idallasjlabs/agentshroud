@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/progressive_trust_config.py"
 type: "code"
-community: "Community 35"
+community: "Progressive Trust"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_35
+  - community/Progressive_Trust
 ---
 
 # progressive_trust_config.py
@@ -20,4 +20,4 @@ tags:
 - [[resolve_enforcement_mode()]] - `contains` [EXTRACTED]
 - [[test_progressive_trust_integration.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_35
+#graphify/code #graphify/EXTRACTED #community/Progressive_Trust

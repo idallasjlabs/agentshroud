@@ -1,19 +1,20 @@
 ---
 type: community
-members: 6
+cohesion: 0.40
+members: 5
 ---
 
 # Community 1256
 
-**Members:** 6 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[.test_clean_message_allowed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_dict_message_handled()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_direct_no_session_manager_blocked()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_non_owner_blocked()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_owner_allowed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestCrossSessionAccess]] - code - gateway/tests/test_middleware_coverage.py
+- [[Basic Usage]] - document - .github/COPILOT_CLI_SETUP.md
+- [[Check Context Usage]] - document - .github/COPILOT_CLI_SETUP.md
+- [[Run with Specific Agent]] - document - .github/COPILOT_CLI_SETUP.md
+- [[Select Model]] - document - .github/COPILOT_CLI_SETUP.md
+- [[Start Interactive Session]] - document - .github/COPILOT_CLI_SETUP.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,13 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 6]]
-- 2 edges to [[_COMMUNITY_Community 130]]
-- 1 edge to [[_COMMUNITY_Community 1]]
-- 1 edge to [[_COMMUNITY_Community 174]]
-- 1 edge to [[_COMMUNITY_Community 426]]
+- 1 edge to [[_COMMUNITY_Community 172]]
 
 ## Top bridge nodes
-- [[TestCrossSessionAccess]] - degree 10, connects to 4 communities
-- [[.test_non_owner_blocked()]] - degree 2, connects to 1 community
-- [[.test_owner_allowed()]] - degree 2, connects to 1 community
+- [[Basic Usage]] - degree 5, connects to 1 community

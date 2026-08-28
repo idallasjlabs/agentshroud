@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/canary.py"
 type: "code"
-community: "Community 74"
+community: "Community 65"
 location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_74
+  - community/Community_65
 ---
 
 # CanaryResult
@@ -17,4 +17,4 @@ tags:
 - [[canary.py]] - `contains` [EXTRACTED]
 - [[run_canary()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_74
+#graphify/code #graphify/EXTRACTED #community/Community_65

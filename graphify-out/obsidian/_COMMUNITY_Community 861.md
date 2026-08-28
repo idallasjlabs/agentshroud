@@ -1,23 +1,25 @@
 ---
 type: community
+cohesion: 0.29
 members: 10
 ---
 
 # Community 861
 
+**Cohesion:** 0.29 - loosely connected
 **Members:** 10 nodes
 
 ## Members
-- [[asb (AgentShroud bot helper)]] - code - scripts/asb
-- [[ensure_local_model_available()]] - code - scripts/switch_model.sh
-- [[normalize_cloud_ref()]] - code - scripts/switch_model.sh
-- [[preflight_local()]] - code - scripts/switch_model.sh
-- [[switch_model.sh]] - code - scripts/switch_model.sh
-- [[switch_model.sh script]] - code - scripts/switch_model.sh
-- [[upsert_env_value()]] - code - scripts/switch_model.sh
-- [[usage()_4]] - code - scripts/switch_model.sh
-- [[verify_both_bots_healthy()]] - code - scripts/switch_model.sh
-- [[wait_for_local_model()]] - code - scripts/switch_model.sh
+- [[check()_1]] - code - scripts/preflight-check.sh
+- [[fail()_4]] - code - scripts/tailscale-check.sh
+- [[infra-check.sh]] - code - scripts/infra-check.sh
+- [[infra-check.sh script]] - code - scripts/infra-check.sh
+- [[ok()_1]] - code - scripts/tailscale-check.sh
+- [[preflight-check.sh]] - code - scripts/preflight-check.sh
+- [[preflight-check.sh script]] - code - scripts/preflight-check.sh
+- [[tailscale-check.sh]] - code - scripts/tailscale-check.sh
+- [[tailscale-check.sh script]] - code - scripts/tailscale-check.sh
+- [[warn()_4]] - code - scripts/tailscale-check.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,8 +29,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 129]]
-- 1 edge to [[_COMMUNITY_Community 126]]
+- 1 edge to [[_COMMUNITY_Community 65]]
 
 ## Top bridge nodes
-- [[switch_model.sh]] - degree 12, connects to 2 communities
+- [[preflight-check.sh]] - degree 4, connects to 1 community

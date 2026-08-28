@@ -1,12 +1,12 @@
 ---
 source_file: ".mcp.json"
 type: "code"
-community: "Community 219"
+community: "Community 222"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_219
+  - community/Community_222
 ---
 
 # xmind
@@ -19,4 +19,4 @@ tags:
 - [[outputPath]] - `requires_env` [EXTRACTED]
 - [[xmind-generator-mcp]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_219
+#graphify/code #graphify/EXTRACTED #community/Community_222

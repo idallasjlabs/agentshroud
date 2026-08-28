@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION.md"
 type: "document"
-community: "Community 847"
+community: "Community 731"
 location: "L117"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_847
+  - community/Community_731
 ---
 
 # 🎯 High-Value Features (Justify the Effort)
@@ -18,4 +18,4 @@ tags:
 - [[4. Persona System (Gateway)]] - `contains` [EXTRACTED]
 - [[Where's The REAL Value]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_847
+#graphify/document #graphify/EXTRACTED #community/Community_731

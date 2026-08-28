@@ -1,39 +1,39 @@
 ---
 type: community
-members: 26
+cohesion: 0.08
+members: 24
 ---
 
 # Community 362
 
-**Members:** 26 nodes
+**Cohesion:** 0.08 - loosely connected
+**Members:** 24 nodes
 
 ## Members
-- [[1. ContextGuard NEVER BLOCKS (Severity HIGH)]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
-- [[1. Defense in Depth]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
-- [[1. Least Privilege]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[2. Defense in Depth]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[2. Regex-Only Detection (Severity MEDIUM-HIGH)]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
-- [[2. Simple Rules Are Secure]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
-- [[3. Bot's Superior Reasoning]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
-- [[3. Explicit Over Implicit]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[3. No Cross-Turn Analysis (Severity HIGH)]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
-- [[4. Fail Secure]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[4. No Semantic Understanding (Severity MEDIUM)]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
-- [[Core Security Principles_4]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[Critical Findings]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
-- [[Current Defenses (3 Layers)]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
-- [[Layer 1 PromptGuard (11 regex patterns) — P0, ACTIVE]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
-- [[Layer 2 ContextGuard (23 patterns + session tracking) — P1, ACTIVE]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
-- [[Layer 3 ToolResultInjectionScanner (12 patterns) — P1, ACTIVE]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
-- [[Layer 4 PromptProtection (outbound) — P2, ACTIVE]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
-- [[P0 — Ship Blockers]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
-- [[P1 — High Value]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
-- [[P2 — Defense in Depth]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
-- [[Prompt Injection Assessment — AgentShroud v0.7.0]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
-- [[Threat Matrix What Gets Through]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
-- [[prompt-injection-assessment-2026-02-25]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
-- [[v0.8.0 Recommendations (Priority Order)]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
-- [[🎓 Key Principles]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[Current Execution Tracker (2026-03-14)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Current hard gate]] - document - docs/planning/RELEASE-PLAN.md
+- [[Current status snapshot]] - document - docs/planning/RELEASE-PLAN.md
+- [[Dependencies_18]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[Key Changes (2026-03-04 1216 UTC)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Key Changes (2026-04-08)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Live tracker files]] - document - docs/planning/RELEASE-PLAN.md
+- [[Milestones]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[Success Criteria_2]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[Summary_5]] - document - docs/planning/RELEASE-PLAN.md
+- [[v0.8.0-release-plan]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[v0.9.0 Sentinel — Data Isolation + SOC + Remediation (37 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[v0.9.0-release-plan]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
+- [[v1.1.0 Groups — Workspaces for Teams (6 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[v1.2.0 Local LLMs — Offline Model Support (4 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[🔴 Private Service Data Isolation (6 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[🔴 Security Operations Center (SOC) (6 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[🛡️ AgentShroud Release Plan]] - document - docs/planning/RELEASE-PLAN.md
+- [[🟡 Apple Messages Integration (4 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[🟡 Security Tools — Full Integration (5 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[🟡 Steve Hay Remediation (4 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[🟢 Development Infrastructure (4 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[🟢 Infrastructure (5 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[🟢 Multi-Agent Architecture (3 items)]] - document - docs/planning/RELEASE-PLAN.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -43,9 +43,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 589]]
-- 1 edge to [[_COMMUNITY_Community 420]]
+- 1 edge to [[_COMMUNITY_Community 166]]
+- 1 edge to [[_COMMUNITY_Community 905]]
+- 1 edge to [[_COMMUNITY_Community 672]]
+- 1 edge to [[_COMMUNITY_Community 622]]
+- 1 edge to [[_COMMUNITY_Community 403]]
+- 1 edge to [[_COMMUNITY_Community 923]]
+- 1 edge to [[_COMMUNITY_Community 1000]]
+- 1 edge to [[_COMMUNITY_Community 671]]
 
 ## Top bridge nodes
-- [[🎓 Key Principles]] - degree 5, connects to 1 community
-- [[Core Security Principles_4]] - degree 5, connects to 1 community
+- [[🛡️ AgentShroud Release Plan]] - degree 18, connects to 8 communities

@@ -1,17 +1,19 @@
 ---
 type: community
+cohesion: 0.50
 members: 4
 ---
 
 # Community 1357
 
+**Cohesion:** 0.50 - moderately connected
 **Members:** 4 nodes
 
 ## Members
-- [[.test_collaborator_aws_credentials_probe_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_collaborator_metadata_endpoint_probe_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[AWS credentials path probes should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Cloud metadata endpoint probes should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_five_all_pillars()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[.test_one_baseline()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[.test_two_with_wazuh()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[TestScoreLoggingMonitoring_1]] - code - gateway/tests/test_scorecard_scoring.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_Community 2]]
-- 2 edges to [[_COMMUNITY_Community 32]]
+- 1 edge to [[_COMMUNITY_Community 646]]
 
 ## Top bridge nodes
-- [[.test_collaborator_metadata_endpoint_probe_is_blocked_and_quarantined()]] - degree 8, connects to 2 communities
-- [[.test_collaborator_aws_credentials_probe_is_blocked_and_quarantined()]] - degree 7, connects to 2 communities
+- [[TestScoreLoggingMonitoring_1]] - degree 4, connects to 1 community

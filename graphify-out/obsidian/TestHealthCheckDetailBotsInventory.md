@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "Community 9"
+community: "Community 24"
 location: "L533"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_9
+  - community/Community_24
 ---
 
 # TestHealthCheckDetailBotsInventory
@@ -17,4 +17,4 @@ tags:
 - [[health_check_detail's per-bot inventory must key the Docker lookup by     each b]] - `rationale_for` [EXTRACTED]
 - [[test_main_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_9
+#graphify/code #graphify/EXTRACTED #community/Community_24

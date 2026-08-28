@@ -1,36 +1,38 @@
 ---
 type: community
+cohesion: 0.09
 members: 23
 ---
 
 # Community 371
 
+**Cohesion:** 0.09 - loosely connected
 **Members:** 23 nodes
 
 ## Members
-- [[1. Provision Your Secrets (API Keys & Tokens)]] - document - docs/setup/LLM_PROVIDER_SETUP.md
-- [[2. Apply Configuration & Restart]] - document - docs/setup/LLM_PROVIDER_SETUP.md
-- [[3. Switching Models in OpenClaw]] - document - docs/setup/LLM_PROVIDER_SETUP.md
-- [[4. Local Ollama Integration]] - document - docs/setup/LLM_PROVIDER_SETUP.md
-- [[5. Verification & Troubleshooting]] - document - docs/setup/LLM_PROVIDER_SETUP.md
-- [[AgentShroud™ LLM Provider Setup & Switching Guide]] - document - docs/setup/LLM_PROVIDER_SETUP.md
-- [[Current Status_9]] - document - docs/setup/TAILSCALE_SETUP.md
-- [[How to Switch via Telegram]] - document - docs/setup/LLM_PROVIDER_SETUP.md
-- [[LLM_PROVIDER_SETUP]] - document - docs/setup/LLM_PROVIDER_SETUP.md
-- [[OpenClaw Bot Container]] - concept - docs/setup/OPENCLAW_SSH_SETUP.md
-- [[Option 1 Tailscale Serve (Recommended - Most Secure)]] - document - docs/setup/TAILSCALE_SETUP.md
-- [[Option 2 Bind to All Interfaces (Less Secure)]] - document - docs/setup/TAILSCALE_SETUP.md
-- [[Option 3 Bind to Tailscale IP Only (Best Balance)]] - document - docs/setup/TAILSCALE_SETUP.md
-- [[PAIRING_INSTRUCTIONS]] - document - docs/setup/PAIRING_INSTRUCTIONS.md
-- [[Provider Model Strings]] - document - docs/setup/LLM_PROVIDER_SETUP.md
-- [[SETUP_API_KEYS]] - document - docs/setup/SETUP_API_KEYS.md
-- [[Setup Commands]] - document - docs/setup/LLM_PROVIDER_SETUP.md
-- [[TAILSCALE_SETUP]] - document - docs/setup/TAILSCALE_SETUP.md
-- [[TELEGRAM_SETUP]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[Tailscale ACLs (Recommended)]] - document - docs/setup/TAILSCALE_SETUP.md
-- [[Tailscale Access to OpenClaw Control UI]] - document - docs/setup/TAILSCALE_SETUP.md
-- [[VAULT-SHARING-INSTRUCTIONS]] - document - docs/setup/VAULT-SHARING-INSTRUCTIONS.md
-- [[Verification_19]] - document - docs/setup/TAILSCALE_SETUP.md
+- [[A. Private Service Data Isolation]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[AgentShroud Blue Team Security Auditor]] - document - .agents/skills/i-sec-defense/SKILL.md
+- [[Audit Procedure]] - document - .agents/skills/i-sec-defense/SKILL.md
+- [[B. Security Operations Center (SOC)]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[C. Steve Hay Remediation]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[Critical Rules_1]] - document - .agents/skills/i-sec-defense/SKILL.md
+- [[D. Apple Messages Integration]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[E. Security Tools (Full Integration, Not Stubs)]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[F. Infrastructure]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[H. Development Infrastructure]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[Heat Map Legend]] - document - .agents/skills/i-sec-defense/SKILL.md
+- [[L. Multi-Agent Architecture]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[Loss Categories]] - document - .agents/skills/i-sec-defense/SKILL.md
+- [[Methodology]] - document - .agents/skills/i-sec-defense/SKILL.md
+- [[Output Format_9]] - document - .agents/skills/i-sec-defense/SKILL.md
+- [[Phase 1 Code-Level Module Audit]] - document - .agents/skills/i-sec-defense/SKILL.md
+- [[Phase 2 Heat Map Reconstruction]] - document - .agents/skills/i-sec-defense/SKILL.md
+- [[Phase 3 Integration Gap Analysis]] - document - .agents/skills/i-sec-defense/SKILL.md
+- [[Phase 4 Configuration Audit]] - document - .agents/skills/i-sec-defense/SKILL.md
+- [[Phase 5 Steve Hay's Specific Probes]] - document - .agents/skills/i-sec-defense/SKILL.md
+- [[SKILL_51]] - document - .agents/skills/i-sec-defense/SKILL.md
+- [[Unsafe Control Actions (UCAs)]] - document - .agents/skills/i-sec-defense/SKILL.md
+- [[v0.9.0 — Sentinel (Blue Team Remediation + Data Isolation + SOC)]] - document - docs/planning/MASTER-FEATURE-LIST.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -40,16 +42,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 392]]
-- 1 edge to [[_COMMUNITY_Community 90]]
-- 1 edge to [[_COMMUNITY_Community 690]]
-- 1 edge to [[_COMMUNITY_Community 317]]
-- 1 edge to [[_COMMUNITY_Community 649]]
-- 1 edge to [[_COMMUNITY_Community 590]]
+- 1 edge to [[_COMMUNITY_Community 423]]
+- 1 edge to [[_COMMUNITY_Community 403]]
 
 ## Top bridge nodes
-- [[OpenClaw Bot Container]] - degree 7, connects to 2 communities
-- [[SETUP_API_KEYS]] - degree 5, connects to 1 community
-- [[PAIRING_INSTRUCTIONS]] - degree 4, connects to 1 community
-- [[TELEGRAM_SETUP]] - degree 4, connects to 1 community
-- [[VAULT-SHARING-INSTRUCTIONS]] - degree 3, connects to 1 community
+- [[v0.9.0 — Sentinel (Blue Team Remediation + Data Isolation + SOC)]] - degree 9, connects to 1 community
+- [[L. Multi-Agent Architecture]] - degree 2, connects to 1 community

@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1149
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[Branding Specialist (BS)]] - document - .agents/skills/i-bs/README.md
-- [[Purpose_5]] - document - .agents/skills/i-bs/README.md
-- [[README_5]] - document - .agents/skills/i-bs/README.md
-- [[Related Skills_5]] - document - .agents/skills/i-bs/README.md
-- [[Usage_7]] - document - .agents/skills/i-bs/README.md
+- [[Git Workflow Guardian (GIT-GUARD)]] - document - .agents/skills/i-gg/README.md
+- [[Purpose_11]] - document - .agents/skills/i-gg/README.md
+- [[README_11]] - document - .agents/skills/i-gg/README.md
+- [[Related Skills_11]] - document - .agents/skills/i-gg/README.md
+- [[Usage_13]] - document - .agents/skills/i-gg/README.md
 
 ## Live Query (requires Dataview plugin)
 

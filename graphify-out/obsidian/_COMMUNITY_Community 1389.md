@@ -1,16 +1,18 @@
 ---
 type: community
+cohesion: 0.67
 members: 3
 ---
 
 # Community 1389
 
+**Cohesion:** 0.67 - moderately connected
 **Members:** 3 nodes
 
 ## Members
-- [[MemoryIntegrityMonitor Tamper Detection]] - code - gateway/security/memory_integrity.py
-- [[MemoryLifecycleManager PII Scan and Retention]] - code - gateway/security/memory_lifecycle.py
-- [[Test Memory Lifecycle and Integrity]] - code - gateway/tests/test_memory_lifecycle.py
+- [[Trillian Host Compose Override]] - document - docker/docker-compose.agentshroud-bot.trillian.yml
+- [[upgrade.sh]] - code - docker/upgrade.sh
+- [[upgrade.sh script]] - code - docker/upgrade.sh
 
 ## Live Query (requires Dataview plugin)
 

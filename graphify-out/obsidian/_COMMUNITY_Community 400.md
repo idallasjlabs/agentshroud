@@ -1,30 +1,37 @@
 ---
 type: community
-members: 17
+cohesion: 0.09
+members: 22
 ---
 
 # Community 400
 
-**Members:** 17 nodes
+**Cohesion:** 0.09 - loosely connected
+**Members:** 22 nodes
 
 ## Members
-- [[Basic validation of a skill]] - rationale - skills/openclaw/skill-creator/scripts/quick_validate.py
-- [[CLI]] - document - skills/openclaw/voice-call/SKILL.md
-- [[OpenClaw Skill Metadata Schema (frontmatter convention)]] - concept - skills/openclaw/skill-creator/scripts/quick_validate.py
-- [[SKILL_230]] - document - skills/openclaw/songsee/SKILL.md
-- [[SKILL_231]] - document - skills/openclaw/spotify-player/SKILL.md
-- [[SKILL_233]] - document - skills/openclaw/things-mac/SKILL.md
-- [[SKILL_237]] - document - skills/openclaw/voice-call/SKILL.md
-- [[SKILL_238]] - document - skills/openclaw/wacli/SKILL.md
-- [[SKILL_240]] - document - skills/openclaw/xurl/SKILL.md
-- [[Things 3 CLI]] - document - skills/openclaw/things-mac/SKILL.md
-- [[Tool]] - document - skills/openclaw/voice-call/SKILL.md
-- [[Voice Call]] - document - skills/openclaw/voice-call/SKILL.md
-- [[quick_validate.py]] - code - skills/openclaw/skill-creator/scripts/quick_validate.py
-- [[songsee]] - document - skills/openclaw/songsee/SKILL.md
-- [[spogo  spotify_player]] - document - skills/openclaw/spotify-player/SKILL.md
-- [[validate_skill()]] - code - skills/openclaw/skill-creator/scripts/quick_validate.py
-- [[wacli]] - document - skills/openclaw/wacli/SKILL.md
+- [[1. Generate the voice gateway token]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[2. Create `wifi_credentials.h`]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[3. Start the voice gateway]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[4. Enable Tailscale Funnel]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[5. Build and flash the firmware]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[Adding a future agent_1]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[Agent toggle (MUTE button — BSP_BUTTON_MUTE)]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[Architecture_5]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[Installation_1]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[Physical button (top button — BSP_BUTTON_MAIN)]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[Prerequisites_2]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[Security notes]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[Success pattern — `docker logs agentshroud-voice-gateway`]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[Tap to talk]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[Troubleshooting_17]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[Updating the firmware (OTA — the normal deploy path)]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[Usage_121]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[Voice volume]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[Voice-gateway configuration (env vars, set in `dockerdocker-compose.yml`)]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[Wake word]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[voice-terminal-esp32-s3]] - document - docs/integrations/voice-terminal-esp32-s3.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,18 +39,3 @@ members: 17
 TABLE source_file, type FROM #community/Community_400
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 535]]
-- 1 edge to [[_COMMUNITY_Community 546]]
-- 1 edge to [[_COMMUNITY_Community 856]]
-- 1 edge to [[_COMMUNITY_Community 982]]
-- 1 edge to [[_COMMUNITY_Community 737]]
-- 1 edge to [[_COMMUNITY_Community 1047]]
-- 1 edge to [[_COMMUNITY_Community 786]]
-- 1 edge to [[_COMMUNITY_Community 388]]
-
-## Top bridge nodes
-- [[OpenClaw Skill Metadata Schema (frontmatter convention)]] - degree 13, connects to 6 communities
-- [[validate_skill()]] - degree 4, connects to 1 community
-- [[SKILL_240]] - degree 3, connects to 1 community

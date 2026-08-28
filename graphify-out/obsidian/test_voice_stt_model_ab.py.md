@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_stt_model_ab.py"
 type: "code"
-community: "Community 268"
+community: "Community 267"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_268
+  - community/Community_267
 ---
 
 # test_voice_stt_model_ab.py
@@ -29,4 +29,4 @@ tags:
 - [[test_valid_model_sizes_contains_documented_ab_set()]] - `contains` [EXTRACTED]
 - [[voice_gatewaystt.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_268
+#graphify/code #graphify/EXTRACTED #community/Community_267

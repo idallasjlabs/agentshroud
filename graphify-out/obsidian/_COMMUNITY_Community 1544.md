@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 1.00
 members: 2
 ---
 
 # Community 1544
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[.test_fuzzy_matching()]] - code - gateway/tests/test_prompt_protection.py
-- [[Test fuzzy matching against protected content.]] - rationale - gateway/tests/test_prompt_protection.py
+- [[ServiceManager._describe_service() — reads OCI image LABEL org.opencontainers.image.version]] - code - gateway/soc/services.py
+- [[ServiceManager.list_services()]] - code - gateway/soc/services.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -17,9 +19,3 @@ members: 2
 TABLE source_file, type FROM #community/Community_1544
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_docsrunbooks]]
-
-## Top bridge nodes
-- [[.test_fuzzy_matching()]] - degree 2, connects to 1 community

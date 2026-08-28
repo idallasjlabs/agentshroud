@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "code"
-community: "Community 54"
+community: "Community 160"
 location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_54
+  - community/Community_160
 ---
 
 # SessionContext
@@ -21,7 +21,6 @@ tags:
 - [[._trigger_alert()]] - `references` [EXTRACTED]
 - [[.track_message()]] - `references` [EXTRACTED]
 - [[Context tracking for a session.]] - `rationale_for` [EXTRACTED]
-- [[Context tracking for a single session.]] - `rationale_for` [EXTRACTED]
 - [[multi_turn_tracker.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_54
+#graphify/code #graphify/EXTRACTED #community/Community_160

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/troubleshooting.md"
 type: "document"
-community: "Community 504"
+community: "Community 499"
 location: "L473"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_504
+  - community/Community_499
 ---
 
 # ClamAV: `SelfCheck: Database status OK.`
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Known Log Messages]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_504
+#graphify/document #graphify/EXTRACTED #community/Community_499

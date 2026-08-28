@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-23-roadmap-gantt.svg"
 type: "image"
-community: "Community 440"
+community: "Community 448"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/Community_440
+  - community/Community_448
 ---
 
 # Diagram 23: Roadmap Gantt (2026)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[GSD Cadence — Get Shit Done Governance (doc)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/Community_440
+#graphify/image #graphify/INFERRED #community/Community_448

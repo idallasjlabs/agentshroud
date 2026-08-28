@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/alert_dispatcher.py"
 type: "code"
-community: "Community 14"
+community: "Security Audit & Drift Detection"
 location: "L35"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_14
+  - community/Security_Audit__Drift_Detection
 ---
 
 # AlertDispatcher
@@ -90,4 +90,4 @@ tags:
 - [[test_security_audit.py]] - `references` [EXTRACTED]
 - [[test_security_toolchain.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_14
+#graphify/code #graphify/INFERRED #community/Security_Audit__Drift_Detection

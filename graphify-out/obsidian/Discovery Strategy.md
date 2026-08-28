@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-mac/SKILL.md"
 type: "document"
-community: "Community 1009"
+community: "Community 1011"
 location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1009
+  - community/Community_1011
 ---
 
 # Discovery Strategy
@@ -20,4 +20,4 @@ tags:
 - [[Phase 4 — Enrichment]] - `contains` [EXTRACTED]
 - [[Phase 5 — Output Generation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1009
+#graphify/document #graphify/EXTRACTED #community/Community_1011

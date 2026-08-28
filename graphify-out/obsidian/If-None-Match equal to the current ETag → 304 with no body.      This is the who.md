@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "Community 37"
-location: "L3418"
+community: "Community 35"
+location: "L3614"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_37
+  - community/Community_35
 ---
 
 # If-None-Match equal to the current ETag → 304 with no body.      This is the who
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_firmware_bin_304_on_matching_if_none_match()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_37
+#graphify/rationale #graphify/EXTRACTED #community/Community_35

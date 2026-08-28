@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/himalaya/references/configuration.md"
 type: "document"
-community: "Community 581"
+community: "Community 576"
 location: "L161"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_581
+  - community/Community_576
 ---
 
 # Additional Options
@@ -17,4 +17,4 @@ tags:
 - [[Himalaya Configuration Reference]] - `contains` [EXTRACTED]
 - [[Signature]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_581
+#graphify/document #graphify/EXTRACTED #community/Community_576

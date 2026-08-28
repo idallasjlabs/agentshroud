@@ -1,20 +1,22 @@
 ---
 type: community
+cohesion: 0.29
 members: 7
 ---
 
 # Community 1028
 
+**Cohesion:** 0.29 - loosely connected
 **Members:** 7 nodes
 
 ## Members
-- [[i-ab merge regression audit skill]] - concept - docker/config/hermes/skills/i-crpr/SKILL.md
-- [[i-pr PR description skill]] - concept - docker/config/hermes/skills/i-crpr/SKILL.md
-- [[crSKILL.md code review skill]] - concept - docker/config/hermes/skills/i-gg/SKILL.md
-- [[i-crpr Create PR with Pre-Flight Audit (CRPR)]] - document - docker/config/hermes/skills/i-crpr/SKILL.md
-- [[i-gg README — Git Workflow Guardian (GIT-GUARD)]] - document - docker/config/hermes/skills/i-gg/README.md
-- [[i-gg SKILL — Git Workflow Guardian (GIT-GUARD)]] - document - docker/config/hermes/skills/i-gg/SKILL.md
-- [[tddSKILL.md test-driven development skill]] - concept - docker/config/hermes/skills/i-gg/SKILL.md
+- [[Decision_11]] - document - docs/governance/SPRINT_CADENCE.md
+- [[GSD Issue Requirements]] - document - docs/governance/SPRINT_CADENCE.md
+- [[SPRINT_CADENCE]] - document - docs/governance/SPRINT_CADENCE.md
+- [[Skills Available (if needed)]] - document - docs/governance/SPRINT_CADENCE.md
+- [[Sprint Cadence Decision]] - document - docs/governance/SPRINT_CADENCE.md
+- [[What We Do Instead]] - document - docs/governance/SPRINT_CADENCE.md
+- [[When to Revisit]] - document - docs/governance/SPRINT_CADENCE.md
 
 ## Live Query (requires Dataview plugin)
 

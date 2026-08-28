@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/browser-fetch/browser-fetch.js"
 type: "code"
-community: "Community 948"
+community: "Community 947"
 location: "L8"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_948
+  - community/Community_947
 ---
 
 # path
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[browser-fetch.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_948
+#graphify/code #graphify/EXTRACTED #community/Community_947

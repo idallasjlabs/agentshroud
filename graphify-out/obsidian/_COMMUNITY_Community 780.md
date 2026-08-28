@@ -1,26 +1,26 @@
 ---
 type: community
-members: 13
+cohesion: 0.20
+members: 11
 ---
 
 # Community 780
 
-**Members:** 13 nodes
+**Cohesion:** 0.20 - loosely connected
+**Members:** 11 nodes
 
 ## Members
-- [[.test_collects_and_converts()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[.test_conversion_error_path()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[.test_full_context_summary_from_details()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[.test_missing_timestamp_uses_now()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[.test_severity_filter_drops_lower()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[.test_summary_falls_back_to_block_reason()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[.test_summary_falls_back_to_event_type()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[.test_summary_falls_back_to_message()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[.test_summary_from_agent_id()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[.test_summary_from_non_allowed_action()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[.test_user_key_fallback()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[TestFromAuditChainEntry]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[_audit_entry()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[ADR-001-proxy-layer-inversion]] - document - docs/adr/ADR-001-proxy-layer-inversion.md
+- [[Alternatives rejected]] - document - docs/adr/ADR-001-proxy-layer-inversion.md
+- [[Collaborative Multi-Agent Governance]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[Competitive Positioning — Proxy-Layer Inversion Differentiator]] - rationale - docs/agentshroud-knowledge.md
+- [[Decision_1]] - document - docs/adr/ADR-001-proxy-layer-inversion.md
+- [[Delegated Authority Model (time-bounded privilege delegation)]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[Enterprise Governance Proxy System (invention)]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[Human-in-the-Loop Approval Queue]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[PII Detection and Redaction Engine]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[Rationale]] - document - docs/adr/ADR-001-proxy-layer-inversion.md
+- [[Transparent Interception Architecture]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,11 +30,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 11 edges to [[_COMMUNITY_Community 15]]
-- 2 edges to [[_COMMUNITY_Community 109]]
+- 1 edge to [[_COMMUNITY_Community 799]]
+- 1 edge to [[_COMMUNITY_Community 1248]]
 
 ## Top bridge nodes
-- [[.test_collects_and_converts()]] - degree 3, connects to 2 communities
-- [[.test_severity_filter_drops_lower()]] - degree 3, connects to 2 communities
-- [[TestFromAuditChainEntry]] - degree 16, connects to 1 community
-- [[_audit_entry()]] - degree 12, connects to 1 community
+- [[Enterprise Governance Proxy System (invention)]] - degree 8, connects to 2 communities

@@ -1,19 +1,21 @@
 ---
 type: community
+cohesion: 0.33
 members: 6
 ---
 
 # Community 1074
 
+**Cohesion:** 0.33 - loosely connected
 **Members:** 6 nodes
 
 ## Members
-- [[CI Workflows]] - document - docs/vault/03 - Configuration/ci-workflows.md
-- [[Coverage Threshold]] - document - docs/vault/03 - Configuration/ci-workflows.md
-- [[Expected Pipeline (Inferred)]] - document - docs/vault/03 - Configuration/ci-workflows.md
-- [[Key Test Command]] - document - docs/vault/03 - Configuration/ci-workflows.md
-- [[Purpose_177]] - document - docs/vault/03 - Configuration/ci-workflows.md
-- [[Related Notes_20]] - document - docs/vault/03 - Configuration/ci-workflows.md
+- [[Agentic OS Architecture Doc (91 security-dir files  75 wired)]] - document - docs/architecture/agentic-os.md
+- [[NO SECURITY THEATER Policy (CLAUDE.md §2)]] - concept - docs/testing/test-coverage-report.md
+- [[Red-Team Assessment Plan]] - document - docs/planning/redteam/plan.md
+- [[STPA-Sec Methodology (Nancy Leveson, MIT)]] - concept - docs/testing/test-coverage-report.md
+- [[Test Coverage Report (AgentShroud v1.3.0)]] - document - docs/testing/test-coverage-report.md
+- [[Test Plan (AgentShroud v0.9.0)]] - document - docs/testing/test-plan.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +23,3 @@ members: 6
 TABLE source_file, type FROM #community/Community_1074
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 366]]
-
-## Top bridge nodes
-- [[CI Workflows]] - degree 6, connects to 1 community

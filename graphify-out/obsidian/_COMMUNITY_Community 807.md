@@ -1,24 +1,26 @@
 ---
 type: community
+cohesion: 0.22
 members: 11
 ---
 
 # Community 807
 
+**Cohesion:** 0.22 - loosely connected
 **Members:** 11 nodes
 
 ## Members
-- [[AgentShroud -- USPTO Provisional Patent Application]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[Combined Filing Costs (Patent + Trademark)]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[Filing Reference]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[Patent Center Filing Steps]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[Post-Filing]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[Pre-Filing Preparation]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[SECTION 2 WRITTEN DESCRIPTION OF THE INVENTION]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[SECTION 4 FILING CHECKLIST]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[SECTION 6 ESTIMATED COSTS]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[SECTION 7 FILING CHECKLIST]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[USPTO_PROVISIONAL_PATENT_APPLICATION]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[.test_setup_resource_guard_returns_real_guard_with_default_limits()]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[.test_setup_with_custom_limits_overrides_defaults()]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[.test_stop_cancels_monitor_task_and_idempotent()]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[ResourceGuard is instantiated at startup and reachable on app_state.]] - rationale - gateway/tests/test_resource_guard_wiring.py
+- [[Setup resource guard with custom limits.]] - rationale - gateway/security/resource_guard.py
+- [[TestResourceGuardLifecycle]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[TestResourceGuardWiring]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[The lifespan must stop the background monitor task on shutdown.]] - rationale - gateway/tests/test_resource_guard_wiring.py
+- [[setup_resource_guard()]] - code - gateway/security/resource_guard.py
+- [[test_resource_guard.py]] - code - gateway/tests/test_resource_guard.py
+- [[test_resource_guard_wiring.py]] - code - gateway/tests/test_resource_guard_wiring.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,13 +30,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 965]]
-- 1 edge to [[_COMMUNITY_Community 966]]
-- 1 edge to [[_COMMUNITY_Community 1121]]
-- 1 edge to [[_COMMUNITY_Community 808]]
-- 1 edge to [[_COMMUNITY_Community 668]]
+- 7 edges to [[_COMMUNITY_Community 225]]
+- 6 edges to [[_COMMUNITY_Community 88]]
+- 3 edges to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
+- 1 edge to [[_COMMUNITY_Community 54]]
+- 1 edge to [[_COMMUNITY_Community 351]]
+- 1 edge to [[_COMMUNITY_Community 850]]
 
 ## Top bridge nodes
-- [[AgentShroud -- USPTO Provisional Patent Application]] - degree 9, connects to 3 communities
-- [[SECTION 7 FILING CHECKLIST]] - degree 5, connects to 1 community
-- [[SECTION 2 WRITTEN DESCRIPTION OF THE INVENTION]] - degree 2, connects to 1 community
+- [[test_resource_guard_wiring.py]] - degree 8, connects to 4 communities
+- [[test_resource_guard.py]] - degree 5, connects to 4 communities
+- [[setup_resource_guard()]] - degree 9, connects to 3 communities
+- [[TestResourceGuardWiring]] - degree 6, connects to 2 communities
+- [[TestResourceGuardLifecycle]] - degree 5, connects to 2 communities

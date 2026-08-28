@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "document"
-community: "Community 131"
+community: "Community 162"
 location: "L679"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_131
+  - community/Community_162
 ---
 
 # Egress Approval (Domain-Level)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[9. Human-in-the-Loop Controls]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_131
+#graphify/document #graphify/EXTRACTED #community/Community_162

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "Community 15"
+community: "RBAC & SOC Realtime"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_15
+  - community/RBAC__SOC_Realtime
 ---
 
 # test_rbac.py
@@ -26,4 +26,4 @@ tags:
 - [[TestRBACIntegration]] - `contains` [EXTRACTED]
 - [[TestRBACManager]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_15
+#graphify/code #graphify/EXTRACTED #community/RBAC__SOC_Realtime

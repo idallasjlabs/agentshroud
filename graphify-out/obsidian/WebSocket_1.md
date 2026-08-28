@@ -1,18 +1,25 @@
 ---
-source_file: "gateway/approval_queue/queue.py"
+source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "Community 1"
-location: "L350"
+community: "Community 23"
+location: "L498"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_1
+  - graphify/INFERRED
+  - community/Community_23
 ---
 
 # WebSocket
 
 ## Connections
-- [[.connect()_1]] - `references` [EXTRACTED]
-- [[.disconnect()_1]] - `references` [EXTRACTED]
+- [[.connect()]] - `references` [EXTRACTED]
+- [[.disconnect()]] - `references` [EXTRACTED]
+- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
+- [[ApprovalQueueItem_3]] - `uses` [INFERRED]
+- [[ApprovalRequest_3]] - `uses` [INFERRED]
+- [[ApprovalStore_1]] - `uses` [INFERRED]
+- [[MFAGuard_2]] - `uses` [INFERRED]
+- [[ToolRiskConfig_1]] - `uses` [INFERRED]
+- [[ToolRiskPolicy_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1
+#graphify/code #graphify/INFERRED #community/Community_23

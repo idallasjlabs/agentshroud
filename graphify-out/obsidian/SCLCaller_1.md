@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "Community 19"
+community: "SOC Collaborators"
 location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_19
+  - community/SOC_Collaborators
 ---
 
 # SCLCaller
@@ -100,4 +100,4 @@ tags:
 - [[upgrade_hermes()]] - `references` [EXTRACTED]
 - [[verify_audit_chain()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_19
+#graphify/code #graphify/EXTRACTED #community/SOC_Collaborators

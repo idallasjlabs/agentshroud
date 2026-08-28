@@ -1,39 +1,47 @@
 ---
 type: community
-members: 26
+cohesion: 0.08
+members: 32
 ---
 
 # Community 241
 
-**Members:** 26 nodes
+**Cohesion:** 0.08 - loosely connected
+**Members:** 32 nodes
 
 ## Members
-- [[0) PRIME DIRECTIVE (NON-NEGOTIABLE)]] - document - CLAUDE.md
-- [[0.1) MULTI-AGENT HIERARCHY]] - document - CLAUDE.md
-- [[1) PROJECT IDENTITY]] - document - CLAUDE.md
-- [[10) CLAUDE CODE OPERATIONAL RULES]] - document - CLAUDE.md
-- [[2) ⚠️ NO SECURITY THEATER (NON-NEGOTIABLE)]] - document - CLAUDE.md
-- [[3) SDLC — HOW TO WORK IN THIS REPO]] - document - CLAUDE.md
-- [[4) TEST-DRIVEN DEVELOPMENT (DEFAULT)]] - document - CLAUDE.md
-- [[6) SECURITY & SAFETY REQUIREMENTS_1]] - document - CLAUDE.md
-- [[8) OUTPUT FORMATTING CONTRACT]] - document - CLAUDE.md
-- [[9) GOVERNANCE & DECISION-MAKING]] - document - CLAUDE.md
-- [[Applies to Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary)]] - document - CLAUDE.md
-- [[Avoid]] - document - CLAUDE.md
-- [[KNOWLEDGE MAP — READ THIS FIRST]] - document - CLAUDE.md
-- [[MCP tools available]] - document - CLAUDE.md
-- [[Preferred workflow]] - document - CLAUDE.md
-- [[RULE A — NO STUBS. NO PLACEHOLDERS. NO FAKE GREEN.]] - document - CLAUDE.md
-- [[RULE B — VERIFY BEFORE CLAIMING. CITE FILES AND LINES.]] - document - CLAUDE.md
-- [[RULE C — INTEGRATION PROOF FORMAT]] - document - CLAUDE.md
-- [[RULE D — TEST TABLE FORMAT FOR STATUS REPORTS]] - document - CLAUDE.md
-- [[RULE E — DEFINITION OF DONE]] - document - CLAUDE.md
-- [[Red → Green → Refactor]] - document - CLAUDE.md
-- [[Session start checklist]] - document - CLAUDE.md
-- [[Test quality rules]] - document - CLAUDE.md
-- [[When to act]] - document - CLAUDE.md
-- [[When to clarify]] - document - CLAUDE.md
-- [[When to defer]] - document - CLAUDE.md
+- [[.__init__()_105]] - code - gateway/security/output_schema.py
+- [[._register_default_schema()]] - code - gateway/security/output_schema.py
+- [[.register_schema()]] - code - gateway/security/output_schema.py
+- [[.test_custom_schema_enforced()]] - code - gateway/tests/test_output_schema.py
+- [[.test_default_schema_used_when_unknown()]] - code - gateway/tests/test_output_schema.py
+- [[.test_large_base64_stripped()]] - code - gateway/tests/test_output_schema.py
+- [[.test_output_exceeding_max_length_trimmed()]] - code - gateway/tests/test_output_schema.py
+- [[.test_raw_file_path_stripped()]] - code - gateway/tests/test_output_schema.py
+- [[.test_raw_tool_payload_stripped()]] - code - gateway/tests/test_output_schema.py
+- [[.test_valid_output_passes()]] - code - gateway/tests/test_output_schema.py
+- [[.validate()_1]] - code - gateway/security/output_schema.py
+- [[A custom schema with a stricter max_length is applied correctly.]] - rationale - gateway/tests/test_output_schema.py
+- [[Absolute file paths should be flagged and redacted.]] - rationale - gateway/tests/test_output_schema.py
+- [[Base64 blobs  1 KB encoded (≈ 1370 chars) should be redacted.]] - rationale - gateway/tests/test_output_schema.py
+- [[Definition for a named output schema.]] - rationale - gateway/security/output_schema.py
+- [[JSON tool call payloads should be flagged and redacted.]] - rationale - gateway/tests/test_output_schema.py
+- [[Normal short text should pass without violations.]] - rationale - gateway/tests/test_output_schema.py
+- [[Output Schema Enforcer Tests (C25)]] - code - gateway/tests/test_output_schema.py
+- [[Output longer than 100 000 chars should be trimmed.]] - rationale - gateway/tests/test_output_schema.py
+- [[OutputSchemaEnforcer]] - code - gateway/security/output_schema.py
+- [[Register or replace a named schema.]] - rationale - gateway/security/output_schema.py
+- [[Register the built-in default schema.]] - rationale - gateway/security/output_schema.py
+- [[Result of validating output against a schema.]] - rationale - gateway/security/output_schema.py
+- [[SchemaRule]] - code - gateway/security/output_schema.py
+- [[SchemaValidationResult]] - code - gateway/security/output_schema.py
+- [[TestOutputSchemaEnforcer]] - code - gateway/tests/test_output_schema.py
+- [[Unknown schema names fall back to 'default'.]] - rationale - gateway/tests/test_output_schema.py
+- [[Validate output against the named schema.          Args             output The]] - rationale - gateway/security/output_schema.py
+- [[Validates outbound responses against structural schemas.      Usage          e]] - rationale - gateway/security/output_schema.py
+- [[enforcer()_1]] - code - gateway/tests/test_output_schema.py
+- [[output_schema.py]] - code - gateway/security/output_schema.py
+- [[test_output_schema.py]] - code - gateway/tests/test_output_schema.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -43,9 +51,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 435]]
-- 1 edge to [[_COMMUNITY_Community 350]]
-- 1 edge to [[_COMMUNITY_Community 1277]]
+- 2 edges to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
 
 ## Top bridge nodes
-- [[Applies to Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary)]] - degree 14, connects to 3 communities
+- [[OutputSchemaEnforcer]] - degree 14, connects to 1 community

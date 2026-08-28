@@ -1,13 +1,13 @@
 ---
 type: community
 cohesion: 0.01
-members: 176
+members: 180
 ---
 
 # Config Validation & Router
 
 **Cohesion:** 0.01 - loosely connected
-**Members:** 176 nodes
+**Members:** 180 nodes
 
 ## Members
 - [[.config()_2]] - code - gateway/tests/test_config_validation.py
@@ -17,7 +17,7 @@ members: 176
 - [[.test_approval_queue_enabled()]] - code - gateway/tests/test_config_validation.py
 - [[.test_approval_queue_enabled()_1]] - code - gateway/tests/test_config_validation.py
 - [[.test_chat_console_script_uses_repo_relative_exec()]] - code - gateway/tests/test_config_validation.py
-- [[.test_compose_sets_fieldflare_local_model_overrides()]] - code - gateway/tests/test_config_validation.py
+- [[.test_compose_sets_nemotron_local_model_overrides()]] - code - gateway/tests/test_config_validation.py
 - [[.test_container_hardening()]] - code - gateway/tests/test_config_validation.py
 - [[.test_drift_detector_enabled()]] - code - gateway/tests/test_config_validation.py
 - [[.test_egress_filter_enabled()]] - code - gateway/tests/test_config_validation.py
@@ -145,6 +145,8 @@ members: 176
 - [[The 1Password prewarm thread must never spawn real op subprocesses under pytest.]] - rationale - gateway/tests/test_config_validation.py
 - [[The iOSmacOS Shortcuts source value ('shortcut') is on the allowlist.]] - rationale - gateway/tests/test_security.py
 - [[Verify all referenced example configs exist.]] - rationale - gateway/tests/test_config_validation.py
+- [[Verify authentication doesn't leak timing information]] - rationale - gateway/tests/test_security.py
+- [[Verify token comparison is constant-time]] - rationale - gateway/tests/test_security.py
 - [[_parse_env_file()]] - code - gateway/tests/test_config_validation.py
 - [[agentshroud.yaml must define all three lab hosts in ssh.hosts as agentshroud-bot]] - rationale - gateway/tests/test_config_validation.py
 - [[apply-patches.js must create per-chat group-{chatId} agents for the approval rou]] - rationale - gateway/tests/test_config_validation.py
@@ -160,6 +162,7 @@ members: 176
 - [[patch-slack-sdk.sh must stay quiet when the pong patch is already applied.]] - rationale - gateway/tests/test_config_validation.py
 - [[recommended.env should balance security and usability.]] - rationale - gateway/tests/test_config_validation.py
 - [[test_config_validation.py]] - code - gateway/tests/test_config_validation.py
+- [[test_constant_time_comparison()]] - code - gateway/tests/test_security.py
 - [[test_empty_content_rejection()]] - code - gateway/tests/test_security.py
 - [[test_extremely_long_content()]] - code - gateway/tests/test_security.py
 - [[test_false_positive_patterns()]] - code - gateway/tests/test_security.py
@@ -182,6 +185,7 @@ members: 176
 - [[test_shortcut_source_accepted()]] - code - gateway/tests/test_security.py
 - [[test_special_characters_in_pii()]] - code - gateway/tests/test_security.py
 - [[test_sql_injection_attempt()]] - code - gateway/tests/test_security.py
+- [[test_timing_attack_resistance()]] - code - gateway/tests/test_security.py
 - [[test_unicode_content()]] - code - gateway/tests/test_security.py
 - [[test_valid_sources()]] - code - gateway/tests/test_security.py
 - [[test_very_large_content()]] - code - gateway/tests/test_security.py
@@ -195,20 +199,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 14 edges to [[_COMMUNITY_Security Fixes & SSH Write Endpoint]]
-- 13 edges to [[_COMMUNITY_Router]]
-- 7 edges to [[_COMMUNITY_Forward Routing]]
-- 4 edges to [[_COMMUNITY_Forward Stream]]
-- 4 edges to [[_COMMUNITY_Main Simple]]
-- 3 edges to [[_COMMUNITY_Auth]]
-- 2 edges to [[_COMMUNITY_Telegram Proxy Inbound]]
-- 2 edges to [[_COMMUNITY_Security Audit & Watchtower Tests]]
-- 2 edges to [[_COMMUNITY_Forward (routes)]]
-- 1 edge to [[_COMMUNITY_Router (soc)]]
-- 1 edge to [[_COMMUNITY_Aiosqlite (05 - Dependencies)]]
+- 25 edges to [[_COMMUNITY_Community 32]]
+- 9 edges to [[_COMMUNITY_Community 104]]
+- 7 edges to [[_COMMUNITY_Ingest API & Approval Routes]]
+- 4 edges to [[_COMMUNITY_Community 119]]
+- 2 edges to [[_COMMUNITY_Community 115]]
+- 2 edges to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
+- 2 edges to [[_COMMUNITY_Community 159]]
+- 1 edge to [[_COMMUNITY_Community 14]]
+- 1 edge to [[_COMMUNITY_RBAC & SOC Realtime]]
 
 ## Top bridge nodes
-- [[ForwardRequest]] - degree 57, connects to 8 communities
+- [[ForwardRequest]] - degree 57, connects to 7 communities
 - [[test_security.py]] - degree 25, connects to 2 communities
 - [[test_config_validation.py]] - degree 9, connects to 2 communities
 - [[TestConfigValidation]] - degree 45, connects to 1 community

@@ -1,77 +1,80 @@
 ---
 type: community
-members: 64
+cohesion: 0.05
+members: 65
 ---
 
 # Community 77
 
-**Members:** 64 nodes
+**Cohesion:** 0.05 - loosely connected
+**Members:** 65 nodes
 
 ## Members
-- [[.__init__()_70]] - code - gateway/security/delegation.py
-- [[._load()]] - code - gateway/security/delegation.py
-- [[._require_owner()]] - code - gateway/security/delegation.py
-- [[._revoke_by_user_privilege()]] - code - gateway/security/delegation.py
-- [[._save()]] - code - gateway/security/delegation.py
-- [[.cleanup_expired()_1]] - code - gateway/security/delegation.py
-- [[.delegate()]] - code - gateway/security/delegation.py
-- [[.from_dict()_4]] - code - gateway/security/delegation.py
-- [[.get_active_delegations()]] - code - gateway/security/delegation.py
-- [[.get_delegations_for_user()]] - code - gateway/security/delegation.py
-- [[.is_active()]] - code - gateway/security/delegation.py
-- [[.is_delegated()]] - code - gateway/security/delegation.py
-- [[.revoke()]] - code - gateway/security/delegation.py
-- [[.revoke_all_for_user()]] - code - gateway/security/delegation.py
-- [[.test_cleanup_expired_removes_and_returns_count()]] - code - gateway/tests/test_delegation.py
-- [[.test_create_egress_delegation()]] - code - gateway/tests/test_delegation.py
-- [[.test_create_user_management_delegation()]] - code - gateway/tests/test_delegation.py
-- [[.test_delegation_expires_correctly()]] - code - gateway/tests/test_delegation.py
-- [[.test_delegation_has_unique_id()]] - code - gateway/tests/test_delegation.py
-- [[.test_delegation_to_dict_and_back()]] - code - gateway/tests/test_delegation.py
-- [[.test_duration_over_max_rejected()]] - code - gateway/tests/test_delegation.py
-- [[.test_duration_zero_rejected()]] - code - gateway/tests/test_delegation.py
-- [[.test_get_active_delegations_excludes_expired()]] - code - gateway/tests/test_delegation.py
-- [[.test_get_delegations_for_user()]] - code - gateway/tests/test_delegation.py
-- [[.test_is_delegated_returns_false_after_expiry()]] - code - gateway/tests/test_delegation.py
-- [[.test_is_delegated_returns_false_for_other_privilege()]] - code - gateway/tests/test_delegation.py
-- [[.test_is_delegated_returns_false_for_other_user()]] - code - gateway/tests/test_delegation.py
-- [[.test_is_delegated_returns_true_for_active()]] - code - gateway/tests/test_delegation.py
-- [[.test_no_active_delegations_initially()]] - code - gateway/tests/test_delegation.py
-- [[.test_non_owner_cannot_delegate()]] - code - gateway/tests/test_delegation.py
-- [[.test_non_owner_cannot_revoke()]] - code - gateway/tests/test_delegation.py
-- [[.test_owner_cannot_self_delegate()]] - code - gateway/tests/test_delegation.py
-- [[.test_redelegate_replaces_existing()]] - code - gateway/tests/test_delegation.py
-- [[.test_revoke_all_for_user()]] - code - gateway/tests/test_delegation.py
-- [[.test_revoke_removes_delegation()]] - code - gateway/tests/test_delegation.py
-- [[.test_revoke_returns_false_when_nothing_to_revoke()]] - code - gateway/tests/test_delegation.py
-- [[.to_dict()_7]] - code - gateway/security/delegation.py
-- [[A single time-bounded privilege delegation record.]] - rationale - gateway/security/delegation.py
-- [[Create a time-bounded delegation.          Args             owner_id Must matc]] - rationale - gateway/security/delegation.py
-- [[Delegation]] - code - gateway/security/delegation.py
-- [[DelegationError]] - code - gateway/security/delegation.py
-- [[DelegationManager]] - code - gateway/security/delegation.py
-- [[DelegationManager_1]] - code - gateway/tests/test_delegation.py
-- [[DelegationPrivilege]] - code - gateway/security/delegation.py
-- [[In-memory delegation manager (no disk IO).]] - rationale - gateway/tests/test_delegation.py
-- [[Manages owner-away privilege delegations.      Thread-safe via file locking for]] - rationale - gateway/security/delegation.py
-- [[Raised when a delegation operation is invalid.]] - rationale - gateway/security/delegation.py
-- [[Remove expired delegations, persist result. Returns count removed.]] - rationale - gateway/security/delegation.py
-- [[Return True if the user currently holds the delegated privilege.]] - rationale - gateway/security/delegation.py
-- [[Return all active delegations held by a specific user.]] - rationale - gateway/security/delegation.py
-- [[Return all currently active (non-expired) delegations.]] - rationale - gateway/security/delegation.py
-- [[Revoke all delegations for a specific user. Returns count removed.]] - rationale - gateway/security/delegation.py
-- [[Revoke an active delegation.          Returns True if a matching active delegati]] - rationale - gateway/security/delegation.py
-- [[Subset of privileges that can be delegated by the owner.]] - rationale - gateway/security/delegation.py
-- [[TestAccessControl]] - code - gateway/tests/test_delegation.py
-- [[TestDelegateBasic]] - code - gateway/tests/test_delegation.py
-- [[TestIsDelegated]] - code - gateway/tests/test_delegation.py
-- [[TestListAndCleanup]] - code - gateway/tests/test_delegation.py
-- [[TestRedelegation]] - code - gateway/tests/test_delegation.py
-- [[TestRevoke]] - code - gateway/tests/test_delegation.py
-- [[TestSerialization]] - code - gateway/tests/test_delegation.py
-- [[delegation.py]] - code - gateway/security/delegation.py
-- [[mgr()]] - code - gateway/tests/test_delegation.py
-- [[test_delegation.py]] - code - gateway/tests/test_delegation.py
+- [[.__init__()_188]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.__init__()_189]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.close()_19]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.connect()_2]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.read()_2]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.settimeout()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_200_returns_parsed_json()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_404_returns_empty_dict()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_500_returns_none()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_bytes_payload_is_decoded()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_engine_error_falls_back_to_socket()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_engine_health_mapping()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_engine_status_mapping()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_esrch_falls_through_to_proc_scan()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_exception_returns_empty()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_exception_returns_none()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_falls_back_to_openclaw_only_on_config_load_failure()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_no_engine_no_socket()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_non_200_returns_empty()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_not_installed()_1]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_not_installed()_2]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_not_installed()_4]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_not_installed()_3]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_parses_multiplexed_frames()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_running_via_pid_file()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_running_via_pid_file()_1]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_running_via_proc_scan()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_running_via_proc_scan()_1]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_running_via_proc_scan()_2]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_running_via_socket()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_running_when_content_present()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_running_when_kill_raises_eperm()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_socket_fallback_empty_lines()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_standby_when_no_pid_and_no_process()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_standby_when_no_socket_and_no_process()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_stopped_when_content_missing()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_stopped_when_no_pid_and_no_process()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_tail_limit_applied()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_uses_resolved_container_name_from_real_config()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[Build one Docker multiplexed-log frame (stdout).]] - rationale - gateway/tests/test_soc_services_coverage.py
+- [[EPERM means the process exists but is owned by another user.]] - rationale - gateway/tests/test_soc_services_coverage.py
+- [[Intercept builtins.open for specific paths; delegate everything else.]] - rationale - gateway/tests/test_soc_services_coverage.py
+- [[PermissionError]] - code
+- [[Replace http.client.HTTPConnection so the in-function _UnixHTTP subclass     exe]] - rationale - gateway/tests/test_soc_services_coverage.py
+- [[Stale PID (ESRCH) is not EPERM — falls through to proc scan, then standby.]] - rationale - gateway/tests/test_soc_services_coverage.py
+- [[Stand-in for socket.socket — records calls, never opens a real fd.]] - rationale - gateway/tests/test_soc_services_coverage.py
+- [[TestCheckClamd]] - code - gateway/tests/test_soc_services_coverage.py
+- [[TestCheckFluentBit]] - code - gateway/tests/test_soc_services_coverage.py
+- [[TestCheckOpenscap]] - code - gateway/tests/test_soc_services_coverage.py
+- [[TestCheckWazuhAgent]] - code - gateway/tests/test_soc_services_coverage.py
+- [[TestGetLogs]] - code - gateway/tests/test_soc_services_coverage.py
+- [[TestInspectViaSocket]] - code - gateway/tests/test_soc_services_coverage.py
+- [[TestKnownServices]] - code - gateway/tests/test_soc_services_coverage.py
+- [[TestLogsViaSocket]] - code - gateway/tests/test_soc_services_coverage.py
+- [[TestStatusMappings]] - code - gateway/tests/test_soc_services_coverage.py
+- [[_FakeResponse]] - code - gateway/tests/test_soc_services_coverage.py
+- [[_FakeUnixSocket]] - code - gateway/tests/test_soc_services_coverage.py
+- [[_frame()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[_known_services() must resolve each bot's real container name — not a     hardco]] - rationale - gateway/tests/test_soc_services_coverage.py
+- [[_patch_exists()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[_patch_http_connection()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[_patch_open()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[gatewaysocservices.py (ServiceManager)]] - code - gateway/soc/services.py
+- [[os.path.exists override for specific paths only.]] - rationale - gateway/tests/test_soc_services_coverage.py
+- [[test_soc_services_coverage.py]] - code - gateway/tests/test_soc_services_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -81,21 +84,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 78]]
-- 3 edges to [[_COMMUNITY_Community 19]]
-- 2 edges to [[_COMMUNITY_Community 6]]
-- 2 edges to [[_COMMUNITY_Community 4]]
-- 1 edge to [[_COMMUNITY_Community 557]]
-- 1 edge to [[_COMMUNITY_Community 134]]
-- 1 edge to [[_COMMUNITY_Community 9]]
-- 1 edge to [[_COMMUNITY_Community 93]]
-- 1 edge to [[_COMMUNITY_Community 75]]
-- 1 edge to [[_COMMUNITY_Community 152]]
-- 1 edge to [[_COMMUNITY_Community 21]]
+- 25 edges to [[_COMMUNITY_Community 14]]
+- 2 edges to [[_COMMUNITY_Community 19]]
+- 1 edge to [[_COMMUNITY_Community 23]]
+- 1 edge to [[_COMMUNITY_Community 413]]
+- 1 edge to [[_COMMUNITY_Community 57]]
+- 1 edge to [[_COMMUNITY_Community 546]]
 
 ## Top bridge nodes
-- [[DelegationPrivilege]] - degree 25, connects to 6 communities
-- [[DelegationManager]] - degree 26, connects to 2 communities
-- [[delegation.py]] - degree 6, connects to 2 communities
-- [[DelegationError]] - degree 14, connects to 1 community
-- [[.from_dict()_4]] - degree 3, connects to 1 community
+- [[PermissionError]] - degree 6, connects to 3 communities
+- [[test_soc_services_coverage.py]] - degree 24, connects to 2 communities
+- [[_FakeResponse]] - degree 13, connects to 2 communities
+- [[TestCheckWazuhAgent]] - degree 8, connects to 1 community
+- [[_FakeUnixSocket]] - degree 7, connects to 1 community

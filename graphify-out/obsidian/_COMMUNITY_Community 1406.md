@@ -1,16 +1,18 @@
 ---
 type: community
+cohesion: 0.67
 members: 3
 ---
 
 # Community 1406
 
+**Cohesion:** 0.67 - moderately connected
 **Members:** 3 nodes
 
 ## Members
-- [[check()_4]] - code - tests/startup_smoke/test_bot_boot_live.sh
-- [[test_bot_boot_live.sh]] - code - tests/startup_smoke/test_bot_boot_live.sh
-- [[test_bot_boot_live.sh script]] - code - tests/startup_smoke/test_bot_boot_live.sh
+- [[Quick start_1]] - document - skills/openclaw/nano-pdf/SKILL.md
+- [[SKILL_217]] - document - skills/openclaw/nano-pdf/SKILL.md
+- [[nano-pdf]] - document - skills/openclaw/nano-pdf/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

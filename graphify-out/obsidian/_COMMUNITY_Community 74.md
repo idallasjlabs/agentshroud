@@ -1,145 +1,83 @@
 ---
 type: community
-members: 132
+cohesion: 0.04
+members: 68
 ---
 
 # Community 74
 
-**Members:** 132 nodes
+**Cohesion:** 0.04 - loosely connected
+**Members:** 68 nodes
 
 ## Members
-- [[.__init__()_22]] - code - gateway/proxy/forwarder.py
-- [[.__init__()_34]] - code - gateway/proxy/sidecar.py
-- [[.__init__()_153]] - code - gateway/tests/test_e2e_proxy.py
-- [[.__init__()_154]] - code - gateway/tests/test_e2e_proxy.py
-- [[.forward()_1]] - code - gateway/proxy/forwarder.py
-- [[.forward()_4]] - code - gateway/tests/test_e2e_proxy.py
-- [[.get_stats()_2]] - code - gateway/proxy/forwarder.py
-- [[.get_stats()_7]] - code - gateway/proxy/sidecar.py
-- [[.health_check()_1]] - code - gateway/proxy/forwarder.py
-- [[.is_healthy()]] - code - gateway/proxy/forwarder.py
-- [[.last_forward_time()]] - code - gateway/proxy/forwarder.py
-- [[.process_inbound()_2]] - code - gateway/tests/test_e2e_proxy.py
-- [[.process_outbound()_2]] - code - gateway/tests/test_e2e_proxy.py
-- [[.scan()]] - code - gateway/proxy/sidecar.py
-- [[.set_response_handler()]] - code - gateway/proxy/forwarder.py
-- [[.to_dict()_6]] - code - gateway/security/canary.py
-- [[A pipeline-blocked outbound response must NOT be delivered.      Regression test]] - rationale - gateway/tests/test_e2e_proxy.py
-- [[Any_13]] - code - gateway/proxy/forwarder.py
-- [[Any_20]] - code - gateway/proxy/sidecar.py
-- [[Any_33]] - code - gateway/security/canary.py
-- [[Canary result should serialize to dict properly.]] - rationale - gateway/tests/test_canary.py
-- [[Canary should detect that fake PII was stripped.]] - rationale - gateway/tests/test_canary.py
-- [[Canary should fail proxy check with unhealthy forwarder.]] - rationale - gateway/tests/test_canary.py
-- [[Canary should fail when no pipeline configured.]] - rationale - gateway/tests/test_canary.py
-- [[Canary should pass proxy check with healthy forwarder.]] - rationale - gateway/tests/test_canary.py
-- [[Canary should pass when pipeline is properly configured.]] - rationale - gateway/tests/test_canary.py
-- [[Canary should verify audit chain integrity.]] - rationale - gateway/tests/test_canary.py
-- [[CanaryCheck]] - code - gateway/security/canary.py
-- [[CanaryResult]] - code - gateway/security/canary.py
-- [[Check if the OpenClaw backend is healthy.]] - rationale - gateway/proxy/forwarder.py
-- [[Configuration for the HTTP forwarder.]] - rationale - gateway/proxy/forwarder.py
-- [[Configure egress filter to block a domain — verify denied.]] - rationale - gateway/tests/test_e2e_proxy.py
-- [[Forward a request to the OpenClaw backend.]] - rationale - gateway/proxy/forwarder.py
-- [[ForwardResult]] - code - gateway/proxy/forwarder.py
-- [[Forwarder stub returning a canned bot response body.]] - rationale - gateway/tests/test_e2e_proxy.py
-- [[ForwarderConfig]] - code - gateway/proxy/forwarder.py
-- [[Forwards sanitized requests to the OpenClaw backend.      In production, uses ai]] - rationale - gateway/proxy/forwarder.py
-- [[HTTPForwarder]] - code - gateway/proxy/forwarder.py
-- [[If the outbound pipeline crashes, the bot response must be withheld.]] - rationale - gateway/tests/test_e2e_proxy.py
-- [[Individual canary check result.]] - rationale - gateway/security/canary.py
-- [[Insert messages, modify a hash — verify chain integrity check fails.]] - rationale - gateway/tests/test_e2e_proxy.py
-- [[Low-trust agent requests elevated action — verify denied.]] - rationale - gateway/tests/test_e2e_proxy.py
-- [[Message with both PII and injection — blocked before PII scan.]] - rationale - gateway/tests/test_e2e_proxy.py
-- [[Mock OpenClaw response containing PII — verify stripped.]] - rationale - gateway/tests/test_e2e_proxy.py
-- [[Pipeline stub inbound passes through; outbound behavior injectable.]] - rationale - gateway/tests/test_e2e_proxy.py
-- [[Request to scan a message.]] - rationale - gateway/proxy/sidecar.py
-- [[Response from sidecar scan.]] - rationale - gateway/proxy/sidecar.py
-- [[Result of forwarding a request.]] - rationale - gateway/proxy/forwarder.py
-- [[Result of running the canary system.]] - rationale - gateway/security/canary.py
-- [[Run the canary verification system.      Args         pipeline SecurityPipelin]] - rationale - gateway/security/canary.py
-- [[Scan a message through the security pipeline.]] - rationale - gateway/proxy/sidecar.py
-- [[ScanRequest]] - code - gateway/proxy/sidecar.py
-- [[ScanResponse]] - code - gateway/proxy/sidecar.py
-- [[SecurityPipeline (external, referenced)]] - code - gateway/proxy/pipeline.py
-- [[SecurityPipeline.process_inbound]] - code - gateway/proxy/pipeline.py
-- [[Send 10 messages — verify all in ledger with valid SHA-256 chain.]] - rationale - gateway/tests/test_e2e_proxy.py
-- [[Send command requiring approval — verify queued, not forwarded.]] - rationale - gateway/tests/test_e2e_proxy.py
-- [[Send message with SSN — verify it's redacted before forwarding.]] - rationale - gateway/tests/test_e2e_proxy.py
-- [[Send prompt injection — verify blocked, not forwarded.]] - rationale - gateway/tests/test_e2e_proxy.py
-- [[Set a mock response handler for testing.]] - rationale - gateway/proxy/forwarder.py
-- [[Sidecar security scanner — reduced security, traffic can bypass.      This is fo]] - rationale - gateway/proxy/sidecar.py
-- [[SidecarScanner]] - code - gateway/proxy/sidecar.py
-- [[Trigger freeze mode — verify pipeline blocks all traffic.]] - rationale - gateway/tests/test_e2e_proxy.py
-- [[Verify allowed domains pass egress check.]] - rationale - gateway/tests/test_e2e_proxy.py
-- [[Verify both inbound and outbound are in audit chain.]] - rationale - gateway/tests/test_e2e_proxy.py
-- [[Verify canary message contains the expected fake PII.]] - rationale - gateway/tests/test_canary.py
-- [[Verify clean messages pass through without blocking.]] - rationale - gateway/tests/test_e2e_proxy.py
-- [[Verify empty audit chain is valid.]] - rationale - gateway/tests/test_e2e_proxy.py
-- [[Verify forwarder handles errors gracefully.]] - rationale - gateway/tests/test_e2e_proxy.py
-- [[Verify forwarder mock works correctly.]] - rationale - gateway/tests/test_e2e_proxy.py
-- [[Verify multiple injection patterns are detected.]] - rationale - gateway/tests/test_e2e_proxy.py
-- [[Verify pipeline statistics are tracked correctly.]] - rationale - gateway/tests/test_e2e_proxy.py
-- [[Verify processing time is tracked.]] - rationale - gateway/tests/test_e2e_proxy.py
-- [[Verify sidecar scanner works.]] - rationale - gateway/tests/test_e2e_proxy.py
-- [[Verify single-entry chain is valid.]] - rationale - gateway/tests/test_e2e_proxy.py
-- [[Verify that direct connection to OpenClaw internal port fails.      In Docker pr]] - rationale - gateway/tests/test_e2e_proxy.py
-- [[_PassInboundPipeline]] - code - gateway/tests/test_e2e_proxy.py
-- [[_StubForwarder_2]] - code - gateway/tests/test_e2e_proxy.py
-- [[canary-cron.sh embedded Python main()]] - code - scripts/canary-cron.sh
-- [[canary.py]] - code - gateway/security/canary.py
-- [[fail()_5]] - code - scripts/verify-proxy.sh
-- [[forwarder()_1]] - code - gateway/tests/test_e2e_proxy.py
-- [[forwarder.py]] - code - gateway/proxy/forwarder.py
-- [[healthy_forwarder()]] - code - gateway/tests/test_canary.py
-- [[info()_2]] - code - scripts/verify-proxy.sh
-- [[pass()_3]] - code - scripts/verify-proxy.sh
-- [[pipeline()]] - code - gateway/tests/test_e2e_proxy.py
-- [[prompt_guard()]] - code - gateway/tests/test_e2e_proxy.py
-- [[run_bypass()]] - code - scripts/verify-proxy.sh
-- [[run_canary()]] - code - gateway/security/canary.py
-- [[run_canary()_1]] - code - scripts/verify-proxy.sh
-- [[run_chain()]] - code - scripts/verify-proxy.sh
-- [[run_full()]] - code - scripts/verify-proxy.sh
-- [[run_quick()]] - code - scripts/verify-proxy.sh
-- [[sidecar.py]] - code - gateway/proxy/sidecar.py
-- [[test_approval_queue_enforced()]] - code - gateway/tests/test_e2e_proxy.py
-- [[test_audit_chain_empty_valid()]] - code - gateway/tests/test_e2e_proxy.py
-- [[test_audit_chain_integrity()]] - code - gateway/tests/test_e2e_proxy.py
-- [[test_audit_chain_single_entry()]] - code - gateway/tests/test_e2e_proxy.py
-- [[test_canary.py]] - code - gateway/tests/test_canary.py
-- [[test_canary_fails_without_pipeline()]] - code - gateway/tests/test_canary.py
-- [[test_canary_message_contains_fake_pii()]] - code - gateway/tests/test_canary.py
-- [[test_canary_passes_with_pipeline()]] - code - gateway/tests/test_canary.py
-- [[test_canary_result_serialization()]] - code - gateway/tests/test_canary.py
-- [[test_canary_verifies_audit_chain()]] - code - gateway/tests/test_canary.py
-- [[test_canary_verifies_pii_stripping()]] - code - gateway/tests/test_canary.py
-- [[test_canary_with_healthy_forwarder()]] - code - gateway/tests/test_canary.py
-- [[test_canary_with_unhealthy_forwarder()]] - code - gateway/tests/test_canary.py
-- [[test_clean_message_passes()]] - code - gateway/tests/test_e2e_proxy.py
-- [[test_direct_bypass_blocked()]] - code - gateway/tests/test_e2e_proxy.py
-- [[test_e2e_proxy.py]] - code - gateway/tests/test_e2e_proxy.py
-- [[test_egress_allowed_domain()]] - code - gateway/tests/test_e2e_proxy.py
-- [[test_egress_blocked()]] - code - gateway/tests/test_e2e_proxy.py
-- [[test_forwarder_error_handling()]] - code - gateway/tests/test_e2e_proxy.py
-- [[test_forwarder_mock()]] - code - gateway/tests/test_e2e_proxy.py
-- [[test_inbound_outbound_both_audited()]] - code - gateway/tests/test_e2e_proxy.py
-- [[test_kill_switch_freezes()]] - code - gateway/tests/test_e2e_proxy.py
-- [[test_mixed_pii_and_injection()]] - code - gateway/tests/test_e2e_proxy.py
-- [[test_multiple_prompt_patterns()]] - code - gateway/tests/test_e2e_proxy.py
-- [[test_outbound_pii_stripped()]] - code - gateway/tests/test_e2e_proxy.py
-- [[test_pii_stripped_inbound()]] - code - gateway/tests/test_e2e_proxy.py
-- [[test_pipeline_processing_time()]] - code - gateway/tests/test_e2e_proxy.py
-- [[test_pipeline_stats()]] - code - gateway/tests/test_e2e_proxy.py
-- [[test_prompt_injection_blocked()]] - code - gateway/tests/test_e2e_proxy.py
-- [[test_sidecar_scanner()]] - code - gateway/tests/test_e2e_proxy.py
-- [[test_tampered_audit_detected()]] - code - gateway/tests/test_e2e_proxy.py
-- [[test_trust_level_enforced()]] - code - gateway/tests/test_e2e_proxy.py
-- [[test_webhook_outbound_block_withheld()]] - code - gateway/tests/test_e2e_proxy.py
-- [[test_webhook_outbound_pipeline_crash_fails_closed()]] - code - gateway/tests/test_e2e_proxy.py
-- [[unhealthy_forwarder()]] - code - gateway/tests/test_canary.py
-- [[verify-proxy.sh]] - code - scripts/verify-proxy.sh
-- [[verify-proxy.sh script]] - code - scripts/verify-proxy.sh
+- [[.test_attachments_scanned()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_blocks_scanned_even_when_text_present()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_chat_postmessage_content_scanned()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_chat_update_content_scanned()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_connections_open_missing_url_passthrough()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_connections_open_rewrites_url()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_connections_open_skips_content_pipeline()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_connections_open_slack_error_passthrough()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_consume_relay_token_one_time()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_consume_relay_token_unknown()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_each_reconnect_issues_unique_token()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_extract_user_id_slack()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_extract_user_id_slack_missing_event()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_extract_user_id_telegram_unchanged()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_extract_username_slack()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_extract_username_slack_fallback_to_user_id()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_file_upload_initial_comment_scanned()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_get_stats_returns_counters()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_is_owner_channel_empty_owner_uid_always_false()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_is_owner_channel_matches_owner_uid()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_is_owner_channel_no_match_for_other()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_no_bot_token_returns_error()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_non_message_method_not_scanned()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_non_owner_clean_message_passes()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_non_owner_high_risk_leakage_blocked_before_pipeline()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_non_owner_info_filter_redaction_blocks()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_non_owner_pipeline_exception_fail_closed()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_non_owner_tailscale_hostname_blocked()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_outbound_blocked_returns_error()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_owner_channel_uses_full_trust()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_owner_pipeline_exception_fail_open()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_post_ephemeral_scanned()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_sanitized_text_replaces_original()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_structured_field_sanitization_blocks_delivery()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_system_notification_skips_pipeline()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_text_sanitization_still_applied()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_urlencoded_body_parsed()]] - code - gateway/tests/test_slack_proxy.py
+- [[A secret hidden in blocks must be caught even if `text` is benign.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Create a SlackAPIProxy with test credentials and no real IO.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Each call to apps.connections.open issues a distinct relay token.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[If the pipeline wants to redact inside blocks JSON, delivery is blocked]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Legacy attachments are scanned for leaked content.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Non-owner channel Tailscale hostname triggers leakage pre-check → blocked.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Non-owner channel clean message with no leakage passes through.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Non-owner channel high-risk leakage detected before pipeline → blocked.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Non-owner channel pipeline exception → blocked (fail-closed).]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Non-owner channel pipeline passes but info_filter_redaction_count  0 → blocked]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Owner channel pipeline called with user_trust_level=FULL, message forwarded.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Owner channel pipeline exception → logged but message still forwarded.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[P0 security Slack outbound must differentiate owner vs collaborator channels.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Plain-text sanitization keeps working (redacted text forwarded).]] - rationale - gateway/tests/test_slack_proxy.py
+- [[TestMultiFieldOutboundScanning]] - code - gateway/tests/test_slack_proxy.py
+- [[TestOwnerChannelFiltering]] - code - gateway/tests/test_slack_proxy.py
+- [[TestProxyOutbound]] - code - gateway/tests/test_slack_proxy.py
+- [[TestSocketModeRelay]] - code - gateway/tests/test_slack_proxy.py
+- [[TestWebhookReceiverSlackExtraction]] - code - gateway/tests/test_slack_proxy.py
+- [[_make_proxy()_2]] - code - gateway/tests/test_slack_proxy.py
+- [[_pass_result()]] - code - gateway/tests/test_slack_proxy.py
+- [[apps.connections.open Slack error response returned unchanged.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[apps.connections.open pipeline is NOT invoked (not a message method).]] - rationale - gateway/tests/test_slack_proxy.py
+- [[apps.connections.open real WSS URL is stored and relay URL returned.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[apps.connections.open response without url field returned unchanged.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[blocksattachments and upload text must be scanned, not just `text`.      Regres]] - rationale - gateway/tests/test_slack_proxy.py
+- [[chat.postEphemeral text goes through the pipeline like postMessage.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[consume_relay_token returns None for unknown tokens.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[consume_relay_token returns the URL once then None.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[files.upload initial_commenttitle text is scanned.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[test_slack_proxy.py]] - code - gateway/tests/test_slack_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -149,30 +87,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 18 edges to [[_COMMUNITY_Community 22]]
-- 12 edges to [[_COMMUNITY_Community 35]]
-- 8 edges to [[_COMMUNITY_Community 870]]
-- 8 edges to [[_COMMUNITY_Community 1137]]
-- 8 edges to [[_COMMUNITY_Community 116]]
-- 7 edges to [[_COMMUNITY_Community 1]]
-- 7 edges to [[_COMMUNITY_Community 282]]
-- 3 edges to [[_COMMUNITY_Community 86]]
-- 3 edges to [[_COMMUNITY_Community 118]]
-- 2 edges to [[_COMMUNITY_Community 52]]
-- 2 edges to [[_COMMUNITY_Community 79]]
-- 2 edges to [[_COMMUNITY_Community 14]]
-- 1 edge to [[_COMMUNITY_Community 84]]
-- 1 edge to [[_COMMUNITY_Community 6]]
-- 1 edge to [[_COMMUNITY_Community 38]]
-- 1 edge to [[_COMMUNITY_Community 397]]
-- 1 edge to [[_COMMUNITY_Community 799]]
-- 1 edge to [[_COMMUNITY_Community 818]]
-- 1 edge to [[_COMMUNITY_Community 331]]
-- 1 edge to [[_COMMUNITY_Community 1051]]
+- 33 edges to [[_COMMUNITY_Community 24]]
+- 6 edges to [[_COMMUNITY_Community 28]]
+- 2 edges to [[_COMMUNITY_Community 618]]
 
 ## Top bridge nodes
-- [[test_e2e_proxy.py]] - degree 53, connects to 9 communities
-- [[_PassInboundPipeline]] - degree 23, connects to 9 communities
-- [[_StubForwarder_2]] - degree 22, connects to 9 communities
-- [[test_canary.py]] - degree 21, connects to 7 communities
-- [[run_canary()_1]] - degree 12, connects to 5 communities
+- [[test_slack_proxy.py]] - degree 10, connects to 3 communities
+- [[_make_proxy()_2]] - degree 36, connects to 2 communities
+- [[TestOwnerChannelFiltering]] - degree 14, connects to 2 communities
+- [[TestProxyOutbound]] - degree 12, connects to 2 communities
+- [[TestMultiFieldOutboundScanning]] - degree 10, connects to 2 communities

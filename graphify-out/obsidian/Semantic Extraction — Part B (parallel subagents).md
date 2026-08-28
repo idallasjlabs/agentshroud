@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/SKILL.md"
 type: "concept"
-community: "Community 441"
+community: "Community 449"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_441
+  - community/Community_449
 ---
 
 # Semantic Extraction — Part B (parallel subagents)
@@ -15,4 +15,4 @@ tags:
 - [[graphify Extraction Subagent Prompt Spec]] - `references` [EXTRACTED]
 - [[graphify Skill]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_441
+#graphify/concept #graphify/EXTRACTED #community/Community_449

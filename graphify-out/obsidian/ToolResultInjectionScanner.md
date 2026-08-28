@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_injection.py"
 type: "code"
-community: "Community 6"
+community: "Memory Lifecycle & Egress Filtering"
 location: "L173"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/Memory_Lifecycle__Egress_Filtering
 ---
 
 # ToolResultInjectionScanner
@@ -54,4 +54,4 @@ tags:
 - [[test_ws_e_rt2_inbound_encoding.py]] - `references` [EXTRACTED]
 - [[tool_result_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_6
+#graphify/code #graphify/EXTRACTED #community/Memory_Lifecycle__Egress_Filtering

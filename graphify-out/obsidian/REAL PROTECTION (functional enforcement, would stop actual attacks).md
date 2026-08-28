@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-03-03.md"
 type: "document"
-community: "Community 1045"
+community: "Community 1335"
 location: "L44"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1045
+  - community/Community_1335
 ---
 
 # REAL PROTECTION (functional enforcement, would stop actual attacks)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[2. Security Value Audit_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1045
+#graphify/document #graphify/EXTRACTED #community/Community_1335

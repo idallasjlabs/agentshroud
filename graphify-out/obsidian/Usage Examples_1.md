@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/OPENCLAW_SSH_SETUP.md"
 type: "document"
-community: "Community 186"
+community: "Community 191"
 location: "L202"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_186
+  - community/Community_191
 ---
 
 # Usage Examples
@@ -16,4 +16,4 @@ tags:
 - [[From OpenClaw Bot (Natural Language)]] - `contains` [EXTRACTED]
 - [[OpenClaw Bot SSH Configuration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_186
+#graphify/document #graphify/EXTRACTED #community/Community_191

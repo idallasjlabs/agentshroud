@@ -1,57 +1,59 @@
 ---
 type: community
+cohesion: 0.05
 members: 44
 ---
 
 # Community 137
 
+**Cohesion:** 0.05 - loosely connected
 **Members:** 44 nodes
 
 ## Members
-- [[.__init__()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[._classify_risk()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[._domain_matches()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[._init_browser()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[._load_config()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[._log_action()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[._log_security_event()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[._requires_approval()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[._take_screenshot()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[._validate_url()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[.click()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[.close()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[.detect_captcha()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[.extract()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[.fill_field()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[.get_audit_log()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[.navigate()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[CLI interface for SecureBrowser_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[Check if action requires approval          Security Approval queue integration_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[Check if domain matches pattern (supports wildcards)_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[Classify action risk level          Security Determines if approval is needed_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[Clean up browser resources_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[Click an element          Security Risk classification for destructive actions_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[Detect if CAPTCHA is present on page_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[Extract data from page          Security No credential extraction allowed_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[Fill a single form field          Security Risk classification, approval for se_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[Initialize browser with security settings_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[Load security configuration_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[Log browser action to audit trail_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[Log security-related events_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[Navigate to URL          Security URL validation, audit logging_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[Raised when security policy is violated_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[Return complete audit log_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[Risk classification for browser actions_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[RiskLevel_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[Secure browser automation with enterprise controls      Security guarantees_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[SecureBrowser_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[Security configuration for browser automation_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[SecurityConfig_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[SecurityError_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[Take screenshot and save to audit directory_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[Validate URL against allowlistblocklist          Security This is the primary_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[browse.py_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[main()_6]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
+- [[.__init__()_103]] - code - gateway/security/outbound_filter.py
+- [[._classify_response_risk()]] - code - gateway/security/outbound_filter.py
+- [[._compile_patterns()_1]] - code - gateway/security/outbound_filter.py
+- [[._is_allowed_for_trust()]] - code - gateway/security/outbound_filter.py
+- [[.filter_response()]] - code - gateway/security/outbound_filter.py
+- [[.get_stats()_17]] - code - gateway/security/outbound_filter.py
+- [[.test_real_world_agent_responses()]] - code - gateway/tests/test_outbound_filter.py
+- [[.test_with_pii_sanitizer_compatibility()]] - code - gateway/tests/test_outbound_filter.py
+- [[A single match found by the outbound filter.]] - rationale - gateway/security/outbound_filter.py
+- [[Any_52]] - code - gateway/security/outbound_filter.py
+- [[Categories of information that may need filtering.]] - rationale - gateway/security/outbound_filter.py
+- [[Check if a disclosure category is permitted for the user's trust level.]] - rationale - gateway/security/outbound_filter.py
+- [[Classify the risk level of a response based on info disclosure density.]] - rationale - gateway/security/outbound_filter.py
+- [[Compile all filter patterns into regex objects.]] - rationale - gateway/security/outbound_filter.py
+- [[Current Assessment SL 2 (with SL 3 capabilities in FR 2, FR 3, FR 4, FR 6)]] - document - docs/compliance/iec-62443-matrix.md
+- [[FR 1 Identification and Authentication Control (IAC)]] - document - docs/compliance/iec-62443-matrix.md
+- [[FR 2 Use Control (UC)]] - document - docs/compliance/iec-62443-matrix.md
+- [[FR 3 System Integrity (SI)]] - document - docs/compliance/iec-62443-matrix.md
+- [[FR 5 Restricted Data Flow (RDF)]] - document - docs/compliance/iec-62443-matrix.md
+- [[FR 6 Timely Response to Events (TRE)]] - document - docs/compliance/iec-62443-matrix.md
+- [[FR 7 Resource Availability (RA)]] - document - docs/compliance/iec-62443-matrix.md
+- [[FR1 Identification and Authentication Control]] - concept - docs/compliance/iec-62443-matrix.md
+- [[FR3 System Integrity]] - concept - docs/compliance/iec-62443-matrix.md
+- [[FR4 Data Confidentiality]] - concept - docs/compliance/iec-62443-matrix.md
+- [[FR5 Restricted Data Flow]] - concept - docs/compliance/iec-62443-matrix.md
+- [[FR6 Timely Response to Events]] - concept - docs/compliance/iec-62443-matrix.md
+- [[Filter agent response for sensitive information disclosure.          Args]] - rationale - gateway/security/outbound_filter.py
+- [[FilterMatch]] - code - gateway/security/outbound_filter.py
+- [[Get filter statistics.]] - rationale - gateway/security/outbound_filter.py
+- [[IEC 62443 Compliance Matrix — AgentShroud]] - document - docs/compliance/iec-62443-matrix.md
+- [[InfoCategory]] - code - gateway/security/outbound_filter.py
+- [[Initialize the outbound information filter.          Args             config C]] - rationale - gateway/security/outbound_filter.py
+- [[Integration tests with other security components.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Key Components Referenced (v1.0.0)]] - document - docs/compliance/iec-62443-matrix.md
+- [[Overview_8]] - document - docs/compliance/iec-62443-matrix.md
+- [[Summary_3]] - document - docs/compliance/iec-62443-matrix.md
+- [[Test that outbound filter works alongside PII sanitizer.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Test with realistic agent response patterns.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[TestIntegration]] - code - gateway/tests/test_outbound_filter.py
+- [[config_integrity.py]] - code - gateway/security/config_integrity.py
+- [[heuristic_classifier.py]] - code - gateway/security/heuristic_classifier.py
+- [[iec-62443-matrix]] - document - docs/compliance/iec-62443-matrix.md
+- [[outbound_filter.py]] - code - gateway/security/outbound_filter.py
+- [[test_outbound_filter.py]] - code - gateway/tests/test_outbound_filter.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -61,10 +63,31 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 78]]
-- 1 edge to [[_COMMUNITY_Community 38]]
+- 12 edges to [[_COMMUNITY_Key Vault & Audit Chain]]
+- 3 edges to [[_COMMUNITY_Community 19]]
+- 2 edges to [[_COMMUNITY_Community 420]]
+- 2 edges to [[_COMMUNITY_Community 52]]
+- 2 edges to [[_COMMUNITY_Community 46]]
+- 2 edges to [[_COMMUNITY_Community 47]]
+- 2 edges to [[_COMMUNITY_Community 287]]
+- 2 edges to [[_COMMUNITY_Community 996]]
+- 2 edges to [[_COMMUNITY_Community 373]]
+- 2 edges to [[_COMMUNITY_Community 442]]
+- 1 edge to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
+- 1 edge to [[_COMMUNITY_Community 43]]
+- 1 edge to [[_COMMUNITY_Community 258]]
+- 1 edge to [[_COMMUNITY_Community 410]]
+- 1 edge to [[_COMMUNITY_Community 214]]
+- 1 edge to [[_COMMUNITY_Community 20]]
+- 1 edge to [[_COMMUNITY_Community 199]]
+- 1 edge to [[_COMMUNITY_Community 429]]
+- 1 edge to [[_COMMUNITY_Community 30]]
+- 1 edge to [[_COMMUNITY_Community 176]]
+- 1 edge to [[_COMMUNITY_Community 427]]
 
 ## Top bridge nodes
-- [[SecurityError_1]] - degree 7, connects to 1 community
-- [[browse.py_1]] - degree 6, connects to 1 community
-- [[RiskLevel_1]] - degree 6, connects to 1 community
+- [[FR3 System Integrity]] - degree 9, connects to 6 communities
+- [[outbound_filter.py]] - degree 9, connects to 5 communities
+- [[FR4 Data Confidentiality]] - degree 8, connects to 5 communities
+- [[InfoCategory]] - degree 9, connects to 3 communities
+- [[test_outbound_filter.py]] - degree 5, connects to 3 communities

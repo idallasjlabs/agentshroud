@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1230
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[MCP Auth Reset (MCPM-AUTH-RESET)_2]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/README.md
-- [[Purpose_90]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/README.md
-- [[README_95]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/README.md
-- [[Related Skills_96]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/README.md
-- [[Usage_99]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/README.md
+- [[Oracle — Feedback Analyst_4]] - document - docker/config/openclaw/skills/i-oracle/README.md
+- [[Purpose_95]] - document - docker/config/openclaw/skills/i-oracle/README.md
+- [[README_100]] - document - docker/config/openclaw/skills/i-oracle/README.md
+- [[Related Skills_104]] - document - docker/config/openclaw/skills/i-oracle/README.md
+- [[Usage_105]] - document - docker/config/openclaw/skills/i-oracle/README.md
 
 ## Live Query (requires Dataview plugin)
 

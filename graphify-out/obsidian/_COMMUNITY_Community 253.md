@@ -1,44 +1,46 @@
 ---
 type: community
+cohesion: 0.09
 members: 31
 ---
 
 # Community 253
 
+**Cohesion:** 0.09 - loosely connected
 **Members:** 31 nodes
 
 ## Members
-- [[CodexBar CLI quick ref (usage + cost)]] - document - skills/openclaw/model-usage/references/codexbar-cli.md
-- [[Commands_3]] - document - skills/openclaw/model-usage/references/codexbar-cli.md
-- [[Common Queries]] - document - skills/openclaw/session-logs/SKILL.md
-- [[Cost JSON fields]] - document - skills/openclaw/model-usage/references/codexbar-cli.md
-- [[Count messages and tokens in a session]] - document - skills/openclaw/session-logs/SKILL.md
-- [[Current model logic]] - document - skills/openclaw/model-usage/SKILL.md
-- [[Daily cost summary]] - document - skills/openclaw/session-logs/SKILL.md
-- [[Extract user messages from a session]] - document - skills/openclaw/session-logs/SKILL.md
-- [[Fast text-only hint (low noise)]] - document - skills/openclaw/session-logs/SKILL.md
-- [[Find sessions from a specific day]] - document - skills/openclaw/session-logs/SKILL.md
-- [[Get total cost for a session]] - document - skills/openclaw/session-logs/SKILL.md
-- [[Inputs]] - document - skills/openclaw/model-usage/SKILL.md
-- [[Install]] - document - skills/openclaw/model-usage/references/codexbar-cli.md
-- [[List all sessions by date and size]] - document - skills/openclaw/session-logs/SKILL.md
-- [[Location]] - document - skills/openclaw/session-logs/SKILL.md
-- [[Model usage]] - document - skills/openclaw/model-usage/SKILL.md
-- [[Notes_5]] - document - skills/openclaw/model-usage/references/codexbar-cli.md
-- [[Output_7]] - document - skills/openclaw/model-usage/SKILL.md
-- [[Overview_28]] - document - skills/openclaw/model-usage/SKILL.md
-- [[Quick start]] - document - skills/openclaw/model-usage/SKILL.md
-- [[References_5]] - document - skills/openclaw/model-usage/SKILL.md
-- [[SKILL_215]] - document - skills/openclaw/model-usage/SKILL.md
-- [[SKILL_227]] - document - skills/openclaw/session-logs/SKILL.md
-- [[Search across ALL sessions for a phrase]] - document - skills/openclaw/session-logs/SKILL.md
-- [[Search for keyword in assistant responses]] - document - skills/openclaw/session-logs/SKILL.md
-- [[Structure_2]] - document - skills/openclaw/session-logs/SKILL.md
-- [[Tips_4]] - document - skills/openclaw/session-logs/SKILL.md
-- [[Tool usage breakdown]] - document - skills/openclaw/session-logs/SKILL.md
-- [[Trigger_3]] - document - skills/openclaw/session-logs/SKILL.md
-- [[codexbar-cli]] - document - skills/openclaw/model-usage/references/codexbar-cli.md
-- [[session-logs]] - document - skills/openclaw/session-logs/SKILL.md
+- [[One Claw Tied Behind Your Back Security Framework]] - concept - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Browser Skill README (OpenClaw)]] - document - docker/config/openclaw/skills/i-browser/README.md
+- [[Browser — Secure Browser Automation (README)]] - document - docker/config/hermes/skills/i-browser/README.md
+- [[Browser — Secure Browser Automation (SKILL)]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Browser — Secure Browser Automation SKILL (OpenClaw)]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
+- [[RiskLevel enum]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[SecureBrowser Security Config (config.yaml)]] - document - .agents/skills/i-browser/config.yaml
+- [[SecureBrowser Security Configuration (config.yaml)]] - document - docker/config/hermes/skills/i-browser/config.yaml
+- [[SecureBrowser Security Configuration (config.yaml, OpenClaw)]] - code - docker/config/openclaw/skills/i-browser/config.yaml
+- [[SecureBrowser class]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[SecureBrowser._classify_risk()]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
+- [[SecureBrowser._domain_matches()]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
+- [[SecureBrowser._init_browser()]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
+- [[SecureBrowser._load_config()]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
+- [[SecureBrowser._log_action()]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
+- [[SecureBrowser._log_security_event()]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
+- [[SecureBrowser._requires_approval()]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
+- [[SecureBrowser._take_screenshot()]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
+- [[SecureBrowser._validate_url()]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
+- [[SecureBrowser.click()]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
+- [[SecureBrowser.extract()]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
+- [[SecureBrowser.fill_field()]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
+- [[SecureBrowser.navigate()]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
+- [[SecurityConfig dataclass]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[SecurityError exception]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[appendLog()_4]] - code - .agents/skills/i-browser/browse.js
+- [[browse.py — SecureBrowser CLI (OpenClaw)]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[browser-fetch package.json_3]] - document - .agents/skills/i-browser/package.json
+- [[browser-fetch package.json_1]] - code - docker/config/openclaw/skills/i-browser/package.json
+- [[browserFetch()_4]] - code - .agents/skills/i-browser/browse.js
+- [[main() CLI entrypoint]] - code - .agents/skills/i-browser/scripts/browse.py
 
 ## Live Query (requires Dataview plugin)
 

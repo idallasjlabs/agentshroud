@@ -1,21 +1,20 @@
 ---
 source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "Community 610"
+community: "Community 603"
 location: "L341"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_610
+  - community/Community_603
 ---
 
 # Phase 5: Distributed Workflows
 
 ## Connections
 - [[1.4 Implementation Plan]] - `contains` [EXTRACTED]
-- [[Implementation Plan]] - `contains` [EXTRACTED]
 - [[Workflow 1 Automated Testing on Pi]] - `contains` [EXTRACTED]
 - [[Workflow 2 Continuous Development]] - `contains` [EXTRACTED]
 - [[Workflow 3 IoT + AI Integration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_610
+#graphify/document #graphify/EXTRACTED #community/Community_603

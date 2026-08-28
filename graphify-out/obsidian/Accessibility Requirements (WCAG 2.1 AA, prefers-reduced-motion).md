@@ -1,12 +1,12 @@
 ---
 source_file: "branding/guidelines/brand-guidelines.md"
 type: "concept"
-community: "Community 460"
+community: "Community 108"
 location: "L326-330"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_460
+  - community/Community_108
 ---
 
 # Accessibility Requirements (WCAG 2.1 AA, prefers-reduced-motion)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Animation Guidelines  Motion Principles]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_460
+#graphify/concept #graphify/EXTRACTED #community/Community_108

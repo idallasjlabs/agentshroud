@@ -1,14 +1,17 @@
 ---
 type: community
-members: 1
+cohesion: 1.00
+members: 2
 ---
 
 # Community 1663
 
-**Members:** 1 nodes
+**Cohesion:** 1.00 - tightly connected
+**Members:** 2 nodes
 
 ## Members
-- [[Audit-log-every-fetch design rationale]] - rationale - docker/config/openclaw/skills/i-browser/browse.js
+- [[_resolve_model_size() — reads WHISPER_MODEL_SIZE env and validates]] - code - voice_gateway/stt.py
+- [[select_model_size() — pure AB model-size resolver]] - code - voice_gateway/stt.py
 
 ## Live Query (requires Dataview plugin)
 

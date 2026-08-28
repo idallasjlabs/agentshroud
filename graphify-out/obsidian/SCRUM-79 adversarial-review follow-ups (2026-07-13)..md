@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_report_store.py"
 type: "rationale"
-community: "Community 96"
+community: "Community 101"
 location: "L189"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_96
+  - community/Community_101
 ---
 
 # SCRUM-79 adversarial-review follow-ups (2026-07-13).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestReviewHardening]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_96
+#graphify/rationale #graphify/EXTRACTED #community/Community_101

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/drift_detector.py"
 type: "code"
-community: "Community 14"
+community: "Security Audit & Drift Detection"
 location: "L59"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_14
+  - community/Security_Audit__Drift_Detection
 ---
 
 # DriftDetector
@@ -81,4 +81,4 @@ tags:
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_14
+#graphify/code #graphify/INFERRED #community/Security_Audit__Drift_Detection

@@ -1,19 +1,19 @@
 ---
 type: community
-members: 6
+cohesion: 0.50
+members: 4
 ---
 
 # Community 1366
 
-**Members:** 6 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[._state()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_findings_and_denials_penalised()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_heavy_findings_clamp_to_red_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_stats_exception_defaults_to_zero_denials()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_unknown_bot_clean_score()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestComputeBotScorecard]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_collaborator_encoded_exfil_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_collaborator_plugin_discovery_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[Encoded exfiltration prompts should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Plugintool auto-discovery inventory prompts should be blocked.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +23,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 48]]
+- 10 edges to [[_COMMUNITY_Telegram Proxy Inbound]]
+- 2 edges to [[_COMMUNITY_Community 31]]
 
 ## Top bridge nodes
-- [[TestComputeBotScorecard]] - degree 6, connects to 1 community
+- [[.test_collaborator_plugin_discovery_request_is_blocked_and_quarantined()]] - degree 8, connects to 2 communities
+- [[.test_collaborator_encoded_exfil_request_is_blocked_and_quarantined()]] - degree 7, connects to 2 communities

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
 type: "rationale"
-community: "Community 138"
+community: "Community 139"
 location: "L114"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_138
+  - community/Community_139
 ---
 
 # Validate URL against allowlist/blocklist          Security: This is the primary
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._validate_url()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_138
+#graphify/rationale #graphify/EXTRACTED #community/Community_139

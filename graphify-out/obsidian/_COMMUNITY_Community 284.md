@@ -1,42 +1,43 @@
 ---
 type: community
-members: 29
+cohesion: 0.08
+members: 28
 ---
 
 # Community 284
 
-**Members:** 29 nodes
+**Cohesion:** 0.08 - loosely connected
+**Members:** 28 nodes
 
 ## Members
-- [[1. Re-enable Seccomp Profiles]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[2. Enable Read-Only Filesystem]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[3. Remove NET_RAW Capability]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[4. Disable mDNSBonjour Broadcasting]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[5. Set DM Policy to Allowlist]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[AgentShroud Security Value Proposition - REVISED]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[Bottom Line (Corrected)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[Create scan.sh Script]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[Critical Context (What I Missed)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[Immediate Action Plan (Phase 3A - Completion)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[Immediate Next Steps (This Session)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[NOTHING is over-engineered. Everything has a purpose.]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[OpenSCAP & IEC 62443 Compliance - CRITICAL ✅]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[Priority 1 Fix Broken Security (CRITICAL)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[Priority 2 Add OpenSCAP Scanning (HIGH)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[Priority 3 Create IEC 62443 Compliance Matrix (HIGH)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[Priority 4 Create Security Verification Script (HIGH)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[Read-Only Filesystem - CRITICAL ✅]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[Revised Assessment Nothing is Over-Engineered]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[Revised Threat Model]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[SECURITY_VALUE_PROPOSITION_REVISED]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[Scenario 1 Multi-User Bot Access]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[Scenario 2 External Hosting (AWSGCP)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[Scenario 3 Prompt Injection → System Compromise]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[Scenario 4 Supply Chain Attack (Malicious Skill)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[Seccomp Profiles - CRITICAL ✅]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[This is NOT a Personal Tool]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[Ultra-Conservative Credential Policy - CRITICAL ✅]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
-- [[What's Actually Over-Engineered (Revised Answer)]] - document - docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md
+- [[1Password Session Expiry (op-proxy)]] - rationale - docs/project/TELEGRAM_ISSUES.md
+- [[ARM64 Seccomp Profile Requirement]] - rationale - docs/operations/raspberry-pi.md
+- [[Anthropic API Credits & Rate Limits Issue]] - rationale - docs/project/TELEGRAM_ISSUES.md
+- [[Anthropic API Credits Exhausted Blocker]] - rationale - docs/project/SYSTEM_STATUS.md
+- [[Bot Token Migration Confusion]] - rationale - docs/project/TELEGRAM_ISSUES.md
+- [[Colima Troubleshooting Procedures]] - concept - docs/runbooks/RUNBOOK.md
+- [[ColimaDocker Stability Issue (Marvin)]] - rationale - docs/project/TELEGRAM_ISSUES.md
+- [[Configuration Reference]] - document - docs/setup/setup-guide.md
+- [[Example Configurations_1]] - document - docs/setup/setup-guide.md
+- [[Glibc TLS Block Allocation Fix (Container Rebuild)]] - rationale - docs/runbooks/RUNBOOK.md
+- [[Glibc TLS Incompatibility (Trillian)]] - rationale - docs/project/TELEGRAM_ISSUES.md
+- [[Hallucinated Competitor Report (Zetherion AI)]] - rationale - docs/project/TELEGRAM_ISSUES.md
+- [[Multi-Host Infrastructure (MarvinTrillianPi)]] - concept - docs/runbooks/RUNBOOK.md
+- [[PandocLaTeX Dependency Issue]] - rationale - docs/project/TELEGRAM_ISSUES.md
+- [[RUNBOOK]] - document - docs/runbooks/RUNBOOK.md
+- [[SMTP Port Block Email Failure]] - rationale - docs/project/TELEGRAM_ISSUES.md
+- [[SSH Key Regeneration on Container Restart]] - rationale - docs/project/TELEGRAM_ISSUES.md
+- [[SYSTEM_STATUS]] - document - docs/project/SYSTEM_STATUS.md
+- [[Seccomp Profile Conflict (x86_64)]] - rationale - docs/project/TELEGRAM_ISSUES.md
+- [[Secrets Setup Script (dockersecretssetup-secrets.sh)]] - concept - docs/operations/raspberry-pi.md
+- [[TELEGRAM_ISSUES]] - document - docs/project/TELEGRAM_ISSUES.md
+- [[agentshroud.yaml Configuration File]] - concept - docs/operations/raspberry-pi.md
+- [[apply-patches.js Invalid Config Injection Bug]] - rationale - docs/project/TELEGRAM_ISSUES.md
+- [[egress-config.yml - Egress Filtering]] - document - docs/setup/setup-guide.md
+- [[iMessage Automation Permission Blocker]] - rationale - docs/project/SYSTEM_STATUS.md
+- [[iMessage Integration Permissions Issue]] - rationale - docs/project/TELEGRAM_ISSUES.md
+- [[mcp-config.yml - MCP Server Registry]] - document - docs/setup/setup-guide.md
+- [[raspberry-pi]] - document - docs/operations/raspberry-pi.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -46,7 +47,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 548]]
+- 2 edges to [[_COMMUNITY_Community 361]]
+- 2 edges to [[_COMMUNITY_Community 529]]
+- 2 edges to [[_COMMUNITY_Community 314]]
+- 1 edge to [[_COMMUNITY_Community 422]]
+- 1 edge to [[_COMMUNITY_Community 621]]
+- 1 edge to [[_COMMUNITY_Community 571]]
+- 1 edge to [[_COMMUNITY_Community 673]]
+- 1 edge to [[_COMMUNITY_Community 681]]
+- 1 edge to [[_COMMUNITY_Community 334]]
 
 ## Top bridge nodes
-- [[AgentShroud Security Value Proposition - REVISED]] - degree 9, connects to 1 community
+- [[raspberry-pi]] - degree 8, connects to 4 communities
+- [[RUNBOOK]] - degree 7, connects to 4 communities
+- [[TELEGRAM_ISSUES]] - degree 14, connects to 2 communities
+- [[Configuration Reference]] - degree 5, connects to 1 community
+- [[SYSTEM_STATUS]] - degree 3, connects to 1 community

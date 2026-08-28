@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_killswitch_modes.py"
 type: "code"
-community: "Community 1413"
+community: "Community 1423"
 location: "1"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_1413
+  - community/Community_1423
 ---
 
 # Test Kill Switch Script Modes
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Test Kill Switch Monitor]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_1413
+#graphify/code #graphify/INFERRED #community/Community_1423

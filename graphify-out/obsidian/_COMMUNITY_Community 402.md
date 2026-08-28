@@ -1,38 +1,37 @@
 ---
 type: community
-members: 25
+cohesion: 0.09
+members: 22
 ---
 
 # Community 402
 
-**Members:** 25 nodes
+**Cohesion:** 0.09 - loosely connected
+**Members:** 22 nodes
 
 ## Members
-- [[1. Observatory Mode (Global Monitor-Only Switch)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[2. Prompt Injection Hardening]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[2a. Fix ContextGuard Enforcement Bug (~4h)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[2b. Expand PromptGuard Patterns (~8h)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[2c. Input Normalization Layer (~6h)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[2d. Cross-Turn Correlation (~8h)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[2e. Tool Result Sanitization (~4h)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[3. Interactive Egress Firewall (Little Snitch for Agents)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[4. ML-Based Injection Classifier (Stretch)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[5. Output Canary System]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[6. Enhanced Audit & Compliance]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[A. Steve Hay — ALL Tiers (14 features, 23 requirements)]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[B. Wire ALL Modules Into Request Path]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[C. Bug Fixes]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[D. Interactive Egress Firewall (Little Snitch for Agents)]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[E. Observatory Mode (Global MonitorEnforce Switch)]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[F. Prompt Injection Hardening]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Features_2]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[G. Encrypted Container-to-Container Communication]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[H. Pi-hole as Default Stack Component]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[I. Enhanced Audit & Compliance]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[J. Phase 8.5 E2E Verification]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[K. Merge Pending PRs  Code Cleanup]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[M. Misc Quick Wins]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[v0.8.0 — Watchtower (Complete Security + Everything We Know Today)]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[1. The Problem Unsecured AI Agents]] - document - docs/papers/agentshroud-whitepaper.md
+- [[1.1 The New Attack Surface]] - document - docs/papers/agentshroud-whitepaper.md
+- [[1.2 The Industry Gap]] - document - docs/papers/agentshroud-whitepaper.md
+- [[1.3 Threat Model]] - document - docs/papers/agentshroud-whitepaper.md
+- [[11. Competitive Security Comparison Matrix]] - document - docs/papers/agentshroud-whitepaper.md
+- [[11.1 Complete 26-Module Security Matrix]] - document - docs/papers/agentshroud-whitepaper.md
+- [[11.2 Unique AgentShroud Modules (No Competitor Implementation)]] - document - docs/papers/agentshroud-whitepaper.md
+- [[11.3 Competitor Analysis Details]] - document - docs/papers/agentshroud-whitepaper.md
+- [[11.4 Security Coverage Gap Analysis]] - document - docs/papers/agentshroud-whitepaper.md
+- [[11.5 Security Score Evolution]] - document - docs/papers/agentshroud-whitepaper.md
+- [[11.6 Industry Implications]] - document - docs/papers/agentshroud-whitepaper.md
+- [[12. Roadmap]] - document - docs/papers/agentshroud-whitepaper.md
+- [[13. Conclusion]] - document - docs/papers/agentshroud-whitepaper.md
+- [[6. Competitive Landscape]] - document - docs/papers/agentshroud-whitepaper.md
+- [[6.1 Market Overview]] - document - docs/papers/agentshroud-whitepaper.md
+- [[6.2 Comparison Table]] - document - docs/papers/agentshroud-whitepaper.md
+- [[6.3 Key Differentiators]] - document - docs/papers/agentshroud-whitepaper.md
+- [[AgentShroud Enterprise Governance for Autonomous AI Agents]] - document - docs/papers/agentshroud-whitepaper.md
+- [[Completed Phases]] - document - docs/papers/agentshroud-whitepaper.md
+- [[Executive Summary]] - document - docs/papers/agentshroud-whitepaper.md
+- [[Future Phases (Planned)]] - document - docs/papers/agentshroud-whitepaper.md
+- [[agentshroud-whitepaper]] - document - docs/papers/agentshroud-whitepaper.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -42,12 +41,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 360]]
-- 1 edge to [[_COMMUNITY_Community 911]]
-- 1 edge to [[_COMMUNITY_Community 733]]
-- 1 edge to [[_COMMUNITY_Community 738]]
+- 1 edge to [[_COMMUNITY_Community 650]]
+- 1 edge to [[_COMMUNITY_Community 520]]
+- 1 edge to [[_COMMUNITY_Community 569]]
+- 1 edge to [[_COMMUNITY_Community 904]]
+- 1 edge to [[_COMMUNITY_Community 821]]
+- 1 edge to [[_COMMUNITY_Community 972]]
+- 1 edge to [[_COMMUNITY_Community 855]]
+- 1 edge to [[_COMMUNITY_Community 671]]
 
 ## Top bridge nodes
-- [[v0.8.0 — Watchtower (Complete Security + Everything We Know Today)]] - degree 17, connects to 2 communities
-- [[Features_2]] - degree 8, connects to 1 community
-- [[6. Enhanced Audit & Compliance]] - degree 3, connects to 1 community
+- [[AgentShroud Enterprise Governance for Autonomous AI Agents]] - degree 15, connects to 8 communities

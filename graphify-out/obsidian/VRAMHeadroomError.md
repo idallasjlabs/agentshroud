@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "Community 7"
+community: "Community 225"
 location: "L25"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_7
+  - community/Community_225
 ---
 
 # VRAMHeadroomError
@@ -28,4 +28,4 @@ tags:
 - [[test_resource_guard_limits.py]] - `imports` [EXTRACTED]
 - [[test_vram_headroom_error_is_not_resource_warning()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_7
+#graphify/code #graphify/INFERRED #community/Community_225

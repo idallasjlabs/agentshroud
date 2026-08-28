@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Runtime/compose_generator.py.md"
 type: "document"
-community: "Community 729"
+community: "Community 726"
 location: "L45"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_729
+  - community/Community_726
 ---
 
 # Default Service Configuration
@@ -16,4 +16,4 @@ tags:
 - [[gateway service]] - `contains` [EXTRACTED]
 - [[openclaw service]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_729
+#graphify/document #graphify/EXTRACTED #community/Community_726

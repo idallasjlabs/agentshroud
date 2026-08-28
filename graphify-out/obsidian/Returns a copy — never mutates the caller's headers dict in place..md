@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "rationale"
-community: "Community 7"
+community: "Community 1348"
 location: "L652"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_7
+  - community/Community_1348
 ---
 
 # Returns a copy — never mutates the caller's headers dict in place.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_local_backend_headers_does_not_mutate_input()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_7
+#graphify/rationale #graphify/EXTRACTED #community/Community_1348

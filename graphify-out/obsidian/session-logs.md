@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/session-logs/SKILL.md"
 type: "document"
-community: "Community 253"
+community: "Community 254"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_253
+  - community/Community_254
 ---
 
 # session-logs
@@ -20,4 +20,4 @@ tags:
 - [[Tips_4]] - `contains` [EXTRACTED]
 - [[Trigger_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_253
+#graphify/document #graphify/EXTRACTED #community/Community_254

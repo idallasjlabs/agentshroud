@@ -1,35 +1,37 @@
 ---
 type: community
+cohesion: 0.09
 members: 22
 ---
 
 # Community 393
 
+**Cohesion:** 0.09 - loosely connected
 **Members:** 22 nodes
 
 ## Members
-- [[4 Architectural Gaps (No Existing Module)]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
-- [[AgentShroud v0.7.0 — Red Team Remediation Plan]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
-- [[Credential Isolation Planning]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Critical Finding]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
-- [[Enterprise Security Feature Priorities]] - document - docs/planning/redteam/feature-priorities.md
-- [[Implementation Notes]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
-- [[Loss Categories_3]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
-- [[Outbound Information Filter Planning]] - document - docs/planning/redteam/06-outbound-info-filter.md
-- [[Red Team Engagement Plan (Pending)]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
-- [[Separation of Privilege Planning]] - document - docs/planning/redteam/04-separation-of-privilege.md
-- [[Source]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
-- [[Sprint 1 Enforce-by-Default (R-02, R-03)]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
-- [[Sprint 2 Outbound Information Filter (R-01)]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
-- [[Sprint 3 Human-in-the-Loop (R-08, R-09)]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
-- [[Sprint 4 Per-User Session Isolation (R-04, R-05)]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
-- [[Sprint 5 Separation of Privilege (R-06, R-07)]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
-- [[Sprint 6 Credential Isolation (R-10, R-11, R-12)]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
-- [[Tier 1 Must-Have (Deployment Blockers) — v0.7.0 Scope]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
-- [[Tier 2 Should-Have (Compliance Enablers) — v0.7.x or v0.8.0]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
-- [[Tier 3 Nice-to-Have — v0.9.0+]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
-- [[v0.6.0 → v0.7.0 Delta]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
-- [[v0.7.0-remediation-plan]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
+- [[BlueBubbles (native macOS iMessage relay)]] - concept - docs/setup/IMESSAGE_STATUS.md
+- [[Current Configuration]] - document - docs/setup/IMESSAGE_STATUS.md
+- [[Current State Partially Working]] - document - docs/setup/IMESSAGE_STATUS.md
+- [[Current Status_8]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
+- [[Current Status Summary]] - document - docs/setup/IMESSAGE_STATUS.md
+- [[How to Fix (5 Minutes)]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
+- [[IMESSAGE_PERMISSION_FIX]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
+- [[IMESSAGE_STATUS]] - document - docs/setup/IMESSAGE_STATUS.md
+- [[If It Still Doesn't Work]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
+- [[Next Steps_6]] - document - docs/setup/IMESSAGE_STATUS.md
+- [[Option 1 Grant Permissions (NOT RECOMMENDED - Won't Work from Container)]] - document - docs/setup/IMESSAGE_STATUS.md
+- [[Option 2 Use BlueBubbles (RECOMMENDED ✅)]] - document - docs/setup/IMESSAGE_STATUS.md
+- [[Solutions]] - document - docs/setup/IMESSAGE_STATUS.md
+- [[Step 1 Switch to agentshroud-bot User]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
+- [[Step 2 Grant Automation Permission]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
+- [[Step 3 Test It]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
+- [[Step 4 Verify from Docker]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
+- [[The Error]] - document - docs/setup/IMESSAGE_STATUS.md
+- [[The Error We're Getting]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
+- [[What This Means_1]] - document - docs/setup/IMESSAGE_STATUS.md
+- [[iMessage Integration Status]] - document - docs/setup/IMESSAGE_STATUS.md
+- [[iMessage Permission Fix - Step by Step]] - document - docs/setup/IMESSAGE_PERMISSION_FIX.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,3 +39,9 @@ members: 22
 TABLE source_file, type FROM #community/Community_393
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 377]]
+
+## Top bridge nodes
+- [[IMESSAGE_PERMISSION_FIX]] - degree 3, connects to 1 community

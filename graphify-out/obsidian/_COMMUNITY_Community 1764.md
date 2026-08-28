@@ -1,14 +1,16 @@
 ---
 type: community
+cohesion: 1.00
 members: 1
 ---
 
 # Community 1764
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[PromptGuard.scan()]] - code - gateway/security/prompt_guard.py
+- [[GSDE&G Skills Reference Guide_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,24 +1,26 @@
 ---
 type: community
+cohesion: 0.35
 members: 11
 ---
 
 # Community 813
 
+**Cohesion:** 0.35 - loosely connected
 **Members:** 11 nodes
 
 ## Members
-- [[.test_critical_image_finding_uses_red_icon()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_image_scan_error_does_not_abort_report()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_image_scan_result_in_return_value()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_image_scan_summary_appended_to_message()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_image_scans_run_for_each_target()]] - code - gateway/tests/test_daily_cve_report.py
-- [[A critical finding in an image scan uses the red icon.]] - rationale - gateway/tests/test_daily_cve_report.py
-- [[A failing image scan appends an error line but does not raise.]] - rationale - gateway/tests/test_daily_cve_report.py
-- [[Message sent via Telegram includes a Container Image Scans section.]] - rationale - gateway/tests/test_daily_cve_report.py
-- [[Return value includes image_scans list.]] - rationale - gateway/tests/test_daily_cve_report.py
-- [[TestRunAndSendCveReportImageScans]] - code - gateway/tests/test_daily_cve_report.py
-- [[run_and_send_cve_report calls run_trivy_scan with scan_type='image' for each tar]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[.test_all_pass()_1]] - code - gateway/tests/test_multi_host_test.py
+- [[.test_empty_host_list_is_not_ok()]] - code - gateway/tests/test_multi_host_test.py
+- [[.test_mixed_pass_fail_unreachable()]] - code - gateway/tests/test_multi_host_test.py
+- [[.test_on_host_callback_invoked_per_host()]] - code - gateway/tests/test_multi_host_test.py
+- [[.test_output_tail_is_truncated()]] - code - gateway/tests/test_multi_host_test.py
+- [[.test_runner_exception_marks_unreachable()]] - code - gateway/tests/test_multi_host_test.py
+- [[Return a runner that looks up (exit_code, output) by host name.]] - rationale - gateway/tests/test_multi_host_test.py
+- [[Run ``command`` on each host via ``runner`` and aggregate the results.      A ru]] - rationale - gateway/tools/multi_host_test.py
+- [[TestRunMultiHost]] - code - gateway/tests/test_multi_host_test.py
+- [[_fake_runner()]] - code - gateway/tests/test_multi_host_test.py
+- [[run_multi_host()]] - code - gateway/tools/multi_host_test.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,7 +30,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 184]]
+- 4 edges to [[_COMMUNITY_Community 728]]
+- 4 edges to [[_COMMUNITY_Community 485]]
+- 3 edges to [[_COMMUNITY_Community 898]]
+- 2 edges to [[_COMMUNITY_Community 993]]
+- 1 edge to [[_COMMUNITY_Community 869]]
+- 1 edge to [[_COMMUNITY_Community 994]]
+- 1 edge to [[_COMMUNITY_Community 1098]]
 
 ## Top bridge nodes
-- [[TestRunAndSendCveReportImageScans]] - degree 6, connects to 1 community
+- [[run_multi_host()]] - degree 15, connects to 7 communities
+- [[TestRunMultiHost]] - degree 10, connects to 3 communities
+- [[_fake_runner()]] - degree 10, connects to 2 communities

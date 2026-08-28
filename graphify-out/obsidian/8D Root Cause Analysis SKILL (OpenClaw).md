@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-eightd/SKILL.md"
 type: "document"
-community: "Community 1314"
+community: "Community 1315"
 tags:
   - graphify/document
   - graphify/AMBIGUOUS
-  - community/Community_1314
+  - community/Community_1315
 ---
 
 # 8D Root Cause Analysis SKILL (OpenClaw)
@@ -15,4 +15,4 @@ tags:
 - [[Code Review (CR) SKILL (OpenClaw)]] - `semantically_similar_to` [AMBIGUOUS]
 - [[Data Validation (DATA-VAL) SKILL (OpenClaw)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/AMBIGUOUS #community/Community_1314
+#graphify/document #graphify/AMBIGUOUS #community/Community_1315

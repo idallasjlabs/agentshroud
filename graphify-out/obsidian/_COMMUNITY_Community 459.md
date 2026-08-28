@@ -1,32 +1,35 @@
 ---
 type: community
-members: 19
+cohesion: 0.19
+members: 20
 ---
 
 # Community 459
 
-**Members:** 19 nodes
+**Cohesion:** 0.19 - loosely connected
+**Members:** 20 nodes
 
 ## Members
-- [[Assigning Work]] - document - .agents/skills/i-pm/SKILL.md
-- [[CHANGELOG.md Updates]] - document - .agents/skills/i-pm/SKILL.md
-- [[Continuity Files]] - document - .agents/skills/i-pm/SKILL.md
-- [[Definition of Done (from AGENTS.md)]] - document - .agents/skills/i-pm/SKILL.md
-- [[Escalation]] - document - .agents/skills/i-pm/SKILL.md
-- [[Known Risks]] - document - .agents/skills/i-pm/SKILL.md
-- [[Project Roadmap]] - document - .agents/skills/i-pm/SKILL.md
-- [[Quick Status (for chatTelegram)]] - document - .agents/skills/i-pm/SKILL.md
-- [[README.md Updates]] - document - .agents/skills/i-pm/SKILL.md
-- [[Risk Management]] - document - .agents/skills/i-pm/SKILL.md
-- [[Role_25]] - document - .agents/skills/i-pm/SKILL.md
-- [[SKILL_41]] - document - .agents/skills/i-pm/SKILL.md
-- [[Skill Project Management (PM)]] - document - .agents/skills/i-pm/SKILL.md
-- [[Status Reporting]] - document - .agents/skills/i-pm/SKILL.md
-- [[Task Coordination]] - document - .agents/skills/i-pm/SKILL.md
-- [[Tracking Format]] - document - .agents/skills/i-pm/SKILL.md
-- [[`session-notesCONTINUE-YYYY-MM-DD.md` (daily snapshot)]] - document - .agents/skills/i-pm/SKILL.md
-- [[`session-notesCONTINUE.md` (always current)]] - document - .agents/skills/i-pm/SKILL.md
-- [[`session-notesSESSION_SUMMARY_YYYY-MM-DD.md` (session report)]] - document - .agents/skills/i-pm/SKILL.md
+- [[AGENTSHROUD_PLAN-RESET-20260222-0912]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[Changes]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[Context_10]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[Execution Order & Parallelism]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[FINAL Network Lockdown Activation]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[Files to Modify]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[GitHub Workflow Rules]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[P0 Fix 54 Pre-Existing Test Failures ✅ DONE — PR 23 open]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[P1 HTTP CONNECT Proxy + Domain Allowlist]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[P2 Credential Isolation (op-proxy)]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[P3 Channel Ownership — Telegram + Email]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[P4 Wire MCP Proxy]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[P5 Wire SecurityPipeline to forward]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[Plan AgentShroud Security Hardening — Real Agent Containment]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[Pre-Flight Checklist]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[Root Causes (5 distinct bugs)]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[Tests_3]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[Tests (TDD)]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[Verification_9]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[What Exists]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
 
 ## Live Query (requires Dataview plugin)
 

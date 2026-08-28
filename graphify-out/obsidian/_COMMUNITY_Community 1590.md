@@ -1,17 +1,17 @@
 ---
 type: community
-members: 4
+cohesion: 1.00
+members: 2
 ---
 
 # Community 1590
 
-**Members:** 4 nodes
+**Cohesion:** 1.00 - tightly connected
+**Members:** 2 nodes
 
 ## Members
-- [[4. Handling Alerts]] - document - docs/operations/runbook.md
-- [[Alert Severity Levels]] - document - docs/operations/runbook.md
-- [[Critical Alert Response]] - document - docs/operations/runbook.md
-- [[High Alert Response]] - document - docs/operations/runbook.md
+- [[.test_healthcheck_sandbox_message_without_skill_md_is_not_rewritten()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Healthcheck sandbox messages without SKILL.md marker should not trigger rewrite.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,7 +21,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 91]]
+- 1 edge to [[_COMMUNITY_Community 93]]
+- 1 edge to [[_COMMUNITY_Community 80]]
+- 1 edge to [[_COMMUNITY_Community 96]]
 
 ## Top bridge nodes
-- [[4. Handling Alerts]] - degree 4, connects to 1 community
+- [[.test_healthcheck_sandbox_message_without_skill_md_is_not_rewritten()]] - degree 4, connects to 3 communities

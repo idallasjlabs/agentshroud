@@ -1,64 +1,61 @@
 ---
 type: community
-members: 51
+cohesion: 0.07
+members: 46
 ---
 
 # Community 127
 
-**Members:** 51 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 46 nodes
 
 ## Members
-- [[.setup_method()_34]] - code - gateway/tests/test_soc_auth.py
-- [[.setup_method()_35]] - code - gateway/tests/test_soc_auth.py
-- [[.test_bearer_header_fallback()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[.test_different_keys_produce_different_tokens()]] - code - gateway/tests/test_soc_auth.py
-- [[.test_different_owners_produce_different_tokens()]] - code - gateway/tests/test_soc_auth.py
-- [[.test_empty_first_file_falls_to_second()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[.test_empty_token_rejected()]] - code - gateway/tests/test_soc_auth.py
-- [[.test_expired_token_rejected()]] - code - gateway/tests/test_soc_auth.py
-- [[.test_explicit_env_wins()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[.test_handler_exception_is_swallowed()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[.test_invalid_token_closes_4003()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[.test_invalid_token_rejected()]] - code - gateway/tests/test_soc_auth.py
-- [[.test_issue_and_redeem()]] - code - gateway/tests/test_soc_auth.py
-- [[.test_issue_returns_hex_string()]] - code - gateway/tests/test_soc_auth.py
-- [[.test_issue_session_token_prunes_expired()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[.test_issue_ws_token_prunes_expired()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[.test_legacy_env_fallback()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[.test_missing_first_file_falls_to_second()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[.test_multiple_tokens_independent()]] - code - gateway/tests/test_soc_auth.py
-- [[.test_no_sources_returns_empty()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[.test_raw_gateway_password_fallback()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[.test_redeem_expired_ws_token_returns_none()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[.test_single_use()]] - code - gateway/tests/test_soc_auth.py
-- [[.test_token_file_env()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[.test_unauthorized_closes_4003()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[.test_valid_ws_token_accepts()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[.test_verify_after_clear_returns_none()]] - code - gateway/tests/test_soc_auth.py
-- [[.test_verify_expired_token_returns_none()]] - code - gateway/tests/test_soc_auth.py
-- [[.test_verify_unknown_token_returns_none()]] - code - gateway/tests/test_soc_auth.py
-- [[.test_verify_valid_token()]] - code - gateway/tests/test_soc_auth.py
-- [[Clear token store before each test.]] - rationale - gateway/tests/test_soc_auth.py
-- [[Consume a WS token and return the user_id, or None if invalidexpired.]] - rationale - gateway/soc/auth.py
-- [[Derive an HMAC session token and register it in the session store.]] - rationale - gateway/soc/auth.py
-- [[FastAPI WebSocket route handler for wssoc.]] - rationale - gateway/soc/websocket.py
-- [[Issue a short-lived, single-use WebSocket token for a user.]] - rationale - gateway/soc/auth.py
-- [[Make runsecrets reads deterministic (raise OSError) on any host.]] - rationale - gateway/tests/test_soc_realtime_coverage.py
-- [[Read the gateway auth token from envsecret.      Resolution order (matches inge]] - rationale - gateway/soc/auth.py
-- [[Return user_id if token is a valid unexpired session token, else None.]] - rationale - gateway/soc/auth.py
-- [[TestGetConfigToken]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[TestSessionTokens]] - code - gateway/tests/test_soc_auth.py
-- [[TestWSSOCEndpoint]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[TestWSTokens]] - code - gateway/tests/test_soc_auth.py
-- [[_block_run_secrets()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[_get_config_token()]] - code - gateway/soc/auth.py
-- [[_make_ws()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[_verify_session_token()]] - code - gateway/soc/auth.py
-- [[issue_session_token()]] - code - gateway/soc/auth.py
-- [[issue_ws_token()]] - code - gateway/soc/auth.py
-- [[redeem_ws_token()]] - code - gateway/soc/auth.py
-- [[test_soc_auth.py]] - code - gateway/tests/test_soc_auth.py
-- [[ws_soc_endpoint()]] - code - gateway/soc/websocket.py
+- [[--verify flag causes switch_model.sh to check both bots are healthy.]] - rationale - gateway/tests/test_switch_model_idempotent.py
+- [[._run_and_read()_1]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[._run_and_read()]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[._run_twice()]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[.test_anthropic_sets_cloud_mode()]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[.test_cloud_anthropic_idempotent()]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[.test_cloud_switch_writes_hermes_main_model()]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[.test_local_anchor_idempotent()]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[.test_local_coder_idempotent()]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[.test_local_coder_sets_local_multi_mode()]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[.test_local_coder_switch_both_bots()]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[.test_local_default_idempotent()]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[.test_local_model_mode_is_local()]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[.test_local_multi_writes_anchor_coding_reasoning()]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[.test_local_sets_required_keys()]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[.test_local_switch_hermes_and_openclaw_models_match()]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[.test_local_switch_writes_hermes_main_model()]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[.test_local_with_explicit_model_idempotent()]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[.test_local_with_model_ref_sets_correct_model()]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[.test_verify_flag_accepted_without_error()]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[.test_verify_flag_with_model_ref()]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[After cloud switch, HERMES_MAIN_MODEL is written for Hermes too.]] - rationale - gateway/tests/test_switch_model_idempotent.py
+- [[After local switch, HERMES_MAIN_MODEL is written to .env.]] - rationale - gateway/tests/test_switch_model_idempotent.py
+- [[CompletedProcess_4]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[Expected keys are present in docker.env after a switch.]] - rationale - gateway/tests/test_switch_model_idempotent.py
+- [[HERMES_MAIN_MODEL and OPENCLAW_MAIN_MODEL must reference the same model.]] - rationale - gateway/tests/test_switch_model_idempotent.py
+- [[Parse a docker.env file into a dict.]] - rationale - gateway/tests/test_switch_model_idempotent.py
+- [[Path_40]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[Returns (env_after_first_run, env_after_second_run).]] - rationale - gateway/tests/test_switch_model_idempotent.py
+- [[Run switch_model.sh with mocked external commands.]] - rationale - gateway/tests/test_switch_model_idempotent.py
+- [[TestSwitchModelBothBots]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[TestSwitchModelEnvKeys]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[TestSwitchModelIdempotent]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[TestSwitchModelVerifyFlag]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[_read_env()]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[_run_switch()]] - code - gateway/tests/test_switch_model_idempotent.py
+- [[anthropic target second run leaves env identical.]] - rationale - gateway/tests/test_switch_model_idempotent.py
+- [[local qwen314b second run leaves env identical.]] - rationale - gateway/tests/test_switch_model_idempotent.py
+- [[local target second run leaves env identical.]] - rationale - gateway/tests/test_switch_model_idempotent.py
+- [[local-coder switch writes matching HERMES_MAIN_MODEL.]] - rationale - gateway/tests/test_switch_model_idempotent.py
+- [[local-coder target second run leaves env identical.]] - rationale - gateway/tests/test_switch_model_idempotent.py
+- [[switch_model.sh local --verify exits 0 (mocked health checks).]] - rationale - gateway/tests/test_switch_model_idempotent.py
+- [[switch_model.sh local m twice must leave docker.env unchanged on second run.]] - rationale - gateway/tests/test_switch_model_idempotent.py
+- [[switch_model.sh local qwen314b --verify exits 0.]] - rationale - gateway/tests/test_switch_model_idempotent.py
+- [[switch_model.sh must write model config for both OpenClaw and Hermes.]] - rationale - gateway/tests/test_switch_model_idempotent.py
+- [[test_switch_model_idempotent.py]] - code - gateway/tests/test_switch_model_idempotent.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -66,18 +63,3 @@ members: 51
 TABLE source_file, type FROM #community/Community_127
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 36 edges to [[_COMMUNITY_Community 15]]
-- 5 edges to [[_COMMUNITY_Community 19]]
-- 4 edges to [[_COMMUNITY_Community 27]]
-- 2 edges to [[_COMMUNITY_Community 109]]
-- 1 edge to [[_COMMUNITY_Community 18]]
-- 1 edge to [[_COMMUNITY_Community 144]]
-
-## Top bridge nodes
-- [[ws_soc_endpoint()]] - degree 18, connects to 5 communities
-- [[issue_ws_token()]] - degree 15, connects to 2 communities
-- [[issue_session_token()]] - degree 14, connects to 2 communities
-- [[redeem_ws_token()]] - degree 14, connects to 2 communities
-- [[_get_config_token()]] - degree 12, connects to 2 communities

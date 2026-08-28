@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "rationale"
-community: "Community 451"
+community: "Community 455"
 location: "L635"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_451
+  - community/Community_455
 ---
 
 # check_upstream_cves(agent_id=...) selects that agent's OWN repo + list.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_check_scoped_to_agent_registry_and_repo()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_451
+#graphify/rationale #graphify/EXTRACTED #community/Community_455

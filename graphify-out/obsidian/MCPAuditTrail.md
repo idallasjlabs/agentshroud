@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_audit.py"
 type: "code"
-community: "Community 201"
+community: "Community 206"
 location: "L55"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_201
+  - community/Community_206
 ---
 
 # MCPAuditTrail
@@ -104,4 +104,4 @@ tags:
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_201
+#graphify/code #graphify/INFERRED #community/Community_206

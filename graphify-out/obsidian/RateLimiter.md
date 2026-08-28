@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/auth.py"
 type: "code"
-community: "Community 124"
+community: "Community 115"
 location: "L30"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_124
+  - community/Community_115
 ---
 
 # RateLimiter
@@ -60,4 +60,4 @@ tags:
 - [[test_security.py]] - `imports` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_124
+#graphify/code #graphify/INFERRED #community/Community_115

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_all_modules_enforce.py"
 type: "rationale"
-community: "Community 6"
+community: "Memory Lifecycle & Egress Filtering"
 location: "L99"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/Memory_Lifecycle__Egress_Filtering
 ---
 
 # Verify get_module_mode returns enforce when no override is set.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestGetModuleModeEnforceDefault]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_6
+#graphify/rationale #graphify/EXTRACTED #community/Memory_Lifecycle__Egress_Filtering

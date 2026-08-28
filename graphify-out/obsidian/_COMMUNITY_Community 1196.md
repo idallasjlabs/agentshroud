@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1196
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[MCP Tools Usage (MCPM)_1]] - document - docker/config/hermes/skills/i-mcpm/README.md
-- [[Purpose_56]] - document - docker/config/hermes/skills/i-mcpm/README.md
-- [[README_61]] - document - docker/config/hermes/skills/i-mcpm/README.md
-- [[Related Skills_62]] - document - docker/config/hermes/skills/i-mcpm/README.md
-- [[Usage_63]] - document - docker/config/hermes/skills/i-mcpm/README.md
+- [[Incident Response (INCIDENT)]] - document - docker/config/hermes/skills/i-production/README.md
+- [[Purpose_61]] - document - docker/config/hermes/skills/i-production/README.md
+- [[README_66]] - document - docker/config/hermes/skills/i-production/README.md
+- [[Related Skills_67]] - document - docker/config/hermes/skills/i-production/README.md
+- [[Usage_68]] - document - docker/config/hermes/skills/i-production/README.md
 
 ## Live Query (requires Dataview plugin)
 

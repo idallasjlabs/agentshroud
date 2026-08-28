@@ -1,30 +1,32 @@
 ---
 type: community
+cohesion: 0.18
 members: 17
 ---
 
 # Community 532
 
+**Cohesion:** 0.18 - loosely connected
 **Members:** 17 nodes
 
 ## Members
-- [[.test_api_calls_exceed()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_no_tracking_returns_ok()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_tokens_exceed_budget()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_tokens_within_budget()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_tool_calls_budget_blocks_authorize_tool()]] - code - gateway/tests/test_subagent_governance.py
-- [[.test_warning_at_80_percent()]] - code - gateway/tests/test_subagent_governance.py
-- [[Default governance instance in enforce mode.]] - rationale - gateway/tests/test_subagent_governance.py
-- [[Governance in monitor mode (log but don't block).]] - rationale - gateway/tests/test_subagent_governance.py
-- [[GovernanceConfig]] - code - gateway/security/subagent_governance.py
-- [[Per-subagent resource limits.]] - rationale - gateway/security/subagent_governance.py
-- [[ResourceBudget]] - code - gateway/security/subagent_governance.py
-- [[TestResourceBudgets]] - code - gateway/tests/test_subagent_governance.py
-- [[Top-level governance configuration.]] - rationale - gateway/security/subagent_governance.py
-- [[disabled_gov()]] - code - gateway/tests/test_subagent_governance.py
-- [[gov()]] - code - gateway/tests/test_subagent_governance.py
-- [[monitor_gov()]] - code - gateway/tests/test_subagent_governance.py
-- [[test_subagent_governance.py]] - code - gateway/tests/test_subagent_governance.py
+- [[.create_skill()]] - code - skills/openclaw/skill-creator/scripts/test_package_skill.py
+- [[.setUp()_1]] - code - skills/openclaw/skill-creator/scripts/test_package_skill.py
+- [[.tearDown()]] - code - skills/openclaw/skill-creator/scripts/test_package_skill.py
+- [[.test_allows_nested_regular_files()]] - code - skills/openclaw/skill-creator/scripts/test_package_skill.py
+- [[.test_packages_normal_files()]] - code - skills/openclaw/skill-creator/scripts/test_package_skill.py
+- [[.test_rejects_symlink_directory()]] - code - skills/openclaw/skill-creator/scripts/test_package_skill.py
+- [[.test_rejects_symlink_to_external_file()]] - code - skills/openclaw/skill-creator/scripts/test_package_skill.py
+- [[Basic validation of a skill]] - rationale - skills/openclaw/skill-creator/scripts/quick_validate.py
+- [[Package a skill folder into a .skill file.      Args         skill_path Path t]] - rationale - skills/openclaw/skill-creator/scripts/package_skill.py
+- [[TestCase]] - code
+- [[TestPackageSkillSecurity]] - code - skills/openclaw/skill-creator/scripts/test_package_skill.py
+- [[main()_31]] - code - skills/openclaw/skill-creator/scripts/package_skill.py
+- [[package_skill()]] - code - skills/openclaw/skill-creator/scripts/package_skill.py
+- [[package_skill.py]] - code - skills/openclaw/skill-creator/scripts/package_skill.py
+- [[quick_validate.py]] - code - skills/openclaw/skill-creator/scripts/quick_validate.py
+- [[test_package_skill.py]] - code - skills/openclaw/skill-creator/scripts/test_package_skill.py
+- [[validate_skill()]] - code - skills/openclaw/skill-creator/scripts/quick_validate.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,18 +36,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_Community 461]]
-- 6 edges to [[_COMMUNITY_Community 481]]
-- 5 edges to [[_COMMUNITY_Community 994]]
-- 5 edges to [[_COMMUNITY_Community 934]]
-- 4 edges to [[_COMMUNITY_Community 1135]]
-- 3 edges to [[_COMMUNITY_Community 1060]]
-- 3 edges to [[_COMMUNITY_Community 1067]]
-- 2 edges to [[_COMMUNITY_Community 78]]
+- 1 edge to [[_COMMUNITY_Community 806]]
+- 1 edge to [[_COMMUNITY_Community 543]]
+- 1 edge to [[_COMMUNITY_Community 401]]
 
 ## Top bridge nodes
-- [[test_subagent_governance.py]] - degree 19, connects to 8 communities
-- [[GovernanceConfig]] - degree 17, connects to 7 communities
-- [[ResourceBudget]] - degree 13, connects to 6 communities
-- [[TestResourceBudgets]] - degree 14, connects to 5 communities
-- [[gov()]] - degree 4, connects to 1 community
+- [[package_skill()]] - degree 9, connects to 1 community
+- [[validate_skill()]] - degree 4, connects to 1 community
+- [[package_skill.py]] - degree 3, connects to 1 community

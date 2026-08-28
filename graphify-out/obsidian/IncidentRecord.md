@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/cross_bot_trust_ledger.py"
 type: "code"
-community: "Community 1016"
+community: "Community 41"
 location: "L108"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_1016
+  - community/Community_41
 ---
 
 # IncidentRecord
@@ -29,4 +29,4 @@ tags:
 - [[cross_bot_trust_ledger.py]] - `contains` [EXTRACTED]
 - [[test_cross_bot_trust_ledger.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_1016
+#graphify/code #graphify/INFERRED #community/Community_41

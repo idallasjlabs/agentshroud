@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_data_exfil_volume_guard.py"
 type: "rationale"
-community: "Community 176"
+community: "Community 181"
 location: "L279"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_176
+  - community/Community_181
 ---
 
 # If the guard raises, non-owner outbound is blocked (fail-closed).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_pipeline_fail_closed_for_non_owner_on_error()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_176
+#graphify/rationale #graphify/EXTRACTED #community/Community_181

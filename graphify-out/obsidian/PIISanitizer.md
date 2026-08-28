@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "code"
-community: "Community 870"
+community: "PII Sanitizer & E2E Tests"
 location: "L25"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_870
+  - community/PII_Sanitizer__E2E_Tests
 ---
 
 # PIISanitizer
@@ -32,7 +32,7 @@ tags:
 - [[.test_single_message_pipeline_under_100ms()]] - `calls` [EXTRACTED]
 - [[Any_63]] - `uses` [INFERRED]
 - [[AppState]] - `uses` [INFERRED]
-- [[FastAPI_1]] - `uses` [INFERRED]
+- [[FastAPI_2]] - `uses` [INFERRED]
 - [[GatewayConfig_2]] - `uses` [INFERRED]
 - [[LLMProxy]] - `shares_data_with` [EXTRACTED]
 - [[LogRecord]] - `uses` [INFERRED]
@@ -170,4 +170,4 @@ tags:
 - [[test_ws_e_rt2_inbound_encoding.py]] - `imports` [EXTRACTED]
 - [[tool_result_sanitizer.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_870
+#graphify/code #graphify/INFERRED #community/PII_Sanitizer__E2E_Tests

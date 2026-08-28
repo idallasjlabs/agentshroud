@@ -1,17 +1,17 @@
 ---
 source_file: "docker/docker-compose.yml"
 type: "rationale"
-community: "AGENTS.md"
-location: "lines 644-659"
+community: "Community 798"
+location: "networks"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AGENTSmd
+  - community/Community_798
 ---
 
 # Three-Tier Network Segmentation (IEC 62443 FR5)
 
 ## Connections
-- [[Gateway Service]] - `rationale_for` [EXTRACTED]
+- [[AgentShroud Production Docker Compose Stack]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AGENTSmd
+#graphify/rationale #graphify/EXTRACTED #community/Community_798

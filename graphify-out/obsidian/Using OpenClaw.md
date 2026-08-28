@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/OPENCLAW_SETUP.md"
 type: "document"
-community: "Community 214"
+community: "Community 218"
 location: "L189"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_214
+  - community/Community_218
 ---
 
 # Using OpenClaw
@@ -17,4 +17,4 @@ tags:
 - [[Through Control UI (Port 18789)]] - `contains` [EXTRACTED]
 - [[Via CLI]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_214
+#graphify/document #graphify/EXTRACTED #community/Community_218

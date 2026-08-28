@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/manifest.json"
 type: "code"
-community: "Community 969"
+community: "Community 968"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_969
+  - community/Community_968
 ---
 
 # manifest.json
@@ -17,4 +17,4 @@ tags:
 - [[manifest.json_1]] - `semantically_similar_to` [INFERRED]
 - [[version_5]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_969
+#graphify/code #graphify/EXTRACTED #community/Community_968

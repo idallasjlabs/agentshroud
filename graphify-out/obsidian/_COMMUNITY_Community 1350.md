@@ -1,17 +1,19 @@
 ---
 type: community
+cohesion: 0.50
 members: 4
 ---
 
 # Community 1350
 
+**Cohesion:** 0.50 - moderately connected
 **Members:** 4 nodes
 
 ## Members
-- [[.test_five_openscap_all_passing()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_four_with_openscap_running_but_failures()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_three_baseline_no_openscap()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[TestScoreContainerHardening_1]] - code - gateway/tests/test_scorecard_scoring.py
+- [[.test_mcp_proxy_endpoint()]] - code - gateway/tests/test_main_endpoints.py
+- [[Test mcpproxy endpoint.]] - rationale - gateway/tests/test_main_endpoints.py
+- [[Test MCP proxy endpoint basic functionality.]] - rationale - gateway/tests/test_main_endpoints.py
+- [[TestMCPProxyEndpoint]] - code - gateway/tests/test_main_endpoints.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,7 +23,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 653]]
+- 1 edge to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
+- 1 edge to [[_COMMUNITY_Ingest API & Approval Routes]]
+- 1 edge to [[_COMMUNITY_Community 24]]
 
 ## Top bridge nodes
-- [[TestScoreContainerHardening_1]] - degree 4, connects to 1 community
+- [[TestMCPProxyEndpoint]] - degree 4, connects to 2 communities
+- [[.test_mcp_proxy_endpoint()]] - degree 3, connects to 1 community

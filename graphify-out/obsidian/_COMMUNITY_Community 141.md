@@ -1,57 +1,59 @@
 ---
 type: community
+cohesion: 0.05
 members: 44
 ---
 
 # Community 141
 
+**Cohesion:** 0.05 - loosely connected
 **Members:** 44 nodes
 
 ## Members
-- [[.is_blocked()]] - code - gateway/proxy/dns_blocklist.py
-- [[.is_blocked()_2]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.setup_method()_3]] - code - gateway/tests/test_dns_blocklist.py
-- [[.stats()]] - code - gateway/proxy/dns_blocklist.py
-- [[.stop()]] - code - gateway/proxy/dns_blocklist.py
-- [[.test_allowlist_overrides_blocklist()]] - code - gateway/tests/test_dns_blocklist.py
-- [[.test_case_normalization()]] - code - gateway/tests/test_dns_blocklist.py
-- [[.test_custom_denylist()]] - code - gateway/tests/test_dns_blocklist.py
-- [[.test_download_failure_falls_back_to_cache()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_download_failure_no_cache_returns_none()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_download_success_caches_to_disk()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_exact_match()]] - code - gateway/tests/test_dns_blocklist.py
-- [[.test_hosts_line_without_domain_returns_none()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_not_blocked()]] - code - gateway/tests/test_dns_blocklist.py
-- [[.test_parent_allowlist_overrides_grandparent_block()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_parent_domain_wildcard()]] - code - gateway/tests/test_dns_blocklist.py
-- [[.test_periodic_loop_survives_errors_until_cancelled()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_start_creates_task()]] - code - gateway/tests/test_dns_blocklist.py
-- [[.test_stats_attributes()]] - code - gateway/tests/test_dns_blocklist.py
-- [[.test_stats_returns_counts()]] - code - gateway/tests/test_dns_blocklist.py
-- [[.test_stop_cancels_task()]] - code - gateway/tests/test_dns_blocklist.py
-- [[.test_system_allowlist()]] - code - gateway/tests/test_dns_blocklist.py
-- [[.test_trailing_dot_normalization()]] - code - gateway/tests/test_dns_blocklist.py
-- [[.test_update_rebuilds_blocked_domains()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_wildcard_denylist_blocks_subdomains()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[Blocklist stub that blocks nothing.]] - rationale - gateway/tests/test_dns_canvas_coverage.py
-- [[Check if a domain should be blocked.          Checks the domain and all parent d]] - rationale - gateway/proxy/dns_blocklist.py
-- [[DNSBlocklist]] - code - gateway/proxy/dns_blocklist.py
-- [[Domain blocklist with Pi-hole-compatible list parsing.]] - rationale - gateway/proxy/dns_blocklist.py
-- [[Lifecycle start_periodic_updates()stop() task management.]] - rationale - gateway/tests/test_dns_blocklist.py
-- [[Return blocklist statistics.]] - rationale - gateway/proxy/dns_blocklist.py
-- [[Stop periodic updates.]] - rationale - gateway/proxy/dns_blocklist.py
-- [[Test DNS Blocklist Suite]] - code - gateway/tests/test_dns_blocklist.py
-- [[TestBlocklistDownload]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[TestBlocklistUpdate]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[TestBlocklistWildcardsAndAllowlist]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[TestIsBlocked]] - code - gateway/tests/test_dns_blocklist.py
-- [[TestLifecycle]] - code - gateway/tests/test_dns_blocklist.py
-- [[TestStats]] - code - gateway/tests/test_dns_blocklist.py
-- [[_BlockNone]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[is_blocked() — exact match, parent-domain wildcard, allowlist, denylist, case.]] - rationale - gateway/tests/test_dns_blocklist.py
-- [[stats() returns the expected keys.]] - rationale - gateway/tests/test_dns_blocklist.py
-- [[stats() — verify blockedallowlistdenylist counts.]] - rationale - gateway/tests/test_dns_blocklist.py
-- [[test_dns_blocklist.py]] - code - gateway/tests/test_dns_blocklist.py
+- [[.test_apply_persisted_overrides_skips_user_overrides_key()]] - code - gateway/tests/test_group_config.py
+- [[.test_empty_prefix_string_not_returned()]] - code - gateway/tests/test_group_config.py
+- [[.test_empty_teams_parses()]] - code - gateway/tests/test_group_config.py
+- [[.test_get_all_member_ids()]] - code - gateway/tests/test_group_config.py
+- [[.test_get_user_collab_mode_falls_back_to_group()]] - code - gateway/tests/test_group_config.py
+- [[.test_get_user_groups_member()]] - code - gateway/tests/test_group_config.py
+- [[.test_get_user_groups_multi_group()]] - code - gateway/tests/test_group_config.py
+- [[.test_get_user_groups_non_member()]] - code - gateway/tests/test_group_config.py
+- [[.test_get_user_projects_member()]] - code - gateway/tests/test_group_config.py
+- [[.test_get_user_projects_non_member()]] - code - gateway/tests/test_group_config.py
+- [[.test_group_config_safe_response_prefix_field()]] - code - gateway/tests/test_group_config.py
+- [[.test_group_config_safe_response_prefix_set()]] - code - gateway/tests/test_group_config.py
+- [[.test_is_group_admin_correct()]] - code - gateway/tests/test_group_config.py
+- [[.test_is_group_admin_unknown_group()]] - code - gateway/tests/test_group_config.py
+- [[.test_is_group_admin_wrong_user()]] - code - gateway/tests/test_group_config.py
+- [[.test_local_only_mode()]] - code - gateway/tests/test_group_config.py
+- [[.test_no_duplicate_projects()]] - code - gateway/tests/test_group_config.py
+- [[.test_no_prefix_by_default()]] - code - gateway/tests/test_group_config.py
+- [[.test_parses_groups()]] - code - gateway/tests/test_group_config.py
+- [[.test_parses_projects()]] - code - gateway/tests/test_group_config.py
+- [[.test_persist_user_collab_mode()]] - code - gateway/tests/test_group_config.py
+- [[.test_persist_user_collab_mode_update()]] - code - gateway/tests/test_group_config.py
+- [[.test_prefix_not_returned_for_non_member()]] - code - gateway/tests/test_group_config.py
+- [[.test_prefix_returned_for_member()]] - code - gateway/tests/test_group_config.py
+- [[.test_project_scoped_mode()]] - code - gateway/tests/test_group_config.py
+- [[.test_unknown_user_returns_local_only()]] - code - gateway/tests/test_group_config.py
+- [[.test_unknown_user_returns_none()]] - code - gateway/tests/test_group_config.py
+- [[.test_user_override_takes_precedence_over_group()]] - code - gateway/tests/test_group_config.py
+- [[Calling persist_user_collab_mode twice updates the stored value.]] - rationale - gateway/tests/test_group_config.py
+- [[Per-user collab_mode override persists to group_overrides.json and takes     pr]] - rationale - gateway/tests/test_group_config.py
+- [[Per-user override beats group-derived collab_mode.]] - rationale - gateway/tests/test_group_config.py
+- [[TeamsConfig_1]] - code - gateway/tests/test_group_config.py
+- [[TestAdminChecks]] - code - gateway/tests/test_group_config.py
+- [[TestCollabMode]] - code - gateway/tests/test_group_config.py
+- [[TestGroupSafeResponsePrefix]] - code - gateway/tests/test_group_config.py
+- [[TestMembershipQueries]] - code - gateway/tests/test_group_config.py
+- [[TestProjectQueries]] - code - gateway/tests/test_group_config.py
+- [[TestTeamsConfigParsing]] - code - gateway/tests/test_group_config.py
+- [[TestUserCollabModeOverride]] - code - gateway/tests/test_group_config.py
+- [[Without a per-user override, group-derived mode is returned.]] - rationale - gateway/tests/test_group_config.py
+- [[__user_overrides__ key must not be treated as a group_id.]] - rationale - gateway/tests/test_group_config.py
+- [[persist_user_collab_mode writes under __user_overrides__ key.]] - rationale - gateway/tests/test_group_config.py
+- [[teams()_1]] - code - gateway/tests/test_group_config.py
+- [[test_group_config.py]] - code - gateway/tests/test_group_config.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -61,22 +63,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_Community 560]]
-- 9 edges to [[_COMMUNITY_Community 418]]
-- 7 edges to [[_COMMUNITY_Community 670]]
-- 5 edges to [[_COMMUNITY_Community 278]]
-- 4 edges to [[_COMMUNITY_Community 109]]
-- 3 edges to [[_COMMUNITY_Community 989]]
-- 3 edges to [[_COMMUNITY_Community 691]]
-- 3 edges to [[_COMMUNITY_Community 651]]
-- 2 edges to [[_COMMUNITY_Community 6]]
-- 1 edge to [[_COMMUNITY_Community 734]]
-- 1 edge to [[_COMMUNITY_Community 978]]
-- 1 edge to [[_COMMUNITY_Community 720]]
+- 14 edges to [[_COMMUNITY_Community 49]]
+- 9 edges to [[_COMMUNITY_Community 27]]
 
 ## Top bridge nodes
-- [[DNSBlocklist]] - degree 60, connects to 11 communities
-- [[_BlockNone]] - degree 6, connects to 3 communities
-- [[test_dns_blocklist.py]] - degree 6, connects to 2 communities
-- [[TestBlocklistWildcardsAndAllowlist]] - degree 6, connects to 2 communities
-- [[TestBlocklistDownload]] - degree 6, connects to 2 communities
+- [[test_group_config.py]] - degree 11, connects to 2 communities
+- [[TestGroupSafeResponsePrefix]] - degree 10, connects to 2 communities
+- [[TestUserCollabModeOverride]] - degree 9, connects to 2 communities
+- [[TeamsConfig_1]] - degree 7, connects to 2 communities
+- [[TestMembershipQueries]] - degree 7, connects to 2 communities

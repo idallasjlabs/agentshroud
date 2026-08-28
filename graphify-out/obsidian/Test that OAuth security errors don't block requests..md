@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy_security.py"
 type: "rationale"
-community: "Community 119"
+community: "Community 121"
 location: "L284"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_119
+  - community/Community_121
 ---
 
 # Test that OAuth security errors don't block requests.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_oauth_security_error_handling()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_119
+#graphify/rationale #graphify/EXTRACTED #community/Community_121

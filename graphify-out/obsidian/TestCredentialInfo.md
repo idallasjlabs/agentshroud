@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "Community 756"
+community: "Community 533"
 location: "L97"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_756
+  - community/Community_533
 ---
 
 # TestCredentialInfo
@@ -25,4 +25,4 @@ tags:
 - [[Test credential information tracking.]] - `rationale_for` [EXTRACTED]
 - [[test_key_rotation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_756
+#graphify/code #graphify/INFERRED #community/Community_533

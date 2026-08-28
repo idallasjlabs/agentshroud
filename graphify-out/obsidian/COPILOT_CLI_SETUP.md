@@ -1,12 +1,12 @@
 ---
 source_file: ".github/COPILOT_CLI_SETUP.md"
 type: "document"
-community: "Community 435"
+community: "Community 441"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_435
+  - community/Community_441
 ---
 
 # COPILOT_CLI_SETUP.md
@@ -15,4 +15,4 @@ tags:
 - [[GitHub Copilot CLI Setup Guide]] - `contains` [EXTRACTED]
 - [[Stale Repository-Context Description in COPILOT_CLI_SETUP]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_435
+#graphify/document #graphify/EXTRACTED #community/Community_441

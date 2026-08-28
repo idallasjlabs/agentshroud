@@ -1,17 +1,19 @@
 ---
 type: community
+cohesion: 0.50
 members: 4
 ---
 
 # Community 1309
 
+**Cohesion:** 0.50 - moderately connected
 **Members:** 4 nodes
 
 ## Members
-- [[bsp_iot_button_create()_1]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/bsp/esp-bsp.h
-- [[button_handle_t_2]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/bsp/esp-bsp.h
-- [[esp-bsp.h_1]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/bsp/esp-bsp.h
-- [[esp_err_t_6]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/bsp/esp-bsp.h
+- [[i-atlas SKILL.md (Curriculum Architect, referenced dependency)]] - document - docker/config/hermes/skills/i-atlas/SKILL.md
+- [[i-socrates SKILL.md (Dialogue Architect, referenced dependency)]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
+- [[i-vulcan README]] - document - docker/config/hermes/skills/i-vulcan/README.md
+- [[i-vulcan SKILL.md (Subject Matter Auditor, podcast QA gate)]] - document - docker/config/hermes/skills/i-vulcan/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_resource_guard.py"
 type: "code"
-community: "Community 7"
+community: "Community 351"
 location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_7
+  - community/Community_351
 ---
 
 # TestResourceGuard
@@ -29,4 +29,4 @@ tags:
 - [[ResourceLimits]] - `uses` [INFERRED]
 - [[test_resource_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_7
+#graphify/code #graphify/EXTRACTED #community/Community_351

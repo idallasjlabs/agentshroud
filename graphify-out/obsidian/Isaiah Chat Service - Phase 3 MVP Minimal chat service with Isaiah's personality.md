@@ -1,12 +1,12 @@
 ---
 source_file: "chatbot/main.py"
 type: "rationale"
-community: "Community 83"
+community: "Community 86"
 location: "L1"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_83
+  - community/Community_86
 ---
 
 # Isaiah Chat Service - Phase 3 MVP Minimal chat service with Isaiah's personality
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[main.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_83
+#graphify/rationale #graphify/EXTRACTED #community/Community_86

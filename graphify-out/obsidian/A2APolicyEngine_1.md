@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "Community 1001"
+community: "Community 81"
 location: "L382"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1001
+  - community/Community_81
 ---
 
 # A2APolicyEngine
@@ -36,8 +36,8 @@ tags:
 - [[Hermes A2A Plugin Upstream Gaps (83701, 8053480779, 78298, 77872, 81042)]] - `implements` [EXTRACTED]
 - [[HermesA2AForwarder]] - `uses` [INFERRED]
 - [[ParsedA2ARequest]] - `uses` [INFERRED]
-- [[Request_7]] - `uses` [INFERRED]
-- [[Response]] - `uses` [INFERRED]
+- [[Request_8]] - `uses` [INFERRED]
+- [[Response_1]] - `uses` [INFERRED]
 - [[SubagentMonitor]] - `semantically_similar_to` [INFERRED]
 - [[TestDefaultA2APolicyIsFailClosed]] - `uses` [INFERRED]
 - [[TrustManager_2]] - `uses` [INFERRED]
@@ -71,4 +71,4 @@ tags:
 - [[test_task_ownership_denial_is_not_bypassable_by_high_risk_approval_path()]] - `calls` [EXTRACTED]
 - [[test_task_ownership_violation_records_a2a_violation_type()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1001
+#graphify/code #graphify/EXTRACTED #community/Community_81

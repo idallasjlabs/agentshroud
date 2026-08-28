@@ -1,26 +1,28 @@
 ---
 type: community
+cohesion: 0.15
 members: 13
 ---
 
 # Community 721
 
+**Cohesion:** 0.15 - loosely connected
 **Members:** 13 nodes
 
 ## Members
-- [[Configuration  Environment Variables_3]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
-- [[Function Details_9]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
-- [[Key Classes  Functions_12]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
-- [[MCPProxyConfig Fields]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
-- [[MCPProxyConfig.from_dict(data)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
-- [[MCPServerConfig Fields]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
-- [[PermissionLevel Ordering]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
-- [[PermissionLevel comparison operators]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
-- [[Purpose_130]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
-- [[Related_15]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
-- [[Responsibilities_14]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
-- [[mcp_config.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
-- [[mcp_config.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
+- [[AgentShroud Red Team Assessment — Live Results]] - document - docs/planning/redteam/live-assessment-results.md
+- [[CIS Docker Benchmark 1212 (100%)]] - document - docs/planning/redteam/live-assessment-results.md
+- [[Container Security Profile 1212 (100%)]] - document - docs/planning/redteam/live-assessment-results.md
+- [[Deep Integration Test 3637 (97%)]] - document - docs/planning/redteam/live-assessment-results.md
+- [[Expected v0.7.0 Results]] - document - docs/planning/redteam/live-assessment-results.md
+- [[Identified Gaps (Steve Hay's Assessment)]] - document - docs/planning/redteam/live-assessment-results.md
+- [[Module Status 3333 Active]] - document - docs/planning/redteam/live-assessment-results.md
+- [[Sprint Status]] - document - docs/planning/redteam/live-assessment-results.md
+- [[Test Environment]] - document - docs/planning/redteam/live-assessment-results.md
+- [[Unit Tests 1953 passed, 0 failures]] - document - docs/planning/redteam/live-assessment-results.md
+- [[live-assessment-results]] - document - docs/planning/redteam/live-assessment-results.md
+- [[v0.6.0 Baseline Results]] - document - docs/planning/redteam/live-assessment-results.md
+- [[v0.7.0 Remediation (In Progress)]] - document - docs/planning/redteam/live-assessment-results.md
 
 ## Live Query (requires Dataview plugin)
 

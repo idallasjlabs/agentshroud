@@ -1,14 +1,16 @@
 ---
 type: community
+cohesion: 1.00
 members: 1
 ---
 
 # Community 1763
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[MCPPolicyEngine.enforce()]] - code - gateway/security/mcp_policy.py
+- [[Pre-Change Analysis (PCA)]] - document - .agents/skills/i-pca/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,19 +1,21 @@
 ---
 type: community
+cohesion: 0.33
 members: 6
 ---
 
 # Community 1092
 
+**Cohesion:** 0.33 - loosely connected
 **Members:** 6 nodes
 
 ## Members
-- [[2.1 Mark Type]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[2.2 The Mark]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[2.3 Mark Literal Element]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[2.4 Translation  Transliteration]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[2.5 Mark Description (for standard character mark)]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[SECTION 2 MARK INFORMATION]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[AgentShroud Sequence Diagrams (doc)]] - document - docs/flows/sequence-diagrams.md
+- [[Diagram 15 Sequence — Telegram]] - image - docs/diagrams/images/diagram-15-sequence-telegram.svg
+- [[Kill Switch Activation Flow (SOFT_KILL, HARD_KILL, PANIC)]] - concept - docs/flows/sequence-diagrams.md
+- [[Normal Message Flow (User - Gateway - Sanitizer - Audit - OpenClaw - Audit - User)]] - concept - docs/flows/sequence-diagrams.md
+- [[SSH Command Flow (injection check, approval queue, executor, audit)]] - concept - docs/flows/sequence-diagrams.md
+- [[Web Fetch Flow (URL analysis, SSRF protection, content scanning)]] - concept - docs/flows/sequence-diagrams.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +23,3 @@ members: 6
 TABLE source_file, type FROM #community/Community_1092
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 668]]
-
-## Top bridge nodes
-- [[SECTION 2 MARK INFORMATION]] - degree 6, connects to 1 community

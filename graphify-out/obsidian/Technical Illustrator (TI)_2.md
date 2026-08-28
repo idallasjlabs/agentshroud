@@ -1,20 +1,21 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ti/README.md"
+source_file: ".agents/skills/i-ti/SKILL.md"
 type: "document"
-community: "Community 1248"
-location: "L1"
+community: "Community 1034"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1248
+  - community/Community_1034
 ---
 
 # Technical Illustrator (TI)
 
 ## Connections
-- [[Purpose_108]] - `contains` [EXTRACTED]
-- [[README_113]] - `contains` [EXTRACTED]
-- [[Related Skills_117]] - `contains` [EXTRACTED]
-- [[Usage_118]] - `contains` [EXTRACTED]
+- [[Branding Specialist Skill (i-bs, external)]] - `references` [EXTRACTED]
+- [[Technical Illustrator README]] - `references` [EXTRACTED]
+- [[Technical Writer (TW)_3]] - `references` [EXTRACTED]
+- [[Test-Driven Development (TDD) Coach]] - `conceptually_related_to` [INFERRED]
+- [[UI Expert (UI)]] - `references` [EXTRACTED]
+- [[UX Skill (i-ux, external)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1248
+#graphify/document #graphify/EXTRACTED #community/Community_1034

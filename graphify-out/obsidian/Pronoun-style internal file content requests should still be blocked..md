@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Community 2"
+community: "Telegram Proxy Inbound"
 location: "L2480"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2
+  - community/Telegram_Proxy_Inbound
 ---
 
 # Pronoun-style internal file content requests should still be blocked.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_collaborator_internal_file_content_request_is_blocked_and_quarantined()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Inbound

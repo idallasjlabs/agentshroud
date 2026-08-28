@@ -1,12 +1,12 @@
 ---
 source_file: "docs/governance/GSD_CADENCE.md"
 type: "document"
-community: "Community 440"
+community: "Community 448"
 location: "L30"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_440
+  - community/Community_448
 ---
 
 # Rule 2 — Approval Tag for High-Severity Changes
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GSD Cadence — Get Shit Done Governance]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_440
+#graphify/document #graphify/EXTRACTED #community/Community_448

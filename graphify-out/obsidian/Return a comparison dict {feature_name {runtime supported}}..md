@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/security.py"
 type: "rationale"
-community: "Community 528"
+community: "Community 37"
 location: "L141"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_528
+  - community/Community_37
 ---
 
 # Return a comparison dict: {feature_name: {runtime: supported}}.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_security_comparison()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_528
+#graphify/rationale #graphify/EXTRACTED #community/Community_37

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_instruction_envelope.py"
 type: "rationale"
-community: "Community 22"
+community: "Key Vault & Audit Chain"
 location: "L46"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_22
+  - community/Key_Vault__Audit_Chain
 ---
 
 # wrap_tool_result() sets issuer='tool:<name>' and passes verification.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_envelope_wraps_tool_result()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_22
+#graphify/rationale #graphify/EXTRACTED #community/Key_Vault__Audit_Chain

@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "code"
-community: "Community 103"
-location: "L722"
+community: "Community 107"
+location: "L813"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_103
+  - community/Community_107
 ---
 
 # _call_agent_stream()
@@ -33,4 +33,4 @@ tags:
 - [[test_ws_volume_command_intercepted()]] - `conceptually_related_to` [INFERRED]
 - [[voice_endpoint()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_103
+#graphify/code #graphify/EXTRACTED #community/Community_107

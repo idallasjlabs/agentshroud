@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "Community 15"
+community: "RBAC & SOC Realtime"
 location: "L414"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_15
+  - community/RBAC__SOC_Realtime
 ---
 
 # TestRBACErrorHandling
@@ -27,4 +27,4 @@ tags:
 - [[ToolTier_1]] - `uses` [INFERRED]
 - [[test_rbac.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_15
+#graphify/code #graphify/INFERRED #community/RBAC__SOC_Realtime

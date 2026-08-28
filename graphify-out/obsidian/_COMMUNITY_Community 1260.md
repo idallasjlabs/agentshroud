@@ -1,17 +1,20 @@
 ---
 type: community
-members: 4
+cohesion: 0.40
+members: 5
 ---
 
 # Community 1260
 
-**Members:** 4 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[Session Prompt Generator]] - document - .agents/skills/i-session-prompt/SKILL.md
-- [[System Audit Documentation (SAD)]] - document - .agents/skills/i-sad/SKILL.md
-- [[System Audit Vault (SAV)]] - document - .agents/skills/i-sav/SKILL.md
-- [[System Audit Vault README]] - document - .agents/skills/i-sav/README.md
+- [[Container Won't Start_1]] - document - docs/operations/deployment-procedure.md
+- [[Database Connection Issues]] - document - docs/operations/deployment-procedure.md
+- [[Port Already in Use]] - document - docs/operations/deployment-procedure.md
+- [[SSL Certificate Issues]] - document - docs/operations/deployment-procedure.md
+- [[Troubleshooting Common Issues]] - document - docs/operations/deployment-procedure.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,3 +22,9 @@ members: 4
 TABLE source_file, type FROM #community/Community_1260
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 128]]
+
+## Top bridge nodes
+- [[Troubleshooting Common Issues]] - degree 5, connects to 1 community

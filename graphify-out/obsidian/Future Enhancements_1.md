@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
 type: "document"
-community: "Community 1114"
+community: "Community 1111"
 location: "L338"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1114
+  - community/Community_1111
 ---
 
 # Future Enhancements
@@ -19,4 +19,4 @@ tags:
 - [[Priority 4 Multi-Page Support]] - `contains` [EXTRACTED]
 - [[Priority 5 Direct Gmail Configuration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1114
+#graphify/document #graphify/EXTRACTED #community/Community_1111

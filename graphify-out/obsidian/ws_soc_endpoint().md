@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "code"
-community: "Community 127"
+community: "Community 69"
 location: "L172"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_127
+  - community/Community_69
 ---
 
 # ws_soc_endpoint()
@@ -23,7 +23,7 @@ tags:
 - [[RBACConfig_1]] - `calls` [EXTRACTED]
 - [[SOCWebSocketHandler]] - `calls` [EXTRACTED]
 - [[TestWSSOCEndpoint]] - `calls` [EXTRACTED]
-- [[WebSocket_6]] - `references` [EXTRACTED]
+- [[WebSocket_7]] - `references` [EXTRACTED]
 - [[_get_config_token()]] - `calls` [EXTRACTED]
 - [[redeem_ws_token()]] - `calls` [EXTRACTED]
 - [[router.py_1]] - `imports` [EXTRACTED]
@@ -31,4 +31,4 @@ tags:
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 - [[websocket.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_127
+#graphify/code #graphify/EXTRACTED #community/Community_69

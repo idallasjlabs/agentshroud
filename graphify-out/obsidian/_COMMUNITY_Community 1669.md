@@ -1,14 +1,16 @@
 ---
 type: community
+cohesion: 1.00
 members: 1
 ---
 
 # Community 1669
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[Daedalus — Concept Illustrator Skill]] - document - .agents/skills/i-daedalus/SKILL.md
+- [[App Icon 256x256 (AgentShroud logo mark)]] - image - branding/icons/app/icon-256x256.png
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/devices.sh"
 type: "code"
-community: "Community 1334"
+community: "Community 1339"
 location: "L1"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_1334
+  - community/Community_1339
 ---
 
 # devices.sh
@@ -15,4 +15,4 @@ tags:
 - [[devices.sh script]] - `contains` [EXTRACTED]
 - [[telegram.sh]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_1334
+#graphify/code #graphify/INFERRED #community/Community_1339

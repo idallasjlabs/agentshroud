@@ -1,21 +1,23 @@
 ---
 type: community
+cohesion: 0.25
 members: 8
 ---
 
 # Community 958
 
+**Cohesion:** 0.25 - loosely connected
 **Members:** 8 nodes
 
 ## Members
-- [[AgentShroud Hermes — System Identity_2]] - document - docker/config/openclaw/agents/hermes-soul.md
-- [[Capabilities_2]] - document - docker/config/openclaw/agents/hermes-soul.md
-- [[Core Behaviors_2]] - document - docker/config/openclaw/agents/hermes-soul.md
-- [[Owner_2]] - document - docker/config/openclaw/agents/hermes-soul.md
-- [[Remote Hosts (SSH via gateway)_2]] - document - docker/config/openclaw/agents/hermes-soul.md
-- [[Trademark Notice_2]] - document - docker/config/openclaw/agents/hermes-soul.md
-- [[Your Role_2]] - document - docker/config/openclaw/agents/hermes-soul.md
-- [[hermes-soul_1]] - document - docker/config/openclaw/agents/hermes-soul.md
+- [[Step 6b - Wiki (only if --wiki flag)_2]] - document - docker/config/openclaw/skills/graphify/references/exports.md
+- [[Step 7 - Neo4j export (only if --neo4j or --neo4j-push flag)_2]] - document - docker/config/openclaw/skills/graphify/references/exports.md
+- [[Step 7b - SVG export (only if --svg flag)_2]] - document - docker/config/openclaw/skills/graphify/references/exports.md
+- [[Step 7c - GraphML export (only if --graphml flag)_2]] - document - docker/config/openclaw/skills/graphify/references/exports.md
+- [[Step 7d - MCP server (only if --mcp flag)_2]] - document - docker/config/openclaw/skills/graphify/references/exports.md
+- [[Step 8 - Token reduction benchmark (only if total_words  5000)_2]] - document - docker/config/openclaw/skills/graphify/references/exports.md
+- [[exports_2]] - document - docker/config/openclaw/skills/graphify/references/exports.md
+- [[graphify reference extra exports and benchmark_2]] - document - docker/config/openclaw/skills/graphify/references/exports.md
 
 ## Live Query (requires Dataview plugin)
 

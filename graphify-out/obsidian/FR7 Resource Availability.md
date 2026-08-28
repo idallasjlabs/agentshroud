@@ -1,11 +1,11 @@
 ---
 source_file: "docs/compliance/iec-62443-matrix.md"
 type: "concept"
-community: "Community 723"
+community: "Community 176"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_723
+  - community/Community_176
 ---
 
 # FR7: Resource Availability
@@ -15,4 +15,4 @@ tags:
 - [[health_report.py]] - `references` [EXTRACTED]
 - [[iec-62443-matrix]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_723
+#graphify/concept #graphify/EXTRACTED #community/Community_176

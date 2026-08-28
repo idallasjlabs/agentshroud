@@ -1,31 +1,34 @@
 ---
 type: community
-members: 18
+cohesion: 0.11
+members: 19
 ---
 
 # Community 472
 
-**Members:** 18 nodes
+**Cohesion:** 0.11 - loosely connected
+**Members:** 19 nodes
 
 ## Members
-- [[._send_collaborator_pending_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[._send_local_help_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[._send_local_model_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[._send_local_notice_with_fallback()]] - code - gateway/proxy/telegram_proxy.py
-- [[._send_local_start_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[._send_local_whoami_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[._send_owner_activity_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[._send_owner_collabs_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[._send_owner_pending_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[Send deterministic help command list without model invocation.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send deterministic start notice without model invocation.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send deterministic identityrole notice to simplify approval workflows.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send deterministic model status without model invocation.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send deterministic owner pending-approval snapshot.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send deterministic pending-approval notice to unknownrevoked users.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send local command response with deterministic fallback text.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send owner a summary of recent collaborator activity (last hour).]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send owner-friendly collaborator roster with known labels.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[AgentShroud Development Team — Agile Structure]] - document - docs/TEAM.md
+- [[Collaborators (Advisory — Read-Only)]] - document - docs/TEAM.md
+- [[Communication & Tooling]] - document - docs/TEAM.md
+- [[Container Architecture]] - document - docs/TEAM.md
+- [[Data Engineers  Analysts]] - document - docs/TEAM.md
+- [[DevOps  Platform Engineer — CICD, Infrastructure, Reliability]] - document - docs/TEAM.md
+- [[Development Environment]] - document - docs/TEAM.md
+- [[Development Team]] - document - docs/TEAM.md
+- [[Development Workflow]] - document - docs/TEAM.md
+- [[Engineers (Backend, Frontend, Full-Stack)]] - document - docs/TEAM.md
+- [[Hardware]] - document - docs/TEAM.md
+- [[How It Works]] - document - docs/TEAM.md
+- [[Key Principles]] - document - docs/TEAM.md
+- [[Product Owner]] - document - docs/TEAM.md
+- [[QA  Test Engineers — Embedded, Not a Separate Gate]] - document - docs/TEAM.md
+- [[Scrum Master  Agile Coach]] - document - docs/TEAM.md
+- [[Sprint Cadence]] - document - docs/TEAM.md
+- [[TEAM]] - document - docs/TEAM.md
+- [[UX  Design — One Sprint Ahead]] - document - docs/TEAM.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,14 +36,3 @@ members: 18
 TABLE source_file, type FROM #community/Community_472
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 14 edges to [[_COMMUNITY_Community 4]]
-- 2 edges to [[_COMMUNITY_Community 260]]
-
-## Top bridge nodes
-- [[._send_local_notice_with_fallback()]] - degree 13, connects to 2 communities
-- [[._send_local_model_notice()]] - degree 4, connects to 1 community
-- [[._send_owner_pending_notice()]] - degree 4, connects to 1 community
-- [[._send_owner_collabs_notice()]] - degree 4, connects to 1 community
-- [[._send_collaborator_pending_notice()]] - degree 4, connects to 1 community

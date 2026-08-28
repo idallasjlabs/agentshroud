@@ -1,17 +1,17 @@
 ---
 type: community
-members: 4
+cohesion: 1.00
+members: 2
 ---
 
 # Community 1551
 
-**Members:** 4 nodes
+**Cohesion:** 1.00 - tightly connected
+**Members:** 2 nodes
 
 ## Members
-- [[.test_owner_revoke_command_persists_pause_to_disk()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_owner_revoke_command_requires_target_user_id()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[revoke must persist through pause_collaborator() so the pause survives]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Owner revoke without target should return usage guidance.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_code_block_filtering()]] - code - gateway/tests/test_outbound_filter.py
+- [[Test that function_calls XML blocks are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +21,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_Community 2]]
-- 2 edges to [[_COMMUNITY_Community 32]]
+- 1 edge to [[_COMMUNITY_Community 996]]
 
 ## Top bridge nodes
-- [[.test_owner_revoke_command_requires_target_user_id()]] - degree 8, connects to 2 communities
-- [[.test_owner_revoke_command_persists_pause_to_disk()]] - degree 7, connects to 2 communities
+- [[.test_code_block_filtering()]] - degree 2, connects to 1 community

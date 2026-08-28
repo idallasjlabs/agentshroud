@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-11-trust-boundary.png"
 type: "image"
-community: "Community 280"
+community: "Community 554"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Community_280
+  - community/Community_554
 ---
 
 # Trust Zone 2 — Bot (Supervised Agent: no direct credential/internet access)
@@ -17,4 +17,4 @@ tags:
 - [[HTTP CONNECT egress proxy (gateway8181; domain allowlist via agentshroud.yaml proxy.allowed_domains; blocks RFC1918 + unlisted domains; logs connections)]] - `semantically_similar_to` [INFERRED]
 - [[Trust Boundary Diagram]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Community_280
+#graphify/image #graphify/EXTRACTED #community/Community_554

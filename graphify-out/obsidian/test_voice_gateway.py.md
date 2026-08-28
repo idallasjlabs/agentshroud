@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "Community 37"
+community: "Community 35"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_37
+  - community/Community_35
 ---
 
 # test_voice_gateway.py
@@ -15,12 +15,13 @@ tags:
 - [[TestNormalizeForSpeech]] - `contains` [EXTRACTED]
 - [[TestSplitForSpeech]] - `contains` [EXTRACTED]
 - [[_call_agent_stream()]] - `imports` [EXTRACTED]
-- [[_call_llm()]] - `imports` [EXTRACTED]
+- [[_call_llm_stream()]] - `imports` [EXTRACTED]
 - [[_fake_kokoro_pipeline()]] - `contains` [EXTRACTED]
 - [[_fw_client()]] - `contains` [EXTRACTED]
+- [[_mock_llm_stream_resp()]] - `contains` [EXTRACTED]
 - [[_mock_stream_resp()]] - `contains` [EXTRACTED]
 - [[_mock_ws()]] - `contains` [EXTRACTED]
-- [[_openai_resp()]] - `contains` [EXTRACTED]
+- [[_openai_delta_lines()]] - `contains` [EXTRACTED]
 - [[_pcm_bytes()]] - `contains` [EXTRACTED]
 - [[_resample_s16le_mono()]] - `imports` [EXTRACTED]
 - [[_reset_reply_resume()]] - `contains` [EXTRACTED]
@@ -43,11 +44,11 @@ tags:
 - [[test_call_agent_stream_skips_blank_and_comment_lines()]] - `contains` [EXTRACTED]
 - [[test_call_agent_stream_yields_sentences_in_order()]] - `contains` [EXTRACTED]
 - [[test_call_agent_uses_structured_timeout()]] - `contains` [EXTRACTED]
-- [[test_call_llm_malformed_response_raises()]] - `contains` [EXTRACTED]
-- [[test_call_llm_returns_content()]] - `contains` [EXTRACTED]
-- [[test_call_llm_sends_correct_model_and_max_tokens()]] - `contains` [EXTRACTED]
-- [[test_call_llm_sends_full_history()]] - `contains` [EXTRACTED]
-- [[test_call_llm_strips_whitespace()]] - `contains` [EXTRACTED]
+- [[test_call_llm_stream_flushes_trailing_fragment()]] - `contains` [EXTRACTED]
+- [[test_call_llm_stream_sends_correct_model_and_max_tokens()]] - `contains` [EXTRACTED]
+- [[test_call_llm_stream_sends_full_history()]] - `contains` [EXTRACTED]
+- [[test_call_llm_stream_skips_malformed_chunks()]] - `contains` [EXTRACTED]
+- [[test_call_llm_stream_yields_sentences()]] - `contains` [EXTRACTED]
 - [[test_firmware_bin_304_on_matching_if_none_match()]] - `contains` [EXTRACTED]
 - [[test_firmware_bin_404_when_absent()]] - `contains` [EXTRACTED]
 - [[test_firmware_bin_auth_and_etag()]] - `contains` [EXTRACTED]
@@ -97,6 +98,7 @@ tags:
 - [[test_ws_device_log_during_speaking_still_recorded()]] - `contains` [EXTRACTED]
 - [[test_ws_direct_agent_calls_call_llm()]] - `contains` [EXTRACTED]
 - [[test_ws_direct_agent_pipeline_error_pops_history_and_recovery_send_fails()]] - `contains` [EXTRACTED]
+- [[test_ws_direct_agent_streams_tts_before_full_reply()]] - `contains` [EXTRACTED]
 - [[test_ws_dirty_close_before_initial_state_is_handled_cleanly()]] - `contains` [EXTRACTED]
 - [[test_ws_empty_transcript_goes_idle()]] - `contains` [EXTRACTED]
 - [[test_ws_full_utterance_state_sequence()]] - `contains` [EXTRACTED]
@@ -115,6 +117,7 @@ tags:
 - [[test_ws_token_check_uses_constant_time_comparison()]] - `contains` [EXTRACTED]
 - [[test_ws_tts_pipeline_sends_all_sentences()]] - `contains` [EXTRACTED]
 - [[test_ws_use_local_command_confirms_with_model_name()]] - `contains` [EXTRACTED]
+- [[test_ws_use_local_command_reflects_live_voice_model()]] - `contains` [EXTRACTED]
 - [[test_ws_use_model_command_intercepted()]] - `contains` [EXTRACTED]
 - [[test_ws_use_model_command_with_chained_question()]] - `contains` [EXTRACTED]
 - [[test_ws_volume_command_intercepted()]] - `contains` [EXTRACTED]
@@ -123,4 +126,4 @@ tags:
 - [[test_ws_volume_query_unknown_state_intercepted()]] - `contains` [EXTRACTED]
 - [[tts.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_37
+#graphify/code #graphify/EXTRACTED #community/Community_35

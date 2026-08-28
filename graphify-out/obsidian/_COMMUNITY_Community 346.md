@@ -1,37 +1,40 @@
 ---
 type: community
-members: 24
+cohesion: 0.09
+members: 25
 ---
 
 # Community 346
 
-**Members:** 24 nodes
+**Cohesion:** 0.09 - loosely connected
+**Members:** 25 nodes
 
 ## Members
-- [[.test_multipart_fails_closed_for_non_owner()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_multipart_markdown_exfil_link_scrubbed()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_multipart_outbound_pipeline_called()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_multipart_overlength_caption_blocked_for_non_owner()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_multipart_owner_exempt_from_fail_closed()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_multipart_pipeline_block_non_owner()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_multipart_sanitized_caption_applied_binary_intact()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_multipart_sanitizer_fallback_redacts_pii()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_multipart_text_field_scanned_when_no_caption()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_multipart_without_text_part_passes_through()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[A multipart 'text' field (sendMessage via multipart) is scanned too.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Build a multipartform-data body with text fields and an optional binary part.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[If the pipeline crashes on a multipart body, non-owner captions are blocked.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Markdown exfil links are stripped from multipart captions (parity).]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Multipart bodies with no captiontext part are forwarded unchanged.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Multipart captions must get the full pipeline scan, not just the XML filter.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Over-length multipart captions to non-owners are blocked like JSONform.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Owner multipart messages still pass through on pipeline crash (parity).]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Pipeline-blocked captions to non-owners are replaced with a safe notice.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Redacted caption replaces the original; binary part stays byte-identical.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[TestMultipartOutboundPipeline]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Without a pipeline, the sanitizer fallback still redacts caption PII.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[_make_multipart_body()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[process_outbound must run on multipart caption text.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[AgentShroud Security Scripts Reference]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[Alerting]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[Automation Examples]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[Best Practices_6]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[CICD Integration]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[Daily Security Check (cron)]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[Defense in Depth (Bot Instructions + Gateway + Audit Log)]] - rationale - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[Kill Switch]] - document - dashboard/README.md
+- [[Logging]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[Mode 1 freeze]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[Mode 2 shutdown]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[Mode 3 disconnect (⚠️ DANGEROUS)]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[Monitoring Integration]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[PrometheusGrafana]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[SECURITY-IMPLEMENTATION-VERIFICATION]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[SECURITY_SCRIPTS_REFERENCE]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[Script Permissions]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[Troubleshooting_22]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[VERIFICATION_RESULTS]] - document - docs/security/VERIFICATION_RESULTS.md
+- [[Weekly Compliance Scan (cron)]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[killswitch.sh doesn't confirm]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[scan.sh_1]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[scan.sh reports missing OpenSCAP]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[verify-security.sh_1]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[verify-security.sh fails]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -41,18 +44,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 20 edges to [[_COMMUNITY_Community 3]]
-- 2 edges to [[_COMMUNITY_Community 265]]
-- 1 edge to [[_COMMUNITY_Community 1]]
-- 1 edge to [[_COMMUNITY_Community 870]]
-- 1 edge to [[_COMMUNITY_Community 4]]
-- 1 edge to [[_COMMUNITY_Community 42]]
-- 1 edge to [[_COMMUNITY_Community 874]]
-- 1 edge to [[_COMMUNITY_Community 20]]
+- 2 edges to [[_COMMUNITY_Community 580]]
+- 1 edge to [[_COMMUNITY_Community 43]]
+- 1 edge to [[_COMMUNITY_Community 886]]
+- 1 edge to [[_COMMUNITY_Community 153]]
+- 1 edge to [[_COMMUNITY_Community 428]]
+- 1 edge to [[_COMMUNITY_Community 585]]
+- 1 edge to [[_COMMUNITY_Community 730]]
+- 1 edge to [[_COMMUNITY_Community 385]]
 
 ## Top bridge nodes
-- [[TestMultipartOutboundPipeline]] - degree 15, connects to 5 communities
-- [[.test_multipart_pipeline_block_non_owner()]] - degree 6, connects to 2 communities
-- [[.test_multipart_markdown_exfil_link_scrubbed()]] - degree 5, connects to 2 communities
-- [[_make_multipart_body()]] - degree 12, connects to 1 community
-- [[.test_multipart_outbound_pipeline_called()]] - degree 5, connects to 1 community
+- [[SECURITY-IMPLEMENTATION-VERIFICATION]] - degree 6, connects to 4 communities
+- [[Kill Switch]] - degree 9, connects to 3 communities
+- [[VERIFICATION_RESULTS]] - degree 5, connects to 2 communities

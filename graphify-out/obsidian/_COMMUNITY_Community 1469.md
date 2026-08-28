@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 1.00
 members: 2
 ---
 
 # Community 1469
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[SKILL_176]] - document - docker/config/openclaw/skills/i-sdlc/SKILL.md
-- [[Skill sdlc_2]] - document - docker/config/openclaw/skills/i-sdlc/SKILL.md
+- [[SKILL_125]] - document - docker/config/hermes/skills/i-value-stream-mapping/SKILL.md
+- [[Skill value-stream-mapping_1]] - document - docker/config/hermes/skills/i-value-stream-mapping/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

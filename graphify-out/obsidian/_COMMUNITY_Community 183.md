@@ -1,50 +1,53 @@
 ---
 type: community
-members: 37
+cohesion: 0.09
+members: 38
 ---
 
 # Community 183
 
-**Members:** 37 nodes
+**Cohesion:** 0.09 - loosely connected
+**Members:** 38 nodes
 
 ## Members
-- [[1. Authentication Events (AUTH)]] - document - docs/security/audit-specification.md
-- [[2. Authorization Events (AUTHZ)]] - document - docs/security/audit-specification.md
-- [[3. Security Events (SEC)]] - document - docs/security/audit-specification.md
-- [[4. Data Events (DATA)]] - document - docs/security/audit-specification.md
-- [[5. System Events (SYS)]] - document - docs/security/audit-specification.md
-- [[A.12.4 Logging and Monitoring]] - document - docs/security/audit-specification.md
-- [[Advanced Search Query]] - document - docs/security/audit-specification.md
-- [[AgentShroud Audit Specification]] - document - docs/security/audit-specification.md
-- [[Archival Process]] - document - docs/security/audit-specification.md
-- [[Audit Event Types and Schema]] - document - docs/security/audit-specification.md
-- [[Audit System Performance Metrics]] - document - docs/security/audit-specification.md
-- [[Basic Event Query]] - document - docs/security/audit-specification.md
-- [[Block Structure]] - document - docs/security/audit-specification.md
-- [[Chain Architecture]] - document - docs/security/audit-specification.md
-- [[Chain Verification Query]] - document - docs/security/audit-specification.md
-- [[Compliance Mapping]] - document - docs/security/audit-specification.md
-- [[Core Event Categories]] - document - docs/security/audit-specification.md
-- [[GDPR Article 30 Record Keeping]] - document - docs/security/audit-specification.md
-- [[Genesis Block Specification]] - document - docs/security/audit-specification.md
-- [[Hash Calculation Algorithm]] - document - docs/security/audit-specification.md
-- [[Hash Chain Structure_1]] - document - docs/security/audit-specification.md
-- [[ISO 27001 Control Objectives]] - document - docs/security/audit-specification.md
-- [[Internal Controls Documentation]] - document - docs/security/audit-specification.md
-- [[Overview_13]] - document - docs/security/audit-specification.md
-- [[Performance and Scalability]] - document - docs/security/audit-specification.md
-- [[Processing Activities Register]] - document - docs/security/audit-specification.md
-- [[Query API Specification]] - document - docs/security/audit-specification.md
-- [[Query Capabilities]] - document - docs/security/audit-specification.md
-- [[Query Response Format]] - document - docs/security/audit-specification.md
-- [[Real-Time Event Streaming]] - document - docs/security/audit-specification.md
-- [[Retention Policies]] - document - docs/security/audit-specification.md
-- [[SOX Compliance (Section 404)]] - document - docs/security/audit-specification.md
-- [[Tier 1 Critical Security Events (7 Years)]] - document - docs/security/audit-specification.md
-- [[Tier 2 Operational Events (3 Years)]] - document - docs/security/audit-specification.md
-- [[Tier 3 Debug and Diagnostic Events (1 Year)]] - document - docs/security/audit-specification.md
-- [[Tier 4 High-Volume Events (90 Days)]] - document - docs/security/audit-specification.md
-- [[Tier-Based Retention Strategy]] - document - docs/security/audit-specification.md
+- [[.test_initial_when_has_criticals()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_initial_when_infected()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_initial_when_not_run()_2]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_initial_when_not_run()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_managed_when_no_criticals_but_high()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_measured_or_higher_when_fully_clean()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_measured_when_clean_not_fresh()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_optimizing_when_installed_clean_no_timestamp()_1]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_optimizing_when_installed_clean_no_timestamp()]] - code - gateway/tests/test_scanner_integration.py
+- [[A report that is 48h old must not score above 1.]] - rationale - gateway/tests/test_scorecard_integrity.py
+- [[Fresh clean report with zero CVEs should score 5.]] - rationale - gateway/tests/test_scorecard_integrity.py
+- [[Score domain 2 Vulnerability Management (0-5).      1=module installed but no r]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 6 Malware Defense (0-5).      1=module installed or not_run, 3=cla]] - rationale - gateway/security/scanner_integration.py
+- [[Stale ClamAV report (48h) must not score above 1.]] - rationale - gateway/tests/test_scorecard_integrity.py
+- [[TestScoreMalwareDefense]] - code - gateway/tests/test_scanner_integration.py
+- [[TestScoreVulnerabilityManagement]] - code - gateway/tests/test_scanner_integration.py
+- [[_clean_clamav()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[_clean_trivy()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[_not_run_clamav()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[_not_run_trivy()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[_score_malware_defense()]] - code - gateway/security/scanner_integration.py
+- [[_score_vulnerability_management()]] - code - gateway/security/scanner_integration.py
+- [[test_empty_collaborator_activity_no_score()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_empty_key_rotation_log_no_score()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_host_hardening_empty_audit_log_no_bonus()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_host_hardening_nonempty_audit_log_adds_score()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_malware_fresh_clean_scores_5()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_malware_not_run_scores_1()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_malware_stale_report_scores_1()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_no_scan_reports_malware_defense_le_1()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_no_scan_reports_vuln_management_le_1()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_nonempty_collaborator_activity_adds_score()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_nonempty_key_rotation_log_adds_score()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_scorecard_integrity.py]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_vuln_fresh_clean_report_scores_5()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_vuln_no_report_dir_scores_1()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_vuln_not_run_scores_1()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[test_vuln_stale_report_scores_1()]] - code - gateway/tests/test_scorecard_integrity.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -54,8 +57,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 90]]
+- 9 edges to [[_COMMUNITY_Community 187]]
+- 2 edges to [[_COMMUNITY_Community 72]]
+- 2 edges to [[_COMMUNITY_Community 863]]
+- 2 edges to [[_COMMUNITY_Community 196]]
+- 2 edges to [[_COMMUNITY_Community 201]]
 
 ## Top bridge nodes
-- [[AgentShroud Audit Specification]] - degree 8, connects to 1 community
-- [[Compliance Mapping]] - degree 5, connects to 1 community
+- [[_score_vulnerability_management()]] - degree 17, connects to 5 communities
+- [[_score_malware_defense()]] - degree 15, connects to 5 communities
+- [[TestScoreVulnerabilityManagement]] - degree 6, connects to 1 community
+- [[TestScoreMalwareDefense]] - degree 5, connects to 1 community
+- [[.test_initial_when_infected()]] - degree 3, connects to 1 community

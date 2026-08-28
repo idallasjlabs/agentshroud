@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "Community 283"
+community: "Community 261"
 location: "L55"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_283
+  - community/Community_261
 ---
 
 # MCPToolResult
@@ -92,4 +92,4 @@ tags:
 - [[test_mcp_proxy_allows_policy_permitted_call()]] - `calls` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_283
+#graphify/code #graphify/INFERRED #community/Community_261

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-sec/README.md"
 type: "document"
-community: "Community 1208"
+community: "Community 1203"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1208
+  - community/Community_1203
 ---
 
 # Security Review (SEC)
@@ -17,4 +17,4 @@ tags:
 - [[Related Skills_74]] - `contains` [EXTRACTED]
 - [[Usage_75]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1208
+#graphify/document #graphify/EXTRACTED #community/Community_1203

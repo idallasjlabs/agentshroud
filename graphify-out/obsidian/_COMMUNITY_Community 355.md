@@ -1,27 +1,39 @@
 ---
 type: community
-members: 14
+cohesion: 0.08
+members: 24
 ---
 
 # Community 355
 
-**Members:** 14 nodes
+**Cohesion:** 0.08 - loosely connected
+**Members:** 24 nodes
 
 ## Members
-- [[Config Keys Read]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
-- [[Environment Variables Used]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
-- [[Function Details]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
-- [[HTTP Responses]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
-- [[Imports From  Exports To]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
-- [[Key Classes  Functions]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
-- [[Known Issues  Notes]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
-- [[Purpose_111]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
-- [[RateLimiter.check(client_id)]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
-- [[Related_1]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
-- [[auth.py_3]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
-- [[create_auth_dependency(config)]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
-- [[get_auth_dependency(config)]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
-- [[verify_token(token, expected_token)]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
+- [[1. Always Specify Risk Level]] - document - .agents/skills/i-browser/SKILL.md
+- [[2. Use Allowlisting Liberally]] - document - .agents/skills/i-browser/SKILL.md
+- [[3. Take Screenshots for Audit Trail]] - document - .agents/skills/i-browser/SKILL.md
+- [[4. Handle CAPTCHAs Gracefully]] - document - .agents/skills/i-browser/SKILL.md
+- [[5. Never Extract Credentials]] - document - .agents/skills/i-browser/SKILL.md
+- [[Approval Integration]] - document - .agents/skills/i-browser/SKILL.md
+- [[Audit Logging]] - document - .agents/skills/i-browser/SKILL.md
+- [[Best Practices]] - document - .agents/skills/i-browser/SKILL.md
+- [[Browser — Secure Browser Automation_1]] - document - .agents/skills/i-browser/SKILL.md
+- [[Click Element]] - document - .agents/skills/i-browser/SKILL.md
+- [[Core Security Principles]] - document - .agents/skills/i-browser/SKILL.md
+- [[Example Apple ID Creation (Semi-Automated)]] - document - .agents/skills/i-browser/SKILL.md
+- [[Extract Data]] - document - .agents/skills/i-browser/SKILL.md
+- [[Fetch JavaScript-Heavy Page (Node.js)]] - document - .agents/skills/i-browser/SKILL.md
+- [[Fill Form]] - document - .agents/skills/i-browser/SKILL.md
+- [[Limitations]] - document - .agents/skills/i-browser/SKILL.md
+- [[Navigate to URL]] - document - .agents/skills/i-browser/SKILL.md
+- [[Risk Levels]] - document - .agents/skills/i-browser/SKILL.md
+- [[SKILL_9]] - document - .agents/skills/i-browser/SKILL.md
+- [[Security Architecture]] - document - .agents/skills/i-browser/SKILL.md
+- [[Security Configuration]] - document - .agents/skills/i-browser/SKILL.md
+- [[Security Guarantees]] - document - .agents/skills/i-browser/SKILL.md
+- [[Take Screenshot]] - document - .agents/skills/i-browser/SKILL.md
+- [[Usage_6]] - document - .agents/skills/i-browser/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,9 +43,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 743]]
-- 1 edge to [[_COMMUNITY_Community 99]]
-- 1 edge to [[_COMMUNITY_Community 479]]
+- 1 edge to [[_COMMUNITY_Community 341]]
 
 ## Top bridge nodes
-- [[auth.py_3]] - degree 12, connects to 3 communities
+- [[Browser — Secure Browser Automation_1]] - degree 13, connects to 1 community

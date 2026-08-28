@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "Community 432"
+community: "Community 439"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_432
+  - community/Community_439
 ---
 
 # Distributed OpenClaw Node Architecture — Raspberry Pi 4
@@ -19,14 +19,12 @@ tags:
 - [[Conclusion]] - `contains` [EXTRACTED]
 - [[Cost-Benefit Analysis]] - `contains` [EXTRACTED]
 - [[DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE]] - `contains` [EXTRACTED]
-- [[Implementation Plan]] - `contains` [EXTRACTED]
 - [[Key Benefits]] - `contains` [EXTRACTED]
 - [[Migration Path (SSH → Distributed Node)]] - `contains` [EXTRACTED]
-- [[Monitoring & Observability]] - `contains` [EXTRACTED]
 - [[Monitoring and Observability]] - `contains` [EXTRACTED]
 - [[Next Steps_1]] - `contains` [EXTRACTED]
 - [[Resources]] - `contains` [EXTRACTED]
 - [[Security Architecture_4]] - `contains` [EXTRACTED]
 - [[Use Cases]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_432
+#graphify/document #graphify/EXTRACTED #community/Community_439

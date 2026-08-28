@@ -1,19 +1,19 @@
 ---
 type: community
-members: 6
+cohesion: 0.50
+members: 4
 ---
 
 # Community 1330
 
-**Members:** 6 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[L4 CSP Allows `unsafe-inline` for Scripts and Styles]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
-- [[L5 WebSocket Token in Query String]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
-- [[L6 Auto-Refresh via JavaScript on Root Page]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
-- [[L7 Dead Code After Return in webhook_receiver.py]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
-- [[L8 `python-jose` Dependency Has Known CVEs]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
-- [[LOW — Informational]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[2. Security Value Audit_1]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[⚠️ Areas Requiring Vigilance]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[✅ Genuine Security Value_1]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[❌ Potential Security Theater]] - document - docs/planning/reviews/phase-review-2026-02-24.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 338]]
+- 1 edge to [[_COMMUNITY_Community 133]]
 
 ## Top bridge nodes
-- [[LOW — Informational]] - degree 6, connects to 1 community
+- [[2. Security Value Audit_1]] - degree 4, connects to 1 community

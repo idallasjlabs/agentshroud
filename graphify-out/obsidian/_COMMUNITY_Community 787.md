@@ -1,29 +1,26 @@
 ---
 type: community
-members: 16
+cohesion: 0.18
+members: 11
 ---
 
 # Community 787
 
-**Members:** 16 nodes
+**Cohesion:** 0.18 - loosely connected
+**Members:** 11 nodes
 
 ## Members
-- [[DOCKER-VPN-NETWORKING]] - document - docker/DOCKER-VPN-NETWORKING.md
-- [[Description_9]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
-- [[Effect_1]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
-- [[NetworkInspector Component (Outbound Request Monitor)]] - concept - dashboard/README.md
-- [[Python IPv6 Fallback Red Herring (ENETUNREACH masking ETIMEDOUT)]] - concept - docker/DOCKER-VPN-NETWORKING.md
-- [[Related Notes_37]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
-- [[SDK Patch_1]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
-- [[Set In_5]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
-- [[TELEGRAM_API_BASE_URL_1]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
-- [[TELEGRAM_API_BASE_URL]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
-- [[VPNKit Userspace Networking Mode (fix)]] - concept - docker/DOCKER-VPN-NETWORKING.md
-- [[Value_5]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
-- [[VpnKitTransparentProxy Setting]] - concept - docker/DOCKER-VPN-NETWORKING.md
-- [[gVisor Networking Mode (Docker Desktop, problematic)]] - concept - docker/DOCKER-VPN-NETWORKING.md
-- [[patch-telegram-sdk.sh]] - code - docker/scripts/patch-telegram-sdk.sh
-- [[patch-telegram-sdk.sh script]] - code - docker/scripts/patch-telegram-sdk.sh
+- [[1. System Profiler (most comprehensive single source)]] - document - .agents/skills/i-mac/SKILL.md
+- [[10. Spotlight Catch-All]] - document - .agents/skills/i-mac/SKILL.md
+- [[2. Applications Folders (catch drag-and-drop installs)]] - document - .agents/skills/i-mac/SKILL.md
+- [[3. Homebrew (formulae + casks)]] - document - .agents/skills/i-mac/SKILL.md
+- [[4. Mac App Store (via `mas` CLI)]] - document - .agents/skills/i-mac/SKILL.md
+- [[5. Setapp Detection]] - document - .agents/skills/i-mac/SKILL.md
+- [[6. Package Receipts (direct .pkg installs)]] - document - .agents/skills/i-mac/SKILL.md
+- [[7. CLI Tools & Utilities (non-.app installs)]] - document - .agents/skills/i-mac/SKILL.md
+- [[8. Launch Agents & Daemons (background services)]] - document - .agents/skills/i-mac/SKILL.md
+- [[9. Browser Extensions (optional but useful)]] - document - .agents/skills/i-mac/SKILL.md
+- [[Phase 1 — Raw Collection]] - document - .agents/skills/i-mac/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,13 +30,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 134]]
-- 1 edge to [[_COMMUNITY_Community 449]]
-- 1 edge to [[_COMMUNITY_Community 257]]
-- 1 edge to [[_COMMUNITY_Community 975]]
+- 1 edge to [[_COMMUNITY_Community 1011]]
 
 ## Top bridge nodes
-- [[DOCKER-VPN-NETWORKING]] - degree 8, connects to 2 communities
-- [[patch-telegram-sdk.sh]] - degree 4, connects to 1 community
-- [[TELEGRAM_API_BASE_URL]] - degree 3, connects to 1 community
-- [[NetworkInspector Component (Outbound Request Monitor)]] - degree 2, connects to 1 community
+- [[Phase 1 — Raw Collection]] - degree 11, connects to 1 community

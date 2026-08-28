@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-21-team-structure.png"
 type: "image"
-community: "Community 907"
+community: "Community 901"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Community_907
+  - community/Community_901
 ---
 
 # Gemini CLI — Secondary/Test Engineer (cannot direct Claude)
@@ -14,4 +14,4 @@ tags:
 - [[Claude Code (claude-sonnet-4-6) — Lead Engineer  Primary Developer]] - `conceptually_related_to` [EXTRACTED]
 - [[TeamAgent Role Structure Diagram]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Community_907
+#graphify/image #graphify/EXTRACTED #community/Community_901

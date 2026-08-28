@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-hdev/SKILL.md"
 type: "concept"
-community: "Community 660"
+community: "Community 945"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_660
+  - community/Community_945
 ---
 
 # LM Studio local model (Qwen3-14B)
@@ -15,4 +15,4 @@ tags:
 - [[OpenClaw Dev Workflow (ODEV)]] - `references` [EXTRACTED]
 - [[omlx local model (DeepSeek-R1-0528-Qwen3-8B)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_660
+#graphify/concept #graphify/EXTRACTED #community/Community_945

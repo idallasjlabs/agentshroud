@@ -1,17 +1,17 @@
 ---
-source_file: "docs/project/SYSTEM_STATUS.md"
+source_file: "docs/runbooks/RUNBOOK.md"
 type: "document"
-community: "Community 576"
-location: "L6"
+community: "Community 681"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_576
+  - community/Community_681
 ---
 
 # Infrastructure
 
 ## Connections
-- [[✅ What's WORKING]] - `contains` [EXTRACTED]
+- [[AgentShroud Deployment & Troubleshooting Runbook]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_576
+#graphify/document #graphify/EXTRACTED #community/Community_681

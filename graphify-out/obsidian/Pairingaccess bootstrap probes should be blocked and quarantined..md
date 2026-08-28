@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Community 1360"
+community: "Community 1367"
 location: "L4112"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1360
+  - community/Community_1367
 ---
 
 # Pairing/access bootstrap probes should be blocked and quarantined.
@@ -15,4 +15,4 @@ tags:
 - [[.test_collaborator_hidden_channel_exfil_request_is_blocked_and_quarantined()]] - `rationale_for` [EXTRACTED]
 - [[.test_collaborator_pairing_access_probe_is_blocked_and_quarantined()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1360
+#graphify/rationale #graphify/EXTRACTED #community/Community_1367

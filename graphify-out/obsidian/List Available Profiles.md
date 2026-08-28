@@ -14,7 +14,6 @@ tags:
 ## Connections
 - [[Check Current Profile]] - `contains` [EXTRACTED]
 - [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - `contains` [EXTRACTED]
-- [[View Configured Profiles]] - `contains` [EXTRACTED]
 - [[View Configured Providers]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Community_317

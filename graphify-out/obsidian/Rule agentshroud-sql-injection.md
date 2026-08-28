@@ -1,11 +1,11 @@
 ---
 source_file: ".semgrep.yml"
 type: "concept"
-community: "Community 251"
+community: "Community 420"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_251
+  - community/Community_420
 ---
 
 # Rule: agentshroud-sql-injection
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Semgrep SAST Configuration]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_251
+#graphify/concept #graphify/EXTRACTED #community/Community_420

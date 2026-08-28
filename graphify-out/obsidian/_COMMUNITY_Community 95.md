@@ -1,72 +1,73 @@
 ---
 type: community
-members: 59
+cohesion: 0.07
+members: 58
 ---
 
 # Community 95
 
-**Members:** 59 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 58 nodes
 
 ## Members
-- [[.__init__()_195]] - code - gateway/tools/port_manager.py
-- [[.find_available_port()]] - code - gateway/tools/port_manager.py
-- [[.generate_compose_ports()]] - code - gateway/tools/port_manager.py
-- [[.has_conflicts()]] - code - gateway/tools/port_manager.py
-- [[.is_port_available()]] - code - gateway/tools/port_manager.py
-- [[.is_port_available_udp()]] - code - gateway/tools/port_manager.py
-- [[.ports()]] - code - gateway/tools/port_manager.py
-- [[.resolve_ports()]] - code - gateway/tools/port_manager.py
-- [[.summary()]] - code - gateway/tools/port_manager.py
-- [[.test_all_free_no_conflicts()]] - code - gateway/tests/test_port_manager.py
-- [[.test_basic_mapping()]] - code - gateway/tests/test_port_manager.py
-- [[.test_bound_port_is_not_available()]] - code - gateway/tests/test_port_manager.py
-- [[.test_conflict_auto_resolved()]] - code - gateway/tests/test_port_manager.py
-- [[.test_conflict_no_auto_resolve()]] - code - gateway/tests/test_port_manager.py
-- [[.test_duplicate_port_detection()]] - code - gateway/tests/test_port_manager.py
-- [[.test_finds_base_when_free()]] - code - gateway/tests/test_port_manager.py
-- [[.test_has_conflicts()]] - code - gateway/tests/test_port_manager.py
-- [[.test_no_conflict_mapping()]] - code - gateway/tests/test_port_manager.py
-- [[.test_offset_applied()]] - code - gateway/tests/test_port_manager.py
-- [[.test_ports_property()]] - code - gateway/tests/test_port_manager.py
-- [[.test_raises_if_no_port_found()]] - code - gateway/tests/test_port_manager.py
-- [[.test_skips_bound_port()]] - code - gateway/tests/test_port_manager.py
-- [[.test_skips_excluded_ports()]] - code - gateway/tests/test_port_manager.py
-- [[.test_summary_format()]] - code - gateway/tests/test_port_manager.py
-- [[.test_udp_bound_not_available()]] - code - gateway/tests/test_port_manager.py
-- [[.test_udp_unbound_available()]] - code - gateway/tests/test_port_manager.py
-- [[.test_unbound_port_is_available()]] - code - gateway/tests/test_port_manager.py
-- [[Busy port should be detected via connect_ex check.]] - rationale - gateway/tests/test_port_manager.py
-- [[Check if a TCP port is available for binding.          Tries to bind briefly. Re]] - rationale - gateway/tools/port_manager.py
-- [[Check if a UDP port is available (used for DNS).]] - rationale - gateway/tools/port_manager.py
-- [[Detect port conflicts and auto-assign available ports.]] - rationale - gateway/tools/port_manager.py
-- [[Find next available port starting from base.          Args             base St]] - rationale - gateway/tools/port_manager.py
-- [[Generate docker-compose port mapping strings from resolution.          Returns d]] - rationale - gateway/tools/port_manager.py
-- [[Get the final port mapping.]] - rationale - gateway/tools/port_manager.py
-- [[If all ports in range are excluded, raises RuntimeError.]] - rationale - gateway/tests/test_port_manager.py
-- [[PortAssignment]] - code - gateway/tools/port_manager.py
-- [[PortManager]] - code - gateway/tools/port_manager.py
-- [[PortResolution]] - code - gateway/tools/port_manager.py
-- [[Quick check are the default ports available Log and return result.]] - rationale - gateway/tools/port_manager.py
-- [[Record of a port assignment decision.]] - rationale - gateway/tools/port_manager.py
-- [[Resolve all ports, detecting conflicts and auto-assigning if needed.          Ar]] - rationale - gateway/tools/port_manager.py
-- [[Result of resolving all ports for an instance.]] - rationale - gateway/tools/port_manager.py
-- [[Test PortResolution dataclass.]] - rationale - gateway/tests/test_port_manager.py
-- [[Test auto-port discovery.]] - rationale - gateway/tests/test_port_manager.py
-- [[Test docker-compose port mapping generation.]] - rationale - gateway/tests/test_port_manager.py
-- [[Test full port resolution logic.]] - rationale - gateway/tests/test_port_manager.py
-- [[Test port availability detection.]] - rationale - gateway/tests/test_port_manager.py
-- [[TestFindAvailablePort]] - code - gateway/tests/test_port_manager.py
-- [[TestGenerateComposePorts]] - code - gateway/tests/test_port_manager.py
-- [[TestIsPortAvailable]] - code - gateway/tests/test_port_manager.py
-- [[TestPortResolution]] - code - gateway/tests/test_port_manager.py
-- [[TestResolveports]] - code - gateway/tests/test_port_manager.py
-- [[Two services requesting same port — second gets reassigned.]] - rationale - gateway/tests/test_port_manager.py
-- [[_fake_socket_factory()]] - code - gateway/tests/test_port_manager.py
-- [[check_and_report()]] - code - gateway/tools/port_manager.py
-- [[find-ports.sh]] - code - scripts/find-ports.sh
-- [[find-ports.sh script]] - code - scripts/find-ports.sh
-- [[port_manager.py]] - code - gateway/tools/port_manager.py
-- [[test_port_manager.py]] - code - gateway/tests/test_port_manager.py
+- [[.__init__()_76]] - code - gateway/security/egress_monitor.py
+- [[.__init__()_93]] - code - gateway/security/log_sanitizer.py
+- [[._compile_patterns()]] - code - gateway/security/log_sanitizer.py
+- [[.check_anomalies()]] - code - gateway/security/egress_monitor.py
+- [[.daily_summary()]] - code - gateway/security/egress_monitor.py
+- [[.get_events()_2]] - code - gateway/security/egress_monitor.py
+- [[.record()_1]] - code - gateway/security/egress_monitor.py
+- [[.test_alert_has_description()]] - code - gateway/tests/test_egress_monitor.py
+- [[.test_alert_has_severity()]] - code - gateway/tests/test_egress_monitor.py
+- [[.test_alert_monitor_mode_no_block()]] - code - gateway/tests/test_egress_monitor.py
+- [[.test_default_mode_is_enforce()_1]] - code - gateway/tests/test_egress_monitor.py
+- [[.test_egress_monitor_default_enforce()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_empty_summary()]] - code - gateway/tests/test_egress_monitor.py
+- [[.test_generous_baselines()]] - code - gateway/tests/test_egress_monitor.py
+- [[.test_high_volume_triggers_alert()]] - code - gateway/tests/test_egress_monitor.py
+- [[.test_install_log_sanitizer_no_error()]] - code - gateway/tests/test_log_sanitizer.py
+- [[.test_normal_multi_channel_not_flagged()]] - code - gateway/tests/test_egress_monitor.py
+- [[.test_normal_volume_no_alert()]] - code - gateway/tests/test_egress_monitor.py
+- [[.test_record_dns_event()]] - code - gateway/tests/test_egress_monitor.py
+- [[.test_record_file_event()]] - code - gateway/tests/test_egress_monitor.py
+- [[.test_record_http_event()]] - code - gateway/tests/test_egress_monitor.py
+- [[.test_record_mcp_event()]] - code - gateway/tests/test_egress_monitor.py
+- [[.test_slow_drip_across_channels()]] - code - gateway/tests/test_egress_monitor.py
+- [[.test_summary_report()]] - code - gateway/tests/test_egress_monitor.py
+- [[.test_unusual_destination_flagged()]] - code - gateway/tests/test_egress_monitor.py
+- [[AlertSeverity]] - code - gateway/security/egress_monitor.py
+- [[Alerts in monitor mode should never block.]] - rationale - gateway/tests/test_egress_monitor.py
+- [[AnomalyAlert]] - code - gateway/security/egress_monitor.py
+- [[Any_46]] - code - gateway/security/log_sanitizer.py
+- [[Compile regex patterns for sensitive data detection.]] - rationale - gateway/security/log_sanitizer.py
+- [[Default mode is enforce after v0.8.0 enforcement hardening._1]] - rationale - gateway/tests/test_egress_monitor.py
+- [[EgressChannel]] - code - gateway/security/egress_monitor.py
+- [[EgressEvent]] - code - gateway/security/egress_monitor.py
+- [[EgressMonitor]] - code - gateway/security/egress_monitor.py
+- [[EgressMonitorConfig]] - code - gateway/security/egress_monitor.py
+- [[EgressSummary]] - code - gateway/security/egress_monitor.py
+- [[Get statistics about sanitization patterns.]] - rationale - gateway/security/log_sanitizer.py
+- [[Install the log sanitizer on all existing loggers.]] - rationale - gateway/security/log_sanitizer.py
+- [[Normal usage across channels should not trigger drip detection.]] - rationale - gateway/tests/test_egress_monitor.py
+- [[Pattern_1]] - code - gateway/security/log_sanitizer.py
+- [[Slow-drip  coordinated multi-channel exfiltration anomaly detection]] - concept - gateway/tests/test_egress_monitor.py
+- [[Small amounts across multiple channels should be detected.]] - rationale - gateway/tests/test_egress_monitor.py
+- [[TestAlertGeneration]] - code - gateway/tests/test_egress_monitor.py
+- [[TestAnomalyDetection]] - code - gateway/tests/test_egress_monitor.py
+- [[TestDailySummary]] - code - gateway/tests/test_egress_monitor.py
+- [[TestEgressMonitorConfig]] - code - gateway/tests/test_egress_monitor.py
+- [[TestEventRecording]] - code - gateway/tests/test_egress_monitor.py
+- [[TestSlowDripDetection]] - code - gateway/tests/test_egress_monitor.py
+- [[default_config()_2]] - code - gateway/tests/test_egress_monitor.py
+- [[egress_monitor.py]] - code - gateway/security/egress_monitor.py
+- [[get_sanitizer_stats()]] - code - gateway/security/log_sanitizer.py
+- [[install_log_sanitizer()]] - code - gateway/security/log_sanitizer.py
+- [[log_sanitizer.py]] - code - gateway/security/log_sanitizer.py
+- [[monitor()]] - code - gateway/tests/test_egress_monitor.py
+- [[monitor_config()_1]] - code - gateway/tests/test_egress_monitor.py
+- [[test_egress_monitor.py]] - code - gateway/tests/test_egress_monitor.py
+- [[test_log_sanitizer.py]] - code - gateway/tests/test_log_sanitizer.py
+- [[web_proxy.py]] - code - gateway/proxy/web_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -76,7 +77,29 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 52]]
+- 38 edges to [[_COMMUNITY_Security Audit & Drift Detection]]
+- 32 edges to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
+- 6 edges to [[_COMMUNITY_Community 48]]
+- 5 edges to [[_COMMUNITY_Community 121]]
+- 4 edges to [[_COMMUNITY_Community 19]]
+- 3 edges to [[_COMMUNITY_Community 22]]
+- 2 edges to [[_COMMUNITY_Middleware & Lifespan]]
+- 2 edges to [[_COMMUNITY_Community 66]]
+- 2 edges to [[_COMMUNITY_Key Vault & Audit Chain]]
+- 2 edges to [[_COMMUNITY_Community 18]]
+- 2 edges to [[_COMMUNITY_Community 644]]
+- 1 edge to [[_COMMUNITY_Community 165]]
+- 1 edge to [[_COMMUNITY_Community 410]]
+- 1 edge to [[_COMMUNITY_Community 175]]
+- 1 edge to [[_COMMUNITY_Community 102]]
+- 1 edge to [[_COMMUNITY_Community 174]]
+- 1 edge to [[_COMMUNITY_Community 225]]
+- 1 edge to [[_COMMUNITY_Community 157]]
+- 1 edge to [[_COMMUNITY_Community 474]]
 
 ## Top bridge nodes
-- [[PortManager]] - degree 34, connects to 1 community
+- [[web_proxy.py]] - degree 27, connects to 9 communities
+- [[egress_monitor.py]] - degree 13, connects to 4 communities
+- [[log_sanitizer.py]] - degree 7, connects to 4 communities
+- [[EgressEvent]] - degree 49, connects to 3 communities
+- [[EgressMonitorConfig]] - degree 30, connects to 3 communities

@@ -1,96 +1,129 @@
 ---
 type: community
-members: 83
+cohesion: 0.03
+members: 114
 ---
 
 # Community 25
 
-**Members:** 83 nodes
+**Cohesion:** 0.03 - loosely connected
+**Members:** 114 nodes
 
 ## Members
-- [[.__init__()_35]] - code - gateway/proxy/slack_proxy.py
-- [[.__init__()_180]] - code - gateway/tests/test_slack_proxy_coverage.py
-- [[._call_slack_api()]] - code - gateway/proxy/slack_proxy.py
-- [[._intercept_connections_open()]] - code - gateway/proxy/slack_proxy.py
-- [[._is_owner_channel()]] - code - gateway/proxy/slack_proxy.py
-- [[.consume_relay_token()]] - code - gateway/proxy/slack_proxy.py
-- [[.get_stats()_8]] - code - gateway/proxy/slack_proxy.py
-- [[.handle_event()]] - code - gateway/proxy/slack_proxy.py
-- [[.info_filter_redaction_count()]] - code - gateway/tests/test_slack_proxy_coverage.py
-- [[.invite_channel_member()]] - code - gateway/proxy/slack_proxy.py
-- [[.kick_channel_member()]] - code - gateway/proxy/slack_proxy.py
-- [[.provision_group_channel()]] - code - gateway/proxy/slack_proxy.py
-- [[.proxy_outbound()]] - code - gateway/proxy/slack_proxy.py
-- [[.test_already_in_channel_is_idempotent_true()]] - code - gateway/tests/test_slack_proxy_coverage.py
-- [[.test_cached_corr_without_colon_falls_back_to_channel()]] - code - gateway/tests/test_slack_proxy_coverage.py
-- [[.test_cached_inbound_corr_skips_history_lookup()]] - code - gateway/tests/test_slack_proxy_coverage.py
-- [[.test_cant_kick_self_is_idempotent_true()]] - code - gateway/tests/test_slack_proxy_coverage.py
-- [[.test_dm_reply_recovers_inbound_via_conversations_history()]] - code - gateway/tests/test_slack_proxy_coverage.py
-- [[.test_history_error_records_outbound_without_correlation()]] - code - gateway/tests/test_slack_proxy_coverage.py
-- [[.test_malformed_json_body_forwards_with_empty_payload()]] - code - gateway/tests/test_slack_proxy_coverage.py
-- [[.test_missing_args_return_false()]] - code - gateway/tests/test_slack_proxy_coverage.py
-- [[.test_missing_args_return_false()_1]] - code - gateway/tests/test_slack_proxy_coverage.py
-- [[.test_missing_channel_or_text_skips_tracking()]] - code - gateway/tests/test_slack_proxy_coverage.py
-- [[.test_name_truncated_to_80_chars()]] - code - gateway/tests/test_slack_proxy_coverage.py
-- [[.test_network_error_returns_synthetic_failure()]] - code - gateway/tests/test_slack_proxy_coverage.py
-- [[.test_no_token_returns_false()]] - code - gateway/tests/test_slack_proxy_coverage.py
-- [[.test_no_token_returns_false()_1]] - code - gateway/tests/test_slack_proxy_coverage.py
-- [[.test_no_token_returns_none()]] - code - gateway/tests/test_slack_proxy_coverage.py
-- [[.test_not_in_channel_is_idempotent_true()]] - code - gateway/tests/test_slack_proxy_coverage.py
-- [[.test_other_error_returns_false()]] - code - gateway/tests/test_slack_proxy_coverage.py
-- [[.test_other_error_returns_false()_1]] - code - gateway/tests/test_slack_proxy_coverage.py
-- [[.test_recovery_exception_is_non_fatal()]] - code - gateway/tests/test_slack_proxy_coverage.py
-- [[.test_redaction_count_access_error_is_non_fatal()]] - code - gateway/tests/test_slack_proxy_coverage.py
-- [[.test_slack_error_returns_none()]] - code - gateway/tests/test_slack_proxy_coverage.py
-- [[.test_structured_text_serialized_for_preview()]] - code - gateway/tests/test_slack_proxy_coverage.py
-- [[.test_success_posts_with_bearer_token()]] - code - gateway/tests/test_slack_proxy_coverage.py
-- [[.test_success_returns_channel_id_with_sanitized_name()]] - code - gateway/tests/test_slack_proxy_coverage.py
-- [[.test_success_returns_true()]] - code - gateway/tests/test_slack_proxy_coverage.py
-- [[.test_success_returns_true()_1]] - code - gateway/tests/test_slack_proxy_coverage.py
-- [[.test_system_message_not_tracked()]] - code - gateway/tests/test_slack_proxy_coverage.py
-- [[.test_thread_reply_recovers_inbound_via_conversations_replies()]] - code - gateway/tests/test_slack_proxy_coverage.py
-- [[.test_tracker_exception_does_not_break_response()]] - code - gateway/tests/test_slack_proxy_coverage.py
-- [[.test_unknown_content_type_ignored()]] - code - gateway/tests/test_slack_proxy_coverage.py
-- [[A dict text payload is JSON-serialized before the 80-char preview.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
-- [[Bodies with an unrecognized Content-Type are not parsed at all.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
-- [[Cached correlation for the channel → no Slack history call; outbound         is]] - rationale - gateway/tests/test_slack_proxy_coverage.py
-- [[Channel name is lowercased, spacesunderscores → hyphens, symbols dropped.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
-- [[Connection failure → {'ok' False, 'error' exc} (no exception leaks).]] - rationale - gateway/tests/test_slack_proxy_coverage.py
-- [[Correlation ID with no '' separator → outbound attributed to channel id.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
-- [[Create a Slack channel for a group. Returns channel_id or None on failure.]] - rationale - gateway/proxy/slack_proxy.py
-- [[Create a SlackAPIProxy with a fake token and no real secretfile IO.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
-- [[Exception during inbound recovery → swallowed; outbound still recorded.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
-- [[Handle an inbound Slack event payload received via Socket Mode.          Called]] - rationale - gateway/proxy/slack_proxy.py
-- [[Happy path POSTs to slack.comapimethod with injected bot token.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
-- [[History lookup returns ok=False → no inbound record; outbound still         logg]] - rationale - gateway/tests/test_slack_proxy_coverage.py
-- [[Intercept apps.connections.open rewrite the returned WSS URL to route         t]] - rationale - gateway/proxy/slack_proxy.py
-- [[Invite a Slack user to a channel. Returns True on success.]] - rationale - gateway/proxy/slack_proxy.py
-- [[Non-owner channel error reading info_filter_redaction_count is swallowed]] - rationale - gateway/tests/test_slack_proxy_coverage.py
-- [[Non-thread reply → conversations.history lookup; bot and subtype         message]] - rationale - gateway/tests/test_slack_proxy_coverage.py
-- [[POST to httpsslack.comapimethod with the bot token.]] - rationale - gateway/proxy/slack_proxy.py
-- [[Pipeline result whose redaction-count attribute raises on access.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
-- [[Pop and return the real WSS URL for a relay token (one-time use).          Retur]] - rationale - gateway/proxy/slack_proxy.py
-- [[Proxies bot Slack Web API calls through SecurityPipeline.      Outbound flow (bo]] - rationale - gateway/proxy/slack_proxy.py
-- [[Proxy a bot Slack Web API call through the security pipeline.          For messa]] - rationale - gateway/proxy/slack_proxy.py
-- [[Remove a Slack user from a channel. Returns True on success.]] - rationale - gateway/proxy/slack_proxy.py
-- [[Return True if channel is a DM with the configured owner.          In Slack, DM]] - rationale - gateway/proxy/slack_proxy.py
-- [[SlackAPIProxy]] - code - gateway/proxy/slack_proxy.py
-- [[SlackAPIProxy_2]] - code - gateway/tests/test_slack_proxy_coverage.py
-- [[TestBodyParsing]] - code - gateway/tests/test_slack_proxy_coverage.py
-- [[TestCallSlackApi]] - code - gateway/tests/test_slack_proxy_coverage.py
-- [[TestInviteChannelMember]] - code - gateway/tests/test_slack_proxy_coverage.py
-- [[TestKickChannelMember]] - code - gateway/tests/test_slack_proxy_coverage.py
-- [[TestOutboundTracking]] - code - gateway/tests/test_slack_proxy_coverage.py
-- [[TestProvisionGroupChannel]] - code - gateway/tests/test_slack_proxy_coverage.py
-- [[TestRedactionCountErrorSwallow]] - code - gateway/tests/test_slack_proxy_coverage.py
-- [[Thread reply with no cached corr → conversations.replies lookup recovers]] - rationale - gateway/tests/test_slack_proxy_coverage.py
-- [[Tracker errors are non-fatal — Slack response still returned to bot.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
-- [[Unparseable JSON body → warning logged, empty payload forwarded (no crash).]] - rationale - gateway/tests/test_slack_proxy_coverage.py
-- [[_RaisingRedactionResult]] - code - gateway/tests/test_slack_proxy_coverage.py
-- [[_make_proxy()_3]] - code - gateway/tests/test_slack_proxy_coverage.py
-- [[chat.postMessage without channeltext → nothing recorded, no lookups.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
-- [[is_system=True chat.postMessage bypasses the tracker entirely.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
-- [[test_slack_proxy_coverage.py]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.__init__()_92]] - code - gateway/security/killswitch_monitor.py
+- [[._check_request_rate()]] - code - gateway/security/killswitch_monitor.py
+- [[._check_system_resources()]] - code - gateway/security/killswitch_monitor.py
+- [[._check_token_usage()]] - code - gateway/security/killswitch_monitor.py
+- [[._check_tool_call_rate()]] - code - gateway/security/killswitch_monitor.py
+- [[._clean_old_metrics()]] - code - gateway/security/killswitch_monitor.py
+- [[._count_recent_events()]] - code - gateway/security/killswitch_monitor.py
+- [[._get_system_stats()]] - code - gateway/security/killswitch_monitor.py
+- [[._log_heartbeat_result()]] - code - gateway/security/killswitch_monitor.py
+- [[._log_verification_result()]] - code - gateway/security/killswitch_monitor.py
+- [[._make_monitor()]] - code - gateway/tests/test_observatory_mode.py
+- [[._send_anomaly_alert()]] - code - gateway/security/killswitch_monitor.py
+- [[._send_heartbeat_alert()]] - code - gateway/security/killswitch_monitor.py
+- [[._send_verification_alert()]] - code - gateway/security/killswitch_monitor.py
+- [[._test_docker_available()]] - code - gateway/security/killswitch_monitor.py
+- [[._test_killswitch_mode()]] - code - gateway/security/killswitch_monitor.py
+- [[._test_script_exists()]] - code - gateway/security/killswitch_monitor.py
+- [[._test_script_permissions()]] - code - gateway/security/killswitch_monitor.py
+- [[._test_script_syntax()]] - code - gateway/security/killswitch_monitor.py
+- [[.anomaly_detection()]] - code - gateway/security/killswitch_monitor.py
+- [[.get_status()]] - code - gateway/security/killswitch_monitor.py
+- [[.heartbeat_check()]] - code - gateway/security/killswitch_monitor.py
+- [[.test_all_pass_when_script_valid()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[.test_anomaly_detection_excessive_tool_calls()]] - code - gateway/tests/test_killswitch_monitor.py
+- [[.test_anomaly_detection_normal()]] - code - gateway/tests/test_killswitch_monitor.py
+- [[.test_clean_old_metrics_drops_stale_entries()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[.test_default_config()_3]] - code - gateway/tests/test_killswitch_monitor.py
+- [[.test_docker_unavailable_is_fail()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[.test_dry_run_exercises_enabled_modes()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[.test_dry_run_true_does_not_kill()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_duration_is_non_negative()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_excessive_requests_flagged()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[.test_excessive_tokens_flagged()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[.test_excessive_tool_calls_flagged_and_alerted()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[.test_fail_when_script_missing_triggers_alert()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[.test_failure_increments_and_alerts_at_threshold()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[.test_get_status()]] - code - gateway/tests/test_killswitch_monitor.py
+- [[.test_get_status_reports_verification_due()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[.test_get_system_stats_handles_psutil_error()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[.test_healthy_resets_miss_counter()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[.test_heartbeat_check()]] - code - gateway/tests/test_killswitch_monitor.py
+- [[.test_init()]] - code - gateway/tests/test_killswitch_monitor.py
+- [[.test_killswitch_dry_run_disabled()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_no_anomaly_when_within_limits()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[.test_overall_status_is_valid_value()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_result_has_required_fields()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_script_exists_test_is_present()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_slow_when_response_exceeds_timeout()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[.test_system_resource_cpu_anomaly()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[.test_system_resource_memory_anomaly()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[.test_verification_log_written()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_verify_killswitch_script_not_exists()]] - code - gateway/tests/test_killswitch_monitor.py
+- [[.to_dict()_10]] - code - gateway/security/killswitch_config.py
+- [[.verify_killswitch()]] - code - gateway/security/killswitch_monitor.py
+- [[Any_44]] - code - gateway/security/killswitch_config.py
+- [[Any_45]] - code - gateway/security/killswitch_monitor.py
+- [[Automated verification that verify_killswitch() returns required fields.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[Check if request rate is abnormal.]] - rationale - gateway/security/killswitch_monitor.py
+- [[Check if system resource usage is abnormal.]] - rationale - gateway/security/killswitch_monitor.py
+- [[Check if the agent is responding within expected parameters.          Returns]] - rationale - gateway/security/killswitch_monitor.py
+- [[Check if token usage is abnormal.]] - rationale - gateway/security/killswitch_monitor.py
+- [[Check if tool call rate is abnormal.]] - rationale - gateway/security/killswitch_monitor.py
+- [[Configuration for kill switch monitoring and verification.]] - rationale - gateway/security/killswitch_config.py
+- [[Convert configuration to dictionary for serialization.]] - rationale - gateway/security/killswitch_config.py
+- [[Count events in the last N seconds.]] - rationale - gateway/security/killswitch_monitor.py
+- [[Detect unusual patterns that might indicate rogue behavior.          Args]] - rationale - gateway/security/killswitch_monitor.py
+- [[Get current kill switch monitor status.          Returns             Dict conta]] - rationale - gateway/security/killswitch_monitor.py
+- [[Get current system statistics.]] - rationale - gateway/security/killswitch_monitor.py
+- [[Kill Switch Module Badge Icon]] - image - branding/icons/modules/kill-switch-256x256.png
+- [[Kill switch dry_run must be False — real termination on anomaly.]] - rationale - gateway/tests/test_all_modules_enforce.py
+- [[KillSwitchConfig_1]] - code - gateway/security/killswitch_monitor.py
+- [[KillSwitchConfig]] - code - gateway/security/killswitch_config.py
+- [[KillSwitchMonitor]] - code - gateway/security/killswitch_monitor.py
+- [[Log heartbeat result to file.]] - rationale - gateway/security/killswitch_monitor.py
+- [[Log verification result to file.]] - rationale - gateway/security/killswitch_monitor.py
+- [[Monitor and verify kill switch functionality.      Provides automated verificati]] - rationale - gateway/security/killswitch_monitor.py
+- [[Path_35]] - code - gateway/tests/test_observatory_mode.py
+- [[Remove metrics older than cutoff_time.]] - rationale - gateway/security/killswitch_monitor.py
+- [[Send alert for anomaly detection.]] - rationale - gateway/security/killswitch_monitor.py
+- [[Send alert for heartbeat failure.]] - rationale - gateway/security/killswitch_monitor.py
+- [[Send alert for verification failure.]] - rationale - gateway/security/killswitch_monitor.py
+- [[Test a specific kill switch mode.          Args             mode The kill swit]] - rationale - gateway/security/killswitch_monitor.py
+- [[Test anomaly detection with excessive tool calls.]] - rationale - gateway/tests/test_killswitch_monitor.py
+- [[Test anomaly detection with normal metrics.]] - rationale - gateway/tests/test_killswitch_monitor.py
+- [[Test basic heartbeat functionality.]] - rationale - gateway/tests/test_killswitch_monitor.py
+- [[Test default configuration values._2]] - rationale - gateway/tests/test_killswitch_monitor.py
+- [[Test if Docker is available.]] - rationale - gateway/security/killswitch_monitor.py
+- [[Test if the kill switch script exists.]] - rationale - gateway/security/killswitch_monitor.py
+- [[Test if the kill switch script has correct permissions.]] - rationale - gateway/security/killswitch_monitor.py
+- [[Test if the kill switch script has valid syntax.]] - rationale - gateway/security/killswitch_monitor.py
+- [[Test kill switch configuration.]] - rationale - gateway/tests/test_killswitch_monitor.py
+- [[Test kill switch monitor functionality.]] - rationale - gateway/tests/test_killswitch_monitor.py
+- [[Test monitor initialization.]] - rationale - gateway/tests/test_killswitch_monitor.py
+- [[Test status retrieval.]] - rationale - gateway/tests/test_killswitch_monitor.py
+- [[Test verification when kill switch script does not exist.]] - rationale - gateway/tests/test_killswitch_monitor.py
+- [[TestAnomalyDetection_1]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[TestHeartbeat]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[TestKillSwitchConfig_1]] - code - gateway/tests/test_killswitch_monitor.py
+- [[TestKillSwitchMonitor]] - code - gateway/tests/test_killswitch_monitor.py
+- [[TestKillSwitchVerification]] - code - gateway/tests/test_observatory_mode.py
+- [[TestStatusAndStats]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[TestVerifyKillswitch]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[Verify that the kill switch mechanism works without actually killing.          A]] - rationale - gateway/security/killswitch_monitor.py
+- [[_fake_stats()]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[config()_1]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[dispatcher()_1]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[dry_run=True must never trigger actual kill switch execution.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[killswitch_config.py]] - code - gateway/security/killswitch_config.py
+- [[killswitch_config.py (KillSwitchConfig)]] - code - gateway/security/killswitch_config.py
+- [[killswitch_monitor.py]] - code - gateway/security/killswitch_monitor.py
+- [[killswitch_monitor.py (KillSwitchMonitor)]] - code - gateway/security/killswitch_monitor.py
+- [[test_killswitch_monitor.py]] - code - gateway/tests/test_killswitch_monitor.py
+- [[test_killswitch_monitor_behavior.py]] - code - gateway/tests/test_killswitch_monitor_behavior.py
+- [[verify_killswitch() must write a log entry for auditability.]] - rationale - gateway/tests/test_observatory_mode.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -100,19 +133,22 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 30 edges to [[_COMMUNITY_Community 109]]
-- 6 edges to [[_COMMUNITY_Community 72]]
-- 2 edges to [[_COMMUNITY_Community 593]]
-- 2 edges to [[_COMMUNITY_Community 4]]
-- 2 edges to [[_COMMUNITY_Community 157]]
-- 1 edge to [[_COMMUNITY_Community 9]]
-- 1 edge to [[_COMMUNITY_Community 22]]
-- 1 edge to [[_COMMUNITY_Community 81]]
-- 1 edge to [[_COMMUNITY_Community 1137]]
+- 18 edges to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
+- 15 edges to [[_COMMUNITY_Community 156]]
+- 4 edges to [[_COMMUNITY_Community 29]]
+- 3 edges to [[_COMMUNITY_Community 41]]
+- 2 edges to [[_COMMUNITY_PII Sanitizer & E2E Tests]]
+- 2 edges to [[_COMMUNITY_Community 457]]
+- 2 edges to [[_COMMUNITY_Community 46]]
+- 1 edge to [[_COMMUNITY_Middleware & Lifespan]]
+- 1 edge to [[_COMMUNITY_Community 553]]
+- 1 edge to [[_COMMUNITY_Community 157]]
+- 1 edge to [[_COMMUNITY_Community 19]]
+- 1 edge to [[_COMMUNITY_Community 519]]
 
 ## Top bridge nodes
-- [[SlackAPIProxy]] - degree 38, connects to 8 communities
-- [[test_slack_proxy_coverage.py]] - degree 11, connects to 1 community
-- [[.test_redaction_count_access_error_is_non_fatal()]] - degree 5, connects to 1 community
-- [[.test_malformed_json_body_forwards_with_empty_payload()]] - degree 4, connects to 1 community
-- [[.test_unknown_content_type_ignored()]] - degree 4, connects to 1 community
+- [[KillSwitchConfig]] - degree 43, connects to 7 communities
+- [[KillSwitchMonitor]] - degree 80, connects to 5 communities
+- [[TestKillSwitchVerification]] - degree 13, connects to 3 communities
+- [[killswitch_monitor.py]] - degree 8, connects to 3 communities
+- [[Path_35]] - degree 5, connects to 2 communities

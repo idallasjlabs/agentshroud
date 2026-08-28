@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/github/SKILL.md"
 type: "concept"
-community: "Community 1024"
+community: "Community 1027"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1024
+  - community/Community_1027
 ---
 
 # gh CLI (GitHub)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[SKILL_209]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1024
+#graphify/concept #graphify/EXTRACTED #community/Community_1027

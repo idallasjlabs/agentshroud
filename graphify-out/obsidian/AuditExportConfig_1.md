@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/audit_export.py"
 type: "code"
-community: "Community 9"
+community: "RBAC & SOC Realtime"
 location: "L25"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_9
+  - community/RBAC__SOC_Realtime
 ---
 
 # AuditExportConfig
@@ -24,17 +24,17 @@ tags:
 - [[MCPProxyRequest]] - `uses` [INFERRED]
 - [[MCPResultRequest]] - `uses` [INFERRED]
 - [[OpProxyRequest]] - `uses` [INFERRED]
-- [[Request_1]] - `uses` [INFERRED]
+- [[Request_2]] - `uses` [INFERRED]
 - [[SSHExecRequest]] - `uses` [INFERRED]
 - [[SSHWriteFileRequest]] - `uses` [INFERRED]
 - [[TestAuditEvent]] - `uses` [INFERRED]
 - [[TestAuditExporter]] - `uses` [INFERRED]
 - [[TestAuditStore]] - `uses` [INFERRED]
 - [[TestAuditStoreBotId]] - `uses` [INFERRED]
-- [[WebSocket_2]] - `uses` [INFERRED]
+- [[WebSocket_3]] - `uses` [INFERRED]
 - [[audit_export.py]] - `contains` [EXTRACTED]
 - [[main.py_2]] - `imports` [EXTRACTED]
 - [[soc_export()]] - `calls` [EXTRACTED]
 - [[test_audit_export.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_9
+#graphify/code #graphify/INFERRED #community/RBAC__SOC_Realtime

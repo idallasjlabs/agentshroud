@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-hdev/SKILL.md"
 type: "document"
-community: "Community 660"
+community: "Community 945"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_660
+  - community/Community_945
 ---
 
 # Hermes Dev Workflow (HDEV) Skill
@@ -21,4 +21,4 @@ tags:
 - [[omlx local model (DeepSeek-R1-0528-Qwen3-8B)]] - `references` [EXTRACTED]
 - [[scriptssmoke.sh (static startup smoke suite)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_660
+#graphify/document #graphify/EXTRACTED #community/Community_945

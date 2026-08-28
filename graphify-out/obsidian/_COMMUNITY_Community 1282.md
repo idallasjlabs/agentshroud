@@ -1,21 +1,20 @@
 ---
 type: community
-members: 8
+cohesion: 0.40
+members: 5
 ---
 
 # Community 1282
 
-**Members:** 8 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[._patch_all()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_all_clean()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_all_not_run_is_not_configured()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_critical_dominates()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_high_means_warning()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[Any_71]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestAggregateResults_1]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[_stub_summary()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_five_running_zero_findings()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[.test_four_running_with_noncritical_findings()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[.test_one_when_not_run()_1]] - code - gateway/tests/test_scorecard_scoring.py
+- [[.test_two_with_criticals()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[TestScoreRuntimeProtection_1]] - code - gateway/tests/test_scorecard_scoring.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,8 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 48]]
+- 1 edge to [[_COMMUNITY_Community 646]]
 
 ## Top bridge nodes
-- [[TestAggregateResults_1]] - degree 6, connects to 1 community
-- [[_stub_summary()]] - degree 3, connects to 1 community
+- [[TestScoreRuntimeProtection_1]] - degree 5, connects to 1 community

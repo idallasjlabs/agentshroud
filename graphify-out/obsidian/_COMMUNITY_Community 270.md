@@ -1,37 +1,44 @@
 ---
 type: community
-members: 24
+cohesion: 0.15
+members: 29
 ---
 
 # Community 270
 
-**Members:** 24 nodes
+**Cohesion:** 0.15 - loosely connected
+**Members:** 29 nodes
 
 ## Members
-- [[.is_injection()]] - code - gateway/security/heuristic_classifier.py
-- [[.is_uncertain()]] - code - gateway/security/heuristic_classifier.py
-- [[.setup_method()_6]] - code - gateway/tests/test_heuristic_classifier.py
-- [[.test_backward_compat_alias()]] - code - gateway/tests/test_heuristic_classifier.py
-- [[.test_benign_text_low_score()]] - code - gateway/tests/test_heuristic_classifier.py
-- [[.test_classification_result_properties()]] - code - gateway/tests/test_heuristic_classifier.py
-- [[.test_clear_injection_high_score()]] - code - gateway/tests/test_heuristic_classifier.py
-- [[.test_cyrillic_homoglyph()]] - code - gateway/tests/test_heuristic_classifier.py
-- [[.test_empty_text()_1]] - code - gateway/tests/test_heuristic_classifier.py
-- [[.test_encoding_evasion()]] - code - gateway/tests/test_heuristic_classifier.py
-- [[.test_exfiltration_attempt()]] - code - gateway/tests/test_heuristic_classifier.py
-- [[.test_long_benign_text()]] - code - gateway/tests/test_heuristic_classifier.py
-- [[.test_model_not_loaded_by_default()]] - code - gateway/tests/test_heuristic_classifier.py
-- [[.test_multi_signal_increases_confidence()]] - code - gateway/tests/test_heuristic_classifier.py
-- [[.test_roleplay_attack()]] - code - gateway/tests/test_heuristic_classifier.py
-- [[.test_separator_injection()]] - code - gateway/tests/test_heuristic_classifier.py
-- [[.test_unicode_anomaly()]] - code - gateway/tests/test_heuristic_classifier.py
-- [[ClassificationResult]] - code - gateway/security/heuristic_classifier.py
-- [[InjectionClassifier alias should still work.]] - rationale - gateway/tests/test_heuristic_classifier.py
-- [[Result of injection classification.]] - rationale - gateway/security/heuristic_classifier.py
-- [[Test the heuristic injection classifier.]] - rationale - gateway/tests/test_heuristic_classifier.py
-- [[TestHeuristicClassifier]] - code - gateway/tests/test_heuristic_classifier.py
-- [[heuristic_classifier.py (HeuristicClassifier)]] - code - gateway/security/heuristic_classifier.py
-- [[test_heuristic_classifier.py]] - code - gateway/tests/test_heuristic_classifier.py
+- [[animation_timer_cb()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[app_main()_1]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/examples/basic_cycle/main/main.c
+- [[draw_eye()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[draw_mouth()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[emotion_cycle_task()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/examples/basic_cycle/main/main.c
+- [[esp_err_t_1]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[face_animation_deinit()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[face_animation_init()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[face_animation_update()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[face_config_t]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[face_emotion_t]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[face_get_container()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[face_get_emotion()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[face_lock()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[face_malloc_canvas()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[face_set_auto_blink()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[face_set_emotion()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[face_set_eye_openness()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[face_set_lvgl_lock_fns()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[face_set_mouth_shape()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[face_set_position()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[face_trigger_blink()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[face_unlock()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[lv_obj_t]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[lv_timer_t]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[lvgl_kawaii_face.c]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[lvgl_kawaii_face.h]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/include/lvgl_kawaii_face.h
+- [[main.c]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/examples/basic_cycle/main/main.c
+- [[update_emotion_parameters()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
 
 ## Live Query (requires Dataview plugin)
 
@@ -41,11 +48,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_Community 263]]
-- 1 edge to [[_COMMUNITY_Community 799]]
+- 4 edges to [[_COMMUNITY_Community 446]]
+- 2 edges to [[_COMMUNITY_Community 90]]
+- 1 edge to [[_COMMUNITY_Community 36]]
 
 ## Top bridge nodes
-- [[ClassificationResult]] - degree 10, connects to 2 communities
-- [[TestHeuristicClassifier]] - degree 19, connects to 1 community
-- [[test_heuristic_classifier.py]] - degree 4, connects to 1 community
-- [[.setup_method()_6]] - degree 2, connects to 1 community
+- [[lvgl_kawaii_face.c]] - degree 21, connects to 2 communities
+- [[face_set_emotion()]] - degree 12, connects to 2 communities
+- [[face_animation_init()]] - degree 10, connects to 1 community
+- [[main.c]] - degree 4, connects to 1 community

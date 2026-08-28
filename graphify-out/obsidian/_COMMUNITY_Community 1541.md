@@ -1,17 +1,17 @@
 ---
 type: community
-members: 4
+cohesion: 1.00
+members: 2
 ---
 
 # Community 1541
 
-**Members:** 4 nodes
+**Cohesion:** 1.00 - tightly connected
+**Members:** 2 nodes
 
 ## Members
-- [[2. Security Value Audit]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[⚠️ Partial Value  Needs Hardening]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[✅ Genuine Security Value]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[🚫 Security Theater]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[plan_2]] - document - skills/custom/agentshroud-blueteam/references/steve-hay-plan.md
+- [[steve-hay-plan]] - document - skills/custom/agentshroud-blueteam/references/steve-hay-plan.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,9 +19,3 @@ members: 4
 TABLE source_file, type FROM #community/Community_1541
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 135]]
-
-## Top bridge nodes
-- [[2. Security Value Audit]] - degree 4, connects to 1 community

@@ -1,133 +1,136 @@
 ---
 type: community
-members: 120
+cohesion: 0.03
+members: 121
 ---
 
 # Community 21
 
-**Members:** 120 nodes
+**Cohesion:** 0.03 - loosely connected
+**Members:** 121 nodes
 
 ## Members
-- [[.__init__()_74]] - code - gateway/security/egress_approval.py
-- [[._append_decision()]] - code - gateway/security/egress_approval.py
-- [[._assess_risk()]] - code - gateway/security/egress_approval.py
-- [[._check_existing_rule()]] - code - gateway/security/egress_approval.py
-- [[._load_rules()]] - code - gateway/security/egress_approval.py
-- [[._rule_to_dict()]] - code - gateway/security/egress_approval.py
-- [[._save_rules()]] - code - gateway/security/egress_approval.py
-- [[.add_rule()]] - code - gateway/security/egress_approval.py
-- [[.approval_queue()]] - code - gateway/tests/test_egress_approval.py
-- [[.approve()]] - code - gateway/security/egress_approval.py
-- [[.cleanup_expired()_2]] - code - gateway/security/egress_approval.py
-- [[.deny()]] - code - gateway/security/egress_approval.py
-- [[.from_dict()_6]] - code - gateway/security/egress_approval.py
-- [[.get_all_rules()]] - code - gateway/security/egress_approval.py
-- [[.get_decision_log()]] - code - gateway/security/egress_approval.py
-- [[.get_emergency_status()]] - code - gateway/security/egress_approval.py
-- [[.get_pending_requests()]] - code - gateway/security/egress_approval.py
-- [[.get_rules_for_user()]] - code - gateway/security/egress_approval.py
-- [[.log_external_decision()]] - code - gateway/security/egress_approval.py
-- [[.matches()]] - code - gateway/security/egress_approval.py
-- [[.mock_app_state()]] - code - gateway/tests/test_egress_approval.py
-- [[.mock_auth()]] - code - gateway/tests/test_egress_approval.py
-- [[.preload_permanent_rules()]] - code - gateway/security/egress_approval.py
-- [[.remove_rule()]] - code - gateway/security/egress_approval.py
-- [[.request_approval()]] - code - gateway/security/egress_approval.py
-- [[.revoke_decision()]] - code - gateway/security/egress_approval.py
-- [[.set_emergency_block_all()]] - code - gateway/security/egress_approval.py
-- [[.set_event_bus()_1]] - code - gateway/security/egress_approval.py
-- [[.temp_rules_file()]] - code - gateway/tests/test_egress_approval.py
-- [[.test_add_egress_rule_endpoint()]] - code - gateway/tests/test_egress_approval.py
-- [[.test_allowlist_persistence()]] - code - gateway/tests/test_egress_approval.py
-- [[.test_approval_flow_once()]] - code - gateway/tests/test_egress_approval.py
-- [[.test_approval_flow_permanent()]] - code - gateway/tests/test_egress_approval.py
-- [[.test_approval_flow_session()]] - code - gateway/tests/test_egress_approval.py
-- [[.test_cleanup_expired_requests()]] - code - gateway/tests/test_egress_approval.py
-- [[.test_denial_flow()]] - code - gateway/tests/test_egress_approval.py
-- [[.test_denylist_persistence()]] - code - gateway/tests/test_egress_approval.py
-- [[.test_emergency_block_all_denies_requests()]] - code - gateway/tests/test_egress_approval.py
-- [[.test_existing_rule_bypass()]] - code - gateway/tests/test_egress_approval.py
-- [[.test_get_egress_rules_endpoint()]] - code - gateway/tests/test_egress_approval.py
-- [[.test_log_external_decision_basic()]] - code - gateway/tests/test_egress_approval.py
-- [[.test_log_external_decision_cap()]] - code - gateway/tests/test_egress_approval.py
-- [[.test_log_external_decision_different_agent_same_domain()]] - code - gateway/tests/test_egress_approval.py
-- [[.test_log_external_decision_throttle_same_agent_domain()]] - code - gateway/tests/test_egress_approval.py
-- [[.test_pending_requests_endpoint()]] - code - gateway/tests/test_egress_approval.py
-- [[.test_remove_egress_rule_endpoint()]] - code - gateway/tests/test_egress_approval.py
-- [[.test_risk_assessment_green()]] - code - gateway/tests/test_egress_approval.py
-- [[.test_risk_assessment_red()]] - code - gateway/tests/test_egress_approval.py
-- [[.test_risk_assessment_yellow()]] - code - gateway/tests/test_egress_approval.py
-- [[.test_rule_management()]] - code - gateway/tests/test_egress_approval.py
-- [[.test_session_rules_not_persisted()]] - code - gateway/tests/test_egress_approval.py
-- [[.test_timeout_behavior()]] - code - gateway/tests/test_egress_approval.py
-- [[.to_dict()_9]] - code - gateway/security/egress_approval.py
-- [[Add or modify an egress rule.          Args             domain Target domain]] - rationale - gateway/security/egress_approval.py
-- [[Append an entry to the capped decision audit log (CC-40).]] - rationale - gateway/security/egress_approval.py
-- [[Approve a pending egress request.          Args             request_id ID of r]] - rationale - gateway/security/egress_approval.py
-- [[Assess risk level for a domainport combination.          Returns             R]] - rationale - gateway/security/egress_approval.py
-- [[Check if domain matches an existing rule.]] - rationale - gateway/security/egress_approval.py
-- [[Create EgressApprovalQueue instance for testing.]] - rationale - gateway/tests/test_egress_approval.py
-- [[Create temporary rules file for testing.]] - rationale - gateway/tests/test_egress_approval.py
-- [[Decision log is capped at 500 entries.]] - rationale - gateway/tests/test_egress_approval.py
-- [[Defines who an egress rule applies to.      kind values       all   — applies]] - rationale - gateway/security/egress_approval.py
-- [[Deny a pending egress request.          Args             request_id ID of requ]] - rationale - gateway/security/egress_approval.py
-- [[Different agent_ids for the same domain each produce their own log entry.]] - rationale - gateway/tests/test_egress_approval.py
-- [[EgressApprovalQueue]] - code - gateway/security/egress_approval.py
-- [[EgressRequest]] - code - gateway/security/egress_approval.py
-- [[EgressRule]] - code - gateway/security/egress_approval.py
-- [[EgressScope]] - code - gateway/security/egress_approval.py
-- [[Emergency block-all should deny all new approval requests.]] - rationale - gateway/tests/test_egress_approval.py
-- [[Enabledisable emergency global egress deny.]] - rationale - gateway/security/egress_approval.py
-- [[Get all rules (permanent and session) with scope information.]] - rationale - gateway/security/egress_approval.py
-- [[Get emergency block-all state.]] - rationale - gateway/security/egress_approval.py
-- [[Get list of pending approval requests.]] - rationale - gateway/security/egress_approval.py
-- [[Initialize the approval queue.          Args             rules_file Path to pe]] - rationale - gateway/security/egress_approval.py
-- [[Load rules from persistent storage.]] - rationale - gateway/security/egress_approval.py
-- [[Log an automatic allowdeny from EgressFilter.check() (non-interactive).]] - rationale - gateway/security/egress_approval.py
-- [[Mock app_state with egress approval queue.]] - rationale - gateway/tests/test_egress_approval.py
-- [[Mock authentication dependency.]] - rationale - gateway/tests/test_egress_approval.py
-- [[Pre-approve known service domains at startup without interactive prompts.]] - rationale - gateway/security/egress_approval.py
-- [[Public risk assessment helper for managementAPI surfaces.]] - rationale - gateway/security/egress_approval.py
-- [[Remove an egress rule.          Args             domain Domain to remove rule]] - rationale - gateway/security/egress_approval.py
-- [[Remove expired session rules and timed-out requests.]] - rationale - gateway/security/egress_approval.py
-- [[Represents a pending egress approval request.]] - rationale - gateway/security/egress_approval.py
-- [[Represents an egress allowdeny rule.]] - rationale - gateway/security/egress_approval.py
-- [[Request approval for egress to a domainport.          Args             domain]] - rationale - gateway/security/egress_approval.py
-- [[Return True if this scope applies to the given user context.]] - rationale - gateway/security/egress_approval.py
-- [[Return all rules whose scope matches the given user context (synchronous, lock-f]] - rationale - gateway/security/egress_approval.py
-- [[Return recent approvaldenial decisions (CC-40).]] - rationale - gateway/security/egress_approval.py
-- [[Revoke an active rule associated with a decision log entry (CC-40).]] - rationale - gateway/security/egress_approval.py
-- [[Risk assessment levels for egress requests.]] - rationale - gateway/security/egress_approval.py
-- [[RiskLevel_3]] - code - gateway/security/egress_approval.py
-- [[Save rules to persistent storage.]] - rationale - gateway/security/egress_approval.py
-- [[Second call within 1 hour for the same (agent_id, domain) is suppressed.]] - rationale - gateway/tests/test_egress_approval.py
-- [[Set optional event bus for approval telemetry.]] - rationale - gateway/security/egress_approval.py
-- [[Test DELETE manageegressrules{domain} endpoint logic.]] - rationale - gateway/tests/test_egress_approval.py
-- [[Test GET manageegresspending endpoint logic.]] - rationale - gateway/tests/test_egress_approval.py
-- [[Test GET manageegressrules endpoint.]] - rationale - gateway/tests/test_egress_approval.py
-- [[Test POST manageegressrules endpoint logic.]] - rationale - gateway/tests/test_egress_approval.py
-- [[Test adding and removing rules.]] - rationale - gateway/tests/test_egress_approval.py
-- [[Test approval flow with one-time approval.]] - rationale - gateway/tests/test_egress_approval.py
-- [[Test approval flow with permanent rule creation.]] - rationale - gateway/tests/test_egress_approval.py
-- [[Test approval flow with session rule creation.]] - rationale - gateway/tests/test_egress_approval.py
-- [[Test cleanup of expired pending requests.]] - rationale - gateway/tests/test_egress_approval.py
-- [[Test denial flow with rule creation.]] - rationale - gateway/tests/test_egress_approval.py
-- [[Test request timeout behavior.]] - rationale - gateway/tests/test_egress_approval.py
-- [[Test risk assessment for high-risk targets.]] - rationale - gateway/tests/test_egress_approval.py
-- [[Test risk assessment for known-safe domains.]] - rationale - gateway/tests/test_egress_approval.py
-- [[Test risk assessment for unknown domains on standard ports.]] - rationale - gateway/tests/test_egress_approval.py
-- [[Test suite for EgressApprovalQueue functionality.]] - rationale - gateway/tests/test_egress_approval.py
-- [[Test suite for egress approval API endpoints.]] - rationale - gateway/tests/test_egress_approval.py
-- [[Test that allowlist rules are persisted to disk.]] - rationale - gateway/tests/test_egress_approval.py
-- [[Test that denylist rules are persisted to disk.]] - rationale - gateway/tests/test_egress_approval.py
-- [[Test that existing rules bypass the approval queue.]] - rationale - gateway/tests/test_egress_approval.py
-- [[Test that session rules are not persisted to disk.]] - rationale - gateway/tests/test_egress_approval.py
-- [[TestEgressApprovalAPI]] - code - gateway/tests/test_egress_approval.py
-- [[TestEgressApprovalQueue]] - code - gateway/tests/test_egress_approval.py
-- [[Thread-safe asyncio queue for managing egress approval requests.      Features]] - rationale - gateway/security/egress_approval.py
-- [[egress_approval.py]] - code - gateway/security/egress_approval.py
-- [[log_external_decision appends an entry to the decision log.]] - rationale - gateway/tests/test_egress_approval.py
-- [[test_egress_approval.py]] - code - gateway/tests/test_egress_approval.py
+- [[.__init__()_12]] - code - gateway/ingest_api/event_bus.py
+- [[.emit()]] - code - gateway/ingest_api/event_bus.py
+- [[.get_recent()]] - code - gateway/ingest_api/event_bus.py
+- [[.get_stats()]] - code - gateway/ingest_api/event_bus.py
+- [[.subscribe()]] - code - gateway/ingest_api/event_bus.py
+- [[.test_scoped_ws_token_is_single_use()]] - code - gateway/tests/test_security_fixes.py
+- [[.test_ws_activity_accepts_scoped_token()]] - code - gateway/tests/test_security_fixes.py
+- [[.test_ws_activity_accepts_valid_token()]] - code - gateway/tests/test_security_fixes.py
+- [[.test_ws_approvals_accepts_valid_token()]] - code - gateway/tests/test_security_fixes.py
+- [[.to_dict()]] - code - gateway/ingest_api/event_bus.py
+- [[.unsubscribe()]] - code - gateway/ingest_api/event_bus.py
+- [[3+ auth failures in 5 min escalates to critical]] - rationale - gateway/tests/test_event_bus.py
+- [[3+ auth failures within 5 minutes escalates event severity to critical]] - concept - gateway/tests/test_event_bus.py
+- [[A single gateway event]] - rationale - gateway/ingest_api/event_bus.py
+- [[Any_6]] - code - gateway/ingest_api/event_bus.py
+- [[Auth dependency that uses the app state config._1]] - rationale - gateway/ingest_api/routes/dashboard.py
+- [[AuthRequired_2]] - code - gateway/ingest_api/routes/dashboard.py
+- [[Build compact egress dashboard snapshot for websocketAPI clients.]] - rationale - gateway/ingest_api/routes/dashboard.py
+- [[Consolidated SOC report for dashboardSIEM pull workflows.]] - rationale - gateway/ingest_api/main.py
+- [[Create a short-lived WebSocket-only token.]] - rationale - gateway/ingest_api/routes/dashboard.py
+- [[Dashboard HTML uses data attributes instead of onclick for approvals]] - rationale - gateway/tests/test_dashboard.py
+- [[Emit an event to all subscribers]] - rationale - gateway/ingest_api/event_bus.py
+- [[Emitting with no subscribers doesn't raise]] - rationale - gateway/tests/test_event_bus.py
+- [[EventBus]] - code - gateway/ingest_api/event_bus.py
+- [[Events have type, timestamp, summary, details, severity]] - rationale - gateway/tests/test_event_bus.py
+- [[Fallback activity entries when tracker data is unavailableempty.]] - rationale - gateway/ingest_api/routes/dashboard.py
+- [[Fallback activity summary when tracker data is unavailableempty.]] - rationale - gateway/ingest_api/routes/dashboard.py
+- [[GET dashboard includes Content-Security-Policy header]] - rationale - gateway/tests/test_dashboard.py
+- [[GET dashboard without auth returns 403]] - rationale - gateway/tests/test_dashboard.py
+- [[GET dashboardstats returns JSON stats]] - rationale - gateway/tests/test_dashboard.py
+- [[GET dashboardstats without auth returns 401]] - rationale - gateway/tests/test_dashboard.py
+- [[GatewayEvent]] - code - gateway/ingest_api/event_bus.py
+- [[Helper to create a GatewayEvent with current timestamp]] - rationale - gateway/ingest_api/event_bus.py
+- [[JSON stats for dashboard]] - rationale - gateway/ingest_api/routes/dashboard.py
+- [[Load contributor logs from multiple directories with de-dup by filename.]] - rationale - gateway/ingest_api/routes/dashboard.py
+- [[Multiple subscribers all receive the same event]] - rationale - gateway/tests/test_event_bus.py
+- [[Path_2]] - code - gateway/ingest_api/routes/dashboard.py
+- [[Recent events are returned in order]] - rationale - gateway/tests/test_event_bus.py
+- [[Regression (SCRUM-61) apialerts used to call event_bus.publish(),     a metho]] - rationale - gateway/tests/test_alert_telegram_relay.py
+- [[Request_4]] - code - gateway/ingest_api/routes/dashboard.py
+- [[Resolve contributor log directories (ordered, de-duplicated).]] - rationale - gateway/ingest_api/routes/dashboard.py
+- [[Return a short-lived WS-only auth token for cookie-authenticated sessions.]] - rationale - gateway/ingest_api/routes/dashboard.py
+- [[Return collaborator data from the shared bot workspace volume.      Reads COLLAB]] - rationale - gateway/ingest_api/routes/dashboard.py
+- [[Scoped WS token should be consumed after first use (single-use)]] - rationale - gateway/tests/test_security_fixes.py
+- [[Serve the dashboard HTML (requires auth via query param or cookie)      On first]] - rationale - gateway/ingest_api/routes/dashboard.py
+- [[Simple in-process event bus with async support]] - rationale - gateway/ingest_api/event_bus.py
+- [[Stats track event counts]] - rationale - gateway/tests/test_event_bus.py
+- [[Subscribe to all events]] - rationale - gateway/ingest_api/event_bus.py
+- [[Subscriber receives emitted events]] - rationale - gateway/tests/test_event_bus.py
+- [[Sync TestClient for WebSocket tests]] - rationale - gateway/tests/test_dashboard.py
+- [[Unsubscribe from events]] - rationale - gateway/ingest_api/event_bus.py
+- [[Unsubscribed callback stops receiving events]] - rationale - gateway/tests/test_event_bus.py
+- [[Validate a WebSocket token (single-use, time-limited).]] - rationale - gateway/ingest_api/routes/dashboard.py
+- [[WS wsactivity accepts valid scoped WS token]] - rationale - gateway/tests/test_security_fixes.py
+- [[WS wsactivity should accept scoped ws_ token]] - rationale - gateway/tests/test_security_fixes.py
+- [[WS wsapprovals accepts valid scoped WS token]] - rationale - gateway/tests/test_security_fixes.py
+- [[WebSocket_4]] - code - gateway/ingest_api/routes/approval.py
+- [[WebSocket_5]] - code - gateway/ingest_api/routes/dashboard.py
+- [[WebSocket wsactivity connects and authenticates via scoped WS token]] - rationale - gateway/tests/test_dashboard.py
+- [[WebSocket wsactivity receives emitted events]] - rationale - gateway/tests/test_dashboard.py
+- [[WebSocket wsactivity rejects bad auth during handshake]] - rationale - gateway/tests/test_dashboard.py
+- [[WebSocket wsegress connects and emits egress snapshot.]] - rationale - gateway/tests/test_dashboard.py
+- [[WebSocket wsegress should forward auth_ events for SOC visibility.]] - rationale - gateway/tests/test_dashboard.py
+- [[WebSocket wsegress should forward privacy_ events.]] - rationale - gateway/tests/test_dashboard.py
+- [[WebSocket wsegress should forward scanner_result events.]] - rationale - gateway/tests/test_dashboard.py
+- [[WebSocket endpoint for real-time approval notifications      Protocol     1. Cl]] - rationale - gateway/ingest_api/routes/approval.py
+- [[WebSocket for real-time activity feed]] - rationale - gateway/ingest_api/routes/dashboard.py
+- [[WebSocket stream specialized for egresssecurity dashboard updates.]] - rationale - gateway/ingest_api/routes/dashboard.py
+- [[_build_activity_entries_from_contributor_logs()]] - code - gateway/ingest_api/routes/dashboard.py
+- [[_build_activity_summary_from_contributor_logs()]] - code - gateway/ingest_api/routes/dashboard.py
+- [[_build_egress_live_snapshot()]] - code - gateway/ingest_api/routes/dashboard.py
+- [[_create_ws_token()]] - code - gateway/ingest_api/routes/dashboard.py
+- [[_load_contributor_logs()]] - code - gateway/ingest_api/routes/dashboard.py
+- [[_parse_collaborator_log_dirs()]] - code - gateway/ingest_api/routes/dashboard.py
+- [[_validate_ws_token()]] - code - gateway/ingest_api/routes/dashboard.py
+- [[activity_websocket()]] - code - gateway/ingest_api/routes/dashboard.py
+- [[approval_websocket()]] - code - gateway/ingest_api/routes/approval.py
+- [[auth_dep()_2]] - code - gateway/ingest_api/routes/dashboard.py
+- [[bus()]] - code - gateway/tests/test_event_bus.py
+- [[dashboard.py]] - code - gateway/ingest_api/routes/dashboard.py
+- [[dashboard_stats()]] - code - gateway/ingest_api/routes/dashboard.py
+- [[dashboard_ws_token()]] - code - gateway/ingest_api/routes/dashboard.py
+- [[egress_websocket()]] - code - gateway/ingest_api/routes/dashboard.py
+- [[event_bus.py_1]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
+- [[get_collaborators()]] - code - gateway/ingest_api/routes/dashboard.py
+- [[make_event()]] - code - gateway/ingest_api/event_bus.py
+- [[serve_dashboard()]] - code - gateway/ingest_api/routes/dashboard.py
+- [[soc_report()]] - code - gateway/ingest_api/main.py
+- [[sync_client()]] - code - gateway/tests/test_dashboard.py
+- [[test_api_alerts_endpoint_emits_bus_event()]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[test_async_subscriber()]] - code - gateway/tests/test_event_bus.py
+- [[test_auth_failure_escalation()]] - code - gateway/tests/test_event_bus.py
+- [[test_build_activity_entries_from_contributor_logs()]] - code - gateway/tests/test_dashboard.py
+- [[test_build_activity_entries_from_contributor_logs_accepts_non_bullet_and_zulu_time()]] - code - gateway/tests/test_dashboard.py
+- [[test_build_activity_summary_from_contributor_logs()]] - code - gateway/tests/test_dashboard.py
+- [[test_build_activity_summary_from_contributor_logs_accepts_non_bullet_lines()]] - code - gateway/tests/test_dashboard.py
+- [[test_build_egress_live_snapshot_enriches_pending_metrics()]] - code - gateway/tests/test_dashboard.py
+- [[test_collaborators_endpoint_reads_configured_contributor_sources()]] - code - gateway/tests/test_dashboard.py
+- [[test_dashboard.py]] - code - gateway/tests/test_dashboard.py
+- [[test_dashboard_has_csp_header()]] - code - gateway/tests/test_dashboard.py
+- [[test_dashboard_requires_auth()]] - code - gateway/tests/test_dashboard.py
+- [[test_dashboard_stats_endpoint()]] - code - gateway/tests/test_dashboard.py
+- [[test_dashboard_stats_requires_auth()]] - code - gateway/tests/test_dashboard.py
+- [[test_dashboard_xss_prevention()]] - code - gateway/tests/test_dashboard.py
+- [[test_emit_no_subscribers_no_error()]] - code - gateway/tests/test_event_bus.py
+- [[test_emit_to_multiple_subscribers()]] - code - gateway/tests/test_event_bus.py
+- [[test_event_bus.py]] - code - gateway/tests/test_event_bus.py
+- [[test_event_has_required_fields()]] - code - gateway/tests/test_event_bus.py
+- [[test_get_recent()]] - code - gateway/tests/test_event_bus.py
+- [[test_get_stats()_1]] - code - gateway/tests/test_event_bus.py
+- [[test_load_contributor_logs_reads_multiple_dirs_and_dedupes()]] - code - gateway/tests/test_dashboard.py
+- [[test_parse_collaborator_log_dirs_dedupes_and_preserves_order()]] - code - gateway/tests/test_dashboard.py
+- [[test_subscribe_receive_events()]] - code - gateway/tests/test_event_bus.py
+- [[test_unsubscribe_stops_events()]] - code - gateway/tests/test_event_bus.py
+- [[test_ws_activity_connects()]] - code - gateway/tests/test_dashboard.py
+- [[test_ws_activity_receives_events()]] - code - gateway/tests/test_dashboard.py
+- [[test_ws_activity_requires_auth()]] - code - gateway/tests/test_dashboard.py
+- [[test_ws_egress_connects_and_snapshot()]] - code - gateway/tests/test_dashboard.py
+- [[test_ws_egress_receives_auth_event()]] - code - gateway/tests/test_dashboard.py
+- [[test_ws_egress_receives_privacy_event()]] - code - gateway/tests/test_dashboard.py
+- [[test_ws_egress_receives_scanner_event()]] - code - gateway/tests/test_dashboard.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -137,23 +140,30 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_Community 9]]
-- 6 edges to [[_COMMUNITY_Community 53]]
-- 4 edges to [[_COMMUNITY_Community 374]]
+- 31 edges to [[_COMMUNITY_Ingest API & Approval Routes]]
+- 8 edges to [[_COMMUNITY_Community 124]]
+- 5 edges to [[_COMMUNITY_SOC Collaborators]]
+- 5 edges to [[_COMMUNITY_Community 15]]
+- 4 edges to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
+- 4 edges to [[_COMMUNITY_Community 20]]
+- 3 edges to [[_COMMUNITY_Community 26]]
+- 3 edges to [[_COMMUNITY_Community 65]]
+- 3 edges to [[_COMMUNITY_Community 197]]
+- 2 edges to [[_COMMUNITY_Middleware & Lifespan]]
+- 2 edges to [[_COMMUNITY_Community 159]]
 - 2 edges to [[_COMMUNITY_Community 78]]
-- 2 edges to [[_COMMUNITY_Community 6]]
-- 2 edges to [[_COMMUNITY_Community 19]]
-- 2 edges to [[_COMMUNITY_Community 111]]
-- 1 edge to [[_COMMUNITY_Community 557]]
-- 1 edge to [[_COMMUNITY_Community 4]]
-- 1 edge to [[_COMMUNITY_Community 77]]
-- 1 edge to [[_COMMUNITY_Community 799]]
-- 1 edge to [[_COMMUNITY_Community 251]]
-- 1 edge to [[_COMMUNITY_Community 109]]
+- 1 edge to [[_COMMUNITY_RBAC & SOC Realtime]]
+- 1 edge to [[_COMMUNITY_Community 39]]
+- 1 edge to [[_COMMUNITY_Community 473]]
+- 1 edge to [[_COMMUNITY_Community 49]]
+- 1 edge to [[_COMMUNITY_Community 70]]
+- 1 edge to [[_COMMUNITY_Community 420]]
+- 1 edge to [[_COMMUNITY_Community 884]]
+- 1 edge to [[_COMMUNITY_Community 85]]
 
 ## Top bridge nodes
-- [[egress_approval.py]] - degree 11, connects to 6 communities
-- [[EgressApprovalQueue]] - degree 35, connects to 3 communities
-- [[TestEgressApprovalAPI]] - degree 15, connects to 3 communities
-- [[TestEgressApprovalQueue]] - degree 29, connects to 2 communities
-- [[.request_approval()]] - degree 7, connects to 2 communities
+- [[make_event()]] - degree 57, connects to 12 communities
+- [[EventBus]] - degree 25, connects to 6 communities
+- [[dashboard.py]] - degree 23, connects to 4 communities
+- [[test_dashboard.py]] - degree 31, connects to 2 communities
+- [[soc_report()]] - degree 10, connects to 2 communities

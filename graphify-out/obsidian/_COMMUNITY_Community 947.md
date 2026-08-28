@@ -1,21 +1,23 @@
 ---
 type: community
+cohesion: 0.29
 members: 8
 ---
 
 # Community 947
 
+**Cohesion:** 0.29 - loosely connected
 **Members:** 8 nodes
 
 ## Members
-- [[4. Skill System]] - document - docs/architecture/agentic-os.md
-- [[59 Skills by Category]] - document - docs/architecture/agentic-os.md
-- [[Key Skills in Detail]] - document - docs/architecture/agentic-os.md
-- [[`cr` — Code Review]] - document - docs/architecture/agentic-os.md
-- [[`gg` — Git Workflow Guardian]] - document - docs/architecture/agentic-os.md
-- [[`sec-defense` — Blue Team STPA-Sec Auditor]] - document - docs/architecture/agentic-os.md
-- [[`sec-offense` — Red Team Adversarial Tester]] - document - docs/architecture/agentic-os.md
-- [[`tdd` — Test-Driven Development Coach]] - document - docs/architecture/agentic-os.md
+- [[SecureBrowser SKILL]] - document - skills/custom/securebrowser/SKILL.md
+- [[SecureBrowser Skill README]] - document - skills/custom/securebrowser/README.md
+- [[appendLog()_3]] - code - skills/custom/browser-fetch/browser-fetch.js
+- [[browser-fetch.js]] - code - skills/custom/browser-fetch/browser-fetch.js
+- [[browserFetch()_3]] - code - skills/custom/browser-fetch/browser-fetch.js
+- [[fs_4]] - code - skills/custom/browser-fetch/browser-fetch.js
+- [[path_4]] - code - skills/custom/browser-fetch/browser-fetch.js
+- [[{ chromium }_3]] - code - skills/custom/browser-fetch/browser-fetch.js
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,9 +25,3 @@ members: 8
 TABLE source_file, type FROM #community/Community_947
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 131]]
-
-## Top bridge nodes
-- [[4. Skill System]] - degree 3, connects to 1 community

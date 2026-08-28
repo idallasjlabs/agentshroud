@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/agents/i-security-reviewer.md"
 type: "document"
-community: "Community 1454"
+community: "Community 1470"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1454
+  - community/Community_1470
 ---
 
 # i-security-reviewer.md
 
 ## Connections
-- [[security-reviewer_1]] - `contains` [EXTRACTED]
+- [[security-reviewer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1454
+#graphify/document #graphify/EXTRACTED #community/Community_1470

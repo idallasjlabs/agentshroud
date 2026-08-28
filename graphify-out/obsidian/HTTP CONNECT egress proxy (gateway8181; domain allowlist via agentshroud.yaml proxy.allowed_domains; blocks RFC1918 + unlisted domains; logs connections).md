@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-13-network-security-egress.png"
 type: "concept"
-community: "Community 280"
+community: "Community 554"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_280
+  - community/Community_554
 ---
 
 # HTTP CONNECT egress proxy (gateway:8181; domain allowlist via agentshroud.yaml proxy.allowed_domains; blocks RFC1918 + unlisted domains; logs connections)
@@ -19,4 +19,4 @@ tags:
 - [[Telegram Message Sequence Diagram]] - `conceptually_related_to` [EXTRACTED]
 - [[Trust Zone 2 — Bot (Supervised Agent no direct credentialinternet access)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_280
+#graphify/concept #graphify/EXTRACTED #community/Community_554

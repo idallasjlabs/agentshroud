@@ -1,18 +1,17 @@
 ---
-source_file: "firmware/voice-terminal/SETUP.md"
+source_file: ".agents/skills/i-icloud/SKILL.md"
 type: "document"
-community: "Community 785"
-location: "L1"
+community: "Community 316"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_785
+  - community/Community_316
 ---
 
-# SETUP.md
+# Setup
 
 ## Connections
-- [[ESP32-S3-BOX-3 Voice Terminal — Manual Setup Runbook]] - `contains` [EXTRACTED]
-- [[Voice Terminal CMakeLists (IDF v5.4 BSP patch)]] - `references` [EXTRACTED]
+- [[iCloud Services]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_785
+#graphify/document #graphify/EXTRACTED #community/Community_316

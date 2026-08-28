@@ -1,16 +1,18 @@
 ---
 type: community
+cohesion: 0.67
 members: 3
 ---
 
 # Community 1380
 
+**Cohesion:** 0.67 - moderately connected
 **Members:** 3 nodes
 
 ## Members
-- [[Step 2.5 - Transcribe video  audio files (only if video files detected)_1]] - document - docker/config/hermes/skills/graphify/references/transcribe.md
-- [[graphify reference transcribe video and audio_1]] - document - docker/config/hermes/skills/graphify/references/transcribe.md
-- [[transcribe_1]] - document - docker/config/hermes/skills/graphify/references/transcribe.md
+- [[browser-fetch skill.json (tool manifest)]] - code - skills/custom/browser-fetch/skill.json
+- [[run-as-root.sh]] - code - skills/custom/browser-fetch/run-as-root.sh
+- [[run-as-root.sh script]] - code - skills/custom/browser-fetch/run-as-root.sh
 
 ## Live Query (requires Dataview plugin)
 

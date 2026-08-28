@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "Community 24"
+community: "Community 23"
 location: "L201"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_24
+  - community/Community_23
 ---
 
 # ToolRiskConfig
@@ -35,7 +35,7 @@ tags:
 - [[Tool risk tier configuration]] - `rationale_for` [EXTRACTED]
 - [[ToolRiskConfig]] - `uses` [INFERRED]
 - [[ToolRiskPolicy]] - `uses` [INFERRED]
-- [[WebSocket]] - `uses` [INFERRED]
+- [[WebSocket_1]] - `uses` [INFERRED]
 - [[_FakeApprovalQueue]] - `uses` [INFERRED]
 - [[_HangingWebSocket_1]] - `uses` [INFERRED]
 - [[_real_queue()]] - `calls` [EXTRACTED]
@@ -51,4 +51,4 @@ tags:
 - [[test_websocket_notifications()]] - `calls` [EXTRACTED]
 - [[tool_risk_config()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_24
+#graphify/code #graphify/INFERRED #community/Community_23

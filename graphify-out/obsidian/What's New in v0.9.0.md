@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.9/release-notes-v0.9.0.md"
 type: "document"
-community: "Community 164"
+community: "Community 170"
 location: "L24"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_164
+  - community/Community_170
 ---
 
 # What's New in v0.9.0
@@ -18,4 +18,4 @@ tags:
 - [[📚 Comprehensive Documentation Suite]] - `contains` [EXTRACTED]
 - [[🔒 Deep Security Hardening]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_164
+#graphify/document #graphify/EXTRACTED #community/Community_170

@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/ws_client.c"
 type: "code"
-community: "ESP32 Firmware"
-location: "L221"
+community: "Community 418"
+location: "L229"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ESP32_Firmware
+  - community/Community_418
 ---
 
 # esp_err_t
@@ -20,4 +20,4 @@ tags:
 - [[ws_client_send_pcm()]] - `references` [EXTRACTED]
 - [[ws_client_send_stop()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ESP32_Firmware
+#graphify/code #graphify/EXTRACTED #community/Community_418

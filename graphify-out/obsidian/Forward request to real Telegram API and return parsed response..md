@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Community 260"
+community: "Adversarial Injection Guards"
 location: "L8143"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_260
+  - community/Adversarial_Injection_Guards
 ---
 
 # Forward request to real Telegram API and return parsed response.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._forward_to_telegram()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_260
+#graphify/rationale #graphify/EXTRACTED #community/Adversarial_Injection_Guards

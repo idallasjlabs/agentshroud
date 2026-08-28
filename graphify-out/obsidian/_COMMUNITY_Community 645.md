@@ -1,28 +1,30 @@
 ---
 type: community
+cohesion: 0.13
 members: 15
 ---
 
 # Community 645
 
+**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
-- [[Environment Variables_14]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
-- [[Function Details_41]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
-- [[Invisible Characters Stripped]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
-- [[Key Classes  Functions_44]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
-- [[Mode Enforce vs Monitor_9]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
-- [[Purpose_162]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
-- [[Related_48]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
-- [[Responsibilities_46]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
-- [[Threat Model_17]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
-- [[Usage Context]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
-- [[detect_base64_payloads(text)]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
-- [[input_normalizer.py_2]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
-- [[input_normalizer.py_1]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
-- [[normalize_input(text)]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
-- [[strip_markdown_exfil(text)]] - document - docs/vault/02 - Modules/Security Modules/input_normalizer.py.md
+- [[.client()_2]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_check_agentshroud_updates()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_check_openclaw_updates()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_export_config()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_get_config()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_get_logs()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_killswitch_freeze()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_killswitch_invalid_mode()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_killswitch_no_confirm()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_security_report()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_status()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_stop_service()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_update_history()]] - code - gateway/tests/test_runtime_engines.py
+- [[Test the management API endpoints with mocked runtime.]] - rationale - gateway/tests/test_runtime_engines.py
+- [[TestWebAPI]] - code - gateway/tests/test_runtime_engines.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,3 +32,13 @@ members: 15
 TABLE source_file, type FROM #community/Community_645
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_Community 329]]
+- 1 edge to [[_COMMUNITY_Community 325]]
+- 1 edge to [[_COMMUNITY_Community 320]]
+- 1 edge to [[_COMMUNITY_Community 348]]
+- 1 edge to [[_COMMUNITY_Community 207]]
+
+## Top bridge nodes
+- [[TestWebAPI]] - degree 20, connects to 5 communities

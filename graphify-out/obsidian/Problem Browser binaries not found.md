@@ -1,17 +1,17 @@
 ---
 source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
 type: "document"
-community: "Community 1265"
+community: "Community 1261"
 location: "L239"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1265
+  - community/Community_1261
 ---
 
 # Problem: Browser binaries not found
 
 ## Connections
-- [[Troubleshooting_20]] - `contains` [EXTRACTED]
+- [[Troubleshooting_19]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1265
+#graphify/document #graphify/EXTRACTED #community/Community_1261

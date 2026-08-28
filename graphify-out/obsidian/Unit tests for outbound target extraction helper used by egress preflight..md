@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Community 250"
+community: "Community 434"
 location: "L3846"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_250
+  - community/Community_434
 ---
 
 # Unit tests for outbound target extraction helper used by egress preflight.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestEgressTargetExtraction]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_250
+#graphify/rationale #graphify/EXTRACTED #community/Community_434

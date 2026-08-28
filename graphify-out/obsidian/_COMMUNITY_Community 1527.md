@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 1.00
 members: 2
 ---
 
 # Community 1527
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[test_config fixture]] - code - gateway/tests/conftest.py
-- [[test_ledger fixture]] - code - gateway/tests/conftest.py
+- [[export-openapi.sh]] - code - scripts/export-openapi.sh
+- [[export-openapi.sh script]] - code - scripts/export-openapi.sh
 
 ## Live Query (requires Dataview plugin)
 

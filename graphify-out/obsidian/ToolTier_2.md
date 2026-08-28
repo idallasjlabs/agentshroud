@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "Community 15"
+community: "RBAC & SOC Realtime"
 location: "L43"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_15
+  - community/RBAC__SOC_Realtime
 ---
 
 # ToolTier
@@ -27,4 +27,4 @@ tags:
 - [[rbac_config.py]] - `contains` [EXTRACTED]
 - [[str]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_15
+#graphify/code #graphify/INFERRED #community/RBAC__SOC_Realtime

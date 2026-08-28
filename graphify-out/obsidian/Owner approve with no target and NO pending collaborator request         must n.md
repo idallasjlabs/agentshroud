@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Community 2"
+community: "Telegram Proxy Inbound"
 location: "L899"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2
+  - community/Telegram_Proxy_Inbound
 ---
 
 # Owner /approve with no target and NO pending collaborator request         must n
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_owner_bare_approve_with_no_pending_falls_through_to_agent()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Inbound

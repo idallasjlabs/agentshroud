@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v1.2/v1.2.0-master-plan.md"
+source_file: "docs/runbooks/hermes-openclaw-dev-workflow.md"
 type: "document"
-community: "Community 380"
-location: "L108"
+community: "Community 619"
+location: "L149"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_380
+  - community/Community_619
 ---
 
 # Source of truth
 
 ## Connections
-- [[Workstream C — Full local-model parity for both bots]] - `contains` [EXTRACTED]
+- [[Starting a Development Task via Hermes  OpenClaw]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_380
+#graphify/document #graphify/EXTRACTED #community/Community_619

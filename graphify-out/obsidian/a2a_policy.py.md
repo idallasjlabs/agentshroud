@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "Community 1001"
+community: "Community 281"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1001
+  - community/Community_281
 ---
 
 # a2a_policy.py
@@ -29,4 +29,4 @@ tags:
 - [[is_safe_a2a_callback_url()]] - `contains` [EXTRACTED]
 - [[record_decision()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1001
+#graphify/code #graphify/EXTRACTED #community/Community_281

@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 1.00
 members: 2
 ---
 
 # Community 1505
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[canary-cron.sh]] - code - scripts/canary-cron.sh
-- [[canary-cron.sh script]] - code - scripts/canary-cron.sh
+- [[installapiruntimes endpoint]] - concept - gateway/web/templates/installer.html
+- [[loadRuntimes()]] - code - gateway/web/templates/installer.html
 
 ## Live Query (requires Dataview plugin)
 

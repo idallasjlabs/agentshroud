@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/multi_host_test.py"
 type: "rationale"
-community: "Community 731"
+community: "Community 728"
 location: "L153"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_731
+  - community/Community_728
 ---
 
 # Render an aligned PASS/FAIL table plus a totals line.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.render_summary()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_731
+#graphify/rationale #graphify/EXTRACTED #community/Community_728

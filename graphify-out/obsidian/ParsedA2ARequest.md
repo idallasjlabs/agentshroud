@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/a2a_proxy.py"
 type: "code"
-community: "Community 1001"
+community: "Community 205"
 location: "L110"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_1001
+  - community/Community_205
 ---
 
 # ParsedA2ARequest
@@ -18,4 +18,4 @@ tags:
 - [[ViolationType]] - `uses` [INFERRED]
 - [[a2a_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_1001
+#graphify/code #graphify/INFERRED #community/Community_205

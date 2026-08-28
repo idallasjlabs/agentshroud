@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1211
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_71]] - document - docker/config/hermes/skills/i-ti/README.md
-- [[README_76]] - document - docker/config/hermes/skills/i-ti/README.md
-- [[Related Skills_77]] - document - docker/config/hermes/skills/i-ti/README.md
-- [[Technical Illustrator (TI)_1]] - document - docker/config/hermes/skills/i-ti/README.md
-- [[Usage_78]] - document - docker/config/hermes/skills/i-ti/README.md
+- [[Atlas — Curriculum Architect_3]] - document - docker/config/openclaw/skills/i-atlas/README.md
+- [[Purpose_76]] - document - docker/config/openclaw/skills/i-atlas/README.md
+- [[README_81]] - document - docker/config/openclaw/skills/i-atlas/README.md
+- [[Related Skills_82]] - document - docker/config/openclaw/skills/i-atlas/README.md
+- [[Usage_84]] - document - docker/config/openclaw/skills/i-atlas/README.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,20 +1,22 @@
 ---
 type: community
+cohesion: 0.57
 members: 7
 ---
 
 # Community 1049
 
+**Cohesion:** 0.57 - moderately connected
 **Members:** 7 nodes
 
 ## Members
-- [[error()]] - code - scripts/security-scan.sh
-- [[info()_1]] - code - scripts/security-scan.sh
-- [[require_tool()]] - code - scripts/security-scan.sh
-- [[security-scan.sh_1]] - code - scripts/security-scan.sh
-- [[security-scan.sh script_1]] - code - scripts/security-scan.sh
-- [[success()]] - code - scripts/security-scan.sh
-- [[warn()_3]] - code - scripts/security-scan.sh
+- [[canary-deploy.sh]] - code - scripts/canary-deploy.sh
+- [[canary-deploy.sh script]] - code - scripts/canary-deploy.sh
+- [[deploy_ref()]] - code - scripts/canary-deploy.sh
+- [[die()]] - code - scripts/canary-deploy.sh
+- [[log()_6]] - code - scripts/canary-deploy.sh
+- [[run()_4]] - code - scripts/canary-deploy.sh
+- [[run_in_repo()]] - code - scripts/canary-deploy.sh
 
 ## Live Query (requires Dataview plugin)
 

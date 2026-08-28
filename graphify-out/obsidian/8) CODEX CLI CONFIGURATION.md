@@ -1,12 +1,12 @@
 ---
 source_file: "AGENTS.md"
 type: "document"
-community: "Community 350"
+community: "Community 280"
 location: "L170"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_350
+  - community/Community_280
 ---
 
 # 8) CODEX CLI CONFIGURATION
@@ -16,4 +16,4 @@ tags:
 - [[What You Don't Have]] - `contains` [EXTRACTED]
 - [[What You Have]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_350
+#graphify/document #graphify/EXTRACTED #community/Community_280

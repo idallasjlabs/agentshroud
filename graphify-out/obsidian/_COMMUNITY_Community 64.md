@@ -1,84 +1,90 @@
 ---
 type: community
-members: 71
+cohesion: 0.05
+members: 75
 ---
 
 # Community 64
 
-**Members:** 71 nodes
+**Cohesion:** 0.05 - loosely connected
+**Members:** 75 nodes
 
 ## Members
-- [[.__init__()_102]] - code - gateway/security/oauth_security.py
-- [[.check_state_reuse()]] - code - gateway/security/oauth_security.py
-- [[.create_consent_cookie()]] - code - gateway/security/oauth_security.py
-- [[.record_state_used()]] - code - gateway/security/oauth_security.py
-- [[.register_known_shared_ids()]] - code - gateway/security/oauth_security.py
-- [[.test_base64_injection()]] - code - gateway/tests/test_security_audit.py
-- [[.test_clean_message_not_blocked()]] - code - gateway/tests/test_security_audit.py
-- [[.test_clean_technical_message()]] - code - gateway/tests/test_security_audit.py
-- [[.test_cookie_custom_max_age_expires_sooner()]] - code - gateway/tests/test_oauth_security.py
-- [[.test_cookie_expired_rejected()]] - code - gateway/tests/test_oauth_security.py
-- [[.test_cookie_tamper_detected()]] - code - gateway/tests/test_oauth_security.py
-- [[.test_cookie_within_max_age_accepted()]] - code - gateway/tests/test_oauth_security.py
-- [[.test_cookie_wrong_client_fails()]] - code - gateway/tests/test_oauth_security.py
-- [[.test_cookie_wrong_scope_fails()]] - code - gateway/tests/test_oauth_security.py
-- [[.test_create_consent_cookie()]] - code - gateway/tests/test_oauth_security.py
-- [[.test_dan_jailbreak()]] - code - gateway/tests/test_security_audit.py
-- [[.test_different_uri_rejected()]] - code - gateway/tests/test_oauth_security.py
-- [[.test_empty_client_id_rejected()]] - code - gateway/tests/test_oauth_security.py
-- [[.test_empty_input()_2]] - code - gateway/tests/test_security_audit.py
-- [[.test_empty_state_rejected()]] - code - gateway/tests/test_oauth_security.py
-- [[.test_exact_match_accepted()]] - code - gateway/tests/test_oauth_security.py
-- [[.test_http_rejected()]] - code - gateway/tests/test_oauth_security.py
-- [[.test_ignore_previous_instructions()]] - code - gateway/tests/test_security_audit.py
-- [[.test_indirect_injection_url()]] - code - gateway/tests/test_security_audit.py
-- [[.test_instruction_override()]] - code - gateway/tests/test_security_audit.py
-- [[.test_multilingual_injection()]] - code - gateway/tests/test_security_audit.py
-- [[.test_path_traversal_rejected()]] - code - gateway/tests/test_oauth_security.py
-- [[.test_pkce_plain_rejected_when_s256_required()]] - code - gateway/tests/test_oauth_security.py
-- [[.test_pkce_required_missing_challenge()]] - code - gateway/tests/test_oauth_security.py
-- [[.test_pkce_s256_accepted()]] - code - gateway/tests/test_oauth_security.py
-- [[.test_pkce_verifier_validation()]] - code - gateway/tests/test_oauth_security.py
-- [[.test_prompt_leaking_via_markdown()]] - code - gateway/tests/test_security_audit.py
-- [[.test_repeated_injection()]] - code - gateway/tests/test_security_audit.py
-- [[.test_role_reassignment()]] - code - gateway/tests/test_security_audit.py
-- [[.test_short_state_rejected()]] - code - gateway/tests/test_oauth_security.py
-- [[.test_state_replay_detected()]] - code - gateway/tests/test_oauth_security.py
-- [[.test_static_shared_client_id_rejected()]] - code - gateway/tests/test_oauth_security.py
-- [[.test_system_prompt_extraction()]] - code - gateway/tests/test_security_audit.py
-- [[.test_token_smuggling()]] - code - gateway/tests/test_security_audit.py
-- [[.test_unique_client_id_accepted()]] - code - gateway/tests/test_oauth_security.py
-- [[.test_valid_state_accepted()]] - code - gateway/tests/test_oauth_security.py
-- [[.test_validate_consent_cookie()]] - code - gateway/tests/test_oauth_security.py
-- [[.test_xml_injection()]] - code - gateway/tests/test_security_audit.py
-- [[.validate_consent_cookie()]] - code - gateway/security/oauth_security.py
-- [[.validate_redirect_uri()]] - code - gateway/security/oauth_security.py
-- [[.validate_request()]] - code - gateway/security/oauth_security.py
-- [[.verify_pkce()]] - code - gateway/security/oauth_security.py
-- [[Base64 encoded instruction.]] - rationale - gateway/tests/test_security_audit.py
-- [[ConfusedDeputyError]] - code - gateway/security/oauth_security.py
-- [[Injection in another language.]] - rationale - gateway/tests/test_security_audit.py
-- [[Markdown-based injection.]] - rationale - gateway/tests/test_security_audit.py
-- [[Normal messages should pass.]] - rationale - gateway/tests/test_security_audit.py
-- [[OAuthError]] - code - gateway/security/oauth_security.py
-- [[OAuthRequest]] - code - gateway/security/oauth_security.py
-- [[OAuthSecurityValidator]] - code - gateway/security/oauth_security.py
-- [[PKCEViolation]] - code - gateway/security/oauth_security.py
-- [[RedirectMismatch]] - code - gateway/security/oauth_security.py
-- [[Same injection multiple times shouldn't bypass.]] - rationale - gateway/tests/test_security_audit.py
-- [[Technical discussion mentioning 'system' shouldn't trigger.]] - rationale - gateway/tests/test_security_audit.py
-- [[Test prompt injection detection with adversarial payloads.]] - rationale - gateway/tests/test_security_audit.py
-- [[TestClientValidation]] - code - gateway/tests/test_oauth_security.py
-- [[TestConsentCookieBinding]] - code - gateway/tests/test_oauth_security.py
-- [[TestPKCE]] - code - gateway/tests/test_oauth_security.py
-- [[TestPromptGuard]] - code - gateway/tests/test_security_audit.py
-- [[TestRedirectURI]] - code - gateway/tests/test_oauth_security.py
-- [[TestStateValidation]] - code - gateway/tests/test_oauth_security.py
-- [[Token boundary attack.]] - rationale - gateway/tests/test_security_audit.py
-- [[URL-based indirect injection.]] - rationale - gateway/tests/test_security_audit.py
-- [[oauth_security.py]] - code - gateway/security/oauth_security.py
-- [[test_oauth_security.py]] - code - gateway/tests/test_oauth_security.py
-- [[validator()]] - code - gateway/tests/test_oauth_security.py
+- [[..' escaping the allowed root is rejected — never reaches proxy.write_file().]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.__init__()_133]] - code - gateway/ssh_proxy/proxy.py
+- [[.execute()]] - code - gateway/ssh_proxy/proxy.py
+- [[.is_auto_approved()]] - code - gateway/ssh_proxy/proxy.py
+- [[.test_absolute_path_accepted()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_absolute_path_outside_root_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_absolute_path_under_root_accepted()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_backtick_rejected()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_content_at_exact_cap_accepted()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_content_with_semicolon_backtick_redirect_round_trips_through_full_endpoint()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_dotdot_traversal_from_absolute_path_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_dotdot_traversal_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_home_tilde_accepted()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_invalid_base64_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_null_byte_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_oversized_content_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_pipe_rejected()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_prefix_collision_sibling_dir_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_relative_path_rejected()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_relative_path_resolved_under_root_accepted()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_root_itself_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_semicolon_rejected()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[.test_unknown_host_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_whitespace_only_path_rejected_at_proxy_layer()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_write_file_absolute_path_outside_root_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_write_file_absolute_path_prefix_collision_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_write_file_denial_is_audited()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_write_file_disallowed_host_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_write_file_empty_path_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_write_file_invalid_base64_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_write_file_no_auth()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_write_file_non_numeric_stdout_falls_back_to_zero_bytes()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_write_file_oserror_from_subprocess()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_write_file_oversized_content_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_write_file_path_traversal_dotdot_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_write_file_remote_command_is_identical_across_calls()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_write_file_remote_failure_returns_200_with_success_false()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_write_file_sends_path_and_content_via_stdin()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_write_file_ssh_disabled_returns_503()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_write_file_timeout()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_write_file_unknown_host_raises()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_write_file_valid_round_trip()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.validate_command()]] - code - gateway/ssh_proxy/proxy.py
+- [[.validate_cwd()]] - code - gateway/ssh_proxy/proxy.py
+- [[.validate_write_file()]] - code - gateway/ssh_proxy/proxy.py
+- [[.write_file()]] - code - gateway/ssh_proxy/proxy.py
+- [[A directory that shares the root as a raw string prefix but is not         actua]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[A host not present in the SSH allowlist is rejected with 404.]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[A sibling directory that merely shares the root as a string prefix         (no ']] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[Absolute path outside the approved root is rejected.]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[Check if a command is auto-approved (no human approval needed).          Auto-ap]] - rationale - gateway/ssh_proxy/proxy.py
+- [[Decoded content exceeding the ~500KB cap is rejected with 413, and         proxy]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[Denied write attempts are logged to the ledger for audit (no raw         content]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[Direct unit coverage of validate_write_file()'s own empty-path guard         (th]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[Execute a command on a remote host via SSH.]] - rationale - gateway/ssh_proxy/proxy.py
+- [[If the remote script exits 0 but its stdout isn't a parseable         integer, b]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[Malformed base64 is rejected at the Pydantic model layer (422),         never si]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[Mirrors sshexec a nonzero remote exit code is surfaced in the 200         res]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[SSH command proxy with validation and audit support]] - rationale - gateway/ssh_proxy/proxy.py
+- [[SSHConfig_1]] - code - gateway/ssh_proxy/proxy.py
+- [[SSHProxy]] - code - gateway/ssh_proxy/proxy.py
+- [[TestSSHProxyValidateWriteFile]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[TestSSHProxyWriteFileTransport]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[TestSSHValidateCwd]] - code - gateway/tests/test_ssh_endpoints.py
+- [[TestSSHWriteFileEndpoint]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[The remote command string must not vary with request content —         proving i]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[Unit tests for SSHProxy.validate_cwd().]] - rationale - gateway/tests/test_ssh_endpoints.py
+- [[Unit tests for SSHProxy.write_file() — verifies pathcontent travel as     DATA]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[Valid request SSHProxy.write_file() is invoked with decoded pathcontent]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[Validate a command against allowdeny lists and injection patterns.          Ret]] - rationale - gateway/ssh_proxy/proxy.py
+- [[Validate a remote working-directory path.  Must be absolute and shell-safe.]] - rationale - gateway/ssh_proxy/proxy.py
+- [[Validate a structured sshwrite_file request (host, path, content).          Re]] - rationale - gateway/ssh_proxy/proxy.py
+- [[Write file content to a remote host via structured (non-shell-string) transport.]] - rationale - gateway/ssh_proxy/proxy.py
+- [[_b64()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[ssh binary missing  spawn failure surfaces as exit_code=-1 with         the OSE]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -88,28 +94,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 48 edges to [[_COMMUNITY_Community 14]]
-- 17 edges to [[_COMMUNITY_Community 6]]
-- 5 edges to [[_COMMUNITY_Community 7]]
-- 2 edges to [[_COMMUNITY_Community 712]]
-- 2 edges to [[_COMMUNITY_Community 116]]
-- 1 edge to [[_COMMUNITY_Community 38]]
-- 1 edge to [[_COMMUNITY_Community 870]]
-- 1 edge to [[_COMMUNITY_Community 147]]
-- 1 edge to [[_COMMUNITY_Community 207]]
-- 1 edge to [[_COMMUNITY_Community 118]]
-- 1 edge to [[_COMMUNITY_Community 442]]
-- 1 edge to [[_COMMUNITY_Community 60]]
-- 1 edge to [[_COMMUNITY_Community 444]]
-- 1 edge to [[_COMMUNITY_Community 22]]
-- 1 edge to [[_COMMUNITY_Community 382]]
-- 1 edge to [[_COMMUNITY_Community 69]]
-- 1 edge to [[_COMMUNITY_Community 97]]
-- 1 edge to [[_COMMUNITY_Community 35]]
+- 60 edges to [[_COMMUNITY_Community 15]]
+- 9 edges to [[_COMMUNITY_Community 26]]
+- 8 edges to [[_COMMUNITY_PII Sanitizer & E2E Tests]]
+- 8 edges to [[_COMMUNITY_Community 32]]
+- 5 edges to [[_COMMUNITY_Community 242]]
+- 4 edges to [[_COMMUNITY_Community 23]]
+- 4 edges to [[_COMMUNITY_Community 43]]
+- 2 edges to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
+- 1 edge to [[_COMMUNITY_Ingest API & Approval Routes]]
+- 1 edge to [[_COMMUNITY_Community 1131]]
 
 ## Top bridge nodes
-- [[TestPromptGuard]] - degree 51, connects to 14 communities
-- [[oauth_security.py]] - degree 11, connects to 3 communities
-- [[OAuthSecurityValidator]] - degree 32, connects to 2 communities
-- [[ConfusedDeputyError]] - degree 21, connects to 2 communities
-- [[PKCEViolation]] - degree 21, connects to 2 communities
+- [[SSHProxy]] - degree 79, connects to 6 communities
+- [[TestSSHProxyValidateWriteFile]] - degree 28, connects to 6 communities
+- [[TestSSHWriteFileEndpoint]] - degree 26, connects to 6 communities
+- [[TestSSHValidateCwd]] - degree 21, connects to 6 communities
+- [[TestSSHProxyWriteFileTransport]] - degree 21, connects to 6 communities

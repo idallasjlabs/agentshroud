@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1172
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[1. True Distributed AI]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[2. Enhanced Security]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[3. Advanced Capabilities]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[4. Better Development Workflow]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Key Benefits]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Apollo — Audio Systems Producer_1]] - document - docker/config/hermes/skills/i-apollo/README.md
+- [[Purpose_37]] - document - docker/config/hermes/skills/i-apollo/README.md
+- [[README_42]] - document - docker/config/hermes/skills/i-apollo/README.md
+- [[Related Skills_40]] - document - docker/config/hermes/skills/i-apollo/README.md
+- [[Usage_42]] - document - docker/config/hermes/skills/i-apollo/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,9 +22,3 @@ members: 5
 TABLE source_file, type FROM #community/Community_1172
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 432]]
-
-## Top bridge nodes
-- [[Key Benefits]] - degree 5, connects to 1 community

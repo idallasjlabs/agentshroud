@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/SKILL.md"
 type: "document"
-community: "Community 235"
+community: "Community 240"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_235
+  - community/Community_240
 ---
 
 # SecureBrowser - Enterprise Secure Browser Automation
@@ -25,7 +25,7 @@ tags:
 - [[Security Configuration_3]] - `contains` [EXTRACTED]
 - [[Security Guarantees_5]] - `contains` [EXTRACTED]
 - [[See Also]] - `contains` [EXTRACTED]
-- [[Troubleshooting_38]] - `contains` [EXTRACTED]
+- [[Troubleshooting_37]] - `contains` [EXTRACTED]
 - [[Usage_130]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_235
+#graphify/document #graphify/EXTRACTED #community/Community_240

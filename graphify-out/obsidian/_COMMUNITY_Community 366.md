@@ -1,30 +1,39 @@
 ---
 type: community
-members: 17
+cohesion: 0.08
+members: 24
 ---
 
 # Community 366
 
-**Members:** 17 nodes
+**Cohesion:** 0.08 - loosely connected
+**Members:** 24 nodes
 
 ## Members
-- [[All Dependencies]] - document - docs/vault/05 - Dependencies/All Dependencies.md
-- [[FastAPI_4]] - document - docs/vault/05 - Dependencies/fastapi.md
-- [[Field Validators]] - document - docs/vault/05 - Dependencies/pydantic.md
-- [[Key Configuration Models]] - document - docs/vault/05 - Dependencies/pydantic.md
-- [[Key FastAPI Features Used]] - document - docs/vault/05 - Dependencies/fastapi.md
-- [[Purpose_186]] - document - docs/vault/05 - Dependencies/fastapi.md
-- [[Purpose_192]] - document - docs/vault/05 - Dependencies/pydantic.md
-- [[Pydantic]] - document - docs/vault/05 - Dependencies/pydantic.md
-- [[Related Notes_41]] - document - docs/vault/05 - Dependencies/fastapi.md
-- [[Related Notes_47]] - document - docs/vault/05 - Dependencies/pydantic.md
-- [[Where Used_1]] - document - docs/vault/05 - Dependencies/fastapi.md
-- [[Where Used_4]] - document - docs/vault/05 - Dependencies/pydantic.md
-- [[ci-workflows]] - document - docs/vault/03 - Configuration/ci-workflows.md
-- [[fastapi]] - document - docs/vault/05 - Dependencies/fastapi.md
-- [[pydantic]] - document - docs/vault/05 - Dependencies/pydantic.md
-- [[pytest.ini]] - document - docs/vault/03 - Configuration/pytest.ini.md
-- [[v2 vs v1]] - document - docs/vault/05 - Dependencies/pydantic.md
+- [[25-Domain Prompt Injection Defense Framework]] - concept - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[AgentShroud Security Overview v0.8.0]] - document - docs/planning/v0.8/agentshroud-security-overview-v0.8.0.md
+- [[AgentShroud v1.0.0 Fortress Release Announcement]] - document - docs/planning/v1.0/RELEASE-ANNOUNCEMENT-v1.0.0.md
+- [[Awesome-List PR Templates]] - document - docs/planning/v1.0/RELEASE-ANNOUNCEMENT-v1.0.0.md
+- [[Before & After Security Finding Remediation]] - document - docs/planning/v0.8/agentshroud-security-overview-v0.8.0.md
+- [[Enforce-by-Default Security Philosophy (ADR-009)]] - rationale - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[GitHub Release Notes]] - document - docs/planning/v1.0/RELEASE-ANNOUNCEMENT-v1.0.0.md
+- [[IEC 62443 Alignment (FR3 SL3, FR6 SL3, FR7 SL2)]] - concept - docs/planning/v1.0/RELEASE-ANNOUNCEMENT-v1.0.0.md
+- [[LinkedIn Post]] - document - docs/planning/v1.0/RELEASE-ANNOUNCEMENT-v1.0.0.md
+- [[Memory Refresh Context]] - document - docs/planning/v0.8/agentshroud-security-overview-v0.8.0.md
+- [[Notes_1]] - document - docs/planning/v1.0/POST_FABLE5_TASK_DELEGATION.md
+- [[POST_FABLE5_TASK_DELEGATION]] - document - docs/planning/v1.0/POST_FABLE5_TASK_DELEGATION.md
+- [[RELEASE-ANNOUNCEMENT-v1.0.0]] - document - docs/planning/v1.0/RELEASE-ANNOUNCEMENT-v1.0.0.md
+- [[Security Assessment v0.8.0]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
+- [[Task list]] - document - docs/planning/v1.0/POST_FABLE5_TASK_DELEGATION.md
+- [[Test Coverage Summary (Post-Remediation)]] - document - docs/planning/v0.8/agentshroud-security-overview-v0.8.0.md
+- [[agentshroud-security-overview-v0.8.0]] - document - docs/planning/v0.8/agentshroud-security-overview-v0.8.0.md
+- [[awesome-ai-security]] - document - docs/planning/v1.0/RELEASE-ANNOUNCEMENT-v1.0.0.md
+- [[awesome-llm-apps  awesome-llm]] - document - docs/planning/v1.0/RELEASE-ANNOUNCEMENT-v1.0.0.md
+- [[awesome-security  defensive security list]] - document - docs/planning/v1.0/RELEASE-ANNOUNCEMENT-v1.0.0.md
+- [[v0.8.0 25-Domain Prompt Injection Defense Assessment]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[v0.9.0  v1.0.0 Roadmap]] - document - docs/planning/v0.8/agentshroud-security-overview-v0.8.0.md
+- [[v0.9.0 — Production Hardening]] - document - docs/planning/v0.8/agentshroud-security-overview-v0.8.0.md
+- [[v1.0.0 — Zero-Trust Compute]] - document - docs/planning/v0.8/agentshroud-security-overview-v0.8.0.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,19 +43,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 600]]
-- 2 edges to [[_COMMUNITY_Community 340]]
-- 2 edges to [[_COMMUNITY_Community 938]]
-- 1 edge to [[_COMMUNITY_Community 271]]
-- 1 edge to [[_COMMUNITY_Community 1074]]
-- 1 edge to [[_COMMUNITY_Community 935]]
-- 1 edge to [[_COMMUNITY_Community 914]]
-- 1 edge to [[_COMMUNITY_Community 550]]
-- 1 edge to [[_COMMUNITY_Community 889]]
-- 1 edge to [[_COMMUNITY_Community 99]]
+- 1 edge to [[_COMMUNITY_Community 386]]
 
 ## Top bridge nodes
-- [[All Dependencies]] - degree 14, connects to 7 communities
-- [[fastapi]] - degree 4, connects to 1 community
-- [[ci-workflows]] - degree 3, connects to 1 community
-- [[pytest.ini]] - degree 3, connects to 1 community
+- [[v0.8.0 25-Domain Prompt Injection Defense Assessment]] - degree 5, connects to 1 community

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "concept"
-community: "Community 376"
+community: "Community 166"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_376
+  - community/Community_166
 ---
 
 # Agents Rule of Two
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud Threat Model (L-1..L-4 Loss Categories)]] - `conceptually_related_to` [INFERRED]
 - [[agentshroud-ieee-paper]] - `cites` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_376
+#graphify/concept #graphify/EXTRACTED #community/Community_166

@@ -1,17 +1,19 @@
 ---
 type: community
+cohesion: 0.50
 members: 4
 ---
 
 # Community 1363
 
+**Cohesion:** 0.50 - moderately connected
 **Members:** 4 nodes
 
 ## Members
-- [[DELIVERABLE 4 — v1.0 Roadmap]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Phase 1 Foundation Hardening (v0.8.0, completed)]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Phase 2 Detection Enhancement (v0.9.3–v0.9.5, Weeks 5-10)]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Phase 3 Operational Maturity (v0.9.6–v1.0.0, Weeks 11-16)]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[.test_collaborator_sensitive_path_probe_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_collaborator_sensitive_path_probe_shell_style_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[Sensitive path probes should be blockedquarantined for collaborators.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Shell-style sensitive path probes (e.g., ls ~.ssh) should be blocked.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,7 +23,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 995]]
+- 10 edges to [[_COMMUNITY_Telegram Proxy Inbound]]
+- 2 edges to [[_COMMUNITY_Community 31]]
 
 ## Top bridge nodes
-- [[DELIVERABLE 4 — v1.0 Roadmap]] - degree 4, connects to 1 community
+- [[.test_collaborator_sensitive_path_probe_shell_style_is_blocked_and_quarantined()]] - degree 8, connects to 2 communities
+- [[.test_collaborator_sensitive_path_probe_is_blocked_and_quarantined()]] - degree 7, connects to 2 communities

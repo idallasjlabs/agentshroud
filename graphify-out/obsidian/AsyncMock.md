@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Community 109"
+community: "Community 24"
 location: "L8612"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_109
+  - community/Community_24
 ---
 
 # AsyncMock
@@ -195,11 +195,6 @@ tags:
 - [[test_audit_export_exporter_raises()]] - `calls` [INFERRED]
 - [[test_audit_export_json_dict_payload()]] - `calls` [INFERRED]
 - [[test_broadcast_with_failed_client()]] - `calls` [INFERRED]
-- [[test_call_llm_malformed_response_raises()]] - `calls` [INFERRED]
-- [[test_call_llm_returns_content()]] - `calls` [INFERRED]
-- [[test_call_llm_sends_correct_model_and_max_tokens()]] - `calls` [INFERRED]
-- [[test_call_llm_sends_full_history()]] - `calls` [INFERRED]
-- [[test_call_llm_strips_whitespace()]] - `calls` [INFERRED]
 - [[test_cosign_fails_bad_signature()]] - `calls` [INFERRED]
 - [[test_cosign_success()]] - `calls` [INFERRED]
 - [[test_critical_alert_triggers_lockdown()]] - `calls` [INFERRED]
@@ -249,4 +244,4 @@ tags:
 - [[test_ws_pipeline_error_logs_and_recovers_to_idle()]] - `calls` [INFERRED]
 - [[test_ws_stop_during_speaking_aborts_tts()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_109
+#graphify/code #graphify/INFERRED #community/Community_24

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "rationale"
-community: "Community 19"
+community: "SOC Collaborators"
 location: "L2203"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_19
+  - community/SOC_Collaborators
 ---
 
 # Return the latest Software Bill of Materials (SBOM) in SPDX JSON format.      Ge
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_sbom()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_19
+#graphify/rationale #graphify/EXTRACTED #community/SOC_Collaborators

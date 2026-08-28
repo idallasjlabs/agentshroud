@@ -1,25 +1,33 @@
 ---
 type: community
-members: 12
+cohesion: 0.18
+members: 18
 ---
 
 # Community 491
 
-**Members:** 12 nodes
+**Cohesion:** 0.18 - loosely connected
+**Members:** 18 nodes
 
 ## Members
-- [[Definition of Done_1]] - document - .github/agents/test-augmenter.agent.md
-- [[Environment_1]] - document - .github/agents/test-augmenter.agent.md
-- [[Expected Coverage]] - document - .github/agents/test-augmenter.agent.md
-- [[Python Tests (pytest)]] - document - .github/agents/test-augmenter.agent.md
-- [[Remember_1]] - document - .github/agents/test-augmenter.agent.md
-- [[Repository Context_2]] - document - .github/agents/test-augmenter.agent.md
-- [[Role Definition_1]] - document - .github/agents/test-augmenter.agent.md
-- [[Test Augmentation Specialist]] - document - .github/agents/test-augmenter.agent.md
-- [[Test Commands]] - document - .github/agents/test-augmenter.agent.md
-- [[Test Standards]] - document - .github/agents/test-augmenter.agent.md
-- [[Tooling Standards]] - document - .github/agents/test-augmenter.agent.md
-- [[What You CANNOT Do]] - document - .github/agents/test-augmenter.agent.md
+- [[75-Module Security Pipeline]] - concept - CLAUDE.md
+- [[A2A Governance (A2APolicyEngine  A2AProxy)]] - concept - CHANGELOG.md
+- [[AgentShroud CLAUDE.md Guidance]] - document - CLAUDE.md
+- [[AgentShroud Changelog]] - document - CHANGELOG.md
+- [[AgentShroud Daily Check-in Prompt]] - document - docker/config/hermes/cron/prompts/agentshroud-daily-check-in.txt
+- [[AgentShroud Enterprise Governance Proxy]] - concept - CLAUDE.md
+- [[Cron-Mode Execution Restrictions]] - rationale - docker/config/hermes/cron/prompts/hermes-competitive-intelligence-email-am-pm.txt
+- [[ESP32-S3-BOX-3 Voice Terminal]] - concept - CHANGELOG.md
+- [[Human-in-the-Loop Approval Queue_1]] - concept - CLAUDE.md
+- [[IEC 62443 Alignment]] - concept - CLAUDE.md
+- [[Multi-Agent Development Hierarchy]] - rationale - CLAUDE.md
+- [[No Security Theater Principle]] - rationale - CLAUDE.md
+- [[OpenClaw Bot_1]] - concept - CHANGELOG.md
+- [[PII Redaction (Presidio, 0.9 threshold)]] - concept - CLAUDE.md
+- [[TDD Red-Green-Refactor Workflow]] - rationale - CLAUDE.md
+- [[TrustManager Progressive-Trust Ladder]] - concept - CHANGELOG.md
+- [[Voice Gateway]] - concept - CHANGELOG.md
+- [[Zero Hallucinations Rule]] - rationale - docker/config/hermes/cron/prompts/hermes-competitive-landscape-update-am-pm.txt
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,8 +37,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 822]]
-- 1 edge to [[_COMMUNITY_Community 928]]
+- 9 edges to [[_COMMUNITY_Community 282]]
 
 ## Top bridge nodes
-- [[Test Augmentation Specialist]] - degree 10, connects to 2 communities
+- [[AgentShroud Changelog]] - degree 11, connects to 1 community
+- [[A2A Governance (A2APolicyEngine  A2AProxy)]] - degree 3, connects to 1 community
+- [[Cron-Mode Execution Restrictions]] - degree 3, connects to 1 community
+- [[OpenClaw Bot_1]] - degree 2, connects to 1 community
+- [[AgentShroud Daily Check-in Prompt]] - degree 2, connects to 1 community

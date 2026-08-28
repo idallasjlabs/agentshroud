@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/app_main.c"
 type: "code"
-community: "Community 139"
-location: "L699"
+community: "Community 90"
+location: "L716"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_139
+  - community/Community_90
 ---
 
 # voice_task()
@@ -17,8 +17,8 @@ tags:
 - [[_send_status_beacon()]] - `calls` [EXTRACTED]
 - [[app_main.c]] - `contains` [EXTRACTED]
 - [[audio_capture_frame()]] - `calls` [EXTRACTED]
-- [[ui_face_set_agent()]] - `calls` [EXTRACTED]
-- [[ui_face_set_state()]] - `calls` [EXTRACTED]
+- [[ui_face_set_agent()]] - `calls` [INFERRED]
+- [[ui_face_set_state()]] - `calls` [INFERRED]
 - [[vt_remote_log()]] - `calls` [EXTRACTED]
 - [[wakeword_agent_index()]] - `calls` [INFERRED]
 - [[wakeword_agent_switch_ack()]] - `calls` [INFERRED]
@@ -36,10 +36,8 @@ tags:
 - [[wakeword_tts_stop_requested()]] - `calls` [INFERRED]
 - [[ws_client_connected()]] - `calls` [INFERRED]
 - [[ws_client_create()]] - `calls` [INFERRED]
-- [[ws_client_create() — registers callbacks + starts client]] - `calls` [EXTRACTED]
 - [[ws_client_destroy()]] - `calls` [INFERRED]
 - [[ws_client_send_keepalive()]] - `calls` [INFERRED]
 - [[ws_client_send_stop()]] - `calls` [INFERRED]
-- [[ws_client_set_ctrl_cb()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_139
+#graphify/code #graphify/INFERRED #community/Community_90

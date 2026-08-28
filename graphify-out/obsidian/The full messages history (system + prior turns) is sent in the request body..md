@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "Community 115"
-location: "L606"
+community: "Community 114"
+location: "L647"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_115
+  - community/Community_114
 ---
 
 # The full messages history (system + prior turns) is sent in the request body.
 
 ## Connections
-- [[test_call_llm_sends_full_history()]] - `rationale_for` [EXTRACTED]
+- [[test_call_llm_stream_sends_full_history()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_115
+#graphify/rationale #graphify/EXTRACTED #community/Community_114

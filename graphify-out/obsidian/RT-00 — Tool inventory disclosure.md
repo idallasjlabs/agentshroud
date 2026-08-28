@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.2/red-team-assessment-v1.2.0.md"
 type: "document"
-community: "Community 930"
+community: "Community 925"
 location: "L384"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_930
+  - community/Community_925
 ---
 
 # RT-00 — Tool inventory disclosure
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[§5 — Acceptance Rationales (Signed Off)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_930
+#graphify/document #graphify/EXTRACTED #community/Community_925

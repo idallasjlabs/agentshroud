@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "Community 337"
+community: "Community 336"
 location: "L4034"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_337
+  - community/Community_336
 ---
 
 # TestOutboundClassifierHelpers
@@ -40,4 +40,4 @@ tags:
 - [[Unit tests for outbound helper classifiers used by collaborator filtering.]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_337
+#graphify/code #graphify/EXTRACTED #community/Community_336

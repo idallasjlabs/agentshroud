@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 1.00
 members: 2
 ---
 
 # Community 1554
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[v0.8.0 Comprehensive Wiring Audit]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[v0.8.0 Watchtower Complete Feature List Final]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
+- [[.test_collaborator_name_filtering()]] - code - gateway/tests/test_outbound_filter.py
+- [[Known collaborator names should be redacted.]] - rationale - gateway/tests/test_outbound_filter.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -17,3 +19,9 @@ members: 2
 TABLE source_file, type FROM #community/Community_1554
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 996]]
+
+## Top bridge nodes
+- [[.test_collaborator_name_filtering()]] - degree 2, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "code"
-community: "Community 6"
+community: "Memory Lifecycle & Egress Filtering"
 location: "L925"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_6
+  - community/Memory_Lifecycle__Egress_Filtering
 ---
 
 # ToolTier
@@ -62,4 +62,4 @@ tags:
 - [[XMLLeakFilter]] - `uses` [INFERRED]
 - [[middleware.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_6
+#graphify/code #graphify/INFERRED #community/Memory_Lifecycle__Egress_Filtering

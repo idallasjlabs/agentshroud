@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "Community 45"
+community: "Community 37"
 location: "L612"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_45
+  - community/Community_37
 ---
 
 # Rollback OpenClaw (backward-compat alias for /updates/bot/openclaw/rollback).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[rollback_openclaw()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_45
+#graphify/rationale #graphify/EXTRACTED #community/Community_37

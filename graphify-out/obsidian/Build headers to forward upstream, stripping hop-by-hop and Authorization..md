@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/canvas_proxy.py"
 type: "rationale"
-community: "Community 564"
+community: "Community 562"
 location: "L108"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_564
+  - community/Community_562
 ---
 
 # Build headers to forward upstream, stripping hop-by-hop and Authorization.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_build_proxy_headers()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_564
+#graphify/rationale #graphify/EXTRACTED #community/Community_562

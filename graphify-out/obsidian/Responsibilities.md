@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
 type: "document"
-community: "Community 479"
+community: "Community 745"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_479
+  - community/Community_745
 ---
 
 # Responsibilities
@@ -15,4 +15,4 @@ tags:
 - [[IDENTITY.md - Who I Am]] - `contains` [EXTRACTED]
 - [[auth.py_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_479
+#graphify/document #graphify/EXTRACTED #community/Community_745

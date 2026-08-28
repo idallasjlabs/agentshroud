@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_policy_default_failclosed.py"
 type: "rationale"
-community: "Community 1001"
+community: "Community 81"
 location: "L61"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1001
+  - community/Community_81
 ---
 
 # Unlike MCP, owner_bypass is not operator-configurable for A2A at         all — a
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_owner_bypass_is_always_false_regardless_of_input()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1001
+#graphify/rationale #graphify/EXTRACTED #community/Community_81

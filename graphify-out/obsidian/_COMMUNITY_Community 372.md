@@ -1,38 +1,38 @@
 ---
 type: community
-members: 25
+cohesion: 0.09
+members: 23
 ---
 
 # Community 372
 
-**Members:** 25 nodes
+**Cohesion:** 0.09 - loosely connected
+**Members:** 23 nodes
 
 ## Members
-- [[1Password iCloud Credential Retrieval]] - concept - skills/custom/icloud/SKILL.md
-- [[Configuration Drift]] - document - docs/operations/incident-response.md
-- [[Configuration File]] - document - docs/ssh-configuration.md
-- [[Example Production Server with Strict Restrictions]] - document - docs/ssh-configuration.md
-- [[Field Reference]] - document - docs/ssh-configuration.md
-- [[Full Annotated Example]] - document - docs/ssh-configuration.md
-- [[How AllowDeny Lists Work]] - document - docs/ssh-configuration.md
-- [[How Auto-Approve Works]] - document - docs/ssh-configuration.md
-- [[How to Add a New Trusted Host]] - document - docs/ssh-configuration.md
-- [[MML (MIME Meta Language)]] - concept - skills/openclaw/himalaya/references/message-composition.md
-- [[P4 Low Priority Incidents]] - document - docs/operations/incident-response.md
-- [[SKILL_193]] - document - skills/custom/icloud/SKILL.md
-- [[SKILL_210]] - document - skills/openclaw/gog/SKILL.md
-- [[SKILL_213]] - document - skills/openclaw/himalaya/SKILL.md
-- [[SSH Configuration Guide]] - document - docs/ssh-configuration.md
-- [[Step 1 Choose a logical name]] - document - docs/ssh-configuration.md
-- [[Step 2 Add the host entry]] - document - docs/ssh-configuration.md
-- [[Step 3 Set up SSH keys]] - document - docs/ssh-configuration.md
-- [[Step 4 Pre-populate known_hosts (recommended)]] - document - docs/ssh-configuration.md
-- [[Step 5 Restart the gateway]] - document - docs/ssh-configuration.md
-- [[gog]] - document - skills/openclaw/gog/SKILL.md
-- [[gog CLI (Google Workspace)]] - concept - skills/openclaw/gog/SKILL.md
-- [[himalaya CLI]] - concept - skills/openclaw/himalaya/SKILL.md
-- [[message-composition]] - document - skills/openclaw/himalaya/references/message-composition.md
-- [[ssh-configuration]] - document - docs/ssh-configuration.md
+- [[Approval Queue (SQLite)]] - concept - docs/architecture/system-architecture.md
+- [[Approval Queue (gateway diagram)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
+- [[Configuration (TrustConfig)]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
+- [[Dashboard (WebSocket)]] - concept - docs/architecture/system-architecture.md
+- [[Database Schema_2]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
+- [[Default Action Trust Requirements]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
+- [[Environment Variables_16]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
+- [[Function Details_50]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
+- [[Key Classes  Functions_53]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
+- [[Kill Switch (MonitorBlockIsolate)]] - concept - docs/architecture/system-architecture.md
+- [[Mode Enforce vs Monitor_11]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
+- [[Monitoring System Integration (WebhooksPrometheus)]] - document - docs/api/integration-guide.md
+- [[Purpose_171]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
+- [[Related_57]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
+- [[Responsibilities_55]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
+- [[Threat Model_26]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
+- [[TrustManager_5]] - concept - docker/config/hermes/SOUL.md
+- [[TrustManager._apply_decay(score, last_action_time)]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
+- [[TrustManager._update_score(agent_id, delta, event_type, details)]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
+- [[TrustManager.get_history(agent_id, limit)]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
+- [[TrustManager.get_trust(agent_id)]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
+- [[TrustManager.is_action_allowed(agent_id, action)]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
+- [[trust_manager.py_1]] - document - docs/vault/02 - Modules/Security Modules/trust_manager.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -42,17 +42,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 225]]
-- 1 edge to [[_COMMUNITY_Community 350]]
-- 1 edge to [[_COMMUNITY_Community 91]]
-- 1 edge to [[_COMMUNITY_Community 581]]
-- 1 edge to [[_COMMUNITY_Community 327]]
-- 1 edge to [[_COMMUNITY_Community 473]]
-- 1 edge to [[_COMMUNITY_Community 446]]
+- 1 edge to [[_COMMUNITY_Community 315]]
+- 1 edge to [[_COMMUNITY_Community 937]]
+- 1 edge to [[_COMMUNITY_Community 412]]
+- 1 edge to [[_COMMUNITY_Community 370]]
+- 1 edge to [[_COMMUNITY_Community 414]]
 
 ## Top bridge nodes
-- [[ssh-configuration]] - degree 7, connects to 3 communities
-- [[SKILL_193]] - degree 4, connects to 1 community
-- [[SKILL_213]] - degree 4, connects to 1 community
-- [[P4 Low Priority Incidents]] - degree 3, connects to 1 community
-- [[message-composition]] - degree 3, connects to 1 community
+- [[TrustManager_5]] - degree 18, connects to 5 communities

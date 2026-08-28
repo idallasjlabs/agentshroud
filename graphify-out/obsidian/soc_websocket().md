@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "Community 18"
+community: "Community 69"
 location: "L2704"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_18
+  - community/Community_69
 ---
 
 # soc_websocket()
 
 ## Connections
-- [[WebSocket_5]] - `references` [EXTRACTED]
+- [[WebSocket_6]] - `references` [EXTRACTED]
 - [[router.py_1]] - `contains` [EXTRACTED]
 - [[ws_soc_endpoint()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_18
+#graphify/code #graphify/EXTRACTED #community/Community_69

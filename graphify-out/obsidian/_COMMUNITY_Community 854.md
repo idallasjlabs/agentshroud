@@ -1,23 +1,25 @@
 ---
 type: community
+cohesion: 0.20
 members: 10
 ---
 
 # Community 854
 
+**Cohesion:** 0.20 - loosely connected
 **Members:** 10 nodes
 
 ## Members
-- [[9. Deep Security Hardening (v0.9.0)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[9.1 Log Sanitizer (gatewaysecuritylog_sanitizer.py)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[9.2 Environment Leakage Guard (gatewaysecurityenv_guard.py)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[9.3 Context Window Poisoning Defense (gatewaysecuritycontext_guard.py)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[9.4 Git Hook Guard (gatewaysecuritygit_guard.py)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[9.5 Metadata Channel Guard (gatewaysecuritymetadata_guard.py)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[9.6 Network Isolation Validator (gatewaysecuritynetwork_validator.py)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[9.7 Resource Exhaustion Guard (gatewaysecurityresource_guard.py)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[9.8 Tool Result Injection Scanning (MCP Inspector Enhancement)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[9.9 Deep Hardening Impact]] - document - docs/papers/agentshroud-whitepaper.md
+- [[Approval queue (notify Isaiah via Telegram, wait up to 1 hour)]] - concept - docs/diagrams/images/diagram-14-logic-flow.svg
+- [[Execute action via HTTP CONNECT proxy]] - concept - docs/diagrams/images/diagram-14-logic-flow.svg
+- [[Isaiah decides (approved  rejected  timeout)]] - concept - docs/diagrams/images/diagram-14-logic-flow.svg
+- [[LLM inference (OpenAI GPT-4o or Anthropic Claude)]] - concept - docs/diagrams/images/diagram-14-logic-flow.svg
+- [[MCP Inspector (injection scan, PII scan, sensitive op scan)]] - concept - docs/diagrams/images/diagram-14-logic-flow.svg
+- [[Main agent (agentshroud_bot)]] - concept - docs/diagrams/images/diagram-14-logic-flow.svg
+- [[Response delivered to user]] - concept - docs/diagrams/images/diagram-14-logic-flow.svg
+- [[Threat level (NONELOW, MEDIUM, HIGH)]] - concept - docs/diagrams/images/diagram-14-logic-flow.svg
+- [[User sends message or cron fires]] - concept - docs/diagrams/images/diagram-14-logic-flow.svg
+- [[Write audit entry to ledger.db (SHA-256 hash only)]] - concept - docs/diagrams/images/diagram-14-logic-flow.svg
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,9 +27,3 @@ members: 10
 TABLE source_file, type FROM #community/Community_854
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 401]]
-
-## Top bridge nodes
-- [[9. Deep Security Hardening (v0.9.0)]] - degree 10, connects to 1 community

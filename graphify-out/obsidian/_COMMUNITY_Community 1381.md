@@ -1,16 +1,18 @@
 ---
 type: community
+cohesion: 0.67
 members: 3
 ---
 
 # Community 1381
 
+**Cohesion:** 0.67 - moderately connected
 **Members:** 3 nodes
 
 ## Members
-- [[Step 0 - Clone GitHub repo(s) (only if a GitHub URL was given)_2]] - document - docker/config/openclaw/skills/graphify/references/github-and-merge.md
-- [[github-and-merge_2]] - document - docker/config/openclaw/skills/graphify/references/github-and-merge.md
-- [[graphify reference GitHub clone and cross-repo merge_2]] - document - docker/config/openclaw/skills/graphify/references/github-and-merge.md
+- [[Claude Code Statusline Documentation]] - document - .claude/statusline.sh
+- [[statusline.sh]] - code - .claude/statusline.sh
+- [[statusline.sh script]] - code - .claude/statusline.sh
 
 ## Live Query (requires Dataview plugin)
 

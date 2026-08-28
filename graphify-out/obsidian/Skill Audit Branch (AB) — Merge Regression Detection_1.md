@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-ab/SKILL.md"
 type: "document"
-community: "Community 612"
+community: "Community 606"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_612
+  - community/Community_606
 ---
 
 # Skill: Audit Branch (AB) — Merge Regression Detection
@@ -24,4 +24,4 @@ tags:
 - [[Step 5 — Classify findings_1]] - `contains` [EXTRACTED]
 - [[Step 6 — Output the report_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_612
+#graphify/document #graphify/EXTRACTED #community/Community_606

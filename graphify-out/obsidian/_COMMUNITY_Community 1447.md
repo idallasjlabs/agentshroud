@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 1.00
 members: 2
 ---
 
 # Community 1447
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[SKILL_91]] - document - docker/config/hermes/skills/i-kaizen/SKILL.md
-- [[Skill kaizen_1]] - document - docker/config/hermes/skills/i-kaizen/SKILL.md
+- [[SKILL_56]] - document - .agents/skills/i-sre/SKILL.md
+- [[Skill sre]] - document - .agents/skills/i-sre/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/ledger.py.md"
 type: "document"
-community: "Community 622"
+community: "Community 615"
 location: "L41"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_622
+  - community/Community_615
 ---
 
 # initialize()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Function Details_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_622
+#graphify/document #graphify/EXTRACTED #community/Community_615

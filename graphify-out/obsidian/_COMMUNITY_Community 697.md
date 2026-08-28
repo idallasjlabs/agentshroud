@@ -1,26 +1,28 @@
 ---
 type: community
+cohesion: 0.15
 members: 13
 ---
 
 # Community 697
 
+**Cohesion:** 0.15 - loosely connected
 **Members:** 13 nodes
 
 ## Members
-- [[Anti-Patterns to Flag_2]] - document - .agents/skills/i-sec/SKILL.md
-- [[Core Principle]] - document - .agents/skills/i-sec/SKILL.md
-- [[Layer 1 Application Security]] - document - .agents/skills/i-sec/SKILL.md
-- [[Layer 2 Container Security]] - document - .agents/skills/i-sec/SKILL.md
-- [[Layer 3 Network Security]] - document - .agents/skills/i-sec/SKILL.md
-- [[Layer 4 Data Flow Security]] - document - .agents/skills/i-sec/SKILL.md
-- [[Output Format_10]] - document - .agents/skills/i-sec/SKILL.md
-- [[Review Layers]] - document - .agents/skills/i-sec/SKILL.md
-- [[Role_31]] - document - .agents/skills/i-sec/SKILL.md
-- [[SKILL_53]] - document - .agents/skills/i-sec/SKILL.md
-- [[SecureClaw-Specific Threat Model]] - document - .agents/skills/i-sec/SKILL.md
-- [[Skill Security Review (SEC)]] - document - .agents/skills/i-sec/SKILL.md
-- [[Verification Commands]] - document - .agents/skills/i-sec/SKILL.md
+- [[description of what this does]] - document - .agents/skills/i-athena/SKILL.md
+- [[Athena README]] - document - .agents/skills/i-athena/README.md
+- [[Athena — Knowledge Distiller_6]] - document - .agents/skills/i-athena/SKILL.md
+- [[Input Requirements_1]] - document - .agents/skills/i-athena/SKILL.md
+- [[Output Format]] - document - .agents/skills/i-athena/SKILL.md
+- [[Persona]] - document - .agents/skills/i-athena/SKILL.md
+- [[Quality Checklist_1]] - document - .agents/skills/i-athena/SKILL.md
+- [[Role_5]] - document - .agents/skills/i-athena/SKILL.md
+- [[SKILL_5]] - document - .agents/skills/i-athena/SKILL.md
+- [[System Prompt]] - document - .agents/skills/i-athena/SKILL.md
+- [[User Prompt Template]] - document - .agents/skills/i-athena/SKILL.md
+- [[cheatsheet]] - document - .agents/skills/i-athena/SKILL.md
+- [[show_notes]] - document - .agents/skills/i-athena/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,3 +30,10 @@ members: 13
 TABLE source_file, type FROM #community/Community_697
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 939]]
+- 1 edge to [[_COMMUNITY_Community 651]]
+
+## Top bridge nodes
+- [[Athena — Knowledge Distiller_6]] - degree 8, connects to 2 communities

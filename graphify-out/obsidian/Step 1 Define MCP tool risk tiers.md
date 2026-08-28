@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/02-human-in-the-loop.md"
 type: "document"
-community: "Community 578"
+community: "Community 573"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_578
+  - community/Community_573
 ---
 
 # Step 1: Define MCP tool risk tiers
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Remediation_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_578
+#graphify/document #graphify/EXTRACTED #community/Community_573

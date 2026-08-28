@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_rbac.py"
 type: "rationale"
-community: "Community 75"
+community: "Group RBAC & Tool ACL"
 location: "L114"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_75
+  - community/Group_RBAC__Tool_ACL
 ---
 
 # Return True if user_id is the owner in group_chat_id.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.is_owner()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_75
+#graphify/rationale #graphify/EXTRACTED #community/Group_RBAC__Tool_ACL

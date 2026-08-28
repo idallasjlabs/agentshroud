@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "rationale"
-community: "Community 593"
+community: "Community 618"
 location: "L511"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_593
+  - community/Community_618
 ---
 
 # handle_event ignores message events with no user field.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_event_without_user_ignored()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_593
+#graphify/rationale #graphify/EXTRACTED #community/Community_618

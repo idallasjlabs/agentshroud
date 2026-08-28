@@ -1,41 +1,64 @@
 ---
 type: community
-members: 28
+cohesion: 0.04
+members: 49
 ---
 
 # Community 117
 
-**Members:** 28 nodes
+**Cohesion:** 0.04 - loosely connected
+**Members:** 49 nodes
 
 ## Members
-- [[Anthropic v1messages response → OpenAI v1chatcompletions envelope.]] - rationale - gateway/proxy/anthropic_openai_translator.py
-- [[Convert an Anthropic message content field to OpenAI format.]] - rationale - gateway/proxy/anthropic_openai_translator.py
-- [[Flatten Anthropic system prompt (string or content-block list) to plain text.]] - rationale - gateway/proxy/anthropic_openai_translator.py
-- [[Hermes v0.16.0 OpenAI-Client Compatibility Incident (3-day cron outage)]] - rationale - gateway/tests/test_chat_completions_alias.py
-- [[If openai_to_gemini_request raises, the request must still be     forwarded (unm]] - rationale - gateway/tests/test_gemini_via_openai_path.py
-- [[Regression don't break the existing v1messages path.]] - rationale - gateway/tests/test_chat_completions_alias.py
-- [[The combined path v1chatcompletions with model=claude- must     end up POST]] - rationale - gateway/tests/test_claude_via_openai_path.py
-- [[The combined path v1chatcompletions with model=gemini- must end     up POST]] - rationale - gateway/tests/test_gemini_via_openai_path.py
-- [[Translate an OpenAI v1chatcompletions request body to Anthropic v1messages.]] - rationale - gateway/proxy/anthropic_openai_translator.py
-- [[_anthropic_content_to_openai()]] - code - gateway/proxy/anthropic_openai_translator.py
-- [[_anthropic_system_to_openai()]] - code - gateway/proxy/anthropic_openai_translator.py
-- [[_random_msg_id()_1]] - code - gateway/proxy/anthropic_openai_translator.py
-- [[anthropic_openai_translator.py]] - code - gateway/proxy/anthropic_openai_translator.py
-- [[anthropic_to_openai_response()]] - code - gateway/proxy/anthropic_openai_translator.py
-- [[client()_3]] - code - gateway/tests/test_chat_completions_alias.py
-- [[openai_to_anthropic_request()]] - code - gateway/proxy/anthropic_openai_translator.py
-- [[test_anthropic_to_openai_response_envelope()]] - code - gateway/tests/test_claude_via_openai_path.py
-- [[test_chat_completions_alias.py]] - code - gateway/tests/test_chat_completions_alias.py
-- [[test_chat_completions_alias_passes_correct_path_to_proxy()]] - code - gateway/tests/test_chat_completions_alias.py
-- [[test_chat_completions_alias_routes_to_v1_path()]] - code - gateway/tests/test_chat_completions_alias.py
-- [[test_claude_via_openai_path.py]] - code - gateway/tests/test_claude_via_openai_path.py
-- [[test_gemini_via_openai_path.py]] - code - gateway/tests/test_gemini_via_openai_path.py
-- [[test_get_chat_completions_alias_also_routes()]] - code - gateway/tests/test_chat_completions_alias.py
-- [[test_openai_to_anthropic_request_strips_system_role()]] - code - gateway/tests/test_claude_via_openai_path.py
-- [[test_proxy_gemini_translation_failure_falls_through_gracefully()]] - code - gateway/tests/test_gemini_via_openai_path.py
-- [[test_proxy_rewrites_claude_via_openai_path()]] - code - gateway/tests/test_claude_via_openai_path.py
-- [[test_proxy_rewrites_gemini_via_openai_path()]] - code - gateway/tests/test_gemini_via_openai_path.py
-- [[test_root_v1_messages_still_works_unchanged()]] - code - gateway/tests/test_chat_completions_alias.py
+- [[1. Container Isolation]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[1. MCP Proxy Wrapper (Bot Side)]] - document - docs/vault/01 - Architecture/Data Flow.md
+- [[10. Approval Queue]] - document - docs/vault/01 - Architecture/Data Flow.md
+- [[11. Ledger Recording]] - document - docs/vault/01 - Architecture/Data Flow.md
+- [[2. Authentication (Gateway Entry)]] - document - docs/vault/01 - Architecture/Data Flow.md
+- [[2. Capability Dropping]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[3. Middleware Manager]] - document - docs/vault/01 - Architecture/Data Flow.md
+- [[3. Resource Limits]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[4. Input Normalization]] - document - docs/vault/01 - Architecture/Data Flow.md
+- [[5. Audit Ledger]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[5. PII Sanitization]] - document - docs/vault/01 - Architecture/Data Flow.md
+- [[6. Prompt Injection Defense]] - document - docs/vault/01 - Architecture/Data Flow.md
+- [[7. Secrets Management]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[8. Bot Identity Separation]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[9. Proxy Routing]] - document - docs/vault/01 - Architecture/Data Flow.md
+- [[AI Security Standards Tracker job]] - concept - docker/config/hermes/cron/jobs.yaml
+- [[Configuration_13]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
+- [[Data Flow_1]] - document - docs/vault/01 - Architecture/Data Flow.md
+- [[EgressFilter_3]] - concept - docker/config/hermes/SOUL.md
+- [[EgressFilter._is_private_ip(host)]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
+- [[EgressFilter._record(agent_id, dest, port, action, rule)]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
+- [[EgressFilter.check(agent_id, destination, port)]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
+- [[EgressPolicy.matches_domain(domain)]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
+- [[EnhancedApprovalQueue (`enhanced_queue.py`)]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
+- [[Environment Variables_11]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
+- [[Environment Variables Used_9]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
+- [[Function Details_35]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
+- [[Key Class `EnhancedApprovalQueue`]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
+- [[Key Classes  Functions_38]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
+- [[Layer-by-Layer Breakdown]] - document - docs/vault/01 - Architecture/Data Flow.md
+- [[Mode Enforce vs Monitor_6]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
+- [[Overview_19]] - document - docs/vault/01 - Architecture/Data Flow.md
+- [[Persistence]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
+- [[Purpose_123]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
+- [[Purpose_156]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
+- [[Related_42]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
+- [[Related Notes_3]] - document - docs/vault/01 - Architecture/Data Flow.md
+- [[Related Notes_9]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
+- [[Request Flow Diagram]] - document - docs/vault/01 - Architecture/Data Flow.md
+- [[Response Path]] - document - docs/vault/01 - Architecture/Data Flow.md
+- [[Responsibilities_9]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
+- [[Responsibilities_40]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
+- [[Security Controls]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[Threat Model_11]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
+- [[Timeout Behavior]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
+- [[Tool Risk Tiers]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
+- [[WebSocket Notifications]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
+- [[approval_queue.py]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
+- [[egress_filter.py_1]] - document - docs/vault/02 - Modules/Security Modules/egress_filter.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -45,16 +68,22 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_Community 126]]
-- 7 edges to [[_COMMUNITY_Community 79]]
-- 2 edges to [[_COMMUNITY_Community 108]]
-- 1 edge to [[_COMMUNITY_Community 40]]
-- 1 edge to [[_COMMUNITY_Community 142]]
-- 1 edge to [[_COMMUNITY_Community 109]]
+- 4 edges to [[_COMMUNITY_Community 92]]
+- 2 edges to [[_COMMUNITY_Community 315]]
+- 1 edge to [[_COMMUNITY_Community 352]]
+- 1 edge to [[_COMMUNITY_Community 153]]
+- 1 edge to [[_COMMUNITY_Community 274]]
+- 1 edge to [[_COMMUNITY_Community 85]]
+- 1 edge to [[_COMMUNITY_Community 741]]
+- 1 edge to [[_COMMUNITY_Community 593]]
+- 1 edge to [[_COMMUNITY_Community 799]]
+- 1 edge to [[_COMMUNITY_Community 414]]
+- 1 edge to [[_COMMUNITY_Community 566]]
+- 1 edge to [[_COMMUNITY_Community 395]]
 
 ## Top bridge nodes
-- [[anthropic_openai_translator.py]] - degree 8, connects to 2 communities
-- [[anthropic_to_openai_response()]] - degree 7, connects to 2 communities
-- [[openai_to_anthropic_request()]] - degree 6, connects to 2 communities
-- [[test_gemini_via_openai_path.py]] - degree 5, connects to 2 communities
-- [[test_claude_via_openai_path.py]] - degree 9, connects to 1 community
+- [[approval_queue.py]] - degree 8, connects to 4 communities
+- [[EgressFilter_3]] - degree 18, connects to 3 communities
+- [[Security Controls]] - degree 10, connects to 2 communities
+- [[AI Security Standards Tracker job]] - degree 4, connects to 2 communities
+- [[Layer-by-Layer Breakdown]] - degree 13, connects to 1 community

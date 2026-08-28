@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_SCRIPTS_REFERENCE.md"
 type: "document"
-community: "Community 343"
+community: "Community 346"
 location: "L220"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_343
+  - community/Community_346
 ---
 
 # Automation Examples
@@ -17,4 +17,4 @@ tags:
 - [[Daily Security Check (cron)]] - `contains` [EXTRACTED]
 - [[Weekly Compliance Scan (cron)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_343
+#graphify/document #graphify/EXTRACTED #community/Community_346

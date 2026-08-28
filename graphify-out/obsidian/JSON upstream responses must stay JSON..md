@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "rationale"
-community: "Community 109"
+community: "Community 1126"
 location: "L268"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_109
+  - community/Community_1126
 ---
 
 # JSON upstream responses must stay JSON.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_google_proxy_json_body_passthrough()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_109
+#graphify/rationale #graphify/EXTRACTED #community/Community_1126

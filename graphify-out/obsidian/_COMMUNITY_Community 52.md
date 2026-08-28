@@ -1,94 +1,97 @@
 ---
 type: community
-members: 81
+cohesion: 0.04
+members: 82
 ---
 
 # Community 52
 
-**Members:** 81 nodes
+**Cohesion:** 0.04 - loosely connected
+**Members:** 82 nodes
 
 ## Members
-- [[.__init__()_161]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[.__init__()_164]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[.close()_15]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[.close()_16]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[.drain()_2]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[.get_extra_info()_1]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[.get_stats()_3]] - code - gateway/proxy/http_proxy.py
-- [[.readline()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[.start()]] - code - gateway/proxy/http_proxy.py
-- [[.stop()_1]] - code - gateway/proxy/http_proxy.py
-- [[.write()_2]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[Asyncio HTTP CONNECT proxy server.      Intercepts CONNECT tunnel requests, vali]] - rationale - gateway/proxy/http_proxy.py
-- [[Bytes relayed before a connection error are still sampled for scanning.]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[CONNECT tunnel establishment must race IPv4IPv6 (RFC 8305) instead of     tryin]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[Egress filter without _approval_queue attr - bypass proceeds silently.]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[First open_connection attempt fails; retry (with patched sleep) succeeds.]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[HTTPConnectProxy]] - code - gateway/proxy/http_proxy.py
-- [[HTTPConnectProxy_1]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[Host-only CONNECT target defaults to port 443; blocked host - 403.]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[Minimal StreamWriter stand-in that records written bytes.]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[Port-443 tunnel bytes are TLS ciphertext — clamscan can never match a     signat]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[Port-80 downloads are plaintext — malware sampling must keep working.]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[Real-world regression (2026-07-29) uvloop (the active event loop under     uvic]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[Return proxy traffic statistics.]] - rationale - gateway/proxy/http_proxy.py
-- [[Start the CONNECT proxy server.]] - rationale - gateway/proxy/http_proxy.py
-- [[Stop the CONNECT proxy server.]] - rationale - gateway/proxy/http_proxy.py
-- [[StreamReader_3]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[Transport without an underlying socket (None) is skipped cleanly.]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[Writer exposing a .transport whose socket records setsockopt calls.]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[_CloseRaisesWriter]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[_MockWriter_1]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[_SocketTransportWriter]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[_TimeoutReader]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[_allowlist_proxy()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[_capture_scans()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[_eof_target_connection()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[_make_stream()_1]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[asyncio.open_connection replacement returning an immediately-EOF stream.]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[clamscan binary missing (sidecar down) - no exception, temp file removed.]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[clamscan runs must never share the default executor with LLM upstream     calls]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[get_extra_info raising must not break the established tunnel.]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[log_external_decision raising must not break the CONNECT.]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[readline() always raises TimeoutError — simulates a stalled client.]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[target_writer.close() raising after relay completes must not propagate.]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[test_bypass_logging_failure_does_not_block_tunnel()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_bypass_with_egress_filter_lacking_approval_queue()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_clamav_scan_clean_records_nothing()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_clamav_scan_infected_records_stats()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_clamav_scan_unavailable_degrades_silently()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_clamav_scan_unlink_failure_swallowed()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_clamav_scans_use_dedicated_single_thread_executor()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_empty_request_line_returns_nothing()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_handle_client_swallows_generic_exception()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_handle_client_swallows_timeout_and_closes_writer()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_handle_client_tolerates_writer_close_failure()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_header_read_timeout_returns_408()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_http_proxy_coverage.py]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_keepalive_set_on_both_tunnel_ends()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_keepalive_skipped_when_socket_is_none()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_keepalive_socket_lookup_failure_is_swallowed()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_non_numeric_port_returns_400()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_recent_stats_trimmed_to_100_entries()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_relay_and_scan_idle_timeout_no_data_no_scan()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_relay_and_scan_limit_reached_scans_once()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_relay_and_scan_plain_http_port_still_scans()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_relay_and_scan_read_error_scans_partial_buffer()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_relay_and_scan_small_download_scanned_at_eof()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_relay_and_scan_swallows_writer_close_failure()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_relay_and_scan_tls_tunnel_skips_ciphertext_scan()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_relay_copies_bytes_until_eof()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_relay_idle_timeout_closes_writer()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_relay_swallows_read_errors()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_relay_swallows_writer_close_failure()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_request_line_timeout_returns_408()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_stop_without_start_is_noop()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_target_without_port_defaults_to_443()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_tunnel_all_attempts_fail_returns_502()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_tunnel_connect_falls_back_when_happy_eyeballs_unsupported()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_tunnel_connect_uses_happy_eyeballs()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_tunnel_retries_then_succeeds()]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[test_tunnel_target_writer_close_failure_swallowed()]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[.__init__()_85]] - code - gateway/security/heuristic_classifier.py
+- [[._classify_heuristic()]] - code - gateway/security/heuristic_classifier.py
+- [[._classify_ml()]] - code - gateway/security/heuristic_classifier.py
+- [[._compute_unicode_anomaly()]] - code - gateway/security/heuristic_classifier.py
+- [[._score_signal()]] - code - gateway/security/heuristic_classifier.py
+- [[._try_load_model()]] - code - gateway/security/heuristic_classifier.py
+- [[.classify()]] - code - gateway/security/heuristic_classifier.py
+- [[.is_injection()]] - code - gateway/security/heuristic_classifier.py
+- [[.is_uncertain()]] - code - gateway/security/heuristic_classifier.py
+- [[.setup_method()_6]] - code - gateway/tests/test_heuristic_classifier.py
+- [[.test_backward_compat_alias()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[.test_base64_payload_normalized()]] - code - gateway/tests/test_adversarial_injection.py
+- [[.test_benign_text_low_score()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[.test_classic_override_detection_rate()]] - code - gateway/tests/test_adversarial_injection.py
+- [[.test_classic_payloads_individually()]] - code - gateway/tests/test_adversarial_injection.py
+- [[.test_classification_result_properties()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[.test_classifier_flags_payloads()]] - code - gateway/tests/test_adversarial_injection.py
+- [[.test_clear_injection_high_score()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[.test_context_injection_detection_rate()]] - code - gateway/tests/test_adversarial_injection.py
+- [[.test_cyrillic_homoglyph()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[.test_detection_breakdown_by_category()]] - code - gateway/tests/test_adversarial_injection.py
+- [[.test_empty_text()_1]] - code - gateway/tests/test_heuristic_classifier.py
+- [[.test_encoding_bypass_detection_rate()]] - code - gateway/tests/test_adversarial_injection.py
+- [[.test_encoding_evasion()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[.test_exfiltration_attempt()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[.test_high_confidence_payloads()]] - code - gateway/tests/test_adversarial_injection.py
+- [[.test_long_benign_text()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[.test_model_not_loaded_by_default()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[.test_multi_signal_increases_confidence()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[.test_multilingual_detection_rate()]] - code - gateway/tests/test_adversarial_injection.py
+- [[.test_overall_detection_rate_meets_threshold()]] - code - gateway/tests/test_adversarial_injection.py
+- [[.test_payload_count_meets_minimum()]] - code - gateway/tests/test_adversarial_injection.py
+- [[.test_persona_hijack_detection_rate()]] - code - gateway/tests/test_adversarial_injection.py
+- [[.test_prompt_extraction_detection_rate()]] - code - gateway/tests/test_adversarial_injection.py
+- [[.test_roleplay_attack()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[.test_separator_injection()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[.test_unicode_anomaly()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[Classic instruction-override payloads — should have near-100% detection.]] - rationale - gateway/tests/test_adversarial_injection.py
+- [[ClassificationResult]] - code - gateway/security/heuristic_classifier.py
+- [[Classify text for injection probability.          Args             text Input]] - rationale - gateway/security/heuristic_classifier.py
+- [[Combined detected if ANY defense layer triggers.]] - rationale - gateway/tests/test_adversarial_injection.py
+- [[Context  document retrieval poisoning payloads.]] - rationale - gateway/tests/test_adversarial_injection.py
+- [[Detect unusual Unicode patterns that suggest evasion.]] - rationale - gateway/security/heuristic_classifier.py
+- [[End-to-end all 110+ payloads against combined defense layer.]] - rationale - gateway/tests/test_adversarial_injection.py
+- [[Ensure the payload library stays above 100 entries (CI regression gate).]] - rationale - gateway/tests/test_adversarial_injection.py
+- [[Heuristic injection classifier using multi-signal analysis.      Scoring approac]] - rationale - gateway/security/heuristic_classifier.py
+- [[Heuristic-based classification using multi-signal analysis.]] - rationale - gateway/security/heuristic_classifier.py
+- [[HeuristicClassifier_1]] - code - gateway/tests/test_adversarial_injection.py
+- [[HeuristicClassifier]] - code - gateway/security/heuristic_classifier.py
+- [[HeuristicClassifier returns injection or uncertain on known bad payloads.]] - rationale - gateway/tests/test_adversarial_injection.py
+- [[InjectionClassifier alias should still work.]] - rationale - gateway/tests/test_heuristic_classifier.py
+- [[Multilingual injection variants.]] - rationale - gateway/tests/test_adversarial_injection.py
+- [[Pattern]] - code - gateway/security/heuristic_classifier.py
+- [[Persona hijack  DAN-style payloads.]] - rationale - gateway/tests/test_adversarial_injection.py
+- [[PromptGuard_1]] - code - gateway/tests/test_adversarial_injection.py
+- [[PromptGuard scans high-confidence classic payloads with non-zero score.]] - rationale - gateway/tests/test_adversarial_injection.py
+- [[Report per-category detection rates for observability (not a gate).]] - rationale - gateway/tests/test_adversarial_injection.py
+- [[Result of injection classification.]] - rationale - gateway/security/heuristic_classifier.py
+- [[Return True if HeuristicClassifier flags as injection or uncertain.]] - rationale - gateway/tests/test_adversarial_injection.py
+- [[Return True if InputNormalizer changes the text (encoding detected).]] - rationale - gateway/tests/test_adversarial_injection.py
+- [[Return True if PromptGuard assigns a non-zero score or blocks.]] - rationale - gateway/tests/test_adversarial_injection.py
+- [[Score a single signal pattern. Returns 0.0–1.0.]] - rationale - gateway/security/heuristic_classifier.py
+- [[System prompt extraction payloads.]] - rationale - gateway/tests/test_adversarial_injection.py
+- [[Test the heuristic injection classifier.]] - rationale - gateway/tests/test_heuristic_classifier.py
+- [[TestClassicOverride]] - code - gateway/tests/test_adversarial_injection.py
+- [[TestContextInjection]] - code - gateway/tests/test_adversarial_injection.py
+- [[TestHeuristicClassifier]] - code - gateway/tests/test_heuristic_classifier.py
+- [[TestHeuristicClassifierDirectly]] - code - gateway/tests/test_adversarial_injection.py
+- [[TestMultilingual]] - code - gateway/tests/test_adversarial_injection.py
+- [[TestOverallDetectionRate]] - code - gateway/tests/test_adversarial_injection.py
+- [[TestPersonaHijack]] - code - gateway/tests/test_adversarial_injection.py
+- [[TestPromptExtraction]] - code - gateway/tests/test_adversarial_injection.py
+- [[TestPromptGuardDirectly]] - code - gateway/tests/test_adversarial_injection.py
+- [[EXPERIMENTAL Attempt to load a fine-tuned ML model. Returns True on success.]] - rationale - gateway/security/heuristic_classifier.py
+- [[EXPERIMENTAL ML model classification placeholder.]] - rationale - gateway/security/heuristic_classifier.py
+- [[_any_detector_fires()]] - code - gateway/tests/test_adversarial_injection.py
+- [[_heuristic_detects()]] - code - gateway/tests/test_adversarial_injection.py
+- [[_normalizer_transforms()]] - code - gateway/tests/test_adversarial_injection.py
+- [[_prompt_guard_detects()]] - code - gateway/tests/test_adversarial_injection.py
+- [[heuristic_classifier.py (HeuristicClassifier)]] - code - gateway/security/heuristic_classifier.py
+- [[test_adversarial_injection.py]] - code - gateway/tests/test_adversarial_injection.py
+- [[test_heuristic_classifier.py]] - code - gateway/tests/test_heuristic_classifier.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -98,21 +101,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 29 edges to [[_COMMUNITY_Community 94]]
-- 21 edges to [[_COMMUNITY_Community 30]]
-- 10 edges to [[_COMMUNITY_Community 735]]
-- 6 edges to [[_COMMUNITY_Community 671]]
-- 2 edges to [[_COMMUNITY_Community 6]]
-- 2 edges to [[_COMMUNITY_Community 74]]
-- 1 edge to [[_COMMUNITY_Community 1]]
-- 1 edge to [[_COMMUNITY_Community 564]]
-- 1 edge to [[_COMMUNITY_Community 22]]
-- 1 edge to [[_COMMUNITY_Community 483]]
-- 1 edge to [[_COMMUNITY_Community 95]]
+- 11 edges to [[_COMMUNITY_PII Sanitizer & E2E Tests]]
+- 10 edges to [[_COMMUNITY_Adversarial Injection Guards]]
+- 2 edges to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
+- 2 edges to [[_COMMUNITY_Community 137]]
+- 1 edge to [[_COMMUNITY_Community 155]]
 
 ## Top bridge nodes
-- [[HTTPConnectProxy]] - degree 93, connects to 11 communities
-- [[test_http_proxy_coverage.py]] - degree 53, connects to 3 communities
-- [[HTTPConnectProxy_1]] - degree 36, connects to 2 communities
-- [[_MockWriter_1]] - degree 36, connects to 1 community
-- [[StreamReader_3]] - degree 15, connects to 1 community
+- [[HeuristicClassifier]] - degree 26, connects to 3 communities
+- [[test_adversarial_injection.py]] - degree 16, connects to 2 communities
+- [[TestOverallDetectionRate]] - degree 8, connects to 2 communities
+- [[HeuristicClassifier_1]] - degree 15, connects to 1 community
+- [[PromptGuard_1]] - degree 15, connects to 1 community

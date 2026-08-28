@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/installer.py"
 type: "rationale"
-community: "Community 439"
+community: "Community 447"
 location: "L56"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_439
+  - community/Community_447
 ---
 
 # Serve the installer wizard HTML.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[installer_page()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_439
+#graphify/rationale #graphify/EXTRACTED #community/Community_447

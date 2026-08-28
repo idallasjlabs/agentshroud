@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "rationale"
-community: "Community 108"
+community: "Community 129"
 location: "L765"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_108
+  - community/Community_129
 ---
 
 # Proxy an LLM API request.          Returns (status_code, response_headers, respo
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.proxy_messages()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_108
+#graphify/rationale #graphify/EXTRACTED #community/Community_129

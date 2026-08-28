@@ -1,32 +1,34 @@
 ---
 type: community
+cohesion: 0.11
 members: 19
 ---
 
 # Community 469
 
+**Cohesion:** 0.11 - loosely connected
 **Members:** 19 nodes
 
 ## Members
-- [[Assigning Work_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
-- [[CHANGELOG.md Updates_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
-- [[Continuity Files_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
-- [[Definition of Done (from CLAUDE.md)_1]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
-- [[Escalation_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
-- [[Known Risks_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
-- [[Project Roadmap_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
-- [[Quick Status (for chatTelegram)_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
-- [[README.md Updates_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
-- [[Risk Management_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
-- [[Role_98]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
-- [[SKILL_168]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
-- [[Skill Project Management (PM)_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
-- [[Status Reporting_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
-- [[Task Coordination_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
-- [[Tracking Format_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
-- [[`session-notesCONTINUE-YYYY-MM-DD.md` (daily snapshot)_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
-- [[`session-notesCONTINUE.md` (always current)_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
-- [[`session-notesSESSION_SUMMARY_YYYY-MM-DD.md` (session report)_2]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
+- [[Anti-Patterns to Flag_16]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Brand Audit Checklist_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Brand System Components_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Color Token Definition_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Core Discipline Audit → Define → Apply → Enforce_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Deck  Slide Master Rules_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Dependencies_12]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Diagram Theme Block (Mermaid)_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[File & Directory Conventions_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[HTML  CSS Brand Variables_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Patterns by Output Type_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Required ≥ 4.5 for text, ≥ 3.0 for UI elements_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Role_80]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Rules_19]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[SKILL_137]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Skill Branding Specialist (BS)_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Typography Scale_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Validate contrast ratio_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
+- [[Voice & Tone Guide_2]] - document - docker/config/openclaw/skills/i-bs/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

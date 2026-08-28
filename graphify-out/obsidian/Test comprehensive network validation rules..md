@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_network_validator.py"
 type: "rationale"
-community: "Community 68"
+community: "Community 66"
 location: "L223"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_68
+  - community/Community_66
 ---
 
 # Test comprehensive network validation rules.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_network_validation_comprehensive_rules()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_68
+#graphify/rationale #graphify/EXTRACTED #community/Community_66

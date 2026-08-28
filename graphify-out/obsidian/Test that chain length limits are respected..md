@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "rationale"
-community: "Community 78"
+community: "Community 169"
 location: "L249"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_78
+  - community/Community_169
 ---
 
 # Test that chain length limits are respected.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_chain_length_limits()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_78
+#graphify/rationale #graphify/EXTRACTED #community/Community_169

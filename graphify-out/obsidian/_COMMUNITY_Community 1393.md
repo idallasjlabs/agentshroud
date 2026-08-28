@@ -1,16 +1,18 @@
 ---
 type: community
+cohesion: 0.67
 members: 3
 ---
 
 # Community 1393
 
+**Cohesion:** 0.67 - moderately connected
 **Members:** 3 nodes
 
 ## Members
-- [[Hermes Podcast Production Orchestrator README]] - document - .agents/skills/i-hermes/README.md
-- [[Hermes Reference Verifier Skill]] - document - .agents/skills/i-hermes/SKILL.md
-- [[Podcast Production Pipeline (multi-agent)_1]] - concept - .agents/skills/i-hermes/README.md
+- [[FreeRTOS.h_1]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/freertos/FreeRTOS.h
+- [[TickType_t_2]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/freertos/FreeRTOS.h
+- [[xTaskGetTickCount()_1]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/freertos/FreeRTOS.h
 
 ## Live Query (requires Dataview plugin)
 

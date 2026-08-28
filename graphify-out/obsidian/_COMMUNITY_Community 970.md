@@ -1,21 +1,23 @@
 ---
 type: community
+cohesion: 0.25
 members: 8
 ---
 
 # Community 970
 
+**Cohesion:** 0.25 - loosely connected
 **Members:** 8 nodes
 
 ## Members
-- [[Alert Levels]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
-- [[Integration with Gateway]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
-- [[Key OSSEC Config Sections (Inferred)]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
-- [[Purpose_183]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
-- [[Related Notes_27]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
-- [[Relationship to Other Security Modules]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
-- [[What Wazuh Monitors in AgentShroud]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
-- [[wazuh-ossec.conf]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
+- [[Kill Switch Triggered]] - document - docs/operations/incident-response.md
+- [[Layer 1 Pattern Matching]] - document - docs/security/security-architecture.md
+- [[Layer 2 Unicode Normalization]] - document - docs/security/security-architecture.md
+- [[Layer 3 Multi-Layer Decoding]] - document - docs/security/security-architecture.md
+- [[Multi-Layer Detection Strategy]] - document - docs/security/security-architecture.md
+- [[P2 High Priority Incidents]] - document - docs/operations/incident-response.md
+- [[PII Leak Incident]] - document - docs/operations/incident-response.md
+- [[Prompt Injection Detected]] - document - docs/operations/incident-response.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,7 +27,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 162]]
+- 1 edge to [[_COMMUNITY_Community 128]]
+- 1 edge to [[_COMMUNITY_Community 153]]
 
 ## Top bridge nodes
-- [[wazuh-ossec.conf]] - degree 8, connects to 1 community
+- [[P2 High Priority Incidents]] - degree 4, connects to 1 community
+- [[Prompt Injection Detected]] - degree 3, connects to 1 community

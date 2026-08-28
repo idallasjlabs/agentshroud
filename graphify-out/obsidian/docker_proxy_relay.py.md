@@ -1,18 +1,17 @@
 ---
 source_file: "docker/bots/hermes/docker_proxy_relay.py"
 type: "code"
-community: "Community 495"
+community: "Community 1080"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_495
+  - community/Community_1080
 ---
 
 # docker_proxy_relay.py
 
 ## Connections
-- [[AgentShroud Docker Compose (Production)]] - `references` [AMBIGUOUS]
 - [[_handle()_1]] - `contains` [EXTRACTED]
 - [[_pump()]] - `contains` [EXTRACTED]
 - [[dashboard_bridge.py]] - `semantically_similar_to` [EXTRACTED]
@@ -20,4 +19,4 @@ tags:
 - [[run-standalone.sh]] - `shares_data_with` [EXTRACTED]
 - [[start.sh]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_495
+#graphify/code #graphify/EXTRACTED #community/Community_1080

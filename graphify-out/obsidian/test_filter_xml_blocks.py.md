@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_filter_xml_blocks.py"
 type: "code"
-community: "Community 136"
+community: "Community 135"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_136
+  - community/Community_135
 ---
 
 # test_filter_xml_blocks.py
@@ -38,4 +38,4 @@ tags:
 - [[test_was_filtered_false_when_no_blocks()]] - `contains` [EXTRACTED]
 - [[test_was_filtered_true_when_block_present()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_136
+#graphify/code #graphify/EXTRACTED #community/Community_135

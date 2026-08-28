@@ -1,30 +1,31 @@
 ---
 type: community
-members: 17
+cohesion: 0.18
+members: 16
 ---
 
 # Community 549
 
-**Members:** 17 nodes
+**Cohesion:** 0.18 - loosely connected
+**Members:** 16 nodes
 
 ## Members
-- [[Approve Claude Code Prompt]] - document - skills/openclaw/tmux/SKILL.md
-- [[Capture Output]] - document - skills/openclaw/tmux/SKILL.md
-- [[Check All Sessions Status]] - document - skills/openclaw/tmux/SKILL.md
-- [[Check if Session Needs Input]] - document - skills/openclaw/tmux/SKILL.md
-- [[Claude Code Session Patterns]] - document - skills/openclaw/tmux/SKILL.md
-- [[Common Commands_3]] - document - skills/openclaw/tmux/SKILL.md
-- [[Example Sessions]] - document - skills/openclaw/tmux/SKILL.md
-- [[List Sessions]] - document - skills/openclaw/tmux/SKILL.md
-- [[Notes_7]] - document - skills/openclaw/tmux/SKILL.md
-- [[Send Keys]] - document - skills/openclaw/tmux/SKILL.md
-- [[Send Task to Session]] - document - skills/openclaw/tmux/SKILL.md
-- [[Sending Input Safely]] - document - skills/openclaw/tmux/SKILL.md
-- [[Session Management]] - document - skills/openclaw/tmux/SKILL.md
-- [[When NOT to Use_2]] - document - skills/openclaw/tmux/SKILL.md
-- [[When to Use_3]] - document - skills/openclaw/tmux/SKILL.md
-- [[WindowPane Navigation]] - document - skills/openclaw/tmux/SKILL.md
-- [[tmux Session Control]] - document - skills/openclaw/tmux/SKILL.md
+- [[AgentShroud Tagline]] - concept - BRAND.md
+- [[AgentShroud Taglines List]] - document - branding/taglines.json
+- [[check()_6]] - code - tests/startup_smoke/test_hermes_chown_coverage.sh
+- [[check()_7]] - code - tests/startup_smoke/test_hermes_cron_html_email.sh
+- [[check()_9]] - code - tests/startup_smoke/test_openclaw_photo.sh
+- [[email_helper.sh]] - code - docker/bots/hermes/email_helper.sh
+- [[email_helper.sh script]] - code - docker/bots/hermes/email_helper.sh
+- [[run_test()]] - code - scripts/smoke.sh
+- [[smoke.sh]] - code - scripts/smoke.sh
+- [[smoke.sh script]] - code - scripts/smoke.sh
+- [[test_hermes_chown_coverage.sh]] - code - tests/startup_smoke/test_hermes_chown_coverage.sh
+- [[test_hermes_chown_coverage.sh script]] - code - tests/startup_smoke/test_hermes_chown_coverage.sh
+- [[test_hermes_cron_html_email.sh]] - code - tests/startup_smoke/test_hermes_cron_html_email.sh
+- [[test_hermes_cron_html_email.sh script]] - code - tests/startup_smoke/test_hermes_cron_html_email.sh
+- [[test_openclaw_photo.sh]] - code - tests/startup_smoke/test_openclaw_photo.sh
+- [[test_openclaw_photo.sh script]] - code - tests/startup_smoke/test_openclaw_photo.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,7 +35,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 982]]
+- 1 edge to [[_COMMUNITY_Community 1097]]
+- 1 edge to [[_COMMUNITY_Community 476]]
+- 1 edge to [[_COMMUNITY_Community 482]]
+- 1 edge to [[_COMMUNITY_Community 173]]
+- 1 edge to [[_COMMUNITY_Community 1106]]
+- 1 edge to [[_COMMUNITY_Community 684]]
+- 1 edge to [[_COMMUNITY_Community 395]]
+- 1 edge to [[_COMMUNITY_Community 820]]
+- 1 edge to [[_COMMUNITY_Community 146]]
 
 ## Top bridge nodes
-- [[tmux Session Control]] - degree 8, connects to 1 community
+- [[test_openclaw_photo.sh]] - degree 10, connects to 4 communities
+- [[test_hermes_cron_html_email.sh]] - degree 8, connects to 2 communities
+- [[smoke.sh]] - degree 7, connects to 2 communities
+- [[AgentShroud Tagline]] - degree 2, connects to 1 community

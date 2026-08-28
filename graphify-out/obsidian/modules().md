@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/management.py"
 type: "code"
-community: "Community 1857"
+community: "Community 174"
 location: "L85"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1857
+  - community/Community_174
 ---
 
 # modules()
@@ -15,4 +15,4 @@ tags:
 - [[Serve the security modules page (dynamic — fetches live data).]] - `rationale_for` [EXTRACTED]
 - [[management.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1857
+#graphify/code #graphify/EXTRACTED #community/Community_174

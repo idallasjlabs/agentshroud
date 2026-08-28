@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "Community 22"
+community: "Key Vault & Audit Chain"
 location: "L36"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_22
+  - community/Key_Vault__Audit_Chain
 ---
 
 # ScanResult
@@ -30,4 +30,4 @@ tags:
 - [[prompt_guard.py]] - `contains` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_22
+#graphify/code #graphify/INFERRED #community/Key_Vault__Audit_Chain

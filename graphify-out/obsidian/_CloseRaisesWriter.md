@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "Community 52"
+community: "Community 67"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_52
+  - community/Community_67
 ---
 
 # _CloseRaisesWriter
@@ -22,4 +22,4 @@ tags:
 - [[test_relay_and_scan_swallows_writer_close_failure()]] - `calls` [EXTRACTED]
 - [[test_relay_swallows_writer_close_failure()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_52
+#graphify/code #graphify/EXTRACTED #community/Community_67

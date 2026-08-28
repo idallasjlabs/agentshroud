@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/ledger.py.md"
 type: "document"
-community: "Community 622"
+community: "Community 615"
 location: "L39"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_622
+  - community/Community_615
 ---
 
 # Function Details
@@ -18,4 +18,4 @@ tags:
 - [[query(page, page_size, source, since, until, forwarded_to)]] - `contains` [EXTRACTED]
 - [[record(source, content, original_content, sanitized, redaction_count, redaction_types, forwarded_to, content_type, metadata)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_622
+#graphify/document #graphify/EXTRACTED #community/Community_615

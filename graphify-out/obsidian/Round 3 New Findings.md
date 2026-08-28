@@ -1,20 +1,19 @@
 ---
 source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md"
 type: "document"
-community: "Community 342"
+community: "Community 818"
 location: "L87"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_342
+  - community/Community_818
 ---
 
 # Round 3 New Findings
 
 ## Connections
 - [[Blue Team Security Assessment — AgentShroud v0.8.0 Round 2]] - `contains` [EXTRACTED]
-- [[Blue Team Security Assessment — AgentShroud v0.8.0 Round 3 (Final)]] - `contains` [EXTRACTED]
 - [[LOW Findings_1]] - `contains` [EXTRACTED]
 - [[MEDIUM Findings_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_342
+#graphify/document #graphify/EXTRACTED #community/Community_818

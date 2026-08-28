@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "Community 134"
+community: "SOC Collaborators"
 location: "L389"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_134
+  - community/SOC_Collaborators
 ---
 
 # _write_collab_store()
@@ -19,4 +19,4 @@ tags:
 - [[revoke_approved_collaborator()]] - `calls` [EXTRACTED]
 - [[unpause_collaborator()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_134
+#graphify/code #graphify/EXTRACTED #community/SOC_Collaborators

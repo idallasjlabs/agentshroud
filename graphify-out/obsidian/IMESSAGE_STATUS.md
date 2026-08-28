@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/IMESSAGE_STATUS.md"
 type: "document"
-community: "Community 392"
+community: "Community 393"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_392
+  - community/Community_393
 ---
 
 # IMESSAGE_STATUS.md
@@ -16,4 +16,4 @@ tags:
 - [[IMESSAGE_PERMISSION_FIX]] - `conceptually_related_to` [INFERRED]
 - [[iMessage Integration Status]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_392
+#graphify/document #graphify/EXTRACTED #community/Community_393

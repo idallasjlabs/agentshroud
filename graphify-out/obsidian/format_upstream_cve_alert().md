@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/daily_cve_report.py"
 type: "code"
-community: "Community 639"
+community: "Community 631"
 location: "L543"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_639
+  - community/Community_631
 ---
 
 # format_upstream_cve_alert()
@@ -28,4 +28,4 @@ tags:
 - [[run_upstream_cve_check()]] - `calls` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_639
+#graphify/code #graphify/EXTRACTED #community/Community_631

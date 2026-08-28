@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "Community 6"
+community: "Memory Lifecycle & Egress Filtering"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/Memory_Lifecycle__Egress_Filtering
 ---
 
 # lifespan.py
@@ -42,7 +42,7 @@ tags:
 - [[EnvelopeSigner]] - `imports` [EXTRACTED]
 - [[EventBus]] - `imports` [EXTRACTED]
 - [[FalcoAlertWatcher]] - `imports` [EXTRACTED]
-- [[FastAPI_1]] - `imports_from` [EXTRACTED]
+- [[FastAPI_2]] - `imports_from` [EXTRACTED]
 - [[GroupRegistry]] - `imports` [EXTRACTED]
 - [[HTTPConnectProxy]] - `imports` [EXTRACTED]
 - [[HeuristicClassifier]] - `imports` [EXTRACTED]
@@ -147,4 +147,4 @@ tags:
 - [[web_config.py]] - `imports_from` [EXTRACTED]
 - [[web_proxy.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_6
+#graphify/code #graphify/EXTRACTED #community/Memory_Lifecycle__Egress_Filtering

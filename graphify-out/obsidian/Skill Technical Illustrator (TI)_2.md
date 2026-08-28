@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-ti/SKILL.md"
 type: "document"
-community: "Community 396"
+community: "Community 398"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_396
+  - community/Community_398
 ---
 
 # Skill: Technical Illustrator (TI)
@@ -24,4 +24,4 @@ tags:
 - [[SKILL_184]] - `contains` [EXTRACTED]
 - [[Validation Checklist_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_396
+#graphify/document #graphify/EXTRACTED #community/Community_398

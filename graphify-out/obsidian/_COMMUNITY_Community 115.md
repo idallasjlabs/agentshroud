@@ -1,63 +1,65 @@
 ---
 type: community
+cohesion: 0.04
 members: 50
 ---
 
 # Community 115
 
+**Cohesion:** 0.04 - loosely connected
 **Members:** 50 nodes
 
 ## Members
-- [[A response without choices0.message.content raises RuntimeError.]] - rationale - gateway/tests/test_voice_gateway.py
-- [[Best-effort model warm-up.      Preloading the STT model and TTS pipeline at sta]] - rationale - voice_gateway/server.py
-- [[Build a mock httpx response with an OpenAI-shape body.]] - rationale - gateway/tests/test_voice_gateway.py
-- [[Build a system message with the current datetime for voice context.]] - rationale - voice_gateway/server.py
-- [[Build the per-device OTA token allowlist (SCRUM-58).      Owner-gated rollout o]] - rationale - voice_gateway/server.py
-- [[Constant-time allowlist check for an OTA ``token=`` value.      Returns True wh]] - rationale - voice_gateway/server.py
-- [[FastAPI_3]] - code - voice_gateway/server.py
-- [[Leadingtrailing whitespace in the model reply is stripped.]] - rationale - gateway/tests/test_voice_gateway.py
-- [[POST conversation history to the gateway's OpenAI-compat endpoint.      Fast pat]] - rationale - voice_gateway/server.py
-- [[Parse a spoken usetellaskswitch to modelagent command.      Returns (k]] - rationale - voice_gateway/server.py
-- [[Request_9]] - code - voice_gateway/server.py
-- [[Request body must carry the configured model and max_tokens=150.]] - rationale - gateway/tests/test_voice_gateway.py
-- [[Response_1]] - code - voice_gateway/server.py
-- [[Return the requested volume (0-100, clamped) for a spoken     set the volume]] - rationale - voice_gateway/server.py
-- [[Send a heartbeat every 4 s to keep Tailscale Funnel relay and hotspot NAT alive.]] - rationale - voice_gateway/server.py
-- [[Serve the current ESP32 firmware binary for OTA (SCRUM-58).      Contract expect]] - rationale - voice_gateway/server.py
-- [[Spoken answer for a volume READ query the tracked level, or a     calibration h]] - rationale - voice_gateway/server.py
-- [[The full messages history (system + prior turns) is sent in the request body.]] - rationale - gateway/tests/test_voice_gateway.py
-- [[True for a spoken READ of the current volume (what's the volume,     current]] - rationale - voice_gateway/server.py
-- [[WebSocket_8]] - code - voice_gateway/server.py
-- [[_State]] - code - voice_gateway/server.py
-- [[__init__.py_17]] - code - voice_gateway/__init__.py
-- [[__main__.py]] - code - voice_gateway/__main__.py
-- [[_answer_volume_query()]] - code - voice_gateway/server.py
-- [[_call_llm posts to v1chatcompletions and returns stripped content.]] - rationale - gateway/tests/test_voice_gateway.py
-- [[_call_llm()]] - code - voice_gateway/server.py
-- [[_effective_voice_model()]] - code - voice_gateway/server.py
-- [[_get_firmware_etag()]] - code - voice_gateway/server.py
-- [[_get_model() — lazy-loads faster-whisper WhisperModel]] - code - voice_gateway/stt.py
-- [[_get_pipeline() — lazy-inits Kokoro KPipeline singleton]] - code - voice_gateway/tts.py
-- [[_is_volume_query()]] - code - voice_gateway/server.py
-- [[_keepalive()]] - code - voice_gateway/server.py
-- [[_lifespan()]] - code - voice_gateway/server.py
-- [[_load_ota_tokens()]] - code - voice_gateway/server.py
-- [[_openai_resp()]] - code - gateway/tests/test_voice_gateway.py
-- [[_ota_token_ok()]] - code - voice_gateway/server.py
-- [[_parse_model_switch_command()]] - code - voice_gateway/server.py
-- [[_parse_volume_command()]] - code - voice_gateway/server.py
-- [[_send_state()]] - code - voice_gateway/server.py
-- [[_voice_system_message()]] - code - voice_gateway/server.py
-- [[_warm()]] - code - voice_gateway/server.py
-- [[firmware_bin()]] - code - voice_gateway/server.py
-- [[health()]] - code - voice_gateway/server.py
-- [[server.py]] - code - voice_gateway/server.py
-- [[test_call_llm_malformed_response_raises()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_call_llm_returns_content()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_call_llm_sends_correct_model_and_max_tokens()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_call_llm_sends_full_history()]] - code - gateway/tests/test_voice_gateway.py
-- [[test_call_llm_strips_whitespace()]] - code - gateway/tests/test_voice_gateway.py
-- [[voice_endpoint()]] - code - voice_gateway/server.py
+- [[.__init__()_10]] - code - gateway/ingest_api/auth.py
+- [[.check()]] - code - gateway/ingest_api/auth.py
+- [[.test_channel_is_not_group()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_collaborator_always_gets_response_for_generic_message()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_collaborator_blocked_command_always_gets_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_collaborator_rate_limit_notice_falls_back_without_markdown()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_collaborator_rate_limit_notice_includes_retry_window()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_collaborator_rate_limit_notice_is_sent_for_each_limited_message()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_collaborator_rate_limit_notice_retries_next_message_when_send_fails()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_collaborator_rate_limit_resets_after_window()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_collaborator_rate_limit_retry_after_seconds_uses_window()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_collaborator_rate_limit_uses_user_id_when_chat_id_differs()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_group_is_group()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_missing_chat_is_not_group()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_normalize_command_token_handles_empty_or_non_string()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_normalize_command_token_handles_numeric_input_as_non_command()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_normalize_command_token_handles_uppercase_bot_mention()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_normalize_command_token_keeps_allowed_chars_only()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_normalize_command_token_lowercases_and_preserves_command_shape()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_normalize_command_token_normalizes_fullwidth_and_zero_width()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_normalize_command_token_normalizes_fullwidth_mention_punctuation()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_normalize_command_token_preserves_hyphen_and_underscore()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_normalize_command_token_strips_leading_noise_before_symbol_filter()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_normalize_command_token_strips_mention_and_punctuation()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_owner_unaffected_by_collaborator_rate_limiter()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_private_is_not_group()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_supergroup_is_group()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_unknown_user_always_gets_pending_or_rate_limit_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[A blocked slash command must always produce a protected notice.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[After the rate-limit window expires, collaborator messages go through normally.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Args             max_requests Maximum requests allowed in the time window]] - rationale - gateway/ingest_api/auth.py
+- [[Check if client is within rate limit          Args             client_id Usual]] - rationale - gateway/ingest_api/auth.py
+- [[Even a generic message triggers _send_collaborator_safe_info_response (local_inf]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Every collaborator message must produce a response — never a silent drop.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[If notice send fails, cooldown should not suppress the next retry attempt.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Messages within the window are blocked; after the window passes they succeed.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Owner messages are never rate-limited by the collaborator limiter.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Rate-limit notice path should key retry window by user_id, not chat_id.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Rate-limit notice should retry without Markdown when parse-mode send fails.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Rate-limited collaborators should receive a deterministic retry-window notice.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[RateLimiter]] - code - gateway/ingest_api/auth.py
+- [[Repeated rate-limited messages should each receive a deterministic notice.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Simple token-bucket rate limiter      Limits requests per client IP to prevent r]] - rationale - gateway/ingest_api/auth.py
+- [[TestCollaboratorRateLimitRecovery]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[TestCommandTokenNormalization]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[TestIsGroupMessage]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[TestNoResponseGuarantee]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[Unit tests for TelegramAPIProxy._is_group_message().]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Unit tests for command token normalization used by local inbound handlers.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Unknown users must always receive either a pending notice or a rate-limit notice]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -67,17 +69,27 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_Community 37]]
-- 5 edges to [[_COMMUNITY_Community 109]]
-- 5 edges to [[_COMMUNITY_Community 103]]
-- 2 edges to [[_COMMUNITY_Community 78]]
-- 2 edges to [[_COMMUNITY_Community 740]]
-- 2 edges to [[_COMMUNITY_Community 286]]
-- 1 edge to [[_COMMUNITY_Community 101]]
+- 49 edges to [[_COMMUNITY_Telegram Proxy Inbound]]
+- 18 edges to [[_COMMUNITY_Community 31]]
+- 8 edges to [[_COMMUNITY_Ingest API & Approval Routes]]
+- 5 edges to [[_COMMUNITY_Adversarial Injection Guards]]
+- 4 edges to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
+- 3 edges to [[_COMMUNITY_Community 509]]
+- 2 edges to [[_COMMUNITY_Community 70]]
+- 2 edges to [[_COMMUNITY_Config Validation & Router]]
+- 2 edges to [[_COMMUNITY_Community 38]]
+- 1 edge to [[_COMMUNITY_Community 43]]
+- 1 edge to [[_COMMUNITY_Community 49]]
+- 1 edge to [[_COMMUNITY_Community 60]]
+- 1 edge to [[_COMMUNITY_Community 24]]
+- 1 edge to [[_COMMUNITY_Community 815]]
+- 1 edge to [[_COMMUNITY_Community 546]]
+- 1 edge to [[_COMMUNITY_Community 510]]
+- 1 edge to [[_COMMUNITY_Community 871]]
 
 ## Top bridge nodes
-- [[server.py]] - degree 29, connects to 5 communities
-- [[_call_llm()]] - degree 11, connects to 2 communities
-- [[test_call_llm_returns_content()]] - degree 5, connects to 2 communities
-- [[test_call_llm_strips_whitespace()]] - degree 5, connects to 2 communities
-- [[test_call_llm_malformed_response_raises()]] - degree 4, connects to 2 communities
+- [[RateLimiter]] - degree 47, connects to 16 communities
+- [[TestCommandTokenNormalization]] - degree 15, connects to 3 communities
+- [[TestIsGroupMessage]] - degree 10, connects to 3 communities
+- [[TestNoResponseGuarantee]] - degree 9, connects to 3 communities
+- [[TestCollaboratorRateLimitRecovery]] - degree 7, connects to 3 communities

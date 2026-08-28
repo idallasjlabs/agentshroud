@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 1.00
 members: 2
 ---
 
 # Community 1547
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[.test_hash_fingerprinting()]] - code - gateway/tests/test_prompt_protection.py
-- [[Test that content is properly fingerprinted with hashes.]] - rationale - gateway/tests/test_prompt_protection.py
+- [[.test_telegram_user_id_filtering()]] - code - gateway/tests/test_outbound_filter.py
+- [[Test that Telegram user IDs are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +21,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_docsrunbooks]]
+- 1 edge to [[_COMMUNITY_Community 996]]
 
 ## Top bridge nodes
-- [[.test_hash_fingerprinting()]] - degree 2, connects to 1 community
+- [[.test_telegram_user_id_filtering()]] - degree 2, connects to 1 community

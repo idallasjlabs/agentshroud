@@ -1,35 +1,49 @@
 ---
 type: community
-members: 22
+cohesion: 0.06
+members: 34
 ---
 
 # Community 211
 
-**Members:** 22 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 34 nodes
 
 ## Members
-- [[._make_report()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.store()_1]] - code - gateway/tests/test_intel_pipeline.py
-- [[.store_dir()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_chain_hash_links_reports()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_integrity_check_fails_for_tampered_file()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_integrity_check_passes_for_saved_report()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_load_all_returns_all_reports()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_load_all_skips_malformed_files()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_load_latest_returns_none_when_empty()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_multiple_saves_latest_is_newest()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_report_with_whitespace_only_id_rejected()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_report_with_whitespace_only_source_rejected()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_save_and_load_latest()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_save_with_corrupt_previous_file_falls_back_to_genesis()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_store_creates_directory()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_verify_chain_empty_store_is_valid()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_verify_chain_fails_for_tampered_entry()]] - code - gateway/tests/test_intel_pipeline.py
-- [[.test_verify_chain_passes_for_intact_store()]] - code - gateway/tests/test_intel_pipeline.py
-- [[If the previous report file is corrupt, save must not raise.]] - rationale - gateway/tests/test_intel_pipeline.py
-- [[IntelReportStore_1]] - code - gateway/tests/test_intel_pipeline.py
-- [[Path_30]] - code - gateway/tests/test_intel_pipeline.py
-- [[TestIntelReportStore]] - code - gateway/tests/test_intel_pipeline.py
+- [[1. Pre-cache the Lima disk image]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
+- [[2. Start Colima]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
+- [[3. Apply the VPN networking fix]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
+- [[4. Verify_1]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
+- [[ADR-006-multi-runtime-support]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
+- [[ADR-006 Multi-Runtime Container Support]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
+- [[Cisco AnyConnect VPN Networking Fix]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
+- [[Cisco AnyConnect VPN Networking Fix (col0 vmnet route)]] - concept - docs/architecture/adr/ADR-006-multi-runtime-support.md
+- [[Colima (primary macOS runtime)]] - concept - docs/architecture/adr/ADR-006-multi-runtime-support.md
+- [[Colima Initial Setup Procedure]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
+- [[Consequences_5]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
+- [[Context_5]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
+- [[Decision_7]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
+- [[Docker Desktop (network topology diagram)]] - image - docs/diagrams/images/diagram-05-network-topology.svg
+- [[Fix (Colima)]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
+- [[Fix (Docker Desktop)]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
+- [[Mitigation_2]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
+- [[Multi-Runtime Support (DockerPodmanApple Containers)]] - concept - docs/architecture/deployment-diagram.md
+- [[Negative]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
+- [[Per-Host Runtime Selection]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
+- [[Positive]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
+- [[Problem_2]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
+- [[Roadmap]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
+- [[Runtime Abstraction Layer]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
+- [[Status_5]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
+- [[Supported Runtimes]] - document - docs/architecture/adr/ADR-006-multi-runtime-support.md
+- [[Tailscale (encrypted overlay network)]] - image - docs/diagrams/images/diagram-01-c4-context.svg
+- [[Tailscale Overlay Network (tail240ea8.ts.net)]] - image - docs/diagrams/images/diagram-04-infrastructure-hosting.svg
+- [[gatewayruntimedocker_engine.py]] - code - docs/architecture/adr/ADR-006-multi-runtime-support.md
+- [[gatewayruntimepodman_engine.py]] - code - docs/architecture/adr/ADR-006-multi-runtime-support.md
+- [[macOS Host (Development Machine)]] - image - docs/diagrams/images/diagram-04-infrastructure-hosting.svg
+- [[marvin (100.90.175.83, development node)]] - image - docs/diagrams/images/diagram-04-infrastructure-hosting.svg
+- [[raspberrypi (100.107.248.66, agentshroud-bot user)]] - image - docs/diagrams/images/diagram-04-infrastructure-hosting.svg
+- [[trillian (100.94.68.61, development node)]] - image - docs/diagrams/images/diagram-04-infrastructure-hosting.svg
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,11 +53,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 16 edges to [[_COMMUNITY_Community 133]]
+- 1 edge to [[_COMMUNITY_Community 514]]
 
 ## Top bridge nodes
-- [[TestIntelReportStore]] - degree 23, connects to 1 community
-- [[IntelReportStore_1]] - degree 18, connects to 1 community
-- [[._make_report()]] - degree 13, connects to 1 community
-- [[Path_30]] - degree 11, connects to 1 community
-- [[.test_report_with_whitespace_only_id_rejected()]] - degree 2, connects to 1 community
+- [[Tailscale (encrypted overlay network)]] - degree 2, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "Community 451"
+community: "Community 455"
 location: "L632"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_451
+  - community/Community_455
 ---
 
 # TestPerAgentUpstreamChecks
@@ -24,4 +24,4 @@ tags:
 - [[.test_zero_report_send_failure_is_swallowed()]] - `method` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_451
+#graphify/code #graphify/EXTRACTED #community/Community_455

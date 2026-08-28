@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/audit_store.py"
 type: "rationale"
-community: "Community 232"
+community: "Community 342"
 location: "L374"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_232
+  - community/Community_342
 ---
 
 # Get the entry_hash of the most recent event for chain continuation.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._get_latest_hash()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_232
+#graphify/rationale #graphify/EXTRACTED #community/Community_342

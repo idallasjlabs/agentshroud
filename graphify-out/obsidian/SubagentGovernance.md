@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "code"
-community: "Community 461"
+community: "Community 483"
 location: "L182"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_461
+  - community/Community_483
 ---
 
 # SubagentGovernance
@@ -43,4 +43,4 @@ tags:
 - [[subagent_governance.py]] - `contains` [EXTRACTED]
 - [[test_subagent_governance.py]] - `tests` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_461
+#graphify/code #graphify/EXTRACTED #community/Community_483

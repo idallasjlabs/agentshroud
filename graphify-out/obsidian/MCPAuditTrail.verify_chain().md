@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md"
 type: "document"
-community: "Community 630"
+community: "Community 623"
 location: "L44"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_630
+  - community/Community_623
 ---
 
 # MCPAuditTrail.verify_chain()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Function Details_8]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_630
+#graphify/document #graphify/EXTRACTED #community/Community_623

@@ -1,39 +1,39 @@
 ---
 type: community
-members: 26
+cohesion: 0.13
+members: 24
 ---
 
 # Community 368
 
-**Members:** 26 nodes
+**Cohesion:** 0.13 - loosely connected
+**Members:** 24 nodes
 
 ## Members
-- [[5) ENVIRONMENT SETUP]] - document - AGENTS.md
-- [[A) Validation Execution]] - document - .github/agents/validation-runner.agent.md
-- [[B) Result Reporting]] - document - .github/agents/validation-runner.agent.md
-- [[C) Quality Gate Checks]] - document - .github/agents/validation-runner.agent.md
-- [[Common Validation Commands]] - document - .github/agents/validation-runner.agent.md
-- [[Comprehensive Checks]] - document - .github/agents/validation-runner.agent.md
-- [[Conda Environment]] - document - AGENTS.md
-- [[Data Pipeline Validation]] - document - .github/agents/validation-runner.agent.md
-- [[Data Validation]] - document - .github/agents/validation-runner.agent.md
-- [[Definition of Done_2]] - document - .github/agents/validation-runner.agent.md
-- [[Environment Setup]] - document - .github/agents/validation-runner.agent.md
-- [[Error Handling_2]] - document - .github/agents/validation-runner.agent.md
-- [[Failed Validation]] - document - .github/agents/validation-runner.agent.md
-- [[Python Validation]] - document - .github/agents/validation-runner.agent.md
-- [[Quick Checks]] - document - .github/agents/validation-runner.agent.md
-- [[Remember_2]] - document - .github/agents/validation-runner.agent.md
-- [[Report Format]] - document - .github/agents/validation-runner.agent.md
-- [[Repository Context_3]] - document - .github/agents/validation-runner.agent.md
-- [[Role Definition_2]] - document - .github/agents/validation-runner.agent.md
-- [[Successful Validation]] - document - .github/agents/validation-runner.agent.md
-- [[Validation Runner Specialist]] - document - .github/agents/validation-runner.agent.md
-- [[Validation Workflows]] - document - .github/agents/validation-runner.agent.md
-- [[What You CANNOT Do_1]] - document - .github/agents/validation-runner.agent.md
-- [[When Environment Issues]] - document - .github/agents/validation-runner.agent.md
-- [[When Validation Fails]] - document - .github/agents/validation-runner.agent.md
-- [[Your Responsibilities_1]] - document - .github/agents/validation-runner.agent.md
+- [[Acceptance]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[AgentShroud v1.2.0 Master Plan]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[B.1 — Lock the lead 26+ modules]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[B.2 — Strengthen the report pipeline itself]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Cross-cutting branches + PR train]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Intent]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Module surface to extend]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Open clarifications before coding starts]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Open question (planning-only — decide before coding)]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Out of scope]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Out of scope for v1.2.0]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Phases]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Source of truth_1]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Surface to extend]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Tests to add]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Tracking + cadence]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Why v1.2.0]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Workstream A Groups and Teamwork in OpenClaw]] - concept - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Workstream B Security Features from Competitive Intel]] - concept - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Workstream C Full Local-Model Parity (Both Bots)]] - concept - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Workstream D — Sync agentsskillsMCP from `~.llm_settings` into both bots]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Workstream D Sync SkillsMCP from ~.llm_settings]] - concept - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Workstream E Blue and Red Team Security Scan (Both Bots)]] - concept - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[v1.2.0-master-plan]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -43,9 +43,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 822]]
-- 1 edge to [[_COMMUNITY_Community 350]]
+- 4 edges to [[_COMMUNITY_Community 770]]
 
 ## Top bridge nodes
-- [[Validation Runner Specialist]] - degree 13, connects to 1 community
-- [[5) ENVIRONMENT SETUP]] - degree 3, connects to 1 community
+- [[AgentShroud v1.2.0 Master Plan]] - degree 13, connects to 1 community
+- [[Workstream A Groups and Teamwork in OpenClaw]] - degree 7, connects to 1 community
+- [[Workstream B Security Features from Competitive Intel]] - degree 7, connects to 1 community
+- [[Workstream E Blue and Red Team Security Scan (Both Bots)]] - degree 7, connects to 1 community

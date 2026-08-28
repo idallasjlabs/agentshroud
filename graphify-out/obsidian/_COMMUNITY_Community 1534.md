@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 1.00
 members: 2
 ---
 
 # Community 1534
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[MiddlewareManager Session Enforcement Tests]] - code - gateway/tests/test_session_isolation.py
-- [[SSHProxy.validate_cwd() Unit Tests]] - code - gateway/tests/test_ssh_endpoints.py
+- [[test-system.sh]] - code - docker/scripts/test-system.sh
+- [[test-system.sh script]] - code - docker/scripts/test-system.sh
 
 ## Live Query (requires Dataview plugin)
 

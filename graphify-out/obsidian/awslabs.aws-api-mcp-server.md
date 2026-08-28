@@ -1,12 +1,12 @@
 ---
 source_file: ".mcp.json"
 type: "code"
-community: "Community 219"
+community: "Community 222"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_219
+  - community/Community_222
 ---
 
 # awslabs.aws-api-mcp-server
@@ -20,4 +20,4 @@ tags:
 - [[FASTMCP_NO_BANNER]] - `requires_env` [EXTRACTED]
 - [[PATH]] - `requires_env` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_219
+#graphify/code #graphify/EXTRACTED #community/Community_222

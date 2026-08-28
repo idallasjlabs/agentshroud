@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/middleware.py.md"
 type: "document"
-community: "Community 6"
+community: "Middleware & Lifespan"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/Middleware__Lifespan
 ---
 
 # middleware.py.md
@@ -17,4 +17,4 @@ tags:
 - [[main.py_3]] - `references` [EXTRACTED]
 - [[middleware.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_6
+#graphify/document #graphify/EXTRACTED #community/Middleware__Lifespan

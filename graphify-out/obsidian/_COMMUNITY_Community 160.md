@@ -1,50 +1,56 @@
 ---
 type: community
-members: 37
+cohesion: 0.07
+members: 41
 ---
 
 # Community 160
 
-**Members:** 37 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 41 nodes
 
 ## Members
-- [[._generate_new_credential()]] - code - gateway/security/key_rotation.py
-- [[._read_credential_from_1password()]] - code - gateway/security/key_rotation.py
-- [[._retire_old_credential_after_grace_period()]] - code - gateway/security/key_rotation.py
-- [[._store_credential_in_1password()]] - code - gateway/security/key_rotation.py
-- [[._validate_credential()]] - code - gateway/security/key_rotation.py
-- [[.check_and_rotate_due_credentials()]] - code - gateway/security/key_rotation.py
-- [[.cleanup_retired_credentials()]] - code - gateway/security/key_rotation.py
-- [[.emergency_rotate_credential()]] - code - gateway/security/key_rotation.py
-- [[.get_all_credentials_status()]] - code - gateway/security/key_rotation.py
-- [[.get_credential_status()]] - code - gateway/security/key_rotation.py
-- [[.get_health_score()]] - code - gateway/security/key_rotation.py
-- [[.register_credential()]] - code - gateway/security/key_rotation.py
-- [[.register_validator()]] - code - gateway/security/key_rotation.py
-- [[.rotate_credential()]] - code - gateway/security/key_rotation.py
-- [[.should_rotate()]] - code - gateway/security/key_rotation.py
-- [[.should_warn()]] - code - gateway/security/key_rotation.py
-- [[.validate()]] - code - gateway/security/key_rotation.py
-- [[Any_43]] - code - gateway/security/key_rotation.py
-- [[Calculate overall credential health score.]] - rationale - gateway/security/key_rotation.py
-- [[Check all credentials and rotate those that are due.]] - rationale - gateway/security/key_rotation.py
-- [[Clean up any credentials past their grace period.]] - rationale - gateway/security/key_rotation.py
-- [[Get detailed status for a credential.]] - rationale - gateway/security/key_rotation.py
-- [[Get status for all managed credentials.]] - rationale - gateway/security/key_rotation.py
-- [[KeyRotationManager]] - code - gateway/security/key_rotation.py
-- [[Manages automated rotation of credentials with zero downtime.]] - rationale - gateway/security/key_rotation.py
-- [[Perform emergency rotation of a credential.]] - rationale - gateway/security/key_rotation.py
-- [[Register a credential for rotation management.]] - rationale - gateway/security/key_rotation.py
-- [[Register a validator for a credential type.]] - rationale - gateway/security/key_rotation.py
-- [[Retire old credential after grace period ends.]] - rationale - gateway/security/key_rotation.py
-- [[Rotate a single credential with zero downtime.          Workflow generate new →]] - rationale - gateway/security/key_rotation.py
-- [[Safely read a credential from 1Password using op CLI.]] - rationale - gateway/security/key_rotation.py
-- [[Store a new credential in 1Password.]] - rationale - gateway/security/key_rotation.py
-- [[Validate a credential using registered validator.]] - rationale - gateway/security/key_rotation.py
-- [[Validate a credential.          Returns             tuple (is_valid, message)]] - rationale - gateway/security/key_rotation.py
-- [[Whether credential age warrants a warning.]] - rationale - gateway/security/key_rotation.py
-- [[Whether credential needs rotation based on age.]] - rationale - gateway/security/key_rotation.py
-- [[EXPERIMENTAL Generate a new credential value.          WARNING This method ge]] - rationale - gateway/security/key_rotation.py
+- [[.__init__()_100]] - code - gateway/security/multi_turn_tracker.py
+- [[._add_disclosure_event()]] - code - gateway/security/multi_turn_tracker.py
+- [[._analyze_agent_response()]] - code - gateway/security/multi_turn_tracker.py
+- [[._analyze_user_message()]] - code - gateway/security/multi_turn_tracker.py
+- [[._check_thresholds()]] - code - gateway/security/multi_turn_tracker.py
+- [[._cleanup_old_sessions()]] - code - gateway/security/multi_turn_tracker.py
+- [[._compile_detection_patterns()]] - code - gateway/security/multi_turn_tracker.py
+- [[._normalize_query()]] - code - gateway/security/multi_turn_tracker.py
+- [[._score_message_patterns()]] - code - gateway/security/multi_turn_tracker.py
+- [[._score_response_patterns()]] - code - gateway/security/multi_turn_tracker.py
+- [[._trigger_alert()]] - code - gateway/security/multi_turn_tracker.py
+- [[.add_alert_callback()]] - code - gateway/security/multi_turn_tracker.py
+- [[.get_global_stats()]] - code - gateway/security/multi_turn_tracker.py
+- [[.get_session_stats()]] - code - gateway/security/multi_turn_tracker.py
+- [[.reset_session()_1]] - code - gateway/security/multi_turn_tracker.py
+- [[.track_message()]] - code - gateway/security/multi_turn_tracker.py
+- [[A single disclosure event in a session.]] - rationale - gateway/security/multi_turn_tracker.py
+- [[Add a callback function for alerts.]] - rationale - gateway/security/multi_turn_tracker.py
+- [[Add a disclosure event to the session.]] - rationale - gateway/security/multi_turn_tracker.py
+- [[Analyze agent response for potential information leaks.]] - rationale - gateway/security/multi_turn_tracker.py
+- [[Analyze user message for disclosure patterns.]] - rationale - gateway/security/multi_turn_tracker.py
+- [[Any_50]] - code - gateway/security/multi_turn_tracker.py
+- [[Check session score against thresholds and take action.]] - rationale - gateway/security/multi_turn_tracker.py
+- [[Compile regex patterns for detecting disclosure categories.]] - rationale - gateway/security/multi_turn_tracker.py
+- [[Configuration for alert thresholds.]] - rationale - gateway/security/multi_turn_tracker.py
+- [[DisclosureEvent]] - code - gateway/security/multi_turn_tracker.py
+- [[Get global tracking statistics.]] - rationale - gateway/security/multi_turn_tracker.py
+- [[Get statistics for a session.]] - rationale - gateway/security/multi_turn_tracker.py
+- [[Initialize the multi-turn tracker.          Args             config Configurat]] - rationale - gateway/security/multi_turn_tracker.py
+- [[Main multi-turn disclosure tracking engine.      Maintains session state and sco]] - rationale - gateway/security/multi_turn_tracker.py
+- [[MultiTurnTracker]] - code - gateway/security/multi_turn_tracker.py
+- [[Normalize query for repeated query detection.]] - rationale - gateway/security/multi_turn_tracker.py
+- [[Remove old sessions to prevent memory bloat.]] - rationale - gateway/security/multi_turn_tracker.py
+- [[Reset session score after owner review.          Args             session_id S]] - rationale - gateway/security/multi_turn_tracker.py
+- [[Score agent response for potential leaks.]] - rationale - gateway/security/multi_turn_tracker.py
+- [[Score message based on disclosure patterns.]] - rationale - gateway/security/multi_turn_tracker.py
+- [[SessionContext_1]] - code - gateway/security/multi_turn_tracker.py
+- [[ThresholdConfig]] - code - gateway/security/multi_turn_tracker.py
+- [[Track a message and response pair for disclosure analysis.          Args]] - rationale - gateway/security/multi_turn_tracker.py
+- [[Trigger alert callbacks.]] - rationale - gateway/security/multi_turn_tracker.py
+- [[callable]] - code - gateway/security/multi_turn_tracker.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -54,17 +60,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 11 edges to [[_COMMUNITY_Community 6]]
-- 11 edges to [[_COMMUNITY_Community 193]]
-- 10 edges to [[_COMMUNITY_Community 233]]
-- 6 edges to [[_COMMUNITY_Community 756]]
-- 6 edges to [[_COMMUNITY_Community 1857]]
-- 4 edges to [[_COMMUNITY_Community 424]]
-- 2 edges to [[_COMMUNITY_Community 1059]]
+- 15 edges to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
+- 13 edges to [[_COMMUNITY_Community 19]]
+- 1 edge to [[_COMMUNITY_Middleware & Lifespan]]
+- 1 edge to [[_COMMUNITY_Community 198]]
+- 1 edge to [[_COMMUNITY_Community 157]]
 
 ## Top bridge nodes
-- [[KeyRotationManager]] - degree 55, connects to 7 communities
-- [[.should_rotate()]] - degree 7, connects to 2 communities
-- [[.should_warn()]] - degree 6, connects to 2 communities
-- [[.register_credential()]] - degree 5, connects to 2 communities
-- [[Any_43]] - degree 13, connects to 1 community
+- [[MultiTurnTracker]] - degree 42, connects to 4 communities
+- [[SessionContext_1]] - degree 10, connects to 2 communities
+- [[._add_disclosure_event()]] - degree 8, connects to 1 community
+- [[._trigger_alert()]] - degree 5, connects to 1 community
+- [[DisclosureEvent]] - degree 3, connects to 1 community

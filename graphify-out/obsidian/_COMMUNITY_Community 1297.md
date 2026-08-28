@@ -1,17 +1,19 @@
 ---
 type: community
+cohesion: 0.50
 members: 4
 ---
 
 # Community 1297
 
+**Cohesion:** 0.50 - moderately connected
 **Members:** 4 nodes
 
 ## Members
-- [[Anti-Security-Theater Principle]] - rationale - docker/bots/openclaw/workspace/collaborator-workspace/SOUL.md
-- [[Competitive Intelligence Report Standard Prompt (Hermes)]] - document - docker/config/hermes/workspace/competitive-analysis.md
-- [[Gateway-Enforced Intel Verification (SCRUM-75)]] - concept - docker/config/hermes/workspace/competitive-analysis.md
-- [[SOUL.md — Isaiah Jefferson Persona]] - document - docker/bots/openclaw/workspace/collaborator-workspace/SOUL.md
+- [[Fail-Closed Outbound pipeline exception blocks delivery to non-owner]] - concept - gateway/tests/test_slack_proxy.py
+- [[SharedMemoryManager Private Content DetectionFiltering]] - code - gateway/tests/test_shared_memory.py
+- [[SlackAPIProxy Multi-Field Outbound Scanning (blocks, attachments)]] - code - gateway/tests/test_slack_proxy.py
+- [[SlackAPIProxy Owner vs Collaborator Channel Filtering Tests]] - code - gateway/tests/test_slack_proxy.py
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_write_file_endpoint.py"
 type: "rationale"
-community: "Community 12"
+community: "Community 15"
 location: "L735"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_12
+  - community/Community_15
 ---
 
 # Both outcomes append to the SAME audit trail — a denial is not         silently
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_write_file_success_and_denial_both_create_distinct_ledger_entries()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_12
+#graphify/rationale #graphify/EXTRACTED #community/Community_15

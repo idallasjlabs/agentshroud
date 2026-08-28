@@ -1,34 +1,33 @@
 ---
 type: community
-members: 21
+cohesion: 0.11
+members: 18
 ---
 
 # Community 504
 
-**Members:** 21 nodes
+**Cohesion:** 0.11 - loosely connected
+**Members:** 18 nodes
 
 ## Members
-- [[ClamAV `SelfCheck Database status OK.`]] - document - docs/runbooks/troubleshooting.md
-- [[ClamAV `Socket for clamd not found yet, retrying (N1800)...`]] - document - docs/runbooks/troubleshooting.md
-- [[ClamAV `WARNING Can't query current.cvd.clamav.net`  `ERROR Database update process failed`]] - document - docs/runbooks/troubleshooting.md
-- [[Diagnostic Commands]] - document - docs/runbooks/troubleshooting.md
-- [[Gateway `CONNECT tunnel established wss-primary.slack.com443`]] - document - docs/runbooks/troubleshooting.md
-- [[Gateway `GET status - 200 (0.000s)` every 30 seconds]] - document - docs/runbooks/troubleshooting.md
-- [[Gateway `POST telegram-apibotgetUpdates - 200 (30–32s)`]] - document - docs/runbooks/troubleshooting.md
-- [[Gateway duplicate access log lines for every request]] - document - docs/runbooks/troubleshooting.md
-- [[Getting Help]] - document - docs/runbooks/troubleshooting.md
-- [[Known Log Messages]] - document - docs/runbooks/troubleshooting.md
-- [[Troubleshooting Runbook — AgentShroud]] - document - docs/runbooks/troubleshooting.md
-- [[`POST apialerts - 404 (Nms)` (resolved in v0.9.0)]] - document - docs/runbooks/troubleshooting.md
-- [[`ERROR socket-modeSocketModeClientN Failed to retrieve a new WSS URL`]] - document - docs/runbooks/troubleshooting.md
-- [[`WARN bolt-app http request failed connect ECONNREFUSED 10.254.110.28181`]] - document - docs/runbooks/troubleshooting.md
-- [[`WARN bolt-app http request failed getaddrinfo ENOTFOUND gateway`]] - document - docs/runbooks/troubleshooting.md
-- [[`WARN socket-modeSlackWebSocketN A pong wasn't received from the server before the timeout of 5000ms!`]] - document - docs/runbooks/troubleshooting.md
-- [[`agentembedded embedded run agent end isError=true error=Ollama API stream ended without a final response`]] - document - docs/runbooks/troubleshooting.md
-- [[`gateway ⚠️ Gateway is binding to a non-loopback address`]] - document - docs/runbooks/troubleshooting.md
-- [[`health-monitor slackdefault health-monitor restarting (reason stale-socket)`]] - document - docs/runbooks/troubleshooting.md
-- [[`openclaw Non-fatal unhandled rejection (continuing) Error A request error occurred`]] - document - docs/runbooks/troubleshooting.md
-- [[`telegram autoSelectFamily=false (config)`  `fetch fallback forcing autoSelectFamily=false + dnsResultOrder=ipv4first`]] - document - docs/runbooks/troubleshooting.md
+- [[Blob Wire Format]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
+- [[Configuration_14]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
+- [[EncryptedStore.__init__(master_secret, secret_path, iterations, key_id)]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
+- [[EncryptedStore.decrypt(blob)]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
+- [[EncryptedStore.encrypt(data)]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
+- [[EncryptedStore.rotate(blobs, new_secret, new_key_id)]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
+- [[Environment Variables_12]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
+- [[Function Details_37]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
+- [[Key Classes  Functions_40]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
+- [[Key Rotation Workflow]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
+- [[Mode Enforce vs Monitor_7]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
+- [[Purpose_158]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
+- [[Related_44]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
+- [[Responsibilities_42]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
+- [[Threat Model_13]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
+- [[_secure_zero(buffer)]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
+- [[encrypted_store.py_2]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
+- [[encrypted_store.py_1]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,11 +35,3 @@ members: 21
 TABLE source_file, type FROM #community/Community_504
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 314]]
-- 1 edge to [[_COMMUNITY_Community 514]]
-
-## Top bridge nodes
-- [[Troubleshooting Runbook — AgentShroud]] - degree 5, connects to 2 communities
-- [[Known Log Messages]] - degree 19, connects to 1 community

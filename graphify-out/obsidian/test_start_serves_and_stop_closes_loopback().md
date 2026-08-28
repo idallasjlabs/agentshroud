@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "Community 735"
+community: "Community 733"
 location: "L128"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_735
+  - community/Community_733
 ---
 
 # test_start_serves_and_stop_closes_loopback()
@@ -21,4 +21,4 @@ tags:
 - [[start() binds a real loopback server; a client gets a parsed response;     stop(]] - `rationale_for` [EXTRACTED]
 - [[test_http_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_735
+#graphify/code #graphify/EXTRACTED #community/Community_733

@@ -1,11 +1,13 @@
 ---
 type: community
-members: 27
+cohesion: 0.08
+members: 26
 ---
 
 # Community 316
 
-**Members:** 27 nodes
+**Cohesion:** 0.08 - loosely connected
+**Members:** 26 nodes
 
 ## Members
 - [[401 Unauthorized]] - document - .agents/skills/i-icloud/SKILL.md
@@ -13,7 +15,6 @@ members: 27
 - [[Connection timeout]] - document - .agents/skills/i-icloud/SKILL.md
 - [[Add Contact]] - document - .agents/skills/i-icloud/SKILL.md
 - [[Calendar Operations]] - document - .agents/skills/i-icloud/SKILL.md
-- [[Configuration]] - document - .agents/skills/i-icloud/SKILL.md
 - [[Contact Operations]] - document - .agents/skills/i-icloud/SKILL.md
 - [[Create Event]] - document - .agents/skills/i-icloud/SKILL.md
 - [[Create Note]] - document - .agents/skills/i-icloud/SKILL.md
@@ -31,7 +32,7 @@ members: 27
 - [[Security]] - document - .agents/skills/i-icloud/SKILL.md
 - [[Send Email]] - document - .agents/skills/i-icloud/SKILL.md
 - [[Setup]] - document - .agents/skills/i-icloud/SKILL.md
-- [[Troubleshooting_1]] - document - .agents/skills/i-icloud/SKILL.md
+- [[Troubleshooting]] - document - .agents/skills/i-icloud/SKILL.md
 - [[Update Contact]] - document - .agents/skills/i-icloud/SKILL.md
 - [[Update Event]] - document - .agents/skills/i-icloud/SKILL.md
 - [[iCloud Services]] - document - .agents/skills/i-icloud/SKILL.md
@@ -44,7 +45,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 824]]
+- 1 edge to [[_COMMUNITY_Community 821]]
 
 ## Top bridge nodes
-- [[iCloud Services]] - degree 10, connects to 1 community
+- [[iCloud Services]] - degree 9, connects to 1 community

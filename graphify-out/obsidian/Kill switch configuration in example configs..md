@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_killswitch_modes.py"
 type: "rationale"
-community: "Community 425"
+community: "Community 433"
 location: "L99"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_425
+  - community/Community_433
 ---
 
 # Kill switch configuration in example configs.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestKillSwitchConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_425
+#graphify/rationale #graphify/EXTRACTED #community/Community_433

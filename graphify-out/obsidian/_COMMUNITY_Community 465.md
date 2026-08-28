@@ -1,32 +1,34 @@
 ---
 type: community
+cohesion: 0.25
 members: 19
 ---
 
 # Community 465
 
+**Cohesion:** 0.25 - loosely connected
 **Members:** 19 nodes
 
 ## Members
-- [[1. Check MCP Configuration_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
-- [[2. Test GitHub MCP Server_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
-- [[3. Test Atlassian MCP Server_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
-- [[4. Test AWS API MCP Server_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
-- [[Common Issues & Fixes_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
-- [[Diagnostic Capabilities_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
-- [[Diagnostic Workflow_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
-- [[Issue AWS credentials not found_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
-- [[Issue Atlassian OAuth token expired_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
-- [[Issue Docker not found_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
-- [[Issue GitHub MCP authentication failed_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
-- [[Issue npx not found_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
-- [[Issue uvx not found_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
-- [[Output Format_18]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
-- [[Related Skills_61]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
-- [[Role_55]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
-- [[SKILL_97]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
-- [[Skill MCP Doctor (MCPM-DOCTOR)_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
-- [[When to Invoke_5]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[Any_78]] - code - skills/openclaw/model-usage/scripts/model_usage.py
+- [[ModelCost]] - code - skills/openclaw/model-usage/scripts/model_usage.py
+- [[aggregate_costs()]] - code - skills/openclaw/model-usage/scripts/model_usage.py
+- [[build_json_all()]] - code - skills/openclaw/model-usage/scripts/model_usage.py
+- [[build_json_current()]] - code - skills/openclaw/model-usage/scripts/model_usage.py
+- [[date]] - code - skills/openclaw/model-usage/scripts/model_usage.py
+- [[eprint()]] - code - skills/openclaw/model-usage/scripts/model_usage.py
+- [[filter_by_days()]] - code - skills/openclaw/model-usage/scripts/model_usage.py
+- [[latest_day_cost()]] - code - skills/openclaw/model-usage/scripts/model_usage.py
+- [[load_payload()]] - code - skills/openclaw/model-usage/scripts/model_usage.py
+- [[main()_27]] - code - skills/openclaw/model-usage/scripts/model_usage.py
+- [[model_usage.py]] - code - skills/openclaw/model-usage/scripts/model_usage.py
+- [[parse_daily_entries()]] - code - skills/openclaw/model-usage/scripts/model_usage.py
+- [[parse_date()]] - code - skills/openclaw/model-usage/scripts/model_usage.py
+- [[pick_current_model()]] - code - skills/openclaw/model-usage/scripts/model_usage.py
+- [[render_text_all()]] - code - skills/openclaw/model-usage/scripts/model_usage.py
+- [[render_text_current()]] - code - skills/openclaw/model-usage/scripts/model_usage.py
+- [[run_codexbar_cost()]] - code - skills/openclaw/model-usage/scripts/model_usage.py
+- [[usd()]] - code - skills/openclaw/model-usage/scripts/model_usage.py
 
 ## Live Query (requires Dataview plugin)
 

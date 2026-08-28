@@ -1,11 +1,11 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "concept"
-community: "Community 90"
+community: "Community 92"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_90
+  - community/Community_92
 ---
 
 # AgentShroud (security proxy)
@@ -16,4 +16,4 @@ tags:
 - [[competitive-analysis-reports-archive]] - `references` [EXTRACTED]
 - [[setup-guide]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_90
+#graphify/concept #graphify/EXTRACTED #community/Community_92

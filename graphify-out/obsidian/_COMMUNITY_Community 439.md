@@ -1,33 +1,35 @@
 ---
 type: community
+cohesion: 0.10
 members: 20
 ---
 
 # Community 439
 
+**Cohesion:** 0.10 - loosely connected
 **Members:** 20 nodes
 
 ## Members
-- [[.test_detect_apple()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_detect_docker()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_detect_multiple()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_detect_none()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_detect_podman()]] - code - gateway/tests/test_runtime_engines.py
-- [[Auto-detect which container runtimes are available on this system.]] - rationale - gateway/runtime/__init__.py
-- [[Check system prerequisites for installation.]] - rationale - gateway/web/installer.py
-- [[Get available runtimes with recommendations.]] - rationale - gateway/web/installer.py
-- [[InstallConfig]] - code - gateway/web/installer.py
-- [[PrerequisiteCheck]] - code - gateway/web/installer.py
-- [[Request_8]] - code - gateway/web/installer.py
-- [[Serve the installer wizard HTML.]] - rationale - gateway/web/installer.py
-- [[Start the installation process.      This endpoint kicks off the install and ret]] - rationale - gateway/web/installer.py
-- [[TestDetectRuntime]] - code - gateway/tests/test_runtime_engines.py
-- [[check_prerequisites()]] - code - gateway/web/installer.py
-- [[detect_runtime()]] - code - gateway/runtime/__init__.py
-- [[get_runtimes()]] - code - gateway/web/installer.py
-- [[installer.py]] - code - gateway/web/installer.py
-- [[installer_page()]] - code - gateway/web/installer.py
-- [[start_install()]] - code - gateway/web/installer.py
+- [[Additional Costs (Option 2 vs Option 1)]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Architecture Comparison]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Benefits Gained]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Best Use Cases for Distributed Node Approach]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Comparison Matrix]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Concept Overview]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Conclusion]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Cost-Benefit Analysis]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Current Approach (Option 1 Direct SSH)]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Decision Points]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Defense in Depth]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Distributed OpenClaw Node Architecture — Raspberry Pi 4]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Future Approach (Option 2 Distributed Node)]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Implementation Timeline]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Next Steps_1]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Not Ideal For]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Prerequisites (Before Implementation)]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Security Architecture_4]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Use Cases]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,19 +39,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 528]]
-- 3 edges to [[_COMMUNITY_Community 197]]
-- 2 edges to [[_COMMUNITY_Community 18]]
-- 2 edges to [[_COMMUNITY_Community 453]]
-- 2 edges to [[_COMMUNITY_Community 45]]
-- 1 edge to [[_COMMUNITY_Community 358]]
-- 1 edge to [[_COMMUNITY_Community 647]]
-- 1 edge to [[_COMMUNITY_Community 354]]
-- 1 edge to [[_COMMUNITY_Community 220]]
+- 1 edge to [[_COMMUNITY_Community 1168]]
+- 1 edge to [[_COMMUNITY_Community 1015]]
+- 1 edge to [[_COMMUNITY_Community 1293]]
+- 1 edge to [[_COMMUNITY_Community 701]]
+- 1 edge to [[_COMMUNITY_Community 603]]
 
 ## Top bridge nodes
-- [[TestDetectRuntime]] - degree 11, connects to 5 communities
-- [[detect_runtime()]] - degree 14, connects to 4 communities
-- [[installer.py]] - degree 10, connects to 3 communities
-- [[get_runtimes()]] - degree 4, connects to 1 community
-- [[PrerequisiteCheck]] - degree 3, connects to 1 community
+- [[Distributed OpenClaw Node Architecture — Raspberry Pi 4]] - degree 14, connects to 5 communities

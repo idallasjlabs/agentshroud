@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "Community 282"
+community: "Community 50"
 location: "L656"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_282
+  - community/Community_50
 ---
 
 # TestOpenClawResearchDomainsAllowlisted
@@ -24,4 +24,4 @@ tags:
 - [[Verify that OpenClaw's web_searchresearch destinations are pre-approved.      T]] - `rationale_for` [EXTRACTED]
 - [[test_egress_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_282
+#graphify/code #graphify/INFERRED #community/Community_50

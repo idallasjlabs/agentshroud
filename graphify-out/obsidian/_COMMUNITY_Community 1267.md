@@ -1,17 +1,20 @@
 ---
 type: community
-members: 4
+cohesion: 0.40
+members: 5
 ---
 
 # Community 1267
 
-**Members:** 4 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[1. Starting and Stopping AgentShroud]] - document - docs/operations/runbook.md
-- [[Restart Procedure]] - document - docs/operations/runbook.md
-- [[Starting the System]] - document - docs/operations/runbook.md
-- [[Stopping the System]] - document - docs/operations/runbook.md
+- [[I - Information Disclosure]] - document - docs/security/threat-model.md
+- [[Threat DNS Data Exfiltration]] - document - docs/security/threat-model.md
+- [[Threat Environment Variable Leakage]] - document - docs/security/threat-model.md
+- [[Threat PII Leakage in Logs]] - document - docs/security/threat-model.md
+- [[Threat SSRF (Server-Side Request Forgery)]] - document - docs/security/threat-model.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,7 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 91]]
+- 1 edge to [[_COMMUNITY_Community 913]]
 
 ## Top bridge nodes
-- [[1. Starting and Stopping AgentShroud]] - degree 4, connects to 1 community
+- [[I - Information Disclosure]] - degree 5, connects to 1 community

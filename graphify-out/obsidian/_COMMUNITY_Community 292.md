@@ -1,39 +1,42 @@
 ---
 type: community
-members: 26
+cohesion: 0.07
+members: 27
 ---
 
 # Community 292
 
-**Members:** 26 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 27 nodes
 
 ## Members
-- [[Auto-Notify on Completion]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[Bash Tool Parameters]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[Batch PR Reviews (parallel army!)]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[BuildingCreating]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[Claude Code]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[Codex CLI]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[Coding Agent (bash-first)]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[Flags]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[Gemini CLI]] - document - skills/openclaw/gemini/SKILL.md
-- [[Learnings (Jan 2026)]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[OpenClaw Dev Workflow (ODEV)]] - document - .agents/skills/i-odev/SKILL.md
-- [[OpenCode]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[PTY Mode Required for Interactive Coding Agents]] - rationale - skills/openclaw/coding-agent/SKILL.md
-- [[Parallel Issue Fixing with git worktrees]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[Pi Coding Agent]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[Pi Coding Agent CLI]] - concept - skills/openclaw/coding-agent/SKILL.md
-- [[Process Tool Actions (for background sessions)]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[Progress Updates (Critical)]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[Quick Start One-Shot Tasks]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[Reviewing PRs]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[SKILL_203]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[SKILL_206]] - document - skills/openclaw/gemini/SKILL.md
-- [[The Pattern workdir + background + pty]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[omlx DeepSeek-R1-Qwen3-8B (local model)]] - concept - .agents/skills/i-odev/SKILL.md
-- [[⚠️ PTY Mode Required!]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[⚠️ Rules]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[Anti-Patterns to Flag_1]] - document - .agents/skills/i-mm/SKILL.md
+- [[Brainstorming Session Map]] - document - .agents/skills/i-mm/SKILL.md
+- [[Core Discipline Frame → Structure → Generate → Validate]] - document - .agents/skills/i-mm/SKILL.md
+- [[Curriculum Design (with `i-atlas`)]] - document - .agents/skills/i-mm/SKILL.md
+- [[Decision Tree Map]] - document - .agents/skills/i-mm/SKILL.md
+- [[Dependencies_1]] - document - .agents/skills/i-mm/SKILL.md
+- [[Example FODL Pipeline Overview]] - document - .agents/skills/i-mm/SKILL.md
+- [[Export and Sharing Conventions]] - document - .agents/skills/i-mm/SKILL.md
+- [[Hierarchy Design — Outline First]] - document - .agents/skills/i-mm/SKILL.md
+- [[Invocation Pattern]] - document - .agents/skills/i-mm/SKILL.md
+- [[Knowledge Map (PKE  OKE integration)]] - document - .agents/skills/i-mm/SKILL.md
+- [[MCP Tool markmap-mcp-server]] - document - .agents/skills/i-mm/SKILL.md
+- [[MCP Tool xmind-generator-mcp]] - document - .agents/skills/i-mm/SKILL.md
+- [[Markdown-to-Mindmap Conversion]] - document - .agents/skills/i-mm/SKILL.md
+- [[Markmap Generation via MCP]] - document - .agents/skills/i-mm/SKILL.md
+- [[Markmap Invocation Pattern]] - document - .agents/skills/i-mm/SKILL.md
+- [[Markmap Source Format]] - document - .agents/skills/i-mm/SKILL.md
+- [[Outline Template]] - document - .agents/skills/i-mm/SKILL.md
+- [[Project Planning Map]] - document - .agents/skills/i-mm/SKILL.md
+- [[Role_20]] - document - .agents/skills/i-mm/SKILL.md
+- [[Rules_1]] - document - .agents/skills/i-mm/SKILL.md
+- [[SKILL_35]] - document - .agents/skills/i-mm/SKILL.md
+- [[Skill Mindmap Architect (MM)]] - document - .agents/skills/i-mm/SKILL.md
+- [[Use Case Patterns]] - document - .agents/skills/i-mm/SKILL.md
+- [[Validation Checklist]] - document - .agents/skills/i-mm/SKILL.md
+- [[When to Use Mindmaps vs Other Formats]] - document - .agents/skills/i-mm/SKILL.md
+- [[XMind Generation via MCP]] - document - .agents/skills/i-mm/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -41,12 +44,3 @@ members: 26
 TABLE source_file, type FROM #community/Community_292
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 1024]]
-- 1 edge to [[_COMMUNITY_Community 441]]
-- 1 edge to [[_COMMUNITY_Community 660]]
-
-## Top bridge nodes
-- [[OpenClaw Dev Workflow (ODEV)]] - degree 5, connects to 2 communities
-- [[SKILL_203]] - degree 9, connects to 1 community

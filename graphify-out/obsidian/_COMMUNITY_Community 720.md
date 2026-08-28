@@ -1,26 +1,28 @@
 ---
 type: community
+cohesion: 0.15
 members: 13
 ---
 
 # Community 720
 
+**Cohesion:** 0.15 - loosely connected
 **Members:** 13 nodes
 
 ## Members
-- [[._handle_query()]] - code - gateway/proxy/dns_forwarder.py
-- [[.datagram_received()]] - code - gateway/proxy/dns_forwarder.py
-- [[.test_malformed_pointer_returns_none()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_too_short()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_truncated_after_name()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_valid_a_query()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_valid_aaaa_query()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_zero_qdcount()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[Extract domain name and query type from a DNS query packet.      Returns (domai]] - rationale - gateway/proxy/dns_forwarder.py
-- [[Handle incoming DNS query.]] - rationale - gateway/proxy/dns_forwarder.py
-- [[Process a single DNS query log, forward, respond.]] - rationale - gateway/proxy/dns_forwarder.py
-- [[TestParseQuery]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[parse_query()]] - code - gateway/proxy/dns_forwarder.py
+- [[Configuration  Environment Variables_12]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
+- [[Function Details_18]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
+- [[Key Classes  Functions_21]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
+- [[Purpose_139]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
+- [[RateLimiter.check(domain, rpm_limit)]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
+- [[Related_25]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
+- [[Responsibilities_23]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
+- [[Security Check Order (check_request)]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
+- [[WebProxy._audit(event_type, url, metadata)]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
+- [[WebProxy.check_request(url, method, headers)]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
+- [[WebProxy.scan_response(url, body, content_type, status_code, response_size)]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
+- [[web_proxy.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
+- [[web_proxy.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,17 +30,3 @@ members: 13
 TABLE source_file, type FROM #community/Community_720
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 560]]
-- 3 edges to [[_COMMUNITY_Community 418]]
-- 2 edges to [[_COMMUNITY_Community 651]]
-- 1 edge to [[_COMMUNITY_Community 141]]
-- 1 edge to [[_COMMUNITY_Community 978]]
-
-## Top bridge nodes
-- [[TestParseQuery]] - degree 9, connects to 3 communities
-- [[parse_query()]] - degree 11, connects to 2 communities
-- [[._handle_query()]] - degree 5, connects to 2 communities
-- [[.datagram_received()]] - degree 3, connects to 1 community
-- [[.test_valid_a_query()]] - degree 3, connects to 1 community

@@ -1,29 +1,31 @@
 ---
 type: community
+cohesion: 0.20
 members: 16
 ---
 
 # Community 554
 
+**Cohesion:** 0.20 - loosely connected
 **Members:** 16 nodes
 
 ## Members
-- [[AgentShroud Branding Assets Index]] - document - branding/INDEX.md
-- [[Assets Needed]] - document - branding/INDEX.md
-- [[Brand Color]] - document - branding/INDEX.md
-- [[Documentation_1]] - document - branding/INDEX.md
-- [[Documentation Needed]] - document - branding/INDEX.md
-- [[Documentation Status]] - document - branding/INDEX.md
-- [[Icon Sets]] - document - branding/INDEX.md
-- [[Logo Files]] - document - branding/INDEX.md
-- [[Logo Formats Available]] - document - branding/INDEX.md
-- [[Social Media]] - document - branding/INDEX.md
-- [[🎨 Quick Access]] - document - branding/INDEX.md
-- [[💡 Usage Tips]] - document - branding/INDEX.md
-- [[📁 Directory Overview]] - document - branding/INDEX.md
-- [[📊 Asset Summary]] - document - branding/INDEX.md
-- [[📝 To-Do]] - document - branding/INDEX.md
-- [[📞 Contact]] - document - branding/INDEX.md
+- [[AgentShroud Gateway (Trust Zone 1) holds 1Password service account, enforces policy, signs ledger entries, controls approval queue, HMACJWT validation]] - concept - docs/diagrams/images/diagram-11-trust-boundary.png
+- [[Allowlisted domains (api.openai.com, api.anthropic.com, api.telegram.org, googleapis.com, .github.com, .githubusercontent.com, imapsmtp.mail.me.com)]] - image - docs/diagrams/images/diagram-13-network-security-egress.png
+- [[BlockedUntrusted (LAN RFC1918, unlisted domains)]] - image - docs/diagrams/images/diagram-11-trust-boundary.png
+- [[Deploying AgentShroud on Linux (docsoperationslinux.md)]] - document - docs/operations/linux.md
+- [[Deploying AgentShroud on macOS (docsoperationsmacos.md)]] - document - docs/operations/macos.md
+- [[Docker Buildx multi-arch build (linuxamd64, linuxarm64)]] - concept - docs/operations/linux.md
+- [[Docker Desktop (Apple Silicon  Intel transparent arch handling; resource allocation guidance)]] - concept - docs/operations/macos.md
+- [[HTTP CONNECT egress proxy (gateway8181; domain allowlist via agentshroud.yaml proxy.allowed_domains; blocks RFC1918 + unlisted domains; logs connections)]] - concept - docs/diagrams/images/diagram-13-network-security-egress.png
+- [[Native Python gateway dev run uvicorn gateway.ingest_api.mainapp --host 127.0.0.1 --port 8080]] - concept - docs/operations/macos.md
+- [[Trust Boundary Diagram]] - concept - docs/diagrams/04-security.md
+- [[Trust Zone 0 — Owner (Isaiah Jefferson approvereject, gateway admin, container restart, secret rotation)]] - image - docs/diagrams/images/diagram-11-trust-boundary.png
+- [[Trust Zone 2 — Bot (Supervised Agent no direct credentialinternet access)]] - image - docs/diagrams/images/diagram-11-trust-boundary.png
+- [[Trust Zone 3 — External Services (OpenAI, Anthropic, Telegram, GitHub, 1Password; allowlisted HTTPS only)]] - image - docs/diagrams/images/diagram-11-trust-boundary.png
+- [[Trust Zone 4 — Infrastructure Nodes (raspberrypi, marvin, trillian; SSH-gated)]] - image - docs/diagrams/images/diagram-11-trust-boundary.png
+- [[dockersecretssetup-secrets.sh (secret bootstrap step shared by Linux and macOS install guides)]] - concept - docs/operations/linux.md
+- [[systemd service etcsystemdsystemagentshroud.service for auto-start]] - concept - docs/operations/linux.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,7 +35,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 661]]
+- 4 edges to [[_COMMUNITY_Community 492]]
+- 2 edges to [[_COMMUNITY_Community 1102]]
+- 1 edge to [[_COMMUNITY_Community 442]]
+- 1 edge to [[_COMMUNITY_Community 702]]
+- 1 edge to [[_COMMUNITY_Community 376]]
+- 1 edge to [[_COMMUNITY_Community 604]]
 
 ## Top bridge nodes
-- [[AgentShroud Branding Assets Index]] - degree 7, connects to 1 community
+- [[HTTP CONNECT egress proxy (gateway8181; domain allowlist via agentshroud.yaml proxy.allowed_domains; blocks RFC1918 + unlisted domains; logs connections)]] - degree 7, connects to 3 communities
+- [[AgentShroud Gateway (Trust Zone 1) holds 1Password service account, enforces policy, signs ledger entries, controls approval queue, HMACJWT validation]] - degree 10, connects to 2 communities
+- [[Trust Boundary Diagram]] - degree 8, connects to 2 communities
+- [[Trust Zone 2 — Bot (Supervised Agent no direct credentialinternet access)]] - degree 5, connects to 1 community
+- [[Trust Zone 3 — External Services (OpenAI, Anthropic, Telegram, GitHub, 1Password; allowlisted HTTPS only)]] - degree 4, connects to 1 community

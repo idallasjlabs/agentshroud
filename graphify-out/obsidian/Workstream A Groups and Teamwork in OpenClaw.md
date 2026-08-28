@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.2/v1.2.0-master-plan.md"
 type: "concept"
-community: "Community 98"
+community: "Community 368"
 location: "Workstream A"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_98
+  - community/Community_368
 ---
 
 # Workstream A: Groups and Teamwork in OpenClaw
@@ -20,4 +20,4 @@ tags:
 - [[SharedMemoryManager Per-User Per-Bot Memory Isolation]] - `references` [EXTRACTED]
 - [[Tests to add]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_98
+#graphify/concept #graphify/EXTRACTED #community/Community_368

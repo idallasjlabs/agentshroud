@@ -1,14 +1,16 @@
 ---
 type: community
+cohesion: 1.00
 members: 1
 ---
 
 # Community 1712
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[openclaw agents_README.txt (50+ specialized agents)]] - document - docker/config/openclaw/agents/_README.txt
+- [[PWA Icon 192x192 (AgentShroud logo mark)]] - image - branding/favicons/icon-192x192.png
 
 ## Live Query (requires Dataview plugin)
 

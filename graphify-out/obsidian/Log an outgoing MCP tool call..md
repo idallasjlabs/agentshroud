@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_audit.py"
 type: "rationale"
-community: "Community 201"
+community: "Community 206"
 location: "L106"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_201
+  - community/Community_206
 ---
 
 # Log an outgoing MCP tool call.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.log_tool_call()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_201
+#graphify/rationale #graphify/EXTRACTED #community/Community_206

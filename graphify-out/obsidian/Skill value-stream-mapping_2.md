@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-value-stream-mapping/SKILL.md"
 type: "document"
-community: "Community 1471"
+community: "Community 1487"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1471
+  - community/Community_1487
 ---
 
 # Skill: value-stream-mapping
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SKILL_188]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1471
+#graphify/document #graphify/EXTRACTED #community/Community_1487

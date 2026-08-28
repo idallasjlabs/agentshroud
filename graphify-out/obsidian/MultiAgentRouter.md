@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "code"
-community: "Community 38"
+community: "Community 32"
 location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_38
+  - community/Community_32
 ---
 
 # MultiAgentRouter
@@ -24,7 +24,7 @@ tags:
 - [[.resolve_target()]] - `method` [EXTRACTED]
 - [[AgentTarget]] - `uses` [INFERRED]
 - [[AppState]] - `uses` [INFERRED]
-- [[FastAPI_1]] - `uses` [INFERRED]
+- [[FastAPI_2]] - `uses` [INFERRED]
 - [[ForwardRequest]] - `uses` [INFERRED]
 - [[HTTPForwarder]] - `semantically_similar_to` [INFERRED]
 - [[LogRecord]] - `uses` [INFERRED]
@@ -60,4 +60,4 @@ tags:
 - [[test_ssh_endpoints.py]] - `imports` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_38
+#graphify/code #graphify/EXTRACTED #community/Community_32

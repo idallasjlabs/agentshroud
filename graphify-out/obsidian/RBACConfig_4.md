@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "Community 75"
+community: "RBAC & SOC Realtime"
 location: "L28"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_75
+  - community/RBAC__SOC_Realtime
 ---
 
 # RBACConfig
@@ -19,4 +19,4 @@ tags:
 - [[ToolACLEnforcer]] - `uses` [INFERRED]
 - [[_make_rbac()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_75
+#graphify/code #graphify/INFERRED #community/RBAC__SOC_Realtime

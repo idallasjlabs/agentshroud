@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1160
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[MCP Tools Usage (MCPM)]] - document - .agents/skills/i-mcpm/README.md
-- [[Purpose_19]] - document - .agents/skills/i-mcpm/README.md
-- [[README_19]] - document - .agents/skills/i-mcpm/README.md
-- [[Related Skills_22]] - document - .agents/skills/i-mcpm/README.md
-- [[Usage_22]] - document - .agents/skills/i-mcpm/README.md
+- [[Purpose_27]] - document - .agents/skills/i-sad/README.md
+- [[README_27]] - document - .agents/skills/i-sad/README.md
+- [[Related Skills_30]] - document - .agents/skills/i-sad/README.md
+- [[System Audit Documentation]] - document - .agents/skills/i-sad/README.md
+- [[Usage_30]] - document - .agents/skills/i-sad/README.md
 
 ## Live Query (requires Dataview plugin)
 

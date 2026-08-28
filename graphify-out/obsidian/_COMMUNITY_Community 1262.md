@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1262
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[COMMUNICATION-TEMPLATES]] - document - docs/project/legal/COMMUNICATION-TEMPLATES.md
-- [[Option 1 — Clean & Professional Trademark Notice]] - concept - docs/project/legal/COMMUNICATION-TEMPLATES.md
-- [[Option 2 — Compact Trademark Notice]] - concept - docs/project/legal/COMMUNICATION-TEMPLATES.md
-- [[Option 3 — Full Collaborator Trademark Notice]] - concept - docs/project/legal/COMMUNICATION-TEMPLATES.md
-- [[Option 4 — Documentation Footer Trademark Notice]] - concept - docs/project/legal/COMMUNICATION-TEMPLATES.md
+- [[Authentication required]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[Permission denied]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[Skill validation failed]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[clawhub command not found]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[🆘 Troubleshooting_1]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,8 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 1108]]
-- 1 edge to [[_COMMUNITY_Community 1109]]
+- 1 edge to [[_COMMUNITY_Community 858]]
 
 ## Top bridge nodes
-- [[COMMUNICATION-TEMPLATES]] - degree 6, connects to 2 communities
+- [[🆘 Troubleshooting_1]] - degree 5, connects to 1 community

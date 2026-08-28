@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_endpoint.py"
 type: "rationale"
-community: "Community 452"
+community: "Community 456"
 location: "L104"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_452
+  - community/Community_456
 ---
 
 # Missing server_name or tool_name should return 422.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_missing_required_fields_returns_422()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_452
+#graphify/rationale #graphify/EXTRACTED #community/Community_456

@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1194
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/README.md
-- [[Purpose_54]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/README.md
-- [[README_59]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/README.md
-- [[Related Skills_58]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/README.md
-- [[Usage_61]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/README.md
+- [[Project Management (PM)]] - document - docker/config/hermes/skills/i-pm/README.md
+- [[Purpose_59]] - document - docker/config/hermes/skills/i-pm/README.md
+- [[README_64]] - document - docker/config/hermes/skills/i-pm/README.md
+- [[Related Skills_65]] - document - docker/config/hermes/skills/i-pm/README.md
+- [[Usage_66]] - document - docker/config/hermes/skills/i-pm/README.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,34 +1,30 @@
 ---
 type: community
-members: 21
+cohesion: 0.13
+members: 15
 ---
 
 # Community 598
 
-**Members:** 21 nodes
+**Cohesion:** 0.13 - loosely connected
+**Members:** 15 nodes
 
 ## Members
-- [[1. EgressTelegramNotifier — Little Snitch Inline Buttons]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[2. Approval Queue — Missing Telegram Notifications]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[3. OutputCanary — Not Passed to Pipeline]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[4. EnhancedToolResultSanitizer — Not Passed to Pipeline]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[5. LLMProxy — Never Instantiated]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[6. Callback Query Handler for Inline Buttons]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[7. KeyVault — Instantiated but Not Used]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[8. SidecarScanner — External Tool Interface]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[9. Audit Store Not Passed to Pipeline]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[AgentShroud v0.8.0 Watchtower — Comprehensive Wiring Audit]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[Executive Summary_7]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[Fix Priority List]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[Inbound Request Path (middleware.py → process_request)]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[Infrastructure (lifespan.py — initialized at startup)]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[Outbound Path (middleware.py)]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[Pipeline (pipeline.py → process_inbound  process_outbound)]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[Revised Summary]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[v0.8.0-wiring-audit]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[✅ CONFIRMED WIRED AND WORKING]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[🔴 CRITICAL — Not Wired (code exists, tests pass, but NOT running in production)]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[🟡 MEDIUM — Partially Wired or Degraded]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[Check A — Substantive change on the losing side]] - document - .agents/skills/i-ab/SKILL.md
+- [[Check B — Tied to a real ticket]] - document - .agents/skills/i-ab/SKILL.md
+- [[Check C — Still broken at HEAD (not self-healed)]] - document - .agents/skills/i-ab/SKILL.md
+- [[Guardrails]] - document - .agents/skills/i-ab/SKILL.md
+- [[Invocation Forms]] - document - .agents/skills/i-ab/SKILL.md
+- [[Jira  PR Comment Format]] - document - .agents/skills/i-ab/SKILL.md
+- [[Role_3]] - document - .agents/skills/i-ab/SKILL.md
+- [[SKILL_1]] - document - .agents/skills/i-ab/SKILL.md
+- [[Skill Audit Branch (AB) — Merge Regression Detection]] - document - .agents/skills/i-ab/SKILL.md
+- [[Step 1 — Verify the script exists]] - document - .agents/skills/i-ab/SKILL.md
+- [[Step 2 — Determine the target]] - document - .agents/skills/i-ab/SKILL.md
+- [[Step 3 — Run the audit script]] - document - .agents/skills/i-ab/SKILL.md
+- [[Step 4 — Triage each finding]] - document - .agents/skills/i-ab/SKILL.md
+- [[Step 5 — Classify findings]] - document - .agents/skills/i-ab/SKILL.md
+- [[Step 6 — Output the report]] - document - .agents/skills/i-ab/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,9 +32,3 @@ members: 21
 TABLE source_file, type FROM #community/Community_598
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 738]]
-
-## Top bridge nodes
-- [[AgentShroud v0.8.0 Watchtower — Comprehensive Wiring Audit]] - degree 8, connects to 1 community

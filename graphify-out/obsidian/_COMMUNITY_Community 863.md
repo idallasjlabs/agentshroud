@@ -1,24 +1,25 @@
 ---
 type: community
-members: 11
+cohesion: 0.24
+members: 10
 ---
 
 # Community 863
 
-**Members:** 11 nodes
+**Cohesion:** 0.24 - loosely connected
+**Members:** 10 nodes
 
 ## Members
-- [[._setup_proxy_with_capture()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[.test_collab_notified_at_alert_threshold()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[.test_collab_notified_at_escalated_threshold()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[.test_collab_notified_at_suspended_threshold()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[.test_collab_notified_only_once_per_level()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[.test_no_collab_notice_below_alert()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[.test_owner_also_notified_on_threshold()]] - code - gateway/tests/test_progressive_lockdown.py
-- [[Owner should receive an escalation notice on the 3rd block.]] - rationale - gateway/tests/test_progressive_lockdown.py
-- [[TestCollabLockdownNotifications]] - code - gateway/tests/test_progressive_lockdown.py
-- [[The 4th block stays at ALERT but must NOT fire a second notification.]] - rationale - gateway/tests/test_progressive_lockdown.py
-- [[Verify _quarantine_blocked_message sends threshold warnings to the collaborator.]] - rationale - gateway/tests/test_progressive_lockdown.py
+- [[.test_clean_when_installed_but_no_report()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_not_run_when_no_report_dir()]] - code - gateway/tests/test_scanner_integration.py
+- [[.test_returns_generate_summary_output()]] - code - gateway/tests/test_scanner_integration.py
+- [[Return True if the most recent report file was written within max_age_hours.]] - rationale - gateway/security/scanner_integration.py
+- [[Return latest Trivy scan summary from saved reports.      When Trivy is installe]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 29 AI Model & Supply Chain Integrity (0-5). MITRE ATLAS, OWASP LLM]] - rationale - gateway/security/scanner_integration.py
+- [[TestGetTrivySummary]] - code - gateway/tests/test_scanner_integration.py
+- [[_is_fresh()]] - code - gateway/security/scanner_integration.py
+- [[_score_ai_model_supply_chain()]] - code - gateway/security/scanner_integration.py
+- [[get_trivy_summary()]] - code - gateway/security/scanner_integration.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,9 +29,21 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 62]]
-- 1 edge to [[_COMMUNITY_Community 4]]
+- 5 edges to [[_COMMUNITY_Community 72]]
+- 4 edges to [[_COMMUNITY_Community 187]]
+- 2 edges to [[_COMMUNITY_Community 183]]
+- 2 edges to [[_COMMUNITY_Community 196]]
+- 2 edges to [[_COMMUNITY_Community 201]]
+- 2 edges to [[_COMMUNITY_SOC Collaborators]]
+- 2 edges to [[_COMMUNITY_Community 399]]
+- 1 edge to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
+- 1 edge to [[_COMMUNITY_Community 539]]
+- 1 edge to [[_COMMUNITY_Community 216]]
+- 1 edge to [[_COMMUNITY_Community 771]]
 
 ## Top bridge nodes
-- [[TestCollabLockdownNotifications]] - degree 12, connects to 2 communities
-- [[._setup_proxy_with_capture()]] - degree 8, connects to 1 community
+- [[get_trivy_summary()]] - degree 16, connects to 9 communities
+- [[_is_fresh()]] - degree 8, connects to 3 communities
+- [[_score_ai_model_supply_chain()]] - degree 6, connects to 2 communities
+- [[TestGetTrivySummary]] - degree 4, connects to 1 community
+- [[.test_clean_when_installed_but_no_report()]] - degree 3, connects to 1 community

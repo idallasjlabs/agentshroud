@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/skills/scan.py"
 type: "code"
-community: "Community 110"
+community: "Community 102"
 location: "L59"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_110
+  - community/Community_102
 ---
 
 # ScanResult
@@ -18,4 +18,4 @@ tags:
 - [[SkillsManifest]] - `uses` [INFERRED]
 - [[_print_findings()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_110
+#graphify/code #graphify/INFERRED #community/Community_102

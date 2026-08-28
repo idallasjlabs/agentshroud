@@ -1,40 +1,42 @@
 ---
 type: community
+cohesion: 0.08
 members: 27
 ---
 
 # Community 290
 
+**Cohesion:** 0.08 - loosely connected
 **Members:** 27 nodes
 
 ## Members
-- [[Guardrails_4]] - document - .agents/skills/i-odev/SKILL.md
-- [[Invocation_2]] - document - .agents/skills/i-odev/SKILL.md
-- [[Jira ticket — every development batch gets one_1]] - document - .agents/skills/i-odev/SKILL.md
-- [[Mode A — Single task_1]] - document - .agents/skills/i-odev/SKILL.md
-- [[Mode B — Comprehensive review sweep_1]] - document - .agents/skills/i-odev/SKILL.md
-- [[Reviewers and fixer available to you_1]] - document - .agents/skills/i-odev/SKILL.md
-- [[Role_22]] - document - .agents/skills/i-odev/SKILL.md
-- [[SKILL_38]] - document - .agents/skills/i-odev/SKILL.md
-- [[Skill OpenClaw Dev Workflow (ODEV)]] - document - .agents/skills/i-odev/SKILL.md
-- [[Step 1 — One branch + worktree for the whole sweep_1]] - document - .agents/skills/i-odev/SKILL.md
-- [[Step 1 — Sync and confirm clean state_1]] - document - .agents/skills/i-odev/SKILL.md
-- [[Step 10 — Notify the owner_1]] - document - .agents/skills/i-odev/SKILL.md
-- [[Step 11 — Merge (only on explicit owner instruction)_1]] - document - .agents/skills/i-odev/SKILL.md
-- [[Step 12 — Clean up_1]] - document - .agents/skills/i-odev/SKILL.md
-- [[Step 2 — Create a branch + worktree_1]] - document - .agents/skills/i-odev/SKILL.md
-- [[Step 2 — Work through directories one at a time_1]] - document - .agents/skills/i-odev/SKILL.md
-- [[Step 2b — Create the Jira ticket_1]] - document - .agents/skills/i-odev/SKILL.md
-- [[Step 3 — After the last directory (or a natural stopping point)_1]] - document - .agents/skills/i-odev/SKILL.md
-- [[Step 3 — Write and edit code_1]] - document - .agents/skills/i-odev/SKILL.md
-- [[Step 4 — Test and lint_1]] - document - .agents/skills/i-odev/SKILL.md
-- [[Step 5 — Multi-LLM review_1]] - document - .agents/skills/i-odev/SKILL.md
-- [[Step 6 — Build and validate containers_1]] - document - .agents/skills/i-odev/SKILL.md
-- [[Step 7 — Update documentation and website_1]] - document - .agents/skills/i-odev/SKILL.md
-- [[Step 8 — Update the knowledge graph_1]] - document - .agents/skills/i-odev/SKILL.md
-- [[Step 9 — Push and open the PR_1]] - document - .agents/skills/i-odev/SKILL.md
-- [[Step 9b — Update the Jira ticket with the PR link_1]] - document - .agents/skills/i-odev/SKILL.md
-- [[Tools you have for this workflow_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[ADR-001 Transparent Proxy Decision]] - concept - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
+- [[ADR-007 Zero-Config Security]] - concept - docs/architecture/adr/ADR-007-zero-config-security.md
+- [[Agent Modification Approach (rejected alternative)]] - concept - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
+- [[AgentShroud Deployment Architecture]] - document - docs/architecture/deployment-diagram.md
+- [[Apple Containers (macOS)]] - document - docs/architecture/deployment-diagram.md
+- [[Cloud Provider Secrets]] - document - docs/architecture/deployment-diagram.md
+- [[DNS Routing Configuration]] - document - docs/architecture/deployment-diagram.md
+- [[Default Port Allocation]] - document - docs/architecture/deployment-diagram.md
+- [[Deployment Modes]] - document - docs/architecture/deployment-diagram.md
+- [[Deployment Validation]] - document - docs/architecture/deployment-diagram.md
+- [[Docker Runtime]] - document - docs/architecture/deployment-diagram.md
+- [[Docker Secrets]] - document - docs/architecture/deployment-diagram.md
+- [[HashiCorp Vault Integration]] - document - docs/architecture/deployment-diagram.md
+- [[Multi-Instance Support]] - document - docs/architecture/deployment-diagram.md
+- [[Multi-Runtime Support_1]] - document - docs/architecture/deployment-diagram.md
+- [[Network Topology]] - document - docs/architecture/deployment-diagram.md
+- [[Overview_6]] - document - docs/architecture/deployment-diagram.md
+- [[Persistent Storage Architecture]] - document - docs/architecture/deployment-diagram.md
+- [[Podman Support]] - document - docs/architecture/deployment-diagram.md
+- [[Port Mappings and Auto-Detection]] - document - docs/architecture/deployment-diagram.md
+- [[Proxy Mode (Recommended)]] - document - docs/architecture/deployment-diagram.md
+- [[Secrets Management Integration]] - document - docs/architecture/deployment-diagram.md
+- [[Sidecar Mode (Performance Optimized)]] - document - docs/architecture/deployment-diagram.md
+- [[Three-Network Architecture]] - document - docs/architecture/deployment-diagram.md
+- [[Volume Mounts and Secrets Management]] - document - docs/architecture/deployment-diagram.md
+- [[Zero-Configuration Deployment]] - document - docs/architecture/deployment-diagram.md
+- [[deployment-diagram]] - document - docs/architecture/deployment-diagram.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -42,3 +44,9 @@ members: 27
 TABLE source_file, type FROM #community/Community_290
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 514]]
+
+## Top bridge nodes
+- [[ADR-001 Transparent Proxy Decision]] - degree 4, connects to 1 community

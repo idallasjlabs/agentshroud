@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "Community 652"
+community: "Middleware & Lifespan"
 location: "L400"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_652
+  - community/Middleware__Lifespan
 ---
 
 # _tool_req()
@@ -26,4 +26,4 @@ tags:
 - [[_req()]] - `calls` [EXTRACTED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_652
+#graphify/code #graphify/EXTRACTED #community/Middleware__Lifespan

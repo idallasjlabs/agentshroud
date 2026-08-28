@@ -1,11 +1,11 @@
 ---
 source_file: "branding/icons/modules/pii-sanitizer-256x256.png"
 type: "image"
-community: "Community 448"
+community: "Community 45"
 tags:
   - graphify/image
   - graphify/AMBIGUOUS
-  - community/Community_448
+  - community/Community_45
 ---
 
 # PII Sanitizer Module Badge Icon
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud macOS App Icon (1024x1024, Rounded Squircle)]] - `conceptually_related_to` [INFERRED]
 - [[differential_pii_detector.py]] - `conceptually_related_to` [AMBIGUOUS]
 
-#graphify/image #graphify/AMBIGUOUS #community/Community_448
+#graphify/image #graphify/AMBIGUOUS #community/Community_45

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/QUICK_REFERENCE.md"
 type: "document"
-community: "Community 725"
+community: "Community 361"
 location: "L1"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Community_725
+  - community/Community_361
 ---
 
 # QUICK_REFERENCE.md
@@ -17,4 +17,4 @@ tags:
 - [[RUNBOOK]] - `conceptually_related_to` [INFERRED]
 - [[TAILSCALE_COMMANDS]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Community_725
+#graphify/document #graphify/INFERRED #community/Community_361

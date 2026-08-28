@@ -1,22 +1,24 @@
 ---
 type: community
+cohesion: 0.22
 members: 9
 ---
 
 # Community 904
 
+**Cohesion:** 0.22 - loosely connected
 **Members:** 9 nodes
 
 ## Members
-- [[.test_wrapper_all_pass()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_wrapper_dry_run_never_calls_ssh()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_wrapper_env_host_override()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_wrapper_mixed_exit_codes_fail()]] - code - gateway/tests/test_multi_host_test.py
-- [[Path_33]] - code - gateway/tests/test_multi_host_test.py
-- [[TestWrapperSubprocess]] - code - gateway/tests/test_multi_host_test.py
-- [[_run_wrapper()]] - code - gateway/tests/test_multi_host_test.py
-- [[_write_exec()]] - code - gateway/tests/test_multi_host_test.py
-- [[test_multi_host_test.py]] - code - gateway/tests/test_multi_host_test.py
+- [[4. Defense-in-Depth Container Security]] - document - docs/papers/agentshroud-whitepaper.md
+- [[4.1 Build-Time Image Scanning (Trivy)]] - document - docs/papers/agentshroud-whitepaper.md
+- [[4.2 Runtime Malware Detection (ClamAV)]] - document - docs/papers/agentshroud-whitepaper.md
+- [[4.3 Runtime Syscall Monitoring (Falco)]] - document - docs/papers/agentshroud-whitepaper.md
+- [[4.4 Host Integrity Monitoring (Wazuh)]] - document - docs/papers/agentshroud-whitepaper.md
+- [[4.5 Compliance Scanning (OpenSCAP)]] - document - docs/papers/agentshroud-whitepaper.md
+- [[4.6 Daily Security Health Report]] - document - docs/papers/agentshroud-whitepaper.md
+- [[4.7 Zero-Configuration Security]] - document - docs/papers/agentshroud-whitepaper.md
+- [[4.8 Container Security — Competitive Comparison]] - document - docs/papers/agentshroud-whitepaper.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,17 +28,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_Community 485]]
-- 5 edges to [[_COMMUNITY_Community 992]]
-- 3 edges to [[_COMMUNITY_Community 816]]
-- 3 edges to [[_COMMUNITY_Community 869]]
-- 2 edges to [[_COMMUNITY_Community 731]]
-- 2 edges to [[_COMMUNITY_Community 817]]
-- 2 edges to [[_COMMUNITY_Community 1257]]
-- 2 edges to [[_COMMUNITY_Community 1102]]
-- 2 edges to [[_COMMUNITY_Community 993]]
+- 1 edge to [[_COMMUNITY_Community 402]]
 
 ## Top bridge nodes
-- [[test_multi_host_test.py]] - degree 26, connects to 9 communities
-- [[TestWrapperSubprocess]] - degree 8, connects to 2 communities
-- [[Path_33]] - degree 5, connects to 2 communities
+- [[4. Defense-in-Depth Container Security]] - degree 9, connects to 1 community

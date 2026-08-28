@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "Community 584"
+community: "Memory Lifecycle & Egress Filtering"
 location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_584
+  - community/Memory_Lifecycle__Egress_Filtering
 ---
 
 # FileIntegrityRecord
@@ -20,4 +20,4 @@ tags:
 - [[Record of a file's integrity state.]] - `rationale_for` [EXTRACTED]
 - [[memory_integrity.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_584
+#graphify/code #graphify/EXTRACTED #community/Memory_Lifecycle__Egress_Filtering

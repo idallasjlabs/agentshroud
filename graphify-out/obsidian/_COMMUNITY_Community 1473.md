@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 1.00
 members: 2
 ---
 
 # Community 1473
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[Dependabot Configuration]] - code - .github/dependabot.yml
-- [[Presidio-Anonymizer 2.2.364 Version Pin-Out]] - rationale - .github/dependabot.yml
+- [[SKILL_131]] - document - docker/config/openclaw/skills/i-architecture-review/SKILL.md
+- [[Skill architecture-review_2]] - document - docker/config/openclaw/skills/i-architecture-review/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

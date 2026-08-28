@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_image_verifier.py"
 type: "rationale"
-community: "Community 477"
+community: "Community 480"
 tags:
   - graphify/rationale
   - graphify/INFERRED
-  - community/Community_477
+  - community/Community_480
 ---
 
 # Cosign signature verification of container images (fail-closed on missing binary/timeout/bad signature)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[verify_image()]] - `rationale_for` [INFERRED]
 
-#graphify/rationale #graphify/INFERRED #community/Community_477
+#graphify/rationale #graphify/INFERRED #community/Community_480

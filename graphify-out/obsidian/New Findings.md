@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md"
 type: "document"
-community: "Community 338"
+community: "Community 337"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_338
+  - community/Community_337
 ---
 
 # New Findings
@@ -18,4 +18,4 @@ tags:
 - [[LOW — Informational]] - `contains` [EXTRACTED]
 - [[MEDIUM — Fix Soon]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_338
+#graphify/document #graphify/EXTRACTED #community/Community_337

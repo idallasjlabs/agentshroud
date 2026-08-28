@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 1.00
 members: 2
 ---
 
 # Community 1487
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[installapiprerequisites endpoint]] - concept - gateway/web/templates/installer.html
-- [[checkPrereqs()]] - code - gateway/web/templates/installer.html
+- [[SKILL_188]] - document - docker/config/openclaw/skills/i-value-stream-mapping/SKILL.md
+- [[Skill value-stream-mapping_2]] - document - docker/config/openclaw/skills/i-value-stream-mapping/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

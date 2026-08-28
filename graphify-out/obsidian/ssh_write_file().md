@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Community 9"
+community: "RBAC & SOC Realtime"
 location: "L1099"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_9
+  - community/RBAC__SOC_Realtime
 ---
 
 # ssh_write_file()
@@ -19,4 +19,4 @@ tags:
 - [[main.py_2]] - `contains` [EXTRACTED]
 - [[make_event()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_9
+#graphify/code #graphify/EXTRACTED #community/RBAC__SOC_Realtime

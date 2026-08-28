@@ -1,57 +1,70 @@
 ---
 type: community
-members: 44
+cohesion: 0.08
+members: 55
 ---
 
 # Community 105
 
-**Members:** 44 nodes
+**Cohesion:** 0.08 - loosely connected
+**Members:** 55 nodes
 
 ## Members
-- [[.__init__()_197]] - code - gateway/web/dashboard_endpoints.py
-- [[.__init__()_198]] - code - gateway/web/dashboard_endpoints.py
-- [[.append()_1]] - code - gateway/web/dashboard_endpoints.py
-- [[.emit()_1]] - code - gateway/web/dashboard_endpoints.py
-- [[.push()_4]] - code - gateway/web/dashboard_endpoints.py
-- [[.recent()]] - code - gateway/web/dashboard_endpoints.py
-- [[.summary()_1]] - code - gateway/web/dashboard_endpoints.py
-- [[.tail()]] - code - gateway/web/dashboard_endpoints.py
-- [[Alert]] - code - gateway/web/dashboard_endpoints.py
-- [[Alert counts by severity.]] - rationale - gateway/web/dashboard_endpoints.py
-- [[AlertStore]] - code - gateway/web/dashboard_endpoints.py
-- [[Any_74]] - code - gateway/web/dashboard_endpoints.py
-- [[LogBuffer]] - code - gateway/web/dashboard_endpoints.py
-- [[LogRecord_2]] - code - gateway/web/dashboard_endpoints.py
-- [[Recent securityaudit log entries.      Optional ``bot=`` query parameter restr]] - rationale - gateway/web/dashboard_endpoints.py
-- [[Ring buffer for recent logaudit entries.]] - rationale - gateway/web/dashboard_endpoints.py
-- [[SSH host connectivity status.]] - rationale - gateway/web/dashboard_endpoints.py
-- [[Simple in-memory alert store. Thread-safe enough for single-process use.]] - rationale - gateway/web/dashboard_endpoints.py
-- [[TCP connect to port 22 to check if host is reachable.]] - rationale - gateway/web/dashboard_endpoints.py
-- [[Test Dashboard Endpoints Suite]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[When pipeline exists, stats should reflect its data.]] - rationale - gateway/tests/test_dashboard_endpoints.py
-- [[_check_host()]] - code - gateway/web/dashboard_endpoints.py
-- [[alerts_summary()]] - code - gateway/web/dashboard_endpoints.py
-- [[auth_headers()_1]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[logs_recent()]] - code - gateway/web/dashboard_endpoints.py
-- [[ssh_hosts()_1]] - code - gateway/web/dashboard_endpoints.py
-- [[tail parameter is clamped to 1-100.]] - rationale - gateway/tests/test_dashboard_endpoints.py
-- [[test_alert_store_push_and_summary()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_alerts_summary_empty()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_alerts_summary_requires_auth()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_alerts_summary_with_alerts()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_dashboard_endpoints.py]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_log_buffer_ring()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_log_buffer_tail()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_logs_recent_requires_auth()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_logs_recent_returns_entries()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_logs_recent_tail_clamped()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_logs_recent_tail_param()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_proxy_status_includes_pipeline_stats()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_proxy_status_requires_auth()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_proxy_status_returns_stats()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_ssh_hosts_online()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_ssh_hosts_requires_auth()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_ssh_hosts_returns_hosts()]] - code - gateway/tests/test_dashboard_endpoints.py
+- [[.__call__()_2]] - code - gateway/tests/test_citation_verifier.py
+- [[.__init__()_61]] - code - gateway/security/citation_verifier.py
+- [[.__init__()_141]] - code - gateway/tests/test_citation_verifier.py
+- [[._verifier()]] - code - gateway/tests/test_citation_verifier.py
+- [[._verifier()_1]] - code - gateway/tests/test_citation_verifier.py
+- [[._verify_url()]] - code - gateway/security/citation_verifier.py
+- [[.test_allowlisted_live_source_kept()]] - code - gateway/tests/test_citation_verifier.py
+- [[.test_dropped_count_is_tamper_evident()]] - code - gateway/tests/test_citation_verifier.py
+- [[.test_generated_at_is_preserved()]] - code - gateway/tests/test_citation_verifier.py
+- [[.test_host_confusion_urls_rejected_and_never_fetched()]] - code - gateway/tests/test_citation_verifier.py
+- [[.test_mixed_valid_and_invalid_keeps_only_valid()]] - code - gateway/tests/test_citation_verifier.py
+- [[.test_multiple_valid_citations_all_kept()]] - code - gateway/tests/test_citation_verifier.py
+- [[.test_no_candidate_urls_dropped()]] - code - gateway/tests/test_citation_verifier.py
+- [[.test_not_ok_on_non_2xx()]] - code - gateway/tests/test_citation_verifier.py
+- [[.test_not_ok_without_content()]] - code - gateway/tests/test_citation_verifier.py
+- [[.test_off_allowlist_url_dropped_and_not_fetched()]] - code - gateway/tests/test_citation_verifier.py
+- [[.test_ok_requires_2xx_and_content()]] - code - gateway/tests/test_citation_verifier.py
+- [[.test_report_all_unverified_is_empty()]] - code - gateway/tests/test_citation_verifier.py
+- [[.test_report_keeps_verified_and_counts_dropped()]] - code - gateway/tests/test_citation_verifier.py
+- [[.test_self_asserted_verified_is_ignored()]] - code - gateway/tests/test_citation_verifier.py
+- [[.test_source_without_content_dropped()]] - code - gateway/tests/test_citation_verifier.py
+- [[.test_ssrf_unsafe_urls_rejected_before_fetch()]] - code - gateway/tests/test_citation_verifier.py
+- [[.test_unparseable_url_dropped()]] - code - gateway/tests/test_citation_verifier.py
+- [[.test_unreachable_source_dropped()]] - code - gateway/tests/test_citation_verifier.py
+- [[.test_verified_report_persists_with_intact_hashchain()]] - code - gateway/tests/test_citation_verifier.py
+- [[.test_wildcard_allowlist_match_kept()]] - code - gateway/tests/test_citation_verifier.py
+- [[.verify_entry()]] - code - gateway/security/citation_verifier.py
+- [[.verify_report()]] - code - gateway/security/citation_verifier.py
+- [[A draft competitive-intel report submitted for citation verification.]] - rationale - gateway/web/api.py
+- [[An unverified competitor claim submitted for citation checking.]] - rationale - gateway/security/citation_verifier.py
+- [[Build a CitationVerifier wired to the production (httpx) fetcher.      Isolated]] - rationale - gateway/web/api.py
+- [[CitationVerifier]] - code - gateway/security/citation_verifier.py
+- [[Deterministic fetcher maps url - (status, sha_or_None). Records calls.]] - rationale - gateway/tests/test_citation_verifier.py
+- [[DraftEntry]] - code - gateway/security/citation_verifier.py
+- [[FetchOutcome_1]] - code - gateway/tests/test_citation_verifier.py
+- [[IntelDraftEntry]] - code - gateway/web/api.py
+- [[IntelDraftRequest]] - code - gateway/web/api.py
+- [[One unverified competitor claim + its candidate source URLs.]] - rationale - gateway/web/api.py
+- [[Re-fetch url and return a Citation iff it is allowlisted + live.          SSRF]] - rationale - gateway/security/citation_verifier.py
+- [[Return True if domain matches any pattern (exact or ``.`` wildcard).      Sin]] - rationale - gateway/security/egress_config.py
+- [[Return a CompetitorEntry with only its valid citations, or None.          None m]] - rationale - gateway/security/citation_verifier.py
+- [[TestFetchOutcome]] - code - gateway/tests/test_citation_verifier.py
+- [[TestVerifyEntry]] - code - gateway/tests/test_citation_verifier.py
+- [[TestVerifyReport]] - code - gateway/tests/test_citation_verifier.py
+- [[Verifies competitor claims against re-fetched, allowlisted sources.]] - rationale - gateway/security/citation_verifier.py
+- [[Verify and persist a draft competitive-intel report (SCRUM-75).      Each draft]] - rationale - gateway/web/api.py
+- [[Verify every draft claim; return a report of only verified claims.          Clai]] - rationale - gateway/security/citation_verifier.py
+- [[_FakeFetcher]] - code - gateway/tests/test_citation_verifier.py
+- [[_intel_verifier()]] - code - gateway/web/api.py
+- [[citation_verifier module]] - code - gateway/security/citation_verifier.py
+- [[domain_matches()]] - code - gateway/security/egress_config.py
+- [[intel_report module (CompetitiveIntelReport, IntelReportStore)]] - code - gateway/security/intel_report.py
+- [[submit_competitive_intel()]] - code - gateway/web/api.py
+- [[test_citation_verifier.py]] - code - gateway/tests/test_citation_verifier.py
+- [[test_default_allowlist_uses_permanent_egress_domains()]] - code - gateway/tests/test_citation_verifier.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -61,12 +74,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_Community 6]]
-- 1 edge to [[_COMMUNITY_Community 818]]
+- 29 edges to [[_COMMUNITY_Community 58]]
+- 22 edges to [[_COMMUNITY_Community 113]]
+- 17 edges to [[_COMMUNITY_Community 37]]
+- 8 edges to [[_COMMUNITY_Community 29]]
+- 2 edges to [[_COMMUNITY_Community 14]]
+- 2 edges to [[_COMMUNITY_Community 50]]
+- 1 edge to [[_COMMUNITY_Community 174]]
 
 ## Top bridge nodes
-- [[test_dashboard_endpoints.py]] - degree 20, connects to 1 community
-- [[AlertStore]] - degree 9, connects to 1 community
-- [[LogBuffer]] - degree 8, connects to 1 community
-- [[_check_host()]] - degree 4, connects to 1 community
-- [[ssh_hosts()_1]] - degree 4, connects to 1 community
+- [[DraftEntry]] - degree 45, connects to 4 communities
+- [[CitationVerifier]] - degree 43, connects to 4 communities
+- [[IntelDraftRequest]] - degree 7, connects to 3 communities
+- [[domain_matches()]] - degree 6, connects to 3 communities
+- [[IntelDraftEntry]] - degree 6, connects to 3 communities

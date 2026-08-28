@@ -1,28 +1,57 @@
 ---
 type: community
-members: 15
+cohesion: 0.05
+members: 42
 ---
 
 # Community 158
 
-**Members:** 15 nodes
+**Cohesion:** 0.05 - loosely connected
+**Members:** 42 nodes
 
 ## Members
-- [[._audit()]] - code - gateway/proxy/a2a_proxy.py
-- [[._record_trust_violation()]] - code - gateway/proxy/a2a_proxy.py
-- [[.extract_text_for_pii_scan()]] - code - gateway/proxy/a2a_proxy.py
-- [[.forward()]] - code - gateway/proxy/a2a_proxy.py
-- [[.process_agent_card_request()]] - code - gateway/proxy/a2a_proxy.py
-- [[.process_inbound_request()]] - code - gateway/proxy/a2a_proxy.py
-- [[.resolve_peer_id()]] - code - gateway/proxy/a2a_proxy.py
-- [[A freshly-constructed, un-set result must default to blocked, not     allowed —]] - rationale - gateway/tests/test_a2a_proxy.py
-- [[A2AProxyResult]] - code - gateway/proxy/a2a_proxy.py
-- [[Flatten an A2A Message's `parts` array to plain text for PII         scanning.]] - rationale - gateway/proxy/a2a_proxy.py
-- [[GET .well-knownagent-card.json — never policy-gated (the A2A         spec requ]] - rationale - gateway/proxy/a2a_proxy.py
-- [[Record a typed violation against the peer's trust score for the         two A2A-]] - rationale - gateway/proxy/a2a_proxy.py
-- [[Resolve peer identity from the Authorization Bearer token.          Never falls]] - rationale - gateway/proxy/a2a_proxy.py
-- [[Result of proxying a single inbound A2A request.]] - rationale - gateway/proxy/a2a_proxy.py
-- [[test_proxy_result_defaults_are_safe()]] - code - gateway/tests/test_a2a_proxy.py
+- [[Abstract]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[AgentShroud A Transparent Proxy Framework for Enterprise Governance of Autonomous AI Agents]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[I. Introduction]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[II-A. AI Agent Security]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[II-B. STPA-Sec]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[II-C. Transparent Proxy Architectures]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[II. Related Work]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[III-A. Attacker Model]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[III. Threat Model]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[IV-A. Transparent Proxy Design]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[IV-B. Security Pipeline]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[IV-C. Middleware Manager]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[IV-D. MCP Proxy Layer]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[IV. System Architecture]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[IX-A. Limitations]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[IX-B. STPA-Sec as Applied to AI Agent Systems]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[IX-C. Industry Implications]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[IX. Discussion]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[References_3]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[TABLE II Unsafe Control Action Distribution]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[TABLE III STPA-Sec Requirement Tiers]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[TABLE IV Test Coverage by Defense Layer]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[TABLE V Phase 8.5 E2E Verification Scenarios]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[TABLE VI Post-Remediation Coverage Summary]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[TABLE VII Security Module Comparison]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[VI-A. Methodology]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[VI-B. Findings]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[VI-C. Requirements]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[VI. STPA-Sec Analysis]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[VII-A. Enforce-by-Default (R-02, R-03)]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[VII-B. Outbound Information Filter (R-01)]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[VII-C. Per-User Session Isolation (R-04, R-05)]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[VII-D. Separation of Privilege (R-06, R-07)]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[VII-E. Human-in-the-Loop (R-08, R-09)]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[VII-F. Credential Isolation (R-10, R-11, R-12)]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[VII. v0.8.0 Remediation]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[VIII-A. Test Coverage]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[VIII-B. Enforcement Verification]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[VIII-C. Module Coverage Matrix]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[VIII-D. Competitive Analysis]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[VIII. Evaluation]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[X. Conclusion and Future Work]] - document - docs/papers/agentshroud-ieee-paper.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,14 +61,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_Community 1001]]
-- 7 edges to [[_COMMUNITY_Community 107]]
-- 7 edges to [[_COMMUNITY_Community 104]]
-- 1 edge to [[_COMMUNITY_Community 35]]
+- 1 edge to [[_COMMUNITY_Community 118]]
+- 1 edge to [[_COMMUNITY_Community 166]]
 
 ## Top bridge nodes
-- [[A2AProxyResult]] - degree 15, connects to 3 communities
-- [[.process_inbound_request()]] - degree 10, connects to 2 communities
-- [[._audit()]] - degree 5, connects to 2 communities
-- [[.extract_text_for_pii_scan()]] - degree 4, connects to 2 communities
-- [[.process_agent_card_request()]] - degree 5, connects to 1 community
+- [[AgentShroud A Transparent Proxy Framework for Enterprise Governance of Autonomous AI Agents]] - degree 13, connects to 2 communities

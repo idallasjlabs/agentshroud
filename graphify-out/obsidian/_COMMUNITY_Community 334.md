@@ -1,39 +1,41 @@
 ---
 type: community
+cohesion: 0.08
 members: 26
 ---
 
 # Community 334
 
+**Cohesion:** 0.08 - loosely connected
 **Members:** 26 nodes
 
 ## Members
-- [[Access Pattern]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[App-Specific Password (if 2FA enabled)]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[Apple ID Creation]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[Apple Services Setup Guide]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[CalDAV Server]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[CardDAV Server]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[Credential Storage]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[IMAP Settings (Incoming Mail)]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[Notes Access Options]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[Phase 1 Email]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[Phase 2 Calendar]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[Phase 3 Contacts]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[SMTP Settings (Outgoing Mail)]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[Test Access]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[Two-Factor Authentication]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[iCloud Services_3]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[🎯 Next Steps]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[📅 Calendar (CalDAV)]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[📋 Setup Checklist]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[📚 Documentation Links]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[📝 Notes]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[📞 Contacts (CardDAV)]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[📧 Apple Mail (IMAPSMTP)]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[🔐 App-Specific Passwords]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[🚨 Security Notes]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[🤖 Bot Integration Plan]] - document - docs/setup/APPLE-SERVICES-SETUP.md
+- [[1Password Authentication Failed]] - document - docs/setup/setup-guide.md
+- [[1Password Integration_1]] - document - docs/setup/setup-guide.md
+- [[AgentShroud Setup Guide]] - document - docs/setup/setup-guide.md
+- [[Audit Trail Verification]] - document - docs/setup/setup-guide.md
+- [[Configure AgentShroud]] - document - docs/setup/setup-guide.md
+- [[Container Unhealthy]] - document - docs/setup/setup-guide.md
+- [[Create a Service Account]] - document - docs/setup/setup-guide.md
+- [[Dashboard Security Events]] - document - docs/setup/setup-guide.md
+- [[Gmail Connection Issues]] - document - docs/setup/setup-guide.md
+- [[Health Check Verification]] - document - docs/setup/setup-guide.md
+- [[Important Notes_2]] - document - docs/setup/setup-guide.md
+- [[Optional Requirements]] - document - docs/setup/setup-guide.md
+- [[Performance Issues_1]] - document - docs/setup/setup-guide.md
+- [[Port Already in Use_1]] - document - docs/setup/setup-guide.md
+- [[Prerequisites_12]] - document - docs/setup/setup-guide.md
+- [[Production Checklist]] - document - docs/setup/setup-guide.md
+- [[Quick Start (5 minutes)]] - document - docs/setup/setup-guide.md
+- [[Security Testing]] - document - docs/setup/setup-guide.md
+- [[Security Verification_1]] - document - docs/setup/setup-guide.md
+- [[Set Up Vault Access]] - document - docs/setup/setup-guide.md
+- [[Supported Platforms]] - document - docs/setup/setup-guide.md
+- [[System Requirements_1]] - document - docs/setup/setup-guide.md
+- [[Tests Failing_1]] - document - docs/setup/setup-guide.md
+- [[Troubleshooting_33]] - document - docs/setup/setup-guide.md
+- [[What is AgentShroud_2]] - document - docs/setup/setup-guide.md
+- [[What's Next]] - document - docs/setup/setup-guide.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -43,7 +45,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 236]]
+- 2 edges to [[_COMMUNITY_Community 264]]
+- 1 edge to [[_COMMUNITY_Community 92]]
+- 1 edge to [[_COMMUNITY_Community 284]]
+- 1 edge to [[_COMMUNITY_Community 529]]
 
 ## Top bridge nodes
-- [[Apple Services Setup Guide]] - degree 11, connects to 1 community
+- [[AgentShroud Setup Guide]] - degree 12, connects to 4 communities

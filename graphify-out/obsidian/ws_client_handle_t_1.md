@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/ws_client.c"
 type: "code"
-community: "Community 139"
+community: "Community 418"
 location: "L152"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_139
+  - community/Community_418
 ---
 
 # ws_client_handle_t
@@ -22,6 +22,5 @@ tags:
 - [[ws_client_send_log()]] - `references` [EXTRACTED]
 - [[ws_client_send_pcm()]] - `references` [EXTRACTED]
 - [[ws_client_send_stop()]] - `references` [EXTRACTED]
-- [[ws_client_set_ctrl_cb()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_139
+#graphify/code #graphify/EXTRACTED #community/Community_418

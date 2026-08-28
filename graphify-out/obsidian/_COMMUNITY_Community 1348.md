@@ -1,17 +1,19 @@
 ---
 type: community
+cohesion: 0.50
 members: 4
 ---
 
 # Community 1348
 
+**Cohesion:** 0.50 - moderately connected
 **Members:** 4 nodes
 
 ## Members
-- [[._enforce_group_workspace_access()]] - code - gateway/proxy/telegram_proxy.py
-- [[._group_workspace_manager()]] - code - gateway/proxy/telegram_proxy.py
-- [[Build a GroupWorkspaceManager from current teamsRBAC config.          Returns a]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Fail-closed member check for a group-context inbound message.          Returns T]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Qwen3-Coder-30B-A3B (registered opt-in coding model, served via oMLX)     must w]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[Returns a copy — never mutates the caller's headers dict in place.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_local_backend_headers_does_not_mutate_input()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_local_failover_base_routes_omlx_qwen3_coder_before_generic_qwen3()]] - code - gateway/tests/test_llm_proxy_local_parity.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +23,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 4]]
-- 1 edge to [[_COMMUNITY_Community 61]]
+- 2 edges to [[_COMMUNITY_Community 54]]
 
 ## Top bridge nodes
-- [[._group_workspace_manager()]] - degree 4, connects to 2 communities
-- [[._enforce_group_workspace_access()]] - degree 4, connects to 1 community
+- [[test_local_backend_headers_does_not_mutate_input()]] - degree 3, connects to 1 community
+- [[test_local_failover_base_routes_omlx_qwen3_coder_before_generic_qwen3()]] - degree 2, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/differential_pii_detector.py"
 type: "code"
-community: "Community 47"
+community: "Community 45"
 location: "L94"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_47
+  - community/Community_45
 ---
 
 # PIIHit
@@ -33,4 +33,4 @@ tags:
 - [[differential_pii_detector.py]] - `contains` [EXTRACTED]
 - [[test_differential_pii_detector.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_47
+#graphify/code #graphify/INFERRED #community/Community_45

@@ -1,21 +1,23 @@
 ---
 type: community
+cohesion: 0.25
 members: 8
 ---
 
 # Community 987
 
+**Cohesion:** 0.25 - loosely connected
 **Members:** 8 nodes
 
 ## Members
-- [[_run_cleanup()]] - code - scripts/check-vendor-compat.sh
-- [[check-vendor-compat.sh]] - code - scripts/check-vendor-compat.sh
-- [[check-vendor-compat.sh script]] - code - scripts/check-vendor-compat.sh
-- [[check_hermes()]] - code - scripts/check-vendor-compat.sh
-- [[check_openclaw()]] - code - scripts/check-vendor-compat.sh
-- [[fail()_3]] - code - scripts/check-vendor-compat.sh
-- [[pass()_2]] - code - scripts/check-vendor-compat.sh
-- [[warn()_2]] - code - scripts/check-vendor-compat.sh
+- [[.test_aws_key_detected()]] - code - gateway/tests/test_credential_injector.py
+- [[.test_clean_content_passes()]] - code - gateway/tests/test_credential_injector.py
+- [[.test_github_token_detected()]] - code - gateway/tests/test_credential_injector.py
+- [[.test_jwt_detected()]] - code - gateway/tests/test_credential_injector.py
+- [[.test_leak_detection_disabled()]] - code - gateway/tests/test_credential_injector.py
+- [[.test_openai_key_detected()]] - code - gateway/tests/test_credential_injector.py
+- [[.test_slack_token_detected()]] - code - gateway/tests/test_credential_injector.py
+- [[TestLeakDetection]] - code - gateway/tests/test_credential_injector.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,8 +27,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 58]]
-- 1 edge to [[_COMMUNITY_Community 530]]
+- 1 edge to [[_COMMUNITY_Community 915]]
+- 1 edge to [[_COMMUNITY_Community 605]]
 
 ## Top bridge nodes
-- [[check-vendor-compat.sh]] - degree 9, connects to 2 communities
+- [[TestLeakDetection]] - degree 8, connects to 1 community
+- [[.test_leak_detection_disabled()]] - degree 2, connects to 1 community

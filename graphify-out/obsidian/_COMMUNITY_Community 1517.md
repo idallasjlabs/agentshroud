@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 1.00
 members: 2
 ---
 
 # Community 1517
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[toggle-readonly.sh]] - code - docker/scripts/toggle-readonly.sh
-- [[toggle-readonly.sh script]] - code - docker/scripts/toggle-readonly.sh
+- [[graphify clone command]] - concept - docker/config/openclaw/skills/graphify/references/github-and-merge.md
+- [[graphify merge-graphs command]] - concept - docker/config/openclaw/skills/graphify/references/github-and-merge.md
 
 ## Live Query (requires Dataview plugin)
 

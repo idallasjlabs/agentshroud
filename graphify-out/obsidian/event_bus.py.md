@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "Community 374"
+community: "Ingest API & Approval Routes"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_374
+  - community/Ingest_API__Approval_Routes
 ---
 
 # event_bus.py
@@ -22,4 +22,4 @@ tags:
 - [[make_event()]] - `contains` [EXTRACTED]
 - [[state.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_374
+#graphify/code #graphify/EXTRACTED #community/Ingest_API__Approval_Routes

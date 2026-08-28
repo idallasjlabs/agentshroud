@@ -1,14 +1,16 @@
 ---
 type: community
+cohesion: 1.00
 members: 1
 ---
 
 # Community 1791
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[test_bot_boot_static.sh — static bot boot assembly assertions]] - code - tests/startup_smoke/test_bot_boot_static.sh
+- [[ui_face.c (kawaii face UI state machine)]] - code - firmware/voice-terminal/main/ui_face.c
 
 ## Live Query (requires Dataview plugin)
 

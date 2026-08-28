@@ -1,49 +1,52 @@
 ---
 type: community
-members: 36
+cohesion: 0.05
+members: 37
 ---
 
 # Community 189
 
-**Members:** 36 nodes
+**Cohesion:** 0.05 - loosely connected
+**Members:** 37 nodes
 
 ## Members
-- [[Access Denied_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Token expired (SSO)_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Unable to locate credentials_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[AWS Profile Basics_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[AWS SSO Configuration_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Best Practices_5]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Check Current Profile_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Configuration Files_3]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Configure New Profile_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Default Profile vs Named Profiles_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Initial SSO Setup_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[List Available Profiles_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Login to SSO_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[MCP Not Using Profile_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[MCP-Specific_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Method 1 Set Environment Variable (Session)_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Method 2 Set Permanently (Shell Config)_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Method 3 Configure in .mcp.json_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Multi-Account AWS Access_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Option 1 Interactive Configuration_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Option 2 Manual Configuration_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Organization_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Quick Reference_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Related Skills_99]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Role_90]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[SKILL_159]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Scenario Development → Production_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Security_14]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Switch AWS Profile for MCP_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Troubleshooting_15]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Use SSO Profile with MCP_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Using AssumeRole for Cross-Account Access_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[View Configured Profiles_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[What is an AWS Profile_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[When to Invoke_7]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
+- [[1. Authentication Events (AUTH)]] - document - docs/security/audit-specification.md
+- [[2. Authorization Events (AUTHZ)]] - document - docs/security/audit-specification.md
+- [[3. Security Events (SEC)]] - document - docs/security/audit-specification.md
+- [[4. Data Events (DATA)]] - document - docs/security/audit-specification.md
+- [[5. System Events (SYS)]] - document - docs/security/audit-specification.md
+- [[A.12.4 Logging and Monitoring]] - document - docs/security/audit-specification.md
+- [[Advanced Search Query]] - document - docs/security/audit-specification.md
+- [[AgentShroud Audit Specification]] - document - docs/security/audit-specification.md
+- [[Archival Process]] - document - docs/security/audit-specification.md
+- [[Audit Event Types and Schema]] - document - docs/security/audit-specification.md
+- [[Audit System Performance Metrics]] - document - docs/security/audit-specification.md
+- [[Basic Event Query]] - document - docs/security/audit-specification.md
+- [[Block Structure]] - document - docs/security/audit-specification.md
+- [[Chain Architecture]] - document - docs/security/audit-specification.md
+- [[Chain Verification Query]] - document - docs/security/audit-specification.md
+- [[Compliance Mapping]] - document - docs/security/audit-specification.md
+- [[Core Event Categories]] - document - docs/security/audit-specification.md
+- [[GDPR Article 30 Record Keeping]] - document - docs/security/audit-specification.md
+- [[Genesis Block Specification]] - document - docs/security/audit-specification.md
+- [[Hash Calculation Algorithm]] - document - docs/security/audit-specification.md
+- [[Hash Chain Structure_1]] - document - docs/security/audit-specification.md
+- [[ISO 27001 Control Objectives]] - document - docs/security/audit-specification.md
+- [[Internal Controls Documentation]] - document - docs/security/audit-specification.md
+- [[Overview_13]] - document - docs/security/audit-specification.md
+- [[Performance and Scalability]] - document - docs/security/audit-specification.md
+- [[Processing Activities Register]] - document - docs/security/audit-specification.md
+- [[Query API Specification]] - document - docs/security/audit-specification.md
+- [[Query Capabilities]] - document - docs/security/audit-specification.md
+- [[Query Response Format]] - document - docs/security/audit-specification.md
+- [[Real-Time Event Streaming]] - document - docs/security/audit-specification.md
+- [[Retention Policies]] - document - docs/security/audit-specification.md
+- [[SOX Compliance (Section 404)]] - document - docs/security/audit-specification.md
+- [[Tier 1 Critical Security Events (7 Years)]] - document - docs/security/audit-specification.md
+- [[Tier 2 Operational Events (3 Years)]] - document - docs/security/audit-specification.md
+- [[Tier 3 Debug and Diagnostic Events (1 Year)]] - document - docs/security/audit-specification.md
+- [[Tier 4 High-Volume Events (90 Days)]] - document - docs/security/audit-specification.md
+- [[Tier-Based Retention Strategy]] - document - docs/security/audit-specification.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -51,3 +54,10 @@ members: 36
 TABLE source_file, type FROM #community/Community_189
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_Community 92]]
+
+## Top bridge nodes
+- [[AgentShroud Audit Specification]] - degree 8, connects to 1 community
+- [[Compliance Mapping]] - degree 5, connects to 1 community

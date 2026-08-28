@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "Community 754"
+community: "Config Validation & Router"
 location: "L555"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_754
+  - community/Config_Validation__Router
 ---
 
 # Model switch helper should support local and major cloud providers.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_switch_model_script_exists_with_supported_targets()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_754
+#graphify/rationale #graphify/EXTRACTED #community/Config_Validation__Router

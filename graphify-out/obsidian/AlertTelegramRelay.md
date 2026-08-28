@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/alert_telegram_relay.py"
 type: "code"
-community: "Community 200"
+community: "Community 124"
 location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_200
+  - community/Community_124
 ---
 
 # AlertTelegramRelay
@@ -20,7 +20,7 @@ tags:
 - [[._handle()]] - `method` [EXTRACTED]
 - [[._spawn_send()]] - `method` [EXTRACTED]
 - [[.flush()]] - `method` [EXTRACTED]
-- [[FastAPI_1]] - `uses` [INFERRED]
+- [[FastAPI_2]] - `uses` [INFERRED]
 - [[LogRecord]] - `uses` [INFERRED]
 - [[Subscribe to the gateway EventBus; relay security alerts to Telegram.]] - `rationale_for` [EXTRACTED]
 - [[_DropInvalidHTTPRequestFilter]] - `uses` [INFERRED]
@@ -46,4 +46,4 @@ tags:
 - [[test_warning_alert_relayed_with_orange_marker()]] - `calls` [EXTRACTED]
 - [[test_warning_flood_cannot_starve_critical()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_200
+#graphify/code #graphify/EXTRACTED #community/Community_124

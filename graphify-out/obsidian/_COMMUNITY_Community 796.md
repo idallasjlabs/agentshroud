@@ -1,24 +1,26 @@
 ---
 type: community
+cohesion: 0.18
 members: 11
 ---
 
 # Community 796
 
+**Cohesion:** 0.18 - loosely connected
 **Members:** 11 nodes
 
 ## Members
-- [[1. System Profiler (most comprehensive single source)]] - document - .agents/skills/i-mac/SKILL.md
-- [[10. Spotlight Catch-All]] - document - .agents/skills/i-mac/SKILL.md
-- [[2. Applications Folders (catch drag-and-drop installs)]] - document - .agents/skills/i-mac/SKILL.md
-- [[3. Homebrew (formulae + casks)]] - document - .agents/skills/i-mac/SKILL.md
-- [[4. Mac App Store (via `mas` CLI)]] - document - .agents/skills/i-mac/SKILL.md
-- [[5. Setapp Detection]] - document - .agents/skills/i-mac/SKILL.md
-- [[6. Package Receipts (direct .pkg installs)]] - document - .agents/skills/i-mac/SKILL.md
-- [[7. CLI Tools & Utilities (non-.app installs)]] - document - .agents/skills/i-mac/SKILL.md
-- [[8. Launch Agents & Daemons (background services)]] - document - .agents/skills/i-mac/SKILL.md
-- [[9. Browser Extensions (optional but useful)]] - document - .agents/skills/i-mac/SKILL.md
-- [[Phase 1 — Raw Collection]] - document - .agents/skills/i-mac/SKILL.md
+- [[Daedalus — Concept Illustrator_5]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
+- [[Input Requirements_23]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
+- [[Output Format_29]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
+- [[Persona_18]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
+- [[Quality Checklist_21]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
+- [[Role_84]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
+- [[SKILL_144]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
+- [[System Prompt_18]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
+- [[architecture.puml (PlantUML)_2]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
+- [[diagramsREADME_2]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
+- [[flow.mmd (Mermaid)_2]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,9 +28,3 @@ members: 11
 TABLE source_file, type FROM #community/Community_796
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 1009]]
-
-## Top bridge nodes
-- [[Phase 1 — Raw Collection]] - degree 11, connects to 1 community

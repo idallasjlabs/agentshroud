@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.2/v1.2.0-master-plan.md"
 type: "concept"
-community: "Community 98"
+community: "Community 368"
 location: "Workstream E"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_98
+  - community/Community_368
 ---
 
 # Workstream E: Blue and Red Team Security Scan (Both Bots)
@@ -20,4 +20,4 @@ tags:
 - [[Source of truth_1]] - `contains` [EXTRACTED]
 - [[Tests to add]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_98
+#graphify/concept #graphify/EXTRACTED #community/Community_368

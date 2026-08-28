@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 1.00
 members: 2
 ---
 
 # Community 1480
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[i-incident-response SKILL (stub)]] - document - docker/config/hermes/skills/i-incident-response/SKILL.md
-- [[i-kaizen SKILL (stub)]] - document - docker/config/hermes/skills/i-kaizen/SKILL.md
+- [[SKILL_153]] - document - docker/config/openclaw/skills/i-incident-response/SKILL.md
+- [[Skill incident-response_2]] - document - docker/config/openclaw/skills/i-incident-response/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

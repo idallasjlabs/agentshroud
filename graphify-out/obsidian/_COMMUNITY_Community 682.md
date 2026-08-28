@@ -1,27 +1,29 @@
 ---
 type: community
+cohesion: 0.14
 members: 14
 ---
 
 # Community 682
 
+**Cohesion:** 0.14 - loosely connected
 **Members:** 14 nodes
 
 ## Members
-- [[Fatal glibc error Cannot allocate TLS block]] - document - docs/runbooks/RUNBOOK.md
-- [[AgentShroud Deployment & Troubleshooting Runbook]] - document - docs/runbooks/RUNBOOK.md
-- [[Architecture Notes_1]] - document - docs/runbooks/RUNBOOK.md
-- [[Check Gateway Health]] - document - docs/runbooks/RUNBOOK.md
-- [[Colima won't start]] - document - docs/runbooks/RUNBOOK.md
-- [[Container starts but unhealthy]] - document - docs/runbooks/RUNBOOK.md
-- [[Deploy Latest Code (Any Host)]] - document - docs/runbooks/RUNBOOK.md
-- [[Deploy to Production]] - document - docs/runbooks/RUNBOOK.md
-- [[Docker says Cannot connect to Docker daemon]] - document - docs/runbooks/RUNBOOK.md
-- [[Infrastructure_9]] - document - docs/runbooks/RUNBOOK.md
-- [[Quick Restart (No Rebuild)]] - document - docs/runbooks/RUNBOOK.md
-- [[Run Tests on Any Host]] - document - docs/runbooks/RUNBOOK.md
-- [[Tests failing after deploy]] - document - docs/runbooks/RUNBOOK.md
-- [[Troubleshooting_22]] - document - docs/runbooks/RUNBOOK.md
+- [[Configuration  Environment Variables_19]] - document - docs/vault/02 - Modules/Runtime/security.py.md
+- [[Function Details_25]] - document - docs/vault/02 - Modules/Runtime/security.py.md
+- [[Key Classes  Functions_28]] - document - docs/vault/02 - Modules/Runtime/security.py.md
+- [[Purpose_146]] - document - docs/vault/02 - Modules/Runtime/security.py.md
+- [[Related_32]] - document - docs/vault/02 - Modules/Runtime/security.py.md
+- [[Responsibilities_30]] - document - docs/vault/02 - Modules/Runtime/security.py.md
+- [[Security Feature Registry]] - document - docs/vault/02 - Modules/Runtime/security.py.md
+- [[_validate_runtime(runtime)]] - document - docs/vault/02 - Modules/Runtime/security.py.md
+- [[get_features_for_runtime(runtime)]] - document - docs/vault/02 - Modules/Runtime/security.py.md
+- [[get_missing_features(runtime)]] - document - docs/vault/02 - Modules/Runtime/security.py.md
+- [[get_security_options(runtime)]] - document - docs/vault/02 - Modules/Runtime/security.py.md
+- [[security.py_2]] - document - docs/vault/02 - Modules/Runtime/security.py.md
+- [[security.py_1]] - document - docs/vault/02 - Modules/Runtime/security.py.md
+- [[warn_missing_features(runtime)]] - document - docs/vault/02 - Modules/Runtime/security.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,9 +31,3 @@ members: 14
 TABLE source_file, type FROM #community/Community_682
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 205]]
-
-## Top bridge nodes
-- [[AgentShroud Deployment & Troubleshooting Runbook]] - degree 9, connects to 1 community

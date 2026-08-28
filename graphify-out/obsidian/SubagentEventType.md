@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "Community 14"
+community: "Security Audit & Drift Detection"
 location: "L24"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_14
+  - community/Security_Audit__Drift_Detection
 ---
 
 # SubagentEventType
@@ -35,4 +35,4 @@ tags:
 - [[subagent_monitor.py]] - `contains` [EXTRACTED]
 - [[test_subagent_monitor.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_14
+#graphify/code #graphify/INFERRED #community/Security_Audit__Drift_Detection

@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 1.00
 members: 2
 ---
 
 # Community 1475
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[i-tdd README]] - document - docker/config/hermes/skills/i-tdd/README.md
-- [[i-tdd SKILL.md (TDD Coach, Red-Green-Refactor)]] - document - docker/config/hermes/skills/i-tdd/SKILL.md
+- [[SKILL_138]] - document - docker/config/openclaw/skills/i-cd/SKILL.md
+- [[Skill cd_2]] - document - docker/config/openclaw/skills/i-cd/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

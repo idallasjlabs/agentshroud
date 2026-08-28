@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "Community 78"
+community: "Community 19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_78
+  - community/Community_19
 ---
 
 # Enum
@@ -124,4 +124,4 @@ tags:
 - [[web_content_scanner.py]] - `imports_from` [EXTRACTED]
 - [[web_proxy.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_78
+#graphify/code #graphify/EXTRACTED #community/Community_19

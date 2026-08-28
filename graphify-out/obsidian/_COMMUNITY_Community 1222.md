@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1222
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[Daedalus — Concept Illustrator_4]] - document - docker/config/openclaw/skills/i-daedalus/README.md
-- [[Purpose_82]] - document - docker/config/openclaw/skills/i-daedalus/README.md
-- [[README_87]] - document - docker/config/openclaw/skills/i-daedalus/README.md
-- [[Related Skills_88]] - document - docker/config/openclaw/skills/i-daedalus/README.md
-- [[Usage_91]] - document - docker/config/openclaw/skills/i-daedalus/README.md
+- [[Purpose_87]] - document - docker/config/openclaw/skills/i-icloud/README.md
+- [[README_92]] - document - docker/config/openclaw/skills/i-icloud/README.md
+- [[Related Skills_93]] - document - docker/config/openclaw/skills/i-icloud/README.md
+- [[Usage_96]] - document - docker/config/openclaw/skills/i-icloud/README.md
+- [[iCloud Data Manager (ICLOUD)_2]] - document - docker/config/openclaw/skills/i-icloud/README.md
 
 ## Live Query (requires Dataview plugin)
 

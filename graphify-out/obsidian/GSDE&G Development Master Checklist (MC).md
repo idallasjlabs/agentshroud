@@ -1,20 +1,20 @@
 ---
-source_file: ".agents/skills/i-mc/README.md"
+source_file: "docker/config/hermes/skills/i-mc/README.md"
 type: "document"
-community: "Community 489"
+community: "Community 1187"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_489
+  - community/Community_1187
 ---
 
 # GSDE&G Development Master Checklist (MC)
 
 ## Connections
-- [[Purpose_15]] - `contains` [EXTRACTED]
-- [[README_15]] - `contains` [EXTRACTED]
-- [[Related Skills_15]] - `contains` [EXTRACTED]
-- [[Usage_17]] - `contains` [EXTRACTED]
+- [[Purpose_52]] - `contains` [EXTRACTED]
+- [[README_57]] - `contains` [EXTRACTED]
+- [[Related Skills_55]] - `contains` [EXTRACTED]
+- [[Usage_58]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_489
+#graphify/document #graphify/EXTRACTED #community/Community_1187

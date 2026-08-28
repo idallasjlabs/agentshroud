@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.20
 members: 10
 ---
 
 # Community 858
 
+**Cohesion:** 0.20 - loosely connected
 **Members:** 10 nodes
 
 ## Members
@@ -27,11 +29,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 1042]]
-- 1 edge to [[_COMMUNITY_Community 1322]]
-- 1 edge to [[_COMMUNITY_Community 1043]]
+- 1 edge to [[_COMMUNITY_Community 1045]]
 - 1 edge to [[_COMMUNITY_Community 1323]]
-- 1 edge to [[_COMMUNITY_Community 1266]]
+- 1 edge to [[_COMMUNITY_Community 1046]]
+- 1 edge to [[_COMMUNITY_Community 1324]]
+- 1 edge to [[_COMMUNITY_Community 1262]]
 
 ## Top bridge nodes
 - [[Publish SecureBrowser to ClawHub - Step-by-Step Guide]] - degree 12, connects to 5 communities

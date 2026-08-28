@@ -1,13 +1,13 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "concept"
-community: "Community 1727"
+community: "Community 1815"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1727
+  - community/Community_1815
 ---
 
 # Redaction
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1727
+#graphify/concept #graphify/EXTRACTED #community/Community_1815

@@ -1,19 +1,21 @@
 ---
 type: community
+cohesion: 0.33
 members: 6
 ---
 
 # Community 1099
 
+**Cohesion:** 0.33 - loosely connected
 **Members:** 6 nodes
 
 ## Members
-- [[BaseException_1]] - code - gateway/proxy/telegram_egress_notify.py
-- [[_err_text()]] - code - gateway/proxy/telegram_egress_notify.py
-- [[_is_stale_callback_error()]] - code - gateway/proxy/telegram_egress_notify.py
-- [[_is_stale_edit_error()]] - code - gateway/proxy/telegram_egress_notify.py
-- [[telegram_egress_notify.py]] - code - gateway/proxy/telegram_egress_notify.py
-- [[urllib HTTPError carries the response body on .read(); fall back to str.]] - rationale - gateway/proxy/telegram_egress_notify.py
+- [[AgentShroud Data Assets (root)]] - concept - docs/diagrams/images/diagram-10-data-dictionary.svg
+- [[External Credentials (1Password vault)]] - concept - docs/diagrams/images/diagram-10-data-dictionary.svg
+- [[OpenClaw Volume (openclaw.json, cronjobs.json, sessions)]] - concept - docs/diagrams/images/diagram-10-data-dictionary.svg
+- [[SQLite DBs (Backed by SQLite)]] - concept - docs/diagrams/images/diagram-10-data-dictionary.svg
+- [[approval_items table (pending, approved, rejected, expired; 1h TTL)]] - concept - docs/diagrams/images/diagram-10-data-dictionary.svg
+- [[ledger table (indexed on timestamp, source, forwarded_to)]] - concept - docs/diagrams/images/diagram-10-data-dictionary.svg
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,10 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 922]]
-- 3 edges to [[_COMMUNITY_Community 361]]
+- 1 edge to [[_COMMUNITY_Community 376]]
 
 ## Top bridge nodes
-- [[_is_stale_callback_error()]] - degree 6, connects to 2 communities
-- [[_is_stale_edit_error()]] - degree 6, connects to 2 communities
-- [[telegram_egress_notify.py]] - degree 4, connects to 1 community
+- [[AgentShroud Data Assets (root)]] - degree 4, connects to 1 community

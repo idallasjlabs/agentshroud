@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Available MCP Servers_2]] - `contains` [EXTRACTED]
-- [[MCP Troubleshooting_2]] - `contains` [EXTRACTED]
+- [[MCP Troubleshooting_1]] - `contains` [EXTRACTED]
 - [[Role_92]] - `contains` [EXTRACTED]
 - [[SKILL_161]] - `contains` [EXTRACTED]
 

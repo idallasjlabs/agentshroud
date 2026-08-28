@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/session_security.py.md"
 type: "document"
-community: "Community 539"
+community: "Community 537"
 location: "L40"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_539
+  - community/Community_537
 ---
 
 # Function Details
@@ -22,4 +22,4 @@ tags:
 - [[SessionManager.validate_session(session_id, ip, user_agent)]] - `contains` [EXTRACTED]
 - [[session_security.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_539
+#graphify/document #graphify/EXTRACTED #community/Community_537

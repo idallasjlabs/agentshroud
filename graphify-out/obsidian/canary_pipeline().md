@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_canary.py"
 type: "code"
-community: "Community 870"
+community: "PII Sanitizer & E2E Tests"
 location: "L26"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_870
+  - community/PII_Sanitizer__E2E_Tests
 ---
 
 # canary_pipeline()
@@ -19,4 +19,4 @@ tags:
 - [[TrustManager_1]] - `calls` [EXTRACTED]
 - [[test_canary.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_870
+#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer__E2E_Tests

@@ -1,23 +1,24 @@
 ---
 type: community
-members: 10
+cohesion: 0.42
+members: 9
 ---
 
 # Community 916
 
-**Members:** 10 nodes
+**Cohesion:** 0.42 - moderately connected
+**Members:** 9 nodes
 
 ## Members
-- [[.store()]] - code - gateway/tests/test_audit_export.py
-- [[.test_event_to_dict_includes_bot_id()]] - code - gateway/tests/test_audit_export.py
-- [[.test_log_event_default_bot_id_is_openclaw()]] - code - gateway/tests/test_audit_export.py
-- [[.test_log_event_stores_bot_id()]] - code - gateway/tests/test_audit_export.py
-- [[.test_migration_adds_bot_id_column()]] - code - gateway/tests/test_audit_export.py
-- [[.test_query_events_bot_filter()]] - code - gateway/tests/test_audit_export.py
-- [[.test_query_events_bot_filter_combined_with_severity()]] - code - gateway/tests/test_audit_export.py
-- [[Opening a pre-migration DB (no bot_id column) should auto-migrate.]] - rationale - gateway/tests/test_audit_export.py
-- [[TestAuditStoreBotId]] - code - gateway/tests/test_audit_export.py
-- [[Verify per-bot filtering in AuditStore (v1.1.0 multi-bot support).]] - rationale - gateway/tests/test_audit_export.py
+- [[_real_err()]] - code - gateway/tests/test_egress_callback_stale.py
+- [[_stale_callback_err()]] - code - gateway/tests/test_egress_callback_stale.py
+- [[_stale_edit_err()]] - code - gateway/tests/test_egress_callback_stale.py
+- [[test_answer_callback_real_error_still_logs_error()]] - code - gateway/tests/test_egress_callback_stale.py
+- [[test_answer_callback_stale_logs_debug_not_error()]] - code - gateway/tests/test_egress_callback_stale.py
+- [[test_edit_decision_message_real_error_still_logs_error()]] - code - gateway/tests/test_egress_callback_stale.py
+- [[test_edit_decision_message_stale_logs_debug_not_error()]] - code - gateway/tests/test_egress_callback_stale.py
+- [[test_egress_callback_stale.py]] - code - gateway/tests/test_egress_callback_stale.py
+- [[test_stale_detectors()]] - code - gateway/tests/test_egress_callback_stale.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,11 +28,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 89]]
-- 3 edges to [[_COMMUNITY_Community 232]]
-- 1 edge to [[_COMMUNITY_Community 9]]
+- 5 edges to [[_COMMUNITY_Community 363]]
+- 4 edges to [[_COMMUNITY_Community 1095]]
 
 ## Top bridge nodes
-- [[TestAuditStoreBotId]] - degree 13, connects to 3 communities
-- [[.test_migration_adds_bot_id_column()]] - degree 3, connects to 1 community
-- [[.store()]] - degree 2, connects to 1 community
+- [[test_egress_callback_stale.py]] - degree 11, connects to 2 communities
+- [[test_stale_detectors()]] - degree 6, connects to 1 community
+- [[test_answer_callback_real_error_still_logs_error()]] - degree 3, connects to 1 community
+- [[test_answer_callback_stale_logs_debug_not_error()]] - degree 3, connects to 1 community
+- [[test_edit_decision_message_real_error_still_logs_error()]] - degree 3, connects to 1 community

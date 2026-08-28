@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 1.00
 members: 2
 ---
 
 # Community 1449
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[SKILL_101]] - document - docker/config/hermes/skills/i-observability/SKILL.md
-- [[Skill observability_1]] - document - docker/config/hermes/skills/i-observability/SKILL.md
+- [[Container Architecture (gateway + bot hardening)]] - concept - docs/architecture/agentic-os.md
+- [[asb CLI — Deployment Tool]] - code - docs/architecture/agentic-os.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1190
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_50]] - document - docker/config/hermes/skills/i-icloud/README.md
-- [[README_55]] - document - docker/config/hermes/skills/i-icloud/README.md
-- [[Related Skills_53]] - document - docker/config/hermes/skills/i-icloud/README.md
-- [[Usage_56]] - document - docker/config/hermes/skills/i-icloud/README.md
-- [[iCloud Data Manager (ICLOUD)_1]] - document - docker/config/hermes/skills/i-icloud/README.md
+- [[MCP Doctor (MCPM-DOCTOR)_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/README.md
+- [[Purpose_55]] - document - docker/config/hermes/skills/i-mcpm-doctor/README.md
+- [[README_60]] - document - docker/config/hermes/skills/i-mcpm-doctor/README.md
+- [[Related Skills_60]] - document - docker/config/hermes/skills/i-mcpm-doctor/README.md
+- [[Usage_62]] - document - docker/config/hermes/skills/i-mcpm-doctor/README.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "Community 75"
+community: "Progressive Trust"
 location: "L206"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_75
+  - community/Progressive_Trust
 ---
 
 # ToolACLEnforcer
@@ -84,4 +84,4 @@ tags:
 - [[test_tool_acl.py]] - `imports` [EXTRACTED]
 - [[tool_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_75
+#graphify/code #graphify/INFERRED #community/Progressive_Trust

@@ -1,12 +1,12 @@
 ---
 source_file: "branding/QUICK-REFERENCE.md"
 type: "document"
-community: "Community 661"
+community: "Community 790"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_661
+  - community/Community_790
 ---
 
 # QUICK-REFERENCE.md
@@ -17,4 +17,4 @@ tags:
 - [[INDEX]] - `references` [EXTRACTED]
 - [[README_38]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_661
+#graphify/document #graphify/EXTRACTED #community/Community_790

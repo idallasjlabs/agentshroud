@@ -1,20 +1,22 @@
 ---
 type: community
+cohesion: 0.29
 members: 7
 ---
 
 # Community 1035
 
+**Cohesion:** 0.29 - loosely connected
 **Members:** 7 nodes
 
 ## Members
-- [[AgentShroud Text Interfaces]] - document - src/interfaces/README.md
-- [[Control Center]] - document - src/interfaces/README.md
-- [[Controls]] - document - src/interfaces/README.md
-- [[Future Interfaces]] - document - src/interfaces/README.md
-- [[README_133]] - document - src/interfaces/README.md
-- [[Usage_132]] - document - src/interfaces/README.md
-- [[What it Shows]] - document - src/interfaces/README.md
+- [[1Password credential store]] - concept - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[calendar.js — iCloud Calendar Management]] - code - docker/config/hermes/skills/i-icloud/scripts/calendar.js
+- [[i-icloud README — iCloud Data Manager (ICLOUD)]] - document - docker/config/hermes/skills/i-icloud/README.md
+- [[i-icloud SKILL — iCloud Services]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[scriptscontacts.js]] - concept - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[scriptsmail.js]] - concept - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[scriptsnotes.js]] - concept - docker/config/hermes/skills/i-icloud/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

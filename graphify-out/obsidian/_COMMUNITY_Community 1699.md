@@ -1,14 +1,16 @@
 ---
 type: community
+cohesion: 1.00
 members: 1
 ---
 
 # Community 1699
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[Feature Request Issue Template]] - document - .github/ISSUE_TEMPLATE/feature_request.yml
+- [[dockerQUICKSTART.md — 5-minute stack launch guide]] - document - docker/QUICKSTART.md
 
 ## Live Query (requires Dataview plugin)
 

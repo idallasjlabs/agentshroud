@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "Community 512"
+community: "Community 771"
 location: "L1000"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_512
+  - community/Community_771
 ---
 
 # _score_supply_chain()
@@ -22,4 +22,4 @@ tags:
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 - [[test_scanner_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_512
+#graphify/code #graphify/EXTRACTED #community/Community_771

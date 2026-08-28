@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "Community 14"
+community: "Security Audit & Drift Detection"
 location: "L603"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_14
+  - community/Security_Audit__Drift_Detection
 ---
 
 # TestNetworkSecurity
@@ -59,4 +59,4 @@ tags:
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_audit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_14
+#graphify/code #graphify/INFERRED #community/Security_Audit__Drift_Detection

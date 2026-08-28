@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "document"
-community: "Community 274"
+community: "Community 158"
 location: "L309"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_274
+  - community/Community_158
 ---
 
 # IX-B. STPA-Sec as Applied to AI Agent Systems
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[IX. Discussion]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_274
+#graphify/document #graphify/EXTRACTED #community/Community_158

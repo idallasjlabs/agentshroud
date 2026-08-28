@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1283
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[1Password Integration (Optional)]] - document - docs/operations/deployment-procedure.md
-- [[Network Requirements]] - document - docs/operations/deployment-procedure.md
-- [[Prerequisites_3]] - document - docs/operations/deployment-procedure.md
-- [[Software Dependencies]] - document - docs/operations/deployment-procedure.md
-- [[System Requirements]] - document - docs/operations/deployment-procedure.md
+- [[.test_collaborator_empty_text_with_caption_payload_is_normalized_json()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_collaborator_empty_text_with_content_payload_is_normalized_json()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_collaborator_empty_text_with_draft_payload_is_normalized_json()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_collaborator_empty_text_with_message_payload_is_normalized_json()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Empty text field must not bypass filtering when caption contains tool payload.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,7 +24,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 91]]
+- 4 edges to [[_COMMUNITY_Community 93]]
+- 4 edges to [[_COMMUNITY_Community 80]]
+- 4 edges to [[_COMMUNITY_Community 96]]
 
 ## Top bridge nodes
-- [[Prerequisites_3]] - degree 5, connects to 1 community
+- [[.test_collaborator_empty_text_with_caption_payload_is_normalized_json()]] - degree 4, connects to 3 communities
+- [[.test_collaborator_empty_text_with_content_payload_is_normalized_json()]] - degree 4, connects to 3 communities
+- [[.test_collaborator_empty_text_with_draft_payload_is_normalized_json()]] - degree 4, connects to 3 communities
+- [[.test_collaborator_empty_text_with_message_payload_is_normalized_json()]] - degree 4, connects to 3 communities

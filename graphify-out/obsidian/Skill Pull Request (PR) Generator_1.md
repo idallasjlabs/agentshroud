@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-pr/SKILL.md"
 type: "document"
-community: "Community 896"
+community: "Community 891"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_896
+  - community/Community_891
 ---
 
 # Skill: Pull Request (PR) Generator
@@ -18,4 +18,4 @@ tags:
 - [[Role_63]] - `contains` [EXTRACTED]
 - [[SKILL_106]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_896
+#graphify/document #graphify/EXTRACTED #community/Community_891

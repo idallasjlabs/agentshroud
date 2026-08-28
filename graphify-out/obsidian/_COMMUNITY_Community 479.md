@@ -1,26 +1,34 @@
 ---
 type: community
-members: 13
+cohesion: 0.11
+members: 19
 ---
 
 # Community 479
 
-**Members:** 13 nodes
+**Cohesion:** 0.11 - loosely connected
+**Members:** 19 nodes
 
 ## Members
-- [[Competitive Intelligence Protocol]] - document - docker/config/hermes/agents/openclaw-identity.md
-- [[Competitive Intelligence Protocol_1]] - document - docker/config/openclaw/agents/openclaw-identity.md
-- [[IDENTITY.md - Who I Am]] - document - docker/config/hermes/agents/openclaw-identity.md
-- [[IDENTITY.md - Who I Am_1]] - document - docker/config/openclaw/agents/openclaw-identity.md
-- [[My Owner]] - document - docker/config/hermes/agents/openclaw-identity.md
-- [[My Owner_1]] - document - docker/config/openclaw/agents/openclaw-identity.md
-- [[My Responsibilities]] - document - docker/config/hermes/agents/openclaw-identity.md
-- [[My Responsibilities_1]] - document - docker/config/openclaw/agents/openclaw-identity.md
-- [[My Role]] - document - docker/config/hermes/agents/openclaw-identity.md
-- [[My Role_1]] - document - docker/config/openclaw/agents/openclaw-identity.md
-- [[Responsibilities]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
-- [[openclaw-identity]] - document - docker/config/hermes/agents/openclaw-identity.md
-- [[openclaw-identity_1]] - document - docker/config/openclaw/agents/openclaw-identity.md
+- [[CVE Mitigations]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Configuration_9]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Early Return on Block]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Fail-Open ClamAV]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Guard Presence and Startup Behavior]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Important Behaviors]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Inbound (`process_inbound`)]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Key Thresholds]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Monitor vs. Enforce Mode]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Outbound (`process_outbound`)]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Overview_23]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Owner Exemption]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Owner Exemption — Logging Guarantee]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Pipeline Stages]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Related_19]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Stats Counter]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[`AuditChain.append_block()` — Guaranteed Persistence Guarantee]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[pipeline.py — Security Pipeline]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[pipeline.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,9 +38,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 315]]
-- 1 edge to [[_COMMUNITY_Community 355]]
+- 1 edge to [[_COMMUNITY_Community 741]]
 
 ## Top bridge nodes
-- [[Competitive Intelligence Protocol_1]] - degree 3, connects to 1 community
-- [[Responsibilities]] - degree 2, connects to 1 community
+- [[pipeline.py — Security Pipeline]] - degree 8, connects to 1 community

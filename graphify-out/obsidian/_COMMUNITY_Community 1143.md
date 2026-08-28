@@ -1,19 +1,20 @@
 ---
 type: community
-members: 6
+cohesion: 0.40
+members: 5
 ---
 
 # Community 1143
 
-**Members:** 6 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[Key Output]] - document - docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md
-- [[Purpose_175]] - document - docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md
-- [[Related Notes_15]] - document - docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md
-- [[Responsibilities_58]] - document - docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md
-- [[proxy_status.py_2]] - document - docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md
-- [[proxy_status.py_1]] - document - docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md
+- [[Browser — Secure Browser Automation]] - document - .agents/skills/i-browser/README.md
+- [[Purpose_4]] - document - .agents/skills/i-browser/README.md
+- [[README_4]] - document - .agents/skills/i-browser/README.md
+- [[Related Skills_4]] - document - .agents/skills/i-browser/README.md
+- [[Usage_5]] - document - .agents/skills/i-browser/README.md
 
 ## Live Query (requires Dataview plugin)
 

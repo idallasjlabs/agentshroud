@@ -1,22 +1,24 @@
 ---
 type: community
+cohesion: 0.22
 members: 9
 ---
 
 # Community 907
 
+**Cohesion:** 0.22 - loosely connected
 **Members:** 9 nodes
 
 ## Members
-- [[AgentShroud Bot (@agentshroud_bot) — Autonomous Agent (Prod)]] - concept - docs/diagrams/images/diagram-21-team-structure.svg
-- [[ChatGPT Codex — QA  Support Engineer  Tertiary Developer]] - concept - docs/diagrams/images/diagram-21-team-structure.svg
-- [[ChatGPTCodex — TertiaryQA Support Engineer (cannot direct Claude)]] - image - docs/diagrams/images/diagram-21-team-structure.png
-- [[Claude Code (claude-sonnet-4-6) — Lead Engineer  Primary Developer]] - concept - docs/diagrams/images/diagram-21-team-structure.svg
-- [[Gemini CLI — SecondaryTest Engineer (cannot direct Claude)]] - image - docs/diagrams/images/diagram-21-team-structure.png
-- [[Gemini CLI — Test Engineer  Secondary Developer]] - concept - docs/diagrams/images/diagram-21-team-structure.svg
-- [[Isaiah Jefferson (Product Owner  Architect  PM  Operator)]] - concept - docs/diagrams/images/diagram-21-team-structure.svg
-- [[Isaiah Jefferson — Product OwnerArchitectPMOperator]] - image - docs/diagrams/images/diagram-21-team-structure.png
-- [[TeamAgent Role Structure Diagram]] - image - docs/diagrams/images/diagram-21-team-structure.png
+- [[1. Phone Number (Separate from Main)]] - document - docs/reference/PREREQUISITES.md
+- [[1Password (Optional — Teams  Shared Credentials)]] - document - docs/reference/PREREQUISITES.md
+- [[2. Gmail Account (Dedicated for Bot)]] - document - docs/reference/PREREQUISITES.md
+- [[3. Telegram Account (Bot Communication)]] - document - docs/reference/PREREQUISITES.md
+- [[4. Secrets Backend (Credential Management)]] - document - docs/reference/PREREQUISITES.md
+- [[5. OpenAI Account (LLM API)]] - document - docs/reference/PREREQUISITES.md
+- [[6. Anthropic Account (Claude API)]] - document - docs/reference/PREREQUISITES.md
+- [[macOS Keychain (Default)]] - document - docs/reference/PREREQUISITES.md
+- [[📱 Required Accounts & Services]] - document - docs/reference/PREREQUISITES.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,3 +26,9 @@ members: 9
 TABLE source_file, type FROM #community/Community_907
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 328]]
+
+## Top bridge nodes
+- [[📱 Required Accounts & Services]] - degree 7, connects to 1 community

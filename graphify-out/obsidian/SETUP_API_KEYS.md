@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/SETUP_API_KEYS.md"
 type: "document"
-community: "Community 371"
+community: "Community 377"
 location: "L1"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Community_371
+  - community/Community_377
 ---
 
 # SETUP_API_KEYS.md
@@ -18,4 +18,4 @@ tags:
 - [[TELEGRAM_SETUP]] - `conceptually_related_to` [INFERRED]
 - [[VAULT-SHARING-INSTRUCTIONS]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Community_371
+#graphify/document #graphify/INFERRED #community/Community_377

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "Community 13"
+community: "Community 25"
 location: "L268"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_13
+  - community/Community_25
 ---
 
 # Path
@@ -18,4 +18,4 @@ tags:
 - [[ModeRequest]] - `uses` [INFERRED]
 - [[SecurityPipeline]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_13
+#graphify/code #graphify/INFERRED #community/Community_25

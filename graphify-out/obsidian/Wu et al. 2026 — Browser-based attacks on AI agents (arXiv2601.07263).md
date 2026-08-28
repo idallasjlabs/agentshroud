@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/browser_security.py"
 type: "paper"
-community: "Community 6"
+community: "Memory Lifecycle & Egress Filtering"
 tags:
   - graphify/paper
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/Memory_Lifecycle__Egress_Filtering
 ---
 
 # Wu et al. 2026 — Browser-based attacks on AI agents (arXiv:2601.07263)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[BrowserSecurityGuard]] - `cites` [EXTRACTED]
 
-#graphify/paper #graphify/EXTRACTED #community/Community_6
+#graphify/paper #graphify/EXTRACTED #community/Memory_Lifecycle__Egress_Filtering

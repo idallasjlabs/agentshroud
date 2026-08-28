@@ -1,17 +1,19 @@
 ---
 type: community
+cohesion: 0.50
 members: 4
 ---
 
 # Community 1329
 
+**Cohesion:** 0.50 - moderately connected
 **Members:** 4 nodes
 
 ## Members
-- [[.test_proxy_request_suppresses_starting_notice_emoji_variants()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_proxy_request_suppresses_startup_notice_emoji_variants()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Starting notice dedupe should tolerate emoji variation drift.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Startup notice dedupe should tolerate emoji variation drift.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[2. Security Value Audit]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[⚠️ Partial Value  Needs Hardening]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[✅ Genuine Security Value]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[🚫 Security Theater]] - document - docs/planning/reviews/phase-review-2026-02-23.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,8 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_Community 3]]
+- 1 edge to [[_COMMUNITY_Community 133]]
 
 ## Top bridge nodes
-- [[.test_proxy_request_suppresses_startup_notice_emoji_variants()]] - degree 5, connects to 1 community
-- [[.test_proxy_request_suppresses_starting_notice_emoji_variants()]] - degree 4, connects to 1 community
+- [[2. Security Value Audit]] - degree 4, connects to 1 community

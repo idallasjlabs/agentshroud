@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "Community 104"
+community: "Community 81"
 location: "L175"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_104
+  - community/Community_81
 ---
 
 # A2APolicyConfig
@@ -23,8 +23,8 @@ tags:
 - [[A2APolicyEngine_3]] - `uses` [INFERRED]
 - [[A2AProxy_1]] - `uses` [INFERRED]
 - [[Declarative A2A security policy.      Loaded from the ``a2a_policy`` section of]] - `rationale_for` [EXTRACTED]
-- [[Request_7]] - `uses` [INFERRED]
-- [[Response]] - `uses` [INFERRED]
+- [[Request_8]] - `uses` [INFERRED]
+- [[Response_1]] - `uses` [INFERRED]
 - [[TestDefaultA2APolicyIsFailClosed]] - `uses` [INFERRED]
 - [[TrustManager_2]] - `uses` [INFERRED]
 - [[_Event]] - `uses` [INFERRED]
@@ -40,4 +40,4 @@ tags:
 - [[test_a2a_proxy.py]] - `imports` [EXTRACTED]
 - [[test_a2a_trust_scoring.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_104
+#graphify/code #graphify/INFERRED #community/Community_81

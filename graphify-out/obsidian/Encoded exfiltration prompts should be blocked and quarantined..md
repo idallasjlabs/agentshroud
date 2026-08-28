@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Community 1359"
+community: "Community 1366"
 location: "L4052"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1359
+  - community/Community_1366
 ---
 
 # Encoded exfiltration prompts should be blocked and quarantined.
@@ -15,4 +15,4 @@ tags:
 - [[.test_collaborator_encoded_exfil_request_is_blocked_and_quarantined()]] - `rationale_for` [EXTRACTED]
 - [[.test_collaborator_plugin_discovery_request_is_blocked_and_quarantined()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1359
+#graphify/rationale #graphify/EXTRACTED #community/Community_1366

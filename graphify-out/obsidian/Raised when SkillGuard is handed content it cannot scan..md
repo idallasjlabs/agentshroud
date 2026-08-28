@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "rationale"
-community: "Community 152"
+community: "Community 259"
 location: "L73"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_152
+  - community/Community_259
 ---
 
 # Raised when SkillGuard is handed content it cannot scan.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SkillScanError]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_152
+#graphify/rationale #graphify/EXTRACTED #community/Community_259

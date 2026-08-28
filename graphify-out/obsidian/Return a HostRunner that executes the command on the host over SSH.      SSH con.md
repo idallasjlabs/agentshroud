@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/multi_host_test.py"
 type: "rationale"
-community: "Community 1102"
+community: "Community 1098"
 location: "L232"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1102
+  - community/Community_1098
 ---
 
 # Return a HostRunner that executes the command on the host over SSH.      SSH con
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ssh_runner()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1102
+#graphify/rationale #graphify/EXTRACTED #community/Community_1098

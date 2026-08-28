@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "Community 56"
+community: "Session Management"
 location: "L478"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_56
+  - community/Session_Management
 ---
 
 # Blocked multi-turn sessions should not disclose scoring details.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_multi_turn_block_reason_hides_score()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_56
+#graphify/rationale #graphify/EXTRACTED #community/Session_Management

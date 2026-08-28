@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multilingual_injection.py"
 type: "rationale"
-community: "Community 196"
+community: "Community 192"
 location: "L214"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_196
+  - community/Community_192
 ---
 
 # Test that pattern matching is case insensitive where applicable.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_case_insensitive_detection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_196
+#graphify/rationale #graphify/EXTRACTED #community/Community_192

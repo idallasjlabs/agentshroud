@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/05-credential-isolation.md"
 type: "document"
-community: "Community 580"
+community: "Community 575"
 location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_580
+  - community/Community_575
 ---
 
 # Remediation
@@ -22,4 +22,4 @@ tags:
 - [[Step 7 Add credential leak detection to egress filtering]] - `contains` [EXTRACTED]
 - [[Step 8 Verify no credentials remain in agent container]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_580
+#graphify/document #graphify/EXTRACTED #community/Community_575

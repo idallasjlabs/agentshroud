@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "Community 952"
+community: "Community 917"
 location: "L118"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_952
+  - community/Community_917
 ---
 
 # TestInjectionDetection
@@ -35,4 +35,4 @@ tags:
 - [[ThreatLevel]] - `uses` [INFERRED]
 - [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_952
+#graphify/code #graphify/INFERRED #community/Community_917

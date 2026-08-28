@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "Community 42"
+community: "Community 17"
 location: "L4943"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_42
+  - community/Community_17
 ---
 
 # TestTrackerGetHealth
@@ -21,4 +21,4 @@ tags:
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_42
+#graphify/code #graphify/INFERRED #community/Community_17

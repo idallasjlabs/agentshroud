@@ -1,20 +1,22 @@
 ---
 type: community
+cohesion: 0.29
 members: 7
 ---
 
 # Community 1038
 
+**Cohesion:** 0.29 - loosely connected
 **Members:** 7 nodes
 
 ## Members
-- [[MCP AWS Profile Configuration Skill]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[MCP Auth Reset Skill]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[MCP Tools Usage Skill]] - document - docker/config/openclaw/skills/i-mcpm/SKILL.md
-- [[i-mcpm README (MCP Tools Usage)]] - document - docker/config/openclaw/skills/i-mcpm/README.md
-- [[i-mcpm-auth-reset README]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/README.md
-- [[i-mcpm-aws-profile README]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/README.md
-- [[mcpm-doctor Skill (referenced, sibling dir)]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
+- [[Alert  Issue Detected]] - concept - docs/diagrams/images/diagram-18-runbook.svg
+- [[Bot container not healthy or crash-looping]] - concept - docs/diagrams/images/diagram-18-runbook.svg
+- [[Bot not responding on Telegram_1]] - concept - docs/diagrams/images/diagram-18-runbook.svg
+- [[Context limit exceeded, bot resets mid-conversation]] - concept - docs/diagrams/images/diagram-18-runbook.svg
+- [[Kill switch gateway kill_switch_enabled=true (freezeshutdowndisconnect)]] - concept - docs/diagrams/images/diagram-18-runbook.svg
+- [[Security alert (blocked domain, HIGH MCP threat, canary token triggered)]] - concept - docs/diagrams/images/diagram-18-runbook.svg
+- [[What is the symptom]] - concept - docs/diagrams/images/diagram-18-runbook.svg
 
 ## Live Query (requires Dataview plugin)
 

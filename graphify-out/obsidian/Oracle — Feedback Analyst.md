@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-oracle/README.md"
 type: "document"
-community: "Community 1162"
+community: "Community 1157"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1162
+  - community/Community_1157
 ---
 
 # Oracle — Feedback Analyst
@@ -17,4 +17,4 @@ tags:
 - [[Related Skills_24]] - `contains` [EXTRACTED]
 - [[Usage_24]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1162
+#graphify/document #graphify/EXTRACTED #community/Community_1157

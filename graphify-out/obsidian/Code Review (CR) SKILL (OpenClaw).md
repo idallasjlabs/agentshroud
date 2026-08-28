@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-cr/SKILL.md"
 type: "document"
-community: "Community 489"
+community: "Community 391"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_489
+  - community/Community_391
 ---
 
 # Code Review (CR) SKILL (OpenClaw)
@@ -16,6 +16,6 @@ tags:
 - [[Code Review (CR) README (OpenClaw)]] - `references` [EXTRACTED]
 - [[Create PR with Pre-Flight Audit (CRPR) SKILL (OpenClaw)]] - `conceptually_related_to` [INFERRED]
 - [[GIT-GUARD Skill Definition]] - `references` [EXTRACTED]
-- [[GSDE&G Development Master Checklist README]] - `references` [EXTRACTED]
+- [[GSDE&G Development Master Checklist Skill]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_489
+#graphify/document #graphify/EXTRACTED #community/Community_391

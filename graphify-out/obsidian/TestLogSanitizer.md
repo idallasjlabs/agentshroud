@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_log_sanitizer.py"
 type: "code"
-community: "Community 480"
+community: "Community 644"
 location: "L14"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_480
+  - community/Community_644
 ---
 
 # TestLogSanitizer
@@ -30,4 +30,4 @@ tags:
 - [[LogSanitizer_1]] - `uses` [INFERRED]
 - [[test_log_sanitizer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_480
+#graphify/code #graphify/EXTRACTED #community/Community_644

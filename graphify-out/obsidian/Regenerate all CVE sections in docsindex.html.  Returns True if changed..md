@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/generate-cve-page.py"
 type: "rationale"
-community: "Community 990"
+community: "Community 380"
 location: "L395"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_990
+  - community/Community_380
 ---
 
 # Regenerate all CVE sections in docs/index.html.  Returns True if changed.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[generate()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_990
+#graphify/rationale #graphify/EXTRACTED #community/Community_380

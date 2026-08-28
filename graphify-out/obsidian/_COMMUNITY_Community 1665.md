@@ -1,14 +1,17 @@
 ---
 type: community
-members: 1
+cohesion: 1.00
+members: 2
 ---
 
 # Community 1665
 
-**Members:** 1 nodes
+**Cohesion:** 1.00 - tightly connected
+**Members:** 2 nodes
 
 ## Members
-- [[Browser — Secure Browser Automation README]] - document - .agents/skills/i-browser/README.md
+- [[Release Workflow]] - code - .github/workflows/release.yml
+- [[TagVersion Sync Verification]] - rationale - .github/workflows/release.yml
 
 ## Live Query (requires Dataview plugin)
 

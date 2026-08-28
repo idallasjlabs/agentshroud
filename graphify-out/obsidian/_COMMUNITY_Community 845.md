@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.20
 members: 10
 ---
 
 # Community 845
 
+**Cohesion:** 0.20 - loosely connected
 **Members:** 10 nodes
 
 ## Members
@@ -14,7 +16,7 @@ members: 10
 - [[Authentication Issues_3]] - document - docker/config/openclaw/skills/i-mcpm/SKILL.md
 - [[Available MCP Servers_2]] - document - docker/config/openclaw/skills/i-mcpm/SKILL.md
 - [[Common Errors_2]] - document - docker/config/openclaw/skills/i-mcpm/SKILL.md
-- [[MCP Troubleshooting_2]] - document - docker/config/openclaw/skills/i-mcpm/SKILL.md
+- [[MCP Troubleshooting_1]] - document - docker/config/openclaw/skills/i-mcpm/SKILL.md
 - [[Role_92]] - document - docker/config/openclaw/skills/i-mcpm/SKILL.md
 - [[SKILL_161]] - document - docker/config/openclaw/skills/i-mcpm/SKILL.md
 - [[Skill MCP Tools Usage (MCP-TOOLS)_2]] - document - docker/config/openclaw/skills/i-mcpm/SKILL.md

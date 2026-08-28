@@ -1,32 +1,35 @@
 ---
 type: community
-members: 19
+cohesion: 0.15
+members: 20
 ---
 
 # Community 453
 
-**Members:** 19 nodes
+**Cohesion:** 0.15 - loosely connected
+**Members:** 20 nodes
 
 ## Members
-- [[.effective_rootless()]] - code - gateway/runtime/config.py
-- [[.test_effective_rootless_docker()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_effective_rootless_override()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_effective_rootless_podman()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_from_dict()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_from_env_defaults()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_from_env_set()]] - code - gateway/tests/test_runtime_engines.py
-- [[Configuration for container runtime selection and behavior.      Loaded from env]] - rationale - gateway/runtime/config.py
-- [[Resolve rootless setting based on runtime.]] - rationale - gateway/runtime/config.py
-- [[RuntimeConfig]] - code - gateway/runtime/config.py
-- [[TestRuntimeConfig]] - code - gateway/tests/test_runtime_engines.py
-- [[__init__.py_8]] - code - gateway/runtime/__init__.py
-- [[apple_engine.py]] - code - gateway/runtime/apple_engine.py
-- [[compose_generator.py]] - code - gateway/runtime/compose_generator.py
-- [[config.py_1]] - code - gateway/runtime/config.py
-- [[docker_engine.py]] - code - gateway/runtime/docker_engine.py
-- [[engine.py]] - code - gateway/runtime/engine.py
-- [[podman_engine.py]] - code - gateway/runtime/podman_engine.py
-- [[security.py]] - code - gateway/runtime/security.py
+- [[.test_get_features_apple()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_get_features_docker()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_get_features_podman()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_missing_features()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_security_comparison()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_security_options_apple()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_security_options_docker()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_security_options_podman()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_security_options_unknown()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_warn_missing()]] - code - gateway/tests/test_runtime_engines.py
+- [[A security feature with runtime support info.]] - rationale - gateway/runtime/security.py
+- [[Return features available for a given runtime.]] - rationale - gateway/runtime/security.py
+- [[Return recommended security CLI options for a runtime.]] - rationale - gateway/runtime/security.py
+- [[SecurityFeature]] - code - gateway/runtime/security.py
+- [[TestSecurityFeatures]] - code - gateway/tests/test_runtime_engines.py
+- [[Validate runtime name to prevent attribute access injection.]] - rationale - gateway/runtime/security.py
+- [[_validate_runtime()]] - code - gateway/runtime/security.py
+- [[get_features_for_runtime()]] - code - gateway/runtime/security.py
+- [[get_missing_features()]] - code - gateway/runtime/security.py
+- [[get_security_options()]] - code - gateway/runtime/security.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,21 +39,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_Community 197]]
-- 6 edges to [[_COMMUNITY_Community 198]]
-- 6 edges to [[_COMMUNITY_Community 330]]
-- 4 edges to [[_COMMUNITY_Community 647]]
-- 3 edges to [[_COMMUNITY_Community 358]]
-- 3 edges to [[_COMMUNITY_Community 354]]
-- 3 edges to [[_COMMUNITY_Community 220]]
-- 3 edges to [[_COMMUNITY_Community 45]]
-- 2 edges to [[_COMMUNITY_Community 439]]
-- 2 edges to [[_COMMUNITY_Community 528]]
-- 2 edges to [[_COMMUNITY_Community 557]]
+- 6 edges to [[_COMMUNITY_Community 329]]
+- 6 edges to [[_COMMUNITY_Community 348]]
+- 4 edges to [[_COMMUNITY_Community 37]]
+- 1 edge to [[_COMMUNITY_Community 325]]
+- 1 edge to [[_COMMUNITY_Community 320]]
+- 1 edge to [[_COMMUNITY_Community 207]]
 
 ## Top bridge nodes
-- [[__init__.py_8]] - degree 10, connects to 6 communities
-- [[TestRuntimeConfig]] - degree 12, connects to 5 communities
-- [[security.py]] - degree 13, connects to 4 communities
-- [[RuntimeConfig]] - degree 13, connects to 3 communities
-- [[docker_engine.py]] - degree 8, connects to 3 communities
+- [[TestSecurityFeatures]] - degree 16, connects to 5 communities
+- [[get_missing_features()]] - degree 7, connects to 3 communities
+- [[get_security_options()]] - degree 9, connects to 2 communities
+- [[get_features_for_runtime()]] - degree 8, connects to 2 communities
+- [[_validate_runtime()]] - degree 6, connects to 2 communities

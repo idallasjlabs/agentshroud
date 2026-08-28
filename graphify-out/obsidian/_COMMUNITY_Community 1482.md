@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 1.00
 members: 2
 ---
 
 # Community 1482
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[SDLC Governance]] - document - .agents/skills/i-sdlc/SKILL.md
-- [[Scrum Ceremony Facilitation]] - document - .agents/skills/i-scrum/SKILL.md
+- [[SKILL_155]] - document - docker/config/openclaw/skills/i-kanban/SKILL.md
+- [[Skill kanban_2]] - document - docker/config/openclaw/skills/i-kanban/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

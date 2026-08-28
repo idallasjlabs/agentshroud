@@ -1,16 +1,18 @@
 ---
 type: community
+cohesion: 1.00
 members: 3
 ---
 
 # Community 1398
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 3 nodes
 
 ## Members
-- [[ControlCenter class — TUI dashboard controller]] - code - src/interfaces/text_control_center.py
-- [[draw_dashboard() — renders main TUI dashboard screen]] - code - src/interfaces/text_control_center.py
-- [[make_api_request() — authenticated gateway API call helper]] - code - src/interfaces/text_control_center.py
+- [[_log()_1]] - code - docker/bots/hermes/heartbeat.sh
+- [[heartbeat.sh]] - code - docker/bots/hermes/heartbeat.sh
+- [[heartbeat.sh script]] - code - docker/bots/hermes/heartbeat.sh
 
 ## Live Query (requires Dataview plugin)
 

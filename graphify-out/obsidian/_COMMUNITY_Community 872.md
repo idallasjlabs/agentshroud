@@ -1,23 +1,25 @@
 ---
 type: community
+cohesion: 0.20
 members: 10
 ---
 
 # Community 872
 
+**Cohesion:** 0.20 - loosely connected
 **Members:** 10 nodes
 
 ## Members
-- [[Cross-Turn Correlation Capability]] - concept - docs/papers/attack-teardowns-rovoblast-cross-turn.md
-- [[EgressFilter.check()]] - code - gateway/security/egress_filter.py
-- [[OpenAI Agent Message-Board Coordination Attack]] - concept - docs/papers/attack-teardowns-rovoblast-cross-turn.md
-- [[PromptArmor Atlassian Rovo Content-Borne Injection Disclosure]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
-- [[RovoBlast Attack (Atlassian Rovo AI)]] - concept - docs/papers/attack-teardowns-rovoblast-cross-turn.md
-- [[UK AISI Rogue Agent Actions Findings]] - concept - docs/papers/attack-teardowns-rovoblast-cross-turn.md
-- [[Varonis RovoBlast How One Click Triggered Atlassian's AI Assistant to Leak Data]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
-- [[context_guard.py Provenance Tagging (ContextSegment)]] - code - gateway/security/context_guard.py
-- [[egress_filter.py_is_private_ip SSRF Encoding-Bypass Bug]] - rationale - gateway/security/egress_filter.py
-- [[multi_turn_tracker.py  SubagentMonitor]] - code - gateway/security/multi_turn_tracker.py
+- [[.test_export_config_delegates_to_get()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_get_config_reads_yaml()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_get_config_when_file_missing()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_import_config_delegates_to_update()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_update_config_rejects_unknown_keys()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_update_config_round_trips_bots_key()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_update_config_without_existing_file_skips_backup()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_update_config_writes_yaml_and_backs_up()]] - code - gateway/tests/test_web_api_coverage.py
+- [[SCRUM-107 the `bots` top-level key must be allowed through PUT         apicon]] - rationale - gateway/tests/test_web_api_coverage.py
+- [[TestConfig_1]] - code - gateway/tests/test_web_api_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,10 +29,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 1001]]
-- 1 edge to [[_COMMUNITY_Community 47]]
-- 1 edge to [[_COMMUNITY_Community 6]]
+- 4 edges to [[_COMMUNITY_Community 29]]
 
 ## Top bridge nodes
-- [[RovoBlast Attack (Atlassian Rovo AI)]] - degree 7, connects to 2 communities
-- [[egress_filter.py_is_private_ip SSRF Encoding-Bypass Bug]] - degree 2, connects to 1 community
+- [[TestConfig_1]] - degree 12, connects to 1 community

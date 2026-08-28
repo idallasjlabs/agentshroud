@@ -12,6 +12,6 @@ tags:
 # "CAPTCHA detected"
 
 ## Connections
-- [[Troubleshooting_37]] - `contains` [EXTRACTED]
+- [[Troubleshooting_36]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Community_150

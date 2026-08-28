@@ -1,48 +1,25 @@
 ---
 type: community
-members: 35
+cohesion: 0.22
+members: 10
 ---
 
 # Community 862
 
-**Members:** 35 nodes
+**Cohesion:** 0.22 - loosely connected
+**Members:** 10 nodes
 
 ## Members
-- [[._emit_quarantine_event()]] - code - gateway/proxy/telegram_proxy.py
-- [[._escape_pii_placeholders()]] - code - gateway/proxy/telegram_proxy.py
-- [[._filter_outbound()_1]] - code - gateway/proxy/telegram_proxy.py
-- [[._filter_outbound_multipart()]] - code - gateway/proxy/telegram_proxy.py
-- [[._html_tags_balanced()]] - code - gateway/proxy/telegram_proxy.py
-- [[._is_owner_chat()]] - code - gateway/proxy/telegram_proxy.py
-- [[._multipart_boundary()]] - code - gateway/proxy/telegram_proxy.py
-- [[._multipart_get_field()]] - code - gateway/proxy/telegram_proxy.py
-- [[._multipart_replace_field()]] - code - gateway/proxy/telegram_proxy.py
-- [[._quarantine_outbound_block()]] - code - gateway/proxy/telegram_proxy.py
-- [[._redact_owner_ids()]] - code - gateway/proxy/telegram_proxy.py
-- [[._resolve_text_field()]] - code - gateway/proxy/telegram_proxy.py
-- [[._scan_outbound_text()]] - code - gateway/proxy/telegram_proxy.py
-- [[._set_outbound_block_cascade()]] - code - gateway/proxy/telegram_proxy.py
-- [[._strip_collaborator_html_markup()]] - code - gateway/proxy/telegram_proxy.py
-- [[._suppress_duplicate_system_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[Activate per-chat cascade window to prevent streaming-fragment leak-through.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Best-effort async event emission for quarantine actions.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Core outbound security scan shared by JSON, form, and multipart branches.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Extract a non-file text field value from a multipartform-data body.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Extract the boundary token from a multipart Content-Type header.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Filter multipartform-data outbound bodies (sendPhotosendDocument).          Te]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Filter outbound bot messages (sendMessage, etc.).]] - rationale - gateway/proxy/telegram_proxy.py
-- [[HTML-escape PII redaction placeholders so they render as literal         text in]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Persist blocked outbound messages for admin review.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Redact the owner's Telegram user ID from collaborator-bound text.          Strip]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Remove Telegram HTML formatting tags from collaborator outbound text.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Replace a non-file text field value in a multipartform-data body.          Only]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Return (field_name, text_value) for Telegram-style outbound payloads.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Return True only when every Telegram-supported HTML open tag has a matching clos]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Return True when chat_id belongs to the configured owner.          Handles both]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Strip potentially malicious markdown from tool results.      Removes     - Mark]] - rationale - gateway/security/input_normalizer.py
-- [[Suppress repeated startupshutdown system notices in short windows.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[input_normalizer.py]] - code - gateway/security/input_normalizer.py
-- [[strip_markdown_exfil()]] - code - gateway/security/input_normalizer.py
+- [[._check_encoded_content()]] - code - gateway/security/prompt_guard.py
+- [[._check_unicode_tricks()]] - code - gateway/security/prompt_guard.py
+- [[.scan()_4]] - code - gateway/security/prompt_guard.py
+- [[.scan_tool_result()_2]] - code - gateway/security/prompt_guard.py
+- [[Check for suspicious base64 content that decodes to injection attempts.]] - rationale - gateway/security/prompt_guard.py
+- [[Detect potential base64-encoded payloads in text.     Returns list of decoded st]] - rationale - gateway/security/input_normalizer.py
+- [[Detect unicode obfuscation tricks.]] - rationale - gateway/security/prompt_guard.py
+- [[Scan input text for prompt injection patterns.          Args             text]] - rationale - gateway/security/prompt_guard.py
+- [[Scan tool result content for indirect prompt injection.          Tool results (w]] - rationale - gateway/security/prompt_guard.py
+- [[detect_base64_payloads()]] - code - gateway/security/input_normalizer.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -52,20 +29,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 25 edges to [[_COMMUNITY_Community 4]]
-- 7 edges to [[_COMMUNITY_Community 93]]
-- 4 edges to [[_COMMUNITY_Community 263]]
-- 1 edge to [[_COMMUNITY_Community 374]]
-- 1 edge to [[_COMMUNITY_Community 134]]
-- 1 edge to [[_COMMUNITY_Community 9]]
-- 1 edge to [[_COMMUNITY_Community 251]]
-- 1 edge to [[_COMMUNITY_Community 116]]
-- 1 edge to [[_COMMUNITY_Community 659]]
-- 1 edge to [[_COMMUNITY_Community 16]]
+- 4 edges to [[_COMMUNITY_PII Sanitizer & E2E Tests]]
+- 2 edges to [[_COMMUNITY_Key Vault & Audit Chain]]
+- 1 edge to [[_COMMUNITY_Community 70]]
+- 1 edge to [[_COMMUNITY_Adversarial Injection Guards]]
+- 1 edge to [[_COMMUNITY_Community 30]]
 
 ## Top bridge nodes
-- [[._filter_outbound()_1]] - degree 19, connects to 3 communities
-- [[._resolve_text_field()]] - degree 7, connects to 3 communities
-- [[strip_markdown_exfil()]] - degree 7, connects to 3 communities
-- [[input_normalizer.py]] - degree 4, connects to 3 communities
-- [[._filter_outbound_multipart()]] - degree 12, connects to 2 communities
+- [[.scan()_4]] - degree 8, connects to 3 communities
+- [[detect_base64_payloads()]] - degree 5, connects to 2 communities
+- [[.scan_tool_result()_2]] - degree 4, connects to 2 communities
+- [[._check_encoded_content()]] - degree 4, connects to 1 community
+- [[._check_unicode_tricks()]] - degree 3, connects to 1 community

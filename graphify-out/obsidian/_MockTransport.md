@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_jira_dev_ticket.py"
 type: "code"
-community: "Community 163"
+community: "Community 168"
 location: "L253"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_163
+  - community/Community_168
 ---
 
 # _MockTransport
@@ -21,4 +21,4 @@ tags:
 - [[test_run_create_with_labels_and_parent()]] - `calls` [EXTRACTED]
 - [[test_run_returns_1_on_jira_rejection()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_163
+#graphify/code #graphify/EXTRACTED #community/Community_168

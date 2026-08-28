@@ -1,44 +1,46 @@
 ---
 type: community
+cohesion: 0.06
 members: 31
 ---
 
 # Community 244
 
+**Cohesion:** 0.06 - loosely connected
 **Members:** 31 nodes
 
 ## Members
-- [[Alert Prioritization Display_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[Anti-Patterns to Flag_15]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[CLI  TUI UX_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[CLI UX Rules_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[Confirmation Patterns_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[Content Organization Patterns_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[Contextual Actions_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[Core Discipline Discover → Define → Design → Validate_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[Dashboard UX_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[Data Density Rules_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[Dependencies_11]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[Drill-Down Pattern_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[Error Message Patterns_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[Feedback Loops (response time standards)_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[Field Design Rules_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[Form UX_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[Generic Task Flow Template_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[Information Architecture_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[Interaction Design Patterns_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[Navigation Hierarchy Rules_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[Nielsen's 10 Heuristics — GSDE&G Application_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[Progressive Disclosure_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[Progressive Form Pattern (for multi-step workflows)_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[Role_74]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[Rules_17]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[SKILL_124]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[Site Alarm Acknowledgment Flow_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[Skill UX Expert (UX)_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[Usability Audit Checklist_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[User Flow Diagrams_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
-- [[Wayfinding_1]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[Folder Structure]] - document - .agents/skills/i-sav/SKILL.md
+- [[Linking]] - document - .agents/skills/i-sav/SKILL.md
+- [[NOW ANALYZE THE FOLLOWING CODEBASE AND PRODUCE THE COMPLETE OBSIDIAN VAULT]] - document - .agents/skills/i-sav/SKILL.md
+- [[OBSIDIAN VAULT RULES (Follow These Exactly)]] - document - .agents/skills/i-sav/SKILL.md
+- [[OUTPUT FORMAT]] - document - .agents/skills/i-sav/SKILL.md
+- [[REQUIRED NOTES — PRODUCE EVERY ONE OF THESE]] - document - .agents/skills/i-sav/SKILL.md
+- [[SKILL_48]] - document - .agents/skills/i-sav/SKILL.md
+- [[System Audit Vault (Obsidian)]] - document - .agents/skills/i-sav/SKILL.md
+- [[Tags]] - document - .agents/skills/i-sav/SKILL.md
+- [[YAML Frontmatter]] - document - .agents/skills/i-sav/SKILL.md
+- [[`00 - START HEREHome.md`]] - document - .agents/skills/i-sav/SKILL.md
+- [[`00 - START HEREQuick Reference.md`]] - document - .agents/skills/i-sav/SKILL.md
+- [[`00 - START HERESystem Overview.md`]] - document - .agents/skills/i-sav/SKILL.md
+- [[`01 - ArchitectureArchitecture Overview.md`]] - document - .agents/skills/i-sav/SKILL.md
+- [[`01 - ArchitectureData Flow.md`]] - document - .agents/skills/i-sav/SKILL.md
+- [[`01 - ArchitectureShutdown & Recovery.md`]] - document - .agents/skills/i-sav/SKILL.md
+- [[`01 - ArchitectureStartup Sequence.md`]] - document - .agents/skills/i-sav/SKILL.md
+- [[`02 - ModulesFileName.md` — ONE PER SOURCE FILE]] - document - .agents/skills/i-sav/SKILL.md
+- [[`03 - ConfigurationConfigFile.md` — ONE PER CONFIG FILE]] - document - .agents/skills/i-sav/SKILL.md
+- [[`04 - Environment VariablesVAR_NAME.md` — ONE PER ENV VAR]] - document - .agents/skills/i-sav/SKILL.md
+- [[`05 - DependenciesAll Dependencies.md`]] - document - .agents/skills/i-sav/SKILL.md
+- [[`05 - DependenciesPackageName.md` — ONE PER MAJOR DEPENDENCY]] - document - .agents/skills/i-sav/SKILL.md
+- [[`06 - Containers & ServicesContainerName.md` — ONE PER CONTAINERSERVICE]] - document - .agents/skills/i-sav/SKILL.md
+- [[`07 - Errors & TroubleshootingError Index.md`]] - document - .agents/skills/i-sav/SKILL.md
+- [[`07 - Errors & TroubleshootingTroubleshooting Matrix.md`]] - document - .agents/skills/i-sav/SKILL.md
+- [[`07 - Errors & TroubleshootingErrorName.md` — ONE PER ERROR CATEGORY]] - document - .agents/skills/i-sav/SKILL.md
+- [[`08 - RunbooksCrash Recovery.md`]] - document - .agents/skills/i-sav/SKILL.md
+- [[`08 - RunbooksFirst Time Setup.md`]] - document - .agents/skills/i-sav/SKILL.md
+- [[`08 - RunbooksRestart Procedure.md`]] - document - .agents/skills/i-sav/SKILL.md
+- [[`09 - DiagramsFull System Flowchart.md`]] - document - .agents/skills/i-sav/SKILL.md
+- [[`09 - DiagramsStartup Flow Diagram.md`]] - document - .agents/skills/i-sav/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

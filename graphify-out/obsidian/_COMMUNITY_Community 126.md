@@ -1,27 +1,37 @@
 ---
 type: community
-members: 39
+cohesion: 0.07
+members: 47
 ---
 
 # Community 126
 
-**Members:** 39 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 47 nodes
 
 ## Members
+- [[Anthropic v1messages response → OpenAI v1chatcompletions envelope.]] - rationale - gateway/proxy/anthropic_openai_translator.py
+- [[Convert an Anthropic message content field to OpenAI format.]] - rationale - gateway/proxy/anthropic_openai_translator.py
 - [[Failover reply with choices (e.g. rate-limit stub) must not return content]] - rationale - gateway/tests/test_anthropic_openai_translator.py
 - [[Failover reply with empty-string content must not return content.]] - rationale - gateway/tests/test_anthropic_openai_translator.py
 - [[Failover reply with null content and no tool_calls must not return content.]] - rationale - gateway/tests/test_anthropic_openai_translator.py
 - [[Failover to a qwen-family model must disable thinking mode Qwen3's     think]] - rationale - gateway/tests/test_anthropic_openai_translator.py
 - [[Feed raw SSE bytes into the translator and collect Anthropic events.]] - rationale - gateway/tests/test_anthropic_openai_translator.py
+- [[Flatten Anthropic system prompt (string or content-block list) to plain text.]] - rationale - gateway/proxy/anthropic_openai_translator.py
 - [[Tool-call-only SSE stream must produce tool_use at index 0 (no text gap).]] - rationale - gateway/tests/test_anthropic_openai_translator.py
 - [[Translate an Anthropic Messages request body to OpenAI chat completions format.]] - rationale - gateway/proxy/anthropic_openai_translator.py
 - [[Translate an Ollama OpenAI-compat response to Anthropic Messages API format.]] - rationale - gateway/proxy/anthropic_openai_translator.py
 - [[Translate an OpenAI-compat SSE byte stream to Anthropic SSE byte events.      Yi]] - rationale - gateway/proxy/anthropic_openai_sse_translator.py
+- [[_anthropic_content_to_openai()]] - code - gateway/proxy/anthropic_openai_translator.py
+- [[_anthropic_system_to_openai()]] - code - gateway/proxy/anthropic_openai_translator.py
 - [[_collect_sse()]] - code - gateway/tests/test_anthropic_openai_translator.py
 - [[_random_msg_id()]] - code - gateway/proxy/anthropic_openai_sse_translator.py
+- [[_random_msg_id()_1]] - code - gateway/proxy/anthropic_openai_translator.py
 - [[_sse()]] - code - gateway/proxy/anthropic_openai_sse_translator.py
 - [[anthropic_openai_sse_translator.py]] - code - gateway/proxy/anthropic_openai_sse_translator.py
+- [[anthropic_openai_translator.py]] - code - gateway/proxy/anthropic_openai_translator.py
 - [[anthropic_to_openai_request()]] - code - gateway/proxy/anthropic_openai_translator.py
+- [[anthropic_to_openai_response()]] - code - gateway/proxy/anthropic_openai_translator.py
 - [[llm_proxy.py]] - code - gateway/proxy/llm_proxy.py
 - [[openai_to_anthropic_response()]] - code - gateway/proxy/anthropic_openai_translator.py
 - [[test_anthropic_openai_translator.py]] - code - gateway/tests/test_anthropic_openai_translator.py
@@ -56,24 +66,25 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_Community 117]]
-- 7 edges to [[_COMMUNITY_Community 142]]
-- 3 edges to [[_COMMUNITY_Community 108]]
-- 2 edges to [[_COMMUNITY_Community 79]]
-- 1 edge to [[_COMMUNITY_Community 40]]
-- 1 edge to [[_COMMUNITY_Community 129]]
-- 1 edge to [[_COMMUNITY_Community 488]]
-- 1 edge to [[_COMMUNITY_Community 765]]
-- 1 edge to [[_COMMUNITY_Community 308]]
-- 1 edge to [[_COMMUNITY_Community 419]]
-- 1 edge to [[_COMMUNITY_Community 979]]
-- 1 edge to [[_COMMUNITY_Community 134]]
-- 1 edge to [[_COMMUNITY_Community 861]]
+- 7 edges to [[_COMMUNITY_Community 143]]
+- 4 edges to [[_COMMUNITY_Community 450]]
+- 4 edges to [[_COMMUNITY_Community 129]]
+- 2 edges to [[_COMMUNITY_Community 36]]
+- 2 edges to [[_COMMUNITY_Community 83]]
+- 1 edge to [[_COMMUNITY_Community 852]]
+- 1 edge to [[_COMMUNITY_Community 822]]
+- 1 edge to [[_COMMUNITY_Community 762]]
+- 1 edge to [[_COMMUNITY_Community 310]]
+- 1 edge to [[_COMMUNITY_Community 425]]
+- 1 edge to [[_COMMUNITY_Community 978]]
+- 1 edge to [[_COMMUNITY_Community 49]]
+- 1 edge to [[_COMMUNITY_Community 860]]
 - 1 edge to [[_COMMUNITY_Community 755]]
-- 1 edge to [[_COMMUNITY_Community 7]]
+- 1 edge to [[_COMMUNITY_Community 54]]
 
 ## Top bridge nodes
 - [[llm_proxy.py]] - degree 22, connects to 13 communities
-- [[anthropic_to_openai_request()]] - degree 19, connects to 3 communities
-- [[openai_to_anthropic_response()]] - degree 14, connects to 3 communities
-- [[anthropic_openai_sse_translator.py]] - degree 4, connects to 1 community
+- [[anthropic_to_openai_request()]] - degree 19, connects to 2 communities
+- [[openai_to_anthropic_response()]] - degree 14, connects to 2 communities
+- [[anthropic_openai_translator.py]] - degree 8, connects to 2 communities
+- [[anthropic_to_openai_response()]] - degree 7, connects to 2 communities

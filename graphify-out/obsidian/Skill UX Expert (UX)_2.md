@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-ux/SKILL.md"
 type: "document"
-community: "Community 248"
+community: "Community 252"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_248
+  - community/Community_252
 ---
 
 # Skill: UX Expert (UX)
@@ -27,4 +27,4 @@ tags:
 - [[Usability Audit Checklist_2]] - `contains` [EXTRACTED]
 - [[User Flow Diagrams_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_248
+#graphify/document #graphify/EXTRACTED #community/Community_252

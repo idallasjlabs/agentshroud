@@ -1,17 +1,17 @@
 ---
 source_file: "docs/planning/RELEASE-PLAN.md"
 type: "document"
-community: "Community 360"
+community: "Community 362"
 location: "L447"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_360
+  - community/Community_362
 ---
 
 # Key Changes (2026-04-08)
 
 ## Connections
-- [[Summary_27]] - `contains` [EXTRACTED]
+- [[Summary_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_360
+#graphify/document #graphify/EXTRACTED #community/Community_362

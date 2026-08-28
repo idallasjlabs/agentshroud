@@ -1,19 +1,21 @@
 ---
 type: community
+cohesion: 0.33
 members: 6
 ---
 
 # Community 1132
 
+**Cohesion:** 0.33 - loosely connected
 **Members:** 6 nodes
 
 ## Members
-- [[.compute_content_hash()]] - code - gateway/security/audit_store.py
-- [[.compute_entry_hash()]] - code - gateway/security/audit_store.py
-- [[.verify_hash_chain()]] - code - gateway/security/audit_store.py
-- [[Compute SHA-256 hash of event content (excluding hashes).]] - rationale - gateway/security/audit_store.py
-- [[Compute entry hash including previous hash (chain).]] - rationale - gateway/security/audit_store.py
-- [[Verify the integrity of the hash chain.          Args             start_id Sta]] - rationale - gateway/security/audit_store.py
+- [[.test_unknown_event_source_rejected()]] - code - gateway/tests/test_session_security.py
+- [[.test_unregistered_session_event_rejected()]] - code - gateway/tests/test_session_security.py
+- [[.test_valid_event_source_accepted()]] - code - gateway/tests/test_session_security.py
+- [[TestEventInjection]] - code - gateway/tests/test_session_security.py
+- [[manager()_3]] - code - gateway/tests/test_session_security.py
+- [[test_session_security.py]] - code - gateway/tests/test_session_security.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,10 +25,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 89]]
-- 2 edges to [[_COMMUNITY_Community 232]]
+- 7 edges to [[_COMMUNITY_Community 474]]
+- 5 edges to [[_COMMUNITY_Community 478]]
+- 1 edge to [[_COMMUNITY_Community 581]]
+- 1 edge to [[_COMMUNITY_Community 870]]
+- 1 edge to [[_COMMUNITY_Community 1133]]
 
 ## Top bridge nodes
-- [[.compute_entry_hash()]] - degree 5, connects to 2 communities
-- [[.verify_hash_chain()]] - degree 4, connects to 2 communities
-- [[.compute_content_hash()]] - degree 3, connects to 1 community
+- [[test_session_security.py]] - degree 10, connects to 5 communities
+- [[TestEventInjection]] - degree 10, connects to 2 communities
+- [[manager()_3]] - degree 2, connects to 1 community

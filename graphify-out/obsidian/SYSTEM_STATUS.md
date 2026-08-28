@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/SYSTEM_STATUS.md"
 type: "document"
-community: "Community 514"
+community: "Community 284"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_514
+  - community/Community_284
 ---
 
 # SYSTEM_STATUS.md
@@ -16,4 +16,4 @@ tags:
 - [[Anthropic API Credits Exhausted Blocker]] - `references` [EXTRACTED]
 - [[iMessage Automation Permission Blocker]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_514
+#graphify/document #graphify/EXTRACTED #community/Community_284

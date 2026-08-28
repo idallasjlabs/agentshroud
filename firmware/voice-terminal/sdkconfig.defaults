@@ -27,15 +27,40 @@ CONFIG_MBEDTLS_DEFAULT_MEM_ALLOC=y
 # Without this, TLS RSA handshake runs in software and can starve IDLE0 for 500ms+ per
 # operation. Hardware MPI reduces that to <5ms, eliminating WDT fires during reconnect.
 CONFIG_MBEDTLS_HARDWARE_MPI=y
-# WDT timeout increased from default 5s → 10s. DERP-relayed TLS handshakes can run
-# close to 5s on slow relay paths; 10s gives headroom while HW MPI (above) takes effect.
-CONFIG_ESP_TASK_WDT_TIMEOUT_S=10
+# WDT timeout 20s (was 10, was default 5). DERP-relayed TLS handshakes can run
+# close to 5s on slow relay paths. Idle-task WDT checks OFF on both cores —
+# long TLS/crypto operations legitimately starve the idle tasks here.
+# ⚠ These four values (WDT, idle checks, MAIN_TASK_STACK below, and the
+# LWIP_TCP_* block below) were menuconfig-tuned and lived ONLY in the cached
+# sdkconfig until 2026-08-28 — a clean sdkconfig regen silently reverted all
+# of them, and the TCP_MSS fallback to 1440 alone broke the device's TLS
+# connectivity entirely (large handshake packets blackholed on the cellular
+# hotspot + Tailscale path; hours lost diagnosing it as a network issue).
+# They are now pinned here so `rm sdkconfig && idf.py reconfigure` can never
+# silently revert them again. Reference cache snapshot: sdkconfig-20260827-1601.
+CONFIG_ESP_TASK_WDT_TIMEOUT_S=20
+CONFIG_ESP_TASK_WDT_CHECK_IDLE_TASK_CPU0=n
+CONFIG_ESP_TASK_WDT_CHECK_IDLE_TASK_CPU1=n
 
 # Stack sizes — esp_timer overflow at WiFi IP acquisition with TLS in system
-# ota_check has a heap-allocated 4KB buffer; main task still needs 8KB for TLS call frames
+# ota_check has a heap-allocated 4KB buffer; main task runs TLS call frames +
+# ota_check + mark-valid; 20480 is the long-standing menuconfig-tuned value
+# (see WDT comment above for why it must stay pinned here).
 CONFIG_ESP_TIMER_TASK_STACK_SIZE=6144
 CONFIG_ESP_SYSTEM_EVENT_TASK_STACK_SIZE=4096
-CONFIG_ESP_MAIN_TASK_STACK_SIZE=8192
+CONFIG_ESP_MAIN_TASK_STACK_SIZE=20480
+
+# TCP tuned for the cellular-hotspot + Tailscale Funnel path (see WDT comment
+# above — TCP_MSS=1152 is the critical one: the default 1440 gets full-size
+# TLS handshake packets silently blackholed on this path and the device can
+# never complete a wss:// connect; 1152 has been the working value all along).
+CONFIG_LWIP_TCP_MSS=1152
+CONFIG_LWIP_TCP_SND_BUF_DEFAULT=4608
+CONFIG_LWIP_TCP_WND_DEFAULT=4608
+
+# LVGL heap capped at 32KB (default 64) — internal-RAM headroom; part of the
+# same tuned-set as above.
+CONFIG_LV_MEM_SIZE_KILOBYTES=32
 
 # BOX-3 BSP board selection
 CONFIG_BSP_BOARD_ESP32_S3_BOX_3=y

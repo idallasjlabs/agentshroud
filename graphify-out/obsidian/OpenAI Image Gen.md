@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/openai-image-gen/SKILL.md"
 type: "document"
-community: "Community 359"
+community: "Community 360"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_359
+  - community/Community_360
 ---
 
 # OpenAI Image Gen
@@ -17,4 +17,4 @@ tags:
 - [[Run]] - `contains` [EXTRACTED]
 - [[SKILL_220]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_359
+#graphify/document #graphify/EXTRACTED #community/Community_360

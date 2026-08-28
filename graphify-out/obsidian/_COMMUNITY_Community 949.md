@@ -1,21 +1,23 @@
 ---
 type: community
+cohesion: 0.25
 members: 8
 ---
 
 # Community 949
 
+**Cohesion:** 0.25 - loosely connected
 **Members:** 8 nodes
 
 ## Members
-- [[.test_env_token_and_url_used()]] - code - gateway/tests/test_cli_coverage.py
-- [[.test_explicit_args_win()]] - code - gateway/tests/test_cli_coverage.py
-- [[.test_gateway_password_fallback()]] - code - gateway/tests/test_cli_coverage.py
-- [[.test_missing_token_raises_value_error()]] - code - gateway/tests/test_cli_coverage.py
-- [[Build SCLClient from args or environment variables.]] - rationale - gateway/cli/client.py
-- [[TestClientFromEnv]] - code - gateway/tests/test_cli_coverage.py
-- [[client.py]] - code - gateway/cli/client.py
-- [[client_from_env()]] - code - gateway/cli/client.py
+- [[1. EU AI Act — high-risk operational requirements]] - document - docs/compliance/eu-ai-act-nist-matrix.md
+- [[2. NIST AI RMF 1.0 mapping]] - document - docs/compliance/eu-ai-act-nist-matrix.md
+- [[3. NIST AI Agent Standards Initiative (2026) — identity & authorization themes]] - document - docs/compliance/eu-ai-act-nist-matrix.md
+- [[4. Honest gap list (with tracking)]] - document - docs/compliance/eu-ai-act-nist-matrix.md
+- [[5. Evidence trail — where an auditor looks]] - document - docs/compliance/eu-ai-act-nist-matrix.md
+- [[EU AI Act & NIST Alignment Matrix — AgentShroud™]] - document - docs/compliance/eu-ai-act-nist-matrix.md
+- [[Positioning]] - document - docs/compliance/eu-ai-act-nist-matrix.md
+- [[eu-ai-act-nist-matrix]] - document - docs/compliance/eu-ai-act-nist-matrix.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,13 +25,3 @@ members: 8
 TABLE source_file, type FROM #community/Community_949
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 153]]
-- 2 edges to [[_COMMUNITY_Community 319]]
-- 1 edge to [[_COMMUNITY_Community 92]]
-
-## Top bridge nodes
-- [[client_from_env()]] - degree 9, connects to 2 communities
-- [[TestClientFromEnv]] - degree 6, connects to 2 communities
-- [[client.py]] - degree 3, connects to 2 communities

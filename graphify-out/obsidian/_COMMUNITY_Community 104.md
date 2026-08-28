@@ -1,62 +1,71 @@
 ---
 type: community
-members: 49
+cohesion: 0.06
+members: 56
 ---
 
 # Community 104
 
-**Members:** 49 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 56 nodes
 
 ## Members
-- [[.__init__()_18]] - code - gateway/proxy/a2a_proxy.py
-- [[.__init__()_50]] - code - gateway/security/a2a_policy.py
-- [[.__init__()_134]] - code - gateway/tests/test_a2a_integration.py
-- [[.__post_init__()_2]] - code - gateway/security/a2a_policy.py
-- [[._handle()_1]] - code - gateway/tests/test_a2a_integration.py
-- [[.close()_7]] - code - gateway/proxy/a2a_proxy.py
-- [[.forward()_3]] - code - gateway/tests/test_a2a_trust_scoring.py
-- [[.from_dict()_2]] - code - gateway/security/a2a_policy.py
-- [[A plain default-deny (unknownunlisted peer) is a routing decision, not     evid]] - rationale - gateway/tests/test_a2a_trust_scoring.py
-- [[A2APeerTestDouble]] - code - gateway/tests/test_a2a_integration.py
-- [[A2APolicyConfig]] - code - gateway/security/a2a_policy.py
-- [[A2AProxy]] - code - gateway/proxy/a2a_proxy.py
-- [[Any_29]] - code - gateway/security/a2a_policy.py
-- [[Declarative A2A security policy.      Loaded from the ``a2a_policy`` section of]] - rationale - gateway/security/a2a_policy.py
-- [[HermesA2AForwarder]] - code - gateway/proxy/a2a_proxy.py
-- [[Minimal JSON-RPC 2.0 responder standing in for a real A2A peer.      Explicitly]] - rationale - gateway/tests/test_a2a_integration.py
-- [[Negative control for the SSRF suite above — a genuinely public     callback URL]] - rationale - gateway/tests/test_a2a_integration.py
-- [[Parse a policy config from a plain dict (e.g. loaded from YAML).]] - rationale - gateway/security/a2a_policy.py
-- [[Real HTTP forwarder to Hermes's internal A2A JSON-RPC listener.      Matches the]] - rationale - gateway/proxy/a2a_proxy.py
-- [[Request_7]] - code - gateway/tests/test_a2a_integration.py
-- [[Response]] - code - gateway/tests/test_a2a_integration.py
-- [[Terminates inbound A2A HTTP requests, enforces policy, forwards.      Usage]] - rationale - gateway/proxy/a2a_proxy.py
-- [[TrustManager_2]] - code - gateway/tests/test_a2a_trust_scoring.py
-- [[Unambiguous malicious intent — immediate demotion, not a slow decay.]] - rationale - gateway/tests/test_a2a_trust_scoring.py
-- [[Upstream A2A Gap 78298 — SSRF Push-Notification Callback URL Bypass]] - concept - gateway/tests/test_a2a_integration.py
-- [[Upstream A2A Gap 83701 — TaskContextId Collision Hijack]] - concept - gateway/tests/test_a2a_integration.py
-- [[_StubForwarder_1]] - code - gateway/tests/test_a2a_trust_scoring.py
-- [[_jsonrpc()]] - code - gateway/tests/test_a2a_integration.py
-- [[_jsonrpc()_2]] - code - gateway/tests/test_a2a_trust_scoring.py
-- [[alice legitimately creates a task; bob (a distinct, also-allowlisted     peer) a]] - rationale - gateway/tests/test_a2a_integration.py
-- [[test_a2a_integration.py]] - code - gateway/tests/test_a2a_integration.py
-- [[test_a2a_ssrf_callback_is_a_severe_violation_by_default()]] - code - gateway/tests/test_a2a_trust_scoring.py
-- [[test_a2a_ssrf_callback_penalty_matches_malicious_intent_tier()]] - code - gateway/tests/test_a2a_trust_scoring.py
-- [[test_a2a_task_ownership_violation_has_a_configured_penalty_heavier_than_generic_policy()]] - code - gateway/tests/test_a2a_trust_scoring.py
-- [[test_a2a_trust_scoring.py]] - code - gateway/tests/test_a2a_trust_scoring.py
-- [[test_a2a_violation_types_exist()]] - code - gateway/tests/test_a2a_trust_scoring.py
-- [[test_adversarial_ssrf_callback_bypass_attempts_over_real_http()]] - code - gateway/tests/test_a2a_integration.py
-- [[test_adversarial_task_ownership_hijack_attempt_over_real_http()]] - code - gateway/tests/test_a2a_integration.py
-- [[test_double_peer()]] - code - gateway/tests/test_a2a_integration.py
-- [[test_full_round_trip_allowed_request_reaches_the_peer()]] - code - gateway/tests/test_a2a_integration.py
-- [[test_full_round_trip_denied_request_never_reaches_the_peer()]] - code - gateway/tests/test_a2a_integration.py
-- [[test_generic_denial_does_not_record_a2a_specific_violation_types()]] - code - gateway/tests/test_a2a_trust_scoring.py
-- [[test_legitimate_callback_url_is_forwarded_over_real_http()]] - code - gateway/tests/test_a2a_integration.py
-- [[test_proxy_without_trust_manager_does_not_raise()]] - code - gateway/tests/test_a2a_trust_scoring.py
-- [[test_ssrf_callback_rejection_triggers_severe_demotion()]] - code - gateway/tests/test_a2a_trust_scoring.py
-- [[test_task_ownership_violation_records_a2a_violation_type()]] - code - gateway/tests/test_a2a_trust_scoring.py
-- [[trust_manager is an optional dependency — a proxy built without one     (e.g. be]] - rationale - gateway/tests/test_a2a_trust_scoring.py
-- [[trust_manager()]] - code - gateway/tests/test_a2a_integration.py
-- [[trust_manager()_1]] - code - gateway/tests/test_a2a_trust_scoring.py
+- [[.__init__()_156]] - code - gateway/tests/test_forward_routing.py
+- [[.__init__()_157]] - code - gateway/tests/test_forward_routing.py
+- [[._post()]] - code - gateway/tests/test_forward_routing.py
+- [[._post_forward()]] - code - gateway/tests/test_forward_routing.py
+- [[._run_forward()]] - code - gateway/tests/test_forward_routing.py
+- [[.process_inbound()_4]] - code - gateway/tests/test_forward_routing.py
+- [[.process_inbound()_3]] - code - gateway/tests/test_forward_routing.py
+- [[.process_inbound()_5]] - code - gateway/tests/test_forward_routing.py
+- [[.process_outbound()_4]] - code - gateway/tests/test_forward_routing.py
+- [[.process_outbound()_3]] - code - gateway/tests/test_forward_routing.py
+- [[.process_outbound()_5]] - code - gateway/tests/test_forward_routing.py
+- [[.test_agent_id_propagated_for_hermes()]] - code - gateway/tests/test_forward_routing.py
+- [[.test_agent_id_propagated_for_openclaw()]] - code - gateway/tests/test_forward_routing.py
+- [[.test_blocked_outbound_replaced_with_policy_notice()]] - code - gateway/tests/test_forward_routing.py
+- [[.test_body_owner_id_with_matching_trusted_header_is_honored()]] - code - gateway/tests/test_forward_routing.py
+- [[.test_body_owner_id_without_trusted_header_is_stripped()]] - code - gateway/tests/test_forward_routing.py
+- [[.test_default_not_used_in_pipeline()]] - code - gateway/tests/test_forward_routing.py
+- [[.test_empty_user_id_does_not_elevate_trust()]] - code - gateway/tests/test_forward_routing.py
+- [[.test_forward_passes_user_id_in_metadata_to_process_inbound()]] - code - gateway/tests/test_forward_routing.py
+- [[.test_no_user_id_does_not_elevate_trust()]] - code - gateway/tests/test_forward_routing.py
+- [[.test_non_owner_body_user_id_passes_through()]] - code - gateway/tests/test_forward_routing.py
+- [[.test_non_owner_user_id_does_not_elevate_trust()]] - code - gateway/tests/test_forward_routing.py
+- [[.test_owner_id_without_trusted_header_does_not_elevate_trust()]] - code - gateway/tests/test_forward_routing.py
+- [[.test_owner_user_id_elevates_trust_to_full()]] - code - gateway/tests/test_forward_routing.py
+- [[A collaborator's user_id must NOT trigger the owner elevation.]] - rationale - gateway/tests/test_forward_routing.py
+- [[A non-owner user_id is not a spoof risk and must pass through unchanged]] - rationale - gateway/tests/test_forward_routing.py
+- [[An empty string user_id must not match the owner.]] - rationale - gateway/tests/test_forward_routing.py
+- [[Build a minimal mock app_state that returns a target with the given bot name.]] - rationale - gateway/tests/test_forward_routing.py
+- [[Inbound passes; outbound returns blocked=True with the original text intact.]] - rationale - gateway/tests/test_forward_routing.py
+- [[Legitimate voice-gateway path owner ID in body + matching trusted         heade]] - rationale - gateway/tests/test_forward_routing.py
+- [[Minimal app_state for owner-trust tests.]] - rationale - gateway/tests/test_forward_routing.py
+- [[Minimal pipeline mock that records which agent_id it was called with.]] - rationale - gateway/tests/test_forward_routing.py
+- [[Owner ID claimed in the body with NO trusted header must not reach the         p]] - rationale - gateway/tests/test_forward_routing.py
+- [[Pipeline mock that records the user_trust_level passed to process_outbound.]] - rationale - gateway/tests/test_forward_routing.py
+- [[Pipeline receives 'hermes' as agent_id when routed to hermes.]] - rationale - gateway/tests/test_forward_routing.py
+- [[Pipeline receives 'openclaw' as agent_id when routed to openclaw.]] - rationale - gateway/tests/test_forward_routing.py
+- [[Regression 'default' must never appear in agent_id when a named target is resol]] - rationale - gateway/tests/test_forward_routing.py
+- [[Regression forward returned out_result.sanitized_message without checking]] - rationale - gateway/tests/test_forward_routing.py
+- [[Requests with no user_id must not be elevated to FULL.]] - rationale - gateway/tests/test_forward_routing.py
+- [[SCRUM-46 verify forward.py elevates trust to FULL for the owner's user_id.]] - rationale - gateway/tests/test_forward_routing.py
+- [[TestAgentIdPropagatedFromTarget]] - code - gateway/tests/test_forward_routing.py
+- [[TestOutboundBlockedNotDelivered]] - code - gateway/tests/test_forward_routing.py
+- [[TestOwnerSpoofingViaForwardBody]] - code - gateway/tests/test_forward_routing.py
+- [[TestOwnerTrustElevation]] - code - gateway/tests/test_forward_routing.py
+- [[Verify that the resolved target.name is used as agent_id in pipeline calls.]] - rationale - gateway/tests/test_forward_routing.py
+- [[WS-E SCRUM-7374 a body-supplied user_id must NOT grant owner identity     to t]] - rationale - gateway/tests/test_forward_routing.py
+- [[WS-E SCRUM-7374 a spoofed owner user_id in the body WITHOUT the         truste]] - rationale - gateway/tests/test_forward_routing.py
+- [[When request.user_id matches _owner_user_id (with the trusted header),         p]] - rationale - gateway/tests/test_forward_routing.py
+- [[_BlockedOutboundPipeline]] - code - gateway/tests/test_forward_routing.py
+- [[_PipelineCaptor]] - code - gateway/tests/test_forward_routing.py
+- [[_TrustCaptor]] - code - gateway/tests/test_forward_routing.py
+- [[_make_mock_app_state()]] - code - gateway/tests/test_forward_routing.py
+- [[_make_trust_app_state()]] - code - gateway/tests/test_forward_routing.py
+- [[forward-routing agent_id propagation into security pipeline]] - code - gateway/ingest_api/routes/forward.py
+- [[process_inbound must receive metadata={'user_id' ...} from forward so that]] - rationale - gateway/tests/test_forward_routing.py
+- [[test_forward_routing.py]] - code - gateway/tests/test_forward_routing.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -66,16 +75,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 35 edges to [[_COMMUNITY_Community 1001]]
-- 26 edges to [[_COMMUNITY_Community 35]]
-- 13 edges to [[_COMMUNITY_Community 107]]
-- 7 edges to [[_COMMUNITY_Community 158]]
-- 6 edges to [[_COMMUNITY_Community 82]]
-- 1 edge to [[_COMMUNITY_Community 557]]
+- 14 edges to [[_COMMUNITY_Community 32]]
+- 9 edges to [[_COMMUNITY_Config Validation & Router]]
+- 3 edges to [[_COMMUNITY_Community 24]]
+- 1 edge to [[_COMMUNITY_Community 159]]
+- 1 edge to [[_COMMUNITY_Progressive Trust]]
 
 ## Top bridge nodes
-- [[A2AProxy]] - degree 38, connects to 4 communities
-- [[A2APolicyConfig]] - degree 27, connects to 3 communities
-- [[HermesA2AForwarder]] - degree 18, connects to 3 communities
-- [[test_a2a_trust_scoring.py]] - degree 19, connects to 2 communities
-- [[test_a2a_integration.py]] - degree 17, connects to 2 communities
+- [[test_forward_routing.py]] - degree 13, connects to 3 communities
+- [[_PipelineCaptor]] - degree 16, connects to 2 communities
+- [[_TrustCaptor]] - degree 13, connects to 2 communities
+- [[TestOwnerTrustElevation]] - degree 10, connects to 2 communities
+- [[_make_mock_app_state()]] - degree 9, connects to 2 communities

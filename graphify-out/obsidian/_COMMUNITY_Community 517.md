@@ -1,28 +1,32 @@
 ---
 type: community
-members: 15
+cohesion: 0.12
+members: 17
 ---
 
 # Community 517
 
-**Members:** 15 nodes
+**Cohesion:** 0.12 - loosely connected
+**Members:** 17 nodes
 
 ## Members
-- [[4. Environment Variables]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
-- [[All Environment Variables_1]] - document - docs/vault/03 - Configuration/All Environment Variables.md
-- [[All Environment Variables]] - document - docs/vault/03 - Configuration/All Environment Variables.md
-- [[Bot Container (`agentshroud-bot`)_1]] - document - docs/vault/03 - Configuration/All Environment Variables.md
-- [[Derived (set at runtime by `config.py`)]] - document - docs/vault/03 - Configuration/All Environment Variables.md
-- [[Environment Variable Index]] - document - docs/vault/03 - Configuration/All Environment Variables.md
-- [[Gateway Container (`agentshroud-gateway`)_1]] - document - docs/vault/03 - Configuration/All Environment Variables.md
-- [[Loaded at Startup via 1Password op-proxy]] - document - docs/vault/03 - Configuration/All Environment Variables.md
-- [[Optional  Runtime]] - document - docs/vault/03 - Configuration/All Environment Variables.md
-- [[Related Notes_16]] - document - docs/vault/03 - Configuration/All Environment Variables.md
-- [[Required]] - document - docs/vault/03 - Configuration/All Environment Variables.md
-- [[Required Secrets (as Docker secret files)]] - document - docs/vault/03 - Configuration/All Environment Variables.md
-- [[Security Notes_7]] - document - docs/vault/03 - Configuration/All Environment Variables.md
-- [[Set in `docker-compose.yml`]] - document - docs/vault/03 - Configuration/All Environment Variables.md
-- [[Summary_44]] - document - docs/vault/03 - Configuration/All Environment Variables.md
+- [[Follow-up (within 48 hours)]] - document - .agents/skills/i-production/SKILL.md
+- [[Glue Job Rollback]] - document - .agents/skills/i-production/SKILL.md
+- [[Immediate (within 2 hours)]] - document - .agents/skills/i-production/SKILL.md
+- [[Incident Response Workflow]] - document - .agents/skills/i-production/SKILL.md
+- [[Phase 1 ASSESS (Max 5 minutes)]] - document - .agents/skills/i-production/SKILL.md
+- [[Phase 2 COMMUNICATE (Concurrent with assess)]] - document - .agents/skills/i-production/SKILL.md
+- [[Phase 3 MITIGATE (Rollback First!)]] - document - .agents/skills/i-production/SKILL.md
+- [[Post-Incident]] - document - .agents/skills/i-production/SKILL.md
+- [[Post-Mortem Template]] - document - .agents/skills/i-production/SKILL.md
+- [[RDS Rollback (Point-in-Time or Snapshot)]] - document - .agents/skills/i-production/SKILL.md
+- [[Role_27]] - document - .agents/skills/i-production/SKILL.md
+- [[S3 Data Rollback]] - document - .agents/skills/i-production/SKILL.md
+- [[SKILL_43]] - document - .agents/skills/i-production/SKILL.md
+- [[Severity Matrix]] - document - .agents/skills/i-production/SKILL.md
+- [[Skill Incident Response (INCIDENT)]] - document - .agents/skills/i-production/SKILL.md
+- [[Step Function Rollback]] - document - .agents/skills/i-production/SKILL.md
+- [[Zabbix Rollback]] - document - .agents/skills/i-production/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,11 +34,3 @@ members: 15
 TABLE source_file, type FROM #community/Community_517
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 783]]
-- 1 edge to [[_COMMUNITY_Community 120]]
-- 1 edge to [[_COMMUNITY_Community 743]]
-
-## Top bridge nodes
-- [[4. Environment Variables]] - degree 8, connects to 3 communities

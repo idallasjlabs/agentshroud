@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-daedalus/SKILL.md"
 type: "document"
-community: "Community 795"
+community: "Community 786"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_795
+  - community/Community_786
 ---
 
 # Output Format
@@ -17,4 +17,4 @@ tags:
 - [[diagramsREADME]] - `contains` [EXTRACTED]
 - [[flow.mmd (Mermaid)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_795
+#graphify/document #graphify/EXTRACTED #community/Community_786

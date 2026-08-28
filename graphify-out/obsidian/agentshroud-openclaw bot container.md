@@ -1,11 +1,11 @@
 ---
 source_file: "scripts/backup-bot-memory.sh"
 type: "concept"
-community: "Community 723"
+community: "Community 176"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_723
+  - community/Community_176
 ---
 
 # agentshroud-openclaw bot container
@@ -15,4 +15,4 @@ tags:
 - [[disaster-recovery-backup.sh]] - `references` [EXTRACTED]
 - [[export_openclaw()]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_723
+#graphify/concept #graphify/EXTRACTED #community/Community_176

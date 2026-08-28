@@ -1,17 +1,19 @@
 ---
 type: community
+cohesion: 0.50
 members: 4
 ---
 
 # Community 1317
 
+**Cohesion:** 0.50 - moderately connected
 **Members:** 4 nodes
 
 ## Members
-- [[.test_self_diagnose_local_notice_is_deduped_per_update()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_self_diagnostic_local_notice_is_deduped_per_update()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[Self-diagnose local handler should dedupe repeated delivery of same update_id.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Self-diagnostic local handler should dedupe repeated delivery of same update_id.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Audit Chain Tampering]] - document - docs/operations/incident-response.md
+- [[Container Escape Attempt]] - document - docs/operations/incident-response.md
+- [[Data Exfiltration Detected]] - document - docs/operations/incident-response.md
+- [[P1 Critical Incidents]] - document - docs/operations/incident-response.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_Community 2]]
-- 2 edges to [[_COMMUNITY_Community 32]]
+- 1 edge to [[_COMMUNITY_Community 128]]
 
 ## Top bridge nodes
-- [[.test_self_diagnose_local_notice_is_deduped_per_update()]] - degree 8, connects to 2 communities
-- [[.test_self_diagnostic_local_notice_is_deduped_per_update()]] - degree 7, connects to 2 communities
+- [[P1 Critical Incidents]] - degree 4, connects to 1 community

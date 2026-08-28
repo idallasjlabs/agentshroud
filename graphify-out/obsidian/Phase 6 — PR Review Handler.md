@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/gh-issues/SKILL.md"
 type: "document"
-community: "Community 502"
+community: "Community 498"
 location: "L557"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_502
+  - community/Community_498
 ---
 
 # Phase 6 — PR Review Handler
@@ -20,4 +20,4 @@ tags:
 - [[Step 6.6 — Review Results]] - `contains` [EXTRACTED]
 - [[gh-issues — Auto-fix GitHub Issues with Parallel Sub-agents]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_502
+#graphify/document #graphify/EXTRACTED #community/Community_498

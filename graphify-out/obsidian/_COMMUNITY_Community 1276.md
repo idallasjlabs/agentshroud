@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1276
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[Changed_2]] - document - CHANGELOG.md
-- [[Fixed_6]] - document - CHANGELOG.md
-- [[Security_3]] - document - CHANGELOG.md
-- [[Summary_7]] - document - CHANGELOG.md
-- [[1.2.3 — releasev1.2.3 (2026-06-29)]] - document - CHANGELOG.md
+- [[.test_empty_dir_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_fresh_file_returns_true()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_old_file_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_stat_error_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestIsFresh]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,10 +24,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 984]]
-- 1 edge to [[_COMMUNITY_Community 1296]]
-- 1 edge to [[_COMMUNITY_Community 646]]
-- 1 edge to [[_COMMUNITY_Community 629]]
+- 2 edges to [[_COMMUNITY_Community 193]]
+- 1 edge to [[_COMMUNITY_Community 288]]
+- 1 edge to [[_COMMUNITY_Community 475]]
 
 ## Top bridge nodes
-- [[1.2.3 — releasev1.2.3 (2026-06-29)]] - degree 9, connects to 4 communities
+- [[.test_old_file_returns_false()]] - degree 3, connects to 2 communities
+- [[TestIsFresh]] - degree 5, connects to 1 community
+- [[.test_fresh_file_returns_true()]] - degree 2, connects to 1 community

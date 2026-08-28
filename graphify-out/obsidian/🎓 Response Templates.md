@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY-POLICY-FINAL.md"
 type: "document"
-community: "Community 450"
+community: "Community 454"
 location: "L140"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_450
+  - community/Community_454
 ---
 
 # 🎓 Response Templates
@@ -16,4 +16,4 @@ tags:
 - [[When asked for credentials via ANY chat]] - `contains` [EXTRACTED]
 - [[When executing console commands]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_450
+#graphify/document #graphify/EXTRACTED #community/Community_454

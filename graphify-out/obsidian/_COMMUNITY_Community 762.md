@@ -1,21 +1,27 @@
 ---
 type: community
-members: 8
+cohesion: 0.17
+members: 12
 ---
 
 # Community 762
 
-**Members:** 8 nodes
+**Cohesion:** 0.17 - loosely connected
+**Members:** 12 nodes
 
 ## Members
-- [[After Filing]] - document - docs/project/legal/USPTO-APPLICATION.md
-- [[Class 009 — Downloadable Software (Optional — add $250)]] - document - docs/project/legal/USPTO-APPLICATION.md
-- [[Class 042 — Scientific and Technological Services (Primary)]] - document - docs/project/legal/USPTO-APPLICATION.md
-- [[Filing Instructions (TEAS Plus)]] - document - docs/project/legal/USPTO-APPLICATION.md
-- [[International Classification]] - document - docs/project/legal/USPTO-APPLICATION.md
-- [[Notes_2]] - document - docs/project/legal/USPTO-APPLICATION.md
-- [[Specimen]] - document - docs/project/legal/USPTO-APPLICATION.md
-- [[USPTO Trademark Application — AgentShroud™]] - document - docs/project/legal/USPTO-APPLICATION.md
+- [[AGENTS_1]] - document - docker/config/openclaw/AGENTS.md
+- [[AgentShroud™ — OpenClaw Local-Model Tool-Use Instructions]] - document - docker/config/openclaw/AGENTS.md
+- [[Approved Tools and Their Arguments]] - document - docker/config/openclaw/AGENTS.md
+- [[Critical Rules for Local Models]] - document - docker/config/openclaw/AGENTS.md
+- [[Example Multi-Step Tool Use]] - document - docker/config/openclaw/AGENTS.md
+- [[Failover Behaviour (Local Mode)]] - document - docker/config/openclaw/AGENTS.md
+- [[Tool Invocation Format]] - document - docker/config/openclaw/AGENTS.md
+- [[bash]] - document - docker/config/openclaw/AGENTS.md
+- [[file_read]] - document - docker/config/openclaw/AGENTS.md
+- [[file_write]] - document - docker/config/openclaw/AGENTS.md
+- [[send_message]] - document - docker/config/openclaw/AGENTS.md
+- [[web_search]] - document - docker/config/openclaw/AGENTS.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,8 +31,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 1036]]
-- 1 edge to [[_COMMUNITY_Community 1529]]
+- 1 edge to [[_COMMUNITY_Community 255]]
+- 1 edge to [[_COMMUNITY_Community 126]]
 
 ## Top bridge nodes
-- [[USPTO Trademark Application — AgentShroud™]] - degree 7, connects to 2 communities
+- [[AGENTS_1]] - degree 3, connects to 2 communities

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "Community 24"
+community: "Community 125"
 location: "L181"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_24
+  - community/Community_125
 ---
 
 # ApprovalQueueItem
@@ -33,7 +33,7 @@ tags:
 - [[TestConcurrentApprovalRequests]] - `uses` [INFERRED]
 - [[ToolRiskConfig]] - `uses` [INFERRED]
 - [[ToolRiskPolicy]] - `uses` [INFERRED]
-- [[WebSocket]] - `uses` [INFERRED]
+- [[WebSocket_1]] - `uses` [INFERRED]
 - [[_make_item()]] - `calls` [EXTRACTED]
 - [[approval.py]] - `imports` [EXTRACTED]
 - [[enhanced_queue.py]] - `imports` [EXTRACTED]
@@ -43,4 +43,4 @@ tags:
 - [[test_approval_store.py]] - `imports` [EXTRACTED]
 - [[test_approval_stress.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_24
+#graphify/code #graphify/INFERRED #community/Community_125

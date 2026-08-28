@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "Community 584"
+community: "Memory Lifecycle & Egress Filtering"
 location: "L379"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_584
+  - community/Memory_Lifecycle__Egress_Filtering
 ---
 
 # Any
@@ -15,4 +15,4 @@ tags:
 - [[.get_lifecycle_status()]] - `references` [EXTRACTED]
 - [[MemoryLifecycleConfig]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_584
+#graphify/code #graphify/INFERRED #community/Memory_Lifecycle__Egress_Filtering

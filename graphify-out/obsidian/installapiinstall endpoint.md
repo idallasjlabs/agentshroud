@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/web/templates/installer.html"
 type: "concept"
-community: "Community 1397"
+community: "Community 1404"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1397
+  - community/Community_1404
 ---
 
 # /install/api/install endpoint
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[startInstall()]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1397
+#graphify/concept #graphify/EXTRACTED #community/Community_1404

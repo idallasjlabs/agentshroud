@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security.py"
 type: "rationale"
-community: "Community 10"
+community: "Config Validation & Router"
 location: "L115"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_10
+  - community/Config_Validation__Router
 ---
 
 # Test that empty content is rejected
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_empty_content_rejection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_10
+#graphify/rationale #graphify/EXTRACTED #community/Config_Validation__Router

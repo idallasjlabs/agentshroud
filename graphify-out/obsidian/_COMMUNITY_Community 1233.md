@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1233
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[MCP Tools Usage (MCPM)_2]] - document - docker/config/openclaw/skills/i-mcpm/README.md
-- [[Purpose_93]] - document - docker/config/openclaw/skills/i-mcpm/README.md
-- [[README_98]] - document - docker/config/openclaw/skills/i-mcpm/README.md
-- [[Related Skills_102]] - document - docker/config/openclaw/skills/i-mcpm/README.md
-- [[Usage_103]] - document - docker/config/openclaw/skills/i-mcpm/README.md
+- [[Incident Response (INCIDENT)_1]] - document - docker/config/openclaw/skills/i-production/README.md
+- [[Purpose_98]] - document - docker/config/openclaw/skills/i-production/README.md
+- [[README_103]] - document - docker/config/openclaw/skills/i-production/README.md
+- [[Related Skills_107]] - document - docker/config/openclaw/skills/i-production/README.md
+- [[Usage_108]] - document - docker/config/openclaw/skills/i-production/README.md
 
 ## Live Query (requires Dataview plugin)
 

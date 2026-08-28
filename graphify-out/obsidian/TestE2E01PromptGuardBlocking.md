@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "Community 870"
+community: "PII Sanitizer & E2E Tests"
 location: "L82"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_870
+  - community/PII_Sanitizer__E2E_Tests
 ---
 
 # TestE2E01PromptGuardBlocking
@@ -29,4 +29,4 @@ tags:
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_e2e_watchtower.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_870
+#graphify/code #graphify/INFERRED #community/PII_Sanitizer__E2E_Tests

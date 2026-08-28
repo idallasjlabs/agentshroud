@@ -1,12 +1,12 @@
 ---
 source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "Community 1125"
+community: "Community 108"
 location: "L147"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1125
+  - community/Community_108
 ---
 
 # Logo Files
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[File Formats & Deliverables]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1125
+#graphify/document #graphify/EXTRACTED #community/Community_108

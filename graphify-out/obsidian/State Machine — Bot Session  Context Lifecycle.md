@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/05-behavior.md"
 type: "concept"
-community: "Community 835"
+community: "Community 834"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_835
+  - community/Community_834
 ---
 
 # State Machine — Bot Session / Context Lifecycle
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[05-behavior]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_835
+#graphify/concept #graphify/EXTRACTED #community/Community_834

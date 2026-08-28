@@ -1,22 +1,21 @@
 ---
 source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "Community 460"
+community: "Community 108"
 location: "L158"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_460
+  - community/Community_108
 ---
 
 # Brand Approval Process
 
 ## Connections
-- [[AgentShroud Brand Guidelines_1]] - `contains` [EXTRACTED]
+- [[AgentShroud Brand Guidelines]] - `contains` [EXTRACTED]
 - [[ExternalPartnership Use]] - `contains` [EXTRACTED]
 - [[Internal Use]] - `contains` [EXTRACTED]
 - [[Prohibited Uses]] - `contains` [EXTRACTED]
-- [[Prohibited Uses_1]] - `contains` [EXTRACTED]
 - [[brand-guidelines]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_460
+#graphify/document #graphify/EXTRACTED #community/Community_108

@@ -1,17 +1,19 @@
 ---
 type: community
+cohesion: 0.50
 members: 4
 ---
 
 # Community 1342
 
+**Cohesion:** 0.50 - moderately connected
 **Members:** 4 nodes
 
 ## Members
-- [[Added_1]] - document - CHANGELOG.md
-- [[Fixed_2]] - document - CHANGELOG.md
-- [[Summary_3]] - document - CHANGELOG.md
-- [[1.5.1 A2A Governance (2026-08-22)]] - document - CHANGELOG.md
+- [[Test 1 Console Access (Should Work)]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
+- [[Test 2 Via Telegram (Should Be Blocked)]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
+- [[Test 3 Check Audit Log]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
+- [[🧪 Testing the Protection]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 984]]
-- 1 edge to [[_COMMUNITY_Community 1296]]
-- 1 edge to [[_COMMUNITY_Community 169]]
+- 1 edge to [[_COMMUNITY_Community 313]]
 
 ## Top bridge nodes
-- [[1.5.1 A2A Governance (2026-08-22)]] - degree 7, connects to 3 communities
+- [[🧪 Testing the Protection]] - degree 4, connects to 1 community

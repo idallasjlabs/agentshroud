@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy.py"
 type: "rationale"
-community: "Community 34"
+community: "Community 33"
 location: "L345"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_34
+  - community/Community_33
 ---
 
 # Fail-closed: if the queue returns requires_wait=False for a call the     engine
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_enforce_high_risk_queue_no_wait_denies_closed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_34
+#graphify/rationale #graphify/EXTRACTED #community/Community_33

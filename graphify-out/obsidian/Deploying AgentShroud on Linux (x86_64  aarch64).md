@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/linux.md"
 type: "document"
-community: "Community 572"
+community: "Community 568"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_572
+  - community/Community_568
 ---
 
 # Deploying AgentShroud on Linux (x86_64 / aarch64)
@@ -20,4 +20,4 @@ tags:
 - [[VPS Deployment Notes]] - `contains` [EXTRACTED]
 - [[linux]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_572
+#graphify/document #graphify/EXTRACTED #community/Community_568

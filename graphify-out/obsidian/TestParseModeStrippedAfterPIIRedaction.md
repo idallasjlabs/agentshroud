@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "Community 823"
+community: "Community 816"
 location: "L4330"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_823
+  - community/Community_816
 ---
 
 # TestParseModeStrippedAfterPIIRedaction
@@ -24,4 +24,4 @@ tags:
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_823
+#graphify/code #graphify/EXTRACTED #community/Community_816

@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1159
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[MCP Doctor (MCPM-DOCTOR)]] - document - .agents/skills/i-mcpm-doctor/README.md
-- [[Purpose_18]] - document - .agents/skills/i-mcpm-doctor/README.md
-- [[README_18]] - document - .agents/skills/i-mcpm-doctor/README.md
-- [[Related Skills_20]] - document - .agents/skills/i-mcpm-doctor/README.md
-- [[Usage_21]] - document - .agents/skills/i-mcpm-doctor/README.md
+- [[Pull Request Generator (PR)]] - document - .agents/skills/i-pr/README.md
+- [[Purpose_23]] - document - .agents/skills/i-pr/README.md
+- [[README_23]] - document - .agents/skills/i-pr/README.md
+- [[Related Skills_26]] - document - .agents/skills/i-pr/README.md
+- [[Usage_26]] - document - .agents/skills/i-pr/README.md
 
 ## Live Query (requires Dataview plugin)
 

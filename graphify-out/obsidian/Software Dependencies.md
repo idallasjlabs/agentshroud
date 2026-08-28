@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "Community 1283"
+community: "Community 1259"
 location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1283
+  - community/Community_1259
 ---
 
 # Software Dependencies
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Prerequisites_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1283
+#graphify/document #graphify/EXTRACTED #community/Community_1259

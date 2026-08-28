@@ -1,33 +1,35 @@
 ---
 type: community
+cohesion: 0.10
 members: 20
 ---
 
 # Community 438
 
+**Cohesion:** 0.10 - loosely connected
 **Members:** 20 nodes
 
 ## Members
-- [[1. Code Audit]] - document - docs/claude-security-audit-prompt.md
-- [[2. Verify Open Findings]] - document - docs/claude-security-audit-prompt.md
-- [[3. Test Each Module]] - document - docs/claude-security-audit-prompt.md
-- [[4. Collaborator Isolation]] - document - docs/claude-security-audit-prompt.md
-- [[5. Update the Module Matrix]] - document - docs/claude-security-audit-prompt.md
-- [[Additional Security Components]] - document - docs/claude-security-audit-prompt.md
-- [[AgentShroud v0.8.0 — Full Security & Functionality Audit]] - document - docs/claude-security-audit-prompt.md
-- [[Architecture_4]] - document - docs/claude-security-audit-prompt.md
-- [[Collaborator Access Control Tests]] - document - docs/claude-security-audit-prompt.md
-- [[Context for Claude]] - document - docs/claude-security-audit-prompt.md
-- [[Fixed Findings]] - document - docs/claude-security-audit-prompt.md
-- [[Key Files to Review]] - document - docs/claude-security-audit-prompt.md
-- [[Known Findings (Blue Team Assessment + Steve Hay's Review)]] - document - docs/claude-security-audit-prompt.md
-- [[Open Findings]] - document - docs/claude-security-audit-prompt.md
-- [[Output Format_39]] - document - docs/claude-security-audit-prompt.md
-- [[Steve Hay's Specific Findings]] - document - docs/claude-security-audit-prompt.md
-- [[The 34 Security Modules]] - document - docs/claude-security-audit-prompt.md
-- [[What is AgentShroud_1]] - document - docs/claude-security-audit-prompt.md
-- [[Your Tasks]] - document - docs/claude-security-audit-prompt.md
-- [[claude-security-audit-prompt]] - document - docs/claude-security-audit-prompt.md
+- [[A. AWS Glue Jobs]] - document - .agents/skills/i-qa/SKILL.md
+- [[B. AWS Step Functions]] - document - .agents/skills/i-qa/SKILL.md
+- [[C. AWS Athena]] - document - .agents/skills/i-qa/SKILL.md
+- [[D. PostgreSQL — RDS (`fe-gsdl-poc-database`)]] - document - .agents/skills/i-qa/SKILL.md
+- [[E. MySQL — On-Site Zabbix Databases (200+ sites)]] - document - .agents/skills/i-qa/SKILL.md
+- [[F. IAM Policies]] - document - .agents/skills/i-qa/SKILL.md
+- [[G. Tailscale  Network]] - document - .agents/skills/i-qa/SKILL.md
+- [[General Rules]] - document - .agents/skills/i-qa/SKILL.md
+- [[H. Service Control for Production Testing]] - document - .agents/skills/i-qa/SKILL.md
+- [[H.1 Pause Glue Jobs Before Testing]] - document - .agents/skills/i-qa/SKILL.md
+- [[H.2 Pause Step Functions Before Testing]] - document - .agents/skills/i-qa/SKILL.md
+- [[H.3 Database Tables for Test Data]] - document - .agents/skills/i-qa/SKILL.md
+- [[H.4 Cleanup Verification Checklist]] - document - .agents/skills/i-qa/SKILL.md
+- [[Objective_1]] - document - .agents/skills/i-qa/SKILL.md
+- [[Output Format_8]] - document - .agents/skills/i-qa/SKILL.md
+- [[Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT]] - document - .agents/skills/i-qa/SKILL.md
+- [[Role_29]] - document - .agents/skills/i-qa/SKILL.md
+- [[SKILL_45]] - document - .agents/skills/i-qa/SKILL.md
+- [[Skill Quality Assurance (QA)]] - document - .agents/skills/i-qa/SKILL.md
+- [[Testing Hierarchy]] - document - .agents/skills/i-qa/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

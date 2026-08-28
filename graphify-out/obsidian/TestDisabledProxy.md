@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_governance.py"
 type: "code"
-community: "Community 44"
+community: "Community 40"
 location: "L284"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_44
+  - community/Community_40
 ---
 
 # TestDisabledProxy
@@ -21,4 +21,4 @@ tags:
 - [[A2APeer]] - `uses` [INFERRED]
 - [[test_a2a_governance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_44
+#graphify/code #graphify/INFERRED #community/Community_40

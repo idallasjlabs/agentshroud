@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/jobs.yaml"
 type: "concept"
-community: "Community 293"
+community: "Community 395"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_293
+  - community/Community_395
 ---
 
 # jira_weekly_review.py
@@ -14,4 +14,4 @@ tags:
 - [[SCRUM-81 (Jira ticket)]] - `references` [EXTRACTED]
 - [[jira-weekly-review job]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_293
+#graphify/concept #graphify/EXTRACTED #community/Community_395

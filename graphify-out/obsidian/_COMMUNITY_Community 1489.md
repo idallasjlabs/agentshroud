@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 1.00
 members: 2
 ---
 
 # Community 1489
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[audio.c (ES7210 mic  ES8311 speaker driver)]] - code - firmware/voice-terminal/main/audio.c
-- [[audio.h (audio public API)]] - code - firmware/voice-terminal/main/audio.h
+- [[Dependabot Configuration]] - code - .github/dependabot.yml
+- [[Presidio-Anonymizer 2.2.364 Version Pin-Out]] - rationale - .github/dependabot.yml
 
 ## Live Query (requires Dataview plugin)
 

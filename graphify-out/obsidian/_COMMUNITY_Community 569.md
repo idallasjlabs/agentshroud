@@ -1,31 +1,31 @@
 ---
 type: community
-members: 18
+cohesion: 0.12
+members: 16
 ---
 
 # Community 569
 
-**Members:** 18 nodes
+**Cohesion:** 0.12 - loosely connected
+**Members:** 16 nodes
 
 ## Members
-- [[Configuration_16]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
-- [[Dependencies_19]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
-- [[Environment Variables_15]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
-- [[Function Details_45]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
-- [[Key Classes  Functions_48]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
-- [[Mode Enforce vs Monitor_10]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
-- [[Pattern Categories and Weights]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
-- [[PromptGuard_2]] - concept - docker/config/hermes/SOUL.md
-- [[PromptGuard.__init__(block_threshold, warn_threshold, custom_patterns)]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
-- [[PromptGuard._check_encoded_content(text)]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
-- [[PromptGuard._check_unicode_tricks(text)]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
-- [[PromptGuard.scan(text)]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
-- [[Purpose_166]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
-- [[Related_52]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
-- [[Responsibilities_50]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
-- [[Threat Model_21]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
-- [[prompt_guard.py_2]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
-- [[prompt_guard.py_1]] - document - docs/vault/02 - Modules/Security Modules/prompt_guard.py.md
+- [[3. Security Controls]] - document - docs/papers/agentshroud-whitepaper.md
+- [[3.1 PII Sanitizer]] - document - docs/papers/agentshroud-whitepaper.md
+- [[3.10 Egress Filtering — Phase 7]] - document - docs/papers/agentshroud-whitepaper.md
+- [[3.11 Drift Detection — Phase 7]] - document - docs/papers/agentshroud-whitepaper.md
+- [[3.12 Container Hardening]] - document - docs/papers/agentshroud-whitepaper.md
+- [[3.13 MCP Proxy Layer — Phase 9]] - document - docs/papers/agentshroud-whitepaper.md
+- [[3.14 Web Traffic Proxy — Phase 10]] - document - docs/papers/agentshroud-whitepaper.md
+- [[3.15 Full Egress Control — Phase 11]] - document - docs/papers/agentshroud-whitepaper.md
+- [[3.2 Audit Ledger]] - document - docs/papers/agentshroud-whitepaper.md
+- [[3.3 Approval Queue]] - document - docs/papers/agentshroud-whitepaper.md
+- [[3.4 Kill Switch]] - document - docs/papers/agentshroud-whitepaper.md
+- [[3.5 SSH Proxy]] - document - docs/papers/agentshroud-whitepaper.md
+- [[3.6 Live Security Dashboard]] - document - docs/papers/agentshroud-whitepaper.md
+- [[3.7 Encrypted Memory (AES-256-GCM) — Phase 7]] - document - docs/papers/agentshroud-whitepaper.md
+- [[3.8 Prompt Injection Defense — Phase 7]] - document - docs/papers/agentshroud-whitepaper.md
+- [[3.9 Progressive Trust System — Phase 7]] - document - docs/papers/agentshroud-whitepaper.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,8 +35,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 315]]
-- 1 edge to [[_COMMUNITY_Community 312]]
+- 1 edge to [[_COMMUNITY_Community 402]]
 
 ## Top bridge nodes
-- [[PromptGuard_2]] - degree 13, connects to 2 communities
+- [[3. Security Controls]] - degree 16, connects to 1 community

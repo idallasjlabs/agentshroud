@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c"
 type: "code"
-community: "Community 375"
+community: "Community 90"
 location: "L67"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_375
+  - community/Community_90
 ---
 
 # test_tap_in_idle_starts_listen()
@@ -19,4 +19,4 @@ tags:
 - [[wakeword_ended()]] - `calls` [INFERRED]
 - [[wakeword_triggered()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_375
+#graphify/code #graphify/INFERRED #community/Community_90

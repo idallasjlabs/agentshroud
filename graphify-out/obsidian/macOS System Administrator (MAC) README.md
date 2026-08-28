@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-mac/README.md"
 type: "document"
-community: "Community 430"
+community: "Community 390"
 tags:
   - graphify/document
   - graphify/AMBIGUOUS
-  - community/Community_430
+  - community/Community_390
 ---
 
 # macOS System Administrator (MAC) README
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Mac App Discovery Skill_1]] - `references` [AMBIGUOUS]
 
-#graphify/document #graphify/AMBIGUOUS #community/Community_430
+#graphify/document #graphify/AMBIGUOUS #community/Community_390

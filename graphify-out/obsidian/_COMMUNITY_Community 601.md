@@ -1,28 +1,30 @@
 ---
 type: community
+cohesion: 0.13
 members: 15
 ---
 
 # Community 601
 
+**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
-- [[Container Properties]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
-- [[Extra Hosts]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
-- [[Health Check_1]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
-- [[Key Environment Variables]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
-- [[Logs_2]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
-- [[Network_1]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
-- [[Ports]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
-- [[Related Notes_51]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
-- [[Resource Limits]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
-- [[Secrets_2]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
-- [[Security Hardening_3]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
-- [[Summary_45]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
-- [[Volumes_1]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
-- [[agentshroud-bot_1]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
-- [[tmpfs Mounts]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
+- [[Dialogue Techniques]] - document - .agents/skills/i-socrates/SKILL.md
+- [[EXPERT]] - document - .agents/skills/i-socrates/SKILL.md
+- [[ElevenLabs v3 Audio Tags]] - document - .agents/skills/i-socrates/SKILL.md
+- [[HOST]] - document - .agents/skills/i-socrates/SKILL.md
+- [[Input Requirements_8]] - document - .agents/skills/i-socrates/SKILL.md
+- [[Output Format_11]] - document - .agents/skills/i-socrates/SKILL.md
+- [[Persona_6]] - document - .agents/skills/i-socrates/SKILL.md
+- [[Quality Checklist_7]] - document - .agents/skills/i-socrates/SKILL.md
+- [[Role_33]] - document - .agents/skills/i-socrates/SKILL.md
+- [[SKILL_55]] - document - .agents/skills/i-socrates/SKILL.md
+- [[Socrates Dialogue Architect README]] - document - .agents/skills/i-socrates/README.md
+- [[Socrates — Dialogue Architect_6]] - document - .agents/skills/i-socrates/SKILL.md
+- [[Speaker Definitions]] - document - .agents/skills/i-socrates/SKILL.md
+- [[System Prompt_6]] - document - .agents/skills/i-socrates/SKILL.md
+- [[User Prompt Template_2]] - document - .agents/skills/i-socrates/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,7 +34,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 340]]
+- 1 edge to [[_COMMUNITY_Community 1291]]
+- 1 edge to [[_COMMUNITY_Community 651]]
 
 ## Top bridge nodes
-- [[agentshroud-bot_1]] - degree 15, connects to 1 community
+- [[Socrates — Dialogue Architect_6]] - degree 14, connects to 2 communities

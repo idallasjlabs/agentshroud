@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/a2a_policy.py"
 type: "rationale"
-community: "Community 1001"
+community: "Community 71"
 location: "L155"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1001
+  - community/Community_71
 ---
 
 # True only for a terminal ALLOW. REQUIRE_APPROVAL is not allowed on         its o
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.allowed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1001
+#graphify/rationale #graphify/EXTRACTED #community/Community_71

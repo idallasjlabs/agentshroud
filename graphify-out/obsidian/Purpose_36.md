@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-vulcan/README.md"
 type: "document"
-community: "Community 1171"
+community: "Community 1166"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1171
+  - community/Community_1166
 ---
 
 # Purpose
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Vulcan — Subject Matter Auditor]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1171
+#graphify/document #graphify/EXTRACTED #community/Community_1166

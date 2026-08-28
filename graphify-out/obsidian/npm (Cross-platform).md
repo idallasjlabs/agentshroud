@@ -1,12 +1,12 @@
 ---
 source_file: ".github/COPILOT_CLI_SETUP.md"
 type: "document"
-community: "Community 1258"
+community: "Community 172"
 location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1258
+  - community/Community_172
 ---
 
 # npm (Cross-platform)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Installation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1258
+#graphify/document #graphify/EXTRACTED #community/Community_172

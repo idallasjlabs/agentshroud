@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
 type: "rationale"
-community: "Community 138"
+community: "Community 139"
 location: "L54"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_138
+  - community/Community_139
 ---
 
 # Secure browser automation with enterprise controls      Security guarantees:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SecureBrowser_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_138
+#graphify/rationale #graphify/EXTRACTED #community/Community_139

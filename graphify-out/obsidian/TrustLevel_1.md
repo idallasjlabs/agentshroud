@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "Community 35"
+community: "Progressive Trust"
 location: "L29"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_35
+  - community/Progressive_Trust
 ---
 
 # TrustLevel
@@ -67,6 +67,7 @@ tags:
 - [[TrustLevel]] - `uses` [INFERRED]
 - [[TrustLevel_2]] - `uses` [INFERRED]
 - [[TrustManager_4]] - `uses` [INFERRED]
+- [[TrustManager_6]] - `uses` [INFERRED]
 - [[TrustManager._update_score() (progressive promotion gate)]] - `references` [EXTRACTED]
 - [[UserSession]] - `references` [EXTRACTED]
 - [[ViolationType]] - `uses` [INFERRED]
@@ -80,4 +81,4 @@ tags:
 - [[test_trust_manager.py]] - `imports` [EXTRACTED]
 - [[trust_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_35
+#graphify/code #graphify/INFERRED #community/Progressive_Trust

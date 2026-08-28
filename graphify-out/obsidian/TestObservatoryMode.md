@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "Community 443"
+community: "Community 457"
 location: "L325"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_443
+  - community/Community_457
 ---
 
 # TestObservatoryMode
@@ -28,4 +28,4 @@ tags:
 - [[Test Observatory Mode configuration and endpoints.]] - `rationale_for` [EXTRACTED]
 - [[test_observatory_mode.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_443
+#graphify/code #graphify/EXTRACTED #community/Community_457

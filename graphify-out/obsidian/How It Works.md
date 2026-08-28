@@ -1,17 +1,17 @@
 ---
-source_file: "firmware/voice-terminal/SETUP.md"
+source_file: "docs/TEAM.md"
 type: "document"
-community: "Community 1285"
-location: "L472"
+community: "Community 472"
+location: "L68"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1285
+  - community/Community_472
 ---
 
-# How it works
+# How It Works
 
 ## Connections
-- [[12. OTA Wireless Firmware Updates]] - `contains` [EXTRACTED]
+- [[AgentShroud Development Team — Agile Structure]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1285
+#graphify/document #graphify/EXTRACTED #community/Community_472

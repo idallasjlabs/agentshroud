@@ -1,21 +1,21 @@
 ---
 type: community
-members: 8
+cohesion: 0.33
+members: 6
 ---
 
 # Community 1138
 
-**Members:** 8 nodes
+**Cohesion:** 0.33 - loosely connected
+**Members:** 6 nodes
 
 ## Members
-- [[AgentShroud Recovery Plan v0.4.0 (Partial)]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[AgentShroud Session Issue Register — 2026-03-14]] - document - docs/planning/reviews/session-issue-register-2026-03-14.md
-- [[Issue Register]] - document - docs/planning/reviews/session-issue-register-2026-03-14.md
-- [[Linked Artifacts]] - document - docs/planning/reviews/session-issue-register-2026-03-14.md
-- [[Recommended Next Closure Sequence]] - document - docs/planning/reviews/session-issue-register-2026-03-14.md
-- [[Summary_33]] - document - docs/planning/reviews/session-issue-register-2026-03-14.md
-- [[XMLFunction-Call Leak Filter]] - concept - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[session-issue-register-2026-03-14]] - document - docs/planning/reviews/session-issue-register-2026-03-14.md
+- [[Competitive Intelligence Protocol_2]] - document - docker/config/openclaw/workspace/IDENTITY.md
+- [[IDENTITY]] - document - docker/config/openclaw/workspace/IDENTITY.md
+- [[IDENTITY.md - Who I Am_2]] - document - docker/config/openclaw/workspace/IDENTITY.md
+- [[My Owner_2]] - document - docker/config/openclaw/workspace/IDENTITY.md
+- [[My Responsibilities_1]] - document - docker/config/openclaw/workspace/IDENTITY.md
+- [[My Role_2]] - document - docker/config/openclaw/workspace/IDENTITY.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,8 +25,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 199]]
+- 1 edge to [[_COMMUNITY_Community 666]]
+- 1 edge to [[_COMMUNITY_Community 620]]
 
 ## Top bridge nodes
-- [[AgentShroud Session Issue Register — 2026-03-14]] - degree 8, connects to 1 community
-- [[XMLFunction-Call Leak Filter]] - degree 4, connects to 1 community
+- [[IDENTITY]] - degree 3, connects to 2 communities

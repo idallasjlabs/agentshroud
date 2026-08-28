@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Community 384"
+community: "Community 264"
 location: "L243"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_384
+  - community/Community_264
 ---
 
 # Option E: Environment Variables (Development Only)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Step 3 Configure Secrets Management]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_384
+#graphify/document #graphify/EXTRACTED #community/Community_264

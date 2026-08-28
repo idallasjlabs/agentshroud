@@ -1,28 +1,30 @@
 ---
 type: community
+cohesion: 0.30
 members: 15
 ---
 
 # Community 631
 
+**Cohesion:** 0.30 - loosely connected
 **Members:** 15 nodes
 
 ## Members
-- [[Configuration  Environment Variables_4]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
-- [[Detection Patterns_1]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
-- [[Function Details_10]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
-- [[Key Classes  Functions_13]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
-- [[MCPInspector._redact_pii(value)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
-- [[MCPInspector._scan_text(text, path, findings, ...)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
-- [[MCPInspector._scan_value(value, path, findings, ...)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
-- [[MCPInspector._should_block(findings)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
-- [[MCPInspector.inspect_tool_call(tool_name, params, check_injection, check_pii, check_encoding, check_sensitive)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
-- [[MCPInspector.inspect_tool_result(tool_name, result_content, check_pii, check_encoding)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
-- [[Purpose_131]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
-- [[Related_16]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
-- [[Responsibilities_15]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
-- [[mcp_inspector.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
-- [[mcp_inspector.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md
+- [[._cve()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_alert_states_auto_registered_under_review()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_alert_titled_for_agent_label()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_contains_cve_id()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_contains_severity_icon()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_contains_total_count()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_handles_missing_optional_fields()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_no_more_indicator_when_under_item_limit()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_plural_header_for_multiple_cves()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_singular_header_for_one_cve()]] - code - gateway/tests/test_daily_cve_report.py
+- [[.test_summary_under_telegram_limit_for_100_cves()]] - code - gateway/tests/test_daily_cve_report.py
+- [[Format a Telegram alert for newly detected upstream CVEs.      The alert is titl]] - rationale - gateway/security/daily_cve_report.py
+- [[TestFormatUpstreamCveAlert]] - code - gateway/tests/test_daily_cve_report.py
+- [[The alert says CVEs are auto-registered under_review (honest, not 'add manually']] - rationale - gateway/tests/test_daily_cve_report.py
+- [[format_upstream_cve_alert()]] - code - gateway/security/daily_cve_report.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,3 +32,11 @@ members: 15
 TABLE source_file, type FROM #community/Community_631
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 3 edges to [[_COMMUNITY_Community 100]]
+- 2 edges to [[_COMMUNITY_Community 122]]
+
+## Top bridge nodes
+- [[format_upstream_cve_alert()]] - degree 15, connects to 2 communities
+- [[TestFormatUpstreamCveAlert]] - degree 12, connects to 1 community

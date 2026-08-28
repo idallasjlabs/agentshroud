@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
 type: "rationale"
-community: "Community 156"
+community: "Memory Lifecycle & Egress Filtering"
 location: "L135"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_156
+  - community/Memory_Lifecycle__Egress_Filtering
 ---
 
 # Check if URL contains any blocked patterns.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._url_has_blocked_patterns()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_156
+#graphify/rationale #graphify/EXTRACTED #community/Memory_Lifecycle__Egress_Filtering

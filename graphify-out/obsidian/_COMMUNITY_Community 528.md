@@ -1,30 +1,32 @@
 ---
 type: community
+cohesion: 0.19
 members: 17
 ---
 
 # Community 528
 
+**Cohesion:** 0.19 - loosely connected
 **Members:** 17 nodes
 
 ## Members
-- [[.test_auto_detect_priority()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_explicit_apple()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_explicit_docker()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_explicit_podman()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_invalid_runtime()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_no_runtime_available()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_security_comparison()]] - code - gateway/tests/test_runtime_engines.py
-- [[Aggregate security report.]] - rationale - gateway/web/api.py
-- [[ContainerEngine]] - code - gateway/runtime/__init__.py
-- [[Full system status including all services and runtime info.]] - rationale - gateway/web/api.py
-- [[Return a comparison dict {feature_name {runtime supported}}.]] - rationale - gateway/runtime/security.py
-- [[Return an appropriate container engine instance.      Args         preference]] - rationale - gateway/runtime/__init__.py
-- [[TestGetEngine]] - code - gateway/tests/test_runtime_engines.py
-- [[get_engine()]] - code - gateway/runtime/__init__.py
-- [[get_security_comparison()]] - code - gateway/runtime/security.py
-- [[get_status()]] - code - gateway/web/api.py
-- [[security_report()]] - code - gateway/web/api.py
+- [[_rollback()]] - code - scripts/update-agentshroud.sh
+- [[_secret_mount_args()]] - code - docker/bots/hermes/run-standalone.sh
+- [[_wait_for_gateway_healthy()]] - code - docker/bots/hermes/run-standalone.sh
+- [[check()]] - code - scripts/post-deploy-check.sh
+- [[cmd_down()]] - code - docker/bots/hermes/run-standalone.sh
+- [[cmd_logs()]] - code - docker/bots/hermes/run-standalone.sh
+- [[cmd_status()]] - code - docker/bots/hermes/run-standalone.sh
+- [[cmd_up()]] - code - docker/bots/hermes/run-standalone.sh
+- [[post-deploy-check.sh]] - code - scripts/post-deploy-check.sh
+- [[post-deploy-check.sh script]] - code - scripts/post-deploy-check.sh
+- [[restore-backup.sh]] - code - scripts/restore-backup.sh
+- [[restore-backup.sh script]] - code - scripts/restore-backup.sh
+- [[restore_tar_to_volume()]] - code - scripts/restore-backup.sh
+- [[run-standalone.sh]] - code - docker/bots/hermes/run-standalone.sh
+- [[run-standalone.sh script]] - code - docker/bots/hermes/run-standalone.sh
+- [[update-agentshroud.sh]] - code - scripts/update-agentshroud.sh
+- [[update-agentshroud.sh script]] - code - scripts/update-agentshroud.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,22 +36,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_Community 45]]
-- 4 edges to [[_COMMUNITY_Community 439]]
-- 4 edges to [[_COMMUNITY_Community 197]]
-- 3 edges to [[_COMMUNITY_Community 330]]
-- 2 edges to [[_COMMUNITY_Community 453]]
-- 2 edges to [[_COMMUNITY_Community 358]]
-- 2 edges to [[_COMMUNITY_Community 354]]
-- 2 edges to [[_COMMUNITY_Community 220]]
-- 1 edge to [[_COMMUNITY_Community 9]]
-- 1 edge to [[_COMMUNITY_Community 18]]
-- 1 edge to [[_COMMUNITY_Community 198]]
-- 1 edge to [[_COMMUNITY_Community 647]]
+- 1 edge to [[_COMMUNITY_Community 1080]]
+- 1 edge to [[_COMMUNITY_Community 476]]
+- 1 edge to [[_COMMUNITY_Community 980]]
 
 ## Top bridge nodes
-- [[get_engine()]] - degree 16, connects to 6 communities
-- [[TestGetEngine]] - degree 12, connects to 5 communities
-- [[get_security_comparison()]] - degree 9, connects to 4 communities
-- [[ContainerEngine]] - degree 5, connects to 4 communities
-- [[get_status()]] - degree 7, connects to 3 communities
+- [[run-standalone.sh]] - degree 11, connects to 2 communities
+- [[update-agentshroud.sh]] - degree 5, connects to 1 community

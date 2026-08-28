@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Community 3"
+community: "Community 1653"
 location: "L830"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_3
+  - community/Community_1653
 ---
 
 # Timeout rewrites should apply to urlencoded Telegram payloads too.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_timeout_error_is_sanitized_for_form_payload()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_3
+#graphify/rationale #graphify/EXTRACTED #community/Community_1653

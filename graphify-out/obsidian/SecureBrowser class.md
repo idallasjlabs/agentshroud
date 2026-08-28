@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "Community 252"
+community: "Community 253"
 location: "class SecureBrowser"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_252
+  - community/Community_253
 ---
 
 # SecureBrowser class
@@ -21,4 +21,4 @@ tags:
 - [[browse.py — SecureBrowser CLI (OpenClaw)]] - `implements` [EXTRACTED]
 - [[main() CLI entrypoint]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_252
+#graphify/code #graphify/EXTRACTED #community/Community_253

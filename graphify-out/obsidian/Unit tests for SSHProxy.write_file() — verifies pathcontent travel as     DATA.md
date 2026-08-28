@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_write_file_endpoint.py"
 type: "rationale"
-community: "Community 12"
+community: "Community 64"
 location: "L431"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_12
+  - community/Community_64
 ---
 
 # Unit tests for SSHProxy.write_file() — verifies path/content travel as     DATA
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSSHProxyWriteFileTransport]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_12
+#graphify/rationale #graphify/EXTRACTED #community/Community_64

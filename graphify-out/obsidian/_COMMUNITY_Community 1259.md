@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1259
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[Approval Queue (SQLite)]] - concept - docs/architecture/system-architecture.md
-- [[Approval Queue (gateway diagram)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
-- [[Dashboard (WebSocket)]] - concept - docs/architecture/system-architecture.md
-- [[Kill Switch (MonitorBlockIsolate)]] - concept - docs/architecture/system-architecture.md
-- [[Monitoring System Integration (WebhooksPrometheus)]] - document - docs/api/integration-guide.md
+- [[1Password Integration (Optional)]] - document - docs/operations/deployment-procedure.md
+- [[Network Requirements]] - document - docs/operations/deployment-procedure.md
+- [[Prerequisites_3]] - document - docs/operations/deployment-procedure.md
+- [[Software Dependencies]] - document - docs/operations/deployment-procedure.md
+- [[System Requirements]] - document - docs/operations/deployment-procedure.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,7 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 369]]
+- 1 edge to [[_COMMUNITY_Community 128]]
 
 ## Top bridge nodes
-- [[Approval Queue (SQLite)]] - degree 4, connects to 1 community
+- [[Prerequisites_3]] - degree 5, connects to 1 community

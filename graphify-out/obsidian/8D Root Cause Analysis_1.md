@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-eightd/README.md"
 type: "document"
-community: "Community 1187"
+community: "Community 1182"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1187
+  - community/Community_1182
 ---
 
 # 8D Root Cause Analysis
@@ -17,4 +17,4 @@ tags:
 - [[Related Skills_50]] - `contains` [EXTRACTED]
 - [[Usage_53]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1187
+#graphify/document #graphify/EXTRACTED #community/Community_1182

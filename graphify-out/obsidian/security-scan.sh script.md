@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/security-scan.sh"
 type: "code"
-community: "Community 963"
+community: "Community 962"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_963
+  - community/Community_962
 ---
 
 # security-scan.sh script
@@ -19,4 +19,4 @@ tags:
 - [[run_trivy()]] - `calls` [EXTRACTED]
 - [[security-scan.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_963
+#graphify/code #graphify/EXTRACTED #community/Community_962

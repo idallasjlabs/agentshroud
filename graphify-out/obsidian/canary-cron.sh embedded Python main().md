@@ -1,11 +1,11 @@
 ---
 source_file: "scripts/canary-cron.sh"
 type: "code"
-community: "Community 74"
+community: "PII Sanitizer & E2E Tests"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_74
+  - community/PII_Sanitizer__E2E_Tests
 ---
 
 # canary-cron.sh embedded Python main()
@@ -18,4 +18,4 @@ tags:
 - [[TrustManager_1]] - `calls` [EXTRACTED]
 - [[run_canary()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_74
+#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer__E2E_Tests

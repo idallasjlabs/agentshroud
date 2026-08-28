@@ -1,19 +1,19 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
 type: "document"
-community: "Community 373"
+community: "Community 379"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_373
+  - community/Community_379
 ---
 
 # main.py
 
 ## Connections
 - [[Endpoints_1]] - `contains` [EXTRACTED]
-- [[Environment Variables Used_3]] - `contains` [EXTRACTED]
+- [[Environment Variables Used_2]] - `contains` [EXTRACTED]
 - [[Key Dependencies — Modules Wired at Init]] - `contains` [EXTRACTED]
 - [[Known Issues  Notes_3]] - `contains` [EXTRACTED]
 - [[Lifespan  Startup]] - `contains` [EXTRACTED]
@@ -26,4 +26,4 @@ tags:
 - [[WebSocket Endpoints]] - `contains` [EXTRACTED]
 - [[main.py_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_373
+#graphify/document #graphify/EXTRACTED #community/Community_379

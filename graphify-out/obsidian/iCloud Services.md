@@ -13,7 +13,6 @@ tags:
 
 ## Connections
 - [[Calendar Operations]] - `contains` [EXTRACTED]
-- [[Configuration]] - `contains` [EXTRACTED]
 - [[Contact Operations]] - `contains` [EXTRACTED]
 - [[Key Configuration]] - `contains` [EXTRACTED]
 - [[Mail Operations]] - `contains` [EXTRACTED]
@@ -21,6 +20,6 @@ tags:
 - [[SKILL_25]] - `contains` [EXTRACTED]
 - [[Security]] - `contains` [EXTRACTED]
 - [[Setup]] - `contains` [EXTRACTED]
-- [[Troubleshooting_1]] - `contains` [EXTRACTED]
+- [[Troubleshooting]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Community_316

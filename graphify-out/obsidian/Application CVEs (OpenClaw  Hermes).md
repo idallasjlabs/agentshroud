@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/cve-mitigation-matrix.md"
 type: "document"
-community: "Community 332"
+community: "Community 331"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_332
+  - community/Community_331
 ---
 
 # Application CVEs (OpenClaw / Hermes)
@@ -16,4 +16,4 @@ tags:
 - [[Hermes Agent (7 tracked)]] - `contains` [EXTRACTED]
 - [[OpenClaw (816 tracked)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_332
+#graphify/document #graphify/EXTRACTED #community/Community_331

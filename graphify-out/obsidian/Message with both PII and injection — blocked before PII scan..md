@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "rationale"
-community: "Community 74"
+community: "Community 28"
 location: "L618"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_74
+  - community/Community_28
 ---
 
 # Message with both PII and injection — blocked before PII scan.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_mixed_pii_and_injection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_74
+#graphify/rationale #graphify/EXTRACTED #community/Community_28

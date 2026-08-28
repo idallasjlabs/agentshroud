@@ -1,26 +1,28 @@
 ---
 type: community
+cohesion: 0.15
 members: 13
 ---
 
 # Community 736
 
+**Cohesion:** 0.15 - loosely connected
 **Members:** 13 nodes
 
 ## Members
-- [[._make_dispatcher()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_cleanup_seen()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_critical_alert_notified()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_dedup()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_get_digest()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_get_stats()_2]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_high_alert_notified()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_log_to_jsonl()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_low_alert_buffered()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_medium_alert_buffered()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_notify_failure()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_rate_limiting()]] - code - gateway/tests/test_security_toolchain.py
-- [[TestAlertDispatcher]] - code - gateway/tests/test_security_toolchain.py
+- [[10. Known Gaps  Open Items]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
+- [[11. Quick Reference — Switching to Local Mode]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
+- [[2. Source Files]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
+- [[3. How Provider Detection Works (`llm_proxy.py95-153`)]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
+- [[5. Model Switching CLI (`scriptsswitch_model.sh`)]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
+- [[6. Three Local Backends]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
+- [[7. Test Coverage (`gatewayteststest_llm_proxy.py`)]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
+- [[8. Telegram Integration]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
+- [[9. Bot Startup Flow (local mode)]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
+- [[LOCAL_LLM_REVIEW]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
+- [[Local LLM Support — Implementation Review]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
+- [[Multi-model mode (`local-multi`)]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
+- [[Quick Reference — Switching to Turbo Fieldflare]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,9 +32,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 14]]
-- 1 edge to [[_COMMUNITY_Community 162]]
+- 1 edge to [[_COMMUNITY_Community 650]]
+- 1 edge to [[_COMMUNITY_Community 694]]
 
 ## Top bridge nodes
-- [[TestAlertDispatcher]] - degree 14, connects to 2 communities
-- [[._make_dispatcher()]] - degree 13, connects to 1 community
+- [[Local LLM Support — Implementation Review]] - degree 12, connects to 2 communities

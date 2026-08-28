@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "Community 830"
+community: "Community 829"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_830
+  - community/Community_829
 ---
 
 # MCP Auth Reset Skill
@@ -15,4 +15,4 @@ tags:
 - [[MCP Auth Reset README]] - `references` [INFERRED]
 - [[MCP Doctor Skill]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_830
+#graphify/document #graphify/EXTRACTED #community/Community_829

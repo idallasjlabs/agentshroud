@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-socrates/README.md"
 type: "document"
-community: "Community 1169"
+community: "Community 1164"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1169
+  - community/Community_1164
 ---
 
 # Socrates — Dialogue Architect
@@ -17,4 +17,4 @@ tags:
 - [[Related Skills_35]] - `contains` [EXTRACTED]
 - [[Usage_35]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1169
+#graphify/document #graphify/EXTRACTED #community/Community_1164

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_lifespan_prune.py"
 type: "code"
-community: "Community 42"
+community: "Community 17"
 location: "L116"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_42
+  - community/Community_17
 ---
 
 # _prune_fixture_markdown()
@@ -20,4 +20,4 @@ tags:
 - [[test_prune_keeps_real_uid_markdown()]] - `calls` [EXTRACTED]
 - [[test_prune_walks_all_contributor_dirs()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_42
+#graphify/code #graphify/EXTRACTED #community/Community_17

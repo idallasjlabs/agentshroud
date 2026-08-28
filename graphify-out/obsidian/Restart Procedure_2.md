@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/08 - Runbooks/Restart Procedure.md"
 type: "document"
-community: "Community 788"
+community: "Community 824"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_788
+  - community/Community_824
 ---
 
 # Restart Procedure
@@ -23,4 +23,4 @@ tags:
 - [[When to Restart]] - `contains` [EXTRACTED]
 - [[Zero-Downtime Restart (Advanced)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_788
+#graphify/document #graphify/EXTRACTED #community/Community_824

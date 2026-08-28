@@ -1,17 +1,24 @@
 ---
-source_file: "gateway/ingest_api/routes/health.py"
+source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "Community 99"
-location: "L18"
+community: "Community 159"
+location: "L126"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_99
+  - community/Community_159
 ---
 
 # Request
 
 ## Connections
-- [[auth_dep()_4]] - `references` [EXTRACTED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[_process_inbound()]] - `references` [EXTRACTED]
+- [[auth_dep()_3]] - `references` [EXTRACTED]
+- [[email_send()]] - `references` [EXTRACTED]
+- [[email_send_owner()]] - `references` [EXTRACTED]
+- [[forward_content()]] - `references` [EXTRACTED]
+- [[forward_content_stream()]] - `references` [EXTRACTED]
+- [[telegram_webhook()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_99
+#graphify/code #graphify/EXTRACTED #community/Community_159

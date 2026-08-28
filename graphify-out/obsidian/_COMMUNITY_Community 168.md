@@ -1,53 +1,55 @@
 ---
 type: community
+cohesion: 0.06
 members: 40
 ---
 
 # Community 168
 
+**Cohesion:** 0.06 - loosely connected
 **Members:** 40 nodes
 
 ## Members
-- [[AgentShroud Brand Guidelines]] - document - branding/README.md
-- [[AgentShroud Transparent Logo (SVG)]] - image - branding/logos/svg/logo-transparent.svg
-- [[AgentShroud™ Brand Guidelines]] - document - BRAND.md
-- [[AgentShroud™ Brand Guidelines_1]] - document - docker/config/openclaw/workspace/BRAND.md
-- [[Available Formats]] - document - branding/README.md
-- [[BRAND]] - document - BRAND.md
-- [[Brand Colors]] - document - branding/README.md
-- [[Brand Identity]] - document - BRAND.md
-- [[Brand Identity_2]] - document - docker/config/openclaw/workspace/BRAND.md
-- [[Color Palette]] - document - branding/README.md
-- [[Colors]] - document - BRAND.md
-- [[Colors_1]] - document - docker/config/openclaw/workspace/BRAND.md
-- [[Communication Templates_1]] - document - docker/config/openclaw/workspace/BRAND.md
-- [[Directory Structure]] - document - branding/README.md
-- [[Do's]] - document - branding/README.md
-- [[Don'ts]] - document - branding/README.md
-- [[Elevator pitch]] - document - BRAND.md
-- [[Elevator pitch_1]] - document - docker/config/openclaw/workspace/BRAND.md
-- [[File Formats]] - document - branding/README.md
-- [[Key Messaging]] - document - BRAND.md
-- [[Key Messaging_1]] - document - docker/config/openclaw/workspace/BRAND.md
-- [[License]] - document - BRAND.md
-- [[License_1]] - document - docker/config/openclaw/workspace/BRAND.md
-- [[Logo Usage]] - document - BRAND.md
-- [[Logo Usage_1]] - document - branding/README.md
-- [[Logo Usage_3]] - document - docker/config/openclaw/workspace/BRAND.md
-- [[Logos]] - document - branding/README.md
-- [[Need Help]] - document - branding/README.md
-- [[One-liner]] - document - BRAND.md
-- [[One-liner_1]] - document - docker/config/openclaw/workspace/BRAND.md
-- [[Primary Color]] - document - branding/README.md
-- [[Social Handles]] - document - BRAND.md
-- [[Social Handles_1]] - document - docker/config/openclaw/workspace/BRAND.md
-- [[Trademark_1]] - document - docker/config/openclaw/workspace/BRAND.md
-- [[Typography_1]] - document - branding/README.md
-- [[Usage Guidelines]] - document - branding/README.md
-- [[Voice & Tone_1]] - document - BRAND.md
-- [[Voice & Tone_5]] - document - docker/config/openclaw/workspace/BRAND.md
-- [[What it is NOT]] - document - BRAND.md
-- [[What it is NOT_1]] - document - docker/config/openclaw/workspace/BRAND.md
+- [[.__call__()_7]] - code - gateway/tests/test_jira_dev_ticket.py
+- [[.__init__()_167]] - code - gateway/tests/test_jira_dev_ticket.py
+- [[Records requests; serves op-proxy secrets then a scripted Jira response.]] - rationale - gateway/tests/test_jira_dev_ticket.py
+- [[_MockTransport]] - code - gateway/tests/test_jira_dev_ticket.py
+- [[_load_module()]] - code - gateway/tests/test_jira_dev_ticket.py
+- [[test_basic_auth_header_is_base64_email_colon_token()]] - code - gateway/tests/test_jira_dev_ticket.py
+- [[test_basic_auth_header_rejects_empty()]] - code - gateway/tests/test_jira_dev_ticket.py
+- [[test_comment_payload_is_valid_adf_doc()]] - code - gateway/tests/test_jira_dev_ticket.py
+- [[test_comment_payload_never_empty()]] - code - gateway/tests/test_jira_dev_ticket.py
+- [[test_comment_url_rejects_empty_issue_key()]] - code - gateway/tests/test_jira_dev_ticket.py
+- [[test_comment_url_targets_arbitrary_issue()]] - code - gateway/tests/test_jira_dev_ticket.py
+- [[test_create_issue_payload_full()]] - code - gateway/tests/test_jira_dev_ticket.py
+- [[test_create_issue_payload_minimal()]] - code - gateway/tests/test_jira_dev_ticket.py
+- [[test_create_issue_payload_rejects_missing_project()]] - code - gateway/tests/test_jira_dev_ticket.py
+- [[test_create_issue_payload_rejects_missing_summary()]] - code - gateway/tests/test_jira_dev_ticket.py
+- [[test_find_transition_id_matches_destination_status_name()]] - code - gateway/tests/test_jira_dev_ticket.py
+- [[test_find_transition_id_matches_transition_name()]] - code - gateway/tests/test_jira_dev_ticket.py
+- [[test_find_transition_id_returns_none_when_no_match()]] - code - gateway/tests/test_jira_dev_ticket.py
+- [[test_issue_url_rejects_empty_cloud_id()]] - code - gateway/tests/test_jira_dev_ticket.py
+- [[test_issue_url_targets_cloud_id_gateway()]] - code - gateway/tests/test_jira_dev_ticket.py
+- [[test_jira_dev_ticket.py]] - code - gateway/tests/test_jira_dev_ticket.py
+- [[test_op_proxy_request_has_bearer_and_system_header()]] - code - gateway/tests/test_jira_dev_ticket.py
+- [[test_op_refs_target_the_atlassian_item()]] - code - gateway/tests/test_jira_dev_ticket.py
+- [[test_openclaw_copy_is_byte_identical_to_hermes_copy()]] - code - gateway/tests/test_jira_dev_ticket.py
+- [[test_resolve_cloud_id_parses_response()]] - code - gateway/tests/test_jira_dev_ticket.py
+- [[test_resolve_cloud_id_raises_on_non_200()]] - code - gateway/tests/test_jira_dev_ticket.py
+- [[test_resolve_cloud_id_raises_when_field_missing()]] - code - gateway/tests/test_jira_dev_ticket.py
+- [[test_run_aborts_without_gateway_token()]] - code - gateway/tests/test_jira_dev_ticket.py
+- [[test_run_comment_posts_to_correct_issue()]] - code - gateway/tests/test_jira_dev_ticket.py
+- [[test_run_create_posts_issue_with_basic_auth()]] - code - gateway/tests/test_jira_dev_ticket.py
+- [[test_run_create_with_labels_and_parent()]] - code - gateway/tests/test_jira_dev_ticket.py
+- [[test_run_returns_1_on_jira_rejection()]] - code - gateway/tests/test_jira_dev_ticket.py
+- [[test_run_returns_1_when_op_proxy_denies()]] - code - gateway/tests/test_jira_dev_ticket.py
+- [[test_run_transition_applies_matching_transition()]] - code - gateway/tests/test_jira_dev_ticket.py
+- [[test_run_transition_fails_when_no_matching_transition()]] - code - gateway/tests/test_jira_dev_ticket.py
+- [[test_tenant_info_url_accepts_full_https_domain()]] - code - gateway/tests/test_jira_dev_ticket.py
+- [[test_tenant_info_url_rejects_empty_domain()]] - code - gateway/tests/test_jira_dev_ticket.py
+- [[test_tenant_info_url_targets_edge_endpoint()]] - code - gateway/tests/test_jira_dev_ticket.py
+- [[test_transitions_url_rejects_empty_issue_key()]] - code - gateway/tests/test_jira_dev_ticket.py
+- [[test_transitions_url_targets_arbitrary_issue()]] - code - gateway/tests/test_jira_dev_ticket.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -57,13 +59,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 462]]
-- 2 edges to [[_COMMUNITY_Community 521]]
-- 2 edges to [[_COMMUNITY_Community 661]]
-- 1 edge to [[_COMMUNITY_Community 449]]
-- 1 edge to [[_COMMUNITY_Community 391]]
+- 2 edges to [[_COMMUNITY_Community 649]]
 
 ## Top bridge nodes
-- [[AgentShroud™ Brand Guidelines_1]] - degree 29, connects to 5 communities
-- [[AgentShroud™ Brand Guidelines]] - degree 10, connects to 2 communities
-- [[AgentShroud Brand Guidelines]] - degree 8, connects to 1 community
+- [[test_jira_dev_ticket.py]] - degree 38, connects to 1 community

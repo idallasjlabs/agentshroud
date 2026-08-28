@@ -1,56 +1,79 @@
 ---
 type: community
-members: 43
+cohesion: 0.06
+members: 64
 ---
 
 # Community 84
 
-**Members:** 43 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 64 nodes
 
 ## Members
-- [[.__init__()_8]] - code - gateway/dashboard/proxy_status.py
-- [[.get_display()]] - code - gateway/dashboard/proxy_status.py
-- [[.get_report()]] - code - gateway/dashboard/proxy_status.py
-- [[.record_message_proxied()]] - code - gateway/dashboard/proxy_status.py
-- [[.record_pii_redaction()]] - code - gateway/dashboard/proxy_status.py
-- [[.set_mode()]] - code - gateway/dashboard/proxy_status.py
-- [[.to_display()]] - code - gateway/dashboard/proxy_status.py
-- [[.update_audit_status()]] - code - gateway/dashboard/proxy_status.py
-- [[.update_canary()]] - code - gateway/dashboard/proxy_status.py
-- [[.update_direct_access()]] - code - gateway/dashboard/proxy_status.py
-- [[Collects status from all security components and generates reports.]] - rationale - gateway/dashboard/proxy_status.py
-- [[Complete proxy status report for the dashboard.]] - rationale - gateway/dashboard/proxy_status.py
-- [[Dashboard display should include all required fields.]] - rationale - gateway/tests/test_proxy_dashboard.py
-- [[Dashboard should count PII redactions.]] - rationale - gateway/tests/test_proxy_dashboard.py
-- [[Dashboard should default to unprotected mode.]] - rationale - gateway/tests/test_proxy_dashboard.py
-- [[Dashboard should reflect proxy mode.]] - rationale - gateway/tests/test_proxy_dashboard.py
-- [[Dashboard should reflect sidecar mode with warning.]] - rationale - gateway/tests/test_proxy_dashboard.py
-- [[Dashboard should show audit chain status.]] - rationale - gateway/tests/test_proxy_dashboard.py
-- [[Dashboard should show broken audit chain.]] - rationale - gateway/tests/test_proxy_dashboard.py
-- [[Dashboard should show failed canary.]] - rationale - gateway/tests/test_proxy_dashboard.py
-- [[Dashboard should track canary results.]] - rationale - gateway/tests/test_proxy_dashboard.py
-- [[Dashboard should track direct access status.]] - rationale - gateway/tests/test_proxy_dashboard.py
-- [[Dashboard should track proxied messages.]] - rationale - gateway/tests/test_proxy_dashboard.py
-- [[Dashboard should track uptime.]] - rationale - gateway/tests/test_proxy_dashboard.py
-- [[ProxyDashboard]] - code - gateway/dashboard/proxy_status.py
-- [[ProxyStatusReport]] - code - gateway/dashboard/proxy_status.py
-- [[ProxyStatusReport.to_display should produce readable strings.]] - rationale - gateway/tests/test_proxy_dashboard.py
-- [[Return human-readable dashboard strings.]] - rationale - gateway/dashboard/proxy_status.py
-- [[proxy_status.py]] - code - gateway/dashboard/proxy_status.py
-- [[test_dashboard_audit_broken()]] - code - gateway/tests/test_proxy_dashboard.py
-- [[test_dashboard_audit_status()]] - code - gateway/tests/test_proxy_dashboard.py
-- [[test_dashboard_canary_failed()]] - code - gateway/tests/test_proxy_dashboard.py
-- [[test_dashboard_canary_status()]] - code - gateway/tests/test_proxy_dashboard.py
-- [[test_dashboard_default_unprotected()]] - code - gateway/tests/test_proxy_dashboard.py
-- [[test_dashboard_direct_access()]] - code - gateway/tests/test_proxy_dashboard.py
-- [[test_dashboard_display_all_fields()]] - code - gateway/tests/test_proxy_dashboard.py
-- [[test_dashboard_message_tracking()]] - code - gateway/tests/test_proxy_dashboard.py
-- [[test_dashboard_pii_counting()]] - code - gateway/tests/test_proxy_dashboard.py
-- [[test_dashboard_set_proxy_mode()]] - code - gateway/tests/test_proxy_dashboard.py
-- [[test_dashboard_set_sidecar_mode()]] - code - gateway/tests/test_proxy_dashboard.py
-- [[test_dashboard_uptime()]] - code - gateway/tests/test_proxy_dashboard.py
-- [[test_proxy_dashboard.py]] - code - gateway/tests/test_proxy_dashboard.py
-- [[test_status_report_to_display()]] - code - gateway/tests/test_proxy_dashboard.py
+- [[MATURITY_DESC]] - code - gateway/soc/static/soc.js
+- [[MATURITY_LEVELS]] - code - gateway/soc/static/soc.js
+- [[SCANNER_INFO]] - code - gateway/soc/static/soc.js
+- [[_ago()]] - code - gateway/soc/static/soc.js
+- [[_allGroups]] - code - gateway/soc/static/soc.js
+- [[_api()]] - code - gateway/soc/static/soc.js
+- [[_appendLogLine()]] - code - gateway/soc/static/soc.js
+- [[_applyAndRenderSbom()]] - code - gateway/soc/static/soc.js
+- [[_botContainerName()]] - code - gateway/soc/static/soc.js
+- [[_botParam()]] - code - gateway/soc/static/soc.js
+- [[_confirm()]] - code - gateway/soc/static/soc.js
+- [[_connectWS()]] - code - gateway/soc/static/soc.js
+- [[_delete()]] - code - gateway/soc/static/soc.js
+- [[_esc()_1]] - code - gateway/soc/static/soc.js
+- [[_eventFeed]] - code - gateway/soc/static/soc.js
+- [[_get()]] - code - gateway/soc/static/soc.js
+- [[_handleWSEvent()]] - code - gateway/soc/static/soc.js
+- [[_initBotSelector()]] - code - gateway/soc/static/soc.js
+- [[_initTheme()]] - code - gateway/soc/static/soc.js
+- [[_loadAgentCves()]] - code - gateway/soc/static/soc.js
+- [[_loadConfig()]] - code - gateway/soc/static/soc.js
+- [[_loadContributors()]] - code - gateway/soc/static/soc.js
+- [[_loadEgress()]] - code - gateway/soc/static/soc.js
+- [[_loadLogs()]] - code - gateway/soc/static/soc.js
+- [[_loadOverview()]] - code - gateway/soc/static/soc.js
+- [[_loadScanners()]] - code - gateway/soc/static/soc.js
+- [[_loadScorecard()]] - code - gateway/soc/static/soc.js
+- [[_loadSecurity()]] - code - gateway/soc/static/soc.js
+- [[_loadServices()]] - code - gateway/soc/static/soc.js
+- [[_post()]] - code - gateway/soc/static/soc.js
+- [[_put()]] - code - gateway/soc/static/soc.js
+- [[_registerTab()]] - code - gateway/soc/static/soc.js
+- [[_renderActivityLog()]] - code - gateway/soc/static/soc.js
+- [[_renderAgentCveTable()]] - code - gateway/soc/static/soc.js
+- [[_renderComplianceBadges()]] - code - gateway/soc/static/soc.js
+- [[_renderEgressHistory()]] - code - gateway/soc/static/soc.js
+- [[_renderEgressRules()]] - code - gateway/soc/static/soc.js
+- [[_renderGroupMembers()]] - code - gateway/soc/static/soc.js
+- [[_renderGroups()]] - code - gateway/soc/static/soc.js
+- [[_renderOverviewFeed()]] - code - gateway/soc/static/soc.js
+- [[_renderPendingEgress()]] - code - gateway/soc/static/soc.js
+- [[_renderSbom()]] - code - gateway/soc/static/soc.js
+- [[_renderSbomPackageTable()]] - code - gateway/soc/static/soc.js
+- [[_renderScanners()]] - code - gateway/soc/static/soc.js
+- [[_renderScorecard()]] - code - gateway/soc/static/soc.js
+- [[_renderSecurityTable()]] - code - gateway/soc/static/soc.js
+- [[_renderServices()]] - code - gateway/soc/static/soc.js
+- [[_renderTrivyCveTable()]] - code - gateway/soc/static/soc.js
+- [[_renderUsers()]] - code - gateway/soc/static/soc.js
+- [[_replayLogsTab()]] - code - gateway/soc/static/soc.js
+- [[_sbomGetVal()]] - code - gateway/soc/static/soc.js
+- [[_sbomPackagesAll]] - code - gateway/soc/static/soc.js
+- [[_setText()]] - code - gateway/soc/static/soc.js
+- [[_setWSStatus()]] - code - gateway/soc/static/soc.js
+- [[_sevBadge()]] - code - gateway/soc/static/soc.js
+- [[_showDeviceTokenAlert()]] - code - gateway/soc/static/soc.js
+- [[_showLoginModal()]] - code - gateway/soc/static/soc.js
+- [[_showTab()]] - code - gateway/soc/static/soc.js
+- [[_tabLoaders]] - code - gateway/soc/static/soc.js
+- [[_toast()]] - code - gateway/soc/static/soc.js
+- [[_token]] - code - gateway/soc/static/soc.js
+- [[_ts()]] - code - gateway/soc/static/soc.js
+- [[_uptime()]] - code - gateway/soc/static/soc.js
+- [[soc.js]] - code - gateway/soc/static/soc.js
 
 ## Live Query (requires Dataview plugin)
 
@@ -60,11 +83,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 162]]
-- 1 edge to [[_COMMUNITY_Community 45]]
-- 1 edge to [[_COMMUNITY_Community 9]]
-- 1 edge to [[_COMMUNITY_Community 74]]
+- 3 edges to [[_COMMUNITY_SOC Collaborators]]
+- 2 edges to [[_COMMUNITY_Community 14]]
+- 2 edges to [[_COMMUNITY_Community 69]]
+- 2 edges to [[_COMMUNITY_Community 1253]]
+- 1 edge to [[_COMMUNITY_Community 19]]
 
 ## Top bridge nodes
-- [[ProxyDashboard]] - degree 27, connects to 2 communities
-- [[proxy_status.py]] - degree 4, connects to 2 communities
+- [[soc.js]] - degree 65, connects to 2 communities
+- [[_loadSecurity()]] - degree 8, connects to 2 communities
+- [[_loadEgress()]] - degree 7, connects to 1 community
+- [[_connectWS()]] - degree 6, connects to 1 community
+- [[_handleWSEvent()]] - degree 6, connects to 1 community

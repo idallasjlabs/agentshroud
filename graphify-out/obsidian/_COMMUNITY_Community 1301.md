@@ -1,17 +1,19 @@
 ---
 type: community
+cohesion: 0.50
 members: 4
 ---
 
 # Community 1301
 
+**Cohesion:** 0.50 - moderately connected
 **Members:** 4 nodes
 
 ## Members
-- [[For git commit hook_1]] - document - docker/config/hermes/skills/graphify/references/hooks.md
-- [[For native CLAUDE.md integration_1]] - document - docker/config/hermes/skills/graphify/references/hooks.md
-- [[graphify reference commit hook and native CLAUDE.md integration_1]] - document - docker/config/hermes/skills/graphify/references/hooks.md
-- [[hooks_1]] - document - docker/config/hermes/skills/graphify/references/hooks.md
+- [[For --cluster-only_1]] - document - docker/config/hermes/skills/graphify/references/update.md
+- [[For --update (incremental re-extraction)_1]] - document - docker/config/hermes/skills/graphify/references/update.md
+- [[graphify reference incremental update and cluster-only_1]] - document - docker/config/hermes/skills/graphify/references/update.md
+- [[update_1]] - document - docker/config/hermes/skills/graphify/references/update.md
 
 ## Live Query (requires Dataview plugin)
 

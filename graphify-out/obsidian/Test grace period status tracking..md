@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "rationale"
-community: "Community 756"
+community: "Community 533"
 location: "L138"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_756
+  - community/Community_533
 ---
 
 # Test grace period status tracking.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_grace_period_tracking()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_756
+#graphify/rationale #graphify/EXTRACTED #community/Community_533

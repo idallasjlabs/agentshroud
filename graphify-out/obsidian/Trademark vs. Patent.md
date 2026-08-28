@@ -1,12 +1,12 @@
 ---
 source_file: "docs/USPTO_TRADEMARK_APPLICATION.md"
 type: "document"
-community: "Community 1253"
+community: "Community 1249"
 location: "L282"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1253
+  - community/Community_1249
 ---
 
 # Trademark vs. Patent
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SECTION 9 IMPORTANT NOTES]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1253
+#graphify/document #graphify/EXTRACTED #community/Community_1249

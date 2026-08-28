@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/CREDENTIAL-SECURITY-POLICY.md"
 type: "document"
-community: "Community 849"
+community: "Community 500"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_849
+  - community/Community_500
 ---
 
 # CREDENTIAL-SECURITY-POLICY.md
@@ -22,4 +22,4 @@ tags:
 - [[router.py]] - `references` [EXTRACTED]
 - [[sanitizer.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_849
+#graphify/document #graphify/EXTRACTED #community/Community_500

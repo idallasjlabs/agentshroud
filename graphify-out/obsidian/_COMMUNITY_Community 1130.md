@@ -1,19 +1,21 @@
 ---
 type: community
+cohesion: 0.33
 members: 6
 ---
 
 # Community 1130
 
+**Cohesion:** 0.33 - loosely connected
 **Members:** 6 nodes
 
 ## Members
-- [[._extract_owner_target()]] - code - gateway/proxy/telegram_proxy.py
-- [[._extract_owner_target_resolved()]] - code - gateway/proxy/telegram_proxy.py
-- [[._resolve_pending_username_target()]] - code - gateway/proxy/telegram_proxy.py
-- [[Parse owner command target as numeric id or known collaborator alias.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Resolve owner target from pending-request username aliases (e.g., approve ana).]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Resolve target by id, static alias, or pending username alias.          Resoluti]] - rationale - gateway/proxy/telegram_proxy.py
+- [[.test_four_clean_but_stale()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[.test_one_when_not_run()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[.test_one_with_criticals()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[.test_three_with_mediums_only()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[.test_two_with_highs_no_criticals()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[TestScoreVulnerabilityManagement_1]] - code - gateway/tests/test_scorecard_scoring.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,10 +25,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 4]]
-- 2 edges to [[_COMMUNITY_Community 263]]
+- 1 edge to [[_COMMUNITY_Community 646]]
+- 1 edge to [[_COMMUNITY_Community 647]]
+- 1 edge to [[_COMMUNITY_Community 921]]
 
 ## Top bridge nodes
-- [[._extract_owner_target()]] - degree 4, connects to 2 communities
-- [[._resolve_pending_username_target()]] - degree 4, connects to 2 communities
-- [[._extract_owner_target_resolved()]] - degree 5, connects to 1 community
+- [[TestScoreVulnerabilityManagement_1]] - degree 7, connects to 2 communities
+- [[.test_four_clean_but_stale()]] - degree 2, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "Community 374"
+community: "Community 21"
 location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_374
+  - community/Community_21
 ---
 
 # EventBus
@@ -20,7 +20,7 @@ tags:
 - [[.unsubscribe()]] - `method` [EXTRACTED]
 - [[3+ auth failures within 5 minutes escalates event severity to critical]] - `rationale_for` [EXTRACTED]
 - [[AppState]] - `uses` [INFERRED]
-- [[FastAPI_1]] - `uses` [INFERRED]
+- [[FastAPI_2]] - `uses` [INFERRED]
 - [[GatewayEvent]] - `shares_data_with` [EXTRACTED]
 - [[LogRecord]] - `uses` [INFERRED]
 - [[Simple in-process event bus with async support]] - `rationale_for` [EXTRACTED]
@@ -38,4 +38,4 @@ tags:
 - [[test_event_bus.py]] - `imports` [EXTRACTED]
 - [[test_subscribed_relay_receives_bus_emissions()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_374
+#graphify/code #graphify/EXTRACTED #community/Community_21

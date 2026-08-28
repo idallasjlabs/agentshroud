@@ -1,19 +1,21 @@
 ---
 type: community
+cohesion: 0.33
 members: 6
 ---
 
 # Community 1109
 
+**Cohesion:** 0.33 - loosely connected
 **Members:** 6 nodes
 
 ## Members
-- [[Contact_2]] - document - docs/project/legal/TRADEMARK.md
-- [[Standard Footer]] - document - docs/project/legal/TRADEMARK.md
-- [[TRADEMARK]] - document - docs/project/legal/TRADEMARK.md
-- [[Trademark Details]] - document - docs/project/legal/TRADEMARK.md
-- [[Trademark Notice_3]] - document - docs/project/legal/TRADEMARK.md
-- [[Usage Guidelines_3]] - document - docs/project/legal/TRADEMARK.md
+- [[10. Colima VM Internet Connectivity Loss]] - document - docs/project/REPORTED_ISSUES.md
+- [[11. Missing Test Coverage for Core Modules]] - document - docs/project/REPORTED_ISSUES.md
+- [[12. PII Redaction Issues]] - document - docs/project/REPORTED_ISSUES.md
+- [[13. Duplicate Imports & Verbose Pydantic Init]] - document - docs/project/REPORTED_ISSUES.md
+- [[9. Streaming Responses Bypass Outbound Filtering]] - document - docs/project/REPORTED_ISSUES.md
+- [[🟡 MEDIUM Technical Debt & Bugs]] - document - docs/project/REPORTED_ISSUES.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,8 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 1036]]
-- 1 edge to [[_COMMUNITY_Community 1262]]
+- 1 edge to [[_COMMUNITY_Community 717]]
 
 ## Top bridge nodes
-- [[TRADEMARK]] - degree 5, connects to 2 communities
+- [[🟡 MEDIUM Technical Debt & Bugs]] - degree 6, connects to 1 community

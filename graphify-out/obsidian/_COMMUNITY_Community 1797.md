@@ -1,14 +1,16 @@
 ---
 type: community
+cohesion: 1.00
 members: 1
 ---
 
 # Community 1797
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[goStep()]] - code - gateway/web/templates/installer.html
+- [[Obsidian appearance.json (empty)]] - document - docs/vault/.obsidian/appearance.json
 
 ## Live Query (requires Dataview plugin)
 

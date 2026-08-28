@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md"
 type: "document"
-community: "Community 784"
+community: "Community 369"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_784
+  - community/Community_369
 ---
 
 # ESP32-S3-BOX-3 Voice Terminal for Hermes (behind AgentShroud)
@@ -19,13 +19,11 @@ tags:
 - [[2. Server-side work this branch must implement]] - `contains` [EXTRACTED]
 - [[3. Tailscale changes]] - `contains` [EXTRACTED]
 - [[4. iPhone & iPad (just hotspots — they do NOT tunnel the box)]] - `contains` [EXTRACTED]
-- [[5. Hardware prep]] - `contains` [EXTRACTED]
 - [[6. Firmware]] - `contains` [EXTRACTED]
-- [[7. Bring-up order (one cause per failure)]] - `contains` [EXTRACTED]
 - [[8. Gotchas (incl. AgentShroud-specific)]] - `contains` [EXTRACTED]
 - [[9. hey buddy wake word — honest status]] - `contains` [EXTRACTED]
 - [[9. Bring-up order — one cause per failure]] - `contains` [EXTRACTED]
 - [[Sources]] - `contains` [EXTRACTED]
 - [[esp32-s3-hermes-voice-terminal]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_784
+#graphify/document #graphify/EXTRACTED #community/Community_369

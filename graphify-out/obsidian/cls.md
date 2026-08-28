@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "Community 557"
+community: "Community 553"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_557
+  - community/Community_553
 ---
 
 # cls
@@ -33,4 +33,4 @@ tags:
 - [[.from_source()]] - `calls` [INFERRED]
 - [[_Instr]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_557
+#graphify/code #graphify/INFERRED #community/Community_553

@@ -1,24 +1,25 @@
 ---
 type: community
-members: 11
+cohesion: 0.20
+members: 10
 ---
 
 # Community 822
 
-**Members:** 11 nodes
+**Cohesion:** 0.20 - loosely connected
+**Members:** 10 nodes
 
 ## Members
-- [[AGENTS.md — Codex CLI Guidance]] - document - AGENTS.md
-- [[Claude Code — Primary Developer]] - concept - AGENTS.md
-- [[Codex Configuration (.codexconfig.toml)]] - document - AGENTS.md
-- [[Codex Prime Directive Not Primary Developer]] - rationale - AGENTS.md
-- [[Codex Safe Refactor Role]] - concept - AGENTS.md
-- [[Codex Test Augmenter Role]] - concept - AGENTS.md
-- [[Codex Validation Runner Role]] - concept - AGENTS.md
-- [[Data Lakehouse Platform (GSDL)]] - concept - AGENTS.md
-- [[safe-refactor.agent]] - document - .github/agents/safe-refactor.agent.md
-- [[test-augmenter.agent]] - document - .github/agents/test-augmenter.agent.md
-- [[validation-runner.agent]] - document - .github/agents/validation-runner.agent.md
+- [[ANTHROPIC_BASE_URL]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
+- [[Configuration_16]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
+- [[Description_4]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
+- [[GATEWAY_URL_1]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
+- [[GATEWAY_URL]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
+- [[Related Notes_32]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
+- [[Typical Value]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
+- [[Usage Contexts]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
+- [[patch-anthropic-sdk.sh]] - code - docker/scripts/patch-anthropic-sdk.sh
+- [[patch-anthropic-sdk.sh script]] - code - docker/scripts/patch-anthropic-sdk.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,11 +29,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 389]]
-- 1 edge to [[_COMMUNITY_Community 491]]
-- 1 edge to [[_COMMUNITY_Community 368]]
+- 1 edge to [[_COMMUNITY_Community 620]]
+- 1 edge to [[_COMMUNITY_Community 126]]
+- 1 edge to [[_COMMUNITY_Community 931]]
 
 ## Top bridge nodes
-- [[safe-refactor.agent]] - degree 2, connects to 1 community
-- [[test-augmenter.agent]] - degree 2, connects to 1 community
-- [[validation-runner.agent]] - degree 2, connects to 1 community
+- [[ANTHROPIC_BASE_URL]] - degree 4, connects to 2 communities
+- [[patch-anthropic-sdk.sh]] - degree 3, connects to 1 community

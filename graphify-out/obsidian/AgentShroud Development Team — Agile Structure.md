@@ -1,12 +1,12 @@
 ---
 source_file: "docs/TEAM.md"
 type: "document"
-community: "Community 470"
+community: "Community 472"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_470
+  - community/Community_472
 ---
 
 # AgentShroud Development Team — Agile Structure
@@ -22,4 +22,4 @@ tags:
 - [[Sprint Cadence]] - `contains` [EXTRACTED]
 - [[TEAM]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_470
+#graphify/document #graphify/EXTRACTED #community/Community_472

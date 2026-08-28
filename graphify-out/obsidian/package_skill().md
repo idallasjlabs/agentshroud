@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/skill-creator/scripts/package_skill.py"
 type: "code"
-community: "Community 535"
+community: "Community 532"
 location: "L20"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_535
+  - community/Community_532
 ---
 
 # package_skill()
@@ -22,4 +22,4 @@ tags:
 - [[package_skill.py]] - `contains` [EXTRACTED]
 - [[validate_skill()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_535
+#graphify/code #graphify/INFERRED #community/Community_532

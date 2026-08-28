@@ -1,26 +1,28 @@
 ---
 type: community
+cohesion: 0.15
 members: 13
 ---
 
 # Community 731
 
+**Cohesion:** 0.15 - loosely connected
 **Members:** 13 nodes
 
 ## Members
-- [[.render_summary()]] - code - gateway/tools/multi_host_test.py
-- [[.test_dry_run_default_command()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_dry_run_touches_nothing()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_main_all_pass_with_injected_runner()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_main_default_hosts()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_main_failure_nonzero_exit()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_main_unreachable_nonzero_exit()]] - code - gateway/tests/test_multi_host_test.py
-- [[CLI entry point. Returns the aggregated exit code (0 = all passed).]] - rationale - gateway/tools/multi_host_test.py
-- [[Render an aligned PASSFAIL table plus a totals line.]] - rationale - gateway/tools/multi_host_test.py
-- [[TestMain]] - code - gateway/tests/test_multi_host_test.py
-- [[main()_14]] - code - gateway/tools/multi_host_test.py
-- [[multi-host-test.sh]] - code - scripts/multi-host-test.sh
-- [[multi-host-test.sh script]] - code - scripts/multi-host-test.sh
+- [[1. Approval Queue (Gateway)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[2. PII Sanitization (Gateway)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[3. Audit Ledger (Gateway)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[4. Persona System (Gateway)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[5. Docker Isolation]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[6. Separate Bot Accounts (iCloud, Gmail)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[7. Ultra-Conservative Credential Policy]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[8. Seccomp Profiles (Currently Disabled)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[9. Read-Only Filesystem (Currently Disabled)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[Where's The REAL Value]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[⚖️ Medium-Value Features (Nice to Have)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[❓ Low-Value Features (Questionable ROI)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
+- [[🎯 High-Value Features (Justify the Effort)]] - document - docs/security/SECURITY_VALUE_PROPOSITION.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,18 +32,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 816]]
-- 3 edges to [[_COMMUNITY_Community 485]]
-- 3 edges to [[_COMMUNITY_Community 869]]
-- 2 edges to [[_COMMUNITY_Community 904]]
-- 2 edges to [[_COMMUNITY_Community 1102]]
-- 1 edge to [[_COMMUNITY_Community 992]]
-- 1 edge to [[_COMMUNITY_Community 817]]
-- 1 edge to [[_COMMUNITY_Community 1257]]
+- 1 edge to [[_COMMUNITY_Community 384]]
 
 ## Top bridge nodes
-- [[main()_14]] - degree 18, connects to 6 communities
-- [[TestMain]] - degree 10, connects to 3 communities
-- [[.test_main_all_pass_with_injected_runner()]] - degree 3, connects to 1 community
-- [[.test_main_failure_nonzero_exit()]] - degree 3, connects to 1 community
-- [[.test_main_unreachable_nonzero_exit()]] - degree 3, connects to 1 community
+- [[Where's The REAL Value]] - degree 4, connects to 1 community

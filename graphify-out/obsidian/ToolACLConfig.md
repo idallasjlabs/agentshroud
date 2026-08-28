@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "Community 75"
+community: "Group RBAC & Tool ACL"
 location: "L170"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_75
+  - community/Group_RBAC__Tool_ACL
 ---
 
 # ToolACLConfig
@@ -49,4 +49,4 @@ tags:
 - [[test_tool_acl.py]] - `imports` [EXTRACTED]
 - [[tool_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_75
+#graphify/code #graphify/INFERRED #community/Group_RBAC__Tool_ACL

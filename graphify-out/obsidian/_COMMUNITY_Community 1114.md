@@ -1,19 +1,21 @@
 ---
 type: community
+cohesion: 0.67
 members: 6
 ---
 
 # Community 1114
 
+**Cohesion:** 0.67 - moderately connected
 **Members:** 6 nodes
 
 ## Members
-- [[Future Enhancements_1]] - document - docs/reference/BROWSER_FETCH_SKILL.md
-- [[Priority 1 Auto-Discovery]] - document - docs/reference/BROWSER_FETCH_SKILL.md
-- [[Priority 2 Enhanced Extraction]] - document - docs/reference/BROWSER_FETCH_SKILL.md
-- [[Priority 3 Screenshot Capture]] - document - docs/reference/BROWSER_FETCH_SKILL.md
-- [[Priority 4 Multi-Page Support]] - document - docs/reference/BROWSER_FETCH_SKILL.md
-- [[Priority 5 Direct Gmail Configuration]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[cmd_persist()]] - code - scripts/tailscale-serve.sh
+- [[cmd_start()]] - code - scripts/tailscale-serve.sh
+- [[cmd_status()_1]] - code - scripts/tailscale-serve.sh
+- [[cmd_stop()]] - code - scripts/tailscale-serve.sh
+- [[tailscale-serve.sh]] - code - scripts/tailscale-serve.sh
+- [[tailscale-serve.sh script]] - code - scripts/tailscale-serve.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +23,3 @@ members: 6
 TABLE source_file, type FROM #community/Community_1114
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 772]]
-
-## Top bridge nodes
-- [[Future Enhancements_1]] - degree 6, connects to 1 community

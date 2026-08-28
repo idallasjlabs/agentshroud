@@ -1,21 +1,25 @@
 ---
 type: community
-members: 8
+cohesion: 0.27
+members: 10
 ---
 
 # Community 856
 
-**Members:** 8 nodes
+**Cohesion:** 0.27 - loosely connected
+**Members:** 10 nodes
 
 ## Members
-- [[Config]] - document - skills/openclaw/summarize/SKILL.md
-- [[Model + keys]] - document - skills/openclaw/summarize/SKILL.md
-- [[Quick start_3]] - document - skills/openclaw/summarize/SKILL.md
-- [[SKILL_232]] - document - skills/openclaw/summarize/SKILL.md
-- [[Summarize]] - document - skills/openclaw/summarize/SKILL.md
-- [[Useful flags_1]] - document - skills/openclaw/summarize/SKILL.md
-- [[When to use (trigger phrases)]] - document - skills/openclaw/summarize/SKILL.md
-- [[YouTube summary vs transcript]] - document - skills/openclaw/summarize/SKILL.md
+- [[.__init__()_38]] - code - gateway/proxy/telegram_gateway_relay.py
+- [[.send_message()]] - code - gateway/proxy/telegram_gateway_relay.py
+- [[.send_status_update()]] - code - gateway/proxy/telegram_gateway_relay.py
+- [[Relay Telegram messages through the gateway control plane.      This enables con]] - rationale - gateway/proxy/telegram_gateway_relay.py
+- [[Result of a Telegram send operation via gateway.]] - rationale - gateway/proxy/telegram_gateway_relay.py
+- [[Send a Telegram message via the gateway relay.          Args             chat_i]] - rationale - gateway/proxy/telegram_gateway_relay.py
+- [[Send a formatted status update via Telegram.          Formats the message with a]] - rationale - gateway/proxy/telegram_gateway_relay.py
+- [[TelegramGatewayRelay]] - code - gateway/proxy/telegram_gateway_relay.py
+- [[TelegramSendResult]] - code - gateway/proxy/telegram_gateway_relay.py
+- [[telegram_gateway_relay.py]] - code - gateway/proxy/telegram_gateway_relay.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,7 +29,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 400]]
+- 1 edge to [[_COMMUNITY_Community 476]]
+- 1 edge to [[_COMMUNITY_Community 49]]
 
 ## Top bridge nodes
-- [[SKILL_232]] - degree 2, connects to 1 community
+- [[telegram_gateway_relay.py]] - degree 4, connects to 2 communities

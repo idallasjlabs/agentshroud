@@ -1,17 +1,17 @@
 ---
-source_file: "CHANGELOG.md"
+source_file: "skills/custom/browser-fetch/SKILL.md"
 type: "document"
-community: "Community 169"
-location: "L1026"
+community: "Community 1078"
+location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_169
+  - community/Community_1078
 ---
 
 # Security
 
 ## Connections
-- [[0.4.0 - 2026-02-19]] - `contains` [EXTRACTED]
+- [[Browser Fetch Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_169
+#graphify/document #graphify/EXTRACTED #community/Community_1078

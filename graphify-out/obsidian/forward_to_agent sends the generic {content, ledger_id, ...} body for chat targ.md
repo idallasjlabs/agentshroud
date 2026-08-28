@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router_openai_translation.py"
 type: "rationale"
-community: "Community 38"
+community: "Community 32"
 location: "L178"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_38
+  - community/Community_32
 ---
 
 # forward_to_agent sends the generic {content, ledger_id, ...} body for /chat targ
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_generic_target_sends_content_body()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_38
+#graphify/rationale #graphify/EXTRACTED #community/Community_32

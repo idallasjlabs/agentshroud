@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/HERMES_SETUP.md"
 type: "document"
-community: "Community 404"
+community: "Community 405"
 location: "L164"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_404
+  - community/Community_405
 ---
 
 # HCI (Hermes Control Interface)
@@ -18,4 +18,4 @@ tags:
 - [[Hermes Agent — Connection Setup]] - `contains` [EXTRACTED]
 - [[Starting the HCI Container]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_404
+#graphify/document #graphify/EXTRACTED #community/Community_405

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy.py"
 type: "code"
-community: "Community 34"
+community: "Community 33"
 location: "L505"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_34
+  - community/Community_33
 ---
 
 # test_mcp_proxy_real_queue_high_risk_never_executes_without_approval()
@@ -18,4 +18,4 @@ tags:
 - [[MCPToolCall]] - `calls` [EXTRACTED]
 - [[test_mcp_policy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_34
+#graphify/code #graphify/EXTRACTED #community/Community_33

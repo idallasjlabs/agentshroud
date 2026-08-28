@@ -1,11 +1,11 @@
 ---
 source_file: "docs/project/legal/USPTO-APPLICATION.md"
 type: "concept"
-community: "Community 1036"
+community: "Community 1041"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1036
+  - community/Community_1041
 ---
 
 # USPTO Class 042 Filing (Scientific/Technological Services)
@@ -14,4 +14,4 @@ tags:
 - [[First Use in Commerce (Feb 20, 2026)]] - `conceptually_related_to` [INFERRED]
 - [[USPTO-APPLICATION]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1036
+#graphify/concept #graphify/EXTRACTED #community/Community_1041

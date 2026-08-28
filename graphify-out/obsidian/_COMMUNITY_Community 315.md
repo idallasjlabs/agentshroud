@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.09
 members: 26
 ---
 
 # Community 315
 
+**Cohesion:** 0.09 - loosely connected
 **Members:** 26 nodes
 
 ## Members
@@ -43,12 +45,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 626]]
-- 1 edge to [[_COMMUNITY_Community 569]]
-- 1 edge to [[_COMMUNITY_Community 369]]
-- 1 edge to [[_COMMUNITY_Community 312]]
-- 1 edge to [[_COMMUNITY_Community 479]]
+- 2 edges to [[_COMMUNITY_Community 117]]
+- 1 edge to [[_COMMUNITY_Community 566]]
+- 1 edge to [[_COMMUNITY_Community 372]]
+- 1 edge to [[_COMMUNITY_Community 745]]
 
 ## Top bridge nodes
-- [[SOUL_2]] - degree 15, connects to 4 communities
+- [[SOUL_2]] - degree 15, connects to 3 communities
 - [[OpenClawAgentShroud Bot Identity]] - degree 7, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/user-guide.md"
 type: "document"
-community: "Community 306"
+community: "Community 307"
 location: "L130"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_306
+  - community/Community_307
 ---
 
 # Q: The bot isn't responding. What do I do?
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[FAQ_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_306
+#graphify/document #graphify/EXTRACTED #community/Community_307

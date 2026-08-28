@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/cli/client.py"
 type: "rationale"
-community: "Community 153"
+community: "Community 152"
 location: "L15"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_153
+  - community/Community_152
 ---
 
 # Minimal synchronous httpx-free client for the SCL API.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SCLClient]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_153
+#graphify/rationale #graphify/EXTRACTED #community/Community_152

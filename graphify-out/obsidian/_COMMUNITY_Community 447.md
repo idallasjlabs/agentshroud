@@ -1,32 +1,35 @@
 ---
 type: community
-members: 19
+cohesion: 0.14
+members: 20
 ---
 
 # Community 447
 
-**Members:** 19 nodes
+**Cohesion:** 0.14 - loosely connected
+**Members:** 20 nodes
 
 ## Members
-- [[._emit_privacy_event()]] - code - gateway/proxy/mcp_proxy.py
-- [[._execute_tool_call()]] - code - gateway/proxy/mcp_proxy.py
-- [[._extract_egress_targets()]] - code - gateway/proxy/mcp_proxy.py
-- [[._sanitize_admin_private_data()]] - code - gateway/proxy/mcp_proxy.py
-- [[.check_approval_required()]] - code - gateway/proxy/mcp_proxy.py
-- [[.get_stats()_5]] - code - gateway/proxy/mcp_proxy.py
-- [[.process_tool_call()]] - code - gateway/proxy/mcp_proxy.py
-- [[.process_tool_result()_1]] - code - gateway/proxy/mcp_proxy.py
-- [[.send_request()_1]] - code - gateway/proxy/mcp_proxy.py
-- [[Actually execute the tool call against the MCP server.]] - rationale - gateway/proxy/mcp_proxy.py
-- [[Any_18]] - code - gateway/proxy/mcp_proxy.py
-- [[Best-effort privacy event emission.]] - rationale - gateway/proxy/mcp_proxy.py
-- [[Check if a tool call requires approval and wait for it if needed.]] - rationale - gateway/proxy/mcp_proxy.py
-- [[Extract outbound URL-like targets from nested MCP tool parameters.]] - rationale - gateway/proxy/mcp_proxy.py
-- [[Get proxy statistics.]] - rationale - gateway/proxy/mcp_proxy.py
-- [[Process a tool result coming back (for cases where execution happens externally)]] - rationale - gateway/proxy/mcp_proxy.py
-- [[Process an MCP tool call through the security pipeline.          Args]] - rationale - gateway/proxy/mcp_proxy.py
-- [[Redact admin-private data from tool results for non-owner agents.]] - rationale - gateway/proxy/mcp_proxy.py
-- [[Send an HTTP request to the MCP server.]] - rationale - gateway/proxy/mcp_proxy.py
+- [[.test_detect_apple()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_detect_docker()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_detect_multiple()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_detect_none()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_detect_podman()]] - code - gateway/tests/test_runtime_engines.py
+- [[Auto-detect which container runtimes are available on this system.]] - rationale - gateway/runtime/__init__.py
+- [[Check system prerequisites for installation.]] - rationale - gateway/web/installer.py
+- [[Get available runtimes with recommendations.]] - rationale - gateway/web/installer.py
+- [[InstallConfig]] - code - gateway/web/installer.py
+- [[PrerequisiteCheck]] - code - gateway/web/installer.py
+- [[Request_9]] - code - gateway/web/installer.py
+- [[Serve the installer wizard HTML.]] - rationale - gateway/web/installer.py
+- [[Start the installation process.      This endpoint kicks off the install and ret]] - rationale - gateway/web/installer.py
+- [[TestDetectRuntime]] - code - gateway/tests/test_runtime_engines.py
+- [[check_prerequisites()]] - code - gateway/web/installer.py
+- [[detect_runtime()]] - code - gateway/runtime/__init__.py
+- [[get_runtimes()]] - code - gateway/web/installer.py
+- [[installer.py]] - code - gateway/web/installer.py
+- [[installer_page()]] - code - gateway/web/installer.py
+- [[start_install()]] - code - gateway/web/installer.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,17 +39,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 12 edges to [[_COMMUNITY_Community 36]]
-- 6 edges to [[_COMMUNITY_Community 106]]
-- 2 edges to [[_COMMUNITY_Community 283]]
-- 2 edges to [[_COMMUNITY_Community 1540]]
-- 1 edge to [[_COMMUNITY_Community 374]]
-- 1 edge to [[_COMMUNITY_Community 201]]
-- 1 edge to [[_COMMUNITY_Community 1339]]
+- 5 edges to [[_COMMUNITY_Community 37]]
+- 3 edges to [[_COMMUNITY_Community 348]]
+- 3 edges to [[_COMMUNITY_Community 329]]
+- 2 edges to [[_COMMUNITY_Community 14]]
+- 1 edge to [[_COMMUNITY_Community 849]]
+- 1 edge to [[_COMMUNITY_Community 325]]
+- 1 edge to [[_COMMUNITY_Community 320]]
+- 1 edge to [[_COMMUNITY_Community 207]]
 
 ## Top bridge nodes
-- [[Any_18]] - degree 13, connects to 4 communities
-- [[._execute_tool_call()]] - degree 8, connects to 3 communities
-- [[.process_tool_result()_1]] - degree 6, connects to 3 communities
-- [[.process_tool_call()]] - degree 9, connects to 2 communities
-- [[._emit_privacy_event()]] - degree 5, connects to 2 communities
+- [[TestDetectRuntime]] - degree 11, connects to 5 communities
+- [[detect_runtime()]] - degree 14, connects to 4 communities
+- [[installer.py]] - degree 10, connects to 2 communities
+- [[get_runtimes()]] - degree 4, connects to 1 community
+- [[InstallConfig]] - degree 3, connects to 1 community

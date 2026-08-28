@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/stt.py"
 type: "code"
-community: "Community 115"
+community: "Community 114"
 location: "L103-111"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_115
+  - community/Community_114
 ---
 
 # _get_model() — lazy-loads faster-whisper WhisperModel
@@ -15,4 +15,4 @@ tags:
 - [[_lifespan()]] - `calls` [EXTRACTED]
 - [[transcribe()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_115
+#graphify/code #graphify/EXTRACTED #community/Community_114

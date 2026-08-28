@@ -1,37 +1,40 @@
 ---
 type: community
-members: 24
+cohesion: 0.08
+members: 25
 ---
 
 # Community 352
 
-**Members:** 24 nodes
+**Cohesion:** 0.08 - loosely connected
+**Members:** 25 nodes
 
 ## Members
-- [[Core Identity (from IDENTITY.md, SOUL.md, USER.md)]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[Critical Constraint]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[DEFERRED TO PHASE 4+ (Advanced Features)]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[Deferred Security Controls (Phase 5+)]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[Files to Mount in Container]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[MUST HAVE (Phase 3 - Minimum Viable Chat)]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[Must-Implement Security Controls (from 10_skills_to_harden_openclaw.txt)]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[Notes]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[PHASE3_REQUIREMENTS]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[Part 1 Isaiah's Persona Package]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[Part 2 Phase 3 Feature Scope]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[Part 3 Security Requirements for Base Container]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[Part 4 Implementation Checklist]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[Personality Traits to Embed]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[Phase 3 Requirements Working Chat Container]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[Professional Context (for relevant responses)]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[References_1]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[Step 1 Container Configuration (Day 1)]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[Step 2 Persona Integration (Day 1)]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[Step 3 Security Hardening (Day 2)]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[Step 4 Integration Testing (Day 2)]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[Step 5 Documentation (Day 3)]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[Success Criteria_1]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[Timeline_1]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[1) v0.8.0 Baseline Delivery (Documented)]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[2) Additional v0.8.0 Stabilization Work (Current Execution Cycle)]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[3) Verification Evidence (Current Cycle)]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[4) v0.8.0 Done Gate — 2026-03-14 Status]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[5) Items Still Remaining (Tracked Separately)]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[5) Notes]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[6) Owner Readout — Daily Telegram Validation Checklist]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[A. Startup + baseline]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[AgentShroud v0.8.0 Watchtower — Execution Summary (Draft)]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[Assessmentquality loop support delivered]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[B. Collaborator onboarding]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[Bot container verification (2026-03-14)]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[C. Command contract (role split)]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[D. Egress behavior]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[Delivered capability groups (baseline)]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[E. Leak-safety checks]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[Executive Summary_6]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[F. Rate-limit UX]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[G. Daily evidence capture]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[Gateway regression suites]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[P0P1 Fixes Applied (2026-03-14 cycle)]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[Security assessment (V8-7 quality loop pass — 2026-03-14)]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[Targeted stabilization tests addedexercised]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[Telegram securityUX hardening delivered]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[v0.8.0-execution-summary-draft]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,3 +42,10 @@ members: 24
 TABLE source_file, type FROM #community/Community_352
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 7 edges to [[_COMMUNITY_Community 92]]
+- 1 edge to [[_COMMUNITY_Community 117]]
+
+## Top bridge nodes
+- [[AgentShroud v0.8.0 Watchtower — Execution Summary (Draft)]] - degree 22, connects to 2 communities

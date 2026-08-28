@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "rationale"
-community: "Community 513"
+community: "Middleware & Lifespan"
 location: "L401"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_513
+  - community/Middleware__Lifespan
 ---
 
 # Test tool result processing when sanitizer raises an exception
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_process_tool_result_sanitizer_error()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_513
+#graphify/rationale #graphify/EXTRACTED #community/Middleware__Lifespan

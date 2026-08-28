@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/01 - Architecture/Data Flow.md"
 type: "document"
-community: "Community 311"
+community: "Community 117"
 location: "L94"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_311
+  - community/Community_117
 ---
 
 # Layer-by-Layer Breakdown
@@ -20,12 +20,10 @@ tags:
 - [[4. Input Normalization]] - `contains` [EXTRACTED]
 - [[5. PII Sanitization]] - `contains` [EXTRACTED]
 - [[6. Prompt Injection Defense]] - `contains` [EXTRACTED]
-- [[7. Egress Filter]] - `contains` [EXTRACTED]
-- [[8. Security Pipeline]] - `contains` [EXTRACTED]
 - [[9. Proxy Routing]] - `contains` [EXTRACTED]
 - [[Data Flow_1]] - `contains` [EXTRACTED]
 - [[EgressFilter_3]] - `contains` [EXTRACTED]
 - [[`SecurityPipeline`]] - `contains` [EXTRACTED]
 - [[approval_queue.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_311
+#graphify/document #graphify/EXTRACTED #community/Community_117

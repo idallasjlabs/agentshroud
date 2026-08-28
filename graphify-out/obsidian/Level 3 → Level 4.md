@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/access-control-matrix.md"
 type: "document"
-community: "Community 175"
+community: "Community 180"
 location: "L207"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_175
+  - community/Community_180
 ---
 
 # Level 3 → Level 4
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Automatic Progression Criteria]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_175
+#graphify/document #graphify/EXTRACTED #community/Community_180

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "Community 19"
+community: "SOC Collaborators"
 location: "L2331"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_19
+  - community/SOC_Collaborators
 ---
 
 # _file_hash()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[router.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_19
+#graphify/code #graphify/EXTRACTED #community/SOC_Collaborators

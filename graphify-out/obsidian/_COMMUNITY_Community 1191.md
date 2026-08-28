@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1191
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_51]] - document - docker/config/hermes/skills/i-mac/README.md
-- [[README_56]] - document - docker/config/hermes/skills/i-mac/README.md
-- [[Related Skills_54]] - document - docker/config/hermes/skills/i-mac/README.md
-- [[Usage_57]] - document - docker/config/hermes/skills/i-mac/README.md
-- [[macOS System Administrator (MAC)_1]] - document - docker/config/hermes/skills/i-mac/README.md
+- [[MCP Tools Usage (MCPM)_1]] - document - docker/config/hermes/skills/i-mcpm/README.md
+- [[Purpose_56]] - document - docker/config/hermes/skills/i-mcpm/README.md
+- [[README_61]] - document - docker/config/hermes/skills/i-mcpm/README.md
+- [[Related Skills_62]] - document - docker/config/hermes/skills/i-mcpm/README.md
+- [[Usage_63]] - document - docker/config/hermes/skills/i-mcpm/README.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,24 +1,26 @@
 ---
 type: community
+cohesion: 0.18
 members: 11
 ---
 
 # Community 803
 
+**Cohesion:** 0.18 - loosely connected
 **Members:** 11 nodes
 
 ## Members
-- [[AWS Credentials_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[Atlassian OAuth_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[GitHub PAT_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[Related Skills_57]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[Role_53]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[SKILL_95]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[Security Best Practices_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[Usage_60]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[Verification Checklist_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[When to Invoke_3]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[Context_9]] - document - docs/planning/HEXSTRIKE_PROXY_PLAN.md
+- [[Deliverable & branch]] - document - docs/planning/HEXSTRIKE_PROXY_PLAN.md
+- [[HEXSTRIKE_PROXY_PLAN]] - document - docs/planning/HEXSTRIKE_PROXY_PLAN.md
+- [[Known integration gaps to document (not fix in this planning branch)]] - document - docs/planning/HEXSTRIKE_PROXY_PLAN.md
+- [[Out of scope (explicitly)]] - document - docs/planning/HEXSTRIKE_PROXY_PLAN.md
+- [[Plan Proxying HexStrike AI MCP Agents via AgentShroud]] - document - docs/planning/HEXSTRIKE_PROXY_PLAN.md
+- [[Policy levers to configure (per engagement)]] - document - docs/planning/HEXSTRIKE_PROXY_PLAN.md
+- [[Proposed architecture]] - document - docs/planning/HEXSTRIKE_PROXY_PLAN.md
+- [[The core tension (and its resolution)]] - document - docs/planning/HEXSTRIKE_PROXY_PLAN.md
+- [[Verification (of the planning deliverable, once implementation begins)]] - document - docs/planning/HEXSTRIKE_PROXY_PLAN.md
+- [[What already exists (no build needed)]] - document - docs/planning/HEXSTRIKE_PROXY_PLAN.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,10 +28,3 @@ members: 11
 TABLE source_file, type FROM #community/Community_803
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 895]]
-- 1 edge to [[_COMMUNITY_Community 1087]]
-
-## Top bridge nodes
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_1]] - degree 9, connects to 2 communities

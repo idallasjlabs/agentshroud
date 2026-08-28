@@ -1,21 +1,20 @@
 ---
-source_file: ".agents/skills/i-athena/SKILL.md"
+source_file: "docker/config/hermes/skills/i-athena/README.md"
 type: "document"
-community: "Community 696"
-location: "L6"
+community: "Community 1173"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_696
+  - community/Community_1173
 ---
 
 # Athena — Knowledge Distiller
 
 ## Connections
-- [[Input Requirements_1]] - `contains` [EXTRACTED]
-- [[Output Format]] - `contains` [EXTRACTED]
-- [[Persona]] - `contains` [EXTRACTED]
-- [[Role_5]] - `contains` [EXTRACTED]
-- [[SKILL_5]] - `contains` [EXTRACTED]
+- [[Purpose_38]] - `contains` [EXTRACTED]
+- [[README_43]] - `contains` [EXTRACTED]
+- [[Related Skills_41]] - `contains` [EXTRACTED]
+- [[Usage_43]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_696
+#graphify/document #graphify/EXTRACTED #community/Community_1173

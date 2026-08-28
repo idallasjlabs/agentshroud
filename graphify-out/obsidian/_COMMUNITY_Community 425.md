@@ -1,34 +1,36 @@
 ---
 type: community
+cohesion: 0.17
 members: 21
 ---
 
 # Community 425
 
+**Cohesion:** 0.17 - loosely connected
 **Members:** 21 nodes
 
 ## Members
-- [[.script_content()]] - code - gateway/tests/test_killswitch_modes.py
-- [[.test_creates_incident_record()]] - code - gateway/tests/test_killswitch_modes.py
-- [[.test_disconnect_exports_ledger()]] - code - gateway/tests/test_killswitch_modes.py
-- [[.test_freeze_pauses_containers()]] - code - gateway/tests/test_killswitch_modes.py
-- [[.test_has_confirmation_prompt()]] - code - gateway/tests/test_killswitch_modes.py
-- [[.test_has_usage_function()]] - code - gateway/tests/test_killswitch_modes.py
-- [[.test_invalid_mode_shows_usage()]] - code - gateway/tests/test_killswitch_modes.py
-- [[.test_paranoid_env_has_kill_switch()]] - code - gateway/tests/test_killswitch_modes.py
-- [[.test_paranoid_env_kill_switch_action()]] - code - gateway/tests/test_killswitch_modes.py
-- [[.test_recommended_env_has_kill_switch()]] - code - gateway/tests/test_killswitch_modes.py
-- [[.test_script_exists()]] - code - gateway/tests/test_killswitch_modes.py
-- [[.test_script_is_executable()]] - code - gateway/tests/test_killswitch_modes.py
-- [[.test_sets_strict_mode()]] - code - gateway/tests/test_killswitch_modes.py
-- [[.test_supports_disconnect_mode()]] - code - gateway/tests/test_killswitch_modes.py
-- [[.test_supports_freeze_mode()]] - code - gateway/tests/test_killswitch_modes.py
-- [[.test_supports_shutdown_mode()]] - code - gateway/tests/test_killswitch_modes.py
-- [[Kill switch configuration in example configs.]] - rationale - gateway/tests/test_killswitch_modes.py
-- [[TestKillSwitchConfig]] - code - gateway/tests/test_killswitch_modes.py
-- [[TestKillSwitchScript]] - code - gateway/tests/test_killswitch_modes.py
-- [[Verify the kill switch script structure and modes.]] - rationale - gateway/tests/test_killswitch_modes.py
-- [[test_killswitch_modes.py]] - code - gateway/tests/test_killswitch_modes.py
+- [[Anthropic returns the Claude.ai OAuth quota copy with HTTP 400     (wrapped as i]] - rationale - gateway/tests/test_llm_quota_detector.py
+- [[Generic 400 validation errors must NOT trigger failover.]] - rationale - gateway/tests/test_llm_quota_detector.py
+- [[Return (True, token) if the response indicates a billingquota wall.      The st]] - rationale - gateway/proxy/llm_quota_detector.py
+- [[_is_anthropic_quota()]] - code - gateway/proxy/llm_quota_detector.py
+- [[_is_google_quota()]] - code - gateway/proxy/llm_quota_detector.py
+- [[_is_openai_quota()]] - code - gateway/proxy/llm_quota_detector.py
+- [[is_quota_exhausted()]] - code - gateway/proxy/llm_quota_detector.py
+- [[llm_quota_detector.py]] - code - gateway/proxy/llm_quota_detector.py
+- [[test_200_never_triggers()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[test_400_without_quota_substring_not_flagged()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[test_500_never_triggers()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[test_detect_anthropic_400_oauth_extra_usage()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[test_detect_anthropic_credit_balance_substring()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[test_detect_anthropic_extra_usage()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[test_detect_anthropic_rate_limit_type_quota_message()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[test_detect_anthropic_settings_url()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[test_detect_google_resource_exhausted()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[test_detect_openai_insufficient_quota()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[test_llm_quota_detector.py]] - code - gateway/tests/test_llm_quota_detector.py
+- [[test_no_false_positive_on_anthropic_request_rate_limit()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[test_non_json_body_anthropic_429_no_substring_match()]] - code - gateway/tests/test_llm_quota_detector.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,3 +38,14 @@ members: 21
 TABLE source_file, type FROM #community/Community_425
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 4 edges to [[_COMMUNITY_Community 310]]
+- 1 edge to [[_COMMUNITY_Community 126]]
+- 1 edge to [[_COMMUNITY_Community 129]]
+- 1 edge to [[_COMMUNITY_Community 978]]
+
+## Top bridge nodes
+- [[is_quota_exhausted()]] - degree 20, connects to 2 communities
+- [[llm_quota_detector.py]] - degree 7, connects to 2 communities
+- [[test_llm_quota_detector.py]] - degree 17, connects to 1 community

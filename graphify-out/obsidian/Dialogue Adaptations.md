@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-socrates/SKILL.md"
 type: "document"
-community: "Community 608"
+community: "Community 1291"
 location: "L142"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_608
+  - community/Community_1291
 ---
 
 # Dialogue Adaptations
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OKE Channel — CPA Exam Prep Dialogue Guidelines]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_608
+#graphify/document #graphify/EXTRACTED #community/Community_1291

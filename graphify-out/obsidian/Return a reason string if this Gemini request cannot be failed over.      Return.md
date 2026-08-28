@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/gemini_openai_translator.py"
 type: "rationale"
-community: "Community 142"
+community: "Community 143"
 location: "L46"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_142
+  - community/Community_143
 ---
 
 # Return a reason string if this Gemini request cannot be failed over.      Return
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[gemini_failover_unsupported_reason()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_142
+#graphify/rationale #graphify/EXTRACTED #community/Community_143

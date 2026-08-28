@@ -1,30 +1,32 @@
 ---
 type: community
+cohesion: 0.12
 members: 17
 ---
 
 # Community 544
 
+**Cohesion:** 0.12 - loosely connected
 **Members:** 17 nodes
 
 ## Members
-- [[Create Test Script]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[Google Calendar & Contacts - Quick Setup]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[Install Node CalDAV Client]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[Option A Simple (App Password + CalDAV) - RECOMMENDED FOR NOW]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[Option B Full (OAuth2 + Google APIs) - Better for production]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[Run Test]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[Step 1 Create Google Cloud Project]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[Step 2 Create OAuth Credentials]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[Step 3 Get OAuth Token (One-Time)]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[Step 4 Use Google Calendar]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[⚡ Fastest Path Forward]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[✅ Next Steps]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[🎮 Option B Using Google APIs (Better but requires OAuth)]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[🎯 My Recommendation]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[🎯 Two Options]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[📊 Comparison]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[🚀 Option A Simple Setup (5 minutes)]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
+- [[Action groups]] - document - skills/openclaw/slack/SKILL.md
+- [[Actions_1]] - document - skills/openclaw/slack/SKILL.md
+- [[Delete a message]] - document - skills/openclaw/slack/SKILL.md
+- [[Edit a message]] - document - skills/openclaw/slack/SKILL.md
+- [[Emoji list]] - document - skills/openclaw/slack/SKILL.md
+- [[Ideas to try]] - document - skills/openclaw/slack/SKILL.md
+- [[Inputs to collect]] - document - skills/openclaw/slack/SKILL.md
+- [[List pinned items]] - document - skills/openclaw/slack/SKILL.md
+- [[List reactions]] - document - skills/openclaw/slack/SKILL.md
+- [[Member info]] - document - skills/openclaw/slack/SKILL.md
+- [[Overview_29]] - document - skills/openclaw/slack/SKILL.md
+- [[Pin a message]] - document - skills/openclaw/slack/SKILL.md
+- [[React to a message]] - document - skills/openclaw/slack/SKILL.md
+- [[Read recent messages]] - document - skills/openclaw/slack/SKILL.md
+- [[SKILL_229]] - document - skills/openclaw/slack/SKILL.md
+- [[Send a message]] - document - skills/openclaw/slack/SKILL.md
+- [[Slack Actions]] - document - skills/openclaw/slack/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,7 +36,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 236]]
+- 1 edge to [[_COMMUNITY_Community 401]]
 
 ## Top bridge nodes
-- [[Google Calendar & Contacts - Quick Setup]] - degree 8, connects to 1 community
+- [[SKILL_229]] - degree 2, connects to 1 community

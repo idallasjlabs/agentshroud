@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "Community 870"
+community: "PII Sanitizer & E2E Tests"
 location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_870
+  - community/PII_Sanitizer__E2E_Tests
 ---
 
 # sanitizer()
@@ -15,4 +15,4 @@ tags:
 - [[PIISanitizer]] - `calls` [EXTRACTED]
 - [[test_e2e_watchtower.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_870
+#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer__E2E_Tests

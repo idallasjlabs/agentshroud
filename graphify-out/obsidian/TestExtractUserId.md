@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "Community 1340"
+community: "Middleware & Lifespan"
 location: "L681"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1340
+  - community/Middleware__Lifespan
 ---
 
 # TestExtractUserId
@@ -22,4 +22,4 @@ tags:
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1340
+#graphify/code #graphify/EXTRACTED #community/Middleware__Lifespan

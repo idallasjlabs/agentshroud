@@ -1,17 +1,19 @@
 ---
 type: community
+cohesion: 0.50
 members: 4
 ---
 
 # Community 1360
 
+**Cohesion:** 0.50 - moderately connected
 **Members:** 4 nodes
 
 ## Members
-- [[.test_collaborator_hidden_channel_exfil_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_collaborator_pairing_access_probe_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[Hidden-channel exfil prompts should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Pairingaccess bootstrap probes should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_blocked_command_with_fullwidth_mention_and_punctuation_is_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_blocked_command_with_zero_width_mention_and_punctuation_is_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[Fullwidth + mentionpunctuation blocked command variants should still be quarant]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Zero-width + mentionpunctuation blocked command variants should still be quaran]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +23,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_Community 2]]
-- 2 edges to [[_COMMUNITY_Community 32]]
+- 10 edges to [[_COMMUNITY_Telegram Proxy Inbound]]
+- 2 edges to [[_COMMUNITY_Community 31]]
 
 ## Top bridge nodes
-- [[.test_collaborator_hidden_channel_exfil_request_is_blocked_and_quarantined()]] - degree 8, connects to 2 communities
-- [[.test_collaborator_pairing_access_probe_is_blocked_and_quarantined()]] - degree 7, connects to 2 communities
+- [[.test_blocked_command_with_zero_width_mention_and_punctuation_is_quarantined()]] - degree 8, connects to 2 communities
+- [[.test_blocked_command_with_fullwidth_mention_and_punctuation_is_quarantined()]] - degree 7, connects to 2 communities

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/http_proxy.py"
 type: "code"
-community: "Community 671"
+community: "Community 665"
 location: "L174"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_671
+  - community/Community_665
 ---
 
 # StreamReader
@@ -19,4 +19,4 @@ tags:
 - [[WebProxy_1]] - `uses` [INFERRED]
 - [[WebProxyConfig]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_671
+#graphify/code #graphify/EXTRACTED #community/Community_665

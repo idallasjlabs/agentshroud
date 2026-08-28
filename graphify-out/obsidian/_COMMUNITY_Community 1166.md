@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1166
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_28]] - document - .agents/skills/i-sav/README.md
-- [[README_28]] - document - .agents/skills/i-sav/README.md
-- [[Related Skills_31]] - document - .agents/skills/i-sav/README.md
-- [[System Audit Vault]] - document - .agents/skills/i-sav/README.md
-- [[Usage_31]] - document - .agents/skills/i-sav/README.md
+- [[Purpose_36]] - document - .agents/skills/i-vulcan/README.md
+- [[README_36]] - document - .agents/skills/i-vulcan/README.md
+- [[Related Skills_39]] - document - .agents/skills/i-vulcan/README.md
+- [[Usage_39]] - document - .agents/skills/i-vulcan/README.md
+- [[Vulcan — Subject Matter Auditor]] - document - .agents/skills/i-vulcan/README.md
 
 ## Live Query (requires Dataview plugin)
 

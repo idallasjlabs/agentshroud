@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Community 2"
+community: "Telegram Proxy Inbound"
 location: "L1163"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2
+  - community/Telegram_Proxy_Inbound
 ---
 
 # Owner /addcollab without target should return usage guidance.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_owner_addcollab_requires_target()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Inbound

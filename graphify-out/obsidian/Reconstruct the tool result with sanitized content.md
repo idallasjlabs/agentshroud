@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer.py"
 type: "rationale"
-community: "Community 513"
+community: "Community 55"
 location: "L163"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_513
+  - community/Community_55
 ---
 
 # Reconstruct the tool result with sanitized content
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._reconstruct_result()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_513
+#graphify/rationale #graphify/EXTRACTED #community/Community_55

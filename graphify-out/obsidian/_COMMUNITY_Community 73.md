@@ -1,57 +1,83 @@
 ---
 type: community
-members: 44
+cohesion: 0.09
+members: 68
 ---
 
 # Community 73
 
-**Members:** 44 nodes
+**Cohesion:** 0.09 - loosely connected
+**Members:** 68 nodes
 
 ## Members
-- [[.__init__()]] - code - .agents/skills/i-browser/scripts/browse.py
-- [[._classify_risk()]] - code - .agents/skills/i-browser/scripts/browse.py
-- [[._domain_matches()]] - code - .agents/skills/i-browser/scripts/browse.py
-- [[._init_browser()]] - code - .agents/skills/i-browser/scripts/browse.py
-- [[._load_config()]] - code - .agents/skills/i-browser/scripts/browse.py
-- [[._log_action()]] - code - .agents/skills/i-browser/scripts/browse.py
-- [[._log_security_event()]] - code - .agents/skills/i-browser/scripts/browse.py
-- [[._requires_approval()]] - code - .agents/skills/i-browser/scripts/browse.py
-- [[._take_screenshot()]] - code - .agents/skills/i-browser/scripts/browse.py
-- [[._validate_url()]] - code - .agents/skills/i-browser/scripts/browse.py
-- [[.click()]] - code - .agents/skills/i-browser/scripts/browse.py
-- [[.close()]] - code - .agents/skills/i-browser/scripts/browse.py
-- [[.detect_captcha()]] - code - .agents/skills/i-browser/scripts/browse.py
-- [[.extract()]] - code - .agents/skills/i-browser/scripts/browse.py
-- [[.fill_field()]] - code - .agents/skills/i-browser/scripts/browse.py
-- [[.get_audit_log()]] - code - .agents/skills/i-browser/scripts/browse.py
-- [[.navigate()]] - code - .agents/skills/i-browser/scripts/browse.py
-- [[CLI interface for SecureBrowser]] - rationale - .agents/skills/i-browser/scripts/browse.py
-- [[Check if action requires approval          Security Approval queue integration]] - rationale - .agents/skills/i-browser/scripts/browse.py
-- [[Check if domain matches pattern (supports wildcards)]] - rationale - .agents/skills/i-browser/scripts/browse.py
-- [[Classify action risk level          Security Determines if approval is needed]] - rationale - .agents/skills/i-browser/scripts/browse.py
-- [[Clean up browser resources]] - rationale - .agents/skills/i-browser/scripts/browse.py
-- [[Click an element          Security Risk classification for destructive actions]] - rationale - .agents/skills/i-browser/scripts/browse.py
-- [[Detect if CAPTCHA is present on page]] - rationale - .agents/skills/i-browser/scripts/browse.py
-- [[Extract data from page          Security No credential extraction allowed]] - rationale - .agents/skills/i-browser/scripts/browse.py
-- [[Fill a single form field          Security Risk classification, approval for se]] - rationale - .agents/skills/i-browser/scripts/browse.py
-- [[Initialize browser with security settings]] - rationale - .agents/skills/i-browser/scripts/browse.py
-- [[Load security configuration]] - rationale - .agents/skills/i-browser/scripts/browse.py
-- [[Log browser action to audit trail]] - rationale - .agents/skills/i-browser/scripts/browse.py
-- [[Log security-related events]] - rationale - .agents/skills/i-browser/scripts/browse.py
-- [[Navigate to URL          Security URL validation, audit logging]] - rationale - .agents/skills/i-browser/scripts/browse.py
-- [[Raised when security policy is violated]] - rationale - .agents/skills/i-browser/scripts/browse.py
-- [[Return complete audit log]] - rationale - .agents/skills/i-browser/scripts/browse.py
-- [[Risk classification for browser actions]] - rationale - .agents/skills/i-browser/scripts/browse.py
-- [[RiskLevel]] - code - .agents/skills/i-browser/scripts/browse.py
-- [[Secure browser automation with enterprise controls      Security guarantees]] - rationale - .agents/skills/i-browser/scripts/browse.py
-- [[SecureBrowser]] - code - .agents/skills/i-browser/scripts/browse.py
-- [[Security configuration for browser automation]] - rationale - .agents/skills/i-browser/scripts/browse.py
-- [[SecurityConfig]] - code - .agents/skills/i-browser/scripts/browse.py
-- [[SecurityError]] - code - .agents/skills/i-browser/scripts/browse.py
-- [[Take screenshot and save to audit directory]] - rationale - .agents/skills/i-browser/scripts/browse.py
-- [[Validate URL against allowlistblocklist          Security This is the primary]] - rationale - .agents/skills/i-browser/scripts/browse.py
-- [[browse.py]] - code - .agents/skills/i-browser/scripts/browse.py
-- [[main()]] - code - .agents/skills/i-browser/scripts/browse.py
+- [[.by_name()]] - code - gateway/skills/manifest.py
+- [[.client()_7]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[.test_build_excludes_manifest_json_itself()]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[.test_build_includes_all_files()]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[.test_build_is_sorted_deterministically()]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[.test_by_name_lookup()]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[.test_deploy_copies_files_to_dest()]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[.test_deploy_is_idempotent()]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[.test_deploy_overwrites_changed_content()]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[.test_deploy_to_multiple_destinations()]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[.test_deploy_writes_manifest_json()]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[.test_drift_detected_on_hash_mismatch()]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[.test_drift_detected_on_missing_file()]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[.test_dry_run_does_not_mutate_existing_dest()]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[.test_dry_run_writes_nothing_to_empty_dest()]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[.test_from_empty_source_raises()]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[.test_hash_changes_when_content_changes()]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[.test_hash_is_sha256_of_content()]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[.test_manifest_json_in_source_is_excluded()]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[.test_missing_source_raises()]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[.test_no_drift_returns_empty_list()]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[.test_plan_classifies_create_when_dest_absent()]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[.test_plan_classifies_skip_when_hash_matches()]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[.test_plan_classifies_update_when_content_differs()]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[.test_plan_is_deterministic()]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[.test_plan_is_pure_writes_nothing()]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[.test_plan_maps_canonical_to_each_bot_destination()]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[.test_planned_action_is_immutable()]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[.test_real_deploy_returns_actions_too()]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[.test_reload_requires_auth()]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[.test_reload_returns_200_with_skills_list()]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[.test_reload_returns_500_on_source_missing()]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[.test_returns_all_drifted_items()]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[.test_serialise_contains_version_and_timestamp()]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[.test_serialise_roundtrip()]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[.to_dict()_15]] - code - gateway/skills/manifest.py
+- [[.to_dict()_16]] - code - gateway/skills/manifest.py
+- [[.to_json()]] - code - gateway/skills/manifest.py
+- [[A single item in the skills manifest.]] - rationale - gateway/skills/manifest.py
+- [[An empty source directory must raise ValueError.]] - rationale - gateway/tests/test_skills_manifest_sync.py
+- [[Compute the deploy plan without mutating the filesystem.      Pure with respect]] - rationale - gateway/skills/manifest.py
+- [[Copy all files in manifest from source to each per-bot destination.      Beh]] - rationale - gateway/skills/manifest.py
+- [[In-memory representation of the skillsagentsMCP manifest.]] - rationale - gateway/skills/manifest.py
+- [[ManifestEntry]] - code - gateway/skills/manifest.py
+- [[One unit of work in a deploy plan (canonical entry - per-bot path).      ``acti]] - rationale - gateway/skills/manifest.py
+- [[Path_39]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[PlannedAction]] - code - gateway/skills/manifest.py
+- [[Return names of entries that are missing or hash-mismatched in dest.      Retu]] - rationale - gateway/skills/manifest.py
+- [[SkillsManifest]] - code - gateway/skills/manifest.py
+- [[TestClient_1]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[TestDeployDryRun]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[TestDeployManifest]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[TestManifestEntry]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[TestPlanDeploy]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[TestSkillsManifest]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[TestSkillsReloadEndpoint]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[TestValidateManifest]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[The plan is a pure function it maps canonical source entries to each     per-bo]] - rationale - gateway/tests/test_skills_manifest_sync.py
+- [[Write {relative_path content} under root.]] - rationale - gateway/tests/test_skills_manifest_sync.py
+- [[_sha256()_1]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[_write_tree()_1]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[deploy_manifest()]] - code - gateway/skills/manifest.py
+- [[gatewayskillsmanifest.py (SkillsManifest)]] - code - gateway/skills/manifest.py
+- [[manifest.json must never appear as an entry even when present in source.]] - rationale - gateway/tests/test_skills_manifest_sync.py
+- [[manifest.py]] - code - gateway/skills/manifest.py
+- [[plan_deploy()]] - code - gateway/skills/manifest.py
+- [[test_skills_manifest_sync.py]] - code - gateway/tests/test_skills_manifest_sync.py
+- [[validate_manifest()]] - code - gateway/skills/manifest.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -61,10 +87,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 78]]
-- 1 edge to [[_COMMUNITY_Community 38]]
+- 5 edges to [[_COMMUNITY_Community 553]]
+- 4 edges to [[_COMMUNITY_Community 37]]
+- 2 edges to [[_COMMUNITY_Community 272]]
+- 2 edges to [[_COMMUNITY_Community 102]]
+- 1 edge to [[_COMMUNITY_Community 113]]
+- 1 edge to [[_COMMUNITY_Community 29]]
 
 ## Top bridge nodes
-- [[SecurityError]] - degree 7, connects to 1 community
-- [[browse.py]] - degree 6, connects to 1 community
-- [[RiskLevel]] - degree 6, connects to 1 community
+- [[SkillsManifest]] - degree 25, connects to 4 communities
+- [[deploy_manifest()]] - degree 25, connects to 2 communities
+- [[test_skills_manifest_sync.py]] - degree 18, connects to 2 communities
+- [[ManifestEntry]] - degree 15, connects to 1 community
+- [[plan_deploy()]] - degree 13, connects to 1 community

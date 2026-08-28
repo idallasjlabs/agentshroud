@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.2/red-team-assessment-v1.2.0.md"
 type: "concept"
-community: "Community 923"
+community: "Community 770"
 location: "RT-MB2 code trace"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_923
+  - community/Community_770
 ---
 
 # SharedMemoryManager: Per-User Per-Bot Memory Isolation
@@ -16,4 +16,4 @@ tags:
 - [[Red Team Assessment v1.2.0]] - `references` [EXTRACTED]
 - [[Workstream A Groups and Teamwork in OpenClaw]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_923
+#graphify/concept #graphify/EXTRACTED #community/Community_770

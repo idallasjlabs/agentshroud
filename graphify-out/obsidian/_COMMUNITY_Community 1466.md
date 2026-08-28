@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 1.00
 members: 2
 ---
 
 # Community 1466
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[SKILL_155]] - document - docker/config/openclaw/skills/i-kanban/SKILL.md
-- [[Skill kanban_2]] - document - docker/config/openclaw/skills/i-kanban/SKILL.md
+- [[SKILL_112]] - document - docker/config/hermes/skills/i-scrum/SKILL.md
+- [[Skill scrum_1]] - document - docker/config/hermes/skills/i-scrum/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

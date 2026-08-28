@@ -1,34 +1,36 @@
 ---
 type: community
+cohesion: 0.11
 members: 21
 ---
 
 # Community 414
 
+**Cohesion:** 0.11 - loosely connected
 **Members:** 21 nodes
 
 ## Members
-- [[Create SVG files that embed the logo PNGs as base64 data URIs.      These are sc]] - rationale - scripts/generate_branding_assets.py
-- [[FreeTypeFont]] - code - scripts/generate_branding_assets.py
-- [[Image]] - code - scripts/generate_branding_assets.py
-- [[Load source logo, optionally resize and composite onto bg.]] - rationale - scripts/generate_branding_assets.py
-- [[Paste transparent logo centred on a solid-colour canvas.]] - rationale - scripts/generate_branding_assets.py
-- [[Path_45]] - code - scripts/generate_branding_assets.py
-- [[ensure()]] - code - scripts/generate_branding_assets.py
-- [[generate_branding_assets.py]] - code - scripts/generate_branding_assets.py
-- [[generate_email()]] - code - scripts/generate_branding_assets.py
-- [[generate_favicons()]] - code - scripts/generate_branding_assets.py
-- [[generate_feature_icons()]] - code - scripts/generate_branding_assets.py
-- [[generate_icon_sizes()]] - code - scripts/generate_branding_assets.py
-- [[generate_presentation()]] - code - scripts/generate_branding_assets.py
-- [[generate_social()]] - code - scripts/generate_branding_assets.py
-- [[generate_svg_logos()]] - code - scripts/generate_branding_assets.py
-- [[generate_variants()]] - code - scripts/generate_branding_assets.py
-- [[get_font()]] - code - scripts/generate_branding_assets.py
-- [[icon_on_canvas()]] - code - scripts/generate_branding_assets.py
-- [[load_logo()]] - code - scripts/generate_branding_assets.py
-- [[main()_21]] - code - scripts/generate_branding_assets.py
-- [[save()_1]] - code - scripts/generate_branding_assets.py
+- [[1Password (op-proxy)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
+- [[Anthropic API]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
+- [[Approval Queue (human gate)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
+- [[Audit Ledger (SHA-256 hash only)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
+- [[Cron Scheduler (8 scheduled jobs)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
+- [[Execute Action (tool call  reply)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
+- [[GitHub API]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
+- [[HTTP CONNECT Proxy (domain allowlist)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
+- [[LLM Inference (OpenAI  Anthropic)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
+- [[MCP Inspector]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
+- [[OpenAI API]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
+- [[PII Sanitizer (Presidio  regex)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
+- [[Receive message  cron trigger]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
+- [[SSH Proxy]] - concept - docs/architecture/system-architecture.md
+- [[Telegram API]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
+- [[Telegram Input (@agentshroud_bot)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
+- [[Web UI Input (localhost18790)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
+- [[agentshroud-config volume (openclaw.json)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
+- [[iMessage Input (imsg-ssh bridge)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
+- [[ledger.db (90-day retention)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
+- [[ssh_proxy (approved hosts only)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,3 +38,15 @@ members: 21
 TABLE source_file, type FROM #community/Community_414
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 117]]
+- 1 edge to [[_COMMUNITY_Community 372]]
+- 1 edge to [[_COMMUNITY_Community 597]]
+- 1 edge to [[_COMMUNITY_Community 514]]
+- 1 edge to [[_COMMUNITY_Community 412]]
+
+## Top bridge nodes
+- [[Audit Ledger (SHA-256 hash only)]] - degree 7, connects to 3 communities
+- [[Approval Queue (human gate)]] - degree 3, connects to 1 community
+- [[ssh_proxy (approved hosts only)]] - degree 2, connects to 1 community

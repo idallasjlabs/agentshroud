@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "Community 482"
+community: "Community 122"
 location: "L920"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_482
+  - community/Community_122
 ---
 
 # TestBuildImageTargets
@@ -20,4 +20,4 @@ tags:
 - [[.test_whitespace_stripped_from_env_var()]] - `method` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_482
+#graphify/code #graphify/EXTRACTED #community/Community_122

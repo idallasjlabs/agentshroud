@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 1.00
 members: 2
 ---
 
 # Community 1432
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[SKILL_62]] - document - .agents/skills/i-value-stream-mapping/SKILL.md
-- [[Skill value-stream-mapping]] - document - .agents/skills/i-value-stream-mapping/SKILL.md
+- [[extraction-spec]] - document - .agents/skills/graphify/references/extraction-spec.md
+- [[graphify reference extraction subagent prompt]] - document - .agents/skills/graphify/references/extraction-spec.md
 
 ## Live Query (requires Dataview plugin)
 

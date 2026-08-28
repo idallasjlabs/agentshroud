@@ -1,19 +1,21 @@
 ---
 type: community
+cohesion: 0.40
 members: 6
 ---
 
 # Community 1105
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 6 nodes
 
 ## Members
-- [[Assess severity]] - concept - docs/diagrams/images/diagram-19-incident-response.svg
-- [[Incident detected]] - concept - docs/diagrams/images/diagram-19-incident-response.svg
-- [[P1 — Critical (respond immediately; owner Isaiah Jefferson; kill switch  revoke  rotate)]] - concept - docs/diagrams/images/diagram-19-incident-response.svg
-- [[P2 — High (respond within 1 hour; restart containers, rebuild image)]] - concept - docs/diagrams/images/diagram-19-incident-response.svg
-- [[P3 — Medium (respond within 4 hours; review logs, apply config fix)]] - concept - docs/diagrams/images/diagram-19-incident-response.svg
-- [[P4 — Low (resolve in next session; fix branch + PR)]] - concept - docs/diagrams/images/diagram-19-incident-response.svg
+- [[Contact_2]] - document - docs/project/legal/TRADEMARK.md
+- [[Standard Footer]] - document - docs/project/legal/TRADEMARK.md
+- [[TRADEMARK]] - document - docs/project/legal/TRADEMARK.md
+- [[Trademark Details]] - document - docs/project/legal/TRADEMARK.md
+- [[Trademark Notice_3]] - document - docs/project/legal/TRADEMARK.md
+- [[Usage Guidelines_3]] - document - docs/project/legal/TRADEMARK.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,3 +23,10 @@ members: 6
 TABLE source_file, type FROM #community/Community_1105
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_Community 1041]]
+- 1 edge to [[_COMMUNITY_Community 1258]]
+
+## Top bridge nodes
+- [[TRADEMARK]] - degree 5, connects to 2 communities

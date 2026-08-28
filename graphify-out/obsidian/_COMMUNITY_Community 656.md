@@ -1,28 +1,29 @@
 ---
 type: community
-members: 15
+cohesion: 0.14
+members: 14
 ---
 
 # Community 656
 
-**Members:** 15 nodes
+**Cohesion:** 0.14 - loosely connected
+**Members:** 14 nodes
 
 ## Members
-- [[jira_dev_ticket add_comment()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket build_basic_auth_header()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket build_comment_url()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket build_issue_url()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket build_op_proxy_request()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket build_tenant_info_url()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket build_transitions_url()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket create_issue()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket fetch_credentials()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket fetch_op_secret()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket find_transition_id()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket resolve_cloud_id()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket run()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket transition_issue()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket.py (OpenClaw copy)]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[API Call Structure_1]] - document - docker/config/hermes/skills/i-apollo/SKILL.md
+- [[Apollo — Audio Systems Producer_2]] - document - docker/config/hermes/skills/i-apollo/SKILL.md
+- [[Audio Quality Settings_1]] - document - docker/config/hermes/skills/i-apollo/SKILL.md
+- [[Error Handling_3]] - document - docker/config/hermes/skills/i-apollo/SKILL.md
+- [[Input Requirements_10]] - document - docker/config/hermes/skills/i-apollo/SKILL.md
+- [[Output_2]] - document - docker/config/hermes/skills/i-apollo/SKILL.md
+- [[Primary API Text-to-Dialogue_1]] - document - docker/config/hermes/skills/i-apollo/SKILL.md
+- [[Quality Checklist_9]] - document - docker/config/hermes/skills/i-apollo/SKILL.md
+- [[Quick Mode Create Podcast API_1]] - document - docker/config/hermes/skills/i-apollo/SKILL.md
+- [[Role_41]] - document - docker/config/hermes/skills/i-apollo/SKILL.md
+- [[SKILL_67]] - document - docker/config/hermes/skills/i-apollo/SKILL.md
+- [[Script Parsing_1]] - document - docker/config/hermes/skills/i-apollo/SKILL.md
+- [[Technical Specification_1]] - document - docker/config/hermes/skills/i-apollo/SKILL.md
+- [[Voice Configuration_1]] - document - docker/config/hermes/skills/i-apollo/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,14 +31,3 @@ members: 15
 TABLE source_file, type FROM #community/Community_656
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 245]]
-- 2 edges to [[_COMMUNITY_Community 163]]
-
-## Top bridge nodes
-- [[jira_dev_ticket run()]] - degree 7, connects to 2 communities
-- [[jira_dev_ticket build_basic_auth_header()]] - degree 4, connects to 1 community
-- [[jira_dev_ticket resolve_cloud_id()]] - degree 3, connects to 1 community
-- [[jira_dev_ticket build_op_proxy_request()]] - degree 2, connects to 1 community
-- [[jira_dev_ticket.py (OpenClaw copy)]] - degree 2, connects to 1 community

@@ -1,24 +1,23 @@
 ---
 type: community
-members: 11
+cohesion: 0.25
+members: 8
 ---
 
 # Community 974
 
-**Members:** 11 nodes
+**Cohesion:** 0.25 - loosely connected
+**Members:** 8 nodes
 
 ## Members
-- [[.test_bot_command_with_username_matches()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_bot_command_without_username_not_matched()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_caption_entities_supported()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_direct_mention_matches()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_empty_bot_username_never_matches()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_mention_case_insensitive()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_mention_different_bot_not_matched()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_no_entities_not_matched()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[Media messages use caption + caption_entities.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[TestBotIsMentioned]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[Unit tests for TelegramAPIProxy._bot_is_mentioned().]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[A. One-Click Install & Updates]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[B. Professional Branded Web Command Center]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[C. TextCLI Command Center]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[D. SSH Chat Interface]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[E. Full Documentation]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[F. Final Hardening + Release]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[G. Trademark  IP]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[v1.0.0 — Fortress (Polish + Public Release)]] - document - docs/planning/MASTER-FEATURE-LIST.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,10 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 124]]
-- 1 edge to [[_COMMUNITY_Community 6]]
-- 1 edge to [[_COMMUNITY_Community 4]]
-- 1 edge to [[_COMMUNITY_Community 32]]
+- 1 edge to [[_COMMUNITY_Community 423]]
 
 ## Top bridge nodes
-- [[TestBotIsMentioned]] - degree 13, connects to 4 communities
+- [[v1.0.0 — Fortress (Polish + Public Release)]] - degree 8, connects to 1 community

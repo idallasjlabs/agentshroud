@@ -1,14 +1,17 @@
 ---
 type: community
-members: 1
+cohesion: 1.00
+members: 2
 ---
 
 # Community 1560
 
-**Members:** 1 nodes
+**Cohesion:** 1.00 - tightly connected
+**Members:** 2 nodes
 
 ## Members
-- [[Generic AI Agent Integration (HTTP Proxy Mode)]] - document - docs/api/integration-guide.md
+- [[.test_risk_classification()]] - code - gateway/tests/test_outbound_filter.py
+- [[Test response risk level classification.]] - rationale - gateway/tests/test_outbound_filter.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -16,3 +19,9 @@ members: 1
 TABLE source_file, type FROM #community/Community_1560
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 996]]
+
+## Top bridge nodes
+- [[.test_risk_classification()]] - degree 2, connects to 1 community

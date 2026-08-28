@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_filter.py"
 type: "code"
-community: "Community 46"
+community: "Memory Lifecycle & Egress Filtering"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_46
+  - community/Memory_Lifecycle__Egress_Filtering
 ---
 
 # test_dns_filter.py
@@ -31,4 +31,4 @@ tags:
 - [[strict_filter()]] - `contains` [EXTRACTED]
 - [[test_dns_canvas_coverage.py]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_46
+#graphify/code #graphify/EXTRACTED #community/Memory_Lifecycle__Egress_Filtering

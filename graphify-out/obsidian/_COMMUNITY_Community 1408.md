@@ -1,16 +1,18 @@
 ---
 type: community
+cohesion: 0.67
 members: 3
 ---
 
 # Community 1408
 
+**Cohesion:** 0.67 - moderately connected
 **Members:** 3 nodes
 
 ## Members
-- [[check()_8]] - code - tests/startup_smoke/test_hermes_mcp_reconciliation.sh
-- [[test_hermes_mcp_reconciliation.sh]] - code - tests/startup_smoke/test_hermes_mcp_reconciliation.sh
-- [[test_hermes_mcp_reconciliation.sh script]] - code - tests/startup_smoke/test_hermes_mcp_reconciliation.sh
+- [[incident-response Skill (stub)]] - document - docker/config/openclaw/skills/i-incident-response/SKILL.md
+- [[kaizen Skill (stub)]] - document - docker/config/openclaw/skills/i-kaizen/SKILL.md
+- [[kanban Skill (stub)]] - document - docker/config/openclaw/skills/i-kanban/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

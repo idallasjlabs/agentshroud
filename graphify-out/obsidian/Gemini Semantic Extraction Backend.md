@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/SKILL.md"
 type: "concept"
-community: "Community 1646"
+community: "Community 1733"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1646
+  - community/Community_1733
 ---
 
 # Gemini Semantic Extraction Backend
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1646
+#graphify/concept #graphify/EXTRACTED #community/Community_1733

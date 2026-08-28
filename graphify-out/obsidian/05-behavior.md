@@ -1,12 +1,12 @@
 ---
 source_file: "docs/diagrams/05-behavior.md"
 type: "document"
-community: "Community 835"
+community: "Community 834"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_835
+  - community/Community_834
 ---
 
 # 05-behavior.md
@@ -19,4 +19,4 @@ tags:
 - [[State Machine — Approval Queue Item Lifecycle]] - `conceptually_related_to` [EXTRACTED]
 - [[State Machine — Bot Session  Context Lifecycle]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_835
+#graphify/document #graphify/EXTRACTED #community/Community_834

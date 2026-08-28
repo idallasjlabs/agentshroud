@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.20
 members: 10
 ---
 
 # Community 840
 
+**Cohesion:** 0.20 - loosely connected
 **Members:** 10 nodes
 
 ## Members
@@ -14,7 +16,7 @@ members: 10
 - [[Authentication Issues_2]] - document - docker/config/hermes/skills/i-mcpm/SKILL.md
 - [[Available MCP Servers_1]] - document - docker/config/hermes/skills/i-mcpm/SKILL.md
 - [[Common Errors_1]] - document - docker/config/hermes/skills/i-mcpm/SKILL.md
-- [[MCP Troubleshooting_1]] - document - docker/config/hermes/skills/i-mcpm/SKILL.md
+- [[MCP Troubleshooting]] - document - docker/config/hermes/skills/i-mcpm/SKILL.md
 - [[Role_56]] - document - docker/config/hermes/skills/i-mcpm/SKILL.md
 - [[SKILL_98]] - document - docker/config/hermes/skills/i-mcpm/SKILL.md
 - [[Skill MCP Tools Usage (MCP-TOOLS)_1]] - document - docker/config/hermes/skills/i-mcpm/SKILL.md

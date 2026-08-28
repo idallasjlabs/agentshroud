@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/alert_telegram_relay.py"
 type: "code"
-community: "Community 200"
+community: "Community 124"
 location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_200
+  - community/Community_124
 ---
 
 # Any
@@ -18,4 +18,4 @@ tags:
 - [[._coerce()]] - `references` [EXTRACTED]
 - [[._handle()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_200
+#graphify/code #graphify/EXTRACTED #community/Community_124

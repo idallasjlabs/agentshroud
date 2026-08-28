@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_SCRIPTS_REFERENCE.md"
 type: "document"
-community: "Community 343"
+community: "Community 346"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_343
+  - community/Community_346
 ---
 
 # verify-security.sh
@@ -16,4 +16,4 @@ tags:
 - [[SECURITY_SCRIPTS_REFERENCE]] - `references` [EXTRACTED]
 - [[VERIFICATION_RESULTS]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_343
+#graphify/document #graphify/EXTRACTED #community/Community_346

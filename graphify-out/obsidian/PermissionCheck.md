@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "code"
-community: "Community 106"
+community: "Community 39"
 location: "L132"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_106
+  - community/Community_39
 ---
 
 # PermissionCheck
@@ -21,9 +21,8 @@ tags:
 - [[MCPServerConfig]] - `uses` [INFERRED]
 - [[PermissionLevel]] - `uses` [INFERRED]
 - [[RBACConfig_1]] - `uses` [INFERRED]
-- [[Result of a permission check.]] - `rationale_for` [EXTRACTED]
 - [[Result of permission check.]] - `rationale_for` [EXTRACTED]
 - [[__init__.py_7]] - `imports` [EXTRACTED]
 - [[mcp_permissions.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_106
+#graphify/code #graphify/EXTRACTED #community/Community_39

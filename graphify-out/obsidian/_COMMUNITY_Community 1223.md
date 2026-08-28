@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1223
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[Data Validation (DATA-VAL)_2]] - document - docker/config/openclaw/skills/i-data/README.md
-- [[Purpose_83]] - document - docker/config/openclaw/skills/i-data/README.md
-- [[README_88]] - document - docker/config/openclaw/skills/i-data/README.md
-- [[Related Skills_89]] - document - docker/config/openclaw/skills/i-data/README.md
-- [[Usage_92]] - document - docker/config/openclaw/skills/i-data/README.md
+- [[Purpose_88]] - document - docker/config/openclaw/skills/i-mac/README.md
+- [[README_93]] - document - docker/config/openclaw/skills/i-mac/README.md
+- [[Related Skills_94]] - document - docker/config/openclaw/skills/i-mac/README.md
+- [[Usage_97]] - document - docker/config/openclaw/skills/i-mac/README.md
+- [[macOS System Administrator (MAC)_2]] - document - docker/config/openclaw/skills/i-mac/README.md
 
 ## Live Query (requires Dataview plugin)
 

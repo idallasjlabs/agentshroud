@@ -1,148 +1,146 @@
 ---
 type: community
-members: 135
+cohesion: 0.02
+members: 131
 ---
 
 # Community 17
 
-**Members:** 135 nodes
+**Cohesion:** 0.02 - loosely connected
+**Members:** 131 nodes
 
 ## Members
-- [[.__init__()_184]] - code - gateway/tests/test_soc_router_coverage.py
-- [[.__init__()_185]] - code - gateway/tests/test_soc_router_coverage.py
-- [[.__init__()_186]] - code - gateway/tests/test_soc_router_coverage.py
-- [[.__init__()_187]] - code - gateway/tests/test_soc_router_coverage.py
-- [[.get_recent_entries()_1]] - code - gateway/tests/test_soc_router_coverage.py
-- [[.is_group_admin()_2]] - code - gateway/tests/test_soc_router_coverage.py
-- [[.is_owner()_4]] - code - gateway/tests/test_soc_router_coverage.py
-- [[.model_dump()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[.model_dump()_1]] - code - gateway/tests/test_soc_router_coverage.py
-- [[.require()_1]] - code - gateway/tests/test_soc_router_coverage.py
-- [[Bug 1 fix 'ok' must reflect whether the removal actually took effect,     not b]] - rationale - gateway/tests/test_soc_router_coverage.py
-- [[FakeAuditStore_1]] - code - gateway/tests/test_soc_router_coverage.py
-- [[FakeCaller]] - code - gateway/tests/test_soc_router_coverage.py
-- [[FakeGroup]] - code - gateway/tests/test_soc_router_coverage.py
-- [[SOC agent-cves surfaces auto-registered under_review advisories honestly.]] - rationale - gateway/tests/test_soc_router_coverage.py
-- [[Stands in for SCLCaller RBAC require() is a no-op, owner is switchable.]] - rationale - gateway/tests/test_soc_router_coverage.py
-- [[_Svc]] - code - gateway/tests/test_soc_router_coverage.py
-- [[_fake_contributor_manager()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[_make_service_manager()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[gatewaysocauth.py (get_caller)]] - code - gateway/soc/auth.py
-- [[holder()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[state()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_add_collaborator()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_add_group_member_paths()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_agent_cves_known_and_unknown()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_agent_cves_registry_error()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_agent_cves_reports_under_review()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_approvals_missing_queue()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_approvals_pending()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_audit_export_unavailable()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_audit_verify_chain_raises()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_audit_verify_chain_unavailable()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_audit_verify_chain_valid()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_auth_login_dev_mode_omits_secure_flag()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_auth_login_no_configured_token()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_auth_login_success_sets_secure_cookie()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_auth_login_wrong_token()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_auth_ws_token()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_collaborator_activity_filters()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_collaborator_activity_no_tracker()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_collaborator_activity_pairing()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_config_integrity_acknowledge()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_correlation_fallback_builder()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_correlation_unavailable_on_error()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_correlation_via_engine()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_create_delegation_paths()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_create_group_paths()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_cve_report_error()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_dashboard_fallback_when_template_missing()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_dashboard_serves_template_with_cache_busting()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_delete_group_paths()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_docker_exec_bot_create_failures()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_docker_exec_bot_socket_error()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_docker_exec_bot_success_and_frame_parsing()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_egress_deny()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_egress_deny_missing_queue()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_egress_history_no_queue()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_egress_history_revoke_no_queue()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_egress_log_filters_egress_events()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_egress_rule_override_no_queue()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_egress_rule_remove_no_queue()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_emergency_block_confirmed()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_emergency_block_filter_raises_still_ok()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_emergency_block_requires_confirmation()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_fetch_latest_release_error()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_fetch_latest_release_success()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_file_hash_existing_and_missing()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_get_config_variants()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_get_group()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_get_modules_modes()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_get_modules_unavailable()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_get_updates_variants()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_get_user_found_and_missing()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_group_memory_clear()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_group_memory_clear_error()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_group_memory_read()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_health_healthy_and_degraded()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_killswitch_disconnect_owner_gate()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_killswitch_freeze()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_killswitch_shutdown()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_list_bots_default_and_configured()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_list_delegations()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_list_groups_empty_and_populated()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_list_services_and_bot_filter()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_list_users()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_llm_failover_stats()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_log_audit_survives_app_state_failure()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_minimal_dashboard_html_contents()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_pause_collaborator_endpoint()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_privacy_policies()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_remove_group_member_paths()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_rename_group_paths()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_revoke_collaborator()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_revoke_collaborator_ok_reflects_actual_result()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_revoke_delegation_paths()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_risk_defaults_low_on_error()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_risk_fallback_builder()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_risk_level_label_boundaries()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_risk_summary()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_risk_summary_fallback_on_error()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_risk_via_engine_critical()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_sbom_paths()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_scan_results()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_scanners_aggregate()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_scanners_aggregate_error()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_scanners_recent()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_scorecard_global_bot_and_error()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_security_alerts_dispatcher_raises()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_security_alerts_no_dispatcher()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_security_alerts_with_dispatcher()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_security_events_no_store()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_security_events_with_filters()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_service_logs()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_service_restart()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_service_start()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_service_stop_confirmation_then_stop()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_service_update()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_services_rebuild()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_set_group_mode_paths()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_set_log_level()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_set_module_mode_paths()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_set_user_collab_mode()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_set_user_role_invalid()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_set_user_role_non_owner_denied()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_set_user_role_owner_success()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_soc_router_coverage.py]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_ssh_compose_no_host()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_tool_acl()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_trivy_summary()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_unpause_collaborator_endpoint()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_update_display_name()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_upgrade_hermes_paths()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_upgrade_hermes_restarts_the_real_container_name()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[test_websocket_route_dispatch()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[update_service() must be called with the real container name     (agentshroud-he]] - rationale - gateway/tests/test_soc_router_coverage.py
+- [[.__init__()_62]] - code - gateway/security/collaborator_tracker.py
+- [[._append_contributor_log()]] - code - gateway/security/collaborator_tracker.py
+- [[._coerce_timestamp()]] - code - gateway/security/collaborator_tracker.py
+- [[._fake_get_updates_urlopen()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[._make_proxy_with_mock_buffer()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[._normalize_preview()]] - code - gateway/security/collaborator_tracker.py
+- [[._normalize_username()]] - code - gateway/security/collaborator_tracker.py
+- [[.get_activity()]] - code - gateway/security/collaborator_tracker.py
+- [[.get_activity_summary()]] - code - gateway/security/collaborator_tracker.py
+- [[.get_health()_1]] - code - gateway/security/collaborator_tracker.py
+- [[.record_activity()]] - code - gateway/security/collaborator_tracker.py
+- [[.test_collaboration_question()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_execute_verb_is_blocked()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_failed_write_makes_unhealthy()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_file_query_is_blocked()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_formatting_trick_question()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_greeting_bypasses_interrogative_requirement()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_greeting_good_morning_is_safe()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_greeting_hello_is_safe()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_greeting_hey_is_safe()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_greeting_hi_is_safe()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_initial_state_healthy()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_json_body_still_calls_mark_delivered()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_no_match_without_tokens()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_password_question()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_pii_question()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_protection_question()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_refuse_question()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_restrict_question()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_rewrite_known_runtime_errors_accepts_hyphen_delimiter()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_rewrite_known_runtime_errors_accepts_underscore_delimiter()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_rewrite_known_runtime_errors_handles_non_string_input()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_rewrite_known_runtime_errors_matches_cannot_to_access_variant()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_rewrite_known_runtime_errors_matches_healthcheck_skill_sandbox_error()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_rewrite_known_runtime_errors_matches_http_status_without_body()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_rewrite_known_runtime_errors_matches_memory_embedding_provider_error()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_rewrite_known_runtime_errors_matches_no_response_generated_phrase()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_rewrite_known_runtime_errors_requires_skill_marker_for_healthcheck_branch()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_rewrite_known_runtime_errors_returns_none_for_unrelated_text()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_sanitiz_question()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_security_model_question()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_url_encoded_body_calls_mark_delivered()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_what_can_you_question()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[10-digit real UID must still be written to JSONL and markdown.]] - rationale - gateway/tests/test_collaborator_tracker.py
+- [[Append one activity entry for any tracked collaborator or the owner.          Ar]] - rationale - gateway/security/collaborator_tracker.py
+- [[Best-effort float timestamp coercion for resilient log reads.]] - rationale - gateway/security/collaborator_tracker.py
+- [[Classifier for conceptual collaborator questions.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[CollaboratorActivityTracker_1]] - code - gateway/tests/test_lifespan_prune.py
+- [[CollaboratorActivityTracker]] - code - gateway/security/collaborator_tracker.py
+- [[CollaboratorActivityTracker.get_health() must return accurate counters.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Create a fake contributor markdown file for the given uid.]] - rationale - gateway/tests/test_lifespan_prune.py
+- [[IDs  10000 should be treated as test fixtures by the pruner heuristic.]] - rationale - gateway/tests/test_collaborator_tracker.py
+- [[JSON getUpdates body must still call mark_delivered (existing behaviour preserve]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Mirror activity into workspace contributor logs used by daily digests.]] - rationale - gateway/security/collaborator_tracker.py
+- [[Normalize previews to single-line safe text for JSONL + markdown mirrors.]] - rationale - gateway/security/collaborator_tracker.py
+- [[Normalize username for safe contributor-log tokenization.]] - rationale - gateway/security/collaborator_tracker.py
+- [[Owner messages are now recorded with is_owner=True (not silently dropped).]] - rationale - gateway/tests/test_collaborator_tracker.py
+- [[Owner's Telegram first_name with pipe chars is replaced by owner_display_name.]] - rationale - gateway/tests/test_collaborator_tracker.py
+- [[Path_9]] - code - gateway/security/collaborator_tracker.py
+- [[Path_31]] - code - gateway/tests/test_lifespan_prune.py
+- [[Real Telegram UIDs (9-10 digits) must NOT be pruned.]] - rationale - gateway/tests/test_collaborator_tracker.py
+- [[Real-UID markdown files must never be deleted by the prune pass.]] - rationale - gateway/tests/test_lifespan_prune.py
+- [[Return True when uid looks like a test fixture that should be silently dropped.]] - rationale - gateway/security/collaborator_tracker.py
+- [[Return a health snapshot suitable for statusdetail.]] - rationale - gateway/security/collaborator_tracker.py
+- [[Return activity entries sorted newest-first.          Args             since U]] - rationale - gateway/security/collaborator_tracker.py
+- [[Return aggregated statistics over all recorded activity.          Returns]] - rationale - gateway/security/collaborator_tracker.py
+- [[Run the same markdown-prune logic as lifespan.py and return pruned count.]] - rationale - gateway/tests/test_lifespan_prune.py
+- [[Short numeric UIDs ( 7 digits) must be silently dropped before any write.]] - rationale - gateway/tests/test_collaborator_tracker.py
+- [[Startup prune must remove fixture markdown files from every contributor dir.]] - rationale - gateway/tests/test_lifespan_prune.py
+- [[TestLooksLikeSafeCollaboratorInfoQuery]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestReplayBufferOffsetParsing]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestRuntimeRewriteHelpers]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestTrackerGetHealth]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Tracks collaborator messages at the gateway level.      Records every inbound me]] - rationale - gateway/security/collaborator_tracker.py
+- [[UIDs matching test_user prefix must be silently dropped.]] - rationale - gateway/tests/test_collaborator_tracker.py
+- [[URL-encoded getUpdates body must call mark_delivered with the correct int offset]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Unit tests for deterministic runtime error rewrite helper behavior.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Verify URL-encoded and JSON getUpdates bodies both trigger mark_delivered correc]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[_is_fixture_uid()]] - code - gateway/security/collaborator_tracker.py
+- [[_make_md()]] - code - gateway/tests/test_lifespan_prune.py
+- [[_prune_fixture_markdown()]] - code - gateway/tests/test_lifespan_prune.py
+- [[collaborator_tracker.py]] - code - gateway/security/collaborator_tracker.py
+- [[get_activity(bot_id=...) returns only entries matching that bot_id.]] - rationale - gateway/tests/test_collaborator_tracker.py
+- [[get_activity_summary returns a by_bot breakdown keyed by bot_id.]] - rationale - gateway/tests/test_collaborator_tracker.py
+- [[get_activity_summary returns empty by_bot when no log file exists.]] - rationale - gateway/tests/test_collaborator_tracker.py
+- [[log_file()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[record_activity with bot_id='hermes' stores bot_id in the entry.]] - rationale - gateway/tests/test_collaborator_tracker.py
+- [[record_activity without bot_id stores bot_id=None in the entry.]] - rationale - gateway/tests/test_collaborator_tracker.py
+- [[test_collaborator_entry_has_is_owner_false()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_collaborator_tracker.py]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_correlation_id_absent_when_not_provided()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_correlation_id_included_when_provided()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_fixture_uid_writes_blocked()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_get_activity_filters_by_bot_id()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_get_activity_ignores_non_numeric_timestamps()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_get_activity_respects_limit()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_get_activity_respects_since()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_get_activity_returns_empty_when_no_file()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_get_activity_returns_entries_newest_first()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_get_activity_summary_by_bot_empty_when_no_file()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_get_activity_summary_includes_by_bot()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_is_fixture_uid_blocks_short_numeric()]] - code - gateway/tests/test_lifespan_prune.py
+- [[test_is_fixture_uid_blocks_test_user_prefix()]] - code - gateway/tests/test_lifespan_prune.py
+- [[test_is_fixture_uid_passes_real_uids()]] - code - gateway/tests/test_lifespan_prune.py
+- [[test_lifespan_prune.py]] - code - gateway/tests/test_lifespan_prune.py
+- [[test_message_preview_newlines_normalized()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_message_preview_truncated()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_multiple_entries_appended()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_owner_correlation_id_is_stored()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_owner_display_name_overrides_pipe()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_owner_is_recorded_with_is_owner_flag()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_prune_keeps_real_uid_markdown()]] - code - gateway/tests/test_lifespan_prune.py
+- [[test_prune_walks_all_contributor_dirs()]] - code - gateway/tests/test_lifespan_prune.py
+- [[test_pruner_real_telegram_uids_not_flagged()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_pruner_short_numeric_ids_are_test_fixtures()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_real_uid_writes_unblocked()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_record_activity_mirror_handles_delimiter_chars_in_username()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_record_activity_mirror_is_single_line_for_multiline_message()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_record_activity_mirrors_to_contributor_daily_log()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_record_activity_stores_bot_id_none_when_omitted()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_record_activity_stores_bot_id_when_provided()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_records_known_collaborator()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_summary_counts()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_summary_empty_when_no_file()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_summary_handles_non_numeric_timestamps()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_summary_last_activity_is_latest_timestamp()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_test_user_prefix_blocked()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_unknown_user_is_skipped()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_unknown_user_recorded_when_dynamic_tracking_enabled()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[test_username_is_normalized_for_log_safety()]] - code - gateway/tests/test_collaborator_tracker.py
+- [[tracker()]] - code - gateway/tests/test_collaborator_tracker.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -152,15 +150,26 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 26 edges to [[_COMMUNITY_Community 109]]
-- 6 edges to [[_COMMUNITY_Community 15]]
-- 5 edges to [[_COMMUNITY_Community 9]]
-- 1 edge to [[_COMMUNITY_Community 19]]
-- 1 edge to [[_COMMUNITY_Community 818]]
+- 20 edges to [[_COMMUNITY_PII Sanitizer & E2E Tests]]
+- 5 edges to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
+- 4 edges to [[_COMMUNITY_Adversarial Injection Guards]]
+- 3 edges to [[_COMMUNITY_Community 28]]
+- 3 edges to [[_COMMUNITY_Community 96]]
+- 1 edge to [[_COMMUNITY_Community 239]]
+- 1 edge to [[_COMMUNITY_Community 486]]
+- 1 edge to [[_COMMUNITY_Community 434]]
+- 1 edge to [[_COMMUNITY_Community 693]]
+- 1 edge to [[_COMMUNITY_Community 408]]
+- 1 edge to [[_COMMUNITY_Community 336]]
+- 1 edge to [[_COMMUNITY_Community 80]]
+- 1 edge to [[_COMMUNITY_Community 591]]
+- 1 edge to [[_COMMUNITY_Community 816]]
+- 1 edge to [[_COMMUNITY_Community 775]]
+- 1 edge to [[_COMMUNITY_Community 93]]
 
 ## Top bridge nodes
-- [[test_soc_router_coverage.py]] - degree 151, connects to 5 communities
-- [[FakeGroup]] - degree 13, connects to 2 communities
-- [[FakeCaller]] - degree 12, connects to 2 communities
-- [[FakeAuditStore_1]] - degree 7, connects to 2 communities
-- [[_Svc]] - degree 7, connects to 2 communities
+- [[CollaboratorActivityTracker]] - degree 52, connects to 14 communities
+- [[TestLooksLikeSafeCollaboratorInfoQuery]] - degree 24, connects to 2 communities
+- [[TestRuntimeRewriteHelpers]] - degree 16, connects to 2 communities
+- [[TestReplayBufferOffsetParsing]] - degree 10, connects to 2 communities
+- [[TestTrackerGetHealth]] - degree 8, connects to 2 communities

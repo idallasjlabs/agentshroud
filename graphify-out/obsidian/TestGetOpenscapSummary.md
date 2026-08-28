@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "Community 541"
+community: "Community 539"
 location: "L378"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_541
+  - community/Community_539
 ---
 
 # TestGetOpenscapSummary
@@ -18,4 +18,4 @@ tags:
 - [[.test_warning_on_failures()]] - `method` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_541
+#graphify/code #graphify/EXTRACTED #community/Community_539

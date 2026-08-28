@@ -1,12 +1,12 @@
 ---
 source_file: "BRAND.md"
 type: "document"
-community: "Community 462"
+community: "Community 146"
 location: "L73"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_462
+  - community/Community_146
 ---
 
 # Communication Templates
@@ -18,4 +18,4 @@ tags:
 - [[Internal Alert (Telegram)]] - `contains` [EXTRACTED]
 - [[Stakeholder Notification]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_462
+#graphify/document #graphify/EXTRACTED #community/Community_146

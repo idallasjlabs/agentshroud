@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.2/blue-team-assessment-v1.2.0.md"
 type: "document"
-community: "Community 997"
+community: "Community 1001"
 location: "L61"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_997
+  - community/Community_1001
 ---
 
 # §3 — Bot Pipeline Integrity Checks
@@ -21,4 +21,4 @@ tags:
 - [[3.7 agentshroud-isolated network isolation]] - `contains` [EXTRACTED]
 - [[AgentShroud v1.2.0 — Blue Team Security Assessment]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_997
+#graphify/document #graphify/EXTRACTED #community/Community_1001

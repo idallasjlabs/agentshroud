@@ -1,28 +1,30 @@
 ---
 type: community
+cohesion: 0.13
 members: 15
 ---
 
 # Community 629
 
+**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
-- [[Added_3]] - document - CHANGELOG.md
-- [[Added_6]] - document - CHANGELOG.md
-- [[Changed_1]] - document - CHANGELOG.md
-- [[Fixed_4]] - document - CHANGELOG.md
-- [[Fixed_10]] - document - CHANGELOG.md
-- [[Removed]] - document - CHANGELOG.md
-- [[Security_2]] - document - CHANGELOG.md
-- [[Security_4]] - document - CHANGELOG.md
-- [[Security_10]] - document - CHANGELOG.md
-- [[Summary_5]] - document - CHANGELOG.md
-- [[Summary_11]] - document - CHANGELOG.md
-- [[Summary_23]] - document - CHANGELOG.md
-- [[0.1.0 - 2026-02-16]] - document - CHANGELOG.md
-- [[1.1.1 — fixguard-wiring-and-ops-hardening (2026-06-10)]] - document - CHANGELOG.md
-- [[1.3.0 Reliability (2026-07-21)]] - document - CHANGELOG.md
+- [[3. Round 2 Findings]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[E1 Tailscale sidecar on internal-only network cannot reach control plane]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[I1 Missing trailing newlines in route files]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[I2 Duplicated constants between `main.py` and `routesforward.py`]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[I3 `managednsblocklist` reads pihole password inline]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[I4 `AppState` class missing dynamically-set attributes]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[I5 Inline import on hot path in LLM proxy]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[W1 Duplicate `import time` in `dashboard.py`]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[W2 Redundant function-level `import threading` in `lifespan.py`]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[W3 Redundant function-level `import fnmatch` in `main.py`]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[W4 Tailscale image not pinned to SHA256 digest]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[W5 Hardcoded owner ID fallback `'1234567890'` in `lifespan.py`]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[🔴 ERRORS (must fix)]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[🟡 WARNINGS (should fix)]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[🟢 INFO (nice to have)]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,16 +34,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 984]]
-- 4 edges to [[_COMMUNITY_Community 169]]
-- 3 edges to [[_COMMUNITY_Community 1296]]
-- 1 edge to [[_COMMUNITY_Community 1332]]
-- 1 edge to [[_COMMUNITY_Community 646]]
-- 1 edge to [[_COMMUNITY_Community 1276]]
-- 1 edge to [[_COMMUNITY_Community 529]]
+- 1 edge to [[_COMMUNITY_Community 133]]
 
 ## Top bridge nodes
-- [[Security_2]] - degree 9, connects to 6 communities
-- [[1.1.1 — fixguard-wiring-and-ops-hardening (2026-06-10)]] - degree 10, connects to 3 communities
-- [[0.1.0 - 2026-02-16]] - degree 7, connects to 3 communities
-- [[1.3.0 Reliability (2026-07-21)]] - degree 6, connects to 1 community
+- [[3. Round 2 Findings]] - degree 4, connects to 1 community

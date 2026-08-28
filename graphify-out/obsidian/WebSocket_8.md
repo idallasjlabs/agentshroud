@@ -1,19 +1,21 @@
 ---
-source_file: "voice_gateway/server.py"
+source_file: "gateway/web/api.py"
 type: "code"
-community: "Community 115"
-location: "L423"
+community: "Community 37"
+location: "L882"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_115
+  - graphify/INFERRED
+  - community/Community_37
 ---
 
 # WebSocket
 
 ## Connections
-- [[_keepalive()]] - `references` [EXTRACTED]
-- [[_send_state()]] - `references` [EXTRACTED]
-- [[voice_endpoint()]] - `references` [EXTRACTED]
+- [[CitationVerifier]] - `uses` [INFERRED]
+- [[DraftEntry]] - `uses` [INFERRED]
+- [[IntelReportStore]] - `uses` [INFERRED]
+- [[ws_logs()]] - `references` [EXTRACTED]
+- [[ws_updates()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_115
+#graphify/code #graphify/INFERRED #community/Community_37

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "Community 512"
+community: "Community 771"
 location: "L682"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_512
+  - community/Community_771
 ---
 
 # TestScoreSupplyChain
@@ -17,4 +17,4 @@ tags:
 - [[.test_zero_when_no_sbom_dir()]] - `method` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_512
+#graphify/code #graphify/EXTRACTED #community/Community_771

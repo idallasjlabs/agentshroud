@@ -1,14 +1,17 @@
 ---
 type: community
-members: 1
+cohesion: 1.00
+members: 2
 ---
 
 # Community 1573
 
-**Members:** 1 nodes
+**Cohesion:** 1.00 - tightly connected
+**Members:** 2 nodes
 
 ## Members
-- [[MCP Integrations (GitHub, Atlassian, AWS, XMind)]] - concept - docs/architecture/agentic-os.md
+- [[MiddlewareManager Session Enforcement Tests]] - code - gateway/tests/test_session_isolation.py
+- [[SSHProxy.validate_cwd() Unit Tests]] - code - gateway/tests/test_ssh_endpoints.py
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,17 +1,19 @@
 ---
 type: community
+cohesion: 0.50
 members: 4
 ---
 
 # Community 1303
 
+**Cohesion:** 0.50 - moderately connected
 **Members:** 4 nodes
 
 ## Members
-- [[For --watch_2]] - document - docker/config/openclaw/skills/graphify/references/add-watch.md
-- [[For graphify add_2]] - document - docker/config/openclaw/skills/graphify/references/add-watch.md
-- [[add-watch_2]] - document - docker/config/openclaw/skills/graphify/references/add-watch.md
-- [[graphify reference add a URL and watch a folder_2]] - document - docker/config/openclaw/skills/graphify/references/add-watch.md
+- [[For git commit hook_2]] - document - docker/config/openclaw/skills/graphify/references/hooks.md
+- [[For native CLAUDE.md integration_2]] - document - docker/config/openclaw/skills/graphify/references/hooks.md
+- [[graphify reference commit hook and native CLAUDE.md integration_2]] - document - docker/config/openclaw/skills/graphify/references/hooks.md
+- [[hooks_2]] - document - docker/config/openclaw/skills/graphify/references/hooks.md
 
 ## Live Query (requires Dataview plugin)
 

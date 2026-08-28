@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/tts.py"
 type: "code"
-community: "Community 286"
+community: "Community 511"
 location: "L346"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_286
+  - community/Community_511
 ---
 
 # synthesize()
@@ -20,6 +20,5 @@ tags:
 - [[normalize_for_speech()]] - `calls` [EXTRACTED]
 - [[normalize_for_speech() — redaction-token + markdown normalization]] - `calls` [EXTRACTED]
 - [[tts.py]] - `contains` [EXTRACTED]
-- [[voice_endpoint() — voice WebSocket handler (IDLE→LISTENING→THINKING→SPEAKING state machine)]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_286
+#graphify/code #graphify/EXTRACTED #community/Community_511

@@ -1,25 +1,27 @@
 ---
 type: community
+cohesion: 0.17
 members: 12
 ---
 
 # Community 749
 
+**Cohesion:** 0.17 - loosely connected
 **Members:** 12 nodes
 
 ## Members
-- [[Emergency Hotfix_3]] - document - docker/config/hermes/skills/i-mc/SKILL.md
-- [[GSDE&G Development Master Checklist_1]] - document - docker/config/hermes/skills/i-mc/SKILL.md
-- [[Phase 1 · Plan & Branch  → `ggSKILL.md`_1]] - document - docker/config/hermes/skills/i-mc/SKILL.md
-- [[Phase 2 · TDD  → `tddSKILL.md`_1]] - document - docker/config/hermes/skills/i-mc/SKILL.md
-- [[Phase 3 · QA  → `qaSKILL.md`_1]] - document - docker/config/hermes/skills/i-mc/SKILL.md
-- [[Phase 4 · Code Review  → `crSKILL.md`_1]] - document - docker/config/hermes/skills/i-mc/SKILL.md
-- [[Phase 5 · Pull Request  → `prSKILL.md`_1]] - document - docker/config/hermes/skills/i-mc/SKILL.md
-- [[Phase 6 · CI  → `cicdSKILL.md`_1]] - document - docker/config/hermes/skills/i-mc/SKILL.md
-- [[Phase 7 · Deploy  → `psSKILL.md`_1]] - document - docker/config/hermes/skills/i-mc/SKILL.md
-- [[Quick Commands_1]] - document - docker/config/hermes/skills/i-mc/SKILL.md
-- [[SKILL_94]] - document - docker/config/hermes/skills/i-mc/SKILL.md
-- [[Skill Index_1]] - document - docker/config/hermes/skills/i-mc/SKILL.md
+- [[description of what this does_2]] - document - docker/config/openclaw/skills/i-athena/SKILL.md
+- [[Athena — Knowledge Distiller_4]] - document - docker/config/openclaw/skills/i-athena/SKILL.md
+- [[Input Requirements_21]] - document - docker/config/openclaw/skills/i-athena/SKILL.md
+- [[Output Format_26]] - document - docker/config/openclaw/skills/i-athena/SKILL.md
+- [[Persona_16]] - document - docker/config/openclaw/skills/i-athena/SKILL.md
+- [[Quality Checklist_19]] - document - docker/config/openclaw/skills/i-athena/SKILL.md
+- [[Role_78]] - document - docker/config/openclaw/skills/i-athena/SKILL.md
+- [[SKILL_132]] - document - docker/config/openclaw/skills/i-athena/SKILL.md
+- [[System Prompt_16]] - document - docker/config/openclaw/skills/i-athena/SKILL.md
+- [[User Prompt Template_8]] - document - docker/config/openclaw/skills/i-athena/SKILL.md
+- [[cheatsheet_2]] - document - docker/config/openclaw/skills/i-athena/SKILL.md
+- [[show_notes_2]] - document - docker/config/openclaw/skills/i-athena/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

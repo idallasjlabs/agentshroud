@@ -1,32 +1,41 @@
 ---
 type: community
-members: 19
+cohesion: 0.09
+members: 26
 ---
 
 # Community 319
 
-**Members:** 19 nodes
+**Cohesion:** 0.09 - loosely connected
+**Members:** 26 nodes
 
 ## Members
-- [[.__aenter__()]] - code - gateway/tests/test_cli_coverage.py
-- [[.__aexit__()]] - code - gateway/tests/test_cli_coverage.py
-- [[.__aiter__()]] - code - gateway/tests/test_cli_coverage.py
-- [[.__anext__()]] - code - gateway/tests/test_cli_coverage.py
-- [[.__call__()_3]] - code - gateway/tests/test_cli_coverage.py
-- [[.__init__()_144]] - code - gateway/tests/test_cli_coverage.py
-- [[.__init__()_145]] - code - gateway/tests/test_cli_coverage.py
-- [[.send()_1]] - code - gateway/tests/test_cli_coverage.py
-- [[.test_tail_ws_events_stream()]] - code - gateway/tests/test_cli_coverage.py
-- [[.test_tail_ws_logs_stream_uses_wss_and_log_filter()]] - code - gateway/tests/test_cli_coverage.py
-- [[.test_tail_ws_missing_websockets_package()]] - code - gateway/tests/test_cli_coverage.py
-- [[Async-iterable WebSocket double.]] - rationale - gateway/tests/test_cli_coverage.py
-- [[TestTailWS]] - code - gateway/tests/test_cli_coverage.py
-- [[_FakeConnect]] - code - gateway/tests/test_cli_coverage.py
-- [[_FakeWS]] - code - gateway/tests/test_cli_coverage.py
-- [[_install_fake_websockets()]] - code - gateway/tests/test_cli_coverage.py
-- [[_tail_ws()]] - code - gateway/cli/main.py
-- [[test_cli_coverage.py]] - code - gateway/tests/test_cli_coverage.py
-- [[test_main_entrypoint_runs_cli_group()]] - code - gateway/tests/test_cli_coverage.py
+- [[Auto-Notify on Completion]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[Bash Tool Parameters]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[Batch PR Reviews (parallel army!)]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[BuildingCreating]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[Claude Code]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[Codex CLI]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[Coding Agent (bash-first)]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[Flags]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[Gemini CLI]] - document - skills/openclaw/gemini/SKILL.md
+- [[Learnings (Jan 2026)]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[OpenClaw Dev Workflow (ODEV)]] - document - .agents/skills/i-odev/SKILL.md
+- [[OpenCode]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[PTY Mode Required for Interactive Coding Agents]] - rationale - skills/openclaw/coding-agent/SKILL.md
+- [[Parallel Issue Fixing with git worktrees]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[Pi Coding Agent]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[Pi Coding Agent CLI]] - concept - skills/openclaw/coding-agent/SKILL.md
+- [[Process Tool Actions (for background sessions)]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[Progress Updates (Critical)]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[Quick Start One-Shot Tasks]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[Reviewing PRs]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[SKILL_203]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[SKILL_206]] - document - skills/openclaw/gemini/SKILL.md
+- [[The Pattern workdir + background + pty]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[omlx DeepSeek-R1-Qwen3-8B (local model)]] - concept - .agents/skills/i-odev/SKILL.md
+- [[⚠️ PTY Mode Required!]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[⚠️ Rules]] - document - skills/openclaw/coding-agent/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,15 +45,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_Community 92]]
-- 7 edges to [[_COMMUNITY_Community 153]]
-- 7 edges to [[_COMMUNITY_Community 223]]
-- 2 edges to [[_COMMUNITY_Community 949]]
-- 1 edge to [[_COMMUNITY_Community 1128]]
+- 2 edges to [[_COMMUNITY_Community 1027]]
+- 1 edge to [[_COMMUNITY_Community 449]]
+- 1 edge to [[_COMMUNITY_Community 945]]
 
 ## Top bridge nodes
-- [[test_cli_coverage.py]] - degree 26, connects to 5 communities
-- [[_FakeWS]] - degree 8, connects to 1 community
-- [[_tail_ws()]] - degree 7, connects to 1 community
-- [[_FakeConnect]] - degree 7, connects to 1 community
-- [[TestTailWS]] - degree 5, connects to 1 community
+- [[OpenClaw Dev Workflow (ODEV)]] - degree 5, connects to 2 communities
+- [[SKILL_203]] - degree 9, connects to 1 community

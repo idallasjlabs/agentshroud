@@ -1,28 +1,30 @@
 ---
 type: community
+cohesion: 0.13
 members: 15
 ---
 
 # Community 633
 
+**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
-- [[Configuration  Environment Variables_8]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
-- [[Function Details_14]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
-- [[Key Classes  Functions_17]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
-- [[Methods Filtered (Inbound)]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
-- [[Methods Filtered (Outbound)]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
-- [[Purpose_135]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
-- [[Related_21]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
-- [[Responsibilities_19]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
-- [[TelegramAPIProxy._filter_inbound_updates(response_data)]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
-- [[TelegramAPIProxy._filter_outbound(body, content_type)]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
-- [[TelegramAPIProxy._forward_to_telegram(url, body, content_type)]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
-- [[TelegramAPIProxy.get_stats()]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
-- [[TelegramAPIProxy.proxy_request(bot_token, method, body, content_type)]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
-- [[telegram_proxy.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
-- [[telegram_proxy.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
+- [[ContainerConfig Defaults]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
+- [[Environment Variables_5]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
+- [[Function Details_26]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
+- [[IsolationVerifier.generate_compose()]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
+- [[IsolationVerifier.verify_network_isolation()]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
+- [[IsolationVerifier.verify_shared_nothing()]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
+- [[IsolationVerifier.verify_volume_isolation()]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
+- [[Key Classes  Functions_29]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
+- [[Mode Enforce vs Monitor]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
+- [[Purpose_147]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
+- [[Related_33]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
+- [[Responsibilities_31]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
+- [[Threat Model_2]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
+- [[agent_isolation.py_2]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
+- [[agent_isolation.py_1]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,3 +32,9 @@ members: 15
 TABLE source_file, type FROM #community/Community_633
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 650]]
+
+## Top bridge nodes
+- [[agent_isolation.py_2]] - degree 11, connects to 1 community

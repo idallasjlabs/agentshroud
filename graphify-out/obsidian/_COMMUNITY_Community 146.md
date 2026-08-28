@@ -1,35 +1,58 @@
 ---
 type: community
-members: 22
+cohesion: 0.06
+members: 43
 ---
 
 # Community 146
 
-**Members:** 22 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 43 nodes
 
 ## Members
-- [[Incident Response (INCIDENT)]] - document - .agents/skills/i-production/README.md
-- [[MCP Tools Usage (README)]] - document - .agents/skills/i-mcpm/README.md
-- [[MCP Tools Usage (SKILL)]] - document - .agents/skills/i-mcpm/SKILL.md
-- [[Mnemosyne Retention Engineer (README)]] - document - .agents/skills/i-mnemosyne/README.md
-- [[Mnemosyne Retention Engineer (SKILL)]] - document - .agents/skills/i-mnemosyne/SKILL.md
-- [[Oracle Feedback Analyst (README)]] - document - .agents/skills/i-oracle/README.md
-- [[Oracle Feedback Analyst (SKILL)]] - document - .agents/skills/i-oracle/SKILL.md
-- [[Project Management (PM)]] - document - .agents/skills/i-pm/README.md
-- [[Project Management (README)]] - document - .agents/skills/i-pm/README.md
-- [[Purpose_22]] - document - .agents/skills/i-pm/README.md
-- [[Purpose_24]] - document - .agents/skills/i-production/README.md
-- [[Quality Assurance (README)]] - document - .agents/skills/i-qa/README.md
-- [[README_22]] - document - .agents/skills/i-pm/README.md
-- [[README_24]] - document - .agents/skills/i-production/README.md
-- [[Related Skills_25]] - document - .agents/skills/i-pm/README.md
-- [[Related Skills_27]] - document - .agents/skills/i-production/README.md
-- [[Skills Guide (catalog)]] - document - .agents/skills/reference/SKILLS_GUIDE.md
-- [[System Audit Documentation (README)]] - document - .agents/skills/i-sad/README.md
-- [[System Audit Vault (i-sav)]] - document - .agents/skills/i-sav/SKILL.md
-- [[Usage_25]] - document - .agents/skills/i-pm/README.md
-- [[Usage_27]] - document - .agents/skills/i-production/README.md
-- [[incident-response]] - document - docs/operations/incident-response.md
+- [[AgentShroud Transparent Logo (SVG)]] - image - branding/logos/svg/logo-transparent.svg
+- [[AgentShroud™ Brand Guidelines]] - document - BRAND.md
+- [[AgentShroud™ Brand Guidelines_1]] - document - docker/config/openclaw/workspace/BRAND.md
+- [[Available Formats]] - document - branding/README.md
+- [[BRAND]] - document - BRAND.md
+- [[Brand Colors]] - document - branding/README.md
+- [[Brand Identity]] - document - BRAND.md
+- [[Brand Identity_2]] - document - docker/config/openclaw/workspace/BRAND.md
+- [[Color Palette]] - document - branding/README.md
+- [[Colors]] - document - BRAND.md
+- [[Colors_1]] - document - docker/config/openclaw/workspace/BRAND.md
+- [[Communication Templates]] - document - BRAND.md
+- [[Communication Templates_1]] - document - docker/config/openclaw/workspace/BRAND.md
+- [[Directory Structure]] - document - branding/README.md
+- [[Do's]] - document - branding/README.md
+- [[Don'ts]] - document - branding/README.md
+- [[Elevator pitch]] - document - BRAND.md
+- [[Elevator pitch_1]] - document - docker/config/openclaw/workspace/BRAND.md
+- [[File Formats]] - document - branding/README.md
+- [[Internal Alert (Telegram)]] - document - docs/security/incident-response.md
+- [[Key Messaging]] - document - BRAND.md
+- [[Key Messaging_1]] - document - docker/config/openclaw/workspace/BRAND.md
+- [[License]] - document - BRAND.md
+- [[License_1]] - document - docker/config/openclaw/workspace/BRAND.md
+- [[Logo Usage]] - document - BRAND.md
+- [[Logo Usage_1]] - document - branding/README.md
+- [[Logo Usage_3]] - document - docker/config/openclaw/workspace/BRAND.md
+- [[Logos]] - document - branding/README.md
+- [[Need Help]] - document - branding/README.md
+- [[One-liner]] - document - BRAND.md
+- [[One-liner_1]] - document - docker/config/openclaw/workspace/BRAND.md
+- [[Primary Color]] - document - branding/README.md
+- [[Social Handles]] - document - BRAND.md
+- [[Social Handles_1]] - document - docker/config/openclaw/workspace/BRAND.md
+- [[Stakeholder Notification]] - document - docs/security/incident-response.md
+- [[Trademark]] - document - BRAND.md
+- [[Trademark_1]] - document - docker/config/openclaw/workspace/BRAND.md
+- [[Typography_1]] - document - branding/README.md
+- [[Usage Guidelines]] - document - branding/README.md
+- [[Voice & Tone_1]] - document - BRAND.md
+- [[Voice & Tone_5]] - document - docker/config/openclaw/workspace/BRAND.md
+- [[What it is NOT]] - document - BRAND.md
+- [[What it is NOT_1]] - document - docker/config/openclaw/workspace/BRAND.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,12 +62,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 381]]
-- 2 edges to [[_COMMUNITY_Community 592]]
-- 1 edge to [[_COMMUNITY_Community 91]]
+- 2 edges to [[_COMMUNITY_Community 790]]
+- 1 edge to [[_COMMUNITY_Community 118]]
+- 1 edge to [[_COMMUNITY_Community 374]]
+- 1 edge to [[_COMMUNITY_Community 582]]
+- 1 edge to [[_COMMUNITY_Community 620]]
+- 1 edge to [[_COMMUNITY_Community 549]]
 
 ## Top bridge nodes
-- [[Skills Guide (catalog)]] - degree 9, connects to 2 communities
-- [[incident-response]] - degree 7, connects to 2 communities
-- [[Project Management (README)]] - degree 6, connects to 1 community
-- [[Quality Assurance (README)]] - degree 2, connects to 1 community
+- [[AgentShroud™ Brand Guidelines_1]] - degree 29, connects to 3 communities
+- [[Trademark]] - degree 4, connects to 2 communities
+- [[AgentShroud™ Brand Guidelines]] - degree 18, connects to 1 community
+- [[Communication Templates]] - degree 5, connects to 1 community

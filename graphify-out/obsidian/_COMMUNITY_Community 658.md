@@ -1,28 +1,29 @@
 ---
 type: community
-members: 15
+cohesion: 0.14
+members: 14
 ---
 
 # Community 658
 
-**Members:** 15 nodes
+**Cohesion:** 0.14 - loosely connected
+**Members:** 14 nodes
 
 ## Members
-- [[Atlas README]] - document - .agents/skills/i-atlas/README.md
-- [[Atlas — Curriculum Architect_1]] - document - .agents/skills/i-atlas/SKILL.md
-- [[Atlas — Curriculum Architect_7]] - document - .agents/skills/i-atlas/SKILL.md
-- [[Gleim CPA Review (OKE Channel)]] - concept - .agents/skills/i-atlas/SKILL.md
-- [[Input Requirements_2]] - document - .agents/skills/i-atlas/SKILL.md
-- [[Output Format_1]] - document - .agents/skills/i-atlas/SKILL.md
-- [[Persona_1]] - document - .agents/skills/i-atlas/SKILL.md
-- [[Quality Checklist_2]] - document - .agents/skills/i-atlas/SKILL.md
-- [[Role_6]] - document - .agents/skills/i-atlas/SKILL.md
-- [[SKILL_6]] - document - .agents/skills/i-atlas/SKILL.md
-- [[System Prompt_1]] - document - .agents/skills/i-atlas/SKILL.md
-- [[User Prompt Template_1]] - document - .agents/skills/i-atlas/SKILL.md
-- [[User Prompt Template — OKE Channel]] - document - .agents/skills/i-atlas/SKILL.md
-- [[Vulcan README]] - document - .agents/skills/i-vulcan/README.md
-- [[Vulcan Subject Matter Auditor Skill]] - document - .agents/skills/i-vulcan/SKILL.md
+- [[API Call Structure_2]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
+- [[Apollo — Audio Systems Producer_4]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
+- [[Audio Quality Settings_2]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
+- [[Error Handling_5]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
+- [[Input Requirements_20]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
+- [[Output_4]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
+- [[Primary API Text-to-Dialogue_2]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
+- [[Quality Checklist_18]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
+- [[Quick Mode Create Podcast API_2]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
+- [[Role_77]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
+- [[SKILL_130]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
+- [[Script Parsing_2]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
+- [[Technical Specification_2]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
+- [[Voice Configuration_2]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,14 +31,3 @@ members: 15
 TABLE source_file, type FROM #community/Community_658
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 1004]]
-- 1 edge to [[_COMMUNITY_Community 1029]]
-- 1 edge to [[_COMMUNITY_Community 696]]
-- 1 edge to [[_COMMUNITY_Community 608]]
-
-## Top bridge nodes
-- [[Atlas — Curriculum Architect_7]] - degree 15, connects to 3 communities
-- [[Atlas — Curriculum Architect_1]] - degree 10, connects to 1 community
-- [[Vulcan Subject Matter Auditor Skill]] - degree 3, connects to 1 community

@@ -1,29 +1,37 @@
 ---
 type: community
-members: 16
+cohesion: 0.11
+members: 22
 ---
 
 # Community 391
 
-**Members:** 16 nodes
+**Cohesion:** 0.11 - loosely connected
+**Members:** 22 nodes
 
 ## Members
-- [[AgentShroud Tagline]] - concept - BRAND.md
-- [[AgentShroud Taglines List]] - document - branding/taglines.json
-- [[check()_6]] - code - tests/startup_smoke/test_hermes_chown_coverage.sh
-- [[check()_7]] - code - tests/startup_smoke/test_hermes_cron_html_email.sh
-- [[check()_9]] - code - tests/startup_smoke/test_openclaw_photo.sh
-- [[email_helper.sh]] - code - docker/bots/hermes/email_helper.sh
-- [[email_helper.sh script]] - code - docker/bots/hermes/email_helper.sh
-- [[run_test()]] - code - scripts/smoke.sh
-- [[smoke.sh]] - code - scripts/smoke.sh
-- [[smoke.sh script]] - code - scripts/smoke.sh
-- [[test_hermes_chown_coverage.sh]] - code - tests/startup_smoke/test_hermes_chown_coverage.sh
-- [[test_hermes_chown_coverage.sh script]] - code - tests/startup_smoke/test_hermes_chown_coverage.sh
-- [[test_hermes_cron_html_email.sh]] - code - tests/startup_smoke/test_hermes_cron_html_email.sh
-- [[test_hermes_cron_html_email.sh script]] - code - tests/startup_smoke/test_hermes_cron_html_email.sh
-- [[test_openclaw_photo.sh]] - code - tests/startup_smoke/test_openclaw_photo.sh
-- [[test_openclaw_photo.sh script]] - code - tests/startup_smoke/test_openclaw_photo.sh
+- [[Branch Naming Convention (featfixhotfixchorerefactortestdocs)]] - concept - docker/config/openclaw/skills/i-gg/SKILL.md
+- [[CICD Pipeline Advisor SKILL (OpenClaw)]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
+- [[Code Review (CR) README (OpenClaw)]] - document - docker/config/openclaw/skills/i-cr/README.md
+- [[Code Review (CR) SKILL (OpenClaw)]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
+- [[Create PR with Pre-Flight Audit (CRPR) SKILL (OpenClaw)]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
+- [[GIT-GUARD Skill]] - document - .agents/skills/i-gg/SKILL.md
+- [[GIT-GUARD Skill Definition]] - document - docker/config/openclaw/skills/i-gg/SKILL.md
+- [[GSDE&G Development Master Checklist Skill]] - document - .agents/skills/i-mc/SKILL.md
+- [[GSDE&G SDLC Lifecycle (Plan-TDD-QA-CR-PR-CI-Deploy)]] - concept - .agents/skills/i-mc/SKILL.md
+- [[Git Workflow Guardian (GIT-GUARD) README]] - document - .agents/skills/i-gg/README.md
+- [[Mandatory 10-Step Git Workflow]] - concept - docker/config/openclaw/skills/i-gg/SKILL.md
+- [[Protected Branch Policy (main)]] - concept - docker/config/openclaw/skills/i-gg/SKILL.md
+- [[Purpose_15]] - document - .agents/skills/i-mc/README.md
+- [[README_15]] - document - .agents/skills/i-mc/README.md
+- [[Related Skills_15]] - document - .agents/skills/i-mc/README.md
+- [[Usage_17]] - document - .agents/skills/i-mc/README.md
+- [[devsecops SKILL stub (OpenClaw)]] - document - docker/config/openclaw/skills/i-devsecops/SKILL.md
+- [[gitops Skill (stub)_1]] - document - .agents/skills/i-gitops/SKILL.md
+- [[gitops Skill (stub)]] - document - docker/config/openclaw/skills/i-gitops/SKILL.md
+- [[i-gg README (Git Workflow Guardian)]] - document - docker/config/openclaw/skills/i-gg/README.md
+- [[i-mc README (Development Master Checklist)]] - document - docker/config/openclaw/skills/i-mc/README.md
+- [[pr Skill (referenced, sibling dir)]] - document - docker/config/openclaw/skills/i-pr/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,18 +41,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 1101]]
-- 1 edge to [[_COMMUNITY_Community 326]]
-- 1 edge to [[_COMMUNITY_Community 363]]
-- 1 edge to [[_COMMUNITY_Community 122]]
-- 1 edge to [[_COMMUNITY_Community 1113]]
-- 1 edge to [[_COMMUNITY_Community 685]]
-- 1 edge to [[_COMMUNITY_Community 293]]
-- 1 edge to [[_COMMUNITY_Community 120]]
-- 1 edge to [[_COMMUNITY_Community 168]]
+- 2 edges to [[_COMMUNITY_Community 945]]
+- 1 edge to [[_COMMUNITY_Community 1315]]
 
 ## Top bridge nodes
-- [[test_openclaw_photo.sh]] - degree 10, connects to 4 communities
-- [[test_hermes_cron_html_email.sh]] - degree 8, connects to 2 communities
-- [[smoke.sh]] - degree 7, connects to 2 communities
-- [[AgentShroud Tagline]] - degree 2, connects to 1 community
+- [[GSDE&G Development Master Checklist Skill]] - degree 12, connects to 1 community
+- [[Code Review (CR) SKILL (OpenClaw)]] - degree 6, connects to 1 community
+- [[GIT-GUARD Skill]] - degree 5, connects to 1 community

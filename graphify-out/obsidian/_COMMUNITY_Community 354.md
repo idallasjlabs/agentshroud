@@ -1,39 +1,39 @@
 ---
 type: community
-members: 26
+cohesion: 0.08
+members: 24
 ---
 
 # Community 354
 
-**Members:** 26 nodes
+**Cohesion:** 0.08 - loosely connected
+**Members:** 24 nodes
 
 ## Members
-- [[.__init__()_47]] - code - gateway/runtime/docker_engine.py
-- [[._cmd()_1]] - code - gateway/runtime/docker_engine.py
-- [[.build()_1]] - code - gateway/runtime/docker_engine.py
-- [[.compose_down()_1]] - code - gateway/runtime/docker_engine.py
-- [[.compose_up()_1]] - code - gateway/runtime/docker_engine.py
-- [[.exec()_1]] - code - gateway/runtime/docker_engine.py
-- [[.health_check()_3]] - code - gateway/runtime/docker_engine.py
-- [[.inspect()_1]] - code - gateway/runtime/docker_engine.py
-- [[.logs()_1]] - code - gateway/runtime/docker_engine.py
-- [[.network_create()_1]] - code - gateway/runtime/docker_engine.py
-- [[.network_rm()_1]] - code - gateway/runtime/docker_engine.py
-- [[.pause()_1]] - code - gateway/runtime/docker_engine.py
-- [[.ps()_1]] - code - gateway/runtime/docker_engine.py
-- [[.pull()_1]] - code - gateway/runtime/docker_engine.py
-- [[.push()_1]] - code - gateway/runtime/docker_engine.py
-- [[.rm()_1]] - code - gateway/runtime/docker_engine.py
-- [[.run()_2]] - code - gateway/runtime/docker_engine.py
-- [[.stop()_6]] - code - gateway/runtime/docker_engine.py
-- [[.unpause()_1]] - code - gateway/runtime/docker_engine.py
-- [[.volume_create()_1]] - code - gateway/runtime/docker_engine.py
-- [[.volume_rm()_1]] - code - gateway/runtime/docker_engine.py
-- [[Any_26]] - code - gateway/runtime/docker_engine.py
-- [[Container engine backed by the Docker CLI.]] - rationale - gateway/runtime/docker_engine.py
-- [[ContainerEngine_1]] - code
-- [[ContainerInfo_1]] - code - gateway/runtime/docker_engine.py
-- [[DockerEngine]] - code - gateway/runtime/docker_engine.py
+- [[graphify]] - document - .agents/skills/graphify/SKILL.md
+- [[For --update and --cluster-only]] - document - .agents/skills/graphify/SKILL.md
+- [[For graphify add and --watch]] - document - .agents/skills/graphify/SKILL.md
+- [[For graphify query]] - document - .agents/skills/graphify/SKILL.md
+- [[For the commit hook and native AGENTS.md integration]] - document - .agents/skills/graphify/SKILL.md
+- [[Honesty Rules]] - document - .agents/skills/graphify/SKILL.md
+- [[Interpreter guard for subcommands]] - document - .agents/skills/graphify/SKILL.md
+- [[Part A - Structural extraction for code files]] - document - .agents/skills/graphify/SKILL.md
+- [[Part B - Semantic extraction (parallel subagents)]] - document - .agents/skills/graphify/SKILL.md
+- [[Part C - Merge AST + semantic into final extraction]] - document - .agents/skills/graphify/SKILL.md
+- [[SKILL]] - document - .agents/skills/graphify/SKILL.md
+- [[Step 0 - GitHub repos and multi-path merge (only if a URL or several paths)]] - document - .agents/skills/graphify/SKILL.md
+- [[Step 1 - Ensure graphify is installed]] - document - .agents/skills/graphify/SKILL.md
+- [[Step 2 - Detect files]] - document - .agents/skills/graphify/SKILL.md
+- [[Step 2.5 - Video and audio (only if video files detected)]] - document - .agents/skills/graphify/SKILL.md
+- [[Step 3 - Extract entities and relationships]] - document - .agents/skills/graphify/SKILL.md
+- [[Step 4 - Build graph, cluster, analyze, generate outputs]] - document - .agents/skills/graphify/SKILL.md
+- [[Step 5 - Label communities]] - document - .agents/skills/graphify/SKILL.md
+- [[Step 6 - Generate Obsidian vault (opt-in) + HTML]] - document - .agents/skills/graphify/SKILL.md
+- [[Step 9 - Save manifest, update cost tracker, clean up, and report]] - document - .agents/skills/graphify/SKILL.md
+- [[Steps 6b-8 - Wiki, Neo4j, SVG, GraphML, MCP, benchmark (only on their flags)]] - document - .agents/skills/graphify/SKILL.md
+- [[Usage]] - document - .agents/skills/graphify/SKILL.md
+- [[What You Must Do When Invoked]] - document - .agents/skills/graphify/SKILL.md
+- [[What graphify is for]] - document - .agents/skills/graphify/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -41,23 +41,3 @@ members: 26
 TABLE source_file, type FROM #community/Community_354
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 8 edges to [[_COMMUNITY_Community 197]]
-- 3 edges to [[_COMMUNITY_Community 453]]
-- 3 edges to [[_COMMUNITY_Community 198]]
-- 2 edges to [[_COMMUNITY_Community 528]]
-- 2 edges to [[_COMMUNITY_Community 220]]
-- 2 edges to [[_COMMUNITY_Community 364]]
-- 1 edge to [[_COMMUNITY_Community 358]]
-- 1 edge to [[_COMMUNITY_Community 647]]
-- 1 edge to [[_COMMUNITY_Community 439]]
-- 1 edge to [[_COMMUNITY_Community 1058]]
-- 1 edge to [[_COMMUNITY_Community 330]]
-- 1 edge to [[_COMMUNITY_Community 693]]
-
-## Top bridge nodes
-- [[DockerEngine]] - degree 43, connects to 11 communities
-- [[ContainerEngine_1]] - degree 3, connects to 2 communities
-- [[ContainerInfo_1]] - degree 3, connects to 2 communities
-- [[Any_26]] - degree 3, connects to 2 communities

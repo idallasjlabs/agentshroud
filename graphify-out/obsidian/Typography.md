@@ -1,12 +1,12 @@
 ---
 source_file: "branding/typography/typography.md"
 type: "document"
-community: "Community 661"
+community: "Community 790"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_661
+  - community/Community_790
 ---
 
 # typography.md
@@ -17,4 +17,4 @@ tags:
 - [[Inter Typeface (Primary)]] - `references` [EXTRACTED]
 - [[JetBrains Mono Typeface (Monospace)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_661
+#graphify/document #graphify/EXTRACTED #community/Community_790

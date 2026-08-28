@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "Community 59"
+community: "Community 72"
 location: "L1992"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_59
+  - community/Community_72
 ---
 
 # Score domain 31: Human-in-the-Loop Controls (0-5). NIST AI RMF MANAGE, ISO 42001
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_score_human_in_the_loop()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_59
+#graphify/rationale #graphify/EXTRACTED #community/Community_72

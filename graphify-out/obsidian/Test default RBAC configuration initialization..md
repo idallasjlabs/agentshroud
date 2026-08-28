@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "rationale"
-community: "Community 70"
+community: "RBAC & SOC Realtime"
 location: "L33"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_70
+  - community/RBAC__SOC_Realtime
 ---
 
 # Test default RBAC configuration initialization.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_default_config_initialization()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_70
+#graphify/rationale #graphify/EXTRACTED #community/RBAC__SOC_Realtime

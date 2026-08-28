@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "Community 1338"
+community: "Community 1571"
 location: "L85"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1338
+  - community/Community_1571
 ---
 
 # Test that private IP addresses are filtered.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_private_ip_filtering()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1338
+#graphify/rationale #graphify/EXTRACTED #community/Community_1571

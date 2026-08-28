@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "rationale"
-community: "Community 35"
+community: "Progressive Trust"
 location: "L205"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_35
+  - community/Progressive_Trust
 ---
 
 # Check if an agent's trust level allows a given action.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.is_action_allowed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_35
+#graphify/rationale #graphify/EXTRACTED #community/Progressive_Trust

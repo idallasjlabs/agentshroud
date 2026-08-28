@@ -1,25 +1,31 @@
 ---
 type: community
-members: 12
+cohesion: 0.12
+members: 16
 ---
 
 # Community 552
 
-**Members:** 12 nodes
+**Cohesion:** 0.12 - loosely connected
+**Members:** 16 nodes
 
 ## Members
-- [[ADR-001-proxy-layer-inversion]] - document - docs/adr/ADR-001-proxy-layer-inversion.md
-- [[ADR-001 Proxy-layer inversion model]] - document - docs/adr/ADR-001-proxy-layer-inversion.md
-- [[Alternatives rejected]] - document - docs/adr/ADR-001-proxy-layer-inversion.md
-- [[Collaborative Multi-Agent Governance]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[Competitive Positioning — Proxy-Layer Inversion Differentiator]] - rationale - docs/agentshroud-knowledge.md
-- [[Decision_1]] - document - docs/adr/ADR-001-proxy-layer-inversion.md
-- [[Delegated Authority Model (time-bounded privilege delegation)]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[Enterprise Governance Proxy System (invention)]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[Human-in-the-Loop Approval Queue]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[PII Detection and Redaction Engine]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[Rationale]] - document - docs/adr/ADR-001-proxy-layer-inversion.md
-- [[Transparent Interception Architecture]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[1. URL Forwarder]] - document - browser-extension/README.md
+- [[2. Page Clipper]] - document - browser-extension/README.md
+- [[3. Form Fill Request (Reverse Flow)]] - document - browser-extension/README.md
+- [[4. Tab Session Exporter]] - document - browser-extension/README.md
+- [[5. Reading List Queue]] - document - browser-extension/README.md
+- [[Browser Extension]] - document - browser-extension/README.md
+- [[Browser Support]] - document - browser-extension/README.md
+- [[Features]] - document - browser-extension/README.md
+- [[ForwardRequest handler (forward endpoint)]] - code - gateway/ingest_api/routes/forward.py
+- [[Gateway wiring]] - document - browser-extension/README.md
+- [[Privacy Features]] - document - browser-extension/README.md
+- [[README_39]] - document - browser-extension/README.md
+- [[Safari]] - document - browser-extension/README.md
+- [[Structure]] - document - browser-extension/README.md
+- [[Tests_2]] - document - browser-extension/README.md
+- [[browser-extension package.json (Jest test harness)]] - code - browser-extension/package.json
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,8 +35,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 413]]
-- 1 edge to [[_COMMUNITY_Community 1274]]
+- 1 edge to [[_COMMUNITY_Community 653]]
+- 1 edge to [[_COMMUNITY_Community 437]]
 
 ## Top bridge nodes
-- [[Enterprise Governance Proxy System (invention)]] - degree 8, connects to 2 communities
+- [[Browser Extension]] - degree 6, connects to 1 community
+- [[README_39]] - degree 4, connects to 1 community

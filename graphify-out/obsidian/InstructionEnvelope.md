@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/instruction_envelope.py"
 type: "code"
-community: "Community 22"
+community: "Key Vault & Audit Chain"
 location: "L30"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_22
+  - community/Key_Vault__Audit_Chain
 ---
 
 # InstructionEnvelope
@@ -35,4 +35,4 @@ tags:
 - [[test_instruction_envelope.py]] - `imports` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_22
+#graphify/code #graphify/INFERRED #community/Key_Vault__Audit_Chain

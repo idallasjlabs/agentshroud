@@ -1,14 +1,16 @@
 ---
 type: community
+cohesion: 1.00
 members: 1
 ---
 
 # Community 1718
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[esp_log.h stub (playback state test)]] - code - firmware/voice-terminal/test/test_playback_state/stubs/esp_log.h
+- [[audio.h_1]] - code - firmware/voice-terminal/test/test_playback_state/stubs/audio.h
 
 ## Live Query (requires Dataview plugin)
 

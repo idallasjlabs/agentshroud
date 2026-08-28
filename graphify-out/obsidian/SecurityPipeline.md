@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "Community 22"
+community: "PII Sanitizer & E2E Tests"
 location: "L317"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_22
+  - community/PII_Sanitizer__E2E_Tests
 ---
 
 # SecurityPipeline
@@ -43,7 +43,7 @@ tags:
 - [[EncodingDetector]] - `calls` [EXTRACTED]
 - [[FakeClock]] - `uses` [INFERRED]
 - [[FalcoAlertWatcher]] - `conceptually_related_to` [INFERRED]
-- [[FastAPI_2]] - `uses` [INFERRED]
+- [[FastAPI_3]] - `uses` [INFERRED]
 - [[FilterResult]] - `uses` [INFERRED]
 - [[HTTPConnectProxy]] - `semantically_similar_to` [INFERRED]
 - [[HTTPForwarder]] - `references` [EXTRACTED]
@@ -157,4 +157,4 @@ tags:
 - [[test_redteam_probes.py]] - `imports` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_22
+#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer__E2E_Tests

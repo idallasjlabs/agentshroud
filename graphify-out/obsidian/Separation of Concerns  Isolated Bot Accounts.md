@@ -1,11 +1,11 @@
 ---
 source_file: "docs/reference/PREREQUISITES.md"
 type: "rationale"
-community: "Community 376"
+community: "Community 166"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_376
+  - community/Community_166
 ---
 
 # Separation of Concerns / Isolated Bot Accounts
@@ -14,4 +14,4 @@ tags:
 - [[Credential Isolation Architecture]] - `semantically_similar_to` [INFERRED]
 - [[PREREQUISITES]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_376
+#graphify/rationale #graphify/EXTRACTED #community/Community_166

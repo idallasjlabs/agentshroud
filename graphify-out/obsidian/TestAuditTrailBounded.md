@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "Community 201"
+community: "Community 206"
 location: "L351"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_201
+  - community/Community_206
 ---
 
 # TestAuditTrailBounded
@@ -33,4 +33,4 @@ tags:
 - [[ThreatLevel]] - `uses` [INFERRED]
 - [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_201
+#graphify/code #graphify/INFERRED #community/Community_206

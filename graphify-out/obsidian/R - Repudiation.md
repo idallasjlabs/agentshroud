@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/threat-model.md"
 type: "document"
-community: "Community 919"
+community: "Community 913"
 location: "L99"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_919
+  - community/Community_913
 ---
 
 # R - Repudiation
@@ -15,4 +15,4 @@ tags:
 - [[STRIDE Threat Analysis]] - `contains` [EXTRACTED]
 - [[Threat Non-Repudiation Bypass]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_919
+#graphify/document #graphify/EXTRACTED #community/Community_913

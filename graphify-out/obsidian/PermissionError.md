@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "Community 486"
+community: "Community 77"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_486
+  - community/Community_77
 ---
 
 # PermissionError
@@ -18,4 +18,4 @@ tags:
 - [[.test_running_via_proc_scan()_2]] - `calls` [INFERRED]
 - [[GroupAccessDenied]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_486
+#graphify/code #graphify/INFERRED #community/Community_77

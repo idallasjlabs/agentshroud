@@ -12,7 +12,6 @@ tags:
 # Connectivity Issues
 
 ## Connections
-- [[Troubleshooting Matrix_1]] - `contains` [EXTRACTED]
 - [[troubleshooting]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Community_314

@@ -1,23 +1,24 @@
 ---
-source_file: "gateway/tests/test_a2a_integration.py"
+source_file: "gateway/soc/router.py"
 type: "code"
-community: "Community 104"
-location: "L61"
+community: "Community 14"
+location: "L2717"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_104
+  - community/Community_14
 ---
 
 # Request
 
 ## Connections
-- [[._handle()_1]] - `references` [EXTRACTED]
-- [[A2APolicyConfig]] - `uses` [INFERRED]
-- [[A2APolicyEngine_1]] - `uses` [INFERRED]
-- [[A2AProxy]] - `uses` [INFERRED]
-- [[HermesA2AForwarder]] - `uses` [INFERRED]
-- [[ProgressiveTrustConfig]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
+- [[AuditLogEntry]] - `uses` [INFERRED]
+- [[AuditResult]] - `uses` [INFERRED]
+- [[ContributorManager]] - `uses` [INFERRED]
+- [[SCLCaller]] - `uses` [INFERRED]
+- [[SCLConfirmationRequired]] - `uses` [INFERRED]
+- [[SCLInterface]] - `uses` [INFERRED]
+- [[ServiceManager]] - `uses` [INFERRED]
+- [[soc_dashboard()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_104
+#graphify/code #graphify/INFERRED #community/Community_14

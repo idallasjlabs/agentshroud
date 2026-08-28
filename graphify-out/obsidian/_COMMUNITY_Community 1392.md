@@ -1,16 +1,18 @@
 ---
 type: community
+cohesion: 0.67
 members: 3
 ---
 
 # Community 1392
 
+**Cohesion:** 0.67 - moderately connected
 **Members:** 3 nodes
 
 ## Members
-- [[_log()_1]] - code - docker/bots/hermes/heartbeat.sh
-- [[heartbeat.sh]] - code - docker/bots/hermes/heartbeat.sh
-- [[heartbeat.sh script]] - code - docker/bots/hermes/heartbeat.sh
+- [[TickType_t_1]] - code - firmware/voice-terminal/test/test_playback_state/stubs/freertos/task.h
+- [[task.h]] - code - firmware/voice-terminal/test/test_playback_state/stubs/freertos/task.h
+- [[vTaskDelay()]] - code - firmware/voice-terminal/test/test_playback_state/stubs/freertos/task.h
 
 ## Live Query (requires Dataview plugin)
 

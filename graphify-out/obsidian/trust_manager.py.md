@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "Community 35"
+community: "Progressive Trust"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_35
+  - community/Progressive_Trust
 ---
 
 # trust_manager.py
@@ -34,4 +34,4 @@ tags:
 - [[subagent_monitor.py]] - `semantically_similar_to` [INFERRED]
 - [[test_progressive_trust_integration.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_35
+#graphify/code #graphify/EXTRACTED #community/Progressive_Trust

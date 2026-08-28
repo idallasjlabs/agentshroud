@@ -1,21 +1,23 @@
 ---
 type: community
+cohesion: 0.43
 members: 8
 ---
 
 # Community 985
 
+**Cohesion:** 0.43 - moderately connected
 **Members:** 8 nodes
 
 ## Members
-- [[A2A (Agent-to-Agent) Protocol Threat Analysis]] - document - docs/security/threat-model.md
-- [[E — Elevation of Privilege Cross-Process Isolation Break]] - document - docs/security/threat-model.md
-- [[I — Information Disclosure  Elevation of Privilege Unsandboxed Live-Session Injection]] - document - docs/security/threat-model.md
-- [[I — Information Disclosure SSRF via Push-Notification Callback URLs]] - document - docs/security/threat-model.md
-- [[Not Yet Mitigated (Explicitly Deferred)]] - document - docs/security/threat-model.md
-- [[R — Repudiation Rejected Auth Attempts Not Audited]] - document - docs/security/threat-model.md
-- [[S — Spoofing Peer Identity Collapse Behind a Reverse Proxy]] - document - docs/security/threat-model.md
-- [[T — Tampering Cross-Tenant Task Ownership via `contextId` Collision]] - document - docs/security/threat-model.md
+- [[The alert must already be in alert_log before notification runs.      Before the]] - rationale - gateway/tests/test_alert_dispatcher_retry.py
+- [[_alert()]] - code - gateway/tests/test_alert_dispatcher_retry.py
+- [[test_alert_dispatcher_retry.py]] - code - gateway/tests/test_alert_dispatcher_retry.py
+- [[test_all_attempts_fail_logs_warning_not_error()]] - code - gateway/tests/test_alert_dispatcher_retry.py
+- [[test_backoff_called_between_attempts()]] - code - gateway/tests/test_alert_dispatcher_retry.py
+- [[test_dispatch_persists_alert_even_if_notification_fails()]] - code - gateway/tests/test_alert_dispatcher_retry.py
+- [[test_succeeds_after_one_transient_failure()]] - code - gateway/tests/test_alert_dispatcher_retry.py
+- [[test_succeeds_on_first_attempt()]] - code - gateway/tests/test_alert_dispatcher_retry.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,7 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 865]]
+- 2 edges to [[_COMMUNITY_Security Audit & Drift Detection]]
 
 ## Top bridge nodes
-- [[A2A (Agent-to-Agent) Protocol Threat Analysis]] - degree 8, connects to 1 community
+- [[test_alert_dispatcher_retry.py]] - degree 8, connects to 1 community

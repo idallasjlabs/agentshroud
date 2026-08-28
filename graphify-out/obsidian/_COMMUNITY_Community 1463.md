@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 1.00
 members: 2
 ---
 
 # Community 1463
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[SKILL_149]] - document - docker/config/openclaw/skills/i-gitops/SKILL.md
-- [[Skill gitops_2]] - document - docker/config/openclaw/skills/i-gitops/SKILL.md
+- [[SKILL_91]] - document - docker/config/hermes/skills/i-kaizen/SKILL.md
+- [[Skill kaizen_1]] - document - docker/config/hermes/skills/i-kaizen/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

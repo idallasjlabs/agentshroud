@@ -12,8 +12,7 @@ tags:
 # Decision Framework
 
 ## Connections
-- [[AWS Cloud Management & FinOps Agent]] - `contains` [EXTRACTED]
-- [[AWS Cloud Management & FinOps Agent_3]] - `contains` [EXTRACTED]
+- [[AWS Cloud Management & FinOps Agent_2]] - `contains` [EXTRACTED]
 - [[Cost Optimization Priority]] - `contains` [EXTRACTED]
 - [[EBS Performance Analysis (Critical Pattern)]] - `contains` [EXTRACTED]
 - [[Rightsizing Logic]] - `contains` [EXTRACTED]

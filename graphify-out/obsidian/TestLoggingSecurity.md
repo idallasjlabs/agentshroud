@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "Community 14"
+community: "Community 18"
 location: "L951"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_14
+  - community/Community_18
 ---
 
 # TestLoggingSecurity
@@ -60,4 +60,4 @@ tags:
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_audit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_14
+#graphify/code #graphify/INFERRED #community/Community_18

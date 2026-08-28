@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "rationale"
-community: "Community 7"
+community: "Community 54"
 location: "L240"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_7
+  - community/Community_54
 ---
 
 # Anthropic-format tool_use response returns the same shape in local mode.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_local_mode_anthropic_tool_use_shape_passes_through()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_7
+#graphify/rationale #graphify/EXTRACTED #community/Community_54

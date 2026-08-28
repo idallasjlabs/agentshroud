@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.20
 members: 10
 ---
 
 # Community 868
 
+**Cohesion:** 0.20 - loosely connected
 **Members:** 10 nodes
 
 ## Members
@@ -27,8 +29,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 611]]
-- 1 edge to [[_COMMUNITY_Community 1057]]
+- 2 edges to [[_COMMUNITY_Community 605]]
+- 1 edge to [[_COMMUNITY_Community 1056]]
 
 ## Top bridge nodes
 - [[TestCredentialLeakDetection]] - degree 12, connects to 2 communities

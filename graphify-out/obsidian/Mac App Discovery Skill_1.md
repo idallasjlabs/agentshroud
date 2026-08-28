@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-mac/SKILL.md"
 type: "document"
-community: "Community 430"
+community: "Community 390"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_430
+  - community/Community_390
 ---
 
 # Mac App Discovery Skill
@@ -35,4 +35,4 @@ tags:
 - [[mac_app_catalog.json output artifact]] - `references` [EXTRACTED]
 - [[mac_app_catalog.md output artifact]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_430
+#graphify/document #graphify/EXTRACTED #community/Community_390

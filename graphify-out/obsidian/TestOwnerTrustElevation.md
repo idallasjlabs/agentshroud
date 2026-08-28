@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "code"
-community: "Community 500"
+community: "Community 104"
 location: "L470"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_500
+  - community/Community_104
 ---
 
 # TestOwnerTrustElevation
@@ -23,4 +23,4 @@ tags:
 - [[SCRUM-46 verify forward.py elevates trust to FULL for the owner's user_id.]] - `rationale_for` [EXTRACTED]
 - [[test_forward_routing.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_500
+#graphify/code #graphify/EXTRACTED #community/Community_104

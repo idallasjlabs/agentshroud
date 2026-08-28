@@ -1,17 +1,19 @@
 ---
 type: community
+cohesion: 0.50
 members: 4
 ---
 
 # Community 1314
 
+**Cohesion:** 0.50 - moderately connected
 **Members:** 4 nodes
 
 ## Members
-- [[8D Root Cause Analysis README (OpenClaw)]] - document - docker/config/openclaw/skills/i-eightd/README.md
-- [[8D Root Cause Analysis SKILL (OpenClaw)]] - document - docker/config/openclaw/skills/i-eightd/SKILL.md
-- [[Data Validation (DATA-VAL) README (OpenClaw)]] - document - docker/config/openclaw/skills/i-data/README.md
-- [[Data Validation (DATA-VAL) SKILL (OpenClaw)]] - document - docker/config/openclaw/skills/i-data/SKILL.md
+- [[Application Fields]] - document - docs/project/legal/USPTO-APPLICATION.md
+- [[Filing Basis]] - document - docs/project/legal/USPTO-APPLICATION.md
+- [[Mark]] - document - docs/project/legal/USPTO-APPLICATION.md
+- [[Owner_3]] - document - docs/project/legal/USPTO-APPLICATION.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,7 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 489]]
+- 1 edge to [[_COMMUNITY_Community 969]]
 
 ## Top bridge nodes
-- [[8D Root Cause Analysis SKILL (OpenClaw)]] - degree 3, connects to 1 community
+- [[Application Fields]] - degree 4, connects to 1 community

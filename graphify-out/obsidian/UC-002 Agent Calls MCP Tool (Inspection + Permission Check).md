@@ -1,12 +1,12 @@
 ---
 source_file: "docs/requirements/use-cases.md"
 type: "document"
-community: "Community 726"
+community: "Community 722"
 location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_726
+  - community/Community_722
 ---
 
 # UC-002: Agent Calls MCP Tool (Inspection + Permission Check)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Use Cases_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_726
+#graphify/document #graphify/EXTRACTED #community/Community_722

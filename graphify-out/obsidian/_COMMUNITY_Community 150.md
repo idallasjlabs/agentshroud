@@ -1,10 +1,12 @@
 ---
 type: community
+cohesion: 0.05
 members: 43
 ---
 
 # Community 150
 
+**Cohesion:** 0.05 - loosely connected
 **Members:** 43 nodes
 
 ## Members
@@ -20,7 +22,7 @@ members: 43
 - [[Audit Trail]] - document - skills/custom/securebrowser/README.md
 - [[CLI Reference]] - document - skills/custom/securebrowser/README.md
 - [[Click]] - document - skills/custom/securebrowser/README.md
-- [[Configuration_20]] - document - skills/custom/securebrowser/README.md
+- [[Configuration_19]] - document - skills/custom/securebrowser/README.md
 - [[Example 1 Simple Navigation]] - document - skills/custom/securebrowser/README.md
 - [[Example 2 Fill Form (Non-Sensitive)]] - document - skills/custom/securebrowser/README.md
 - [[Example 3 Fill Password (Sensitive)]] - document - skills/custom/securebrowser/README.md
@@ -46,7 +48,7 @@ members: 43
 - [[Step 2 Test Locally]] - document - skills/custom/securebrowser/README.md
 - [[Step 3 Publish]] - document - skills/custom/securebrowser/README.md
 - [[Support]] - document - skills/custom/securebrowser/README.md
-- [[Troubleshooting_37]] - document - skills/custom/securebrowser/README.md
+- [[Troubleshooting_36]] - document - skills/custom/securebrowser/README.md
 - [[URL Access Control_1]] - document - skills/custom/securebrowser/README.md
 - [[Usage Examples_2]] - document - skills/custom/securebrowser/README.md
 - [[With 1Password]] - document - skills/custom/securebrowser/README.md

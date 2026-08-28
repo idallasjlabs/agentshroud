@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1226
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[Hermes — Podcast Production Orchestrator_2]] - document - docker/config/openclaw/skills/i-hermes/README.md
-- [[Purpose_86]] - document - docker/config/openclaw/skills/i-hermes/README.md
-- [[README_91]] - document - docker/config/openclaw/skills/i-hermes/README.md
-- [[Related Skills_92]] - document - docker/config/openclaw/skills/i-hermes/README.md
-- [[Usage_95]] - document - docker/config/openclaw/skills/i-hermes/README.md
+- [[MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_1]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/README.md
+- [[Purpose_91]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/README.md
+- [[README_96]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/README.md
+- [[Related Skills_98]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/README.md
+- [[Usage_101]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/README.md
 
 ## Live Query (requires Dataview plugin)
 

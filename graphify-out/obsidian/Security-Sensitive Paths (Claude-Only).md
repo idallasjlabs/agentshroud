@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "document"
-community: "Community 131"
+community: "Community 162"
 location: "L190"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_131
+  - community/Community_162
 ---
 
 # Security-Sensitive Paths (Claude-Only)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[2. Multi-Agent Hierarchy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_131
+#graphify/document #graphify/EXTRACTED #community/Community_162

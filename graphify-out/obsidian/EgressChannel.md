@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_monitor.py"
 type: "code"
-community: "Community 14"
+community: "Community 95"
 location: "L25"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_14
+  - community/Community_95
 ---
 
 # EgressChannel
@@ -36,4 +36,4 @@ tags:
 - [[test_egress_monitor.py]] - `imports` [EXTRACTED]
 - [[web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_14
+#graphify/code #graphify/INFERRED #community/Community_95

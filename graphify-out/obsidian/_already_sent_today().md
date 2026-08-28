@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/daily_cve_report.py"
 type: "code"
-community: "Community 779"
+community: "Community 100"
 location: "L431"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_779
+  - community/Community_100
 ---
 
 # _already_sent_today()
@@ -19,4 +19,4 @@ tags:
 - [[datetime_2]] - `references` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_779
+#graphify/code #graphify/EXTRACTED #community/Community_100

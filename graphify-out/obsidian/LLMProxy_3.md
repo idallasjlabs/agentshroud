@@ -1,20 +1,18 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md"
+source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "Gateway Test Suite"
-location: "gateway/proxy/llm_proxy.py"
+community: "Community 54"
+location: "L53"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - graphify/INFERRED
+  - community/Community_54
 ---
 
 # LLMProxy
 
 ## Connections
-- [[Cloud-to-Local LLM Quota Failover]] - `implements` [EXTRACTED]
-- [[PIISanitizer_4]] - `uses` [EXTRACTED]
-- [[llm_proxy.py — LLMProxy Multi-Provider]] - `defines` [EXTRACTED]
-- [[pipeline.py — SecurityPipeline]] - `depends_on` [EXTRACTED]
+- [[LLMProxy]] - `uses` [INFERRED]
+- [[_make_proxy()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/Community_54

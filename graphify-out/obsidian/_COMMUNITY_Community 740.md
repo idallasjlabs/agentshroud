@@ -1,26 +1,27 @@
 ---
 type: community
-members: 13
+cohesion: 0.17
+members: 12
 ---
 
 # Community 740
 
-**Members:** 13 nodes
+**Cohesion:** 0.17 - loosely connected
+**Members:** 12 nodes
 
 ## Members
-- [[Emit a structured per-transcription latency record for the STT AB.      Tags ea]] - rationale - voice_gateway/stt.py
-- [[Read WHISPER_MODEL_SIZE from the environment and validate it (AB knob).]] - rationale - voice_gateway/stt.py
-- [[Release the loaded model (for testing  memory pressure).]] - rationale - voice_gateway/stt.py
-- [[Resolve a requested Whisper model size, with a safe default fallback.      Pure]] - rationale - voice_gateway/stt.py
-- [[Transcribe raw 16-bit signed PCM mono audio to text.      Args         pcm_byte]] - rationale - voice_gateway/stt.py
-- [[_get_model()]] - code - voice_gateway/stt.py
-- [[_resolve_model_size()]] - code - voice_gateway/stt.py
-- [[record_transcription_latency()]] - code - voice_gateway/stt.py
-- [[record_transcription_latency() — RTFlatency structured log]] - code - voice_gateway/stt.py
-- [[reset_model()]] - code - voice_gateway/stt.py
-- [[select_model_size()]] - code - voice_gateway/stt.py
-- [[stt.py]] - code - voice_gateway/stt.py
-- [[transcribe()]] - code - voice_gateway/stt.py
+- [[Approval Queue Health]] - document - docs/vault/08 - Runbooks/Health Checks.md
+- [[Basic Status (No Auth)]] - document - docs/vault/08 - Runbooks/Health Checks.md
+- [[Bot Health Check]] - document - docs/vault/08 - Runbooks/Health Checks.md
+- [[Container Health Check]] - document - docs/vault/08 - Runbooks/Health Checks.md
+- [[Full Health Report (Auth Required)]] - document - docs/vault/08 - Runbooks/Health Checks.md
+- [[Gateway Health Endpoints]] - document - docs/vault/08 - Runbooks/Health Checks.md
+- [[Health Check Intervals (Docker)]] - document - docs/vault/08 - Runbooks/Health Checks.md
+- [[Health Checks_2]] - document - docs/vault/08 - Runbooks/Health Checks.md
+- [[Ledger Health]] - document - docs/vault/08 - Runbooks/Health Checks.md
+- [[Monitoring Script]] - document - docs/vault/08 - Runbooks/Health Checks.md
+- [[Related Notes_67]] - document - docs/vault/08 - Runbooks/Health Checks.md
+- [[Security Health Report]] - document - docs/vault/08 - Runbooks/Health Checks.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,11 +31,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 115]]
-- 1 edge to [[_COMMUNITY_Community 37]]
-- 1 edge to [[_COMMUNITY_Community 268]]
-- 1 edge to [[_COMMUNITY_Community 286]]
+- 1 edge to [[_COMMUNITY_Community 289]]
 
 ## Top bridge nodes
-- [[stt.py]] - degree 9, connects to 3 communities
-- [[transcribe()]] - degree 7, connects to 2 communities
+- [[Health Checks_2]] - degree 10, connects to 1 community

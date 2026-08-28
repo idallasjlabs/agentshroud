@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "Community 22"
+community: "Key Vault & Audit Chain"
 location: "L651"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_22
+  - community/Key_Vault__Audit_Chain
 ---
 
 # TestPromptGuardToolResultTrustGate
@@ -35,4 +35,4 @@ tags:
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_pipeline_unit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_22
+#graphify/code #graphify/INFERRED #community/Key_Vault__Audit_Chain

@@ -1,28 +1,34 @@
 ---
 type: community
-members: 15
+cohesion: 0.15
+members: 19
 ---
 
 # Community 480
 
-**Members:** 15 nodes
+**Cohesion:** 0.15 - loosely connected
+**Members:** 19 nodes
 
 ## Members
-- [[._filter_msg()]] - code - gateway/tests/test_log_sanitizer.py
-- [[.setup_method()_7]] - code - gateway/tests/test_log_sanitizer.py
-- [[.test_aws_key_redacted()]] - code - gateway/tests/test_log_sanitizer.py
-- [[.test_clean_message_unchanged()]] - code - gateway/tests/test_log_sanitizer.py
-- [[.test_credit_card_redacted()]] - code - gateway/tests/test_log_sanitizer.py
-- [[.test_filter_always_returns_true()]] - code - gateway/tests/test_log_sanitizer.py
-- [[.test_openai_key_redacted()]] - code - gateway/tests/test_log_sanitizer.py
-- [[.test_password_assignment_redacted()]] - code - gateway/tests/test_log_sanitizer.py
-- [[.test_secret_assignment_redacted()]] - code - gateway/tests/test_log_sanitizer.py
-- [[.test_ssn_redacted()_1]] - code - gateway/tests/test_log_sanitizer.py
-- [[.test_telegram_bot_token_in_url_redacted()]] - code - gateway/tests/test_log_sanitizer.py
-- [[.test_telegram_bot_token_shorter_id_redacted()]] - code - gateway/tests/test_log_sanitizer.py
-- [[.test_token_assignment_redacted()]] - code - gateway/tests/test_log_sanitizer.py
-- [[.test_user_path_redacted()]] - code - gateway/tests/test_log_sanitizer.py
-- [[TestLogSanitizer]] - code - gateway/tests/test_log_sanitizer.py
+- [[Cosign signature verification of container images (fail-closed on missing binarytimeoutbad signature)]] - rationale - gateway/tests/test_image_verifier.py
+- [[Test replacement for asyncio.wait_for — awaits coroutine directly._1]] - rationale - gateway/tests/test_image_verifier.py
+- [[Test replacement for asyncio.wait_for — raises TimeoutError.      Closes the un-_1]] - rationale - gateway/tests/test_image_verifier.py
+- [[Verify an image signature using cosign keyless OIDC verification.      Args]] - rationale - gateway/security/image_verifier.py
+- [[Verify multiple image signatures concurrently.      Returns         Dict mappin]] - rationale - gateway/security/image_verifier.py
+- [[_instant_wait_for()_1]] - code - gateway/tests/test_image_verifier.py
+- [[_timeout_wait_for()_1]] - code - gateway/tests/test_image_verifier.py
+- [[image_verifier.py]] - code - gateway/security/image_verifier.py
+- [[test_cosign_fails_bad_signature()]] - code - gateway/tests/test_image_verifier.py
+- [[test_cosign_not_found()]] - code - gateway/tests/test_image_verifier.py
+- [[test_cosign_success()]] - code - gateway/tests/test_image_verifier.py
+- [[test_cosign_timeout()]] - code - gateway/tests/test_image_verifier.py
+- [[test_image_verifier.py]] - code - gateway/tests/test_image_verifier.py
+- [[test_verify_images_exception_handled()]] - code - gateway/tests/test_image_verifier.py
+- [[test_verify_images_mixed()]] - code - gateway/tests/test_image_verifier.py
+- [[verify_image()]] - code - gateway/security/image_verifier.py
+- [[verify_images()]] - code - gateway/security/image_verifier.py
+- [[verify_images exception from one task is caught, others continue.]] - rationale - gateway/tests/test_image_verifier.py
+- [[verify_images one succeeds, one fails → results keyed by ref.]] - rationale - gateway/tests/test_image_verifier.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,8 +38,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 14]]
+- 2 edges to [[_COMMUNITY_Community 24]]
+- 1 edge to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
 
 ## Top bridge nodes
-- [[TestLogSanitizer]] - degree 17, connects to 1 community
-- [[.setup_method()_7]] - degree 2, connects to 1 community
+- [[verify_images()]] - degree 7, connects to 1 community
+- [[test_cosign_fails_bad_signature()]] - degree 3, connects to 1 community
+- [[test_cosign_success()]] - degree 3, connects to 1 community

@@ -1,18 +1,17 @@
 ---
 source_file: "docs/ssh-configuration.md"
 type: "document"
-community: "Community 372"
+community: "Community 378"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_372
+  - community/Community_378
 ---
 
 # SSH Configuration Guide
 
 ## Connections
-- [[Configuration File]] - `contains` [EXTRACTED]
 - [[Example Production Server with Strict Restrictions]] - `contains` [EXTRACTED]
 - [[Field Reference]] - `contains` [EXTRACTED]
 - [[Full Annotated Example]] - `contains` [EXTRACTED]
@@ -21,4 +20,4 @@ tags:
 - [[How to Add a New Trusted Host]] - `contains` [EXTRACTED]
 - [[ssh-configuration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_372
+#graphify/document #graphify/EXTRACTED #community/Community_378

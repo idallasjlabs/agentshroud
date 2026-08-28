@@ -1,28 +1,29 @@
 ---
 type: community
-members: 15
+cohesion: 0.14
+members: 14
 ---
 
 # Community 651
 
-**Members:** 15 nodes
+**Cohesion:** 0.14 - loosely connected
+**Members:** 14 nodes
 
 ## Members
-- [[._make_protocol()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.is_blocked()_1]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_all_upstreams_fail_sends_servfail()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_blocked_a_query_returns_zero_ip()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_blocked_aaaa_query_returns_null_ipv6()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_blocked_other_qtype_returns_nxdomain()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_datagram_received_schedules_handler()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_forwarded_query_relays_upstream_response()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_short_upstream_response_still_relayed()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_unparseable_short_query_no_servfail_sent()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[Blocklist stub that blocks every domain.]] - rationale - gateway/tests/test_dns_canvas_coverage.py
-- [[Build a minimal DNS query packet in wire format.]] - rationale - gateway/tests/test_dns_canvas_coverage.py
-- [[TestDNSForwarderProtocol]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[_BlockAll]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[build_dns_query()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[Atlas README]] - document - .agents/skills/i-atlas/README.md
+- [[Atlas — Curriculum Architect_6]] - document - .agents/skills/i-atlas/SKILL.md
+- [[Gleim CPA Review (OKE Channel)]] - concept - .agents/skills/i-atlas/SKILL.md
+- [[Input Requirements_2]] - document - .agents/skills/i-atlas/SKILL.md
+- [[Output Format_1]] - document - .agents/skills/i-atlas/SKILL.md
+- [[Persona_1]] - document - .agents/skills/i-atlas/SKILL.md
+- [[Quality Checklist_2]] - document - .agents/skills/i-atlas/SKILL.md
+- [[Role_6]] - document - .agents/skills/i-atlas/SKILL.md
+- [[SKILL_6]] - document - .agents/skills/i-atlas/SKILL.md
+- [[System Prompt_1]] - document - .agents/skills/i-atlas/SKILL.md
+- [[User Prompt Template_1]] - document - .agents/skills/i-atlas/SKILL.md
+- [[User Prompt Template — OKE Channel]] - document - .agents/skills/i-atlas/SKILL.md
+- [[Vulcan README]] - document - .agents/skills/i-vulcan/README.md
+- [[Vulcan Subject Matter Auditor Skill]] - document - .agents/skills/i-vulcan/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,15 +33,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 560]]
-- 4 edges to [[_COMMUNITY_Community 109]]
-- 3 edges to [[_COMMUNITY_Community 141]]
-- 3 edges to [[_COMMUNITY_Community 418]]
-- 2 edges to [[_COMMUNITY_Community 720]]
+- 1 edge to [[_COMMUNITY_Community 1007]]
+- 1 edge to [[_COMMUNITY_Community 1033]]
+- 1 edge to [[_COMMUNITY_Community 697]]
+- 1 edge to [[_COMMUNITY_Community 601]]
 
 ## Top bridge nodes
-- [[TestDNSForwarderProtocol]] - degree 13, connects to 3 communities
-- [[_BlockAll]] - degree 9, connects to 3 communities
-- [[build_dns_query()]] - degree 11, connects to 2 communities
-- [[.test_forwarded_query_relays_upstream_response()]] - degree 5, connects to 2 communities
-- [[._make_protocol()]] - degree 10, connects to 1 community
+- [[Atlas — Curriculum Architect_6]] - degree 15, connects to 3 communities
+- [[Vulcan Subject Matter Auditor Skill]] - degree 3, connects to 1 community

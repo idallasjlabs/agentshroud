@@ -1,21 +1,38 @@
 ---
 type: community
-members: 8
+cohesion: 0.09
+members: 23
 ---
 
 # Community 385
 
-**Members:** 8 nodes
+**Cohesion:** 0.09 - loosely connected
+**Members:** 23 nodes
 
 ## Members
-- [[(method, path) for every non-destructive route declaring a requestBody.]] - rationale - gateway/tests/test_api_contract_fuzz.py
-- [[_deep_nest()]] - code - gateway/tests/test_api_contract_fuzz.py
-- [[_fuzzable_endpoints()]] - code - gateway/tests/test_api_contract_fuzz.py
-- [[client()_1]] - code - gateway/tests/test_api_contract_fuzz.py
-- [[test_api_contract_fuzz.py]] - code - gateway/tests/test_api_contract_fuzz.py
-- [[test_destructive_routes_are_excluded()]] - code - gateway/tests/test_api_contract_fuzz.py
-- [[test_endpoint_survives_adversarial_body()]] - code - gateway/tests/test_api_contract_fuzz.py
-- [[test_fuzz_surface_is_nonempty()]] - code - gateway/tests/test_api_contract_fuzz.py
+- [[After Phase 3A3B]] - document - docs/security/VERIFICATION_RESULTS.md
+- [[Before Phase 3A]] - document - docs/security/VERIFICATION_RESULTS.md
+- [[Container Status]] - document - docs/security/VERIFICATION_RESULTS.md
+- [[Created (4 files)]] - document - docs/security/VERIFICATION_RESULTS.md
+- [[Deployment Readiness]] - document - docs/security/VERIFICATION_RESULTS.md
+- [[Development Environment_1]] - document - docs/security/VERIFICATION_RESULTS.md
+- [[Disconnect Mode]] - document - docs/security/VERIFICATION_RESULTS.md
+- [[Files ModifiedCreated]] - document - docs/security/VERIFICATION_RESULTS.md
+- [[Freeze Mode]] - document - docs/security/VERIFICATION_RESULTS.md
+- [[Kill Switch Testing]] - document - docs/security/VERIFICATION_RESULTS.md
+- [[Manual Testing (Next Session)]] - document - docs/security/VERIFICATION_RESULTS.md
+- [[Modified (4 files)]] - document - docs/security/VERIFICATION_RESULTS.md
+- [[Next Steps (Not in Phase 3A3B)]] - document - docs/security/VERIFICATION_RESULTS.md
+- [[OpenClaw Bot Logs (Recent)]] - document - docs/security/VERIFICATION_RESULTS.md
+- [[Phase 3A Implementation Status]] - document - docs/security/VERIFICATION_RESULTS.md
+- [[Phase 3A.8 Note DM Policy]] - document - docs/security/VERIFICATION_RESULTS.md
+- [[Phase 3A3B Implementation Verification Results]] - document - docs/security/VERIFICATION_RESULTS.md
+- [[Production Environment]] - document - docs/security/VERIFICATION_RESULTS.md
+- [[Remaining Work]] - document - docs/security/VERIFICATION_RESULTS.md
+- [[Security Improvements Delivered]] - document - docs/security/VERIFICATION_RESULTS.md
+- [[Security Verification Results]] - document - docs/security/VERIFICATION_RESULTS.md
+- [[Shutdown Mode]] - document - docs/security/VERIFICATION_RESULTS.md
+- [[Testing Recommendations]] - document - docs/security/VERIFICATION_RESULTS.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,7 +42,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 57]]
+- 1 edge to [[_COMMUNITY_Community 346]]
 
 ## Top bridge nodes
-- [[test_api_contract_fuzz.py]] - degree 7, connects to 1 community
+- [[Phase 3A3B Implementation Verification Results]] - degree 10, connects to 1 community

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-08-erd.png"
 type: "image"
-community: "Community 559"
+community: "Community 556"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Community_559
+  - community/Community_556
 ---
 
 # Rendered ERD Diagram (PNG)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Entity Relationship Diagram (ledger, approval_items)]] - `implements` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Community_559
+#graphify/image #graphify/EXTRACTED #community/Community_556

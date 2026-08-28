@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "Community 134"
+community: "SOC Collaborators"
 location: "L930-946"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_134
+  - community/SOC_Collaborators
 ---
 
 # POST /users/{user_id}/pause endpoint
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[pause_collaborator()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_134
+#graphify/code #graphify/EXTRACTED #community/SOC_Collaborators

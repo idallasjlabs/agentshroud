@@ -1,19 +1,21 @@
 ---
 type: community
+cohesion: 0.40
 members: 6
 ---
 
 # Community 1082
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 6 nodes
 
 ## Members
-- [[AWS Agent (Athena data retrieval layer)]] - concept - docker/config/hermes/skills/i-eightd/SKILL.md
-- [[AWS Athena  Data Lake]] - concept - docker/config/hermes/skills/i-eightd/SKILL.md
-- [[i-data README — Data Validation (DATA-VAL)]] - document - docker/config/hermes/skills/i-data/README.md
-- [[i-data SKILL — Data Validation (DATA-VAL)]] - document - docker/config/hermes/skills/i-data/SKILL.md
-- [[i-eightd README — 8D Root Cause Analysis]] - document - docker/config/hermes/skills/i-eightd/README.md
-- [[i-eightd SKILL — 8D Root Cause Analysis]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[appendLog()_1]] - code - docker/config/hermes/skills/i-browser/browse.js
+- [[browse.js_1]] - code - docker/config/hermes/skills/i-browser/browse.js
+- [[browserFetch()_1]] - code - docker/config/hermes/skills/i-browser/browse.js
+- [[fs_1]] - code - docker/config/hermes/skills/i-browser/browse.js
+- [[path_1]] - code - docker/config/hermes/skills/i-browser/browse.js
+- [[{ chromium }_1]] - code - docker/config/hermes/skills/i-browser/browse.js
 
 ## Live Query (requires Dataview plugin)
 

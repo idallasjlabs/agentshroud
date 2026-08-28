@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-daedalus/SKILL.md"
 type: "document"
-community: "Community 804"
+community: "Community 796"
 location: "L53"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_804
+  - community/Community_796
 ---
 
 # diagrams/README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Output Format_29]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_804
+#graphify/document #graphify/EXTRACTED #community/Community_796

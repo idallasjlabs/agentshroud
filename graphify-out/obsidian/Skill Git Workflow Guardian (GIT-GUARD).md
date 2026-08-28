@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-gg/SKILL.md"
 type: "document"
-community: "Community 880"
+community: "Community 875"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_880
+  - community/Community_875
 ---
 
 # Skill: Git Workflow Guardian (GIT-GUARD)
@@ -21,4 +21,4 @@ tags:
 - [[Role_13]] - `contains` [EXTRACTED]
 - [[SKILL_21]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_880
+#graphify/document #graphify/EXTRACTED #community/Community_875

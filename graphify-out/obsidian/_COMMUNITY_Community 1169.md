@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1169
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_32]] - document - .agents/skills/i-socrates/README.md
-- [[README_32]] - document - .agents/skills/i-socrates/README.md
-- [[Related Skills_35]] - document - .agents/skills/i-socrates/README.md
-- [[Socrates — Dialogue Architect]] - document - .agents/skills/i-socrates/README.md
-- [[Usage_35]] - document - .agents/skills/i-socrates/README.md
+- [[ClamAV (malware detection)]] - concept - gateway/security/__init__.py
+- [[Falco (runtime security monitoring)]] - concept - gateway/security/__init__.py
+- [[Trivy (container vulnerability scanning)]] - concept - gateway/security/__init__.py
+- [[Wazuh (file integrity monitoring)]] - concept - gateway/security/__init__.py
+- [[__init__.py_9]] - code - gateway/security/__init__.py
 
 ## Live Query (requires Dataview plugin)
 

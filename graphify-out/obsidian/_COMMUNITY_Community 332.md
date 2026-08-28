@@ -1,39 +1,41 @@
 ---
 type: community
+cohesion: 0.08
 members: 26
 ---
 
 # Community 332
 
+**Cohesion:** 0.08 - loosely connected
 **Members:** 26 nodes
 
 ## Members
-- [[AgentShroud Infrastructure — Container Image Vulnerabilities]] - document - docs/security/cve-mitigation-matrix.md
-- [[AgentShroud™ CVE Mitigation Matrix]] - document - docs/security/cve-mitigation-matrix.md
-- [[Application CVEs (OpenClaw  Hermes)]] - document - docs/security/cve-mitigation-matrix.md
-- [[CRITICAL (CVSS 9.0+)]] - document - docs/security/cve-mitigation-matrix.md
-- [[CVE-2026-30741 — CVSS 9.8 CRITICAL — RCE via Request-Side Prompt Injection]] - document - docs/security/cve-mitigation-matrix.md
-- [[CVE-2026-34425 — CVSS 5.4 MEDIUM — Preflight Validation Bypass (Shell-Bleed)]] - document - docs/security/cve-mitigation-matrix.md
-- [[CVE-2026-3690 — CVSS 7.4 HIGH — Canvas Authentication Bypass]] - document - docs/security/cve-mitigation-matrix.md
-- [[CWE Coverage]] - document - docs/security/cve-mitigation-matrix.md
-- [[Currently Unmitigable Residual (verified no fix exists anywhere yet)]] - document - docs/security/cve-mitigation-matrix.md
-- [[Executive Summary_11]] - document - docs/security/cve-mitigation-matrix.md
-- [[Gateway image (fresh-DB residual 5C  132H — all `fix NONE` or in-place-unfixable)]] - document - docs/security/cve-mitigation-matrix.md
-- [[HIGH (CVSS 7.0–8.9)]] - document - docs/security/cve-mitigation-matrix.md
-- [[Hermes Agent (7 tracked)]] - document - docs/security/cve-mitigation-matrix.md
-- [[MEDIUM (CVSS 4.0–6.9)]] - document - docs/security/cve-mitigation-matrix.md
-- [[OWASP Agentic AI (ASI) Coverage]] - document - docs/security/cve-mitigation-matrix.md
-- [[OpenClaw (816 tracked)]] - document - docs/security/cve-mitigation-matrix.md
-- [[Previously Partial — Now Fully Mitigated]] - document - docs/security/cve-mitigation-matrix.md
-- [[Representative Examples]] - document - docs/security/cve-mitigation-matrix.md
-- [[Three-status taxonomy (SCRUM-101, 2026-07-14)]] - document - docs/security/cve-mitigation-matrix.md
-- [[Tier 1 — Hand-Curated CVEs (AgentShroud-Specific Mitigations)]] - document - docs/security/cve-mitigation-matrix.md
-- [[Tier 3 — NVD-Sourced Bulk CVEs (276 entries)]] - document - docs/security/cve-mitigation-matrix.md
-- [[Verification_17]] - document - docs/security/cve-mitigation-matrix.md
-- [[hermes image (93 residual, all Debian, all `fix NONE`)]] - document - docs/security/cve-mitigation-matrix.md
-- [[openclaw image (2 residual)]] - document - docs/security/cve-mitigation-matrix.md
-- [[v1.3.0 fresh-DB verification (2026-07-15) — authoritative numbers]] - document - docs/security/cve-mitigation-matrix.md
-- [[voice-gateway image (4 residual, all Debian, all `fix NONE`)]] - document - docs/security/cve-mitigation-matrix.md
+- [[Access Pattern]] - document - docs/setup/APPLE-SERVICES-SETUP.md
+- [[App-Specific Password (if 2FA enabled)]] - document - docs/setup/APPLE-SERVICES-SETUP.md
+- [[Apple ID Creation]] - document - docs/setup/APPLE-SERVICES-SETUP.md
+- [[Apple Services Setup Guide]] - document - docs/setup/APPLE-SERVICES-SETUP.md
+- [[CalDAV Server]] - document - docs/setup/APPLE-SERVICES-SETUP.md
+- [[CardDAV Server]] - document - docs/setup/APPLE-SERVICES-SETUP.md
+- [[Credential Storage]] - document - docs/setup/APPLE-SERVICES-SETUP.md
+- [[IMAP Settings (Incoming Mail)]] - document - docs/setup/APPLE-SERVICES-SETUP.md
+- [[Notes Access Options]] - document - docs/setup/APPLE-SERVICES-SETUP.md
+- [[Phase 1 Email]] - document - docs/setup/APPLE-SERVICES-SETUP.md
+- [[Phase 2 Calendar]] - document - docs/setup/APPLE-SERVICES-SETUP.md
+- [[Phase 3 Contacts]] - document - docs/setup/APPLE-SERVICES-SETUP.md
+- [[SMTP Settings (Outgoing Mail)]] - document - docs/setup/APPLE-SERVICES-SETUP.md
+- [[Test Access]] - document - docs/setup/APPLE-SERVICES-SETUP.md
+- [[Two-Factor Authentication]] - document - docs/setup/APPLE-SERVICES-SETUP.md
+- [[iCloud Services_3]] - document - docs/setup/APPLE-SERVICES-SETUP.md
+- [[🎯 Next Steps]] - document - docs/setup/APPLE-SERVICES-SETUP.md
+- [[📅 Calendar (CalDAV)]] - document - docs/setup/APPLE-SERVICES-SETUP.md
+- [[📋 Setup Checklist]] - document - docs/setup/APPLE-SERVICES-SETUP.md
+- [[📚 Documentation Links]] - document - docs/setup/APPLE-SERVICES-SETUP.md
+- [[📝 Notes]] - document - docs/setup/APPLE-SERVICES-SETUP.md
+- [[📞 Contacts (CardDAV)]] - document - docs/setup/APPLE-SERVICES-SETUP.md
+- [[📧 Apple Mail (IMAPSMTP)]] - document - docs/setup/APPLE-SERVICES-SETUP.md
+- [[🔐 App-Specific Passwords]] - document - docs/setup/APPLE-SERVICES-SETUP.md
+- [[🚨 Security Notes]] - document - docs/setup/APPLE-SERVICES-SETUP.md
+- [[🤖 Bot Integration Plan]] - document - docs/setup/APPLE-SERVICES-SETUP.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -43,7 +45,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 90]]
+- 1 edge to [[_COMMUNITY_Community 428]]
 
 ## Top bridge nodes
-- [[AgentShroud™ CVE Mitigation Matrix]] - degree 10, connects to 1 community
+- [[Apple Services Setup Guide]] - degree 11, connects to 1 community

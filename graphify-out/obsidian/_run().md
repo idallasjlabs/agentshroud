@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_canary_deploy.py"
 type: "code"
-community: "Community 684"
+community: "Community 683"
 location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_684
+  - community/Community_683
 ---
 
 # _run()
@@ -21,4 +21,4 @@ tags:
 - [[test_canary_deploy.py]] - `contains` [EXTRACTED]
 - [[test_help_prints_usage()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_684
+#graphify/code #graphify/EXTRACTED #community/Community_683

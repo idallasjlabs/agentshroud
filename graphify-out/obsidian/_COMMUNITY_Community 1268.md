@@ -1,18 +1,20 @@
 ---
 type: community
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1268
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[agentshroud-manage.sh]] - code - scripts/agentshroud-manage.sh
-- [[agentshroud-manage.sh script]] - code - scripts/agentshroud-manage.sh
-- [[api_call()]] - code - scripts/agentshroud-manage.sh
-- [[usage()_3]] - code - scripts/agentshroud-manage.sh
-- [[validate_input()]] - code - scripts/agentshroud-manage.sh
+- [[AgentShroud Module Inventory]] - document - skills/custom/agentshroud-blueteam/references/module-inventory.md
+- [[Original 33 Modules (v0.6.0)]] - document - skills/custom/agentshroud-blueteam/references/module-inventory.md
+- [[Pipeline Integration Points]] - document - skills/custom/agentshroud-blueteam/references/module-inventory.md
+- [[module-inventory]] - document - skills/custom/agentshroud-blueteam/references/module-inventory.md
+- [[v0.7.0 New Modules (Tier 2+3 + Hardening)]] - document - skills/custom/agentshroud-blueteam/references/module-inventory.md
 
 ## Live Query (requires Dataview plugin)
 

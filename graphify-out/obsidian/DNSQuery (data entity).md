@@ -1,13 +1,13 @@
 ---
 source_file: "docs/data/data-dictionary.md"
 type: "concept"
-community: "Community 1606"
+community: "Community 1694"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1606
+  - community/Community_1694
 ---
 
 # DNSQuery (data entity)
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1606
+#graphify/concept #graphify/EXTRACTED #community/Community_1694

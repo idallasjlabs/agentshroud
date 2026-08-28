@@ -1,22 +1,27 @@
 ---
 type: community
-members: 9
+cohesion: 0.17
+members: 12
 ---
 
 # Community 759
 
-**Members:** 9 nodes
+**Cohesion:** 0.17 - loosely connected
+**Members:** 12 nodes
 
 ## Members
-- [[v0.9.0 Sentinel — Data Isolation + SOC + Remediation (37 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[🔴 Private Service Data Isolation (6 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[🔴 Security Operations Center (SOC) (6 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[🟡 Apple Messages Integration (4 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[🟡 Security Tools — Full Integration (5 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[🟡 Steve Hay Remediation (4 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[🟢 Development Infrastructure (4 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[🟢 Infrastructure (5 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[🟢 Multi-Agent Architecture (3 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Additional Patches]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
+- [[Behavior]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
+- [[Patch 1 Main Agent as Default]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
+- [[Patch 2 Telegram Binding]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
+- [[Patch 3 Telegram Bot Token (if $TELEGRAM_BOT_TOKEN is set)]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
+- [[Patches Applied]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
+- [[Purpose_120]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
+- [[Related Notes_6]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
+- [[Usage_122]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
+- [[Why Required]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
+- [[apply-patches.js_2]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
+- [[apply-patches.js_1]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,9 +29,3 @@ members: 9
 TABLE source_file, type FROM #community/Community_759
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 360]]
-
-## Top bridge nodes
-- [[v0.9.0 Sentinel — Data Isolation + SOC + Remediation (37 items)]] - degree 9, connects to 1 community

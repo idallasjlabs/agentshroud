@@ -1,25 +1,27 @@
 ---
 type: community
+cohesion: 0.17
 members: 12
 ---
 
 # Community 741
 
+**Cohesion:** 0.17 - loosely connected
 **Members:** 12 nodes
 
 ## Members
-- [[Boot Sequence (Numbered)]] - document - docs/vault/01 - Architecture/Startup Sequence.md
-- [[Common Startup Failures]] - document - docs/vault/01 - Architecture/Startup Sequence.md
-- [[First-Boot Notes]] - document - docs/vault/01 - Architecture/Startup Sequence.md
-- [[Overview_20]] - document - docs/vault/01 - Architecture/Startup Sequence.md
-- [[Related Notes_5]] - document - docs/vault/01 - Architecture/Startup Sequence.md
-- [[Stage 1 Gateway Container Startup]] - document - docs/vault/01 - Architecture/Startup Sequence.md
-- [[Stage 2 Gateway Application Initialization (main.py lifespan)]] - document - docs/vault/01 - Architecture/Startup Sequence.md
-- [[Stage 3 Health Check]] - document - docs/vault/01 - Architecture/Startup Sequence.md
-- [[Stage 4 Bot Container Startup]] - document - docs/vault/01 - Architecture/Startup Sequence.md
-- [[Stage 5 Fully Operational]] - document - docs/vault/01 - Architecture/Startup Sequence.md
-- [[Startup Indicators]] - document - docs/vault/01 - Architecture/Startup Sequence.md
-- [[Startup Sequence_1]] - document - docs/vault/01 - Architecture/Startup Sequence.md
+- [[7-Layer Defense Architecture]] - document - docs/architecture/agentic-os.md
+- [[Key Classes_1]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Layer Reference]] - document - docs/vault/09 - Diagrams/Security Pipeline Flow.md
+- [[Module Count by Layer]] - document - docs/architecture/agentic-os.md
+- [[Monitor Mode]] - document - docs/vault/09 - Diagrams/Security Pipeline Flow.md
+- [[Overview_24]] - document - docs/vault/09 - Diagrams/Security Pipeline Flow.md
+- [[Proxy Layer]] - document - docs/architecture/agentic-os.md
+- [[Related Notes_73]] - document - docs/vault/09 - Diagrams/Security Pipeline Flow.md
+- [[`AuditChain`]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[`PipelineAction` (Enum)]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[`PipelineResult` (Dataclass)]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[`SecurityPipeline`]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,7 +31,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 271]]
+- 1 edge to [[_COMMUNITY_Community 162]]
+- 1 edge to [[_COMMUNITY_Community 117]]
+- 1 edge to [[_COMMUNITY_Community 479]]
+- 1 edge to [[_COMMUNITY_Community 596]]
 
 ## Top bridge nodes
-- [[Startup Sequence_1]] - degree 7, connects to 1 community
+- [[`SecurityPipeline`]] - degree 11, connects to 3 communities
+- [[Key Classes_1]] - degree 5, connects to 1 community

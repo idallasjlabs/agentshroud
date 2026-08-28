@@ -1,34 +1,36 @@
 ---
 type: community
+cohesion: 0.10
 members: 21
 ---
 
 # Community 423
 
+**Cohesion:** 0.10 - loosely connected
 **Members:** 21 nodes
 
 ## Members
-- [[Audit & Compliance (4)]] - document - docs/security/security-inventory.md
-- [[Collaborator Testing]] - document - docs/security/security-inventory.md
-- [[Encryption & Key Management (3)]] - document - docs/security/security-inventory.md
-- [[External Integrations (4)]] - document - docs/security/security-inventory.md
-- [[Inbound Defense (6)]] - document - docs/security/security-inventory.md
-- [[Infrastructure Protection (8)]] - document - docs/security/security-inventory.md
-- [[MCPTool Security (6)]] - document - docs/security/security-inventory.md
-- [[Network & Egress (6)]] - document - docs/security/security-inventory.md
-- [[Orchestration (3)]] - document - docs/security/security-inventory.md
-- [[Outbound Defense (6)]] - document - docs/security/security-inventory.md
-- [[Owner Testing]] - document - docs/security/security-inventory.md
-- [[PII & Data Protection (3)]] - document - docs/security/security-inventory.md
-- [[Security Architecture Documents (24)]] - document - docs/security/security-inventory.md
-- [[Security Configuration Files (9)]] - document - docs/security/security-inventory.md
-- [[Security Modules (58)]] - document - docs/security/security-inventory.md
-- [[Security Test Files (38)]] - document - docs/security/security-inventory.md
-- [[Summary_41]] - document - docs/security/security-inventory.md
-- [[Supply Chain & Browser (2)]] - document - docs/security/security-inventory.md
-- [[Testing Checklist_1]] - document - docs/security/security-inventory.md
-- [[security-inventory]] - document - docs/security/security-inventory.md
-- [[🛡️ AgentShroud Security Inventory (v0.8.0)]] - document - docs/security/security-inventory.md
+- [[Advanced Integrations (Phase 19)]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[AgentShroud Shared Tasks]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[AgentShroud Tasks (all overdue, added to v0.8.0)]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[AgentShroud — Master Feature List (Everything Ever Mentioned)]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[Apple Reminders — Items Recovered]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[Browser Extension_1]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[Collaborators]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[Full Configuration System (Phase 18)]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[Infrastructure_6]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[Infrastructure — Deferred (moved from v0.9.0 → post-v1.0.0 on 2026-03-04)]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[Integration Hub (Phase 13)]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[MASTER-FEATURE-LIST]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[Mac Mini Onboarding (Phase 14)]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[Multi-Host Deployment]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[Multi-Platform Container Support]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[Personal Infrastructure Monitor (Phase 15)]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[Post-v1.0.0 — Deferred]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[Secure Voice (moved from v0.9.0 → post-v1.0.0 on 2026-03-04)]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[Summary_4]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[iOSmacOS Shortcuts]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[⚠️ STATUS UPDATE — 2026-07-09 (read before the per-item marks below)]] - document - docs/planning/MASTER-FEATURE-LIST.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -38,7 +40,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 506]]
+- 1 edge to [[_COMMUNITY_Community 403]]
+- 1 edge to [[_COMMUNITY_Community 371]]
+- 1 edge to [[_COMMUNITY_Community 974]]
 
 ## Top bridge nodes
-- [[Security Modules (58)]] - degree 13, connects to 1 community
+- [[AgentShroud — Master Feature List (Everything Ever Mentioned)]] - degree 10, connects to 3 communities

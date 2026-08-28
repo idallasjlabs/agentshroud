@@ -1,12 +1,12 @@
 ---
 source_file: ".mcp.json"
 type: "code"
-community: "Community 219"
+community: "Community 222"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_219
+  - community/Community_222
 ---
 
 # devonthink
@@ -15,4 +15,4 @@ tags:
 - [[.llm_settingsmcp-serversdevonthinkmcp-devonthink.sh]] - `references` [EXTRACTED]
 - [[.mcp.json]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_219
+#graphify/code #graphify/EXTRACTED #community/Community_222

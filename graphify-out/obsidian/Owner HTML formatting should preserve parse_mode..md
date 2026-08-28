@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Community 3"
+community: "Community 96"
 location: "L2096"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_3
+  - community/Community_96
 ---
 
 # Owner HTML formatting should preserve parse_mode.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_html_parse_mode_preserved_without_redaction_placeholders()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_3
+#graphify/rationale #graphify/EXTRACTED #community/Community_96

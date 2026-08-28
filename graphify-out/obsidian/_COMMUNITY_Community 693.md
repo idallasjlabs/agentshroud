@@ -1,28 +1,29 @@
 ---
 type: community
-members: 15
+cohesion: 0.14
+members: 14
 ---
 
 # Community 693
 
-**Members:** 15 nodes
+**Cohesion:** 0.14 - loosely connected
+**Members:** 14 nodes
 
 ## Members
-- [[.client()_2]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_check_agentshroud_updates()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_check_openclaw_updates()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_export_config()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_get_config()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_get_logs()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_killswitch_freeze()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_killswitch_invalid_mode()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_killswitch_no_confirm()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_security_report()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_status()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_stop_service()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_update_history()]] - code - gateway/tests/test_runtime_engines.py
-- [[Test the management API endpoints with mocked runtime.]] - rationale - gateway/tests/test_runtime_engines.py
-- [[TestWebAPI]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_false_on_empty_string()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_false_on_non_string()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_no_false_positive_on_domain_mention()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_no_false_positive_on_generic_llm_response()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_true_on_callback_token()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_true_on_deny_token()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_true_on_real_egress_banner_header()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Common LLM prose with 'risk', 'tool', 'id' must NOT trigger the matcher.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Generic 'domain' mention without the egress emoji must not trigger.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Inline-keyboard callback tokens must always match (egress_allow_always_uuid).]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestInternalBannerMatcher]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[The canonical 🌐 Egress Request header from TelegramEgressNotifier must match.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[_contains_internal_approval_banner must only fire on real egress banners.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[egress_deny_ callback token must match.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,11 +33,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 197]]
-- 1 edge to [[_COMMUNITY_Community 358]]
-- 1 edge to [[_COMMUNITY_Community 647]]
-- 1 edge to [[_COMMUNITY_Community 354]]
-- 1 edge to [[_COMMUNITY_Community 220]]
+- 3 edges to [[_COMMUNITY_PII Sanitizer & E2E Tests]]
+- 1 edge to [[_COMMUNITY_Adversarial Injection Guards]]
+- 1 edge to [[_COMMUNITY_Community 17]]
 
 ## Top bridge nodes
-- [[TestWebAPI]] - degree 20, connects to 5 communities
+- [[TestInternalBannerMatcher]] - degree 13, connects to 3 communities

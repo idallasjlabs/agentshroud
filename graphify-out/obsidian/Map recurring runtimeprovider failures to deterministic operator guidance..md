@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Community 93"
+community: "Community 70"
 location: "L908"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_93
+  - community/Community_70
 ---
 
 # Map recurring runtime/provider failures to deterministic operator guidance.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._rewrite_known_runtime_errors()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_93
+#graphify/rationale #graphify/EXTRACTED #community/Community_70

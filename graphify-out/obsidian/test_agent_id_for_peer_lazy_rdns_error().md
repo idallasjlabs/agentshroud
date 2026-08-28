@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy.py"
 type: "code"
-community: "Community 94"
+community: "Community 75"
 location: "L428"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_94
+  - community/Community_75
 ---
 
 # test_agent_id_for_peer_lazy_rdns_error()
@@ -16,4 +16,4 @@ tags:
 - [[rDNS failure + fDNS failure → generic label, cached, no exception.]] - `rationale_for` [EXTRACTED]
 - [[test_http_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_94
+#graphify/code #graphify/EXTRACTED #community/Community_75

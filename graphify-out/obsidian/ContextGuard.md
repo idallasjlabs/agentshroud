@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "code"
-community: "Community 6"
+community: "Security Audit & Drift Detection"
 location: "L67"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_6
+  - community/Security_Audit__Drift_Detection
 ---
 
 # ContextGuard
@@ -103,4 +103,4 @@ tags:
 - [[test_redteam_probes.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_6
+#graphify/code #graphify/INFERRED #community/Security_Audit__Drift_Detection

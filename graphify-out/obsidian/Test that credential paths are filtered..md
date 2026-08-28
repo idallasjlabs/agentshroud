@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "Community 1338"
+community: "Community 1549"
 location: "L175"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1338
+  - community/Community_1549
 ---
 
 # Test that credential paths are filtered.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_credential_path_filtering()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1338
+#graphify/rationale #graphify/EXTRACTED #community/Community_1549

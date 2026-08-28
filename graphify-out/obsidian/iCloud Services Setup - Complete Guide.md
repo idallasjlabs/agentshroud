@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/ICLOUD-SERVICES-SETUP.md"
 type: "document"
-community: "Community 335"
+community: "Community 333"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_335
+  - community/Community_333
 ---
 
 # iCloud Services Setup - Complete Guide
@@ -24,4 +24,4 @@ tags:
 - [[🔐 Important App-Specific Passwords]] - `contains` [EXTRACTED]
 - [[🚀 Complete Setup Script]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_335
+#graphify/document #graphify/EXTRACTED #community/Community_333

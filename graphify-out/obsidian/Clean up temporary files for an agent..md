@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "rationale"
-community: "Community 7"
+community: "Community 88"
 location: "L412"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_7
+  - community/Community_88
 ---
 
 # Clean up temporary files for an agent.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.cleanup_temp_files()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_7
+#graphify/rationale #graphify/EXTRACTED #community/Community_88

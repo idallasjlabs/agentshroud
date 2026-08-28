@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "rationale"
-community: "Community 24"
+community: "Community 23"
 location: "L545"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_24
+  - community/Community_23
 ---
 
 # broadcast() itself must bound its wait per-client, not just rely on     callers
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_broadcast_does_not_hang_forever_on_dead_client()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_24
+#graphify/rationale #graphify/EXTRACTED #community/Community_23

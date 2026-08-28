@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/PUBLISH-TO-CLAWHUB.md"
 type: "document"
-community: "Community 1266"
+community: "Community 1262"
 location: "L364"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1266
+  - community/Community_1262
 ---
 
 # 🆘 Troubleshooting
@@ -18,4 +18,4 @@ tags:
 - [[clawhub command not found]] - `contains` [EXTRACTED]
 - [[Publish SecureBrowser to ClawHub - Step-by-Step Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1266
+#graphify/document #graphify/EXTRACTED #community/Community_1262

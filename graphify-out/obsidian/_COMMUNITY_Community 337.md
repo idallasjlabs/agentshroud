@@ -1,39 +1,41 @@
 ---
 type: community
+cohesion: 0.08
 members: 26
 ---
 
 # Community 337
 
+**Cohesion:** 0.08 - loosely connected
 **Members:** 26 nodes
 
 ## Members
-- [[.test_contains_high_risk_leakage_detects_bootstrap_md_in_content_context()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_contains_high_risk_leakage_detects_function_calls_xml()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_contains_high_risk_leakage_detects_identity_md_in_reveal_context()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_contains_high_risk_leakage_detects_invoke_xml()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_contains_high_risk_leakage_skips_bootstrap_md_in_denial_context()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_contains_high_risk_leakage_skips_protected_header_text()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_contains_internal_approval_banner_detects_allow_always_callback()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_contains_internal_approval_banner_detects_allow_once_callback()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_contains_internal_approval_banner_detects_deny_callback()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_contains_internal_approval_banner_detects_standard_banner()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_contains_internal_approval_banner_ignores_normal_text()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_contains_internal_approval_banner_ignores_unrelated_deny_text()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_contains_legacy_block_notice_detects_legacy_bracket_text()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_contains_legacy_block_notice_detects_legacy_protected_phrase()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_extract_first_egress_target_skips_identity_md()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_extract_first_egress_target_skips_md_filenames()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_extract_first_egress_target_still_catches_real_domains()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_is_no_reply_token_accepts_fenced_and_punctuated_variants()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_is_no_reply_token_rejects_non_token_text()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_looks_like_filename_reference_catches_common_extensions()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_looks_like_filename_reference_rejects_real_domains()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[BOOTSTRAP.md must NOT be treated as an egress domain.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Our own protected notices must never be double-filtered.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[TestOutboundClassifierHelpers]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Unit tests for outbound helper classifiers used by collaborator filtering.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[bootstrap.md mentioned in a denial should NOT trigger the high-risk filter.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[AgentShroud v0.8.0 — Blue Team Security Assessment (Final)]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[C4 Root Endpoint `` Exposes System Metrics Without Authentication]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[C5 `status` Endpoint Exposes Security Posture Without Authentication]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[CRITICAL — Must Fix Before Release]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[Fixes Applied]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[H4 Docker Network `agentshroud-isolated` Not Actually Isolated]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[H5 `dashboardws-token` Returns Master Auth Token to Browser]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[H6 Session Manager Path Traversal via Crafted User ID]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[H7 Error Messages Disclose Internal Details]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[HIGH — Should Fix Before Release]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[L4 CSP Allows `unsafe-inline` for Scripts and Styles]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[L5 WebSocket Token in Query String]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[L6 Auto-Refresh via JavaScript on Root Page]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[L7 Dead Code After Return in webhook_receiver.py]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[L8 `python-jose` Dependency Has Known CVEs]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[LOW — Informational]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[M4 Pi-hole Auth Token Passed in URL Query String]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[M5 LLM Proxy Endpoint `v1{path}` Has No Authentication]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[M6 Telegram API Proxy Passes Raw Bot Token Without Validation]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[M7 Dockerfile Uses `curl  sh` for Trivy Installation]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[M8 Unpinned Base Images and `@latest` Tags]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[MEDIUM — Fix Soon]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[New Findings]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[Prior Assessment (v0.8.0) — Status]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[Summary_12]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
+- [[Test Results_1]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -43,11 +45,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 1]]
-- 1 edge to [[_COMMUNITY_Community 870]]
-- 1 edge to [[_COMMUNITY_Community 4]]
-- 1 edge to [[_COMMUNITY_Community 42]]
-- 1 edge to [[_COMMUNITY_Community 265]]
+- 1 edge to [[_COMMUNITY_Community 386]]
 
 ## Top bridge nodes
-- [[TestOutboundClassifierHelpers]] - degree 27, connects to 5 communities
+- [[AgentShroud v0.8.0 — Blue Team Security Assessment (Final)]] - degree 5, connects to 1 community

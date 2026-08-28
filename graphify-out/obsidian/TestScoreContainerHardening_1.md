@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "Community 1350"
+community: "Community 1356"
 location: "L306"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1350
+  - community/Community_1356
 ---
 
 # TestScoreContainerHardening
@@ -17,4 +17,4 @@ tags:
 - [[.test_three_baseline_no_openscap()]] - `method` [EXTRACTED]
 - [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1350
+#graphify/code #graphify/EXTRACTED #community/Community_1356

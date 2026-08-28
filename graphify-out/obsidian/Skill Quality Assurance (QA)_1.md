@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-qa/SKILL.md"
 type: "document"
-community: "Community 436"
+community: "Community 443"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_436
+  - community/Community_443
 ---
 
 # Skill: Quality Assurance (QA)
@@ -19,4 +19,4 @@ tags:
 - [[SKILL_109]] - `contains` [EXTRACTED]
 - [[Testing Hierarchy_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_436
+#graphify/document #graphify/EXTRACTED #community/Community_443

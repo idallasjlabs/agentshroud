@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 1.00
 members: 2
 ---
 
 # Community 1458
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[SKILL_135]] - document - docker/config/openclaw/skills/i-bdd/SKILL.md
-- [[Skill bdd_2]] - document - docker/config/openclaw/skills/i-bdd/SKILL.md
+- [[SKILL_76]] - document - docker/config/hermes/skills/i-chaos-engineering/SKILL.md
+- [[Skill chaos-engineering_1]] - document - docker/config/hermes/skills/i-chaos-engineering/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

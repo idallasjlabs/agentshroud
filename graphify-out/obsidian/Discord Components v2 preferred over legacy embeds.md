@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/discord/SKILL.md"
 type: "rationale"
-community: "Community 892"
+community: "Community 887"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_892
+  - community/Community_887
 ---
 
 # Discord Components v2 preferred over legacy embeds
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[message tool (channel=discord)]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_892
+#graphify/rationale #graphify/EXTRACTED #community/Community_887

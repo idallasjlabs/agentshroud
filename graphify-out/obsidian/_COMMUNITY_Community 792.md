@@ -1,25 +1,26 @@
 ---
 type: community
-members: 12
+cohesion: 0.20
+members: 11
 ---
 
 # Community 792
 
-**Members:** 12 nodes
+**Cohesion:** 0.20 - loosely connected
+**Members:** 11 nodes
 
 ## Members
-- [[ADR-008-progressive-trust-levels]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
-- [[ADR-008 Progressive Trust Levels for Agents]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
-- [[Consequences_7]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
-- [[Context_7]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
-- [[Decision_9]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
-- [[Mitigation_4]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
-- [[Negative Consequences_6]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
-- [[Positive Consequences_6]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
-- [[Progressive Controls]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
-- [[Status_7]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
-- [[Trust Calculation]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
-- [[Trust Levels (0-4)]] - document - docs/architecture/adr/ADR-008-progressive-trust-levels.md
+- [[02-infrastructure]] - document - docs/diagrams/02-infrastructure.md
+- [[4. Infrastructure Diagram — Hosting & Servers]] - document - docs/diagrams/02-infrastructure.md
+- [[5. Network Topology Diagram]] - document - docs/diagrams/02-infrastructure.md
+- [[6. Deployment Diagram — What Runs Where]] - document - docs/diagrams/02-infrastructure.md
+- [[AgentShroud — Infrastructure & Network Diagrams]] - document - docs/diagrams/02-infrastructure.md
+- [[Deployment Diagram — What Runs Where]] - concept - docs/diagrams/02-infrastructure.md
+- [[Infrastructure Diagram — Hosting & Servers]] - concept - docs/diagrams/02-infrastructure.md
+- [[Network Topology Diagram]] - concept - docs/diagrams/02-infrastructure.md
+- [[Rendered CICD Deployment Diagram (PNG)]] - image - docs/diagrams/images/diagram-06-cicd-deployment.png
+- [[Rendered Infrastructure Hosting Diagram (PNG)]] - image - docs/diagrams/images/diagram-04-infrastructure-hosting.png
+- [[Rendered Network Topology Diagram (PNG)]] - image - docs/diagrams/images/diagram-05-network-topology.png
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,3 +28,10 @@ members: 12
 TABLE source_file, type FROM #community/Community_792
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_Community 442]]
+
+## Top bridge nodes
+- [[02-infrastructure]] - degree 5, connects to 1 community
+- [[Deployment Diagram — What Runs Where]] - degree 3, connects to 1 community

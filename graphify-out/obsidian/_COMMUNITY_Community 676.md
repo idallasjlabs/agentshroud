@@ -1,27 +1,29 @@
 ---
 type: community
+cohesion: 0.15
 members: 14
 ---
 
 # Community 676
 
+**Cohesion:** 0.15 - loosely connected
 **Members:** 14 nodes
 
 ## Members
-- [[Phase 10 Community & GitHub Setup (10 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Phase 11 Command Center — Web (11 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Phase 12 One-Click Install (5 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Phase 13 Final Hardening + Release (10 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Phase 1 Security & Secrets (14 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Phase 2 Repo Hygiene (10 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Phase 3 Container & Runtime Hardening (11 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Phase 4 Dependencies (7 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Phase 5 Networking (5 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Phase 6 Testing (7 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Phase 7 Documentation (12 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Phase 8 Operational Readiness (7 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[Phase 9 Legal & IP (7 items)]] - document - docs/planning/RELEASE-PLAN.md
-- [[v1.0.0 Fortress — Ship-Ready Public Release (116 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[._call_slack_api()]] - code - gateway/proxy/slack_proxy.py
+- [[._intercept_connections_open()]] - code - gateway/proxy/slack_proxy.py
+- [[._is_owner_channel()]] - code - gateway/proxy/slack_proxy.py
+- [[.invite_channel_member()]] - code - gateway/proxy/slack_proxy.py
+- [[.kick_channel_member()]] - code - gateway/proxy/slack_proxy.py
+- [[.provision_group_channel()]] - code - gateway/proxy/slack_proxy.py
+- [[.proxy_outbound()]] - code - gateway/proxy/slack_proxy.py
+- [[Create a Slack channel for a group. Returns channel_id or None on failure.]] - rationale - gateway/proxy/slack_proxy.py
+- [[Intercept apps.connections.open rewrite the returned WSS URL to route         t]] - rationale - gateway/proxy/slack_proxy.py
+- [[Invite a Slack user to a channel. Returns True on success.]] - rationale - gateway/proxy/slack_proxy.py
+- [[POST to httpsslack.comapimethod with the bot token.]] - rationale - gateway/proxy/slack_proxy.py
+- [[Proxy a bot Slack Web API call through the security pipeline.          For messa]] - rationale - gateway/proxy/slack_proxy.py
+- [[Remove a Slack user from a channel. Returns True on success.]] - rationale - gateway/proxy/slack_proxy.py
+- [[Return True if channel is a DM with the configured owner.          In Slack, DM]] - rationale - gateway/proxy/slack_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,7 +33,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 360]]
+- 7 edges to [[_COMMUNITY_Community 24]]
 
 ## Top bridge nodes
-- [[v1.0.0 Fortress — Ship-Ready Public Release (116 items)]] - degree 14, connects to 1 community
+- [[._call_slack_api()]] - degree 7, connects to 1 community
+- [[.proxy_outbound()]] - degree 5, connects to 1 community
+- [[._intercept_connections_open()]] - degree 4, connects to 1 community
+- [[.invite_channel_member()]] - degree 3, connects to 1 community
+- [[._is_owner_channel()]] - degree 3, connects to 1 community

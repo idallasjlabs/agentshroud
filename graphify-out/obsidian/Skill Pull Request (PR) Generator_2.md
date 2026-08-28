@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-pr/SKILL.md"
 type: "document"
-community: "Community 899"
+community: "Community 894"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_899
+  - community/Community_894
 ---
 
 # Skill: Pull Request (PR) Generator
@@ -18,4 +18,4 @@ tags:
 - [[Role_99]] - `contains` [EXTRACTED]
 - [[SKILL_169]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_899
+#graphify/document #graphify/EXTRACTED #community/Community_894

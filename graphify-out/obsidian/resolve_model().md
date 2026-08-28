@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/resolve_model.py"
 type: "code"
-community: "Community 129"
+community: "Community 179"
 location: "L125"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_129
+  - community/Community_179
 ---
 
 # resolve_model()
@@ -33,4 +33,4 @@ tags:
 - [[test_resolve_model_corrects_stale_alias_from_local_model_ref()]] - `calls` [INFERRED]
 - [[test_unknown_mode_treated_as_cloud()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_129
+#graphify/code #graphify/INFERRED #community/Community_179

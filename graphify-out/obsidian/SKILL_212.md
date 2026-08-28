@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/healthcheck/SKILL.md"
 type: "document"
-community: "Community 714"
+community: "Community 712"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_714
+  - community/Community_712
 ---
 
 # SKILL.md
@@ -17,4 +17,4 @@ tags:
 - [[Stable-named cron scheduling for periodic audits]] - `implements` [EXTRACTED]
 - [[openclaw security audit command family]] - `implements` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_714
+#graphify/document #graphify/EXTRACTED #community/Community_712

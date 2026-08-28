@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md"
 type: "document"
-community: "Community 1052"
+community: "Community 1054"
 location: "L457"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1052
+  - community/Community_1054
 ---
 
 # Important Notes
@@ -14,11 +14,10 @@ tags:
 ## Connections
 - [[Add Swap File]] - `contains` [EXTRACTED]
 - [[AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist]] - `contains` [EXTRACTED]
-- [[AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist_1]] - `contains` [EXTRACTED]
 - [[Backup Strategy]] - `contains` [EXTRACTED]
 - [[Cooling Recommendations]] - `contains` [EXTRACTED]
 - [[Optional Automated Security Updates]] - `contains` [EXTRACTED]
 - [[Power Supply]] - `contains` [EXTRACTED]
 - [[Security Hardening Checklist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1052
+#graphify/document #graphify/EXTRACTED #community/Community_1054

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-17-state-bot-session.svg"
 type: "concept"
-community: "Community 1261"
+community: "Community 1257"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1261
+  - community/Community_1257
 ---
 
 # idle (health monitor 300s interval)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[active]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1261
+#graphify/concept #graphify/EXTRACTED #community/Community_1257

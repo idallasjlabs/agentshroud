@@ -1,11 +1,11 @@
 ---
 source_file: "docs/reviews/blue-team-audit-v0.7.0.md"
 type: "concept"
-community: "Community 659"
+community: "Community 46"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_659
+  - community/Community_46
 ---
 
 # docs/reviews/blue-team-audit-v0.7.0.md
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Blue Team Security Auditor (SEC-DEFENSE)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_659
+#graphify/concept #graphify/EXTRACTED #community/Community_46

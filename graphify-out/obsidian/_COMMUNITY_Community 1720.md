@@ -1,14 +1,16 @@
 ---
 type: community
+cohesion: 1.00
 members: 1
 ---
 
 # Community 1720
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[script.md (podcast pipeline dialogue artifact)]] - concept - docker/config/hermes/skills/i-mnemosyne/SKILL.md
+- [[esp_log.h]] - code - firmware/voice-terminal/test/test_playback_state/stubs/esp_log.h
 
 ## Live Query (requires Dataview plugin)
 

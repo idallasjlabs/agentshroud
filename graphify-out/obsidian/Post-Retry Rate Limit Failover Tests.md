@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_rate_limit_failover.py"
 type: "code"
-community: "Community 79"
+community: "Community 83"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_79
+  - community/Community_83
 ---
 
 # Post-Retry Rate Limit Failover Tests
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[LLMProxy]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_79
+#graphify/code #graphify/EXTRACTED #community/Community_83

@@ -1,20 +1,20 @@
 ---
-source_file: ".agents/skills/i-production/README.md"
+source_file: "docker/config/hermes/skills/i-production/README.md"
 type: "document"
-community: "Community 146"
+community: "Community 1196"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_146
+  - community/Community_1196
 ---
 
 # Incident Response (INCIDENT)
 
 ## Connections
-- [[Purpose_24]] - `contains` [EXTRACTED]
-- [[README_24]] - `contains` [EXTRACTED]
-- [[Related Skills_27]] - `contains` [EXTRACTED]
-- [[Usage_27]] - `contains` [EXTRACTED]
+- [[Purpose_61]] - `contains` [EXTRACTED]
+- [[README_66]] - `contains` [EXTRACTED]
+- [[Related Skills_67]] - `contains` [EXTRACTED]
+- [[Usage_68]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_146
+#graphify/document #graphify/EXTRACTED #community/Community_1196

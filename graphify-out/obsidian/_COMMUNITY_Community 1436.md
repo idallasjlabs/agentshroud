@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 1.00
 members: 2
 ---
 
 # Community 1436
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[.gitguardian.yaml — ggshield CLI secret scanning allowlist config]] - document - .gitguardian.yaml
-- [[GitGuardian ignored-paths + ignored-matches for synthetic test fixtures]] - concept - .gitguardian.yaml
+- [[SKILL_11]] - document - .agents/skills/i-cd/SKILL.md
+- [[Skill cd]] - document - .agents/skills/i-cd/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

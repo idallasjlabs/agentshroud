@@ -1,19 +1,21 @@
 ---
 type: community
+cohesion: 0.40
 members: 6
 ---
 
 # Community 1091
 
+**Cohesion:** 0.40 - moderately connected
 **Members:** 6 nodes
 
 ## Members
-- [[Cryptographic Node Pairing Process]] - concept - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Distributed OpenClaw Node Architecture (Pi peer-to-peer agent)]] - concept - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Marvin (Mac Studio) — Primary devbuild server]] - concept - docs/TEAM.md
-- [[Pi (Raspberry Pi 4B) — Edgetest node]] - concept - docs/TEAM.md
-- [[Tailscale mesh VPN (tail240ea8.ts.net)]] - concept - docs/TEAM.md
-- [[Trillian (Mac Mini) — Secondary buildCI]] - concept - docs/TEAM.md
+- [[button_cb_t_1]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/iot_button.h
+- [[button_event_t_1]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/iot_button.h
+- [[button_handle_t_3]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/iot_button.h
+- [[iot_button.h_1]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/iot_button.h
+- [[iot_button_delete()_1]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/iot_button.h
+- [[iot_button_register_cb()_1]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/iot_button.h
 
 ## Live Query (requires Dataview plugin)
 

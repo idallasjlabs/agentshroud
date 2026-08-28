@@ -1,14 +1,16 @@
 ---
 type: community
+cohesion: 1.00
 members: 1
 ---
 
 # Community 1812
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[SlackAPIProxy Outbound Scanning Tests]] - code - gateway/tests/test_slack_proxy.py
+- [[AgentShroud Presentation Title Slide]] - image - branding/presentation/title-slide-1920x1080.png
 
 ## Live Query (requires Dataview plugin)
 

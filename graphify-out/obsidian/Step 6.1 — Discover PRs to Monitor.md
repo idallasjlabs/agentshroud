@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/gh-issues/SKILL.md"
 type: "document"
-community: "Community 502"
+community: "Community 498"
 location: "L584"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_502
+  - community/Community_498
 ---
 
 # Step 6.1 — Discover PRs to Monitor
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Phase 6 — PR Review Handler]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_502
+#graphify/document #graphify/EXTRACTED #community/Community_498

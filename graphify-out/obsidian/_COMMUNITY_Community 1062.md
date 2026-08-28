@@ -1,20 +1,22 @@
 ---
 type: community
+cohesion: 0.29
 members: 7
 ---
 
 # Community 1062
 
+**Cohesion:** 0.29 - loosely connected
 **Members:** 7 nodes
 
 ## Members
-- [[.test_returns_false_for_empty_dir()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_returns_false_for_missing_dir()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_returns_false_for_stale_file()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_returns_true_for_fresh_file()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_three_zero_failures_no_report_on_disk()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[TestIsFresh_1]] - code - gateway/tests/test_scorecard_scoring.py
-- [[_mock_empty_dir()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[.test_allowed_tool()]] - code - gateway/tests/test_subagent_governance.py
+- [[.test_denied_in_monitor_still_allows()]] - code - gateway/tests/test_subagent_governance.py
+- [[.test_denied_tool_cronjob()]] - code - gateway/tests/test_subagent_governance.py
+- [[.test_denied_tool_delegate_task()]] - code - gateway/tests/test_subagent_governance.py
+- [[.test_denied_tool_memory()]] - code - gateway/tests/test_subagent_governance.py
+- [[.test_denied_tool_send_message()]] - code - gateway/tests/test_subagent_governance.py
+- [[TestToolAuthorization]] - code - gateway/tests/test_subagent_governance.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,13 +26,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 653]]
-- 2 edges to [[_COMMUNITY_Community 654]]
-- 2 edges to [[_COMMUNITY_Community 927]]
+- 3 edges to [[_COMMUNITY_Community 507]]
+- 2 edges to [[_COMMUNITY_Community 639]]
+- 1 edge to [[_COMMUNITY_Community 912]]
+- 1 edge to [[_COMMUNITY_Community 982]]
+- 1 edge to [[_COMMUNITY_Community 483]]
 
 ## Top bridge nodes
-- [[TestIsFresh_1]] - degree 5, connects to 1 community
-- [[_mock_empty_dir()]] - degree 3, connects to 1 community
-- [[.test_three_zero_failures_no_report_on_disk()]] - degree 2, connects to 1 community
-- [[.test_returns_false_for_missing_dir()]] - degree 2, connects to 1 community
-- [[.test_returns_false_for_stale_file()]] - degree 2, connects to 1 community
+- [[TestToolAuthorization]] - degree 14, connects to 5 communities

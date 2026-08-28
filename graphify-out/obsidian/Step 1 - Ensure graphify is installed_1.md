@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/graphify/SKILL.md"
 type: "document"
-community: "Community 356"
+community: "Community 357"
 location: "L63"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_356
+  - community/Community_357
 ---
 
 # Step 1 - Ensure graphify is installed
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[What You Must Do When Invoked_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_356
+#graphify/document #graphify/EXTRACTED #community/Community_357

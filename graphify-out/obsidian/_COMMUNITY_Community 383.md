@@ -1,37 +1,38 @@
 ---
 type: community
-members: 24
+cohesion: 0.09
+members: 23
 ---
 
 # Community 383
 
-**Members:** 24 nodes
+**Cohesion:** 0.09 - loosely connected
+**Members:** 23 nodes
 
 ## Members
-- [[After Phase 3A3B]] - document - docs/security/VERIFICATION_RESULTS.md
-- [[Before Phase 3A]] - document - docs/security/VERIFICATION_RESULTS.md
-- [[Container Status]] - document - docs/security/VERIFICATION_RESULTS.md
-- [[Created (4 files)]] - document - docs/security/VERIFICATION_RESULTS.md
-- [[Deployment Readiness]] - document - docs/security/VERIFICATION_RESULTS.md
-- [[Development Environment_1]] - document - docs/security/VERIFICATION_RESULTS.md
-- [[Disconnect Mode]] - document - docs/security/VERIFICATION_RESULTS.md
-- [[Files ModifiedCreated]] - document - docs/security/VERIFICATION_RESULTS.md
-- [[Freeze Mode]] - document - docs/security/VERIFICATION_RESULTS.md
-- [[Kill Switch Testing]] - document - docs/security/VERIFICATION_RESULTS.md
-- [[Manual Testing (Next Session)]] - document - docs/security/VERIFICATION_RESULTS.md
-- [[Modified (4 files)]] - document - docs/security/VERIFICATION_RESULTS.md
-- [[Next Steps (Not in Phase 3A3B)]] - document - docs/security/VERIFICATION_RESULTS.md
-- [[OpenClaw Bot Logs (Recent)]] - document - docs/security/VERIFICATION_RESULTS.md
-- [[Phase 3A Implementation Status]] - document - docs/security/VERIFICATION_RESULTS.md
-- [[Phase 3A.8 Note DM Policy]] - document - docs/security/VERIFICATION_RESULTS.md
-- [[Phase 3A3B Implementation Verification Results]] - document - docs/security/VERIFICATION_RESULTS.md
-- [[Phase 3B.1 Implementation Status]] - document - docs/security/VERIFICATION_RESULTS.md
-- [[Production Environment]] - document - docs/security/VERIFICATION_RESULTS.md
-- [[Remaining Work]] - document - docs/security/VERIFICATION_RESULTS.md
-- [[Security Improvements Delivered]] - document - docs/security/VERIFICATION_RESULTS.md
-- [[Security Verification Results]] - document - docs/security/VERIFICATION_RESULTS.md
-- [[Shutdown Mode]] - document - docs/security/VERIFICATION_RESULTS.md
-- [[Testing Recommendations]] - document - docs/security/VERIFICATION_RESULTS.md
+- [[Buffered streaming filter (`_filter_outbound_streaming`)]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Claude Opus intercept]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Configuration_8]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Constructor dependencies (dependency injection)]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Environment variables]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Failover chain]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Failover controls]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Failover notifications]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Header pass-through policy]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Key Classes  Functions_10]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[LLM Providers]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Model prefix routing (`LOCAL_MODEL_ROUTES`)]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Overview_22]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Provider prefix normalization]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Quota Failover]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Related_13]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Retry policy (`_forward_request`)]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Stats tracked]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[Streaming]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[True-streaming path (`proxy_messages_streaming`)]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[`think` tag stripping]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[llm_proxy.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
+- [[llm_proxy.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,9 +40,3 @@ members: 24
 TABLE source_file, type FROM #community/Community_383
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 343]]
-
-## Top bridge nodes
-- [[Phase 3A3B Implementation Verification Results]] - degree 11, connects to 1 community

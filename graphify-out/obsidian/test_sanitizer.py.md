@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_sanitizer.py"
 type: "code"
-community: "Community 405"
+community: "Community 407"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_405
+  - community/Community_407
 ---
 
 # test_sanitizer.py
@@ -25,4 +25,4 @@ tags:
 - [[test_telegram_uid_not_redacted_as_phone()]] - `contains` [EXTRACTED]
 - [[test_uid_inside_parens_preserved()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_405
+#graphify/code #graphify/EXTRACTED #community/Community_407

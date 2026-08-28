@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 1.00
 members: 2
 ---
 
 # Community 1484
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[Diagram 18 Runbook]] - image - docs/diagrams/images/diagram-18-runbook.svg
-- [[Diagram 19 Incident Response]] - image - docs/diagrams/images/diagram-19-incident-response.svg
+- [[SKILL_175]] - document - docker/config/openclaw/skills/i-scrum/SKILL.md
+- [[Skill scrum_2]] - document - docker/config/openclaw/skills/i-scrum/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,20 +1,22 @@
 ---
 type: community
+cohesion: 0.38
 members: 7
 ---
 
 # Community 1027
 
+**Cohesion:** 0.38 - loosely connected
 **Members:** 7 nodes
 
 ## Members
-- [[i-bs SKILL.md (Brand Systems, referenced dependency)]] - document - docker/config/hermes/skills/i-bs/SKILL.md
-- [[i-ti README]] - document - docker/config/hermes/skills/i-ti/README.md
-- [[i-ti SKILL.md (Technical Illustrator, Mermaid diagrams)]] - document - docker/config/hermes/skills/i-ti/SKILL.md
-- [[i-tw README]] - document - docker/config/hermes/skills/i-tw/README.md
-- [[i-tw SKILL.md (Technical Writer)]] - document - docker/config/hermes/skills/i-tw/SKILL.md
-- [[i-ui SKILL.md (UI Engineer, CSS architecture, WCAG AA)]] - document - docker/config/hermes/skills/i-ui/SKILL.md
-- [[i-ux SKILL.md (UX Designer, IA, Nielsen heuristics)]] - document - docker/config/hermes/skills/i-ux/SKILL.md
+- [[SKILL_207]] - document - skills/openclaw/gh-issues/SKILL.md
+- [[SKILL_209]] - document - skills/openclaw/github/SKILL.md
+- [[gh CLI (GitHub)]] - concept - skills/openclaw/github/SKILL.md
+- [[gh-issues Claims File (dedup tracking)]] - concept - skills/openclaw/gh-issues/SKILL.md
+- [[gh-issues Cursor File (cron sequential tracking)]] - concept - skills/openclaw/gh-issues/SKILL.md
+- [[gh-issues PR Review Handler (Phase 6)]] - concept - skills/openclaw/gh-issues/SKILL.md
+- [[gh-issues Sub-agent Spawn (Phase 5)]] - concept - skills/openclaw/gh-issues/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,3 +24,14 @@ members: 7
 TABLE source_file, type FROM #community/Community_1027
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_Community 319]]
+- 1 edge to [[_COMMUNITY_Community 498]]
+- 1 edge to [[_COMMUNITY_Community 667]]
+- 1 edge to [[_COMMUNITY_Community 712]]
+
+## Top bridge nodes
+- [[SKILL_207]] - degree 7, connects to 2 communities
+- [[SKILL_209]] - degree 4, connects to 2 communities
+- [[gh-issues Cursor File (cron sequential tracking)]] - degree 3, connects to 1 community

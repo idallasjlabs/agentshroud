@@ -12,8 +12,7 @@ tags:
 # Deliverables
 
 ## Connections
-- [[AWS Cloud Management & FinOps Agent]] - `contains` [EXTRACTED]
-- [[AWS Cloud Management & FinOps Agent_3]] - `contains` [EXTRACTED]
+- [[AWS Cloud Management & FinOps Agent_2]] - `contains` [EXTRACTED]
 - [[Reports (`.reports`)]] - `contains` [EXTRACTED]
 - [[Script Templates]] - `contains` [EXTRACTED]
 - [[Scripts (`.scripts`)]] - `contains` [EXTRACTED]

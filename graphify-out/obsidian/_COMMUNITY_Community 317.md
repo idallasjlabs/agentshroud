@@ -1,11 +1,13 @@
 ---
 type: community
-members: 27
+cohesion: 0.08
+members: 26
 ---
 
 # Community 317
 
-**Members:** 27 nodes
+**Cohesion:** 0.08 - loosely connected
+**Members:** 26 nodes
 
 ## Members
 - [[API Keys Setup Guide]] - document - docs/setup/SETUP_API_KEYS.md
@@ -33,7 +35,6 @@ members: 27
 - [[Test via Control UI]] - document - docs/setup/SETUP_API_KEYS.md
 - [[Test via Telegram]] - document - docs/setup/SETUP_API_KEYS.md
 - [[Verify OpenAI Key Exists]] - document - docs/setup/SETUP_API_KEYS.md
-- [[View Configured Profiles]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
 - [[View Configured Providers]] - document - docs/setup/SETUP_API_KEYS.md
 
 ## Live Query (requires Dataview plugin)
@@ -44,10 +45,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 225]]
-- 1 edge to [[_COMMUNITY_Community 371]]
-- 1 edge to [[_COMMUNITY_Community 304]]
+- 1 edge to [[_COMMUNITY_Community 233]]
+- 1 edge to [[_COMMUNITY_Community 377]]
+- 1 edge to [[_COMMUNITY_Community 306]]
 
 ## Top bridge nodes
 - [[API Keys Setup Guide]] - degree 13, connects to 2 communities
-- [[List Available Profiles]] - degree 4, connects to 1 community
+- [[List Available Profiles]] - degree 3, connects to 1 community

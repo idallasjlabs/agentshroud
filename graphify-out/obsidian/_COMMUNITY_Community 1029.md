@@ -1,20 +1,22 @@
 ---
 type: community
+cohesion: 0.43
 members: 7
 ---
 
 # Community 1029
 
+**Cohesion:** 0.43 - moderately connected
 **Members:** 7 nodes
 
 ## Members
-- [[Athena — Knowledge Distiller (SKILL)]] - document - docker/config/hermes/skills/i-athena/SKILL.md
-- [[Atlas — Curriculum Architect (README)]] - document - docker/config/hermes/skills/i-atlas/README.md
-- [[Atlas — Curriculum Architect (SKILL)]] - document - docker/config/hermes/skills/i-atlas/SKILL.md
-- [[Bloom's Taxonomy]] - concept - docker/config/hermes/skills/i-atlas/SKILL.md
-- [[cheatsheet.md Output Template]] - concept - docker/config/hermes/skills/i-athena/SKILL.md
-- [[curriculum.md Output Template]] - concept - docker/config/hermes/skills/i-atlas/SKILL.md
-- [[show_notes.md Output Template]] - concept - docker/config/hermes/skills/i-athena/SKILL.md
+- [[_count_recent_restarts()]] - code - docker/bots/hermes/crashwatch.sh
+- [[_log()]] - code - docker/bots/hermes/crashwatch.sh
+- [[_read_last_alert_epoch()]] - code - docker/bots/hermes/crashwatch.sh
+- [[_telegram_alert()]] - code - docker/bots/hermes/crashwatch.sh
+- [[_write_last_alert_epoch()]] - code - docker/bots/hermes/crashwatch.sh
+- [[crashwatch.sh]] - code - docker/bots/hermes/crashwatch.sh
+- [[crashwatch.sh script]] - code - docker/bots/hermes/crashwatch.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,9 +26,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 893]]
-- 1 edge to [[_COMMUNITY_Community 658]]
+- 2 edges to [[_COMMUNITY_Community 476]]
 
 ## Top bridge nodes
-- [[Atlas — Curriculum Architect (SKILL)]] - degree 5, connects to 1 community
-- [[Bloom's Taxonomy]] - degree 2, connects to 1 community
+- [[crashwatch.sh]] - degree 7, connects to 1 community
+- [[_telegram_alert()]] - degree 3, connects to 1 community

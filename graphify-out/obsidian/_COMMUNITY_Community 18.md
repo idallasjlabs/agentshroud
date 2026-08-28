@@ -1,106 +1,143 @@
 ---
 type: community
-members: 93
+cohesion: 0.03
+members: 128
 ---
 
 # Community 18
 
-**Members:** 93 nodes
+**Cohesion:** 0.03 - loosely connected
+**Members:** 128 nodes
 
 ## Members
-- [[.__init__()_129]] - code - gateway/soc/auth.py
-- [[._get_engine()]] - code - gateway/soc/services.py
-- [[._logs_via_socket()]] - code - gateway/soc/services.py
-- [[.get_logs()_1]] - code - gateway/soc/services.py
-- [[.is_group_admin()_1]] - code - gateway/soc/auth.py
-- [[.is_owner()_2]] - code - gateway/soc/auth.py
-- [[.mgr_with_engine()]] - code - gateway/tests/test_soc_services.py
-- [[.require()]] - code - gateway/soc/auth.py
-- [[.restart_service()_1]] - code - gateway/soc/services.py
-- [[.start_service()]] - code - gateway/soc/services.py
-- [[.stop_service()_1]] - code - gateway/soc/services.py
-- [[.test_all_actions_false_without_engine()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_empty_info_means_container_not_found()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_engine_failure_falls_back_to_socket_data()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_engine_failure_falls_back_to_socket_then_unknown()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_full_running_descriptor()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_get_logs_module_filter_case_insensitive()]] - code - gateway/tests/test_soc_services.py
-- [[.test_get_logs_module_filter_empty_returns_all()]] - code - gateway/tests/test_soc_services.py
-- [[.test_get_logs_module_filter_excludes_non_matching()]] - code - gateway/tests/test_soc_services.py
-- [[.test_get_logs_module_filter_keeps_matching_lines()]] - code - gateway/tests/test_soc_services.py
-- [[.test_get_logs_no_engine_returns_empty()]] - code - gateway/tests/test_soc_services.py
-- [[.test_get_logs_no_filter_returns_tail()]] - code - gateway/tests/test_soc_services.py
-- [[.test_import()]] - code - gateway/tests/test_soc_services.py
-- [[.test_injected_engine_returned()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_instantiate_without_engine()]] - code - gateway/tests/test_soc_services.py
-- [[.test_internal_probe_failure_keeps_container_descriptors()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_internal_services_status_mapping()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_malformed_sections_fall_back_to_defaults()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_parse_exception_returns_unknown()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_resolution_failure_returns_none()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_resolved_from_runtime_module()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_restart_success_and_failure()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_start_success_and_failure()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_stop_success_and_failure()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_unparseable_started_at_yields_no_uptime()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_update_engine_without_pull_support()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_update_pull_failure_still_restarts()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_update_pull_then_restart()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_update_restart_failure_returns_false()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_zero_started_at_skips_uptime()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.update_service()]] - code - gateway/soc/services.py
-- [[Action_2]] - code - gateway/soc/auth.py
-- [[AddCollaboratorRequest]] - code - gateway/soc/router.py
-- [[AddGroupMemberRequest]] - code - gateway/soc/router.py
-- [[Any_67]] - code - gateway/soc/router.py
-- [[ApprovalDecisionRequest]] - code - gateway/soc/router.py
-- [[AuditLogEntry]] - code - gateway/soc/models.py
-- [[AuditResult]] - code - gateway/soc/models.py
-- [[AuditResult_1]] - code - gateway/soc/router.py
-- [[BaseModel]] - code
-- [[Check group admin status via TeamsConfig if available.]] - rationale - gateway/soc/auth.py
-- [[CreateDelegationRequest]] - code - gateway/soc/router.py
-- [[CreateGroupRequest]] - code - gateway/soc/router.py
-- [[DisconnectRequest]] - code - gateway/soc/router.py
-- [[EgressApproveRequest]] - code - gateway/soc/router.py
-- [[EgressRuleOverrideRequest]] - code - gateway/soc/router.py
-- [[EgressScopeRequest]] - code - gateway/soc/router.py
-- [[EmergencyBlockRequest]] - code - gateway/soc/router.py
-- [[LoginRequest]] - code - gateway/soc/router.py
-- [[Pull the latest image then restart the container.]] - rationale - gateway/soc/services.py
-- [[RBACManager_2]] - code - gateway/soc/auth.py
-- [[Raise 403 if the caller lacks the required permission.]] - rationale - gateway/soc/auth.py
-- [[Read container logs via Docker Unix socket — fallback when engine unavailable.]] - rationale - gateway/soc/services.py
-- [[RenameGroupRequest]] - code - gateway/soc/router.py
-- [[Request_6]] - code - gateway/soc/router.py
-- [[Resolved identity of the SCL caller, including role and user_id.]] - rationale - gateway/soc/auth.py
-- [[Resource_2]] - code - gateway/soc/auth.py
-- [[Return the container engine from app_state if not injected.]] - rationale - gateway/soc/services.py
-- [[Role_2]] - code - gateway/soc/auth.py
-- [[SCLCaller]] - code - gateway/soc/auth.py
-- [[SCLConfirmationRequired]] - code - gateway/soc/models.py
-- [[SCLInterface]] - code - gateway/soc/models.py
-- [[SCLInterface_1]] - code - gateway/soc/router.py
-- [[ScanRequest_1]] - code - gateway/soc/router.py
-- [[ServiceManager]] - code - gateway/soc/services.py
-- [[SetLogLevelRequest]] - code - gateway/soc/router.py
-- [[SetModeRequest]] - code - gateway/soc/router.py
-- [[SetModuleModeRequest]] - code - gateway/soc/router.py
-- [[SetRoleRequest]] - code - gateway/soc/router.py
-- [[SetUserModeRequest]] - code - gateway/soc/router.py
-- [[TestDescribeService]] - code - gateway/tests/test_soc_services_coverage.py
-- [[TestGetEngine_1]] - code - gateway/tests/test_soc_services_coverage.py
-- [[TestLifecycleActions]] - code - gateway/tests/test_soc_services_coverage.py
-- [[TestListServices]] - code - gateway/tests/test_soc_services_coverage.py
-- [[TestServiceManagerGetLogs]] - code - gateway/tests/test_soc_services.py
-- [[TestServiceManagerImport]] - code - gateway/tests/test_soc_services.py
-- [[Thin wrapper around the container engine that produces ServiceDescriptors.]] - rationale - gateway/soc/services.py
-- [[Unit tests for ServiceManager.get_logs — including module_filter behaviour.]] - rationale - gateway/tests/test_soc_services.py
-- [[UpdateDisplayNameRequest]] - code - gateway/soc/router.py
-- [[Verify ServiceManager can be imported without a running container engine.]] - rationale - gateway/tests/test_soc_services.py
-- [[WebSocket_5]] - code - gateway/soc/router.py
-- [[_full_inspect_info()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[soc_websocket()]] - code - gateway/soc/router.py
+- [[.__init__()_79]] - code - gateway/security/env_guard.py
+- [[.__init__()_82]] - code - gateway/security/git_guard.py
+- [[._analyze_file_content()]] - code - gateway/security/git_guard.py
+- [[._analyze_script_content()]] - code - gateway/security/git_guard.py
+- [[._analyze_script_file()]] - code - gateway/security/git_guard.py
+- [[._contains_env_access_patterns()]] - code - gateway/security/env_guard.py
+- [[._looks_like_credential()]] - code - gateway/security/env_guard.py
+- [[._make_hook()]] - code - gateway/tests/test_git_guard.py
+- [[._make_record()]] - code - gateway/tests/test_security_audit.py
+- [[._quarantine_suspicious_files()]] - code - gateway/security/git_guard.py
+- [[._record_leakage()]] - code - gateway/security/env_guard.py
+- [[._scan_git_hooks()]] - code - gateway/security/git_guard.py
+- [[._scan_package_json()]] - code - gateway/security/git_guard.py
+- [[._scan_pyproject_toml()]] - code - gateway/security/git_guard.py
+- [[._scan_setup_py()]] - code - gateway/security/git_guard.py
+- [[.check_command_execution()]] - code - gateway/security/env_guard.py
+- [[.check_file_access()]] - code - gateway/security/env_guard.py
+- [[.clear_detected_leakages()]] - code - gateway/security/env_guard.py
+- [[.export_findings_report()]] - code - gateway/security/git_guard.py
+- [[.export_leakage_report()]] - code - gateway/security/env_guard.py
+- [[.get_findings_summary()]] - code - gateway/security/git_guard.py
+- [[.get_leakage_summary()]] - code - gateway/security/env_guard.py
+- [[.monitor_environment_access()]] - code - gateway/security/env_guard.py
+- [[.monitor_git_operations()]] - code - gateway/security/git_guard.py
+- [[.sanitizer()_2]] - code - gateway/tests/test_security_audit.py
+- [[.scan_content()]] - code - gateway/security/git_guard.py
+- [[.scan_git_repository()]] - code - gateway/security/git_guard.py
+- [[.scrub_command_output()]] - code - gateway/security/env_guard.py
+- [[.test_aws_key_redaction()]] - code - gateway/tests/test_security_audit.py
+- [[.test_aws_key_redaction_via_pattern()]] - code - gateway/tests/test_security_audit.py
+- [[.test_clean_hook_passes()]] - code - gateway/tests/test_git_guard.py
+- [[.test_clean_repo_no_findings()]] - code - gateway/tests/test_git_guard.py
+- [[.test_credit_card_in_logs()]] - code - gateway/tests/test_security_audit.py
+- [[.test_curl_in_hook_flagged()]] - code - gateway/tests/test_git_guard.py
+- [[.test_default_mode_is_enforce()_5]] - code - gateway/tests/test_round2_hardening.py
+- [[.test_default_mode_is_enforce()_6]] - code - gateway/tests/test_round2_hardening.py
+- [[.test_env_guard_command_check()]] - code - gateway/tests/test_security_audit.py
+- [[.test_env_guard_detects_data_access()]] - code - gateway/tests/test_security_audit_advanced.py
+- [[.test_env_guard_monitoring()]] - code - gateway/tests/test_security_audit.py
+- [[.test_env_guard_scrub_output()]] - code - gateway/tests/test_security_audit.py
+- [[.test_env_guard_scrubs_output()]] - code - gateway/tests/test_security_audit_advanced.py
+- [[.test_finding_has_file_path()]] - code - gateway/tests/test_git_guard.py
+- [[.test_from_environment_defaults_to_enforce()]] - code - gateway/tests/test_round2_hardening.py
+- [[.test_git_guard_detects_credential_patterns()]] - code - gateway/tests/test_security_audit_advanced.py
+- [[.test_git_guard_no_path_leak()]] - code - gateway/tests/test_security_audit_advanced.py
+- [[.test_git_guard_scan_repo()]] - code - gateway/tests/test_security_audit.py
+- [[.test_github_token_redaction()]] - code - gateway/tests/test_security_audit.py
+- [[.test_jwt_redaction()]] - code - gateway/tests/test_security_audit.py
+- [[.test_keyvault_instantiated_and_seeded_in_lifespan()]] - code - gateway/tests/test_round2_hardening.py
+- [[.test_llm_stats_endpoint_is_defined()]] - code - gateway/tests/test_round2_hardening.py
+- [[.test_natural_language_question_is_allowed()]] - code - gateway/tests/test_round2_hardening.py
+- [[.test_nc_flagged()]] - code - gateway/tests/test_git_guard.py
+- [[.test_no_git_dir_returns_empty()]] - code - gateway/tests/test_git_guard.py
+- [[.test_no_hardcoded_owner_id_in_lifespan()]] - code - gateway/tests/test_round2_hardening.py
+- [[.test_pipeline_scans_outbound_for_key_leaks()]] - code - gateway/tests/test_round2_hardening.py
+- [[.test_reverse_shell_flagged()]] - code - gateway/tests/test_git_guard.py
+- [[.test_sanitize_reason_preserves_simple_text()]] - code - gateway/tests/test_round2_hardening.py
+- [[.test_sanitize_reason_strips_file_paths()]] - code - gateway/tests/test_round2_hardening.py
+- [[.test_sanitize_reason_strips_module_paths()]] - code - gateway/tests/test_round2_hardening.py
+- [[.test_scan_repository_default_enforce()]] - code - gateway/tests/test_round2_hardening.py
+- [[.test_ssn_redaction_in_logs()]] - code - gateway/tests/test_security_audit.py
+- [[.test_unparseable_text_is_allowed()_1]] - code - gateway/tests/test_round2_hardening.py
+- [[.test_v1_endpoint_handles_non_json_upstream_bodies()]] - code - gateway/tests/test_round2_hardening.py
+- [[.test_v1_endpoint_is_defined()]] - code - gateway/tests/test_round2_hardening.py
+- [[.test_wget_flagged()]] - code - gateway/tests/test_git_guard.py
+- [[A security finding in git hooks or install scripts.]] - rationale - gateway/security/git_guard.py
+- [[Analyze a script file for malicious patterns.]] - rationale - gateway/security/git_guard.py
+- [[Analyze file content for malicious patterns.]] - rationale - gateway/security/git_guard.py
+- [[Analyze script content string for malicious patterns.]] - rationale - gateway/security/git_guard.py
+- [[Any_39]] - code - gateway/security/env_guard.py
+- [[Any_41]] - code - gateway/security/git_guard.py
+- [[Args             mode 'monitor' (log findings) or 'enforce' (quarantine suspic]] - rationale - gateway/security/git_guard.py
+- [[Check if a value looks like a credential.]] - rationale - gateway/security/env_guard.py
+- [[Check if command contains patterns that could access environment.]] - rationale - gateway/security/env_guard.py
+- [[Check if command execution should be blocked to prevent environment leakage.]] - rationale - gateway/security/env_guard.py
+- [[Check if file access should be blocked to prevent environment leakage.]] - rationale - gateway/security/env_guard.py
+- [[Clear the list of detected leakages.]] - rationale - gateway/security/env_guard.py
+- [[Convenience function to scan a repository.]] - rationale - gateway/security/git_guard.py
+- [[Detected environment variable leakage.]] - rationale - gateway/security/env_guard.py
+- [[Environment guard should monitor data access patterns.]] - rationale - gateway/tests/test_security_audit_advanced.py
+- [[Environment guard should scrub sensitive output.]] - rationale - gateway/tests/test_security_audit_advanced.py
+- [[EnvironmentGuard]] - code - gateway/security/env_guard.py
+- [[EnvironmentLeakage]] - code - gateway/security/env_guard.py
+- [[Export findings to a detailed report.]] - rationale - gateway/security/git_guard.py
+- [[Export leakage findings to a report file.]] - rationale - gateway/security/env_guard.py
+- [[Get a summary of all findings.]] - rationale - gateway/security/git_guard.py
+- [[Get summary of all detected leakages.]] - rationale - gateway/security/env_guard.py
+- [[Get the global environment guard instance.]] - rationale - gateway/security/env_guard.py
+- [[Git guard errors shouldn't expose full file paths.]] - rationale - gateway/tests/test_security_audit_advanced.py
+- [[Git guard should catch credential patterns.]] - rationale - gateway/tests/test_security_audit_advanced.py
+- [[GitGuard]] - code - gateway/security/git_guard.py
+- [[Guard against environment variable leakage and unauthorized access.]] - rationale - gateway/security/env_guard.py
+- [[Monitor an agent's environment access attempts.          Args             agent]] - rationale - gateway/security/env_guard.py
+- [[Monitor and analyze git hooks and package installation scripts.]] - rationale - gateway/security/git_guard.py
+- [[Monitor for git clone and npm install operations.]] - rationale - gateway/security/git_guard.py
+- [[Move suspicious files to quarantine directory.]] - rationale - gateway/security/git_guard.py
+- [[Path_12]] - code - gateway/security/git_guard.py
+- [[Proxy endpoint must not crash if upstream returns non-JSON body.]] - rationale - gateway/tests/test_round2_hardening.py
+- [[Record a detected environment leakage.]] - rationale - gateway/security/env_guard.py
+- [[Scan a git repository for malicious hooks and scripts.          Args]] - rationale - gateway/security/git_guard.py
+- [[Scan arbitrary text content for malicious gitsupply-chain patterns.          Th]] - rationale - gateway/security/git_guard.py
+- [[Scan git hooks directory for malicious content.]] - rationale - gateway/security/git_guard.py
+- [[Scan package.json for suspicious install scripts.]] - rationale - gateway/security/git_guard.py
+- [[Scan pyproject.toml for suspicious build scripts.]] - rationale - gateway/security/git_guard.py
+- [[Scan setup.py for suspicious installation scripts.]] - rationale - gateway/security/git_guard.py
+- [[Scrub environment variables and API keys from command output.          Args]] - rationale - gateway/security/env_guard.py
+- [[SecurityFinding]] - code - gateway/security/git_guard.py
+- [[Test log sanitization and information leakage prevention.]] - rationale - gateway/tests/test_security_audit.py
+- [[TestDRYOwnerChatID]] - code - gateway/tests/test_round2_hardening.py
+- [[TestEgressConfigDefaultEnforce]] - code - gateway/tests/test_round2_hardening.py
+- [[TestEnvGuardFailOpen]] - code - gateway/tests/test_round2_hardening.py
+- [[TestFileSandboxDefaultEnforce]] - code - gateway/tests/test_round2_hardening.py
+- [[TestGitGuard]] - code - gateway/tests/test_git_guard.py
+- [[TestGitGuardDefaultEnforce]] - code - gateway/tests/test_round2_hardening.py
+- [[TestKeyVaultWired]] - code - gateway/tests/test_round2_hardening.py
+- [[TestLLMProxyEndpoints]] - code - gateway/tests/test_round2_hardening.py
+- [[TestLoggingSecurity]] - code - gateway/tests/test_security_audit.py
+- [[TestNotifyUserBlockedSanitization]] - code - gateway/tests/test_round2_hardening.py
+- [[Tests for Round 2 hardening — 9 fixes.]] - rationale - gateway/tests/test_round2_hardening.py
+- [[The llm-proxystats endpoint must exist.]] - rationale - gateway/tests/test_round2_hardening.py
+- [[The v1{path} endpoint must exist (enabled in v0.9.0).]] - rationale - gateway/tests/test_round2_hardening.py
+- [[agent_isolation.py]] - code - gateway/security/agent_isolation.py
+- [[env_guard.py]] - code - gateway/security/env_guard.py
+- [[get_env_guard()]] - code - gateway/security/env_guard.py
+- [[git_guard.py]] - code - gateway/security/git_guard.py
+- [[scan_repository()]] - code - gateway/security/git_guard.py
+- [[test_git_guard.py]] - code - gateway/tests/test_git_guard.py
+- [[test_round2_hardening.py]] - code - gateway/tests/test_round2_hardening.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -110,41 +147,38 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 79 edges to [[_COMMUNITY_Community 19]]
-- 30 edges to [[_COMMUNITY_Community 27]]
-- 25 edges to [[_COMMUNITY_Community 486]]
-- 24 edges to [[_COMMUNITY_Community 49]]
-- 12 edges to [[_COMMUNITY_Community 15]]
-- 10 edges to [[_COMMUNITY_Community 9]]
-- 5 edges to [[_COMMUNITY_Community 24]]
-- 4 edges to [[_COMMUNITY_Community 78]]
-- 4 edges to [[_COMMUNITY_Community 1]]
-- 4 edges to [[_COMMUNITY_Community 63]]
-- 3 edges to [[_COMMUNITY_Community 81]]
-- 3 edges to [[_COMMUNITY_Community 133]]
-- 3 edges to [[_COMMUNITY_Community 31]]
-- 2 edges to [[_COMMUNITY_Community 83]]
-- 2 edges to [[_COMMUNITY_Community 1325]]
-- 2 edges to [[_COMMUNITY_Community 6]]
-- 2 edges to [[_COMMUNITY_Community 513]]
-- 2 edges to [[_COMMUNITY_Community 12]]
-- 2 edges to [[_COMMUNITY_Community 58]]
-- 2 edges to [[_COMMUNITY_Community 45]]
-- 2 edges to [[_COMMUNITY_Community 171]]
-- 2 edges to [[_COMMUNITY_Community 439]]
-- 2 edges to [[_COMMUNITY_Community 1857]]
-- 2 edges to [[_COMMUNITY_Community 39]]
-- 1 edge to [[_COMMUNITY_Community 273]]
-- 1 edge to [[_COMMUNITY_Community 38]]
-- 1 edge to [[_COMMUNITY_Community 754]]
-- 1 edge to [[_COMMUNITY_Community 344]]
-- 1 edge to [[_COMMUNITY_Community 501]]
-- 1 edge to [[_COMMUNITY_Community 528]]
-- 1 edge to [[_COMMUNITY_Community 127]]
+- 75 edges to [[_COMMUNITY_Security Audit & Drift Detection]]
+- 29 edges to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
+- 13 edges to [[_COMMUNITY_Community 88]]
+- 9 edges to [[_COMMUNITY_Adversarial Injection Guards]]
+- 9 edges to [[_COMMUNITY_Community 50]]
+- 8 edges to [[_COMMUNITY_Community 210]]
+- 4 edges to [[_COMMUNITY_Community 51]]
+- 4 edges to [[_COMMUNITY_Community 404]]
+- 3 edges to [[_COMMUNITY_Community 19]]
+- 3 edges to [[_COMMUNITY_Key Vault & Audit Chain]]
+- 3 edges to [[_COMMUNITY_Community 175]]
+- 2 edges to [[_COMMUNITY_Ingest API & Approval Routes]]
+- 2 edges to [[_COMMUNITY_Middleware & Lifespan]]
+- 2 edges to [[_COMMUNITY_PII Sanitizer & E2E Tests]]
+- 2 edges to [[_COMMUNITY_Community 353]]
+- 2 edges to [[_COMMUNITY_Progressive Trust]]
+- 2 edges to [[_COMMUNITY_Community 95]]
+- 2 edges to [[_COMMUNITY_Community 97]]
+- 1 edge to [[_COMMUNITY_Community 519]]
+- 1 edge to [[_COMMUNITY_Community 410]]
+- 1 edge to [[_COMMUNITY_Community 165]]
+- 1 edge to [[_COMMUNITY_Community 132]]
+- 1 edge to [[_COMMUNITY_Community 420]]
+- 1 edge to [[_COMMUNITY_Community 217]]
+- 1 edge to [[_COMMUNITY_Community 429]]
+- 1 edge to [[_COMMUNITY_Community 157]]
+- 1 edge to [[_COMMUNITY_Community 66]]
+- 1 edge to [[_COMMUNITY_Community 225]]
 
 ## Top bridge nodes
-- [[BaseModel]] - degree 86, connects to 24 communities
-- [[ServiceManager]] - degree 104, connects to 3 communities
-- [[SCLCaller]] - degree 46, connects to 3 communities
-- [[AuditResult]] - degree 31, connects to 3 communities
-- [[SCLInterface]] - degree 31, connects to 3 communities
+- [[TestLoggingSecurity]] - degree 47, connects to 13 communities
+- [[agent_isolation.py]] - degree 13, connects to 8 communities
+- [[GitGuard]] - degree 85, connects to 7 communities
+- [[EnvironmentGuard]] - degree 74, connects to 6 communities
+- [[env_guard.py]] - degree 10, connects to 5 communities

@@ -1,22 +1,36 @@
 ---
 type: community
-members: 9
+cohesion: 0.13
+members: 21
 ---
 
 # Community 413
 
-**Members:** 9 nodes
+**Cohesion:** 0.13 - loosely connected
+**Members:** 21 nodes
 
 ## Members
-- [[25-Domain Prompt Injection Defense Framework_1]] - concept - docs/agentshroud-knowledge.md
-- [[34 Security Modules Pipeline (P0-P3)]] - concept - docs/claude-security-audit-prompt.md
-- [[Multi-Stage Security Pipeline (P0-P3 tiers)]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[Open Findings (C3-C5, H4-H7, M1-M5)]] - concept - docs/claude-security-audit-prompt.md
-- [[PII Sanitizer (user-facing description)]] - concept - docs/user-guide.md
-- [[Steve Hay's External Reviewer Findings]] - concept - docs/claude-security-audit-prompt.md
-- [[egress_filter module]] - concept - docs/claude-security-audit-prompt.md
-- [[pii_sanitizer module (disabled — false positives)]] - concept - docs/claude-security-audit-prompt.md
-- [[prompt_guard module (observatory mode — too aggressive for enforce)]] - concept - docs/claude-security-audit-prompt.md
+- [[._append_audit_event()]] - code - gateway/approval_queue/queue.py
+- [[._expire_stale()]] - code - gateway/approval_queue/queue.py
+- [[._persist_pending_store()]] - code - gateway/approval_queue/queue.py
+- [[.broadcast()_1]] - code - gateway/approval_queue/queue.py
+- [[.cleanup_decided()]] - code - gateway/approval_queue/queue.py
+- [[.decide()_1]] - code - gateway/approval_queue/queue.py
+- [[.get_item()_1]] - code - gateway/approval_queue/queue.py
+- [[.get_pending()_1]] - code - gateway/approval_queue/queue.py
+- [[.submit()_1]] - code - gateway/approval_queue/queue.py
+- [[Add an action to the approval queue          Args             request Approval]] - rationale - gateway/approval_queue/queue.py
+- [[Any_2]] - code - gateway/approval_queue/queue.py
+- [[ApprovalQueueItem_1]] - code - gateway/approval_queue/queue.py
+- [[ApprovalRequest_2]] - code - gateway/approval_queue/queue.py
+- [[Best-effort JSONL persistence for queue lifecycle events.]] - rationale - gateway/approval_queue/queue.py
+- [[Check all pending items and expire those past timeout          Returns]] - rationale - gateway/approval_queue/queue.py
+- [[Fetch a single queue item by ID          Args             request_id Request U]] - rationale - gateway/approval_queue/queue.py
+- [[Get all pending (not expired, not decided) items          First expires any stal]] - rationale - gateway/approval_queue/queue.py
+- [[Persist queue items to disk for restart durability (best effort).          Uses]] - rationale - gateway/approval_queue/queue.py
+- [[Process an approval decision          Args             request_id Request UUID]] - rationale - gateway/approval_queue/queue.py
+- [[Remove decided (approvedrejectedexpired) items older than max_age_seconds.]] - rationale - gateway/approval_queue/queue.py
+- [[Send a JSON message to all connected WebSocket clients          Silently removes]] - rationale - gateway/approval_queue/queue.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,13 +40,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 312]]
-- 1 edge to [[_COMMUNITY_Community 1275]]
-- 1 edge to [[_COMMUNITY_Community 552]]
-- 1 edge to [[_COMMUNITY_Community 910]]
+- 9 edges to [[_COMMUNITY_Community 15]]
+- 1 edge to [[_COMMUNITY_Community 77]]
 
 ## Top bridge nodes
-- [[34 Security Modules Pipeline (P0-P3)]] - degree 6, connects to 1 community
-- [[Steve Hay's External Reviewer Findings]] - degree 3, connects to 1 community
-- [[Multi-Stage Security Pipeline (P0-P3 tiers)]] - degree 2, connects to 1 community
-- [[Open Findings (C3-C5, H4-H7, M1-M5)]] - degree 2, connects to 1 community
+- [[.decide()_1]] - degree 7, connects to 2 communities
+- [[.submit()_1]] - degree 7, connects to 1 community
+- [[._append_audit_event()]] - degree 6, connects to 1 community
+- [[.broadcast()_1]] - degree 6, connects to 1 community
+- [[._expire_stale()]] - degree 6, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_hermes_model_resolver.py"
 type: "rationale"
-community: "Community 129"
+community: "Community 179"
 location: "L254"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_129
+  - community/Community_179
 ---
 
 # Mode comparison tolerates case and surrounding whitespace from env files.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_mode_case_insensitive_and_whitespace_tolerant()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_129
+#graphify/rationale #graphify/EXTRACTED #community/Community_179

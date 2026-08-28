@@ -1,12 +1,12 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "Community 1277"
+community: "Community 344"
 location: "L273"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1277
+  - community/Community_344
 ---
 
 # 75 Active Security Modules — No Stubs
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[7) AGENTSHROUD-SPECIFIC CONSTRAINTS]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1277
+#graphify/document #graphify/EXTRACTED #community/Community_344

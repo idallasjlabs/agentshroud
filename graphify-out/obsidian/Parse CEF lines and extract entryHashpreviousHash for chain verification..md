@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/audit_export.py"
 type: "rationale"
-community: "Community 713"
+community: "Community 208"
 location: "L194"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_713
+  - community/Community_208
 ---
 
 # Parse CEF lines and extract entryHash/previousHash for chain verification.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._parse_cef_for_verification()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_713
+#graphify/rationale #graphify/EXTRACTED #community/Community_208

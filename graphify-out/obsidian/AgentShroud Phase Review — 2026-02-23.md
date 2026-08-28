@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-02-23.md"
 type: "document"
-community: "Community 135"
+community: "Community 133"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_135
+  - community/Community_133
 ---
 
 # AgentShroud Phase Review — 2026-02-23
@@ -56,10 +56,10 @@ tags:
 - [[Blue Team Security Assessment — AgentShroud v0.8.0 Round 2]] - `conceptually_related_to` [INFERRED]
 - [[OWNER_USER_IDS bypass mechanism]] - `references` [EXTRACTED]
 - [[Phase Review P0 — Core Pipeline Wiring]] - `references` [EXTRACTED]
-- [[Summary_29]] - `contains` [EXTRACTED]
-- [[Summary_30]] - `contains` [EXTRACTED]
-- [[Summary_31]] - `contains` [EXTRACTED]
+- [[Summary_7]] - `contains` [EXTRACTED]
+- [[Summary_8]] - `contains` [EXTRACTED]
+- [[Summary_9]] - `contains` [EXTRACTED]
 - [[phase-review-2026-02-23]] - `contains` [EXTRACTED]
 - [[phase-review-2026-03-03]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_135
+#graphify/document #graphify/EXTRACTED #community/Community_133

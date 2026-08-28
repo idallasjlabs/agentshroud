@@ -1,30 +1,26 @@
 ---
 type: community
-members: 17
+cohesion: 0.18
+members: 11
 ---
 
 # Community 785
 
-**Members:** 17 nodes
+**Cohesion:** 0.18 - loosely connected
+**Members:** 11 nodes
 
 ## Members
-- [[11. Current status (v1.2.0)]] - document - firmware/voice-terminal/SETUP.md
-- [[2. Toolchain — install ESP-IDF v5.4]] - document - firmware/voice-terminal/SETUP.md
-- [[3. Get the firmware]] - document - firmware/voice-terminal/SETUP.md
-- [[4. Configure WiFi credentials]] - document - firmware/voice-terminal/SETUP.md
-- [[5. Build · flash · monitor]] - document - firmware/voice-terminal/SETUP.md
-- [[5a. IDF v5.4 auto-patches (applied automatically — for reference)]] - document - firmware/voice-terminal/SETUP.md
-- [[7. Voice Gateway — server-side ✅ LIVE (installconfigOTA docsintegrationsvoice-terminal-esp32-s3.md)]] - document - firmware/voice-terminal/SETUP.md
-- [[8. Connect to Hermes (governed path) ✅ LIVE — Hermes is the boot-default agent]] - document - firmware/voice-terminal/SETUP.md
-- [[9. Bring-up order — one cause per failure]] - document - firmware/voice-terminal/SETUP.md
-- [[Adding a future agent_1]] - document - firmware/voice-terminal/SETUP.md
-- [[Agent toggle — runtime button]] - document - firmware/voice-terminal/SETUP.md
-- [[Credentials file]] - document - firmware/voice-terminal/SETUP.md
-- [[ESP32-S3-BOX-3 Voice Terminal — Manual Setup Runbook]] - document - firmware/voice-terminal/SETUP.md
-- [[Quick-reference commands]] - document - firmware/voice-terminal/SETUP.md
-- [[SETUP]] - document - firmware/voice-terminal/SETUP.md
-- [[Voice Terminal CMakeLists (IDF v5.4 BSP patch)]] - code - firmware/voice-terminal/CMakeLists.txt
-- [[What you're building]] - document - firmware/voice-terminal/SETUP.md
+- [[AGENTS.md — Codex CLI Guidance]] - document - AGENTS.md
+- [[Claude Code — Primary Developer]] - concept - AGENTS.md
+- [[Codex Configuration (.codexconfig.toml)]] - document - AGENTS.md
+- [[Codex Prime Directive Not Primary Developer]] - rationale - AGENTS.md
+- [[Codex Safe Refactor Role]] - concept - AGENTS.md
+- [[Codex Test Augmenter Role]] - concept - AGENTS.md
+- [[Codex Validation Runner Role]] - concept - AGENTS.md
+- [[Data Lakehouse Platform (GSDL)]] - concept - AGENTS.md
+- [[safe-refactor.agent]] - document - .github/agents/safe-refactor.agent.md
+- [[test-augmenter.agent]] - document - .github/agents/test-augmenter.agent.md
+- [[validation-runner.agent]] - document - .github/agents/validation-runner.agent.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,11 +30,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 784]]
-- 1 edge to [[_COMMUNITY_Community 553]]
-- 1 edge to [[_COMMUNITY_Community 1285]]
-- 1 edge to [[_COMMUNITY_Community 1142]]
+- 1 edge to [[_COMMUNITY_Community 389]]
+- 1 edge to [[_COMMUNITY_Community 488]]
+- 1 edge to [[_COMMUNITY_Community 340]]
 
 ## Top bridge nodes
-- [[ESP32-S3-BOX-3 Voice Terminal — Manual Setup Runbook]] - degree 16, connects to 4 communities
-- [[9. Bring-up order — one cause per failure]] - degree 2, connects to 1 community
+- [[safe-refactor.agent]] - degree 2, connects to 1 community
+- [[test-augmenter.agent]] - degree 2, connects to 1 community
+- [[validation-runner.agent]] - degree 2, connects to 1 community

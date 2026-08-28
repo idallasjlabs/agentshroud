@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "Community 123"
+community: "Community 187"
 location: "L928"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_123
+  - community/Community_187
 ---
 
 # Score domain 1: Image Integrity (0-5).      1=SBOM exists, 2=Trivy ran, 3=zero c
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_score_image_integrity()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_123
+#graphify/rationale #graphify/EXTRACTED #community/Community_187

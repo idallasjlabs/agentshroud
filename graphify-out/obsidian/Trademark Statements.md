@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bot-capabilities.md"
 type: "document"
-community: "Community 746"
+community: "Community 1017"
 location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_746
+  - community/Community_1017
 ---
 
 # Trademark Statements
@@ -19,4 +19,4 @@ tags:
 - [[Rules_9]] - `contains` [EXTRACTED]
 - [[Which statement to use]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_746
+#graphify/document #graphify/EXTRACTED #community/Community_1017

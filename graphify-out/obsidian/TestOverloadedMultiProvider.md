@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_quota_detector.py"
 type: "code"
-community: "Community 308"
+community: "Community 310"
 location: "L178"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_308
+  - community/Community_310
 ---
 
 # TestOverloadedMultiProvider
@@ -29,4 +29,4 @@ tags:
 - [[SCRUM-60 in-body overload envelopes from OpenAI and Gemini must fail     over e]] - `rationale_for` [EXTRACTED]
 - [[test_llm_quota_detector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_308
+#graphify/code #graphify/EXTRACTED #community/Community_310

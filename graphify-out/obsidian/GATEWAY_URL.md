@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/GATEWAY_URL.md"
 type: "document"
-community: "Community 488"
+community: "Community 822"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_488
+  - community/Community_822
 ---
 
 # GATEWAY_URL.md
@@ -15,4 +15,4 @@ tags:
 - [[ANTHROPIC_BASE_URL]] - `references` [EXTRACTED]
 - [[GATEWAY_URL_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_488
+#graphify/document #graphify/EXTRACTED #community/Community_822

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Community 124"
+community: "Community 115"
 location: "L7928"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_124
+  - community/Community_115
 ---
 
 # Every collaborator message must produce a response — never a silent drop.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestNoResponseGuarantee]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_124
+#graphify/rationale #graphify/EXTRACTED #community/Community_115

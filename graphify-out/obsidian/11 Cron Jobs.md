@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "document"
-community: "Community 367"
+community: "Community 370"
 location: "L770"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_367
+  - community/Community_370
 ---
 
 # 11 Cron Jobs
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[11. Automated Operations]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_367
+#graphify/document #graphify/EXTRACTED #community/Community_370

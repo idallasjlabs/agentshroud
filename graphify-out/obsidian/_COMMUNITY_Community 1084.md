@@ -1,21 +1,21 @@
 ---
 type: community
-members: 8
+cohesion: 0.33
+members: 6
 ---
 
 # Community 1084
 
-**Members:** 8 nodes
+**Cohesion:** 0.33 - loosely connected
+**Members:** 6 nodes
 
 ## Members
-- [[Added — Tranche 1 True Collaboration Architecture]] - document - CHANGELOG.md
-- [[Added — Tranche 2 Private Service Data Isolation]] - document - CHANGELOG.md
-- [[Added — Tranche 3 Security Tools (IEC 62443 Alignment)]] - document - CHANGELOG.md
-- [[Container Security Scorecard — Baseline Scores]] - document - CHANGELOG.md
-- [[Deferred to post-v1.0.0]] - document - CHANGELOG.md
-- [[Summary_14]] - document - CHANGELOG.md
-- [[Tests_1]] - document - CHANGELOG.md
-- [[0.9.0 — featv0.9.0-soc-team-collab — Sentinel (2026-03-18)]] - document - CHANGELOG.md
+- [[For graphify explain_2]] - document - docker/config/openclaw/skills/graphify/references/query.md
+- [[For graphify path_2]] - document - docker/config/openclaw/skills/graphify/references/query.md
+- [[Step 0 — Constrained query expansion (REQUIRED before traversal)_2]] - document - docker/config/openclaw/skills/graphify/references/query.md
+- [[Step 1 — Traversal_2]] - document - docker/config/openclaw/skills/graphify/references/query.md
+- [[graphify reference query, path, explain_2]] - document - docker/config/openclaw/skills/graphify/references/query.md
+- [[query_2]] - document - docker/config/openclaw/skills/graphify/references/query.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,10 +23,3 @@ members: 8
 TABLE source_file, type FROM #community/Community_1084
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 984]]
-- 1 edge to [[_COMMUNITY_Community 1296]]
-
-## Top bridge nodes
-- [[0.9.0 — featv0.9.0-soc-team-collab — Sentinel (2026-03-18)]] - degree 10, connects to 2 communities

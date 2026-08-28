@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/stt.py"
 type: "code"
-community: "Community 740"
+community: "Community 737"
 location: "L55-88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_740
+  - community/Community_737
 ---
 
 # record_transcription_latency() — RTF/latency structured log
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[transcribe()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_740
+#graphify/code #graphify/EXTRACTED #community/Community_737

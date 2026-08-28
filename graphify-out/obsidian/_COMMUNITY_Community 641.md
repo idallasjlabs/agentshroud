@@ -1,28 +1,30 @@
 ---
 type: community
+cohesion: 0.13
 members: 15
 ---
 
 # Community 641
 
+**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
-- [[BrowserSecurityGuard.analyze_content(content)]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
-- [[BrowserSecurityGuard.analyze_screenshot(image_data)]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
-- [[BrowserSecurityGuard.can_enter_credentials(url)]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
-- [[BrowserSecurityGuard.check_url_reputation(url)]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
-- [[BrowserSecurityGuard.register_screenshot_hook(hook)]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
-- [[Function Details_28]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
-- [[Key Classes  Functions_31]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
-- [[Purpose_149]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
-- [[Related_35]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
-- [[Responsibilities_33]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
-- [[Social Engineering Patterns]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
-- [[Threat Model_4]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
-- [[URL Reputation Signals]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
-- [[browser_security.py_2]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
-- [[browser_security.py_1]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
+- [[Advanced Telegram Commands]] - document - docs/setup/TELEGRAM_SETUP.md
+- [[Bot doesn't respond]] - document - docs/setup/TELEGRAM_SETUP.md
+- [[Cannot find bot]] - document - docs/setup/TELEGRAM_SETUP.md
+- [[How Messages Flow]] - document - docs/setup/TELEGRAM_SETUP.md
+- [[Important Notes_1]] - document - docs/setup/TELEGRAM_SETUP.md
+- [[Messages delayed]] - document - docs/setup/TELEGRAM_SETUP.md
+- [[Multi-Device Access]] - document - docs/setup/TELEGRAM_SETUP.md
+- [[Next Steps_9]] - document - docs/setup/TELEGRAM_SETUP.md
+- [[Optional Restrict Bot Access]] - document - docs/setup/TELEGRAM_SETUP.md
+- [[Security Considerations_1]] - document - docs/setup/TELEGRAM_SETUP.md
+- [[Step 1 Create a Telegram Bot]] - document - docs/setup/TELEGRAM_SETUP.md
+- [[Step 2 Configure OpenClaw to Use Telegram]] - document - docs/setup/TELEGRAM_SETUP.md
+- [[Step 3 Start Chatting]] - document - docs/setup/TELEGRAM_SETUP.md
+- [[Telegram Bot Setup for OpenClaw]] - document - docs/setup/TELEGRAM_SETUP.md
+- [[Troubleshooting_32]] - document - docs/setup/TELEGRAM_SETUP.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,3 +32,9 @@ members: 15
 TABLE source_file, type FROM #community/Community_641
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 377]]
+
+## Top bridge nodes
+- [[Telegram Bot Setup for OpenClaw]] - degree 10, connects to 1 community

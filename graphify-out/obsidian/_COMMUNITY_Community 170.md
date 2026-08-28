@@ -1,34 +1,55 @@
 ---
 type: community
-members: 21
+cohesion: 0.05
+members: 40
 ---
 
 # Community 170
 
-**Members:** 21 nodes
+**Cohesion:** 0.05 - loosely connected
+**Members:** 40 nodes
 
 ## Members
-- [[Blocked by default (private RFC1918 ranges)]] - image - docs/diagrams/images/diagram-05-network-topology.svg
-- [[DNS Filter]] - concept - docs/architecture/system-architecture.md
-- [[Egress Monitor]] - concept - docs/architecture/system-architecture.md
-- [[Gateway ManagementControl-Plane API (v1.3.0)]] - document - docs/api/api-reference.md
-- [[Ingest API (POST ingest)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
-- [[InspectionResult (data entity)]] - concept - docs/data/data-dictionary.md
-- [[MCP Proxy]] - concept - docs/architecture/system-architecture.md
-- [[MCP Server Integration Guide]] - document - docs/api/integration-guide.md
-- [[Op-Proxy (Credential Gateway)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
-- [[OpenClaw Integration Guide (v0.9.0)]] - document - docs/api/integration-guide.md
-- [[Proxy Layer_1]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
-- [[SecurityFinding (data entity)]] - concept - docs/data/data-dictionary.md
-- [[URLAnalysisResult (data entity)]] - concept - docs/data/data-dictionary.md
-- [[Web Proxy]] - concept - docs/architecture/system-architecture.md
-- [[egress-config.yml]] - code - docs/data/schema-documentation.md
-- [[gatewayingest_apimain.py]] - code - docs/api/api-reference.md
-- [[gatewaywebapi.py (Web control center)]] - code - docs/api/api-reference.md
-- [[http_proxy.py (HTTP CONNECT 8181, domain allowlist)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
-- [[mcp-config.yml]] - code - docs/data/schema-documentation.md
-- [[mcp_proxy.py (MCP tool call gate)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
-- [[web_proxy.py (domain allowlist engine)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
+- [[Deep Hardening Release]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
+- [[Acknowledgments_1]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
+- [[Breaking Changes and Migration]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
+- [[Deployment and Operations]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
+- [[Executive Summary_8]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
+- [[Installation and Upgrade Instructions]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
+- [[Known Issues and Limitations]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
+- [[Latency Measurements]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
+- [[Performance Benchmarks]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
+- [[Release Notes - AgentShroud v0.9.0]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
+- [[Security Enhancements]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
+- [[Security Module Performance]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
+- [[Support and Resources]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
+- [[Testing and Quality Assurance]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
+- [[Throughput Improvements]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
+- [[What's New in v0.9.0]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
+- [[release-notes-v0.9.0]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
+- [[⚠️ Breaking Changes]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
+- [[⚡ Performance Optimizations]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
+- [[🏁 Quick Start]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
+- [[🏗️ Repository and Code Organization]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
+- [[🏢 Enterprise Partners]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
+- [[🐛 Known Issues]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
+- [[👥 Contributors]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
+- [[📈 Future Enhancements]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
+- [[📊 Monitoring and Observability]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
+- [[📋 System Requirements]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
+- [[📖 Documentation]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
+- [[📚 Comprehensive Documentation Suite]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
+- [[🔄 Migration Guide]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
+- [[🔍 Advanced Audit Capabilities]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
+- [[🔒 Deep Security Hardening]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
+- [[🔒 Security Research]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
+- [[🔒 Security Testing]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
+- [[🔧 Troubleshooting]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
+- [[🚀 Enhanced Deployment Options]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
+- [[🛡️ Vulnerability Remediation]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
+- [[🤖 AI-Powered Security]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
+- [[🤝 Community and Support]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
+- [[🧪 Test Coverage Excellence]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,14 +57,3 @@ members: 21
 TABLE source_file, type FROM #community/Community_170
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 369]]
-- 1 edge to [[_COMMUNITY_Community 287]]
-- 1 edge to [[_COMMUNITY_Community 367]]
-- 1 edge to [[_COMMUNITY_Community 409]]
-
-## Top bridge nodes
-- [[Gateway ManagementControl-Plane API (v1.3.0)]] - degree 7, connects to 2 communities
-- [[Proxy Layer_1]] - degree 5, connects to 1 community
-- [[MCP Proxy]] - degree 4, connects to 1 community

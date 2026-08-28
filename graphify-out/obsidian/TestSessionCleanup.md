@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_security.py"
 type: "code"
-community: "Community 712"
+community: "Community 478"
 location: "L131"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_712
+  - community/Community_478
 ---
 
 # TestSessionCleanup
@@ -22,4 +22,4 @@ tags:
 - [[SessionManager]] - `uses` [INFERRED]
 - [[test_session_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_712
+#graphify/code #graphify/INFERRED #community/Community_478

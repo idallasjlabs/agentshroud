@@ -1,14 +1,16 @@
 ---
 type: community
+cohesion: 1.00
 members: 1
 ---
 
 # Community 1693
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[_run_hermes_api_forwarder() — TCP tunnel gateway8642-hermes]] - code - gateway/ingest_api/lifespan.py
+- [[ConfigurationSetting (data entity)]] - concept - docs/data/data-dictionary.md
 
 ## Live Query (requires Dataview plugin)
 

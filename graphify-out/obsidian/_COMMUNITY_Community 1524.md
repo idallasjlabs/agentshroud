@@ -1,15 +1,17 @@
 ---
 type: community
+cohesion: 1.00
 members: 2
 ---
 
 # Community 1524
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[feature-priorities_3]] - document - skills/custom/agentshroud-redteam/references/steve-hay-assessment.md
-- [[steve-hay-assessment_1]] - document - skills/custom/agentshroud-redteam/references/steve-hay-assessment.md
+- [[deploy-gateway.sh]] - code - scripts/deploy-gateway.sh
+- [[deploy-gateway.sh script]] - code - scripts/deploy-gateway.sh
 
 ## Live Query (requires Dataview plugin)
 

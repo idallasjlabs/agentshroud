@@ -1,21 +1,23 @@
 ---
 type: community
+cohesion: 0.25
 members: 8
 ---
 
 # Community 986
 
+**Cohesion:** 0.25 - loosely connected
 **Members:** 8 nodes
 
 ## Members
-- [[The alert must already be in alert_log before notification runs.      Before the]] - rationale - gateway/tests/test_alert_dispatcher_retry.py
-- [[_alert()]] - code - gateway/tests/test_alert_dispatcher_retry.py
-- [[test_alert_dispatcher_retry.py]] - code - gateway/tests/test_alert_dispatcher_retry.py
-- [[test_all_attempts_fail_logs_warning_not_error()]] - code - gateway/tests/test_alert_dispatcher_retry.py
-- [[test_backoff_called_between_attempts()]] - code - gateway/tests/test_alert_dispatcher_retry.py
-- [[test_dispatch_persists_alert_even_if_notification_fails()]] - code - gateway/tests/test_alert_dispatcher_retry.py
-- [[test_succeeds_after_one_transient_failure()]] - code - gateway/tests/test_alert_dispatcher_retry.py
-- [[test_succeeds_on_first_attempt()]] - code - gateway/tests/test_alert_dispatcher_retry.py
+- [[(method, path) for every non-destructive route declaring a requestBody.]] - rationale - gateway/tests/test_api_contract_fuzz.py
+- [[_deep_nest()]] - code - gateway/tests/test_api_contract_fuzz.py
+- [[_fuzzable_endpoints()]] - code - gateway/tests/test_api_contract_fuzz.py
+- [[client()_1]] - code - gateway/tests/test_api_contract_fuzz.py
+- [[test_api_contract_fuzz.py]] - code - gateway/tests/test_api_contract_fuzz.py
+- [[test_destructive_routes_are_excluded()]] - code - gateway/tests/test_api_contract_fuzz.py
+- [[test_endpoint_survives_adversarial_body()]] - code - gateway/tests/test_api_contract_fuzz.py
+- [[test_fuzz_surface_is_nonempty()]] - code - gateway/tests/test_api_contract_fuzz.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,7 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 14]]
+- 1 edge to [[_COMMUNITY_Community 159]]
 
 ## Top bridge nodes
-- [[test_alert_dispatcher_retry.py]] - degree 8, connects to 1 community
+- [[test_api_contract_fuzz.py]] - degree 7, connects to 1 community

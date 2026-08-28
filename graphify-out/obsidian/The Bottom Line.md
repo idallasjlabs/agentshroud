@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION.md"
 type: "document"
-community: "Community 194"
+community: "Community 384"
 location: "L289"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_194
+  - community/Community_384
 ---
 
 # The Bottom Line
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud Security Value Proposition]] - `contains` [EXTRACTED]
 - [[Is AgentShroud worth the effort]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_194
+#graphify/document #graphify/EXTRACTED #community/Community_384

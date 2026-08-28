@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_memory_lifecycle.py"
+source_file: "gateway/tests/test_rbac.py"
 type: "rationale"
-community: "Community 584"
-location: "L193"
+community: "RBAC & SOC Realtime"
+location: "L129"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_584
+  - community/RBAC__SOC_Realtime
 ---
 
 # Set up test environment.
 
 ## Connections
-- [[.setup_method()_10]] - `rationale_for` [EXTRACTED]
+- [[.setup_method()_20]] - `rationale_for` [EXTRACTED]
+- [[.setup_method()_21]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_584
+#graphify/rationale #graphify/EXTRACTED #community/RBAC__SOC_Realtime

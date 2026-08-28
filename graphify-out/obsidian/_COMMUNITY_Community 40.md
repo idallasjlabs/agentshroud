@@ -1,108 +1,107 @@
 ---
 type: community
-members: 95
+cohesion: 0.05
+members: 92
 ---
 
 # Community 40
 
-**Members:** 95 nodes
+**Cohesion:** 0.05 - loosely connected
+**Members:** 92 nodes
 
 ## Members
-- [[.get()]] - code - cli/src/main.rs
-- [[.get()_1]] - code - cli/src/main.rs
-- [[.new()]] - code - cli/src/main.rs
-- [[.new()_1]] - code - cli/src/main.rs
-- [[.new()_2]] - code - cli/src/main.rs
-- [[.ok()]] - code - cli/src/main.rs
-- [[.post()]] - code - cli/src/main.rs
-- [[.post()_1]] - code - cli/src/main.rs
-- [[.request()]] - code - cli/src/main.rs
-- [[.request()_1]] - code - cli/src/main.rs
-- [[.with()]] - code - cli/src/main.rs
-- [[AddResource]] - code - cli/src/main.rs
-- [[ApprovalAction]] - code - cli/src/main.rs
-- [[Cli]] - code - cli/src/main.rs
-- [[Client]] - code - cli/src/main.rs
-- [[Commands]] - code - cli/src/main.rs
-- [[Commands_1]] - code - cli/src/main.rs
-- [[FakeTransport]] - code - cli/src/main.rs
-- [[GatewayClient]] - code - cli/src/main.rs
-- [[GatewayClientT]] - code - cli/src/main.rs
-- [[GetResource]] - code - cli/src/main.rs
-- [[HttpResponse]] - code - cli/src/main.rs
-- [[HttpTransport]] - code - cli/src/main.rs
-- [[Method]] - code - cli/src/main.rs
-- [[Option]] - code - cli/src/main.rs
-- [[OutputFormat]] - code - cli/src/main.rs
-- [[OutputFormat_1]] - code - cli/src/main.rs
-- [[RefCell]] - code - cli/src/main.rs
-- [[ReqwestTransport]] - code - cli/src/main.rs
-- [[Result]] - code - cli/src/main.rs
-- [[SclClient]] - code - cli/src/main.rs
-- [[Self]] - code - cli/src/main.rs
-- [[ServiceTarget]] - code - cli/src/main.rs
-- [[SetTarget]] - code - cli/src/main.rs
-- [[String]] - code - cli/src/main.rs
-- [[T]] - code - cli/src/main.rs
-- [[Value]] - code - cli/src/main.rs
-- [[Vec]] - code - cli/src/main.rs
-- [[approvals_list_empty()]] - code - cli/src/main.rs
-- [[approvals_list_errors_on_401()]] - code - cli/src/main.rs
-- [[approvals_list_formats_rows()]] - code - cli/src/main.rs
-- [[approve_sends_correct_body_and_path()]] - code - cli/src/main.rs
-- [[build_url()]] - code - cli/src/main.rs
-- [[build_url_trims_slashes()]] - code - cli/src/main.rs
-- [[cves_counts_array_when_no_total()]] - code - cli/src/main.rs
-- [[cves_formats_summary()]] - code - cli/src/main.rs
-- [[cves_reads_nested_summary()]] - code - cli/src/main.rs
-- [[cves_reads_summary_total_fallback()]] - code - cli/src/main.rs
-- [[cves_reports_unknown_bot_error()]] - code - cli/src/main.rs
-- [[cves_with_bot_id_appends_query()]] - code - cli/src/main.rs
-- [[decide_errors_on_404()]] - code - cli/src/main.rs
-- [[decide_errors_on_409_conflict()]] - code - cli/src/main.rs
-- [[deny_sends_false_and_formats()]] - code - cli/src/main.rs
-- [[deploy_status_errors_when_version_unauthorized()]] - code - cli/src/main.rs
-- [[deploy_status_formats_version_and_services()]] - code - cli/src/main.rs
-- [[deploy_status_no_services()]] - code - cli/src/main.rs
-- [[deploy_status_reads_version_endpoint()]] - code - cli/src/main.rs
-- [[encode_path_component()]] - code - cli/src/main.rs
-- [[encode_path_component_encodes_dots_and_dashes()]] - code - cli/src/main.rs
-- [[encode_path_component_encodes_special_chars()]] - code - cli/src/main.rs
-- [[encode_path_component_passes_simple()]] - code - cli/src/main.rs
-- [[format_approvals()]] - code - cli/src/main.rs
-- [[format_approvals_single_object()]] - code - cli/src/main.rs
-- [[format_cves()]] - code - cli/src/main.rs
-- [[format_decision()]] - code - cli/src/main.rs
-- [[format_deploy_status()]] - code - cli/src/main.rs
-- [[format_status()]] - code - cli/src/main.rs
-- [[format_status_handles_missing_fields()]] - code - cli/src/main.rs
-- [[json_str()]] - code - cli/src/main.rs
-- [[main()_1]] - code - cli/src/main.rs
-- [[main.rs]] - code - cli/src/main.rs
-- [[map_http_error()]] - code - cli/src/main.rs
-- [[map_http_error_401_message()]] - code - cli/src/main.rs
-- [[map_http_error_generic_status()]] - code - cli/src/main.rs
-- [[map_http_error_includes_detail()]] - code - cli/src/main.rs
-- [[map_http_error_none_on_success()]] - code - cli/src/main.rs
-- [[print_output()]] - code - cli/src/main.rs
-- [[render_output_json_is_still_pretty_json()]] - code - cli/src/main.rs
-- [[render_output_lines()]] - code - cli/src/main.rs
-- [[render_output_table_array_matches_prior_per_item_plus_separator_shape()]] - code - cli/src/main.rs
-- [[render_output_table_empty_array_produces_no_lines()]] - code - cli/src/main.rs
-- [[render_output_yaml_produces_real_yaml_not_json()]] - code - cli/src/main.rs
-- [[resolve_token()]] - code - cli/src/main.rs
-- [[resolve_token_empty_when_none()]] - code - cli/src/main.rs
-- [[resolve_token_falls_back_to_env()]] - code - cli/src/main.rs
-- [[resolve_token_prefers_cli()]] - code - cli/src/main.rs
-- [[run_approvals_decide()]] - code - cli/src/main.rs
-- [[run_approvals_list()]] - code - cli/src/main.rs
-- [[run_cves()]] - code - cli/src/main.rs
-- [[run_deploy_status()]] - code - cli/src/main.rs
-- [[run_status()]] - code - cli/src/main.rs
-- [[status_errors_on_401()]] - code - cli/src/main.rs
-- [[status_errors_when_gateway_down()]] - code - cli/src/main.rs
-- [[status_hits_correct_path()]] - code - cli/src/main.rs
-- [[status_parses_and_formats()]] - code - cli/src/main.rs
+- [[.__init__()_49]] - code - gateway/security/a2a_governance.py
+- [[._check_message_size()]] - code - gateway/security/a2a_governance.py
+- [[._check_peer()]] - code - gateway/security/a2a_governance.py
+- [[._check_rate_limit()]] - code - gateway/security/a2a_governance.py
+- [[._check_task_concurrency()]] - code - gateway/security/a2a_governance.py
+- [[._finalize()]] - code - gateway/security/a2a_governance.py
+- [[._process()]] - code - gateway/security/a2a_governance.py
+- [[._sanitize_message()]] - code - gateway/security/a2a_governance.py
+- [[.complete_task()]] - code - gateway/security/a2a_governance.py
+- [[.fingerprint()]] - code - gateway/security/a2a_governance.py
+- [[.get_events()_1]] - code - gateway/security/a2a_governance.py
+- [[.get_peer()]] - code - gateway/security/a2a_governance.py
+- [[.get_summary()]] - code - gateway/security/a2a_governance.py
+- [[.is_trusted()]] - code - gateway/security/a2a_governance.py
+- [[.process_inbound()_1]] - code - gateway/security/a2a_governance.py
+- [[.process_outbound()_1]] - code - gateway/security/a2a_governance.py
+- [[.register_peer()]] - code - gateway/security/a2a_governance.py
+- [[.test_api_key_sanitized()]] - code - gateway/tests/test_a2a_governance.py
+- [[.test_clean_payload_not_sanitized()]] - code - gateway/tests/test_a2a_governance.py
+- [[.test_complete_task_frees_slot()]] - code - gateway/tests/test_a2a_governance.py
+- [[.test_disabled_allows_all()]] - code - gateway/tests/test_a2a_governance.py
+- [[.test_fingerprint_deterministic()]] - code - gateway/tests/test_a2a_governance.py
+- [[.test_fingerprint_differs_for_different_payloads()]] - code - gateway/tests/test_a2a_governance.py
+- [[.test_get_events_filtered()]] - code - gateway/tests/test_a2a_governance.py
+- [[.test_normal_size_allowed()]] - code - gateway/tests/test_a2a_governance.py
+- [[.test_outbound_to_trusted_peer()]] - code - gateway/tests/test_a2a_governance.py
+- [[.test_outbound_to_unknown_quarantined()]] - code - gateway/tests/test_a2a_governance.py
+- [[.test_oversized_denied()]] - code - gateway/tests/test_a2a_governance.py
+- [[.test_peer_stats_updated()]] - code - gateway/tests/test_a2a_governance.py
+- [[.test_rate_limit_exceeded()]] - code - gateway/tests/test_a2a_governance.py
+- [[.test_register_peer()]] - code - gateway/tests/test_a2a_governance.py
+- [[.test_ssn_sanitized()]] - code - gateway/tests/test_a2a_governance.py
+- [[.test_summary()]] - code - gateway/tests/test_a2a_governance.py
+- [[.test_task_limit_exceeded()]] - code - gateway/tests/test_a2a_governance.py
+- [[.test_task_within_limit()]] - code - gateway/tests/test_a2a_governance.py
+- [[.test_trust_clamped()]] - code - gateway/tests/test_a2a_governance.py
+- [[.test_trusted_peer_allowed()]] - code - gateway/tests/test_a2a_governance.py
+- [[.test_unknown_peer_quarantined()]] - code - gateway/tests/test_a2a_governance.py
+- [[.test_unregister_peer()]] - code - gateway/tests/test_a2a_governance.py
+- [[.test_untrusted_peer_allowed_in_monitor()]] - code - gateway/tests/test_a2a_governance.py
+- [[.test_untrusted_peer_denied()]] - code - gateway/tests/test_a2a_governance.py
+- [[.test_update_trust()]] - code - gateway/tests/test_a2a_governance.py
+- [[.test_within_rate_limit()]] - code - gateway/tests/test_a2a_governance.py
+- [[.to_dict()_3]] - code - gateway/security/a2a_governance.py
+- [[.unregister_peer()]] - code - gateway/security/a2a_governance.py
+- [[.update_peer_trust()]] - code - gateway/security/a2a_governance.py
+- [[A2A protocol message types (based on A2A v1.0 spec).]] - rationale - gateway/security/a2a_governance.py
+- [[A2ADecision]] - code - gateway/security/a2a_governance.py
+- [[A2AGovernanceConfig]] - code - gateway/security/a2a_governance.py
+- [[A2AGovernanceEvent]] - code - gateway/security/a2a_governance.py
+- [[A2AGovernanceProxy]] - code - gateway/security/a2a_governance.py
+- [[A2AMessage]] - code - gateway/security/a2a_governance.py
+- [[A2AMessageType]] - code - gateway/security/a2a_governance.py
+- [[A2APeer]] - code - gateway/security/a2a_governance.py
+- [[An A2A protocol message passing through the governance proxy.]] - rationale - gateway/security/a2a_governance.py
+- [[Apply final decision and log governance event.]] - rationale - gateway/security/a2a_governance.py
+- [[Audit event for A2A governance decisions.]] - rationale - gateway/security/a2a_governance.py
+- [[Check concurrent task limit for task_request messages.]] - rationale - gateway/security/a2a_governance.py
+- [[Check message payload size.]] - rationale - gateway/security/a2a_governance.py
+- [[Check per-peer rate limit.]] - rationale - gateway/security/a2a_governance.py
+- [[Configuration for the A2A governance proxy.]] - rationale - gateway/security/a2a_governance.py
+- [[Content hash for deduplication and audit.]] - rationale - gateway/security/a2a_governance.py
+- [[Core message processing pipeline.]] - rationale - gateway/security/a2a_governance.py
+- [[Get governance proxy summary.]] - rationale - gateway/security/a2a_governance.py
+- [[Governance decision for an A2A message.]] - rationale - gateway/security/a2a_governance.py
+- [[Governance proxy for Agent-to-Agent communication.      Sits between local agent]] - rationale - gateway/security/a2a_governance.py
+- [[Look up a registered peer.]] - rationale - gateway/security/a2a_governance.py
+- [[Mark a delegated task as complete (decrements active task counter).]] - rationale - gateway/security/a2a_governance.py
+- [[Register a known A2A peer agent.]] - rationale - gateway/security/a2a_governance.py
+- [[Registered A2A peer agent.]] - rationale - gateway/security/a2a_governance.py
+- [[Remove a peer from the registry.]] - rationale - gateway/security/a2a_governance.py
+- [[Sanitize PII from A2A message payload. Returns list of sanitizations applied.]] - rationale - gateway/security/a2a_governance.py
+- [[TestDisabledProxy]] - code - gateway/tests/test_a2a_governance.py
+- [[TestInboundProcessing]] - code - gateway/tests/test_a2a_governance.py
+- [[TestMessageFingerprint]] - code - gateway/tests/test_a2a_governance.py
+- [[TestMessageSize]] - code - gateway/tests/test_a2a_governance.py
+- [[TestOutboundProcessing]] - code - gateway/tests/test_a2a_governance.py
+- [[TestPIISanitization]] - code - gateway/tests/test_a2a_governance.py
+- [[TestPeerManagement]] - code - gateway/tests/test_a2a_governance.py
+- [[TestRateLimiting]] - code - gateway/tests/test_a2a_governance.py
+- [[TestReporting]] - code - gateway/tests/test_a2a_governance.py
+- [[TestTaskConcurrency]] - code - gateway/tests/test_a2a_governance.py
+- [[Update a peer's trust score (called by TrustManager integration).]] - rationale - gateway/security/a2a_governance.py
+- [[Validate and govern an inbound A2A message from a remote peer.]] - rationale - gateway/security/a2a_governance.py
+- [[Validate that the peer is registered and trusted.]] - rationale - gateway/security/a2a_governance.py
+- [[_msg()]] - code - gateway/tests/test_a2a_governance.py
+- [[a2a_governance.py]] - code - gateway/security/a2a_governance.py
+- [[monitor_proxy()]] - code - gateway/tests/test_a2a_governance.py
+- [[proxy()]] - code - gateway/tests/test_a2a_governance.py
+- [[test_a2a_governance.py]] - code - gateway/tests/test_a2a_governance.py
+- [[trusted_peer()]] - code - gateway/tests/test_a2a_governance.py
+- [[untrusted_peer()]] - code - gateway/tests/test_a2a_governance.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -112,17 +111,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 1299]]
-- 2 edges to [[_COMMUNITY_Community 249]]
-- 2 edges to [[_COMMUNITY_Community 375]]
-- 2 edges to [[_COMMUNITY_Community 139]]
-- 1 edge to [[_COMMUNITY_Community 902]]
-- 1 edge to [[_COMMUNITY_Community 711]]
-- 1 edge to [[_COMMUNITY_Community 126]]
-- 1 edge to [[_COMMUNITY_Community 117]]
-- 1 edge to [[_COMMUNITY_Community 166]]
+- 5 edges to [[_COMMUNITY_Community 19]]
+- 1 edge to [[_COMMUNITY_Community 476]]
+- 1 edge to [[_COMMUNITY_Progressive Trust]]
+- 1 edge to [[_COMMUNITY_Community 982]]
 
 ## Top bridge nodes
-- [[String]] - degree 32, connects to 8 communities
-- [[main.rs]] - degree 74, connects to 1 community
-- [[Result]] - degree 14, connects to 1 community
+- [[a2a_governance.py]] - degree 10, connects to 3 communities
+- [[A2ADecision]] - degree 24, connects to 1 community
+- [[A2AMessageType]] - degree 15, connects to 1 community
+- [[.get_events()_1]] - degree 4, connects to 1 community

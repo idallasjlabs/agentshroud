@@ -12,6 +12,6 @@ tags:
 # Still shows "pairing required"
 
 ## Connections
-- [[Troubleshooting_31]] - `contains` [EXTRACTED]
+- [[Troubleshooting_30]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Community_690

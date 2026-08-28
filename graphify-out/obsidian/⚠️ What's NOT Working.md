@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/SYSTEM_STATUS.md"
 type: "document"
-community: "Community 576"
+community: "Community 571"
 location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_576
+  - community/Community_571
 ---
 
 # ⚠️ What's NOT Working
@@ -16,4 +16,4 @@ tags:
 - [[Critical Issues]] - `contains` [EXTRACTED]
 - [[iMessage Fix Required]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_576
+#graphify/document #graphify/EXTRACTED #community/Community_571

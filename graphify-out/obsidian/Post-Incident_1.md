@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-production/SKILL.md"
 type: "document"
-community: "Community 524"
+community: "Community 522"
 location: "L130"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_524
+  - community/Community_522
 ---
 
 # Post-Incident
@@ -17,4 +17,4 @@ tags:
 - [[Post-Mortem Template_1]] - `contains` [EXTRACTED]
 - [[Skill Incident Response (INCIDENT)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_524
+#graphify/document #graphify/EXTRACTED #community/Community_522

@@ -1,27 +1,29 @@
 ---
 type: community
+cohesion: 0.23
 members: 14
 ---
 
 # Community 668
 
+**Cohesion:** 0.23 - loosely connected
 **Members:** 14 nodes
 
 ## Members
-- [[1.1 Owner  Applicant]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[1.2 Attorney Information]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[AgentShroud -- USPTO Trademark Application]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[Filing Reference_1]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[Option A Section 1(a) — Use in Commerce (if mark is already in use)]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[Option B Section 1(b) — Intent to Use (if not yet in commerce)]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[Recommended Searches]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[SECTION 10 ESTIMATED COSTS]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[SECTION 1 APPLICANT INFORMATION]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[SECTION 4 FILING BASIS]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[SECTION 5 DECLARATION  SIGNATURE]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[SECTION 6 PRIOR SEARCH RESULTS]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[SECTION 8 POST-FILING TIMELINE]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[USPTO_TRADEMARK_APPLICATION]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[.test_allowed_path_different_item()]] - code - gateway/tests/test_op_proxy.py
+- [[.test_allowed_path_passes()]] - code - gateway/tests/test_op_proxy.py
+- [[.test_allowed_path_without_space_variant()]] - code - gateway/tests/test_op_proxy.py
+- [[.test_atlassian_token_allowed()]] - code - gateway/tests/test_op_proxy.py
+- [[.test_disallowed_vault_blocked()]] - code - gateway/tests/test_op_proxy.py
+- [[.test_empty_reference_blocked()]] - code - gateway/tests/test_op_proxy.py
+- [[.test_missing_op_prefix_blocked()]] - code - gateway/tests/test_op_proxy.py
+- [[.test_path_traversal_blocked()]] - code - gateway/tests/test_op_proxy.py
+- [[Return True if the op reference matches an allowed path pattern.]] - rationale - gateway/ingest_api/main.py
+- [[SCRUM-81 Hermes weekly Jira review needs tokenemaildomain fields.]] - rationale - gateway/tests/test_op_proxy.py
+- [[TestIsOpReferenceAllowed]] - code - gateway/tests/test_op_proxy.py
+- [[_is_op_reference_allowed()]] - code - gateway/ingest_api/main.py
+- [[client()_12]] - code - gateway/tests/test_op_proxy.py
+- [[test_op_proxy.py]] - code - gateway/tests/test_op_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,10 +33,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 1092]]
-- 1 edge to [[_COMMUNITY_Community 1093]]
-- 1 edge to [[_COMMUNITY_Community 807]]
-- 1 edge to [[_COMMUNITY_Community 1253]]
+- 4 edges to [[_COMMUNITY_Ingest API & Approval Routes]]
+- 1 edge to [[_COMMUNITY_Community 995]]
 
 ## Top bridge nodes
-- [[AgentShroud -- USPTO Trademark Application]] - degree 12, connects to 4 communities
+- [[test_op_proxy.py]] - degree 6, connects to 2 communities
+- [[_is_op_reference_allowed()]] - degree 12, connects to 1 community

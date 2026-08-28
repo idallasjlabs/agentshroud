@@ -1,19 +1,21 @@
 ---
 type: community
+cohesion: 0.33
 members: 6
 ---
 
 # Community 1135
 
+**Cohesion:** 0.33 - loosely connected
 **Members:** 6 nodes
 
 ## Members
-- [[.acceptable()]] - code - gateway/security/subagent_governance.py
-- [[OutputScore]] - code - gateway/security/subagent_governance.py
-- [[Privilege escalation prevention policy.]] - rationale - gateway/security/subagent_governance.py
-- [[PrivilegePolicy]] - code - gateway/security/subagent_governance.py
-- [[Result of scoring a subagent's output.]] - rationale - gateway/security/subagent_governance.py
-- [[subagent_governance.py]] - code - gateway/security/subagent_governance.py
+- [[._fake_urlopen_factory()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_long_poll_timeout_remains_60s()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_non_long_poll_timeout_is_15s()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Return a urlopen mock that records the timeout kwarg and succeeds.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[getUpdates must use a 60s urlopen timeout so the long-poll is not aborted early.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[sendMessage and similar calls must use a 15s urlopen timeout.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,17 +25,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Community 481]]
-- 4 edges to [[_COMMUNITY_Community 532]]
-- 2 edges to [[_COMMUNITY_Community 78]]
-- 2 edges to [[_COMMUNITY_Community 461]]
-- 2 edges to [[_COMMUNITY_Community 994]]
-- 2 edges to [[_COMMUNITY_Community 934]]
-- 1 edge to [[_COMMUNITY_Community 912]]
-- 1 edge to [[_COMMUNITY_Community 1060]]
-- 1 edge to [[_COMMUNITY_Community 1067]]
+- 3 edges to [[_COMMUNITY_PII Sanitizer & E2E Tests]]
+- 2 edges to [[_COMMUNITY_Community 93]]
+- 2 edges to [[_COMMUNITY_Community 96]]
 
 ## Top bridge nodes
-- [[subagent_governance.py]] - degree 14, connects to 7 communities
-- [[PrivilegePolicy]] - degree 9, connects to 6 communities
-- [[OutputScore]] - degree 4, connects to 1 community
+- [[.test_long_poll_timeout_remains_60s()]] - degree 5, connects to 3 communities
+- [[.test_non_long_poll_timeout_is_15s()]] - degree 5, connects to 3 communities
+- [[._fake_urlopen_factory()]] - degree 4, connects to 1 community

@@ -1,54 +1,84 @@
 ---
 type: community
-members: 41
+cohesion: 0.04
+members: 69
 ---
 
 # Community 70
 
-**Members:** 41 nodes
+**Cohesion:** 0.04 - loosely connected
+**Members:** 69 nodes
 
 ## Members
-- [[._store_path()]] - code - gateway/tests/test_rbac.py
-- [[.setup_method()_20]] - code - gateway/tests/test_rbac.py
-- [[.setup_method()_21]] - code - gateway/tests/test_rbac.py
-- [[.test_default_config_initialization()]] - code - gateway/tests/test_rbac.py
-- [[.test_get_users_by_role()]] - code - gateway/tests/test_rbac.py
-- [[.test_load_collab_store_returns_empty_on_corrupt_json()]] - code - gateway/tests/test_rbac.py
-- [[.test_load_removed_and_paused_ids_empty_when_no_file()]] - code - gateway/tests/test_rbac.py
-- [[.test_owner_and_collaborators_can_be_overridden_from_env()]] - code - gateway/tests/test_rbac.py
-- [[.test_pause_and_unpause_collaborator()]] - code - gateway/tests/test_rbac.py
-- [[.test_pause_does_not_remove_from_collaborator_role()]] - code - gateway/tests/test_rbac.py
-- [[.test_pause_returns_false_on_inner_write_error()]] - code - gateway/tests/test_rbac.py
-- [[.test_pause_returns_false_on_io_error()]] - code - gateway/tests/test_rbac.py
-- [[.test_persist_and_load_collaborator()]] - code - gateway/tests/test_rbac.py
-- [[.test_persist_is_idempotent()]] - code - gateway/tests/test_rbac.py
-- [[.test_persist_returns_none_on_inner_write_error()]] - code - gateway/tests/test_rbac.py
-- [[.test_persist_returns_none_on_mkdir_error()]] - code - gateway/tests/test_rbac.py
-- [[.test_removed_and_paused_ids_coexist_independently()]] - code - gateway/tests/test_rbac.py
-- [[.test_removed_dynamic_collaborator_excluded_from_effective_set()]] - code - gateway/tests/test_rbac.py
-- [[.test_removed_hardcoded_collaborator_excluded_from_effective_set()]] - code - gateway/tests/test_rbac.py
-- [[.test_revoke_hardcoded_collaborator_records_removal_even_though_never_persisted()]] - code - gateway/tests/test_rbac.py
-- [[.test_revoke_removes_dynamic_collaborator_and_records_removal()]] - code - gateway/tests/test_rbac.py
-- [[.test_revoke_returns_false_on_inner_write_error()]] - code - gateway/tests/test_rbac.py
-- [[.test_revoke_returns_false_on_io_error()]] - code - gateway/tests/test_rbac.py
-- [[.test_role_assignment()]] - code - gateway/tests/test_rbac.py
-- [[.test_role_hierarchy_checks()]] - code - gateway/tests/test_rbac.py
-- [[.test_unpause_returns_false_on_inner_write_error()]] - code - gateway/tests/test_rbac.py
-- [[.test_unpause_returns_false_on_io_error()]] - code - gateway/tests/test_rbac.py
-- [[Bug 1 RBACConfig.__post_init__ must exclude persisted-removed IDs from the]] - rationale - gateway/tests/test_rbac.py
-- [[Bug 1 revoking a hardcoded default (never in approved_collaborators.json)]] - rationale - gateway/tests/test_rbac.py
-- [[Env overrides should drive runtime ownercollaborator identity.]] - rationale - gateway/tests/test_rbac.py
-- [[Pausing is access-gating only, not a roleremoval change (constraint check).]] - rationale - gateway/tests/test_rbac.py
-- [[RBACConfig_3]] - code - gateway/tests/test_rbac.py
-- [[Set up test environment._2]] - rationale - gateway/tests/test_rbac.py
-- [[Set up test environment._3]] - rationale - gateway/tests/test_rbac.py
-- [[Test default RBAC configuration initialization.]] - rationale - gateway/tests/test_rbac.py
-- [[Test dynamic role assignment.]] - rationale - gateway/tests/test_rbac.py
-- [[Test getting users by role.]] - rationale - gateway/tests/test_rbac.py
-- [[Test role hierarchy helper methods.]] - rationale - gateway/tests/test_rbac.py
-- [[TestCollaboratorPersistence]] - code - gateway/tests/test_rbac.py
-- [[Writes to one exclusion set must not clobber the other persisted keys.]] - rationale - gateway/tests/test_rbac.py
-- [[removed_collaborator_ids  paused_collaborator_ids share approved_collaborators.]] - rationale - gateway/tests/test_rbac.py
+- [[.__init__()_123]] - code - gateway/security/tool_result_injection.py
+- [[._apply_outbound_model_error_rewrites()]] - code - gateway/proxy/telegram_proxy.py
+- [[._build_ack_only_updates()]] - code - gateway/proxy/telegram_proxy.py
+- [[._check_collaborator_leakage()]] - code - gateway/proxy/telegram_proxy.py
+- [[._collaborator_safe_notice()]] - code - gateway/proxy/telegram_proxy.py
+- [[._contains_critical_collaborator_leakage()]] - code - gateway/proxy/telegram_proxy.py
+- [[._contains_high_risk_collaborator_leakage()]] - code - gateway/proxy/telegram_proxy.py
+- [[._emit_quarantine_event()]] - code - gateway/proxy/telegram_proxy.py
+- [[._escape_pii_placeholders()]] - code - gateway/proxy/telegram_proxy.py
+- [[._extract_embedded_tool_call_json()]] - code - gateway/proxy/telegram_proxy.py
+- [[._filter_outbound()_1]] - code - gateway/proxy/telegram_proxy.py
+- [[._filter_outbound_multipart()]] - code - gateway/proxy/telegram_proxy.py
+- [[._handle_outbound_tool_calls()]] - code - gateway/proxy/telegram_proxy.py
+- [[._html_tags_balanced()]] - code - gateway/proxy/telegram_proxy.py
+- [[._is_owner_chat()]] - code - gateway/proxy/telegram_proxy.py
+- [[._multipart_boundary()]] - code - gateway/proxy/telegram_proxy.py
+- [[._multipart_get_field()]] - code - gateway/proxy/telegram_proxy.py
+- [[._multipart_replace_field()]] - code - gateway/proxy/telegram_proxy.py
+- [[._notify_user_blocked()]] - code - gateway/proxy/telegram_proxy.py
+- [[._parse_tool_call_json()]] - code - gateway/proxy/telegram_proxy.py
+- [[._quarantine_outbound_block()]] - code - gateway/proxy/telegram_proxy.py
+- [[._redact_owner_ids()]] - code - gateway/proxy/telegram_proxy.py
+- [[._rewrite_known_runtime_errors()]] - code - gateway/proxy/telegram_proxy.py
+- [[._sanitize_reason()]] - code - gateway/proxy/telegram_proxy.py
+- [[._scan_outbound_text()]] - code - gateway/proxy/telegram_proxy.py
+- [[._set_outbound_block_cascade()]] - code - gateway/proxy/telegram_proxy.py
+- [[._strip_collaborator_html_markup()]] - code - gateway/proxy/telegram_proxy.py
+- [[._trigger_web_search_log()]] - code - gateway/proxy/telegram_proxy.py
+- [[.scan_tool_result()_3]] - code - gateway/security/tool_result_injection.py
+- [[Activate per-chat cascade window to prevent streaming-fragment leak-through.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Any_21]] - code - gateway/proxy/telegram_proxy.py
+- [[Best-effort async event emission for quarantine actions.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Concise collaborator-safe reason text without internal leakage.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Core outbound security scan shared by JSON, form, and multipart branches.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect leakage patterns blocked for local_onlyproject_scoped collaborators.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect patterns that must redact for ALL non-owner chats, including full_access.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Extract a non-file text field value from a multipartform-data body.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Extract the boundary token from a multipart Content-Type header.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Filter multipartform-data outbound bodies (sendPhotosendDocument).          Te]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Filter outbound bot messages (sendMessage, etc.).]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Find first embedded tool-call JSON object inside arbitrary text.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[HTML-escape PII redaction placeholders so they render as literal         text in]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Initialize the scanner with optional custom rules.          Args             cu]] - rationale - gateway/security/tool_result_injection.py
+- [[InjectionResult]] - code - gateway/security/tool_result_injection.py
+- [[InjectionRule]] - code - gateway/security/tool_result_injection.py
+- [[Intercept leaked raw tool-call JSON in outbound text.          Shared by the JSO]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Log a web_search egress event with user attribution when raw JSON leaks.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Map recurring runtimeprovider failures to deterministic operator guidance.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Parse leaked model tool-call JSON blobs (e.g. {'name' 'NO_REPLY', ...}).]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Persist blocked outbound messages for admin review.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Redact the owner's Telegram user ID from collaborator-bound text.          Strip]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Remove Telegram HTML formatting tags from collaborator outbound text.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Replace a non-file text field value in a multipartform-data body.          Only]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Result from tool result injection scan.]] - rationale - gateway/security/tool_result_injection.py
+- [[Result of the shared outbound text security scan.      processed a scan path (c]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Return True only when every Telegram-supported HTML open tag has a matching clos]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Return True when chat_id belongs to the configured owner.          Handles both]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Return a safe-notice replacement when protected content would leak.          Cri]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Return minimal getUpdates payload entries containing only update_id.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Rewrite raw modelruntime error texts to actionable user-facing messages.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Rule for detecting injection patterns in tool results.]] - rationale - gateway/security/tool_result_injection.py
+- [[Scan tool result content for injection attempts.          Args             tool]] - rationale - gateway/security/tool_result_injection.py
+- [[Send a user-friendly notification when a message is blocked.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Strip internal paths and module names from block reasons before user display.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Strip potentially malicious markdown from tool results.      Removes     - Mark]] - rationale - gateway/security/input_normalizer.py
+- [[_OutboundScan]] - code - gateway/proxy/telegram_proxy.py
+- [[input_normalizer.py]] - code - gateway/security/input_normalizer.py
+- [[strip_markdown_exfil()]] - code - gateway/security/input_normalizer.py
+- [[tool_result_injection.py]] - code - gateway/security/tool_result_injection.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -58,13 +88,25 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 21 edges to [[_COMMUNITY_Community 15]]
-- 3 edges to [[_COMMUNITY_Community 6]]
-- 3 edges to [[_COMMUNITY_Community 1844]]
+- 53 edges to [[_COMMUNITY_Adversarial Injection Guards]]
+- 4 edges to [[_COMMUNITY_RBAC & SOC Realtime]]
+- 3 edges to [[_COMMUNITY_Community 134]]
+- 3 edges to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
+- 2 edges to [[_COMMUNITY_Community 115]]
+- 2 edges to [[_COMMUNITY_Community 49]]
+- 2 edges to [[_COMMUNITY_Community 82]]
+- 2 edges to [[_COMMUNITY_Community 57]]
+- 2 edges to [[_COMMUNITY_Community 60]]
+- 2 edges to [[_COMMUNITY_Community 46]]
+- 1 edge to [[_COMMUNITY_Community 19]]
+- 1 edge to [[_COMMUNITY_Community 21]]
+- 1 edge to [[_COMMUNITY_Community 420]]
+- 1 edge to [[_COMMUNITY_Community 862]]
+- 1 edge to [[_COMMUNITY_Key Vault & Audit Chain]]
 
 ## Top bridge nodes
-- [[TestCollaboratorPersistence]] - degree 30, connects to 3 communities
-- [[RBACConfig_3]] - degree 18, connects to 3 communities
-- [[.setup_method()_21]] - degree 4, connects to 2 communities
-- [[.setup_method()_20]] - degree 4, connects to 1 community
-- [[.test_default_config_initialization()]] - degree 3, connects to 1 community
+- [[Any_21]] - degree 17, connects to 6 communities
+- [[tool_result_injection.py]] - degree 10, connects to 6 communities
+- [[_OutboundScan]] - degree 9, connects to 6 communities
+- [[.scan_tool_result()_3]] - degree 7, connects to 3 communities
+- [[input_normalizer.py]] - degree 4, connects to 3 communities

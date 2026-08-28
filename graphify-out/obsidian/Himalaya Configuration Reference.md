@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/himalaya/references/configuration.md"
 type: "document"
-community: "Community 581"
+community: "Community 576"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_581
+  - community/Community_576
 ---
 
 # Himalaya Configuration Reference
@@ -20,8 +20,7 @@ tags:
 - [[Notmuch Backend (local mail)]] - `contains` [EXTRACTED]
 - [[OAuth2 Authentication (for providers that support it)]] - `contains` [EXTRACTED]
 - [[Password Options]] - `contains` [EXTRACTED]
-- [[configuration]] - `contains` [EXTRACTED]
 - [[iCloud Configuration]] - `contains` [EXTRACTED]
 - [[ssh-configuration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_581
+#graphify/document #graphify/EXTRACTED #community/Community_576

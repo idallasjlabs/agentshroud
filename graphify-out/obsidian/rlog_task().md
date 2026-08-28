@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/app_main.c"
 type: "code"
-community: "Community 139"
-location: "L549"
+community: "Community 418"
+location: "L566"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_139
+  - community/Community_418
 ---
 
 # rlog_task()
@@ -15,7 +15,6 @@ tags:
 - [[app_main.c]] - `contains` [EXTRACTED]
 - [[wakeword_tts_playing()]] - `calls` [INFERRED]
 - [[ws_client_connected()]] - `calls` [INFERRED]
-- [[ws_client_connected() — lock-free flag read]] - `calls` [EXTRACTED]
 - [[ws_client_send_log()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_139
+#graphify/code #graphify/INFERRED #community/Community_418

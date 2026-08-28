@@ -1,27 +1,32 @@
 ---
 type: community
-members: 14
+cohesion: 0.12
+members: 17
 ---
 
 # Community 518
 
-**Members:** 14 nodes
+**Cohesion:** 0.12 - loosely connected
+**Members:** 17 nodes
 
 ## Members
-- [[AWS Cloud Management & FinOps Agent]] - document - .agents/skills/i-aws/SKILL.md
-- [[AWS Cloud Management & FinOps Agent_3]] - document - .agents/skills/i-aws/SKILL.md
-- [[AWS Cloud Management & FinOps README]] - document - .agents/skills/i-aws/README.md
-- [[Cross-Account & Future Proofing]] - document - .agents/skills/i-aws/SKILL.md
-- [[Expertise]] - document - .agents/skills/i-aws/SKILL.md
-- [[FY26 40% Cost Reduction Target]] - rationale - .agents/skills/i-aws/SKILL.md
-- [[Guardrails_1]] - document - .agents/skills/i-aws/SKILL.md
-- [[Identity]] - document - .agents/skills/i-aws/SKILL.md
-- [[Required Tags (All Resources)]] - document - .agents/skills/i-aws/SKILL.md
-- [[Resource Inventory CSV Schema]] - document - .agents/skills/i-aws/SKILL.md
-- [[SKILL_7]] - document - .agents/skills/i-aws/SKILL.md
-- [[Tag Audit Process]] - document - .agents/skills/i-aws/SKILL.md
-- [[Tagging Standard]] - document - .agents/skills/i-aws/SKILL.md
-- [[Workflow]] - document - .agents/skills/i-aws/SKILL.md
+- [[1Password Integration]] - document - docs/api/integration-guide.md
+- [[AgentShroud v1.3.0]] - document - docs/api/api-reference.md
+- [[CICD Pipeline Integration]] - document - docs/api/integration-guide.md
+- [[Docker Security Scanning]] - document - docs/api/integration-guide.md
+- [[Generic AI Agent Integration]] - document - docs/api/integration-guide.md
+- [[GitHub Actions Integration]] - document - docs/api/integration-guide.md
+- [[HTTP Proxy Mode]] - document - docs/api/integration-guide.md
+- [[Integration Guide]] - document - docs/api/integration-guide.md
+- [[MCP Proxy Configuration]] - document - docs/api/integration-guide.md
+- [[MCP Server Integration_1]] - document - docs/api/integration-guide.md
+- [[Monitoring System Integration]] - document - docs/api/integration-guide.md
+- [[Overview_4]] - document - docs/api/api-reference.md
+- [[Overview_5]] - document - docs/api/integration-guide.md
+- [[Prometheus Metrics]] - document - docs/api/integration-guide.md
+- [[Service Account Setup]] - document - docs/api/integration-guide.md
+- [[Webhook Alerts]] - document - docs/api/integration-guide.md
+- [[integration-guide]] - document - docs/api/integration-guide.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,13 +36,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 1289]]
-- 2 edges to [[_COMMUNITY_Community 1290]]
-- 2 edges to [[_COMMUNITY_Community 1076]]
-- 2 edges to [[_COMMUNITY_Community 1005]]
-- 2 edges to [[_COMMUNITY_Community 851]]
-- 2 edges to [[_COMMUNITY_Community 1263]]
+- 1 edge to [[_COMMUNITY_Community 490]]
+- 1 edge to [[_COMMUNITY_Community 650]]
 
 ## Top bridge nodes
-- [[AWS Cloud Management & FinOps Agent_3]] - degree 18, connects to 6 communities
-- [[AWS Cloud Management & FinOps Agent]] - degree 12, connects to 4 communities
+- [[Integration Guide]] - degree 8, connects to 1 community
+- [[AgentShroud v1.3.0]] - degree 4, connects to 1 community

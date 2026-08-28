@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/09 - Diagrams/Dependency Graph.md"
 type: "concept"
-community: "Community 1325"
+community: "Community 43"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1325
+  - community/Community_43
 ---
 
 # Gateway Startup Initialization Order
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Dependency Graph]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1325
+#graphify/concept #graphify/EXTRACTED #community/Community_43

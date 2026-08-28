@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mfa_guard.py"
 type: "rationale"
-community: "Community 69"
+community: "Community 63"
 location: "L460"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_69
+  - community/Community_63
 ---
 
 # Submit via the real tool-call path -> action_type == f'tool_call_{tier}'.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_submit_tool_call()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_69
+#graphify/rationale #graphify/EXTRACTED #community/Community_63

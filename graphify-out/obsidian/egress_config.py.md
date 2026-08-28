@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_config.py"
 type: "code"
-community: "Community 251"
+community: "Community 174"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_251
+  - community/Community_174
 ---
 
 # egress_config.py
@@ -30,4 +30,4 @@ tags:
 - [[set_egress_config()]] - `contains` [EXTRACTED]
 - [[subagent_monitor.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_251
+#graphify/code #graphify/EXTRACTED #community/Community_174

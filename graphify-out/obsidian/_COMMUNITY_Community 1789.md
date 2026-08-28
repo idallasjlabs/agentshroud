@@ -1,14 +1,16 @@
 ---
 type: community
+cohesion: 1.00
 members: 1
 ---
 
 # Community 1789
 
+**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[SSHProxy.validate_write_file()]] - code - gateway/ssh_proxy/proxy.py
+- [[ota.c (self-update over HTTPS)]] - code - firmware/voice-terminal/main/ota.c
 
 ## Live Query (requires Dataview plugin)
 
