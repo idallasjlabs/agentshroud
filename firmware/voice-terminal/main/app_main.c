@@ -368,8 +368,19 @@ static void tts_task(void *arg)
             }
         }
         if (got == 0) {
-            /* No reply audio → feed silence.  The stream never stops. */
-            memset(play_chunk, 0, sizeof(play_chunk));
+            /* No reply audio → feed near-silence, not pure zeros.  A long
+             * all-zero stream engages the codec's digital-silence automute,
+             * and the un-mute on the first real sample was the single loud
+             * pop at the start of every reply (live 2026-08-28: pop louder
+             * than the voice itself, then clean — the lead-silence pad only
+             * moved it off the first word, because the pop IS the automute
+             * boundary).  ±1 LSB alternating dither (~-90 dBFS, inaudible)
+             * keeps the DAC path live so there is no boundary to pop.
+             * The stream never stops. */
+            int16_t *s = (int16_t *)play_chunk;
+            for (size_t i = 0; i < sizeof(play_chunk) / 2; i++) {
+                s[i] = (i & 1) ? 1 : -1;
+            }
             got = sizeof(play_chunk);
         }
         audio_play(play_chunk, got);   /* blocks ~128 ms per 4 KB — paces the loop */
@@ -745,8 +756,7 @@ static void voice_task(void *arg)
             ws_client_handle_t new_ws = NULL;
             int attempts = 0;
             while (!new_ws && attempts < 5) {
-                new_ws = ws_client_create(url, _on_vg_state, _on_tts_pcm, NULL);
-                if (new_ws) ws_client_set_ctrl_cb(new_ws, _on_ws_ctrl);
+                new_ws = ws_client_create(url, _on_vg_state, _on_tts_pcm, _on_ws_ctrl, NULL);
                 if (!new_ws) {
                     ESP_LOGW(TAG, "Agent switch WS connect failed (attempt %d/5)", attempts + 1);
                     vTaskDelay(pdMS_TO_TICKS(3000));
@@ -758,8 +768,15 @@ static void voice_task(void *arg)
                 s_ws = new_ws;
                 if (old_ws) ws_client_destroy(old_ws);
                 wakeword_agent_switch_ack();
-                /* Update the on-screen agent label */
-                ui_face_set_agent(VT_AGENTS[idx].display);
+                /* Update the on-screen agent label — except for "direct",
+                 * whose hardcoded table entry ("Local") is model-agnostic by
+                 * design and would win the race against (and permanently
+                 * clobber) the server's live-model set_agent_label push sent
+                 * right after this connects.  Leave that slot's label to the
+                 * server entirely. */
+                if (strcmp(VT_AGENTS[idx].slug, "direct") != 0) {
+                    ui_face_set_agent(VT_AGENTS[idx].display);
+                }
                 ESP_LOGI(TAG, "Agent switch complete → %s", VT_AGENTS[idx].display);
             } else {
                 ESP_LOGE(TAG, "Agent switch failed — keeping previous connection");
@@ -1018,8 +1035,7 @@ void app_main(void)
              ws_url);
 
     while (!s_ws) {
-        s_ws = ws_client_create(ws_url, _on_vg_state, _on_tts_pcm, NULL);
-        if (s_ws) ws_client_set_ctrl_cb(s_ws, _on_ws_ctrl);
+        s_ws = ws_client_create(ws_url, _on_vg_state, _on_tts_pcm, _on_ws_ctrl, NULL);
         if (!s_ws) {
             ESP_LOGW(TAG, "WebSocket connection failed — retrying in 5 s");
             ui_face_set_state(WS_VG_STATE_DISCONNECTED);
@@ -1029,8 +1045,13 @@ void app_main(void)
     ui_face_set_state(WS_VG_STATE_IDLE);
 
     /* Show the active agent name immediately after connecting.
-     * ui_face_set_agent() acquires the display lock internally. */
-    ui_face_set_agent(VT_AGENTS[0].display);
+     * ui_face_set_agent() acquires the display lock internally.
+     * "direct"'s hardcoded table entry ("Local") is model-agnostic by design
+     * and would clobber the server's live-model set_agent_label push sent
+     * right after this connects — leave that slot's label to the server. */
+    if (strcmp(VT_AGENTS[0].slug, "direct") != 0) {
+        ui_face_set_agent(VT_AGENTS[0].display);
+    }
 
     ESP_LOGI(TAG, "Ready. Voice terminal active → agent: %s", VT_AGENTS[0].display);
 

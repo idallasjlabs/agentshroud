@@ -12,10 +12,9 @@ Tests cover:
   - GET /health returns 200 {"status":"ok"}
   - WS /voice: full utterance → STT → /v1/chat/completions → TTS → PCM back, state sequence
   - WS /voice: empty transcript → idle (no TTS, no LLM call)
-  - _call_llm: happy path returns content string from OpenAI-shape response
-  - _call_llm: malformed response raises RuntimeError
-  - _call_llm: sends correct model, max_tokens, full message history
-  - _call_llm: multi-turn history carried in request body
+  - _call_llm_stream: yields sentences as SSE deltas cross a sentence boundary
+  - _call_llm_stream: skips malformed SSE chunks without raising
+  - _call_llm_stream: sends correct model, max_tokens, stream:true, full history
   - X-AgentShroud-User-Id header propagates owner UID
   - stt.transcribe: S16LE bytes → string (model mocked)
   - tts.synthesize: string → bytes (Kokoro pipeline mocked)
@@ -34,7 +33,7 @@ from unittest.mock import AsyncMock, MagicMock, patch
 import pytest
 from fastapi.testclient import TestClient
 
-from voice_gateway.server import _call_llm, app
+from voice_gateway.server import _call_llm_stream, app
 
 
 def _fake_kokoro_pipeline(audio, captured_text=None):
@@ -533,76 +532,118 @@ def test_tts_synthesize_only_whitespace_after_normalise_returns_empty(monkeypatc
     assert not pipeline_called, "Kokoro must not be invoked for empty normalised text"
 
 
-# ── _call_llm unit tests ──────────────────────────────────────────────────────
+# ── _call_llm_stream unit tests ─────────────────────────────────────────────────
+
+from contextlib import asynccontextmanager as _asynccontextmanager
 
 
-def _openai_resp(content: str, status: int = 200):
-    """Build a mock httpx response with an OpenAI-shape body."""
-    mock = MagicMock()
-    mock.status_code = status
-    mock.json = MagicMock(return_value={"choices": [{"message": {"content": content}}]})
-    mock.raise_for_status = MagicMock()
-    return mock
+def _openai_delta_lines(deltas: list[str]) -> list[str]:
+    """Build OpenAI-shaped streaming SSE lines for a sequence of content deltas."""
+    lines = [f"data: {json.dumps({'choices': [{'delta': {'content': d}}]})}" for d in deltas]
+    lines.append("data: [DONE]")
+    return lines
+
+
+def _mock_llm_stream_resp(lines: list[str], status_code: int = 200):
+    """Build a mock httpx.Response usable as the yield value of a mocked
+    AsyncClient.stream() async context manager."""
+    resp = MagicMock()
+    resp.status_code = status_code
+    resp.raise_for_status = MagicMock()
+
+    async def _aiter_lines():
+        for line in lines:
+            yield line
+
+    resp.aiter_lines = _aiter_lines
+    return resp
 
 
 @pytest.mark.asyncio
-async def test_call_llm_returns_content():
-    """_call_llm posts to /v1/chat/completions and returns stripped content."""
+async def test_call_llm_stream_yields_sentences():
+    """_call_llm_stream posts to /v1/chat/completions with stream:true and
+    yields each complete sentence as its boundary is crossed, not the raw
+    per-token deltas — so TTS starts as soon as the first sentence lands
+    instead of waiting for the entire reply to finish generating."""
     history = [
         {"role": "system", "content": "You are a voice assistant."},
         {"role": "user", "content": "what time is it"},
     ]
-    with patch("httpx.AsyncClient.post", new=AsyncMock(return_value=_openai_resp("It is noon."))):
-        result = await _call_llm(history)
-    assert result == "It is noon."
+    lines = _openai_delta_lines(["It is noon. ", "Anything else?"])
+
+    @_asynccontextmanager
+    async def mock_stream(self, method, url, json=None, headers=None, **kw):
+        yield _mock_llm_stream_resp(lines)
+
+    with patch("httpx.AsyncClient.stream", new=mock_stream):
+        result = [s async for s in _call_llm_stream(history)]
+
+    assert result == ["It is noon.", "Anything else?"]
 
 
 @pytest.mark.asyncio
-async def test_call_llm_strips_whitespace():
-    """Leading/trailing whitespace in the model reply is stripped."""
-    history = [{"role": "user", "content": "hello"}]
-    with patch(
-        "httpx.AsyncClient.post", new=AsyncMock(return_value=_openai_resp("  Hi there.  \n"))
-    ):
-        result = await _call_llm(history)
-    assert result == "Hi there."
+async def test_call_llm_stream_flushes_trailing_fragment():
+    """A final delta with no terminal punctuation is flushed once the SSE
+    stream ends, same as gateway/ingest_api/routes/forward.py's
+    _sentences_from_deltas this mirrors."""
+    lines = _openai_delta_lines(["No trailing punctuation"])
+
+    @_asynccontextmanager
+    async def mock_stream(self, method, url, json=None, headers=None, **kw):
+        yield _mock_llm_stream_resp(lines)
+
+    with patch("httpx.AsyncClient.stream", new=mock_stream):
+        result = [s async for s in _call_llm_stream([{"role": "user", "content": "hi"}])]
+
+    assert result == ["No trailing punctuation"]
 
 
 @pytest.mark.asyncio
-async def test_call_llm_malformed_response_raises():
-    """A response without choices[0].message.content raises RuntimeError."""
-    mock = MagicMock()
-    mock.status_code = 200
-    mock.json = MagicMock(return_value={"unexpected": "shape"})
-    mock.raise_for_status = MagicMock()
+async def test_call_llm_stream_skips_malformed_chunks():
+    """A malformed/unexpected-shape SSE chunk is skipped, not fatal — a good
+    sentence surrounding it still comes through (matches _call_agent_stream's
+    tolerance for malformed lines elsewhere in this same file)."""
+    lines = [
+        "data: not valid json",
+        f"data: {json.dumps({'unexpected': 'shape'})}",
+        *_openai_delta_lines(["Still works."]),
+    ]
 
-    with patch("httpx.AsyncClient.post", new=AsyncMock(return_value=mock)):
-        with pytest.raises(RuntimeError, match="Unexpected LLM response shape"):
-            await _call_llm([{"role": "user", "content": "hi"}])
+    @_asynccontextmanager
+    async def mock_stream(self, method, url, json=None, headers=None, **kw):
+        yield _mock_llm_stream_resp(lines)
+
+    with patch("httpx.AsyncClient.stream", new=mock_stream):
+        result = [s async for s in _call_llm_stream([{"role": "user", "content": "hi"}])]
+
+    assert result == ["Still works."]
 
 
 @pytest.mark.asyncio
-async def test_call_llm_sends_correct_model_and_max_tokens(monkeypatch):
-    """Request body must carry the configured model and max_tokens=150."""
+async def test_call_llm_stream_sends_correct_model_and_max_tokens(monkeypatch):
+    """Request body must carry the configured model, max_tokens=150, and
+    stream:true (the whole point of this function over the old _call_llm)."""
     import voice_gateway.server as srv
 
     monkeypatch.setattr(srv, "_VOICE_MODEL", "claude-haiku-4-5-20251001")
 
     captured = {}
 
-    async def _capture(url, json=None, **kw):
+    @_asynccontextmanager
+    async def mock_stream(self, method, url, json=None, headers=None, **kw):
         captured.update(json or {})
-        return _openai_resp("ok")
+        yield _mock_llm_stream_resp(_openai_delta_lines(["ok"]))
 
-    with patch("httpx.AsyncClient.post", new=AsyncMock(side_effect=_capture)):
-        await _call_llm([{"role": "user", "content": "test"}])
+    with patch("httpx.AsyncClient.stream", new=mock_stream):
+        [_ async for _ in _call_llm_stream([{"role": "user", "content": "test"}])]
 
     assert captured["model"] == "claude-haiku-4-5-20251001"
     assert captured["max_tokens"] == 150
+    assert captured["stream"] is True
 
 
 @pytest.mark.asyncio
-async def test_call_llm_sends_full_history(monkeypatch):
+async def test_call_llm_stream_sends_full_history():
     """The full messages history (system + prior turns) is sent in the request body."""
     history = [
         {"role": "system", "content": "You are a voice assistant."},
@@ -612,15 +653,70 @@ async def test_call_llm_sends_full_history(monkeypatch):
     ]
     captured = {}
 
-    async def _capture(url, json=None, **kw):
+    @_asynccontextmanager
+    async def mock_stream(self, method, url, json=None, headers=None, **kw):
         captured.update(json or {})
-        return _openai_resp("It is Monday.")
+        yield _mock_llm_stream_resp(_openai_delta_lines(["It is Monday."]))
 
-    with patch("httpx.AsyncClient.post", new=AsyncMock(side_effect=_capture)):
-        result = await _call_llm(history)
+    with patch("httpx.AsyncClient.stream", new=mock_stream):
+        result = [s async for s in _call_llm_stream(history)]
 
-    assert result == "It is Monday."
+    assert result == ["It is Monday."]
     assert captured["messages"] == history, "Full conversation history must be forwarded"
+
+
+@pytest.mark.asyncio
+async def test_ws_direct_agent_streams_tts_before_full_reply(monkeypatch):
+    """Direct-path replies must start TTS synthesis on the first sentence
+    while the LLM is still generating later ones — the whole point of
+    streaming _call_llm_stream instead of blocking on the full reply
+    (SCRUM-113 gave the Hermes path this already; the direct path never had
+    it, live-measured as the largest slice of a ~10s voice round trip,
+    2026-08-27). The mock LLM stream deliberately blocks before yielding its
+    second sentence until synthesis of the first has already happened —
+    under the old blocking design this would hang/time out, since nothing
+    could call synthesize() before the (never-yielding) full reply resolved."""
+    from fastapi.websockets import WebSocketDisconnect
+
+    import voice_gateway.server as srv
+    import voice_gateway.stt as stt_mod
+    import voice_gateway.tts as tts_mod
+
+    monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
+    monkeypatch.setattr(srv, "_DEFAULT_AGENT", "direct")
+    monkeypatch.setattr(stt_mod, "transcribe", lambda b: "tell me something")
+
+    first_sentence_synthesized = asyncio.Event()
+
+    async def _mock_llm_stream(history):
+        yield "First sentence."
+        await asyncio.wait_for(first_sentence_synthesized.wait(), timeout=5)
+        yield "Second sentence."
+
+    monkeypatch.setattr(srv, "_call_llm_stream", _mock_llm_stream)
+
+    synth_order: list = []
+
+    def _capture_synth(t):
+        synth_order.append(t)
+        if t == "First sentence.":
+            first_sentence_synthesized.set()
+        return b"\x01\x00" * 50
+
+    monkeypatch.setattr(tts_mod, "synthesize", _capture_synth)
+
+    ws = _mock_ws(
+        [
+            {"text": "LISTEN", "bytes": None},
+            {"bytes": _pcm_bytes(), "text": None},
+            {"text": "END", "bytes": None},
+            WebSocketDisconnect(code=1000),
+        ]
+    )
+
+    await srv.voice_endpoint(ws)
+
+    assert synth_order == ["First sentence.", "Second sentence."]
 
 
 # ── Owner UID header propagation ──────────────────────────────────────────────
@@ -640,12 +736,16 @@ def test_owner_user_id_propagated_as_header(monkeypatch):
 
     captured_headers = {}
 
-    async def _capture(url, json=None, headers=None, **kw):
+    @_asynccontextmanager
+    async def mock_stream(self, method, url, json=None, headers=None, **kw):
         captured_headers.update(headers or {})
-        return _openai_resp("Hello")
+        yield _mock_llm_stream_resp(_openai_delta_lines(["Hello"]))
 
-    with patch("httpx.AsyncClient.post", new=AsyncMock(side_effect=_capture)):
-        asyncio.run(srv._call_llm([{"role": "user", "content": "test"}]))
+    async def _drain():
+        return [s async for s in srv._call_llm_stream([{"role": "user", "content": "test"}])]
+
+    with patch("httpx.AsyncClient.stream", new=mock_stream):
+        asyncio.run(_drain())
 
     assert (
         captured_headers.get("X-AgentShroud-User-Id") == "8096968754"
@@ -1425,13 +1525,13 @@ async def test_ws_direct_agent_calls_call_llm(monkeypatch):
 
     async def _mock_llm(history):
         llm_called.append(True)
-        return "fast reply"
+        yield "fast reply"
 
     async def _mock_agent(transcript, agent):
         agent_called.append(agent)
         yield "agent reply"
 
-    monkeypatch.setattr(srv, "_call_llm", _mock_llm)
+    monkeypatch.setattr(srv, "_call_llm_stream", _mock_llm)
     monkeypatch.setattr(srv, "_call_agent_stream", _mock_agent)
 
     with TestClient(app) as client:
@@ -1475,13 +1575,13 @@ async def test_ws_hermes_agent_calls_call_agent(monkeypatch):
 
     async def _mock_llm(history):
         llm_called.append(True)
-        return "fast reply"
+        yield "fast reply"
 
     async def _mock_agent(transcript, agent):
         agent_called.append(agent)
         yield "Hermes says hi"
 
-    monkeypatch.setattr(srv, "_call_llm", _mock_llm)
+    monkeypatch.setattr(srv, "_call_llm_stream", _mock_llm)
     monkeypatch.setattr(srv, "_call_agent_stream", _mock_agent)
 
     with TestClient(app) as client:
@@ -1772,14 +1872,26 @@ async def test_ws_direct_agent_pipeline_error_pops_history_and_recovery_send_fai
         ]
     )
 
-    ws.receive = AsyncMock(
-        side_effect=[
-            {"text": "LISTEN", "bytes": None},
-            {"bytes": b"\x00\x01", "text": None},
-            {"text": "END", "bytes": None},
-            WebSocketDisconnect(code=1000),  # clean exit after recovery
-        ]
-    )
+    # A plain list side_effect would race: now that the direct path streams,
+    # the watcher task (_watch_for_stop) is created — and starts calling
+    # ws.receive() concurrently — even in this failure scenario, whereas
+    # under the old blocking _call_llm it never got created at all (the LLM
+    # call raised before reaching that point). Whichever of watcher or the
+    # main loop happens to call receive() next is nondeterministic, so any
+    # call beyond the real 3-message script must resolve the same way
+    # (a clean disconnect) regardless of which task makes it.
+    _receive_script = [
+        {"text": "LISTEN", "bytes": None},
+        {"bytes": b"\x00\x01", "text": None},
+        {"text": "END", "bytes": None},
+    ]
+
+    def _receive_side_effect(*_a, **_kw):
+        if _receive_script:
+            return _receive_script.pop(0)
+        raise WebSocketDisconnect(code=1000)  # clean exit after recovery
+
+    ws.receive = AsyncMock(side_effect=_receive_side_effect)
 
     monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
     monkeypatch.setattr(srv, "_DEFAULT_AGENT", "direct")
@@ -1789,8 +1901,9 @@ async def test_ws_direct_agent_pipeline_error_pops_history_and_recovery_send_fai
     # LLM raises — triggers inner pipeline except with user message in history
     async def _fail_llm(history):
         raise RuntimeError("synthetic LLM failure for line-339 coverage")
+        yield  # pragma: no cover — unreachable, satisfies generator shape
 
-    monkeypatch.setattr(srv, "_call_llm", _fail_llm)
+    monkeypatch.setattr(srv, "_call_llm_stream", _fail_llm)
 
     with caplog.at_level(logging.DEBUG, logger="voice_gateway.server"):
         await srv.voice_endpoint(ws)
@@ -2737,19 +2850,32 @@ async def test_ws_set_then_query_reports_the_set_level(monkeypatch):
 # ── Spoken model-switch command ("use <model>" / "tell <agent>") ──────────────
 
 
-def test_parse_model_switch_command_forms():
+def test_parse_model_switch_command_forms(monkeypatch):
     """ "<use|tell|ask|talk to|switch to|...> <model|agent>" -> ('model', gateway
     model name, label) or ('agent', route_to slug, label); ordinary speech ->
     None. Model/agent word can be found via any recognized verb phrase, with
     a few filler words allowed in between (owner 2026-08-07: "phrasing
-    should be flexible natural language, not hard-coded")."""
+    should be flexible natural language, not hard-coded").
+
+    "local" must always resolve to whatever _VOICE_MODEL currently is, never
+    a hardcoded snapshot — a fixed model name here is exactly what went stale
+    when VOICE_MODEL swapped qwen3-14b -> gemma-4-12B-it-4bit (2026-08-27) and
+    left the device screen claiming "Qwen3" while gemma actually answered."""
     import voice_gateway.server as srv
 
+    monkeypatch.setattr(srv, "_VOICE_MODEL", "gemma-4-12B-it-4bit")
+
     cases = [
-        ("Use local.", ("model", "qwen3-14b", "Qwen3")),
+        ("Use local.", ("model", "gemma-4-12B-it-4bit", "gemma-4-12B-it-4bit")),
         ("use qwen", ("model", "qwen3-14b", "Qwen3")),
-        ("switch me to the local model", ("model", "qwen3-14b", "Qwen3")),
-        ("go to the local model", ("model", "qwen3-14b", "Qwen3")),
+        (
+            "switch me to the local model",
+            ("model", "gemma-4-12B-it-4bit", "gemma-4-12B-it-4bit"),
+        ),
+        (
+            "go to the local model",
+            ("model", "gemma-4-12B-it-4bit", "gemma-4-12B-it-4bit"),
+        ),
         ("Use Claude.", ("model", "claude-haiku-4-5-20251001", "Claude")),
         ("switch to claude", ("model", "claude-haiku-4-5-20251001", "Claude")),
         ("can you please switch to claude", ("model", "claude-haiku-4-5-20251001", "Claude")),
@@ -2795,12 +2921,13 @@ async def test_ws_use_model_command_intercepted(monkeypatch):
 
     async def _llm_must_not_be_called(history):
         raise AssertionError("bare switch command must not reach the LLM")
+        yield  # pragma: no cover — unreachable, satisfies generator shape
 
     async def _agent_must_not_be_called(transcript, agent):
         raise AssertionError("bare switch command must not be routed to the agent")
         yield  # pragma: no cover — unreachable, satisfies generator shape
 
-    monkeypatch.setattr(srv, "_call_llm", _llm_must_not_be_called)
+    monkeypatch.setattr(srv, "_call_llm_stream", _llm_must_not_be_called)
     monkeypatch.setattr(srv, "_call_agent_stream", _agent_must_not_be_called)
 
     spoken: list = []
@@ -2854,12 +2981,13 @@ async def test_ws_use_local_command_confirms_with_model_name(monkeypatch):
 
     async def _llm_must_not_be_called(history):
         raise AssertionError("bare switch command must not reach the LLM")
+        yield  # pragma: no cover — unreachable, satisfies generator shape
 
     async def _agent_must_not_be_called(transcript, agent):
         raise AssertionError("bare switch command must not be routed to the agent")
         yield  # pragma: no cover — unreachable, satisfies generator shape
 
-    monkeypatch.setattr(srv, "_call_llm", _llm_must_not_be_called)
+    monkeypatch.setattr(srv, "_call_llm_stream", _llm_must_not_be_called)
     monkeypatch.setattr(srv, "_call_agent_stream", _agent_must_not_be_called)
 
     spoken: list = []
@@ -2889,6 +3017,69 @@ async def test_ws_use_local_command_confirms_with_model_name(monkeypatch):
 
 
 @pytest.mark.asyncio
+async def test_ws_use_local_command_reflects_live_voice_model(monkeypatch):
+    """'use local' must confirm with and display whatever _VOICE_MODEL
+    currently is, never a hardcoded snapshot — regression test for the
+    2026-08-27 bug where the screen kept claiming "Qwen3" (and later the
+    generic placeholder "Local") after VOICE_MODEL had already moved to
+    gemma-4-12B-it-4bit."""
+    from fastapi.websockets import WebSocketDisconnect
+
+    import voice_gateway.server as srv
+    import voice_gateway.stt as stt_mod
+    import voice_gateway.tts as tts_mod
+
+    monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
+    monkeypatch.setattr(srv, "_VOICE_MODEL", "gemma-4-12B-it-4bit")
+    monkeypatch.setattr(srv, "_agent_override", "hermes")
+    monkeypatch.setattr(srv, "_model_override", "gpt-4o-mini")
+    monkeypatch.setattr(stt_mod, "transcribe", lambda b: "use local")
+
+    async def _llm_must_not_be_called(history):
+        raise AssertionError("bare switch command must not reach the LLM")
+        yield  # pragma: no cover — unreachable, satisfies generator shape
+
+    async def _agent_must_not_be_called(transcript, agent):
+        raise AssertionError("bare switch command must not be routed to the agent")
+        yield  # pragma: no cover — unreachable, satisfies generator shape
+
+    monkeypatch.setattr(srv, "_call_llm_stream", _llm_must_not_be_called)
+    monkeypatch.setattr(srv, "_call_agent_stream", _agent_must_not_be_called)
+
+    spoken: list = []
+
+    def _capture_synth(t):
+        spoken.append(t)
+        return b"\x01\x00" * 50
+
+    monkeypatch.setattr(tts_mod, "synthesize", _capture_synth)
+
+    ws = _mock_ws(
+        [
+            {"text": "LISTEN", "bytes": None},
+            {"bytes": _pcm_bytes(), "text": None},
+            {"text": "END", "bytes": None},
+            WebSocketDisconnect(code=1000),
+        ]
+    )
+
+    await srv.voice_endpoint(ws)
+
+    assert srv._agent_override == "direct"
+    assert srv._model_override == "gemma-4-12B-it-4bit"
+    assert any(
+        "switched to gemma-4-12b-it-4bit" in t.lower() for t in spoken
+    ), f"confirmation not spoken: {spoken}"
+
+    sent_texts = [c.args[0] for c in ws.send_text.call_args_list]
+    ctrl = [json.loads(t) for t in sent_texts if '"cmd"' in t]
+    assert {
+        "cmd": "set_agent_label",
+        "value": "gemma-4-12B-it-4bit",
+    } in ctrl, f"label update did not carry the live model name: {ctrl}"
+
+
+@pytest.mark.asyncio
 async def test_ws_use_model_command_with_chained_question(monkeypatch):
     """'Use Claude. What's on my calendar?' must switch the model AND route
     the remaining question through the fast direct path (_call_llm) in the
@@ -2906,13 +3097,13 @@ async def test_ws_use_model_command_with_chained_question(monkeypatch):
 
     async def _mock_llm(history):
         llm_calls.append(history[-1]["content"])
-        return "Nothing scheduled."
+        yield "Nothing scheduled."
 
     async def _agent_must_not_be_called(transcript, agent):
         raise AssertionError("a model switch must not route through the agent path")
         yield  # pragma: no cover — unreachable, satisfies generator shape
 
-    monkeypatch.setattr(srv, "_call_llm", _mock_llm)
+    monkeypatch.setattr(srv, "_call_llm_stream", _mock_llm)
     monkeypatch.setattr(srv, "_call_agent_stream", _agent_must_not_be_called)
 
     spoken: list = []
@@ -3019,9 +3210,10 @@ async def test_ws_tell_agent_command_with_chained_instruction(monkeypatch):
 
     async def _llm_must_not_be_called(history):
         raise AssertionError("tell <agent> must not route through the direct fast path")
+        yield  # pragma: no cover — unreachable, satisfies generator shape
 
     monkeypatch.setattr(srv, "_call_agent_stream", _mock_agent)
-    monkeypatch.setattr(srv, "_call_llm", _llm_must_not_be_called)
+    monkeypatch.setattr(srv, "_call_llm_stream", _llm_must_not_be_called)
 
     spoken: list = []
 
@@ -3078,8 +3270,9 @@ async def test_switch_overrides_persist_across_reconnect(monkeypatch):
 
     async def _llm_must_not_be_called(history):
         raise AssertionError("bare switch command must not reach the LLM")
+        yield  # pragma: no cover — unreachable, satisfies generator shape
 
-    monkeypatch.setattr(srv, "_call_llm", _llm_must_not_be_called)
+    monkeypatch.setattr(srv, "_call_llm_stream", _llm_must_not_be_called)
 
     # First connection: speak the switch command.
     monkeypatch.setattr(stt_mod, "transcribe", lambda b: "Use Claude.")
@@ -3098,9 +3291,9 @@ async def test_switch_overrides_persist_across_reconnect(monkeypatch):
     # Second connection (simulated reconnect, no ?agent= param): a normal
     # question must still use the Claude model, not the module's _VOICE_MODEL.
     async def _mock_llm(history):
-        return "Claude reply"
+        yield "Claude reply"
 
-    monkeypatch.setattr(srv, "_call_llm", _mock_llm)
+    monkeypatch.setattr(srv, "_call_llm_stream", _mock_llm)
     monkeypatch.setattr(stt_mod, "transcribe", lambda b: "What's the weather?")
     ws2 = _mock_ws(
         [

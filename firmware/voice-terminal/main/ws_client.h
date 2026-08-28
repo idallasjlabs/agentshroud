@@ -48,12 +48,20 @@ typedef void (*ws_ctrl_cb_t)(const char *cmd, int value, const char *str_value, 
  * @param url        Full WebSocket URL (ws:// or wss://).
  * @param state_cb   Called when a state-change JSON frame arrives.
  * @param pcm_cb     Called for each binary TTS PCM frame received.
+ * @param ctrl_cb    Called for server control frames ({"cmd":...}); may be
+ *                   NULL. Registered before the client starts connecting —
+ *                   unlike a post-hoc setter, this guarantees no control
+ *                   frame can arrive before the callback is live (the very
+ *                   first frame after connect, e.g. set_agent_label, used to
+ *                   race a separate ws_client_set_ctrl_cb() call and could be
+ *                   silently dropped).
  * @param user_ctx   Forwarded to callbacks unchanged.
  * @return Handle on success, NULL on failure.
  */
 ws_client_handle_t ws_client_create(const char *url,
                                     ws_state_cb_t state_cb,
                                     ws_pcm_cb_t   pcm_cb,
+                                    ws_ctrl_cb_t  ctrl_cb,
                                     void         *user_ctx);
 
 /**
@@ -114,14 +122,6 @@ esp_err_t ws_client_send_keepalive(ws_client_handle_t c);
  * audio path.  Message is truncated and quote-stripped for JSON safety.
  */
 esp_err_t ws_client_send_log(ws_client_handle_t c, const char *msg);
-
-/**
- * @brief Register a handler for server control frames ({"cmd":...}).
- *
- * Optional; unregistered commands are ignored.  The callback runs in
- * websocket_task context — it must not block (same contract as state_cb).
- */
-void ws_client_set_ctrl_cb(ws_client_handle_t c, ws_ctrl_cb_t cb);
 
 /**
  * @brief Returns true if the WebSocket connection is currently open.

@@ -678,9 +678,17 @@ services:
     # Honest limit: only binds containers docker-compose itself creates.
     # OpenClaw's own sandbox containers (openclaw-sbx-*) are spawned by
     # OpenClaw at runtime, not through this file, so they can still land on
-    # cores 0-1 too — this reduces contention, it doesn't guarantee exclusive
-    # isolation from that particular class of container.
-    cpuset: "0,1"
+    # these cores too — this reduces contention, it doesn't guarantee
+    # exclusive isolation from that particular class of container.
+    # Widened 2 -> 4 cores 2026-08-28: at 2 cores TTS ran ~2x over its
+    # healthy ceiling (5.24s for 81 chars vs the documented 0.2-3s; STT rtf
+    # 2.27 vs 1.02 the day before), which pushed total reply delivery past
+    # the firmware's 20s playback-gate age limit — the device then starts
+    # playing while later sentences are still downloading, and that TLS-
+    # receive-during-playback overlap is the audible-clicking mechanism the
+    # END-gate exists to prevent. 4 cores keeps synthesis fast enough that
+    # complete replies land inside the gate window.
+    cpuset: "0-3"
     depends_on:
       gateway:
         condition: service_healthy
