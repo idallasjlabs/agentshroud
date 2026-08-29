@@ -82,6 +82,8 @@ HERMES_SECRET_KEYS=(
   gateway_password
   feedbin_email
   feedbin_password
+  podcastindex_api_key
+  podcastindex_api_secret
 )
 
 _secret_mount_args() {
