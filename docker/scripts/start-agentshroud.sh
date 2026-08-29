@@ -291,19 +291,26 @@ echo "[startup] openclaw session-store cleanup reaper launched (pid=$!)"
 fi
 
 # ---------------------------------------------------------------------------
-# Dev environment: disable every OpenClaw cron job at boot
+# Env-split cron reconciliation: prod disables, dev enables (all jobs)
 # ---------------------------------------------------------------------------
-# Owner directive 2026-08-24: dev and prod are two independent stacks on the
-# same local-model backends -- prod always runs its full cron schedule, dev
-# never should (jobs get run manually there for testing). AGENTSHROUD_PROJECT
-# is already threaded into this container from docker-compose.yml (sourced
-# from scripts/asb's own dev/prod account detection: "agentshroud-bot" on
-# dev, "agentshroud" on prod, defaulting to "agentshroud" if ever unset --
-# same fail-safe direction as the compose default itself). This covers ALL
-# jobs currently in the live cron store, however they were created --
-# static seed, `cron add`, or `cron edit` -- not just the ones baked into
-# docker/config/openclaw/cron/jobs.json.
-if command -v openclaw >/dev/null 2>&1 && [ "${AGENTSHROUD_PROJECT:-agentshroud}" != "agentshroud" ]; then
+# Owner directive 2026-08-29 (REVERSES 2026-08-24): the cron quality work now
+# lives in DEV -- jobs must run on their schedules there so local-model
+# output can be iterated against golden baselines -- while PROD carries zero
+# scheduled LLM load. Same blanket pass over the live cron store (covers
+# static seed, `cron add`, and `cron edit` alike), gate inverted, plus the
+# dev side now ENABLES so a store disabled under the old regime self-heals
+# on the next dev boot. AGENTSHROUD_PROJECT threading is unchanged
+# ("agentshroud-bot" on dev, "agentshroud" on prod; unset fails safe to
+# prod, which under the new regime means jobs stay disabled -- still the
+# conservative direction for the shared local-model backends).
+if command -v openclaw >/dev/null 2>&1; then
+    if [ "${AGENTSHROUD_PROJECT:-agentshroud}" != "agentshroud" ]; then
+        _cron_action="enable"
+        _cron_tag="dev-cron-enable"
+    else
+        _cron_action="disable"
+        _cron_tag="prod-cron-disable"
+    fi
 (
     set +e +o pipefail
     _gw_wait=0
@@ -314,18 +321,17 @@ if command -v openclaw >/dev/null 2>&1 && [ "${AGENTSHROUD_PROJECT:-agentshroud}
     done
     _ids="$(openclaw cron list --json --all 2>/dev/null | python3 -c 'import json,sys; d=json.load(sys.stdin); [print(j["id"]) for j in d.get("jobs",[])]' 2>/dev/null)"
     if [ -z "${_ids}" ]; then
-        echo "[dev-cron-disable] WARN: could not list cron jobs (gateway not ready in time?) -- nothing disabled"
+        echo "[${_cron_tag}] WARN: could not list cron jobs (gateway not ready in time?) -- nothing changed"
     else
-        _n=0
         echo "${_ids}" | while read -r _id; do
             [ -z "${_id}" ] && continue
-            openclaw cron disable "${_id}" >/dev/null 2>&1
+            openclaw cron "${_cron_action}" "${_id}" >/dev/null 2>&1
         done
         _n="$(echo "${_ids}" | grep -c .)"
-        echo "[dev-cron-disable] disabled ${_n} cron job(s) -- AGENTSHROUD_PROJECT=${AGENTSHROUD_PROJECT:-} is not prod. Run jobs manually to test: openclaw cron run <id>"
+        echo "[${_cron_tag}] ${_cron_action}d ${_n} cron job(s) (AGENTSHROUD_PROJECT=${AGENTSHROUD_PROJECT:-unset}, env-split 2026-08-29)"
     fi
 ) &
-echo "[startup] dev cron auto-disable launched (pid=$!)"
+echo "[startup] env-split cron ${_cron_action}-all launched (pid=$!)"
 fi
 
 # ---------------------------------------------------------------------------
