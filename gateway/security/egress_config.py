@@ -127,7 +127,24 @@ PERMANENT_EGRESS_DOMAINS: list[str] = [
     "*.atlassian.net",
     "atlassian.com",
     "*.atlassian.com",
+    # ── Feedbin / Daily-Brief podcast workstream (owner brief 2026-08-29) ──
+    # Service endpoints:
+    "api.feedbin.com",          # subscription/tagging/entry management (Basic auth)
+    "news.google.com",          # gnews: shorthand feeds in feeds.yaml
+    "idallasj.github.io",       # published feed verification (GitHub Pages)
+    "api.podcastindex.org",     # weekly podcast discovery
+    "itunes.apple.com",         # iTunes Search API (podcast discovery, no key)
+    "api.elevenlabs.io",        # pke pipeline TTS (episode audio)
 ]
+
+# Feed-source hosts for full-article fetches of top Daily-Brief clusters —
+# GENERATED from feeds.yaml via `feedbin.py hosts` (see feed_hosts.py header);
+# extends the same canonical registry rather than a second policy surface.
+from gateway.security.feed_hosts import FEED_HOSTS  # noqa: E402
+
+PERMANENT_EGRESS_DOMAINS.extend(
+    h for h in FEED_HOSTS if h not in PERMANENT_EGRESS_DOMAINS
+)
 
 
 def domain_matches(domain: str, patterns: Iterable[str]) -> bool:
