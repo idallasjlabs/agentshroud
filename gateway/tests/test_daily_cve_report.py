@@ -918,6 +918,17 @@ class TestAlreadyCheckedUpstreamToday:
 
 
 class TestBuildImageTargets:
+    @pytest.fixture(autouse=True)
+    def _no_docker(self, monkeypatch):
+        """Pin _running_image to the docker-unavailable fallback path so these
+        tests assert the configured-tag behavior deterministically, whether or
+        not a real docker daemon (with real running containers) is present on
+        the host running the suite. Running-image resolution has its own
+        tests below."""
+        from gateway.security import daily_cve_report as _mod
+
+        monkeypatch.setattr(_mod, "_running_image", lambda _name: None)
+
     def test_always_includes_gateway_image(self, monkeypatch):
         from gateway.security.daily_cve_report import _build_image_targets
 
@@ -984,6 +995,126 @@ class TestBuildImageTargets:
         assert "agentshroud-openclaw:latest" in targets
         assert "agentshroud/hermes:latest" in targets
         assert "  agentshroud-openclaw:latest  " not in targets
+
+
+# ── _running_image / running-image preference ─────────────────────────────────
+
+
+class TestRunningImageResolution:
+    def test_prefers_running_image_over_configured_tag(self, monkeypatch):
+        """Regression guard (2026-08-30): the report scanned :latest tags
+        while deploys ran version tags — openclaw's report described a
+        17-day-old image that wasn't running. The RUNNING image must win."""
+        from gateway.security import daily_cve_report as _mod
+
+        running = {
+            "agentshroud-gateway": "agentshroud-gateway:1.6.0",
+            "agentshroud-openclaw": "agentshroud-openclaw:1.6.0",
+        }
+        monkeypatch.setattr(_mod, "_running_image", lambda name: running.get(name))
+        monkeypatch.delenv("AGENTSHROUD_TRIVY_IMAGES", raising=False)
+        targets = _mod._build_image_targets()
+        assert "agentshroud-gateway:1.6.0" in targets
+        assert "agentshroud-gateway:latest" not in targets
+        assert "agentshroud-openclaw:1.6.0" in targets
+        assert "agentshroud-openclaw:latest" not in targets
+
+    def test_running_image_parses_docker_inspect_stdout(self, monkeypatch):
+        from gateway.security import daily_cve_report as _mod
+
+        class _Result:
+            returncode = 0
+            stdout = "agentshroud-gateway:1.6.0\n"
+
+        monkeypatch.setattr(_mod.subprocess, "run", lambda *a, **kw: _Result())
+        assert _mod._running_image("agentshroud-gateway") == "agentshroud-gateway:1.6.0"
+
+    def test_running_image_returns_none_on_inspect_failure(self, monkeypatch):
+        from gateway.security import daily_cve_report as _mod
+
+        class _Result:
+            returncode = 1
+            stdout = ""
+
+        monkeypatch.setattr(_mod.subprocess, "run", lambda *a, **kw: _Result())
+        assert _mod._running_image("nope") is None
+
+    def test_running_image_returns_none_when_docker_missing(self, monkeypatch):
+        from gateway.security import daily_cve_report as _mod
+
+        def _raise(*a, **kw):
+            raise FileNotFoundError("docker")
+
+        monkeypatch.setattr(_mod.subprocess, "run", _raise)
+        assert _mod._running_image("agentshroud-gateway") is None
+
+
+# ── run_trivy_scan skip_dirs ──────────────────────────────────────────────────
+
+
+class TestTrivySkipDirs:
+    def test_skip_dirs_added_to_command(self, monkeypatch):
+        from gateway.security import trivy_report as _tr
+
+        captured = {}
+
+        class _Result:
+            returncode = 0
+            stdout = '{"Results": []}'
+            stderr = ""
+
+        def _fake_run(cmd, **kw):
+            captured["cmd"] = cmd
+            return _Result()
+
+        monkeypatch.setattr(_tr.subprocess, "run", _fake_run)
+        _tr.run_trivy_scan(target="/", skip_dirs=["/var/log/security"])
+        cmd = captured["cmd"]
+        assert "--skip-dirs" in cmd
+        assert cmd[cmd.index("--skip-dirs") + 1] == "/var/log/security"
+        assert cmd[-1] == "/"
+
+    def test_no_skip_dirs_flag_when_omitted(self, monkeypatch):
+        from gateway.security import trivy_report as _tr
+
+        captured = {}
+
+        class _Result:
+            returncode = 0
+            stdout = '{"Results": []}'
+            stderr = ""
+
+        def _fake_run(cmd, **kw):
+            captured["cmd"] = cmd
+            return _Result()
+
+        monkeypatch.setattr(_tr.subprocess, "run", _fake_run)
+        _tr.run_trivy_scan(target="/")
+        assert "--skip-dirs" not in captured["cmd"]
+
+    @pytest.mark.asyncio
+    async def test_daily_fs_scan_skips_security_log_tree(self, tmp_path, monkeypatch):
+        """The daily fs scan of / must exclude /var/log/security (trivy's own
+        cache + reports) — scanning its own 1.3GB cache blew the 600s trivy
+        timeout under load and surfaced as intermittent empty_output."""
+        import gateway.security.daily_cve_report as _mod
+
+        fs_calls = []
+
+        def _fake_trivy_scan(target="/", scan_type="fs", **kwargs):
+            if scan_type == "fs":
+                fs_calls.append(kwargs.get("skip_dirs"))
+            return _make_report(critical=0, high=0, medium=0, low=0, total=0)
+
+        async def _fake_send(*a, **kw):
+            return True
+
+        monkeypatch.setattr(_mod, "run_trivy_scan", _fake_trivy_scan)
+        monkeypatch.setattr(_mod, "save_report", lambda *a, **kw: str(tmp_path / "r.json"))
+        monkeypatch.setattr(_mod, "_build_image_targets", lambda: [])
+        monkeypatch.setattr(_mod, "_send_telegram", _fake_send)
+        await _mod.run_and_send_cve_report("tok", "chat")
+        assert fs_calls and "/var/log/security" in (fs_calls[0] or [])
 
 
 # ── run_and_send_cve_report — image scan integration ─────────────────────────
