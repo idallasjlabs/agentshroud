@@ -31,17 +31,26 @@ WATCH_TIMEOUT_MIN=180   # prompt's own budget is 90 min; hard stop at 3h
 cd "$REPO"
 mkdir -p reports
 
-EXTRA_FLAGS=()
+EXTRA="--permission-mode acceptEdits"
 if [ "${SUNDAY_UPGRADE_AUTON:-0}" = "1" ]; then
-  EXTRA_FLAGS+=(--allowedTools "Bash,Read,Edit,Write,Glob,Grep")
+  EXTRA="$EXTRA --allowedTools Bash,Read,Edit,Write,Glob,Grep"
 fi
 
 echo "[sunday-upgrade] $(date '+%H:%M:%S') launching remote-control session '$SESSION'"
+# NO pipe on claude's stdout: piping (e.g. `| tee`) makes stdout a non-TTY,
+# claude falls back to --print mode, demands a prompt argument, and exits
+# before send-keys can reach it ("can't find pane", observed 2026-08-30).
+# tmux pipe-pane captures the log without stealing the TTY.
 tmux new-session -d -s "$SESSION" -c "$REPO" \
-  "claude --remote-control --name '$SESSION' --permission-mode acceptEdits ${EXTRA_FLAGS[*]+"${EXTRA_FLAGS[*]}"} 2>&1 | tee '$LOG'"
+  "claude --remote-control --name '$SESSION' $EXTRA"
+tmux pipe-pane -t "$SESSION" -o "cat >> '$LOG'"
 
 # give it time to boot and register with claude.ai
 sleep 20
+if ! tmux has-session -t "$SESSION" 2>/dev/null; then
+  echo "[sunday-upgrade] ERROR: session died during boot — see $LOG" >&2
+  exit 1
+fi
 tmux send-keys -t "$SESSION" -l "$(cat "$PROMPT_FILE")"
 tmux send-keys -t "$SESSION" Enter
 echo "[sunday-upgrade] mission sent — watch/steer from the phone (session: $SESSION)"
