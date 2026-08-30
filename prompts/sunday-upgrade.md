@@ -92,16 +92,20 @@ Proceed **only if** dev is fully healthy and every finding is FIXED or ACCEPTED.
 Every Sunday run is tracked in a Jira ticket (project **SCRUM**, cloudId
 `7a044ff7-e2cf-40e6-b6f0-e3e080898fbb`) via the Atlassian MCP tools:
 
-- **Dev run (06:00)**: at start, create the run ticket — summary
+- **Dev run (03:00)**: at start, create the run ticket — summary
   `Sunday Upgrade YYYY-MM-DD`, description = planned scope from the inventory
   phase. Include the ticket key in the dev-result JSON (`"jira":"SCRUM-nnn"`)
   so the prod run finds it.
+- **Connector**: use the plain `mcp__atlassian__*` tools with the cloudId
+  above passed explicitly — the named connectors (atlassian-agentshroud /
+  atlassian-idallasj) have broken OAuth on the prod account and would falsely
+  trip the "MCP unavailable" path every run.
 - **Both runs**: post a **detailed comment at the end of each phase**
   (inventory, scans, upgrade-per-component, verification, cleanup) — what was
   done, what changed, evidence snippets, and any FAILED/BLOCKED item with its
   reason. Comment as you go, not retroactively — a run that dies mid-way must
   leave a trail of exactly how far it got.
-- **Prod run (08:00)**: comment on the SAME ticket from the dev-result JSON
+- **Prod run (06:00)**: comment on the SAME ticket from the dev-result JSON
   (never a new ticket): the promote/blocked decision, versions applied, and
   verification results.
 - **On completion**: post a **comprehensive summary comment** mirroring the
