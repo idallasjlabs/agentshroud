@@ -24,7 +24,7 @@ session runs on the prod account (`ijefferson.admin`) and CANNOT start,
 stop, or exec into the dev stack (`agentshroud-bot`'s VM). "Dev goes first"
 is therefore enforced by a handoff contract:
 
-- The dev account runs its own copy of this job **earlier** (06:00 ET) and
+- The dev account runs its own copy of this job **earlier** (03:00 ET) and
   stages a machine-readable result at
   `/Users/Shared/agentshroud-sunday/dev-result-YYYY-MM-DD.json`
   (`{"date","status":"PASS|FAIL","versions":{component:version,...},"notes"}`).

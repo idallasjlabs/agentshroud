@@ -14,15 +14,17 @@
     <key>WorkingDirectory</key>
     <string>/Users/ijefferson.admin/Development/agentshroud</string>
 
-    <!-- 08:00: AFTER dev's 06:00 run — prod promotes only what dev passed
-         (owner process 2026-08-30: dev first, resolve all findings, then prod).
+    <!-- 06:00: AFTER dev's 03:00 run (owner 2026-08-30: start upgrades at
+         3-4am; dev first, resolve all findings, then prod) AND after the
+         04:30-05:45 Daily Brief production window — a prod upgrade restarting
+         Hermes inside that window would kill that morning's episode.
          The prompt's dev-result gate blocks prod changes if dev hasn't PASSed. -->
     <key>StartCalendarInterval</key>
     <dict>
         <key>Weekday</key>
         <integer>0</integer>
         <key>Hour</key>
-        <integer>8</integer>
+        <integer>6</integer>
         <key>Minute</key>
         <integer>0</integer>
     </dict>
