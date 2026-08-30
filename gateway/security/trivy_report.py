@@ -30,6 +30,7 @@ def run_trivy_scan(
     severity: str = "CRITICAL,HIGH,MEDIUM,LOW",
     timeout: int = 600,
     trivy_bin: str = "trivy",
+    skip_dirs: list[str] | None = None,
 ) -> dict[str, Any]:
     """Run a Trivy scan and return parsed results.
 
@@ -39,6 +40,11 @@ def run_trivy_scan(
         severity: Comma-separated severity filter.
         timeout: Command timeout in seconds.
         trivy_bin: Path to trivy binary.
+        skip_dirs: Directories to exclude from filesystem scans. The daily
+            fs scan of "/" must skip trivy's own cache/report tree
+            (/var/log/security, incl. the multi-GB .trivy-cache) — scanning
+            it made the scan walk its own output and blow the 600s trivy
+            timeout under load, surfacing as intermittent "empty_output".
 
     Returns:
         Parsed scan results dict.
@@ -53,8 +59,10 @@ def run_trivy_scan(
         "--no-progress",
         "--timeout",
         f"{timeout}s",
-        target,
     ]
+    for d in skip_dirs or []:
+        cmd += ["--skip-dirs", d]
+    cmd.append(target)
 
     logger.info("Running Trivy scan: %s", " ".join(cmd))
 

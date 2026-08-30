@@ -192,8 +192,21 @@ if [ "$RULE_COUNT" -lt 5 ]; then
   if [ -x "$FIREWALL_SCRIPT" ]; then
     log "AUTO-HEAL: Reapplying firewall rules..."
     "$FIREWALL_SCRIPT" >> "$LOG_FILE" 2>&1
-    HEALED=true
-    log "AUTO-HEAL: ✅ Firewall rules reapplied"
+    # Verify the reapply actually restored the rules before claiming a heal.
+    # Setting HEALED=true unconditionally counted a "heal" on every 5-min
+    # run even when the reapply silently did nothing in cron context —
+    # inflating the daily summary to ~265 heals+failures/day (2026-08-30)
+    # while masking that the rules were never actually coming back.
+    RECHECK_COUNT=$(colima ssh -- sh -c "iptables -L DOCKER-USER -n 2>/dev/null | grep -c DROP || echo 0" 2>/dev/null | tail -1)
+    RECHECK_COUNT=$(echo "${RECHECK_COUNT:-0}" | tr -dc '0-9')
+    RECHECK_COUNT=${RECHECK_COUNT:-0}
+    if [ "$RECHECK_COUNT" -ge 5 ]; then
+      HEALED=true
+      log "AUTO-HEAL: ✅ Firewall rules reapplied and verified ($RECHECK_COUNT DROP rules)"
+    else
+      FAILURES+=("iptables reapply did not restore rules ($RECHECK_COUNT/5 after reapply)")
+      log "AUTO-HEAL: ❌ Firewall reapply did NOT restore rules ($RECHECK_COUNT/5)"
+    fi
   else
     FAILURES+=("iptables rules missing and firewall script not found")
   fi

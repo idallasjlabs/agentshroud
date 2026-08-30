@@ -23,6 +23,7 @@ import asyncio
 import json
 import logging
 import os
+import subprocess
 import urllib.request
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -147,17 +148,42 @@ def format_cve_report(report: dict[str, Any]) -> str:
     return "\n".join(lines)
 
 
+def _running_image(container_name: str) -> str | None:
+    """Resolve the image tag a container is ACTUALLY running, via docker CLI.
+
+    The report used to scan hardcoded/configured :latest tags while deploys
+    run version tags — 2026-08-30 the openclaw report described a 17-day-old
+    :latest image that wasn't running, and hermes's fresh 1.6.0 build sat
+    unscanned. Scanning what runs is the only honest target. Returns None
+    (caller falls back to configured tag) when docker/the container is
+    unavailable — e.g. CI, or the socket proxy denying inspect.
+    """
+    try:
+        result = subprocess.run(
+            ["docker", "inspect", "--format", "{{.Config.Image}}", container_name],
+            capture_output=True,
+            text=True,
+            timeout=15,
+        )
+        if result.returncode == 0 and result.stdout.strip():
+            return result.stdout.strip()
+    except (OSError, subprocess.SubprocessError) as exc:
+        logger.debug("_running_image(%s): %s", container_name, exc)
+    return None
+
+
 def _build_image_targets() -> List[str]:
     """Build the list of container image targets for Trivy image scanning.
 
-    Combines the gateway image, every configured bot's real image (derived
-    from BotConfig, not a hardcoded single-bot guess — AGENTSHROUD_TRIVY_IMAGES
-    used to be hardcoded to just Hermes's image, silently omitting OpenClaw
-    from every CVE report), and any additional images from
-    AGENTSHROUD_TRIVY_IMAGES (operator override/extension, e.g. non-bot
-    sidecar images). Deduplicates while preserving order.
+    Prefers each container's RUNNING image (docker inspect) over the
+    configured/hardcoded tag, so the report always describes what is
+    actually deployed; falls back to the gateway :latest tag and every
+    configured bot's image (derived from BotConfig, not a hardcoded
+    single-bot guess) when docker isn't reachable. Additional images come
+    from AGENTSHROUD_TRIVY_IMAGES (operator override/extension, e.g.
+    non-bot sidecar images). Deduplicates while preserving order.
     """
-    gateway_image = "agentshroud-gateway:latest"
+    gateway_image = _running_image("agentshroud-gateway") or "agentshroud-gateway:latest"
 
     bot_images: List[str] = []
     try:
@@ -175,7 +201,8 @@ def _build_image_targets() -> List[str]:
             config = load_config(repo_root / "agentshroud.yaml.example")
 
         for bot in config.bots.values():
-            bot_images.append(bot.image or f"{bot.resolved_container_name}:latest")
+            running = _running_image(bot.resolved_container_name)
+            bot_images.append(running or bot.image or f"{bot.resolved_container_name}:latest")
     except Exception as exc:
         logger.warning("_build_image_targets: could not load per-bot images: %s", exc)
 
@@ -208,7 +235,13 @@ async def run_and_send_cve_report(
     loop = asyncio.get_event_loop()
 
     # Run Trivy filesystem scan in executor (blocking subprocess).
-    report = await loop.run_in_executor(None, lambda: run_trivy_scan(target=scan_target))
+    # Skip trivy's own cache/report tree on fs scans: TRIVY_CACHE_DIR lives
+    # under /var/log/security (1.3GB+) and scanning it blew trivy's own 600s
+    # timeout under load -> intermittent "empty_output" report failures.
+    fs_skip_dirs = ["/var/log/security"]
+    report = await loop.run_in_executor(
+        None, lambda: run_trivy_scan(target=scan_target, skip_dirs=fs_skip_dirs)
+    )
 
     # Persist report to shared volume.
     try:

@@ -49,6 +49,12 @@ dd67497b8adf7a843ccde8b5225213c5dbc75011:.gitallowed:aws-access-token:19
 0834fa0b39e8fd662d72affc2fabe2507bdc0c25:SYSTEM_STATUS.md:generic-api-key:137
 0834fa0b39e8fd662d72affc2fabe2507bdc0c25:continue-20260215-1457.md:generic-api-key:460
 0834fa0b39e8fd662d72affc2fabe2507bdc0c25:docker/docker-compose.yml:generic-api-key:91
+# Same long-rotated Feb-2026 OPENCLAW_GATEWAY_PASSWORD as the 0834fa0b entry
+# above — gitleaks nondeterministically attributes the finding to a different
+# commit of the same file region on some runs (first seen flapping 2026-08-29
+# on PR #417, a change nowhere near this file). Password rotated many times
+# since (scripts/asb regenerated gateway_password per rebuild until b281483b0).
+c13b8164e8201d8b7c19b69b316b72089cfabc53:docker/docker-compose.yml:generic-api-key:91
 0ab680eb3ac17f1c25d7ab340d4ef8b57f8bb30a:gateway/Dockerfile:generic-api-key:145
 2593dc85f9704214818f264ec7d636fbbe574bab:HOW_TO_CONNECT.md:generic-api-key:82
 2593dc85f9704214818f264ec7d636fbbe574bab:continue-20260215-0717.md:generic-api-key:148

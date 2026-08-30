@@ -80,6 +80,10 @@ HERMES_SECRET_KEYS=(
   github_pat
   hermes_healthchecks_url
   gateway_password
+  feedbin_email
+  feedbin_password
+  podcastindex_api_key
+  podcastindex_api_secret
 )
 
 _secret_mount_args() {
@@ -185,6 +189,8 @@ cmd_up() {
     -e AGENTSHROUD_BOT_ID="hermes" \
     -e AGENTSHROUD_VERSION="${VERSION}" \
     -e AGENTSHROUD_ENV="${AGENTSHROUD_ENV}" \
+    -e AGENTSHROUD_PROD_CRON_KEEP="${AGENTSHROUD_PROD_CRON_KEEP:-}" \
+    -e TZ="${HERMES_TZ:-America/New_York}" \
     -e SEARXNG_URL="${SEARXNG_URL:-http://searxng-local:8080}" \
     -e API_SERVER_ENABLED="1" \
     -e API_SERVER_HOST="0.0.0.0" \

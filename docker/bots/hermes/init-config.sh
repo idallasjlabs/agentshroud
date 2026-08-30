@@ -647,28 +647,56 @@ else
     echo "[hermes-init] No synced mcp/servers.json — run scripts/sync-llm-settings.sh (skipping)"
 fi
 
-# ── Dev environment: pause every Hermes cron job ────────────────────────────
-# Owner directive 2026-08-24: prod always runs its full schedule; dev never
-# should (jobs are run manually there for testing) so the two stacks never
-# double up load on the same shared local-model backends. The earlier
-# per-_seed_cron pause (removed above) only covered the ~9 jobs baked into
-# this script's _seed_cron calls — most of Hermes's real job set (newsletter
-# pipelines, competitive-intel, CVE watch, etc: 27 jobs total as of
-# 2026-08-24) was created live via `hermes cron create`/`edit` outside this
-# script entirely and was never touched by that narrower fix. This blanket
-# pass runs last, after every job that exists on this volume (seeded or
-# live-added) is already in the store, and pauses all of them.
+# ── Env-split cron reconciliation: prod pauses, dev resumes ─────────────────
+# Owner directive 2026-08-29 (REVERSES the 2026-08-24 direction): the cron
+# quality work now lives in DEV — jobs must run on their schedules there so
+# local-model output can be iterated against golden baselines — while PROD
+# must carry zero scheduled LLM load (its local backends serve the owner's
+# interactive work and the news-podcast job only). Same blanket-pass shape
+# as before (runs last, covers seeded + live-created jobs alike), gate
+# inverted, plus a symmetric resume pass so a volume that was paused under
+# the old regime self-heals on the next dev boot.
+#
+# Prod keep-list: AGENTSHROUD_PROD_CRON_KEEP (machine-local docker/.env, NOT
+# tracked) — pipe-separated exact job names that stay scheduled in prod
+# (e.g. "Daily News Podcast|Weekly job-log cleanup"). Empty/unset = pause
+# everything.
+_hermes_cron_ids_names() {
+    # Emits "<id>\t<name>" per job. `hermes cron list --all` prints the id
+    # line ("  <12hex> [status]") followed by an indented "Name: <name>"
+    # line; pair them up.
+    hermes cron list --all 2>/dev/null | awk '
+        /^  [a-f0-9]{12} \[/ { id = $1; next }
+        id != "" && /^ +Name: / { name = $0; sub(/^ +Name: +/, "", name); print id "\t" name; id = "" }
+    '
+}
 if [ "${AGENTSHROUD_ENV:-prod}" = "dev" ]; then
-    _all_job_ids="$(hermes cron list --all 2>/dev/null | awk '/^  [a-f0-9]{12} \[/ { print $1 }')"
-    if [ -z "${_all_job_ids}" ]; then
-        echo "[hermes-init] WARN: dev cron pause-all found no jobs to pause"
-    else
-        _paused_count=0
-        for _jid in ${_all_job_ids}; do
-            hermes cron pause "${_jid}" >/dev/null 2>&1 && _paused_count=$(( _paused_count + 1 ))
-        done
-        echo "[hermes-init] Dev environment: paused ${_paused_count} Hermes cron job(s). Run manually to test: hermes cron run <id>"
-    fi
+    _resumed_count=0
+    while IFS="$(printf '\t')" read -r _jid _jname; do
+        [ -n "${_jid}" ] || continue
+        hermes cron resume "${_jid}" >/dev/null 2>&1 && _resumed_count=$(( _resumed_count + 1 ))
+    done <<EOF_JOBS
+$(_hermes_cron_ids_names)
+EOF_JOBS
+    echo "[hermes-init] Dev environment: resumed ${_resumed_count} Hermes cron job(s) (env-split, owner directive 2026-08-29)"
+else
+    _paused_count=0
+    _kept_count=0
+    while IFS="$(printf '\t')" read -r _jid _jname; do
+        [ -n "${_jid}" ] || continue
+        case "|${AGENTSHROUD_PROD_CRON_KEEP:-}|" in
+            *"|${_jname}|"*)
+                hermes cron resume "${_jid}" >/dev/null 2>&1
+                _kept_count=$(( _kept_count + 1 ))
+                ;;
+            *)
+                hermes cron pause "${_jid}" >/dev/null 2>&1 && _paused_count=$(( _paused_count + 1 ))
+                ;;
+        esac
+    done <<EOF_JOBS
+$(_hermes_cron_ids_names)
+EOF_JOBS
+    echo "[hermes-init] Prod environment: paused ${_paused_count} Hermes cron job(s), kept ${_kept_count} (AGENTSHROUD_PROD_CRON_KEEP)"
 fi
 
 echo "[hermes-init] Config init complete"
