@@ -401,3 +401,7 @@ firmware/voice-terminal/main/wifi_credentials.h
 firmware/voice-terminal/ota-release/
 # Local LLM model exports
 local-llms/exports/
+
+# Sunday upgrade run artifacts (reports are records, logs/backups are not)
+reports/upgrade-run-*.log
+backups/

@@ -3,95 +3,62 @@
 # AgentShroud™ is a trademark of Isaiah Dallas Jefferson, Jr. (USPTO Serial No. 99728633)
 # Patent Pending — U.S. Provisional Application No. 64/018,744
 #
-# sunday-upgrade.sh — Weekly (Sunday) upgrade of AgentShroud agents/components.
+# sunday-upgrade.sh — Weekly (Sunday) upgrade run: headless Claude Code session
+# driven by prompts/sunday-upgrade.md (owner-authored, 2026-08-30).
 #
-# Owner directive 2026-08-30: keep all agents/components/utilities on the
-# latest release, prod and dev, and resolve reported security issues.
+# MUST run on the HOST, not in a bot container: the Hermes container has no
+# `claude`, no `gh`, and no ~/Development checkout (verified 2026-08-30).
+# Hermes's role is delivery only — this wrapper drops the finished report
+# into the hermes-config volume, where the "Sunday Upgrade Report" no-agent
+# cron job (Sun 08:30 ET) reads it once and sends it to Telegram.
 #
-# What this does (in order, fail-loud):
-#   1. Tag a rollback anchor (pre-deploy-<UTC>) on main HEAD and push it.
-#   2. Vendor bot upgrades: scripts/update-agentshroud.sh --bot both
-#      --openclaw-latest --hermes-latest — this already carries the
-#      check-vendor-compat.sh pre-gate, full volume/versions.env backup,
-#      post-deploy-check.sh live gate, and automatic rollback.
-#   3. Rebuild the gateway image (pulls latest apt debs on the digest-pinned
-#      base) and redeploy via compose — ONLY with --with-gateway, since a
-#      gateway redeploy briefly interrupts every proxied agent.
-#   4. Fresh trivy rescan of the RUNNING images + summary to Telegram via
-#      the gateway's own report endpoint.
+# The prompt itself owns all safety: rollback baseline before changes,
+# dev-first promotion, pinned-stable-only versions, never loosening
+# gateway/sandbox policy (BLOCKED instead), volume backups before prod,
+# 90-minute budget, never ending with a broken stack.
 #
-# What this deliberately does NOT do:
-#   - Edit Dockerfile tool-version ARGs (cosign/falcoctl/docker CLI/etc.) —
-#     those are code changes that go through a reviewed PR, not cron.
-#   - Touch the dev account's stack — dev runs its own copy of this.
-#
-# Usage: scripts/sunday-upgrade.sh [--with-gateway] [--dry-run]
+# Usage: scripts/sunday-upgrade.sh
+#   Headless permission note: --allowedTools pre-approves the listed tools;
+#   anything else fails closed (a headless run cannot answer prompts).
+#   Repo PreToolUse hooks (block_main_commits etc.) still apply.
 
 set -euo pipefail
 
 REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$REPO_DIR"
 
-WITH_GATEWAY=false
-DRY_RUN=false
-for arg in "$@"; do
-  case "$arg" in
-    --with-gateway) WITH_GATEWAY=true ;;
-    --dry-run) DRY_RUN=true ;;
-    *) echo "unknown arg: $arg" >&2; exit 2 ;;
-  esac
-done
+TODAY="$(date +%F)"
+mkdir -p reports
+RUN_LOG="reports/upgrade-run-${TODAY}.log"
+REPORT_MD="reports/upgrade-${TODAY}.md"
+HERMES_CONTAINER="agentshroud-hermes-v2"
 
-log() { echo "[sunday-upgrade] $(date '+%H:%M:%S') $*"; }
-run() {
-  if $DRY_RUN; then log "DRY-RUN: $*"; else log "+ $*"; "$@"; fi
-}
+echo "[sunday-upgrade] $(date '+%H:%M:%S') starting headless run (log: $RUN_LOG)"
 
-log "Starting weekly upgrade (with_gateway=$WITH_GATEWAY dry_run=$DRY_RUN)"
+set +e
+claude -p "$(cat prompts/sunday-upgrade.md)" \
+  --allowedTools "Bash,Read,Edit,Write,Glob,Grep" \
+  --max-turns 300 \
+  > "$RUN_LOG" 2>&1
+CLAUDE_RC=$?
+set -e
+echo "[sunday-upgrade] $(date '+%H:%M:%S') claude exited rc=$CLAUDE_RC"
 
-# ── 1. Rollback anchor ───────────────────────────────────────────────────────
-ANCHOR="pre-deploy-$(date -u '+%Y%m%dT%H%M%SZ')"
-if git -C "$REPO_DIR" diff --quiet HEAD -- ':!graphify-out' 2>/dev/null; then
-  run git tag "$ANCHOR" main
-  run git push -q origin "$ANCHOR"
-  log "Rollback anchor: $ANCHOR"
+# Hand the report to Hermes for Telegram delivery. Prefer the structured
+# report the run maintains from its first minutes; fall back to the raw log
+# tail so even an aborted run reaches the owner.
+DELIVER_SRC="$REPORT_MD"
+if [ ! -s "$DELIVER_SRC" ]; then
+  DELIVER_SRC="$RUN_LOG"
+fi
+
+if docker ps --format '{{.Names}}' | grep -q "^${HERMES_CONTAINER}$"; then
+  docker exec "$HERMES_CONTAINER" mkdir -p /opt/data/reports
+  docker cp "$DELIVER_SRC" "${HERMES_CONTAINER}:/opt/data/reports/sunday-upgrade-latest.md"
+  docker exec -u root "$HERMES_CONTAINER" chown -R hermes:hermes /opt/data/reports
+  echo "[sunday-upgrade] report staged for Hermes delivery"
 else
-  log "WARN: working tree has non-graphify changes — tagging main HEAD anyway"
-  run git tag "$ANCHOR" main
-  run git push -q origin "$ANCHOR"
+  echo "[sunday-upgrade] WARN: ${HERMES_CONTAINER} not running — report NOT staged for Telegram (see $DELIVER_SRC)"
 fi
 
-# ── 2. Vendor bot upgrades (gated + auto-rollback inside the script) ─────────
-if $DRY_RUN; then
-  log "DRY-RUN: scripts/update-agentshroud.sh --bot both --openclaw-latest --hermes-latest"
-else
-  if ! bash scripts/update-agentshroud.sh --bot both --openclaw-latest --hermes-latest; then
-    log "ERROR: bot upgrade failed (its own rollback has run) — aborting before gateway"
-    exit 1
-  fi
-fi
-
-# ── 3. Gateway rebuild/redeploy (opt-in) ─────────────────────────────────────
-if $WITH_GATEWAY; then
-  # Plain docker build (never docker-compose build: compose's image: field
-  # ignores -p project isolation — see project_vendor_update_decoupling memory).
-  run docker build -t agentshroud-gateway:latest -f gateway/Dockerfile .
-  run docker compose -f docker/docker-compose.yml up -d gateway
-  if ! $DRY_RUN; then
-    bash scripts/post-deploy-check.sh || {
-      log "ERROR: gateway post-deploy check failed — investigate (anchor: $ANCHOR)"
-      exit 1
-    }
-  fi
-else
-  log "Gateway rebuild skipped (pass --with-gateway to include)"
-fi
-
-# ── 4. Fresh rescan of the running images + Telegram summary ─────────────────
-if ! $DRY_RUN; then
-  log "Triggering fresh CVE report (scans running images as of PR for SCRUM-174)"
-  docker exec agentshroud-gateway curl -sf -X POST http://127.0.0.1:8080/soc/v1/cve-report \
-    -o /dev/null || log "WARN: cve-report trigger failed — run POST /soc/v1/cve-report manually"
-fi
-
-log "Weekly upgrade complete."
+exit "$CLAUDE_RC"
