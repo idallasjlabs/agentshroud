@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.agentshroud.sunday-upgrade</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>scripts/sunday-upgrade.sh</string>
+    </array>
+
+    <key>WorkingDirectory</key>
+    <string>/Users/ijefferson.admin/Development/agentshroud</string>
+
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Weekday</key>
+        <integer>0</integer>
+        <key>Hour</key>
+        <integer>6</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+
+    <key>StandardOutPath</key>
+    <string>/Users/ijefferson.admin/Library/Logs/sunday-upgrade.log</string>
+
+    <key>StandardErrorPath</key>
+    <string>/Users/ijefferson.admin/Library/Logs/sunday-upgrade.err</string>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
+        <key>DOCKER_HOST</key>
+        <string>unix:///Users/ijefferson.admin/.colima/default/docker.sock</string>
+    </dict>
+</dict>
+</plist>
