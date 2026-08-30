@@ -17,6 +17,24 @@ AgentShroud is a security tool. Every Sunday, bring **every agent, component, an
 - Keep a running log at `~/Development/<project>/reports/upgrade-YYYY-MM-DD.md` from the very start so a partial run still leaves a record.
 - Time budget: if you are past 90 minutes and not finished, stop, ensure both stacks are healthy (roll back anything half-applied), and report what remains.
 
+## Cross-account reality (marvin)
+
+**Dev and prod are separate macOS accounts with separate Colima VMs** — this
+session runs on the prod account (`ijefferson.admin`) and CANNOT start,
+stop, or exec into the dev stack (`agentshroud-bot`'s VM). "Dev goes first"
+is therefore enforced by a handoff contract:
+
+- The dev account runs its own copy of this job **earlier** (06:00 ET) and
+  stages a machine-readable result at
+  `/Users/Shared/agentshroud-sunday/dev-result-YYYY-MM-DD.json`
+  (`{"date","status":"PASS|FAIL","versions":{component:version,...},"notes"}`).
+- **Before applying anything to prod**, read that file. If it is missing or
+  `status` != `PASS`, apply NOTHING to prod: report every component as
+  BLOCKED-awaiting-dev and stop after the inventory/scan phases (those are
+  read-only and always run).
+- Promote to prod **only the exact versions dev passed** — never a version
+  dev didn't test, even if newer.
+
 ## Procedure
 
 ### 0. Preflight (both environments)
@@ -42,6 +60,7 @@ Collect every open security report before upgrading so you can verify closure af
 - Image scanning with whatever the repo already uses (Trivy, Grype, Docker Scout). If none is configured and `trivy` is available, use `trivy image` and `trivy fs`. Do not install new scanners on the host without a documented mechanism.
 - GitHub Dependabot / code-scanning alerts via `gh` if the repo is on GitHub and `gh auth status` succeeds.
 - Any findings files the project already maintains (`SECURITY.md`, `security/`, prior `reports/`).
+- **Wazuh / SOC alerts**: review open alerts from the Wazuh sidecar and the gateway's SOC surface (`/soc/v1/...` endpoints, `/var/log/security/` reports) for anything raised since the last Sunday run — these count as findings to close or explicitly ACCEPT, same as scanner output.
 
 Record every finding with ID (CVE/GHSA), severity, affected component, and fixed-in version.
 

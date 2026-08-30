@@ -14,12 +14,15 @@
     <key>WorkingDirectory</key>
     <string>/Users/ijefferson.admin/Development/agentshroud</string>
 
+    <!-- 08:00: AFTER dev's 06:00 run — prod promotes only what dev passed
+         (owner process 2026-08-30: dev first, resolve all findings, then prod).
+         The prompt's dev-result gate blocks prod changes if dev hasn't PASSed. -->
     <key>StartCalendarInterval</key>
     <dict>
         <key>Weekday</key>
         <integer>0</integer>
         <key>Hour</key>
-        <integer>6</integer>
+        <integer>8</integer>
         <key>Minute</key>
         <integer>0</integer>
     </dict>
