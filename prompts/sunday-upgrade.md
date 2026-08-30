@@ -38,7 +38,17 @@ is therefore enforced by a handoff contract:
 ## Procedure
 
 ### 0. Preflight (both environments)
-1. `git status` must be clean on the current branch; if not, stop and report — do not stash or discard someone's work.
+1. `git status` hygiene — with two sanctioned exceptions (added 2026-08-30
+   after the first run correctly aborted on them; owner directed the gate be
+   fixed rather than the tree):
+   - `graphify-out/**` modifications NEVER count as dirty: repo hooks
+     regenerate them on every branch switch (standing owner decision — never
+     commit them from this job).
+   - Other pre-existing uncommitted modifications: list them in the report,
+     leave them strictly untouched, and PROCEED. All of your own commits must
+     be pathspec-scoped (`git commit -- <paths>`, never `git add -A`, never a
+     bare commit — repo hooks re-stage files behind you). Stop only if a file
+     YOU need to change already has uncommitted modifications.
 2. Record current state: `docker compose ... ps`, all image tags/digests in use, `git describe --tags` / lockfile versions for every component. This is your rollback baseline — save it to the report.
 3. Confirm Colima and Docker are healthy and there is enough free disk for pulls (`df -h`, `docker system df`).
 4. Confirm the rollback path actually works before touching anything: identify the exact commands to restore the baseline (previous tags, previous commit) and write them into the report.
