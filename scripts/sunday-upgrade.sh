@@ -1,64 +1,69 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Copyright © 2026 Isaiah Dallas Jefferson, Jr. AgentShroud™. All rights reserved.
 # AgentShroud™ is a trademark of Isaiah Dallas Jefferson, Jr. (USPTO Serial No. 99728633)
 # Patent Pending — U.S. Provisional Application No. 64/018,744
 #
-# sunday-upgrade.sh — Weekly (Sunday) upgrade run: headless Claude Code session
-# driven by prompts/sunday-upgrade.md (owner-authored, 2026-08-30).
+# sunday-upgrade.sh — Weekly (Sunday) upgrade run as a REMOTE CONTROL session
+# (owner sketch 2026-08-30): the run is visible and steerable from the phone
+# via claude.ai, instead of a blind headless `claude -p`.
 #
-# MUST run on the HOST, not in a bot container: the Hermes container has no
-# `claude`, no `gh`, and no ~/Development checkout (verified 2026-08-30).
-# Hermes's role is delivery only — this wrapper drops the finished report
-# into the hermes-config volume, where the "Sunday Upgrade Report" no-agent
-# cron job (Sun 08:30 ET) reads it once and sends it to Telegram.
+# The session is driven by prompts/sunday-upgrade.md (owner-authored).
+# Permission mode is acceptEdits — file edits auto-approve; Bash calls queue
+# permission requests to the connected phone/desktop. Pre-approve Bash via
+# SUNDAY_UPGRADE_AUTON=1 if a given week should run fully unattended.
 #
-# The prompt itself owns all safety: rollback baseline before changes,
-# dev-first promotion, pinned-stable-only versions, never loosening
-# gateway/sandbox policy (BLOCKED instead), volume backups before prod,
-# 90-minute budget, never ending with a broken stack.
-#
-# Usage: scripts/sunday-upgrade.sh
-#   Headless permission note: --allowedTools pre-approves the listed tools;
-#   anything else fails closed (a headless run cannot answer prompts).
-#   Repo PreToolUse hooks (block_main_commits etc.) still apply.
+# MUST run on the HOST (Hermes container has no claude/gh/repo — verified
+# 2026-08-30). After the tmux session ends, the watcher stages the report
+# into the hermes-config volume for the "Sunday Upgrade Report" no-agent
+# cron (Sun 08:30 ET) to deliver via Telegram.
 
 set -euo pipefail
 
-REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-cd "$REPO_DIR"
-
+REPO=~/Development/agentshroud
+SESSION="agentshroud-upgrade-$(date +%F)"
+PROMPT_FILE="$REPO/prompts/sunday-upgrade.md"
 TODAY="$(date +%F)"
-mkdir -p reports
-RUN_LOG="reports/upgrade-run-${TODAY}.log"
-REPORT_MD="reports/upgrade-${TODAY}.md"
+LOG="$REPO/reports/upgrade-run-${TODAY}.log"
+REPORT_MD="$REPO/reports/upgrade-${TODAY}.md"
 HERMES_CONTAINER="agentshroud-hermes-v2"
+WATCH_TIMEOUT_MIN=180   # prompt's own budget is 90 min; hard stop at 3h
 
-echo "[sunday-upgrade] $(date '+%H:%M:%S') starting headless run (log: $RUN_LOG)"
+cd "$REPO"
+mkdir -p reports
 
-set +e
-claude -p "$(cat prompts/sunday-upgrade.md)" \
-  --allowedTools "Bash,Read,Edit,Write,Glob,Grep" \
-  --max-turns 300 \
-  > "$RUN_LOG" 2>&1
-CLAUDE_RC=$?
-set -e
-echo "[sunday-upgrade] $(date '+%H:%M:%S') claude exited rc=$CLAUDE_RC"
-
-# Hand the report to Hermes for Telegram delivery. Prefer the structured
-# report the run maintains from its first minutes; fall back to the raw log
-# tail so even an aborted run reaches the owner.
-DELIVER_SRC="$REPORT_MD"
-if [ ! -s "$DELIVER_SRC" ]; then
-  DELIVER_SRC="$RUN_LOG"
+EXTRA_FLAGS=()
+if [ "${SUNDAY_UPGRADE_AUTON:-0}" = "1" ]; then
+  EXTRA_FLAGS+=(--allowedTools "Bash,Read,Edit,Write,Glob,Grep")
 fi
 
-if docker ps --format '{{.Names}}' | grep -q "^${HERMES_CONTAINER}$"; then
+echo "[sunday-upgrade] $(date '+%H:%M:%S') launching remote-control session '$SESSION'"
+tmux new-session -d -s "$SESSION" -c "$REPO" \
+  "claude --remote-control --name '$SESSION' --permission-mode acceptEdits ${EXTRA_FLAGS[*]+"${EXTRA_FLAGS[*]}"} 2>&1 | tee '$LOG'"
+
+# give it time to boot and register with claude.ai
+sleep 20
+tmux send-keys -t "$SESSION" -l "$(cat "$PROMPT_FILE")"
+tmux send-keys -t "$SESSION" Enter
+echo "[sunday-upgrade] mission sent — watch/steer from the phone (session: $SESSION)"
+
+# Wait for the session to finish, then stage the report for Hermes delivery.
+elapsed=0
+while tmux has-session -t "$SESSION" 2>/dev/null; do
+  sleep 60
+  elapsed=$((elapsed + 1))
+  if [ "$elapsed" -ge "$WATCH_TIMEOUT_MIN" ]; then
+    echo "[sunday-upgrade] WARN: session still open after ${WATCH_TIMEOUT_MIN}m — staging whatever report exists and leaving the session running"
+    break
+  fi
+done
+
+DELIVER_SRC="$REPORT_MD"
+[ -s "$DELIVER_SRC" ] || DELIVER_SRC="$LOG"
+if [ -s "$DELIVER_SRC" ] && docker ps --format '{{.Names}}' | grep -q "^${HERMES_CONTAINER}$"; then
   docker exec "$HERMES_CONTAINER" mkdir -p /opt/data/reports
   docker cp "$DELIVER_SRC" "${HERMES_CONTAINER}:/opt/data/reports/sunday-upgrade-latest.md"
   docker exec -u root "$HERMES_CONTAINER" chown -R hermes:hermes /opt/data/reports
-  echo "[sunday-upgrade] report staged for Hermes delivery"
+  echo "[sunday-upgrade] report staged for Hermes Telegram delivery"
 else
-  echo "[sunday-upgrade] WARN: ${HERMES_CONTAINER} not running — report NOT staged for Telegram (see $DELIVER_SRC)"
+  echo "[sunday-upgrade] WARN: no report staged (missing report/log or ${HERMES_CONTAINER} not running)"
 fi
-
-exit "$CLAUDE_RC"
