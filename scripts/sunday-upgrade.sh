@@ -52,7 +52,23 @@ if ! tmux has-session -t "$SESSION" 2>/dev/null; then
   exit 1
 fi
 tmux send-keys -t "$SESSION" -l "$(cat "$PROMPT_FILE")"
-tmux send-keys -t "$SESSION" Enter
+# Claude Code's composer treats a large multi-line paste specially and can
+# swallow an immediately-following Enter (observed 2026-08-30: mission sat
+# unsubmitted for 40 min). Let the paste settle, then submit — and verify the
+# composer actually cleared, retrying Enter a few times before giving up.
+sleep 3
+submitted=false
+for _try in 1 2 3; do
+  tmux send-keys -t "$SESSION" Enter
+  sleep 5
+  if ! tmux capture-pane -t "$SESSION" -p | grep -q "Never end the run"; then
+    submitted=true
+    break
+  fi
+done
+if ! $submitted; then
+  echo "[sunday-upgrade] ERROR: mission still sitting in the composer after 3 submit attempts — attach with 'tmux attach -t $SESSION' or submit from the phone" >&2
+fi
 echo "[sunday-upgrade] mission sent — watch/steer from the phone (session: $SESSION)"
 
 # Wait for the session to finish, then stage the report for Hermes delivery.
