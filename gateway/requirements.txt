@@ -17,7 +17,7 @@ aiosqlite>=0.20.0,<1.0.0
 # Transitive-dependency security floors (pip-audit gate — no accepted vulns)
 # cryptography: GHSA-537c-gmf6-5ccf (fixed 48.0.1) plus CVE-2026-69248 /
 # CVE-2026-69249 (fixed 49.0.0) and CVE-2026-69247 (fixed only in 50.0.0)
-cryptography>=50.0.0
+cryptography>=50.0.1
 # setuptools: PYSEC-2026-3447 — fixed in 83.0.0
 setuptools>=83.0.0
 
