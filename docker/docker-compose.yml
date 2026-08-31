@@ -264,7 +264,10 @@ services:
   # No image pull permission is granted — sandbox images are pre-pulled/built
   # on the host so neither bot's docker backend ever needs to request one.
   docker-socket-proxy:
-    image: tecnativa/docker-socket-proxy:latest
+    # Digest-pinned (was floating :latest — flagged by the 2026-08-30 Sunday
+    # upgrade run; content-identical to the v0.5.0 that was already running).
+    # Validated on dev per the Sunday handoff contract (dev-result PASS 9/9).
+    image: tecnativa/docker-socket-proxy@sha256:1f5038b54f06c3e18422902cf00ba21803d1c97805aae032e5e6673d532d3459
     container_name: agentshroud-docker-socket-proxy
     hostname: docker-socket-proxy
     restart: unless-stopped
