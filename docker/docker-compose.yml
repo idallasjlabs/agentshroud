@@ -121,12 +121,13 @@ services:
       # qwen3-14b) and survived an adversarial bake-off against oMLX
       # 2026-08-25/26. NOT used for Hermes's content-generation cron jobs —
       # those are pinned per-job in docker/bots/hermes/init-config.sh to
-      # gemma-4-12b-it-4bit/oMLX instead, after live-testing showed Nemotron
-      # burns ~83% of its output on invisible reasoning tokens on that
-      # workload (99s wall time on a simplified test prompt, vs 14.8s clean
-      # for gemma-4-12b) — consistent with the 2026-08-23 bake-off finding
-      # that led to those jobs being pinned away from Nemotron in the first
-      # place, not a coincidence.
+      # gemma-4-26b-a4b-it (Turbo Fieldflare, :8238) — see init-config.sh's
+      # own eval notes: gemma-4-12b-it-4bit was REJECTED for hallucinating an
+      # unstated "ACTIVE" status on 7/12 rows, and Nemotron burns ~83% of its
+      # output on invisible reasoning tokens on that workload (99s wall vs
+      # 14.8s clean). init-config.sh is the authority on the per-job pin;
+      # this comment previously named the rejected 12b model (stale — fixed
+      # 2026-08-31).
       - AGENTSHROUD_LOCAL_MODEL_REF=${AGENTSHROUD_LOCAL_MODEL_REF:-openai-local/nemotron-3.5-lightning-rapid}
       - AGENTSHROUD_LOCAL_MODEL=${AGENTSHROUD_LOCAL_MODEL:-nemotron-3.5-lightning-rapid}
       - AGENTSHROUD_LOCAL_SECONDARY_MODEL_REF=${AGENTSHROUD_LOCAL_SECONDARY_MODEL_REF:-}
