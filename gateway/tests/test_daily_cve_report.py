@@ -1121,6 +1121,17 @@ class TestTrivySkipDirs:
 
 
 class TestRunAndSendCveReportImageScans:
+    @pytest.fixture(autouse=True)
+    def _no_docker(self, monkeypatch):
+        """Pin _running_image to the docker-unavailable fallback (same as
+        TestBuildImageTargets) — without this, these tests pass in CI but
+        fail on any host with real containers running, because
+        _build_image_targets resolves the live :1.6.0 tags instead of the
+        configured :latest ones asserted below (found 2026-09-01)."""
+        from gateway.security import daily_cve_report as _mod
+
+        monkeypatch.setattr(_mod, "_running_image", lambda _name: None)
+
     @pytest.mark.asyncio
     async def test_image_scans_run_for_each_target(self, tmp_path, monkeypatch):
         """run_and_send_cve_report calls run_trivy_scan with scan_type='image' for each target."""
