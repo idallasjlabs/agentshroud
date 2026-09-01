@@ -239,8 +239,14 @@ async def run_and_send_cve_report(
     # under /var/log/security (1.3GB+) and scanning it blew trivy's own 600s
     # timeout under load -> intermittent "empty_output" report failures.
     fs_skip_dirs = ["/var/log/security"]
+    # 1800s: even with the cache tree skipped, the full "/" walk still hit
+    # exactly the 600s trivy-internal timeout on the shared host
+    # (2026-09-01: 05:59:59->06:09:59 with --skip-dirs active). The fs scan
+    # is a daily background job with no interactive caller — a generous
+    # budget beats a daily empty_output failure report.
     report = await loop.run_in_executor(
-        None, lambda: run_trivy_scan(target=scan_target, skip_dirs=fs_skip_dirs)
+        None,
+        lambda: run_trivy_scan(target=scan_target, skip_dirs=fs_skip_dirs, timeout=1800),
     )
 
     # Persist report to shared volume.
