@@ -91,6 +91,14 @@ RUN /usr/local/bin/uv pip install --python /opt/hermes/.venv/bin/python3 \
         pygments==2.20.0 \
         PyNaCl==1.6.2
 
+# 2026-09-02: CVE-2026-59873 (node-tar DoS via crafted gzip bomb, fixed in tar 7.5.19)
+# in the upstream image's global npm CLI (vendored tar 7.5.16 under npm's own
+# node_modules, not an app dependency). npm 12.0.2 is the first npm release that
+# requires tar>=7.5.19 itself, so bumping npm is the fix rather than patching tar
+# directly underneath it (npm manages that tree). Global npm self-update only;
+# no app code touches it.
+RUN npm install -g npm@12.0.2
+
 # Crash-loop fix (2026-07-17): the Telegram adapter's getUpdates health instrumentation
 # does `request.do_request = _do_request` to wrap polling requests, but the vendored
 # python-telegram-bot 22.6 makes HTTPXRequest __slots__-based (do_request is a class
