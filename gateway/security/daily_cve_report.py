@@ -183,7 +183,24 @@ def _build_image_targets() -> List[str]:
     from AGENTSHROUD_TRIVY_IMAGES (operator override/extension, e.g.
     non-bot sidecar images). Deduplicates while preserving order.
     """
-    gateway_image = _running_image("agentshroud-gateway") or "agentshroud-gateway:latest"
+    # Container name is env-overridable: deployments rename it (dev runs
+    # agentshroud-marvin-gateway via the per-host compose override). Hardcoding
+    # it meant _running_image always missed there, the fallback scanned
+    # agentshroud-gateway:latest — a tag that does not exist on that host — and
+    # the daily report published CVE counts for a phantom image while the
+    # running gateway went unscanned (2026-09-02). A wrong-image scan is worse
+    # than no scan: it manufactures assurance.
+    gateway_container = os.environ.get("AGENTSHROUD_GATEWAY_CONTAINER", "agentshroud-gateway")
+    gateway_running = _running_image(gateway_container)
+    if gateway_running is None:
+        logger.warning(
+            "CVE scan: gateway container %r not inspectable — falling back to the "
+            "%s:latest tag, which may not exist. Set AGENTSHROUD_GATEWAY_CONTAINER "
+            "to this deployment's actual container name.",
+            gateway_container,
+            "agentshroud-gateway",
+        )
+    gateway_image = gateway_running or "agentshroud-gateway:latest"
 
     bot_images: List[str] = []
     try:
