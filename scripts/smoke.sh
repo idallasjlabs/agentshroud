@@ -55,6 +55,9 @@ run_test "test_setup_secrets.sh" bash "$SMOKE_DIR/test_setup_secrets.sh"
 # OpenClaw + Hermes startup photo + collaborator greeter static assertions
 run_test "test_openclaw_photo.sh" bash "$SMOKE_DIR/test_openclaw_photo.sh"
 
+# OpenClaw main-model provider must match what apply-patches.js registers
+run_test "test_openclaw_model_provider_consistency.sh" bash "$SMOKE_DIR/test_openclaw_model_provider_consistency.sh"
+
 # Hermes cron HTML email static assertions
 run_test "test_hermes_cron_html_email.sh" bash "$SMOKE_DIR/test_hermes_cron_html_email.sh"
 

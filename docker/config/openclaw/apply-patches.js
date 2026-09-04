@@ -42,11 +42,25 @@ if (fs.existsSync(configPath)) {
 
 let changed = false;
 const MODEL_MODE = String(process.env.AGENTSHROUD_MODEL_MODE || 'local').toLowerCase();
-const LOCAL_MODEL_REF = process.env.AGENTSHROUD_LOCAL_MODEL_REF || 'ollama/qwen3:14b';
+// The local provider key is derived from MODEL_MODE, never trusted from
+// AGENTSHROUD_LOCAL_MODEL_REF's own prefix — that ref can carry a stale/
+// wrong provider prefix (e.g. left over from a prior mode) while the actual
+// provider registered under config.models.providers below is always mode-
+// derived. Building LOCAL_MODEL_REF from the same LOCAL_PROVIDER_KEY keeps
+// the primary model and the registered provider from ever diverging, so
+// this stays correct across future local-model swaps without requiring the
+// ref's prefix to be kept in sync by hand. Incident: 2026-09-04 — OpenClaw's
+// primary model pointed at "openai-local/<model>" while only "ollama" was
+// registered, so every job failed with FailoverError: Unknown model.
+const LOCAL_PROVIDER_KEY = MODEL_MODE === 'local-multi' ? 'openai-local' : 'ollama';
+const LOCAL_MODEL_NAME =
+  process.env.AGENTSHROUD_LOCAL_MODEL ||
+  (process.env.AGENTSHROUD_LOCAL_MODEL_REF || '').split('/').slice(-1)[0] ||
+  'qwen3:14b';
+const LOCAL_MODEL_REF = `${LOCAL_PROVIDER_KEY}/${LOCAL_MODEL_NAME}`;
 const CLOUD_MODEL_REF = process.env.AGENTSHROUD_CLOUD_MODEL_REF || 'anthropic/claude-opus-4-6';
 const inferredMainModel = MODEL_MODE === 'cloud' ? CLOUD_MODEL_REF : LOCAL_MODEL_REF;
 const MAIN_MODEL = process.env.OPENCLAW_MAIN_MODEL || inferredMainModel;
-const LOCAL_MODEL_NAME = process.env.AGENTSHROUD_LOCAL_MODEL || LOCAL_MODEL_REF.split('/').slice(-1)[0] || 'qwen3:14b';
 const OLLAMA_BASE_URL_RAW = process.env.OLLAMA_BASE_URL || 'http://gateway:8080/v1';
 const OLLAMA_PROVIDER_API = process.env.OPENCLAW_OLLAMA_API || 'ollama';
 const OLLAMA_BASE_URL = /\/v1\/?$/i.test(OLLAMA_BASE_URL_RAW)
@@ -196,8 +210,10 @@ if (JSON.stringify(config.tools.elevated.allowFrom) !== JSON.stringify(desiredAl
 config.models = config.models || {};
 config.models.providers = config.models.providers || {};
 // In local-multi mode the provider key is "openai-local" (not "ollama") so OpenClaw
-// uses OpenAI stream parsing instead of Ollama-native parsing.
-const PROVIDER_KEY = MODEL_MODE === 'local-multi' ? 'openai-local' : 'ollama';
+// uses OpenAI stream parsing instead of Ollama-native parsing. Reuses
+// LOCAL_PROVIDER_KEY (computed above) rather than re-deriving it, so this
+// registration can never drift from the primary model reference.
+const PROVIDER_KEY = LOCAL_PROVIDER_KEY;
 const currentProvider = config.models.providers[PROVIDER_KEY] || {};
 // Context windows per model role (must match what the serving backend actually
 // loads — a mismatch here causes OpenClaw's own precheck to falsely reject
