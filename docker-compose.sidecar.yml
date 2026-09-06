@@ -36,7 +36,10 @@ services:
     restart: unless-stopped
 
   openclaw:
-    image: openclaw:latest
+    # Pinned, not floating — reads the same OPENCLAW_VERSION pin as the live
+    # docker/versions.env stack (falls back to that pin's current value if
+    # unset). Do not revert to `openclaw:latest`.
+    image: openclaw:${OPENCLAW_VERSION:-2026.7.1-2}
     container_name: openclaw
     ports:
       - "3000:3000"  # Exposed normally in sidecar mode

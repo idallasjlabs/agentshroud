@@ -58,7 +58,10 @@ services:
     restart: unless-stopped
 
   openclaw:
-    image: openclaw:latest
+    # Pinned, not floating — reads the same OPENCLAW_VERSION pin as the live
+    # docker/versions.env stack (falls back to that pin's current value if
+    # unset). Do not revert to `openclaw:latest`.
+    image: openclaw:${OPENCLAW_VERSION:-2026.7.1-2}
     container_name: openclaw
     # NO port mapping — only accessible via internal network
     networks:
@@ -93,7 +96,10 @@ services:
     restart: unless-stopped
 
   wazuh:
-    image: wazuh/wazuh-agent:latest
+    # Pinned to latest stable as of 2026-09-06 (not :latest — see
+    # https://hub.docker.com/r/wazuh/wazuh-agent/tags for newer stable tags;
+    # avoid 5.0.0-beta* pre-releases).
+    image: wazuh/wazuh-agent:4.14.7
     volumes:
       - openclaw-workspace:/host/workspace:ro
       - ./docker/wazuh/ossec.conf:/var/ossec/etc/ossec.conf:ro
