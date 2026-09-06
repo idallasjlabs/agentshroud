@@ -5,8 +5,8 @@
 
 # M8: Base image pinned to SHA256 digest for supply chain integrity
 # Update with: docker pull node:22-bookworm-slim && docker inspect --format='{{index .RepoDigests 0}}' node:22-bookworm-slim
-# SCRUM-101: digest refreshed 2026-07-14 to latest patched node:22-bookworm-slim.
-FROM node:22-bookworm-slim@sha256:6c74791e557ce11fc957704f6d4fe134a7bc8d6f5ca4403205b2966bd488f6b3
+# digest refreshed 2026-09-06 (Sunday upgrade) to latest patched node:22-bookworm-slim.
+FROM node:22-bookworm-slim@sha256:83f487e0a63425e5b4d146fb5e5be574bcbe1b7b843d3ebafdd95eaf7767a7e5
 ENV DEBIAN_FRONTEND=noninteractive
 
 # Install system dependencies
