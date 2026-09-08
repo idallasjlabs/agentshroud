@@ -24,7 +24,7 @@
 #     version whose module path changes to `/v2`; slsa-verifier v2.7.1 imports the v1
 #     path -> cannot override without patching upstream source (unreleased).
 # Reproducible: pinned Go base digest + pinned module version + go.sum re-verified.
-FROM golang:1.26-trixie@sha256:978084e7adea0904b6d76cbc9afcb9baeed6ee170eecdc8866566aaa9f22ad0c AS slsa-builder
+FROM golang:1.26-trixie@sha256:771f3162219f7a66bb6be3fea1ba31f418932946a99ad9eac26ffd555dfcf393 AS slsa-builder
 ARG SLSA_VERSION=2.7.1
 ENV CGO_ENABLED=0 GOFLAGS=-trimpath GOTOOLCHAIN=local
 RUN set -eux; \
@@ -32,10 +32,11 @@ RUN set -eux; \
         https://github.com/slsa-framework/slsa-verifier /src; \
     cd /src; \
     go mod edit \
-        -require=google.golang.org/grpc@v1.79.3 \
+        -require=google.golang.org/grpc@v1.83.1 \
         -require=github.com/docker/cli@v29.2.0+incompatible \
         -require=golang.org/x/crypto@v0.55.0 \
         -require=golang.org/x/net@v0.56.0 \
+        -require=golang.org/x/mod@v0.40.0 \
         -require=github.com/go-jose/go-jose/v4@v4.1.4 \
         -require=go.opentelemetry.io/otel@v1.41.0 \
         -require=github.com/sigstore/rekor@v1.5.2; \
@@ -54,7 +55,7 @@ RUN set -eux; \
 # no fixed release) and moby/go-archive (its 0.3.0 fix removes
 # archive.Compression which the pinned docker/docker shim still calls ->
 # compile break; requires upstream falcoctl dep-tree bump, unreleased).
-FROM golang:1.26-trixie@sha256:978084e7adea0904b6d76cbc9afcb9baeed6ee170eecdc8866566aaa9f22ad0c AS falcoctl-builder
+FROM golang:1.26-trixie@sha256:771f3162219f7a66bb6be3fea1ba31f418932946a99ad9eac26ffd555dfcf393 AS falcoctl-builder
 ARG FALCOCTL_VERSION=0.13.0
 ENV CGO_ENABLED=0 GOFLAGS=-trimpath GOTOOLCHAIN=local
 RUN set -eux; \
@@ -66,7 +67,7 @@ RUN set -eux; \
         -require=golang.org/x/net@v0.56.0 \
         -require=golang.org/x/text@v0.39.0 \
         -require=golang.org/x/mod@v0.40.0 \
-        -require=google.golang.org/grpc@v1.82.1 \
+        -require=google.golang.org/grpc@v1.83.1 \
         -require=oras.land/oras-go/v2@v2.6.2 \
         -require=github.com/sigstore/fulcio@v1.8.6 \
         -require=github.com/sigstore/rekor@v1.5.2; \
@@ -74,6 +75,60 @@ RUN set -eux; \
     go build -ldflags "-X github.com/falcosecurity/falcoctl/cmd/version.semVersion=${FALCOCTL_VERSION}" -o /out-falcoctl .; \
     chmod 0755 /out-falcoctl; \
     /out-falcoctl version || true
+
+# === cosign builder (owner directive 2026-09-05: all fixable CVEs, no exceptions) ===
+# The v3.1.3 release binary (downloaded further below) IS the latest cosign
+# release, but Trivy still flags it for stale transitive deps: CVE-2026-56854
+# (golang.org/x/crypto, CRITICAL) plus x/mod, x/text, and grpc HIGHs — v3.1.3
+# itself hasn't been re-released against newer deps. Same play as
+# falcoctl-builder above: rebuild from the same source tag with the deps
+# forced current, then overlay the result onto the release-binary install
+# below instead of using the download as-is.
+FROM golang:1.26-trixie@sha256:771f3162219f7a66bb6be3fea1ba31f418932946a99ad9eac26ffd555dfcf393 AS cosign-builder
+ARG COSIGN_VERSION=3.1.3
+ENV CGO_ENABLED=0 GOFLAGS=-trimpath GOTOOLCHAIN=local
+RUN set -eux; \
+    git clone --depth 1 --branch "v${COSIGN_VERSION}" \
+        https://github.com/sigstore/cosign /src; \
+    cd /src; \
+    go mod edit \
+        -require=golang.org/x/crypto@v0.55.0 \
+        -require=golang.org/x/mod@v0.40.0 \
+        -require=golang.org/x/text@v0.39.0 \
+        -require=google.golang.org/grpc@v1.83.1; \
+    go mod tidy; \
+    go build -ldflags "-X sigs.k8s.io/release-utils/version.gitVersion=v${COSIGN_VERSION}" \
+        -o /out-cosign ./cmd/cosign; \
+    chmod 0755 /out-cosign; \
+    /out-cosign version || true
+
+# === docker-cli builder (owner directive 2026-09-05: all fixable CVEs, no exceptions) ===
+# The static release tarball (downloaded further below) IS the latest docker-
+# cli release, but it's built with an older Go patch release than what's
+# pinned here — 8 HIGH Go-stdlib CVEs, no dependency involved at all. Same
+# play as falcoctl/cosign above: rebuild the same tag on the current Go base
+# so the stdlib itself is current, then overlay the result. CGO_ENABLED=0
+# (vs. upstream's CGO_ENABLED=1 + external static link) trades PIE hardening
+# for build simplicity, consistent with every other builder stage in this
+# file — same static, self-contained binary either way.
+FROM golang:1.26-trixie@sha256:771f3162219f7a66bb6be3fea1ba31f418932946a99ad9eac26ffd555dfcf393 AS docker-cli-builder
+ARG DOCKER_CLI_VERSION=29.7.2
+# docker/cli ships vendor.mod + a committed vendor/ dir instead of go.mod —
+# pre-modules GOPATH vendoring, not the standard module layout every other
+# builder stage in this file uses. Must clone into $GOPATH/src/... and build
+# with GO111MODULE=auto (falls back to GOPATH mode with no go.mod present)
+# for the vendor/ directory to be picked up automatically.
+ENV CGO_ENABLED=0 GOFLAGS=-trimpath GOTOOLCHAIN=local GO111MODULE=auto
+RUN set -eux; \
+    mkdir -p /go/src/github.com/docker; \
+    git clone --depth 1 --branch "v${DOCKER_CLI_VERSION}" \
+        https://github.com/docker/cli /go/src/github.com/docker/cli; \
+    cd /go/src/github.com/docker/cli; \
+    go build -tags grpcnotrace \
+        -ldflags "-X github.com/docker/cli/cli/version.Version=${DOCKER_CLI_VERSION}" \
+        -o /out-docker ./cmd/docker; \
+    chmod 0755 /out-docker; \
+    /out-docker --version || true
 
 # === Builder Stage ===
 # M8: Base image pinned to SHA256 digest for supply chain integrity
@@ -110,10 +165,12 @@ ENV PIP_DISABLE_PIP_VERSION_CHECK=1
 ENV DEBIAN_FRONTEND=noninteractive
 
 # Install system dependencies: OpenSCAP (compliance), SSH client, ClamAV (malware scanning),
-# 1Password CLI, Wazuh HIDS agent, libelf1 (Falco dep) — consolidated single layer (~100MB saved).
-# SCRUM-101: 4.9.2 → 4.14.5 (latest 4.x; ships underscore >= 1.13, retiring the
-# CVE-2021-23358 .trivyignore suppression, and clears accumulated agent-lib CVEs).
-ARG WAZUH_VERSION=4.14.7
+# 1Password CLI, libelf1 (Falco dep) — consolidated single layer (~100MB saved).
+# Wazuh HIDS agent moved to its own sidecar container (docker/wazuh-agent/) 2026-09-06:
+# it needs a root moment to self-drop privileges (its `-u`/`-g` flags assume that), which
+# this container's non-root-from-boot + cap_drop:ALL model can never provide — confirmed
+# via cap_add, primary-gid, and setcap(file-capability) attempts, all blocked at the
+# Colima/Docker capability-model level. See docker-compose.yml's wazuh-agent service.
 # Install base packages and clean between groups to limit peak disk usage.
 # /apt-dl is on the writable layer (real disk), not tmpfs like /tmp.
 # This avoids "not enough free space in /tmp" on constrained hosts (Raspberry Pi).
@@ -140,16 +197,9 @@ RUN mkdir -p /apt-dl/partial \
     && arch=$(dpkg --print-architecture) \
     && echo "deb [arch=${arch} trusted=yes signed-by=/usr/share/keyrings/1password-archive-keyring.gpg] https://downloads.1password.com/linux/debian/${arch} stable main" \
         > /etc/apt/sources.list.d/1password.list \
-    && curl -sSfL https://packages.wazuh.com/key/GPG-KEY-WAZUH \
-        | gpg --dearmor -o /usr/share/keyrings/wazuh.gpg \
-    && echo "deb [trusted=yes signed-by=/usr/share/keyrings/wazuh.gpg] https://packages.wazuh.com/4.x/apt/ stable main" \
-        > /etc/apt/sources.list.d/wazuh.list \
     && apt-get update \
     && apt-get -o Dir::Cache::archives=/apt-dl upgrade -y \
     && apt-get -o Dir::Cache::archives=/apt-dl install -y --no-install-recommends 1password-cli \
-    && rm -rf /apt-dl/* && mkdir -p /apt-dl/partial \
-    && WAZUH_MANAGER=127.0.0.1 apt-get -o Dir::Cache::archives=/apt-dl install -y --no-install-recommends \
-        wazuh-agent=${WAZUH_VERSION}-1 \
     && rm -rf /apt-dl /var/lib/apt/lists/*
 
 # cosign bootstrap — supply-chain verification tool used to verify Trivy below.
@@ -214,25 +264,12 @@ RUN DPKG_ARCH=$(dpkg --print-architecture) && \
 
 
 # cosign — image signing and verification (Domain 17)
-# R2-M1: Checksum verified via published cosign_checksums.txt (same pattern as Trivy)
-# SCRUM-101: 3.0.5 → 3.1.1 (latest; rebuilt against patched Go stdlib + sigstore-go v1.2.0).
-ARG COSIGN_VERSION=3.1.3
-RUN DPKG_ARCH=$(dpkg --print-architecture) && \
-    case "$DPKG_ARCH" in \
-      arm64) COSIGN_ARCH="arm64" ;; \
-      amd64) COSIGN_ARCH="amd64" ;; \
-      *) COSIGN_ARCH="$DPKG_ARCH" ;; \
-    esac && \
-    COSIGN_BIN="cosign-linux-${COSIGN_ARCH}" && \
-    ( curl -sSfL -o "/tmp/${COSIGN_BIN}" \
-        "https://github.com/sigstore/cosign/releases/download/v${COSIGN_VERSION}/${COSIGN_BIN}" && \
-      curl -sSfL -o /tmp/cosign_checksums.txt \
-        "https://github.com/sigstore/cosign/releases/download/v${COSIGN_VERSION}/cosign_checksums.txt" && \
-      cd /tmp && grep "^[0-9a-f]*  ${COSIGN_BIN}$" cosign_checksums.txt | sha256sum -c - && \
-      mv "/tmp/${COSIGN_BIN}" /usr/local/bin/cosign && \
-      chmod +x /usr/local/bin/cosign && \
-      rm /tmp/cosign_checksums.txt ) || \
-    echo "cosign: download deferred to runtime"
+# SCRUM-174 follow-up (2026-09-05): the release binary carried a CRITICAL
+# (golang.org/x/crypto) plus several HIGH transitive-dep CVEs even at the
+# latest v3.1.3 tag — overlay the patched-dep source build from
+# cosign-builder above instead of the raw release download.
+COPY --from=cosign-builder /out-cosign /usr/local/bin/cosign
+RUN chmod +x /usr/local/bin/cosign
 
 # slsa-verifier — SLSA provenance attestation (Domain 17 Level 4)
 # SCRUM-101: installed from the `slsa-builder` stage (rebuilt from tagged source against the
@@ -245,30 +282,12 @@ COPY --from=slsa-builder /out-slsa-verifier /usr/local/bin/slsa-verifier
 RUN chmod +x /usr/local/bin/slsa-verifier
 
 # Docker CLI static binary — for docker info (Domain 19 Level 3)
-# R2-M1: download.docker.com publishes no separate checksums for static tarballs.
-# Pin SHA256 via build args. Override at build time:
-#   --build-arg DOCKER_CLI_SHA256_AMD64=<sha> --build-arg DOCKER_CLI_SHA256_ARM64=<sha>
-# Obtain values: sha256sum docker-{version}.tgz after manual download and verification.
-# SCRUM-101: 29.3.0 → 29.6.1 (latest static CLI; patched Go stdlib).
-ARG DOCKER_CLI_VERSION=29.7.2
-ARG DOCKER_CLI_SHA256_AMD64=""
-ARG DOCKER_CLI_SHA256_ARM64=""
-RUN DPKG_ARCH=$(dpkg --print-architecture) && \
-    case "$DPKG_ARCH" in \
-      arm64) DOCKER_ARCH="aarch64"; DOCKER_SHA="${DOCKER_CLI_SHA256_ARM64}" ;; \
-      amd64) DOCKER_ARCH="x86_64"; DOCKER_SHA="${DOCKER_CLI_SHA256_AMD64}" ;; \
-      *) DOCKER_ARCH="$DPKG_ARCH"; DOCKER_SHA="" ;; \
-    esac && \
-    ( curl -fsSL -o /tmp/docker.tgz \
-        "https://download.docker.com/linux/static/stable/${DOCKER_ARCH}/docker-${DOCKER_CLI_VERSION}.tgz" && \
-      if [ -n "$DOCKER_SHA" ]; then echo "${DOCKER_SHA}  /tmp/docker.tgz" | sha256sum -c -; fi && \
-      tar -xz -C /tmp -f /tmp/docker.tgz docker/docker && \
-      mv /tmp/docker/docker /usr/local/bin/docker && \
-      chmod +x /usr/local/bin/docker && \
-      rm -rf /tmp/docker.tgz /tmp/docker ) || \
-    echo "docker CLI: download deferred to runtime"
-
-# Wazuh agent installed in consolidated apt block above.
+# SCRUM-174 follow-up (2026-09-05): the release tarball carried 8 HIGH Go-
+# stdlib CVEs even at the latest v29.7.2 tag (built with an older Go patch
+# than what we pin) — overlay the current-Go source build from
+# docker-cli-builder above instead of the release download.
+COPY --from=docker-cli-builder /out-docker /usr/local/bin/docker
+RUN chmod +x /usr/local/bin/docker
 
 # Fluent Bit log processor — pinned version, arch-aware (same pattern as Trivy/Syft)
 # SCRUM-101: 3.2.7 → 5.0.9 (latest maintenance; clears C/Go lib CVEs). Config is
@@ -329,21 +348,13 @@ RUN printf '%s\n' \
 # Create non-root user
 RUN useradd --create-home --shell /bin/bash --uid 1000 agentshroud
 
-# Transfer Wazuh + ClamAV directory ownership to agentshroud (non-root runtime user).
-# /var/ossec — wazuh-agentd needs write access; /var/lib/clamav — freshclam needs write
-# access to update the virus DB on the named volume.
-RUN chown -R agentshroud:agentshroud /var/ossec \
-    && chown -R agentshroud:agentshroud /var/lib/clamav
+# Transfer ClamAV directory ownership to agentshroud (non-root runtime user);
+# freshclam needs write access to update the virus DB on the named volume.
+RUN chown -R agentshroud:agentshroud /var/lib/clamav
 
-# Falco alert directory (tmpfs mount point at runtime)
+# Falco alert directory — shared named volume, also mounted by the wazuh-agent
+# sidecar for log ingestion (see docker/wazuh-agent/, docker-compose.yml).
 RUN mkdir -p /var/log/falco && chown agentshroud:agentshroud /var/log/falco
-
-# Bake in gateway ossec.conf (FIM on /app/gateway + Falco alert ingestion)
-COPY docker/wazuh/ossec.conf /var/ossec/etc/ossec.conf
-# Pre-register agent key so wazuh-agentd starts without needing a live manager
-RUN echo "001 agentshroud-gateway any c0000000000000000000000000000001" \
-        > /var/ossec/etc/client.keys && \
-    chmod 640 /var/ossec/etc/client.keys
 
 # ── Security Evidence Files ─────────────────────────────────────────────────
 # These files are checked by the Container Security Scorecard scorer functions.
