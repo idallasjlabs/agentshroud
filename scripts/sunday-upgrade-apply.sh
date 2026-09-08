@@ -36,6 +36,8 @@
 #                         requires containers stay healthy at least 2 minutes).
 #   --max-critical N      Fail the scan gate above N CRITICAL findings.
 #                         Default: unset = report only, never gate on it.
+#   --allow-dirty-build   Build even though the build context has uncommitted
+#                         changes. Ships WIP into a production image — explicit on purpose.
 #   --allow-dirty         Proceed despite unrelated uncommitted changes. The repo
 #                         routinely carries pre-existing modifications; this
 #                         script never commits, so it does not care — but the
@@ -65,6 +67,7 @@ PHASE="all"
 SOAK_SECONDS=120
 MAX_CRITICAL=""
 ALLOW_DIRTY=0
+ALLOW_DIRTY_BUILD=0
 HANDOFF_DIR="/Users/Shared/agentshroud-sunday"
 COMPOSE_FILE="${SUNDAY_COMPOSE_FILE:-$REPO/docker/docker-compose.yml}"
 ARTIFACT_DIR="$REPO/reports/sunday/$TODAY"
@@ -94,6 +97,7 @@ while [ $# -gt 0 ]; do
     --soak-seconds)  SOAK_SECONDS="${2:-}"; shift 2 ;;
     --max-critical)  MAX_CRITICAL="${2:-}"; shift 2 ;;
     --allow-dirty)   ALLOW_DIRTY=1; shift ;;
+    --allow-dirty-build) ALLOW_DIRTY_BUILD=1; shift ;;
     -h|--help)       sed -n '1,60p' "${BASH_SOURCE[0]}"; exit 0 ;;
     *)               die 10 "unknown argument: $1" ;;
   esac
@@ -116,6 +120,33 @@ fi
 
 _should_run() { [ "$PHASE" = "all" ] || [ "$PHASE" = "$1" ]; }
 _mutating()   { [ "$DRY_RUN" -eq 0 ]; }
+
+# Build contexts actually used by the compose file, resolved to absolute paths.
+# Falls back to the repo root if compose config can't be parsed — the
+# conservative direction, since a wider context means we check MORE files.
+_build_context_paths() {
+  local ctx
+  ctx="$(docker compose -f "$COMPOSE_FILE" config 2>/dev/null \
+         | awk '/^[[:space:]]*context:[[:space:]]/ {print $2}' | sort -u)"
+  if [ -n "$ctx" ]; then printf '%s\n' "$ctx"; else printf '%s\n' "$REPO"; fi
+}
+
+# Uncommitted changes sitting inside a build context. These would be baked into
+# the resulting production image by `docker compose build`, which on a security
+# product means shipping unreviewed work-in-progress — including, on 2026-09-07,
+# modified source for six gateway/security/* modules plus gateway/Dockerfile
+# itself. Excludes our own generated artifacts (graphify-out, reports).
+_dirty_build_files() {
+  local ctx rel
+  for ctx in $(_build_context_paths); do
+    case "$ctx" in
+      "$REPO")   rel="." ;;
+      "$REPO"/*) rel="${ctx#"$REPO"/}" ;;
+      *)         continue ;;   # context outside the repo: not ours to police
+    esac
+    git -C "$REPO" status --porcelain -- "$rel" 2>/dev/null || true
+  done | grep -v 'graphify-out/' | grep -v ' reports/' | sort -u
+}
 
 # Free GiB on the volume backing the Docker daemon's storage — which on
 # macOS/Colima is inside the VM and unrelated to the host's own free space.
@@ -345,6 +376,26 @@ phase_apply() {
     grep -E '^[A-Z_]+=' "$REPO/docker/versions.env" 2>/dev/null | sed 's/^/  /' || true
     return 0
   fi
+
+  # ── Clean-build gate ───────────────────────────────────────────────────────
+  # `docker compose build` bakes the working tree into the image. If the build
+  # context is dirty, an unattended Sunday run would ship whatever happened to be
+  # uncommitted at 06:00 straight into production. On 2026-09-07 that was 57
+  # files including gateway/Dockerfile, docker/docker-compose.yml and modified
+  # source for six gateway/security/* modules. On a security product that is a
+  # supply-chain hazard, not an inconvenience — so it is a hard gate, and the
+  # override is deliberately explicit rather than a default.
+  local dirty
+  dirty="$(_dirty_build_files)"
+  if [ -n "$dirty" ] && [ "$ALLOW_DIRTY_BUILD" -eq 0 ]; then
+    err "apply: REFUSING to build — uncommitted changes inside the build context would be baked into the production image:"
+    printf '%s\n' "$dirty" | head -20 | sed 's/^/    /' >&2
+    local n; n="$(printf '%s\n' "$dirty" | wc -l | tr -d ' ')"
+    [ "$n" -gt 20 ] && err "    ... and $((n - 20)) more ($n total)"
+    err "apply: commit, stash, or explicitly override with --allow-dirty-build if this WIP is genuinely intended to ship."
+    exit 30
+  fi
+  [ -z "$dirty" ] || warn "apply: building with $(printf '%s\n' "$dirty" | wc -l | tr -d ' ') uncommitted file(s) in the build context (--allow-dirty-build)"
 
   log "apply: building images from current pins (this is the slow phase)"
   if ! docker compose -f "$COMPOSE_FILE" build --pull; then
