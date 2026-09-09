@@ -9,7 +9,14 @@
   condition: (evt.type in (execve, execveat) and evt.dir=<)
 
 - macro: container
-  condition: (container.id != "host")
+  # This Falco instance runs *inside* the one container it protects (the
+  # gateway) — there's no separate host-vs-container boundary to detect
+  # from within it, and container.id/container.name need a container-
+  # context plugin that nodriver engine mode doesn't load. Always-true
+  # placeholder kept so the macro name stays meaningful in rule conditions
+  # below (found 2026-09-06: the old condition hard-failed rule loading —
+  # "filter_check called with nonexistent field container.id").
+  condition: (proc.pid exists)
 
 - macro: outbound
   condition: >
@@ -47,7 +54,7 @@
 - rule: Unexpected Outbound Connection from AgentShroud
   desc: Detect outbound network connections from agentshroud container
   condition: >
-    outbound and container and container.name = "agentshroud" and
+    outbound and container and
     not fd.sip = "127.0.0.1" and not fd.sip = "0.0.0.0"
   output: "Unexpected outbound connection from AgentShroud (connection=%fd.name dest=%fd.sip user=%user.name process=%proc.name)"
   priority: ERROR
@@ -56,7 +63,7 @@
 - rule: File Access Outside Workspace
   desc: Detect file write access outside the designated workspace directory
   condition: >
-    open_write and container and container.name = "agentshroud" and
+    open_write and container and
     not fd.name startswith /home/node/ and
     not fd.name startswith /tmp/ and
     not fd.name startswith /proc/ and
