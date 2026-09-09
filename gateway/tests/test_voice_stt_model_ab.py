@@ -24,7 +24,6 @@ import struct
 from unittest.mock import MagicMock
 
 import pytest
-
 import voice_gateway.stt as stt
 
 # ── (1) SELECT: select_model_size ─────────────────────────────────────────────

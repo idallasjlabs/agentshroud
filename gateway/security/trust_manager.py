@@ -21,9 +21,9 @@ from typing import Optional
 
 from gateway.security.progressive_trust_config import (
     ProgressiveTrustConfig,
+    ViolationType,
 )
 from gateway.security.progressive_trust_config import TrustLevel as ProgressiveTrustLevel
-from gateway.security.progressive_trust_config import ViolationType
 
 
 class TrustLevel(IntEnum):
@@ -115,7 +115,8 @@ class TrustManager:
         self._init_db()
 
     def _init_db(self):
-        self._conn.execute("""
+        self._conn.execute(
+            """
             CREATE TABLE IF NOT EXISTS trust_scores (
                 agent_id TEXT PRIMARY KEY,
                 score REAL NOT NULL,
@@ -126,8 +127,10 @@ class TrustManager:
                 total_failures INTEGER DEFAULT 0,
                 total_violations INTEGER DEFAULT 0
             )
-        """)
-        self._conn.execute("""
+        """
+        )
+        self._conn.execute(
+            """
             CREATE TABLE IF NOT EXISTS trust_history (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
                 agent_id TEXT NOT NULL,
@@ -138,7 +141,8 @@ class TrustManager:
                 new_level INTEGER NOT NULL,
                 details TEXT
             )
-        """)
+        """
+        )
         self._conn.commit()
 
     def _score_to_level(self, score: float) -> TrustLevel:

@@ -124,7 +124,8 @@ def init_db(db_path: Path = DEFAULT_DB_PATH) -> sqlite3.Connection:
     """
     db_path.parent.mkdir(parents=True, exist_ok=True)
     conn = sqlite3.connect(str(db_path))
-    conn.execute("""
+    conn.execute(
+        """
         CREATE TABLE IF NOT EXISTS health_history (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             timestamp TEXT NOT NULL,
@@ -132,7 +133,8 @@ def init_db(db_path: Path = DEFAULT_DB_PATH) -> sqlite3.Connection:
             grade TEXT NOT NULL,
             details TEXT NOT NULL
         )
-    """)
+    """
+    )
     conn.commit()
     return conn
 

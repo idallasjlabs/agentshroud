@@ -11,9 +11,8 @@ from unittest.mock import MagicMock, patch
 import pytest
 from fastapi.testclient import TestClient
 
-from gateway.ingest_api.main import _is_op_reference_allowed
+from gateway.ingest_api.main import _is_op_reference_allowed, auth_dep
 from gateway.ingest_api.main import app as gateway_app
-from gateway.ingest_api.main import auth_dep
 
 # ============================================================
 # Unit tests for reference validation helpers

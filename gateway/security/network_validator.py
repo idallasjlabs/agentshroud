@@ -15,9 +15,8 @@ import time
 from dataclasses import dataclass
 from typing import Any, Dict, List, Optional
 
-import yaml
-
 import docker
+import yaml
 
 logger = logging.getLogger(__name__)
 

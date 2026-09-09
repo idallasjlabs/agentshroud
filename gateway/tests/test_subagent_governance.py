@@ -1,7 +1,6 @@
 # Copyright © 2026 Isaiah Dallas Jefferson, Jr. AgentShroud™. All rights reserved.
 """Tests for SubagentGovernance module."""
 
-import time
 
 import pytest
 
@@ -9,8 +8,6 @@ from gateway.security.subagent_governance import (
     GovernanceAction,
     GovernanceConfig,
     GovernanceEventType,
-    OutputTrustConfig,
-    PrivilegePolicy,
     ResourceBudget,
     SubagentGovernance,
     _check_exfil_patterns,
