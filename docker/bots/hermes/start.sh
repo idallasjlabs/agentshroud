@@ -252,6 +252,28 @@ fi
 
 echo "[hermes-startup] Starting Hermes Agent gateway (Telegram/Discord long-poll)..."
 
+# Missing-secret visibility — owner feedback 2026-09-04: run-standalone.sh's
+# secret-mount step silently WARN-and-skips any configured key with no
+# backing file, which is exactly how Feedbin credentials went missing for
+# two days before anyone noticed (only surfaced once cron jobs started
+# failing). Check from inside the container (catches the gap regardless of
+# deploy path — docker run or compose) and fold it into the startup banner
+# so it's visible on every single restart, not just discoverable later via
+# a failed cron run. Keep this key list in sync with run-standalone.sh's
+# HERMES_SECRET_KEYS.
+_HERMES_EXPECTED_SECRETS="hermes_telegram_bot_token slack_bot_token_hermes slack_app_token_hermes brave_api_key anthropic_oauth_token openai_api_key hermes_api_key github_pat hermes_healthchecks_url gateway_password feedbin_email feedbin_password podcastindex_api_key podcastindex_api_secret"
+_hermes_missing_secrets=""
+for _key in ${_HERMES_EXPECTED_SECRETS}; do
+    if [ ! -s "/run/secrets/${_key}" ]; then
+        echo "[hermes-startup] ERROR: configured secret '${_key}' has no mounted file at /run/secrets/${_key} — any skill that needs it will fail" >&2
+        _hermes_missing_secrets="${_hermes_missing_secrets}${_hermes_missing_secrets:+, }${_key}"
+    fi
+done
+_HERMES_STARTUP_NOTE=""
+if [ -n "${_hermes_missing_secrets}" ]; then
+    _HERMES_STARTUP_NOTE=" — ⚠️ missing secrets: ${_hermes_missing_secrets}"
+fi
+
 # Startup notification subshell — runs in background while Hermes daemon launches.
 # Uses a cooldown stamp file to suppress duplicate notifications on rapid restarts.
 (
@@ -288,15 +310,15 @@ echo "[hermes-startup] Starting Hermes Agent gateway (Telegram/Discord long-poll
     done
 
     if [ "${ready}" = "yes" ]; then
-        if _telegram_send_photo "🛡️ Hermes online" "/app/branding/logo.png"; then
+        if _telegram_send_photo "🛡️ Hermes online${_HERMES_STARTUP_NOTE}" "/app/branding/logo.png"; then
             echo "[hermes-startup] ✓ Sent Telegram startup photo notification"
         else
-            _telegram_send "🛡️ Hermes online" \
+            _telegram_send "🛡️ Hermes online${_HERMES_STARTUP_NOTE}" \
                 && echo "[hermes-startup] ✓ Sent Telegram startup notification" \
                 || echo "[hermes-startup] ⚠ Could not send Telegram startup notification"
         fi
     else
-        _telegram_send "🟠 Hermes starting (readiness delayed)" \
+        _telegram_send "🟠 Hermes starting (readiness delayed)${_HERMES_STARTUP_NOTE}" \
             && echo "[hermes-startup] ⚠ Sent delayed startup notification" \
             || echo "[hermes-startup] ⚠ Could not send delayed startup notification"
     fi

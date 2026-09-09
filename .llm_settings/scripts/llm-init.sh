@@ -18,6 +18,18 @@
 # zsh compatibility: avoid alias expansion conflict on function name
 unalias llm-init 2>/dev/null || true
 
+# Repos (matched by normalized git remote, not local path — the same repo
+# is checked out at different paths on different hosts, e.g.
+# ~/Development/services-data-lake on the dev machine vs.
+# /home/dde/Production/services-data-lake on a production host) that require
+# the impact-analysis push gate (see require_impact_analysis.sh). Add an
+# entry here to turn the gate on for another repo; do not create or remove
+# .impact-analysis-required by hand — _llm_init_ensure_production_gate_marker
+# manages it.
+PRODUCTION_GATE_REMOTES=(
+    "FITDevOps/services-data-lake"
+)
+
 # ─────────────────────────────────────────────────────────────────────────────
 # _llm_init_reconcile_settings_local <dry_run> <json_key>...
 #
@@ -566,6 +578,61 @@ _llm_init_merge_claude_md() {
 
     \mv -f "$_tmpfile" "$_tgt"
     echo "   ✅ CLAUDE.md updated (llm-init block refreshed, repo-specific sections preserved)"
+}
+
+# ─────────────────────────────────────────────────────────────────────────────
+# _llm_init_ensure_production_gate_marker <dry_run>
+#
+# Creates .impact-analysis-required at the repo root (cwd — llm-init has
+# already cd'd into target_dir by this point) if, and only if, the current
+# repo's git remote matches an entry in PRODUCTION_GATE_REMOTES. Matching is
+# by normalized remote identity ("owner/repo"), not local path, since the
+# same repo is checked out at different paths on different hosts.
+#
+# Idempotent: no-op if the marker already exists. Never removes the marker,
+# and never touches it in a repo that isn't in the allowlist — a marker
+# placed there manually for other reasons is left alone.
+# ─────────────────────────────────────────────────────────────────────────────
+_llm_init_ensure_production_gate_marker() {
+    local _dry_run="$1"
+
+    local _remote_url
+    _remote_url="$(git config --get remote.origin.url 2>/dev/null || echo "")"
+    [ -n "$_remote_url" ] || return 0
+
+    local _remote_id="$_remote_url"
+    _remote_id="${_remote_id%.git}"
+    _remote_id="${_remote_id#git@github.com:}"
+    _remote_id="${_remote_id#https://github.com/}"
+    _remote_id="${_remote_id#http://github.com/}"
+
+    local _match=false _candidate
+    for _candidate in "${PRODUCTION_GATE_REMOTES[@]}"; do
+        if [ "$_remote_id" = "$_candidate" ]; then
+            _match=true
+            break
+        fi
+    done
+    $_match || return 0
+
+    if [ -f ".impact-analysis-required" ]; then
+        echo "   📌 .impact-analysis-required already present (impact-analysis push gate active)"
+        return 0
+    fi
+
+    if $_dry_run; then
+        echo "   🔍 [dry-run] Would create .impact-analysis-required (repo '$_remote_id' is in PRODUCTION_GATE_REMOTES)"
+        return 0
+    fi
+
+    cat > ".impact-analysis-required" <<'MARKER'
+# This repo requires an impact-analysis artifact (.impact-analysis/<branch>.md)
+# before any `git push` or `gh pr create` will be allowed through Claude Code.
+# Auto-managed by llm-init.sh for repos in PRODUCTION_GATE_REMOTES — do not
+# delete by hand if you want the gate to stay off after the next sync;
+# instead remove the repo from that list in llm-init.sh.
+MARKER
+    echo "   ✅ .impact-analysis-required created (repo '$_remote_id' is in PRODUCTION_GATE_REMOTES — impact-analysis push gate now active)"
 }
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -1124,6 +1191,8 @@ llm-init() {
     else
         echo "   ⚠️  CLAUDE.md not found in source"
     fi
+
+    _llm_init_ensure_production_gate_marker "$dry_run"
 
     echo ""
 

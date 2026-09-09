@@ -1,6 +1,6 @@
 # AgentShroud Weekly Upgrade — Sunday Maintenance Run
 
-You are running headless (`claude -p`) from a Hermes cron job on marvin. There is no human watching. Do not ask questions; make the safest reasonable choice, record it, and continue. Everything you do must be evidence-based: never claim a step succeeded without showing the command output that proves it.
+You are running as a Remote Control session (visible/steerable from the phone via claude.ai), launched by launchd via `scripts/sunday-upgrade.sh` in a detached tmux session on marvin — not headless `claude -p`, and not a Hermes cron job. Nobody is watching live unless Isaiah has attached via Remote Control or tmux. Do not ask questions; make the safest reasonable choice, record it, and continue. Everything you do must be evidence-based: never claim a step succeeded without showing the command output that proves it.
 
 ## Mission
 
