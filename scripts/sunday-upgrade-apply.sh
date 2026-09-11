@@ -432,19 +432,6 @@ phase_verify() {
     fi
   done
 
-  # 2. Health status where a healthcheck is defined.
-  for c in $CONTAINERS; do
-    local health
-    health="$(docker inspect --format '{{if .State.Health}}{{.State.Health.Status}}{{else}}none{{end}}' "$c" 2>/dev/null || echo 'absent')"
-    case "$health" in
-      healthy)   log "verify: $c healthy" ;;
-      none)      log "verify: $c has no healthcheck defined (not a failure)" ;;
-      absent)    ;;  # already reported above
-      *)         failures="${failures}\n  - ${c}: health=${health}"
-                 err "verify: $c health=$health" ;;
-    esac
-  done
-
   # 3. Restart-loop detection across a soak window. A container can be
   #    "running" at the instant you look and still be crash-looping; the
   #    procedure requires it to hold steady for at least 2 minutes.
@@ -463,6 +450,28 @@ phase_verify() {
       err "verify: $c RESTARTED during soak (${before_counts[$i]} -> ${after})"
     fi
     i=$((i + 1))
+  done
+
+  # Health is sampled AFTER the soak, never before.
+  # A container that has just started is legitimately "starting" for the duration
+  # of its healthcheck start_period. Sampling at t=0 (as this did until
+  # 2026-09-11) made every freshly-restarted stack report FAILED and escalate to
+  # an unnecessary rollback — observed live after a Colima restart, where gateway
+  # and openclaw read health=starting 11 seconds in and were both fully healthy a
+  # couple of minutes later. After a full soak the start_period has elapsed, so
+  # "starting" at THIS point is a real failure rather than a normal transient.
+  for c in $CONTAINERS; do
+    local health
+    health="$(docker inspect --format '{{if .State.Health}}{{.State.Health.Status}}{{else}}none{{end}}' "$c" 2>/dev/null || echo 'absent')"
+    case "$health" in
+      healthy)   log "verify: $c healthy (post-soak)" ;;
+      none)      log "verify: $c has no healthcheck defined (not a failure)" ;;
+      absent)    ;;  # already reported by the running check
+      starting)  failures="${failures}\n  - ${c}: still health=starting after ${SOAK_SECONDS}s soak"
+                 err "verify: $c STILL starting after ${SOAK_SECONDS}s — start_period should have elapsed" ;;
+      *)         failures="${failures}\n  - ${c}: health=${health}"
+                 err "verify: $c health=$health" ;;
+    esac
   done
 
   # 4. Error scan of recent logs.
