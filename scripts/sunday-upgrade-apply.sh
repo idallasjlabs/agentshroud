@@ -72,6 +72,22 @@ HANDOFF_DIR="/Users/Shared/agentshroud-sunday"
 COMPOSE_FILE="${SUNDAY_COMPOSE_FILE:-$REPO/docker/docker-compose.yml}"
 ARTIFACT_DIR="$REPO/reports/sunday/$TODAY"
 
+# docker/docker-compose.yml interpolates OPENCLAW_VERSION / HERMES_IMAGE /
+# AGENTSHROUD_VERSION directly, so they must be present in the REAL shell
+# environment, not merely passed as --env-file. scripts/asb:30-33 does exactly
+# this and it is why builds there work. Omitting it made compose interpolate
+# empty strings ("The OPENCLAW_VERSION variable is not set") and the 2026-09-11
+# apply failed into a rollback as a result.
+if [ -f "$REPO/docker/versions.env" ]; then
+  set -a
+  # shellcheck source=docker/versions.env
+  . "$REPO/docker/versions.env"
+  set +a
+else
+  echo "[apply] FATAL: $REPO/docker/versions.env not found — required for pinned builds" >&2
+  exit 10
+fi
+
 # Containers that must be healthy for the stack to be considered good.
 # Overridable so dev/prod or a future service list can differ without a code edit.
 DEFAULT_CONTAINERS="agentshroud-gateway agentshroud-openclaw agentshroud-hermes-v2 agentshroud-voice-gateway agentshroud-docker-socket-proxy"
@@ -318,8 +334,13 @@ phase_baseline() {
     echo 'set -euo pipefail'
     echo "export PATH=\"/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:\${PATH:-}\""
     echo ''
-    echo '# 1. Restore code'
-    echo "git -C '$REPO' checkout $git_rev"
+    echo '# 1. Restore code (branch-preserving)'
+    echo "# Restores the WORKING TREE to the baseline commit without detaching HEAD."
+    echo "# A bare \`git checkout <sha>\` detaches HEAD and silently strips the branch"
+    echo "# out from under any later commit — observed 2026-09-11, where a rollback"
+    echo "# left the repo detached at the pre-run commit."
+    echo "git -C '$REPO' restore --source=$git_rev --staged --worktree -- . 2>/dev/null || \\"
+    echo "  git -C '$REPO' checkout $git_rev -- . "
     echo ''
     echo '# 2. Restore images'
     for c in $CONTAINERS; do
