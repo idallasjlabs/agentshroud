@@ -145,7 +145,15 @@ _dirty_build_files() {
       *)         continue ;;   # context outside the repo: not ours to police
     esac
     git -C "$REPO" status --porcelain -- "$rel" 2>/dev/null || true
-  done | grep -v 'graphify-out/' | grep -v ' reports/' | sort -u
+  done | grep -v 'graphify-out/' | grep -v ' reports/' | sort -u || true
+  # `|| true` is load-bearing, not defensive noise. Under `set -euo pipefail` a
+  # `grep -v` that matches nothing exits 1, which propagates through pipefail and
+  # kills the caller's `dirty="$(_dirty_build_files)"` assignment. That made this
+  # gate fail CLOSED in the worst possible way: it worked while the tree was
+  # dirty and killed the whole run the instant the tree became clean — i.e.
+  # exactly when the build should have proceeded. Cost two silent failed apply
+  # runs (2026-09-09, 2026-09-11) that looked like hung builds. An empty result
+  # means "nothing dirty", which is success, not failure.
 }
 
 # Services in the compose file that actually have a build context. Parsed from
@@ -155,7 +163,9 @@ _buildable_services() {
   docker compose -f "$COMPOSE_FILE" config 2>/dev/null | awk '
     /^  [a-zA-Z0-9_-]+:$/ { svc=$1; sub(/:$/,"",svc) }
     /^    build:/ { if (svc != "") print svc }
-  ' | sort -u
+  ' | sort -u || true
+  # Same pipefail hazard as _dirty_build_files above — never let an empty or
+  # partially-failing pipeline take down the caller via a failed assignment.
 }
 
 # Free GiB on the volume backing the Docker daemon's storage — which on
