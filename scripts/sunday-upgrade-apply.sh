@@ -148,6 +148,16 @@ _dirty_build_files() {
   done | grep -v 'graphify-out/' | grep -v ' reports/' | sort -u
 }
 
+# Services in the compose file that actually have a build context. Parsed from
+# the NORMALIZED `docker compose config` output, so it reflects overrides and
+# extends rather than the raw file text.
+_buildable_services() {
+  docker compose -f "$COMPOSE_FILE" config 2>/dev/null | awk '
+    /^  [a-zA-Z0-9_-]+:$/ { svc=$1; sub(/:$/,"",svc) }
+    /^    build:/ { if (svc != "") print svc }
+  ' | sort -u
+}
+
 # Free GiB on the volume backing the Docker daemon's storage — which on
 # macOS/Colima is inside the VM and unrelated to the host's own free space.
 # Prints an integer, or nothing if it cannot be determined.
@@ -397,12 +407,28 @@ phase_apply() {
   fi
   [ -z "$dirty" ] || warn "apply: building with $(printf '%s\n' "$dirty" | wc -l | tr -d ' ') uncommitted file(s) in the build context (--allow-dirty-build)"
 
-  log "apply: building images from current pins (this is the slow phase)"
-  if ! docker compose -f "$COMPOSE_FILE" build --pull; then
-    err "apply: build FAILED"
-    _attempt_rollback
-    exit 30
+  # Build ONE SERVICE AT A TIME, never all at once.
+  # `docker compose build` builds every buildable service concurrently. On this
+  # host that means several parallel Go toolchains — the gateway image compiles
+  # cosign AND docker-cli from source — inside an 11GiB VM with ZERO swap. The
+  # 2026-09-09 run died mid-build having written nothing past its first log line,
+  # consuming 26GB of layers on the way; an OOM kill is the leading explanation.
+  # Sequential builds cap peak memory at one toolchain and make any failure
+  # attributable to a named service instead of a silent stall.
+  local svc build_list
+  build_list="$(_buildable_services)"
+  if [ -z "$build_list" ]; then
+    warn "apply: no buildable services found in $COMPOSE_FILE — nothing to build"
   fi
+  for svc in $build_list; do
+    log "apply: building '$svc' (sequential)"
+    if ! docker compose -f "$COMPOSE_FILE" build --pull "$svc"; then
+      err "apply: build FAILED for service '$svc'"
+      _attempt_rollback
+      exit 30
+    fi
+    log "apply: built '$svc' OK"
+  done
 
   log "apply: recreating containers"
   if ! docker compose -f "$COMPOSE_FILE" up -d; then

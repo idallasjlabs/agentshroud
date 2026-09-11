@@ -36,6 +36,52 @@ is therefore enforced by a handoff contract:
 - Promote to prod **only the exact versions dev passed** — never a version
   dev didn't test, even if newer.
 
+## USE THE DETERMINISTIC SCRIPT — do not improvise these steps
+
+`scripts/sunday-upgrade-apply.sh` owns every mechanical, verifiable step of this
+run. It exists because improvising a production upgrade unattended is not
+reliable: the 2026-09-06 run failed on both accounts before doing any work, and
+the 2026-09-09 build stalled silently. **Do not hand-roll `docker compose build`,
+health checks, rollback, or the dev handoff file — call the script.**
+
+```bash
+scripts/sunday-upgrade-apply.sh --env dev|prod [--phase preflight|baseline|scan|apply|verify|all] [--dry-run]
+```
+
+Exit code IS the result. Do not re-interpret it, and never report a pass the
+script did not give you:
+
+| Code | Meaning | What you do |
+|------|---------|-------------|
+| 0 | all requested phases passed | continue |
+| 10 | preflight failed (disk, docker, compose, missing binary) | fix the named cause or stop; do not build |
+| 20 | CVE gate exceeded `--max-critical` | triage findings, do not override |
+| 30 | build/compose failed (rollback attempted) | report the named service that failed |
+| 40 | verify failed — unhealthy/restart loop (rollback attempted) | report; do not retry blindly |
+| 50 | rollback itself failed | **STOP. Escalate. The stack may be degraded.** |
+| 127 | required binary missing | report the binary; do not work around it |
+
+Required order for prod: `preflight` → `baseline` → `scan` → `apply` → `verify`.
+`--phase all` does this. **`baseline` is not optional** — it captures the rollback
+tags and generates `rollback.sh`; without it a failed apply has nothing to roll
+back to and exits 50.
+
+On dev, the script writes `/Users/Shared/agentshroud-sunday/dev-result-<date>.json`
+itself on success, and `status=FAIL` via an EXIT trap otherwise. Do not write that
+file by hand.
+
+Things the script will refuse to do, all of them deliberate — do NOT work around
+them, report them instead:
+- Build when the build context has uncommitted changes (would bake unreviewed WIP
+  into a production image). Commit the work first, or report it.
+  `--allow-dirty-build` exists but requires a real reason stated in the report.
+- Start when Docker storage is below 25GiB free.
+- Report a CVE pass when no scanner is installed.
+
+**Your remaining job is judgement, not mechanics:** decide which versions are
+candidates, read changelogs for breaking changes, triage findings the scan
+surfaces, and write the report. The script decides whether a change ships.
+
 ## Procedure
 
 ### 0. Preflight (both environments)
