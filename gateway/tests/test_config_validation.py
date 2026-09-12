@@ -376,7 +376,10 @@ class TestConfigValidation:
         assert "/getMe" in script
         assert "/api/tags" in script
         assert 'ready="no"' in script
-        assert "for _i in $(seq 1 60)" in script
+        # The retry bound was parameterised (max_iterations) so the wait can be tuned
+        # without editing the loop; assert the parameterised form, not a literal 60.
+        assert 'for _i in $(seq 1 "${max_iterations}")' in script
+        assert "max_iterations=" in script
 
     def test_startup_online_notice_sent_only_after_readiness_gate(self):
         """Online notice must appear after readiness probes to avoid premature status signals."""
@@ -586,7 +589,11 @@ class TestConfigValidation:
         assert "AGENTSHROUD_MODEL_MODE" in script
         assert "AGENTSHROUD_LOCAL_MODEL_REF" in script
         assert "AGENTSHROUD_CLOUD_MODEL_REF" in script
-        assert "ollama/qwen3:14b" in script
+        # apply-patches.js now derives the provider prefix separately from the model
+        # name, so the literal "ollama/qwen3:14b" no longer appears; the default
+        # local model is still qwen3:14b (fallback when AGENTSHROUD_LOCAL_MODEL_REF
+        # is unset).
+        assert "qwen3:14b" in script
         assert "config.models.providers.ollama" in script
         assert "OPENCLAW_OLLAMA_API" in script
         assert "api: OLLAMA_PROVIDER_API" in script
