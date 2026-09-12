@@ -18,6 +18,11 @@ services:
     environment:
       - PROXY_ALLOWED_NETWORKS=172.20.0.0/16,172.21.0.0/16,172.22.0.0/16
       - AGENTSHROUD_INSTANCE_LABEL=dev-marvin
+      # This host renames the gateway container (container_name above), so the
+      # daily CVE scan must be told where to look — otherwise it inspects
+      # "agentshroud-gateway", misses, and scans a nonexistent :latest tag
+      # while the running gateway goes unscanned (2026-09-02).
+      - AGENTSHROUD_GATEWAY_CONTAINER=agentshroud-marvin-gateway
 
   openclaw:
     container_name: agentshroud-marvin-openclaw

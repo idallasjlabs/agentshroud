@@ -936,6 +936,33 @@ class TestBuildImageTargets:
         targets = _build_image_targets()
         assert "agentshroud-gateway:latest" in targets
 
+    def test_gateway_container_name_is_env_overridable(self, monkeypatch):
+        """Deployments that rename the gateway container (dev runs
+        agentshroud-marvin-gateway) must be able to point the scan at it.
+
+        Regression 2026-09-02: the container name was hardcoded, so on dev
+        `_running_image` always missed, the code silently fell back to
+        agentshroud-gateway:latest — a tag that does not exist on that host —
+        and the daily report published CVE counts for a phantom image while
+        the actually-running gateway went unscanned."""
+        from gateway.security import daily_cve_report as _mod
+
+        seen: list[str] = []
+
+        def _fake_running(name):
+            seen.append(name)
+            return "agentshroud-gateway:1.6.0" if name == "agentshroud-marvin-gateway" else None
+
+        monkeypatch.setattr(_mod, "_running_image", _fake_running)
+        monkeypatch.setenv("AGENTSHROUD_GATEWAY_CONTAINER", "agentshroud-marvin-gateway")
+        monkeypatch.delenv("AGENTSHROUD_TRIVY_IMAGES", raising=False)
+
+        targets = _mod._build_image_targets()
+
+        assert "agentshroud-marvin-gateway" in seen, "env override was not consulted"
+        assert "agentshroud-gateway:1.6.0" in targets
+        assert "agentshroud-gateway:latest" not in targets
+
     def test_env_var_adds_extra_targets(self, monkeypatch):
         from gateway.security.daily_cve_report import _build_image_targets
 
