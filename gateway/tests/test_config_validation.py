@@ -366,7 +366,16 @@ class TestConfigValidation:
         assert "🔴 OpenClaw shutting down" in script
 
     def test_startup_notifications_wait_for_runtime_readiness(self):
-        """Startup script should verify Telegram/model readiness before sending online notice."""
+        """Startup script should verify Telegram/model readiness before sending online notice.
+
+        PR #436 (2026-09-08) replaced the single hardcoded 60-iteration loop
+        with a reusable ``_poll_openclaw_ready(max_iterations)`` function
+        called for an initial 120s window and, on timeout, an extended window
+        (``OPENCLAW_EXTENDED_READY_ITERATIONS``) instead of giving up
+        permanently -- fixing recurring readiness-delayed false negatives
+        (2026-08-30, 2026-09-03, 2026-09-04). Assert the new structure
+        directly rather than the old inlined loop text.
+        """
         path = REPO_ROOT / "docker" / "scripts" / "start-agentshroud.sh"
         if not path.exists():
             pytest.skip("start-agentshroud.sh not available in this environment")
@@ -376,10 +385,10 @@ class TestConfigValidation:
         assert "/getMe" in script
         assert "/api/tags" in script
         assert 'ready="no"' in script
-        # The retry bound was parameterised (max_iterations) so the wait can be tuned
-        # without editing the loop; assert the parameterised form, not a literal 60.
+        assert "_poll_openclaw_ready" in script
         assert 'for _i in $(seq 1 "${max_iterations}")' in script
-        assert "max_iterations=" in script
+        assert "_poll_openclaw_ready 60" in script
+        assert "OPENCLAW_EXTENDED_READY_ITERATIONS" in script
 
     def test_startup_online_notice_sent_only_after_readiness_gate(self):
         """Online notice must appear after readiness probes to avoid premature status signals."""
@@ -581,7 +590,17 @@ class TestConfigValidation:
         assert "scripts/switch_model.sh cloud gemini" not in script
 
     def test_openclaw_patch_defaults_to_qwen_local_model(self):
-        """OpenClaw patch script should default to local Ollama but keep API adapter configurable."""
+        """OpenClaw patch script should default to local Ollama but keep API adapter configurable.
+
+        PR #435 (2026-09-08) stopped hardcoding the "ollama/" prefix and
+        instead derives LOCAL_PROVIDER_KEY from AGENTSHROUD_MODEL_MODE, then
+        builds LOCAL_MODEL_REF as `${LOCAL_PROVIDER_KEY}/${LOCAL_MODEL_NAME}`
+        -- fixing a 2026-09-04 incident where the primary model pointed at
+        "openai-local/<model>" while only "ollama" was registered
+        (FailoverError: Unknown model). The literal "ollama/qwen3:14b" no
+        longer appears as a contiguous substring in source; assert the
+        mode-derived construction directly instead.
+        """
         path = REPO_ROOT / "docker" / "config" / "openclaw" / "apply-patches.js"
         if not path.exists():
             pytest.skip("apply-patches.js not available in this environment")
@@ -589,11 +608,9 @@ class TestConfigValidation:
         assert "AGENTSHROUD_MODEL_MODE" in script
         assert "AGENTSHROUD_LOCAL_MODEL_REF" in script
         assert "AGENTSHROUD_CLOUD_MODEL_REF" in script
-        # apply-patches.js now derives the provider prefix separately from the model
-        # name, so the literal "ollama/qwen3:14b" no longer appears; the default
-        # local model is still qwen3:14b (fallback when AGENTSHROUD_LOCAL_MODEL_REF
-        # is unset).
-        assert "qwen3:14b" in script
+        assert "LOCAL_PROVIDER_KEY" in script
+        assert "'qwen3:14b'" in script
+        assert "${LOCAL_PROVIDER_KEY}/${LOCAL_MODEL_NAME}" in script
         assert "config.models.providers.ollama" in script
         assert "OPENCLAW_OLLAMA_API" in script
         assert "api: OLLAMA_PROVIDER_API" in script
