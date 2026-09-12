@@ -37,6 +37,15 @@ services:
     environment:
       - AGENTSHROUD_INSTANCE_LABEL=dev-marvin
 
+  voice-gateway:
+    ports: !override
+      # 8766, not the base file's 8765: prod (ijefferson.admin) publishes
+      # 127.0.0.1:8765 on this same host, and the two accounts' Colima VMs
+      # race Lima's per-port SSH forwarder for it — whichever wins gets ALL
+      # host connections, so dev clients intermittently hit prod's gateway
+      # and die with 1008 invalid-token (confirmed with prod 2026-08-29).
+      - "127.0.0.1:8766:8765"
+
 secrets:
   telegram_bot_token:
     file: ./secrets/telegram_bot_token_marvin.txt

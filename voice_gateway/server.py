@@ -366,8 +366,10 @@ async def _lifespan(_app: FastAPI):
 app = FastAPI(title="AgentShroud Voice Gateway", lifespan=_lifespan)
 
 
-@app.get("/health")
+@app.api_route("/health", methods=["GET", "HEAD"])
 async def health() -> dict:
+    # HEAD included: external uptime monitors probe with HEAD, and a 405
+    # makes a healthy gateway look down (live incident, 2026-08-29 funnel cutover).
     return {"status": "ok"}
 
 

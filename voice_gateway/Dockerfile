@@ -24,7 +24,11 @@ RUN apt-get update -qq && \
     && rm -rf /var/lib/apt/lists/*
 
 COPY voice_gateway/requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+# --retries/--timeout: the multi-GB wheel downloads (torch chain) die on
+# transient network faults from this host (PyPI read timeout + SSL record
+# failure, two of three consecutive build failures on 2026-08-30); per-package
+# retries let a blip cost seconds instead of the whole build.
+RUN pip install --no-cache-dir --retries 10 --timeout 60 -r requirements.txt
 
 # Pre-bake the Kokoro TTS model weights so runtime needs ZERO egress.
 # voice-gateway runs on agentshroud-isolated; HF_HUB_OFFLINE=1 blocks all

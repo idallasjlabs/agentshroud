@@ -23,6 +23,14 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 
+# Per-user temp dir, NOT bare /tmp: macOS shares /tmp across accounts, and a
+# fixed log path there collides when prod (ijefferson.admin) and dev
+# (agentshroud-bot) both run this on the shared host — the second account gets
+# EACCES on the other's leftover file and the redirect failure reads as a
+# candidate-build failure (live false FAIL, 2026-08-30).
+COMPAT_TMP="${TMPDIR:-/tmp}"
+COMPAT_TMP="${COMPAT_TMP%/}"
+
 BOT=""
 OPENCLAW_VERSION_CANDIDATE=""
 HERMES_IMAGE_CANDIDATE=""
@@ -91,9 +99,9 @@ check_openclaw() {
        -f "$REPO_ROOT/docker/bots/openclaw/Dockerfile" \
        -t "$image" \
        "$REPO_ROOT" \
-       > /tmp/check-vendor-compat-openclaw-build.log 2>&1; then
-    fail "OpenClaw candidate build failed (patch script likely rejected a vendor source change) — see /tmp/check-vendor-compat-openclaw-build.log"
-    tail -40 /tmp/check-vendor-compat-openclaw-build.log >&2
+       > "$COMPAT_TMP/check-vendor-compat-openclaw-build.log" 2>&1; then
+    fail "OpenClaw candidate build failed (patch script likely rejected a vendor source change) — see $COMPAT_TMP/check-vendor-compat-openclaw-build.log"
+    tail -40 "$COMPAT_TMP/check-vendor-compat-openclaw-build.log" >&2
     return
   fi
   pass "Build succeeded"
@@ -184,9 +192,9 @@ check_hermes() {
        -f "$REPO_ROOT/docker/bots/hermes/Dockerfile" \
        -t "$image" \
        "$REPO_ROOT" \
-       > /tmp/check-vendor-compat-hermes-build.log 2>&1; then
-    fail "Hermes candidate build failed — see /tmp/check-vendor-compat-hermes-build.log"
-    tail -40 /tmp/check-vendor-compat-hermes-build.log >&2
+       > "$COMPAT_TMP/check-vendor-compat-hermes-build.log" 2>&1; then
+    fail "Hermes candidate build failed — see $COMPAT_TMP/check-vendor-compat-hermes-build.log"
+    tail -40 "$COMPAT_TMP/check-vendor-compat-hermes-build.log" >&2
     return
   fi
   pass "Build succeeded"
@@ -238,7 +246,7 @@ check_hermes() {
   # was tried directly against the cached vendor image — confirmed while
   # developing this check. Mounting the parent directory avoids that class of
   # bug entirely.
-  local a2a_data_dir="/tmp/check-vendor-compat-hermes-optdata-$$"
+  local a2a_data_dir="$COMPAT_TMP/check-vendor-compat-hermes-optdata-$$"
   mkdir -p "$a2a_data_dir"
   cat "$REPO_ROOT/docker/config/hermes/config.yaml.tmpl" > "$a2a_data_dir/config.yaml"
   cat >> "$a2a_data_dir/config.yaml" <<'YAMLEOF'

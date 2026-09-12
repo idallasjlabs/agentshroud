@@ -380,7 +380,29 @@ _prune_docker() {
   timeout 60 docker builder prune -f 2>/dev/null \
     || timeout 60 docker buildx prune -f 2>/dev/null \
     || echo "  BuildKit prune timed out — continuing anyway"
+  _prune_superseded_images
   echo "Docker prune complete. Named volumes preserved."
+}
+
+# `docker image prune` only removes DANGLING images — superseded *tagged*
+# versions (agentshroud-gateway:1.5.0/1.5.1/… after a 1.6.0 rebuild) pile up
+# forever and filled the Colima VM disk on 2026-08-30 (148 images / 92.8GB,
+# build failed with ENOSPC). Keep the newest 2 version tags per AgentShroud
+# repo — current + one rollback baseline, same retention as the Sunday
+# upgrade flow — and remove the rest. `docker rmi` refuses images in use by
+# a container, so an unexpectedly-running old version is never deleted.
+_prune_superseded_images() {
+  local repo
+  for repo in agentshroud-gateway agentshroud-openclaw agentshroud/hermes \
+              agentshroud-bot-voice-gateway agentshroud-voice-gateway; do
+    docker images --filter "reference=${repo}" --format '{{.Repository}}:{{.Tag}}' 2>/dev/null \
+      | grep -v ':<none>' | grep -v ':latest' \
+      | sort -rV | tail -n +3 \
+      | while read -r img; do
+          echo "  [superseded] removing $img"
+          timeout 30 docker rmi "$img" 2>/dev/null || true
+        done
+  done
 }
 
 _asb_banner
