@@ -280,7 +280,14 @@ fi
 _seed_cron() {
     local _name="$1" _deliver="$2" _schedule="$3" _prompt="$4" _model="${5:-}" _provider="${6:-}"
     # Remove all pre-existing jobs with this exact name, then create one canonical copy.
-    hermes cron list 2>/dev/null \
+    # --all is LOAD-BEARING: the default listing hides paused jobs, so on any
+    # env where seeded jobs get paused (prod's env-split; dev pre-resume) the
+    # dedupe silently no-ops and every boot appends a full duplicate set —
+    # found 2026-08-31 with 11 copies of each job on dev (99 total) and 2
+    # copies of each on prod. Duplicates all fire concurrently when enabled:
+    # N simultaneous local-model generations per schedule (a swap-thrash and
+    # garbled-output driver on the shared 64GB host).
+    hermes cron list --all 2>/dev/null \
       | awk -v name="$_name" '
             /^  [a-f0-9]{12} \[/ { id = $1; next }
             index($0, "Name:") && index($0, name) { print id }
