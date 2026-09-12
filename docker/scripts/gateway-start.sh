@@ -44,17 +44,17 @@ if [ -x "$_FB_BIN" ]; then
     echo "[gateway-start] fluent-bit launched via $_FB_BIN (pid=$(cat /tmp/fluent-bit.pid))"
 fi
 
-# Start Wazuh agent (non-fatal) — FIM on /app/gateway + Falco alert ingestion
-# Runs as agentshroud (non-root); /var/ossec owned by agentshroud at build time.
-if [ -x /var/ossec/bin/wazuh-agentd ]; then
-    # Ensure runtime dirs exist on tmpfs (created fresh each container start)
-    mkdir -p /var/ossec/var/run /var/ossec/queue/sockets /var/ossec/tmp 2>/dev/null || true
-    /var/ossec/bin/wazuh-agentd 2>/tmp/wazuh-start.log &
-    echo "[gateway-start] wazuh-agentd launched (pid=$!)"
-fi
+# Wazuh agent runs in its own sidecar container (docker/wazuh-agent/) as of
+# 2026-09-06 — it needs a root moment to self-drop privileges via its `-u`/`-g`
+# flags, which this container's non-root-from-boot + cap_drop:ALL model can
+# never provide. See docker-compose.yml's wazuh-agent service.
 
-# Start Falco runtime monitor (non-fatal) — try modern_ebpf first, fall back to --nodriver
-# (Colima/runc environments don't support eBPF; --nodriver uses userspace tracing)
+# Start Falco runtime monitor (non-fatal) — try modern_ebpf first, fall back to
+# nodriver engine (Colima/runc environments don't support eBPF; nodriver uses
+# userspace tracing). `--nodriver` was a CLI flag on older Falco releases;
+# 0.44.1 has no such flag — the equivalent is the `-o engine.kind=nodriver`
+# config option (found 2026-09-06: the stale flag name was silently failing
+# Falco startup entirely on every boot).
 if command -v falco >/dev/null 2>&1; then
     _FALCO_COMMON_OPTS="-o file_output.enabled=true -o file_output.keep_alive=true \
         -o file_output.filename=/var/log/falco/falco_alerts.json \
@@ -67,8 +67,8 @@ if command -v falco >/dev/null 2>&1; then
     _FALCO_PID=$!
     sleep 3
     if ! kill -0 $_FALCO_PID 2>/dev/null; then
-        echo "[gateway-start] falco eBPF not supported, retrying with --nodriver"
-        falco --nodriver \
+        echo "[gateway-start] falco eBPF not supported, retrying with engine.kind=nodriver"
+        falco -o engine.kind=nodriver \
             -o file_output.enabled=true -o file_output.keep_alive=true \
             -o file_output.filename=/var/log/falco/falco_alerts.json \
             -o json_output=true -o json_include_output_property=true \

@@ -14,15 +14,22 @@ CONTAINER="${HERMES_CONTAINER:-agentshroud-hermes-v2}"
 
 echo "[hermes-dedup] Cleaning up duplicate cron jobs in ${CONTAINER}..."
 
-docker exec "${CONTAINER}" sh -c '
-    hermes cron list 2>/dev/null \
-      | awk '"'"'
-            /^  [a-f0-9]{12} \[/ { id = $1; next }
-            /Name:/ { name = $0; if (seen[name]++) print id }
-          '"'"' \
-      | xargs -r -n1 hermes cron delete
-'
+# `hermes` isn't on PATH inside the container (no /opt/hermes symlink into
+# any bin dir) — must invoke via its own venv interpreter directly, same as
+# every other in-container hermes CLI call in this repo. `--all` is required
+# on both listings below: plain `cron list` hides paused jobs, and PR #431's
+# root cause was exactly a dedupe pass that missed paused duplicates.
+HERMES_CLI='/opt/hermes/.venv/bin/python3 /opt/hermes/hermes'
+
+docker exec "${CONTAINER}" sh -c "
+    ${HERMES_CLI} cron list --all 2>/dev/null \
+      | awk '
+            /^  [a-f0-9]{12} \[/ { id = \$1; next }
+            /Name:/ { name = \$0; if (seen[name]++) print id }
+          ' \
+      | xargs -r -n1 ${HERMES_CLI} cron delete
+"
 
 echo "[hermes-dedup] Done. Current job counts:"
-docker exec "${CONTAINER}" hermes cron list 2>/dev/null \
+docker exec "${CONTAINER}" sh -c "${HERMES_CLI} cron list --all" 2>/dev/null \
   | /usr/bin/grep "Name:" | sort | uniq -c | sort -rn

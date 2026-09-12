@@ -3,6 +3,29 @@
 # Base: Node.js 22 (required by OpenClaw)
 # OpenClaw source: https://github.com/openclaw/openclaw
 
+# === docker-cli builder (2026-09-08 CVE triage) ===
+# The apt docker-ce-cli package (installed below) IS the latest available
+# release, but it's built with an older Go toolchain than what's pinned here —
+# 8+ HIGH Go-stdlib CVEs with no dependency involved at all. Same fix already
+# applied in gateway/Dockerfile: rebuild the same tagged source against the
+# current patched Go base instead of using the release .deb.
+FROM golang:1.26-trixie@sha256:771f3162219f7a66bb6be3fea1ba31f418932946a99ad9eac26ffd555dfcf393 AS docker-cli-builder
+ARG DOCKER_CLI_VERSION=29.7.2
+# docker/cli ships vendor.mod + a committed vendor/ dir instead of go.mod —
+# pre-modules GOPATH vendoring. Must clone into $GOPATH/src/... and build with
+# GO111MODULE=auto (falls back to GOPATH mode with no go.mod present).
+ENV CGO_ENABLED=0 GOFLAGS=-trimpath GOTOOLCHAIN=local GO111MODULE=auto
+RUN set -eux; \
+    mkdir -p /go/src/github.com/docker; \
+    git clone --depth 1 --branch "v${DOCKER_CLI_VERSION}" \
+        https://github.com/docker/cli /go/src/github.com/docker/cli; \
+    cd /go/src/github.com/docker/cli; \
+    go build -tags grpcnotrace \
+        -ldflags "-X github.com/docker/cli/cli/version.Version=${DOCKER_CLI_VERSION}" \
+        -o /out-docker ./cmd/docker; \
+    chmod 0755 /out-docker; \
+    /out-docker --version || true
+
 # M8: Base image pinned to SHA256 digest for supply chain integrity
 # Update with: docker pull node:22-bookworm-slim && docker inspect --format='{{index .RepoDigests 0}}' node:22-bookworm-slim
 # digest refreshed 2026-09-06 (Sunday upgrade) to latest patched node:22-bookworm-slim.
@@ -35,14 +58,10 @@ RUN sed -i 's/^Signed-By:.*/Trusted: yes/' /etc/apt/sources.list.d/debian.source
 # not enough — confirmed 2026-08-17: "Sandbox mode requires Docker, but the 'docker'
 # command was not found in PATH"). This container never gets a docker.sock mount;
 # DOCKER_HOST points at the scoped docker-socket-proxy service instead (see
-# docker-compose.yml). docker-ce-cli is the client package only, no daemon/dockerd.
-RUN curl -sSfL https://download.docker.com/linux/debian/gpg \
-        | gpg --dearmor -o /usr/share/keyrings/docker.gpg \
-    && echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker.gpg] https://download.docker.com/linux/debian bookworm stable" \
-        > /etc/apt/sources.list.d/docker.list \
-    && apt-get update \
-    && apt-get install -y --no-install-recommends docker-ce-cli \
-    && rm -rf /var/cache/apt/archives/*.deb /var/lib/apt/lists/*
+# docker-compose.yml). Built from source via docker-cli-builder above (2026-09-08)
+# instead of the docker-ce-cli apt package — same version, current Go toolchain.
+COPY --from=docker-cli-builder /out-docker /usr/local/bin/docker
+RUN chmod +x /usr/local/bin/docker
 
 # Trivy vulnerability scanner — pinned version with checksum verification (M7 fix)
 ARG TRIVY_VERSION=0.72.0  # SCRUM-100: patched Go

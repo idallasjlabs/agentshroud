@@ -4,6 +4,45 @@
 [extend]
 useDefault = true
 
+# Custom rule: catch generic/vendor-agnostic OAuth & API credential assignments
+# (CLIENT_ID, CLIENT_SECRET, APP_ID, APP_SECRET, CONSUMER_KEY, CONSUMER_SECRET,
+# ACCESS_TOKEN, API_ID) that gitleaks' default ruleset misses because these
+# values are low-entropy / vendor-agnostic and don't match a known token format.
+# Matches on variable-name CONTEXT + quoted-string-literal assignment, not entropy.
+# NOTE: detect-secrets cannot cover this gap without authoring a new custom
+# plugin .py file (see docs/plugins.md "Using Your Own Plugin"); this rule is
+# the sole coverage mechanism, but applies to both the pre-commit-framework
+# path and the raw .git/hooks/pre-commit fallback path (both run gitleaks).
+[[rules]]
+id          = "generic-oauth-credential-assignment"
+description = "Generic OAuth/API credential (client_id/secret, app_id/secret, consumer_key/secret, access_token, api_id) hardcoded as a string literal"
+regex       = '''(?i)(client[_-]?id|client[_-]?secret|app[_-]?id|app[_-]?secret|consumer[_-]?key|consumer[_-]?secret|access[_-]?token|api[_-]?id)\s*[:=]\s*["']([A-Za-z0-9][A-Za-z0-9\-_.]{5,})["']'''
+secretGroup = 2
+keywords    = [
+  "client_id", "client-id", "clientid",
+  "client_secret", "client-secret", "clientsecret",
+  "app_id", "app-id", "appid",
+  "app_secret", "app-secret", "appsecret",
+  "consumer_key", "consumer-key", "consumerkey",
+  "consumer_secret", "consumer-secret", "consumersecret",
+  "access_token", "access-token", "accesstoken",
+  "api_id", "api-id", "apiid",
+]
+
+  # Rule-scoped allowlist: suppress placeholder string literals. Env-var
+  # references (os.environ[...], process.env.X, System.getenv("X"),
+  # os.getenv("X"), ${X}, {{ X }}) do NOT need an allowlist entry -- they are
+  # excluded structurally because the regex requires a quote character
+  # immediately after the = / : operator, which none of those patterns have.
+  # The pre-existing top-level [allowlist] below (REDACTED, doc paths) also
+  # still applies to this rule.
+  [rules.allowlist]
+  regexTarget = "match"
+  regexes = [
+    '''(?i)(your|my)[-_ ]?(client|app|consumer|api)[-_ ]?(id|secret|key|token)''',
+    '''(?i)\b(change[-_]?me|replace[-_]?me|insert[-_]?here|placeholder|example|dummy|sample|fake|test[-_]?value|xxx+|todo)\b''',
+  ]
+
 [allowlist]
   description = "Ignore OpenSCAP 'REDACTED' placeholders and documentation examples"
 

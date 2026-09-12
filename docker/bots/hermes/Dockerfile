@@ -57,15 +57,16 @@ RUN /usr/local/bin/uv pip install --python /opt/hermes/.venv/bin/python3 ddgs==9
 # SCRUM-101 follow-up (v1.3.0): patch two vendored-venv deps whose upstream image ships a
 # vulnerable pin AND whose fix is a backward-compatible PATCH release (verified: full hermes
 # starlette/fastapi/mcp/cryptography stack still imports after the bump — smoke-checked in build).
-#   tornado         6.5.5 -> 6.5.6   (CVE-2026-49853 auth-header cross-origin redirect leak;
-#                                     CVE-2026-49855 gzip-bomb unbounded decompression)
+#   tornado         6.5.5 -> 6.5.8   (CVE-2026-49853 auth-header cross-origin redirect leak;
+#                                     CVE-2026-49855 gzip-bomb unbounded decompression;
+#                                     CVE-2026-82397 found 2026-09-08, fixed in 6.5.8)
 #   python-multipart 0.0.27 -> 0.0.30 (CVE-2026-53539 form-urlencoded DoS)
 # NOTE: starlette (->1.3.1) and cryptography (->48.0.1) are NOT bumped here — they are core
 # hermes-agent pins whose fixed versions are minor/major jumps across the fastapi/mcp/auth stack
 # that cannot be validated without full upstream integration testing; they are documented as
 # upstream-vendored "currently unmitigable" residue in docs/security/cve-mitigation-matrix.md.
 RUN /usr/local/bin/uv pip install --python /opt/hermes/.venv/bin/python3 \
-        tornado==6.5.6 \
+        tornado==6.5.8 \
         python-multipart==0.0.30
 
 # CVE registry verification pass (2026-07-31): real per-CVE research against the exact
@@ -98,6 +99,32 @@ RUN /usr/local/bin/uv pip install --python /opt/hermes/.venv/bin/python3 \
 # directly underneath it (npm manages that tree). Global npm self-update only;
 # no app code touches it.
 RUN npm install -g npm@12.0.2
+
+# 2026-09-08: npm@12.0.2 (above) is already the latest npm release, but Trivy
+# still flags its OWN bundled deps (tar 7.5.19, brace-expansion 5.0.7,
+# ip-address 10.2.0) for CVEs with a fix in a newer patch version npm hasn't
+# re-released with yet — genuinely upstream-blocked, no newer npm to bump to
+# (verified via `npm view npm version`); tracked, not silently dropped.
+#
+# hermes-agent's own app-level node_modules DO have available fixes though —
+# patch bumps only, applied directly since these are leaf/near-leaf deps with
+# no API surface hermes-agent's own code touches beyond calling into them:
+#   browserslist 4.28.6 -> 4.28.7  (CVE-2026-73088, CVE-2026-73089)
+#   nanoid       3.3.17 -> 3.3.18  (CVE-2026-67213; transitive dep of both
+#                                   sanitize-html and vite under /opt/hermes)
+RUN npm install --prefix /opt/hermes browserslist@4.28.7 \
+    && npm install --prefix /opt/hermes/node_modules/sanitize-html nanoid@3.3.18 \
+    && npm install --prefix /opt/hermes/node_modules/vite nanoid@3.3.18
+
+# 2026-09-08: uv/uvx (vendored Rust binaries used for the ddgs/tornado/etc.
+# venv installs above) shipped at 0.11.6 in the upstream base image, carrying
+# two transitive-dependency CVEs (quinn-proto GHSA-4w2j-m93h-cj5j, rustls-webpki
+# GHSA-82j2-j2ch-gfr8) fixed further upstream. `uv self update` refuses to run
+# ("installed through an external package manager") since the base image
+# installed it via a distro/vendor package rather than the official
+# installer, so replace the binaries directly via astral-sh's own installer
+# instead — same official release artifact `self update` would have fetched.
+RUN curl -LsSf https://astral.sh/uv/install.sh | env UV_INSTALL_DIR=/usr/local/bin UV_NO_MODIFY_PATH=1 sh
 
 # Crash-loop fix (2026-07-17): the Telegram adapter's getUpdates health instrumentation
 # does `request.do_request = _do_request` to wrap polling requests, but the vendored

@@ -46,8 +46,8 @@ Local — single model (LM Studio :1234):
 Local — Ollama (back-compat):
   local              ollama/qwen3:14b via Ollama :11434
 
-Local — multi-role (LM Studio :1234 + mlx_lm :8234):
-  local-multi        anchor=qwen3.8-27b-mlx  coding=qwen2.5-coder:32b  reasoning=deepseek-r1
+Local — multi-role (Rapid-MLX :8002 + oMLX :8000 + Turbo Fieldflare :8238):
+  local-multi        anchor=nemotron-3.5-lightning-rapid  coding=qwen3-coder-30b-a3b-instruct  reasoning=deepseek-r1
 
 Optional [model_ref] overrides the default for any target.
 Optional --wait (with `local` target): poll until Ollama model is available.
@@ -122,8 +122,8 @@ OLLAMA_PROVIDER_API="ollama"  # overridden to openai-completions for LM Studio t
 LMSTUDIO_API_BASE="${LMSTUDIO_API_BASE:-http://host.docker.internal:1234}"
 MLXLM_API_BASE="${MLXLM_API_BASE:-http://host.docker.internal:8234}"
 FIELDFLARE_API_BASE="${FIELDFLARE_API_BASE:-http://host.docker.internal:8238}"
-ANCHOR_MODEL="${AGENTSHROUD_ANCHOR_MODEL:-qwen3.8-27b-mlx}"
-CODING_MODEL="${AGENTSHROUD_CODING_MODEL:-qwen2.5-coder:32b}"
+ANCHOR_MODEL="${AGENTSHROUD_ANCHOR_MODEL:-nemotron-3.5-lightning-rapid}"
+CODING_MODEL="${AGENTSHROUD_CODING_MODEL:-qwen3-coder-30b-a3b-instruct}"
 REASONING_MODEL="${AGENTSHROUD_REASONING_MODEL:-deepseek-r1}"
 
 case "$TARGET" in
@@ -502,11 +502,11 @@ verify_both_bots_healthy() {
     if curl -fsS --max-time 3 "http://localhost:18789/health" 2>/dev/null | grep -q 'ok\|healthy'; then
       openclaw_ok=1
     fi
-    # Hermes health endpoint; skipped if not in full profile
+    # Hermes health endpoint — genuinely checked now that this script always
+    # restarts it above (previously this always set hermes_ok=1 regardless
+    # of the curl result, so --verify never actually caught a broken Hermes).
     if curl -fsS --max-time 3 "http://localhost:8642/health" 2>/dev/null | grep -q 'ok\|healthy'; then
       hermes_ok=1
-    else
-      hermes_ok=1  # Hermes may not be in the current profile; treat as optional
     fi
 
     if (( gw_ok && openclaw_ok && hermes_ok )); then
@@ -559,6 +559,25 @@ if [[ "${SWITCH_MODEL_TEST_MODE}" != "1" ]]; then
   AGENTSHROUD_REASONING_MODEL="${REASONING_MODEL}" \
   OPENCLAW_GATEWAY_BIND="${OPENCLAW_GATEWAY_BIND:-lan}" \
   $COMPOSE -f "${COMPOSE_FILE}" up -d --force-recreate gateway openclaw
+
+  # Hermes deploys via `docker run` (docker/bots/hermes/run-standalone.sh),
+  # not compose — force-recreating gateway/openclaw above never touches it.
+  # Restart it here too so "Hermes always switches atomically with OpenClaw"
+  # (comment above) is actually true, not just aspirational. Mirrors
+  # scripts/asb's _hermes_up(): run-standalone.sh reads these vars from the
+  # CALLING shell's env at container-creation time, not from
+  # MODEL_ENV_FILE/docker/.env automatically — subshell keeps the sourced
+  # env from leaking into the rest of this script.
+  (
+    set -a
+    # shellcheck source=docker/.env
+    . "${MODEL_ENV_FILE}" 2>/dev/null || true
+    set +a
+    AGENTSHROUD_PROJECT="${AGENTSHROUD_PROJECT:-agentshroud}" \
+    AGENTSHROUD_VERSION="${AGENTSHROUD_VERSION:-latest}" \
+    AGENTSHROUD_SECRETS_DIR="${AGENTSHROUD_SECRETS_DIR:-$HOME/.agentshroud/.asb-secrets}" \
+      bash "${REPO_ROOT}/docker/bots/hermes/run-standalone.sh" up
+  )
 fi
 
 if [[ "${VERIFY_AFTER_SWITCH}" == "true" ]]; then

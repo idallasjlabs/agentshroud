@@ -57,7 +57,7 @@
       "trust": false
     },
     "xmind": {
-      "command": "/Users/ijefferson.admin/.nvm/versions/node/v20.20.2/bin/npx",
+      "command": "/opt/homebrew/bin/npx",
       "args": [
         "-y",
         "xmind-generator-mcp"
@@ -71,7 +71,7 @@
       "trust": false
     },
     "safari": {
-      "command": "/Users/ijefferson.admin/.nvm/versions/node/v20.20.2/bin/npx",
+      "command": "/opt/homebrew/bin/npx",
       "args": [
         "-y",
         "safari-mcp"

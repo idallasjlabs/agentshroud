@@ -96,7 +96,7 @@ _secret_mount_args() {
     if [ -f "$path" ]; then
       printf -- '-v\n%s:/run/secrets/%s:ro\n' "$path" "$key"
     else
-      echo "  [hermes-standalone] WARN: no secret file found for '${key}' (checked $SECRETS_DIR and $FALLBACK_SECRETS_DIR) — skipping mount" >&2
+      echo "  [hermes-standalone] ERROR: no secret file found for '${key}' (checked $SECRETS_DIR and $FALLBACK_SECRETS_DIR) — skipping mount; any skill needing it will fail until this is fixed" >&2
     fi
   done
 }
