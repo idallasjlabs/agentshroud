@@ -273,8 +273,12 @@ celerybeat.pid
 # NODE.JS / JAVASCRIPT
 lerna-debug.log*
 .pnpm-debug.log*
-package-lock.json
-yarn.lock
+# package-lock.json / yarn.lock intentionally NOT ignored here — see the
+# "Lock files" block above (!package-lock.json): lockfiles are tracked for
+# supply-chain integrity, same as poetry.lock/Pipfile.lock/requirements.lock.
+# Do not re-add them here; a prior copy-paste of this block silently
+# re-ignored them repo-wide from 2026-03-22 to 2026-09-06 (Sunday upgrade),
+# leaving every npm audit against this repo running without a lockfile.
 .yarn-integrity
 # AI/LLM TOOLS & CLI
 # MCP configurations
