@@ -55,12 +55,10 @@ class TokenValidator:
         self.expected_audience = expected_audience
         self.expected_issuer = expected_issuer
         self._db = sqlite3.connect(audit_log_path)
-        self._db.execute(
-            """CREATE TABLE IF NOT EXISTS audit_log (
+        self._db.execute("""CREATE TABLE IF NOT EXISTS audit_log (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             timestamp REAL, decision TEXT, reason TEXT, claims TEXT
-        )"""
-        )
+        )""")
         self._db.commit()
 
     def _decode_token(self, token: str) -> Dict[str, Any]:

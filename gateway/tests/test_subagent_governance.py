@@ -1,7 +1,6 @@
 # Copyright © 2026 Isaiah Dallas Jefferson, Jr. AgentShroud™. All rights reserved.
 """Tests for SubagentGovernance module."""
 
-
 import pytest
 
 from gateway.security.subagent_governance import (
