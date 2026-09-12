@@ -24,7 +24,7 @@
 #     version whose module path changes to `/v2`; slsa-verifier v2.7.1 imports the v1
 #     path -> cannot override without patching upstream source (unreleased).
 # Reproducible: pinned Go base digest + pinned module version + go.sum re-verified.
-FROM golang:1.26-trixie@sha256:117e07f49461abb984fc8aef661432461ff43d06faa22c3b73af6a49ce325cb9 AS slsa-builder
+FROM golang:1.26-trixie@sha256:978084e7adea0904b6d76cbc9afcb9baeed6ee170eecdc8866566aaa9f22ad0c AS slsa-builder
 ARG SLSA_VERSION=2.7.1
 ENV CGO_ENABLED=0 GOFLAGS=-trimpath GOTOOLCHAIN=local
 RUN set -eux; \
@@ -34,8 +34,8 @@ RUN set -eux; \
     go mod edit \
         -require=google.golang.org/grpc@v1.79.3 \
         -require=github.com/docker/cli@v29.2.0+incompatible \
-        -require=golang.org/x/crypto@v0.52.0 \
-        -require=golang.org/x/net@v0.55.0 \
+        -require=golang.org/x/crypto@v0.55.0 \
+        -require=golang.org/x/net@v0.56.0 \
         -require=github.com/go-jose/go-jose/v4@v4.1.4 \
         -require=go.opentelemetry.io/otel@v1.41.0 \
         -require=github.com/sigstore/rekor@v1.5.2; \
@@ -43,6 +43,37 @@ RUN set -eux; \
     go build -o /out-slsa-verifier ./cli/slsa-verifier; \
     chmod 0755 /out-slsa-verifier; \
     /out-slsa-verifier version || true
+
+# === falcoctl builder (SCRUM-174) ===
+# falco's release tarball bundles a falcoctl binary built with an older Go —
+# 43 HIGH Go-stdlib/module CVEs in the 0.13.0 binary it ships (2026-09-01
+# scan), while falcoctl v0.13.0 IS the latest release. Rebuild it from source
+# on the pinned patched-Go base (same play as slsa-builder above) and overlay
+# the bundled binary in the final stage. Two residuals CANNOT be overridden
+# (documented in cve-mitigation-matrix.md): docker/docker v28.5.2 (2 CVEs,
+# no fixed release) and moby/go-archive (its 0.3.0 fix removes
+# archive.Compression which the pinned docker/docker shim still calls ->
+# compile break; requires upstream falcoctl dep-tree bump, unreleased).
+FROM golang:1.26-trixie@sha256:978084e7adea0904b6d76cbc9afcb9baeed6ee170eecdc8866566aaa9f22ad0c AS falcoctl-builder
+ARG FALCOCTL_VERSION=0.13.0
+ENV CGO_ENABLED=0 GOFLAGS=-trimpath GOTOOLCHAIN=local
+RUN set -eux; \
+    git clone --depth 1 --branch "v${FALCOCTL_VERSION}" \
+        https://github.com/falcosecurity/falcoctl /src; \
+    cd /src; \
+    go mod edit \
+        -require=golang.org/x/crypto@v0.55.0 \
+        -require=golang.org/x/net@v0.56.0 \
+        -require=golang.org/x/text@v0.39.0 \
+        -require=golang.org/x/mod@v0.40.0 \
+        -require=google.golang.org/grpc@v1.82.1 \
+        -require=oras.land/oras-go/v2@v2.6.2 \
+        -require=github.com/sigstore/fulcio@v1.8.6 \
+        -require=github.com/sigstore/rekor@v1.5.2; \
+    go mod tidy; \
+    go build -ldflags "-X github.com/falcosecurity/falcoctl/cmd/version.semVersion=${FALCOCTL_VERSION}" -o /out-falcoctl .; \
+    chmod 0755 /out-falcoctl; \
+    /out-falcoctl version || true
 
 # === Builder Stage ===
 # M8: Base image pinned to SHA256 digest for supply chain integrity
@@ -82,7 +113,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 # 1Password CLI, Wazuh HIDS agent, libelf1 (Falco dep) — consolidated single layer (~100MB saved).
 # SCRUM-101: 4.9.2 → 4.14.5 (latest 4.x; ships underscore >= 1.13, retiring the
 # CVE-2021-23358 .trivyignore suppression, and clears accumulated agent-lib CVEs).
-ARG WAZUH_VERSION=4.14.5
+ARG WAZUH_VERSION=4.14.7
 # Install base packages and clean between groups to limit peak disk usage.
 # /apt-dl is on the writable layer (real disk), not tmpfs like /tmp.
 # This avoids "not enough free space in /tmp" on constrained hosts (Raspberry Pi).
@@ -124,7 +155,7 @@ RUN mkdir -p /apt-dl/partial \
 # cosign bootstrap — supply-chain verification tool used to verify Trivy below.
 # Installed early so it is available during Trivy download/verification.
 # Pinned to SHA256 digest via published cosign_checksums.txt.
-ARG COSIGN_BOOTSTRAP_VERSION=2.6.3  # SCRUM-100: patched Go (stayed on 2.x to keep verify-blob flags)
+ARG COSIGN_BOOTSTRAP_VERSION=2.6.5  # SCRUM-100: patched Go (stayed on 2.x to keep verify-blob flags); SCRUM-174 bump
 RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     case "$DPKG_ARCH" in \
       arm64) COSIGN_ARCH="arm64" ;; \
@@ -142,7 +173,7 @@ RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     rm /tmp/cosign_checksums.txt
 
 # Syft SBOM generator — pinned version
-ARG SYFT_VERSION=1.46.0  # SCRUM-100: patched Go
+ARG SYFT_VERSION=1.51.1  # SCRUM-100: patched Go; SCRUM-174 bump
 RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     case "$DPKG_ARCH" in \
       arm64) SYFT_ARCH="arm64" ;; \
@@ -156,7 +187,7 @@ RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     rm "/tmp/syft_${SYFT_VERSION}_linux_${SYFT_ARCH}.deb"
 
 # Trivy vulnerability scanner — pinned version (M7 fix)
-ARG TRIVY_VERSION=0.72.0  # SCRUM-100: patched Go
+ARG TRIVY_VERSION=0.74.0  # SCRUM-100: patched Go; SCRUM-174 bump
 # R2-M1: Download Trivy with SHA256 + cosign signature verification for supply chain integrity
 RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     case "$DPKG_ARCH" in \
@@ -185,7 +216,7 @@ RUN DPKG_ARCH=$(dpkg --print-architecture) && \
 # cosign — image signing and verification (Domain 17)
 # R2-M1: Checksum verified via published cosign_checksums.txt (same pattern as Trivy)
 # SCRUM-101: 3.0.5 → 3.1.1 (latest; rebuilt against patched Go stdlib + sigstore-go v1.2.0).
-ARG COSIGN_VERSION=3.1.1
+ARG COSIGN_VERSION=3.1.3
 RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     case "$DPKG_ARCH" in \
       arm64) COSIGN_ARCH="arm64" ;; \
@@ -219,7 +250,7 @@ RUN chmod +x /usr/local/bin/slsa-verifier
 #   --build-arg DOCKER_CLI_SHA256_AMD64=<sha> --build-arg DOCKER_CLI_SHA256_ARM64=<sha>
 # Obtain values: sha256sum docker-{version}.tgz after manual download and verification.
 # SCRUM-101: 29.3.0 → 29.6.1 (latest static CLI; patched Go stdlib).
-ARG DOCKER_CLI_VERSION=29.6.1
+ARG DOCKER_CLI_VERSION=29.7.2
 ARG DOCKER_CLI_SHA256_AMD64=""
 ARG DOCKER_CLI_SHA256_ARM64=""
 RUN DPKG_ARCH=$(dpkg --print-architecture) && \
@@ -242,7 +273,7 @@ RUN DPKG_ARCH=$(dpkg --print-architecture) && \
 # Fluent Bit log processor — pinned version, arch-aware (same pattern as Trivy/Syft)
 # SCRUM-101: 3.2.7 → 5.0.9 (latest maintenance; clears C/Go lib CVEs). Config is
 # plain-INI ([SERVICE]/[INPUT]/[FILTER]/[OUTPUT]) — stable across 3.x→5.x; sidecar intact.
-ARG FLUENT_BIT_VERSION=5.0.9
+ARG FLUENT_BIT_VERSION=5.1.1
 RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     ( curl -sSfL -o "/tmp/fluent-bit_${FLUENT_BIT_VERSION}_${DPKG_ARCH}.deb" \
         "https://packages.fluentbit.io/debian/bookworm/pool/main/f/fluent-bit/fluent-bit_${FLUENT_BIT_VERSION}_${DPKG_ARCH}.deb" && \
@@ -273,6 +304,9 @@ RUN DPKG_ARCH=$(dpkg --print-architecture) && \
       tar -xzf /tmp/falco.tar.gz -C / --strip-components=1 && \
       rm /tmp/falco.tar.gz ) || \
     echo "falco: download deferred to runtime"
+
+# Overlay falco's bundled falcoctl with the patched-Go source build (SCRUM-174)
+COPY --from=falcoctl-builder /out-falcoctl /usr/bin/falcoctl
 
 # Falco config and custom AgentShroud rules
 RUN mkdir -p /etc/falco/rules.d

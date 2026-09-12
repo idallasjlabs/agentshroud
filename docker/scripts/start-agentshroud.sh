@@ -805,23 +805,50 @@ trap '
         || echo "[startup] ⚠ Could not send Telegram starting notification"
     _slack_send "OpenClaw starting" || true
 
-    # Poll OpenClaw HTTP endpoint and Telegram/model readiness — up to 120s
+    # Poll OpenClaw HTTP endpoint and Telegram/model readiness for up to
+    # max_iterations * 2s, setting the shared $ready variable to "yes" once
+    # all three probes pass within that window.
+    _poll_openclaw_ready() {
+        local max_iterations="$1"
+        for _i in $(seq 1 "${max_iterations}"); do
+            _http_ok=0
+            _tg_ok=0
+            _model_ok=0
+            curl -sf http://localhost:18789/ >/dev/null 2>&1 && _http_ok=1
+            _telegram_get_me_ready && _tg_ok=1
+            _model_runtime_ready && _model_ok=1
+            if [ "${_http_ok}" = "1" ] && [ "${_tg_ok}" = "1" ] && [ "${_model_ok}" = "1" ]; then
+                ready="yes"
+                return 0
+            fi
+            sleep 2
+        done
+        return 1
+    }
+
+    # Initial window — up to 120s.
     ready="no"
-    for _i in $(seq 1 60); do
-        _http_ok=0
-        _tg_ok=0
-        _model_ok=0
-        curl -sf http://localhost:18789/ >/dev/null 2>&1 && _http_ok=1
-        _telegram_get_me_ready && _tg_ok=1
-        _model_runtime_ready && _model_ok=1
-        if [ "${_http_ok}" = "1" ] && [ "${_tg_ok}" = "1" ] && [ "${_model_ok}" = "1" ]; then
-            ready="yes"
-            break
-        fi
-        sleep 2
-    done
+    _poll_openclaw_ready 60
 
     echo "[startup] Readiness result: ready=${ready}"
+
+    if [ "${ready}" != "yes" ]; then
+        _telegram_send "🟠 OpenClaw starting (readiness delayed)" \
+            && echo "[startup] ⚠ Sent delayed startup notification" \
+            || echo "[startup] ⚠ Could not send delayed startup notification"
+        _slack_send "OpenClaw starting (readiness delayed)" || true
+
+        # Extended window: real OpenClaw startup (npm reseeding + 3 SDK
+        # repatches every boot) frequently runs past 120s under host load, so
+        # crossing the initial window does not mean the app is broken. Keep
+        # polling instead of giving up permanently — otherwise the "online"
+        # notification never fires again for this boot even once the
+        # container does become healthy. Incident: recurring readiness-delayed
+        # false negatives observed 2026-08-30, 2026-09-03, 2026-09-04.
+        _EXTENDED_READY_ITERATIONS="${OPENCLAW_EXTENDED_READY_ITERATIONS:-300}"
+        _poll_openclaw_ready "${_EXTENDED_READY_ITERATIONS}"
+        echo "[startup] Extended readiness result: ready=${ready}"
+    fi
 
     if [ "${ready}" = "yes" ]; then
         # Gateway is confirmed responsive — safe to query/edit live cron jobs now.
@@ -852,10 +879,9 @@ trap '
             && echo "[startup] ✓ Sent Slack startup notification" \
             || true
     else
-        _telegram_send "🟠 OpenClaw starting (readiness delayed)" \
-            && echo "[startup] ⚠ Sent delayed startup notification" \
-            || echo "[startup] ⚠ Could not send delayed startup notification"
-        _slack_send "OpenClaw starting (readiness delayed)" || true
+        # The "readiness delayed" notification already went out above, before
+        # the extended poll — don't send it twice.
+        echo "[startup] Gave up waiting for readiness — no online notification sent this boot"
     fi
 ) &
 

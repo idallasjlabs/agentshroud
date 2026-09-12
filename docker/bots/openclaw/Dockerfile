@@ -85,6 +85,14 @@ RUN curl -sSfL https://packages.wazuh.com/key/GPG-KEY-WAZUH \
     && rm -rf /var/cache/apt/archives/*.deb /var/lib/apt/lists/* \
     && chown -R node:node /var/ossec
 
+# 2026-09-02: CVE-2026-59873 (node-tar DoS via crafted gzip bomb, fixed in tar 7.5.19)
+# in the base image's global npm CLI (vendored tar 7.5.11 under npm's own
+# node_modules, not an OpenClaw/app dependency). npm 12.0.2 is the first npm
+# release that requires tar>=7.5.19 itself, so bumping npm is the fix rather than
+# patching tar directly underneath it (npm manages that tree). Done before any
+# other global npm install so every subsequent one uses the patched npm/tar.
+RUN npm install -g npm@12.0.2
+
 # Install bun via npm (avoids curl|bash supply chain risk)
 # M8: Pin bun to specific version for reproducible builds
 RUN npm install -g bun@1.2.4
