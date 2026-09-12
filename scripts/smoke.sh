@@ -55,6 +55,15 @@ run_test "test_setup_secrets.sh" bash "$SMOKE_DIR/test_setup_secrets.sh"
 # OpenClaw + Hermes startup photo + collaborator greeter static assertions
 run_test "test_openclaw_photo.sh" bash "$SMOKE_DIR/test_openclaw_photo.sh"
 
+# OpenClaw startup readiness poll must retry after its initial window expires
+run_test "test_openclaw_readiness_retry.sh" bash "$SMOKE_DIR/test_openclaw_readiness_retry.sh"
+
+# OpenClaw main-model provider must match what apply-patches.js registers
+run_test "test_openclaw_model_provider_consistency.sh" bash "$SMOKE_DIR/test_openclaw_model_provider_consistency.sh"
+
+# Colima route auto-heal + correct container names; SDK-patch fallback-safe path resolution
+run_test "test_colima_and_sdk_patch_fallback_resolution.sh" bash "$SMOKE_DIR/test_colima_and_sdk_patch_fallback_resolution.sh"
+
 # Hermes cron HTML email static assertions
 run_test "test_hermes_cron_html_email.sh" bash "$SMOKE_DIR/test_hermes_cron_html_email.sh"
 

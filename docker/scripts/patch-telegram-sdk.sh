@@ -7,7 +7,22 @@
 # than silently ship an image where Telegram egress bypasses the gateway.
 set -e
 
-SDK_PATH="$(npm root -g)/openclaw/node_modules/grammy/out/core/client.js"
+# Resolve the openclaw install actually in use (respects PATH, so it
+# naturally picks .npm-global's fresh seed when present, or falls back to
+# the image-bundled copy when the seed failed) — npm root -g instead reports
+# the CONFIGURED prefix regardless of whether anything was actually
+# installed there, so it silently pointed at an empty/nonexistent directory
+# whenever the npm registry seed step failed (e.g. a transient 502 from
+# registry.npmjs.org), which made this whole check a no-op: SDK_PATH never
+# existed, so the "not found" branch fired every time and was logged as a
+# non-fatal warning by the caller instead of blocking — letting an
+# unpatched, gateway-bypassing SDK ship undetected. Incident: 2026-09-07.
+OPENCLAW_BIN="$(command -v openclaw)" || {
+    echo "ERROR: openclaw binary not found on PATH — cannot locate SDK to patch." >&2
+    exit 1
+}
+OPENCLAW_ROOT="$(dirname "$(dirname "$(readlink -f "$OPENCLAW_BIN")")")"
+SDK_PATH="$OPENCLAW_ROOT/openclaw/node_modules/grammy/out/core/client.js"
 if [ ! -f "$SDK_PATH" ]; then
     echo "ERROR: grammY SDK not found at $SDK_PATH — Telegram egress would bypass the gateway." >&2
     echo "Vendor package layout may have changed; update patch-telegram-sdk.sh." >&2
@@ -32,15 +47,25 @@ if (!patched && !c.includes(marker)) {
     console.error('Telegram egress would bypass the gateway. Vendor SDK source likely changed; update patch-telegram-sdk.sh.');
     process.exit(1);
 }
-fs.writeFileSync(p, c);
-console.log('grammY SDK patched successfully');
+// Skip the write when nothing changed — e.g. the image-build-time patched
+// copy (read-only rootfs) re-checked here on every boot via
+// init-openclaw-config.sh's unconditional 'Always ensure ... SDK patches'
+// pass. Writing unconditionally would EROFS on that already-correct file
+// for no reason (harmless, but a noisy failure on every boot when the npm
+// reseed step falls back to the bundled copy).
+if (patched) {
+    fs.writeFileSync(p, c);
+    console.log('grammY SDK patched successfully');
+} else {
+    console.log('grammY SDK already patched — no changes needed');
+}
 " "$SDK_PATH"
 
 # Patch OpenClaw dist: ALL hardcoded api.telegram.org URLs must route through gateway.
 # Node.js native fetch() does not respect HTTPS_PROXY, so any hardcoded
 # https://api.telegram.org URL bypasses the Slack bridge intercept and is blocked
 # by CONNECT_FORCE_BLOCK_DOMAINS. This patch rewrites every occurrence.
-OPENCLAW_DIST="$(npm root -g)/openclaw/dist"
+OPENCLAW_DIST="$OPENCLAW_ROOT/openclaw/dist"
 if [ ! -d "$OPENCLAW_DIST" ]; then
     echo "ERROR: OpenClaw dist not found at $OPENCLAW_DIST — cannot verify Telegram egress routing." >&2
     echo "Vendor package layout may have changed; update patch-telegram-sdk.sh." >&2
