@@ -40,8 +40,15 @@ LOG_FILE="$HOME/Library/Logs/agentshroud-health.log"
 STATE_FILE="/tmp/agentshroud-health-state.json"
 FIREWALL_SCRIPT="$SCRIPT_DIR/colima-firewall.sh"
 DIAG_SCRIPT="$SCRIPT_DIR/container-net-diag.sh"
-BOT_CONTAINER="agentshroud-openclaw"
-GATEWAY_CONTAINER="agentshroud-gateway"
+# Container names are env-overridable (matches gateway/security/daily_cve_report.py's
+# AGENTSHROUD_GATEWAY_CONTAINER convention, commit 154262fc6) — the literal
+# defaults here were wrong for this host for an unknown period: this account's
+# compose override (docker/docker-compose.agentshroud-bot.marvin.yml) names
+# them agentshroud-marvin-openclaw / agentshroud-marvin-gateway, not the
+# unprefixed names below, so every check against these was silently checking
+# containers that don't exist on this host.
+BOT_CONTAINER="${AGENTSHROUD_OPENCLAW_CONTAINER:-agentshroud-marvin-openclaw}"
+GATEWAY_CONTAINER="${AGENTSHROUD_GATEWAY_CONTAINER:-agentshroud-marvin-gateway}"
 
 # ── Prevent overlapping runs ─────────────────────────────────────────────────
 # container-net-diag can take >5 min; skip if a previous run is still active.
@@ -169,13 +176,37 @@ if [ "$(whoami)" = "agentshroud-bot" ]; then
   fi
 fi
 
-# 2. Check Colima VM internet access (informational only — VPN commonly blocks this)
-# Route auto-heal requires colima ssh as admin user; not available in cron context.
-# Do NOT add to FAILURES — false-positives behind VPN would generate hourly alerts.
+# 2. Check Colima VM internet access and self-heal a missing default route.
+# Colima's DHCP client reliably assigns eth0 an address but does not always
+# install a default route (observed repeatedly 2026-09-04 through
+# 2026-09-07, including on a freshly recreated VM — `ip route` has zero
+# `default via` entries while a host-scope route to the DHCP-assigned
+# gateway is present). `colima ssh` uses key-based auth into the VM, where
+# sudo is passwordless for this user — contrary to the comment this line
+# used to carry, this IS fixable from cron context, not VPN-gated.
 VM_INTERNET=true
 if ! docker exec agentshroud-gateway curl -sf --connect-timeout 5 -o /dev/null https://google.com 2>/dev/null; then
-  log "INFO: Colima VM internet check failed (expected behind VPN — route fix not available in this context)"
-  VM_INTERNET=false
+  log "DETECTED: Colima VM internet check failed"
+  HAS_DEFAULT=$(colima ssh -- sh -c "ip route show default" 2>/dev/null | tr -dc '[:print:]')
+  if [ -z "$HAS_DEFAULT" ]; then
+    GATEWAY=$(colima ssh -- sh -c "ip route | awk '/proto dhcp/ {print \$1; exit}'" 2>/dev/null | tr -dc '0-9.')
+    IFACE=$(colima ssh -- sh -c "ip route | awk '/proto dhcp/ {print \$3; exit}'" 2>/dev/null | tr -dc '[:alnum:]')
+    if [ -n "$GATEWAY" ] && [ -n "$IFACE" ]; then
+      log "AUTO-HEAL: no default route on Colima VM — adding default via $GATEWAY dev $IFACE"
+      colima ssh -- sudo ip route add default via "$GATEWAY" dev "$IFACE" >> "$LOG_FILE" 2>&1
+    else
+      log "WARNING: Colima VM has no default route and no DHCP gateway could be determined — cannot auto-heal"
+    fi
+  fi
+  if docker exec agentshroud-gateway curl -sf --connect-timeout 5 -o /dev/null https://google.com 2>/dev/null; then
+    HEALED=true
+    VM_INTERNET=true
+    log "AUTO-HEAL: ✅ Colima VM internet access restored"
+  else
+    VM_INTERNET=false
+    FAILURES+=("Colima VM has no internet access (auto-heal attempted)")
+    log "AUTO-HEAL: ❌ Colima VM internet access still failing after default-route check"
+  fi
 fi
 
 # 3. Apply/verify iptables firewall rules (check on Colima VM host, not inside container)
