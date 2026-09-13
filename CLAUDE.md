@@ -289,7 +289,12 @@ When uncertain, call it out explicitly and ask before proceeding.
    - FR6 → SL3: SHA-256 hash chain + Wazuh
    - FR7 → SL2
 5. **Semgrep** — new code must pass `.semgrep.yml` SAST rules
-6. **Docker sidecar integrity** — do not remove or stub `falco`, `clamav`, `wazuh-agent`, or `fluent-bit`
+6. **Docker sidecar integrity** — do not remove or stub `falco`, `clamav`, `wazuh-agent`, or
+   `fluent-bit`. `falco`/`clamav`/`fluent-bit` run in-process inside the `gateway` container
+   (consolidated there in March 2026); `wazuh-agent` runs as its own separate sidecar container
+   (split back out 2026-09-06 — its privilege-drop needs a root moment gateway's non-root-from-
+   boot/`cap_drop: ALL` model can't provide). See `docker/wazuh-agent/Dockerfile` and the
+   `wazuh-agent` service in `docker/docker-compose.yml`.
 7. **Approval queue** — any agent action touching `email_sending`, `file_deletion`, `external_api_calls`, or `skill_installation` must route through the approval queue
 8. **PII redaction** — presidio engine at 0.9 confidence minimum; do not lower threshold
 9. **Performance baseline** — maintain `.benchmarks/baseline-v1.0.0.json`; inbound latency <0.5ms on arm64/macOS

@@ -197,7 +197,11 @@ jobs:
           python-version: "3.11"
 
       - name: Install linters
-        run: pip install black isort flake8
+        # Pinned deliberately. Unpinned, the lint gate silently changes meaning
+        # whenever a linter releases: on 2026-09-12 CI ran black 26.5.1 / isort
+        # 9.0.1 while a developer machine had 26.3.1 / 8.0.1, so locally-clean
+        # code failed CI and each fix round flagged a different file set.
+        run: pip install black==26.5.1 isort==9.0.1 flake8==7.3.0
 
       - name: Check formatting
         run: |

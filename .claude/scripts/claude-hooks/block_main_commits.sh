@@ -32,13 +32,14 @@ BLOCKED by block_main_commits.sh:
 
   Current branch is 'main'. All changes must go through a feature branch + PR.
 
-  Create a branch first, named for the change (not tied to a release version):
-    git checkout -b fix/<slug>       # bug fix
-    git checkout -b feat/<slug>      # new capability
-    git checkout -b chore/<slug>     # everything else
+  Create a branch first:
+    git checkout -b chore/v1.0.<NEXT>-<slug>
+    (where NEXT = last bumped version + 1, e.g. v1.0.40)
 
-  Release-bump commits (gateway/__init__.py __version__ + tag) are the one
-  documented exception that goes directly to main — see .claude/skills/i-release.
+  Compute next version:
+    git log --oneline --grep='bump version to v' -1 \
+      | grep -oE 'v1\.0\.[0-9]+' \
+      | awk -F. '{print "v1.0."($3+1)}'
 
   Emergency override (dangerous):
     CLAUDE_ALLOW_MAIN=1 git ...

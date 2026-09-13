@@ -22,6 +22,10 @@
 
   "model": "sonnet",
 
+  "agentPushNotifEnabled": true,
+  "tui": "fullscreen",
+  "remoteControlAtStartup": true,
+
   "hooks": {
     "PreToolUse": [
       {
@@ -34,6 +38,10 @@
           {
             "type": "command",
             "command": ".claude/scripts/claude-hooks/block_main_commits.sh"
+          },
+          {
+            "type": "command",
+            "command": ".claude/scripts/claude-hooks/require_impact_analysis.sh"
           },
           {
             "type": "command",

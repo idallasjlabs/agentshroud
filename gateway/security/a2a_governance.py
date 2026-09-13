@@ -42,7 +42,7 @@ import logging
 import time
 from dataclasses import dataclass, field
 from enum import Enum
-from typing import Any, Optional
+from typing import Optional
 
 logger = logging.getLogger("agentshroud.security.a2a_governance")
 

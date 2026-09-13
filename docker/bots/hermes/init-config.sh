@@ -279,6 +279,15 @@ fi
 # doesn't apply.
 _seed_cron() {
     local _name="$1" _deliver="$2" _schedule="$3" _prompt="$4" _model="${5:-}" _provider="${6:-}"
+    # `hermes` isn't on PATH inside this image — must invoke via its own venv
+    # interpreter directly (see _HERMES_CLI further down in this file). Found
+    # 2026-09-04: every call in this function was bare `hermes`, so the dedup
+    # list below silently failed ("not found") and deleted nothing, on EVERY
+    # boot — the exact --all dedup fix this comment describes (2026-08-31)
+    # never actually ran. Duplicates weren't observed accumulating in
+    # practice only because this environment's seed-cron path wasn't being
+    # re-triggered on ordinary restarts; still a real latent bug.
+    _HERMES_CLI="/opt/hermes/.venv/bin/python3 /opt/hermes/hermes"
     # Remove all pre-existing jobs with this exact name, then create one canonical copy.
     # --all is LOAD-BEARING: the default listing hides paused jobs, so on any
     # env where seeded jobs get paused (prod's env-split; dev pre-resume) the
@@ -287,20 +296,20 @@ _seed_cron() {
     # copies of each on prod. Duplicates all fire concurrently when enabled:
     # N simultaneous local-model generations per schedule (a swap-thrash and
     # garbled-output driver on the shared 64GB host).
-    hermes cron list --all 2>/dev/null \
+    ${_HERMES_CLI} cron list --all 2>/dev/null \
       | awk -v name="$_name" '
             /^  [a-f0-9]{12} \[/ { id = $1; next }
             index($0, "Name:") && index($0, name) { print id }
           ' \
-      | xargs -r -n1 hermes cron delete >/dev/null 2>&1 || true
+      | xargs -r -n1 ${_HERMES_CLI} cron delete >/dev/null 2>&1 || true
     if [ -n "$_model" ]; then
-        hermes cron create --name "$_name" --deliver "$_deliver" \
+        ${_HERMES_CLI} cron create --name "$_name" --deliver "$_deliver" \
           --model "$_model" --provider "${_provider:-custom}" "$_schedule" "$_prompt" \
           2>/dev/null \
           && echo "[hermes-init] Seeded: $_name (model=$_model)" \
           || echo "[hermes-init] WARN: seed failed: $_name"
     else
-        hermes cron create --name "$_name" --deliver "$_deliver" "$_schedule" "$_prompt" \
+        ${_HERMES_CLI} cron create --name "$_name" --deliver "$_deliver" "$_schedule" "$_prompt" \
           2>/dev/null \
           && echo "[hermes-init] Seeded: $_name" \
           || echo "[hermes-init] WARN: seed failed: $_name"
@@ -668,11 +677,20 @@ fi
 # tracked) — pipe-separated exact job names that stay scheduled in prod
 # (e.g. "Daily News Podcast|Weekly job-log cleanup"). Empty/unset = pause
 # everything.
+
+# `hermes` isn't on PATH inside this image (no /opt/hermes symlink into any
+# bin dir) — every call below MUST go through its own venv interpreter
+# directly. Found 2026-09-04: this whole reconciliation block was silently
+# a no-op on every boot because of exactly this (bare `hermes cron list`
+# failed with "not found", so the loop below it never ran), which is why
+# jobs paused under an older regime never self-healed despite this "resume
+# pass" existing. Same class of bug as docker/scripts/hermes-cron-dedup.sh.
+_HERMES_CLI="/opt/hermes/.venv/bin/python3 /opt/hermes/hermes"
 _hermes_cron_ids_names() {
     # Emits "<id>\t<name>" per job. `hermes cron list --all` prints the id
     # line ("  <12hex> [status]") followed by an indented "Name: <name>"
     # line; pair them up.
-    hermes cron list --all 2>/dev/null | awk '
+    ${_HERMES_CLI} cron list --all 2>/dev/null | awk '
         /^  [a-f0-9]{12} \[/ { id = $1; next }
         id != "" && /^ +Name: / { name = $0; sub(/^ +Name: +/, "", name); print id "\t" name; id = "" }
     '
@@ -681,7 +699,7 @@ if [ "${AGENTSHROUD_ENV:-prod}" = "dev" ]; then
     _resumed_count=0
     while IFS="$(printf '\t')" read -r _jid _jname; do
         [ -n "${_jid}" ] || continue
-        hermes cron resume "${_jid}" >/dev/null 2>&1 && _resumed_count=$(( _resumed_count + 1 ))
+        ${_HERMES_CLI} cron resume "${_jid}" >/dev/null 2>&1 && _resumed_count=$(( _resumed_count + 1 ))
     done <<EOF_JOBS
 $(_hermes_cron_ids_names)
 EOF_JOBS
@@ -693,11 +711,11 @@ else
         [ -n "${_jid}" ] || continue
         case "|${AGENTSHROUD_PROD_CRON_KEEP:-}|" in
             *"|${_jname}|"*)
-                hermes cron resume "${_jid}" >/dev/null 2>&1
+                ${_HERMES_CLI} cron resume "${_jid}" >/dev/null 2>&1
                 _kept_count=$(( _kept_count + 1 ))
                 ;;
             *)
-                hermes cron pause "${_jid}" >/dev/null 2>&1 && _paused_count=$(( _paused_count + 1 ))
+                ${_HERMES_CLI} cron pause "${_jid}" >/dev/null 2>&1 && _paused_count=$(( _paused_count + 1 ))
                 ;;
         esac
     done <<EOF_JOBS

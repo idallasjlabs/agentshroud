@@ -72,7 +72,12 @@ services:
           subpath: cron
       - security-reports:/var/log/security
       - /var/run/docker.sock:/var/run/docker.sock:ro
-      - wazuh-alerts:/var/ossec/logs/alerts
+      # wazuh-agent (separate sidecar as of 2026-09-06 — see wazuh-agent
+      # service below) is now the sole writer; falco-alerts is likewise
+      # shared read-write with Falco (running here) as the writer and
+      # wazuh-agent as the read-only consumer for its <localfile> ingestion.
+      - wazuh-alerts:/var/ossec/logs/alerts:ro
+      - falco-alerts:/var/log/falco
       - clamav-db:/var/lib/clamav
     secrets:
       - gateway_password
@@ -140,8 +145,8 @@ services:
       - FIELDFLARE_API_BASE=${FIELDFLARE_API_BASE:-http://host.docker.internal:8238}
       - OMLX_API_BASE=${OMLX_API_BASE:-http://host.docker.internal:8000}
       - OMLX_API_KEY=${OMLX_API_KEY:-}
-      - AGENTSHROUD_ANCHOR_MODEL=${AGENTSHROUD_ANCHOR_MODEL:-qwen3.8-27b-mlx}
-      - AGENTSHROUD_CODING_MODEL=${AGENTSHROUD_CODING_MODEL:-qwen2.5-coder:32b}
+      - AGENTSHROUD_ANCHOR_MODEL=${AGENTSHROUD_ANCHOR_MODEL:-nemotron-3.5-lightning-rapid}
+      - AGENTSHROUD_CODING_MODEL=${AGENTSHROUD_CODING_MODEL:-qwen3-coder-30b-a3b-instruct}
       - AGENTSHROUD_REASONING_MODEL=${AGENTSHROUD_REASONING_MODEL:-deepseek-r1}
       - DOCKER_CONTENT_TRUST=1
       # Image digest refs for cosign supply-chain verification. Set to
@@ -216,11 +221,6 @@ services:
       - /tmp:noexec,nosuid,size=2048m
       - /var/tmp:noexec,nosuid,size=50m
       - /var/log/fluent-bit:noexec,nosuid,size=50m
-      - /var/log/falco:noexec,nosuid,size=50m
-      - /var/ossec/var:nosuid,size=10m,uid=1000,gid=1000
-      - /var/ossec/queue:nosuid,size=50m,uid=1000,gid=1000
-      - /var/ossec/tmp:noexec,nosuid,size=10m,uid=1000,gid=1000
-      - /var/ossec/logs/ossec:noexec,nosuid,size=20m,uid=1000,gid=1000
     mem_limit: 4096m
     memswap_limit: 4096m
     cpus: 1.0
@@ -255,6 +255,79 @@ services:
     # Gateway on BOTH networks: internal (internet) + isolated (to bot)
     networks:
       - agentshroud-internal
+      - agentshroud-isolated
+
+  # ── Wazuh HIDS agent (standalone sidecar) ───────────────────────────────────
+  # Split out of the gateway container 2026-09-06: wazuh-agentd's privilege
+  # drop (setgroups()+setgid()+setuid() from root to the "wazuh" user) needs a
+  # real root moment, which the gateway's non-root-from-boot + cap_drop: ALL
+  # model can never provide (confirmed: cap_add only reaches a non-root
+  # process's bounding set, not its effective set; a matching primary GID
+  # doesn't help because setgroups() has no same-list exception; a setcap file
+  # capability failed outright — CAP_SETFCAP itself is blocked at the
+  # Colima/VM level even under --privileged). Runs as root only for the few
+  # syscalls its own privilege drop needs, then permanently drops to uid/gid
+  # 1000 (matching gateway's "agentshroud" so shared read-only mounts are
+  # readable) — see docker/wazuh-agent/Dockerfile and docker/wazuh/ossec.conf.
+  wazuh-agent:
+    build:
+      context: ..
+      dockerfile: docker/wazuh-agent/Dockerfile
+      args:
+        WAZUH_VERSION: 4.14.7
+    image: agentshroud-wazuh-agent:${AGENTSHROUD_VERSION:-latest}
+    container_name: agentshroud-wazuh-agent
+    hostname: wazuh-agent
+    restart: unless-stopped
+    depends_on:
+      - gateway
+    volumes:
+      # FIM target — gateway application source, read-only.
+      - ../gateway:/app/gateway:ro
+      # Security scan reports (Trivy/ClamAV/OpenSCAP/SBOM) — read-only FIM target.
+      - security-reports:/var/log/security:ro
+      # Falco alert JSON — Falco (in the gateway container) is the writer here.
+      - falco-alerts:/var/log/falco:ro
+      # This agent's own local FIM/log-analysis output — read-write.
+      - wazuh-alerts:/var/ossec/logs/alerts
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    cap_add:
+      # SETUID/SETGID: the privilege-drop itself. CHOWN/DAC_OVERRIDE: root
+      # needs these to traverse/exec files owned by uid 1000 (the package's
+      # own binaries/config) before it drops — verified empirically 2026-09-06,
+      # dropping either one reproduces a permission-denied failure.
+      - SETUID
+      - SETGID
+      - CHOWN
+      - DAC_OVERRIDE
+    read_only: true
+    tmpfs:
+      - /var/ossec/var/run:uid=1000,gid=1000
+      - /var/ossec/queue/sockets:uid=1000,gid=1000
+      - /var/ossec/queue/syscheck:uid=1000,gid=1000
+      - /var/ossec/queue/rids:uid=1000,gid=1000
+      - /var/ossec/queue/diff:uid=1000,gid=1000
+      - /var/ossec/tmp:uid=1000,gid=1000
+      - /var/ossec/logs/ossec:uid=1000,gid=1000
+    mem_limit: 256m
+    cpus: 0.25
+    pids_limit: 64
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+    healthcheck:
+      test: ["CMD", "pgrep", "-f", "wazuh-agentd"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 30s
+    # No internet egress needed — local FIM/log analysis only, no live manager.
+    networks:
       - agentshroud-isolated
 
   # ── Docker socket proxy (scoped, shared by OpenClaw + Hermes sandboxing) ────
@@ -353,7 +426,7 @@ services:
       - agentshroud-browsers:/home/node/.cache/ms-playwright
       - ../branding:/app/branding:ro
       - memory-backups:/app/memory-backups
-      - wazuh-alerts:/var/ossec/logs/alerts
+      - wazuh-alerts:/var/ossec/logs/alerts:ro
     secrets:
       - gateway_password
       - telegram_bot_token
@@ -389,8 +462,8 @@ services:
       - OPENCLAW_OLLAMA_API=${OPENCLAW_OLLAMA_API:-ollama}
       - AGENTSHROUD_LOCAL_MODEL=${AGENTSHROUD_LOCAL_MODEL:-nemotron-3.5-lightning-rapid}
       - LMSTUDIO_API_BASE=${LMSTUDIO_API_BASE:-}
-      - AGENTSHROUD_ANCHOR_MODEL=${AGENTSHROUD_ANCHOR_MODEL:-qwen3.8-27b-mlx}
-      - AGENTSHROUD_CODING_MODEL=${AGENTSHROUD_CODING_MODEL:-qwen2.5-coder:32b}
+      - AGENTSHROUD_ANCHOR_MODEL=${AGENTSHROUD_ANCHOR_MODEL:-nemotron-3.5-lightning-rapid}
+      - AGENTSHROUD_CODING_MODEL=${AGENTSHROUD_CODING_MODEL:-qwen3-coder-30b-a3b-instruct}
       - AGENTSHROUD_REASONING_MODEL=${AGENTSHROUD_REASONING_MODEL:-deepseek-r1}
       - AGENTSHROUD_TEAMS_JSON=${AGENTSHROUD_TEAMS_JSON:-}
       - AGENTSHROUD_COLLAB_LOCAL_INFO_ONLY=${AGENTSHROUD_COLLAB_LOCAL_INFO_ONLY:-0}
@@ -900,6 +973,8 @@ volumes:
   security-reports:
     driver: local
   wazuh-alerts:
+    driver: local
+  falco-alerts:
     driver: local
   clamav-db:
     driver: local

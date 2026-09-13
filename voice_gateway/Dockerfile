@@ -3,6 +3,17 @@
 # Base image pinned to SHA256 digest for supply-chain integrity (SCRUM-100).
 # Update with: docker pull python:3.12-slim && docker inspect --format='{{index .RepoDigests 0}}' python:3.12-slim
 # SCRUM-101: digest refreshed 2026-07-14 to latest patched python:3.12-slim.
+#
+# 2026-09-06 (Sunday upgrade): TRIED rebasing to python:3.12-slim-bookworm to
+# dodge trixie's 235 unfixed HIGH/CRITICAL ffmpeg/libav*/perl-base CVEs —
+# REVERTED. Trivy showed bookworm is actually worse right now: 262
+# HIGH/CRITICAL (11 CRITICAL vs trixie's 7), including 3 libmbedcrypto7 CVEs
+# marked `end_of_life` (bookworm's bundled mbedtls is past upstream support
+# entirely, so those will never be fixed on this Debian release). Trixie's
+# equivalent findings are merely `affected`/`fix_deferred` — still eligible
+# for a future fix. Do not re-attempt this swap without re-scanning both
+# bases fresh; the right fix is probably not a Debian-release swap at all
+# (see reports/upgrade-2026-09-06.md for options considered).
 FROM python:3.12-slim@sha256:c3d81d25b3154142b0b42eb1e61300024426268edeb5b5a26dd7ddf64d9daf28
 
 LABEL maintainer="Isaiah Dallas Jefferson, Jr. <idallasj@gmail.com>"

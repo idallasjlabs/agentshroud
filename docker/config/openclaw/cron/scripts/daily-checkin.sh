@@ -56,4 +56,3 @@ echo "-- pi last 3 commits --"
 _out=$(agentshroud-ssh-exec.sh raspberrypi "git log --oneline -3" "daily check-in" "/home/agentshroud-bot/Development/agentshroud")
 _rc=$?
 if [ $_rc -ne 0 ] || [ -z "$_out" ]; then echo "(failed: ssh-exec exit $_rc)"; else printf '%s\n' "$_out" | _fmt; fi
-

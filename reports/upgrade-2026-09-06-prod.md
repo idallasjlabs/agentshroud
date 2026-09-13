@@ -1,0 +1,358 @@
+# AgentShroud Weekly Upgrade — 2026-09-06
+
+## Summary
+**PARTIAL (0 component upgrades applied — pipeline repaired instead; 1 CRITICAL live fault found and partially remediated)**
+
+Owner redirected this run mid-session (2026-09-06): rather than chase the component
+upgrade, fix the machinery so the job actually runs unattended, and upgrade through the
+repaired flow next cycle. The single most important finding is that **the Sunday upgrade
+could never have succeeded on this host regardless of any scheduling fix** — see
+"CRITICAL: Docker storage exhausted" below.
+
+## CRITICAL: Docker storage exhausted (live fault, found this run)
+
+```
+Colima VM:  /dev/vdb1  118G  112G  0  100%  /var/lib/docker
+Host:       /System/Volumes/Data       142GiB free   <- misleading, different disk
+```
+
+The Docker daemon's VM disk was at **100%, zero bytes free**, while the host volume looked
+healthy. Consequences, all of which were live and undetected:
+
+1. **Hermes was silently broken while reporting `healthy`.** Its logging handler threw
+   `OSError: [Errno 28] No space left on device` continuously
+   (`/usr/lib/python3.13/logging/handlers.py:199`), and `kanban_watchers.py:1453` was
+   failing to open its kanban DB. The container's healthcheck does not exercise a disk
+   write, so `docker ps` showed green throughout.
+2. **No Sunday upgrade could ever have completed.** `docker compose build --pull` had
+   nowhere to write. Fixing the launchd/PATH/AUTON defects alone would have moved the
+   failure from the tmux line to the build step, not fixed it.
+3. Plausibly explains the intermittent Hermes garbled/empty-output flakiness previously
+   attributed to host memory pressure — worth re-testing that hypothesis now.
+
+**Remediation applied (conservative, owner-approved):** rollback tags captured first for
+all 5 running images, then `docker builder prune -f` (1.023GB build cache, 0 entries
+active) + `docker image prune -f` (dangling only). Reclaimed **4.2GB → 97% used**.
+Hermes restarted and confirmed clean: `running health=healthy restarts=0`, **0**
+`No space left on device` lines after restart.
+
+**STILL OPEN:** 4.2GB is far below the 25GiB the new preflight gate requires for image
+builds. ~58GB of unused *tagged* images remain reclaimable but require
+`docker image prune -a`, which was deliberately NOT run without explicit approval.
+**The next upgrade will still fail its preflight gate until this is resolved.**
+
+Dev→prod handoff contract requires `/Users/Shared/agentshroud-sunday/dev-result-2026-09-06.json`
+with `status: PASS` before anything is applied to prod. That file does not exist — the only
+file present in `/Users/Shared/agentshroud-sunday/` is `dev-result-2026-08-30.json` (a week
+stale). Per the run's ground rules, **nothing was applied, upgraded, rebuilt, or rolled back
+on prod today.** This report covers only the read-only Preflight, Inventory, and Security
+Findings phases (steps 0–2 of the procedure), executed against the prod stack only. This
+account (`ijefferson.admin`) cannot start/stop/exec into the dev stack (`agentshroud-bot`'s
+Colima VM), so dev's own inventory/upgrade is out of scope here entirely.
+
+## Environment Mapping
+
+- **This session = prod**, running on macOS account `ijefferson.admin`, Colima VM at
+  `unix:///Users/ijefferson.admin/.colima/default/docker.sock` (aarch64, Virtualization.Framework).
+- Active prod compose file: **`docker/docker-compose.yml`** — its service block
+  (`gateway`/`openclaw`/`hermes`/`docker-socket-proxy`/`voice-gateway`) matches the container
+  names actually running (`agentshroud-gateway`, `agentshroud-openclaw`, `agentshroud-hermes-v2`,
+  `agentshroud-docker-socket-proxy`, `agentshroud-voice-gateway`).
+- **`docker/docker-compose.agentshroud-bot.marvin.yml` is NOT what's running** — it defines
+  `container_name: agentshroud-marvin-gateway/-openclaw/-hermes`, which do not exist on this
+  host. It appears to be a per-host template/alternate profile, not live here. Flagged as a
+  discrepancy worth human review — don't assume it's dead code without confirming with Isaiah.
+- Root-level `docker-compose.secure.yml` / `docker-compose.sidecar.yml` reference
+  `openclaw:latest`, `wazuh/wazuh-agent:latest` (both floating tags) and are also not the
+  active compose file (container names there don't match running containers either).
+- LibreChat dependencies (`librechat-mongodb`, `librechat-meilisearch`) and `searxng-local`
+  are running but **not defined in any compose file found in this repo** at the paths checked
+  — they are presumably started via a separate/unlisted compose file or `docker run` outside
+  this repo's tracked config. Not able to confirm their upgrade path from repo content alone.
+- ~~**Sidecar discrepancy**: no falco/clamav/wazuh-agent container exists on this host.~~
+  **CORRECTED / RESOLVED later the same day.** The original finding was wrong in one half
+  and overtaken by events in the other:
+  - `falco`, `clamav` and `fluent-bit` do **not** run as separate containers by design —
+    they run *in-process inside the `gateway` container* (consolidated March 2026). Looking
+    for them in `docker ps` was the wrong check; their absence there is not a gap.
+  - `wazuh-agent` was split back out into its own sidecar container on 2026-09-06 while this
+    run was in progress, because an in-process wazuh-agentd cannot self-drop privileges
+    under the gateway's non-root-from-boot / `cap_drop: ALL` model. Verified live at the end
+    of this run: `agentshroud-wazuh-agent  agentshroud-wazuh-agent:latest  Up 13 minutes (healthy)`.
+    See `docker/wazuh-agent/Dockerfile` and the `wazuh-agent` service in `docker/docker-compose.yml`;
+    CLAUDE.md §7 has been updated to document the split.
+  - Follow-up: `docker/wazuh-agent/Dockerfile` was present on disk but **not yet committed**
+    at the time of writing (it is among the pre-existing uncommitted changes). Worth
+    committing so the live sidecar is reproducible from the repo.
+
+## Preflight / Baseline
+
+- Branch: `main` (pre-existing, not created by this run — see below).
+- `git describe --tags --always`: `pre-deploy-20260830T112852Z-11-g5a1caa2ef5`
+- `git log -1 --oneline`: `5a1caa2ef5 fix(cve): bump vendored npm to clear CVE-2026-59873 (node-tar DoS) (#434)`
+- **Pre-existing dirty working tree on `main`** (not created by this run, left untouched per
+  the sanctioned exception): ~45+ modified files spanning `.claude/`, `.llm_settings/`,
+  `.mcp.json`, `docker/bots/hermes/*`, `docker/config/{hermes,openclaw}/cron/prompts/*.txt`,
+  `docker/docker-compose.yml`, `gateway/security/{a2a_governance,drift_detector,health_report,
+  network_validator,token_validation,trust_manager}.py`, several `gateway/tests/*` files, and
+  more (full list via `git status --porcelain` — not reproduced here, none of these files were
+  needed by this run). No `graphify-out/**` changes present.
+- Colima: running, `docker: aarch64`, `mountType: virtiofs`, address `192.168.64.24` — healthy.
+- Disk: `/System/Volumes/Data` at 92% capacity but **160 GiB free** on a 1.8 TiB volume —
+  sufficient headroom for pulls, not a blocker.
+- `docker system df`: 48 images (100.5 GB, 53.84 GB reclaimable), 22 containers, 42 volumes
+  (11.23 GB), 17.77 GB build cache.
+- Rollback baseline (verified real, not run):
+  ```
+  # Code: reset to last known-good commit
+  git reset --hard 5a1caa2ef5        # or: git checkout pre-deploy-20260830T112852Z
+  # Images: nothing was rebuilt this run, so no image-level rollback is needed today.
+  # If a future run rebuilds gateway/openclaw/hermes images, the rollback is:
+  docker tag agentshroud-gateway:latest agentshroud-gateway:rollback-pending   # BEFORE any rebuild
+  docker compose -f docker/docker-compose.yml up -d --no-deps gateway openclaw hermes
+  ```
+
+## Upgrade Table
+
+Nothing was upgraded. "Latest available" is best-effort research; several public registry
+tag-list APIs returned unreliable/out-of-order results (noted per-row) — treat those as
+**needs manual verification**, not confirmed facts.
+
+| Component | Env | Before | Latest available | Status | Notes |
+|---|---|---|---|---|---|
+| gateway (custom image) | prod | `agentshroud-gateway:latest` (id `a1f60cffd608`), built FROM `python:3.13-slim@sha256:bffeb7bd…` + `golang:1.26-trixie@sha256:771f3162…` (multi-stage, digest-pinned) | base images already digest-pinned; no newer tag checked against registry this run | BLOCKED-awaiting-dev | Locally built, not floating — the `:latest` docker tag here is a local retag of a pinned build, not a moving upstream tag. Trivy found 6 CRITICAL / 175 HIGH open in this image today (see Security Findings). |
+| openclaw (custom image) | prod | `agentshroud-openclaw:latest` (id `694302630235`), built FROM `node:22-bookworm-slim@sha256:6c74791e…` | same base-image caveat as above | BLOCKED-awaiting-dev | 18 CRITICAL / 227 HIGH open (Trivy). |
+| Hermes (custom wrapper image) | prod | `agentshroud/hermes:latest` (id `290369698013`), built FROM `${HERMES_IMAGE}` = `nousresearch/hermes-agent@sha256:68e15ae2…` (`HERMES_VERSION=0.20.1` per `docker/versions.env`) | vendor's own Docker Hub tags use a different scheme (`v2026.4.x` date-tags), inconsistent with `HERMES_VERSION=0.20.1` — **could not confirm a reliable "latest" this run**, needs manual check against `nousresearch/hermes-agent`'s actual release notes, not just Docker Hub tag listing | BLOCKED-awaiting-dev | 18 CRITICAL / 371 HIGH open (Trivy) — highest of the three custom images. |
+| OpenClaw vendor package | prod (pinned via `docker/versions.env` `OPENCLAW_VERSION`) | `2026.7.1-2` | `2026.9.2` (npm registry, confirmed via `npm view openclaw version`) | BLOCKED-awaiting-dev | Real, confirmed gap — 2 months behind. Per procedure, bump via `scripts/update-agentshroud.sh --bot openclaw --latest` (repo's own documented flow), not hand-edited. |
+| Hermes vendor image | prod (pinned via `docker/versions.env` digest) | `nousresearch/hermes-agent@sha256:68e15ae2…` (`v0.20.1` label) | unresolved — see Hermes row above | BLOCKED-awaiting-dev | `docker/versions.env` documents the exact refresh command (`docker pull nousresearch/hermes-agent:latest && docker inspect ...`) — not run today (would mutate local image cache with a pull; deferred to the actual upgrade phase, which is blocked). |
+| mongo (LibreChat) | prod (compose file location unconfirmed — see Environment Mapping) | `mongo:8.0.20` | not reliably determined — Docker Hub tag-list API returned very old tags (`3.0.x`) for this query, clearly a pagination/sort defect on the public API side, not a real "8.0.20 is old" signal | BLOCKED-awaiting-dev | Needs manual verification via `docker manifest inspect mongo:8` or Mongo's own release notes. |
+| meilisearch (LibreChat) | prod | `getmeili/meilisearch:v1.53.1` | `v1.53.1` (GitHub Releases API, reliable) | ALREADY CURRENT | No action needed even once unblocked. |
+| searxng | prod | `searxng/searxng:2026.8.29-d226b78bc` | not reliably determined — Docker Hub tag-list query returned stale 2025-dated tags, contradicts the already-newer 2026.8.29 tag in use; API result discarded as unreliable | BLOCKED-awaiting-dev | Needs manual verification. |
+| docker-socket-proxy | prod | `tecnativa/docker-socket-proxy@sha256:1f5038b5…` (digest-pinned) | Docker Hub tag list for this repo only returned arch-suffixed tags (`arm64v8`, etc.), not version tags — needs manual check against the project's GitHub releases | BLOCKED-awaiting-dev | Already digest-pinned, which is the correct pattern others should follow. |
+| `ghcr.io/github/github-mcp-server` | prod (openclaw-mcp-github-* containers) | `:latest` | n/a | **FLOATING TAG VIOLATION** | Not pinned to a version or digest anywhere found in this repo's tracked config. Per procedure, every upgrade must pin explicitly — this is already out of compliance independent of any upgrade action. |
+| `ghcr.io/home-assistant/home-assistant` | prod (`homeassistant` container) | `:stable` | n/a | **FLOATING TAG VIOLATION** | Same issue — `:stable` is a moving tag, not a pinned release. |
+| `openclaw-sandbox:bookworm-slim` | prod (7 `openclaw-sbx-*` sandbox containers) | locally built, base presumably `node:*-bookworm-slim` per openclaw Dockerfile pattern | not checked — no separate sandbox Dockerfile found in this repo (searched, none present) | BLOCKED-awaiting-dev | Could not locate the Dockerfile that produces this image in this repo; likely built at runtime by OpenClaw itself, outside this repo's tracked files — flag for Isaiah to confirm where this is defined/pinned. |
+| gateway Python deps (`gateway/pyproject.toml`) | prod | many outdated per `pip list --outdated` (partial list: `aiohttp` 3.13.3→3.14.3, `fastapi` 0.136.3→0.141.1, `litellm` 1.82.0→1.100.0, `openai` 2.24.0→3.8.0 (major bump), `numpy` 2.4.6→2.5.2, `huggingface_hub` 1.5.0→1.30.0, and more — see full `pip list --outdated` output, truncated here) | see before column | BLOCKED-awaiting-dev | `pip-audit` is **not installed** on this host and was not installed (read-only constraint) — "outdated" is not the same as "has a known CVE"; this list needs a real `pip-audit` or `uv pip audit` pass before treating any entry as a security finding. `openai` 2.x→3.x is a major version bump — likely breaking, flag for manual changelog review before any future bump. |
+| browser-extension npm deps | prod | unknown | unknown | **BLOCKED — cannot even inventory** | No `package-lock.json` present in `browser-extension/`; `npm audit` fails with `ENOLOCK`. Generating one (`npm i --package-lock-only`) would write a new file, which this read-only run avoided per its constraints — needs to happen in the actual upgrade phase. |
+| Git submodule `firmware/voice-terminal/components/lvgl_kawaii_face` | prod (repo-wide, not host-specific) | `ef9b47c` (`v1.0.0-4-gef9b47c`) | not checked this run | BLOCKED-awaiting-dev | Only submodule in the repo. |
+| Colima / Docker CLI / compose plugin | host tooling | not version-checked this run | n/a | SKIPPED (by design) | No doc found stating the Sunday job owns host tooling upgrades — per procedure step 1, these are report-only unless docs say otherwise, and no such doc was found. Left entirely alone. |
+
+## Security Findings
+
+All items below are **OPEN** — nothing was upgraded today, so nothing could have been fixed.
+This section documents the *actual current* state, which in several cases contradicts
+recent claims in `docs/security/cve-mitigation-matrix.md` and `.trivyignore` (last updated
+2026-07-14/2026-07-13) — those documents are now **stale** and should not be treated as
+current without a fresh scan being folded in.
+
+### Fresh Trivy scans (run today, CRITICAL+HIGH only, `--scanners vuln`)
+
+| Image | CRITICAL | HIGH | Notes |
+|---|---:|---:|---|
+| `agentshroud-gateway:latest` | 6 | 175 | Breakdown: OS layer (debian 13.6) 5C/139H; `usr/bin/op` (1Password CLI) 1C/25H; `usr/local/bin/slsa-verifier` 0C/7H; `usr/bin/falcoctl` 0C/4H. CRITICAL IDs: CVE-2026-13221, CVE-2026-42496, CVE-2026-56854, CVE-2026-60002, CVE-2026-6653, CVE-2026-8376. |
+| `agentshroud-openclaw:latest` | 18 | 227 | Breakdown: OS layer (debian 12.15) 17C/188H; `usr/bin/op` 1C/25H; `usr/bin/docker` 0C/8H; Node.js 0C/6H. CRITICAL IDs include CVE-2023-45853, CVE-2025-7458, CVE-2026-13221, CVE-2026-42496, CVE-2026-56854, CVE-2026-58016, CVE-2026-60002, CVE-2026-6653, CVE-2026-8376. |
+| `agentshroud/hermes:latest` | 18 | 371 | Breakdown: OS layer (debian 13.6) 18C/358H; Node.js 0C/8H; `usr/local/bin/uv`/`uvx` 0C/2H each; Python 0C/1H. Highest total of the three images. CRITICAL IDs include CVE-2026-13221, CVE-2026-34873, CVE-2026-34875, CVE-2026-42496, CVE-2026-43185, CVE-2026-58016, CVE-2026-60002, CVE-2026-6653, CVE-2026-8376. |
+
+**This is materially worse than the most recent committed claim** (`fix(security): SCRUM-174
+CVE bump batch — 9/207 -> 7/153 CRIT/HIGH on gateway (#433)`, ~2 days before this scan per git
+log) — today's gateway scan shows 6C/175H (181 total) vs. the claimed 7/153 (160 total) right
+after that PR. Some of this is almost certainly new CVEs disclosed against Debian 13.6/OS
+packages in the intervening days (CVE IDs here are dated 2026, consistent with recent
+disclosure), not a regression caused by this repo's own commits — but it means the "latest
+release resolves it" assumption needs to be re-verified fresh, not assumed from a 2-day-old
+PR. `.trivyignore`'s "ZERO active suppressions" claim (dated 2026-07-14) and
+`cve-mitigation-matrix.md`'s "SCRUM-101, only Debian base-OS + 2 supply-chain binaries
+remain" framing (also 2026-07-14) are **~2 months stale** relative to these numbers and should
+be regenerated, not relied on as-is.
+
+Prior on-disk Trivy artifacts (`reports/security/trivy/*.json`) are dated 2026-06-29 and
+2026-07-13 — also stale, superseded by today's numbers above.
+
+### Application CVE registry (OpenClaw / Hermes agents, per `docs/security/cve-mitigation-matrix.md`)
+- OpenClaw: 816 tracked, 293 fully mitigated, **0 not mitigated**, 523 under_review (pending
+  triage) — this figure is self-reported by the repo's own daily sync and was not
+  independently re-verified this run (would require running
+  `scripts/sync-cve-registry.py --source ghsa`, which mutates `gateway/security/
+  agent_cve_registry.py` — out of scope for a read-only run).
+- Hermes: 7 tracked, all 7 fully mitigated, 0 under review.
+
+### Language dependencies
+- `pip-audit`: **not installed**, not installed this run (read-only). `pip list --outdated`
+  substitute run instead (see Upgrade Table) — outdated ≠ vulnerable; no CVE-level claim can
+  be made from this alone.
+- `npm audit` (browser-extension): **cannot run** — no `package-lock.json` in the repo.
+
+### GitHub-hosted findings
+- Dependabot alerts: **disabled** for this repo (`403: Dependabot alerts are disabled for
+  this repository`) — not a scan result, a configuration gap. Flag for Isaiah: turning this
+  on would be a free, ongoing finding source.
+- Code scanning alerts: **not enabled** for this repo (`403: Code scanning is not enabled`).
+  Same flag.
+
+### Wazuh / SOC
+- **CORRECTED.** The earlier claim here — that no wazuh/falco/clamav container exists and
+  that this contradicts CLAUDE.md §7 — was wrong. `falco`/`clamav`/`fluent-bit` run
+  in-process inside the `gateway` container by design, and `wazuh-agent` was split back into
+  its own sidecar on 2026-09-06 (running and healthy as of the end of this run). See the
+  corrected entry under Environment Mapping. No sidecar gap exists.
+- Gateway `/soc/v1/...` endpoints were not probed this run to avoid any risk of triggering
+  gateway-side actions from an unauthenticated/ad-hoc curl against a live prod security
+  gateway; recommend checking this explicitly in a future run with the right credentials
+  rather than guessing at the endpoint shape.
+
+## PROD OUTAGE 2026-09-06 20:20 → 2026-09-07 07:27 (~11 hours)
+
+Discovered at the start of the 2026-09-07 continuation of this run, **not** caused by any
+action in this report.
+
+**Symptom:** Docker daemon unreachable (`EOF` on the socket) while `colima status` cheerfully
+reported "colima is running". Every container was down.
+
+**Evidence:**
+```
+colima ssh -- sudo systemctl is-active docker   ->  inactive
+journalctl -u docker:
+  Sep 06 20:20:11  Daemon shutdown complete
+  Sep 06 20:20:11  docker.service: Deactivated successfully.
+lsblk:  vdb  160G   vdb1  160G   <- NO MOUNTPOINT
+```
+
+**Root cause:** a half-finished Colima disk resize. The disk had been grown 118G → 160G and
+the ext4 filesystem grown with it (`Block count: 41942779` × 4096 = 160GiB,
+`Filesystem state: clean`) — so the resize itself *succeeded*. But the VM came back up
+without mounting `/var/lib/docker` and without starting dockerd, and nothing brought it
+back. The 20:20 shutdown was **graceful** (containers SIGTERM'd, "Deactivated
+successfully"), confirming a deliberate stop rather than a crash or an out-of-space kill.
+
+**Recovery:** `colima restart` — no data loss, filesystem verified clean beforehand.
+
+**Result:** the resize did solve the storage problem it was meant to solve:
+```
+/dev/vdb1  157G  89G  61G  60%  /var/lib/docker     (was: 118G 112G 0 100%)
+```
+61GiB free is comfortably past the 25GiB preflight gate, so **the ~58GB
+`docker image prune -a` is no longer urgent** — the space problem is resolved by capacity
+rather than by deletion.
+
+**Collateral:** prod sat dark through the 04:30–05:45 Daily Brief production window, so that
+morning's episode almost certainly did not produce. Any cron job that fired against the
+prod gateway overnight failed and may need re-running.
+
+**Lessons for the runbook:**
+1. `colima status` reports "running" while the daemon inside is dead. It is not a health
+   check. After any Colima stop/resize, verify `colima ssh -- df -h /var/lib/docker` shows
+   the disk actually MOUNTED and that `docker ps` returns.
+2. A resize leaves the stack down until someone runs `colima restart`. Nothing on this host
+   automatically brings Docker back after the VM restarts without its data disk — there is
+   no watchdog for "VM up, daemon down", which is why an 11-hour outage went unnoticed.
+
+## Pipeline remediation (the actual work of this run)
+
+Five defects made the Sunday job unable to run to completion. All were the same class:
+**the launchd plist is hand-copied per account with no installer, so every copy drifted
+differently.**
+
+| # | Defect | Evidence | Fix |
+|---|---|---|---|
+| 1 | Dev's installed plist lacks the `PATH` key → `tmux: command not found`, script died at line 44 under `set -euo pipefail` before any work | dev's `~/Library/Logs/sunday-upgrade.log` | Script now exports a Homebrew-inclusive PATH itself + preflights its 4 required binaries. Verified under `env -i PATH=/usr/bin:/bin`: all resolve |
+| 2 | Repo plist lacked `SUNDAY_UPGRADE_AUTON=1` (prod's live copy has had it since 2026-09-06, never committed back) → any reinstall gets a job that queues Bash permission prompts to a phone and stalls forever unattended | `diff` repo vs installed | `AUTON=1` + `HOME` committed into the tracked plist |
+| 3 | Idempotency guard tested `[ -s "$REPORT_MD" ]`, so any run dying after writing a stub report **permanently blocked every retry that day** — self-perpetuating | `scripts/sunday-upgrade.sh` (pre-fix) | Replaced with a completion sentinel written only at end-of-run |
+| 4 | **Prod's own run failed today too**: `ERROR: mission still sitting in the composer after 3 submit attempts` — this session only started because it was submitted by hand | `~/Library/Logs/sunday-upgrade.err` | Repo script already passes the mission as a launch argument; dev is still on the older send-keys version and needs to pull |
+| 5 | Dev is running an **older script** than the repo (no idempotency block, old fragile submit loop) | `diff` dev vs prod script | Dev notified with exact remediation |
+
+**New: `scripts/sunday-upgrade-apply.sh`** — the deterministic core (owner decision: the
+mechanical parts must not depend on an LLM session improvising them). Phases
+`preflight | baseline | scan | apply | verify`, each a hard pass/fail gate, exit code as
+the contract (10 preflight / 20 CVE gate / 30 apply / 40 verify / 50 rollback-failed).
+It captures rollback tags *before* any build overwrites `:latest`, generates an executable
+`rollback.sh` from what was actually captured, and **writes the `dev-result-<date>.json`
+handoff itself** — removing the exact 2026-09-06 failure where no JSON existed because the
+session never got far enough to write one. An EXIT trap writes `status=FAIL` so a crashed
+run can never leave a stale `PASS` behind.
+
+Two bugs in that new script were caught by testing it against live prod, not by review:
+- Dirty-file count reported **17999** when the true non-graphify count was **68** — git
+  *quotes* porcelain paths containing spaces, which an anchored `^.. graphify-out/`
+  pattern misses. Now unanchored.
+- The disk gate checked the **host** volume. That is the bug that hid the full-disk fault
+  for however long it has been present; it now checks the daemon's actual storage.
+
+## Verification evidence
+
+Post-remediation, full 120s soak (`scripts/sunday-upgrade-apply.sh --env prod --phase verify --soak-seconds 120`, exit 0):
+```
+verify: agentshroud-gateway running / healthy
+verify: agentshroud-openclaw running / healthy
+verify: agentshroud-hermes-v2 running / healthy
+verify: agentshroud-voice-gateway running / healthy
+verify: agentshroud-docker-socket-proxy running (no healthcheck defined)
+verify: soaking 120s to detect restart loops
+verify: PASS — all containers running, healthy, and stable for 120s
+```
+The panic/fatal log-scan warning that fired **before** the disk remediation
+(`agentshroud-hermes-v2 has 5 panic/fatal/traceback line(s)`) is **absent** from this run —
+independent confirmation the ENOSPC fault is cleared, not merely masked by a restart.
+
+Preflight correctly **refuses to run** while storage is short (exit 10):
+```
+preflight: host volume 142GiB free
+ERROR: Docker storage has only 0GiB free — image builds need >=25GiB.
+ERROR: insufficient Docker storage — refusing to start an upgrade that cannot finish
+```
+
+## Breaking changes / manual follow-ups
+
+1. **Missing today's dev-result JSON is the actual blocker — root cause confirmed.** The
+   `agentshroud-dev` session (marvin, `agentshroud-bot` account) reported via cross-session
+   message that dev's Sunday run crashed at 03:00:00 before doing any work:
+   `~/Library/Logs/sunday-upgrade.log` shows
+   `scripts/sunday-upgrade.sh: line 44: tmux: command not found`. Root cause:
+   `scripts/sunday-upgrade.sh:44` calls `tmux new-session` to launch the actual
+   `claude --remote-control` session, but cron's minimal PATH doesn't include Homebrew's bin
+   dir (where `tmux` lives) — only present in an interactive shell. Line 20's
+   `set -euo pipefail` killed the script immediately on that failure, so no Claude session was
+   ever spawned and no dev upgrade work ran at all today. Separately, `agentshroud-dev` also
+   reported a recurrence of dev's Colima VM losing internet egress (same class of bug fixed
+   2026-09-04) — both being reported to Isaiah directly by that session. Fix needed on dev side:
+   make `scripts/sunday-upgrade.sh` resolve `tmux`'s absolute path (or source the Homebrew
+   shellenv) instead of relying on cron's PATH.
+2. `openai` Python dependency has a major version available (2.24.0 → 3.8.0) — do not blind-bump;
+   needs changelog review for breaking API changes before it's included in any future upgrade batch.
+3. Two floating-tag violations exist independent of any upgrade cycle: `ghcr.io/github/
+   github-mcp-server:latest` and `ghcr.io/home-assistant/home-assistant:stable`. Per procedure
+   these should be pinned explicitly the next time prod is actually touched.
+4. `browser-extension/` has no lockfile — needs `npm install` (generating `package-lock.json`)
+   before any dependency audit or upgrade can happen there at all.
+5. ~~Sidecar containers not running.~~ **RESOLVED same day** — see the corrected Environment
+   Mapping entry. Residual action: commit `docker/wazuh-agent/Dockerfile` and the
+   `wazuh-agent` compose service so the live sidecar is reproducible from the repo (both
+   were still uncommitted at the end of this run).
+6. `docker/docker-compose.agentshroud-bot.marvin.yml` defines containers that don't match
+   what's actually running under that name pattern on marvin — worth confirming this file
+   isn't simply stale/orphaned.
+7. Hermes vendor versioning scheme (`HERMES_VERSION=0.20.1` vs. Docker Hub's `v2026.4.x`
+   date-tags) makes "latest stable" ambiguous from tooling alone — this needs a human or a
+   more targeted lookup against the vendor's actual release notes, not a registry tag list.
+8. LibreChat/mongo/meilisearch/searxng containers are running but their defining compose
+   file/location was not found in this repo at the paths checked — needs clarification on
+   where they're actually declared so future runs can inventory/upgrade them correctly.
+9. Enabling GitHub Dependabot alerts and code scanning on this repo would add a real,
+   low-effort ongoing security-finding source; currently both are off.
+
+## Rollback Instructions
+
+No prod changes were made today, so no rollback is required. For reference, the baseline
+this run would roll back to if anything had been attempted:
+```
+git reset --hard 5a1caa2ef5                      # last commit before this run
+git describe --tags 5a1caa2ef5                   # confirms: pre-deploy-20260830T112852Z-11-g5a1caa2ef5
+# No images were rebuilt or repulled this run — current running images (agentshroud-gateway
+# id a1f60cffd608, agentshroud-openclaw id 694302630235, agentshroud-hermes-v2 id 290369698013)
+# remain untouched and are themselves the current-good state.
+```
+
+## Time spent
+
+Preflight + inventory + security scan phases (read-only): approximately 35–40 minutes of
+active tool time. Well within the 90-minute budget. No prod mutation phase was entered
+(blocked by missing dev handoff), so the budget was not a constraint today.

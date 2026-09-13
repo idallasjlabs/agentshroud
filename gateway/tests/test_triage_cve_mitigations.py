@@ -183,8 +183,11 @@ class TestVersion:
         assert _t().is_source_fixed(_t().RUNNING_VERSION_STR) is True
 
     def test_not_source_fixed_newer(self):
-        major, minor, patch = _t().RUNNING_VERSION
-        future = f"{major}.{minor}.{patch + 1}"
+        # Length-agnostic: a pin carrying a packaging revision ("2026.7.1-2")
+        # parses to a 4-component tuple, so this must not assume major/minor/patch.
+        parts = list(_t().RUNNING_VERSION)
+        parts[-1] += 1
+        future = ".".join(str(p) for p in parts)
         assert _t().is_source_fixed(future) is False
 
     def test_unparseable_is_not_source_fixed(self):

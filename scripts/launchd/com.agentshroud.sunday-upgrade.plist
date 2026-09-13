@@ -41,6 +41,17 @@
         <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
         <key>DOCKER_HOST</key>
         <string>unix:///Users/ijefferson.admin/.colima/default/docker.sock</string>
+        <key>HOME</key>
+        <string>/Users/ijefferson.admin</string>
+        <!-- Required for unattended operation: without it the run launches with
+             only `--permission-mode acceptEdits`, so every Bash call queues a
+             permission request to the phone and the session stalls forever with
+             nobody to answer. Prod's INSTALLED plist has had this since
+             2026-09-06 but it was never committed back here, so anyone
+             reinstalling from the repo silently got a job that cannot finish
+             unattended. Do not remove. -->
+        <key>SUNDAY_UPGRADE_AUTON</key>
+        <string>1</string>
     </dict>
 </dict>
 </plist>
