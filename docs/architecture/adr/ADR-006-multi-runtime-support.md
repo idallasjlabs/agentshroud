@@ -151,20 +151,24 @@ curl --max-time 600 -o "$CACHE_DIR/data" "$CDN_URL"
 ### 2. Start Colima
 
 ```bash
-colima start --cpu 6 --memory 12 --disk 60 --network-address
+colima start --cpu 8 --memory 12 --disk 200 --network-address
 ```
 
 Resource rationale:
-- 6 CPUs — parallel gateway + bot builds (spaCy, npm, Playwright)
+- 8 CPUs — parallel gateway + bot builds (spaCy, npm, Playwright)
 - 12 GB RAM — gateway (~1.3 GB) + bot (~4 GB) at runtime, headroom for the full sidecar
   stack (Falco, ClamAV, Wazuh, Fluent Bit)
-- 60 GB disk — two images (~3 GB each) + volumes + build cache
+- 200 GB disk — two images (~3 GB each) + volumes + build cache
 - `--network-address` — gives VM a routable IP on `192.168.64.0/24` (required for col0 vmnet)
 
 > **Resized 2026-07-06:** the original 4 CPU / 6 GB sizing above starved the warm
 > stack (gateway + bot + sidecars all running) into OOM loops. Bumped to 6 CPU / 12 GB
 > to give the sidecar stack real headroom. Kept here as a historical record of the
 > original decision and why it changed — do not revert to 4/6.
+>
+> **Resized 2026-09-13:** containers ran out of disk space at 60 GB. Bumped disk to
+> 200 GB and CPU to 8; disk can only be increased once the VM exists, never decreased,
+> so this is now the floor going forward.
 
 ### 3. Apply the VPN networking fix
 
