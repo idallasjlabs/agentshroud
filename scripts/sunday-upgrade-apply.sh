@@ -402,7 +402,13 @@ phase_baseline() {
     done
     echo ''
     echo '# 3. Recreate containers from the restored images'
-    echo "$COMPOSE_CMD up -d --force-recreate"
+    echo '# hermes excluded — its container is managed by scripts/asb (run-standalone.sh),'
+    echo '# not `docker compose up`; see the matching comment in phase_apply above.'
+    echo "$COMPOSE_CMD up -d --force-recreate \$($COMPOSE_CMD config --services 2>/dev/null | grep -vx 'hermes')"
+    echo 'if docker image inspect agentshroud-rollback/agentshroud-hermes-v2:'"$TODAY"' >/dev/null 2>&1; then'
+    echo "  docker tag agentshroud-rollback/agentshroud-hermes-v2:${TODAY} agentshroud/hermes:\${AGENTSHROUD_VERSION:-latest} 2>/dev/null || true"
+    echo "  [ -x '$REPO/scripts/asb' ] && '$REPO/scripts/asb' up hermes || echo 'WARN: hermes image restored but not redeployed — run scripts/asb up hermes manually'"
+    echo 'fi'
   } > "$ROLLBACK_SH"
   chmod +x "$ROLLBACK_SH"
   log "baseline: wrote executable rollback script $ROLLBACK_SH"
@@ -515,11 +521,41 @@ phase_apply() {
     log "apply: built '$svc' OK"
   done
 
-  log "apply: recreating containers"
-  if ! $COMPOSE_CMD up -d; then
+  # `hermes` is profile-gated [hermes, full] so `docker compose build` above
+  # builds it correctly, but its CONTAINER is deliberately NOT managed by
+  # `docker compose up` in this repo — scripts/asb's own `up full` maps to
+  # `--profile voice` (asb:475), not `full`, and hands hermes to a dedicated
+  # docker/bots/hermes/run-standalone.sh via `_hermes_up` instead. That
+  # script resolves secrets from $HOME/.agentshroud/.asb-secrets (ephemeral,
+  # extracted per-run) and docker/secrets/, a mechanism `docker compose up`
+  # knows nothing about — attempting hermes through compose here fails with
+  # "bind source path does not exist" for any secret not present as a literal
+  # docker/secrets/*.txt file, and failed while the marvin per-host compose
+  # override was also trying to recreate it under a DIFFERENT container name
+  # (agentshroud-marvin-hermes) than the one actually running
+  # (agentshroud-hermes-v2, started previously via asb without that override)
+  # — discovered 2026-09-14 when this exact path took the whole `up`, and
+  # then the rollback, down with it (exit 50: manual recovery required).
+  # Exclude it explicitly and defer to asb's own working path instead.
+  local up_services
+  up_services="$($COMPOSE_CMD config --services 2>/dev/null | grep -vx 'hermes')"
+  log "apply: recreating containers (excluding hermes — see comment above): ${up_services//$'\n'/ }"
+  if ! $COMPOSE_CMD up -d $up_services; then
     err "apply: compose up FAILED"
     _attempt_rollback
     exit 30
+  fi
+  if printf '%s\n' "$build_list" | grep -qx 'hermes'; then
+    if [ -x "$REPO/scripts/asb" ]; then
+      log "apply: hermes was rebuilt — deploying via scripts/asb up hermes (handles secrets correctly)"
+      if ! "$REPO/scripts/asb" up hermes; then
+        err "apply: 'scripts/asb up hermes' FAILED"
+        _attempt_rollback
+        exit 30
+      fi
+    else
+      warn "apply: hermes image rebuilt but scripts/asb not found/executable — hermes container NOT redeployed; the new image is tagged and ready, redeploy manually with 'scripts/asb up hermes'"
+    fi
   fi
   log "apply: PASS (build + up completed; health not yet proven — see verify)"
 }
