@@ -60,6 +60,16 @@ def test_health_returns_ok():
     assert resp.json() == {"status": "ok"}
 
 
+def test_health_supports_head():
+    """External uptime monitors (e.g. UptimeRobot) probe with HEAD; a 405
+    makes a healthy gateway look down (live incident after the 2026-08-29
+    funnel cutover)."""
+    client = TestClient(app)
+    resp = client.head("/health")
+    assert resp.status_code == 200
+    assert resp.content == b""
+
+
 def test_lifespan_tolerates_warmup_failure(monkeypatch):
     """A model/pipeline warm-up failure at startup must NOT down the gateway.
 

@@ -31,8 +31,16 @@ alert_critical() {
 # --- ClamAV DB Update ---
 log "Updating ClamAV virus database..."
 if command -v freshclam >/dev/null 2>&1; then
-    freshclam --no-warnings 2>&1 | tee -a "$LOG_DIR/clamav/freshclam-$TIMESTAMP.log" || \
-        log "WARNING: freshclam update failed (may need network)"
+    # Hard 120s cap: freshclam retries database.clamav.net for ~30 MINUTES when
+    # the CDN rate-limits this host (HTTP 403 after a day of repeated container
+    # starts), and it runs BEFORE the gateway app starts — so the gateway never
+    # binds its port, compose's dependency wait expires, and openclaw/hermes
+    # fail to start with "dependency failed to start: container ... is unhealthy".
+    # Cost two full-stack outages on 2026-08-31 (~30 min and ~15 min). The DB is
+    # a cache: a stale signature set is a degraded scan, an unstartable gateway
+    # is an outage. Bounded failure is strictly better here.
+    timeout 120 freshclam --no-warnings 2>&1 | tee -a "$LOG_DIR/clamav/freshclam-$TIMESTAMP.log" || \
+        log "WARNING: freshclam update failed or timed out after 120s (continuing with existing DB)"
     log "ClamAV DB update complete"
 else
     log "WARNING: freshclam not found, skipping DB update"
