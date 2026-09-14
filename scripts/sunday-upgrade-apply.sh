@@ -90,11 +90,24 @@ fi
 
 # Containers that must be healthy for the stack to be considered good.
 # Overridable so dev/prod or a future service list can differ without a code edit.
+# This default matches PROD (ijefferson.admin) container_name values as-is.
+# Each agentshroud-bot dev host renames gateway/openclaw via its own compose
+# override (docker/docker-compose.agentshroud-bot.<host>.yml), and the suffix
+# is NOT always the bare hostname (raspberrypi -> "rpi", confirmed 2026-09-14)
+# — so this cannot be derived automatically. On a bot account, always pass
+# SUNDAY_CONTAINERS explicitly, e.g. on marvin:
+#   SUNDAY_CONTAINERS="agentshroud-marvin-gateway agentshroud-marvin-openclaw agentshroud-hermes-v2 agentshroud-voice-gateway agentshroud-docker-socket-proxy"
 DEFAULT_CONTAINERS="agentshroud-gateway agentshroud-openclaw agentshroud-hermes-v2 agentshroud-voice-gateway agentshroud-docker-socket-proxy"
 CONTAINERS="${SUNDAY_CONTAINERS:-$DEFAULT_CONTAINERS}"
 
-# Images scanned by the CVE gate.
-DEFAULT_SCAN_IMAGES="agentshroud-gateway:latest agentshroud-openclaw:latest agentshroud/hermes:latest"
+# Images scanned by the CVE gate. Tagged by AGENTSHROUD_VERSION (from
+# docker/versions.env, sourced above), not `:latest` — images are built and
+# tagged as e.g. agentshroud-gateway:1.6.0; `:latest` is never pushed by
+# `docker compose build`, so a hardcoded `:latest` here always misses the
+# real image. Same phantom-tag defect already fixed in the daily CVE scan
+# itself (gateway/security/daily_cve_report.py, PR #442) — this script had
+# an independent copy of the same bug.
+DEFAULT_SCAN_IMAGES="agentshroud-gateway:${AGENTSHROUD_VERSION:-latest} agentshroud-openclaw:${AGENTSHROUD_VERSION:-latest} agentshroud/hermes:${AGENTSHROUD_VERSION:-latest}"
 SCAN_IMAGES="${SUNDAY_SCAN_IMAGES:-$DEFAULT_SCAN_IMAGES}"
 
 # ── Logging ──────────────────────────────────────────────────────────────────
@@ -103,6 +116,47 @@ log()  { printf '[apply %s] %s\n'        "$(_ts)" "$*"; }
 warn() { printf '[apply %s] WARN: %s\n'  "$(_ts)" "$*" >&2; }
 err()  { printf '[apply %s] ERROR: %s\n' "$(_ts)" "$*" >&2; }
 die()  { local code="$1"; shift; err "$*"; exit "$code"; }
+
+# ── Container-runtime + compose-file resolution (mirrors scripts/asb) ────────
+# scripts/asb already solves "which compose binary, which override file, which
+# project name" correctly per-account/per-host; this script must resolve the
+# same way or it silently targets the wrong stack. Fixed 2026-09-14: this
+# script previously hardcoded the `docker compose` plugin form — broken on
+# this host's toolchain (~/.docker/cli-plugins/docker-compose points to a
+# deleted Docker.app, same defect scripts/update-agentshroud.sh already works
+# around) — and only ever pointed at the base compose file, missing the
+# per-account override (docker/docker-compose.agentshroud-bot.<host>.yml) that
+# renames containers (agentshroud-gateway -> agentshroud-marvin-gateway on
+# this host). Every phase below was therefore inspecting/building against
+# containers that don't exist under this account.
+# shellcheck source=scripts/lib/container-runtime.sh
+. "$REPO/scripts/lib/container-runtime.sh"
+CE="$(detect_container_runtime)" || die 127 "no usable docker-compose/podman-compose found on PATH"
+
+HOST_SHORT="$(hostname -s)"
+if [ "$USER" = "agentshroud-bot" ]; then
+  PROJECT="agentshroud-bot"
+  OVERRIDE_FILE="$REPO/docker/docker-compose.agentshroud-bot.${HOST_SHORT}.yml"
+  if [ -f "$OVERRIDE_FILE" ]; then
+    COMPOSE_CMD="$CE -f $COMPOSE_FILE -f $OVERRIDE_FILE -p $PROJECT"
+  else
+    warn "no compose override for host '${HOST_SHORT}' — proceeding with base compose file only"
+    COMPOSE_CMD="$CE -f $COMPOSE_FILE -p $PROJECT"
+  fi
+else
+  PROJECT="agentshroud"
+  COMPOSE_CMD="$CE -f $COMPOSE_FILE -p $PROJECT"
+fi
+# hermes-v2 and voice-gateway are gated behind compose profiles ("hermes"/
+# "voice", both members of "full" — docker/docker-compose.yml:572,728) and are
+# invisible to `config`/`build`/`up` without an explicit --profile flag,
+# exactly like scripts/asb's `up full` path already accounts for (asb:475).
+# Fixed 2026-09-14: this script had no profile flag at all, so `apply` never
+# built either service and `up -d` never even considered them — a first run
+# reported PASS having silently left both on their pre-cycle images, even
+# though DEFAULT_CONTAINERS above has always listed both as required-healthy.
+COMPOSE_CMD="$COMPOSE_CMD --profile full"
+log "compose: engine='$CE' project='$PROJECT' cmd='$COMPOSE_CMD'"
 
 # ── Arg parsing ──────────────────────────────────────────────────────────────
 while [ $# -gt 0 ]; do
@@ -142,7 +196,7 @@ _mutating()   { [ "$DRY_RUN" -eq 0 ]; }
 # conservative direction, since a wider context means we check MORE files.
 _build_context_paths() {
   local ctx
-  ctx="$(docker compose -f "$COMPOSE_FILE" config 2>/dev/null \
+  ctx="$($COMPOSE_CMD config 2>/dev/null \
          | awk '/^[[:space:]]*context:[[:space:]]/ {print $2}' | sort -u)"
   if [ -n "$ctx" ]; then printf '%s\n' "$ctx"; else printf '%s\n' "$REPO"; fi
 }
@@ -176,7 +230,7 @@ _dirty_build_files() {
 # the NORMALIZED `docker compose config` output, so it reflects overrides and
 # extends rather than the raw file text.
 _buildable_services() {
-  docker compose -f "$COMPOSE_FILE" config 2>/dev/null | awk '
+  $COMPOSE_CMD config 2>/dev/null | awk '
     /^  [a-zA-Z0-9_-]+:$/ { svc=$1; sub(/:$/,"",svc) }
     /^    build:/ { if (svc != "") print svc }
   ' | sort -u || true
@@ -222,9 +276,9 @@ phase_preflight() {
   log "preflight: docker daemon reachable"
 
   [ -f "$COMPOSE_FILE" ] || die 10 "compose file not found: $COMPOSE_FILE"
-  docker compose -f "$COMPOSE_FILE" config -q 2>/dev/null \
-    || die 10 "compose file is invalid: $COMPOSE_FILE"
-  log "preflight: compose file valid ($COMPOSE_FILE)"
+  $COMPOSE_CMD config -q 2>/dev/null \
+    || die 10 "compose config is invalid: $COMPOSE_CMD config"
+  log "preflight: compose config valid ($COMPOSE_CMD)"
 
   # Disk: a rebuild of three images plus pulls needs real headroom. Refuse to
   # start an upgrade we cannot finish rather than filling the disk mid-build.
@@ -348,7 +402,13 @@ phase_baseline() {
     done
     echo ''
     echo '# 3. Recreate containers from the restored images'
-    echo "docker compose -f '$COMPOSE_FILE' up -d --force-recreate"
+    echo '# hermes excluded — its container is managed by scripts/asb (run-standalone.sh),'
+    echo '# not `docker compose up`; see the matching comment in phase_apply above.'
+    echo "$COMPOSE_CMD up -d --force-recreate \$($COMPOSE_CMD config --services 2>/dev/null | grep -vx 'hermes')"
+    echo 'if docker image inspect agentshroud-rollback/agentshroud-hermes-v2:'"$TODAY"' >/dev/null 2>&1; then'
+    echo "  docker tag agentshroud-rollback/agentshroud-hermes-v2:${TODAY} agentshroud/hermes:\${AGENTSHROUD_VERSION:-latest} 2>/dev/null || true"
+    echo "  [ -x '$REPO/scripts/asb' ] && '$REPO/scripts/asb' up hermes || echo 'WARN: hermes image restored but not redeployed — run scripts/asb up hermes manually'"
+    echo 'fi'
   } > "$ROLLBACK_SH"
   chmod +x "$ROLLBACK_SH"
   log "baseline: wrote executable rollback script $ROLLBACK_SH"
@@ -453,7 +513,7 @@ phase_apply() {
   fi
   for svc in $build_list; do
     log "apply: building '$svc' (sequential)"
-    if ! docker compose -f "$COMPOSE_FILE" build --pull "$svc"; then
+    if ! $COMPOSE_CMD build --pull "$svc"; then
       err "apply: build FAILED for service '$svc'"
       _attempt_rollback
       exit 30
@@ -461,11 +521,41 @@ phase_apply() {
     log "apply: built '$svc' OK"
   done
 
-  log "apply: recreating containers"
-  if ! docker compose -f "$COMPOSE_FILE" up -d; then
+  # `hermes` is profile-gated [hermes, full] so `docker compose build` above
+  # builds it correctly, but its CONTAINER is deliberately NOT managed by
+  # `docker compose up` in this repo — scripts/asb's own `up full` maps to
+  # `--profile voice` (asb:475), not `full`, and hands hermes to a dedicated
+  # docker/bots/hermes/run-standalone.sh via `_hermes_up` instead. That
+  # script resolves secrets from $HOME/.agentshroud/.asb-secrets (ephemeral,
+  # extracted per-run) and docker/secrets/, a mechanism `docker compose up`
+  # knows nothing about — attempting hermes through compose here fails with
+  # "bind source path does not exist" for any secret not present as a literal
+  # docker/secrets/*.txt file, and failed while the marvin per-host compose
+  # override was also trying to recreate it under a DIFFERENT container name
+  # (agentshroud-marvin-hermes) than the one actually running
+  # (agentshroud-hermes-v2, started previously via asb without that override)
+  # — discovered 2026-09-14 when this exact path took the whole `up`, and
+  # then the rollback, down with it (exit 50: manual recovery required).
+  # Exclude it explicitly and defer to asb's own working path instead.
+  local up_services
+  up_services="$($COMPOSE_CMD config --services 2>/dev/null | grep -vx 'hermes')"
+  log "apply: recreating containers (excluding hermes — see comment above): ${up_services//$'\n'/ }"
+  if ! $COMPOSE_CMD up -d $up_services; then
     err "apply: compose up FAILED"
     _attempt_rollback
     exit 30
+  fi
+  if printf '%s\n' "$build_list" | grep -qx 'hermes'; then
+    if [ -x "$REPO/scripts/asb" ]; then
+      log "apply: hermes was rebuilt — deploying via scripts/asb up hermes (handles secrets correctly)"
+      if ! "$REPO/scripts/asb" up hermes; then
+        err "apply: 'scripts/asb up hermes' FAILED"
+        _attempt_rollback
+        exit 30
+      fi
+    else
+      warn "apply: hermes image rebuilt but scripts/asb not found/executable — hermes container NOT redeployed; the new image is tagged and ready, redeploy manually with 'scripts/asb up hermes'"
+    fi
   fi
   log "apply: PASS (build + up completed; health not yet proven — see verify)"
 }
