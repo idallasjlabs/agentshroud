@@ -104,6 +104,38 @@ warn() { printf '[apply %s] WARN: %s\n'  "$(_ts)" "$*" >&2; }
 err()  { printf '[apply %s] ERROR: %s\n' "$(_ts)" "$*" >&2; }
 die()  { local code="$1"; shift; err "$*"; exit "$code"; }
 
+# ── Container-runtime + compose-file resolution (mirrors scripts/asb) ────────
+# scripts/asb already solves "which compose binary, which override file, which
+# project name" correctly per-account/per-host; this script must resolve the
+# same way or it silently targets the wrong stack. Fixed 2026-09-14: this
+# script previously hardcoded the `docker compose` plugin form — broken on
+# this host's toolchain (~/.docker/cli-plugins/docker-compose points to a
+# deleted Docker.app, same defect scripts/update-agentshroud.sh already works
+# around) — and only ever pointed at the base compose file, missing the
+# per-account override (docker/docker-compose.agentshroud-bot.<host>.yml) that
+# renames containers (agentshroud-gateway -> agentshroud-marvin-gateway on
+# this host). Every phase below was therefore inspecting/building against
+# containers that don't exist under this account.
+# shellcheck source=scripts/lib/container-runtime.sh
+. "$REPO/scripts/lib/container-runtime.sh"
+CE="$(detect_container_runtime)" || die 127 "no usable docker-compose/podman-compose found on PATH"
+
+HOST_SHORT="$(hostname -s)"
+if [ "$USER" = "agentshroud-bot" ]; then
+  PROJECT="agentshroud-bot"
+  OVERRIDE_FILE="$REPO/docker/docker-compose.agentshroud-bot.${HOST_SHORT}.yml"
+  if [ -f "$OVERRIDE_FILE" ]; then
+    COMPOSE_CMD="$CE -f $COMPOSE_FILE -f $OVERRIDE_FILE -p $PROJECT"
+  else
+    warn "no compose override for host '${HOST_SHORT}' — proceeding with base compose file only"
+    COMPOSE_CMD="$CE -f $COMPOSE_FILE -p $PROJECT"
+  fi
+else
+  PROJECT="agentshroud"
+  COMPOSE_CMD="$CE -f $COMPOSE_FILE -p $PROJECT"
+fi
+log "compose: engine='$CE' project='$PROJECT' cmd='$COMPOSE_CMD'"
+
 # ── Arg parsing ──────────────────────────────────────────────────────────────
 while [ $# -gt 0 ]; do
   case "$1" in
@@ -142,7 +174,7 @@ _mutating()   { [ "$DRY_RUN" -eq 0 ]; }
 # conservative direction, since a wider context means we check MORE files.
 _build_context_paths() {
   local ctx
-  ctx="$(docker compose -f "$COMPOSE_FILE" config 2>/dev/null \
+  ctx="$($COMPOSE_CMD config 2>/dev/null \
          | awk '/^[[:space:]]*context:[[:space:]]/ {print $2}' | sort -u)"
   if [ -n "$ctx" ]; then printf '%s\n' "$ctx"; else printf '%s\n' "$REPO"; fi
 }
@@ -176,7 +208,7 @@ _dirty_build_files() {
 # the NORMALIZED `docker compose config` output, so it reflects overrides and
 # extends rather than the raw file text.
 _buildable_services() {
-  docker compose -f "$COMPOSE_FILE" config 2>/dev/null | awk '
+  $COMPOSE_CMD config 2>/dev/null | awk '
     /^  [a-zA-Z0-9_-]+:$/ { svc=$1; sub(/:$/,"",svc) }
     /^    build:/ { if (svc != "") print svc }
   ' | sort -u || true
@@ -222,9 +254,9 @@ phase_preflight() {
   log "preflight: docker daemon reachable"
 
   [ -f "$COMPOSE_FILE" ] || die 10 "compose file not found: $COMPOSE_FILE"
-  docker compose -f "$COMPOSE_FILE" config -q 2>/dev/null \
-    || die 10 "compose file is invalid: $COMPOSE_FILE"
-  log "preflight: compose file valid ($COMPOSE_FILE)"
+  $COMPOSE_CMD config -q 2>/dev/null \
+    || die 10 "compose config is invalid: $COMPOSE_CMD config"
+  log "preflight: compose config valid ($COMPOSE_CMD)"
 
   # Disk: a rebuild of three images plus pulls needs real headroom. Refuse to
   # start an upgrade we cannot finish rather than filling the disk mid-build.
@@ -348,7 +380,7 @@ phase_baseline() {
     done
     echo ''
     echo '# 3. Recreate containers from the restored images'
-    echo "docker compose -f '$COMPOSE_FILE' up -d --force-recreate"
+    echo "$COMPOSE_CMD up -d --force-recreate"
   } > "$ROLLBACK_SH"
   chmod +x "$ROLLBACK_SH"
   log "baseline: wrote executable rollback script $ROLLBACK_SH"
@@ -453,7 +485,7 @@ phase_apply() {
   fi
   for svc in $build_list; do
     log "apply: building '$svc' (sequential)"
-    if ! docker compose -f "$COMPOSE_FILE" build --pull "$svc"; then
+    if ! $COMPOSE_CMD build --pull "$svc"; then
       err "apply: build FAILED for service '$svc'"
       _attempt_rollback
       exit 30
@@ -462,7 +494,7 @@ phase_apply() {
   done
 
   log "apply: recreating containers"
-  if ! docker compose -f "$COMPOSE_FILE" up -d; then
+  if ! $COMPOSE_CMD up -d; then
     err "apply: compose up FAILED"
     _attempt_rollback
     exit 30
