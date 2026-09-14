@@ -292,7 +292,7 @@ RUN chmod +x /usr/local/bin/docker
 # Fluent Bit log processor — pinned version, arch-aware (same pattern as Trivy/Syft)
 # SCRUM-101: 3.2.7 → 5.0.9 (latest maintenance; clears C/Go lib CVEs). Config is
 # plain-INI ([SERVICE]/[INPUT]/[FILTER]/[OUTPUT]) — stable across 3.x→5.x; sidecar intact.
-ARG FLUENT_BIT_VERSION=5.1.2
+ARG FLUENT_BIT_VERSION=5.1.1
 RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     ( curl -sSfL -o "/tmp/fluent-bit_${FLUENT_BIT_VERSION}_${DPKG_ARCH}.deb" \
         "https://packages.fluentbit.io/debian/bookworm/pool/main/f/fluent-bit/fluent-bit_${FLUENT_BIT_VERSION}_${DPKG_ARCH}.deb" && \

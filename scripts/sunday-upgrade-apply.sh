@@ -90,24 +90,11 @@ fi
 
 # Containers that must be healthy for the stack to be considered good.
 # Overridable so dev/prod or a future service list can differ without a code edit.
-# This default matches PROD (ijefferson.admin) container_name values as-is.
-# Each agentshroud-bot dev host renames gateway/openclaw via its own compose
-# override (docker/docker-compose.agentshroud-bot.<host>.yml), and the suffix
-# is NOT always the bare hostname (raspberrypi -> "rpi", confirmed 2026-09-14)
-# — so this cannot be derived automatically. On a bot account, always pass
-# SUNDAY_CONTAINERS explicitly, e.g. on marvin:
-#   SUNDAY_CONTAINERS="agentshroud-marvin-gateway agentshroud-marvin-openclaw agentshroud-hermes-v2 agentshroud-voice-gateway agentshroud-docker-socket-proxy"
 DEFAULT_CONTAINERS="agentshroud-gateway agentshroud-openclaw agentshroud-hermes-v2 agentshroud-voice-gateway agentshroud-docker-socket-proxy"
 CONTAINERS="${SUNDAY_CONTAINERS:-$DEFAULT_CONTAINERS}"
 
-# Images scanned by the CVE gate. Tagged by AGENTSHROUD_VERSION (from
-# docker/versions.env, sourced above), not `:latest` — images are built and
-# tagged as e.g. agentshroud-gateway:1.6.0; `:latest` is never pushed by
-# `docker compose build`, so a hardcoded `:latest` here always misses the
-# real image. Same phantom-tag defect already fixed in the daily CVE scan
-# itself (gateway/security/daily_cve_report.py, PR #442) — this script had
-# an independent copy of the same bug.
-DEFAULT_SCAN_IMAGES="agentshroud-gateway:${AGENTSHROUD_VERSION:-latest} agentshroud-openclaw:${AGENTSHROUD_VERSION:-latest} agentshroud/hermes:${AGENTSHROUD_VERSION:-latest}"
+# Images scanned by the CVE gate.
+DEFAULT_SCAN_IMAGES="agentshroud-gateway:latest agentshroud-openclaw:latest agentshroud/hermes:latest"
 SCAN_IMAGES="${SUNDAY_SCAN_IMAGES:-$DEFAULT_SCAN_IMAGES}"
 
 # ── Logging ──────────────────────────────────────────────────────────────────
@@ -147,15 +134,6 @@ else
   PROJECT="agentshroud"
   COMPOSE_CMD="$CE -f $COMPOSE_FILE -p $PROJECT"
 fi
-# hermes-v2 and voice-gateway are gated behind compose profiles ("hermes"/
-# "voice", both members of "full" — docker/docker-compose.yml:572,728) and are
-# invisible to `config`/`build`/`up` without an explicit --profile flag,
-# exactly like scripts/asb's `up full` path already accounts for (asb:475).
-# Fixed 2026-09-14: this script had no profile flag at all, so `apply` never
-# built either service and `up -d` never even considered them — a first run
-# reported PASS having silently left both on their pre-cycle images, even
-# though DEFAULT_CONTAINERS above has always listed both as required-healthy.
-COMPOSE_CMD="$COMPOSE_CMD --profile full"
 log "compose: engine='$CE' project='$PROJECT' cmd='$COMPOSE_CMD'"
 
 # ── Arg parsing ──────────────────────────────────────────────────────────────

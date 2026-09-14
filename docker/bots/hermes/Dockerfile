@@ -112,18 +112,9 @@ RUN npm install -g npm@12.0.2
 #   browserslist 4.28.6 -> 4.28.7  (CVE-2026-73088, CVE-2026-73089)
 #   nanoid       3.3.17 -> 3.3.18  (CVE-2026-67213; transitive dep of both
 #                                   sanitize-html and vite under /opt/hermes)
-# 2026-09-14: hermes-agent v0.20.6 bumped its bundled vite to 8.3.0, which now
-# peer-requires @vitejs/devtools@^0.7.1 — but the vendor still bundles
-# @vitejs/devtools@0.4.12 (an internal mismatch in the vendor's own tree, not
-# something our leaf patch touches or is responsible for reconciling). A plain
-# `npm install` here does a full peer-dependency resolve of vite's directory
-# and fails on that pre-existing conflict before it ever gets to installing
-# nanoid. --legacy-peer-deps skips peer resolution for this single leaf-level
-# override, matching the narrow "just bump nanoid, touch nothing else" intent
-# below (vite/devtools' own compatibility is the vendor's concern, not ours).
 RUN npm install --prefix /opt/hermes browserslist@4.28.7 \
     && npm install --prefix /opt/hermes/node_modules/sanitize-html nanoid@3.3.18 \
-    && npm install --prefix /opt/hermes/node_modules/vite nanoid@3.3.18 --legacy-peer-deps
+    && npm install --prefix /opt/hermes/node_modules/vite nanoid@3.3.18
 
 # 2026-09-08: uv/uvx (vendored Rust binaries used for the ddgs/tornado/etc.
 # venv installs above) shipped at 0.11.6 in the upstream base image, carrying
