@@ -147,6 +147,15 @@ else
   PROJECT="agentshroud"
   COMPOSE_CMD="$CE -f $COMPOSE_FILE -p $PROJECT"
 fi
+# hermes-v2 and voice-gateway are gated behind compose profiles ("hermes"/
+# "voice", both members of "full" — docker/docker-compose.yml:572,728) and are
+# invisible to `config`/`build`/`up` without an explicit --profile flag,
+# exactly like scripts/asb's `up full` path already accounts for (asb:475).
+# Fixed 2026-09-14: this script had no profile flag at all, so `apply` never
+# built either service and `up -d` never even considered them — a first run
+# reported PASS having silently left both on their pre-cycle images, even
+# though DEFAULT_CONTAINERS above has always listed both as required-healthy.
+COMPOSE_CMD="$COMPOSE_CMD --profile full"
 log "compose: engine='$CE' project='$PROJECT' cmd='$COMPOSE_CMD'"
 
 # ── Arg parsing ──────────────────────────────────────────────────────────────
