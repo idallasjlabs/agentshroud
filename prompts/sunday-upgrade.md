@@ -136,6 +136,22 @@ surfaces, and write the report. The script decides whether a change ships.
 4. Confirm the rollback path actually works before touching anything: identify the exact commands to restore the baseline (previous tags, previous commit) and write them into the report.
 
 ### 1. Inventory
+
+**EVERYTHING MEANS EVERYTHING** (owner directive 2026-09-15). The scope is every
+versioned thing in this repo — every wrapped agent (OpenClaw, Hermes, and any
+future agent AgentShroud proxies) AND every supporting tool: Wazuh, Falco,
+ClamAV, Trivy, OpenSCAP, Semgrep, Cosign, Syft, Fluent Bit, docker-socket-proxy,
+searxng, LibreChat and its datastores, voice gateway, sandbox base images, every
+base image, every lockfile, every skill/MCP server/plugin, every patch anchor,
+every submodule. The list below is illustrative, not exhaustive. Nobody should
+have to enumerate this for you — if you are wondering whether something counts,
+it counts.
+
+A component with no newer release is reported as *already latest, verified
+against \<source\> on \<date\>*. A component simply MISSING from the table is a
+failed run — silence is not evidence of currency, and that is exactly how seven
+weeks of no-op upgrades went unnoticed.
+
 Build a complete table of every upgradable thing in the repo. Include, at minimum:
 - Container images in every compose file (gateway, Hermes, LibreChat, MongoDB/Meilisearch/RAG or whatever LibreChat depends on, docker-socket-proxy, sandbox base images, searxng, voice gateway, OpenClaw, monitoring/sidecars).
 - Language dependencies: `package.json`/lockfiles, `pyproject.toml`/`requirements*.txt`/`uv.lock`, `go.mod`, etc. for every agent, component, and utility in the repo.

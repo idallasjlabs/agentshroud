@@ -107,9 +107,40 @@ Owner directive (2026-09-01, reaffirmed 2026-09-15): *"This is a security tool.
 All CVE must be resolved and all versions must be updated to latest release on
 Sunday no exceptions. If code changes are required, we need to make them."*
 
-- **Every component goes to latest stable every Sunday** — OpenClaw, Hermes, base
-  images, dependencies, sidecars. Determine "latest" mechanically via
-  `scripts/discover_upstream_versions.py`, never from memory or a changelog.
+### EVERYTHING MEANS EVERYTHING (owner directive 2026-09-15, verbatim intent)
+
+*"Update all Agents (Hermes, OpenClaw and any future agents wrapped) and all
+supporting tools: Wazuh, OpenSCAP, Falco, Fluent Bit, docker containers, etc.
+EVERYTHING. I should not have to specify. everything means everything. This is a
+security tool it needs to be secure and provide security."*
+
+The scope is **every versioned thing in this repo**, without exception and
+without waiting to be told. The list below is illustrative, NOT exhaustive —
+anything absent from it is still in scope. If you find yourself asking "is X
+included?", the answer is yes.
+
+| Category | Includes (non-exhaustive) |
+|----------|---------------------------|
+| Wrapped agents | OpenClaw, Hermes, and **any future agent AgentShroud proxies** |
+| Security sidecars | Wazuh, Falco, ClamAV, Trivy, OpenSCAP, Semgrep, Cosign, Syft |
+| Log/telemetry | Fluent Bit, and anything else in the observability path |
+| Containers | Every image in every compose file, every base image in every Dockerfile |
+| Dependencies | `pyproject.toml`, `requirements*.txt`, `uv.lock`, `package.json` + lockfiles, `go.mod`, Rust crates |
+| Gateway + app code | AgentShroud's own pinned deps, including transitive security bumps |
+| Supporting services | docker-socket-proxy, searxng, LibreChat and its datastores, voice gateway, sandbox base images |
+| Agent surface | Skills, MCP servers, plugins, agent definitions, and any config pinning a version |
+| Vendored code | Git submodules, vendored sources, patch files and their anchors |
+| Host tooling | Colima, Docker CLI, compose plugin — report always; apply when the Sunday job owns them |
+
+A component with no newer release is reported as *already latest, verified
+against \<source\> on \<date\>* — that is a valid outcome. A component simply
+absent from the report is a **failed run**: silence is not the same as current,
+and the seven-week no-op happened precisely because absence read as fine.
+
+- **Every component goes to latest stable every Sunday.** Determine "latest"
+  mechanically — `scripts/discover_upstream_versions.py` for the wrapped agents,
+  and a cited command/registry query for everything else. Never from memory,
+  never from whichever changelog happened to be open.
 - **Needing a code change is not grounds to skip a bump.** Patch re-anchoring,
   build args, config migration — make the change, test it, ship it. The only
   legitimate BLOCKED is an upgrade that would require loosening a security control.

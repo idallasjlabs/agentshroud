@@ -408,8 +408,27 @@ phase_baseline() {
     echo "# A bare \`git checkout <sha>\` detaches HEAD and silently strips the branch"
     echo "# out from under any later commit — observed 2026-09-11, where a rollback"
     echo "# left the repo detached at the pre-run commit."
-    echo "git -C '$REPO' restore --source=$git_rev --staged --worktree -- . 2>/dev/null || \\"
-    echo "  git -C '$REPO' checkout $git_rev -- . "
+    # SCOPED to the version-pin file, deliberately. This used to restore the
+    # whole tree (`-- .`), which reverted the repo to the baseline COMMIT —
+    # silently discarding anything committed during the run. The Sunday prompt
+    # tells the session to commit as it goes ("one commit per logical
+    # component"), so a rollback would throw that work away; it did exactly
+    # that on 2026-09-15, wiping two commits made while an upgrade was in
+    # flight. Rolling back an upgrade means undoing the VERSION BUMP, not
+    # rewinding the repository.
+    echo "git -C '$REPO' restore --source=$git_rev --staged --worktree -- docker/versions.env 2>/dev/null || \\"
+    echo "  git -C '$REPO' checkout $git_rev -- docker/versions.env"
+    echo ''
+    echo '# Other files differing from the baseline are NOT reverted automatically —'
+    echo '# they may be deliberate compat fixes, or unrelated work committed during'
+    echo '# the run. Listed here so a human can decide, rather than losing them.'
+    echo "_other=\"\$(git -C '$REPO' diff --name-only $git_rev -- . ':(exclude)docker/versions.env' 2>/dev/null)\""
+    # shellcheck disable=SC2016  # literal text emitted into the generated script
+    echo 'if [ -n "$_other" ]; then'
+    echo '  echo "NOTE: these files differ from the upgrade baseline and were left untouched:"'
+    # shellcheck disable=SC2016  # literal text emitted into the generated script
+    printf '%s\n' '  printf "  %s\n" $_other'
+    echo 'fi'
     echo ''
     echo '# 2. Restore images'
     for c in $CONTAINERS; do
