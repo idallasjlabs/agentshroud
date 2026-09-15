@@ -25,15 +25,43 @@ At the start of every session, the knowledge graph for this project lives here:
 
 Do not ask where files are. Read the module index first.
 
-**`/graphify` runs in this repo must always produce a current Obsidian vault.**
-`graphify-out/obsidian/` (separate from `.obsidian-vaults/` above) is the
-graphify-generated, symbol-level knowledge vault and is a first-class
-deliverable, not optional output — run `/graphify --update --obsidian` (or
-follow up with `graphify export obsidian` if the flow used doesn't already
-include it) every time the graph is updated. Committing it: stage in
-batches of ~500 files via `git add --pathspec-from-file=<file>
---pathspec-file-nul` — a single `git add` of the full vault overflows the
-`git-secrets` pre-commit hook's argv (ARG_MAX).
+### GRAPHIFY — QUERY IT FIRST, THEN KEEP IT CURRENT
+
+`graphify-out/` is committed to this repo on purpose (~36k files; `.gitignore`
+excludes only `graphify-out/cache/`, `graphify-out/.graphify_*`, and dated
+subdirs). It is checked in so that **any agent, on any machine, can answer
+questions about this codebase cheaply instead of burning tokens re-reading
+source.** Treat it as infrastructure, not as build output.
+
+**1. Query before you grep.** For any question about how this repo works —
+"how does X work", "what calls Y", "where does Z get enforced", "trace the
+flow through W" — run `graphify query "<question>"` FIRST. Only fall back to
+`grep`/`Read`/Explore when the graph genuinely cannot answer it (the graph is
+symbol-level; it will not know about uncommitted work or non-code assets).
+Reading twenty files to reconstruct something the graph already indexed is
+the exact waste this vault exists to prevent.
+
+**2. Check staleness before trusting it.** Compare `graphify-out/manifest.json`'s
+mtime against `git log -1 --format=%cd`. If the graph predates recent commits,
+say so when you answer from it, and refresh it.
+
+**3. Refresh on a regular cadence, and ALWAYS before a prod rebuild.**
+Run `/graphify . --update --obsidian` (incremental — re-extracts only changed
+files):
+- **Mandatory** before rebuilding or releasing prod from `main`. A prod
+  release must never ship against a stale graph.
+- After any merge to `main` that touches `gateway/`, `scripts/`, or `docker/`.
+- Otherwise weekly, alongside the Sunday upgrade.
+
+`graphify-out/obsidian/` (distinct from `.obsidian-vaults/` above) is the
+symbol-level vault and is a first-class deliverable — always pass `--obsidian`
+so it regenerates with the graph, never let the two drift apart.
+
+**4. Committing it.** Stage in batches of ~500 files via
+`git add --pathspec-from-file=<file> --pathspec-file-nul` — a single `git add`
+of the full vault overflows the `git-secrets` pre-commit hook's argv (ARG_MAX).
+Commit the refreshed graph in its own commit, separate from code changes, so
+code diffs stay reviewable.
 
 ## 0) PRIME DIRECTIVE (NON-NEGOTIABLE)
 ──────────────────────────────────────────────────────────────────────────────
