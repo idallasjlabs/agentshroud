@@ -346,13 +346,41 @@ if [ -n "${_openclaw_bin}" ]; then
   # every dev-host sandboxed cron job failed with "network ... not found"
   # until this was parameterized).
   _sandbox_network="${AGENTSHROUD_PROJECT:-agentshroud}_agentshroud-isolated"
-  openclaw config set agents.defaults.sandbox.mode all 2>/dev/null
-  openclaw config set agents.defaults.sandbox.backend docker 2>/dev/null
-  openclaw config set agents.defaults.sandbox.scope session 2>/dev/null
-  openclaw config set agents.defaults.sandbox.workspaceAccess rw 2>/dev/null
-  openclaw config set agents.defaults.sandbox.docker.network "${_sandbox_network}" 2>/dev/null \
-    && echo "[init] ✓ Sandbox config applied (mode=all, backend=docker, scope=session, workspaceAccess=rw, docker.network=${_sandbox_network})" \
-    || echo "[init] ⚠ Could not apply sandbox config"
+
+  # These four were previously bare `openclaw config set ... 2>/dev/null` with
+  # no `|| true`. Under this script's `set -euo pipefail` (line 19) that makes
+  # ANY non-zero exit kill init instantly — and because stderr was discarded,
+  # it died with no message at all. That is exactly how the 2026-09-15 dev
+  # restart loop presented: the container exited 1 straight after the MCP line,
+  # 14 restarts deep, with nothing whatsoever in the logs to say why.
+  #
+  # A config write failing should never take the agent down, and must never be
+  # silent. Surface the real error, keep going, and let the explicit check
+  # below report the outcome.
+  _oc_config_set() {
+    local key="$1" val="$2" _err
+    if _err="$(openclaw config set "$key" "$val" 2>&1)"; then
+      return 0
+    fi
+    echo "[init] ⚠ openclaw config set ${key} failed: ${_err}" >&2
+    return 1
+  }
+
+  _sandbox_ok=1
+  _oc_config_set agents.defaults.sandbox.mode all                      || _sandbox_ok=0
+  _oc_config_set agents.defaults.sandbox.backend docker                || _sandbox_ok=0
+  _oc_config_set agents.defaults.sandbox.scope session                 || _sandbox_ok=0
+  _oc_config_set agents.defaults.sandbox.workspaceAccess rw            || _sandbox_ok=0
+  _oc_config_set agents.defaults.sandbox.docker.network "${_sandbox_network}" || _sandbox_ok=0
+
+  if [ "${_sandbox_ok}" -eq 1 ]; then
+    echo "[init] ✓ Sandbox config applied (mode=all, backend=docker, scope=session, workspaceAccess=rw, docker.network=${_sandbox_network})"
+  else
+    # Loud, not fatal. Sandboxing being off is a real security regression, so
+    # it must be visible in the log and to the SOC surface — but a config-write
+    # hiccup must not crash-loop the agent.
+    echo "[init] ⚠ SECURITY: sandbox config INCOMPLETE — agent isolation may be degraded. See the errors above." >&2
+  fi
 else
   echo "[init] ⚠ openclaw CLI not on PATH — skipping sandbox config"
 fi
