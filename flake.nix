@@ -7,7 +7,7 @@
 #
 # Provisioning is Nix/flakes-first per repo policy (NEVER apt/brew/manual export).
 # A collaborator runs `nix develop` and gets the full toolchain: Python 3.11 with the
-# test/lint deps, docker-compose, ruff, black, shellcheck, node, and pytest.
+# test/lint deps, docker-compose, ruff, black, shellcheck, node, trivy, and pytest.
 #
 # Outputs:
 #   devShells.default        — the dev shell (nix develop)
@@ -62,6 +62,7 @@
           pkgs.git
           pkgs.curl
           pkgs.jq
+          pkgs.trivy
         ];
       in
       {
@@ -69,7 +70,7 @@
           packages = devTools;
           shellHook = ''
             echo "AgentShroud™ dev shell — Python $(${pythonEnv}/bin/python --version 2>&1 | cut -d' ' -f2)"
-            echo "  ruff $(${pkgs.ruff}/bin/ruff --version 2>/dev/null | cut -d' ' -f2), black, shellcheck, docker-compose, node $(${pkgs.nodejs_20}/bin/node --version)"
+            echo "  ruff $(${pkgs.ruff}/bin/ruff --version 2>/dev/null | cut -d' ' -f2), black, shellcheck, docker-compose, node $(${pkgs.nodejs_20}/bin/node --version), trivy $(${pkgs.trivy}/bin/trivy --version 2>/dev/null | head -1 | cut -d' ' -f2)"
             echo "  Lint:  ruff check . && black --check ."
             echo "  Smoke: bash scripts/smoke.sh"
           '';
@@ -90,7 +91,8 @@
             echo "== black --check =="
             black --check gateway scripts 2>/dev/null || black --check gateway || exit 1
             echo "== shellcheck =="
-            shellcheck scripts/lib/container-runtime.sh scripts/smoke.d/test-container-runtime.sh || exit 1
+            shellcheck scripts/lib/container-runtime.sh scripts/smoke.d/test-container-runtime.sh \
+              scripts/lib/sunday-scan.sh scripts/smoke.d/test-sunday-upgrade-scan.sh || exit 1
             touch "$out"
           '';
 

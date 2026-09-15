@@ -42,8 +42,42 @@ if [ -n "$missing" ]; then
   exit 127
 fi
 
+# ── On-demand invocation (owner directive 2026-09-15) ────────────────────────
+# The weekly launchd firing is not the only way this must run: a major advisory
+# can land on a Tuesday. The idempotency guards below deliberately make a second
+# run on the same day a no-op, which is right for launchd retries and wrong for
+# "a CVE just dropped, run it now" — so --force is the documented escape hatch.
+#
+#   bash scripts/sunday-upgrade.sh                       # normal (launchd/weekly)
+#   bash scripts/sunday-upgrade.sh --force               # run now, ignore today's guards
+#   bash scripts/sunday-upgrade.sh --force --reason "GHSA-xxxx dropped"
+#
+# --force does NOT weaken any safety gate inside sunday-upgrade-apply.sh: the
+# preflight/scan/verify/soak/rollback and the no-op gate all still apply. It
+# only bypasses the "already ran today" short-circuit.
+FORCE=0
+RUN_REASON="scheduled weekly run"
+while [ $# -gt 0 ]; do
+  case "$1" in
+    --force)  FORCE=1; shift ;;
+    --reason) RUN_REASON="${2:-unspecified}"; shift 2 ;;
+    -h|--help)
+      sed -n '1,30p' "${BASH_SOURCE[0]}"
+      exit 0 ;;
+    *)
+      echo "[sunday-upgrade] unknown argument: $1" >&2
+      exit 2 ;;
+  esac
+done
+
 REPO=~/Development/agentshroud
-SESSION="agentshroud-upgrade-$(date +%F)"
+# A forced run must not collide with the day's scheduled session name, or the
+# tmux guard below would treat it as "already running" and silently skip.
+if [ "$FORCE" -eq 1 ]; then
+  SESSION="agentshroud-upgrade-$(date +%F-%H%M%S)"
+else
+  SESSION="agentshroud-upgrade-$(date +%F)"
+fi
 PROMPT_FILE="$REPO/prompts/sunday-upgrade.md"
 TODAY="$(date +%F)"
 LOG="$REPO/reports/upgrade-run-${TODAY}.log"
@@ -68,7 +102,11 @@ fi
 # the rest of that day — the failure mode was self-perpetuating. A report that
 # exists without its sentinel is an incomplete run and MUST be retryable.
 DONE_MARKER="$REPO/reports/.upgrade-${TODAY}.done"
-if [ -f "$DONE_MARKER" ]; then
+if [ "$FORCE" -eq 1 ]; then
+  echo "[sunday-upgrade] --force: on-demand run (reason: ${RUN_REASON})"
+  echo "[sunday-upgrade] --force: bypassing today's completion/report guards."
+  echo "[sunday-upgrade] --force: all safety gates in sunday-upgrade-apply.sh still apply."
+elif [ -f "$DONE_MARKER" ]; then
   echo "[sunday-upgrade] run already completed today (${DONE_MARKER}) — skipping."
   exit 0
 fi

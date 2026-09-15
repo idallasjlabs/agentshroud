@@ -79,6 +79,9 @@ run_test "test-skills-sync.sh" bash "$SCRIPT_DIR/smoke.d/test-skills-sync.sh"
 # Container-runtime detection shim assertions (SCRUM-92)
 run_test "test-container-runtime.sh" bash "$SCRIPT_DIR/smoke.d/test-container-runtime.sh"
 
+# Sunday-upgrade scan-gate assertions: phantom-tag fallback + Trivy auto-provisioning
+run_test "test-sunday-upgrade-scan.sh" bash "$SCRIPT_DIR/smoke.d/test-sunday-upgrade-scan.sh"
+
 # Live boot test (gated by SMOKE_LIVE=1)
 run_test "test_bot_boot_live.sh" bash "$SMOKE_DIR/test_bot_boot_live.sh"
 

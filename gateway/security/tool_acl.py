@@ -459,6 +459,102 @@ class ToolACLEnforcer:
         # Step 7: Fall through to standard RBAC check for remaining cases.
         return self.can_use_tool(user_id, tool_name)
 
+    def can_use_tool_from_origin(
+        self,
+        user_id: str,
+        tool_name: str,
+        origin: str,
+        origin_verified: bool = False,
+    ) -> Tuple[bool, str]:
+        """Authorize a tool call, refusing owner elevation over an unverified origin.
+
+        WHY THIS EXISTS (owner directive 2026-09-15)
+        --------------------------------------------
+        A cluster of upstream OpenClaw advisories all share one shape: a request
+        arriving over a side channel is trusted with authority the normal path
+        would have checked.
+
+          GHSA-rrxp-5mx8-mvhh (8.8) inbound voice calls inherit owner tool authorization
+          GHSA-58qx-6m8p-wh2j (8.8) Slack group DMs skip sender allowlists
+          GHSA-wwcw-jfpp-gpxw (8.8) native tools ignore per-chat policy
+          GHSA-7cp7-87pj-p32v (8.3) skill dispatch skips owner-only policy
+          GHSA-hpg5-cq3m-phqp (8.3) agent cron tool reaches operator command jobs
+
+        Upgrading OpenClaw closes those in OpenClaw. It does nothing for the next
+        agent AgentShroud proxies, and nothing for the same bug class recurring.
+        AgentShroud's job is to stop the attack for ANY agent behind it —
+        including a third-party agent that never received the vendor's patch —
+        so the control lives here, at the gateway, and is deliberately
+        agent-agnostic: it takes an origin and an identity, never an agent name.
+
+        THE RULE
+        --------
+        Identity claimed over an origin that never verified it does not confer
+        owner authority. This refuses ELEVATION, not access: the caller still
+        receives exactly the permissions their identity earns by the normal path,
+        so a genuine owner on an unverified channel keeps public tools and loses
+        only the owner-private tier.
+
+        Fails closed by design — ``origin_verified`` defaults to False, so a
+        caller that forgets to pass it gets the safe branch. A permissive default
+        is precisely how this bug class reappears.
+
+        Args:
+            user_id: Claimed identity of the requester.
+            tool_name: Tool being invoked.
+            origin: Channel the request arrived on (e.g. "telegram",
+                "voice_inbound", "cron", "openclaw_skill"). Recorded for audit.
+            origin_verified: True only when THIS origin authenticated the
+                identity it is claiming. Never pass True on the strength of the
+                identity alone — that is the vulnerability.
+
+        Returns:
+            (allowed, reason)
+
+        IEC 62443 FR1 (SL2) identification/authentication enforcement and
+        FR3 (SL3) per-identity access control at the tool-call boundary.
+        """
+        is_owner = self._rbac is not None and self._rbac.is_owner(user_id)
+
+        if is_owner and not origin_verified:
+            # Re-evaluate as if the owner claim were absent. Anything the
+            # identity could do WITHOUT owner elevation still goes through.
+            tool_lower = tool_name.lower().strip()
+            if tool_lower in self._acl.effective_private or tool_lower in self._acl.effective_admin:
+                reason = (
+                    f"tool '{tool_name}' requires owner authority, but the request "
+                    f"arrived over unverified origin '{origin}' — elevation refused"
+                )
+                logger.warning(
+                    "ToolACL DENIED owner elevation over unverified origin: "
+                    "user=%s tool=%s origin=%s",
+                    user_id,
+                    tool_name,
+                    origin,
+                )
+                self._denial_counts[user_id] = self._denial_counts.get(user_id, 0) + 1
+                try:
+                    from gateway.security.module_stats import record_decision
+
+                    record_decision("tool_acl", False)
+                except Exception:
+                    pass
+                return False, reason
+            # Not an elevated tool — the owner claim was never load-bearing here.
+            logger.info(
+                "ToolACL allowed non-elevated tool over unverified origin: "
+                "user=%s tool=%s origin=%s",
+                user_id,
+                tool_name,
+                origin,
+            )
+            return True, (
+                f"tool '{tool_name}' needs no owner authority; "
+                f"allowed over unverified origin '{origin}'"
+            )
+
+        return self.can_use_tool(user_id, tool_name)
+
     def get_allowed_tools(self, user_id: str) -> List[str]:
         """Return the list of tools the user is allowed to use (union of all sets)."""
         role = self._get_role(user_id)
