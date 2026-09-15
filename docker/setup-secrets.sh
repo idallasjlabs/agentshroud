@@ -279,6 +279,18 @@ declare -a SECRET_DEFS=(
     "brave_api_key|Brave Search API key (shared with all bots)|yes|yes|all"
     "hermes_api_key|Hermes OpenAI API server key (random hex)|yes|yes|hermes"
     "github_pat|GitHub Personal Access Token (for Hermes GitHub MCP)|yes|yes|hermes"
+    # These five were declared as expected/mounted secrets by
+    # docker/bots/hermes/start.sh:264 and run-standalone.sh:80-86, but had no
+    # definition here — so `setup-secrets.sh store` never prompted for them and
+    # `extract` never wrote them. They could not be populated through any
+    # supported path, which is why Hermes reported them permanently missing and
+    # the Feedbin-backed "Breaking AI News" cron failed every run with
+    # "feedbin.py: no credentials".
+    "hermes_healthchecks_url|Hermes healthchecks.io ping URL|yes|yes|hermes"
+    "feedbin_email|Feedbin account email (for the news-digest crons)|no|yes|hermes"
+    "feedbin_password|Feedbin account password|yes|yes|hermes"
+    "podcastindex_api_key|Podcast Index API key|yes|yes|hermes"
+    "podcastindex_api_secret|Podcast Index API secret|yes|yes|hermes"
 )
 
 # ── Bot filter helper ──────────────────────────────────────────────────────────
