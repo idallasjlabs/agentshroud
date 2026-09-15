@@ -63,6 +63,69 @@ of the full vault overflows the `git-secrets` pre-commit hook's argv (ARG_MAX).
 Commit the refreshed graph in its own commit, separate from code changes, so
 code diffs stay reviewable.
 
+──────────────────────────────────────────────────────────────────────────────
+## 0.0) PROVE THE OUTCOME, NEVER THE STEPS (NON-NEGOTIABLE)
+──────────────────────────────────────────────────────────────────────────────
+
+This rule is written in blood. Four separate mechanisms in this repo reported
+success for work they never did, and every one of them passed its own checks:
+
+| Reported | Actually did |
+|----------|--------------|
+| `scan: PASS` | scanned zero images (pinned tag did not exist yet) |
+| "Auto-registered as under_review by the daily sync" | registered nothing; the sync never writes |
+| Sunday upgrade `PASS`, seven weeks running | upgraded nothing; the pin never moved |
+| dev→prod handoff `PASS` | a `--phase scan` run that never deployed or soaked |
+
+All four verified that *commands executed*. None verified that *state changed*.
+That is the single defect class behind all of them.
+
+**Therefore, for any automated job, gate, or report in this repo:**
+
+1. **Assert on the resulting state, not on the exit code of the step.** A build
+   that succeeds is not an upgrade. A scanner that runs is not a scan. Compare
+   before/after and fail when they are identical but should not be.
+2. **A no-op must be distinguishable from a success.** If "nothing needed doing"
+   and "nothing got done" produce the same output, the gate is broken. Give the
+   no-op its own status and exit code (see exit 25 / `NOTHING_UPGRADED`).
+3. **Never claim an action in user-facing text that the code does not perform.**
+   The CVE alert claimed auto-registration for weeks while registering nothing.
+   If the message says it happened, the code must make it happen.
+4. **Report deltas.** Every status report states `from → to` for what it changed.
+   "Passed" with no delta and no proof that no delta was needed is a failed run.
+5. **Re-read the machine's record before summarising.** Trust `versions.env`, the
+   handoff JSON, and `docker ps` over your own narrative of what you just did.
+
+When reviewing any gate, ask: *what would this print if the work silently did
+nothing?* If the answer is "PASS", fix the gate before trusting it again.
+
+──────────────────────────────────────────────────────────────────────────────
+## 0.05) WEEKLY UPGRADES — UNATTENDED, AND ON DEMAND
+──────────────────────────────────────────────────────────────────────────────
+
+Owner directive (2026-09-01, reaffirmed 2026-09-15): *"This is a security tool.
+All CVE must be resolved and all versions must be updated to latest release on
+Sunday no exceptions. If code changes are required, we need to make them."*
+
+- **Every component goes to latest stable every Sunday** — OpenClaw, Hermes, base
+  images, dependencies, sidecars. Determine "latest" mechanically via
+  `scripts/discover_upstream_versions.py`, never from memory or a changelog.
+- **Needing a code change is not grounds to skip a bump.** Patch re-anchoring,
+  build args, config migration — make the change, test it, ship it. The only
+  legitimate BLOCKED is an upgrade that would require loosening a security control.
+- **Two remediation arms for every CVE, not one.** The vendor's patch closes the
+  flaw in that vendor. AgentShroud must independently be able to stop the attack
+  class at the gateway, so that ANY proxied agent — including a third-party agent
+  that never received the vendor fix — is protected. A `Coverage: NONE` verdict
+  from `scripts/triage-cve-mitigations.py` is a GAP, which is tracked work, not a
+  status to record and move on from.
+- **On-demand runs are first-class.** A major advisory does not wait for Sunday:
+  `bash scripts/sunday-upgrade.sh --force --reason "<why>"`. `--force` bypasses
+  only the already-ran-today guard; every safety gate still applies.
+- Entry points: `scripts/sunday-upgrade.sh` (session wrapper, launchd) →
+  `prompts/sunday-upgrade.md` (judgement) → `scripts/sunday-upgrade-apply.sh`
+  (deterministic gates; exit code is the contract).
+
 ## 0) PRIME DIRECTIVE (NON-NEGOTIABLE)
 ──────────────────────────────────────────────────────────────────────────────
 
