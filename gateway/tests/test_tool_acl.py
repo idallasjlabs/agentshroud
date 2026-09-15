@@ -328,3 +328,90 @@ class TestCVE2026_9367TerminalToolDenied:
 
     def test_terminal_tool_not_in_collab_allowed(self):
         assert "terminal_tool" not in COLLABORATOR_ALLOWED_TOOLS
+
+
+# ---------------------------------------------------------------------------
+# Origin-aware authorization (CVE-derived control, owner directive 2026-09-15)
+# ---------------------------------------------------------------------------
+class TestOriginAwareAuthorization:
+    """AgentShroud-side mitigation for the 'channel skips the check' CVE class.
+
+    Upstream advisories in the OpenClaw registry that all share one shape — a
+    request arriving over a side channel is trusted with authority the normal
+    path would have checked:
+
+      GHSA-rrxp-5mx8-mvhh (8.8) inbound voice calls could inherit owner tool authorization
+      GHSA-58qx-6m8p-wh2j (8.8) Slack group DMs could skip sender allowlists
+      GHSA-wwcw-jfpp-gpxw (8.8) native tools could ignore per-chat policy
+      GHSA-7cp7-87pj-p32v (8.3) skill dispatch could skip owner-only policy
+      GHSA-hpg5-cq3m-phqp (8.3) agent cron tool could reach operator command jobs
+
+    The vendor fix is "upgrade past 2026.8.1", which protects OpenClaw only.
+    The durable AgentShroud requirement is different and outlives it: identity
+    claimed over an origin that never verified it must not confer owner
+    authority, for ANY proxied agent — including a third-party agent that never
+    received the vendor's patch.
+    """
+
+    def test_owner_over_verified_origin_keeps_full_authority(self, enforcer):
+        """The legitimate path must not regress."""
+        allowed, _ = enforcer.can_use_tool_from_origin(
+            OWNER_ID, "terminal_tool", origin="telegram", origin_verified=True
+        )
+        assert allowed
+
+    def test_owner_claim_over_unverified_origin_is_refused_elevation(self, enforcer):
+        """The core of the CVE class: a side channel claiming to be the owner.
+
+        terminal_tool is owner-private, so refusing elevation must deny it.
+        """
+        allowed, reason = enforcer.can_use_tool_from_origin(
+            OWNER_ID, "terminal_tool", origin="voice_inbound", origin_verified=False
+        )
+        assert not allowed
+        assert "unverified origin" in reason.lower()
+
+    def test_unverified_origin_still_allows_public_tools(self, enforcer):
+        """Refusing ELEVATION is not the same as blanket denial — an unverified
+        origin still gets the baseline permissions its identity would have."""
+        allowed, _ = enforcer.can_use_tool_from_origin(
+            OWNER_ID, "web_search", origin="voice_inbound", origin_verified=False
+        )
+        assert allowed
+
+    def test_non_owner_over_unverified_origin_is_unchanged(self, enforcer):
+        """A non-owner gains nothing and loses nothing from origin checking."""
+        a1, _ = enforcer.can_use_tool(VIEWER_ID, "terminal_tool")
+        a2, _ = enforcer.can_use_tool_from_origin(
+            VIEWER_ID, "terminal_tool", origin="voice_inbound", origin_verified=False
+        )
+        assert a1 == a2 is False
+
+    def test_unknown_origin_defaults_to_unverified(self, enforcer):
+        """Fail closed: an origin nobody vouched for is not trusted.
+
+        A caller that forgets to pass origin_verified must not accidentally get
+        the permissive branch — that is how this bug class reappears.
+        """
+        allowed, reason = enforcer.can_use_tool_from_origin(
+            OWNER_ID, "terminal_tool", origin="some_new_channel"
+        )
+        assert not allowed
+        assert "unverified origin" in reason.lower()
+
+    def test_denial_is_counted_for_soc_correlation(self, enforcer):
+        before = enforcer.get_denial_counts().get(OWNER_ID, 0)
+        enforcer.can_use_tool_from_origin(
+            OWNER_ID, "terminal_tool", origin="cron", origin_verified=False
+        )
+        after = enforcer.get_denial_counts().get(OWNER_ID, 0)
+        assert after == before + 1
+
+    def test_applies_to_any_agent_not_just_openclaw(self, enforcer):
+        """The control is agent-agnostic by construction: it takes an origin and
+        an identity, never an agent name. Same refusal regardless of who asks."""
+        for agent_origin in ("openclaw_skill", "hermes_cron", "third_party_agent"):
+            allowed, _ = enforcer.can_use_tool_from_origin(
+                OWNER_ID, "terminal_tool", origin=agent_origin, origin_verified=False
+            )
+            assert not allowed, f"{agent_origin} was granted owner elevation"
