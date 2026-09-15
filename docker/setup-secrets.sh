@@ -104,12 +104,62 @@ keychain_get() {
 # ── 1Password non-interactive fallback ────────────────────────────────────────
 # op_get tries several field-label variants to handle the inconsistencies in
 # the "Agent Shroud Bot Credentials" vault (e.g. openai+api_key vs openai_api_key).
+# Secrets whose canonical home is a DEDICATED 1Password item rather than a
+# field on the per-host "AgentShroud - <host> [<user>]" item that op_get()
+# otherwise searches.
+#
+# Why this exists (2026-09-15): scripts/asb's setup_ephemeral_secrets() WIPES
+# ~/.agentshroud/.asb-secrets on every `asb up` and repopulates it from this
+# backend. So a value hand-written into that directory survives exactly until
+# the next upgrade, then silently disappears — which is what happened to the
+# Feedbin credentials and broke the Daily Brief podcast. Writing the files
+# directly fixes a morning; mapping them here fixes it permanently, on every
+# machine signed into 1Password, with no dependence on the local keychain
+# (and therefore none of the `security add-generic-password -A` ACL widening
+# that path requires).
+#
+# Add an entry when a credential already lives in its own 1Password item.
+# VERIFY the item and field names against `op item get <item> --vault <vault>`
+# before adding — a wrong ref fails closed and silently, which looks exactly
+# like "no credential" and costs a morning to diagnose. Do not guess.
+#
+# Override the whole mechanism with AGENTSHROUD_OP_REF_<UPPERCASE_NAME>.
+op_ref_for() {
+    local name="$1"
+    # Per-secret env override always wins: AGENTSHROUD_OP_REF_FEEDBIN_EMAIL=...
+    local override_var override
+    override_var="AGENTSHROUD_OP_REF_$(printf '%s' "$name" | tr '[:lower:]' '[:upper:]')"
+    override="${!override_var:-}"
+    if [[ -n "$override" ]]; then printf '%s' "$override"; return 0; fi
+
+    local vault="${AGENTSHROUD_OP_BOT_VAULT:-Agent Shroud Bot Credentials}"
+    case "$name" in
+        # Verified working 2026-09-15 via `op read` on the prod host.
+        feedbin_email)    printf 'op://%s/Feedbin/username' "$vault" ;;
+        feedbin_password) printf 'op://%s/Feedbin/password' "$vault" ;;
+        # podcastindex_api_key / podcastindex_api_secret: an item exists in this
+        # vault (added 2026-09-14) but its exact item/field names are NOT yet
+        # verified from a signed-in host. Deliberately left unmapped rather than
+        # guessed — set AGENTSHROUD_OP_REF_PODCASTINDEX_API_KEY (and _SECRET),
+        # or add the refs here once confirmed.
+        *) return 1 ;;
+    esac
+}
+
 op_get() {
     local name="$1"
     command -v op &>/dev/null || return 0
     command -v op &>/dev/null && op account list &>/dev/null 2>&1 || return 0
+
+    local val ref
+    # Dedicated-item refs first — these are exact, so prefer them over the
+    # fuzzy field-name guessing below.
+    if ref="$(op_ref_for "$name")"; then
+        val=$(op read "$ref" 2>/dev/null || true)
+        [[ -n "$val" ]] && { echo "$val"; return; }
+    fi
+
     local item="${AGENTSHROUD_OP_ITEM:-AgentShroud - $(hostname -s) [$(id -un)]}"
-    local val
     # Try exact canonical name.
     val=$(op item get "$item" --vault "$OP_VAULT" --fields "$name" 2>/dev/null || true)
     [[ -n "$val" ]] && { echo "$val"; return; }
