@@ -31,7 +31,8 @@
 #                         dev additionally writes the handoff JSON that gates prod.
 #   --dry-run             Run every read-only phase and report what WOULD change.
 #                         Makes no mutation: no build, no compose up, no pin edit.
-#   --phase P             preflight|baseline|scan|apply|verify|all   (default: all)
+#   --phase P             preflight|discover|baseline|scan|apply|verify|all
+#                         (default: all)
 #   --soak-seconds N      Post-change stability soak. Default 120 (procedure
 #                         requires containers stay healthy at least 2 minutes).
 #   --max-critical N      Fail the scan gate above N CRITICAL findings.
@@ -47,6 +48,9 @@
 #   0   all requested phases passed
 #   10  preflight failed (environment not fit to run)
 #   20  scan gate failed (--max-critical exceeded)
+#   25  NOTHING WAS UPGRADED although a newer upstream release exists.
+#       The run was mechanically green but achieved nothing — see the no-op
+#       gate below. This is a job malfunction, not a healthy stack.
 #   30  apply failed (build/compose error) — rollback attempted
 #   40  verify failed (unhealthy/restart loop/errors) — rollback attempted
 #   50  rollback itself failed — STACK MAY BE DEGRADED, human required
@@ -187,8 +191,8 @@ case "$ENVIRONMENT" in
   *) die 10 "--env must be 'dev' or 'prod' (got: '${ENVIRONMENT:-<empty>}')" ;;
 esac
 case "$PHASE" in
-  preflight|baseline|scan|apply|verify|all) ;;
-  *) die 10 "--phase must be one of preflight|baseline|scan|apply|verify|all (got: '$PHASE')" ;;
+  preflight|discover|baseline|scan|apply|verify|all) ;;
+  *) die 10 "--phase must be one of preflight|discover|baseline|scan|apply|verify|all (got: '$PHASE')" ;;
 esac
 if ! printf '%s' "$SOAK_SECONDS" | grep -Eq '^[0-9]+$'; then
   die 10 "--soak-seconds must be an integer (got: '$SOAK_SECONDS')"
@@ -430,6 +434,88 @@ phase_baseline() {
   chmod +x "$ROLLBACK_SH"
   log "baseline: wrote executable rollback script $ROLLBACK_SH"
   log "baseline: PASS"
+}
+
+# ═════════════════════════════════════════════════════════════════════════════
+# PHASE: discover — what is the latest upstream release, really?
+#
+# For seven weeks this pipeline reported PASS every Sunday while rebuilding the
+# SAME upstream version. OPENCLAW_VERSION was introduced as 2026.7.1 on
+# 2026-07-29 and moved exactly once since, to the downstream counter 2026.7.1-2,
+# while npm shipped 2026.8.1 through 2026.9.4. HERMES_VERSION moved once, in a
+# feature PR, never in a Sunday run.
+#
+# The cause is stated in this script's own header: "the agent proposes versions;
+# this script disposes." It builds whatever versions.env already says and never
+# asked what was actually available — that was left to an LLM session's
+# judgement, and the gates below then verified only that the rebuild worked.
+# Rebuilding an identical version passes every one of them.
+#
+# Discovery is mechanical, so it belongs here rather than in a prompt.
+# ═════════════════════════════════════════════════════════════════════════════
+DISCOVERED_OPENCLAW_VERSION=""
+DISCOVERED_HERMES_TAG=""
+UPGRADE_AVAILABLE=0
+
+phase_discover() {
+  local discover_py="$REPO/scripts/discover_upstream_versions.py"
+  if [ ! -f "$discover_py" ]; then
+    warn "discover: $discover_py not found — cannot tell whether this run upgrades anything"
+    return 0
+  fi
+
+  local out
+  if ! out="$(python3 "$discover_py" --shell 2>/dev/null)"; then
+    # Unreachable upstream is "unknown", never "already current" — the latter
+    # would silently re-introduce the exact no-op this phase exists to catch.
+    warn "discover: upstream lookup FAILED — treating latest as UNKNOWN, not as 'already current'"
+    return 0
+  fi
+  eval "$out"
+
+  log "discover: openclaw pinned=${OPENCLAW_VERSION:-<unset>} latest=${DISCOVERED_OPENCLAW_VERSION:-<unknown>}"
+  log "discover: hermes   pinned=${HERMES_VERSION:-<unset>} latest_tag=${DISCOVERED_HERMES_TAG:-<unknown>}"
+
+  if [ -n "$DISCOVERED_OPENCLAW_VERSION" ] \
+     && [ "$DISCOVERED_OPENCLAW_VERSION" != "${OPENCLAW_VERSION:-}" ]; then
+    UPGRADE_AVAILABLE=1
+    warn "discover: OpenClaw is BEHIND — pinned ${OPENCLAW_VERSION:-<unset>}, latest ${DISCOVERED_OPENCLAW_VERSION}"
+  fi
+}
+
+# ═════════════════════════════════════════════════════════════════════════════
+# The NO-OP GATE.
+#
+# A run that rebuilt the same versions it started with upgraded nothing. That is
+# a legitimate outcome ONLY when we are already on the latest release; it is a
+# malfunction when a newer one exists. Before this gate the two were
+# indistinguishable — both printed PASS — which is how seven weeks of "green"
+# upgrades shipped no upgrade at all.
+# ═════════════════════════════════════════════════════════════════════════════
+PINS_BEFORE=""
+_capture_pins() {
+  grep -E '^(OPENCLAW_VERSION|HERMES_VERSION|HERMES_IMAGE)=' "$REPO/docker/versions.env" 2>/dev/null | sort || true
+}
+
+check_noop_gate() {
+  local after
+  after="$(_capture_pins)"
+  if [ "$after" != "$PINS_BEFORE" ]; then
+    log "no-op gate: PASS — upstream pins changed this run"
+    UPGRADE_HAPPENED=1
+    return 0
+  fi
+
+  UPGRADE_HAPPENED=0
+  if [ "$UPGRADE_AVAILABLE" -eq 1 ]; then
+    err "no-op gate: FAILED — this run changed no upstream pin, but a newer release exists."
+    err "no-op gate:   OpenClaw pinned=${OPENCLAW_VERSION:-<unset>} latest=${DISCOVERED_OPENCLAW_VERSION:-<unknown>}"
+    err "no-op gate: The stack may be healthy, but nothing was upgraded. Reporting this as"
+    err "no-op gate: a PASS is what hid seven weeks of no-op Sunday runs."
+    return 25
+  fi
+  log "no-op gate: NO-OP (honest) — already on the latest upstream release; nothing to upgrade"
+  return 0
 }
 
 # ═════════════════════════════════════════════════════════════════════════════
@@ -701,6 +787,11 @@ write_handoff() {
     printf '  "date": "%s",\n' "$TODAY"
     printf '  "status": "%s",\n' "$status"
     printf '  "phase": "%s",\n' "$PHASE"
+    # Whether this run actually moved an upstream pin. A green run that
+    # upgraded nothing is exactly what went unnoticed for seven weeks, so the
+    # handoff has to record it rather than leaving PASS to imply it.
+    printf '  "upgraded": %s,\n' "$([ "${UPGRADE_HAPPENED:-0}" -eq 1 ] && echo true || echo false)"
+    printf '  "latest_openclaw_seen": "%s",\n' "${DISCOVERED_OPENCLAW_VERSION:-unknown}"
     printf '  "versions": {\n    %s\n  },\n' "$versions"
     printf '  "notes": "Written by sunday-upgrade-apply.sh with --phase=%s. status=PASS is only ever published by a full --phase=all run, and means preflight, scan, apply and verify all passed on dev, including a %ss stability soak."\n' "$PHASE" "$SOAK_SECONDS"
     printf '}\n'
@@ -719,11 +810,25 @@ log "=== sunday-upgrade-apply start: env=$ENVIRONMENT phase=$PHASE dry_run=$DRY_
 # shellcheck disable=SC2154  # rc is assigned by the trap body itself, immediately before use
 trap 'rc=$?; if [ $rc -ne 0 ]; then write_handoff FAIL; fi' EXIT
 
+PINS_BEFORE="$(_capture_pins)"
+
 _should_run preflight && phase_preflight
+_should_run discover  && phase_discover
 _should_run baseline  && phase_baseline
 _should_run scan      && phase_scan
 _should_run apply     && phase_apply
 _should_run verify    && phase_verify
+
+# The no-op gate only judges a FULL run. A partial --phase invocation was never
+# trying to upgrade anything, so "no pin changed" says nothing about it.
+if [ "$PHASE" = "all" ]; then
+  noop_rc=0
+  check_noop_gate || noop_rc=$?
+  if [ "$noop_rc" -ne 0 ]; then
+    write_handoff NOTHING_UPGRADED
+    exit "$noop_rc"
+  fi
+fi
 
 write_handoff PASS
 log "=== sunday-upgrade-apply COMPLETE: all requested phases passed ==="
