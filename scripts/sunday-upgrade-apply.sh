@@ -68,7 +68,10 @@ SOAK_SECONDS=120
 MAX_CRITICAL=""
 ALLOW_DIRTY=0
 ALLOW_DIRTY_BUILD=0
-HANDOFF_DIR="/Users/Shared/agentshroud-sunday"
+# Overridable (like SUNDAY_COMPOSE_FILE/SUNDAY_CONTAINERS/SUNDAY_SCAN_IMAGES)
+# so tests can point the dev->prod gate at a scratch dir instead of writing to
+# the real shared one that prod actually reads.
+HANDOFF_DIR="${SUNDAY_HANDOFF_DIR:-/Users/Shared/agentshroud-sunday}"
 COMPOSE_FILE="${SUNDAY_COMPOSE_FILE:-$REPO/docker/docker-compose.yml}"
 ARTIFACT_DIR="$REPO/reports/sunday/$TODAY"
 
@@ -116,6 +119,12 @@ log()  { printf '[apply %s] %s\n'        "$(_ts)" "$*"; }
 warn() { printf '[apply %s] WARN: %s\n'  "$(_ts)" "$*" >&2; }
 err()  { printf '[apply %s] ERROR: %s\n' "$(_ts)" "$*" >&2; }
 die()  { local code="$1"; shift; err "$*"; exit "$code"; }
+
+# scan-gate logic lives in a sourced lib (like container-runtime.sh below) so
+# it can be unit-tested with a controlled PATH — this script's own PATH
+# hardening above is deliberately hostile to that (see scripts/lib/sunday-scan.sh).
+# shellcheck source=scripts/lib/sunday-scan.sh
+. "$REPO/scripts/lib/sunday-scan.sh"
 
 # ── Container-runtime + compose-file resolution (mirrors scripts/asb) ────────
 # scripts/asb already solves "which compose binary, which override file, which
@@ -367,6 +376,8 @@ phase_baseline() {
     id="$(docker inspect --format '{{.Image}}' "$c" 2>/dev/null || true)"
     [ -n "$id" ] || continue
     if _mutating; then
+      # shellcheck disable=SC2015  # safe here: a plain `var=$((...))` assignment always exits 0,
+      # so the `|| warn` branch can only be reached by `docker tag` itself failing.
       docker tag "$id" "agentshroud-rollback/${c}:${TODAY}" 2>/dev/null && tagged=$((tagged + 1)) || \
         warn "baseline: could not retag $c for rollback"
     else
@@ -403,8 +414,14 @@ phase_baseline() {
     echo ''
     echo '# 3. Recreate containers from the restored images'
     echo '# hermes excluded — its container is managed by scripts/asb (run-standalone.sh),'
+    # shellcheck disable=SC2016  # backticks are literal text in the generated script's comment
     echo '# not `docker compose up`; see the matching comment in phase_apply above.'
-    echo "$COMPOSE_CMD up -d --force-recreate \$($COMPOSE_CMD config --services 2>/dev/null | grep -vx 'hermes')"
+    # The `|| true` inside the generated command substitution is load-bearing:
+    # the rollback script runs under `set -euo pipefail` (emitted above), and a
+    # `grep -v` matching nothing exits 1, which would abort the ROLLBACK — the
+    # one path that must never fail closed. Same hazard already documented on
+    # _dirty_build_files/_buildable_services/phase_apply.
+    echo "$COMPOSE_CMD up -d --force-recreate \$($COMPOSE_CMD config --services 2>/dev/null | grep -vx 'hermes' || true)"
     echo 'if docker image inspect agentshroud-rollback/agentshroud-hermes-v2:'"$TODAY"' >/dev/null 2>&1; then'
     echo "  docker tag agentshroud-rollback/agentshroud-hermes-v2:${TODAY} agentshroud/hermes:\${AGENTSHROUD_VERSION:-latest} 2>/dev/null || true"
     echo "  [ -x '$REPO/scripts/asb' ] && '$REPO/scripts/asb' up hermes || echo 'WARN: hermes image restored but not redeployed — run scripts/asb up hermes manually'"
@@ -416,53 +433,15 @@ phase_baseline() {
 }
 
 # ═════════════════════════════════════════════════════════════════════════════
-# PHASE: scan — real Trivy counts. Absence of a scanner is a FAILED gate,
-# never a silent pass (repo rule: no fake green).
+# PHASE: scan — real Trivy counts. Absence of a scanner, or of any image to
+# point it at, is a FAILED gate, never a silent pass (repo rule: no fake
+# green) — but both are provisioning problems to solve first, not reasons to
+# skip: see scripts/lib/sunday-scan.sh (sourced above).
 # ═════════════════════════════════════════════════════════════════════════════
 phase_scan() {
   log "scan: CRITICAL/HIGH counts for: $SCAN_IMAGES"
-
-  if ! command -v trivy >/dev/null 2>&1; then
-    if [ -n "$MAX_CRITICAL" ]; then
-      die 20 "trivy not installed but --max-critical=$MAX_CRITICAL was requested — cannot enforce a CVE gate without a scanner. Refusing to report a pass."
-    fi
-    warn "scan: trivy not installed — SKIPPED. No CVE claim can be made from this run."
-    printf '{"scanner": "absent", "images": {}}\n' > "$SCAN_JSON"
-    return 0
-  fi
-
-  local total_crit=0 first=1
-  {
-    printf '{\n  "scanner": "trivy",\n  "images": {\n'
-    local img out crit high
-    for img in $SCAN_IMAGES; do
-      if ! docker image inspect "$img" >/dev/null 2>&1; then
-        warn "scan: image not present locally, skipping: $img"
-        continue
-      fi
-      out="$(trivy image --quiet --scanners vuln --severity CRITICAL,HIGH \
-              --format json "$img" 2>/dev/null || true)"
-      if [ -z "$out" ]; then
-        warn "scan: trivy returned nothing for $img"
-        continue
-      fi
-      crit="$(printf '%s' "$out" | grep -o '"Severity": *"CRITICAL"' | wc -l | tr -d ' ')"
-      high="$(printf '%s' "$out" | grep -o '"Severity": *"HIGH"'     | wc -l | tr -d ' ')"
-      total_crit=$((total_crit + crit))
-      [ "$first" -eq 1 ] || printf ',\n'
-      first=0
-      printf '    "%s": {"critical": %s, "high": %s}' "$img" "$crit" "$high"
-      log "scan: $img -> ${crit} CRITICAL / ${high} HIGH"
-    done
-    printf '\n  }\n}\n'
-  } > "$SCAN_JSON"
-
-  log "scan: wrote $SCAN_JSON (total CRITICAL across images: ${total_crit})"
-
-  if [ -n "$MAX_CRITICAL" ] && [ "$total_crit" -gt "$MAX_CRITICAL" ]; then
-    die 20 "CVE gate FAILED: ${total_crit} CRITICAL findings exceeds --max-critical=${MAX_CRITICAL}"
-  fi
-  log "scan: PASS"
+  # shellcheck disable=SC2086  # word-splitting SCAN_IMAGES into args is intentional
+  sunday_run_scan_gate "$SCAN_JSON" "$MAX_CRITICAL" $SCAN_IMAGES
 }
 
 # ═════════════════════════════════════════════════════════════════════════════
@@ -538,8 +517,18 @@ phase_apply() {
   # then the rollback, down with it (exit 50: manual recovery required).
   # Exclude it explicitly and defer to asb's own working path instead.
   local up_services
-  up_services="$($COMPOSE_CMD config --services 2>/dev/null | grep -vx 'hermes')"
+  # `|| true` is load-bearing — same pipefail hazard already documented on
+  # _dirty_build_files and _buildable_services above. A `grep -v` that emits
+  # nothing exits 1, which under `set -euo pipefail` propagates out of the
+  # command substitution and kills the whole run at the assignment.
+  up_services="$($COMPOSE_CMD config --services 2>/dev/null | grep -vx 'hermes' || true)"
+  if [ -z "$up_services" ]; then
+    err "apply: compose reported no services to recreate (other than hermes)"
+    _attempt_rollback
+    exit 30
+  fi
   log "apply: recreating containers (excluding hermes — see comment above): ${up_services//$'\n'/ }"
+  # shellcheck disable=SC2086  # up_services is a newline-separated list; splitting into args is intended
   if ! $COMPOSE_CMD up -d $up_services; then
     err "apply: compose up FAILED"
     _attempt_rollback
@@ -676,6 +665,20 @@ write_handoff() {
   [ "$ENVIRONMENT" = "dev" ] || return 0
   local status="$1"
 
+  # A partial run proves nothing about the phases it never executed. Writing
+  # status=PASS after e.g. `--phase scan` published a gate asserting
+  # "preflight, scan, apply and verify all passed ... including a 120s
+  # stability soak" when only the scan ran — a false green in the one file
+  # prod's gate actually reads. Only a full-pipeline run may publish a PASS;
+  # a partial run leaves any existing handoff untouched rather than
+  # overwriting it with a weaker claim. FAIL is always allowed through: a
+  # failure in any single phase is real, and prod staying blocked is the safe
+  # direction.
+  if [ "$status" = "PASS" ] && [ "$PHASE" != "all" ]; then
+    log "handoff: --phase=${PHASE} is a partial run — NOT writing a PASS handoff (only --phase=all may publish one)"
+    return 0
+  fi
+
   if ! _mutating; then
     log "handoff: [dry-run] would write status=${status} to ${HANDOFF_DIR}/dev-result-${TODAY}.json"
     return 0
@@ -697,8 +700,9 @@ write_handoff() {
     printf '{\n'
     printf '  "date": "%s",\n' "$TODAY"
     printf '  "status": "%s",\n' "$status"
+    printf '  "phase": "%s",\n' "$PHASE"
     printf '  "versions": {\n    %s\n  },\n' "$versions"
-    printf '  "notes": "Written by sunday-upgrade-apply.sh. status=PASS means preflight, scan, apply and verify all passed on dev, including a %ss stability soak."\n' "$SOAK_SECONDS"
+    printf '  "notes": "Written by sunday-upgrade-apply.sh with --phase=%s. status=PASS is only ever published by a full --phase=all run, and means preflight, scan, apply and verify all passed on dev, including a %ss stability soak."\n' "$PHASE" "$SOAK_SECONDS"
     printf '}\n'
   } > "$out"
   chmod 644 "$out" 2>/dev/null || true
@@ -712,6 +716,7 @@ log "=== sunday-upgrade-apply start: env=$ENVIRONMENT phase=$PHASE dry_run=$DRY_
 
 # On any unexpected failure, record a FAIL handoff so prod stays blocked rather
 # than reading a stale PASS from a previous week.
+# shellcheck disable=SC2154  # rc is assigned by the trap body itself, immediately before use
 trap 'rc=$?; if [ $rc -ne 0 ]; then write_handoff FAIL; fi' EXIT
 
 _should_run preflight && phase_preflight
