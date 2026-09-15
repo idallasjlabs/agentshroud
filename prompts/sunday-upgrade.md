@@ -6,6 +6,41 @@ You are running as a Remote Control session (visible/steerable from the phone vi
 
 AgentShroud is a security tool. Every Sunday, bring **every agent, component, and utility** in both the **dev** and **prod** stacks to the latest stable release, and **resolve every reported security finding**. Dev goes first. Prod is promoted only after dev passes all checks. If anything fails, roll back and report — a stack left running the old version is acceptable; a stack left broken is not.
 
+## THE RUN IS JUDGED ON STATE CHANGE, NOT ON STEPS COMPLETED
+
+Read this before anything else. It exists because of a real, measured failure:
+
+**For seven weeks (2026-07-29 → 2026-09-15) this job reported PASS every Sunday
+while upgrading nothing.** `OPENCLAW_VERSION` went in as `2026.7.1` and moved
+exactly once, to the downstream rebuild counter `2026.7.1-2`, while npm shipped
+`2026.8.1`, `2026.8.2`, `2026.9.1`, `2026.9.2`, `2026.9.3`, `2026.9.4`.
+`HERMES_VERSION` moved once ever, in a feature PR, never in a Sunday run.
+
+The mission text above was already correct and explicit. The instruction was not
+the problem. The problem was that nothing verified the instruction was followed:
+a session could skip the "latest stable version" lookup, run the deterministic
+script — which rebuilds whatever the pin already says and exits 0 — and write a
+truthful-looking PASS. Every gate measured that commands ran, none measured that
+anything changed.
+
+Therefore:
+
+1. **A run that changes no version pin is a FAILED run** unless you prove, with
+   command output, that every component is already on the latest stable release.
+   "I ran the upgrade and it passed" is not evidence of an upgrade.
+2. **Every component in the report carries an explicit `from → to`.** If from
+   equals to, it must be accompanied by the discovery output proving latest ==
+   current, with the source and timestamp. A report with no deltas and no
+   already-latest proof is a failed run, and you must label it FAILED yourself.
+3. **Never infer an upgrade from an exit code.** `sunday-upgrade-apply.sh`
+   exiting 0 means the stack is healthy, NOT that it was upgraded. Exit code 25
+   (`NOTHING_UPGRADED`) is that script telling you it detected a no-op while a
+   newer release exists — treat it as a hard failure to be fixed this run, never
+   as an acceptable outcome to report around.
+4. **Do not trust your own summary over the machine's.** Before writing the
+   report, re-read `docker/versions.env` and the handoff JSON's `upgraded` and
+   `latest_openclaw_seen` fields. Report what those say, not what you intended.
+
 ## Ground rules
 
 - Work only inside the AgentShroud project directories under `~/Development` (locate them with `ls ~/Development | grep -i shroud` and by reading any `README`, `CLAUDE.md`, `compose*.yml`, `Makefile`, or `scripts/` you find). Prefer the project's own scripts/Make targets over ad-hoc commands whenever they exist.
@@ -111,6 +146,29 @@ Build a complete table of every upgradable thing in the repo. Include, at minimu
 
 For each item: current version, latest stable version, source URL you used to determine it, and whether a changelog mentions breaking changes or security fixes.
 
+**Do not determine "latest" from memory, from the changelog you happen to read,
+or from a model's belief about what version exists.** For the two wrapped agents
+this is mechanical and must be run, with its output pasted into the report:
+
+```bash
+python3 scripts/discover_upstream_versions.py            # human-readable
+python3 scripts/discover_upstream_versions.py --json     # for the report
+```
+
+It resolves OpenClaw from the npm registry (the Dockerfile installs
+`openclaw@${OPENCLAW_VERSION}` from npm and asserts the installed version
+matches the pin, so npm is the source of truth) and Hermes from Docker Hub tags,
+including the digest. Stable releases only — `-beta`/`-rc`/`-alpha` never ship
+unattended, while a numeric `-N` suffix IS a real patch release.
+
+If discovery reports UNKNOWN for a component, that is "could not determine",
+never "already current". Treat it as a finding and resolve it — an unreachable
+registry is a blocked run, not a clean one.
+
+For everything else in the inventory, cite the command and its output (`npm view
+<pkg> version`, `gh release list`, registry API, etc.). A version with no cited
+source is not an answer.
+
 ### 2. Security findings
 Collect every open security report before upgrading so you can verify closure afterwards:
 - `npm audit` / `pnpm audit` / `pip-audit` / `uv` audit / `cargo audit` / `govulncheck` as applicable.
@@ -121,7 +179,70 @@ Collect every open security report before upgrading so you can verify closure af
 
 Record every finding with ID (CVE/GHSA), severity, affected component, and fixed-in version.
 
+### 2b. AgentShroud-side remediation — the vendor's fix is NOT the finish line
+
+Owner directive 2026-09-15: **an upgrade alone does not close a CVE.** Upgrading
+OpenClaw removes that flaw from OpenClaw; it does nothing for the next agent
+AgentShroud proxies, or for the same flaw class reappearing next month. The
+product thesis is that AgentShroud protects the agents behind it, so a CVE found
+in ANY wrapped tool is a requirement against the gateway, independent of whether
+the vendor has patched it.
+
+So each Sunday, for every advisory in this run, do BOTH arms:
+
+- **Arm 1 — vendor fix.** Upgrade to the fixed version (steps 1/3/4).
+- **Arm 2 — AgentShroud control.** Classify the advisory and ask: *if a proxied
+  agent had this flaw and no vendor patch existed, would AgentShroud stop the
+  attack?* Run the triage, which already computes this per vulnerability class:
+
+  ```bash
+  python3 scripts/triage-cve-mitigations.py --apply
+  ```
+
+  Its `Coverage` verdict is the answer: `FULL` (controls neutralise the class),
+  `PARTIAL` (residual gap), or `NONE` — **and `NONE` is a GAP, which is work,
+  not a status to record and move on from.**
+
+For every class returning `NONE` or `PARTIAL`, the gap becomes tracked work this
+run: open a Jira issue (§6) describing the control AgentShroud needs, and
+implement it where it is safely in scope. These controls belong at the gateway
+so they apply to EVERY proxied agent — an allowlist the gateway enforces protects
+a third-party agent that never had the vendor's patch at all.
+
+Worked example from the 2026-09-15 registry, to make the shape concrete. These
+OpenClaw advisories are all authorization bypasses:
+`GHSA-58qx-6m8p-wh2j` (Slack group DMs could skip sender allowlists, 8.8),
+`GHSA-rrxp-5mx8-mvhh` (inbound voice calls could inherit owner tool
+authorization, 8.8), `GHSA-wwcw-jfpp-gpxw` (native tools could ignore per-chat
+policy, 8.8), `GHSA-7cp7-87pj-p32v` (skill dispatch could skip owner-only
+policy, 8.3). The vendor fix is "upgrade past 2026.8.1". The AgentShroud
+requirement is different and outlives it: **sender allowlisting, tool
+authorization, and per-chat policy must be enforced at the gateway, for any
+agent, so that an agent which skips its own check is still stopped.**
+
+Honesty rules, unchanged and non-negotiable:
+- NEVER promote an advisory to `*_mitigated` without citing the specific control
+  and, where a test can prove the block, the test. An uncited mitigation claim is
+  the security theater §2 of CLAUDE.md forbids.
+- `under_review` is an honest holding state, not an outcome. An advisory still in
+  `under_review` at the end of a run is unfinished work and must appear in the
+  report as such.
+
 ### 3. Upgrade DEV
+0. **Act on discovery.** For every component where step 1 showed latest != current,
+   edit the pin in `docker/versions.env` NOW. This is the step that was silently
+   skipped for seven weeks. If you finish this section without having edited a
+   pin, you must be able to paste discovery output proving every component was
+   already latest — otherwise you have not done the job.
+
+   **Needing a code change is NOT a reason to skip a bump** (owner directive,
+   quoted in the ground rules). A new upstream release routinely breaks a patch
+   anchor, a config path, or a build arg — this repo already carries patches that
+   re-anchor against specific versions (e.g. the Hermes telegram `base_url` patch
+   made tolerant of both v0.20.1 and v0.20.6 layouts). Fixing those anchors is
+   YOUR job on this run: make the change, commit it, rebuild, verify. Escalate to
+   BLOCKED only if the fix would require loosening a security control.
+
 1. Apply all version bumps from the inventory to the **dev** configuration only. One commit per logical component so a bad bump can be reverted alone.
 2. Regenerate lockfiles; rebuild any local images; `docker compose pull` and bring dev up.
 3. Verify — all of the following must pass, with output captured in the report:
