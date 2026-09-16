@@ -12,6 +12,6 @@ tags:
 # Test that monitor mode warnings contain required information.
 
 ## Connections
-- [[.test_monitor_mode_warning_message_format()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_monitor_mode_warning_message_format()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/Community_157

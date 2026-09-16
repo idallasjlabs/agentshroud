@@ -1,31 +1,25 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "Group RBAC & Tool ACL"
+community: "Community 948"
 location: "L302"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Group_RBAC__Tool_ACL
+  - community/Community_948
 ---
 
 # TestCVE2026_9367TerminalToolDenied
 
 ## Connections
-- [[.test_admin_denied_terminal_tool()]] - `method` [EXTRACTED]
-- [[.test_collaborator_denied_terminal_tool()]] - `method` [EXTRACTED]
-- [[.test_owner_allowed_terminal_tool()]] - `method` [EXTRACTED]
-- [[.test_terminal_in_private_tools()]] - `method` [EXTRACTED]
-- [[.test_terminal_tool_in_private_tools()]] - `method` [EXTRACTED]
-- [[.test_terminal_tool_not_in_collab_allowed()]] - `method` [EXTRACTED]
-- [[.test_viewer_denied_terminal_tool()]] - `method` [EXTRACTED]
-- [[CVE-2026-9367 terminal_tool command injection bypass fix]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[Role_1]] - `uses` [INFERRED]
-- [[TeamsConfig]] - `uses` [INFERRED]
-- [[ToolACLConfig]] - `uses` [INFERRED]
-- [[ToolACLEnforcer]] - `uses` [INFERRED]
+- [[dot-test_admin_denied_terminal_tool()]] - `method` [EXTRACTED]
+- [[dot-test_collaborator_denied_terminal_tool()]] - `method` [EXTRACTED]
+- [[dot-test_owner_allowed_terminal_tool()]] - `method` [EXTRACTED]
+- [[dot-test_terminal_in_private_tools()]] - `method` [EXTRACTED]
+- [[dot-test_terminal_tool_in_private_tools()]] - `method` [EXTRACTED]
+- [[dot-test_terminal_tool_not_in_collab_allowed()]] - `method` [EXTRACTED]
+- [[dot-test_viewer_denied_terminal_tool()]] - `method` [EXTRACTED]
 - [[terminal_tool must be in PRIVATE_TOOLS and blocked for non-owner principals.]] - `rationale_for` [EXTRACTED]
 - [[test_tool_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Group_RBAC__Tool_ACL
+#graphify/code #graphify/EXTRACTED #community/Community_948

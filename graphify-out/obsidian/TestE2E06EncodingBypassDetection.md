@@ -1,31 +1,31 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "PII Sanitizer & E2E Tests"
+community: "Canary Tripwire"
 location: "L227"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PII_Sanitizer__E2E_Tests
+  - community/Canary_Tripwire
 ---
 
 # TestE2E06EncodingBypassDetection
 
 ## Connections
-- [[.test_base64_content_decoded()]] - `method` [EXTRACTED]
-- [[.test_encoding_detector_is_wired()]] - `method` [EXTRACTED]
+- [[dot-test_base64_content_decoded()]] - `method` [EXTRACTED]
+- [[dot-test_encoding_detector_is_wired()]] - `method` [EXTRACTED]
 - [[AuditChain]] - `uses` [INFERRED]
 - [[CanaryTripwire]] - `uses` [INFERRED]
 - [[ContextGuard]] - `uses` [INFERRED]
 - [[E2E-06 Base64 and Unicode encoding bypasses are decoded and processed.]] - `rationale_for` [EXTRACTED]
 - [[EncodingDetector]] - `uses` [INFERRED]
-- [[PIIConfig]] - `uses` [INFERRED]
+- [[PIIConfig_2]] - `uses` [INFERRED]
 - [[PIISanitizer]] - `uses` [INFERRED]
 - [[PipelineAction]] - `uses` [INFERRED]
 - [[PromptGuard]] - `uses` [INFERRED]
-- [[SecurityPipeline]] - `uses` [INFERRED]
+- [[SecurityPipeline_1]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
+- [[TrustManager]] - `uses` [INFERRED]
 - [[test_e2e_watchtower.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PII_Sanitizer__E2E_Tests
+#graphify/code #graphify/INFERRED #community/Canary_Tripwire

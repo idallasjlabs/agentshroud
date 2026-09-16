@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Community 288"
+community: "Community 297"
 location: "L725"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_288
+  - community/Community_297
 ---
 
 # TestAccessControl
 
 ## Connections
-- [[.test_full_stack_with_review_evidence()]] - `method` [EXTRACTED]
-- [[.test_missing_rbac_zero()]] - `method` [EXTRACTED]
+- [[dot-test_full_stack_with_review_evidence()]] - `method` [EXTRACTED]
+- [[dot-test_missing_rbac_zero()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_288
+#graphify/code #graphify/EXTRACTED #community/Community_297

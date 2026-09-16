@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "Security Audit & Drift Detection"
+community: "P3 Infrastructure Security Modules"
 location: "L689"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Security_Audit__Drift_Detection
+  - community/P3_Infrastructure_Security_Modules
 ---
 
 # TestCryptography
 
 ## Connections
-- [[.store()_2]] - `method` [EXTRACTED]
-- [[.test_ciphertext_not_plaintext()]] - `method` [EXTRACTED]
-- [[.test_different_plaintexts_different_ciphertexts()]] - `method` [EXTRACTED]
-- [[.test_encrypt_decrypt_roundtrip()]] - `method` [EXTRACTED]
-- [[.test_encrypt_json()]] - `method` [EXTRACTED]
-- [[.test_key_rotation()]] - `method` [EXTRACTED]
-- [[.test_key_vault_init()]] - `method` [EXTRACTED]
-- [[.test_tampered_ciphertext_fails()]] - `method` [EXTRACTED]
-- [[.test_wrong_key_fails()]] - `method` [EXTRACTED]
+- [[dot-store()_1]] - `method` [EXTRACTED]
+- [[dot-test_ciphertext_not_plaintext()]] - `method` [EXTRACTED]
+- [[dot-test_different_plaintexts_different_ciphertexts()]] - `method` [EXTRACTED]
+- [[dot-test_encrypt_decrypt_roundtrip()]] - `method` [EXTRACTED]
+- [[dot-test_encrypt_json()]] - `method` [EXTRACTED]
+- [[dot-test_key_rotation()_1]] - `method` [EXTRACTED]
+- [[dot-test_key_vault_init()]] - `method` [EXTRACTED]
+- [[dot-test_tampered_ciphertext_fails()]] - `method` [EXTRACTED]
+- [[dot-test_wrong_key_fails()]] - `method` [EXTRACTED]
 - [[AlertDispatcher]] - `uses` [INFERRED]
 - [[ConfusedDeputyError]] - `uses` [INFERRED]
 - [[ConsentDecision]] - `uses` [INFERRED]
@@ -42,7 +42,7 @@ tags:
 - [[LogSanitizer_1]] - `uses` [INFERRED]
 - [[MetadataGuard]] - `uses` [INFERRED]
 - [[NetworkValidator]] - `uses` [INFERRED]
-- [[PIIConfig_1]] - `uses` [INFERRED]
+- [[PIIConfig]] - `uses` [INFERRED]
 - [[PIISanitizer]] - `uses` [INFERRED]
 - [[PKCEViolation]] - `uses` [INFERRED]
 - [[PromptGuard]] - `uses` [INFERRED]
@@ -54,7 +54,7 @@ tags:
 - [[SubagentMonitor]] - `uses` [INFERRED]
 - [[Test encryption, key management, and secret handling.]] - `rationale_for` [EXTRACTED]
 - [[ThreatAssessment]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
+- [[TrustManager]] - `uses` [INFERRED]
 - [[test_security_audit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Security_Audit__Drift_Detection
+#graphify/code #graphify/INFERRED #community/P3_Infrastructure_Security_Modules

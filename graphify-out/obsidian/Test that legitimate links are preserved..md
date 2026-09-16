@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "rationale"
-community: "Memory Lifecycle & Egress Filtering"
+community: "Community 64"
 location: "L162"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Memory_Lifecycle__Egress_Filtering
+  - community/Community_64
 ---
 
 # Test that legitimate links are preserved.
 
 ## Connections
-- [[.test_legitimate_links_preserved()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_legitimate_links_preserved()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Memory_Lifecycle__Egress_Filtering
+#graphify/rationale #graphify/EXTRACTED #community/Community_64

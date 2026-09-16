@@ -1,21 +1,21 @@
 ---
-source_file: "gateway/tests/test_scanner_integration_coverage.py"
+source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "Community 1274"
-location: "L368"
+community: "Community 56"
+location: "L623"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1274
+  - community/Community_56
 ---
 
 # TestFalcoSummary
 
 ## Connections
-- [[.test_installed_not_running_is_clean_note()]] - `method` [EXTRACTED]
-- [[.test_not_installed_not_running()]] - `method` [EXTRACTED]
-- [[.test_running_with_alerts_sets_timestamp()]] - `method` [EXTRACTED]
-- [[.test_running_without_alert_dir()]] - `method` [EXTRACTED]
-- [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
+- [[dot-test_read_alerts_missing_dir()]] - `method` [EXTRACTED]
+- [[dot-test_summary_clean()_2]] - `method` [EXTRACTED]
+- [[dot-test_summary_top_rules()]] - `method` [EXTRACTED]
+- [[dot-test_summary_with_alerts()]] - `method` [EXTRACTED]
+- [[test_security_toolchain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1274
+#graphify/code #graphify/EXTRACTED #community/Community_56

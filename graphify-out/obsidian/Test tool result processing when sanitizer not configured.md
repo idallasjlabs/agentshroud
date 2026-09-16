@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "rationale"
-community: "Middleware & Lifespan"
+community: "PII Sanitizer & Redaction"
 location: "L386"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Middleware__Lifespan
+  - community/PII_Sanitizer__Redaction
 ---
 
 # Test tool result processing when sanitizer not configured
 
 ## Connections
-- [[.test_process_tool_result_no_sanitizer()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_process_tool_result_no_sanitizer()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Middleware__Lifespan
+#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer__Redaction

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_resource_guard.py"
 type: "rationale"
-community: "Community 351"
+community: "P3 Infrastructure Security Modules"
 location: "L44"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_351
+  - community/P3_Infrastructure_Security_Modules
 ---
 
 # Test that resource usage over limits is blocked.
 
 ## Connections
-- [[.test_check_resource_over_limit_blocked()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_check_resource_over_limit_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_351
+#graphify/rationale #graphify/EXTRACTED #community/P3_Infrastructure_Security_Modules

@@ -1,24 +1,21 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "Group RBAC & Tool ACL"
+community: "Community 134"
 location: "L232"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Group_RBAC__Tool_ACL
+  - graphify/EXTRACTED
+  - community/Community_134
 ---
 
 # TestDenyUnknownFalse
 
 ## Connections
-- [[.test_collaborator_can_use_unknown_tool_when_not_denied()]] - `method` [EXTRACTED]
-- [[.test_private_tool_still_blocked_even_when_deny_unknown_false()]] - `method` [EXTRACTED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[Role_1]] - `uses` [INFERRED]
-- [[TeamsConfig]] - `uses` [INFERRED]
+- [[dot-test_collaborator_can_use_unknown_tool_when_not_denied()]] - `method` [EXTRACTED]
+- [[dot-test_private_tool_still_blocked_even_when_deny_unknown_false()]] - `method` [EXTRACTED]
 - [[ToolACLConfig]] - `uses` [INFERRED]
 - [[ToolACLEnforcer]] - `uses` [INFERRED]
 - [[test_tool_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Group_RBAC__Tool_ACL
+#graphify/code #graphify/EXTRACTED #community/Community_134

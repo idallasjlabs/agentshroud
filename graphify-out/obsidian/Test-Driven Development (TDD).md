@@ -1,20 +1,20 @@
 ---
 source_file: "docker/config/hermes/skills/i-tdd/README.md"
 type: "document"
-community: "Community 1205"
+community: "Community 1251"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1205
+  - community/Community_1251
 ---
 
 # Test-Driven Development (TDD)
 
 ## Connections
-- [[Purpose_70]] - `contains` [EXTRACTED]
-- [[README_75]] - `contains` [EXTRACTED]
-- [[Related Skills_76]] - `contains` [EXTRACTED]
-- [[Usage_77]] - `contains` [EXTRACTED]
+- [[Purpose_69]] - `contains` [EXTRACTED]
+- [[Related Skills_60]] - `contains` [EXTRACTED]
+- [[Usage_64]] - `contains` [EXTRACTED]
+- [[hermesskillsi-tddREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1205
+#graphify/document #graphify/EXTRACTED #community/Community_1251

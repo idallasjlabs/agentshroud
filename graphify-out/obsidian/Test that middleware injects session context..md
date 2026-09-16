@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "Session Management"
+community: "Ingest Middleware & File Sandbox"
 location: "L403"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Session_Management
+  - community/Ingest_Middleware__File_Sandbox
 ---
 
 # Test that middleware injects session context.
 
 ## Connections
-- [[.test_middleware_session_context_injection()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_middleware_session_context_injection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Session_Management
+#graphify/rationale #graphify/EXTRACTED #community/Ingest_Middleware__File_Sandbox

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_triage_cve_mitigations.py"
 type: "code"
-community: "Community 53"
-location: "L307"
+community: "Community 94"
+location: "L310"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_53
+  - community/Community_94
 ---
 
 # TestDefenseLayerVocabulary
 
 ## Connections
-- [[.test_all_mapped_layers_exist_in_registry()]] - `method` [EXTRACTED]
+- [[dot-test_all_mapped_layers_exist_in_registry()]] - `method` [EXTRACTED]
 - [[test_triage_cve_mitigations.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_53
+#graphify/code #graphify/EXTRACTED #community/Community_94

@@ -1,21 +1,23 @@
 ---
-source_file: "gateway/tests/test_triage_cve_mitigations.py"
+source_file: "gateway/tests/test_multi_host_test.py"
 type: "code"
-community: "Community 53"
-location: "L72"
+community: "Community 1039"
+location: "L80"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_53
+  - community/Community_1039
 ---
 
 # TestClassify
 
 ## Connections
-- [[.test_classification_is_deterministic()]] - `method` [EXTRACTED]
-- [[.test_priority_rce_before_generic_injection()]] - `method` [EXTRACTED]
-- [[.test_representative_titles()]] - `method` [EXTRACTED]
-- [[.test_unmatched_is_unknown()]] - `method` [EXTRACTED]
-- [[test_triage_cve_mitigations.py]] - `contains` [EXTRACTED]
+- [[dot-test_255_is_unreachable()]] - `method` [EXTRACTED]
+- [[dot-test_nonzero_is_fail()]] - `method` [EXTRACTED]
+- [[dot-test_zero_is_pass()]] - `method` [EXTRACTED]
+- [[HostResult]] - `uses` [INFERRED]
+- [[HostStatus]] - `uses` [INFERRED]
+- [[MultiHostResult]] - `uses` [INFERRED]
+- [[test_multi_host_test.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_53
+#graphify/code #graphify/EXTRACTED #community/Community_1039
