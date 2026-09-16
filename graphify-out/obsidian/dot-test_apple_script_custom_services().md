@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_runtime_engines.py"
+type: "code"
+community: "Community 333"
+location: "L603"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_333
+---
+
+# .test_apple_script_custom_services()
+
+## Connections
+- [[ServiceDef]] - `calls` [EXTRACTED]
+- [[TestComposeGenerator]] - `method` [EXTRACTED]
+- [[generate_apple_script()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_333

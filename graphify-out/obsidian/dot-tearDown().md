@@ -1,0 +1,17 @@
+---
+source_file: "skills/openclaw/skill-creator/scripts/test_package_skill.py"
+type: "code"
+community: "Community 543"
+location: "L25"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_543
+---
+
+# .tearDown()
+
+## Connections
+- [[TestPackageSkillSecurity]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_543

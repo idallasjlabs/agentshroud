@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_benchmark_regression.py"
+type: "code"
+community: "Community 495"
+location: "L85"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_495
+---
+
+# .test_100_inbound_requests()
+
+## Connections
+- [[100 sequential inbound requests should stay within baseline.          Baseline k]] - `rationale_for` [EXTRACTED]
+- [[TestBenchmarkRegression]] - `method` [EXTRACTED]
+- [[assert_within_threshold()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_495

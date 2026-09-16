@@ -1,0 +1,18 @@
+---
+source_file: "gateway/security/egress_approval.py"
+type: "code"
+community: "Community 88"
+location: "L768"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_88
+---
+
+# .set_emergency_block_all()
+
+## Connections
+- [[EgressApprovalQueue]] - `method` [EXTRACTED]
+- [[Enabledisable emergency global egress deny.]] - `rationale_for` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_88

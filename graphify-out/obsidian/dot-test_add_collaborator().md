@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_cli_coverage.py"
+type: "code"
+community: "Community 236"
+location: "L506"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_236
+---
+
+# .test_add_collaborator()
+
+## Connections
+- [[TestEgressAndAdminCommands]] - `method` [EXTRACTED]
+- [[_invoke()]] - `calls` [EXTRACTED]
+- [[_stub_client()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_236

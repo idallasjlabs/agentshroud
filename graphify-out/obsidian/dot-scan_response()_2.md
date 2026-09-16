@@ -1,0 +1,21 @@
+---
+source_file: "gateway/proxy/web_proxy.py"
+type: "code"
+community: "Community 96"
+location: "L434"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_96
+---
+
+# .scan_response()
+
+## Connections
+- [[dot-_audit()_1]] - `calls` [EXTRACTED]
+- [[EgressEvent]] - `calls` [EXTRACTED]
+- [[Scan a response body for prompt injection, PII, and hidden content.          Thi]] - `rationale_for` [EXTRACTED]
+- [[WebProxy]] - `method` [EXTRACTED]
+- [[WebProxyResult]] - `references` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_96

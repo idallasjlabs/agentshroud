@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_docs_accuracy.py"
+type: "code"
+community: "Community 118"
+location: "L310"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_118
+---
+
+# .test_actual_test_count_meets_minimum()
+
+## Connections
+- [[TestTestCountAccuracy]] - `method` [EXTRACTED]
+- [[We should have at least 350 tests (README says 351+).]] - `rationale_for` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_118

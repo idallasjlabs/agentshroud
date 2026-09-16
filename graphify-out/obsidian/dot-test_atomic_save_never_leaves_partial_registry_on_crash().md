@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_session_manager.py"
+type: "code"
+community: "Community 716"
+location: "L370"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_716
+---
+
+# .test_atomic_save_never_leaves_partial_registry_on_crash()
+
+## Connections
+- [[If the write to the temp file fails mid-flight, the existing         registry on]] - `rationale_for` [EXTRACTED]
+- [[TestAtomicRegistryWrites]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_716

@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_scanner_integration_coverage.py"
+type: "code"
+community: "Community 297"
+location: "L676"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_297
+---
+
+# .test_all_pillars_scores_five()
+
+## Connections
+- [[TestLoggingMonitoring]] - `method` [EXTRACTED]
+- [[_w()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_297

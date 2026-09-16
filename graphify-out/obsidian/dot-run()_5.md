@@ -1,0 +1,17 @@
+---
+source_file: "gateway/runtime/apple_engine.py"
+type: "code"
+community: "Community 364"
+location: "L61"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_364
+---
+
+# .run()
+
+## Connections
+- [[AppleContainerEngine]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_364

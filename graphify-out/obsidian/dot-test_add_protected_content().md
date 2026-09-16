@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_prompt_protection.py"
+type: "code"
+community: "Community 1673"
+location: "L187"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_1673
+---
+
+# .test_add_protected_content()
+
+## Connections
+- [[Test adding protected content.]] - `rationale_for` [EXTRACTED]
+- [[TestPromptProtection]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_1673

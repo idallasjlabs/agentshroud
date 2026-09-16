@@ -1,0 +1,18 @@
+---
+source_file: "gateway/security/module_stats.py"
+type: "code"
+community: "Community 137"
+location: "L59"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_137
+---
+
+# .snapshot()
+
+## Connections
+- [[ModuleStatsCollector]] - `method` [EXTRACTED]
+- [[Return a per-module stats snapshot with totals and block rate.]] - `rationale_for` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_137

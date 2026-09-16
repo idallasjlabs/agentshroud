@@ -1,0 +1,17 @@
+---
+source_file: "gateway/tests/test_env_guard_class.py"
+type: "code"
+community: "Community 215"
+location: "L70"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_215
+---
+
+# .test_allows_plain_command()
+
+## Connections
+- [[TestCheckCommandExecution]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_215

@@ -1,0 +1,20 @@
+---
+source_file: "gateway/tests/test_killswitch_monitor.py"
+type: "code"
+community: "Community 42"
+location: "L132"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_42
+---
+
+# .test_anomaly_detection_excessive_tool_calls()
+
+## Connections
+- [[KillSwitchConfig]] - `calls` [EXTRACTED]
+- [[KillSwitchMonitor]] - `calls` [EXTRACTED]
+- [[Test anomaly detection with excessive tool calls.]] - `rationale_for` [EXTRACTED]
+- [[TestKillSwitchMonitor]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_42

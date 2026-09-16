@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+type: "code"
+community: "Community 40"
+location: "L7543"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_40
+---
+
+# .test_action_risk_probe_gets_no_banner_risk_guidance()
+
+## Connections
+- [[B1.5c action-risk questions should get a natural answer without restriction ban]] - `rationale_for` [EXTRACTED]
+- [[TestCollaboratorPromptClassifiers]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_40

@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_log_sanitizer.py"
+type: "code"
+community: "Community 493"
+location: "L15"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_493
+---
+
+# .setup_method()
+
+## Connections
+- [[LogSanitizer_1]] - `calls` [EXTRACTED]
+- [[TestLogSanitizer]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_493

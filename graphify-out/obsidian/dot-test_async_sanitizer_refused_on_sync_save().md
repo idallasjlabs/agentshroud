@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_report_store.py"
+type: "code"
+community: "Community 87"
+location: "L209"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_87
+---
+
+# .test_async_sanitizer_refused_on_sync_save()
+
+## Connections
+- [[ReportStore]] - `calls` [EXTRACTED]
+- [[TestReviewHardening]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_87
