@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-hermes/SKILL.md"
+source_file: "docker/config/hermes/skills/i-mcpm-doctor/SKILL.md"
 type: "document"
-community: "Community 954"
-location: "L26"
+community: "Community 479"
+location: "L154"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_954
+  - community/Community_479
 ---
 
 # Output Format
 
 ## Connections
-- [[Hermes — Reference Verifier_1]] - `contains` [EXTRACTED]
+- [[Skill MCP Doctor (MCPM-DOCTOR)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_954
+#graphify/document #graphify/EXTRACTED #community/Community_479

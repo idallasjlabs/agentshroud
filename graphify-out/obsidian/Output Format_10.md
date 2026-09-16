@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-sec/SKILL.md"
+source_file: ".agents/skills/i-sec-defense/SKILL.md"
 type: "document"
-community: "Community 698"
-location: "L81"
+community: "Community 375"
+location: "L129"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_698
+  - community/Community_375
 ---
 
 # Output Format
 
 ## Connections
-- [[Skill Security Review (SEC)]] - `contains` [EXTRACTED]
+- [[AgentShroud Blue Team Security Auditor]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_698
+#graphify/document #graphify/EXTRACTED #community/Community_375

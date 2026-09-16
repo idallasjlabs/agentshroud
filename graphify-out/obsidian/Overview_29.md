@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/slack/SKILL.md"
+source_file: "docs/compliance/iec-62443-matrix.md"
 type: "document"
-community: "Community 544"
-location: "L9"
+community: "Community 833"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_544
+  - community/Community_833
 ---
 
 # Overview
 
 ## Connections
-- [[Slack Actions]] - `contains` [EXTRACTED]
+- [[IEC 62443 Compliance Matrix — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_544
+#graphify/document #graphify/EXTRACTED #community/Community_833

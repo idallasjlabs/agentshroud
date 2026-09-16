@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_filter_xml_blocks.py"
 type: "rationale"
-community: "Community 135"
+community: "Community 127"
 location: "L170"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_135
+  - community/Community_127
 ---
 
 # Normal text without XML blocks is returned unchanged.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_does_not_filter_normal_text()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_135
+#graphify/rationale #graphify/EXTRACTED #community/Community_127

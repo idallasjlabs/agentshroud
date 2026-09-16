@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-sav/SKILL.md"
+source_file: "docker/config/hermes/skills/i-oracle/SKILL.md"
 type: "document"
-community: "Community 244"
-location: "L396"
+community: "Community 1000"
+location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_244
+  - community/Community_1000
 ---
 
-# OUTPUT FORMAT
+# Output Format
 
 ## Connections
-- [[System Audit Vault (Obsidian)]] - `contains` [EXTRACTED]
+- [[Oracle — Feedback Analyst]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_244
+#graphify/document #graphify/EXTRACTED #community/Community_1000

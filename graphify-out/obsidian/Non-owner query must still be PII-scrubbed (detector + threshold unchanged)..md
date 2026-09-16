@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "rationale"
-community: "Key Vault & Audit Chain"
+community: "Signed Instruction Envelopes & Security Pipeline"
 location: "L770"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Key_Vault__Audit_Chain
+  - community/Signed_Instruction_Envelopes__Security_Pipeline
 ---
 
 # Non-owner query must still be PII-scrubbed (detector + threshold unchanged).
 
 ## Connections
-- [[.test_non_owner_inbound_query_still_redacted()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_non_owner_inbound_query_still_redacted()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Key_Vault__Audit_Chain
+#graphify/rationale #graphify/EXTRACTED #community/Signed_Instruction_Envelopes__Security_Pipeline

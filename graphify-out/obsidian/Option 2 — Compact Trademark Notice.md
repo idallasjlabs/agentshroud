@@ -1,11 +1,11 @@
 ---
 source_file: "docs/project/legal/COMMUNICATION-TEMPLATES.md"
 type: "concept"
-community: "Community 1258"
+community: "Community 1295"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1258
+  - community/Community_1295
 ---
 
 # Option 2 — Compact Trademark Notice
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[COMMUNICATION-TEMPLATES]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1258
+#graphify/concept #graphify/EXTRACTED #community/Community_1295

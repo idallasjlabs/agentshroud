@@ -1,17 +1,17 @@
 ---
-source_file: "docs/api/integration-guide.md"
+source_file: "docker/config/hermes/skills/i-eightd/SKILL.md"
 type: "document"
-community: "Community 518"
-location: "L4"
+community: "Community 241"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_518
+  - community/Community_241
 ---
 
 # Overview
 
 ## Connections
-- [[AgentShroud v1.3.0]] - `contains` [EXTRACTED]
+- [[8D Root Cause Analysis — Data-Driven Control System Investigation_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_518
+#graphify/document #graphify/EXTRACTED #community/Community_241

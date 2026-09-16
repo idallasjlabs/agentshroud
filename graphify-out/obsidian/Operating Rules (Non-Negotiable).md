@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-aws/SKILL.md"
 type: "document"
-community: "Community 1008"
+community: "Community 1051"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1008
+  - community/Community_1051
 ---
 
 # Operating Rules (Non-Negotiable)
@@ -20,4 +20,4 @@ tags:
 - [[Rule 5 Safe Tagging]] - `contains` [EXTRACTED]
 - [[Rule 6 Never Delete Automatically]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1008
+#graphify/document #graphify/EXTRACTED #community/Community_1051

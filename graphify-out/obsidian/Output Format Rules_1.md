@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-pca/SKILL.md"
 type: "document"
-community: "Community 657"
+community: "Community 680"
 location: "L80"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_657
+  - community/Community_680
 ---
 
 # Output Format Rules
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Pre-Change Analysis (PCA)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_657
+#graphify/document #graphify/EXTRACTED #community/Community_680

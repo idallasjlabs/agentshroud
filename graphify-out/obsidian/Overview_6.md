@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/deployment-diagram.md"
+source_file: "docker/config/openclaw/skills/i-eightd/SKILL.md"
 type: "document"
-community: "Community 290"
-location: "L3"
+community: "Community 244"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_290
+  - community/Community_244
 ---
 
 # Overview
 
 ## Connections
-- [[AgentShroud Deployment Architecture]] - `contains` [EXTRACTED]
+- [[8D Root Cause Analysis — Data-Driven Control System Investigation_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_290
+#graphify/document #graphify/EXTRACTED #community/Community_244

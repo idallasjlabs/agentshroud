@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_stt_model_ab.py"
 type: "rationale"
-community: "Community 267"
+community: "Community 287"
 location: "L48"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_267
+  - community/Community_287
 ---
 
 # Operator-friendly: trims + lowercases before matching.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_select_model_size_is_case_and_whitespace_insensitive()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_267
+#graphify/rationale #graphify/EXTRACTED #community/Community_287

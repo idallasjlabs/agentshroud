@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md"
+source_file: "docker/config/hermes/skills/i-athena/SKILL.md"
 type: "document"
-community: "Community 470"
-location: "L154"
+community: "Community 778"
+location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_470
+  - community/Community_778
 ---
 
 # Output Format
 
 ## Connections
-- [[Skill MCP Doctor (MCPM-DOCTOR)_2]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_3]] - `contains` [EXTRACTED]
+- [[show_notes_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_470
+#graphify/document #graphify/EXTRACTED #community/Community_778

@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/video-frames/SKILL.md"
+source_file: "skills/openclaw/notion/SKILL.md"
 type: "document"
-community: "Community 1050"
-location: "L43"
+community: "Community 799"
+location: "L167"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1050
+  - community/Community_799
 ---
 
 # Notes
 
 ## Connections
-- [[Video Frames (ffmpeg)]] - `contains` [EXTRACTED]
+- [[notion]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1050
+#graphify/document #graphify/EXTRACTED #community/Community_799

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/OPENCLAW_SETUP.md"
 type: "document"
-community: "Community 92"
+community: "Community 271"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_92
+  - community/Community_271
 ---
 
 # OPENCLAW_SETUP.md
@@ -22,4 +22,4 @@ tags:
 - [[TELEGRAM_GMAIL_SETUP]] - `conceptually_related_to` [EXTRACTED]
 - [[colima-docker-guide]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_92
+#graphify/document #graphify/EXTRACTED #community/Community_271

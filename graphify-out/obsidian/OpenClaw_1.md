@@ -1,16 +1,23 @@
 ---
-source_file: "docker/config/hermes/SOUL.md"
-type: "concept"
-community: "Community 315"
+source_file: "docs/vault/05 - Dependencies/openclaw.md"
+type: "document"
+community: "Community 224"
+location: "L9"
 tags:
-  - graphify/concept
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Community_315
+  - community/Community_224
 ---
 
 # OpenClaw
 
 ## Connections
-- [[SOUL_2]] - `references` [EXTRACTED]
+- [[Config Location]] - `contains` [EXTRACTED]
+- [[Key Intercepted Paths]] - `contains` [EXTRACTED]
+- [[Purpose_116]] - `contains` [EXTRACTED]
+- [[Related Notes_12]] - `contains` [EXTRACTED]
+- [[Role in AgentShroud]] - `contains` [EXTRACTED]
+- [[Version Note]] - `contains` [EXTRACTED]
+- [[openclaw]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_315
+#graphify/document #graphify/EXTRACTED #community/Community_224

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mnemosyne/SKILL.md"
+source_file: "docker/config/hermes/skills/i-socrates/SKILL.md"
 type: "document"
-community: "Community 955"
-location: "L25"
+community: "Community 506"
+location: "L40"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_955
+  - community/Community_506
 ---
 
 # Output Format
 
 ## Connections
-- [[Mnemosyne — Retention Engineer_3]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_955
+#graphify/document #graphify/EXTRACTED #community/Community_506

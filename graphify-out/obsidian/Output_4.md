@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-apollo/SKILL.md"
+source_file: "docker/config/hermes/skills/i-sec-offense/SKILL.md"
 type: "document"
-community: "Community 658"
-location: "L132"
+community: "Community 505"
+location: "L354"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_658
+  - community/Community_505
 ---
 
 # Output
 
 ## Connections
-- [[Apollo — Audio Systems Producer_4]] - `contains` [EXTRACTED]
+- [[AgentShroud Red Team Adversarial Tester_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_658
+#graphify/document #graphify/EXTRACTED #community/Community_505

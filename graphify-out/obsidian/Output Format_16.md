@@ -1,20 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-daedalus/SKILL.md"
+source_file: ".agents/skills/i-mcpm-doctor/SKILL.md"
 type: "document"
-community: "Community 793"
-location: "L25"
+community: "Community 472"
+location: "L154"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_793
+  - community/Community_472
 ---
 
 # Output Format
 
 ## Connections
-- [[Daedalus — Concept Illustrator_3]] - `contains` [EXTRACTED]
-- [[architecture.puml (PlantUML)_1]] - `contains` [EXTRACTED]
-- [[diagramsREADME_1]] - `contains` [EXTRACTED]
-- [[flow.mmd (Mermaid)_1]] - `contains` [EXTRACTED]
+- [[Skill MCP Doctor (MCPM-DOCTOR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_793
+#graphify/document #graphify/EXTRACTED #community/Community_472

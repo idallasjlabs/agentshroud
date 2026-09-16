@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/agentshroud-redteam/SKILL.md"
+source_file: "docker/config/hermes/skills/i-apollo/SKILL.md"
 type: "document"
-community: "Community 489"
-location: "L354"
+community: "Community 679"
+location: "L132"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_489
+  - community/Community_679
 ---
 
 # Output
 
 ## Connections
-- [[AgentShroud Red Team Adversarial Tester_3]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_489
+#graphify/document #graphify/EXTRACTED #community/Community_679

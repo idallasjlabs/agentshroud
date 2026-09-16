@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION.md"
 type: "document"
-community: "Community 384"
+community: "Community 389"
 location: "L45"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_384
+  - community/Community_389
 ---
 
 # Option 2: OpenClaw in Basic Docker Container
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Comparison Three Deployment Options]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_384
+#graphify/document #graphify/EXTRACTED #community/Community_389

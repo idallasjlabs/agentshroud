@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v1.0/POST_FABLE5_TASK_DELEGATION.md"
+source_file: "skills/openclaw/video-frames/SKILL.md"
 type: "document"
-community: "Community 366"
-location: "L27"
+community: "Community 1101"
+location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_366
+  - community/Community_1101
 ---
 
 # Notes
 
 ## Connections
-- [[POST_FABLE5_TASK_DELEGATION]] - `contains` [EXTRACTED]
+- [[Video Frames (ffmpeg)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_366
+#graphify/document #graphify/EXTRACTED #community/Community_1101

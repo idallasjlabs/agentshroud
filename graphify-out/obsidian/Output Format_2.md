@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sav/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-mnemosyne/SKILL.md"
 type: "document"
-community: "Community 251"
-location: "L396"
+community: "Community 1004"
+location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_251
+  - community/Community_1004
 ---
 
-# OUTPUT FORMAT
+# Output Format
 
 ## Connections
-- [[System Audit Vault (Obsidian)_2]] - `contains` [EXTRACTED]
+- [[Mnemosyne — Retention Engineer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_251
+#graphify/document #graphify/EXTRACTED #community/Community_1004

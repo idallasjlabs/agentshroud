@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-03-04.md"
 type: "concept"
-community: "Community 345"
+community: "Community 349"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_345
+  - community/Community_349
 ---
 
 # OWNER_USER_IDS bypass mechanism
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud Phase Review — 2026-02-23]] - `references` [EXTRACTED]
 - [[Blue Team Security Assessment — AgentShroud v0.8.0 Round 2]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_345
+#graphify/concept #graphify/EXTRACTED #community/Community_349

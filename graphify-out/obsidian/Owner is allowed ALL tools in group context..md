@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "rationale"
-community: "Group RBAC & Tool ACL"
+community: "Community 746"
 location: "L302"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Group_RBAC__Tool_ACL
+  - community/Community_746
 ---
 
 # Owner is allowed ALL tools in group context.
 
 ## Connections
-- [[.test_owner_allowed_all_tools_in_group()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_owner_allowed_all_tools_in_group()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Group_RBAC__Tool_ACL
+#graphify/rationale #graphify/EXTRACTED #community/Community_746

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/api/api-reference.md"
+source_file: ".agents/skills/i-eightd/SKILL.md"
 type: "document"
-community: "Community 518"
-location: "L5"
+community: "Community 238"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_518
+  - community/Community_238
 ---
 
 # Overview
 
 ## Connections
-- [[AgentShroud v1.3.0]] - `contains` [EXTRACTED]
+- [[8D Root Cause Analysis — Data-Driven Control System Investigation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_518
+#graphify/document #graphify/EXTRACTED #community/Community_238

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-pr/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-qa/SKILL.md"
 type: "document"
-community: "Community 891"
+community: "Community 453"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_891
+  - community/Community_453
 ---
 
 # Objective
 
 ## Connections
-- [[Skill Pull Request (PR) Generator_1]] - `contains` [EXTRACTED]
+- [[Skill Quality Assurance (QA)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_891
+#graphify/document #graphify/EXTRACTED #community/Community_453

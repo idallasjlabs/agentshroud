@@ -1,17 +1,17 @@
 ---
-source_file: "docs/claude-security-audit-prompt.md"
+source_file: "docker/config/openclaw/skills/i-vulcan/SKILL.md"
 type: "document"
-community: "Community 445"
-location: "L266"
+community: "Community 940"
+location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_445
+  - community/Community_940
 ---
 
 # Output Format
 
 ## Connections
-- [[AgentShroud v0.8.0 — Full Security & Functionality Audit]] - `contains` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_445
+#graphify/document #graphify/EXTRACTED #community/Community_940

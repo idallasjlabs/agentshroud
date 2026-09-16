@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/openclaw/skills/i-atlas/SKILL.md"
+source_file: ".agents/skills/i-athena/SKILL.md"
 type: "document"
-community: "Community 524"
+community: "Community 722"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_524
+  - community/Community_722
 ---
 
 # Output Format
 
 ## Connections
-- [[Atlas — Curriculum Architect_4]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_6]] - `contains` [EXTRACTED]
+- [[show_notes]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_524
+#graphify/document #graphify/EXTRACTED #community/Community_722

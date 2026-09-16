@@ -1,20 +1,23 @@
 ---
-source_file: ".agents/skills/i-oracle/README.md"
+source_file: "docker/config/hermes/skills/i-oracle/SKILL.md"
 type: "document"
-community: "Community 1157"
-location: "L1"
+community: "Community 1000"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1157
+  - community/Community_1000
 ---
 
 # Oracle — Feedback Analyst
 
 ## Connections
-- [[Purpose_21]] - `contains` [EXTRACTED]
-- [[README_21]] - `contains` [EXTRACTED]
-- [[Related Skills_24]] - `contains` [EXTRACTED]
-- [[Usage_24]] - `contains` [EXTRACTED]
+- [[Input Requirements]] - `contains` [EXTRACTED]
+- [[Output Format]] - `contains` [EXTRACTED]
+- [[Persona]] - `contains` [EXTRACTED]
+- [[Quality Checklist]] - `contains` [EXTRACTED]
+- [[Role_2]] - `contains` [EXTRACTED]
+- [[System Prompt]] - `contains` [EXTRACTED]
+- [[hermesskillsi-oracleSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1157
+#graphify/document #graphify/EXTRACTED #community/Community_1000

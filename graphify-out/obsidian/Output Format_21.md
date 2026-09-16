@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-qa/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-atlas/SKILL.md"
 type: "document"
-community: "Community 443"
-location: "L27"
+community: "Community 531"
+location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_443
+  - community/Community_531
 ---
 
 # Output Format
 
 ## Connections
-- [[Skill Quality Assurance (QA)_1]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_443
+#graphify/document #graphify/EXTRACTED #community/Community_531

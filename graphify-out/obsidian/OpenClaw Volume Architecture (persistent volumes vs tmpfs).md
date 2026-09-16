@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md"
 type: "concept"
-community: "Community 751"
+community: "Community 673"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_751
+  - community/Community_673
 ---
 
 # OpenClaw Volume Architecture (persistent volumes vs tmpfs)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Read-Only Root FS Constraint — what breaks without proper mounts]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_751
+#graphify/concept #graphify/EXTRACTED #community/Community_673

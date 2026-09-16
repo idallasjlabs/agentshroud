@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/pipeline.py.md"
+source_file: "docs/ssh-capability.md"
 type: "document"
-community: "Community 479"
-location: "L16"
+community: "Community 683"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_479
+  - community/Community_683
 ---
 
 # Overview
 
 ## Connections
-- [[pipeline.py — Security Pipeline]] - `contains` [EXTRACTED]
+- [[SSH Capability Architecture Document]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_479
+#graphify/document #graphify/EXTRACTED #community/Community_683

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "concept"
-community: "Community 847"
+community: "Community 429"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Community_847
+  - community/Community_429
 ---
 
 # Option 1: Direct SSH (current approach)
@@ -14,4 +14,4 @@ tags:
 - [[SSH Proxy Config Schema (agentshroud.yaml ssh section)]] - `semantically_similar_to` [INFERRED]
 - [[SSH Proxy Threat Model (6 threats)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Community_847
+#graphify/concept #graphify/INFERRED #community/Community_429

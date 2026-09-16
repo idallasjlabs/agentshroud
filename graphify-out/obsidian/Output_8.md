@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/openai-image-gen/SKILL.md"
+source_file: ".agents/skills/i-apollo/SKILL.md"
 type: "document"
-community: "Community 360"
-location: "L85"
+community: "Community 983"
+location: "L132"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_360
+  - community/Community_983
 ---
 
 # Output
 
 ## Connections
-- [[OpenAI Image Gen]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_360
+#graphify/document #graphify/EXTRACTED #community/Community_983

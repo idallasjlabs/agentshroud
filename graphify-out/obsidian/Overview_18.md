@@ -1,17 +1,17 @@
 ---
-source_file: "docs/ssh-capability.md"
+source_file: "docs/api/api-reference.md"
 type: "document"
-community: "Community 614"
-location: "L3"
+community: "Community 526"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_614
+  - community/Community_526
 ---
 
 # Overview
 
 ## Connections
-- [[SSH Capability Architecture Document]] - `contains` [EXTRACTED]
+- [[AgentShroud v1.3.0_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_614
+#graphify/document #graphify/EXTRACTED #community/Community_526

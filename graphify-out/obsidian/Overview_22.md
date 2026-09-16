@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md"
+source_file: "docs/vault/01 - Architecture/Data Flow.md"
 type: "document"
-community: "Community 383"
-location: "L22"
+community: "Community 669"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_383
+  - community/Community_669
 ---
 
 # Overview
 
 ## Connections
-- [[llm_proxy.py_2]] - `contains` [EXTRACTED]
+- [[Data Flow_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_383
+#graphify/document #graphify/EXTRACTED #community/Community_669

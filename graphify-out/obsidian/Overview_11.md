@@ -1,17 +1,17 @@
 ---
-source_file: "docs/requirements/use-cases.md"
+source_file: "docs/reference/PREREQUISITES.md"
 type: "document"
-community: "Community 722"
-location: "L4"
+community: "Community 338"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_722
+  - community/Community_338
 ---
 
 # Overview
 
 ## Connections
-- [[AgentShroud Security Proxy]] - `contains` [EXTRACTED]
+- [[AgentShroud Prerequisites]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_722
+#graphify/document #graphify/EXTRACTED #community/Community_338

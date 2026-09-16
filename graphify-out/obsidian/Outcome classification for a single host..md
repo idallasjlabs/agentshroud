@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/multi_host_test.py"
 type: "rationale"
-community: "Community 993"
+community: "Community 1039"
 location: "L61"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_993
+  - community/Community_1039
 ---
 
 # Outcome classification for a single host.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[HostStatus]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_993
+#graphify/rationale #graphify/EXTRACTED #community/Community_1039

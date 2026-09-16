@@ -1,17 +1,20 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec-defense/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-daedalus/SKILL.md"
 type: "document"
-community: "Community 613"
-location: "L129"
+community: "Community 839"
+location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_613
+  - community/Community_839
 ---
 
 # Output Format
 
 ## Connections
-- [[AgentShroud Blue Team Security Auditor_2]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_5]] - `contains` [EXTRACTED]
+- [[architecture.puml (PlantUML)_2]] - `contains` [EXTRACTED]
+- [[diagramsREADME_3]] - `contains` [EXTRACTED]
+- [[flow.mmd (Mermaid)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_613
+#graphify/document #graphify/EXTRACTED #community/Community_839

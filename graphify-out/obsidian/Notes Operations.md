@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-icloud/SKILL.md"
+source_file: "docker/config/hermes/skills/i-icloud/SKILL.md"
 type: "document"
-community: "Community 316"
+community: "Community 306"
 location: "L103"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_316
+  - community/Community_306
 ---
 
 # Notes Operations
@@ -15,6 +15,6 @@ tags:
 - [[Create Note]] - `contains` [EXTRACTED]
 - [[List Notes]] - `contains` [EXTRACTED]
 - [[Search Notes]] - `contains` [EXTRACTED]
-- [[iCloud Services]] - `contains` [EXTRACTED]
+- [[iCloud Services_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_316
+#graphify/document #graphify/EXTRACTED #community/Community_306

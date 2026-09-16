@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-athena/SKILL.md"
+source_file: "docker/config/hermes/skills/i-qa/SKILL.md"
 type: "document"
-community: "Community 746"
-location: "L26"
+community: "Community 452"
+location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_746
+  - community/Community_452
 ---
 
 # Output Format
 
 ## Connections
-- [[Athena — Knowledge Distiller_2]] - `contains` [EXTRACTED]
-- [[show_notes_1]] - `contains` [EXTRACTED]
+- [[Skill Quality Assurance (QA)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_746
+#graphify/document #graphify/EXTRACTED #community/Community_452

@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/xurl/SKILL.md"
+source_file: ".agents/skills/i-mnemosyne/SKILL.md"
 type: "document"
-community: "Community 388"
-location: "L356"
+community: "Community 988"
+location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_388
+  - community/Community_988
 ---
 
 # Output Format
 
 ## Connections
-- [[xurl — Agent Skill Reference]] - `contains` [EXTRACTED]
+- [[Mnemosyne — Retention Engineer_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_388
+#graphify/document #graphify/EXTRACTED #community/Community_988

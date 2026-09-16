@@ -1,23 +1,20 @@
 ---
-source_file: "docker/config/hermes/skills/i-oracle/SKILL.md"
+source_file: "docker/config/hermes/skills/i-oracle/README.md"
 type: "document"
-community: "Community 956"
-location: "L6"
+community: "Community 1239"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_956
+  - community/Community_1239
 ---
 
 # Oracle — Feedback Analyst
 
 ## Connections
-- [[Input Requirements_17]] - `contains` [EXTRACTED]
-- [[Output Format_20]] - `contains` [EXTRACTED]
-- [[Persona_13]] - `contains` [EXTRACTED]
-- [[Quality Checklist_15]] - `contains` [EXTRACTED]
-- [[Role_60]] - `contains` [EXTRACTED]
-- [[SKILL_103]] - `contains` [EXTRACTED]
-- [[System Prompt_13]] - `contains` [EXTRACTED]
+- [[Purpose_57]] - `contains` [EXTRACTED]
+- [[Related Skills_48]] - `contains` [EXTRACTED]
+- [[Usage_52]] - `contains` [EXTRACTED]
+- [[hermesskillsi-oracleREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_956
+#graphify/document #graphify/EXTRACTED #community/Community_1239
