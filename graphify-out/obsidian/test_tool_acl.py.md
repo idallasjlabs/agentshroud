@@ -1,20 +1,17 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "Group RBAC & Tool ACL"
-location: "L1"
+community: "Community 134"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Group_RBAC__Tool_ACL
+  - community/Community_134
 ---
 
 # test_tool_acl.py
 
 ## Connections
-- [[RBACConfig_1]] - `imports` [EXTRACTED]
-- [[Role_1]] - `imports` [EXTRACTED]
-- [[TeamsConfig]] - `imports` [EXTRACTED]
+- [[Origin-Aware Authorization (refuse owner elevation over unverified origin)]] - `references` [EXTRACTED]
 - [[TestAdminAccess]] - `contains` [EXTRACTED]
 - [[TestCVE2026_9367TerminalToolDenied]] - `contains` [EXTRACTED]
 - [[TestClassificationSets]] - `contains` [EXTRACTED]
@@ -22,13 +19,18 @@ tags:
 - [[TestDenyUnknownFalse]] - `contains` [EXTRACTED]
 - [[TestGroupToolAllowlist]] - `contains` [EXTRACTED]
 - [[TestNoRBACConfig]] - `contains` [EXTRACTED]
+- [[TestOriginAwareAuthorization]] - `contains` [EXTRACTED]
 - [[TestOwnerAccess]] - `contains` [EXTRACTED]
 - [[TestToolRateLimiting]] - `contains` [EXTRACTED]
 - [[TestViewerAccess]] - `contains` [EXTRACTED]
+- [[Tests for gatewaysecuritytool_acl.py — V9-T2 Tool-level access control.]] - `rationale_for` [EXTRACTED]
 - [[ToolACLConfig]] - `imports` [EXTRACTED]
 - [[ToolACLEnforcer]] - `imports` [EXTRACTED]
-- [[_make_rbac()_1]] - `contains` [EXTRACTED]
-- [[enforcer()_3]] - `contains` [EXTRACTED]
-- [[rbac()_6]] - `contains` [EXTRACTED]
+- [[_make_rbac()]] - `contains` [EXTRACTED]
+- [[enforcer()]] - `contains` [EXTRACTED]
+- [[gateway.security.tool_acl]] - `imports_from` [EXTRACTED]
+- [[group_config.py]] - `references` [EXTRACTED]
+- [[rbac()]] - `contains` [EXTRACTED]
+- [[rbac_config.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Group_RBAC__Tool_ACL
+#graphify/code #graphify/EXTRACTED #community/Community_134

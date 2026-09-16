@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_bots_ssh_exec_wrapper.py"
 type: "code"
-community: "Community 140"
+community: "Community 149"
 location: "L229"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_140
+  - community/Community_149
 ---
 
 # test_shell_payload_builder_escapes_shell_metacharacters_injection_safe()
@@ -16,4 +16,4 @@ tags:
 - [[_build_payload_via_shell()]] - `calls` [EXTRACTED]
 - [[test_bots_ssh_exec_wrapper.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_140
+#graphify/code #graphify/EXTRACTED #community/Community_149

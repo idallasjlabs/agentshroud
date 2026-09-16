@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "Community 16"
+community: "SOC Auth & Audit Store"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_16
+  - community/SOC_Auth__Audit_Store
 ---
 
 # test_soc_router_coverage.py
@@ -20,11 +20,11 @@ tags:
 - [[_Svc]] - `contains` [EXTRACTED]
 - [[_fake_contributor_manager()]] - `contains` [EXTRACTED]
 - [[_make_service_manager()]] - `contains` [EXTRACTED]
-- [[client()_15]] - `contains` [EXTRACTED]
+- [[client()_12]] - `contains` [EXTRACTED]
 - [[gatewaysocauth.py (get_caller)]] - `references` [EXTRACTED]
 - [[get_caller()]] - `imports` [EXTRACTED]
 - [[holder()]] - `contains` [EXTRACTED]
-- [[router.py_1]] - `tests` [EXTRACTED]
+- [[socrouter.py]] - `tests` [EXTRACTED]
 - [[state()]] - `contains` [EXTRACTED]
 - [[test_add_collaborator()]] - `contains` [EXTRACTED]
 - [[test_add_group_member_paths()]] - `contains` [EXTRACTED]
@@ -164,4 +164,4 @@ tags:
 - [[test_upgrade_hermes_restarts_the_real_container_name()]] - `contains` [EXTRACTED]
 - [[test_websocket_route_dispatch()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_16
+#graphify/code #graphify/EXTRACTED #community/SOC_Auth__Audit_Store

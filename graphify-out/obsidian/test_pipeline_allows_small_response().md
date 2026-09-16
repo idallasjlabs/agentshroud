@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_data_exfil_volume_guard.py"
 type: "code"
-community: "Community 181"
+community: "Community 189"
 location: "L264"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_181
+  - community/Community_189
 ---
 
 # test_pipeline_allows_small_response()
@@ -15,7 +15,7 @@ tags:
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[DataExfilVolumeConfig]] - `calls` [EXTRACTED]
 - [[DataExfilVolumeGuard]] - `calls` [EXTRACTED]
-- [[_make_pipeline()_1]] - `calls` [EXTRACTED]
+- [[_make_pipeline()_2]] - `calls` [EXTRACTED]
 - [[test_data_exfil_volume_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_181
+#graphify/code #graphify/EXTRACTED #community/Community_189

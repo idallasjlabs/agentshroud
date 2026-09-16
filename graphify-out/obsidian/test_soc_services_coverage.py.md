@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "Community 77"
+community: "SOC Service Manager (Container Engine)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_77
+  - community/SOC_Service_Manager_Container_Engine
 ---
 
 # test_soc_services_coverage.py
 
 ## Connections
-- [[HealthStatus]] - `imports` [EXTRACTED]
+- [[HealthStatus_1]] - `imports` [EXTRACTED]
 - [[ServiceManager]] - `imports` [EXTRACTED]
-- [[ServiceStatus]] - `imports` [EXTRACTED]
+- [[ServiceStatus_1]] - `imports` [EXTRACTED]
 - [[TestCheckClamd]] - `contains` [EXTRACTED]
 - [[TestCheckFluentBit]] - `contains` [EXTRACTED]
 - [[TestCheckOpenscap]] - `contains` [EXTRACTED]
 - [[TestCheckWazuhAgent]] - `contains` [EXTRACTED]
 - [[TestDescribeService]] - `contains` [EXTRACTED]
-- [[TestGetEngine_1]] - `contains` [EXTRACTED]
+- [[TestGetEngine]] - `contains` [EXTRACTED]
 - [[TestGetLogs]] - `contains` [EXTRACTED]
 - [[TestInspectViaSocket]] - `contains` [EXTRACTED]
 - [[TestKnownServices]] - `contains` [EXTRACTED]
@@ -37,4 +37,4 @@ tags:
 - [[_patch_open()]] - `contains` [EXTRACTED]
 - [[gatewaysocservices.py (ServiceManager)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_77
+#graphify/code #graphify/EXTRACTED #community/SOC_Service_Manager_Container_Engine

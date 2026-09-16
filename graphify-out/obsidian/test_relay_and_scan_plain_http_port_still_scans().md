@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "Community 67"
+community: "Community 62"
 location: "L669"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_67
+  - community/Community_62
 ---
 
 # test_relay_and_scan_plain_http_port_still_scans()
@@ -15,9 +15,9 @@ tags:
 - [[HTTPConnectProxy]] - `calls` [EXTRACTED]
 - [[HTTPConnectProxy_1]] - `calls` [EXTRACTED]
 - [[Port-80 downloads are plaintext — malware sampling must keep working.]] - `rationale_for` [EXTRACTED]
-- [[StreamReader_3]] - `calls` [EXTRACTED]
-- [[_MockWriter_1]] - `calls` [EXTRACTED]
+- [[StreamReader_2]] - `calls` [EXTRACTED]
+- [[_MockWriter]] - `calls` [EXTRACTED]
 - [[_capture_scans()]] - `calls` [EXTRACTED]
 - [[test_http_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_67
+#graphify/code #graphify/EXTRACTED #community/Community_62

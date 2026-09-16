@@ -1,30 +1,29 @@
 ---
 source_file: "gateway/tests/test_shared_memory_write_acl.py"
 type: "code"
-community: "Community 27"
+community: "Community 41"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_27
+  - community/Community_41
 ---
 
 # test_shared_memory_write_acl.py
 
 ## Connections
-- [[RBACConfig_1]] - `imports` [EXTRACTED]
+- [[RBACConfig_2]] - `imports` [EXTRACTED]
 - [[SharedMemoryManager]] - `imports` [EXTRACTED]
-- [[TeamsConfig]] - `imports` [EXTRACTED]
+- [[TeamsConfig_2]] - `imports` [EXTRACTED]
 - [[TestAuthorizationHelper]] - `contains` [EXTRACTED]
 - [[TestGroupMemoryWriteACL]] - `contains` [EXTRACTED]
 - [[TestUserMemoryWriteACL]] - `contains` [EXTRACTED]
 - [[TestWriteFailurePath]] - `contains` [EXTRACTED]
 - [[UserSessionManager]] - `imports` [EXTRACTED]
-- [[group_config.py (TeamsConfig)]] - `references` [EXTRACTED]
-- [[rbac()_5]] - `contains` [EXTRACTED]
-- [[session_manager()_4]] - `contains` [EXTRACTED]
+- [[rbac()_3]] - `contains` [EXTRACTED]
+- [[session_manager()_2]] - `contains` [EXTRACTED]
 - [[session_manager.py (UserSessionManager)]] - `references` [EXTRACTED]
-- [[shared_memory()_2]] - `contains` [EXTRACTED]
+- [[shared_memory()_1]] - `contains` [EXTRACTED]
 - [[shared_memory.py (SharedMemoryManager)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_27
+#graphify/code #graphify/EXTRACTED #community/Community_41

@@ -1,35 +1,26 @@
 ---
 source_file: "gateway/tests/test_subagent_governance.py"
 type: "code"
-community: "Community 507"
-location: "L1"
+community: "Community 1014"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_507
+  - community/Community_1014
 ---
 
 # test_subagent_governance.py
 
 ## Connections
-- [[GovernanceAction]] - `imports` [EXTRACTED]
-- [[GovernanceConfig]] - `imports` [EXTRACTED]
-- [[GovernanceEventType]] - `imports` [EXTRACTED]
-- [[OutputTrustConfig]] - `imports` [EXTRACTED]
-- [[PrivilegePolicy]] - `imports` [EXTRACTED]
-- [[ResourceBudget]] - `imports` [EXTRACTED]
-- [[SubagentGovernance]] - `tests` [EXTRACTED]
-- [[TestLifecycle_1]] - `contains` [EXTRACTED]
+- [[TestLifecycle]] - `contains` [EXTRACTED]
 - [[TestOutputTrustScoring]] - `contains` [EXTRACTED]
 - [[TestPatternDetection]] - `contains` [EXTRACTED]
 - [[TestResourceBudgets]] - `contains` [EXTRACTED]
 - [[TestSpawnAuthorization]] - `contains` [EXTRACTED]
 - [[TestToolAuthorization]] - `contains` [EXTRACTED]
-- [[_check_exfil_patterns()]] - `imports` [EXTRACTED]
-- [[_check_injection_patterns()]] - `imports` [EXTRACTED]
-- [[_check_pii_patterns()]] - `imports` [EXTRACTED]
+- [[Tests for SubagentGovernance module.]] - `rationale_for` [EXTRACTED]
 - [[disabled_gov()]] - `contains` [EXTRACTED]
 - [[gov()]] - `contains` [EXTRACTED]
 - [[monitor_gov()]] - `contains` [EXTRACTED]
+- [[subagent_governance.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_507
+#graphify/code #graphify/EXTRACTED #community/Community_1014

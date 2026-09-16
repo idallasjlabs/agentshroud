@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_anthropic_openai_translator.py"
 type: "code"
-community: "Community 126"
+community: "Community 79"
 location: "L289"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_126
+  - community/Community_79
 ---
 
 # test_translator_null_content_no_tool_calls_yields_nonempty_content()
@@ -16,4 +16,4 @@ tags:
 - [[openai_to_anthropic_response()]] - `calls` [EXTRACTED]
 - [[test_anthropic_openai_translator.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_126
+#graphify/code #graphify/EXTRACTED #community/Community_79

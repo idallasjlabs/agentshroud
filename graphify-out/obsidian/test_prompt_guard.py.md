@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_guard.py"
 type: "code"
-community: "Community 30"
+community: "Prompt Guard & Context Integrity"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_30
+  - community/Prompt_Guard__Context_Integrity
 ---
 
 # test_prompt_guard.py
@@ -27,4 +27,4 @@ tags:
 - [[test_prompt_guard_init()]] - `contains` [EXTRACTED]
 - [[test_security_hardening.py]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_30
+#graphify/code #graphify/EXTRACTED #community/Prompt_Guard__Context_Integrity

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_stt_model_ab.py"
 type: "code"
-community: "Community 267"
+community: "Community 287"
 location: "L136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_267
+  - community/Community_287
 ---
 
 # test_transcribe_emits_latency_record()
@@ -15,4 +15,4 @@ tags:
 - [[The AB measurement fires on the real transcribe path (model mocked).      Prove]] - `rationale_for` [EXTRACTED]
 - [[test_voice_stt_model_ab.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_267
+#graphify/code #graphify/EXTRACTED #community/Community_287

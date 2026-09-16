@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cron_jobs_prompts.py"
 type: "code"
-community: "Community 564"
+community: "Community 584"
 location: "L109"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_564
+  - community/Community_584
 ---
 
 # test_ssh_config_routes_tailnet_fqdn()
@@ -15,4 +15,4 @@ tags:
 - [[SSH config must have a Host .tail240ea8.ts.net block BEFORE Host  block.]] - `rationale_for` [EXTRACTED]
 - [[test_cron_jobs_prompts.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_564
+#graphify/code #graphify/EXTRACTED #community/Community_584

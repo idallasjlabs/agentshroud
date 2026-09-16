@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_skills_manifest_sync.py"
 type: "code"
-community: "Community 73"
+community: "Community 247"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_73
+  - community/Community_247
 ---
 
 # test_skills_manifest_sync.py
@@ -22,13 +22,13 @@ tags:
 - [[TestSkillsManifest]] - `contains` [EXTRACTED]
 - [[TestSkillsReloadEndpoint]] - `contains` [EXTRACTED]
 - [[TestValidateManifest]] - `contains` [EXTRACTED]
-- [[_sha256()_1]] - `contains` [EXTRACTED]
-- [[_write_tree()_1]] - `contains` [EXTRACTED]
+- [[_sha256()]] - `contains` [EXTRACTED]
+- [[_write_tree()]] - `contains` [EXTRACTED]
 - [[deploy_manifest()]] - `imports` [EXTRACTED]
 - [[gatewayskillsmanifest.py (SkillsManifest)]] - `references` [EXTRACTED]
 - [[plan_deploy()]] - `imports` [EXTRACTED]
-- [[require_auth()_1]] - `imports` [EXTRACTED]
+- [[require_auth()]] - `imports` [EXTRACTED]
 - [[validate_manifest()]] - `imports` [EXTRACTED]
 - [[webapi.py (POST apiintelreports)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_73
+#graphify/code #graphify/EXTRACTED #community/Community_247

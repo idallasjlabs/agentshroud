@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_injection.py"
 type: "code"
-community: "Community 134"
+community: "Community 101"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_134
+  - community/Community_101
 ---
 
 # test_tool_result_injection.py
@@ -23,4 +23,4 @@ tags:
 - [[ToolResultInjectionScanner]] - `imports` [EXTRACTED]
 - [[scanner()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_134
+#graphify/code #graphify/EXTRACTED #community/Community_101

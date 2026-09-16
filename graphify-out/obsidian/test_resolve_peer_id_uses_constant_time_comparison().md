@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: "Community 110"
+community: "Community 103"
 location: "L89"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_110
+  - community/Community_103
 ---
 
 # test_resolve_peer_id_uses_constant_time_comparison()
 
 ## Connections
-- [[A2AProxy_1]] - `references` [EXTRACTED]
+- [[A2AProxy]] - `references` [EXTRACTED]
 - [[Token comparison must not leak timing information — same guarantee as     Hermes]] - `rationale_for` [EXTRACTED]
 - [[test_a2a_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_110
+#graphify/code #graphify/EXTRACTED #community/Community_103

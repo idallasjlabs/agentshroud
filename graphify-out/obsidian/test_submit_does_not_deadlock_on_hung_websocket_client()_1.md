@@ -1,24 +1,20 @@
 ---
-source_file: "gateway/tests/test_enhanced_approval.py"
+source_file: "gateway/tests/test_approval_queue.py"
 type: "code"
-community: "Community 23"
-location: "L491"
+community: "Community 38"
+location: "L502"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_23
+  - community/Community_38
 ---
 
 # test_submit_does_not_deadlock_on_hung_websocket_client()
 
 ## Connections
-- [[ApprovalQueueConfig_2]] - `calls` [EXTRACTED]
-- [[ApprovalStore]] - `calls` [INFERRED]
-- [[ApprovalStore_1]] - `calls` [EXTRACTED]
-- [[EnhancedApprovalQueue]] - `calls` [EXTRACTED]
+- [[ApprovalRequest_2]] - `calls` [EXTRACTED]
 - [[SCRUM-154 a dead WebSocket client must never wedge the approval lock.      subm_1]] - `rationale_for` [EXTRACTED]
-- [[ToolRiskConfig_1]] - `calls` [EXTRACTED]
 - [[_HangingWebSocket_1]] - `calls` [EXTRACTED]
-- [[test_enhanced_approval.py]] - `contains` [EXTRACTED]
+- [[test_approval_queue.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_23
+#graphify/code #graphify/EXTRACTED #community/Community_38

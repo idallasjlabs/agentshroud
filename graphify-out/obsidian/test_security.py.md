@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_security.py"
 type: "code"
-community: "Config Validation & Router"
+community: "Community 71"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Config_Validation__Router
+  - community/Community_71
 ---
 
 # test_security.py
 
 ## Connections
-- [[ForwardRequest]] - `imports` [EXTRACTED]
+- [[ForwardRequest_1]] - `imports` [EXTRACTED]
 - [[RateLimiter]] - `imports` [EXTRACTED]
 - [[gatewayingest_apiauth.py (RateLimiter, verify_token)]] - `references` [EXTRACTED]
 - [[test_constant_time_comparison()]] - `contains` [EXTRACTED]
@@ -38,4 +38,4 @@ tags:
 - [[test_xss_attempt()]] - `contains` [EXTRACTED]
 - [[verify_token()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Config_Validation__Router
+#graphify/code #graphify/EXTRACTED #community/Community_71

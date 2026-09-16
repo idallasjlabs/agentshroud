@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "PII Sanitizer & E2E Tests"
+community: "Gateway Config & PII Sanitizer"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PII_Sanitizer__E2E_Tests
+  - community/Gateway_Config__PII_Sanitizer
 ---
 
 # test_performance.py
@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[DataLedger]] - `imports` [EXTRACTED]
 - [[LedgerConfig]] - `imports` [EXTRACTED]
-- [[PIIConfig]] - `imports` [EXTRACTED]
+- [[PIIConfig_2]] - `imports` [EXTRACTED]
 - [[PIISanitizer]] - `imports` [EXTRACTED]
 - [[PromptGuard]] - `imports` [EXTRACTED]
-- [[SecurityPipeline]] - `imports` [EXTRACTED]
+- [[SecurityPipeline_1]] - `imports` [EXTRACTED]
 - [[TestAuditChainPerformance]] - `contains` [EXTRACTED]
 - [[TestBenchmarkBaseline]] - `contains` [EXTRACTED]
 - [[TestFullPipelineLatency]] - `contains` [EXTRACTED]
@@ -25,8 +25,8 @@ tags:
 - [[TestPromptGuardPerformance]] - `contains` [EXTRACTED]
 - [[TestSecurityPipelineChainLatency]] - `contains` [EXTRACTED]
 - [[TestTrustManagerPerformance]] - `contains` [EXTRACTED]
-- [[TrustManager_1]] - `imports` [EXTRACTED]
+- [[TrustManager]] - `imports` [EXTRACTED]
 - [[test_prompt_guard.py]] - `shares_data_with` [INFERRED]
 - [[test_sanitizer.py]] - `shares_data_with` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer__E2E_Tests
+#graphify/code #graphify/EXTRACTED #community/Gateway_Config__PII_Sanitizer

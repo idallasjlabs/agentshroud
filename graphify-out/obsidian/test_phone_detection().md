@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_sanitizer.py"
 type: "code"
-community: "Community 407"
+community: "Community 418"
 location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_407
+  - community/Community_418
 ---
 
 # test_phone_detection()
@@ -15,4 +15,4 @@ tags:
 - [[Test phone number redaction]] - `rationale_for` [EXTRACTED]
 - [[test_sanitizer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_407
+#graphify/code #graphify/EXTRACTED #community/Community_418

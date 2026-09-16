@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/tests/test_router_openai_translation.py"
 type: "code"
-community: "Community 32"
+community: "Multi-Agent Router & Chat UI"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_32
+  - community/Multi-Agent_Router__Chat_UI
 ---
 
 # test_router_openai_translation.py
 
 ## Connections
-- [[AgentTarget]] - `imports` [EXTRACTED]
+- [[AgentTarget_1]] - `imports` [EXTRACTED]
 - [[ForwardError]] - `imports` [EXTRACTED]
 - [[MultiAgentRouter]] - `imports` [EXTRACTED]
 - [[RouterConfig]] - `imports` [EXTRACTED]
 - [[_mock_response()]] - `contains` [EXTRACTED]
-- [[config.py]] - `references` [EXTRACTED]
-- [[models.py]] - `references` [EXTRACTED]
-- [[router()_2]] - `contains` [EXTRACTED]
-- [[router.py]] - `references` [EXTRACTED]
+- [[ingest_apiconfig.py]] - `references` [EXTRACTED]
+- [[ingest_apimodels.py]] - `references` [EXTRACTED]
+- [[ingest_apirouter.py]] - `references` [EXTRACTED]
+- [[router()]] - `contains` [EXTRACTED]
 - [[test_generic_target_returns_json_as_is()]] - `contains` [EXTRACTED]
 - [[test_generic_target_sends_content_body()]] - `contains` [EXTRACTED]
 - [[test_openai_empty_choices_raises_forward_error()]] - `contains` [EXTRACTED]
@@ -29,4 +29,4 @@ tags:
 - [[test_openai_target_returns_content_string()]] - `contains` [EXTRACTED]
 - [[test_openai_target_sends_messages_body()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_32
+#graphify/code #graphify/EXTRACTED #community/Multi-Agent_Router__Chat_UI

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "code"
-community: "Session Management"
+community: "Community 390"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Session_Management
+  - community/Community_390
 ---
 
 # test_session_manager.py
 
 ## Connections
-- [[TestAccessControl_2]] - `contains` [EXTRACTED]
+- [[TestAccessControl]] - `contains` [EXTRACTED]
 - [[TestAtomicRegistryWrites]] - `contains` [EXTRACTED]
 - [[TestConversationHistory]] - `contains` [EXTRACTED]
 - [[TestInputValidation]] - `contains` [EXTRACTED]
@@ -24,7 +24,7 @@ tags:
 - [[TestTrustLevel]] - `contains` [EXTRACTED]
 - [[UserSession]] - `imports` [EXTRACTED]
 - [[UserSessionManager]] - `imports` [EXTRACTED]
-- [[mgr()_2]] - `contains` [EXTRACTED]
+- [[mgr()]] - `contains` [EXTRACTED]
 - [[session_manager.py (UserSessionManager)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Session_Management
+#graphify/code #graphify/EXTRACTED #community/Community_390

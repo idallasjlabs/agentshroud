@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "Security Audit & Drift Detection"
+community: "File Sandbox & Privilege Separation Tests"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Audit__Drift_Detection
+  - community/File_Sandbox__Privilege_Separation_Tests
 ---
 
 # test_privilege_separation.py
@@ -28,4 +28,4 @@ tags:
 - [[middleware_manager()]] - `contains` [EXTRACTED]
 - [[strict_sandbox()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Audit__Drift_Detection
+#graphify/code #graphify/EXTRACTED #community/File_Sandbox__Privilege_Separation_Tests

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_resource_guard_limits.py"
 type: "code"
-community: "Community 225"
+community: "P3 Infrastructure Security Modules"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_225
+  - community/P3_Infrastructure_Security_Modules
 ---
 
 # test_resource_guard_limits.py
@@ -22,7 +22,7 @@ tags:
 - [[TestVramHeadroom]] - `contains` [EXTRACTED]
 - [[VRAMHeadroomError]] - `imports` [EXTRACTED]
 - [[get_resource_guard()]] - `imports` [EXTRACTED]
-- [[guard()_3]] - `contains` [EXTRACTED]
+- [[guard()_1]] - `contains` [EXTRACTED]
 - [[resource_guard.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_225
+#graphify/code #graphify/EXTRACTED #community/P3_Infrastructure_Security_Modules

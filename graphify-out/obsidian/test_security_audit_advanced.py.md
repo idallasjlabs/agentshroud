@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "Security Audit & Drift Detection"
+community: "Session Manager & PII/Context Guard"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Audit__Drift_Detection
+  - community/Session_Manager__PII/Context_Guard
 ---
 
 # test_security_audit_advanced.py
@@ -22,9 +22,8 @@ tags:
 - [[TestPrivilegeEscalation]] - `contains` [EXTRACTED]
 - [[TestTimingAttacks]] - `contains` [EXTRACTED]
 - [[TestWebSecurity]] - `contains` [EXTRACTED]
-- [[gatewaysecuritytrust_manager.py (TrustManager)]] - `references` [INFERRED]
 - [[session_manager.py (UserSessionManager)]] - `references` [INFERRED]
 - [[test_security_audit.py]] - `conceptually_related_to` [INFERRED]
 - [[webapi.py (POST apiintelreports)]] - `references` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Audit__Drift_Detection
+#graphify/code #graphify/EXTRACTED #community/Session_Manager__PII/Context_Guard

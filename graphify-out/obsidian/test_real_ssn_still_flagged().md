@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_us_ssn_regex_tightened.py"
 type: "code"
-community: "Community 765"
+community: "Community 804"
 location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_765
+  - community/Community_804
 ---
 
 # test_real_ssn_still_flagged()
@@ -16,4 +16,4 @@ tags:
 - [[US_SSN regex tightened to exclude CVE IDs]] - `rationale_for` [EXTRACTED]
 - [[test_us_ssn_regex_tightened.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_765
+#graphify/code #graphify/EXTRACTED #community/Community_804

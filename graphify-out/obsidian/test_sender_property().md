@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_gateway_email_service.py"
 type: "code"
-community: "Community 178"
+community: "Community 188"
 location: "L143"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_178
+  - community/Community_188
 ---
 
 # test_sender_property()
@@ -16,4 +16,4 @@ tags:
 - [[GatewayEmailService_1]] - `calls` [EXTRACTED]
 - [[test_gateway_email_service.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_178
+#graphify/code #graphify/EXTRACTED #community/Community_188

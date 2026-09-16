@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "code"
-community: "PII Sanitizer & E2E Tests"
+community: "Community 322"
 location: "L346"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PII_Sanitizer__E2E_Tests
+  - community/Community_322
 ---
 
 # test_response_credential_blocking()
@@ -15,4 +15,4 @@ tags:
 - [[Outbound responses have credentials blocked for untrusted sources.]] - `rationale_for` [EXTRACTED]
 - [[test_security_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer__E2E_Tests
+#graphify/code #graphify/EXTRACTED #community/Community_322
