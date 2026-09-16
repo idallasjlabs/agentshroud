@@ -1,17 +1,17 @@
 ---
-source_file: ".github/agents/test-augmenter.agent.md"
+source_file: ".github/agents/safe-refactor.agent.md"
 type: "document"
-community: "Community 488"
+community: "Community 397"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_488
+  - community/Community_397
 ---
 
 # Role Definition
 
 ## Connections
-- [[Test Augmentation Specialist]] - `contains` [EXTRACTED]
+- [[Safe Refactor Specialist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_488
+#graphify/document #graphify/EXTRACTED #community/Community_397

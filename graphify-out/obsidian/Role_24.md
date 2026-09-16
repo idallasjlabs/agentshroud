@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-pca/SKILL.md"
+source_file: ".agents/skills/i-odev/SKILL.md"
 type: "document"
-community: "Community 1158"
-location: "L7"
+community: "Community 302"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1158
+  - community/Community_302
 ---
 
 # Role
 
 ## Connections
-- [[Skill Pre-Change Analysis (PCA)]] - `contains` [EXTRACTED]
+- [[Skill OpenClaw Dev Workflow (ODEV)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1158
+#graphify/document #graphify/EXTRACTED #community/Community_302

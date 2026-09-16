@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/workspace/competitive-analysis.md"
 type: "document"
-community: "Community 841"
+community: "Community 881"
 location: "L72"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_841
+  - community/Community_881
 ---
 
 # SECTION 1: MARKET ANALYSIS
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[REPORT STRUCTURE]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_841
+#graphify/document #graphify/EXTRACTED #community/Community_881

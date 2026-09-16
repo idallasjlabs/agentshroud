@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/runtime/engine.py"
 type: "rationale"
-community: "Community 204"
+community: "Community 1366"
 location: "L44"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_204
+  - community/Community_1366
 ---
 
 # Run a CLI command and return the result.
 
 ## Connections
-- [[._run()]] - `rationale_for` [EXTRACTED]
+- [[dot-_run()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_204
+#graphify/rationale #graphify/EXTRACTED #community/Community_1366

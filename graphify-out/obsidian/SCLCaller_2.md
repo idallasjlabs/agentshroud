@@ -1,20 +1,103 @@
 ---
-source_file: "gateway/tests/test_soc_bots.py"
+source_file: "gateway/soc/router.py"
 type: "code"
-community: "RBAC & SOC Realtime"
-location: "L42"
+community: "SOC Correlation & Router"
+location: "L58"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/RBAC__SOC_Realtime
+  - graphify/EXTRACTED
+  - community/SOC_Correlation__Router
 ---
 
 # SCLCaller
 
 ## Connections
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[Role_1]] - `uses` [INFERRED]
-- [[_make_m6_caller()]] - `references` [EXTRACTED]
-- [[_make_owner_caller()]] - `references` [EXTRACTED]
+- [[AuditLogEntry]] - `uses` [INFERRED]
+- [[AuditResult_1]] - `uses` [INFERRED]
+- [[ContributorManager]] - `uses` [INFERRED]
+- [[SCLCaller_1]] - `uses` [INFERRED]
+- [[SCLConfirmationRequired]] - `uses` [INFERRED]
+- [[SCLInterface_1]] - `uses` [INFERRED]
+- [[ServiceManager]] - `uses` [INFERRED]
+- [[_log_audit()]] - `references` [EXTRACTED]
+- [[acknowledge_config_integrity()]] - `references` [EXTRACTED]
+- [[add_collaborator()]] - `references` [EXTRACTED]
+- [[add_group_member()]] - `references` [EXTRACTED]
+- [[approve_egress()]] - `references` [EXTRACTED]
+- [[approve_request()]] - `references` [EXTRACTED]
+- [[auth_ws_token()]] - `references` [EXTRACTED]
+- [[clear_group_memory()]] - `references` [EXTRACTED]
+- [[create_delegation()]] - `references` [EXTRACTED]
+- [[create_group()]] - `references` [EXTRACTED]
+- [[delete_group()]] - `references` [EXTRACTED]
+- [[deny_egress()]] - `references` [EXTRACTED]
+- [[deny_request()]] - `references` [EXTRACTED]
+- [[emergency_block_egress()]] - `references` [EXTRACTED]
+- [[export_audit()]] - `references` [EXTRACTED]
+- [[get_agent_cves()]] - `references` [EXTRACTED]
+- [[get_collaborator_activity()]] - `references` [EXTRACTED]
+- [[get_config()_1]] - `references` [EXTRACTED]
+- [[get_egress_history()]] - `references` [EXTRACTED]
+- [[get_egress_log()]] - `references` [EXTRACTED]
+- [[get_egress_pending()]] - `references` [EXTRACTED]
+- [[get_egress_rules()]] - `references` [EXTRACTED]
+- [[get_group()]] - `references` [EXTRACTED]
+- [[get_group_memory()]] - `references` [EXTRACTED]
+- [[get_health()]] - `references` [EXTRACTED]
+- [[get_llm_failover_stats()]] - `references` [EXTRACTED]
+- [[get_modules()]] - `references` [EXTRACTED]
+- [[get_modules_heatmap()]] - `references` [EXTRACTED]
+- [[get_privacy_policies()]] - `references` [EXTRACTED]
+- [[get_risk_score()]] - `references` [EXTRACTED]
+- [[get_risk_summary()]] - `references` [EXTRACTED]
+- [[get_sbom()]] - `references` [EXTRACTED]
+- [[get_scan_results()]] - `references` [EXTRACTED]
+- [[get_scanner_recent_events()]] - `references` [EXTRACTED]
+- [[get_scanner_results()]] - `references` [EXTRACTED]
+- [[get_security_alerts()]] - `references` [EXTRACTED]
+- [[get_security_events()]] - `references` [EXTRACTED]
+- [[get_security_scorecard()]] - `references` [EXTRACTED]
+- [[get_service_logs()]] - `references` [EXTRACTED]
+- [[get_soc_correlation()]] - `references` [EXTRACTED]
+- [[get_tool_acl()]] - `references` [EXTRACTED]
+- [[get_trivy_results()]] - `references` [EXTRACTED]
+- [[get_updates()]] - `references` [EXTRACTED]
+- [[get_user()]] - `references` [EXTRACTED]
+- [[killswitch_disconnect()]] - `references` [EXTRACTED]
+- [[killswitch_freeze()]] - `references` [EXTRACTED]
+- [[killswitch_shutdown()]] - `references` [EXTRACTED]
+- [[list_bots()]] - `references` [EXTRACTED]
+- [[list_delegations()]] - `references` [EXTRACTED]
+- [[list_groups()]] - `references` [EXTRACTED]
+- [[list_pending_approvals()_1]] - `references` [EXTRACTED]
+- [[list_services()]] - `references` [EXTRACTED]
+- [[list_users()]] - `references` [EXTRACTED]
+- [[override_egress_rule()]] - `references` [EXTRACTED]
+- [[pause_collaborator_endpoint()]] - `references` [EXTRACTED]
+- [[rebuild_all_services()]] - `references` [EXTRACTED]
+- [[remove_egress_rule()]] - `references` [EXTRACTED]
+- [[remove_group_member()]] - `references` [EXTRACTED]
+- [[rename_group()]] - `references` [EXTRACTED]
+- [[restart_service()]] - `references` [EXTRACTED]
+- [[revoke_collaborator()]] - `references` [EXTRACTED]
+- [[revoke_delegation()]] - `references` [EXTRACTED]
+- [[revoke_egress_history()]] - `references` [EXTRACTED]
+- [[rollback_gateway()]] - `references` [EXTRACTED]
+- [[run_scanner()]] - `references` [EXTRACTED]
+- [[set_group_mode()]] - `references` [EXTRACTED]
+- [[set_log_level()]] - `references` [EXTRACTED]
+- [[set_module_mode()]] - `references` [EXTRACTED]
+- [[set_user_collab_mode()]] - `references` [EXTRACTED]
+- [[set_user_role()_1]] - `references` [EXTRACTED]
+- [[start_service()]] - `references` [EXTRACTED]
+- [[stop_service()]] - `references` [EXTRACTED]
+- [[trigger_cve_report()]] - `references` [EXTRACTED]
+- [[unpause_collaborator_endpoint()]] - `references` [EXTRACTED]
+- [[update_display_name()]] - `references` [EXTRACTED]
+- [[update_service()]] - `references` [EXTRACTED]
+- [[upgrade_bot()]] - `references` [EXTRACTED]
+- [[upgrade_gateway()]] - `references` [EXTRACTED]
+- [[upgrade_hermes()]] - `references` [EXTRACTED]
+- [[verify_audit_chain()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/RBAC__SOC_Realtime
+#graphify/code #graphify/EXTRACTED #community/SOC_Correlation__Router

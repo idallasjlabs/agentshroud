@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/differential_pii_detector.py"
 type: "rationale"
-community: "Community 45"
+community: "Community 46"
 location: "L438"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_45
+  - community/Community_46
 ---
 
 # Run PII detection, returning hits at or above floor.
 
 ## Connections
-- [[._detect_pii()]] - `rationale_for` [EXTRACTED]
+- [[dot-_detect_pii()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_45
+#graphify/rationale #graphify/EXTRACTED #community/Community_46

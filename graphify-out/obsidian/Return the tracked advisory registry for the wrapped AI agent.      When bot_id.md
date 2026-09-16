@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "rationale"
-community: "Community 42"
+community: "Community 66"
 location: "L2253"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_42
+  - community/Community_66
 ---
 
 # Return the tracked advisory registry for the wrapped AI agent.      When bot_id
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_agent_cves()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_42
+#graphify/rationale #graphify/EXTRACTED #community/Community_66

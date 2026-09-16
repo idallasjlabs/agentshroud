@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-data/SKILL.md"
+source_file: "docker/config/hermes/skills/i-bs/SKILL.md"
 type: "document"
-community: "Community 838"
+community: "Community 478"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_838
+  - community/Community_478
 ---
 
 # Role
 
 ## Connections
-- [[Skill Data Validation (DATA-VAL)_1]] - `contains` [EXTRACTED]
+- [[Skill Branding Specialist (BS)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_838
+#graphify/document #graphify/EXTRACTED #community/Community_478

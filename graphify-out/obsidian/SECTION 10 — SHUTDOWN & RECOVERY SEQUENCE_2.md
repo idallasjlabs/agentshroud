@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-sad/SKILL.md"
 type: "document"
-community: "Community 612"
+community: "Community 630"
 location: "L126"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_612
+  - community/Community_630
 ---
 
 # SECTION 10 — SHUTDOWN & RECOVERY SEQUENCE
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[System Audit & Documentation_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_612
+#graphify/document #graphify/EXTRACTED #community/Community_630

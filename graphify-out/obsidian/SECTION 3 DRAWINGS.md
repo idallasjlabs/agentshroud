@@ -1,12 +1,12 @@
 ---
 source_file: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
 type: "document"
-community: "Community 965"
+community: "Community 1010"
 location: "L263"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_965
+  - community/Community_1010
 ---
 
 # SECTION 3: DRAWINGS
@@ -21,4 +21,4 @@ tags:
 - [[FIGURE 5 — Multi-Agent Governance with Isolation]] - `contains` [EXTRACTED]
 - [[FIGURE 6 — Delegated Authority Model]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_965
+#graphify/document #graphify/EXTRACTED #community/Community_1010

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-hdev/SKILL.md"
-type: "document"
-community: "Community 291"
-location: "L8"
+source_file: "gateway/soc/auth.py"
+type: "code"
+community: "Community 153"
+location: "L141"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_291
+  - community/Community_153
 ---
 
 # Role
 
 ## Connections
-- [[Skill Hermes Dev Workflow (HDEV)]] - `contains` [EXTRACTED]
+- [[dot-__init__()_66]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_291
+#graphify/code #graphify/EXTRACTED #community/Community_153

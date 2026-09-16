@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mnemosyne/SKILL.md"
+source_file: "docker/config/hermes/skills/i-mcpm/SKILL.md"
 type: "document"
-community: "Community 960"
-location: "L8"
+community: "Community 880"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_960
+  - community/Community_880
 ---
 
 # Role
 
 ## Connections
-- [[Mnemosyne — Retention Engineer_5]] - `contains` [EXTRACTED]
+- [[Skill MCP Tools Usage (MCP-TOOLS)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_960
+#graphify/document #graphify/EXTRACTED #community/Community_880

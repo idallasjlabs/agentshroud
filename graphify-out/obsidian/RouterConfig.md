@@ -1,47 +1,37 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "Community 32"
+community: "Multi-Agent Router & Chat UI"
 location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_32
+  - community/Multi-Agent_Router__Chat_UI
 ---
 
 # RouterConfig
 
 ## Connections
-- [[.disabled_client()]] - `calls` [EXTRACTED]
-- [[.no_approval_client()]] - `calls` [EXTRACTED]
-- [[.test_invalid_router_url_rejected()]] - `calls` [EXTRACTED]
-- [[.test_invalid_target_url_rejected()]] - `calls` [EXTRACTED]
-- [[.test_router_url_must_be_localhost_or_openclaw()]] - `calls` [EXTRACTED]
-- [[.test_valid_router_url_accepted()]] - `calls` [EXTRACTED]
-- [[.validate_default_url()]] - `method` [EXTRACTED]
-- [[.validate_targets()]] - `method` [EXTRACTED]
-- [[AgentTarget_1]] - `uses` [INFERRED]
-- [[Any_9]] - `uses` [INFERRED]
+- [[dot-disabled_client()]] - `calls` [EXTRACTED]
+- [[dot-no_approval_client()]] - `calls` [EXTRACTED]
+- [[dot-validate_default_url()]] - `method` [EXTRACTED]
+- [[dot-validate_targets()]] - `method` [EXTRACTED]
+- [[AgentTarget]] - `uses` [INFERRED]
+- [[Any_15]] - `uses` [INFERRED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[BotConfig]] - `uses` [INFERRED]
 - [[ForwardError]] - `uses` [INFERRED]
-- [[ForwardRequest_1]] - `uses` [INFERRED]
+- [[ForwardRequest]] - `uses` [INFERRED]
+- [[GatewayConfig_1]] - `uses` [INFERRED]
 - [[GatewayConfig_2]] - `uses` [INFERRED]
-- [[GatewayConfig_4]] - `uses` [INFERRED]
 - [[Multi-agent router configuration]] - `rationale_for` [EXTRACTED]
 - [[MultiAgentRouter]] - `uses` [INFERRED]
-- [[PIISanitizer_2]] - `uses` [INFERRED]
-- [[Path_26]] - `uses` [INFERRED]
+- [[PIISanitizer_1]] - `uses` [INFERRED]
 - [[RouterConfig_1]] - `uses` [INFERRED]
 - [[RouterError]] - `uses` [INFERRED]
-- [[SSHConfig]] - `uses` [INFERRED]
-- [[TestAllExampleConfigsExist]] - `uses` [INFERRED]
-- [[TestConfigValidation]] - `uses` [INFERRED]
+- [[SSHConfig_2]] - `uses` [INFERRED]
 - [[TestMCPProxyConfigLoading]] - `uses` [INFERRED]
 - [[TestMCPResultEndpoint]] - `uses` [INFERRED]
-- [[TestMinimalConfig]] - `uses` [INFERRED]
-- [[TestParanoidConfig]] - `uses` [INFERRED]
-- [[TestRecommendedConfig]] - `uses` [INFERRED]
 - [[TestSSHDisabledEndpoint]] - `uses` [INFERRED]
 - [[TestSSHExec]] - `uses` [INFERRED]
 - [[TestSSHHistory]] - `uses` [INFERRED]
@@ -53,18 +43,17 @@ tags:
 - [[TestSSHWriteFileEndpoint]] - `uses` [INFERRED]
 - [[TestSSHWriteFileLedgerAudit]] - `uses` [INFERRED]
 - [[TestSSHWriteFileShellMetacharacterContentRoundTrip]] - `uses` [INFERRED]
-- [[config.py]] - `contains` [EXTRACTED]
 - [[conftest.py]] - `imports` [EXTRACTED]
 - [[full_pipeline_config()]] - `calls` [EXTRACTED]
+- [[ingest_apiconfig.py]] - `contains` [EXTRACTED]
+- [[ingest_apirouter.py]] - `imports` [EXTRACTED]
 - [[load_config()]] - `calls` [EXTRACTED]
+- [[router()]] - `calls` [EXTRACTED]
 - [[router()_2]] - `calls` [EXTRACTED]
-- [[router()_3]] - `calls` [EXTRACTED]
-- [[router.py]] - `imports` [EXTRACTED]
 - [[router_config()]] - `calls` [EXTRACTED]
 - [[test_config()]] - `calls` [EXTRACTED]
 - [[test_config()_1]] - `calls` [EXTRACTED]
 - [[test_config.py]] - `imports` [EXTRACTED]
-- [[test_config_validation.py]] - `imports` [EXTRACTED]
 - [[test_config_with_ssh()]] - `calls` [EXTRACTED]
 - [[test_config_with_ssh()_1]] - `calls` [EXTRACTED]
 - [[test_hermes_and_openclaw_coexist()]] - `calls` [EXTRACTED]
@@ -79,4 +68,4 @@ tags:
 - [[test_ssh_endpoints.py]] - `imports` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_32
+#graphify/code #graphify/EXTRACTED #community/Multi-Agent_Router__Chat_UI

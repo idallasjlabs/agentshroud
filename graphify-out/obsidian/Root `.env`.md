@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md"
 type: "document"
-community: "Community 808"
+community: "Community 856"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_808
+  - community/Community_856
 ---
 
 # Root `.env`
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Secrets Usage and Collaborator Checklist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_808
+#graphify/document #graphify/EXTRACTED #community/Community_856

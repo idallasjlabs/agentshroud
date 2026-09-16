@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_egress_endpoints.py"
 type: "rationale"
-community: "Community 197"
+community: "Community 116"
 location: "L509"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_197
+  - community/Community_116
 ---
 
 # Returns empty result when scanner_result_history is empty.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_soc_scanners_recent_empty()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_197
+#graphify/rationale #graphify/EXTRACTED #community/Community_116

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-pm/SKILL.md"
+source_file: ".agents/skills/i-crpr/SKILL.md"
 type: "document"
-community: "Community 468"
+community: "Community 615"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_468
+  - community/Community_615
 ---
 
 # Role
 
 ## Connections
-- [[Skill Project Management (PM)_1]] - `contains` [EXTRACTED]
+- [[Skill Create PR with Pre-Flight Audit (CRPR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_468
+#graphify/document #graphify/EXTRACTED #community/Community_615

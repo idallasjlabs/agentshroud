@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-data/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-athena/SKILL.md"
 type: "document"
-community: "Community 843"
-location: "L7"
+community: "Community 781"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_843
+  - community/Community_781
 ---
 
 # Role
 
 ## Connections
-- [[Skill Data Validation (DATA-VAL)_2]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_843
+#graphify/document #graphify/EXTRACTED #community/Community_781

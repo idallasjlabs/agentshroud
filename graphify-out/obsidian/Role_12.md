@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-data/SKILL.md"
+source_file: "docker/config/hermes/skills/i-cicd/SKILL.md"
 type: "document"
-community: "Community 827"
+community: "Community 1135"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_827
+  - community/Community_1135
 ---
 
 # Role
 
 ## Connections
-- [[Skill Data Validation (DATA-VAL)]] - `contains` [EXTRACTED]
+- [[Skill CICD Pipeline Advisor (CICD)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_827
+#graphify/document #graphify/EXTRACTED #community/Community_1135

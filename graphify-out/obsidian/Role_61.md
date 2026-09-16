@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-pca/SKILL.md"
+source_file: ".agents/skills/i-ab/SKILL.md"
 type: "document"
-community: "Community 657"
+community: "Community 614"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_657
+  - community/Community_614
 ---
 
 # Role
 
 ## Connections
-- [[Skill Pre-Change Analysis (PCA)_1]] - `contains` [EXTRACTED]
+- [[Skill Audit Branch (AB) — Merge Regression Detection]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_657
+#graphify/document #graphify/EXTRACTED #community/Community_614

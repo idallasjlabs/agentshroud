@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md"
 type: "document"
-community: "Community 285"
+community: "Community 552"
 location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_285
+  - community/Community_552
 ---
 
 # Revised Assessment: Nothing is Over-Engineered
@@ -18,4 +18,4 @@ tags:
 - [[Seccomp Profiles - CRITICAL ✅]] - `contains` [EXTRACTED]
 - [[Ultra-Conservative Credential Policy - CRITICAL ✅]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_285
+#graphify/document #graphify/EXTRACTED #community/Community_552

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/cron/templates/html-report-instructions.md"
+source_file: "docker/config/hermes/skills/i-bs/SKILL.md"
 type: "document"
-community: "Community 213"
-location: "L84"
+community: "Community 478"
+location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_213
+  - community/Community_478
 ---
 
 # Rules
 
 ## Connections
-- [[Source Verification Policy (MANDATORY)]] - `contains` [EXTRACTED]
+- [[Skill Branding Specialist (BS)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_213
+#graphify/document #graphify/EXTRACTED #community/Community_478

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/audit_store.py"
 type: "rationale"
-community: "Community 258"
+community: "Community 1397"
 location: "L298"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_258
+  - community/Community_1397
 ---
 
 # Return the most recent audit entries (alias for query_events with limit).
 
 ## Connections
-- [[.get_recent_entries()]] - `rationale_for` [EXTRACTED]
+- [[dot-get_recent_entries()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_258
+#graphify/rationale #graphify/EXTRACTED #community/Community_1397
