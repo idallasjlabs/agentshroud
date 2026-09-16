@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_slack_socket_client.py"
+type: "code"
+community: "Community 162"
+location: "L39"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_162
+---
+
+# .test_jitter_stays_within_half_to_full_ceiling()
+
+## Connections
+- [[Jitter scales the wait between 50% and 100% of the ceiling.]] - `rationale_for` [EXTRACTED]
+- [[TestComputeBackoff]] - `method` [EXTRACTED]
+- [[compute_backoff()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_162

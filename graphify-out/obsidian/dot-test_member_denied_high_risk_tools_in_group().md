@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_group_rbac.py"
+type: "code"
+community: "Community 812"
+location: "L273"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_812
+---
+
+# .test_member_denied_high_risk_tools_in_group()
+
+## Connections
+- [[Regular member (non-owner group role) is denied high-risk tools that require app]] - `rationale_for` [EXTRACTED]
+- [[TestMemberGroupContext]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_812

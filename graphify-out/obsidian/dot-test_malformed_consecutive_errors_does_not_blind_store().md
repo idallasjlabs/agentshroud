@@ -1,0 +1,21 @@
+---
+source_file: "gateway/tests/test_cron_state_monitor.py"
+type: "code"
+community: "Community 90"
+location: "L206"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_90
+---
+
+# .test_malformed_consecutive_errors_does_not_blind_store()
+
+## Connections
+- [[CronStateMonitor]] - `calls` [EXTRACTED]
+- [[TestAdversarial]] - `method` [EXTRACTED]
+- [[_DispatchSpy]] - `calls` [EXTRACTED]
+- [[_oc_job()]] - `calls` [EXTRACTED]
+- [[_openclaw_store()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_90

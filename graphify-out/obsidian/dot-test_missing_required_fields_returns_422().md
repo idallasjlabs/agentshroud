@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_channel_ownership.py"
+type: "code"
+community: "Community 235"
+location: "L111"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_235
+---
+
+# .test_missing_required_fields_returns_422()
+
+## Connections
+- [[Missing 'subject' or 'body' returns 422.]] - `rationale_for` [EXTRACTED]
+- [[TestEmailSend]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_235

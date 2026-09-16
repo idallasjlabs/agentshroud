@@ -1,0 +1,17 @@
+---
+source_file: "gateway/tests/test_telegram_proxy_outbound.py"
+type: "code"
+community: "Community 343"
+location: "L4130"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_343
+---
+
+# .test_looks_like_filename_reference_rejects_real_domains()
+
+## Connections
+- [[TestOutboundClassifierHelpers]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_343

@@ -1,0 +1,17 @@
+---
+source_file: "gateway/tests/test_round2_hardening.py"
+type: "code"
+community: "Community 48"
+location: "L175"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_48
+---
+
+# .test_keyvault_instantiated_and_seeded_in_lifespan()
+
+## Connections
+- [[TestKeyVaultWired]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_48

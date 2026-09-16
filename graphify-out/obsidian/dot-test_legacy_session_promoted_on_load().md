@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_session_manager.py"
+type: "code"
+community: "Community 520"
+location: "L263"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_520
+---
+
+# .test_legacy_session_promoted_on_load()
+
+## Connections
+- [[Existing plain user_id keys (no separator) are promoted to useropenclaw.]] - `rationale_for` [EXTRACTED]
+- [[TestMultiBotIsolation]] - `method` [EXTRACTED]
+- [[UserSessionManager]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_520

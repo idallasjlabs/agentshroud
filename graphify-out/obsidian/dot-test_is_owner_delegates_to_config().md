@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_soc_realtime_coverage.py"
+type: "code"
+community: "Ingest API & RBAC Core"
+location: "L197"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Ingest_API__RBAC_Core
+---
+
+# .test_is_owner_delegates_to_config()
+
+## Connections
+- [[SCLCaller_1]] - `calls` [EXTRACTED]
+- [[TestSCLCaller]] - `method` [EXTRACTED]
+- [[_FakeRBAC]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Ingest_API__RBAC_Core

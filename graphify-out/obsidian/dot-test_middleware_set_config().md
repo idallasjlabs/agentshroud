@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_tool_result_pii.py"
+type: "code"
+community: "PII Sanitizer & Redaction"
+location: "L310"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/PII_Sanitizer__Redaction
+---
+
+# .test_middleware_set_config()
+
+## Connections
+- [[MiddlewareManager]] - `calls` [EXTRACTED]
+- [[Test middleware configuration setup]] - `rationale_for` [EXTRACTED]
+- [[TestMiddlewareIntegration]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer__Redaction

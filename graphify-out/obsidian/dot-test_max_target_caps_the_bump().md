@@ -1,0 +1,20 @@
+---
+source_file: "gateway/tests/test_auto_remediate_cves.py"
+type: "code"
+community: "Community 274"
+location: "L125"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_274
+---
+
+# .test_max_target_caps_the_bump()
+
+## Connections
+- [[An operator may cap how far forward an unattended job may jump.]] - `rationale_for` [EXTRACTED]
+- [[TestPlanRemediation]] - `method` [EXTRACTED]
+- [[_entry()]] - `calls` [EXTRACTED]
+- [[plan_remediation()]] - `calls` [INFERRED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_274

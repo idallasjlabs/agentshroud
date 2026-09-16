@@ -1,0 +1,20 @@
+---
+source_file: "gateway/tests/test_egress_enforce.py"
+type: "code"
+community: "Community 52"
+location: "L237"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_52
+---
+
+# .test_logging_differences_by_mode()
+
+## Connections
+- [[EgressFilter]] - `calls` [EXTRACTED]
+- [[EgressFilterConfig]] - `calls` [EXTRACTED]
+- [[Test that logging differs between enforce and monitor modes.]] - `rationale_for` [EXTRACTED]
+- [[TestEgressFilterEnforcement]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_52

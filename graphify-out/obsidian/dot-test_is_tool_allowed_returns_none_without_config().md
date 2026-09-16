@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_progressive_trust_integration.py"
+type: "code"
+community: "Community 115"
+location: "L109"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_115
+---
+
+# .test_is_tool_allowed_returns_none_without_config()
+
+## Connections
+- [[TestBackwardCompat]] - `method` [EXTRACTED]
+- [[_make_tm()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_115
