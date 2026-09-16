@@ -1,17 +1,17 @@
 ---
-source_file: "docs/governance/BRANCH_PROTECTION.md"
+source_file: "docs/security/cve-mitigation-matrix.md"
 type: "document"
-community: "Community 1096"
-location: "L39"
+community: "Community 210"
+location: "L487"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1096
+  - community/Community_210
 ---
 
 # Verification
 
 ## Connections
-- [[GitHub Branch Protection — `main`]] - `contains` [EXTRACTED]
+- [[AgentShroud™ CVE Mitigation Matrix]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1096
+#graphify/document #graphify/EXTRACTED #community/Community_210

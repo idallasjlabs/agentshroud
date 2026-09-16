@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "Config Validation & Router"
-location: "L759"
+community: "Approval Routing & Event Bus"
+location: "L783"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Config_Validation__Router
+  - community/Approval_Routing__Event_Bus
 ---
 
 # Verify all referenced example configs exist.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAllExampleConfigsExist]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Config_Validation__Router
+#graphify/rationale #graphify/EXTRACTED #community/Approval_Routing__Event_Bus

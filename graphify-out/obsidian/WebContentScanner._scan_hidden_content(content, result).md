@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md"
 type: "document"
-community: "Community 627"
+community: "Community 648"
 location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_627
+  - community/Community_648
 ---
 
 # WebContentScanner._scan_hidden_content(content, result)
 
 ## Connections
-- [[Function Details_17]] - `contains` [EXTRACTED]
+- [[Function Details_26]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_627
+#graphify/document #graphify/EXTRACTED #community/Community_648

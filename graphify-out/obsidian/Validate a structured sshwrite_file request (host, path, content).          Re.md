@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ssh_proxy/proxy.py"
 type: "rationale"
-community: "Community 64"
+community: "Approval Queue (WebSocket)"
 location: "L206"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_64
+  - community/Approval_Queue_WebSocket
 ---
 
 # Validate a structured /ssh/write_file request (host, path, content).          Re
 
 ## Connections
-- [[.validate_write_file()]] - `rationale_for` [EXTRACTED]
+- [[dot-validate_write_file()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_64
+#graphify/rationale #graphify/EXTRACTED #community/Approval_Queue_WebSocket

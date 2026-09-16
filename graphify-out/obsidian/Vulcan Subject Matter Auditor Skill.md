@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-vulcan/SKILL.md"
 type: "document"
-community: "Community 651"
+community: "Community 672"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_651
+  - community/Community_672
 ---
 
 # Vulcan Subject Matter Auditor Skill
@@ -15,4 +15,4 @@ tags:
 - [[Socrates — Dialogue Architect_6]] - `references` [EXTRACTED]
 - [[Vulcan README]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_651
+#graphify/document #graphify/EXTRACTED #community/Community_672

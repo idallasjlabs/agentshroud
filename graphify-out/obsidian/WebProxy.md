@@ -1,19 +1,90 @@
 ---
-source_file: "gateway/proxy/http_proxy.py"
+source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "Community 22"
-location: "L111"
+community: "Egress Filter & HTTP Proxy"
+location: "L140"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_22
+  - community/Egress_Filter__HTTP_Proxy
 ---
 
 # WebProxy
 
 ## Connections
-- [[.__init__()_23]] - `references` [EXTRACTED]
+- [[dot-__init__()_154]] - `method` [EXTRACTED]
+- [[dot-_audit()_1]] - `method` [EXTRACTED]
+- [[dot-allowlist_proxy()]] - `calls` [EXTRACTED]
+- [[dot-check_request()]] - `method` [EXTRACTED]
+- [[dot-get_stats()_19]] - `method` [EXTRACTED]
+- [[dot-scan_response()_2]] - `method` [EXTRACTED]
+- [[dot-setUp()_1]] - `calls` [EXTRACTED]
+- [[dot-test_custom_denylist()_1]] - `calls` [EXTRACTED]
+- [[dot-test_custom_domain_size_limit()]] - `calls` [EXTRACTED]
+- [[dot-test_different_domains_independent()]] - `calls` [EXTRACTED]
+- [[dot-test_no_audit_chain_no_crash()]] - `calls` [EXTRACTED]
+- [[dot-test_rate_limit_blocks_excess()]] - `calls` [EXTRACTED]
+- [[EgressFilter_2]] - `uses` [INFERRED]
+- [[HTTP web traffic proxy for OpenClaw.      Intercepts all outbound web requests,]] - `rationale_for` [EXTRACTED]
+- [[HTTPConnectProxy]] - `uses` [INFERRED]
+- [[HTTPConnectProxy_1]] - `uses` [INFERRED]
+- [[MockDNSVerdict]] - `uses` [INFERRED]
+- [[MockEgressChannel]] - `uses` [INFERRED]
+- [[MockEgressEvent]] - `uses` [INFERRED]
+- [[MockThreatLevel]] - `uses` [INFERRED]
+- [[MockURLResult]] - `uses` [INFERRED]
+- [[RateLimiter_1]] - `calls` [EXTRACTED]
+- [[StreamReader_3]] - `uses` [INFERRED]
+- [[StreamReader_2]] - `uses` [INFERRED]
+- [[StreamWriter_2]] - `uses` [INFERRED]
+- [[TestAllowlistMode]] - `uses` [INFERRED]
+- [[TestAuditChain_1]] - `uses` [INFERRED]
+- [[TestContentTypeFiltering]] - `uses` [INFERRED]
+- [[TestDataExfiltration]] - `uses` [INFERRED]
+- [[TestDomainDenylist]] - `uses` [INFERRED]
+- [[TestEncodedPayloads]] - `uses` [INFERRED]
+- [[TestHiddenContent]] - `uses` [INFERRED]
+- [[TestIsDomainAllowed]] - `uses` [INFERRED]
+- [[TestPIIDetection_2]] - `uses` [INFERRED]
+- [[TestPassthroughMode]] - `uses` [INFERRED]
+- [[TestPromptInjectionDetection]] - `uses` [INFERRED]
+- [[TestRateLimiting]] - `uses` [INFERRED]
+- [[TestResponseSizeLimits]] - `uses` [INFERRED]
+- [[TestSSRFBlocking]] - `uses` [INFERRED]
+- [[TestStats_1]] - `uses` [INFERRED]
+- [[TestWebProxyConfig]] - `uses` [INFERRED]
+- [[TestWebProxySecurityIntegration]] - `uses` [INFERRED]
+- [[TestZeroWidthAttacks]] - `uses` [INFERRED]
+- [[URLAnalyzer_1]] - `uses` [INFERRED]
+- [[WebContentScanner]] - `uses` [INFERRED]
 - [[WebProxy_1]] - `uses` [INFERRED]
 - [[WebProxyConfig]] - `uses` [INFERRED]
+- [[_CloseRaisesTargetWriter]] - `uses` [INFERRED]
+- [[_CloseRaisesWriter]] - `uses` [INFERRED]
+- [[_DummyTargetWriter_1]] - `uses` [INFERRED]
+- [[_DummyTargetWriter]] - `uses` [INFERRED]
+- [[_HeaderTimeoutReader]] - `uses` [INFERRED]
+- [[_MockWriter]] - `uses` [INFERRED]
+- [[_MockWriter_1]] - `uses` [INFERRED]
+- [[_SocketTransportWriter]] - `uses` [INFERRED]
+- [[_TimeoutReader]] - `uses` [INFERRED]
+- [[_allowlist_proxy()]] - `calls` [EXTRACTED]
+- [[http_proxy.py]] - `imports` [EXTRACTED]
+- [[lifespan()]] - `calls` [EXTRACTED]
+- [[lifespan.py]] - `imports` [EXTRACTED]
+- [[passthrough_proxy()]] - `calls` [EXTRACTED]
+- [[proxy()_1]] - `calls` [EXTRACTED]
+- [[test_blocked_domain_is_tracked_in_recent()]] - `calls` [EXTRACTED]
+- [[test_connect_blocked_domain_returns_403()]] - `calls` [EXTRACTED]
+- [[test_connect_denied_by_egress_filter_returns_403()]] - `calls` [EXTRACTED]
+- [[test_connect_system_bypass_domain_skips_policy_checks()]] - `calls` [EXTRACTED]
+- [[test_connect_unknown_domain_can_be_allowed_by_interactive_egress()]] - `calls` [EXTRACTED]
+- [[test_http_proxy.py]] - `imports` [EXTRACTED]
+- [[test_http_proxy_coverage.py]] - `imports` [EXTRACTED]
+- [[test_proxy_created_with_custom_web_proxy()]] - `calls` [EXTRACTED]
+- [[test_telegram_api_blocked_in_connect_proxy()]] - `calls` [EXTRACTED]
+- [[test_web_proxy.py]] - `imports` [EXTRACTED]
+- [[test_web_proxy_security.py]] - `imports` [EXTRACTED]
+- [[web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_22
+#graphify/code #graphify/INFERRED #community/Egress_Filter__HTTP_Proxy

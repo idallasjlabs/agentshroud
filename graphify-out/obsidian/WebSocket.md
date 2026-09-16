@@ -1,19 +1,31 @@
 ---
-source_file: "voice_gateway/server.py"
+source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Community 114"
-location: "L423"
+community: "Ingest API & RBAC Core"
+location: "L4745"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_114
+  - graphify/INFERRED
+  - community/Ingest_API__RBAC_Core
 ---
 
 # WebSocket
 
 ## Connections
-- [[_keepalive()]] - `references` [EXTRACTED]
-- [[_send_state()]] - `references` [EXTRACTED]
-- [[voice_endpoint()]] - `references` [EXTRACTED]
+- [[Action]] - `uses` [INFERRED]
+- [[ApprovalMode]] - `uses` [INFERRED]
+- [[ApprovalRequest_2]] - `uses` [INFERRED]
+- [[AuditExportConfig]] - `uses` [INFERRED]
+- [[AuditExporter]] - `uses` [INFERRED]
+- [[LedgerEntry]] - `uses` [INFERRED]
+- [[LedgerQueryResponse]] - `uses` [INFERRED]
+- [[MiddlewareManager]] - `uses` [INFERRED]
+- [[Resource]] - `uses` [INFERRED]
+- [[Role_1]] - `uses` [INFERRED]
+- [[SSHExecRequest]] - `uses` [INFERRED]
+- [[SSHExecResponse]] - `uses` [INFERRED]
+- [[SSHWriteFileRequest]] - `uses` [INFERRED]
+- [[SSHWriteFileResponse]] - `uses` [INFERRED]
+- [[slack_ws_relay()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_114
+#graphify/code #graphify/INFERRED #community/Ingest_API__RBAC_Core

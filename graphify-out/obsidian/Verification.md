@@ -1,18 +1,17 @@
 ---
-source_file: "docker/DOCKER-VPN-NETWORKING.md"
+source_file: "docs/governance/BRANCH_PROTECTION.md"
 type: "document"
-community: "Community 710"
-location: "L93"
+community: "Community 1157"
+location: "L39"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_710
+  - community/Community_1157
 ---
 
 # Verification
 
 ## Connections
-- [[Docker Desktop Network Settings — Cisco AnyConnect VPN Compatibility]] - `contains` [EXTRACTED]
-- [[With VPN connected]] - `contains` [EXTRACTED]
+- [[GitHub Branch Protection — `main`]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_710
+#graphify/document #graphify/EXTRACTED #community/Community_1157

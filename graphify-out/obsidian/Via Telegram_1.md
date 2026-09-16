@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/IDENTITY.md"
+source_file: "docker/SYSTEM-INSTRUCTIONS-SECURITY.md"
 type: "document"
-community: "Community 830"
-location: "L49"
+community: "Community 351"
+location: "L304"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_830
+  - community/Community_351
 ---
 
-# Via Telegram:
+# Via Telegram
 
 ## Connections
-- [[💬 Communication Flow]] - `contains` [EXTRACTED]
+- [[💬 Example Conversations]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_830
+#graphify/document #graphify/EXTRACTED #community/Community_351

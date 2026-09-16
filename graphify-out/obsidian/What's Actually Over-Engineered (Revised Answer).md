@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md"
 type: "document"
-community: "Community 285"
+community: "Community 552"
 location: "L230"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_285
+  - community/Community_552
 ---
 
 # What's Actually Over-Engineered? (Revised Answer)
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud Security Value Proposition - REVISED]] - `contains` [EXTRACTED]
 - [[NOTHING is over-engineered. Everything has a purpose.]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_285
+#graphify/document #graphify/EXTRACTED #community/Community_552

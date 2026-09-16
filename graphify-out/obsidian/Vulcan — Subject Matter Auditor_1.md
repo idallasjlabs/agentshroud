@@ -1,24 +1,20 @@
 ---
-source_file: ".agents/skills/i-vulcan/SKILL.md"
+source_file: "docker/config/hermes/skills/i-vulcan/README.md"
 type: "document"
-community: "Community 880"
-location: "L6"
+community: "Community 1254"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_880
+  - community/Community_1254
 ---
 
 # Vulcan — Subject Matter Auditor
 
 ## Connections
-- [[Input Requirements_9]] - `contains` [EXTRACTED]
-- [[Output Format_12]] - `contains` [EXTRACTED]
-- [[Persona_7]] - `contains` [EXTRACTED]
-- [[Quality Checklist_8]] - `contains` [EXTRACTED]
-- [[Role_39]] - `contains` [EXTRACTED]
-- [[SKILL_63]] - `contains` [EXTRACTED]
-- [[System Prompt_7]] - `contains` [EXTRACTED]
-- [[User Prompt Template_3]] - `contains` [EXTRACTED]
+- [[Purpose_72]] - `contains` [EXTRACTED]
+- [[Related Skills_63]] - `contains` [EXTRACTED]
+- [[Usage_67]] - `contains` [EXTRACTED]
+- [[hermesskillsi-vulcanREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_880
+#graphify/document #graphify/EXTRACTED #community/Community_1254

@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
 type: "rationale"
-community: "Community 138"
+community: "Community 135"
 location: "L114"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_138
+  - community/Community_135
 ---
 
 # Validate URL against allowlist/blocklist          Security: This is the primary
 
 ## Connections
-- [[._validate_url()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-_validate_url()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_138
+#graphify/rationale #graphify/EXTRACTED #community/Community_135

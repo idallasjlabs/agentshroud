@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/mcp_audit.py"
 type: "rationale"
-community: "Community 206"
+community: "Community 218"
 location: "L204"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_206
+  - community/Community_218
 ---
 
 # Verify integrity of the retained MCP audit hash-chain window.          Anchors a
 
 ## Connections
-- [[.verify_chain()]] - `rationale_for` [EXTRACTED]
+- [[dot-verify_chain()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_206
+#graphify/rationale #graphify/EXTRACTED #community/Community_218

@@ -1,17 +1,17 @@
 ---
-source_file: ".github/agents/test-augmenter.agent.md"
+source_file: ".github/agents/validation-runner.agent.md"
 type: "document"
-community: "Community 488"
-location: "L45"
+community: "Community 346"
+location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_488
+  - community/Community_346
 ---
 
 # What You CANNOT Do
 
 ## Connections
-- [[Test Augmentation Specialist]] - `contains` [EXTRACTED]
+- [[Validation Runner Specialist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_488
+#graphify/document #graphify/EXTRACTED #community/Community_346

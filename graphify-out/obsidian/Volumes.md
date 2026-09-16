@@ -1,21 +1,17 @@
 ---
-source_file: "docs/vault/06 - Containers & Services/volumes.md"
+source_file: "docs/vault/06 - Containers & Services/agentshroud-bot.md"
 type: "document"
-community: "Community 339"
-location: "L1"
+community: "Community 224"
+location: "L44"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_339
+  - community/Community_224
 ---
 
-# volumes.md
+# Volumes
 
 ## Connections
-- [[Docker Volumes]] - `contains` [EXTRACTED]
-- [[agentshroud-bot]] - `references` [EXTRACTED]
-- [[agentshroud-gateway]] - `references` [EXTRACTED]
-- [[ledger.py_1]] - `references` [INFERRED]
-- [[playwright_1]] - `references` [EXTRACTED]
+- [[agentshroud-bot_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_339
+#graphify/document #graphify/EXTRACTED #community/Community_224

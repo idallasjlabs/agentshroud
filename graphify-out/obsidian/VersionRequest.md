@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/version_routes.py"
 type: "code"
-community: "Community 59"
+community: "Community 55"
 location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_59
+  - community/Community_55
 ---
 
 # VersionRequest
@@ -20,4 +20,4 @@ tags:
 - [[upgrade_version()]] - `references` [EXTRACTED]
 - [[version_routes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_59
+#graphify/code #graphify/EXTRACTED #community/Community_55

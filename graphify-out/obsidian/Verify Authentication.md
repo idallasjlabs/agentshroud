@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-mcpm-auth-reset/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "Community 877"
+community: "Community 262"
 location: "L101"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_877
+  - community/Community_262
 ---
 
 # Verify Authentication
@@ -15,4 +15,4 @@ tags:
 - [[2. Atlassian MCP Authentication Reset]] - `contains` [EXTRACTED]
 - [[3. AWS API MCP Authentication Reset]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_877
+#graphify/document #graphify/EXTRACTED #community/Community_262

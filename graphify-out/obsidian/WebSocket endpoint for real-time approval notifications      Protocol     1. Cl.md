@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/approval.py"
 type: "rationale"
-community: "Community 21"
+community: "Community 888"
 location: "L120"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_21
+  - community/Community_888
 ---
 
 # WebSocket endpoint for real-time approval notifications      Protocol:     1. Cl
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[approval_websocket()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_21
+#graphify/rationale #graphify/EXTRACTED #community/Community_888

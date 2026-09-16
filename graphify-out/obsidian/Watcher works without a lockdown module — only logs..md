@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_falco_watcher.py"
 type: "rationale"
-community: "Community 501"
+community: "Community 98"
 location: "L158"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_501
+  - community/Community_98
 ---
 
 # Watcher works without a lockdown module — only logs.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_no_progressive_lockdown_configured()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_501
+#graphify/rationale #graphify/EXTRACTED #community/Community_98

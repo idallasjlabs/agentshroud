@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/WORKSPACE_USAGE.md"
+source_file: "docs/architecture/IDENTITY.md"
 type: "document"
-community: "Community 163"
-location: "L316"
+community: "Community 872"
+location: "L49"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_163
+  - community/Community_872
 ---
 
-# Via Telegram
+# Via Telegram:
 
 ## Connections
-- [[Integration with Bot]] - `contains` [EXTRACTED]
+- [[💬 Communication Flow]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_163
+#graphify/document #graphify/EXTRACTED #community/Community_872

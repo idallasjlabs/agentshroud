@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/network_validator.py"
 type: "rationale"
-community: "Community 66"
+community: "Community 855"
 location: "L434"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_66
+  - community/Community_855
 ---
 
 # Validate runtime network configuration using Docker API.
 
 ## Connections
-- [[.validate_runtime_configuration()]] - `rationale_for` [EXTRACTED]
+- [[dot-validate_runtime_configuration()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_66
+#graphify/rationale #graphify/EXTRACTED #community/Community_855

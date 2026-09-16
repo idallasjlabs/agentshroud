@@ -1,20 +1,16 @@
 ---
-source_file: "gateway/security/trust_manager.py"
+source_file: ""
 type: "code"
-community: "Progressive Trust"
-location: "L221"
+community: "Cross-Bot Trust & A2A Governance"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Progressive_Trust
+  - graphify/EXTRACTED
+  - community/Cross-Bot_Trust__A2A_Governance
 ---
 
 # ViolationType
 
 ## Connections
-- [[.record_violation()]] - `references` [EXTRACTED]
-- [[ProgressiveTrustConfig]] - `uses` [INFERRED]
-- [[TrustLevel]] - `uses` [INFERRED]
-- [[ViolationType]] - `uses` [INFERRED]
+- [[dot-record_violation()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Progressive_Trust
+#graphify/code #graphify/EXTRACTED #community/Cross-Bot_Trust__A2A_Governance
