@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md"
 type: "document"
-community: "Community 313"
+community: "Community 318"
 location: "L229"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_313
+  - community/Community_318
 ---
 
 # 🎯 Real-World Scenarios
@@ -18,4 +18,4 @@ tags:
 - [[Scenario 3 You Want Bot to Configure Something]] - `contains` [EXTRACTED]
 - [[Scenario 4 Telegram Account Compromised]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_313
+#graphify/document #graphify/EXTRACTED #community/Community_318

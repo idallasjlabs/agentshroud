@@ -1,26 +1,26 @@
 ---
 source_file: "docs/planning/RELEASE-PLAN.md"
 type: "document"
-community: "Community 362"
+community: "Community 250"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_362
+  - community/Community_250
 ---
 
 # 🛡️ AgentShroud Release Plan
 
 ## Connections
 - [[Current Execution Tracker (2026-03-14)]] - `contains` [EXTRACTED]
-- [[Dependencies_18]] - `contains` [EXTRACTED]
-- [[Features_2]] - `contains` [EXTRACTED]
-- [[Features_3]] - `contains` [EXTRACTED]
+- [[Dependencies]] - `contains` [EXTRACTED]
+- [[Features_1]] - `contains` [EXTRACTED]
+- [[Features_4]] - `contains` [EXTRACTED]
 - [[Milestones]] - `contains` [EXTRACTED]
 - [[RELEASE-PLAN]] - `contains` [EXTRACTED]
 - [[Risk Register]] - `contains` [EXTRACTED]
-- [[Success Criteria_2]] - `contains` [EXTRACTED]
-- [[Summary_5]] - `contains` [EXTRACTED]
+- [[Success Criteria_1]] - `contains` [EXTRACTED]
+- [[Summary_10]] - `contains` [EXTRACTED]
 - [[v0.8.0 Watchtower — Security Fixes + Module Wiring (104 items)]] - `contains` [EXTRACTED]
 - [[v0.8.0-release-plan]] - `contains` [EXTRACTED]
 - [[v0.9.0 Sentinel — Data Isolation + SOC + Remediation (37 items)]] - `contains` [EXTRACTED]
@@ -31,4 +31,4 @@ tags:
 - [[v1.2.0 Local LLMs — Offline Model Support (4 items)]] - `contains` [EXTRACTED]
 - [[v1.3.0 — Platform Expansion (53 items)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_362
+#graphify/document #graphify/EXTRACTED #community/Community_250

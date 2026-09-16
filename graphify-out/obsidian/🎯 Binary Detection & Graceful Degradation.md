@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-02-24-b.md"
 type: "document"
-community: "Community 1112"
+community: "Community 1167"
 location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1112
+  - community/Community_1167
 ---
 
 # 🎯 **Binary Detection & Graceful Degradation**
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[1. Accomplishments This Phase_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1112
+#graphify/document #graphify/EXTRACTED #community/Community_1167

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.2/blue-team-assessment-v1.2.0.md"
 type: "document"
-community: "Community 1066"
+community: "Community 1118"
 location: "L94"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1066
+  - community/Community_1118
 ---
 
 # §4 — Hermes-Specific Section (NEW — first assessment)
@@ -20,4 +20,4 @@ tags:
 - [[4.6 Cross-bot session isolation (FINDING BT-H1 — FIXED IN THIS PR)]] - `contains` [EXTRACTED]
 - [[AgentShroud v1.2.0 — Blue Team Security Assessment]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1066
+#graphify/document #graphify/EXTRACTED #community/Community_1118

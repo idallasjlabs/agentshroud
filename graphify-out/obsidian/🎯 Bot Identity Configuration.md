@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/IDENTITY.md"
 type: "document"
-community: "Community 830"
+community: "Community 872"
 location: "L64"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_830
+  - community/Community_872
 ---
 
 # 🎯 Bot Identity Configuration
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Identity Reference - AgentShroud System]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_830
+#graphify/document #graphify/EXTRACTED #community/Community_872

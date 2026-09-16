@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/APPLE-SERVICES-SETUP.md"
 type: "document"
-community: "Community 332"
+community: "Community 553"
 location: "L94"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_332
+  - community/Community_553
 ---
 
 # 🤖 Bot Integration Plan
@@ -17,4 +17,4 @@ tags:
 - [[Phase 2 Calendar]] - `contains` [EXTRACTED]
 - [[Phase 3 Contacts]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_332
+#graphify/document #graphify/EXTRACTED #community/Community_553

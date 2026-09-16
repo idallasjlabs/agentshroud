@@ -1,17 +1,17 @@
 ---
 source_file: "branding/QUICK-REFERENCE.md"
 type: "document"
-community: "Community 551"
+community: "Community 567"
 location: "L69"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_551
+  - community/Community_567
 ---
 
 # ❌ Don't
 
 ## Connections
-- [[Logo Usage Rules]] - `contains` [EXTRACTED]
+- [[Logo Usage Rules_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_551
+#graphify/document #graphify/EXTRACTED #community/Community_567

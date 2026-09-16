@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/RELEASE-PLAN.md"
 type: "document"
-community: "Community 362"
+community: "Community 952"
 location: "L128"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_362
+  - community/Community_952
 ---
 
 # 🟡 Steve Hay Remediation (4 items)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[v0.9.0 Sentinel — Data Isolation + SOC + Remediation (37 items)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_362
+#graphify/document #graphify/EXTRACTED #community/Community_952

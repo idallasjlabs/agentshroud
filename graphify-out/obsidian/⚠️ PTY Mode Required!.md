@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/coding-agent/SKILL.md"
 type: "document"
-community: "Community 319"
+community: "Community 327"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_319
+  - community/Community_327
 ---
 
 # ⚠️ PTY Mode Required!
@@ -16,4 +16,4 @@ tags:
 - [[Coding Agent (bash-first)]] - `contains` [EXTRACTED]
 - [[Process Tool Actions (for background sessions)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_319
+#graphify/document #graphify/EXTRACTED #community/Community_327

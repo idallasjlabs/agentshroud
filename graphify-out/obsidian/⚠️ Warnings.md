@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/enforcement-audit-v0.7.0.md"
 type: "document"
-community: "Community 185"
+community: "Community 123"
 location: "L72"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_185
+  - community/Community_123
 ---
 
 # ⚠️ Warnings
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[P2 — Infrastructure (1010 ✅)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_185
+#graphify/document #graphify/EXTRACTED #community/Community_123

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md"
 type: "document"
-community: "Community 212"
+community: "Community 216"
 location: "L254"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_212
+  - community/Community_216
 ---
 
 # ❌ Currently Missing (Would Break Read-Only)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Current Docker Configuration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_212
+#graphify/document #graphify/EXTRACTED #community/Community_216

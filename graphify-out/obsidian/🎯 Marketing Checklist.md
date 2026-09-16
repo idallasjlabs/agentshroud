@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/PUBLISH-TO-CLAWHUB.md"
 type: "document"
-community: "Community 1324"
+community: "Community 700"
 location: "L312"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1324
+  - community/Community_700
 ---
 
 # 🎯 Marketing Checklist
@@ -17,4 +17,4 @@ tags:
 - [[Publish SecureBrowser to ClawHub - Step-by-Step Guide]] - `contains` [EXTRACTED]
 - [[Week 1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1324
+#graphify/document #graphify/EXTRACTED #community/Community_700

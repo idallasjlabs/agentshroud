@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-02-24-final.md"
 type: "document"
-community: "Community 1333"
+community: "Community 1389"
 location: "L209"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1333
+  - community/Community_1389
 ---
 
 # 🎯 **Immediate Actions (Next 2 Weeks)**
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[5. Strategic Recommendations]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1333
+#graphify/document #graphify/EXTRACTED #community/Community_1389

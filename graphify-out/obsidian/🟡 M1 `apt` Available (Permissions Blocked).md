@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/container-security-audit-v0.8.0.md"
 type: "document"
-community: "Community 513"
+community: "Community 524"
 location: "L179"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_513
+  - community/Community_524
 ---
 
 # 🟡 M1: `apt` Available (Permissions Blocked)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Findings & Mitigations]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_513
+#graphify/document #graphify/EXTRACTED #community/Community_524

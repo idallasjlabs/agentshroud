@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bot-capabilities.md"
 type: "document"
-community: "Community 743"
+community: "Community 775"
 location: "L142"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_743
+  - community/Community_775
 ---
 
 # 🟢 Console Commands (ALWAYS display)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Security Rules (Ultra-Conservative)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_743
+#graphify/document #graphify/EXTRACTED #community/Community_775

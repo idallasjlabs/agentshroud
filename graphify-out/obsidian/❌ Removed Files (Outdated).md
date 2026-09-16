@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md"
 type: "document"
-community: "Community 586"
+community: "Community 604"
 location: "L210"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_586
+  - community/Community_604
 ---
 
 # ❌ Removed Files (Outdated)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Current Files Status]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_586
+#graphify/document #graphify/EXTRACTED #community/Community_604

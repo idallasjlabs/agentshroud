@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/WEB_CONTROL_CENTER_SUMMARY.md"
 type: "document"
-community: "Community 530"
+community: "Community 541"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_530
+  - community/Community_541
 ---
 
 # 🚀 What Was Built
@@ -17,4 +17,4 @@ tags:
 - [[3. Main Dashboard Template (`gatewaywebtemplatesdashboard.html`)]] - `contains` [EXTRACTED]
 - [[AgentShroud Web Control Center - Implementation Summary]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_530
+#graphify/document #graphify/EXTRACTED #community/Community_541
