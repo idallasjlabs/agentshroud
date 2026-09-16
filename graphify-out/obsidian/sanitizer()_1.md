@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_e2e_proxy.py"
+source_file: "gateway/tests/test_filter_xml_blocks.py"
 type: "code"
-community: "Community 28"
-location: "L47"
+community: "Community 127"
+location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_28
+  - community/Community_127
 ---
 
 # sanitizer()
 
 ## Connections
+- [[PIIConfig_2]] - `calls` [EXTRACTED]
 - [[PIISanitizer]] - `calls` [EXTRACTED]
-- [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
+- [[test_filter_xml_blocks.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_28
+#graphify/code #graphify/EXTRACTED #community/Community_127

@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/stt.py"
 type: "code"
-community: "Community 737"
+community: "Community 717"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_737
+  - community/Community_717
 ---
 
 # stt.py
@@ -22,4 +22,4 @@ tags:
 - [[test_voice_stt_model_ab.py]] - `imports` [EXTRACTED]
 - [[transcribe()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_737
+#graphify/code #graphify/EXTRACTED #community/Community_717

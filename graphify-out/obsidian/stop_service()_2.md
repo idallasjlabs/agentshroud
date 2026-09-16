@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/web/api.py"
+source_file: "gateway/cli/main.py"
 type: "code"
-community: "Community 37"
-location: "L318"
+community: "Community 84"
+location: "L229"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_37
+  - community/Community_84
 ---
 
 # stop_service()
 
 ## Connections
-- [[Stop a specific service container.]] - `rationale_for` [EXTRACTED]
-- [[_get_engine()]] - `calls` [EXTRACTED]
-- [[_validate_service_name()]] - `calls` [EXTRACTED]
-- [[api.py]] - `contains` [EXTRACTED]
+- [[Stop a service container.]] - `rationale_for` [EXTRACTED]
+- [[_output()]] - `calls` [EXTRACTED]
+- [[climain.py]] - `contains` [EXTRACTED]
+- [[get()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_37
+#graphify/code #graphify/EXTRACTED #community/Community_84

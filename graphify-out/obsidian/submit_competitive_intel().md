@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Community 105"
+community: "Runtime Security Comparison & Intel Report"
 location: "L1141"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_105
+  - community/Runtime_Security_Comparison__Intel_Report
 ---
 
 # submit_competitive_intel()
@@ -20,4 +20,4 @@ tags:
 - [[_intel_verifier()]] - `calls` [EXTRACTED]
 - [[api.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_105
+#graphify/code #graphify/EXTRACTED #community/Runtime_Security_Comparison__Intel_Report

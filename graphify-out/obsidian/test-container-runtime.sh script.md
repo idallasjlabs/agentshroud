@@ -1,19 +1,19 @@
 ---
 source_file: "scripts/smoke.d/test-container-runtime.sh"
 type: "code"
-community: "Community 1106"
+community: "Community 1162"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1106
+  - community/Community_1162
 ---
 
 # test-container-runtime.sh script
 
 ## Connections
-- [[check()_2]] - `calls` [EXTRACTED]
+- [[check()]] - `calls` [EXTRACTED]
 - [[make_fake_bin()]] - `calls` [EXTRACTED]
 - [[test-container-runtime.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1106
+#graphify/code #graphify/EXTRACTED #community/Community_1162

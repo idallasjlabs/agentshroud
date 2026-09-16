@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-03-gateway-components.svg"
 type: "image"
-community: "Community 514"
+community: "Community 217"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Community_514
+  - community/Community_217
 ---
 
 # sanitizer.py (PII redaction, Presidio/regex)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[PII Sanitizer (Presidio + Regex)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Community_514
+#graphify/image #graphify/EXTRACTED #community/Community_217

@@ -1,24 +1,22 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Ingest API & Approval Routes"
+community: "Ingest API & RBAC Core"
 location: "L961"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ingest_API__Approval_Routes
+  - community/Ingest_API__RBAC_Core
 ---
 
 # ssh_exec()
 
 ## Connections
-- [[ApprovalRequest_3]] - `calls` [EXTRACTED]
+- [[ApprovalRequest_2]] - `calls` [EXTRACTED]
 - [[AuthRequired]] - `references` [EXTRACTED]
 - [[Execute SSH command with validation and approval]] - `rationale_for` [EXTRACTED]
 - [[JSONResponse]] - `calls` [EXTRACTED]
-- [[SSHExecRequest]] - `references` [EXTRACTED]
-- [[auth_dep()]] - `calls` [EXTRACTED]
-- [[main.py_2]] - `contains` [EXTRACTED]
-- [[make_event()]] - `calls` [EXTRACTED]
+- [[SSHExecRequest_1]] - `references` [EXTRACTED]
+- [[ingest_apimain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ingest_API__Approval_Routes
+#graphify/code #graphify/EXTRACTED #community/Ingest_API__RBAC_Core

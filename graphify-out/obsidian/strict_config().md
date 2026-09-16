@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_dns_filter.py"
+source_file: "gateway/tests/test_subagent_monitor.py"
 type: "code"
-community: "Memory Lifecycle & Egress Filtering"
+community: "Alert Dispatcher & RBAC Reliability"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Memory_Lifecycle__Egress_Filtering
+  - community/Alert_Dispatcher__RBAC_Reliability
 ---
 
 # strict_config()
 
 ## Connections
-- [[DNSFilterConfig]] - `calls` [EXTRACTED]
-- [[test_dns_filter.py]] - `contains` [EXTRACTED]
+- [[SubagentMonitorConfig]] - `calls` [EXTRACTED]
+- [[test_subagent_monitor.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Memory_Lifecycle__Egress_Filtering
+#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability

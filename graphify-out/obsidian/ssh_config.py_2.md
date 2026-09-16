@@ -1,27 +1,19 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/ssh_config.py.md"
-type: "document"
-community: "Community 754"
-location: "L10"
+source_file: "gateway/ingest_api/ssh_config.py"
+type: "code"
+community: "Approval Queue (WebSocket)"
+location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_754
+  - community/Approval_Queue_WebSocket
 ---
 
 # ssh_config.py
 
 ## Connections
-- [[Config Keys Read_7]] - `contains` [EXTRACTED]
-- [[Environment Variables Used_7]] - `contains` [EXTRACTED]
-- [[Imports From  Exports To_7]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_7]] - `contains` [EXTRACTED]
-- [[Known Issues  Notes_8]] - `contains` [EXTRACTED]
-- [[Purpose_118]] - `contains` [EXTRACTED]
-- [[Related_9]] - `contains` [EXTRACTED]
-- [[Responsibilities_7]] - `contains` [EXTRACTED]
-- [[SSHConfig Fields]] - `contains` [EXTRACTED]
-- [[SSHHostConfig Fields]] - `contains` [EXTRACTED]
-- [[ssh_config.py_1]] - `contains` [EXTRACTED]
+- [[SSHConfig_2]] - `contains` [EXTRACTED]
+- [[SSHHostConfig]] - `contains` [EXTRACTED]
+- [[ingest_apiconfig.py]] - `imports_from` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_754
+#graphify/code #graphify/EXTRACTED #community/Approval_Queue_WebSocket

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_file_sandbox_message_gate.py"
+source_file: "gateway/tests/test_group_isolation.py"
 type: "code"
-community: "Community 286"
-location: "L43"
+community: "Agent Isolation & Group Config Tests"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_286
+  - community/Agent_Isolation__Group_Config_Tests
 ---
 
 # session_manager()
 
 ## Connections
 - [[UserSessionManager]] - `calls` [EXTRACTED]
-- [[test_file_sandbox_message_gate.py]] - `contains` [EXTRACTED]
+- [[test_group_isolation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_286
+#graphify/code #graphify/EXTRACTED #community/Agent_Isolation__Group_Config_Tests

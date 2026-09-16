@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_governance.py"
 type: "code"
-community: "Community 40"
+community: "Community 39"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_40
+  - community/Community_39
 ---
 
 # test_a2a_governance.py
@@ -25,13 +25,13 @@ tags:
 - [[TestOutboundProcessing]] - `contains` [EXTRACTED]
 - [[TestPIISanitization]] - `contains` [EXTRACTED]
 - [[TestPeerManagement]] - `contains` [EXTRACTED]
-- [[TestRateLimiting]] - `contains` [EXTRACTED]
+- [[TestRateLimiting_1]] - `contains` [EXTRACTED]
 - [[TestReporting]] - `contains` [EXTRACTED]
 - [[TestTaskConcurrency]] - `contains` [EXTRACTED]
 - [[_msg()]] - `contains` [EXTRACTED]
 - [[monitor_proxy()]] - `contains` [EXTRACTED]
-- [[proxy()]] - `contains` [EXTRACTED]
+- [[proxy()_2]] - `contains` [EXTRACTED]
 - [[trusted_peer()]] - `contains` [EXTRACTED]
 - [[untrusted_peer()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_40
+#graphify/code #graphify/EXTRACTED #community/Community_39

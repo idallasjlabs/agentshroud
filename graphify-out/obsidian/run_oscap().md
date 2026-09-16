@@ -1,19 +1,19 @@
 ---
 source_file: "docker/scripts/security-scan.sh"
 type: "code"
-community: "Community 962"
+community: "Community 1006"
 location: "L212"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_962
+  - community/Community_1006
 ---
 
 # run_oscap()
 
 ## Connections
-- [[log()_4]] - `calls` [EXTRACTED]
-- [[security-scan.sh]] - `defines` [EXTRACTED]
+- [[dockerscriptssecurity-scan.sh]] - `defines` [EXTRACTED]
+- [[log()]] - `calls` [EXTRACTED]
 - [[security-scan.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_962
+#graphify/code #graphify/EXTRACTED #community/Community_1006

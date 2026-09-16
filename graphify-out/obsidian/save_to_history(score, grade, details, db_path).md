@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/health_report.py.md"
 type: "document"
-community: "Community 535"
+community: "Community 546"
 location: "L66"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_535
+  - community/Community_546
 ---
 
 # save_to_history(score, grade, details, db_path)
 
 ## Connections
-- [[Function Details_40]] - `contains` [EXTRACTED]
+- [[Function Details_9]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_535
+#graphify/document #graphify/EXTRACTED #community/Community_546

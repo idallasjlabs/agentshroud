@@ -1,11 +1,11 @@
 ---
 source_file: "scripts/README.md"
 type: "concept"
-community: "Community 1016"
+community: "Community 1060"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1016
+  - community/Community_1060
 ---
 
 # test-pii-sanitization.sh (planned)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[dockerscripts README]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1016
+#graphify/concept #graphify/EXTRACTED #community/Community_1060

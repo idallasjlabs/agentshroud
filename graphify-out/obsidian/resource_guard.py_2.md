@@ -1,25 +1,25 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/resource_guard.py.md"
 type: "document"
-community: "Community 506"
+community: "Community 517"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_506
+  - community/Community_517
 ---
 
 # resource_guard.py
 
 ## Connections
-- [[Configuration  Environment Variables_27]] - `contains` [EXTRACTED]
+- [[Configuration  Environment Variables_2]] - `contains` [EXTRACTED]
 - [[Default Limits]] - `contains` [EXTRACTED]
-- [[Function Details_46]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_49]] - `contains` [EXTRACTED]
-- [[Purpose_167]] - `contains` [EXTRACTED]
-- [[Related_53]] - `contains` [EXTRACTED]
-- [[Responsibilities_51]] - `contains` [EXTRACTED]
-- [[Threat Model_22]] - `contains` [EXTRACTED]
+- [[Function Details_7]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_7]] - `contains` [EXTRACTED]
+- [[Purpose_132]] - `contains` [EXTRACTED]
+- [[Related_11]] - `contains` [EXTRACTED]
+- [[Responsibilities_9]] - `contains` [EXTRACTED]
+- [[Threat Model_8]] - `contains` [EXTRACTED]
 - [[resource_guard.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_506
+#graphify/document #graphify/EXTRACTED #community/Community_517

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Community 92"
+community: "Community 271"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_92
+  - community/Community_271
 ---
 
 # setup-guide.md
@@ -24,4 +24,4 @@ tags:
 - [[colima-docker-guide]] - `conceptually_related_to` [INFERRED]
 - [[system-requirements]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_92
+#graphify/document #graphify/EXTRACTED #community/Community_271

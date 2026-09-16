@@ -1,22 +1,23 @@
 ---
 source_file: "gateway/tests/test_agent_cve_registry.py"
 type: "code"
-community: "Community 68"
+community: "Community 59"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_68
+  - community/Community_59
 ---
 
 # test_agent_cve_registry.py
 
 ## Connections
+- [[Tests for gatewaysecurityagent_cve_registry.py — multi-agent advisory…]] - `rationale_for` [EXTRACTED]
 - [[_all_entries()]] - `contains` [EXTRACTED]
 - [[_hermes_by_title()]] - `contains` [EXTRACTED]
-- [[gatewaysecurityagent_cve_registry.py (known CVE registry, referenced)]] - `imports_from` [EXTRACTED]
-- [[get_agent_cve_summary()]] - `imports` [EXTRACTED]
-- [[list_cve_agents()]] - `imports` [EXTRACTED]
+- [[gateway.security.agent_cve_registry]] - `imports_from` [EXTRACTED]
+- [[get_agent_cve_summary]] - `imports` [EXTRACTED]
+- [[list_cve_agents]] - `imports` [EXTRACTED]
 - [[test_agent_cve_registries_contains_both()]] - `contains` [EXTRACTED]
 - [[test_agent_cve_registries_objects_match_lists()]] - `contains` [EXTRACTED]
 - [[test_agent_cve_registry_alias_is_openclaw_list()]] - `contains` [EXTRACTED]
@@ -73,4 +74,4 @@ tags:
 - [[test_unknown_bot_id_raises_key_error()]] - `contains` [EXTRACTED]
 - [[test_wrapped_agent_constant_unchanged()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_68
+#graphify/code #graphify/EXTRACTED #community/Community_59

@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Ingest API & Approval Routes"
+community: "Ingest API & RBAC Core"
 location: "L2498"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ingest_API__Approval_Routes
+  - community/Ingest_API__RBAC_Core
 ---
 
 # soc_export()
 
 ## Connections
-- [[AuditExportConfig_1]] - `calls` [EXTRACTED]
+- [[AuditExportConfig]] - `calls` [EXTRACTED]
 - [[AuditExporter]] - `calls` [EXTRACTED]
 - [[AuthRequired]] - `references` [EXTRACTED]
 - [[Export tamper-evident audit events in SOCSIEM formats.]] - `rationale_for` [EXTRACTED]
-- [[main.py_2]] - `contains` [EXTRACTED]
+- [[ingest_apimain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ingest_API__Approval_Routes
+#graphify/code #graphify/EXTRACTED #community/Ingest_API__RBAC_Core

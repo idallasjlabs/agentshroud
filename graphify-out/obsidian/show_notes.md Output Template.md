@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-athena/SKILL.md"
 type: "concept"
-community: "Community 1033"
+community: "Community 1061"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1033
+  - community/Community_1061
 ---
 
 # show_notes.md Output Template
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Athena — Knowledge Distiller (SKILL)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1033
+#graphify/concept #graphify/EXTRACTED #community/Community_1061

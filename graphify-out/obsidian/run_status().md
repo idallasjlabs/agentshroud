@@ -12,13 +12,13 @@ tags:
 # run_status()
 
 ## Connections
-- [[.get()_1]] - `calls` [EXTRACTED]
+- [[dot-get()_3]] - `calls` [EXTRACTED]
 - [[GatewayClient]] - `references` [EXTRACTED]
 - [[Result]] - `references` [EXTRACTED]
 - [[String]] - `references` [EXTRACTED]
-- [[T]] - `references` [EXTRACTED]
+- [[T_1]] - `references` [EXTRACTED]
 - [[format_status()]] - `calls` [EXTRACTED]
-- [[main()_1]] - `calls` [EXTRACTED]
+- [[main()_18]] - `calls` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 - [[status_errors_on_401()]] - `calls` [EXTRACTED]
 - [[status_errors_when_gateway_down()]] - `calls` [EXTRACTED]

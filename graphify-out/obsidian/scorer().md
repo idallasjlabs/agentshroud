@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_context_integrity.py"
 type: "code"
-community: "Community 155"
+community: "Prompt Guard & Context Integrity"
 location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_155
+  - community/Prompt_Guard__Context_Integrity
 ---
 
 # scorer()
@@ -15,4 +15,4 @@ tags:
 - [[ContextIntegrityScorer]] - `calls` [EXTRACTED]
 - [[test_context_integrity.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_155
+#graphify/code #graphify/EXTRACTED #community/Prompt_Guard__Context_Integrity

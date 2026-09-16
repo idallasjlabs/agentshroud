@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_security_regressions_v1_2.py"
+source_file: "gateway/tests/test_group_workspace_manager.py"
 type: "code"
-community: "Community 62"
-location: "L46"
+community: "Community 53"
+location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_62
+  - community/Community_53
 ---
 
 # session_manager()
 
 ## Connections
 - [[UserSessionManager]] - `calls` [EXTRACTED]
-- [[test_security_regressions_v1_2.py]] - `contains` [EXTRACTED]
+- [[test_group_workspace_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_62
+#graphify/code #graphify/EXTRACTED #community/Community_53

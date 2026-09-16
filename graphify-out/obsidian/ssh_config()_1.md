@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_ssh_proxy.py"
 type: "code"
-community: "Community 15"
+community: "Approval Queue (WebSocket)"
 location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_15
+  - community/Approval_Queue_WebSocket
 ---
 
 # ssh_config()
 
 ## Connections
-- [[SSHConfig_2]] - `references` [EXTRACTED]
+- [[SSHConfig_1]] - `references` [EXTRACTED]
 - [[SSHHostConfig]] - `calls` [EXTRACTED]
 - [[test_ssh_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_15
+#graphify/code #graphify/EXTRACTED #community/Approval_Queue_WebSocket

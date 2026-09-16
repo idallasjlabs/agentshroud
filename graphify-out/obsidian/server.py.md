@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "code"
-community: "Community 114"
+community: "Community 122"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_114
+  - community/Community_122
 ---
 
 # server.py
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[Enum]] - `imports_from` [EXTRACTED]
 - [[FastAPI]] - `imports_from` [EXTRACTED]
+- [[Voice Gateway — FastAPI app exposing GET health and WebSocket voice. Per-…]] - `rationale_for` [EXTRACTED]
 - [[_State]] - `contains` [EXTRACTED]
-- [[__init__.py_17]] - `imports_from` [EXTRACTED]
 - [[__main__.py]] - `imports_from` [EXTRACTED]
 - [[_answer_volume_query()]] - `contains` [EXTRACTED]
 - [[_call_agent_stream()]] - `contains` [EXTRACTED]
@@ -34,6 +34,7 @@ tags:
 - [[_voice_forward_metadata()]] - `contains` [EXTRACTED]
 - [[_voice_system_message()]] - `contains` [EXTRACTED]
 - [[_warm()]] - `contains` [EXTRACTED]
+- [[datetime]] - `imports_from` [EXTRACTED]
 - [[firmware_bin()]] - `contains` [EXTRACTED]
 - [[health()]] - `contains` [EXTRACTED]
 - [[stt.py]] - `imports_from` [EXTRACTED]
@@ -41,5 +42,6 @@ tags:
 - [[test_voice_latency_guard.py]] - `imports_from` [EXTRACTED]
 - [[tts.py]] - `imports_from` [EXTRACTED]
 - [[voice_endpoint()]] - `contains` [EXTRACTED]
+- [[voice_gateway__init__.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_114
+#graphify/code #graphify/EXTRACTED #community/Community_122

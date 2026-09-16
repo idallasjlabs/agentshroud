@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/proxy/slack_proxy.py"
 type: "code"
-community: "Community 24"
+community: "Community 139"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_24
+  - community/Community_139
 ---
 
 # slack_proxy.py
 
 ## Connections
-- [[SlackAPIProxy]] - `contains` [EXTRACTED]
-- [[TelegramAPIProxy]] - `imports` [EXTRACTED]
+- [[SlackAPIProxy_1]] - `contains` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `imports` [EXTRACTED]
 - [[collaborator_responses.py]] - `imports_from` [EXTRACTED]
-- [[main.py_2]] - `imports_from` [EXTRACTED]
+- [[ingest_apimain.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_24
+#graphify/code #graphify/EXTRACTED #community/Community_139

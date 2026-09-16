@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/tests/test_filter_xml_blocks.py"
+source_file: "gateway/tests/conftest.py"
 type: "code"
-community: "PII Sanitizer & E2E Tests"
-location: "L19"
+community: "Gateway Config & PII Sanitizer"
+location: "L173"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PII_Sanitizer__E2E_Tests
+  - community/Gateway_Config__PII_Sanitizer
 ---
 
 # sanitizer()
 
 ## Connections
-- [[PIIConfig]] - `calls` [EXTRACTED]
-- [[PIISanitizer]] - `calls` [EXTRACTED]
-- [[test_filter_xml_blocks.py]] - `contains` [EXTRACTED]
+- [[Create a PIISanitizer instance for testing]] - `rationale_for` [EXTRACTED]
+- [[GatewayConfig_1]] - `references` [EXTRACTED]
+- [[PIISanitizer_1]] - `references` [EXTRACTED]
+- [[conftest.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer__E2E_Tests
+#graphify/code #graphify/EXTRACTED #community/Gateway_Config__PII_Sanitizer

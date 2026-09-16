@@ -1,23 +1,20 @@
 ---
-source_file: "gateway/soc/router.py"
+source_file: "gateway/web/api.py"
 type: "code"
-community: "SOC Collaborators"
-location: "L631"
+community: "Runtime Security Comparison & Intel Report"
+location: "L318"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Collaborators
+  - community/Runtime_Security_Comparison__Intel_Report
 ---
 
 # stop_service()
 
 ## Connections
-- [[JSONResponse]] - `references` [EXTRACTED]
-- [[SCLCaller_1]] - `references` [EXTRACTED]
-- [[ServiceActionRequest]] - `references` [EXTRACTED]
-- [[ServiceManager]] - `calls` [EXTRACTED]
-- [[_confirmation_required()]] - `calls` [EXTRACTED]
-- [[_log_audit()]] - `calls` [EXTRACTED]
-- [[router.py_1]] - `contains` [EXTRACTED]
+- [[Stop a specific service container.]] - `rationale_for` [EXTRACTED]
+- [[_get_engine()]] - `calls` [EXTRACTED]
+- [[_validate_service_name()]] - `calls` [EXTRACTED]
+- [[api.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Collaborators
+#graphify/code #graphify/EXTRACTED #community/Runtime_Security_Comparison__Intel_Report

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: "Community 110"
+community: "Community 103"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_110
+  - community/Community_103
 ---
 
 # test_a2a_proxy.py
@@ -15,19 +15,19 @@ tags:
 - [[A2AMethod]] - `imports` [EXTRACTED]
 - [[A2APolicyConfig]] - `imports` [EXTRACTED]
 - [[A2APolicyEngine_1]] - `imports` [EXTRACTED]
-- [[A2AProxy]] - `imports` [EXTRACTED]
+- [[A2AProxy_1]] - `imports` [EXTRACTED]
 - [[A2AProxyResult]] - `imports` [EXTRACTED]
-- [[DifferentialPIIConfig]] - `imports` [EXTRACTED]
-- [[DifferentialPIIDetector]] - `imports` [EXTRACTED]
+- [[DifferentialPIIConfig_1]] - `imports` [EXTRACTED]
+- [[DifferentialPIIDetector_1]] - `imports` [EXTRACTED]
 - [[Upstream Hermes Gap 80534 — Peer Identity Resolved From SocketX-Forwarded-For Instead Of Bearer Token]] - `references` [EXTRACTED]
 - [[_Event]] - `contains` [EXTRACTED]
 - [[_StubAuditStore]] - `contains` [EXTRACTED]
 - [[_StubForwarder]] - `contains` [EXTRACTED]
 - [[_base_policy_engine()]] - `contains` [EXTRACTED]
-- [[_jsonrpc()_1]] - `contains` [EXTRACTED]
+- [[_jsonrpc()]] - `contains` [EXTRACTED]
 - [[_redact_message_text()]] - `imports` [EXTRACTED]
 - [[forwarder()]] - `contains` [EXTRACTED]
-- [[proxy()_1]] - `contains` [EXTRACTED]
+- [[proxy()]] - `contains` [EXTRACTED]
 - [[test_agent_card_discovery_is_never_policy_gated()]] - `contains` [EXTRACTED]
 - [[test_agent_card_discovery_is_still_audited()]] - `contains` [EXTRACTED]
 - [[test_extract_text_concatenates_text_parts()]] - `contains` [EXTRACTED]
@@ -63,4 +63,4 @@ tags:
 - [[test_resolve_peer_id_uses_constant_time_comparison()]] - `contains` [EXTRACTED]
 - [[test_resolve_peer_id_whitespace_only_token_returns_none()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_110
+#graphify/code #graphify/EXTRACTED #community/Community_103

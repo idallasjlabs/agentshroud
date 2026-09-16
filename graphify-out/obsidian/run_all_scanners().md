@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Ingest API & Approval Routes"
+community: "Ingest API & RBAC Core"
 location: "L2695"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ingest_API__Approval_Routes
+  - community/Ingest_API__RBAC_Core
 ---
 
 # run_all_scanners()
@@ -16,7 +16,7 @@ tags:
 - [[Run all locally available security scanners and return consolidated results.]] - `rationale_for` [EXTRACTED]
 - [[_record_scanner_result()]] - `calls` [EXTRACTED]
 - [[_scanner_summary()]] - `calls` [EXTRACTED]
-- [[main.py_2]] - `contains` [EXTRACTED]
+- [[ingest_apimain.py]] - `contains` [EXTRACTED]
 - [[run_trivy_scan()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ingest_API__Approval_Routes
+#graphify/code #graphify/EXTRACTED #community/Ingest_API__RBAC_Core
