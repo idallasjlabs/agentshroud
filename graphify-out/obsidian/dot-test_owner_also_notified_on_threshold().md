@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_progressive_lockdown.py"
+type: "code"
+community: "Community 58"
+location: "L241"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_58
+---
+
+# .test_owner_also_notified_on_threshold()
+
+## Connections
+- [[dot-_setup_proxy_with_capture()]] - `calls` [EXTRACTED]
+- [[Owner should receive an escalation notice on the 3rd block.]] - `rationale_for` [EXTRACTED]
+- [[TestCollabLockdownNotifications]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_58

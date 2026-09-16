@@ -1,0 +1,23 @@
+---
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+type: "code"
+community: "Telegram Proxy Inbound Tests"
+location: "L925"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Telegram_Proxy_Inbound_Tests
+---
+
+# .test_owner_approve_ambiguous_multiple_pending_shows_usage()
+
+## Connections
+- [[FakeRBAC]] - `calls` [EXTRACTED]
+- [[Owner approve without target, with 2+ pending collaborator         requests, is]] - `rationale_for` [EXTRACTED]
+- [[PassthroughPipeline]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
+- [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
+- [[_make_update()_1]] - `calls` [EXTRACTED]
+- [[_wrap_response()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Inbound_Tests

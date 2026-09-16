@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_scanner_integration_coverage.py"
+type: "code"
+community: "Community 200"
+location: "L944"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_200
+---
+
+# .test_namespace_check_exception_assumes_isolated()
+
+## Connections
+- [[TestContainerRuntimeIsolation]] - `method` [EXTRACTED]
+- [[_w()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_200

@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_telegram_proxy_multibot.py"
+type: "code"
+community: "Community 180"
+location: "L161"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_180
+---
+
+# .test_openclaw_bot_config_backward_compat()
+
+## Connections
+- [[BotConfig]] - `calls` [EXTRACTED]
+- [[OpenClaw BotConfig must still work without the new fields.]] - `rationale_for` [EXTRACTED]
+- [[TestTelegramBotConfigTokenSecretField]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_180

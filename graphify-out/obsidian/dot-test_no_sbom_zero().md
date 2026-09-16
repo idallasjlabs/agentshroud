@@ -1,0 +1,17 @@
+---
+source_file: "gateway/tests/test_scanner_integration_coverage.py"
+type: "code"
+community: "Community 1482"
+location: "L1018"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_1482
+---
+
+# .test_no_sbom_zero()
+
+## Connections
+- [[TestAiModelSupplyChain]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_1482

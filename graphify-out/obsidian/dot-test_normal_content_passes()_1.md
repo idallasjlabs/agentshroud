@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_prompt_protection.py"
+type: "code"
+community: "Community 341"
+location: "L171"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_341
+---
+
+# .test_normal_content_passes()
+
+## Connections
+- [[Test that normal content passes through without redaction.]] - `rationale_for` [EXTRACTED]
+- [[TestPromptProtection]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_341

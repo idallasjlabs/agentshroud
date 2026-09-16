@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_multi_host_test.py"
+type: "code"
+community: "Community 860"
+location: "L57"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_860
+---
+
+# .test_only_separators_falls_back_to_default()
+
+## Connections
+- [[TestParseHosts]] - `method` [EXTRACTED]
+- [[parse_hosts()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_860

@@ -1,0 +1,20 @@
+---
+source_file: "gateway/tests/test_web_proxy_security.py"
+type: "code"
+community: "Community 96"
+location: "L283"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_96
+---
+
+# .test_oauth_security_error_handling()
+
+## Connections
+- [[MockDNSVerdict]] - `calls` [EXTRACTED]
+- [[MockURLResult]] - `calls` [EXTRACTED]
+- [[Test that OAuth security errors don't block requests.]] - `rationale_for` [EXTRACTED]
+- [[TestWebProxySecurityIntegration]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_96

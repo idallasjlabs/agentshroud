@@ -1,0 +1,20 @@
+---
+source_file: "gateway/tests/test_auto_remediate_cves.py"
+type: "code"
+community: "Community 274"
+location: "L114"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_274
+---
+
+# .test_only_under_review_entries_are_considered()
+
+## Connections
+- [[Already-triaged entries are somebody's assessed verdict — a version bump…]] - `rationale_for` [EXTRACTED]
+- [[TestPlanRemediation]] - `method` [EXTRACTED]
+- [[_entry()]] - `calls` [EXTRACTED]
+- [[plan_remediation()]] - `calls` [INFERRED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_274

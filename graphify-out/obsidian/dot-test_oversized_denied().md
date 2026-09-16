@@ -1,0 +1,20 @@
+---
+source_file: "gateway/tests/test_a2a_governance.py"
+type: "code"
+community: "Community 39"
+location: "L151"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_39
+---
+
+# .test_oversized_denied()
+
+## Connections
+- [[A2AGovernanceConfig]] - `calls` [EXTRACTED]
+- [[A2AGovernanceProxy]] - `calls` [EXTRACTED]
+- [[TestMessageSize]] - `method` [EXTRACTED]
+- [[_msg()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_39

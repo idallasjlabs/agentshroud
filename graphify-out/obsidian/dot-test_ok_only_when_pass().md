@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_multi_host_test.py"
+type: "code"
+community: "Community 497"
+location: "L93"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_497
+---
+
+# .test_ok_only_when_pass()
+
+## Connections
+- [[HostResult]] - `calls` [EXTRACTED]
+- [[TestHostResult]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_497

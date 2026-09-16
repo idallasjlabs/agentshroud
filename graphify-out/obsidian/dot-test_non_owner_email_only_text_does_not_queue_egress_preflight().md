@@ -1,0 +1,23 @@
+---
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+type: "code"
+community: "Telegram Proxy Inbound Tests"
+location: "L6505"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Telegram_Proxy_Inbound_Tests
+---
+
+# .test_non_owner_email_only_text_does_not_queue_egress_preflight()
+
+## Connections
+- [[Email domains should not be mistaken for outbound web targets.]] - `rationale_for` [EXTRACTED]
+- [[FakeRBAC]] - `calls` [EXTRACTED]
+- [[PassthroughPipeline]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
+- [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
+- [[_make_update()_1]] - `calls` [EXTRACTED]
+- [[_wrap_response()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Inbound_Tests

@@ -1,0 +1,21 @@
+---
+source_file: "gateway/tests/test_telegram_proxy_outbound.py"
+type: "code"
+community: "Community 419"
+location: "L5053"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_419
+---
+
+# .test_multipart_sanitized_caption_applied_binary_intact()
+
+## Connections
+- [[Redacted caption replaces the original; binary part stays byte-identical.]] - `rationale_for` [EXTRACTED]
+- [[TelegramAPIProxy_3]] - `calls` [EXTRACTED]
+- [[TestMultipartOutboundPipeline]] - `method` [EXTRACTED]
+- [[_make_multipart_body()]] - `calls` [EXTRACTED]
+- [[_make_sanitizer()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_419
