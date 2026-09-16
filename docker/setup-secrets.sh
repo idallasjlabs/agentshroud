@@ -137,6 +137,13 @@ op_ref_for() {
         # Verified working 2026-09-15 via `op read` on the prod host.
         feedbin_email)    printf 'op://%s/Feedbin/username' "$vault" ;;
         feedbin_password) printf 'op://%s/Feedbin/password' "$vault" ;;
+        # Same dedicated item docker/scripts/start-agentshroud.sh already reads
+        # directly for OpenClaw's own Brave key load — reused here (not
+        # guessed) so Hermes and any other op_get() caller resolve it too,
+        # instead of falling through to the fuzzy per-host generic-item lookup
+        # below, which doesn't have this field (observed 2026-09-16: Hermes
+        # "online" notification listed brave_api_key as missing).
+        brave_api_key)    printf 'op://%s/6j6ij5tzld6kobvit5tk6ufrhq/brave search api key' "$vault" ;;
         # podcastindex_api_key / podcastindex_api_secret: an item exists in this
         # vault (added 2026-09-14) but its exact item/field names are NOT yet
         # verified from a signed-in host. Deliberately left unmapped rather than
@@ -421,6 +428,26 @@ cmd_extract() {
     ok=true
     for entry in "${extract_defs[@]}"; do
         IFS='|' read -r name optional <<< "$entry"
+        # The three 1Password bootstrap credentials (email/master password/
+        # secret key for the "Agent Shroud Bot Credentials" account itself)
+        # must NEVER be auto-resolved here. op_ref_for() has no dedicated ref
+        # for them (circular: you need to already be signed in to fetch your
+        # own sign-in credentials from 1Password), so get_secret()'s Tier 3
+        # falls through to the fuzzy per-host generic-item field lookup —
+        # and that generic item's own "1password_bot_email" field was found
+        # to contain 1Password's own masked-field placeholder text instead of
+        # a real email (root-caused 2026-09-16: broke op-wrapper.sh sign-in
+        # for every container, including the Brave key load). Extracting this
+        # value silently overwrote a hand-verified-correct canonical file with
+        # that placeholder the very next time this command ran. These three
+        # can ONLY be set correctly by a human (or copied from a host where
+        # they're known-good, e.g. prod) — never by this extract loop.
+        case "$name" in
+            1password_bot_email|1password_bot_master_password|1password_bot_secret_key)
+                echo "  [preserved] $name — bootstrap credential, never auto-extracted (see comment above)"
+                continue
+                ;;
+        esac
         value="$(get_secret "$name" | normalize_secret)"
         if [[ -z "$value" ]]; then
             if [[ "$optional" == "yes" ]]; then
