@@ -1,21 +1,17 @@
 ---
-source_file: "docs/setup/OPENCLAW_SSH_SETUP.md"
+source_file: "docker/scripts/README.md"
 type: "document"
-community: "Community 191"
-location: "L375"
+community: "Community 315"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_191
+  - community/Community_315
 ---
 
 # Quick Reference
 
 ## Connections
-- [[One-Liner to Add to Pi]] - `contains` [EXTRACTED]
-- [[OpenClaw Bot SSH Configuration]] - `contains` [EXTRACTED]
-- [[Public Key (Copy-Paste Ready)]] - `contains` [EXTRACTED]
-- [[Test Connection]] - `contains` [EXTRACTED]
-- [[🔐 Credentials in 1Password]] - `contains` [EXTRACTED]
+- [[OpenClaw Management Scripts]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_191
+#graphify/document #graphify/EXTRACTED #community/Community_315

@@ -1,65 +1,65 @@
 ---
-source_file: "gateway/security/rbac.py"
+source_file: "gateway/ingest_api/middleware.py"
 type: "code"
-community: "RBAC & SOC Realtime"
-location: "L61"
+community: "Alert Dispatcher & RBAC Reliability"
+location: "L988"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/RBAC__SOC_Realtime
+  - graphify/INFERRED
+  - community/Alert_Dispatcher__RBAC_Reliability
 ---
 
 # RBACManager
 
 ## Connections
-- [[.__init__()_112]] - `method` [EXTRACTED]
-- [[._build_permission_matrix()]] - `method` [EXTRACTED]
-- [[._build_tool_permissions()]] - `method` [EXTRACTED]
-- [[.audit_privilege_change()]] - `method` [EXTRACTED]
-- [[.can_user_manage_user()]] - `method` [EXTRACTED]
-- [[.check_group_permission()]] - `method` [EXTRACTED]
-- [[.check_permission()]] - `method` [EXTRACTED]
-- [[.check_tool_permission()_1]] - `method` [EXTRACTED]
-- [[.get_role_hierarchy()]] - `method` [EXTRACTED]
-- [[.get_user_permissions_summary()]] - `method` [EXTRACTED]
-- [[.get_user_role()]] - `method` [EXTRACTED]
-- [[.is_privilege_escalation()]] - `method` [EXTRACTED]
-- [[.list_users_and_roles()]] - `method` [EXTRACTED]
-- [[.set_user_role()]] - `method` [EXTRACTED]
-- [[.setup_method()_20]] - `calls` [EXTRACTED]
-- [[.test_invalid_action_resource_combinations()]] - `calls` [EXTRACTED]
-- [[.test_invalid_user_id()]] - `calls` [EXTRACTED]
-- [[.test_permission_check_with_context()]] - `calls` [EXTRACTED]
-- [[.test_rbac_manager_without_config()]] - `calls` [EXTRACTED]
+- [[dot-__init__()_12]] - `calls` [EXTRACTED]
+- [[dot-get_rbac_manager()]] - `references` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_8]] - `uses` [INFERRED]
-- [[Exception_2]] - `uses` [INFERRED]
-- [[LogSanitizer]] - `uses` [INFERRED]
-- [[MiddlewareManager]] - `uses` [INFERRED]
-- [[MiddlewareResult]] - `uses` [INFERRED]
-- [[PUT users{user_id}role endpoint]] - `calls` [EXTRACTED]
-- [[RBACConfig_3]] - `uses` [INFERRED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[AgentRegistry]] - `uses` [INFERRED]
+- [[AlertDispatcher]] - `uses` [INFERRED]
+- [[ApprovalHardening]] - `uses` [INFERRED]
+- [[ApprovalHardeningConfig]] - `uses` [INFERRED]
+- [[BrowserSecurityGuard]] - `uses` [INFERRED]
+- [[ConsentFramework]] - `uses` [INFERRED]
+- [[ContextGuard]] - `uses` [INFERRED]
+- [[DNSFilter]] - `uses` [INFERRED]
+- [[DNSFilterConfig]] - `uses` [INFERRED]
+- [[DriftDetector]] - `uses` [INFERRED]
+- [[EgressMonitor]] - `uses` [INFERRED]
+- [[EgressMonitorConfig]] - `uses` [INFERRED]
+- [[EnvironmentGuard]] - `uses` [INFERRED]
+- [[FileSandbox]] - `uses` [INFERRED]
+- [[FileSandboxConfig]] - `uses` [INFERRED]
+- [[GitGuard]] - `uses` [INFERRED]
+- [[KeyRotationManager]] - `uses` [INFERRED]
+- [[KillSwitchMonitor]] - `uses` [INFERRED]
+- [[LogSanitizer_1]] - `uses` [INFERRED]
+- [[MemoryIntegrityMonitor]] - `uses` [INFERRED]
+- [[MemoryLifecycleManager]] - `uses` [INFERRED]
+- [[MemorySecurityConfig]] - `uses` [INFERRED]
+- [[MetadataGuard]] - `uses` [INFERRED]
+- [[MultiTurnTracker]] - `uses` [INFERRED]
+- [[NetworkValidator]] - `uses` [INFERRED]
+- [[OAuthSecurityValidator]] - `uses` [INFERRED]
+- [[OutputCanary]] - `uses` [INFERRED]
+- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[PathIsolationConfig]] - `uses` [INFERRED]
+- [[PathIsolationManager]] - `uses` [INFERRED]
+- [[RBACConfig_2]] - `uses` [INFERRED]
 - [[RBACManager]] - `uses` [INFERRED]
 - [[Resource]] - `uses` [INFERRED]
-- [[Role_1]] - `uses` [INFERRED]
-- [[Role-Based Access Control Manager.]] - `rationale_for` [EXTRACTED]
-- [[TestCollaboratorPersistence]] - `uses` [INFERRED]
-- [[TestGroupRegistry]] - `uses` [INFERRED]
-- [[TestRBACConfig]] - `uses` [INFERRED]
-- [[TestRBACErrorHandling]] - `uses` [INFERRED]
-- [[TestRBACIntegration]] - `uses` [INFERRED]
-- [[TestRBACManager]] - `uses` [INFERRED]
+- [[ResourceGuard]] - `uses` [INFERRED]
+- [[SessionManager]] - `uses` [INFERRED]
+- [[SubagentMonitor]] - `uses` [INFERRED]
+- [[SubagentMonitorConfig]] - `uses` [INFERRED]
+- [[ToolChainAnalyzer]] - `uses` [INFERRED]
+- [[ToolResultInjectionScanner]] - `uses` [INFERRED]
+- [[ToolResultPIIConfig]] - `uses` [INFERRED]
+- [[ToolResultSanitizer]] - `uses` [INFERRED]
+- [[ToolResultSanitizer_1]] - `uses` [INFERRED]
+- [[ToolResultSanitizerConfig]] - `uses` [INFERRED]
 - [[ToolTier]] - `uses` [INFERRED]
-- [[ToolTier_2]] - `uses` [INFERRED]
-- [[_get_rbac_manager()]] - `calls` [EXTRACTED]
-- [[auth.py_1]] - `imports` [EXTRACTED]
-- [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
-- [[middleware.py]] - `imports` [EXTRACTED]
-- [[rbac.py]] - `contains` [EXTRACTED]
-- [[router.py_1]] - `imports` [EXTRACTED]
-- [[run()_3]] - `calls` [EXTRACTED]
-- [[set_user_role()_1]] - `calls` [EXTRACTED]
-- [[test_rbac.py]] - `tests` [EXTRACTED]
+- [[UserSessionManager]] - `uses` [INFERRED]
+- [[XMLLeakFilter]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/RBAC__SOC_Realtime
+#graphify/code #graphify/INFERRED #community/Alert_Dispatcher__RBAC_Reliability

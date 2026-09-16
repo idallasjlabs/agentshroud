@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/runtime/engine.py"
 type: "rationale"
-community: "Community 204"
+community: "Community 106"
 location: "L71"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_204
+  - community/Community_106
 ---
 
 # Push an image to a registry.
 
 ## Connections
-- [[.push()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-push()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_204
+#graphify/rationale #graphify/EXTRACTED #community/Community_106

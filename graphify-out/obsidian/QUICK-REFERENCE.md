@@ -1,12 +1,12 @@
 ---
 source_file: "branding/QUICK-REFERENCE.md"
 type: "document"
-community: "Community 790"
+community: "Community 831"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_790
+  - community/Community_831
 ---
 
 # QUICK-REFERENCE.md
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[AgentShroud Blue — 1583f0]] - `references` [EXTRACTED]
 - [[AgentShroud Brand Quick Reference]] - `contains` [EXTRACTED]
-- [[INDEX]] - `references` [EXTRACTED]
-- [[README_38]] - `references` [EXTRACTED]
+- [[INDEX_1]] - `references` [EXTRACTED]
+- [[brandingREADME]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_790
+#graphify/document #graphify/EXTRACTED #community/Community_831

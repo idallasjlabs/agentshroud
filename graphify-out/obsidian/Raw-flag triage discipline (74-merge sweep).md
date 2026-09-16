@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-ab/SKILL.md"
 type: "rationale"
-community: "Community 1742"
+community: "Community 1853"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1742
+  - community/Community_1853
 ---
 
 # Raw-flag triage discipline (74-merge sweep)
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1742
+#graphify/rationale #graphify/EXTRACTED #community/Community_1853

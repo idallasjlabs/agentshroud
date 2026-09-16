@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.2/red-team-assessment-v1.2.0.md"
 type: "document"
-community: "Community 925"
+community: "Community 972"
 location: "L390"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_925
+  - community/Community_972
 ---
 
 # RT-MB4 — Hermes cron job injection via jobs.yaml
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[§5 — Acceptance Rationales (Signed Off)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_925
+#graphify/document #graphify/EXTRACTED #community/Community_972

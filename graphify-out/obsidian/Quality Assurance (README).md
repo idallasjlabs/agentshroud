@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-qa/README.md"
 type: "document"
-community: "Community 516"
+community: "Community 144"
 tags:
   - graphify/document
-  - graphify/INFERRED
-  - community/Community_516
+  - graphify/EXTRACTED
+  - community/Community_144
 ---
 
 # Quality Assurance (README)
@@ -14,4 +14,4 @@ tags:
 - [[Quality Assurance (SKILL)]] - `conceptually_related_to` [INFERRED]
 - [[Skills Guide (catalog)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/Community_516
+#graphify/document #graphify/EXTRACTED #community/Community_144

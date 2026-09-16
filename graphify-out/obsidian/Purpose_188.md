@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/openclaw.md"
+source_file: "docs/vault/02 - Modules/Runtime/engine.py.md"
 type: "document"
-community: "Community 933"
-location: "L15"
+community: "Community 897"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_933
+  - community/Community_897
 ---
 
 # Purpose
 
 ## Connections
-- [[OpenClaw]] - `contains` [EXTRACTED]
+- [[engine.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_933
+#graphify/document #graphify/EXTRACTED #community/Community_897

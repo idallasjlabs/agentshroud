@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/soc/auth.py"
 type: "code"
-community: "RBAC & SOC Realtime"
+community: "Community 153"
 location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBAC__SOC_Realtime
+  - community/Community_153
 ---
 
 # RBACManager
 
 ## Connections
-- [[.__init__()_129]] - `references` [EXTRACTED]
+- [[dot-__init__()_66]] - `references` [EXTRACTED]
 - [[_get_rbac_manager()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBAC__SOC_Realtime
+#graphify/code #graphify/EXTRACTED #community/Community_153

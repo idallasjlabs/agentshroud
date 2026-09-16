@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/summarize/SKILL.md"
+source_file: "README.md"
 type: "document"
-community: "Community 401"
-location: "L38"
+community: "Community 178"
+location: "L409"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_401
+  - community/Community_178
 ---
 
-# Quick start
+# Quick Start
 
 ## Connections
-- [[Summarize]] - `contains` [EXTRACTED]
+- [[Documentation_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_401
+#graphify/document #graphify/EXTRACTED #community/Community_178

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/data/data-dictionary.md"
 type: "concept"
-community: "Community 937"
+community: "Community 256"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_937
+  - community/Community_256
 ---
 
 # RateLimitBucket (data entity)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[TrustLevel (data entity)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_937
+#graphify/concept #graphify/EXTRACTED #community/Community_256

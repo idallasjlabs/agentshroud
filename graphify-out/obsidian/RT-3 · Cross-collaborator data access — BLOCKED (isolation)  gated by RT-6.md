@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/ws-e-audit-v1.2.md"
 type: "document"
-community: "Community 276"
+community: "Community 282"
 location: "L104"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_276
+  - community/Community_282
 ---
 
 # RT-3 · Cross-collaborator data access — **BLOCKED (isolation) / gated by RT-6**
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Part 2 — Red-Team Attack Run (SCRUM-73)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_276
+#graphify/document #graphify/EXTRACTED #community/Community_282
