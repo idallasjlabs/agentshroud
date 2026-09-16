@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/securebrowser/README.md"
-type: "document"
-community: "Community 150"
-location: "L396"
+source_file: "browser-extension/package.json"
+type: "code"
+community: "Community 677"
+location: "L6"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_150
+  - community/Community_677
 ---
 
-# License
+# license
 
 ## Connections
-- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
+- [[browser-extensionpackage.json]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_150
+#graphify/code #graphify/EXTRACTED #community/Community_677

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-tw/README.md"
 type: "document"
-community: "Community 1030"
+community: "Community 1089"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1030
+  - community/Community_1089
 ---
 
 # i-tw README.md
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[i-tw SKILL.md (Technical Writer)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1030
+#graphify/document #graphify/EXTRACTED #community/Community_1089

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/compliance/iec-62443-matrix.md"
 type: "document"
-community: "Community 137"
+community: "Community 731"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_137
+  - community/Community_731
 ---
 
 # iec-62443-matrix.md
@@ -21,4 +21,4 @@ tags:
 - [[FR7 Resource Availability]] - `conceptually_related_to` [EXTRACTED]
 - [[IEC 62443 Compliance Matrix — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_137
+#graphify/document #graphify/EXTRACTED #community/Community_731

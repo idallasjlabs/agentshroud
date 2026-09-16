@@ -1,26 +1,17 @@
 ---
-source_file: "gateway/web/installer.py"
-type: "code"
-community: "Community 447"
+source_file: "docs/vault/02 - Modules/Web & Dashboard/installer.py.md"
+type: "document"
+community: "Community 1120"
 location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Community_447
+  - community/Community_1120
 ---
 
-# installer.py
+# installer.py.md
 
 ## Connections
-- [[InstallConfig]] - `contains` [EXTRACTED]
-- [[PrerequisiteCheck]] - `contains` [EXTRACTED]
-- [[api.py]] - `references` [EXTRACTED]
-- [[check_prerequisites()]] - `contains` [EXTRACTED]
-- [[detect_runtime()]] - `imports` [EXTRACTED]
-- [[get_runtimes()]] - `contains` [EXTRACTED]
-- [[get_security_comparison()]] - `imports` [EXTRACTED]
-- [[installer_page()]] - `contains` [EXTRACTED]
-- [[security.py]] - `imports_from` [EXTRACTED]
-- [[start_install()]] - `contains` [EXTRACTED]
+- [[installer.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_447
+#graphify/document #graphify/EXTRACTED #community/Community_1120

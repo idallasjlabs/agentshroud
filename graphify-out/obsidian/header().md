@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/container-net-diag.sh"
 type: "code"
-community: "Community 312"
+community: "Community 898"
 location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_312
+  - community/Community_898
 ---
 
 # header()
@@ -15,4 +15,4 @@ tags:
 - [[container-net-diag.sh]] - `defines` [EXTRACTED]
 - [[container-net-diag.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_312
+#graphify/code #graphify/EXTRACTED #community/Community_898

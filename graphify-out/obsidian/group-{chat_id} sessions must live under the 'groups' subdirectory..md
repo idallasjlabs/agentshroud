@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_group_isolation.py"
 type: "rationale"
-community: "Community 774"
+community: "Agent Isolation & Group Config Tests"
 location: "L134"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_774
+  - community/Agent_Isolation__Group_Config_Tests
 ---
 
 # group-{chat_id} sessions must live under the 'groups' subdirectory.
 
 ## Connections
-- [[.test_group_id_uses_group_prefix_namespace()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_group_id_uses_group_prefix_namespace()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_774
+#graphify/rationale #graphify/EXTRACTED #community/Agent_Isolation__Group_Config_Tests

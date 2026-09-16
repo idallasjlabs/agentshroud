@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/generate-job-schedule.py"
 type: "code"
-community: "Community 909"
+community: "Community 958"
 location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_909
+  - community/Community_958
 ---
 
 # load_hermes_jobs()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[docker_exec()]] - `calls` [EXTRACTED]
 - [[generate-job-schedule.py]] - `contains` [EXTRACTED]
-- [[main()_20]] - `calls` [EXTRACTED]
+- [[main()_36]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_909
+#graphify/code #graphify/EXTRACTED #community/Community_958

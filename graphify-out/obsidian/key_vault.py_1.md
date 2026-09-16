@@ -1,17 +1,25 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/key_vault.py.md"
 type: "document"
-community: "Community 505"
-location: "L1"
+community: "Community 516"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_505
+  - community/Community_516
 ---
 
-# key_vault.py.md
+# key_vault.py
 
 ## Connections
-- [[key_vault.py_2]] - `contains` [EXTRACTED]
+- [[Configuration  Environment Variables_1]] - `contains` [EXTRACTED]
+- [[Function Details_6]] - `contains` [EXTRACTED]
+- [[Generic Key Patterns Detected]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_6]] - `contains` [EXTRACTED]
+- [[Purpose_131]] - `contains` [EXTRACTED]
+- [[Related_10]] - `contains` [EXTRACTED]
+- [[Responsibilities_8]] - `contains` [EXTRACTED]
+- [[Threat Model_7]] - `contains` [EXTRACTED]
+- [[key_vault.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_505
+#graphify/document #graphify/EXTRACTED #community/Community_516

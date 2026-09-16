@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-gitops/SKILL.md"
 type: "document"
-community: "Community 1759"
+community: "Community 1862"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1759
+  - community/Community_1862
 ---
 
 # i-gitops SKILL (stub)
 
-#graphify/document #graphify/EXTRACTED #community/Community_1759
+#graphify/document #graphify/EXTRACTED #community/Community_1862

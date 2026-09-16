@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/gh-issues/SKILL.md"
 type: "document"
-community: "Community 498"
+community: "Community 510"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_498
+  - community/Community_510
 ---
 
 # gh-issues — Auto-fix GitHub Issues with Parallel Sub-agents
@@ -19,7 +19,7 @@ tags:
 - [[Phase 5 — Spawn Sub-agents (Parallel)]] - `contains` [EXTRACTED]
 - [[Phase 6 — PR Review Handler]] - `contains` [EXTRACTED]
 - [[Results Collection]] - `contains` [EXTRACTED]
-- [[SKILL_207]] - `contains` [EXTRACTED]
 - [[Watch Mode (if --watch is active)]] - `contains` [EXTRACTED]
+- [[gh-issuesSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_498
+#graphify/document #graphify/EXTRACTED #community/Community_510

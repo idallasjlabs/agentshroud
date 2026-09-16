@@ -1,18 +1,22 @@
 ---
-source_file: "scripts/security-scan.sh"
+source_file: "scripts/verify-proxy.sh"
 type: "code"
-community: "Community 1052"
-location: "L49"
+community: "Proxy Sidecar & Forwarder"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1052
+  - community/Proxy_Sidecar__Forwarder
 ---
 
 # info()
 
 ## Connections
-- [[security-scan.sh_1]] - `defines` [EXTRACTED]
-- [[security-scan.sh script_1]] - `calls` [EXTRACTED]
+- [[run_bypass()]] - `calls` [EXTRACTED]
+- [[run_canary()]] - `calls` [EXTRACTED]
+- [[run_chain()]] - `calls` [EXTRACTED]
+- [[run_full()]] - `calls` [EXTRACTED]
+- [[run_quick()]] - `calls` [EXTRACTED]
+- [[verify-proxy.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1052
+#graphify/code #graphify/EXTRACTED #community/Proxy_Sidecar__Forwarder

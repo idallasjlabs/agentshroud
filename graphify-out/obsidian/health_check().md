@@ -1,19 +1,18 @@
 ---
-source_file: "chatbot/main.py"
+source_file: "gateway/ingest_api/routes/health.py"
 type: "code"
-community: "Community 86"
-location: "L166"
+community: "Approval Routing & Event Bus"
+location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_86
+  - community/Approval_Routing__Event_Bus
 ---
 
 # health_check()
 
 ## Connections
-- [[Health check endpoint for Docker.      Reports degraded status when the OpenAI c]] - `rationale_for` [EXTRACTED]
-- [[TestHealthCheck]] - `calls` [EXTRACTED]
-- [[main.py]] - `contains` [EXTRACTED]
+- [[Minimal health check endpoint — no authentication required.      Returns only ba]] - `rationale_for` [EXTRACTED]
+- [[health.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_86
+#graphify/code #graphify/EXTRACTED #community/Approval_Routing__Event_Bus

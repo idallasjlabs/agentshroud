@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/references/query.md"
 type: "concept"
-community: "Community 1834"
+community: "Community 1875"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1834
+  - community/Community_1875
 ---
 
 # /graphify path command
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1834
+#graphify/concept #graphify/EXTRACTED #community/Community_1875

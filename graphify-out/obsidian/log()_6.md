@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/canary-deploy.sh"
+source_file: "docker/scripts/security-scheduler.sh"
 type: "code"
-community: "Community 1049"
-location: "L47"
+community: "Community 632"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1049
+  - community/Community_632
 ---
 
 # log()
 
 ## Connections
-- [[canary-deploy.sh]] - `defines` [EXTRACTED]
-- [[canary-deploy.sh script]] - `calls` [EXTRACTED]
+- [[security-scheduler.sh]] - `defines` [EXTRACTED]
+- [[security-scheduler.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1049
+#graphify/code #graphify/EXTRACTED #community/Community_632

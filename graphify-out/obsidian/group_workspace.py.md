@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_workspace.py"
 type: "code"
-community: "Community 57"
+community: "Community 53"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_57
+  - community/Community_53
 ---
 
 # group_workspace.py
@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[GroupAccessDenied]] - `contains` [EXTRACTED]
 - [[GroupWorkspaceManager]] - `contains` [EXTRACTED]
-- [[RBACConfig_1]] - `imports` [EXTRACTED]
+- [[RBACConfig_2]] - `imports` [EXTRACTED]
 - [[SharedMemoryManager]] - `imports` [EXTRACTED]
-- [[TeamsConfig]] - `imports` [EXTRACTED]
+- [[TeamsConfig_2]] - `imports` [EXTRACTED]
 - [[WorkspaceContext]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_57
+#graphify/code #graphify/EXTRACTED #community/Community_53

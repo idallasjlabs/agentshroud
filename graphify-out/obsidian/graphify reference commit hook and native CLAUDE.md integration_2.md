@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/references/hooks.md"
 type: "document"
-community: "Community 1303"
+community: "Community 1356"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1303
+  - community/Community_1356
 ---
 
 # graphify reference: commit hook and native CLAUDE.md integration
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[For git commit hook_2]] - `contains` [EXTRACTED]
 - [[For native CLAUDE.md integration_2]] - `contains` [EXTRACTED]
-- [[hooks_2]] - `contains` [EXTRACTED]
+- [[openclawskillsgraphifyreferenceshooks]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1303
+#graphify/document #graphify/EXTRACTED #community/Community_1356

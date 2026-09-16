@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router.py"
 type: "rationale"
-community: "Community 32"
+community: "Multi-Agent Router & Chat UI"
 location: "L286"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_32
+  - community/Multi-Agent_Router__Chat_UI
 ---
 
 # health_check builds URL from target.health_path.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_health_check_uses_health_path()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_32
+#graphify/rationale #graphify/EXTRACTED #community/Multi-Agent_Router__Chat_UI

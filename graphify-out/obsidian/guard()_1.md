@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_context_integrity.py"
+source_file: "gateway/tests/test_resource_guard_limits.py"
 type: "code"
-community: "Community 155"
-location: "L24"
+community: "P3 Infrastructure Security Modules"
+location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_155
+  - community/P3_Infrastructure_Security_Modules
 ---
 
 # guard()
 
 ## Connections
-- [[PromptGuard]] - `calls` [EXTRACTED]
-- [[test_context_integrity.py]] - `contains` [EXTRACTED]
+- [[ResourceGuard]] - `calls` [EXTRACTED]
+- [[ResourceLimits]] - `calls` [EXTRACTED]
+- [[test_resource_guard_limits.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_155
+#graphify/code #graphify/EXTRACTED #community/P3_Infrastructure_Security_Modules

@@ -1,18 +1,27 @@
 ---
-source_file: "docker/scripts/security-report.sh"
+source_file: "scripts/sunday-upgrade-apply.sh"
 type: "code"
-community: "Community 427"
-location: "L18"
+community: "Community 353"
+location: "L122"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_427
+  - community/Community_353
 ---
 
 # log()
 
 ## Connections
-- [[security-report.sh]] - `defines` [EXTRACTED]
-- [[security-report.sh script]] - `calls` [EXTRACTED]
+- [[_attempt_rollback()]] - `calls` [EXTRACTED]
+- [[check_noop_gate()]] - `calls` [EXTRACTED]
+- [[phase_apply()]] - `calls` [EXTRACTED]
+- [[phase_baseline()]] - `calls` [EXTRACTED]
+- [[phase_discover()]] - `calls` [EXTRACTED]
+- [[phase_preflight()]] - `calls` [EXTRACTED]
+- [[phase_scan()]] - `calls` [EXTRACTED]
+- [[phase_verify()]] - `calls` [EXTRACTED]
+- [[sunday-upgrade-apply.sh]] - `defines` [EXTRACTED]
+- [[sunday-upgrade-apply.sh script]] - `calls` [EXTRACTED]
+- [[write_handoff()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_427
+#graphify/code #graphify/EXTRACTED #community/Community_353

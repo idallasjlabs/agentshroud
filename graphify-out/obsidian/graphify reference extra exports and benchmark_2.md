@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/graphify/references/exports.md"
+source_file: "docker/config/hermes/skills/graphify/references/exports.md"
 type: "document"
-community: "Community 958"
+community: "Community 997"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_958
+  - community/Community_997
 ---
 
 # graphify reference: extra exports and benchmark
@@ -18,6 +18,6 @@ tags:
 - [[Step 7c - GraphML export (only if --graphml flag)_2]] - `contains` [EXTRACTED]
 - [[Step 7d - MCP server (only if --mcp flag)_2]] - `contains` [EXTRACTED]
 - [[Step 8 - Token reduction benchmark (only if total_words  5000)_2]] - `contains` [EXTRACTED]
-- [[exports_2]] - `contains` [EXTRACTED]
+- [[hermesskillsgraphifyreferencesexports]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_958
+#graphify/document #graphify/EXTRACTED #community/Community_997

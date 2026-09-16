@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/group_rbac.py"
 type: "code"
-community: "Community 19"
+community: "Community 121"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_19
+  - community/Community_121
 ---
 
 # group_rbac.py
 
 ## Connections
-- [[Enum]] - `imports_from` [EXTRACTED]
+- [[Enum_3]] - `imports_from` [EXTRACTED]
 - [[GroupRole]] - `contains` [EXTRACTED]
 - [[GroupRoleResolver]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_19
+#graphify/code #graphify/EXTRACTED #community/Community_121

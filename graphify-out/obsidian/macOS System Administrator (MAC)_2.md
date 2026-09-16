@@ -1,20 +1,20 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mac/README.md"
 type: "document"
-community: "Community 1223"
+community: "Community 1270"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1223
+  - community/Community_1270
 ---
 
 # macOS System Administrator (MAC)
 
 ## Connections
-- [[Purpose_88]] - `contains` [EXTRACTED]
-- [[README_93]] - `contains` [EXTRACTED]
-- [[Related Skills_94]] - `contains` [EXTRACTED]
-- [[Usage_97]] - `contains` [EXTRACTED]
+- [[Purpose_87]] - `contains` [EXTRACTED]
+- [[Related Skills_78]] - `contains` [EXTRACTED]
+- [[Usage_82]] - `contains` [EXTRACTED]
+- [[openclawskillsi-macREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1223
+#graphify/document #graphify/EXTRACTED #community/Community_1270

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-hermes/SKILL.md"
 type: "document"
-community: "Community 1495"
+community: "Community 1536"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1495
+  - community/Community_1536
 ---
 
 # i-hermes SKILL — Reference Verifier
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[i-hermes README — Podcast Production Orchestrator]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1495
+#graphify/document #graphify/EXTRACTED #community/Community_1536

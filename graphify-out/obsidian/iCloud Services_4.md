@@ -1,25 +1,25 @@
 ---
-source_file: "skills/custom/icloud/SKILL.md"
+source_file: ".agents/skills/i-icloud/SKILL.md"
 type: "document"
-community: "Community 326"
+community: "Community 421"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_326
+  - community/Community_421
 ---
 
 # iCloud Services
 
 ## Connections
-- [[Calendar Operations_3]] - `contains` [EXTRACTED]
-- [[Configuration_18]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-icloudSKILL]] - `contains` [EXTRACTED]
+- [[Calendar Operations]] - `contains` [EXTRACTED]
 - [[Contact Operations_3]] - `contains` [EXTRACTED]
+- [[Key Configuration]] - `contains` [EXTRACTED]
 - [[Mail Operations_3]] - `contains` [EXTRACTED]
 - [[Notes Operations_3]] - `contains` [EXTRACTED]
-- [[SKILL_193]] - `contains` [EXTRACTED]
-- [[Security_10]] - `contains` [EXTRACTED]
+- [[Security_8]] - `contains` [EXTRACTED]
 - [[Setup_4]] - `contains` [EXTRACTED]
-- [[Troubleshooting_35]] - `contains` [EXTRACTED]
+- [[Troubleshooting_31]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_326
+#graphify/document #graphify/EXTRACTED #community/Community_421

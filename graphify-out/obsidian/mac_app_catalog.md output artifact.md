@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mac/SKILL.md"
 type: "concept"
-community: "Community 390"
+community: "Community 399"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_390
+  - community/Community_399
 ---
 
 # mac_app_catalog.md output artifact
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Mac App Discovery Skill_1]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_390
+#graphify/concept #graphify/EXTRACTED #community/Community_399

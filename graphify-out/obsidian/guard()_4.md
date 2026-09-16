@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_skill_guard.py"
+source_file: "gateway/tests/test_browser_security.py"
 type: "code"
-community: "Community 102"
-location: "L46"
+community: "Voice Gateway STT & Browser Security"
+location: "L26"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_102
+  - community/Voice_Gateway_STT__Browser_Security
 ---
 
 # guard()
 
 ## Connections
-- [[SkillGuard_1]] - `references` [EXTRACTED]
-- [[test_skill_guard.py]] - `contains` [EXTRACTED]
+- [[BrowserSecurityGuard]] - `calls` [EXTRACTED]
+- [[test_browser_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_102
+#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_STT__Browser_Security

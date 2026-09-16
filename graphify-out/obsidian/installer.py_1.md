@@ -1,17 +1,22 @@
 ---
 source_file: "docs/vault/02 - Modules/Web & Dashboard/installer.py.md"
 type: "document"
-community: "Community 1068"
-location: "L1"
+community: "Community 1120"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1068
+  - community/Community_1120
 ---
 
-# installer.py.md
+# installer.py
 
 ## Connections
-- [[installer.py_2]] - `contains` [EXTRACTED]
+- [[Endpoints (Inferred)]] - `contains` [EXTRACTED]
+- [[Key Features_1]] - `contains` [EXTRACTED]
+- [[Purpose_4]] - `contains` [EXTRACTED]
+- [[Related Notes_5]] - `contains` [EXTRACTED]
+- [[When Used]] - `contains` [EXTRACTED]
+- [[installer.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1068
+#graphify/document #graphify/EXTRACTED #community/Community_1120

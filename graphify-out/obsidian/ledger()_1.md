@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_cross_bot_trust_ledger.py"
+source_file: "gateway/tests/test_security_integration.py"
 type: "code"
-community: "Community 41"
-location: "L51"
+community: "Gateway Config & PII Sanitizer"
+location: "L91"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_41
+  - community/Gateway_Config__PII_Sanitizer
 ---
 
 # ledger()
 
 ## Connections
-- [[CrossBotTrustLedger_1]] - `references` [EXTRACTED]
-- [[TrustDecayPolicy_1]] - `references` [EXTRACTED]
-- [[test_cross_bot_trust_ledger.py]] - `contains` [EXTRACTED]
+- [[DataLedger]] - `calls` [EXTRACTED]
+- [[LedgerConfig]] - `calls` [EXTRACTED]
+- [[test_security_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_41
+#graphify/code #graphify/EXTRACTED #community/Gateway_Config__PII_Sanitizer
