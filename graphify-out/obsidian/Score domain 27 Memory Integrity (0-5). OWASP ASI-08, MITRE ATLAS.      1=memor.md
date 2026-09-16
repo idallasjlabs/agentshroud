@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "Community 72"
+community: "Community 60"
 location: "L1890"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_72
+  - community/Community_60
 ---
 
 # Score domain 27: Memory Integrity (0-5). OWASP ASI-08, MITRE ATLAS.      1=memor
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_score_memory_integrity()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_72
+#graphify/rationale #graphify/EXTRACTED #community/Community_60

@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/securebrowser/SKILL.md"
+source_file: "docs/security/SECURITY_VERIFICATION.md"
 type: "document"
-community: "Community 240"
-location: "L334"
+community: "Community 605"
+location: "L83"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_240
+  - community/Community_605
 ---
 
 # Security Guarantees
 
 ## Connections
-- [[SecureBrowser - Enterprise Secure Browser Automation]] - `contains` [EXTRACTED]
+- [[Security Verification Report]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_240
+#graphify/document #graphify/EXTRACTED #community/Community_605

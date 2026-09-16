@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_injection.py"
 type: "rationale"
-community: "Memory Lifecycle & Egress Filtering"
+community: "Community 101"
 location: "L174"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Memory_Lifecycle__Egress_Filtering
+  - community/Community_101
 ---
 
 # Scanner for detecting prompt injection in tool results.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ToolResultInjectionScanner]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Memory_Lifecycle__Egress_Filtering
+#graphify/rationale #graphify/EXTRACTED #community/Community_101

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
+source_file: "skills/custom/securebrowser/SKILL.md"
 type: "document"
-community: "Community 257"
-location: "L298"
+community: "Community 251"
+location: "L334"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_257
+  - community/Community_251
 ---
 
 # Security Guarantees
 
 ## Connections
-- [[Browser — Secure Browser Automation_5]] - `contains` [EXTRACTED]
+- [[SecureBrowser - Enterprise Secure Browser Automation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_257
+#graphify/document #graphify/EXTRACTED #community/Community_251

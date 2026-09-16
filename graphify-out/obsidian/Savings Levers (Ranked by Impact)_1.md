@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-aws/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-aws/SKILL.md"
 type: "document"
-community: "Community 234"
+community: "Community 243"
 location: "L181"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_234
+  - community/Community_243
 ---
 
 # Savings Levers (Ranked by Impact)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[FY26 Cost Reduction Context_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_234
+#graphify/document #graphify/EXTRACTED #community/Community_243

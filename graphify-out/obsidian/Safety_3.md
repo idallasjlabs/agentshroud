@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/oracle/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-pr/SKILL.md"
 type: "document"
-community: "Community 715"
-location: "L113"
+community: "Community 939"
+location: "L34"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_715
+  - community/Community_939
 ---
 
 # Safety
 
 ## Connections
-- [[oracle — best use]] - `contains` [EXTRACTED]
+- [[Content Requirements_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_715
+#graphify/document #graphify/EXTRACTED #community/Community_939

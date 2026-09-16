@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/metadata_guard.py"
 type: "rationale"
-community: "Security Audit & Drift Detection"
+community: "Alert Dispatcher & RBAC Reliability"
 location: "L75"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Audit__Drift_Detection
+  - community/Alert_Dispatcher__RBAC_Reliability
 ---
 
 # Sanitize HTTP headers by removing sensitive information.
 
 ## Connections
-- [[.sanitize_headers()]] - `rationale_for` [EXTRACTED]
+- [[dot-sanitize_headers()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Drift_Detection
+#graphify/rationale #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability

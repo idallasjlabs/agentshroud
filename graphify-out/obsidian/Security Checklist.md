@@ -1,17 +1,17 @@
 ---
 source_file: "docs/security/SECURITY_ARCHITECTURE.md"
 type: "document"
-community: "Community 153"
+community: "Community 146"
 location: "L530"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_153
+  - community/Community_146
 ---
 
 # Security Checklist
 
 ## Connections
-- [[Quick Reference_6]] - `contains` [EXTRACTED]
+- [[Quick Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_153
+#graphify/document #graphify/EXTRACTED #community/Community_146

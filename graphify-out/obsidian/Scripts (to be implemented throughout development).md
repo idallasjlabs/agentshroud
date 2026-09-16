@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/README.md"
 type: "document"
-community: "Community 555"
+community: "Community 528"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_555
+  - community/Community_528
 ---
 
 # Scripts (to be implemented throughout development)
@@ -17,4 +17,4 @@ tags:
 - [[Security Scripts]] - `contains` [EXTRACTED]
 - [[Utility Scripts]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_555
+#graphify/document #graphify/EXTRACTED #community/Community_528

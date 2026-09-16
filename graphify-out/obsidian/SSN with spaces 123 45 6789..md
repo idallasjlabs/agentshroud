@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "Security Audit & Drift Detection"
+community: "P3 Infrastructure Security Modules"
 location: "L69"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Audit__Drift_Detection
+  - community/P3_Infrastructure_Security_Modules
 ---
 
 # SSN with spaces: 123 45 6789.
 
 ## Connections
-- [[.test_ssn_space_separated()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_ssn_space_separated()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Drift_Detection
+#graphify/rationale #graphify/EXTRACTED #community/P3_Infrastructure_Security_Modules

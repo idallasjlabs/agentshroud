@@ -1,31 +1,31 @@
 ---
-source_file: "gateway/ingest_api/main.py"
+source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "RBAC & SOC Realtime"
-location: "L1099"
+community: "Ingest API & RBAC Core"
+location: "L261"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/RBAC__SOC_Realtime
+  - community/Ingest_API__RBAC_Core
 ---
 
 # SSHWriteFileRequest
 
 ## Connections
-- [[Action_1]] - `uses` [INFERRED]
-- [[ApprovalMode]] - `uses` [INFERRED]
-- [[ApprovalRequest_3]] - `uses` [INFERRED]
-- [[AuditExportConfig_1]] - `uses` [INFERRED]
-- [[AuditExporter]] - `uses` [INFERRED]
-- [[LedgerEntry_1]] - `uses` [INFERRED]
-- [[LedgerQueryResponse_1]] - `uses` [INFERRED]
-- [[MiddlewareManager]] - `uses` [INFERRED]
-- [[Resource_1]] - `uses` [INFERRED]
-- [[Role_1]] - `uses` [INFERRED]
+- [[dot-path_not_empty()]] - `method` [EXTRACTED]
+- [[dot-validate_base64()]] - `method` [EXTRACTED]
+- [[AuthRequired]] - `uses` [INFERRED]
+- [[BaseModel]] - `inherits` [EXTRACTED]
+- [[Exception]] - `uses` [INFERRED]
+- [[MCPProxyRequest]] - `uses` [INFERRED]
+- [[MCPResultRequest]] - `uses` [INFERRED]
+- [[OpProxyRequest]] - `uses` [INFERRED]
+- [[Request]] - `uses` [INFERRED]
+- [[Request to write file content to an allowlisted SSH host.      Unlike SSHExecReq]] - `rationale_for` [EXTRACTED]
 - [[SSHExecRequest_1]] - `uses` [INFERRED]
-- [[SSHExecResponse]] - `uses` [INFERRED]
 - [[SSHWriteFileRequest_1]] - `uses` [INFERRED]
-- [[SSHWriteFileResponse]] - `uses` [INFERRED]
-- [[ssh_write_file()]] - `references` [EXTRACTED]
+- [[WebSocket]] - `uses` [INFERRED]
+- [[ingest_apimain.py]] - `imports` [EXTRACTED]
+- [[ingest_apimodels.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/RBAC__SOC_Realtime
+#graphify/code #graphify/INFERRED #community/Ingest_API__RBAC_Core

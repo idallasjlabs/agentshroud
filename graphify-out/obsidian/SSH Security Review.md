@@ -1,12 +1,12 @@
 ---
 source_file: "docs/ssh-security-review.md"
 type: "document"
-community: "Community 800"
+community: "Community 841"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_800
+  - community/Community_841
 ---
 
 # SSH Security Review
@@ -15,7 +15,7 @@ tags:
 - [[Comparison Direct SSH vs. AgentShroud SSH Proxy]] - `contains` [EXTRACTED]
 - [[Recommendations for Production Deployment]] - `contains` [EXTRACTED]
 - [[Risk Summary]] - `contains` [EXTRACTED]
-- [[Threat Model_1]] - `contains` [EXTRACTED]
+- [[Threat Model_28]] - `contains` [EXTRACTED]
 - [[ssh-security-review]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_800
+#graphify/document #graphify/EXTRACTED #community/Community_841

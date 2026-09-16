@@ -1,22 +1,20 @@
 ---
-source_file: "docs/setup/DEVICE_PAIRING.md"
+source_file: "docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "Community 1119"
-location: "L286"
+community: "Community 838"
+location: "L199"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1119
+  - community/Community_838
 ---
 
 # Security Best Practices
 
 ## Connections
-- [[1. Regular Audits]] - `contains` [EXTRACTED]
-- [[2. Principle of Least Privilege]] - `contains` [EXTRACTED]
-- [[3. Monitor Remote IPs]] - `contains` [EXTRACTED]
-- [[4. Document Your Devices]] - `contains` [EXTRACTED]
-- [[5. Rotate on Compromise]] - `contains` [EXTRACTED]
-- [[AgentShroud Device Pairing Management]] - `contains` [EXTRACTED]
+- [[AWS Credentials_2]] - `contains` [EXTRACTED]
+- [[Atlassian OAuth_2]] - `contains` [EXTRACTED]
+- [[GitHub PAT_2]] - `contains` [EXTRACTED]
+- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1119
+#graphify/document #graphify/EXTRACTED #community/Community_838

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/SYSTEM-INSTRUCTIONS-SECURITY.md"
 type: "document"
-community: "Community 1171"
+community: "Community 360"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1171
+  - community/Community_360
 ---
 
 # SYSTEM-INSTRUCTIONS-SECURITY.md
@@ -17,4 +17,4 @@ tags:
 - [[System Instructions Credential Security (Ultra-Conservative)]] - `contains` [EXTRACTED]
 - [[bot-capabilities]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1171
+#graphify/document #graphify/EXTRACTED #community/Community_360

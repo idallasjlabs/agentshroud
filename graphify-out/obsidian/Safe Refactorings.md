@@ -1,12 +1,12 @@
 ---
 source_file: ".github/agents/safe-refactor.agent.md"
 type: "document"
-community: "Community 389"
+community: "Community 397"
 location: "L39"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_389
+  - community/Community_397
 ---
 
 # Safe Refactorings
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[What You CAN Refactor]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_389
+#graphify/document #graphify/EXTRACTED #community/Community_397

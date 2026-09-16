@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/web_content_scanner.py"
 type: "rationale"
-community: "Community 48"
+community: "Voice Gateway STT & Browser Security"
 location: "L322"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_48
+  - community/Voice_Gateway_STT__Browser_Security
 ---
 
 # Scan for base64-encoded or otherwise obfuscated payloads.
 
 ## Connections
-- [[._scan_encoded_payloads()]] - `rationale_for` [EXTRACTED]
+- [[dot-_scan_encoded_payloads()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_48
+#graphify/rationale #graphify/EXTRACTED #community/Voice_Gateway_STT__Browser_Security

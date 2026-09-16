@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "rationale"
-community: "Memory Lifecycle & Egress Filtering"
+community: "Memory Integrity & Lifecycle"
 location: "L161"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Memory_Lifecycle__Egress_Filtering
+  - community/Memory_Integrity__Lifecycle
 ---
 
 # Sanitize content by removing/redacting threats.
 
 ## Connections
-- [[.sanitize_content()]] - `rationale_for` [EXTRACTED]
+- [[dot-sanitize_content()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Memory_Lifecycle__Egress_Filtering
+#graphify/rationale #graphify/EXTRACTED #community/Memory_Integrity__Lifecycle

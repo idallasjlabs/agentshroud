@@ -1,12 +1,12 @@
 ---
 source_file: "docs/TEAM.md"
 type: "document"
-community: "Community 472"
+community: "Community 485"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_472
+  - community/Community_485
 ---
 
 # Scrum Master / Agile Coach
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Development Team — Agile Structure]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_472
+#graphify/document #graphify/EXTRACTED #community/Community_485

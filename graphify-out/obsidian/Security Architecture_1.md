@@ -1,24 +1,17 @@
 ---
-source_file: "SECURITY.md"
+source_file: "skills/custom/securebrowser/SKILL.md"
 type: "document"
-community: "Community 374"
-location: "L15"
+community: "Community 251"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_374
+  - community/Community_251
 ---
 
 # Security Architecture
 
 ## Connections
-- [[AgentShroud™ Security Policy]] - `contains` [EXTRACTED]
-- [[Layer 1 — Core Pipeline (P0)]] - `contains` [EXTRACTED]
-- [[Layer 2 — Middleware (P1)]] - `contains` [EXTRACTED]
-- [[Layer 3 — Output Protection]] - `contains` [EXTRACTED]
-- [[Layer 4 — Tool & Agent Control]] - `contains` [EXTRACTED]
-- [[Layer 5 — Network & Egress]] - `contains` [EXTRACTED]
-- [[Layer 6 — File & Memory Integrity]] - `contains` [EXTRACTED]
-- [[Layer 7 — Infrastructure & Supply Chain]] - `contains` [EXTRACTED]
+- [[SecureBrowser - Enterprise Secure Browser Automation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_374
+#graphify/document #graphify/EXTRACTED #community/Community_251

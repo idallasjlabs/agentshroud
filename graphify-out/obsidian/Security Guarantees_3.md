@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/SECURITY_VERIFICATION.md"
+source_file: "docker/config/hermes/skills/i-browser/SKILL.md"
 type: "document"
-community: "Community 587"
-location: "L83"
+community: "Community 269"
+location: "L298"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_587
+  - community/Community_269
 ---
 
 # Security Guarantees
 
 ## Connections
-- [[Security Verification Report]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_587
+#graphify/document #graphify/EXTRACTED #community/Community_269

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "RBAC & SOC Realtime"
+community: "Ingest API & RBAC Core"
 location: "L305"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/RBAC__SOC_Realtime
+  - community/Ingest_API__RBAC_Core
 ---
 
 # SSHWriteFileResponse
@@ -14,17 +14,17 @@ tags:
 ## Connections
 - [[AuthRequired]] - `uses` [INFERRED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
-- [[Exception_1]] - `uses` [INFERRED]
+- [[Exception]] - `uses` [INFERRED]
 - [[MCPProxyRequest]] - `uses` [INFERRED]
 - [[MCPResultRequest]] - `uses` [INFERRED]
 - [[OpProxyRequest]] - `uses` [INFERRED]
-- [[Request_2]] - `uses` [INFERRED]
+- [[Request]] - `uses` [INFERRED]
 - [[Response from POST sshwrite_file.      success reflects whether the remote wri]] - `rationale_for` [EXTRACTED]
-- [[SSHExecRequest]] - `uses` [INFERRED]
-- [[SSHWriteFileRequest]] - `uses` [INFERRED]
-- [[WebSocket_3]] - `uses` [INFERRED]
-- [[main.py_2]] - `imports` [EXTRACTED]
-- [[models.py]] - `contains` [EXTRACTED]
+- [[SSHExecRequest_1]] - `uses` [INFERRED]
+- [[SSHWriteFileRequest_1]] - `uses` [INFERRED]
+- [[WebSocket]] - `uses` [INFERRED]
+- [[ingest_apimain.py]] - `imports` [EXTRACTED]
+- [[ingest_apimodels.py]] - `contains` [EXTRACTED]
 - [[ssh_write_file()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/RBAC__SOC_Realtime
+#graphify/code #graphify/INFERRED #community/Ingest_API__RBAC_Core

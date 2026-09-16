@@ -1,19 +1,19 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "Community 138"
+community: "Community 135"
 location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_138
+  - community/Community_135
 ---
 
 # SecurityConfig
 
 ## Connections
-- [[._load_config()_1]] - `references` [EXTRACTED]
+- [[dot-_load_config()_1]] - `references` [EXTRACTED]
 - [[Security configuration for browser automation_1]] - `rationale_for` [EXTRACTED]
-- [[browse.py_1]] - `contains` [EXTRACTED]
+- [[hermesskillsi-browserscriptsbrowse.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_138
+#graphify/code #graphify/EXTRACTED #community/Community_135

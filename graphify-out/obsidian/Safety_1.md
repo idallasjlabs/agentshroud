@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-pr/SKILL.md"
+source_file: ".agents/skills/i-pr/SKILL.md"
 type: "document"
-community: "Community 891"
+community: "Community 924"
 location: "L34"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_891
+  - community/Community_924
 ---
 
 # Safety
 
 ## Connections
-- [[Content Requirements_1]] - `contains` [EXTRACTED]
+- [[Content Requirements]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_891
+#graphify/document #graphify/EXTRACTED #community/Community_924

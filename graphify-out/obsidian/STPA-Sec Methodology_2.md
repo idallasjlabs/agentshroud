@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-sec-defense/SKILL.md"
+source_file: "docker/config/hermes/skills/i-sec-defense/SKILL.md"
 type: "concept"
-community: "Community 46"
+community: "Community 426"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_46
+  - community/Community_426
 ---
 
 # STPA-Sec Methodology
 
 ## Connections
-- [[AgentShroud Blue Team Security Auditor (SEC-DEFENSE)]] - `references` [EXTRACTED]
-- [[AgentShroud Red Team Adversarial Tester (SEC-OFFENSE)]] - `references` [EXTRACTED]
+- [[i-sec-defense SKILL (Blue Team Security Auditor, AgentShroud)]] - `references` [EXTRACTED]
+- [[i-sec-offense SKILL (Red Team Adversarial Tester, AgentShroud)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_46
+#graphify/concept #graphify/EXTRACTED #community/Community_426

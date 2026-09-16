@@ -1,23 +1,23 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "Community 138"
+community: "Community 135"
 location: "L426"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_138
+  - community/Community_135
 ---
 
 # SecurityError
 
 ## Connections
-- [[.click()_1]] - `calls` [EXTRACTED]
-- [[.extract()_1]] - `calls` [EXTRACTED]
-- [[.fill_field()_1]] - `calls` [EXTRACTED]
-- [[.navigate()_1]] - `calls` [EXTRACTED]
-- [[Exception]] - `inherits` [EXTRACTED]
+- [[dot-click()_1]] - `calls` [EXTRACTED]
+- [[dot-extract()_1]] - `calls` [EXTRACTED]
+- [[dot-fill_field()_1]] - `calls` [EXTRACTED]
+- [[dot-navigate()_1]] - `calls` [EXTRACTED]
+- [[Exception_4]] - `inherits` [EXTRACTED]
 - [[Raised when security policy is violated_1]] - `rationale_for` [EXTRACTED]
-- [[browse.py_1]] - `contains` [EXTRACTED]
+- [[hermesskillsi-browserscriptsbrowse.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_138
+#graphify/code #graphify/EXTRACTED #community/Community_135

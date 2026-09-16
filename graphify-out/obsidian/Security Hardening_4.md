@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/06 - Containers & Services/agentshroud-gateway.md"
+source_file: "docs/vault/03 - Configuration/Dockerfile.gateway.md"
 type: "document"
-community: "Community 339"
-location: "L68"
+community: "Community 865"
+location: "L51"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_339
+  - community/Community_865
 ---
 
 # Security Hardening
 
 ## Connections
-- [[agentshroud-gateway_1]] - `contains` [EXTRACTED]
+- [[Dockerfile — Gateway]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_339
+#graphify/document #graphify/EXTRACTED #community/Community_865

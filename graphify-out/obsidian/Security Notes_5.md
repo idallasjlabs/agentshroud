@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Other/ssh_proxy.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md"
 type: "document"
-community: "Community 903"
-location: "L58"
+community: "Community 384"
+location: "L198"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_903
+  - community/Community_384
 ---
 
 # Security Notes
 
 ## Connections
-- [[ssh_proxy.py_1]] - `contains` [EXTRACTED]
+- [[http_proxy.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_903
+#graphify/document #graphify/EXTRACTED #community/Community_384

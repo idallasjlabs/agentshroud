@@ -1,12 +1,12 @@
 ---
 source_file: "docker/QUICKSTART.md"
 type: "document"
-community: "Community 238"
+community: "Community 245"
 location: "L326"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_238
+  - community/Community_245
 ---
 
 # Security Validation
@@ -16,4 +16,4 @@ tags:
 - [[Check File Permissions]] - `contains` [EXTRACTED]
 - [[Verify Isolation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_238
+#graphify/document #graphify/EXTRACTED #community/Community_245

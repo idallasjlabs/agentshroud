@@ -1,11 +1,11 @@
 ---
 source_file: "docs/ssh-configuration.md"
 type: "concept"
-community: "Community 847"
+community: "Community 429"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_847
+  - community/Community_429
 ---
 
 # SSH Proxy Config Schema (agentshroud.yaml ssh: section)
@@ -16,4 +16,4 @@ tags:
 - [[SSH Auto-Approve Commands]] - `conceptually_related_to` [EXTRACTED]
 - [[SSH Proxy Threat Model (6 threats)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_847
+#graphify/concept #graphify/EXTRACTED #community/Community_429
