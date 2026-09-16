@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "Community 79"
+community: "File Sandbox & Privilege Separation Tests"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_79
+  - community/File_Sandbox__Privilege_Separation_Tests
 ---
 
 # file_sandbox.py
@@ -21,7 +21,7 @@ tags:
 - [[PIIScanResult]] - `contains` [EXTRACTED]
 - [[PIIScanner]] - `contains` [EXTRACTED]
 - [[Rule agentshroud-path-traversal-open]] - `references` [EXTRACTED]
-- [[SKILL_190]] - `references` [EXTRACTED]
 - [[StagingPattern]] - `contains` [EXTRACTED]
+- [[agentshroud-blueteamSKILL]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_79
+#graphify/code #graphify/EXTRACTED #community/File_Sandbox__Privilege_Separation_Tests

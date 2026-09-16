@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "code"
-community: "Security Audit & Drift Detection"
+community: "P3 Infrastructure Security Modules"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Audit__Drift_Detection
+  - community/P3_Infrastructure_Security_Modules
 ---
 
 # gateway/security/encrypted_store.py (EncryptedStore)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_security_audit.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Audit__Drift_Detection
+#graphify/code #graphify/EXTRACTED #community/P3_Infrastructure_Security_Modules

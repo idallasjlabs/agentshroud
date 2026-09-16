@@ -1,18 +1,22 @@
 ---
-source_file: "docker/tests/test-op-auth.sh"
+source_file: "scripts/verify-proxy.sh"
 type: "code"
-community: "Community 1170"
-location: "L14"
+community: "Proxy Sidecar & Forwarder"
+location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1170
+  - community/Proxy_Sidecar__Forwarder
 ---
 
 # fail()
 
 ## Connections
-- [[test-op-auth.sh]] - `defines` [EXTRACTED]
-- [[test-op-auth.sh script]] - `calls` [EXTRACTED]
+- [[run_bypass()]] - `calls` [EXTRACTED]
+- [[run_canary()]] - `calls` [EXTRACTED]
+- [[run_chain()]] - `calls` [EXTRACTED]
+- [[run_full()]] - `calls` [EXTRACTED]
+- [[run_quick()]] - `calls` [EXTRACTED]
+- [[verify-proxy.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1170
+#graphify/code #graphify/EXTRACTED #community/Proxy_Sidecar__Forwarder

@@ -12,8 +12,8 @@ tags:
 # deploy_status_errors_when_version_unauthorized()
 
 ## Connections
-- [[.new()_2]] - `calls` [EXTRACTED]
-- [[.with()]] - `calls` [EXTRACTED]
+- [[dot-new()_2]] - `calls` [EXTRACTED]
+- [[dot-with()]] - `calls` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Community_36

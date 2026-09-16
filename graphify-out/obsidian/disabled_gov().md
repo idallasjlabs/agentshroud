@@ -1,19 +1,18 @@
 ---
 source_file: "gateway/tests/test_subagent_governance.py"
 type: "code"
-community: "Community 507"
-location: "L35"
+community: "Community 1014"
+location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_507
+  - community/Community_1014
 ---
 
 # disabled_gov()
 
 ## Connections
-- [[GovernanceConfig]] - `calls` [EXTRACTED]
-- [[SubagentGovernance]] - `calls` [EXTRACTED]
+- [[fixture]] - `references` [EXTRACTED]
 - [[test_subagent_governance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_507
+#graphify/code #graphify/EXTRACTED #community/Community_1014

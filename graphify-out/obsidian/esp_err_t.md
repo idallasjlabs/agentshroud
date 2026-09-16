@@ -1,23 +1,18 @@
 ---
-source_file: "firmware/voice-terminal/main/ws_client.c"
+source_file: "firmware/voice-terminal/main/ota.c"
 type: "code"
-community: "Community 418"
-location: "L229"
+community: "Community 1011"
+location: "L14"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_418
+  - community/Community_1011
 ---
 
 # esp_err_t
 
 ## Connections
-- [[ws_client_send_end()]] - `references` [EXTRACTED]
-- [[ws_client_send_keepalive()]] - `references` [EXTRACTED]
-- [[ws_client_send_listen()]] - `references` [EXTRACTED]
-- [[ws_client_send_listen_resume()]] - `references` [EXTRACTED]
-- [[ws_client_send_log()]] - `references` [EXTRACTED]
-- [[ws_client_send_pcm()]] - `references` [EXTRACTED]
-- [[ws_client_send_stop()]] - `references` [EXTRACTED]
+- [[_http_event_handler()]] - `references` [EXTRACTED]
+- [[ota_check()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_418
+#graphify/code #graphify/EXTRACTED #community/Community_1011

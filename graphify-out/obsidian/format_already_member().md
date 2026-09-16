@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/proxy/collaborator_responses.py"
 type: "code"
-community: "Community 49"
+community: "Teams/Group Collaborator Responses"
 location: "L117"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_49
+  - community/Teams/Group_Collaborator_Responses
 ---
 
 # format_already_member()
 
 ## Connections
-- [[.test_already_member()]] - `calls` [EXTRACTED]
+- [[dot-test_already_member()]] - `calls` [EXTRACTED]
 - [[collaborator_responses.py]] - `contains` [EXTRACTED]
 - [[test_collaborator_responses.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_49
+#graphify/code #graphify/EXTRACTED #community/Teams/Group_Collaborator_Responses

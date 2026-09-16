@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_config.py"
 type: "code"
-community: "Community 174"
+community: "Community 52"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_174
+  - community/Community_52
 ---
 
 # egress_config.py
@@ -14,20 +14,21 @@ tags:
 ## Connections
 - [[AgentShroud Blue Team Security Auditor (SEC-DEFENSE)]] - `references` [EXTRACTED]
 - [[EgressFilterConfig]] - `contains` [EXTRACTED]
-- [[SKILL_190]] - `references` [EXTRACTED]
+- [[agentshroud-blueteamSKILL]] - `references` [EXTRACTED]
 - [[browser_security.py]] - `references` [EXTRACTED]
 - [[citation_verifier.py]] - `shares_data_with` [EXTRACTED]
 - [[consent_framework.py]] - `references` [EXTRACTED]
-- [[domain_matches()]] - `contains` [EXTRACTED]
+- [[domain_matches]] - `contains` [EXTRACTED]
 - [[egress_approval.py]] - `imports_from` [EXTRACTED]
-- [[egress_filter.py]] - `imports_from` [EXTRACTED]
+- [[egress_filter.py_1]] - `imports_from` [EXTRACTED]
 - [[egress_monitor.py]] - `references` [EXTRACTED]
-- [[get_egress_config()]] - `contains` [EXTRACTED]
+- [[feed_hosts.py]] - `imports_from` [EXTRACTED]
+- [[get_egress_config]] - `contains` [EXTRACTED]
 - [[http_proxy.py]] - `imports_from` [EXTRACTED]
-- [[key_vault.py]] - `references` [EXTRACTED]
+- [[key_vault.py_2]] - `references` [EXTRACTED]
 - [[lifespan.py]] - `imports_from` [EXTRACTED]
 - [[management.py]] - `imports_from` [EXTRACTED]
 - [[set_egress_config()]] - `contains` [EXTRACTED]
 - [[subagent_monitor.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_174
+#graphify/code #graphify/EXTRACTED #community/Community_52

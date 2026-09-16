@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_mcp_policy.py"
+source_file: "gateway/tests/test_a2a_policy.py"
 type: "code"
-community: "Community 33"
-location: "L52"
+community: "Community 75"
+location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_33
+  - community/Community_75
 ---
 
 # engine()
 
 ## Connections
-- [[MCPPolicyEngine_1]] - `references` [EXTRACTED]
+- [[A2APolicyEngine_3]] - `references` [EXTRACTED]
 - [[_base_config()_1]] - `calls` [EXTRACTED]
-- [[test_mcp_policy.py]] - `contains` [EXTRACTED]
+- [[test_a2a_policy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_33
+#graphify/code #graphify/EXTRACTED #community/Community_75

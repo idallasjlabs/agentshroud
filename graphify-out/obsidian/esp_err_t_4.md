@@ -1,17 +1,17 @@
 ---
-source_file: "firmware/voice-terminal/main/wakeword.c"
+source_file: "firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c"
 type: "code"
-community: "Community 90"
-location: "L178"
+community: "Community 272"
+location: "L157"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_90
+  - community/Community_272
 ---
 
 # esp_err_t
 
 ## Connections
-- [[wakeword_init()]] - `references` [EXTRACTED]
+- [[face_animation_init()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_90
+#graphify/code #graphify/EXTRACTED #community/Community_272

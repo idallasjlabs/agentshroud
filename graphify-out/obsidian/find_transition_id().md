@@ -1,19 +1,19 @@
 ---
-source_file: "docker/config/hermes/workspace/jira_dev_ticket.py"
+source_file: "docker/config/openclaw/workspace/jira_dev_ticket.py"
 type: "code"
-community: "Community 171"
+community: "Community 165"
 location: "L182"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_171
+  - community/Community_165
 ---
 
 # find_transition_id()
 
 ## Connections
 - [[Match a transition by its own name or its destination status name.]] - `rationale_for` [EXTRACTED]
-- [[jira_dev_ticket.py]] - `contains` [EXTRACTED]
+- [[openclawworkspacejira_dev_ticket.py]] - `contains` [EXTRACTED]
 - [[transition_issue()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_171
+#graphify/code #graphify/EXTRACTED #community/Community_165

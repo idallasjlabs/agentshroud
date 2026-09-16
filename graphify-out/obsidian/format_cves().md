@@ -12,8 +12,8 @@ tags:
 # format_cves()
 
 ## Connections
-- [[.get()_1]] - `calls` [EXTRACTED]
-- [[.new()_2]] - `calls` [EXTRACTED]
+- [[dot-get()_3]] - `calls` [EXTRACTED]
+- [[dot-new()_2]] - `calls` [EXTRACTED]
 - [[String]] - `references` [EXTRACTED]
 - [[Value]] - `references` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]

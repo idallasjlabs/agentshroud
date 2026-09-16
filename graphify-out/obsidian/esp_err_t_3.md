@@ -1,18 +1,16 @@
 ---
-source_file: "firmware/voice-terminal/main/ota.c"
+source_file: ""
 type: "code"
-community: "Community 966"
-location: "L14"
+community: "Community 246"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_966
+  - community/Community_246
 ---
 
 # esp_err_t
 
 ## Connections
-- [[_http_event_handler()]] - `references` [EXTRACTED]
-- [[ota_check()]] - `references` [EXTRACTED]
+- [[wakeword_init]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_966
+#graphify/code #graphify/EXTRACTED #community/Community_246

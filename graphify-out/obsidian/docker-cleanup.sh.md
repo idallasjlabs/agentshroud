@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/docker-cleanup.sh"
 type: "code"
-community: "Community 312"
+community: "Community 1027"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_312
+  - community/Community_1027
 ---
 
 # docker-cleanup.sh
@@ -21,4 +21,4 @@ tags:
 - [[docker-cleanup.sh script]] - `contains` [EXTRACTED]
 - [[usage()]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_312
+#graphify/code #graphify/EXTRACTED #community/Community_1027

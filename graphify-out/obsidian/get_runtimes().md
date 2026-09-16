@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/installer.py"
 type: "code"
-community: "Community 447"
+community: "Community 460"
 location: "L183"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_447
+  - community/Community_460
 ---
 
 # get_runtimes()
@@ -15,6 +15,6 @@ tags:
 - [[Get available runtimes with recommendations.]] - `rationale_for` [EXTRACTED]
 - [[detect_runtime()]] - `calls` [EXTRACTED]
 - [[get_security_comparison()]] - `calls` [EXTRACTED]
-- [[installer.py]] - `contains` [EXTRACTED]
+- [[installer.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_447
+#graphify/code #graphify/EXTRACTED #community/Community_460
