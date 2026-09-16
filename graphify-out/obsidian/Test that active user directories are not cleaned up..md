@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_path_isolation.py"
 type: "rationale"
-community: "Community 61"
+community: "Community 192"
 location: "L246"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_61
+  - community/Community_192
 ---
 
 # Test that active user directories are not cleaned up.
 
 ## Connections
-- [[.test_dont_cleanup_active_user_directories()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_dont_cleanup_active_user_directories()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_61
+#graphify/rationale #graphify/EXTRACTED #community/Community_192

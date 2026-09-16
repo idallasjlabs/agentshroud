@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_integration.py"
 type: "rationale"
-community: "Community 811"
+community: "Community 858"
 location: "L25"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_811
+  - community/Community_858
 ---
 
 # Test /forward endpoint with proper authentication
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_forward_with_auth()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_811
+#graphify/rationale #graphify/EXTRACTED #community/Community_858

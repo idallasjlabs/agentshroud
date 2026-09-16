@@ -12,6 +12,6 @@ tags:
 # Test that all core modules default to enforce mode.
 
 ## Connections
-- [[.test_security_config_all_defaults_enforce()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_security_config_all_defaults_enforce()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/Community_157

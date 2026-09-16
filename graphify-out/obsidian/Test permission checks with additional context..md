@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "rationale"
-community: "RBAC & SOC Realtime"
+community: "Ingest API & RBAC Core"
 location: "L447"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBAC__SOC_Realtime
+  - community/Ingest_API__RBAC_Core
 ---
 
 # Test permission checks with additional context.
 
 ## Connections
-- [[.test_permission_check_with_context()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_permission_check_with_context()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBAC__SOC_Realtime
+#graphify/rationale #graphify/EXTRACTED #community/Ingest_API__RBAC_Core

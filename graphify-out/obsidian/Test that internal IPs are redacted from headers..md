@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_metadata_guard.py"
 type: "rationale"
-community: "Community 350"
+community: "Community 354"
 location: "L36"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_350
+  - community/Community_354
 ---
 
 # Test that internal IPs are redacted from headers.
 
 ## Connections
-- [[.test_sanitize_headers_redacts_internal_ips()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_sanitize_headers_redacts_internal_ips()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_350
+#graphify/rationale #graphify/EXTRACTED #community/Community_354

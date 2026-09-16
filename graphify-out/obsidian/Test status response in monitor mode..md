@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_enhanced_status.py"
 type: "rationale"
-community: "Community 663"
+community: "Community 686"
 location: "L64"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_663
+  - community/Community_686
 ---
 
 # Test status response in monitor mode.
 
 ## Connections
-- [[.test_status_response_monitor_mode()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_status_response_monitor_mode()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_663
+#graphify/rationale #graphify/EXTRACTED #community/Community_686

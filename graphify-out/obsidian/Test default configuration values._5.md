@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
+source_file: "gateway/tests/test_path_isolation.py"
 type: "rationale"
-community: "Memory Lifecycle & Egress Filtering"
-location: "L21"
+community: "Community 659"
+location: "L24"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Memory_Lifecycle__Egress_Filtering
+  - community/Community_659
 ---
 
 # Test default configuration values.
 
 ## Connections
-- [[.test_default_config()_7]] - `rationale_for` [EXTRACTED]
+- [[dot-test_default_config()_6]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Memory_Lifecycle__Egress_Filtering
+#graphify/rationale #graphify/EXTRACTED #community/Community_659

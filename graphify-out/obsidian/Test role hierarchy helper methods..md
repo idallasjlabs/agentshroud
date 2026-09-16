@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "rationale"
-community: "RBAC & SOC Realtime"
+community: "Ingest API & RBAC Core"
 location: "L51"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBAC__SOC_Realtime
+  - community/Ingest_API__RBAC_Core
 ---
 
 # Test role hierarchy helper methods.
 
 ## Connections
-- [[.test_role_hierarchy_checks()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_role_hierarchy_checks()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBAC__SOC_Realtime
+#graphify/rationale #graphify/EXTRACTED #community/Ingest_API__RBAC_Core

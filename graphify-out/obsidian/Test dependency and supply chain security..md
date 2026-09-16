@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "Security Audit & Drift Detection"
+community: "Session Manager & PII/Context Guard"
 location: "L628"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Audit__Drift_Detection
+  - community/Session_Manager__PII/Context_Guard
 ---
 
 # Test dependency and supply chain security.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestDependencySecurity]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Drift_Detection
+#graphify/rationale #graphify/EXTRACTED #community/Session_Manager__PII/Context_Guard

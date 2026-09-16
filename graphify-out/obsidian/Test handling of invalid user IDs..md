@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "rationale"
-community: "RBAC & SOC Realtime"
+community: "Ingest API & RBAC Core"
 location: "L418"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBAC__SOC_Realtime
+  - community/Ingest_API__RBAC_Core
 ---
 
 # Test handling of invalid user IDs.
 
 ## Connections
-- [[.test_invalid_user_id()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_invalid_user_id()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBAC__SOC_Realtime
+#graphify/rationale #graphify/EXTRACTED #community/Ingest_API__RBAC_Core

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "rationale"
-community: "Community 533"
+community: "Community 544"
 location: "L125"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_533
+  - community/Community_544
 ---
 
 # Test rotation requirement calculation.
 
 ## Connections
-- [[.test_should_rotate()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_should_rotate()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_533
+#graphify/rationale #graphify/EXTRACTED #community/Community_544

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-tdd/SKILL.md"
+source_file: "skills/custom/agentshroud-redteam/SKILL.md"
 type: "document"
-community: "Community 700"
-location: "L27"
+community: "Community 502"
+location: "L280"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_700
+  - community/Community_502
 ---
 
 # Test Structure
 
 ## Connections
-- [[Skill Test-Driven Development (TDD)]] - `contains` [EXTRACTED]
+- [[Writing Exploit Tests_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_700
+#graphify/document #graphify/EXTRACTED #community/Community_502

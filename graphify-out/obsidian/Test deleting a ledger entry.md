@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ledger.py"
 type: "rationale"
-community: "Community 26"
+community: "Gateway Config & PII Sanitizer"
 location: "L110"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_26
+  - community/Gateway_Config__PII_Sanitizer
 ---
 
 # Test deleting a ledger entry
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_delete_entry()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_26
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Config__PII_Sanitizer

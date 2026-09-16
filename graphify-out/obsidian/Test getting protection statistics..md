@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_prompt_protection.py"
 type: "rationale"
-community: "Community 151"
+community: "Community 341"
 location: "L235"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_151
+  - community/Community_341
 ---
 
 # Test getting protection statistics.
 
 ## Connections
-- [[.test_protection_stats()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_protection_stats()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_151
+#graphify/rationale #graphify/EXTRACTED #community/Community_341

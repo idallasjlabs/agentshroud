@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_path_isolation.py"
 type: "rationale"
-community: "Community 61"
+community: "Community 192"
 location: "L118"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_61
+  - community/Community_192
 ---
 
 # Test ending user session.
 
 ## Connections
-- [[.test_end_user_session()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_end_user_session()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_61
+#graphify/rationale #graphify/EXTRACTED #community/Community_192

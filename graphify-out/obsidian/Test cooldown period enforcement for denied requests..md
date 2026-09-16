@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "rationale"
-community: "Community 34"
+community: "Alert Dispatcher & RBAC Reliability"
 location: "L223"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_34
+  - community/Alert_Dispatcher__RBAC_Reliability
 ---
 
 # Test cooldown period enforcement for denied requests.
 
 ## Connections
-- [[.test_cooldown_period_enforcement()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_cooldown_period_enforcement()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_34
+#graphify/rationale #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_sanitizer.py"
 type: "rationale"
-community: "Community 407"
+community: "Community 418"
 location: "L46"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_407
+  - community/Community_418
 ---
 
 # Test credit card redaction
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_credit_card_detection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_407
+#graphify/rationale #graphify/EXTRACTED #community/Community_418

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "rationale"
-community: "Community 34"
+community: "Alert Dispatcher & RBAC Reliability"
 location: "L78"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_34
+  - community/Alert_Dispatcher__RBAC_Reliability
 ---
 
 # Test normalization handles empty descriptions.
 
 ## Connections
-- [[.test_normalize_description_handles_empty()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_normalize_description_handles_empty()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_34
+#graphify/rationale #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability

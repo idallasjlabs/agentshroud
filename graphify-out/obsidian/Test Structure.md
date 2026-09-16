@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-sec-offense/SKILL.md"
 type: "document"
-community: "Community 487"
+community: "Community 500"
 location: "L280"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_487
+  - community/Community_500
 ---
 
 # Test Structure
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Writing Exploit Tests]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_487
+#graphify/document #graphify/EXTRACTED #community/Community_500

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_queue.py"
 type: "rationale"
-community: "Community 56"
+community: "Voice Gateway STT & Browser Security"
 location: "L315"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_56
+  - community/Voice_Gateway_STT__Browser_Security
 ---
 
 # Test broadcast handles failed client sends
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_broadcast_with_failed_client()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_56
+#graphify/rationale #graphify/EXTRACTED #community/Voice_Gateway_STT__Browser_Security

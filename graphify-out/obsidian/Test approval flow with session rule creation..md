@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_egress_approval.py"
 type: "rationale"
-community: "Community 20"
+community: "Community 117"
 location: "L157"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_20
+  - community/Community_117
 ---
 
 # Test approval flow with session rule creation.
 
 ## Connections
-- [[.test_approval_flow_session()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_approval_flow_session()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_20
+#graphify/rationale #graphify/EXTRACTED #community/Community_117

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/reviews/phase-review-2026-03-05-r3.md"
+source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md"
 type: "document"
-community: "Community 725"
-location: "L17"
+community: "Community 344"
+location: "L166"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_725
+  - community/Community_344
 ---
 
 # Test Results
 
 ## Connections
-- [[Summary_10]] - `contains` [EXTRACTED]
+- [[Fixes Applied]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_725
+#graphify/document #graphify/EXTRACTED #community/Community_344

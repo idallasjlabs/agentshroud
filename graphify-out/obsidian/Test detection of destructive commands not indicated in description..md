@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "rationale"
-community: "Community 34"
+community: "Alert Dispatcher & RBAC Reliability"
 location: "L117"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_34
+  - community/Alert_Dispatcher__RBAC_Reliability
 ---
 
 # Test detection of destructive commands not indicated in description.
 
 ## Connections
-- [[.test_deception_detection_destructive_command_not_indicated()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_deception_detection_destructive_command_not_indicated()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_34
+#graphify/rationale #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability

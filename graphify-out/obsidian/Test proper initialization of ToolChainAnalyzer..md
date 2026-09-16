@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "rationale"
-community: "Community 169"
+community: "Voice Gateway STT & Browser Security"
 location: "L40"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_169
+  - community/Voice_Gateway_STT__Browser_Security
 ---
 
 # Test proper initialization of ToolChainAnalyzer.
 
 ## Connections
-- [[.test_initialization()_4]] - `rationale_for` [EXTRACTED]
+- [[dot-test_initialization()_5]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_169
+#graphify/rationale #graphify/EXTRACTED #community/Voice_Gateway_STT__Browser_Security

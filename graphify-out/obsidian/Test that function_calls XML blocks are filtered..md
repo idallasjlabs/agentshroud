@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "Community 1551"
+community: "Community 44"
 location: "L209"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1551
+  - community/Community_44
 ---
 
 # Test that function_calls XML blocks are filtered.
 
 ## Connections
-- [[.test_code_block_filtering()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_code_block_filtering()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1551
+#graphify/rationale #graphify/EXTRACTED #community/Community_44

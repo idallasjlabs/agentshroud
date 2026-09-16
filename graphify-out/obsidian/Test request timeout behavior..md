@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_egress_approval.py"
 type: "rationale"
-community: "Community 20"
+community: "Community 117"
 location: "L234"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_20
+  - community/Community_117
 ---
 
 # Test request timeout behavior.
 
 ## Connections
-- [[.test_timeout_behavior()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_timeout_behavior()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_20
+#graphify/rationale #graphify/EXTRACTED #community/Community_117

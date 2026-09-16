@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_egress_enforce.py"
 type: "rationale"
-community: "Community 174"
+community: "Community 52"
 location: "L259"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_174
+  - community/Community_52
 ---
 
 # Test that config can be saved and retrieved.
 
 ## Connections
-- [[.test_config_roundtrip()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_config_roundtrip()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_174
+#graphify/rationale #graphify/EXTRACTED #community/Community_52
