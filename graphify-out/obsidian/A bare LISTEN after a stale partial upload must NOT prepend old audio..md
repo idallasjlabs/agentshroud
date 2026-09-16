@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "Community 89"
-location: "L3387"
+community: "Voice Gateway Routing Tests"
+location: "L3397"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_89
+  - community/Voice_Gateway_Routing_Tests
 ---
 
 # A bare LISTEN after a stale partial upload must NOT prepend old audio.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_bare_listen_starts_fresh()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_89
+#graphify/rationale #graphify/EXTRACTED #community/Voice_Gateway_Routing_Tests

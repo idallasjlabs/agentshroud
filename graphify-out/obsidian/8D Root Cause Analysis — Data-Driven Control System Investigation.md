@@ -1,25 +1,25 @@
 ---
 source_file: ".agents/skills/i-eightd/SKILL.md"
 type: "document"
-community: "Community 232"
+community: "Community 238"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_232
+  - community/Community_238
 ---
 
 # 8D Root Cause Analysis — Data-Driven Control System Investigation
 
 ## Connections
+- [[dot-agentsskillsi-eightdSKILL]] - `contains` [EXTRACTED]
 - [[Agent Interaction Protocol]] - `contains` [EXTRACTED]
 - [[Architecture Context]] - `contains` [EXTRACTED]
 - [[Critical Rules]] - `contains` [EXTRACTED]
 - [[Input Requirements_4]] - `contains` [EXTRACTED]
 - [[Learning System (Continuous Improvement)]] - `contains` [EXTRACTED]
-- [[Overview]] - `contains` [EXTRACTED]
-- [[SKILL_20]] - `contains` [EXTRACTED]
+- [[Overview_4]] - `contains` [EXTRACTED]
 - [[The 8D Investigation Process]] - `contains` [EXTRACTED]
 - [[XML Configuration File Parsing]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_232
+#graphify/document #graphify/EXTRACTED #community/Community_238

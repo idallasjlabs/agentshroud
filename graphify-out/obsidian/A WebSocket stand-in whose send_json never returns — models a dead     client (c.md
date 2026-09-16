@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_approval_queue.py"
 type: "rationale"
-community: "Community 56"
+community: "Community 38"
 location: "L493"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_56
+  - community/Community_38
 ---
 
 # A WebSocket stand-in whose send_json never returns — models a dead     client (c
 
 ## Connections
-- [[_HangingWebSocket]] - `rationale_for` [EXTRACTED]
+- [[_HangingWebSocket_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_56
+#graphify/rationale #graphify/EXTRACTED #community/Community_38
