@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Adversarial Injection Guards"
+community: "Collaborator Activity & Telegram Proxy"
 location: "L2867"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Adversarial_Injection_Guards
+  - community/Collaborator_Activity__Telegram_Proxy
 ---
 
 # Return (field_name, text_value) for Telegram-style outbound payloads.
 
 ## Connections
-- [[._resolve_text_field()]] - `rationale_for` [EXTRACTED]
+- [[dot-_resolve_text_field()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Adversarial_Injection_Guards
+#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Activity__Telegram_Proxy

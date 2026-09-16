@@ -1,12 +1,12 @@
 ---
 source_file: "docs/ssh-capability.md"
 type: "document"
-community: "Community 614"
+community: "Community 683"
 location: "L35"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_614
+  - community/Community_683
 ---
 
 # Request Flow
@@ -17,4 +17,4 @@ tags:
 - [[Denied Commands]] - `contains` [EXTRACTED]
 - [[SSH Capability Architecture Document]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_614
+#graphify/document #graphify/EXTRACTED #community/Community_683

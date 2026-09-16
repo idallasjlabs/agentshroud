@@ -1,34 +1,33 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "Community 225"
+community: "P3 Infrastructure Security Modules"
 location: "L49"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_225
+  - community/P3_Infrastructure_Security_Modules
 ---
 
 # ResourceLimits
 
 ## Connections
-- [[.__init__()_114]] - `references` [EXTRACTED]
-- [[.setup_method()_22]] - `calls` [EXTRACTED]
-- [[.test_cpu_limit_check()]] - `calls` [EXTRACTED]
-- [[.test_disk_write_limit()]] - `calls` [EXTRACTED]
-- [[.test_memory_limit_check()]] - `calls` [EXTRACTED]
-- [[.test_resource_guard_config()]] - `calls` [EXTRACTED]
-- [[.test_resource_guard_init()]] - `calls` [EXTRACTED]
-- [[.test_setup_with_custom_limits_overrides_defaults()]] - `calls` [EXTRACTED]
-- [[.test_stop_cancels_monitor_task()]] - `calls` [EXTRACTED]
-- [[.test_usage_stats()]] - `calls` [EXTRACTED]
-- [[Any_69]] - `uses` [INFERRED]
+- [[dot-__init__()_88]] - `references` [EXTRACTED]
+- [[dot-setup_method()_19]] - `calls` [EXTRACTED]
+- [[dot-test_cpu_limit_check()]] - `calls` [EXTRACTED]
+- [[dot-test_disk_write_limit()]] - `calls` [EXTRACTED]
+- [[dot-test_memory_limit_check()]] - `calls` [EXTRACTED]
+- [[dot-test_resource_guard_config()]] - `calls` [EXTRACTED]
+- [[dot-test_resource_guard_init()]] - `calls` [EXTRACTED]
+- [[dot-test_setup_with_custom_limits_overrides_defaults()]] - `calls` [EXTRACTED]
+- [[dot-test_stop_cancels_monitor_task()]] - `calls` [EXTRACTED]
+- [[dot-test_usage_stats()]] - `calls` [EXTRACTED]
+- [[Any_33]] - `uses` [INFERRED]
 - [[Configuration for resource limits.]] - `rationale_for` [EXTRACTED]
-- [[LLMProxy_2]] - `uses` [INFERRED]
-- [[TestAuditTrail_1]] - `uses` [INFERRED]
-- [[TestAuth_1]] - `uses` [INFERRED]
+- [[TestAuditTrail]] - `uses` [INFERRED]
+- [[TestAuth]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
-- [[TestContextGuard_1]] - `uses` [INFERRED]
+- [[TestContextGuard]] - `uses` [INFERRED]
 - [[TestCpuMemoryDiskLimits]] - `uses` [INFERRED]
 - [[TestCryptography]] - `uses` [INFERRED]
 - [[TestExpiredUsageCleanup]] - `uses` [INFERRED]
@@ -43,23 +42,17 @@ tags:
 - [[TestResourceGuardLifecycle]] - `uses` [INFERRED]
 - [[TestResourceGuardWiring]] - `uses` [INFERRED]
 - [[TestResourceProtection]] - `uses` [INFERRED]
-- [[TestSupplyChain_1]] - `uses` [INFERRED]
+- [[TestSupplyChain]] - `uses` [INFERRED]
 - [[TestTempFiles]] - `uses` [INFERRED]
 - [[TestUsageStatsAndTracking]] - `uses` [INFERRED]
 - [[TestVramHeadroom]] - `uses` [INFERRED]
-- [[_FakeSanitizer_1]] - `uses` [INFERRED]
-- [[guard()_3]] - `calls` [EXTRACTED]
-- [[main.py_2]] - `imports` [EXTRACTED]
+- [[guard()_1]] - `calls` [EXTRACTED]
+- [[ingest_apimain.py]] - `imports` [EXTRACTED]
 - [[resource_guard.py]] - `contains` [EXTRACTED]
 - [[setup_resource_guard()]] - `references` [EXTRACTED]
-- [[test_llm_proxy_local_parity.py]] - `imports` [EXTRACTED]
 - [[test_resource_guard.py]] - `imports` [EXTRACTED]
 - [[test_resource_guard_limits.py]] - `imports` [EXTRACTED]
-- [[test_resource_guard_vram_estimate_128k_tokens_triggers_rejection()]] - `calls` [EXTRACTED]
-- [[test_resource_guard_vram_headroom_check_allows_small_context()]] - `calls` [EXTRACTED]
-- [[test_resource_guard_vram_headroom_check_disabled_when_threshold_zero()]] - `calls` [EXTRACTED]
-- [[test_resource_guard_vram_headroom_check_raises_on_insufficient_vram()]] - `calls` [EXTRACTED]
 - [[test_resource_guard_wiring.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_225
+#graphify/code #graphify/INFERRED #community/P3_Infrastructure_Security_Modules

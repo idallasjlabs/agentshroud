@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "SOC Collaborators"
+community: "Community 388"
 location: "L520"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_Collaborators
+  - community/Community_388
 ---
 
 # Resume a paused collaborator's bot access (file-locked).      Removes the UID fr
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[unpause_collaborator()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_Collaborators
+#graphify/rationale #graphify/EXTRACTED #community/Community_388

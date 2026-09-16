@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
+source_file: "docker/config/hermes/workspace/jira_dev_ticket.py"
 type: "rationale"
-community: "Community 249"
-location: "L238"
+community: "Community 174"
+location: "L226"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_249
+  - community/Community_174
 ---
 
 # Resolve a site domain to its Atlassian cloud ID via the public,     unauthentica
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[resolve_cloud_id()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_249
+#graphify/rationale #graphify/EXTRACTED #community/Community_174

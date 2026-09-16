@@ -1,17 +1,16 @@
 ---
-source_file: "chatbot/main.py"
+source_file: ""
 type: "code"
-community: "Community 86"
-location: "L183"
+community: "Community 122"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_86
+  - community/Community_122
 ---
 
 # Request
 
 ## Connections
-- [[chat()]] - `references` [EXTRACTED]
+- [[firmware_bin()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_86
+#graphify/code #graphify/EXTRACTED #community/Community_122

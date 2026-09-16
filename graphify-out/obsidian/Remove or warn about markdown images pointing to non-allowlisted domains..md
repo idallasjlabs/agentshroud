@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
 type: "rationale"
-community: "Memory Lifecycle & Egress Filtering"
+community: "Community 64"
 location: "L169"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Memory_Lifecycle__Egress_Filtering
+  - community/Community_64
 ---
 
 # Remove or warn about markdown images pointing to non-allowlisted domains.
 
 ## Connections
-- [[.sanitize_images()]] - `rationale_for` [EXTRACTED]
-- [[.sanitize_links()]] - `rationale_for` [EXTRACTED]
+- [[dot-sanitize_images()]] - `rationale_for` [EXTRACTED]
+- [[dot-sanitize_links()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Memory_Lifecycle__Egress_Filtering
+#graphify/rationale #graphify/EXTRACTED #community/Community_64

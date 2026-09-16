@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/group_rbac.py"
 type: "rationale"
-community: "Group RBAC & Tool ACL"
+community: "Community 121"
 location: "L147"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Group_RBAC__Tool_ACL
+  - community/Community_121
 ---
 
 # Remove a user's role entry from a group (falls back to READ_ONLY).
 
 ## Connections
-- [[.remove_role()]] - `rationale_for` [EXTRACTED]
+- [[dot-remove_role()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Group_RBAC__Tool_ACL
+#graphify/rationale #graphify/EXTRACTED #community/Community_121

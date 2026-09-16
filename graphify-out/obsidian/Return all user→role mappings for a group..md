@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/group_rbac.py"
 type: "rationale"
-community: "Group RBAC & Tool ACL"
+community: "Community 121"
 location: "L155"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Group_RBAC__Tool_ACL
+  - community/Community_121
 ---
 
 # Return all user→role mappings for a group.
 
 ## Connections
-- [[.get_all_roles()]] - `rationale_for` [EXTRACTED]
+- [[dot-get_all_roles()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Group_RBAC__Tool_ACL
+#graphify/rationale #graphify/EXTRACTED #community/Community_121

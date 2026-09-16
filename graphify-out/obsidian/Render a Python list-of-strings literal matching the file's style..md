@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/triage-cve-mitigations.py"
 type: "rationale"
-community: "Community 188"
-location: "L858"
+community: "Community 158"
+location: "L866"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_188
+  - community/Community_158
 ---
 
 # Render a Python list-of-strings literal matching the file's style.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_py_list_literal()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_188
+#graphify/rationale #graphify/EXTRACTED #community/Community_158

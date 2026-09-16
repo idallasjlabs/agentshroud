@@ -1,24 +1,17 @@
 ---
-source_file: "gateway/ingest_api/routes/forward.py"
+source_file: "gateway/ingest_api/routes/health.py"
 type: "code"
-community: "Community 159"
-location: "L126"
+community: "Approval Routing & Event Bus"
+location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_159
+  - community/Approval_Routing__Event_Bus
 ---
 
 # Request
 
 ## Connections
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[_process_inbound()]] - `references` [EXTRACTED]
 - [[auth_dep()_3]] - `references` [EXTRACTED]
-- [[email_send()]] - `references` [EXTRACTED]
-- [[email_send_owner()]] - `references` [EXTRACTED]
-- [[forward_content()]] - `references` [EXTRACTED]
-- [[forward_content_stream()]] - `references` [EXTRACTED]
-- [[telegram_webhook()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_159
+#graphify/code #graphify/EXTRACTED #community/Approval_Routing__Event_Bus
