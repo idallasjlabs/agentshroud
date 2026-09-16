@@ -1,28 +1,28 @@
 ---
 source_file: "gateway/tests/test_delegation.py"
 type: "code"
-community: "Community 82"
+community: "Community 74"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_82
+  - community/Community_74
 ---
 
 # test_delegation.py
 
 ## Connections
-- [[Delegation]] - `imports` [EXTRACTED]
+- [[Delegation_1]] - `imports` [EXTRACTED]
 - [[DelegationError]] - `imports` [EXTRACTED]
-- [[DelegationManager]] - `imports` [EXTRACTED]
+- [[DelegationManager_1]] - `imports` [EXTRACTED]
 - [[DelegationPrivilege]] - `imports` [EXTRACTED]
-- [[TestAccessControl]] - `contains` [EXTRACTED]
+- [[TestAccessControl_2]] - `contains` [EXTRACTED]
 - [[TestDelegateBasic]] - `contains` [EXTRACTED]
 - [[TestIsDelegated]] - `contains` [EXTRACTED]
 - [[TestListAndCleanup]] - `contains` [EXTRACTED]
 - [[TestRedelegation]] - `contains` [EXTRACTED]
 - [[TestRevoke]] - `contains` [EXTRACTED]
-- [[TestSerialization]] - `contains` [EXTRACTED]
-- [[mgr()]] - `contains` [EXTRACTED]
+- [[TestSerialization_2]] - `contains` [EXTRACTED]
+- [[mgr()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_82
+#graphify/code #graphify/EXTRACTED #community/Community_74

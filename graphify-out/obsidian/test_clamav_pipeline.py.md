@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_clamav_pipeline.py"
 type: "code"
-community: "Community 330"
+community: "Community 339"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_330
+  - community/Community_339
 ---
 
 # test_clamav_pipeline.py
 
 ## Connections
 - [[PipelineAction]] - `imports` [EXTRACTED]
-- [[SecurityPipeline]] - `imports` [EXTRACTED]
+- [[SecurityPipeline_1]] - `imports` [EXTRACTED]
 - [[_b64_payload()]] - `contains` [EXTRACTED]
 - [[_instant_wait_for()]] - `contains` [EXTRACTED]
-- [[_make_pipeline()]] - `contains` [EXTRACTED]
+- [[_make_pipeline()_4]] - `contains` [EXTRACTED]
 - [[_timeout_wait_for()]] - `contains` [EXTRACTED]
 - [[scan_bytes()]] - `imports` [EXTRACTED]
 - [[test_canary.py]] - `semantically_similar_to` [INFERRED]
@@ -31,4 +31,4 @@ tags:
 - [[test_scan_bytes_infected()]] - `contains` [EXTRACTED]
 - [[test_scan_bytes_timeout()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_330
+#graphify/code #graphify/EXTRACTED #community/Community_339

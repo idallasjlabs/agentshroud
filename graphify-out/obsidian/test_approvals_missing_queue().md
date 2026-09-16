@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "Community 16"
+community: "SOC Auth & Audit Store"
 location: "L1438"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_16
+  - community/SOC_Auth__Audit_Store
 ---
 
 # test_approvals_missing_queue()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_soc_router_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_16
+#graphify/code #graphify/EXTRACTED #community/SOC_Auth__Audit_Store

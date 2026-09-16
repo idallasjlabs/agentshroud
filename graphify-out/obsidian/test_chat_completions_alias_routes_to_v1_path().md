@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_chat_completions_alias.py"
 type: "code"
-community: "Community 450"
+community: "Community 79"
 location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_450
+  - community/Community_79
 ---
 
 # test_chat_completions_alias_routes_to_v1_path()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_chat_completions_alias.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_450
+#graphify/code #graphify/EXTRACTED #community/Community_79

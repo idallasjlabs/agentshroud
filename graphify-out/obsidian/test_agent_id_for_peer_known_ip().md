@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_http_proxy.py"
 type: "code"
-community: "Community 75"
+community: "Community 72"
 location: "L380"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_75
+  - community/Community_72
 ---
 
 # test_agent_id_for_peer_known_ip()
 
 ## Connections
-- [[HTTPConnectProxy]] - `calls` [EXTRACTED]
+- [[HTTPConnectProxy_1]] - `calls` [EXTRACTED]
 - [[Startup registry hit returns correct bot_id immediately.]] - `rationale_for` [EXTRACTED]
 - [[test_http_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_75
+#graphify/code #graphify/EXTRACTED #community/Community_72

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_hermes_cron_seed.py"
 type: "code"
-community: "Community 381"
+community: "Community 408"
 location: "L179"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_381
+  - community/Community_408
 ---
 
 # test_content_generating_jobs_pinned_to_evidence_backed_model()
@@ -15,4 +15,4 @@ tags:
 - [[_parse_seed_cron_calls_from_sh()]] - `calls` [EXTRACTED]
 - [[test_hermes_cron_seed.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_381
+#graphify/code #graphify/EXTRACTED #community/Community_408

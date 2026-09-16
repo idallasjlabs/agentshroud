@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_benchmark_regression.py"
 type: "code"
-community: "Community 484"
+community: "Community 495"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_484
+  - community/Community_495
 ---
 
 # test_benchmark_regression.py
@@ -16,4 +16,4 @@ tags:
 - [[assert_within_threshold()]] - `contains` [EXTRACTED]
 - [[load_baseline()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_484
+#graphify/code #graphify/EXTRACTED #community/Community_495

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_bots_ssh_exec_wrapper.py"
 type: "code"
-community: "Community 140"
+community: "Community 149"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_140
+  - community/Community_149
 ---
 
 # test_bots_ssh_exec_wrapper.py
@@ -17,7 +17,6 @@ tags:
 - [[_extract_payload_builder()]] - `contains` [EXTRACTED]
 - [[_fenced_code_blocks()]] - `contains` [EXTRACTED]
 - [[_run_wrapper_capture_bearer()]] - `contains` [EXTRACTED]
-- [[agentshroud-ssh-exec.sh (internal-gateway SSH-exec wrapper)]] - `implements` [EXTRACTED]
 - [[test_both_bot_images_bake_in_the_wrapper()]] - `contains` [EXTRACTED]
 - [[test_external_http_curl_still_matches_the_flagged_pattern()]] - `contains` [EXTRACTED]
 - [[test_hermes_tirith_trust_is_scoped_not_blanket()]] - `contains` [EXTRACTED]
@@ -35,4 +34,4 @@ tags:
 - [[test_wrapper_never_sends_empty_bearer()]] - `contains` [EXTRACTED]
 - [[test_wrapper_targets_only_internal_gateway_endpoint()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_140
+#graphify/code #graphify/EXTRACTED #community/Community_149

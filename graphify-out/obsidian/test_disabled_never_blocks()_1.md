@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rate_limit_guard.py"
 type: "code"
-community: "Community 182"
+community: "Community 190"
 location: "L175"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_182
+  - community/Community_190
 ---
 
 # test_disabled_never_blocks()
@@ -16,4 +16,4 @@ tags:
 - [[RateLimitGuard]] - `calls` [EXTRACTED]
 - [[test_rate_limit_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_182
+#graphify/code #graphify/EXTRACTED #community/Community_190

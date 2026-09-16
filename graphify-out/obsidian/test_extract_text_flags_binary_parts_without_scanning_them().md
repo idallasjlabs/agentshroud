@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: "Community 110"
+community: "Community 103"
 location: "L169"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_110
+  - community/Community_103
 ---
 
 # test_extract_text_flags_binary_parts_without_scanning_them()
@@ -15,4 +15,4 @@ tags:
 - [[A filedata Part must not be silently dropped or mis-scanned as text —     it's]] - `rationale_for` [EXTRACTED]
 - [[test_a2a_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_110
+#graphify/code #graphify/EXTRACTED #community/Community_103

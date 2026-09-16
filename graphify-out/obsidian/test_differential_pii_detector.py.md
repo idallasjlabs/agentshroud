@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_differential_pii_detector.py"
 type: "code"
-community: "Community 45"
+community: "Community 46"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_45
+  - community/Community_46
 ---
 
 # test_differential_pii_detector.py
 
 ## Connections
-- [[DifferentialPIIConfig]] - `imports` [EXTRACTED]
-- [[DifferentialPIIDetector]] - `imports` [EXTRACTED]
+- [[DifferentialPIIConfig_1]] - `imports` [EXTRACTED]
+- [[DifferentialPIIDetector_1]] - `imports` [EXTRACTED]
 - [[PIIHit]] - `imports` [EXTRACTED]
 - [[PIIHitSeverity]] - `imports` [EXTRACTED]
 - [[TestAdversarialFormattingCaught]] - `contains` [EXTRACTED]
@@ -26,7 +26,7 @@ tags:
 - [[TestStandardPIIAlwaysCaught]] - `contains` [EXTRACTED]
 - [[TestToolResultPIIReport]] - `contains` [EXTRACTED]
 - [[_FakeRecognizerResult]] - `contains` [EXTRACTED]
-- [[default_config()]] - `contains` [EXTRACTED]
+- [[default_config()_2]] - `contains` [EXTRACTED]
 - [[detector()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_45
+#graphify/code #graphify/EXTRACTED #community/Community_46

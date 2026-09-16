@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e.py"
 type: "code"
-community: "Community 65"
+community: "Community 329"
 location: "L133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_65
+  - community/Community_329
 ---
 
 # test_dashboard_returns_html()
@@ -15,4 +15,4 @@ tags:
 - [[GET dashboard with valid cookie auth returns HTML.]] - `rationale_for` [EXTRACTED]
 - [[test_e2e.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_65
+#graphify/code #graphify/EXTRACTED #community/Community_329

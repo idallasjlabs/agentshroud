@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mfa_guard.py"
 type: "code"
-community: "Community 63"
+community: "Community 57"
 location: "L504"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_63
+  - community/Community_57
 ---
 
 # test_enhanced_tool_call_critical_allowed_with_mfa()
@@ -16,4 +16,4 @@ tags:
 - [[_submit_tool_call()]] - `calls` [EXTRACTED]
 - [[test_mfa_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_63
+#graphify/code #graphify/EXTRACTED #community/Community_57

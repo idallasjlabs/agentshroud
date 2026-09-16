@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_claude_via_openai_path.py"
 type: "code"
-community: "Community 450"
+community: "Community 79"
 location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_450
+  - community/Community_79
 ---
 
 # test_anthropic_to_openai_response_envelope()
@@ -15,4 +15,4 @@ tags:
 - [[anthropic_to_openai_response()]] - `calls` [EXTRACTED]
 - [[test_claude_via_openai_path.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_450
+#graphify/code #graphify/EXTRACTED #community/Community_79

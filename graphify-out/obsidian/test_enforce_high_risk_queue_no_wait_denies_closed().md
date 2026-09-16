@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy.py"
 type: "code"
-community: "Community 33"
+community: "Community 35"
 location: "L344"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_33
+  - community/Community_35
 ---
 
 # test_enforce_high_risk_queue_no_wait_denies_closed()
@@ -16,7 +16,7 @@ tags:
 - [[MCPPolicyEngine]] - `calls` [EXTRACTED]
 - [[MCPPolicyEngine_1]] - `calls` [EXTRACTED]
 - [[_FakeApprovalQueue]] - `calls` [EXTRACTED]
-- [[_base_config()_1]] - `calls` [EXTRACTED]
+- [[_base_config()]] - `calls` [EXTRACTED]
 - [[test_mcp_policy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_33
+#graphify/code #graphify/EXTRACTED #community/Community_35

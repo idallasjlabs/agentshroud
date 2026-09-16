@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_browser_security.py"
 type: "code"
-community: "Community 165"
+community: "Voice Gateway STT & Browser Security"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_165
+  - community/Voice_Gateway_STT__Browser_Security
 ---
 
 # test_browser_security.py
@@ -18,6 +18,6 @@ tags:
 - [[TestSocialEngineeringDetection]] - `contains` [EXTRACTED]
 - [[TestURLReputation]] - `contains` [EXTRACTED]
 - [[browser_security.py]] - `imports_from` [EXTRACTED]
-- [[guard()]] - `contains` [EXTRACTED]
+- [[guard()_4]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_165
+#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_STT__Browser_Security

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_config.py"
 type: "code"
-community: "Community 43"
+community: "Community 180"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_43
+  - community/Community_180
 ---
 
 # test_config.py
 
 ## Connections
 - [[BotConfig]] - `imports` [EXTRACTED]
-- [[GatewayConfig_1]] - `imports` [EXTRACTED]
+- [[GatewayConfig_4]] - `imports` [EXTRACTED]
 - [[RouterConfig]] - `imports` [EXTRACTED]
 - [[_bot_service_names()]] - `imports` [EXTRACTED]
 - [[_entity_type_mapping()]] - `imports` [EXTRACTED]
@@ -31,4 +31,4 @@ tags:
 - [[test_router_config_accepts_docker_service_hostname()]] - `contains` [EXTRACTED]
 - [[test_router_config_accepts_hermes_hostname()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_43
+#graphify/code #graphify/EXTRACTED #community/Community_180

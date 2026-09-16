@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_data_exfil_volume_guard.py"
 type: "code"
-community: "Community 181"
+community: "Community 189"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_181
+  - community/Community_189
 ---
 
 # test_data_exfil_volume_guard.py
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[DataExfilVolumeConfig]] - `imports` [EXTRACTED]
 - [[DataExfilVolumeGuard]] - `imports` [EXTRACTED]
-- [[SecurityPipeline]] - `imports` [EXTRACTED]
-- [[_make_pipeline()_1]] - `contains` [EXTRACTED]
+- [[SecurityPipeline_1]] - `imports` [EXTRACTED]
+- [[_make_pipeline()_2]] - `contains` [EXTRACTED]
 - [[test_accepts_str_and_bytes()]] - `contains` [EXTRACTED]
 - [[test_adaptive_floor_prevents_noise_blocks()]] - `contains` [EXTRACTED]
 - [[test_adaptive_needs_min_samples()]] - `contains` [EXTRACTED]
@@ -25,7 +25,7 @@ tags:
 - [[test_cumulative_cap_blocks_when_crossed()]] - `contains` [EXTRACTED]
 - [[test_cumulative_is_per_session()]] - `contains` [EXTRACTED]
 - [[test_disabled_never_blocks()]] - `contains` [EXTRACTED]
-- [[test_get_stats()]] - `contains` [EXTRACTED]
+- [[test_get_stats()_2]] - `contains` [EXTRACTED]
 - [[test_pipeline_allows_small_response()]] - `contains` [EXTRACTED]
 - [[test_pipeline_blocks_and_downstream_not_reached()]] - `contains` [EXTRACTED]
 - [[test_pipeline_fail_closed_for_non_owner_on_error()]] - `contains` [EXTRACTED]
@@ -34,4 +34,4 @@ tags:
 - [[test_single_response_over_cap_blocks()]] - `contains` [EXTRACTED]
 - [[test_under_single_cap_allows()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_181
+#graphify/code #graphify/EXTRACTED #community/Community_189

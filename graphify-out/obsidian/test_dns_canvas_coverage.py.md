@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "Community 424"
+community: "Community 436"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_424
+  - community/Community_436
 ---
 
 # test_dns_canvas_coverage.py
@@ -48,4 +48,4 @@ tags:
 - [[start_dns_forwarder()]] - `imports` [EXTRACTED]
 - [[test_dns_filter.py]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_424
+#graphify/code #graphify/EXTRACTED #community/Community_436

@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/tests/test_approval_queue.py"
 type: "code"
-community: "Community 56"
+community: "Community 38"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_56
+  - community/Community_38
 ---
 
 # test_approval_queue.py
 
 ## Connections
-- [[ApprovalQueue]] - `imports` [EXTRACTED]
+- [[ApprovalQueue_1]] - `imports` [EXTRACTED]
 - [[ApprovalQueueConfig_2]] - `imports` [EXTRACTED]
-- [[ApprovalRequest_3]] - `imports` [EXTRACTED]
-- [[_HangingWebSocket]] - `contains` [EXTRACTED]
-- [[approval_queue()]] - `contains` [EXTRACTED]
+- [[ApprovalRequest_2]] - `imports` [EXTRACTED]
+- [[_HangingWebSocket_1]] - `contains` [EXTRACTED]
+- [[approval_queue()_1]] - `contains` [EXTRACTED]
 - [[queue_config()]] - `contains` [EXTRACTED]
-- [[test_broadcast_does_not_hang_forever_on_dead_client()]] - `contains` [EXTRACTED]
+- [[test_broadcast_does_not_hang_forever_on_dead_client()_1]] - `contains` [EXTRACTED]
 - [[test_broadcast_with_failed_client()]] - `contains` [EXTRACTED]
 - [[test_cleanup_decided_keeps_pending_items()]] - `contains` [EXTRACTED]
 - [[test_cleanup_decided_keeps_recent_decided_items()]] - `contains` [EXTRACTED]
@@ -39,8 +39,8 @@ tags:
 - [[test_store_persists_submit_and_decision()]] - `contains` [EXTRACTED]
 - [[test_store_restores_items_on_init()]] - `contains` [EXTRACTED]
 - [[test_submit_approval_request()]] - `contains` [EXTRACTED]
-- [[test_submit_does_not_deadlock_on_hung_websocket_client()]] - `contains` [EXTRACTED]
+- [[test_submit_does_not_deadlock_on_hung_websocket_client()_1]] - `contains` [EXTRACTED]
 - [[test_websocket_connect()]] - `contains` [EXTRACTED]
 - [[test_websocket_disconnect()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_56
+#graphify/code #graphify/EXTRACTED #community/Community_38

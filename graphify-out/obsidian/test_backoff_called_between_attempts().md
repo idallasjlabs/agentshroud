@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_alert_dispatcher_retry.py"
 type: "code"
-community: "Community 985"
+community: "Community 1033"
 location: "L96"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_985
+  - community/Community_1033
 ---
 
 # test_backoff_called_between_attempts()
@@ -15,4 +15,4 @@ tags:
 - [[_alert()]] - `calls` [EXTRACTED]
 - [[test_alert_dispatcher_retry.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_985
+#graphify/code #graphify/EXTRACTED #community/Community_1033
