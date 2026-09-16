@@ -1,20 +1,21 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+cohesion: 0.33
+members: 6
 ---
 
 # Community 1159
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Cohesion:** 0.33 - loosely connected
+**Members:** 6 nodes
 
 ## Members
-- [[Pull Request Generator (PR)]] - document - .agents/skills/i-pr/README.md
-- [[Purpose_23]] - document - .agents/skills/i-pr/README.md
-- [[README_23]] - document - .agents/skills/i-pr/README.md
-- [[Related Skills_26]] - document - .agents/skills/i-pr/README.md
-- [[Usage_26]] - document - .agents/skills/i-pr/README.md
+- [[Expected Behavior]] - document - docs/vault/02 - Modules/JavaScript/browser-fetch.js.md
+- [[Purpose_7]] - document - docs/vault/02 - Modules/JavaScript/browser-fetch.js.md
+- [[Related Notes_7]] - document - docs/vault/02 - Modules/JavaScript/browser-fetch.js.md
+- [[Security Controls]] - document - docs/vault/02 - Modules/JavaScript/browser-fetch.js.md
+- [[browser-fetch.js_1]] - document - docs/vault/02 - Modules/JavaScript/browser-fetch.js.md
+- [[browser-fetch.js]] - document - docs/vault/02 - Modules/JavaScript/browser-fetch.js.md
 
 ## Live Query (requires Dataview plugin)
 

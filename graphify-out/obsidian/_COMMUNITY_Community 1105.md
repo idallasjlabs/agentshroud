@@ -1,21 +1,22 @@
 ---
 type: community
-cohesion: 0.40
-members: 6
+cohesion: 0.29
+members: 7
 ---
 
 # Community 1105
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 6 nodes
+**Cohesion:** 0.29 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[Contact_2]] - document - docs/project/legal/TRADEMARK.md
-- [[Standard Footer]] - document - docs/project/legal/TRADEMARK.md
-- [[TRADEMARK]] - document - docs/project/legal/TRADEMARK.md
-- [[Trademark Details]] - document - docs/project/legal/TRADEMARK.md
-- [[Trademark Notice_3]] - document - docs/project/legal/TRADEMARK.md
-- [[Usage Guidelines_3]] - document - docs/project/legal/TRADEMARK.md
+- [[Add Swap File]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Backup Strategy]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Cooling Recommendations]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Important Notes]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Optional Automated Security Updates]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Power Supply]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Security Hardening Checklist]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,8 +26,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 1041]]
-- 1 edge to [[_COMMUNITY_Community 1258]]
+- 1 edge to [[_COMMUNITY_Community 494]]
 
 ## Top bridge nodes
-- [[TRADEMARK]] - degree 5, connects to 2 communities
+- [[Important Notes]] - degree 7, connects to 1 community

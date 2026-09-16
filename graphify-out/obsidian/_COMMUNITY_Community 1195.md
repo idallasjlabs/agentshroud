@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Pull Request Generator (PR)_1]] - document - docker/config/hermes/skills/i-pr/README.md
-- [[Purpose_60]] - document - docker/config/hermes/skills/i-pr/README.md
-- [[README_65]] - document - docker/config/hermes/skills/i-pr/README.md
-- [[Related Skills_66]] - document - docker/config/hermes/skills/i-pr/README.md
-- [[Usage_67]] - document - docker/config/hermes/skills/i-pr/README.md
+- [[dot-agentsskillsi-ggREADME]] - document - .agents/skills/i-gg/README.md
+- [[Git Workflow Guardian (GIT-GUARD)]] - document - .agents/skills/i-gg/README.md
+- [[Purpose_19]] - document - .agents/skills/i-gg/README.md
+- [[Related Skills_10]] - document - .agents/skills/i-gg/README.md
+- [[Usage_14]] - document - .agents/skills/i-gg/README.md
 
 ## Live Query (requires Dataview plugin)
 

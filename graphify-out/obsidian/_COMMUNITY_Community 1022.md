@@ -1,22 +1,23 @@
 ---
 type: community
-cohesion: 0.29
-members: 7
+cohesion: 0.25
+members: 8
 ---
 
 # Community 1022
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.25 - loosely connected
+**Members:** 8 nodes
 
 ## Members
-- [[Feedback Guidelines_2]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
-- [[Output Format_28]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
-- [[Production-Specific Review Checks_2]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
-- [[Review Principles_2]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
-- [[Role_82]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
-- [[SKILL_142]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
-- [[Skill Code Review (CR)_2]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
+- [[Attack Teardowns How AgentShroud Stops RovoBlast and Cross-Turn Coordination Attacks]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
+- [[Honest gap]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
+- [[Part 1 — RovoBlast how AgentShroud's pipeline would have stopped it]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
+- [[Part 2 — Cross-turn correlation the differentiator, made concrete]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
+- [[What actually happened]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
+- [[What this document does NOT cover (explicitly out of scope here)]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
+- [[Where AgentShroud's pipeline breaks each stage]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
+- [[attack-teardowns-rovoblast-cross-turn]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
 
 ## Live Query (requires Dataview plugin)
 

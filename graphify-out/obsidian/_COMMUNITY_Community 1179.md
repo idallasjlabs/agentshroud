@@ -1,20 +1,21 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+cohesion: 0.33
+members: 6
 ---
 
 # Community 1179
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Cohesion:** 0.33 - loosely connected
+**Members:** 6 nodes
 
 ## Members
-- [[Code Review (CR)]] - document - docker/config/hermes/skills/i-cr/README.md
-- [[Purpose_44]] - document - docker/config/hermes/skills/i-cr/README.md
-- [[README_49]] - document - docker/config/hermes/skills/i-cr/README.md
-- [[Related Skills_47]] - document - docker/config/hermes/skills/i-cr/README.md
-- [[Usage_50]] - document - docker/config/hermes/skills/i-cr/README.md
+- [[dot-test_expired_session_rejected()]] - code - gateway/tests/test_session_security.py
+- [[dot-test_unknown_session_rejected()]] - code - gateway/tests/test_session_security.py
+- [[dot-test_valid_session_accepted()]] - code - gateway/tests/test_session_security.py
+- [[dot-test_wrong_ip_rejected()]] - code - gateway/tests/test_session_security.py
+- [[dot-test_wrong_user_agent_rejected()]] - code - gateway/tests/test_session_security.py
+- [[TestSessionValidation]] - code - gateway/tests/test_session_security.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,3 +23,12 @@ members: 5
 TABLE source_file, type FROM #community/Community_1179
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 4 edges to [[_COMMUNITY_Community 535]]
+- 3 edges to [[_COMMUNITY_Community 539]]
+- 1 edge to [[_COMMUNITY_Community 913]]
+
+## Top bridge nodes
+- [[TestSessionValidation]] - degree 12, connects to 3 communities
+- [[dot-test_expired_session_rejected()]] - degree 2, connects to 1 community

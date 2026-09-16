@@ -10,13 +10,13 @@ members: 7
 **Members:** 7 nodes
 
 ## Members
-- [[3. Brutally Honest Self-Assessment]] - document - docs/planning/reviews/phase-review-2026-03-03.md
-- [[Are we adding real value]] - document - docs/planning/reviews/phase-review-2026-03-03.md
-- [[Are we covering known attack vectors]] - document - docs/planning/reviews/phase-review-2026-03-03.md
-- [[Are we scanning for emerging threats]] - document - docs/planning/reviews/phase-review-2026-03-03.md
-- [[Have we implemented real security]] - document - docs/planning/reviews/phase-review-2026-03-03.md
-- [[Is the investment still justified]] - document - docs/planning/reviews/phase-review-2026-03-03.md
-- [[Should we continue or cut losses]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[Auth Methods]] - document - docs/vault/05 - Dependencies/python-jose.md
+- [[Current Usage]] - document - docs/vault/05 - Dependencies/python-jose.md
+- [[Key Features]] - document - docs/vault/05 - Dependencies/python-jose.md
+- [[Purpose_3]] - document - docs/vault/05 - Dependencies/python-jose.md
+- [[Related Notes_3]] - document - docs/vault/05 - Dependencies/python-jose.md
+- [[Security Note]] - document - docs/vault/05 - Dependencies/python-jose.md
+- [[python-jose]] - document - docs/vault/05 - Dependencies/python-jose.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,7 +26,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 133]]
+- 1 edge to [[_COMMUNITY_Approval Routing & Event Bus]]
 
 ## Top bridge nodes
-- [[3. Brutally Honest Self-Assessment]] - degree 7, connects to 1 community
+- [[python-jose]] - degree 7, connects to 1 community

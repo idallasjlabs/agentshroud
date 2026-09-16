@@ -1,21 +1,22 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+cohesion: 0.38
+members: 7
 ---
 
 # Community 1087
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Cohesion:** 0.38 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[Cryptographic Node Pairing Process]] - concept - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Distributed OpenClaw Node Architecture (Pi peer-to-peer agent)]] - concept - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Marvin (Mac Studio) — Primary devbuild server]] - concept - docs/TEAM.md
-- [[Pi (Raspberry Pi 4B) — Edgetest node]] - concept - docs/TEAM.md
-- [[Tailscale mesh VPN (tail240ea8.ts.net)]] - concept - docs/TEAM.md
-- [[Trillian (Mac Mini) — Secondary buildCI]] - concept - docs/TEAM.md
+- [[gh CLI (GitHub)]] - concept - skills/openclaw/github/SKILL.md
+- [[gh-issues Claims File (dedup tracking)]] - concept - skills/openclaw/gh-issues/SKILL.md
+- [[gh-issues Cursor File (cron sequential tracking)]] - concept - skills/openclaw/gh-issues/SKILL.md
+- [[gh-issues PR Review Handler (Phase 6)]] - concept - skills/openclaw/gh-issues/SKILL.md
+- [[gh-issues Sub-agent Spawn (Phase 5)]] - concept - skills/openclaw/gh-issues/SKILL.md
+- [[gh-issuesSKILL]] - document - skills/openclaw/gh-issues/SKILL.md
+- [[githubSKILL]] - document - skills/openclaw/github/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,3 +24,14 @@ members: 6
 TABLE source_file, type FROM #community/Community_1087
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_Community 327]]
+- 1 edge to [[_COMMUNITY_Community 510]]
+- 1 edge to [[_COMMUNITY_Community 691]]
+- 1 edge to [[_COMMUNITY_Community 749]]
+
+## Top bridge nodes
+- [[gh-issuesSKILL]] - degree 7, connects to 2 communities
+- [[githubSKILL]] - degree 4, connects to 2 communities
+- [[gh-issues Cursor File (cron sequential tracking)]] - degree 3, connects to 1 community

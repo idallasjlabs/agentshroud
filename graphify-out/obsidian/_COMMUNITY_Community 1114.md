@@ -1,21 +1,22 @@
 ---
 type: community
-cohesion: 0.67
-members: 6
+cohesion: 0.29
+members: 7
 ---
 
 # Community 1114
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 6 nodes
+**Cohesion:** 0.29 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[cmd_persist()]] - code - scripts/tailscale-serve.sh
-- [[cmd_start()]] - code - scripts/tailscale-serve.sh
-- [[cmd_status()_1]] - code - scripts/tailscale-serve.sh
-- [[cmd_stop()]] - code - scripts/tailscale-serve.sh
-- [[tailscale-serve.sh]] - code - scripts/tailscale-serve.sh
-- [[tailscale-serve.sh script]] - code - scripts/tailscale-serve.sh
+- [[dot-test_non_owner_cannot_view_other_sessions()]] - code - gateway/tests/test_session_manager.py
+- [[dot-test_non_owner_empty_when_no_session()]] - code - gateway/tests/test_session_manager.py
+- [[dot-test_owner_can_access_any_session()]] - code - gateway/tests/test_session_manager.py
+- [[dot-test_owner_can_view_all_sessions()]] - code - gateway/tests/test_session_manager.py
+- [[dot-test_user_can_access_own_session()]] - code - gateway/tests/test_session_manager.py
+- [[dot-test_user_cannot_access_other_session()]] - code - gateway/tests/test_session_manager.py
+- [[TestAccessControl]] - code - gateway/tests/test_session_manager.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,3 +24,10 @@ members: 6
 TABLE source_file, type FROM #community/Community_1114
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_Community 390]]
+- 1 edge to [[_COMMUNITY_Ingest Middleware & File Sandbox]]
+
+## Top bridge nodes
+- [[TestAccessControl]] - degree 9, connects to 2 communities

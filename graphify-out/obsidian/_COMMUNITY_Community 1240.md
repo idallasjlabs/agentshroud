@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_105]] - document - docker/config/openclaw/skills/i-sec/README.md
-- [[README_110]] - document - docker/config/openclaw/skills/i-sec/README.md
-- [[Related Skills_114]] - document - docker/config/openclaw/skills/i-sec/README.md
-- [[Security Review (SEC)_2]] - document - docker/config/openclaw/skills/i-sec/README.md
-- [[Usage_115]] - document - docker/config/openclaw/skills/i-sec/README.md
+- [[Project Management (PM)]] - document - docker/config/hermes/skills/i-pm/README.md
+- [[Purpose_58]] - document - docker/config/hermes/skills/i-pm/README.md
+- [[Related Skills_49]] - document - docker/config/hermes/skills/i-pm/README.md
+- [[Usage_53]] - document - docker/config/hermes/skills/i-pm/README.md
+- [[hermesskillsi-pmREADME]] - document - docker/config/hermes/skills/i-pm/README.md
 
 ## Live Query (requires Dataview plugin)
 

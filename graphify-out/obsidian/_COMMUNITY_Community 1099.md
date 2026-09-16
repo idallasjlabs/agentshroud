@@ -1,21 +1,22 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+cohesion: 0.29
+members: 7
 ---
 
 # Community 1099
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Cohesion:** 0.29 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[AgentShroud Data Assets (root)]] - concept - docs/diagrams/images/diagram-10-data-dictionary.svg
-- [[External Credentials (1Password vault)]] - concept - docs/diagrams/images/diagram-10-data-dictionary.svg
-- [[OpenClaw Volume (openclaw.json, cronjobs.json, sessions)]] - concept - docs/diagrams/images/diagram-10-data-dictionary.svg
-- [[SQLite DBs (Backed by SQLite)]] - concept - docs/diagrams/images/diagram-10-data-dictionary.svg
-- [[approval_items table (pending, approved, rejected, expired; 1h TTL)]] - concept - docs/diagrams/images/diagram-10-data-dictionary.svg
-- [[ledger table (indexed on timestamp, source, forwarded_to)]] - concept - docs/diagrams/images/diagram-10-data-dictionary.svg
+- [[3. Brutally Honest Self-Assessment]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[Are we adding real value]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[Are we covering known attack vectors]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[Are we scanning for emerging threats]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[Have we implemented real security]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[Is the investment still justified]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[Should we continue or cut losses]] - document - docs/planning/reviews/phase-review-2026-03-03.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,7 +26,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 376]]
+- 1 edge to [[_COMMUNITY_Community 130]]
 
 ## Top bridge nodes
-- [[AgentShroud Data Assets (root)]] - degree 4, connects to 1 community
+- [[3. Brutally Honest Self-Assessment]] - degree 7, connects to 1 community

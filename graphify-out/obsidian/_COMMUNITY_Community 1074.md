@@ -1,21 +1,22 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+cohesion: 0.29
+members: 7
 ---
 
 # Community 1074
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Cohesion:** 0.29 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[Agentic OS Architecture Doc (91 security-dir files  75 wired)]] - document - docs/architecture/agentic-os.md
-- [[NO SECURITY THEATER Policy (CLAUDE.md §2)]] - concept - docs/testing/test-coverage-report.md
-- [[Red-Team Assessment Plan]] - document - docs/planning/redteam/plan.md
-- [[STPA-Sec Methodology (Nancy Leveson, MIT)]] - concept - docs/testing/test-coverage-report.md
-- [[Test Coverage Report (AgentShroud v1.3.0)]] - document - docs/testing/test-coverage-report.md
-- [[Test Plan (AgentShroud v0.9.0)]] - document - docs/testing/test-plan.md
+- [[Allowlisted domains (api.openai.com, api.anthropic.com, api.telegram.org, .github.com, etc)]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
+- [[Blocked (403 Forbidden) — all other domains + RFC1918]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
+- [[Bot makes outbound request (any HTTPS connection)]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
+- [[Connection logged (timestamp, domain, allowedblocked, count)]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
+- [[Domain allowlisted (agentshroud.yaml proxy.allowed_domains)]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
+- [[HTTP CONNECT tunnel to gateway8181]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
+- [[HTTP_PROXY set (httpgateway8181)]] - concept - docs/diagrams/images/diagram-13-network-security-egress.svg
 
 ## Live Query (requires Dataview plugin)
 

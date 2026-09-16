@@ -1,22 +1,23 @@
 ---
 type: community
-cohesion: 0.29
-members: 7
+cohesion: 0.25
+members: 8
 ---
 
 # Community 1016
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.25 - loosely connected
+**Members:** 8 nodes
 
 ## Members
-- [[dockerscripts README]] - document - docker/scripts/README.md
-- [[drift-detector.sh (planned)]] - concept - scripts/README.md
-- [[memory-scrubber.py (planned)]] - concept - scripts/README.md
-- [[security-audit.sh (planned)]] - concept - scripts/README.md
-- [[skill-scanner.sh (planned)]] - concept - scripts/README.md
-- [[test-network-isolation.sh (planned)]] - concept - scripts/README.md
-- [[test-pii-sanitization.sh (planned)]] - concept - scripts/README.md
+- [[After Filing]] - document - docs/project/legal/USPTO-APPLICATION.md
+- [[Class 009 — Downloadable Software (Optional — add $250)]] - document - docs/project/legal/USPTO-APPLICATION.md
+- [[Class 042 — Scientific and Technological Services (Primary)]] - document - docs/project/legal/USPTO-APPLICATION.md
+- [[Filing Instructions (TEAS Plus)]] - document - docs/project/legal/USPTO-APPLICATION.md
+- [[International Classification]] - document - docs/project/legal/USPTO-APPLICATION.md
+- [[Notes]] - document - docs/project/legal/USPTO-APPLICATION.md
+- [[Specimen]] - document - docs/project/legal/USPTO-APPLICATION.md
+- [[USPTO Trademark Application — AgentShroud™]] - document - docs/project/legal/USPTO-APPLICATION.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,7 +27,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 482]]
+- 1 edge to [[_COMMUNITY_Community 1079]]
+- 1 edge to [[_COMMUNITY_Community 1371]]
 
 ## Top bridge nodes
-- [[dockerscripts README]] - degree 7, connects to 1 community
+- [[USPTO Trademark Application — AgentShroud™]] - degree 7, connects to 2 communities

@@ -1,21 +1,22 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+cohesion: 0.29
+members: 7
 ---
 
 # Community 1104
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Cohesion:** 0.29 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[AgentShroud™ Communication Templates]] - document - docs/project/legal/COMMUNICATION-TEMPLATES.md
-- [[Option 1 — Clean & Professional]] - document - docs/project/legal/COMMUNICATION-TEMPLATES.md
-- [[Option 2 — Compact]] - document - docs/project/legal/COMMUNICATION-TEMPLATES.md
-- [[Option 3 — Full Collaborator Notice]] - document - docs/project/legal/COMMUNICATION-TEMPLATES.md
-- [[Option 4 — Documentation Footer]] - document - docs/project/legal/COMMUNICATION-TEMPLATES.md
-- [[Usage Rules]] - document - docs/project/legal/COMMUNICATION-TEMPLATES.md
+- [[Competitive Security Matrix — AgentShroud vs AI Agent Platforms]] - document - docs/security/competitive-security-matrix.md
+- [[Container Security Toolchain Comparison]] - document - docs/security/competitive-security-matrix.md
+- [[Key Takeaways]] - document - docs/security/competitive-security-matrix.md
+- [[Module Comparison]] - document - docs/security/competitive-security-matrix.md
+- [[Security Score (out of 28)]] - document - docs/security/competitive-security-matrix.md
+- [[Updated Magic Quadrant Position]] - document - docs/security/competitive-security-matrix.md
+- [[competitive-security-matrix]] - document - docs/security/competitive-security-matrix.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,10 +24,3 @@ members: 6
 TABLE source_file, type FROM #community/Community_1104
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 1258]]
-- 1 edge to [[_COMMUNITY_Community 963]]
-
-## Top bridge nodes
-- [[AgentShroud™ Communication Templates]] - degree 7, connects to 2 communities

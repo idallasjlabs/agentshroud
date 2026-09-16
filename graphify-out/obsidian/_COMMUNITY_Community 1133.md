@@ -10,12 +10,12 @@ members: 6
 **Members:** 6 nodes
 
 ## Members
-- [[.test_expired_session_rejected()]] - code - gateway/tests/test_session_security.py
-- [[.test_unknown_session_rejected()]] - code - gateway/tests/test_session_security.py
-- [[.test_valid_session_accepted()]] - code - gateway/tests/test_session_security.py
-- [[.test_wrong_ip_rejected()]] - code - gateway/tests/test_session_security.py
-- [[.test_wrong_user_agent_rejected()]] - code - gateway/tests/test_session_security.py
-- [[TestSessionValidation]] - code - gateway/tests/test_session_security.py
+- [[FY26 Cost Reduction Context]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[In-Scope Departments (Cost Reduction)]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Infrastructure You Must Know]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Out-of-Scope Departments (Inventory & Tag Only)]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Savings Levers (Ranked by Impact)]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Target 40% Full-Year Reduction on Global Services Resources]] - document - docker/config/hermes/skills/i-aws/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,10 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 474]]
-- 3 edges to [[_COMMUNITY_Community 478]]
-- 1 edge to [[_COMMUNITY_Community 1132]]
+- 1 edge to [[_COMMUNITY_Community 404]]
 
 ## Top bridge nodes
-- [[TestSessionValidation]] - degree 12, connects to 3 communities
-- [[.test_expired_session_rejected()]] - degree 2, connects to 1 community
+- [[FY26 Cost Reduction Context]] - degree 6, connects to 1 community

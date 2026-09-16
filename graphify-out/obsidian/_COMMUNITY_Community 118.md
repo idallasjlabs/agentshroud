@@ -10,55 +10,55 @@ members: 49
 **Members:** 49 nodes
 
 ## Members
-- [[1. Clone]] - document - README.md
-- [[2. Store credentials]] - document - README.md
-- [[3. Start the stack]] - document - README.md
-- [[4. Verify]] - document - README.md
-- [[5. (Optional) Voice Terminal — ESP32-S3-BOX-3]] - document - README.md
-- [[75 Security Modules]] - document - README.md
-- [[Acknowledgments]] - document - README.md
-- [[Agent Containment]] - document - README.md
-- [[AgentShroud vs Unprotected Agent]] - document - README.md
-- [[AgentShroud™ README]] - document - README.md
-- [[Architecture]] - document - README.md
-- [[Content & Context Guards]] - document - README.md
-- [[Control Centers]] - document - README.md
-- [[Core Objectives]] - document - README.md
-- [[Core Security Pipeline]] - document - README.md
-- [[Development]] - document - README.md
-- [[Development Resources]] - document - README.md
-- [[Documentation]] - document - README.md
-- [[Example Configurations]] - document - README.md
-- [[GitHub Pages Deploy Workflow]] - document - .github/workflows/pages.yml
-- [[Infrastructure & Monitoring]] - document - README.md
-- [[Media]] - document - README.md
-- [[OpenClaw Bot]] - concept - README.md
-- [[Prerequisites]] - document - README.md
-- [[Proxy & Network Layer]] - document - README.md
-- [[Quick Start]] - document - README.md
-- [[Quickstart]] - document - README.md
-- [[README_37]] - document - README.md
-- [[Supporting Infrastructure]] - document - README.md
-- [[TABLE I Security Module Inventory (52 Modules)]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[Technical Documentation]] - document - README.md
-- [[Terminal Control Center]] - document - README.md
-- [[V-A. PII Sanitizer]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[V-B. Prompt Injection Defense]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[V-C. Credential Isolation]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[V-D. Encrypted Container Communication]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[V-E. DNS-Layer Enforcement]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[V-F. Tamper-Evident Audit]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[Web Control Center]] - document - README.md
-- [[What's New — v1.2.2 (June 2026)]] - document - README.md
-- [[What's New — v1.3.0 Reliability (July 2026)]] - document - README.md
-- [[Who It's For]] - document - README.md
-- [[Why AgentShroud]] - document - README.md
-- [[`asb` reference]] - document - README.md
-- [[asb Wrapper Script]] - concept - CHEATSHEET.md
-- [[v1.0.0 Fortress foundations (March 2026)]] - document - README.md
-- [[v1.1.x Hermes (May–June 2026)]] - document - README.md
-- [[v1.2.0 Voice (June 2026)]] - document - README.md
-- [[v1.2.1 (2026-06-27) — Quality sweep]] - document - README.md
+- [[dot-contributing()]] - code - gateway/tests/test_docs_accuracy.py
+- [[dot-readme()]] - code - gateway/tests/test_docs_accuracy.py
+- [[dot-security_md()]] - code - gateway/tests/test_docs_accuracy.py
+- [[dot-test_actual_test_count_meets_minimum()]] - code - gateway/tests/test_docs_accuracy.py
+- [[dot-test_all_module_attrs_exist_after_init()]] - code - gateway/tests/test_docs_accuracy.py
+- [[dot-test_architecture_diagram_present()]] - code - gateway/tests/test_docs_accuracy.py
+- [[dot-test_branch_naming_convention()]] - code - gateway/tests/test_docs_accuracy.py
+- [[dot-test_claims_75_security_modules()]] - code - gateway/tests/test_docs_accuracy.py
+- [[dot-test_endpoint_reports_no_key_collisions_and_high_total()]] - code - gateway/tests/test_docs_accuracy.py
+- [[dot-test_every_pipeline_module_attr_is_a_lifespan_kwarg()]] - code - gateway/tests/test_docs_accuracy.py
+- [[dot-test_has_disclosure_policy()]] - code - gateway/tests/test_docs_accuracy.py
+- [[dot-test_has_security_contact()]] - code - gateway/tests/test_docs_accuracy.py
+- [[dot-test_has_supported_versions()]] - code - gateway/tests/test_docs_accuracy.py
+- [[dot-test_lists_security_features()]] - code - gateway/tests/test_docs_accuracy.py
+- [[dot-test_manage_modules_endpoint_uses_the_same_registry()]] - code - gateway/tests/test_docs_accuracy.py
+- [[dot-test_mentions_coverage_requirement()]] - code - gateway/tests/test_docs_accuracy.py
+- [[dot-test_mentions_mit_license()]] - code - gateway/tests/test_docs_accuracy.py
+- [[dot-test_mentions_pytest()]] - code - gateway/tests/test_docs_accuracy.py
+- [[dot-test_mentions_python_311()]] - code - gateway/tests/test_docs_accuracy.py
+- [[dot-test_mentions_test_directory()]] - code - gateway/tests/test_docs_accuracy.py
+- [[dot-test_module_has_implementation()]] - code - gateway/tests/test_docs_accuracy.py
+- [[dot-test_pytest_command_syntax()]] - code - gateway/tests/test_docs_accuracy.py
+- [[dot-test_python_version_claim()]] - code - gateway/tests/test_docs_accuracy.py
+- [[dot-test_quickstart_section_present()]] - code - gateway/tests/test_docs_accuracy.py
+- [[dot-test_readme_p1_count_matches_middleware_manager()]] - code - gateway/tests/test_docs_accuracy.py
+- [[dot-test_security_modules_listed()]] - code - gateway/tests/test_docs_accuracy.py
+- [[dot-test_version_table_present()]] - code - gateway/tests/test_docs_accuracy.py
+- [[Every SecurityPipeline.ALL_MODULE_ATTRS name must be passed as a kwarg     in li]] - rationale - gateway/tests/test_docs_accuracy.py
+- [[Execute the real endpoint against a fully-populated app_state and         verify]] - rationale - gateway/tests/test_docs_accuracy.py
+- [[README claims Python 3.9+.]] - rationale - gateway/tests/test_docs_accuracy.py
+- [[TestContributingMdAccuracy]] - code - gateway/tests/test_docs_accuracy.py
+- [[TestLifespanWiresEveryPipelineModule]] - code - gateway/tests/test_docs_accuracy.py
+- [[TestManageModulesEndpointAccuracy]] - code - gateway/tests/test_docs_accuracy.py
+- [[TestReadmeAccuracy]] - code - gateway/tests/test_docs_accuracy.py
+- [[TestReadmeModulesMatchCode]] - code - gateway/tests/test_docs_accuracy.py
+- [[TestSecurityMdAccuracy]] - code - gateway/tests/test_docs_accuracy.py
+- [[TestTestCountAccuracy]] - code - gateway/tests/test_docs_accuracy.py
+- [[The endpoint's P1 section must be generated from ALL_MODULE_ATTRS,         not a]] - rationale - gateway/tests/test_docs_accuracy.py
+- [[The test command in CONTRIBUTING.md should be valid.]] - rationale - gateway/tests/test_docs_accuracy.py
+- [[This representative sample of modules mentioned in README should exist as code.]] - rationale - gateway/tests/test_docs_accuracy.py
+- [[Verify managemodules enumerates every module MiddlewareManager wires.      Mid]] - rationale - gateway/tests/test_docs_accuracy.py
+- [[Verify CONTRIBUTING.md references are correct.]] - rationale - gateway/tests/test_docs_accuracy.py
+- [[Verify README.md claims match actual implementation.]] - rationale - gateway/tests/test_docs_accuracy.py
+- [[Verify SECURITY.md content.]] - rationale - gateway/tests/test_docs_accuracy.py
+- [[Verify each module listed in README has actual implementation.]] - rationale - gateway/tests/test_docs_accuracy.py
+- [[Verify test count claims in READMEdocs are reasonable.]] - rationale - gateway/tests/test_docs_accuracy.py
+- [[We should have at least 350 tests (README says 351+).]] - rationale - gateway/tests/test_docs_accuracy.py
+- [[_read_file()]] - code - gateway/tests/test_docs_accuracy.py
+- [[test_docs_accuracy.py]] - code - gateway/tests/test_docs_accuracy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -68,14 +68,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 440]]
-- 2 edges to [[_COMMUNITY_Community 374]]
-- 1 edge to [[_COMMUNITY_Community 111]]
-- 1 edge to [[_COMMUNITY_Community 146]]
-- 1 edge to [[_COMMUNITY_Community 158]]
+- 10 edges to [[_COMMUNITY_Ingest Middleware & File Sandbox]]
+- 8 edges to [[_COMMUNITY_Signed Instruction Envelopes & Security Pipeline]]
+- 1 edge to [[_COMMUNITY_Ingest API & RBAC Core]]
+- 1 edge to [[_COMMUNITY_Community 528]]
+- 1 edge to [[_COMMUNITY_Community 178]]
+- 1 edge to [[_COMMUNITY_Community 347]]
 
 ## Top bridge nodes
-- [[AgentShroud™ README]] - degree 9, connects to 3 communities
-- [[75 Security Modules]] - degree 18, connects to 2 communities
-- [[README_37]] - degree 14, connects to 1 community
-- [[asb Wrapper Script]] - degree 2, connects to 1 community
+- [[test_docs_accuracy.py]] - degree 14, connects to 6 communities
+- [[TestContributingMdAccuracy]] - degree 11, connects to 2 communities
+- [[TestReadmeAccuracy]] - degree 11, connects to 2 communities
+- [[TestSecurityMdAccuracy]] - degree 10, connects to 2 communities
+- [[TestManageModulesEndpointAccuracy]] - degree 8, connects to 2 communities

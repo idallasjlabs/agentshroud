@@ -1,22 +1,23 @@
 ---
 type: community
-cohesion: 0.29
-members: 7
+cohesion: 0.43
+members: 8
 ---
 
 # Community 1033
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.43 - moderately connected
+**Members:** 8 nodes
 
 ## Members
-- [[Athena — Knowledge Distiller (SKILL)]] - document - docker/config/hermes/skills/i-athena/SKILL.md
-- [[Atlas — Curriculum Architect (README)]] - document - docker/config/hermes/skills/i-atlas/README.md
-- [[Atlas — Curriculum Architect (SKILL)]] - document - docker/config/hermes/skills/i-atlas/SKILL.md
-- [[Bloom's Taxonomy]] - concept - docker/config/hermes/skills/i-atlas/SKILL.md
-- [[cheatsheet.md Output Template]] - concept - docker/config/hermes/skills/i-athena/SKILL.md
-- [[curriculum.md Output Template]] - concept - docker/config/hermes/skills/i-atlas/SKILL.md
-- [[show_notes.md Output Template]] - concept - docker/config/hermes/skills/i-athena/SKILL.md
+- [[The alert must already be in alert_log before notification runs.      Before the]] - rationale - gateway/tests/test_alert_dispatcher_retry.py
+- [[_alert()]] - code - gateway/tests/test_alert_dispatcher_retry.py
+- [[test_alert_dispatcher_retry.py]] - code - gateway/tests/test_alert_dispatcher_retry.py
+- [[test_all_attempts_fail_logs_warning_not_error()]] - code - gateway/tests/test_alert_dispatcher_retry.py
+- [[test_backoff_called_between_attempts()]] - code - gateway/tests/test_alert_dispatcher_retry.py
+- [[test_dispatch_persists_alert_even_if_notification_fails()]] - code - gateway/tests/test_alert_dispatcher_retry.py
+- [[test_succeeds_after_one_transient_failure()]] - code - gateway/tests/test_alert_dispatcher_retry.py
+- [[test_succeeds_on_first_attempt()]] - code - gateway/tests/test_alert_dispatcher_retry.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,9 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 888]]
-- 1 edge to [[_COMMUNITY_Community 651]]
+- 2 edges to [[_COMMUNITY_Alert Dispatcher & RBAC Reliability]]
 
 ## Top bridge nodes
-- [[Atlas — Curriculum Architect (SKILL)]] - degree 5, connects to 1 community
-- [[Bloom's Taxonomy]] - degree 2, connects to 1 community
+- [[test_alert_dispatcher_retry.py]] - degree 8, connects to 1 community

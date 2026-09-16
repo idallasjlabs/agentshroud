@@ -1,12 +1,12 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "Community 344"
+community: "Community 259"
 location: "L380"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_344
+  - community/Community_259
 ---
 
 # When to clarify
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[9) GOVERNANCE & DECISION-MAKING]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_344
+#graphify/document #graphify/EXTRACTED #community/Community_259

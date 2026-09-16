@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Atlas — Curriculum Architect_3]] - document - docker/config/openclaw/skills/i-atlas/README.md
-- [[Purpose_76]] - document - docker/config/openclaw/skills/i-atlas/README.md
-- [[README_81]] - document - docker/config/openclaw/skills/i-atlas/README.md
-- [[Related Skills_82]] - document - docker/config/openclaw/skills/i-atlas/README.md
-- [[Usage_84]] - document - docker/config/openclaw/skills/i-atlas/README.md
+- [[dot-agentsskillsi-socratesREADME]] - document - .agents/skills/i-socrates/README.md
+- [[Purpose_33]] - document - .agents/skills/i-socrates/README.md
+- [[Related Skills_24]] - document - .agents/skills/i-socrates/README.md
+- [[Socrates — Dialogue Architect]] - document - .agents/skills/i-socrates/README.md
+- [[Usage_28]] - document - .agents/skills/i-socrates/README.md
 
 ## Live Query (requires Dataview plugin)
 

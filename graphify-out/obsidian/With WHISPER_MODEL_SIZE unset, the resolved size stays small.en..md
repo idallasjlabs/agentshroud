@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_stt_model_ab.py"
 type: "rationale"
-community: "Community 267"
+community: "Community 287"
 location: "L116"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_267
+  - community/Community_287
 ---
 
 # With WHISPER_MODEL_SIZE unset, the resolved size stays small.en.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_module_model_size_defaults_to_small_en()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_267
+#graphify/rationale #graphify/EXTRACTED #community/Community_287

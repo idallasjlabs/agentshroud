@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Pull Request Generator (PR)_2]] - document - docker/config/openclaw/skills/i-pr/README.md
-- [[Purpose_97]] - document - docker/config/openclaw/skills/i-pr/README.md
-- [[README_102]] - document - docker/config/openclaw/skills/i-pr/README.md
-- [[Related Skills_106]] - document - docker/config/openclaw/skills/i-pr/README.md
-- [[Usage_107]] - document - docker/config/openclaw/skills/i-pr/README.md
+- [[Purpose_50]] - document - docker/config/hermes/skills/i-mac/README.md
+- [[Related Skills_41]] - document - docker/config/hermes/skills/i-mac/README.md
+- [[Usage_45]] - document - docker/config/hermes/skills/i-mac/README.md
+- [[hermesskillsi-macREADME]] - document - docker/config/hermes/skills/i-mac/README.md
+- [[macOS System Administrator (MAC)_1]] - document - docker/config/hermes/skills/i-mac/README.md
 
 ## Live Query (requires Dataview plugin)
 

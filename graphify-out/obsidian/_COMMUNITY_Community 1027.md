@@ -1,22 +1,23 @@
 ---
 type: community
-cohesion: 0.38
-members: 7
+cohesion: 0.46
+members: 8
 ---
 
 # Community 1027
 
-**Cohesion:** 0.38 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.46 - moderately connected
+**Members:** 8 nodes
 
 ## Members
-- [[SKILL_207]] - document - skills/openclaw/gh-issues/SKILL.md
-- [[SKILL_209]] - document - skills/openclaw/github/SKILL.md
-- [[gh CLI (GitHub)]] - concept - skills/openclaw/github/SKILL.md
-- [[gh-issues Claims File (dedup tracking)]] - concept - skills/openclaw/gh-issues/SKILL.md
-- [[gh-issues Cursor File (cron sequential tracking)]] - concept - skills/openclaw/gh-issues/SKILL.md
-- [[gh-issues PR Review Handler (Phase 6)]] - concept - skills/openclaw/gh-issues/SKILL.md
-- [[gh-issues Sub-agent Spawn (Phase 5)]] - concept - skills/openclaw/gh-issues/SKILL.md
+- [[cmd_buildkit()]] - code - docker/scripts/docker-cleanup.sh
+- [[cmd_diagnose()]] - code - docker/scripts/docker-cleanup.sh
+- [[cmd_nuclear()]] - code - docker/scripts/docker-cleanup.sh
+- [[cmd_restart()]] - code - docker/scripts/docker-cleanup.sh
+- [[cmd_safe_prune()]] - code - docker/scripts/docker-cleanup.sh
+- [[docker-cleanup.sh]] - code - docker/scripts/docker-cleanup.sh
+- [[docker-cleanup.sh script]] - code - docker/scripts/docker-cleanup.sh
+- [[usage()]] - code - docker/scripts/docker-cleanup.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,12 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 319]]
-- 1 edge to [[_COMMUNITY_Community 498]]
-- 1 edge to [[_COMMUNITY_Community 667]]
-- 1 edge to [[_COMMUNITY_Community 712]]
+- 1 edge to [[_COMMUNITY_Community 1073]]
 
 ## Top bridge nodes
-- [[SKILL_207]] - degree 7, connects to 2 communities
-- [[SKILL_209]] - degree 4, connects to 2 communities
-- [[gh-issues Cursor File (cron sequential tracking)]] - degree 3, connects to 1 community
+- [[docker-cleanup.sh]] - degree 8, connects to 1 community

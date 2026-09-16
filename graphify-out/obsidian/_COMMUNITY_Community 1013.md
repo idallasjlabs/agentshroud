@@ -1,22 +1,23 @@
 ---
 type: community
-cohesion: 0.29
-members: 7
+cohesion: 0.39
+members: 8
 ---
 
 # Community 1013
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.39 - loosely connected
+**Members:** 8 nodes
 
 ## Members
-- [[.load_all()]] - code - gateway/approval_queue/store.py
-- [[.load_pending()]] - code - gateway/approval_queue/store.py
-- [[.save()]] - code - gateway/approval_queue/store.py
-- [[ApprovalQueueItem_2]] - code - gateway/approval_queue/store.py
-- [[Insert or replace an approval item.]] - rationale - gateway/approval_queue/store.py
-- [[Load all items (for auditdebugging).]] - rationale - gateway/approval_queue/store.py
-- [[Load all pending (non-expired, non-decided) items.          Items whose expires_]] - rationale - gateway/approval_queue/store.py
+- [[dot-_patch_all()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_all_clean()_1]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_all_not_run_is_not_configured()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_critical_dominates()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_high_means_warning()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[Any_9]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestAggregateResults]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[_stub_summary()]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,9 +27,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 23]]
+- 2 edges to [[_COMMUNITY_Community 297]]
 
 ## Top bridge nodes
-- [[.load_all()]] - degree 3, connects to 1 community
-- [[.load_pending()]] - degree 3, connects to 1 community
-- [[.save()]] - degree 3, connects to 1 community
+- [[TestAggregateResults]] - degree 6, connects to 1 community
+- [[_stub_summary()]] - degree 3, connects to 1 community

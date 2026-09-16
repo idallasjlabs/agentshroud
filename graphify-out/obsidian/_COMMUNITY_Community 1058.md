@@ -10,13 +10,13 @@ members: 7
 **Members:** 7 nodes
 
 ## Members
-- [[.test_base64_in_subdomain_flagged()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_enforce_mode_blocks_tunneling()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_hex_encoded_subdomain_flagged()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_high_entropy_subdomain_flagged()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_multiple_long_labels_flagged()]] - code - gateway/tests/test_dns_filter.py
-- [[.test_very_long_subdomain_flagged()]] - code - gateway/tests/test_dns_filter.py
-- [[TestDNSTunnelingDetection]] - code - gateway/tests/test_dns_filter.py
+- [[Migration Path (SSH → Distributed Node)]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Step 1 Verify Option 1 Working]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Step 2 Install OpenClaw on Pi]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Step 3 Pair Nodes]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Step 4 Test Basic Communication]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Step 5 Migrate Workflows]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Step 6 Deprecate SSH (Optional)]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,8 +26,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
-- 1 edge to [[_COMMUNITY_Security Audit & Drift Detection]]
+- 1 edge to [[_COMMUNITY_Community 448]]
 
 ## Top bridge nodes
-- [[TestDNSTunnelingDetection]] - degree 10, connects to 2 communities
+- [[Migration Path (SSH → Distributed Node)]] - degree 7, connects to 1 community

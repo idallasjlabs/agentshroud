@@ -1,22 +1,23 @@
 ---
 type: community
-cohesion: 0.29
-members: 7
+cohesion: 0.25
+members: 8
 ---
 
 # Community 1012
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.25 - loosely connected
+**Members:** 8 nodes
 
 ## Members
-- [[Get Shit Done (GSD) Governance Cadence]] - concept - docs/architecture/agentic-os.md
-- [[CICD Pipeline Integration Guide]] - document - docs/api/integration-guide.md
-- [[CICD Quality Gates (14 jobs, 6 workflows)]] - concept - docs/architecture/agentic-os.md
-- [[Gap Analysis & Recommendations]] - concept - docs/architecture/agentic-os.md
-- [[Git Worktrees (..agentshroud-worktrees)]] - image - docs/diagrams/images/diagram-06-cicd-deployment.svg
-- [[GitHub Actions CI (test + lint + security-scan)]] - image - docs/diagrams/images/diagram-06-cicd-deployment.svg
-- [[PrePost Tool Hook Enforcement Layer]] - concept - docs/architecture/agentic-os.md
+- [[dot-test_prefers_running_image_over_configured_tag()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_running_image_parses_docker_inspect_stdout()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_running_image_returns_none_on_inspect_failure()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_running_image_returns_none_when_docker_missing()]] - code - gateway/tests/test_daily_cve_report.py
+- [[Regression guard (2026-08-30) the report scanned latest tags while deploys…]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[TestRunningImageResolution]] - code - gateway/tests/test_daily_cve_report.py
+- [[_raise()]] - code - gateway/tests/test_daily_cve_report.py
+- [[_raise()_1]] - code - gateway/tests/test_daily_cve_report.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,3 +25,10 @@ members: 7
 TABLE source_file, type FROM #community/Community_1012
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_Community 82]]
+
+## Top bridge nodes
+- [[TestRunningImageResolution]] - degree 5, connects to 1 community
+- [[_raise()]] - degree 2, connects to 1 community

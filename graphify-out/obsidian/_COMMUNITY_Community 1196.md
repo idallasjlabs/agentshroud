@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Incident Response (INCIDENT)]] - document - docker/config/hermes/skills/i-production/README.md
-- [[Purpose_61]] - document - docker/config/hermes/skills/i-production/README.md
-- [[README_66]] - document - docker/config/hermes/skills/i-production/README.md
-- [[Related Skills_67]] - document - docker/config/hermes/skills/i-production/README.md
-- [[Usage_68]] - document - docker/config/hermes/skills/i-production/README.md
+- [[dot-agentsskillsi-hermesREADME]] - document - .agents/skills/i-hermes/README.md
+- [[Hermes — Podcast Production Orchestrator]] - document - .agents/skills/i-hermes/README.md
+- [[Purpose_20]] - document - .agents/skills/i-hermes/README.md
+- [[Related Skills_11]] - document - .agents/skills/i-hermes/README.md
+- [[Usage_15]] - document - .agents/skills/i-hermes/README.md
 
 ## Live Query (requires Dataview plugin)
 

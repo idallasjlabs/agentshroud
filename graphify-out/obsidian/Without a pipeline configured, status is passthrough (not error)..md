@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_channel_ownership.py"
 type: "rationale"
-community: "Community 228"
+community: "Community 235"
 location: "L71"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_228
+  - community/Community_235
 ---
 
 # Without a pipeline configured, status is passthrough (not error).
 
 ## Connections
-- [[.test_passthrough_status_without_pipeline()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_passthrough_status_without_pipeline()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_228
+#graphify/rationale #graphify/EXTRACTED #community/Community_235

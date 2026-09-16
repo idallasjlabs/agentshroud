@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Project Management (PM)_1]] - document - docker/config/openclaw/skills/i-pm/README.md
-- [[Purpose_96]] - document - docker/config/openclaw/skills/i-pm/README.md
-- [[README_101]] - document - docker/config/openclaw/skills/i-pm/README.md
-- [[Related Skills_105]] - document - docker/config/openclaw/skills/i-pm/README.md
-- [[Usage_106]] - document - docker/config/openclaw/skills/i-pm/README.md
+- [[Purpose_49]] - document - docker/config/hermes/skills/i-icloud/README.md
+- [[Related Skills_40]] - document - docker/config/hermes/skills/i-icloud/README.md
+- [[Usage_44]] - document - docker/config/hermes/skills/i-icloud/README.md
+- [[hermesskillsi-icloudREADME]] - document - docker/config/hermes/skills/i-icloud/README.md
+- [[iCloud Data Manager (ICLOUD)_1]] - document - docker/config/hermes/skills/i-icloud/README.md
 
 ## Live Query (requires Dataview plugin)
 

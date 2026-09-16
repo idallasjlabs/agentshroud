@@ -1,22 +1,23 @@
 ---
 type: community
-cohesion: 0.29
-members: 7
+cohesion: 0.36
+members: 8
 ---
 
 # Community 1025
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.36 - loosely connected
+**Members:** 8 nodes
 
 ## Members
-- [[.export_attack_report()]] - code - gateway/security/context_guard.py
-- [[.get_attack_summary()]] - code - gateway/security/context_guard.py
-- [[.get_session_risk_level()]] - code - gateway/security/context_guard.py
-- [[Any_35]] - code - gateway/security/context_guard.py
-- [[Export attack detection report.]] - rationale - gateway/security/context_guard.py
-- [[Get risk level for a session based on detected attacks.]] - rationale - gateway/security/context_guard.py
-- [[Get summary of detected attacks.]] - rationale - gateway/security/context_guard.py
+- [[A 429 that escaped the retry loop must trigger local failover.]] - rationale - gateway/tests/test_rate_limit_failover.py
+- [[Return (True, anthropic_rate_limitopenai_rate_limit...) for a     persiste]] - rationale - gateway/proxy/llm_quota_detector.py
+- [[is_rate_limited_post_retry()]] - code - gateway/proxy/llm_quota_detector.py
+- [[test_detector_empty_body_still_fires_as_generic_cloud()]] - code - gateway/tests/test_rate_limit_failover.py
+- [[test_detector_fires_on_plain_429()]] - code - gateway/tests/test_rate_limit_failover.py
+- [[test_detector_skips_non_429()]] - code - gateway/tests/test_rate_limit_failover.py
+- [[test_proxy_failover_on_post_retry_429()]] - code - gateway/tests/test_rate_limit_failover.py
+- [[test_rate_limit_failover.py]] - code - gateway/tests/test_rate_limit_failover.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,9 +27,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Security Audit & Drift Detection]]
+- 2 edges to [[_COMMUNITY_Community 37]]
+- 1 edge to [[_COMMUNITY_Community 120]]
 
 ## Top bridge nodes
-- [[.get_attack_summary()]] - degree 5, connects to 1 community
-- [[.export_attack_report()]] - degree 3, connects to 1 community
-- [[.get_session_risk_level()]] - degree 3, connects to 1 community
+- [[is_rate_limited_post_retry()]] - degree 6, connects to 1 community
+- [[test_rate_limit_failover.py]] - degree 6, connects to 1 community
+- [[test_proxy_failover_on_post_retry_429()]] - degree 3, connects to 1 community

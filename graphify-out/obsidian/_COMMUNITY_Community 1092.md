@@ -1,21 +1,22 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+cohesion: 0.29
+members: 7
 ---
 
 # Community 1092
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Cohesion:** 0.29 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[AgentShroud Sequence Diagrams (doc)]] - document - docs/flows/sequence-diagrams.md
-- [[Diagram 15 Sequence — Telegram]] - image - docs/diagrams/images/diagram-15-sequence-telegram.svg
-- [[Kill Switch Activation Flow (SOFT_KILL, HARD_KILL, PANIC)]] - concept - docs/flows/sequence-diagrams.md
-- [[Normal Message Flow (User - Gateway - Sanitizer - Audit - OpenClaw - Audit - User)]] - concept - docs/flows/sequence-diagrams.md
-- [[SSH Command Flow (injection check, approval queue, executor, audit)]] - concept - docs/flows/sequence-diagrams.md
-- [[Web Fetch Flow (URL analysis, SSRF protection, content scanning)]] - concept - docs/flows/sequence-diagrams.md
+- [[AgentShroud Text Interfaces]] - document - src/interfaces/README.md
+- [[Control Center]] - document - src/interfaces/README.md
+- [[Controls]] - document - src/interfaces/README.md
+- [[Future Interfaces]] - document - src/interfaces/README.md
+- [[Usage_1]] - document - src/interfaces/README.md
+- [[What it Shows]] - document - src/interfaces/README.md
+- [[interfacesREADME]] - document - src/interfaces/README.md
 
 ## Live Query (requires Dataview plugin)
 

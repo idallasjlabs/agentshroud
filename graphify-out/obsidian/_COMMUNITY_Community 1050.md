@@ -1,22 +1,22 @@
 ---
 type: community
-cohesion: 0.33
+cohesion: 0.29
 members: 7
 ---
 
 # Community 1050
 
-**Cohesion:** 0.33 - loosely connected
+**Cohesion:** 0.29 - loosely connected
 **Members:** 7 nodes
 
 ## Members
-- [[Notes_9]] - document - skills/openclaw/video-frames/SKILL.md
-- [[Quick start_4]] - document - skills/openclaw/video-frames/SKILL.md
-- [[SKILL_236]] - document - skills/openclaw/video-frames/SKILL.md
-- [[Video Frames (ffmpeg)]] - document - skills/openclaw/video-frames/SKILL.md
-- [[frame.sh]] - code - skills/openclaw/video-frames/scripts/frame.sh
-- [[frame.sh script]] - code - skills/openclaw/video-frames/scripts/frame.sh
-- [[usage()_8]] - code - skills/openclaw/video-frames/scripts/frame.sh
+- [[CPA Curriculum Frontmatter Addition]] - document - .agents/skills/i-atlas/SKILL.md
+- [[Coverage Types]] - document - .agents/skills/i-atlas/SKILL.md
+- [[Episode Closing]] - document - .agents/skills/i-atlas/SKILL.md
+- [[Exam Weight Integration]] - document - .agents/skills/i-atlas/SKILL.md
+- [[Gleim Unit Mapping]] - document - .agents/skills/i-atlas/SKILL.md
+- [[Mandatory Acronym Expansion]] - document - .agents/skills/i-atlas/SKILL.md
+- [[OKE Channel — CPA Exam Context]] - document - .agents/skills/i-atlas/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,7 +26,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 401]]
+- 1 edge to [[_COMMUNITY_Community 672]]
 
 ## Top bridge nodes
-- [[SKILL_236]] - degree 3, connects to 1 community
+- [[OKE Channel — CPA Exam Context]] - degree 7, connects to 1 community

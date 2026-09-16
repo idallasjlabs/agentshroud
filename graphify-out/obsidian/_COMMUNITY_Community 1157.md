@@ -1,20 +1,21 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+cohesion: 0.33
+members: 6
 ---
 
 # Community 1157
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Cohesion:** 0.33 - loosely connected
+**Members:** 6 nodes
 
 ## Members
-- [[Oracle — Feedback Analyst]] - document - .agents/skills/i-oracle/README.md
-- [[Purpose_21]] - document - .agents/skills/i-oracle/README.md
-- [[README_21]] - document - .agents/skills/i-oracle/README.md
-- [[Related Skills_24]] - document - .agents/skills/i-oracle/README.md
-- [[Usage_24]] - document - .agents/skills/i-oracle/README.md
+- [[BRANCH_PROTECTION]] - document - docs/governance/BRANCH_PROTECTION.md
+- [[GitHub Branch Protection — `main`]] - document - docs/governance/BRANCH_PROTECTION.md
+- [[Local Enforcement (already active)]] - document - docs/governance/BRANCH_PROTECTION.md
+- [[Required Settings]] - document - docs/governance/BRANCH_PROTECTION.md
+- [[Required Status Checks]] - document - docs/governance/BRANCH_PROTECTION.md
+- [[Verification]] - document - docs/governance/BRANCH_PROTECTION.md
 
 ## Live Query (requires Dataview plugin)
 

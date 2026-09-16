@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Git Workflow Guardian (GIT-GUARD)_2]] - document - docker/config/openclaw/skills/i-gg/README.md
-- [[Purpose_85]] - document - docker/config/openclaw/skills/i-gg/README.md
-- [[README_90]] - document - docker/config/openclaw/skills/i-gg/README.md
-- [[Related Skills_91]] - document - docker/config/openclaw/skills/i-gg/README.md
-- [[Usage_94]] - document - docker/config/openclaw/skills/i-gg/README.md
+- [[Atlas — Curriculum Architect_1]] - document - docker/config/hermes/skills/i-atlas/README.md
+- [[Purpose_38]] - document - docker/config/hermes/skills/i-atlas/README.md
+- [[Related Skills_29]] - document - docker/config/hermes/skills/i-atlas/README.md
+- [[Usage_33]] - document - docker/config/hermes/skills/i-atlas/README.md
+- [[hermesskillsi-atlasREADME]] - document - docker/config/hermes/skills/i-atlas/README.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION.md"
 type: "document"
-community: "Community 731"
+community: "Community 765"
 location: "L115"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_731
+  - community/Community_765
 ---
 
 # Where's The REAL Value?
@@ -17,4 +17,4 @@ tags:
 - [[❓ Low-Value Features (Questionable ROI)]] - `contains` [EXTRACTED]
 - [[🎯 High-Value Features (Justify the Effort)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_731
+#graphify/document #graphify/EXTRACTED #community/Community_765

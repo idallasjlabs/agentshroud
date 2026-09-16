@@ -10,13 +10,13 @@ members: 7
 **Members:** 7 nodes
 
 ## Members
-- [[Add Swap File]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Backup Strategy]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Cooling Recommendations]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Important Notes]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Optional Automated Security Updates]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Power Supply]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Security Hardening Checklist]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[A. `mac_app_catalog.json` — Machine-readable manifest]] - document - .agents/skills/i-mac/SKILL.md
+- [[B. `mac_app_catalog.md` — Human-readable catalog]] - document - .agents/skills/i-mac/SKILL.md
+- [[Discovery Strategy]] - document - .agents/skills/i-mac/SKILL.md
+- [[Phase 2 — Deduplication & Normalization]] - document - .agents/skills/i-mac/SKILL.md
+- [[Phase 3 — Categorization]] - document - .agents/skills/i-mac/SKILL.md
+- [[Phase 4 — Enrichment]] - document - .agents/skills/i-mac/SKILL.md
+- [[Phase 5 — Output Generation]] - document - .agents/skills/i-mac/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,7 +26,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 349]]
+- 2 edges to [[_COMMUNITY_Community 399]]
+- 1 edge to [[_COMMUNITY_Community 828]]
 
 ## Top bridge nodes
-- [[Important Notes]] - degree 7, connects to 1 community
+- [[Discovery Strategy]] - degree 7, connects to 2 communities

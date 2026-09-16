@@ -1,20 +1,21 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+cohesion: 0.33
+members: 6
 ---
 
 # Community 1164
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Cohesion:** 0.33 - loosely connected
+**Members:** 6 nodes
 
 ## Members
-- [[Purpose_32]] - document - .agents/skills/i-socrates/README.md
-- [[README_32]] - document - .agents/skills/i-socrates/README.md
-- [[Related Skills_35]] - document - .agents/skills/i-socrates/README.md
-- [[Socrates — Dialogue Architect]] - document - .agents/skills/i-socrates/README.md
-- [[Usage_35]] - document - .agents/skills/i-socrates/README.md
+- [[Key Operations (Inferred)]] - document - docs/vault/02 - Modules/Other/text_control_center.py.md
+- [[Purpose_8]] - document - docs/vault/02 - Modules/Other/text_control_center.py.md
+- [[Related Notes_8]] - document - docs/vault/02 - Modules/Other/text_control_center.py.md
+- [[Relationship to Web API]] - document - docs/vault/02 - Modules/Other/text_control_center.py.md
+- [[text_control_center.py  agentshroud_manager.py]] - document - docs/vault/02 - Modules/Other/text_control_center.py.md
+- [[text_control_center.py]] - document - docs/vault/02 - Modules/Other/text_control_center.py.md
 
 ## Live Query (requires Dataview plugin)
 

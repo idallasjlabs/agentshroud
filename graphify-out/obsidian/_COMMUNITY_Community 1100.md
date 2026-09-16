@@ -1,21 +1,22 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+cohesion: 0.57
+members: 7
 ---
 
 # Community 1100
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Cohesion:** 0.57 - moderately connected
+**Members:** 7 nodes
 
 ## Members
-- [[Assess severity]] - concept - docs/diagrams/images/diagram-19-incident-response.svg
-- [[Incident detected]] - concept - docs/diagrams/images/diagram-19-incident-response.svg
-- [[P1 — Critical (respond immediately; owner Isaiah Jefferson; kill switch  revoke  rotate)]] - concept - docs/diagrams/images/diagram-19-incident-response.svg
-- [[P2 — High (respond within 1 hour; restart containers, rebuild image)]] - concept - docs/diagrams/images/diagram-19-incident-response.svg
-- [[P3 — Medium (respond within 4 hours; review logs, apply config fix)]] - concept - docs/diagrams/images/diagram-19-incident-response.svg
-- [[P4 — Low (resolve in next session; fix branch + PR)]] - concept - docs/diagrams/images/diagram-19-incident-response.svg
+- [[canary-deploy.sh]] - code - scripts/canary-deploy.sh
+- [[canary-deploy.sh script]] - code - scripts/canary-deploy.sh
+- [[deploy_ref()]] - code - scripts/canary-deploy.sh
+- [[die()]] - code - scripts/canary-deploy.sh
+- [[log()_1]] - code - scripts/canary-deploy.sh
+- [[run()]] - code - scripts/canary-deploy.sh
+- [[run_in_repo()]] - code - scripts/canary-deploy.sh
 
 ## Live Query (requires Dataview plugin)
 

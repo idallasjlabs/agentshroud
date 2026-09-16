@@ -1,20 +1,21 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+cohesion: 0.33
+members: 6
 ---
 
 # Community 1142
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Cohesion:** 0.33 - loosely connected
+**Members:** 6 nodes
 
 ## Members
-- [[AWS Cloud Management & FinOps]] - document - .agents/skills/i-aws/README.md
-- [[Purpose_3]] - document - .agents/skills/i-aws/README.md
-- [[README_3]] - document - .agents/skills/i-aws/README.md
-- [[Related Skills_3]] - document - .agents/skills/i-aws/README.md
-- [[Usage_4]] - document - .agents/skills/i-aws/README.md
+- [[AgentShroud Sequence Diagrams (doc)]] - document - docs/flows/sequence-diagrams.md
+- [[Diagram 15 Sequence — Telegram]] - image - docs/diagrams/images/diagram-15-sequence-telegram.svg
+- [[Kill Switch Activation Flow (SOFT_KILL, HARD_KILL, PANIC)]] - concept - docs/flows/sequence-diagrams.md
+- [[Normal Message Flow (User - Gateway - Sanitizer - Audit - OpenClaw - Audit - User)]] - concept - docs/flows/sequence-diagrams.md
+- [[SSH Command Flow (injection check, approval queue, executor, audit)]] - concept - docs/flows/sequence-diagrams.md
+- [[Web Fetch Flow (URL analysis, SSRF protection, content scanning)]] - concept - docs/flows/sequence-diagrams.md
 
 ## Live Query (requires Dataview plugin)
 

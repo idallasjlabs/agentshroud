@@ -1,21 +1,22 @@
 ---
 type: community
-cohesion: 0.47
-members: 6
+cohesion: 0.29
+members: 7
 ---
 
 # Community 1097
 
-**Cohesion:** 0.47 - moderately connected
-**Members:** 6 nodes
+**Cohesion:** 0.29 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[_seed_cron()]] - code - docker/bots/hermes/init-config.sh
-- [[_seed_cron() (idempotent native cron job seeding)]] - code - docker/bots/hermes/init-config.sh
-- [[_write_soul()]] - code - docker/bots/hermes/init-config.sh
-- [[_write_soul() (ownership-tolerant SOUL.md write)]] - code - docker/bots/hermes/init-config.sh
-- [[init-config.sh]] - code - docker/bots/hermes/init-config.sh
-- [[init-config.sh script]] - code - docker/bots/hermes/init-config.sh
+- [[Step 1 Install ClawHub CLI]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[Step 2 Create ClawHub Account]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[Step 3 Verify Skill Ready]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[Step 4 Publish to ClawHub]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[Step 5 Verify Publication]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[Step 6 Test Installation (Optional)]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[📋 Detailed Step-by-Step]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,8 +26,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 1031]]
-- 1 edge to [[_COMMUNITY_Community 549]]
+- 1 edge to [[_COMMUNITY_Community 700]]
 
 ## Top bridge nodes
-- [[init-config.sh]] - degree 7, connects to 2 communities
+- [[📋 Detailed Step-by-Step]] - degree 7, connects to 1 community

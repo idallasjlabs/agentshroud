@@ -1,20 +1,21 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+cohesion: 0.33
+members: 6
 ---
 
 # Community 1140
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Cohesion:** 0.33 - loosely connected
+**Members:** 6 nodes
 
 ## Members
-- [[Athena — Knowledge Distiller]] - document - .agents/skills/i-athena/README.md
-- [[Purpose_1]] - document - .agents/skills/i-athena/README.md
-- [[README_1]] - document - .agents/skills/i-athena/README.md
-- [[Related Skills_1]] - document - .agents/skills/i-athena/README.md
-- [[Usage_2]] - document - .agents/skills/i-athena/README.md
+- [[Cryptographic Node Pairing Process]] - concept - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Distributed OpenClaw Node Architecture (Pi peer-to-peer agent)]] - concept - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Marvin (Mac Studio) — Primary devbuild server]] - concept - docs/TEAM.md
+- [[Pi (Raspberry Pi 4B) — Edgetest node]] - concept - docs/TEAM.md
+- [[Tailscale mesh VPN (tail240ea8.ts.net)]] - concept - docs/TEAM.md
+- [[Trillian (Mac Mini) — Secondary buildCI]] - concept - docs/TEAM.md
 
 ## Live Query (requires Dataview plugin)
 

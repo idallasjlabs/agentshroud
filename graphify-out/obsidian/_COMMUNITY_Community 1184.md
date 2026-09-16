@@ -1,20 +1,21 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+cohesion: 0.33
+members: 6
 ---
 
 # Community 1184
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Cohesion:** 0.33 - loosely connected
+**Members:** 6 nodes
 
 ## Members
-- [[Hermes — Podcast Production Orchestrator_1]] - document - docker/config/hermes/skills/i-hermes/README.md
-- [[Purpose_49]] - document - docker/config/hermes/skills/i-hermes/README.md
-- [[README_54]] - document - docker/config/hermes/skills/i-hermes/README.md
-- [[Related Skills_52]] - document - docker/config/hermes/skills/i-hermes/README.md
-- [[Usage_55]] - document - docker/config/hermes/skills/i-hermes/README.md
+- [[6. Tailscale — secure ESP→Hermes link ✅ LIVE (see docsintegrationsvoice-terminal-esp32-s3.md)]] - document - firmware/voice-terminal/SETUP.md
+- [[6a. marvin is your tailnet host]] - document - firmware/voice-terminal/SETUP.md
+- [[6b. Generate an auth key for the device]] - document - firmware/voice-terminal/SETUP.md
+- [[6c. Add MicroLink to the firmware (SUPERSEDED — production uses Tailscale Funnel, no on-device client)]] - document - firmware/voice-terminal/SETUP.md
+- [[6d. Expose the Voice Gateway on marvin ✅ LIVE (`tailscale serve --bg 8765`)]] - document - firmware/voice-terminal/SETUP.md
+- [[6e. ACL lock-down (recommended)]] - document - firmware/voice-terminal/SETUP.md
 
 ## Live Query (requires Dataview plugin)
 

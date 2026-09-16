@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Oracle — Feedback Analyst_2]] - document - docker/config/hermes/skills/i-oracle/README.md
-- [[Purpose_58]] - document - docker/config/hermes/skills/i-oracle/README.md
-- [[README_63]] - document - docker/config/hermes/skills/i-oracle/README.md
-- [[Related Skills_64]] - document - docker/config/hermes/skills/i-oracle/README.md
-- [[Usage_65]] - document - docker/config/hermes/skills/i-oracle/README.md
+- [[dot-agentsskillsi-dataREADME]] - document - .agents/skills/i-data/README.md
+- [[Data Validation (DATA-VAL)]] - document - .agents/skills/i-data/README.md
+- [[Purpose_17]] - document - .agents/skills/i-data/README.md
+- [[Related Skills_8]] - document - .agents/skills/i-data/README.md
+- [[Usage_12]] - document - .agents/skills/i-data/README.md
 
 ## Live Query (requires Dataview plugin)
 

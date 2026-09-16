@@ -12,6 +12,6 @@ tags:
 # Workflow 2: Bot Creates Files for You
 
 ## Connections
-- [[Common Workflows_1]] - `contains` [EXTRACTED]
+- [[Common Workflows]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Community_163

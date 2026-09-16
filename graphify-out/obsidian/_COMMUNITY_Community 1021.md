@@ -1,22 +1,23 @@
 ---
 type: community
-cohesion: 0.29
-members: 7
+cohesion: 0.25
+members: 8
 ---
 
 # Community 1021
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.25 - loosely connected
+**Members:** 8 nodes
 
 ## Members
-- [[Deployment Matrix  (Direct to Prod)_1]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
-- [[GitHub Actions Best Practices_2]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
-- [[Quality Gates  (execution order)_2]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
-- [[Review Flags  (block the merge)_2]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
-- [[Role_81]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
-- [[SKILL_141]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
-- [[Skill CICD Pipeline Advisor (CICD)_2]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
+- [[8. Performance & Testing]] - document - docs/papers/agentshroud-whitepaper.md
+- [[8.1 Test Coverage]] - document - docs/papers/agentshroud-whitepaper.md
+- [[8.2 Resource Footprint]] - document - docs/papers/agentshroud-whitepaper.md
+- [[8.3 Latency]] - document - docs/papers/agentshroud-whitepaper.md
+- [[Docker Test]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[GitHub Integration Test]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Phase 10 Validation Checklist]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[System Verification]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,3 +25,11 @@ members: 7
 TABLE source_file, type FROM #community/Community_1021
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 412]]
+- 1 edge to [[_COMMUNITY_Community 494]]
+
+## Top bridge nodes
+- [[8. Performance & Testing]] - degree 5, connects to 1 community
+- [[Phase 10 Validation Checklist]] - degree 5, connects to 1 community

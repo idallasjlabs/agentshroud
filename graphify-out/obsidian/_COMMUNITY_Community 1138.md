@@ -1,21 +1,21 @@
 ---
 type: community
-cohesion: 0.33
+cohesion: 0.40
 members: 6
 ---
 
 # Community 1138
 
-**Cohesion:** 0.33 - loosely connected
+**Cohesion:** 0.40 - moderately connected
 **Members:** 6 nodes
 
 ## Members
-- [[Competitive Intelligence Protocol_2]] - document - docker/config/openclaw/workspace/IDENTITY.md
-- [[IDENTITY]] - document - docker/config/openclaw/workspace/IDENTITY.md
-- [[IDENTITY.md - Who I Am_2]] - document - docker/config/openclaw/workspace/IDENTITY.md
-- [[My Owner_2]] - document - docker/config/openclaw/workspace/IDENTITY.md
-- [[My Responsibilities_1]] - document - docker/config/openclaw/workspace/IDENTITY.md
-- [[My Role_2]] - document - docker/config/openclaw/workspace/IDENTITY.md
+- [[appendLog()_1]] - code - docker/config/openclaw/skills/i-browser/browse.js
+- [[browserFetch()_1]] - code - docker/config/openclaw/skills/i-browser/browse.js
+- [[fs_1]] - code - docker/config/openclaw/skills/i-browser/browse.js
+- [[openclawskillsi-browserbrowse.js]] - code - docker/config/openclaw/skills/i-browser/browse.js
+- [[path_5]] - code - docker/config/openclaw/skills/i-browser/browse.js
+- [[{ chromium }_1]] - code - docker/config/openclaw/skills/i-browser/browse.js
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,10 +23,3 @@ members: 6
 TABLE source_file, type FROM #community/Community_1138
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 666]]
-- 1 edge to [[_COMMUNITY_Community 620]]
-
-## Top bridge nodes
-- [[IDENTITY]] - degree 3, connects to 2 communities

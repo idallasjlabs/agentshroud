@@ -1,21 +1,22 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+cohesion: 0.29
+members: 7
 ---
 
 # Community 1109
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Cohesion:** 0.29 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[10. Colima VM Internet Connectivity Loss]] - document - docs/project/REPORTED_ISSUES.md
-- [[11. Missing Test Coverage for Core Modules]] - document - docs/project/REPORTED_ISSUES.md
-- [[12. PII Redaction Issues]] - document - docs/project/REPORTED_ISSUES.md
-- [[13. Duplicate Imports & Verbose Pydantic Init]] - document - docs/project/REPORTED_ISSUES.md
-- [[9. Streaming Responses Bypass Outbound Filtering]] - document - docs/project/REPORTED_ISSUES.md
-- [[🟡 MEDIUM Technical Debt & Bugs]] - document - docs/project/REPORTED_ISSUES.md
+- [[dot-test_owner_recipient_body_preserved()]] - code - gateway/tests/test_email_owner_bypasses_pii.py
+- [[dot-test_send_owner_endpoint_also_bypasses_pii()]] - code - gateway/tests/test_email_owner_bypasses_pii.py
+- [[dot-test_unknown_recipient_body_still_scrubbed()]] - code - gateway/tests/test_email_owner_bypasses_pii.py
+- [[emailsend-owner delegates to email_send and also skips PII for the owner.]] - rationale - gateway/tests/test_email_owner_bypasses_pii.py
+- [[Owner-allowlisted recipient receives body verbatim; pii_redacted=False.]] - rationale - gateway/tests/test_email_owner_bypasses_pii.py
+- [[TestOwnerEmailBypassesPii]] - code - gateway/tests/test_email_owner_bypasses_pii.py
+- [[Unknown recipient's body is PII-scrubbed before approval queue submission.]] - rationale - gateway/tests/test_email_owner_bypasses_pii.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,7 +26,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 717]]
+- 3 edges to [[_COMMUNITY_Slack Proxy & Main Endpoint Tests]]
+- 1 edge to [[_COMMUNITY_Approval Routing & Event Bus]]
 
 ## Top bridge nodes
-- [[🟡 MEDIUM Technical Debt & Bugs]] - degree 6, connects to 1 community
+- [[TestOwnerEmailBypassesPii]] - degree 4, connects to 1 community
+- [[dot-test_owner_recipient_body_preserved()]] - degree 3, connects to 1 community
+- [[dot-test_send_owner_endpoint_also_bypasses_pii()]] - degree 3, connects to 1 community
+- [[dot-test_unknown_recipient_body_still_scrubbed()]] - degree 3, connects to 1 community

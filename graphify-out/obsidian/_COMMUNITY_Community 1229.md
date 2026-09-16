@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Mnemosyne — Retention Engineer_4]] - document - docker/config/openclaw/skills/i-mnemosyne/README.md
-- [[Purpose_94]] - document - docker/config/openclaw/skills/i-mnemosyne/README.md
-- [[README_99]] - document - docker/config/openclaw/skills/i-mnemosyne/README.md
-- [[Related Skills_103]] - document - docker/config/openclaw/skills/i-mnemosyne/README.md
-- [[Usage_104]] - document - docker/config/openclaw/skills/i-mnemosyne/README.md
+- [[Git Workflow Guardian (GIT-GUARD)_1]] - document - docker/config/hermes/skills/i-gg/README.md
+- [[Purpose_47]] - document - docker/config/hermes/skills/i-gg/README.md
+- [[Related Skills_38]] - document - docker/config/hermes/skills/i-gg/README.md
+- [[Usage_42]] - document - docker/config/hermes/skills/i-gg/README.md
+- [[hermesskillsi-ggREADME]] - document - docker/config/hermes/skills/i-gg/README.md
 
 ## Live Query (requires Dataview plugin)
 

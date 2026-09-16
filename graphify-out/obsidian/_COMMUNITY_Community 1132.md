@@ -10,12 +10,12 @@ members: 6
 **Members:** 6 nodes
 
 ## Members
-- [[.test_unknown_event_source_rejected()]] - code - gateway/tests/test_session_security.py
-- [[.test_unregistered_session_event_rejected()]] - code - gateway/tests/test_session_security.py
-- [[.test_valid_event_source_accepted()]] - code - gateway/tests/test_session_security.py
-- [[TestEventInjection]] - code - gateway/tests/test_session_security.py
-- [[manager()_3]] - code - gateway/tests/test_session_security.py
-- [[test_session_security.py]] - code - gateway/tests/test_session_security.py
+- [[For graphify explain_1]] - document - docker/config/hermes/skills/graphify/references/query.md
+- [[For graphify path_1]] - document - docker/config/hermes/skills/graphify/references/query.md
+- [[Step 0 — Constrained query expansion (REQUIRED before traversal)_1]] - document - docker/config/hermes/skills/graphify/references/query.md
+- [[Step 1 — Traversal_1]] - document - docker/config/hermes/skills/graphify/references/query.md
+- [[graphify reference query, path, explain_1]] - document - docker/config/hermes/skills/graphify/references/query.md
+- [[hermesskillsgraphifyreferencesquery]] - document - docker/config/hermes/skills/graphify/references/query.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,15 +23,3 @@ members: 6
 TABLE source_file, type FROM #community/Community_1132
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 7 edges to [[_COMMUNITY_Community 474]]
-- 5 edges to [[_COMMUNITY_Community 478]]
-- 1 edge to [[_COMMUNITY_Community 581]]
-- 1 edge to [[_COMMUNITY_Community 870]]
-- 1 edge to [[_COMMUNITY_Community 1133]]
-
-## Top bridge nodes
-- [[test_session_security.py]] - degree 10, connects to 5 communities
-- [[TestEventInjection]] - degree 10, connects to 2 communities
-- [[manager()_3]] - degree 2, connects to 1 community

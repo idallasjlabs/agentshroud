@@ -12,6 +12,6 @@ tags:
 # Workflow 3: Bot Takes Screenshots
 
 ## Connections
-- [[Common Workflows_1]] - `contains` [EXTRACTED]
+- [[Common Workflows]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Community_163

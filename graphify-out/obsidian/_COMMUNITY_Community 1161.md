@@ -1,20 +1,21 @@
 ---
 type: community
 cohesion: 0.40
-members: 5
+members: 6
 ---
 
 # Community 1161
 
 **Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Members:** 6 nodes
 
 ## Members
-- [[Purpose_28]] - document - .agents/skills/i-sav/README.md
-- [[README_28]] - document - .agents/skills/i-sav/README.md
-- [[Related Skills_31]] - document - .agents/skills/i-sav/README.md
-- [[System Audit Vault]] - document - .agents/skills/i-sav/README.md
-- [[Usage_31]] - document - .agents/skills/i-sav/README.md
+- [[Contact]] - document - docs/project/legal/TRADEMARK.md
+- [[Standard Footer]] - document - docs/project/legal/TRADEMARK.md
+- [[TRADEMARK]] - document - docs/project/legal/TRADEMARK.md
+- [[Trademark Details]] - document - docs/project/legal/TRADEMARK.md
+- [[Trademark Notice_2]] - document - docs/project/legal/TRADEMARK.md
+- [[Usage Guidelines]] - document - docs/project/legal/TRADEMARK.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,3 +23,10 @@ members: 5
 TABLE source_file, type FROM #community/Community_1161
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_Community 1079]]
+- 1 edge to [[_COMMUNITY_Community 1295]]
+
+## Top bridge nodes
+- [[TRADEMARK]] - degree 5, connects to 2 communities

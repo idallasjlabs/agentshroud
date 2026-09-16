@@ -1,20 +1,20 @@
 ---
 type: community
-cohesion: 0.40
+cohesion: 0.60
 members: 5
 ---
 
 # Community 1255
 
-**Cohesion:** 0.40 - moderately connected
+**Cohesion:** 0.60 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[Agent Not Found]] - document - .github/COPILOT_CLI_SETUP.md
-- [[Authentication Issues_1]] - document - .github/COPILOT_CLI_SETUP.md
-- [[Configuration Not Loading]] - document - .github/COPILOT_CLI_SETUP.md
-- [[Path Permission Denied]] - document - .github/COPILOT_CLI_SETUP.md
-- [[Troubleshooting_3]] - document - .github/COPILOT_CLI_SETUP.md
+- [[Deterministic prefetch for the CVE Triage cron job. Fetches both GitHub…]] - rationale - docker/config/openclaw/cron/scripts/cve_prefetch.py
+- [[curl_json()]] - code - docker/config/openclaw/cron/scripts/cve_prefetch.py
+- [[cve_prefetch.py]] - code - docker/config/openclaw/cron/scripts/cve_prefetch.py
+- [[known_ghsa_ids()]] - code - docker/config/openclaw/cron/scripts/cve_prefetch.py
+- [[main()_1]] - code - docker/config/openclaw/cron/scripts/cve_prefetch.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,9 +22,3 @@ members: 5
 TABLE source_file, type FROM #community/Community_1255
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 172]]
-
-## Top bridge nodes
-- [[Troubleshooting_3]] - degree 5, connects to 1 community

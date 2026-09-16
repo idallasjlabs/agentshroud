@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_100]] - document - docker/config/openclaw/skills/i-qa/README.md
-- [[Quality Assurance (QA)_1]] - document - docker/config/openclaw/skills/i-qa/README.md
-- [[README_105]] - document - docker/config/openclaw/skills/i-qa/README.md
-- [[Related Skills_109]] - document - docker/config/openclaw/skills/i-qa/README.md
-- [[Usage_110]] - document - docker/config/openclaw/skills/i-qa/README.md
+- [[MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/README.md
+- [[Purpose_53]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/README.md
+- [[Related Skills_44]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/README.md
+- [[Usage_48]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/README.md
+- [[hermesskillsi-mcpm-aws-profileREADME]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/README.md
 
 ## Live Query (requires Dataview plugin)
 

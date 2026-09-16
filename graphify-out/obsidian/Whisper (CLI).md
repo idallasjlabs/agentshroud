@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/openai-whisper/SKILL.md"
 type: "document"
-community: "Community 716"
+community: "Community 752"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_716
+  - community/Community_752
 ---
 
 # Whisper (CLI)
 
 ## Connections
-- [[SKILL_222]] - `contains` [EXTRACTED]
+- [[openai-whisperSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_716
+#graphify/document #graphify/EXTRACTED #community/Community_752

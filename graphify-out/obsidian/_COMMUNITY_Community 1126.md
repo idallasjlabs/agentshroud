@@ -1,21 +1,21 @@
 ---
 type: community
-cohesion: 0.33
+cohesion: 0.40
 members: 6
 ---
 
 # Community 1126
 
-**Cohesion:** 0.33 - loosely connected
+**Cohesion:** 0.40 - moderately connected
 **Members:** 6 nodes
 
 ## Members
-- [[.test_google_proxy_json_body_passthrough()]] - code - gateway/tests/test_main_endpoints.py
-- [[.test_google_proxy_non_json_body_passthrough()]] - code - gateway/tests/test_main_endpoints.py
-- [[JSON upstream responses must stay JSON.]] - rationale - gateway/tests/test_main_endpoints.py
-- [[Plain-text upstream errors must not turn into gateway 500s.]] - rationale - gateway/tests/test_main_endpoints.py
-- [[Regression tests for v1beta proxy response handling.]] - rationale - gateway/tests/test_main_endpoints.py
-- [[TestGoogleAPIProxy]] - code - gateway/tests/test_main_endpoints.py
+- [[Hermes Service]] - code - docker/docker-compose.yml
+- [[Multi-Agent Orchestration (specialized agents, per-agent isolation)]] - concept - docs/archive/FUTURE-FEATURES.md
+- [[OpenClaw cron backup 2026-08-31]] - document - docs/dev-notes/cron-backup-20260831-161542/jobs.json
+- [[OpenClaw cron backup 2026-09-01]] - document - docs/dev-notes/cron-backup-20260901-053635/jobs.json
+- [[hermes-cron-dedup.sh]] - code - docker/scripts/hermes-cron-dedup.sh
+- [[hermes-cron-dedup.sh script]] - code - docker/scripts/hermes-cron-dedup.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,13 +23,3 @@ members: 6
 TABLE source_file, type FROM #community/Community_1126
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 24]]
-- 1 edge to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
-- 1 edge to [[_COMMUNITY_Ingest API & Approval Routes]]
-
-## Top bridge nodes
-- [[TestGoogleAPIProxy]] - degree 5, connects to 2 communities
-- [[.test_google_proxy_json_body_passthrough()]] - degree 3, connects to 1 community
-- [[.test_google_proxy_non_json_body_passthrough()]] - degree 3, connects to 1 community

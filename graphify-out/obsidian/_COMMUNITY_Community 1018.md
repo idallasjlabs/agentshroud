@@ -1,22 +1,23 @@
 ---
 type: community
-cohesion: 0.29
-members: 7
+cohesion: 0.25
+members: 8
 ---
 
 # Community 1018
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.25 - loosely connected
+**Members:** 8 nodes
 
 ## Members
-- [[Deployment Matrix (Direct to Prod)]] - concept - docker/config/hermes/skills/i-cicd/SKILL.md
-- [[GitHub Actions Best Practices_1]] - document - docker/config/hermes/skills/i-cicd/SKILL.md
-- [[Quality Gates  (execution order)_1]] - document - docker/config/hermes/skills/i-cicd/SKILL.md
-- [[Review Flags  (block the merge)_1]] - document - docker/config/hermes/skills/i-cicd/SKILL.md
-- [[Role_45]] - document - docker/config/hermes/skills/i-cicd/SKILL.md
-- [[SKILL_78]] - document - docker/config/hermes/skills/i-cicd/SKILL.md
-- [[Skill CICD Pipeline Advisor (CICD)_1]] - document - docker/config/hermes/skills/i-cicd/SKILL.md
+- [[quick-setup.sh]] - code - .llm_settings/scripts/security/quick-setup.sh
+- [[quick-setup.sh script]] - code - .llm_settings/scripts/security/quick-setup.sh
+- [[security-audit.sh]] - code - .llm_settings/scripts/security/security-audit.sh
+- [[security-audit.sh script]] - code - .llm_settings/scripts/security/security-audit.sh
+- [[setup-direnv.sh]] - code - .llm_settings/scripts/security/setup-direnv.sh
+- [[setup-direnv.sh script]] - code - .llm_settings/scripts/security/setup-direnv.sh
+- [[setup-pgpass.sh]] - code - .llm_settings/scripts/security/setup-pgpass.sh
+- [[setup-pgpass.sh script]] - code - .llm_settings/scripts/security/setup-pgpass.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,9 +25,3 @@ members: 7
 TABLE source_file, type FROM #community/Community_1018
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 848]]
-
-## Top bridge nodes
-- [[Deployment Matrix (Direct to Prod)]] - degree 2, connects to 1 community

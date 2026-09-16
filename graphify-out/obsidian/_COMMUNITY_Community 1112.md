@@ -1,21 +1,22 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+cohesion: 0.29
+members: 7
 ---
 
 # Community 1112
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Cohesion:** 0.29 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[1. Accomplishments This Phase_1]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
-- [[🎯 Binary Detection & Graceful Degradation]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
-- [[📊 Complete Security Module Integration]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
-- [[🔧 Security Module Constructor Fixes — Critical Infrastructure Repairs]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
-- [[🚀 New Management Endpoints — Real-Time Security Visibility]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
-- [[🛡️ Environment Resilience — TestProduction Compatibility]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[dot-client()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_install()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_installer_page()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_prerequisites()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_runtimes()]] - code - gateway/tests/test_runtime_engines.py
+- [[Installer must not fake completion SCRUM-107.          The endpoint has no auto]] - rationale - gateway/tests/test_runtime_engines.py
+- [[TestInstallerAPI]] - code - gateway/tests/test_runtime_engines.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,7 +26,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 133]]
+- 2 edges to [[_COMMUNITY_Community 333]]
+- 1 edge to [[_COMMUNITY_Community 106]]
+- 1 edge to [[_COMMUNITY_Community 359]]
+- 1 edge to [[_COMMUNITY_Community 231]]
+- 1 edge to [[_COMMUNITY_Community 364]]
 
 ## Top bridge nodes
-- [[1. Accomplishments This Phase_1]] - degree 6, connects to 1 community
+- [[TestInstallerAPI]] - degree 11, connects to 5 communities

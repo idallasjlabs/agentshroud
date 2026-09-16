@@ -1,20 +1,21 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+cohesion: 0.33
+members: 6
 ---
 
 # Community 1167
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Cohesion:** 0.33 - loosely connected
+**Members:** 6 nodes
 
 ## Members
-- [[10. Infrastructure & Runtime]] - document - docs/architecture/agentic-os.md
-- [[Container Architecture_1]] - document - docs/architecture/agentic-os.md
-- [[Container Hardening Summary]] - document - docs/architecture/agentic-os.md
-- [[Multi-Runtime Support]] - document - docs/architecture/agentic-os.md
-- [[`asb` CLI — Deployment Tool]] - document - docs/architecture/agentic-os.md
+- [[1. Accomplishments This Phase_1]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[🎯 Binary Detection & Graceful Degradation]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[📊 Complete Security Module Integration]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[🔧 Security Module Constructor Fixes — Critical Infrastructure Repairs]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[🚀 New Management Endpoints — Real-Time Security Visibility]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
+- [[🛡️ Environment Resilience — TestProduction Compatibility]] - document - docs/planning/reviews/phase-review-2026-02-24-b.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,7 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 162]]
+- 1 edge to [[_COMMUNITY_Community 130]]
 
 ## Top bridge nodes
-- [[10. Infrastructure & Runtime]] - degree 5, connects to 1 community
+- [[1. Accomplishments This Phase_1]] - degree 6, connects to 1 community

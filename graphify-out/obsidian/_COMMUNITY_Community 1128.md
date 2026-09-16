@@ -10,12 +10,12 @@ members: 6
 **Members:** 6 nodes
 
 ## Members
-- [[.test_falco_no_proc_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_falco_running_detected()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_falco_zombie_only_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_wazuh_agent_absent()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_wazuh_agent_detected()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestProcScans]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[options.js]] - code - browser-extension/options.js
+- [[restore()]] - code - browser-extension/options.js
+- [[save()]] - code - browser-extension/options.js
+- [[savedEl]] - code - browser-extension/options.js
+- [[tokenEl]] - code - browser-extension/options.js
+- [[urlEl]] - code - browser-extension/options.js
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,12 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 193]]
-- 1 edge to [[_COMMUNITY_Community 288]]
+- 1 edge to [[_COMMUNITY_Community 676]]
 
 ## Top bridge nodes
-- [[TestProcScans]] - degree 6, connects to 1 community
-- [[.test_falco_running_detected()]] - degree 2, connects to 1 community
-- [[.test_falco_zombie_only_returns_false()]] - degree 2, connects to 1 community
-- [[.test_wazuh_agent_absent()]] - degree 2, connects to 1 community
-- [[.test_wazuh_agent_detected()]] - degree 2, connects to 1 community
+- [[save()]] - degree 2, connects to 1 community

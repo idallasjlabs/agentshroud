@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_72]] - document - docker/config/hermes/skills/i-tw/README.md
-- [[README_77]] - document - docker/config/hermes/skills/i-tw/README.md
-- [[Related Skills_78]] - document - docker/config/hermes/skills/i-tw/README.md
-- [[Technical Writer (TW)_1]] - document - docker/config/hermes/skills/i-tw/README.md
-- [[Usage_79]] - document - docker/config/hermes/skills/i-tw/README.md
+- [[dot-agentsskillsi-sadREADME]] - document - .agents/skills/i-sad/README.md
+- [[Purpose_29]] - document - .agents/skills/i-sad/README.md
+- [[Related Skills_20]] - document - .agents/skills/i-sad/README.md
+- [[System Audit Documentation]] - document - .agents/skills/i-sad/README.md
+- [[Usage_24]] - document - .agents/skills/i-sad/README.md
 
 ## Live Query (requires Dataview plugin)
 

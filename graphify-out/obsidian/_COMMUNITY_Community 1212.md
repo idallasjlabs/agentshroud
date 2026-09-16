@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[AWS Cloud Management & FinOps_2]] - document - docker/config/openclaw/skills/i-aws/README.md
-- [[Purpose_77]] - document - docker/config/openclaw/skills/i-aws/README.md
-- [[README_82]] - document - docker/config/openclaw/skills/i-aws/README.md
-- [[Related Skills_83]] - document - docker/config/openclaw/skills/i-aws/README.md
-- [[Usage_85]] - document - docker/config/openclaw/skills/i-aws/README.md
+- [[dot-agentsskillsi-twREADME]] - document - .agents/skills/i-tw/README.md
+- [[Purpose_34]] - document - .agents/skills/i-tw/README.md
+- [[Related Skills_25]] - document - .agents/skills/i-tw/README.md
+- [[Technical Writer (TW)]] - document - .agents/skills/i-tw/README.md
+- [[Usage_29]] - document - .agents/skills/i-tw/README.md
 
 ## Live Query (requires Dataview plugin)
 

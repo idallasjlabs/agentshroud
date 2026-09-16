@@ -1,22 +1,23 @@
 ---
 type: community
-cohesion: 0.29
-members: 7
+cohesion: 0.25
+members: 8
 ---
 
 # Community 1019
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.25 - loosely connected
+**Members:** 8 nodes
 
 ## Members
-- [[Feedback Guidelines_1]] - document - docker/config/hermes/skills/i-cr/SKILL.md
-- [[Output Format_15]] - document - docker/config/hermes/skills/i-cr/SKILL.md
-- [[Production-Specific Review Checks_1]] - document - docker/config/hermes/skills/i-cr/SKILL.md
-- [[Review Principles_1]] - document - docker/config/hermes/skills/i-cr/SKILL.md
-- [[Role_46]] - document - docker/config/hermes/skills/i-cr/SKILL.md
-- [[SKILL_79]] - document - docker/config/hermes/skills/i-cr/SKILL.md
-- [[Skill Code Review (CR)_1]] - document - docker/config/hermes/skills/i-cr/SKILL.md
+- [[Kill Switch Triggered]] - document - docs/operations/incident-response.md
+- [[Layer 1 Pattern Matching]] - document - docs/security/security-architecture.md
+- [[Layer 2 Unicode Normalization]] - document - docs/security/security-architecture.md
+- [[Layer 3 Multi-Layer Decoding]] - document - docs/security/security-architecture.md
+- [[Multi-Layer Detection Strategy]] - document - docs/security/security-architecture.md
+- [[P2 High Priority Incidents]] - document - docs/operations/incident-response.md
+- [[PII Leak Incident]] - document - docs/operations/incident-response.md
+- [[Prompt Injection Detected]] - document - docs/operations/incident-response.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,3 +25,11 @@ members: 7
 TABLE source_file, type FROM #community/Community_1019
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 77]]
+- 1 edge to [[_COMMUNITY_Community 146]]
+
+## Top bridge nodes
+- [[P2 High Priority Incidents]] - degree 4, connects to 1 community
+- [[Prompt Injection Detected]] - degree 3, connects to 1 community

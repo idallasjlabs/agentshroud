@@ -10,12 +10,12 @@ members: 6
 **Members:** 6 nodes
 
 ## Members
-- [[Adversarial Red-Team  Blue-Team Assessment]] - document - docs/testing/test-coverage-report.md
-- [[AgentShroud v1.3.0_1]] - document - docs/testing/test-coverage-report.md
-- [[Executive Summary_14]] - document - docs/testing/test-coverage-report.md
-- [[How to regenerate this report accurately]] - document - docs/testing/test-coverage-report.md
-- [[Test Coverage Report]] - document - docs/testing/test-coverage-report.md
-- [[test-coverage-report]] - document - docs/testing/test-coverage-report.md
+- [[Database Files]] - document - docs/vault/05 - Dependencies/aiosqlite.md
+- [[Purpose_5]] - document - docs/vault/05 - Dependencies/aiosqlite.md
+- [[Related Notes_6]] - document - docs/vault/05 - Dependencies/aiosqlite.md
+- [[WAL Mode]] - document - docs/vault/05 - Dependencies/aiosqlite.md
+- [[Where Used_1]] - document - docs/vault/05 - Dependencies/aiosqlite.md
+- [[aiosqlite]] - document - docs/vault/05 - Dependencies/aiosqlite.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,3 +23,9 @@ members: 6
 TABLE source_file, type FROM #community/Community_1121
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 254]]
+
+## Top bridge nodes
+- [[aiosqlite]] - degree 6, connects to 1 community

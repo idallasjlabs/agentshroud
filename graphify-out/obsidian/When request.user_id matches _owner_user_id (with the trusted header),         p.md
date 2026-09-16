@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "rationale"
-community: "Community 104"
+community: "Multi-Agent Router & Chat UI"
 location: "L513"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_104
+  - community/Multi-Agent_Router__Chat_UI
 ---
 
 # When request.user_id matches _owner_user_id (with the trusted header),         p
 
 ## Connections
-- [[.test_owner_user_id_elevates_trust_to_full()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_owner_user_id_elevates_trust_to_full()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_104
+#graphify/rationale #graphify/EXTRACTED #community/Multi-Agent_Router__Chat_UI

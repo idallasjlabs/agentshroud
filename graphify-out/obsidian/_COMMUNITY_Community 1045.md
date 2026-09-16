@@ -1,22 +1,23 @@
 ---
 type: community
-cohesion: 0.33
-members: 7
+cohesion: 0.25
+members: 8
 ---
 
 # Community 1045
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.25 - loosely connected
+**Members:** 8 nodes
 
 ## Members
-- [[BROWSER_FETCH_SKILL]] - document - docs/reference/BROWSER_FETCH_SKILL.md
-- [[Browser-Fetch Approval Queue Integration]] - concept - docs/reference/BROWSER_FETCH_SKILL.md
-- [[Browser-Fetch Audit Logging]] - concept - docs/reference/BROWSER_FETCH_SKILL.md
-- [[Browser-Fetch ClawHub Auto-Discovery Plan]] - rationale - docs/reference/BROWSER_FETCH_SKILL.md
-- [[PUBLISH-TO-CLAWHUB]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[Playwright Headless Chromium Decryption]] - concept - docs/reference/BROWSER_FETCH_SKILL.md
-- [[SecureBrowser Skill_1]] - concept - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[Scenario 00 — Information Disclosure (Phase 0 finding)]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[Scenario 01 — Enforce-by-Default]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[Scenario 02 — Human-in-the-Loop Bypass]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[Scenario 03 — Session Isolation]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[Scenario 04 — Separation of Privilege]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[Scenario 05 — Credential Isolation]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[Scenario 06 — Outbound Information Filter]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[§1 — Re-run of Prior Scenarios]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,9 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 767]]
-- 1 edge to [[_COMMUNITY_Community 858]]
+- 1 edge to [[_COMMUNITY_Community 972]]
 
 ## Top bridge nodes
-- [[BROWSER_FETCH_SKILL]] - degree 6, connects to 1 community
-- [[PUBLISH-TO-CLAWHUB]] - degree 3, connects to 1 community
+- [[§1 — Re-run of Prior Scenarios]] - degree 8, connects to 1 community

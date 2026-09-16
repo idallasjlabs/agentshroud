@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_filter_xml_blocks.py"
 type: "concept"
-community: "PII Sanitizer & E2E Tests"
+community: "Tool Result Sanitizer & XML Injection Filtering"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/PII_Sanitizer__E2E_Tests
+  - community/Tool_Result_Sanitizer__XML_Injection_Filtering
 ---
 
 # XML injection-block filtering (function_calls/thinking/system-reminder/invoke/parameter)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[PIISanitizer]] - `rationale_for` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/PII_Sanitizer__E2E_Tests
+#graphify/concept #graphify/EXTRACTED #community/Tool_Result_Sanitizer__XML_Injection_Filtering

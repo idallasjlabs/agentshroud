@@ -1,21 +1,22 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+cohesion: 0.29
+members: 7
 ---
 
 # Community 1108
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Cohesion:** 0.29 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[Key Operations (Inferred)]] - document - docs/vault/02 - Modules/Other/text_control_center.py.md
-- [[Purpose_126]] - document - docs/vault/02 - Modules/Other/text_control_center.py.md
-- [[Related Notes_12]] - document - docs/vault/02 - Modules/Other/text_control_center.py.md
-- [[Relationship to Web API]] - document - docs/vault/02 - Modules/Other/text_control_center.py.md
-- [[text_control_center.py  agentshroud_manager.py]] - document - docs/vault/02 - Modules/Other/text_control_center.py.md
-- [[text_control_center.py_1]] - document - docs/vault/02 - Modules/Other/text_control_center.py.md
+- [[dot-test_compose_agent_no_gateway_secrets()]] - code - gateway/tests/test_credential_isolation.py
+- [[dot-test_compose_gateway_has_secrets()]] - code - gateway/tests/test_credential_isolation.py
+- [[Agent (agentshroud) service should not have credential secrets.]] - rationale - gateway/tests/test_credential_isolation.py
+- [[Gateway service should have secrets configured.]] - rationale - gateway/tests/test_credential_isolation.py
+- [[TestDockerSecretIsolation]] - code - gateway/tests/test_credential_isolation.py
+- [[Verify Docker Compose configuration isolates secrets correctly.]] - rationale - gateway/tests/test_credential_isolation.py
+- [[test_credential_isolation.py]] - code - gateway/tests/test_credential_isolation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,3 +24,10 @@ members: 6
 TABLE source_file, type FROM #community/Community_1108
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 620]]
+- 1 edge to [[_COMMUNITY_Community 908]]
+
+## Top bridge nodes
+- [[test_credential_isolation.py]] - degree 3, connects to 2 communities

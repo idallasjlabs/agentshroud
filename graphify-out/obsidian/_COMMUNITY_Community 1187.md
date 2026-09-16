@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[GSDE&G Development Master Checklist (MC)]] - document - docker/config/hermes/skills/i-mc/README.md
-- [[Purpose_52]] - document - docker/config/hermes/skills/i-mc/README.md
-- [[README_57]] - document - docker/config/hermes/skills/i-mc/README.md
-- [[Related Skills_55]] - document - docker/config/hermes/skills/i-mc/README.md
-- [[Usage_58]] - document - docker/config/hermes/skills/i-mc/README.md
+- [[dot-agentsskillsi-athenaREADME]] - document - .agents/skills/i-athena/README.md
+- [[Athena — Knowledge Distiller]] - document - .agents/skills/i-athena/README.md
+- [[Purpose_11]] - document - .agents/skills/i-athena/README.md
+- [[Related Skills_2]] - document - .agents/skills/i-athena/README.md
+- [[Usage_6]] - document - .agents/skills/i-athena/README.md
 
 ## Live Query (requires Dataview plugin)
 

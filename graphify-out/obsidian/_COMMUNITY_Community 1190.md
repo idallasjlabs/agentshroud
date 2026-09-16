@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[MCP Doctor (MCPM-DOCTOR)_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/README.md
-- [[Purpose_55]] - document - docker/config/hermes/skills/i-mcpm-doctor/README.md
-- [[README_60]] - document - docker/config/hermes/skills/i-mcpm-doctor/README.md
-- [[Related Skills_60]] - document - docker/config/hermes/skills/i-mcpm-doctor/README.md
-- [[Usage_62]] - document - docker/config/hermes/skills/i-mcpm-doctor/README.md
+- [[dot-agentsskillsi-browserREADME]] - document - .agents/skills/i-browser/README.md
+- [[Browser — Secure Browser Automation_1]] - document - .agents/skills/i-browser/README.md
+- [[Purpose_14]] - document - .agents/skills/i-browser/README.md
+- [[Related Skills_5]] - document - .agents/skills/i-browser/README.md
+- [[Usage_9]] - document - .agents/skills/i-browser/README.md
 
 ## Live Query (requires Dataview plugin)
 

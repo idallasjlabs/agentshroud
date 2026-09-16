@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Blue Team Security Auditor (SEC-DEFENSE)_2]] - document - docker/config/openclaw/skills/i-sec-defense/README.md
-- [[Purpose_103]] - document - docker/config/openclaw/skills/i-sec-defense/README.md
-- [[README_108]] - document - docker/config/openclaw/skills/i-sec-defense/README.md
-- [[Related Skills_112]] - document - docker/config/openclaw/skills/i-sec-defense/README.md
-- [[Usage_113]] - document - docker/config/openclaw/skills/i-sec-defense/README.md
+- [[Mnemosyne — Retention Engineer_2]] - document - docker/config/hermes/skills/i-mnemosyne/README.md
+- [[Purpose_56]] - document - docker/config/hermes/skills/i-mnemosyne/README.md
+- [[Related Skills_47]] - document - docker/config/hermes/skills/i-mnemosyne/README.md
+- [[Usage_51]] - document - docker/config/hermes/skills/i-mnemosyne/README.md
+- [[hermesskillsi-mnemosyneREADME]] - document - docker/config/hermes/skills/i-mnemosyne/README.md
 
 ## Live Query (requires Dataview plugin)
 

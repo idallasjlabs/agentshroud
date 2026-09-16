@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[MCP Doctor (MCPM-DOCTOR)_2]] - document - docker/config/openclaw/skills/i-mcpm-doctor/README.md
-- [[Purpose_92]] - document - docker/config/openclaw/skills/i-mcpm-doctor/README.md
-- [[README_97]] - document - docker/config/openclaw/skills/i-mcpm-doctor/README.md
-- [[Related Skills_100]] - document - docker/config/openclaw/skills/i-mcpm-doctor/README.md
-- [[Usage_102]] - document - docker/config/openclaw/skills/i-mcpm-doctor/README.md
+- [[Data Validation (DATA-VAL)_1]] - document - docker/config/hermes/skills/i-data/README.md
+- [[Purpose_45]] - document - docker/config/hermes/skills/i-data/README.md
+- [[Related Skills_36]] - document - docker/config/hermes/skills/i-data/README.md
+- [[Usage_40]] - document - docker/config/hermes/skills/i-data/README.md
+- [[hermesskillsi-dataREADME]] - document - docker/config/hermes/skills/i-data/README.md
 
 ## Live Query (requires Dataview plugin)
 

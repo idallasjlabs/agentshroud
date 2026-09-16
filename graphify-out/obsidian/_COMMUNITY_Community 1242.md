@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_107]] - document - docker/config/openclaw/skills/i-tdd/README.md
-- [[README_112]] - document - docker/config/openclaw/skills/i-tdd/README.md
-- [[Related Skills_116]] - document - docker/config/openclaw/skills/i-tdd/README.md
-- [[Test-Driven Development (TDD)_1]] - document - docker/config/openclaw/skills/i-tdd/README.md
-- [[Usage_117]] - document - docker/config/openclaw/skills/i-tdd/README.md
+- [[Incident Response (INCIDENT)]] - document - docker/config/hermes/skills/i-production/README.md
+- [[Purpose_60]] - document - docker/config/hermes/skills/i-production/README.md
+- [[Related Skills_51]] - document - docker/config/hermes/skills/i-production/README.md
+- [[Usage_55]] - document - docker/config/hermes/skills/i-production/README.md
+- [[hermesskillsi-productionREADME]] - document - docker/config/hermes/skills/i-production/README.md
 
 ## Live Query (requires Dataview plugin)
 

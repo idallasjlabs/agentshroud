@@ -1,21 +1,22 @@
 ---
 type: community
-cohesion: 0.53
-members: 6
+cohesion: 0.33
+members: 7
 ---
 
 # Community 1080
 
-**Cohesion:** 0.53 - moderately connected
-**Members:** 6 nodes
+**Cohesion:** 0.33 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[StreamReader_1]] - code - docker/bots/hermes/docker_proxy_relay.py
-- [[StreamWriter_1]] - code - docker/bots/hermes/docker_proxy_relay.py
-- [[_handle()_1]] - code - docker/bots/hermes/docker_proxy_relay.py
-- [[_pump()]] - code - docker/bots/hermes/docker_proxy_relay.py
-- [[docker_proxy_relay.py]] - code - docker/bots/hermes/docker_proxy_relay.py
-- [[main()_3]] - code - docker/bots/hermes/docker_proxy_relay.py
+- [[BROWSER_FETCH_SKILL]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Browser-Fetch Approval Queue Integration]] - concept - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Browser-Fetch Audit Logging]] - concept - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Browser-Fetch ClawHub Auto-Discovery Plan]] - rationale - docs/reference/BROWSER_FETCH_SKILL.md
+- [[PUBLISH-TO-CLAWHUB]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[Playwright Headless Chromium Decryption]] - concept - docs/reference/BROWSER_FETCH_SKILL.md
+- [[SecureBrowser Skill_1]] - concept - docs/reference/PUBLISH-TO-CLAWHUB.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,9 +26,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 835]]
-- 1 edge to [[_COMMUNITY_Community 528]]
-- 1 edge to [[_COMMUNITY_Community 476]]
+- 1 edge to [[_COMMUNITY_Community 806]]
+- 1 edge to [[_COMMUNITY_Community 700]]
 
 ## Top bridge nodes
-- [[docker_proxy_relay.py]] - degree 6, connects to 3 communities
+- [[BROWSER_FETCH_SKILL]] - degree 6, connects to 1 community
+- [[PUBLISH-TO-CLAWHUB]] - degree 3, connects to 1 community

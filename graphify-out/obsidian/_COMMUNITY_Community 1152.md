@@ -1,20 +1,21 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+cohesion: 0.33
+members: 6
 ---
 
 # Community 1152
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Cohesion:** 0.33 - loosely connected
+**Members:** 6 nodes
 
 ## Members
-- [[Purpose_14]] - document - .agents/skills/i-mac/README.md
-- [[README_14]] - document - .agents/skills/i-mac/README.md
-- [[Related Skills_14]] - document - .agents/skills/i-mac/README.md
-- [[Usage_16]] - document - .agents/skills/i-mac/README.md
-- [[macOS System Administrator (MAC)]] - document - .agents/skills/i-mac/README.md
+- [[SubagentMonitor._log_event]] - code - gateway/security/subagent_monitor.py
+- [[SubagentMonitor.check_tool_usage]] - code - gateway/security/subagent_monitor.py
+- [[SubagentMonitor.deregister]] - code - gateway/security/subagent_monitor.py
+- [[SubagentMonitor.kill_agent]] - code - gateway/security/subagent_monitor.py
+- [[SubagentMonitor.kill_all]] - code - gateway/security/subagent_monitor.py
+- [[SubagentMonitor.register_spawn]] - code - gateway/security/subagent_monitor.py
 
 ## Live Query (requires Dataview plugin)
 

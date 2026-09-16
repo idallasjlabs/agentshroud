@@ -1,21 +1,22 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+cohesion: 0.29
+members: 7
 ---
 
 # Community 1084
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Cohesion:** 0.29 - loosely connected
+**Members:** 7 nodes
 
 ## Members
-- [[For graphify explain_2]] - document - docker/config/openclaw/skills/graphify/references/query.md
-- [[For graphify path_2]] - document - docker/config/openclaw/skills/graphify/references/query.md
-- [[Step 0 — Constrained query expansion (REQUIRED before traversal)_2]] - document - docker/config/openclaw/skills/graphify/references/query.md
-- [[Step 1 — Traversal_2]] - document - docker/config/openclaw/skills/graphify/references/query.md
-- [[graphify reference query, path, explain_2]] - document - docker/config/openclaw/skills/graphify/references/query.md
-- [[query_2]] - document - docker/config/openclaw/skills/graphify/references/query.md
+- [[dot-test_api_calls_exceed()]] - code - gateway/tests/test_subagent_governance.py
+- [[dot-test_no_tracking_returns_ok()]] - code - gateway/tests/test_subagent_governance.py
+- [[dot-test_tokens_exceed_budget()]] - code - gateway/tests/test_subagent_governance.py
+- [[dot-test_tokens_within_budget()]] - code - gateway/tests/test_subagent_governance.py
+- [[dot-test_tool_calls_budget_blocks_authorize_tool()]] - code - gateway/tests/test_subagent_governance.py
+- [[dot-test_warning_at_80_percent()]] - code - gateway/tests/test_subagent_governance.py
+- [[TestResourceBudgets]] - code - gateway/tests/test_subagent_governance.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,3 +24,9 @@ members: 6
 TABLE source_file, type FROM #community/Community_1084
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 1014]]
+
+## Top bridge nodes
+- [[TestResourceBudgets]] - degree 7, connects to 1 community

@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_102]] - document - docker/config/openclaw/skills/i-sav/README.md
-- [[README_107]] - document - docker/config/openclaw/skills/i-sav/README.md
-- [[Related Skills_111]] - document - docker/config/openclaw/skills/i-sav/README.md
-- [[System Audit Vault_2]] - document - docker/config/openclaw/skills/i-sav/README.md
-- [[Usage_112]] - document - docker/config/openclaw/skills/i-sav/README.md
+- [[MCP Tools Usage (MCPM)_1]] - document - docker/config/hermes/skills/i-mcpm/README.md
+- [[Purpose_55]] - document - docker/config/hermes/skills/i-mcpm/README.md
+- [[Related Skills_46]] - document - docker/config/hermes/skills/i-mcpm/README.md
+- [[Usage_50]] - document - docker/config/hermes/skills/i-mcpm/README.md
+- [[hermesskillsi-mcpmREADME]] - document - docker/config/hermes/skills/i-mcpm/README.md
 
 ## Live Query (requires Dataview plugin)
 
