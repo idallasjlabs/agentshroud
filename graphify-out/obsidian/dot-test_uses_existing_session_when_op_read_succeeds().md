@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_gmail_credential_retrieval.py"
+type: "code"
+community: "Community 585"
+location: "L128"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_585
+---
+
+# .test_uses_existing_session_when_op_read_succeeds()
+
+## Connections
+- [[TestGetGmailAppPasswordWithSession]] - `method` [EXTRACTED]
+- [[_get_gmail_app_password()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_585

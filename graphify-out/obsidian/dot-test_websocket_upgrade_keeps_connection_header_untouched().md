@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_hermes_dashboard_bridge.py"
+type: "code"
+community: "Community 776"
+location: "L75"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_776
+---
+
+# .test_websocket_upgrade_keeps_connection_header_untouched()
+
+## Connections
+- [[A WebSocket upgrade MUST keep Connection Upgrade (not close) or the         han]] - `rationale_for` [EXTRACTED]
+- [[TestRewriteRequestHeaders]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_776

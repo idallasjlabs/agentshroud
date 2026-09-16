@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_privilege_separation.py"
+type: "code"
+community: "File Sandbox & Privilege Separation Tests"
+location: "L239"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/File_Sandbox__Privilege_Separation_Tests
+---
+
+# .test_wildcard_pattern_matching()
+
+## Connections
+- [[Test  wildcard patterns work correctly.]] - `rationale_for` [EXTRACTED]
+- [[TestPatternMatching]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/File_Sandbox__Privilege_Separation_Tests

@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_group_config.py"
+type: "code"
+community: "Teams/Group Collaborator Responses"
+location: "L253"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Teams/Group_Collaborator_Responses
+---
+
+# .test_user_override_takes_precedence_over_group()
+
+## Connections
+- [[Per-user override beats group-derived collab_mode.]] - `rationale_for` [EXTRACTED]
+- [[TeamsConfig_1]] - `calls` [EXTRACTED]
+- [[TestUserCollabModeOverride]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Teams/Group_Collaborator_Responses

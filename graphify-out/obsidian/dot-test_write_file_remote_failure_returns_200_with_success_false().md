@@ -1,0 +1,20 @@
+---
+source_file: "gateway/tests/test_ssh_write_file_endpoint.py"
+type: "code"
+community: "Approval Queue (WebSocket)"
+location: "L167"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Approval_Queue_WebSocket
+---
+
+# .test_write_file_remote_failure_returns_200_with_success_false()
+
+## Connections
+- [[Mirrors sshexec a nonzero remote exit code is surfaced in the 200         res]] - `rationale_for` [EXTRACTED]
+- [[SSHWriteResult]] - `calls` [EXTRACTED]
+- [[TestSSHWriteFileEndpoint]] - `method` [EXTRACTED]
+- [[_b64()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Approval_Queue_WebSocket

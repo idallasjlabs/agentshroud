@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_credential_injector.py"
+type: "code"
+community: "Community 583"
+location: "L240"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_583
+---
+
+# .test_x_api_key_stripped_and_bearer_plus_beta_injected()
+
+## Connections
+- [[dot-_make_anthropic_injector()]] - `calls` [EXTRACTED]
+- [[TestOAuthInjection]] - `method` [EXTRACTED]
+- [[x-api-key is stripped; Authorization Bearer and anthropic-beta are added.]] - `rationale_for` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_583

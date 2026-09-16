@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_daily_cve_report.py"
+type: "code"
+community: "Community 148"
+location: "L123"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_148
+---
+
+# .test_zero_count_severity_omitted()
+
+## Connections
+- [[TestFormatCveReport]] - `method` [EXTRACTED]
+- [[_make_report()]] - `calls` [EXTRACTED]
+- [[format_cve_report]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_148

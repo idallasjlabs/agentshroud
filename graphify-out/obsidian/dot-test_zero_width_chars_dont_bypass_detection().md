@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_tool_result_injection.py"
+type: "code"
+community: "Community 101"
+location: "L122"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_101
+---
+
+# .test_zero_width_chars_dont_bypass_detection()
+
+## Connections
+- [[TestUnicodeObfuscation]] - `method` [EXTRACTED]
+- [[Zero-width chars are stripped by normalize_input, so injection is still caught.]] - `rationale_for` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_101

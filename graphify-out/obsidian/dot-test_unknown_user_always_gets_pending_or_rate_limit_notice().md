@@ -1,0 +1,23 @@
+---
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+type: "code"
+community: "Community 119"
+location: "L7974"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_119
+---
+
+# .test_unknown_user_always_gets_pending_or_rate_limit_notice()
+
+## Connections
+- [[FakeRBAC]] - `calls` [EXTRACTED]
+- [[PassthroughPipeline]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
+- [[TestNoResponseGuarantee]] - `method` [EXTRACTED]
+- [[Unknown users must always receive either a pending notice or a rate-limit notice]] - `rationale_for` [EXTRACTED]
+- [[_make_update()_1]] - `calls` [EXTRACTED]
+- [[_wrap_response()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_119

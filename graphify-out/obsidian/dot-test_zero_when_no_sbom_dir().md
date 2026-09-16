@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_scanner_integration.py"
+type: "code"
+community: "Community 518"
+location: "L683"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_518
+---
+
+# .test_zero_when_no_sbom_dir()
+
+## Connections
+- [[TestScoreSupplyChain]] - `method` [EXTRACTED]
+- [[_score_supply_chain()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_518

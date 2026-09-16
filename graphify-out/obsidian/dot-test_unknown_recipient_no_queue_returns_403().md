@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_channel_ownership.py"
+type: "code"
+community: "Community 235"
+location: "L286"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_235
+---
+
+# .test_unknown_recipient_no_queue_returns_403()
+
+## Connections
+- [[TestEmailSend]] - `method` [EXTRACTED]
+- [[Unknown recipient with no approval queue configured returns 403.]] - `rationale_for` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_235

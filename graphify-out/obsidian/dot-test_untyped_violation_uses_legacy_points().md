@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_progressive_trust_integration.py"
+type: "code"
+community: "Community 115"
+location: "L99"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_115
+---
+
+# .test_untyped_violation_uses_legacy_points()
+
+## Connections
+- [[TestBackwardCompat]] - `method` [EXTRACTED]
+- [[_make_tm()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_115

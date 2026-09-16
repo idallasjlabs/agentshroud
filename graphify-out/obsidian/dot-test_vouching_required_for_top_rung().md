@@ -1,0 +1,20 @@
+---
+source_file: "gateway/tests/test_progressive_trust_integration.py"
+type: "code"
+community: "Community 115"
+location: "L154"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_115
+---
+
+# .test_vouching_required_for_top_rung()
+
+## Connections
+- [[TestGatedPromotion]] - `method` [EXTRACTED]
+- [[_fast_ladder()]] - `calls` [EXTRACTED]
+- [[_make_tm()]] - `calls` [EXTRACTED]
+- [[_set_state()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_115

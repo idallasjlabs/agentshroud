@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_progressive_trust_integration.py"
+type: "code"
+community: "Community 115"
+location: "L178"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_115
+---
+
+# .test_typed_penalty_from_config()
+
+## Connections
+- [[TestTypedViolations]] - `method` [EXTRACTED]
+- [[_fast_ladder()]] - `calls` [EXTRACTED]
+- [[_make_tm()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_115
