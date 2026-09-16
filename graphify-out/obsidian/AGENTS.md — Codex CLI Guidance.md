@@ -1,11 +1,11 @@
 ---
 source_file: "AGENTS.md"
 type: "document"
-community: "Community 785"
+community: "Community 773"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_785
+  - community/Community_773
 ---
 
 # AGENTS.md — Codex CLI Guidance
@@ -17,5 +17,7 @@ tags:
 - [[Codex Test Augmenter Role]] - `references` [EXTRACTED]
 - [[Codex Validation Runner Role]] - `references` [EXTRACTED]
 - [[Data Lakehouse Platform (GSDL)]] - `references` [EXTRACTED]
+- [[Goal Codex is a secondarytertiary agent used for test augmentation, validation, and safe refactors AFTER tests pass.]] - `contains` [EXTRACTED]
+- [[Guidance for ChatGPT Codex CLI when working in this repository.]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_785
+#graphify/document #graphify/EXTRACTED #community/Community_773

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/adr/ADR-009-enforce-by-default.md"
 type: "document"
-community: "Community 370"
+community: "Community 499"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_370
+  - community/Community_499
 ---
 
 # ADR-009: Enforce-by-Default Security Philosophy
@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[ADR-002 Default-Allow with Comprehensive Logging]] - `references` [EXTRACTED]
 - [[ADR-009-enforce-by-default]] - `contains` [EXTRACTED]
-- [[Consequences_8]] - `contains` [EXTRACTED]
-- [[Context_8]] - `contains` [EXTRACTED]
-- [[Decision_10]] - `contains` [EXTRACTED]
-- [[Related]] - `contains` [EXTRACTED]
-- [[Status_8]] - `contains` [EXTRACTED]
+- [[Consequences_2]] - `contains` [EXTRACTED]
+- [[Context_5]] - `contains` [EXTRACTED]
+- [[Decision_4]] - `contains` [EXTRACTED]
+- [[Related_6]] - `contains` [EXTRACTED]
+- [[Status_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_370
+#graphify/document #graphify/EXTRACTED #community/Community_499

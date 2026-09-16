@@ -1,17 +1,18 @@
 ---
-source_file: "branding/colors/palette.md"
+source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "Community 375"
-location: "L89"
+community: "Community 179"
+location: "L92"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_375
+  - community/Community_179
 ---
 
 # Accessibility
 
 ## Connections
-- [[Usage Guidelines_1]] - `contains` [EXTRACTED]
+- [[Animation Guidelines]] - `contains` [EXTRACTED]
+- [[Color Usage]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_375
+#graphify/document #graphify/EXTRACTED #community/Community_179

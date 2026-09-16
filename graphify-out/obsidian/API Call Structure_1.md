@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-apollo/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-apollo/SKILL.md"
 type: "document"
-community: "Community 656"
+community: "Community 681"
 location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_656
+  - community/Community_681
 ---
 
 # API Call Structure
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Technical Specification_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_656
+#graphify/document #graphify/EXTRACTED #community/Community_681

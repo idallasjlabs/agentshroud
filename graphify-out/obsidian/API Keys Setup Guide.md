@@ -1,18 +1,18 @@
 ---
 source_file: "docs/setup/SETUP_API_KEYS.md"
 type: "document"
-community: "Community 317"
+community: "Community 326"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_317
+  - community/Community_326
 ---
 
 # API Keys Setup Guide
 
 ## Connections
-- [[Overview_17]] - `contains` [EXTRACTED]
+- [[Overview_10]] - `contains` [EXTRACTED]
 - [[Quick Reference_8]] - `contains` [EXTRACTED]
 - [[SETUP_API_KEYS]] - `contains` [EXTRACTED]
 - [[Security Notes_3]] - `contains` [EXTRACTED]
@@ -24,6 +24,6 @@ tags:
 - [[Step 6 Add Telegram Bot]] - `contains` [EXTRACTED]
 - [[Step 7 Test the Bot]] - `contains` [EXTRACTED]
 - [[Summary Checklist]] - `contains` [EXTRACTED]
-- [[Troubleshooting_31]] - `contains` [EXTRACTED]
+- [[Troubleshooting_22]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_317
+#graphify/document #graphify/EXTRACTED #community/Community_326

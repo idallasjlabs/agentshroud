@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-apollo/SKILL.md"
+source_file: "docker/config/hermes/skills/i-apollo/SKILL.md"
 type: "document"
-community: "Community 940"
+community: "Community 679"
 location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_940
+  - community/Community_679
 ---
 
 # API Call Structure
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Technical Specification]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_940
+#graphify/document #graphify/EXTRACTED #community/Community_679

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/adr/ADR-007-zero-config-security.md"
 type: "document"
-community: "Community 783"
+community: "Community 825"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_783
+  - community/Community_825
 ---
 
 # ADR-007-zero-config-security.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ADR-007 Zero-Config Security (docker-compose up = fully secured)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_783
+#graphify/document #graphify/EXTRACTED #community/Community_825

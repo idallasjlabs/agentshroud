@@ -1,20 +1,20 @@
 ---
 source_file: "docker/config/hermes/skills/i-aws/README.md"
 type: "document"
-community: "Community 1175"
+community: "Community 1221"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1175
+  - community/Community_1221
 ---
 
 # AWS Cloud Management & FinOps
 
 ## Connections
-- [[Purpose_40]] - `contains` [EXTRACTED]
-- [[README_45]] - `contains` [EXTRACTED]
-- [[Related Skills_43]] - `contains` [EXTRACTED]
-- [[Usage_45]] - `contains` [EXTRACTED]
+- [[Purpose_39]] - `contains` [EXTRACTED]
+- [[Related Skills_30]] - `contains` [EXTRACTED]
+- [[Usage_34]] - `contains` [EXTRACTED]
+- [[hermesskillsi-awsREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1175
+#graphify/document #graphify/EXTRACTED #community/Community_1221

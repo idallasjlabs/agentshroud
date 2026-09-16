@@ -1,11 +1,11 @@
 ---
 source_file: "examples/egress-config.yml"
 type: "document"
-community: "Community 1250"
+community: "Community 1298"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1250
+  - community/Community_1298
 ---
 
 # AgentShroud Egress Control Configuration
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Default Monitor-Mode Egress Rationale]] - `rationale_for` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1250
+#graphify/document #graphify/EXTRACTED #community/Community_1298

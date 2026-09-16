@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/incident-response.md"
 type: "document"
-community: "Community 128"
+community: "Community 77"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_128
+  - community/Community_77
 ---
 
 # AgentShroud Incident Response Plan
@@ -17,7 +17,7 @@ tags:
 - [[Contact Information]] - `contains` [EXTRACTED]
 - [[Incident Classification System]] - `contains` [EXTRACTED]
 - [[Incident Response Team Structure]] - `contains` [EXTRACTED]
-- [[Kill Switch (FREEZESHUTDOWNDISCONNECT)]] - `references` [EXTRACTED]
+- [[Kill Switch (FREEZESHUTDOWNDISCONNECT)_1]] - `references` [EXTRACTED]
 - [[P1 Critical Incidents]] - `contains` [EXTRACTED]
 - [[P2 High Priority Incidents]] - `contains` [EXTRACTED]
 - [[P3 Medium Priority Incidents]] - `contains` [EXTRACTED]
@@ -25,6 +25,6 @@ tags:
 - [[PII Sanitizer (Presidio + regex hybrid)]] - `references` [EXTRACTED]
 - [[Post-Incident Activities]] - `contains` [EXTRACTED]
 - [[Trust Manager  Progressive Trust System]] - `references` [EXTRACTED]
-- [[incident-response]] - `contains` [EXTRACTED]
+- [[operationsincident-response]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_128
+#graphify/document #graphify/EXTRACTED #community/Community_77

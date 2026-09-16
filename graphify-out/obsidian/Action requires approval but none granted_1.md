@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/SKILL.md"
+source_file: "skills/custom/securebrowser/SKILL.md"
 type: "document"
-community: "Community 256"
-location: "L286"
+community: "Community 251"
+location: "L322"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_256
+  - community/Community_251
 ---
 
 # "Action requires approval but none granted"
 
 ## Connections
-- [[Troubleshooting_7]] - `contains` [EXTRACTED]
+- [[Troubleshooting_15]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_256
+#graphify/document #graphify/EXTRACTED #community/Community_251

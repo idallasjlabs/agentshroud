@@ -1,17 +1,17 @@
 ---
-source_file: "BRAND.md"
-type: "document"
-community: "Module Group 191"
-location: "lines 39-49"
+source_file: "docker/config/openclaw/cron/templates/html-report-instructions.md"
+type: "concept"
+community: "Community 160"
+location: "L50-L56"
 tags:
-  - graphify/document
+  - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_191
+  - community/Community_160
 ---
 
 # AgentShroud Brand Color Palette
 
 ## Connections
-- [[AgentShroud Brand Identity and Trademark]] - `references` [EXTRACTED]
+- [[AgentShroud Branded HTML Report Template]] - `implements` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_191
+#graphify/concept #graphify/EXTRACTED #community/Community_160

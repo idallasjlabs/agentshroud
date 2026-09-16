@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-10-data-dictionary.png"
 type: "image"
-community: "Community 376"
+community: "Community 184"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Community_376
+  - community/Community_184
 ---
 
 # AgentShroud Data Assets Mind Map (data dictionary; mostly illegible black-on-black render)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[EphemeralTransient data (never persisted raw)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Community_376
+#graphify/image #graphify/EXTRACTED #community/Community_184

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/flows/state-diagrams.md"
 type: "concept"
-community: "Community 1094"
+community: "Community 1143"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1094
+  - community/Community_1143
 ---
 
 # Agent Trust Levels (UNTRUSTED, BASIC, STANDARD, TRUSTED, ADMIN)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud State Diagrams (doc)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1094
+#graphify/concept #graphify/EXTRACTED #community/Community_1143

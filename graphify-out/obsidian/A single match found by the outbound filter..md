@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "rationale"
-community: "Community 137"
+community: "Community 44"
 location: "L42"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_137
+  - community/Community_44
 ---
 
 # A single match found by the outbound filter.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[FilterMatch]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_137
+#graphify/rationale #graphify/EXTRACTED #community/Community_44

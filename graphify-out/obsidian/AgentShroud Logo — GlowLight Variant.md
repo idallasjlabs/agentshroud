@@ -1,13 +1,13 @@
 ---
 source_file: "branding/agentshroud-logo-light-bg.png"
 type: "image"
-community: "Community 1686"
+community: "Community 1793"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Community_1686
+  - community/Community_1793
 ---
 
 # AgentShroud Logo — Glow/Light Variant
 
-#graphify/image #graphify/EXTRACTED #community/Community_1686
+#graphify/image #graphify/EXTRACTED #community/Community_1793

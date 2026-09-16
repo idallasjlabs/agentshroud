@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_context_integrity.py"
 type: "rationale"
-community: "Community 155"
+community: "Prompt Guard & Context Integrity"
 location: "L40"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_155
+  - community/Prompt_Guard__Context_Integrity
 ---
 
 # A well-formed context with valid HMAC should score close to 1.0.
 
 ## Connections
-- [[.test_pristine_context_scores_high()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_pristine_context_scores_high()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_155
+#graphify/rationale #graphify/EXTRACTED #community/Prompt_Guard__Context_Integrity

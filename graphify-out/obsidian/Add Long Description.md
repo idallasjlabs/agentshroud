@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/PUBLISH-TO-CLAWHUB.md"
 type: "document"
-community: "Community 1323"
+community: "Community 1378"
 location: "L219"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1323
+  - community/Community_1378
 ---
 
 # Add Long Description
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🎨 Customize Skill Page (Optional)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1323
+#graphify/document #graphify/EXTRACTED #community/Community_1378

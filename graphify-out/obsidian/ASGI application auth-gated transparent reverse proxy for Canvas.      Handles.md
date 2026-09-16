@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/canvas_proxy.py"
 type: "rationale"
-community: "Community 562"
+community: "Community 582"
 location: "L120"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_562
+  - community/Community_582
 ---
 
 # ASGI application: auth-gated transparent reverse proxy for Canvas.      Handles
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[canvas_proxy_app()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_562
+#graphify/rationale #graphify/EXTRACTED #community/Community_582

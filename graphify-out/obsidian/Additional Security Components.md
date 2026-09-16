@@ -1,12 +1,12 @@
 ---
 source_file: "docs/claude-security-audit-prompt.md"
 type: "document"
-community: "Community 445"
+community: "Community 455"
 location: "L101"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_445
+  - community/Community_455
 ---
 
 # Additional Security Components
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[The 34 Security Modules]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_445
+#graphify/document #graphify/EXTRACTED #community/Community_455

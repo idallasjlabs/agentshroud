@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-eightd/SKILL.md"
 type: "concept"
-community: "Community 1075"
+community: "Community 1127"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1075
+  - community/Community_1127
 ---
 
 # AWS Agent (Athena data retrieval layer)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[i-eightd SKILL — 8D Root Cause Analysis]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1075
+#graphify/concept #graphify/EXTRACTED #community/Community_1127

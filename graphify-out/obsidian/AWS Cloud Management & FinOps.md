@@ -1,20 +1,20 @@
 ---
 source_file: ".agents/skills/i-aws/README.md"
 type: "document"
-community: "Community 1142"
+community: "Community 1189"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1142
+  - community/Community_1189
 ---
 
 # AWS Cloud Management & FinOps
 
 ## Connections
-- [[Purpose_3]] - `contains` [EXTRACTED]
-- [[README_3]] - `contains` [EXTRACTED]
-- [[Related Skills_3]] - `contains` [EXTRACTED]
-- [[Usage_4]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-awsREADME]] - `contains` [EXTRACTED]
+- [[Purpose_13]] - `contains` [EXTRACTED]
+- [[Related Skills_4]] - `contains` [EXTRACTED]
+- [[Usage_8]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1142
+#graphify/document #graphify/EXTRACTED #community/Community_1189

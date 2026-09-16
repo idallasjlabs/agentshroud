@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "rationale"
-community: "Community 46"
+community: "Community 844"
 location: "L140"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_46
+  - community/Community_844
 ---
 
 # Add content to the protected registry.          Args:             name: Identifi
 
 ## Connections
-- [[.add_protected_content()]] - `rationale_for` [EXTRACTED]
+- [[dot-add_protected_content()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_46
+#graphify/rationale #graphify/EXTRACTED #community/Community_844

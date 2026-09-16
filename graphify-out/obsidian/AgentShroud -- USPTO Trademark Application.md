@@ -1,18 +1,18 @@
 ---
 source_file: "docs/USPTO_TRADEMARK_APPLICATION.md"
 type: "document"
-community: "Community 661"
+community: "Community 684"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_661
+  - community/Community_684
 ---
 
 # AgentShroud -- USPTO Trademark Application
 
 ## Connections
-- [[Filing Reference_1]] - `contains` [EXTRACTED]
+- [[Filing Reference]] - `contains` [EXTRACTED]
 - [[SECTION 10 ESTIMATED COSTS]] - `contains` [EXTRACTED]
 - [[SECTION 1 APPLICANT INFORMATION]] - `contains` [EXTRACTED]
 - [[SECTION 2 MARK INFORMATION]] - `contains` [EXTRACTED]
@@ -25,4 +25,4 @@ tags:
 - [[SECTION 9 IMPORTANT NOTES]] - `contains` [EXTRACTED]
 - [[USPTO_TRADEMARK_APPLICATION]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_661
+#graphify/document #graphify/EXTRACTED #community/Community_684
