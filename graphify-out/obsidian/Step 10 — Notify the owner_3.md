@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-odev/SKILL.md"
 type: "document"
-community: "Community 299"
+community: "Community 308"
 location: "L309"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_299
+  - community/Community_308
 ---
 
 # Step 10 — Notify the owner
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Mode A — Single task_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_299
+#graphify/document #graphify/EXTRACTED #community/Community_308

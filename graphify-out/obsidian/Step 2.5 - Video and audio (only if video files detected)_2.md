@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/SKILL.md"
 type: "document"
-community: "Community 358"
+community: "Community 362"
 location: "L142"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_358
+  - community/Community_362
 ---
 
 # Step 2.5 - Video and audio (only if video files detected)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[What You Must Do When Invoked_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_358
+#graphify/document #graphify/EXTRACTED #community/Community_362

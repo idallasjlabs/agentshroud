@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-odev/SKILL.md"
 type: "document"
-community: "Community 304"
+community: "Community 313"
 location: "L367"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_304
+  - community/Community_313
 ---
 
 # Step 1 — One branch + worktree for the whole sweep
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Mode B — Comprehensive review sweep_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_304
+#graphify/document #graphify/EXTRACTED #community/Community_313

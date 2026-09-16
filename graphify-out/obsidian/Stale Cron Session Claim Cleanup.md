@@ -1,16 +1,13 @@
 ---
 source_file: "docker/config/openclaw/cron/JOBS-REFERENCE.md"
 type: "rationale"
-community: "Community 213"
+community: "Community 1867"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_213
+  - community/Community_1867
 ---
 
 # Stale Cron Session Claim Cleanup
 
-## Connections
-- [[start-agentshroud.sh (OpenClaw startup script)]] - `rationale_for` [EXTRACTED]
-
-#graphify/rationale #graphify/EXTRACTED #community/Community_213
+#graphify/rationale #graphify/EXTRACTED #community/Community_1867

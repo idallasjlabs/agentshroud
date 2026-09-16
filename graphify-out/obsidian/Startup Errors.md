@@ -1,17 +1,20 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Error Index.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/Startup Errors.md"
 type: "document"
-community: "Community 230"
-location: "L28"
+community: "Community 254"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_230
+  - community/Community_254
 ---
 
-# Startup Errors
+# Startup Errors.md
 
 ## Connections
-- [[Error Index_1]] - `contains` [EXTRACTED]
+- [[Container Errors]] - `references` [EXTRACTED]
+- [[First Time Setup]] - `references` [EXTRACTED]
+- [[Startup Errors_2]] - `contains` [EXTRACTED]
+- [[Troubleshooting Matrix]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_230
+#graphify/document #graphify/EXTRACTED #community/Community_254

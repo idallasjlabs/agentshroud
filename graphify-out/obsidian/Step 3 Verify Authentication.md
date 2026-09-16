@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-mcpm-auth-reset/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "Community 876"
+community: "Community 262"
 location: "L62"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_876
+  - community/Community_262
 ---
 
 # Step 3: Verify Authentication
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[1. GitHub MCP Authentication Reset]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_876
+#graphify/document #graphify/EXTRACTED #community/Community_262

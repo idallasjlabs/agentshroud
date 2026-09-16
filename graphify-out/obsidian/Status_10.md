@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/IMESSAGE_FIX.md"
+source_file: "docs/architecture/adr/ADR-008-progressive-trust-levels.md"
 type: "document"
-community: "Community 428"
-location: "L79"
+community: "Community 826"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_428
+  - community/Community_826
 ---
 
 # Status
 
 ## Connections
-- [[iMessage Integration Fix - Using imsg + imessage-exporter]] - `contains` [EXTRACTED]
+- [[ADR-008-progressive-trust-levels]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_428
+#graphify/document #graphify/EXTRACTED #community/Community_826

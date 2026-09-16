@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup-slack.md"
 type: "document"
-community: "Community 660"
+community: "Community 319"
 location: "L57"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_660
+  - community/Community_319
 ---
 
 # Step 4: Enable Event Subscriptions
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Slack Channel Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_660
+#graphify/document #graphify/EXTRACTED #community/Community_319

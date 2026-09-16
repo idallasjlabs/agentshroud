@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/graphify/references/github-and-merge.md"
 type: "document"
-community: "Community 1374"
+community: "Community 1430"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1374
+  - community/Community_1430
 ---
 
 # Step 0 - Clone GitHub repo(s) (only if a GitHub URL was given)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[graphify reference GitHub clone and cross-repo merge]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1374
+#graphify/document #graphify/EXTRACTED #community/Community_1430

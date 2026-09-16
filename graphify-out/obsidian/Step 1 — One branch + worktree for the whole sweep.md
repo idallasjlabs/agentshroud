@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-hdev/SKILL.md"
 type: "document"
-community: "Community 291"
+community: "Community 300"
 location: "L367"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_291
+  - community/Community_300
 ---
 
 # Step 1 — One branch + worktree for the whole sweep
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Mode B — Comprehensive review sweep]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_291
+#graphify/document #graphify/EXTRACTED #community/Community_300

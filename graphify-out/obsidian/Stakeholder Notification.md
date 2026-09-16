@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/incident-response.md"
 type: "document"
-community: "Community 146"
+community: "Community 173"
 location: "L229"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_146
+  - community/Community_173
 ---
 
 # Stakeholder Notification
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Communication Templates]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_146
+#graphify/document #graphify/EXTRACTED #community/Community_173

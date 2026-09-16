@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/OPENCLAW_SETUP.md"
 type: "document"
-community: "Community 218"
+community: "Community 221"
 location: "L93"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_218
+  - community/Community_221
 ---
 
 # Step 1: Add Your OpenAI API Key
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Initial Configuration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_218
+#graphify/document #graphify/EXTRACTED #community/Community_221

@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md"
+source_file: ".agents/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "Community 876"
+community: "Community 921"
 location: "L62"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_876
+  - community/Community_921
 ---
 
 # Step 3: Verify Authentication
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[1. GitHub MCP Authentication Reset_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_876
+#graphify/document #graphify/EXTRACTED #community/Community_921

@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-eightd/SKILL.md"
 type: "document"
-community: "Community 232"
+community: "Community 238"
 location: "L146"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_232
+  - community/Community_238
 ---
 
 # Step 2: Collect ALL Data in the Time Window
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[D2 — Problem Description (Data Collection & Characterization)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_232
+#graphify/document #graphify/EXTRACTED #community/Community_238

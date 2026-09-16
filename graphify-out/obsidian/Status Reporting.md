@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-pm/SKILL.md"
 type: "document"
-community: "Community 463"
+community: "Community 473"
 location: "L106"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_463
+  - community/Community_473
 ---
 
 # Status Reporting
@@ -17,4 +17,4 @@ tags:
 - [[README.md Updates]] - `contains` [EXTRACTED]
 - [[Skill Project Management (PM)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_463
+#graphify/document #graphify/EXTRACTED #community/Community_473

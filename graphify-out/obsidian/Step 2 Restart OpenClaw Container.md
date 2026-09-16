@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/SETUP_API_KEYS.md"
 type: "document"
-community: "Community 317"
+community: "Community 326"
 location: "L50"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_317
+  - community/Community_326
 ---
 
 # Step 2: Restart OpenClaw Container
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[API Keys Setup Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_317
+#graphify/document #graphify/EXTRACTED #community/Community_326

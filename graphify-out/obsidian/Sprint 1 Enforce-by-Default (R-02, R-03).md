@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/v0.7.0-remediation-plan.md"
 type: "document"
-community: "Community 394"
+community: "Community 402"
 location: "L41"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_394
+  - community/Community_402
 ---
 
 # Sprint 1: Enforce-by-Default (R-02, R-03)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Tier 1 Must-Have (Deployment Blockers) — v0.7.0 Scope]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_394
+#graphify/document #graphify/EXTRACTED #community/Community_402

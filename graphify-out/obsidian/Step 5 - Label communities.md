@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/graphify/SKILL.md"
 type: "document"
-community: "Community 354"
+community: "Community 356"
 location: "L420"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_354
+  - community/Community_356
 ---
 
 # Step 5 - Label communities
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[What You Must Do When Invoked]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_354
+#graphify/document #graphify/EXTRACTED #community/Community_356

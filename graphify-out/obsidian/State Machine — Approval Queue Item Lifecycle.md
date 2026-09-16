@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/05-behavior.md"
 type: "concept"
-community: "Community 834"
+community: "Community 875"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_834
+  - community/Community_875
 ---
 
 # State Machine — Approval Queue Item Lifecycle
@@ -16,4 +16,4 @@ tags:
 - [[FR2 Use Control]] - `conceptually_related_to` [INFERRED]
 - [[Logic Flow — Request Execution]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_834
+#graphify/concept #graphify/EXTRACTED #community/Community_875

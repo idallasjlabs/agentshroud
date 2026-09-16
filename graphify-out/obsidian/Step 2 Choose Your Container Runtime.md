@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Community 264"
+community: "Community 392"
 location: "L100"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_264
+  - community/Community_392
 ---
 
 # Step 2: Choose Your Container Runtime
@@ -17,4 +17,4 @@ tags:
 - [[Option C Apple Containers (macOS 26+)]] - `contains` [EXTRACTED]
 - [[Step-by-Step Installation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_264
+#graphify/document #graphify/EXTRACTED #community/Community_392

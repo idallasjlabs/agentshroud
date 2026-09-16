@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/CREDENTIAL-SECURITY-POLICY.md"
 type: "document"
-community: "Community 437"
+community: "Community 445"
 location: "L276"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_437
+  - community/Community_445
 ---
 
 # Step 3: Update agentshroud.yaml
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Implementation Status]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_437
+#graphify/document #graphify/EXTRACTED #community/Community_445

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-crpr/SKILL.md"
 type: "document"
-community: "Community 607"
+community: "Community 622"
 location: "L238"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_607
+  - community/Community_622
 ---
 
 # Step 6 — Create the PR
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Create PR with Pre-Flight Audit (CRPR)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_607
+#graphify/document #graphify/EXTRACTED #community/Community_622

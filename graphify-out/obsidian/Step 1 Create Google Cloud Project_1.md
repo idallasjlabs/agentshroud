@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/GOOGLE-SERVICES-SETUP.md"
+source_file: "docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md"
 type: "document"
-community: "Community 263"
-location: "L314"
+community: "Community 554"
+location: "L90"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_263
+  - community/Community_554
 ---
 
 # Step 1: Create Google Cloud Project
 
 ## Connections
-- [[🛠️ OAuth2 Setup (If Needed)]] - `contains` [EXTRACTED]
+- [[🎮 Option B Using Google APIs (Better but requires OAuth)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_263
+#graphify/document #graphify/EXTRACTED #community/Community_554

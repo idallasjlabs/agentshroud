@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-tdd/SKILL.md"
 type: "document"
-community: "Community 706"
+community: "Community 735"
 location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_706
+  - community/Community_735
 ---
 
 # Stack-Specific Testing Patterns
@@ -19,4 +19,4 @@ tags:
 - [[Step Function Input Validation_1]] - `contains` [EXTRACTED]
 - [[Zabbix API  →  `unittest.mock`_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_706
+#graphify/document #graphify/EXTRACTED #community/Community_735

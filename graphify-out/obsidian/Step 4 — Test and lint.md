@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-hdev/SKILL.md"
 type: "document"
-community: "Community 291"
+community: "Community 300"
 location: "L179"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_291
+  - community/Community_300
 ---
 
 # Step 4 — Test and lint
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Mode A — Single task]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_291
+#graphify/document #graphify/EXTRACTED #community/Community_300
