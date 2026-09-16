@@ -1,24 +1,24 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md"
 type: "document"
-community: "Community 627"
+community: "Community 648"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_627
+  - community/Community_648
 ---
 
 # web_content_scanner.py
 
 ## Connections
-- [[Configuration  Environment Variables_11]] - `contains` [EXTRACTED]
-- [[Function Details_17]] - `contains` [EXTRACTED]
+- [[Configuration  Environment Variables_14]] - `contains` [EXTRACTED]
+- [[Function Details_26]] - `contains` [EXTRACTED]
 - [[Injection Pattern Weights]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_20]] - `contains` [EXTRACTED]
-- [[Purpose_138]] - `contains` [EXTRACTED]
-- [[Related_24]] - `contains` [EXTRACTED]
-- [[Responsibilities_22]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_28]] - `contains` [EXTRACTED]
+- [[Purpose_155]] - `contains` [EXTRACTED]
+- [[Related_32]] - `contains` [EXTRACTED]
+- [[Responsibilities_30]] - `contains` [EXTRACTED]
 - [[web_content_scanner.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_627
+#graphify/document #graphify/EXTRACTED #community/Community_648

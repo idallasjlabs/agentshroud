@@ -1,32 +1,17 @@
 ---
-source_file: "firmware/voice-terminal/main/app_main.c"
+source_file: "firmware/voice-terminal/test/test_playback_state/test_playback_state.c"
 type: "code"
-community: "Community 90"
-location: "L521"
+community: "Community 273"
+location: "L44"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_90
+  - graphify/EXTRACTED
+  - community/Community_273
 ---
 
 # vt_remote_log()
 
 ## Connections
-- [[_btn_pressed()]] - `calls` [INFERRED]
-- [[_deliver_utterance()]] - `calls` [EXTRACTED]
-- [[_on_event()]] - `calls` [INFERRED]
-- [[_on_ws_ctrl()]] - `calls` [EXTRACTED]
-- [[_ptt_start()]] - `calls` [INFERRED]
-- [[_report_and_place_canvas()]] - `calls` [INFERRED]
-- [[_touch_pressed()]] - `calls` [INFERRED]
-- [[_touch_start_only()]] - `calls` [INFERRED]
-- [[app_main.c]] - `contains` [EXTRACTED]
-- [[remote_log.h (WS-mirrored diagnostic log declaration)]] - `implements` [EXTRACTED]
-- [[voice_task()]] - `calls` [EXTRACTED]
-- [[wakeword_ptt_finish()]] - `calls` [INFERRED]
-- [[wakeword_push_frame()]] - `calls` [INFERRED]
-- [[wakeword_push_frame() — AFE feed + VAD endpointing]] - `calls` [EXTRACTED]
-- [[wakeword_tick()]] - `calls` [INFERRED]
-- [[wifi_event_handler()]] - `calls` [EXTRACTED]
+- [[test_playback_state.c]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_90
+#graphify/code #graphify/EXTRACTED #community/Community_273

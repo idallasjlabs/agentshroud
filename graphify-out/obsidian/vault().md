@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_vault.py"
 type: "code"
-community: "Key Vault & Audit Chain"
+community: "Community 80"
 location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Key_Vault__Audit_Chain
+  - community/Community_80
 ---
 
 # vault()
@@ -15,4 +15,4 @@ tags:
 - [[KeyVault]] - `calls` [EXTRACTED]
 - [[test_key_vault.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Key_Vault__Audit_Chain
+#graphify/code #graphify/EXTRACTED #community/Community_80

@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "SOC Collaborators"
+community: "Community 388"
 location: "L519"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Collaborators
+  - community/Community_388
 ---
 
 # unpause_collaborator()
 
 ## Connections
-- [[._filter_inbound_updates()]] - `calls` [EXTRACTED]
+- [[dot-_filter_inbound_updates()]] - `calls` [EXTRACTED]
 - [[Resume a paused collaborator's bot access (file-locked).      Removes the UID fr]] - `rationale_for` [EXTRACTED]
 - [[_ensure_collab_dir()]] - `calls` [EXTRACTED]
 - [[_load_collab_store()]] - `calls` [EXTRACTED]
 - [[_write_collab_store()]] - `calls` [EXTRACTED]
 - [[rbac_config.py]] - `contains` [EXTRACTED]
-- [[router.py_1]] - `imports` [EXTRACTED]
+- [[socrouter.py]] - `imports` [EXTRACTED]
 - [[telegram_proxy.py]] - `imports` [EXTRACTED]
 - [[unpause_collaborator_endpoint()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Collaborators
+#graphify/code #graphify/EXTRACTED #community/Community_388

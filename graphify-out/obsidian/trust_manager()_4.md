@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "code"
-community: "PII Sanitizer & E2E Tests"
+community: "Cross-Bot Trust & A2A Governance"
 location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PII_Sanitizer__E2E_Tests
+  - community/Cross-Bot_Trust__A2A_Governance
 ---
 
 # trust_manager()
 
 ## Connections
-- [[TrustManager_1]] - `calls` [EXTRACTED]
+- [[TrustManager]] - `calls` [EXTRACTED]
 - [[test_security_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer__E2E_Tests
+#graphify/code #graphify/EXTRACTED #community/Cross-Bot_Trust__A2A_Governance

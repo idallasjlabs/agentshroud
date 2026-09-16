@@ -1,17 +1,17 @@
 ---
-source_file: "browser-extension/package.json"
+source_file: "browser-extension/manifest.json"
 type: "code"
-community: "Community 654"
-location: "L3"
+community: "Community 424"
+location: "L4"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_654
+  - community/Community_424
 ---
 
 # version
 
 ## Connections
-- [[package.json_1]] - `contains` [EXTRACTED]
+- [[browser-extensionmanifest.json]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_654
+#graphify/code #graphify/EXTRACTED #community/Community_424

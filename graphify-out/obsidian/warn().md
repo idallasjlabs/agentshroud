@@ -1,18 +1,18 @@
 ---
-source_file: "docker/scripts/container-net-diag.sh"
+source_file: "scripts/security-scan.sh"
 type: "code"
-community: "Community 312"
-location: "L74"
+community: "Community 1103"
+location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_312
+  - community/Community_1103
 ---
 
 # warn()
 
 ## Connections
-- [[container-net-diag.sh]] - `defines` [EXTRACTED]
-- [[container-net-diag.sh script]] - `calls` [EXTRACTED]
+- [[scriptssecurity-scan.sh]] - `defines` [EXTRACTED]
+- [[security-scan.sh script_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_312
+#graphify/code #graphify/EXTRACTED #community/Community_1103

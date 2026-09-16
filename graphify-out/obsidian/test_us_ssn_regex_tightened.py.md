@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_us_ssn_regex_tightened.py"
 type: "code"
-community: "Community 765"
+community: "Community 804"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_765
+  - community/Community_804
 ---
 
 # test_us_ssn_regex_tightened.py
@@ -18,4 +18,4 @@ tags:
 - [[test_real_ssn_still_flagged()]] - `contains` [EXTRACTED]
 - [[test_ssn_at_start_of_string_still_flagged()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_765
+#graphify/code #graphify/EXTRACTED #community/Community_804

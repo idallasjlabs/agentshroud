@@ -1,18 +1,17 @@
 ---
-source_file: "firmware/voice-terminal/main/ui_face.c"
+source_file: ""
 type: "code"
-community: "Community 446"
-location: "L135"
+community: "Community 246"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_446
+  - community/Community_246
 ---
 
 # ws_vg_state_t
 
 ## Connections
-- [[_state_to_emotion()]] - `references` [EXTRACTED]
-- [[ui_face_set_state()]] - `references` [EXTRACTED]
+- [[_state_to_emotion]] - `references` [EXTRACTED]
+- [[ui_face_set_state]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_446
+#graphify/code #graphify/EXTRACTED #community/Community_246

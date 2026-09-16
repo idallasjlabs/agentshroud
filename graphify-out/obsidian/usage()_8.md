@@ -1,18 +1,18 @@
 ---
-source_file: "skills/openclaw/video-frames/scripts/frame.sh"
+source_file: "scripts/switch_model.sh"
 type: "code"
-community: "Community 1050"
-location: "L4"
+community: "Community 960"
+location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1050
+  - community/Community_960
 ---
 
 # usage()
 
 ## Connections
-- [[frame.sh]] - `defines` [EXTRACTED]
-- [[frame.sh script]] - `calls` [EXTRACTED]
+- [[switch_model.sh]] - `defines` [EXTRACTED]
+- [[switch_model.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1050
+#graphify/code #graphify/EXTRACTED #community/Community_960

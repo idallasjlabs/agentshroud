@@ -1,27 +1,17 @@
 ---
-source_file: "gateway/security/trivy_report.py"
-type: "code"
-community: "Community 410"
+source_file: "docs/vault/02 - Modules/Security Modules/trivy_report.py.md"
+type: "document"
+community: "Community 711"
 location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Community_410
+  - community/Community_711
 ---
 
-# trivy_report.py
+# trivy_report.py.md
 
 ## Connections
-- [[Dockerfile — Bot (OpenClaw)]] - `references` [EXTRACTED]
-- [[Dockerfile — Gateway]] - `references` [EXTRACTED]
-- [[daily_cve_report.py]] - `imports_from` [EXTRACTED]
-- [[generate_summary()_2]] - `contains` [EXTRACTED]
-- [[health_report.py]] - `references` [EXTRACTED]
-- [[lifespan.py]] - `imports_from` [EXTRACTED]
-- [[parse_trivy_output()]] - `contains` [EXTRACTED]
-- [[run_trivy_scan()_1]] - `contains` [EXTRACTED]
-- [[save_report()_1]] - `contains` [EXTRACTED]
-- [[test_security_audit.py]] - `imports_from` [EXTRACTED]
-- [[wazuh_client.py]] - `references` [EXTRACTED]
+- [[trivy_report.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_410
+#graphify/document #graphify/EXTRACTED #community/Community_711

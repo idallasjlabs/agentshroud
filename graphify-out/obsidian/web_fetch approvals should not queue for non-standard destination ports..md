@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Community 1626"
+community: "Community 1732"
 location: "L3331"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1626
+  - community/Community_1732
 ---
 
 # web_fetch approvals should not queue for non-standard destination ports.
 
 ## Connections
-- [[.test_raw_web_fetch_json_non_standard_port_does_not_queue_approval()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_raw_web_fetch_json_non_standard_port_does_not_queue_approval()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1626
+#graphify/rationale #graphify/EXTRACTED #community/Community_1732

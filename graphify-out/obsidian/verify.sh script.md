@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/verify.sh"
 type: "code"
-community: "Community 43"
+community: "Approval Routing & Event Bus"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_43
+  - community/Approval_Routing__Event_Bus
 ---
 
 # verify.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[verify.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_43
+#graphify/code #graphify/EXTRACTED #community/Approval_Routing__Event_Bus

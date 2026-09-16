@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "Community 29"
+community: "Community 45"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_29
+  - community/Community_45
 ---
 
 # test_web_api_coverage.py
@@ -29,7 +29,7 @@ tags:
 - [[TestResolveBotContainer]] - `contains` [EXTRACTED]
 - [[TestSecurityReport]] - `contains` [EXTRACTED]
 - [[TestServiceControl]] - `contains` [EXTRACTED]
-- [[TestStatus_1]] - `contains` [EXTRACTED]
+- [[TestStatus]] - `contains` [EXTRACTED]
 - [[TestWsLogs]] - `contains` [EXTRACTED]
 - [[TestWsUpdates]] - `contains` [EXTRACTED]
 - [[UpdateRequest]] - `imports` [EXTRACTED]
@@ -39,8 +39,8 @@ tags:
 - [[_gitless_run()]] - `contains` [EXTRACTED]
 - [[_module_state_guard()]] - `contains` [EXTRACTED]
 - [[_resolve_bot_container()]] - `imports` [EXTRACTED]
-- [[client()_20]] - `contains` [EXTRACTED]
-- [[require_auth()_1]] - `imports` [EXTRACTED]
+- [[client()_16]] - `contains` [EXTRACTED]
+- [[require_auth()]] - `imports` [EXTRACTED]
 - [[webapi.py (POST apiintelreports)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_29
+#graphify/code #graphify/EXTRACTED #community/Community_45

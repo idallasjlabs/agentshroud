@@ -1,19 +1,19 @@
 ---
 source_file: "skills/openclaw/tmux/scripts/wait-for-text.sh"
 type: "code"
-community: "Community 981"
+community: "Community 1028"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_981
+  - community/Community_1028
 ---
 
 # wait-for-text.sh
 
 ## Connections
-- [[SKILL_234]] - `conceptually_related_to` [INFERRED]
-- [[usage()_7]] - `defines` [EXTRACTED]
+- [[tmuxSKILL]] - `conceptually_related_to` [INFERRED]
+- [[usage()_2]] - `defines` [EXTRACTED]
 - [[wait-for-text.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_981
+#graphify/code #graphify/EXTRACTED #community/Community_1028

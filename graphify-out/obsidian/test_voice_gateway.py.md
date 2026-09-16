@@ -1,12 +1,11 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "Community 35"
-location: "L1"
+community: "Voice Gateway Test Fixtures"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_35
+  - community/Voice_Gateway_Test_Fixtures
 ---
 
 # test_voice_gateway.py
@@ -14,6 +13,7 @@ tags:
 ## Connections
 - [[TestNormalizeForSpeech]] - `contains` [EXTRACTED]
 - [[TestSplitForSpeech]] - `contains` [EXTRACTED]
+- [[Tests for the Voice Gateway FastAPI app (server.py, stt.py, tts.py). All…]] - `rationale_for` [EXTRACTED]
 - [[_call_agent_stream()]] - `imports` [EXTRACTED]
 - [[_call_llm_stream()]] - `imports` [EXTRACTED]
 - [[_fake_kokoro_pipeline()]] - `contains` [EXTRACTED]
@@ -23,13 +23,11 @@ tags:
 - [[_mock_ws()]] - `contains` [EXTRACTED]
 - [[_openai_delta_lines()]] - `contains` [EXTRACTED]
 - [[_pcm_bytes()]] - `contains` [EXTRACTED]
-- [[_resample_s16le_mono()]] - `imports` [EXTRACTED]
 - [[_reset_reply_resume()]] - `contains` [EXTRACTED]
 - [[_run_disconnect_test()]] - `contains` [EXTRACTED]
 - [[_sse_body()]] - `contains` [EXTRACTED]
-- [[normalize_for_speech()]] - `imports` [EXTRACTED]
+- [[asyncio_1]] - `imports` [EXTRACTED]
 - [[server.py]] - `imports_from` [EXTRACTED]
-- [[split_for_speech()]] - `imports` [EXTRACTED]
 - [[stt.py]] - `imports_from` [EXTRACTED]
 - [[test_answer_volume_query_returns_tracked_level()]] - `contains` [EXTRACTED]
 - [[test_answer_volume_query_unknown_before_any_set()]] - `contains` [EXTRACTED]
@@ -55,6 +53,7 @@ tags:
 - [[test_firmware_bin_stale_if_none_match_returns_body()]] - `contains` [EXTRACTED]
 - [[test_firmware_bin_ungated_when_allowlist_empty()]] - `contains` [EXTRACTED]
 - [[test_health_returns_ok()]] - `contains` [EXTRACTED]
+- [[test_health_supports_head()]] - `contains` [EXTRACTED]
 - [[test_is_volume_query_forms()]] - `contains` [EXTRACTED]
 - [[test_lifespan_tolerates_warmup_failure()]] - `contains` [EXTRACTED]
 - [[test_listen_offset_resumes_partial_upload()]] - `contains` [EXTRACTED]
@@ -126,4 +125,4 @@ tags:
 - [[test_ws_volume_query_unknown_state_intercepted()]] - `contains` [EXTRACTED]
 - [[tts.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_35
+#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_Test_Fixtures

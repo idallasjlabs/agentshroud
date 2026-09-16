@@ -1,20 +1,19 @@
 ---
-source_file: "docker/scripts/verify-security.sh"
-type: "code"
-community: "Community 751"
-location: "L1"
+source_file: "docs/security/SECURITY_SCRIPTS_REFERENCE.md"
+type: "document"
+community: "Community 350"
+location: "L7"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Community_751
+  - community/Community_350
 ---
 
 # verify-security.sh
 
 ## Connections
-- [[check_fail()_1]] - `defines` [EXTRACTED]
-- [[check_pass()_1]] - `defines` [EXTRACTED]
-- [[check_warn()]] - `defines` [EXTRACTED]
-- [[verify-security.sh script]] - `contains` [EXTRACTED]
+- [[AgentShroud Security Scripts Reference]] - `contains` [EXTRACTED]
+- [[SECURITY_SCRIPTS_REFERENCE]] - `references` [EXTRACTED]
+- [[VERIFICATION_RESULTS]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_751
+#graphify/document #graphify/EXTRACTED #community/Community_350

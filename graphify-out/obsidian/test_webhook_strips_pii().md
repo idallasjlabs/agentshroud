@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "Community 28"
+community: "Proxy Sidecar & Forwarder"
 location: "L397"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_28
+  - community/Proxy_Sidecar__Forwarder
 ---
 
 # test_webhook_strips_pii()
@@ -16,4 +16,4 @@ tags:
 - [[WebhookReceiver]] - `calls` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_28
+#graphify/code #graphify/EXTRACTED #community/Proxy_Sidecar__Forwarder

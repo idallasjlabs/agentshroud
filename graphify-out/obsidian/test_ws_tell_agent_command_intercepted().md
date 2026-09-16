@@ -1,20 +1,25 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "Community 89"
-location: "L3141"
+community: "Voice Gateway Routing Tests"
+location: "L3151"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_89
+  - community/Voice_Gateway_Routing_Tests
 ---
 
 # test_ws_tell_agent_command_intercepted()
 
 ## Connections
-- [[A bare 'tell Hermes' must NOT reach any agent yet it only sets the     sticky a]] - `rationale_for` [EXTRACTED]
+- [[A bare 'tell Hermes' must NOT reach any agent yet it only sets the sticky…]] - `rationale_for` [EXTRACTED]
+- [[_agent_must_not_be_called()_2]] - `contains` [EXTRACTED]
+- [[_agent_must_not_be_called()_7]] - `indirect_call` [INFERRED]
+- [[_capture_synth()_2]] - `contains` [EXTRACTED]
+- [[_capture_synth()]] - `indirect_call` [INFERRED]
 - [[_mock_ws()]] - `calls` [EXTRACTED]
 - [[_pcm_bytes()]] - `calls` [EXTRACTED]
+- [[asyncio_1]] - `references` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_89
+#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_Routing_Tests

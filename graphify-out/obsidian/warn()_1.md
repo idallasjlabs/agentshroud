@@ -1,18 +1,25 @@
 ---
-source_file: "docs/planning/reviews/enforcement-audit-script.py"
+source_file: "scripts/sunday-upgrade-apply.sh"
 type: "code"
-community: "Memory Lifecycle & Egress Filtering"
-location: "L9"
+community: "Community 353"
+location: "L123"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Memory_Lifecycle__Egress_Filtering
+  - community/Community_353
 ---
 
 # warn()
 
 ## Connections
-- [[enforcement-audit-script.py]] - `contains` [EXTRACTED]
-- [[run()_3]] - `calls` [EXTRACTED]
+- [[_attempt_rollback()]] - `calls` [EXTRACTED]
+- [[phase_apply()]] - `calls` [EXTRACTED]
+- [[phase_baseline()]] - `calls` [EXTRACTED]
+- [[phase_discover()]] - `calls` [EXTRACTED]
+- [[phase_preflight()]] - `calls` [EXTRACTED]
+- [[phase_verify()]] - `calls` [EXTRACTED]
+- [[sunday-upgrade-apply.sh]] - `defines` [EXTRACTED]
+- [[sunday-upgrade-apply.sh script]] - `calls` [EXTRACTED]
+- [[write_handoff()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Memory_Lifecycle__Egress_Filtering
+#graphify/code #graphify/EXTRACTED #community/Community_353

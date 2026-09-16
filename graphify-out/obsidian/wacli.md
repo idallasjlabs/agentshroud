@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/wacli/SKILL.md"
 type: "document"
-community: "Community 401"
+community: "Community 411"
 location: "L32"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_401
+  - community/Community_411
 ---
 
 # wacli
 
 ## Connections
-- [[SKILL_238]] - `contains` [EXTRACTED]
+- [[wacliSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_401
+#graphify/document #graphify/EXTRACTED #community/Community_411

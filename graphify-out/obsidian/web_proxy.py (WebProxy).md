@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "Community 75"
+community: "Community 72"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_75
+  - community/Community_72
 ---
 
 # web_proxy.py (WebProxy)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_http_proxy.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_75
+#graphify/code #graphify/EXTRACTED #community/Community_72

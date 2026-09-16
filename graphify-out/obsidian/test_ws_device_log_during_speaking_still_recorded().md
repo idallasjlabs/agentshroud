@@ -1,20 +1,23 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "Community 89"
-location: "L2421"
+community: "Voice Gateway Routing Tests"
+location: "L2431"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_89
+  - community/Voice_Gateway_Routing_Tests
 ---
 
 # test_ws_device_log_during_speaking_still_recorded()
 
 ## Connections
-- [[Remote-diag {log...} frames arriving DURING the TTS send phase must be     lo]] - `rationale_for` [EXTRACTED]
+- [[Remote-diag {log...} frames arriving DURING the TTS send phase must be…]] - `rationale_for` [EXTRACTED]
+- [[_mock_agent()_1]] - `contains` [EXTRACTED]
+- [[_mock_agent()_2]] - `indirect_call` [INFERRED]
 - [[_mock_ws()]] - `calls` [EXTRACTED]
 - [[_pcm_bytes()]] - `calls` [EXTRACTED]
+- [[asyncio_1]] - `references` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_89
+#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_Routing_Tests

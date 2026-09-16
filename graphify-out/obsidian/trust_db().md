@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "code"
-community: "Progressive Trust"
+community: "Cross-Bot Trust & A2A Governance"
 location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Progressive_Trust
+  - community/Cross-Bot_Trust__A2A_Governance
 ---
 
 # trust_db()
@@ -15,4 +15,4 @@ tags:
 - [[Create a temporary trust database.]] - `rationale_for` [EXTRACTED]
 - [[test_trust_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Progressive_Trust
+#graphify/code #graphify/EXTRACTED #community/Cross-Bot_Trust__A2A_Governance

@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/security-scan.sh"
+source_file: "docs/planning/reviews/enforcement-audit-script.py"
 type: "code"
-community: "Community 1052"
-location: "L51"
+community: "File Sandbox & Privilege Separation Tests"
+location: "L9"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1052
+  - community/File_Sandbox__Privilege_Separation_Tests
 ---
 
 # warn()
 
 ## Connections
-- [[security-scan.sh_1]] - `defines` [EXTRACTED]
-- [[security-scan.sh script_1]] - `calls` [EXTRACTED]
+- [[enforcement-audit-script.py]] - `contains` [EXTRACTED]
+- [[run()_4]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1052
+#graphify/code #graphify/EXTRACTED #community/File_Sandbox__Privilege_Separation_Tests

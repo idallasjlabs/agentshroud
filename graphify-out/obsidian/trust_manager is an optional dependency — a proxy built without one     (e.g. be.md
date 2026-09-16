@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_trust_scoring.py"
 type: "rationale"
-community: "Community 81"
+community: "Community 131"
 location: "L81"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_81
+  - community/Community_131
 ---
 
 # trust_manager is an optional dependency — a proxy built without one     (e.g. be
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_proxy_without_trust_manager_does_not_raise()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_81
+#graphify/rationale #graphify/EXTRACTED #community/Community_131

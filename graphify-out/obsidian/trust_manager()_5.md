@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "code"
-community: "Community 62"
+community: "Cross-Bot Trust & A2A Governance"
 location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_62
+  - community/Cross-Bot_Trust__A2A_Governance
 ---
 
 # trust_manager()
 
 ## Connections
-- [[TrustManager_1]] - `calls` [EXTRACTED]
+- [[TrustManager]] - `calls` [EXTRACTED]
 - [[test_security_regressions_v1_2.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_62
+#graphify/code #graphify/EXTRACTED #community/Cross-Bot_Trust__A2A_Governance

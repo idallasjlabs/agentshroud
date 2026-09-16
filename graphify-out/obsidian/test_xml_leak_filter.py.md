@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_xml_leak_filter.py"
 type: "code"
-community: "Community 46"
+community: "Blue/Red Team Security Auditor Skills"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_46
+  - community/Blue/Red_Team_Security_Auditor_Skills
 ---
 
 # test_xml_leak_filter.py
@@ -17,4 +17,4 @@ tags:
 - [[TestXMLLeakFilter]] - `contains` [EXTRACTED]
 - [[XMLLeakFilter]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_46
+#graphify/code #graphify/EXTRACTED #community/Blue/Red_Team_Security_Auditor_Skills

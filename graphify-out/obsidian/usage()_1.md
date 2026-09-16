@@ -1,18 +1,18 @@
 ---
-source_file: "docker/scripts/killswitch.sh"
+source_file: "skills/openclaw/tmux/scripts/find-sessions.sh"
 type: "code"
-community: "Community 910"
-location: "L28"
+community: "Community 1028"
+location: "L4"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_910
+  - community/Community_1028
 ---
 
 # usage()
 
 ## Connections
-- [[killswitch.sh]] - `defines` [EXTRACTED]
-- [[killswitch.sh script]] - `calls` [EXTRACTED]
+- [[find-sessions.sh]] - `defines` [EXTRACTED]
+- [[find-sessions.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_910
+#graphify/code #graphify/EXTRACTED #community/Community_1028

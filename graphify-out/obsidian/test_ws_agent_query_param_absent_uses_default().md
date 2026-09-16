@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "Community 35"
-location: "L1623"
+community: "Voice Gateway Test Fixtures"
+location: "L1633"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_35
+  - community/Voice_Gateway_Test_Fixtures
 ---
 
 # test_ws_agent_query_param_absent_uses_default()
@@ -15,4 +15,4 @@ tags:
 - [[No agent= param → _DEFAULT_AGENT is used for routing.]] - `rationale_for` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_35
+#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_Test_Fixtures

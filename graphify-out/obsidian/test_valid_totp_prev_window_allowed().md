@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mfa_guard.py"
 type: "code"
-community: "Community 63"
+community: "Community 57"
 location: "L81"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_63
+  - community/Community_57
 ---
 
 # test_valid_totp_prev_window_allowed()
@@ -16,4 +16,4 @@ tags:
 - [[_ref_totp()]] - `calls` [EXTRACTED]
 - [[test_mfa_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_63
+#graphify/code #graphify/EXTRACTED #community/Community_57
