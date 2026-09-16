@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-mm/SKILL.md"
 type: "document"
-community: "Community 298"
+community: "Community 307"
 location: "L146"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_298
+  - community/Community_307
 ---
 
 # Markmap Generation via MCP
@@ -17,4 +17,4 @@ tags:
 - [[Markmap Source Format_1]] - `contains` [EXTRACTED]
 - [[Skill Mindmap Architect (MM)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_298
+#graphify/document #graphify/EXTRACTED #community/Community_307

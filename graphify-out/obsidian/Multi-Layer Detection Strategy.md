@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-architecture.md"
 type: "document"
-community: "Community 970"
+community: "Community 1019"
 location: "L278"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_970
+  - community/Community_1019
 ---
 
 # Multi-Layer Detection Strategy
@@ -17,4 +17,4 @@ tags:
 - [[Layer 3 Multi-Layer Decoding]] - `contains` [EXTRACTED]
 - [[Prompt Injection Detected]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_970
+#graphify/document #graphify/EXTRACTED #community/Community_1019

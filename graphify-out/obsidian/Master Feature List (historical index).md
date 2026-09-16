@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/MASTER-FEATURE-LIST.md"
 type: "document"
-community: "Community 375"
+community: "Community 376"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_375
+  - community/Community_376
 ---
 
 # Master Feature List (historical index)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Blue 1583f0]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_375
+#graphify/document #graphify/EXTRACTED #community/Community_376

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/MASTER-FEATURE-LIST.md"
+source_file: "docs/planning/RELEASE-PLAN.md"
 type: "document"
-community: "Community 423"
-location: "L308"
+community: "Community 643"
+location: "L384"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_423
+  - community/Community_643
 ---
 
 # Multi-Platform Container Support
 
 ## Connections
-- [[Post-v1.0.0 — Deferred]] - `contains` [EXTRACTED]
+- [[v1.3.0 — Platform Expansion (53 items)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_423
+#graphify/document #graphify/EXTRACTED #community/Community_643

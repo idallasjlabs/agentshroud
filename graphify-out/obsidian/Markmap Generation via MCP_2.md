@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mm/SKILL.md"
 type: "document"
-community: "Community 303"
+community: "Community 312"
 location: "L146"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_303
+  - community/Community_312
 ---
 
 # Markmap Generation via MCP
@@ -17,4 +17,4 @@ tags:
 - [[Markmap Source Format_2]] - `contains` [EXTRACTED]
 - [[Skill Mindmap Architect (MM)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_303
+#graphify/document #graphify/EXTRACTED #community/Community_312

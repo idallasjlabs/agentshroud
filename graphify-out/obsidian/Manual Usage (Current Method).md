@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
 type: "document"
-community: "Community 1322"
+community: "Community 1377"
 location: "L63"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1322
+  - community/Community_1377
 ---
 
 # Manual Usage (Current Method)
@@ -17,4 +17,4 @@ tags:
 - [[Step 2 Fetch with Browser-Fetch Skill]] - `contains` [EXTRACTED]
 - [[Step 3 Parse Output]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1322
+#graphify/document #graphify/EXTRACTED #community/Community_1377

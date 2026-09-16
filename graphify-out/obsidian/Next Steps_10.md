@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/VAULT-SHARING-INSTRUCTIONS.md"
+source_file: "docs/setup/TELEGRAM_SETUP.md"
 type: "document"
-community: "Community 586"
-location: "L204"
+community: "Community 660"
+location: "L162"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_586
+  - community/Community_660
 ---
 
 # Next Steps
 
 ## Connections
-- [[1Password Vault Sharing Instructions]] - `contains` [EXTRACTED]
+- [[Telegram Bot Setup for OpenClaw]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_586
+#graphify/document #graphify/EXTRACTED #community/Community_660

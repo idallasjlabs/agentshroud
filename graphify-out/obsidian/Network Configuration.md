@@ -1,17 +1,17 @@
 ---
 source_file: "docs/architecture/adr/ADR-003-two-network-container-isolation.md"
 type: "document"
-community: "Community 782"
+community: "Community 824"
 location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_782
+  - community/Community_824
 ---
 
 # Network Configuration
 
 ## Connections
-- [[Decision_4]] - `contains` [EXTRACTED]
+- [[Decision_8]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_782
+#graphify/document #graphify/EXTRACTED #community/Community_824

@@ -1,33 +1,33 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Community 29"
+community: "Community 42"
 location: "L155"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_29
+  - community/Community_42
 ---
 
 # ModeRequest
 
 ## Connections
-- [[.test_auto_revert_restores_enforce()]] - `calls` [EXTRACTED]
-- [[.test_custom_revert_minutes()]] - `calls` [EXTRACTED]
-- [[.test_default_revert_minutes()]] - `calls` [EXTRACTED]
-- [[.test_mode_request_defaults()]] - `calls` [EXTRACTED]
-- [[.test_revert_task_created_on_put()]] - `calls` [EXTRACTED]
-- [[.test_second_put_cancels_previous_task()]] - `calls` [EXTRACTED]
-- [[.test_set_mode_cancels_previous_revert_task()]] - `calls` [EXTRACTED]
-- [[.test_set_mode_clamps_high_revert()]] - `calls` [EXTRACTED]
-- [[.test_set_mode_enforce_revert_task_is_noop()]] - `calls` [EXTRACTED]
-- [[.test_set_mode_monitor_auto_reverts()]] - `calls` [EXTRACTED]
+- [[dot-test_auto_revert_restores_enforce()]] - `calls` [EXTRACTED]
+- [[dot-test_custom_revert_minutes()]] - `calls` [EXTRACTED]
+- [[dot-test_default_revert_minutes()]] - `calls` [EXTRACTED]
+- [[dot-test_mode_request_defaults()]] - `calls` [EXTRACTED]
+- [[dot-test_revert_task_created_on_put()]] - `calls` [EXTRACTED]
+- [[dot-test_second_put_cancels_previous_task()]] - `calls` [EXTRACTED]
+- [[dot-test_set_mode_cancels_previous_revert_task()]] - `calls` [EXTRACTED]
+- [[dot-test_set_mode_clamps_high_revert()]] - `calls` [EXTRACTED]
+- [[dot-test_set_mode_enforce_revert_task_is_noop()]] - `calls` [EXTRACTED]
+- [[dot-test_set_mode_monitor_auto_reverts()]] - `calls` [EXTRACTED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[CitationVerifier]] - `uses` [INFERRED]
 - [[DraftEntry]] - `uses` [INFERRED]
-- [[FastAPI_3]] - `uses` [INFERRED]
-- [[IntelReportStore]] - `uses` [INFERRED]
-- [[Path_35]] - `uses` [INFERRED]
+- [[FastAPI_4]] - `uses` [INFERRED]
+- [[IntelReportStore_1]] - `uses` [INFERRED]
+- [[Path_40]] - `uses` [INFERRED]
 - [[SimpleNamespace_1]] - `uses` [INFERRED]
 - [[TestAgentshroudUpdates]] - `uses` [INFERRED]
 - [[TestAutoRevert]] - `uses` [INFERRED]
@@ -52,12 +52,12 @@ tags:
 - [[TestSecurityReport]] - `uses` [INFERRED]
 - [[TestServiceControl]] - `uses` [INFERRED]
 - [[TestSetMode]] - `uses` [INFERRED]
-- [[TestStatus_1]] - `uses` [INFERRED]
+- [[TestStatus]] - `uses` [INFERRED]
 - [[TestWsLogs]] - `uses` [INFERRED]
 - [[TestWsUpdates]] - `uses` [INFERRED]
 - [[api.py]] - `contains` [EXTRACTED]
-- [[set_mode()_1]] - `references` [EXTRACTED]
+- [[set_mode()]] - `references` [EXTRACTED]
 - [[test_observatory_mode.py]] - `imports` [EXTRACTED]
 - [[test_web_api_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_29
+#graphify/code #graphify/INFERRED #community/Community_42

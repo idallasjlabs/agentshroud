@@ -1,11 +1,11 @@
 ---
 source_file: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
 type: "concept"
-community: "Community 799"
+community: "Community 429"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_799
+  - community/Community_429
 ---
 
 # Multi-Stage Security Pipeline (P0-P3 tiers)
@@ -14,4 +14,4 @@ tags:
 - [[34 Security Modules Pipeline (P0-P3)]] - `semantically_similar_to` [INFERRED]
 - [[Enterprise Governance Proxy System (invention)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_799
+#graphify/concept #graphify/EXTRACTED #community/Community_429

@@ -1,22 +1,17 @@
 ---
-source_file: "docs/vault/09 - Diagrams/Network Topology.md"
+source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
 type: "document"
-community: "Community 596"
-location: "L9"
+community: "Community 917"
+location: "L145"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_596
+  - community/Community_917
 ---
 
 # Network Topology
 
 ## Connections
-- [[Container Network Diagram]] - `contains` [EXTRACTED]
-- [[Hostname Resolution]] - `contains` [EXTRACTED]
-- [[Network Security Notes]] - `contains` [EXTRACTED]
-- [[Network Topology_2]] - `contains` [EXTRACTED]
-- [[Related Notes_72]] - `contains` [EXTRACTED]
-- [[Traffic Routing]] - `contains` [EXTRACTED]
+- [[Architecture Overview_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_596
+#graphify/document #graphify/EXTRACTED #community/Community_917

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_stt_model_ab.py"
 type: "rationale"
-community: "Community 267"
+community: "Community 287"
 location: "L34"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_267
+  - community/Community_287
 ---
 
 # No requested value → the default is used (behaviour unchanged).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_select_model_size_default_when_unset()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_267
+#graphify/rationale #graphify/EXTRACTED #community/Community_287

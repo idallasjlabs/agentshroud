@@ -1,17 +1,17 @@
 ---
 source_file: "docs/setup/TELEGRAM_SETUP.md"
 type: "document"
-community: "Community 641"
+community: "Community 660"
 location: "L130"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_641
+  - community/Community_660
 ---
 
 # Messages delayed
 
 ## Connections
-- [[Troubleshooting_32]] - `contains` [EXTRACTED]
+- [[Troubleshooting_34]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_641
+#graphify/document #graphify/EXTRACTED #community/Community_660

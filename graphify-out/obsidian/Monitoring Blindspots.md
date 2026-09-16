@@ -1,17 +1,17 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-02-24.md"
 type: "document"
-community: "Community 133"
+community: "Community 130"
 location: "L191"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_133
+  - community/Community_130
 ---
 
 # **Monitoring Blindspots**
 
 ## Connections
-- [[4. Risks & Gaps_2]] - `contains` [EXTRACTED]
+- [[4. Risks & Gaps_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_133
+#graphify/document #graphify/EXTRACTED #community/Community_130

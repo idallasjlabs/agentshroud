@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/a2a_policy.py"
 type: "rationale"
-community: "Community 281"
+community: "Community 288"
 location: "L235"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_281
+  - community/Community_288
 ---
 
 # # NOTE: gateway/security/egress_filter.py::_is_private_ip has the same class
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[a2a_policy.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_281
+#graphify/rationale #graphify/EXTRACTED #community/Community_288
