@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "Security Audit & Drift Detection"
+community: "Agent Isolation & Group Config Tests"
 location: "L20"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Security_Audit__Drift_Detection
+  - community/Agent_Isolation__Group_Config_Tests
 ---
 
 # IsolationStatus
 
 ## Connections
-- [[ContainerConfig_1]] - `uses` [INFERRED]
-- [[Enum]] - `inherits` [EXTRACTED]
+- [[ContainerConfig]] - `uses` [INFERRED]
+- [[Enum_3]] - `inherits` [EXTRACTED]
 - [[TestAgentIsolation]] - `uses` [INFERRED]
 - [[TestAgentRegistry]] - `uses` [INFERRED]
-- [[TestAuditTrail_1]] - `uses` [INFERRED]
-- [[TestAuth_1]] - `uses` [INFERRED]
+- [[TestAuditTrail]] - `uses` [INFERRED]
+- [[TestAuth]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
-- [[TestContextGuard_1]] - `uses` [INFERRED]
+- [[TestContextGuard]] - `uses` [INFERRED]
 - [[TestCryptography]] - `uses` [INFERRED]
 - [[TestDriftDetector]] - `uses` [INFERRED]
 - [[TestDriftDetectorHardened]] - `uses` [INFERRED]
@@ -38,14 +38,14 @@ tags:
 - [[TestResourceProtection]] - `uses` [INFERRED]
 - [[TestSecureZero]] - `uses` [INFERRED]
 - [[TestSharedNothing]] - `uses` [INFERRED]
-- [[TestSupplyChain_1]] - `uses` [INFERRED]
+- [[TestSupplyChain]] - `uses` [INFERRED]
 - [[TestTrustManager]] - `uses` [INFERRED]
 - [[TestTrustManagerHardened]] - `uses` [INFERRED]
 - [[TestVolumeIsolation]] - `uses` [INFERRED]
 - [[agent_isolation.py]] - `contains` [EXTRACTED]
-- [[str]] - `inherits` [EXTRACTED]
+- [[str_2]] - `inherits` [EXTRACTED]
 - [[test_agent_isolation.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Security_Audit__Drift_Detection
+#graphify/code #graphify/INFERRED #community/Agent_Isolation__Group_Config_Tests

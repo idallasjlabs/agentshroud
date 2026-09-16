@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/instruction_envelope.py"
 type: "code"
-community: "Key Vault & Audit Chain"
+community: "Signed Instruction Envelopes & Security Pipeline"
 location: "L30"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Key_Vault__Audit_Chain
+  - community/Signed_Instruction_Envelopes__Security_Pipeline
 ---
 
 # InstructionEnvelope
 
 ## Connections
-- [[.sign()]] - `references` [EXTRACTED]
-- [[.test_outbound_response_is_signed_and_verifiable()]] - `calls` [EXTRACTED]
-- [[.verify()]] - `references` [EXTRACTED]
-- [[.wrap_system_prompt()]] - `references` [EXTRACTED]
-- [[.wrap_tool_result()]] - `references` [EXTRACTED]
+- [[dot-sign()]] - `references` [EXTRACTED]
+- [[dot-test_outbound_response_is_signed_and_verifiable()]] - `calls` [EXTRACTED]
+- [[dot-verify()]] - `references` [EXTRACTED]
+- [[dot-wrap_system_prompt()]] - `references` [EXTRACTED]
+- [[dot-wrap_tool_result()]] - `references` [EXTRACTED]
 - [[A signed instruction or tool result.]] - `rationale_for` [EXTRACTED]
 - [[TestAuditChain]] - `uses` [INFERRED]
 - [[TestAuditChainBounded]] - `uses` [INFERRED]
@@ -25,7 +25,7 @@ tags:
 - [[TestEnvelopeSigner]] - `uses` [INFERRED]
 - [[TestEnvelopeSignerInPipeline]] - `uses` [INFERRED]
 - [[TestInboundPIIOwnerExemption]] - `uses` [INFERRED]
-- [[TestKeyLeakDetection_1]] - `uses` [INFERRED]
+- [[TestKeyLeakDetection]] - `uses` [INFERRED]
 - [[TestOutboundFilterResultBinding]] - `uses` [INFERRED]
 - [[TestPromptGuardToolResultTrustGate]] - `uses` [INFERRED]
 - [[TestTrustViolationRecording]] - `uses` [INFERRED]
@@ -35,4 +35,4 @@ tags:
 - [[test_instruction_envelope.py]] - `imports` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Key_Vault__Audit_Chain
+#graphify/code #graphify/INFERRED #community/Signed_Instruction_Envelopes__Security_Pipeline

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/08 - Runbooks/Kill Switch Procedure.md"
 type: "document"
-community: "Community 696"
+community: "Community 720"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_696
+  - community/Community_720
 ---
 
 # Kill Switch Procedure
@@ -20,7 +20,7 @@ tags:
 - [[Method 3 Script]] - `contains` [EXTRACTED]
 - [[Method 4 Docker Direct (Last Resort)]] - `contains` [EXTRACTED]
 - [[Post-Kill Switch Procedure]] - `contains` [EXTRACTED]
-- [[Related Notes_68]] - `contains` [EXTRACTED]
-- [[When to Use]] - `contains` [EXTRACTED]
+- [[Related Notes_47]] - `contains` [EXTRACTED]
+- [[When to Use_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_696
+#graphify/document #graphify/EXTRACTED #community/Community_720

@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "SOC Collaborators"
+community: "SOC Correlation & Router"
 location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Collaborators
+  - community/SOC_Correlation__Router
 ---
 
 # JSONResponse
 
 ## Connections
 - [[AuditLogEntry]] - `uses` [INFERRED]
-- [[AuditResult]] - `uses` [INFERRED]
+- [[AuditResult_1]] - `uses` [INFERRED]
 - [[ContributorManager]] - `uses` [INFERRED]
-- [[SCLCaller]] - `uses` [INFERRED]
+- [[SCLCaller_1]] - `uses` [INFERRED]
 - [[SCLConfirmationRequired]] - `uses` [INFERRED]
-- [[SCLInterface]] - `uses` [INFERRED]
+- [[SCLInterface_1]] - `uses` [INFERRED]
 - [[ServiceManager]] - `uses` [INFERRED]
 - [[_confirmation_required()]] - `calls` [EXTRACTED]
 - [[_process_inbound()]] - `calls` [INFERRED]
@@ -28,7 +28,7 @@ tags:
 - [[emergency_block_egress()]] - `references` [EXTRACTED]
 - [[export_audit()]] - `calls` [EXTRACTED]
 - [[get_collaborator_activity()]] - `references` [EXTRACTED]
-- [[get_sbom()_1]] - `calls` [EXTRACTED]
+- [[get_sbom()]] - `calls` [EXTRACTED]
 - [[global_exception_handler()]] - `calls` [EXTRACTED]
 - [[google_api_proxy()]] - `calls` [EXTRACTED]
 - [[killswitch_disconnect()]] - `references` [EXTRACTED]
@@ -39,17 +39,17 @@ tags:
 - [[mcp_proxy_endpoint()]] - `calls` [EXTRACTED]
 - [[ollama_api_proxy()]] - `calls` [EXTRACTED]
 - [[rebuild_all_services()]] - `references` [EXTRACTED]
-- [[restart_service()_1]] - `references` [EXTRACTED]
+- [[restart_service()]] - `references` [EXTRACTED]
 - [[rollback_gateway()]] - `references` [EXTRACTED]
 - [[security_headers_middleware()]] - `calls` [EXTRACTED]
 - [[serve_dashboard()]] - `calls` [INFERRED]
 - [[slack_api_proxy()]] - `calls` [EXTRACTED]
 - [[ssh_exec()]] - `calls` [EXTRACTED]
-- [[stop_service()_1]] - `references` [EXTRACTED]
+- [[stop_service()]] - `references` [EXTRACTED]
 - [[telegram_api_proxy()]] - `calls` [EXTRACTED]
 - [[update_service()]] - `references` [EXTRACTED]
 - [[upgrade_bot()]] - `references` [EXTRACTED]
 - [[upgrade_gateway()]] - `references` [EXTRACTED]
 - [[upgrade_hermes()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Collaborators
+#graphify/code #graphify/EXTRACTED #community/SOC_Correlation__Router

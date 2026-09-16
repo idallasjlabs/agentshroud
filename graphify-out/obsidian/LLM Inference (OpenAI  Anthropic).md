@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-07-data-flow.svg"
 type: "concept"
-community: "Community 414"
+community: "Community 217"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_414
+  - community/Community_217
 ---
 
 # LLM Inference (OpenAI / Anthropic)
@@ -16,4 +16,4 @@ tags:
 - [[MCP Inspector]] - `calls` [EXTRACTED]
 - [[Receive message  cron trigger]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_414
+#graphify/concept #graphify/EXTRACTED #community/Community_217

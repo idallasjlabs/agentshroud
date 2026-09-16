@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[OpenClaw Workspace Usage Guide]] - `contains` [EXTRACTED]
 - [[Via Skills]] - `contains` [EXTRACTED]
-- [[Via Telegram_2]] - `contains` [EXTRACTED]
+- [[Via Telegram]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Community_163

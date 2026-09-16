@@ -1,12 +1,12 @@
 ---
 source_file: "docs/data/data-dictionary.md"
 type: "document"
-community: "Community 396"
+community: "Community 403"
 location: "L160"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_396
+  - community/Community_403
 ---
 
 # InspectionResult
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Network Security Entities]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_396
+#graphify/document #graphify/EXTRACTED #community/Community_403

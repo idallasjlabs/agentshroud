@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/security/tool_result_injection.py"
 type: "code"
-community: "Key Vault & Audit Chain"
+community: "Signed Instruction Envelopes & Security Pipeline"
 location: "L30"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Key_Vault__Audit_Chain
+  - community/Signed_Instruction_Envelopes__Security_Pipeline
 ---
 
 # InjectionAction
 
 ## Connections
-- [[Any_19]] - `uses` [INFERRED]
+- [[Any_14]] - `uses` [INFERRED]
 - [[AuditChain]] - `uses` [INFERRED]
 - [[AuditChainEntry]] - `uses` [INFERRED]
-- [[Enum]] - `inherits` [EXTRACTED]
+- [[Enum_3]] - `inherits` [EXTRACTED]
 - [[PipelineAction]] - `uses` [INFERRED]
-- [[PipelineResult]] - `uses` [INFERRED]
+- [[PipelineResult_1]] - `uses` [INFERRED]
 - [[SecurityPipeline]] - `uses` [INFERRED]
-- [[SecurityPipeline_2]] - `uses` [INFERRED]
+- [[SecurityPipeline_1]] - `uses` [INFERRED]
 - [[TestAuditChain]] - `uses` [INFERRED]
 - [[TestAuditChainBounded]] - `uses` [INFERRED]
 - [[TestCleanContent]] - `uses` [INFERRED]
@@ -29,7 +29,7 @@ tags:
 - [[TestEnvelopeSignerInPipeline]] - `uses` [INFERRED]
 - [[TestHighSeverity]] - `uses` [INFERRED]
 - [[TestInboundPIIOwnerExemption]] - `uses` [INFERRED]
-- [[TestKeyLeakDetection_1]] - `uses` [INFERRED]
+- [[TestKeyLeakDetection]] - `uses` [INFERRED]
 - [[TestMediumSeverity]] - `uses` [INFERRED]
 - [[TestOutboundFilterResultBinding]] - `uses` [INFERRED]
 - [[TestPromptGuardToolResultTrustGate]] - `uses` [INFERRED]
@@ -40,11 +40,11 @@ tags:
 - [[_FakeAttack]] - `uses` [INFERRED]
 - [[_FakeIntegrityScore]] - `uses` [INFERRED]
 - [[pipeline.py]] - `imports` [EXTRACTED]
-- [[str]] - `inherits` [EXTRACTED]
+- [[str_2]] - `inherits` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 - [[test_tool_injection_scan.py]] - `imports` [EXTRACTED]
 - [[test_tool_result_injection.py]] - `imports` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `imports` [EXTRACTED]
 - [[tool_result_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Key_Vault__Audit_Chain
+#graphify/code #graphify/INFERRED #community/Signed_Instruction_Envelopes__Security_Pipeline

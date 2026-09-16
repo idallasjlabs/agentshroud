@@ -1,17 +1,19 @@
 ---
-source_file: "docs/vault/03 - Configuration/gitleaks.toml.md"
+source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "Community 1003"
-location: "L29"
+community: "Community 151"
+location: "L269"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1003
+  - community/Community_151
 ---
 
 # Integration
 
 ## Connections
-- [[gitleaks.toml_1]] - `contains` [EXTRACTED]
+- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
+- [[With 1Password]] - `contains` [EXTRACTED]
+- [[With AgentShroud Gateway]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1003
+#graphify/document #graphify/EXTRACTED #community/Community_151

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/system-architecture.md"
 type: "concept"
-community: "Community 372"
+community: "Community 256"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_372
+  - community/Community_256
 ---
 
 # Kill Switch (Monitor/Block/Isolate)
@@ -14,4 +14,4 @@ tags:
 - [[Approval Queue (SQLite)]] - `calls` [EXTRACTED]
 - [[Dashboard (WebSocket)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_372
+#graphify/concept #graphify/EXTRACTED #community/Community_256

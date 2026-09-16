@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md"
 type: "document"
-community: "Community 818"
+community: "Community 864"
 location: "L123"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_818
+  - community/Community_864
 ---
 
 # LOW Findings
@@ -19,4 +19,4 @@ tags:
 - [[R3-L5 Backup Files Contain Pre-Hardening Code]] - `contains` [EXTRACTED]
 - [[Round 3 New Findings]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_818
+#graphify/document #graphify/EXTRACTED #community/Community_864
