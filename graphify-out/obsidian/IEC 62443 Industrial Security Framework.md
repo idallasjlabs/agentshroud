@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/audit-specification.md"
 type: "document"
-community: "Community 92"
+community: "Community 457"
 location: "L401"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_92
+  - community/Community_457
 ---
 
 # IEC 62443 Industrial Security Framework
@@ -19,6 +19,5 @@ tags:
 - [[Security Levels Mapping]] - `contains` [EXTRACTED]
 - [[WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)]] - `references` [EXTRACTED]
 - [[audit-specification]] - `references` [EXTRACTED]
-- [[cve-mitigation-matrix]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_92
+#graphify/document #graphify/EXTRACTED #community/Community_457

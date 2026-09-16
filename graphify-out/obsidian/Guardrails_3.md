@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-hdev/SKILL.md"
+source_file: ".agents/skills/i-odev/SKILL.md"
 type: "document"
-community: "Community 291"
+community: "Community 302"
 location: "L478"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_291
+  - community/Community_302
 ---
 
 # Guardrails
 
 ## Connections
-- [[Skill Hermes Dev Workflow (HDEV)]] - `contains` [EXTRACTED]
+- [[Skill OpenClaw Dev Workflow (ODEV)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_291
+#graphify/document #graphify/EXTRACTED #community/Community_302

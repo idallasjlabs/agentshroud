@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Community 49"
+community: "Teams/Group Collaborator Responses"
 location: "L7968"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_49
+  - community/Teams/Group_Collaborator_Responses
 ---
 
 # Handle /setmode <group_id|user_id> <local_only|project_scoped|full_access> (owne
 
 ## Connections
-- [[._handle_setmode_command()]] - `rationale_for` [EXTRACTED]
+- [[dot-_handle_setmode_command()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_49
+#graphify/rationale #graphify/EXTRACTED #community/Teams/Group_Collaborator_Responses

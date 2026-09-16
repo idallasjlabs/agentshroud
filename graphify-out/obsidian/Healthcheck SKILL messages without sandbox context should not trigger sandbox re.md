@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Community 93"
+community: "Community 85"
 location: "L1567"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_93
+  - community/Community_85
 ---
 
 # Healthcheck SKILL messages without sandbox context should not trigger sandbox re
 
 ## Connections
-- [[.test_healthcheck_skill_error_without_sandbox_hint_is_not_rewritten()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_healthcheck_skill_error_without_sandbox_hint_is_not_rewritten()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_93
+#graphify/rationale #graphify/EXTRACTED #community/Community_85

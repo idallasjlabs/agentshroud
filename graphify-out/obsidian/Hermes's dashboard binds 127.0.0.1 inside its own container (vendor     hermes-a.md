@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "rationale"
-community: "Community 62"
+community: "Cross-Bot Trust & A2A Governance"
 location: "L339"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_62
+  - community/Cross-Bot_Trust__A2A_Governance
 ---
 
 # Hermes's dashboard binds 127.0.0.1 inside its own container (vendor     hermes-a
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestHermesDashboardBridgeReachability]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_62
+#graphify/rationale #graphify/EXTRACTED #community/Cross-Bot_Trust__A2A_Governance

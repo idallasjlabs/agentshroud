@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "rationale"
-community: "Ingest API & Approval Routes"
+community: "Community 100"
 location: "L509"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Ingest_API__Approval_Routes
+  - community/Community_100
 ---
 
 # Handler returns ok=True when called from 127.0.0.1.
 
 ## Connections
-- [[.test_alerts_accepted_from_localhost()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_alerts_accepted_from_localhost()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Ingest_API__Approval_Routes
+#graphify/rationale #graphify/EXTRACTED #community/Community_100

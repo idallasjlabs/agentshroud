@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md"
 type: "document"
-community: "Community 1054"
+community: "Community 1105"
 location: "L457"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1054
+  - community/Community_1105
 ---
 
 # Important Notes
@@ -20,4 +20,4 @@ tags:
 - [[Power Supply]] - `contains` [EXTRACTED]
 - [[Security Hardening Checklist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1054
+#graphify/document #graphify/EXTRACTED #community/Community_1105

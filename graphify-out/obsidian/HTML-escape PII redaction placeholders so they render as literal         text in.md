@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Community 70"
+community: "Collaborator Activity & Telegram Proxy"
 location: "L3203"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_70
+  - community/Collaborator_Activity__Telegram_Proxy
 ---
 
 # HTML-escape PII redaction placeholders so they render as literal         text in
 
 ## Connections
-- [[._escape_pii_placeholders()]] - `rationale_for` [EXTRACTED]
+- [[dot-_escape_pii_placeholders()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_70
+#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Activity__Telegram_Proxy

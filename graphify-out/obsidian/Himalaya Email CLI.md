@@ -1,26 +1,26 @@
 ---
 source_file: "skills/openclaw/himalaya/SKILL.md"
 type: "document"
-community: "Community 477"
+community: "Community 489"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_477
+  - community/Community_489
 ---
 
 # Himalaya Email CLI
 
 ## Connections
-- [[Attachments]] - `contains` [EXTRACTED]
+- [[Attachments_1]] - `contains` [EXTRACTED]
 - [[Common Operations]] - `contains` [EXTRACTED]
 - [[Configuration Setup]] - `contains` [EXTRACTED]
 - [[Debugging_1]] - `contains` [EXTRACTED]
 - [[Multiple Accounts]] - `contains` [EXTRACTED]
-- [[Output Formats_1]] - `contains` [EXTRACTED]
-- [[Prerequisites_14]] - `contains` [EXTRACTED]
-- [[References_4]] - `contains` [EXTRACTED]
-- [[SKILL_213]] - `contains` [EXTRACTED]
-- [[Tips_2]] - `contains` [EXTRACTED]
+- [[Output Formats]] - `contains` [EXTRACTED]
+- [[Prerequisites_10]] - `contains` [EXTRACTED]
+- [[References_5]] - `contains` [EXTRACTED]
+- [[Tips_4]] - `contains` [EXTRACTED]
+- [[himalayaSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_477
+#graphify/document #graphify/EXTRACTED #community/Community_489

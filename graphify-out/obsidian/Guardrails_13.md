@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-crpr/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-ab/SKILL.md"
 type: "document"
-community: "Community 611"
-location: "L254"
+community: "Community 628"
+location: "L226"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_611
+  - community/Community_628
 ---
 
 # Guardrails
 
 ## Connections
-- [[Skill Create PR with Pre-Flight Audit (CRPR)_2]] - `contains` [EXTRACTED]
+- [[Skill Audit Branch (AB) — Merge Regression Detection_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_611
+#graphify/document #graphify/EXTRACTED #community/Community_628

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Community 49"
+community: "Teams/Group Collaborator Responses"
 location: "L7941"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_49
+  - community/Teams/Group_Collaborator_Responses
 ---
 
 # Handle /rmfromgroup <user_id> <group_id> (owner or group admin).
 
 ## Connections
-- [[._handle_rmfromgroup_command()]] - `rationale_for` [EXTRACTED]
+- [[dot-_handle_rmfromgroup_command()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_49
+#graphify/rationale #graphify/EXTRACTED #community/Teams/Group_Collaborator_Responses

@@ -1,23 +1,23 @@
 ---
-source_file: "docker/config/hermes/skills/i-hermes/SKILL.md"
+source_file: ".agents/skills/i-hermes/SKILL.md"
 type: "document"
-community: "Community 954"
+community: "Community 987"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_954
+  - community/Community_987
 ---
 
 # Hermes — Reference Verifier
 
 ## Connections
-- [[Input Requirements_15]] - `contains` [EXTRACTED]
-- [[Output Format_17]] - `contains` [EXTRACTED]
-- [[Persona_11]] - `contains` [EXTRACTED]
-- [[Quality Checklist_13]] - `contains` [EXTRACTED]
-- [[Role_52]] - `contains` [EXTRACTED]
-- [[SKILL_88]] - `contains` [EXTRACTED]
-- [[System Prompt_11]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-hermesSKILL]] - `contains` [EXTRACTED]
+- [[Input Requirements_25]] - `contains` [EXTRACTED]
+- [[Output Format_40]] - `contains` [EXTRACTED]
+- [[Persona_19]] - `contains` [EXTRACTED]
+- [[Quality Checklist_22]] - `contains` [EXTRACTED]
+- [[Role_107]] - `contains` [EXTRACTED]
+- [[System Prompt_19]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_954
+#graphify/document #graphify/EXTRACTED #community/Community_987

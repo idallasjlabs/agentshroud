@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/TELEGRAM_GMAIL_SETUP.md"
 type: "document"
-community: "Community 219"
+community: "Community 222"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_219
+  - community/Community_222
 ---
 
 # If Bot Doesn't Respond
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Part 1 Test Telegram Bot]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_219
+#graphify/document #graphify/EXTRACTED #community/Community_222

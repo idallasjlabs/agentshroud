@@ -1,17 +1,17 @@
 ---
-source_file: "scripts/README.md"
+source_file: "dashboard/README.md"
 type: "document"
-community: "Community 555"
-location: "L47"
+community: "Community 931"
+location: "L55"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_555
+  - community/Community_931
 ---
 
 # Implementation Status
 
 ## Connections
-- [[Utility Scripts]] - `contains` [EXTRACTED]
+- [[AgentShroud Dashboard]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_555
+#graphify/document #graphify/EXTRACTED #community/Community_931

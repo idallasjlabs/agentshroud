@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-ab/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-aws/SKILL.md"
 type: "document"
-community: "Community 598"
-location: "L226"
+community: "Community 243"
+location: "L388"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_598
+  - community/Community_243
 ---
 
 # Guardrails
 
 ## Connections
-- [[Skill Audit Branch (AB) — Merge Regression Detection]] - `contains` [EXTRACTED]
+- [[AWS Cloud Management & FinOps Agent]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_598
+#graphify/document #graphify/EXTRACTED #community/Community_243

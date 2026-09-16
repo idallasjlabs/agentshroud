@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-production/SKILL.md"
 type: "document"
-community: "Community 525"
+community: "Community 532"
 location: "L132"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_525
+  - community/Community_532
 ---
 
 # Immediate (within 2 hours)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Post-Incident_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_525
+#graphify/document #graphify/EXTRACTED #community/Community_532

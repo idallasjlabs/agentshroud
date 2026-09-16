@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md"
 type: "document"
-community: "Community 345"
+community: "Community 349"
 location: "L59"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_345
+  - community/Community_349
 ---
 
 # HIGH Findings
@@ -16,4 +16,4 @@ tags:
 - [[R2-H1 1Password CLI Download Without Checksum Verification (Bot Dockerfile)]] - `contains` [EXTRACTED]
 - [[R2-H2 Bot Dockerfile Missing setuidsetgid Bit Stripping (CIS 4.8)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_345
+#graphify/document #graphify/EXTRACTED #community/Community_349

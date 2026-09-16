@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-production/SKILL.md"
 type: "document"
-community: "Community 525"
+community: "Community 532"
 location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_525
+  - community/Community_532
 ---
 
 # Incident Response Workflow
@@ -17,4 +17,4 @@ tags:
 - [[Phase 3 MITIGATE (Rollback First!)_2]] - `contains` [EXTRACTED]
 - [[Skill Incident Response (INCIDENT)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_525
+#graphify/document #graphify/EXTRACTED #community/Community_532

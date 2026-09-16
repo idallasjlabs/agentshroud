@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/IDENTITY.md"
+source_file: ".agents/skills/i-aws/SKILL.md"
 type: "document"
-community: "Community 830"
-location: "L1"
+community: "Community 299"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_830
+  - community/Community_299
 ---
 
-# IDENTITY.md
+# Identity
 
 ## Connections
-- [[Identity Reference - AgentShroud System]] - `contains` [EXTRACTED]
+- [[AWS Cloud Management & FinOps Agent_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_830
+#graphify/document #graphify/EXTRACTED #community/Community_299

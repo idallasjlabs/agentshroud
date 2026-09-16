@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/web_proxy.py"
 type: "rationale"
-community: "Community 22"
+community: "Egress Filter & HTTP Proxy"
 location: "L141"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_22
+  - community/Egress_Filter__HTTP_Proxy
 ---
 
 # HTTP web traffic proxy for OpenClaw.      Intercepts all outbound web requests,
 
 ## Connections
-- [[WebProxy_1]] - `rationale_for` [EXTRACTED]
+- [[WebProxy]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_22
+#graphify/rationale #graphify/EXTRACTED #community/Egress_Filter__HTTP_Proxy

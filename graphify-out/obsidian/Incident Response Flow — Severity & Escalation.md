@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/06-operations.md"
 type: "concept"
-community: "Community 951"
+community: "Community 994"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Community_951
+  - community/Community_994
 ---
 
 # Incident Response Flow — Severity & Escalation
@@ -15,4 +15,4 @@ tags:
 - [[Kill Switch (freeze  shutdown  disconnect)]] - `conceptually_related_to` [INFERRED]
 - [[Runbook  Decision Tree — On-Call Logic]] - `references` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Community_951
+#graphify/concept #graphify/INFERRED #community/Community_994

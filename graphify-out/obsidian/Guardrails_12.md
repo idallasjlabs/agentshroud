@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-aws/SKILL.md"
+source_file: "docker/config/hermes/skills/i-crpr/SKILL.md"
 type: "document"
-community: "Community 236"
-location: "L388"
+community: "Community 622"
+location: "L254"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_236
+  - community/Community_622
 ---
 
 # Guardrails
 
 ## Connections
-- [[AWS Cloud Management & FinOps Agent_1]] - `contains` [EXTRACTED]
+- [[Skill Create PR with Pre-Flight Audit (CRPR)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_236
+#graphify/document #graphify/EXTRACTED #community/Community_622

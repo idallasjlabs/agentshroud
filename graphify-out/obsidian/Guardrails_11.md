@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ab/SKILL.md"
+source_file: "docker/config/hermes/skills/i-ab/SKILL.md"
 type: "document"
-community: "Community 610"
+community: "Community 621"
 location: "L226"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_610
+  - community/Community_621
 ---
 
 # Guardrails
 
 ## Connections
-- [[Skill Audit Branch (AB) — Merge Regression Detection_2]] - `contains` [EXTRACTED]
+- [[Skill Audit Branch (AB) — Merge Regression Detection_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_610
+#graphify/document #graphify/EXTRACTED #community/Community_621

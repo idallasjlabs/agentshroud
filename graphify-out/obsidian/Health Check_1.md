@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/06 - Containers & Services/agentshroud-bot.md"
+source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Community 595"
-location: "L101"
+community: "Community 392"
+location: "L385"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_595
+  - community/Community_392
 ---
 
 # Health Check
 
 ## Connections
-- [[agentshroud-bot_1]] - `contains` [EXTRACTED]
+- [[Step 7 Verify Installation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_595
+#graphify/document #graphify/EXTRACTED #community/Community_392

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_bots_ssh_exec_wrapper.py"
 type: "rationale"
-community: "Community 140"
+community: "Community 149"
 location: "L130"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_140
+  - community/Community_149
 ---
 
 # Hermes' belt-and-suspenders tirith trust must be scoped, never blanket.      It
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_hermes_tirith_trust_is_scoped_not_blanket()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_140
+#graphify/rationale #graphify/EXTRACTED #community/Community_149

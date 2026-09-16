@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/heuristic_classifier.py"
 type: "rationale"
-community: "Community 52"
+community: "Community 43"
 location: "L84"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_52
+  - community/Community_43
 ---
 
 # Heuristic injection classifier using multi-signal analysis.      Scoring approac
 
 ## Connections
-- [[HeuristicClassifier]] - `rationale_for` [EXTRACTED]
+- [[HeuristicClassifier_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_52
+#graphify/rationale #graphify/EXTRACTED #community/Community_43

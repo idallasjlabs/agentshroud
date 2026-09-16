@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v1.0/ROADMAP-POST-v1.0.md"
+source_file: "docs/planning/redteam/v0.7.0-remediation-plan.md"
 type: "document"
-community: "Community 1065"
-location: "L33"
+community: "Community 402"
+location: "L232"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1065
+  - community/Community_402
 ---
 
 # Implementation Notes
 
 ## Connections
-- [[Apple Platform Integration]] - `contains` [EXTRACTED]
+- [[AgentShroud v0.7.0 — Red Team Remediation Plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1065
+#graphify/document #graphify/EXTRACTED #community/Community_402

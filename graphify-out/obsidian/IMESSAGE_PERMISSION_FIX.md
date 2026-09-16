@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/IMESSAGE_PERMISSION_FIX.md"
 type: "document"
-community: "Community 393"
+community: "Community 401"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_393
+  - community/Community_401
 ---
 
 # IMESSAGE_PERMISSION_FIX.md
@@ -16,4 +16,4 @@ tags:
 - [[OpenClaw Bot Container]] - `references` [EXTRACTED]
 - [[iMessage Permission Fix - Step by Step]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_393
+#graphify/document #graphify/EXTRACTED #community/Community_401

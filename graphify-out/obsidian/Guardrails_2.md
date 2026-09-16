@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-crpr/SKILL.md"
+source_file: ".agents/skills/i-hdev/SKILL.md"
 type: "document"
-community: "Community 599"
-location: "L254"
+community: "Community 300"
+location: "L478"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_599
+  - community/Community_300
 ---
 
 # Guardrails
 
 ## Connections
-- [[Skill Create PR with Pre-Flight Audit (CRPR)]] - `contains` [EXTRACTED]
+- [[Skill Hermes Dev Workflow (HDEV)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_599
+#graphify/document #graphify/EXTRACTED #community/Community_300

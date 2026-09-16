@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/IMESSAGE_PERMISSION_FIX.md"
 type: "document"
-community: "Community 393"
+community: "Community 401"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_393
+  - community/Community_401
 ---
 
 # How to Fix (5 Minutes)
@@ -18,4 +18,4 @@ tags:
 - [[Step 4 Verify from Docker]] - `contains` [EXTRACTED]
 - [[iMessage Permission Fix - Step by Step]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_393
+#graphify/document #graphify/EXTRACTED #community/Community_401

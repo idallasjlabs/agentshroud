@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/TELEGRAM_SETUP.md"
 type: "document"
-community: "Community 641"
+community: "Community 660"
 location: "L66"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_641
+  - community/Community_660
 ---
 
 # How Messages Flow
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Security Considerations_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_641
+#graphify/document #graphify/EXTRACTED #community/Community_660

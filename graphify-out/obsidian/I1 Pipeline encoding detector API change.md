@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-03-05.md"
 type: "document"
-community: "Community 768"
+community: "Community 807"
 location: "L78"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_768
+  - community/Community_807
 ---
 
 # I1: Pipeline encoding detector API change
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🟢 INFO (nice to have)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_768
+#graphify/document #graphify/EXTRACTED #community/Community_807

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-crpr/SKILL.md"
+source_file: "docker/config/hermes/skills/i-aws/SKILL.md"
 type: "document"
-community: "Community 607"
-location: "L254"
+community: "Community 404"
+location: "L388"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_607
+  - community/Community_404
 ---
 
 # Guardrails
 
 ## Connections
-- [[Skill Create PR with Pre-Flight Audit (CRPR)_1]] - `contains` [EXTRACTED]
+- [[AWS Cloud Management & FinOps Agent_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_607
+#graphify/document #graphify/EXTRACTED #community/Community_404

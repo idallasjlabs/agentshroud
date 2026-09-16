@@ -1,12 +1,12 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "Community 344"
+community: "Community 259"
 location: "L282"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_344
+  - community/Community_259
 ---
 
 # Hard constraints
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[7) AGENTSHROUD-SPECIFIC CONSTRAINTS]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_344
+#graphify/document #graphify/EXTRACTED #community/Community_259
