@@ -1,17 +1,22 @@
 ---
-source_file: "docs/setup/OPENCLAW_SETUP.md"
+source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
 type: "document"
-community: "Community 218"
-location: "L279"
+community: "Community 253"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_218
+  - community/Community_253
 ---
 
-# Architecture Overview
+# Architecture Overview.md
 
 ## Connections
-- [[OpenClaw Setup Guide - agentshroud.ai Bot]] - `contains` [EXTRACTED]
+- [[Architecture Overview_3]] - `contains` [EXTRACTED]
+- [[Data Flow]] - `references` [EXTRACTED]
+- [[Home]] - `references` [EXTRACTED]
+- [[Startup Sequence]] - `references` [EXTRACTED]
+- [[System Overview]] - `references` [EXTRACTED]
+- [[main.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_218
+#graphify/document #graphify/EXTRACTED #community/Community_253

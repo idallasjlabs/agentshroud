@@ -1,23 +1,40 @@
 ---
-source_file: "gateway/ingest_api/config.py"
+source_file: "gateway/security/audit_export.py"
 type: "code"
-community: "Community 43"
-location: "L275"
+community: "Ingest API & RBAC Core"
+location: "L25"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_43
+  - graphify/INFERRED
+  - community/Ingest_API__RBAC_Core
 ---
 
 # AuditExportConfig
 
 ## Connections
-- [[.model_post_init()]] - `method` [EXTRACTED]
-- [[BaseModel]] - `inherits` [EXTRACTED]
-- [[BotConfig]] - `uses` [INFERRED]
-- [[Configuration for compliance audit export functionality.]] - `rationale_for` [EXTRACTED]
-- [[SSHConfig]] - `uses` [INFERRED]
-- [[config.py]] - `contains` [EXTRACTED]
-- [[load_config()]] - `calls` [EXTRACTED]
+- [[dot-__init__()_38]] - `references` [EXTRACTED]
+- [[dot-__init__()_8]] - `method` [EXTRACTED]
+- [[dot-_default_jsonld_context()]] - `method` [EXTRACTED]
+- [[dot-export_config()]] - `calls` [EXTRACTED]
+- [[AuditEvent]] - `uses` [INFERRED]
+- [[AuditStore_1]] - `uses` [INFERRED]
+- [[AuthRequired]] - `uses` [INFERRED]
+- [[Configuration for audit export functionality.]] - `rationale_for` [EXTRACTED]
+- [[Exception]] - `uses` [INFERRED]
+- [[MCPProxyRequest]] - `uses` [INFERRED]
+- [[MCPResultRequest]] - `uses` [INFERRED]
+- [[OpProxyRequest]] - `uses` [INFERRED]
+- [[Request]] - `uses` [INFERRED]
+- [[SSHExecRequest_1]] - `uses` [INFERRED]
+- [[SSHWriteFileRequest_1]] - `uses` [INFERRED]
+- [[TestAuditEvent]] - `uses` [INFERRED]
+- [[TestAuditExporter]] - `uses` [INFERRED]
+- [[TestAuditStore]] - `uses` [INFERRED]
+- [[TestAuditStoreBotId]] - `uses` [INFERRED]
+- [[WebSocket]] - `uses` [INFERRED]
+- [[audit_export.py]] - `contains` [EXTRACTED]
+- [[ingest_apimain.py]] - `imports` [EXTRACTED]
+- [[soc_export()]] - `calls` [EXTRACTED]
+- [[test_audit_export.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_43
+#graphify/code #graphify/INFERRED #community/Ingest_API__RBAC_Core

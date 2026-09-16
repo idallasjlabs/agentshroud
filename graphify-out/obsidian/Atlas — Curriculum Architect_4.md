@@ -1,26 +1,26 @@
 ---
-source_file: "docker/config/openclaw/skills/i-atlas/SKILL.md"
+source_file: "docker/config/hermes/skills/i-atlas/SKILL.md"
 type: "document"
-community: "Community 524"
+community: "Community 876"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_524
+  - community/Community_876
 ---
 
 # Atlas — Curriculum Architect
 
 ## Connections
-- [[Input Requirements_22]] - `contains` [EXTRACTED]
-- [[OKE Channel — CPA Exam Context_1]] - `contains` [EXTRACTED]
-- [[Output Format_27]] - `contains` [EXTRACTED]
-- [[Persona_17]] - `contains` [EXTRACTED]
-- [[Quality Checklist_20]] - `contains` [EXTRACTED]
-- [[Role_79]] - `contains` [EXTRACTED]
-- [[SKILL_133]] - `contains` [EXTRACTED]
-- [[System Prompt_17]] - `contains` [EXTRACTED]
-- [[User Prompt Template_9]] - `contains` [EXTRACTED]
+- [[Input Requirements_20]] - `contains` [EXTRACTED]
+- [[OKE Channel — CPA Exam Context_2]] - `contains` [EXTRACTED]
+- [[Output Format_36]] - `contains` [EXTRACTED]
+- [[Persona_15]] - `contains` [EXTRACTED]
+- [[Quality Checklist_17]] - `contains` [EXTRACTED]
+- [[Role_92]] - `contains` [EXTRACTED]
+- [[System Prompt_15]] - `contains` [EXTRACTED]
+- [[User Prompt Template_8]] - `contains` [EXTRACTED]
 - [[User Prompt Template — OKE Channel_2]] - `contains` [EXTRACTED]
+- [[hermesskillsi-atlasSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_524
+#graphify/document #graphify/EXTRACTED #community/Community_876

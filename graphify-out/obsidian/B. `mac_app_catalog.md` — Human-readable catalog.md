@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-mac/SKILL.md"
 type: "document"
-community: "Community 1011"
+community: "Community 1054"
 location: "L307"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1011
+  - community/Community_1054
 ---
 
 # B. `mac_app_catalog.md` — Human-readable catalog
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Phase 5 — Output Generation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1011
+#graphify/document #graphify/EXTRACTED #community/Community_1054

@@ -1,22 +1,22 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
+source_file: "skills/custom/securebrowser/SKILL.md"
 type: "document"
-community: "Community 257"
-location: "L227"
+community: "Community 251"
+location: "L222"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_257
+  - community/Community_251
 ---
 
 # Best Practices
 
 ## Connections
-- [[1. Always Specify Risk Level_2]] - `contains` [EXTRACTED]
-- [[2. Use Allowlisting Liberally_2]] - `contains` [EXTRACTED]
-- [[3. Take Screenshots for Audit Trail_2]] - `contains` [EXTRACTED]
-- [[4. Handle CAPTCHAs Gracefully_2]] - `contains` [EXTRACTED]
-- [[5. Never Extract Credentials_2]] - `contains` [EXTRACTED]
-- [[Browser — Secure Browser Automation_5]] - `contains` [EXTRACTED]
+- [[1. Always Specify Risk Level_1]] - `contains` [EXTRACTED]
+- [[2. Use Allowlisting Liberally_1]] - `contains` [EXTRACTED]
+- [[3. Take Screenshots for Audit Trail_1]] - `contains` [EXTRACTED]
+- [[4. Handle CAPTCHAs Gracefully_1]] - `contains` [EXTRACTED]
+- [[5. Never Extract Credentials_1]] - `contains` [EXTRACTED]
+- [[SecureBrowser - Enterprise Secure Browser Automation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_257
+#graphify/document #graphify/EXTRACTED #community/Community_251

@@ -1,20 +1,20 @@
 ---
 source_file: "docker/config/hermes/skills/i-bs/README.md"
 type: "document"
-community: "Community 1177"
+community: "Community 1223"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1177
+  - community/Community_1223
 ---
 
 # Branding Specialist (BS)
 
 ## Connections
-- [[Purpose_42]] - `contains` [EXTRACTED]
-- [[README_47]] - `contains` [EXTRACTED]
-- [[Related Skills_45]] - `contains` [EXTRACTED]
-- [[Usage_48]] - `contains` [EXTRACTED]
+- [[Purpose_41]] - `contains` [EXTRACTED]
+- [[Related Skills_32]] - `contains` [EXTRACTED]
+- [[Usage_36]] - `contains` [EXTRACTED]
+- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1177
+#graphify/document #graphify/EXTRACTED #community/Community_1223

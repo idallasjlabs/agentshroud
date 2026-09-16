@@ -1,20 +1,20 @@
 ---
 source_file: ".agents/skills/i-atlas/README.md"
 type: "document"
-community: "Community 1141"
+community: "Community 1188"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1141
+  - community/Community_1188
 ---
 
 # Atlas — Curriculum Architect
 
 ## Connections
-- [[Purpose_2]] - `contains` [EXTRACTED]
-- [[README_2]] - `contains` [EXTRACTED]
-- [[Related Skills_2]] - `contains` [EXTRACTED]
-- [[Usage_3]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-atlasREADME]] - `contains` [EXTRACTED]
+- [[Purpose_12]] - `contains` [EXTRACTED]
+- [[Related Skills_3]] - `contains` [EXTRACTED]
+- [[Usage_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1141
+#graphify/document #graphify/EXTRACTED #community/Community_1188

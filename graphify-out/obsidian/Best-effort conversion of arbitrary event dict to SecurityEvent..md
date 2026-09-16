@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/event_adapter.py"
 type: "rationale"
-community: "SOC Collaborators"
+community: "Community 334"
 location: "L171"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_Collaborators
+  - community/Community_334
 ---
 
 # Best-effort conversion of arbitrary event dict to SecurityEvent.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[from_dict()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_Collaborators
+#graphify/rationale #graphify/EXTRACTED #community/Community_334

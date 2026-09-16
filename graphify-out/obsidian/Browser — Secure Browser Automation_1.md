@@ -1,29 +1,20 @@
 ---
-source_file: ".agents/skills/i-browser/SKILL.md"
+source_file: ".agents/skills/i-browser/README.md"
 type: "document"
-community: "Community 355"
-location: "L6"
+community: "Community 1190"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_355
+  - community/Community_1190
 ---
 
 # Browser — Secure Browser Automation
 
 ## Connections
-- [[10. Troubleshooting]] - `contains` [EXTRACTED]
-- [[Approval Integration]] - `contains` [EXTRACTED]
-- [[Audit Logging]] - `contains` [EXTRACTED]
-- [[Best Practices]] - `contains` [EXTRACTED]
-- [[Core Security Principles]] - `contains` [EXTRACTED]
-- [[Example Apple ID Creation (Semi-Automated)]] - `contains` [EXTRACTED]
-- [[Limitations]] - `contains` [EXTRACTED]
-- [[Risk Levels]] - `contains` [EXTRACTED]
-- [[SKILL_9]] - `contains` [EXTRACTED]
-- [[Security Architecture]] - `contains` [EXTRACTED]
-- [[Security Configuration]] - `contains` [EXTRACTED]
-- [[Security Guarantees]] - `contains` [EXTRACTED]
-- [[Usage_6]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-browserREADME]] - `contains` [EXTRACTED]
+- [[Purpose_14]] - `contains` [EXTRACTED]
+- [[Related Skills_5]] - `contains` [EXTRACTED]
+- [[Usage_9]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_355
+#graphify/document #graphify/EXTRACTED #community/Community_1190

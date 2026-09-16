@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/SECURITY_PLAN.md"
+source_file: "skills/openclaw/canvas/SKILL.md"
 type: "document"
-community: "Community 387"
-location: "L356"
+community: "Community 348"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_387
+  - community/Community_348
 ---
 
 # Architecture
 
 ## Connections
-- [[Current State (2026-02-24)]] - `contains` [EXTRACTED]
+- [[How It Works_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_387
+#graphify/document #graphify/EXTRACTED #community/Community_348

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/workspace/jira_dev_ticket.py"
+source_file: "gateway/tools/multi_host_test.py"
 type: "code"
-community: "Community 171"
-location: "L333"
+community: "Community 1300"
+location: "L264"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_171
+  - community/Community_1300
 ---
 
 # ArgumentParser
 
 ## Connections
-- [[_build_arg_parser()]] - `references` [EXTRACTED]
+- [[build_parser()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_171
+#graphify/code #graphify/EXTRACTED #community/Community_1300

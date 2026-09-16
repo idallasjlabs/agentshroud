@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-atlas/README.md"
 type: "document"
-community: "Community 651"
+community: "Community 672"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_651
+  - community/Community_672
 ---
 
 # Atlas README
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Atlas — Curriculum Architect_6]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_651
+#graphify/document #graphify/EXTRACTED #community/Community_672

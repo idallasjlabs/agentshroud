@@ -1,17 +1,17 @@
 ---
-source_file: "docs/claude-security-audit-prompt.md"
+source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
 type: "document"
-community: "Community 445"
-location: "L30"
+community: "Community 250"
+location: "L218"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_445
+  - community/Community_250
 ---
 
 # Architecture
 
 ## Connections
-- [[AgentShroud v0.8.0 — Full Security & Functionality Audit]] - `contains` [EXTRACTED]
+- [[7. Pi-hole DNS Security Layer (Built-In)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_445
+#graphify/document #graphify/EXTRACTED #community/Community_250

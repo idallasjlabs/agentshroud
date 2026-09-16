@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.9/release-notes-v0.9.0.md"
 type: "document"
-community: "Community 170"
+community: "Community 171"
 location: "L262"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_170
+  - community/Community_171
 ---
 
 # Breaking Changes and Migration
@@ -16,4 +16,4 @@ tags:
 - [[⚠️ Breaking Changes]] - `contains` [EXTRACTED]
 - [[🔄 Migration Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_170
+#graphify/document #graphify/EXTRACTED #community/Community_171

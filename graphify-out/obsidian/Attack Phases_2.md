@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec-offense/SKILL.md"
+source_file: "docker/config/hermes/skills/i-sec-offense/SKILL.md"
 type: "document"
-community: "Community 496"
+community: "Community 505"
 location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_496
+  - community/Community_505
 ---
 
 # Attack Phases
@@ -20,4 +20,4 @@ tags:
 - [[Phase 5 Exploitation Chains_2]] - `contains` [EXTRACTED]
 - [[Phase 6 Detection Validation_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_496
+#graphify/document #graphify/EXTRACTED #community/Community_505

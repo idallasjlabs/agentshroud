@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/alert_telegram_relay.py"
 type: "rationale"
-community: "Community 124"
+community: "Community 194"
 location: "L170"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_124
+  - community/Community_194
 ---
 
 # Await in-flight sends (test/shutdown helper).
 
 ## Connections
-- [[.flush()]] - `rationale_for` [EXTRACTED]
+- [[dot-flush()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_124
+#graphify/rationale #graphify/EXTRACTED #community/Community_194

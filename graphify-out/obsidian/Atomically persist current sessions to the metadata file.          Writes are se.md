@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "rationale"
-community: "Session Management"
+community: "Community 383"
 location: "L200"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Session_Management
+  - community/Community_383
 ---
 
 # Atomically persist current sessions to the metadata file.          Writes are se
 
 ## Connections
-- [[._save_sessions()]] - `rationale_for` [EXTRACTED]
+- [[dot-_save_sessions()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Session_Management
+#graphify/rationale #graphify/EXTRACTED #community/Community_383

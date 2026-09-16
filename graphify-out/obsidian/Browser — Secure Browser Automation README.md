@@ -1,13 +1,13 @@
 ---
 source_file: ".agents/skills/i-browser/README.md"
 type: "document"
-community: "Community 1752"
+community: "Community 1768"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1752
+  - community/Community_1768
 ---
 
 # Browser — Secure Browser Automation README
 
-#graphify/document #graphify/EXTRACTED #community/Community_1752
+#graphify/document #graphify/EXTRACTED #community/Community_1768

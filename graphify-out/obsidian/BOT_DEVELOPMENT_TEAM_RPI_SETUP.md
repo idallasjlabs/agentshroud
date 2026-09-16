@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md"
 type: "document"
-community: "Community 428"
+community: "Community 634"
 location: "L1"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Community_428
+  - community/Community_634
 ---
 
 # BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
@@ -16,4 +16,4 @@ tags:
 - [[IMESSAGE_FIX]] - `conceptually_related_to` [INFERRED]
 - [[container-policy]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Community_428
+#graphify/document #graphify/INFERRED #community/Community_634

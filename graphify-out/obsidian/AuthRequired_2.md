@@ -1,18 +1,22 @@
 ---
-source_file: "gateway/ingest_api/routes/dashboard.py"
+source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "Community 21"
-location: "L401"
+community: "Approval Routing & Event Bus"
+location: "L148"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_21
+  - community/Approval_Routing__Event_Bus
 ---
 
 # AuthRequired
 
 ## Connections
-- [[dashboard_stats()]] - `references` [EXTRACTED]
-- [[get_collaborators()]] - `references` [EXTRACTED]
+- [[RBACConfig_2]] - `uses` [INFERRED]
+- [[email_send()]] - `references` [EXTRACTED]
+- [[email_send_owner()]] - `references` [EXTRACTED]
+- [[forward_content()]] - `references` [EXTRACTED]
+- [[forward_content_stream()]] - `references` [EXTRACTED]
+- [[telegram_webhook()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_21
+#graphify/code #graphify/EXTRACTED #community/Approval_Routing__Event_Bus

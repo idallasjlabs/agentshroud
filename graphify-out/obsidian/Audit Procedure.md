@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-sec-defense/SKILL.md"
 type: "document"
-community: "Community 371"
+community: "Community 375"
 location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_371
+  - community/Community_375
 ---
 
 # Audit Procedure
@@ -19,4 +19,4 @@ tags:
 - [[Phase 4 Configuration Audit]] - `contains` [EXTRACTED]
 - [[Phase 5 Steve Hay's Specific Probes]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_371
+#graphify/document #graphify/EXTRACTED #community/Community_375

@@ -1,20 +1,20 @@
 ---
 source_file: "docker/config/openclaw/skills/i-bs/README.md"
 type: "document"
-community: "Community 1214"
+community: "Community 1261"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1214
+  - community/Community_1261
 ---
 
 # Branding Specialist (BS)
 
 ## Connections
-- [[Purpose_79]] - `contains` [EXTRACTED]
-- [[README_84]] - `contains` [EXTRACTED]
-- [[Related Skills_85]] - `contains` [EXTRACTED]
-- [[Usage_88]] - `contains` [EXTRACTED]
+- [[Purpose_78]] - `contains` [EXTRACTED]
+- [[Related Skills_69]] - `contains` [EXTRACTED]
+- [[Usage_73]] - `contains` [EXTRACTED]
+- [[openclawskillsi-bsREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1214
+#graphify/document #graphify/EXTRACTED #community/Community_1261

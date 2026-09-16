@@ -1,17 +1,19 @@
 ---
-source_file: "docs/architecture/per-agent-isolation.md"
+source_file: "docker/README.md"
 type: "document"
-community: "Community 702"
-location: "L16"
+community: "Community 203"
+location: "L107"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_702
+  - community/Community_203
 ---
 
 # Architecture
 
 ## Connections
-- [[Per-Agent Container Isolation Architecture]] - `contains` [EXTRACTED]
+- [[AgentShroud Docker Configuration]] - `contains` [EXTRACTED]
+- [[Container Stack]] - `contains` [EXTRACTED]
+- [[Security Features (Implemented)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_702
+#graphify/document #graphify/EXTRACTED #community/Community_203

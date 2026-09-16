@@ -1,22 +1,20 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "Community 256"
-location: "L227"
+community: "Community 202"
+location: "L296"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_256
+  - community/Community_202
 ---
 
 # Best Practices
 
 ## Connections
-- [[1. Always Specify Risk Level_1]] - `contains` [EXTRACTED]
-- [[2. Use Allowlisting Liberally_1]] - `contains` [EXTRACTED]
-- [[3. Take Screenshots for Audit Trail_1]] - `contains` [EXTRACTED]
-- [[4. Handle CAPTCHAs Gracefully_1]] - `contains` [EXTRACTED]
-- [[5. Never Extract Credentials_1]] - `contains` [EXTRACTED]
-- [[Browser — Secure Browser Automation_3]] - `contains` [EXTRACTED]
+- [[MCP-Specific_1]] - `contains` [EXTRACTED]
+- [[Organization_1]] - `contains` [EXTRACTED]
+- [[Security_2]] - `contains` [EXTRACTED]
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_256
+#graphify/document #graphify/EXTRACTED #community/Community_202

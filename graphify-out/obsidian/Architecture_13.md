@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/canvas/SKILL.md"
+source_file: "docs/vault/05 - Dependencies/presidio-analyzer.md"
 type: "document"
-community: "Community 343"
-location: "L15"
+community: "Community 978"
+location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_343
+  - community/Community_978
 ---
 
 # Architecture
 
 ## Connections
-- [[How It Works_3]] - `contains` [EXTRACTED]
+- [[Presidio Analyzer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_343
+#graphify/document #graphify/EXTRACTED #community/Community_978

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
 type: "concept"
-community: "Community 1045"
+community: "Community 1080"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1045
+  - community/Community_1080
 ---
 
 # Browser-Fetch Audit Logging
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[BROWSER_FETCH_SKILL]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1045
+#graphify/concept #graphify/EXTRACTED #community/Community_1080

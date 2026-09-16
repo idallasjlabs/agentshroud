@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-bs/SKILL.md"
 type: "concept"
-community: "Community 1034"
+community: "Community 723"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1034
+  - community/Community_723
 ---
 
 # Branding Specialist Skill (i-bs, external)
@@ -15,4 +15,4 @@ tags:
 - [[UI Expert (UI)]] - `references` [EXTRACTED]
 - [[UX Skill (i-ux, external)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1034
+#graphify/concept #graphify/EXTRACTED #community/Community_723

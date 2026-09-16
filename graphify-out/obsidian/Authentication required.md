@@ -1,17 +1,17 @@
 ---
 source_file: "docs/reference/PUBLISH-TO-CLAWHUB.md"
 type: "document"
-community: "Community 1262"
+community: "Community 1307"
 location: "L375"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1262
+  - community/Community_1307
 ---
 
 # "Authentication required"
 
 ## Connections
-- [[🆘 Troubleshooting_1]] - `contains` [EXTRACTED]
+- [[🆘 Troubleshooting]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1262
+#graphify/document #graphify/EXTRACTED #community/Community_1307

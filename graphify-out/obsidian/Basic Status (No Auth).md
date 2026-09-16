@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/08 - Runbooks/Health Checks.md"
 type: "document"
-community: "Community 740"
+community: "Community 772"
 location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_740
+  - community/Community_772
 ---
 
 # Basic Status (No Auth)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Gateway Health Endpoints]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_740
+#graphify/document #graphify/EXTRACTED #community/Community_772

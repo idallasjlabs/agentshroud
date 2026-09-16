@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/references/security-policies.md"
 type: "document"
-community: "Community 426"
+community: "Community 437"
 location: "L188"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_426
+  - community/Community_437
 ---
 
 # Audit Trail Standards
@@ -17,4 +17,4 @@ tags:
 - [[SecureBrowser Security Policies]] - `contains` [EXTRACTED]
 - [[What Gets Logged]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_426
+#graphify/document #graphify/EXTRACTED #community/Community_437

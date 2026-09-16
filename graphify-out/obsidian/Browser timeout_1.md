@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/SKILL.md"
+source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "Community 256"
-location: "L292"
+community: "Community 151"
+location: "L305"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_256
+  - community/Community_151
 ---
 
 # "Browser timeout"
 
 ## Connections
-- [[Troubleshooting_7]] - `contains` [EXTRACTED]
+- [[Troubleshooting_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_256
+#graphify/document #graphify/EXTRACTED #community/Community_151

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
 type: "rationale"
-community: "Community 1045"
+community: "Community 1080"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1045
+  - community/Community_1080
 ---
 
 # Browser-Fetch ClawHub Auto-Discovery Plan
@@ -14,4 +14,4 @@ tags:
 - [[BROWSER_FETCH_SKILL]] - `references` [EXTRACTED]
 - [[PUBLISH-TO-CLAWHUB]] - `conceptually_related_to` [INFERRED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1045
+#graphify/rationale #graphify/EXTRACTED #community/Community_1080

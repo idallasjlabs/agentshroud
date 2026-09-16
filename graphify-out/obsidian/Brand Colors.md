@@ -1,12 +1,12 @@
 ---
 source_file: "branding/README.md"
 type: "document"
-community: "Community 146"
+community: "Community 173"
 location: "L37"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_146
+  - community/Community_173
 ---
 
 # Brand Colors
@@ -17,4 +17,4 @@ tags:
 - [[Color Palette]] - `contains` [EXTRACTED]
 - [[Primary Color]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_146
+#graphify/document #graphify/EXTRACTED #community/Community_173

@@ -1,12 +1,12 @@
 ---
 source_file: ".github/COPILOT_CLI_SETUP.md"
 type: "document"
-community: "Community 1256"
+community: "Community 177"
 location: "L167"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1256
+  - community/Community_177
 ---
 
 # Basic Usage
@@ -18,4 +18,4 @@ tags:
 - [[Select Model]] - `contains` [EXTRACTED]
 - [[Start Interactive Session]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1256
+#graphify/document #graphify/EXTRACTED #community/Community_177

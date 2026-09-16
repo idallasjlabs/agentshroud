@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-07-data-flow.svg"
 type: "concept"
-community: "Community 414"
+community: "Community 217"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_414
+  - community/Community_217
 ---
 
 # Audit Ledger (SHA-256 hash only)
@@ -16,7 +16,7 @@ tags:
 - [[PII Sanitizer (Presidio + Regex)]] - `calls` [EXTRACTED]
 - [[PII Sanitizer (Presidio  regex)]] - `shares_data_with` [EXTRACTED]
 - [[SSH Proxy]] - `shares_data_with` [EXTRACTED]
-- [[TrustManager_5]] - `calls` [EXTRACTED]
+- [[TrustManager_4]] - `calls` [EXTRACTED]
 - [[ledger.db (90-day retention)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_414
+#graphify/concept #graphify/EXTRACTED #community/Community_217
