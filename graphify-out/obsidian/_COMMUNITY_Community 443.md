@@ -1,35 +1,36 @@
 ---
 type: community
 cohesion: 0.10
-members: 20
+members: 21
 ---
 
 # Community 443
 
 **Cohesion:** 0.10 - loosely connected
-**Members:** 20 nodes
+**Members:** 21 nodes
 
 ## Members
-- [[A. AWS Glue Jobs_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[B. AWS Step Functions_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[C. AWS Athena_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[D. PostgreSQL — RDS (`fe-gsdl-poc-database`)_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[E. MySQL — On-Site Zabbix Databases (200+ sites)_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[F. IAM Policies_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[G. Tailscale  Network_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[General Rules_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[H. Service Control for Production Testing_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[H.1 Pause Glue Jobs Before Testing_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[H.2 Pause Step Functions Before Testing_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[H.3 Database Tables for Test Data_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[H.4 Cleanup Verification Checklist_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[Objective_3]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[Output Format_21]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[Role_66]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[SKILL_109]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[Skill Quality Assurance (QA)_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[Testing Hierarchy_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
+- [[1. EgressTelegramNotifier — Little Snitch Inline Buttons]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[2. Approval Queue — Missing Telegram Notifications]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[3. OutputCanary — Not Passed to Pipeline]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[4. EnhancedToolResultSanitizer — Not Passed to Pipeline]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[5. LLMProxy — Never Instantiated]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[6. Callback Query Handler for Inline Buttons]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[7. KeyVault — Instantiated but Not Used]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[8. SidecarScanner — External Tool Interface]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[9. Audit Store Not Passed to Pipeline]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[AgentShroud v0.8.0 Watchtower — Comprehensive Wiring Audit]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[Executive Summary_11]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[Fix Priority List]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[Inbound Request Path (middleware.py → process_request)]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[Infrastructure (lifespan.py — initialized at startup)]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[Outbound Path (middleware.py)]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[Pipeline (pipeline.py → process_inbound  process_outbound)]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[Revised Summary]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[v0.8.0-wiring-audit]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[✅ CONFIRMED WIRED AND WORKING]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[🔴 CRITICAL — Not Wired (code exists, tests pass, but NOT running in production)]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[🟡 MEDIUM — Partially Wired or Degraded]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,3 +38,9 @@ members: 20
 TABLE source_file, type FROM #community/Community_443
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 372]]
+
+## Top bridge nodes
+- [[AgentShroud v0.8.0 Watchtower — Comprehensive Wiring Audit]] - degree 8, connects to 1 community

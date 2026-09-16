@@ -1,39 +1,39 @@
 ---
 type: community
-cohesion: 0.08
+cohesion: 0.17
 members: 24
 ---
 
 # Community 365
 
-**Cohesion:** 0.08 - loosely connected
+**Cohesion:** 0.17 - loosely connected
 **Members:** 24 nodes
 
 ## Members
-- [[.setup_method()_23]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_build()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_build_with_args()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_compose_down()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_compose_up()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_exec()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_health_check_fail()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_health_check_ok()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_inspect()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_logs()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_network_create()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_network_create_internal()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_pause_unpause()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_ps()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_ps_empty()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_pull()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_push()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_rm()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_rm_force()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_run_basic()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_run_with_options()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_stop()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_volume_create()]] - code - gateway/tests/test_runtime_engines.py
-- [[TestDockerEngine]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_archived_rows_preserved_verbatim()]] - code - gateway/tests/test_audit_archive.py
+- [[dot-test_archives_only_events_older_than_cutoff()]] - code - gateway/tests/test_audit_archive.py
+- [[dot-test_live_forward_chain_still_valid_after_archival()]] - code - gateway/tests/test_audit_archive.py
+- [[dot-test_missing_db_is_reported_not_raised()]] - code - gateway/tests/test_audit_archive.py
+- [[dot-test_no_events_to_archive_is_a_noop()]] - code - gateway/tests/test_audit_archive.py
+- [[dot-test_no_vacuum_flag_skips_vacuum()]] - code - gateway/tests/test_audit_archive.py
+- [[dot-test_running_twice_is_idempotent()]] - code - gateway/tests/test_audit_archive.py
+- [[dot-test_vacuum_failure_does_not_discard_a_successful_archive()]] - code - gateway/tests/test_audit_archive.py
+- [[dot-test_vacuum_reduces_file_size_after_bulk_delete()]] - code - gateway/tests/test_audit_archive.py
+- [[dot-test_waits_out_a_concurrent_writer_lock_instead_of_failing()]] - code - gateway/tests/test_audit_archive.py
+- [[A full disk (or any VACUUM-specific OperationalError) must not         raise pas]] - rationale - gateway/tests/test_audit_archive.py
+- [[Build n chained events, oldest first, spaced spacing_days apart ending at `start]] - rationale - gateway/tests/test_audit_archive.py
+- [[Move audit_events older than cutoff_days into archive_path, then delete + VACUUM]] - rationale - gateway/security/audit_archive.py
+- [[Path_37]] - code - gateway/security/audit_archive.py
+- [[TestArchiveOldEvents]] - code - gateway/tests/test_audit_archive.py
+- [[The remaining live rows' own internal chain (row N's prev_hash ==         row N-]] - rationale - gateway/tests/test_audit_archive.py
+- [[_chain_events()]] - code - gateway/tests/test_audit_archive.py
+- [[_cli()]] - code - gateway/security/audit_archive.py
+- [[_make_live_db()]] - code - gateway/tests/test_audit_archive.py
+- [[archive_old_events()]] - code - gateway/security/audit_archive.py
+- [[audit.db uses SQLite's default DELETE journal mode, which requires         an ex]] - rationale - gateway/tests/test_audit_archive.py
+- [[audit_archive.py]] - code - gateway/security/audit_archive.py
+- [[datetime_4]] - code - gateway/security/audit_archive.py
+- [[events list of (event_id, timestamp, prev_hash, entry_hash).]] - rationale - gateway/tests/test_audit_archive.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -43,12 +43,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 329]]
-- 2 edges to [[_COMMUNITY_Community 320]]
-- 1 edge to [[_COMMUNITY_Community 325]]
-- 1 edge to [[_COMMUNITY_Community 348]]
-- 1 edge to [[_COMMUNITY_Community 207]]
+- 7 edges to [[_COMMUNITY_Community 809]]
+- 1 edge to [[_COMMUNITY_Community 112]]
 
 ## Top bridge nodes
-- [[TestDockerEngine]] - degree 29, connects to 5 communities
-- [[.setup_method()_23]] - degree 2, connects to 1 community
+- [[archive_old_events()]] - degree 17, connects to 2 communities
+- [[TestArchiveOldEvents]] - degree 11, connects to 1 community
+- [[_chain_events()]] - degree 10, connects to 1 community
+- [[_make_live_db()]] - degree 10, connects to 1 community
+- [[audit_archive.py]] - degree 4, connects to 1 community

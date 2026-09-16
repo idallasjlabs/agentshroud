@@ -1,37 +1,37 @@
 ---
 type: community
-cohesion: 0.10
+cohesion: 0.09
 members: 22
 ---
 
 # Community 406
 
-**Cohesion:** 0.10 - loosely connected
+**Cohesion:** 0.09 - loosely connected
 **Members:** 22 nodes
 
 ## Members
-- [[.__init__()_198]] - code - gateway/web/dashboard_endpoints.py
-- [[LogBuffer]] - code - gateway/web/dashboard_endpoints.py
-- [[Ring buffer for recent logaudit entries.]] - rationale - gateway/web/dashboard_endpoints.py
-- [[When pipeline exists, stats should reflect its data.]] - rationale - gateway/tests/test_dashboard_endpoints.py
-- [[auth_headers()_1]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[tail parameter is clamped to 1-100.]] - rationale - gateway/tests/test_dashboard_endpoints.py
-- [[test_alerts_summary_empty()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_alerts_summary_requires_auth()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_alerts_summary_with_alerts()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_dashboard_endpoints.py]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_log_buffer_ring()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_log_buffer_tail()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_logs_recent_requires_auth()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_logs_recent_returns_entries()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_logs_recent_tail_clamped()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_logs_recent_tail_param()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_proxy_status_includes_pipeline_stats()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_proxy_status_requires_auth()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_proxy_status_returns_stats()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_ssh_hosts_online()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_ssh_hosts_requires_auth()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_ssh_hosts_returns_hosts()]] - code - gateway/tests/test_dashboard_endpoints.py
+- [[ASCII Art (fallback — no renderer available)_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[Anti-Patterns to Flag_14]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[Architecture (C4  block) — System boundaries and components_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[Brand Theme Block (Mermaid)_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[Core Discipline Understand → Diagram → Validate → Export_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[Data Flow — How data moves and transforms_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[Dependencies_15]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[Diagram Types and Data Lakehouse Examples_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[ER Diagram — Table relationships and control schema_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[File and Directory Conventions_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[Gantt — Daily pipeline schedule_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[Online renderer_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[Render locally with mmdc_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[Rendering and Export_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[Role_39]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[Rules_16]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[Sequence — Order of operations between systems_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[Skill Technical Illustrator (TI)_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[State Diagram — Job or process lifecycle_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[Validate syntax without exporting_2]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[Validation Checklist_8]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[openclawskillsi-tiSKILL]] - document - docker/config/openclaw/skills/i-ti/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,11 +39,3 @@ members: 22
 TABLE source_file, type FROM #community/Community_406
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 5 edges to [[_COMMUNITY_Community 273]]
-- 1 edge to [[_COMMUNITY_Community 884]]
-
-## Top bridge nodes
-- [[test_dashboard_endpoints.py]] - degree 20, connects to 2 communities
-- [[LogBuffer]] - degree 8, connects to 1 community

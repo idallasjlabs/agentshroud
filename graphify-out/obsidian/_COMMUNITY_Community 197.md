@@ -1,51 +1,52 @@
 ---
 type: community
-cohesion: 0.06
-members: 36
+cohesion: 0.05
+members: 37
 ---
 
 # Community 197
 
-**Cohesion:** 0.06 - loosely connected
-**Members:** 36 nodes
+**Cohesion:** 0.05 - loosely connected
+**Members:** 37 nodes
 
 ## Members
-- [[Limit param caps the number of returned items.]] - rationale - gateway/tests/test_soc_egress_endpoints.py
-- [[Returns empty result when scanner_result_history is empty.]] - rationale - gateway/tests/test_soc_egress_endpoints.py
-- [[Returns scanner events from app_state.scanner_result_history.]] - rationale - gateway/tests/test_soc_egress_endpoints.py
-- [[Status query param filters by summary.status.]] - rationale - gateway/tests/test_soc_egress_endpoints.py
-- [[Synthetic v1modelsid shim for hermes v0.16.0 OAuth-token preflight incompatibility]] - rationale - gateway/tests/test_v1_models_synthetic.py
-- [[TestClient with a stubbed proxy IP that passes the network allowlist.]] - rationale - gateway/tests/test_v1_models_synthetic.py
-- [[app_state]] - code - gateway/ingest_api/main.py
-- [[client()_18]] - code - gateway/tests/test_v1_models_synthetic.py
-- [[test_manage_egress_add_remove_rule_and_risk()]] - code - gateway/tests/test_soc_egress_endpoints.py
-- [[test_manage_egress_emergency_toggle()]] - code - gateway/tests/test_soc_egress_endpoints.py
-- [[test_manage_egress_log_endpoint()]] - code - gateway/tests/test_soc_egress_endpoints.py
-- [[test_manage_egress_pending_endpoint_includes_summary()]] - code - gateway/tests/test_soc_egress_endpoints.py
-- [[test_manage_egress_rules_endpoint()]] - code - gateway/tests/test_soc_egress_endpoints.py
-- [[test_manage_privacy_policy_and_audit_endpoints()]] - code - gateway/tests/test_soc_egress_endpoints.py
-- [[test_manage_scan_all_endpoint()]] - code - gateway/tests/test_soc_egress_endpoints.py
-- [[test_manage_scanners_history_endpoint()]] - code - gateway/tests/test_soc_egress_endpoints.py
-- [[test_manage_scanners_summary_endpoint()]] - code - gateway/tests/test_soc_egress_endpoints.py
-- [[test_manage_soc_correlation_endpoint()]] - code - gateway/tests/test_soc_egress_endpoints.py
-- [[test_manage_soc_events_endpoint()]] - code - gateway/tests/test_soc_egress_endpoints.py
-- [[test_manage_soc_export_endpoint()]] - code - gateway/tests/test_soc_egress_endpoints.py
-- [[test_manage_soc_export_invalid_format()]] - code - gateway/tests/test_soc_egress_endpoints.py
-- [[test_manage_soc_report_endpoint()]] - code - gateway/tests/test_soc_egress_endpoints.py
-- [[test_manage_soc_report_falls_back_to_contributor_logs()]] - code - gateway/tests/test_soc_egress_endpoints.py
-- [[test_outbound_quarantine_endpoints()]] - code - gateway/tests/test_soc_egress_endpoints.py
-- [[test_quarantine_list_endpoint()]] - code - gateway/tests/test_soc_egress_endpoints.py
-- [[test_quarantine_release_and_discard_flow()]] - code - gateway/tests/test_soc_egress_endpoints.py
-- [[test_quarantine_summary_endpoint()]] - code - gateway/tests/test_soc_egress_endpoints.py
-- [[test_soc_egress_endpoints.py]] - code - gateway/tests/test_soc_egress_endpoints.py
-- [[test_soc_scanners_recent_empty()]] - code - gateway/tests/test_soc_egress_endpoints.py
-- [[test_soc_scanners_recent_limit()]] - code - gateway/tests/test_soc_egress_endpoints.py
-- [[test_soc_scanners_recent_returns_history()]] - code - gateway/tests/test_soc_egress_endpoints.py
-- [[test_soc_scanners_recent_status_filter()]] - code - gateway/tests/test_soc_egress_endpoints.py
-- [[test_v1_messages_still_goes_through_proxy()]] - code - gateway/tests/test_v1_models_synthetic.py
-- [[test_v1_models_get_returns_synthetic_200()]] - code - gateway/tests/test_v1_models_synthetic.py
-- [[test_v1_models_post_still_goes_through_proxy()]] - code - gateway/tests/test_v1_models_synthetic.py
-- [[test_v1_models_synthetic.py]] - code - gateway/tests/test_v1_models_synthetic.py
+- [[1. Authentication Events (AUTH)]] - document - docs/security/audit-specification.md
+- [[2. Authorization Events (AUTHZ)]] - document - docs/security/audit-specification.md
+- [[3. Security Events (SEC)]] - document - docs/security/audit-specification.md
+- [[4. Data Events (DATA)]] - document - docs/security/audit-specification.md
+- [[5. System Events (SYS)]] - document - docs/security/audit-specification.md
+- [[A.12.4 Logging and Monitoring]] - document - docs/security/audit-specification.md
+- [[Advanced Search Query]] - document - docs/security/audit-specification.md
+- [[AgentShroud Audit Specification]] - document - docs/security/audit-specification.md
+- [[Archival Process]] - document - docs/security/audit-specification.md
+- [[Audit Event Types and Schema]] - document - docs/security/audit-specification.md
+- [[Audit System Performance Metrics]] - document - docs/security/audit-specification.md
+- [[Basic Event Query]] - document - docs/security/audit-specification.md
+- [[Block Structure]] - document - docs/security/audit-specification.md
+- [[Chain Architecture]] - document - docs/security/audit-specification.md
+- [[Chain Verification Query]] - document - docs/security/audit-specification.md
+- [[Compliance Mapping]] - document - docs/security/audit-specification.md
+- [[Core Event Categories]] - document - docs/security/audit-specification.md
+- [[GDPR Article 30 Record Keeping]] - document - docs/security/audit-specification.md
+- [[Genesis Block Specification]] - document - docs/security/audit-specification.md
+- [[Hash Calculation Algorithm]] - document - docs/security/audit-specification.md
+- [[Hash Chain Structure]] - document - docs/security/audit-specification.md
+- [[ISO 27001 Control Objectives]] - document - docs/security/audit-specification.md
+- [[Internal Controls Documentation]] - document - docs/security/audit-specification.md
+- [[Overview_2]] - document - docs/security/audit-specification.md
+- [[Performance and Scalability]] - document - docs/security/audit-specification.md
+- [[Processing Activities Register]] - document - docs/security/audit-specification.md
+- [[Query API Specification]] - document - docs/security/audit-specification.md
+- [[Query Capabilities]] - document - docs/security/audit-specification.md
+- [[Query Response Format]] - document - docs/security/audit-specification.md
+- [[Real-Time Event Streaming]] - document - docs/security/audit-specification.md
+- [[Retention Policies]] - document - docs/security/audit-specification.md
+- [[SOX Compliance (Section 404)]] - document - docs/security/audit-specification.md
+- [[Tier 1 Critical Security Events (7 Years)]] - document - docs/security/audit-specification.md
+- [[Tier 2 Operational Events (3 Years)]] - document - docs/security/audit-specification.md
+- [[Tier 3 Debug and Diagnostic Events (1 Year)]] - document - docs/security/audit-specification.md
+- [[Tier 4 High-Volume Events (90 Days)]] - document - docs/security/audit-specification.md
+- [[Tier-Based Retention Strategy]] - document - docs/security/audit-specification.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -55,13 +56,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 21]]
-- 1 edge to [[_COMMUNITY_Community 42]]
-- 1 edge to [[_COMMUNITY_Community 884]]
-- 1 edge to [[_COMMUNITY_Community 24]]
+- 1 edge to [[_COMMUNITY_Community 271]]
+- 1 edge to [[_COMMUNITY_Community 457]]
 
 ## Top bridge nodes
-- [[test_soc_egress_endpoints.py]] - degree 25, connects to 2 communities
-- [[test_manage_soc_report_endpoint()]] - degree 4, connects to 2 communities
-- [[client()_18]] - degree 3, connects to 1 community
-- [[test_manage_soc_events_endpoint()]] - degree 2, connects to 1 community
+- [[AgentShroud Audit Specification]] - degree 8, connects to 1 community
+- [[Compliance Mapping]] - degree 5, connects to 1 community

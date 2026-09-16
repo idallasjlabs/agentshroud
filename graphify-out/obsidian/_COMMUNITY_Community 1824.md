@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[--watch debounce avoids per-file rebuild storms]] - rationale - docker/config/hermes/skills/graphify/references/add-watch.md
+- [[agentshroud-soc Cargo package]] - document - cli/Cargo.toml
 
 ## Live Query (requires Dataview plugin)
 

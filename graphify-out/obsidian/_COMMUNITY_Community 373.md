@@ -1,38 +1,39 @@
 ---
 type: community
-cohesion: 0.09
-members: 23
+cohesion: 0.13
+members: 24
 ---
 
 # Community 373
 
-**Cohesion:** 0.09 - loosely connected
-**Members:** 23 nodes
+**Cohesion:** 0.13 - loosely connected
+**Members:** 24 nodes
 
 ## Members
-- [[3B.1 Create killswitch.sh ✅]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
-- [[Created]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
-- [[DM Policy Allowlist Configuration]] - concept - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
-- [[Disable seccomp (if causing startup failures)]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
-- [[Emergency container access]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
-- [[Files Changed]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
-- [[Gateway Password Moved to Docker Secrets]] - rationale - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
-- [[Kill Switch (freeze  shutdown  disconnect)]] - concept - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
-- [[Modified]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
-- [[NET_RAW Capability Removal]] - rationale - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
-- [[Next Steps_2]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
-- [[No Changes (Already Correct)]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
-- [[PHASE_3A_3B_IMPLEMENTATION]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
-- [[Phase 3A Testing]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
-- [[Phase 3B.1 Testing]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
-- [[Phase 3B.1 Kill Switch (COMPLETE)]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
-- [[Pre-Test Preparation]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
-- [[Re-enable Seccomp Profiles (ARM64 syscalls)]] - rationale - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
-- [[Restore hardcoded gateway password (if secret mounting fails)]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
-- [[Rollback Plan]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
-- [[Security Improvements Summary]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
-- [[Testing Checklist]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
-- [[verify-security.sh (13 Security Checks)]] - concept - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[Acceptance]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[AgentShroud v1.2.0 Master Plan]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[B.1 — Lock the lead 26+ modules]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[B.2 — Strengthen the report pipeline itself]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Cross-cutting branches + PR train]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Intent]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Module surface to extend]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Open clarifications before coding starts]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Open question (planning-only — decide before coding)]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Out of scope]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Out of scope for v1.2.0]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Phases]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Source of truth]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Surface to extend]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Tests to add]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Tracking + cadence]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Why v1.2.0]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Workstream A Groups and Teamwork in OpenClaw]] - concept - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Workstream B Security Features from Competitive Intel]] - concept - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Workstream C Full Local-Model Parity (Both Bots)]] - concept - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Workstream D — Sync agentsskillsMCP from `~.llm_settings` into both bots]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Workstream D Sync SkillsMCP from ~.llm_settings]] - concept - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Workstream E Blue and Red Team Security Scan (Both Bots)]] - concept - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[v1.2.0-master-plan]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -42,16 +43,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 137]]
-- 2 edges to [[_COMMUNITY_Community 951]]
-- 1 edge to [[_COMMUNITY_Community 883]]
-- 1 edge to [[_COMMUNITY_Community 442]]
-- 1 edge to [[_COMMUNITY_Community 702]]
-- 1 edge to [[_COMMUNITY_Community 19]]
+- 4 edges to [[_COMMUNITY_Community 788]]
 
 ## Top bridge nodes
-- [[PHASE_3A_3B_IMPLEMENTATION]] - degree 14, connects to 2 communities
-- [[Kill Switch (freeze  shutdown  disconnect)]] - degree 3, connects to 2 communities
-- [[DM Policy Allowlist Configuration]] - degree 2, connects to 1 community
-- [[Gateway Password Moved to Docker Secrets]] - degree 2, connects to 1 community
-- [[NET_RAW Capability Removal]] - degree 2, connects to 1 community
+- [[AgentShroud v1.2.0 Master Plan]] - degree 13, connects to 1 community
+- [[Workstream A Groups and Teamwork in OpenClaw]] - degree 7, connects to 1 community
+- [[Workstream B Security Features from Competitive Intel]] - degree 7, connects to 1 community
+- [[Workstream E Blue and Red Team Security Scan (Both Bots)]] - degree 7, connects to 1 community

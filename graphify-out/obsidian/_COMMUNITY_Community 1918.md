@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Voice Gateway Uvicorn Entrypoint (port 8765, WS ping disabled)]] - code - voice_gateway/__main__.py
+- [[ota.c (self-update over HTTPS)]] - code - firmware/voice-terminal/main/ota.c
 
 ## Live Query (requires Dataview plugin)
 

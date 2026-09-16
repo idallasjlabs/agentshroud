@@ -1,34 +1,34 @@
 ---
 type: community
-cohesion: 0.11
+cohesion: 0.12
 members: 19
 ---
 
 # Community 475
 
-**Cohesion:** 0.11 - loosely connected
+**Cohesion:** 0.12 - loosely connected
 **Members:** 19 nodes
 
 ## Members
-- [[.test_clean_fresh_and_stale_reports()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_clean_no_report_three()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_critical_high_medium_branches()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_failures_score_two()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_fresh_clean_is_optimizing()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_malware_30h_old_scan_measured()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_malware_fresh_scan_optimizing()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_malware_running_but_nothing_scanned()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_not_run_no_binary()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_oscap_binary_present_not_run()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_runtime_noncritical_findings_scores_four()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_stale_report_caps_at_one()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_two_day_old_clean_is_measured()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[Path_37]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[Set a file's mtime to `hours` hours in the past.]] - rationale - gateway/tests/test_scanner_integration_coverage.py
-- [[TestComplianceAuditing]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestRuntimeProtectionAndMalware]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestVulnerabilityManagement]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[_age()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-do_request()]] - code - docker/bots/hermes/patch_telegram_do_request.py
+- [[dot-from_dict()_5]] - code - gateway/runtime/config.py
+- [[dot-from_env()]] - code - gateway/runtime/config.py
+- [[dot-from_env()_1]] - code - gateway/security/killswitch_config.py
+- [[dot-from_env()_2]] - code - gateway/security/memory_config.py
+- [[dot-from_file()]] - code - gateway/skills/manifest.py
+- [[dot-from_source()]] - code - gateway/skills/manifest.py
+- [[Build a ManifestEntry by reading path from disk.]] - rationale - gateway/skills/manifest.py
+- [[Build a manifest by walking source (``~.llm_settings``).          Raises]] - rationale - gateway/skills/manifest.py
+- [[Create configuration from environment variables.]] - rationale - gateway/security/memory_config.py
+- [[Load configuration from environment variables.]] - rationale - gateway/runtime/config.py
+- [[Load configuration from environment variables._1]] - rationale - gateway/security/killswitch_config.py
+- [[Load from a config dictionary (e.g. from YAML).]] - rationale - gateway/runtime/config.py
+- [[PTB HTTPXRequest __slots__ Crash-Loop Fix Rationale]] - rationale - docker/bots/hermes/patch_telegram_do_request.py
+- [[Path_43]] - code - gateway/skills/manifest.py
+- [[_Instr]] - code - docker/bots/hermes/patch_telegram_do_request.py
+- [[_wrapped()]] - code - docker/bots/hermes/patch_telegram_do_request.py
+- [[cls]] - code
+- [[patch_telegram_do_request.py]] - code - docker/bots/hermes/patch_telegram_do_request.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -38,13 +38,26 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_Community 193]]
-- 4 edges to [[_COMMUNITY_Community 288]]
-- 1 edge to [[_COMMUNITY_Community 1276]]
+- 4 edges to [[_COMMUNITY_Community 247]]
+- 2 edges to [[_COMMUNITY_Memory Integrity & Lifecycle]]
+- 2 edges to [[_COMMUNITY_Community 97]]
+- 2 edges to [[_COMMUNITY_Community 808]]
+- 1 edge to [[_COMMUNITY_Encrypted Store & Drift Detector]]
+- 1 edge to [[_COMMUNITY_Community 276]]
+- 1 edge to [[_COMMUNITY_Community 289]]
+- 1 edge to [[_COMMUNITY_Agent Isolation & Group Config Tests]]
+- 1 edge to [[_COMMUNITY_Community 35]]
+- 1 edge to [[_COMMUNITY_Community 42]]
+- 1 edge to [[_COMMUNITY_Community 89]]
+- 1 edge to [[_COMMUNITY_Cross-Bot Trust & A2A Governance]]
+- 1 edge to [[_COMMUNITY_Community 74]]
+- 1 edge to [[_COMMUNITY_Community 88]]
+- 1 edge to [[_COMMUNITY_Community 57]]
+- 1 edge to [[_COMMUNITY_Community 747]]
 
 ## Top bridge nodes
-- [[_age()]] - degree 7, connects to 2 communities
-- [[TestComplianceAuditing]] - degree 6, connects to 1 community
-- [[TestRuntimeProtectionAndMalware]] - degree 5, connects to 1 community
-- [[TestVulnerabilityManagement]] - degree 5, connects to 1 community
-- [[.test_clean_fresh_and_stale_reports()]] - degree 3, connects to 1 community
+- [[cls]] - degree 20, connects to 12 communities
+- [[Path_43]] - degree 5, connects to 2 communities
+- [[dot-from_file()]] - degree 5, connects to 1 community
+- [[dot-from_source()]] - degree 5, connects to 1 community
+- [[dot-from_dict()_5]] - degree 3, connects to 1 community

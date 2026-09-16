@@ -1,48 +1,48 @@
 ---
 type: community
-cohesion: 0.06
+cohesion: 0.07
 members: 33
 ---
 
 # Community 228
 
-**Cohesion:** 0.06 - loosely connected
+**Cohesion:** 0.07 - loosely connected
 **Members:** 33 nodes
 
 ## Members
-- [[.test_allowed_recipient_response_has_sanitized_body()]] - code - gateway/tests/test_channel_ownership.py
-- [[.test_allowed_recipient_returns_200()]] - code - gateway/tests/test_channel_ownership.py
-- [[.test_empty_payload_returns_200()]] - code - gateway/tests/test_channel_ownership.py
-- [[.test_missing_required_fields_returns_422()]] - code - gateway/tests/test_channel_ownership.py
-- [[.test_missing_to_returns_422()]] - code - gateway/tests/test_channel_ownership.py
-- [[.test_non_json_body_returns_200()]] - code - gateway/tests/test_channel_ownership.py
-- [[.test_owner_body_not_redacted()]] - code - gateway/tests/test_channel_ownership.py
-- [[.test_passthrough_status_without_pipeline()]] - code - gateway/tests/test_channel_ownership.py
-- [[.test_pii_redacted_for_unknown_recipient()]] - code - gateway/tests/test_channel_ownership.py
-- [[.test_requires_auth()_1]] - code - gateway/tests/test_channel_ownership.py
-- [[.test_requires_auth()]] - code - gateway/tests/test_channel_ownership.py
-- [[.test_response_has_status_field()]] - code - gateway/tests/test_channel_ownership.py
-- [[.test_response_has_timestamp()]] - code - gateway/tests/test_channel_ownership.py
-- [[.test_unknown_recipient_no_queue_returns_403()]] - code - gateway/tests/test_channel_ownership.py
-- [[.test_unknown_recipient_queued_for_approval()]] - code - gateway/tests/test_channel_ownership.py
-- [[.test_valid_payload_returns_200()]] - code - gateway/tests/test_channel_ownership.py
-- [[All responses include an ISO 8601 timestamp.]] - rationale - gateway/tests/test_channel_ownership.py
-- [[Allowed (owner) recipient receives the body verbatim — PII scan is skipped.]] - rationale - gateway/tests/test_channel_ownership.py
-- [[Approved response includes sanitized_body field.]] - rationale - gateway/tests/test_channel_ownership.py
-- [[Email to an allowed recipient returns 200 with status=approved.]] - rationale - gateway/tests/test_channel_ownership.py
-- [[Empty payload is handled gracefully (skipped, not error).]] - rationale - gateway/tests/test_channel_ownership.py
-- [[Endpoint returns 401 without auth override.]] - rationale - gateway/tests/test_channel_ownership.py
-- [[Malformed body is handled defensively (empty dict fallback).]] - rationale - gateway/tests/test_channel_ownership.py
-- [[Missing 'subject' or 'body' returns 422.]] - rationale - gateway/tests/test_channel_ownership.py
-- [[Missing 'to' field returns 422.]] - rationale - gateway/tests/test_channel_ownership.py
-- [[PII in email body IS redacted before queuing for unknown recipients.]] - rationale - gateway/tests/test_channel_ownership.py
-- [[Response always includes a 'status' field.]] - rationale - gateway/tests/test_channel_ownership.py
-- [[Standard Telegram message payload is accepted.]] - rationale - gateway/tests/test_channel_ownership.py
-- [[TestEmailSend]] - code - gateway/tests/test_channel_ownership.py
-- [[TestTelegramWebhook]] - code - gateway/tests/test_channel_ownership.py
-- [[Unknown recipient triggers approval queue and returns 202.]] - rationale - gateway/tests/test_channel_ownership.py
-- [[Unknown recipient with no approval queue configured returns 403.]] - rationale - gateway/tests/test_channel_ownership.py
-- [[Without a pipeline configured, status is passthrough (not error).]] - rationale - gateway/tests/test_channel_ownership.py
+- [[1. Owner & Governance Context]] - document - docker/config/openclaw/workspace/DEVELOPER.md
+- [[2. Project]] - document - docker/config/openclaw/workspace/DEVELOPER.md
+- [[3. Prime Directive]] - document - docker/config/openclaw/workspace/DEVELOPER.md
+- [[4. Development Rules (TDD)]] - document - docker/config/openclaw/workspace/DEVELOPER.md
+- [[5. Language & Tooling Standards]] - document - docker/config/openclaw/workspace/DEVELOPER.md
+- [[6. Runtime Environment (CRITICAL)]] - document - docker/config/openclaw/workspace/DEVELOPER.md
+- [[7. SSH Development Workflow]] - document - docker/config/openclaw/workspace/DEVELOPER.md
+- [[8. Agent Orchestration]] - document - docker/config/openclaw/workspace/DEVELOPER.md
+- [[9. Repository Guardrails]] - document - docker/config/openclaw/workspace/DEVELOPER.md
+- [[9. Skill Lookup]] - document - docker/config/openclaw/workspace/DEVELOPER.md
+- [[Active Projects]] - document - docker/config/openclaw/workspace/memory/context.md
+- [[Competitive Intelligence Protocol]] - document - docker/config/openclaw/workspace/IDENTITY.md
+- [[DEVELOPER]] - document - docker/config/openclaw/workspace/DEVELOPER.md
+- [[DEVELOPER.md — Development Context for AgentShroud]] - document - docker/config/openclaw/workspace/DEVELOPER.md
+- [[IDENTITY.md - Who I Am]] - document - docker/config/openclaw/workspace/IDENTITY.md
+- [[Key Facts_1]] - document - docker/config/openclaw/workspace/memory/context.md
+- [[My Owner]] - document - docker/config/openclaw/workspace/IDENTITY.md
+- [[My Responsibilities]] - document - docker/config/openclaw/workspace/IDENTITY.md
+- [[My Role]] - document - docker/config/openclaw/workspace/IDENTITY.md
+- [[Pending Tasks]] - document - docker/config/openclaw/workspace/memory/context.md
+- [[_json_escape (ssh-exec)]] - code - docker/scripts/agentshroud-ssh-exec.sh
+- [[_json_escape (ssh-write-file)]] - code - docker/scripts/agentshroud-ssh-write-file.sh
+- [[_read_token_file (ssh-exec)]] - code - docker/scripts/agentshroud-ssh-exec.sh
+- [[_read_token_file (ssh-write-file)]] - code - docker/scripts/agentshroud-ssh-write-file.sh
+- [[agentshroud-ssh-exec.sh]] - code - docker/scripts/agentshroud-ssh-exec.sh
+- [[agentshroud-ssh-exec.sh script]] - code - docker/scripts/agentshroud-ssh-exec.sh
+- [[agentshroud-ssh-write-file.sh]] - code - docker/scripts/agentshroud-ssh-write-file.sh
+- [[agentshroud-ssh-write-file.sh script]] - code - docker/scripts/agentshroud-ssh-write-file.sh
+- [[competitive-analysis.md (bot workspace competitive-intel source of truth)]] - document - docker/config/openclaw/workspace/competitive-analysis.md
+- [[context_1]] - document - docker/config/openclaw/workspace/memory/context.md
+- [[hermes-soul.md (Hermes system identity)]] - document - docker/config/openclaw/agents/hermes-soul.md
+- [[openclaw-identity.md (OpenClaw bot identity)]] - document - docker/config/openclaw/agents/openclaw-identity.md
+- [[workspaceIDENTITY]] - document - docker/config/openclaw/workspace/IDENTITY.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -50,14 +50,3 @@ members: 33
 TABLE source_file, type FROM #community/Community_228
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 24]]
-- 2 edges to [[_COMMUNITY_Community 159]]
-
-## Top bridge nodes
-- [[TestEmailSend]] - degree 11, connects to 1 community
-- [[TestTelegramWebhook]] - degree 7, connects to 1 community
-- [[.test_owner_body_not_redacted()]] - degree 3, connects to 1 community
-- [[.test_pii_redacted_for_unknown_recipient()]] - degree 3, connects to 1 community
-- [[.test_unknown_recipient_queued_for_approval()]] - degree 3, connects to 1 community

@@ -1,35 +1,35 @@
 ---
 type: community
-cohesion: 0.15
+cohesion: 0.10
 members: 20
 ---
 
 # Community 453
 
-**Cohesion:** 0.15 - loosely connected
+**Cohesion:** 0.10 - loosely connected
 **Members:** 20 nodes
 
 ## Members
-- [[.test_get_features_apple()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_get_features_docker()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_get_features_podman()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_missing_features()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_security_comparison()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_security_options_apple()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_security_options_docker()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_security_options_podman()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_security_options_unknown()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_warn_missing()]] - code - gateway/tests/test_runtime_engines.py
-- [[A security feature with runtime support info.]] - rationale - gateway/runtime/security.py
-- [[Return features available for a given runtime.]] - rationale - gateway/runtime/security.py
-- [[Return recommended security CLI options for a runtime.]] - rationale - gateway/runtime/security.py
-- [[SecurityFeature]] - code - gateway/runtime/security.py
-- [[TestSecurityFeatures]] - code - gateway/tests/test_runtime_engines.py
-- [[Validate runtime name to prevent attribute access injection.]] - rationale - gateway/runtime/security.py
-- [[_validate_runtime()]] - code - gateway/runtime/security.py
-- [[get_features_for_runtime()]] - code - gateway/runtime/security.py
-- [[get_missing_features()]] - code - gateway/runtime/security.py
-- [[get_security_options()]] - code - gateway/runtime/security.py
+- [[A. AWS Glue Jobs_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[B. AWS Step Functions_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[C. AWS Athena_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[D. PostgreSQL — RDS (`fe-gsdl-poc-database`)_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[E. MySQL — On-Site Zabbix Databases (200+ sites)_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[F. IAM Policies_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[G. Tailscale  Network_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[General Rules_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[H. Service Control for Production Testing_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[H.1 Pause Glue Jobs Before Testing_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[H.2 Pause Step Functions Before Testing_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[H.3 Database Tables for Test Data_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[H.4 Cleanup Verification Checklist_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[Objective_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[Output Format_14]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[Role_45]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[Skill Quality Assurance (QA)_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[Testing Hierarchy_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[openclawskillsi-qaSKILL]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,18 +37,3 @@ members: 20
 TABLE source_file, type FROM #community/Community_453
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 6 edges to [[_COMMUNITY_Community 329]]
-- 6 edges to [[_COMMUNITY_Community 348]]
-- 4 edges to [[_COMMUNITY_Community 37]]
-- 1 edge to [[_COMMUNITY_Community 325]]
-- 1 edge to [[_COMMUNITY_Community 320]]
-- 1 edge to [[_COMMUNITY_Community 207]]
-
-## Top bridge nodes
-- [[TestSecurityFeatures]] - degree 16, connects to 5 communities
-- [[get_missing_features()]] - degree 7, connects to 3 communities
-- [[get_security_options()]] - degree 9, connects to 2 communities
-- [[get_features_for_runtime()]] - degree 8, connects to 2 communities
-- [[_validate_runtime()]] - degree 6, connects to 2 communities

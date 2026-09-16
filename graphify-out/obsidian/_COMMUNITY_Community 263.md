@@ -1,45 +1,46 @@
 ---
 type: community
-cohesion: 0.07
-members: 30
+cohesion: 0.06
+members: 31
 ---
 
 # Community 263
 
-**Cohesion:** 0.07 - loosely connected
-**Members:** 30 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 31 nodes
 
 ## Members
-- [[Alternative Google People API]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
-- [[CLI Tool gcalcli]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
-- [[For Immediate Use CalDAVCardDAV]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
-- [[For Production OAuth2 + Google APIs]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
-- [[Google Services Setup - Calendar, Contacts, Keep]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
-- [[Option A Quick CalDAV Setup (Recommended)]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
-- [[Option B Full OAuth Setup]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
-- [[Option C Alternative Notes Solution]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
-- [[Problem No Public API]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
-- [[Python Integration]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
-- [[Server Settings]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
-- [[Step 1 Create Google Cloud Project_1]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
-- [[Step 1 Enable App Password (Gmail)]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
-- [[Step 2 Create OAuth Credentials_1]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
-- [[Step 2 Enable CalDAVCardDAV Access]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
-- [[Step 3 Store Credentials]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
-- [[Step 3 Test Calendar Access]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
-- [[Step 4 Get Refresh Token]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
-- [[Step 4 Test Contacts Access]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
-- [[Workarounds]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
-- [[✅ Quick Start Command]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
-- [[🎯 Next Steps_1]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
-- [[📅 Google Calendar (CalDAV)]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
-- [[📊 Comparison CalDAV vs OAuth2]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
-- [[📝 Google Keep (Notes)]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
-- [[📞 Google Contacts (CardDAV)]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
-- [[📧 Gmail Already Working]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
-- [[🔐 Setup Steps]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
-- [[🚀 Recommended Approach]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
-- [[🛠️ OAuth2 Setup (If Needed)]] - document - docs/setup/GOOGLE-SERVICES-SETUP.md
+- [[Folder Structure_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[Linking_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[NOW ANALYZE THE FOLLOWING CODEBASE AND PRODUCE THE COMPLETE OBSIDIAN VAULT_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[OBSIDIAN VAULT RULES (Follow These Exactly)_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[OUTPUT FORMAT_9]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[REQUIRED NOTES — PRODUCE EVERY ONE OF THESE_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[System Audit Vault (Obsidian)_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[Tags_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[YAML Frontmatter_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[`00 - START HEREHome.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[`00 - START HEREQuick Reference.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[`00 - START HERESystem Overview.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[`01 - ArchitectureArchitecture Overview.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[`01 - ArchitectureData Flow.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[`01 - ArchitectureShutdown & Recovery.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[`01 - ArchitectureStartup Sequence.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[`02 - ModulesFileName.md` — ONE PER SOURCE FILE_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[`03 - ConfigurationConfigFile.md` — ONE PER CONFIG FILE_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[`04 - Environment VariablesVAR_NAME.md` — ONE PER ENV VAR_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[`05 - DependenciesAll Dependencies.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[`05 - DependenciesPackageName.md` — ONE PER MAJOR DEPENDENCY_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[`06 - Containers & ServicesContainerName.md` — ONE PER CONTAINERSERVICE_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[`07 - Errors & TroubleshootingError Index.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[`07 - Errors & TroubleshootingTroubleshooting Matrix.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[`07 - Errors & TroubleshootingErrorName.md` — ONE PER ERROR CATEGORY_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[`08 - RunbooksCrash Recovery.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[`08 - RunbooksFirst Time Setup.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[`08 - RunbooksRestart Procedure.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[`09 - DiagramsFull System Flowchart.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[`09 - DiagramsStartup Flow Diagram.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[openclawskillsi-savSKILL]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -47,9 +48,3 @@ members: 30
 TABLE source_file, type FROM #community/Community_263
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 428]]
-
-## Top bridge nodes
-- [[Google Services Setup - Calendar, Contacts, Keep]] - degree 11, connects to 1 community

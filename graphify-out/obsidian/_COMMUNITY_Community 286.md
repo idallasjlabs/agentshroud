@@ -1,43 +1,44 @@
 ---
 type: community
-cohesion: 0.10
-members: 28
+cohesion: 0.12
+members: 29
 ---
 
 # Community 286
 
-**Cohesion:** 0.10 - loosely connected
-**Members:** 28 nodes
+**Cohesion:** 0.12 - loosely connected
+**Members:** 29 nodes
 
 ## Members
-- [[.test_empty_tool_calls_not_a_tool_call()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[.test_empty_tool_results_not_a_tool_call()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[.test_non_owner_cross_path_plain_message_still_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[.test_owner_message_mentioning_other_users_file_not_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[.test_owner_plain_message_with_path_not_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[.test_plain_chat_not_a_tool_call()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[.test_plain_message_mentioning_config_yaml_not_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[.test_plain_message_mentioning_etc_passwd_not_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[.test_plain_message_mentioning_memory_not_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[.test_tool_call_with_unauthorized_path_still_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[.test_tool_calls_key_detected()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[.test_tool_results_key_detected()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[.test_type_field_message_not_tool_call()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[.test_type_field_tool_call()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[FileSandbox must NOT block plain chat messages that mention file-like words.]] - rationale - gateway/tests/test_file_sandbox_message_gate.py
-- [[MiddlewareManager with real session_manager, all other deps mocked.      Uses __]] - rationale - gateway/tests/test_file_sandbox_message_gate.py
-- [[Owner (8096968754) must not be blocked by content-pattern scanning.     They sho]] - rationale - gateway/tests/test_file_sandbox_message_gate.py
-- [[TestFileSandboxSkippedForPlainMessages]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[TestIsToolCallRequest]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[TestOwnerBypassContentPatternChecks]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[Unit tests for the _is_tool_call_request helper (TDD RED phase).]] - rationale - gateway/tests/test_file_sandbox_message_gate.py
-- [[_plain_msg()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[_tool_call_msg()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[_tool_result_msg()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[manager()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[session_manager()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[temp_workspace()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[test_file_sandbox_message_gate.py]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[dot-_hits()]] - code - gateway/tests/test_prompt_guard.py
+- [[dot-test_ascii_art_injection()]] - code - gateway/tests/test_prompt_guard.py
+- [[dot-test_authority_escalation()]] - code - gateway/tests/test_prompt_guard.py
+- [[dot-test_benign_encoding_discussion()]] - code - gateway/tests/test_prompt_guard.py
+- [[dot-test_benign_llama_reference()]] - code - gateway/tests/test_prompt_guard.py
+- [[dot-test_completion_attack()]] - code - gateway/tests/test_prompt_guard.py
+- [[dot-test_constitutional_bypass()]] - code - gateway/tests/test_prompt_guard.py
+- [[dot-test_continuation_prefix()]] - code - gateway/tests/test_prompt_guard.py
+- [[dot-test_encoding_chain()]] - code - gateway/tests/test_prompt_guard.py
+- [[dot-test_json_yaml_injection()]] - code - gateway/tests/test_prompt_guard.py
+- [[dot-test_llama_tokens_chatml()]] - code - gateway/tests/test_prompt_guard.py
+- [[dot-test_llama_tokens_sys()]] - code - gateway/tests/test_prompt_guard.py
+- [[dot-test_multi_model_confusion()]] - code - gateway/tests/test_prompt_guard.py
+- [[dot-test_multilingual_japanese()]] - code - gateway/tests/test_prompt_guard.py
+- [[dot-test_multilingual_korean()]] - code - gateway/tests/test_prompt_guard.py
+- [[dot-test_multilingual_portuguese()]] - code - gateway/tests/test_prompt_guard.py
+- [[dot-test_nested_injection()]] - code - gateway/tests/test_prompt_guard.py
+- [[dot-test_operator_permission_claim()]] - code - gateway/tests/test_prompt_guard.py
+- [[dot-test_pattern_count()]] - code - gateway/tests/test_prompt_guard.py
+- [[dot-test_payload_splitting()]] - code - gateway/tests/test_prompt_guard.py
+- [[dot-test_persona_chaining()]] - code - gateway/tests/test_prompt_guard.py
+- [[dot-test_reward_hacking()]] - code - gateway/tests/test_prompt_guard.py
+- [[dot-test_safety_exception_claim()]] - code - gateway/tests/test_prompt_guard.py
+- [[dot-test_tool_call_injection()]] - code - gateway/tests/test_prompt_guard.py
+- [[dot-test_tool_result_injection_ref()]] - code - gateway/tests/test_prompt_guard.py
+- [[dot-test_whitespace_obfuscation()]] - code - gateway/tests/test_prompt_guard.py
+- [[Regression guard — fail if patterns drop below 43.]] - rationale - gateway/tests/test_prompt_guard.py
+- [[TestNewPatternsV080]] - code - gateway/tests/test_prompt_guard.py
+- [[Unit tests for the 20 patterns added in v0.8.0 (total 43).]] - rationale - gateway/tests/test_prompt_guard.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -47,13 +48,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Session Management]]
-- 4 edges to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
-- 4 edges to [[_COMMUNITY_Middleware & Lifespan]]
+- 4 edges to [[_COMMUNITY_Prompt Guard & Context Integrity]]
+- 1 edge to [[_COMMUNITY_Signed Instruction Envelopes & Security Pipeline]]
 
 ## Top bridge nodes
-- [[test_file_sandbox_message_gate.py]] - degree 12, connects to 3 communities
-- [[TestIsToolCallRequest]] - degree 12, connects to 3 communities
-- [[TestFileSandboxSkippedForPlainMessages]] - degree 9, connects to 3 communities
-- [[TestOwnerBypassContentPatternChecks]] - degree 8, connects to 3 communities
-- [[session_manager()]] - degree 2, connects to 1 community
+- [[TestNewPatternsV080]] - degree 32, connects to 2 communities

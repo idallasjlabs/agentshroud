@@ -1,41 +1,41 @@
 ---
 type: community
-cohesion: 0.12
+cohesion: 0.09
 members: 26
 ---
 
 # Community 325
 
-**Cohesion:** 0.12 - loosely connected
+**Cohesion:** 0.09 - loosely connected
 **Members:** 26 nodes
 
 ## Members
-- [[.__init__()_46]] - code - gateway/runtime/apple_engine.py
-- [[._cmd()]] - code - gateway/runtime/apple_engine.py
-- [[.build()]] - code - gateway/runtime/apple_engine.py
-- [[.compose_down()]] - code - gateway/runtime/apple_engine.py
-- [[.compose_up()]] - code - gateway/runtime/apple_engine.py
-- [[.exec()]] - code - gateway/runtime/apple_engine.py
-- [[.health_check()_2]] - code - gateway/runtime/apple_engine.py
-- [[.inspect()]] - code - gateway/runtime/apple_engine.py
-- [[.logs()]] - code - gateway/runtime/apple_engine.py
-- [[.network_create()]] - code - gateway/runtime/apple_engine.py
-- [[.network_rm()]] - code - gateway/runtime/apple_engine.py
-- [[.pause()]] - code - gateway/runtime/apple_engine.py
-- [[.ps()]] - code - gateway/runtime/apple_engine.py
-- [[.pull()]] - code - gateway/runtime/apple_engine.py
-- [[.push()]] - code - gateway/runtime/apple_engine.py
-- [[.rm()]] - code - gateway/runtime/apple_engine.py
-- [[.run()_1]] - code - gateway/runtime/apple_engine.py
-- [[.stop()_5]] - code - gateway/runtime/apple_engine.py
-- [[.unpause()]] - code - gateway/runtime/apple_engine.py
-- [[.volume_create()]] - code - gateway/runtime/apple_engine.py
-- [[.volume_rm()]] - code - gateway/runtime/apple_engine.py
-- [[Any_25]] - code - gateway/runtime/apple_engine.py
-- [[AppleContainerEngine]] - code - gateway/runtime/apple_engine.py
-- [[Container engine backed by Apple's `container` CLI.]] - rationale - gateway/runtime/apple_engine.py
-- [[ContainerInfo]] - code - gateway/runtime/apple_engine.py
-- [[get_engine]] - code - gateway/runtime/__init__.py
+- [[dot-scripts Numbered Script Library Convention]] - concept - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[dot-agentsskillsi-cicdREADME]] - document - .agents/skills/i-cicd/README.md
+- [[AWS Cloud Management & FinOps (README)]] - document - docker/config/hermes/skills/i-aws/README.md
+- [[AWS Cloud Management & FinOps Agent (SKILL)]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Brand System Components (IdentityColorTypographyVoiceLayoutComponents)]] - concept - docker/config/hermes/skills/i-bs/SKILL.md
+- [[Branding Specialist (BS) (README)]] - document - docker/config/hermes/skills/i-bs/README.md
+- [[Branding Specialist (BS) (SKILL)]] - document - docker/config/hermes/skills/i-bs/SKILL.md
+- [[CD Skill (Continuous Delivery pipeline design)]] - document - docker/config/hermes/skills/i-cd/SKILL.md
+- [[CI Skill (Continuous Integration pipeline)]] - document - docker/config/hermes/skills/i-ci/SKILL.md
+- [[CICD Pipeline Advisor (README)]] - document - docker/config/hermes/skills/i-cicd/README.md
+- [[CICD Pipeline Advisor (SKILL)]] - document - docker/config/hermes/skills/i-cicd/SKILL.md
+- [[CICD Quality Gates (execution order)]] - concept - docker/config/hermes/skills/i-cicd/SKILL.md
+- [[Code Review (CR) (README)]] - document - docker/config/hermes/skills/i-cr/README.md
+- [[Code Review (CR) (SKILL)]] - document - docker/config/hermes/skills/i-cr/SKILL.md
+- [[Data Validation (DATA-VAL) Skill]] - document - .agents/skills/i-data/SKILL.md
+- [[Data Validation README]] - document - .agents/skills/i-data/README.md
+- [[Deployment Matrix (Direct to Prod)]] - concept - docker/config/hermes/skills/i-cicd/SKILL.md
+- [[EBS Performance Analysis Pattern]] - concept - docker/config/hermes/skills/i-aws/SKILL.md
+- [[GSDE&G Team (Global Services Digital Enablement & Governance)]] - concept - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Production-Specific Review Checklist (blast radius, rollback, Athena cost guard)]] - concept - docker/config/hermes/skills/i-cr/SKILL.md
+- [[Purpose_123]] - document - .agents/skills/i-cicd/README.md
+- [[Related Skills_110]] - document - .agents/skills/i-cicd/README.md
+- [[The 400-Line Rule]] - concept - docker/config/hermes/skills/i-cr/SKILL.md
+- [[Usage_115]] - document - .agents/skills/i-cicd/README.md
+- [[WCAG AA Contrast Standard]] - concept - docker/config/hermes/skills/i-bs/SKILL.md
+- [[fluenceenergy-ops-data-lakehouse (275TB S3 Data Lake)]] - concept - .agents/skills/i-data/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -45,20 +45,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_Community 348]]
-- 5 edges to [[_COMMUNITY_Community 329]]
-- 3 edges to [[_COMMUNITY_Community 204]]
-- 2 edges to [[_COMMUNITY_Community 849]]
-- 2 edges to [[_COMMUNITY_Community 919]]
-- 1 edge to [[_COMMUNITY_Community 320]]
-- 1 edge to [[_COMMUNITY_Community 447]]
-- 1 edge to [[_COMMUNITY_Community 365]]
-- 1 edge to [[_COMMUNITY_Community 1060]]
-- 1 edge to [[_COMMUNITY_Community 207]]
-- 1 edge to [[_COMMUNITY_Community 453]]
-- 1 edge to [[_COMMUNITY_Community 645]]
+- 1 edge to [[_COMMUNITY_Community 1135]]
+- 1 edge to [[_COMMUNITY_Community 1062]]
 
 ## Top bridge nodes
-- [[AppleContainerEngine]] - degree 45, connects to 12 communities
-- [[Any_25]] - degree 3, connects to 2 communities
-- [[ContainerInfo]] - degree 3, connects to 2 communities
+- [[AWS Cloud Management & FinOps Agent (SKILL)]] - degree 5, connects to 1 community
+- [[Deployment Matrix (Direct to Prod)]] - degree 2, connects to 1 community

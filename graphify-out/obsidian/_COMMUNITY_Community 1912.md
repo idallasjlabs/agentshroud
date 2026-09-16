@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[AgentShroud Badge Icon 180x180]] - image - branding/logos/variants/badge-180x180.png
+- [[face_set_emotion() (declared in header; drives eyemouth canvases)]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
 
 ## Live Query (requires Dataview plugin)
 

@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Token Reduction Benchmark]] - concept - docker/config/openclaw/skills/graphify/references/exports.md
+- [[CriticalHighMediumLow tool risk tiers gating approval requirement]] - concept - gateway/tests/test_enhanced_approval.py
 
 ## Live Query (requires Dataview plugin)
 

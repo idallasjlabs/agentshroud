@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Block Destructive Branches — CI guard for flagged or mass-deletion PRs]] - document - .github/workflows/block-destructive-branch.yml
+- [[ui_face.h]] - code - firmware/voice-terminal/main/ui_face.h
 
 ## Live Query (requires Dataview plugin)
 

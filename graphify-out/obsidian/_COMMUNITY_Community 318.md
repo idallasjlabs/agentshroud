@@ -1,41 +1,42 @@
 ---
 type: community
-cohesion: 0.08
-members: 26
+cohesion: 0.07
+members: 27
 ---
 
 # Community 318
 
-**Cohesion:** 0.08 - loosely connected
-**Members:** 26 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 27 nodes
 
 ## Members
-- [[API  Function Reference]] - document - .agents/skills/i-tw/SKILL.md
-- [[Anti-Patterns to Flag_5]] - document - .agents/skills/i-tw/SKILL.md
-- [[Architecture Decision Record (ADR)]] - document - .agents/skills/i-tw/SKILL.md
-- [[Changelog Entry]] - document - .agents/skills/i-tw/SKILL.md
-- [[Core Discipline Understand → Structure → Write → Validate]] - document - .agents/skills/i-tw/SKILL.md
-- [[Dependencies_3]] - document - .agents/skills/i-tw/SKILL.md
-- [[Document Structure]] - document - .agents/skills/i-tw/SKILL.md
-- [[Document-Type Patterns]] - document - .agents/skills/i-tw/SKILL.md
-- [[Expected output]] - document - .agents/skills/i-tw/SKILL.md
-- [[Expected ok]] - document - .agents/skills/i-tw/SKILL.md
-- [[Expected INFO Re-queued 3 jobs]] - document - .agents/skills/i-tw/SKILL.md
-- [[Formatting]] - document - .agents/skills/i-tw/SKILL.md
-- [[If not → escalate to field team via ops-alerts]] - document - .agents/skills/i-tw/SKILL.md
-- [[Query the control DB]] - document - .agents/skills/i-tw/SKILL.md
-- [[README — Entry Point for a Repo or Service]] - document - .agents/skills/i-tw/SKILL.md
-- [[Role_36]] - document - .agents/skills/i-tw/SKILL.md
-- [[Rules_5]] - document - .agents/skills/i-tw/SKILL.md
-- [[Runbook — Operational Decision Tree]] - document - .agents/skills/i-tw/SKILL.md
-- [[SKILL_59]] - document - .agents/skills/i-tw/SKILL.md
-- [[Skill Technical Writer (TW)]] - document - .agents/skills/i-tw/SKILL.md
-- [[Validation Checklist_2]] - document - .agents/skills/i-tw/SKILL.md
-- [[Voice & Tone]] - document - .agents/skills/i-tw/SKILL.md
-- [[What Belongs Where]] - document - .agents/skills/i-tw/SKILL.md
-- [[Writing Style Rules]] - document - .agents/skills/i-tw/SKILL.md
-- [[INFO Extracted 1,204 records → s3my-bucketlanding...]] - document - .agents/skills/i-tw/SKILL.md
-- [[→ {site site1, test_mode True, output_prefix _testsite1}]] - document - .agents/skills/i-tw/SKILL.md
+- [[CREDENTIAL-PROTECTION-IMPLEMENTED]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
+- [[Console Access Only (Layer 2)]] - rationale - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
+- [[Credential Access Audit Logging (Layer 3)]] - rationale - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
+- [[Gateway Credential Filter (Layer 1)]] - rationale - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
+- [[Layer 1 Gateway Credential Filter (ACTIVE)]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
+- [[Layer 2 Console Access Only (ACTIVE)]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
+- [[Layer 3 Audit Logging (ACTIVE)]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
+- [[Method 1 Console (Direct Access)]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
+- [[Method 2 Control UI (With Approval)]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
+- [[Method 3 Ask Bot to Configure (No Display)]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
+- [[Scenario 1 Friend Asks Your Bot for Password]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
+- [[Scenario 2 You Need to See Password]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
+- [[Scenario 3 You Want Bot to Configure Something]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
+- [[Scenario 4 Telegram Account Compromised]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
+- [[✅ What the Bot CAN Do via Telegram]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
+- [[✅ Your Requirements Met]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
+- [[❌ What the Bot CANNOT Do via Telegram]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
+- [[🎉 Result]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
+- [[🎉 What We Implemented]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
+- [[🎓 Configuration]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
+- [[🎯 Real-World Scenarios]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
+- [[📊 Summary]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
+- [[📋 Security Guarantees]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
+- [[🔍 How It Works Internally]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
+- [[🔐 How to Access Credentials Securely]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
+- [[🚀 Next Steps]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
+- [[🛡️ Protection Layers]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -43,3 +44,13 @@ members: 26
 TABLE source_file, type FROM #community/Community_318
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Ingest API & RBAC Core]]
+- 1 edge to [[_COMMUNITY_Community 1398]]
+- 1 edge to [[_COMMUNITY_Community 530]]
+- 1 edge to [[_COMMUNITY_Community 509]]
+- 1 edge to [[_COMMUNITY_Community 578]]
+
+## Top bridge nodes
+- [[CREDENTIAL-PROTECTION-IMPLEMENTED]] - degree 21, connects to 5 communities

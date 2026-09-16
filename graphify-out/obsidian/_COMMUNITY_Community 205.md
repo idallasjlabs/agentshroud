@@ -1,50 +1,51 @@
 ---
 type: community
 cohesion: 0.10
-members: 35
+members: 36
 ---
 
 # Community 205
 
 **Cohesion:** 0.10 - loosely connected
-**Members:** 35 nodes
+**Members:** 36 nodes
 
 ## Members
-- [[.__init__()_17]] - code - gateway/proxy/a2a_proxy.py
-- [[.__init__()_138]] - code - gateway/tests/test_a2a_proxy.py
-- [[._audit()]] - code - gateway/proxy/a2a_proxy.py
-- [[._decide()]] - code - gateway/security/a2a_policy.py
-- [[._record_trust_violation()]] - code - gateway/proxy/a2a_proxy.py
-- [[._tier_for()]] - code - gateway/security/a2a_policy.py
-- [[.extract_text_for_pii_scan()]] - code - gateway/proxy/a2a_proxy.py
-- [[.forward()]] - code - gateway/proxy/a2a_proxy.py
-- [[.log_event()_1]] - code - gateway/tests/test_a2a_proxy.py
-- [[.parse_jsonrpc_request()]] - code - gateway/proxy/a2a_proxy.py
-- [[.process_agent_card_request()]] - code - gateway/proxy/a2a_proxy.py
-- [[.process_inbound_request()]] - code - gateway/proxy/a2a_proxy.py
-- [[.resolve_peer_id()]] - code - gateway/proxy/a2a_proxy.py
-- [[A freshly-constructed, un-set result must default to blocked, not     allowed —]] - rationale - gateway/tests/test_a2a_proxy.py
-- [[A message with MULTIPLE text parts must not leave a second, unredacted     text]] - rationale - gateway/tests/test_a2a_proxy.py
-- [[A2AMethod]] - code - gateway/security/a2a_policy.py
-- [[A2APolicyEngine]] - code - gateway/proxy/a2a_proxy.py
-- [[A2AProxy]] - code - gateway/proxy/a2a_proxy.py
-- [[A2AProxyResult]] - code - gateway/proxy/a2a_proxy.py
-- [[Any_11]] - code - gateway/proxy/a2a_proxy.py
-- [[Canonical (v1.0 PascalCase) A2A JSON-RPC methods this engine governs.]] - rationale - gateway/security/a2a_policy.py
-- [[Flatten an A2A Message's `parts` array to plain text for PII         scanning.]] - rationale - gateway/proxy/a2a_proxy.py
-- [[GET .well-knownagent-card.json — never policy-gated (the A2A         spec requ]] - rationale - gateway/proxy/a2a_proxy.py
-- [[Parse a JSON-RPC 2.0 A2A request body into methodtask_id         callback_url.]] - rationale - gateway/proxy/a2a_proxy.py
-- [[ParsedA2ARequest]] - code - gateway/proxy/a2a_proxy.py
-- [[Record a typed violation against the peer's trust score for the         two A2A-]] - rationale - gateway/proxy/a2a_proxy.py
-- [[Resolve peer identity from the Authorization Bearer token.          Never falls]] - rationale - gateway/proxy/a2a_proxy.py
-- [[Result of proxying a single inbound A2A request.]] - rationale - gateway/proxy/a2a_proxy.py
-- [[Return a copy of raw_body with the first text Part's content replaced     by the]] - rationale - gateway/proxy/a2a_proxy.py
-- [[Terminates inbound A2A HTTP requests, enforces policy, forwards.      Usage]] - rationale - gateway/proxy/a2a_proxy.py
-- [[_Event]] - code - gateway/tests/test_a2a_proxy.py
-- [[_redact_message_text()]] - code - gateway/proxy/a2a_proxy.py
-- [[a2a_proxy.py]] - code - gateway/proxy/a2a_proxy.py
-- [[test_proxy_result_defaults_are_safe()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_redact_message_text_clears_all_text_parts_not_just_the_first()]] - code - gateway/tests/test_a2a_proxy.py
+- [[dot-_make_rbac()]] - code - gateway/tests/test_rbac.py
+- [[dot-add_member()]] - code - gateway/security/rbac_config.py
+- [[dot-create_group()]] - code - gateway/security/rbac_config.py
+- [[dot-delete_group()]] - code - gateway/security/rbac_config.py
+- [[dot-get_group()]] - code - gateway/security/rbac_config.py
+- [[dot-init_auto_groups()]] - code - gateway/security/rbac_config.py
+- [[dot-is_member()_1]] - code - gateway/security/rbac_config.py
+- [[dot-list_groups()]] - code - gateway/security/rbac_config.py
+- [[dot-remove_member()]] - code - gateway/security/rbac_config.py
+- [[dot-test_add_remove_member()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_auto_groups_created()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_cannot_create_reserved_group_id()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_cannot_delete_auto_group()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_create_custom_group()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_delete_custom_group()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_everyone_group_contains_all_users()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_is_member_unknown_group_returns_false()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_slack_group_contains_slack_ids()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_telegram_group_contains_numeric_ids()]] - code - gateway/tests/test_rbac.py
+- [[A named group of users.]] - rationale - gateway/security/rbac_config.py
+- [[Add a user to a group (auto-groups are updated in-memory only).]] - rationale - gateway/security/rbac_config.py
+- [[Create or replace a custom group and persist it.]] - rationale - gateway/security/rbac_config.py
+- [[Delete a custom group. Returns True if deleted, False if not found.]] - rationale - gateway/security/rbac_config.py
+- [[Derive and reset auto-groups from current RBAC user list, then load custom group]] - rationale - gateway/security/rbac_config.py
+- [[Group]] - code - gateway/security/rbac_config.py
+- [[GroupRegistry]] - code - gateway/security/rbac_config.py
+- [[Manages user groups including auto-groups and custom groups.]] - rationale - gateway/security/rbac_config.py
+- [[Read custom groups from disk.]] - rationale - gateway/security/rbac_config.py
+- [[Remove a user from a group (auto-groups are updated in-memory only).]] - rationale - gateway/security/rbac_config.py
+- [[Return True if user_id is in the group.]] - rationale - gateway/security/rbac_config.py
+- [[Return group by ID, or None.]] - rationale - gateway/security/rbac_config.py
+- [[TestGroupRegistry]] - code - gateway/tests/test_rbac.py
+- [[Tests for GroupRegistry auto-groups and custom group management.]] - rationale - gateway/tests/test_rbac.py
+- [[Write only custom groups to disk (auto-groups are derived at runtime).]] - rationale - gateway/security/rbac_config.py
+- [[_load_persisted_groups()]] - code - gateway/security/rbac_config.py
+- [[_persist_groups()]] - code - gateway/security/rbac_config.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -54,18 +55,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 32 edges to [[_COMMUNITY_Community 81]]
-- 21 edges to [[_COMMUNITY_Community 110]]
-- 8 edges to [[_COMMUNITY_Community 71]]
-- 7 edges to [[_COMMUNITY_Progressive Trust]]
-- 4 edges to [[_COMMUNITY_Community 281]]
-- 2 edges to [[_COMMUNITY_Community 19]]
-- 2 edges to [[_COMMUNITY_Community 227]]
-- 2 edges to [[_COMMUNITY_Community 45]]
+- 18 edges to [[_COMMUNITY_Ingest API & RBAC Core]]
+- 5 edges to [[_COMMUNITY_Approval Routing & Event Bus]]
+- 3 edges to [[_COMMUNITY_TeamsGroup Collaborator Responses]]
+- 1 edge to [[_COMMUNITY_Community 342]]
+- 1 edge to [[_COMMUNITY_Ingest Middleware & File Sandbox]]
 
 ## Top bridge nodes
-- [[A2AMethod]] - degree 29, connects to 5 communities
-- [[a2a_proxy.py]] - degree 10, connects to 4 communities
-- [[A2AProxy]] - degree 38, connects to 3 communities
-- [[A2AProxyResult]] - degree 15, connects to 3 communities
-- [[_Event]] - degree 10, connects to 3 communities
+- [[GroupRegistry]] - degree 34, connects to 4 communities
+- [[TestGroupRegistry]] - degree 21, connects to 2 communities
+- [[Group]] - degree 9, connects to 2 communities
+- [[_persist_groups()]] - degree 8, connects to 2 communities
+- [[dot-_make_rbac()]] - degree 12, connects to 1 community

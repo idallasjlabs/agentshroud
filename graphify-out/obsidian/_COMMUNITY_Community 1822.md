@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[SCRUM-154 hung WebSocket client must not wedge the approval lock]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[chatbot__init__.py]] - code - chatbot/__init__.py
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,41 +1,41 @@
 ---
 type: community
-cohesion: 0.11
+cohesion: 0.08
 members: 26
 ---
 
 # Community 324
 
-**Cohesion:** 0.11 - loosely connected
+**Cohesion:** 0.08 - loosely connected
 **Members:** 26 nodes
 
 ## Members
-- [[.__init__()_31]] - code - gateway/proxy/mcp_proxy.py
-- [[._redact_pii()]] - code - gateway/proxy/mcp_inspector.py
-- [[._scan_text()]] - code - gateway/proxy/mcp_inspector.py
-- [[._scan_value()]] - code - gateway/proxy/mcp_inspector.py
-- [[._should_block()]] - code - gateway/proxy/mcp_inspector.py
-- [[.has_findings()]] - code - gateway/proxy/mcp_inspector.py
-- [[.highest_threat()]] - code - gateway/proxy/mcp_inspector.py
-- [[.inspect_tool_call()]] - code - gateway/proxy/mcp_inspector.py
-- [[.inspect_tool_result()]] - code - gateway/proxy/mcp_inspector.py
-- [[A single finding from inspection.]] - rationale - gateway/proxy/mcp_inspector.py
-- [[Any_17]] - code - gateway/proxy/mcp_inspector.py
-- [[Decide whether to block based on findings and mode.]] - rationale - gateway/proxy/mcp_inspector.py
-- [[EnhancedApprovalQueue_1]] - code - gateway/proxy/mcp_proxy.py
-- [[Inspect a tool result for PII and encoding issues.]] - rationale - gateway/proxy/mcp_inspector.py
-- [[Inspect an outgoing tool call for security threats.]] - rationale - gateway/proxy/mcp_inspector.py
-- [[InspectionFinding]] - code - gateway/proxy/mcp_inspector.py
-- [[InspectionResult]] - code - gateway/proxy/mcp_inspector.py
-- [[MCPAuditTrail_1]] - code - gateway/proxy/mcp_proxy.py
-- [[MCPInspector_1]] - code - gateway/proxy/mcp_proxy.py
-- [[MCPPermissionManager_1]] - code - gateway/proxy/mcp_proxy.py
-- [[MCPProxyConfig_2]] - code - gateway/proxy/mcp_proxy.py
-- [[Recursively redact HIGH-severity PII from a value.]] - rationale - gateway/proxy/mcp_inspector.py
-- [[Recursively scan a value, appending findings in-place.]] - rationale - gateway/proxy/mcp_inspector.py
-- [[Result of inspecting a tool call or response.]] - rationale - gateway/proxy/mcp_inspector.py
-- [[Return the highest threat level from all findings.]] - rationale - gateway/proxy/mcp_inspector.py
-- [[Scan a single string for all threat types.]] - rationale - gateway/proxy/mcp_inspector.py
+- [[0) PRIME DIRECTIVE (CODEX ROLE - NON-NEGOTIABLE)]] - document - AGENTS.md
+- [[1) REPOSITORY OVERVIEW]] - document - AGENTS.md
+- [[10) MCP SERVERS (EXTERNAL INTEGRATIONS)]] - document - AGENTS.md
+- [[2) WHAT YOU SHOULD DO (YOUR JOBS)]] - document - AGENTS.md
+- [[3) DEFINITION OF DONE (DoD)]] - document - AGENTS.md
+- [[4) LANGUAGE & TOOLING STANDARDS]] - document - AGENTS.md
+- [[6) SECURITY & SAFETY REQUIREMENTS_1]] - document - AGENTS.md
+- [[7) CODEX CLI OPERATIONAL RULES]] - document - AGENTS.md
+- [[8) CODEX CLI CONFIGURATION]] - document - AGENTS.md
+- [[A) Test Augmenter (Primary Job)]] - document - AGENTS.md
+- [[B) Validation Runner (Primary Job)]] - document - AGENTS.md
+- [[C) Safe Refactor (Secondary Job)]] - document - AGENTS.md
+- [[Cross-platform requirement]] - document - CLAUDE.md
+- [[Goal Codex is a secondarytertiary agent used for test augmentation, validation, and safe refactors AFTER tests pass.]] - document - AGENTS.md
+- [[Next.js  UI Standards]] - document - AGENTS.md
+- [[Primary Focus_1]] - document - AGENTS.md
+- [[Provisioning philosophy]] - document - CLAUDE.md
+- [[Python]] - document - CLAUDE.md
+- [[Python Standards]] - document - AGENTS.md
+- [[Rules_9]] - document - AGENTS.md
+- [[Supporting Integrations]] - document - AGENTS.md
+- [[What You Can Own]] - document - AGENTS.md
+- [[What You Don't Have]] - document - AGENTS.md
+- [[What You Have]] - document - AGENTS.md
+- [[When to Defer to Claude Code]] - document - AGENTS.md
+- [[Your Role in the Multi-Agent System]] - document - AGENTS.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -45,18 +45,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 22 edges to [[_COMMUNITY_Community 44]]
-- 14 edges to [[_COMMUNITY_Community 39]]
-- 5 edges to [[_COMMUNITY_Community 206]]
-- 5 edges to [[_COMMUNITY_Community 109]]
-- 3 edges to [[_COMMUNITY_Community 154]]
-- 2 edges to [[_COMMUNITY_Community 103]]
-- 1 edge to [[_COMMUNITY_Community 473]]
-- 1 edge to [[_COMMUNITY_Community 261]]
+- 1 edge to [[_COMMUNITY_Community 259]]
+- 1 edge to [[_COMMUNITY_Community 773]]
+- 1 edge to [[_COMMUNITY_Community 346]]
+- 1 edge to [[_COMMUNITY_Community 381]]
 
 ## Top bridge nodes
-- [[InspectionResult]] - degree 22, connects to 6 communities
-- [[EnhancedApprovalQueue_1]] - degree 8, connects to 4 communities
-- [[MCPProxyConfig_2]] - degree 8, connects to 4 communities
-- [[MCPAuditTrail_1]] - degree 8, connects to 4 communities
-- [[MCPInspector_1]] - degree 8, connects to 4 communities
+- [[Goal Codex is a secondarytertiary agent used for test augmentation, validation, and safe refactors AFTER tests pass.]] - degree 12, connects to 3 communities
+- [[4) LANGUAGE & TOOLING STANDARDS]] - degree 7, connects to 1 community

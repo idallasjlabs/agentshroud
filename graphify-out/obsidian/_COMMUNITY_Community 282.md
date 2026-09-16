@@ -1,43 +1,44 @@
 ---
 type: community
-cohesion: 0.13
-members: 28
+cohesion: 0.07
+members: 29
 ---
 
 # Community 282
 
-**Cohesion:** 0.13 - loosely connected
-**Members:** 28 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 29 nodes
 
 ## Members
-- [[Daily Component Health Digest Prompt]] - document - docker/config/hermes/cron/prompts/daily-component-health-digest.txt
-- [[Hermes Bot_1]] - concept - CHANGELOG.md
-- [[Hermes Competitive Intelligence Email job]] - concept - docker/config/hermes/cron/jobs.yaml
-- [[Hermes Competitive Landscape Update job]] - concept - docker/config/hermes/cron/jobs.yaml
-- [[Hermes Cron Jobs Reference & Recreation Guide]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
-- [[Hermes Seed Cron Jobs (jobs.yaml)]] - document - docker/config/hermes/cron/jobs.yaml
-- [[How to recreate a job]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
-- [[JOBS-REFERENCE]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
-- [[Jira Weekly Review Prompt (SCRUM-81)]] - document - docker/config/hermes/cron/prompts/jira-weekly-review.txt
-- [[Job index]] - document - docker/config/hermes/cron/JOBS-REFERENCE.md
-- [[Monthly Chaos Engineering Drill Prompt]] - document - docker/config/hermes/cron/prompts/monthly-chaos-engineering-drill.txt
-- [[Newsletter Chat Front-Ends & Search Infra Prompt]] - document - docker/config/hermes/cron/prompts/newsletter-chat-front-ends-search-infra.txt
-- [[Newsletter Coding-Agent CLIs Prompt]] - document - docker/config/hermes/cron/prompts/newsletter-coding-agent-clis.txt
-- [[Newsletter Local Inference Engines Prompt]] - document - docker/config/hermes/cron/prompts/newsletter-local-inference-engines.txt
-- [[Newsletter Mac Clustering Prompt]] - document - docker/config/hermes/cron/prompts/newsletter-mac-clustering.txt
-- [[Newsletter MoE Streaming & SSD Offload Prompt]] - document - docker/config/hermes/cron/prompts/newsletter-moe-streaming-ssd-offload.txt
-- [[Newsletter Model Version Tracker Prompt]] - document - docker/config/hermes/cron/prompts/newsletter-model-version-tracker.txt
-- [[Newsletter Personal AI Assistants Prompt]] - document - docker/config/hermes/cron/prompts/newsletter-personal-ai-assistants.txt
-- [[OMLX MoE Streaming Health Check Prompt]] - document - docker/config/hermes/cron/prompts/omlx-moe-streaming-health-check.txt
-- [[Provider-Must-Be-Custom Rule]] - rationale - docker/config/hermes/cron/JOBS-REFERENCE.md
-- [[agentshroud-email-send.sh]] - concept - docker/config/hermes/cron/jobs.yaml
-- [[agentshroud-email-send.sh Gateway Email Script]] - concept - docker/config/hermes/cron/prompts/hermes-competitive-intelligence-email-am-pm.txt
-- [[append_finding.py Scratch-File Workflow]] - rationale - docker/config/hermes/cron/prompts/newsletter-coding-agent-clis.txt
-- [[gemma-4-26b-a4b-it (Turbo Fieldfare) Model Pin]] - concept - docker/config/hermes/cron/JOBS-REFERENCE.md
-- [[jira_weekly_review.py Committed Script]] - concept - docker/config/hermes/cron/prompts/jira-weekly-review.txt
-- [[oMLX Local Model Backend]] - concept - docker/config/hermes/cron/prompts/omlx-moe-streaming-health-check.txt
-- [[render_md_email.py_1]] - concept - docker/config/hermes/cron/jobs.yaml
-- [[trend-log.md Shared Trend Log]] - concept - docker/config/hermes/cron/prompts/newsletter-coding-agent-clis.txt
+- [[Dead-code  unwired security modules surfaced (No-Security-Theater flags)]] - document - docs/security/ws-e-audit-v1.2.md
+- [[Executive Summary_5]] - document - docs/security/ws-e-audit-v1.2.md
+- [[IEC 62443 risk justification for ACCEPTED items]] - document - docs/security/ws-e-audit-v1.2.md
+- [[MFA note]] - document - docs/security/ws-e-audit-v1.2.md
+- [[Part 1 — Blue-Team Posture Review (SCRUM-72)]] - document - docs/security/ws-e-audit-v1.2.md
+- [[Part 2 — Red-Team Attack Run (SCRUM-73)]] - document - docs/security/ws-e-audit-v1.2.md
+- [[Part 3 — Fix-or-Accept Closure (SCRUM-74)]] - document - docs/security/ws-e-audit-v1.2.md
+- [[RT-1 · Prompt injection — PARTIALLY BLOCKED]] - document - docs/security/ws-e-audit-v1.2.md
+- [[RT-10 · Subagent  delegation privilege escalation — BLOCKED]] - document - docs/security/ws-e-audit-v1.2.md
+- [[RT-11 · MCP-server compromise — BLOCKED-if-configured  dormant-by-default]] - document - docs/security/ws-e-audit-v1.2.md
+- [[RT-12 · Skill supply-chain — PARTIALLY BLOCKED]] - document - docs/security/ws-e-audit-v1.2.md
+- [[RT-2 · Inbound encoding bypass — EXPLOITABLE]] - document - docs/security/ws-e-audit-v1.2.md
+- [[RT-2 — Inbound Encoding Bypass (FIX-RECOMMENDED)]] - rationale - docs/security/ws-e-audit-v1.2.md
+- [[RT-3 · Cross-collaborator data access — BLOCKED (isolation)  gated by RT-6]] - document - docs/security/ws-e-audit-v1.2.md
+- [[RT-4 · Cross-group access — data BLOCKED  group tool-ACL UNWIRED]] - document - docs/security/ws-e-audit-v1.2.md
+- [[RT-5 · Shared-memory write poisoning — EXPLOITABLE]] - document - docs/security/ws-e-audit-v1.2.md
+- [[RT-5 — Shared-Memory Write Poisoning (FIX-RECOMMENDED)]] - rationale - docs/security/ws-e-audit-v1.2.md
+- [[RT-6 · Owner-identity spoofing via `forward` body — EXPLOITABLE → FIXED]] - document - docs/security/ws-e-audit-v1.2.md
+- [[RT-6 — Owner-Identity Spoofing via forward body (FIXED)]] - rationale - docs/security/ws-e-audit-v1.2.md
+- [[RT-7 · Egress exfiltration — BLOCKED in practice  pipeline hook is dead code + residual bypass]] - document - docs/security/ws-e-audit-v1.2.md
+- [[RT-8 · Multi-bot lateral movement (trust ledger) — EXPLOITABLE (inert)]] - document - docs/security/ws-e-audit-v1.2.md
+- [[RT-9 · Approval-queue bypass — PARTIALLY EXPLOITABLE]] - document - docs/security/ws-e-audit-v1.2.md
+- [[RT-9b · Approval privilege-separation — EXPLOITABLE]] - document - docs/security/ws-e-audit-v1.2.md
+- [[Risk Callouts]] - document - docs/security/ws-e-audit-v1.2.md
+- [[Verification Steps]] - document - docs/security/ws-e-audit-v1.2.md
+- [[WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)]] - document - docs/security/ws-e-audit-v1.2.md
+- [[gatewayproxypipeline.py (inboundoutbound guard chain)]] - code - gateway/proxy/pipeline.py
+- [[rbac.py (5-level RBAC hierarchy)]] - code - gateway/security/rbac.py
+- [[ws-e-audit-v1.2]] - document - docs/security/ws-e-audit-v1.2.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -47,15 +48,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_Community 491]]
-- 3 edges to [[_COMMUNITY_Community 283]]
-- 2 edges to [[_COMMUNITY_Community 395]]
-- 1 edge to [[_COMMUNITY_Community 213]]
-- 1 edge to [[_COMMUNITY_Community 521]]
+- 4 edges to [[_COMMUNITY_Community 271]]
+- 2 edges to [[_COMMUNITY_Approval Routing & Event Bus]]
+- 1 edge to [[_COMMUNITY_Community 457]]
 
 ## Top bridge nodes
-- [[Hermes Cron Jobs Reference & Recreation Guide]] - degree 24, connects to 4 communities
-- [[Hermes Competitive Intelligence Email job]] - degree 8, connects to 3 communities
-- [[Hermes Competitive Landscape Update job]] - degree 6, connects to 3 communities
-- [[Hermes Bot_1]] - degree 5, connects to 1 community
-- [[gemma-4-26b-a4b-it (Turbo Fieldfare) Model Pin]] - degree 5, connects to 1 community
+- [[WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)]] - degree 18, connects to 3 communities
+- [[RT-6 — Owner-Identity Spoofing via forward body (FIXED)]] - degree 2, connects to 1 community

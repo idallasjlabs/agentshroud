@@ -1,41 +1,41 @@
 ---
 type: community
-cohesion: 0.09
+cohesion: 0.08
 members: 26
 ---
 
 # Community 323
 
-**Cohesion:** 0.09 - loosely connected
+**Cohesion:** 0.08 - loosely connected
 **Members:** 26 nodes
 
 ## Members
-- [[.constructor()]] - code - docker/config/openclaw/setup-https-proxy.js
-- [[.createConnection()]] - code - docker/config/openclaw/setup-https-proxy.js
-- [[AgentShroud Falco Detection Rules]] - document - docker/falco/rules.yaml
-- [[ConnectProxyAgent]] - code - docker/config/openclaw/setup-https-proxy.js
-- [[Falco Configuration]] - document - docker/falco/falco.yaml
-- [[Falco Rule Container Shell Spawned]] - concept - docker/falco/rules.yaml
-- [[Falco Rule Crypto Mining Detection]] - concept - docker/falco/rules.yaml
-- [[Falco Rule File Access Outside Workspace]] - concept - docker/falco/rules.yaml
-- [[Falco Rule Privilege Escalation Attempt]] - concept - docker/falco/rules.yaml
-- [[Falco Rule Secret File Access]] - concept - docker/falco/rules.yaml
-- [[Falco Rule Unexpected Outbound Connection from AgentShroud]] - concept - docker/falco/rules.yaml
-- [[NO_PROXY_HOSTS]] - code - docker/config/openclaw/setup-https-proxy.js
-- [[PatchedWebSocket]] - code - docker/config/openclaw/setup-https-proxy.js
-- [[bot-access-audit.sh]] - code - docker/scripts/bot-access-audit.sh
-- [[bot-access-audit.sh script]] - code - docker/scripts/bot-access-audit.sh
-- [[http]] - code - docker/config/openclaw/setup-https-proxy.js
-- [[https_2]] - code - docker/config/openclaw/setup-https-proxy.js
-- [[net]] - code - docker/config/openclaw/setup-https-proxy.js
-- [[proxyCreateConnection()]] - code - docker/config/openclaw/setup-https-proxy.js
-- [[run_op()]] - code - docker/scripts/bot-access-audit.sh
-- [[setup-https-proxy patchWsForProxy()]] - code - docker/config/openclaw/setup-https-proxy.js
-- [[setup-https-proxy proxyCreateConnection()]] - code - docker/config/openclaw/setup-https-proxy.js
-- [[setup-https-proxy shouldBypass()]] - code - docker/config/openclaw/setup-https-proxy.js
-- [[setup-https-proxy.js]] - code - docker/config/openclaw/setup-https-proxy.js
-- [[shouldBypass()]] - code - docker/config/openclaw/setup-https-proxy.js
-- [[tls]] - code - docker/config/openclaw/setup-https-proxy.js
+- [[Approval Queue Issues]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
+- [[Bot Not Responding to Telegram Messages]] - document - docs/runbooks/troubleshooting.md
+- [[Common Issues]] - document - docs/runbooks/troubleshooting.md
+- [[Connectivity Issues]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
+- [[Container Keeps Restarting]] - document - docs/runbooks/troubleshooting.md
+- [[Container Stability Issues]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
+- [[ContextGuard False Positive Collaborator Block]] - rationale - docs/project/TELEGRAM_ISSUES.md
+- [[Dashboard Not Loading]] - document - docs/runbooks/troubleshooting.md
+- [[Debugging Commands]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
+- [[Diagnostic Commands]] - document - docs/runbooks/troubleshooting.md
+- [[Egress  Network Issues]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
+- [[Getting Help]] - document - docs/runbooks/troubleshooting.md
+- [[Kill Switch Won't Deactivate]] - document - docs/runbooks/troubleshooting.md
+- [[Kill Switch Won't Deactivate Troubleshooting]] - concept - docs/runbooks/troubleshooting.md
+- [[PII  Sanitization Issues]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
+- [[PII Sanitizer Blocking Legitimate Content]] - document - docs/runbooks/troubleshooting.md
+- [[Prompt Injection Issues]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
+- [[Quick Diagnosis Flow]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
+- [[Related Notes_28]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
+- [[SSH Command Approval Stuck]] - document - docs/runbooks/troubleshooting.md
+- [[Security Module Issues]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
+- [[Startup Issues]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
+- [[Tailscale Serve Not Working]] - document - docs/runbooks/troubleshooting.md
+- [[Tests Failing]] - document - docs/runbooks/troubleshooting.md
+- [[Troubleshooting Runbook — AgentShroud]] - document - docs/runbooks/troubleshooting.md
+- [[troubleshooting_25]] - document - docs/runbooks/troubleshooting.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -43,3 +43,15 @@ members: 26
 TABLE source_file, type FROM #community/Community_323
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_Community 512]]
+- 1 edge to [[_COMMUNITY_Community 254]]
+- 1 edge to [[_COMMUNITY_Community 786]]
+- 1 edge to [[_COMMUNITY_Community 785]]
+- 1 edge to [[_COMMUNITY_Community 577]]
+
+## Top bridge nodes
+- [[troubleshooting_25]] - degree 18, connects to 4 communities
+- [[Troubleshooting Runbook — AgentShroud]] - degree 5, connects to 1 community
+- [[ContextGuard False Positive Collaborator Block]] - degree 2, connects to 1 community

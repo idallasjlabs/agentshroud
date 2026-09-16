@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Admin CLI Chat Console (OpenClaw via Gateway)]] - code - src/interfaces/chat_console.py
+- [[Self-Written Whisper Domain-Hint Prompt]] - concept - docker/config/openclaw/skills/graphify/references/transcribe.md
 
 ## Live Query (requires Dataview plugin)
 

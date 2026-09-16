@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Mermaid Brand Theme Init Block]] - concept - docker/config/openclaw/skills/i-ti/SKILL.md
+- [[Apple Touch Icon (AgentShroud logo mark)]] - image - branding/favicons/apple-touch-icon.png
 
 ## Live Query (requires Dataview plugin)
 

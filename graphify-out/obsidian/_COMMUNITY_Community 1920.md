@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[voice_gatewaytts.py — Kokoro Text-to-Speech]] - code - voice_gateway/tts.py
+- [[ota.h]] - code - firmware/voice-terminal/main/ota.h
 
 ## Live Query (requires Dataview plugin)
 

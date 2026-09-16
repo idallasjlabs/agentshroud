@@ -1,35 +1,35 @@
 ---
 type: community
-cohesion: 0.10
+cohesion: 0.14
 members: 20
 ---
 
 # Community 457
 
-**Cohesion:** 0.10 - loosely connected
+**Cohesion:** 0.14 - loosely connected
 **Members:** 20 nodes
 
 ## Members
-- [[.test_auto_revert_timer_logic()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_get_module_mode_pinned_modules()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_get_module_mode_respect_global_override()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_module_mode_resolution()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_observatory_mode_state_initialization()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_observatory_mode_validation()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_pinned_modules_validation()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_security_pipeline_set_global_mode()]] - code - gateway/tests/test_observatory_mode.py
-- [[.test_security_pipeline_set_global_mode_missing_components()]] - code - gateway/tests/test_observatory_mode.py
-- [[Test Observatory Mode configuration and endpoints.]] - rationale - gateway/tests/test_observatory_mode.py
-- [[Test SecurityPipeline.set_global_mode method.]] - rationale - gateway/tests/test_observatory_mode.py
-- [[Test auto-revert timer functionality.]] - rationale - gateway/tests/test_observatory_mode.py
-- [[Test module mode resolution with pinned modules.]] - rationale - gateway/tests/test_observatory_mode.py
-- [[Test set_global_mode handles missing components gracefully.]] - rationale - gateway/tests/test_observatory_mode.py
-- [[Test that get_module_mode respects AGENTSHROUD_MODE env var.]] - rationale - gateway/tests/test_observatory_mode.py
-- [[Test that observatory mode state is properly initialized.]] - rationale - gateway/tests/test_observatory_mode.py
-- [[Test that pinned modules always return enforce even in monitor mode.]] - rationale - gateway/tests/test_observatory_mode.py
-- [[Test validation of observatory mode parameters.]] - rationale - gateway/tests/test_observatory_mode.py
-- [[Test validation of pinned module names.]] - rationale - gateway/tests/test_observatory_mode.py
-- [[TestObservatoryMode]] - code - gateway/tests/test_observatory_mode.py
+- [[AgentShroud v0.8.0 Watchtower Release Plan]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[AgentShroud v0.9.0 Deep Hardening Release Notes]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
+- [[AgentShroud v0.9.0 Multi-Runtime & Multi-Platform Release Plan]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
+- [[CVE-2026-22708 (Prompt Injection bypass)]] - concept - docs/project/glossary.md
+- [[CVE-2026-25253 (DNS Tunneling)]] - concept - docs/project/glossary.md
+- [[Container Runtime]] - concept - docs/project/glossary.md
+- [[DNS Tunneling]] - concept - docs/project/glossary.md
+- [[Enforce Mode]] - concept - docs/project/glossary.md
+- [[Functional Requirements Coverage]] - document - docs/security/audit-specification.md
+- [[Hash Chain]] - concept - docs/project/glossary.md
+- [[IEC 62443 Industrial Security Framework]] - document - docs/security/audit-specification.md
+- [[Marvin (proddev host)]] - concept - docs/runbooks/colima-docker-guide.md
+- [[Monitor Mode_1]] - concept - docs/project/glossary.md
+- [[NFKC Normalization]] - concept - docs/project/glossary.md
+- [[Raspberry Pi (host, arm64, low-resource)]] - concept - docs/runbooks/colima-docker-guide.md
+- [[STPA-Sec (Systems-Theoretic Process Analysis for Security)]] - concept - docs/planning/v0.9/release-notes-v0.9.0.md
+- [[Security Levels Mapping]] - document - docs/security/audit-specification.md
+- [[Steven Hay (Security Advisor)]] - concept - docs/planning/v0.9/release-notes-v0.9.0.md
+- [[Trillian (host, x86_64)]] - concept - docs/runbooks/colima-docker-guide.md
+- [[colima-docker-guide]] - document - docs/runbooks/colima-docker-guide.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,14 +39,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_PII Sanitizer & E2E Tests]]
-- 2 edges to [[_COMMUNITY_Community 25]]
-- 1 edge to [[_COMMUNITY_Community 157]]
-- 1 edge to [[_COMMUNITY_Community 156]]
-- 1 edge to [[_COMMUNITY_Community 29]]
+- 10 edges to [[_COMMUNITY_Community 271]]
+- 3 edges to [[_COMMUNITY_Community 146]]
+- 2 edges to [[_COMMUNITY_Community 355]]
+- 1 edge to [[_COMMUNITY_Community 150]]
+- 1 edge to [[_COMMUNITY_Community 197]]
+- 1 edge to [[_COMMUNITY_Community 282]]
 
 ## Top bridge nodes
-- [[TestObservatoryMode]] - degree 15, connects to 4 communities
-- [[.test_get_module_mode_respect_global_override()]] - degree 3, connects to 1 community
-- [[.test_security_pipeline_set_global_mode()]] - degree 3, connects to 1 community
-- [[.test_security_pipeline_set_global_mode_missing_components()]] - degree 3, connects to 1 community
+- [[IEC 62443 Industrial Security Framework]] - degree 7, connects to 3 communities
+- [[AgentShroud v0.8.0 Watchtower Release Plan]] - degree 14, connects to 2 communities
+- [[colima-docker-guide]] - degree 5, connects to 2 communities
+- [[AgentShroud v0.9.0 Deep Hardening Release Notes]] - degree 10, connects to 1 community
+- [[Container Runtime]] - degree 5, connects to 1 community

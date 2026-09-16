@@ -1,35 +1,36 @@
 ---
 type: community
 cohesion: 0.10
-members: 20
+members: 21
 ---
 
 # Community 438
 
 **Cohesion:** 0.10 - loosely connected
-**Members:** 20 nodes
+**Members:** 21 nodes
 
 ## Members
-- [[A. AWS Glue Jobs]] - document - .agents/skills/i-qa/SKILL.md
-- [[B. AWS Step Functions]] - document - .agents/skills/i-qa/SKILL.md
-- [[C. AWS Athena]] - document - .agents/skills/i-qa/SKILL.md
-- [[D. PostgreSQL — RDS (`fe-gsdl-poc-database`)]] - document - .agents/skills/i-qa/SKILL.md
-- [[E. MySQL — On-Site Zabbix Databases (200+ sites)]] - document - .agents/skills/i-qa/SKILL.md
-- [[F. IAM Policies]] - document - .agents/skills/i-qa/SKILL.md
-- [[G. Tailscale  Network]] - document - .agents/skills/i-qa/SKILL.md
-- [[General Rules]] - document - .agents/skills/i-qa/SKILL.md
-- [[H. Service Control for Production Testing]] - document - .agents/skills/i-qa/SKILL.md
-- [[H.1 Pause Glue Jobs Before Testing]] - document - .agents/skills/i-qa/SKILL.md
-- [[H.2 Pause Step Functions Before Testing]] - document - .agents/skills/i-qa/SKILL.md
-- [[H.3 Database Tables for Test Data]] - document - .agents/skills/i-qa/SKILL.md
-- [[H.4 Cleanup Verification Checklist]] - document - .agents/skills/i-qa/SKILL.md
-- [[Objective_1]] - document - .agents/skills/i-qa/SKILL.md
-- [[Output Format_8]] - document - .agents/skills/i-qa/SKILL.md
-- [[Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT]] - document - .agents/skills/i-qa/SKILL.md
-- [[Role_29]] - document - .agents/skills/i-qa/SKILL.md
-- [[SKILL_45]] - document - .agents/skills/i-qa/SKILL.md
-- [[Skill Quality Assurance (QA)]] - document - .agents/skills/i-qa/SKILL.md
-- [[Testing Hierarchy]] - document - .agents/skills/i-qa/SKILL.md
+- [[1. Container Hardening]] - document - docs/security/container-policy.md
+- [[1.1 Capabilities]] - document - docs/security/container-policy.md
+- [[1.2 Seccomp Profile]] - document - docs/security/container-policy.md
+- [[1.3 Read-Only Filesystem (Planned)]] - document - docs/security/container-policy.md
+- [[1.4 Non-Root Execution]] - document - docs/security/container-policy.md
+- [[1.5 Resource Limits]] - document - docs/security/container-policy.md
+- [[3. Secret Management]] - document - docs/security/container-policy.md
+- [[3.1 Hierarchy]] - document - docs/security/container-policy.md
+- [[3.2 Rules]] - document - docs/security/container-policy.md
+- [[3.3 Secret Rotation]] - document - docs/security/container-policy.md
+- [[4. Image Provenance and Updates]] - document - docs/security/container-policy.md
+- [[4.1 Base Images]] - document - docs/security/container-policy.md
+- [[4.2 Dependencies]] - document - docs/security/container-policy.md
+- [[4.3 Image Build]] - document - docs/security/container-policy.md
+- [[4.4 Image Storage]] - document - docs/security/container-policy.md
+- [[5. Runtime Monitoring]] - document - docs/security/container-policy.md
+- [[5.1 Health Checks]] - document - docs/security/container-policy.md
+- [[5.2 Logging]] - document - docs/security/container-policy.md
+- [[5.3 Monitoring Checklist]] - document - docs/security/container-policy.md
+- [[6. Incident Response (Container-Specific)]] - document - docs/security/container-policy.md
+- [[Container Security Policy — AgentShroud]] - document - docs/security/container-policy.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,3 +38,10 @@ members: 20
 TABLE source_file, type FROM #community/Community_438
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 634]]
+- 1 edge to [[_COMMUNITY_Community 560]]
+
+## Top bridge nodes
+- [[Container Security Policy — AgentShroud]] - degree 7, connects to 2 communities

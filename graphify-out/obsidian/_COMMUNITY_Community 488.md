@@ -1,33 +1,34 @@
 ---
 type: community
 cohesion: 0.11
-members: 18
+members: 19
 ---
 
 # Community 488
 
 **Cohesion:** 0.11 - loosely connected
-**Members:** 18 nodes
+**Members:** 19 nodes
 
 ## Members
-- [[6.1 Enforcement Test Coverage]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[6.2 Attack Simulation Coverage]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[A) Test Coverage Analysis]] - document - .github/agents/test-augmenter.agent.md
-- [[B) Edge Case Identification]] - document - .github/agents/test-augmenter.agent.md
-- [[C) Test Quality]] - document - .github/agents/test-augmenter.agent.md
-- [[Definition of Done_1]] - document - .github/agents/test-augmenter.agent.md
-- [[Environment_1]] - document - .github/agents/test-augmenter.agent.md
-- [[Expected Coverage]] - document - .github/agents/test-augmenter.agent.md
-- [[Python Tests (pytest)]] - document - .github/agents/test-augmenter.agent.md
-- [[Remember_1]] - document - .github/agents/test-augmenter.agent.md
-- [[Repository Context_2]] - document - .github/agents/test-augmenter.agent.md
-- [[Role Definition_1]] - document - .github/agents/test-augmenter.agent.md
-- [[Test Augmentation Specialist]] - document - .github/agents/test-augmenter.agent.md
-- [[Test Commands]] - document - .github/agents/test-augmenter.agent.md
-- [[Test Standards]] - document - .github/agents/test-augmenter.agent.md
-- [[Tooling Standards]] - document - .github/agents/test-augmenter.agent.md
-- [[What You CANNOT Do]] - document - .github/agents/test-augmenter.agent.md
-- [[Your Responsibilities]] - document - .github/agents/test-augmenter.agent.md
+- [[dot-test_clean_fresh_and_stale_reports()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_clean_no_report_three()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_critical_high_medium_branches()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_failures_score_two()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_fresh_clean_is_optimizing()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_malware_30h_old_scan_measured()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_malware_fresh_scan_optimizing()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_malware_running_but_nothing_scanned()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_not_run_no_binary()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_oscap_binary_present_not_run()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_runtime_noncritical_findings_scores_four()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_stale_report_caps_at_one()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_two_day_old_clean_is_measured()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[Path_46]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[Set a file's mtime to `hours` hours in the past.]] - rationale - gateway/tests/test_scanner_integration_coverage.py
+- [[TestComplianceAuditing]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestRuntimeProtectionAndMalware]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestVulnerabilityManagement]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[_age()]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,9 +38,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 785]]
-- 1 edge to [[_COMMUNITY_Community 185]]
+- 8 edges to [[_COMMUNITY_Community 200]]
+- 4 edges to [[_COMMUNITY_Community 297]]
+- 1 edge to [[_COMMUNITY_Community 1328]]
 
 ## Top bridge nodes
-- [[Test Augmentation Specialist]] - degree 10, connects to 1 community
-- [[A) Test Coverage Analysis]] - degree 4, connects to 1 community
+- [[_age()]] - degree 7, connects to 2 communities
+- [[TestComplianceAuditing]] - degree 6, connects to 1 community
+- [[TestRuntimeProtectionAndMalware]] - degree 5, connects to 1 community
+- [[TestVulnerabilityManagement]] - degree 5, connects to 1 community
+- [[dot-test_clean_fresh_and_stale_reports()]] - degree 3, connects to 1 community

@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[_startup_scanner() — ClamAV+Trivy startup scan]] - code - gateway/ingest_api/lifespan.py
+- [[EnhancedApprovalQueue.submit_tool_request]] - code - gateway/approval_queue/enhanced_queue.py
 
 ## Live Query (requires Dataview plugin)
 

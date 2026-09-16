@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[cd (Continuous Delivery) SKILL stub (OpenClaw)]] - document - docker/config/openclaw/skills/i-cd/SKILL.md
+- [[PWA Icon 192x192 (AgentShroud logo mark)]] - image - branding/favicons/icon-192x192.png
 
 ## Live Query (requires Dataview plugin)
 

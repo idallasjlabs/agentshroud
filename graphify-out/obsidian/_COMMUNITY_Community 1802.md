@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[chaos-engineering SKILL stub (OpenClaw)]] - document - docker/config/openclaw/skills/i-chaos-engineering/SKILL.md
+- [[App Icon 128x128 (AgentShroud logo mark)]] - image - branding/icons/app/icon-128x128.png
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,40 +1,40 @@
 ---
 type: community
-cohesion: 0.08
+cohesion: 0.09
 members: 25
 ---
 
 # Community 350
 
-**Cohesion:** 0.08 - loosely connected
+**Cohesion:** 0.09 - loosely connected
 **Members:** 25 nodes
 
 ## Members
-- [[.setup_method()_12]] - code - gateway/tests/test_metadata_guard.py
-- [[.test_all_unicode_control_chars_stripped()]] - code - gateway/tests/test_metadata_guard.py
-- [[.test_check_for_exif_detects_magic_bytes()]] - code - gateway/tests/test_metadata_guard.py
-- [[.test_check_oversized_headers_flags_large_headers()]] - code - gateway/tests/test_metadata_guard.py
-- [[.test_check_oversized_headers_passes_normal_headers()]] - code - gateway/tests/test_metadata_guard.py
-- [[.test_internal_ip_patterns_comprehensive()]] - code - gateway/tests/test_metadata_guard.py
-- [[.test_sanitize_filename_normalizes_unicode()]] - code - gateway/tests/test_metadata_guard.py
-- [[.test_sanitize_filename_strips_control_chars()]] - code - gateway/tests/test_metadata_guard.py
-- [[.test_sanitize_headers_redacts_internal_ips()]] - code - gateway/tests/test_metadata_guard.py
-- [[.test_sanitize_headers_strips_sensitive()]] - code - gateway/tests/test_metadata_guard.py
-- [[.test_sanitize_headers_truncates_on_size_limit()]] - code - gateway/tests/test_metadata_guard.py
-- [[.test_sanitize_image_metadata_preserves_non_exif()]] - code - gateway/tests/test_metadata_guard.py
-- [[.test_sanitize_image_metadata_removes_exif()]] - code - gateway/tests/test_metadata_guard.py
-- [[Test comprehensive internal IP pattern matching.]] - rationale - gateway/tests/test_metadata_guard.py
-- [[Test that EXIF metadata is removed from image data.]] - rationale - gateway/tests/test_metadata_guard.py
-- [[Test that all specified unicode control characters are stripped.]] - rationale - gateway/tests/test_metadata_guard.py
-- [[Test that header sanitization stops at size limit.]] - rationale - gateway/tests/test_metadata_guard.py
-- [[Test that internal IPs are redacted from headers.]] - rationale - gateway/tests/test_metadata_guard.py
-- [[Test that non-EXIF data is preserved.]] - rationale - gateway/tests/test_metadata_guard.py
-- [[Test that normal-sized headers pass.]] - rationale - gateway/tests/test_metadata_guard.py
-- [[Test that oversized headers are flagged.]] - rationale - gateway/tests/test_metadata_guard.py
-- [[Test that sensitive headers are stripped.]] - rationale - gateway/tests/test_metadata_guard.py
-- [[Test that unicode control characters are stripped.]] - rationale - gateway/tests/test_metadata_guard.py
-- [[Test that unicode is normalized with NFKC.]] - rationale - gateway/tests/test_metadata_guard.py
-- [[TestMetadataGuard]] - code - gateway/tests/test_metadata_guard.py
+- [[AgentShroud Security Scripts Reference]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[Alerting]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[Automation Examples]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[Best Practices_7]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[CICD Integration]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[Daily Security Check (cron)]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[Defense in Depth (Bot Instructions + Gateway + Audit Log)]] - rationale - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[Kill Switch]] - document - dashboard/README.md
+- [[Logging]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[Mode 1 freeze]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[Mode 2 shutdown]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[Mode 3 disconnect (⚠️ DANGEROUS)]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[Monitoring Integration]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[PrometheusGrafana]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[SECURITY-IMPLEMENTATION-VERIFICATION]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
+- [[SECURITY_SCRIPTS_REFERENCE]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[Script Permissions]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[Troubleshooting_28]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[VERIFICATION_RESULTS]] - document - docs/security/VERIFICATION_RESULTS.md
+- [[Weekly Compliance Scan (cron)]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[killswitch.sh doesn't confirm]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[scan.sh]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[scan.sh reports missing OpenSCAP]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[verify-security.sh]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[verify-security.sh fails]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -44,9 +44,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 581]]
-- 2 edges to [[_COMMUNITY_Security Audit & Drift Detection]]
+- 2 edges to [[_COMMUNITY_Community 578]]
+- 1 edge to [[_COMMUNITY_Community 146]]
+- 1 edge to [[_COMMUNITY_Approval Routing & Event Bus]]
+- 1 edge to [[_COMMUNITY_Community 931]]
+- 1 edge to [[_COMMUNITY_Community 634]]
+- 1 edge to [[_COMMUNITY_Community 603]]
+- 1 edge to [[_COMMUNITY_Community 742]]
+- 1 edge to [[_COMMUNITY_Community 391]]
 
 ## Top bridge nodes
-- [[TestMetadataGuard]] - degree 16, connects to 2 communities
-- [[.setup_method()_12]] - degree 2, connects to 1 community
+- [[SECURITY-IMPLEMENTATION-VERIFICATION]] - degree 6, connects to 4 communities
+- [[Kill Switch]] - degree 9, connects to 3 communities
+- [[VERIFICATION_RESULTS]] - degree 5, connects to 2 communities

@@ -1,36 +1,36 @@
 ---
 type: community
-cohesion: 0.10
+cohesion: 0.11
 members: 21
 ---
 
 # Community 430
 
-**Cohesion:** 0.10 - loosely connected
+**Cohesion:** 0.11 - loosely connected
 **Members:** 21 nodes
 
 ## Members
-- [[Blocked Command Patterns (via `_contains_env_access_patterns`)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[Blocked Commands]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[Blocked Paths]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[Environment Variables_13]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[EnvironmentGuard.check_command_execution(command, agent_id)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[EnvironmentGuard.check_file_access(file_path, agent_id)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[EnvironmentGuard.monitor_environment_access(agent_id)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[EnvironmentGuard.scrub_command_output(output, command)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[Function Details_38]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[Global Singleton]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[Key Classes  Functions_41]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[Mode Enforce vs Monitor_8]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[Purpose_159]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[Related_45]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[Responsibilities_43]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[Threat Model_14]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[Tracked Credential Variable Names (subset)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[check_command(cmd)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[env_guard.py_2]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[env_guard.py_1]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
-- [[scrub_output(text)]] - document - docs/vault/02 - Modules/Security Modules/env_guard.py.md
+- [[1Password CLI Skill]] - document - skills/openclaw/1password/SKILL.md
+- [[1Password Desktop App Integration Flow]] - document - skills/openclaw/1password/references/get-started.md
+- [[1Password Item ID Vault-Structure Disclosure]] - rationale - docs/security/secret-scan-results.md
+- [[Archive Directory Exposure Risk]] - concept - docs/security/secret-scan-results.md
+- [[Credential Rotation Checklist]] - concept - docs/security/secrets-inventory.md
+- [[Deploy-Time dockersecrets Provisioning]] - concept - docs/security/secrets-inventory.md
+- [[Gateway Auth Token Reference Exposure]] - concept - docs/security/secret-scan-results.md
+- [[Git History Expungement via filter-repo]] - rationale - docs/security/secrets-inventory.md
+- [[GitHub 90-Day Unreferenced-Commit Cache Warning]] - rationale - docs/security/secrets-inventory.md
+- [[Gitignored wifi_credentials.h Pattern]] - rationale - firmware/voice-terminal/SETUP.md
+- [[Post-Purge Gitleaks Verification]] - concept - docs/security/secret-scan-results.md
+- [[Pre-Purge Secret Rotation Checklist]] - document - docs/security/secret-scan-results.md
+- [[Pre-Release Secrets Inventory]] - document - docs/security/secrets-inventory.md
+- [[Real Credentials Present in Git History]] - concept - docs/security/secrets-inventory.md
+- [[Required Dedicated tmux Session For op]] - rationale - skills/openclaw/1password/SKILL.md
+- [[Secret-Adjacent Template Files (.example)]] - concept - docs/security/secrets-inventory.md
+- [[Telegram Bot Token Reference Exposure]] - concept - docs/security/secret-scan-results.md
+- [[Telegram Chat History Artifact Risk]] - concept - docs/security/secret-scan-results.md
+- [[iCloud App-Specific Password Reference Exposure]] - concept - docs/security/secret-scan-results.md
+- [[op Secret-Handling Guardrails]] - rationale - skills/openclaw/1password/SKILL.md
+- [[op read  run  inject Command Examples]] - document - skills/openclaw/1password/references/cli-examples.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -38,3 +38,11 @@ members: 21
 TABLE source_file, type FROM #community/Community_430
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 569]]
+- 1 edge to [[_COMMUNITY_Community 407]]
+
+## Top bridge nodes
+- [[Gitignored wifi_credentials.h Pattern]] - degree 2, connects to 1 community
+- [[1Password Desktop App Integration Flow]] - degree 2, connects to 1 community

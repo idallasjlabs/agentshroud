@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[UserSessionManager Isolation Tests]] - code - gateway/tests/test_session_isolation.py
+- [[Diagram 17 State — Bot Session]] - image - docs/diagrams/images/diagram-17-state-bot-session.svg
 
 ## Live Query (requires Dataview plugin)
 

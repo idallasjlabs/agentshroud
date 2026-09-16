@@ -1,44 +1,45 @@
 ---
 type: community
-cohesion: 0.11
-members: 29
+cohesion: 0.12
+members: 30
 ---
 
 # Community 277
 
-**Cohesion:** 0.11 - loosely connected
-**Members:** 29 nodes
+**Cohesion:** 0.12 - loosely connected
+**Members:** 30 nodes
 
 ## Members
-- [[.__aenter__()_2]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.__aexit__()_2]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.__aiter__()_1]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.__anext__()_1]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.__init__()_151]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.__init__()_152]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.send()_2]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_authorized_request_proxied_upstream()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_generic_exception_and_failing_close_swallowed()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_lifespan_startup_shutdown()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_relay_with_trusted_origin()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_sec_websocket_protocol_token_authenticates()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_skip_basic_auth_bypasses_gate()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_token_query_param_authenticates_ws()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_unauthorized_returns_401()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_unauthorized_ws_closed_4401()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_upstream_failure_returns_502()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_upstream_ws_exception_closes_gracefully()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[Async context manager mimicking websockets.connect().]] - rationale - gateway/tests/test_dns_canvas_coverage.py
-- [[Drive the canvas ASGI app with scripted receive events; collect sends.]] - rationale - gateway/tests/test_dns_canvas_coverage.py
-- [[Fake upstream WebSocket yields scripted messages, records sends.]] - rationale - gateway/tests/test_dns_canvas_coverage.py
-- [[TestCanvasHTTP]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[TestCanvasLifespan]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[TestCanvasWebSocket]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[_FakeUpstreamWS]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[_FakeWSConnect]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[_http_scope()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[_run_asgi()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[_ws_scope()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-__init__()_116]] - code - src/interfaces/text_control_center.py
+- [[dot-clear_screen()]] - code - src/interfaces/text_control_center.py
+- [[dot-draw_approvals()]] - code - src/interfaces/text_control_center.py
+- [[dot-draw_box()]] - code - src/interfaces/text_control_center.py
+- [[dot-draw_dashboard()]] - code - src/interfaces/text_control_center.py
+- [[dot-draw_kill_switch()]] - code - src/interfaces/text_control_center.py
+- [[dot-draw_log()]] - code - src/interfaces/text_control_center.py
+- [[dot-draw_modules()]] - code - src/interfaces/text_control_center.py
+- [[dot-draw_ssh_hosts()]] - code - src/interfaces/text_control_center.py
+- [[dot-get_auth()]] - code - src/interfaces/text_control_center.py
+- [[dot-get_key()]] - code - src/interfaces/text_control_center.py
+- [[dot-make_api_request()]] - code - src/interfaces/text_control_center.py
+- [[dot-run()_3]] - code - src/interfaces/text_control_center.py
+- [[ANSI]] - code - src/interfaces/text_control_center.py
+- [[Clear screen and position cursor at home]] - rationale - src/interfaces/text_control_center.py
+- [[ControlCenter]] - code - src/interfaces/text_control_center.py
+- [[Draw SSH hosts status screen]] - rationale - src/interfaces/text_control_center.py
+- [[Draw a box with title]] - rationale - src/interfaces/text_control_center.py
+- [[Draw approval queue screen]] - rationale - src/interfaces/text_control_center.py
+- [[Draw audit log screen]] - rationale - src/interfaces/text_control_center.py
+- [[Draw kill switch screen]] - rationale - src/interfaces/text_control_center.py
+- [[Draw main dashboard screen]] - rationale - src/interfaces/text_control_center.py
+- [[Draw modules list screen]] - rationale - src/interfaces/text_control_center.py
+- [[Get a single keypress (non-blocking)]] - rationale - src/interfaces/text_control_center.py
+- [[Get gateway authentication]] - rationale - src/interfaces/text_control_center.py
+- [[Main control center loop]] - rationale - src/interfaces/text_control_center.py
+- [[Make authenticated API request to gateway]] - rationale - src/interfaces/text_control_center.py
+- [[main()_15]] - code - src/interfaces/text_control_center.py
+- [[start-control-center]] - code - scripts/start-control-center
+- [[text_control_center.py_1]] - code - src/interfaces/text_control_center.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -46,16 +47,3 @@ members: 29
 TABLE source_file, type FROM #community/Community_277
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 8 edges to [[_COMMUNITY_Community 424]]
-- 6 edges to [[_COMMUNITY_Community 557]]
-- 5 edges to [[_COMMUNITY_Community 142]]
-- 3 edges to [[_COMMUNITY_Community 732]]
-
-## Top bridge nodes
-- [[_FakeUpstreamWS]] - degree 12, connects to 3 communities
-- [[_FakeWSConnect]] - degree 9, connects to 3 communities
-- [[TestCanvasWebSocket]] - degree 9, connects to 3 communities
-- [[TestCanvasHTTP]] - degree 7, connects to 3 communities
-- [[TestCanvasLifespan]] - degree 4, connects to 3 communities

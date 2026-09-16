@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[AgentShroud GitHub Social Preview Image]] - image - branding/social/github-social-preview-1280x640.png
+- [[graphify add URL Ingestion]] - concept - docker/config/openclaw/skills/graphify/references/add-watch.md
 
 ## Live Query (requires Dataview plugin)
 

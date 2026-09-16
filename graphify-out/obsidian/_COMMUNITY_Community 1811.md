@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[AgentShroud Presentation Content Slide Template]] - image - branding/presentation/content-slide-template-1920x1080.png
+- [[AgentShroud Presentation Title Slide]] - image - branding/presentation/title-slide-1920x1080.png
 
 ## Live Query (requires Dataview plugin)
 

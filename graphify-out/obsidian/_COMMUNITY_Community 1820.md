@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[_INJECTION_PATTERNS (prompt injection regex set)]] - code - gateway/proxy/web_content_scanner.py
+- [[v0.9.0 Sentinel — SOC team collaboration]] - document - CHANGELOG.md
 
 ## Live Query (requires Dataview plugin)
 

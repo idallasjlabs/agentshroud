@@ -1,36 +1,36 @@
 ---
 type: community
-cohesion: 0.10
+cohesion: 0.12
 members: 21
 ---
 
 # Community 420
 
-**Cohesion:** 0.10 - loosely connected
+**Cohesion:** 0.12 - loosely connected
 **Members:** 21 nodes
 
 ## Members
-- [[AgentShroud Semgrep SAST Configuration]] - document - .semgrep.yml
-- [[Checklist]] - document - .github/PULL_REQUEST_TEMPLATE.md
-- [[IEC 62443 Reference]] - document - .github/PULL_REQUEST_TEMPLATE.md
-- [[PULL_REQUEST_TEMPLATE]] - document - .github/PULL_REQUEST_TEMPLATE.md
-- [[Pre-commit Hooks Configuration]] - document - .pre-commit-config.yaml
-- [[Rule agentshroud-assert-security-check]] - concept - .semgrep.yml
-- [[Rule agentshroud-hardcoded-password]] - concept - .semgrep.yml
-- [[Rule agentshroud-log-sensitive-key]] - concept - .semgrep.yml
-- [[Rule agentshroud-pickle-load]] - concept - .semgrep.yml
-- [[Rule agentshroud-sql-injection]] - concept - .semgrep.yml
-- [[Rule agentshroud-ssrf-httpx]] - concept - .semgrep.yml
-- [[Rule agentshroud-ssrf-requests]] - concept - .semgrep.yml
-- [[Rule agentshroud-subprocess-shell-true]] - concept - .semgrep.yml
-- [[Rule agentshroud-subprocess-unvalidated-input]] - concept - .semgrep.yml
-- [[Summary]] - document - .github/PULL_REQUEST_TEMPLATE.md
-- [[Type of Change]] - document - .github/PULL_REQUEST_TEMPLATE.md
-- [[black (Python formatter)]] - concept - .pre-commit-config.yaml
-- [[detect-secrets (Yelp secret scanner)]] - concept - .pre-commit-config.yaml
-- [[egress_filter.py]] - code - gateway/security/egress_filter.py
-- [[gitleaks (secret scanner)]] - concept - .pre-commit-config.yaml
-- [[ruff (Python linter)]] - concept - .pre-commit-config.yaml
+- [[1Password (credential vault)]] - image - docs/diagrams/images/diagram-01-c4-context.svg
+- [[1Password Integration (service account)]] - document - docs/api/integration-guide.md
+- [[ADR-001 Transparent Proxy Decision]] - concept - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
+- [[ADR-004 Proxy-Side API Key Management]] - concept - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
+- [[Agent Modification Approach (rejected alternative)]] - concept - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
+- [[AgentShroud (system, C4 context)]] - image - docs/diagrams/images/diagram-01-c4-context.svg
+- [[AgentShroud Bot Container (Node.js 22OpenClaw 18789)]] - image - docs/diagrams/images/diagram-02-c4-container.svg
+- [[Anthropic API (external system)]] - image - docs/diagrams/images/diagram-01-c4-context.svg
+- [[Brave Search API (external system)]] - image - docs/diagrams/images/diagram-01-c4-context.svg
+- [[Deployment Modes]] - document - docs/architecture/deployment-diagram.md
+- [[External Collaborators]] - image - docs/diagrams/images/diagram-01-c4-context.svg
+- [[Gateway (FastAPI)]] - concept - docs/architecture/system-architecture.md
+- [[Gateway Container (Python 3.11FastAPI 8080)]] - image - docs/diagrams/images/diagram-02-c4-container.svg
+- [[GitHub (external system)]] - image - docs/diagrams/images/diagram-01-c4-context.svg
+- [[Isaiah Jefferson (ArchitectOwner)]] - image - docs/diagrams/images/diagram-01-c4-context.svg
+- [[Ledger DB (SQLiteaiosqlite)]] - image - docs/diagrams/images/diagram-02-c4-container.svg
+- [[OpenAI API (external system)]] - image - docs/diagrams/images/diagram-01-c4-context.svg
+- [[Proxy Mode (Recommended)]] - document - docs/architecture/deployment-diagram.md
+- [[Running Containers (gateway + bot, healthy)]] - image - docs/diagrams/images/diagram-06-cicd-deployment.svg
+- [[Sidecar Mode (Performance Optimized)]] - document - docs/architecture/deployment-diagram.md
+- [[Telegram (external system)]] - image - docs/diagrams/images/diagram-01-c4-context.svg
 
 ## Live Query (requires Dataview plugin)
 
@@ -40,30 +40,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 410]]
-- 2 edges to [[_COMMUNITY_Community 174]]
-- 2 edges to [[_COMMUNITY_Community 50]]
-- 2 edges to [[_COMMUNITY_Community 203]]
-- 2 edges to [[_COMMUNITY_Community 137]]
-- 2 edges to [[_COMMUNITY_Community 78]]
-- 1 edge to [[_COMMUNITY_Community 19]]
-- 1 edge to [[_COMMUNITY_Community 21]]
-- 1 edge to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
-- 1 edge to [[_COMMUNITY_Community 26]]
-- 1 edge to [[_COMMUNITY_Community 48]]
-- 1 edge to [[_COMMUNITY_Community 181]]
-- 1 edge to [[_COMMUNITY_Community 353]]
-- 1 edge to [[_COMMUNITY_Community 519]]
+- 1 edge to [[_COMMUNITY_Community 396]]
 - 1 edge to [[_COMMUNITY_Community 217]]
-- 1 edge to [[_COMMUNITY_Community 227]]
-- 1 edge to [[_COMMUNITY_Progressive Trust]]
-- 1 edge to [[_COMMUNITY_Community 18]]
-- 1 edge to [[_COMMUNITY_Community 70]]
-- 1 edge to [[_COMMUNITY_Community 30]]
-- 1 edge to [[_COMMUNITY_Community 295]]
-- 1 edge to [[_COMMUNITY_Community 79]]
+- 1 edge to [[_COMMUNITY_Community 237]]
+- 1 edge to [[_COMMUNITY_Community 256]]
+- 1 edge to [[_COMMUNITY_Community 671]]
 
 ## Top bridge nodes
-- [[egress_filter.py]] - degree 27, connects to 20 communities
-- [[AgentShroud Semgrep SAST Configuration]] - degree 13, connects to 2 communities
-- [[Rule agentshroud-subprocess-shell-true]] - degree 2, connects to 1 community
+- [[AgentShroud (system, C4 context)]] - degree 9, connects to 1 community
+- [[Gateway Container (Python 3.11FastAPI 8080)]] - degree 9, connects to 1 community
+- [[Gateway (FastAPI)]] - degree 4, connects to 1 community
+- [[Deployment Modes]] - degree 3, connects to 1 community
+- [[Ledger DB (SQLiteaiosqlite)]] - degree 2, connects to 1 community

@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[SCHEMA_VERSION entity]] - concept - docs/diagrams/images/diagram-08-erd.svg
+- [[DevSecOps Skill]] - document - .agents/skills/i-devsecops/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,51 +1,52 @@
 ---
 type: community
-cohesion: 0.06
-members: 36
+cohesion: 0.14
+members: 37
 ---
 
 # Community 194
 
-**Cohesion:** 0.06 - loosely connected
-**Members:** 36 nodes
+**Cohesion:** 0.14 - loosely connected
+**Members:** 37 nodes
 
 ## Members
-- [[Access Denied_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[Token expired (SSO)_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[Unable to locate credentials_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[AWS Profile Basics_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[AWS SSO Configuration_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[Best Practices_3]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[Check Current Profile_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[Configuration Files_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[Configure New Profile_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[Default Profile vs Named Profiles_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[Initial SSO Setup_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[List Available Profiles_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[Login to SSO_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[MCP Not Using Profile_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[MCP-Specific_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[Method 1 Set Environment Variable (Session)_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[Method 2 Set Permanently (Shell Config)_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[Method 3 Configure in .mcp.json_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[Multi-Account AWS Access_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[Option 1 Interactive Configuration_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[Option 2 Manual Configuration_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[Organization_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[Quick Reference_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[Related Skills_59]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[Role_54]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[SKILL_96]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[Scenario Development → Production_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[Security_4]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[Switch AWS Profile for MCP_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[Troubleshooting_10]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[Use SSO Profile with MCP_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[Using AssumeRole for Cross-Account Access_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[View Configured Profiles]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[What is an AWS Profile_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[When to Invoke_4]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[dot-__call__()_3]] - code - gateway/ingest_api/alert_telegram_relay.py
+- [[dot-__call__()_4]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[dot-__init__()_85]] - code - gateway/ingest_api/alert_telegram_relay.py
+- [[dot-__init__()_86]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[dot-_clean_tool()]] - code - gateway/ingest_api/alert_telegram_relay.py
+- [[dot-_coerce()]] - code - gateway/ingest_api/alert_telegram_relay.py
+- [[dot-_dedup_key()]] - code - gateway/ingest_api/alert_telegram_relay.py
+- [[dot-_handle()_1]] - code - gateway/ingest_api/alert_telegram_relay.py
+- [[dot-_spawn_send()]] - code - gateway/ingest_api/alert_telegram_relay.py
+- [[dot-flush()]] - code - gateway/ingest_api/alert_telegram_relay.py
+- [[Accept GatewayEvent objects or plain dicts from legacy emitters.]] - rationale - gateway/ingest_api/alert_telegram_relay.py
+- [[AlertTelegramRelay]] - code - gateway/ingest_api/alert_telegram_relay.py
+- [[Any_30]] - code - gateway/ingest_api/alert_telegram_relay.py
+- [[Await in-flight sends (testshutdown helper).]] - rationale - gateway/ingest_api/alert_telegram_relay.py
+- [[Regression (SCRUM-61) apialerts used to call event_bus.publish(),     a metho]] - rationale - gateway/tests/test_alert_telegram_relay.py
+- [[Subscribe to the gateway EventBus; relay security alerts to Telegram.]] - rationale - gateway/ingest_api/alert_telegram_relay.py
+- [[_SendSpy]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[_alert_event()]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[alert_telegram_relay.py]] - code - gateway/ingest_api/alert_telegram_relay.py
+- [[test_alert_telegram_relay.py]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[test_api_alerts_endpoint_emits_bus_event()]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[test_async_sanitizer_supported()]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[test_critical_alert_relayed_to_owner()]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[test_dedup_key_includes_source()]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[test_dedup_same_alert_sent_once()]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[test_final_text_capped_below_telegram_limit()]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[test_info_severity_not_relayed()]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[test_non_alert_events_ignored()]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[test_outgoing_text_passes_through_sanitizer()]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[test_plain_dict_event_tolerated()]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[test_rate_limit_caps_sends_per_hour()]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[test_send_failure_rolls_back_dedup_for_retry()]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[test_send_failure_swallowed()]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[test_subscribed_relay_receives_bus_emissions()]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[test_tool_field_control_chars_stripped_and_capped()]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[test_warning_alert_relayed_with_orange_marker()]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[test_warning_flood_cannot_starve_critical()]] - code - gateway/tests/test_alert_telegram_relay.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -53,3 +54,16 @@ members: 36
 TABLE source_file, type FROM #community/Community_194
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 9 edges to [[_COMMUNITY_Approval Routing & Event Bus]]
+- 3 edges to [[_COMMUNITY_Community 116]]
+- 1 edge to [[_COMMUNITY_Ingest API & RBAC Core]]
+- 1 edge to [[_COMMUNITY_Ingest Middleware & File Sandbox]]
+
+## Top bridge nodes
+- [[test_alert_telegram_relay.py]] - degree 23, connects to 3 communities
+- [[test_api_alerts_endpoint_emits_bus_event()]] - degree 4, connects to 2 communities
+- [[AlertTelegramRelay]] - degree 33, connects to 1 community
+- [[_SendSpy]] - degree 21, connects to 1 community
+- [[_alert_event()]] - degree 16, connects to 1 community

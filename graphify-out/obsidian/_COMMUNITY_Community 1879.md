@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[SSHProxy.write_file()]] - code - gateway/ssh_proxy/proxy.py
+- [[Cumulative Token Cost Tracker]] - concept - docker/config/openclaw/skills/graphify/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,42 +1,43 @@
 ---
 type: community
-cohesion: 0.09
-members: 27
+cohesion: 0.08
+members: 28
 ---
 
 # Community 289
 
-**Cohesion:** 0.09 - loosely connected
-**Members:** 27 nodes
+**Cohesion:** 0.08 - loosely connected
+**Members:** 28 nodes
 
 ## Members
-- [[AgentShroud Minimal Docker Compose]] - document - examples/docker-compose.minimal.yml
-- [[AgentShroud Production Docker Compose]] - document - examples/docker-compose.production.yml
-- [[Container Errors_1]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
-- [[Container Errors]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
-- [[Container Won't Stop (Stuck in Stopping)]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
-- [[Crash Recovery_1]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
-- [[Database Files]] - document - docs/vault/05 - Dependencies/aiosqlite.md
-- [[Exit Code Reference]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
-- [[First Time Setup]] - document - docs/vault/08 - Runbooks/First Time Setup.md
-- [[Health Checks_1]] - document - docs/vault/08 - Runbooks/Health Checks.md
-- [[Kill Switch Procedure]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
-- [[OOM Kill (Exit Code 137)]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
-- [[Port Already in Use_2]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
-- [[Purpose_184]] - document - docs/vault/05 - Dependencies/aiosqlite.md
-- [[Read-Only Filesystem Errors]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
-- [[Related Notes_39]] - document - docs/vault/05 - Dependencies/aiosqlite.md
-- [[Related Notes_56]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
-- [[Restart Procedure_1]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
-- [[Startup Errors_1]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[Troubleshooting Matrix]] - document - docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md
-- [[WAL Mode]] - document - docs/vault/05 - Dependencies/aiosqlite.md
-- [[Where Used]] - document - docs/vault/05 - Dependencies/aiosqlite.md
-- [[`no-new-privileges` Security Denial]] - document - docs/vault/07 - Errors & Troubleshooting/Container Errors.md
-- [[aiosqlite_1]] - document - docs/vault/05 - Dependencies/aiosqlite.md
-- [[aiosqlite]] - document - docs/vault/05 - Dependencies/aiosqlite.md
-- [[docker-commands]] - document - examples/docker-commands.md
-- [[store.py]] - code - gateway/approval_queue/store.py
+- [[dot-__init__()_120]] - code - gateway/security/a2a_policy.py
+- [[dot-__init__()_121]] - code - gateway/tests/test_a2a_policy.py
+- [[dot-from_dict()_2]] - code - gateway/security/a2a_policy.py
+- [[dot-submit_tool_request()_2]] - code - gateway/tests/test_a2a_policy.py
+- [[dot-test_bare_config_denies_every_peer()]] - code - gateway/tests/test_a2a_policy_default_failclosed.py
+- [[dot-test_configured_allowlist_still_works_alongside_fail_closed_default()]] - code - gateway/tests/test_a2a_policy_default_failclosed.py
+- [[dot-test_engine_constructed_with_no_config_at_all_is_fail_closed()]] - code - gateway/tests/test_a2a_policy_default_failclosed.py
+- [[dot-test_from_dict_empty_dict_is_fail_closed()]] - code - gateway/tests/test_a2a_policy_default_failclosed.py
+- [[dot-test_from_dict_none_is_fail_closed()]] - code - gateway/tests/test_a2a_policy_default_failclosed.py
+- [[dot-test_invalid_default_action_string_falls_back_to_deny()]] - code - gateway/tests/test_a2a_policy_default_failclosed.py
+- [[dot-test_owner_bypass_is_always_false_regardless_of_input()]] - code - gateway/tests/test_a2a_policy_default_failclosed.py
+- [[dot-wait_for_decision()_2]] - code - gateway/tests/test_a2a_policy.py
+- [[A duck-typed queue predating the ``force_tier`` kwarg — enforce() must     fall]] - rationale - gateway/tests/test_a2a_policy.py
+- [[A typo'd default_action (e.g. 'allow-all') must not silently open         the ga]] - rationale - gateway/tests/test_a2a_policy_default_failclosed.py
+- [[A2APolicyAction]] - code - gateway/security/a2a_policy.py
+- [[A2APolicyConfig]] - code - gateway/security/a2a_policy.py
+- [[A2APolicyConfig() with no arguments — the shape a fresh deploy gets         if n]] - rationale - gateway/tests/test_a2a_policy_default_failclosed.py
+- [[Any_42]] - code - gateway/security/a2a_policy.py
+- [[Declarative A2A security policy.      Loaded from the ``a2a_policy`` section of]] - rationale - gateway/security/a2a_policy.py
+- [[Fail-closed-by-default must not mean impossible to allow anything         — an]] - rationale - gateway/tests/test_a2a_policy_default_failclosed.py
+- [[Parse a policy config from a plain dict (e.g. loaded from YAML).]] - rationale - gateway/security/a2a_policy.py
+- [[TestDefaultA2APolicyIsFailClosed]] - code - gateway/tests/test_a2a_policy_default_failclosed.py
+- [[The three terminal policy outcomes for an MCP tool call.]] - rationale - gateway/security/mcp_policy.py
+- [[Unlike MCP, owner_bypass is not operator-configurable for A2A at         all — a]] - rationale - gateway/tests/test_a2a_policy_default_failclosed.py
+- [[_LegacyStubApprovalQueue]] - code - gateway/tests/test_a2a_policy.py
+- [[`A2APolicyEngine()` with no config argument — the laziest possible         call]] - rationale - gateway/tests/test_a2a_policy_default_failclosed.py
+- [[load_config-style callers pass whatever the YAML section resolved         to, wh]] - rationale - gateway/tests/test_a2a_policy_default_failclosed.py
+- [[test_a2a_policy_default_failclosed.py]] - code - gateway/tests/test_a2a_policy_default_failclosed.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -46,27 +47,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 230]]
-- 1 edge to [[_COMMUNITY_Community 23]]
-- 1 edge to [[_COMMUNITY_RBAC & SOC Realtime]]
-- 1 edge to [[_COMMUNITY_Community 125]]
-- 1 edge to [[_COMMUNITY_Community 63]]
-- 1 edge to [[_COMMUNITY_Community 26]]
-- 1 edge to [[_COMMUNITY_Community 258]]
-- 1 edge to [[_COMMUNITY_Community 30]]
-- 1 edge to [[_COMMUNITY_Community 314]]
-- 1 edge to [[_COMMUNITY_Community 243]]
-- 1 edge to [[_COMMUNITY_Community 695]]
-- 1 edge to [[_COMMUNITY_Community 460]]
-- 1 edge to [[_COMMUNITY_Community 739]]
-- 1 edge to [[_COMMUNITY_Community 740]]
-- 1 edge to [[_COMMUNITY_Community 696]]
-- 1 edge to [[_COMMUNITY_Community 824]]
-- 1 edge to [[_COMMUNITY_Community 753]]
+- 16 edges to [[_COMMUNITY_Community 131]]
+- 13 edges to [[_COMMUNITY_Community 75]]
+- 5 edges to [[_COMMUNITY_Community 103]]
+- 4 edges to [[_COMMUNITY_Community 183]]
+- 3 edges to [[_COMMUNITY_Community 288]]
+- 2 edges to [[_COMMUNITY_Voice Gateway STT & Browser Security]]
+- 1 edge to [[_COMMUNITY_Community 475]]
+- 1 edge to [[_COMMUNITY_Community 35]]
 
 ## Top bridge nodes
-- [[store.py]] - degree 7, connects to 4 communities
-- [[Troubleshooting Matrix]] - degree 8, connects to 3 communities
-- [[aiosqlite]] - degree 5, connects to 3 communities
-- [[Crash Recovery_1]] - degree 6, connects to 1 community
-- [[Container Errors]] - degree 4, connects to 1 community
+- [[A2APolicyConfig]] - degree 27, connects to 5 communities
+- [[A2APolicyAction]] - degree 13, connects to 3 communities
+- [[_LegacyStubApprovalQueue]] - degree 11, connects to 3 communities
+- [[TestDefaultA2APolicyIsFailClosed]] - degree 12, connects to 2 communities
+- [[test_a2a_policy_default_failclosed.py]] - degree 5, connects to 2 communities

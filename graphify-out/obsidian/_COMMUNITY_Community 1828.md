@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Neo4j Export  Push]] - concept - docker/config/openclaw/skills/graphify/references/exports.md
+- [[ConfigurationSetting (data entity)]] - concept - docs/data/data-dictionary.md
 
 ## Live Query (requires Dataview plugin)
 

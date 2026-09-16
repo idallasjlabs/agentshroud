@@ -1,38 +1,38 @@
 ---
 type: community
-cohesion: 0.09
+cohesion: 0.10
 members: 23
 ---
 
 # Community 378
 
-**Cohesion:** 0.09 - loosely connected
+**Cohesion:** 0.10 - loosely connected
 **Members:** 23 nodes
 
 ## Members
-- [[1Password iCloud Credential Retrieval]] - concept - skills/custom/icloud/SKILL.md
-- [[Example Production Server with Strict Restrictions]] - document - docs/ssh-configuration.md
-- [[Field Reference]] - document - docs/ssh-configuration.md
-- [[Full Annotated Example]] - document - docs/ssh-configuration.md
-- [[How AllowDeny Lists Work]] - document - docs/ssh-configuration.md
-- [[How Auto-Approve Works]] - document - docs/ssh-configuration.md
-- [[How to Add a New Trusted Host]] - document - docs/ssh-configuration.md
-- [[MML (MIME Meta Language)]] - concept - skills/openclaw/himalaya/references/message-composition.md
-- [[P4 Low Priority Incidents]] - document - docs/operations/incident-response.md
-- [[SKILL_210]] - document - skills/openclaw/gog/SKILL.md
-- [[SKILL_213]] - document - skills/openclaw/himalaya/SKILL.md
-- [[SKILL_193]] - document - skills/custom/icloud/SKILL.md
-- [[SSH Configuration Guide]] - document - docs/ssh-configuration.md
-- [[Step 1 Choose a logical name]] - document - docs/ssh-configuration.md
-- [[Step 2 Add the host entry]] - document - docs/ssh-configuration.md
-- [[Step 3 Set up SSH keys]] - document - docs/ssh-configuration.md
-- [[Step 4 Pre-populate known_hosts (recommended)]] - document - docs/ssh-configuration.md
-- [[Step 5 Restart the gateway]] - document - docs/ssh-configuration.md
-- [[gog]] - document - skills/openclaw/gog/SKILL.md
-- [[gog CLI (Google Workspace)]] - concept - skills/openclaw/gog/SKILL.md
-- [[himalaya CLI]] - concept - skills/openclaw/himalaya/SKILL.md
-- [[message-composition]] - document - skills/openclaw/himalaya/references/message-composition.md
-- [[ssh-configuration]] - document - docs/ssh-configuration.md
+- [[1. Provision Your Secrets (API Keys & Tokens)]] - document - docs/setup/LLM_PROVIDER_SETUP.md
+- [[2. Apply Configuration & Restart]] - document - docs/setup/LLM_PROVIDER_SETUP.md
+- [[3. Switching Models in OpenClaw]] - document - docs/setup/LLM_PROVIDER_SETUP.md
+- [[4. Local Ollama Integration]] - document - docs/setup/LLM_PROVIDER_SETUP.md
+- [[5. Verification & Troubleshooting]] - document - docs/setup/LLM_PROVIDER_SETUP.md
+- [[AgentShroud™ LLM Provider Setup & Switching Guide]] - document - docs/setup/LLM_PROVIDER_SETUP.md
+- [[Current Status_7]] - document - docs/setup/TAILSCALE_SETUP.md
+- [[How to Switch via Telegram]] - document - docs/setup/LLM_PROVIDER_SETUP.md
+- [[LLM_PROVIDER_SETUP]] - document - docs/setup/LLM_PROVIDER_SETUP.md
+- [[OpenClaw Bot Container]] - concept - docs/setup/OPENCLAW_SSH_SETUP.md
+- [[Option 1 Tailscale Serve (Recommended - Most Secure)]] - document - docs/setup/TAILSCALE_SETUP.md
+- [[Option 2 Bind to All Interfaces (Less Secure)]] - document - docs/setup/TAILSCALE_SETUP.md
+- [[Option 3 Bind to Tailscale IP Only (Best Balance)]] - document - docs/setup/TAILSCALE_SETUP.md
+- [[PAIRING_INSTRUCTIONS]] - document - docs/setup/PAIRING_INSTRUCTIONS.md
+- [[Provider Model Strings]] - document - docs/setup/LLM_PROVIDER_SETUP.md
+- [[SETUP_API_KEYS]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Setup Commands]] - document - docs/setup/LLM_PROVIDER_SETUP.md
+- [[TAILSCALE_SETUP]] - document - docs/setup/TAILSCALE_SETUP.md
+- [[TELEGRAM_SETUP]] - document - docs/setup/TELEGRAM_SETUP.md
+- [[Tailscale ACLs (Recommended)]] - document - docs/setup/TAILSCALE_SETUP.md
+- [[Tailscale Access to OpenClaw Control UI]] - document - docs/setup/TAILSCALE_SETUP.md
+- [[VAULT-SHARING-INSTRUCTIONS]] - document - docs/setup/VAULT-SHARING-INSTRUCTIONS.md
+- [[Verification_3]] - document - docs/setup/TAILSCALE_SETUP.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -42,17 +42,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 233]]
-- 1 edge to [[_COMMUNITY_Community 280]]
-- 1 edge to [[_COMMUNITY_Community 128]]
-- 1 edge to [[_COMMUNITY_Community 576]]
+- 1 edge to [[_COMMUNITY_Community 271]]
 - 1 edge to [[_COMMUNITY_Community 326]]
-- 1 edge to [[_COMMUNITY_Community 477]]
-- 1 edge to [[_COMMUNITY_Community 452]]
+- 1 edge to [[_COMMUNITY_Community 712]]
+- 1 edge to [[_COMMUNITY_Community 660]]
+- 1 edge to [[_COMMUNITY_Community 604]]
+- 1 edge to [[_COMMUNITY_Community 401]]
 
 ## Top bridge nodes
-- [[ssh-configuration]] - degree 7, connects to 3 communities
-- [[SKILL_213]] - degree 4, connects to 1 community
-- [[SKILL_193]] - degree 4, connects to 1 community
-- [[message-composition]] - degree 3, connects to 1 community
-- [[P4 Low Priority Incidents]] - degree 2, connects to 1 community
+- [[OpenClaw Bot Container]] - degree 7, connects to 2 communities
+- [[SETUP_API_KEYS]] - degree 5, connects to 1 community
+- [[PAIRING_INSTRUCTIONS]] - degree 4, connects to 1 community
+- [[TELEGRAM_SETUP]] - degree 4, connects to 1 community
+- [[VAULT-SHARING-INSTRUCTIONS]] - degree 3, connects to 1 community

@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Voice Gateway Python Package Init]] - code - voice_gateway/__init__.py
+- [[mainaudio.h]] - code - firmware/voice-terminal/main/audio.h
 
 ## Live Query (requires Dataview plugin)
 

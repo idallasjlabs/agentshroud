@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[AgentShroud Telegram Avatar]] - image - branding/social/telegram-avatar-512x512.png
+- [[Native CLAUDE.md Integration]] - concept - docker/config/openclaw/skills/graphify/references/hooks.md
 
 ## Live Query (requires Dataview plugin)
 

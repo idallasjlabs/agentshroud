@@ -1,36 +1,37 @@
 ---
 type: community
-cohesion: 0.10
-members: 21
+cohesion: 0.09
+members: 22
 ---
 
 # Community 417
 
-**Cohesion:** 0.10 - loosely connected
-**Members:** 21 nodes
+**Cohesion:** 0.09 - loosely connected
+**Members:** 22 nodes
 
 ## Members
-- [[1. Change Documentation_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[2. Testing Evidence_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[3. Backups & Rollback_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[4. Blast Radius_5]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[5. Observability_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[6. Security_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[7. Communication_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[8. Service Control Commands_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[Emergency Stop (P1 Incidents Only)_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[If Something Goes Wrong_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[Immediate (0–15 min)_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[Invoke Before_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[Pause Before Testing (Copy-Paste Ready)_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[Post-Deployment Verification_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[Pre-Deployment Checklist_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[Resume After Testing (MANDATORY)_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[Role_101]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[SKILL_171]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[Short-Term (15 min – 24 hr)_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[Sign-Off_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
-- [[Skill Production Safety Checklist (PROD-SAFETY)_2]] - document - docker/config/openclaw/skills/i-ps/SKILL.md
+- [[dot-setup_method()_32]] - code - gateway/tests/test_network_validator.py
+- [[dot-test_gateway_network_bridging_validation()]] - code - gateway/tests/test_network_validator.py
+- [[dot-test_network_validation_comprehensive_rules()]] - code - gateway/tests/test_network_validator.py
+- [[dot-test_validate_docker_compose_config_empty_config()]] - code - gateway/tests/test_network_validator.py
+- [[dot-test_validate_docker_compose_config_host_network_flagged()]] - code - gateway/tests/test_network_validator.py
+- [[dot-test_validate_docker_compose_config_invalid_file()]] - code - gateway/tests/test_network_validator.py
+- [[dot-test_validate_docker_compose_config_missing_internal_network()]] - code - gateway/tests/test_network_validator.py
+- [[dot-test_validate_docker_compose_config_multiple_violations()]] - code - gateway/tests/test_network_validator.py
+- [[dot-test_validate_docker_compose_config_openclaw_isolation()]] - code - gateway/tests/test_network_validator.py
+- [[dot-test_validate_docker_compose_config_privileged_flagged()]] - code - gateway/tests/test_network_validator.py
+- [[dot-test_validate_docker_compose_config_valid_config_passes()]] - code - gateway/tests/test_network_validator.py
+- [[Test comprehensive network validation rules.]] - rationale - gateway/tests/test_network_validator.py
+- [[Test detection of multiple configuration violations.]] - rationale - gateway/tests/test_network_validator.py
+- [[Test handling of empty configuration.]] - rationale - gateway/tests/test_network_validator.py
+- [[Test handling of invalidnon-existent files.]] - rationale - gateway/tests/test_network_validator.py
+- [[Test that OpenClaw container isolation is validated.]] - rationale - gateway/tests/test_network_validator.py
+- [[Test that a valid docker-compose configuration passes.]] - rationale - gateway/tests/test_network_validator.py
+- [[Test that gateway service network bridging is validated.]] - rationale - gateway/tests/test_network_validator.py
+- [[Test that host network mode is flagged.]] - rationale - gateway/tests/test_network_validator.py
+- [[Test that missing internal network is flagged.]] - rationale - gateway/tests/test_network_validator.py
+- [[Test that privileged containers are flagged.]] - rationale - gateway/tests/test_network_validator.py
+- [[TestNetworkValidator]] - code - gateway/tests/test_network_validator.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -38,3 +39,11 @@ members: 21
 TABLE source_file, type FROM #community/Community_417
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 3 edges to [[_COMMUNITY_Community 855]]
+- 2 edges to [[_COMMUNITY_Community 487]]
+
+## Top bridge nodes
+- [[TestNetworkValidator]] - degree 15, connects to 2 communities
+- [[dot-setup_method()_32]] - degree 2, connects to 1 community

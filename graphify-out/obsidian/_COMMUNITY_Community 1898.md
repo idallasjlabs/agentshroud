@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[WebhookReceiver Session Isolation Integration]] - code - gateway/tests/test_session_isolation.py
+- [[Diagram 20 Observability Map]] - image - docs/diagrams/images/diagram-20-observability-map.svg
 
 ## Live Query (requires Dataview plugin)
 

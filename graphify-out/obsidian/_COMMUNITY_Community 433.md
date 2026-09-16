@@ -10,27 +10,27 @@ members: 21
 **Members:** 21 nodes
 
 ## Members
-- [[.script_content()]] - code - gateway/tests/test_killswitch_modes.py
-- [[.test_creates_incident_record()]] - code - gateway/tests/test_killswitch_modes.py
-- [[.test_disconnect_exports_ledger()]] - code - gateway/tests/test_killswitch_modes.py
-- [[.test_freeze_pauses_containers()]] - code - gateway/tests/test_killswitch_modes.py
-- [[.test_has_confirmation_prompt()]] - code - gateway/tests/test_killswitch_modes.py
-- [[.test_has_usage_function()]] - code - gateway/tests/test_killswitch_modes.py
-- [[.test_invalid_mode_shows_usage()]] - code - gateway/tests/test_killswitch_modes.py
-- [[.test_paranoid_env_has_kill_switch()]] - code - gateway/tests/test_killswitch_modes.py
-- [[.test_paranoid_env_kill_switch_action()]] - code - gateway/tests/test_killswitch_modes.py
-- [[.test_recommended_env_has_kill_switch()]] - code - gateway/tests/test_killswitch_modes.py
-- [[.test_script_exists()]] - code - gateway/tests/test_killswitch_modes.py
-- [[.test_script_is_executable()]] - code - gateway/tests/test_killswitch_modes.py
-- [[.test_sets_strict_mode()]] - code - gateway/tests/test_killswitch_modes.py
-- [[.test_supports_disconnect_mode()]] - code - gateway/tests/test_killswitch_modes.py
-- [[.test_supports_freeze_mode()]] - code - gateway/tests/test_killswitch_modes.py
-- [[.test_supports_shutdown_mode()]] - code - gateway/tests/test_killswitch_modes.py
-- [[Kill switch configuration in example configs.]] - rationale - gateway/tests/test_killswitch_modes.py
-- [[TestKillSwitchConfig]] - code - gateway/tests/test_killswitch_modes.py
-- [[TestKillSwitchScript]] - code - gateway/tests/test_killswitch_modes.py
-- [[Verify the kill switch script structure and modes.]] - rationale - gateway/tests/test_killswitch_modes.py
-- [[test_killswitch_modes.py]] - code - gateway/tests/test_killswitch_modes.py
+- [[dot-test_downgrade_requires_approval()]] - code - gateway/tests/test_version_routes.py
+- [[dot-test_downgrade_with_approval()]] - code - gateway/tests/test_version_routes.py
+- [[dot-test_full_workflow()]] - code - gateway/tests/test_version_routes.py
+- [[dot-test_get_available()]] - code - gateway/tests/test_version_routes.py
+- [[dot-test_get_current_version()]] - code - gateway/tests/test_version_routes.py
+- [[dot-test_get_history_empty()]] - code - gateway/tests/test_version_routes.py
+- [[dot-test_review_version()]] - code - gateway/tests/test_version_routes.py
+- [[dot-test_rollback_no_history()]] - code - gateway/tests/test_version_routes.py
+- [[dot-test_rollback_requires_approval()]] - code - gateway/tests/test_version_routes.py
+- [[dot-test_upgrade_dry_run()]] - code - gateway/tests/test_version_routes.py
+- [[dot-test_upgrade_invalid_version()]] - code - gateway/tests/test_version_routes.py
+- [[dot-test_upgrade_requires_approval()]] - code - gateway/tests/test_version_routes.py
+- [[dot-test_upgrade_with_approval()]] - code - gateway/tests/test_version_routes.py
+- [[Create a test FastAPI app with version routes.]] - rationale - gateway/tests/test_version_routes.py
+- [[TestVersionRoutes]] - code - gateway/tests/test_version_routes.py
+- [[Use a temporary DB for all tests.]] - rationale - gateway/tests/test_version_routes.py
+- [[app()]] - code - gateway/tests/test_version_routes.py
+- [[client()_15]] - code - gateway/tests/test_version_routes.py
+- [[test_version_routes.py]] - code - gateway/tests/test_version_routes.py
+- [[tmp_version_db()]] - code - gateway/tests/test_version_routes.py
+- [[version_routes APIRouter — apiv1versions]] - code - gateway/ingest_api/version_routes.py
 
 ## Live Query (requires Dataview plugin)
 

@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[goStep()]] - code - gateway/web/templates/installer.html
+- [[Audit-log-every-fetch design rationale]] - rationale - docker/config/openclaw/skills/i-browser/browse.js
 
 ## Live Query (requires Dataview plugin)
 

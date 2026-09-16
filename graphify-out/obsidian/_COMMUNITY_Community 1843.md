@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[SecureBrowser.close()]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
+- [[docker-compose.sidecar.yml — Sidecar Mode Deployment]] - document - docker-compose.sidecar.yml
 
 ## Live Query (requires Dataview plugin)
 

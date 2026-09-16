@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Diagram 12 Credential Flow]] - image - docs/diagrams/images/diagram-12-credential-flow.svg
+- [[Observability Skill]] - document - .agents/skills/i-observability/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

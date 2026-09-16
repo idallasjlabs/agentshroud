@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[markmap-mcp-server (MCP server)]] - concept - docker/config/hermes/skills/i-mm/SKILL.md
+- [[AgentShroud Logo — GlowLight Variant]] - image - branding/agentshroud-logo-light-bg.png
 
 ## Live Query (requires Dataview plugin)
 

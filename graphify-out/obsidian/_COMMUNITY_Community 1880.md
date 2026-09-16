@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[test_bot_boot_static.sh — static bot boot assembly assertions]] - code - tests/startup_smoke/test_bot_boot_static.sh
+- [[Gemini Semantic Extraction Backend]] - concept - docker/config/openclaw/skills/graphify/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

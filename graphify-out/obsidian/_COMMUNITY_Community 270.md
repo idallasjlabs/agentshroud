@@ -1,44 +1,45 @@
 ---
 type: community
-cohesion: 0.15
-members: 29
+cohesion: 0.07
+members: 30
 ---
 
 # Community 270
 
-**Cohesion:** 0.15 - loosely connected
-**Members:** 29 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 30 nodes
 
 ## Members
-- [[animation_timer_cb()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[app_main()_1]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/examples/basic_cycle/main/main.c
-- [[draw_eye()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[draw_mouth()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[emotion_cycle_task()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/examples/basic_cycle/main/main.c
-- [[esp_err_t_1]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[face_animation_deinit()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[face_animation_init()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[face_animation_update()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[face_config_t]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[face_emotion_t]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[face_get_container()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[face_get_emotion()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[face_lock()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[face_malloc_canvas()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[face_set_auto_blink()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[face_set_emotion()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[face_set_eye_openness()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[face_set_lvgl_lock_fns()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[face_set_mouth_shape()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[face_set_position()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[face_trigger_blink()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[face_unlock()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[lv_obj_t]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[lv_timer_t]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[lvgl_kawaii_face.c]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[lvgl_kawaii_face.h]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/include/lvgl_kawaii_face.h
-- [[main.c]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/examples/basic_cycle/main/main.c
-- [[update_emotion_parameters()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[Action requires approval but none granted_3]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
+- [[Browser timeout_4]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
+- [[CAPTCHA detected_4]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
+- [[Rate limit exceeded_3]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
+- [[URL not in allowlist_4]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
+- [[1. Always Specify Risk Level_3]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
+- [[2. Use Allowlisting Liberally_3]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
+- [[3. Take Screenshots for Audit Trail_3]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
+- [[4. Handle CAPTCHAs Gracefully_3]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
+- [[5. Never Extract Credentials_3]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
+- [[Approval Integration_3]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
+- [[Audit Logging_3]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
+- [[Best Practices_6]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
+- [[Browser — Secure Browser Automation_5]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
+- [[Click Element_3]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
+- [[Core Security Principles_3]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
+- [[Example Apple ID Creation (Semi-Automated)_3]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
+- [[Extract Data_3]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
+- [[Fetch JavaScript-Heavy Page (Node.js)_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
+- [[Fill Form_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
+- [[Limitations_4]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
+- [[Navigate to URL_3]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
+- [[Risk Levels_3]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
+- [[Security Architecture_3]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
+- [[Security Configuration_3]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
+- [[Security Guarantees_4]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
+- [[Take Screenshot_3]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
+- [[Troubleshooting_18]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
+- [[Usage_114]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
+- [[openclawskillsi-browserSKILL]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -46,14 +47,3 @@ members: 29
 TABLE source_file, type FROM #community/Community_270
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 446]]
-- 2 edges to [[_COMMUNITY_Community 90]]
-- 1 edge to [[_COMMUNITY_Community 36]]
-
-## Top bridge nodes
-- [[lvgl_kawaii_face.c]] - degree 21, connects to 2 communities
-- [[face_set_emotion()]] - degree 12, connects to 2 communities
-- [[face_animation_init()]] - degree 10, connects to 1 community
-- [[main.c]] - degree 4, connects to 1 community

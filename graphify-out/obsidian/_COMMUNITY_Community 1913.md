@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[AgentShroud Badge Icon 60x60]] - image - branding/logos/variants/badge-60x60.png
+- [[audio_init() — micspeaker codec init]] - code - firmware/voice-terminal/main/audio.c
 
 ## Live Query (requires Dataview plugin)
 

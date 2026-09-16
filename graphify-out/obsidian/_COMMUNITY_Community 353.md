@@ -1,39 +1,40 @@
 ---
 type: community
-cohesion: 0.08
-members: 24
+cohesion: 0.27
+members: 25
 ---
 
 # Community 353
 
-**Cohesion:** 0.08 - loosely connected
-**Members:** 24 nodes
+**Cohesion:** 0.27 - loosely connected
+**Members:** 25 nodes
 
 ## Members
-- [[AGENTSHROUD_MODE_1]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
-- [[AGENTSHROUD_MODE]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
-- [[Affected Modules]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
-- [[Behavior_1]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
-- [[Combination with Other Settings]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
-- [[Description_1]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
-- [[Description_7]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
-- [[Description_8]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
-- [[Effect]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
-- [[OPENCLAW_DISABLE_HOST_FILESYSTEM_1]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
-- [[OPENCLAW_DISABLE_HOST_FILESYSTEM]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
-- [[OPENCLAW_SANDBOX_MODE_1]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
-- [[OPENCLAW_SANDBOX_MODE]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
-- [[Production Setting]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
-- [[Related Notes_29]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
-- [[Related Notes_35]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
-- [[Related Notes_36]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
-- [[Set In_3]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
-- [[Set In_4]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
-- [[Startup Warnings]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
-- [[Usage_126]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
-- [[Value_4]] - document - docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md
-- [[Values_2]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
-- [[Values_4]] - document - docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md
+- [[PATH_36]] - code - scripts/sunday-upgrade-apply.sh
+- [[_attempt_rollback()]] - code - scripts/sunday-upgrade-apply.sh
+- [[_build_context_paths()]] - code - scripts/sunday-upgrade-apply.sh
+- [[_buildable_services()]] - code - scripts/sunday-upgrade-apply.sh
+- [[_capture_pins()]] - code - scripts/sunday-upgrade-apply.sh
+- [[_dirty_build_files()]] - code - scripts/sunday-upgrade-apply.sh
+- [[_docker_free_gb()]] - code - scripts/sunday-upgrade-apply.sh
+- [[_mutating()]] - code - scripts/sunday-upgrade-apply.sh
+- [[_should_run()]] - code - scripts/sunday-upgrade-apply.sh
+- [[_ts()]] - code - scripts/sunday-upgrade-apply.sh
+- [[check_noop_gate()]] - code - scripts/sunday-upgrade-apply.sh
+- [[die()_1]] - code - scripts/sunday-upgrade-apply.sh
+- [[err()]] - code - scripts/sunday-upgrade-apply.sh
+- [[log()_3]] - code - scripts/sunday-upgrade-apply.sh
+- [[phase_apply()]] - code - scripts/sunday-upgrade-apply.sh
+- [[phase_baseline()]] - code - scripts/sunday-upgrade-apply.sh
+- [[phase_discover()]] - code - scripts/sunday-upgrade-apply.sh
+- [[phase_preflight()]] - code - scripts/sunday-upgrade-apply.sh
+- [[phase_scan()]] - code - scripts/sunday-upgrade-apply.sh
+- [[phase_verify()]] - code - scripts/sunday-upgrade-apply.sh
+- [[sunday-upgrade-apply.sh]] - code - scripts/sunday-upgrade-apply.sh
+- [[sunday-upgrade-apply.sh main flow]] - code - scripts/sunday-upgrade-apply.sh
+- [[sunday-upgrade-apply.sh script]] - code - scripts/sunday-upgrade-apply.sh
+- [[warn()_1]] - code - scripts/sunday-upgrade-apply.sh
+- [[write_handoff()]] - code - scripts/sunday-upgrade-apply.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -43,13 +44,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 18]]
-- 1 edge to [[_COMMUNITY_Community 39]]
-- 1 edge to [[_COMMUNITY_Community 420]]
-- 1 edge to [[_COMMUNITY_Community 30]]
-- 1 edge to [[_COMMUNITY_Community 203]]
+- 2 edges to [[_COMMUNITY_Community 1029]]
+- 2 edges to [[_COMMUNITY_Community 832]]
+- 1 edge to [[_COMMUNITY_Community 195]]
+- 1 edge to [[_COMMUNITY_Community 763]]
+- 1 edge to [[_COMMUNITY_Community 1030]]
+- 1 edge to [[_COMMUNITY_Community 1311]]
+- 1 edge to [[_COMMUNITY_Community 94]]
 
 ## Top bridge nodes
-- [[AGENTSHROUD_MODE]] - degree 6, connects to 4 communities
-- [[OPENCLAW_SANDBOX_MODE]] - degree 4, connects to 1 community
-- [[OPENCLAW_DISABLE_HOST_FILESYSTEM]] - degree 3, connects to 1 community
+- [[sunday-upgrade-apply.sh]] - degree 26, connects to 3 communities
+- [[sunday-upgrade-apply.sh main flow]] - degree 10, connects to 2 communities
+- [[check_noop_gate()]] - degree 9, connects to 1 community
+- [[write_handoff()]] - degree 8, connects to 1 community
+- [[phase_discover()]] - degree 7, connects to 1 community

@@ -10,33 +10,33 @@ members: 27
 **Members:** 27 nodes
 
 ## Members
-- [[Accessibility Requirements_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Anti-Patterns to Flag_22]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[BEM (Block Element Modifier)_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Breakpoints (mobile-first)_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Button_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[CSS Architecture Recommendations_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[CSS Modules (React  Next.js)_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Component Patterns_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Component contract rules_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Component file structure_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Container Query Pattern (preferred over breakpoints for components)_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Core Discipline Structure → Component → Layout → Validate_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Dark  Light Theme Implementation_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Dashboard Grid_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Data Table_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Dependencies_16]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Form Field_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Modal  Dialog_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Navigation_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[React  Next.js Component Architecture_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Responsive Layout System_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Role_109]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Rules_25]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[SKILL_186]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Skill UI Expert (UI)_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[UI Validation Checklist_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Utility-First (Tailwind  custom utilities)_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
+- [[Guardrails_4]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Invocation_2]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Jira ticket — every development batch gets one_2]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Mode A — Single task_2]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Mode B — Comprehensive review sweep_2]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Reviewers and fixer available to you_2]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Role_26]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Skill Hermes Dev Workflow (HDEV)_1]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Step 1 — One branch + worktree for the whole sweep_2]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Step 1 — Sync and confirm clean state_2]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Step 10 — Notify the owner_2]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Step 11 — Merge (only on explicit owner instruction)_2]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Step 12 — Clean up_2]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Step 2 — Create a branch + worktree_2]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Step 2 — Work through directories one at a time_2]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Step 2b — Create the Jira ticket_2]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Step 3 — After the last directory (or a natural stopping point)_2]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Step 3 — Write and edit code_2]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Step 4 — Test and lint_2]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Step 5 — Multi-LLM review_2]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Step 6 — Build and validate containers_2]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Step 7 — Update documentation and website_2]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Step 8 — Update the knowledge graph_2]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Step 9 — Push and open the PR_2]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Step 9b — Update the Jira ticket with the PR link_2]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Tools you have for this workflow_2]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[hermesskillsi-hdevSKILL]] - document - docker/config/hermes/skills/i-hdev/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

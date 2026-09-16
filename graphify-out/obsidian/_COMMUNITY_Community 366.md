@@ -1,39 +1,39 @@
 ---
 type: community
-cohesion: 0.08
+cohesion: 0.12
 members: 24
 ---
 
 # Community 366
 
-**Cohesion:** 0.08 - loosely connected
+**Cohesion:** 0.12 - loosely connected
 **Members:** 24 nodes
 
 ## Members
-- [[25-Domain Prompt Injection Defense Framework]] - concept - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[AgentShroud Security Overview v0.8.0]] - document - docs/planning/v0.8/agentshroud-security-overview-v0.8.0.md
-- [[AgentShroud v1.0.0 Fortress Release Announcement]] - document - docs/planning/v1.0/RELEASE-ANNOUNCEMENT-v1.0.0.md
-- [[Awesome-List PR Templates]] - document - docs/planning/v1.0/RELEASE-ANNOUNCEMENT-v1.0.0.md
-- [[Before & After Security Finding Remediation]] - document - docs/planning/v0.8/agentshroud-security-overview-v0.8.0.md
-- [[Enforce-by-Default Security Philosophy (ADR-009)]] - rationale - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[GitHub Release Notes]] - document - docs/planning/v1.0/RELEASE-ANNOUNCEMENT-v1.0.0.md
-- [[IEC 62443 Alignment (FR3 SL3, FR6 SL3, FR7 SL2)]] - concept - docs/planning/v1.0/RELEASE-ANNOUNCEMENT-v1.0.0.md
-- [[LinkedIn Post]] - document - docs/planning/v1.0/RELEASE-ANNOUNCEMENT-v1.0.0.md
-- [[Memory Refresh Context]] - document - docs/planning/v0.8/agentshroud-security-overview-v0.8.0.md
-- [[Notes_1]] - document - docs/planning/v1.0/POST_FABLE5_TASK_DELEGATION.md
-- [[POST_FABLE5_TASK_DELEGATION]] - document - docs/planning/v1.0/POST_FABLE5_TASK_DELEGATION.md
-- [[RELEASE-ANNOUNCEMENT-v1.0.0]] - document - docs/planning/v1.0/RELEASE-ANNOUNCEMENT-v1.0.0.md
-- [[Security Assessment v0.8.0]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[Task list]] - document - docs/planning/v1.0/POST_FABLE5_TASK_DELEGATION.md
-- [[Test Coverage Summary (Post-Remediation)]] - document - docs/planning/v0.8/agentshroud-security-overview-v0.8.0.md
-- [[agentshroud-security-overview-v0.8.0]] - document - docs/planning/v0.8/agentshroud-security-overview-v0.8.0.md
-- [[awesome-ai-security]] - document - docs/planning/v1.0/RELEASE-ANNOUNCEMENT-v1.0.0.md
-- [[awesome-llm-apps  awesome-llm]] - document - docs/planning/v1.0/RELEASE-ANNOUNCEMENT-v1.0.0.md
-- [[awesome-security  defensive security list]] - document - docs/planning/v1.0/RELEASE-ANNOUNCEMENT-v1.0.0.md
-- [[v0.8.0 25-Domain Prompt Injection Defense Assessment]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[v0.9.0  v1.0.0 Roadmap]] - document - docs/planning/v0.8/agentshroud-security-overview-v0.8.0.md
-- [[v0.9.0 — Production Hardening]] - document - docs/planning/v0.8/agentshroud-security-overview-v0.8.0.md
-- [[v1.0.0 — Zero-Trust Compute]] - document - docs/planning/v0.8/agentshroud-security-overview-v0.8.0.md
+- [[dot-__post_init__()_5]] - code - gateway/proxy/mcp_proxy.py
+- [[dot-test_admin_private_data_not_redacted_for_owner()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_admin_private_data_redacted_for_non_owner()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_blocked_entries()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_clean_result_passes()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_error_result_logged()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_failed_entries()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_filter_by_agent()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_filter_by_server()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_filter_by_tool()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_gateway_contributor_paths_redacted_for_non_owner()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_generate_report()_1]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_memory_markers_redacted_for_non_owner()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_pii_redacted_in_result()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_private_redaction_emits_privacy_event()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_result_audit_logged()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_tool_call_generates_id_and_timestamp()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-test_tool_result_timestamp_default()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[MCPToolCall]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[MCPToolResult]] - code - gateway/proxy/mcp_proxy.py
+- [[Represents an MCP tool result.]] - rationale - gateway/proxy/mcp_proxy.py
+- [[TestAuditQueries]] - code - gateway/tests/test_mcp_proxy.py
+- [[TestDataclasses]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[TestProxyResultProcessing]] - code - gateway/tests/test_mcp_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -43,7 +43,26 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 386]]
+- 33 edges to [[_COMMUNITY_Community 50]]
+- 15 edges to [[_COMMUNITY_Community 108]]
+- 13 edges to [[_COMMUNITY_Community 143]]
+- 12 edges to [[_COMMUNITY_Community 175]]
+- 11 edges to [[_COMMUNITY_Community 211]]
+- 8 edges to [[_COMMUNITY_Community 89]]
+- 6 edges to [[_COMMUNITY_Community 218]]
+- 6 edges to [[_COMMUNITY_Community 35]]
+- 5 edges to [[_COMMUNITY_Community 129]]
+- 2 edges to [[_COMMUNITY_Ingest API & RBAC Core]]
+- 1 edge to [[_COMMUNITY_Community 1037]]
+- 1 edge to [[_COMMUNITY_Community 1038]]
+- 1 edge to [[_COMMUNITY_Community 1110]]
+- 1 edge to [[_COMMUNITY_Community 1111]]
+- 1 edge to [[_COMMUNITY_Community 910]]
+- 1 edge to [[_COMMUNITY_Community 966]]
 
 ## Top bridge nodes
-- [[v0.8.0 25-Domain Prompt Injection Defense Assessment]] - degree 5, connects to 1 community
+- [[MCPToolResult]] - degree 79, connects to 15 communities
+- [[TestDataclasses]] - degree 17, connects to 8 communities
+- [[MCPToolCall]] - degree 16, connects to 8 communities
+- [[TestProxyResultProcessing]] - degree 23, connects to 6 communities
+- [[TestAuditQueries]] - degree 20, connects to 6 communities

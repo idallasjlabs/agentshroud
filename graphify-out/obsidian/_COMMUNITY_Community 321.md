@@ -1,41 +1,42 @@
 ---
 type: community
-cohesion: 0.08
-members: 26
+cohesion: 0.07
+members: 27
 ---
 
 # Community 321
 
-**Cohesion:** 0.08 - loosely connected
-**Members:** 26 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 27 nodes
 
 ## Members
-- [[API  Function Reference_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
-- [[Anti-Patterns to Flag_13]] - document - docker/config/hermes/skills/i-tw/SKILL.md
-- [[Architecture Decision Record (ADR)_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
-- [[Changelog Entry_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
-- [[Core Discipline Understand → Structure → Write → Validate_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
-- [[Dependencies_9]] - document - docker/config/hermes/skills/i-tw/SKILL.md
-- [[Document Structure_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
-- [[Document-Type Patterns_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
-- [[Expected output_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
-- [[Expected ok_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
-- [[Expected INFO Re-queued 3 jobs_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
-- [[Formatting_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
-- [[If not → escalate to field team via ops-alerts_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
-- [[Query the control DB_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
-- [[README — Entry Point for a Repo or Service_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
-- [[Role_72]] - document - docker/config/hermes/skills/i-tw/SKILL.md
-- [[Rules_15]] - document - docker/config/hermes/skills/i-tw/SKILL.md
-- [[Runbook — Operational Decision Tree_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
-- [[SKILL_122]] - document - docker/config/hermes/skills/i-tw/SKILL.md
-- [[Skill Technical Writer (TW)_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
-- [[Validation Checklist_5]] - document - docker/config/hermes/skills/i-tw/SKILL.md
-- [[Voice & Tone_3]] - document - docker/config/hermes/skills/i-tw/SKILL.md
-- [[What Belongs Where_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
-- [[Writing Style Rules_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
-- [[INFO Extracted 1,204 records → s3my-bucketlanding..._1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
-- [[→ {site site1, test_mode True, output_prefix _testsite1}_1]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[1. Accomplishments This Phase_2]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[2. Security Value Audit_3]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[3. Remaining Work — Prioritized by Value_2]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[4. Risks & Gaps_3]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[4. Risks & Gaps — Critical Security Concerns]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
+- [[5. Merge Readiness Assessment]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[Basic Test Infrastructure (⚠️ PARTIAL)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[Conclusion]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[Core Security Pipeline Integration (✅ DELIVERED)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[Critical Risks (Must Address Before Merge)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[Design Concerns]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[Estimated Fix Time 4-6 hours]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[Executive Summary_6]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[Files Modified (8 files, 167 insertions, 18 deletions)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[Medium Risks (Address in Next Phase)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[P0 - Critical Security Gaps (BLOCK MERGE)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[P1 - High-Value Security Enhancements (NEXT PHASE)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[P2 - Feature Completeness (FUTURE PHASES)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[Phase Review P0 — Core Pipeline Wiring]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[Security Configuration Hardening (✅ DELIVERED)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[phase-review-p0-2026-02-23]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[❌ NOT READY FOR MERGE]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[🔴 HIGH RISK — Immediate Attention Required]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
+- [[🔴 POTENTIAL SECURITY THEATER]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[🟡 AREAS REQUIRING VALIDATION]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[🟢 LOW RISK — Future Enhancement]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
+- [[🟢 GENUINE SECURITY VALUE]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -43,3 +44,11 @@ members: 26
 TABLE source_file, type FROM #community/Community_321
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_Community 130]]
+- 1 edge to [[_COMMUNITY_Community 527]]
+
+## Top bridge nodes
+- [[Phase Review P0 — Core Pipeline Wiring]] - degree 10, connects to 2 communities
+- [[4. Risks & Gaps — Critical Security Concerns]] - degree 4, connects to 1 community

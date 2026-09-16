@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[curriculum.md (podcast pipeline learning objectives artifact)]] - concept - docker/config/hermes/skills/i-mnemosyne/SKILL.md
+- [[AgentShroud Logo on Brand Blue Background]] - image - branding/logos/variants/logo-on-brand-blue-1024x1024.png
 
 ## Live Query (requires Dataview plugin)
 

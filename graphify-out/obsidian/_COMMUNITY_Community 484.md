@@ -1,34 +1,34 @@
 ---
 type: community
-cohesion: 0.14
+cohesion: 0.11
 members: 19
 ---
 
 # Community 484
 
-**Cohesion:** 0.14 - loosely connected
+**Cohesion:** 0.11 - loosely connected
 **Members:** 19 nodes
 
 ## Members
-- [[._time_fn()]] - code - gateway/tests/test_benchmark_regression.py
-- [[.setup_method()]] - code - gateway/tests/test_benchmark_regression.py
-- [[.test_100_inbound_requests()]] - code - gateway/tests/test_benchmark_regression.py
-- [[.test_baseline_file_exists()]] - code - gateway/tests/test_benchmark_regression.py
-- [[.test_baseline_values_are_reasonable()]] - code - gateway/tests/test_benchmark_regression.py
-- [[.test_single_inbound_latency()]] - code - gateway/tests/test_benchmark_regression.py
-- [[.test_single_outbound_latency()]] - code - gateway/tests/test_benchmark_regression.py
-- [[100 sequential inbound requests should stay within baseline.          Baseline k]] - rationale - gateway/tests/test_benchmark_regression.py
-- [[Assert measured value is within THRESHOLD of baseline.]] - rationale - gateway/tests/test_benchmark_regression.py
-- [[Baseline file must exist and contain expected keys.]] - rationale - gateway/tests/test_benchmark_regression.py
-- [[Baseline values should be positive and within expected ranges.]] - rationale - gateway/tests/test_benchmark_regression.py
-- [[Benchmark regression tests — ensure latency stays within 20% of baseline.]] - rationale - gateway/tests/test_benchmark_regression.py
-- [[Single inbound request processing should stay within baseline.]] - rationale - gateway/tests/test_benchmark_regression.py
-- [[Single outbound request processing should stay within baseline.]] - rationale - gateway/tests/test_benchmark_regression.py
-- [[TestBenchmarkRegression]] - code - gateway/tests/test_benchmark_regression.py
-- [[Time a function over N iterations, return mean ms.]] - rationale - gateway/tests/test_benchmark_regression.py
-- [[assert_within_threshold()]] - code - gateway/tests/test_benchmark_regression.py
-- [[load_baseline()]] - code - gateway/tests/test_benchmark_regression.py
-- [[test_benchmark_regression.py]] - code - gateway/tests/test_benchmark_regression.py
+- [[1. Anthropic API Credits Exhausted]] - document - docs/project/REPORTED_ISSUES.md
+- [[10. Colima VM Internet Connectivity Loss]] - document - docs/project/REPORTED_ISSUES.md
+- [[11. Missing Test Coverage for Core Modules]] - document - docs/project/REPORTED_ISSUES.md
+- [[12. PII Redaction Issues]] - document - docs/project/REPORTED_ISSUES.md
+- [[13. Duplicate Imports & Verbose Pydantic Init]] - document - docs/project/REPORTED_ISSUES.md
+- [[14. Hardcoded Database Paths]] - document - docs/project/REPORTED_ISSUES.md
+- [[15. Debug Artifacts in Production Code]] - document - docs/project/REPORTED_ISSUES.md
+- [[16. Missing Newlines]] - document - docs/project/REPORTED_ISSUES.md
+- [[17. Hardcoded JWT Metadata]] - document - docs/project/REPORTED_ISSUES.md
+- [[2. iMessage Integration Permission Denied]] - document - docs/project/REPORTED_ISSUES.md
+- [[3. Unpinned Base Image in Dockerfile]] - document - docs/project/REPORTED_ISSUES.md
+- [[9. Streaming Responses Bypass Outbound Filtering]] - document - docs/project/REPORTED_ISSUES.md
+- [[AgentShroud Consolidated Issues Report]] - document - docs/project/REPORTED_ISSUES.md
+- [[REPORTED_ISSUES]] - document - docs/project/REPORTED_ISSUES.md
+- [[📁 Infrastructure Limitations]] - document - docs/project/REPORTED_ISSUES.md
+- [[📝 General TODOs & Wishlist]] - document - docs/project/REPORTED_ISSUES.md
+- [[🔴 CRITICAL Operational Blockers]] - document - docs/project/REPORTED_ISSUES.md
+- [[🔵 LOW Improvements & Formatting]] - document - docs/project/REPORTED_ISSUES.md
+- [[🟡 MEDIUM Technical Debt & Bugs]] - document - docs/project/REPORTED_ISSUES.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -38,7 +38,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 75]]
+- 1 edge to [[_COMMUNITY_Community 954]]
+- 1 edge to [[_COMMUNITY_Community 788]]
 
 ## Top bridge nodes
-- [[TestBenchmarkRegression]] - degree 10, connects to 1 community
+- [[AgentShroud Consolidated Issues Report]] - degree 8, connects to 2 communities

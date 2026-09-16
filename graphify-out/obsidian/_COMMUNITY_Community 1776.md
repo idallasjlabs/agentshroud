@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Diagram 22 Dependency Graph]] - image - docs/diagrams/images/diagram-22-dependency-graph.svg
+- [[Value Stream Mapping Skill]] - document - .agents/skills/i-value-stream-mapping/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

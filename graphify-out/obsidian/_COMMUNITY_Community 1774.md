@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Diagram 17 State — Bot Session]] - image - docs/diagrams/images/diagram-17-state-bot-session.svg
+- [[Pre-Change Analysis (PCA)]] - document - .agents/skills/i-pca/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

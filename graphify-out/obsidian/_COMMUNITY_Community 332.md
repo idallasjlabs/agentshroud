@@ -10,32 +10,32 @@ members: 26
 **Members:** 26 nodes
 
 ## Members
-- [[Access Pattern]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[App-Specific Password (if 2FA enabled)]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[Apple ID Creation]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[Apple Services Setup Guide]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[CalDAV Server]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[CardDAV Server]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[Credential Storage]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[IMAP Settings (Incoming Mail)]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[Notes Access Options]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[Phase 1 Email]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[Phase 2 Calendar]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[Phase 3 Contacts]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[SMTP Settings (Outgoing Mail)]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[Test Access]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[Two-Factor Authentication]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[iCloud Services_3]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[🎯 Next Steps]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[📅 Calendar (CalDAV)]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[📋 Setup Checklist]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[📚 Documentation Links]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[📝 Notes]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[📞 Contacts (CardDAV)]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[📧 Apple Mail (IMAPSMTP)]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[🔐 App-Specific Passwords]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[🚨 Security Notes]] - document - docs/setup/APPLE-SERVICES-SETUP.md
-- [[🤖 Bot Integration Plan]] - document - docs/setup/APPLE-SERVICES-SETUP.md
+- [[API  Function Reference_2]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
+- [[Anti-Patterns to Flag_11]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
+- [[Architecture Decision Record (ADR)_2]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
+- [[Changelog Entry_2]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
+- [[Core Discipline Understand → Structure → Write → Validate_2]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
+- [[Dependencies_12]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
+- [[Document Structure_2]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
+- [[Document-Type Patterns_2]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
+- [[Expected output_2]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
+- [[Expected ok_2]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
+- [[Expected INFO Re-queued 3 jobs_2]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
+- [[Formatting_2]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
+- [[If not → escalate to field team via ops-alerts_2]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
+- [[Query the control DB_2]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
+- [[README — Entry Point for a Repo or Service_2]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
+- [[Role_36]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
+- [[Rules_12]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
+- [[Runbook — Operational Decision Tree_2]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
+- [[Skill Technical Writer (TW)_2]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
+- [[Validation Checklist_5]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
+- [[Voice & Tone_5]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
+- [[What Belongs Where_2]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
+- [[Writing Style Rules_2]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
+- [[INFO Extracted 1,204 records → s3my-bucketlanding..._2]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
+- [[openclawskillsi-twSKILL]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
+- [[→ {site site1, test_mode True, output_prefix _testsite1}_2]] - document - docker/config/openclaw/skills/i-tw/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -43,9 +43,3 @@ members: 26
 TABLE source_file, type FROM #community/Community_332
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 428]]
-
-## Top bridge nodes
-- [[Apple Services Setup Guide]] - degree 11, connects to 1 community

@@ -1,39 +1,39 @@
 ---
 type: community
-cohesion: 0.09
+cohesion: 0.12
 members: 24
 ---
 
 # Community 367
 
-**Cohesion:** 0.09 - loosely connected
+**Cohesion:** 0.12 - loosely connected
 **Members:** 24 nodes
 
 ## Members
-- [[A. Steve Hay Requirements (14) — ALL ✅]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[A. Steve Hay Requirements — ALL Tiers (14 features)]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
-- [[AgentShroud™ v0.8.0 Watchtower — Complete Feature List]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
-- [[B. Wire ALL Modules (14) — ALL ✅]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[B. Wire ALL Modules Into Request Path (14 features)]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
-- [[C. Bug Fixes (9 items)]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
-- [[C. Bug Fixes (9) — ALL ✅]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[D. Interactive Egress Firewall (7 features)]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
-- [[D. Interactive Egress Firewall (7) — 🔴 BROKEN]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[E. Observatory Mode (6 features)]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
-- [[E. Observatory Mode (6) — ALL ✅]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[F. Prompt Injection Hardening (8) — ALL ✅]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[G. Pi-hole DNS Stack (9 features)]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
-- [[G. Pi-hole DNS Stack (9)]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[H. Enhanced Audit & Compliance (5 features)]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
-- [[I. E2E Verification (4) — ALL ✅]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[J. Code Cleanup (5 features)]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
-- [[J. Code Cleanup (5) — ALL ✅]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[K. Misc Quick Wins (11 features)]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
-- [[K. Misc Quick Wins (11) — ALL ✅]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[Moved to v0.9.0 Sentinel]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
-- [[Summary_15]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
-- [[Updated v0.8.0 Feature List with Wiring Status]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
-- [[v0.8.0-feature-list-final]] - document - docs/planning/v0.8/v0.8.0-feature-list-final.md
+- [[Get API key from argument first, then environment.]] - rationale - skills/openclaw/nano-banana-pro/scripts/generate_image.py
+- [[Model-Specific Parameters]] - document - skills/openclaw/openai-image-gen/SKILL.md
+- [[Nano Banana Pro (Gemini 3 Pro Image)]] - document - skills/openclaw/nano-banana-pro/SKILL.md
+- [[OpenAI Image Gen]] - document - skills/openclaw/openai-image-gen/SKILL.md
+- [[Other Notable Differences]] - document - skills/openclaw/openai-image-gen/SKILL.md
+- [[Output_1]] - document - skills/openclaw/openai-image-gen/SKILL.md
+- [[Path_38]] - code - skills/openclaw/openai-image-gen/scripts/gen.py
+- [[Quality]] - document - skills/openclaw/openai-image-gen/SKILL.md
+- [[Return (default_size, default_quality) for the given model.]] - rationale - skills/openclaw/openai-image-gen/scripts/gen.py
+- [[Run]] - document - skills/openclaw/openai-image-gen/SKILL.md
+- [[Size]] - document - skills/openclaw/openai-image-gen/SKILL.md
+- [[default_out_dir()]] - code - skills/openclaw/openai-image-gen/scripts/gen.py
+- [[gen.py]] - code - skills/openclaw/openai-image-gen/scripts/gen.py
+- [[generate_image.py]] - code - skills/openclaw/nano-banana-pro/scripts/generate_image.py
+- [[get_api_key()]] - code - skills/openclaw/nano-banana-pro/scripts/generate_image.py
+- [[get_model_defaults()]] - code - skills/openclaw/openai-image-gen/scripts/gen.py
+- [[main()_19]] - code - skills/openclaw/openai-image-gen/scripts/gen.py
+- [[main()_20]] - code - skills/openclaw/nano-banana-pro/scripts/generate_image.py
+- [[nano-banana-proSKILL]] - document - skills/openclaw/nano-banana-pro/SKILL.md
+- [[openai-image-genSKILL]] - document - skills/openclaw/openai-image-gen/SKILL.md
+- [[pick_prompts()]] - code - skills/openclaw/openai-image-gen/scripts/gen.py
+- [[request_images()]] - code - skills/openclaw/openai-image-gen/scripts/gen.py
+- [[slugify()]] - code - skills/openclaw/openai-image-gen/scripts/gen.py
+- [[write_gallery()]] - code - skills/openclaw/openai-image-gen/scripts/gen.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -41,10 +41,3 @@ members: 24
 TABLE source_file, type FROM #community/Community_367
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 403]]
-- 1 edge to [[_COMMUNITY_Community 435]]
-
-## Top bridge nodes
-- [[Updated v0.8.0 Feature List with Wiring Status]] - degree 12, connects to 2 communities

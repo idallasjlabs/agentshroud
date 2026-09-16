@@ -10,32 +10,32 @@ members: 26
 **Members:** 26 nodes
 
 ## Members
-- [[401 Unauthorized_4]] - document - skills/custom/icloud/SKILL.md
-- [[CalendarContacts not found_3]] - document - skills/custom/icloud/SKILL.md
-- [[Connection timeout_4]] - document - skills/custom/icloud/SKILL.md
-- [[Add Contact_3]] - document - skills/custom/icloud/SKILL.md
-- [[Calendar Operations_3]] - document - skills/custom/icloud/SKILL.md
-- [[Configuration_18]] - document - skills/custom/icloud/SKILL.md
-- [[Contact Operations_3]] - document - skills/custom/icloud/SKILL.md
-- [[Create Event_3]] - document - skills/custom/icloud/SKILL.md
-- [[Create Note_3]] - document - skills/custom/icloud/SKILL.md
-- [[Delete Event_3]] - document - skills/custom/icloud/SKILL.md
-- [[List Contacts_3]] - document - skills/custom/icloud/SKILL.md
-- [[List Events_3]] - document - skills/custom/icloud/SKILL.md
-- [[List Messages_3]] - document - skills/custom/icloud/SKILL.md
-- [[List Notes_3]] - document - skills/custom/icloud/SKILL.md
-- [[Mail Operations_3]] - document - skills/custom/icloud/SKILL.md
-- [[Notes Operations_3]] - document - skills/custom/icloud/SKILL.md
-- [[Search Contacts_3]] - document - skills/custom/icloud/SKILL.md
-- [[Search Mail_3]] - document - skills/custom/icloud/SKILL.md
-- [[Search Notes_3]] - document - skills/custom/icloud/SKILL.md
-- [[Security_10]] - document - skills/custom/icloud/SKILL.md
-- [[Send Email_3]] - document - skills/custom/icloud/SKILL.md
-- [[Setup_4]] - document - skills/custom/icloud/SKILL.md
-- [[Troubleshooting_35]] - document - skills/custom/icloud/SKILL.md
-- [[Update Contact_3]] - document - skills/custom/icloud/SKILL.md
-- [[Update Event_3]] - document - skills/custom/icloud/SKILL.md
-- [[iCloud Services_4]] - document - skills/custom/icloud/SKILL.md
+- [[API Keys Setup Guide]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Change Default Model]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Check Current Profile_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Check Telegram Channel Status]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Create the Anthropic OAuth Token File]] - document - docs/setup/SETUP_API_KEYS.md
+- [[List Available Models]] - document - docs/setup/SETUP_API_KEYS.md
+- [[List Available Profiles_2]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Option 1 Use Anthropic Claude (Recommended)]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Option 2 Use OpenAI GPT-4]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Option A Via Control UI (Recommended)]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Option B Via Command Line]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Overview_10]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Quick Reference_8]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Security Notes_3]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Step 1 Save API Keys to Secret Files]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Step 2 Restart OpenClaw Container]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Step 3 Configure API Keys in OpenClaw]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Step 4 Set Default Model]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Step 5 Verify Configuration]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Step 6 Add Telegram Bot]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Step 7 Test the Bot]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Summary Checklist]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Test via Control UI]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Test via Telegram]] - document - docs/setup/SETUP_API_KEYS.md
+- [[Verify OpenAI Key Exists]] - document - docs/setup/SETUP_API_KEYS.md
+- [[View Configured Providers]] - document - docs/setup/SETUP_API_KEYS.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -45,7 +45,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 239]]
+- 1 edge to [[_COMMUNITY_Community 315]]
 - 1 edge to [[_COMMUNITY_Community 378]]
 
 ## Top bridge nodes
-- [[iCloud Services_4]] - degree 9, connects to 1 community
+- [[API Keys Setup Guide]] - degree 13, connects to 2 communities
+- [[List Available Profiles_2]] - degree 3, connects to 1 community

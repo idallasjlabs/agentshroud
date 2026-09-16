@@ -10,31 +10,31 @@ members: 25
 **Members:** 25 nodes
 
 ## Members
-- [[.setup_method()_22]] - code - gateway/tests/test_resource_guard.py
-- [[.teardown_method()_5]] - code - gateway/tests/test_resource_guard.py
-- [[.test_brief_spike_below_debounce_does_not_alert()]] - code - gateway/tests/test_resource_guard.py
-- [[.test_check_resource_over_limit_blocked()]] - code - gateway/tests/test_resource_guard.py
-- [[.test_check_resource_temp_files_limit()]] - code - gateway/tests/test_resource_guard.py
-- [[.test_check_resource_under_limit_passes()]] - code - gateway/tests/test_resource_guard.py
-- [[.test_invalid_resource_type()]] - code - gateway/tests/test_resource_guard.py
-- [[.test_multiple_agents_isolated()]] - code - gateway/tests/test_resource_guard.py
-- [[.test_request_count_limiting()]] - code - gateway/tests/test_resource_guard.py
-- [[.test_resource_guard_config()]] - code - gateway/tests/test_resource_guard.py
-- [[.test_stop_cancels_monitor_task()]] - code - gateway/tests/test_resource_guard.py
-- [[.test_system_resource_monitoring_alerts_after_debounce()]] - code - gateway/tests/test_resource_guard.py
-- [[.test_window_expiry_resets_usage()]] - code - gateway/tests/test_resource_guard.py
-- [[A single over-threshold sample followed by an under-threshold sample is suppress]] - rationale - gateway/tests/test_resource_guard.py
-- [[Sustained high CPU fires the alert after debounce samples are crossed.]] - rationale - gateway/tests/test_resource_guard.py
-- [[Test ResourceGuardConfig dataclass.]] - rationale - gateway/tests/test_resource_guard.py
-- [[Test handling of invalid resource types.]] - rationale - gateway/tests/test_resource_guard.py
-- [[Test request count per minute limiting.]] - rationale - gateway/tests/test_resource_guard.py
-- [[Test temp file count limiting.]] - rationale - gateway/tests/test_resource_guard.py
-- [[Test that different agents have isolated resource tracking.]] - rationale - gateway/tests/test_resource_guard.py
-- [[Test that resource usage over limits is blocked.]] - rationale - gateway/tests/test_resource_guard.py
-- [[Test that resource usage resets after time window.]] - rationale - gateway/tests/test_resource_guard.py
-- [[Test that resource usage under limits passes.]] - rationale - gateway/tests/test_resource_guard.py
-- [[TestResourceGuard]] - code - gateway/tests/test_resource_guard.py
-- [[stop() should cancel background monitor cleanly.]] - rationale - gateway/tests/test_resource_guard.py
+- [[Example 1 User Asks for Password (Chat)]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[Example 2 User Asks for Password (Console)]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[Example 3 User Wants Service Configured]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[Example 4 User Insists on Seeing Password]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[Quick Reference Commands]] - document - docs/setup/DEVICE_PAIRING.md
+- [[Quick-reference commands]] - document - firmware/voice-terminal/SETUP.md
+- [[Rule 1 Never Display in Chat (ANY CHAT)]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[Rule 2 Always Display in Console]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[Rule 3 Always Use Internally]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[System Instructions Credential Security (Ultra-Conservative)]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[The Problems with Trusted Chat]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[Via Console]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[Via Control UI]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[Via Telegram_1]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[Why This Rule]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[✅ Summary]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[🎓 Why No Exceptions]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[🎯 The Ultra-Conservative Approach]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[💬 Example Conversations]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[📊 Security Rules]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[📝 Implementation Checklist]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[🔄 What Changed from Previous Version]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[🔐 Core Security Principle]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[🛡️ Security Benefits]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[🧪 Decision Examples]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -44,12 +44,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 225]]
-- 3 edges to [[_COMMUNITY_Community 88]]
-- 1 edge to [[_COMMUNITY_Community 807]]
+- 2 edges to [[_COMMUNITY_Community 360]]
+- 1 edge to [[_COMMUNITY_Community 206]]
 
 ## Top bridge nodes
-- [[TestResourceGuard]] - degree 16, connects to 3 communities
-- [[.test_stop_cancels_monitor_task()]] - degree 4, connects to 2 communities
-- [[.setup_method()_22]] - degree 3, connects to 2 communities
-- [[.test_resource_guard_config()]] - degree 3, connects to 1 community
+- [[System Instructions Credential Security (Ultra-Conservative)]] - degree 14, connects to 1 community
+- [[Quick Reference Commands]] - degree 2, connects to 1 community

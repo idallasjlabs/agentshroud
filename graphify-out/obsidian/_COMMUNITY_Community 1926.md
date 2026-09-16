@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[xmind-generator-mcp (MCP server)]] - concept - docker/config/hermes/skills/i-mm/SKILL.md
+- [[test_playback_statestubsesp_err.h]] - code - firmware/voice-terminal/test/test_playback_state/stubs/esp_err.h
 
 ## Live Query (requires Dataview plugin)
 

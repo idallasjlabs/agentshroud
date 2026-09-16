@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[AgentShroud TwitterX Header]] - image - branding/social/twitter-header-1500x500.png
+- [[graphify explain command]] - concept - docker/config/openclaw/skills/graphify/references/query.md
 
 ## Live Query (requires Dataview plugin)
 

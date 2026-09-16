@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[SOC Auth Session Token Tests]] - code - gateway/tests/test_soc_auth.py
+- [[Redaction]] - concept - docs/project/glossary.md
 
 ## Live Query (requires Dataview plugin)
 

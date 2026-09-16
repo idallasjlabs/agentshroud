@@ -1,42 +1,43 @@
 ---
 type: community
-cohesion: 0.07
-members: 27
+cohesion: 0.11
+members: 28
 ---
 
 # Community 293
 
-**Cohesion:** 0.07 - loosely connected
-**Members:** 27 nodes
+**Cohesion:** 0.11 - loosely connected
+**Members:** 28 nodes
 
 ## Members
-- [[Guardrails_4]] - document - .agents/skills/i-odev/SKILL.md
-- [[Invocation_2]] - document - .agents/skills/i-odev/SKILL.md
-- [[Jira ticket — every development batch gets one_1]] - document - .agents/skills/i-odev/SKILL.md
-- [[Mode A — Single task_1]] - document - .agents/skills/i-odev/SKILL.md
-- [[Mode B — Comprehensive review sweep_1]] - document - .agents/skills/i-odev/SKILL.md
-- [[Reviewers and fixer available to you_1]] - document - .agents/skills/i-odev/SKILL.md
-- [[Role_22]] - document - .agents/skills/i-odev/SKILL.md
-- [[SKILL_38]] - document - .agents/skills/i-odev/SKILL.md
-- [[Skill OpenClaw Dev Workflow (ODEV)]] - document - .agents/skills/i-odev/SKILL.md
-- [[Step 1 — One branch + worktree for the whole sweep_1]] - document - .agents/skills/i-odev/SKILL.md
-- [[Step 1 — Sync and confirm clean state_1]] - document - .agents/skills/i-odev/SKILL.md
-- [[Step 10 — Notify the owner_1]] - document - .agents/skills/i-odev/SKILL.md
-- [[Step 11 — Merge (only on explicit owner instruction)_1]] - document - .agents/skills/i-odev/SKILL.md
-- [[Step 12 — Clean up_1]] - document - .agents/skills/i-odev/SKILL.md
-- [[Step 2 — Create a branch + worktree_1]] - document - .agents/skills/i-odev/SKILL.md
-- [[Step 2 — Work through directories one at a time_1]] - document - .agents/skills/i-odev/SKILL.md
-- [[Step 2b — Create the Jira ticket_1]] - document - .agents/skills/i-odev/SKILL.md
-- [[Step 3 — After the last directory (or a natural stopping point)_1]] - document - .agents/skills/i-odev/SKILL.md
-- [[Step 3 — Write and edit code_1]] - document - .agents/skills/i-odev/SKILL.md
-- [[Step 4 — Test and lint_1]] - document - .agents/skills/i-odev/SKILL.md
-- [[Step 5 — Multi-LLM review_1]] - document - .agents/skills/i-odev/SKILL.md
-- [[Step 6 — Build and validate containers_1]] - document - .agents/skills/i-odev/SKILL.md
-- [[Step 7 — Update documentation and website_1]] - document - .agents/skills/i-odev/SKILL.md
-- [[Step 8 — Update the knowledge graph_1]] - document - .agents/skills/i-odev/SKILL.md
-- [[Step 9 — Push and open the PR_1]] - document - .agents/skills/i-odev/SKILL.md
-- [[Step 9b — Update the Jira ticket with the PR link_1]] - document - .agents/skills/i-odev/SKILL.md
-- [[Tools you have for this workflow_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[dot-_line_at()]] - code - gateway/security/skill_guard.py
+- [[dot-_scan_opaque_blobs()]] - code - gateway/security/skill_guard.py
+- [[dot-blocked()]] - code - gateway/security/skill_guard.py
+- [[dot-extend()]] - code - gateway/security/skill_guard.py
+- [[dot-recommendation()]] - code - gateway/security/skill_guard.py
+- [[dot-scan_file()_1]] - code - gateway/security/skill_guard.py
+- [[dot-scan_skill_tree()]] - code - gateway/security/skill_guard.py
+- [[dot-severity()]] - code - gateway/security/skill_guard.py
+- [[A single supply-chain finding within a scanned skill artefact.]] - rationale - gateway/security/skill_guard.py
+- [[ALLOW below MEDIUM, FLAG at MEDIUMHIGH, BLOCK at CRITICAL.]] - rationale - gateway/security/skill_guard.py
+- [[Aggregated result of scanning a skill file or an entire skill tree.]] - rationale - gateway/security/skill_guard.py
+- [[Finding]] - code - gateway/security/skill_guard.py
+- [[Flag long opaque base64hex runs as probable obfuscated payloads.]] - rationale - gateway/security/skill_guard.py
+- [[Highest severity across all findings (``NONE`` when clean).]] - rationale - gateway/security/skill_guard.py
+- [[Path_31]] - code - gateway/skills/scan.py
+- [[Read every manifest entry under source, failing CLOSED on unreadable files.]] - rationale - gateway/skills/scan.py
+- [[Scan every file in a skillMCPagent tree and aggregate findings.          ``fil]] - rationale - gateway/security/skill_guard.py
+- [[Scan one skill artefact (``name`` = relative path, ``content`` = text).]] - rationale - gateway/security/skill_guard.py
+- [[Scan skill  MCP  agent-definition payloads for supply-chain risk.      Usage]] - rationale - gateway/security/skill_guard.py
+- [[ScanResult_2]] - code - gateway/skills/scan.py
+- [[ScanResult_3]] - code - gateway/security/skill_guard.py
+- [[SkillGuard_1]] - code - gateway/security/skill_guard.py
+- [[SkillGuard.scan_skill_tree()]] - code - gateway/security/skill_guard.py
+- [[SkillsManifest.from_source()]] - code - gateway/skills/manifest.py
+- [[_build_tree()]] - code - gateway/skills/scan.py
+- [[_print_findings()]] - code - gateway/skills/scan.py
+- [[main()_16]] - code - gateway/skills/scan.py
+- [[scan.py]] - code - gateway/skills/scan.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -44,3 +45,17 @@ members: 27
 TABLE source_file, type FROM #community/Community_293
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 30 edges to [[_COMMUNITY_Community 114]]
+- 12 edges to [[_COMMUNITY_Community 294]]
+- 9 edges to [[_COMMUNITY_Community 849]]
+- 4 edges to [[_COMMUNITY_Community 247]]
+- 2 edges to [[_COMMUNITY_Runtime Security Comparison & Intel Report]]
+
+## Top bridge nodes
+- [[SkillGuard_1]] - degree 34, connects to 5 communities
+- [[ScanResult_3]] - degree 32, connects to 3 communities
+- [[scan.py]] - degree 8, connects to 2 communities
+- [[Path_31]] - degree 6, connects to 2 communities
+- [[ScanResult_2]] - degree 5, connects to 2 communities

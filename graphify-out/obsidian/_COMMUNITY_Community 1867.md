@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[__init__.py_11]] - code - gateway/soc/__init__.py
+- [[Stale Cron Session Claim Cleanup]] - rationale - docker/config/openclaw/cron/JOBS-REFERENCE.md
 
 ## Live Query (requires Dataview plugin)
 

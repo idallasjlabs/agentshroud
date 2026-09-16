@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[ToolChainAnalyzer.score_reversibility (C37)]] - code - gateway/security/tool_chain_analyzer.py
+- [[i-devsecops SKILL (stub)]] - document - docker/config/hermes/skills/i-devsecops/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

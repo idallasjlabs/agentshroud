@@ -1,38 +1,38 @@
 ---
 type: community
-cohesion: 0.14
+cohesion: 0.09
 members: 23
 ---
 
 # Community 381
 
-**Cohesion:** 0.14 - loosely connected
+**Cohesion:** 0.09 - loosely connected
 **Members:** 23 nodes
 
 ## Members
-- [[Map job name - the full '_seed_cron Name ...' call text (all lines,     since]] - rationale - gateway/tests/test_hermes_cron_seed.py
-- [[SCRUM-81 weekly Jira review cron must exist in both sh and yaml, Sun 0900.]] - rationale - gateway/tests/test_hermes_cron_seed.py
-- [[Stamp-file gating (v1v2v3) caused job triplication on every version bump.]] - rationale - gateway/tests/test_hermes_cron_seed.py
-- [[The schedule must be '0 9   0' (Sunday 0900) in both files.]] - rationale - gateway/tests/test_hermes_cron_seed.py
-- [[_parse_cron_names_from_sh()]] - code - gateway/tests/test_hermes_cron_seed.py
-- [[_parse_job_names_from_yaml()]] - code - gateway/tests/test_hermes_cron_seed.py
-- [[_parse_seed_cron_calls_from_sh()]] - code - gateway/tests/test_hermes_cron_seed.py
-- [[_seed_cron must accept optional $5 (model)  $6 (provider) and forward     them]] - rationale - gateway/tests/test_hermes_cron_seed.py
-- [[init-config.sh (Hermes cron seed)]] - code - docker/bots/hermes/init-config.sh
-- [[jira-weekly-review is pure script execution (near-zero free-form     generation)]] - rationale - gateway/tests/test_hermes_cron_seed.py
-- [[jobs.yaml (Hermes cron reference)]] - document - docker/config/hermes/cron/jobs.yaml
-- [[test_competitive_email_job_present()]] - code - gateway/tests/test_hermes_cron_seed.py
-- [[test_competitive_landscape_job_present()]] - code - gateway/tests/test_hermes_cron_seed.py
-- [[test_content_generating_jobs_pinned_to_evidence_backed_model()]] - code - gateway/tests/test_hermes_cron_seed.py
-- [[test_cron_seed_is_stampless_and_idempotent()]] - code - gateway/tests/test_hermes_cron_seed.py
-- [[test_hermes_cron_seed.py]] - code - gateway/tests/test_hermes_cron_seed.py
-- [[test_init_config_has_expected_cron_job_count()]] - code - gateway/tests/test_hermes_cron_seed.py
-- [[test_jira_weekly_review_job_present()]] - code - gateway/tests/test_hermes_cron_seed.py
-- [[test_jira_weekly_review_not_pinned_to_a_model()]] - code - gateway/tests/test_hermes_cron_seed.py
-- [[test_jira_weekly_review_schedule_is_sunday_9am()]] - code - gateway/tests/test_hermes_cron_seed.py
-- [[test_jobs_yaml_has_expected_job_count()]] - code - gateway/tests/test_hermes_cron_seed.py
-- [[test_seed_cron_supports_optional_model_and_provider_args()]] - code - gateway/tests/test_hermes_cron_seed.py
-- [[test_stability_report_job_present()]] - code - gateway/tests/test_hermes_cron_seed.py
+- [[1Password iCloud Credential Retrieval]] - concept - skills/custom/icloud/SKILL.md
+- [[Example Production Server with Strict Restrictions]] - document - docs/ssh-configuration.md
+- [[Field Reference]] - document - docs/ssh-configuration.md
+- [[Full Annotated Example]] - document - docs/ssh-configuration.md
+- [[How AllowDeny Lists Work]] - document - docs/ssh-configuration.md
+- [[How Auto-Approve Works]] - document - docs/ssh-configuration.md
+- [[How to Add a New Trusted Host]] - document - docs/ssh-configuration.md
+- [[MML (MIME Meta Language)]] - concept - skills/openclaw/himalaya/references/message-composition.md
+- [[P4 Low Priority Incidents]] - document - docs/operations/incident-response.md
+- [[SSH Configuration Guide]] - document - docs/ssh-configuration.md
+- [[Step 1 Choose a logical name]] - document - docs/ssh-configuration.md
+- [[Step 2 Add the host entry]] - document - docs/ssh-configuration.md
+- [[Step 3 Set up SSH keys]] - document - docs/ssh-configuration.md
+- [[Step 4 Pre-populate known_hosts (recommended)]] - document - docs/ssh-configuration.md
+- [[Step 5 Restart the gateway]] - document - docs/ssh-configuration.md
+- [[gog]] - document - skills/openclaw/gog/SKILL.md
+- [[gog CLI (Google Workspace)]] - concept - skills/openclaw/gog/SKILL.md
+- [[gogSKILL]] - document - skills/openclaw/gog/SKILL.md
+- [[himalaya CLI]] - concept - skills/openclaw/himalaya/SKILL.md
+- [[himalayaSKILL]] - document - skills/openclaw/himalaya/SKILL.md
+- [[icloudSKILL]] - document - skills/custom/icloud/SKILL.md
+- [[message-composition]] - document - skills/openclaw/himalaya/references/message-composition.md
+- [[ssh-configuration]] - document - docs/ssh-configuration.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -40,3 +40,19 @@ members: 23
 TABLE source_file, type FROM #community/Community_381
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 239]]
+- 1 edge to [[_COMMUNITY_Community 324]]
+- 1 edge to [[_COMMUNITY_Community 336]]
+- 1 edge to [[_COMMUNITY_Community 595]]
+- 1 edge to [[_COMMUNITY_Community 489]]
+- 1 edge to [[_COMMUNITY_Community 77]]
+- 1 edge to [[_COMMUNITY_Community 462]]
+
+## Top bridge nodes
+- [[ssh-configuration]] - degree 7, connects to 3 communities
+- [[himalayaSKILL]] - degree 4, connects to 1 community
+- [[icloudSKILL]] - degree 4, connects to 1 community
+- [[message-composition]] - degree 3, connects to 1 community
+- [[P4 Low Priority Incidents]] - degree 2, connects to 1 community

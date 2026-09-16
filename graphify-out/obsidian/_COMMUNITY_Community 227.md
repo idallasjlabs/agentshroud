@@ -1,48 +1,48 @@
 ---
 type: community
-cohesion: 0.11
+cohesion: 0.06
 members: 33
 ---
 
 # Community 227
 
-**Cohesion:** 0.11 - loosely connected
+**Cohesion:** 0.06 - loosely connected
 **Members:** 33 nodes
 
 ## Members
-- [[.__init__()_99]] - code - gateway/security/module_stats.py
-- [[.record()_2]] - code - gateway/security/module_stats.py
-- [[.reset()_1]] - code - gateway/security/module_stats.py
-- [[.setup_method()_14]] - code - gateway/tests/test_module_stats.py
-- [[.setup_method()_13]] - code - gateway/tests/test_module_stats.py
-- [[.snapshot()]] - code - gateway/security/module_stats.py
-- [[.test_allowed_egress_counts_as_allowed()]] - code - gateway/tests/test_module_stats.py
-- [[.test_denied_egress_counts_as_blocked()]] - code - gateway/tests/test_module_stats.py
-- [[.test_record_decision_helper()]] - code - gateway/tests/test_module_stats.py
-- [[.test_record_decision_never_raises()]] - code - gateway/tests/test_module_stats.py
-- [[.test_tool_acl_can_use_tool_records()]] - code - gateway/tests/test_module_stats.py
-- [[Decision]] - code - gateway/security/module_stats.py
-- [[Ergonomic recorder for enforcement points — never raises.      ``sanitized=True`]] - rationale - gateway/security/module_stats.py
-- [[ModuleStatsCollector]] - code - gateway/security/module_stats.py
-- [[Record one enforcement decision for ``module``.          Never raises an unknow]] - rationale - gateway/security/module_stats.py
-- [[Return a per-module stats snapshot with totals and block rate.]] - rationale - gateway/security/module_stats.py
-- [[SCRUM-80 F1 regression — a DENIED egress attempt must count as blocked.      The]] - rationale - gateway/tests/test_module_stats.py
-- [[SCRUM-80 — the record helper + wrapped enforcement points feed real data.]] - rationale - gateway/tests/test_module_stats.py
-- [[TestEgressWiringEndToEnd]] - code - gateway/tests/test_module_stats.py
-- [[TestEnforcementWiring]] - code - gateway/tests/test_module_stats.py
-- [[Thread-safe per-module allowblocksanitize counters.]] - rationale - gateway/security/module_stats.py
-- [[get_collector()]] - code - gateway/security/module_stats.py
-- [[module_stats.py]] - code - gateway/security/module_stats.py
-- [[record_decision()]] - code - gateway/security/module_stats.py
-- [[test_block_rate_computed()]] - code - gateway/tests/test_module_stats.py
-- [[test_empty_module_zero_rate_not_division_error()]] - code - gateway/tests/test_module_stats.py
-- [[test_module_stats.py]] - code - gateway/tests/test_module_stats.py
-- [[test_record_and_snapshot()]] - code - gateway/tests/test_module_stats.py
-- [[test_record_ignores_invalid_decision_safely()]] - code - gateway/tests/test_module_stats.py
-- [[test_reset()]] - code - gateway/tests/test_module_stats.py
-- [[test_sanitize_decision()]] - code - gateway/tests/test_module_stats.py
-- [[test_thread_safe_under_concurrency()]] - code - gateway/tests/test_module_stats.py
-- [[test_unknown_module_created_on_demand()]] - code - gateway/tests/test_module_stats.py
+- [[COLLABORATOR_IDS]] - code - docker/config/openclaw/apply-patches.js
+- [[COLLAB_LOCAL_INFO_ONLY]] - code - docker/config/openclaw/apply-patches.js
+- [[GROUP_CHAT_IDS]] - code - docker/config/openclaw/apply-patches.js
+- [[IMPORTANT Do NOT add explicit user IDs alongside ''. OpenClaw's…]] - rationale - docker/config/openclaw/apply-patches.js
+- [[MODEL_MODE]] - code - docker/config/openclaw/apply-patches.js
+- [[_COLLAB_TOOL_DENY]] - code - docker/config/openclaw/apply-patches.js
+- [[_COLLAB_TOOL_DENY_FULL_ACCESS]] - code - docker/config/openclaw/apply-patches.js
+- [[_GROUP_TOOL_DENY]] - code - docker/config/openclaw/apply-patches.js
+- [[_is_global_full_access]] - code - docker/config/openclaw/apply-patches.js
+- [[_rawGroupIds]] - code - docker/config/openclaw/apply-patches.js
+- [[_resolveCollabDenyList()]] - code - docker/config/openclaw/apply-patches.js
+- [[_resolveCollabToolConfig()]] - code - docker/config/openclaw/apply-patches.js
+- [[_userOverrides]] - code - docker/config/openclaw/apply-patches.js
+- [[allAllowedOrigins]] - code - docker/config/openclaw/apply-patches.js
+- [[allowedOrigins]] - code - docker/config/openclaw/apply-patches.js
+- [[apply-patches.js (OpenClaw)]] - code - docker/config/openclaw/apply-patches.js
+- [[cIdx]] - code - docker/config/openclaw/apply-patches.js
+- [[config]] - code - docker/config/openclaw/apply-patches.js
+- [[desiredAllowFrom]] - code - docker/config/openclaw/apply-patches.js
+- [[desiredProvider]] - code - docker/config/openclaw/apply-patches.js
+- [[extraOrigins]] - code - docker/config/openclaw/apply-patches.js
+- [[fs_3]] - code - docker/config/openclaw/apply-patches.js
+- [[gpIdx]] - code - docker/config/openclaw/apply-patches.js
+- [[hasChannelWideFallback]] - code - docker/config/openclaw/apply-patches.js
+- [[hasMain]] - code - docker/config/openclaw/apply-patches.js
+- [[hasOwnerBinding]] - code - docker/config/openclaw/apply-patches.js
+- [[missingOrigins]] - code - docker/config/openclaw/apply-patches.js
+- [[missingProxies]] - code - docker/config/openclaw/apply-patches.js
+- [[path_23]] - code - docker/config/openclaw/apply-patches.js
+- [[providerModels]] - code - docker/config/openclaw/apply-patches.js
+- [[staleGroupBindings]] - code - docker/config/openclaw/apply-patches.js
+- [[trustedProxies]] - code - docker/config/openclaw/apply-patches.js
+- [[{ profile _genericProfile, deny _genericCollabDeny }]] - code - docker/config/openclaw/apply-patches.js
 
 ## Live Query (requires Dataview plugin)
 
@@ -52,20 +52,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_Community 78]]
-- 5 edges to [[_COMMUNITY_Progressive Trust]]
-- 4 edges to [[_COMMUNITY_Community 19]]
-- 3 edges to [[_COMMUNITY_Community 50]]
-- 2 edges to [[_COMMUNITY_Community 205]]
-- 2 edges to [[_COMMUNITY_Community 281]]
-- 2 edges to [[_COMMUNITY_Community 33]]
-- 2 edges to [[_COMMUNITY_SOC Collaborators]]
-- 1 edge to [[_COMMUNITY_Community 420]]
-- 1 edge to [[_COMMUNITY_Community 186]]
+- 1 edge to [[_COMMUNITY_Community 450]]
+- 1 edge to [[_COMMUNITY_Community 800]]
+- 1 edge to [[_COMMUNITY_Community 707]]
 
 ## Top bridge nodes
-- [[record_decision()]] - degree 17, connects to 8 communities
-- [[test_module_stats.py]] - degree 18, connects to 3 communities
-- [[TestEnforcementWiring]] - degree 11, connects to 3 communities
-- [[TestEgressWiringEndToEnd]] - degree 10, connects to 3 communities
-- [[get_collector()]] - degree 11, connects to 1 community
+- [[apply-patches.js (OpenClaw)]] - degree 35, connects to 3 communities

@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[SRE Practices]] - document - .agents/skills/i-sre/SKILL.md
+- [[BDD Skill (stub)]] - document - .agents/skills/i-bdd/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -10,33 +10,33 @@ members: 27
 **Members:** 27 nodes
 
 ## Members
-- [[Guardrails_14]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Invocation_8]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Jira ticket — every development batch gets one_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Mode A — Single task_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Mode B — Comprehensive review sweep_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Reviewers and fixer available to you_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Role_87]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[SKILL_150]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Skill Hermes Dev Workflow (HDEV)_2]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Step 1 — One branch + worktree for the whole sweep_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Step 1 — Sync and confirm clean state_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Step 10 — Notify the owner_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Step 11 — Merge (only on explicit owner instruction)_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Step 12 — Clean up_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Step 2 — Create a branch + worktree_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Step 2 — Work through directories one at a time_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Step 2b — Create the Jira ticket_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Step 3 — After the last directory (or a natural stopping point)_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Step 3 — Write and edit code_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Step 4 — Test and lint_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Step 5 — Multi-LLM review_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Step 6 — Build and validate containers_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Step 7 — Update documentation and website_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Step 8 — Update the knowledge graph_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Step 9 — Push and open the PR_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Step 9b — Update the Jira ticket with the PR link_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Tools you have for this workflow_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
+- [[dot-agentsskillsi-mmSKILL]] - document - .agents/skills/i-mm/SKILL.md
+- [[Anti-Patterns to Flag_3]] - document - .agents/skills/i-mm/SKILL.md
+- [[Brainstorming Session Map]] - document - .agents/skills/i-mm/SKILL.md
+- [[Core Discipline Frame → Structure → Generate → Validate]] - document - .agents/skills/i-mm/SKILL.md
+- [[Curriculum Design (with `i-atlas`)]] - document - .agents/skills/i-mm/SKILL.md
+- [[Decision Tree Map]] - document - .agents/skills/i-mm/SKILL.md
+- [[Dependencies_4]] - document - .agents/skills/i-mm/SKILL.md
+- [[Example FODL Pipeline Overview]] - document - .agents/skills/i-mm/SKILL.md
+- [[Export and Sharing Conventions]] - document - .agents/skills/i-mm/SKILL.md
+- [[Hierarchy Design — Outline First]] - document - .agents/skills/i-mm/SKILL.md
+- [[Invocation Pattern]] - document - .agents/skills/i-mm/SKILL.md
+- [[Knowledge Map (PKE  OKE integration)]] - document - .agents/skills/i-mm/SKILL.md
+- [[MCP Tool markmap-mcp-server]] - document - .agents/skills/i-mm/SKILL.md
+- [[MCP Tool xmind-generator-mcp]] - document - .agents/skills/i-mm/SKILL.md
+- [[Markdown-to-Mindmap Conversion]] - document - .agents/skills/i-mm/SKILL.md
+- [[Markmap Generation via MCP]] - document - .agents/skills/i-mm/SKILL.md
+- [[Markmap Invocation Pattern]] - document - .agents/skills/i-mm/SKILL.md
+- [[Markmap Source Format]] - document - .agents/skills/i-mm/SKILL.md
+- [[Outline Template]] - document - .agents/skills/i-mm/SKILL.md
+- [[Project Planning Map]] - document - .agents/skills/i-mm/SKILL.md
+- [[Role_23]] - document - .agents/skills/i-mm/SKILL.md
+- [[Rules_3]] - document - .agents/skills/i-mm/SKILL.md
+- [[Skill Mindmap Architect (MM)]] - document - .agents/skills/i-mm/SKILL.md
+- [[Use Case Patterns]] - document - .agents/skills/i-mm/SKILL.md
+- [[Validation Checklist]] - document - .agents/skills/i-mm/SKILL.md
+- [[When to Use Mindmaps vs Other Formats]] - document - .agents/skills/i-mm/SKILL.md
+- [[XMind Generation via MCP]] - document - .agents/skills/i-mm/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

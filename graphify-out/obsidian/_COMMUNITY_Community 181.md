@@ -1,53 +1,54 @@
 ---
 type: community
-cohesion: 0.11
-members: 38
+cohesion: 0.09
+members: 39
 ---
 
 # Community 181
 
-**Cohesion:** 0.11 - loosely connected
-**Members:** 38 nodes
+**Cohesion:** 0.09 - loosely connected
+**Members:** 39 nodes
 
 ## Members
-- [[.__init__()_69]] - code - gateway/security/data_exfil_volume_guard.py
-- [[._size()]] - code - gateway/security/data_exfil_volume_guard.py
-- [[.get_stats()_15]] - code - gateway/security/data_exfil_volume_guard.py
-- [[.observe()]] - code - gateway/security/data_exfil_volume_guard.py
-- [[.reset_session()]] - code - gateway/security/data_exfil_volume_guard.py
-- [[A blocked (undelivered) response must not consume the session budget,     otherw]] - rationale - gateway/tests/test_data_exfil_volume_guard.py
-- [[Clear cumulative + baseline state for a session (e.g. on new session).]] - rationale - gateway/security/data_exfil_volume_guard.py
-- [[Configuration for class`DataExfilVolumeGuard`.]] - rationale - gateway/security/data_exfil_volume_guard.py
-- [[Cumulative + adaptive outbound-volume anomaly detector, per session.]] - rationale - gateway/security/data_exfil_volume_guard.py
-- [[DataExfilVolumeConfig]] - code - gateway/security/data_exfil_volume_guard.py
-- [[DataExfilVolumeGuard]] - code - gateway/security/data_exfil_volume_guard.py
-- [[If the guard raises, non-owner outbound is blocked (fail-closed).]] - rationale - gateway/tests/test_data_exfil_volume_guard.py
-- [[Observe one outbound response and decide allowblock.          A blocked respons]] - rationale - gateway/security/data_exfil_volume_guard.py
-- [[Structured verdict returned by meth`DataExfilVolumeGuard.observe`.]] - rationale - gateway/security/data_exfil_volume_guard.py
-- [[The rolling baseline deque is trimmed to adaptive_window; old samples drop.]] - rationale - gateway/tests/test_data_exfil_volume_guard.py
-- [[Tiny baselines must not turn ordinary small growth into spikes.]] - rationale - gateway/tests/test_data_exfil_volume_guard.py
-- [[VolumeVerdict]] - code - gateway/security/data_exfil_volume_guard.py
-- [[_SessionState]] - code - gateway/security/data_exfil_volume_guard.py
-- [[_make_pipeline()_1]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[data_exfil_volume_guard.py]] - code - gateway/security/data_exfil_volume_guard.py
-- [[test_accepts_str_and_bytes()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_adaptive_floor_prevents_noise_blocks()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_adaptive_needs_min_samples()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_adaptive_spike_blocks()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_adaptive_window_bounds_baseline_memory()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_blocked_response_does_not_add_to_cumulative()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_cumulative_cap_blocks_when_crossed()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_cumulative_is_per_session()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_data_exfil_volume_guard.py]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_disabled_never_blocks()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_get_stats()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_pipeline_allows_small_response()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_pipeline_blocks_and_downstream_not_reached()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_pipeline_fail_closed_for_non_owner_on_error()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_pipeline_no_guard_is_unchanged()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_reset_session_clears_state()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_single_response_over_cap_blocks()]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[test_under_single_cap_allows()]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[dot-__init__()_75]] - code - gateway/proxy/collaborator_greeter.py
+- [[dot-_get_client()]] - code - gateway/proxy/collaborator_greeter.py
+- [[dot-_load_state()]] - code - gateway/proxy/collaborator_greeter.py
+- [[dot-_load_taglines()]] - code - gateway/proxy/collaborator_greeter.py
+- [[dot-_persist_state()]] - code - gateway/proxy/collaborator_greeter.py
+- [[dot-maybe_greet()]] - code - gateway/proxy/collaborator_greeter.py
+- [[CollaboratorGreeter]] - code - gateway/proxy/collaborator_greeter.py
+- [[CollaboratorGreeter creates its own httpx client lazily.]] - rationale - gateway/tests/test_collaborator_greeter.py
+- [[Greet user if cooldown has expired. Returns True when greeting was sent.]] - rationale - gateway/proxy/collaborator_greeter.py
+- [[Sends a branded greeting photo to each (bot, user) pair once per 24 h.]] - rationale - gateway/proxy/collaborator_greeter.py
+- [[Unexpected exception in maybe_greet must be caught and return False.]] - rationale - gateway/tests/test_collaborator_greeter.py
+- [[When state JSON is corrupt AND writing the empty recovery file fails, no excepti]] - rationale - gateway/tests/test_collaborator_greeter.py
+- [[_err_response()]] - code - gateway/tests/test_collaborator_greeter.py
+- [[_load_state reads and returns a pre-existing valid JSON dict.]] - rationale - gateway/tests/test_collaborator_greeter.py
+- [[_load_state returns {} when state file is a JSON list (not a dict).]] - rationale - gateway/tests/test_collaborator_greeter.py
+- [[_load_taglines falls back to default when JSON is valid but not a list.]] - rationale - gateway/tests/test_collaborator_greeter.py
+- [[_make_greeter()]] - code - gateway/tests/test_collaborator_greeter.py
+- [[_ok_response()]] - code - gateway/tests/test_collaborator_greeter.py
+- [[_persist_state failure must not raise.]] - rationale - gateway/tests/test_collaborator_greeter.py
+- [[collaborator_greeter.py]] - code - gateway/proxy/collaborator_greeter.py
+- [[test_bot_isolation()]] - code - gateway/tests/test_collaborator_greeter.py
+- [[test_caption_length_clamped()]] - code - gateway/tests/test_collaborator_greeter.py
+- [[test_collaborator_greeter.py]] - code - gateway/tests/test_collaborator_greeter.py
+- [[test_exception_in_maybe_greet_returns_false()]] - code - gateway/tests/test_collaborator_greeter.py
+- [[test_first_call_sends_greeting_and_persists_state()]] - code - gateway/tests/test_collaborator_greeter.py
+- [[test_first_name_none_uses_there_fallback()]] - code - gateway/tests/test_collaborator_greeter.py
+- [[test_get_client_creates_own_when_not_injected()]] - code - gateway/tests/test_collaborator_greeter.py
+- [[test_load_state_loads_existing_valid_dict()]] - code - gateway/tests/test_collaborator_greeter.py
+- [[test_load_state_non_dict_json_returns_empty()]] - code - gateway/tests/test_collaborator_greeter.py
+- [[test_load_state_write_empty_fails_silently()]] - code - gateway/tests/test_collaborator_greeter.py
+- [[test_load_taglines_with_non_list_json_falls_back()]] - code - gateway/tests/test_collaborator_greeter.py
+- [[test_missing_logo_returns_false()]] - code - gateway/tests/test_collaborator_greeter.py
+- [[test_missing_taglines_falls_back_to_default()]] - code - gateway/tests/test_collaborator_greeter.py
+- [[test_persist_state_exception_is_swallowed()]] - code - gateway/tests/test_collaborator_greeter.py
+- [[test_random_tagline_pulled_from_file()]] - code - gateway/tests/test_collaborator_greeter.py
+- [[test_repeat_after_24h_greets_again()]] - code - gateway/tests/test_collaborator_greeter.py
+- [[test_repeat_within_24h_is_suppressed()]] - code - gateway/tests/test_collaborator_greeter.py
+- [[test_send_failure_does_not_persist_state()]] - code - gateway/tests/test_collaborator_greeter.py
+- [[test_state_file_corruption_recovers()]] - code - gateway/tests/test_collaborator_greeter.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -57,15 +58,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
-- 3 edges to [[_COMMUNITY_PII Sanitizer & E2E Tests]]
-- 3 edges to [[_COMMUNITY_Community 24]]
-- 1 edge to [[_COMMUNITY_Community 420]]
-- 1 edge to [[_COMMUNITY_Community 78]]
+- 2 edges to [[_COMMUNITY_Ingest API & RBAC Core]]
+- 2 edges to [[_COMMUNITY_Community 329]]
+- 1 edge to [[_COMMUNITY_Community 474]]
 
 ## Top bridge nodes
-- [[DataExfilVolumeGuard]] - degree 26, connects to 2 communities
-- [[_make_pipeline()_1]] - degree 6, connects to 2 communities
-- [[test_pipeline_no_guard_is_unchanged()]] - degree 3, connects to 2 communities
-- [[DataExfilVolumeConfig]] - degree 21, connects to 1 community
-- [[test_data_exfil_volume_guard.py]] - degree 21, connects to 1 community
+- [[CollaboratorGreeter]] - degree 22, connects to 2 communities
+- [[dot-__init__()_75]] - degree 4, connects to 1 community
+- [[dot-_get_client()]] - degree 3, connects to 1 community
+- [[collaborator_greeter.py]] - degree 2, connects to 1 community

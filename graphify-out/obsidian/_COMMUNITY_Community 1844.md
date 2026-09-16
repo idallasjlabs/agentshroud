@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[SecureBrowser.detect_captcha()]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
+- [[--watch debounce avoids per-file rebuild storms]] - rationale - docker/config/hermes/skills/graphify/references/add-watch.md
 
 ## Live Query (requires Dataview plugin)
 

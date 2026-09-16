@@ -1,49 +1,50 @@
 ---
 type: community
-cohesion: 0.06
-members: 34
+cohesion: 0.07
+members: 35
 ---
 
 # Community 212
 
-**Cohesion:** 0.06 - loosely connected
-**Members:** 34 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 35 nodes
 
 ## Members
-- [[1. Skills Installation (`.openclawskills`)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[2. Conversation Memory (`.openclawMEMORY.md`)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[3. Workspace Files (`workspace`)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[4. npm Cache (`.npm`, `.cache`)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[5. Temporary Files (`tmp`)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[6. Session Configuration (`.config`, `.local`)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Answer to Your Question]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Bind Mount vs Docker Volume]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Can We Use ONLY a Shared Folder]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Configuration_3]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Current Docker Configuration]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Current Location]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[For Read-Only to Work]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Goals]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[How to Access Workspace Files]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Minimum Required Configuration]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[OPENCLAW_WRITE_REQUIREMENTS]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Option 1 Docker Volume (Current Setup - Recommended)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Option 2 Bind Mount (Alternative - More Accessible)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Option A Docker Volume (Current)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Option B Bind Mount (Easier for You)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Recommended Configuration for Your Use Case]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Summary What the Bot Needs to Write]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[TL;DR]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[What Does OpenClaw Actually Need to Write]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[What Does the Bot NOT Need to Write]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[What OpenClaw Writes During Normal Operation]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[What You Can Do]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Your Shared Folder The Workspace]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[✅ Persistent Volumes (Data Survives Container Restart)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[✅ Temporary Filesystems (Cleared on Container Restart)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[❌ Currently Missing (Would Break Read-Only)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[❌ NO - Here's What Would Break]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[❌ System Directories (Read-Only in Production)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
+- [[dot-_classify_heuristic()]] - code - gateway/security/heuristic_classifier.py
+- [[dot-_classify_ml()]] - code - gateway/security/heuristic_classifier.py
+- [[dot-_compute_unicode_anomaly()]] - code - gateway/security/heuristic_classifier.py
+- [[dot-_score_signal()]] - code - gateway/security/heuristic_classifier.py
+- [[dot-classify()]] - code - gateway/security/heuristic_classifier.py
+- [[dot-is_injection()]] - code - gateway/security/heuristic_classifier.py
+- [[dot-is_uncertain()]] - code - gateway/security/heuristic_classifier.py
+- [[dot-setup_method()_23]] - code - gateway/tests/test_heuristic_classifier.py
+- [[dot-test_backward_compat_alias()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[dot-test_benign_text_low_score()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[dot-test_classification_result_properties()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[dot-test_clear_injection_high_score()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[dot-test_cyrillic_homoglyph()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[dot-test_empty_text()_1]] - code - gateway/tests/test_heuristic_classifier.py
+- [[dot-test_encoding_evasion()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[dot-test_exfiltration_attempt()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[dot-test_long_benign_text()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[dot-test_model_not_loaded_by_default()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[dot-test_multi_signal_increases_confidence()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[dot-test_roleplay_attack()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[dot-test_separator_injection()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[dot-test_unicode_anomaly()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[ClassificationResult]] - code - gateway/security/heuristic_classifier.py
+- [[Classify text for injection probability.          Args             text Input]] - rationale - gateway/security/heuristic_classifier.py
+- [[Detect unusual Unicode patterns that suggest evasion.]] - rationale - gateway/security/heuristic_classifier.py
+- [[Heuristic-based classification using multi-signal analysis.]] - rationale - gateway/security/heuristic_classifier.py
+- [[InjectionClassifier alias should still work.]] - rationale - gateway/tests/test_heuristic_classifier.py
+- [[Pattern_2]] - code - gateway/security/heuristic_classifier.py
+- [[Result of injection classification.]] - rationale - gateway/security/heuristic_classifier.py
+- [[Score a single signal pattern. Returns 0.0–1.0.]] - rationale - gateway/security/heuristic_classifier.py
+- [[Test the heuristic injection classifier.]] - rationale - gateway/tests/test_heuristic_classifier.py
+- [[TestHeuristicClassifier]] - code - gateway/tests/test_heuristic_classifier.py
+- [[EXPERIMENTAL ML model classification placeholder.]] - rationale - gateway/security/heuristic_classifier.py
+- [[heuristic_classifier.py (HeuristicClassifier)]] - code - gateway/security/heuristic_classifier.py
+- [[test_heuristic_classifier.py]] - code - gateway/tests/test_heuristic_classifier.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -51,3 +52,14 @@ members: 34
 TABLE source_file, type FROM #community/Community_212
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 8 edges to [[_COMMUNITY_Community 43]]
+- 1 edge to [[_COMMUNITY_Community 731]]
+
+## Top bridge nodes
+- [[TestHeuristicClassifier]] - degree 19, connects to 1 community
+- [[ClassificationResult]] - degree 10, connects to 1 community
+- [[dot-_classify_heuristic()]] - degree 7, connects to 1 community
+- [[dot-classify()]] - degree 5, connects to 1 community
+- [[dot-_classify_ml()]] - degree 5, connects to 1 community

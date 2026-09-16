@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Node ID format must match AST extractor]] - rationale - docker/config/hermes/skills/graphify/references/extraction-spec.md
+- [[SessionState (data entity)]] - concept - docs/data/data-dictionary.md
 
 ## Live Query (requires Dataview plugin)
 

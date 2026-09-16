@@ -10,41 +10,41 @@ members: 35
 **Members:** 35 nodes
 
 ## Members
-- [[.test_allows_file_named_environ_elsewhere()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_allows_plain_command()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_allows_unrelated_file()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_base64_padding_is_credential()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_blocks_cat_proc_environ_pattern()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_blocks_env_command()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_blocks_exact_proc_self_environ()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_blocks_indirect_var_expansion()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_blocks_printenv()_1]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_blocks_wildcard_proc_pid_environ()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_clean_output_unchanged_and_no_leakage()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_clear_resets_leakages()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_critical_leakage_yields_critical_risk()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_empty_command_is_allowed()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_export_writes_valid_json_report()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_long_alphanumeric_is_credential()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_many_medium_yields_medium_risk()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_multiple_high_yields_high_risk()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_named_var_with_short_value_uses_redacted_marker()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_no_activity_is_low_risk()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_plain_word_is_not_credential()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_scrubs_credential_looking_value_for_unknown_var()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_scrubs_named_credential_env_var()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_scrubs_openai_key_pattern()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_short_value_is_not_credential()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_summary_aggregates_by_severity_and_method()]] - code - gateway/tests/test_env_guard_class.py
-- [[.test_unparseable_text_is_allowed()]] - code - gateway/tests/test_env_guard_class.py
-- [[TestCheckCommandExecution]] - code - gateway/tests/test_env_guard_class.py
-- [[TestCheckFileAccess]] - code - gateway/tests/test_env_guard_class.py
-- [[TestLooksLikeCredential]] - code - gateway/tests/test_env_guard_class.py
-- [[TestMonitorEnvironmentAccess]] - code - gateway/tests/test_env_guard_class.py
-- [[TestScrubCommandOutput]] - code - gateway/tests/test_env_guard_class.py
-- [[TestSummaryAndExport]] - code - gateway/tests/test_env_guard_class.py
-- [[guard()_2]] - code - gateway/tests/test_env_guard_class.py
-- [[test_env_guard_class.py]] - code - gateway/tests/test_env_guard_class.py
+- [[Agent CVE Registry (source of truth)]] - concept - docs/security/cve-mitigation-matrix.md
+- [[AgentShroud Infrastructure — Container Image Vulnerabilities]] - document - docs/security/cve-mitigation-matrix.md
+- [[AgentShroud™ CVE Mitigation Matrix]] - document - docs/security/cve-mitigation-matrix.md
+- [[Application CVE Domain (OpenClaw  Hermes)]] - concept - docs/security/cve-mitigation-matrix.md
+- [[Application CVEs (OpenClaw  Hermes)]] - document - docs/security/cve-mitigation-matrix.md
+- [[CRITICAL (CVSS 9.0+)]] - document - docs/security/cve-mitigation-matrix.md
+- [[CVE-2026-30741 — CVSS 9.8 CRITICAL — RCE via Request-Side Prompt Injection]] - document - docs/security/cve-mitigation-matrix.md
+- [[CVE-2026-34425 — CVSS 5.4 MEDIUM — Preflight Validation Bypass (Shell-Bleed)]] - document - docs/security/cve-mitigation-matrix.md
+- [[CVE-2026-3690 — CVSS 7.4 HIGH — Canvas Authentication Bypass]] - document - docs/security/cve-mitigation-matrix.md
+- [[CWE Coverage]] - document - docs/security/cve-mitigation-matrix.md
+- [[Currently Unmitigable Residual (verified no fix exists anywhere yet)]] - document - docs/security/cve-mitigation-matrix.md
+- [[Daily GHSA  NVD Registry Sync]] - concept - docs/security/cve-mitigation-matrix.md
+- [[Executive Summary_4]] - document - docs/security/cve-mitigation-matrix.md
+- [[Gateway image (fresh-DB residual 5C  132H — all `fix NONE` or in-place-unfixable)]] - document - docs/security/cve-mitigation-matrix.md
+- [[Gitleaks Allowlist Strategy]] - concept - docs/security/secrets-inventory.md
+- [[HIGH (CVSS 7.0–8.9)]] - document - docs/security/cve-mitigation-matrix.md
+- [[Hermes Agent (7 tracked)]] - document - docs/security/cve-mitigation-matrix.md
+- [[MEDIUM (CVSS 4.0–6.9)]] - document - docs/security/cve-mitigation-matrix.md
+- [[OWASP Agentic AI (ASI) Coverage]] - document - docs/security/cve-mitigation-matrix.md
+- [[OpenClaw (816 tracked)]] - document - docs/security/cve-mitigation-matrix.md
+- [[Presidio PII Detection Stack]] - concept - gateway/requirements.txt
+- [[Previously Partial — Now Fully Mitigated]] - document - docs/security/cve-mitigation-matrix.md
+- [[Representative Examples]] - document - docs/security/cve-mitigation-matrix.md
+- [[Test-Fixture Gitleaks False Positives]] - rationale - docs/security/secrets-inventory.md
+- [[Three-status taxonomy (SCRUM-101, 2026-07-14)]] - document - docs/security/cve-mitigation-matrix.md
+- [[Tier 1 Hand-Curated OpenClaw CVEs]] - concept - docs/security/cve-mitigation-matrix.md
+- [[Tier 1 — Hand-Curated CVEs (AgentShroud-Specific Mitigations)]] - document - docs/security/cve-mitigation-matrix.md
+- [[Tier 3 — NVD-Sourced Bulk CVEs (276 entries)]] - document - docs/security/cve-mitigation-matrix.md
+- [[Under Review Is Honest, Not Mitigated]] - rationale - docs/security/cve-mitigation-matrix.md
+- [[Verification_1]] - document - docs/security/cve-mitigation-matrix.md
+- [[cve-mitigation-matrix]] - document - docs/security/cve-mitigation-matrix.md
+- [[hermes image (93 residual, all Debian, all `fix NONE`)]] - document - docs/security/cve-mitigation-matrix.md
+- [[openclaw image (2 residual)]] - document - docs/security/cve-mitigation-matrix.md
+- [[v1.3.0 fresh-DB verification (2026-07-15) — authoritative numbers]] - document - docs/security/cve-mitigation-matrix.md
+- [[voice-gateway image (4 residual, all Debian, all `fix NONE`)]] - document - docs/security/cve-mitigation-matrix.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -54,11 +54,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_Community 18]]
+- 2 edges to [[_COMMUNITY_Community 407]]
+- 1 edge to [[_COMMUNITY_Community 271]]
+- 1 edge to [[_COMMUNITY_Community 316]]
 
 ## Top bridge nodes
-- [[TestCheckCommandExecution]] - degree 9, connects to 1 community
-- [[test_env_guard_class.py]] - degree 8, connects to 1 community
-- [[TestScrubCommandOutput]] - degree 7, connects to 1 community
-- [[TestCheckFileAccess]] - degree 6, connects to 1 community
-- [[TestLooksLikeCredential]] - degree 6, connects to 1 community
+- [[AgentShroud™ CVE Mitigation Matrix]] - degree 15, connects to 2 communities
+- [[cve-mitigation-matrix]] - degree 2, connects to 1 community

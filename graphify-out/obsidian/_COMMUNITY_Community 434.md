@@ -1,36 +1,36 @@
 ---
 type: community
-cohesion: 0.10
+cohesion: 0.11
 members: 21
 ---
 
 # Community 434
 
-**Cohesion:** 0.10 - loosely connected
+**Cohesion:** 0.11 - loosely connected
 **Members:** 21 nodes
 
 ## Members
-- [[.test_extract_first_egress_target_accepts_uppercase_http_scheme()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_extract_first_egress_target_does_not_treat_email_as_domain_target()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_extract_first_egress_target_handles_bare_domain_with_query()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_extract_first_egress_target_handles_empty_inputs()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_extract_first_egress_target_ignores_markdown_filename_token()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_extract_first_egress_target_ignores_non_http_scheme_and_uses_bare_domain()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_extract_first_egress_target_ignores_text_filename_token()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_extract_first_egress_target_ignores_version_like_tokens()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_extract_first_egress_target_prefers_first_http_url()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_extract_first_egress_target_rejects_ip_literal_bare_target()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_extract_first_egress_target_returns_none_when_no_url_or_domain()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_extract_first_egress_target_skips_email_then_finds_http_url()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_extract_first_egress_target_skips_protocol_relative_host_without_tld()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_extract_first_egress_target_strips_markdown_wrapper_punctuation()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_extract_first_egress_target_strips_trailing_punctuation()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_extract_first_egress_target_supports_parenthesized_bare_domain()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_extract_first_egress_target_supports_protocol_relative_urls()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_extract_first_egress_target_supports_protocol_relative_with_query()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_extract_first_egress_target_trims_wrapping_quotes()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[TestEgressTargetExtraction]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Unit tests for outbound target extraction helper used by egress preflight.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_gives_up_and_marks_sent_after_max_retries()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_no_skip_dirs_flag_when_omitted()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_retries_on_failed_send_before_giving_up()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_skip_dirs_added_to_command()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_successful_send_marks_sent_immediately_no_retry()]] - code - gateway/tests/test_daily_cve_report.py
+- [[A failed send retries (bounded) within the same day, not next-day.]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[After the retry cap, the day IS marked done so the loop moves on.]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[TestCveReportSchedulerRetry]] - code - gateway/tests/test_daily_cve_report.py
+- [[TestTrivySkipDirs]] - code - gateway/tests/test_daily_cve_report.py
+- [[_fake_run()]] - code - gateway/tests/test_daily_cve_report.py
+- [[_fake_run()_1]] - code - gateway/tests/test_daily_cve_report.py
+- [[_fake_run()_2]] - code - gateway/tests/test_daily_cve_report.py
+- [[_fake_run()_3]] - code - gateway/tests/test_daily_cve_report.py
+- [[_fake_run()_4]] - code - gateway/tests/test_daily_cve_report.py
+- [[_fake_run()_5]] - code - gateway/tests/test_daily_cve_report.py
+- [[_sleep()_7]] - code - gateway/tests/test_daily_cve_report.py
+- [[_sleep()_8]] - code - gateway/tests/test_daily_cve_report.py
+- [[_sleep()_9]] - code - gateway/tests/test_daily_cve_report.py
+- [[now()_7]] - code - gateway/tests/test_daily_cve_report.py
+- [[now()_8]] - code - gateway/tests/test_daily_cve_report.py
+- [[now()_9]] - code - gateway/tests/test_daily_cve_report.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -40,9 +40,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_PII Sanitizer & E2E Tests]]
-- 1 edge to [[_COMMUNITY_Adversarial Injection Guards]]
-- 1 edge to [[_COMMUNITY_Community 17]]
+- 6 edges to [[_COMMUNITY_Community 82]]
+- 3 edges to [[_COMMUNITY_Community 156]]
+- 3 edges to [[_COMMUNITY_Community 124]]
+- 1 edge to [[_COMMUNITY_Community 148]]
 
 ## Top bridge nodes
-- [[TestEgressTargetExtraction]] - degree 25, connects to 3 communities
+- [[dot-test_gives_up_and_marks_sent_after_max_retries()]] - degree 9, connects to 3 communities
+- [[dot-test_retries_on_failed_send_before_giving_up()]] - degree 9, connects to 3 communities
+- [[dot-test_successful_send_marks_sent_immediately_no_retry()]] - degree 8, connects to 3 communities
+- [[TestTrivySkipDirs]] - degree 4, connects to 2 communities
+- [[_fake_run()_3]] - degree 6, connects to 1 community

@@ -1,39 +1,39 @@
 ---
 type: community
-cohesion: 0.13
+cohesion: 0.11
 members: 24
 ---
 
 # Community 368
 
-**Cohesion:** 0.13 - loosely connected
+**Cohesion:** 0.11 - loosely connected
 **Members:** 24 nodes
 
 ## Members
-- [[Acceptance]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
-- [[AgentShroud v1.2.0 Master Plan]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
-- [[B.1 — Lock the lead 26+ modules]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
-- [[B.2 — Strengthen the report pipeline itself]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
-- [[Cross-cutting branches + PR train]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
-- [[Intent]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
-- [[Module surface to extend]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
-- [[Open clarifications before coding starts]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
-- [[Open question (planning-only — decide before coding)]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
-- [[Out of scope]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
-- [[Out of scope for v1.2.0]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
-- [[Phases]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
-- [[Source of truth_1]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
-- [[Surface to extend]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
-- [[Tests to add]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
-- [[Tracking + cadence]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
-- [[Why v1.2.0]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
-- [[Workstream A Groups and Teamwork in OpenClaw]] - concept - docs/planning/v1.2/v1.2.0-master-plan.md
-- [[Workstream B Security Features from Competitive Intel]] - concept - docs/planning/v1.2/v1.2.0-master-plan.md
-- [[Workstream C Full Local-Model Parity (Both Bots)]] - concept - docs/planning/v1.2/v1.2.0-master-plan.md
-- [[Workstream D — Sync agentsskillsMCP from `~.llm_settings` into both bots]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
-- [[Workstream D Sync SkillsMCP from ~.llm_settings]] - concept - docs/planning/v1.2/v1.2.0-master-plan.md
-- [[Workstream E Blue and Red Team Security Scan (Both Bots)]] - concept - docs/planning/v1.2/v1.2.0-master-plan.md
-- [[v1.2.0-master-plan]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[dot-__init__()_139]] - code - gateway/proxy/telegram_egress_notify.py
+- [[dot-_api_url()]] - code - gateway/proxy/telegram_egress_notify.py
+- [[dot-_async_send()]] - code - gateway/proxy/telegram_egress_notify.py
+- [[dot-_send_request()]] - code - gateway/proxy/telegram_egress_notify.py
+- [[dot-_token_for()]] - code - gateway/proxy/telegram_egress_notify.py
+- [[dot-answer_callback()]] - code - gateway/proxy/telegram_egress_notify.py
+- [[dot-cleanup_expired()]] - code - gateway/proxy/telegram_egress_notify.py
+- [[dot-edit_decision_message()]] - code - gateway/proxy/telegram_egress_notify.py
+- [[dot-get_pending_count()]] - code - gateway/proxy/telegram_egress_notify.py
+- [[dot-handle_callback()]] - code - gateway/proxy/telegram_egress_notify.py
+- [[dot-notify_pending()]] - code - gateway/proxy/telegram_egress_notify.py
+- [[dot-send_text()]] - code - gateway/proxy/telegram_egress_notify.py
+- [[Async wrapper around sync Telegram API call.]] - rationale - gateway/proxy/telegram_egress_notify.py
+- [[EgressTelegramNotifier]] - code - gateway/proxy/telegram_egress_notify.py
+- [[Process inline button callback. Returns action result.          Actions allow_1]] - rationale - gateway/proxy/telegram_egress_notify.py
+- [[Remove pending requests older than max_age_seconds. Returns count removed.]] - rationale - gateway/proxy/telegram_egress_notify.py
+- [[Replace the inline keyboard approval message with a decision record.          Re]] - rationale - gateway/proxy/telegram_egress_notify.py
+- [[Return the Telegram bot token to use for a given agent_id.          If the agent]] - rationale - gateway/proxy/telegram_egress_notify.py
+- [[Send Telegram message with time-limited approvedeny buttons.          Buttons]] - rationale - gateway/proxy/telegram_egress_notify.py
+- [[Send a plain text message — public transport for other gateway         component]] - rationale - gateway/proxy/telegram_egress_notify.py
+- [[Send a request to Telegram Bot API (sync, run in executor).]] - rationale - gateway/proxy/telegram_egress_notify.py
+- [[Send answerCallbackQuery to dismiss the button loading state.          Pass ``to]] - rationale - gateway/proxy/telegram_egress_notify.py
+- [[Sends Telegram inline keyboard notifications for egress approval.      Supports]] - rationale - gateway/proxy/telegram_egress_notify.py
+- [[Telegram callback_query TTL expiry logged at DEBUG not ERROR]] - rationale - gateway/tests/test_egress_callback_stale.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -43,10 +43,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 770]]
+- 5 edges to [[_COMMUNITY_Community 965]]
+- 3 edges to [[_COMMUNITY_Community 1151]]
+- 3 edges to [[_COMMUNITY_Community 214]]
+- 2 edges to [[_COMMUNITY_Approval Routing & Event Bus]]
 
 ## Top bridge nodes
-- [[AgentShroud v1.2.0 Master Plan]] - degree 13, connects to 1 community
-- [[Workstream A Groups and Teamwork in OpenClaw]] - degree 7, connects to 1 community
-- [[Workstream B Security Features from Competitive Intel]] - degree 7, connects to 1 community
-- [[Workstream E Blue and Red Team Security Scan (Both Bots)]] - degree 7, connects to 1 community
+- [[EgressTelegramNotifier]] - degree 25, connects to 4 communities
+- [[dot-answer_callback()]] - degree 4, connects to 1 community
+- [[dot-edit_decision_message()]] - degree 4, connects to 1 community

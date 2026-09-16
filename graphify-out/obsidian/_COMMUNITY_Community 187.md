@@ -1,52 +1,53 @@
 ---
 type: community
-cohesion: 0.10
-members: 37
+cohesion: 0.09
+members: 38
 ---
 
 # Community 187
 
-**Cohesion:** 0.10 - loosely connected
-**Members:** 37 nodes
+**Cohesion:** 0.09 - loosely connected
+**Members:** 38 nodes
 
 ## Members
-- [[.test_at_least_one()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_baseline_at_least_two()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_baseline_three_when_openscap_not_run()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_capped_at_five()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_defined_when_all_passing_no_report_on_disk()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_defined_when_oscap_binary_present()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_five_when_openscap_clean()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_four_when_openscap_running_with_failures()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_four_when_sbom_and_clean_trivy()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_managed_when_has_failures()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_one_when_sbom_exists()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_three_when_semgrep_and_precommit_present()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_zero_when_no_sbom_no_trivy()]] - code - gateway/tests/test_scanner_integration.py
-- [[.test_zero_when_not_run()]] - code - gateway/tests/test_scanner_integration.py
-- [[Any_70]] - code - gateway/tests/test_scanner_integration.py
-- [[Score domain 10 Compliance Auditing (0-5).      0=not run, 2=has failures, 3=ze]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 11 Secure Development (0-5).      1=Trivy in build, 2=semgrep conf]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 1 Image Integrity (0-5).      1=SBOM exists, 2=Trivy ran, 3=zero c]] - rationale - gateway/security/scanner_integration.py
-- [[Score domain 4 Container Hardening (0-5).      Baseline of 3 because docker-com]] - rationale - gateway/security/scanner_integration.py
-- [[TestScoreComplianceAuditing]] - code - gateway/tests/test_scanner_integration.py
-- [[TestScoreContainerHardening]] - code - gateway/tests/test_scanner_integration.py
-- [[TestScoreImageIntegrity]] - code - gateway/tests/test_scanner_integration.py
-- [[TestScoreSecretsManagement]] - code - gateway/tests/test_scanner_integration.py
-- [[TestScoreSecureDevelopment]] - code - gateway/tests/test_scanner_integration.py
-- [[_clamav_clean()]] - code - gateway/tests/test_scanner_integration.py
-- [[_clamav_infected()]] - code - gateway/tests/test_scanner_integration.py
-- [[_openscap_clean()]] - code - gateway/tests/test_scanner_integration.py
-- [[_openscap_not_run()]] - code - gateway/tests/test_scanner_integration.py
-- [[_openscap_warn()]] - code - gateway/tests/test_scanner_integration.py
-- [[_score_compliance_auditing()]] - code - gateway/security/scanner_integration.py
-- [[_score_container_hardening()]] - code - gateway/security/scanner_integration.py
-- [[_score_image_integrity()]] - code - gateway/security/scanner_integration.py
-- [[_score_secure_development()]] - code - gateway/security/scanner_integration.py
-- [[_trivy_clean()]] - code - gateway/tests/test_scanner_integration.py
-- [[_trivy_critical()]] - code - gateway/tests/test_scanner_integration.py
-- [[_trivy_not_run()]] - code - gateway/tests/test_scanner_integration.py
-- [[test_scanner_integration.py]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-_event_fan_out()]] - code - gateway/soc/websocket.py
+- [[dot-_keepalive_loop()]] - code - gateway/soc/websocket.py
+- [[dot-_make_handler()]] - code - gateway/tests/test_soc_websocket.py
+- [[dot-_matches()]] - code - gateway/tests/test_soc_websocket.py
+- [[dot-_send_event()]] - code - gateway/soc/websocket.py
+- [[dot-run()_1]] - code - gateway/soc/websocket.py
+- [[dot-test_details_excludes_reserved_keys()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_egress_denied()]] - code - gateway/tests/test_soc_websocket.py
+- [[dot-test_event_type_key_fallback()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_import()]] - code - gateway/tests/test_soc_websocket.py
+- [[dot-test_instantiate()]] - code - gateway/tests/test_soc_websocket.py
+- [[dot-test_invalid_dict_returns_none()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_legacy_inbound_blocked()]] - code - gateway/tests/test_soc_websocket.py
+- [[dot-test_message_fallback_for_summary()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_multi_subscription()]] - code - gateway/tests/test_soc_websocket.py
+- [[dot-test_no_subscription_accepts_log_event()]] - code - gateway/tests/test_soc_websocket.py
+- [[dot-test_no_subscription_accepts_security_event()]] - code - gateway/tests/test_soc_websocket.py
+- [[dot-test_preserves_severity()]] - code - gateway/tests/test_soc_websocket.py
+- [[dot-test_returns_none_on_bad_input()]] - code - gateway/tests/test_soc_websocket.py
+- [[dot-test_security_event()]] - code - gateway/tests/test_soc_websocket.py
+- [[dot-test_source_key_fallback()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_subscription_filters_correctly()]] - code - gateway/tests/test_soc_websocket.py
+- [[dot-test_type_mapping()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_unknown_severity_defaults_to_info()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_wsevent_passthrough()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[Convert an EventBus item to WSEvent, return None if conversion fails.]] - rationale - gateway/soc/websocket.py
+- [[Main connection loop.]] - rationale - gateway/soc/websocket.py
+- [[Replicate the filter logic from _event_fan_out.]] - rationale - gateway/tests/test_soc_websocket.py
+- [[SOCWebSocketHandler_2]] - code - gateway/tests/test_soc_websocket.py
+- [[Subscribe to EventBus and forward matching events to the client.]] - rationale - gateway/soc/websocket.py
+- [[Test event filtering via the subscriptions set (mirrors _event_fan_out logic).]] - rationale - gateway/tests/test_soc_websocket.py
+- [[TestCoerceToWSEvent]] - code - gateway/tests/test_soc_websocket.py
+- [[TestCoerceToWSEventExtra]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[TestSOCWebSocketHandlerImport]] - code - gateway/tests/test_soc_websocket.py
+- [[TestSubscriptionFilter]] - code - gateway/tests/test_soc_websocket.py
+- [[WSEvent]] - code - gateway/soc/websocket.py
+- [[_coerce_to_ws_event()]] - code - gateway/soc/websocket.py
+- [[test_soc_websocket.py]] - code - gateway/tests/test_soc_websocket.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -56,20 +57,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 27 edges to [[_COMMUNITY_Community 196]]
-- 12 edges to [[_COMMUNITY_Community 201]]
-- 9 edges to [[_COMMUNITY_Community 72]]
-- 9 edges to [[_COMMUNITY_Community 183]]
-- 8 edges to [[_COMMUNITY_Community 399]]
-- 4 edges to [[_COMMUNITY_Community 863]]
-- 4 edges to [[_COMMUNITY_Community 539]]
-- 4 edges to [[_COMMUNITY_Community 216]]
-- 4 edges to [[_COMMUNITY_Community 771]]
-- 2 edges to [[_COMMUNITY_Community 983]]
+- 19 edges to [[_COMMUNITY_Ingest API & RBAC Core]]
+- 3 edges to [[_COMMUNITY_Community 68]]
+- 2 edges to [[_COMMUNITY_Voice Gateway STT & Browser Security]]
+- 2 edges to [[_COMMUNITY_Community 334]]
+- 1 edge to [[_COMMUNITY_Community 159]]
 
 ## Top bridge nodes
-- [[test_scanner_integration.py]] - degree 61, connects to 10 communities
-- [[_score_compliance_auditing()]] - degree 10, connects to 4 communities
-- [[_score_image_integrity()]] - degree 10, connects to 4 communities
-- [[_score_container_hardening()]] - degree 8, connects to 3 communities
-- [[_trivy_clean()]] - degree 7, connects to 3 communities
+- [[test_soc_websocket.py]] - degree 7, connects to 3 communities
+- [[WSEvent]] - degree 6, connects to 3 communities
+- [[_coerce_to_ws_event()]] - degree 22, connects to 2 communities
+- [[dot-run()_1]] - degree 5, connects to 2 communities
+- [[TestCoerceToWSEventExtra]] - degree 15, connects to 1 community

@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Security Integration — Full Pipeline Tests]] - code - gateway/tests/test_security_integration.py
+- [[SCHEMA_VERSION entity]] - concept - docs/diagrams/images/diagram-08-erd.svg
 
 ## Live Query (requires Dataview plugin)
 

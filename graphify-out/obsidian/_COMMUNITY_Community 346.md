@@ -1,40 +1,40 @@
 ---
 type: community
-cohesion: 0.09
+cohesion: 0.08
 members: 25
 ---
 
 # Community 346
 
-**Cohesion:** 0.09 - loosely connected
+**Cohesion:** 0.08 - loosely connected
 **Members:** 25 nodes
 
 ## Members
-- [[AgentShroud Security Scripts Reference]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[Alerting]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[Automation Examples]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[Best Practices_6]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[CICD Integration]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[Daily Security Check (cron)]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[Defense in Depth (Bot Instructions + Gateway + Audit Log)]] - rationale - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
-- [[Kill Switch]] - document - dashboard/README.md
-- [[Logging]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[Mode 1 freeze]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[Mode 2 shutdown]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[Mode 3 disconnect (⚠️ DANGEROUS)]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[Monitoring Integration]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[PrometheusGrafana]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[SECURITY-IMPLEMENTATION-VERIFICATION]] - document - docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md
-- [[SECURITY_SCRIPTS_REFERENCE]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[Script Permissions]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[Troubleshooting_22]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[VERIFICATION_RESULTS]] - document - docs/security/VERIFICATION_RESULTS.md
-- [[Weekly Compliance Scan (cron)]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[killswitch.sh doesn't confirm]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[scan.sh_1]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[scan.sh reports missing OpenSCAP]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[verify-security.sh_1]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
-- [[verify-security.sh fails]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[5) ENVIRONMENT SETUP]] - document - AGENTS.md
+- [[A) Validation Execution]] - document - .github/agents/validation-runner.agent.md
+- [[B) Result Reporting]] - document - .github/agents/validation-runner.agent.md
+- [[C) Quality Gate Checks]] - document - .github/agents/validation-runner.agent.md
+- [[Common Validation Commands]] - document - .github/agents/validation-runner.agent.md
+- [[Comprehensive Checks]] - document - .github/agents/validation-runner.agent.md
+- [[Conda Environment]] - document - AGENTS.md
+- [[Data Pipeline Validation]] - document - .github/agents/validation-runner.agent.md
+- [[Data Validation]] - document - .github/agents/validation-runner.agent.md
+- [[Definition of Done]] - document - .github/agents/validation-runner.agent.md
+- [[Error Handling]] - document - .github/agents/validation-runner.agent.md
+- [[Failed Validation]] - document - .github/agents/validation-runner.agent.md
+- [[Python Validation]] - document - .github/agents/validation-runner.agent.md
+- [[Quick Checks]] - document - .github/agents/validation-runner.agent.md
+- [[Remember]] - document - .github/agents/validation-runner.agent.md
+- [[Report Format]] - document - .github/agents/validation-runner.agent.md
+- [[Repository Context_1]] - document - .github/agents/validation-runner.agent.md
+- [[Role Definition]] - document - .github/agents/validation-runner.agent.md
+- [[Successful Validation]] - document - .github/agents/validation-runner.agent.md
+- [[Validation Runner Specialist]] - document - .github/agents/validation-runner.agent.md
+- [[Validation Workflows]] - document - .github/agents/validation-runner.agent.md
+- [[What You CANNOT Do]] - document - .github/agents/validation-runner.agent.md
+- [[When Environment Issues]] - document - .github/agents/validation-runner.agent.md
+- [[When Validation Fails]] - document - .github/agents/validation-runner.agent.md
+- [[Your Responsibilities]] - document - .github/agents/validation-runner.agent.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -44,16 +44,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 580]]
-- 1 edge to [[_COMMUNITY_Community 43]]
-- 1 edge to [[_COMMUNITY_Community 886]]
-- 1 edge to [[_COMMUNITY_Community 153]]
-- 1 edge to [[_COMMUNITY_Community 428]]
-- 1 edge to [[_COMMUNITY_Community 585]]
-- 1 edge to [[_COMMUNITY_Community 730]]
-- 1 edge to [[_COMMUNITY_Community 385]]
+- 1 edge to [[_COMMUNITY_Community 324]]
+- 1 edge to [[_COMMUNITY_Community 773]]
 
 ## Top bridge nodes
-- [[SECURITY-IMPLEMENTATION-VERIFICATION]] - degree 6, connects to 4 communities
-- [[Kill Switch]] - degree 9, connects to 3 communities
-- [[VERIFICATION_RESULTS]] - degree 5, connects to 2 communities
+- [[Validation Runner Specialist]] - degree 12, connects to 1 community
+- [[5) ENVIRONMENT SETUP]] - degree 3, connects to 1 community

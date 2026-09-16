@@ -1,35 +1,35 @@
 ---
 type: community
-cohesion: 0.20
+cohesion: 0.13
 members: 20
 ---
 
 # Community 446
 
-**Cohesion:** 0.20 - loosely connected
+**Cohesion:** 0.13 - loosely connected
 **Members:** 20 nodes
 
 ## Members
-- [[_apply_agent_cb()]] - code - firmware/voice-terminal/main/ui_face.c
-- [[_apply_state_cb()]] - code - firmware/voice-terminal/main/ui_face.c
-- [[_find_canvas()]] - code - firmware/voice-terminal/main/ui_face.c
-- [[_report_and_place_canvas()]] - code - firmware/voice-terminal/main/ui_face.c
-- [[_state_to_emotion()]] - code - firmware/voice-terminal/main/ui_face.c
-- [[_touch_start_only()]] - code - firmware/voice-terminal/main/ui_face.c
-- [[face_animation_pause()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[face_animation_pause() — freezes canvas redraw to protect WiFi stack]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[face_emotion_t_2]] - code - firmware/voice-terminal/main/ui_face.c
-- [[face_emotion_t_1]] - code - firmware/voice-terminal/main/ui_face.c
-- [[face_set_emotion() (declared in header; drives eyemouth canvases)]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[lv_event_t]] - code - firmware/voice-terminal/main/ui_face.c
-- [[lv_obj_t_1]] - code - firmware/voice-terminal/main/ui_face.c
-- [[lv_obj_t_2]] - code - firmware/voice-terminal/main/ui_face.c
-- [[ui_face.c]] - code - firmware/voice-terminal/main/ui_face.c
-- [[ui_face.c_1]] - code - firmware/voice-terminal/main/ui_face.c
-- [[ui_face_init()]] - code - firmware/voice-terminal/main/ui_face.c
-- [[ui_face_set_agent()]] - code - firmware/voice-terminal/main/ui_face.c
-- [[ui_face_set_state()]] - code - firmware/voice-terminal/main/ui_face.c
-- [[ws_vg_state_t_1]] - code - firmware/voice-terminal/main/ui_face.c
+- [[--update Incremental Re-extraction Flow]] - concept - docker/config/openclaw/skills/graphify/references/update.md
+- [[--watch Background Watcher]] - concept - docker/config/openclaw/skills/graphify/references/add-watch.md
+- [[Extraction Cache Check — Step B0]] - concept - docker/config/openclaw/skills/graphify/SKILL.md
+- [[Neo4j Export]] - concept - .agents/skills/graphify/SKILL.md
+- [[Post-commit Auto-rebuild Hook]] - concept - docker/config/openclaw/skills/graphify/references/hooks.md
+- [[Release Workflow (i-release)]] - document - .agents/skills/i-release/SKILL.md
+- [[Semantic Extraction — Part B (parallel subagents)]] - concept - docker/config/openclaw/skills/graphify/SKILL.md
+- [[Structural (AST) Extraction — Part A]] - concept - docker/config/openclaw/skills/graphify/SKILL.md
+- [[Whisper Transcription]] - concept - .agents/skills/graphify/references/transcribe.md
+- [[build_merge() rationale (801 edge direction, 1178 stale-node collapse)]] - rationale - docker/config/openclaw/skills/graphify/references/update.md
+- [[graphify Add & Watch Reference]] - document - .agents/skills/graphify/references/add-watch.md
+- [[graphify Commit Hook & CLAUDE.md Integration Reference]] - document - .agents/skills/graphify/references/hooks.md
+- [[graphify Exports & Benchmark Reference]] - document - .agents/skills/graphify/references/exports.md
+- [[graphify Extraction Subagent Prompt Spec]] - document - .agents/skills/graphify/references/extraction-spec.md
+- [[graphify GitHub Clone & Cross-Repo Merge Reference]] - document - .agents/skills/graphify/references/github-and-merge.md
+- [[graphify MCP Stdio Server]] - concept - .agents/skills/graphify/SKILL.md
+- [[graphify QueryPathExplain Reference]] - document - .agents/skills/graphify/references/query.md
+- [[graphify Skill]] - document - .agents/skills/graphify/SKILL.md
+- [[graphify Transcribe Reference]] - document - .agents/skills/graphify/references/transcribe.md
+- [[graphify Update & Cluster-Only Reference]] - document - .agents/skills/graphify/references/update.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,14 +39,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 14 edges to [[_COMMUNITY_Community 90]]
-- 6 edges to [[_COMMUNITY_Community 308]]
-- 4 edges to [[_COMMUNITY_Community 270]]
-- 2 edges to [[_COMMUNITY_Community 36]]
+- 1 edge to [[_COMMUNITY_Community 327]]
 
 ## Top bridge nodes
-- [[ui_face.c]] - degree 12, connects to 3 communities
-- [[ui_face_init()]] - degree 9, connects to 3 communities
-- [[ui_face.c_1]] - degree 11, connects to 2 communities
-- [[ui_face_set_state()]] - degree 8, connects to 2 communities
-- [[ui_face_set_agent()]] - degree 6, connects to 2 communities
+- [[graphify Skill]] - degree 15, connects to 1 community

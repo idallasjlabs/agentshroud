@@ -1,45 +1,46 @@
 ---
 type: community
-cohesion: 0.16
-members: 30
+cohesion: 0.06
+members: 31
 ---
 
 # Community 259
 
-**Cohesion:** 0.16 - loosely connected
-**Members:** 30 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 31 nodes
 
 ## Members
-- [[._run_sync()]] - code - gateway/tests/test_skill_guard.py
-- [[.client()_6]] - code - gateway/tests/test_skill_guard.py
-- [[.test_cli_allows_clean_tree_zero()]] - code - gateway/tests/test_skill_guard.py
-- [[.test_cli_blocks_dangerous_tree_nonzero()]] - code - gateway/tests/test_skill_guard.py
-- [[.test_cli_fails_closed_on_unreadable_file()]] - code - gateway/tests/test_skill_guard.py
-- [[.test_cli_missing_source_nonzero()]] - code - gateway/tests/test_skill_guard.py
-- [[.test_main_clean_tree_returns_ok()]] - code - gateway/tests/test_skill_guard.py
-- [[.test_main_dangerous_tree_returns_blocked()]] - code - gateway/tests/test_skill_guard.py
-- [[.test_main_empty_source_returns_usage()]] - code - gateway/tests/test_skill_guard.py
-- [[.test_main_flag_only_tree_returns_ok()]] - code - gateway/tests/test_skill_guard.py
-- [[.test_main_missing_source_returns_usage()]] - code - gateway/tests/test_skill_guard.py
-- [[.test_main_unreadable_file_fails_closed()]] - code - gateway/tests/test_skill_guard.py
-- [[.test_reload_allows_clean_skill()]] - code - gateway/tests/test_skill_guard.py
-- [[.test_reload_blocks_dangerous_skill()]] - code - gateway/tests/test_skill_guard.py
-- [[.test_reload_fails_closed_on_unreadable_file()]] - code - gateway/tests/test_skill_guard.py
-- [[.test_sync_aborts_on_dangerous_tree()]] - code - gateway/tests/test_skill_guard.py
-- [[.test_sync_allows_clean_tree()]] - code - gateway/tests/test_skill_guard.py
-- [[.test_sync_dry_run_does_not_write_but_still_scans()]] - code - gateway/tests/test_skill_guard.py
-- [[Exercise ``gateway.skills.scan.main`` directly for exit-code coverage.]] - rationale - gateway/tests/test_skill_guard.py
-- [[Path_38]] - code - gateway/tests/test_skill_guard.py
-- [[Raised when SkillGuard is handed content it cannot scan.]] - rationale - gateway/security/skill_guard.py
-- [[SkillScanError]] - code - gateway/security/skill_guard.py
-- [[TestClient]] - code - gateway/tests/test_skill_guard.py
-- [[TestReloadIntegration]] - code - gateway/tests/test_skill_guard.py
-- [[TestScanEntrypoint]] - code - gateway/tests/test_skill_guard.py
-- [[TestScanEntrypointInProcess]] - code - gateway/tests/test_skill_guard.py
-- [[TestSyncScriptPreflight]] - code - gateway/tests/test_skill_guard.py
-- [[The parallel bash sync path must invoke SkillGuard before copying.]] - rationale - gateway/tests/test_skill_guard.py
-- [[_run_scan_cli()]] - code - gateway/tests/test_skill_guard.py
-- [[_write_tree()]] - code - gateway/tests/test_skill_guard.py
+- [[0) PRIME DIRECTIVE (NON-NEGOTIABLE)]] - document - CLAUDE.md
+- [[0.1) MULTI-AGENT HIERARCHY]] - document - CLAUDE.md
+- [[1) PROJECT IDENTITY]] - document - CLAUDE.md
+- [[10) CLAUDE CODE OPERATIONAL RULES]] - document - CLAUDE.md
+- [[2) ⚠️ NO SECURITY THEATER (NON-NEGOTIABLE)]] - document - CLAUDE.md
+- [[3) SDLC — HOW TO WORK IN THIS REPO]] - document - CLAUDE.md
+- [[4) TEST-DRIVEN DEVELOPMENT (DEFAULT)]] - document - CLAUDE.md
+- [[6) SECURITY & SAFETY REQUIREMENTS]] - document - CLAUDE.md
+- [[7) AGENTSHROUD-SPECIFIC CONSTRAINTS]] - document - CLAUDE.md
+- [[75 Active Security Modules — No Stubs]] - document - CLAUDE.md
+- [[8) OUTPUT FORMATTING CONTRACT]] - document - CLAUDE.md
+- [[9) GOVERNANCE & DECISION-MAKING]] - document - CLAUDE.md
+- [[Applies to Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary)]] - document - CLAUDE.md
+- [[Avoid]] - document - CLAUDE.md
+- [[Development commands]] - document - CLAUDE.md
+- [[Hard constraints]] - document - CLAUDE.md
+- [[KNOWLEDGE MAP — READ THIS FIRST]] - document - CLAUDE.md
+- [[Key source directories]] - document - CLAUDE.md
+- [[MCP tools available]] - document - CLAUDE.md
+- [[Preferred workflow]] - document - CLAUDE.md
+- [[RULE A — NO STUBS. NO PLACEHOLDERS. NO FAKE GREEN.]] - document - CLAUDE.md
+- [[RULE B — VERIFY BEFORE CLAIMING. CITE FILES AND LINES.]] - document - CLAUDE.md
+- [[RULE C — INTEGRATION PROOF FORMAT]] - document - CLAUDE.md
+- [[RULE D — TEST TABLE FORMAT FOR STATUS REPORTS]] - document - CLAUDE.md
+- [[RULE E — DEFINITION OF DONE]] - document - CLAUDE.md
+- [[Red → Green → Refactor]] - document - CLAUDE.md
+- [[Session start checklist]] - document - CLAUDE.md
+- [[Test quality rules]] - document - CLAUDE.md
+- [[When to act]] - document - CLAUDE.md
+- [[When to clarify]] - document - CLAUDE.md
+- [[When to defer]] - document - CLAUDE.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -49,13 +50,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 33 edges to [[_COMMUNITY_Community 102]]
-- 14 edges to [[_COMMUNITY_Community 272]]
-- 1 edge to [[_COMMUNITY_Community 82]]
+- 1 edge to [[_COMMUNITY_Community 450]]
+- 1 edge to [[_COMMUNITY_Community 324]]
 
 ## Top bridge nodes
-- [[SkillScanError]] - degree 24, connects to 3 communities
-- [[Path_38]] - degree 24, connects to 2 communities
-- [[TestScanEntrypointInProcess]] - degree 13, connects to 2 communities
-- [[TestSyncScriptPreflight]] - degree 11, connects to 2 communities
-- [[TestReloadIntegration]] - degree 10, connects to 2 communities
+- [[Applies to Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary)]] - degree 14, connects to 2 communities

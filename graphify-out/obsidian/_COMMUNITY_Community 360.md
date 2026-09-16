@@ -1,39 +1,39 @@
 ---
 type: community
-cohesion: 0.12
+cohesion: 0.09
 members: 24
 ---
 
 # Community 360
 
-**Cohesion:** 0.12 - loosely connected
+**Cohesion:** 0.09 - loosely connected
 **Members:** 24 nodes
 
 ## Members
-- [[Get API key from argument first, then environment.]] - rationale - skills/openclaw/nano-banana-pro/scripts/generate_image.py
-- [[Model-Specific Parameters]] - document - skills/openclaw/openai-image-gen/SKILL.md
-- [[Nano Banana Pro (Gemini 3 Pro Image)]] - document - skills/openclaw/nano-banana-pro/SKILL.md
-- [[OpenAI Image Gen]] - document - skills/openclaw/openai-image-gen/SKILL.md
-- [[Other Notable Differences]] - document - skills/openclaw/openai-image-gen/SKILL.md
-- [[Output_8]] - document - skills/openclaw/openai-image-gen/SKILL.md
-- [[Path_49]] - code - skills/openclaw/openai-image-gen/scripts/gen.py
-- [[Quality]] - document - skills/openclaw/openai-image-gen/SKILL.md
-- [[Return (default_size, default_quality) for the given model.]] - rationale - skills/openclaw/openai-image-gen/scripts/gen.py
-- [[Run]] - document - skills/openclaw/openai-image-gen/SKILL.md
-- [[SKILL_216]] - document - skills/openclaw/nano-banana-pro/SKILL.md
-- [[SKILL_220]] - document - skills/openclaw/openai-image-gen/SKILL.md
-- [[Size]] - document - skills/openclaw/openai-image-gen/SKILL.md
-- [[default_out_dir()]] - code - skills/openclaw/openai-image-gen/scripts/gen.py
-- [[gen.py]] - code - skills/openclaw/openai-image-gen/scripts/gen.py
-- [[generate_image.py]] - code - skills/openclaw/nano-banana-pro/scripts/generate_image.py
-- [[get_api_key()]] - code - skills/openclaw/nano-banana-pro/scripts/generate_image.py
-- [[get_model_defaults()]] - code - skills/openclaw/openai-image-gen/scripts/gen.py
-- [[main()_29]] - code - skills/openclaw/openai-image-gen/scripts/gen.py
-- [[main()_28]] - code - skills/openclaw/nano-banana-pro/scripts/generate_image.py
-- [[pick_prompts()]] - code - skills/openclaw/openai-image-gen/scripts/gen.py
-- [[request_images()]] - code - skills/openclaw/openai-image-gen/scripts/gen.py
-- [[slugify()]] - code - skills/openclaw/openai-image-gen/scripts/gen.py
-- [[write_gallery()]] - code - skills/openclaw/openai-image-gen/scripts/gen.py
+- [[AgentShroud Bot Capabilities]] - document - docker/bot-capabilities.md
+- [[Allowlist]] - document - docker/bot-capabilities.md
+- [[Already in your environment at startup]] - document - docker/bot-capabilities.md
+- [[Credential Isolation — Gateway op-proxy (ACTIVE)]] - document - docker/bot-capabilities.md
+- [[Credential flow]] - document - docker/bot-capabilities.md
+- [[Credentials set at startup (already in environment)]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[Docker Compose Override — Raspberry Pi Bot Host]] - code - docker/docker-compose.agentshroud-bot.raspberrypi.yml
+- [[Gateway credentialsop-proxy Endpoint (1Password isolation)]] - concept - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[How to retrieve a credential]] - document - docker/bot-capabilities.md
+- [[How to retrieve a credential at runtime]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[Known working credentials]] - document - docker/bot-capabilities.md
+- [[Never Display Credentials in Chat Policy (Ultra-Conservative)]] - rationale - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[Option 1 — Professional (email, formal)]] - document - docker/bot-capabilities.md
+- [[Option 2 — Compact (Telegram, Slack — default)]] - document - docker/bot-capabilities.md
+- [[Option 3 — Full Collaborator Notice (first contact only)]] - document - docker/bot-capabilities.md
+- [[Rules_13]] - document - docker/bot-capabilities.md
+- [[SYSTEM-INSTRUCTIONS-SECURITY]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[Trademark Statements]] - document - docker/bot-capabilities.md
+- [[What NEVER to do]] - document - docker/bot-capabilities.md
+- [[What NEVER to do_1]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[Which statement to use]] - document - docker/bot-capabilities.md
+- [[You do NOT have direct 1Password access]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[bot-capabilities]] - document - docker/bot-capabilities.md
+- [[🏗️ Credential Architecture — How Secrets Are Retrieved]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -41,3 +41,12 @@ members: 24
 TABLE source_file, type FROM #community/Community_360
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_Community 351]]
+- 1 edge to [[_COMMUNITY_Community 775]]
+
+## Top bridge nodes
+- [[🏗️ Credential Architecture — How Secrets Are Retrieved]] - degree 6, connects to 1 community
+- [[AgentShroud Bot Capabilities]] - degree 4, connects to 1 community
+- [[SYSTEM-INSTRUCTIONS-SECURITY]] - degree 4, connects to 1 community

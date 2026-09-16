@@ -1,39 +1,40 @@
 ---
 type: community
 cohesion: 0.08
-members: 24
+members: 25
 ---
 
 # Community 354
 
 **Cohesion:** 0.08 - loosely connected
-**Members:** 24 nodes
+**Members:** 25 nodes
 
 ## Members
-- [[graphify]] - document - .agents/skills/graphify/SKILL.md
-- [[For --update and --cluster-only]] - document - .agents/skills/graphify/SKILL.md
-- [[For graphify add and --watch]] - document - .agents/skills/graphify/SKILL.md
-- [[For graphify query]] - document - .agents/skills/graphify/SKILL.md
-- [[For the commit hook and native AGENTS.md integration]] - document - .agents/skills/graphify/SKILL.md
-- [[Honesty Rules]] - document - .agents/skills/graphify/SKILL.md
-- [[Interpreter guard for subcommands]] - document - .agents/skills/graphify/SKILL.md
-- [[Part A - Structural extraction for code files]] - document - .agents/skills/graphify/SKILL.md
-- [[Part B - Semantic extraction (parallel subagents)]] - document - .agents/skills/graphify/SKILL.md
-- [[Part C - Merge AST + semantic into final extraction]] - document - .agents/skills/graphify/SKILL.md
-- [[SKILL]] - document - .agents/skills/graphify/SKILL.md
-- [[Step 0 - GitHub repos and multi-path merge (only if a URL or several paths)]] - document - .agents/skills/graphify/SKILL.md
-- [[Step 1 - Ensure graphify is installed]] - document - .agents/skills/graphify/SKILL.md
-- [[Step 2 - Detect files]] - document - .agents/skills/graphify/SKILL.md
-- [[Step 2.5 - Video and audio (only if video files detected)]] - document - .agents/skills/graphify/SKILL.md
-- [[Step 3 - Extract entities and relationships]] - document - .agents/skills/graphify/SKILL.md
-- [[Step 4 - Build graph, cluster, analyze, generate outputs]] - document - .agents/skills/graphify/SKILL.md
-- [[Step 5 - Label communities]] - document - .agents/skills/graphify/SKILL.md
-- [[Step 6 - Generate Obsidian vault (opt-in) + HTML]] - document - .agents/skills/graphify/SKILL.md
-- [[Step 9 - Save manifest, update cost tracker, clean up, and report]] - document - .agents/skills/graphify/SKILL.md
-- [[Steps 6b-8 - Wiki, Neo4j, SVG, GraphML, MCP, benchmark (only on their flags)]] - document - .agents/skills/graphify/SKILL.md
-- [[Usage]] - document - .agents/skills/graphify/SKILL.md
-- [[What You Must Do When Invoked]] - document - .agents/skills/graphify/SKILL.md
-- [[What graphify is for]] - document - .agents/skills/graphify/SKILL.md
+- [[dot-setup_method()_30]] - code - gateway/tests/test_metadata_guard.py
+- [[dot-test_all_unicode_control_chars_stripped()]] - code - gateway/tests/test_metadata_guard.py
+- [[dot-test_check_for_exif_detects_magic_bytes()]] - code - gateway/tests/test_metadata_guard.py
+- [[dot-test_check_oversized_headers_flags_large_headers()]] - code - gateway/tests/test_metadata_guard.py
+- [[dot-test_check_oversized_headers_passes_normal_headers()]] - code - gateway/tests/test_metadata_guard.py
+- [[dot-test_internal_ip_patterns_comprehensive()]] - code - gateway/tests/test_metadata_guard.py
+- [[dot-test_sanitize_filename_normalizes_unicode()]] - code - gateway/tests/test_metadata_guard.py
+- [[dot-test_sanitize_filename_strips_control_chars()]] - code - gateway/tests/test_metadata_guard.py
+- [[dot-test_sanitize_headers_redacts_internal_ips()]] - code - gateway/tests/test_metadata_guard.py
+- [[dot-test_sanitize_headers_strips_sensitive()]] - code - gateway/tests/test_metadata_guard.py
+- [[dot-test_sanitize_headers_truncates_on_size_limit()]] - code - gateway/tests/test_metadata_guard.py
+- [[dot-test_sanitize_image_metadata_preserves_non_exif()]] - code - gateway/tests/test_metadata_guard.py
+- [[dot-test_sanitize_image_metadata_removes_exif()]] - code - gateway/tests/test_metadata_guard.py
+- [[Test comprehensive internal IP pattern matching.]] - rationale - gateway/tests/test_metadata_guard.py
+- [[Test that EXIF metadata is removed from image data.]] - rationale - gateway/tests/test_metadata_guard.py
+- [[Test that all specified unicode control characters are stripped.]] - rationale - gateway/tests/test_metadata_guard.py
+- [[Test that header sanitization stops at size limit.]] - rationale - gateway/tests/test_metadata_guard.py
+- [[Test that internal IPs are redacted from headers.]] - rationale - gateway/tests/test_metadata_guard.py
+- [[Test that non-EXIF data is preserved.]] - rationale - gateway/tests/test_metadata_guard.py
+- [[Test that normal-sized headers pass.]] - rationale - gateway/tests/test_metadata_guard.py
+- [[Test that oversized headers are flagged.]] - rationale - gateway/tests/test_metadata_guard.py
+- [[Test that sensitive headers are stripped.]] - rationale - gateway/tests/test_metadata_guard.py
+- [[Test that unicode control characters are stripped.]] - rationale - gateway/tests/test_metadata_guard.py
+- [[Test that unicode is normalized with NFKC.]] - rationale - gateway/tests/test_metadata_guard.py
+- [[TestMetadataGuard]] - code - gateway/tests/test_metadata_guard.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -41,3 +42,11 @@ members: 24
 TABLE source_file, type FROM #community/Community_354
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_Alert Dispatcher & RBAC Reliability]]
+- 2 edges to [[_COMMUNITY_Community 598]]
+
+## Top bridge nodes
+- [[TestMetadataGuard]] - degree 16, connects to 2 communities
+- [[dot-setup_method()_30]] - degree 2, connects to 1 community

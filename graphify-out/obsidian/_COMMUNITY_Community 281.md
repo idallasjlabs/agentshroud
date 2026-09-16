@@ -1,43 +1,44 @@
 ---
 type: community
-cohesion: 0.09
-members: 28
+cohesion: 0.15
+members: 29
 ---
 
 # Community 281
 
-**Cohesion:** 0.09 - loosely connected
-**Members:** 28 nodes
+**Cohesion:** 0.15 - loosely connected
+**Members:** 29 nodes
 
 ## Members
-- [[NOTE gatewaysecurityegress_filter.py_is_private_ip has the same class]] - rationale - gateway/security/a2a_policy.py
-- [[.__post_init__()_2]] - code - gateway/security/a2a_policy.py
-- [[.enforce()]] - code - gateway/security/a2a_policy.py
-- [[.evaluate()]] - code - gateway/security/a2a_policy.py
-- [[Accept either the enum or its string value (JSON-RPC payloads arrive     as plai]] - rationale - gateway/security/a2a_policy.py
-- [[Best-effort canonicalization of alternate IPv4 encodings that     ``ipaddress.ip]] - rationale - gateway/security/a2a_policy.py
-- [[Cross-Turn Correlation Capability]] - concept - docs/papers/attack-teardowns-rovoblast-cross-turn.md
-- [[EgressFilter.check()]] - code - gateway/security/egress_filter.py
-- [[Evaluate a single A2A request. Pure — no IO, no side effects         beyond bes]] - rationale - gateway/security/a2a_policy.py
-- [[Evaluate and resolve the decision to a terminal ALLOWDENY.          Identical f]] - rationale - gateway/security/a2a_policy.py
-- [[Hermes A2A Plugin Upstream Gaps (83701, 8053480779, 78298, 77872, 81042)]] - concept - docs/security/threat-model.md
-- [[IPv4Address]] - code - gateway/security/a2a_policy.py
-- [[Normalize a peer-id reference for robust, evasion-resistant matching.      Same]] - rationale - gateway/security/a2a_policy.py
-- [[OpenAI Agent Message-Board Coordination Attack]] - concept - docs/papers/attack-teardowns-rovoblast-cross-turn.md
-- [[PromptArmor Atlassian Rovo Content-Borne Injection Disclosure]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
-- [[RovoBlast Attack (Atlassian Rovo AI)]] - concept - docs/papers/attack-teardowns-rovoblast-cross-turn.md
-- [[UK AISI Rogue Agent Actions Findings]] - concept - docs/papers/attack-teardowns-rovoblast-cross-turn.md
-- [[Varonis RovoBlast How One Click Triggered Atlassian's AI Assistant to Leak Data]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
-- [[_BaseAddress]] - code - gateway/security/a2a_policy.py
-- [[_address_is_public()]] - code - gateway/security/a2a_policy.py
-- [[_canonicalize_ip_literal()]] - code - gateway/security/a2a_policy.py
-- [[_int_to_ipv4()]] - code - gateway/security/a2a_policy.py
-- [[_method_of()]] - code - gateway/security/a2a_policy.py
-- [[_norm()]] - code - gateway/security/a2a_policy.py
-- [[a2a_policy.py]] - code - gateway/security/a2a_policy.py
-- [[context_guard.py Provenance Tagging (ContextSegment)]] - code - gateway/security/context_guard.py
-- [[egress_filter.py_is_private_ip SSRF Encoding-Bypass Bug]] - rationale - gateway/security/egress_filter.py
-- [[multi_turn_tracker.py  SubagentMonitor]] - code - gateway/security/multi_turn_tracker.py
+- [[A missing file (mtime -1.0) must not trigger a reload (no reject storm).]] - rationale - gateway/tests/test_config_hot_reload.py
+- [[A structurally-valid YAML that violates the pydantic schema is rejected.]] - rationale - gateway/tests/test_config_hot_reload.py
+- [[Background mtime-poll watcher reload the config when the file changes.      Pol]] - rationale - gateway/ingest_api/config.py
+- [[Copy only the reloadable-field subset from ``new`` onto ``current`` in place.]] - rationale - gateway/ingest_api/config.py
+- [[Every GatewayConfig field is classified exactly once, disjointly.]] - rationale - gateway/tests/test_config_hot_reload.py
+- [[File mtime changes but no reloadable field differs — reload still succeeds.]] - rationale - gateway/tests/test_config_hot_reload.py
+- [[GatewayConfig_3]] - code - gateway/tests/test_config_hot_reload.py
+- [[Path_29]] - code - gateway/tests/test_config_hot_reload.py
+- [[Re-parse and validate ``config_path``; atomically swap in reloadable fields.]] - rationale - gateway/ingest_api/config.py
+- [[_default_mtime returns the file mtime, and -1.0 when the file is absent.]] - rationale - gateway/tests/test_config_hot_reload.py
+- [[_load()]] - code - gateway/tests/test_config_hot_reload.py
+- [[_write()]] - code - gateway/tests/test_config_hot_reload.py
+- [[apply_reloadable_config()]] - code - gateway/ingest_api/config.py
+- [[config_watcher()]] - code - gateway/ingest_api/config.py
+- [[reload_config()]] - code - gateway/ingest_api/config.py
+- [[resolve_config_path honors the explicit arg and AGENTSHROUD_CONFIG env.]] - rationale - gateway/tests/test_config_hot_reload.py
+- [[test_apply_swaps_only_reloadable_fields()]] - code - gateway/tests/test_config_hot_reload.py
+- [[test_config_hot_reload.py]] - code - gateway/tests/test_config_hot_reload.py
+- [[test_default_mtime_reads_real_file_and_handles_missing()]] - code - gateway/tests/test_config_hot_reload.py
+- [[test_field_partition_is_disjoint_and_covers_model()]] - code - gateway/tests/test_config_hot_reload.py
+- [[test_reload_applies_valid_change()]] - code - gateway/tests/test_config_hot_reload.py
+- [[test_reload_missing_file_keeps_last_good()]] - code - gateway/tests/test_config_hot_reload.py
+- [[test_reload_no_reloadable_field_changed()]] - code - gateway/tests/test_config_hot_reload.py
+- [[test_reload_rejects_invalid_and_keeps_last_good()]] - code - gateway/tests/test_config_hot_reload.py
+- [[test_reload_rejects_schema_violation_and_keeps_last_good()]] - code - gateway/tests/test_config_hot_reload.py
+- [[test_resolve_config_path_explicit_and_env()]] - code - gateway/tests/test_config_hot_reload.py
+- [[test_watcher_ignores_missing_file()]] - code - gateway/tests/test_config_hot_reload.py
+- [[test_watcher_reloads_on_mtime_change()]] - code - gateway/tests/test_config_hot_reload.py
+- [[test_watcher_stops_on_event()]] - code - gateway/tests/test_config_hot_reload.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -47,17 +48,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_Community 81]]
-- 6 edges to [[_COMMUNITY_Community 71]]
-- 4 edges to [[_COMMUNITY_Community 205]]
-- 2 edges to [[_COMMUNITY_Community 227]]
-- 1 edge to [[_COMMUNITY_Community 19]]
-- 1 edge to [[_COMMUNITY_Community 45]]
-- 1 edge to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
+- 14 edges to [[_COMMUNITY_Approval Routing & Event Bus]]
+- 6 edges to [[_COMMUNITY_Approval Queue (WebSocket)]]
 
 ## Top bridge nodes
-- [[a2a_policy.py]] - degree 16, connects to 5 communities
-- [[.evaluate()]] - degree 8, connects to 4 communities
-- [[RovoBlast Attack (Atlassian Rovo AI)]] - degree 7, connects to 2 communities
-- [[.enforce()]] - degree 6, connects to 2 communities
-- [[Hermes A2A Plugin Upstream Gaps (83701, 8053480779, 78298, 77872, 81042)]] - degree 3, connects to 2 communities
+- [[test_config_hot_reload.py]] - degree 21, connects to 2 communities
+- [[reload_config()]] - degree 13, connects to 2 communities
+- [[config_watcher()]] - degree 11, connects to 2 communities
+- [[apply_reloadable_config()]] - degree 6, connects to 2 communities
+- [[_load()]] - degree 13, connects to 1 community

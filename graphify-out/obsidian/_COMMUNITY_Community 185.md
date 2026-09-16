@@ -1,52 +1,53 @@
 ---
 type: community
-cohesion: 0.08
-members: 37
+cohesion: 0.09
+members: 38
 ---
 
 # Community 185
 
-**Cohesion:** 0.08 - loosely connected
-**Members:** 37 nodes
+**Cohesion:** 0.09 - loosely connected
+**Members:** 38 nodes
 
 ## Members
-- [[1. Security Module Analysis]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[1.1 Module Integration Status]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[1.2 Critical Security Pipeline Flow]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[10. Steve Hay Assessment Alignment]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[5. Integration Gap Analysis]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[5.1 New v0.7.0 Features Assessment]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[5.2 Pipeline Integration Verification]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[AgentShroud White Paper (HTML rendering)]] - paper - docs/papers/agentshroud-whitepaper.html
-- [[AgentShroud White Paper v1.1 (Feb 2026)]] - paper - docs/papers/agentshroud-whitepaper.md
-- [[AgentShroud v0.7.0 Blue Team Security Audit Report]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[AgentShroud v0.7.0 Enforcement Audit Results]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[ContextGuard (context window poisoning defense)]] - concept - docs/papers/agentshroud-whitepaper.md
-- [[Egress Filter  SSRF Protection]] - concept - docs/papers/agentshroud-whitepaper.md
-- [[End-to-End Verification]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[Executive Summary_1]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[FileSandbox (path isolation)]] - concept - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[GitGuard (supply-chain hook scanning)]] - concept - docs/papers/agentshroud-whitepaper.md
-- [[Known Gaps (Documented for v0.8.0)]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[MCP Proxy Layer (tool-call interception)]] - concept - docs/papers/agentshroud-whitepaper.md
-- [[P0 — Critical Path (1616 ✅)]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[P1 — Active Defense (1414 ✅)]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[P2 — Infrastructure (1010 ✅)]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[PromptGuard (Prompt Injection Defense)]] - concept - docs/papers/agentshroud-whitepaper.md
-- [[RBAC (Role-Based Access Control)]] - concept - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[Summary_6]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[Verdict ✅ CONDITIONAL GO]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[Voice Terminal — ESP32-S3-BOX-3 Integration Guide]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Wazuh CVE-2025-24016 (CVSS 9.9 RCE)]] - concept - docs/papers/agentshroud-whitepaper.md
-- [[blue-team-audit-v0.7.0]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[enforcement-audit-script.py (P0P1P2 module smoke test)]] - code - docs/planning/reviews/enforcement-audit-script.py
-- [[enforcement-audit-v0.7.0]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[v0.8.0 Feature Interactive Egress Firewall + Observatory Mode]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
-- [[voice-gateway service (ESP32 voice terminal backend)]] - concept - docs/integrations/voice-terminal-esp32-s3.md
-- [[⚠️ Warning ContextGuard Enforcement]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[⚠️ Warning SecurityPipeline]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[⚠️ Warning killswitch.sh Path]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
-- [[⚠️ Warnings]] - document - docs/planning/reviews/enforcement-audit-v0.7.0.md
+- [[dot-setup_method()_15]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_allowed_cidr()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_connect_proxy_policy_allows_smtp_gmail_465()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_connect_proxy_policy_allows_smtp_mail_me_587()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_default_policy_allows_imaps()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_default_policy_allows_smtp_submission()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_default_policy_allows_smtps()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_matches_domain_exact()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_matches_domain_wildcard()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_matches_ip_cidr()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_matches_ip_invalid()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_matches_ip_single()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_matches_port()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_matches_port_empty_allows_all()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_non_email_port_still_denied_for_unlisted_domain()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_private_ip_allowed_if_in_policy_allowlist()]] - code - gateway/tests/test_egress_filter.py
+- [[CIDR in policy allowlist should match.]] - rationale - gateway/tests/test_egress_filter.py
+- [[Egress policy for an agent or global default.]] - rationale - gateway/security/egress_filter.py
+- [[EgressFilter_1]] - code - gateway/tests/test_egress_filter.py
+- [[EgressFilter must NOT notify when domain is allowed.]] - rationale - gateway/tests/test_egress_filter.py
+- [[EgressFilter must call notifier when blocking an unknown domain.]] - rationale - gateway/tests/test_egress_filter.py
+- [[EgressPolicy]] - code - gateway/security/egress_filter.py
+- [[EgressPolicy default allows port 465 (SMTPS).]] - rationale - gateway/tests/test_egress_filter.py
+- [[EgressPolicy default allows port 587 (SMTP submissionSTARTTLS).]] - rationale - gateway/tests/test_egress_filter.py
+- [[Port 465 on an un-allowlisted domain is still denied in enforce mode.]] - rationale - gateway/tests/test_egress_filter.py
+- [[Ports 465 (SMTPS), 587 (SMTP submission), 993 (IMAPS) must be allowed     by the]] - rationale - gateway/tests/test_egress_filter.py
+- [[Private IPs pass if explicitly in the EgressPolicy allowlist (SSRF check).]] - rationale - gateway/tests/test_egress_filter.py
+- [[TestEgressPolicy]] - code - gateway/tests/test_egress_filter.py
+- [[TestSMTPIMAPPorts]] - code - gateway/tests/test_egress_filter.py
+- [[Unit tests for EgressPolicy matching methods.]] - rationale - gateway/tests/test_egress_filter.py
+- [[egress_filter()]] - code - gateway/tests/test_e2e_proxy.py
+- [[egress_filter()_1]] - code - gateway/tests/test_security_integration.py
+- [[flush_notifications with no notifier set should not crash.]] - rationale - gateway/tests/test_egress_filter.py
+- [[http_connect_proxy policy allows CONNECT smtp.gmail.com465.]] - rationale - gateway/tests/test_egress_filter.py
+- [[test_egress_filter_flush_without_notifier()]] - code - gateway/tests/test_egress_filter.py
+- [[test_egress_filter_no_notification_on_allow()]] - code - gateway/tests/test_egress_filter.py
+- [[test_egress_filter_notifies_on_deny()]] - code - gateway/tests/test_egress_filter.py
+- [[v0.9.0 cron-email fix SMTPIMAP ports 465587993 allowed for OpenClaw cron email]] - rationale - gateway/tests/test_egress_filter.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -56,20 +57,29 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_Community 128]]
-- 3 edges to [[_COMMUNITY_Community 723]]
-- 3 edges to [[_COMMUNITY_Community 950]]
-- 2 edges to [[_COMMUNITY_Community 376]]
-- 1 edge to [[_COMMUNITY_Community 488]]
-- 1 edge to [[_COMMUNITY_Community 1326]]
-- 1 edge to [[_COMMUNITY_Community 1327]]
-- 1 edge to [[_COMMUNITY_Community 1328]]
-- 1 edge to [[_COMMUNITY_Community 345]]
-- 1 edge to [[_COMMUNITY_Community 513]]
+- 28 edges to [[_COMMUNITY_Community 81]]
+- 16 edges to [[_COMMUNITY_Community 167]]
+- 13 edges to [[_COMMUNITY_Community 52]]
+- 11 edges to [[_COMMUNITY_Session Manager & PIIContext Guard]]
+- 11 edges to [[_COMMUNITY_Community 182]]
+- 10 edges to [[_COMMUNITY_Encrypted Store & Drift Detector]]
+- 9 edges to [[_COMMUNITY_P3 Infrastructure Security Modules]]
+- 4 edges to [[_COMMUNITY_Proxy Sidecar & Forwarder]]
+- 3 edges to [[_COMMUNITY_Alert Dispatcher & RBAC Reliability]]
+- 3 edges to [[_COMMUNITY_Community 92]]
+- 2 edges to [[_COMMUNITY_Approval Routing & Event Bus]]
+- 2 edges to [[_COMMUNITY_Community 322]]
+- 1 edge to [[_COMMUNITY_Ingest API & RBAC Core]]
+- 1 edge to [[_COMMUNITY_Community 86]]
+- 1 edge to [[_COMMUNITY_Cross-Bot Trust & A2A Governance]]
+- 1 edge to [[_COMMUNITY_File Sandbox & Privilege Separation Tests]]
+- 1 edge to [[_COMMUNITY_Community 48]]
+- 1 edge to [[_COMMUNITY_Agent Isolation & Group Config Tests]]
+- 1 edge to [[_COMMUNITY_Prompt Guard & Context Integrity]]
 
 ## Top bridge nodes
-- [[AgentShroud v0.7.0 Blue Team Security Audit Report]] - degree 19, connects to 6 communities
-- [[enforcement-audit-script.py (P0P1P2 module smoke test)]] - degree 11, connects to 3 communities
-- [[AgentShroud v0.7.0 Enforcement Audit Results]] - degree 20, connects to 2 communities
-- [[AgentShroud White Paper v1.1 (Feb 2026)]] - degree 12, connects to 2 communities
-- [[Egress Filter  SSRF Protection]] - degree 7, connects to 1 community
+- [[EgressPolicy]] - degree 100, connects to 19 communities
+- [[EgressFilter_1]] - degree 21, connects to 4 communities
+- [[TestEgressPolicy]] - degree 15, connects to 4 communities
+- [[TestSMTPIMAPPorts]] - degree 14, connects to 4 communities
+- [[egress_filter()]] - degree 4, connects to 3 communities

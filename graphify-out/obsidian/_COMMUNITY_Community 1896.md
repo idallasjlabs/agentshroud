@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Session Isolation End-to-End Tests]] - code - gateway/tests/test_session_isolation.py
+- [[Diagram 12 Credential Flow]] - image - docs/diagrams/images/diagram-12-credential-flow.svg
 
 ## Live Query (requires Dataview plugin)
 

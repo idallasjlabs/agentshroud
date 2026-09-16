@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Test Data Ledger]] - code - gateway/tests/test_ledger.py
+- [[AgentShroud Gateway OpenAPI Spec v1.2.1]] - document - docs/api/openapi.json
 
 ## Live Query (requires Dataview plugin)
 

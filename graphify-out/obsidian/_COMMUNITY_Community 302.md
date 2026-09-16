@@ -10,33 +10,33 @@ members: 27
 **Members:** 27 nodes
 
 ## Members
-- [[401 Unauthorized_2]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
-- [[CalendarContacts not found_2]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
-- [[Connection timeout_2]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
-- [[Add Contact_2]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
-- [[Calendar Operations_2]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
-- [[Configuration_1]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
-- [[Contact Operations_2]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
-- [[Create Event_2]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
-- [[Create Note_2]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
-- [[Delete Event_2]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
-- [[List Contacts_2]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
-- [[List Events_2]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
-- [[List Messages_2]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
-- [[List Notes_2]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
-- [[Mail Operations_2]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
-- [[Notes Operations_2]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
-- [[SKILL_152]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
-- [[Search Contacts_2]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
-- [[Search Mail_2]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
-- [[Search Notes_2]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
-- [[Security_5]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
-- [[Send Email_2]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
-- [[Setup_2]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
-- [[Troubleshooting_12]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
-- [[Update Contact_2]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
-- [[Update Event_2]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
-- [[iCloud Services_2]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[dot-agentsskillsi-odevSKILL]] - document - .agents/skills/i-odev/SKILL.md
+- [[Guardrails_3]] - document - .agents/skills/i-odev/SKILL.md
+- [[Invocation_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Jira ticket — every development batch gets one_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Mode A — Single task_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Mode B — Comprehensive review sweep_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Reviewers and fixer available to you_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Role_24]] - document - .agents/skills/i-odev/SKILL.md
+- [[Skill OpenClaw Dev Workflow (ODEV)]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 1 — One branch + worktree for the whole sweep_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 1 — Sync and confirm clean state_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 10 — Notify the owner_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 11 — Merge (only on explicit owner instruction)_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 12 — Clean up_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 2 — Create a branch + worktree_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 2 — Work through directories one at a time_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 2b — Create the Jira ticket_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 3 — After the last directory (or a natural stopping point)_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 3 — Write and edit code_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 4 — Test and lint_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 5 — Multi-LLM review_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 6 — Build and validate containers_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 7 — Update documentation and website_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 8 — Update the knowledge graph_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 9 — Push and open the PR_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Step 9b — Update the Jira ticket with the PR link_1]] - document - .agents/skills/i-odev/SKILL.md
+- [[Tools you have for this workflow_1]] - document - .agents/skills/i-odev/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

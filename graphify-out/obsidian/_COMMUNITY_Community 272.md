@@ -1,44 +1,45 @@
 ---
 type: community
-cohesion: 0.10
-members: 29
+cohesion: 0.14
+members: 30
 ---
 
 # Community 272
 
-**Cohesion:** 0.10 - loosely connected
-**Members:** 29 nodes
+**Cohesion:** 0.14 - loosely connected
+**Members:** 30 nodes
 
 ## Members
-- [[.__init__()_118]] - code - gateway/security/skill_guard.py
-- [[._line_at()]] - code - gateway/security/skill_guard.py
-- [[._scan_opaque_blobs()]] - code - gateway/security/skill_guard.py
-- [[.blocked()]] - code - gateway/security/skill_guard.py
-- [[.extend()]] - code - gateway/security/skill_guard.py
-- [[.recommendation()]] - code - gateway/security/skill_guard.py
-- [[.scan_file()_1]] - code - gateway/security/skill_guard.py
-- [[.scan_skill_tree()]] - code - gateway/security/skill_guard.py
-- [[.severity()]] - code - gateway/security/skill_guard.py
-- [[A single supply-chain finding within a scanned skill artefact.]] - rationale - gateway/security/skill_guard.py
-- [[ALLOW below MEDIUM, FLAG at MEDIUMHIGH, BLOCK at CRITICAL.]] - rationale - gateway/security/skill_guard.py
-- [[Aggregated result of scanning a skill file or an entire skill tree.]] - rationale - gateway/security/skill_guard.py
-- [[Finding]] - code - gateway/security/skill_guard.py
-- [[Flag long opaque base64hex runs as probable obfuscated payloads.]] - rationale - gateway/security/skill_guard.py
-- [[Highest severity across all findings (``NONE`` when clean).]] - rationale - gateway/security/skill_guard.py
-- [[Path_22]] - code - gateway/skills/scan.py
-- [[Read every manifest entry under source, failing CLOSED on unreadable files.]] - rationale - gateway/skills/scan.py
-- [[Scan every file in a skillMCPagent tree and aggregate findings.          ``fil]] - rationale - gateway/security/skill_guard.py
-- [[Scan one skill artefact (``name`` = relative path, ``content`` = text).]] - rationale - gateway/security/skill_guard.py
-- [[Scan skill  MCP  agent-definition payloads for supply-chain risk.      Usage]] - rationale - gateway/security/skill_guard.py
-- [[ScanResult_2]] - code - gateway/security/skill_guard.py
-- [[SkillGuard]] - code - gateway/security/skill_guard.py
-- [[SkillGuard.scan_skill_tree()]] - code - gateway/security/skill_guard.py
-- [[SkillsManifest.from_source()]] - code - gateway/skills/manifest.py
-- [[_Rule]] - code - gateway/security/skill_guard.py
-- [[_build_tree()]] - code - gateway/skills/scan.py
-- [[_c()]] - code - gateway/security/skill_guard.py
-- [[main()_13]] - code - gateway/skills/scan.py
-- [[skill_guard.py]] - code - gateway/security/skill_guard.py
+- [[animation_timer_cb()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[app_main()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/examples/basic_cycle/main/main.c
+- [[draw_eye()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[draw_mouth()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[emotion_cycle_task()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/examples/basic_cycle/main/main.c
+- [[esp_err_t_4]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[face_animation_deinit()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[face_animation_init()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[face_animation_pause()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[face_animation_update()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[face_config_t]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[face_emotion_t_1]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[face_get_container()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[face_get_emotion()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[face_lock()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[face_malloc_canvas()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[face_set_auto_blink()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[face_set_emotion()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[face_set_eye_openness()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[face_set_lvgl_lock_fns()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[face_set_mouth_shape()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[face_set_position()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[face_trigger_blink()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[face_unlock()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[lv_obj_t_1]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[lv_timer_t]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[lvgl_kawaii_face.c]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[lvgl_kawaii_face.h]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/include/lvgl_kawaii_face.h
+- [[main.c]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/examples/basic_cycle/main/main.c
+- [[update_emotion_parameters()]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
 
 ## Live Query (requires Dataview plugin)
 
@@ -46,17 +47,3 @@ members: 29
 TABLE source_file, type FROM #community/Community_272
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 40 edges to [[_COMMUNITY_Community 102]]
-- 14 edges to [[_COMMUNITY_Community 259]]
-- 2 edges to [[_COMMUNITY_Community 73]]
-- 2 edges to [[_COMMUNITY_Community 37]]
-- 1 edge to [[_COMMUNITY_Community 19]]
-
-## Top bridge nodes
-- [[SkillGuard]] - degree 34, connects to 4 communities
-- [[skill_guard.py]] - degree 9, connects to 3 communities
-- [[ScanResult_2]] - degree 32, connects to 2 communities
-- [[Path_22]] - degree 6, connects to 2 communities
-- [[.scan_file()_1]] - degree 8, connects to 1 community

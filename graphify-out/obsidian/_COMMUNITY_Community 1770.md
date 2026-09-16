@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[calendar.js (iCloud CalDAV skill)]] - code - skills/custom/icloud/scripts/calendar.js
+- [[Create PR with Pre-Flight Audit (CRPR) Skill]] - document - .agents/skills/i-crpr/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

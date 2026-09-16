@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[i-scrum SKILL]] - document - docker/config/hermes/skills/i-scrum/SKILL.md
+- [[Agile Skill (stub)]] - document - .agents/skills/i-agile/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

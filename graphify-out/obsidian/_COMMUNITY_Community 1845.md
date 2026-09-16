@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[SecureBrowser.get_audit_log()]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
+- [[Token-reduction benchmark gated at 5,000 words]] - rationale - docker/config/hermes/skills/graphify/references/exports.md
 
 ## Live Query (requires Dataview plugin)
 

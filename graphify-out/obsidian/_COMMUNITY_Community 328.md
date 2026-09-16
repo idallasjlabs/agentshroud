@@ -10,32 +10,32 @@ members: 26
 **Members:** 26 nodes
 
 ## Members
-- [[Accounts]] - document - docs/reference/PREREQUISITES.md
-- [[Additional Tools in Containers]] - document - docs/reference/PREREQUISITES.md
-- [[AgentShroud Prerequisites]] - document - docs/reference/PREREQUISITES.md
-- [[Annually]] - document - docs/reference/PREREQUISITES.md
-- [[Base Images]] - document - docs/reference/PREREQUISITES.md
-- [[Common Issues]] - document - docs/reference/PREREQUISITES.md
-- [[Configuration_7]] - document - docs/reference/PREREQUISITES.md
-- [[Monthly]] - document - docs/reference/PREREQUISITES.md
-- [[Network Security]] - document - docs/reference/PREREQUISITES.md
-- [[Overview_10]] - document - docs/reference/PREREQUISITES.md
-- [[Quarterly]] - document - docs/reference/PREREQUISITES.md
-- [[Secrets Management]] - document - docs/reference/PREREQUISITES.md
-- [[Software]] - document - docs/reference/PREREQUISITES.md
-- [[Verification_10]] - document - docs/reference/PREREQUISITES.md
-- [[✅ Setup Checklist]] - document - docs/reference/PREREQUISITES.md
-- [[✅ Your Current Setup Status]] - document - docs/reference/PREREQUISITES.md
-- [[🆘 Troubleshooting]] - document - docs/reference/PREREQUISITES.md
-- [[🎯 Philosophy Separation of Concerns]] - document - docs/reference/PREREQUISITES.md
-- [[🎯 You're Not Missing Anything!]] - document - docs/reference/PREREQUISITES.md
-- [[📊 Cost Breakdown]] - document - docs/reference/PREREQUISITES.md
-- [[📚 Additional Resources]] - document - docs/reference/PREREQUISITES.md
-- [[📦 Docker Images & Dependencies]] - document - docs/reference/PREREQUISITES.md
-- [[🔄 Maintenance Requirements]] - document - docs/reference/PREREQUISITES.md
-- [[🔐 Security Requirements]] - document - docs/reference/PREREQUISITES.md
-- [[🗂️ File Structure]] - document - docs/reference/PREREQUISITES.md
-- [[🚀 Quick Start Command]] - document - docs/reference/PREREQUISITES.md
+- [[dot-agentsskillsi-twSKILL]] - document - .agents/skills/i-tw/SKILL.md
+- [[API  Function Reference]] - document - .agents/skills/i-tw/SKILL.md
+- [[Anti-Patterns to Flag_9]] - document - .agents/skills/i-tw/SKILL.md
+- [[Architecture Decision Record (ADR)]] - document - .agents/skills/i-tw/SKILL.md
+- [[Changelog Entry]] - document - .agents/skills/i-tw/SKILL.md
+- [[Core Discipline Understand → Structure → Write → Validate]] - document - .agents/skills/i-tw/SKILL.md
+- [[Dependencies_10]] - document - .agents/skills/i-tw/SKILL.md
+- [[Document Structure]] - document - .agents/skills/i-tw/SKILL.md
+- [[Document-Type Patterns]] - document - .agents/skills/i-tw/SKILL.md
+- [[Expected output]] - document - .agents/skills/i-tw/SKILL.md
+- [[Expected ok]] - document - .agents/skills/i-tw/SKILL.md
+- [[Expected INFO Re-queued 3 jobs]] - document - .agents/skills/i-tw/SKILL.md
+- [[Formatting]] - document - .agents/skills/i-tw/SKILL.md
+- [[If not → escalate to field team via ops-alerts]] - document - .agents/skills/i-tw/SKILL.md
+- [[Query the control DB]] - document - .agents/skills/i-tw/SKILL.md
+- [[README — Entry Point for a Repo or Service]] - document - .agents/skills/i-tw/SKILL.md
+- [[Role_34]] - document - .agents/skills/i-tw/SKILL.md
+- [[Rules_10]] - document - .agents/skills/i-tw/SKILL.md
+- [[Runbook — Operational Decision Tree]] - document - .agents/skills/i-tw/SKILL.md
+- [[Skill Technical Writer (TW)]] - document - .agents/skills/i-tw/SKILL.md
+- [[Validation Checklist_3]] - document - .agents/skills/i-tw/SKILL.md
+- [[Voice & Tone_3]] - document - .agents/skills/i-tw/SKILL.md
+- [[What Belongs Where]] - document - .agents/skills/i-tw/SKILL.md
+- [[Writing Style Rules]] - document - .agents/skills/i-tw/SKILL.md
+- [[INFO Extracted 1,204 records → s3my-bucketlanding...]] - document - .agents/skills/i-tw/SKILL.md
+- [[→ {site site1, test_mode True, output_prefix _testsite1}]] - document - .agents/skills/i-tw/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -43,11 +43,3 @@ members: 26
 TABLE source_file, type FROM #community/Community_328
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 361]]
-- 1 edge to [[_COMMUNITY_Community 907]]
-- 1 edge to [[_COMMUNITY_Community 857]]
-
-## Top bridge nodes
-- [[AgentShroud Prerequisites]] - degree 16, connects to 3 communities

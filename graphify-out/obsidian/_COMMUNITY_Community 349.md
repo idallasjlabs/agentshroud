@@ -10,31 +10,31 @@ members: 25
 **Members:** 25 nodes
 
 ## Members
-- [[AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Bot Account (Manual Setup Required)]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Bot Account (You Do This Manually)]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Clone Repo on Pi]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Cost Estimate]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Current System Profile]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Docker Permission Denied]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[High Temperature]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Next Steps After Setup]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Out of Memory]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Phase 1 OS Hardening & Cleanup]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Phase 3 GitHub Setup]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Phase 4 Project Structure]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Phase 5 CICD Pipeline (GitHub Actions)]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Phase 6 Docker Configuration]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Phase 7 Secret Management]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Phase 8 Monitoring & Observability]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Phase 9 OpenClaw Agent Configuration]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Repo Access]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[SSH Connection Refused]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[SSH Hardening]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Slow Builds_1]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Snap Cleanup (Free Resources)]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[System Updates]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Troubleshooting_25]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Final Assessment Findings]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
+- [[Blue Team Security Assessment — AgentShroud v0.8.0 Round 2]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md
+- [[CRITICAL Findings]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md
+- [[Executive Summary_7]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md
+- [[Executive Summary_8]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
+- [[Fixes Applied_1]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
+- [[HIGH Findings]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md
+- [[LOW Findings]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md
+- [[MEDIUM Findings]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md
+- [[OWNER_USER_IDS bypass mechanism]] - concept - docs/planning/reviews/phase-review-2026-03-04.md
+- [[Overall Security Posture STRONG 🟢]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
+- [[R2-C1 RBAC Management Endpoints Missing Authentication]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md
+- [[R2-H1 1Password CLI Download Without Checksum Verification (Bot Dockerfile)]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md
+- [[R2-H2 Bot Dockerfile Missing setuidsetgid Bit Stripping (CIS 4.8)]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md
+- [[R2-L1 No Global Security Headers Middleware for API Responses]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md
+- [[R2-L2 WebSocket Connection Leak in `webapi.py`]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md
+- [[R2-L3 OCI Image Version Labels Outdated]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md
+- [[R2-M1 Missing `aiohttp` in `requirements.txt`]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md
+- [[R2-M2 WebSocket Endpoints in `webapi.py` Use Full Auth Token (Not Scoped)]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md
+- [[R2-M3 Trivy Downloads Without Checksum Verification (Both Dockerfiles)]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md
+- [[Round 1 Findings]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
+- [[Round 2 Findings]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
+- [[Summary_12]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
+- [[Verification of ALL Prior Findings]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
+- [[Verification of Round 1 Fixes]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -44,11 +44,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 428]]
-- 1 edge to [[_COMMUNITY_Community 1054]]
-- 1 edge to [[_COMMUNITY_Community 1118]]
-- 1 edge to [[_COMMUNITY_Community 972]]
-- 1 edge to [[_COMMUNITY_Community 1117]]
+- 2 edges to [[_COMMUNITY_Community 130]]
+- 1 edge to [[_COMMUNITY_Community 393]]
+- 1 edge to [[_COMMUNITY_Community 527]]
+- 1 edge to [[_COMMUNITY_Community 864]]
+- 1 edge to [[_COMMUNITY_Community 123]]
+- 1 edge to [[_COMMUNITY_Community 524]]
+- 1 edge to [[_COMMUNITY_Community 760]]
 
 ## Top bridge nodes
-- [[AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist]] - degree 17, connects to 5 communities
+- [[Blue Team Security Assessment — AgentShroud v0.8.0 Round 2]] - degree 18, connects to 7 communities
+- [[OWNER_USER_IDS bypass mechanism]] - degree 2, connects to 1 community

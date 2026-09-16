@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[text_control_center.py — Terminal TUI control center]] - code - src/interfaces/text_control_center.py
+- [[approval_queue__init__.py]] - code - gateway/approval_queue/__init__.py
 
 ## Live Query (requires Dataview plugin)
 

@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[i-security-reviewer.md (security-reviewer agent)]] - document - docker/config/openclaw/agents/i-security-reviewer.md
+- [[Favicon 512x512 (AgentShroud logo mark)]] - image - branding/favicons/favicon-512x512.png
 
 ## Live Query (requires Dataview plugin)
 

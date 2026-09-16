@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[_audit_chain_heartbeat() — 60s hash-chain verify loop]] - code - gateway/ingest_api/lifespan.py
+- [[EnhancedApprovalQueue.broadcast (SCRUM-154 bounded)]] - code - gateway/approval_queue/enhanced_queue.py
 
 ## Live Query (requires Dataview plugin)
 

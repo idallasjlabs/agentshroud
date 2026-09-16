@@ -1,35 +1,36 @@
 ---
 type: community
 cohesion: 0.10
-members: 20
+members: 21
 ---
 
 # Community 437
 
 **Cohesion:** 0.10 - loosely connected
-**Members:** 20 nodes
+**Members:** 21 nodes
 
 ## Members
-- [[ADR-001-transparent-proxy-vs-agent-modification]] - document - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
-- [[ADR-001 Transparent Proxy vs Agent Modification]] - document - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
-- [[Agent Modification Cons]] - document - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
-- [[Agent Modification Pros]] - document - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
-- [[Consequences]] - document - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
-- [[Context]] - document - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
-- [[Decision_2]] - document - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
-- [[Implementation Status]] - document - browser-extension/README.md
-- [[Key Considerations]] - document - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
-- [[Mitigation Strategies]] - document - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
-- [[Negative Consequences]] - document - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
-- [[Positive Consequences]] - document - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
-- [[Risk Assessment]] - document - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
-- [[Status]] - document - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
-- [[Step 1 Update Gateway to Block Credentials in Telegram]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Step 2 Add Command Restrictions]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Step 3 Update agentshroud.yaml]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Step 4 Test the Protection]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
-- [[Transparent Proxy Cons]] - document - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
-- [[Transparent Proxy Pros]] - document - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
+- [[Audit Access]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[Audit Retention]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[Audit Trail Standards]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[Automated Tests]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[Compliance]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[Future Enhancements_1]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[Incident Playbook]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[Incident Response]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[Manual Security Review]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[Planned Features]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[Risk Classification Matrix]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[Risk Elevation Factors]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[SecureBrowser Security Policies]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[Security Event Triggers]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[Security Testing_1]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[Standards Alignment]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[Threat Model_2]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[What Gets Logged]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[What We Don't Protect Against]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[What We Protect Against]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[security-policies]] - document - skills/custom/securebrowser/references/security-policies.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,8 +40,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 552]]
-- 1 edge to [[_COMMUNITY_Community 500]]
+- 1 edge to [[_COMMUNITY_Community 369]]
+- 1 edge to [[_COMMUNITY_Community 403]]
 
 ## Top bridge nodes
-- [[Implementation Status]] - degree 7, connects to 2 communities
+- [[SecureBrowser Security Policies]] - degree 10, connects to 2 communities

@@ -1,46 +1,47 @@
 ---
 type: community
-cohesion: 0.06
-members: 31
+cohesion: 0.10
+members: 32
 ---
 
 # Community 252
 
-**Cohesion:** 0.06 - loosely connected
-**Members:** 31 nodes
+**Cohesion:** 0.10 - loosely connected
+**Members:** 32 nodes
 
 ## Members
-- [[Alert Prioritization Display_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Anti-Patterns to Flag_23]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[CLI  TUI UX_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[CLI UX Rules_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Confirmation Patterns_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Content Organization Patterns_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Contextual Actions_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Core Discipline Discover → Define → Design → Validate_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Dashboard UX_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Data Density Rules_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Dependencies_17]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Drill-Down Pattern_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Error Message Patterns_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Feedback Loops (response time standards)_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Field Design Rules_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Form UX_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Generic Task Flow Template_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Information Architecture_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Interaction Design Patterns_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Navigation Hierarchy Rules_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Nielsen's 10 Heuristics — GSDE&G Application_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Progressive Disclosure_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Progressive Form Pattern (for multi-step workflows)_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Role_110]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Rules_26]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[SKILL_187]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Site Alarm Acknowledgment Flow_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Skill UX Expert (UX)_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Usability Audit Checklist_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[User Flow Diagrams_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
-- [[Wayfinding_2]] - document - docker/config/openclaw/skills/i-ux/SKILL.md
+- [[dot-test_execute_nonzero_exit()]] - code - gateway/tests/test_ssh_proxy.py
+- [[dot-test_execute_success()]] - code - gateway/tests/test_ssh_proxy.py
+- [[dot-test_execute_timeout()]] - code - gateway/tests/test_ssh_proxy.py
+- [[dot-test_execute_unknown_host()]] - code - gateway/tests/test_ssh_proxy.py
+- [[dot-test_is_auto_approved_no()]] - code - gateway/tests/test_ssh_proxy.py
+- [[dot-test_is_auto_approved_unknown_host()]] - code - gateway/tests/test_ssh_proxy.py
+- [[dot-test_is_auto_approved_yes()]] - code - gateway/tests/test_ssh_proxy.py
+- [[dot-test_validate_auto_approve_exact_only()]] - code - gateway/tests/test_ssh_proxy.py
+- [[dot-test_validate_command_allowed()]] - code - gateway/tests/test_ssh_proxy.py
+- [[dot-test_validate_command_backslash_n_injection()]] - code - gateway/tests/test_ssh_proxy.py
+- [[dot-test_validate_command_carriage_return_injection()]] - code - gateway/tests/test_ssh_proxy.py
+- [[dot-test_validate_command_denied()]] - code - gateway/tests/test_ssh_proxy.py
+- [[dot-test_validate_command_dollar_brace_injection()]] - code - gateway/tests/test_ssh_proxy.py
+- [[dot-test_validate_command_dollar_var_injection()]] - code - gateway/tests/test_ssh_proxy.py
+- [[dot-test_validate_command_global_denied()]] - code - gateway/tests/test_ssh_proxy.py
+- [[dot-test_validate_command_injection_blocked_and()]] - code - gateway/tests/test_ssh_proxy.py
+- [[dot-test_validate_command_injection_blocked_backticks()]] - code - gateway/tests/test_ssh_proxy.py
+- [[dot-test_validate_command_injection_blocked_dollar_paren()]] - code - gateway/tests/test_ssh_proxy.py
+- [[dot-test_validate_command_injection_blocked_or()]] - code - gateway/tests/test_ssh_proxy.py
+- [[dot-test_validate_command_injection_blocked_pipe()]] - code - gateway/tests/test_ssh_proxy.py
+- [[dot-test_validate_command_injection_blocked_semicolon()]] - code - gateway/tests/test_ssh_proxy.py
+- [[dot-test_validate_command_newline_injection()]] - code - gateway/tests/test_ssh_proxy.py
+- [[dot-test_validate_command_not_in_allowlist()]] - code - gateway/tests/test_ssh_proxy.py
+- [[dot-test_validate_command_unknown_host()]] - code - gateway/tests/test_ssh_proxy.py
+- [[dot-test_validate_empty_command()]] - code - gateway/tests/test_ssh_proxy.py
+- [[Auto-approve must be exact match, not prefix (Finding 3)]] - rationale - gateway/tests/test_ssh_proxy.py
+- [[SSHProxy]] - code - gateway/tests/test_ssh_proxy.py
+- [[Test newline-based injection attempts (Finding 11)]] - rationale - gateway/tests/test_ssh_proxy.py
+- [[TestExecute]] - code - gateway/tests/test_ssh_proxy.py
+- [[TestInjectionNewline]] - code - gateway/tests/test_ssh_proxy.py
+- [[TestIsAutoApproved]] - code - gateway/tests/test_ssh_proxy.py
+- [[TestValidateCommand]] - code - gateway/tests/test_ssh_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -48,3 +49,14 @@ members: 31
 TABLE source_file, type FROM #community/Community_252
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 25 edges to [[_COMMUNITY_Approval Queue (WebSocket)]]
+- 3 edges to [[_COMMUNITY_Slack Proxy & Main Endpoint Tests]]
+
+## Top bridge nodes
+- [[SSHProxy]] - degree 30, connects to 1 community
+- [[TestValidateCommand]] - degree 17, connects to 1 community
+- [[TestInjectionNewline]] - degree 12, connects to 1 community
+- [[TestExecute]] - degree 9, connects to 1 community
+- [[TestIsAutoApproved]] - degree 8, connects to 1 community

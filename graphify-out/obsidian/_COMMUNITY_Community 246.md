@@ -1,46 +1,47 @@
 ---
 type: community
-cohesion: 0.12
-members: 31
+cohesion: 0.10
+members: 32
 ---
 
 # Community 246
 
-**Cohesion:** 0.12 - loosely connected
-**Members:** 31 nodes
+**Cohesion:** 0.10 - loosely connected
+**Members:** 32 nodes
 
 ## Members
-- [[.__init__()_199]] - code - scripts/migrate-cve-registry-ghsa.py
-- [[.confident()]] - code - scripts/migrate-cve-registry-ghsa.py
-- [[Any_75]] - code - scripts/migrate-cve-registry-ghsa.py
-- [[Compute the per-entry rewrite plan and manual-review buckets.      Returns]] - rationale - scripts/migrate-cve-registry-ghsa.py
-- [[Counter]] - code - scripts/migrate-cve-registry-ghsa.py
-- [[Fetch every published GitHub Security Advisory for repo (cursor-paginated).]] - rationale - scripts/migrate-cve-registry-ghsa.py
-- [[Import the current OpenClaw + Hermes registry lists (in file order).]] - rationale - scripts/migrate-cve-registry-ghsa.py
-- [[Lowercase alphanumericunderscore tokens, minus stopwords and short noise.]] - rationale - scripts/migrate-cve-registry-ghsa.py
-- [[Match a single registry entry to at most one advisory, honestly.      Returns]] - rationale - scripts/migrate-cve-registry-ghsa.py
-- [[MatchResult]] - code - scripts/migrate-cve-registry-ghsa.py
-- [[Namespace]] - code - scripts/migrate-cve-registry-ghsa.py
-- [[Outcome of matching one registry entry to the advisory feed.]] - rationale - scripts/migrate-cve-registry-ghsa.py
-- [[Path_46]] - code - scripts/migrate-cve-registry-ghsa.py
-- [[Render the manual-review markdown listing every unmatched entry.]] - rationale - scripts/migrate-cve-registry-ghsa.py
-- [[Return per-agent advisory lists from snapshot or live GitHub.]] - rationale - scripts/migrate-cve-registry-ghsa.py
-- [[Rewrite every ``id old`` line and set ghsa_idcve_id right after it.]] - rationale - scripts/migrate-cve-registry-ghsa.py
-- [[_advisory_patched_versions()]] - code - scripts/migrate-cve-registry-ghsa.py
-- [[_advisory_text_tokens()]] - code - scripts/migrate-cve-registry-ghsa.py
-- [[_py_literal()]] - code - scripts/migrate-cve-registry-ghsa.py
-- [[_tokens()]] - code - scripts/migrate-cve-registry-ghsa.py
-- [[build_id_plan()]] - code - scripts/migrate-cve-registry-ghsa.py
-- [[compute_stats()]] - code - scripts/migrate-cve-registry-ghsa.py
-- [[fetch_advisories()]] - code - scripts/migrate-cve-registry-ghsa.py
-- [[gather_advisories()]] - code - scripts/migrate-cve-registry-ghsa.py
-- [[load_registry()]] - code - scripts/migrate-cve-registry-ghsa.py
-- [[load_snapshot()]] - code - scripts/migrate-cve-registry-ghsa.py
-- [[main()_23]] - code - scripts/migrate-cve-registry-ghsa.py
-- [[match_entry()]] - code - scripts/migrate-cve-registry-ghsa.py
-- [[migrate-cve-registry-ghsa.py]] - code - scripts/migrate-cve-registry-ghsa.py
-- [[render_manual_review()]] - code - scripts/migrate-cve-registry-ghsa.py
-- [[rewrite_registry_text()]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[_apply_agent_cb]] - code - firmware/voice-terminal/main/ui_face.c
+- [[_apply_state_cb]] - code - firmware/voice-terminal/main/ui_face.c
+- [[_build_ws_url]] - code - firmware/voice-terminal/main/app_main.c
+- [[_find_canvas]] - code - firmware/voice-terminal/main/ui_face.c
+- [[_lvgl_flush_wait_yield()]] - code - firmware/voice-terminal/main/app_main.c
+- [[_on_tts_pcm]] - code - firmware/voice-terminal/main/app_main.c
+- [[_on_vg_state]] - code - firmware/voice-terminal/main/app_main.c
+- [[_on_ws_ctrl]] - code - firmware/voice-terminal/main/app_main.c
+- [[_report_and_place_canvas]] - code - firmware/voice-terminal/main/ui_face.c
+- [[_state_to_emotion]] - code - firmware/voice-terminal/main/ui_face.c
+- [[app_main]] - code - firmware/voice-terminal/main/app_main.c
+- [[app_main.c]] - code - firmware/voice-terminal/main/app_main.c
+- [[esp_err_t_3]] - code
+- [[esp_event_base_t]] - code
+- [[face_emotion_t]] - code
+- [[lv_display_t]] - code
+- [[lv_obj_t]] - code
+- [[tts_task]] - code - firmware/voice-terminal/main/app_main.c
+- [[ui_face.c]] - code - firmware/voice-terminal/main/ui_face.c
+- [[ui_face_init]] - code - firmware/voice-terminal/main/ui_face.c
+- [[ui_face_set_agent]] - code - firmware/voice-terminal/main/ui_face.c
+- [[ui_face_set_state]] - code - firmware/voice-terminal/main/ui_face.c
+- [[ui_init (WiFi status labels)]] - code - firmware/voice-terminal/main/app_main.c
+- [[ui_state_t]] - code
+- [[ui_update()]] - code - firmware/voice-terminal/main/app_main.c
+- [[wakeword_init]] - code - firmware/voice-terminal/main/wakeword.c
+- [[wakeword_tts_stop_requested()]] - code - firmware/voice-terminal/main/wakeword.c
+- [[wifi_event_handler]] - code - firmware/voice-terminal/main/app_main.c
+- [[wifi_init]] - code - firmware/voice-terminal/main/app_main.c
+- [[ws_client.h]] - code - firmware/voice-terminal/main/ws_client.h
+- [[ws_vg_state_t]] - code
+- [[ws_vg_state_t_1]] - code
 
 ## Live Query (requires Dataview plugin)
 
@@ -50,10 +51,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 380]]
-- 1 edge to [[_COMMUNITY_Community 78]]
-- 1 edge to [[_COMMUNITY_SOC Collaborators]]
+- 11 edges to [[_COMMUNITY_Community 363]]
+- 10 edges to [[_COMMUNITY_Community 352]]
+- 4 edges to [[_COMMUNITY_Community 273]]
+- 2 edges to [[_COMMUNITY_Community 431]]
 
 ## Top bridge nodes
-- [[Counter]] - degree 4, connects to 2 communities
-- [[migrate-cve-registry-ghsa.py]] - degree 16, connects to 1 community
+- [[wakeword_tts_stop_requested()]] - degree 6, connects to 3 communities
+- [[app_main.c]] - degree 20, connects to 2 communities
+- [[_on_vg_state]] - degree 6, connects to 2 communities
+- [[tts_task]] - degree 6, connects to 2 communities
+- [[ui_face.c]] - degree 13, connects to 1 community

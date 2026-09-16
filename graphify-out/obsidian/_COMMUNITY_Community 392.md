@@ -1,37 +1,38 @@
 ---
 type: community
 cohesion: 0.09
-members: 22
+members: 23
 ---
 
 # Community 392
 
 **Cohesion:** 0.09 - loosely connected
-**Members:** 22 nodes
+**Members:** 23 nodes
 
 ## Members
-- [[ASCII Art (fallback — no renderer available)]] - document - .agents/skills/i-ti/SKILL.md
-- [[Anti-Patterns to Flag_4]] - document - .agents/skills/i-ti/SKILL.md
-- [[Architecture (C4  block) — System boundaries and components]] - document - .agents/skills/i-ti/SKILL.md
-- [[Brand Theme Block (Mermaid)]] - document - .agents/skills/i-ti/SKILL.md
-- [[Core Discipline Understand → Diagram → Validate → Export]] - document - .agents/skills/i-ti/SKILL.md
-- [[Data Flow — How data moves and transforms]] - document - .agents/skills/i-ti/SKILL.md
-- [[Dependencies_2]] - document - .agents/skills/i-ti/SKILL.md
-- [[Diagram Types and Data Lakehouse Examples]] - document - .agents/skills/i-ti/SKILL.md
-- [[ER Diagram — Table relationships and control schema]] - document - .agents/skills/i-ti/SKILL.md
-- [[File and Directory Conventions]] - document - .agents/skills/i-ti/SKILL.md
-- [[Gantt — Daily pipeline schedule]] - document - .agents/skills/i-ti/SKILL.md
-- [[Online renderer]] - document - .agents/skills/i-ti/SKILL.md
-- [[Render locally with mmdc]] - document - .agents/skills/i-ti/SKILL.md
-- [[Rendering and Export]] - document - .agents/skills/i-ti/SKILL.md
-- [[Role_35]] - document - .agents/skills/i-ti/SKILL.md
-- [[Rules_4]] - document - .agents/skills/i-ti/SKILL.md
-- [[SKILL_58]] - document - .agents/skills/i-ti/SKILL.md
-- [[Sequence — Order of operations between systems]] - document - .agents/skills/i-ti/SKILL.md
-- [[Skill Technical Illustrator (TI)]] - document - .agents/skills/i-ti/SKILL.md
-- [[State Diagram — Job or process lifecycle]] - document - .agents/skills/i-ti/SKILL.md
-- [[Validate syntax without exporting]] - document - .agents/skills/i-ti/SKILL.md
-- [[Validation Checklist_1]] - document - .agents/skills/i-ti/SKILL.md
+- [[Dashboard Access]] - document - docs/setup/setup-guide.md
+- [[Development (local testing)]] - document - docs/setup/setup-guide.md
+- [[Health Check_1]] - document - docs/setup/setup-guide.md
+- [[Option A Docker (Most Common)]] - document - docs/setup/setup-guide.md
+- [[Option A macOS Keychain (Default — no software required)]] - document - docs/setup/setup-guide.md
+- [[Option B Linux (secret-tool  GNOME Keyring — Default on Linux)]] - document - docs/setup/setup-guide.md
+- [[Option B Podman (Red HatEnterprise)]] - document - docs/setup/setup-guide.md
+- [[Option C 1Password Service Account (Optional — Teams  Shared Credentials)]] - document - docs/setup/setup-guide.md
+- [[Option C Apple Containers (macOS 26+)]] - document - docs/setup/setup-guide.md
+- [[Option D Docker Secrets (Swarm Mode)]] - document - docs/setup/setup-guide.md
+- [[Option E Environment Variables (Development Only)]] - document - docs/setup/setup-guide.md
+- [[Production (background daemon)]] - document - docs/setup/setup-guide.md
+- [[Production with Restart Policy]] - document - docs/setup/setup-guide.md
+- [[Proxy Mode (Default)]] - document - docs/setup/setup-guide.md
+- [[Sidecar Mode]] - document - docs/setup/setup-guide.md
+- [[Step 1 Clone the Repository]] - document - docs/setup/setup-guide.md
+- [[Step 2 Choose Your Container Runtime]] - document - docs/setup/setup-guide.md
+- [[Step 3 Configure Secrets Management]] - document - docs/setup/setup-guide.md
+- [[Step 4 Choose Security Mode]] - document - docs/setup/setup-guide.md
+- [[Step 6 Deploy AgentShroud]] - document - docs/setup/setup-guide.md
+- [[Step 7 Verify Installation]] - document - docs/setup/setup-guide.md
+- [[Step-by-Step Installation]] - document - docs/setup/setup-guide.md
+- [[Test a Message]] - document - docs/setup/setup-guide.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,3 +40,10 @@ members: 22
 TABLE source_file, type FROM #community/Community_392
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 1106]]
+- 1 edge to [[_COMMUNITY_Community 340]]
+
+## Top bridge nodes
+- [[Step-by-Step Installation]] - degree 8, connects to 2 communities

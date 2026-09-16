@@ -1,47 +1,47 @@
 ---
 type: community
-cohesion: 0.08
+cohesion: 0.06
 members: 32
 ---
 
 # Community 241
 
-**Cohesion:** 0.08 - loosely connected
+**Cohesion:** 0.06 - loosely connected
 **Members:** 32 nodes
 
 ## Members
-- [[.__init__()_105]] - code - gateway/security/output_schema.py
-- [[._register_default_schema()]] - code - gateway/security/output_schema.py
-- [[.register_schema()]] - code - gateway/security/output_schema.py
-- [[.test_custom_schema_enforced()]] - code - gateway/tests/test_output_schema.py
-- [[.test_default_schema_used_when_unknown()]] - code - gateway/tests/test_output_schema.py
-- [[.test_large_base64_stripped()]] - code - gateway/tests/test_output_schema.py
-- [[.test_output_exceeding_max_length_trimmed()]] - code - gateway/tests/test_output_schema.py
-- [[.test_raw_file_path_stripped()]] - code - gateway/tests/test_output_schema.py
-- [[.test_raw_tool_payload_stripped()]] - code - gateway/tests/test_output_schema.py
-- [[.test_valid_output_passes()]] - code - gateway/tests/test_output_schema.py
-- [[.validate()_1]] - code - gateway/security/output_schema.py
-- [[A custom schema with a stricter max_length is applied correctly.]] - rationale - gateway/tests/test_output_schema.py
-- [[Absolute file paths should be flagged and redacted.]] - rationale - gateway/tests/test_output_schema.py
-- [[Base64 blobs  1 KB encoded (≈ 1370 chars) should be redacted.]] - rationale - gateway/tests/test_output_schema.py
-- [[Definition for a named output schema.]] - rationale - gateway/security/output_schema.py
-- [[JSON tool call payloads should be flagged and redacted.]] - rationale - gateway/tests/test_output_schema.py
-- [[Normal short text should pass without violations.]] - rationale - gateway/tests/test_output_schema.py
-- [[Output Schema Enforcer Tests (C25)]] - code - gateway/tests/test_output_schema.py
-- [[Output longer than 100 000 chars should be trimmed.]] - rationale - gateway/tests/test_output_schema.py
-- [[OutputSchemaEnforcer]] - code - gateway/security/output_schema.py
-- [[Register or replace a named schema.]] - rationale - gateway/security/output_schema.py
-- [[Register the built-in default schema.]] - rationale - gateway/security/output_schema.py
-- [[Result of validating output against a schema.]] - rationale - gateway/security/output_schema.py
-- [[SchemaRule]] - code - gateway/security/output_schema.py
-- [[SchemaValidationResult]] - code - gateway/security/output_schema.py
-- [[TestOutputSchemaEnforcer]] - code - gateway/tests/test_output_schema.py
-- [[Unknown schema names fall back to 'default'.]] - rationale - gateway/tests/test_output_schema.py
-- [[Validate output against the named schema.          Args             output The]] - rationale - gateway/security/output_schema.py
-- [[Validates outbound responses against structural schemas.      Usage          e]] - rationale - gateway/security/output_schema.py
-- [[enforcer()_1]] - code - gateway/tests/test_output_schema.py
-- [[output_schema.py]] - code - gateway/security/output_schema.py
-- [[test_output_schema.py]] - code - gateway/tests/test_output_schema.py
+- [[8D Root Cause Analysis — Data-Driven Control System Investigation_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Agent Interaction Protocol_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Architecture Context_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Confidence Scoring_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Critical Rules_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[D0 — Planning & Scoping_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[D1 — Team & Expertise Identification_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[D2 — Problem Description (Data Collection & Characterization)_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[D3 — Interim Containment Assessment_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[D4 — Root Cause Analysis (Correlated Event Detection)_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[D5 — Permanent Corrective Action Definition_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[D6 — Implementation Verification_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[D7 — Systemic Prevention_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[D8 — Documentation & Recognition_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Device Hierarchy_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[How to Collaborate with the AWS Agent_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[How to Interact with the Human Investigator_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Input Requirements_5]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Knowledge Base Schema_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Learning System (Continuous Improvement)_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Overview_5]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Pattern Matching for New Incidents_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Step 1 Collect the Error Event Data_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Step 2 Collect ALL Data in the Time Window_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Step 3 Collect Alarms and Events_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Step 4 Build the IS  IS NOT Matrix_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Step 5 Establish Baseline_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[The 8D Investigation Process_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[What to Extract_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Why This Matters_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[XML Configuration File Parsing_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[hermesskillsi-eightdSKILL]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -49,9 +49,3 @@ members: 32
 TABLE source_file, type FROM #community/Community_241
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
-
-## Top bridge nodes
-- [[OutputSchemaEnforcer]] - degree 14, connects to 1 community

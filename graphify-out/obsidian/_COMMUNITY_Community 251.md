@@ -1,46 +1,47 @@
 ---
 type: community
 cohesion: 0.06
-members: 31
+members: 32
 ---
 
 # Community 251
 
 **Cohesion:** 0.06 - loosely connected
-**Members:** 31 nodes
+**Members:** 32 nodes
 
 ## Members
-- [[Folder Structure_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[Linking_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[NOW ANALYZE THE FOLLOWING CODEBASE AND PRODUCE THE COMPLETE OBSIDIAN VAULT_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[OBSIDIAN VAULT RULES (Follow These Exactly)_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[OUTPUT FORMAT_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[REQUIRED NOTES — PRODUCE EVERY ONE OF THESE_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[SKILL_174]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[System Audit Vault (Obsidian)_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[Tags_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[YAML Frontmatter_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`00 - START HEREHome.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`00 - START HEREQuick Reference.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`00 - START HERESystem Overview.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`01 - ArchitectureArchitecture Overview.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`01 - ArchitectureData Flow.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`01 - ArchitectureShutdown & Recovery.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`01 - ArchitectureStartup Sequence.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`02 - ModulesFileName.md` — ONE PER SOURCE FILE_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`03 - ConfigurationConfigFile.md` — ONE PER CONFIG FILE_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`04 - Environment VariablesVAR_NAME.md` — ONE PER ENV VAR_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`05 - DependenciesAll Dependencies.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`05 - DependenciesPackageName.md` — ONE PER MAJOR DEPENDENCY_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`06 - Containers & ServicesContainerName.md` — ONE PER CONTAINERSERVICE_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`07 - Errors & TroubleshootingError Index.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`07 - Errors & TroubleshootingTroubleshooting Matrix.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`07 - Errors & TroubleshootingErrorName.md` — ONE PER ERROR CATEGORY_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`08 - RunbooksCrash Recovery.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`08 - RunbooksFirst Time Setup.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`08 - RunbooksRestart Procedure.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`09 - DiagramsFull System Flowchart.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
-- [[`09 - DiagramsStartup Flow Diagram.md`_2]] - document - docker/config/openclaw/skills/i-sav/SKILL.md
+- [[Action requires approval but none granted_1]] - document - skills/custom/securebrowser/SKILL.md
+- [[Browser timeout_2]] - document - skills/custom/securebrowser/SKILL.md
+- [[CAPTCHA detected_2]] - document - skills/custom/securebrowser/SKILL.md
+- [[Rate limit exceeded_1]] - document - skills/custom/securebrowser/SKILL.md
+- [[URL not in allowlist_2]] - document - skills/custom/securebrowser/SKILL.md
+- [[1. Always Specify Risk Level_1]] - document - skills/custom/securebrowser/SKILL.md
+- [[1Password Integration]] - document - skills/custom/securebrowser/SKILL.md
+- [[2. Use Allowlisting Liberally_1]] - document - skills/custom/securebrowser/SKILL.md
+- [[3. Take Screenshots for Audit Trail_1]] - document - skills/custom/securebrowser/SKILL.md
+- [[4. Handle CAPTCHAs Gracefully_1]] - document - skills/custom/securebrowser/SKILL.md
+- [[5. Never Extract Credentials_1]] - document - skills/custom/securebrowser/SKILL.md
+- [[Approval Integration_1]] - document - skills/custom/securebrowser/SKILL.md
+- [[Audit Logging_1]] - document - skills/custom/securebrowser/SKILL.md
+- [[Best Practices_4]] - document - skills/custom/securebrowser/SKILL.md
+- [[Click Element_1]] - document - skills/custom/securebrowser/SKILL.md
+- [[Core Security Principles_1]] - document - skills/custom/securebrowser/SKILL.md
+- [[Example Apple ID Creation (Semi-Automated)_1]] - document - skills/custom/securebrowser/SKILL.md
+- [[Extract Data_1]] - document - skills/custom/securebrowser/SKILL.md
+- [[Gateway Integration]] - document - skills/custom/securebrowser/SKILL.md
+- [[Integration with AgentShroud]] - document - skills/custom/securebrowser/SKILL.md
+- [[Limitations_2]] - document - skills/custom/securebrowser/SKILL.md
+- [[Navigate to URL_1]] - document - skills/custom/securebrowser/SKILL.md
+- [[Risk Levels_1]] - document - skills/custom/securebrowser/SKILL.md
+- [[SecureBrowser - Enterprise Secure Browser Automation]] - document - skills/custom/securebrowser/SKILL.md
+- [[Security Architecture_1]] - document - skills/custom/securebrowser/SKILL.md
+- [[Security Configuration_1]] - document - skills/custom/securebrowser/SKILL.md
+- [[Security Guarantees_2]] - document - skills/custom/securebrowser/SKILL.md
+- [[See Also]] - document - skills/custom/securebrowser/SKILL.md
+- [[Take Screenshot_1]] - document - skills/custom/securebrowser/SKILL.md
+- [[Troubleshooting_15]] - document - skills/custom/securebrowser/SKILL.md
+- [[Usage_111]] - document - skills/custom/securebrowser/SKILL.md
+- [[securebrowserSKILL]] - document - skills/custom/securebrowser/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

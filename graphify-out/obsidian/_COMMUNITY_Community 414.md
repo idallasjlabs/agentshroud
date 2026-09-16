@@ -1,36 +1,37 @@
 ---
 type: community
-cohesion: 0.11
-members: 21
+cohesion: 0.16
+members: 22
 ---
 
 # Community 414
 
-**Cohesion:** 0.11 - loosely connected
-**Members:** 21 nodes
+**Cohesion:** 0.16 - loosely connected
+**Members:** 22 nodes
 
 ## Members
-- [[1Password (op-proxy)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[Anthropic API]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[Approval Queue (human gate)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[Audit Ledger (SHA-256 hash only)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[Cron Scheduler (8 scheduled jobs)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[Execute Action (tool call  reply)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[GitHub API]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[HTTP CONNECT Proxy (domain allowlist)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[LLM Inference (OpenAI  Anthropic)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[MCP Inspector]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[OpenAI API]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[PII Sanitizer (Presidio  regex)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[Receive message  cron trigger]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[SSH Proxy]] - concept - docs/architecture/system-architecture.md
-- [[Telegram API]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[Telegram Input (@agentshroud_bot)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[Web UI Input (localhost18790)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[agentshroud-config volume (openclaw.json)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[iMessage Input (imsg-ssh bridge)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[ledger.db (90-day retention)]] - concept - docs/diagrams/images/diagram-07-data-flow.svg
-- [[ssh_proxy (approved hosts only)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
+- [[dot-test_allows_env_in_name()]] - code - gateway/tests/test_env_guard.py
+- [[dot-test_allows_natural_language_mixed_quotes()]] - code - gateway/tests/test_env_guard.py
+- [[dot-test_allows_natural_language_question()]] - code - gateway/tests/test_env_guard.py
+- [[dot-test_allows_natural_language_social_phrasing()]] - code - gateway/tests/test_env_guard.py
+- [[dot-test_allows_safe_command()]] - code - gateway/tests/test_env_guard.py
+- [[dot-test_blocks_dollar_env()]] - code - gateway/tests/test_env_guard.py
+- [[dot-test_blocks_env_pipe()]] - code - gateway/tests/test_env_guard.py
+- [[dot-test_blocks_printenv()_1]] - code - gateway/tests/test_env_guard.py
+- [[dot-test_blocks_proc_environ()]] - code - gateway/tests/test_env_guard.py
+- [[dot-test_blocks_proc_star_environ()]] - code - gateway/tests/test_env_guard.py
+- [[dot-test_clean_text_unchanged()]] - code - gateway/tests/test_env_guard.py
+- [[dot-test_scrubs_aws_key()]] - code - gateway/tests/test_env_guard.py
+- [[dot-test_scrubs_github_token()]] - code - gateway/tests/test_env_guard.py
+- [[dot-test_scrubs_multiple_keys()]] - code - gateway/tests/test_env_guard.py
+- [[dot-test_scrubs_openai_key()]] - code - gateway/tests/test_env_guard.py
+- [[Check if command execution should be allowed.      Args         cmd Command to]] - rationale - gateway/security/env_guard.py
+- [[Scrub API keys and sensitive patterns from text output.      Args         text]] - rationale - gateway/security/env_guard.py
+- [[TestCheckCommand]] - code - gateway/tests/test_env_guard.py
+- [[TestScrubOutput]] - code - gateway/tests/test_env_guard.py
+- [[check_command()]] - code - gateway/security/env_guard.py
+- [[scrub_output()]] - code - gateway/security/env_guard.py
+- [[test_env_guard.py]] - code - gateway/tests/test_env_guard.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -40,13 +41,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 117]]
-- 1 edge to [[_COMMUNITY_Community 372]]
-- 1 edge to [[_COMMUNITY_Community 597]]
-- 1 edge to [[_COMMUNITY_Community 514]]
-- 1 edge to [[_COMMUNITY_Community 412]]
+- 4 edges to [[_COMMUNITY_Alert Dispatcher & RBAC Reliability]]
 
 ## Top bridge nodes
-- [[Audit Ledger (SHA-256 hash only)]] - degree 7, connects to 3 communities
-- [[Approval Queue (human gate)]] - degree 3, connects to 1 community
-- [[ssh_proxy (approved hosts only)]] - degree 2, connects to 1 community
+- [[check_command()]] - degree 15, connects to 1 community
+- [[scrub_output()]] - degree 8, connects to 1 community

@@ -1,36 +1,36 @@
 ---
 type: community
-cohesion: 0.14
+cohesion: 0.10
 members: 21
 ---
 
 # Community 427
 
-**Cohesion:** 0.14 - loosely connected
+**Cohesion:** 0.10 - loosely connected
 **Members:** 21 nodes
 
 ## Members
-- [[_stamp_read()]] - code - docker/scripts/security-scheduler.sh
-- [[_stamp_write()]] - code - docker/scripts/security-scheduler.sh
-- [[alert_critical()]] - code - docker/scripts/security-entrypoint.sh
-- [[gateway-seccomp.json (Docker seccomp profile)]] - code - docker/seccomp/gateway-seccomp.json
-- [[gateway-start.sh]] - code - docker/scripts/gateway-start.sh
-- [[gateway-start.sh script]] - code - docker/scripts/gateway-start.sh
-- [[log()_1]] - code - docker/scripts/security-entrypoint.sh
-- [[log()_3]] - code - docker/scripts/security-report.sh
-- [[log()_2]] - code - docker/scripts/security-report-retention.sh
-- [[log()_5]] - code - docker/scripts/security-scheduler.sh
-- [[scan.sh]] - code - docker/scripts/scan.sh
-- [[scan.sh script]] - code - docker/scripts/scan.sh
-- [[security-entrypoint.sh]] - code - docker/scripts/security-entrypoint.sh
-- [[security-entrypoint.sh script]] - code - docker/scripts/security-entrypoint.sh
-- [[security-report-retention.sh]] - code - docker/scripts/security-report-retention.sh
-- [[security-report-retention.sh script]] - code - docker/scripts/security-report-retention.sh
-- [[security-report.sh]] - code - docker/scripts/security-report.sh
-- [[security-report.sh script]] - code - docker/scripts/security-report.sh
-- [[security-scan.sh (unified scan dispatcher)]] - code - docker/scripts/security-scan.sh
-- [[security-scheduler.sh]] - code - docker/scripts/security-scheduler.sh
-- [[security-scheduler.sh script]] - code - docker/scripts/security-scheduler.sh
+- [[1. Change Documentation_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
+- [[2. Testing Evidence_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
+- [[3. Backups & Rollback_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
+- [[4. Blast Radius_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
+- [[5. Observability_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
+- [[6. Security_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
+- [[7. Communication_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
+- [[8. Service Control Commands_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
+- [[Emergency Stop (P1 Incidents Only)_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
+- [[If Something Goes Wrong_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
+- [[Immediate (0–15 min)_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
+- [[Invoke Before_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
+- [[Pause Before Testing (Copy-Paste Ready)_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
+- [[Post-Deployment Verification_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
+- [[Pre-Deployment Checklist_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
+- [[Resume After Testing (MANDATORY)_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
+- [[Role_41]] - document - docker/config/hermes/skills/i-ps/SKILL.md
+- [[Short-Term (15 min – 24 hr)_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
+- [[Sign-Off_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
+- [[Skill Production Safety Checklist (PROD-SAFETY)_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
+- [[hermesskillsi-psSKILL]] - document - docker/config/hermes/skills/i-ps/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -38,10 +38,3 @@ members: 21
 TABLE source_file, type FROM #community/Community_427
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 46]]
-- 1 edge to [[_COMMUNITY_Community 137]]
-
-## Top bridge nodes
-- [[security-scan.sh (unified scan dispatcher)]] - degree 6, connects to 2 communities

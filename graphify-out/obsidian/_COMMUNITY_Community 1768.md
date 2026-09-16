@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Value Stream Mapping Skill]] - document - .agents/skills/i-value-stream-mapping/SKILL.md
+- [[Browser — Secure Browser Automation README]] - document - .agents/skills/i-browser/README.md
 
 ## Live Query (requires Dataview plugin)
 

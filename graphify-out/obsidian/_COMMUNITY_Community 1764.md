@@ -1,16 +1,17 @@
 ---
 type: community
 cohesion: 1.00
-members: 1
+members: 2
 ---
 
 # Community 1764
 
 **Cohesion:** 1.00 - tightly connected
-**Members:** 1 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[GSDE&G Skills Reference Guide_1]] - document - docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md
+- [[_resolve_model_size() — reads WHISPER_MODEL_SIZE env and validates]] - code - voice_gateway/stt.py
+- [[select_model_size() — pure AB model-size resolver]] - code - voice_gateway/stt.py
 
 ## Live Query (requires Dataview plugin)
 

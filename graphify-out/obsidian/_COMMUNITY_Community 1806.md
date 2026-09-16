@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[esp_log.h stub (playback state test)]] - code - firmware/voice-terminal/test/test_playback_state/stubs/esp_log.h
+- [[AgentShroud Badge Icon 60x60]] - image - branding/logos/variants/badge-60x60.png
 
 ## Live Query (requires Dataview plugin)
 

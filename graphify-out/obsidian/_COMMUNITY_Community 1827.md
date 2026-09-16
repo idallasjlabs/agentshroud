@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Token-reduction benchmark gated at 5,000 words]] - rationale - docker/config/hermes/skills/graphify/references/exports.md
+- [[dashboard__init__.py]] - code - gateway/dashboard/__init__.py
 
 ## Live Query (requires Dataview plugin)
 

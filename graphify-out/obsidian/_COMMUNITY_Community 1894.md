@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Drift Detection in Pipeline]] - code - gateway/tests/test_security_integration.py
+- [[Diagram 07 Data Flow]] - image - docs/diagrams/images/diagram-07-data-flow.svg
 
 ## Live Query (requires Dataview plugin)
 

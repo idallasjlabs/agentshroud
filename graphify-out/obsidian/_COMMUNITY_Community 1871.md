@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[AgentShroud LinkedIn Profile Image]] - image - branding/social/linkedin-profile-400x400.png
+- [[Neo4j Export  Push]] - concept - docker/config/openclaw/skills/graphify/references/exports.md
 
 ## Live Query (requires Dataview plugin)
 

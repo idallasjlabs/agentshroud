@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[AgentShroud Open Graph Preview Image]] - image - branding/social/open-graph-1200x630.png
+- [[Hyperedges Rule (max 3chunk)]] - concept - docker/config/openclaw/skills/graphify/references/extraction-spec.md
 
 ## Live Query (requires Dataview plugin)
 

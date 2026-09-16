@@ -10,28 +10,28 @@ members: 22
 **Members:** 22 nodes
 
 ## Members
-- [[AgentShroud Data Dictionary]] - document - docs/data/data-dictionary.md
-- [[Approval Decision Criteria]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[Approval Workflows]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[ApprovalRequest_5]] - document - docs/data/data-dictionary.md
-- [[AuditEntry]] - document - docs/data/data-dictionary.md
-- [[Configuration Entities]] - document - docs/data/data-dictionary.md
-- [[Configuration Setup]] - document - skills/openclaw/himalaya/SKILL.md
-- [[Core Audit Entities]] - document - docs/data/data-dictionary.md
-- [[DNSQuery_1]] - document - docs/data/data-dictionary.md
-- [[Data Classification]] - document - docs/data/data-dictionary.md
-- [[Data Retention Policies]] - document - docs/data/data-dictionary.md
-- [[InspectionResult_1]] - document - docs/data/data-dictionary.md
-- [[Network Security Entities]] - document - docs/data/data-dictionary.md
-- [[RateLimitBucket]] - document - docs/data/data-dictionary.md
-- [[Relationship Diagram]] - document - docs/data/data-dictionary.md
-- [[Runtime State Entities]] - document - docs/data/data-dictionary.md
-- [[Security Management Entities]] - document - docs/data/data-dictionary.md
-- [[SecurityFinding_1]] - document - docs/data/data-dictionary.md
-- [[SessionState]] - document - docs/data/data-dictionary.md
-- [[TrustLevel_3]] - document - docs/data/data-dictionary.md
-- [[URLAnalysisResult_1]] - document - docs/data/data-dictionary.md
-- [[data-dictionary]] - document - docs/data/data-dictionary.md
+- [[ADR-007 Zero-Config Security]] - concept - docs/architecture/adr/ADR-007-zero-config-security.md
+- [[AgentShroud Deployment Architecture]] - document - docs/architecture/deployment-diagram.md
+- [[Apple Containers (macOS)]] - document - docs/architecture/deployment-diagram.md
+- [[Cloud Provider Secrets]] - document - docs/architecture/deployment-diagram.md
+- [[DNS Routing Configuration]] - document - docs/architecture/deployment-diagram.md
+- [[Default Port Allocation]] - document - docs/architecture/deployment-diagram.md
+- [[Deployment Validation]] - document - docs/architecture/deployment-diagram.md
+- [[Docker Runtime]] - document - docs/architecture/deployment-diagram.md
+- [[Docker Secrets]] - document - docs/architecture/deployment-diagram.md
+- [[HashiCorp Vault Integration]] - document - docs/architecture/deployment-diagram.md
+- [[Multi-Instance Support]] - document - docs/architecture/deployment-diagram.md
+- [[Multi-Runtime Support_1]] - document - docs/architecture/deployment-diagram.md
+- [[Network Topology_2]] - document - docs/architecture/deployment-diagram.md
+- [[Overview_15]] - document - docs/architecture/deployment-diagram.md
+- [[Persistent Storage Architecture]] - document - docs/architecture/deployment-diagram.md
+- [[Podman Support]] - document - docs/architecture/deployment-diagram.md
+- [[Port Mappings and Auto-Detection]] - document - docs/architecture/deployment-diagram.md
+- [[Secrets Management Integration]] - document - docs/architecture/deployment-diagram.md
+- [[Three-Network Architecture]] - document - docs/architecture/deployment-diagram.md
+- [[Volume Mounts and Secrets Management]] - document - docs/architecture/deployment-diagram.md
+- [[Zero-Configuration Deployment]] - document - docs/architecture/deployment-diagram.md
+- [[deployment-diagram]] - document - docs/architecture/deployment-diagram.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -41,9 +41,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 426]]
-- 1 edge to [[_COMMUNITY_Community 477]]
+- 1 edge to [[_COMMUNITY_Community 420]]
 
 ## Top bridge nodes
-- [[Approval Workflows]] - degree 3, connects to 1 community
-- [[Configuration Setup]] - degree 2, connects to 1 community
+- [[AgentShroud Deployment Architecture]] - degree 8, connects to 1 community

@@ -1,50 +1,51 @@
 ---
 type: community
-cohesion: 0.09
-members: 35
+cohesion: 0.06
+members: 36
 ---
 
 # Community 207
 
-**Cohesion:** 0.09 - loosely connected
-**Members:** 35 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 36 nodes
 
 ## Members
-- [[.__init__()_48]] - code - gateway/runtime/podman_engine.py
-- [[._cmd()_2]] - code - gateway/runtime/podman_engine.py
-- [[._detect_compose()]] - code - gateway/runtime/podman_engine.py
-- [[.build()_3]] - code - gateway/runtime/podman_engine.py
-- [[.compose_down()_3]] - code - gateway/runtime/podman_engine.py
-- [[.compose_up()_3]] - code - gateway/runtime/podman_engine.py
-- [[.exec()_3]] - code - gateway/runtime/podman_engine.py
-- [[.generate_systemd()]] - code - gateway/runtime/podman_engine.py
-- [[.health_check()_5]] - code - gateway/runtime/podman_engine.py
-- [[.inspect()_3]] - code - gateway/runtime/podman_engine.py
-- [[.logs()_3]] - code - gateway/runtime/podman_engine.py
-- [[.network_create()_3]] - code - gateway/runtime/podman_engine.py
-- [[.network_rm()_3]] - code - gateway/runtime/podman_engine.py
-- [[.pause()_3]] - code - gateway/runtime/podman_engine.py
-- [[.ps()_3]] - code - gateway/runtime/podman_engine.py
-- [[.pull()_3]] - code - gateway/runtime/podman_engine.py
-- [[.push()_3]] - code - gateway/runtime/podman_engine.py
-- [[.rm()_3]] - code - gateway/runtime/podman_engine.py
-- [[.run()_3]] - code - gateway/runtime/podman_engine.py
-- [[.setup_method()_24]] - code - gateway/tests/test_runtime_engines.py
-- [[.stop()_8]] - code - gateway/runtime/podman_engine.py
-- [[.test_generate_systemd()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_health_check()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_ps_json()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_run_selinux_volumes()]] - code - gateway/tests/test_runtime_engines.py
-- [[.unpause()_3]] - code - gateway/runtime/podman_engine.py
-- [[.volume_create()_3]] - code - gateway/runtime/podman_engine.py
-- [[.volume_rm()_3]] - code - gateway/runtime/podman_engine.py
-- [[Any_28]] - code - gateway/runtime/podman_engine.py
-- [[Container engine backed by the Podman CLI.]] - rationale - gateway/runtime/podman_engine.py
-- [[ContainerInfo_3]] - code - gateway/runtime/podman_engine.py
-- [[Detect podman compose or podman-compose.]] - rationale - gateway/runtime/podman_engine.py
-- [[Generate a systemd unit file for a container.]] - rationale - gateway/runtime/podman_engine.py
-- [[PodmanEngine]] - code - gateway/runtime/podman_engine.py
-- [[TestPodmanEngine]] - code - gateway/tests/test_runtime_engines.py
+- [[1. Executive Summary]] - document - docs/testing/test-plan.md
+- [[10. Test Reporting]] - document - docs/testing/test-plan.md
+- [[10.1 Test Metrics Dashboard]] - document - docs/testing/test-plan.md
+- [[10.2 Release Readiness Criteria]] - document - docs/testing/test-plan.md
+- [[11. Test Environment Maintenance]] - document - docs/testing/test-plan.md
+- [[11.1 Environment Health Monitoring]] - document - docs/testing/test-plan.md
+- [[2. Test Strategy]] - document - docs/testing/test-plan.md
+- [[2.1 Testing Philosophy]] - document - docs/testing/test-plan.md
+- [[2.2 Test Levels]] - document - docs/testing/test-plan.md
+- [[3. Test Environments]] - document - docs/testing/test-plan.md
+- [[3.1 Development Environment]] - document - docs/testing/test-plan.md
+- [[3.2 Staging Environment (Pi)]] - document - docs/testing/test-plan.md
+- [[3.3 CICD Environment]] - document - docs/testing/test-plan.md
+- [[4. Test Categories]] - document - docs/testing/test-plan.md
+- [[4.1 Security Modules Testing]] - document - docs/testing/test-plan.md
+- [[4.2 Core System Testing]] - document - docs/testing/test-plan.md
+- [[4.3 Infrastructure Testing]] - document - docs/testing/test-plan.md
+- [[5. Test Execution]] - document - docs/testing/test-plan.md
+- [[5.1 Test Automation Framework]] - document - docs/testing/test-plan.md
+- [[5.2 Test Execution Schedule]] - document - docs/testing/test-plan.md
+- [[6. Test Coverage]] - document - docs/testing/test-plan.md
+- [[6.1 Coverage Targets]] - document - docs/testing/test-plan.md
+- [[6.2 Current Test Metrics (v0.9.0)]] - document - docs/testing/test-plan.md
+- [[6.3 Critical Path Coverage]] - document - docs/testing/test-plan.md
+- [[7. Security Testing]] - document - docs/testing/test-plan.md
+- [[7.1 Vulnerability Assessment]] - document - docs/testing/test-plan.md
+- [[7.2 Threat Model Validation]] - document - docs/testing/test-plan.md
+- [[8. Performance Benchmarks]] - document - docs/testing/test-plan.md
+- [[8.1 Latency Requirements]] - document - docs/testing/test-plan.md
+- [[8.2 Resource Utilization]] - document - docs/testing/test-plan.md
+- [[9. Regression Testing]] - document - docs/testing/test-plan.md
+- [[9.1 Regression Strategy]] - document - docs/testing/test-plan.md
+- [[9.2 Regression Triggers]] - document - docs/testing/test-plan.md
+- [[AgentShroud v0.9.0]] - document - docs/testing/test-plan.md
+- [[Test Plan]] - document - docs/testing/test-plan.md
+- [[test-plan]] - document - docs/testing/test-plan.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -52,23 +53,3 @@ members: 35
 TABLE source_file, type FROM #community/Community_207
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 8 edges to [[_COMMUNITY_Community 348]]
-- 6 edges to [[_COMMUNITY_Community 329]]
-- 3 edges to [[_COMMUNITY_Community 204]]
-- 2 edges to [[_COMMUNITY_Community 849]]
-- 2 edges to [[_COMMUNITY_Community 320]]
-- 1 edge to [[_COMMUNITY_Community 325]]
-- 1 edge to [[_COMMUNITY_Community 919]]
-- 1 edge to [[_COMMUNITY_Community 447]]
-- 1 edge to [[_COMMUNITY_Community 365]]
-- 1 edge to [[_COMMUNITY_Community 1060]]
-- 1 edge to [[_COMMUNITY_Community 453]]
-- 1 edge to [[_COMMUNITY_Community 645]]
-
-## Top bridge nodes
-- [[PodmanEngine]] - degree 45, connects to 11 communities
-- [[TestPodmanEngine]] - degree 11, connects to 4 communities
-- [[Any_28]] - degree 3, connects to 2 communities
-- [[ContainerInfo_3]] - degree 3, connects to 2 communities

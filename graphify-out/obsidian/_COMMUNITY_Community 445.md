@@ -10,26 +10,26 @@ members: 20
 **Members:** 20 nodes
 
 ## Members
-- [[1. Code Audit]] - document - docs/claude-security-audit-prompt.md
-- [[2. Verify Open Findings]] - document - docs/claude-security-audit-prompt.md
-- [[3. Test Each Module]] - document - docs/claude-security-audit-prompt.md
-- [[4. Collaborator Isolation]] - document - docs/claude-security-audit-prompt.md
-- [[5. Update the Module Matrix]] - document - docs/claude-security-audit-prompt.md
-- [[Additional Security Components]] - document - docs/claude-security-audit-prompt.md
-- [[AgentShroud v0.8.0 — Full Security & Functionality Audit]] - document - docs/claude-security-audit-prompt.md
-- [[Architecture_4]] - document - docs/claude-security-audit-prompt.md
-- [[Collaborator Access Control Tests]] - document - docs/claude-security-audit-prompt.md
-- [[Context for Claude]] - document - docs/claude-security-audit-prompt.md
-- [[Fixed Findings]] - document - docs/claude-security-audit-prompt.md
-- [[Key Files to Review]] - document - docs/claude-security-audit-prompt.md
-- [[Known Findings (Blue Team Assessment + Steve Hay's Review)]] - document - docs/claude-security-audit-prompt.md
-- [[Open Findings]] - document - docs/claude-security-audit-prompt.md
-- [[Output Format_39]] - document - docs/claude-security-audit-prompt.md
-- [[Steve Hay's Specific Findings]] - document - docs/claude-security-audit-prompt.md
-- [[The 34 Security Modules]] - document - docs/claude-security-audit-prompt.md
-- [[What is AgentShroud_1]] - document - docs/claude-security-audit-prompt.md
-- [[Your Tasks]] - document - docs/claude-security-audit-prompt.md
-- [[claude-security-audit-prompt]] - document - docs/claude-security-audit-prompt.md
+- [[ADR-001-transparent-proxy-vs-agent-modification]] - document - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
+- [[ADR-001 Transparent Proxy vs Agent Modification]] - document - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
+- [[Agent Modification Cons]] - document - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
+- [[Agent Modification Pros]] - document - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
+- [[Consequences_1]] - document - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
+- [[Context_3]] - document - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
+- [[Decision_3]] - document - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
+- [[Implementation Status]] - document - browser-extension/README.md
+- [[Key Considerations]] - document - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
+- [[Mitigation Strategies]] - document - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
+- [[Negative Consequences]] - document - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
+- [[Positive Consequences]] - document - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
+- [[Risk Assessment]] - document - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
+- [[Status_2]] - document - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
+- [[Step 1 Update Gateway to Block Credentials in Telegram]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
+- [[Step 2 Add Command Restrictions]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
+- [[Step 3 Update agentshroud.yaml]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
+- [[Step 4 Test the Protection]] - document - docs/security/CREDENTIAL-SECURITY-POLICY.md
+- [[Transparent Proxy Cons]] - document - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
+- [[Transparent Proxy Pros]] - document - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,3 +37,10 @@ members: 20
 TABLE source_file, type FROM #community/Community_445
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 568]]
+- 1 edge to [[_COMMUNITY_Community 509]]
+
+## Top bridge nodes
+- [[Implementation Status]] - degree 7, connects to 2 communities

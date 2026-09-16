@@ -1,49 +1,50 @@
 ---
 type: community
-cohesion: 0.07
-members: 34
+cohesion: 0.06
+members: 35
 ---
 
 # Community 213
 
-**Cohesion:** 0.07 - loosely connected
-**Members:** 34 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 35 nodes
 
 ## Members
-- [[2026-08-24 incident history (for context, not action items)]] - document - docker/config/openclaw/cron/JOBS-REFERENCE.md
-- [[AgentShroud Branded Report Template]] - code - docker/config/openclaw/cron/templates/report-template.html
-- [[AgentShroud Job Schedule Dashboard]] - document - docs/job-schedule.html
-- [[AgentShroud Weekly Summary job]] - concept - docker/config/hermes/cron/jobs.yaml
-- [[Brand colors reference]] - document - docker/config/openclaw/cron/templates/html-report-instructions.md
-- [[Canonical storage]] - document - docker/config/openclaw/cron/templates/html-report-instructions.md
-- [[Collaborator Daily Digest Prompt]] - document - docker/config/openclaw/cron/prompts/collaborator-daily-digest.txt
-- [[Collaborator Report (Evening) Prompt]] - document - docker/config/openclaw/cron/prompts/collaborator-report-evening.txt
-- [[Collaborator Report (Morning) Prompt]] - document - docker/config/openclaw/cron/prompts/collaborator-report-morning.txt
-- [[Dual-Surface Report Delivery (Email HTML  Telegram Markdown)]] - rationale - docker/config/openclaw/cron/templates/html-report-instructions.md
-- [[HTML version (for email)]] - document - docker/config/openclaw/cron/templates/html-report-instructions.md
-- [[How to build it]] - document - docker/config/openclaw/cron/templates/html-report-instructions.md
-- [[How to recreate a job_1]] - document - docker/config/openclaw/cron/JOBS-REFERENCE.md
-- [[JOBS-REFERENCE_1]] - document - docker/config/openclaw/cron/JOBS-REFERENCE.md
-- [[Job index_1]] - document - docker/config/openclaw/cron/JOBS-REFERENCE.md
-- [[Known drift from `dockerconfigopenclawcronjobs.json`]] - document - docker/config/openclaw/cron/JOBS-REFERENCE.md
-- [[Markdown version (for Telegram + archival)]] - document - docker/config/openclaw/cron/templates/html-report-instructions.md
-- [[OpenClaw Cron Jobs Reference & Recreation Guide]] - document - docker/config/openclaw/cron/JOBS-REFERENCE.md
-- [[Quick checklist]] - document - docker/config/openclaw/cron/templates/html-report-instructions.md
-- [[Report Delivery Format Instructions]] - document - docker/config/openclaw/cron/templates/html-report-instructions.md
-- [[Rules_18]] - document - docker/config/openclaw/cron/templates/html-report-instructions.md
-- [[Sandbox Container Reaper]] - rationale - docker/config/openclaw/cron/JOBS-REFERENCE.md
-- [[Sending via email]] - document - docker/config/openclaw/cron/templates/html-report-instructions.md
-- [[Shared dependencies (must exist before dependent jobs run)]] - document - docker/config/openclaw/cron/JOBS-REFERENCE.md
-- [[Source Verification Policy]] - rationale - docker/config/openclaw/cron/templates/html-report-instructions.md
-- [[Source Verification Policy (MANDATORY)]] - document - docker/config/openclaw/cron/templates/html-report-instructions.md
-- [[Stale Cron Session Claim Cleanup]] - rationale - docker/config/openclaw/cron/JOBS-REFERENCE.md
-- [[Stdin-Pipe Deploy Pattern (never docker cp)]] - rationale - docker/config/openclaw/cron/JOBS-REFERENCE.md
-- [[Telegram delivery rules (from AGENTS.md)]] - document - docker/config/openclaw/cron/templates/html-report-instructions.md
-- [[Verification checklist (run before saving any report)]] - document - docker/config/openclaw/cron/templates/html-report-instructions.md
-- [[Weekly Kaizen Review Prompt (Hermes)]] - document - docker/config/hermes/cron/prompts/weekly-kaizen-review.txt
-- [[generate-job-schedule.py_1]] - code - docs/job-schedule.html
-- [[html-report-instructions]] - document - docker/config/openclaw/cron/templates/html-report-instructions.md
-- [[start-agentshroud.sh (OpenClaw startup script)]] - code - docker/scripts/start-agentshroud.sh
+- [[dot-__init__()_97]] - code - gateway/security/output_canary.py
+- [[dot-setup_method()_24]] - code - gateway/tests/test_output_canary.py
+- [[dot-test_canary_cleanup()]] - code - gateway/tests/test_output_canary.py
+- [[dot-test_canary_generation_per_session()]] - code - gateway/tests/test_output_canary.py
+- [[dot-test_clean_response_passes()]] - code - gateway/tests/test_output_canary.py
+- [[dot-test_detection_patterns_creation()]] - code - gateway/tests/test_output_canary.py
+- [[dot-test_different_sessions_get_different_canaries()]] - code - gateway/tests/test_output_canary.py
+- [[dot-test_incident_logging()]] - code - gateway/tests/test_output_canary.py
+- [[dot-test_invisible_canary_creation()]] - code - gateway/tests/test_output_canary.py
+- [[dot-test_leaked_canary_detected_in_response()]] - code - gateway/tests/test_output_canary.py
+- [[dot-test_partial_canary_match_handling()]] - code - gateway/tests/test_output_canary.py
+- [[dot-test_session_without_canary_returns_safe_result()]] - code - gateway/tests/test_output_canary.py
+- [[dot-test_status_reporting()_1]] - code - gateway/tests/test_output_canary.py
+- [[dot-test_unicode_normalization_resistance()]] - code - gateway/tests/test_output_canary.py
+- [[dot-test_zero_width_character_detection()]] - code - gateway/tests/test_output_canary.py
+- [[CanaryConfig_1]] - code - gateway/security/output_canary.py
+- [[Configuration for the Output Canary System.]] - rationale - gateway/security/output_canary.py
+- [[Initialize the Output Canary System.          Args             config Optional]] - rationale - gateway/security/output_canary.py
+- [[Set up test fixtures._1]] - rationale - gateway/tests/test_output_canary.py
+- [[Test canary status reporting for dashboard.]] - rationale - gateway/tests/test_output_canary.py
+- [[Test cases for the Output Canary System.]] - rationale - gateway/tests/test_output_canary.py
+- [[Test cleanup of expired canaries.]] - rationale - gateway/tests/test_output_canary.py
+- [[Test detection of canaries with zero-width characters.]] - rationale - gateway/tests/test_output_canary.py
+- [[Test handling of partial canary matches.]] - rationale - gateway/tests/test_output_canary.py
+- [[Test that canaries work with different Unicode representations.]] - rationale - gateway/tests/test_output_canary.py
+- [[Test that clean responses pass without detection.]] - rationale - gateway/tests/test_output_canary.py
+- [[Test that detection patterns are created correctly.]] - rationale - gateway/tests/test_output_canary.py
+- [[Test that different sessions get different canaries.]] - rationale - gateway/tests/test_output_canary.py
+- [[Test that incidents are logged when enabled.]] - rationale - gateway/tests/test_output_canary.py
+- [[Test that invisible canaries are created properly.]] - rationale - gateway/tests/test_output_canary.py
+- [[Test that leaked canaries are detected in responses.]] - rationale - gateway/tests/test_output_canary.py
+- [[Test that sessions without canaries return safe results.]] - rationale - gateway/tests/test_output_canary.py
+- [[Test that unique canaries are generated per session.]] - rationale - gateway/tests/test_output_canary.py
+- [[TestOutputCanary]] - code - gateway/tests/test_output_canary.py
+- [[test_output_canary.py]] - code - gateway/tests/test_output_canary.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -53,12 +54,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Community 521]]
-- 1 edge to [[_COMMUNITY_Community 395]]
-- 1 edge to [[_COMMUNITY_Community 282]]
-- 1 edge to [[_COMMUNITY_Community 798]]
+- 6 edges to [[_COMMUNITY_Alert Dispatcher & RBAC Reliability]]
+- 1 edge to [[_COMMUNITY_Community 890]]
 
 ## Top bridge nodes
-- [[AgentShroud Weekly Summary job]] - degree 6, connects to 2 communities
-- [[OpenClaw Cron Jobs Reference & Recreation Guide]] - degree 20, connects to 1 community
-- [[Stdin-Pipe Deploy Pattern (never docker cp)]] - degree 2, connects to 1 community
+- [[TestOutputCanary]] - degree 18, connects to 1 community
+- [[CanaryConfig_1]] - degree 8, connects to 1 community
+- [[dot-setup_method()_24]] - degree 4, connects to 1 community
+- [[dot-test_incident_logging()]] - degree 4, connects to 1 community
+- [[dot-test_partial_canary_match_handling()]] - degree 4, connects to 1 community

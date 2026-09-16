@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Self-Written Whisper Domain-Hint Prompt]] - concept - docker/config/openclaw/skills/graphify/references/transcribe.md
+- [[Cron Collaborator Report - Evening]] - document - docker/bots/openclaw/config/cron/jobs.json
 
 ## Live Query (requires Dataview plugin)
 

@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[PostgreSQL RDS (fe-gsdl-poc-database)]] - concept - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[AgentShroud Presentation Content Slide Template]] - image - branding/presentation/content-slide-template-1920x1080.png
 
 ## Live Query (requires Dataview plugin)
 

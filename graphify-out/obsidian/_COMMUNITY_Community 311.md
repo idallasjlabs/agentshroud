@@ -10,33 +10,33 @@ members: 27
 **Members:** 27 nodes
 
 ## Members
-- [[1. Accomplishments This Phase_3]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[2. Security Value Audit_3]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[3. Remaining Work — Prioritized by Value_3]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[4. Risks & Gaps_3]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[4. Risks & Gaps — Critical Security Concerns]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[5. Merge Readiness Assessment]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[Basic Test Infrastructure (⚠️ PARTIAL)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[Conclusion_1]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[Core Security Pipeline Integration (✅ DELIVERED)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[Critical Risks (Must Address Before Merge)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[Design Concerns]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[Estimated Fix Time 4-6 hours]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[Executive Summary_2]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[Files Modified (8 files, 167 insertions, 18 deletions)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[Medium Risks (Address in Next Phase)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[P0 - Critical Security Gaps (BLOCK MERGE)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[P1 - High-Value Security Enhancements (NEXT PHASE)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[P2 - Feature Completeness (FUTURE PHASES)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[Phase Review P0 — Core Pipeline Wiring]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[Security Configuration Hardening (✅ DELIVERED)]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[phase-review-p0-2026-02-23]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[❌ NOT READY FOR MERGE]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[🔴 HIGH RISK — Immediate Attention Required]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[🔴 POTENTIAL SECURITY THEATER]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[🟡 AREAS REQUIRING VALIDATION]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
-- [[🟢 LOW RISK — Future Enhancement]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[🟢 GENUINE SECURITY VALUE]] - document - docs/planning/reviews/phase-review-p0-2026-02-23.md
+- [[401 Unauthorized_2]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[CalendarContacts not found_1]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Connection timeout_2]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Add Contact_1]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Calendar Operations_2]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Configuration_5]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Contact Operations_1]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Create Event_2]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Create Note_1]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Delete Event_2]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[List Contacts_1]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[List Events_2]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[List Messages_1]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[List Notes_1]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Mail Operations_1]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Notes Operations_1]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Search Contacts_1]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Search Mail_1]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Search Notes_1]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Security_5]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Send Email_1]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Setup_2]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Troubleshooting_20]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Update Contact_1]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[Update Event_2]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[iCloud Services_2]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[openclawskillsi-icloudSKILL]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -44,11 +44,3 @@ members: 27
 TABLE source_file, type FROM #community/Community_311
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 133]]
-- 1 edge to [[_COMMUNITY_Community 520]]
-
-## Top bridge nodes
-- [[Phase Review P0 — Core Pipeline Wiring]] - degree 10, connects to 2 communities
-- [[4. Risks & Gaps — Critical Security Concerns]] - degree 4, connects to 1 community

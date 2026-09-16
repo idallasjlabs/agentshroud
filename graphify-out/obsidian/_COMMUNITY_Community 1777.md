@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[__init__.py_5]] - code - gateway/ingest_api/__init__.py
+- [[Generic AI Agent Integration (HTTP Proxy Mode)]] - document - docs/api/integration-guide.md
 
 ## Live Query (requires Dataview plugin)
 

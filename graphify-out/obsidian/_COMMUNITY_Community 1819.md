@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[SecurityPipeline.process_outbound]] - code - gateway/proxy/pipeline.py
+- [[AgentShroud trademark notice (USPTO 99728633)]] - concept - CHANGELOG.md
 
 ## Live Query (requires Dataview plugin)
 

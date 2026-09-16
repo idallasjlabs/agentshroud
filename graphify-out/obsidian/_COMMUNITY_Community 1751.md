@@ -1,16 +1,17 @@
 ---
 type: community
 cohesion: 1.00
-members: 1
+members: 2
 ---
 
 # Community 1751
 
 **Cohesion:** 1.00 - tightly connected
-**Members:** 1 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[browser-fetch package.json]] - document - docker/config/hermes/skills/i-browser/package.json
+- [[dot-test_ollama_tools_unsupported_error_is_sanitized()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Raw model capability errors should be rewritten to actionable guidance.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -18,3 +19,11 @@ members: 1
 TABLE source_file, type FROM #community/Community_1751
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 93]]
+- 1 edge to [[_COMMUNITY_Community 85]]
+- 1 edge to [[_COMMUNITY_Community 69]]
+
+## Top bridge nodes
+- [[dot-test_ollama_tools_unsupported_error_is_sanitized()]] - degree 4, connects to 3 communities

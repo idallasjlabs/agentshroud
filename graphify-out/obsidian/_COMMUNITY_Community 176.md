@@ -1,53 +1,54 @@
 ---
 type: community
-cohesion: 0.10
-members: 38
+cohesion: 0.07
+members: 39
 ---
 
 # Community 176
 
-**Cohesion:** 0.10 - loosely connected
-**Members:** 38 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 39 nodes
 
 ## Members
-- [[FR7 Resource Availability]] - concept - docs/compliance/iec-62443-matrix.md
-- [[OpenClaw message content is a list of blocks (texttool_usetool_result...);]] - rationale - scripts/export-bot-conversations.py
-- [[Parse --since into a UTC-aware datetime. Accepts 'YYYY-MM-DD' or     'YYYY-MM-DD]] - rationale - scripts/export-bot-conversations.py
-- [[Parse --since into a UTC-aware datetime. Accepts 'YYYY-MM-DD' or     'YYYY-MM-DD_1]] - rationale - scripts/export-email-reports.py
-- [[Parse --since into a UTC-aware datetime. Accepts 'YYYY-MM-DD' or     'YYYY-MM-DD_2]] - rationale - scripts/export-telegram-history.py
-- [[Path_42]] - code - scripts/export-bot-conversations.py
-- [[Path_43]] - code - scripts/export-email-reports.py
-- [[Path_44]] - code - scripts/export-telegram-history.py
-- [[Read a file out of a container via `exec cat` rather than `docker cp` —     on t]] - rationale - scripts/export-bot-conversations.py
-- [[Why exec cat replaced docker cp for reading container files]] - rationale - scripts/export-bot-conversations.py
-- [[Why report .md source files stand in for a missing sent-mail ledger]] - rationale - scripts/export-email-reports.py
-- [[_docker_read_file()]] - code - scripts/export-bot-conversations.py
-- [[_extract_text()]] - code - scripts/export-bot-conversations.py
-- [[_list_report_files()]] - code - scripts/export-email-reports.py
-- [[_parse_since()]] - code - scripts/export-bot-conversations.py
-- [[_parse_since()_1]] - code - scripts/export-email-reports.py
-- [[_parse_since()_2]] - code - scripts/export-telegram-history.py
-- [[_report_date()]] - code - scripts/export-email-reports.py
-- [[_require_env()]] - code - scripts/export-telegram-history.py
-- [[_serialize()]] - code - scripts/export-telegram-history.py
-- [[agentshroud-openclaw bot container]] - concept - scripts/backup-bot-memory.sh
-- [[backup-bot-memory.sh]] - code - scripts/backup-bot-memory.sh
-- [[backup-bot-memory.sh script]] - code - scripts/backup-bot-memory.sh
-- [[datetime_6]] - code - scripts/export-bot-conversations.py
-- [[datetime_7]] - code - scripts/export-email-reports.py
-- [[datetime_8]] - code - scripts/export-telegram-history.py
-- [[disaster-recovery-backup.sh]] - code - scripts/disaster-recovery-backup.sh
-- [[disaster-recovery-backup.sh script]] - code - scripts/disaster-recovery-backup.sh
-- [[export()]] - code - scripts/export-telegram-history.py
-- [[export-bot-conversations.py]] - code - scripts/export-bot-conversations.py
-- [[export-email-reports.py]] - code - scripts/export-email-reports.py
-- [[export-telegram-history.py]] - code - scripts/export-telegram-history.py
-- [[export_bot()]] - code - scripts/export-email-reports.py
-- [[export_hermes()]] - code - scripts/export-bot-conversations.py
-- [[export_openclaw()]] - code - scripts/export-bot-conversations.py
-- [[main()_16]] - code - scripts/export-bot-conversations.py
-- [[main()_17]] - code - scripts/export-email-reports.py
-- [[main()_18]] - code - scripts/export-telegram-history.py
+- [[A connection-level error (not a statustimeout) also falls back to the trouble-…]] - rationale - gateway/tests/test_voice_gateway.py
+- [[A read-timeout (worst-case latency) is still recorded, then falls back.]] - rationale - gateway/tests/test_voice_latency_guard.py
+- [[A turn exceeding the soft threshold is flagged as an outlier.]] - rationale - gateway/tests/test_voice_latency_guard.py
+- [[A turn under the soft threshold is recorded as a non-outlier.]] - rationale - gateway/tests/test_voice_latency_guard.py
+- [[Build the ``metadata`` dict attached to a voice ``forward`` request. Default…]] - rationale - voice_gateway/server.py
+- [[DEFAULT OFF forwardstream body carries NO metadata key — byte-for-byte legacy]] - rationale - gateway/tests/test_voice_latency_guard.py
+- [[DEFAULT OFF no_memory=False → empty metadata (request unchanged).]] - rationale - gateway/tests/test_voice_latency_guard.py
+- [[Emit a structured per-turn latency record for a voice ``forward`` call.…]] - rationale - voice_gateway/server.py
+- [[Exactly at the threshold is NOT an outlier (strict , not =).]] - rationale - gateway/tests/test_voice_latency_guard.py
+- [[Mock httpx.Response usable as the yield value of a mocked     AsyncClient.stream]] - rationale - gateway/tests/test_voice_latency_guard.py
+- [[Normal (sub-threshold) turns log at INFO, not WARNING.]] - rationale - gateway/tests/test_voice_latency_guard.py
+- [[ON forwardstream body carries metadata={no_memory True}.]] - rationale - gateway/tests/test_voice_latency_guard.py
+- [[ON no_memory=True → {no_memory True} ephemeral tag.]] - rationale - gateway/tests/test_voice_latency_guard.py
+- [[Outliers log at WARNING; normal turns do not.]] - rationale - gateway/tests/test_voice_latency_guard.py
+- [[Route a voice utterance to a proxied agent via the AgentShroud gateway's POST…]] - rationale - voice_gateway/server.py
+- [[The module-level default flag is OFF unless VG_VOICE_NO_MEMORY is set.]] - rationale - gateway/tests/test_voice_latency_guard.py
+- [[When soft_threshold_s is omitted it is read from the module config at call time.]] - rationale - gateway/tests/test_voice_latency_guard.py
+- [[_call_agent_stream emits a latency record on the success path.]] - rationale - gateway/tests/test_voice_latency_guard.py
+- [[_call_agent_stream()]] - code - voice_gateway/server.py
+- [[_mock_stream_resp()_1]] - code - gateway/tests/test_voice_latency_guard.py
+- [[_record_turn_latency()]] - code - voice_gateway/server.py
+- [[_sse_body()_1]] - code - gateway/tests/test_voice_latency_guard.py
+- [[_voice_forward_metadata()]] - code - voice_gateway/server.py
+- [[mock_stream()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_call_agent_default_body_has_no_metadata()]] - code - gateway/tests/test_voice_latency_guard.py
+- [[test_call_agent_no_memory_on_adds_ephemeral_tag()]] - code - gateway/tests/test_voice_latency_guard.py
+- [[test_call_agent_records_latency_on_read_timeout()]] - code - gateway/tests/test_voice_latency_guard.py
+- [[test_call_agent_records_latency_on_success()]] - code - gateway/tests/test_voice_latency_guard.py
+- [[test_call_agent_stream_generic_http_error_falls_back()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_record_turn_latency_boundary_is_not_outlier()]] - code - gateway/tests/test_voice_latency_guard.py
+- [[test_record_turn_latency_default_threshold_from_module()]] - code - gateway/tests/test_voice_latency_guard.py
+- [[test_record_turn_latency_normal_logs_info()]] - code - gateway/tests/test_voice_latency_guard.py
+- [[test_record_turn_latency_normal_not_outlier()]] - code - gateway/tests/test_voice_latency_guard.py
+- [[test_record_turn_latency_outlier_logs_warning()]] - code - gateway/tests/test_voice_latency_guard.py
+- [[test_record_turn_latency_over_threshold_is_outlier()]] - code - gateway/tests/test_voice_latency_guard.py
+- [[test_voice_forward_metadata_default_off_is_empty()]] - code - gateway/tests/test_voice_latency_guard.py
+- [[test_voice_forward_metadata_module_default_is_off()]] - code - gateway/tests/test_voice_latency_guard.py
+- [[test_voice_forward_metadata_on_sets_no_memory_tag()]] - code - gateway/tests/test_voice_latency_guard.py
+- [[test_voice_latency_guard.py]] - code - gateway/tests/test_voice_latency_guard.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -57,8 +58,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 347]]
-- 1 edge to [[_COMMUNITY_Community 137]]
+- 8 edges to [[_COMMUNITY_Community 47]]
+- 5 edges to [[_COMMUNITY_Community 122]]
+- 2 edges to [[_COMMUNITY_Voice Gateway Test Fixtures]]
+- 1 edge to [[_COMMUNITY_Voice Gateway Routing Tests]]
 
 ## Top bridge nodes
-- [[FR7 Resource Availability]] - degree 3, connects to 2 communities
+- [[_call_agent_stream()]] - degree 18, connects to 3 communities
+- [[test_call_agent_stream_generic_http_error_falls_back()]] - degree 7, connects to 3 communities
+- [[test_voice_latency_guard.py]] - degree 19, connects to 1 community
+- [[_record_turn_latency()]] - degree 10, connects to 1 community
+- [[_voice_forward_metadata()]] - degree 7, connects to 1 community

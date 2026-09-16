@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[_SCORECARD_DOMAINS (33-domain IEC 62443 scorecard)]] - code - gateway/security/scanner_integration.py
+- [[SecureBrowser.close()]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
 
 ## Live Query (requires Dataview plugin)
 

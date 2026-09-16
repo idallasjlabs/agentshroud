@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[_run_canvas_proxy() — Canvas auth-proxy (CVE-2026-34871 mitigation)]] - code - gateway/ingest_api/lifespan.py
+- [[EnhancedApprovalQueue.decide]] - code - gateway/approval_queue/enhanced_queue.py
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,52 +1,53 @@
 ---
 type: community
 cohesion: 0.05
-members: 37
+members: 38
 ---
 
 # Community 192
 
 **Cohesion:** 0.05 - loosely connected
-**Members:** 37 nodes
+**Members:** 38 nodes
 
 ## Members
-- [[.setup_method()_15]] - code - gateway/tests/test_multilingual_injection.py
-- [[.test_benign_multilingual_text()]] - code - gateway/tests/test_multilingual_injection.py
-- [[.test_case_insensitive_detection()]] - code - gateway/tests/test_multilingual_injection.py
-- [[.test_mixed_language_injection()]] - code - gateway/tests/test_multilingual_injection.py
-- [[.test_obfuscation_resistance()]] - code - gateway/tests/test_multilingual_injection.py
-- [[.test_pattern_priority()]] - code - gateway/tests/test_multilingual_injection.py
-- [[.test_tier1_dutch_injection()]] - code - gateway/tests/test_multilingual_injection.py
-- [[.test_tier1_hindi_injection()]] - code - gateway/tests/test_multilingual_injection.py
-- [[.test_tier1_italian_injection()]] - code - gateway/tests/test_multilingual_injection.py
-- [[.test_tier1_japanese_injection()]] - code - gateway/tests/test_multilingual_injection.py
-- [[.test_tier1_korean_injection()]] - code - gateway/tests/test_multilingual_injection.py
-- [[.test_tier1_portuguese_injection()]] - code - gateway/tests/test_multilingual_injection.py
-- [[.test_tier2_bengali_injection()]] - code - gateway/tests/test_multilingual_injection.py
-- [[.test_tier2_persian_injection()]] - code - gateway/tests/test_multilingual_injection.py
-- [[.test_tier2_tagalog_injection()]] - code - gateway/tests/test_multilingual_injection.py
-- [[.test_tier2_tamil_injection()]] - code - gateway/tests/test_multilingual_injection.py
-- [[.test_tier2_ukrainian_injection()]] - code - gateway/tests/test_multilingual_injection.py
-- [[Set up PromptGuard with standard thresholds.]] - rationale - gateway/tests/test_multilingual_injection.py
-- [[Test Bengali injection detection (Tier 2).]] - rationale - gateway/tests/test_multilingual_injection.py
-- [[Test Dutch injection detection.]] - rationale - gateway/tests/test_multilingual_injection.py
-- [[Test Hindi injection detection.]] - rationale - gateway/tests/test_multilingual_injection.py
-- [[Test Italian injection detection.]] - rationale - gateway/tests/test_multilingual_injection.py
-- [[Test Japanese injection detection.]] - rationale - gateway/tests/test_multilingual_injection.py
-- [[Test Korean injection detection.]] - rationale - gateway/tests/test_multilingual_injection.py
-- [[Test PersianFarsi injection detection (Tier 2).]] - rationale - gateway/tests/test_multilingual_injection.py
-- [[Test Portuguese injection detection.]] - rationale - gateway/tests/test_multilingual_injection.py
-- [[Test Tagalog injection detection (Tier 2).]] - rationale - gateway/tests/test_multilingual_injection.py
-- [[Test Tamil injection detection (Tier 2).]] - rationale - gateway/tests/test_multilingual_injection.py
-- [[Test Ukrainian injection detection (Tier 2).]] - rationale - gateway/tests/test_multilingual_injection.py
-- [[Test injection attempts mixing languages.]] - rationale - gateway/tests/test_multilingual_injection.py
-- [[Test multilingual prompt injection detection across Tier 1 and Tier 2 languages.]] - rationale - gateway/tests/test_multilingual_injection.py
-- [[Test resistance to basic obfuscation attempts.]] - rationale - gateway/tests/test_multilingual_injection.py
-- [[Test that benign multilingual text is not blocked.]] - rationale - gateway/tests/test_multilingual_injection.py
-- [[Test that multilingual patterns have appropriate weights.]] - rationale - gateway/tests/test_multilingual_injection.py
-- [[Test that pattern matching is case insensitive where applicable.]] - rationale - gateway/tests/test_multilingual_injection.py
-- [[TestMultilingualInjection]] - code - gateway/tests/test_multilingual_injection.py
-- [[test_multilingual_injection.py]] - code - gateway/tests/test_multilingual_injection.py
+- [[dot-config()_4]] - code - gateway/tests/test_path_isolation.py
+- [[dot-manager()]] - code - gateway/tests/test_path_isolation.py
+- [[dot-temp_dir()]] - code - gateway/tests/test_path_isolation.py
+- [[dot-test_allow_own_namespace_access()]] - code - gateway/tests/test_path_isolation.py
+- [[dot-test_already_isolated_paths_not_rewritten()]] - code - gateway/tests/test_path_isolation.py
+- [[dot-test_block_base_directory_access()]] - code - gateway/tests/test_path_isolation.py
+- [[dot-test_block_cross_user_access()]] - code - gateway/tests/test_path_isolation.py
+- [[dot-test_cleanup_abandoned_directories()]] - code - gateway/tests/test_path_isolation.py
+- [[dot-test_dont_cleanup_active_user_directories()]] - code - gateway/tests/test_path_isolation.py
+- [[dot-test_end_user_session()]] - code - gateway/tests/test_path_isolation.py
+- [[dot-test_get_active_users()]] - code - gateway/tests/test_path_isolation.py
+- [[dot-test_get_user_temp_path()]] - code - gateway/tests/test_path_isolation.py
+- [[dot-test_initialization()_3]] - code - gateway/tests/test_path_isolation.py
+- [[dot-test_path_rewriting_nested_paths()]] - code - gateway/tests/test_path_isolation.py
+- [[dot-test_path_rewriting_no_rewrite_needed()]] - code - gateway/tests/test_path_isolation.py
+- [[dot-test_path_rewriting_temp_files()]] - code - gateway/tests/test_path_isolation.py
+- [[dot-test_register_user_session()]] - code - gateway/tests/test_path_isolation.py
+- [[dot-test_user_id_sanitization()]] - code - gateway/tests/test_path_isolation.py
+- [[Create path isolation manager for testing.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Create temporary directory for testing.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Create test configuration._1]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test allowing access to own namespace.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test blocking cross-user namespace access.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test blocking direct access to base agentshroud directory.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test cleanup of abandoned user directories.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test ending user session.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test getting active users.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test getting user temp path.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test manager initialization.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test path isolation manager.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test path rewriting for tmp files.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test path rewriting for nested tmp paths.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test paths that don't need rewriting.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test that active user directories are not cleaned up.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test that already isolated paths are not double-rewritten.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test user ID sanitization.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test user session registration.]] - rationale - gateway/tests/test_path_isolation.py
+- [[TestPathIsolationManager]] - code - gateway/tests/test_path_isolation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -56,10 +57,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_PII Sanitizer & E2E Tests]]
-- 1 edge to [[_COMMUNITY_Community 30]]
+- 4 edges to [[_COMMUNITY_Alert Dispatcher & RBAC Reliability]]
+- 2 edges to [[_COMMUNITY_Community 659]]
+- 1 edge to [[_COMMUNITY_Community 1481]]
 
 ## Top bridge nodes
-- [[test_multilingual_injection.py]] - degree 3, connects to 2 communities
-- [[TestMultilingualInjection]] - degree 20, connects to 1 community
-- [[.setup_method()_15]] - degree 3, connects to 1 community
+- [[TestPathIsolationManager]] - degree 24, connects to 3 communities
+- [[dot-config()_4]] - degree 3, connects to 1 community
+- [[dot-manager()]] - degree 3, connects to 1 community

@@ -1,49 +1,50 @@
 ---
 type: community
-cohesion: 0.10
-members: 34
+cohesion: 0.06
+members: 35
 ---
 
 # Community 215
 
-**Cohesion:** 0.10 - loosely connected
-**Members:** 34 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 35 nodes
 
 ## Members
-- [[.test_custom_prefix()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_default_prefix()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_log_dir_created_if_missing()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_parse_affected_packages()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_parse_counts_by_severity()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_parse_empty_output()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_parse_has_timestamp()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_parse_no_results_key()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_parse_scanner_name()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_parse_top_cves_limited()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_parse_top_cves_ordered_by_severity()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_parse_total_vulnerabilities()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_parse_unknown_severity()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_report_content_persisted()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_summary_clean()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_summary_critical()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_summary_error()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_summary_top_cves_ids()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_summary_warning_high_only()]] - code - gateway/tests/test_security_toolchain.py
-- [[Any_64]] - code - gateway/security/trivy_report.py
-- [[Custom report_prefix is used verbatim.]] - rationale - gateway/tests/test_security_toolchain.py
-- [[Default report_prefix produces a 'trivy-' filename.]] - rationale - gateway/tests/test_security_toolchain.py
-- [[Generate a summary dict suitable for the health report.      Args         repor]] - rationale - gateway/security/trivy_report.py
-- [[Parse raw Trivy JSON output into a structured summary.      Args         raw R]] - rationale - gateway/security/trivy_report.py
-- [[Path_19]] - code - gateway/security/trivy_report.py
-- [[Save a Trivy report to the log directory.      Args         report Parsed repo]] - rationale - gateway/security/trivy_report.py
-- [[Saved file is valid JSON containing the report keys.]] - rationale - gateway/tests/test_security_toolchain.py
-- [[TestTrivyParser]] - code - gateway/tests/test_security_toolchain.py
-- [[TestTrivySaveReport]] - code - gateway/tests/test_security_toolchain.py
-- [[TestTrivySummary_1]] - code - gateway/tests/test_security_toolchain.py
-- [[generate_summary()_2]] - code - gateway/security/trivy_report.py
-- [[parse_trivy_output()]] - code - gateway/security/trivy_report.py
-- [[save_report creates the log directory if it does not exist.]] - rationale - gateway/tests/test_security_toolchain.py
-- [[save_report()_1]] - code - gateway/security/trivy_report.py
+- [[dot-test_allows_file_named_environ_elsewhere()]] - code - gateway/tests/test_env_guard_class.py
+- [[dot-test_allows_plain_command()]] - code - gateway/tests/test_env_guard_class.py
+- [[dot-test_allows_unrelated_file()]] - code - gateway/tests/test_env_guard_class.py
+- [[dot-test_base64_padding_is_credential()]] - code - gateway/tests/test_env_guard_class.py
+- [[dot-test_blocks_cat_proc_environ_pattern()]] - code - gateway/tests/test_env_guard_class.py
+- [[dot-test_blocks_env_command()]] - code - gateway/tests/test_env_guard_class.py
+- [[dot-test_blocks_exact_proc_self_environ()]] - code - gateway/tests/test_env_guard_class.py
+- [[dot-test_blocks_indirect_var_expansion()]] - code - gateway/tests/test_env_guard_class.py
+- [[dot-test_blocks_printenv()]] - code - gateway/tests/test_env_guard_class.py
+- [[dot-test_blocks_wildcard_proc_pid_environ()]] - code - gateway/tests/test_env_guard_class.py
+- [[dot-test_clean_output_unchanged_and_no_leakage()]] - code - gateway/tests/test_env_guard_class.py
+- [[dot-test_clear_resets_leakages()]] - code - gateway/tests/test_env_guard_class.py
+- [[dot-test_critical_leakage_yields_critical_risk()]] - code - gateway/tests/test_env_guard_class.py
+- [[dot-test_empty_command_is_allowed()]] - code - gateway/tests/test_env_guard_class.py
+- [[dot-test_export_writes_valid_json_report()]] - code - gateway/tests/test_env_guard_class.py
+- [[dot-test_long_alphanumeric_is_credential()]] - code - gateway/tests/test_env_guard_class.py
+- [[dot-test_many_medium_yields_medium_risk()]] - code - gateway/tests/test_env_guard_class.py
+- [[dot-test_multiple_high_yields_high_risk()]] - code - gateway/tests/test_env_guard_class.py
+- [[dot-test_named_var_with_short_value_uses_redacted_marker()]] - code - gateway/tests/test_env_guard_class.py
+- [[dot-test_no_activity_is_low_risk()]] - code - gateway/tests/test_env_guard_class.py
+- [[dot-test_plain_word_is_not_credential()]] - code - gateway/tests/test_env_guard_class.py
+- [[dot-test_scrubs_credential_looking_value_for_unknown_var()]] - code - gateway/tests/test_env_guard_class.py
+- [[dot-test_scrubs_named_credential_env_var()]] - code - gateway/tests/test_env_guard_class.py
+- [[dot-test_scrubs_openai_key_pattern()]] - code - gateway/tests/test_env_guard_class.py
+- [[dot-test_short_value_is_not_credential()]] - code - gateway/tests/test_env_guard_class.py
+- [[dot-test_summary_aggregates_by_severity_and_method()]] - code - gateway/tests/test_env_guard_class.py
+- [[dot-test_unparseable_text_is_allowed()_1]] - code - gateway/tests/test_env_guard_class.py
+- [[TestCheckCommandExecution]] - code - gateway/tests/test_env_guard_class.py
+- [[TestCheckFileAccess]] - code - gateway/tests/test_env_guard_class.py
+- [[TestLooksLikeCredential]] - code - gateway/tests/test_env_guard_class.py
+- [[TestMonitorEnvironmentAccess]] - code - gateway/tests/test_env_guard_class.py
+- [[TestScrubCommandOutput]] - code - gateway/tests/test_env_guard_class.py
+- [[TestSummaryAndExport]] - code - gateway/tests/test_env_guard_class.py
+- [[guard()_2]] - code - gateway/tests/test_env_guard_class.py
+- [[test_env_guard_class.py]] - code - gateway/tests/test_env_guard_class.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -53,18 +54,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_Community 112]]
-- 4 edges to [[_COMMUNITY_Community 122]]
-- 4 edges to [[_COMMUNITY_Community 640]]
-- 3 edges to [[_COMMUNITY_Security Audit & Drift Detection]]
-- 3 edges to [[_COMMUNITY_Community 410]]
-- 2 edges to [[_COMMUNITY_Community 100]]
-- 1 edge to [[_COMMUNITY_Community 347]]
-- 1 edge to [[_COMMUNITY_Community 72]]
+- 8 edges to [[_COMMUNITY_Alert Dispatcher & RBAC Reliability]]
 
 ## Top bridge nodes
-- [[generate_summary()_2]] - degree 16, connects to 7 communities
-- [[save_report()_1]] - degree 11, connects to 4 communities
-- [[parse_trivy_output()]] - degree 23, connects to 3 communities
-- [[TestTrivyParser]] - degree 12, connects to 2 communities
-- [[TestTrivySummary_1]] - degree 7, connects to 2 communities
+- [[TestCheckCommandExecution]] - degree 9, connects to 1 community
+- [[test_env_guard_class.py]] - degree 8, connects to 1 community
+- [[TestScrubCommandOutput]] - degree 7, connects to 1 community
+- [[TestCheckFileAccess]] - degree 6, connects to 1 community
+- [[TestLooksLikeCredential]] - degree 6, connects to 1 community

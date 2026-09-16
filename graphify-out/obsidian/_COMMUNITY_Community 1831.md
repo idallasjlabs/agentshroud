@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Per-subfolder graphify-out avoids output clobbering]] - rationale - docker/config/hermes/skills/graphify/references/github-and-merge.md
+- [[openclaw-ghsa-snapshot.json]] - document - scripts/data/openclaw-ghsa-snapshot.json
 
 ## Live Query (requires Dataview plugin)
 

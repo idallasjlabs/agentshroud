@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[apply-patches.js Behavioral Smoke Test Suite (Node.js)]] - code - tests/startup_smoke/test_apply_patches.js
+- [[agentshroud-internal Network (Edge tier)]] - code - docker/docker-compose.yml
 
 ## Live Query (requires Dataview plugin)
 

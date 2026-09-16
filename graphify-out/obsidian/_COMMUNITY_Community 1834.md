@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[graphify path command]] - concept - docker/config/openclaw/skills/graphify/references/query.md
+- [[Cron Collaborator Daily Digest]] - document - docker/bots/openclaw/config/cron/jobs.json
 
 ## Live Query (requires Dataview plugin)
 

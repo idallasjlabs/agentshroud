@@ -1,35 +1,35 @@
 ---
 type: community
-cohesion: 0.11
+cohesion: 0.10
 members: 20
 ---
 
 # Community 450
 
-**Cohesion:** 0.11 - loosely connected
+**Cohesion:** 0.10 - loosely connected
 **Members:** 20 nodes
 
 ## Members
-- [[Hermes v0.16.0 OpenAI-Client Compatibility Incident (3-day cron outage)]] - rationale - gateway/tests/test_chat_completions_alias.py
-- [[If openai_to_gemini_request raises, the request must still be     forwarded (unm]] - rationale - gateway/tests/test_gemini_via_openai_path.py
-- [[Regression don't break the existing v1messages path.]] - rationale - gateway/tests/test_chat_completions_alias.py
-- [[The combined path v1chatcompletions with model=claude- must     end up POST]] - rationale - gateway/tests/test_claude_via_openai_path.py
-- [[The combined path v1chatcompletions with model=gemini- must end     up POST]] - rationale - gateway/tests/test_gemini_via_openai_path.py
-- [[Translate an OpenAI v1chatcompletions request body to Anthropic v1messages.]] - rationale - gateway/proxy/anthropic_openai_translator.py
-- [[client()_3]] - code - gateway/tests/test_chat_completions_alias.py
-- [[openai_to_anthropic_request()]] - code - gateway/proxy/anthropic_openai_translator.py
-- [[test_anthropic_to_openai_response_envelope()]] - code - gateway/tests/test_claude_via_openai_path.py
-- [[test_chat_completions_alias.py]] - code - gateway/tests/test_chat_completions_alias.py
-- [[test_chat_completions_alias_passes_correct_path_to_proxy()]] - code - gateway/tests/test_chat_completions_alias.py
-- [[test_chat_completions_alias_routes_to_v1_path()]] - code - gateway/tests/test_chat_completions_alias.py
-- [[test_claude_via_openai_path.py]] - code - gateway/tests/test_claude_via_openai_path.py
-- [[test_gemini_via_openai_path.py]] - code - gateway/tests/test_gemini_via_openai_path.py
-- [[test_get_chat_completions_alias_also_routes()]] - code - gateway/tests/test_chat_completions_alias.py
-- [[test_openai_to_anthropic_request_strips_system_role()]] - code - gateway/tests/test_claude_via_openai_path.py
-- [[test_proxy_gemini_translation_failure_falls_through_gracefully()]] - code - gateway/tests/test_gemini_via_openai_path.py
-- [[test_proxy_rewrites_claude_via_openai_path()]] - code - gateway/tests/test_claude_via_openai_path.py
-- [[test_proxy_rewrites_gemini_via_openai_path()]] - code - gateway/tests/test_gemini_via_openai_path.py
-- [[test_root_v1_messages_still_works_unchanged()]] - code - gateway/tests/test_chat_completions_alias.py
+- [[Approval Required By]] - document - .github/ISSUE_TEMPLATE/gsd.md
+- [[Blast Radius]] - document - .github/ISSUE_TEMPLATE/gsd.md
+- [[CLAUDE]] - document - CLAUDE.md
+- [[COPILOT_CLI_SETUP]] - document - .github/COPILOT_CLI_SETUP.md
+- [[Contributing Factors]] - document - .github/ISSUE_TEMPLATE/postmortem.md
+- [[Effort]] - document - .github/ISSUE_TEMPLATE/gsd.md
+- [[Follow-Up Actions]] - document - .github/ISSUE_TEMPLATE/postmortem.md
+- [[Guidance for Claude Code (claude.aicode) when working in this repository.]] - document - CLAUDE.md
+- [[Incident Summary]] - document - .github/ISSUE_TEMPLATE/postmortem.md
+- [[Keep actions deterministic, minimal, and aligned with how this repo is actually run.]] - document - CLAUDE.md
+- [[Outcome]] - document - .github/ISSUE_TEMPLATE/gsd.md
+- [[Problem_1]] - document - .github/ISSUE_TEMPLATE/gsd.md
+- [[Remediation]] - document - .github/ISSUE_TEMPLATE/postmortem.md
+- [[Root Cause]] - document - .github/ISSUE_TEMPLATE/postmortem.md
+- [[Stale Repository-Context Description in COPILOT_CLI_SETUP]] - rationale - .github/COPILOT_CLI_SETUP.md
+- [[Test Added to Prevent Recurrence (MANDATORY)]] - document - .github/ISSUE_TEMPLATE/postmortem.md
+- [[These instructions are authoritative. Follow them strictly.]] - document - CLAUDE.md
+- [[Timeline_1]] - document - .github/ISSUE_TEMPLATE/postmortem.md
+- [[gsd]] - document - .github/ISSUE_TEMPLATE/gsd.md
+- [[postmortem]] - document - .github/ISSUE_TEMPLATE/postmortem.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,15 +39,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_Community 83]]
-- 4 edges to [[_COMMUNITY_Community 126]]
-- 1 edge to [[_COMMUNITY_Community 129]]
-- 1 edge to [[_COMMUNITY_Community 143]]
-- 1 edge to [[_COMMUNITY_Community 24]]
+- 1 edge to [[_COMMUNITY_Community 227]]
+- 1 edge to [[_COMMUNITY_Community 177]]
+- 1 edge to [[_COMMUNITY_Community 259]]
 
 ## Top bridge nodes
-- [[test_claude_via_openai_path.py]] - degree 9, connects to 2 communities
-- [[openai_to_anthropic_request()]] - degree 6, connects to 2 communities
-- [[test_gemini_via_openai_path.py]] - degree 5, connects to 2 communities
-- [[test_chat_completions_alias.py]] - degree 8, connects to 1 community
-- [[Hermes v0.16.0 OpenAI-Client Compatibility Incident (3-day cron outage)]] - degree 3, connects to 1 community
+- [[CLAUDE]] - degree 7, connects to 1 community
+- [[gsd]] - degree 7, connects to 1 community
+- [[COPILOT_CLI_SETUP]] - degree 2, connects to 1 community

@@ -1,37 +1,37 @@
 ---
 type: community
-cohesion: 0.10
+cohesion: 0.09
 members: 22
 ---
 
 # Community 403
 
-**Cohesion:** 0.10 - loosely connected
+**Cohesion:** 0.09 - loosely connected
 **Members:** 22 nodes
 
 ## Members
-- [[1. Observatory Mode (Global Monitor-Only Switch)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[2. Prompt Injection Hardening]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[2a. Fix ContextGuard Enforcement Bug (~4h)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[2b. Expand PromptGuard Patterns (~8h)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[2c. Input Normalization Layer (~6h)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[2d. Cross-Turn Correlation (~8h)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[2e. Tool Result Sanitization (~4h)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[3. Interactive Egress Firewall (Little Snitch for Agents)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[4. ML-Based Injection Classifier (Stretch)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[5. Output Canary System]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[6. Enhanced Audit & Compliance]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[A. Steve Hay — ALL Tiers (14 features, 23 requirements)]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[B. Wire ALL Modules Into Request Path]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[C. Bug Fixes]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[E. Observatory Mode (Global MonitorEnforce Switch)]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Features_2]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[G. Encrypted Container-to-Container Communication]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[H. Pi-hole as Default Stack Component]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[J. Phase 8.5 E2E Verification]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[K. Merge Pending PRs  Code Cleanup]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[M. Misc Quick Wins]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[v0.8.0 — Watchtower (Complete Security + Everything We Know Today)]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[AgentShroud Data Dictionary]] - document - docs/data/data-dictionary.md
+- [[Approval Decision Criteria]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[Approval Workflows]] - document - skills/custom/securebrowser/references/security-policies.md
+- [[ApprovalRequest_3]] - document - docs/data/data-dictionary.md
+- [[AuditEntry]] - document - docs/data/data-dictionary.md
+- [[Configuration Entities]] - document - docs/data/data-dictionary.md
+- [[Configuration Setup]] - document - skills/openclaw/himalaya/SKILL.md
+- [[Core Audit Entities]] - document - docs/data/data-dictionary.md
+- [[DNSQuery]] - document - docs/data/data-dictionary.md
+- [[Data Classification]] - document - docs/data/data-dictionary.md
+- [[Data Retention Policies]] - document - docs/data/data-dictionary.md
+- [[InspectionResult_1]] - document - docs/data/data-dictionary.md
+- [[Network Security Entities]] - document - docs/data/data-dictionary.md
+- [[RateLimitBucket]] - document - docs/data/data-dictionary.md
+- [[Relationship Diagram]] - document - docs/data/data-dictionary.md
+- [[Runtime State Entities]] - document - docs/data/data-dictionary.md
+- [[Security Management Entities]] - document - docs/data/data-dictionary.md
+- [[SecurityFinding]] - document - docs/data/data-dictionary.md
+- [[SessionState]] - document - docs/data/data-dictionary.md
+- [[TrustLevel_1]] - document - docs/data/data-dictionary.md
+- [[URLAnalysisResult]] - document - docs/data/data-dictionary.md
+- [[data-dictionary]] - document - docs/data/data-dictionary.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -41,12 +41,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 423]]
-- 1 edge to [[_COMMUNITY_Community 371]]
-- 1 edge to [[_COMMUNITY_Community 362]]
-- 1 edge to [[_COMMUNITY_Community 367]]
+- 1 edge to [[_COMMUNITY_Community 489]]
+- 1 edge to [[_COMMUNITY_Community 437]]
 
 ## Top bridge nodes
-- [[v0.8.0 — Watchtower (Complete Security + Everything We Know Today)]] - degree 14, connects to 2 communities
-- [[Features_2]] - degree 7, connects to 1 community
-- [[6. Enhanced Audit & Compliance]] - degree 3, connects to 1 community
+- [[Approval Workflows]] - degree 3, connects to 1 community
+- [[Configuration Setup]] - degree 2, connects to 1 community

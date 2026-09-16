@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[SSH Exec Endpoint Tests (allowlist, deny, injection)]] - code - gateway/tests/test_ssh_endpoints.py
+- [[docsREADME.md — documentation structure index and project phase status]] - document - docs/README.md
 
 ## Live Query (requires Dataview plugin)
 

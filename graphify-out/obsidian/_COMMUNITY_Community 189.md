@@ -1,52 +1,53 @@
 ---
 type: community
-cohesion: 0.05
-members: 37
+cohesion: 0.11
+members: 38
 ---
 
 # Community 189
 
-**Cohesion:** 0.05 - loosely connected
-**Members:** 37 nodes
+**Cohesion:** 0.11 - loosely connected
+**Members:** 38 nodes
 
 ## Members
-- [[1. Authentication Events (AUTH)]] - document - docs/security/audit-specification.md
-- [[2. Authorization Events (AUTHZ)]] - document - docs/security/audit-specification.md
-- [[3. Security Events (SEC)]] - document - docs/security/audit-specification.md
-- [[4. Data Events (DATA)]] - document - docs/security/audit-specification.md
-- [[5. System Events (SYS)]] - document - docs/security/audit-specification.md
-- [[A.12.4 Logging and Monitoring]] - document - docs/security/audit-specification.md
-- [[Advanced Search Query]] - document - docs/security/audit-specification.md
-- [[AgentShroud Audit Specification]] - document - docs/security/audit-specification.md
-- [[Archival Process]] - document - docs/security/audit-specification.md
-- [[Audit Event Types and Schema]] - document - docs/security/audit-specification.md
-- [[Audit System Performance Metrics]] - document - docs/security/audit-specification.md
-- [[Basic Event Query]] - document - docs/security/audit-specification.md
-- [[Block Structure]] - document - docs/security/audit-specification.md
-- [[Chain Architecture]] - document - docs/security/audit-specification.md
-- [[Chain Verification Query]] - document - docs/security/audit-specification.md
-- [[Compliance Mapping]] - document - docs/security/audit-specification.md
-- [[Core Event Categories]] - document - docs/security/audit-specification.md
-- [[GDPR Article 30 Record Keeping]] - document - docs/security/audit-specification.md
-- [[Genesis Block Specification]] - document - docs/security/audit-specification.md
-- [[Hash Calculation Algorithm]] - document - docs/security/audit-specification.md
-- [[Hash Chain Structure_1]] - document - docs/security/audit-specification.md
-- [[ISO 27001 Control Objectives]] - document - docs/security/audit-specification.md
-- [[Internal Controls Documentation]] - document - docs/security/audit-specification.md
-- [[Overview_13]] - document - docs/security/audit-specification.md
-- [[Performance and Scalability]] - document - docs/security/audit-specification.md
-- [[Processing Activities Register]] - document - docs/security/audit-specification.md
-- [[Query API Specification]] - document - docs/security/audit-specification.md
-- [[Query Capabilities]] - document - docs/security/audit-specification.md
-- [[Query Response Format]] - document - docs/security/audit-specification.md
-- [[Real-Time Event Streaming]] - document - docs/security/audit-specification.md
-- [[Retention Policies]] - document - docs/security/audit-specification.md
-- [[SOX Compliance (Section 404)]] - document - docs/security/audit-specification.md
-- [[Tier 1 Critical Security Events (7 Years)]] - document - docs/security/audit-specification.md
-- [[Tier 2 Operational Events (3 Years)]] - document - docs/security/audit-specification.md
-- [[Tier 3 Debug and Diagnostic Events (1 Year)]] - document - docs/security/audit-specification.md
-- [[Tier 4 High-Volume Events (90 Days)]] - document - docs/security/audit-specification.md
-- [[Tier-Based Retention Strategy]] - document - docs/security/audit-specification.md
+- [[dot-__init__()_80]] - code - gateway/security/data_exfil_volume_guard.py
+- [[dot-_size()]] - code - gateway/security/data_exfil_volume_guard.py
+- [[dot-get_stats()_13]] - code - gateway/security/data_exfil_volume_guard.py
+- [[dot-observe()]] - code - gateway/security/data_exfil_volume_guard.py
+- [[dot-reset_session()_1]] - code - gateway/security/data_exfil_volume_guard.py
+- [[A blocked (undelivered) response must not consume the session budget,     otherw]] - rationale - gateway/tests/test_data_exfil_volume_guard.py
+- [[Clear cumulative + baseline state for a session (e.g. on new session).]] - rationale - gateway/security/data_exfil_volume_guard.py
+- [[Configuration for class`DataExfilVolumeGuard`.]] - rationale - gateway/security/data_exfil_volume_guard.py
+- [[Cumulative + adaptive outbound-volume anomaly detector, per session.]] - rationale - gateway/security/data_exfil_volume_guard.py
+- [[DataExfilVolumeConfig]] - code - gateway/security/data_exfil_volume_guard.py
+- [[DataExfilVolumeGuard]] - code - gateway/security/data_exfil_volume_guard.py
+- [[If the guard raises, non-owner outbound is blocked (fail-closed).]] - rationale - gateway/tests/test_data_exfil_volume_guard.py
+- [[Observe one outbound response and decide allowblock.          A blocked respons]] - rationale - gateway/security/data_exfil_volume_guard.py
+- [[Structured verdict returned by meth`DataExfilVolumeGuard.observe`.]] - rationale - gateway/security/data_exfil_volume_guard.py
+- [[The rolling baseline deque is trimmed to adaptive_window; old samples drop.]] - rationale - gateway/tests/test_data_exfil_volume_guard.py
+- [[Tiny baselines must not turn ordinary small growth into spikes.]] - rationale - gateway/tests/test_data_exfil_volume_guard.py
+- [[VolumeVerdict]] - code - gateway/security/data_exfil_volume_guard.py
+- [[_SessionState]] - code - gateway/security/data_exfil_volume_guard.py
+- [[_make_pipeline()_2]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[data_exfil_volume_guard.py]] - code - gateway/security/data_exfil_volume_guard.py
+- [[test_accepts_str_and_bytes()]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[test_adaptive_floor_prevents_noise_blocks()]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[test_adaptive_needs_min_samples()]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[test_adaptive_spike_blocks()]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[test_adaptive_window_bounds_baseline_memory()]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[test_blocked_response_does_not_add_to_cumulative()]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[test_cumulative_cap_blocks_when_crossed()]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[test_cumulative_is_per_session()]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[test_data_exfil_volume_guard.py]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[test_disabled_never_blocks()]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[test_get_stats()_2]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[test_pipeline_allows_small_response()]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[test_pipeline_blocks_and_downstream_not_reached()]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[test_pipeline_fail_closed_for_non_owner_on_error()]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[test_pipeline_no_guard_is_unchanged()]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[test_reset_session_clears_state()]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[test_single_response_over_cap_blocks()]] - code - gateway/tests/test_data_exfil_volume_guard.py
+- [[test_under_single_cap_allows()]] - code - gateway/tests/test_data_exfil_volume_guard.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -56,8 +57,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 92]]
+- 4 edges to [[_COMMUNITY_Approval Routing & Event Bus]]
+- 3 edges to [[_COMMUNITY_Signed Instruction Envelopes & Security Pipeline]]
+- 3 edges to [[_COMMUNITY_Slack Proxy & Main Endpoint Tests]]
+- 1 edge to [[_COMMUNITY_Community 182]]
+- 1 edge to [[_COMMUNITY_Community 86]]
 
 ## Top bridge nodes
-- [[AgentShroud Audit Specification]] - degree 8, connects to 1 community
-- [[Compliance Mapping]] - degree 5, connects to 1 community
+- [[DataExfilVolumeGuard]] - degree 26, connects to 2 communities
+- [[_make_pipeline()_2]] - degree 6, connects to 2 communities
+- [[test_pipeline_no_guard_is_unchanged()]] - degree 3, connects to 2 communities
+- [[DataExfilVolumeConfig]] - degree 21, connects to 1 community
+- [[test_data_exfil_volume_guard.py]] - degree 21, connects to 1 community

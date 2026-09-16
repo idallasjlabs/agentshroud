@@ -1,45 +1,45 @@
 ---
 type: community
-cohesion: 0.07
+cohesion: 0.13
 members: 30
 ---
 
 # Community 268
 
-**Cohesion:** 0.07 - loosely connected
+**Cohesion:** 0.13 - loosely connected
 **Members:** 30 nodes
 
 ## Members
-- [[1. SOC Command Center (Web UI)]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[2. Telegram Command Testing]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[3. Collaborator Experience Testing]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[4. Shared Memory Testing]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[5. Log Monitoring]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[6. Security Scan]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[7. Pre-Merge Checklist]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[API Endpoints — Direct Verification]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[Access and Login]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[AgentShroud v0.9.0 — Human Interface Testing Guide]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[Dashboard Tabs to Verify]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[Delegation_1]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[Egress Firewall]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[Egress Tab]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[Group Management]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[Groups Tab]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[Prerequisites — Start the Stack]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[Role and Collaborator Management]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[Scanners Tab]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[Scorecard Tab]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[Security Immunity]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[Security Tab]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[Status Commands]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[Team Configuration Reference]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[Test Delegation privilege enforcement]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[Test full_access mode]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[Test local_only mode]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[Test project_scoped mode]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[Users Tab]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[v0.9.0-testing-guide]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
+- [[dot-__init__()_113]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[dot-confident()]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[Any_41]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[Compute the per-entry rewrite plan and manual-review buckets.      Returns]] - rationale - scripts/migrate-cve-registry-ghsa.py
+- [[Counter]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[Import the current OpenClaw + Hermes registry lists (in file order).]] - rationale - scripts/migrate-cve-registry-ghsa.py
+- [[Lowercase alphanumericunderscore tokens, minus stopwords and short noise.]] - rationale - scripts/migrate-cve-registry-ghsa.py
+- [[Match a single registry entry to at most one advisory, honestly.      Returns]] - rationale - scripts/migrate-cve-registry-ghsa.py
+- [[MatchResult]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[Namespace]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[Outcome of matching one registry entry to the advisory feed.]] - rationale - scripts/migrate-cve-registry-ghsa.py
+- [[Path_26]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[Render the manual-review markdown listing every unmatched entry.]] - rationale - scripts/migrate-cve-registry-ghsa.py
+- [[Return per-agent advisory lists from snapshot or live GitHub.]] - rationale - scripts/migrate-cve-registry-ghsa.py
+- [[Rewrite every ``id old`` line and set ghsa_idcve_id right after it.]] - rationale - scripts/migrate-cve-registry-ghsa.py
+- [[_advisory_patched_versions()]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[_advisory_text_tokens()]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[_py_literal()]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[_tokens()]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[build_id_plan()]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[compute_stats()]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[fetch_advisories()]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[gather_advisories()]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[load_registry()_1]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[load_snapshot()]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[main()_13]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[match_entry()]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[migrate-cve-registry-ghsa.py]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[render_manual_review()]] - code - scripts/migrate-cve-registry-ghsa.py
+- [[rewrite_registry_text()_1]] - code - scripts/migrate-cve-registry-ghsa.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -47,3 +47,14 @@ members: 30
 TABLE source_file, type FROM #community/Community_268
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 458]]
+- 1 edge to [[_COMMUNITY_Community 182]]
+- 1 edge to [[_COMMUNITY_SOC Correlation & Router]]
+- 1 edge to [[_COMMUNITY_Community 99]]
+
+## Top bridge nodes
+- [[Counter]] - degree 4, connects to 2 communities
+- [[migrate-cve-registry-ghsa.py]] - degree 16, connects to 1 community
+- [[fetch_advisories()]] - degree 4, connects to 1 community

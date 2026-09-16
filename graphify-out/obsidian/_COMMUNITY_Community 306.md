@@ -10,33 +10,33 @@ members: 27
 **Members:** 27 nodes
 
 ## Members
-- [[Missing auth for API providers]] - document - docker/scripts/README.md
-- [[API Keys]] - document - docker/scripts/README.md
-- [[Bot not responding on Telegram]] - document - docs/setup/SETUP_API_KEYS.md
-- [[Changing AI Model]] - document - docker/scripts/README.md
-- [[Common Tasks]] - document - docker/scripts/README.md
-- [[Container Management]] - document - docker/scripts/README.md
-- [[Container unhealthy]] - document - docker/scripts/README.md
-- [[Container won't start after adding Anthropic secret]] - document - docs/setup/SETUP_API_KEYS.md
-- [[Debugging Issues]] - document - docker/scripts/README.md
-- [[Direct Docker Commands]] - document - docker/scripts/README.md
-- [[File Locations_1]] - document - docker/scripts/README.md
-- [[Initial Setup]] - document - docker/scripts/README.md
-- [[OpenClaw CLI]] - document - docker/scripts/README.md
-- [[OpenClaw Management Scripts]] - document - docker/scripts/README.md
-- [[Quick Reference_3]] - document - docker/scripts/README.md
-- [[README_116]] - document - docker/scripts/README.md
-- [[Security Notes]] - document - docker/scripts/README.md
-- [[Telegram bot not responding]] - document - docker/scripts/README.md
-- [[Troubleshooting_15]] - document - docker/scripts/README.md
-- [[Troubleshooting_31]] - document - docs/setup/SETUP_API_KEYS.md
-- [[Updating Telegram Bot Token]] - document - docker/scripts/README.md
-- [[check-status.sh_1]] - document - docker/scripts/README.md
-- [[devices.sh_1]] - document - docker/scripts/README.md
-- [[logs.sh_1]] - document - docker/scripts/README.md
-- [[restart.sh_1]] - document - docker/scripts/README.md
-- [[set-model.sh_1]] - document - docker/scripts/README.md
-- [[telegram.sh_1]] - document - docker/scripts/README.md
+- [[401 Unauthorized_1]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[CalendarContacts not found]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Connection timeout_1]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Add Contact]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Calendar Operations_1]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Configuration_4]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Contact Operations]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Create Event_1]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Create Note]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Delete Event_1]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[List Contacts]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[List Events_1]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[List Messages]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[List Notes]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Mail Operations]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Notes Operations]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Search Contacts]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Search Mail]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Search Notes]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Security_4]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Send Email]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Setup_1]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Troubleshooting_19]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Update Contact]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Update Event_1]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[hermesskillsi-icloudSKILL]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[iCloud Services_1]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -44,9 +44,3 @@ members: 27
 TABLE source_file, type FROM #community/Community_306
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 317]]
-
-## Top bridge nodes
-- [[Troubleshooting_31]] - degree 4, connects to 1 community

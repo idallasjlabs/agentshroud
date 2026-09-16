@@ -10,32 +10,32 @@ members: 26
 **Members:** 26 nodes
 
 ## Members
-- [[DELIVERABLE 1 — Domain-by-Domain Assessment]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Domain 1 — Threat Modeling and Security Boundaries]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Domain 10 — Human Approval Design]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Domain 11 — Prompt and Policy Hardening]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Domain 12 — Output Validation and Secondary Controls]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Domain 13 — Sandboxing and Execution Isolation]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Domain 14 — Browser and Document Ingestion Hardening]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Domain 15 — Secret Management and Anti-Exfiltration Design]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Domain 16 — Detection Engineering and Monitoring]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Domain 17 — Canary and Tripwire Strategies]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Domain 18 — Policy-as-Code and Formal Guardrails]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Domain 19 — Resilience Against Long-Horizon Attacks]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Domain 2 — Instruction  Data Separation]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Domain 20 — Training, Tuning, and Specialized Models]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Domain 21 — Secure UX and Operator Ergonomics]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Domain 22 — Incident Response and Recovery]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Domain 23 — Red Teaming and Continuous Evaluation]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Domain 24 — Supply Chain and Ecosystem Controls]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Domain 25 — Governance and Change Control]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Domain 3 — Taint Tracking and Data Lineage]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Domain 4 — Capability Security and Least Privilege]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Domain 5 — Tool-Call Governance]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Domain 6 — Egress Control and Exfiltration Resistance]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Domain 7 — Retrieval and RAG Hardening]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Domain 8 — Memory Hardening]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
-- [[Domain 9 — Multi-Agent Trust Architecture]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Accounts]] - document - docs/reference/PREREQUISITES.md
+- [[Additional Tools in Containers]] - document - docs/reference/PREREQUISITES.md
+- [[AgentShroud Prerequisites]] - document - docs/reference/PREREQUISITES.md
+- [[Annually]] - document - docs/reference/PREREQUISITES.md
+- [[Base Images]] - document - docs/reference/PREREQUISITES.md
+- [[Common Issues_1]] - document - docs/reference/PREREQUISITES.md
+- [[Configuration_7]] - document - docs/reference/PREREQUISITES.md
+- [[Monthly]] - document - docs/reference/PREREQUISITES.md
+- [[Network Security]] - document - docs/reference/PREREQUISITES.md
+- [[Overview_11]] - document - docs/reference/PREREQUISITES.md
+- [[Quarterly]] - document - docs/reference/PREREQUISITES.md
+- [[Secrets Management]] - document - docs/reference/PREREQUISITES.md
+- [[Software]] - document - docs/reference/PREREQUISITES.md
+- [[Verification_2]] - document - docs/reference/PREREQUISITES.md
+- [[✅ Setup Checklist]] - document - docs/reference/PREREQUISITES.md
+- [[✅ Your Current Setup Status]] - document - docs/reference/PREREQUISITES.md
+- [[🆘 Troubleshooting_1]] - document - docs/reference/PREREQUISITES.md
+- [[🎯 Philosophy Separation of Concerns]] - document - docs/reference/PREREQUISITES.md
+- [[🎯 You're Not Missing Anything!]] - document - docs/reference/PREREQUISITES.md
+- [[📊 Cost Breakdown]] - document - docs/reference/PREREQUISITES.md
+- [[📚 Additional Resources]] - document - docs/reference/PREREQUISITES.md
+- [[📦 Docker Images & Dependencies]] - document - docs/reference/PREREQUISITES.md
+- [[🔄 Maintenance Requirements]] - document - docs/reference/PREREQUISITES.md
+- [[🔐 Security Requirements]] - document - docs/reference/PREREQUISITES.md
+- [[🗂️ File Structure]] - document - docs/reference/PREREQUISITES.md
+- [[🚀 Quick Start Command]] - document - docs/reference/PREREQUISITES.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -45,7 +45,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 999]]
+- 1 edge to [[_COMMUNITY_Community 787]]
+- 1 edge to [[_COMMUNITY_Community 896]]
+- 1 edge to [[_COMMUNITY_Community 955]]
 
 ## Top bridge nodes
-- [[DELIVERABLE 1 — Domain-by-Domain Assessment]] - degree 26, connects to 1 community
+- [[AgentShroud Prerequisites]] - degree 16, connects to 3 communities

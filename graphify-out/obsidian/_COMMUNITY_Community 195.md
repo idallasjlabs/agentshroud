@@ -1,51 +1,52 @@
 ---
 type: community
-cohesion: 0.06
-members: 36
+cohesion: 0.09
+members: 37
 ---
 
 # Community 195
 
-**Cohesion:** 0.06 - loosely connected
-**Members:** 36 nodes
+**Cohesion:** 0.09 - loosely connected
+**Members:** 37 nodes
 
 ## Members
-- [[Access Denied_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Token expired (SSO)_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Unable to locate credentials_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[AWS Profile Basics_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[AWS SSO Configuration_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Best Practices_5]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Check Current Profile_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Configuration Files_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Configure New Profile_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Default Profile vs Named Profiles_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Initial SSO Setup_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[List Available Profiles_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Login to SSO_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[MCP Not Using Profile_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[MCP-Specific_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Method 1 Set Environment Variable (Session)_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Method 2 Set Permanently (Shell Config)_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Method 3 Configure in .mcp.json_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Multi-Account AWS Access_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Option 1 Interactive Configuration_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Option 2 Manual Configuration_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Organization_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Quick Reference_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Related Skills_99]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Role_90]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[SKILL_159]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Scenario Development → Production_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Security_6]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Switch AWS Profile for MCP_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Troubleshooting_14]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Use SSO Profile with MCP_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Using AssumeRole for Cross-Account Access_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[View Configured Profiles_1]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[What is an AWS Profile_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[When to Invoke_7]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
+- [[dot-test_pin_revert_restores_the_exact_original_string()]] - code - gateway/tests/test_auto_remediate_cves.py
+- [[dot-test_read_pin_missing_key_returns_none()]] - code - gateway/tests/test_auto_remediate_cves.py
+- [[dot-test_read_pin_returns_the_pinned_value()]] - code - gateway/tests/test_auto_remediate_cves.py
+- [[dot-test_write_pin_is_idempotent()]] - code - gateway/tests/test_auto_remediate_cves.py
+- [[dot-test_write_pin_refuses_an_absent_key()]] - code - gateway/tests/test_auto_remediate_cves.py
+- [[dot-test_write_pin_replaces_only_the_target_line()]] - code - gateway/tests/test_auto_remediate_cves.py
+- [[dot-test_write_pin_round_trips_through_read_pin()]] - code - gateway/tests/test_auto_remediate_cves.py
+- [[dot-to_dict()]] - code - scripts/auto_remediate_cves.py
+- [[Any_31]] - code
+- [[Automated CVE remediation — actually patch the advisories, don't just file…]] - rationale - scripts/auto_remediate_cves.py
+- [[Bump the pin, run the gated upgrade, revert the pin if it does not hold.…]] - rationale - scripts/auto_remediate_cves.py
+- [[Import the committed OpenClaw registry.]] - rationale - scripts/auto_remediate_cves.py
+- [[Parse a dotted numeric version to a comparable tuple. A trailing ``-N`` on any…]] - rationale - scripts/auto_remediate_cves.py
+- [[Path_19]] - code
+- [[Phantom Tag Bug Class (scanningbuilding a version tag that is not the one actually running)]] - rationale - prompts/sunday-upgrade.md
+- [[Read one ``KEY=value`` pin from a versions.env-style file.]] - rationale - scripts/auto_remediate_cves.py
+- [[Reading and rewriting dockerversions.env.]] - rationale - gateway/tests/test_auto_remediate_cves.py
+- [[RemediationPlan]] - code - scripts/auto_remediate_cves.py
+- [[Rewrite one pin in place, preserving every other line byte for byte. Raises…]] - rationale - scripts/auto_remediate_cves.py
+- [[Serialise for the unattended run's audit trail.]] - rationale - scripts/auto_remediate_cves.py
+- [[Seven-Week No-Op Upgrade Failure (PASS reported while upgrading nothing)]] - rationale - prompts/sunday-upgrade.md
+- [[Silently appending a new key could create a pin nothing consumes.]] - rationale - gateway/tests/test_auto_remediate_cves.py
+- [[TestVersionPinIO]] - code - gateway/tests/test_auto_remediate_cves.py
+- [[The rollback path a failed deploy must restore the pin verbatim, downstream…]] - rationale - gateway/tests/test_auto_remediate_cves.py
+- [[Two-Arm CVE Remediation (vendor fix + independent AgentShroud gateway control)]] - rationale - prompts/sunday-upgrade.md
+- [[What a version bump would and would not remediate. Every ``under_review``…]] - rationale - scripts/auto_remediate_cves.py
+- [[_print_plan()]] - code - scripts/auto_remediate_cves.py
+- [[_run()]] - code - scripts/auto_remediate_cves.py
+- [[apply_remediation()]] - code - scripts/auto_remediate_cves.py
+- [[auto_remediate_cves.py]] - code - scripts/auto_remediate_cves.py
+- [[load_registry()]] - code - scripts/auto_remediate_cves.py
+- [[main()_3]] - code - scripts/auto_remediate_cves.py
+- [[parse_version()_1]] - code - scripts/auto_remediate_cves.py
+- [[read_pin()]] - code - scripts/auto_remediate_cves.py
+- [[sunday-upgrade]] - document - prompts/sunday-upgrade.md
+- [[test_pin_revert_restores_the_exact_original_string]] - code - gateway/tests/test_auto_remediate_cves.py
+- [[write_pin()]] - code - scripts/auto_remediate_cves.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -53,3 +54,20 @@ members: 36
 TABLE source_file, type FROM #community/Community_195
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 8 edges to [[_COMMUNITY_Community 274]]
+- 2 edges to [[_COMMUNITY_Community 158]]
+- 2 edges to [[_COMMUNITY_Community 707]]
+- 1 edge to [[_COMMUNITY_Community 353]]
+- 1 edge to [[_COMMUNITY_Community 458]]
+- 1 edge to [[_COMMUNITY_Community 124]]
+- 1 edge to [[_COMMUNITY_Community 94]]
+- 1 edge to [[_COMMUNITY_Community 134]]
+
+## Top bridge nodes
+- [[auto_remediate_cves.py]] - degree 18, connects to 3 communities
+- [[apply_remediation()]] - degree 9, connects to 2 communities
+- [[Phantom Tag Bug Class (scanningbuilding a version tag that is not the one actually running)]] - degree 3, connects to 2 communities
+- [[Two-Arm CVE Remediation (vendor fix + independent AgentShroud gateway control)]] - degree 3, connects to 2 communities
+- [[read_pin()]] - degree 11, connects to 1 community

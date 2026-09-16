@@ -1,36 +1,36 @@
 ---
 type: community
-cohesion: 0.10
+cohesion: 0.26
 members: 21
 ---
 
 # Community 432
 
-**Cohesion:** 0.10 - loosely connected
+**Cohesion:** 0.26 - loosely connected
 **Members:** 21 nodes
 
 ## Members
-- [[.__init__()_169]] - code - gateway/tests/test_key_rotation.py
-- [[.setup_manager_with_credential()]] - code - gateway/tests/test_key_rotation.py
-- [[.test_check_and_rotate_due_credentials()]] - code - gateway/tests/test_key_rotation.py
-- [[.test_emergency_rotation()]] - code - gateway/tests/test_key_rotation.py
-- [[.test_grace_period_cleanup()]] - code - gateway/tests/test_key_rotation.py
-- [[.test_register_validator()]] - code - gateway/tests/test_key_rotation.py
-- [[.test_rotation_with_validation_failure()]] - code - gateway/tests/test_key_rotation.py
-- [[.test_successful_rotation_workflow()]] - code - gateway/tests/test_key_rotation.py
-- [[.validate()_2]] - code - gateway/tests/test_key_rotation.py
-- [[Mock validation that can be controlled.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Mock validator for testing.]] - rationale - gateway/tests/test_key_rotation.py
-- [[MockValidator]] - code - gateway/tests/test_key_rotation.py
-- [[Set up manager with a credential that needs rotation.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test bulk rotation check and execution.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test complete successful rotation workflow.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test emergency rotation workflow.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test grace period and old credential cleanup.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test rotation workflow with validation failure and rollback.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test the complete rotation workflow.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test validator registration.]] - rationale - gateway/tests/test_key_rotation.py
-- [[TestKeyRotationWorkflow]] - code - gateway/tests/test_key_rotation.py
+- [[Create SVG files that embed the logo PNGs as base64 data URIs.      These are sc]] - rationale - scripts/generate_branding_assets.py
+- [[FreeTypeFont]] - code - scripts/generate_branding_assets.py
+- [[Image]] - code - scripts/generate_branding_assets.py
+- [[Load source logo, optionally resize and composite onto bg.]] - rationale - scripts/generate_branding_assets.py
+- [[Paste transparent logo centred on a solid-colour canvas.]] - rationale - scripts/generate_branding_assets.py
+- [[Path_41]] - code - scripts/generate_branding_assets.py
+- [[ensure()]] - code - scripts/generate_branding_assets.py
+- [[generate_branding_assets.py]] - code - scripts/generate_branding_assets.py
+- [[generate_email()]] - code - scripts/generate_branding_assets.py
+- [[generate_favicons()]] - code - scripts/generate_branding_assets.py
+- [[generate_feature_icons()]] - code - scripts/generate_branding_assets.py
+- [[generate_icon_sizes()]] - code - scripts/generate_branding_assets.py
+- [[generate_presentation()]] - code - scripts/generate_branding_assets.py
+- [[generate_social()]] - code - scripts/generate_branding_assets.py
+- [[generate_svg_logos()]] - code - scripts/generate_branding_assets.py
+- [[generate_variants()]] - code - scripts/generate_branding_assets.py
+- [[get_font()]] - code - scripts/generate_branding_assets.py
+- [[icon_on_canvas()]] - code - scripts/generate_branding_assets.py
+- [[load_logo()]] - code - scripts/generate_branding_assets.py
+- [[main()_22]] - code - scripts/generate_branding_assets.py
+- [[save()_1]] - code - scripts/generate_branding_assets.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -38,18 +38,3 @@ members: 21
 TABLE source_file, type FROM #community/Community_432
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 6 edges to [[_COMMUNITY_Community 295]]
-- 4 edges to [[_COMMUNITY_Community 226]]
-- 4 edges to [[_COMMUNITY_Community 533]]
-- 4 edges to [[_COMMUNITY_Community 130]]
-- 2 edges to [[_COMMUNITY_Community 810]]
-- 1 edge to [[_COMMUNITY_Community 692]]
-
-## Top bridge nodes
-- [[MockValidator]] - degree 14, connects to 5 communities
-- [[TestKeyRotationWorkflow]] - degree 14, connects to 5 communities
-- [[.setup_manager_with_credential()]] - degree 6, connects to 3 communities
-- [[.test_check_and_rotate_due_credentials()]] - degree 6, connects to 3 communities
-- [[.test_register_validator()]] - degree 3, connects to 1 community

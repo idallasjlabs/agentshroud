@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[SharedMemoryManager Group Memory ReadWrite Tests]] - code - gateway/tests/test_shared_memory.py
+- [[Diagram 22 Dependency Graph]] - image - docs/diagrams/images/diagram-22-dependency-graph.svg
 
 ## Live Query (requires Dataview plugin)
 

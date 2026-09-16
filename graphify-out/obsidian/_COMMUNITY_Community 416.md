@@ -1,36 +1,37 @@
 ---
 type: community
-cohesion: 0.10
-members: 21
+cohesion: 0.09
+members: 22
 ---
 
 # Community 416
 
-**Cohesion:** 0.10 - loosely connected
-**Members:** 21 nodes
+**Cohesion:** 0.09 - loosely connected
+**Members:** 22 nodes
 
 ## Members
-- [[1. Change Documentation_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
-- [[2. Testing Evidence_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
-- [[3. Backups & Rollback_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
-- [[4. Blast Radius_3]] - document - docker/config/hermes/skills/i-ps/SKILL.md
-- [[5. Observability_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
-- [[6. Security_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
-- [[7. Communication_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
-- [[8. Service Control Commands_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
-- [[Emergency Stop (P1 Incidents Only)_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
-- [[If Something Goes Wrong_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
-- [[Immediate (0–15 min)_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
-- [[Invoke Before_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
-- [[Pause Before Testing (Copy-Paste Ready)_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
-- [[Post-Deployment Verification_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
-- [[Pre-Deployment Checklist_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
-- [[Resume After Testing (MANDATORY)_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
-- [[Role_65]] - document - docker/config/hermes/skills/i-ps/SKILL.md
-- [[SKILL_108]] - document - docker/config/hermes/skills/i-ps/SKILL.md
-- [[Short-Term (15 min – 24 hr)_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
-- [[Sign-Off_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
-- [[Skill Production Safety Checklist (PROD-SAFETY)_1]] - document - docker/config/hermes/skills/i-ps/SKILL.md
+- [[API Key Setup]] - document - docs/setup/HERMES_SETUP.md
+- [[Authentication Flow]] - document - docs/setup/HERMES_SETUP.md
+- [[Chatbox]] - document - docs/setup/HERMES_SETUP.md
+- [[Frontend Client Setup]] - document - docs/setup/HERMES_SETUP.md
+- [[HCI (Hermes Control Interface)]] - document - docs/setup/HERMES_SETUP.md
+- [[HCI Network Access]] - document - docs/setup/HERMES_SETUP.md
+- [[HCI Tailscale Serve Configuration]] - document - docs/setup/HERMES_SETUP.md
+- [[Hermes Agent — Connection Setup]] - document - docs/setup/HERMES_SETUP.md
+- [[Hermes OpenAI-Compatible API]] - document - docs/setup/HERMES_SETUP.md
+- [[Inbound Path]] - document - docs/setup/HERMES_SETUP.md
+- [[LibreChat]] - document - docs/setup/HERMES_SETUP.md
+- [[Mitigations in Place]] - document - docs/setup/HERMES_SETUP.md
+- [[Network Access]] - document - docs/setup/HERMES_SETUP.md
+- [[Open WebUI]] - document - docs/setup/HERMES_SETUP.md
+- [[Outbound Path]] - document - docs/setup/HERMES_SETUP.md
+- [[Overview_16]] - document - docs/setup/HERMES_SETUP.md
+- [[Prerequisites_8]] - document - docs/setup/HERMES_SETUP.md
+- [[Security Model_1]] - document - docs/setup/HERMES_SETUP.md
+- [[Starting the HCI Container]] - document - docs/setup/HERMES_SETUP.md
+- [[Table of Contents_1]] - document - docs/setup/HERMES_SETUP.md
+- [[Tailscale Serve Configuration]] - document - docs/setup/HERMES_SETUP.md
+- [[Troubleshooting_30]] - document - docs/setup/HERMES_SETUP.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -38,3 +39,9 @@ members: 21
 TABLE source_file, type FROM #community/Community_416
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 271]]
+
+## Top bridge nodes
+- [[Hermes Agent — Connection Setup]] - degree 8, connects to 1 community

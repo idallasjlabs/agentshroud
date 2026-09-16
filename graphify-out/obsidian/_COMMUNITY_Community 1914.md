@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[AgentShroud Logo on Brand Blue Background]] - image - branding/logos/variants/logo-on-brand-blue-1024x1024.png
+- [[audio_preinit() — claims I2S at 16 kHz before display init]] - code - firmware/voice-terminal/main/audio.c
 
 ## Live Query (requires Dataview plugin)
 

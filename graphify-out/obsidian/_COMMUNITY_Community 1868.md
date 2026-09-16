@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[soc.html — unified SOC web dashboard SPA template]] - document - gateway/soc/templates/soc.html
+- [[setup-https-proxy patchUndiciForProxy()]] - code - docker/config/openclaw/setup-https-proxy.js
 
 ## Live Query (requires Dataview plugin)
 

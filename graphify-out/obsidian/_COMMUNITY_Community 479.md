@@ -10,25 +10,25 @@ members: 19
 **Members:** 19 nodes
 
 ## Members
-- [[CVE Mitigations]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
-- [[Configuration_9]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
-- [[Early Return on Block]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
-- [[Fail-Open ClamAV]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
-- [[Guard Presence and Startup Behavior]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
-- [[Important Behaviors]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
-- [[Inbound (`process_inbound`)]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
-- [[Key Thresholds]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
-- [[Monitor vs. Enforce Mode]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
-- [[Outbound (`process_outbound`)]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
-- [[Overview_23]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
-- [[Owner Exemption]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
-- [[Owner Exemption — Logging Guarantee]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
-- [[Pipeline Stages]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
-- [[Related_19]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
-- [[Stats Counter]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
-- [[`AuditChain.append_block()` — Guaranteed Persistence Guarantee]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
-- [[pipeline.py — Security Pipeline]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
-- [[pipeline.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[1. Check MCP Configuration_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[2. Test GitHub MCP Server_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[3. Test Atlassian MCP Server_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[4. Test AWS API MCP Server_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[Common Issues & Fixes_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[Diagnostic Capabilities_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[Diagnostic Workflow_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[Issue AWS credentials not found_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[Issue Atlassian OAuth token expired_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[Issue Docker not found_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[Issue GitHub MCP authentication failed_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[Issue npx not found_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[Issue uvx not found_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[Output Format_17]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[Related Skills_113]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[Role_50]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[Skill MCP Doctor (MCPM-DOCTOR)_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[When to Invoke_5]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
+- [[hermesskillsi-mcpm-doctorSKILL]] - document - docker/config/hermes/skills/i-mcpm-doctor/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,9 +36,3 @@ members: 19
 TABLE source_file, type FROM #community/Community_479
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 741]]
-
-## Top bridge nodes
-- [[pipeline.py — Security Pipeline]] - degree 8, connects to 1 community

@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[SecureClaw Project (concept)]] - concept - docker/config/hermes/skills/i-pm/SKILL.md
+- [[LLM writes its own Whisper domain-hint prompt]] - rationale - docker/config/hermes/skills/graphify/references/transcribe.md
 
 ## Live Query (requires Dataview plugin)
 

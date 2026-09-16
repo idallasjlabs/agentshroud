@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[ci (Continuous Integration) SKILL stub (OpenClaw)]] - document - docker/config/openclaw/skills/i-ci/SKILL.md
+- [[App Icon 256x256 (AgentShroud logo mark)]] - image - branding/icons/app/icon-256x256.png
 
 ## Live Query (requires Dataview plugin)
 

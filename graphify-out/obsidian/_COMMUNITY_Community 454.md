@@ -1,35 +1,35 @@
 ---
 type: community
-cohesion: 0.10
+cohesion: 0.21
 members: 20
 ---
 
 # Community 454
 
-**Cohesion:** 0.10 - loosely connected
+**Cohesion:** 0.21 - loosely connected
 **Members:** 20 nodes
 
 ## Members
-- [[1Password App]] - document - docs/security/SECURITY-POLICY-FINAL.md
-- [[AgentShroud Security Policy - Final Decision]] - document - docs/security/SECURITY-POLICY-FINAL.md
-- [[Console (Direct Command)]] - document - docs/security/SECURITY-POLICY-FINAL.md
-- [[Internal Use (Bot)]] - document - docs/security/SECURITY-POLICY-FINAL.md
-- [[Version 1.0 No Protection]] - document - docs/security/SECURITY-POLICY-FINAL.md
-- [[Version 2.0 Context-Aware (Attempted)]] - document - docs/security/SECURITY-POLICY-FINAL.md
-- [[Version 3.0 Ultra-Conservative (FINAL)]] - document - docs/security/SECURITY-POLICY-FINAL.md
-- [[When asked for credentials via ANY chat]] - document - docs/security/SECURITY-POLICY-FINAL.md
-- [[When executing console commands]] - document - docs/security/SECURITY-POLICY-FINAL.md
-- [[✅ How to Access Credentials]] - document - docs/security/SECURITY-POLICY-FINAL.md
-- [[✅ Implementation Status]] - document - docs/security/SECURITY-POLICY-FINAL.md
-- [[🎓 Response Templates]] - document - docs/security/SECURITY-POLICY-FINAL.md
-- [[🎯 Final Security Policy]] - document - docs/security/SECURITY-POLICY-FINAL.md
-- [[🎯 Success Criteria]] - document - docs/security/SECURITY-POLICY-FINAL.md
-- [[📊 How We Got Here]] - document - docs/security/SECURITY-POLICY-FINAL.md
-- [[📋 Access Methods]] - document - docs/security/SECURITY-POLICY-FINAL.md
-- [[📚 Authoritative Documentation]] - document - docs/security/SECURITY-POLICY-FINAL.md
-- [[🔒 Security Benefits]] - document - docs/security/SECURITY-POLICY-FINAL.md
-- [[🚫 Removed Documentation]] - document - docs/security/SECURITY-POLICY-FINAL.md
-- [[🤖 Why Ultra-Conservative Won]] - document - docs/security/SECURITY-POLICY-FINAL.md
+- [[_container_age_seconds()]] - code - docker/scripts/start-agentshroud.sh
+- [[_dns_warmup_probe()]] - code - docker/scripts/start-agentshroud.sh
+- [[_enforce_sandbox_cap()]] - code - docker/scripts/start-agentshroud.sh
+- [[_model_runtime_ready]] - code - docker/scripts/start-agentshroud.sh
+- [[_poll_openclaw_ready]] - code - docker/scripts/start-agentshroud.sh
+- [[_read_hc_secret()]] - code - docker/scripts/start-agentshroud.sh
+- [[_read_secret_file]] - code - docker/scripts/start-agentshroud.sh
+- [[_reap_exited_sandboxes()]] - code - docker/scripts/start-agentshroud.sh
+- [[_reap_idle_sandboxes()]] - code - docker/scripts/start-agentshroud.sh
+- [[_reconcile_security_critical_cron]] - code - docker/scripts/start-agentshroud.sh
+- [[_rename_to_meaningful()]] - code - docker/scripts/start-agentshroud.sh
+- [[_slack_channel_id()]] - code - docker/scripts/start-agentshroud.sh
+- [[_slack_send]] - code - docker/scripts/start-agentshroud.sh
+- [[_telegram_bot_token()]] - code - docker/scripts/start-agentshroud.sh
+- [[_telegram_get_me_ready]] - code - docker/scripts/start-agentshroud.sh
+- [[_telegram_send]] - code - docker/scripts/start-agentshroud.sh
+- [[_telegram_send_photo]] - code - docker/scripts/start-agentshroud.sh
+- [[op_proxy_read_with_retry]] - code - docker/scripts/start-agentshroud.sh
+- [[start-agentshroud.sh]] - code - docker/scripts/start-agentshroud.sh
+- [[start-agentshroud.sh script]] - code - docker/scripts/start-agentshroud.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,7 +39,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 580]]
+- 1 edge to [[_COMMUNITY_Community 1073]]
+- 1 edge to [[_COMMUNITY_Approval Routing & Event Bus]]
+- 1 edge to [[_COMMUNITY_Community 1071]]
+- 1 edge to [[_COMMUNITY_Community 1060]]
+- 1 edge to [[_COMMUNITY_Community 474]]
+- 1 edge to [[_COMMUNITY_Community 379]]
+- 1 edge to [[_COMMUNITY_Community 562]]
 
 ## Top bridge nodes
-- [[AgentShroud Security Policy - Final Decision]] - degree 12, connects to 1 community
+- [[start-agentshroud.sh]] - degree 23, connects to 4 communities
+- [[_telegram_send]] - degree 4, connects to 1 community
+- [[op_proxy_read_with_retry]] - degree 3, connects to 1 community
+- [[_reconcile_security_critical_cron]] - degree 3, connects to 1 community

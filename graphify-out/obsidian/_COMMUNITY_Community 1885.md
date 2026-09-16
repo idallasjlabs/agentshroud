@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Zabbix API unittest.mock test pattern]] - concept - docker/config/openclaw/skills/i-tdd/SKILL.md
+- [[script.md (Vulcan-approved dialogue input)]] - concept - docker/config/openclaw/skills/i-apollo/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

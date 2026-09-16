@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[DAST Scan (Nuclei) Job]] - code - .github/workflows/ci.yml
+- [[wakeword.h (PTTWakeNet public API)]] - code - firmware/voice-terminal/main/wakeword.h
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,50 +1,51 @@
 ---
 type: community
-cohesion: 0.08
-members: 35
+cohesion: 0.06
+members: 36
 ---
 
 # Community 208
 
-**Cohesion:** 0.08 - loosely connected
-**Members:** 35 nodes
+**Cohesion:** 0.06 - loosely connected
+**Members:** 36 nodes
 
 ## Members
-- [[._parse_cef_for_verification()]] - code - gateway/security/audit_export.py
-- [[.export_config()]] - code - gateway/tests/test_audit_export.py
-- [[.test_export_cef()]] - code - gateway/tests/test_audit_export.py
-- [[.test_export_filtering()]] - code - gateway/tests/test_audit_export.py
-- [[.test_export_json()]] - code - gateway/tests/test_audit_export.py
-- [[.test_export_json_ld()]] - code - gateway/tests/test_audit_export.py
-- [[.test_hash_chain_integrity()]] - code - gateway/tests/test_audit_export.py
-- [[.test_log_event()]] - code - gateway/tests/test_audit_export.py
-- [[.test_query_events()]] - code - gateway/tests/test_audit_export.py
-- [[.test_stats()]] - code - gateway/tests/test_audit_export.py
-- [[.test_tamper_detection()]] - code - gateway/tests/test_audit_export.py
-- [[.test_verify_export_integrity()]] - code - gateway/tests/test_audit_export.py
-- [[.verify_export_integrity()]] - code - gateway/security/audit_export.py
-- [[AuditExporter]] - code - gateway/security/audit_export.py
-- [[Create test export configuration.]] - rationale - gateway/tests/test_audit_export.py
-- [[Exports audit events in various compliance formats.]] - rationale - gateway/security/audit_export.py
-- [[Parse CEF lines and extract entryHashpreviousHash for chain verification.]] - rationale - gateway/security/audit_export.py
-- [[Test AuditEvent functionality.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test AuditExporter functionality.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test AuditStore functionality.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test CEF export format.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test JSON export format.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test JSON-LD export format.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test audit store statistics.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test export integrity verification.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test export with filters.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test hash chain maintains integrity.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test logging audit events.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test querying events with filters.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test tamper detection in exports.]] - rationale - gateway/tests/test_audit_export.py
-- [[TestAuditEvent]] - code - gateway/tests/test_audit_export.py
-- [[TestAuditExporter]] - code - gateway/tests/test_audit_export.py
-- [[TestAuditStore]] - code - gateway/tests/test_audit_export.py
-- [[Verify the integrity of an exported audit log.          Args             export]] - rationale - gateway/security/audit_export.py
-- [[test_audit_export.py]] - code - gateway/tests/test_audit_export.py
+- [[dot-setup_method()_20]] - code - gateway/tests/test_multilingual_injection.py
+- [[dot-test_benign_multilingual_text()]] - code - gateway/tests/test_multilingual_injection.py
+- [[dot-test_case_insensitive_detection()]] - code - gateway/tests/test_multilingual_injection.py
+- [[dot-test_mixed_language_injection()]] - code - gateway/tests/test_multilingual_injection.py
+- [[dot-test_obfuscation_resistance()]] - code - gateway/tests/test_multilingual_injection.py
+- [[dot-test_pattern_priority()]] - code - gateway/tests/test_multilingual_injection.py
+- [[dot-test_tier1_dutch_injection()]] - code - gateway/tests/test_multilingual_injection.py
+- [[dot-test_tier1_hindi_injection()]] - code - gateway/tests/test_multilingual_injection.py
+- [[dot-test_tier1_italian_injection()]] - code - gateway/tests/test_multilingual_injection.py
+- [[dot-test_tier1_japanese_injection()]] - code - gateway/tests/test_multilingual_injection.py
+- [[dot-test_tier1_korean_injection()]] - code - gateway/tests/test_multilingual_injection.py
+- [[dot-test_tier1_portuguese_injection()]] - code - gateway/tests/test_multilingual_injection.py
+- [[dot-test_tier2_bengali_injection()]] - code - gateway/tests/test_multilingual_injection.py
+- [[dot-test_tier2_persian_injection()]] - code - gateway/tests/test_multilingual_injection.py
+- [[dot-test_tier2_tagalog_injection()]] - code - gateway/tests/test_multilingual_injection.py
+- [[dot-test_tier2_tamil_injection()]] - code - gateway/tests/test_multilingual_injection.py
+- [[dot-test_tier2_ukrainian_injection()]] - code - gateway/tests/test_multilingual_injection.py
+- [[Set up PromptGuard with standard thresholds.]] - rationale - gateway/tests/test_multilingual_injection.py
+- [[Test Bengali injection detection (Tier 2).]] - rationale - gateway/tests/test_multilingual_injection.py
+- [[Test Dutch injection detection.]] - rationale - gateway/tests/test_multilingual_injection.py
+- [[Test Hindi injection detection.]] - rationale - gateway/tests/test_multilingual_injection.py
+- [[Test Italian injection detection.]] - rationale - gateway/tests/test_multilingual_injection.py
+- [[Test Japanese injection detection.]] - rationale - gateway/tests/test_multilingual_injection.py
+- [[Test Korean injection detection.]] - rationale - gateway/tests/test_multilingual_injection.py
+- [[Test PersianFarsi injection detection (Tier 2).]] - rationale - gateway/tests/test_multilingual_injection.py
+- [[Test Portuguese injection detection.]] - rationale - gateway/tests/test_multilingual_injection.py
+- [[Test Tagalog injection detection (Tier 2).]] - rationale - gateway/tests/test_multilingual_injection.py
+- [[Test Tamil injection detection (Tier 2).]] - rationale - gateway/tests/test_multilingual_injection.py
+- [[Test Ukrainian injection detection (Tier 2).]] - rationale - gateway/tests/test_multilingual_injection.py
+- [[Test injection attempts mixing languages.]] - rationale - gateway/tests/test_multilingual_injection.py
+- [[Test multilingual prompt injection detection across Tier 1 and Tier 2 languages.]] - rationale - gateway/tests/test_multilingual_injection.py
+- [[Test resistance to basic obfuscation attempts.]] - rationale - gateway/tests/test_multilingual_injection.py
+- [[Test that benign multilingual text is not blocked.]] - rationale - gateway/tests/test_multilingual_injection.py
+- [[Test that multilingual patterns have appropriate weights.]] - rationale - gateway/tests/test_multilingual_injection.py
+- [[Test that pattern matching is case insensitive where applicable.]] - rationale - gateway/tests/test_multilingual_injection.py
+- [[TestMultilingualInjection]] - code - gateway/tests/test_multilingual_injection.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -54,15 +55,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 12 edges to [[_COMMUNITY_RBAC & SOC Realtime]]
-- 10 edges to [[_COMMUNITY_Community 258]]
-- 9 edges to [[_COMMUNITY_Community 342]]
-- 5 edges to [[_COMMUNITY_Community 831]]
-- 4 edges to [[_COMMUNITY_Ingest API & Approval Routes]]
+- 3 edges to [[_COMMUNITY_Prompt Guard & Context Integrity]]
 
 ## Top bridge nodes
-- [[AuditExporter]] - degree 33, connects to 5 communities
-- [[TestAuditExporter]] - degree 15, connects to 3 communities
-- [[TestAuditStore]] - degree 12, connects to 3 communities
-- [[TestAuditEvent]] - degree 9, connects to 3 communities
-- [[test_audit_export.py]] - degree 8, connects to 3 communities
+- [[TestMultilingualInjection]] - degree 20, connects to 1 community
+- [[dot-setup_method()_20]] - degree 3, connects to 1 community

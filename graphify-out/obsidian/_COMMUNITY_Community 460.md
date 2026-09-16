@@ -1,34 +1,35 @@
 ---
 type: community
-cohesion: 0.11
-members: 19
+cohesion: 0.14
+members: 20
 ---
 
 # Community 460
 
-**Cohesion:** 0.11 - loosely connected
-**Members:** 19 nodes
+**Cohesion:** 0.14 - loosely connected
+**Members:** 20 nodes
 
 ## Members
-- [[Auto-Restart_1]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
-- [[Crash Diagnosis]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
-- [[Crash Recovery_2]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
-- [[Data Recovery]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
-- [[Immediate Assessment]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
-- [[Ledger Database_1]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
-- [[OOM Kill (Exit Code 137)_1]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
-- [[Option 1 Simple Restart (most common fix)]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
-- [[Option 2 Full Stop and Start]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
-- [[Option 3 Rebuild and Restart]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
-- [[Option 4 Volume-Safe Reset]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
-- [[Option 5 Nuclear Reset (DATA LOSS WARNING)]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
-- [[Pending Approvals]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
-- [[Post-Recovery Verification]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
-- [[Python Exception (Exit Code 1)]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
-- [[Recovery Procedures]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
-- [[Recurring Crashes]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
-- [[Related Notes_65]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
-- [[Segfault (Exit Code 139)]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[dot-test_detect_apple()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_detect_docker()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_detect_multiple()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_detect_none()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_detect_podman()]] - code - gateway/tests/test_runtime_engines.py
+- [[Auto-detect which container runtimes are available on this system.]] - rationale - gateway/runtime/__init__.py
+- [[Check system prerequisites for installation.]] - rationale - gateway/web/installer.py
+- [[Get available runtimes with recommendations.]] - rationale - gateway/web/installer.py
+- [[InstallConfig]] - code - gateway/web/installer.py
+- [[PrerequisiteCheck]] - code - gateway/web/installer.py
+- [[Request_7]] - code - gateway/web/installer.py
+- [[Serve the installer wizard HTML.]] - rationale - gateway/web/installer.py
+- [[Start the installation process.      This endpoint kicks off the install and ret]] - rationale - gateway/web/installer.py
+- [[TestDetectRuntime]] - code - gateway/tests/test_runtime_engines.py
+- [[check_prerequisites()]] - code - gateway/web/installer.py
+- [[detect_runtime()]] - code - gateway/runtime/__init__.py
+- [[get_runtimes()]] - code - gateway/web/installer.py
+- [[installer.py_2]] - code - gateway/web/installer.py
+- [[installer_page()]] - code - gateway/web/installer.py
+- [[start_install()]] - code - gateway/web/installer.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -38,7 +39,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 289]]
+- 5 edges to [[_COMMUNITY_Runtime Security Comparison & Intel Report]]
+- 3 edges to [[_COMMUNITY_Community 106]]
+- 3 edges to [[_COMMUNITY_Community 333]]
+- 2 edges to [[_COMMUNITY_Community 153]]
+- 1 edge to [[_COMMUNITY_Community 231]]
+- 1 edge to [[_COMMUNITY_Community 359]]
+- 1 edge to [[_COMMUNITY_Community 364]]
+- 1 edge to [[_COMMUNITY_Community 889]]
 
 ## Top bridge nodes
-- [[Crash Recovery_2]] - degree 9, connects to 1 community
+- [[TestDetectRuntime]] - degree 11, connects to 5 communities
+- [[detect_runtime()]] - degree 14, connects to 4 communities
+- [[installer.py_2]] - degree 10, connects to 2 communities
+- [[get_runtimes()]] - degree 4, connects to 1 community
+- [[InstallConfig]] - degree 3, connects to 1 community

@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[SharedMemoryManager.get_merged_memory_for_user()]] - code - gateway/security/shared_memory.py
+- [[SecureBrowser.detect_captcha()]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
 
 ## Live Query (requires Dataview plugin)
 

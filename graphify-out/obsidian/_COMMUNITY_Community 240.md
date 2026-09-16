@@ -10,38 +10,38 @@ members: 32
 **Members:** 32 nodes
 
 ## Members
-- [[Action requires approval but none granted_3]] - document - skills/custom/securebrowser/SKILL.md
-- [[Browser timeout_4]] - document - skills/custom/securebrowser/SKILL.md
-- [[CAPTCHA detected_4]] - document - skills/custom/securebrowser/SKILL.md
-- [[Rate limit exceeded_3]] - document - skills/custom/securebrowser/SKILL.md
-- [[URL not in allowlist_4]] - document - skills/custom/securebrowser/SKILL.md
-- [[1. Always Specify Risk Level_3]] - document - skills/custom/securebrowser/SKILL.md
-- [[1Password Integration_2]] - document - skills/custom/securebrowser/SKILL.md
-- [[2. Use Allowlisting Liberally_3]] - document - skills/custom/securebrowser/SKILL.md
-- [[3. Take Screenshots for Audit Trail_3]] - document - skills/custom/securebrowser/SKILL.md
-- [[4. Handle CAPTCHAs Gracefully_3]] - document - skills/custom/securebrowser/SKILL.md
-- [[5. Never Extract Credentials_3]] - document - skills/custom/securebrowser/SKILL.md
-- [[Approval Integration_3]] - document - skills/custom/securebrowser/SKILL.md
-- [[Audit Logging_4]] - document - skills/custom/securebrowser/SKILL.md
-- [[Best Practices_7]] - document - skills/custom/securebrowser/SKILL.md
-- [[Click Element_3]] - document - skills/custom/securebrowser/SKILL.md
-- [[Core Security Principles_3]] - document - skills/custom/securebrowser/SKILL.md
-- [[Example Apple ID Creation (Semi-Automated)_3]] - document - skills/custom/securebrowser/SKILL.md
-- [[Extract Data_3]] - document - skills/custom/securebrowser/SKILL.md
-- [[Gateway Integration]] - document - skills/custom/securebrowser/SKILL.md
-- [[Integration with AgentShroud]] - document - skills/custom/securebrowser/SKILL.md
-- [[Limitations_4]] - document - skills/custom/securebrowser/SKILL.md
-- [[Navigate to URL_3]] - document - skills/custom/securebrowser/SKILL.md
-- [[Risk Levels_3]] - document - skills/custom/securebrowser/SKILL.md
-- [[SKILL_194]] - document - skills/custom/securebrowser/SKILL.md
-- [[SecureBrowser - Enterprise Secure Browser Automation]] - document - skills/custom/securebrowser/SKILL.md
-- [[Security Architecture_5]] - document - skills/custom/securebrowser/SKILL.md
-- [[Security Configuration_3]] - document - skills/custom/securebrowser/SKILL.md
-- [[Security Guarantees_5]] - document - skills/custom/securebrowser/SKILL.md
-- [[See Also]] - document - skills/custom/securebrowser/SKILL.md
-- [[Take Screenshot_3]] - document - skills/custom/securebrowser/SKILL.md
-- [[Troubleshooting_37]] - document - skills/custom/securebrowser/SKILL.md
-- [[Usage_130]] - document - skills/custom/securebrowser/SKILL.md
+- [[3A.1 Re-enable seccomp profiles ✅]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[3A.2 Make OpenClaw container read-only ✅]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[3A.3 Remove NET_RAW capability ✅]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[3A.4 Add mDNSBonjour disable ✅]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[3A.5 Move gateway password to Docker secrets ✅]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[3A.6 Create verify-security.sh ✅]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[3A.7 Create scan.sh (OpenSCAP) ✅]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[3A.8 Change DM policy to allowlist ✅]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[3B.1 Create killswitch.sh ✅]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[Created]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[DM Policy Allowlist Configuration]] - concept - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[Disable seccomp (if causing startup failures)]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[Emergency container access]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[Files Changed]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[Gateway Password Moved to Docker Secrets]] - rationale - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[Kill Switch (freeze  shutdown  disconnect)]] - concept - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[Modified]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[NET_RAW Capability Removal]] - rationale - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[Next Steps_3]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[No Changes (Already Correct)]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[PHASE_3A_3B_IMPLEMENTATION]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[Phase 3A Testing]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[Phase 3A Security Completion (COMPLETE)]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[Phase 3B.1 Testing]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[Phase 3B.1 Kill Switch (COMPLETE)]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[Pre-Test Preparation]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[Re-enable Seccomp Profiles (ARM64 syscalls)]] - rationale - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[Restore hardcoded gateway password (if secret mounting fails)]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[Rollback Plan]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[Security Improvements Summary]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[Testing Checklist]] - document - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
+- [[verify-security.sh (13 Security Checks)]] - concept - docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -49,3 +49,18 @@ members: 32
 TABLE source_file, type FROM #community/Community_240
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_Community 994]]
+- 1 edge to [[_COMMUNITY_Community 451]]
+- 1 edge to [[_COMMUNITY_Community 58]]
+- 1 edge to [[_COMMUNITY_Community 44]]
+- 1 edge to [[_COMMUNITY_Community 728]]
+- 1 edge to [[_COMMUNITY_Community 731]]
+
+## Top bridge nodes
+- [[Kill Switch (freeze  shutdown  disconnect)]] - degree 3, connects to 2 communities
+- [[PHASE_3A_3B_IMPLEMENTATION]] - degree 14, connects to 1 community
+- [[DM Policy Allowlist Configuration]] - degree 2, connects to 1 community
+- [[Gateway Password Moved to Docker Secrets]] - degree 2, connects to 1 community
+- [[NET_RAW Capability Removal]] - degree 2, connects to 1 community

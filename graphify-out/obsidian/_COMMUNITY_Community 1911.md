@@ -10,7 +10,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[v0.9.0 Human Interface Testing Guide]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
+- [[face_animation_pause() — freezes canvas redraw to protect WiFi stack]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
 
 ## Live Query (requires Dataview plugin)
 

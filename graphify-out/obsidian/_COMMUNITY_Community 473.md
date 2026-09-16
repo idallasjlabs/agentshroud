@@ -1,34 +1,34 @@
 ---
 type: community
-cohesion: 0.13
+cohesion: 0.11
 members: 19
 ---
 
 # Community 473
 
-**Cohesion:** 0.13 - loosely connected
+**Cohesion:** 0.11 - loosely connected
 **Members:** 19 nodes
 
 ## Members
-- [[._emit_privacy_event()]] - code - gateway/proxy/mcp_proxy.py
-- [[._execute_tool_call()]] - code - gateway/proxy/mcp_proxy.py
-- [[._extract_egress_targets()]] - code - gateway/proxy/mcp_proxy.py
-- [[._sanitize_admin_private_data()]] - code - gateway/proxy/mcp_proxy.py
-- [[.check_approval_required()]] - code - gateway/proxy/mcp_proxy.py
-- [[.get_stats()_5]] - code - gateway/proxy/mcp_proxy.py
-- [[.process_tool_call()]] - code - gateway/proxy/mcp_proxy.py
-- [[.process_tool_result()_1]] - code - gateway/proxy/mcp_proxy.py
-- [[.send_request()_1]] - code - gateway/proxy/mcp_proxy.py
-- [[Actually execute the tool call against the MCP server.]] - rationale - gateway/proxy/mcp_proxy.py
-- [[Any_18]] - code - gateway/proxy/mcp_proxy.py
-- [[Best-effort privacy event emission.]] - rationale - gateway/proxy/mcp_proxy.py
-- [[Check if a tool call requires approval and wait for it if needed.]] - rationale - gateway/proxy/mcp_proxy.py
-- [[Extract outbound URL-like targets from nested MCP tool parameters.]] - rationale - gateway/proxy/mcp_proxy.py
-- [[Get proxy statistics.]] - rationale - gateway/proxy/mcp_proxy.py
-- [[Process a tool result coming back (for cases where execution happens externally)]] - rationale - gateway/proxy/mcp_proxy.py
-- [[Process an MCP tool call through the security pipeline.          Args]] - rationale - gateway/proxy/mcp_proxy.py
-- [[Redact admin-private data from tool results for non-owner agents.]] - rationale - gateway/proxy/mcp_proxy.py
-- [[Send an HTTP request to the MCP server.]] - rationale - gateway/proxy/mcp_proxy.py
+- [[dot-agentsskillsi-pmSKILL]] - document - .agents/skills/i-pm/SKILL.md
+- [[Assigning Work]] - document - .agents/skills/i-pm/SKILL.md
+- [[CHANGELOG.md Updates]] - document - .agents/skills/i-pm/SKILL.md
+- [[Continuity Files]] - document - .agents/skills/i-pm/SKILL.md
+- [[Definition of Done (from AGENTS.md)]] - document - .agents/skills/i-pm/SKILL.md
+- [[Escalation]] - document - .agents/skills/i-pm/SKILL.md
+- [[Known Risks]] - document - .agents/skills/i-pm/SKILL.md
+- [[Project Roadmap]] - document - .agents/skills/i-pm/SKILL.md
+- [[Quick Status (for chatTelegram)]] - document - .agents/skills/i-pm/SKILL.md
+- [[README.md Updates]] - document - .agents/skills/i-pm/SKILL.md
+- [[Risk Management]] - document - .agents/skills/i-pm/SKILL.md
+- [[Role_48]] - document - .agents/skills/i-pm/SKILL.md
+- [[Skill Project Management (PM)]] - document - .agents/skills/i-pm/SKILL.md
+- [[Status Reporting]] - document - .agents/skills/i-pm/SKILL.md
+- [[Task Coordination]] - document - .agents/skills/i-pm/SKILL.md
+- [[Tracking Format]] - document - .agents/skills/i-pm/SKILL.md
+- [[`session-notesCONTINUE-YYYY-MM-DD.md` (daily snapshot)]] - document - .agents/skills/i-pm/SKILL.md
+- [[`session-notesCONTINUE.md` (always current)]] - document - .agents/skills/i-pm/SKILL.md
+- [[`session-notesSESSION_SUMMARY_YYYY-MM-DD.md` (session report)]] - document - .agents/skills/i-pm/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,20 +36,3 @@ members: 19
 TABLE source_file, type FROM #community/Community_473
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 12 edges to [[_COMMUNITY_Community 44]]
-- 4 edges to [[_COMMUNITY_Community 39]]
-- 3 edges to [[_COMMUNITY_Community 154]]
-- 2 edges to [[_COMMUNITY_Community 261]]
-- 1 edge to [[_COMMUNITY_Community 21]]
-- 1 edge to [[_COMMUNITY_Community 206]]
-- 1 edge to [[_COMMUNITY_Community 324]]
-- 1 edge to [[_COMMUNITY_Community 109]]
-
-## Top bridge nodes
-- [[Any_18]] - degree 13, connects to 6 communities
-- [[._execute_tool_call()]] - degree 8, connects to 3 communities
-- [[.process_tool_result()_1]] - degree 6, connects to 3 communities
-- [[.process_tool_call()]] - degree 9, connects to 2 communities
-- [[._emit_privacy_event()]] - degree 5, connects to 2 communities
