@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_bots_ssh_exec_wrapper.py"
 type: "rationale"
-community: "Community 140"
+community: "Community 149"
 location: "L65"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_140
+  - community/Community_149
 ---
 
 # --noproxy gateway is required so the call reaches the control-plane directly.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_wrapper_forces_noproxy_gateway()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_140
+#graphify/rationale #graphify/EXTRACTED #community/Community_149

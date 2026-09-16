@@ -1,12 +1,12 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "Community 1079"
+community: "Community 259"
 location: "L110"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1079
+  - community/Community_259
 ---
 
 # 2) ⚠️ NO SECURITY THEATER (NON-NEGOTIABLE)
@@ -19,4 +19,4 @@ tags:
 - [[RULE D — TEST TABLE FORMAT FOR STATUS REPORTS]] - `contains` [EXTRACTED]
 - [[RULE E — DEFINITION OF DONE]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1079
+#graphify/document #graphify/EXTRACTED #community/Community_259

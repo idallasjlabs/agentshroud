@@ -1,12 +1,12 @@
 ---
 source_file: "docs/diagrams/03-data.md"
 type: "document"
-community: "Community 556"
+community: "Community 572"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_556
+  - community/Community_572
 ---
 
 # 03-data.md
@@ -17,6 +17,6 @@ tags:
 - [[Data Flow Diagram]] - `conceptually_related_to` [EXTRACTED]
 - [[Data Lineage Diagram]] - `conceptually_related_to` [EXTRACTED]
 - [[Entity Relationship Diagram (ledger, approval_items)]] - `conceptually_related_to` [EXTRACTED]
-- [[README_120]] - `references` [EXTRACTED]
+- [[diagramsREADME]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_556
+#graphify/document #graphify/EXTRACTED #community/Community_572

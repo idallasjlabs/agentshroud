@@ -1,11 +1,11 @@
 ---
 source_file: "docs/agentshroud-knowledge.md"
 type: "concept"
-community: "Community 799"
+community: "Community 429"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Community_799
+  - community/Community_429
 ---
 
 # 25-Domain Prompt Injection Defense Framework
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[prompt_guard module (observatory mode — too aggressive for enforce)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Community_799
+#graphify/concept #graphify/INFERRED #community/Community_429

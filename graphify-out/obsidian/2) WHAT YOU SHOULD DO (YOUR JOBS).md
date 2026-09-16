@@ -1,12 +1,12 @@
 ---
 source_file: "AGENTS.md"
 type: "document"
-community: "Community 280"
+community: "Community 324"
 location: "L48"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_280
+  - community/Community_324
 ---
 
 # 2) WHAT YOU SHOULD DO (YOUR JOBS)
@@ -17,4 +17,4 @@ tags:
 - [[C) Safe Refactor (Secondary Job)]] - `contains` [EXTRACTED]
 - [[Goal Codex is a secondarytertiary agent used for test augmentation, validation, and safe refactors AFTER tests pass.]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_280
+#graphify/document #graphify/EXTRACTED #community/Community_324
