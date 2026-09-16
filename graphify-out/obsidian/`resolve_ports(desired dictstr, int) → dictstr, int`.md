@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Other/port_manager.py.md"
 type: "document"
-community: "Community 971"
+community: "Community 1020"
 location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_971
+  - community/Community_1020
 ---
 
 # `resolve_ports(desired: dict[str, int]) → dict[str, int]`
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Key Class `PortManager`]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_971
+#graphify/document #graphify/EXTRACTED #community/Community_1020

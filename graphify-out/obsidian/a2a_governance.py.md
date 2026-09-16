@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/a2a_governance.py"
 type: "code"
-community: "Community 40"
+community: "Community 39"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_40
+  - community/Community_39
 ---
 
 # a2a_governance.py
@@ -19,8 +19,6 @@ tags:
 - [[A2AMessage]] - `contains` [EXTRACTED]
 - [[A2AMessageType]] - `contains` [EXTRACTED]
 - [[A2APeer]] - `contains` [EXTRACTED]
-- [[Enum]] - `imports_from` [EXTRACTED]
-- [[start.sh]] - `conceptually_related_to` [INFERRED]
-- [[trust_manager.py]] - `references` [EXTRACTED]
+- [[Enum_2]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_40
+#graphify/code #graphify/EXTRACTED #community/Community_39

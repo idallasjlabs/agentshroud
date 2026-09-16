@@ -1,19 +1,19 @@
 ---
 source_file: "scripts/triage-cve-mitigations.py"
 type: "code"
-community: "Community 188"
-location: "L857"
+community: "Community 158"
+location: "L865"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_188
+  - community/Community_158
 ---
 
 # _py_list_literal()
 
 ## Connections
 - [[Render a Python list-of-strings literal matching the file's style.]] - `rationale_for` [EXTRACTED]
-- [[rewrite_registry_text()_1]] - `calls` [EXTRACTED]
+- [[rewrite_registry_text()]] - `calls` [EXTRACTED]
 - [[triage-cve-mitigations.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_188
+#graphify/code #graphify/EXTRACTED #community/Community_158

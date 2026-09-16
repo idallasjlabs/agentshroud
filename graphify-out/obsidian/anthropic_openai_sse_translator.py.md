@@ -1,20 +1,19 @@
 ---
 source_file: "gateway/proxy/anthropic_openai_sse_translator.py"
 type: "code"
-community: "Community 126"
+community: "Community 79"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_126
+  - community/Community_79
 ---
 
 # anthropic_openai_sse_translator.py
 
 ## Connections
-- [[String]] - `imports` [EXTRACTED]
 - [[_random_msg_id()]] - `contains` [EXTRACTED]
 - [[_sse()]] - `contains` [EXTRACTED]
 - [[translate_openai_sse_to_anthropic()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_126
+#graphify/code #graphify/EXTRACTED #community/Community_79

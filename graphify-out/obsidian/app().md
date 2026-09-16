@@ -1,18 +1,18 @@
 ---
-source_file: "chatbot/test_main.py"
+source_file: "gateway/tests/test_version_routes.py"
 type: "code"
-community: "Community 86"
-location: "L21"
+community: "Community 433"
+location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_86
+  - community/Community_433
 ---
 
 # app()
 
 ## Connections
-- [[Import chatbot.main with a fresh module state (no real OpenAI).]] - `rationale_for` [EXTRACTED]
-- [[test_main.py]] - `contains` [EXTRACTED]
+- [[Create a test FastAPI app with version routes.]] - `rationale_for` [EXTRACTED]
+- [[test_version_routes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_86
+#graphify/code #graphify/EXTRACTED #community/Community_433

@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-sav/SKILL.md"
 type: "document"
-community: "Community 244"
+community: "Community 257"
 location: "L284"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_244
+  - community/Community_257
 ---
 
 # `07 - Errors & Troubleshooting/[ErrorName].md` — ONE PER ERROR CATEGORY
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[REQUIRED NOTES — PRODUCE EVERY ONE OF THESE]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_244
+#graphify/document #graphify/EXTRACTED #community/Community_257

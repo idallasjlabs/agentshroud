@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "Community 281"
+community: "Community 288"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_281
+  - community/Community_288
 ---
 
 # a2a_policy.py
@@ -18,7 +18,7 @@ tags:
 - [[A2APolicyConfig]] - `contains` [EXTRACTED]
 - [[A2APolicyDecision]] - `contains` [EXTRACTED]
 - [[A2APolicyEngine_1]] - `contains` [EXTRACTED]
-- [[Enum]] - `imports_from` [EXTRACTED]
+- [[Enum_3]] - `imports_from` [EXTRACTED]
 - [[Hermes A2A Plugin Upstream Gaps (83701, 8053480779, 78298, 77872, 81042)]] - `implements` [EXTRACTED]
 - [[_address_is_public()]] - `contains` [EXTRACTED]
 - [[_canonicalize_ip_literal()]] - `contains` [EXTRACTED]
@@ -27,6 +27,6 @@ tags:
 - [[_norm()]] - `contains` [EXTRACTED]
 - [[egress_filter.py_is_private_ip SSRF Encoding-Bypass Bug]] - `rationale_for` [EXTRACTED]
 - [[is_safe_a2a_callback_url()]] - `contains` [EXTRACTED]
-- [[record_decision()]] - `imports` [EXTRACTED]
+- [[record_decision]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_281
+#graphify/code #graphify/EXTRACTED #community/Community_288

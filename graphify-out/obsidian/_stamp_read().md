@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/security-scheduler.sh"
 type: "code"
-community: "Community 427"
+community: "Community 632"
 location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_427
+  - community/Community_632
 ---
 
 # _stamp_read()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[security-scheduler.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_427
+#graphify/code #graphify/EXTRACTED #community/Community_632

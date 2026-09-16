@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md"
 type: "document"
-community: "Community 383"
+community: "Community 385"
 location: "L144"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_383
+  - community/Community_385
 ---
 
 # `<think>` tag stripping
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Streaming]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_383
+#graphify/document #graphify/EXTRACTED #community/Community_385

@@ -1,29 +1,19 @@
 ---
-source_file: "firmware/voice-terminal/main/app_main.c"
+source_file: "firmware/voice-terminal/components/lvgl_kawaii_face/examples/basic_cycle/main/main.c"
 type: "code"
-community: "Community 308"
-location: "L935"
+community: "Community 272"
+location: "L86"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_308
+  - community/Community_272
 ---
 
 # app_main()
 
 ## Connections
-- [[_build_ws_url()]] - `calls` [EXTRACTED]
-- [[app_main.c]] - `contains` [EXTRACTED]
-- [[audio_init()]] - `calls` [INFERRED]
-- [[audio_preinit()]] - `calls` [INFERRED]
-- [[ota_check()]] - `calls` [INFERRED]
-- [[ui_face_init()]] - `calls` [INFERRED]
-- [[ui_face_set_agent()]] - `calls` [INFERRED]
-- [[ui_face_set_state()]] - `calls` [INFERRED]
-- [[ui_init()]] - `calls` [EXTRACTED]
-- [[ui_update()]] - `calls` [EXTRACTED]
-- [[wakeword_init()]] - `calls` [INFERRED]
-- [[wifi_init()]] - `calls` [EXTRACTED]
-- [[ws_client_create()]] - `calls` [INFERRED]
+- [[face_animation_init()]] - `calls` [INFERRED]
+- [[face_set_emotion()]] - `calls` [INFERRED]
+- [[main.c]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_308
+#graphify/code #graphify/INFERRED #community/Community_272

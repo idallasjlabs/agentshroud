@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "Community 89"
-location: "L1564"
+community: "Voice Gateway Routing Tests"
+location: "L1574"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_89
+  - community/Voice_Gateway_Routing_Tests
 ---
 
 # ?agent=hermes must route to _call_agent (gateway /forward), not _call_llm.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_ws_hermes_agent_calls_call_agent()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_89
+#graphify/rationale #graphify/EXTRACTED #community/Voice_Gateway_Routing_Tests

@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/soc/static/soc.js"
+source_file: "scripts/sunday-upgrade-apply.sh"
 type: "code"
-community: "Community 84"
-location: "L49"
+community: "Community 353"
+location: "L121"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_84
+  - community/Community_353
 ---
 
 # _ts()
 
 ## Connections
-- [[_appendLogLine()]] - `calls` [EXTRACTED]
-- [[soc.js]] - `contains` [EXTRACTED]
+- [[sunday-upgrade-apply.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_84
+#graphify/code #graphify/EXTRACTED #community/Community_353

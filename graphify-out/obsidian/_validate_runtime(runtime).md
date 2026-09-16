@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Runtime/security.py.md"
 type: "document"
-community: "Community 682"
+community: "Community 705"
 location: "L58"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_682
+  - community/Community_705
 ---
 
 # _validate_runtime(runtime)
 
 ## Connections
-- [[Function Details_25]] - `contains` [EXTRACTED]
+- [[Function Details_37]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_682
+#graphify/document #graphify/EXTRACTED #community/Community_705

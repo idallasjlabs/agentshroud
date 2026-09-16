@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/check-vendor-compat.sh"
 type: "code"
-community: "Community 980"
-location: "L47"
+community: "Community 707"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_980
+  - community/Community_707
 ---
 
 # _run_cleanup()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[check-vendor-compat.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_980
+#graphify/code #graphify/EXTRACTED #community/Community_707
