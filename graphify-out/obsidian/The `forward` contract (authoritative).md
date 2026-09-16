@@ -1,12 +1,12 @@
 ---
 source_file: "shortcuts/README.md"
 type: "document"
-community: "Community 589"
+community: "Community 606"
 location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_589
+  - community/Community_606
 ---
 
 # The `/forward` contract (authoritative)
@@ -17,4 +17,4 @@ tags:
 - [[Response body — `ForwardResponse`]] - `contains` [EXTRACTED]
 - [[iOS  macOS Shortcuts — Relay to AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_589
+#graphify/document #graphify/EXTRACTED #community/Community_606

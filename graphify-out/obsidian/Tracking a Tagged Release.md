@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/updating.md"
 type: "document"
-community: "Community 529"
+community: "Community 538"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_529
+  - community/Community_538
 ---
 
 # Tracking a Tagged Release
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Update from Git]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_529
+#graphify/document #graphify/EXTRACTED #community/Community_538

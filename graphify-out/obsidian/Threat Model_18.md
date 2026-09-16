@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/key_vault.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/agent_isolation.py.md"
 type: "document"
-community: "Community 505"
+community: "Community 652"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_505
+  - community/Community_652
 ---
 
 # Threat Model
 
 ## Connections
-- [[key_vault.py_2]] - `contains` [EXTRACTED]
+- [[agent_isolation.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_505
+#graphify/document #graphify/EXTRACTED #community/Community_652

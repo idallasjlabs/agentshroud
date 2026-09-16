@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_intel_pipeline.py"
 type: "rationale"
-community: "Community 58"
+community: "Community 125"
 location: "L37"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_58
+  - community/Community_125
 ---
 
 # Tests for Pydantic model validation.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestCompetitiveIntelReportSchema]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_58
+#graphify/rationale #graphify/EXTRACTED #community/Community_125

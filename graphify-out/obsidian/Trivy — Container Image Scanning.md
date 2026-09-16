@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-supply-chain.md"
 type: "document"
-community: "Community 540"
+community: "Community 551"
 location: "L56"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_540
+  - community/Community_551
 ---
 
 # Trivy — Container Image Scanning
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Detailed Profiles]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_540
+#graphify/document #graphify/EXTRACTED #community/Community_551

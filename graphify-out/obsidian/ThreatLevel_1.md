@@ -1,25 +1,21 @@
 ---
-source_file: "gateway/security/browser_security.py"
+source_file: "gateway/security/git_guard.py"
 type: "code"
-community: "Community 165"
-location: "L23"
+community: "Voice Gateway STT & Browser Security"
+location: "L27"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_165
+  - graphify/EXTRACTED
+  - community/Voice_Gateway_STT__Browser_Security
 ---
 
 # ThreatLevel
 
 ## Connections
-- [[.check_url_reputation()]] - `references` [EXTRACTED]
-- [[IntEnum]] - `inherits` [EXTRACTED]
-- [[MockThreatLevel]] - `shares_data_with` [AMBIGUOUS]
-- [[TestCredentialProtection]] - `uses` [INFERRED]
-- [[TestScreenshotAnalysis]] - `uses` [INFERRED]
-- [[TestSocialEngineeringDetection]] - `uses` [INFERRED]
-- [[TestURLReputation]] - `uses` [INFERRED]
-- [[ThreatLevel_2]] - `semantically_similar_to` [INFERRED]
-- [[browser_security.py]] - `contains` [EXTRACTED]
+- [[Enum_3]] - `inherits` [EXTRACTED]
+- [[Threat levels for detected issues.]] - `rationale_for` [EXTRACTED]
+- [[ThreatLevel]] - `semantically_similar_to` [INFERRED]
+- [[git_guard.py]] - `contains` [EXTRACTED]
+- [[str_2]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_165
+#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_STT__Browser_Security

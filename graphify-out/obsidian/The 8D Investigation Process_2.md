@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-eightd/SKILL.md"
 type: "document"
-community: "Community 237"
+community: "Community 244"
 location: "L58"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_237
+  - community/Community_244
 ---
 
 # The 8D Investigation Process
@@ -23,4 +23,4 @@ tags:
 - [[D7 — Systemic Prevention_2]] - `contains` [EXTRACTED]
 - [[D8 — Documentation & Recognition_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_237
+#graphify/document #graphify/EXTRACTED #community/Community_244

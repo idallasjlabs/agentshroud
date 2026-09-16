@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "rationale"
-community: "Community 28"
+community: "Proxy Sidecar & Forwarder"
 location: "L245"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_28
+  - community/Proxy_Sidecar__Forwarder
 ---
 
 # Trigger freeze mode — verify pipeline blocks all traffic.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_kill_switch_freezes()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_28
+#graphify/rationale #graphify/EXTRACTED #community/Proxy_Sidecar__Forwarder

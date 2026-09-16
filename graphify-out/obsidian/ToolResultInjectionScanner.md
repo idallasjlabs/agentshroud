@@ -1,34 +1,34 @@
 ---
 source_file: "gateway/security/tool_result_injection.py"
 type: "code"
-community: "Memory Lifecycle & Egress Filtering"
+community: "Community 101"
 location: "L173"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Memory_Lifecycle__Egress_Filtering
+  - community/Community_101
 ---
 
 # ToolResultInjectionScanner
 
 ## Connections
-- [[.__init__()_14]] - `calls` [EXTRACTED]
-- [[.__init__()_123]] - `method` [EXTRACTED]
-- [[._detect_encoded_injection()]] - `method` [EXTRACTED]
-- [[._detect_unicode_obfuscation()]] - `method` [EXTRACTED]
-- [[.scan_tool_result()_3]] - `method` [EXTRACTED]
-- [[.setup_method()_36]] - `calls` [EXTRACTED]
-- [[Action]] - `uses` [INFERRED]
-- [[Any_8]] - `uses` [INFERRED]
-- [[Exception_2]] - `uses` [INFERRED]
+- [[dot-__init__()_12]] - `calls` [EXTRACTED]
+- [[dot-__init__()_23]] - `method` [EXTRACTED]
+- [[dot-_detect_encoded_injection()]] - `method` [EXTRACTED]
+- [[dot-_detect_unicode_obfuscation()]] - `method` [EXTRACTED]
+- [[dot-scan_tool_result()_2]] - `method` [EXTRACTED]
+- [[dot-setup_method()_3]] - `calls` [EXTRACTED]
+- [[Action_1]] - `uses` [INFERRED]
+- [[Any_2]] - `uses` [INFERRED]
+- [[Exception_1]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
-- [[RBACManager]] - `uses` [INFERRED]
-- [[Resource]] - `uses` [INFERRED]
+- [[RBACManager_1]] - `uses` [INFERRED]
+- [[Resource_1]] - `uses` [INFERRED]
 - [[RovoBlast Attack (Atlassian Rovo AI)]] - `implements` [EXTRACTED]
 - [[Scanner for detecting prompt injection in tool results.]] - `rationale_for` [EXTRACTED]
-- [[SecurityPipeline_2]] - `uses` [INFERRED]
+- [[SecurityPipeline]] - `uses` [INFERRED]
 - [[TestCleanContent]] - `uses` [INFERRED]
 - [[TestEncodedInjection]] - `uses` [INFERRED]
 - [[TestHighSeverity]] - `uses` [INFERRED]
@@ -37,14 +37,14 @@ tags:
 - [[TestToolResultInjectionScanner]] - `uses` [INFERRED]
 - [[TestUnicodeObfuscation]] - `uses` [INFERRED]
 - [[ToolResultSanitizer_1]] - `conceptually_related_to` [INFERRED]
-- [[ToolTier]] - `uses` [INFERRED]
+- [[ToolTier_2]] - `uses` [INFERRED]
 - [[WS-E RT-2 Inbound Encoding Bypass Fix Rationale]] - `rationale_for` [EXTRACTED]
-- [[_make_pipeline()_4]] - `calls` [EXTRACTED]
+- [[_make_pipeline()_1]] - `calls` [EXTRACTED]
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
-- [[lifespan()_1]] - `calls` [EXTRACTED]
+- [[lifespan()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[middleware.py]] - `imports` [EXTRACTED]
-- [[run()_3]] - `calls` [EXTRACTED]
+- [[run()_4]] - `calls` [EXTRACTED]
 - [[scanner()]] - `calls` [EXTRACTED]
 - [[test_tool_injection_encoded_check_uses_full_ruleset()]] - `calls` [EXTRACTED]
 - [[test_tool_injection_hex_encoded_uses_full_ruleset()]] - `calls` [EXTRACTED]
@@ -54,4 +54,4 @@ tags:
 - [[test_ws_e_rt2_inbound_encoding.py]] - `references` [EXTRACTED]
 - [[tool_result_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Memory_Lifecycle__Egress_Filtering
+#graphify/code #graphify/EXTRACTED #community/Community_101

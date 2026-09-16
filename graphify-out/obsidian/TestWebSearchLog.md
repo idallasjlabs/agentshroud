@@ -1,27 +1,27 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "Community 775"
+community: "Community 817"
 location: "L3689"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_775
+  - community/Community_817
 ---
 
 # TestWebSearchLog
 
 ## Connections
-- [[.test_raw_web_search_json_collaborator_safe_notice()]] - `method` [EXTRACTED]
-- [[.test_raw_web_search_json_owner_message()]] - `method` [EXTRACTED]
-- [[.test_web_search_log_called_with_correct_params()]] - `method` [EXTRACTED]
-- [[.test_web_search_no_egress_filter()]] - `method` [EXTRACTED]
-- [[.test_web_search_query_truncation()]] - `method` [EXTRACTED]
-- [[CollaboratorActivityTracker]] - `uses` [INFERRED]
-- [[PIIConfig]] - `uses` [INFERRED]
+- [[dot-test_raw_web_search_json_collaborator_safe_notice()]] - `method` [EXTRACTED]
+- [[dot-test_raw_web_search_json_owner_message()]] - `method` [EXTRACTED]
+- [[dot-test_web_search_log_called_with_correct_params()]] - `method` [EXTRACTED]
+- [[dot-test_web_search_no_egress_filter()]] - `method` [EXTRACTED]
+- [[dot-test_web_search_query_truncation()]] - `method` [EXTRACTED]
+- [[CollaboratorActivityTracker_1]] - `uses` [INFERRED]
+- [[PIIConfig_2]] - `uses` [INFERRED]
 - [[PIISanitizer]] - `uses` [INFERRED]
-- [[TelegramAPIProxy]] - `uses` [INFERRED]
+- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
 - [[Tests for _trigger_web_search_log and raw web_search JSON outbound handling.]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_775
+#graphify/code #graphify/EXTRACTED #community/Community_817

@@ -1,30 +1,23 @@
 ---
 source_file: "gateway/tests/test_subagent_governance.py"
 type: "code"
-community: "Community 1062"
-location: "L74"
+community: "Community 1086"
+location: "L70"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_1062
+  - graphify/EXTRACTED
+  - community/Community_1086
 ---
 
 # TestToolAuthorization
 
 ## Connections
-- [[.test_allowed_tool()]] - `method` [EXTRACTED]
-- [[.test_denied_in_monitor_still_allows()]] - `method` [EXTRACTED]
-- [[.test_denied_tool_cronjob()]] - `method` [EXTRACTED]
-- [[.test_denied_tool_delegate_task()]] - `method` [EXTRACTED]
-- [[.test_denied_tool_memory()]] - `method` [EXTRACTED]
-- [[.test_denied_tool_send_message()]] - `method` [EXTRACTED]
-- [[GovernanceAction]] - `uses` [INFERRED]
-- [[GovernanceConfig]] - `uses` [INFERRED]
-- [[GovernanceEventType]] - `uses` [INFERRED]
-- [[OutputTrustConfig]] - `uses` [INFERRED]
-- [[PrivilegePolicy]] - `uses` [INFERRED]
-- [[ResourceBudget]] - `uses` [INFERRED]
-- [[SubagentGovernance]] - `uses` [INFERRED]
+- [[dot-test_allowed_tool()]] - `method` [EXTRACTED]
+- [[dot-test_denied_in_monitor_still_allows()]] - `method` [EXTRACTED]
+- [[dot-test_denied_tool_cronjob()]] - `method` [EXTRACTED]
+- [[dot-test_denied_tool_delegate_task()]] - `method` [EXTRACTED]
+- [[dot-test_denied_tool_memory()]] - `method` [EXTRACTED]
+- [[dot-test_denied_tool_send_message()]] - `method` [EXTRACTED]
 - [[test_subagent_governance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_1062
+#graphify/code #graphify/EXTRACTED #community/Community_1086

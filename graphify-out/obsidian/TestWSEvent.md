@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_soc_models.py"
 type: "code"
-community: "Community 69"
+community: "Community 68"
 location: "L135"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_69
+  - community/Community_68
 ---
 
 # TestWSEvent
 
 ## Connections
-- [[.test_construction()_2]] - `method` [EXTRACTED]
+- [[dot-test_construction()_2]] - `method` [EXTRACTED]
 - [[test_soc_models.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_69
+#graphify/code #graphify/EXTRACTED #community/Community_68

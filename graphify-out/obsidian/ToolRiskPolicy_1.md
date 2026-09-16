@@ -1,40 +1,26 @@
 ---
-source_file: "gateway/ingest_api/config.py"
+source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "Community 23"
-location: "L191"
+community: "Enhanced Approval Queue"
+location: "L119"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_23
+  - community/Enhanced_Approval_Queue
 ---
 
 # ToolRiskPolicy
 
 ## Connections
-- [[.test_restart_recovery_preserves_timeout_action()]] - `calls` [EXTRACTED]
-- [[Any]] - `uses` [INFERRED]
-- [[ApprovalQueueConfig]] - `uses` [INFERRED]
-- [[ApprovalQueueItem]] - `uses` [INFERRED]
-- [[ApprovalRequest]] - `uses` [INFERRED]
+- [[dot-_schedule_timeout()]] - `references` [EXTRACTED]
+- [[dot-get_policy_for_tier()]] - `references` [EXTRACTED]
+- [[dot-submit()]] - `references` [EXTRACTED]
+- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
+- [[ApprovalQueueItem_2]] - `uses` [INFERRED]
+- [[ApprovalRequest_2]] - `uses` [INFERRED]
 - [[ApprovalStore]] - `uses` [INFERRED]
-- [[BaseModel]] - `inherits` [EXTRACTED]
-- [[BotConfig]] - `uses` [INFERRED]
-- [[EnhancedApprovalQueue]] - `uses` [INFERRED]
-- [[MFAGuard]] - `uses` [INFERRED]
-- [[Risk policy configuration for a tool tier]] - `rationale_for` [EXTRACTED]
-- [[SSHConfig]] - `uses` [INFERRED]
-- [[TestApprovalWorkflow]] - `uses` [INFERRED]
-- [[TestMCPProxyIntegration]] - `uses` [INFERRED]
-- [[TestPersistence]] - `uses` [INFERRED]
-- [[TestToolRiskClassification]] - `uses` [INFERRED]
+- [[MFAGuard_2]] - `uses` [INFERRED]
 - [[ToolRiskConfig]] - `uses` [INFERRED]
 - [[ToolRiskPolicy]] - `uses` [INFERRED]
-- [[WebSocket_1]] - `uses` [INFERRED]
-- [[_HangingWebSocket_1]] - `uses` [INFERRED]
-- [[config.py]] - `contains` [EXTRACTED]
-- [[enhanced_queue.py]] - `imports` [EXTRACTED]
-- [[test_enhanced_approval.py]] - `imports` [EXTRACTED]
-- [[tool_risk_config()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_23
+#graphify/code #graphify/INFERRED #community/Enhanced_Approval_Queue

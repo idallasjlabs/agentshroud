@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
 type: "document"
-community: "Community 767"
+community: "Community 806"
 location: "L24"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_767
+  - community/Community_806
 ---
 
 # Traditional (Insecure) Method ❌
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Workflow Secure Credential Sharing]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_767
+#graphify/document #graphify/EXTRACTED #community/Community_806

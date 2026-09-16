@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/dns_filter.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/resource_guard.py.md"
 type: "document"
-community: "Community 583"
+community: "Community 517"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_583
+  - community/Community_517
 ---
 
 # Threat Model
 
 ## Connections
-- [[dns_filter.py_2]] - `contains` [EXTRACTED]
+- [[resource_guard.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_583
+#graphify/document #graphify/EXTRACTED #community/Community_517

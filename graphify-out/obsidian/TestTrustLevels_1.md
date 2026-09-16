@@ -1,23 +1,26 @@
 ---
-source_file: "gateway/tests/test_trust_manager.py"
+source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "Progressive Trust"
-location: "L54"
+community: "Community 89"
+location: "L121"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Progressive_Trust
+  - community/Community_89
 ---
 
 # TestTrustLevels
 
 ## Connections
-- [[.test_default_config()_8]] - `method` [EXTRACTED]
-- [[.test_trust_level_ordering()]] - `method` [EXTRACTED]
-- [[Test trust level hierarchy and thresholds.]] - `rationale_for` [EXTRACTED]
-- [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustLevel_1]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
-- [[test_trust_manager.py]] - `contains` [EXTRACTED]
+- [[dot-test_clamp_high()]] - `method` [EXTRACTED]
+- [[dot-test_clamp_low()]] - `method` [EXTRACTED]
+- [[dot-test_default_trust_is_1()]] - `method` [EXTRACTED]
+- [[dot-test_set_and_get()]] - `method` [EXTRACTED]
+- [[MCPPermissionManager]] - `uses` [INFERRED]
+- [[MCPProxyConfig_2]] - `uses` [INFERRED]
+- [[MCPServerConfig_2]] - `uses` [INFERRED]
+- [[MCPToolConfig]] - `uses` [INFERRED]
+- [[PermissionLevel_1]] - `uses` [INFERRED]
+- [[test_mcp_permissions.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Progressive_Trust
+#graphify/code #graphify/EXTRACTED #community/Community_89

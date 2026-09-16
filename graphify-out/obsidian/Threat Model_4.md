@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/browser_security.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md"
 type: "document"
-community: "Community 634"
+community: "Community 513"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_634
+  - community/Community_513
 ---
 
 # Threat Model
 
 ## Connections
-- [[browser_security.py_2]] - `contains` [EXTRACTED]
+- [[alert_dispatcher.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_634
+#graphify/document #graphify/EXTRACTED #community/Community_513

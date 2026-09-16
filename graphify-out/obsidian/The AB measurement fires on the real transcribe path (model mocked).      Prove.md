@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_stt_model_ab.py"
 type: "rationale"
-community: "Community 267"
+community: "Community 287"
 location: "L137"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_267
+  - community/Community_287
 ---
 
 # The A/B measurement fires on the real transcribe path (model mocked).      Prove
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_transcribe_emits_latency_record()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_267
+#graphify/rationale #graphify/EXTRACTED #community/Community_287

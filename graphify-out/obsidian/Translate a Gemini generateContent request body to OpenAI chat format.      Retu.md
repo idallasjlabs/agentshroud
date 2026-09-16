@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/gemini_openai_translator.py"
 type: "rationale"
-community: "Community 143"
+community: "Community 141"
 location: "L99"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_143
+  - community/Community_141
 ---
 
 # Translate a Gemini generateContent request body to OpenAI chat format.      Retu
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[gemini_to_openai_request()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_143
+#graphify/rationale #graphify/EXTRACTED #community/Community_141

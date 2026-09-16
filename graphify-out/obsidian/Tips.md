@@ -1,17 +1,17 @@
 ---
-source_file: "docs/user-guide.md"
+source_file: "skills/openclaw/session-logs/SKILL.md"
 type: "document"
-community: "Community 307"
-location: "L48"
+community: "Community 265"
+location: "L104"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_307
+  - community/Community_265
 ---
 
 # Tips
 
 ## Connections
-- [[Interacting via Telegram]] - `contains` [EXTRACTED]
+- [[session-logs]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_307
+#graphify/document #graphify/EXTRACTED #community/Community_265

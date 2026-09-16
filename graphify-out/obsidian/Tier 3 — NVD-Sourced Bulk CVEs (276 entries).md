@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/cve-mitigation-matrix.md"
 type: "document"
-community: "Community 331"
+community: "Community 210"
 location: "L408"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_331
+  - community/Community_210
 ---
 
 # Tier 3 — NVD-Sourced Bulk CVEs (276 entries)
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud™ CVE Mitigation Matrix]] - `contains` [EXTRACTED]
 - [[Representative Examples]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_331
+#graphify/document #graphify/EXTRACTED #community/Community_210

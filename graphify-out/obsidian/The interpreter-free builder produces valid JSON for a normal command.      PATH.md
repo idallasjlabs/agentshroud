@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_bots_ssh_exec_wrapper.py"
 type: "rationale"
-community: "Community 140"
+community: "Community 149"
 location: "L218"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_140
+  - community/Community_149
 ---
 
 # The interpreter-free builder produces valid JSON for a normal command.      PATH
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_shell_payload_builder_emits_valid_json_without_python()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_140
+#graphify/rationale #graphify/EXTRACTED #community/Community_149

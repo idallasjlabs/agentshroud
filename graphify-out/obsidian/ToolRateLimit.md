@@ -1,22 +1,18 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "Community 19"
+community: "Community 134"
 location: "L145"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_19
+  - graphify/EXTRACTED
+  - community/Community_134
 ---
 
 # ToolRateLimit
 
 ## Connections
-- [[GroupRole]] - `uses` [INFERRED]
-- [[GroupRoleResolver]] - `uses` [INFERRED]
 - [[Per-tool call rate limit configuration.]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[Role_1]] - `uses` [INFERRED]
-- [[tool_acl.py]] - `contains` [EXTRACTED]
+- [[gateway.security.tool_acl]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_19
+#graphify/code #graphify/EXTRACTED #community/Community_134

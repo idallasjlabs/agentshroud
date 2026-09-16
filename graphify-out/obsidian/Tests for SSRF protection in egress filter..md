@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "rationale"
-community: "Community 217"
+community: "Encrypted Store & Drift Detector"
 location: "L843"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_217
+  - community/Encrypted_Store__Drift_Detector
 ---
 
 # Tests for SSRF protection in egress filter.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestEgressSSRF]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_217
+#graphify/rationale #graphify/EXTRACTED #community/Encrypted_Store__Drift_Detector

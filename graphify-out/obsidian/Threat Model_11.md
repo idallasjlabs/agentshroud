@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/egress_filter.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/oauth_security.py.md"
 type: "document"
-community: "Community 117"
+community: "Community 547"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_117
+  - community/Community_547
 ---
 
 # Threat Model
 
 ## Connections
-- [[EgressFilter_3]] - `contains` [EXTRACTED]
+- [[oauth_security.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_117
+#graphify/document #graphify/EXTRACTED #community/Community_547

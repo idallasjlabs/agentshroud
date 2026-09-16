@@ -1,17 +1,17 @@
 ---
-source_file: ".github/ISSUE_TEMPLATE/postmortem.md"
+source_file: "docs/architecture/PHASE3_REQUIREMENTS.md"
 type: "document"
-community: "Community 441"
-location: "L13"
+community: "Community 358"
+location: "L354"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_441
+  - community/Community_358
 ---
 
 # Timeline
 
 ## Connections
-- [[postmortem]] - `contains` [EXTRACTED]
+- [[Phase 3 Requirements Working Chat Container]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_441
+#graphify/document #graphify/EXTRACTED #community/Community_358

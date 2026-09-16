@@ -1,19 +1,23 @@
 ---
-source_file: "skills/custom/securebrowser/references/security-policies.md"
+source_file: "docs/ssh-security-review.md"
 type: "document"
-community: "Community 426"
-location: "L69"
+community: "Community 944"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_426
+  - community/Community_944
 ---
 
 # Threat Model
 
 ## Connections
-- [[SecureBrowser Security Policies]] - `contains` [EXTRACTED]
-- [[What We Don't Protect Against]] - `contains` [EXTRACTED]
-- [[What We Protect Against]] - `contains` [EXTRACTED]
+- [[1. Command Injection]] - `contains` [EXTRACTED]
+- [[2. Host Spoofing  Man-in-the-Middle]] - `contains` [EXTRACTED]
+- [[3. Credential Theft]] - `contains` [EXTRACTED]
+- [[4. Privilege Escalation]] - `contains` [EXTRACTED]
+- [[6. Audit Log Tampering  PII Leakage]] - `contains` [EXTRACTED]
+- [[D - Denial of Service]] - `contains` [EXTRACTED]
+- [[SSH Security Review]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_426
+#graphify/document #graphify/EXTRACTED #community/Community_944

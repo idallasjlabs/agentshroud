@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/canvas/SKILL.md"
+source_file: "docs/user-guide.md"
 type: "document"
-community: "Community 343"
-location: "L192"
+community: "Community 320"
+location: "L48"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_343
+  - community/Community_320
 ---
 
 # Tips
 
 ## Connections
-- [[Canvas Skill]] - `contains` [EXTRACTED]
+- [[Interacting via Telegram]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_343
+#graphify/document #graphify/EXTRACTED #community/Community_320

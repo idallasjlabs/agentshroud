@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/session-logs/SKILL.md"
+source_file: "skills/openclaw/himalaya/SKILL.md"
 type: "document"
-community: "Community 254"
-location: "L104"
+community: "Community 489"
+location: "L252"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_254
+  - community/Community_489
 ---
 
 # Tips
 
 ## Connections
-- [[session-logs]] - `contains` [EXTRACTED]
+- [[Himalaya Email CLI]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_254
+#graphify/document #graphify/EXTRACTED #community/Community_489

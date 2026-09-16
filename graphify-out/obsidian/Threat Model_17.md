@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/input_normalizer.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/egress_filter.py.md"
 type: "document"
-community: "Community 638"
+community: "Community 626"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_638
+  - community/Community_626
 ---
 
 # Threat Model
 
 ## Connections
-- [[input_normalizer.py_2]] - `contains` [EXTRACTED]
+- [[EgressFilter_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_638
+#graphify/document #graphify/EXTRACTED #community/Community_626

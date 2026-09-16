@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_tool_result_injection.py"
 type: "code"
-community: "Community 134"
+community: "Community 101"
 location: "L121"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_134
+  - graphify/EXTRACTED
+  - community/Community_101
 ---
 
 # TestUnicodeObfuscation
 
 ## Connections
-- [[.test_rtl_override_detected()]] - `method` [EXTRACTED]
-- [[.test_zero_width_chars_dont_bypass_detection()]] - `method` [EXTRACTED]
+- [[dot-test_rtl_override_detected()]] - `method` [EXTRACTED]
+- [[dot-test_zero_width_chars_dont_bypass_detection()]] - `method` [EXTRACTED]
 - [[InjectionAction]] - `uses` [INFERRED]
 - [[InjectionSeverity]] - `uses` [INFERRED]
 - [[ToolResultInjectionScanner]] - `uses` [INFERRED]
 - [[test_tool_result_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_134
+#graphify/code #graphify/EXTRACTED #community/Community_101

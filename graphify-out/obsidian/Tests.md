@@ -1,20 +1,17 @@
 ---
-source_file: "CHANGELOG.md"
+source_file: "CHEATSHEET.md"
 type: "document"
-community: "Community 99"
-location: "L446"
+community: "Community 449"
+location: "L375"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_99
+  - community/Community_449
 ---
 
 # Tests
 
 ## Connections
-- [[0.9.0 — featv0.9.0-soc-team-collab — Sentinel (2026-03-18)]] - `contains` [EXTRACTED]
-- [[1.2.1 — releasev1.2.1-quality-sweep (2026-06-27)]] - `contains` [EXTRACTED]
-- [[Unreleased — feathttp-connect-proxy + featcredential-isolation]] - `contains` [EXTRACTED]
-- [[Unreleased — featv0.8.0-enforcement-hardening (session 3 — 2026-03-15)]] - `contains` [EXTRACTED]
+- [[AgentShroud Operations Cheat Sheet]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_99
+#graphify/document #graphify/EXTRACTED #community/Community_449

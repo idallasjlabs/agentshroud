@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/egress_config.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/health_report.py.md"
 type: "document"
-community: "Community 635"
+community: "Community 546"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_635
+  - community/Community_546
 ---
 
 # Threat Model
 
 ## Connections
-- [[egress_config.py_2]] - `contains` [EXTRACTED]
+- [[health_report.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_635
+#graphify/document #graphify/EXTRACTED #community/Community_546
