@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_daily_cve_report.py"
+type: "code"
+community: "Community 124"
+location: "L136"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_124
+---
+
+# .test_returns_false_when_file_missing()
+
+## Connections
+- [[TestAlreadySentToday]] - `method` [EXTRACTED]
+- [[_already_sent_today]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_124

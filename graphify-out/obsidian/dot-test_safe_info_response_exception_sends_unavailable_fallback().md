@@ -1,0 +1,20 @@
+---
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+type: "code"
+community: "Community 40"
+location: "L7588"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_40
+---
+
+# .test_safe_info_response_exception_sends_unavailable_fallback()
+
+## Connections
+- [[Exception in safe-info response should still deliver unavailable notice.]] - `rationale_for` [EXTRACTED]
+- [[PassthroughPipeline]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
+- [[TestCollaboratorPromptClassifiers]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_40

@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_web_api_coverage.py"
+type: "code"
+community: "Community 45"
+location: "L790"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_45
+---
+
+# .test_rollback_agentshroud_success()
+
+## Connections
+- [[TestAgentshroudUpdates]] - `method` [EXTRACTED]
+- [[_engine()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_45

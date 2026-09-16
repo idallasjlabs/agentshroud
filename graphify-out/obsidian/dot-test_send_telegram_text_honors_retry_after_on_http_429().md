@@ -1,0 +1,20 @@
+---
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+type: "code"
+community: "Telegram Proxy Inbound Tests"
+location: "L3896"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Telegram_Proxy_Inbound_Tests
+---
+
+# .test_send_telegram_text_honors_retry_after_on_http_429()
+
+## Connections
+- [[PassthroughPipeline]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
+- [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
+- [[_send_telegram_text should honor Telegram retry_after when rate limited.]] - `rationale_for` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Inbound_Tests

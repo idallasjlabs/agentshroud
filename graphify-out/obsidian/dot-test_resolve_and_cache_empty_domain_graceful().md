@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_dns_filter.py"
+type: "code"
+community: "Community 63"
+location: "L237"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_63
+---
+
+# .test_resolve_and_cache_empty_domain_graceful()
+
+## Connections
+- [[Resolving a domain that fails should return empty string gracefully.]] - `rationale_for` [EXTRACTED]
+- [[TestDNSRebinding]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_63

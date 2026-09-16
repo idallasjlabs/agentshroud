@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_security_audit.py"
+type: "code"
+community: "P3 Infrastructure Security Modules"
+location: "L400"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/P3_Infrastructure_Security_Modules
+---
+
+# .test_reject_none_algorithm()
+
+## Connections
+- [[Reject JWTs with alg=none (classic attack).]] - `rationale_for` [EXTRACTED]
+- [[TestAuth]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/P3_Infrastructure_Security_Modules

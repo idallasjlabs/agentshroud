@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_differential_pii_detector.py"
+type: "code"
+community: "Community 46"
+location: "L330"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_46
+---
+
+# .test_scan_produces_report_with_correct_floor_used()
+
+## Connections
+- [[DifferentialPIIDetector]] - `references` [EXTRACTED]
+- [[TestAsymmetricFloor]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_46

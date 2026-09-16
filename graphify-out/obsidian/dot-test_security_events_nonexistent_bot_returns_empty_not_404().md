@@ -1,0 +1,20 @@
+---
+source_file: "gateway/tests/test_soc_bots.py"
+type: "code"
+community: "Community 66"
+location: "L929"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_66
+---
+
+# .test_security_events_nonexistent_bot_returns_empty_not_404()
+
+## Connections
+- [[AsyncMock]] - `calls` [INFERRED]
+- [[TestBotSelectorFrontend]] - `method` [EXTRACTED]
+- [[_make_m6_caller()]] - `calls` [EXTRACTED]
+- [[get_security_events()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_66

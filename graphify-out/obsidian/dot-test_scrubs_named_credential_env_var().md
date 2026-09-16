@@ -1,0 +1,17 @@
+---
+source_file: "gateway/tests/test_env_guard_class.py"
+type: "code"
+community: "Community 215"
+location: "L83"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_215
+---
+
+# .test_scrubs_named_credential_env_var()
+
+## Connections
+- [[TestScrubCommandOutput]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_215

@@ -1,0 +1,17 @@
+---
+source_file: "gateway/tests/test_delegation.py"
+type: "code"
+community: "Community 74"
+location: "L99"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_74
+---
+
+# .test_revoke_all_for_user()
+
+## Connections
+- [[TestRevoke]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_74

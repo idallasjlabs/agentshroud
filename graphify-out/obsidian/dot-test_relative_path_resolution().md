@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_privilege_separation.py"
+type: "code"
+community: "File Sandbox & Privilege Separation Tests"
+location: "L325"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/File_Sandbox__Privilege_Separation_Tests
+---
+
+# .test_relative_path_resolution()
+
+## Connections
+- [[Relative paths should be resolved properly.]] - `rationale_for` [EXTRACTED]
+- [[TestEdgeCases]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/File_Sandbox__Privilege_Separation_Tests

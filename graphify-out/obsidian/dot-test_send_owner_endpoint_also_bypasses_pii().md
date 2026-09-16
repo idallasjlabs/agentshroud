@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_email_owner_bypasses_pii.py"
+type: "code"
+community: "Community 1109"
+location: "L83"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_1109
+---
+
+# .test_send_owner_endpoint_also_bypasses_pii()
+
+## Connections
+- [[emailsend-owner delegates to email_send and also skips PII for the owner.]] - `rationale_for` [EXTRACTED]
+- [[AsyncMock]] - `calls` [INFERRED]
+- [[TestOwnerEmailBypassesPii]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_1109

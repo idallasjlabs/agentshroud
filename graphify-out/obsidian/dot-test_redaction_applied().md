@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_outbound_filter.py"
+type: "code"
+community: "Community 296"
+location: "L587"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_296
+---
+
+# .test_redaction_applied()
+
+## Connections
+- [[Matched text is replaced with RESPONSE_FILTERED.]] - `rationale_for` [EXTRACTED]
+- [[TestFabricatedSecurityNotice]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_296

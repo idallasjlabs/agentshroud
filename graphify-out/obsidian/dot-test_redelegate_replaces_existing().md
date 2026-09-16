@@ -1,0 +1,17 @@
+---
+source_file: "gateway/tests/test_delegation.py"
+type: "code"
+community: "Community 74"
+location: "L142"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_74
+---
+
+# .test_redelegate_replaces_existing()
+
+## Connections
+- [[TestRedelegation]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_74

@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_mcp_result_endpoint.py"
+type: "code"
+community: "Community 519"
+location: "L127"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_519
+---
+
+# .test_result_with_null_content()
+
+## Connections
+- [[Null content is handled gracefully.]] - `rationale_for` [EXTRACTED]
+- [[TestMCPResultEndpoint]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_519

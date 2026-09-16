@@ -1,0 +1,21 @@
+---
+source_file: "gateway/tests/test_scanner_integration.py"
+type: "code"
+community: "Community 275"
+location: "L1079"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_275
+---
+
+# .test_returns_one_entry_per_report_file()
+
+## Connections
+- [[Path_27]] - `calls` [EXTRACTED]
+- [[TestGetTrivyImageSummaries]] - `method` [EXTRACTED]
+- [[_clean_trivy_report()]] - `calls` [EXTRACTED]
+- [[_write_image_report()]] - `calls` [EXTRACTED]
+- [[get_trivy_image_summaries()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_275

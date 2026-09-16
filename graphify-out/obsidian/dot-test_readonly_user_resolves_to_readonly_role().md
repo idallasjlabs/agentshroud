@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_group_rbac.py"
+type: "code"
+community: "Community 496"
+location: "L121"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_496
+---
+
+# .test_readonly_user_resolves_to_readonly_role()
+
+## Connections
+- [[Read-only user resolves to GroupRole.READ_ONLY.]] - `rationale_for` [EXTRACTED]
+- [[TestGroupRoleResolver]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_496

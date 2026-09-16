@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_prompt_guard.py"
+type: "code"
+community: "Prompt Guard & Context Integrity"
+location: "L179"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Prompt_Guard__Context_Integrity
+---
+
+# .test_register_and_verify()
+
+## Connections
+- [[TestSystemPromptHMAC]] - `method` [EXTRACTED]
+- [[register_system_prompt + verify_system_prompt should succeed.]] - `rationale_for` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Prompt_Guard__Context_Integrity
