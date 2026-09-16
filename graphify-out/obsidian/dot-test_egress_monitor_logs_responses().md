@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_web_proxy_security.py"
+type: "code"
+community: "Community 96"
+location: "L212"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_96
+---
+
+# .test_egress_monitor_logs_responses()
+
+## Connections
+- [[Test that egress monitor logs all outbound connections.]] - `rationale_for` [EXTRACTED]
+- [[TestWebProxySecurityIntegration]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_96

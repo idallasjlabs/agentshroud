@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_cross_bot_trust_ledger.py"
+type: "code"
+community: "Cross-Bot Trust & A2A Governance"
+location: "L558"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Cross-Bot_Trust__A2A_Governance
+---
+
+# .test_empty_bot_list_does_not_raise()
+
+## Connections
+- [[TestBuildFullMesh]] - `method` [EXTRACTED]
+- [[TrustConfig]] - `calls` [EXTRACTED]
+- [[TrustManager_3]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Cross-Bot_Trust__A2A_Governance

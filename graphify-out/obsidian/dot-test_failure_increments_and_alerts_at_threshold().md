@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_killswitch_monitor_behavior.py"
+type: "code"
+community: "Community 54"
+location: "L124"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_54
+---
+
+# .test_failure_increments_and_alerts_at_threshold()
+
+## Connections
+- [[KillSwitchMonitor]] - `calls` [EXTRACTED]
+- [[TestHeartbeat]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_54

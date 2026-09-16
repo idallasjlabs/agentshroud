@@ -1,0 +1,20 @@
+---
+source_file: "gateway/tests/test_telegram_proxy_outbound.py"
+type: "code"
+community: "Community 608"
+location: "L5288"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_608
+---
+
+# .test_form_unknown_tool_call_quarantined()
+
+## Connections
+- [[TelegramAPIProxy_3]] - `calls` [EXTRACTED]
+- [[TestOutboundScanUnification]] - `method` [EXTRACTED]
+- [[Unknown raw tool-call JSON in form bodies is quarantined for audit.          Tig]] - `rationale_for` [EXTRACTED]
+- [[_make_sanitizer()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_608

@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_network_validator.py"
+type: "code"
+community: "Community 417"
+location: "L257"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_417
+---
+
+# .test_gateway_network_bridging_validation()
+
+## Connections
+- [[Test that gateway service network bridging is validated.]] - `rationale_for` [EXTRACTED]
+- [[TestNetworkValidator]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_417

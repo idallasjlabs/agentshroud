@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_killswitch_monitor_behavior.py"
+type: "code"
+community: "Community 54"
+location: "L173"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_54
+---
+
+# .test_excessive_requests_flagged()
+
+## Connections
+- [[KillSwitchMonitor]] - `calls` [EXTRACTED]
+- [[TestAnomalyDetection_1]] - `method` [EXTRACTED]
+- [[_fake_stats()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_54

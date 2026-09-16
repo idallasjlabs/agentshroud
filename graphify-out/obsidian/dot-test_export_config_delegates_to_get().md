@@ -1,0 +1,17 @@
+---
+source_file: "gateway/tests/test_web_api_coverage.py"
+type: "code"
+community: "Community 916"
+location: "L446"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_916
+---
+
+# .test_export_config_delegates_to_get()
+
+## Connections
+- [[TestConfig_1]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_916

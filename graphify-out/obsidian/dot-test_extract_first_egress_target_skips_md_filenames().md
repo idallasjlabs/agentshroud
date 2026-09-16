@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_telegram_proxy_outbound.py"
+type: "code"
+community: "Community 343"
+location: "L4106"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_343
+---
+
+# .test_extract_first_egress_target_skips_md_filenames()
+
+## Connections
+- [[BOOTSTRAP.md must NOT be treated as an egress domain.]] - `rationale_for` [EXTRACTED]
+- [[TestOutboundClassifierHelpers]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_343

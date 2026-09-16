@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_security_hardening.py"
+type: "code"
+community: "Encrypted Store & Drift Detector"
+location: "L908"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Encrypted_Store__Drift_Detector
+---
+
+# .test_event_type_validation()
+
+## Connections
+- [[TestTrustManagerHardened]] - `method` [EXTRACTED]
+- [[TrustManager]] - `calls` [EXTRACTED]
+- [[Unknown event types should not inject SQL.]] - `rationale_for` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Encrypted_Store__Drift_Detector

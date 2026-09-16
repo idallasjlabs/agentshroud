@@ -1,0 +1,17 @@
+---
+source_file: "gateway/tests/test_heuristic_classifier.py"
+type: "code"
+community: "Community 212"
+location: "L53"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_212
+---
+
+# .test_encoding_evasion()
+
+## Connections
+- [[TestHeuristicClassifier]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_212

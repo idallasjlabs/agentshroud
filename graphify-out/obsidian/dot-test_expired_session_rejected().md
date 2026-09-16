@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_session_security.py"
+type: "code"
+community: "Community 1179"
+location: "L69"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_1179
+---
+
+# .test_expired_session_rejected()
+
+## Connections
+- [[SessionManager]] - `calls` [EXTRACTED]
+- [[TestSessionValidation]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_1179

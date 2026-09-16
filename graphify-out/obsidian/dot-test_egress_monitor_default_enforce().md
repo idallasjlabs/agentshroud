@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_all_modules_enforce.py"
+type: "code"
+community: "Alert Dispatcher & RBAC Reliability"
+location: "L84"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Alert_Dispatcher__RBAC_Reliability
+---
+
+# .test_egress_monitor_default_enforce()
+
+## Connections
+- [[EgressMonitorConfig]] - `calls` [EXTRACTED]
+- [[TestModuleConfigDefaults]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability

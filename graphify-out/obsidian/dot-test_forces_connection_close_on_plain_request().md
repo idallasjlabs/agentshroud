@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_hermes_dashboard_bridge.py"
+type: "code"
+community: "Community 776"
+location: "L60"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_776
+---
+
+# .test_forces_connection_close_on_plain_request()
+
+## Connections
+- [[Forcing Connection close makes every request single-shot per TCP         connec]] - `rationale_for` [EXTRACTED]
+- [[TestRewriteRequestHeaders]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_776

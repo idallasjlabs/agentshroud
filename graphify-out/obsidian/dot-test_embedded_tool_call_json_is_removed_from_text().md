@@ -1,0 +1,20 @@
+---
+source_file: "gateway/tests/test_telegram_proxy_outbound.py"
+type: "code"
+community: "Community 93"
+location: "L2557"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_93
+---
+
+# .test_embedded_tool_call_json_is_removed_from_text()
+
+## Connections
+- [[If tool-call JSON is embedded in prose, strip JSON block before delivery.]] - `rationale_for` [EXTRACTED]
+- [[TelegramAPIProxy_3]] - `calls` [EXTRACTED]
+- [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
+- [[_make_sanitizer()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_93
