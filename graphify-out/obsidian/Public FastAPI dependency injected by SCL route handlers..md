@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/auth.py"
 type: "rationale"
-community: "RBAC & SOC Realtime"
+community: "Ingest API & RBAC Core"
 location: "L206"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBAC__SOC_Realtime
+  - community/Ingest_API__RBAC_Core
 ---
 
 # Public FastAPI dependency injected by SCL route handlers.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_caller()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBAC__SOC_Realtime
+#graphify/rationale #graphify/EXTRACTED #community/Ingest_API__RBAC_Core

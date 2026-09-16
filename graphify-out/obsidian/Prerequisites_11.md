@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/TELEGRAM_GMAIL_SETUP.md"
+source_file: "docs/operations/linux.md"
 type: "document"
-community: "Community 219"
-location: "L43"
+community: "Community 587"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_219
+  - community/Community_587
 ---
 
 # Prerequisites
 
 ## Connections
-- [[Part 2 Set Up Gmail Integration]] - `contains` [EXTRACTED]
+- [[Deploying AgentShroud on Linux (x86_64  aarch64)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_219
+#graphify/document #graphify/EXTRACTED #community/Community_587

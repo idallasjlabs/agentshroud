@@ -1,17 +1,17 @@
 ---
-source_file: ".github/ISSUE_TEMPLATE/gsd.md"
+source_file: "docs/architecture/adr/ADR-006-multi-runtime-support.md"
 type: "document"
-community: "Community 441"
-location: "L9"
+community: "Community 237"
+location: "L50"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_441
+  - community/Community_237
 ---
 
 # Problem
 
 ## Connections
-- [[gsd]] - `contains` [EXTRACTED]
+- [[Cisco AnyConnect VPN Networking Fix]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_441
+#graphify/document #graphify/EXTRACTED #community/Community_237

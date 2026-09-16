@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "Security Audit & Drift Detection"
+community: "Session Manager & PII/Context Guard"
 location: "L56"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Audit__Drift_Detection
+  - community/Session_Manager__PII/Context_Guard
 ---
 
 # Prompt guard should scan full input, not short-circuit on first match.
 
 ## Connections
-- [[.test_prompt_guard_no_early_exit_leak()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_prompt_guard_no_early_exit_leak()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Drift_Detection
+#graphify/rationale #graphify/EXTRACTED #community/Session_Manager__PII/Context_Guard

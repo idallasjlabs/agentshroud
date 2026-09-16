@@ -1,12 +1,12 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "Community 344"
+community: "Community 259"
 location: "L179"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_344
+  - community/Community_259
 ---
 
 # Preferred workflow
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[3) SDLC — HOW TO WORK IN THIS REPO]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_344
+#graphify/document #graphify/EXTRACTED #community/Community_259

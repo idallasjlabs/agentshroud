@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md"
 type: "document"
-community: "Community 230"
+community: "Community 255"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_230
+  - community/Community_255
 ---
 
 # Prompt Injection Blocks
@@ -17,7 +17,7 @@ tags:
 - [[HTTP 400 — Prompt Injection Detected]] - `contains` [EXTRACTED]
 - [[Prompt Injection Blocks_1]] - `contains` [EXTRACTED]
 - [[Prompt Injection in Monitor Mode]] - `contains` [EXTRACTED]
-- [[Related Notes_61]] - `contains` [EXTRACTED]
+- [[Related Notes_20]] - `contains` [EXTRACTED]
 - [[Tool Result Injections]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_230
+#graphify/document #graphify/EXTRACTED #community/Community_255

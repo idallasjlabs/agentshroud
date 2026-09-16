@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "Community 47"
+community: "Community 109"
 location: "L44"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_47
+  - community/Community_109
 ---
 
 # PipelineAction
 
 ## Connections
 - [[BotIncidentSeverity]] - `uses` [INFERRED]
-- [[Enum]] - `inherits` [EXTRACTED]
+- [[Enum_3]] - `inherits` [EXTRACTED]
 - [[FilterResult]] - `uses` [INFERRED]
 - [[InjectionAction]] - `uses` [INFERRED]
-- [[PipelineResult_1]] - `uses` [INFERRED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[SecurityPipeline_2]] - `uses` [INFERRED]
+- [[PipelineResult]] - `uses` [INFERRED]
+- [[RBACConfig_2]] - `uses` [INFERRED]
+- [[SecurityPipeline]] - `uses` [INFERRED]
 - [[TestAuditChain]] - `uses` [INFERRED]
 - [[TestAuditChainBounded]] - `uses` [INFERRED]
 - [[TestContextGuardInPipeline]] - `uses` [INFERRED]
@@ -41,7 +41,7 @@ tags:
 - [[TestInboundPipelineExceptionNonOwner]] - `uses` [INFERRED]
 - [[TestInboundPipelineExceptionOwner]] - `uses` [INFERRED]
 - [[TestInboundPipelineWired]] - `uses` [INFERRED]
-- [[TestKeyLeakDetection_1]] - `uses` [INFERRED]
+- [[TestKeyLeakDetection]] - `uses` [INFERRED]
 - [[TestOutboundFilterResultBinding]] - `uses` [INFERRED]
 - [[TestOutboundPipelineBlocked]] - `uses` [INFERRED]
 - [[TestOutboundPipelineWired]] - `uses` [INFERRED]
@@ -53,9 +53,9 @@ tags:
 - [[_FakeAttack]] - `uses` [INFERRED]
 - [[_FakeIntegrityScore]] - `uses` [INFERRED]
 - [[_PassInboundPipeline]] - `uses` [INFERRED]
-- [[_StubForwarder_2]] - `uses` [INFERRED]
+- [[_StubForwarder_1]] - `uses` [INFERRED]
 - [[pipeline.py]] - `contains` [EXTRACTED]
-- [[str]] - `inherits` [EXTRACTED]
+- [[str_2]] - `inherits` [EXTRACTED]
 - [[test_clamav_pipeline.py]] - `imports` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `imports` [EXTRACTED]
 - [[test_e2e_watchtower.py]] - `imports` [EXTRACTED]
@@ -63,4 +63,4 @@ tags:
 - [[test_telegram_pipeline.py]] - `imports` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_47
+#graphify/code #graphify/INFERRED #community/Community_109

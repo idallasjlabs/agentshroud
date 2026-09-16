@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Community 509"
+community: "Community 521"
 location: "L156"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_509
+  - community/Community_521
 ---
 
 # Prompt injection via getUpdates must be blocked by the pipeline.
 
 ## Connections
-- [[.test_prompt_injection_blocked_on_getUpdates()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_prompt_injection_blocked_on_getUpdates()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_509
+#graphify/rationale #graphify/EXTRACTED #community/Community_521

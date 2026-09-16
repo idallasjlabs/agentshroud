@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "rationale"
-community: "Community 639"
+community: "Voice Gateway STT & Browser Security"
 location: "L73"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_639
+  - community/Voice_Gateway_STT__Browser_Security
 ---
 
 # Privilege escalation prevention policy.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[PrivilegePolicy]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_639
+#graphify/rationale #graphify/EXTRACTED #community/Voice_Gateway_STT__Browser_Security

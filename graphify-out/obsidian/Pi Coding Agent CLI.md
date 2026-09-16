@@ -1,16 +1,16 @@
 ---
 source_file: "skills/openclaw/coding-agent/SKILL.md"
 type: "concept"
-community: "Community 319"
+community: "Community 327"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_319
+  - community/Community_327
 ---
 
 # Pi Coding Agent CLI
 
 ## Connections
-- [[SKILL_203]] - `implements` [EXTRACTED]
+- [[coding-agentSKILL]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_319
+#graphify/concept #graphify/EXTRACTED #community/Community_327

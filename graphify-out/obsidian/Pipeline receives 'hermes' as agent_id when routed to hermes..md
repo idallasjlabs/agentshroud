@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "rationale"
-community: "Community 104"
+community: "Multi-Agent Router & Chat UI"
 location: "L147"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_104
+  - community/Multi-Agent_Router__Chat_UI
 ---
 
 # Pipeline receives 'hermes' as agent_id when routed to hermes.
 
 ## Connections
-- [[.test_agent_id_propagated_for_hermes()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_agent_id_propagated_for_hermes()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_104
+#graphify/rationale #graphify/EXTRACTED #community/Multi-Agent_Router__Chat_UI

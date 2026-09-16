@@ -1,17 +1,17 @@
 ---
-source_file: "docs/project/README.md"
+source_file: "docs/flows/README.md"
 type: "document"
-community: "Community 976"
+community: "Community 184"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_976
+  - community/Community_184
 ---
 
 # Planned Documents
 
 ## Connections
-- [[Project Documentation]] - `contains` [EXTRACTED]
+- [[Flows Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_976
+#graphify/document #graphify/EXTRACTED #community/Community_184

@@ -1,13 +1,13 @@
 ---
 source_file: ".agents/skills/i-pca/SKILL.md"
 type: "document"
-community: "Community 1763"
+community: "Community 1774"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1763
+  - community/Community_1774
 ---
 
 # Pre-Change Analysis (PCA)
 
-#graphify/document #graphify/EXTRACTED #community/Community_1763
+#graphify/document #graphify/EXTRACTED #community/Community_1774

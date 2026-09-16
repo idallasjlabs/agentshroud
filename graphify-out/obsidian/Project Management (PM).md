@@ -1,20 +1,20 @@
 ---
 source_file: "docker/config/hermes/skills/i-pm/README.md"
 type: "document"
-community: "Community 1194"
+community: "Community 1240"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1194
+  - community/Community_1240
 ---
 
 # Project Management (PM)
 
 ## Connections
-- [[Purpose_59]] - `contains` [EXTRACTED]
-- [[README_64]] - `contains` [EXTRACTED]
-- [[Related Skills_65]] - `contains` [EXTRACTED]
-- [[Usage_66]] - `contains` [EXTRACTED]
+- [[Purpose_58]] - `contains` [EXTRACTED]
+- [[Related Skills_49]] - `contains` [EXTRACTED]
+- [[Usage_53]] - `contains` [EXTRACTED]
+- [[hermesskillsi-pmREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1194
+#graphify/document #graphify/EXTRACTED #community/Community_1240

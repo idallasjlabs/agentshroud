@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "Community 128"
+community: "Community 77"
 location: "L391"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_128
+  - community/Community_77
 ---
 
 # Prometheus Configuration
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Monitoring Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_128
+#graphify/document #graphify/EXTRACTED #community/Community_77

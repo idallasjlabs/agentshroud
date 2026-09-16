@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_dns_filter.py"
 type: "rationale"
-community: "Memory Lifecycle & Egress Filtering"
+community: "Community 63"
 location: "L232"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Memory_Lifecycle__Egress_Filtering
+  - community/Community_63
 ---
 
 # Public IPs should not be flagged as private.
 
 ## Connections
-- [[.test_public_ip_not_private()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_public_ip_not_private()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Memory_Lifecycle__Egress_Filtering
+#graphify/rationale #graphify/EXTRACTED #community/Community_63

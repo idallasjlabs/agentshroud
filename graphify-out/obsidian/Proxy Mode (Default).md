@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Community 264"
+community: "Community 392"
 location: "L266"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_264
+  - community/Community_392
 ---
 
 # Proxy Mode (Default)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Step 4 Choose Security Mode]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_264
+#graphify/document #graphify/EXTRACTED #community/Community_392

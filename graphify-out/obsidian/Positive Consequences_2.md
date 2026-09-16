@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/adr/ADR-003-two-network-container-isolation.md"
+source_file: "docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md"
 type: "document"
-community: "Community 782"
-location: "L35"
+community: "Community 671"
+location: "L40"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_782
+  - community/Community_671
 ---
 
 # Positive Consequences
 
 ## Connections
-- [[Consequences_2]] - `contains` [EXTRACTED]
+- [[Consequences_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_782
+#graphify/document #graphify/EXTRACTED #community/Community_671
