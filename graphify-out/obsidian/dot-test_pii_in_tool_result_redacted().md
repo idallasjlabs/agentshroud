@@ -1,0 +1,17 @@
+---
+source_file: "gateway/tests/test_mcp_proxy.py"
+type: "code"
+community: "Community 1038"
+location: "L211"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_1038
+---
+
+# .test_pii_in_tool_result_redacted()
+
+## Connections
+- [[TestPIIDetection]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_1038

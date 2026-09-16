@@ -1,0 +1,22 @@
+---
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+type: "code"
+community: "Community 522"
+location: "L9487"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_522
+---
+
+# .test_project_scoped_collaborator_still_blocked_by_middleware()
+
+## Connections
+- [[FakeRBAC]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
+- [[TestFullAccessMiddlewareBypass]] - `method` [EXTRACTED]
+- [[_make_update()_1]] - `calls` [EXTRACTED]
+- [[_wrap_response()]] - `calls` [EXTRACTED]
+- [[project_scoped collaborators are still blocked when middleware blocks (non-multi]] - `rationale_for` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_522

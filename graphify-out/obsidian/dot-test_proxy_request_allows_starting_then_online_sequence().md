@@ -1,0 +1,20 @@
+---
+source_file: "gateway/tests/test_telegram_proxy_outbound.py"
+type: "code"
+community: "Community 1708"
+location: "L2363"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_1708
+---
+
+# .test_proxy_request_allows_starting_then_online_sequence()
+
+## Connections
+- [[Starting and online notices are distinct and should both forward.]] - `rationale_for` [EXTRACTED]
+- [[TelegramAPIProxy_3]] - `calls` [EXTRACTED]
+- [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
+- [[_make_sanitizer()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_1708

@@ -1,0 +1,23 @@
+---
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+type: "code"
+community: "Community 521"
+location: "L155"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_521
+---
+
+# .test_prompt_injection_blocked_on_getUpdates()
+
+## Connections
+- [[BlockingPipeline]] - `calls` [EXTRACTED]
+- [[FakeRBAC]] - `calls` [EXTRACTED]
+- [[Prompt injection via getUpdates must be blocked by the pipeline.]] - `rationale_for` [EXTRACTED]
+- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
+- [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
+- [[_make_update()_1]] - `calls` [EXTRACTED]
+- [[_wrap_response()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_521

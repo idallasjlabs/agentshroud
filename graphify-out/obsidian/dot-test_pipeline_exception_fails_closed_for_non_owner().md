@@ -1,0 +1,21 @@
+---
+source_file: "gateway/tests/test_telegram_pipeline.py"
+type: "code"
+community: "Community 109"
+location: "L158"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_109
+---
+
+# .test_pipeline_exception_fails_closed_for_non_owner()
+
+## Connections
+- [[AsyncMock]] - `calls` [INFERRED]
+- [[TestInboundPipelineExceptionNonOwner]] - `method` [EXTRACTED]
+- [[_getUpdates_response()]] - `calls` [EXTRACTED]
+- [[_make_proxy()_1]] - `calls` [EXTRACTED]
+- [[_make_update()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_109

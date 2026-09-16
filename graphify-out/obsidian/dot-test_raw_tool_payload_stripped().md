@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_output_schema.py"
+type: "code"
+community: "Community 248"
+location: "L38"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_248
+---
+
+# .test_raw_tool_payload_stripped()
+
+## Connections
+- [[JSON tool call payloads should be flagged and redacted.]] - `rationale_for` [EXTRACTED]
+- [[TestOutputSchemaEnforcer]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_248

@@ -1,0 +1,21 @@
+---
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+type: "code"
+community: "Telegram Lockdown & Collaborator UX Tests"
+location: "L9300"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Telegram_Lockdown__Collaborator_UX_Tests
+---
+
+# .test_partial_phrase_does_not_trigger_probe()
+
+## Connections
+- [[dot-_make_proxy()_4]] - `calls` [EXTRACTED]
+- [[TestGroupPresenceProbe]] - `method` [EXTRACTED]
+- [[_make_group_update()]] - `calls` [EXTRACTED]
+- [[_wrap_response()]] - `calls` [EXTRACTED]
+- [[hello, can you help' must reach the LLM path, not be swallowed by the probe.]] - `rationale_for` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Telegram_Lockdown__Collaborator_UX_Tests

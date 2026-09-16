@@ -1,0 +1,20 @@
+---
+source_file: "gateway/tests/test_egress_enforce.py"
+type: "code"
+community: "Community 52"
+location: "L206"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_52
+---
+
+# .test_port_filtering()
+
+## Connections
+- [[EgressFilter]] - `calls` [EXTRACTED]
+- [[EgressFilterConfig]] - `calls` [EXTRACTED]
+- [[Test port-based filtering.]] - `rationale_for` [EXTRACTED]
+- [[TestEgressFilterEnforcement]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_52

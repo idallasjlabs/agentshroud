@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_dns_filter.py"
+type: "code"
+community: "Community 63"
+location: "L231"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_63
+---
+
+# .test_public_ip_not_private()
+
+## Connections
+- [[Public IPs should not be flagged as private.]] - `rationale_for` [EXTRACTED]
+- [[TestDNSRebinding]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_63

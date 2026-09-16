@@ -1,0 +1,20 @@
+---
+source_file: "gateway/tests/test_telegram_proxy_outbound.py"
+type: "code"
+community: "Community 1718"
+location: "L2773"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_1718
+---
+
+# .test_raw_web_fetch_json_approval_normalizes_leading_dot_domain()
+
+## Connections
+- [[Malformed host with leading dot should still queue approval for normalized domai]] - `rationale_for` [EXTRACTED]
+- [[TelegramAPIProxy_3]] - `calls` [EXTRACTED]
+- [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
+- [[_make_sanitizer()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_1718

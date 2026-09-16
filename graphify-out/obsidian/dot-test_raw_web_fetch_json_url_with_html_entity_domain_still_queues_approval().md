@@ -1,0 +1,20 @@
+---
+source_file: "gateway/tests/test_telegram_proxy_outbound.py"
+type: "code"
+community: "Community 1737"
+location: "L3593"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_1737
+---
+
+# .test_raw_web_fetch_json_url_with_html_entity_domain_still_queues_approval()
+
+## Connections
+- [[HTML-entity encoded domains in leaked JSON should normalize before approval.]] - `rationale_for` [EXTRACTED]
+- [[TelegramAPIProxy_3]] - `calls` [EXTRACTED]
+- [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
+- [[_make_sanitizer()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_1737

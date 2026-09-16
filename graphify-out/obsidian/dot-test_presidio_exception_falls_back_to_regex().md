@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_differential_pii_detector.py"
+type: "code"
+community: "Community 46"
+location: "L272"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_46
+---
+
+# .test_presidio_exception_falls_back_to_regex()
+
+## Connections
+- [[DifferentialPIIDetector]] - `references` [EXTRACTED]
+- [[TestPresidioPathContract]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_46

@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_daily_cve_report.py"
+type: "code"
+community: "Community 124"
+location: "L323"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_124
+---
+
+# .test_raises_on_network_error()
+
+## Connections
+- [[TestCheckUpstreamCves]] - `method` [EXTRACTED]
+- [[check_upstream_cves]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_124

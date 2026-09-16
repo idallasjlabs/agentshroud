@@ -1,0 +1,20 @@
+---
+source_file: "gateway/tests/test_telegram_proxy_outbound.py"
+type: "code"
+community: "Community 817"
+location: "L3752"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_817
+---
+
+# .test_raw_web_search_json_owner_message()
+
+## Connections
+- [[Owner chat raw web_search JSON produces 'Switch to tool-capable model' message.]] - `rationale_for` [EXTRACTED]
+- [[TelegramAPIProxy_3]] - `calls` [EXTRACTED]
+- [[TestWebSearchLog]] - `method` [EXTRACTED]
+- [[_make_sanitizer()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_817

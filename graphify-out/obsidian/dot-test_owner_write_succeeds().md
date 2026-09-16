@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_shared_memory_write_acl.py"
+type: "code"
+community: "Community 41"
+location: "L128"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_41
+---
+
+# .test_owner_write_succeeds()
+
+## Connections
+- [[TestGroupMemoryWriteACL]] - `method` [EXTRACTED]
+- [[The owner may write into any group's memory.]] - `rationale_for` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_41

@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+type: "code"
+community: "Community 666"
+location: "L8684"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_666
+---
+
+# .test_proxy_request_file_download_error_returns_502()
+
+## Connections
+- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
+- [[TestFileDownload]] - `method` [EXTRACTED]
+- [[proxy_request returns 502 sentinel when file download raises.]] - `rationale_for` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_666

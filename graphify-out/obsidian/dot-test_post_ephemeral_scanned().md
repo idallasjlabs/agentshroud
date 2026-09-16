@@ -1,0 +1,21 @@
+---
+source_file: "gateway/tests/test_slack_proxy.py"
+type: "code"
+community: "Community 78"
+location: "L630"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_78
+---
+
+# .test_post_ephemeral_scanned()
+
+## Connections
+- [[AsyncMock]] - `calls` [INFERRED]
+- [[TestMultiFieldOutboundScanning]] - `method` [EXTRACTED]
+- [[_make_proxy()_4]] - `calls` [EXTRACTED]
+- [[_pass_result()]] - `calls` [EXTRACTED]
+- [[chat.postEphemeral text goes through the pipeline like postMessage.]] - `rationale_for` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_78

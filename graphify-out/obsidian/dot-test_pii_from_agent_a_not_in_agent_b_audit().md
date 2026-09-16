@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_e2e_watchtower.py"
+type: "code"
+community: "Canary Tripwire"
+location: "L339"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Canary_Tripwire
+---
+
+# .test_pii_from_agent_a_not_in_agent_b_audit()
+
+## Connections
+- [[PII redacted for agent A does not leak into agent B's audit trail.]] - `rationale_for` [EXTRACTED]
+- [[TestE2E09SessionIsolation]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Canary_Tripwire

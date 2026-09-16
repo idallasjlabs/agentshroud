@@ -1,0 +1,20 @@
+---
+source_file: "gateway/tests/test_egress_enforce.py"
+type: "code"
+community: "Community 52"
+location: "L190"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_52
+---
+
+# .test_private_ip_blocking()
+
+## Connections
+- [[EgressFilter]] - `calls` [EXTRACTED]
+- [[EgressFilterConfig]] - `calls` [EXTRACTED]
+- [[Test that private IPs are blocked regardless of mode.]] - `rationale_for` [EXTRACTED]
+- [[TestEgressFilterEnforcement]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_52

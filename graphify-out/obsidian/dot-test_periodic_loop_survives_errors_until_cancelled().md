@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_dns_canvas_coverage.py"
+type: "code"
+community: "Community 138"
+location: "L459"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_138
+---
+
+# .test_periodic_loop_survives_errors_until_cancelled()
+
+## Connections
+- [[AsyncMock]] - `calls` [INFERRED]
+- [[DNSBlocklist]] - `calls` [EXTRACTED]
+- [[TestBlocklistUpdate]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_138

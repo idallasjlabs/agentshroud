@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_agentshroud_manager.py"
+type: "code"
+community: "Community 55"
+location: "L57"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_55
+---
+
+# .test_plain_text_unchanged()
+
+## Connections
+- [[TestMaskCredentials]] - `method` [EXTRACTED]
+- [[mask_credentials()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_55
