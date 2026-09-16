@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.9/release-notes-v0.9.0.md"
 type: "document"
-community: "Community 170"
+community: "Community 171"
 location: "L411"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_170
+  - community/Community_171
 ---
 
 # Support and Resources
@@ -17,4 +17,4 @@ tags:
 - [[🔧 Troubleshooting]] - `contains` [EXTRACTED]
 - [[🤝 Community and Support]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_170
+#graphify/document #graphify/EXTRACTED #community/Community_171

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-sav/SKILL.md"
 type: "document"
-community: "Community 251"
+community: "Community 263"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_251
+  - community/Community_263
 ---
 
 # System Audit Vault (Obsidian)
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[NOW ANALYZE THE FOLLOWING CODEBASE AND PRODUCE THE COMPLETE OBSIDIAN VAULT_2]] - `contains` [EXTRACTED]
 - [[OBSIDIAN VAULT RULES (Follow These Exactly)_2]] - `contains` [EXTRACTED]
-- [[OUTPUT FORMAT_2]] - `contains` [EXTRACTED]
+- [[OUTPUT FORMAT_9]] - `contains` [EXTRACTED]
 - [[REQUIRED NOTES — PRODUCE EVERY ONE OF THESE_2]] - `contains` [EXTRACTED]
-- [[SKILL_174]] - `contains` [EXTRACTED]
+- [[openclawskillsi-savSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_251
+#graphify/document #graphify/EXTRACTED #community/Community_263

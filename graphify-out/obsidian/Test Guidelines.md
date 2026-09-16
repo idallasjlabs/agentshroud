@@ -1,12 +1,12 @@
 ---
 source_file: "CONTRIBUTING.md"
 type: "document"
-community: "Community 555"
+community: "Community 528"
 location: "L63"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_555
+  - community/Community_528
 ---
 
 # Test Guidelines
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Contributing to AgentShroud™]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_555
+#graphify/document #graphify/EXTRACTED #community/Community_528

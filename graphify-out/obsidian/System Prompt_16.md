@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-athena/SKILL.md"
+source_file: ".agents/skills/i-vulcan/SKILL.md"
 type: "document"
-community: "Community 749"
-location: "L118"
+community: "Community 925"
+location: "L87"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_749
+  - community/Community_925
 ---
 
 # System Prompt
 
 ## Connections
-- [[description of what this does_2]] - `contains` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_749
+#graphify/document #graphify/EXTRACTED #community/Community_925

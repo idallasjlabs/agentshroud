@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
+source_file: "docs/architecture/PHASE3_REQUIREMENTS.md"
 type: "document"
-community: "Community 362"
-location: "L166"
+community: "Community 358"
+location: "L319"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_362
+  - community/Community_358
 ---
 
 # Success Criteria
 
 ## Connections
-- [[🛡️ AgentShroud Release Plan]] - `contains` [EXTRACTED]
+- [[Phase 3 Requirements Working Chat Container]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_362
+#graphify/document #graphify/EXTRACTED #community/Community_358

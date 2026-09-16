@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_simple.py"
 type: "rationale"
-community: "Config Validation & Router"
+community: "Multi-Agent Router & Chat UI"
 location: "L224"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Config_Validation__Router
+  - community/Multi-Agent_Router__Chat_UI
 ---
 
 # Test ForwardRequest rejects invalid source
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_forward_request_validation_invalid_source()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Config_Validation__Router
+#graphify/rationale #graphify/EXTRACTED #community/Multi-Agent_Router__Chat_UI

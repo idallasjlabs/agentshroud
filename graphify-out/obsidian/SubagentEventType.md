@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "Security Audit & Drift Detection"
+community: "Session Manager & PII/Context Guard"
 location: "L24"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Security_Audit__Drift_Detection
+  - community/Session_Manager__PII/Context_Guard
 ---
 
 # SubagentEventType
 
 ## Connections
-- [[._log_event()_1]] - `references` [EXTRACTED]
-- [[Enum]] - `inherits` [EXTRACTED]
-- [[TestAuditTrail_2]] - `uses` [INFERRED]
+- [[dot-_log_event()]] - `references` [EXTRACTED]
+- [[Enum_3]] - `inherits` [EXTRACTED]
+- [[TestAuditTrail_1]] - `uses` [INFERRED]
 - [[TestConcurrency]] - `uses` [INFERRED]
 - [[TestConcurrentLimits]] - `uses` [INFERRED]
 - [[TestDependencySecurity]] - `uses` [INFERRED]
@@ -31,8 +31,8 @@ tags:
 - [[TestTimingAttacks]] - `uses` [INFERRED]
 - [[TestTrustInheritance]] - `uses` [INFERRED]
 - [[TestWebSecurity]] - `uses` [INFERRED]
-- [[str]] - `inherits` [EXTRACTED]
+- [[str_2]] - `inherits` [EXTRACTED]
 - [[subagent_monitor.py]] - `contains` [EXTRACTED]
 - [[test_subagent_monitor.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Security_Audit__Drift_Detection
+#graphify/code #graphify/INFERRED #community/Session_Manager__PII/Context_Guard

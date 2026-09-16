@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "rationale"
-community: "Memory Lifecycle & Egress Filtering"
+community: "Memory Integrity & Lifecycle"
 location: "L206"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Memory_Lifecycle__Egress_Filtering
+  - community/Memory_Integrity__Lifecycle
 ---
 
 # Test PII detection in memory content.
 
 ## Connections
-- [[.test_pii_detection()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_pii_detection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Memory_Lifecycle__Egress_Filtering
+#graphify/rationale #graphify/EXTRACTED #community/Memory_Integrity__Lifecycle

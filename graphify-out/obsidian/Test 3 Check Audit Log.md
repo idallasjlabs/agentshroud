@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md"
 type: "document"
-community: "Community 1342"
+community: "Community 1398"
 location: "L204"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1342
+  - community/Community_1398
 ---
 
 # Test 3: Check Audit Log
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🧪 Testing the Protection]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1342
+#graphify/document #graphify/EXTRACTED #community/Community_1398

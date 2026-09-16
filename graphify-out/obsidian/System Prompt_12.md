@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mnemosyne/SKILL.md"
+source_file: ".agents/skills/i-daedalus/SKILL.md"
 type: "document"
-community: "Community 955"
-location: "L88"
+community: "Community 827"
+location: "L66"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_955
+  - community/Community_827
 ---
 
 # System Prompt
 
 ## Connections
-- [[Mnemosyne — Retention Engineer_3]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_955
+#graphify/document #graphify/EXTRACTED #community/Community_827

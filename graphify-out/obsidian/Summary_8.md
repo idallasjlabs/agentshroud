@@ -1,17 +1,19 @@
 ---
-source_file: "docs/planning/reviews/phase-review-2026-02-24-b.md"
+source_file: "docs/setup/TELEGRAM_GMAIL_SETUP.md"
 type: "document"
-community: "Community 133"
-location: "L171"
+community: "Community 222"
+location: "L339"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_133
+  - community/Community_222
 ---
 
 # Summary
 
 ## Connections
-- [[AgentShroud Phase Review — 2026-02-23]] - `contains` [EXTRACTED]
+- [[Quick Start Commands]] - `contains` [EXTRACTED]
+- [[Telegram & Gmail Integration Guide]] - `contains` [EXTRACTED]
+- [[✅ Current Status]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_133
+#graphify/document #graphify/EXTRACTED #community/Community_222

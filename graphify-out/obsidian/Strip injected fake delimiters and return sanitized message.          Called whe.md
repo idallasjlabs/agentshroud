@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "rationale"
-community: "PII Sanitizer & E2E Tests"
+community: "Prompt Guard & Context Integrity"
 location: "L639"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Sanitizer__E2E_Tests
+  - community/Prompt_Guard__Context_Integrity
 ---
 
 # Strip injected fake delimiters and return sanitized message.          Called whe
 
 ## Connections
-- [[.reanchor_delimiters()]] - `rationale_for` [EXTRACTED]
+- [[dot-reanchor_delimiters()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer__E2E_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Prompt_Guard__Context_Integrity

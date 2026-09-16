@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md"
 type: "document"
-community: "Community 823"
+community: "Community 562"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_823
+  - community/Community_562
 ---
 
 # TELEGRAM_API_BASE_URL.md
@@ -16,4 +16,4 @@ tags:
 - [[patch-telegram-sdk.sh]] - `references` [EXTRACTED]
 - [[telegram_proxy.py]] - `references` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_823
+#graphify/document #graphify/EXTRACTED #community/Community_562

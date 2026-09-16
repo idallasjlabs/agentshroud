@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/06 - Containers & Services/agentshroud-gateway.md"
+source_file: "docs/security/security-inventory.md"
 type: "document"
-community: "Community 339"
-location: "L11"
+community: "Community 961"
+location: "L215"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_339
+  - community/Community_961
 ---
 
 # Summary
 
 ## Connections
-- [[agentshroud-gateway_1]] - `contains` [EXTRACTED]
+- [[🛡️ AgentShroud Security Inventory (v0.8.0)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_339
+#graphify/document #graphify/EXTRACTED #community/Community_961

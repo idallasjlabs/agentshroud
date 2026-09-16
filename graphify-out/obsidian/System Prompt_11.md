@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-hermes/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-athena/SKILL.md"
 type: "document"
-community: "Community 954"
-location: "L59"
+community: "Community 781"
+location: "L118"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_954
+  - community/Community_781
 ---
 
 # System Prompt
 
 ## Connections
-- [[Hermes — Reference Verifier_1]] - `contains` [EXTRACTED]
+- [[description of what this does_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_954
+#graphify/document #graphify/EXTRACTED #community/Community_781

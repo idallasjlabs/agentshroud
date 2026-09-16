@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-athena/SKILL.md"
+source_file: ".agents/skills/i-atlas/SKILL.md"
 type: "document"
-community: "Community 746"
-location: "L118"
+community: "Community 672"
+location: "L91"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_746
+  - community/Community_672
 ---
 
 # System Prompt
 
 ## Connections
-- [[description of what this does_1]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_746
+#graphify/document #graphify/EXTRACTED #community/Community_672

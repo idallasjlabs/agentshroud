@@ -1,12 +1,12 @@
 ---
 source_file: "docker/SYSTEM-INSTRUCTIONS-SECURITY.md"
 type: "document"
-community: "Community 558"
+community: "Community 351"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_558
+  - community/Community_351
 ---
 
 # System Instructions: Credential Security (Ultra-Conservative)
@@ -27,4 +27,4 @@ tags:
 - [[🛡️ Security Benefits]] - `contains` [EXTRACTED]
 - [[🧪 Decision Examples]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_558
+#graphify/document #graphify/EXTRACTED #community/Community_351

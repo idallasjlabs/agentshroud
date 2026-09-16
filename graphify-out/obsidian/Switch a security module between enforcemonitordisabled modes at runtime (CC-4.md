@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "rationale"
-community: "SOC Collaborators"
+community: "SOC Correlation & Router"
 location: "L1855"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_Collaborators
+  - community/SOC_Correlation__Router
 ---
 
 # Switch a security module between enforce/monitor/disabled modes at runtime (CC-4
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[set_module_mode()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_Collaborators
+#graphify/rationale #graphify/EXTRACTED #community/SOC_Correlation__Router

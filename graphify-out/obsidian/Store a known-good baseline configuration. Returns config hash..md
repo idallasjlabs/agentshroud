@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/drift_detector.py"
 type: "rationale"
-community: "Security Audit & Drift Detection"
+community: "Encrypted Store & Drift Detector"
 location: "L95"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Audit__Drift_Detection
+  - community/Encrypted_Store__Drift_Detector
 ---
 
 # Store a known-good baseline configuration. Returns config hash.
 
 ## Connections
-- [[.set_baseline()]] - `rationale_for` [EXTRACTED]
+- [[dot-set_baseline()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Drift_Detection
+#graphify/rationale #graphify/EXTRACTED #community/Encrypted_Store__Drift_Detector

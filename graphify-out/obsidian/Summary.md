@@ -1,17 +1,17 @@
 ---
-source_file: ".github/PULL_REQUEST_TEMPLATE.md"
+source_file: "docs/planning/reviews/enforcement-audit-v0.7.0.md"
 type: "document"
-community: "Community 420"
-location: "L1"
+community: "Community 123"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_420
+  - community/Community_123
 ---
 
 # Summary
 
 ## Connections
-- [[PULL_REQUEST_TEMPLATE]] - `contains` [EXTRACTED]
+- [[AgentShroud v0.7.0 Enforcement Audit Results]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_420
+#graphify/document #graphify/EXTRACTED #community/Community_123

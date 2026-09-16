@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/SKILL.md"
+source_file: "skills/custom/securebrowser/SKILL.md"
 type: "document"
-community: "Community 256"
-location: "L86"
+community: "Community 251"
+location: "L85"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_256
+  - community/Community_251
 ---
 
 # Take Screenshot
 
 ## Connections
-- [[Usage_47]] - `contains` [EXTRACTED]
+- [[Usage_111]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_256
+#graphify/document #graphify/EXTRACTED #community/Community_251

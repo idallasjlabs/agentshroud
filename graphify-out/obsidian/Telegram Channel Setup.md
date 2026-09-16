@@ -1,19 +1,19 @@
 ---
 source_file: "docs/setup-telegram.md"
 type: "document"
-community: "Community 752"
+community: "Community 319"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_752
+  - community/Community_319
 ---
 
 # Telegram Channel Setup
 
 ## Connections
-- [[Collaborators_2]] - `contains` [EXTRACTED]
-- [[Prerequisites_9]] - `contains` [EXTRACTED]
+- [[Collaborators_1]] - `contains` [EXTRACTED]
+- [[Prerequisites_4]] - `contains` [EXTRACTED]
 - [[Step 1 Create a Bot]] - `contains` [EXTRACTED]
 - [[Step 2 Write the Token to Secrets]] - `contains` [EXTRACTED]
 - [[Step 3 Find Your Telegram User ID]] - `contains` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[Troubleshooting_24]] - `contains` [EXTRACTED]
 - [[setup-telegram]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_752
+#graphify/document #graphify/EXTRACTED #community/Community_319

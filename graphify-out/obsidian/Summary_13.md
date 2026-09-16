@@ -1,18 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md"
+source_file: "docs/planning/v0.8/v0.8.0-feature-list-final.md"
 type: "document"
-community: "Community 345"
-location: "L170"
+community: "Community 372"
+location: "L157"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_345
+  - community/Community_372
 ---
 
 # Summary
 
 ## Connections
-- [[Blue Team Security Assessment — AgentShroud v0.8.0 Round 2]] - `contains` [EXTRACTED]
-- [[Overall Security Posture STRONG 🟢]] - `contains` [EXTRACTED]
+- [[AgentShroud™ v0.8.0 Watchtower — Complete Feature List]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_345
+#graphify/document #graphify/EXTRACTED #community/Community_372

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/TELEGRAM_ISSUES.md"
 type: "document"
-community: "Community 284"
+community: "Community 577"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_284
+  - community/Community_577
 ---
 
 # TELEGRAM_ISSUES.md
@@ -27,4 +27,4 @@ tags:
 - [[apply-patches.js Invalid Config Injection Bug]] - `references` [EXTRACTED]
 - [[iMessage Integration Permissions Issue]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_284
+#graphify/document #graphify/EXTRACTED #community/Community_577

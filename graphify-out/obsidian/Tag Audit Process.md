@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-aws/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-aws/SKILL.md"
 type: "document"
-community: "Community 1376"
+community: "Community 243"
 location: "L100"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1376
+  - community/Community_243
 ---
 
 # Tag Audit Process
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Tagging Standard]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1376
+#graphify/document #graphify/EXTRACTED #community/Community_243

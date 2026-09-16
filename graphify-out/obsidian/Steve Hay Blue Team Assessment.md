@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/RELEASE-PLAN.md"
 type: "concept"
-community: "Community 166"
+community: "Community 533"
 tags:
   - graphify/concept
-  - graphify/INFERRED
-  - community/Community_166
+  - graphify/EXTRACTED
+  - community/Community_533
 ---
 
 # Steve Hay Blue Team Assessment
@@ -14,4 +14,4 @@ tags:
 - [[Hay, Enterprise Security Feature Priorities Assessment (2026)]] - `conceptually_related_to` [INFERRED]
 - [[v0.8.0 Watchtower — Security Fixes + Module Wiring]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/INFERRED #community/Community_166
+#graphify/concept #graphify/EXTRACTED #community/Community_533

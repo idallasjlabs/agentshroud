@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/All Environment Variables.md"
+source_file: ".github/PULL_REQUEST_TEMPLATE.md"
 type: "document"
-community: "Community 694"
-location: "L11"
+community: "Community 86"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_694
+  - community/Community_86
 ---
 
 # Summary
 
 ## Connections
-- [[4. Environment Variables]] - `contains` [EXTRACTED]
+- [[PULL_REQUEST_TEMPLATE]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_694
+#graphify/document #graphify/EXTRACTED #community/Community_86
