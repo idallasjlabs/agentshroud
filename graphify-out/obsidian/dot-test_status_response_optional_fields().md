@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_enhanced_status.py"
+type: "code"
+community: "Community 686"
+location: "L45"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_686
+---
+
+# .test_status_response_optional_fields()
+
+## Connections
+- [[StatusResponse]] - `calls` [EXTRACTED]
+- [[Test that new fields are optional (backward compat).]] - `rationale_for` [EXTRACTED]
+- [[TestEnhancedStatus]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_686

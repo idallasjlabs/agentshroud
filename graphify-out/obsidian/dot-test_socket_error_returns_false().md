@@ -1,0 +1,17 @@
+---
+source_file: "gateway/tests/test_scanner_integration_coverage.py"
+type: "code"
+community: "Community 968"
+location: "L174"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_968
+---
+
+# .test_socket_error_returns_false()
+
+## Connections
+- [[TestIsContainerRunning]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_968

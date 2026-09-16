@@ -1,0 +1,20 @@
+---
+source_file: "gateway/tests/test_scanner_integration.py"
+type: "code"
+community: "Community 73"
+location: "L855"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_73
+---
+
+# .test_three_when_both_running()
+
+## Connections
+- [[TestScoreIncidentResponse_1]] - `method` [EXTRACTED]
+- [[_falco_clean()]] - `calls` [EXTRACTED]
+- [[_score_incident_response()]] - `calls` [EXTRACTED]
+- [[_wazuh_clean()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_73

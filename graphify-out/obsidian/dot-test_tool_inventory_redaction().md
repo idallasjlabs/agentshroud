@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_prompt_protection.py"
+type: "code"
+community: "Community 1676"
+location: "L93"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_1676
+---
+
+# .test_tool_inventory_redaction()
+
+## Connections
+- [[Test redaction of tool inventory details.]] - `rationale_for` [EXTRACTED]
+- [[TestPromptProtection]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_1676

@@ -1,0 +1,23 @@
+---
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+type: "code"
+community: "Community 915"
+location: "L7771"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_915
+---
+
+# .test_stranger_rate_limit_cooldown_suppresses_repeated_notices()
+
+## Connections
+- [[FakeRBAC]] - `calls` [EXTRACTED]
+- [[PassthroughPipeline]] - `calls` [EXTRACTED]
+- [[Repeated rate-limited messages within the cooldown window send at most one notic]] - `rationale_for` [EXTRACTED]
+- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
+- [[TestStrangerRateLimit]] - `method` [EXTRACTED]
+- [[_make_update()_1]] - `calls` [EXTRACTED]
+- [[_wrap_response()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_915

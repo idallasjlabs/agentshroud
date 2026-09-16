@@ -1,0 +1,21 @@
+---
+source_file: "gateway/tests/test_progressive_trust_integration.py"
+type: "code"
+community: "Community 115"
+location: "L190"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_115
+---
+
+# .test_severe_violation_forces_demotion()
+
+## Connections
+- [[MALICIOUS_INTENT drops a level even when the score would not.]] - `rationale_for` [EXTRACTED]
+- [[TestTypedViolations]] - `method` [EXTRACTED]
+- [[_fast_ladder()]] - `calls` [EXTRACTED]
+- [[_make_tm()]] - `calls` [EXTRACTED]
+- [[_set_state()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_115

@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_security_fixes.py"
+type: "code"
+community: "Approval Queue (WebSocket)"
+location: "L51"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Approval_Queue_WebSocket
+---
+
+# .test_strict_host_key_checking_in_source()
+
+## Connections
+- [[Source code uses StrictHostKeyChecking=yes]] - `rationale_for` [EXTRACTED]
+- [[TestSSHStrictHostKeyChecking]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Approval_Queue_WebSocket

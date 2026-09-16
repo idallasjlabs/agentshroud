@@ -1,0 +1,21 @@
+---
+source_file: "gateway/tests/test_slack_proxy.py"
+type: "code"
+community: "Community 78"
+location: "L685"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_78
+---
+
+# .test_text_sanitization_still_applied()
+
+## Connections
+- [[AsyncMock]] - `calls` [INFERRED]
+- [[Plain-text sanitization keeps working (redacted text forwarded).]] - `rationale_for` [EXTRACTED]
+- [[TestMultiFieldOutboundScanning]] - `method` [EXTRACTED]
+- [[_make_proxy()_4]] - `calls` [EXTRACTED]
+- [[_pass_result()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_78

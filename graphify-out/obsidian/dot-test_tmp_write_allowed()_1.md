@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_privilege_separation.py"
+type: "code"
+community: "File Sandbox & Privilege Separation Tests"
+location: "L195"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/File_Sandbox__Privilege_Separation_Tests
+---
+
+# .test_tmp_write_allowed()
+
+## Connections
+- [[Agent can write to tmp for temporary files.]] - `rationale_for` [EXTRACTED]
+- [[TestWorkspaceAccessPreserved]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/File_Sandbox__Privilege_Separation_Tests

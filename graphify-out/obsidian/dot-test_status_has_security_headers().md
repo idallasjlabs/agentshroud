@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_security_fixes.py"
+type: "code"
+community: "Approval Queue (WebSocket)"
+location: "L361"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Approval_Queue_WebSocket
+---
+
+# .test_status_has_security_headers()
+
+## Connections
+- [[GET status should include security headers]] - `rationale_for` [EXTRACTED]
+- [[TestGlobalSecurityHeaders]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Approval_Queue_WebSocket

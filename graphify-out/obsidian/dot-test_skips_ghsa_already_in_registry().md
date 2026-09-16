@@ -1,0 +1,20 @@
+---
+source_file: "gateway/tests/test_daily_cve_report.py"
+type: "code"
+community: "Community 124"
+location: "L301"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_124
+---
+
+# .test_skips_ghsa_already_in_registry()
+
+## Connections
+- [[dot-_patch_urllib()]] - `calls` [EXTRACTED]
+- [[TestCheckUpstreamCves]] - `method` [EXTRACTED]
+- [[_make_github_advisory()]] - `calls` [EXTRACTED]
+- [[check_upstream_cves]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_124

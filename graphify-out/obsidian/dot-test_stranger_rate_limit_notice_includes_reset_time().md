@@ -1,0 +1,22 @@
+---
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+type: "code"
+community: "Community 915"
+location: "L7802"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_915
+---
+
+# .test_stranger_rate_limit_notice_includes_reset_time()
+
+## Connections
+- [[FakeRBAC]] - `calls` [EXTRACTED]
+- [[PassthroughPipeline]] - `calls` [EXTRACTED]
+- [[Repeated rate-limited messages within the cooldown window send at most one notic]] - `rationale_for` [EXTRACTED]
+- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
+- [[TestStrangerRateLimit]] - `method` [EXTRACTED]
+- [[_send_stranger_rate_limit_notice must include a reset time in HHMM UTC format.]] - `rationale_for` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_915

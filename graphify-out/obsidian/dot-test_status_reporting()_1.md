@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_output_canary.py"
+type: "code"
+community: "Community 213"
+location: "L140"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_213
+---
+
+# .test_status_reporting()
+
+## Connections
+- [[Test canary status reporting for dashboard.]] - `rationale_for` [EXTRACTED]
+- [[TestOutputCanary]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_213

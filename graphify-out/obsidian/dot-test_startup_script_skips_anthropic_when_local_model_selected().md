@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_config_validation.py"
+type: "code"
+community: "Community 1609"
+location: "L644"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_1609
+---
+
+# .test_startup_script_skips_anthropic_when_local_model_selected()
+
+## Connections
+- [[Bot startup should not load Anthropic secrets when Ollama local model is…]] - `rationale_for` [EXTRACTED]
+- [[TestConfigValidation]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_1609

@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_web_api_coverage.py"
+type: "code"
+community: "Community 45"
+location: "L210"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_45
+---
+
+# .test_status_with_running_and_stopped_containers()
+
+## Connections
+- [[TestStatus]] - `method` [EXTRACTED]
+- [[_container()]] - `calls` [EXTRACTED]
+- [[_engine()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_45

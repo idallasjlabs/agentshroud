@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_dns_filter.py"
+type: "code"
+community: "Community 63"
+location: "L217"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_63
+---
+
+# .test_stable_resolution_passes()
+
+## Connections
+- [[Seeding the same IP twice should not flag rebinding.]] - `rationale_for` [EXTRACTED]
+- [[TestDNSRebinding]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_63

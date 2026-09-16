@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_triage_cve_mitigations.py"
+type: "code"
+community: "Community 94"
+location: "L250"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_94
+---
+
+# .test_source_fixed_partial_class_upgrades_to_fully()
+
+## Connections
+- [[TestTriageEntry]] - `method` [EXTRACTED]
+- [[_entry()_1]] - `calls` [EXTRACTED]
+- [[_t()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_94
