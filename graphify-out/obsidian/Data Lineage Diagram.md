@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/03-data.md"
 type: "concept"
-community: "Community 556"
+community: "Community 572"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Community_556
+  - community/Community_572
 ---
 
 # Data Lineage Diagram
@@ -15,4 +15,4 @@ tags:
 - [[Data Flow Diagram]] - `shares_data_with` [INFERRED]
 - [[Entity Relationship Diagram (ledger, approval_items)]] - `shares_data_with` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Community_556
+#graphify/concept #graphify/INFERRED #community/Community_572

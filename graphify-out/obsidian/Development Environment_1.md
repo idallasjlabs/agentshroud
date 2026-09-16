@@ -1,17 +1,21 @@
 ---
-source_file: "docs/security/VERIFICATION_RESULTS.md"
+source_file: "docs/TEAM.md"
 type: "document"
-community: "Community 385"
-location: "L206"
+community: "Community 485"
+location: "L126"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_385
+  - community/Community_485
 ---
 
 # Development Environment
 
 ## Connections
-- [[Deployment Readiness]] - `contains` [EXTRACTED]
+- [[AgentShroud Development Team — Agile Structure]] - `contains` [EXTRACTED]
+- [[Communication & Tooling]] - `contains` [EXTRACTED]
+- [[Container Architecture_1]] - `contains` [EXTRACTED]
+- [[Development Workflow_1]] - `contains` [EXTRACTED]
+- [[Hardware]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_385
+#graphify/document #graphify/EXTRACTED #community/Community_485

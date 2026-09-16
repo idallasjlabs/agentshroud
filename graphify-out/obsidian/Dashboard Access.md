@@ -1,17 +1,17 @@
 ---
-source_file: "docs/operations/runbook.md"
+source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Community 128"
-location: "L157"
+community: "Community 392"
+location: "L404"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_128
+  - community/Community_392
 ---
 
 # Dashboard Access
 
 ## Connections
-- [[2. Health Monitoring]] - `contains` [EXTRACTED]
+- [[Step 7 Verify Installation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_128
+#graphify/document #graphify/EXTRACTED #community/Community_392

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-15-sequence-telegram.svg"
 type: "image"
-community: "Community 1092"
+community: "Community 1142"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Community_1092
+  - community/Community_1142
 ---
 
 # Diagram 15: Sequence — Telegram
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Normal Message Flow (User - Gateway - Sanitizer - Audit - OpenClaw - Audit - User)]] - `references` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Community_1092
+#graphify/image #graphify/EXTRACTED #community/Community_1142

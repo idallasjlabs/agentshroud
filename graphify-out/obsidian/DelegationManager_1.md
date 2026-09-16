@@ -1,21 +1,42 @@
 ---
-source_file: "gateway/tests/test_delegation.py"
+source_file: "gateway/security/delegation.py"
 type: "code"
-community: "Community 82"
-location: "L24"
+community: "Community 74"
+location: "L93"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_82
+  - graphify/EXTRACTED
+  - community/Community_74
 ---
 
 # DelegationManager
 
 ## Connections
-- [[Delegation]] - `uses` [INFERRED]
-- [[DelegationError]] - `uses` [INFERRED]
+- [[dot-__init__()_178]] - `method` [EXTRACTED]
+- [[dot-_load()]] - `method` [EXTRACTED]
+- [[dot-_require_owner()]] - `method` [EXTRACTED]
+- [[dot-_revoke_by_user_privilege()]] - `method` [EXTRACTED]
+- [[dot-_save()]] - `method` [EXTRACTED]
+- [[dot-cleanup_expired()_2]] - `method` [EXTRACTED]
+- [[dot-delegate()]] - `method` [EXTRACTED]
+- [[dot-get_active_delegations()]] - `method` [EXTRACTED]
+- [[dot-get_delegations_for_user()]] - `method` [EXTRACTED]
+- [[dot-is_delegated()]] - `method` [EXTRACTED]
+- [[dot-revoke()]] - `method` [EXTRACTED]
+- [[dot-revoke_all_for_user()]] - `method` [EXTRACTED]
 - [[DelegationManager]] - `uses` [INFERRED]
-- [[DelegationPrivilege]] - `uses` [INFERRED]
-- [[mgr()]] - `references` [EXTRACTED]
+- [[EgressApprovalQueue]] - `semantically_similar_to` [INFERRED]
+- [[Manages owner-away privilege delegations.      Thread-safe via file locking for]] - `rationale_for` [EXTRACTED]
+- [[TestAccessControl_2]] - `uses` [INFERRED]
+- [[TestDelegateBasic]] - `uses` [INFERRED]
+- [[TestIsDelegated]] - `uses` [INFERRED]
+- [[TestListAndCleanup]] - `uses` [INFERRED]
+- [[TestRedelegation]] - `uses` [INFERRED]
+- [[TestRevoke]] - `uses` [INFERRED]
+- [[TestSerialization_2]] - `uses` [INFERRED]
+- [[delegation.py]] - `contains` [EXTRACTED]
+- [[lifespan()]] - `calls` [EXTRACTED]
+- [[lifespan.py]] - `imports` [EXTRACTED]
+- [[test_delegation.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_82
+#graphify/code #graphify/EXTRACTED #community/Community_74

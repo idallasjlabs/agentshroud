@@ -1,11 +1,11 @@
 ---
 source_file: "AGENTS.md"
 type: "concept"
-community: "Community 785"
+community: "Community 773"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_785
+  - community/Community_773
 ---
 
 # Data Lakehouse Platform (GSDL)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AGENTS.md — Codex CLI Guidance]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_785
+#graphify/concept #graphify/EXTRACTED #community/Community_773

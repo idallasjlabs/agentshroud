@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "rationale"
-community: "Community 198"
+community: "Session Manager & PII/Context Guard"
 location: "L448"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_198
+  - community/Session_Manager__PII/Context_Guard
 ---
 
 # Determine if a message should be blocked.          Returns:             Tuple of
 
 ## Connections
-- [[.should_block_message()]] - `rationale_for` [EXTRACTED]
+- [[dot-should_block_message()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_198
+#graphify/rationale #graphify/EXTRACTED #community/Session_Manager__PII/Context_Guard

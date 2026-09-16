@@ -1,41 +1,41 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "Community 26"
+community: "Gateway Config & PII Sanitizer"
 location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_26
+  - community/Gateway_Config__PII_Sanitizer
 ---
 
 # DataLedger
 
 ## Connections
-- [[.__init__()_13]] - `method` [EXTRACTED]
-- [[._hash_content()]] - `method` [EXTRACTED]
-- [[.close()_5]] - `method` [EXTRACTED]
-- [[.delete_entry()]] - `method` [EXTRACTED]
-- [[.disabled_client()]] - `calls` [EXTRACTED]
-- [[.enforce_retention()]] - `method` [EXTRACTED]
-- [[.get_entry()]] - `method` [EXTRACTED]
-- [[.get_stats()_1]] - `method` [EXTRACTED]
-- [[.initialize()_2]] - `method` [EXTRACTED]
-- [[.ledger()]] - `calls` [EXTRACTED]
-- [[.ledger()_1]] - `calls` [EXTRACTED]
-- [[.no_approval_client()]] - `calls` [EXTRACTED]
-- [[.query()]] - `method` [EXTRACTED]
-- [[.record()]] - `method` [EXTRACTED]
+- [[dot-__init__()_69]] - `method` [EXTRACTED]
+- [[dot-_hash_content()]] - `method` [EXTRACTED]
+- [[dot-close()_10]] - `method` [EXTRACTED]
+- [[dot-delete_entry()]] - `method` [EXTRACTED]
+- [[dot-disabled_client()]] - `calls` [EXTRACTED]
+- [[dot-enforce_retention()]] - `method` [EXTRACTED]
+- [[dot-get_entry()]] - `method` [EXTRACTED]
+- [[dot-get_stats()_11]] - `method` [EXTRACTED]
+- [[dot-initialize()_1]] - `method` [EXTRACTED]
+- [[dot-ledger()]] - `calls` [EXTRACTED]
+- [[dot-ledger()_1]] - `calls` [EXTRACTED]
+- [[dot-no_approval_client()]] - `calls` [EXTRACTED]
+- [[dot-query()]] - `method` [EXTRACTED]
+- [[dot-record()_2]] - `method` [EXTRACTED]
 - [[AppState]] - `uses` [INFERRED]
 - [[Async SQLite-backed data ledger      Records all content forwarded through the g]] - `rationale_for` [EXTRACTED]
 - [[Data Flow]] - `references` [EXTRACTED]
-- [[FastAPI_2]] - `uses` [INFERRED]
-- [[GatewayConfig_2]] - `uses` [INFERRED]
+- [[FastAPI_1]] - `uses` [INFERRED]
+- [[GatewayConfig_1]] - `uses` [INFERRED]
 - [[LedgerConfig]] - `uses` [INFERRED]
-- [[LedgerEntry_1]] - `uses` [INFERRED]
-- [[LedgerQueryResponse_1]] - `uses` [INFERRED]
-- [[LogRecord]] - `uses` [INFERRED]
-- [[PIISanitizer_2]] - `uses` [INFERRED]
+- [[LedgerEntry]] - `uses` [INFERRED]
+- [[LedgerQueryResponse]] - `uses` [INFERRED]
+- [[LogRecord_2]] - `uses` [INFERRED]
+- [[PIISanitizer_1]] - `uses` [INFERRED]
 - [[Startup Sequence]] - `references` [EXTRACTED]
 - [[TestAuditChainIntegrity]] - `uses` [INFERRED]
 - [[TestAuditChainPerformance]] - `uses` [INFERRED]
@@ -61,18 +61,18 @@ tags:
 - [[TestTamperDetection]] - `uses` [INFERRED]
 - [[TestTrustManagerPerformance]] - `uses` [INFERRED]
 - [[_DropInvalidHTTPRequestFilter]] - `uses` [INFERRED]
-- [[client()_16]] - `calls` [EXTRACTED]
-- [[client()_17]] - `calls` [EXTRACTED]
+- [[client()_19]] - `calls` [EXTRACTED]
+- [[client()_20]] - `calls` [EXTRACTED]
 - [[conftest.py]] - `imports` [EXTRACTED]
 - [[ledger()]] - `calls` [EXTRACTED]
-- [[ledger()_2]] - `calls` [EXTRACTED]
+- [[ledger()_1]] - `calls` [EXTRACTED]
 - [[ledger.py]] - `contains` [EXTRACTED]
 - [[ledger.py_1]] - `references` [EXTRACTED]
-- [[lifespan()_1]] - `calls` [EXTRACTED]
+- [[lifespan()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[state.py]] - `imports` [EXTRACTED]
 - [[test_audit_chain.py]] - `imports` [EXTRACTED]
-- [[test_initialize_is_idempotent()_1]] - `calls` [EXTRACTED]
+- [[test_initialize_is_idempotent()]] - `calls` [EXTRACTED]
 - [[test_ledger()]] - `calls` [EXTRACTED]
 - [[test_ledger.py]] - `imports` [EXTRACTED]
 - [[test_performance.py]] - `imports` [EXTRACTED]
@@ -80,4 +80,4 @@ tags:
 - [[test_ssh_endpoints.py]] - `imports` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_26
+#graphify/code #graphify/EXTRACTED #community/Gateway_Config__PII_Sanitizer

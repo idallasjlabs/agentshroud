@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Adversarial Injection Guards"
+community: "Community 43"
 location: "L1226"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Adversarial_Injection_Guards
+  - community/Community_43
 ---
 
 # Detect collaborator prompts targeting local/internal network hosts.
 
 ## Connections
-- [[._looks_like_internal_network_probe()]] - `rationale_for` [EXTRACTED]
+- [[dot-_looks_like_internal_network_probe()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Adversarial_Injection_Guards
+#graphify/rationale #graphify/EXTRACTED #community/Community_43

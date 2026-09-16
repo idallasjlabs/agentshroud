@@ -1,27 +1,27 @@
 ---
 source_file: "docs/vault/01 - Architecture/Data Flow.md"
 type: "document"
-community: "Community 85"
+community: "Community 253"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_85
+  - community/Community_253
 ---
 
 # Data Flow.md
 
 ## Connections
-- [[Architecture Overview_2]] - `references` [EXTRACTED]
+- [[Architecture Overview_1]] - `references` [EXTRACTED]
 - [[Data Flow_1]] - `contains` [EXTRACTED]
 - [[DataLedger]] - `references` [EXTRACTED]
-- [[EgressFilter_1]] - `references` [EXTRACTED]
-- [[EnhancedApprovalQueue]] - `references` [EXTRACTED]
+- [[EgressFilter]] - `references` [EXTRACTED]
+- [[EnhancedApprovalQueue_1]] - `references` [EXTRACTED]
 - [[Home]] - `references` [EXTRACTED]
 - [[PromptGuard]] - `references` [EXTRACTED]
-- [[SecurityPipeline]] - `references` [EXTRACTED]
+- [[SecurityPipeline_1]] - `references` [EXTRACTED]
 - [[System Overview]] - `references` [EXTRACTED]
 - [[ledger.py_1]] - `references` [EXTRACTED]
-- [[main.py_3]] - `references` [EXTRACTED]
+- [[main.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_85
+#graphify/document #graphify/EXTRACTED #community/Community_253

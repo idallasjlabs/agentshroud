@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/deployment-diagram.md"
 type: "document"
-community: "Community 290"
+community: "Community 396"
 location: "L292"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_290
+  - community/Community_396
 ---
 
 # Default Port Allocation
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Port Mappings and Auto-Detection]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_290
+#graphify/document #graphify/EXTRACTED #community/Community_396

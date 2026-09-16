@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-bs/SKILL.md"
 type: "document"
-community: "Community 461"
+community: "Community 471"
 location: "L124"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_461
+  - community/Community_471
 ---
 
 # Diagram Theme Block (Mermaid)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Required ≥ 4.5 for text, ≥ 3.0 for UI elements]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_461
+#graphify/document #graphify/EXTRACTED #community/Community_471

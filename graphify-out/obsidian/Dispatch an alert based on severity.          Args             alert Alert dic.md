@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/alert_dispatcher.py"
 type: "rationale"
-community: "Community 527"
+community: "Alert Dispatcher & RBAC Reliability"
 location: "L59"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_527
+  - community/Alert_Dispatcher__RBAC_Reliability
 ---
 
 # Dispatch an alert based on severity.          Args:             alert: Alert dic
 
 ## Connections
-- [[.dispatch()]] - `rationale_for` [EXTRACTED]
+- [[dot-dispatch()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_527
+#graphify/rationale #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability

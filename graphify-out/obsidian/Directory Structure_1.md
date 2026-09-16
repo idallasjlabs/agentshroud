@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/Dockerfile.bot.md"
+source_file: "skills/README.md"
 type: "document"
-community: "Community 779"
-location: "L85"
+community: "Blue/Red Team Security Auditor Skills"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_779
+  - community/Blue/Red_Team_Security_Auditor_Skills
 ---
 
 # Directory Structure
 
 ## Connections
-- [[Dockerfile — Bot (OpenClaw)]] - `contains` [EXTRACTED]
+- [[AgentShroud Skills Library]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_779
+#graphify/document #graphify/EXTRACTED #community/Blue/Red_Team_Security_Auditor_Skills

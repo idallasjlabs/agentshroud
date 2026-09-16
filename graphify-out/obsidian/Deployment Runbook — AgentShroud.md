@@ -1,23 +1,23 @@
 ---
 source_file: "docs/runbooks/deployment.md"
 type: "document"
-community: "Community 680"
+community: "Community 703"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_680
+  - community/Community_703
 ---
 
 # Deployment Runbook — AgentShroud
 
 ## Connections
-- [[Environment Variables]] - `contains` [EXTRACTED]
+- [[Environment Variables_16]] - `contains` [EXTRACTED]
 - [[First-Time Setup]] - `contains` [EXTRACTED]
-- [[Prerequisites_8]] - `contains` [EXTRACTED]
+- [[Prerequisites_13]] - `contains` [EXTRACTED]
 - [[Rolling Back]] - `contains` [EXTRACTED]
 - [[Standard Deployment]] - `contains` [EXTRACTED]
 - [[Version Tagging]] - `contains` [EXTRACTED]
 - [[deployment]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_680
+#graphify/document #graphify/EXTRACTED #community/Community_703

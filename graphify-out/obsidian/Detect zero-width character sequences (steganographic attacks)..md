@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/web_content_scanner.py"
 type: "rationale"
-community: "Community 48"
+community: "Voice Gateway STT & Browser Security"
 location: "L371"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_48
+  - community/Voice_Gateway_STT__Browser_Security
 ---
 
 # Detect zero-width character sequences (steganographic attacks).
 
 ## Connections
-- [[._scan_zero_width()]] - `rationale_for` [EXTRACTED]
+- [[dot-_scan_zero_width()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_48
+#graphify/rationale #graphify/EXTRACTED #community/Voice_Gateway_STT__Browser_Security
