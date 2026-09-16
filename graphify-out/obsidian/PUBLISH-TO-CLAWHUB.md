@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/PUBLISH-TO-CLAWHUB.md"
 type: "document"
-community: "Community 1045"
+community: "Community 1080"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1045
+  - community/Community_1080
 ---
 
 # PUBLISH-TO-CLAWHUB.md
@@ -16,4 +16,4 @@ tags:
 - [[Publish SecureBrowser to ClawHub - Step-by-Step Guide]] - `contains` [EXTRACTED]
 - [[SecureBrowser Skill_1]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1045
+#graphify/document #graphify/EXTRACTED #community/Community_1080

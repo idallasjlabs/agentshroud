@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-15-sequence-telegram.png"
 type: "image"
-community: "Community 376"
+community: "Community 184"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Community_376
+  - community/Community_184
 ---
 
 # Peer binding: Telegram 8096968754 → agent:main
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Telegram Message Sequence Diagram]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Community_376
+#graphify/image #graphify/EXTRACTED #community/Community_184

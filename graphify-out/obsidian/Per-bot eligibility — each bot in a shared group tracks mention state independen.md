@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Community 31"
+community: "Telegram Lockdown & Collaborator UX Tests"
 location: "L9003"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_31
+  - community/Telegram_Lockdown__Collaborator_UX_Tests
 ---
 
 # Per-bot eligibility — each bot in a shared group tracks mention state independen
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPerBotGroupMentionFilter]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_31
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Lockdown__Collaborator_UX_Tests

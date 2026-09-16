@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "rationale"
-community: "Group RBAC & Tool ACL"
+community: "Community 746"
 location: "L299"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Group_RBAC__Tool_ACL
+  - community/Community_746
 ---
 
 # Owner must have unrestricted access even in group context.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestOwnerGroupContext]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Group_RBAC__Tool_ACL
+#graphify/rationale #graphify/EXTRACTED #community/Community_746

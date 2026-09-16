@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/migrate-cve-registry-ghsa.py"
+source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Community 246"
-location: "L472"
+community: "Community 488"
+location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_246
+  - community/Community_488
 ---
 
 # Path
 
 ## Connections
-- [[gather_advisories()]] - `calls` [EXTRACTED]
-- [[load_snapshot()]] - `references` [EXTRACTED]
+- [[_age()]] - `references` [EXTRACTED]
+- [[_w()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_246
+#graphify/code #graphify/EXTRACTED #community/Community_488

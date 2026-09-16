@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/incident-response.md"
 type: "document"
-community: "Community 582"
+community: "Community 599"
 location: "L84"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_582
+  - community/Community_599
 ---
 
 # P4 — Low
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[3. Response Procedures]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_582
+#graphify/document #graphify/EXTRACTED #community/Community_599

@@ -1,21 +1,16 @@
 ---
-source_file: "gateway/security/memory_integrity.py"
+source_file: ""
 type: "code"
-community: "Memory Lifecycle & Egress Filtering"
-location: "L65"
+community: "Community 166"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Memory_Lifecycle__Egress_Filtering
+  - community/Community_166
 ---
 
 # Path
 
 ## Connections
-- [[.__init__()_95]] - `references` [EXTRACTED]
-- [[._compute_file_hash()]] - `references` [EXTRACTED]
-- [[._detect_modification_source()]] - `references` [EXTRACTED]
-- [[.scan_file()]] - `references` [EXTRACTED]
-- [[MemoryIntegrityConfig]] - `uses` [INFERRED]
+- [[_parse_env_file()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Memory_Lifecycle__Egress_Filtering
+#graphify/code #graphify/EXTRACTED #community/Community_166

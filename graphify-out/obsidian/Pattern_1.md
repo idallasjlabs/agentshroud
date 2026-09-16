@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/log_sanitizer.py"
+source_file: "gateway/security/output_canary.py"
 type: "code"
-community: "Community 95"
-location: "L24"
+community: "Alert Dispatcher & RBAC Reliability"
+location: "L170"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_95
+  - community/Alert_Dispatcher__RBAC_Reliability
 ---
 
 # Pattern
 
 ## Connections
-- [[._compile_patterns()]] - `references` [EXTRACTED]
+- [[dot-_create_detection_patterns()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_95
+#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability

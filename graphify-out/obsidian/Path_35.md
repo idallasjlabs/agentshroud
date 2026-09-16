@@ -1,21 +1,20 @@
 ---
-source_file: "gateway/tests/test_observatory_mode.py"
+source_file: "gateway/tests/test_mcp_policy_default_failclosed.py"
 type: "code"
-community: "Community 25"
-location: "L268"
+community: "Community 35"
+location: "L73"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_25
+  - community/Community_35
 ---
 
 # Path
 
 ## Connections
-- [[._make_monitor()]] - `references` [EXTRACTED]
-- [[KillSwitchConfig]] - `uses` [INFERRED]
-- [[KillSwitchMonitor]] - `uses` [INFERRED]
-- [[ModeRequest]] - `uses` [INFERRED]
-- [[SecurityPipeline]] - `uses` [INFERRED]
+- [[MCPPolicyAction]] - `uses` [INFERRED]
+- [[MCPPolicyConfig_1]] - `uses` [INFERRED]
+- [[MCPPolicyEngine_1]] - `uses` [INFERRED]
+- [[_write()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_25
+#graphify/code #graphify/INFERRED #community/Community_35

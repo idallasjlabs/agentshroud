@@ -1,18 +1,22 @@
 ---
-source_file: "gateway/tests/test_lifespan_prune.py"
+source_file: "gateway/skills/scan.py"
 type: "code"
-community: "Community 17"
-location: "L43"
+community: "Community 293"
+location: "L42"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_17
+  - community/Community_293
 ---
 
 # Path
 
 ## Connections
-- [[CollaboratorActivityTracker]] - `uses` [INFERRED]
-- [[_make_md()]] - `references` [EXTRACTED]
+- [[Recommendation]] - `uses` [INFERRED]
+- [[ScanResult_3]] - `uses` [INFERRED]
+- [[SkillGuard_1]] - `uses` [INFERRED]
+- [[SkillsManifest]] - `uses` [INFERRED]
+- [[_build_tree()]] - `references` [EXTRACTED]
+- [[main()_16]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_17
+#graphify/code #graphify/INFERRED #community/Community_293

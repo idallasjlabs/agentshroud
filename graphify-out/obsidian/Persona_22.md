@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-socrates/SKILL.md"
+source_file: "docker/config/hermes/skills/i-hermes/SKILL.md"
 type: "document"
-community: "Community 497"
+community: "Community 998"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_497
+  - community/Community_998
 ---
 
 # Persona
 
 ## Connections
-- [[Socrates — Dialogue Architect_4]] - `contains` [EXTRACTED]
+- [[Hermes — Reference Verifier_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_497
+#graphify/document #graphify/EXTRACTED #community/Community_998

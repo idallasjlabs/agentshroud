@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/workspace/memory/context.md"
 type: "document"
-community: "Community 620"
+community: "Community 228"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_620
+  - community/Community_228
 ---
 
 # Pending Tasks
 
 ## Connections
-- [[context]] - `contains` [EXTRACTED]
+- [[context_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_620
+#graphify/document #graphify/EXTRACTED #community/Community_228

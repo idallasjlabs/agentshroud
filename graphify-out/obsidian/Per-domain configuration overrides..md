@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_config.py"
 type: "rationale"
-community: "Community 22"
+community: "Egress Filter & HTTP Proxy"
 location: "L22"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_22
+  - community/Egress_Filter__HTTP_Proxy
 ---
 
 # Per-domain configuration overrides.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[DomainSettings]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_22
+#graphify/rationale #graphify/EXTRACTED #community/Egress_Filter__HTTP_Proxy

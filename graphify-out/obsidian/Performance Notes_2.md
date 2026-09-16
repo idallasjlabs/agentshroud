@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mac/SKILL.md"
 type: "document"
-community: "Community 390"
+community: "Community 399"
 location: "L356"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_390
+  - community/Community_399
 ---
 
 # Performance Notes
@@ -15,4 +15,4 @@ tags:
 - [[Mac App Discovery Skill_1]] - `contains` [EXTRACTED]
 - [[Mac App Discovery Skill_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_390
+#graphify/document #graphify/EXTRACTED #community/Community_399

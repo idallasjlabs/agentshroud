@@ -1,11 +1,11 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "concept"
-community: "Community 166"
+community: "Community 533"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_166
+  - community/Community_533
 ---
 
 # Per-User Session Isolation (R-04, R-05)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[STPA-Sec Analysis of AgentShroud]] - `rationale_for` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_166
+#graphify/concept #graphify/EXTRACTED #community/Community_533

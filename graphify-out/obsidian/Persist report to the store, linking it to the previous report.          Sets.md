@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "rationale"
-community: "Community 58"
+community: "Runtime Security Comparison & Intel Report"
 location: "L213"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_58
+  - community/Runtime_Security_Comparison__Intel_Report
 ---
 
 # Persist *report* to the store, linking it to the previous report.          Sets
 
 ## Connections
-- [[.save()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-save()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_58
+#graphify/rationale #graphify/EXTRACTED #community/Runtime_Security_Comparison__Intel_Report

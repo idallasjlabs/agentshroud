@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "Community 603"
+community: "Community 619"
 location: "L114"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_603
+  - community/Community_619
 ---
 
 # Phase 1: Pi Preparation (Prerequisites)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[1.4 Implementation Plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_603
+#graphify/document #graphify/EXTRACTED #community/Community_619

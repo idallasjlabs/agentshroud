@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-sec-defense/SKILL.md"
 type: "document"
-community: "Community 371"
+community: "Community 375"
 location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_371
+  - community/Community_375
 ---
 
 # Phase 1: Code-Level Module Audit
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Audit Procedure]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_371
+#graphify/document #graphify/EXTRACTED #community/Community_375

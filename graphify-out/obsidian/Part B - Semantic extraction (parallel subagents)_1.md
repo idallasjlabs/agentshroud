@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/graphify/SKILL.md"
 type: "document"
-community: "Community 357"
+community: "Community 361"
 location: "L189"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_357
+  - community/Community_361
 ---
 
 # Part B - Semantic extraction (parallel subagents)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Step 3 - Extract entities and relationships_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_357
+#graphify/document #graphify/EXTRACTED #community/Community_361

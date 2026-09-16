@@ -1,17 +1,17 @@
 ---
-source_file: "scripts/launch-instance.sh"
+source_file: "gateway/security/audit_store.py"
 type: "code"
-community: "Community 1265"
-location: "L14"
+community: "Community 112"
+location: "L125"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1265
+  - community/Community_112
 ---
 
-# PATH
+# Path
 
 ## Connections
-- [[launch-instance.sh]] - `defines` [EXTRACTED]
+- [[dot-__init__()_39]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1265
+#graphify/code #graphify/EXTRACTED #community/Community_112

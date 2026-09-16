@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-mac/SKILL.md"
 type: "document"
-community: "Community 787"
+community: "Community 828"
 location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_787
+  - community/Community_828
 ---
 
 # Phase 1 — Raw Collection
@@ -24,4 +24,4 @@ tags:
 - [[9. Browser Extensions (optional but useful)]] - `contains` [EXTRACTED]
 - [[Discovery Strategy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_787
+#graphify/document #graphify/EXTRACTED #community/Community_828

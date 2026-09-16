@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/audit-specification.md"
 type: "document"
-community: "Community 189"
+community: "Community 197"
 location: "L531"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_189
+  - community/Community_197
 ---
 
 # Performance and Scalability
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud Audit Specification]] - `contains` [EXTRACTED]
 - [[Audit System Performance Metrics]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_189
+#graphify/document #graphify/EXTRACTED #community/Community_197

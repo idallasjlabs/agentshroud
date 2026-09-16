@@ -1,19 +1,17 @@
 ---
-source_file: "skills/openclaw/openai-image-gen/scripts/gen.py"
+source_file: "gateway/security/clamav_scanner.py"
 type: "code"
-community: "Community 360"
-location: "L22"
+community: "Community 56"
+location: "L145"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_360
+  - community/Community_56
 ---
 
 # Path
 
 ## Connections
-- [[default_out_dir()]] - `references` [EXTRACTED]
-- [[main()_29]] - `calls` [EXTRACTED]
-- [[write_gallery()]] - `references` [EXTRACTED]
+- [[save_report()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_360
+#graphify/code #graphify/EXTRACTED #community/Community_56

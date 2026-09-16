@@ -1,24 +1,19 @@
 ---
-source_file: "gateway/web/api.py"
+source_file: "scripts/generate_branding_assets.py"
 type: "code"
-community: "Community 37"
-location: "L946"
+community: "Community 432"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_37
+  - community/Community_432
 ---
 
 # Path
 
 ## Connections
-- [[CitationVerifier]] - `uses` [INFERRED]
-- [[DraftEntry]] - `uses` [INFERRED]
-- [[IntelReportStore]] - `uses` [INFERRED]
-- [[_skills_reload_paths()]] - `references` [EXTRACTED]
-- [[dashboard()]] - `calls` [EXTRACTED]
-- [[dashboard_main()]] - `calls` [EXTRACTED]
-- [[get_config()_1]] - `calls` [EXTRACTED]
-- [[update_config()]] - `calls` [EXTRACTED]
+- [[ensure()]] - `references` [EXTRACTED]
+- [[get_font()]] - `calls` [EXTRACTED]
+- [[save()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_37
+#graphify/code #graphify/EXTRACTED #community/Community_432

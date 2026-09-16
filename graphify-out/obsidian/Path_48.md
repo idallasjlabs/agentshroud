@@ -1,17 +1,17 @@
 ---
-source_file: "scripts/triage-cve-mitigations.py"
+source_file: "gateway/security/alert_dispatcher.py"
 type: "code"
-community: "Community 188"
-location: "L1116"
+community: "Community 54"
+location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_188
+  - community/Community_54
 ---
 
 # Path
 
 ## Connections
-- [[_rel()]] - `references` [EXTRACTED]
+- [[dot-__init__()_163]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_188
+#graphify/code #graphify/EXTRACTED #community/Community_54

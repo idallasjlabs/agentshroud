@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/security/memory_lifecycle.py"
+source_file: "gateway/tests/test_generate_cve_page.py"
 type: "code"
-community: "Memory Lifecycle & Egress Filtering"
-location: "L75"
+community: "Community 186"
+location: "L249"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Memory_Lifecycle__Egress_Filtering
+  - community/Community_186
 ---
 
 # Path
 
 ## Connections
-- [[.__init__()_96]] - `references` [EXTRACTED]
-- [[.archive_file()]] - `references` [EXTRACTED]
-- [[.validate_memory_write()]] - `references` [EXTRACTED]
-- [[MemoryLifecycleConfig]] - `uses` [INFERRED]
-- [[run()_3]] - `calls` [EXTRACTED]
+- [[dot-_run_generate()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Memory_Lifecycle__Egress_Filtering
+#graphify/code #graphify/EXTRACTED #community/Community_186

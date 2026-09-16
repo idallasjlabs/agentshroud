@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/mcp_policy.py"
 type: "rationale"
-community: "Community 33"
+community: "Community 35"
 location: "L201"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_33
+  - community/Community_35
 ---
 
 # Parse a policy config from a plain dict (e.g. loaded from YAML).
 
 ## Connections
-- [[.from_dict()_7]] - `rationale_for` [EXTRACTED]
+- [[dot-from_dict()_4]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_33
+#graphify/rationale #graphify/EXTRACTED #community/Community_35

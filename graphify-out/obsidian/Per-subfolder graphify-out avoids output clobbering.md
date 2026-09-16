@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/graphify/references/github-and-merge.md"
 type: "rationale"
-community: "Community 1831"
+community: "Community 1847"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1831
+  - community/Community_1847
 ---
 
 # Per-subfolder graphify-out avoids output clobbering
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1831
+#graphify/rationale #graphify/EXTRACTED #community/Community_1847

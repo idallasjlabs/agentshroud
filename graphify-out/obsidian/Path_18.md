@@ -1,18 +1,21 @@
 ---
-source_file: "gateway/security/session_manager.py"
+source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "Session Management"
-location: "L138"
+community: "Memory Integrity & Lifecycle"
+location: "L75"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Session_Management
+  - community/Memory_Integrity__Lifecycle
 ---
 
 # Path
 
 ## Connections
-- [[.__init__()_115]] - `references` [EXTRACTED]
-- [[.from_dict()_11]] - `calls` [EXTRACTED]
+- [[dot-__init__()_82]] - `references` [EXTRACTED]
+- [[dot-archive_file()]] - `references` [EXTRACTED]
+- [[dot-validate_memory_write()]] - `references` [EXTRACTED]
+- [[MemoryLifecycleConfig_1]] - `uses` [INFERRED]
+- [[run()_4]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Session_Management
+#graphify/code #graphify/EXTRACTED #community/Memory_Integrity__Lifecycle

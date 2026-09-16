@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/attack-teardowns-rovoblast-cross-turn.md"
 type: "document"
-community: "Community 973"
+community: "Community 1022"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_973
+  - community/Community_1022
 ---
 
 # Part 1 — RovoBlast: how AgentShroud's pipeline would have stopped it
@@ -17,4 +17,4 @@ tags:
 - [[What actually happened]] - `contains` [EXTRACTED]
 - [[Where AgentShroud's pipeline breaks each stage]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_973
+#graphify/document #graphify/EXTRACTED #community/Community_1022

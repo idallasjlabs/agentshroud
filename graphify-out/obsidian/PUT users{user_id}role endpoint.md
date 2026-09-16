@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "RBAC & SOC Realtime"
+community: "Ingest API & RBAC Core"
 location: "L1093-1122"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBAC__SOC_Realtime
+  - community/Ingest_API__RBAC_Core
 ---
 
 # PUT /users/{user_id}/role endpoint
 
 ## Connections
-- [[RBACConfig_1]] - `calls` [EXTRACTED]
-- [[RBACManager_1]] - `calls` [EXTRACTED]
+- [[RBACConfig_2]] - `calls` [EXTRACTED]
+- [[RBACManager]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBAC__SOC_Realtime
+#graphify/code #graphify/EXTRACTED #community/Ingest_API__RBAC_Core

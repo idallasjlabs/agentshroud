@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/PAIRING_INSTRUCTIONS.md"
 type: "document"
-community: "Community 377"
+community: "Community 378"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_377
+  - community/Community_378
 ---
 
 # PAIRING_INSTRUCTIONS.md
@@ -17,4 +17,4 @@ tags:
 - [[TAILSCALE_SETUP]] - `conceptually_related_to` [INFERRED]
 - [[TELEGRAM_SETUP]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_377
+#graphify/document #graphify/EXTRACTED #community/Community_378

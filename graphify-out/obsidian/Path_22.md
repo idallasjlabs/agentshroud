@@ -1,22 +1,16 @@
 ---
-source_file: "gateway/skills/scan.py"
+source_file: ""
 type: "code"
-community: "Community 272"
-location: "L42"
+community: "Community 220"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_272
+  - graphify/EXTRACTED
+  - community/Community_220
 ---
 
 # Path
 
 ## Connections
-- [[Recommendation]] - `uses` [INFERRED]
-- [[ScanResult_2]] - `uses` [INFERRED]
-- [[SkillGuard]] - `uses` [INFERRED]
-- [[SkillsManifest]] - `uses` [INFERRED]
-- [[_build_tree()]] - `references` [EXTRACTED]
-- [[main()_13]] - `calls` [EXTRACTED]
+- [[save_report]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_272
+#graphify/code #graphify/EXTRACTED #community/Community_220

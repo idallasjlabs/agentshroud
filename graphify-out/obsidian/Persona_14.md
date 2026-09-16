@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-socrates/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-daedalus/SKILL.md"
 type: "document"
-community: "Community 495"
+community: "Community 839"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_495
+  - community/Community_839
 ---
 
 # Persona
 
 ## Connections
-- [[Socrates — Dialogue Architect_2]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_495
+#graphify/document #graphify/EXTRACTED #community/Community_839

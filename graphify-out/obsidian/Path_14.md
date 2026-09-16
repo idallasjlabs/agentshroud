@@ -1,19 +1,16 @@
 ---
-source_file: "gateway/security/intel_report.py"
+source_file: ""
 type: "code"
-community: "Community 58"
-location: "L205"
+community: "Community 158"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_58
+  - community/Community_158
 ---
 
 # Path
 
 ## Connections
-- [[.__init__()_87]] - `references` [EXTRACTED]
-- [[._load_latest_file()]] - `references` [EXTRACTED]
-- [[.save()_1]] - `references` [EXTRACTED]
+- [[_rel()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_58
+#graphify/code #graphify/EXTRACTED #community/Community_158

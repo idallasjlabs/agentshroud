@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/prompt-injection-assessment-2026-02-25.md"
 type: "document"
-community: "Community 364"
+community: "Community 369"
 location: "L132"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_364
+  - community/Community_369
 ---
 
 # P1 — High Value
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[v0.8.0 Recommendations (Priority Order)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_364
+#graphify/document #graphify/EXTRACTED #community/Community_369

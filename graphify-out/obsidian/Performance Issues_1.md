@@ -1,17 +1,17 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Community 334"
+community: "Community 340"
 location: "L892"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_334
+  - community/Community_340
 ---
 
 # Performance Issues
 
 ## Connections
-- [[Troubleshooting_33]] - `contains` [EXTRACTED]
+- [[Troubleshooting_27]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_334
+#graphify/document #graphify/EXTRACTED #community/Community_340

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/enforcement-audit-v0.7.0.md"
 type: "document"
-community: "Community 185"
+community: "Community 123"
 location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_185
+  - community/Community_123
 ---
 
 # P1 — Active Defense (14/14 ✅)
@@ -16,4 +16,4 @@ tags:
 - [[⚠️ Warning ContextGuard Enforcement]] - `contains` [EXTRACTED]
 - [[⚠️ Warning killswitch.sh Path]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_185
+#graphify/document #graphify/EXTRACTED #community/Community_123
