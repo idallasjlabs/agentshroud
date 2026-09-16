@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "concept"
-community: "Community 1377"
+community: "Community 1435"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1377
+  - community/Community_1435
 ---
 
 # Gemini CLI (SECONDARY agent)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Claude Code (PRIMARY agent)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1377
+#graphify/concept #graphify/EXTRACTED #community/Community_1435

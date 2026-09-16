@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md"
+source_file: "docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md"
 type: "document"
-community: "Community 269"
+community: "Community 530"
 location: "L53"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_269
+  - community/Community_530
 ---
 
 # GitHub Workflow Integration
@@ -19,4 +19,4 @@ tags:
 - [[5. Pre-Merge_1]] - `contains` [EXTRACTED]
 - [[GSDE&G Skills Reference_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_269
+#graphify/document #graphify/EXTRACTED #community/Community_530

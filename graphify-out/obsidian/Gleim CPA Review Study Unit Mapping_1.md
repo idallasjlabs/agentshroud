@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-atlas/SKILL.md"
 type: "concept"
-community: "Community 888"
+community: "Community 933"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_888
+  - community/Community_933
 ---
 
 # Gleim CPA Review Study Unit Mapping
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[OKE Channel — CPA Exam Context_2]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_888
+#graphify/concept #graphify/EXTRACTED #community/Community_933

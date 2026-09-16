@@ -1,17 +1,17 @@
 ---
 source_file: "docs/security/audit-specification.md"
 type: "document"
-community: "Community 189"
+community: "Community 197"
 location: "L227"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_189
+  - community/Community_197
 ---
 
 # Genesis Block Specification
 
 ## Connections
-- [[Hash Chain Structure_1]] - `contains` [EXTRACTED]
+- [[Hash Chain Structure]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_189
+#graphify/document #graphify/EXTRACTED #community/Community_197

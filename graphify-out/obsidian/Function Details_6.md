@@ -1,21 +1,25 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/forwarder.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/key_vault.py.md"
 type: "document"
-community: "Community 763"
-location: "L31"
+community: "Community 516"
+location: "L41"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_763
+  - community/Community_516
 ---
 
 # Function Details
 
 ## Connections
-- [[HTTPForwarder.forward(path, body, headers, method)]] - `contains` [EXTRACTED]
-- [[HTTPForwarder.get_stats()]] - `contains` [EXTRACTED]
-- [[HTTPForwarder.health_check()]] - `contains` [EXTRACTED]
-- [[HTTPForwarder.set_response_handler(handler)]] - `contains` [EXTRACTED]
-- [[forwarder.py_2]] - `contains` [EXTRACTED]
+- [[KeyInjector.inject_for_request(url, headers, agent_id, key_name)]] - `contains` [EXTRACTED]
+- [[KeyLeakDetector.scan_outbound(text)]] - `contains` [EXTRACTED]
+- [[KeyVault.check_value_match(text)]] - `contains` [EXTRACTED]
+- [[KeyVault.get_audit_log()]] - `contains` [EXTRACTED]
+- [[KeyVault.get_key(name, agent_id)]] - `contains` [EXTRACTED]
+- [[KeyVault.redact(text)]] - `contains` [EXTRACTED]
+- [[KeyVault.rotate_key(name, new_value)]] - `contains` [EXTRACTED]
+- [[KeyVault.store_key(name, value, scopes)]] - `contains` [EXTRACTED]
+- [[key_vault.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_763
+#graphify/document #graphify/EXTRACTED #community/Community_516

@@ -1,25 +1,19 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/resource_guard.py.md"
+source_file: "docs/vault/02 - Modules/Runtime/compose_generator.py.md"
 type: "document"
-community: "Community 506"
-location: "L37"
+community: "Community 761"
+location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_506
+  - community/Community_761
 ---
 
 # Function Details
 
 ## Connections
-- [[ResourceGuard.__init__(limits)]] - `contains` [EXTRACTED]
-- [[ResourceGuard.add_alert_callback(callback)]] - `contains` [EXTRACTED]
-- [[ResourceGuard.check_cpu_limit(agent_id)  check_memory_limit(agent_id)  check_disk_write_limit(agent_id)]] - `contains` [EXTRACTED]
-- [[ResourceGuard.check_resource(agent_id, resource_type, amount)]] - `contains` [EXTRACTED]
-- [[ResourceGuard.cleanup_temp_files(agent_id)]] - `contains` [EXTRACTED]
-- [[ResourceGuard.get_usage_stats(agent_id)]] - `contains` [EXTRACTED]
-- [[ResourceGuard.register_temp_file(agent_id, file_path)]] - `contains` [EXTRACTED]
-- [[ResourceGuard.start_request_tracking(agent_id)]] - `contains` [EXTRACTED]
-- [[resource_guard.py_2]] - `contains` [EXTRACTED]
+- [[compose_generator.py_2]] - `contains` [EXTRACTED]
+- [[generate_apple_script(services)]] - `contains` [EXTRACTED]
+- [[generate_compose(services, runtime)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_506
+#graphify/document #graphify/EXTRACTED #community/Community_761

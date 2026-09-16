@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-20-observability-map.svg"
 type: "concept"
-community: "Community 1403"
+community: "Community 1454"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1403
+  - community/Community_1454
 ---
 
 # GET /ledger audit query API
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Gateway observability (GET status, GET ledger, MCP audit log, HTTP CONNECT proxy stats)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1403
+#graphify/concept #graphify/EXTRACTED #community/Community_1454

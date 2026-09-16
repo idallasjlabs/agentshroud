@@ -1,21 +1,20 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/egress_config.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/router.py.md"
 type: "document"
-community: "Community 635"
-location: "L40"
+community: "Community 685"
+location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_635
+  - community/Community_685
 ---
 
 # Function Details
 
 ## Connections
-- [[EgressFilterConfig._matches_any_pattern(domain, patterns)]] - `contains` [EXTRACTED]
-- [[EgressFilterConfig.from_environment()]] - `contains` [EXTRACTED]
-- [[EgressFilterConfig.get_effective_allowlist(agent_id)]] - `contains` [EXTRACTED]
-- [[EgressFilterConfig.is_denylisted(domain)]] - `contains` [EXTRACTED]
-- [[egress_config.py_2]] - `contains` [EXTRACTED]
+- [[forward_to_agent(target, sanitized_content, ledger_id, metadata)]] - `contains` [EXTRACTED]
+- [[health_check(target)]] - `contains` [EXTRACTED]
+- [[resolve_target(request)]] - `contains` [EXTRACTED]
+- [[router.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_635
+#graphify/document #graphify/EXTRACTED #community/Community_685

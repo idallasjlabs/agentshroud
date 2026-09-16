@@ -1,18 +1,17 @@
 ---
-source_file: "skills/custom/securebrowser/references/security-policies.md"
+source_file: "docs/architecture/per-agent-isolation.md"
 type: "document"
-community: "Community 426"
-location: "L321"
+community: "Community 728"
+location: "L141"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_426
+  - community/Community_728
 ---
 
 # Future Enhancements
 
 ## Connections
-- [[Planned Features]] - `contains` [EXTRACTED]
-- [[SecureBrowser Security Policies]] - `contains` [EXTRACTED]
+- [[Per-Agent Container Isolation Architecture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_426
+#graphify/document #graphify/EXTRACTED #community/Community_728

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
 type: "document"
-community: "Community 85"
+community: "Community 917"
 location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_85
+  - community/Community_917
 ---
 
 # Full System Diagram
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Architecture Overview_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_85
+#graphify/document #graphify/EXTRACTED #community/Community_917

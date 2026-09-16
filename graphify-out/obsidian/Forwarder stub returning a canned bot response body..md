@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "rationale"
-community: "Community 28"
+community: "Proxy Sidecar & Forwarder"
 location: "L410"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_28
+  - community/Proxy_Sidecar__Forwarder
 ---
 
 # Forwarder stub returning a canned bot response body.
 
 ## Connections
-- [[_StubForwarder_2]] - `rationale_for` [EXTRACTED]
+- [[_StubForwarder_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_28
+#graphify/rationale #graphify/EXTRACTED #community/Proxy_Sidecar__Forwarder

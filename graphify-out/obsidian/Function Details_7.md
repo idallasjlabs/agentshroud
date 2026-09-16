@@ -1,25 +1,25 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/resource_guard.py.md"
 type: "document"
-community: "Community 382"
-location: "L68"
+community: "Community 517"
+location: "L37"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_382
+  - community/Community_517
 ---
 
 # Function Details
 
 ## Connections
-- [[`HTTPConnectProxy._agent_id_for_peer(peer)`]] - `contains` [EXTRACTED]
-- [[`HTTPConnectProxy._clamav_scan_bytes(data bytes, host str)`]] - `contains` [EXTRACTED]
-- [[`HTTPConnectProxy._handle_client(reader, writer)`]] - `contains` [EXTRACTED]
-- [[`HTTPConnectProxy._process_connect(reader, writer)`]] - `contains` [EXTRACTED]
-- [[`HTTPConnectProxy._relay(reader, writer, idle_timeout=120.0)` (static)]] - `contains` [EXTRACTED]
-- [[`HTTPConnectProxy._relay_and_scan(reader, writer, host, scan_limit=410241024)`]] - `contains` [EXTRACTED]
-- [[`HTTPConnectProxy.get_stats()`]] - `contains` [EXTRACTED]
-- [[`HTTPConnectProxy.stop()`]] - `contains` [EXTRACTED]
-- [[http_proxy.py_2]] - `contains` [EXTRACTED]
+- [[ResourceGuard.__init__(limits)]] - `contains` [EXTRACTED]
+- [[ResourceGuard.add_alert_callback(callback)]] - `contains` [EXTRACTED]
+- [[ResourceGuard.check_cpu_limit(agent_id)  check_memory_limit(agent_id)  check_disk_write_limit(agent_id)]] - `contains` [EXTRACTED]
+- [[ResourceGuard.check_resource(agent_id, resource_type, amount)]] - `contains` [EXTRACTED]
+- [[ResourceGuard.cleanup_temp_files(agent_id)]] - `contains` [EXTRACTED]
+- [[ResourceGuard.get_usage_stats(agent_id)]] - `contains` [EXTRACTED]
+- [[ResourceGuard.register_temp_file(agent_id, file_path)]] - `contains` [EXTRACTED]
+- [[ResourceGuard.start_request_tracking(agent_id)]] - `contains` [EXTRACTED]
+- [[resource_guard.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_382
+#graphify/document #graphify/EXTRACTED #community/Community_517

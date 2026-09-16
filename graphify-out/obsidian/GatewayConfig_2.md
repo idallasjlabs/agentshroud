@@ -1,27 +1,23 @@
 ---
-source_file: "gateway/tests/conftest.py"
+source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "code"
-community: "Community 26"
-location: "L91"
+community: "Gateway Config & PII Sanitizer"
+location: "L31"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_26
+  - community/Gateway_Config__PII_Sanitizer
 ---
 
 # GatewayConfig
 
 ## Connections
 - [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
-- [[DataLedger]] - `uses` [INFERRED]
-- [[GatewayConfig_1]] - `uses` [INFERRED]
+- [[GatewayConfig_4]] - `uses` [INFERRED]
 - [[LedgerConfig]] - `uses` [INFERRED]
-- [[PIIConfig]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
+- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[ProxyResult]] - `uses` [INFERRED]
 - [[RouterConfig]] - `uses` [INFERRED]
-- [[sanitizer()]] - `references` [EXTRACTED]
-- [[test_client()]] - `references` [EXTRACTED]
-- [[test_config()]] - `references` [EXTRACTED]
-- [[test_ledger()]] - `references` [EXTRACTED]
+- [[test_config()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_26
+#graphify/code #graphify/INFERRED #community/Gateway_Config__PII_Sanitizer

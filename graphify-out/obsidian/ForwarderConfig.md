@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/proxy/forwarder.py"
 type: "code"
-community: "Community 65"
+community: "Proxy Sidecar & Forwarder"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_65
+  - community/Proxy_Sidecar__Forwarder
 ---
 
 # ForwarderConfig
 
 ## Connections
-- [[.__init__()_22]] - `references` [EXTRACTED]
+- [[dot-__init__()_48]] - `references` [EXTRACTED]
 - [[Configuration for the HTTP forwarder.]] - `rationale_for` [EXTRACTED]
 - [[_PassInboundPipeline]] - `uses` [INFERRED]
-- [[_StubForwarder_2]] - `uses` [INFERRED]
+- [[_StubForwarder_1]] - `uses` [INFERRED]
 - [[forwarder()_1]] - `calls` [EXTRACTED]
 - [[forwarder.py]] - `contains` [EXTRACTED]
 - [[healthy_forwarder()]] - `calls` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[test_forwarder_error_handling()]] - `calls` [EXTRACTED]
 - [[unhealthy_forwarder()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_65
+#graphify/code #graphify/EXTRACTED #community/Proxy_Sidecar__Forwarder

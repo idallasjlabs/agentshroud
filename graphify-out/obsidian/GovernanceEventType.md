@@ -1,28 +1,21 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "code"
-community: "Community 982"
+community: "Voice Gateway STT & Browser Security"
 location: "L105"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_982
+  - community/Voice_Gateway_STT__Browser_Security
 ---
 
 # GovernanceEventType
 
 ## Connections
-- [[._log_event()]] - `references` [EXTRACTED]
-- [[.get_governance_events()]] - `references` [EXTRACTED]
-- [[Enum]] - `inherits` [EXTRACTED]
-- [[TestLifecycle_1]] - `uses` [INFERRED]
-- [[TestOutputTrustScoring]] - `uses` [INFERRED]
-- [[TestPatternDetection]] - `uses` [INFERRED]
-- [[TestResourceBudgets]] - `uses` [INFERRED]
-- [[TestSpawnAuthorization]] - `uses` [INFERRED]
-- [[TestToolAuthorization]] - `uses` [INFERRED]
-- [[str]] - `inherits` [EXTRACTED]
+- [[dot-_log_event()_1]] - `references` [EXTRACTED]
+- [[dot-get_governance_events()]] - `references` [EXTRACTED]
+- [[Enum_3]] - `inherits` [EXTRACTED]
+- [[str_2]] - `inherits` [EXTRACTED]
 - [[subagent_governance.py]] - `contains` [EXTRACTED]
-- [[test_subagent_governance.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_982
+#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_STT__Browser_Security

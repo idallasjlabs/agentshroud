@@ -1,17 +1,17 @@
 ---
 source_file: "browser-extension/README.md"
 type: "document"
-community: "Community 552"
+community: "Community 568"
 location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_552
+  - community/Community_568
 ---
 
 # Gateway wiring
 
 ## Connections
-- [[Structure]] - `contains` [EXTRACTED]
+- [[Structure_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_552
+#graphify/document #graphify/EXTRACTED #community/Community_568

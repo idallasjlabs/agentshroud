@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-ux/SKILL.md"
 type: "document"
-community: "Community 252"
+community: "Community 264"
 location: "L145"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_252
+  - community/Community_264
 ---
 
 # Generic Task Flow Template
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[User Flow Diagrams_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_252
+#graphify/document #graphify/EXTRACTED #community/Community_264

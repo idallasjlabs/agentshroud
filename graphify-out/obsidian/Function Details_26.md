@@ -1,21 +1,23 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/agent_isolation.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md"
 type: "document"
-community: "Community 633"
-location: "L44"
+community: "Community 648"
+location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_633
+  - community/Community_648
 ---
 
 # Function Details
 
 ## Connections
-- [[IsolationVerifier.generate_compose()]] - `contains` [EXTRACTED]
-- [[IsolationVerifier.verify_network_isolation()]] - `contains` [EXTRACTED]
-- [[IsolationVerifier.verify_shared_nothing()]] - `contains` [EXTRACTED]
-- [[IsolationVerifier.verify_volume_isolation()]] - `contains` [EXTRACTED]
-- [[agent_isolation.py_2]] - `contains` [EXTRACTED]
+- [[WebContentScanner._scan_encoded_payloads(content, result)]] - `contains` [EXTRACTED]
+- [[WebContentScanner._scan_hidden_content(content, result)]] - `contains` [EXTRACTED]
+- [[WebContentScanner._scan_pii(content, result)]] - `contains` [EXTRACTED]
+- [[WebContentScanner._scan_prompt_injection(content, result)]] - `contains` [EXTRACTED]
+- [[WebContentScanner._scan_zero_width(content, result)]] - `contains` [EXTRACTED]
+- [[WebContentScanner.scan(content, content_type)]] - `contains` [EXTRACTED]
+- [[web_content_scanner.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_633
+#graphify/document #graphify/EXTRACTED #community/Community_648

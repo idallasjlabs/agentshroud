@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/history-purge-plan.md"
 type: "document"
-community: "Community 730"
+community: "Community 742"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_730
+  - community/Community_742
 ---
 
 # Git History Purge Plan
@@ -20,4 +20,4 @@ tags:
 - [[Secret Rotation Checklist]] - `contains` [EXTRACTED]
 - [[history-purge-plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_730
+#graphify/document #graphify/EXTRACTED #community/Community_742

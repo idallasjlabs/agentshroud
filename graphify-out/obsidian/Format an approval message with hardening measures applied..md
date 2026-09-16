@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/approval_hardening.py"
 type: "rationale"
-community: "Community 34"
+community: "Alert Dispatcher & RBAC Reliability"
 location: "L420"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_34
+  - community/Alert_Dispatcher__RBAC_Reliability
 ---
 
 # Format an approval message with hardening measures applied.
 
 ## Connections
-- [[.format_hardened_message()]] - `rationale_for` [EXTRACTED]
+- [[dot-format_hardened_message()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_34
+#graphify/rationale #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability

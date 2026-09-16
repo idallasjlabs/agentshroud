@@ -1,20 +1,21 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/input_normalizer.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/trivy_report.py.md"
 type: "document"
-community: "Community 638"
-location: "L38"
+community: "Community 711"
+location: "L37"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_638
+  - community/Community_711
 ---
 
 # Function Details
 
 ## Connections
-- [[detect_base64_payloads(text)]] - `contains` [EXTRACTED]
-- [[input_normalizer.py_2]] - `contains` [EXTRACTED]
-- [[normalize_input(text)]] - `contains` [EXTRACTED]
-- [[strip_markdown_exfil(text)]] - `contains` [EXTRACTED]
+- [[generate_summary(report)_1]] - `contains` [EXTRACTED]
+- [[parse_trivy_output(raw)]] - `contains` [EXTRACTED]
+- [[run_trivy_scan(target, scan_type, severity, timeout, trivy_bin)]] - `contains` [EXTRACTED]
+- [[save_report(report, log_dir)_1]] - `contains` [EXTRACTED]
+- [[trivy_report.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_638
+#graphify/document #graphify/EXTRACTED #community/Community_711

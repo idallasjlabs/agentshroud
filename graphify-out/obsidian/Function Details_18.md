@@ -1,21 +1,20 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/dns_filter.py.md"
 type: "document"
-community: "Community 720"
-location: "L36"
+community: "Community 600"
+location: "L44"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_720
+  - community/Community_600
 ---
 
 # Function Details
 
 ## Connections
-- [[RateLimiter.check(domain, rpm_limit)]] - `contains` [EXTRACTED]
-- [[WebProxy._audit(event_type, url, metadata)]] - `contains` [EXTRACTED]
-- [[WebProxy.check_request(url, method, headers)]] - `contains` [EXTRACTED]
-- [[WebProxy.scan_response(url, body, content_type, status_code, response_size)]] - `contains` [EXTRACTED]
-- [[web_proxy.py_2]] - `contains` [EXTRACTED]
+- [[DNSFilter._detect_tunneling(domain)]] - `contains` [EXTRACTED]
+- [[DNSFilter.check(domain, agent_id)]] - `contains` [EXTRACTED]
+- [[EntropyCalculator.shannon_entropy(s)]] - `contains` [EXTRACTED]
+- [[dns_filter.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_720
+#graphify/document #graphify/EXTRACTED #community/Community_600

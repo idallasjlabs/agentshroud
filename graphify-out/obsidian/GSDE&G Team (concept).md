@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-mc/SKILL.md"
 type: "concept"
-community: "Community 1735"
+community: "Community 1972"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1735
+  - community/Community_1972
 ---
 
 # GSDE&G Team (concept)
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1735
+#graphify/concept #graphify/EXTRACTED #community/Community_1972

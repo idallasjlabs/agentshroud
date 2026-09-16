@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/alert_dispatcher.py"
 type: "rationale"
-community: "Community 527"
+community: "Alert Dispatcher & RBAC Reliability"
 location: "L194"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_527
+  - community/Alert_Dispatcher__RBAC_Reliability
 ---
 
 # Format alert as human-readable message.
 
 ## Connections
-- [[._format_alert_message()]] - `rationale_for` [EXTRACTED]
+- [[dot-_format_alert_message()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_527
+#graphify/rationale #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability

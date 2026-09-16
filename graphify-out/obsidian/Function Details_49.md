@@ -1,21 +1,20 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/trivy_report.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/web_config.py.md"
 type: "document"
-community: "Community 689"
-location: "L37"
+community: "Community 803"
+location: "L30"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_689
+  - community/Community_803
 ---
 
 # Function Details
 
 ## Connections
-- [[generate_summary(report)_1]] - `contains` [EXTRACTED]
-- [[parse_trivy_output(raw)]] - `contains` [EXTRACTED]
-- [[run_trivy_scan(target, scan_type, severity, timeout, trivy_bin)]] - `contains` [EXTRACTED]
-- [[save_report(report, log_dir)_1]] - `contains` [EXTRACTED]
-- [[trivy_report.py_2]] - `contains` [EXTRACTED]
+- [[WebProxyConfig.get_domain_settings(domain)]] - `contains` [EXTRACTED]
+- [[WebProxyConfig.is_domain_allowed(domain)]] - `contains` [EXTRACTED]
+- [[WebProxyConfig.is_domain_denied(domain)]] - `contains` [EXTRACTED]
+- [[web_config.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_689
+#graphify/document #graphify/EXTRACTED #community/Community_803

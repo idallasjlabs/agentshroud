@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/web_proxy.py"
 type: "rationale"
-community: "Community 48"
+community: "Community 96"
 location: "L596"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_48
+  - community/Community_96
 ---
 
 # Get proxy statistics.
 
 ## Connections
-- [[.get_stats()_10]] - `rationale_for` [EXTRACTED]
+- [[dot-get_stats()_19]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_48
+#graphify/rationale #graphify/EXTRACTED #community/Community_96

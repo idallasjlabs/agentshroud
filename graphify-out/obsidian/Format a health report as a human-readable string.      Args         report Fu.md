@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/health_report.py"
 type: "rationale"
-community: "Community 347"
+community: "Community 459"
 location: "L256"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_347
+  - community/Community_459
 ---
 
 # Format a health report as a human-readable string.      Args:         report: Fu
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[format_report()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_347
+#graphify/rationale #graphify/EXTRACTED #community/Community_459

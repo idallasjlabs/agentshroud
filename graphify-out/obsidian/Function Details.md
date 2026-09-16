@@ -1,21 +1,22 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/trust_manager.py.md"
 type: "document"
-community: "Community 711"
-location: "L33"
+community: "Community 256"
+location: "L44"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_711
+  - community/Community_256
 ---
 
 # Function Details
 
 ## Connections
-- [[RateLimiter.check(client_id)]] - `contains` [EXTRACTED]
-- [[auth.py_3]] - `contains` [EXTRACTED]
-- [[create_auth_dependency(config)]] - `contains` [EXTRACTED]
-- [[get_auth_dependency(config)]] - `contains` [EXTRACTED]
-- [[verify_token(token, expected_token)]] - `contains` [EXTRACTED]
+- [[TrustManager_4]] - `contains` [EXTRACTED]
+- [[TrustManager._apply_decay(score, last_action_time)]] - `contains` [EXTRACTED]
+- [[TrustManager._update_score(agent_id, delta, event_type, details)]] - `contains` [EXTRACTED]
+- [[TrustManager.get_history(agent_id, limit)]] - `contains` [EXTRACTED]
+- [[TrustManager.get_trust(agent_id)]] - `contains` [EXTRACTED]
+- [[TrustManager.is_action_allowed(agent_id, action)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_711
+#graphify/document #graphify/EXTRACTED #community/Community_256

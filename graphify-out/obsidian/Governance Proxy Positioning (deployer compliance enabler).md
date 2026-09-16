@@ -1,11 +1,11 @@
 ---
 source_file: "docs/compliance/eu-ai-act-nist-matrix.md"
 type: "rationale"
-community: "Community 1382"
+community: "Community 1442"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1382
+  - community/Community_1442
 ---
 
 # Governance Proxy Positioning (deployer compliance enabler)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[EU AI Act & NIST Alignment Matrix]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1382
+#graphify/rationale #graphify/EXTRACTED #community/Community_1442

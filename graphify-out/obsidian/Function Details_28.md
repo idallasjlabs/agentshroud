@@ -1,22 +1,21 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/browser_security.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/agent_isolation.py.md"
 type: "document"
-community: "Community 634"
-location: "L36"
+community: "Community 652"
+location: "L44"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_634
+  - community/Community_652
 ---
 
 # Function Details
 
 ## Connections
-- [[BrowserSecurityGuard.analyze_content(content)]] - `contains` [EXTRACTED]
-- [[BrowserSecurityGuard.analyze_screenshot(image_data)]] - `contains` [EXTRACTED]
-- [[BrowserSecurityGuard.can_enter_credentials(url)]] - `contains` [EXTRACTED]
-- [[BrowserSecurityGuard.check_url_reputation(url)]] - `contains` [EXTRACTED]
-- [[BrowserSecurityGuard.register_screenshot_hook(hook)]] - `contains` [EXTRACTED]
-- [[browser_security.py_2]] - `contains` [EXTRACTED]
+- [[IsolationVerifier.generate_compose()]] - `contains` [EXTRACTED]
+- [[IsolationVerifier.verify_network_isolation()]] - `contains` [EXTRACTED]
+- [[IsolationVerifier.verify_shared_nothing()]] - `contains` [EXTRACTED]
+- [[IsolationVerifier.verify_volume_isolation()]] - `contains` [EXTRACTED]
+- [[agent_isolation.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_634
+#graphify/document #graphify/EXTRACTED #community/Community_652

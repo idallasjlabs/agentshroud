@@ -1,23 +1,22 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md"
 type: "document"
-community: "Community 623"
-location: "L29"
+community: "Community 545"
+location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_623
+  - community/Community_545
 ---
 
 # Function Details
 
 ## Connections
-- [[MCPAuditTrail.generate_report()]] - `contains` [EXTRACTED]
-- [[MCPAuditTrail.log_tool_call(agent_id, server_name, tool_name, parameters, findings_count, threat_level, blocked, block_reason, pii_redacted, call_id)]] - `contains` [EXTRACTED]
-- [[MCPAuditTrail.log_tool_result(call_id, agent_id, server_name, tool_name, success, error_message, result_summary, findings_count, threat_level, pii_redacted)]] - `contains` [EXTRACTED]
-- [[MCPAuditTrail.start_call(call_id)]] - `contains` [EXTRACTED]
-- [[MCPAuditTrail.verify_chain()]] - `contains` [EXTRACTED]
-- [[Query Methods]] - `contains` [EXTRACTED]
-- [[mcp_audit.py_2]] - `contains` [EXTRACTED]
+- [[clamav_scanner.py_1]] - `contains` [EXTRACTED]
+- [[generate_summary(report)]] - `contains` [EXTRACTED]
+- [[parse_clamscan_output(output, returncode)]] - `contains` [EXTRACTED]
+- [[run_clamscan(target, recursive, timeout, clamscan_bin, exclude_patterns)]] - `contains` [EXTRACTED]
+- [[save_report(report, log_dir)]] - `contains` [EXTRACTED]
+- [[update_virus_db(freshclam_bin, timeout)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_623
+#graphify/document #graphify/EXTRACTED #community/Community_545

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "rationale"
-community: "Community 15"
+community: "Approval Queue (WebSocket)"
 location: "L362"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_15
+  - community/Approval_Queue_WebSocket
 ---
 
 # GET /status should include security headers
 
 ## Connections
-- [[.test_status_has_security_headers()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_status_has_security_headers()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_15
+#graphify/rationale #graphify/EXTRACTED #community/Approval_Queue_WebSocket
