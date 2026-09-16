@@ -1,0 +1,19 @@
+---
+source_file: "gateway/security/killswitch_config.py"
+type: "code"
+community: "Community 475"
+location: "L58"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_475
+---
+
+# .from_env()
+
+## Connections
+- [[KillSwitchConfig]] - `method` [EXTRACTED]
+- [[Load configuration from environment variables._1]] - `rationale_for` [EXTRACTED]
+- [[cls]] - `calls` [INFERRED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_475

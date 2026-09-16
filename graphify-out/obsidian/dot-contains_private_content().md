@@ -1,0 +1,20 @@
+---
+source_file: "gateway/security/shared_memory.py"
+type: "code"
+community: "Community 41"
+location: "L365"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_41
+---
+
+# .contains_private_content()
+
+## Connections
+- [[dot-get_merged_memory_for_user()]] - `calls` [EXTRACTED]
+- [[dot-get_topic_scoped_memory()]] - `calls` [EXTRACTED]
+- [[Return True if text contains patterns matching privatesensitive content.]] - `rationale_for` [EXTRACTED]
+- [[SharedMemoryManager]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_41

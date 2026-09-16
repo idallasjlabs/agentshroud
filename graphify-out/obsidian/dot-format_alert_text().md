@@ -1,0 +1,18 @@
+---
+source_file: "gateway/security/config_integrity.py"
+type: "code"
+community: "Community 219"
+location: "L157"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_219
+---
+
+# .format_alert_text()
+
+## Connections
+- [[ConfigIntegrityMonitor]] - `method` [EXTRACTED]
+- [[Format Telegram alert text for detected config changes.]] - `rationale_for` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_219

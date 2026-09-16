@@ -1,0 +1,20 @@
+---
+source_file: "gateway/security/rbac_config.py"
+type: "code"
+community: "Community 205"
+location: "L273"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_205
+---
+
+# .delete_group()
+
+## Connections
+- [[Create or replace a custom group and persist it.]] - `rationale_for` [EXTRACTED]
+- [[Delete a custom group. Returns True if deleted, False if not found.]] - `rationale_for` [EXTRACTED]
+- [[GroupRegistry]] - `method` [EXTRACTED]
+- [[_persist_groups()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_205

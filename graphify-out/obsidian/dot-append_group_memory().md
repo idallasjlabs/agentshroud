@@ -1,0 +1,20 @@
+---
+source_file: "gateway/security/group_workspace.py"
+type: "code"
+community: "Community 53"
+location: "L240"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_53
+---
+
+# .append_group_memory()
+
+## Connections
+- [[dot-_require_memory()]] - `calls` [EXTRACTED]
+- [[dot-resolve_workspace()]] - `calls` [EXTRACTED]
+- [[Append to a group's shared memory, gated by member access (fail-closed).]] - `rationale_for` [EXTRACTED]
+- [[GroupWorkspaceManager]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_53

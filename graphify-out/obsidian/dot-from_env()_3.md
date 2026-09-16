@@ -1,0 +1,20 @@
+---
+source_file: "gateway/security/mfa_guard.py"
+type: "code"
+community: "Community 57"
+location: "L144"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_57
+---
+
+# .from_env()
+
+## Connections
+- [[Build an MFAGuard from environment variables  Docker secret file.          Reco]] - `rationale_for` [EXTRACTED]
+- [[MFAGuard_2]] - `method` [EXTRACTED]
+- [[_truthy()]] - `calls` [EXTRACTED]
+- [[cls]] - `calls` [INFERRED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_57

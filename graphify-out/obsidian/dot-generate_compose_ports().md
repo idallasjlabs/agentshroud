@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tools/port_manager.py"
+type: "code"
+community: "Community 83"
+location: "L243"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_83
+---
+
+# .generate_compose_ports()
+
+## Connections
+- [[Generate docker-compose port mapping strings from resolution.          Returns d]] - `rationale_for` [EXTRACTED]
+- [[PortManager]] - `method` [EXTRACTED]
+- [[PortResolution]] - `references` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_83

@@ -1,0 +1,18 @@
+---
+source_file: "gateway/ingest_api/bot_config.py"
+type: "code"
+community: "Community 180"
+location: "L76"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_180
+---
+
+# .base_url()
+
+## Connections
+- [[BotConfig]] - `method` [EXTRACTED]
+- [[Compute the bot's internal base URL from hostname and port.]] - `rationale_for` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_180

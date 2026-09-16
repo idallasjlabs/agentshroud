@@ -1,0 +1,18 @@
+---
+source_file: "gateway/security/a2a_policy.py"
+type: "code"
+community: "Community 75"
+location: "L154"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_75
+---
+
+# .allowed()
+
+## Connections
+- [[A2APolicyDecision]] - `method` [EXTRACTED]
+- [[True only for a terminal ALLOW. REQUIRE_APPROVAL is not allowed on         its o]] - `rationale_for` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_75

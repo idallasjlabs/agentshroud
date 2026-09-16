@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_docs_accuracy.py"
+type: "code"
+community: "Community 118"
+location: "L132"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_118
+---
+
+# .contributing()
+
+## Connections
+- [[TestContributingMdAccuracy]] - `method` [EXTRACTED]
+- [[_read_file()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_118
