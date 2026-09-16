@@ -1,11 +1,11 @@
 ---
 source_file: "docker/seccomp/agentshroud-seccomp.json"
 type: "document"
-community: "Community 751"
+community: "Community 673"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Community_751
+  - community/Community_673
 ---
 
 # AgentShroud Seccomp Profile (default-deny syscall allowlist)
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud Security Verification (13-check driver)]] - `conceptually_related_to` [INFERRED]
 - [[Phase 3 Container Security Hardening Baseline]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Community_751
+#graphify/document #graphify/INFERRED #community/Community_673

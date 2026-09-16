@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/security/path_isolation.py"
+source_file: "gateway/security/rbac.py"
 type: "code"
-community: "Memory Lifecycle & Egress Filtering"
-location: "L286"
+community: "Ingest API & RBAC Core"
+location: "L187"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Memory_Lifecycle__Egress_Filtering
+  - graphify/INFERRED
+  - community/Ingest_API__RBAC_Core
 ---
 
-# any
+# Any
 
 ## Connections
-- [[.get_stats()_18]] - `references` [EXTRACTED]
+- [[dot-check_permission()]] - `references` [EXTRACTED]
+- [[dot-get_user_permissions_summary()]] - `references` [EXTRACTED]
+- [[RBACConfig_2]] - `uses` [INFERRED]
+- [[Role_1]] - `uses` [INFERRED]
+- [[ToolTier_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Memory_Lifecycle__Egress_Filtering
+#graphify/code #graphify/INFERRED #community/Ingest_API__RBAC_Core

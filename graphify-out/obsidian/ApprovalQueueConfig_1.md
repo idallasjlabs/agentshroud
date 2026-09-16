@@ -1,17 +1,24 @@
 ---
-source_file: "gateway/approval_queue/queue.py"
+source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "Community 15"
-location: "L41"
+community: "Enhanced Approval Queue"
+location: "L47"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_15
+  - graphify/INFERRED
+  - community/Enhanced_Approval_Queue
 ---
 
 # ApprovalQueueConfig
 
 ## Connections
-- [[.__init__()_5]] - `references` [EXTRACTED]
+- [[dot-__init__()_104]] - `references` [EXTRACTED]
+- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
+- [[ApprovalQueueItem_2]] - `uses` [INFERRED]
+- [[ApprovalRequest_2]] - `uses` [INFERRED]
+- [[ApprovalStore]] - `uses` [INFERRED]
+- [[MFAGuard_2]] - `uses` [INFERRED]
+- [[ToolRiskConfig]] - `uses` [INFERRED]
+- [[ToolRiskPolicy]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_15
+#graphify/code #graphify/INFERRED #community/Enhanced_Approval_Queue

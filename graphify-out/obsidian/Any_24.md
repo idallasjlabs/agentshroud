@@ -1,25 +1,21 @@
 ---
-source_file: "gateway/proxy/webhook_receiver.py"
+source_file: "gateway/cli/client.py"
 type: "code"
-community: "Community 28"
-location: "L121"
+community: "Community 154"
+location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_28
+  - community/Community_154
 ---
 
 # Any
 
 ## Connections
-- [[._extract_message()]] - `references` [EXTRACTED]
-- [[._extract_user_id()_1]] - `references` [EXTRACTED]
-- [[._extract_username()]] - `references` [EXTRACTED]
-- [[._prepare_session_payload()]] - `references` [EXTRACTED]
-- [[._replace_message()]] - `references` [EXTRACTED]
-- [[.get_stats()_11]] - `references` [EXTRACTED]
-- [[.process_webhook()]] - `references` [EXTRACTED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[UserSessionManager]] - `uses` [INFERRED]
+- [[dot-_request()]] - `references` [EXTRACTED]
+- [[dot-delete()]] - `references` [EXTRACTED]
+- [[dot-get()]] - `references` [EXTRACTED]
+- [[dot-post()]] - `references` [EXTRACTED]
+- [[dot-put()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_28
+#graphify/code #graphify/EXTRACTED #community/Community_154

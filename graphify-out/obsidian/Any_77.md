@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/triage-cve-mitigations.py"
+source_file: "gateway/security/report_store.py"
 type: "code"
-community: "Community 188"
-location: "L731"
+community: "Community 87"
+location: "L182"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_188
+  - community/Community_87
 ---
 
 # Any
 
 ## Connections
-- [[summarize()]] - `references` [EXTRACTED]
-- [[triage_entry()]] - `references` [EXTRACTED]
+- [[dot-get()_4]] - `references` [EXTRACTED]
+- [[dot-list()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_188
+#graphify/code #graphify/EXTRACTED #community/Community_87

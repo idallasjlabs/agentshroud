@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/session_security.py"
 type: "code"
-community: "Community 474"
+community: "Community 535"
 location: "L127"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_474
+  - community/Community_535
 ---
 
 # Any
 
 ## Connections
-- [[.validate_event()]] - `references` [EXTRACTED]
+- [[dot-validate_event()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_474
+#graphify/code #graphify/EXTRACTED #community/Community_535

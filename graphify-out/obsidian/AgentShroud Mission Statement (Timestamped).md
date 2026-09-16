@@ -1,11 +1,11 @@
 ---
 source_file: "docs/project/legal/PRIOR-USE.md"
 type: "rationale"
-community: "Community 1041"
+community: "Community 1079"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1041
+  - community/Community_1079
 ---
 
 # AgentShroud Mission Statement (Timestamped)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[PRIOR-USE]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1041
+#graphify/rationale #graphify/EXTRACTED #community/Community_1079

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/diagrams/05-behavior.md"
 type: "document"
-community: "Community 834"
+community: "Community 875"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_834
+  - community/Community_875
 ---
 
 # AgentShroud — System Behavior Diagrams
@@ -18,4 +18,4 @@ tags:
 - [[16. State Machine Diagram — Approval Queue Item Lifecycle]] - `contains` [EXTRACTED]
 - [[17. State Machine — Bot Session  Context Lifecycle]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_834
+#graphify/document #graphify/EXTRACTED #community/Community_875

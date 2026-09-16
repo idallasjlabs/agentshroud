@@ -1,22 +1,25 @@
 ---
-source_file: "gateway/proxy/web_proxy.py"
+source_file: "gateway/soc/router.py"
 type: "code"
-community: "Community 48"
-location: "L75"
+community: "Community 153"
+location: "L58"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_48
+  - community/Community_153
 ---
 
 # Any
 
 ## Connections
-- [[._audit()_1]] - `references` [EXTRACTED]
-- [[.get_stats()_10]] - `references` [EXTRACTED]
-- [[.to_dict()_2]] - `references` [EXTRACTED]
-- [[URLAnalyzer]] - `uses` [INFERRED]
-- [[WebContentScanner]] - `uses` [INFERRED]
-- [[WebProxyConfig]] - `uses` [INFERRED]
+- [[AuditLogEntry]] - `uses` [INFERRED]
+- [[AuditResult_1]] - `uses` [INFERRED]
+- [[ContributorManager]] - `uses` [INFERRED]
+- [[SCLCaller_1]] - `uses` [INFERRED]
+- [[SCLConfirmationRequired]] - `uses` [INFERRED]
+- [[SCLInterface_1]] - `uses` [INFERRED]
+- [[ServiceManager]] - `uses` [INFERRED]
+- [[_log_audit()]] - `references` [EXTRACTED]
+- [[auth_ws_token()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_48
+#graphify/code #graphify/INFERRED #community/Community_153

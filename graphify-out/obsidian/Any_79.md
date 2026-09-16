@@ -1,17 +1,18 @@
 ---
-source_file: "voice_gateway/tts.py"
+source_file: "gateway/security/output_canary.py"
 type: "code"
-community: "Community 511"
-location: "L39"
+community: "Community 890"
+location: "L231"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_511
+  - community/Community_890
 ---
 
 # Any
 
 ## Connections
-- [[_get_pipeline()]] - `references` [EXTRACTED]
+- [[dot-_scan_for_canary()]] - `references` [EXTRACTED]
+- [[dot-get_status()_3]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_511
+#graphify/code #graphify/EXTRACTED #community/Community_890

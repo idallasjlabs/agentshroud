@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/legal/USPTO-APPLICATION.md"
 type: "document"
-community: "Community 1314"
+community: "Community 1371"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1314
+  - community/Community_1371
 ---
 
 # Application Fields
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Filing Basis]] - `contains` [EXTRACTED]
 - [[Mark]] - `contains` [EXTRACTED]
-- [[Owner_3]] - `contains` [EXTRACTED]
+- [[Owner_2]] - `contains` [EXTRACTED]
 - [[USPTO Trademark Application — AgentShroud™]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1314
+#graphify/document #graphify/EXTRACTED #community/Community_1371

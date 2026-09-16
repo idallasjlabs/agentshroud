@@ -1,28 +1,19 @@
 ---
-source_file: "gateway/approval_queue/enhanced_queue.py"
+source_file: "gateway/approval_queue/store.py"
 type: "code"
-community: "Community 23"
-location: "L215"
+community: "Community 1056"
+location: "L63"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_23
+  - graphify/EXTRACTED
+  - community/Community_1056
 ---
 
 # ApprovalQueueItem
 
 ## Connections
-- [[._notify_telegram()]] - `references` [EXTRACTED]
-- [[.decide()]] - `references` [EXTRACTED]
-- [[.get_item()]] - `references` [EXTRACTED]
-- [[.get_pending()]] - `references` [EXTRACTED]
-- [[.submit()]] - `references` [EXTRACTED]
-- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
-- [[ApprovalQueueItem_3]] - `uses` [INFERRED]
-- [[ApprovalRequest_3]] - `uses` [INFERRED]
-- [[ApprovalStore_1]] - `uses` [INFERRED]
-- [[MFAGuard_2]] - `uses` [INFERRED]
-- [[ToolRiskConfig_1]] - `uses` [INFERRED]
-- [[ToolRiskPolicy_1]] - `uses` [INFERRED]
+- [[dot-load_all()]] - `references` [EXTRACTED]
+- [[dot-load_pending()]] - `references` [EXTRACTED]
+- [[dot-save()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_23
+#graphify/code #graphify/EXTRACTED #community/Community_1056

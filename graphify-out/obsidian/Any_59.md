@@ -1,21 +1,22 @@
 ---
-source_file: "gateway/security/session_manager.py"
+source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "Session Management"
-location: "L62"
+community: "Voice Gateway STT & Browser Security"
+location: "L183"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Session_Management
+  - community/Voice_Gateway_STT__Browser_Security
 ---
 
 # Any
 
 ## Connections
-- [[.add_conversation_message()]] - `references` [EXTRACTED]
-- [[.from_dict()_11]] - `references` [EXTRACTED]
-- [[.get_session_context()]] - `references` [EXTRACTED]
-- [[.reanchor_system_prompt()]] - `references` [EXTRACTED]
-- [[.to_dict()_12]] - `references` [EXTRACTED]
+- [[dot-__init__()_156]] - `references` [EXTRACTED]
+- [[dot-analyze_tool_call()]] - `references` [EXTRACTED]
+- [[dot-get_global_stats()_1]] - `references` [EXTRACTED]
+- [[dot-get_session_stats()_1]] - `references` [EXTRACTED]
+- [[dot-sanitize_tool_params()]] - `references` [EXTRACTED]
+- [[dot-score_reversibility()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Session_Management
+#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_STT__Browser_Security

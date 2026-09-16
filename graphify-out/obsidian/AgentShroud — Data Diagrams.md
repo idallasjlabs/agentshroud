@@ -1,12 +1,12 @@
 ---
 source_file: "docs/diagrams/03-data.md"
 type: "document"
-community: "Community 556"
+community: "Community 572"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_556
+  - community/Community_572
 ---
 
 # AgentShroud — Data Diagrams
@@ -18,4 +18,4 @@ tags:
 - [[8. Entity Relationship Diagram (ERD)]] - `contains` [EXTRACTED]
 - [[9. Data Lineage Diagram]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_556
+#graphify/document #graphify/EXTRACTED #community/Community_572

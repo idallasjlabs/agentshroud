@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/session-issue-register-2026-03-14.md"
 type: "document"
-community: "Community 950"
+community: "Community 123"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_950
+  - community/Community_123
 ---
 
 # AgentShroud Session Issue Register — 2026-03-14
@@ -17,8 +17,8 @@ tags:
 - [[Issue Register]] - `contains` [EXTRACTED]
 - [[Linked Artifacts]] - `contains` [EXTRACTED]
 - [[Recommended Next Closure Sequence]] - `contains` [EXTRACTED]
-- [[Summary_11]] - `contains` [EXTRACTED]
+- [[Summary_1]] - `contains` [EXTRACTED]
 - [[XMLFunction-Call Leak Filter]] - `references` [EXTRACTED]
 - [[session-issue-register-2026-03-14]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_950
+#graphify/document #graphify/EXTRACTED #community/Community_123

@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/ingest_api/alert_telegram_relay.py"
+source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "Community 124"
-location: "L55"
+community: "Alert Dispatcher & RBAC Reliability"
+location: "L289"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_124
+  - community/Alert_Dispatcher__RBAC_Reliability
 ---
 
 # Any
 
 ## Connections
-- [[.__call__()]] - `references` [EXTRACTED]
-- [[.__init__()_9]] - `references` [EXTRACTED]
-- [[._clean_tool()]] - `references` [EXTRACTED]
-- [[._coerce()]] - `references` [EXTRACTED]
-- [[._handle()]] - `references` [EXTRACTED]
+- [[dot-get_leakage_summary()]] - `references` [EXTRACTED]
+- [[dot-monitor_environment_access()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_124
+#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability

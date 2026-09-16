@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "Community 196"
+community: "Community 73"
 location: "L882"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_196
+  - community/Community_73
 ---
 
 # Aggregate results from all security scanners into a unified dict.      Returns:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[aggregate_results()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_196
+#graphify/rationale #graphify/EXTRACTED #community/Community_73

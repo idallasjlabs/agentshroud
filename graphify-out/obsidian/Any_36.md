@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/security/context_integrity.py"
+source_file: "gateway/proxy/mcp_audit.py"
 type: "code"
-community: "Community 155"
-location: "L64"
+community: "Community 218"
+location: "L93"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_155
+  - graphify/EXTRACTED
+  - community/Community_218
 ---
 
 # Any
 
 ## Connections
-- [[.__init__()_66]] - `references` [EXTRACTED]
-- [[ContextSegment]] - `uses` [INFERRED]
-- [[PromptGuard]] - `uses` [INFERRED]
-- [[SystemPromptFingerprint]] - `uses` [INFERRED]
+- [[dot-generate_report()]] - `references` [EXTRACTED]
+- [[dot-log_tool_call()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_155
+#graphify/code #graphify/EXTRACTED #community/Community_218

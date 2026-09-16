@@ -1,22 +1,19 @@
 ---
-source_file: "gateway/security/daily_cve_report.py"
+source_file: ""
 type: "code"
-community: "Community 100"
-location: "L84"
+community: "Community 220"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_100
+  - community/Community_220
 ---
 
 # Any
 
 ## Connections
-- [[check_upstream_cves()]] - `references` [EXTRACTED]
-- [[format_cve_report()]] - `references` [EXTRACTED]
-- [[format_upstream_cve_alert()]] - `references` [EXTRACTED]
-- [[run_and_send_cve_report()]] - `references` [EXTRACTED]
-- [[run_upstream_cve_check()]] - `references` [EXTRACTED]
-- [[run_upstream_cve_check_all_agents()]] - `references` [EXTRACTED]
+- [[generate_summary]] - `references` [EXTRACTED]
+- [[parse_trivy_output]] - `references` [EXTRACTED]
+- [[run_trivy_scan]] - `references` [EXTRACTED]
+- [[save_report]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_100
+#graphify/code #graphify/EXTRACTED #community/Community_220

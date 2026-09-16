@@ -1,22 +1,20 @@
 ---
-source_file: "gateway/security/clamav_scanner.py"
+source_file: "gateway/proxy/mcp_inspector.py"
 type: "code"
-community: "Community 112"
-location: "L25"
+community: "Community 211"
+location: "L140"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_112
+  - community/Community_211
 ---
 
 # Any
 
 ## Connections
-- [[generate_summary()]] - `references` [EXTRACTED]
-- [[parse_clamscan_output()]] - `references` [EXTRACTED]
-- [[run_clamscan()]] - `references` [EXTRACTED]
-- [[save_report()]] - `references` [EXTRACTED]
-- [[scan_bytes()]] - `references` [EXTRACTED]
-- [[update_virus_db()]] - `references` [EXTRACTED]
+- [[dot-_redact_pii()]] - `references` [EXTRACTED]
+- [[dot-_scan_value()]] - `references` [EXTRACTED]
+- [[dot-inspect_tool_call()]] - `references` [EXTRACTED]
+- [[dot-inspect_tool_result()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_112
+#graphify/code #graphify/EXTRACTED #community/Community_211

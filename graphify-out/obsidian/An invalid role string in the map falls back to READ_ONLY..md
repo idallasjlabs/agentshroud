@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "rationale"
-community: "Group RBAC & Tool ACL"
+community: "Community 121"
 location: "L417"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Group_RBAC__Tool_ACL
+  - community/Community_121
 ---
 
 # An invalid role string in the map falls back to READ_ONLY.
 
 ## Connections
-- [[.test_get_role_invalid_string_defaults_to_readonly()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_get_role_invalid_string_defaults_to_readonly()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Group_RBAC__Tool_ACL
+#graphify/rationale #graphify/EXTRACTED #community/Community_121

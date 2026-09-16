@@ -1,18 +1,22 @@
 ---
-source_file: "gateway/security/report_store.py"
+source_file: "gateway/security/health_report.py"
 type: "code"
-community: "Community 101"
-location: "L182"
+community: "Community 459"
+location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_101
+  - community/Community_459
 ---
 
 # Any
 
 ## Connections
-- [[.get()_4]] - `references` [EXTRACTED]
-- [[.list()]] - `references` [EXTRACTED]
+- [[calculate_overall_score()]] - `references` [EXTRACTED]
+- [[calculate_tool_score()]] - `references` [EXTRACTED]
+- [[format_report()]] - `references` [EXTRACTED]
+- [[generate_report()]] - `references` [EXTRACTED]
+- [[get_trend()]] - `references` [EXTRACTED]
+- [[save_to_history()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_101
+#graphify/code #graphify/EXTRACTED #community/Community_459

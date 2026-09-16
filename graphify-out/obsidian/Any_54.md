@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/prompt_protection.py"
+source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "Community 46"
-location: "L56"
+community: "Community 423"
+location: "L369"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_46
+  - community/Community_423
 ---
 
 # Any
 
 ## Connections
-- [[.__init__()_110]] - `references` [EXTRACTED]
-- [[.get_protection_stats()]] - `references` [EXTRACTED]
+- [[dot-_append_audit_event()]] - `references` [EXTRACTED]
+- [[dot-broadcast()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_46
+#graphify/code #graphify/EXTRACTED #community/Community_423

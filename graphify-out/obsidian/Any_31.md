@@ -1,22 +1,18 @@
 ---
-source_file: "gateway/security/alert_dispatcher.py"
+source_file: ""
 type: "code"
-community: "Community 527"
-location: "L58"
+community: "Community 195"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_527
+  - community/Community_195
 ---
 
 # Any
 
 ## Connections
-- [[._format_alert_message()]] - `references` [EXTRACTED]
-- [[._log_alert()]] - `references` [EXTRACTED]
-- [[._send_notification()]] - `references` [EXTRACTED]
-- [[.dispatch()]] - `references` [EXTRACTED]
-- [[.get_digest()]] - `references` [EXTRACTED]
-- [[.get_stats()_12]] - `references` [EXTRACTED]
+- [[dot-to_dict()]] - `references` [EXTRACTED]
+- [[load_registry()]] - `references` [EXTRACTED]
+- [[plan_remediation()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_527
+#graphify/code #graphify/EXTRACTED #community/Community_195

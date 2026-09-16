@@ -1,19 +1,19 @@
 ---
 source_file: "docs/setup/APPLE-SERVICES-SETUP.md"
 type: "document"
-community: "Community 332"
+community: "Community 553"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_332
+  - community/Community_553
 ---
 
 # Apple Services Setup Guide
 
 ## Connections
 - [[APPLE-SERVICES-SETUP]] - `contains` [EXTRACTED]
-- [[🎯 Next Steps]] - `contains` [EXTRACTED]
+- [[🎯 Next Steps_1]] - `contains` [EXTRACTED]
 - [[📅 Calendar (CalDAV)]] - `contains` [EXTRACTED]
 - [[📋 Setup Checklist]] - `contains` [EXTRACTED]
 - [[📚 Documentation Links]] - `contains` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[🚨 Security Notes]] - `contains` [EXTRACTED]
 - [[🤖 Bot Integration Plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_332
+#graphify/document #graphify/EXTRACTED #community/Community_553

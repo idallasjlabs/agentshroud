@@ -1,22 +1,20 @@
 ---
-source_file: "docker/config/hermes/skills/i-apollo/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-apollo/README.md"
 type: "document"
-community: "Community 656"
-location: "L6"
+community: "Community 1256"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_656
+  - community/Community_1256
 ---
 
 # Apollo — Audio Systems Producer
 
 ## Connections
-- [[Input Requirements_10]] - `contains` [EXTRACTED]
-- [[Output_2]] - `contains` [EXTRACTED]
-- [[Quality Checklist_9]] - `contains` [EXTRACTED]
-- [[Role_41]] - `contains` [EXTRACTED]
-- [[SKILL_67]] - `contains` [EXTRACTED]
-- [[Technical Specification_1]] - `contains` [EXTRACTED]
+- [[Purpose_73]] - `contains` [EXTRACTED]
+- [[Related Skills_64]] - `contains` [EXTRACTED]
+- [[Usage_68]] - `contains` [EXTRACTED]
+- [[openclawskillsi-apolloREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_656
+#graphify/document #graphify/EXTRACTED #community/Community_1256

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "rationale"
-community: "Community 18"
+community: "Community 48"
 location: "L335"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_18
+  - community/Community_48
 ---
 
 # Analyze file content for malicious patterns.
 
 ## Connections
-- [[._analyze_file_content()]] - `rationale_for` [EXTRACTED]
+- [[dot-_analyze_file_content()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_18
+#graphify/rationale #graphify/EXTRACTED #community/Community_48

@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/memory_lifecycle.py"
+source_file: "gateway/runtime/apple_engine.py"
 type: "code"
-community: "Memory Lifecycle & Egress Filtering"
-location: "L379"
+community: "Community 364"
+location: "L149"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Memory_Lifecycle__Egress_Filtering
+  - community/Community_364
 ---
 
 # Any
 
 ## Connections
-- [[.get_lifecycle_status()]] - `references` [EXTRACTED]
-- [[MemoryLifecycleConfig]] - `uses` [INFERRED]
+- [[dot-inspect()_3]] - `references` [EXTRACTED]
+- [[ContainerEngine]] - `uses` [INFERRED]
+- [[ContainerInfo_3]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Memory_Lifecycle__Egress_Filtering
+#graphify/code #graphify/INFERRED #community/Community_364

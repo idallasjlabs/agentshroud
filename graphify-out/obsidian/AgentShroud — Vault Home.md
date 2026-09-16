@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/00 - START HERE/Home.md"
 type: "document"
-community: "Community 85"
+community: "Community 253"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_85
+  - community/Community_253
 ---
 
 # AgentShroud — Vault Home
@@ -19,4 +19,4 @@ tags:
 - [[Navigate This Vault]] - `contains` [EXTRACTED]
 - [[Operations]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_85
+#graphify/document #graphify/EXTRACTED #community/Community_253

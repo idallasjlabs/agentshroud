@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/security/killswitch_config.py"
+source_file: "gateway/security/wazuh_client.py"
 type: "code"
-community: "Community 25"
-location: "L100"
+community: "Community 292"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_25
+  - community/Community_292
 ---
 
 # Any
 
 ## Connections
-- [[.to_dict()_10]] - `references` [EXTRACTED]
+- [[generate_summary()]] - `references` [EXTRACTED]
+- [[get_fim_events()]] - `references` [EXTRACTED]
+- [[get_rootkit_events()]] - `references` [EXTRACTED]
+- [[parse_alert()]] - `references` [EXTRACTED]
+- [[read_alerts()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_25
+#graphify/code #graphify/EXTRACTED #community/Community_292

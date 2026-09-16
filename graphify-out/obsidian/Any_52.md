@@ -1,19 +1,25 @@
 ---
-source_file: "gateway/security/outbound_filter.py"
+source_file: "gateway/proxy/webhook_receiver.py"
 type: "code"
-community: "Community 137"
-location: "L73"
+community: "Ingest Middleware & File Sandbox"
+location: "L121"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_137
+  - community/Ingest_Middleware__File_Sandbox
 ---
 
 # Any
 
 ## Connections
-- [[.__init__()_103]] - `references` [EXTRACTED]
-- [[._compile_patterns()_1]] - `references` [EXTRACTED]
-- [[.get_stats()_17]] - `references` [EXTRACTED]
+- [[dot-_extract_message()]] - `references` [EXTRACTED]
+- [[dot-_extract_user_id()_1]] - `references` [EXTRACTED]
+- [[dot-_extract_username()]] - `references` [EXTRACTED]
+- [[dot-_prepare_session_payload()]] - `references` [EXTRACTED]
+- [[dot-_replace_message()]] - `references` [EXTRACTED]
+- [[dot-get_stats()_7]] - `references` [EXTRACTED]
+- [[dot-process_webhook()]] - `references` [EXTRACTED]
+- [[RBACConfig_2]] - `uses` [INFERRED]
+- [[UserSessionManager]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_137
+#graphify/code #graphify/EXTRACTED #community/Ingest_Middleware__File_Sandbox

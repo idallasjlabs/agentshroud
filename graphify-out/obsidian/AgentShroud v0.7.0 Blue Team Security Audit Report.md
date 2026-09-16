@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/reviews/blue-team-audit-v0.7.0.md"
 type: "document"
-community: "Community 185"
+community: "Community 123"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_185
+  - community/Community_123
 ---
 
 # AgentShroud v0.7.0 Blue Team Security Audit Report
@@ -29,6 +29,6 @@ tags:
 - [[GitGuard (supply-chain hook scanning)]] - `references` [EXTRACTED]
 - [[PII Sanitizer (Presidio + regex hybrid)]] - `references` [EXTRACTED]
 - [[PromptGuard (Prompt Injection Defense)]] - `references` [EXTRACTED]
-- [[blue-team-audit-v0.7.0]] - `contains` [EXTRACTED]
+- [[planningreviewsblue-team-audit-v0.7.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_185
+#graphify/document #graphify/EXTRACTED #community/Community_123
