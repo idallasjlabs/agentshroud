@@ -1,33 +1,33 @@
 ---
 source_file: "gateway/tests/test_mcp_policy.py"
 type: "code"
-community: "Community 33"
+community: "Community 35"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_33
+  - community/Community_35
 ---
 
 # test_mcp_policy.py
 
 ## Connections
 - [[ApprovalQueueConfig_2]] - `imports` [EXTRACTED]
-- [[ApprovalStore_1]] - `imports` [EXTRACTED]
-- [[EnhancedApprovalQueue]] - `imports` [EXTRACTED]
+- [[ApprovalStore]] - `imports` [EXTRACTED]
+- [[EnhancedApprovalQueue_1]] - `imports` [EXTRACTED]
 - [[MCPPolicyAction]] - `imports` [EXTRACTED]
-- [[MCPPolicyConfig]] - `imports` [EXTRACTED]
+- [[MCPPolicyConfig_1]] - `imports` [EXTRACTED]
 - [[MCPPolicyDecision]] - `imports` [EXTRACTED]
-- [[MCPPolicyEngine]] - `imports` [EXTRACTED]
-- [[MCPProxy]] - `imports` [EXTRACTED]
-- [[MCPToolCall]] - `imports` [EXTRACTED]
+- [[MCPPolicyEngine_1]] - `imports` [EXTRACTED]
+- [[MCPProxy_1]] - `imports` [EXTRACTED]
+- [[MCPToolCall_1]] - `imports` [EXTRACTED]
 - [[MCPToolResult]] - `imports` [EXTRACTED]
-- [[RBACConfig_1]] - `imports` [EXTRACTED]
-- [[ToolRiskConfig_1]] - `imports` [EXTRACTED]
+- [[RBACConfig_2]] - `imports` [EXTRACTED]
+- [[ToolRiskConfig]] - `imports` [EXTRACTED]
 - [[_FakeApprovalQueue]] - `contains` [EXTRACTED]
-- [[_base_config()_1]] - `contains` [EXTRACTED]
+- [[_base_config()]] - `contains` [EXTRACTED]
 - [[_real_queue()]] - `contains` [EXTRACTED]
-- [[engine()_1]] - `contains` [EXTRACTED]
+- [[engine()]] - `contains` [EXTRACTED]
 - [[mcp_policy.py]] - `references` [EXTRACTED]
 - [[test_allowlisted_server_safe_tool_is_allowed()]] - `contains` [EXTRACTED]
 - [[test_bare_tool_name_risk_tier_applies_across_servers()]] - `contains` [EXTRACTED]
@@ -59,4 +59,4 @@ tags:
 - [[test_server_and_tool_matching_is_case_insensitive()]] - `contains` [EXTRACTED]
 - [[test_unknown_server_is_denied_by_default()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_33
+#graphify/code #graphify/EXTRACTED #community/Community_35

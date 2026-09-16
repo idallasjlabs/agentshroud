@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/tests/test_mfa_guard.py"
 type: "code"
-community: "Community 63"
+community: "Community 57"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_63
+  - community/Community_57
 ---
 
 # test_mfa_guard.py
 
 ## Connections
-- [[ApprovalQueue]] - `imports` [EXTRACTED]
+- [[ApprovalQueue_1]] - `imports` [EXTRACTED]
 - [[ApprovalQueueConfig_2]] - `imports` [EXTRACTED]
-- [[ApprovalRequest_3]] - `imports` [EXTRACTED]
-- [[ApprovalStore_1]] - `imports` [EXTRACTED]
-- [[EnhancedApprovalQueue]] - `imports` [EXTRACTED]
+- [[ApprovalRequest_2]] - `imports` [EXTRACTED]
+- [[ApprovalStore]] - `imports` [EXTRACTED]
+- [[EnhancedApprovalQueue_1]] - `imports` [EXTRACTED]
 - [[MFAGuard_2]] - `imports` [EXTRACTED]
 - [[MFAResult]] - `imports` [EXTRACTED]
-- [[ToolRiskConfig_1]] - `imports` [EXTRACTED]
+- [[ToolRiskConfig]] - `imports` [EXTRACTED]
 - [[_queue()]] - `contains` [EXTRACTED]
 - [[_ref_totp()]] - `contains` [EXTRACTED]
 - [[_submit_enhanced_high_risk()]] - `contains` [EXTRACTED]
@@ -28,7 +28,7 @@ tags:
 - [[enhanced_mfa_queue()]] - `contains` [EXTRACTED]
 - [[enhanced_queue.py]] - `references` [EXTRACTED]
 - [[mfa_guard.py]] - `references` [EXTRACTED]
-- [[now()_1]] - `contains` [EXTRACTED]
+- [[now()_10]] - `contains` [EXTRACTED]
 - [[queue.py]] - `references` [EXTRACTED]
 - [[store.py]] - `references` [EXTRACTED]
 - [[test_counter_below_zero_skipped()]] - `contains` [EXTRACTED]
@@ -73,4 +73,4 @@ tags:
 - [[test_valid_totp_prev_window_allowed()]] - `contains` [EXTRACTED]
 - [[test_wrong_length_code_denies()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_63
+#graphify/code #graphify/EXTRACTED #community/Community_57

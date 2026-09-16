@@ -1,22 +1,23 @@
 ---
 source_file: "gateway/tests/test_hermes_cron_seed.py"
 type: "code"
-community: "Community 381"
-location: "L1"
+community: "Community 408"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_381
+  - community/Community_408
 ---
 
 # test_hermes_cron_seed.py
 
 ## Connections
+- [[Validate that init-config.sh cron jobs and jobs.yaml stay in sync. Prevents…]] - `rationale_for` [EXTRACTED]
 - [[_parse_cron_names_from_sh()]] - `contains` [EXTRACTED]
 - [[_parse_job_names_from_yaml()]] - `contains` [EXTRACTED]
 - [[_parse_seed_cron_calls_from_sh()]] - `contains` [EXTRACTED]
-- [[init-config.sh (Hermes cron seed)]] - `references` [EXTRACTED]
-- [[jobs.yaml (Hermes cron reference)]] - `references` [EXTRACTED]
+- [[gateway.proxy.llm_proxy]] - `references` [EXTRACTED]
+- [[init-config.sh (Hermes)]] - `references` [EXTRACTED]
+- [[jobs.yaml (Hermes cron)]] - `references` [EXTRACTED]
 - [[test_competitive_email_job_present()]] - `contains` [EXTRACTED]
 - [[test_competitive_landscape_job_present()]] - `contains` [EXTRACTED]
 - [[test_content_generating_jobs_pinned_to_evidence_backed_model()]] - `contains` [EXTRACTED]
@@ -29,4 +30,4 @@ tags:
 - [[test_seed_cron_supports_optional_model_and_provider_args()]] - `contains` [EXTRACTED]
 - [[test_stability_report_job_present()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_381
+#graphify/code #graphify/EXTRACTED #community/Community_408

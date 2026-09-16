@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_quota_detector.py"
 type: "code"
-community: "Community 425"
+community: "Community 120"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_425
+  - community/Community_120
 ---
 
 # test_llm_quota_detector.py
@@ -30,4 +30,4 @@ tags:
 - [[test_no_false_positive_on_anthropic_request_rate_limit()]] - `contains` [EXTRACTED]
 - [[test_non_json_body_anthropic_429_no_substring_match()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_425
+#graphify/code #graphify/EXTRACTED #community/Community_120

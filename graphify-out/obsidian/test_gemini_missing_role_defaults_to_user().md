@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_gemini_openai_translator.py"
 type: "code"
-community: "Community 143"
+community: "Community 141"
 location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_143
+  - community/Community_141
 ---
 
 # test_gemini_missing_role_defaults_to_user()
@@ -15,4 +15,4 @@ tags:
 - [[gemini_to_openai_request()]] - `calls` [EXTRACTED]
 - [[test_gemini_openai_translator.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_143
+#graphify/code #graphify/EXTRACTED #community/Community_141

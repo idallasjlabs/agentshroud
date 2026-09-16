@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/tests/test_intel_pipeline.py"
 type: "code"
-community: "Community 58"
+community: "Community 125"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_58
+  - community/Community_125
 ---
 
 # test_intel_pipeline.py
 
 ## Connections
-- [[CompetitiveIntelReport_1]] - `imports` [EXTRACTED]
-- [[CompetitorEntry_1]] - `imports` [EXTRACTED]
-- [[IntelReportStore]] - `imports` [EXTRACTED]
+- [[CompetitiveIntelReport_2]] - `imports` [EXTRACTED]
+- [[CompetitorEntry]] - `imports` [EXTRACTED]
+- [[IntelReportStore_1]] - `imports` [EXTRACTED]
 - [[ReportIntegrityError]] - `imports` [EXTRACTED]
 - [[TestCompetitiveIntelReportSchema]] - `contains` [EXTRACTED]
 - [[TestIntelReportHashIntegrity]] - `contains` [EXTRACTED]
 - [[TestIntelReportStore]] - `contains` [EXTRACTED]
 - [[intel_report module (CompetitiveIntelReport, IntelReportStore)]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_58
+#graphify/code #graphify/EXTRACTED #community/Community_125

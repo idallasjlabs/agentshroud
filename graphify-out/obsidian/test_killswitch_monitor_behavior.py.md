@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_killswitch_monitor_behavior.py"
 type: "code"
-community: "Community 25"
+community: "Community 54"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_25
+  - community/Community_54
 ---
 
 # test_killswitch_monitor_behavior.py
@@ -19,9 +19,9 @@ tags:
 - [[TestStatusAndStats]] - `contains` [EXTRACTED]
 - [[TestVerifyKillswitch]] - `contains` [EXTRACTED]
 - [[_fake_stats()]] - `contains` [EXTRACTED]
-- [[config()_1]] - `contains` [EXTRACTED]
+- [[config()_2]] - `contains` [EXTRACTED]
 - [[dispatcher()_1]] - `contains` [EXTRACTED]
 - [[killswitch_config.py (KillSwitchConfig)]] - `references` [EXTRACTED]
 - [[killswitch_monitor.py (KillSwitchMonitor)]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_25
+#graphify/code #graphify/EXTRACTED #community/Community_54

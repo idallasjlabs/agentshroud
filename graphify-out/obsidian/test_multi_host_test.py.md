@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_host_test.py"
 type: "code"
-community: "Community 898"
+community: "Community 947"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_898
+  - community/Community_947
 ---
 
 # test_multi_host_test.py
@@ -16,9 +16,9 @@ tags:
 - [[HostStatus]] - `imports` [EXTRACTED]
 - [[MultiHostResult]] - `imports` [EXTRACTED]
 - [[TestBuildSshArgv]] - `contains` [EXTRACTED]
-- [[TestClassify]] - `contains` [EXTRACTED]
+- [[TestClassify_1]] - `contains` [EXTRACTED]
 - [[TestHostResult]] - `contains` [EXTRACTED]
-- [[TestMain]] - `contains` [EXTRACTED]
+- [[TestMain_1]] - `contains` [EXTRACTED]
 - [[TestMultiHostResultProperties]] - `contains` [EXTRACTED]
 - [[TestParseHosts]] - `contains` [EXTRACTED]
 - [[TestParserAndCommandResolution]] - `contains` [EXTRACTED]
@@ -31,12 +31,12 @@ tags:
 - [[_write_exec()]] - `contains` [EXTRACTED]
 - [[build_parser()]] - `imports` [EXTRACTED]
 - [[build_ssh_argv()]] - `imports` [EXTRACTED]
-- [[classify()]] - `imports` [EXTRACTED]
-- [[main()_14]] - `imports` [EXTRACTED]
+- [[classify()_1]] - `imports` [EXTRACTED]
+- [[main()_30]] - `imports` [EXTRACTED]
 - [[multi_host_test.py]] - `references` [EXTRACTED]
 - [[parse_hosts()]] - `imports` [EXTRACTED]
 - [[run_multi_host()]] - `imports` [EXTRACTED]
 - [[ssh_runner()]] - `imports` [EXTRACTED]
-- [[tail()_1]] - `imports` [EXTRACTED]
+- [[tail()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_898
+#graphify/code #graphify/EXTRACTED #community/Community_947

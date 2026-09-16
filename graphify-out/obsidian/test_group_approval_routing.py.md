@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_group_approval_routing.py"
 type: "code"
-community: "Community 123"
+community: "Community 95"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_123
+  - community/Community_95
 ---
 
 # test_group_approval_routing.py
 
 ## Connections
-- [[ApprovalRequest_3]] - `imports` [EXTRACTED]
+- [[ApprovalRequest_2]] - `imports` [EXTRACTED]
 - [[GroupApprovalRouter]] - `imports` [EXTRACTED]
 - [[TestDMApprovalOwnerOnly]] - `contains` [EXTRACTED]
 - [[TestGroupApprovalOwnerDM]] - `contains` [EXTRACTED]
@@ -20,9 +20,8 @@ tags:
 - [[TestGroupApprovalRouterDefaultSend]] - `contains` [EXTRACTED]
 - [[gatewayapproval_queuegroup_router.py (group-{chatId} agent-id scheme, referenced)]] - `imports_from` [EXTRACTED]
 - [[group_router.py (GroupApprovalRouter)]] - `implements` [EXTRACTED]
-- [[ingest_api models.py (ApprovalRequest)]] - `references` [EXTRACTED]
 - [[mock_send_message()]] - `contains` [EXTRACTED]
-- [[router()]] - `contains` [EXTRACTED]
+- [[router()_3]] - `contains` [EXTRACTED]
 - [[router_with_sent()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_123
+#graphify/code #graphify/EXTRACTED #community/Community_95

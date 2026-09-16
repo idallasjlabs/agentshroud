@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_filter_xml_blocks.py"
 type: "code"
-community: "Community 135"
+community: "Community 127"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_135
+  - community/Community_127
 ---
 
 # test_filter_xml_blocks.py
 
 ## Connections
-- [[PIIConfig]] - `imports` [EXTRACTED]
+- [[PIIConfig_2]] - `imports` [EXTRACTED]
 - [[PIISanitizer]] - `imports` [EXTRACTED]
-- [[sanitizer()_3]] - `contains` [EXTRACTED]
+- [[sanitizer()_1]] - `contains` [EXTRACTED]
 - [[test_collapses_excessive_newlines()]] - `contains` [EXTRACTED]
 - [[test_does_not_filter_normal_text()]] - `contains` [EXTRACTED]
 - [[test_does_not_filter_regular_html_tags()]] - `contains` [EXTRACTED]
@@ -38,4 +38,4 @@ tags:
 - [[test_was_filtered_false_when_no_blocks()]] - `contains` [EXTRACTED]
 - [[test_was_filtered_true_when_block_present()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_135
+#graphify/code #graphify/EXTRACTED #community/Community_127

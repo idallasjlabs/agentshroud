@@ -1,18 +1,18 @@
 ---
 source_file: "tests/startup_smoke/test_openclaw_photo.sh"
 type: "code"
-community: "Community 549"
+community: "Community 474"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_549
+  - community/Community_474
 ---
 
 # test_openclaw_photo.sh script
 
 ## Connections
-- [[check()_9]] - `calls` [EXTRACTED]
+- [[check()_7]] - `calls` [EXTRACTED]
 - [[test_openclaw_photo.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_549
+#graphify/code #graphify/EXTRACTED #community/Community_474

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "code"
-community: "Community 104"
+community: "Multi-Agent Router & Chat UI"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_104
+  - community/Multi-Agent_Router__Chat_UI
 ---
 
 # test_forward_routing.py
 
 ## Connections
-- [[AgentTarget]] - `references` [EXTRACTED]
-- [[ForwardRequest]] - `imports` [EXTRACTED]
+- [[AgentTarget_1]] - `references` [EXTRACTED]
+- [[ForwardRequest_1]] - `imports` [EXTRACTED]
 - [[TestAgentIdPropagatedFromTarget]] - `contains` [EXTRACTED]
 - [[TestOutboundBlockedNotDelivered]] - `contains` [EXTRACTED]
 - [[TestOwnerSpoofingViaForwardBody]] - `contains` [EXTRACTED]
@@ -26,4 +26,4 @@ tags:
 - [[forward-routing agent_id propagation into security pipeline]] - `implements` [EXTRACTED]
 - [[forward.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_104
+#graphify/code #graphify/EXTRACTED #community/Multi-Agent_Router__Chat_UI
