@@ -1,22 +1,19 @@
 ---
 source_file: "docs/vault/05 - Dependencies/playwright.md"
 type: "document"
-community: "Community 1004"
-location: "L9"
+community: "Community 266"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1004
+  - community/Community_266
 ---
 
-# Playwright
+# playwright.md
 
 ## Connections
-- [[Container Integration]] - `contains` [EXTRACTED]
-- [[Purpose_190]] - `contains` [EXTRACTED]
-- [[Related Notes_45]] - `contains` [EXTRACTED]
-- [[Security Controls_2]] - `contains` [EXTRACTED]
-- [[Volume]] - `contains` [EXTRACTED]
-- [[playwright_1]] - `contains` [EXTRACTED]
+- [[All Dependencies]] - `references` [EXTRACTED]
+- [[Playwright_1]] - `contains` [EXTRACTED]
+- [[volumes_1]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1004
+#graphify/document #graphify/EXTRACTED #community/Community_266

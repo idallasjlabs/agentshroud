@@ -1,20 +1,20 @@
 ---
 source_file: "scripts/openclaw_triage.sh"
 type: "code"
-community: "Community 1266"
+community: "Community 1313"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1266
+  - community/Community_1313
 ---
 
 # openclaw_triage.sh
 
 ## Connections
-- [[log()_7]] - `defines` [EXTRACTED]
+- [[log()_2]] - `defines` [EXTRACTED]
 - [[openclaw_triage.sh script]] - `contains` [EXTRACTED]
 - [[save_cmd()]] - `defines` [EXTRACTED]
 - [[save_shell()]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1266
+#graphify/code #graphify/EXTRACTED #community/Community_1313

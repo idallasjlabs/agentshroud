@@ -1,20 +1,19 @@
 ---
 source_file: "scripts/triage-cve-mitigations.py"
 type: "code"
-community: "Community 188"
-location: "L95"
+community: "Community 158"
+location: "L96"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_188
+  - community/Community_158
 ---
 
 # parse_version()
 
 ## Connections
-- [[Parse a dotted numeric version (e.g. ``2026.4.11``) to a tuple.      Returns `]] - `rationale_for` [EXTRACTED]
-- [[_read_running_version()]] - `calls` [EXTRACTED]
+- [[Parse a dotted numeric version (e.g. ``2026.4.11`` or ``2026.7.1-2``) to a…]] - `rationale_for` [EXTRACTED]
 - [[is_source_fixed()]] - `calls` [EXTRACTED]
 - [[triage-cve-mitigations.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_188
+#graphify/code #graphify/EXTRACTED #community/Community_158

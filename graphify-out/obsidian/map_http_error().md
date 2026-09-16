@@ -12,10 +12,10 @@ tags:
 # map_http_error()
 
 ## Connections
-- [[.get()]] - `calls` [EXTRACTED]
-- [[.get()_1]] - `calls` [EXTRACTED]
-- [[.ok()]] - `calls` [EXTRACTED]
-- [[.post()]] - `calls` [EXTRACTED]
+- [[dot-get()_2]] - `calls` [EXTRACTED]
+- [[dot-get()_3]] - `calls` [EXTRACTED]
+- [[dot-ok()_1]] - `calls` [EXTRACTED]
+- [[dot-post()_1]] - `calls` [EXTRACTED]
 - [[GatewayClient]] - `calls` [EXTRACTED]
 - [[Option]] - `references` [EXTRACTED]
 - [[String]] - `references` [EXTRACTED]

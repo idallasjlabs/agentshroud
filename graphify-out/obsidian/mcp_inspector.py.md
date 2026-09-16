@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/proxy/mcp_inspector.py"
 type: "code"
-community: "Community 44"
+community: "Community 175"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_44
+  - community/Community_175
 ---
 
 # mcp_inspector.py
 
 ## Connections
-- [[Enum]] - `imports_from` [EXTRACTED]
+- [[Enum_3]] - `imports_from` [EXTRACTED]
 - [[FindingType]] - `contains` [EXTRACTED]
 - [[InspectionFinding]] - `contains` [EXTRACTED]
 - [[InspectionResult]] - `contains` [EXTRACTED]
-- [[MCPInspector]] - `contains` [EXTRACTED]
-- [[ThreatLevel]] - `contains` [EXTRACTED]
-- [[__init__.py_7]] - `re_exports` [EXTRACTED]
+- [[MCPInspector_1]] - `contains` [EXTRACTED]
+- [[ThreatLevel_2]] - `contains` [EXTRACTED]
 - [[mcp_proxy.py]] - `imports_from` [EXTRACTED]
+- [[proxy__init__.py]] - `re_exports` [EXTRACTED]
 - [[test_mcp_proxy.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_44
+#graphify/code #graphify/EXTRACTED #community/Community_175

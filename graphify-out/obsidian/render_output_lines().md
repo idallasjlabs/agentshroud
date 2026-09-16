@@ -12,7 +12,7 @@ tags:
 # render_output_lines()
 
 ## Connections
-- [[.new()_2]] - `calls` [EXTRACTED]
+- [[dot-new()_2]] - `calls` [EXTRACTED]
 - [[OutputFormat_1]] - `references` [EXTRACTED]
 - [[String]] - `references` [EXTRACTED]
 - [[Value]] - `references` [EXTRACTED]

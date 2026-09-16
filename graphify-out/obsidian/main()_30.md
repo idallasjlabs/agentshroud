@@ -1,20 +1,34 @@
 ---
-source_file: "skills/openclaw/skill-creator/scripts/init_skill.py"
+source_file: "gateway/tools/multi_host_test.py"
 type: "code"
-community: "Community 806"
-location: "L320"
+community: "Community 764"
+location: "L312"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_806
+  - community/Community_764
 ---
 
 # main()
 
 ## Connections
-- [[init_skill()]] - `calls` [EXTRACTED]
-- [[init_skill.py]] - `contains` [EXTRACTED]
-- [[normalize_skill_name()]] - `calls` [EXTRACTED]
-- [[parse_resources()]] - `calls` [EXTRACTED]
+- [[dot-render_summary()]] - `calls` [EXTRACTED]
+- [[dot-test_dry_run_default_command()]] - `calls` [EXTRACTED]
+- [[dot-test_dry_run_touches_nothing()]] - `calls` [EXTRACTED]
+- [[dot-test_main_all_pass_with_injected_runner()]] - `calls` [EXTRACTED]
+- [[dot-test_main_default_hosts()]] - `calls` [EXTRACTED]
+- [[dot-test_main_failure_nonzero_exit()]] - `calls` [EXTRACTED]
+- [[dot-test_main_unreachable_nonzero_exit()]] - `calls` [EXTRACTED]
+- [[CLI entry point. Returns the aggregated exit code (0 = all passed).]] - `rationale_for` [EXTRACTED]
+- [[HostRunner]] - `references` [EXTRACTED]
+- [[_dry_run_report()]] - `calls` [EXTRACTED]
+- [[_resolve_command()]] - `calls` [EXTRACTED]
+- [[build_parser()]] - `calls` [EXTRACTED]
+- [[multi-host-test.sh]] - `calls` [EXTRACTED]
+- [[multi_host_test.py]] - `contains` [EXTRACTED]
+- [[parse_hosts()]] - `calls` [EXTRACTED]
+- [[run_multi_host()]] - `calls` [EXTRACTED]
+- [[ssh_runner()]] - `calls` [EXTRACTED]
+- [[test_multi_host_test.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_806
+#graphify/code #graphify/EXTRACTED #community/Community_764

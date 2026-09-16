@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Community 37"
+community: "Runtime Security Comparison & Intel Report"
 location: "L488"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_37
+  - community/Runtime_Security_Comparison__Intel_Report
 ---
 
 # rebuild()
@@ -17,4 +17,4 @@ tags:
 - [[api.py]] - `contains` [EXTRACTED]
 - [[load_config()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_37
+#graphify/code #graphify/EXTRACTED #community/Runtime_Security_Comparison__Intel_Report

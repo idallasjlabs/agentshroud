@@ -1,20 +1,26 @@
 ---
-source_file: "scripts/sync-cve-registry.py"
+source_file: ".llm_settings/scripts/session-prompt-setup.sh"
 type: "code"
-community: "Community 120"
-location: "L871"
+community: "Community 511"
+location: "L288"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_120
+  - community/Community_511
 ---
 
 # main()
 
 ## Connections
-- [[Path_47]] - `calls` [EXTRACTED]
-- [[_run_nvd_sync()]] - `calls` [EXTRACTED]
-- [[run_ghsa_sync()]] - `calls` [EXTRACTED]
-- [[sync-cve-registry.py]] - `contains` [EXTRACTED]
+- [[_hdr()]] - `calls` [EXTRACTED]
+- [[_info()]] - `calls` [EXTRACTED]
+- [[_inject_all()]] - `calls` [EXTRACTED]
+- [[_ok()]] - `calls` [EXTRACTED]
+- [[_parse_args()]] - `calls` [EXTRACTED]
+- [[_remove_all()]] - `calls` [EXTRACTED]
+- [[_resolve_prompt_file()]] - `calls` [EXTRACTED]
+- [[_warn()]] - `calls` [EXTRACTED]
+- [[session-prompt-setup.sh]] - `defines` [EXTRACTED]
+- [[session-prompt-setup.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_120
+#graphify/code #graphify/EXTRACTED #community/Community_511

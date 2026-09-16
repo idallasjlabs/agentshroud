@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/workspace/jira_dev_ticket.py"
+source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
 type: "code"
-community: "Community 164"
-location: "L225"
+community: "Community 242"
+location: "L237"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_164
+  - community/Community_242
 ---
 
 # resolve_cloud_id()
@@ -14,7 +14,8 @@ tags:
 ## Connections
 - [[Resolve a site domain to its Atlassian cloud ID via the public,     unauthentica_2]] - `rationale_for` [EXTRACTED]
 - [[build_tenant_info_url()_2]] - `calls` [EXTRACTED]
-- [[fetch_credentials()_1]] - `calls` [EXTRACTED]
-- [[jira_dev_ticket.py_1]] - `contains` [EXTRACTED]
+- [[jira_dev_ticket resolve_cloud_id()]] - `semantically_similar_to` [INFERRED]
+- [[jira_weekly_review.py]] - `contains` [EXTRACTED]
+- [[run()_3]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_164
+#graphify/code #graphify/EXTRACTED #community/Community_242

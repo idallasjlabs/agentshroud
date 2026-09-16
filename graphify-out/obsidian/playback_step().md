@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/test/test_playback_state/test_playback_state.c"
 type: "code"
-community: "Community 271"
+community: "Community 273"
 location: "L75"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_271
+  - community/Community_273
 ---
 
 # playback_step()
@@ -19,8 +19,8 @@ tags:
 - [[test_gate_open_sets_speaking_and_tts_playing()]] - `calls` [EXTRACTED]
 - [[test_gate_stays_closed_leaves_state_idle()]] - `calls` [EXTRACTED]
 - [[test_playback_state.c]] - `contains` [EXTRACTED]
-- [[wakeword_set_tts_playing()]] - `calls` [INFERRED]
+- [[wakeword_set_tts_playing]] - `calls` [INFERRED]
 - [[wakeword_triggered()]] - `calls` [INFERRED]
 - [[wakeword_tts_stop_clear()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_271
+#graphify/code #graphify/EXTRACTED #community/Community_273

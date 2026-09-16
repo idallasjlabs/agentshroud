@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/oauth_security.py"
 type: "code"
-community: "Community 175"
+community: "P3 Infrastructure Security Modules"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_175
+  - community/P3_Infrastructure_Security_Modules
 ---
 
 # oauth_security.py
@@ -22,6 +22,7 @@ tags:
 - [[consent_framework.py]] - `references` [EXTRACTED]
 - [[session_security.py]] - `references` [EXTRACTED]
 - [[test_oauth_security.py]] - `references` [EXTRACTED]
+- [[test_security_audit.py]] - `references` [EXTRACTED]
 - [[web_proxy.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_175
+#graphify/code #graphify/EXTRACTED #community/P3_Infrastructure_Security_Modules

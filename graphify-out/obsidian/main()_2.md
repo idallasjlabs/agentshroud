@@ -1,18 +1,23 @@
 ---
-source_file: "docker/bots/hermes/dashboard_bridge.py"
+source_file: "scripts/triage-cve-mitigations.py"
 type: "code"
-community: "Community 835"
-location: "L134"
+community: "Community 158"
+location: "L1132"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_835
+  - community/Community_158
 ---
 
 # main()
 
 ## Connections
-- [[_handle()]] - `calls` [EXTRACTED]
-- [[dashboard_bridge.py]] - `contains` [EXTRACTED]
+- [[CLI entry point. Args argv Optional argv override (for tests). Returns…]] - `rationale_for` [EXTRACTED]
+- [[_rel()]] - `calls` [EXTRACTED]
+- [[render_gap_report()]] - `calls` [EXTRACTED]
+- [[rewrite_registry_text()]] - `calls` [EXTRACTED]
+- [[summarize()]] - `calls` [EXTRACTED]
+- [[triage-cve-mitigations.py]] - `contains` [EXTRACTED]
+- [[triage_agent()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_835
+#graphify/code #graphify/EXTRACTED #community/Community_158

@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[OutputFormat_1]] - `references` [EXTRACTED]
 - [[Value]] - `references` [EXTRACTED]
-- [[main()_1]] - `calls` [EXTRACTED]
+- [[main()_18]] - `calls` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 - [[render_output_lines()]] - `calls` [EXTRACTED]
 

@@ -1,17 +1,19 @@
 ---
-source_file: "scripts/check_benchmark_regression.py"
+source_file: "src/interfaces/text_control_center.py"
 type: "code"
-community: "Community 1414"
-location: "L24"
+community: "Community 277"
+location: "L427"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1414
+  - community/Community_277
 ---
 
 # main()
 
 ## Connections
-- [[check_benchmark_regression.py]] - `contains` [EXTRACTED]
+- [[dot-run()_3]] - `calls` [EXTRACTED]
+- [[ControlCenter]] - `calls` [EXTRACTED]
+- [[text_control_center.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1414
+#graphify/code #graphify/EXTRACTED #community/Community_277

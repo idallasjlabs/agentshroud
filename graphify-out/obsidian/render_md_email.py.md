@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/render_md_email.py"
 type: "code"
-community: "Community 1031"
+community: "Community 1090"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1031
+  - community/Community_1090
 ---
 
 # render_md_email.py
@@ -15,8 +15,8 @@ tags:
 - [[_esc()]] - `contains` [EXTRACTED]
 - [[_inline()]] - `contains` [EXTRACTED]
 - [[_render_table()]] - `contains` [EXTRACTED]
-- [[init-config.sh]] - `semantically_similar_to` [INFERRED]
-- [[main()_4]] - `contains` [EXTRACTED]
+- [[init-config.sh (Hermes)]] - `semantically_similar_to` [INFERRED]
+- [[main()_6]] - `contains` [EXTRACTED]
 - [[render()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1031
+#graphify/code #graphify/EXTRACTED #community/Community_1090

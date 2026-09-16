@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_session_manager.py"
+source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "Session Management"
-location: "L20"
+community: "Community 89"
+location: "L112"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Session_Management
+  - community/Community_89
 ---
 
 # mgr()
 
 ## Connections
-- [[Create a UserSessionManager with a temp base workspace and an owner.]] - `rationale_for` [EXTRACTED]
-- [[UserSessionManager]] - `calls` [EXTRACTED]
-- [[test_session_manager.py]] - `contains` [EXTRACTED]
+- [[MCPPermissionManager]] - `calls` [EXTRACTED]
+- [[test_mcp_permissions.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Session_Management
+#graphify/code #graphify/EXTRACTED #community/Community_89

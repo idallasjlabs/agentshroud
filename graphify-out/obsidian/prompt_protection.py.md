@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "Community 46"
+community: "Blue/Red Team Security Auditor Skills"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_46
+  - community/Blue/Red_Team_Security_Auditor_Skills
 ---
 
 # prompt_protection.py
@@ -15,7 +15,7 @@ tags:
 - [[AgentShroud Blue Team Security Auditor (SEC-DEFENSE)]] - `references` [EXTRACTED]
 - [[PromptProtection]] - `contains` [EXTRACTED]
 - [[ProtectedContent]] - `contains` [EXTRACTED]
-- [[RedactionResult_2]] - `contains` [EXTRACTED]
-- [[SKILL_190]] - `references` [EXTRACTED]
+- [[RedactionResult_3]] - `contains` [EXTRACTED]
+- [[agentshroud-blueteamSKILL]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_46
+#graphify/code #graphify/EXTRACTED #community/Blue/Red_Team_Security_Auditor_Skills

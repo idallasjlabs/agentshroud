@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/package.json"
+source_file: ".agents/skills/i-browser/package.json"
 type: "code"
-community: "Community 837"
+community: "Community 868"
 location: "L2"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_837
+  - community/Community_868
 ---
 
 # name
 
 ## Connections
-- [[package.json_2]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-browserpackage.json]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_837
+#graphify/code #graphify/EXTRACTED #community/Community_868

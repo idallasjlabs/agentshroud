@@ -1,19 +1,18 @@
 ---
-source_file: "docker/config/openclaw/cron/scripts/cve_prefetch.py"
+source_file: "scripts/gemini-review.py"
 type: "code"
-community: "Community 1337"
-location: "L46"
+community: "Community 1102"
+location: "L83"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1337
+  - community/Community_1102
 ---
 
 # main()
 
 ## Connections
-- [[curl_json()]] - `calls` [EXTRACTED]
-- [[cve_prefetch.py]] - `contains` [EXTRACTED]
-- [[known_ghsa_ids()]] - `calls` [EXTRACTED]
+- [[call_gemini()]] - `calls` [EXTRACTED]
+- [[gemini-review.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1337
+#graphify/code #graphify/EXTRACTED #community/Community_1102
