@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md"
 type: "document"
-community: "Community 338"
+community: "Community 345"
 location: "L153"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_338
+  - community/Community_345
 ---
 
 # Domain 24 — Supply Chain and Ecosystem Controls
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[DELIVERABLE 1 — Domain-by-Domain Assessment]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_338
+#graphify/document #graphify/EXTRACTED #community/Community_345

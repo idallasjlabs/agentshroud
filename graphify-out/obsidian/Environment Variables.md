@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md"
+source_file: "docs/vault/02 - Modules/Other/port_manager.py.md"
 type: "document"
-community: "Community 383"
-location: "L150"
+community: "Community 1020"
+location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_383
+  - community/Community_1020
 ---
 
-# Environment variables
+# Environment Variables
 
 ## Connections
-- [[Configuration_8]] - `contains` [EXTRACTED]
+- [[port_manager.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_383
+#graphify/document #graphify/EXTRACTED #community/Community_1020

@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mac/SKILL.md"
+source_file: "docker/config/hermes/skills/i-apollo/SKILL.md"
 type: "document"
-community: "Community 390"
-location: "L344"
+community: "Community 679"
+location: "L121"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_390
+  - community/Community_679
 ---
 
 # Error Handling
 
 ## Connections
-- [[Mac App Discovery Skill_1]] - `contains` [EXTRACTED]
-- [[Mac App Discovery Skill_2]] - `contains` [EXTRACTED]
+- [[Technical Specification]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_390
+#graphify/document #graphify/EXTRACTED #community/Community_679

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "rationale"
-community: "Community 130"
+community: "Community 133"
 location: "L267"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_130
+  - community/Community_133
 ---
 
 # [EXPERIMENTAL] Generate a new credential value.          WARNING: This method ge
 
 ## Connections
-- [[._generate_new_credential()]] - `rationale_for` [EXTRACTED]
+- [[dot-_generate_new_credential()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_130
+#graphify/rationale #graphify/EXTRACTED #community/Community_133

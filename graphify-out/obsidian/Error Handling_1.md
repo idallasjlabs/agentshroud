@@ -1,18 +1,17 @@
 ---
-source_file: ".agents/skills/i-mac/SKILL.md"
+source_file: "skills/openclaw/xurl/SKILL.md"
 type: "document"
-community: "Community 390"
-location: "L344"
+community: "Community 395"
+location: "L444"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_390
+  - community/Community_395
 ---
 
 # Error Handling
 
 ## Connections
-- [[Mac App Discovery Skill]] - `contains` [EXTRACTED]
-- [[Mac App Discovery Skill_1]] - `contains` [EXTRACTED]
+- [[xurl — Agent Skill Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_390
+#graphify/document #graphify/EXTRACTED #community/Community_395

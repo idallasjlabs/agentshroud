@@ -1,19 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md"
+source_file: "docs/security/SECURITY_ARCHITECTURE.md"
 type: "document"
-community: "Community 523"
-location: "L252"
+community: "Community 146"
+location: "L541"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_523
+  - community/Community_146
 ---
 
 # Emergency Procedures
 
 ## Connections
-- [[Emergency Contacts]] - `contains` [EXTRACTED]
-- [[GSDE&G Skills Reference]] - `contains` [EXTRACTED]
-- [[P1 Incident Response]] - `contains` [EXTRACTED]
+- [[Quick Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_523
+#graphify/document #graphify/EXTRACTED #community/Community_146

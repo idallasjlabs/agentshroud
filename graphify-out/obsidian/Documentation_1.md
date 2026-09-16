@@ -1,17 +1,20 @@
 ---
-source_file: "branding/INDEX.md"
+source_file: "README.md"
 type: "document"
-community: "Community 550"
-location: "L81"
+community: "Community 178"
+location: "L407"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_550
+  - community/Community_178
 ---
 
 # Documentation
 
 ## Connections
-- [[🎨 Quick Access]] - `contains` [EXTRACTED]
+- [[AgentShroud™ README]] - `contains` [EXTRACTED]
+- [[Development Resources]] - `contains` [EXTRACTED]
+- [[Quick Start_3]] - `contains` [EXTRACTED]
+- [[Technical Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_550
+#graphify/document #graphify/EXTRACTED #community/Community_178

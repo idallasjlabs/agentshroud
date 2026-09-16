@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-socrates/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-socrates/SKILL.md"
 type: "document"
-community: "Community 495"
+community: "Community 508"
 location: "L88"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_495
+  - community/Community_508
 ---
 
 # ElevenLabs v3 Audio Tags
 
 ## Connections
-- [[Socrates — Dialogue Architect_2]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_495
+#graphify/document #graphify/EXTRACTED #community/Community_508

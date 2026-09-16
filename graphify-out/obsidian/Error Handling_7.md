@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md"
+source_file: "docker/config/openclaw/skills/i-apollo/SKILL.md"
 type: "document"
-community: "Community 534"
-location: "L97"
+community: "Community 681"
+location: "L121"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_534
+  - community/Community_681
 ---
 
 # Error Handling
 
 ## Connections
-- [[clamav_scanner.py_2]] - `contains` [EXTRACTED]
+- [[Technical Specification_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_534
+#graphify/document #graphify/EXTRACTED #community/Community_681

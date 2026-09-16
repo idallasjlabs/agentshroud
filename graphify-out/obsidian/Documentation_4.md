@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
+source_file: "branding/INDEX.md"
 type: "document"
-community: "Community 1293"
-location: "L636"
+community: "Community 566"
+location: "L81"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1293
+  - community/Community_566
 ---
 
 # Documentation
 
 ## Connections
-- [[Resources]] - `contains` [EXTRACTED]
+- [[🎨 Quick Access]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1293
+#graphify/document #graphify/EXTRACTED #community/Community_566

@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Community 509"
+community: "Community 521"
 location: "L102"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_509
+  - community/Community_521
 ---
 
 # EncodingDetectingPipeline
 
 ## Connections
-- [[.process_inbound()_9]] - `method` [EXTRACTED]
-- [[.test_encoding_detected_on_getUpdates()]] - `calls` [EXTRACTED]
+- [[dot-process_inbound()_8]] - `method` [EXTRACTED]
+- [[dot-test_encoding_detected_on_getUpdates()]] - `calls` [EXTRACTED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[Pipeline that detects base64-encoded injections.]] - `rationale_for` [EXTRACTED]
 - [[RateLimiter]] - `uses` [INFERRED]
-- [[TelegramAPIProxy]] - `uses` [INFERRED]
+- [[TelegramAPIProxy_2]] - `uses` [INFERRED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_509
+#graphify/code #graphify/EXTRACTED #community/Community_521

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md"
 type: "document"
-community: "Community 373"
+community: "Community 240"
 location: "L278"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_373
+  - community/Community_240
 ---
 
 # Emergency container access
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Rollback Plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_373
+#graphify/document #graphify/EXTRACTED #community/Community_240

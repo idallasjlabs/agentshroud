@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "rationale"
-community: "Community 52"
+community: "Community 43"
 location: "L405"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_52
+  - community/Community_43
 ---
 
 # Ensure the payload library stays above 100 entries (CI regression gate).
 
 ## Connections
-- [[.test_payload_count_meets_minimum()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_payload_count_meets_minimum()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_52
+#graphify/rationale #graphify/EXTRACTED #community/Community_43

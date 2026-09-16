@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/dns_filter.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/prompt_guard.py.md"
 type: "document"
-community: "Community 583"
-location: "L84"
+community: "Community 576"
+location: "L103"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_583
+  - community/Community_576
 ---
 
 # Environment Variables
 
 ## Connections
-- [[dns_filter.py_2]] - `contains` [EXTRACTED]
+- [[PromptGuard_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_583
+#graphify/document #graphify/EXTRACTED #community/Community_576

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "concept"
-community: "Community 1087"
+community: "Community 1140"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1087
+  - community/Community_1140
 ---
 
 # Distributed OpenClaw Node Architecture (Pi peer-to-peer agent)
@@ -14,4 +14,4 @@ tags:
 - [[Cryptographic Node Pairing Process]] - `conceptually_related_to` [EXTRACTED]
 - [[Pi (Raspberry Pi 4B) — Edgetest node]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1087
+#graphify/concept #graphify/EXTRACTED #community/Community_1140

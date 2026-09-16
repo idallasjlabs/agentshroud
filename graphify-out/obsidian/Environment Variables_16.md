@@ -1,17 +1,20 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/trust_manager.py.md"
+source_file: "docs/runbooks/deployment.md"
 type: "document"
-community: "Community 372"
-location: "L102"
+community: "Community 703"
+location: "L101"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_372
+  - community/Community_703
 ---
 
 # Environment Variables
 
 ## Connections
-- [[TrustManager_5]] - `contains` [EXTRACTED]
+- [[4. Environment Variables]] - `contains` [EXTRACTED]
+- [[Deployment Runbook — AgentShroud]] - `contains` [EXTRACTED]
+- [[Dockerfile — Gateway]] - `contains` [EXTRACTED]
+- [[auth.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_372
+#graphify/document #graphify/EXTRACTED #community/Community_703

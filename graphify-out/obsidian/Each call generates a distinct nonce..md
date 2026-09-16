@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_session_security.py"
 type: "rationale"
-community: "Community 870"
+community: "Community 914"
 location: "L156"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_870
+  - community/Community_914
 ---
 
 # Each call generates a distinct nonce.
 
 ## Connections
-- [[.test_nonce_generation_unique()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_nonce_generation_unique()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_870
+#graphify/rationale #graphify/EXTRACTED #community/Community_914

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/drift_detector.py.md"
 type: "document"
-community: "Community 502"
-location: "L90"
+community: "Community 514"
+location: "L100"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_502
+  - community/Community_514
 ---
 
 # Environment Variables
 
 ## Connections
-- [[alert_dispatcher.py_2]] - `contains` [EXTRACTED]
+- [[drift_detector.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_502
+#graphify/document #graphify/EXTRACTED #community/Community_514

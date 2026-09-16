@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/egress_monitor.py"
 type: "code"
-community: "Community 95"
+community: "Session Manager & PII/Context Guard"
 location: "L25"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_95
+  - community/Session_Manager__PII/Context_Guard
 ---
 
 # EgressChannel
 
 ## Connections
-- [[.get_events()_2]] - `references` [EXTRACTED]
-- [[Enum]] - `inherits` [EXTRACTED]
+- [[dot-get_events()_2]] - `references` [EXTRACTED]
+- [[Enum_3]] - `inherits` [EXTRACTED]
 - [[MockEgressChannel]] - `shares_data_with` [AMBIGUOUS]
 - [[TestAlertGeneration]] - `uses` [INFERRED]
 - [[TestAnomalyDetection]] - `uses` [INFERRED]
@@ -32,8 +32,8 @@ tags:
 - [[TestTimingAttacks]] - `uses` [INFERRED]
 - [[TestWebSecurity]] - `uses` [INFERRED]
 - [[egress_monitor.py]] - `contains` [EXTRACTED]
-- [[str]] - `inherits` [EXTRACTED]
+- [[str_2]] - `inherits` [EXTRACTED]
 - [[test_egress_monitor.py]] - `imports` [EXTRACTED]
 - [[web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_95
+#graphify/code #graphify/INFERRED #community/Session_Manager__PII/Context_Guard

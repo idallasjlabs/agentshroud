@@ -1,22 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/Error Index.md"
 type: "document"
-community: "Community 874"
-location: "L9"
+community: "Community 255"
+location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_874
+  - community/Community_255
 ---
 
 # Egress Filter Errors
 
 ## Connections
-- [[Egress Filter Errors]] - `contains` [EXTRACTED]
-- [[Egress Filter Not Initialized]] - `contains` [EXTRACTED]
-- [[HTTP 403 — Egress Blocked]] - `contains` [EXTRACTED]
-- [[Monitor Mode — Egress Not Enforced]] - `contains` [EXTRACTED]
-- [[RFC1918 Blocked]] - `contains` [EXTRACTED]
-- [[Related Notes_57]] - `contains` [EXTRACTED]
+- [[Error Index_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_874
+#graphify/document #graphify/EXTRACTED #community/Community_255

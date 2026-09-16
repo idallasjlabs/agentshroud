@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/stt.py"
 type: "rationale"
-community: "Community 737"
+community: "Community 717"
 location: "L60"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_737
+  - community/Community_717
 ---
 
 # Emit a structured per-transcription latency record for the STT A/B.      Tags ea
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[record_transcription_latency()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_737
+#graphify/rationale #graphify/EXTRACTED #community/Community_717

@@ -1,20 +1,17 @@
 ---
-source_file: "README.md"
+source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "Community 118"
-location: "L407"
+community: "Community 1345"
+location: "L636"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_118
+  - community/Community_1345
 ---
 
 # Documentation
 
 ## Connections
-- [[Development Resources]] - `contains` [EXTRACTED]
-- [[Quick Start]] - `contains` [EXTRACTED]
-- [[README_37]] - `contains` [EXTRACTED]
-- [[Technical Documentation]] - `contains` [EXTRACTED]
+- [[Resources]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_118
+#graphify/document #graphify/EXTRACTED #community/Community_1345

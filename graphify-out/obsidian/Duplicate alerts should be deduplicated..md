@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "Security Audit & Drift Detection"
+community: "Alert Dispatcher & RBAC Reliability"
 location: "L861"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Audit__Drift_Detection
+  - community/Alert_Dispatcher__RBAC_Reliability
 ---
 
 # Duplicate alerts should be deduplicated.
 
 ## Connections
-- [[.test_alert_dedup()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_alert_dedup()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Drift_Detection
+#graphify/rationale #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability

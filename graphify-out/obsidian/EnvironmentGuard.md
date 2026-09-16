@@ -1,52 +1,52 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "Community 18"
+community: "Alert Dispatcher & RBAC Reliability"
 location: "L33"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_18
+  - community/Alert_Dispatcher__RBAC_Reliability
 ---
 
 # EnvironmentGuard
 
 ## Connections
-- [[.__init__()_14]] - `calls` [EXTRACTED]
-- [[.__init__()_79]] - `method` [EXTRACTED]
-- [[._contains_env_access_patterns()]] - `method` [EXTRACTED]
-- [[._looks_like_credential()]] - `method` [EXTRACTED]
-- [[._record_leakage()]] - `method` [EXTRACTED]
-- [[.check_command_execution()]] - `method` [EXTRACTED]
-- [[.check_file_access()]] - `method` [EXTRACTED]
-- [[.clear_detected_leakages()]] - `method` [EXTRACTED]
-- [[.export_leakage_report()]] - `method` [EXTRACTED]
-- [[.get_leakage_summary()]] - `method` [EXTRACTED]
-- [[.monitor_environment_access()]] - `method` [EXTRACTED]
-- [[.scrub_command_output()]] - `method` [EXTRACTED]
-- [[.test_env_guard_command_check()]] - `calls` [EXTRACTED]
-- [[.test_env_guard_detects_data_access()]] - `calls` [INFERRED]
-- [[.test_env_guard_monitoring()]] - `calls` [EXTRACTED]
-- [[.test_env_guard_scrub_output()]] - `calls` [EXTRACTED]
-- [[.test_env_guard_scrubs_output()]] - `calls` [INFERRED]
-- [[.test_natural_language_question_is_allowed()]] - `calls` [EXTRACTED]
-- [[.test_unparseable_text_is_allowed()_1]] - `calls` [EXTRACTED]
-- [[Action]] - `uses` [INFERRED]
-- [[Any_8]] - `uses` [INFERRED]
-- [[Exception_2]] - `uses` [INFERRED]
+- [[dot-__init__()_12]] - `calls` [EXTRACTED]
+- [[dot-__init__()_17]] - `method` [EXTRACTED]
+- [[dot-_contains_env_access_patterns()]] - `method` [EXTRACTED]
+- [[dot-_looks_like_credential()]] - `method` [EXTRACTED]
+- [[dot-_record_leakage()]] - `method` [EXTRACTED]
+- [[dot-check_command_execution()]] - `method` [EXTRACTED]
+- [[dot-check_file_access()]] - `method` [EXTRACTED]
+- [[dot-clear_detected_leakages()]] - `method` [EXTRACTED]
+- [[dot-export_leakage_report()]] - `method` [EXTRACTED]
+- [[dot-get_leakage_summary()]] - `method` [EXTRACTED]
+- [[dot-monitor_environment_access()]] - `method` [EXTRACTED]
+- [[dot-scrub_command_output()]] - `method` [EXTRACTED]
+- [[dot-test_env_guard_command_check()]] - `calls` [EXTRACTED]
+- [[dot-test_env_guard_detects_data_access()]] - `calls` [INFERRED]
+- [[dot-test_env_guard_monitoring()]] - `calls` [EXTRACTED]
+- [[dot-test_env_guard_scrub_output()]] - `calls` [EXTRACTED]
+- [[dot-test_env_guard_scrubs_output()]] - `calls` [INFERRED]
+- [[dot-test_natural_language_question_is_allowed()]] - `calls` [EXTRACTED]
+- [[dot-test_unparseable_text_is_allowed()]] - `calls` [EXTRACTED]
+- [[Action_1]] - `uses` [INFERRED]
+- [[Any_2]] - `uses` [INFERRED]
+- [[Exception_1]] - `uses` [INFERRED]
 - [[Guard against environment variable leakage and unauthorized access.]] - `rationale_for` [EXTRACTED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
-- [[RBACManager]] - `uses` [INFERRED]
-- [[Resource]] - `uses` [INFERRED]
-- [[TestAuditTrail_1]] - `uses` [INFERRED]
-- [[TestAuth_1]] - `uses` [INFERRED]
+- [[RBACManager_1]] - `uses` [INFERRED]
+- [[Resource_1]] - `uses` [INFERRED]
+- [[TestAuditTrail]] - `uses` [INFERRED]
+- [[TestAuth]] - `uses` [INFERRED]
 - [[TestCheckCommandExecution]] - `uses` [INFERRED]
 - [[TestCheckFileAccess]] - `uses` [INFERRED]
 - [[TestConcurrency]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
-- [[TestContextGuard_1]] - `uses` [INFERRED]
+- [[TestContextGuard]] - `uses` [INFERRED]
 - [[TestCryptography]] - `uses` [INFERRED]
 - [[TestDRYOwnerChatID]] - `uses` [INFERRED]
 - [[TestDependencySecurity]] - `uses` [INFERRED]
@@ -74,17 +74,17 @@ tags:
 - [[TestResourceProtection]] - `uses` [INFERRED]
 - [[TestScrubCommandOutput]] - `uses` [INFERRED]
 - [[TestSummaryAndExport]] - `uses` [INFERRED]
-- [[TestSupplyChain_1]] - `uses` [INFERRED]
+- [[TestSupplyChain]] - `uses` [INFERRED]
 - [[TestTimingAttacks]] - `uses` [INFERRED]
 - [[TestWebSecurity]] - `uses` [INFERRED]
-- [[ToolTier]] - `uses` [INFERRED]
+- [[ToolTier_2]] - `uses` [INFERRED]
 - [[env_guard.py]] - `contains` [EXTRACTED]
 - [[get_env_guard()]] - `references` [EXTRACTED]
 - [[guard()_2]] - `calls` [EXTRACTED]
-- [[main.py_2]] - `imports` [EXTRACTED]
+- [[ingest_apimain.py]] - `imports` [EXTRACTED]
 - [[middleware.py]] - `imports` [EXTRACTED]
 - [[test_env_guard_class.py]] - `imports` [EXTRACTED]
 - [[test_round2_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_18
+#graphify/code #graphify/INFERRED #community/Alert_Dispatcher__RBAC_Reliability
