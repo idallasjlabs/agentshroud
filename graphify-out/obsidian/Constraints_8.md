@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/05-credential-isolation.md"
+source_file: "docker/config/hermes/skills/i-pr/SKILL.md"
 type: "document"
-community: "Community 575"
-location: "L301"
+community: "Community 936"
+location: "L48"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_575
+  - community/Community_936
 ---
 
 # Constraints
 
 ## Connections
-- [[Remove secret mounts from agent container and implement transparent credential injection]] - `contains` [EXTRACTED]
+- [[Skill Pull Request (PR) Generator_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_575
+#graphify/document #graphify/EXTRACTED #community/Community_936

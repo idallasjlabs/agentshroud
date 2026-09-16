@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/README.md"
 type: "document"
-community: "Community 306"
+community: "Community 315"
 location: "L134"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_306
+  - community/Community_315
 ---
 
 # Common Tasks
@@ -18,4 +18,4 @@ tags:
 - [[OpenClaw Management Scripts]] - `contains` [EXTRACTED]
 - [[Updating Telegram Bot Token]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_306
+#graphify/document #graphify/EXTRACTED #community/Community_315

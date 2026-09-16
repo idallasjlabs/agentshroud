@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/coding-agent/SKILL.md"
 type: "document"
-community: "Community 319"
+community: "Community 327"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_319
+  - community/Community_327
 ---
 
 # Coding Agent (bash-first)
@@ -21,9 +21,9 @@ tags:
 - [[Pi Coding Agent]] - `contains` [EXTRACTED]
 - [[Progress Updates (Critical)]] - `contains` [EXTRACTED]
 - [[Quick Start One-Shot Tasks]] - `contains` [EXTRACTED]
-- [[SKILL_203]] - `contains` [EXTRACTED]
 - [[The Pattern workdir + background + pty]] - `contains` [EXTRACTED]
+- [[coding-agentSKILL]] - `contains` [EXTRACTED]
 - [[⚠️ PTY Mode Required!]] - `contains` [EXTRACTED]
 - [[⚠️ Rules]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_319
+#graphify/document #graphify/EXTRACTED #community/Community_327

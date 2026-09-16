@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/competitive-analysis-reports-archive.md"
 type: "document"
-community: "Community 92"
+community: "Community 271"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_92
+  - community/Community_271
 ---
 
 # Competitive Analysis Reports Archive
@@ -16,4 +16,4 @@ tags:
 - [[Reports]] - `contains` [EXTRACTED]
 - [[competitive-analysis-reports-archive]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_92
+#graphify/document #graphify/EXTRACTED #community/Community_271

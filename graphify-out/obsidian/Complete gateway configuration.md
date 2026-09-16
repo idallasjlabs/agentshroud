@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "Community 43"
+community: "Approval Queue (WebSocket)"
 location: "L297"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_43
+  - community/Approval_Queue_WebSocket
 ---
 
 # Complete gateway configuration
 
 ## Connections
-- [[GatewayConfig_1]] - `rationale_for` [EXTRACTED]
+- [[GatewayConfig_4]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_43
+#graphify/rationale #graphify/EXTRACTED #community/Approval_Queue_WebSocket

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_bots_ssh_exec_wrapper.py"
+source_file: "gateway/runtime/engine.py"
 type: "code"
-community: "Community 140"
-location: "L269"
+community: "Community 1366"
+location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_140
+  - community/Community_1366
 ---
 
 # CompletedProcess
 
 ## Connections
-- [[_run_wrapper_capture_bearer()]] - `references` [EXTRACTED]
+- [[dot-_run()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_140
+#graphify/code #graphify/EXTRACTED #community/Community_1366

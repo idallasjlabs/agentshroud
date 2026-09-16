@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/openclaw/skills/i-icloud/SKILL.md"
+source_file: "docs/architecture/WORKSPACE_DECISION.md"
 type: "document"
-community: "Community 302"
-location: "L125"
+community: "Community 163"
+location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_302
+  - community/Community_163
 ---
 
 # Configuration
 
 ## Connections
-- [[iCloud Services_2]] - `contains` [EXTRACTED]
+- [[Current Setup (Kept)]] - `contains` [EXTRACTED]
+- [[Workspace Configuration Decision]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_302
+#graphify/document #graphify/EXTRACTED #community/Community_163

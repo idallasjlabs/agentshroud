@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/bear-notes/SKILL.md"
+source_file: "docs/api/integration-guide.md"
 type: "document"
-community: "Community 789"
-location: "L85"
+community: "Community 670"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_789
+  - community/Community_670
 ---
 
 # Configuration
 
 ## Connections
-- [[Bear Notes]] - `contains` [EXTRACTED]
+- [[OpenClaw Integration (Primary Target)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_789
+#graphify/document #graphify/EXTRACTED #community/Community_670

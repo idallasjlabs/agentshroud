@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/00-information-disclosure.md"
+source_file: "docs/planning/redteam/05-credential-isolation.md"
 type: "document"
-community: "Community 766"
-location: "L60"
+community: "Community 594"
+location: "L301"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_766
+  - community/Community_594
 ---
 
 # Constraints
 
 ## Connections
-- [[Add information filtering to prevent agent self-disclosure]] - `contains` [EXTRACTED]
+- [[Remove secret mounts from agent container and implement transparent credential injection]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_766
+#graphify/document #graphify/EXTRACTED #community/Community_594

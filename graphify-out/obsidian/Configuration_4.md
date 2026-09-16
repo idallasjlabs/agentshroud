@@ -1,18 +1,17 @@
 ---
-source_file: "docs/architecture/WORKSPACE_DECISION.md"
+source_file: "docker/config/hermes/skills/i-icloud/SKILL.md"
 type: "document"
-community: "Community 163"
-location: "L23"
+community: "Community 306"
+location: "L125"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_163
+  - community/Community_306
 ---
 
 # Configuration
 
 ## Connections
-- [[Current Setup (Kept)]] - `contains` [EXTRACTED]
-- [[Workspace Configuration Decision]] - `contains` [EXTRACTED]
+- [[iCloud Services_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_163
+#graphify/document #graphify/EXTRACTED #community/Community_306

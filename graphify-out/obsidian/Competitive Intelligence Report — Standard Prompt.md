@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/workspace/competitive-analysis.md"
 type: "document"
-community: "Community 846"
+community: "Community 886"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_846
+  - community/Community_886
 ---
 
 # Competitive Intelligence Report — Standard Prompt
@@ -16,6 +16,6 @@ tags:
 - [[CRITICAL RULES — READ BEFORE DOING ANYTHING_1]] - `contains` [EXTRACTED]
 - [[OUTPUT REQUIREMENTS_1]] - `contains` [EXTRACTED]
 - [[REPORT STRUCTURE_1]] - `contains` [EXTRACTED]
-- [[competitive-analysis_1]] - `contains` [EXTRACTED]
+- [[openclawworkspacecompetitive-analysis]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_846
+#graphify/document #graphify/EXTRACTED #community/Community_886

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/trivy_report.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/sidecar.py.md"
 type: "document"
-community: "Community 689"
-location: "L64"
+community: "Community 852"
+location: "L49"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_689
+  - community/Community_852
 ---
 
 # Configuration / Environment Variables
 
 ## Connections
-- [[trivy_report.py_2]] - `contains` [EXTRACTED]
+- [[sidecar.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_689
+#graphify/document #graphify/EXTRACTED #community/Community_852

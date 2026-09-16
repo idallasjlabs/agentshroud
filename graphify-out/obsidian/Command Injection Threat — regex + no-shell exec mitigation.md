@@ -1,11 +1,11 @@
 ---
 source_file: "docs/ssh-security-review.md"
 type: "rationale"
-community: "Community 847"
+community: "Community 429"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_847
+  - community/Community_429
 ---
 
 # Command Injection Threat — regex + no-shell exec mitigation
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[SSH Proxy Threat Model (6 threats)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_847
+#graphify/rationale #graphify/EXTRACTED #community/Community_429

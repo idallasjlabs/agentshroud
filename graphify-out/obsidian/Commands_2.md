@@ -1,17 +1,17 @@
 ---
-source_file: "docs/user-guide.md"
-type: "document"
-community: "Community 307"
-location: "L38"
+source_file: "cli/src/main.rs"
+type: "code"
+community: "Community 36"
+location: "L46"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_307
+  - community/Community_36
 ---
 
 # Commands
 
 ## Connections
-- [[Interacting via Telegram]] - `contains` [EXTRACTED]
+- [[Cli]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_307
+#graphify/code #graphify/EXTRACTED #community/Community_36

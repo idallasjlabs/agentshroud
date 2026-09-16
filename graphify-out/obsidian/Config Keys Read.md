@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/models.py.md"
 type: "document"
-community: "Community 711"
-location: "L59"
+community: "Community 534"
+location: "L82"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_711
+  - community/Community_534
 ---
 
 # Config Keys Read
 
 ## Connections
-- [[auth.py_3]] - `contains` [EXTRACTED]
+- [[models.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_711
+#graphify/document #graphify/EXTRACTED #community/Community_534

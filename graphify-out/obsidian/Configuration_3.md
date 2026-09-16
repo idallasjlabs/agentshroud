@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md"
+source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
 type: "document"
-community: "Community 212"
-location: "L495"
+community: "Community 250"
+location: "L267"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_212
+  - community/Community_250
 ---
 
-# Configuration:
+# Configuration
 
 ## Connections
-- [[Recommended Configuration for Your Use Case]] - `contains` [EXTRACTED]
+- [[7. Pi-hole DNS Security Layer (Built-In)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_212
+#graphify/document #graphify/EXTRACTED #community/Community_250

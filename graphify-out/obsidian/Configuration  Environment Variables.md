@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/forwarder.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md"
 type: "document"
-community: "Community 763"
-location: "L49"
+community: "Community 384"
+location: "L184"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_763
+  - community/Community_384
 ---
 
 # Configuration / Environment Variables
 
 ## Connections
-- [[forwarder.py_2]] - `contains` [EXTRACTED]
+- [[http_proxy.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_763
+#graphify/document #graphify/EXTRACTED #community/Community_384

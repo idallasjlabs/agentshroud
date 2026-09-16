@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/egress_monitor.py.md"
+source_file: "docs/vault/02 - Modules/Runtime/security.py.md"
 type: "document"
-community: "Community 636"
-location: "L60"
+community: "Community 705"
+location: "L75"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_636
+  - community/Community_705
 ---
 
 # Configuration / Environment Variables
 
 ## Connections
-- [[egress_monitor.py_2]] - `contains` [EXTRACTED]
+- [[security.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_636
+#graphify/document #graphify/EXTRACTED #community/Community_705

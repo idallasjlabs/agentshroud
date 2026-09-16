@@ -1,22 +1,22 @@
 ---
-source_file: "skills/openclaw/apple-reminders/SKILL.md"
+source_file: "skills/openclaw/tmux/SKILL.md"
 type: "document"
-community: "Community 602"
-location: "L56"
+community: "Community 559"
+location: "L39"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_602
+  - community/Community_559
 ---
 
 # Common Commands
 
 ## Connections
-- [[Apple Reminders CLI (remindctl)]] - `contains` [EXTRACTED]
-- [[CompleteDelete]] - `contains` [EXTRACTED]
-- [[Create Reminders]] - `contains` [EXTRACTED]
-- [[Manage Lists]] - `contains` [EXTRACTED]
-- [[Output Formats]] - `contains` [EXTRACTED]
-- [[View Reminders]] - `contains` [EXTRACTED]
+- [[Capture Output]] - `contains` [EXTRACTED]
+- [[List Sessions]] - `contains` [EXTRACTED]
+- [[Send Keys]] - `contains` [EXTRACTED]
+- [[Session Management]] - `contains` [EXTRACTED]
+- [[WindowPane Navigation]] - `contains` [EXTRACTED]
+- [[tmux Session Control]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_602
+#graphify/document #graphify/EXTRACTED #community/Community_559

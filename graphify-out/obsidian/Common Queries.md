@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/session-logs/SKILL.md"
 type: "document"
-community: "Community 254"
+community: "Community 265"
 location: "L32"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_254
+  - community/Community_265
 ---
 
 # Common Queries
@@ -23,4 +23,4 @@ tags:
 - [[Tool usage breakdown]] - `contains` [EXTRACTED]
 - [[session-logs]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_254
+#graphify/document #graphify/EXTRACTED #community/Community_265

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/killswitch_config.py"
 type: "rationale"
-community: "Community 25"
+community: "Community 42"
 location: "L22"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_25
+  - community/Community_42
 ---
 
 # Configuration for kill switch monitoring and verification.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[KillSwitchConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_25
+#graphify/rationale #graphify/EXTRACTED #community/Community_42

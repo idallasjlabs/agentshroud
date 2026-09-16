@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/03-session-isolation.md"
+source_file: "docs/planning/redteam/00-information-disclosure.md"
 type: "document"
-community: "Community 574"
-location: "L244"
+community: "Community 805"
+location: "L60"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_574
+  - community/Community_805
 ---
 
 # Constraints
 
 ## Connections
-- [[Implement per-user session isolation using Telegram user ID]] - `contains` [EXTRACTED]
+- [[Add information filtering to prevent agent self-disclosure]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_574
+#graphify/document #graphify/EXTRACTED #community/Community_805

@@ -1,20 +1,22 @@
 ---
-source_file: ".github/COPILOT_CLI_SETUP.md"
+source_file: "docs/architecture/WORKSPACE_USAGE.md"
 type: "document"
-community: "Community 172"
-location: "L291"
+community: "Community 163"
+location: "L49"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_172
+  - community/Community_163
 ---
 
 # Common Workflows
 
 ## Connections
-- [[1. Add Test Coverage]] - `contains` [EXTRACTED]
-- [[2. Run Validation Suite]] - `contains` [EXTRACTED]
-- [[3. safe-refactor]] - `contains` [EXTRACTED]
-- [[GitHub Copilot CLI Setup Guide]] - `contains` [EXTRACTED]
+- [[OpenClaw Workspace Usage Guide]] - `contains` [EXTRACTED]
+- [[Workflow 1 Give Bot a File to Process]] - `contains` [EXTRACTED]
+- [[Workflow 2 Bot Creates Files for You]] - `contains` [EXTRACTED]
+- [[Workflow 3 Bot Takes Screenshots]] - `contains` [EXTRACTED]
+- [[Workflow 4 Bulk File Operations]] - `contains` [EXTRACTED]
+- [[Workflow 5 Interactive Editing]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_172
+#graphify/document #graphify/EXTRACTED #community/Community_163

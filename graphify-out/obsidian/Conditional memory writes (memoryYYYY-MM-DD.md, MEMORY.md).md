@@ -1,16 +1,16 @@
 ---
 source_file: "skills/openclaw/healthcheck/SKILL.md"
 type: "concept"
-community: "Community 712"
+community: "Community 749"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_712
+  - community/Community_749
 ---
 
 # Conditional memory writes (memory/YYYY-MM-DD.md, MEMORY.md)
 
 ## Connections
-- [[SKILL_212]] - `references` [EXTRACTED]
+- [[healthcheckSKILL]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_712
+#graphify/concept #graphify/EXTRACTED #community/Community_749

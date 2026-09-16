@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_gmail_credential_retrieval.py"
+source_file: "gateway/tests/test_bots_ssh_exec_wrapper.py"
 type: "code"
-community: "Community 565"
-location: "L19"
+community: "Community 149"
+location: "L269"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_565
+  - community/Community_149
 ---
 
 # CompletedProcess
 
 ## Connections
-- [[_completed()]] - `references` [EXTRACTED]
+- [[_run_wrapper_capture_bearer()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_565
+#graphify/code #graphify/EXTRACTED #community/Community_149

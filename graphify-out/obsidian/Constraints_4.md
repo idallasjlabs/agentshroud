@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/01-enforce-by-default.md"
+source_file: "docs/planning/redteam/04-separation-of-privilege.md"
 type: "document"
-community: "Community 677"
-location: "L144"
+community: "Community 649"
+location: "L266"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_677
+  - community/Community_649
 ---
 
 # Constraints
 
 ## Connections
-- [[Flip core security modules from monitor to enforce mode]] - `contains` [EXTRACTED]
+- [[Make gateway source code, config, and security policies read-only to the agent]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_677
+#graphify/document #graphify/EXTRACTED #community/Community_649

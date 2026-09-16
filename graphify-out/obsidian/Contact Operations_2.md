@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-icloud/SKILL.md"
+source_file: "skills/custom/icloud/SKILL.md"
 type: "document"
-community: "Community 302"
+community: "Community 336"
 location: "L49"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_302
+  - community/Community_336
 ---
 
 # Contact Operations
@@ -16,6 +16,6 @@ tags:
 - [[List Contacts_2]] - `contains` [EXTRACTED]
 - [[Search Contacts_2]] - `contains` [EXTRACTED]
 - [[Update Contact_2]] - `contains` [EXTRACTED]
-- [[iCloud Services_2]] - `contains` [EXTRACTED]
+- [[iCloud Services_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_302
+#graphify/document #graphify/EXTRACTED #community/Community_336

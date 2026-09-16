@@ -1,20 +1,20 @@
 ---
-source_file: "docs/architecture/adr/ADR-003-two-network-container-isolation.md"
+source_file: "docs/architecture/adr/ADR-009-enforce-by-default.md"
 type: "document"
-community: "Community 782"
-location: "L33"
+community: "Community 499"
+location: "L73"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_782
+  - community/Community_499
 ---
 
 # Consequences
 
 ## Connections
-- [[ADR-003 Two-Network Container Isolation]] - `contains` [EXTRACTED]
-- [[Mitigation]] - `contains` [EXTRACTED]
-- [[Negative Consequences_2]] - `contains` [EXTRACTED]
-- [[Positive Consequences_2]] - `contains` [EXTRACTED]
+- [[ADR-009 Enforce-by-Default Security Philosophy]] - `contains` [EXTRACTED]
+- [[Migration from ADR-002]] - `contains` [EXTRACTED]
+- [[Negative Consequences_1]] - `contains` [EXTRACTED]
+- [[Positive Consequences_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_782
+#graphify/document #graphify/EXTRACTED #community/Community_499

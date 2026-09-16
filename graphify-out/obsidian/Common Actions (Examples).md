@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/discord/SKILL.md"
 type: "document"
-community: "Community 887"
+community: "Community 932"
 location: "L30"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_887
+  - community/Community_932
 ---
 
 # Common Actions (Examples)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Discord (Via `message`)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_887
+#graphify/document #graphify/EXTRACTED #community/Community_932

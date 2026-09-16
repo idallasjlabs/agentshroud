@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY-POLICY-FINAL.md"
 type: "document"
-community: "Community 454"
+community: "Community 465"
 location: "L65"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_454
+  - community/Community_465
 ---
 
 # Console (Direct Command)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[✅ How to Access Credentials]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_454
+#graphify/document #graphify/EXTRACTED #community/Community_465

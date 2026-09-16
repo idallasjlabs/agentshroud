@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/approval_queue/store.py"
+source_file: "gateway/security/audit_store.py"
 type: "rationale"
-community: "Community 23"
-location: "L58"
+community: "Community 112"
+location: "L164"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_23
+  - community/Community_112
 ---
 
 # Close the database connection.
 
 ## Connections
-- [[.close()_4]] - `rationale_for` [EXTRACTED]
+- [[dot-close()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_23
+#graphify/rationale #graphify/EXTRACTED #community/Community_112

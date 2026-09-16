@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/06-outbound-info-filter.md"
+source_file: "docker/config/openclaw/skills/i-pr/SKILL.md"
 type: "document"
-community: "Community 531"
-location: "L383"
+community: "Community 939"
+location: "L48"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_531
+  - community/Community_939
 ---
 
 # Constraints
 
 ## Connections
-- [[Implement gateway-level outbound information filtering module]] - `contains` [EXTRACTED]
+- [[Skill Pull Request (PR) Generator_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_531
+#graphify/document #graphify/EXTRACTED #community/Community_939

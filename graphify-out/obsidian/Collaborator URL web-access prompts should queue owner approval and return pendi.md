@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Community 1362"
+community: "Community 1414"
 location: "L1860"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1362
+  - community/Community_1414
 ---
 
 # Collaborator URL web-access prompts should queue owner approval and return pendi
 
 ## Connections
-- [[.test_collaborator_web_access_request_queues_owner_approval_and_pending_notice()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_collaborator_web_access_request_queues_owner_approval_and_pending_notice()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1362
+#graphify/rationale #graphify/EXTRACTED #community/Community_1414

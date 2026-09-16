@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-pr/SKILL.md"
+source_file: "docs/planning/redteam/03-session-isolation.md"
 type: "document"
-community: "Community 894"
-location: "L48"
+community: "Community 593"
+location: "L244"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_894
+  - community/Community_593
 ---
 
 # Constraints
 
 ## Connections
-- [[Skill Pull Request (PR) Generator_2]] - `contains` [EXTRACTED]
+- [[Implement per-user session isolation using Telegram user ID]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_894
+#graphify/document #graphify/EXTRACTED #community/Community_593

@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/i-browser/SKILL.md"
 type: "document"
-community: "Community 355"
+community: "Community 111"
 location: "L78"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_355
+  - community/Community_111
 ---
 
 # Click Element
 
 ## Connections
-- [[Usage_6]] - `contains` [EXTRACTED]
+- [[Usage_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_355
+#graphify/document #graphify/EXTRACTED #community/Community_111

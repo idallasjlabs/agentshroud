@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/himalaya/SKILL.md"
 type: "document"
-community: "Community 477"
+community: "Community 489"
 location: "L73"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_477
+  - community/Community_489
 ---
 
 # Common Operations
@@ -24,4 +24,4 @@ tags:
 - [[Search Emails]] - `contains` [EXTRACTED]
 - [[Write a New Email]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_477
+#graphify/document #graphify/EXTRACTED #community/Community_489

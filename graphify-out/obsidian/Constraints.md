@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-pr/SKILL.md"
+source_file: "docs/planning/redteam/06-outbound-info-filter.md"
 type: "document"
-community: "Community 879"
-location: "L48"
+community: "Community 542"
+location: "L383"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_879
+  - community/Community_542
 ---
 
 # Constraints
 
 ## Connections
-- [[Skill Pull Request (PR) Generator]] - `contains` [EXTRACTED]
+- [[Implement gateway-level outbound information filtering module]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_879
+#graphify/document #graphify/EXTRACTED #community/Community_542

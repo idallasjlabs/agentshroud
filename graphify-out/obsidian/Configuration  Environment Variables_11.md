@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md"
 type: "document"
-community: "Community 627"
-location: "L67"
+community: "Community 645"
+location: "L71"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_627
+  - community/Community_645
 ---
 
 # Configuration / Environment Variables
 
 ## Connections
-- [[web_content_scanner.py_2]] - `contains` [EXTRACTED]
+- [[mcp_inspector.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_627
+#graphify/document #graphify/EXTRACTED #community/Community_645
