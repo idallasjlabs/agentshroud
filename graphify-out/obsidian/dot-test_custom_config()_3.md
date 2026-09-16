@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_path_isolation.py"
+type: "code"
+community: "Community 659"
+location: "L34"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_659
+---
+
+# .test_custom_config()
+
+## Connections
+- [[PathIsolationConfig]] - `calls` [EXTRACTED]
+- [[Test custom configuration values._1]] - `rationale_for` [EXTRACTED]
+- [[TestPathIsolationConfig]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_659

@@ -1,0 +1,17 @@
+---
+source_file: "gateway/tests/test_group_workspace_manager.py"
+type: "code"
+community: "Community 53"
+location: "L214"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_53
+---
+
+# .test_dm_context_resolves_to_user_namespace()
+
+## Connections
+- [[TestDmIsolation]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_53

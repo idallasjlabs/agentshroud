@@ -1,0 +1,17 @@
+---
+source_file: "gateway/tests/test_metadata_guard.py"
+type: "code"
+community: "Community 598"
+location: "L191"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_598
+---
+
+# .test_document_tag_creation()
+
+## Connections
+- [[TestDocumentTagging]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_598

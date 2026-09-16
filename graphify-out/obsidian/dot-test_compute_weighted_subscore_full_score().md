@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_scanner_integration.py"
+type: "code"
+community: "Community 168"
+location: "L971"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_168
+---
+
+# .test_compute_weighted_subscore_full_score()
+
+## Connections
+- [[TestComputeScorecard]] - `method` [EXTRACTED]
+- [[_compute_weighted_subscore returns 100.0 when all domains score 5.]] - `rationale_for` [EXTRACTED]
+- [[_compute_weighted_subscore()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_168

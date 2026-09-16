@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_egress_filter.py"
+type: "code"
+community: "Community 81"
+location: "L263"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_81
+---
+
+# .test_deny_has_details()
+
+## Connections
+- [[TestEgressAttempt]] - `method` [EXTRACTED]
+- [[_make_filter()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_81

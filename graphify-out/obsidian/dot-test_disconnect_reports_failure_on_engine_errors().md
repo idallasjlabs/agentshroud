@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_web_api_coverage.py"
+type: "code"
+community: "Community 45"
+location: "L370"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_45
+---
+
+# .test_disconnect_reports_failure_on_engine_errors()
+
+## Connections
+- [[TestKillSwitch_1]] - `method` [EXTRACTED]
+- [[_engine()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_45

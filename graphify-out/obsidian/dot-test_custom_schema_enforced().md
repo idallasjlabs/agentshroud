@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_output_schema.py"
+type: "code"
+community: "Community 248"
+location: "L61"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_248
+---
+
+# .test_custom_schema_enforced()
+
+## Connections
+- [[A custom schema with a stricter max_length is applied correctly.]] - `rationale_for` [EXTRACTED]
+- [[SchemaRule]] - `calls` [EXTRACTED]
+- [[TestOutputSchemaEnforcer]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_248

@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_dns_canvas_coverage.py"
+type: "code"
+community: "Community 138"
+location: "L404"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_138
+---
+
+# .test_download_success_caches_to_disk()
+
+## Connections
+- [[DNSBlocklist]] - `calls` [EXTRACTED]
+- [[TestBlocklistDownload]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_138

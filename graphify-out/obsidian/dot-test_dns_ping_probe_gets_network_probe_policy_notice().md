@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+type: "code"
+community: "Community 40"
+location: "L7570"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_40
+---
+
+# .test_dns_ping_probe_gets_network_probe_policy_notice()
+
+## Connections
+- [[B3.2d DNSping probes should return network probe notice with banner.]] - `rationale_for` [EXTRACTED]
+- [[TestCollaboratorPromptClassifiers]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_40

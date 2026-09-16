@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_encoding_detector.py"
+type: "code"
+community: "Canary Tripwire"
+location: "L59"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Canary_Tripwire
+---
+
+# .test_config_disable_base64()
+
+## Connections
+- [[EncodingConfig]] - `calls` [EXTRACTED]
+- [[EncodingDetector]] - `calls` [EXTRACTED]
+- [[TestEncodingDetector]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Canary_Tripwire
