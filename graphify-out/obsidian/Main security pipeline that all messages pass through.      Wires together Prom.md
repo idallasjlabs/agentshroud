@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "rationale"
-community: "PII Sanitizer & E2E Tests"
+community: "Signed Instruction Envelopes & Security Pipeline"
 location: "L318"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Sanitizer__E2E_Tests
+  - community/Signed_Instruction_Envelopes__Security_Pipeline
 ---
 
 # Main security pipeline that all messages pass through.      Wires together: Prom
 
 ## Connections
-- [[SecurityPipeline]] - `rationale_for` [EXTRACTED]
+- [[SecurityPipeline_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer__E2E_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Signed_Instruction_Envelopes__Security_Pipeline

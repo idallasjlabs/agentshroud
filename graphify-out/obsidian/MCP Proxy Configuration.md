@@ -1,12 +1,12 @@
 ---
 source_file: "docs/api/integration-guide.md"
 type: "document"
-community: "Community 518"
+community: "Community 526"
 location: "L248"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_518
+  - community/Community_526
 ---
 
 # MCP Proxy Configuration
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MCP Server Integration_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_518
+#graphify/document #graphify/EXTRACTED #community/Community_526

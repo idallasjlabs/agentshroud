@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/PHASE3_REQUIREMENTS.md"
 type: "document"
-community: "Community 356"
+community: "Community 358"
 location: "L101"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_356
+  - community/Community_358
 ---
 
 # MUST HAVE (Phase 3 - Minimum Viable Chat)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Part 2 Phase 3 Feature Scope]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_356
+#graphify/document #graphify/EXTRACTED #community/Community_358

@@ -1,19 +1,19 @@
 ---
-source_file: "branding/QUICK-REFERENCE.md"
-type: "document"
-community: "Community 551"
-location: "L61"
+source_file: "branding/guidelines/brand-guidelines.md"
+type: "concept"
+community: "Community 377"
+location: "L51-80"
 tags:
-  - graphify/document
+  - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_551
+  - community/Community_377
 ---
 
 # Logo Usage Rules
 
 ## Connections
-- [[AgentShroud Brand Quick Reference]] - `contains` [EXTRACTED]
-- [[✅ Do]] - `contains` [EXTRACTED]
-- [[❌ Don't]] - `contains` [EXTRACTED]
+- [[App Icon 16x16 (AgentShroud logo mark)]] - `references` [INFERRED]
+- [[Color Usage (AgentShroud Blue 1583f0)]] - `conceptually_related_to` [EXTRACTED]
+- [[brand-guidelines]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_551
+#graphify/concept #graphify/EXTRACTED #community/Community_377

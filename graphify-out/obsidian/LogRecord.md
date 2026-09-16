@@ -1,26 +1,17 @@
 ---
-source_file: "gateway/ingest_api/lifespan.py"
+source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "Middleware & Lifespan"
-location: "L64"
+community: "Alert Dispatcher & RBAC Reliability"
+location: "L63"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Middleware__Lifespan
+  - graphify/EXTRACTED
+  - community/Alert_Dispatcher__RBAC_Reliability
 ---
 
 # LogRecord
 
 ## Connections
-- [[.filter()]] - `references` [EXTRACTED]
-- [[AlertTelegramRelay]] - `uses` [INFERRED]
-- [[DataLedger]] - `uses` [INFERRED]
-- [[EventBus]] - `uses` [INFERRED]
-- [[GroupRegistry]] - `uses` [INFERRED]
-- [[MiddlewareManager]] - `uses` [INFERRED]
-- [[MultiAgentRouter]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[UserSessionManager]] - `uses` [INFERRED]
+- [[dot-filter()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Middleware__Lifespan
+#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability

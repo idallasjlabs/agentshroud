@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "rationale"
-community: "Community 58"
+community: "Community 70"
 location: "L242"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_58
+  - community/Community_70
 ---
 
 # Load the most recently saved report.          Args:             verify: If True,
 
 ## Connections
-- [[.load_latest()]] - `rationale_for` [EXTRACTED]
+- [[dot-load_latest()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_58
+#graphify/rationale #graphify/EXTRACTED #community/Community_70

@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/progressive_lockdown.py"
 type: "code"
-community: "Community 60"
+community: "Community 58"
 location: "L27"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_60
+  - community/Community_58
 ---
 
 # LockdownLevel
 
 ## Connections
-- [[Enum]] - `inherits` [EXTRACTED]
-- [[FakePipelineResult]] - `uses` [INFERRED]
-- [[FakeRBAC]] - `uses` [INFERRED]
-- [[PassthroughPipeline]] - `uses` [INFERRED]
+- [[Enum_3]] - `inherits` [EXTRACTED]
+- [[FakePipelineResult_1]] - `uses` [INFERRED]
+- [[FakeRBAC_1]] - `uses` [INFERRED]
+- [[PassthroughPipeline_1]] - `uses` [INFERRED]
 - [[ProgressiveLockdown]] - `references` [EXTRACTED]
 - [[TelegramAPIProxy_1]] - `uses` [INFERRED]
 - [[TestCollabLockdownNotifications]] - `uses` [INFERRED]
@@ -24,7 +24,7 @@ tags:
 - [[TestSuspendedDropNotice]] - `uses` [INFERRED]
 - [[TestUnlockCommand]] - `uses` [INFERRED]
 - [[progressive_lockdown.py]] - `contains` [EXTRACTED]
-- [[str]] - `inherits` [EXTRACTED]
+- [[str_2]] - `inherits` [EXTRACTED]
 - [[test_progressive_lockdown.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_60
+#graphify/code #graphify/INFERRED #community/Community_58

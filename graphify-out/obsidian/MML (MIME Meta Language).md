@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/himalaya/references/message-composition.md"
 type: "concept"
-community: "Community 378"
+community: "Community 381"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_378
+  - community/Community_381
 ---
 
 # MML (MIME Meta Language)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[message-composition]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_378
+#graphify/concept #graphify/EXTRACTED #community/Community_381

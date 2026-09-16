@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/runtime/engine.py"
 type: "rationale"
-community: "Community 348"
+community: "Community 106"
 location: "L18"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_348
+  - community/Community_106
 ---
 
 # Lightweight container metadata returned by ps/inspect.
 
 ## Connections
-- [[ContainerInfo_2]] - `rationale_for` [EXTRACTED]
+- [[ContainerInfo_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_348
+#graphify/rationale #graphify/EXTRACTED #community/Community_106

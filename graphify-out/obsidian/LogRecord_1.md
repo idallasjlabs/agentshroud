@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/log_sanitizer.py"
+source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "Community 1252"
-location: "L63"
+community: "Community 104"
+location: "L175"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1252
+  - community/Community_104
 ---
 
 # LogRecord
 
 ## Connections
-- [[.filter()_1]] - `references` [EXTRACTED]
+- [[dot-emit()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1252
+#graphify/code #graphify/EXTRACTED #community/Community_104

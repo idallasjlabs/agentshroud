@@ -1,17 +1,17 @@
 ---
-source_file: "branding/INDEX.md"
+source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "Community 550"
-location: "L67"
+community: "Community 179"
+location: "L147"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_550
+  - community/Community_179
 ---
 
 # Logo Files
 
 ## Connections
-- [[🎨 Quick Access]] - `contains` [EXTRACTED]
+- [[File Formats & Deliverables]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_550
+#graphify/document #graphify/EXTRACTED #community/Community_179

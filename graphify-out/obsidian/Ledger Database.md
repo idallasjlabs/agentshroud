@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/01 - Architecture/Shutdown & Recovery.md"
+source_file: "docs/vault/08 - Runbooks/Crash Recovery.md"
 type: "document"
-community: "Community 593"
-location: "L154"
+community: "Community 470"
+location: "L130"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_593
+  - community/Community_470
 ---
 
 # Ledger Database
 
 ## Connections
-- [[Data Integrity After Crash]] - `contains` [EXTRACTED]
+- [[Data Recovery]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_593
+#graphify/document #graphify/EXTRACTED #community/Community_470

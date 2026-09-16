@@ -1,104 +1,31 @@
 ---
-source_file: "gateway/proxy/mcp_config.py"
+source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "Community 39"
-location: "L85"
+community: "Community 108"
+location: "L48"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_39
+  - community/Community_108
 ---
 
 # MCPProxyConfig
 
 ## Connections
-- [[.from_dict()]] - `method` [EXTRACTED]
-- [[.test_disabled_server_blocked()]] - `calls` [EXTRACTED]
-- [[Any_18]] - `uses` [INFERRED]
 - [[ConnectionPool]] - `uses` [INFERRED]
-- [[EnhancedApprovalQueue_1]] - `uses` [INFERRED]
-- [[Exception_4]] - `uses` [INFERRED]
-- [[FakeApprovalQueue]] - `uses` [INFERRED]
-- [[FakeConn]] - `uses` [INFERRED]
-- [[FakeProcess]] - `uses` [INFERRED]
 - [[HttpSseConnection]] - `uses` [INFERRED]
-- [[MCPAuditTrail]] - `shares_data_with` [INFERRED]
 - [[MCPAuditTrail_1]] - `uses` [INFERRED]
 - [[MCPInspector_1]] - `uses` [INFERRED]
-- [[MCPInspector]] - `shares_data_with` [INFERRED]
-- [[MCPPermissionManager_1]] - `uses` [INFERRED]
 - [[MCPPermissionManager]] - `uses` [INFERRED]
 - [[MCPProxy_1]] - `uses` [INFERRED]
-- [[MCPProxy]] - `uses` [INFERRED]
-- [[MCPProxyConfig_1]] - `uses` [INFERRED]
 - [[MCPProxyConfig_2]] - `uses` [INFERRED]
-- [[MCPProxyConfig_3]] - `uses` [INFERRED]
-- [[MCPServerConfig_1]] - `uses` [INFERRED]
 - [[MCPServerConfig_2]] - `uses` [INFERRED]
 - [[MCPToolCall_1]] - `uses` [INFERRED]
-- [[MCPToolCall]] - `uses` [INFERRED]
+- [[MCPToolConfig]] - `uses` [INFERRED]
 - [[MCPToolResult]] - `uses` [INFERRED]
-- [[PermissionCheck]] - `uses` [INFERRED]
+- [[MCPTransport]] - `uses` [INFERRED]
 - [[PermissionLevel_1]] - `uses` [INFERRED]
-- [[PrivateAccessAttempt]] - `uses` [INFERRED]
-- [[PrivateRedactionEvent]] - `uses` [INFERRED]
-- [[ProxyResult]] - `uses` [INFERRED]
-- [[RateLimitEntry]] - `uses` [INFERRED]
 - [[StdioConnection]] - `uses` [INFERRED]
-- [[TestAllowDenyList]] - `uses` [INFERRED]
-- [[TestApprovalQueue]] - `uses` [INFERRED]
-- [[TestAuditQueries]] - `uses` [INFERRED]
-- [[TestAuditTrail]] - `uses` [INFERRED]
-- [[TestAuditTrailBounded]] - `uses` [INFERRED]
-- [[TestChainIntegrityMultiple]] - `uses` [INFERRED]
-- [[TestCheckAll]] - `uses` [INFERRED]
-- [[TestConfigParsing]] - `uses` [INFERRED]
-- [[TestConnectionPool]] - `uses` [INFERRED]
-- [[TestDataclasses]] - `uses` [INFERRED]
-- [[TestEgressFilterPaths]] - `uses` [INFERRED]
-- [[TestEmitPrivacyEvent]] - `uses` [INFERRED]
-- [[TestExecuteResultInspectionBinding]] - `uses` [INFERRED]
-- [[TestExecuteToolCall]] - `uses` [INFERRED]
-- [[TestExtractEgressTargets]] - `uses` [INFERRED]
-- [[TestHashChainIntegration]] - `uses` [INFERRED]
-- [[TestHttpSseConnection]] - `uses` [INFERRED]
-- [[TestInferPermission]] - `uses` [INFERRED]
-- [[TestInjectionDetection]] - `uses` [INFERRED]
-- [[TestInspectorEdgeCases]] - `uses` [INFERRED]
-- [[TestPIIDetection]] - `uses` [INFERRED]
-- [[TestPassthrough]] - `uses` [INFERRED]
-- [[TestPassthroughMode]] - `uses` [INFERRED]
-- [[TestPermissionLevel]] - `uses` [INFERRED]
-- [[TestPrivacyPolicyEvents]] - `uses` [INFERRED]
-- [[TestProcessingTime]] - `uses` [INFERRED]
-- [[TestProxyInterception]] - `uses` [INFERRED]
-- [[TestProxyPermissions]] - `uses` [INFERRED]
-- [[TestProxyRateLimiting]] - `uses` [INFERRED]
-- [[TestProxyResultProcessing]] - `uses` [INFERRED]
-- [[TestProxyStats]] - `uses` [INFERRED]
-- [[TestRateLimiting_2]] - `uses` [INFERRED]
-- [[TestResultProcessingAndLifecycle]] - `uses` [INFERRED]
-- [[TestSanitizeAdminPrivateData]] - `uses` [INFERRED]
-- [[TestSensitiveOps]] - `uses` [INFERRED]
-- [[TestServerAccess]] - `uses` [INFERRED]
-- [[TestStdioConnection]] - `uses` [INFERRED]
-- [[TestSuspiciousEncoding]] - `uses` [INFERRED]
-- [[TestThreatLevelCalc]] - `uses` [INFERRED]
-- [[TestToolPermission]] - `uses` [INFERRED]
-- [[TestTrustLevels]] - `uses` [INFERRED]
-- [[TestTrustMapping]] - `uses` [INFERRED]
-- [[Top-level MCP proxy configuration.]] - `rationale_for` [EXTRACTED]
-- [[__init__.py_7]] - `imports` [EXTRACTED]
-- [[config()_2]] - `calls` [EXTRACTED]
-- [[config()_3]] - `calls` [EXTRACTED]
-- [[lifespan()_1]] - `calls` [EXTRACTED]
-- [[lifespan.py]] - `imports` [EXTRACTED]
-- [[make_config()]] - `calls` [EXTRACTED]
-- [[mcp_config.py]] - `contains` [EXTRACTED]
-- [[mcp_permissions.py]] - `imports` [EXTRACTED]
-- [[mcp_proxy.py]] - `imports` [EXTRACTED]
-- [[test_mcp_permissions.py]] - `imports` [EXTRACTED]
-- [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
-- [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
+- [[make_config()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_39
+#graphify/code #graphify/INFERRED #community/Community_108

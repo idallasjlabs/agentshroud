@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mcpm/SKILL.md"
 type: "document"
-community: "Community 1043"
+community: "Community 1094"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1043
+  - community/Community_1094
 ---
 
 # MCP Tools Usage Skill
@@ -16,4 +16,4 @@ tags:
 - [[i-mcpm README (MCP Tools Usage)]] - `references` [EXTRACTED]
 - [[mcpm-doctor Skill (referenced, sibling dir)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1043
+#graphify/document #graphify/EXTRACTED #community/Community_1094

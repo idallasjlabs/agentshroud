@@ -1,20 +1,20 @@
 ---
 source_file: ".agents/skills/i-mcpm-doctor/README.md"
 type: "document"
-community: "Community 1154"
+community: "Community 1201"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1154
+  - community/Community_1201
 ---
 
 # MCP Doctor (MCPM-DOCTOR)
 
 ## Connections
-- [[Purpose_18]] - `contains` [EXTRACTED]
-- [[README_18]] - `contains` [EXTRACTED]
-- [[Related Skills_20]] - `contains` [EXTRACTED]
-- [[Usage_21]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-mcpm-doctorREADME]] - `contains` [EXTRACTED]
+- [[Purpose_24]] - `contains` [EXTRACTED]
+- [[Related Skills_15]] - `contains` [EXTRACTED]
+- [[Usage_19]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1154
+#graphify/document #graphify/EXTRACTED #community/Community_1201

@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/skills/manifest.py"
 type: "code"
-community: "Community 73"
+community: "Community 247"
 location: "L54"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_73
+  - community/Community_247
 ---
 
 # ManifestEntry
 
 ## Connections
-- [[.by_name()]] - `references` [EXTRACTED]
-- [[.from_file()]] - `method` [EXTRACTED]
-- [[.to_dict()_15]] - `method` [EXTRACTED]
+- [[dot-by_name()]] - `references` [EXTRACTED]
+- [[dot-from_file()]] - `method` [EXTRACTED]
+- [[dot-to_dict()_7]] - `method` [EXTRACTED]
 - [[A single item in the skills manifest.]] - `rationale_for` [EXTRACTED]
-- [[Path_39]] - `uses` [INFERRED]
-- [[TestClient_1]] - `uses` [INFERRED]
+- [[Path_28]] - `uses` [INFERRED]
+- [[TestClient]] - `uses` [INFERRED]
 - [[TestDeployDryRun]] - `uses` [INFERRED]
 - [[TestDeployManifest]] - `uses` [INFERRED]
 - [[TestManifestEntry]] - `uses` [INFERRED]
@@ -28,4 +28,4 @@ tags:
 - [[manifest.py]] - `contains` [EXTRACTED]
 - [[test_skills_manifest_sync.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_73
+#graphify/code #graphify/INFERRED #community/Community_247

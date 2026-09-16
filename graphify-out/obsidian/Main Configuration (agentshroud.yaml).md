@@ -1,12 +1,12 @@
 ---
 source_file: "docs/data/schema-documentation.md"
 type: "document"
-community: "Community 493"
+community: "Community 504"
 location: "L276"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_493
+  - community/Community_504
 ---
 
 # Main Configuration (agentshroud.yaml)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Configuration File Schemas]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_493
+#graphify/document #graphify/EXTRACTED #community/Community_504
