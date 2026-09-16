@@ -1,0 +1,22 @@
+---
+source_file: "gateway/tests/test_scanner_integration.py"
+type: "code"
+community: "Community 275"
+location: "L1144"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_275
+---
+
+# .test_bot_id_filter_unknown_bot_returns_all()
+
+## Connections
+- [[Path_27]] - `calls` [EXTRACTED]
+- [[TestGetTrivyImageSummaries]] - `method` [EXTRACTED]
+- [[Unknown bot_id with no config match falls through and returns all entries.]] - `rationale_for` [EXTRACTED]
+- [[_clean_trivy_report()]] - `calls` [EXTRACTED]
+- [[_write_image_report()]] - `calls` [EXTRACTED]
+- [[get_trivy_image_summaries()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_275

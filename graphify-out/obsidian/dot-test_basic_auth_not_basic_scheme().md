@@ -1,0 +1,17 @@
+---
+source_file: "gateway/tests/test_dns_canvas_coverage.py"
+type: "code"
+community: "Community 766"
+location: "L519"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_766
+---
+
+# .test_basic_auth_not_basic_scheme()
+
+## Connections
+- [[TestCanvasAuthHelpers]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_766

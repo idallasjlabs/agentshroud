@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_output_canary.py"
+type: "code"
+community: "Community 213"
+location: "L34"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_213
+---
+
+# .test_canary_generation_per_session()
+
+## Connections
+- [[Test that unique canaries are generated per session.]] - `rationale_for` [EXTRACTED]
+- [[TestOutputCanary]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_213

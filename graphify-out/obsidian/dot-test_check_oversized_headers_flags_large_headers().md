@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_metadata_guard.py"
+type: "code"
+community: "Community 354"
+location: "L78"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_354
+---
+
+# .test_check_oversized_headers_flags_large_headers()
+
+## Connections
+- [[Test that oversized headers are flagged.]] - `rationale_for` [EXTRACTED]
+- [[TestMetadataGuard]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_354

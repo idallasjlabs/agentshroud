@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_killswitch_monitor_behavior.py"
+type: "code"
+community: "Community 54"
+location: "L220"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_54
+---
+
+# .test_clean_old_metrics_drops_stale_entries()
+
+## Connections
+- [[KillSwitchMonitor]] - `calls` [EXTRACTED]
+- [[TestStatusAndStats]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_54

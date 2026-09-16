@@ -1,0 +1,20 @@
+---
+source_file: "gateway/tests/test_slack_proxy.py"
+type: "code"
+community: "Community 78"
+location: "L566"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_78
+---
+
+# .test_blocks_scanned_even_when_text_present()
+
+## Connections
+- [[A secret hidden in blocks must be caught even if `text` is benign.]] - `rationale_for` [EXTRACTED]
+- [[AsyncMock]] - `calls` [INFERRED]
+- [[TestMultiFieldOutboundScanning]] - `method` [EXTRACTED]
+- [[_make_proxy()_4]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_78

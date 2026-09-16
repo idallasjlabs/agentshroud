@@ -1,0 +1,20 @@
+---
+source_file: "gateway/tests/test_telegram_proxy_outbound.py"
+type: "code"
+community: "Community 1743"
+location: "L603"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_1743
+---
+
+# .test_collaborator_agent_failed_prefix_is_normalized_form()
+
+## Connections
+- [[Form payload agent-failed prefix should normalize to protected unavailable notic]] - `rationale_for` [EXTRACTED]
+- [[TelegramAPIProxy_3]] - `calls` [EXTRACTED]
+- [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
+- [[_make_sanitizer()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_1743

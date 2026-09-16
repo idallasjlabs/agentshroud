@@ -1,0 +1,19 @@
+---
+source_file: "chatbot/test_main.py"
+type: "code"
+community: "Community 76"
+location: "L210"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_76
+---
+
+# .test_chat_success_returns_parsed_response()
+
+## Connections
+- [[A successful OpenAI completion returns 200 with the parsed fields         via th]] - `rationale_for` [EXTRACTED]
+- [[AsyncMock]] - `calls` [INFERRED]
+- [[TestAsyncClient]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_76

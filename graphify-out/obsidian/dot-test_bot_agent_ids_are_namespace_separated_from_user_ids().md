@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_security_regressions_v1_2.py"
+type: "code"
+community: "Cross-Bot Trust & A2A Governance"
+location: "L229"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Cross-Bot_Trust__A2A_Governance
+---
+
+# .test_bot_agent_ids_are_namespace_separated_from_user_ids()
+
+## Connections
+- [[RT-N2 Bot agent IDs ('openclaw', 'hermes') are separate from user IDs.]] - `rationale_for` [EXTRACTED]
+- [[TestCrossBotTrustPivot]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Cross-Bot_Trust__A2A_Governance

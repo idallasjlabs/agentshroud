@@ -1,0 +1,22 @@
+---
+source_file: "gateway/tests/test_telegram_pipeline.py"
+type: "code"
+community: "Community 109"
+location: "L134"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_109
+---
+
+# .test_blocked_owner_message_allowed_through_with_sanitized_text()
+
+## Connections
+- [[AsyncMock]] - `calls` [INFERRED]
+- [[TestInboundPipelineBlockedOwner]] - `method` [EXTRACTED]
+- [[_getUpdates_response()]] - `calls` [EXTRACTED]
+- [[_make_pipeline_result()]] - `calls` [EXTRACTED]
+- [[_make_proxy()_1]] - `calls` [EXTRACTED]
+- [[_make_update()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_109

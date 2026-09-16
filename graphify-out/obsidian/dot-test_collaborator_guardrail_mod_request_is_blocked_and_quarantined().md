@@ -1,0 +1,23 @@
+---
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+type: "code"
+community: "Telegram Proxy Inbound Tests"
+location: "L4022"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Telegram_Proxy_Inbound_Tests
+---
+
+# .test_collaborator_guardrail_mod_request_is_blocked_and_quarantined()
+
+## Connections
+- [[FakeRBAC]] - `calls` [EXTRACTED]
+- [[Guardrailsecurity config modification prompts should be blocked and quarantined]] - `rationale_for` [EXTRACTED]
+- [[PassthroughPipeline]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
+- [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
+- [[_make_update()_1]] - `calls` [EXTRACTED]
+- [[_wrap_response()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Inbound_Tests

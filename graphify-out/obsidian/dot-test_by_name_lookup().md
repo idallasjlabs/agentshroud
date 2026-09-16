@@ -1,0 +1,20 @@
+---
+source_file: "gateway/tests/test_skills_manifest_sync.py"
+type: "code"
+community: "Community 276"
+location: "L168"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_276
+---
+
+# .test_by_name_lookup()
+
+## Connections
+- [[Path_28]] - `references` [EXTRACTED]
+- [[TestSkillsManifest]] - `method` [EXTRACTED]
+- [[_sha256()]] - `calls` [EXTRACTED]
+- [[_write_tree()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_276

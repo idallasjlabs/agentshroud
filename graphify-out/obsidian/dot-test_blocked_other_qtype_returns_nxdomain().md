@@ -1,0 +1,20 @@
+---
+source_file: "gateway/tests/test_dns_canvas_coverage.py"
+type: "code"
+community: "Community 662"
+location: "L257"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_662
+---
+
+# .test_blocked_other_qtype_returns_nxdomain()
+
+## Connections
+- [[dot-_make_protocol()]] - `calls` [EXTRACTED]
+- [[TestDNSForwarderProtocol]] - `method` [EXTRACTED]
+- [[_BlockAll]] - `calls` [EXTRACTED]
+- [[build_dns_query()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_662

@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_skill_guard.py"
+type: "code"
+community: "Community 114"
+location: "L308"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_114
+---
+
+# .test_binary_content_is_scanned_not_crash()
+
+## Connections
+- [[SkillGuard]] - `references` [EXTRACTED]
+- [[TestAggregation]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_114

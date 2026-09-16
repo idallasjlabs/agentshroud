@@ -1,0 +1,20 @@
+---
+source_file: "gateway/tests/test_forward_routing.py"
+type: "code"
+community: "Multi-Agent Router & Chat UI"
+location: "L338"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Multi-Agent_Router__Chat_UI
+---
+
+# .test_blocked_outbound_replaced_with_policy_notice()
+
+## Connections
+- [[AgentTarget_1]] - `calls` [EXTRACTED]
+- [[AsyncMock]] - `calls` [INFERRED]
+- [[TestOutboundBlockedNotDelivered]] - `method` [EXTRACTED]
+- [[_BlockedOutboundPipeline]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Multi-Agent_Router__Chat_UI

@@ -1,0 +1,23 @@
+---
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+type: "code"
+community: "Community 521"
+location: "L186"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_521
+---
+
+# .test_clean_message_passes_through()
+
+## Connections
+- [[BlockingPipeline]] - `calls` [EXTRACTED]
+- [[FakeRBAC]] - `calls` [EXTRACTED]
+- [[Normal messages must pass through the pipeline unmodified.]] - `rationale_for` [EXTRACTED]
+- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
+- [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
+- [[_make_update()_1]] - `calls` [EXTRACTED]
+- [[_wrap_response()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_521

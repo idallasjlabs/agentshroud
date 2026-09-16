@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_multilingual_injection.py"
+type: "code"
+community: "Community 208"
+location: "L213"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_208
+---
+
+# .test_case_insensitive_detection()
+
+## Connections
+- [[Test that pattern matching is case insensitive where applicable.]] - `rationale_for` [EXTRACTED]
+- [[TestMultilingualInjection]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_208

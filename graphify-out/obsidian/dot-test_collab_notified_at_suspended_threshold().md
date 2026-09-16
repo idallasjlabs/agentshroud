@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_progressive_lockdown.py"
+type: "code"
+community: "Community 58"
+location: "L222"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_58
+---
+
+# .test_collab_notified_at_suspended_threshold()
+
+## Connections
+- [[dot-_setup_proxy_with_capture()]] - `calls` [EXTRACTED]
+- [[TestCollabLockdownNotifications]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_58

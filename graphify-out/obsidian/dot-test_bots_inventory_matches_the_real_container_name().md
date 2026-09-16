@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_main_endpoints.py"
+type: "code"
+community: "Community 100"
+location: "L541"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_100
+---
+
+# .test_bots_inventory_matches_the_real_container_name()
+
+## Connections
+- [[AsyncMock]] - `calls` [INFERRED]
+- [[TestHealthCheckDetailBotsInventory]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_100

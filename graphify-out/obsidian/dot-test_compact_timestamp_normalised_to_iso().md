@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_scanner_integration_coverage.py"
+type: "code"
+community: "Community 1329"
+location: "L447"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_1329
+---
+
+# .test_compact_timestamp_normalised_to_iso()
+
+## Connections
+- [[TestOpenscapSummary]] - `method` [EXTRACTED]
+- [[_w()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_1329
