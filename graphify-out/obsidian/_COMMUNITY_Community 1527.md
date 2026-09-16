@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[export-openapi.sh]] - code - scripts/export-openapi.sh
-- [[export-openapi.sh script]] - code - scripts/export-openapi.sh
+- [[ElevenLabs Text-to-Dialogue API]] - concept - docker/config/hermes/skills/i-apollo/SKILL.md
+- [[eleven_v3 model]] - concept - docker/config/openclaw/skills/i-apollo/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

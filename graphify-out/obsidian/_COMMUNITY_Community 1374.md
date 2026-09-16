@@ -1,18 +1,19 @@
 ---
 type: community
 cohesion: 0.67
-members: 3
+members: 4
 ---
 
 # Community 1374
 
 **Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Members:** 4 nodes
 
 ## Members
-- [[Step 0 - Clone GitHub repo(s) (only if a GitHub URL was given)]] - document - .agents/skills/graphify/references/github-and-merge.md
-- [[github-and-merge]] - document - .agents/skills/graphify/references/github-and-merge.md
-- [[graphify reference GitHub clone and cross-repo merge]] - document - .agents/skills/graphify/references/github-and-merge.md
+- [[1Password item Apple ID - therealidallasj]] - concept - docker/config/openclaw/skills/i-icloud/SKILL.md
+- [[calendar.js (iCloud CalDAV script)]] - code - docker/config/openclaw/skills/i-icloud/scripts/calendar.js
+- [[i-icloud README (ICLOUD Data Manager)]] - document - docker/config/openclaw/skills/i-icloud/README.md
+- [[iCloud Services Skill]] - document - docker/config/openclaw/skills/i-icloud/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

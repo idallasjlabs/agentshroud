@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[lvgl_kawaii_face.c (canvas-based facial animation)]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
-- [[lvgl_kawaii_face.h (face animation public API)]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/include/lvgl_kawaii_face.h
+- [[dot-agentsskillsi-observabilitySKILL]] - document - .agents/skills/i-observability/SKILL.md
+- [[Skill observability]] - document - .agents/skills/i-observability/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

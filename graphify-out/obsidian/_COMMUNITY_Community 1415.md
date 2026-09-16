@@ -1,18 +1,19 @@
 ---
 type: community
-cohesion: 1.00
-members: 3
+cohesion: 0.50
+members: 4
 ---
 
 # Community 1415
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 3 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[_fmt()]] - code - docker/config/openclaw/cron/scripts/daily-checkin.sh
-- [[daily-checkin.sh]] - code - docker/config/openclaw/cron/scripts/daily-checkin.sh
-- [[daily-checkin.sh script]] - code - docker/config/openclaw/cron/scripts/daily-checkin.sh
+- [[dot-test_collaborator_sensitive_path_probe_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_collaborator_sensitive_path_probe_shell_style_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[Sensitive path probes should be blockedquarantined for collaborators.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Shell-style sensitive path probes (e.g., ls ~.ssh) should be blocked.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,3 +21,11 @@ members: 3
 TABLE source_file, type FROM #community/Community_1415
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 10 edges to [[_COMMUNITY_Telegram Proxy Inbound Tests]]
+- 2 edges to [[_COMMUNITY_Telegram Lockdown & Collaborator UX Tests]]
+
+## Top bridge nodes
+- [[dot-test_collaborator_sensitive_path_probe_shell_style_is_blocked_and_quarantined()]] - degree 8, connects to 2 communities
+- [[dot-test_collaborator_sensitive_path_probe_is_blocked_and_quarantined()]] - degree 7, connects to 2 communities

@@ -1,17 +1,18 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+cohesion: 0.67
+members: 3
 ---
 
 # Community 1446
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[SKILL_50]] - document - .agents/skills/i-sdlc/SKILL.md
-- [[Skill sdlc]] - document - .agents/skills/i-sdlc/SKILL.md
+- [[Step 0 - Clone GitHub repo(s) (only if a GitHub URL was given)_1]] - document - docker/config/hermes/skills/graphify/references/github-and-merge.md
+- [[graphify reference GitHub clone and cross-repo merge_1]] - document - docker/config/hermes/skills/graphify/references/github-and-merge.md
+- [[hermesskillsgraphifyreferencesgithub-and-merge]] - document - docker/config/hermes/skills/graphify/references/github-and-merge.md
 
 ## Live Query (requires Dataview plugin)
 

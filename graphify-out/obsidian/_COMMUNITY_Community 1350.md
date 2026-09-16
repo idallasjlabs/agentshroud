@@ -10,10 +10,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[.test_mcp_proxy_endpoint()]] - code - gateway/tests/test_main_endpoints.py
-- [[Test mcpproxy endpoint.]] - rationale - gateway/tests/test_main_endpoints.py
-- [[Test MCP proxy endpoint basic functionality.]] - rationale - gateway/tests/test_main_endpoints.py
-- [[TestMCPProxyEndpoint]] - code - gateway/tests/test_main_endpoints.py
+- [[Fail-Closed Outbound pipeline exception blocks delivery to non-owner]] - concept - gateway/tests/test_slack_proxy.py
+- [[SharedMemoryManager Private Content DetectionFiltering]] - code - gateway/tests/test_shared_memory.py
+- [[SlackAPIProxy Multi-Field Outbound Scanning (blocks, attachments)]] - code - gateway/tests/test_slack_proxy.py
+- [[SlackAPIProxy Owner vs Collaborator Channel Filtering Tests]] - code - gateway/tests/test_slack_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,12 +21,3 @@ members: 4
 TABLE source_file, type FROM #community/Community_1350
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
-- 1 edge to [[_COMMUNITY_Ingest API & Approval Routes]]
-- 1 edge to [[_COMMUNITY_Community 24]]
-
-## Top bridge nodes
-- [[TestMCPProxyEndpoint]] - degree 4, connects to 2 communities
-- [[.test_mcp_proxy_endpoint()]] - degree 3, connects to 1 community

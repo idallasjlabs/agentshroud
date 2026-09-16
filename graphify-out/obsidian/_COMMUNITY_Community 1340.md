@@ -1,19 +1,19 @@
 ---
 type: community
-cohesion: 0.83
+cohesion: 0.50
 members: 4
 ---
 
 # Community 1340
 
-**Cohesion:** 0.83 - tightly connected
+**Cohesion:** 0.50 - moderately connected
 **Members:** 4 nodes
 
 ## Members
-- [[check_fail()]] - code - docker/scripts/health-check.sh
-- [[check_pass()]] - code - docker/scripts/health-check.sh
-- [[health-check.sh]] - code - docker/scripts/health-check.sh
-- [[health-check.sh script]] - code - docker/scripts/health-check.sh
+- [[Deliverables]] - document - .agents/skills/i-aws/SKILL.md
+- [[Reports (`.reports`)]] - document - .agents/skills/i-aws/SKILL.md
+- [[Script Templates]] - document - .agents/skills/i-aws/SKILL.md
+- [[Scripts (`.scripts`)]] - document - .agents/skills/i-aws/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,3 +21,9 @@ members: 4
 TABLE source_file, type FROM #community/Community_1340
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 299]]
+
+## Top bridge nodes
+- [[Deliverables]] - degree 4, connects to 1 community

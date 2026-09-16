@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[_resolve_model_size() — reads WHISPER_MODEL_SIZE env and validates]] - code - voice_gateway/stt.py
-- [[select_model_size() — pure AB model-size resolver]] - code - voice_gateway/stt.py
+- [[verify-greeter-state.sh]] - code - scripts/verify-greeter-state.sh
+- [[verify-greeter-state.sh script]] - code - scripts/verify-greeter-state.sh
 
 ## Live Query (requires Dataview plugin)
 

@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[i-incident-response SKILL (stub)]] - document - docker/config/hermes/skills/i-incident-response/SKILL.md
-- [[i-kaizen SKILL (stub)]] - document - docker/config/hermes/skills/i-kaizen/SKILL.md
+- [[dot-agentsskillsi-ciSKILL]] - document - .agents/skills/i-ci/SKILL.md
+- [[Skill ci]] - document - .agents/skills/i-ci/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

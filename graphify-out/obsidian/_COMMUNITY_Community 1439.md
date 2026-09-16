@@ -1,17 +1,18 @@
 ---
 type: community
 cohesion: 1.00
-members: 2
+members: 3
 ---
 
 # Community 1439
 
 **Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Members:** 3 nodes
 
 ## Members
-- [[SKILL_19]] - document - .agents/skills/i-devsecops/SKILL.md
-- [[Skill devsecops]] - document - .agents/skills/i-devsecops/SKILL.md
+- [[A2APolicyEngine (gatewaysecuritya2a_policy.py)]] - concept - CHANGELOG.md
+- [[A2AProxy (gatewayproxya2a_proxy.py)]] - concept - CHANGELOG.md
+- [[v1.5.0 A2A Governance]] - document - CHANGELOG.md
 
 ## Live Query (requires Dataview plugin)
 

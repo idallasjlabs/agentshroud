@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[AgentShroud Module Inventory]] - document - skills/custom/agentshroud-blueteam/references/module-inventory.md
-- [[Original 33 Modules (v0.6.0)]] - document - skills/custom/agentshroud-blueteam/references/module-inventory.md
-- [[Pipeline Integration Points]] - document - skills/custom/agentshroud-blueteam/references/module-inventory.md
-- [[module-inventory]] - document - skills/custom/agentshroud-blueteam/references/module-inventory.md
-- [[v0.7.0 New Modules (Tier 2+3 + Hardening)]] - document - skills/custom/agentshroud-blueteam/references/module-inventory.md
+- [[Hermes — Podcast Production Orchestrator_2]] - document - docker/config/openclaw/skills/i-hermes/README.md
+- [[Purpose_85]] - document - docker/config/openclaw/skills/i-hermes/README.md
+- [[Related Skills_76]] - document - docker/config/openclaw/skills/i-hermes/README.md
+- [[Usage_80]] - document - docker/config/openclaw/skills/i-hermes/README.md
+- [[openclawskillsi-hermesREADME]] - document - docker/config/openclaw/skills/i-hermes/README.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,17 +1,18 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+cohesion: 0.67
+members: 3
 ---
 
 # Community 1453
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[extraction-spec_1]] - document - docker/config/hermes/skills/graphify/references/extraction-spec.md
-- [[graphify reference extraction subagent prompt_1]] - document - docker/config/hermes/skills/graphify/references/extraction-spec.md
+- [[Diagram 08 Entity Relationship Diagram]] - image - docs/diagrams/images/diagram-08-erd.svg
+- [[Diagram 09 Data Lineage]] - image - docs/diagrams/images/diagram-09-data-lineage.svg
+- [[Diagram 10 Data Dictionary (Mindmap)]] - image - docs/diagrams/images/diagram-10-data-dictionary.svg
 
 ## Live Query (requires Dataview plugin)
 

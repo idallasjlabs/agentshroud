@@ -10,10 +10,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[.test_collaborator_model_switch_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_collaborator_service_control_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[Collaborator modelprovider switching requests should be blocked.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Collaborator servicecontainer control requests should be blocked.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_deregister_cleans_up()]] - code - gateway/tests/test_subagent_governance.py
+- [[dot-test_deregister_returns_usage()]] - code - gateway/tests/test_subagent_governance.py
+- [[dot-test_summary()]] - code - gateway/tests/test_subagent_governance.py
+- [[TestLifecycle]] - code - gateway/tests/test_subagent_governance.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,9 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_Telegram Proxy Inbound]]
-- 2 edges to [[_COMMUNITY_Community 31]]
+- 1 edge to [[_COMMUNITY_Community 1014]]
 
 ## Top bridge nodes
-- [[.test_collaborator_service_control_request_is_blocked_and_quarantined()]] - degree 8, connects to 2 communities
-- [[.test_collaborator_model_switch_request_is_blocked_and_quarantined()]] - degree 7, connects to 2 communities
+- [[TestLifecycle]] - degree 4, connects to 1 community

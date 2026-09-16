@@ -1,19 +1,20 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.40
+members: 5
 ---
 
 # Community 1295
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[Canvas Upstream Hostname Regression (v1.1.0 container rename)]] - rationale - gateway/tests/test_canvas_proxy.py
-- [[test_canvas_proxy.py]] - code - gateway/tests/test_canvas_proxy.py
-- [[test_default_upstream_is_current_container_name()]] - code - gateway/tests/test_canvas_proxy.py
-- [[test_env_override_takes_precedence()]] - code - gateway/tests/test_canvas_proxy.py
+- [[COMMUNICATION-TEMPLATES]] - document - docs/project/legal/COMMUNICATION-TEMPLATES.md
+- [[Option 1 — Clean & Professional Trademark Notice]] - concept - docs/project/legal/COMMUNICATION-TEMPLATES.md
+- [[Option 2 — Compact Trademark Notice]] - concept - docs/project/legal/COMMUNICATION-TEMPLATES.md
+- [[Option 3 — Full Collaborator Trademark Notice]] - concept - docs/project/legal/COMMUNICATION-TEMPLATES.md
+- [[Option 4 — Documentation Footer Trademark Notice]] - concept - docs/project/legal/COMMUNICATION-TEMPLATES.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,3 +22,10 @@ members: 4
 TABLE source_file, type FROM #community/Community_1295
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 1160]]
+- 1 edge to [[_COMMUNITY_Community 1161]]
+
+## Top bridge nodes
+- [[COMMUNICATION-TEMPLATES]] - degree 6, connects to 2 communities

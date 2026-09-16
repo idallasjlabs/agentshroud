@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[SDLC Governance]] - document - .agents/skills/i-sdlc/SKILL.md
-- [[Scrum Ceremony Facilitation]] - document - .agents/skills/i-scrum/SKILL.md
+- [[dot-agentsskillsi-gitopsSKILL]] - document - .agents/skills/i-gitops/SKILL.md
+- [[Skill gitops]] - document - .agents/skills/i-gitops/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

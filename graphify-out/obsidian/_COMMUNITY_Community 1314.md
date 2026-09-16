@@ -1,19 +1,20 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.40
+members: 5
 ---
 
 # Community 1314
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[Application Fields]] - document - docs/project/legal/USPTO-APPLICATION.md
-- [[Filing Basis]] - document - docs/project/legal/USPTO-APPLICATION.md
-- [[Mark]] - document - docs/project/legal/USPTO-APPLICATION.md
-- [[Owner_3]] - document - docs/project/legal/USPTO-APPLICATION.md
+- [[CVE Triage — Gaps & Development Plan (OpenClaw)]] - document - docs/security/cve-triage-gaps.md
+- [[Gap detail (development plan)]] - document - docs/security/cve-triage-gaps.md
+- [[Gap themes]] - document - docs/security/cve-triage-gaps.md
+- [[Resulting status breakdown]] - document - docs/security/cve-triage-gaps.md
+- [[cve-triage-gaps]] - document - docs/security/cve-triage-gaps.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +22,3 @@ members: 4
 TABLE source_file, type FROM #community/Community_1314
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 969]]
-
-## Top bridge nodes
-- [[Application Fields]] - degree 4, connects to 1 community

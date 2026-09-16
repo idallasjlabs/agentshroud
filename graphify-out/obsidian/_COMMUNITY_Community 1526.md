@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[emergency-rollback.sh]] - code - scripts/emergency-rollback.sh
-- [[emergency-rollback.sh script]] - code - scripts/emergency-rollback.sh
+- [[Skill agile_1]] - document - docker/config/hermes/skills/i-agile/SKILL.md
+- [[hermesskillsi-agileSKILL]] - document - docker/config/hermes/skills/i-agile/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

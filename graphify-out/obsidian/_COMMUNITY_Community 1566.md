@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_custom_patterns()]] - code - gateway/tests/test_outbound_filter.py
-- [[Test adding custom filter patterns.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Skill sdlc_2]] - document - docker/config/openclaw/skills/i-sdlc/SKILL.md
+- [[openclawskillsi-sdlcSKILL]] - document - docker/config/openclaw/skills/i-sdlc/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,10 +19,3 @@ members: 2
 TABLE source_file, type FROM #community/Community_1566
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Key Vault & Audit Chain]]
-- 1 edge to [[_COMMUNITY_Community 996]]
-
-## Top bridge nodes
-- [[.test_custom_patterns()]] - degree 3, connects to 2 communities

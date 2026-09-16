@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[.test_invalid_json()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_missing_dir()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_no_files()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_valid()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestGetSbom_1]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[MCP Tools Usage (MCPM)_2]] - document - docker/config/openclaw/skills/i-mcpm/README.md
+- [[Purpose_92]] - document - docker/config/openclaw/skills/i-mcpm/README.md
+- [[Related Skills_83]] - document - docker/config/openclaw/skills/i-mcpm/README.md
+- [[Usage_87]] - document - docker/config/openclaw/skills/i-mcpm/README.md
+- [[openclawskillsi-mcpmREADME]] - document - docker/config/openclaw/skills/i-mcpm/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,12 +22,3 @@ members: 5
 TABLE source_file, type FROM #community/Community_1275
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 193]]
-- 1 edge to [[_COMMUNITY_Community 288]]
-
-## Top bridge nodes
-- [[TestGetSbom_1]] - degree 5, connects to 1 community
-- [[.test_invalid_json()]] - degree 2, connects to 1 community
-- [[.test_valid()]] - degree 2, connects to 1 community

@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_code_block_filtering()]] - code - gateway/tests/test_outbound_filter.py
-- [[Test that function_calls XML blocks are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[graphify clone command]] - concept - docker/config/openclaw/skills/graphify/references/github-and-merge.md
+- [[graphify merge-graphs command]] - concept - docker/config/openclaw/skills/graphify/references/github-and-merge.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,9 +19,3 @@ members: 2
 TABLE source_file, type FROM #community/Community_1551
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 996]]
-
-## Top bridge nodes
-- [[.test_code_block_filtering()]] - degree 2, connects to 1 community

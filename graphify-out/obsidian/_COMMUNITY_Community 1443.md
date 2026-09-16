@@ -1,17 +1,18 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+cohesion: 0.67
+members: 3
 ---
 
 # Community 1443
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[SKILL_28]] - document - .agents/skills/i-kanban/SKILL.md
-- [[Skill kanban]] - document - .agents/skills/i-kanban/SKILL.md
+- [[Obsidian code-architecture vault (.obsidian-vaultscode-architecture)]] - concept - scripts/gen-code-graph.sh
+- [[gen-code-graph.sh]] - code - scripts/gen-code-graph.sh
+- [[gen-code-graph.sh script]] - code - scripts/gen-code-graph.sh
 
 ## Live Query (requires Dataview plugin)
 

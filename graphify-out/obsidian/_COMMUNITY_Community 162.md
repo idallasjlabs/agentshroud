@@ -1,55 +1,56 @@
 ---
 type: community
-cohesion: 0.05
-members: 40
+cohesion: 0.07
+members: 41
 ---
 
 # Community 162
 
-**Cohesion:** 0.05 - loosely connected
-**Members:** 40 nodes
+**Cohesion:** 0.07 - loosely connected
+**Members:** 41 nodes
 
 ## Members
-- [[Get Shit Done (GSD) Cadence]] - document - docs/architecture/agentic-os.md
-- [[1. System Overview]] - document - docs/architecture/agentic-os.md
-- [[12. MCP Integrations]] - document - docs/architecture/agentic-os.md
-- [[13. Compliance Alignment]] - document - docs/architecture/agentic-os.md
-- [[14. Gap Analysis & Recommendations]] - document - docs/architecture/agentic-os.md
-- [[2. Multi-Agent Hierarchy]] - document - docs/architecture/agentic-os.md
-- [[3. Agent Inventory]] - document - docs/architecture/agentic-os.md
-- [[5. Orchestration Flow]] - document - docs/architecture/agentic-os.md
-- [[6 CI Workflows, 14 Jobs]] - document - docs/architecture/agentic-os.md
-- [[7. CICD Quality Gates]] - document - docs/architecture/agentic-os.md
-- [[8. Governance Model]] - document - docs/architecture/agentic-os.md
-- [[9. Human-in-the-Loop Controls]] - document - docs/architecture/agentic-os.md
-- [[AI-Native Development Framework]] - document - docs/architecture/agentic-os.md
-- [[Actions Requiring Approval]] - document - docs/architecture/agentic-os.md
-- [[AgentShroud Agentic OS]] - document - docs/architecture/agentic-os.md
-- [[Agents by Domain]] - document - docs/architecture/agentic-os.md
-- [[Appendix A File Structure Reference]] - document - docs/architecture/agentic-os.md
-- [[Approval Queue Architecture]] - document - docs/architecture/agentic-os.md
-- [[Authorization Matrix]] - document - docs/architecture/agentic-os.md
-- [[Branch Protection (belt-and-suspenders)]] - document - docs/architecture/agentic-os.md
-- [[Build-Time Security Scan (IEC 62443 4-1 SDL)]] - document - docs/architecture/agentic-os.md
-- [[Configuration Locations]] - document - docs/architecture/agentic-os.md
-- [[Development Workflow — End to End]] - document - docs/architecture/agentic-os.md
-- [[Distribution by Platform]] - document - docs/architecture/agentic-os.md
-- [[Egress Approval (Domain-Level)]] - document - docs/architecture/agentic-os.md
-- [[Hook Enforcement Layer]] - document - docs/architecture/agentic-os.md
-- [[Identified Gaps]] - document - docs/architecture/agentic-os.md
-- [[Key Numbers]] - document - docs/architecture/agentic-os.md
-- [[No Security Theater Rules]] - document - docs/architecture/agentic-os.md
-- [[Pipeline Overview]] - document - docs/architecture/agentic-os.md
-- [[Podcast Pipeline — Greek Mythology Agents]] - document - docs/architecture/agentic-os.md
-- [[Pre-commit Hook Chain]] - document - docs/architecture/agentic-os.md
-- [[Productivity Recommendations]] - document - docs/architecture/agentic-os.md
-- [[Recurring Governance Rituals]] - document - docs/architecture/agentic-os.md
-- [[Security-Sensitive Paths (Claude-Only)]] - document - docs/architecture/agentic-os.md
-- [[Semgrep SAST Rules]] - document - docs/architecture/agentic-os.md
-- [[Standards Referenced]] - document - docs/architecture/agentic-os.md
-- [[Table of Contents]] - document - docs/architecture/agentic-os.md
-- [[What's Working Well]] - document - docs/architecture/agentic-os.md
-- [[agentic-os]] - document - docs/architecture/agentic-os.md
+- [[dot-__init__()_70]] - code - gateway/proxy/slack_socket_client.py
+- [[dot-_connect_and_handle()]] - code - gateway/proxy/slack_socket_client.py
+- [[dot-_get_wss_url()]] - code - gateway/proxy/slack_socket_client.py
+- [[dot-run()]] - code - gateway/proxy/slack_socket_client.py
+- [[dot-stop()_5]] - code - gateway/proxy/slack_socket_client.py
+- [[dot-test_capped_at_cap_for_large_attempts()]] - code - gateway/tests/test_slack_socket_client.py
+- [[dot-test_events_api_envelope_dispatches_handle_event()]] - code - gateway/tests/test_slack_socket_client.py
+- [[dot-test_first_attempt_uses_base()]] - code - gateway/tests/test_slack_socket_client.py
+- [[dot-test_get_wss_url_raises_on_api_error()]] - code - gateway/tests/test_slack_socket_client.py
+- [[dot-test_get_wss_url_returns_url_on_success()]] - code - gateway/tests/test_slack_socket_client.py
+- [[dot-test_grows_exponentially_with_attempt()]] - code - gateway/tests/test_slack_socket_client.py
+- [[dot-test_hello_message_not_dispatched()]] - code - gateway/tests/test_slack_socket_client.py
+- [[dot-test_jitter_stays_within_half_to_full_ceiling()]] - code - gateway/tests/test_slack_socket_client.py
+- [[dot-test_run_resets_backoff_after_successful_connect()]] - code - gateway/tests/test_slack_socket_client.py
+- [[dot-test_stop_sets_running_false()]] - code - gateway/tests/test_slack_socket_client.py
+- [[A successful WSS connection resets the attempt counter to 0.]] - rationale - gateway/tests/test_slack_socket_client.py
+- [[Attempt 0 waits at most the base interval (1s default).]] - rationale - gateway/tests/test_slack_socket_client.py
+- [[Backoff never exceeds the cap, even for huge attempt counts.]] - rationale - gateway/tests/test_slack_socket_client.py
+- [[Call apps.connections.open to get a fresh WSS URL.]] - rationale - gateway/proxy/slack_socket_client.py
+- [[Capped exponential backoff with jitter for reconnect attempts.      Returns a wa]] - rationale - gateway/proxy/slack_socket_client.py
+- [[Jitter scales the wait between 50% and 100% of the ceiling.]] - rationale - gateway/tests/test_slack_socket_client.py
+- [[Main reconnect loop. Runs until stop() is called.]] - rationale - gateway/proxy/slack_socket_client.py
+- [[Maintains a persistent Socket Mode WebSocket connection to Slack.      Call run(]] - rationale - gateway/proxy/slack_socket_client.py
+- [[Open the WebSocket and process events until Slack requests disconnect.]] - rationale - gateway/proxy/slack_socket_client.py
+- [[Signal the run loop to exit.]] - rationale - gateway/proxy/slack_socket_client.py
+- [[SlackSocketClient]] - code - gateway/proxy/slack_socket_client.py
+- [[SlackSocketClient_1]] - code - gateway/tests/test_slack_socket_client.py
+- [[TestComputeBackoff]] - code - gateway/tests/test_slack_socket_client.py
+- [[TestSlackSocketClient]] - code - gateway/tests/test_slack_socket_client.py
+- [[Unit tests for SlackSocketClient.]] - rationale - gateway/tests/test_slack_socket_client.py
+- [[Unit tests for the reconnect backoff calculation.]] - rationale - gateway/tests/test_slack_socket_client.py
+- [[With jitter pinned to max, backoff doubles per attempt until the cap.]] - rationale - gateway/tests/test_slack_socket_client.py
+- [[_get_wss_url raises RuntimeError when apps.connections.open fails.]] - rationale - gateway/tests/test_slack_socket_client.py
+- [[_get_wss_url returns the WSS URL from apps.connections.open.]] - rationale - gateway/tests/test_slack_socket_client.py
+- [[_make_client()]] - code - gateway/tests/test_slack_socket_client.py
+- [[compute_backoff()]] - code - gateway/proxy/slack_socket_client.py
+- [[events_api envelopes call proxy.handle_event with the payload.]] - rationale - gateway/tests/test_slack_socket_client.py
+- [[hello messages are silently consumed without calling handle_event.]] - rationale - gateway/tests/test_slack_socket_client.py
+- [[slack_socket_client.py]] - code - gateway/proxy/slack_socket_client.py
+- [[stop() signals the run loop to exit.]] - rationale - gateway/tests/test_slack_socket_client.py
+- [[test_slack_socket_client.py]] - code - gateway/tests/test_slack_socket_client.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -59,10 +60,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 1167]]
-- 1 edge to [[_COMMUNITY_Community 370]]
-- 1 edge to [[_COMMUNITY_Community 946]]
-- 1 edge to [[_COMMUNITY_Community 741]]
+- 3 edges to [[_COMMUNITY_Slack Proxy & Main Endpoint Tests]]
+- 2 edges to [[_COMMUNITY_Community 139]]
 
 ## Top bridge nodes
-- [[AgentShroud Agentic OS]] - degree 18, connects to 4 communities
+- [[SlackSocketClient]] - degree 13, connects to 1 community
+- [[_make_client()]] - degree 10, connects to 1 community
+- [[dot-test_events_api_envelope_dispatches_handle_event()]] - degree 4, connects to 1 community
+- [[dot-test_hello_message_not_dispatched()]] - degree 4, connects to 1 community
+- [[slack_socket_client.py]] - degree 3, connects to 1 community

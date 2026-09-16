@@ -1,18 +1,19 @@
 ---
 type: community
-cohesion: 1.00
-members: 3
+cohesion: 0.83
+members: 4
 ---
 
 # Community 1395
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 3 nodes
+**Cohesion:** 0.83 - tightly connected
+**Members:** 4 nodes
 
 ## Members
-- [[MemoryIntegrityMonitor Tamper Detection]] - code - gateway/security/memory_integrity.py
-- [[MemoryLifecycleManager PII Scan and Retention]] - code - gateway/security/memory_lifecycle.py
-- [[Test Memory Lifecycle and Integrity]] - code - gateway/tests/test_memory_lifecycle.py
+- [[check_fail()]] - code - docker/scripts/health-check.sh
+- [[check_pass()]] - code - docker/scripts/health-check.sh
+- [[health-check.sh]] - code - docker/scripts/health-check.sh
+- [[health-check.sh script]] - code - docker/scripts/health-check.sh
 
 ## Live Query (requires Dataview plugin)
 

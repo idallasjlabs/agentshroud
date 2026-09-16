@@ -1,19 +1,19 @@
 ---
 type: community
-cohesion: 0.50
+cohesion: 1.00
 members: 4
 ---
 
 # Community 1358
 
-**Cohesion:** 0.50 - moderately connected
+**Cohesion:** 1.00 - tightly connected
 **Members:** 4 nodes
 
 ## Members
-- [[.test_five_with_icc_disabled_and_validator()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_four_with_icc_disabled()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_three_baseline()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[TestScoreNetworkSegmentation_1]] - code - gateway/tests/test_scorecard_scoring.py
+- [[alert_critical]] - code - docker/scripts/security-entrypoint.sh
+- [[log (security-entrypoint)]] - code - docker/scripts/security-entrypoint.sh
+- [[security-entrypoint.sh]] - code - docker/scripts/security-entrypoint.sh
+- [[security-entrypoint.sh script]] - code - docker/scripts/security-entrypoint.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +21,3 @@ members: 4
 TABLE source_file, type FROM #community/Community_1358
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 646]]
-
-## Top bridge nodes
-- [[TestScoreNetworkSegmentation_1]] - degree 4, connects to 1 community

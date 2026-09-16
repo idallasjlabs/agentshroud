@@ -1,18 +1,19 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+cohesion: 0.50
+members: 4
 ---
 
 # Community 1386
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[Step 2.5 - Transcribe video  audio files (only if video files detected)_1]] - document - docker/config/hermes/skills/graphify/references/transcribe.md
-- [[graphify reference transcribe video and audio_1]] - document - docker/config/hermes/skills/graphify/references/transcribe.md
-- [[transcribe_1]] - document - docker/config/hermes/skills/graphify/references/transcribe.md
+- [[2. Security Value Audit_1]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[⚠️ Areas Requiring Vigilance]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[✅ Genuine Security Value_1]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[❌ Potential Security Theater]] - document - docs/planning/reviews/phase-review-2026-02-24.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,3 +21,9 @@ members: 3
 TABLE source_file, type FROM #community/Community_1386
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 130]]
+
+## Top bridge nodes
+- [[2. Security Value Audit_1]] - degree 4, connects to 1 community

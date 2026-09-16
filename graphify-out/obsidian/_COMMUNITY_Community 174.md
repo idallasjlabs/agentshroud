@@ -1,54 +1,54 @@
 ---
 type: community
-cohesion: 0.06
+cohesion: 0.08
 members: 39
 ---
 
 # Community 174
 
-**Cohesion:** 0.06 - loosely connected
+**Cohesion:** 0.08 - loosely connected
 **Members:** 39 nodes
 
 ## Members
-- [[.__init__()_75]] - code - gateway/security/egress_filter.py
-- [[.test_config_roundtrip()]] - code - gateway/tests/test_egress_enforce.py
-- [[EgressAllowlistResponse]] - code - gateway/web/management.py
-- [[EgressAllowlistUpdate]] - code - gateway/web/management.py
-- [[Falco runtime security alerts viewer.]] - rationale - gateway/web/management.py
-- [[Get current egress allowlist configuration.]] - rationale - gateway/web/management.py
-- [[Get the global egress filter configuration.]] - rationale - gateway/security/egress_config.py
-- [[Request model for updating egress allowlist.]] - rationale - gateway/web/management.py
-- [[Response model for egress allowlist.]] - rationale - gateway/web/management.py
-- [[Security tools overview — links to all tool-specific dashboards.]] - rationale - gateway/web/management.py
-- [[Serve the SSH hosts page.]] - rationale - gateway/web/management.py
-- [[Serve the approval queue page.]] - rationale - gateway/web/management.py
-- [[Serve the audit log page.]] - rationale - gateway/web/management.py
-- [[Serve the collaborators page (dynamic — fetches live activity data).]] - rationale - gateway/web/management.py
-- [[Serve the emergency kill switch page.]] - rationale - gateway/web/management.py
-- [[Serve the main dashboard page.]] - rationale - gateway/web/management.py
-- [[Serve the main management dashboard.]] - rationale - gateway/web/management.py
-- [[Serve the security modules page (dynamic — fetches live data).]] - rationale - gateway/web/management.py
-- [[Test that config can be saved and retrieved.]] - rationale - gateway/tests/test_egress_enforce.py
-- [[Update egress allowlist configuration (owner only).]] - rationale - gateway/web/management.py
-- [[Wazuh HIDS alerts and FIM events viewer.]] - rationale - gateway/web/management.py
-- [[approvals()]] - code - gateway/web/management.py
-- [[audit()_1]] - code - gateway/web/management.py
-- [[collaborators()]] - code - gateway/web/management.py
-- [[dashboard()]] - code - gateway/web/management.py
-- [[dashboard.html (Control Center Template)]] - code - gateway/web/templates/dashboard.html
-- [[dashboard_main()]] - code - gateway/web/management.py
-- [[egress_config.py]] - code - gateway/security/egress_config.py
-- [[falco_dashboard()]] - code - gateway/web/management.py
-- [[get_egress_allowlist()]] - code - gateway/web/management.py
-- [[get_egress_config()]] - code - gateway/security/egress_config.py
-- [[killswitch()_1]] - code - gateway/web/management.py
-- [[management.py]] - code - gateway/web/management.py
-- [[modules()]] - code - gateway/web/management.py
-- [[security_overview()]] - code - gateway/web/management.py
-- [[set_egress_config()]] - code - gateway/security/egress_config.py
-- [[ssh()]] - code - gateway/web/management.py
-- [[update_egress_allowlist()]] - code - gateway/web/management.py
-- [[wazuh_dashboard()]] - code - gateway/web/management.py
+- [[Add a comment to an existing Jira issue._1]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[ArgumentParser_2]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[Build (url, body, headers) for a POST to the gateway op-proxy._1]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[Build the REST v3 create-issue request body._1]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[Create a Jira issue. Returns the new issue key (e.g. 'SCRUM-124')._1]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[Fetch one secret field from the gateway op-proxy. Returns the value._1]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[Issue one HTTP request and return (status_code, response_text).      HTTPError i_1]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[Match a transition by its own name or its destination status name._1]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[Move an issue to the named status (matched against available transitions)._1]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[Parse argv, resolve credentials, dispatch the subcommand. Returns exit code._1]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[REST v3 URL for creating an issue._1]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[REST v3 add-comment URL for an arbitrary issue key._1]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[REST v3 transitions URL (GET to list, POST to apply) for an issue._1]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[Resolve (token, email, cloud_id) via the gateway op-proxy plus a public     tena_1]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[Resolve a site domain to its Atlassian cloud ID via the public,     unauthentica_1]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[Return the HTTP Basic auth header value base64(emailtoken)._1]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[Unauthenticated site-to-cloud-ID discovery URL._1]] - rationale - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[_adf_doc()_1]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[_auth_headers()_1]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[_build_arg_parser()_1]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[_cloud_base_url()_1]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[_http_request()_2]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[add_comment()_1]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[build_basic_auth_header()_1]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[build_comment_payload()_1]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[build_comment_url()_1]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[build_create_issue_payload()_1]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[build_issue_url()_1]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[build_op_proxy_request()_1]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[build_tenant_info_url()_1]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[build_transitions_url()_1]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[create_issue()_1]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[fetch_credentials()_1]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[fetch_op_secret()_1]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[find_transition_id()_1]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[hermesworkspacejira_dev_ticket.py]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[resolve_cloud_id()_1]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[run()_2]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[transition_issue()_1]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -58,31 +58,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_Community 50]]
-- 6 edges to [[_COMMUNITY_Community 130]]
-- 3 edges to [[_COMMUNITY_Community 295]]
-- 3 edges to [[_COMMUNITY_Community 37]]
-- 2 edges to [[_COMMUNITY_Community 14]]
-- 2 edges to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
-- 2 edges to [[_COMMUNITY_Community 46]]
-- 2 edges to [[_COMMUNITY_Community 420]]
-- 2 edges to [[_COMMUNITY_Community 78]]
-- 1 edge to [[_COMMUNITY_Ingest API & Approval Routes]]
-- 1 edge to [[_COMMUNITY_Community 48]]
-- 1 edge to [[_COMMUNITY_Community 165]]
-- 1 edge to [[_COMMUNITY_Community 58]]
-- 1 edge to [[_COMMUNITY_Community 132]]
-- 1 edge to [[_COMMUNITY_Community 20]]
-- 1 edge to [[_COMMUNITY_Community 105]]
-- 1 edge to [[_COMMUNITY_Community 95]]
-- 1 edge to [[_COMMUNITY_Key Vault & Audit Chain]]
-- 1 edge to [[_COMMUNITY_Community 97]]
-- 1 edge to [[_COMMUNITY_Community 217]]
-- 1 edge to [[_COMMUNITY_Community 29]]
+- 1 edge to [[_COMMUNITY_Community 242]]
 
 ## Top bridge nodes
-- [[egress_config.py]] - degree 17, connects to 13 communities
-- [[management.py]] - degree 27, connects to 6 communities
-- [[get_egress_config()]] - degree 11, connects to 3 communities
-- [[EgressAllowlistResponse]] - degree 6, connects to 3 communities
-- [[EgressAllowlistUpdate]] - degree 6, connects to 3 communities
+- [[build_comment_payload()_1]] - degree 4, connects to 1 community

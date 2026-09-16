@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[plan_2]] - document - skills/custom/agentshroud-blueteam/references/steve-hay-plan.md
-- [[steve-hay-plan]] - document - skills/custom/agentshroud-blueteam/references/steve-hay-plan.md
+- [[i-mac README — macOS System Administrator (MAC)]] - document - docker/config/hermes/skills/i-mac/README.md
+- [[i-mac SKILL — Mac App Discovery]] - document - docker/config/hermes/skills/i-mac/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

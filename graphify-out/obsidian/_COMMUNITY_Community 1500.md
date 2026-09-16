@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[Diagram 18 Runbook]] - image - docs/diagrams/images/diagram-18-runbook.svg
-- [[Diagram 19 Incident Response]] - image - docs/diagrams/images/diagram-19-incident-response.svg
+- [[dot-agentsskillsi-kaizenSKILL]] - document - .agents/skills/i-kaizen/SKILL.md
+- [[Skill kaizen]] - document - .agents/skills/i-kaizen/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

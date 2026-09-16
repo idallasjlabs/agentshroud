@@ -1,18 +1,19 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+cohesion: 0.50
+members: 4
 ---
 
 # Community 1410
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[Maintenance Procedures]] - document - docs/operations/deployment-procedure.md
-- [[Regular Maintenance Tasks]] - document - docs/operations/deployment-procedure.md
-- [[Update Procedure]] - document - docs/operations/deployment-procedure.md
+- [[dot-test_five_with_icc_disabled_and_validator()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[dot-test_four_with_icc_disabled()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[dot-test_three_baseline()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[TestScoreNetworkSegmentation]] - code - gateway/tests/test_scorecard_scoring.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,7 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 128]]
+- 1 edge to [[_COMMUNITY_Community 664]]
 
 ## Top bridge nodes
-- [[Maintenance Procedures]] - degree 3, connects to 1 community
+- [[TestScoreNetworkSegmentation]] - degree 4, connects to 1 community

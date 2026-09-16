@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_edge_cases()_1]] - code - gateway/tests/test_outbound_filter.py
-- [[Test edge cases and boundary conditions.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Skill kaizen_2]] - document - docker/config/openclaw/skills/i-kaizen/SKILL.md
+- [[openclawskillsi-kaizenSKILL]] - document - docker/config/openclaw/skills/i-kaizen/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,9 +19,3 @@ members: 2
 TABLE source_file, type FROM #community/Community_1562
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 996]]
-
-## Top bridge nodes
-- [[.test_edge_cases()_1]] - degree 2, connects to 1 community

@@ -1,17 +1,18 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+cohesion: 0.67
+members: 3
 ---
 
 # Community 1437
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[SKILL_12]] - document - .agents/skills/i-chaos-engineering/SKILL.md
-- [[Skill chaos-engineering]] - document - .agents/skills/i-chaos-engineering/SKILL.md
+- [[blu CLI (BluesoundNAD control)]] - concept - skills/openclaw/blucli/SKILL.md
+- [[blucli (blu)]] - document - skills/openclaw/blucli/SKILL.md
+- [[blucliSKILL]] - document - skills/openclaw/blucli/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

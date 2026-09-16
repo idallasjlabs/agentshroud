@@ -1,16 +1,17 @@
 ---
 type: community
 cohesion: 1.00
-members: 1
+members: 2
 ---
 
 # Community 1670
 
 **Cohesion:** 1.00 - tightly connected
-**Members:** 1 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[App Icon 512x512 (AgentShroud logo mark)]] - image - branding/icons/app/icon-512x512.png
+- [[test_config fixture]] - code - gateway/tests/conftest.py
+- [[test_ledger fixture]] - code - gateway/tests/conftest.py
 
 ## Live Query (requires Dataview plugin)
 

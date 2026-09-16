@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[audio.c (ES7210 mic  ES8311 speaker driver)]] - code - firmware/voice-terminal/main/audio.c
-- [[audio.h (audio public API)]] - code - firmware/voice-terminal/main/audio.h
+- [[dot-agentsskillsi-sreSKILL]] - document - .agents/skills/i-sre/SKILL.md
+- [[Skill sre]] - document - .agents/skills/i-sre/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,18 +1,19 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+cohesion: 0.50
+members: 4
 ---
 
 # Community 1413
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[7. Backup and Restore Procedures]] - document - docs/operations/runbook.md
-- [[Backup Procedures]] - document - docs/operations/runbook.md
-- [[Restore Procedures]] - document - docs/operations/runbook.md
+- [[dot-test_allowed_collaborator_model_command_with_mention_is_handled_locally()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_unapproved_collaborator_slash_command_with_mention_and_punctuation_is_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[Allowed collaborator local command should survive mentionpunctuation normalizat]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Unknown collaborator slash commands should stay blocked with mentionpunctuation]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,7 +23,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 128]]
+- 10 edges to [[_COMMUNITY_Telegram Proxy Inbound Tests]]
+- 2 edges to [[_COMMUNITY_Telegram Lockdown & Collaborator UX Tests]]
 
 ## Top bridge nodes
-- [[7. Backup and Restore Procedures]] - degree 3, connects to 1 community
+- [[dot-test_allowed_collaborator_model_command_with_mention_is_handled_locally()]] - degree 8, connects to 2 communities
+- [[dot-test_unapproved_collaborator_slash_command_with_mention_and_punctuation_is_quarantined()]] - degree 7, connects to 2 communities

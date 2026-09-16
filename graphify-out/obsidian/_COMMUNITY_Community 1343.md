@@ -10,10 +10,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[E - Elevation of Privilege]] - document - docs/security/threat-model.md
-- [[Threat Container Escape]] - document - docs/security/threat-model.md
-- [[Threat Docker Socket Access]] - document - docs/security/threat-model.md
-- [[Threat Prompt Injection Attacks]] - document - docs/security/threat-model.md
+- [[Dialogue Adaptations]] - document - .agents/skills/i-socrates/SKILL.md
+- [[Episode Closing (Mandatory for OKE)]] - document - .agents/skills/i-socrates/SKILL.md
+- [[Expert Persona]] - document - .agents/skills/i-socrates/SKILL.md
+- [[OKE Channel — CPA Exam Prep Dialogue Guidelines]] - document - .agents/skills/i-socrates/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 913]]
+- 1 edge to [[_COMMUNITY_Community 617]]
 
 ## Top bridge nodes
-- [[E - Elevation of Privilege]] - degree 4, connects to 1 community
+- [[OKE Channel — CPA Exam Prep Dialogue Guidelines]] - degree 4, connects to 1 community

@@ -1,19 +1,20 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.40
+members: 5
 ---
 
 # Community 1328
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[8. Red Team Readiness Assessment]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[8.1 Attack Surface Hardening]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[8.2 Monitoring & Detection]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[8.3 Resilience Testing]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[dot-test_empty_dir_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_fresh_file_returns_true()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_old_file_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_stat_error_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestIsFresh_1]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +24,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 185]]
+- 2 edges to [[_COMMUNITY_Community 200]]
+- 1 edge to [[_COMMUNITY_Community 297]]
+- 1 edge to [[_COMMUNITY_Community 488]]
 
 ## Top bridge nodes
-- [[8. Red Team Readiness Assessment]] - degree 4, connects to 1 community
+- [[dot-test_old_file_returns_false()]] - degree 3, connects to 2 communities
+- [[TestIsFresh_1]] - degree 5, connects to 1 community
+- [[dot-test_fresh_file_returns_true()]] - degree 2, connects to 1 community

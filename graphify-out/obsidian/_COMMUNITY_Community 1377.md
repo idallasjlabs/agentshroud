@@ -1,18 +1,19 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+cohesion: 0.50
+members: 4
 ---
 
 # Community 1377
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[Claude Code (PRIMARY agent)]] - concept - docs/architecture/agentic-os.md
-- [[Codex CLI (TERTIARY agent)]] - concept - docs/architecture/agentic-os.md
-- [[Gemini CLI (SECONDARY agent)]] - concept - docs/architecture/agentic-os.md
+- [[Manual Usage (Current Method)]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Step 1 Create 1Password Share Link]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Step 2 Fetch with Browser-Fetch Skill]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Step 3 Parse Output]] - document - docs/reference/BROWSER_FETCH_SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,3 +21,9 @@ members: 3
 TABLE source_file, type FROM #community/Community_1377
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 806]]
+
+## Top bridge nodes
+- [[Manual Usage (Current Method)]] - degree 4, connects to 1 community

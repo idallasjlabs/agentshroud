@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[God Nodes Analysis]] - concept - docker/config/openclaw/skills/graphify/SKILL.md
-- [[graphify.serve MCP stdio Server]] - concept - docker/config/openclaw/skills/graphify/references/exports.md
+- [[dot-agentsskillsgraphifyreferencesextraction-spec]] - document - .agents/skills/graphify/references/extraction-spec.md
+- [[graphify reference extraction subagent prompt]] - document - .agents/skills/graphify/references/extraction-spec.md
 
 ## Live Query (requires Dataview plugin)
 

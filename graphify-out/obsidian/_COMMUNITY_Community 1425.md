@@ -1,18 +1,19 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+cohesion: 0.50
+members: 4
 ---
 
 # Community 1425
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[.test_full_attestation_chain()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_no_sbom_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestAiModelSupplyChain]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[Gateway container (8 CRITICAL CVEs)]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[Hermes container — Not scanned]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[OpenClaw container (17 CRITICAL CVEs)]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[§5 — Trivy Container Scan Results]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,9 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 288]]
-- 1 edge to [[_COMMUNITY_Community 193]]
+- 1 edge to [[_COMMUNITY_Community 971]]
 
 ## Top bridge nodes
-- [[TestAiModelSupplyChain]] - degree 3, connects to 1 community
-- [[.test_full_attestation_chain()]] - degree 2, connects to 1 community
+- [[§5 — Trivy Container Scan Results]] - degree 4, connects to 1 community

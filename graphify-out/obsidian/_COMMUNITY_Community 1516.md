@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[plan_1]] - document - docs/planning/redteam/plan.md
-- [[plan]] - document - docs/planning/redteam/plan.md
+- [[run_targeted_tests.sh]] - code - .claude/scripts/claude-hooks/run_targeted_tests.sh
+- [[run_targeted_tests.sh script]] - code - .claude/scripts/claude-hooks/run_targeted_tests.sh
 
 ## Live Query (requires Dataview plugin)
 

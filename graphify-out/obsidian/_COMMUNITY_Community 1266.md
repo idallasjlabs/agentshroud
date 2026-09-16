@@ -1,20 +1,20 @@
 ---
 type: community
-cohesion: 0.70
+cohesion: 0.40
 members: 5
 ---
 
 # Community 1266
 
-**Cohesion:** 0.70 - tightly connected
+**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[log()_7]] - code - scripts/openclaw_triage.sh
-- [[openclaw_triage.sh]] - code - scripts/openclaw_triage.sh
-- [[openclaw_triage.sh script]] - code - scripts/openclaw_triage.sh
-- [[save_cmd()]] - code - scripts/openclaw_triage.sh
-- [[save_shell()]] - code - scripts/openclaw_triage.sh
+- [[8D Root Cause Analysis_2]] - document - docker/config/openclaw/skills/i-eightd/README.md
+- [[Purpose_83]] - document - docker/config/openclaw/skills/i-eightd/README.md
+- [[Related Skills_74]] - document - docker/config/openclaw/skills/i-eightd/README.md
+- [[Usage_78]] - document - docker/config/openclaw/skills/i-eightd/README.md
+- [[openclawskillsi-eightdREADME]] - document - docker/config/openclaw/skills/i-eightd/README.md
 
 ## Live Query (requires Dataview plugin)
 

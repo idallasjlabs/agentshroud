@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[i-daedalus README — Concept Illustrator]] - document - docker/config/hermes/skills/i-daedalus/README.md
-- [[i-daedalus SKILL — Concept Illustrator]] - document - docker/config/hermes/skills/i-daedalus/SKILL.md
+- [[dot-agentsskillsi-cdSKILL]] - document - .agents/skills/i-cd/SKILL.md
+- [[Skill cd]] - document - .agents/skills/i-cd/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

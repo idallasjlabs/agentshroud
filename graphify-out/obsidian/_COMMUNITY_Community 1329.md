@@ -1,19 +1,20 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.40
+members: 5
 ---
 
 # Community 1329
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[2. Security Value Audit]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[⚠️ Partial Value  Needs Hardening]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[✅ Genuine Security Value]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[🚫 Security Theater]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[dot-test_compact_timestamp_normalised_to_iso()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_critical_and_warning_statuses()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_garbage_timestamp_falls_back_to_mtime()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_not_run()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestOpenscapSummary]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +24,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 133]]
+- 3 edges to [[_COMMUNITY_Community 200]]
+- 1 edge to [[_COMMUNITY_Community 297]]
 
 ## Top bridge nodes
-- [[2. Security Value Audit]] - degree 4, connects to 1 community
+- [[TestOpenscapSummary]] - degree 5, connects to 1 community
+- [[dot-test_compact_timestamp_normalised_to_iso()]] - degree 2, connects to 1 community
+- [[dot-test_critical_and_warning_statuses()]] - degree 2, connects to 1 community
+- [[dot-test_garbage_timestamp_falls_back_to_mtime()]] - degree 2, connects to 1 community

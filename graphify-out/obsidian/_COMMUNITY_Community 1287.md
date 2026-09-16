@@ -1,19 +1,20 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.40
+members: 5
 ---
 
 # Community 1287
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[For git commit hook]] - document - .agents/skills/graphify/references/hooks.md
-- [[For native CLAUDE.md integration]] - document - .agents/skills/graphify/references/hooks.md
-- [[graphify reference commit hook and native CLAUDE.md integration]] - document - .agents/skills/graphify/references/hooks.md
-- [[hooks]] - document - .agents/skills/graphify/references/hooks.md
+- [[Purpose_104]] - document - docker/config/openclaw/skills/i-sec/README.md
+- [[Related Skills_95]] - document - docker/config/openclaw/skills/i-sec/README.md
+- [[Security Review (SEC)_2]] - document - docker/config/openclaw/skills/i-sec/README.md
+- [[Usage_99]] - document - docker/config/openclaw/skills/i-sec/README.md
+- [[openclawskillsi-secREADME]] - document - docker/config/openclaw/skills/i-sec/README.md
 
 ## Live Query (requires Dataview plugin)
 

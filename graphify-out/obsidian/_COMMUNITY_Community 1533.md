@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[set-model.sh]] - code - docker/scripts/set-model.sh
-- [[set-model.sh script]] - code - docker/scripts/set-model.sh
+- [[i-daedalus README — Concept Illustrator]] - document - docker/config/hermes/skills/i-daedalus/README.md
+- [[i-daedalus SKILL — Concept Illustrator]] - document - docker/config/hermes/skills/i-daedalus/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

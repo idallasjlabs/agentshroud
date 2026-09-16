@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[hermes-cron-dedup.sh]] - code - docker/scripts/hermes-cron-dedup.sh
-- [[hermes-cron-dedup.sh script]] - code - docker/scripts/hermes-cron-dedup.sh
+- [[Skill architecture-review_1]] - document - docker/config/hermes/skills/i-architecture-review/SKILL.md
+- [[hermesskillsi-architecture-reviewSKILL]] - document - docker/config/hermes/skills/i-architecture-review/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,58 +1,58 @@
 ---
 type: community
-cohesion: 0.06
+cohesion: 0.05
 members: 43
 ---
 
 # Community 146
 
-**Cohesion:** 0.06 - loosely connected
+**Cohesion:** 0.05 - loosely connected
 **Members:** 43 nodes
 
 ## Members
-- [[AgentShroud Transparent Logo (SVG)]] - image - branding/logos/svg/logo-transparent.svg
-- [[AgentShroud™ Brand Guidelines]] - document - BRAND.md
-- [[AgentShroud™ Brand Guidelines_1]] - document - docker/config/openclaw/workspace/BRAND.md
-- [[Available Formats]] - document - branding/README.md
-- [[BRAND]] - document - BRAND.md
-- [[Brand Colors]] - document - branding/README.md
-- [[Brand Identity]] - document - BRAND.md
-- [[Brand Identity_2]] - document - docker/config/openclaw/workspace/BRAND.md
-- [[Color Palette]] - document - branding/README.md
-- [[Colors]] - document - BRAND.md
-- [[Colors_1]] - document - docker/config/openclaw/workspace/BRAND.md
-- [[Communication Templates]] - document - BRAND.md
-- [[Communication Templates_1]] - document - docker/config/openclaw/workspace/BRAND.md
-- [[Directory Structure]] - document - branding/README.md
-- [[Do's]] - document - branding/README.md
-- [[Don'ts]] - document - branding/README.md
-- [[Elevator pitch]] - document - BRAND.md
-- [[Elevator pitch_1]] - document - docker/config/openclaw/workspace/BRAND.md
-- [[File Formats]] - document - branding/README.md
-- [[Internal Alert (Telegram)]] - document - docs/security/incident-response.md
-- [[Key Messaging]] - document - BRAND.md
-- [[Key Messaging_1]] - document - docker/config/openclaw/workspace/BRAND.md
-- [[License]] - document - BRAND.md
-- [[License_1]] - document - docker/config/openclaw/workspace/BRAND.md
-- [[Logo Usage]] - document - BRAND.md
-- [[Logo Usage_1]] - document - branding/README.md
-- [[Logo Usage_3]] - document - docker/config/openclaw/workspace/BRAND.md
-- [[Logos]] - document - branding/README.md
-- [[Need Help]] - document - branding/README.md
-- [[One-liner]] - document - BRAND.md
-- [[One-liner_1]] - document - docker/config/openclaw/workspace/BRAND.md
-- [[Primary Color]] - document - branding/README.md
-- [[Social Handles]] - document - BRAND.md
-- [[Social Handles_1]] - document - docker/config/openclaw/workspace/BRAND.md
-- [[Stakeholder Notification]] - document - docs/security/incident-response.md
-- [[Trademark]] - document - BRAND.md
-- [[Trademark_1]] - document - docker/config/openclaw/workspace/BRAND.md
-- [[Typography_1]] - document - branding/README.md
-- [[Usage Guidelines]] - document - branding/README.md
-- [[Voice & Tone_1]] - document - BRAND.md
-- [[Voice & Tone_5]] - document - docker/config/openclaw/workspace/BRAND.md
-- [[What it is NOT]] - document - BRAND.md
-- [[What it is NOT_1]] - document - docker/config/openclaw/workspace/BRAND.md
+- [[API Key Security]] - document - docs/security/security-architecture.md
+- [[AgentShroud Security Architecture]] - document - docs/security/security-architecture.md
+- [[Approval Queue Workflow]] - document - docs/security/security-architecture.md
+- [[Architecture Diagram]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[Audit Ledger (SQLite)]] - rationale - docs/security/SECURITY_ARCHITECTURE.md
+- [[Audit Log Encryption]] - document - docs/security/security-architecture.md
+- [[Authentication and Authorization Framework]] - document - docs/security/security-architecture.md
+- [[CVE Mitigation Details]] - document - docs/security/security-architecture.md
+- [[CVE-2026-22708 AI Agent Container Escape via Prompt Injection]] - document - docs/security/security-architecture.md
+- [[CVE-2026-25253 PII Exfiltration via DNS Tunneling]] - document - docs/security/security-architecture.md
+- [[Contributing]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[DNS Filtering]] - concept - docs/project/glossary.md
+- [[Data Entry Points (All User-Controlled)]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[Data Flow Control]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[Defense-in-Depth]] - concept - docs/project/glossary.md
+- [[Defense-in-Depth Architecture]] - document - docs/security/security-architecture.md
+- [[Deployment Security]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[Detection Locations]] - document - docs/security/security-architecture.md
+- [[Detection Patterns]] - document - docs/security/security-architecture.md
+- [[Docker Network Isolation (agentshroud-isolated)]] - concept - docs/security/SECURITY_ARCHITECTURE.md
+- [[Effectiveness Metrics]] - document - docs/security/security-architecture.md
+- [[Emergency Procedures]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[Encryption and Cryptographic Controls]] - document - docs/security/security-architecture.md
+- [[Executive Summary_2]] - document - docs/security/security-architecture.md
+- [[For Open-Source Contributors]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[Known Issues (Accepted Risks)]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[Limitations & Residual Risks]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[Memory Encryption]] - document - docs/security/security-architecture.md
+- [[PII Detection System]] - document - docs/security/security-architecture.md
+- [[PII Sanitization at Gateway Boundary]] - rationale - docs/security/SECURITY_ARCHITECTURE.md
+- [[Principle You Decide What The Agent Sees]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[Project Goals]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[Prompt Guard System (Module 25)]] - concept - docs/security/security-architecture.md
+- [[Quick Reference]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[Recommended Production Setup]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[Security Checklist]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[Threat Model]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[Transport Encryption]] - document - docs/security/security-architecture.md
+- [[Trust Level Progression]] - document - docs/security/security-architecture.md
+- [[What AgentShroud DOES NOT Protect Against]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[What AgentShroud Does]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[What We're Protecting Against]] - document - docs/security/SECURITY_ARCHITECTURE.md
+- [[security-architecture]] - document - docs/security/security-architecture.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -62,15 +62,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 790]]
-- 1 edge to [[_COMMUNITY_Community 118]]
-- 1 edge to [[_COMMUNITY_Community 374]]
-- 1 edge to [[_COMMUNITY_Community 582]]
-- 1 edge to [[_COMMUNITY_Community 620]]
-- 1 edge to [[_COMMUNITY_Community 549]]
+- 4 edges to [[_COMMUNITY_Community 271]]
+- 3 edges to [[_COMMUNITY_Community 457]]
+- 1 edge to [[_COMMUNITY_Community 1019]]
+- 1 edge to [[_COMMUNITY_Community 560]]
+- 1 edge to [[_COMMUNITY_Community 283]]
+- 1 edge to [[_COMMUNITY_Community 350]]
+- 1 edge to [[_COMMUNITY_Community 578]]
+- 1 edge to [[_COMMUNITY_Community 1296]]
 
 ## Top bridge nodes
-- [[AgentShroud™ Brand Guidelines_1]] - degree 29, connects to 3 communities
-- [[Trademark]] - degree 4, connects to 2 communities
-- [[AgentShroud™ Brand Guidelines]] - degree 18, connects to 1 community
-- [[Communication Templates]] - degree 5, connects to 1 community
+- [[AgentShroud Security Architecture]] - degree 32, connects to 8 communities
+- [[DNS Filtering]] - degree 2, connects to 1 community

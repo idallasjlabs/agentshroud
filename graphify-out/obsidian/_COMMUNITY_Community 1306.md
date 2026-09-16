@@ -1,19 +1,20 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.40
+members: 5
 ---
 
 # Community 1306
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[Patent Center Filing Steps]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[Post-Filing]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[Pre-Filing Preparation]] - document - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[SECTION 7 FILING CHECKLIST]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[Problem 1Password link shows only page shell]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Problem Browser binaries not found]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Problem Permission denied executing browser]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Problem Skill not auto-discovered by bot]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Troubleshooting_4]] - document - docs/reference/BROWSER_FETCH_SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,8 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 801]]
-- 1 edge to [[_COMMUNITY_Community 661]]
+- 1 edge to [[_COMMUNITY_Community 806]]
 
 ## Top bridge nodes
-- [[SECTION 7 FILING CHECKLIST]] - degree 5, connects to 2 communities
+- [[Troubleshooting_4]] - degree 5, connects to 1 community

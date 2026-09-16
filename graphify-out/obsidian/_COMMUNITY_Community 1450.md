@@ -1,17 +1,18 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+cohesion: 0.67
+members: 3
 ---
 
 # Community 1450
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[SKILL_202]] - document - skills/openclaw/clawhub/SKILL.md
-- [[clawhub CLI]] - concept - skills/openclaw/clawhub/SKILL.md
+- [[Step 0 - Clone GitHub repo(s) (only if a GitHub URL was given)_2]] - document - docker/config/openclaw/skills/graphify/references/github-and-merge.md
+- [[graphify reference GitHub clone and cross-repo merge_2]] - document - docker/config/openclaw/skills/graphify/references/github-and-merge.md
+- [[openclawskillsgraphifyreferencesgithub-and-merge]] - document - docker/config/openclaw/skills/graphify/references/github-and-merge.md
 
 ## Live Query (requires Dataview plugin)
 

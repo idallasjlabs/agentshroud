@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[freertosFreeRTOS.h stub (playback state test)]] - code - firmware/voice-terminal/test/test_playback_state/stubs/freertos/FreeRTOS.h
-- [[freertostask.h stub (playback state test)]] - code - firmware/voice-terminal/test/test_playback_state/stubs/freertos/task.h
+- [[block_credential_read.sh]] - code - .claude/scripts/claude-hooks/block_credential_read.sh
+- [[block_credential_read.sh script]] - code - .claude/scripts/claude-hooks/block_credential_read.sh
 
 ## Live Query (requires Dataview plugin)
 

@@ -10,10 +10,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[.test_clamd_running_true_with_connectable_socket()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_fluent_bit_running_false_without_pidfile()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_fluent_bit_running_true_with_live_pid()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestSocketAndPidProbes]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[For --cluster-only_1]] - document - docker/config/hermes/skills/graphify/references/update.md
+- [[For --update (incremental re-extraction)_1]] - document - docker/config/hermes/skills/graphify/references/update.md
+- [[graphify reference incremental update and cluster-only_1]] - document - docker/config/hermes/skills/graphify/references/update.md
+- [[hermesskillsgraphifyreferencesupdate]] - document - docker/config/hermes/skills/graphify/references/update.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,11 +21,3 @@ members: 4
 TABLE source_file, type FROM #community/Community_1354
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 288]]
-- 1 edge to [[_COMMUNITY_Community 193]]
-
-## Top bridge nodes
-- [[TestSocketAndPidProbes]] - degree 4, connects to 1 community
-- [[.test_fluent_bit_running_true_with_live_pid()]] - degree 2, connects to 1 community

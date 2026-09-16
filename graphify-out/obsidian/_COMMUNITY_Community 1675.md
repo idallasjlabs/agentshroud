@@ -1,16 +1,17 @@
 ---
 type: community
 cohesion: 1.00
-members: 1
+members: 2
 ---
 
 # Community 1675
 
 **Cohesion:** 1.00 - tightly connected
-**Members:** 1 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[EnhancedApprovalQueue.submit_tool_request]] - code - gateway/approval_queue/enhanced_queue.py
+- [[dot-test_initialization()_2]] - code - gateway/tests/test_prompt_protection.py
+- [[Test proper initialization of PromptProtection.]] - rationale - gateway/tests/test_prompt_protection.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -18,3 +19,9 @@ members: 1
 TABLE source_file, type FROM #community/Community_1675
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 341]]
+
+## Top bridge nodes
+- [[dot-test_initialization()_2]] - degree 2, connects to 1 community

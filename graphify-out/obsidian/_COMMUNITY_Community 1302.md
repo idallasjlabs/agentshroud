@@ -1,19 +1,20 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.40
+members: 5
 ---
 
 # Community 1302
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[For --watch_2]] - document - docker/config/openclaw/skills/graphify/references/add-watch.md
-- [[For graphify add_2]] - document - docker/config/openclaw/skills/graphify/references/add-watch.md
-- [[add-watch_2]] - document - docker/config/openclaw/skills/graphify/references/add-watch.md
-- [[graphify reference add a URL and watch a folder_2]] - document - docker/config/openclaw/skills/graphify/references/add-watch.md
+- [[Path Permissions]] - document - .github/COPILOT_CLI_SETUP.md
+- [[Security & Permissions]] - document - .github/COPILOT_CLI_SETUP.md
+- [[Tool Approval]] - document - .github/COPILOT_CLI_SETUP.md
+- [[Trusted Folders]] - document - .github/COPILOT_CLI_SETUP.md
+- [[URL Access Control]] - document - .github/COPILOT_CLI_SETUP.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,3 +22,9 @@ members: 4
 TABLE source_file, type FROM #community/Community_1302
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 177]]
+
+## Top bridge nodes
+- [[Security & Permissions]] - degree 5, connects to 1 community

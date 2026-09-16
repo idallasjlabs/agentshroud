@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[test_config fixture]] - code - gateway/tests/conftest.py
-- [[test_ledger fixture]] - code - gateway/tests/conftest.py
+- [[Skill sre_1]] - document - docker/config/hermes/skills/i-sre/SKILL.md
+- [[hermesskillsi-sreSKILL]] - document - docker/config/hermes/skills/i-sre/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

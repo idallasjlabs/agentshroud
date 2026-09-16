@@ -10,9 +10,9 @@ members: 3
 **Members:** 3 nodes
 
 ## Members
-- [[.test_gates_pass_with_full_evidence()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_gates_zero_affected_domains()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestMandatoryGates]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[Related Notes_10]] - document - docs/vault/09 - Diagrams/Startup Flow Diagram.md
+- [[Startup Flow Diagram_1]] - document - docs/vault/09 - Diagrams/Startup Flow Diagram.md
+- [[Startup Flow Diagram]] - document - docs/vault/09 - Diagrams/Startup Flow Diagram.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,12 +20,3 @@ members: 3
 TABLE source_file, type FROM #community/Community_1428
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 193]]
-- 1 edge to [[_COMMUNITY_Community 288]]
-
-## Top bridge nodes
-- [[TestMandatoryGates]] - degree 3, connects to 1 community
-- [[.test_gates_pass_with_full_evidence()]] - degree 2, connects to 1 community
-- [[.test_gates_zero_affected_domains()]] - degree 2, connects to 1 community

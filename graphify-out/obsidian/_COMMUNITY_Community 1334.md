@@ -1,19 +1,20 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.40
+members: 5
 ---
 
 # Community 1334
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[6. Conclusion — Mission-Critical Security Infrastructure Delivered]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[⚡ Next Phase Focus]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[✅ Key Achievements]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[🎯 Strategic Position]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
+- [[dot-test_five_running_zero_findings()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[dot-test_four_running_with_noncritical_findings()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[dot-test_one_when_not_run()_2]] - code - gateway/tests/test_scorecard_scoring.py
+- [[dot-test_two_with_criticals()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[TestScoreRuntimeProtection]] - code - gateway/tests/test_scorecard_scoring.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 133]]
+- 1 edge to [[_COMMUNITY_Community 664]]
 
 ## Top bridge nodes
-- [[6. Conclusion — Mission-Critical Security Infrastructure Delivered]] - degree 4, connects to 1 community
+- [[TestScoreRuntimeProtection]] - degree 5, connects to 1 community

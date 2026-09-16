@@ -1,19 +1,20 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.40
+members: 5
 ---
 
 # Community 1286
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[For --watch]] - document - .agents/skills/graphify/references/add-watch.md
-- [[For graphify add]] - document - .agents/skills/graphify/references/add-watch.md
-- [[add-watch]] - document - .agents/skills/graphify/references/add-watch.md
-- [[graphify reference add a URL and watch a folder]] - document - .agents/skills/graphify/references/add-watch.md
+- [[Purpose_103]] - document - docker/config/openclaw/skills/i-sec-offense/README.md
+- [[Red Team Adversarial Tester (SEC-OFFENSE)_2]] - document - docker/config/openclaw/skills/i-sec-offense/README.md
+- [[Related Skills_94]] - document - docker/config/openclaw/skills/i-sec-offense/README.md
+- [[Usage_98]] - document - docker/config/openclaw/skills/i-sec-offense/README.md
+- [[openclawskillsi-sec-offenseREADME]] - document - docker/config/openclaw/skills/i-sec-offense/README.md
 
 ## Live Query (requires Dataview plugin)
 

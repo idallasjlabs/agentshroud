@@ -10,10 +10,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[.test_status_endpoint()]] - code - gateway/tests/test_main_endpoints.py
-- [[Test status endpoint.]] - rationale - gateway/tests/test_main_endpoints.py
-- [[Test basic status endpoint functionality.]] - rationale - gateway/tests/test_main_endpoints.py
-- [[TestStatusEndpoint]] - code - gateway/tests/test_main_endpoints.py
+- [[Anti-Security-Theater Principle]] - rationale - docker/bots/openclaw/workspace/collaborator-workspace/SOUL.md
+- [[Competitive Intelligence Report Standard Prompt (Hermes)]] - document - docker/config/hermes/workspace/competitive-analysis.md
+- [[Gateway-Enforced Intel Verification (SCRUM-75)]] - concept - docker/config/hermes/workspace/competitive-analysis.md
+- [[SOUL.md — Isaiah Jefferson Persona]] - document - docker/bots/openclaw/workspace/collaborator-workspace/SOUL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,12 +21,3 @@ members: 4
 TABLE source_file, type FROM #community/Community_1349
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Memory Lifecycle & Egress Filtering]]
-- 1 edge to [[_COMMUNITY_Ingest API & Approval Routes]]
-- 1 edge to [[_COMMUNITY_Community 24]]
-
-## Top bridge nodes
-- [[TestStatusEndpoint]] - degree 4, connects to 2 communities
-- [[.test_status_endpoint()]] - degree 3, connects to 1 community

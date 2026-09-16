@@ -1,19 +1,20 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.40
+members: 5
 ---
 
 # Community 1327
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[3. Critical Findings & Risks]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[3.1 HIGH Priority Issues]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[3.2 MEDIUM Priority Issues]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[3.3 LOW Priority Issues]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[dot-test_invalid_json()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_missing_dir()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_no_files()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_valid()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestGetSbom]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +24,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 185]]
+- 2 edges to [[_COMMUNITY_Community 200]]
+- 1 edge to [[_COMMUNITY_Community 297]]
 
 ## Top bridge nodes
-- [[3. Critical Findings & Risks]] - degree 4, connects to 1 community
+- [[TestGetSbom]] - degree 5, connects to 1 community
+- [[dot-test_invalid_json()]] - degree 2, connects to 1 community
+- [[dot-test_valid()]] - degree 2, connects to 1 community

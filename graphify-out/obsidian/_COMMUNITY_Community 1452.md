@@ -1,17 +1,18 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+cohesion: 0.67
+members: 3
 ---
 
 # Community 1452
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[.gitguardian.yaml — ggshield CLI secret scanning allowlist config]] - document - .gitguardian.yaml
-- [[GitGuardian ignored-paths + ignored-matches for synthetic test fixtures]] - concept - .gitguardian.yaml
+- [[Trillian Host Compose Override]] - document - docker/docker-compose.agentshroud-bot.trillian.yml
+- [[upgrade.sh]] - code - docker/upgrade.sh
+- [[upgrade.sh script]] - code - docker/upgrade.sh
 
 ## Live Query (requires Dataview plugin)
 

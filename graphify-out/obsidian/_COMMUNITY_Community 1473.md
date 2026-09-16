@@ -1,17 +1,18 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+cohesion: 0.67
+members: 3
 ---
 
 # Community 1473
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[SKILL_131]] - document - docker/config/openclaw/skills/i-architecture-review/SKILL.md
-- [[Skill architecture-review_2]] - document - docker/config/openclaw/skills/i-architecture-review/SKILL.md
+- [[incident-response Skill (stub)_1]] - document - docker/config/openclaw/skills/i-incident-response/SKILL.md
+- [[kaizen Skill (stub)_1]] - document - docker/config/openclaw/skills/i-kaizen/SKILL.md
+- [[kanban Skill (stub)_1]] - document - docker/config/openclaw/skills/i-kanban/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

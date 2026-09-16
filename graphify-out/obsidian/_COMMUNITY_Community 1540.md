@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[feature-priorities_2]] - document - skills/custom/agentshroud-blueteam/references/steve-hay-assessment.md
-- [[steve-hay-assessment]] - document - skills/custom/agentshroud-blueteam/references/steve-hay-assessment.md
+- [[Skill kanban_1]] - document - docker/config/hermes/skills/i-kanban/SKILL.md
+- [[hermesskillsi-kanbanSKILL]] - document - docker/config/hermes/skills/i-kanban/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

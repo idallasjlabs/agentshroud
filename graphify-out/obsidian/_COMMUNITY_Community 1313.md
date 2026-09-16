@@ -1,19 +1,20 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.70
+members: 5
 ---
 
 # Community 1313
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.70 - tightly connected
+**Members:** 5 nodes
 
 ## Members
-- [[approved (action executed, ledger entry written)]] - concept - docs/diagrams/images/diagram-16-state-approval-queue.svg
-- [[expired (1-hour TTL exceeded, auto-transition on load)]] - concept - docs/diagrams/images/diagram-16-state-approval-queue.svg
-- [[pending (bot submits action requiring approval)]] - concept - docs/diagrams/images/diagram-16-state-approval-queue.svg
-- [[rejected (action blocked, bot notified)]] - concept - docs/diagrams/images/diagram-16-state-approval-queue.svg
+- [[log()_2]] - code - scripts/openclaw_triage.sh
+- [[openclaw_triage.sh]] - code - scripts/openclaw_triage.sh
+- [[openclaw_triage.sh script]] - code - scripts/openclaw_triage.sh
+- [[save_cmd()]] - code - scripts/openclaw_triage.sh
+- [[save_shell()]] - code - scripts/openclaw_triage.sh
 
 ## Live Query (requires Dataview plugin)
 

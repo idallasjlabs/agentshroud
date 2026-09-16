@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[SOC Auth WS Token IssuanceRedemption Tests]] - code - gateway/tests/test_soc_auth.py
-- [[SOCWebSocketHandler Subscription Filter Tests]] - code - gateway/tests/test_soc_websocket.py
+- [[lvgl_kawaii_face.c (canvas-based facial animation)]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[lvgl_kawaii_face.h (face animation public API)]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/include/lvgl_kawaii_face.h
 
 ## Live Query (requires Dataview plugin)
 

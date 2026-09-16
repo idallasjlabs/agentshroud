@@ -1,55 +1,55 @@
 ---
 type: community
-cohesion: 0.06
+cohesion: 0.05
 members: 40
 ---
 
 # Community 166
 
-**Cohesion:** 0.06 - loosely connected
+**Cohesion:** 0.05 - loosely connected
 **Members:** 40 nodes
 
 ## Members
-- [[AgentShroud Threat Model (L-1..L-4 Loss Categories)]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Agents Rule of Two]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[CVE-2026-22708 (Indirect Prompt Injection via Web Browsing)]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[CVE-2026-25253 (OpenClaw RCE)]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Credential Isolation Architecture]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[DNS-Layer Enforcement]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Debenedetti et al., The Attacker Moves Second (2025)]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[Enforce-by-Default Semantics (R-02, R-03)]] - rationale - docs/papers/agentshroud-ieee-paper.md
-- [[Hay, Enterprise Security Feature Priorities Assessment (2026)]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[Human-in-the-Loop Approval Gating (R-08, R-09)]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Leveson, Engineering a Safer World (2012)]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[Log-To-Leak MCP Exfiltration Attack]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[MCP Proxy Layer]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Microsoft Presidio PII Detection Engine]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[MiddlewareManager (35 Modules)]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Mutual TLS Container Communication]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[NanoClaw Agent Platform]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[OpenClaw Agent Platform]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Outbound Information Filter (R-01)]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[PII Sanitizer_2]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Per-User Session Isolation (R-04, R-05)]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Pi-hole DNS Filtering]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Prompt Injection Defense (Ensemble of 20+ Patterns)]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[RELEASE-PLAN]] - document - docs/planning/RELEASE-PLAN.md
-- [[STPA-Sec Analysis of AgentShroud]] - rationale - docs/papers/agentshroud-ieee-paper.md
-- [[SecurityPipeline (8-Guard Ordered Sequence)]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Separation of Concerns  Isolated Bot Accounts]] - rationale - docs/reference/PREREQUISITES.md
-- [[Separation of Privilege (R-06, R-07)]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Steve Hay Blue Team Assessment]] - concept - docs/planning/RELEASE-PLAN.md
-- [[ToolHijacker Attack]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Transparent Proxy Architecture]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Zetherion AI Platform]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[agentshroud-ieee-paper]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[step-ca Private Certificate Authority]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[v0.8.0 Watchtower — Security Fixes + Module Wiring]] - concept - docs/planning/RELEASE-PLAN.md
-- [[v0.9.0 Sentinel — Data Isolation + SOC]] - concept - docs/planning/RELEASE-PLAN.md
-- [[v1.0.0 Fortress — Ship-Ready Public Release]] - concept - docs/planning/RELEASE-PLAN.md
-- [[v1.1.0 Groups — Workspaces for Teams]] - concept - docs/planning/RELEASE-PLAN.md
-- [[v1.2.0 Local LLMs — Offline Model Support]] - concept - docs/planning/RELEASE-PLAN.md
-- [[v1.3.0 — Platform Expansion]] - concept - docs/planning/RELEASE-PLAN.md
+- [[dot-config()]] - code - gateway/tests/test_config_validation.py
+- [[dot-config()_1]] - code - gateway/tests/test_config_validation.py
+- [[dot-config()_2]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_approval_queue_enabled()]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_approval_queue_enabled()_1]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_container_hardening()]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_drift_detector_enabled()]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_egress_filter_enabled()]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_encrypted_store_enabled()]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_extensive_approval_actions()]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_has_auth_token()]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_has_auth_token_placeholder()]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_has_gateway_bind()]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_has_gateway_port()]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_has_log_level()]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_has_memory_limit()]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_has_seccomp_profile()]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_kill_switch_enabled()]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_kill_switch_enabled()_1]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_long_retention()]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_pii_enabled()]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_pii_enabled()_1]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_pii_engine_presidio()]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_prompt_guard_enabled()]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_rootless()]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_ssh_requires_approval()]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_ssh_requires_approval()_1]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_tailscale_enabled()]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_telemetry_disabled()]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_trust_manager_enabled()]] - code - gateway/tests/test_config_validation.py
+- [[Parse a .env file into a dict (ignoring comments and blanks).]] - rationale - gateway/tests/test_config_validation.py
+- [[Path_15]] - code
+- [[TestMinimalConfig]] - code - gateway/tests/test_config_validation.py
+- [[TestParanoidConfig]] - code - gateway/tests/test_config_validation.py
+- [[TestRecommendedConfig]] - code - gateway/tests/test_config_validation.py
+- [[_parse_env_file()]] - code - gateway/tests/test_config_validation.py
+- [[fixture_3]] - code
+- [[minimal.env should have reasonable defaults.]] - rationale - gateway/tests/test_config_validation.py
+- [[paranoid.env should enable ALL security features.]] - rationale - gateway/tests/test_config_validation.py
+- [[recommended.env should balance security and usability.]] - rationale - gateway/tests/test_config_validation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -59,12 +59,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 158]]
-- 1 edge to [[_COMMUNITY_Community 621]]
-- 1 edge to [[_COMMUNITY_Community 362]]
-- 1 edge to [[_COMMUNITY_Community 361]]
+- 4 edges to [[_COMMUNITY_Approval Routing & Event Bus]]
 
 ## Top bridge nodes
-- [[agentshroud-ieee-paper]] - degree 24, connects to 2 communities
-- [[RELEASE-PLAN]] - degree 7, connects to 1 community
-- [[Separation of Concerns  Isolated Bot Accounts]] - degree 2, connects to 1 community
+- [[TestParanoidConfig]] - degree 21, connects to 1 community
+- [[TestRecommendedConfig]] - degree 8, connects to 1 community
+- [[TestMinimalConfig]] - degree 7, connects to 1 community
+- [[_parse_env_file()]] - degree 6, connects to 1 community

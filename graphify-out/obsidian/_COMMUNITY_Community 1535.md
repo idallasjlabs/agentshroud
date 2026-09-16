@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[toggle-readonly.sh]] - code - docker/scripts/toggle-readonly.sh
-- [[toggle-readonly.sh script]] - code - docker/scripts/toggle-readonly.sh
+- [[Skill gitops_1]] - document - docker/config/hermes/skills/i-gitops/SKILL.md
+- [[hermesskillsi-gitopsSKILL]] - document - docker/config/hermes/skills/i-gitops/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_common_tools_not_filtered()]] - code - gateway/tests/test_outbound_filter.py
-- [[Test that common English words are not filtered.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Skill value-stream-mapping_1]] - document - docker/config/hermes/skills/i-value-stream-mapping/SKILL.md
+- [[hermesskillsi-value-stream-mappingSKILL]] - document - docker/config/hermes/skills/i-value-stream-mapping/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,9 +19,3 @@ members: 2
 TABLE source_file, type FROM #community/Community_1546
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 996]]
-
-## Top bridge nodes
-- [[.test_common_tools_not_filtered()]] - degree 2, connects to 1 community

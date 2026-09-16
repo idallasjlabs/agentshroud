@@ -10,46 +10,46 @@ members: 40
 **Members:** 40 nodes
 
 ## Members
-- [[Deep Hardening Release]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Acknowledgments_1]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Breaking Changes and Migration]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Deployment and Operations]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Executive Summary_8]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Installation and Upgrade Instructions]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Known Issues and Limitations]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Latency Measurements]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Performance Benchmarks]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Release Notes - AgentShroud v0.9.0]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Security Enhancements]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Security Module Performance]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Support and Resources]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Testing and Quality Assurance]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Throughput Improvements]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[What's New in v0.9.0]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[release-notes-v0.9.0]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[⚠️ Breaking Changes]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[⚡ Performance Optimizations]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🏁 Quick Start]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🏗️ Repository and Code Organization]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🏢 Enterprise Partners]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🐛 Known Issues]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[👥 Contributors]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[📈 Future Enhancements]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[📊 Monitoring and Observability]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[📋 System Requirements]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[📖 Documentation]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[📚 Comprehensive Documentation Suite]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🔄 Migration Guide]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🔍 Advanced Audit Capabilities]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🔒 Deep Security Hardening]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🔒 Security Research]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🔒 Security Testing]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🔧 Troubleshooting]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🚀 Enhanced Deployment Options]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🛡️ Vulnerability Remediation]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🤖 AI-Powered Security]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🤝 Community and Support]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🧪 Test Coverage Excellence]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
+- [[dot-test_agent_response_analysis()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[dot-test_alert_callbacks()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[dot-test_basic_message_tracking()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[dot-test_blocked_session_behavior()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[dot-test_credential_detection()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[dot-test_cumulative_scoring()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[dot-test_disabled_tracker()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[dot-test_edge_cases()_1]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[dot-test_file_reference_detection()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[dot-test_infrastructure_detection()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[dot-test_pii_fragment_detection()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[dot-test_repeated_query_detection()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[dot-test_sequential_extraction_detection()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[dot-test_session_blocking()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[dot-test_session_cleanup()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[dot-test_session_reset()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[dot-test_session_stats()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[dot-test_system_info_detection()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[dot-test_threshold_warnings()]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[Test alert callback functionality.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test analysis of agent responses for potential leaks.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test basic message tracking functionality.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test behavior of blocked sessions.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test cases for MultiTurnTracker class.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test cleanup of old sessions.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test detection of PII fragment patterns.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test detection of credential-related queries.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test detection of file reference patterns.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test detection of infrastructure-related queries.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test detection of repeated queries with different phrasing.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test detection of sequential extraction patterns.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test detection of system information queries.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test edge cases and error conditions._1]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test getting session statistics.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test session reset functionality.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test that disabled tracker doesn't track or score.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test that scores accumulate across turns.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test that sessions get blocked at high scores.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[Test threshold-based warning system.]] - rationale - gateway/tests/test_multi_turn_tracker.py
+- [[TestMultiTurnTracker]] - code - gateway/tests/test_multi_turn_tracker.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -57,3 +57,14 @@ members: 40
 TABLE source_file, type FROM #community/Community_170
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 3 edges to [[_COMMUNITY_Community 658]]
+- 2 edges to [[_COMMUNITY_Alert Dispatcher & RBAC Reliability]]
+- 1 edge to [[_COMMUNITY_Community 1481]]
+- 1 edge to [[_COMMUNITY_Community 1671]]
+- 1 edge to [[_COMMUNITY_Community 1672]]
+
+## Top bridge nodes
+- [[TestMultiTurnTracker]] - degree 27, connects to 5 communities
+- [[dot-test_disabled_tracker()]] - degree 3, connects to 1 community

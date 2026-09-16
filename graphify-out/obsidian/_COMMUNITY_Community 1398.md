@@ -1,18 +1,19 @@
 ---
 type: community
-cohesion: 1.00
-members: 3
+cohesion: 0.50
+members: 4
 ---
 
 # Community 1398
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 3 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[_log()_1]] - code - docker/bots/hermes/heartbeat.sh
-- [[heartbeat.sh]] - code - docker/bots/hermes/heartbeat.sh
-- [[heartbeat.sh script]] - code - docker/bots/hermes/heartbeat.sh
+- [[Test 1 Console Access (Should Work)]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
+- [[Test 2 Via Telegram (Should Be Blocked)]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
+- [[Test 3 Check Audit Log]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
+- [[🧪 Testing the Protection]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,3 +21,9 @@ members: 3
 TABLE source_file, type FROM #community/Community_1398
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 318]]
+
+## Top bridge nodes
+- [[🧪 Testing the Protection]] - degree 4, connects to 1 community

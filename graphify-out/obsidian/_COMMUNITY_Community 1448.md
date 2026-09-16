@@ -1,17 +1,18 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+cohesion: 0.67
+members: 3
 ---
 
 # Community 1448
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[SKILL_62]] - document - .agents/skills/i-value-stream-mapping/SKILL.md
-- [[Skill value-stream-mapping]] - document - .agents/skills/i-value-stream-mapping/SKILL.md
+- [[Docker Socket Proxy Service]] - code - docker/docker-compose.yml
+- [[OpenClawHermes sandbox reaper loop]] - code - docker/scripts/start-agentshroud.sh
+- [[Sandbox Container Reaper]] - rationale - docker/config/openclaw/cron/JOBS-REFERENCE.md
 
 ## Live Query (requires Dataview plugin)
 

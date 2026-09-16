@@ -1,18 +1,19 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+cohesion: 0.50
+members: 4
 ---
 
 # Community 1389
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[Trillian Host Compose Override]] - document - docker/docker-compose.agentshroud-bot.trillian.yml
-- [[upgrade.sh]] - code - docker/upgrade.sh
-- [[upgrade.sh script]] - code - docker/upgrade.sh
+- [[5. Strategic Recommendations]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
+- [[🎯 Immediate Actions (Next 2 Weeks)]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
+- [[📋 Architecture Evolution (Next Quarter)]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
+- [[🔧 Phase Planning (Next 4-8 Weeks)]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,3 +21,9 @@ members: 3
 TABLE source_file, type FROM #community/Community_1389
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 130]]
+
+## Top bridge nodes
+- [[5. Strategic Recommendations]] - degree 4, connects to 1 community

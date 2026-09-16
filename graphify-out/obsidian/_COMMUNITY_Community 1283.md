@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[.test_collaborator_empty_text_with_caption_payload_is_normalized_json()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_collaborator_empty_text_with_content_payload_is_normalized_json()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_collaborator_empty_text_with_draft_payload_is_normalized_json()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_collaborator_empty_text_with_message_payload_is_normalized_json()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Empty text field must not bypass filtering when caption contains tool payload.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Purpose_100]] - document - docker/config/openclaw/skills/i-sad/README.md
+- [[Related Skills_91]] - document - docker/config/openclaw/skills/i-sad/README.md
+- [[System Audit Documentation_2]] - document - docker/config/openclaw/skills/i-sad/README.md
+- [[Usage_95]] - document - docker/config/openclaw/skills/i-sad/README.md
+- [[openclawskillsi-sadREADME]] - document - docker/config/openclaw/skills/i-sad/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,14 +22,3 @@ members: 5
 TABLE source_file, type FROM #community/Community_1283
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 93]]
-- 4 edges to [[_COMMUNITY_Community 80]]
-- 4 edges to [[_COMMUNITY_Community 96]]
-
-## Top bridge nodes
-- [[.test_collaborator_empty_text_with_caption_payload_is_normalized_json()]] - degree 4, connects to 3 communities
-- [[.test_collaborator_empty_text_with_content_payload_is_normalized_json()]] - degree 4, connects to 3 communities
-- [[.test_collaborator_empty_text_with_draft_payload_is_normalized_json()]] - degree 4, connects to 3 communities
-- [[.test_collaborator_empty_text_with_message_payload_is_normalized_json()]] - degree 4, connects to 3 communities

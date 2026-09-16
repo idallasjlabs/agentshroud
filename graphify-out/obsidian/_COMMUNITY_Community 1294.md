@@ -1,19 +1,20 @@
 ---
 type: community
 cohesion: 0.50
-members: 4
+members: 5
 ---
 
 # Community 1294
 
 **Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[SKILL_200]] - document - skills/openclaw/camsnap/SKILL.md
-- [[camsnap]] - document - skills/openclaw/camsnap/SKILL.md
-- [[camsnap CLI]] - concept - skills/openclaw/camsnap/SKILL.md
-- [[ffmpeg dependency]] - concept - skills/openclaw/camsnap/SKILL.md
+- [[active_1]] - concept - docs/diagrams/images/diagram-17-state-bot-session.svg
+- [[compacting (token count approaches reserveTokensFloor, 196K of 200K)]] - concept - docs/diagrams/images/diagram-17-state-bot-session.svg
+- [[fresh (container starts, new session created)]] - concept - docs/diagrams/images/diagram-17-state-bot-session.svg
+- [[idle (health monitor 300s interval)]] - concept - docs/diagrams/images/diagram-17-state-bot-session.svg
+- [[reset (new session UUID created, previous archived)]] - concept - docs/diagrams/images/diagram-17-state-bot-session.svg
 
 ## Live Query (requires Dataview plugin)
 

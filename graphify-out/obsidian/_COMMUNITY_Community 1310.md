@@ -1,19 +1,20 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.70
+members: 5
 ---
 
 # Community 1310
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.70 - tightly connected
+**Members:** 5 nodes
 
 ## Members
-- [[Discrete confidence-score rubric]] - rationale - docker/config/hermes/skills/graphify/references/extraction-spec.md
-- [[Finding Triage Classes (CONFIRMEDPROBABLESELF_HEALEDFALSE_POSITIVEGOOD_DIRECTION)]] - concept - docker/config/openclaw/skills/i-ab/SKILL.md
-- [[GSDL-715 (silent regression incident)]] - concept - docker/config/hermes/skills/i-ab/SKILL.md
-- [[scriptsaudit_merge_regression.py]] - concept - docker/config/hermes/skills/i-ab/SKILL.md
+- [[agentshroud-manage.sh]] - code - scripts/agentshroud-manage.sh
+- [[agentshroud-manage.sh script]] - code - scripts/agentshroud-manage.sh
+- [[api_call()]] - code - scripts/agentshroud-manage.sh
+- [[usage()_4]] - code - scripts/agentshroud-manage.sh
+- [[validate_input()]] - code - scripts/agentshroud-manage.sh
 
 ## Live Query (requires Dataview plugin)
 

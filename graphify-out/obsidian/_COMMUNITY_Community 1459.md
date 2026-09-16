@@ -1,17 +1,18 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+cohesion: 0.67
+members: 3
 ---
 
 # Community 1459
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[SKILL_77]] - document - docker/config/hermes/skills/i-ci/SKILL.md
-- [[Skill ci_1]] - document - docker/config/hermes/skills/i-ci/SKILL.md
+- [[TickType_t_3]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/freertos/task.h
+- [[test_wakeword_statestubsfreertostask.h]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/freertos/task.h
+- [[vTaskDelay()_1]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/freertos/task.h
 
 ## Live Query (requires Dataview plugin)
 

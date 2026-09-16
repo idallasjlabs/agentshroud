@@ -10,49 +10,49 @@ members: 43
 **Members:** 43 nodes
 
 ## Members
-- [[Approval required but none granted]] - document - skills/custom/securebrowser/README.md
-- [[Browser timeout_3]] - document - skills/custom/securebrowser/README.md
-- [[CAPTCHA detected_3]] - document - skills/custom/securebrowser/README.md
-- [[Credential extraction blocked]] - document - skills/custom/securebrowser/README.md
-- [[URL not in allowlist_3]] - document - skills/custom/securebrowser/README.md
-- [[1. Verify Installation]] - document - skills/custom/securebrowser/README.md
-- [[2. Configure Allowlist]] - document - skills/custom/securebrowser/README.md
-- [[3. Test Navigation]] - document - skills/custom/securebrowser/README.md
-- [[Approval Workflow]] - document - skills/custom/securebrowser/README.md
-- [[Audit Trail]] - document - skills/custom/securebrowser/README.md
-- [[CLI Reference]] - document - skills/custom/securebrowser/README.md
-- [[Click]] - document - skills/custom/securebrowser/README.md
-- [[Configuration_19]] - document - skills/custom/securebrowser/README.md
-- [[Example 1 Simple Navigation]] - document - skills/custom/securebrowser/README.md
-- [[Example 2 Fill Form (Non-Sensitive)]] - document - skills/custom/securebrowser/README.md
-- [[Example 3 Fill Password (Sensitive)]] - document - skills/custom/securebrowser/README.md
-- [[Example 4 Handle CAPTCHA]] - document - skills/custom/securebrowser/README.md
-- [[Extract]] - document - skills/custom/securebrowser/README.md
-- [[Fill Field]] - document - skills/custom/securebrowser/README.md
-- [[Full Configuration Example]] - document - skills/custom/securebrowser/README.md
-- [[Integration_2]] - document - skills/custom/securebrowser/README.md
-- [[Key Features_2]] - document - skills/custom/securebrowser/README.md
-- [[License_3]] - document - skills/custom/securebrowser/README.md
-- [[Limitations_3]] - document - skills/custom/securebrowser/README.md
-- [[Navigate]] - document - skills/custom/securebrowser/README.md
-- [[Overview_25]] - document - skills/custom/securebrowser/README.md
-- [[Publishing to ClawHub]] - document - skills/custom/securebrowser/README.md
-- [[Quick Start_3]] - document - skills/custom/securebrowser/README.md
-- [[README_132]] - document - skills/custom/securebrowser/README.md
-- [[Risk Classification]] - document - skills/custom/securebrowser/README.md
-- [[Screenshot]] - document - skills/custom/securebrowser/README.md
-- [[SecureBrowser Skill]] - document - skills/custom/securebrowser/README.md
-- [[Security Guarantees_4]] - document - skills/custom/securebrowser/README.md
-- [[Security Model_1]] - document - skills/custom/securebrowser/README.md
-- [[Step 1 Package Skill]] - document - skills/custom/securebrowser/README.md
-- [[Step 2 Test Locally]] - document - skills/custom/securebrowser/README.md
-- [[Step 3 Publish]] - document - skills/custom/securebrowser/README.md
-- [[Support]] - document - skills/custom/securebrowser/README.md
-- [[Troubleshooting_36]] - document - skills/custom/securebrowser/README.md
-- [[URL Access Control_1]] - document - skills/custom/securebrowser/README.md
-- [[Usage Examples_2]] - document - skills/custom/securebrowser/README.md
-- [[With 1Password]] - document - skills/custom/securebrowser/README.md
-- [[With AgentShroud Gateway]] - document - skills/custom/securebrowser/README.md
+- [[1. Environment Overview]] - document - docs/runbooks/colima-docker-guide.md
+- [[10. Port Forwarding — Dual-Stack Bind Race (silently unreachable host port)]] - document - docs/runbooks/colima-docker-guide.md
+- [[11. Common Errors — Quick Reference]] - document - docs/runbooks/colima-docker-guide.md
+- [[12. Dev Account (agentshroud-bot) Operations]] - document - docs/runbooks/colima-docker-guide.md
+- [[2. `asb` Helper — Primary Interface]] - document - docs/runbooks/colima-docker-guide.md
+- [[3. Colima VM Lifecycle]] - document - docs/runbooks/colima-docker-guide.md
+- [[4. Disk & Resource Monitoring]] - document - docs/runbooks/colima-docker-guide.md
+- [[5. Container Management]] - document - docs/runbooks/colima-docker-guide.md
+- [[6. Volume Management]] - document - docs/runbooks/colima-docker-guide.md
+- [[7. Build Troubleshooting]] - document - docs/runbooks/colima-docker-guide.md
+- [[8. Docker System Pruning]] - document - docs/runbooks/colima-docker-guide.md
+- [[9. VPN Networking Fix (Cisco AnyConnect)]] - document - docs/runbooks/colima-docker-guide.md
+- [[Accounts on Marvin]] - document - docs/runbooks/colima-docker-guide.md
+- [[Check Docker disk usage from host]] - document - docs/runbooks/colima-docker-guide.md
+- [[Check VM disk usage]] - document - docs/runbooks/colima-docker-guide.md
+- [[Check container resource usage (live)]] - document - docs/runbooks/colima-docker-guide.md
+- [[Check what would be removed (dry run)]] - document - docs/runbooks/colima-docker-guide.md
+- [[Clean rebuild (safe — preserves workspace, config, SSH)]] - document - docs/runbooks/colima-docker-guide.md
+- [[Colima & Docker Operations Guide — AgentShroud]] - document - docs/runbooks/colima-docker-guide.md
+- [[Compose Files]] - document - docs/runbooks/colima-docker-guide.md
+- [[Container Names]] - document - docs/runbooks/colima-docker-guide.md
+- [[Diagnose first real disk full vs. phantom no space]] - document - docs/runbooks/colima-docker-guide.md
+- [[Exec into a container]] - document - docs/runbooks/colima-docker-guide.md
+- [[Full wipe (destructive — removes all state)]] - document - docs/runbooks/colima-docker-guide.md
+- [[Health status]] - document - docs/runbooks/colima-docker-guide.md
+- [[Inspect a volume (find its mount path in the VM)]] - document - docs/runbooks/colima-docker-guide.md
+- [[List volumes]] - document - docs/runbooks/colima-docker-guide.md
+- [[Logs]] - document - docs/runbooks/colima-docker-guide.md
+- [[Named volumes for this project]] - document - docs/runbooks/colima-docker-guide.md
+- [[Nuclear prune (removes everything including volumes)]] - document - docs/runbooks/colima-docker-guide.md
+- [[Port Mappings]] - document - docs/runbooks/colima-docker-guide.md
+- [[Prune from inside Colima VM (use when host-side prune hangs)]] - document - docs/runbooks/colima-docker-guide.md
+- [[Reclaim space from dangling layers in overlay2]] - document - docs/runbooks/colima-docker-guide.md
+- [[Remove specific volumes]] - document - docs/runbooks/colima-docker-guide.md
+- [[Restart a single container]] - document - docs/runbooks/colima-docker-guide.md
+- [[SSH into the VM]] - document - docs/runbooks/colima-docker-guide.md
+- [[Safe prune (removes only stopped containers + unused images + build cache)]] - document - docs/runbooks/colima-docker-guide.md
+- [[Start (required flags)]] - document - docs/runbooks/colima-docker-guide.md
+- [[Status & Info]] - document - docs/runbooks/colima-docker-guide.md
+- [[Stop  Restart]] - document - docs/runbooks/colima-docker-guide.md
+- [[Symptom `E You don't have enough free space in apt-dl` — Docker data partition is 80% full]] - document - docs/runbooks/colima-docker-guide.md
+- [[Symptom `W GPG error ... At least one invalid signature was encountered`]] - document - docs/runbooks/colima-docker-guide.md
+- [[Symptom `exit code 100` on apt-get install]] - document - docs/runbooks/colima-docker-guide.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -60,3 +60,9 @@ members: 43
 TABLE source_file, type FROM #community/Community_150
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 457]]
+
+## Top bridge nodes
+- [[Colima & Docker Operations Guide — AgentShroud]] - degree 13, connects to 1 community

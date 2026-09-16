@@ -1,18 +1,19 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+cohesion: 0.50
+members: 4
 ---
 
 # Community 1402
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 4 nodes
 
 ## Members
-- [[Diagram 08 Entity Relationship Diagram]] - image - docs/diagrams/images/diagram-08-erd.svg
-- [[Diagram 09 Data Lineage]] - image - docs/diagrams/images/diagram-09-data-lineage.svg
-- [[Diagram 10 Data Dictionary (Mindmap)]] - image - docs/diagrams/images/diagram-10-data-dictionary.svg
+- [[Current Status_3]] - document - docs/testing/README.md
+- [[Planned Documents_3]] - document - docs/testing/README.md
+- [[Testing Documentation]] - document - docs/testing/README.md
+- [[testingREADME]] - document - docs/testing/README.md
 
 ## Live Query (requires Dataview plugin)
 

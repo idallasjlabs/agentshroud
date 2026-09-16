@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[codex-review.sh]] - code - scripts/codex-review.sh
-- [[codex-review.sh script]] - code - scripts/codex-review.sh
+- [[Cron AgentShroud Daily Check-in]] - document - docker/bots/openclaw/config/cron/jobs.json
+- [[daily-checkin.sh (marvinpi status check)]] - code - docker/config/openclaw/cron/scripts/daily-checkin.sh
 
 ## Live Query (requires Dataview plugin)
 

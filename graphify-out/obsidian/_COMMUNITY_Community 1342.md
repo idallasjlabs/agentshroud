@@ -10,10 +10,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[Test 1 Console Access (Should Work)]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[Test 2 Via Telegram (Should Be Blocked)]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[Test 3 Check Audit Log]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
-- [[🧪 Testing the Protection]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
+- [[Session Prompt Generator]] - document - .agents/skills/i-session-prompt/SKILL.md
+- [[System Audit Documentation (SAD)]] - document - .agents/skills/i-sad/SKILL.md
+- [[System Audit Vault (SAV)]] - document - .agents/skills/i-sav/SKILL.md
+- [[System Audit Vault README]] - document - .agents/skills/i-sav/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +21,3 @@ members: 4
 TABLE source_file, type FROM #community/Community_1342
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 313]]
-
-## Top bridge nodes
-- [[🧪 Testing the Protection]] - degree 4, connects to 1 community

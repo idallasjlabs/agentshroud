@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[.test_five_with_soc_correlation_and_killswitch()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_four_with_soc_correlation()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_one_baseline_neither_running()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[.test_three_with_falco_and_wazuh()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[TestScoreIncidentResponse_1]] - code - gateway/tests/test_scorecard_scoring.py
+- [[Production Safety Checklist (PROD-SAFETY)_1]] - document - docker/config/openclaw/skills/i-ps/README.md
+- [[Purpose_98]] - document - docker/config/openclaw/skills/i-ps/README.md
+- [[Related Skills_89]] - document - docker/config/openclaw/skills/i-ps/README.md
+- [[Usage_93]] - document - docker/config/openclaw/skills/i-ps/README.md
+- [[openclawskillsi-psREADME]] - document - docker/config/openclaw/skills/i-ps/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,9 +22,3 @@ members: 5
 TABLE source_file, type FROM #community/Community_1281
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 646]]
-
-## Top bridge nodes
-- [[TestScoreIncidentResponse_1]] - degree 5, connects to 1 community

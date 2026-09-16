@@ -1,17 +1,18 @@
 ---
 type: community
 cohesion: 1.00
-members: 2
+members: 3
 ---
 
 # Community 1479
 
 **Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Members:** 3 nodes
 
 ## Members
-- [[SKILL_149]] - document - docker/config/openclaw/skills/i-gitops/SKILL.md
-- [[Skill gitops_2]] - document - docker/config/openclaw/skills/i-gitops/SKILL.md
+- [[check()_3]] - code - tests/startup_smoke/test_hermes_mcp_reconciliation.sh
+- [[test_hermes_mcp_reconciliation.sh]] - code - tests/startup_smoke/test_hermes_mcp_reconciliation.sh
+- [[test_hermes_mcp_reconciliation.sh script]] - code - tests/startup_smoke/test_hermes_mcp_reconciliation.sh
 
 ## Live Query (requires Dataview plugin)
 

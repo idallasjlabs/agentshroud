@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[omlx-keepwarm.sh]] - code - scripts/omlx-keepwarm.sh
-- [[omlx-keepwarm.sh script]] - code - scripts/omlx-keepwarm.sh
+- [[Skill bdd_1]] - document - docker/config/hermes/skills/i-bdd/SKILL.md
+- [[hermesskillsi-bddSKILL]] - document - docker/config/hermes/skills/i-bdd/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -10,11 +10,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[.test_read_generic_exception_yields_none()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[.test_read_nonzero_returncode_yields_none()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[.test_read_success_strips_whitespace()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[.test_read_timeout_yields_none()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[TestReadFrom1Password]] - code - gateway/tests/test_key_rotation_internals.py
+- [[GSDE&G Development Master Checklist (MC)_1]] - document - docker/config/openclaw/skills/i-mc/README.md
+- [[Purpose_88]] - document - docker/config/openclaw/skills/i-mc/README.md
+- [[Related Skills_79]] - document - docker/config/openclaw/skills/i-mc/README.md
+- [[Usage_83]] - document - docker/config/openclaw/skills/i-mc/README.md
+- [[openclawskillsi-mcREADME]] - document - docker/config/openclaw/skills/i-mc/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,12 +22,3 @@ members: 5
 TABLE source_file, type FROM #community/Community_1271
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 226]]
-- 1 edge to [[_COMMUNITY_Community 533]]
-- 1 edge to [[_COMMUNITY_Community 130]]
-- 1 edge to [[_COMMUNITY_Community 295]]
-
-## Top bridge nodes
-- [[TestReadFrom1Password]] - degree 10, connects to 4 communities

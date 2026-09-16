@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[pre-commit-hook.sh]] - code - scripts/pre-commit-hook.sh
-- [[pre-commit-hook.sh script]] - code - scripts/pre-commit-hook.sh
+- [[Skill cd_1]] - document - docker/config/hermes/skills/i-cd/SKILL.md
+- [[hermesskillsi-cdSKILL]] - document - docker/config/hermes/skills/i-cd/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

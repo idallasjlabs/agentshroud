@@ -1,17 +1,18 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+cohesion: 0.67
+members: 3
 ---
 
 # Community 1451
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Cohesion:** 0.67 - moderately connected
+**Members:** 3 nodes
 
 ## Members
-- [[Control-Plane  Data-Plane Separation]] - rationale - docs/planning/HEXSTRIKE_PROXY_PLAN.md
-- [[HexStrike MCP Proxy Plan]] - document - docs/planning/HEXSTRIKE_PROXY_PLAN.md
+- [[Step 2.5 - Transcribe video  audio files (only if video files detected)_2]] - document - docker/config/openclaw/skills/graphify/references/transcribe.md
+- [[graphify reference transcribe video and audio_2]] - document - docker/config/openclaw/skills/graphify/references/transcribe.md
+- [[openclawskillsgraphifyreferencestranscribe]] - document - docker/config/openclaw/skills/graphify/references/transcribe.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,17 +1,18 @@
 ---
 type: community
 cohesion: 1.00
-members: 2
+members: 3
 ---
 
 # Community 1476
 
 **Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Members:** 3 nodes
 
 ## Members
-- [[SKILL_139]] - document - docker/config/openclaw/skills/i-chaos-engineering/SKILL.md
-- [[Skill chaos-engineering_2]] - document - docker/config/openclaw/skills/i-chaos-engineering/SKILL.md
+- [[check_or_fix()]] - code - scripts/sync-version.sh
+- [[sync-version.sh]] - code - scripts/sync-version.sh
+- [[sync-version.sh script]] - code - scripts/sync-version.sh
 
 ## Live Query (requires Dataview plugin)
 

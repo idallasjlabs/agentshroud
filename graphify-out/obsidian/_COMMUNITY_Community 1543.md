@@ -10,8 +10,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[plan_3]] - document - skills/custom/agentshroud-redteam/references/steve-hay-plan.md
-- [[steve-hay-plan_1]] - document - skills/custom/agentshroud-redteam/references/steve-hay-plan.md
+- [[Skill scrum_1]] - document - docker/config/hermes/skills/i-scrum/SKILL.md
+- [[hermesskillsi-scrumSKILL]] - document - docker/config/hermes/skills/i-scrum/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

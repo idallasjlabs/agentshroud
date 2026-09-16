@@ -10,10 +10,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[.test_not_running()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_running_with_fresh_log()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_running_without_logs()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestFluentBitSummary]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[For --watch_1]] - document - docker/config/hermes/skills/graphify/references/add-watch.md
+- [[For graphify add_1]] - document - docker/config/hermes/skills/graphify/references/add-watch.md
+- [[graphify reference add a URL and watch a folder_1]] - document - docker/config/hermes/skills/graphify/references/add-watch.md
+- [[hermesskillsgraphifyreferencesadd-watch]] - document - docker/config/hermes/skills/graphify/references/add-watch.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,11 +21,3 @@ members: 4
 TABLE source_file, type FROM #community/Community_1351
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 288]]
-- 1 edge to [[_COMMUNITY_Community 193]]
-
-## Top bridge nodes
-- [[TestFluentBitSummary]] - degree 4, connects to 1 community
-- [[.test_running_with_fresh_log()]] - degree 2, connects to 1 community

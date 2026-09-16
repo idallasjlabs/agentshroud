@@ -1,17 +1,18 @@
 ---
 type: community
 cohesion: 1.00
-members: 2
+members: 3
 ---
 
 # Community 1432
 
 **Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Members:** 3 nodes
 
 ## Members
-- [[extraction-spec]] - document - .agents/skills/graphify/references/extraction-spec.md
-- [[graphify reference extraction subagent prompt]] - document - .agents/skills/graphify/references/extraction-spec.md
+- [[Hermes Podcast Production Orchestrator README]] - document - .agents/skills/i-hermes/README.md
+- [[Hermes Reference Verifier Skill]] - document - .agents/skills/i-hermes/SKILL.md
+- [[Podcast Production Pipeline (multi-agent)]] - concept - .agents/skills/i-hermes/README.md
 
 ## Live Query (requires Dataview plugin)
 

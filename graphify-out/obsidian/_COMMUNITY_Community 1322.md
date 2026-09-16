@@ -1,19 +1,20 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+cohesion: 0.40
+members: 5
 ---
 
 # Community 1322
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[Manual Usage (Current Method)]] - document - docs/reference/BROWSER_FETCH_SKILL.md
-- [[Step 1 Create 1Password Share Link]] - document - docs/reference/BROWSER_FETCH_SKILL.md
-- [[Step 2 Fetch with Browser-Fetch Skill]] - document - docs/reference/BROWSER_FETCH_SKILL.md
-- [[Step 3 Parse Output]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[dot-test_store_nonzero_returncode_is_false()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[dot-test_store_rejects_malformed_reference()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[dot-test_store_success()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[dot-test_store_timeout_is_false()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[TestStoreIn1Password]] - code - gateway/tests/test_key_rotation_internals.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +24,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 767]]
+- 3 edges to [[_COMMUNITY_Community 232]]
+- 1 edge to [[_COMMUNITY_Community 544]]
+- 1 edge to [[_COMMUNITY_Community 133]]
+- 1 edge to [[_COMMUNITY_Community 291]]
 
 ## Top bridge nodes
-- [[Manual Usage (Current Method)]] - degree 4, connects to 1 community
+- [[TestStoreIn1Password]] - degree 10, connects to 4 communities

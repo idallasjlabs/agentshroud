@@ -10,10 +10,10 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[.test_empty_files_skipped()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_invalid_then_valid()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_missing_dir_returns_none()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestLoadLatestJson_1]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[Discrete confidence-score rubric]] - rationale - docker/config/hermes/skills/graphify/references/extraction-spec.md
+- [[Finding Triage Classes (CONFIRMEDPROBABLESELF_HEALEDFALSE_POSITIVEGOOD_DIRECTION)]] - concept - docker/config/openclaw/skills/i-ab/SKILL.md
+- [[GSDL-715 (silent regression incident)]] - concept - docker/config/hermes/skills/i-ab/SKILL.md
+- [[scriptsaudit_merge_regression.py]] - concept - docker/config/hermes/skills/i-ab/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,12 +21,3 @@ members: 4
 TABLE source_file, type FROM #community/Community_1352
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 193]]
-- 1 edge to [[_COMMUNITY_Community 288]]
-
-## Top bridge nodes
-- [[TestLoadLatestJson_1]] - degree 4, connects to 1 community
-- [[.test_empty_files_skipped()]] - degree 2, connects to 1 community
-- [[.test_invalid_then_valid()]] - degree 2, connects to 1 community
