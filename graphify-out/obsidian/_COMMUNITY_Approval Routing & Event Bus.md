@@ -1,0 +1,303 @@
+---
+type: community
+cohesion: 0.02
+members: 158
+---
+
+# Approval Routing & Event Bus
+
+**Cohesion:** 0.02 - loosely connected
+**Members:** 158 nodes
+
+## Members
+- [[NOTE Gateway-side Slack Socket Mode listener removed.]] - rationale - gateway/ingest_api/lifespan.py
+- [[NOTE This branch ships hot-reload of the config FILE only. The web config]] - rationale - gateway/ingest_api/config.py
+- [[dot-__init__()_65]] - code - gateway/ingest_api/event_bus.py
+- [[dot-body_not_empty()]] - code - gateway/ingest_api/models.py
+- [[dot-check()]] - code - gateway/ingest_api/auth.py
+- [[dot-emit()_1]] - code - gateway/ingest_api/event_bus.py
+- [[dot-filter()_1]] - code - gateway/ingest_api/lifespan.py
+- [[dot-get_recent()]] - code - gateway/ingest_api/event_bus.py
+- [[dot-get_stats()_10]] - code - gateway/ingest_api/event_bus.py
+- [[dot-model_post_init()]] - code - gateway/ingest_api/config.py
+- [[dot-subject_not_empty()]] - code - gateway/ingest_api/models.py
+- [[dot-subscribe()_1]] - code - gateway/ingest_api/event_bus.py
+- [[dot-test_file_exists()]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_global_monitor_override_downgrades_all()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[dot-test_mcp_proxy_data_defaults_to_empty_when_absent()]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[dot-test_mcp_proxy_data_parsed_from_yaml()]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[dot-test_proxy_allowed_domains_defaults_to_empty_when_absent()]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[dot-test_proxy_allowed_domains_parsed_from_yaml()]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[dot-to_dict()_4]] - code - gateway/ingest_api/event_bus.py
+- [[dot-unsubscribe()_1]] - code - gateway/ingest_api/event_bus.py
+- [[3+ auth failures within 5 minutes escalates event severity to critical]] - concept - gateway/tests/test_event_bus.py
+- [[A single gateway event]] - rationale - gateway/ingest_api/event_bus.py
+- [[AGENTSHROUD_MODE=monitor must downgrade ALL modules to monitor.]] - rationale - gateway/tests/test_all_modules_enforce.py
+- [[Any_22]] - code - gateway/ingest_api/event_bus.py
+- [[AppState]] - code - gateway/ingest_api/state.py
+- [[ApprovalDecision]] - code - gateway/ingest_api/routes/approval.py
+- [[ApprovalDecision_1]] - code - gateway/ingest_api/models.py
+- [[ApprovalRequest]] - code - gateway/ingest_api/routes/approval.py
+- [[Approve or reject a pending action      Authentication required.]] - rationale - gateway/ingest_api/routes/approval.py
+- [[Attach BufferHandler to the root agentshroud logger.]] - rationale - gateway/web/dashboard_endpoints.py
+- [[AuditExportConfig_1]] - code - gateway/ingest_api/config.py
+- [[Auth dependency that uses the app state config.]] - rationale - gateway/ingest_api/routes/approval.py
+- [[Auth dependency that uses the app state config._1]] - rationale - gateway/ingest_api/routes/forward.py
+- [[Auth dependency that uses the app state config._2]] - rationale - gateway/ingest_api/routes/health.py
+- [[AuthRequired_1]] - code - gateway/ingest_api/routes/approval.py
+- [[AuthRequired_2]] - code - gateway/ingest_api/routes/forward.py
+- [[Channel ownership configuration (P3 Telegram + email oversight, P5 iMessage)]] - rationale - gateway/ingest_api/config.py
+- [[ChannelsConfig]] - code - gateway/ingest_api/config.py
+- [[Check if client is within rate limit          Args             client_id Usual]] - rationale - gateway/ingest_api/auth.py
+- [[Configuration for compliance audit export functionality.]] - rationale - gateway/ingest_api/config.py
+- [[Container for application-wide state]] - rationale - gateway/ingest_api/state.py
+- [[Create authentication dependency callable      This is a synchronous wrapper tha]] - rationale - gateway/ingest_api/auth.py
+- [[Email send gateway (P3 channel ownership).      The bot submits email send requ]] - rationale - gateway/ingest_api/routes/forward.py
+- [[EmailSendRequest]] - code - gateway/ingest_api/routes/forward.py
+- [[EmailSendRequest_1]] - code - gateway/ingest_api/models.py
+- [[EmailSendResponse]] - code - gateway/ingest_api/models.py
+- [[Emit an event to all subscribers]] - rationale - gateway/ingest_api/event_bus.py
+- [[EventBus]] - code - gateway/ingest_api/event_bus.py
+- [[Everything the post-routing forwarding steps (blocking or streaming)     need, o]] - rationale - gateway/ingest_api/routes/forward.py
+- [[Factory that returns authentication dependency for FastAPI      This allows us t]] - rationale - gateway/ingest_api/auth.py
+- [[Fail-closed resolver for the enforcement-mode env var (SCRUM-78).      Returns]] - rationale - gateway/security/progressive_trust_config.py
+- [[FastAPI_1]] - code - gateway/ingest_api/lifespan.py
+- [[FastAPI lifespan - startup and shutdown]] - rationale - gateway/ingest_api/lifespan.py
+- [[ForwardRequest_2]] - code - gateway/ingest_api/routes/forward.py
+- [[ForwardResponse]] - code - gateway/ingest_api/models.py
+- [[GatewayConfig]] - code - gateway/ingest_api/auth.py
+- [[GatewayEvent]] - code - gateway/ingest_api/event_bus.py
+- [[Install warning filter once for uvicorn logger.]] - rationale - gateway/ingest_api/lifespan.py
+- [[List all pending approval requests      Authentication required.]] - rationale - gateway/ingest_api/routes/approval.py
+- [[Load and validate configuration from agentshroud.yaml      Search order     1.]] - rationale - gateway/ingest_api/config.py
+- [[Log warnings for any core modules running in monitor mode.]] - rationale - gateway/ingest_api/config.py
+- [[LogRecord_2]] - code - gateway/ingest_api/lifespan.py
+- [[Main ingest endpoint      Receives data from iOS Shortcuts, browser extension, o]] - rationale - gateway/ingest_api/routes/forward.py
+- [[Map agentshroud.yaml entity names to Presidiointernal entity names]] - rationale - gateway/ingest_api/config.py
+- [[MiddlewareManager.process_request()]] - code - gateway/ingest_api/middleware.py
+- [[Minimal health check endpoint — no authentication required.      Returns only ba]] - rationale - gateway/ingest_api/routes/health.py
+- [[Owner-allowlist checked before PII sanitisation to avoid CVEdate-dense body collapse]] - rationale - gateway/tests/test_email_owner_bypasses_pii.py
+- [[OwnerEmailRequest]] - code - gateway/ingest_api/routes/forward.py
+- [[Path_13]] - code - gateway/ingest_api/config.py
+- [[Request_3]] - code - gateway/ingest_api/routes/approval.py
+- [[Request_4]] - code - gateway/ingest_api/routes/forward.py
+- [[Request_5]] - code - gateway/ingest_api/routes/health.py
+- [[Request to send an email through the gateway (P3 channel ownership).      The b]] - rationale - gateway/ingest_api/models.py
+- [[Resolve each configured bot's OWN Telegram token, distinct from the default.]] - rationale - gateway/ingest_api/lifespan.py
+- [[Resolve the config file path using the same search order as load_config().]] - rationale - gateway/ingest_api/config.py
+- [[Response after content is ingested, sanitized, and logged]] - rationale - gateway/ingest_api/models.py
+- [[Response from POST emailsend.]] - rationale - gateway/ingest_api/models.py
+- [[Return True if the email address is on the pre-approved recipient list.]] - rationale - gateway/ingest_api/routes/forward.py
+- [[Return module mode, respecting the global permissive override.]] - rationale - gateway/ingest_api/config.py
+- [[Return the file mtime, or -1.0 if the file is missing (treated as no-op).]] - rationale - gateway/ingest_api/config.py
+- [[SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST]] - document - docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md
+- [[Send an email to the owner without exposing the recipient address in the request]] - rationale - gateway/ingest_api/routes/forward.py
+- [[Simple in-process event bus with async support]] - rationale - gateway/ingest_api/event_bus.py
+- [[Streaming variant of forward for OpenAI-compat agents (Hermes).      Same inbou]] - rationale - gateway/ingest_api/routes/forward.py
+- [[Submit an action for human approval      Called by agents when attempting sensit]] - rationale - gateway/ingest_api/routes/approval.py
+- [[Subscribe to all events]] - rationale - gateway/ingest_api/event_bus.py
+- [[Suppress noisy uvicorn warning spam for malformed probe traffic.]] - rationale - gateway/ingest_api/lifespan.py
+- [[Target resolution + P1 middleware + inbound security pipeline —     shared by th]] - rationale - gateway/ingest_api/routes/forward.py
+- [[Telegram inbound webhook (P3 channel ownership).      All Telegram messages des]] - rationale - gateway/ingest_api/routes/forward.py
+- [[Test ApprovalDecision with valid data]] - rationale - gateway/tests/test_main_simple.py
+- [[TestAllExampleConfigsExist]] - code - gateway/tests/test_config_validation.py
+- [[TestMCPProxyConfigLoading]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[Unsubscribe from events]] - rationale - gateway/ingest_api/event_bus.py
+- [[User's decision on a pending approval request]] - rationale - gateway/ingest_api/models.py
+- [[Verify all referenced example configs exist.]] - rationale - gateway/tests/test_config_validation.py
+- [[_DropInvalidHTTPRequestFilter]] - code - gateway/ingest_api/lifespan.py
+- [[_InboundResult]] - code - gateway/ingest_api/routes/forward.py
+- [[_build_bridge() — test-local reimplementation of the ResourceGuard→AlertDispatcher bridge closure]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[_build_per_bot_telegram_tokens()]] - code - gateway/ingest_api/lifespan.py
+- [[_default_mtime()]] - code - gateway/ingest_api/config.py
+- [[_entity_type_mapping()]] - code - gateway/ingest_api/config.py
+- [[_install_uvicorn_warning_filter()]] - code - gateway/ingest_api/lifespan.py
+- [[_is_email_recipient_allowed()]] - code - gateway/ingest_api/routes/forward.py
+- [[_process_inbound()]] - code - gateway/ingest_api/routes/forward.py
+- [[approval.py]] - code - gateway/ingest_api/routes/approval.py
+- [[auth.py]] - document - docs/vault/02 - Modules/Gateway Core/auth.py.md
+- [[auth_dep()_1]] - code - gateway/ingest_api/routes/approval.py
+- [[auth_dep()_2]] - code - gateway/ingest_api/routes/forward.py
+- [[auth_dep()_3]] - code - gateway/ingest_api/routes/health.py
+- [[auth_headers()_1]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[bypass_auth()]] - code - gateway/tests/test_channel_ownership.py
+- [[bypass_auth()_1]] - code - gateway/tests/test_email_owner_bypasses_pii.py
+- [[check_monitor_mode_warnings()]] - code - gateway/ingest_api/config.py
+- [[client()_3]] - code - gateway/tests/test_channel_ownership.py
+- [[client()_4]] - code - gateway/tests/test_email_owner_bypasses_pii.py
+- [[create_auth_dependency()]] - code - gateway/ingest_api/auth.py
+- [[decide_approval()]] - code - gateway/ingest_api/routes/approval.py
+- [[email_send()]] - code - gateway/ingest_api/routes/forward.py
+- [[email_send_owner()]] - code - gateway/ingest_api/routes/forward.py
+- [[event_bus.py]] - code - gateway/ingest_api/event_bus.py
+- [[event_bus.py_1]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
+- [[forward.py]] - code - gateway/ingest_api/routes/forward.py
+- [[forward_content()]] - code - gateway/ingest_api/routes/forward.py
+- [[forward_content_stream()]] - code - gateway/ingest_api/routes/forward.py
+- [[gatewayREADME]] - document - gateway/README.md
+- [[get_auth_dependency()]] - code - gateway/ingest_api/auth.py
+- [[get_module_mode()]] - code - gateway/ingest_api/config.py
+- [[health.py]] - code - gateway/ingest_api/routes/health.py
+- [[health_check()]] - code - gateway/ingest_api/routes/health.py
+- [[ingest_apiauth.py]] - code - gateway/ingest_api/auth.py
+- [[ingest_apiconfig.py]] - code - gateway/ingest_api/config.py
+- [[ingest_apimodels.py]] - code - gateway/ingest_api/models.py
+- [[install_log_handler()]] - code - gateway/web/dashboard_endpoints.py
+- [[ledger.py]] - code - gateway/ingest_api/ledger.py
+- [[lifespan()]] - code - gateway/ingest_api/lifespan.py
+- [[lifespan.py]] - code - gateway/ingest_api/lifespan.py
+- [[list_pending_approvals()]] - code - gateway/ingest_api/routes/approval.py
+- [[load_config()]] - code - gateway/ingest_api/config.py
+- [[mcp_proxy_data is an empty dict when section is absent from YAML.]] - rationale - gateway/tests/test_mcp_result_endpoint.py
+- [[mcp_proxy_data is populated from the mcp_proxy YAML section.]] - rationale - gateway/tests/test_mcp_result_endpoint.py
+- [[parametrize_1]] - code
+- [[proxy_allowed_domains is empty list when proxy section is absent from YAML.]] - rationale - gateway/tests/test_mcp_result_endpoint.py
+- [[proxy_allowed_domains is populated from the proxy.allowed_domains YAML section.]] - rationale - gateway/tests/test_mcp_result_endpoint.py
+- [[python-jose_1]] - document - docs/vault/05 - Dependencies/python-jose.md
+- [[rate_limiter (module-level instance)]] - code - gateway/ingest_api/auth.py
+- [[resolve_config_path()]] - code - gateway/ingest_api/config.py
+- [[resolve_enforcement_mode()]] - code - gateway/security/progressive_trust_config.py
+- [[sanitizer.py]] - code - gateway/ingest_api/sanitizer.py
+- [[state.py]] - code - gateway/ingest_api/state.py
+- [[submit_approval_request()]] - code - gateway/ingest_api/routes/approval.py
+- [[telegram_webhook()]] - code - gateway/ingest_api/routes/forward.py
+- [[test_approval_decision_valid()]] - code - gateway/tests/test_main_simple.py
+- [[test_channel_ownership.py]] - code - gateway/tests/test_channel_ownership.py
+- [[test_config_validation.py]] - code - gateway/tests/test_config_validation.py
+- [[test_email_owner_bypasses_pii.py]] - code - gateway/tests/test_email_owner_bypasses_pii.py
+- [[test_mcp_result_endpoint.py]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[verify.sh]] - code - gateway/verify.sh
+- [[verify.sh script]] - code - gateway/verify.sh
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/Approval_Routing__Event_Bus
+SORT file.name ASC
+```
+
+## Connections to other communities
+- 39 edges to [[_COMMUNITY_Ingest API & RBAC Core]]
+- 26 edges to [[_COMMUNITY_Multi-Agent Router & Chat UI]]
+- 23 edges to [[_COMMUNITY_Approval Queue (WebSocket)]]
+- 17 edges to [[_COMMUNITY_Enhanced Approval Queue]]
+- 16 edges to [[_COMMUNITY_Gateway Config & PII Sanitizer]]
+- 15 edges to [[_COMMUNITY_Tool Result Sanitizer & XML Injection Filtering]]
+- 14 edges to [[_COMMUNITY_Signed Instruction Envelopes & Security Pipeline]]
+- 14 edges to [[_COMMUNITY_Community 281]]
+- 13 edges to [[_COMMUNITY_Ingest Middleware & File Sandbox]]
+- 12 edges to [[_COMMUNITY_Community 35]]
+- 11 edges to [[_COMMUNITY_Community 116]]
+- 11 edges to [[_COMMUNITY_Community 157]]
+- 10 edges to [[_COMMUNITY_Community 180]]
+- 9 edges to [[_COMMUNITY_Community 194]]
+- 9 edges to [[_COMMUNITY_PII Sanitizer & Redaction]]
+- 8 edges to [[_COMMUNITY_Runtime Security Comparison & Intel Report]]
+- 8 edges to [[_COMMUNITY_Community 71]]
+- 8 edges to [[_COMMUNITY_Memory Integrity & Lifecycle]]
+- 7 edges to [[_COMMUNITY_Alert Dispatcher & RBAC Reliability]]
+- 7 edges to [[_COMMUNITY_Community 113]]
+- 7 edges to [[_COMMUNITY_Community 153]]
+- 7 edges to [[_COMMUNITY_Egress Filter & HTTP Proxy]]
+- 7 edges to [[_COMMUNITY_Agent Isolation & Group Config Tests]]
+- 7 edges to [[_COMMUNITY_Prompt Guard & Context Integrity]]
+- 6 edges to [[_COMMUNITY_BlueRed Team Security Auditor Skills]]
+- 6 edges to [[_COMMUNITY_Community 175]]
+- 5 edges to [[_COMMUNITY_Cross-Bot Trust & A2A Governance]]
+- 5 edges to [[_COMMUNITY_Community 205]]
+- 5 edges to [[_COMMUNITY_Community 65]]
+- 5 edges to [[_COMMUNITY_SOC Correlation & Router]]
+- 4 edges to [[_COMMUNITY_Community 166]]
+- 4 edges to [[_COMMUNITY_Community 124]]
+- 4 edges to [[_COMMUNITY_Community 100]]
+- 4 edges to [[_COMMUNITY_Community 573]]
+- 4 edges to [[_COMMUNITY_Canary Tripwire]]
+- 4 edges to [[_COMMUNITY_Community 80]]
+- 4 edges to [[_COMMUNITY_Community 190]]
+- 4 edges to [[_COMMUNITY_Community 189]]
+- 4 edges to [[_COMMUNITY_Community 38]]
+- 3 edges to [[_COMMUNITY_Community 104]]
+- 3 edges to [[_COMMUNITY_Community 119]]
+- 3 edges to [[_COMMUNITY_Proxy Sidecar & Forwarder]]
+- 3 edges to [[_COMMUNITY_TeamsGroup Collaborator Responses]]
+- 3 edges to [[_COMMUNITY_Community 57]]
+- 3 edges to [[_COMMUNITY_P3 Infrastructure Security Modules]]
+- 3 edges to [[_COMMUNITY_Community 72]]
+- 3 edges to [[_COMMUNITY_Community 50]]
+- 3 edges to [[_COMMUNITY_Community 182]]
+- 3 edges to [[_COMMUNITY_Community 97]]
+- 3 edges to [[_COMMUNITY_Community 253]]
+- 3 edges to [[_COMMUNITY_Community 686]]
+- 3 edges to [[_COMMUNITY_Community 188]]
+- 2 edges to [[_COMMUNITY_Community 134]]
+- 2 edges to [[_COMMUNITY_Community 37]]
+- 2 edges to [[_COMMUNITY_Community 101]]
+- 2 edges to [[_COMMUNITY_Community 112]]
+- 2 edges to [[_COMMUNITY_Community 131]]
+- 2 edges to [[_COMMUNITY_Community 138]]
+- 2 edges to [[_COMMUNITY_Community 42]]
+- 2 edges to [[_COMMUNITY_Community 68]]
+- 2 edges to [[_COMMUNITY_Community 329]]
+- 2 edges to [[_COMMUNITY_Community 254]]
+- 2 edges to [[_COMMUNITY_Community 219]]
+- 2 edges to [[_COMMUNITY_Encrypted Store & Drift Detector]]
+- 2 edges to [[_COMMUNITY_Community 487]]
+- 2 edges to [[_COMMUNITY_Community 90]]
+- 2 edges to [[_COMMUNITY_Community 98]]
+- 2 edges to [[_COMMUNITY_Community 292]]
+- 2 edges to [[_COMMUNITY_Community 87]]
+- 2 edges to [[_COMMUNITY_Community 54]]
+- 2 edges to [[_COMMUNITY_Community 43]]
+- 2 edges to [[_COMMUNITY_Community 185]]
+- 2 edges to [[_COMMUNITY_Community 88]]
+- 2 edges to [[_COMMUNITY_Community 368]]
+- 2 edges to [[_COMMUNITY_Community 793]]
+- 2 edges to [[_COMMUNITY_Community 248]]
+- 2 edges to [[_COMMUNITY_Community 46]]
+- 2 edges to [[_COMMUNITY_Community 74]]
+- 2 edges to [[_COMMUNITY_Community 86]]
+- 2 edges to [[_COMMUNITY_Community 44]]
+- 2 edges to [[_COMMUNITY_Community 888]]
+- 2 edges to [[_COMMUNITY_Community 282]]
+- 2 edges to [[_COMMUNITY_Community 235]]
+- 2 edges to [[_COMMUNITY_Community 386]]
+- 1 edge to [[_COMMUNITY_Community 845]]
+- 1 edge to [[_COMMUNITY_Community 739]]
+- 1 edge to [[_COMMUNITY_Community 454]]
+- 1 edge to [[_COMMUNITY_Community 1048]]
+- 1 edge to [[_COMMUNITY_Community 1049]]
+- 1 edge to [[_COMMUNITY_Community 1109]]
+- 1 edge to [[_COMMUNITY_Community 1115]]
+- 1 edge to [[_COMMUNITY_Community 467]]
+- 1 edge to [[_COMMUNITY_Community 45]]
+- 1 edge to [[_COMMUNITY_Community 863]]
+- 1 edge to [[_COMMUNITY_Community 518]]
+- 1 edge to [[_COMMUNITY_Community 491]]
+- 1 edge to [[_COMMUNITY_Community 582]]
+- 1 edge to [[_COMMUNITY_Community 339]]
+- 1 edge to [[_COMMUNITY_Voice Gateway STT & Browser Security]]
+- 1 edge to [[_COMMUNITY_Community 52]]
+- 1 edge to [[_COMMUNITY_Community 459]]
+- 1 edge to [[_COMMUNITY_Community 56]]
+- 1 edge to [[_COMMUNITY_Community 509]]
+- 1 edge to [[_COMMUNITY_Community 350]]
+- 1 edge to [[_COMMUNITY_Telegram Lockdown & Collaborator UX Tests]]
+- 1 edge to [[_COMMUNITY_Community 585]]
+- 1 edge to [[_COMMUNITY_Community 889]]
+- 1 edge to [[_COMMUNITY_Community 689]]
+- 1 edge to [[_COMMUNITY_Community 519]]
+- 1 edge to [[_COMMUNITY_Community 266]]
+- 1 edge to [[_COMMUNITY_Community 743]]
+- 1 edge to [[_COMMUNITY_Community 255]]
+- 1 edge to [[_COMMUNITY_Community 744]]
+- 1 edge to [[_COMMUNITY_Community 638]]
+- 1 edge to [[_COMMUNITY_Community 298]]
+- 1 edge to [[_COMMUNITY_Community 856]]
+- 1 edge to [[_COMMUNITY_Community 634]]
+
+## Top bridge nodes
+- [[lifespan.py]] - degree 135, connects to 68 communities
+- [[lifespan()]] - degree 84, connects to 51 communities
+- [[state.py]] - degree 37, connects to 19 communities
+- [[load_config()]] - degree 49, connects to 15 communities
+- [[ingest_apiconfig.py]] - degree 44, connects to 13 communities

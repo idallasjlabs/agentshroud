@@ -1,0 +1,341 @@
+---
+type: community
+cohesion: 0.01
+members: 241
+---
+
+# Voice Gateway STT & Browser Security
+
+**Cohesion:** 0.01 - loosely connected
+**Members:** 241 nodes
+
+## Members
+- [[dot-__init__()_153]] - code - gateway/proxy/web_content_scanner.py
+- [[dot-__init__()_154]] - code - gateway/proxy/web_proxy.py
+- [[dot-__init__()_155]] - code - gateway/security/subagent_governance.py
+- [[dot-__init__()_156]] - code - gateway/security/tool_chain_analyzer.py
+- [[dot-_calculate_risk_score()]] - code - gateway/security/tool_chain_analyzer.py
+- [[dot-_check_budget()]] - code - gateway/security/subagent_governance.py
+- [[dot-_cleanup_old_sessions()_1]] - code - gateway/security/tool_chain_analyzer.py
+- [[dot-_detect_chain_patterns()]] - code - gateway/security/tool_chain_analyzer.py
+- [[dot-_load_custom_patterns()]] - code - gateway/security/tool_chain_analyzer.py
+- [[dot-_load_default_patterns()]] - code - gateway/security/tool_chain_analyzer.py
+- [[dot-_log_event()_1]] - code - gateway/security/subagent_governance.py
+- [[dot-_matches_source_pattern()]] - code - gateway/security/tool_chain_analyzer.py
+- [[dot-_scan_encoded_payloads()]] - code - gateway/proxy/web_content_scanner.py
+- [[dot-_scan_hidden_content()]] - code - gateway/proxy/web_content_scanner.py
+- [[dot-_scan_pii()]] - code - gateway/proxy/web_content_scanner.py
+- [[dot-_scan_prompt_injection()]] - code - gateway/proxy/web_content_scanner.py
+- [[dot-_scan_zero_width()]] - code - gateway/proxy/web_content_scanner.py
+- [[dot-_trigger_alert()_1]] - code - gateway/security/tool_chain_analyzer.py
+- [[dot-acceptable()]] - code - gateway/security/subagent_governance.py
+- [[dot-add_pattern()]] - code - gateway/security/tool_chain_analyzer.py
+- [[dot-analyze_tool_call()]] - code - gateway/security/tool_chain_analyzer.py
+- [[dot-analyzer()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-analyzer()_1]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-analyzer()_2]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-authorize_spawn()]] - code - gateway/security/subagent_governance.py
+- [[dot-authorize_tool()]] - code - gateway/security/subagent_governance.py
+- [[dot-can_enter_credentials()]] - code - gateway/security/browser_security.py
+- [[dot-check_url_reputation()]] - code - gateway/security/browser_security.py
+- [[dot-deregister()_1]] - code - gateway/security/subagent_governance.py
+- [[dot-finding_summary()]] - code - gateway/proxy/web_content_scanner.py
+- [[dot-flagged()]] - code - gateway/proxy/web_content_scanner.py
+- [[dot-get_global_stats()_1]] - code - gateway/security/tool_chain_analyzer.py
+- [[dot-get_governance_events()]] - code - gateway/security/subagent_governance.py
+- [[dot-get_session_stats()_1]] - code - gateway/security/tool_chain_analyzer.py
+- [[dot-get_summary()_1]] - code - gateway/security/subagent_governance.py
+- [[dot-get_usage()]] - code - gateway/security/subagent_governance.py
+- [[dot-record_api_call()]] - code - gateway/security/subagent_governance.py
+- [[dot-record_egress()]] - code - gateway/security/subagent_governance.py
+- [[dot-record_tokens()]] - code - gateway/security/subagent_governance.py
+- [[dot-record_tool_call()]] - code - gateway/security/subagent_governance.py
+- [[dot-runtime_seconds()]] - code - gateway/security/subagent_governance.py
+- [[dot-sanitize_tool_params()]] - code - gateway/security/tool_chain_analyzer.py
+- [[dot-scan()_3]] - code - gateway/proxy/web_content_scanner.py
+- [[dot-score_output()]] - code - gateway/security/subagent_governance.py
+- [[dot-score_reversibility()]] - code - gateway/security/tool_chain_analyzer.py
+- [[dot-test_alert_callbacks()_1]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_approval_system()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_basic_tool_call_tracking()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_chain_length_limits()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_clean_params_pass()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_config_file_to_outbound()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_credential_to_outbound_blocking()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_custom_patterns()_1]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_data_uri_blocked()]] - code - gateway/tests/test_browser_security.py
+- [[dot-test_delete_file_mostly_irreversible()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_disabled_analyzer()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_edge_cases()_3]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_excessive_subdomains()]] - code - gateway/tests/test_browser_security.py
+- [[dot-test_exec_to_network_pattern()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_fake_captcha()]] - code - gateway/tests/test_browser_security.py
+- [[dot-test_fake_dialog_detected()]] - code - gateway/tests/test_browser_security.py
+- [[dot-test_fake_windows_alert()]] - code - gateway/tests/test_browser_security.py
+- [[dot-test_global_stats()_1]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_homograph_attack()]] - code - gateway/tests/test_browser_security.py
+- [[dot-test_http_blocked()]] - code - gateway/tests/test_browser_security.py
+- [[dot-test_https_allowed()]] - code - gateway/tests/test_browser_security.py
+- [[dot-test_initialization()_5]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_ip_address_url()]] - code - gateway/tests/test_browser_security.py
+- [[dot-test_ip_blocked_for_credentials()]] - code - gateway/tests/test_browser_security.py
+- [[dot-test_known_phishing_pattern()]] - code - gateway/tests/test_browser_security.py
+- [[dot-test_legitimate_file_path_passes()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_legitimate_url()]] - code - gateway/tests/test_browser_security.py
+- [[dot-test_localhost_allowed()]] - code - gateway/tests/test_browser_security.py
+- [[dot-test_multiple_params_scanned()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_multiple_threats_aggregated()]] - code - gateway/tests/test_browser_security.py
+- [[dot-test_normal_tool_sequences_allowed()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_param_path_traversal_blocked()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_param_sql_injection_blocked()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_param_template_injection_blocked()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_pattern_configuration()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_rapid_file_enumeration()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_read_file_fully_reversible()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_read_to_http_exfiltration()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_read_to_message_exfiltration()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_reversibility_below_threshold_has_reasoning()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_risk_score_calculation()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_safe_content_passes()]] - code - gateway/tests/test_browser_security.py
+- [[dot-test_sanitization_returns_cleaned()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_session_cleanup()_1]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_session_stats()_1]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_shell_bleed_bypass_blocked()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_suspicious_domain_blocked()]] - code - gateway/tests/test_browser_security.py
+- [[dot-test_suspicious_subdomain()]] - code - gateway/tests/test_browser_security.py
+- [[dot-test_tech_support_scam()]] - code - gateway/tests/test_browser_security.py
+- [[dot-test_time_window_expiry()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_unknown_tool_defaults_low()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[dot-test_urgent_action_required()]] - code - gateway/tests/test_browser_security.py
+- [[dot-to_dict()_13]] - code - gateway/security/subagent_governance.py
+- [[A detected suspicious chain.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[A single finding from content scanning.]] - rationale - gateway/proxy/web_content_scanner.py
+- [[Action to take when a governance limit is hit.]] - rationale - gateway/security/subagent_governance.py
+- [[Actions to take on suspicious chains.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Add a new chain pattern at runtime.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[AlarmStatus]] - code - gateway/soc/models.py
+- [[Analyze a tool call for suspicious chain patterns.          Args             se]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Any_59]] - code - gateway/security/tool_chain_analyzer.py
+- [[Authorize a subagent spawn. Returns (allowed, reason).]] - rationale - gateway/security/subagent_governance.py
+- [[Calculate risk score for a detected chain.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[ChainAction]] - code - gateway/security/tool_chain_analyzer.py
+- [[ChainMatch]] - code - gateway/security/tool_chain_analyzer.py
+- [[ChainPattern]] - code - gateway/security/tool_chain_analyzer.py
+- [[Check if a call matches the source pattern, including parameter analysis.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Check if a resource budget is exceeded.]] - rationale - gateway/security/subagent_governance.py
+- [[Check if a subagent is allowed to use a specific tool.]] - rationale - gateway/security/subagent_governance.py
+- [[Check text for PII patterns. Returns list of pattern names found.]] - rationale - gateway/security/subagent_governance.py
+- [[Check text for data exfiltration patterns.]] - rationale - gateway/security/subagent_governance.py
+- [[Check text for prompt injection patterns.]] - rationale - gateway/security/subagent_governance.py
+- [[Configuration for subagent output trust scoring.]] - rationale - gateway/security/subagent_governance.py
+- [[ContentFinding]] - code - gateway/proxy/web_content_scanner.py
+- [[Create a ToolChainAnalyzer instance for testing.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Create a mock alert callback for testing.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[CredentialEntryBlocked]] - code - gateway/security/browser_security.py
+- [[Definition of a suspicious tool call pattern.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Detect if current call completes a suspicious pattern.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Detect zero-width character sequences (steganographic attacks).]] - rationale - gateway/proxy/web_content_scanner.py
+- [[Empty STT result no LLM call, state goes directly to idle.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Enum_3]] - code
+- [[Exception_4]] - code
+- [[FindingSeverity]] - code - gateway/proxy/web_content_scanner.py
+- [[Get a summary of all subagent governance state for a session.]] - rationale - gateway/security/subagent_governance.py
+- [[Get current resource usage for a subagent.]] - rationale - gateway/security/subagent_governance.py
+- [[Get global analyzer statistics.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Get statistics for a session._1]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[GovernanceAction]] - code - gateway/security/subagent_governance.py
+- [[GovernanceConfig]] - code - gateway/security/subagent_governance.py
+- [[GovernanceEvent]] - code - gateway/security/subagent_governance.py
+- [[GovernanceEventType]] - code - gateway/security/subagent_governance.py
+- [[How reversible an action is (1.0 = fully reversible, 0.0 = irreversible).]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Initialize the tool chain analyzer.          Args             config Configura]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Load custom patterns from configuration.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Load default suspicious chain patterns.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[OutputScore]] - code - gateway/security/subagent_governance.py
+- [[OutputTrustConfig]] - code - gateway/security/subagent_governance.py
+- [[ParamScanResult]] - code - gateway/security/tool_chain_analyzer.py
+- [[Per-subagent resource limits.]] - rationale - gateway/security/subagent_governance.py
+- [[PhishingURLDetected]] - code - gateway/security/browser_security.py
+- [[Privilege escalation prevention policy.]] - rationale - gateway/security/subagent_governance.py
+- [[PrivilegePolicy]] - code - gateway/security/subagent_governance.py
+- [[Record a tool invocation.]] - rationale - gateway/security/subagent_governance.py
+- [[Record an LLM API call.]] - rationale - gateway/security/subagent_governance.py
+- [[Record outbound data volume.]] - rationale - gateway/security/subagent_governance.py
+- [[Record token consumption. Returns (within_budget, message).]] - rationale - gateway/security/subagent_governance.py
+- [[Remove a subagent from governance tracking. Returns final usage.]] - rationale - gateway/security/subagent_governance.py
+- [[Remove old sessions to prevent memory bloat._1]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Represents a single tool call.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[ResourceBudget]] - code - gateway/security/subagent_governance.py
+- [[ResourceUsage_1]] - code - gateway/security/subagent_governance.py
+- [[Result of scanning tool parameters for injection patterns.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Result of scanning web content.]] - rationale - gateway/proxy/web_content_scanner.py
+- [[Result of scoring a subagent's output.]] - rationale - gateway/security/subagent_governance.py
+- [[Return a reversibility score for the given tool call (1.0 = safe, 0.1 = irrevers]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[ReversibilityScore]] - code - gateway/security/tool_chain_analyzer.py
+- [[Risk levels for tool call chains.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[RiskLevel_5]] - code - gateway/security/tool_chain_analyzer.py
+- [[Scan HTML for hidden instructions in comments, invisible elements, meta tags.]] - rationale - gateway/proxy/web_content_scanner.py
+- [[Scan content for security issues.          Args             content The web co]] - rationale - gateway/proxy/web_content_scanner.py
+- [[Scan for base64-encoded or otherwise obfuscated payloads.]] - rationale - gateway/proxy/web_content_scanner.py
+- [[Scan for prompt injection patterns.]] - rationale - gateway/proxy/web_content_scanner.py
+- [[Scan response content for PII.]] - rationale - gateway/proxy/web_content_scanner.py
+- [[Scan tool parameters for injection payloads and return sanitized copy.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Scan web content for prompt injection, PII, and hidden payloads.      All findin]] - rationale - gateway/proxy/web_content_scanner.py
+- [[ScanResult_4]] - code - gateway/proxy/web_content_scanner.py
+- [[Score a subagent's output for safety and quality.          In a full deployment,]] - rationale - gateway/security/subagent_governance.py
+- [[SessionChainContext]] - code - gateway/security/tool_chain_analyzer.py
+- [[SocialEngineeringDetected]] - code - gateway/security/browser_security.py
+- [[SubagentGovernance]] - code - gateway/security/subagent_governance.py
+- [[Test alert callback functionality._1]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test approval system interface.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test basic tool call tracking functionality.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test broadcast handles failed client sends]] - rationale - gateway/tests/test_approval_queue.py
+- [[Test cases for ToolChainAnalyzer class.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test cleanup of old sessions._1]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test detection of config file access → outbound pattern.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test detection of exec → network communication pattern.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test detection of rapid file enumeration.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test detection of read → HTTP exfiltration pattern.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test detection of read → message exfiltration pattern.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test edge cases and error conditions._2]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test getting global statistics.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test getting session statistics._1]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test loading custom patterns from configuration.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test proper initialization of ToolChainAnalyzer.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test risk score calculation for detected chains.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test that chain length limits are respected.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test that credential access → outbound tools are blocked.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test that disabled analyzer allows all calls.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test that normal tool sequences pass through.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test that patterns are properly configured.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test that patterns don't match outside time windows.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[TestCredentialProtection]] - code - gateway/tests/test_browser_security.py
+- [[TestParamSanitization]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[TestReversibilityScoring]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[TestShellBleedPatterns]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[TestSocialEngineeringDetection]] - code - gateway/tests/test_browser_security.py
+- [[TestToolChainAnalyzer_1]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[TestURLReputation]] - code - gateway/tests/test_browser_security.py
+- [[Threat levels for detected issues.]] - rationale - gateway/security/git_guard.py
+- [[ThreatLevel]] - code - gateway/security/browser_security.py
+- [[ThreatLevel_1]] - code - gateway/security/git_guard.py
+- [[Tool call chain context for a session.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[ToolCall]] - code - gateway/security/tool_chain_analyzer.py
+- [[Top-level governance configuration.]] - rationale - gateway/security/subagent_governance.py
+- [[Tracks cumulative resource consumption for a single subagent.]] - rationale - gateway/security/subagent_governance.py
+- [[Trigger alert callbacks for a detected chain.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[URLAnalyzer]] - code - gateway/proxy/web_proxy.py
+- [[URLVerdict]] - code - gateway/proxy/url_analyzer.py
+- [[Unified governance layer for subagent lifecycle.      Wraps SubagentMonitor with]] - rationale - gateway/security/subagent_governance.py
+- [[Verify expanded _PARAM_INJECTION_PATTERNS catch piped-interpreter and     heredo]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[WSEventType]] - code - gateway/soc/models.py
+- [[WebContentScanner]] - code - gateway/proxy/web_content_scanner.py
+- [[WebContentScanner_1]] - code - gateway/proxy/web_proxy.py
+- [[WebProxyConfig_1]] - code - gateway/proxy/web_proxy.py
+- [[Wu et al. 2026 (arXiv2601.07263) — Browser-based agent social engineering attacks]] - paper - docs/vault/02 - Modules/Security Modules/browser_security.py.md
+- [[_check_exfil_patterns()]] - code - gateway/security/subagent_governance.py
+- [[_check_injection_patterns()]] - code - gateway/security/subagent_governance.py
+- [[_check_pii_patterns()]] - code - gateway/security/subagent_governance.py
+- [[browser_security.py]] - code - gateway/security/browser_security.py
+- [[git_guard.py]] - code - gateway/security/git_guard.py
+- [[guard()_4]] - code - gateway/tests/test_browser_security.py
+- [[mock_alert_callback()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[str_2]] - code
+- [[subagent_governance.py]] - code - gateway/security/subagent_governance.py
+- [[test_broadcast_with_failed_client()]] - code - gateway/tests/test_approval_queue.py
+- [[test_browser_security.py]] - code - gateway/tests/test_browser_security.py
+- [[test_tool_chain_analyzer.py]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[test_ws_empty_transcript_goes_idle()]] - code - gateway/tests/test_voice_gateway.py
+- [[tool_chain_analyzer()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[tool_chain_analyzer.py]] - code - gateway/security/tool_chain_analyzer.py
+- [[url_analyzer.py]] - code - gateway/proxy/url_analyzer.py
+- [[web_content_scanner.py]] - code - gateway/proxy/web_content_scanner.py
+- [[web_proxy.py]] - code - gateway/proxy/web_proxy.py
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/Voice_Gateway_STT__Browser_Security
+SORT file.name ASC
+```
+
+## Connections to other communities
+- 40 edges to [[_COMMUNITY_Alert Dispatcher & RBAC Reliability]]
+- 16 edges to [[_COMMUNITY_Community 68]]
+- 16 edges to [[_COMMUNITY_Community 51]]
+- 14 edges to [[_COMMUNITY_Ingest API & RBAC Core]]
+- 14 edges to [[_COMMUNITY_Egress Filter & HTTP Proxy]]
+- 12 edges to [[_COMMUNITY_P3 Infrastructure Security Modules]]
+- 11 edges to [[_COMMUNITY_Community 96]]
+- 5 edges to [[_COMMUNITY_BlueRed Team Security Auditor Skills]]
+- 5 edges to [[_COMMUNITY_Session Manager & PIIContext Guard]]
+- 5 edges to [[_COMMUNITY_Signed Instruction Envelopes & Security Pipeline]]
+- 5 edges to [[_COMMUNITY_Community 155]]
+- 4 edges to [[_COMMUNITY_Community 153]]
+- 4 edges to [[_COMMUNITY_Memory Integrity & Lifecycle]]
+- 4 edges to [[_COMMUNITY_Community 658]]
+- 4 edges to [[_COMMUNITY_Community 63]]
+- 3 edges to [[_COMMUNITY_Community 101]]
+- 3 edges to [[_COMMUNITY_Community 121]]
+- 3 edges to [[_COMMUNITY_Community 132]]
+- 3 edges to [[_COMMUNITY_Community 135]]
+- 3 edges to [[_COMMUNITY_Community 136]]
+- 3 edges to [[_COMMUNITY_Community 137]]
+- 3 edges to [[_COMMUNITY_Community 142]]
+- 3 edges to [[_COMMUNITY_Community 183]]
+- 3 edges to [[_COMMUNITY_Agent Isolation & Group Config Tests]]
+- 3 edges to [[_COMMUNITY_Community 334]]
+- 3 edges to [[_COMMUNITY_Community 35]]
+- 3 edges to [[_COMMUNITY_Community 48]]
+- 3 edges to [[_COMMUNITY_Community 487]]
+- 3 edges to [[_COMMUNITY_Community 74]]
+- 3 edges to [[_COMMUNITY_Community 97]]
+- 3 edges to [[_COMMUNITY_Community 58]]
+- 3 edges to [[_COMMUNITY_Community 689]]
+- 2 edges to [[_COMMUNITY_Community 1039]]
+- 2 edges to [[_COMMUNITY_Community 109]]
+- 2 edges to [[_COMMUNITY_Multi-Agent Router & Chat UI]]
+- 2 edges to [[_COMMUNITY_Community 167]]
+- 2 edges to [[_COMMUNITY_Community 175]]
+- 2 edges to [[_COMMUNITY_Community 187]]
+- 2 edges to [[_COMMUNITY_Community 204]]
+- 2 edges to [[_COMMUNITY_Community 211]]
+- 2 edges to [[_COMMUNITY_Community 289]]
+- 2 edges to [[_COMMUNITY_Community 44]]
+- 2 edges to [[_COMMUNITY_Community 89]]
+- 2 edges to [[_COMMUNITY_Community 50]]
+- 2 edges to [[_COMMUNITY_Community 535]]
+- 1 edge to [[_COMMUNITY_Community 107]]
+- 1 edge to [[_COMMUNITY_Voice Gateway Routing Tests]]
+- 1 edge to [[_COMMUNITY_Voice Gateway Test Fixtures]]
+- 1 edge to [[_COMMUNITY_Community 47]]
+- 1 edge to [[_COMMUNITY_Community 1014]]
+- 1 edge to [[_COMMUNITY_Community 114]]
+- 1 edge to [[_COMMUNITY_Community 117]]
+- 1 edge to [[_COMMUNITY_Community 125]]
+- 1 edge to [[_COMMUNITY_Approval Routing & Event Bus]]
+- 1 edge to [[_COMMUNITY_Prompt Guard & Context Integrity]]
+- 1 edge to [[_COMMUNITY_Community 232]]
+- 1 edge to [[_COMMUNITY_Slack Proxy & Main Endpoint Tests]]
+- 1 edge to [[_COMMUNITY_Community 288]]
+- 1 edge to [[_COMMUNITY_Community 291]]
+- 1 edge to [[_COMMUNITY_Runtime Security Comparison & Intel Report]]
+- 1 edge to [[_COMMUNITY_Community 38]]
+- 1 edge to [[_COMMUNITY_Community 39]]
+- 1 edge to [[_COMMUNITY_Community 46]]
+- 1 edge to [[_COMMUNITY_Cross-Bot Trust & A2A Governance]]
+- 1 edge to [[_COMMUNITY_Community 88]]
+- 1 edge to [[_COMMUNITY_Community 86]]
+- 1 edge to [[_COMMUNITY_Community 849]]
+- 1 edge to [[_COMMUNITY_Community 911]]
+- 1 edge to [[_COMMUNITY_Community 81]]
+- 1 edge to [[_COMMUNITY_Community 56]]
+- 1 edge to [[_COMMUNITY_Community 52]]
+- 1 edge to [[_COMMUNITY_Community 67]]
+
+## Top bridge nodes
+- [[Enum_3]] - degree 104, connects to 46 communities
+- [[str_2]] - degree 44, connects to 23 communities
+- [[Exception_4]] - degree 18, connects to 11 communities
+- [[web_proxy.py]] - degree 27, connects to 10 communities
+- [[dot-__init__()_154]] - degree 12, connects to 6 communities
