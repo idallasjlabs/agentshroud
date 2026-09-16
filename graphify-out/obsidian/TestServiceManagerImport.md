@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_soc_services.py"
 type: "code"
-community: "Community 14"
+community: "SOC Service Manager (Container Engine)"
 location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_14
+  - community/SOC_Service_Manager_Container_Engine
 ---
 
 # TestServiceManagerImport
 
 ## Connections
-- [[.test_import()]] - `method` [EXTRACTED]
-- [[.test_instantiate_without_engine()]] - `method` [EXTRACTED]
+- [[dot-test_import()_1]] - `method` [EXTRACTED]
+- [[dot-test_instantiate_without_engine()]] - `method` [EXTRACTED]
 - [[ServiceManager]] - `uses` [INFERRED]
 - [[Verify ServiceManager can be imported without a running container engine.]] - `rationale_for` [EXTRACTED]
 - [[test_soc_services.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_14
+#graphify/code #graphify/EXTRACTED #community/SOC_Service_Manager_Container_Engine

@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_key_rotation_internals.py"
 type: "code"
-community: "Community 226"
+community: "Community 232"
 location: "L133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_226
+  - community/Community_232
 ---
 
 # TestRotateGuardBranches
 
 ## Connections
-- [[.test_in_progress_is_rejected()]] - `method` [EXTRACTED]
-- [[.test_max_attempts_exceeded_is_rejected()]] - `method` [EXTRACTED]
-- [[.test_not_due_without_force_is_rejected()]] - `method` [EXTRACTED]
-- [[.test_store_failure_marks_failed()]] - `method` [EXTRACTED]
-- [[.test_unknown_credential_returns_error()]] - `method` [EXTRACTED]
+- [[dot-test_in_progress_is_rejected()]] - `method` [EXTRACTED]
+- [[dot-test_max_attempts_exceeded_is_rejected()]] - `method` [EXTRACTED]
+- [[dot-test_not_due_without_force_is_rejected()]] - `method` [EXTRACTED]
+- [[dot-test_store_failure_marks_failed()]] - `method` [EXTRACTED]
+- [[dot-test_unknown_credential_returns_error()]] - `method` [EXTRACTED]
 - [[CredentialInfo]] - `uses` [INFERRED]
 - [[CredentialValidator]] - `uses` [INFERRED]
 - [[KeyRotationConfig_1]] - `uses` [INFERRED]
@@ -24,4 +24,4 @@ tags:
 - [[RotationStatus]] - `uses` [INFERRED]
 - [[test_key_rotation_internals.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_226
+#graphify/code #graphify/EXTRACTED #community/Community_232

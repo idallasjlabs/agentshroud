@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_key_rotation_internals.py"
 type: "code"
-community: "Community 226"
+community: "Community 232"
 location: "L184"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_226
+  - community/Community_232
 ---
 
 # TestStatusHelpers
 
 ## Connections
-- [[.test_get_all_credentials_status_lists_registered()]] - `method` [EXTRACTED]
-- [[.test_get_credential_status_none_for_unknown()]] - `method` [EXTRACTED]
-- [[.test_health_score_empty_is_perfect()]] - `method` [EXTRACTED]
+- [[dot-test_get_all_credentials_status_lists_registered()]] - `method` [EXTRACTED]
+- [[dot-test_get_credential_status_none_for_unknown()]] - `method` [EXTRACTED]
+- [[dot-test_health_score_empty_is_perfect()]] - `method` [EXTRACTED]
 - [[CredentialInfo]] - `uses` [INFERRED]
 - [[CredentialValidator]] - `uses` [INFERRED]
 - [[KeyRotationConfig_1]] - `uses` [INFERRED]
@@ -22,4 +22,4 @@ tags:
 - [[RotationStatus]] - `uses` [INFERRED]
 - [[test_key_rotation_internals.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_226
+#graphify/code #graphify/INFERRED #community/Community_232

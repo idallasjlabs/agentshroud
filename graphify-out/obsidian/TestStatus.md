@@ -1,19 +1,22 @@
 ---
-source_file: "gateway/tests/test_credential_injector.py"
+source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "Community 915"
-location: "L176"
+community: "Community 45"
+location: "L209"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_915
+  - community/Community_45
 ---
 
 # TestStatus
 
 ## Connections
-- [[.test_credential_never_in_logs()]] - `method` [EXTRACTED]
-- [[.test_get_status_structure()]] - `method` [EXTRACTED]
-- [[test_credential_injector.py]] - `contains` [EXTRACTED]
+- [[dot-test_status_runtime_failure_degrades_gracefully()]] - `method` [EXTRACTED]
+- [[dot-test_status_with_running_and_stopped_containers()]] - `method` [EXTRACTED]
+- [[KillSwitchAction]] - `uses` [INFERRED]
+- [[ModeRequest]] - `uses` [INFERRED]
+- [[UpdateRequest]] - `uses` [INFERRED]
+- [[test_web_api_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_915
+#graphify/code #graphify/EXTRACTED #community/Community_45

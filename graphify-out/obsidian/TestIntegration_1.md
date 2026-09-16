@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "code"
-community: "Memory Lifecycle & Egress Filtering"
+community: "Community 64"
 location: "L327"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Memory_Lifecycle__Egress_Filtering
+  - community/Community_64
 ---
 
 # TestIntegration
 
 ## Connections
-- [[.test_performance_with_large_content()]] - `method` [EXTRACTED]
-- [[.test_realistic_web_scraping_result()]] - `method` [EXTRACTED]
+- [[dot-test_performance_with_large_content()]] - `method` [EXTRACTED]
+- [[dot-test_realistic_web_scraping_result()]] - `method` [EXTRACTED]
 - [[Integration tests for the sanitizer.]] - `rationale_for` [EXTRACTED]
 - [[ToolResultSanitizer_1]] - `uses` [INFERRED]
 - [[ToolResultSanitizerConfig]] - `uses` [INFERRED]
 - [[test_tool_result_sanitizer_enhanced.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Memory_Lifecycle__Egress_Filtering
+#graphify/code #graphify/EXTRACTED #community/Community_64

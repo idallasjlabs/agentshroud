@@ -1,27 +1,27 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "Community 30"
+community: "Encrypted Store & Drift Detector"
 location: "L766"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_30
+  - community/Encrypted_Store__Drift_Detector
 ---
 
 # TestSecureZero
 
 ## Connections
-- [[.test_encrypt_decrypt_still_works_after_zeroing()]] - `method` [EXTRACTED]
-- [[.test_key_rotation_with_zeroing()]] - `method` [EXTRACTED]
-- [[.test_secure_zero_bytearray()]] - `method` [EXTRACTED]
-- [[.test_secure_zero_empty()]] - `method` [EXTRACTED]
+- [[dot-test_encrypt_decrypt_still_works_after_zeroing()]] - `method` [EXTRACTED]
+- [[dot-test_key_rotation_with_zeroing()]] - `method` [EXTRACTED]
+- [[dot-test_secure_zero_bytearray()]] - `method` [EXTRACTED]
+- [[dot-test_secure_zero_empty()]] - `method` [EXTRACTED]
 - [[AgentRegistry]] - `uses` [INFERRED]
-- [[ContainerConfig]] - `uses` [INFERRED]
+- [[ContainerConfig_1]] - `uses` [INFERRED]
 - [[ContainerSnapshot]] - `uses` [INFERRED]
 - [[DriftDetector]] - `uses` [INFERRED]
 - [[EgressAction]] - `uses` [INFERRED]
-- [[EgressFilter_1]] - `uses` [INFERRED]
+- [[EgressFilter]] - `uses` [INFERRED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[EgressPolicy]] - `uses` [INFERRED]
 - [[EncryptedStore]] - `uses` [INFERRED]
@@ -32,8 +32,8 @@ tags:
 - [[Tests for key material zeroing (C2 fix).]] - `rationale_for` [EXTRACTED]
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustLevel_1]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
+- [[TrustLevel]] - `uses` [INFERRED]
+- [[TrustManager]] - `uses` [INFERRED]
 - [[test_security_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_30
+#graphify/code #graphify/INFERRED #community/Encrypted_Store__Drift_Detector

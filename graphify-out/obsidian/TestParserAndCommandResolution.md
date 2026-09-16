@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_multi_host_test.py"
 type: "code"
-community: "Community 1254"
+community: "Community 1300"
 location: "L240"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1254
+  - community/Community_1300
 ---
 
 # TestParserAndCommandResolution
 
 ## Connections
-- [[.test_parser_defaults()]] - `method` [EXTRACTED]
-- [[.test_parser_hosts_and_command()]] - `method` [EXTRACTED]
+- [[dot-test_parser_defaults()]] - `method` [EXTRACTED]
+- [[dot-test_parser_hosts_and_command()]] - `method` [EXTRACTED]
 - [[HostResult]] - `uses` [INFERRED]
 - [[HostStatus]] - `uses` [INFERRED]
 - [[MultiHostResult]] - `uses` [INFERRED]
 - [[test_multi_host_test.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1254
+#graphify/code #graphify/EXTRACTED #community/Community_1300

@@ -1,22 +1,20 @@
 ---
-source_file: "gateway/tests/test_trust_manager.py"
+source_file: "gateway/tests/test_report_store.py"
 type: "code"
-community: "Progressive Trust"
-location: "L184"
+community: "Community 87"
+location: "L90"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Progressive_Trust
+  - graphify/EXTRACTED
+  - community/Community_87
 ---
 
 # TestPersistence
 
 ## Connections
-- [[.test_persistence_across_instances()]] - `method` [EXTRACTED]
-- [[Test trust survives restart.]] - `rationale_for` [EXTRACTED]
-- [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustLevel_1]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
-- [[test_trust_manager.py]] - `contains` [EXTRACTED]
+- [[dot-test_delete()]] - `method` [EXTRACTED]
+- [[dot-test_survives_new_instance()]] - `method` [EXTRACTED]
+- [[ReportStore]] - `uses` [INFERRED]
+- [[test_report_store.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Progressive_Trust
+#graphify/code #graphify/EXTRACTED #community/Community_87

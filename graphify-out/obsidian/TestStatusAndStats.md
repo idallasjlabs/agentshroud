@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_killswitch_monitor_behavior.py"
 type: "code"
-community: "Community 25"
+community: "Community 54"
 location: "L201"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_25
+  - community/Community_54
 ---
 
 # TestStatusAndStats
 
 ## Connections
-- [[.test_clean_old_metrics_drops_stale_entries()]] - `method` [EXTRACTED]
-- [[.test_get_status_reports_verification_due()]] - `method` [EXTRACTED]
-- [[.test_get_system_stats_handles_psutil_error()]] - `method` [EXTRACTED]
+- [[dot-test_clean_old_metrics_drops_stale_entries()]] - `method` [EXTRACTED]
+- [[dot-test_get_status_reports_verification_due()]] - `method` [EXTRACTED]
+- [[dot-test_get_system_stats_handles_psutil_error()]] - `method` [EXTRACTED]
 - [[KillSwitchConfig]] - `uses` [INFERRED]
 - [[KillSwitchMonitor]] - `uses` [INFERRED]
 - [[test_killswitch_monitor_behavior.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_25
+#graphify/code #graphify/EXTRACTED #community/Community_54

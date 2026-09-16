@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "Security Audit & Drift Detection"
+community: "P3 Infrastructure Security Modules"
 location: "L1030"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Security_Audit__Drift_Detection
+  - community/P3_Infrastructure_Security_Modules
 ---
 
 # TestResourceProtection
 
 ## Connections
-- [[.test_cpu_limit_check()]] - `method` [EXTRACTED]
-- [[.test_disk_write_limit()]] - `method` [EXTRACTED]
-- [[.test_memory_limit_check()]] - `method` [EXTRACTED]
-- [[.test_prompt_guard_large_input()]] - `method` [EXTRACTED]
-- [[.test_resource_guard_init()]] - `method` [EXTRACTED]
-- [[.test_session_rate_limit()]] - `method` [EXTRACTED]
-- [[.test_subagent_monitor_loaded()]] - `method` [EXTRACTED]
-- [[.test_usage_stats()]] - `method` [EXTRACTED]
+- [[dot-test_cpu_limit_check()]] - `method` [EXTRACTED]
+- [[dot-test_disk_write_limit()]] - `method` [EXTRACTED]
+- [[dot-test_memory_limit_check()]] - `method` [EXTRACTED]
+- [[dot-test_prompt_guard_large_input()]] - `method` [EXTRACTED]
+- [[dot-test_resource_guard_init()]] - `method` [EXTRACTED]
+- [[dot-test_session_rate_limit()]] - `method` [EXTRACTED]
+- [[dot-test_subagent_monitor_loaded()]] - `method` [EXTRACTED]
+- [[dot-test_usage_stats()]] - `method` [EXTRACTED]
 - [[AlertDispatcher]] - `uses` [INFERRED]
 - [[ConfusedDeputyError]] - `uses` [INFERRED]
 - [[ConsentDecision]] - `uses` [INFERRED]
@@ -41,7 +41,7 @@ tags:
 - [[LogSanitizer_1]] - `uses` [INFERRED]
 - [[MetadataGuard]] - `uses` [INFERRED]
 - [[NetworkValidator]] - `uses` [INFERRED]
-- [[PIIConfig_1]] - `uses` [INFERRED]
+- [[PIIConfig]] - `uses` [INFERRED]
 - [[PIISanitizer]] - `uses` [INFERRED]
 - [[PKCEViolation]] - `uses` [INFERRED]
 - [[PromptGuard]] - `uses` [INFERRED]
@@ -53,7 +53,7 @@ tags:
 - [[SubagentMonitor]] - `uses` [INFERRED]
 - [[Test resource limits and DoS prevention.]] - `rationale_for` [EXTRACTED]
 - [[ThreatAssessment]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
+- [[TrustManager]] - `uses` [INFERRED]
 - [[test_security_audit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Security_Audit__Drift_Detection
+#graphify/code #graphify/INFERRED #community/P3_Infrastructure_Security_Modules

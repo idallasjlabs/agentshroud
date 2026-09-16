@@ -1,25 +1,26 @@
 ---
-source_file: "gateway/tests/test_a2a_governance.py"
+source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "Community 40"
-location: "L121"
+community: "Egress Filter & HTTP Proxy"
+location: "L326"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_40
+  - community/Egress_Filter__HTTP_Proxy
 ---
 
 # TestRateLimiting
 
 ## Connections
-- [[.test_rate_limit_exceeded()]] - `method` [EXTRACTED]
-- [[.test_within_rate_limit()]] - `method` [EXTRACTED]
-- [[A2ADecision]] - `uses` [INFERRED]
-- [[A2AGovernanceConfig]] - `uses` [INFERRED]
-- [[A2AGovernanceProxy]] - `uses` [INFERRED]
-- [[A2AMessage]] - `uses` [INFERRED]
-- [[A2AMessageType]] - `uses` [INFERRED]
-- [[A2APeer]] - `uses` [INFERRED]
-- [[test_a2a_governance.py]] - `contains` [EXTRACTED]
+- [[dot-test_different_domains_independent()]] - `method` [EXTRACTED]
+- [[dot-test_rate_limit_blocks_excess()]] - `method` [EXTRACTED]
+- [[dot-test_rate_limiter_reset()]] - `method` [EXTRACTED]
+- [[AuditChain]] - `uses` [INFERRED]
+- [[DomainSettings]] - `uses` [INFERRED]
+- [[ProxyAction]] - `uses` [INFERRED]
+- [[RateLimiter_1]] - `uses` [INFERRED]
+- [[WebProxy]] - `uses` [INFERRED]
+- [[WebProxyConfig]] - `uses` [INFERRED]
+- [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_40
+#graphify/code #graphify/INFERRED #community/Egress_Filter__HTTP_Proxy

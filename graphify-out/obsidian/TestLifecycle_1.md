@@ -1,27 +1,22 @@
 ---
-source_file: "gateway/tests/test_subagent_governance.py"
+source_file: "gateway/tests/test_dns_blocklist.py"
 type: "code"
-community: "Community 639"
-location: "L200"
+community: "Community 138"
+location: "L152"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_639
+  - graphify/EXTRACTED
+  - community/Community_138
 ---
 
 # TestLifecycle
 
 ## Connections
-- [[.test_deregister_cleans_up()]] - `method` [EXTRACTED]
-- [[.test_deregister_returns_usage()]] - `method` [EXTRACTED]
-- [[.test_summary()_1]] - `method` [EXTRACTED]
-- [[GovernanceAction]] - `uses` [INFERRED]
-- [[GovernanceConfig]] - `uses` [INFERRED]
-- [[GovernanceEventType]] - `uses` [INFERRED]
-- [[OutputTrustConfig]] - `uses` [INFERRED]
-- [[PrivilegePolicy]] - `uses` [INFERRED]
-- [[ResourceBudget]] - `uses` [INFERRED]
-- [[SubagentGovernance]] - `uses` [INFERRED]
-- [[test_subagent_governance.py]] - `contains` [EXTRACTED]
+- [[dot-test_start_creates_task()]] - `method` [EXTRACTED]
+- [[dot-test_stats_returns_counts()]] - `method` [EXTRACTED]
+- [[dot-test_stop_cancels_task()]] - `method` [EXTRACTED]
+- [[DNSBlocklist]] - `uses` [INFERRED]
+- [[Lifecycle start_periodic_updates()stop() task management.]] - `rationale_for` [EXTRACTED]
+- [[test_dns_blocklist.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_639
+#graphify/code #graphify/EXTRACTED #community/Community_138

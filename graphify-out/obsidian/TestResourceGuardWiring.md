@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_resource_guard_wiring.py"
 type: "code"
-community: "Community 807"
+community: "P3 Infrastructure Security Modules"
 location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_807
+  - community/P3_Infrastructure_Security_Modules
 ---
 
 # TestResourceGuardWiring
 
 ## Connections
-- [[.test_setup_resource_guard_returns_real_guard_with_default_limits()]] - `method` [EXTRACTED]
-- [[.test_setup_with_custom_limits_overrides_defaults()]] - `method` [EXTRACTED]
+- [[dot-test_setup_resource_guard_returns_real_guard_with_default_limits()]] - `method` [EXTRACTED]
+- [[dot-test_setup_with_custom_limits_overrides_defaults()]] - `method` [EXTRACTED]
 - [[ResourceGuard]] - `uses` [INFERRED]
 - [[ResourceGuard is instantiated at startup and reachable on app_state.]] - `rationale_for` [EXTRACTED]
 - [[ResourceLimits]] - `uses` [INFERRED]
 - [[test_resource_guard_wiring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_807
+#graphify/code #graphify/EXTRACTED #community/P3_Infrastructure_Security_Modules

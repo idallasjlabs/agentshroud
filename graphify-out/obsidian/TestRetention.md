@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "code"
-community: "Community 26"
+community: "Gateway Config & PII Sanitizer"
 location: "L273"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_26
+  - community/Gateway_Config__PII_Sanitizer
 ---
 
 # TestRetention
 
 ## Connections
-- [[.test_enforce_retention_deletes_expired()]] - `method` [EXTRACTED]
+- [[dot-test_enforce_retention_deletes_expired()]] - `method` [EXTRACTED]
 - [[DataLedger]] - `uses` [INFERRED]
 - [[LedgerConfig]] - `uses` [INFERRED]
 - [[Retention enforcement.]] - `rationale_for` [EXTRACTED]
 - [[test_audit_chain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_26
+#graphify/code #graphify/EXTRACTED #community/Gateway_Config__PII_Sanitizer

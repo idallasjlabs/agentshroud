@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_a2a_governance.py"
 type: "code"
-community: "Community 40"
+community: "Community 39"
 location: "L144"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_40
+  - community/Community_39
 ---
 
 # TestMessageSize
 
 ## Connections
-- [[.test_normal_size_allowed()]] - `method` [EXTRACTED]
-- [[.test_oversized_denied()]] - `method` [EXTRACTED]
+- [[dot-test_normal_size_allowed()]] - `method` [EXTRACTED]
+- [[dot-test_oversized_denied()]] - `method` [EXTRACTED]
 - [[A2ADecision]] - `uses` [INFERRED]
 - [[A2AGovernanceConfig]] - `uses` [INFERRED]
 - [[A2AGovernanceProxy]] - `uses` [INFERRED]
@@ -22,4 +22,4 @@ tags:
 - [[A2APeer]] - `uses` [INFERRED]
 - [[test_a2a_governance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_40
+#graphify/code #graphify/INFERRED #community/Community_39
