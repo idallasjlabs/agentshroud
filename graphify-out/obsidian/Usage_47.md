@@ -1,23 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/SKILL.md"
+source_file: "docker/config/hermes/skills/i-mcpm-auth-reset/README.md"
 type: "document"
-community: "Community 256"
-location: "L55"
+community: "Community 1234"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_256
+  - community/Community_1234
 ---
 
 # Usage
 
 ## Connections
-- [[Browser — Secure Browser Automation_3]] - `contains` [EXTRACTED]
-- [[Click Element_1]] - `contains` [EXTRACTED]
-- [[Extract Data_1]] - `contains` [EXTRACTED]
-- [[Fetch JavaScript-Heavy Page (Node.js)_1]] - `contains` [EXTRACTED]
-- [[Fill Form_1]] - `contains` [EXTRACTED]
-- [[Navigate to URL_1]] - `contains` [EXTRACTED]
-- [[Take Screenshot_1]] - `contains` [EXTRACTED]
+- [[MCP Auth Reset (MCPM-AUTH-RESET)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_256
+#graphify/document #graphify/EXTRACTED #community/Community_1234

@@ -1,20 +1,24 @@
 ---
-source_file: "gateway/soc/contributors.py"
+source_file: "gateway/soc/models.py"
 type: "code"
-community: "Community 14"
-location: "L14"
+community: "Community 68"
+location: "L57"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_14
+  - graphify/EXTRACTED
+  - community/Community_68
 ---
 
 # UserRole
 
 ## Connections
-- [[ContributorRecord_1]] - `uses` [INFERRED]
-- [[Platform]] - `uses` [INFERRED]
+- [[ContributorManager]] - `uses` [INFERRED]
+- [[ContributorRecord]] - `uses` [INFERRED]
+- [[Enum_3]] - `inherits` [EXTRACTED]
 - [[UserRole_1]] - `uses` [INFERRED]
-- [[_role_enum()]] - `references` [EXTRACTED]
+- [[contributors.py]] - `imports` [EXTRACTED]
+- [[socmodels.py]] - `contains` [EXTRACTED]
+- [[str_2]] - `inherits` [EXTRACTED]
+- [[test_soc_models.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_14
+#graphify/code #graphify/EXTRACTED #community/Community_68

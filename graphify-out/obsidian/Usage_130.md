@@ -1,21 +1,17 @@
 ---
-source_file: "skills/custom/securebrowser/SKILL.md"
+source_file: ".agents/skills/i-mcpm-aws-profile/README.md"
 type: "document"
-community: "Community 240"
-location: "L54"
+community: "Community 871"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_240
+  - community/Community_871
 ---
 
 # Usage
 
 ## Connections
-- [[Click Element_3]] - `contains` [EXTRACTED]
-- [[Extract Data_3]] - `contains` [EXTRACTED]
-- [[Navigate to URL_3]] - `contains` [EXTRACTED]
-- [[SecureBrowser - Enterprise Secure Browser Automation]] - `contains` [EXTRACTED]
-- [[Take Screenshot_3]] - `contains` [EXTRACTED]
+- [[MCP AWS Profile Configuration README]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_240
+#graphify/document #graphify/EXTRACTED #community/Community_871

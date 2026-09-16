@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-cr/README.md"
+source_file: ".agents/skills/i-browser/README.md"
 type: "document"
-community: "Community 231"
+community: "Community 1190"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_231
+  - community/Community_1190
 ---
 
 # Usage
 
 ## Connections
-- [[Code Review (i-cr)]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_231
+#graphify/document #graphify/EXTRACTED #community/Community_1190

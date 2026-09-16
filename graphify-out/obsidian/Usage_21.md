@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mcpm-doctor/README.md"
+source_file: ".agents/skills/i-mnemosyne/README.md"
 type: "document"
-community: "Community 1154"
+community: "Community 1203"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1154
+  - community/Community_1203
 ---
 
 # Usage
 
 ## Connections
-- [[MCP Doctor (MCPM-DOCTOR)]] - `contains` [EXTRACTED]
+- [[Mnemosyne — Retention Engineer_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1154
+#graphify/document #graphify/EXTRACTED #community/Community_1203

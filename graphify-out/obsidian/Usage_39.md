@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-vulcan/README.md"
+source_file: "docker/config/hermes/skills/i-daedalus/README.md"
 type: "document"
-community: "Community 1166"
+community: "Community 1226"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1166
+  - community/Community_1226
 ---
 
 # Usage
 
 ## Connections
-- [[Vulcan — Subject Matter Auditor]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1166
+#graphify/document #graphify/EXTRACTED #community/Community_1226

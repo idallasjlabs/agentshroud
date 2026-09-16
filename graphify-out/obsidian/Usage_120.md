@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-vulcan/README.md"
+source_file: ".agents/skills/i-mc/README.md"
 type: "document"
-community: "Community 1245"
+community: "Community 398"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1245
+  - community/Community_398
 ---
 
 # Usage
 
 ## Connections
-- [[Vulcan — Subject Matter Auditor_4]] - `contains` [EXTRACTED]
+- [[GSDE&G Development Master Checklist Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1245
+#graphify/document #graphify/EXTRACTED #community/Community_398

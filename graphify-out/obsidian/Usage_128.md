@@ -1,17 +1,17 @@
 ---
-source_file: "skills/README.md"
+source_file: "docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "Community 46"
-location: "L24"
+community: "Community 838"
+location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_46
+  - community/Community_838
 ---
 
 # Usage
 
 ## Connections
-- [[AgentShroud Skills Library]] - `contains` [EXTRACTED]
+- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_46
+#graphify/document #graphify/EXTRACTED #community/Community_838

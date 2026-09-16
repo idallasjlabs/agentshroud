@@ -1,22 +1,20 @@
 ---
-source_file: "docs/runbooks/RUNBOOK.md"
+source_file: "docker/scripts/README.md"
 type: "document"
-community: "Community 681"
-location: "L53"
+community: "Community 315"
+location: "L247"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_681
+  - community/Community_315
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Fatal glibc error Cannot allocate TLS block]] - `contains` [EXTRACTED]
-- [[AgentShroud Deployment & Troubleshooting Runbook]] - `contains` [EXTRACTED]
-- [[Colima won't start]] - `contains` [EXTRACTED]
-- [[Container starts but unhealthy]] - `contains` [EXTRACTED]
-- [[Docker says Cannot connect to Docker daemon]] - `contains` [EXTRACTED]
-- [[Tests failing after deploy]] - `contains` [EXTRACTED]
+- [[Missing auth for API providers]] - `contains` [EXTRACTED]
+- [[Container unhealthy]] - `contains` [EXTRACTED]
+- [[OpenClaw Management Scripts]] - `contains` [EXTRACTED]
+- [[Telegram bot not responding]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_681
+#graphify/document #graphify/EXTRACTED #community/Community_315

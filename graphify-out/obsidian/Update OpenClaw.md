@@ -1,17 +1,17 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Community 529"
+community: "Community 538"
 location: "L743"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_529
+  - community/Community_538
 ---
 
 # Update OpenClaw
 
 ## Connections
-- [[Updating]] - `contains` [EXTRACTED]
+- [[Updating_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_529
+#graphify/document #graphify/EXTRACTED #community/Community_538

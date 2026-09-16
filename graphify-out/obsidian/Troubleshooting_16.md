@@ -1,20 +1,22 @@
 ---
-source_file: "docs/architecture/WORKSPACE_USAGE.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "Community 163"
-location: "L275"
+community: "Community 262"
+location: "L160"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_163
+  - community/Community_262
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[OpenClaw Workspace Usage Guide]] - `contains` [EXTRACTED]
-- [[Problem Container not running]] - `contains` [EXTRACTED]
-- [[Problem File not found]] - `contains` [EXTRACTED]
-- [[Problem Permission denied]] - `contains` [EXTRACTED]
+- [[AWS Token expired (SSO)_2]] - `contains` [EXTRACTED]
+- [[AWS Unable to locate credentials_2]] - `contains` [EXTRACTED]
+- [[Atlassian OAuth flow failed_2]] - `contains` [EXTRACTED]
+- [[GitHub Bad credentials_2]] - `contains` [EXTRACTED]
+- [[GitHub Docker image not found_2]] - `contains` [EXTRACTED]
+- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_163
+#graphify/document #graphify/EXTRACTED #community/Community_262

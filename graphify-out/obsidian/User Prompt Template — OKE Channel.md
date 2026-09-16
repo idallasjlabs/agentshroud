@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-atlas/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-atlas/SKILL.md"
 type: "document"
-community: "Community 651"
+community: "Community 531"
 location: "L173"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_651
+  - community/Community_531
 ---
 
 # User Prompt Template — OKE Channel
 
 ## Connections
-- [[Atlas — Curriculum Architect_6]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_651
+#graphify/document #graphify/EXTRACTED #community/Community_531

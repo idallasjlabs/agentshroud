@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mac/README.md"
+source_file: "docker/config/hermes/skills/i-qa/README.md"
 type: "document"
-community: "Community 1186"
+community: "Community 1244"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1186
+  - community/Community_1244
 ---
 
 # Usage
 
 ## Connections
-- [[macOS System Administrator (MAC)_1]] - `contains` [EXTRACTED]
+- [[Quality Assurance (QA)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1186
+#graphify/document #graphify/EXTRACTED #community/Community_1244

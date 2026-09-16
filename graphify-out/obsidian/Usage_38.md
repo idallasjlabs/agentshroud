@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-tw/README.md"
+source_file: "docker/config/hermes/skills/i-cr/README.md"
 type: "document"
-community: "Community 1165"
+community: "Community 1225"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1165
+  - community/Community_1225
 ---
 
 # Usage
 
 ## Connections
-- [[Technical Writer (TW)]] - `contains` [EXTRACTED]
+- [[Code Review (CR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1165
+#graphify/document #graphify/EXTRACTED #community/Community_1225

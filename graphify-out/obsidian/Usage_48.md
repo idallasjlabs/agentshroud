@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-bs/README.md"
+source_file: "docker/config/hermes/skills/i-mcpm-aws-profile/README.md"
 type: "document"
-community: "Community 1177"
+community: "Community 1235"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1177
+  - community/Community_1235
 ---
 
 # Usage
 
 ## Connections
-- [[Branding Specialist (BS)_1]] - `contains` [EXTRACTED]
+- [[MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1177
+#graphify/document #graphify/EXTRACTED #community/Community_1235

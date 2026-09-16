@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "rationale"
-community: "PII Sanitizer & E2E Tests"
+community: "Gateway Config & PII Sanitizer"
 location: "L173"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Sanitizer__E2E_Tests
+  - community/Gateway_Config__PII_Sanitizer
 ---
 
 # Trust check: 10000 lookups in < 1s.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestTrustManagerPerformance]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer__E2E_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Config__PII_Sanitizer

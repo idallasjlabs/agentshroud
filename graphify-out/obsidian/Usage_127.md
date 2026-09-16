@@ -1,21 +1,17 @@
 ---
-source_file: "firmware/voice-terminal/components/lvgl_kawaii_face/README.md"
+source_file: ".agents/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "Community 760"
-location: "L58"
+community: "Community 829"
+location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_760
+  - community/Community_829
 ---
 
 # Usage
 
 ## Connections
-- [[1. Create a parent panel]] - `contains` [EXTRACTED]
-- [[2. Initialise]] - `contains` [EXTRACTED]
-- [[3. Set an emotion]] - `contains` [EXTRACTED]
-- [[4. Reposition]] - `contains` [EXTRACTED]
-- [[LVGL KAWAII FACE]] - `contains` [EXTRACTED]
+- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_760
+#graphify/document #graphify/EXTRACTED #community/Community_829

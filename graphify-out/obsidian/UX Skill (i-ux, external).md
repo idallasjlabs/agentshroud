@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-ux/SKILL.md"
 type: "concept"
-community: "Community 1034"
+community: "Community 723"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1034
+  - community/Community_723
 ---
 
 # UX Skill (i-ux, external)
@@ -16,4 +16,4 @@ tags:
 - [[Technical Writer (TW)_3]] - `references` [EXTRACTED]
 - [[UI Expert (UI)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1034
+#graphify/concept #graphify/EXTRACTED #community/Community_723

@@ -1,22 +1,20 @@
 ---
-source_file: "skills/custom/securebrowser/README.md"
+source_file: "docs/setup/PAIRING_INSTRUCTIONS.md"
 type: "document"
-community: "Community 150"
-location: "L293"
+community: "Community 712"
+location: "L53"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_150
+  - community/Community_712
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Approval required but none granted]] - `contains` [EXTRACTED]
-- [[Browser timeout_3]] - `contains` [EXTRACTED]
-- [[CAPTCHA detected_3]] - `contains` [EXTRACTED]
-- [[Credential extraction blocked]] - `contains` [EXTRACTED]
-- [[URL not in allowlist_3]] - `contains` [EXTRACTED]
-- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
+- [[Cannot save token]] - `contains` [EXTRACTED]
+- [[OpenClaw Control UI Pairing Instructions]] - `contains` [EXTRACTED]
+- [[Still shows pairing required]] - `contains` [EXTRACTED]
+- [[Token field not visible]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_150
+#graphify/document #graphify/EXTRACTED #community/Community_712

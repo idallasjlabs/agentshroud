@@ -1,21 +1,21 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md"
+source_file: "docker/QUICKSTART.md"
 type: "document"
-community: "Community 195"
-location: "L246"
+community: "Community 245"
+location: "L232"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_195
+  - community/Community_245
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Access Denied_2]] - `contains` [EXTRACTED]
-- [[Token expired (SSO)_2]] - `contains` [EXTRACTED]
-- [[Unable to locate credentials_2]] - `contains` [EXTRACTED]
-- [[MCP Not Using Profile_2]] - `contains` [EXTRACTED]
-- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_2]] - `contains` [EXTRACTED]
+- [[API Key Error]] - `contains` [EXTRACTED]
+- [[AgentShroud Phase 3 - Quick Start Guide]] - `contains` [EXTRACTED]
+- [[Container Won't Start_1]] - `contains` [EXTRACTED]
+- [[Gateway Returns 401 Unauthorized]] - `contains` [EXTRACTED]
+- [[OpenClaw Not Responding]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_195
+#graphify/document #graphify/EXTRACTED #community/Community_245

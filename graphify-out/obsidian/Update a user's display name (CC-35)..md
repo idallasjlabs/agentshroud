@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "rationale"
-community: "SOC Collaborators"
+community: "SOC Correlation & Router"
 location: "L863"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_Collaborators
+  - community/SOC_Correlation__Router
 ---
 
 # Update a user's display name (CC-35).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[update_display_name()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_Collaborators
+#graphify/rationale #graphify/EXTRACTED #community/SOC_Correlation__Router

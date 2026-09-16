@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-ti/README.md"
+source_file: "docker/config/openclaw/skills/i-eightd/README.md"
 type: "document"
-community: "Community 1206"
+community: "Community 1266"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1206
+  - community/Community_1266
 ---
 
 # Usage
 
 ## Connections
-- [[Technical Illustrator (TI)]] - `contains` [EXTRACTED]
+- [[8D Root Cause Analysis_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1206
+#graphify/document #graphify/EXTRACTED #community/Community_1266

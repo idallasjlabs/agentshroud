@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-oracle/README.md"
+source_file: "docker/config/hermes/skills/i-ti/README.md"
 type: "document"
-community: "Community 1193"
+community: "Community 1252"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1193
+  - community/Community_1252
 ---
 
 # Usage
 
 ## Connections
-- [[Oracle — Feedback Analyst_2]] - `contains` [EXTRACTED]
+- [[Technical Illustrator (TI)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1193
+#graphify/document #graphify/EXTRACTED #community/Community_1252

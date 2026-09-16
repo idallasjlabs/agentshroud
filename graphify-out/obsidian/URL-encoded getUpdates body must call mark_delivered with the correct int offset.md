@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Community 17"
+community: "Tool Result Sanitizer & XML Injection Filtering"
 location: "L4637"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_17
+  - community/Tool_Result_Sanitizer__XML_Injection_Filtering
 ---
 
 # URL-encoded getUpdates body must call mark_delivered with the correct int offset
 
 ## Connections
-- [[.test_url_encoded_body_calls_mark_delivered()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_url_encoded_body_calls_mark_delivered()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_17
+#graphify/rationale #graphify/EXTRACTED #community/Tool_Result_Sanitizer__XML_Injection_Filtering

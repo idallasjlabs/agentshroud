@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services.py"
 type: "rationale"
-community: "Community 14"
+community: "SOC Service Manager (Container Engine)"
 location: "L77"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_14
+  - community/SOC_Service_Manager_Container_Engine
 ---
 
 # Unit tests for ServiceManager.get_logs — including module_filter behaviour.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestServiceManagerGetLogs]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_14
+#graphify/rationale #graphify/EXTRACTED #community/SOC_Service_Manager_Container_Engine

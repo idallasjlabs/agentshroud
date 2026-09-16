@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-sec/README.md"
+source_file: "docker/config/openclaw/skills/i-cr/README.md"
 type: "document"
-community: "Community 1203"
+community: "Community 1263"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1203
+  - community/Community_1263
 ---
 
 # Usage
 
 ## Connections
-- [[Security Review (SEC)_1]] - `contains` [EXTRACTED]
+- [[Code Review (CR)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1203
+#graphify/document #graphify/EXTRACTED #community/Community_1263

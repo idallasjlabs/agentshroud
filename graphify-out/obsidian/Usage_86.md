@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/README.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-doctor/README.md"
 type: "document"
-community: "Community 1213"
+community: "Community 1274"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1213
+  - community/Community_1274
 ---
 
 # Usage
 
 ## Connections
-- [[Browser — Secure Browser Automation_4]] - `contains` [EXTRACTED]
+- [[MCP Doctor (MCPM-DOCTOR)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1213
+#graphify/document #graphify/EXTRACTED #community/Community_1274

@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/securebrowser/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
 type: "document"
-community: "Community 240"
-location: "L319"
+community: "Community 270"
+location: "L283"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_240
+  - community/Community_270
 ---
 
 # "URL not in allowlist"
 
 ## Connections
-- [[Troubleshooting_37]] - `contains` [EXTRACTED]
+- [[Troubleshooting_18]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_240
+#graphify/document #graphify/EXTRACTED #community/Community_270

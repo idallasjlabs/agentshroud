@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-gg/README.md"
+source_file: ".agents/skills/i-eightd/README.md"
 type: "document"
-community: "Community 1149"
+community: "Community 1194"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1149
+  - community/Community_1194
 ---
 
 # Usage
 
 ## Connections
-- [[Git Workflow Guardian (GIT-GUARD)]] - `contains` [EXTRACTED]
+- [[8D Root Cause Analysis]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1149
+#graphify/document #graphify/EXTRACTED #community/Community_1194

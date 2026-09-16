@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-cicd/README.md"
+source_file: ".agents/skills/i-aws/README.md"
 type: "document"
-community: "Community 1145"
+community: "Community 1189"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1145
+  - community/Community_1189
 ---
 
 # Usage
 
 ## Connections
-- [[CICD Pipeline Advisor (README)]] - `contains` [EXTRACTED]
+- [[AWS Cloud Management & FinOps]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1145
+#graphify/document #graphify/EXTRACTED #community/Community_1189

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/APPLE-SERVICES-SETUP.md"
 type: "document"
-community: "Community 332"
+community: "Community 1400"
 location: "L185"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_332
+  - community/Community_1400
 ---
 
 # Two-Factor Authentication
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🚨 Security Notes]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_332
+#graphify/document #graphify/EXTRACTED #community/Community_1400

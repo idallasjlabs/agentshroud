@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Community 31"
+community: "Telegram Lockdown & Collaborator UX Tests"
 location: "L9102"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_31
+  - community/Telegram_Lockdown__Collaborator_UX_Tests
 ---
 
 # Two bots in the same group track eligibility independently.
 
 ## Connections
-- [[.test_two_bots_same_group_independent_eligibility()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_two_bots_same_group_independent_eligibility()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_31
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Lockdown__Collaborator_UX_Tests

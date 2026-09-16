@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-daedalus/README.md"
+source_file: "docker/config/openclaw/skills/i-pr/README.md"
 type: "document"
-community: "Community 1217"
+community: "Community 1279"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1217
+  - community/Community_1279
 ---
 
 # Usage
 
 ## Connections
-- [[Daedalus — Concept Illustrator_4]] - `contains` [EXTRACTED]
+- [[Pull Request Generator (PR)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1217
+#graphify/document #graphify/EXTRACTED #community/Community_1279

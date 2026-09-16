@@ -1,34 +1,22 @@
 ---
-source_file: "docs/runbooks/troubleshooting.md"
+source_file: ".agents/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "Community 314"
-location: "L1"
+community: "Community 1123"
+location: "L160"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_314
+  - community/Community_1123
 ---
 
-# troubleshooting.md
+# Troubleshooting
 
 ## Connections
-- [[Approval Queue Issues]] - `contains` [EXTRACTED]
-- [[Connectivity Issues]] - `contains` [EXTRACTED]
-- [[Container Stability Issues]] - `contains` [EXTRACTED]
-- [[Debugging Commands]] - `contains` [EXTRACTED]
-- [[Egress  Network Issues]] - `contains` [EXTRACTED]
-- [[Kill Switch Won't Deactivate Troubleshooting]] - `references` [EXTRACTED]
-- [[Known Log Messages]] - `references` [EXTRACTED]
-- [[PII  Sanitization Issues]] - `contains` [EXTRACTED]
-- [[PII Sanitizer Blocking Legitimate Content]] - `references` [EXTRACTED]
-- [[Prompt Injection Issues]] - `contains` [EXTRACTED]
-- [[Quick Diagnosis Flow]] - `contains` [EXTRACTED]
-- [[RUNBOOK]] - `conceptually_related_to` [INFERRED]
-- [[Related Notes_64]] - `contains` [EXTRACTED]
-- [[Security Module Issues]] - `contains` [EXTRACTED]
-- [[Startup Issues]] - `contains` [EXTRACTED]
-- [[TAILSCALE_COMMANDS]] - `conceptually_related_to` [INFERRED]
-- [[Troubleshooting Matrix]] - `contains` [EXTRACTED]
-- [[Troubleshooting Runbook — AgentShroud]] - `contains` [EXTRACTED]
+- [[AWS Token expired (SSO)]] - `contains` [EXTRACTED]
+- [[AWS Unable to locate credentials]] - `contains` [EXTRACTED]
+- [[Atlassian OAuth flow failed]] - `contains` [EXTRACTED]
+- [[GitHub Bad credentials]] - `contains` [EXTRACTED]
+- [[GitHub Docker image not found]] - `contains` [EXTRACTED]
+- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_314
+#graphify/document #graphify/EXTRACTED #community/Community_1123

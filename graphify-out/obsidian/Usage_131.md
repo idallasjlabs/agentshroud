@@ -1,24 +1,17 @@
 ---
-source_file: "skills/openclaw/trello/SKILL.md"
+source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md"
 type: "document"
-community: "Community 735"
-location: "L26"
+community: "Community 976"
+location: "L50"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_735
+  - community/Community_976
 ---
 
 # Usage
 
 ## Connections
-- [[Add a comment to a card]] - `contains` [EXTRACTED]
-- [[Archive a card]] - `contains` [EXTRACTED]
-- [[Create a card]] - `contains` [EXTRACTED]
-- [[List boards]] - `contains` [EXTRACTED]
-- [[List cards in a list]] - `contains` [EXTRACTED]
-- [[List lists in a board]] - `contains` [EXTRACTED]
-- [[Move a card to another list]] - `contains` [EXTRACTED]
-- [[Trello Skill]] - `contains` [EXTRACTED]
+- [[AGENTSHROUD_MODE_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_735
+#graphify/document #graphify/EXTRACTED #community/Community_976

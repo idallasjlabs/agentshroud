@@ -1,17 +1,24 @@
 ---
-source_file: "docs/vault/03 - Configuration/gitleaks.toml.md"
+source_file: "skills/openclaw/trello/SKILL.md"
 type: "document"
-community: "Community 1003"
-location: "L19"
+community: "Community 768"
+location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1003
+  - community/Community_768
 ---
 
 # Usage
 
 ## Connections
-- [[gitleaks.toml_1]] - `contains` [EXTRACTED]
+- [[Add a comment to a card]] - `contains` [EXTRACTED]
+- [[Archive a card]] - `contains` [EXTRACTED]
+- [[Create a card]] - `contains` [EXTRACTED]
+- [[List boards]] - `contains` [EXTRACTED]
+- [[List cards in a list]] - `contains` [EXTRACTED]
+- [[List lists in a board]] - `contains` [EXTRACTED]
+- [[Move a card to another list]] - `contains` [EXTRACTED]
+- [[Trello Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1003
+#graphify/document #graphify/EXTRACTED #community/Community_768

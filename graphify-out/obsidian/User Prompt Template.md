@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-athena/SKILL.md"
+source_file: "docker/config/hermes/skills/i-socrates/SKILL.md"
 type: "document"
-community: "Community 697"
-location: "L131"
+community: "Community 506"
+location: "L112"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_697
+  - community/Community_506
 ---
 
 # User Prompt Template
 
 ## Connections
-- [[description of what this does]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_697
+#graphify/document #graphify/EXTRACTED #community/Community_506

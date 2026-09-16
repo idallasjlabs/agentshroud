@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-vulcan/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-athena/SKILL.md"
 type: "document"
-community: "Community 892"
-location: "L108"
+community: "Community 781"
+location: "L131"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_892
+  - community/Community_781
 ---
 
 # User Prompt Template
 
 ## Connections
-- [[Vulcan — Subject Matter Auditor_3]] - `contains` [EXTRACTED]
+- [[description of what this does_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_892
+#graphify/document #graphify/EXTRACTED #community/Community_781

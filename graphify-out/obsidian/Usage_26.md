@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-pr/README.md"
+source_file: ".agents/skills/i-sec-defense/README.md"
 type: "document"
-community: "Community 1159"
+community: "Community 1209"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1159
+  - community/Community_1209
 ---
 
 # Usage
 
 ## Connections
-- [[Pull Request Generator (PR)]] - `contains` [EXTRACTED]
+- [[Blue Team Security Auditor (SEC-DEFENSE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1159
+#graphify/document #graphify/EXTRACTED #community/Community_1209

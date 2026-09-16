@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-tdd/README.md"
+source_file: ".agents/skills/graphify/SKILL.md"
 type: "document"
-community: "Community 1242"
+community: "Community 356"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1242
+  - community/Community_356
 ---
 
 # Usage
 
 ## Connections
-- [[Test-Driven Development (TDD)_1]] - `contains` [EXTRACTED]
+- [[graphify]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1242
+#graphify/document #graphify/EXTRACTED #community/Community_356

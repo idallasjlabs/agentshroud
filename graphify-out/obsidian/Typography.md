@@ -1,20 +1,18 @@
 ---
-source_file: "branding/typography/typography.md"
+source_file: "branding/README.md"
 type: "document"
-community: "Community 790"
-location: "L1"
+community: "Community 173"
+location: "L50"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_790
+  - community/Community_173
 ---
 
-# typography.md
+# Typography
 
 ## Connections
-- [[AgentShroud Typography Guidelines]] - `contains` [EXTRACTED]
-- [[INDEX]] - `references` [EXTRACTED]
-- [[Inter Typeface (Primary)]] - `references` [EXTRACTED]
-- [[JetBrains Mono Typeface (Monospace)]] - `references` [EXTRACTED]
+- [[AgentShroud™ Brand Guidelines]] - `contains` [EXTRACTED]
+- [[AgentShroud™ Brand Guidelines_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_790
+#graphify/document #graphify/EXTRACTED #community/Community_173

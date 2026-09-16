@@ -1,17 +1,17 @@
 ---
-source_file: "src/interfaces/README.md"
+source_file: ".agents/skills/i-ti/README.md"
 type: "document"
-community: "Community 1040"
-location: "L7"
+community: "Community 985"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1040
+  - community/Community_985
 ---
 
 # Usage
 
 ## Connections
-- [[Control Center]] - `contains` [EXTRACTED]
+- [[Technical Illustrator (i-ti)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1040
+#graphify/document #graphify/EXTRACTED #community/Community_985

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-sec-defense/README.md"
+source_file: "docker/config/hermes/skills/i-athena/README.md"
 type: "document"
-community: "Community 1162"
+community: "Community 1219"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1162
+  - community/Community_1219
 ---
 
 # Usage
 
 ## Connections
-- [[Blue Team Security Auditor (SEC-DEFENSE)]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1162
+#graphify/document #graphify/EXTRACTED #community/Community_1219

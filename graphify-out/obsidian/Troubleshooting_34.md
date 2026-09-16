@@ -1,17 +1,20 @@
 ---
-source_file: "shortcuts/README.md"
+source_file: "docs/setup/TELEGRAM_SETUP.md"
 type: "document"
-community: "Community 589"
-location: "L291"
+community: "Community 660"
+location: "L115"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_589
+  - community/Community_660
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[iOS  macOS Shortcuts — Relay to AgentShroud]] - `contains` [EXTRACTED]
+- [[Bot doesn't respond]] - `contains` [EXTRACTED]
+- [[Cannot find bot]] - `contains` [EXTRACTED]
+- [[Messages delayed]] - `contains` [EXTRACTED]
+- [[Telegram Bot Setup for OpenClaw]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_589
+#graphify/document #graphify/EXTRACTED #community/Community_660

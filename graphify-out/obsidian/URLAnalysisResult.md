@@ -1,22 +1,17 @@
 ---
-source_file: "gateway/proxy/url_analyzer.py"
-type: "code"
-community: "Community 48"
-location: "L44"
+source_file: "docs/data/data-dictionary.md"
+type: "document"
+community: "Community 403"
+location: "L135"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Community_48
+  - community/Community_403
 ---
 
 # URLAnalysisResult
 
 ## Connections
-- [[._check_base64()]] - `references` [EXTRACTED]
-- [[.analyze()]] - `references` [EXTRACTED]
-- [[.analyze_and_pin()]] - `references` [EXTRACTED]
-- [[.flagged()]] - `method` [EXTRACTED]
-- [[Result of analyzing a URL.]] - `rationale_for` [EXTRACTED]
-- [[url_analyzer.py]] - `contains` [EXTRACTED]
+- [[Network Security Entities]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_48
+#graphify/document #graphify/EXTRACTED #community/Community_403

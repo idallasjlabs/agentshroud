@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-bs/README.md"
+source_file: "docker/config/openclaw/skills/i-mnemosyne/README.md"
 type: "document"
-community: "Community 1214"
+community: "Community 1276"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1214
+  - community/Community_1276
 ---
 
 # Usage
 
 ## Connections
-- [[Branding Specialist (BS)_2]] - `contains` [EXTRACTED]
+- [[Mnemosyne — Retention Engineer_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1214
+#graphify/document #graphify/EXTRACTED #community/Community_1276

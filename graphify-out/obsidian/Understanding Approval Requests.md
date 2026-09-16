@@ -1,12 +1,12 @@
 ---
 source_file: "docs/user-guide.md"
 type: "document"
-community: "Community 307"
+community: "Community 320"
 location: "L57"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_307
+  - community/Community_320
 ---
 
 # Understanding Approval Requests
@@ -16,4 +16,4 @@ tags:
 - [[What Requires Approval]] - `contains` [EXTRACTED]
 - [[Why Approvals Exist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_307
+#graphify/document #graphify/EXTRACTED #community/Community_320

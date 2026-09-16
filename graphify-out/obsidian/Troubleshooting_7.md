@@ -1,22 +1,21 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/SKILL.md"
+source_file: "docs/setup/OPENCLAW_SSH_SETUP.md"
 type: "document"
-community: "Community 256"
-location: "L281"
+community: "Community 199"
+location: "L242"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_256
+  - community/Community_199
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Action requires approval but none granted_1]] - `contains` [EXTRACTED]
-- [[Browser timeout_1]] - `contains` [EXTRACTED]
-- [[CAPTCHA detected_1]] - `contains` [EXTRACTED]
-- [[Rate limit exceeded_1]] - `contains` [EXTRACTED]
-- [[URL not in allowlist_1]] - `contains` [EXTRACTED]
-- [[Browser — Secure Browser Automation_3]] - `contains` [EXTRACTED]
+- [[OpenClaw Bot SSH Configuration]] - `contains` [EXTRACTED]
+- [[Problem Bad owner or permissions on ~.sshconfig]] - `contains` [EXTRACTED]
+- [[Problem Connection timeout]] - `contains` [EXTRACTED]
+- [[Problem Host key verification failed]] - `contains` [EXTRACTED]
+- [[Problem Permission denied (publickey)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_256
+#graphify/document #graphify/EXTRACTED #community/Community_199

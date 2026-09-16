@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-production/README.md"
+source_file: ".agents/skills/i-ps/README.md"
 type: "document"
-community: "Community 1233"
+community: "Community 144"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1233
+  - community/Community_144
 ---
 
 # Usage
 
 ## Connections
-- [[Incident Response (INCIDENT)_1]] - `contains` [EXTRACTED]
+- [[Production Safety Checklist (SKILL)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1233
+#graphify/document #graphify/EXTRACTED #community/Community_144

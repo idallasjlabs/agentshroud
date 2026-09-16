@@ -1,17 +1,23 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec-defense/README.md"
+source_file: "docker/config/hermes/skills/i-browser/SKILL.md"
 type: "document"
-community: "Community 1238"
-location: "L10"
+community: "Community 269"
+location: "L55"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1238
+  - community/Community_269
 ---
 
 # Usage
 
 ## Connections
-- [[Blue Team Security Auditor (SEC-DEFENSE)_2]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_4]] - `contains` [EXTRACTED]
+- [[Click Element_2]] - `contains` [EXTRACTED]
+- [[Extract Data_2]] - `contains` [EXTRACTED]
+- [[Fetch JavaScript-Heavy Page (Node.js)_1]] - `contains` [EXTRACTED]
+- [[Fill Form_1]] - `contains` [EXTRACTED]
+- [[Navigate to URL_2]] - `contains` [EXTRACTED]
+- [[Take Screenshot_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1238
+#graphify/document #graphify/EXTRACTED #community/Community_269

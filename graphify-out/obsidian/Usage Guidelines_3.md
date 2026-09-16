@@ -1,18 +1,19 @@
 ---
-source_file: "docs/project/legal/TRADEMARK.md"
+source_file: "branding/typography/typography.md"
 type: "document"
-community: "Community 1105"
-location: "L23"
+community: "Community 523"
+location: "L72"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1105
+  - community/Community_523
 ---
 
 # Usage Guidelines
 
 ## Connections
-- [[TRADEMARK]] - `references` [EXTRACTED]
-- [[Trademark Notice_3]] - `contains` [EXTRACTED]
+- [[AgentShroud Typography Guidelines]] - `contains` [EXTRACTED]
+- [[Do's_1]] - `contains` [EXTRACTED]
+- [[Don'ts_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1105
+#graphify/document #graphify/EXTRACTED #community/Community_523

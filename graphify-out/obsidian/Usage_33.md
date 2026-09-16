@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-sec-offense/README.md"
+source_file: "docker/config/hermes/skills/i-atlas/README.md"
 type: "document"
-community: "Community 1163"
+community: "Community 1220"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1163
+  - community/Community_1220
 ---
 
 # Usage
 
 ## Connections
-- [[Red Team Adversarial Tester (SEC-OFFENSE)]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1163
+#graphify/document #graphify/EXTRACTED #community/Community_1220

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-ps/README.md"
+source_file: "docker/config/openclaw/skills/i-athena/README.md"
 type: "document"
-community: "Community 1197"
+community: "Community 1257"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1197
+  - community/Community_1257
 ---
 
 # Usage
 
 ## Connections
-- [[Production Safety Checklist (PROD-SAFETY)]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1197
+#graphify/document #graphify/EXTRACTED #community/Community_1257

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mac/README.md"
+source_file: ".agents/skills/i-icloud/README.md"
 type: "document"
-community: "Community 1152"
+community: "Community 1197"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1152
+  - community/Community_1197
 ---
 
 # Usage
 
 ## Connections
-- [[macOS System Administrator (MAC)]] - `contains` [EXTRACTED]
+- [[iCloud Data Manager (ICLOUD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1152
+#graphify/document #graphify/EXTRACTED #community/Community_1197

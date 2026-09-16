@@ -1,12 +1,12 @@
 ---
 source_file: "docs/integrations/voice-terminal-esp32-s3.md"
 type: "document"
-community: "Community 400"
+community: "Community 410"
 location: "L226"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_400
+  - community/Community_410
 ---
 
 # Usage
@@ -20,4 +20,4 @@ tags:
 - [[Voice volume]] - `contains` [EXTRACTED]
 - [[Wake word]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_400
+#graphify/document #graphify/EXTRACTED #community/Community_410

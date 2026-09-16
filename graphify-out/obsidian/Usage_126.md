@@ -1,17 +1,21 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md"
+source_file: "firmware/voice-terminal/components/lvgl_kawaii_face/README.md"
 type: "document"
-community: "Community 353"
-location: "L50"
+community: "Community 798"
+location: "L58"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_353
+  - community/Community_798
 ---
 
 # Usage
 
 ## Connections
-- [[AGENTSHROUD_MODE_1]] - `contains` [EXTRACTED]
+- [[1. Create a parent panel]] - `contains` [EXTRACTED]
+- [[2. Initialise]] - `contains` [EXTRACTED]
+- [[3. Set an emotion]] - `contains` [EXTRACTED]
+- [[4. Reposition]] - `contains` [EXTRACTED]
+- [[LVGL KAWAII FACE]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_353
+#graphify/document #graphify/EXTRACTED #community/Community_798

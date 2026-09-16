@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/browser-fetch/SKILL.md"
+source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md"
 type: "document"
-community: "Community 1078"
-location: "L27"
+community: "Community 86"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1078
+  - community/Community_86
 ---
 
 # Usage
 
 ## Connections
-- [[Browser Fetch Skill]] - `contains` [EXTRACTED]
+- [[AGENTSHROUD_CONFIG_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1078
+#graphify/document #graphify/EXTRACTED #community/Community_86

@@ -1,21 +1,20 @@
 ---
-source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
+source_file: "docker/config/hermes/skills/i-icloud/SKILL.md"
 type: "document"
-community: "Community 1261"
-location: "L237"
+community: "Community 306"
+location: "L142"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1261
+  - community/Community_306
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Browser-Fetch Skill for 1Password Share Links]] - `contains` [EXTRACTED]
-- [[Problem 1Password link shows only page shell]] - `contains` [EXTRACTED]
-- [[Problem Browser binaries not found]] - `contains` [EXTRACTED]
-- [[Problem Permission denied executing browser]] - `contains` [EXTRACTED]
-- [[Problem Skill not auto-discovered by bot]] - `contains` [EXTRACTED]
+- [[401 Unauthorized_1]] - `contains` [EXTRACTED]
+- [[CalendarContacts not found]] - `contains` [EXTRACTED]
+- [[Connection timeout_1]] - `contains` [EXTRACTED]
+- [[iCloud Services_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1261
+#graphify/document #graphify/EXTRACTED #community/Community_306

@@ -1,22 +1,17 @@
 ---
-source_file: "skills/custom/securebrowser/SKILL.md"
+source_file: "docs/reference/QUICK_REFERENCE.md"
 type: "document"
-community: "Community 235"
-location: "L317"
+community: "Community 787"
+location: "L80"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_235
+  - community/Community_787
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Action requires approval but none granted_3]] - `contains` [EXTRACTED]
-- [[Browser timeout_4]] - `contains` [EXTRACTED]
-- [[CAPTCHA detected_4]] - `contains` [EXTRACTED]
-- [[Rate limit exceeded_3]] - `contains` [EXTRACTED]
-- [[URL not in allowlist_4]] - `contains` [EXTRACTED]
-- [[SecureBrowser - Enterprise Secure Browser Automation]] - `contains` [EXTRACTED]
+- [[Quick Reference Card]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_235
+#graphify/document #graphify/EXTRACTED #community/Community_787

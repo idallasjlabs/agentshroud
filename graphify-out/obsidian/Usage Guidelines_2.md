@@ -1,19 +1,19 @@
 ---
-source_file: "branding/typography/typography.md"
+source_file: "branding/colors/palette.md"
 type: "document"
-community: "Community 512"
-location: "L72"
+community: "Community 376"
+location: "L87"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_512
+  - community/Community_376
 ---
 
 # Usage Guidelines
 
 ## Connections
-- [[AgentShroud Typography Guidelines]] - `contains` [EXTRACTED]
-- [[Do's_1]] - `contains` [EXTRACTED]
-- [[Don'ts_1]] - `contains` [EXTRACTED]
+- [[Accessibility_1]] - `contains` [EXTRACTED]
+- [[AgentShroud Color Palette]] - `contains` [EXTRACTED]
+- [[Applications]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_512
+#graphify/document #graphify/EXTRACTED #community/Community_376
