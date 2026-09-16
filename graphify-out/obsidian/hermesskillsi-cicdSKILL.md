@@ -1,0 +1,17 @@
+---
+source_file: "docker/config/hermes/skills/i-cicd/SKILL.md"
+type: "document"
+community: "Community 1135"
+location: "L1"
+tags:
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/Community_1135
+---
+
+# hermes/skills/i-cicd/SKILL.md
+
+## Connections
+- [[Skill CICD Pipeline Advisor (CICD)_2]] - `contains` [EXTRACTED]
+
+#graphify/document #graphify/EXTRACTED #community/Community_1135

@@ -1,0 +1,17 @@
+---
+source_file: "gateway/tests/test_a2a_policy.py"
+type: "code"
+community: "Community 289"
+location: "L397"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_289
+---
+
+# .wait_for_decision()
+
+## Connections
+- [[_LegacyStubApprovalQueue]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_289

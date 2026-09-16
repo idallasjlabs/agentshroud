@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_key_rotation.py"
+type: "code"
+community: "Community 441"
+location: "L35"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_441
+---
+
+# .validate()
+
+## Connections
+- [[Mock validation that can be controlled.]] - `rationale_for` [EXTRACTED]
+- [[MockValidator]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_441

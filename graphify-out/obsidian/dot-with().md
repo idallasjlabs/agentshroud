@@ -1,0 +1,25 @@
+---
+source_file: "cli/src/main.rs"
+type: "code"
+community: "Community 36"
+location: "L921"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_36
+---
+
+# .with()
+
+## Connections
+- [[dot-new()_2]] - `calls` [EXTRACTED]
+- [[FakeTransport]] - `method` [EXTRACTED]
+- [[Self]] - `references` [EXTRACTED]
+- [[approvals_list_errors_on_401()]] - `calls` [EXTRACTED]
+- [[decide_errors_on_404()]] - `calls` [EXTRACTED]
+- [[decide_errors_on_409_conflict()]] - `calls` [EXTRACTED]
+- [[deploy_status_errors_when_version_unauthorized()]] - `calls` [EXTRACTED]
+- [[status_errors_on_401()]] - `calls` [EXTRACTED]
+- [[status_errors_when_gateway_down()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_36

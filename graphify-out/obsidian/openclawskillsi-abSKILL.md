@@ -1,0 +1,17 @@
+---
+source_file: "docker/config/openclaw/skills/i-ab/SKILL.md"
+type: "document"
+community: "Community 628"
+location: "L1"
+tags:
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/Community_628
+---
+
+# openclaw/skills/i-ab/SKILL.md
+
+## Connections
+- [[Skill Audit Branch (AB) — Merge Regression Detection_2]] - `contains` [EXTRACTED]
+
+#graphify/document #graphify/EXTRACTED #community/Community_628
