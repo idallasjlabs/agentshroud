@@ -88,6 +88,53 @@ WATCH_TIMEOUT_MIN=180   # prompt's own budget is 90 min; hard stop at 3h
 cd "$REPO"
 mkdir -p reports
 
+# ── Branch/freshness preflight — the job must run against current main ──────
+# This script previously trusted whatever was checked out on the host, with no
+# `git pull`/`git fetch` anywhere in this file, prompts/sunday-upgrade.md, or
+# sunday-upgrade-apply.sh. A fix merged to main mid-week (e.g. 2026-09-12's
+# #439) had no way to reach an unattended run until SOME LATER session
+# happened to manually check out and pull main first — the 2026-09-06 run
+# failed with a stale composer-submission bug that had already been fixed on
+# main days earlier (see reports/upgrade-2026-09-06-prod.md, "dev is still on
+# the older send-keys version and needs to pull"), and the identical failure
+# recurred on 2026-09-13 for the same reason: nobody had happened to git pull
+# in between. A host used for interactive dev work (this one) routinely sits
+# on a feature branch with uncommitted changes between Sunday runs — exactly
+# the state as of 2026-09-16 while this fix was written — so the unattended
+# job cannot assume main is checked out either.
+#
+# Fail loudly here rather than silently run stale code or the wrong branch:
+# a launchd/cron failure that emails/logs an actionable error is recoverable;
+# a "successful" run against a week-old checkout or someone's feature branch
+# is not, and reads as a completed upgrade when nothing current was applied.
+git fetch origin main >/dev/null 2>&1 || {
+  echo "[sunday-upgrade] FATAL: git fetch origin main failed — check network/auth before the next scheduled run." >&2
+  exit 3
+}
+_current_branch="$(git rev-parse --abbrev-ref HEAD 2>/dev/null || echo '')"
+if [ "$_current_branch" != "main" ]; then
+  echo "[sunday-upgrade] FATAL: repo checkout is on branch '${_current_branch}', not main." >&2
+  echo "[sunday-upgrade] The unattended upgrade must run against main. Run: git -C '$REPO' checkout main" >&2
+  exit 4
+fi
+if [ -n "$(git status --porcelain 2>/dev/null)" ]; then
+  echo "[sunday-upgrade] FATAL: main has uncommitted changes — refusing to pull/run over them." >&2
+  echo "[sunday-upgrade] Resolve manually: git -C '$REPO' status" >&2
+  exit 4
+fi
+if ! git merge-base --is-ancestor HEAD origin/main 2>/dev/null; then
+  echo "[sunday-upgrade] FATAL: local main has diverged from origin/main — cannot fast-forward." >&2
+  echo "[sunday-upgrade] Resolve manually: git -C '$REPO' log --oneline main..origin/main" >&2
+  exit 4
+fi
+if [ "$(git rev-parse HEAD)" != "$(git rev-parse origin/main)" ]; then
+  _before_sha="$(git rev-parse --short HEAD)"
+  git merge --ff-only origin/main
+  echo "[sunday-upgrade] ✓ Fast-forwarded main ${_before_sha} → $(git rev-parse --short HEAD)"
+else
+  echo "[sunday-upgrade] ✓ main already up to date with origin/main ($(git rev-parse --short HEAD))"
+fi
+
 # Idempotency: don't stack a second session if today's already running or
 # already finished — guards against a manual re-trigger the same day, or
 # launchd re-firing after a delayed wake (2026-09-06: a stale prior week's
