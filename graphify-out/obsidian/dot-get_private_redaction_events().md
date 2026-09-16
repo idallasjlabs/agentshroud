@@ -1,0 +1,19 @@
+---
+source_file: "gateway/proxy/mcp_permissions.py"
+type: "code"
+community: "Community 129"
+location: "L330"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_129
+---
+
+# .get_private_redaction_events()
+
+## Connections
+- [[dot-get_private_redaction_summary()]] - `calls` [EXTRACTED]
+- [[MCPPermissionManager]] - `method` [EXTRACTED]
+- [[Return recent private-data redaction events.]] - `rationale_for` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_129

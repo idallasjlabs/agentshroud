@@ -1,0 +1,19 @@
+---
+source_file: "gateway/security/session_manager.py"
+type: "code"
+community: "Community 383"
+location: "L571"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_383
+---
+
+# .reanchor_system_prompt()
+
+## Connections
+- [[Any_51]] - `references` [EXTRACTED]
+- [[Return the system prompt with a re-anchoring preamble prepended.          Called]] - `rationale_for` [EXTRACTED]
+- [[UserSessionManager]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_383

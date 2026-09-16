@@ -1,0 +1,23 @@
+---
+source_file: "gateway/security/shared_memory.py"
+type: "code"
+community: "Community 41"
+location: "L226"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_41
+---
+
+# .get_merged_memory_for_user()
+
+## Connections
+- [[dot-_strip_private_content()]] - `calls` [EXTRACTED]
+- [[dot-contains_private_content()]] - `calls` [EXTRACTED]
+- [[dot-get_group_memory()]] - `calls` [EXTRACTED]
+- [[dot-get_topic_scoped_memory()]] - `calls` [EXTRACTED]
+- [[dot-get_user_memory()]] - `calls` [EXTRACTED]
+- [[Build merged memory context for bot prompt injection.          Includes]] - `rationale_for` [EXTRACTED]
+- [[SharedMemoryManager]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_41

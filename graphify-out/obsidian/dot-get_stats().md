@@ -1,0 +1,17 @@
+---
+source_file: "gateway/proxy/llm_proxy.py"
+type: "code"
+community: "Community 37"
+location: "L268"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_37
+---
+
+# .get_stats()
+
+## Connections
+- [[LLMProxy]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_37

@@ -1,0 +1,18 @@
+---
+source_file: "gateway/security/prompt_protection.py"
+type: "code"
+community: "Community 793"
+location: "L278"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_793
+---
+
+# .register_bot_hostnames()
+
+## Connections
+- [[Add bot container hostnames to the infrastructure detection patterns.          C]] - `rationale_for` [EXTRACTED]
+- [[PromptProtection]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_793

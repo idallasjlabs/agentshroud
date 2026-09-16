@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_egress_approval.py"
+type: "code"
+community: "Community 558"
+location: "L421"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_558
+---
+
+# .mock_auth()
+
+## Connections
+- [[AsyncMock]] - `calls` [INFERRED]
+- [[Mock authentication dependency.]] - `rationale_for` [EXTRACTED]
+- [[TestEgressApprovalAPI]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_558

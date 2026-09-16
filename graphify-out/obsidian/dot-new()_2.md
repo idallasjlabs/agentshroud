@@ -1,0 +1,42 @@
+---
+source_file: "cli/src/main.rs"
+type: "code"
+community: "Community 36"
+location: "L497"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_36
+---
+
+# .new()
+
+## Connections
+- [[dot-ok()_1]] - `calls` [EXTRACTED]
+- [[dot-with()]] - `calls` [EXTRACTED]
+- [[SclClient_1]] - `method` [EXTRACTED]
+- [[Self]] - `references` [EXTRACTED]
+- [[approvals_list_empty()]] - `calls` [EXTRACTED]
+- [[approvals_list_errors_on_401()]] - `calls` [EXTRACTED]
+- [[approvals_list_formats_rows()]] - `calls` [EXTRACTED]
+- [[approve_sends_correct_body_and_path()]] - `calls` [EXTRACTED]
+- [[cves_counts_array_when_no_total()]] - `calls` [EXTRACTED]
+- [[cves_formats_summary()]] - `calls` [EXTRACTED]
+- [[cves_reads_nested_summary()]] - `calls` [EXTRACTED]
+- [[cves_reads_summary_total_fallback()]] - `calls` [EXTRACTED]
+- [[cves_reports_unknown_bot_error()]] - `calls` [EXTRACTED]
+- [[cves_with_bot_id_appends_query()]] - `calls` [EXTRACTED]
+- [[decide_errors_on_404()]] - `calls` [EXTRACTED]
+- [[decide_errors_on_409_conflict()]] - `calls` [EXTRACTED]
+- [[deny_sends_false_and_formats()]] - `calls` [EXTRACTED]
+- [[deploy_status_errors_when_version_unauthorized()]] - `calls` [EXTRACTED]
+- [[deploy_status_reads_version_endpoint()]] - `calls` [EXTRACTED]
+- [[format_cves()]] - `calls` [EXTRACTED]
+- [[main()_18]] - `calls` [EXTRACTED]
+- [[render_output_lines()]] - `calls` [EXTRACTED]
+- [[status_errors_on_401()]] - `calls` [EXTRACTED]
+- [[status_errors_when_gateway_down()]] - `calls` [EXTRACTED]
+- [[status_hits_correct_path()]] - `calls` [EXTRACTED]
+- [[status_parses_and_formats()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_36

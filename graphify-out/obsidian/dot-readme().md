@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_docs_accuracy.py"
+type: "code"
+community: "Community 118"
+location: "L28"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_118
+---
+
+# .readme()
+
+## Connections
+- [[TestReadmeAccuracy]] - `method` [EXTRACTED]
+- [[_read_file()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_118
