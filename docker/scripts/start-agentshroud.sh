@@ -494,6 +494,38 @@ else
     echo "[startup] Warning: Gateway op-proxy not configured, 1Password secrets unavailable"
 fi
 
+# ── Pending-migration repair — BEFORE config init AND before the gateway ─────
+# OpenClaw version upgrades routinely require a state/config migration, and it
+# can only run with exclusive access: once the gateway is up it owns the
+# gateway-lifecycle lock and `openclaw doctor --fix` fails with
+# StateDatabaseCoordinatorContentionError. Because this script supervises the
+# gateway, any post-boot repair loses that race forever — killing the gateway
+# just restarts the container and it re-takes the lock.
+#
+# So the only reliable window is right here, before the gateway starts.
+# Observed on the 2026.7.1-2 -> 2026.9.4 upgrade (2026-09-15), which needed
+# three separate migrations (config schema, legacy session store, then legacy
+# auth-profile credentials for google/ollama/openai/openai-local) and left the
+# container crash-looping on "Legacy session store requires migration" until
+# each was applied by hand.
+#
+# Only runs when OpenClaw itself says a migration is pending, so a healthy boot
+# pays nothing. Never fatal: a failed repair is reported and startup continues,
+# because a degraded-but-running agent beats a crash-loop — and the warning
+# below makes the degraded state visible rather than silent.
+if command -v openclaw >/dev/null 2>&1; then
+  _doctor_status="$(openclaw doctor 2>&1 || true)"
+  if printf '%s' "$_doctor_status" | grep -qiE "requires (legacy )?(credential )?migration|requires migration|doctor --fix"; then
+    echo "[startup] Pending OpenClaw migration detected — running 'openclaw doctor --fix' before gateway start..."
+    if _doctor_out="$(openclaw doctor --fix 2>&1)"; then
+      echo "[startup] ✓ openclaw doctor --fix completed"
+    else
+      echo "[startup] ⚠ openclaw doctor --fix did not complete: $(printf '%s' "$_doctor_out" | tail -3)" >&2
+      echo "[startup] ⚠ Continuing to start the gateway; some state may remain unmigrated." >&2
+    fi
+  fi
+fi
+
 # Apply OpenClaw config defaults (SSH allowlist, cron jobs, agent patches, workspace brand files)
 echo "[startup] Bootstrapping OpenClaw config..."
 /usr/local/bin/init-openclaw-config.sh

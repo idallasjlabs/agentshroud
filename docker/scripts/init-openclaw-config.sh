@@ -58,7 +58,18 @@ _sha256() {
 
 _seed_sha="$(_sha256 "${CRON_SEED_SRC}")"
 
-if [ ! -f "${CRON_JOBS}" ]; then
+if [ ! -f "${CRON_JOBS}" ] && [ ! -f "${CRON_SEED_STAMP}" ]; then
+  # Genuinely never seeded (both jobs.json AND the seed stamp are absent) — vs.
+  # jobs.json missing because OpenClaw's own doctor/gateway-startup migration
+  # already archived it into its SQLite-backed cron store (cron/jobs.json is
+  # unconditionally treated as a legacy source there — see
+  # dist/doctor-state-migration-fs-*.mjs's archiveLegacyStateSource). The seed
+  # stamp survives that archival (only jobs.json itself gets renamed away), so
+  # its presence is the durable "already seeded once" signal. Without this
+  # distinction, every boot re-bootstrapped a "first run" jobs.json that the
+  # very next migration pass archived again — 293 accumulated
+  # jobs.json.migrated.N files (9.3MB) from one new file per restart, observed
+  # 2026-09-15.
   cp "${CRON_SEED_SRC}" "${CRON_JOBS}"
   printf '%s' "${_seed_sha}" > "${CRON_SEED_STAMP}" 2>/dev/null || true
   echo "[init] ✓ Bootstrapped cron/jobs.json from image defaults (first run)"
@@ -69,8 +80,10 @@ else
     cp "${CRON_SEED_SRC}" "${CRON_JOBS}"
     printf '%s' "${_seed_sha}" > "${CRON_SEED_STAMP}" 2>/dev/null || true
     echo "[init] ✓ Re-seeded cron/jobs.json — image default changed since last seed (stale volume copy replaced)"
-  else
+  elif [ -f "${CRON_JOBS}" ]; then
     echo "[init] ✓ cron/jobs.json matches last-seeded image default — skipping (use CLI to modify)"
+  else
+    echo "[init] ✓ cron/jobs.json already consumed by OpenClaw's cron store (image default unchanged since seed) — not recreating"
   fi
 fi
 
@@ -204,6 +217,34 @@ chmod 600 "${MODELS_JSON}" 2>/dev/null || true
 ROOT_MODELS_JSON="${OPENCLAW_DIR}/models.json"
 cp "${MODELS_JSON}" "${ROOT_MODELS_JSON}"
 chmod 600 "${ROOT_MODELS_JSON}" 2>/dev/null || true
+
+# ── 2c2. Normalize config after this script's own writes, before this script's
+# own CLI calls need it ────────────────────────────────────────────────────
+# apply-patches.js (step 2) and the auth-profiles/models.json seeding above
+# (2b/2c) write config in whatever shape they know about, which can be a shape
+# OpenClaw's current schema considers legacy (retired keys, credential stores
+# needing migration). The `openclaw doctor --fix` pending-migration repair in
+# start-agentshroud.sh runs BEFORE this script is even invoked, so it only
+# catches migrations already pending in a config this script hasn't touched
+# yet — it cannot catch legacy shapes THIS script just (re)introduced. Left
+# unfixed, every `openclaw config set` / `openclaw mcp *` CLI call below fails
+# with "OpenClaw config is invalid", which is exactly how the 2f sandbox step
+# was firing "SECURITY: sandbox config INCOMPLETE" on every boot (observed
+# 2026-09-15) despite the outer start-agentshroud.sh fix. This has to run here
+# — after this script's writes, before its CLI calls — and still before the
+# gateway starts (once it's up it owns the state-database-coordinator lock and
+# `doctor --fix` fails with contention; see start-agentshroud.sh's comment).
+_openclaw_bin="$(command -v openclaw || true)"
+if [ -n "${_openclaw_bin}" ]; then
+  _cfg_doctor_status="$(openclaw doctor 2>&1 || true)"
+  if printf '%s' "${_cfg_doctor_status}" | grep -qiE "requires (legacy )?(credential )?migration|requires migration|doctor --fix|config is invalid"; then
+    if _cfg_doctor_out="$(openclaw doctor --fix 2>&1)"; then
+      echo "[init] ✓ Normalized openclaw.json after config writes (openclaw doctor --fix)"
+    else
+      echo "[init] ⚠ openclaw doctor --fix did not complete after config writes: $(printf '%s' "${_cfg_doctor_out}" | tail -3)" >&2
+    fi
+  fi
+fi
 
 # Security: harden config and state dir permissions
 chmod 700 "${OPENCLAW_DIR}" 2>/dev/null || true
