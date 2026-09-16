@@ -1,12 +1,12 @@
 ---
 source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "Community 108"
+community: "Community 377"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_108
+  - community/Community_377
 ---
 
 # brand-guidelines.md
@@ -22,10 +22,10 @@ tags:
 - [[Co-Branding Guidelines]] - `conceptually_related_to` [EXTRACTED]
 - [[Color Usage (AgentShroud Blue 1583f0)]] - `conceptually_related_to` [EXTRACTED]
 - [[File Formats & Deliverables]] - `conceptually_related_to` [EXTRACTED]
-- [[INDEX]] - `references` [EXTRACTED]
-- [[Logo Usage Rules_1]] - `conceptually_related_to` [EXTRACTED]
+- [[INDEX_1]] - `references` [EXTRACTED]
+- [[Logo Usage Rules]] - `conceptually_related_to` [EXTRACTED]
 - [[Press Kit (About AgentShroud, boilerplate, key facts)]] - `conceptually_related_to` [EXTRACTED]
 - [[Typography in Practice]] - `conceptually_related_to` [EXTRACTED]
 - [[Voice & Tone Guidelines]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_108
+#graphify/document #graphify/EXTRACTED #community/Community_377

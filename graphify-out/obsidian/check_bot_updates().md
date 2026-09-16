@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Community 37"
+community: "Runtime Security Comparison & Intel Report"
 location: "L521"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_37
+  - community/Runtime_Security_Comparison__Intel_Report
 ---
 
 # check_bot_updates()
@@ -18,4 +18,4 @@ tags:
 - [[api.py]] - `contains` [EXTRACTED]
 - [[check_openclaw_updates()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_37
+#graphify/code #graphify/EXTRACTED #community/Runtime_Security_Comparison__Intel_Report

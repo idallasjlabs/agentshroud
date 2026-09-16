@@ -1,23 +1,20 @@
 ---
 source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "Community 112"
+community: "Community 98"
 location: "L158"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_112
+  - community/Community_98
 ---
 
 # categorize_alerts()
 
 ## Connections
-- [[.test_categorize_empty()]] - `calls` [EXTRACTED]
-- [[.test_categorize_mixed()]] - `calls` [EXTRACTED]
-- [[Any_40]] - `references` [EXTRACTED]
+- [[Any_82]] - `references` [EXTRACTED]
 - [[Categorize alerts by severity.      Args         alerts List of parsed alerts.]] - `rationale_for` [EXTRACTED]
-- [[falco_monitor.py]] - `contains` [EXTRACTED]
-- [[generate_summary()_1]] - `calls` [EXTRACTED]
-- [[test_security_toolchain.py]] - `imports` [EXTRACTED]
+- [[falco_monitor.py_2]] - `contains` [EXTRACTED]
+- [[generate_summary()_2]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_112
+#graphify/code #graphify/EXTRACTED #community/Community_98

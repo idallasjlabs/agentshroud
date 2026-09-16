@@ -1,11 +1,11 @@
 ---
 source_file: "docs/data/schema-documentation.md"
 type: "code"
-community: "Community 937"
+community: "Community 256"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_937
+  - community/Community_256
 ---
 
 # approval_requests SQLite table
@@ -14,4 +14,4 @@ tags:
 - [[ApprovalRequest (data entity)]] - `implements` [EXTRACTED]
 - [[agentshroud.yaml (main config schema)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_937
+#graphify/code #graphify/EXTRACTED #community/Community_256

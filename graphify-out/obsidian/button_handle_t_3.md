@@ -1,18 +1,17 @@
 ---
-source_file: "firmware/voice-terminal/test/test_wakeword_state/stubs/iot_button.h"
+source_file: "firmware/voice-terminal/test/test_wakeword_state/stubs/bsp/esp-bsp.h"
 type: "code"
-community: "Community 1091"
-location: "L11"
+community: "Community 1365"
+location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1091
+  - community/Community_1365
 ---
 
 # button_handle_t
 
 ## Connections
-- [[iot_button_delete()_1]] - `references` [EXTRACTED]
-- [[iot_button_register_cb()_1]] - `references` [EXTRACTED]
+- [[bsp_iot_button_create()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1091
+#graphify/code #graphify/EXTRACTED #community/Community_1365

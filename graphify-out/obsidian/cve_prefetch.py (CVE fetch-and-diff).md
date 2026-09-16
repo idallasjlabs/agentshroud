@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/cron/scripts/cve_prefetch.py"
 type: "code"
-community: "Community 521"
+community: "Community 160"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_521
+  - community/Community_160
 ---
 
 # cve_prefetch.py (CVE fetch-and-diff)
@@ -15,4 +15,4 @@ tags:
 - [[Daily CVE Triage & Remediation Scan Prompt]] - `shares_data_with` [EXTRACTED]
 - [[OpenClaw Cron Jobs Reference & Recreation Guide]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_521
+#graphify/code #graphify/EXTRACTED #community/Community_160

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/cron/scripts/daily-checkin.sh"
 type: "code"
-community: "Community 1415"
+community: "Community 1449"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1415
+  - community/Community_1449
 ---
 
 # daily-checkin.sh
@@ -15,4 +15,4 @@ tags:
 - [[_fmt()]] - `defines` [EXTRACTED]
 - [[daily-checkin.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1415
+#graphify/code #graphify/EXTRACTED #community/Community_1449

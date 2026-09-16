@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-icloud/scripts/calendar.js"
 type: "code"
-community: "Community 1316"
+community: "Community 1374"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1316
+  - community/Community_1374
 ---
 
 # calendar.js (iCloud CalDAV script)
@@ -14,4 +14,4 @@ tags:
 - [[1Password item Apple ID - therealidallasj]] - `references` [EXTRACTED]
 - [[iCloud Services Skill]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1316
+#graphify/code #graphify/EXTRACTED #community/Community_1374

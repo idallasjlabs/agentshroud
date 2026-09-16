@@ -1,27 +1,27 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/canary.py.md"
 type: "document"
-community: "Community 686"
+community: "Community 708"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_686
+  - community/Community_708
 ---
 
 # canary.py
 
 ## Connections
 - [[Canary Checks]] - `contains` [EXTRACTED]
-- [[Environment Variables_7]] - `contains` [EXTRACTED]
-- [[Function Details_29]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_32]] - `contains` [EXTRACTED]
-- [[Mode Enforce vs Monitor_2]] - `contains` [EXTRACTED]
+- [[Environment Variables_17]] - `contains` [EXTRACTED]
+- [[Function Details_38]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_40]] - `contains` [EXTRACTED]
+- [[Mode Enforce vs Monitor_11]] - `contains` [EXTRACTED]
 - [[Operational Notes_1]] - `contains` [EXTRACTED]
-- [[Purpose_150]] - `contains` [EXTRACTED]
-- [[Related_36]] - `contains` [EXTRACTED]
-- [[Responsibilities_34]] - `contains` [EXTRACTED]
-- [[Threat Model_5]] - `contains` [EXTRACTED]
+- [[Purpose_169]] - `contains` [EXTRACTED]
+- [[Related_44]] - `contains` [EXTRACTED]
+- [[Responsibilities_42]] - `contains` [EXTRACTED]
+- [[Threat Model_24]] - `contains` [EXTRACTED]
 - [[canary.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_686
+#graphify/document #graphify/EXTRACTED #community/Community_708

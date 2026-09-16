@@ -1,18 +1,17 @@
 ---
 source_file: "docker/scripts/colima-firewall.sh"
 type: "code"
-community: "Community 312"
+community: "Community 1650"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_312
+  - community/Community_1650
 ---
 
 # colima-firewall.sh
 
 ## Connections
 - [[colima-firewall.sh script]] - `contains` [EXTRACTED]
-- [[colima-health-check.sh]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_312
+#graphify/code #graphify/EXTRACTED #community/Community_1650

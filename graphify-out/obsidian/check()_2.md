@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/smoke.d/test-container-runtime.sh"
+source_file: "tests/startup_smoke/test_bot_boot_static.sh"
 type: "code"
-community: "Community 1106"
-location: "L40"
+community: "Community 1478"
+location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1106
+  - community/Community_1478
 ---
 
 # check()
 
 ## Connections
-- [[test-container-runtime.sh]] - `defines` [EXTRACTED]
-- [[test-container-runtime.sh script]] - `calls` [EXTRACTED]
+- [[test_bot_boot_static.sh]] - `defines` [EXTRACTED]
+- [[test_bot_boot_static.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1106
+#graphify/code #graphify/EXTRACTED #community/Community_1478

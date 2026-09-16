@@ -1,16 +1,16 @@
 ---
 source_file: "skills/openclaw/blogwatcher/SKILL.md"
 type: "concept"
-community: "Community 1378"
+community: "Community 1436"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1378
+  - community/Community_1436
 ---
 
 # blogwatcher CLI
 
 ## Connections
-- [[SKILL_198]] - `implements` [EXTRACTED]
+- [[blogwatcherSKILL]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1378
+#graphify/concept #graphify/EXTRACTED #community/Community_1436

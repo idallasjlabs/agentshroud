@@ -1,18 +1,18 @@
 ---
-source_file: "tests/startup_smoke/test_hermes_mcp_reconciliation.sh"
+source_file: "scripts/smoke.d/test-skills-sync.sh"
 type: "code"
-community: "Community 1421"
-location: "L27"
+community: "Community 690"
+location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1421
+  - community/Community_690
 ---
 
 # check()
 
 ## Connections
-- [[test_hermes_mcp_reconciliation.sh]] - `defines` [EXTRACTED]
-- [[test_hermes_mcp_reconciliation.sh script]] - `calls` [EXTRACTED]
+- [[test-skills-sync.sh]] - `defines` [EXTRACTED]
+- [[test-skills-sync.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1421
+#graphify/code #graphify/EXTRACTED #community/Community_690

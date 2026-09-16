@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "code"
-community: "Community 160"
+community: "Alert Dispatcher & RBAC Reliability"
 location: "L445"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_160
+  - community/Alert_Dispatcher__RBAC_Reliability
 ---
 
 # callable
 
 ## Connections
-- [[.add_alert_callback()]] - `references` [EXTRACTED]
+- [[dot-add_alert_callback()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_160
+#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability

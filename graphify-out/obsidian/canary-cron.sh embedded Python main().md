@@ -1,21 +1,21 @@
 ---
 source_file: "scripts/canary-cron.sh"
 type: "code"
-community: "PII Sanitizer & E2E Tests"
+community: "Proxy Sidecar & Forwarder"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PII_Sanitizer__E2E_Tests
+  - community/Proxy_Sidecar__Forwarder
 ---
 
 # canary-cron.sh embedded Python main()
 
 ## Connections
-- [[PIIConfig]] - `calls` [EXTRACTED]
+- [[PIIConfig_2]] - `calls` [EXTRACTED]
 - [[PIISanitizer]] - `calls` [EXTRACTED]
 - [[PromptGuard]] - `calls` [EXTRACTED]
-- [[SecurityPipeline]] - `calls` [EXTRACTED]
-- [[TrustManager_1]] - `calls` [EXTRACTED]
-- [[run_canary()]] - `calls` [EXTRACTED]
+- [[SecurityPipeline_1]] - `calls` [EXTRACTED]
+- [[TrustManager]] - `calls` [EXTRACTED]
+- [[run_canary()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer__E2E_Tests
+#graphify/code #graphify/EXTRACTED #community/Proxy_Sidecar__Forwarder

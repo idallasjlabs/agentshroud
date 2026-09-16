@@ -1,11 +1,11 @@
 ---
 source_file: ".pre-commit-config.yaml"
 type: "concept"
-community: "Community 420"
+community: "Community 86"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_420
+  - community/Community_86
 ---
 
 # black (Python formatter)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Pre-commit Hooks Configuration]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_420
+#graphify/concept #graphify/EXTRACTED #community/Community_86

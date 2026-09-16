@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_mcp_result_endpoint.py"
+source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "Community 26"
-location: "L51"
+community: "Community 329"
+location: "L29"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_26
+  - graphify/EXTRACTED
+  - community/Community_329
 ---
 
 # client()
 
 ## Connections
 - [[AsyncClient]] - `calls` [INFERRED]
-- [[test_mcp_result_endpoint.py]] - `contains` [EXTRACTED]
+- [[test_security_fixes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_26
+#graphify/code #graphify/EXTRACTED #community/Community_329

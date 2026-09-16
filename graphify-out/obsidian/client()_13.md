@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_security_fixes.py"
+source_file: "gateway/tests/test_op_proxy.py"
 type: "code"
-community: "Community 884"
-location: "L29"
+community: "Community 409"
+location: "L76"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_884
+  - graphify/EXTRACTED
+  - community/Community_409
 ---
 
 # client()
 
 ## Connections
-- [[AsyncClient]] - `calls` [INFERRED]
-- [[test_security_fixes.py]] - `contains` [EXTRACTED]
+- [[test_op_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_884
+#graphify/code #graphify/EXTRACTED #community/Community_409

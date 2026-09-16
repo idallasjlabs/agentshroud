@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "rationale"
-community: "Community 74"
+community: "Community 78"
 location: "L631"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_74
+  - community/Community_78
 ---
 
 # chat.postEphemeral text goes through the pipeline like postMessage.
 
 ## Connections
-- [[.test_post_ephemeral_scanned()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_post_ephemeral_scanned()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_74
+#graphify/rationale #graphify/EXTRACTED #community/Community_78

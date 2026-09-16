@@ -12,8 +12,8 @@ tags:
 # cves_reports_unknown_bot_error()
 
 ## Connections
-- [[.new()_2]] - `calls` [EXTRACTED]
-- [[.ok()]] - `calls` [EXTRACTED]
+- [[dot-new()_2]] - `calls` [EXTRACTED]
+- [[dot-ok()_1]] - `calls` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 - [[run_cves()]] - `calls` [EXTRACTED]
 

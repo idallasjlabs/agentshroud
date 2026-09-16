@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_dashboard_endpoints.py"
+source_file: "gateway/tests/test_dashboard.py"
 type: "code"
-community: "Community 884"
-location: "L25"
+community: "Community 329"
+location: "L32"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_884
+  - graphify/EXTRACTED
+  - community/Community_329
 ---
 
 # client()
 
 ## Connections
 - [[AsyncClient]] - `calls` [INFERRED]
-- [[test_dashboard_endpoints.py]] - `contains` [EXTRACTED]
+- [[test_dashboard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_884
+#graphify/code #graphify/EXTRACTED #community/Community_329

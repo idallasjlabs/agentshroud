@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_differential_pii_detector.py"
+source_file: "gateway/tests/test_subagent_monitor.py"
 type: "code"
-community: "Community 45"
-location: "L35"
+community: "Alert Dispatcher & RBAC Reliability"
+location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_45
+  - community/Alert_Dispatcher__RBAC_Reliability
 ---
 
 # default_config()
 
 ## Connections
-- [[DifferentialPIIConfig_1]] - `references` [EXTRACTED]
-- [[test_differential_pii_detector.py]] - `contains` [EXTRACTED]
+- [[SubagentMonitorConfig]] - `calls` [EXTRACTED]
+- [[test_subagent_monitor.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_45
+#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability
