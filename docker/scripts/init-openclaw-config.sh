@@ -198,11 +198,24 @@ node -e "
   setIfChanged('api', 'ollama');
   setIfChanged('apiKey', 'OLLAMA_API_KEY');
 
+  // Each entry must be a ModelDefinitionSchema object ({id, ...}), not a bare
+  // string — OpenClaw's models.json validator requires providers.*.models[] to
+  // be objects (dist/model-registry-*.mjs: ModelDefinitionSchema requires
+  // 'id: string'). Bare strings fail schema validation with
+  // 'providers.ollama.models.0: must be object', which disables the whole
+  // custom model catalog (observed 2026-09-15/16: '[agents/model-registry]
+  // model catalog load issue' + 'remote model catalog refresh failed').
+  // Self-heal any legacy string entries already on the volume, in place.
   const existingModels = Array.isArray(cfg.providers.ollama.models) ? cfg.providers.ollama.models : [];
-  if (!existingModels.includes(modelName)) {
-    cfg.providers.ollama.models = [...existingModels, modelName];
+  const normalizedModels = existingModels.map((m) => (typeof m === 'string' ? { id: m } : m));
+  if (JSON.stringify(normalizedModels) !== JSON.stringify(existingModels)) {
     changed = true;
   }
+  if (!normalizedModels.some((m) => m && m.id === modelName)) {
+    normalizedModels.push({ id: modelName });
+    changed = true;
+  }
+  cfg.providers.ollama.models = normalizedModels;
 
   if (changed) {
     fs.writeFileSync(p, JSON.stringify(cfg, null, 2), 'utf8');
