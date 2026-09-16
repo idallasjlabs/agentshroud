@@ -10,14 +10,14 @@ members: 8
 **Members:** 8 nodes
 
 ## Members
-- [[4. Risks & Gaps]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[Critical]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[Critical Risks]] - document - docs/planning/reviews/phase-review-2026-03-03.md
-- [[Deferred Items That Matter]] - document - docs/planning/reviews/phase-review-2026-03-03.md
-- [[Design Decisions That Could Backfire]] - document - docs/planning/reviews/phase-review-2026-03-03.md
-- [[Design Decisions to Reconsider]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[High]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[Medium]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[HTTP 400 — Unknown MCP Server]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
+- [[HTTP 403 — MCP Tool Permission Denied]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
+- [[HTTP 429 — MCP Rate Limit Exceeded]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
+- [[HTTP 502 — MCP Server Unreachable]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
+- [[MCP Proxy Errors_2]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
+- [[MCP Proxy Errors_1]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
+- [[MCP Proxy Wrapper Issues (Bot Side)]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
+- [[Related Notes_70]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,7 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 133]]
+- 1 edge to [[_COMMUNITY_Community 255]]
 
 ## Top bridge nodes
-- [[4. Risks & Gaps]] - degree 8, connects to 1 community
+- [[MCP Proxy Errors_1]] - degree 2, connects to 1 community

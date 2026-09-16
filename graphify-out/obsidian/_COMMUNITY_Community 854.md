@@ -1,25 +1,26 @@
 ---
 type: community
-cohesion: 0.20
-members: 10
+cohesion: 0.27
+members: 11
 ---
 
 # Community 854
 
-**Cohesion:** 0.20 - loosely connected
-**Members:** 10 nodes
+**Cohesion:** 0.27 - loosely connected
+**Members:** 11 nodes
 
 ## Members
-- [[Approval queue (notify Isaiah via Telegram, wait up to 1 hour)]] - concept - docs/diagrams/images/diagram-14-logic-flow.svg
-- [[Execute action via HTTP CONNECT proxy]] - concept - docs/diagrams/images/diagram-14-logic-flow.svg
-- [[Isaiah decides (approved  rejected  timeout)]] - concept - docs/diagrams/images/diagram-14-logic-flow.svg
-- [[LLM inference (OpenAI GPT-4o or Anthropic Claude)]] - concept - docs/diagrams/images/diagram-14-logic-flow.svg
-- [[MCP Inspector (injection scan, PII scan, sensitive op scan)]] - concept - docs/diagrams/images/diagram-14-logic-flow.svg
-- [[Main agent (agentshroud_bot)]] - concept - docs/diagrams/images/diagram-14-logic-flow.svg
-- [[Response delivered to user]] - concept - docs/diagrams/images/diagram-14-logic-flow.svg
-- [[Threat level (NONELOW, MEDIUM, HIGH)]] - concept - docs/diagrams/images/diagram-14-logic-flow.svg
-- [[User sends message or cron fires]] - concept - docs/diagrams/images/diagram-14-logic-flow.svg
-- [[Write audit entry to ledger.db (SHA-256 hash only)]] - concept - docs/diagrams/images/diagram-14-logic-flow.svg
+- [[TODO Add actual script logic here]] - rationale - skills/openclaw/skill-creator/scripts/init_skill.py
+- [[Convert hyphenated skill name to Title Case for display.]] - rationale - skills/openclaw/skill-creator/scripts/init_skill.py
+- [[Initialize a new skill directory with template SKILL.md.      Args         skil]] - rationale - skills/openclaw/skill-creator/scripts/init_skill.py
+- [[Normalize a skill name to lowercase hyphen-case.]] - rationale - skills/openclaw/skill-creator/scripts/init_skill.py
+- [[create_resource_dirs()]] - code - skills/openclaw/skill-creator/scripts/init_skill.py
+- [[init_skill()]] - code - skills/openclaw/skill-creator/scripts/init_skill.py
+- [[init_skill.py]] - code - skills/openclaw/skill-creator/scripts/init_skill.py
+- [[main()_32]] - code - skills/openclaw/skill-creator/scripts/init_skill.py
+- [[normalize_skill_name()]] - code - skills/openclaw/skill-creator/scripts/init_skill.py
+- [[parse_resources()]] - code - skills/openclaw/skill-creator/scripts/init_skill.py
+- [[title_case_skill_name()]] - code - skills/openclaw/skill-creator/scripts/init_skill.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,3 +28,10 @@ members: 10
 TABLE source_file, type FROM #community/Community_854
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 543]]
+- 1 edge to [[_COMMUNITY_Community 555]]
+
+## Top bridge nodes
+- [[init_skill.py]] - degree 9, connects to 2 communities

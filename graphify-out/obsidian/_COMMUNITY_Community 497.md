@@ -1,33 +1,34 @@
 ---
 type: community
-cohesion: 0.11
-members: 18
+cohesion: 0.16
+members: 19
 ---
 
 # Community 497
 
-**Cohesion:** 0.11 - loosely connected
-**Members:** 18 nodes
+**Cohesion:** 0.16 - loosely connected
+**Members:** 19 nodes
 
 ## Members
-- [[Dialogue Adaptations_2]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
-- [[Dialogue Techniques_2]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
-- [[EXPERT_2]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
-- [[ElevenLabs v3 Audio Tags_2]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
-- [[Episode Closing (Mandatory for OKE)_2]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
-- [[Expert Persona_2]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
-- [[HOST_2]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
-- [[Input Requirements_28]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
-- [[OKE Channel — CPA Exam Prep Dialogue Guidelines_2]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
-- [[Output Format_37]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
-- [[Persona_22]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
-- [[Quality Checklist_25]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
-- [[Role_105]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
-- [[SKILL_181]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
-- [[Socrates — Dialogue Architect_4]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
-- [[Speaker Definitions_2]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
-- [[System Prompt_22]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
-- [[User Prompt Template_10]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
+- [[dot-all_ok()]] - code - gateway/tools/multi_host_test.py
+- [[dot-exit_code()]] - code - gateway/tools/multi_host_test.py
+- [[dot-failed()]] - code - gateway/tools/multi_host_test.py
+- [[dot-ok()_2]] - code - gateway/tools/multi_host_test.py
+- [[dot-passed()]] - code - gateway/tools/multi_host_test.py
+- [[dot-test_ok_only_when_pass()]] - code - gateway/tests/test_multi_host_test.py
+- [[dot-test_render_summary_all_pass_overall()]] - code - gateway/tests/test_multi_host_test.py
+- [[dot-test_render_summary_contains_hosts_and_overall()]] - code - gateway/tests/test_multi_host_test.py
+- [[dot-test_render_summary_empty()]] - code - gateway/tests/test_multi_host_test.py
+- [[dot-unreachable()]] - code - gateway/tools/multi_host_test.py
+- [[0 iff all hosts passed; 1 otherwise (incl. empty  any unreachable).]] - rationale - gateway/tools/multi_host_test.py
+- [[Aggregated outcome across all hosts.]] - rationale - gateway/tools/multi_host_test.py
+- [[HostResult]] - code - gateway/tools/multi_host_test.py
+- [[MultiHostResult]] - code - gateway/tools/multi_host_test.py
+- [[Result of running the command on a single host.]] - rationale - gateway/tools/multi_host_test.py
+- [[TestHostResult]] - code - gateway/tests/test_multi_host_test.py
+- [[TestMultiHostResultProperties]] - code - gateway/tests/test_multi_host_test.py
+- [[True only if every host passed (none failed or unreachable).]] - rationale - gateway/tools/multi_host_test.py
+- [[True only when the host ran the command and it exited 0.]] - rationale - gateway/tools/multi_host_test.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,3 +36,20 @@ members: 18
 TABLE source_file, type FROM #community/Community_497
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 8 edges to [[_COMMUNITY_Community 947]]
+- 4 edges to [[_COMMUNITY_Community 1039]]
+- 4 edges to [[_COMMUNITY_Community 859]]
+- 4 edges to [[_COMMUNITY_Community 911]]
+- 3 edges to [[_COMMUNITY_Community 764]]
+- 2 edges to [[_COMMUNITY_Community 1040]]
+- 2 edges to [[_COMMUNITY_Community 1158]]
+- 2 edges to [[_COMMUNITY_Community 1300]]
+- 2 edges to [[_COMMUNITY_Community 860]]
+
+## Top bridge nodes
+- [[MultiHostResult]] - degree 25, connects to 9 communities
+- [[HostResult]] - degree 23, connects to 9 communities
+- [[TestMultiHostResultProperties]] - degree 7, connects to 2 communities
+- [[TestHostResult]] - degree 5, connects to 2 communities

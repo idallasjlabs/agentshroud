@@ -1,33 +1,34 @@
 ---
 type: community
 cohesion: 0.11
-members: 18
+members: 19
 ---
 
 # Community 490
 
 **Cohesion:** 0.11 - loosely connected
-**Members:** 18 nodes
+**Members:** 19 nodes
 
 ## Members
-- [[API Reference]] - document - docs/api/api-reference.md
-- [[Agent-facing proxy endpoints (not control-plane)]] - document - docs/api/api-reference.md
-- [[Audit  ledger]] - document - docs/api/api-reference.md
-- [[Authentication_1]] - document - docs/api/api-reference.md
-- [[DNS]] - document - docs/api/api-reference.md
-- [[Egress control]] - document - docs/api/api-reference.md
-- [[Error responses]] - document - docs/api/api-reference.md
-- [[Example `GET managehealth`]] - document - docs/api/api-reference.md
-- [[Example `POST manageegress{request_id}approve`]] - document - docs/api/api-reference.md
-- [[Health & status]] - document - docs/api/api-reference.md
-- [[Quarantine]] - document - docs/api/api-reference.md
-- [[RBAC]] - document - docs/api/api-reference.md
-- [[Route map (by router)]] - document - docs/api/api-reference.md
-- [[SOC — Shared Command Layer (`socv1`, `gatewaysocrouter.py`)]] - document - docs/api/api-reference.md
-- [[Scanning]] - document - docs/api/api-reference.md
-- [[Source of truth]] - document - docs/api/api-reference.md
-- [[Web control center (`gatewaywebapi.py`)]] - document - docs/api/api-reference.md
-- [[api-reference]] - document - docs/api/api-reference.md
+- [[CVE Mitigations]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Configuration_10]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Early Return on Block]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Fail-Open ClamAV]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Guard Presence and Startup Behavior]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Important Behaviors]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Inbound (`process_inbound`)]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Key Thresholds]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Monitor vs. Enforce Mode]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Outbound (`process_outbound`)]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Overview_17]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Owner Exemption]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Owner Exemption — Logging Guarantee]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Pipeline Stages]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Related_5]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[Stats Counter]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[`AuditChain.append_block()` — Guaranteed Persistence Guarantee]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[pipeline.py — Security Pipeline]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
+- [[pipeline.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/pipeline.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,7 +38,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 518]]
+- 1 edge to [[_COMMUNITY_Community 298]]
 
 ## Top bridge nodes
-- [[API Reference]] - degree 8, connects to 1 community
+- [[pipeline.py — Security Pipeline]] - degree 8, connects to 1 community

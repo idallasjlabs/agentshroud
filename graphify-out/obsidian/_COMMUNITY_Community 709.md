@@ -1,28 +1,29 @@
 ---
 type: community
-cohesion: 0.15
-members: 13
+cohesion: 0.14
+members: 14
 ---
 
 # Community 709
 
-**Cohesion:** 0.15 - loosely connected
-**Members:** 13 nodes
+**Cohesion:** 0.14 - loosely connected
+**Members:** 14 nodes
 
 ## Members
-- [[Anti-Patterns to Flag_19]] - document - docker/config/openclaw/skills/i-tdd/SKILL.md
-- [[Core Discipline Red → Green → Refactor_2]] - document - docker/config/openclaw/skills/i-tdd/SKILL.md
-- [[Glue Job Logic  →  test transformations outside Spark_2]] - document - docker/config/openclaw/skills/i-tdd/SKILL.md
-- [[PostgreSQL  →  `SAVEPOINT` + `ROLLBACK`_2]] - document - docker/config/openclaw/skills/i-tdd/SKILL.md
-- [[Python  Boto3  AWS  →  `moto`_2]] - document - docker/config/openclaw/skills/i-tdd/SKILL.md
-- [[Role_106]] - document - docker/config/openclaw/skills/i-tdd/SKILL.md
-- [[Rules_22]] - document - docker/config/openclaw/skills/i-tdd/SKILL.md
-- [[SKILL_183]] - document - docker/config/openclaw/skills/i-tdd/SKILL.md
-- [[Skill Test-Driven Development (TDD)_2]] - document - docker/config/openclaw/skills/i-tdd/SKILL.md
-- [[Stack-Specific Testing Patterns_2]] - document - docker/config/openclaw/skills/i-tdd/SKILL.md
-- [[Step Function Input Validation_2]] - document - docker/config/openclaw/skills/i-tdd/SKILL.md
-- [[Test Structure_5]] - document - docker/config/openclaw/skills/i-tdd/SKILL.md
-- [[Zabbix API  →  `unittest.mock`_2]] - document - docker/config/openclaw/skills/i-tdd/SKILL.md
+- [[ConsentFramework.add_to_blacklist(command)  remove_from_blacklist(command)]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
+- [[ConsentFramework.add_to_whitelist(command)  remove_from_whitelist(command)]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
+- [[ConsentFramework.get_whitelist()  get_blacklist()]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
+- [[ConsentFramework.validate_config(config)]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
+- [[Function Details_39]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
+- [[Key Classes  Functions_41]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
+- [[Purpose_170]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
+- [[Related_45]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
+- [[Responsibilities_43]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
+- [[Secret Patterns in Environment Variables]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
+- [[Shell Injection Patterns Detected]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
+- [[Threat Model_25]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
+- [[consent_framework.py_2]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
+- [[consent_framework.py_1]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
 
 ## Live Query (requires Dataview plugin)
 

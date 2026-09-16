@@ -10,23 +10,23 @@ members: 17
 **Members:** 17 nodes
 
 ## Members
-- [[ClamAV — Malware Detection]] - document - docs/security/security-supply-chain.md
-- [[Detailed Profiles]] - document - docs/security/security-supply-chain.md
-- [[Docker Engine]] - document - docs/security/security-supply-chain.md
-- [[Falco — Runtime Security Monitoring]] - document - docs/security/security-supply-chain.md
-- [[FastAPI  Starlette  Uvicorn — Web Framework]] - document - docs/security/security-supply-chain.md
-- [[OpenSCAP — Compliance Scanning]] - document - docs/security/security-supply-chain.md
-- [[Overview_14]] - document - docs/security/security-supply-chain.md
-- [[Podman]] - document - docs/security/security-supply-chain.md
-- [[Python 3.11 — Runtime]] - document - docs/security/security-supply-chain.md
-- [[Recommendations]] - document - docs/security/security-supply-chain.md
-- [[SQLite — Approval Queue  Audit Storage]] - document - docs/security/security-supply-chain.md
-- [[Security Supply Chain Analysis]] - document - docs/security/security-supply-chain.md
-- [[Trivy — Container Image Scanning]] - document - docs/security/security-supply-chain.md
-- [[Verdict Summary]] - document - docs/security/security-supply-chain.md
-- [[Wazuh — Host Integrity Monitoring ⚠️]] - document - docs/security/security-supply-chain.md
-- [[cryptography (Python) — Encryption Library]] - document - docs/security/security-supply-chain.md
-- [[spaCy + Presidio — PII Detection]] - document - docs/security/security-supply-chain.md
+- [[A. One-Click Install & Updates]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[AgentShroud Shared Tasks]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[AgentShroud Tasks (all overdue, added to v0.8.0)]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[AgentShroud — Master Feature List (Everything Ever Mentioned)]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[Apple Reminders — Items Recovered]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[B. Professional Branded Web Command Center]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[C. TextCLI Command Center]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[Collaborators_2]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[D. SSH Chat Interface]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[E. Full Documentation]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[F. Final Hardening + Release]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[G. Trademark  IP]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[Infrastructure_5]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[MASTER-FEATURE-LIST]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[Summary_16]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[v1.0.0 — Fortress (Polish + Public Release)]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[⚠️ STATUS UPDATE — 2026-07-09 (read before the per-item marks below)]] - document - docs/planning/MASTER-FEATURE-LIST.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,7 +36,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 428]]
+- 1 edge to [[_COMMUNITY_Community 375]]
+- 1 edge to [[_COMMUNITY_Community 413]]
+- 1 edge to [[_COMMUNITY_Community 801]]
 
 ## Top bridge nodes
-- [[Security Supply Chain Analysis]] - degree 5, connects to 1 community
+- [[AgentShroud — Master Feature List (Everything Ever Mentioned)]] - degree 10, connects to 3 communities

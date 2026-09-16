@@ -1,24 +1,25 @@
 ---
 type: community
 cohesion: 0.22
-members: 9
+members: 10
 ---
 
 # Community 915
 
 **Cohesion:** 0.22 - loosely connected
-**Members:** 9 nodes
+**Members:** 10 nodes
 
 ## Members
-- [[.test_credential_never_in_logs()]] - code - gateway/tests/test_credential_injector.py
-- [[.test_get_status_structure()]] - code - gateway/tests/test_credential_injector.py
-- [[Create a temp secrets directory with a test credential.]] - rationale - gateway/tests/test_credential_injector.py
-- [[CredentialInjector with a custom mapping pointing at the temp secrets.]] - rationale - gateway/tests/test_credential_injector.py
-- [[TestStatus]] - code - gateway/tests/test_credential_injector.py
-- [[Verify that raw credential values never appear in log output.]] - rationale - gateway/tests/test_credential_injector.py
-- [[injector()]] - code - gateway/tests/test_credential_injector.py
-- [[secrets_dir()]] - code - gateway/tests/test_credential_injector.py
-- [[test_credential_injector.py]] - code - gateway/tests/test_credential_injector.py
+- [[dot-test_stranger_exceeding_limit_gets_rate_limit_notice_not_owner_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_stranger_rate_limit_cooldown_suppresses_repeated_notices()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_stranger_rate_limit_notice_includes_reset_time()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_stranger_within_limit_triggers_approval_workflow()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[First message from unknown user (within limit) queues approval flow.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Once stranger exhausts rate limit, they get a rate-limit notice; owner is NOT no]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Repeated rate-limited messages within the cooldown window send at most one notic]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[TestStrangerRateLimit]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[Unknownunapproved users have stricter rate limits than collaborators.      Afte]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[_send_stranger_rate_limit_notice must include a reset time in HHMM UTC format.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,12 +29,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 867]]
-- 1 edge to [[_COMMUNITY_Community 987]]
-- 1 edge to [[_COMMUNITY_Community 1055]]
-- 1 edge to [[_COMMUNITY_Community 563]]
-- 1 edge to [[_COMMUNITY_Community 605]]
+- 15 edges to [[_COMMUNITY_Telegram Proxy Inbound Tests]]
+- 4 edges to [[_COMMUNITY_Telegram Lockdown & Collaborator UX Tests]]
+- 1 edge to [[_COMMUNITY_Alert Dispatcher & RBAC Reliability]]
+- 1 edge to [[_COMMUNITY_Community 119]]
+- 1 edge to [[_COMMUNITY_Collaborator Activity & Telegram Proxy]]
 
 ## Top bridge nodes
-- [[test_credential_injector.py]] - degree 7, connects to 4 communities
-- [[injector()]] - degree 3, connects to 1 community
+- [[TestStrangerRateLimit]] - degree 9, connects to 4 communities
+- [[dot-test_stranger_exceeding_limit_gets_rate_limit_notice_not_owner_notice()]] - degree 7, connects to 2 communities
+- [[dot-test_stranger_rate_limit_cooldown_suppresses_repeated_notices()]] - degree 7, connects to 2 communities
+- [[dot-test_stranger_within_limit_triggers_approval_workflow()]] - degree 7, connects to 2 communities
+- [[dot-test_stranger_rate_limit_notice_includes_reset_time()]] - degree 6, connects to 1 community

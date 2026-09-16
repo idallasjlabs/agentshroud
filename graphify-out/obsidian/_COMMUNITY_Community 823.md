@@ -1,25 +1,26 @@
 ---
 type: community
-cohesion: 0.20
-members: 10
+cohesion: 0.18
+members: 11
 ---
 
 # Community 823
 
-**Cohesion:** 0.20 - loosely connected
-**Members:** 10 nodes
+**Cohesion:** 0.18 - loosely connected
+**Members:** 11 nodes
 
 ## Members
-- [[Description_9]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
-- [[Effect_1]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
-- [[Related Notes_37]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
-- [[SDK Patch_1]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
-- [[Set In_5]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
-- [[TELEGRAM_API_BASE_URL_1]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
-- [[TELEGRAM_API_BASE_URL]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
-- [[Value_5]] - document - docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md
-- [[patch-telegram-sdk.sh]] - code - docker/scripts/patch-telegram-sdk.sh
-- [[patch-telegram-sdk.sh script]] - code - docker/scripts/patch-telegram-sdk.sh
+- [[ADR-002-default-allow-security-philosophy]] - document - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
+- [[ADR-002 Default-Allow Security Philosophy]] - document - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
+- [[Consequences_4]] - document - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
+- [[Context_7]] - document - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
+- [[Decision_7]] - document - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
+- [[Evaluation Criteria]] - document - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
+- [[Implementation Approach]] - document - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
+- [[Mitigation Strategies_1]] - document - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
+- [[Negative Consequences_3]] - document - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
+- [[Positive Consequences_3]] - document - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
+- [[Status_7]] - document - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,12 +28,3 @@ members: 10
 TABLE source_file, type FROM #community/Community_823
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 620]]
-- 1 edge to [[_COMMUNITY_Community 791]]
-- 1 edge to [[_COMMUNITY_Community 49]]
-
-## Top bridge nodes
-- [[patch-telegram-sdk.sh]] - degree 4, connects to 2 communities
-- [[TELEGRAM_API_BASE_URL]] - degree 3, connects to 1 community

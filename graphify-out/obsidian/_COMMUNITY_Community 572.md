@@ -1,31 +1,31 @@
 ---
 type: community
-cohesion: 0.12
+cohesion: 0.14
 members: 16
 ---
 
 # Community 572
 
-**Cohesion:** 0.12 - loosely connected
+**Cohesion:** 0.14 - loosely connected
 **Members:** 16 nodes
 
 ## Members
-- [[0.1 Code Inventory ✅]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[0.2 Current State ✅]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[2.1 Top Up Anthropic API Credits]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[2.2 Grant iMessage Automation Permission]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[2.3 Verify Both Working]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[3.1 Test Manual Send from Host]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[3.2 Test from Container]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[3.3 Test via OpenClaw chat Endpoint]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[3.4 Verify End-to-End Message Flow]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[AgentShroud Recovery Plan v0.4.0]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[EXECUTIVE SUMMARY]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[NEXT STEPS]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[PHASE 0 STABILIZATION ✅ COMPLETE]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[PHASE 2 USER ACTIONS REQUIRED]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[PHASE 3 iMESSAGE INTEGRATION TEST]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[RECOVERY_PLAN]] - document - docs/planning/recovery/RECOVERY_PLAN.md
+- [[03-data]] - document - docs/diagrams/03-data.md
+- [[10. Data Dictionary  Catalog Map]] - document - docs/diagrams/03-data.md
+- [[7. Data Flow Diagram — How Data Moves Through the System]] - document - docs/diagrams/03-data.md
+- [[8. Entity Relationship Diagram (ERD)]] - document - docs/diagrams/03-data.md
+- [[9. Data Lineage Diagram]] - document - docs/diagrams/03-data.md
+- [[AgentShroud — Data Diagrams]] - document - docs/diagrams/03-data.md
+- [[Current Status_9]] - document - docs/data/README.md
+- [[Data Dictionary  Catalog Map]] - concept - docs/diagrams/03-data.md
+- [[Data Documentation]] - document - docs/data/README.md
+- [[Data Flow Diagram]] - concept - docs/diagrams/03-data.md
+- [[Data Lineage Diagram]] - concept - docs/diagrams/03-data.md
+- [[Entity Relationship Diagram (ledger, approval_items)]] - concept - docs/diagrams/03-data.md
+- [[Planned Documents_6]] - document - docs/data/README.md
+- [[Rendered Data Flow Diagram (PNG)]] - image - docs/diagrams/images/diagram-07-data-flow.png
+- [[Rendered ERD Diagram (PNG)]] - image - docs/diagrams/images/diagram-08-erd.png
+- [[dataREADME]] - document - docs/data/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,8 +35,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 603]]
-- 1 edge to [[_COMMUNITY_Community 1110]]
+- 1 edge to [[_COMMUNITY_Community 451]]
+- 1 edge to [[_COMMUNITY_Community 875]]
 
 ## Top bridge nodes
-- [[AgentShroud Recovery Plan v0.4.0]] - degree 8, connects to 2 communities
+- [[03-data]] - degree 6, connects to 1 community
+- [[Entity Relationship Diagram (ledger, approval_items)]] - degree 5, connects to 1 community

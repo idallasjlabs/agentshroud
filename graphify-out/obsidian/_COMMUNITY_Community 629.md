@@ -10,21 +10,21 @@ members: 15
 **Members:** 15 nodes
 
 ## Members
-- [[3. Round 2 Findings]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
-- [[E1 Tailscale sidecar on internal-only network cannot reach control plane]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
-- [[I1 Missing trailing newlines in route files]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
-- [[I2 Duplicated constants between `main.py` and `routesforward.py`]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
-- [[I3 `managednsblocklist` reads pihole password inline]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
-- [[I4 `AppState` class missing dynamically-set attributes]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
-- [[I5 Inline import on hot path in LLM proxy]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
-- [[W1 Duplicate `import time` in `dashboard.py`]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
-- [[W2 Redundant function-level `import threading` in `lifespan.py`]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
-- [[W3 Redundant function-level `import fnmatch` in `main.py`]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
-- [[W4 Tailscale image not pinned to SHA256 digest]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
-- [[W5 Hardcoded owner ID fallback `'1234567890'` in `lifespan.py`]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
-- [[🔴 ERRORS (must fix)]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
-- [[🟡 WARNINGS (should fix)]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
-- [[🟢 INFO (nice to have)]] - document - docs/planning/reviews/phase-review-2026-03-05-r2.md
+- [[Guardrails_14]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
+- [[Invocation_8]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
+- [[Role_67]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
+- [[Skill Create PR with Pre-Flight Audit (CRPR)_2]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
+- [[Step 0 — Pre-flight checks_2]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
+- [[Step 1 — Check for an in-progress merge_2]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
+- [[Step 2 — Merge without committing_2]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
+- [[Step 3 — Audit the pending merge_2]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
+- [[Step 3a — Present and resolve confirmed regressions_2]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
+- [[Step 3b — Re-audit to confirm clean_2]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
+- [[Step 3c — Commit the merge_2]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
+- [[Step 4 — Push the branch_2]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
+- [[Step 5 — Generate the PR description_2]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
+- [[Step 6 — Create the PR_2]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
+- [[openclawskillsi-crprSKILL]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,9 +32,3 @@ members: 15
 TABLE source_file, type FROM #community/Community_629
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 133]]
-
-## Top bridge nodes
-- [[3. Round 2 Findings]] - degree 4, connects to 1 community

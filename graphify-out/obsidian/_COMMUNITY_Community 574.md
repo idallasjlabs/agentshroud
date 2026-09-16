@@ -1,31 +1,31 @@
 ---
 type: community
-cohesion: 0.12
+cohesion: 0.21
 members: 16
 ---
 
 # Community 574
 
-**Cohesion:** 0.12 - loosely connected
+**Cohesion:** 0.21 - loosely connected
 **Members:** 16 nodes
 
 ## Members
-- [[03-session-isolation]] - document - docs/planning/redteam/03-session-isolation.md
-- [[Constraints_6]] - document - docs/planning/redteam/03-session-isolation.md
-- [[Evidence_3]] - document - docs/planning/redteam/03-session-isolation.md
-- [[Implement per-user session isolation using Telegram user ID]] - document - docs/planning/redteam/03-session-isolation.md
-- [[Problem_6]] - document - docs/planning/redteam/03-session-isolation.md
-- [[Remediation_4]] - document - docs/planning/redteam/03-session-isolation.md
-- [[Root Cause_5]] - document - docs/planning/redteam/03-session-isolation.md
-- [[Severity_6]] - document - docs/planning/redteam/03-session-isolation.md
-- [[Step 1 Add user session registry to the gateway]] - document - docs/planning/redteam/03-session-isolation.md
-- [[Step 2 Partition conversation context at the gateway]] - document - docs/planning/redteam/03-session-isolation.md
-- [[Step 3 Isolate file workspaces per user]] - document - docs/planning/redteam/03-session-isolation.md
-- [[Step 4 Scope the system prompt per session]] - document - docs/planning/redteam/03-session-isolation.md
-- [[Step 5 Isolate memory persistence]] - document - docs/planning/redteam/03-session-isolation.md
-- [[Step 6 Add cross-session access controls to sessions_send]] - document - docs/planning/redteam/03-session-isolation.md
-- [[Step 7 Add session listing protections]] - document - docs/planning/redteam/03-session-isolation.md
-- [[Verification_5]] - document - docs/planning/redteam/03-session-isolation.md
+- [[Read up to the end of the request's header block (rnrn).      Returns (h]] - rationale - docker/bots/hermes/dashboard_bridge.py
+- [[Rewrite the Host header to `new_host` and normalize Connection framing.      `he]] - rationale - docker/bots/hermes/dashboard_bridge.py
+- [[StreamReader]] - code - docker/bots/hermes/dashboard_bridge.py
+- [[StreamReader_1]] - code - docker/bots/hermes/docker_proxy_relay.py
+- [[StreamWriter]] - code - docker/bots/hermes/dashboard_bridge.py
+- [[StreamWriter_1]] - code - docker/bots/hermes/docker_proxy_relay.py
+- [[_handle()]] - code - docker/bots/hermes/dashboard_bridge.py
+- [[_handle()_1]] - code - docker/bots/hermes/docker_proxy_relay.py
+- [[_pipe()]] - code - docker/bots/hermes/dashboard_bridge.py
+- [[_pump()]] - code - docker/bots/hermes/docker_proxy_relay.py
+- [[_read_request_headers()]] - code - docker/bots/hermes/dashboard_bridge.py
+- [[dashboard_bridge.py]] - code - docker/bots/hermes/dashboard_bridge.py
+- [[docker_proxy_relay.py]] - code - docker/bots/hermes/docker_proxy_relay.py
+- [[main()_27]] - code - docker/bots/hermes/dashboard_bridge.py
+- [[main()_28]] - code - docker/bots/hermes/docker_proxy_relay.py
+- [[rewrite_request_headers()]] - code - docker/bots/hermes/dashboard_bridge.py
 
 ## Live Query (requires Dataview plugin)
 

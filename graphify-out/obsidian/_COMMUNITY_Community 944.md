@@ -1,23 +1,24 @@
 ---
 type: community
-cohesion: 0.25
-members: 8
+cohesion: 0.22
+members: 9
 ---
 
 # Community 944
 
-**Cohesion:** 0.25 - loosely connected
-**Members:** 8 nodes
+**Cohesion:** 0.22 - loosely connected
+**Members:** 9 nodes
 
 ## Members
-- [[Curriculum Architect (i-atlas)]] - document - .agents/skills/i-atlas/SKILL.md
-- [[Mindmap Architect (MM)]] - document - .agents/skills/i-mm/SKILL.md
-- [[Purpose_34]] - document - .agents/skills/i-ti/README.md
-- [[README_34]] - document - .agents/skills/i-ti/README.md
-- [[Related Skills_37]] - document - .agents/skills/i-ti/README.md
-- [[Technical Illustrator (i-ti)]] - document - .agents/skills/i-ti/SKILL.md
-- [[Technical Writing (i-tw)]] - document - .agents/skills/i-tw/SKILL.md
-- [[Usage_37]] - document - .agents/skills/i-ti/README.md
+- [[1. Command Injection]] - document - docs/ssh-security-review.md
+- [[2. Host Spoofing  Man-in-the-Middle]] - document - docs/ssh-security-review.md
+- [[3. Credential Theft]] - document - docs/ssh-security-review.md
+- [[4. Privilege Escalation]] - document - docs/ssh-security-review.md
+- [[6. Audit Log Tampering  PII Leakage]] - document - docs/ssh-security-review.md
+- [[D - Denial of Service]] - document - docs/security/threat-model.md
+- [[Threat Model_28]] - document - docs/ssh-security-review.md
+- [[Threat Context Window Stuffing]] - document - docs/security/threat-model.md
+- [[Threat Resource Exhaustion]] - document - docs/security/threat-model.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,3 +26,11 @@ members: 8
 TABLE source_file, type FROM #community/Community_944
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 841]]
+- 1 edge to [[_COMMUNITY_Community 962]]
+
+## Top bridge nodes
+- [[Threat Model_28]] - degree 7, connects to 1 community
+- [[D - Denial of Service]] - degree 4, connects to 1 community

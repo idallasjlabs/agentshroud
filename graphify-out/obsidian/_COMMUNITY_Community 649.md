@@ -1,30 +1,30 @@
 ---
 type: community
-cohesion: 0.15
+cohesion: 0.13
 members: 15
 ---
 
 # Community 649
 
-**Cohesion:** 0.15 - loosely connected
+**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
-- [[jira_dev_ticket add_comment()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket build_basic_auth_header()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket build_comment_url()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket build_issue_url()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket build_op_proxy_request()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket build_tenant_info_url()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket build_transitions_url()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket create_issue()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket fetch_credentials()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket fetch_op_secret()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket find_transition_id()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket resolve_cloud_id()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket run()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket transition_issue()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket.py (OpenClaw copy)]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[04-separation-of-privilege]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Constraints_4]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Evidence_4]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Make gateway source code, config, and security policies read-only to the agent]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Problem_6]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Remediation_5]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Root Cause_4]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Severity_7]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Step 1 Mount gateway source as read-only Docker volumes]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Step 2 Add AgentShroud paths to File IO Sandboxing deny list]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Step 3 Block SSH commands targeting the gateway host]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Step 4 Make SOUL.md and system prompts immutable]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Step 5 Add integrity checking for security-critical files]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Step 6 Enforce read-only at the Docker layer]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Verification_10]] - document - docs/planning/redteam/04-separation-of-privilege.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,14 +32,3 @@ members: 15
 TABLE source_file, type FROM #community/Community_649
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 249]]
-- 2 edges to [[_COMMUNITY_Community 168]]
-
-## Top bridge nodes
-- [[jira_dev_ticket run()]] - degree 7, connects to 2 communities
-- [[jira_dev_ticket build_basic_auth_header()]] - degree 4, connects to 1 community
-- [[jira_dev_ticket resolve_cloud_id()]] - degree 3, connects to 1 community
-- [[jira_dev_ticket build_op_proxy_request()]] - degree 2, connects to 1 community
-- [[jira_dev_ticket.py (OpenClaw copy)]] - degree 2, connects to 1 community

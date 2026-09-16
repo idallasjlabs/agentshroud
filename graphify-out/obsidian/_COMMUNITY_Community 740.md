@@ -1,27 +1,28 @@
 ---
 type: community
-cohesion: 0.17
-members: 12
+cohesion: 0.15
+members: 13
 ---
 
 # Community 740
 
-**Cohesion:** 0.17 - loosely connected
-**Members:** 12 nodes
+**Cohesion:** 0.15 - loosely connected
+**Members:** 13 nodes
 
 ## Members
-- [[Approval Queue Health]] - document - docs/vault/08 - Runbooks/Health Checks.md
-- [[Basic Status (No Auth)]] - document - docs/vault/08 - Runbooks/Health Checks.md
-- [[Bot Health Check]] - document - docs/vault/08 - Runbooks/Health Checks.md
-- [[Container Health Check]] - document - docs/vault/08 - Runbooks/Health Checks.md
-- [[Full Health Report (Auth Required)]] - document - docs/vault/08 - Runbooks/Health Checks.md
-- [[Gateway Health Endpoints]] - document - docs/vault/08 - Runbooks/Health Checks.md
-- [[Health Check Intervals (Docker)]] - document - docs/vault/08 - Runbooks/Health Checks.md
-- [[Health Checks_2]] - document - docs/vault/08 - Runbooks/Health Checks.md
-- [[Ledger Health]] - document - docs/vault/08 - Runbooks/Health Checks.md
-- [[Monitoring Script]] - document - docs/vault/08 - Runbooks/Health Checks.md
-- [[Related Notes_67]] - document - docs/vault/08 - Runbooks/Health Checks.md
-- [[Security Health Report]] - document - docs/vault/08 - Runbooks/Health Checks.md
+- [[Docker Desktop Network Settings — Cisco AnyConnect VPN Compatibility]] - document - docker/DOCKER-VPN-NETWORKING.md
+- [[How to Apply]] - document - docker/DOCKER-VPN-NETWORKING.md
+- [[If It Stops Working After a VPN Reconnect]] - document - docker/DOCKER-VPN-NETWORKING.md
+- [[Network Architecture (unchanged)]] - document - docker/DOCKER-VPN-NETWORKING.md
+- [[Primary gVisor networking mode]] - document - docker/DOCKER-VPN-NETWORKING.md
+- [[Problem_8]] - document - docker/DOCKER-VPN-NETWORKING.md
+- [[Related Files]] - document - docker/DOCKER-VPN-NETWORKING.md
+- [[Root Cause_6]] - document - docker/DOCKER-VPN-NETWORKING.md
+- [[Secondary Python IPv6 fallback (misleading error)]] - document - docker/DOCKER-VPN-NETWORKING.md
+- [[Secondary transparent HTTPS proxy]] - document - docker/DOCKER-VPN-NETWORKING.md
+- [[Settings Changed]] - document - docker/DOCKER-VPN-NETWORKING.md
+- [[Verification_12]] - document - docker/DOCKER-VPN-NETWORKING.md
+- [[With VPN connected]] - document - docker/DOCKER-VPN-NETWORKING.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,7 +32,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 289]]
+- 1 edge to [[_COMMUNITY_Community 834]]
 
 ## Top bridge nodes
-- [[Health Checks_2]] - degree 10, connects to 1 community
+- [[Docker Desktop Network Settings — Cisco AnyConnect VPN Compatibility]] - degree 9, connects to 1 community

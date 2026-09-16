@@ -1,27 +1,28 @@
 ---
 type: community
-cohesion: 0.17
-members: 12
+cohesion: 0.15
+members: 13
 ---
 
 # Community 738
 
-**Cohesion:** 0.17 - loosely connected
-**Members:** 12 nodes
+**Cohesion:** 0.15 - loosely connected
+**Members:** 13 nodes
 
 ## Members
-- [[Backup]] - document - docs/vault/06 - Containers & Services/volumes.md
-- [[Cleanup Warning]] - document - docs/vault/06 - Containers & Services/volumes.md
-- [[Docker Volumes]] - document - docs/vault/06 - Containers & Services/volumes.md
-- [[Inspecting Volumes]] - document - docs/vault/06 - Containers & Services/volumes.md
-- [[Related Notes_54]] - document - docs/vault/06 - Containers & Services/volumes.md
-- [[Volume Details]] - document - docs/vault/06 - Containers & Services/volumes.md
-- [[Volume Inventory]] - document - docs/vault/06 - Containers & Services/volumes.md
-- [[agentshroud-browsers]] - document - docs/vault/06 - Containers & Services/volumes.md
-- [[agentshroud-config]] - document - docs/vault/06 - Containers & Services/volumes.md
-- [[agentshroud-ssh]] - document - docs/vault/06 - Containers & Services/volumes.md
-- [[agentshroud-workspace]] - document - docs/vault/06 - Containers & Services/volumes.md
-- [[gateway-data]] - document - docs/vault/06 - Containers & Services/volumes.md
+- [[Anti-Patterns to Flag_23]] - document - docker/config/openclaw/skills/i-tdd/SKILL.md
+- [[Core Discipline Red → Green → Refactor_2]] - document - docker/config/openclaw/skills/i-tdd/SKILL.md
+- [[Glue Job Logic  →  test transformations outside Spark_2]] - document - docker/config/openclaw/skills/i-tdd/SKILL.md
+- [[PostgreSQL  →  `SAVEPOINT` + `ROLLBACK`_2]] - document - docker/config/openclaw/skills/i-tdd/SKILL.md
+- [[Python  Boto3  AWS  →  `moto`_2]] - document - docker/config/openclaw/skills/i-tdd/SKILL.md
+- [[Role_82]] - document - docker/config/openclaw/skills/i-tdd/SKILL.md
+- [[Rules_25]] - document - docker/config/openclaw/skills/i-tdd/SKILL.md
+- [[Skill Test-Driven Development (TDD)_2]] - document - docker/config/openclaw/skills/i-tdd/SKILL.md
+- [[Stack-Specific Testing Patterns_2]] - document - docker/config/openclaw/skills/i-tdd/SKILL.md
+- [[Step Function Input Validation_2]] - document - docker/config/openclaw/skills/i-tdd/SKILL.md
+- [[Test Structure_6]] - document - docker/config/openclaw/skills/i-tdd/SKILL.md
+- [[Zabbix API  →  `unittest.mock`_2]] - document - docker/config/openclaw/skills/i-tdd/SKILL.md
+- [[openclawskillsi-tddSKILL]] - document - docker/config/openclaw/skills/i-tdd/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,9 +30,3 @@ members: 12
 TABLE source_file, type FROM #community/Community_738
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 339]]
-
-## Top bridge nodes
-- [[Docker Volumes]] - degree 7, connects to 1 community

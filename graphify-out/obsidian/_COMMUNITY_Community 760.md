@@ -1,27 +1,28 @@
 ---
 type: community
-cohesion: 0.18
-members: 12
+cohesion: 0.15
+members: 13
 ---
 
 # Community 760
 
-**Cohesion:** 0.18 - loosely connected
-**Members:** 12 nodes
+**Cohesion:** 0.15 - loosely connected
+**Members:** 13 nodes
 
 ## Members
-- [[1. Create a parent panel]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
-- [[2. Initialise]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
-- [[3. Set an emotion]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
-- [[4. Reposition]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
-- [[Adding to your project]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
-- [[Emotions]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
-- [[LVGL KAWAII FACE]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
-- [[License_2]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
-- [[README_127]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
-- [[Requirements_1]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
-- [[Thread safety]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
-- [[Usage_127]] - document - firmware/voice-terminal/components/lvgl_kawaii_face/README.md
+- [[AgentShroud v0.8.0 Peer Review Round 3 (FINAL)]] - document - docs/planning/reviews/phase-review-2026-03-05-r3.md
+- [[Architecture Review (Positive Observations)]] - document - docs/planning/reviews/phase-review-2026-03-05-r3.md
+- [[Prior Findings — Verification]] - document - docs/planning/reviews/phase-review-2026-03-05-r3.md
+- [[R2 Findings (all verified fixed)]] - document - docs/planning/reviews/phase-review-2026-03-05-r3.md
+- [[R3 Findings (NEW — this round)]] - document - docs/planning/reviews/phase-review-2026-03-05-r3.md
+- [[R3-W1 — WARNING Stale version string in control page HTML]] - document - docs/planning/reviews/phase-review-2026-03-05-r3.md
+- [[R3-W2 — WARNING Stale OCI label version in Dockerfile]] - document - docs/planning/reviews/phase-review-2026-03-05-r3.md
+- [[R3-W3 — WARNING Dead code `_is_imessage_recipient_allowed` in forward.py]] - document - docs/planning/reviews/phase-review-2026-03-05-r3.md
+- [[R3-W4 — WARNING Debug log leaking agent response content]] - document - docs/planning/reviews/phase-review-2026-03-05-r3.md
+- [[Release Recommendation]] - document - docs/planning/reviews/phase-review-2026-03-05-r3.md
+- [[Summary_20]] - document - docs/planning/reviews/phase-review-2026-03-05-r3.md
+- [[Test Results_1]] - document - docs/planning/reviews/phase-review-2026-03-05-r3.md
+- [[phase-review-2026-03-03]] - document - docs/planning/reviews/phase-review-2026-03-03.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,3 +30,11 @@ members: 12
 TABLE source_file, type FROM #community/Community_760
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_Community 130]]
+- 1 edge to [[_COMMUNITY_Community 349]]
+
+## Top bridge nodes
+- [[AgentShroud v0.8.0 Peer Review Round 3 (FINAL)]] - degree 8, connects to 2 communities
+- [[phase-review-2026-03-03]] - degree 2, connects to 1 community

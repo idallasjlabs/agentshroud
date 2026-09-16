@@ -10,23 +10,23 @@ members: 17
 **Members:** 17 nodes
 
 ## Members
-- [[.client()]] - code - gateway/tests/test_api_contract.py
-- [[.test_health_endpoint_unauthenticated()]] - code - gateway/tests/test_api_contract.py
-- [[.test_no_500_on_empty_requests()]] - code - gateway/tests/test_api_contract.py
-- [[.test_openapi_schema_is_valid()]] - code - gateway/tests/test_api_contract.py
-- [[.test_openapi_snapshot_matches_live_schema()]] - code - gateway/tests/test_api_contract.py
-- [[.test_protected_endpoints_reject_unauthenticated()]] - code - gateway/tests/test_api_contract.py
-- [[.test_version_consistency()]] - code - gateway/tests/test_api_contract.py
-- [[API endpoints should not return 500 on malformedempty requests.]] - rationale - gateway/tests/test_api_contract.py
-- [[API version in OpenAPI schema matches gateway package version.]] - rationale - gateway/tests/test_api_contract.py
-- [[Create a FastAPI test client.]] - rationale - gateway/tests/test_api_contract.py
-- [[Healthstatus endpoint must be accessible without authentication.]] - rationale - gateway/tests/test_api_contract.py
-- [[OpenAPI schema and version consistency tests.]] - rationale - gateway/tests/test_api_contract.py
-- [[OpenAPI schema endpoint returns valid JSON schema.]] - rationale - gateway/tests/test_api_contract.py
-- [[Protected API endpoints must reject requests without auth tokens.]] - rationale - gateway/tests/test_api_contract.py
-- [[TestOpenAPIContract]] - code - gateway/tests/test_api_contract.py
-- [[The committed gatewayopenapi.json snapshot must match the live schema.]] - rationale - gateway/tests/test_api_contract.py
-- [[test_api_contract.py]] - code - gateway/tests/test_api_contract.py
+- [[Configuration_15]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[Environment Variables_8]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[Error Handling_5]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[Function Details_8]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[Key Classes  Functions_9]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[Mode Enforce vs Monitor_5]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[Purpose_134]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[Related_13]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[Responsibilities_11]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[Threat Model_9]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[clamav_scanner.py_1]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[clamav_scanner.py]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[generate_summary(report)]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[parse_clamscan_output(output, returncode)]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[run_clamscan(target, recursive, timeout, clamscan_bin, exclude_patterns)]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[save_report(report, log_dir)]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[update_virus_db(freshclam_bin, timeout)]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,9 +34,3 @@ members: 17
 TABLE source_file, type FROM #community/Community_545
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 159]]
-
-## Top bridge nodes
-- [[TestOpenAPIContract]] - degree 10, connects to 1 community

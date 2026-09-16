@@ -1,27 +1,28 @@
 ---
 type: community
 cohesion: 0.17
-members: 12
+members: 13
 ---
 
 # Community 749
 
 **Cohesion:** 0.17 - loosely connected
-**Members:** 12 nodes
+**Members:** 13 nodes
 
 ## Members
-- [[description of what this does_2]] - document - docker/config/openclaw/skills/i-athena/SKILL.md
-- [[Athena — Knowledge Distiller_4]] - document - docker/config/openclaw/skills/i-athena/SKILL.md
-- [[Input Requirements_21]] - document - docker/config/openclaw/skills/i-athena/SKILL.md
-- [[Output Format_26]] - document - docker/config/openclaw/skills/i-athena/SKILL.md
-- [[Persona_16]] - document - docker/config/openclaw/skills/i-athena/SKILL.md
-- [[Quality Checklist_19]] - document - docker/config/openclaw/skills/i-athena/SKILL.md
-- [[Role_78]] - document - docker/config/openclaw/skills/i-athena/SKILL.md
-- [[SKILL_132]] - document - docker/config/openclaw/skills/i-athena/SKILL.md
-- [[System Prompt_16]] - document - docker/config/openclaw/skills/i-athena/SKILL.md
-- [[User Prompt Template_8]] - document - docker/config/openclaw/skills/i-athena/SKILL.md
-- [[cheatsheet_2]] - document - docker/config/openclaw/skills/i-athena/SKILL.md
-- [[show_notes_2]] - document - docker/config/openclaw/skills/i-athena/SKILL.md
+- [[Conditional memory writes (memoryYYYY-MM-DD.md, MEMORY.md)]] - concept - skills/openclaw/healthcheck/SKILL.md
+- [[Core rules]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[Logging and audit trail]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[Memory writes (conditional)]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[OpenClaw Host Hardening]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[OpenClaw command accuracy]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[Overview_25]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[Periodic checks]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[Required confirmations (always)]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[Required prompt to schedule (always)]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[Stable-named cron scheduling for periodic audits]] - concept - skills/openclaw/healthcheck/SKILL.md
+- [[healthcheckSKILL]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[openclaw security audit command family]] - concept - skills/openclaw/healthcheck/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,3 +30,11 @@ members: 12
 TABLE source_file, type FROM #community/Community_749
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 892]]
+- 1 edge to [[_COMMUNITY_Community 1087]]
+
+## Top bridge nodes
+- [[OpenClaw Host Hardening]] - degree 9, connects to 1 community
+- [[Stable-named cron scheduling for periodic audits]] - degree 3, connects to 1 community

@@ -1,26 +1,27 @@
 ---
 type: community
-cohesion: 0.18
-members: 11
+cohesion: 0.17
+members: 12
 ---
 
 # Community 787
 
-**Cohesion:** 0.18 - loosely connected
-**Members:** 11 nodes
+**Cohesion:** 0.17 - loosely connected
+**Members:** 12 nodes
 
 ## Members
-- [[1. System Profiler (most comprehensive single source)]] - document - .agents/skills/i-mac/SKILL.md
-- [[10. Spotlight Catch-All]] - document - .agents/skills/i-mac/SKILL.md
-- [[2. Applications Folders (catch drag-and-drop installs)]] - document - .agents/skills/i-mac/SKILL.md
-- [[3. Homebrew (formulae + casks)]] - document - .agents/skills/i-mac/SKILL.md
-- [[4. Mac App Store (via `mas` CLI)]] - document - .agents/skills/i-mac/SKILL.md
-- [[5. Setapp Detection]] - document - .agents/skills/i-mac/SKILL.md
-- [[6. Package Receipts (direct .pkg installs)]] - document - .agents/skills/i-mac/SKILL.md
-- [[7. CLI Tools & Utilities (non-.app installs)]] - document - .agents/skills/i-mac/SKILL.md
-- [[8. Launch Agents & Daemons (background services)]] - document - .agents/skills/i-mac/SKILL.md
-- [[9. Browser Extensions (optional but useful)]] - document - .agents/skills/i-mac/SKILL.md
-- [[Phase 1 — Raw Collection]] - document - .agents/skills/i-mac/SKILL.md
+- [[AI Models]] - document - docs/reference/QUICK_REFERENCE.md
+- [[API Keys_1]] - document - docs/reference/QUICK_REFERENCE.md
+- [[Access Points]] - document - docs/reference/QUICK_REFERENCE.md
+- [[Container Management_1]] - document - docs/reference/QUICK_REFERENCE.md
+- [[Files_2]] - document - docs/reference/QUICK_REFERENCE.md
+- [[Most Common Commands]] - document - docs/reference/QUICK_REFERENCE.md
+- [[PREREQUISITES_14]] - document - docs/reference/PREREQUISITES.md
+- [[QUICK_REFERENCE]] - document - docs/reference/QUICK_REFERENCE.md
+- [[Quick Reference Card]] - document - docs/reference/QUICK_REFERENCE.md
+- [[Secrets Backend Auto-Detection]] - concept - docs/reference/PREREQUISITES.md
+- [[Telegram Bot]] - document - docs/reference/QUICK_REFERENCE.md
+- [[Troubleshooting_38]] - document - docs/reference/QUICK_REFERENCE.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,7 +31,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 1011]]
+- 1 edge to [[_COMMUNITY_Community 338]]
+- 1 edge to [[_COMMUNITY_Community 785]]
+- 1 edge to [[_COMMUNITY_Community 786]]
+- 1 edge to [[_COMMUNITY_Community 533]]
 
 ## Top bridge nodes
-- [[Phase 1 — Raw Collection]] - degree 11, connects to 1 community
+- [[PREREQUISITES_14]] - degree 4, connects to 2 communities
+- [[QUICK_REFERENCE]] - degree 4, connects to 2 communities

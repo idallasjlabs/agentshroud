@@ -1,29 +1,30 @@
 ---
 type: community
-cohesion: 0.14
-members: 14
+cohesion: 0.13
+members: 15
 ---
 
 # Community 660
 
-**Cohesion:** 0.14 - loosely connected
-**Members:** 14 nodes
+**Cohesion:** 0.13 - loosely connected
+**Members:** 15 nodes
 
 ## Members
-- [[Architecture_10]] - document - docs/setup-slack.md
-- [[Sending Messages to the Bot]] - document - docs/setup-slack.md
-- [[Slack Channel Setup]] - document - docs/setup-slack.md
-- [[Step 10 Verify]] - document - docs/setup-slack.md
-- [[Step 1 Create a Slack App]] - document - docs/setup-slack.md
-- [[Step 2 Enable Socket Mode]] - document - docs/setup-slack.md
-- [[Step 3 Add Bot Token Scopes]] - document - docs/setup-slack.md
-- [[Step 4 Enable Event Subscriptions]] - document - docs/setup-slack.md
-- [[Step 5 Enable App Home Messages Tab]] - document - docs/setup-slack.md
-- [[Step 6 Install the App]] - document - docs/setup-slack.md
-- [[Step 7 Find Your Slack User ID]] - document - docs/setup-slack.md
-- [[Step 9 Rebuild and Start]] - document - docs/setup-slack.md
-- [[Troubleshooting_23]] - document - docs/setup-slack.md
-- [[setup-slack]] - document - docs/setup-slack.md
+- [[Advanced Telegram Commands]] - document - docs/setup/TELEGRAM_SETUP.md
+- [[Bot doesn't respond]] - document - docs/setup/TELEGRAM_SETUP.md
+- [[Cannot find bot]] - document - docs/setup/TELEGRAM_SETUP.md
+- [[How Messages Flow]] - document - docs/setup/TELEGRAM_SETUP.md
+- [[Important Notes_2]] - document - docs/setup/TELEGRAM_SETUP.md
+- [[Messages delayed]] - document - docs/setup/TELEGRAM_SETUP.md
+- [[Multi-Device Access]] - document - docs/setup/TELEGRAM_SETUP.md
+- [[Next Steps_10]] - document - docs/setup/TELEGRAM_SETUP.md
+- [[Optional Restrict Bot Access]] - document - docs/setup/TELEGRAM_SETUP.md
+- [[Security Considerations_1]] - document - docs/setup/TELEGRAM_SETUP.md
+- [[Step 1 Create a Telegram Bot]] - document - docs/setup/TELEGRAM_SETUP.md
+- [[Step 2 Configure OpenClaw to Use Telegram]] - document - docs/setup/TELEGRAM_SETUP.md
+- [[Step 3 Start Chatting]] - document - docs/setup/TELEGRAM_SETUP.md
+- [[Telegram Bot Setup for OpenClaw]] - document - docs/setup/TELEGRAM_SETUP.md
+- [[Troubleshooting_34]] - document - docs/setup/TELEGRAM_SETUP.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,7 +34,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 752]]
+- 1 edge to [[_COMMUNITY_Community 378]]
 
 ## Top bridge nodes
-- [[Slack Channel Setup]] - degree 15, connects to 1 community
+- [[Telegram Bot Setup for OpenClaw]] - degree 10, connects to 1 community

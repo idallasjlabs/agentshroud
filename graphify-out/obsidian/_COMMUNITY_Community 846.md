@@ -1,25 +1,26 @@
 ---
 type: community
 cohesion: 0.20
-members: 10
+members: 11
 ---
 
 # Community 846
 
 **Cohesion:** 0.20 - loosely connected
-**Members:** 10 nodes
+**Members:** 11 nodes
 
 ## Members
-- [[ANTI-HALLUCINATION CHECKLIST_1]] - document - docker/config/openclaw/workspace/competitive-analysis.md
-- [[CRITICAL RULES — READ BEFORE DOING ANYTHING_1]] - document - docker/config/openclaw/workspace/competitive-analysis.md
-- [[Competitive Intelligence Report — Standard Prompt]] - document - docker/config/openclaw/workspace/competitive-analysis.md
-- [[OUTPUT REQUIREMENTS_1]] - document - docker/config/openclaw/workspace/competitive-analysis.md
-- [[REPORT STRUCTURE_1]] - document - docker/config/openclaw/workspace/competitive-analysis.md
-- [[SECTION 1 MARKET ANALYSIS_1]] - document - docker/config/openclaw/workspace/competitive-analysis.md
-- [[SECTION 2 COMPETITIVE ANALYSIS — AGENT SECURITY TOOLS_1]] - document - docker/config/openclaw/workspace/competitive-analysis.md
-- [[SECTION 3 AUTONOMOUS AGENT ECOSYSTEM UPDATE_1]] - document - docker/config/openclaw/workspace/competitive-analysis.md
-- [[SECTION 4 NEXT STEPS TO STAY AHEAD_1]] - document - docker/config/openclaw/workspace/competitive-analysis.md
-- [[competitive-analysis_1]] - document - docker/config/openclaw/workspace/competitive-analysis.md
+- [[dot-test_short_text_passes_through_unchanged()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_truncates_over_length_text()]] - code - gateway/tests/test_daily_cve_report.py
+- [[TestSendTelegramTruncation]] - code - gateway/tests/test_daily_cve_report.py
+- [[__enter__()]] - code - gateway/tests/test_daily_cve_report.py
+- [[__enter__()_1]] - code - gateway/tests/test_daily_cve_report.py
+- [[__exit__()]] - code - gateway/tests/test_daily_cve_report.py
+- [[__exit__()_1]] - code - gateway/tests/test_daily_cve_report.py
+- [[_fake_urlopen()]] - code - gateway/tests/test_daily_cve_report.py
+- [[_fake_urlopen()_1]] - code - gateway/tests/test_daily_cve_report.py
+- [[read()]] - code - gateway/tests/test_daily_cve_report.py
+- [[read()_1]] - code - gateway/tests/test_daily_cve_report.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,3 +28,11 @@ members: 10
 TABLE source_file, type FROM #community/Community_846
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 3 edges to [[_COMMUNITY_Community 82]]
+
+## Top bridge nodes
+- [[dot-test_short_text_passes_through_unchanged()]] - degree 7, connects to 1 community
+- [[dot-test_truncates_over_length_text()]] - degree 6, connects to 1 community
+- [[TestSendTelegramTruncation]] - degree 3, connects to 1 community

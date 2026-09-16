@@ -1,31 +1,31 @@
 ---
 type: community
-cohesion: 0.18
+cohesion: 0.13
 members: 16
 ---
 
 # Community 565
 
-**Cohesion:** 0.18 - loosely connected
+**Cohesion:** 0.13 - loosely connected
 **Members:** 16 nodes
 
 ## Members
-- [[.test_falls_back_to_op_signin_when_account_add_fails()]] - code - gateway/tests/test_gmail_credential_retrieval.py
-- [[.test_falls_back_to_secrets_when_op_read_fails()]] - code - gateway/tests/test_gmail_credential_retrieval.py
-- [[.test_falls_back_to_secrets_when_op_session_absent()]] - code - gateway/tests/test_gmail_credential_retrieval.py
-- [[.test_returns_none_when_all_paths_fail()]] - code - gateway/tests/test_gmail_credential_retrieval.py
-- [[.test_returns_none_when_no_session_and_no_secrets()]] - code - gateway/tests/test_gmail_credential_retrieval.py
-- [[.test_uses_existing_session_when_op_read_succeeds()]] - code - gateway/tests/test_gmail_credential_retrieval.py
-- [[CompletedProcess_2]] - code - gateway/tests/test_gmail_credential_retrieval.py
-- [[Core regression test empty OP_SESSION must NOT short-circuit the secrets path.]] - rationale - gateway/tests/test_gmail_credential_retrieval.py
-- [[OP_SESSION absent — must fall back to mounted secrets.]] - rationale - gateway/tests/test_gmail_credential_retrieval.py
-- [[OP_SESSION is set — primary op read path.]] - rationale - gateway/tests/test_gmail_credential_retrieval.py
-- [[Read Gmail app password from 1Password using the gateway's cached session.]] - rationale - gateway/ingest_api/routes/forward.py
-- [[TestGetGmailAppPasswordNoSession]] - code - gateway/tests/test_gmail_credential_retrieval.py
-- [[TestGetGmailAppPasswordWithSession]] - code - gateway/tests/test_gmail_credential_retrieval.py
-- [[_completed()]] - code - gateway/tests/test_gmail_credential_retrieval.py
-- [[_get_gmail_app_password()]] - code - gateway/ingest_api/routes/forward.py
-- [[test_gmail_credential_retrieval.py]] - code - gateway/tests/test_gmail_credential_retrieval.py
+- [[Agent Isolation Module Badge Icon]] - image - branding/icons/modules/agent-isolation-256x256.png
+- [[AgentShroud App Icon (64x64)]] - image - branding/icons/app/icon-64x64.png
+- [[AgentShroud BadgeAvatar Logo Variant (120x120)]] - image - branding/logos/variants/badge-120x120.png
+- [[AgentShroud Brand Collateral Mockup]] - image - branding/logos/png/logo-mockup.png
+- [[AgentShroud Logo (SVG Wrapper, Embedded Raster)]] - image - branding/logos/svg/logo.svg
+- [[AgentShroud Logo - GlowTransparent Variant]] - image - branding/logos/png/logo-transparent.png
+- [[AgentShroud Primary Logo Lockup]] - image - branding/logos/png/logo.png
+- [[AgentShroud macOS App Icon (1024x1024, Rounded Squircle)]] - image - branding/icons/app/icon-macos-rounded-1024x1024.png
+- [[Audit Ledger Module Badge Icon]] - image - branding/icons/modules/audit-ledger-256x256.png
+- [[Credential Isolation Module Badge Icon]] - image - branding/icons/modules/credential-iso-256x256.png
+- [[Drift Detector Module Badge Icon]] - image - branding/icons/modules/drift-detector-256x256.png
+- [[Egress Filter Module Badge Icon]] - image - branding/icons/modules/egress-filter-256x256.png
+- [[HTTP Proxy Module Badge Icon]] - image - branding/icons/modules/http-proxy-256x256.png
+- [[PII Sanitizer Module Badge Icon]] - image - branding/icons/modules/pii-sanitizer-256x256.png
+- [[SSH Proxy Module Badge Icon]] - image - branding/icons/modules/ssh-proxy-256x256.png
+- [[Trust Manager Module Badge Icon]] - image - branding/icons/modules/trust-manager-256x256.png
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,8 +35,23 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 159]]
-- 1 edge to [[_COMMUNITY_Community 28]]
+- 1 edge to [[_COMMUNITY_BlueRed Team Security Auditor Skills]]
+- 1 edge to [[_COMMUNITY_Community 112]]
+- 1 edge to [[_COMMUNITY_Egress Filter & HTTP Proxy]]
+- 1 edge to [[_COMMUNITY_Agent Isolation & Group Config Tests]]
+- 1 edge to [[_COMMUNITY_Community 46]]
+- 1 edge to [[_COMMUNITY_Community 56]]
+- 1 edge to [[_COMMUNITY_Community 86]]
+- 1 edge to [[_COMMUNITY_Approval Queue (WebSocket)]]
+- 1 edge to [[_COMMUNITY_Community 104]]
+- 1 edge to [[_COMMUNITY_Encrypted Store & Drift Detector]]
+- 1 edge to [[_COMMUNITY_Prompt Guard & Context Integrity]]
+- 1 edge to [[_COMMUNITY_Community 42]]
+- 1 edge to [[_COMMUNITY_Community 57]]
 
 ## Top bridge nodes
-- [[_get_gmail_app_password()]] - degree 10, connects to 2 communities
+- [[AgentShroud macOS App Icon (1024x1024, Rounded Squircle)]] - degree 16, connects to 5 communities
+- [[Agent Isolation Module Badge Icon]] - degree 2, connects to 1 community
+- [[Audit Ledger Module Badge Icon]] - degree 2, connects to 1 community
+- [[Drift Detector Module Badge Icon]] - degree 2, connects to 1 community
+- [[Egress Filter Module Badge Icon]] - degree 2, connects to 1 community

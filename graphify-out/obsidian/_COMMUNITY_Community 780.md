@@ -1,26 +1,27 @@
 ---
 type: community
-cohesion: 0.20
-members: 11
+cohesion: 0.17
+members: 12
 ---
 
 # Community 780
 
-**Cohesion:** 0.20 - loosely connected
-**Members:** 11 nodes
+**Cohesion:** 0.17 - loosely connected
+**Members:** 12 nodes
 
 ## Members
-- [[ADR-001-proxy-layer-inversion]] - document - docs/adr/ADR-001-proxy-layer-inversion.md
-- [[Alternatives rejected]] - document - docs/adr/ADR-001-proxy-layer-inversion.md
-- [[Collaborative Multi-Agent Governance]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[Competitive Positioning — Proxy-Layer Inversion Differentiator]] - rationale - docs/agentshroud-knowledge.md
-- [[Decision_1]] - document - docs/adr/ADR-001-proxy-layer-inversion.md
-- [[Delegated Authority Model (time-bounded privilege delegation)]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[Enterprise Governance Proxy System (invention)]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[Human-in-the-Loop Approval Queue]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[PII Detection and Redaction Engine]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
-- [[Rationale]] - document - docs/adr/ADR-001-proxy-layer-inversion.md
-- [[Transparent Interception Architecture]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[Cloud & FinOps_1]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[Content & Communication_1]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[Core Development_1]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[Data Operations_1]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[Investigation_1]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[MCP Tools_1]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[Production Safety_1]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[Reference_2]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[SecureClaw (Project-Specific)_1]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[Skills by Category_1]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[System Utilities_1]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[Workflow_5]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,8 +31,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 799]]
-- 1 edge to [[_COMMUNITY_Community 1248]]
+- 1 edge to [[_COMMUNITY_Community 530]]
 
 ## Top bridge nodes
-- [[Enterprise Governance Proxy System (invention)]] - degree 8, connects to 2 communities
+- [[Skills by Category_1]] - degree 12, connects to 1 community

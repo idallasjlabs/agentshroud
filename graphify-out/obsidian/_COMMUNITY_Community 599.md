@@ -1,30 +1,31 @@
 ---
 type: community
-cohesion: 0.13
-members: 15
+cohesion: 0.12
+members: 16
 ---
 
 # Community 599
 
-**Cohesion:** 0.13 - loosely connected
-**Members:** 15 nodes
+**Cohesion:** 0.12 - loosely connected
+**Members:** 16 nodes
 
 ## Members
-- [[Guardrails_2]] - document - .agents/skills/i-crpr/SKILL.md
-- [[Invocation]] - document - .agents/skills/i-crpr/SKILL.md
-- [[Role_10]] - document - .agents/skills/i-crpr/SKILL.md
-- [[SKILL_16]] - document - .agents/skills/i-crpr/SKILL.md
-- [[Skill Create PR with Pre-Flight Audit (CRPR)]] - document - .agents/skills/i-crpr/SKILL.md
-- [[Step 0 — Pre-flight checks]] - document - .agents/skills/i-crpr/SKILL.md
-- [[Step 1 — Check for an in-progress merge]] - document - .agents/skills/i-crpr/SKILL.md
-- [[Step 2 — Merge without committing]] - document - .agents/skills/i-crpr/SKILL.md
-- [[Step 3 — Audit the pending merge]] - document - .agents/skills/i-crpr/SKILL.md
-- [[Step 3a — Present and resolve confirmed regressions]] - document - .agents/skills/i-crpr/SKILL.md
-- [[Step 3b — Re-audit to confirm clean]] - document - .agents/skills/i-crpr/SKILL.md
-- [[Step 3c — Commit the merge]] - document - .agents/skills/i-crpr/SKILL.md
-- [[Step 4 — Push the branch]] - document - .agents/skills/i-crpr/SKILL.md
-- [[Step 5 — Generate the PR description]] - document - .agents/skills/i-crpr/SKILL.md
-- [[Step 6 — Create the PR]] - document - .agents/skills/i-crpr/SKILL.md
+- [[1. Detection — What Triggers an Incident]] - document - docs/security/incident-response.md
+- [[2. Severity Classification]] - document - docs/security/incident-response.md
+- [[3. Response Procedures]] - document - docs/security/incident-response.md
+- [[4. Kill Switch Usage Guide]] - document - docs/security/incident-response.md
+- [[5. Evidence Preservation]] - document - docs/security/incident-response.md
+- [[6. Post-Incident Review Template]] - document - docs/security/incident-response.md
+- [[8. Contacts and Escalation]] - document - docs/security/incident-response.md
+- [[Audit Ledger Export]] - document - docs/security/incident-response.md
+- [[Decision Tree]] - document - docs/security/incident-response.md
+- [[Incident Response Playbook — AgentShroud]] - document - docs/security/incident-response.md
+- [[P1 — Critical]] - document - docs/security/incident-response.md
+- [[P2 — High]] - document - docs/security/incident-response.md
+- [[P3 — Medium]] - document - docs/security/incident-response.md
+- [[P4 — Low]] - document - docs/security/incident-response.md
+- [[Recovering from Kill Switch]] - document - docs/security/incident-response.md
+- [[What to Capture]] - document - docs/security/incident-response.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,3 +33,10 @@ members: 15
 TABLE source_file, type FROM #community/Community_599
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 173]]
+- 1 edge to [[_COMMUNITY_Community 271]]
+
+## Top bridge nodes
+- [[Incident Response Playbook — AgentShroud]] - degree 9, connects to 2 communities

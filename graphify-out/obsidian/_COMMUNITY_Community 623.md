@@ -10,21 +10,21 @@ members: 15
 **Members:** 15 nodes
 
 ## Members
-- [[Configuration  Environment Variables_2]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[Function Details_8]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[Hash Chain Structure_2]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[Key Classes  Functions_11]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[MCPAuditTrail.generate_report()]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[MCPAuditTrail.log_tool_call(agent_id, server_name, tool_name, parameters, findings_count, threat_level, blocked, block_reason, pii_redacted, call_id)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[MCPAuditTrail.log_tool_result(call_id, agent_id, server_name, tool_name, success, error_message, result_summary, findings_count, threat_level, pii_redacted)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[MCPAuditTrail.start_call(call_id)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[MCPAuditTrail.verify_chain()]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[Purpose_129]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[Query Methods]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[Related_14]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[Responsibilities_13]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[mcp_audit.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
-- [[mcp_audit.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md
+- [[BOT_CONTAINER]] - code - scripts/update-bot-agents.sh
+- [[BOT_DEFAULTS_DIR]] - code - scripts/update-bot-agents.sh
+- [[BOT_LIVE_SKILLS_DIR]] - code - scripts/update-bot-agents.sh
+- [[How to start a task]] - document - docs/runbooks/hermes-openclaw-dev-workflow.md
+- [[Monitoring progress]] - document - docs/runbooks/hermes-openclaw-dev-workflow.md
+- [[Multi-LLM Review Loop (Codex+Gemini review, Claude fixer)]] - concept - docker/config/hermes/skills/i-hdev/SKILL.md
+- [[Source of truth_2]] - document - docs/runbooks/hermes-openclaw-dev-workflow.md
+- [[Starting a Development Task via Hermes  OpenClaw]] - document - docs/runbooks/hermes-openclaw-dev-workflow.md
+- [[Status ready to use, with 4 known gaps (see below)]] - document - docs/runbooks/hermes-openclaw-dev-workflow.md
+- [[Things that will make a task halt and ask you, not fail silently]] - document - docs/runbooks/hermes-openclaw-dev-workflow.md
+- [[What happens automatically (confirmed real, in]] - document - docs/runbooks/hermes-openclaw-dev-workflow.md
+- [[What is not currently automated (the 4 gaps)]] - document - docs/runbooks/hermes-openclaw-dev-workflow.md
+- [[hermes-openclaw-dev-workflow]] - document - docs/runbooks/hermes-openclaw-dev-workflow.md
+- [[update-bot-agents.sh]] - code - scripts/update-bot-agents.sh
+- [[update-bot-agents.sh script]] - code - scripts/update-bot-agents.sh
 
 ## Live Query (requires Dataview plugin)
 

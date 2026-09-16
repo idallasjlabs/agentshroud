@@ -1,27 +1,28 @@
 ---
 type: community
-cohesion: 0.29
-members: 12
+cohesion: 0.15
+members: 13
 ---
 
 # Community 755
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 12 nodes
+**Cohesion:** 0.15 - loosely connected
+**Members:** 13 nodes
 
 ## Members
-- [[Any_38]] - code - gateway/security/egress_retry.py
-- [[Calculate delay with exponential backoff and jitter.]] - rationale - gateway/security/egress_retry.py
-- [[Configuration for egress retry behavior.]] - rationale - gateway/security/egress_retry.py
-- [[Execute a request with exponential backoff retry on transient failures.      Arg]] - rationale - gateway/security/egress_retry.py
-- [[Result of a retried operation.]] - rationale - gateway/security/egress_retry.py
-- [[RetryConfig]] - code - gateway/security/egress_retry.py
-- [[RetryResult]] - code - gateway/security/egress_retry.py
-- [[Synchronous version of retry_request for non-async contexts.]] - rationale - gateway/security/egress_retry.py
-- [[calculate_delay()]] - code - gateway/security/egress_retry.py
-- [[egress_retry.py]] - code - gateway/security/egress_retry.py
-- [[retry_request()]] - code - gateway/security/egress_retry.py
-- [[retry_request_sync()]] - code - gateway/security/egress_retry.py
+- [[Configuration  Environment Variables_25]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
+- [[Function Details_45]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
+- [[Key Classes  Functions_47]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
+- [[Purpose_177]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
+- [[RateLimiter.check(domain, rpm_limit)]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
+- [[Related_51]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
+- [[Responsibilities_48]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
+- [[Security Check Order (check_request)]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
+- [[WebProxy._audit(event_type, url, metadata)]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
+- [[WebProxy.check_request(url, method, headers)]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
+- [[WebProxy.scan_response(url, body, content_type, status_code, response_size)]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
+- [[web_proxy.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
+- [[web_proxy.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,10 +30,3 @@ members: 12
 TABLE source_file, type FROM #community/Community_755
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 126]]
-- 1 edge to [[_COMMUNITY_Community 49]]
-
-## Top bridge nodes
-- [[egress_retry.py]] - degree 7, connects to 2 communities

@@ -10,24 +10,24 @@ members: 18
 **Members:** 18 nodes
 
 ## Members
-- [[ClamAV `SelfCheck Database status OK.`]] - document - docs/runbooks/troubleshooting.md
-- [[ClamAV `Socket for clamd not found yet, retrying (N1800)...`]] - document - docs/runbooks/troubleshooting.md
-- [[ClamAV `WARNING Can't query current.cvd.clamav.net`  `ERROR Database update process failed`]] - document - docs/runbooks/troubleshooting.md
-- [[Gateway `CONNECT tunnel established wss-primary.slack.com443`]] - document - docs/runbooks/troubleshooting.md
-- [[Gateway `GET status - 200 (0.000s)` every 30 seconds]] - document - docs/runbooks/troubleshooting.md
-- [[Gateway `POST telegram-apibotgetUpdates - 200 (30–32s)`]] - document - docs/runbooks/troubleshooting.md
-- [[Gateway duplicate access log lines for every request]] - document - docs/runbooks/troubleshooting.md
-- [[Known Log Messages]] - document - docs/runbooks/troubleshooting.md
-- [[`POST apialerts - 404 (Nms)` (resolved in v0.9.0)]] - document - docs/runbooks/troubleshooting.md
-- [[`ERROR socket-modeSocketModeClientN Failed to retrieve a new WSS URL`]] - document - docs/runbooks/troubleshooting.md
-- [[`WARN bolt-app http request failed connect ECONNREFUSED 10.254.110.28181`]] - document - docs/runbooks/troubleshooting.md
-- [[`WARN bolt-app http request failed getaddrinfo ENOTFOUND gateway`]] - document - docs/runbooks/troubleshooting.md
-- [[`WARN socket-modeSlackWebSocketN A pong wasn't received from the server before the timeout of 5000ms!`]] - document - docs/runbooks/troubleshooting.md
-- [[`agentembedded embedded run agent end isError=true error=Ollama API stream ended without a final response`]] - document - docs/runbooks/troubleshooting.md
-- [[`gateway ⚠️ Gateway is binding to a non-loopback address`]] - document - docs/runbooks/troubleshooting.md
-- [[`health-monitor slackdefault health-monitor restarting (reason stale-socket)`]] - document - docs/runbooks/troubleshooting.md
-- [[`openclaw Non-fatal unhandled rejection (continuing) Error A request error occurred`]] - document - docs/runbooks/troubleshooting.md
-- [[`telegram autoSelectFamily=false (config)`  `fetch fallback forcing autoSelectFamily=false + dnsResultOrder=ipv4first`]] - document - docs/runbooks/troubleshooting.md
+- [[ADR-002 Default-Allow with Comprehensive Logging]] - concept - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
+- [[ADR-009-enforce-by-default]] - document - docs/architecture/adr/ADR-009-enforce-by-default.md
+- [[ADR-009 Enforce-by-Default Security Philosophy]] - document - docs/architecture/adr/ADR-009-enforce-by-default.md
+- [[Compliance Alignment (9 standards)]] - concept - docs/architecture/agentic-os.md
+- [[Configuration_11]] - document - docs/architecture/adr/ADR-009-enforce-by-default.md
+- [[Consequences_2]] - document - docs/architecture/adr/ADR-009-enforce-by-default.md
+- [[Context_5]] - document - docs/architecture/adr/ADR-009-enforce-by-default.md
+- [[Decision_4]] - document - docs/architecture/adr/ADR-009-enforce-by-default.md
+- [[Migration from ADR-002]] - document - docs/architecture/adr/ADR-009-enforce-by-default.md
+- [[Negative Consequences_1]] - document - docs/architecture/adr/ADR-009-enforce-by-default.md
+- [[Policy Table]] - document - docs/architecture/adr/ADR-009-enforce-by-default.md
+- [[Positive Consequences_1]] - document - docs/architecture/adr/ADR-009-enforce-by-default.md
+- [[Related_6]] - document - docs/architecture/adr/ADR-009-enforce-by-default.md
+- [[Security Modules (30+, gateway diagram)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
+- [[SecurityPipeline (75 modules, 7 layers)]] - concept - docs/architecture/agentic-os.md
+- [[Status_3]] - document - docs/architecture/adr/ADR-009-enforce-by-default.md
+- [[prompt_guard (prompt injection)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
+- [[trust_manager (trust levels)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,7 +37,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 314]]
+- 1 edge to [[_COMMUNITY_Community 357]]
+- 1 edge to [[_COMMUNITY_Community 256]]
 
 ## Top bridge nodes
-- [[Known Log Messages]] - degree 19, connects to 1 community
+- [[SecurityPipeline (75 modules, 7 layers)]] - degree 4, connects to 1 community
+- [[trust_manager (trust levels)]] - degree 2, connects to 1 community

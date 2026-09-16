@@ -1,27 +1,28 @@
 ---
 type: community
-cohesion: 0.17
-members: 12
+cohesion: 0.15
+members: 13
 ---
 
 # Community 762
 
-**Cohesion:** 0.17 - loosely connected
-**Members:** 12 nodes
+**Cohesion:** 0.15 - loosely connected
+**Members:** 13 nodes
 
 ## Members
-- [[AGENTS_1]] - document - docker/config/openclaw/AGENTS.md
-- [[AgentShroud™ — OpenClaw Local-Model Tool-Use Instructions]] - document - docker/config/openclaw/AGENTS.md
-- [[Approved Tools and Their Arguments]] - document - docker/config/openclaw/AGENTS.md
-- [[Critical Rules for Local Models]] - document - docker/config/openclaw/AGENTS.md
-- [[Example Multi-Step Tool Use]] - document - docker/config/openclaw/AGENTS.md
-- [[Failover Behaviour (Local Mode)]] - document - docker/config/openclaw/AGENTS.md
-- [[Tool Invocation Format]] - document - docker/config/openclaw/AGENTS.md
-- [[bash]] - document - docker/config/openclaw/AGENTS.md
-- [[file_read]] - document - docker/config/openclaw/AGENTS.md
-- [[file_write]] - document - docker/config/openclaw/AGENTS.md
-- [[send_message]] - document - docker/config/openclaw/AGENTS.md
-- [[web_search]] - document - docker/config/openclaw/AGENTS.md
+- [[Configuration  Environment Variables_27]] - document - docs/vault/02 - Modules/Runtime/config.py.md
+- [[Environment Variables_18]] - document - docs/vault/02 - Modules/Runtime/config.py.md
+- [[Function Details_47]] - document - docs/vault/02 - Modules/Runtime/config.py.md
+- [[Key Classes  Functions_49]] - document - docs/vault/02 - Modules/Runtime/config.py.md
+- [[Purpose_179]] - document - docs/vault/02 - Modules/Runtime/config.py.md
+- [[Related_53]] - document - docs/vault/02 - Modules/Runtime/config.py.md
+- [[Responsibilities_50]] - document - docs/vault/02 - Modules/Runtime/config.py.md
+- [[Rootless Resolution Table]] - document - docs/vault/02 - Modules/Runtime/config.py.md
+- [[RuntimeConfig.effective_rootless (property)]] - document - docs/vault/02 - Modules/Runtime/config.py.md
+- [[RuntimeConfig.from_dict(data)]] - document - docs/vault/02 - Modules/Runtime/config.py.md
+- [[RuntimeConfig.from_env()]] - document - docs/vault/02 - Modules/Runtime/config.py.md
+- [[config.py_1]] - document - docs/vault/02 - Modules/Runtime/config.py.md
+- [[config.py]] - document - docs/vault/02 - Modules/Runtime/config.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,10 +30,3 @@ members: 12
 TABLE source_file, type FROM #community/Community_762
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 255]]
-- 1 edge to [[_COMMUNITY_Community 126]]
-
-## Top bridge nodes
-- [[AGENTS_1]] - degree 3, connects to 2 communities

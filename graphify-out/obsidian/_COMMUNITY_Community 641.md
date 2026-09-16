@@ -1,30 +1,30 @@
 ---
 type: community
-cohesion: 0.13
+cohesion: 0.20
 members: 15
 ---
 
 # Community 641
 
-**Cohesion:** 0.13 - loosely connected
+**Cohesion:** 0.20 - loosely connected
 **Members:** 15 nodes
 
 ## Members
-- [[Advanced Telegram Commands]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[Bot doesn't respond]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[Cannot find bot]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[How Messages Flow]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[Important Notes_1]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[Messages delayed]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[Multi-Device Access]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[Next Steps_9]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[Optional Restrict Bot Access]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[Security Considerations_1]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[Step 1 Create a Telegram Bot]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[Step 2 Configure OpenClaw to Use Telegram]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[Step 3 Start Chatting]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[Telegram Bot Setup for OpenClaw]] - document - docs/setup/TELEGRAM_SETUP.md
-- [[Troubleshooting_32]] - document - docs/setup/TELEGRAM_SETUP.md
+- [[dot-test_downstream_counter_sorts_above_its_base_release()]] - code - gateway/tests/test_discover_upstream_versions.py
+- [[dot-test_empty_returns_none()]] - code - gateway/tests/test_discover_upstream_versions.py
+- [[dot-test_ignores_prereleases_even_when_numerically_highest()]] - code - gateway/tests/test_discover_upstream_versions.py
+- [[dot-test_no_stable_versions_returns_none()]] - code - gateway/tests/test_discover_upstream_versions.py
+- [[dot-test_numeric_ordering_not_lexicographic()]] - code - gateway/tests/test_discover_upstream_versions.py
+- [[dot-test_picks_the_highest_stable_version()]] - code - gateway/tests/test_discover_upstream_versions.py
+- [[dot-test_real_openclaw_tail_picks_2026_9_4()]] - code - gateway/tests/test_discover_upstream_versions.py
+- [[dot-test_unparseable_entries_are_skipped_not_crashed_on()]] - code - gateway/tests/test_discover_upstream_versions.py
+- [[2026.10.1' must beat '2026.9.4' — string compare gets this wrong.]] - rationale - gateway/tests/test_discover_upstream_versions.py
+- [[2026.7.1-2 is a patch published after 2026.7.1, so it must win.]] - rationale - gateway/tests/test_discover_upstream_versions.py
+- [[Newest stable release from an npm version list, or None.]] - rationale - scripts/discover_upstream_versions.py
+- [[Selecting the newest shippable npm release.]] - rationale - gateway/tests/test_discover_upstream_versions.py
+- [[TestPickLatestStable]] - code - gateway/tests/test_discover_upstream_versions.py
+- [[The actual npm tail as of 2026-09-15.]] - rationale - gateway/tests/test_discover_upstream_versions.py
+- [[pick_latest_stable()]] - code - scripts/discover_upstream_versions.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,7 +34,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 377]]
+- 3 edges to [[_COMMUNITY_Community 763]]
+- 2 edges to [[_COMMUNITY_Community 847]]
 
 ## Top bridge nodes
-- [[Telegram Bot Setup for OpenClaw]] - degree 10, connects to 1 community
+- [[pick_latest_stable()]] - degree 13, connects to 2 communities
+- [[TestPickLatestStable]] - degree 10, connects to 1 community

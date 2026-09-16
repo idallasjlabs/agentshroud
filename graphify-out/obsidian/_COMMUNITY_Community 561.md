@@ -10,22 +10,22 @@ members: 16
 **Members:** 16 nodes
 
 ## Members
-- [[Config Keys Read_8]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
-- [[Environment Variables Used_8]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
-- [[Function Details_5]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
-- [[Imports From  Exports To_8]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
-- [[Key Classes  Functions_8]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
-- [[Known Issues  Notes_9]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
-- [[Purpose_119]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
-- [[Related_10]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
-- [[Responsibilities_8]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
-- [[VersionRequest Fields]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
-- [[downgrade_version(request)]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
-- [[get_version_history()_1]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
-- [[rollback_version(request)]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
-- [[upgrade_version(request)]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
-- [[version_routes.py_2]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
-- [[version_routes.py_1]] - document - docs/vault/02 - Modules/Gateway Core/version_routes.py.md
+- [[ANTHROPIC_BASE_URL_1]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
+- [[ANTHROPIC_BASE_URL]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
+- [[Configuration_16]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
+- [[Description_1]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
+- [[Description_2]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
+- [[GATEWAY_URL_1]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
+- [[GATEWAY_URL]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
+- [[How It Works_3]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
+- [[Related Notes_32]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
+- [[Related Notes_33]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
+- [[SDK Patch]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
+- [[Set In]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
+- [[Typical Value]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
+- [[Usage Contexts]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
+- [[Value_1]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
+- [[Why It's Critical]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,3 +33,10 @@ members: 16
 TABLE source_file, type FROM #community/Community_561
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 637]]
+- 1 edge to [[_COMMUNITY_Community 562]]
+
+## Top bridge nodes
+- [[ANTHROPIC_BASE_URL]] - degree 4, connects to 2 communities

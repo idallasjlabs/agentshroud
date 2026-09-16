@@ -1,31 +1,31 @@
 ---
 type: community
-cohesion: 0.12
+cohesion: 0.13
 members: 16
 ---
 
 # Community 575
 
-**Cohesion:** 0.12 - loosely connected
+**Cohesion:** 0.13 - loosely connected
 **Members:** 16 nodes
 
 ## Members
-- [[05-credential-isolation]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Constraints_8]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Evidence_5]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Problem_8]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Remediation_6]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Remove secret mounts from agent container and implement transparent credential injection]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Severity_8]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Step 1 Audit current secret mounts]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Step 2 Move all secrets to gateway-only Docker Secrets]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Step 3 Remove credential environment variables from agent container]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Step 4 Implement transparent credential injection in the gateway]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Step 5 Route all outbound requests through the gateway egress proxy]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Step 6 Handle 1Password specifically]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Step 7 Add credential leak detection to egress filtering]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Step 8 Verify no credentials remain in agent container]] - document - docs/planning/redteam/05-credential-isolation.md
-- [[Verification_7]] - document - docs/planning/redteam/05-credential-isolation.md
+- [[Autonomous remote dev workflows (hdev, odev)]] - concept - .llm_settings/docs/SKILLS_REFERENCE.md
+- [[CI DAST scan job (Nuclei, self-hosted)]] - code - .github/workflows/ci.yml
+- [[Credential isolation — keys live only in the gateway]] - rationale - docker-compose.secure.yml
+- [[Gateway DNS filter endpoint (port 53)]] - concept - docker-compose.secure.yml
+- [[MCP servers confined to the internal network]] - rationale - docker-compose.secure.yml
+- [[PostgreSQL ~.pgpass password management]] - concept - .llm_settings/docs/SECURITY_GUIDE.md
+- [[Proxy mode — full network isolation + egress control]] - concept - docker-compose.secure.yml
+- [[Sidecar mode — optional security scanning]] - concept - docker-compose.sidecar.yml
+- [[agentshroud-external network]] - code - docker-compose.secure.yml
+- [[agentshroud-gateway service (proxy mode)]] - code - docker-compose.secure.yml
+- [[agentshroud-gateway service (sidecar mode)]] - code - docker-compose.sidecar.yml
+- [[agentshroud-internal network (no external access)]] - code - docker-compose.secure.yml
+- [[direnv-based environment variable management]] - concept - .llm_settings/docs/SECURITY_GUIDE.md
+- [[openclaw service (exposed, sidecar mode)]] - code - docker-compose.sidecar.yml
+- [[openclaw service (internal network only)]] - code - docker-compose.secure.yml
+- [[wazuh-agent sidecar (pinned 4.14.7)]] - code - docker-compose.secure.yml
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,3 +33,9 @@ members: 16
 TABLE source_file, type FROM #community/Community_575
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 721]]
+
+## Top bridge nodes
+- [[Autonomous remote dev workflows (hdev, odev)]] - degree 2, connects to 1 community

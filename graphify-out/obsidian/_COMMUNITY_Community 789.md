@@ -1,26 +1,27 @@
 ---
 type: community
-cohesion: 0.18
-members: 11
+cohesion: 0.17
+members: 12
 ---
 
 # Community 789
 
-**Cohesion:** 0.18 - loosely connected
-**Members:** 11 nodes
+**Cohesion:** 0.17 - loosely connected
+**Members:** 12 nodes
 
 ## Members
-- [[Apple Notes CLI]] - document - skills/openclaw/apple-notes/SKILL.md
-- [[Bear Notes]] - document - skills/openclaw/bear-notes/SKILL.md
-- [[Common Commands_1]] - document - skills/openclaw/bear-notes/SKILL.md
-- [[Configuration_20]] - document - skills/openclaw/bear-notes/SKILL.md
-- [[Getting a Bear Token]] - document - skills/openclaw/bear-notes/SKILL.md
-- [[Notes_3]] - document - skills/openclaw/bear-notes/SKILL.md
-- [[Options]] - document - skills/openclaw/bear-notes/SKILL.md
-- [[SKILL_195]] - document - skills/openclaw/apple-notes/SKILL.md
-- [[SKILL_197]] - document - skills/openclaw/bear-notes/SKILL.md
-- [[grizzly CLI (Bear notes)]] - concept - skills/openclaw/bear-notes/SKILL.md
-- [[memo CLI (antoniorodrmemo)]] - concept - skills/openclaw/apple-notes/SKILL.md
+- [[Container management_2]] - document - examples/docker-commands.md
+- [[Container status_1]] - document - examples/docker-commands.md
+- [[Debugging read-only filesystem errors]] - document - examples/docker-commands.md
+- [[Docker Commands Reference]] - document - examples/docker-commands.md
+- [[Exec into containers]] - document - examples/docker-commands.md
+- [[Logs_3]] - document - examples/docker-commands.md
+- [[Networking_1]] - document - examples/docker-commands.md
+- [[OpenClaw CLI commands (run inside agentshroud-bot)]] - document - examples/docker-commands.md
+- [[Reading files from containers]] - document - examples/docker-commands.md
+- [[Secrets inspection (read-only check)]] - document - examples/docker-commands.md
+- [[Volume management]] - document - examples/docker-commands.md
+- [[Writing files to containers]] - document - examples/docker-commands.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,3 +29,9 @@ members: 11
 TABLE source_file, type FROM #community/Community_789
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 254]]
+
+## Top bridge nodes
+- [[Docker Commands Reference]] - degree 12, connects to 1 community

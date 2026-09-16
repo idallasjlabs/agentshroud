@@ -1,29 +1,29 @@
 ---
 type: community
-cohesion: 0.14
+cohesion: 0.19
 members: 14
 ---
 
 # Community 686
 
-**Cohesion:** 0.14 - loosely connected
+**Cohesion:** 0.19 - loosely connected
 **Members:** 14 nodes
 
 ## Members
-- [[Canary Checks]] - document - docs/vault/02 - Modules/Security Modules/canary.py.md
-- [[CanaryResult.to_dict()]] - document - docs/vault/02 - Modules/Security Modules/canary.py.md
-- [[Environment Variables_7]] - document - docs/vault/02 - Modules/Security Modules/canary.py.md
-- [[Function Details_29]] - document - docs/vault/02 - Modules/Security Modules/canary.py.md
-- [[Key Classes  Functions_32]] - document - docs/vault/02 - Modules/Security Modules/canary.py.md
-- [[Mode Enforce vs Monitor_2]] - document - docs/vault/02 - Modules/Security Modules/canary.py.md
-- [[Operational Notes_1]] - document - docs/vault/02 - Modules/Security Modules/canary.py.md
-- [[Purpose_150]] - document - docs/vault/02 - Modules/Security Modules/canary.py.md
-- [[Related_36]] - document - docs/vault/02 - Modules/Security Modules/canary.py.md
-- [[Responsibilities_34]] - document - docs/vault/02 - Modules/Security Modules/canary.py.md
-- [[Threat Model_5]] - document - docs/vault/02 - Modules/Security Modules/canary.py.md
-- [[canary.py_2]] - document - docs/vault/02 - Modules/Security Modules/canary.py.md
-- [[canary.py_1]] - document - docs/vault/02 - Modules/Security Modules/canary.py.md
-- [[run_canary(pipeline, forwarder)]] - document - docs/vault/02 - Modules/Security Modules/canary.py.md
+- [[dot-test_status_response_model()]] - code - gateway/tests/test_enhanced_status.py
+- [[dot-test_status_response_monitor_mode()]] - code - gateway/tests/test_enhanced_status.py
+- [[dot-test_status_response_optional_fields()]] - code - gateway/tests/test_enhanced_status.py
+- [[AuthRequired_4]] - code - gateway/ingest_api/routes/health.py
+- [[Detailed health check endpoint — authentication required.      Returns full syst]] - rationale - gateway/ingest_api/routes/health.py
+- [[Health check response with v0.8.0 security dashboard data]] - rationale - gateway/ingest_api/models.py
+- [[StatusResponse]] - code - gateway/ingest_api/models.py
+- [[Test enhanced status endpoint with observatory mode and egress info.]] - rationale - gateway/tests/test_enhanced_status.py
+- [[Test status response in monitor mode.]] - rationale - gateway/tests/test_enhanced_status.py
+- [[Test that StatusResponse model accepts new fields.]] - rationale - gateway/tests/test_enhanced_status.py
+- [[Test that new fields are optional (backward compat).]] - rationale - gateway/tests/test_enhanced_status.py
+- [[TestEnhancedStatus]] - code - gateway/tests/test_enhanced_status.py
+- [[health_check_detail()]] - code - gateway/ingest_api/routes/health.py
+- [[test_enhanced_status.py]] - code - gateway/tests/test_enhanced_status.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,3 +31,11 @@ members: 14
 TABLE source_file, type FROM #community/Community_686
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 3 edges to [[_COMMUNITY_Approval Routing & Event Bus]]
+- 1 edge to [[_COMMUNITY_Community 153]]
+
+## Top bridge nodes
+- [[StatusResponse]] - degree 10, connects to 2 communities
+- [[health_check_detail()]] - degree 4, connects to 1 community

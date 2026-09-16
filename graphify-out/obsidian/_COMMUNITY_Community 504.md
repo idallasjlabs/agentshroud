@@ -10,24 +10,24 @@ members: 18
 **Members:** 18 nodes
 
 ## Members
-- [[Blob Wire Format]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
-- [[Configuration_14]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
-- [[EncryptedStore.__init__(master_secret, secret_path, iterations, key_id)]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
-- [[EncryptedStore.decrypt(blob)]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
-- [[EncryptedStore.encrypt(data)]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
-- [[EncryptedStore.rotate(blobs, new_secret, new_key_id)]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
-- [[Environment Variables_12]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
-- [[Function Details_37]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
-- [[Key Classes  Functions_40]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
-- [[Key Rotation Workflow]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
-- [[Mode Enforce vs Monitor_7]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
-- [[Purpose_158]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
-- [[Related_44]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
-- [[Responsibilities_42]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
-- [[Threat Model_13]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
-- [[_secure_zero(buffer)]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
-- [[encrypted_store.py_2]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
-- [[encrypted_store.py_1]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
+- [[AgentShroud Schema Documentation]] - document - docs/data/schema-documentation.md
+- [[Approval Queue Schema]] - document - docs/data/schema-documentation.md
+- [[Audit Chain State]] - document - docs/data/schema-documentation.md
+- [[Configuration File Schemas]] - document - docs/data/schema-documentation.md
+- [[Database Connection Configuration]] - document - docs/data/schema-documentation.md
+- [[Docker Secrets Structure]] - document - docs/data/schema-documentation.md
+- [[Egress Configuration (egress-config.yml)]] - document - docs/data/schema-documentation.md
+- [[In-Memory Data Structures]] - document - docs/data/schema-documentation.md
+- [[MCP Configuration (mcp-config.yml)]] - document - docs/data/schema-documentation.md
+- [[Main Configuration (agentshroud.yaml)]] - document - docs/data/schema-documentation.md
+- [[Rate Limiter State]] - document - docs/data/schema-documentation.md
+- [[SQLite Database Schema]] - document - docs/data/schema-documentation.md
+- [[Secret Content Examples]] - document - docs/data/schema-documentation.md
+- [[Secret Definitions (docker-compose.yml)]] - document - docs/data/schema-documentation.md
+- [[Secret File Structure]] - document - docs/data/schema-documentation.md
+- [[Secret Rotation Script]] - document - docs/data/schema-documentation.md
+- [[Trust Level Cache]] - document - docs/data/schema-documentation.md
+- [[schema-documentation]] - document - docs/data/schema-documentation.md
 
 ## Live Query (requires Dataview plugin)
 

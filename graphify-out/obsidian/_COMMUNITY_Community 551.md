@@ -1,31 +1,32 @@
 ---
 type: community
 cohesion: 0.12
-members: 16
+members: 17
 ---
 
 # Community 551
 
 **Cohesion:** 0.12 - loosely connected
-**Members:** 16 nodes
+**Members:** 17 nodes
 
 ## Members
-- [[Accessibility Checklist]] - document - branding/QUICK-REFERENCE.md
-- [[AgentShroud Brand Quick Reference]] - document - branding/QUICK-REFERENCE.md
-- [[CSS Variables]] - document - branding/QUICK-REFERENCE.md
-- [[Common Use Cases]] - document - branding/QUICK-REFERENCE.md
-- [[Dark Mode]] - document - branding/QUICK-REFERENCE.md
-- [[Favicon]] - document - branding/QUICK-REFERENCE.md
-- [[File Locations]] - document - branding/QUICK-REFERENCE.md
-- [[Logo Files_1]] - document - branding/QUICK-REFERENCE.md
-- [[Logo Usage Rules]] - document - branding/QUICK-REFERENCE.md
-- [[Need More Details]] - document - branding/QUICK-REFERENCE.md
-- [[Primary Brand Color]] - document - branding/QUICK-REFERENCE.md
-- [[Quick Color Palette]] - document - branding/QUICK-REFERENCE.md
-- [[Typography]] - document - branding/QUICK-REFERENCE.md
-- [[Website Header]] - document - branding/QUICK-REFERENCE.md
-- [[✅ Do]] - document - branding/QUICK-REFERENCE.md
-- [[❌ Don't]] - document - branding/QUICK-REFERENCE.md
+- [[ClamAV — Malware Detection]] - document - docs/security/security-supply-chain.md
+- [[Detailed Profiles]] - document - docs/security/security-supply-chain.md
+- [[Docker Engine]] - document - docs/security/security-supply-chain.md
+- [[Falco — Runtime Security Monitoring]] - document - docs/security/security-supply-chain.md
+- [[FastAPI  Starlette  Uvicorn — Web Framework]] - document - docs/security/security-supply-chain.md
+- [[OpenSCAP — Compliance Scanning]] - document - docs/security/security-supply-chain.md
+- [[Overview_20]] - document - docs/security/security-supply-chain.md
+- [[Podman]] - document - docs/security/security-supply-chain.md
+- [[Python 3.11 — Runtime]] - document - docs/security/security-supply-chain.md
+- [[Recommendations_1]] - document - docs/security/security-supply-chain.md
+- [[SQLite — Approval Queue  Audit Storage]] - document - docs/security/security-supply-chain.md
+- [[Security Supply Chain Analysis]] - document - docs/security/security-supply-chain.md
+- [[Trivy — Container Image Scanning]] - document - docs/security/security-supply-chain.md
+- [[Verdict Summary]] - document - docs/security/security-supply-chain.md
+- [[Wazuh — Host Integrity Monitoring ⚠️]] - document - docs/security/security-supply-chain.md
+- [[cryptography (Python) — Encryption Library]] - document - docs/security/security-supply-chain.md
+- [[spaCy + Presidio — PII Detection]] - document - docs/security/security-supply-chain.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,7 +36,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 790]]
+- 1 edge to [[_COMMUNITY_Community 634]]
 
 ## Top bridge nodes
-- [[AgentShroud Brand Quick Reference]] - degree 10, connects to 1 community
+- [[Security Supply Chain Analysis]] - degree 5, connects to 1 community

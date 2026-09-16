@@ -1,26 +1,27 @@
 ---
 type: community
-cohesion: 0.27
-members: 11
+cohesion: 0.17
+members: 12
 ---
 
 # Community 806
 
-**Cohesion:** 0.27 - loosely connected
-**Members:** 11 nodes
+**Cohesion:** 0.17 - loosely connected
+**Members:** 12 nodes
 
 ## Members
-- [[TODO Add actual script logic here]] - rationale - skills/openclaw/skill-creator/scripts/init_skill.py
-- [[Convert hyphenated skill name to Title Case for display.]] - rationale - skills/openclaw/skill-creator/scripts/init_skill.py
-- [[Initialize a new skill directory with template SKILL.md.      Args         skil]] - rationale - skills/openclaw/skill-creator/scripts/init_skill.py
-- [[Normalize a skill name to lowercase hyphen-case.]] - rationale - skills/openclaw/skill-creator/scripts/init_skill.py
-- [[create_resource_dirs()]] - code - skills/openclaw/skill-creator/scripts/init_skill.py
-- [[init_skill()]] - code - skills/openclaw/skill-creator/scripts/init_skill.py
-- [[init_skill.py]] - code - skills/openclaw/skill-creator/scripts/init_skill.py
-- [[main()_30]] - code - skills/openclaw/skill-creator/scripts/init_skill.py
-- [[normalize_skill_name()]] - code - skills/openclaw/skill-creator/scripts/init_skill.py
-- [[parse_resources()]] - code - skills/openclaw/skill-creator/scripts/init_skill.py
-- [[title_case_skill_name()]] - code - skills/openclaw/skill-creator/scripts/init_skill.py
+- [[AgentShroud Method ✅]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Audit Log Format]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Browser-Fetch Skill for 1Password Share Links]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Future Telegram Integration (When Auto-Discovered)]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Installation Status]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Integration with AgentShroud Workflow_1]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Overview_28]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Performance]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Quick Reference_10]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Tested Scenarios]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Traditional (Insecure) Method ❌]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[Workflow Secure Credential Sharing]] - document - docs/reference/BROWSER_FETCH_SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,8 +31,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 532]]
-- 1 edge to [[_COMMUNITY_Community 543]]
+- 1 edge to [[_COMMUNITY_Community 1080]]
+- 1 edge to [[_COMMUNITY_Community 1166]]
+- 1 edge to [[_COMMUNITY_Community 1306]]
+- 1 edge to [[_COMMUNITY_Community 1376]]
+- 1 edge to [[_COMMUNITY_Community 1377]]
 
 ## Top bridge nodes
-- [[init_skill.py]] - degree 9, connects to 2 communities
+- [[Browser-Fetch Skill for 1Password Share Links]] - degree 14, connects to 5 communities

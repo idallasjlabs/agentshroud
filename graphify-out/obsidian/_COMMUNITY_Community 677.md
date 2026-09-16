@@ -10,20 +10,20 @@ members: 14
 **Members:** 14 nodes
 
 ## Members
-- [[01-enforce-by-default]] - document - docs/planning/redteam/01-enforce-by-default.md
-- [[Constraints_4]] - document - docs/planning/redteam/01-enforce-by-default.md
-- [[Evidence_1]] - document - docs/planning/redteam/01-enforce-by-default.md
-- [[Flip core security modules from monitor to enforce mode]] - document - docs/planning/redteam/01-enforce-by-default.md
-- [[Problem_4]] - document - docs/planning/redteam/01-enforce-by-default.md
-- [[Remediation_2]] - document - docs/planning/redteam/01-enforce-by-default.md
-- [[Root Cause_3]] - document - docs/planning/redteam/01-enforce-by-default.md
-- [[Severity_4]] - document - docs/planning/redteam/01-enforce-by-default.md
-- [[Step 1 Change default mode in gateway configuration]] - document - docs/planning/redteam/01-enforce-by-default.md
-- [[Step 2 Add a permissive mode flag for development]] - document - docs/planning/redteam/01-enforce-by-default.md
-- [[Step 3 Add a startup warning for monitor mode]] - document - docs/planning/redteam/01-enforce-by-default.md
-- [[Step 4 Document the risk of monitor mode]] - document - docs/planning/redteam/01-enforce-by-default.md
-- [[Step 5 Update docker-compose.yml defaults]] - document - docs/planning/redteam/01-enforce-by-default.md
-- [[Verification_3]] - document - docs/planning/redteam/01-enforce-by-default.md
+- [[browser-extensionpackage.json]] - code - browser-extension/package.json
+- [[collectCoverageFrom]] - code - browser-extension/package.json
+- [[description_6]] - code - browser-extension/package.json
+- [[devDependencies]] - code - browser-extension/package.json
+- [[jest]] - code - browser-extension/package.json
+- [[jest_1]] - code - browser-extension/package.json
+- [[license_3]] - code - browser-extension/package.json
+- [[name_1]] - code - browser-extension/package.json
+- [[private]] - code - browser-extension/package.json
+- [[scripts]] - code - browser-extension/package.json
+- [[test]] - code - browser-extension/package.json
+- [[testcoverage]] - code - browser-extension/package.json
+- [[testEnvironment]] - code - browser-extension/package.json
+- [[version_3]] - code - browser-extension/package.json
 
 ## Live Query (requires Dataview plugin)
 

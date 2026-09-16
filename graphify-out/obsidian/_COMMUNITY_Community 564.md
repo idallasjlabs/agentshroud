@@ -1,31 +1,31 @@
 ---
 type: community
-cohesion: 0.19
+cohesion: 0.13
 members: 16
 ---
 
 # Community 564
 
-**Cohesion:** 0.19 - loosely connected
+**Cohesion:** 0.13 - loosely connected
 **Members:** 16 nodes
 
 ## Members
-- [[Bootstrap cron copy must also exclude short UIDs.]] - rationale - gateway/tests/test_cron_jobs_prompts.py
-- [[Bootstrap cron copy must also have denial-token avoidance.]] - rationale - gateway/tests/test_cron_jobs_prompts.py
-- [[Every collaborator report prompt must instruct LLM to exclude short UIDs.]] - rationale - gateway/tests/test_cron_jobs_prompts.py
-- [[Every collaborator report prompt must instruct the LLM to avoid 'denied'.]] - rationale - gateway/tests/test_cron_jobs_prompts.py
-- [[Path_28]] - code - gateway/tests/test_cron_jobs_prompts.py
-- [[SSH config must have a Host .tail240ea8.ts.net block BEFORE Host  block.]] - rationale - gateway/tests/test_cron_jobs_prompts.py
-- [[Tailnet Host block must route through the gateway CONNECT proxy.]] - rationale - gateway/tests/test_cron_jobs_prompts.py
-- [[_collab_jobs()]] - code - gateway/tests/test_cron_jobs_prompts.py
-- [[_load_jobs()]] - code - gateway/tests/test_cron_jobs_prompts.py
-- [[test_bots_cron_prompts_exclude_short_uids()]] - code - gateway/tests/test_cron_jobs_prompts.py
-- [[test_bots_cron_prompts_warn_against_denied_token()]] - code - gateway/tests/test_cron_jobs_prompts.py
-- [[test_cron_jobs_prompts.py]] - code - gateway/tests/test_cron_jobs_prompts.py
-- [[test_cron_prompts_exclude_short_uids()]] - code - gateway/tests/test_cron_jobs_prompts.py
-- [[test_cron_prompts_warn_against_denied_token()]] - code - gateway/tests/test_cron_jobs_prompts.py
-- [[test_ssh_config_routes_tailnet_fqdn()]] - code - gateway/tests/test_cron_jobs_prompts.py
-- [[test_ssh_tailnet_block_has_proxy_command()]] - code - gateway/tests/test_cron_jobs_prompts.py
+- [[ADR-001-proxy-layer-inversion]] - document - docs/adr/ADR-001-proxy-layer-inversion.md
+- [[Alternatives rejected]] - document - docs/adr/ADR-001-proxy-layer-inversion.md
+- [[Collaborative Multi-Agent Governance]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[Competitive Positioning — Proxy-Layer Inversion Differentiator]] - rationale - docs/agentshroud-knowledge.md
+- [[Decision_5]] - document - docs/adr/ADR-001-proxy-layer-inversion.md
+- [[Delegated Authority Model (time-bounded privilege delegation)]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[Enterprise Governance Proxy System (invention)]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[Human-in-the-Loop Approval Queue_1]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[Isaiah's Persona Package (IDENTITY.mdSOUL.mdUSER.md)]] - concept - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[Owner vs Bot Telegram Identity Separation]] - concept - docs/architecture/IDENTITY.md
+- [[PII Detection and Redaction Engine]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[Rationale]] - document - docs/adr/ADR-001-proxy-layer-inversion.md
+- [[Slack Socket Mode Integration Architecture]] - concept - docs/setup-slack.md
+- [[Telegram Bot Setup (BotFather token + gateway config)]] - concept - docs/setup-telegram.md
+- [[Transparent Interception Architecture]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
+- [[Trust-Differentiated Processing (RBAC tiers)]] - concept - docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,3 +33,9 @@ members: 16
 TABLE source_file, type FROM #community/Community_564
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 429]]
+
+## Top bridge nodes
+- [[Enterprise Governance Proxy System (invention)]] - degree 8, connects to 1 community

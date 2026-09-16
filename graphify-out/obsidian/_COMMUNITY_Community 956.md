@@ -1,23 +1,24 @@
 ---
 type: community
-cohesion: 0.25
-members: 8
+cohesion: 0.22
+members: 9
 ---
 
 # Community 956
 
-**Cohesion:** 0.25 - loosely connected
-**Members:** 8 nodes
+**Cohesion:** 0.22 - loosely connected
+**Members:** 9 nodes
 
 ## Members
-- [[Input Requirements_17]] - document - docker/config/hermes/skills/i-oracle/SKILL.md
-- [[Oracle — Feedback Analyst_3]] - document - docker/config/hermes/skills/i-oracle/SKILL.md
-- [[Output Format_20]] - document - docker/config/hermes/skills/i-oracle/SKILL.md
-- [[Persona_13]] - document - docker/config/hermes/skills/i-oracle/SKILL.md
-- [[Quality Checklist_15]] - document - docker/config/hermes/skills/i-oracle/SKILL.md
-- [[Role_60]] - document - docker/config/hermes/skills/i-oracle/SKILL.md
-- [[SKILL_103]] - document - docker/config/hermes/skills/i-oracle/SKILL.md
-- [[System Prompt_13]] - document - docker/config/hermes/skills/i-oracle/SKILL.md
+- [[3. Remaining Work — Prioritized by Value_3]] - document - docs/planning/reviews/phase-review-2026-02-23.md
+- [[Deprioritized (complexity without proportional value)]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[Tier 1 Critical (directly increases real security)]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[Tier 2 Important (hardens existing security)]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[Tier 3 Nice to Have (adds value but not critical)]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[📊 P2 — Operational Excellence (Medium Value)]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
+- [[🔧 P1 — Enhanced Security Capabilities (High Value)]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
+- [[🔬 P3 — Advanced Features (Lower Priority)]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
+- [[🚨 P0 — Critical Security Gaps (Immediate)]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,3 +26,9 @@ members: 8
 TABLE source_file, type FROM #community/Community_956
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 130]]
+
+## Top bridge nodes
+- [[3. Remaining Work — Prioritized by Value_3]] - degree 9, connects to 1 community

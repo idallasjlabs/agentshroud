@@ -1,26 +1,27 @@
 ---
 type: community
-cohesion: 0.35
-members: 11
+cohesion: 0.17
+members: 12
 ---
 
 # Community 813
 
-**Cohesion:** 0.35 - loosely connected
-**Members:** 11 nodes
+**Cohesion:** 0.17 - loosely connected
+**Members:** 12 nodes
 
 ## Members
-- [[.test_all_pass()_1]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_empty_host_list_is_not_ok()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_mixed_pass_fail_unreachable()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_on_host_callback_invoked_per_host()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_output_tail_is_truncated()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_runner_exception_marks_unreachable()]] - code - gateway/tests/test_multi_host_test.py
-- [[Return a runner that looks up (exit_code, output) by host name.]] - rationale - gateway/tests/test_multi_host_test.py
-- [[Run ``command`` on each host via ``runner`` and aggregate the results.      A ru]] - rationale - gateway/tools/multi_host_test.py
-- [[TestRunMultiHost]] - code - gateway/tests/test_multi_host_test.py
-- [[_fake_runner()]] - code - gateway/tests/test_multi_host_test.py
-- [[run_multi_host()]] - code - gateway/tools/multi_host_test.py
+- [[dot-test_default_revert_minutes_is_30()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_invalid_mode_returns_400()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_response_includes_previous_mode()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_response_includes_revert_minutes()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_revert_minutes_clamped_max()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_revert_minutes_clamped_min()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_set_enforce_mode()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_set_monitor_mode()]] - code - gateway/tests/test_observatory_mode.py
+- [[dot-test_set_observatory_mode()]] - code - gateway/tests/test_observatory_mode.py
+- [[TestSetMode]] - code - gateway/tests/test_observatory_mode.py
+- [[revert_after_minutes above 480 is clamped to 480.]] - rationale - gateway/tests/test_observatory_mode.py
+- [[revert_after_minutes below 1 is clamped to 1.]] - rationale - gateway/tests/test_observatory_mode.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,15 +31,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 728]]
-- 4 edges to [[_COMMUNITY_Community 485]]
-- 3 edges to [[_COMMUNITY_Community 898]]
-- 2 edges to [[_COMMUNITY_Community 993]]
-- 1 edge to [[_COMMUNITY_Community 869]]
-- 1 edge to [[_COMMUNITY_Community 994]]
-- 1 edge to [[_COMMUNITY_Community 1098]]
+- 3 edges to [[_COMMUNITY_Community 42]]
+- 1 edge to [[_COMMUNITY_Signed Instruction Envelopes & Security Pipeline]]
+- 1 edge to [[_COMMUNITY_Community 54]]
 
 ## Top bridge nodes
-- [[run_multi_host()]] - degree 15, connects to 7 communities
-- [[TestRunMultiHost]] - degree 10, connects to 3 communities
-- [[_fake_runner()]] - degree 10, connects to 2 communities
+- [[TestSetMode]] - degree 14, connects to 3 communities

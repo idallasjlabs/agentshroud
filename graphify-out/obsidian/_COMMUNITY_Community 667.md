@@ -1,29 +1,30 @@
 ---
 type: community
 cohesion: 0.14
-members: 14
+members: 15
 ---
 
 # Community 667
 
 **Cohesion:** 0.14 - loosely connected
-**Members:** 14 nodes
+**Members:** 15 nodes
 
 ## Members
-- [[API Queries]] - document - skills/openclaw/github/SKILL.md
-- [[CIWorkflow Runs]] - document - skills/openclaw/github/SKILL.md
-- [[Common Commands_2]] - document - skills/openclaw/github/SKILL.md
-- [[GitHub Skill]] - document - skills/openclaw/github/SKILL.md
-- [[Issue Triage]] - document - skills/openclaw/github/SKILL.md
-- [[Issues]] - document - skills/openclaw/github/SKILL.md
-- [[JSON Output]] - document - skills/openclaw/github/SKILL.md
-- [[Notes_4]] - document - skills/openclaw/github/SKILL.md
-- [[PR Review Summary]] - document - skills/openclaw/github/SKILL.md
-- [[Pull Requests]] - document - skills/openclaw/github/SKILL.md
-- [[Setup_6]] - document - skills/openclaw/github/SKILL.md
-- [[Templates]] - document - skills/openclaw/github/SKILL.md
-- [[When NOT to Use_1]] - document - skills/openclaw/github/SKILL.md
-- [[When to Use_2]] - document - skills/openclaw/github/SKILL.md
+- [[API Response]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
+- [[Architecture (high-level)]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
+- [[Concept]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
+- [[Console Management]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
+- [[Design]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
+- [[Estimated Effort]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
+- [[Feature Global Monitor-Only Mode (Observatory Mode)]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
+- [[Implementation Priority]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
+- [[Key Behaviors]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
+- [[Open Questions (for v0.8.0 planning)]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
+- [[Risk Assessment Heuristic]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
+- [[Use Cases_2]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
+- [[User Experience]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
+- [[v0.8.0 Feature Interactive Egress Firewall (Little Snitch for Agents)]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
+- [[v0.8.0-egress-firewall]] - document - docs/planning/v0.8/v0.8.0-egress-firewall.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,9 +32,3 @@ members: 14
 TABLE source_file, type FROM #community/Community_667
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 1027]]
-
-## Top bridge nodes
-- [[GitHub Skill]] - degree 8, connects to 1 community

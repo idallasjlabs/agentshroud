@@ -1,27 +1,28 @@
 ---
 type: community
 cohesion: 0.17
-members: 12
+members: 13
 ---
 
 # Community 742
 
 **Cohesion:** 0.17 - loosely connected
-**Members:** 12 nodes
+**Members:** 13 nodes
 
 ## Members
-- [[Emergency Hotfix_1]] - document - .agents/skills/i-mc/SKILL.md
-- [[GSDE&G Development Master Checklist]] - document - .agents/skills/i-mc/SKILL.md
-- [[Phase 1 · Plan & Branch  → `ggSKILL.md`]] - document - .agents/skills/i-mc/SKILL.md
-- [[Phase 2 · TDD  → `tddSKILL.md`]] - document - .agents/skills/i-mc/SKILL.md
-- [[Phase 3 · QA  → `qaSKILL.md`]] - document - .agents/skills/i-mc/SKILL.md
-- [[Phase 4 · Code Review  → `crSKILL.md`]] - document - .agents/skills/i-mc/SKILL.md
-- [[Phase 5 · Pull Request  → `prSKILL.md`]] - document - .agents/skills/i-mc/SKILL.md
-- [[Phase 6 · CI  → `cicdSKILL.md`]] - document - .agents/skills/i-mc/SKILL.md
-- [[Phase 7 · Deploy  → `psSKILL.md`]] - document - .agents/skills/i-mc/SKILL.md
-- [[Quick Commands]] - document - .agents/skills/i-mc/SKILL.md
-- [[SKILL_30]] - document - .agents/skills/i-mc/SKILL.md
-- [[Skill Index]] - document - .agents/skills/i-mc/SKILL.md
+- [[Claude (Codex on Marvin)]] - document - docs/security/history-purge-plan.md
+- [[Git History Purge Plan]] - document - docs/security/history-purge-plan.md
+- [[GitHub Cache Warning]] - document - docs/security/history-purge-plan.md
+- [[Multi-Layer .gitignore Secret Protection]] - rationale - docs/security/SECURITY_VERIFICATION.md
+- [[Pi]] - document - docs/security/history-purge-plan.md
+- [[Post-Purge — Other Instances]] - document - docs/security/history-purge-plan.md
+- [[Post-Rotation Verification]] - document - docs/security/history-purge-plan.md
+- [[Pre-Purge Checklist]] - document - docs/security/history-purge-plan.md
+- [[Procedure]] - document - docs/security/history-purge-plan.md
+- [[SECURITY_VERIFICATION]] - document - docs/security/SECURITY_VERIFICATION.md
+- [[Secret Rotation Checklist]] - document - docs/security/history-purge-plan.md
+- [[Trillian (when back online)]] - document - docs/security/history-purge-plan.md
+- [[history-purge-plan]] - document - docs/security/history-purge-plan.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,3 +30,12 @@ members: 12
 TABLE source_file, type FROM #community/Community_742
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 350]]
+- 1 edge to [[_COMMUNITY_Community 605]]
+- 1 edge to [[_COMMUNITY_Community 634]]
+
+## Top bridge nodes
+- [[SECURITY_VERIFICATION]] - degree 4, connects to 2 communities
+- [[history-purge-plan]] - degree 4, connects to 1 community

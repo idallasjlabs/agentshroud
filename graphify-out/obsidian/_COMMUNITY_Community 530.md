@@ -10,23 +10,23 @@ members: 17
 **Members:** 17 nodes
 
 ## Members
-- [[1. Enhanced Management Dashboard Routes (`gatewaywebmanagement.py`)]] - document - docs/project/WEB_CONTROL_CENTER_SUMMARY.md
-- [[2. Responsive CSS Framework (`gatewaywebstaticagentshroud-dashboard.css`)]] - document - docs/project/WEB_CONTROL_CENTER_SUMMARY.md
-- [[3. Main Dashboard Template (`gatewaywebtemplatesdashboard.html`)]] - document - docs/project/WEB_CONTROL_CENTER_SUMMARY.md
-- [[AgentShroud Web Control Center - Implementation Summary]] - document - docs/project/WEB_CONTROL_CENTER_SUMMARY.md
-- [[✅ Dashboard Pages Created]] - document - docs/project/WEB_CONTROL_CENTER_SUMMARY.md
-- [[✅ Design Principles Met]] - document - docs/project/WEB_CONTROL_CENTER_SUMMARY.md
-- [[✅ Technical Implementation]] - document - docs/project/WEB_CONTROL_CENTER_SUMMARY.md
-- [[✨ Security Features]] - document - docs/project/WEB_CONTROL_CENTER_SUMMARY.md
-- [[🌐 Access Points]] - document - docs/project/WEB_CONTROL_CENTER_SUMMARY.md
-- [[🎨 Branding Compliance]] - document - docs/project/WEB_CONTROL_CENTER_SUMMARY.md
-- [[🎯 Key Features Implemented]] - document - docs/project/WEB_CONTROL_CENTER_SUMMARY.md
-- [[📋 Task Completed Successfully]] - document - docs/project/WEB_CONTROL_CENTER_SUMMARY.md
-- [[📱 Device Compatibility]] - document - docs/project/WEB_CONTROL_CENTER_SUMMARY.md
-- [[🔄 Next Steps]] - document - docs/project/WEB_CONTROL_CENTER_SUMMARY.md
-- [[🔧 Architecture]] - document - docs/project/WEB_CONTROL_CENTER_SUMMARY.md
-- [[🚀 What Was Built]] - document - docs/project/WEB_CONTROL_CENTER_SUMMARY.md
-- [[🚢 Deployment Status]] - document - docs/project/WEB_CONTROL_CENTER_SUMMARY.md
+- [[1. Branch Creation_1]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[2. Development (TDD)_1]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[3. Production Testing (if needed)_1]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[4. Pull Request_1]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[5. Pre-Merge_1]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[Common Commands Quick Reference_1]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[Emergency Contacts_1]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[Emergency Procedures_2]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[GSDE&G Skills Reference_1]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[GitHub Workflow Integration_1]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[P1 Incident Response_1]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[Production Testing Guidelines_1]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[Quick Reference When to Use Each Skill_1]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[Skill Directory Structure_1]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[Skill Invocation Examples_1]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[hermesskillsi-referenceSKILLS_GUIDE]] - document - docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md
+- [[📚 Created Documentation]] - document - docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,7 +36,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 92]]
+- 1 edge to [[_COMMUNITY_Community 318]]
+- 1 edge to [[_COMMUNITY_Community 780]]
 
 ## Top bridge nodes
-- [[AgentShroud Web Control Center - Implementation Summary]] - degree 11, connects to 1 community
+- [[GSDE&G Skills Reference_1]] - degree 10, connects to 1 community
+- [[📚 Created Documentation]] - degree 2, connects to 1 community

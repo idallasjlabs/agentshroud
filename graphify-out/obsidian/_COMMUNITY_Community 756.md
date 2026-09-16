@@ -1,27 +1,28 @@
 ---
 type: community
-cohesion: 0.17
-members: 12
+cohesion: 0.31
+members: 13
 ---
 
 # Community 756
 
-**Cohesion:** 0.17 - loosely connected
-**Members:** 12 nodes
+**Cohesion:** 0.31 - loosely connected
+**Members:** 13 nodes
 
 ## Members
-- [[.test_adds_connection_close_when_absent()]] - code - gateway/tests/test_hermes_dashboard_bridge.py
-- [[.test_forces_connection_close_on_plain_request()]] - code - gateway/tests/test_hermes_dashboard_bridge.py
-- [[.test_host_header_match_is_case_insensitive()]] - code - gateway/tests/test_hermes_dashboard_bridge.py
-- [[.test_preserves_other_headers_and_order()]] - code - gateway/tests/test_hermes_dashboard_bridge.py
-- [[.test_rewrites_host_header_to_target()]] - code - gateway/tests/test_hermes_dashboard_bridge.py
-- [[.test_websocket_upgrade_keeps_connection_header_untouched()]] - code - gateway/tests/test_hermes_dashboard_bridge.py
-- [[A WebSocket upgrade MUST keep Connection Upgrade (not close) or the         han]] - rationale - gateway/tests/test_hermes_dashboard_bridge.py
-- [[Forcing Connection close makes every request single-shot per TCP         connec]] - rationale - gateway/tests/test_hermes_dashboard_bridge.py
-- [[TestRewriteRequestHeaders]] - code - gateway/tests/test_hermes_dashboard_bridge.py
-- [[bridge_module()]] - code - gateway/tests/test_hermes_dashboard_bridge.py
-- [[dashboard_bridge.py (Hermes)]] - code - docker/bots/hermes/dashboard_bridge.py
-- [[test_hermes_dashboard_bridge.py]] - code - gateway/tests/test_hermes_dashboard_bridge.py
+- [[OpenClaw message content is a list of blocks (texttool_usetool_result...);]] - rationale - scripts/export-bot-conversations.py
+- [[Parse --since into a UTC-aware datetime. Accepts 'YYYY-MM-DD' or     'YYYY-MM-DD]] - rationale - scripts/export-bot-conversations.py
+- [[Path_57]] - code - scripts/export-bot-conversations.py
+- [[Read a file out of a container via `exec cat` rather than `docker cp` —     on t]] - rationale - scripts/export-bot-conversations.py
+- [[Why exec cat replaced docker cp for reading container files]] - rationale - scripts/export-bot-conversations.py
+- [[_docker_read_file()]] - code - scripts/export-bot-conversations.py
+- [[_extract_text()]] - code - scripts/export-bot-conversations.py
+- [[_parse_since()]] - code - scripts/export-bot-conversations.py
+- [[datetime_5]] - code - scripts/export-bot-conversations.py
+- [[export-bot-conversations.py]] - code - scripts/export-bot-conversations.py
+- [[export_hermes()]] - code - scripts/export-bot-conversations.py
+- [[export_openclaw()]] - code - scripts/export-bot-conversations.py
+- [[main()_29]] - code - scripts/export-bot-conversations.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,7 +32,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 62]]
+- 2 edges to [[_COMMUNITY_Community 957]]
+- 1 edge to [[_COMMUNITY_Community 731]]
+- 1 edge to [[_COMMUNITY_Community 895]]
 
 ## Top bridge nodes
-- [[test_hermes_dashboard_bridge.py]] - degree 4, connects to 1 community
+- [[_parse_since()]] - degree 6, connects to 2 communities
+- [[export_openclaw()]] - degree 7, connects to 1 community
+- [[export_hermes()]] - degree 6, connects to 1 community

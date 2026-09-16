@@ -1,29 +1,30 @@
 ---
 type: community
-cohesion: 0.22
-members: 14
+cohesion: 0.20
+members: 15
 ---
 
 # Community 665
 
-**Cohesion:** 0.22 - loosely connected
-**Members:** 14 nodes
+**Cohesion:** 0.20 - loosely connected
+**Members:** 15 nodes
 
 ## Members
-- [[._agent_id_for_peer()]] - code - gateway/proxy/http_proxy.py
-- [[._clamav_scan_bytes()]] - code - gateway/proxy/http_proxy.py
-- [[._handle_client()]] - code - gateway/proxy/http_proxy.py
-- [[._process_connect()]] - code - gateway/proxy/http_proxy.py
-- [[._relay()]] - code - gateway/proxy/http_proxy.py
-- [[._relay_and_scan()]] - code - gateway/proxy/http_proxy.py
-- [[Copy bytes from reader to writer until EOF.          ``idle_timeout`` (default 1]] - rationale - gateway/proxy/http_proxy.py
-- [[Copy bytes from reader to writer, sampling the first scan_limit bytes         fo]] - rationale - gateway/proxy/http_proxy.py
-- [[Handle a single incoming client connection.]] - rationale - gateway/proxy/http_proxy.py
-- [[Parse CONNECT request, check allowlist, relay or block.]] - rationale - gateway/proxy/http_proxy.py
-- [[Resolve source IP to a bot_id; lazily extends registry via DNS.          The sta]] - rationale - gateway/proxy/http_proxy.py
-- [[StreamReader_2]] - code - gateway/proxy/http_proxy.py
-- [[StreamWriter_2]] - code - gateway/proxy/http_proxy.py
-- [[Write data to a temp file and scan with ClamAV.          Runs in a thread execut]] - rationale - gateway/proxy/http_proxy.py
+- [[dot-test_five_optimal()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[dot-test_five_sbom_and_trivy_clean()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[dot-test_four_sbom_and_trivy_with_criticals()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[dot-test_four_with_zero_highs()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[dot-test_one_when_only_sbom_exists()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[dot-test_three_sbom_has_packages_no_trivy()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[dot-test_three_with_sbom_trivy_no_criticals_but_has_highs()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[dot-test_two_empty_sbom()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[dot-test_zero_when_nothing_present()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[dot-test_zero_without_sbom()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[Return a mock Path that exists and whose glob() returns named mock files.]] - rationale - gateway/tests/test_scorecard_scoring.py
+- [[TestScoreImageIntegrity]] - code - gateway/tests/test_scorecard_scoring.py
+- [[TestScoreSupplyChain_1]] - code - gateway/tests/test_scorecard_scoring.py
+- [[_mock_dir_with_files()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[_mock_missing_dir()]] - code - gateway/tests/test_scorecard_scoring.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,13 +34,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_Community 75]]
-- 4 edges to [[_COMMUNITY_Community 22]]
-- 1 edge to [[_COMMUNITY_Community 112]]
+- 4 edges to [[_COMMUNITY_Community 664]]
+- 3 edges to [[_COMMUNITY_Community 969]]
+- 2 edges to [[_COMMUNITY_Community 1113]]
+- 2 edges to [[_COMMUNITY_Community 1176]]
+- 1 edge to [[_COMMUNITY_Community 1177]]
 
 ## Top bridge nodes
-- [[._clamav_scan_bytes()]] - degree 4, connects to 2 communities
-- [[._process_connect()]] - degree 8, connects to 1 community
-- [[._relay_and_scan()]] - degree 7, connects to 1 community
-- [[StreamReader_2]] - degree 6, connects to 1 community
-- [[StreamWriter_2]] - degree 6, connects to 1 community
+- [[_mock_dir_with_files()]] - degree 13, connects to 5 communities
+- [[_mock_missing_dir()]] - degree 6, connects to 3 communities
+- [[TestScoreImageIntegrity]] - degree 7, connects to 2 communities
+- [[TestScoreSupplyChain_1]] - degree 6, connects to 1 community
+- [[dot-test_five_optimal()]] - degree 2, connects to 1 community

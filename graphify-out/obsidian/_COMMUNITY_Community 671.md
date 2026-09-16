@@ -1,29 +1,29 @@
 ---
 type: community
-cohesion: 0.14
+cohesion: 0.16
 members: 14
 ---
 
 # Community 671
 
-**Cohesion:** 0.14 - loosely connected
+**Cohesion:** 0.16 - loosely connected
 **Members:** 14 nodes
 
 ## Members
-- [[1. Multi-Runtime Testing (Podman + Apple Containers)]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
-- [[2. Multi-Host Deployment Orchestration]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
-- [[3. ARM32  Low-Resource Support]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
-- [[4. Compliance & Standards Alignment]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
-- [[4.1 IEC 62443 (Industrial Automation Security)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.2 EU AI Act]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4.3 NIST AI Risk Management Framework (AI RMF)]] - document - docs/papers/agentshroud-whitepaper.md
-- [[4a. OT  Industrial Security (P1 — Critical)]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
-- [[4b. Enterprise IT (P2 — High)]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
-- [[4c. Container & Cloud Security (P2 — High)]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
-- [[4d. Regulatory Compliance (P3 — Medium)]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
-- [[4e. Tooling Integration (P3 — Medium)]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
-- [[4f. Documentation Deliverables]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
-- [[Features_3]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
+- [[ADR-005-sha256-hash-chain-audit-integrity]] - document - docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md
+- [[ADR-005 SHA-256 Hash Chain Audit Integrity]] - concept - docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md
+- [[AuditEntry (data entity)]] - concept - docs/data/data-dictionary.md
+- [[Consequences_3]] - document - docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md
+- [[Context_6]] - document - docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md
+- [[Decision_6]] - document - docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md
+- [[Hash Chain Structure_2]] - document - docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md
+- [[Implementation Details]] - document - docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md
+- [[Negative Consequences_2]] - document - docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md
+- [[Positive Consequences_2]] - document - docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md
+- [[Status_6]] - document - docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md
+- [[audit_entries SQLite table]] - code - docs/data/schema-documentation.md
+- [[ledger.py (audit trail, SHA-256 hashing)]] - image - docs/diagrams/images/diagram-03-gateway-components.svg
+- [[mcp_audit_entries SQLite table]] - code - docs/data/schema-documentation.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,9 +33,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 402]]
-- 1 edge to [[_COMMUNITY_Community 362]]
+- 1 edge to [[_COMMUNITY_Community 217]]
+- 1 edge to [[_COMMUNITY_Community 357]]
+- 1 edge to [[_COMMUNITY_Community 420]]
 
 ## Top bridge nodes
-- [[4. Compliance & Standards Alignment]] - degree 11, connects to 1 community
-- [[Features_3]] - degree 5, connects to 1 community
+- [[ADR-005 SHA-256 Hash Chain Audit Integrity]] - degree 10, connects to 2 communities
+- [[AuditEntry (data entity)]] - degree 4, connects to 1 community

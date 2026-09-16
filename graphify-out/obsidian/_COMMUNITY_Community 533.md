@@ -1,32 +1,32 @@
 ---
 type: community
-cohesion: 0.15
+cohesion: 0.14
 members: 17
 ---
 
 # Community 533
 
-**Cohesion:** 0.15 - loosely connected
+**Cohesion:** 0.14 - loosely connected
 **Members:** 17 nodes
 
 ## Members
-- [[.age_days()]] - code - gateway/security/key_rotation.py
-- [[.is_in_grace_period()]] - code - gateway/security/key_rotation.py
-- [[.test_age_calculation()]] - code - gateway/tests/test_key_rotation.py
-- [[.test_grace_period_tracking()]] - code - gateway/tests/test_key_rotation.py
-- [[.test_not_due_without_force_is_rejected()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[.test_should_rotate()]] - code - gateway/tests/test_key_rotation.py
-- [[.test_should_warn()]] - code - gateway/tests/test_key_rotation.py
-- [[Age of credential in days.]] - rationale - gateway/security/key_rotation.py
-- [[CredentialInfo]] - code - gateway/security/key_rotation.py
-- [[Information about a managed credential.]] - rationale - gateway/security/key_rotation.py
-- [[Test credential age calculation.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test credential information tracking.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test grace period status tracking.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test rotation requirement calculation.]] - rationale - gateway/tests/test_key_rotation.py
-- [[Test warning threshold calculation.]] - rationale - gateway/tests/test_key_rotation.py
-- [[TestCredentialInfo]] - code - gateway/tests/test_key_rotation.py
-- [[Whether credential is currently in grace period.]] - rationale - gateway/security/key_rotation.py
+- [[Credential Isolation Architecture]] - concept - docs/papers/agentshroud-ieee-paper.md
+- [[Enforce-by-Default Semantics (R-02, R-03)]] - rationale - docs/papers/agentshroud-ieee-paper.md
+- [[Hay, Enterprise Security Feature Priorities Assessment (2026)]] - document - docs/papers/agentshroud-ieee-paper.md
+- [[Human-in-the-Loop Approval Gating (R-08, R-09)]] - concept - docs/papers/agentshroud-ieee-paper.md
+- [[Outbound Information Filter (R-01)]] - concept - docs/papers/agentshroud-ieee-paper.md
+- [[Per-User Session Isolation (R-04, R-05)]] - concept - docs/papers/agentshroud-ieee-paper.md
+- [[RELEASE-PLAN]] - document - docs/planning/RELEASE-PLAN.md
+- [[STPA-Sec Analysis of AgentShroud]] - rationale - docs/papers/agentshroud-ieee-paper.md
+- [[Separation of Concerns  Isolated Bot Accounts]] - rationale - docs/reference/PREREQUISITES.md
+- [[Separation of Privilege (R-06, R-07)]] - concept - docs/papers/agentshroud-ieee-paper.md
+- [[Steve Hay Blue Team Assessment]] - concept - docs/planning/RELEASE-PLAN.md
+- [[v0.8.0 Watchtower — Security Fixes + Module Wiring]] - concept - docs/planning/RELEASE-PLAN.md
+- [[v0.9.0 Sentinel — Data Isolation + SOC]] - concept - docs/planning/RELEASE-PLAN.md
+- [[v1.0.0 Fortress — Ship-Ready Public Release]] - concept - docs/planning/RELEASE-PLAN.md
+- [[v1.1.0 Groups — Workspaces for Teams]] - concept - docs/planning/RELEASE-PLAN.md
+- [[v1.2.0 Local LLMs — Offline Model Support]] - concept - docs/planning/RELEASE-PLAN.md
+- [[v1.3.0 — Platform Expansion]] - concept - docs/planning/RELEASE-PLAN.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,17 +36,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 11 edges to [[_COMMUNITY_Community 226]]
-- 8 edges to [[_COMMUNITY_Community 295]]
-- 4 edges to [[_COMMUNITY_Community 130]]
-- 4 edges to [[_COMMUNITY_Community 432]]
-- 4 edges to [[_COMMUNITY_Community 692]]
-- 3 edges to [[_COMMUNITY_Community 810]]
-- 1 edge to [[_COMMUNITY_Community 1271]]
+- 3 edges to [[_COMMUNITY_Community 380]]
+- 1 edge to [[_COMMUNITY_Community 250]]
+- 1 edge to [[_COMMUNITY_Community 787]]
 
 ## Top bridge nodes
-- [[CredentialInfo]] - degree 35, connects to 7 communities
-- [[TestCredentialInfo]] - degree 12, connects to 4 communities
-- [[.test_should_rotate()]] - degree 4, connects to 1 community
-- [[.test_should_warn()]] - degree 4, connects to 1 community
-- [[.test_not_due_without_force_is_rejected()]] - degree 2, connects to 1 community
+- [[STPA-Sec Analysis of AgentShroud]] - degree 9, connects to 1 community
+- [[RELEASE-PLAN]] - degree 7, connects to 1 community
+- [[Credential Isolation Architecture]] - degree 4, connects to 1 community
+- [[Hay, Enterprise Security Feature Priorities Assessment (2026)]] - degree 3, connects to 1 community
+- [[Separation of Concerns  Isolated Bot Accounts]] - degree 2, connects to 1 community

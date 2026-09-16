@@ -1,27 +1,28 @@
 ---
 type: community
-cohesion: 0.17
-members: 12
+cohesion: 0.15
+members: 13
 ---
 
 # Community 761
 
-**Cohesion:** 0.17 - loosely connected
-**Members:** 12 nodes
+**Cohesion:** 0.15 - loosely connected
+**Members:** 13 nodes
 
 ## Members
-- [[API Basics]] - document - skills/openclaw/notion/SKILL.md
-- [[Common Operations_1]] - document - skills/openclaw/notion/SKILL.md
-- [[Find the active vault(s)]] - document - skills/openclaw/obsidian/SKILL.md
-- [[Key Differences in 2025-09-03]] - document - skills/openclaw/notion/SKILL.md
-- [[Notes_6]] - document - skills/openclaw/notion/SKILL.md
-- [[Obsidian]] - document - skills/openclaw/obsidian/SKILL.md
-- [[Property Types]] - document - skills/openclaw/notion/SKILL.md
-- [[SKILL_218]] - document - skills/openclaw/notion/SKILL.md
-- [[SKILL_219]] - document - skills/openclaw/obsidian/SKILL.md
-- [[Setup_7]] - document - skills/openclaw/notion/SKILL.md
-- [[notion]] - document - skills/openclaw/notion/SKILL.md
-- [[obsidian-cli quick start]] - document - skills/openclaw/obsidian/SKILL.md
+- [[Configuration  Environment Variables_26]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
+- [[Default Service Configuration]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
+- [[Function Details_46]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
+- [[Key Classes  Functions_48]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
+- [[Purpose_178]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
+- [[Related_52]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
+- [[Responsibilities_49]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
+- [[compose_generator.py_2]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
+- [[compose_generator.py_1]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
+- [[gateway service]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
+- [[generate_apple_script(services)]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
+- [[generate_compose(services, runtime)]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
+- [[openclaw service]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,26 +1,27 @@
 ---
 type: community
-cohesion: 0.18
-members: 11
+cohesion: 0.26
+members: 12
 ---
 
 # Community 788
 
-**Cohesion:** 0.18 - loosely connected
-**Members:** 11 nodes
+**Cohesion:** 0.26 - loosely connected
+**Members:** 12 nodes
 
 ## Members
-- [[AWS Credentials]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
-- [[Atlassian OAuth]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
-- [[GitHub PAT]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
-- [[Related Skills_17]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
-- [[Role_16]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
-- [[SKILL_31]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
-- [[Security Best Practices]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
-- [[Usage_19]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
-- [[Verification Checklist]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
-- [[When to Invoke]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[AgentShroud Security Inventory v0.8.0 (58 Modules)]] - document - docs/security/security-inventory.md
+- [[Competitive Security Matrix (28 Modules vs 11 Platforms)]] - document - docs/security/competitive-security-matrix.md
+- [[KeyVault Zero-Exposure In-Memory Secret Storage]] - concept - docs/security/security-inventory.md
+- [[PromptGuard Prompt Injection Defense (49 Patterns, 35+ Languages)]] - concept - docs/security/security-inventory.md
+- [[RT-MB2 Cross-Bot Shared Memory Leak (Fixed in PR)]] - concept - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[RT-MB4 Hermes Cron Job Injection via jobs.yaml (Accepted Risk)]] - concept - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[Red Team Assessment v1.2.0]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[Security Module 27 Cross-Bot Trust Ledger (v1.2.0)]] - concept - docs/security/competitive-security-matrix.md
+- [[Security Module 28 Differential PII Detector on Tool Results 0.7-floor (v1.2.0)]] - concept - docs/security/competitive-security-matrix.md
+- [[SecurityPipeline Central InboundOutbound Module Orchestrator]] - concept - docs/security/security-inventory.md
+- [[SharedMemoryManager Per-User Per-Bot Memory Isolation]] - concept - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[TrustManager Progressive Trust Scoring (5 Levels)]] - concept - docs/security/security-inventory.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,8 +31,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 877]]
-- 1 edge to [[_COMMUNITY_Community 1072]]
+- 4 edges to [[_COMMUNITY_Community 373]]
+- 1 edge to [[_COMMUNITY_Community 484]]
+- 1 edge to [[_COMMUNITY_Community 1183]]
+- 1 edge to [[_COMMUNITY_Community 683]]
 
 ## Top bridge nodes
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)]] - degree 9, connects to 2 communities
+- [[PromptGuard Prompt Injection Defense (49 Patterns, 35+ Languages)]] - degree 5, connects to 2 communities
+- [[Red Team Assessment v1.2.0]] - degree 7, connects to 1 community
+- [[AgentShroud Security Inventory v0.8.0 (58 Modules)]] - degree 6, connects to 1 community
+- [[SecurityPipeline Central InboundOutbound Module Orchestrator]] - degree 4, connects to 1 community
+- [[Competitive Security Matrix (28 Modules vs 11 Platforms)]] - degree 4, connects to 1 community

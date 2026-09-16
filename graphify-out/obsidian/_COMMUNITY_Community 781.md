@@ -1,26 +1,27 @@
 ---
 type: community
-cohesion: 0.18
-members: 11
+cohesion: 0.17
+members: 12
 ---
 
 # Community 781
 
-**Cohesion:** 0.18 - loosely connected
-**Members:** 11 nodes
+**Cohesion:** 0.17 - loosely connected
+**Members:** 12 nodes
 
 ## Members
-- [[ADR-002-default-allow-security-philosophy]] - document - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
-- [[ADR-002 Default-Allow Security Philosophy]] - document - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
-- [[Consequences_1]] - document - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
-- [[Context_1]] - document - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
-- [[Decision_3]] - document - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
-- [[Evaluation Criteria]] - document - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
-- [[Implementation Approach]] - document - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
-- [[Mitigation Strategies_1]] - document - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
-- [[Negative Consequences_1]] - document - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
-- [[Positive Consequences_1]] - document - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
-- [[Status_1]] - document - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
+- [[description of what this does_2]] - document - docker/config/openclaw/skills/i-athena/SKILL.md
+- [[Athena — Knowledge Distiller_4]] - document - docker/config/openclaw/skills/i-athena/SKILL.md
+- [[Input Requirements_16]] - document - docker/config/openclaw/skills/i-athena/SKILL.md
+- [[Output Format_32]] - document - docker/config/openclaw/skills/i-athena/SKILL.md
+- [[Persona_11]] - document - docker/config/openclaw/skills/i-athena/SKILL.md
+- [[Quality Checklist_13]] - document - docker/config/openclaw/skills/i-athena/SKILL.md
+- [[Role_85]] - document - docker/config/openclaw/skills/i-athena/SKILL.md
+- [[System Prompt_11]] - document - docker/config/openclaw/skills/i-athena/SKILL.md
+- [[User Prompt Template_7]] - document - docker/config/openclaw/skills/i-athena/SKILL.md
+- [[cheatsheet_3]] - document - docker/config/openclaw/skills/i-athena/SKILL.md
+- [[openclawskillsi-athenaSKILL]] - document - docker/config/openclaw/skills/i-athena/SKILL.md
+- [[show_notes_2]] - document - docker/config/openclaw/skills/i-athena/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

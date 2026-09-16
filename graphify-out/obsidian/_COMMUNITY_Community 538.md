@@ -1,32 +1,32 @@
 ---
 type: community
-cohesion: 0.12
+cohesion: 0.13
 members: 17
 ---
 
 # Community 538
 
-**Cohesion:** 0.12 - loosely connected
+**Cohesion:** 0.13 - loosely connected
 **Members:** 17 nodes
 
 ## Members
-- [[Configuration  Environment Variables_29]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
-- [[Function Details_48]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
-- [[Key Classes  Functions_51]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
-- [[Purpose_169]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
-- [[Related_55]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
-- [[Responsibilities_53]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
-- [[SubagentMonitor.check_tool_usage(session_id, agent_id, tool_name, required_trust)]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
-- [[SubagentMonitor.deregister(session_id, agent_id)]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
-- [[SubagentMonitor.get_active(session_id)]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
-- [[SubagentMonitor.get_audit_log(session_id, agent_id)]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
-- [[SubagentMonitor.get_flagged_events(session_id)]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
-- [[SubagentMonitor.kill_agent(session_id, agent_id)]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
-- [[SubagentMonitor.kill_all(session_id)]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
-- [[SubagentMonitor.register_spawn(session_id, agent_id, parent_id, parent_trust)]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
-- [[Threat Model_24]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
-- [[subagent_monitor.py_2]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
-- [[subagent_monitor.py_1]] - document - docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md
+- [[Check Current Version]] - document - docs/operations/updating.md
+- [[Checking the Changelog]] - document - docs/operations/updating.md
+- [[Database Migrations]] - document - docs/operations/updating.md
+- [[Manual Update Process]] - document - docs/setup/setup-guide.md
+- [[Rollback If Needed]] - document - docs/setup/setup-guide.md
+- [[Rollback Procedure]] - document - docs/operations/updating.md
+- [[Tracking Main Branch]] - document - docs/operations/updating.md
+- [[Tracking a Tagged Release]] - document - docs/operations/updating.md
+- [[Update AgentShroud]] - document - docs/setup/setup-guide.md
+- [[Update OpenClaw]] - document - docs/setup/setup-guide.md
+- [[Update from Git]] - document - docs/operations/updating.md
+- [[Update from Release Tarball]] - document - docs/operations/updating.md
+- [[Updating_1]] - document - docs/setup/setup-guide.md
+- [[With Git]] - document - docs/operations/updating.md
+- [[Without Git]] - document - docs/operations/updating.md
+- [[deployment]] - document - docs/runbooks/deployment.md
+- [[updating]] - document - docs/operations/updating.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,3 +34,12 @@ members: 17
 TABLE source_file, type FROM #community/Community_538
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_Community 785]]
+- 1 edge to [[_COMMUNITY_Community 340]]
+- 1 edge to [[_COMMUNITY_Community 703]]
+
+## Top bridge nodes
+- [[deployment]] - degree 4, connects to 2 communities
+- [[Updating_1]] - degree 5, connects to 1 community

@@ -10,22 +10,22 @@ members: 16
 **Members:** 16 nodes
 
 ## Members
-- [[AgentShroud Security Assessment — v0.8.0]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[CRITICAL-1 `history.env` committed to git with live Telegram credentials]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[CRITICAL-2 No request body size limits on API models]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[Critical Findings_1]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[Executive Summary_5]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[HIGH-1 ML injection classifier is entirely a stub]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[HIGH-2 Approval queue Telegram notifications unimplemented]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[HIGH-3 Credential generation in key rotation is a placeholder]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[HIGH-4 In-memory audit chain not persisted]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[High-Priority Gaps]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[Low-Priority  Informational]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[Medium-Priority Gaps]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[Remediation Status (Post-v0.8.0)]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[Scorecard Are We Achieving Our Goal]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[What's Working Well_1]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[security-assessment-v0.8.0]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
+- [[02-human-in-the-loop]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Constraints_1]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Evidence_1]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Problem_3]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Remediation_2]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Root Cause_2]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Severity_4]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Step 1 Define MCP tool risk tiers]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Step 2 Configure approval requirements per tier]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Step 3 Wire MCP Proxy to Approval Queue]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Step 4 Set Approval Queue to enforce mode]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Step 5 Add approval UI to the control center dashboard]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Step 6 Add Telegram admin notification for critical-tier tools]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Step 7 Return clear error messages to the agent]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Verification_6]] - document - docs/planning/redteam/02-human-in-the-loop.md
+- [[Wire the Approval Queue to enforce mode for high-risk tool calls]] - document - docs/planning/redteam/02-human-in-the-loop.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,25 +1,26 @@
 ---
 type: community
-cohesion: 0.36
-members: 10
+cohesion: 0.20
+members: 11
 ---
 
 # Community 835
 
-**Cohesion:** 0.36 - loosely connected
-**Members:** 10 nodes
+**Cohesion:** 0.20 - loosely connected
+**Members:** 11 nodes
 
 ## Members
-- [[Read up to the end of the request's header block (rnrn).      Returns (h]] - rationale - docker/bots/hermes/dashboard_bridge.py
-- [[Rewrite the Host header to `new_host` and normalize Connection framing.      `he]] - rationale - docker/bots/hermes/dashboard_bridge.py
-- [[StreamReader]] - code - docker/bots/hermes/dashboard_bridge.py
-- [[StreamWriter]] - code - docker/bots/hermes/dashboard_bridge.py
-- [[_handle()]] - code - docker/bots/hermes/dashboard_bridge.py
-- [[_pipe()]] - code - docker/bots/hermes/dashboard_bridge.py
-- [[_read_request_headers()]] - code - docker/bots/hermes/dashboard_bridge.py
-- [[dashboard_bridge.py]] - code - docker/bots/hermes/dashboard_bridge.py
-- [[main()_2]] - code - docker/bots/hermes/dashboard_bridge.py
-- [[rewrite_request_headers()]] - code - docker/bots/hermes/dashboard_bridge.py
+- [[02-infrastructure]] - document - docs/diagrams/02-infrastructure.md
+- [[4. Infrastructure Diagram — Hosting & Servers]] - document - docs/diagrams/02-infrastructure.md
+- [[5. Network Topology Diagram]] - document - docs/diagrams/02-infrastructure.md
+- [[6. Deployment Diagram — What Runs Where]] - document - docs/diagrams/02-infrastructure.md
+- [[AgentShroud — Infrastructure & Network Diagrams]] - document - docs/diagrams/02-infrastructure.md
+- [[Deployment Diagram — What Runs Where]] - concept - docs/diagrams/02-infrastructure.md
+- [[Infrastructure Diagram — Hosting & Servers]] - concept - docs/diagrams/02-infrastructure.md
+- [[Network Topology Diagram]] - concept - docs/diagrams/02-infrastructure.md
+- [[Rendered CICD Deployment Diagram (PNG)]] - image - docs/diagrams/images/diagram-06-cicd-deployment.png
+- [[Rendered Infrastructure Hosting Diagram (PNG)]] - image - docs/diagrams/images/diagram-04-infrastructure-hosting.png
+- [[Rendered Network Topology Diagram (PNG)]] - image - docs/diagrams/images/diagram-05-network-topology.png
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,7 +30,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 1080]]
+- 2 edges to [[_COMMUNITY_Community 451]]
 
 ## Top bridge nodes
-- [[dashboard_bridge.py]] - degree 6, connects to 1 community
+- [[02-infrastructure]] - degree 5, connects to 1 community
+- [[Deployment Diagram — What Runs Where]] - degree 3, connects to 1 community

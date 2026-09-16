@@ -10,19 +10,19 @@ members: 13
 **Members:** 13 nodes
 
 ## Members
-- [[Configuration  Environment Variables_15]] - document - docs/vault/02 - Modules/Runtime/config.py.md
-- [[Environment Variables_4]] - document - docs/vault/02 - Modules/Runtime/config.py.md
-- [[Function Details_21]] - document - docs/vault/02 - Modules/Runtime/config.py.md
-- [[Key Classes  Functions_24]] - document - docs/vault/02 - Modules/Runtime/config.py.md
-- [[Purpose_142]] - document - docs/vault/02 - Modules/Runtime/config.py.md
-- [[Related_28]] - document - docs/vault/02 - Modules/Runtime/config.py.md
-- [[Responsibilities_26]] - document - docs/vault/02 - Modules/Runtime/config.py.md
-- [[Rootless Resolution Table]] - document - docs/vault/02 - Modules/Runtime/config.py.md
-- [[RuntimeConfig.effective_rootless (property)]] - document - docs/vault/02 - Modules/Runtime/config.py.md
-- [[RuntimeConfig.from_dict(data)]] - document - docs/vault/02 - Modules/Runtime/config.py.md
-- [[RuntimeConfig.from_env()]] - document - docs/vault/02 - Modules/Runtime/config.py.md
-- [[config.py_3]] - document - docs/vault/02 - Modules/Runtime/config.py.md
-- [[config.py_2]] - document - docs/vault/02 - Modules/Runtime/config.py.md
+- [[AgentShroud System Architecture Document (SAD)]] - document - docs/architecture/system-architecture.md
+- [[Component Architecture]] - document - docs/architecture/system-architecture.md
+- [[Core Technologies]] - document - docs/architecture/system-architecture.md
+- [[Executive Overview]] - document - docs/architecture/system-architecture.md
+- [[Metrics to Track]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Monitoring and Observability]] - document - docs/architecture/system-architecture.md
+- [[Network Isolation Benefits]] - document - docs/architecture/system-architecture.md
+- [[Security Technologies]] - document - docs/architecture/system-architecture.md
+- [[System Context]] - document - docs/architecture/system-architecture.md
+- [[System Traffic Flow]] - document - docs/architecture/system-architecture.md
+- [[Technology Stack_1]] - document - docs/architecture/system-architecture.md
+- [[Two-Network Docker Architecture]] - document - docs/architecture/system-architecture.md
+- [[system-architecture]] - document - docs/architecture/system-architecture.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,3 +30,13 @@ members: 13
 TABLE source_file, type FROM #community/Community_727
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 448]]
+- 1 edge to [[_COMMUNITY_Community 729]]
+- 1 edge to [[_COMMUNITY_Community 824]]
+
+## Top bridge nodes
+- [[Monitoring and Observability]] - degree 3, connects to 1 community
+- [[Two-Network Docker Architecture]] - degree 3, connects to 1 community
+- [[Component Architecture]] - degree 2, connects to 1 community

@@ -1,33 +1,34 @@
 ---
 type: community
-cohesion: 0.18
-members: 18
+cohesion: 0.15
+members: 19
 ---
 
 # Community 491
 
-**Cohesion:** 0.18 - loosely connected
-**Members:** 18 nodes
+**Cohesion:** 0.15 - loosely connected
+**Members:** 19 nodes
 
 ## Members
-- [[75-Module Security Pipeline]] - concept - CLAUDE.md
-- [[A2A Governance (A2APolicyEngine  A2AProxy)]] - concept - CHANGELOG.md
-- [[AgentShroud CLAUDE.md Guidance]] - document - CLAUDE.md
-- [[AgentShroud Changelog]] - document - CHANGELOG.md
-- [[AgentShroud Daily Check-in Prompt]] - document - docker/config/hermes/cron/prompts/agentshroud-daily-check-in.txt
-- [[AgentShroud Enterprise Governance Proxy]] - concept - CLAUDE.md
-- [[Cron-Mode Execution Restrictions]] - rationale - docker/config/hermes/cron/prompts/hermes-competitive-intelligence-email-am-pm.txt
-- [[ESP32-S3-BOX-3 Voice Terminal]] - concept - CHANGELOG.md
-- [[Human-in-the-Loop Approval Queue_1]] - concept - CLAUDE.md
-- [[IEC 62443 Alignment]] - concept - CLAUDE.md
-- [[Multi-Agent Development Hierarchy]] - rationale - CLAUDE.md
-- [[No Security Theater Principle]] - rationale - CLAUDE.md
-- [[OpenClaw Bot_1]] - concept - CHANGELOG.md
-- [[PII Redaction (Presidio, 0.9 threshold)]] - concept - CLAUDE.md
-- [[TDD Red-Green-Refactor Workflow]] - rationale - CLAUDE.md
-- [[TrustManager Progressive-Trust Ladder]] - concept - CHANGELOG.md
-- [[Voice Gateway]] - concept - CHANGELOG.md
-- [[Zero Hallucinations Rule]] - rationale - docker/config/hermes/cron/prompts/hermes-competitive-landscape-update-am-pm.txt
+- [[Cosign signature verification of container images (fail-closed on missing binarytimeoutbad signature)]] - rationale - gateway/tests/test_image_verifier.py
+- [[Test replacement for asyncio.wait_for — awaits coroutine directly._1]] - rationale - gateway/tests/test_image_verifier.py
+- [[Test replacement for asyncio.wait_for — raises TimeoutError.      Closes the un-_1]] - rationale - gateway/tests/test_image_verifier.py
+- [[Verify an image signature using cosign keyless OIDC verification.      Args]] - rationale - gateway/security/image_verifier.py
+- [[Verify multiple image signatures concurrently.      Returns         Dict mappin]] - rationale - gateway/security/image_verifier.py
+- [[_instant_wait_for()_1]] - code - gateway/tests/test_image_verifier.py
+- [[_timeout_wait_for()_1]] - code - gateway/tests/test_image_verifier.py
+- [[image_verifier.py]] - code - gateway/security/image_verifier.py
+- [[test_cosign_fails_bad_signature()]] - code - gateway/tests/test_image_verifier.py
+- [[test_cosign_not_found()]] - code - gateway/tests/test_image_verifier.py
+- [[test_cosign_success()]] - code - gateway/tests/test_image_verifier.py
+- [[test_cosign_timeout()]] - code - gateway/tests/test_image_verifier.py
+- [[test_image_verifier.py]] - code - gateway/tests/test_image_verifier.py
+- [[test_verify_images_exception_handled()]] - code - gateway/tests/test_image_verifier.py
+- [[test_verify_images_mixed()]] - code - gateway/tests/test_image_verifier.py
+- [[verify_image()]] - code - gateway/security/image_verifier.py
+- [[verify_images()]] - code - gateway/security/image_verifier.py
+- [[verify_images exception from one task is caught, others continue.]] - rationale - gateway/tests/test_image_verifier.py
+- [[verify_images one succeeds, one fails → results keyed by ref.]] - rationale - gateway/tests/test_image_verifier.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,11 +38,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_Community 282]]
+- 2 edges to [[_COMMUNITY_Slack Proxy & Main Endpoint Tests]]
+- 1 edge to [[_COMMUNITY_Approval Routing & Event Bus]]
 
 ## Top bridge nodes
-- [[AgentShroud Changelog]] - degree 11, connects to 1 community
-- [[A2A Governance (A2APolicyEngine  A2AProxy)]] - degree 3, connects to 1 community
-- [[Cron-Mode Execution Restrictions]] - degree 3, connects to 1 community
-- [[OpenClaw Bot_1]] - degree 2, connects to 1 community
-- [[AgentShroud Daily Check-in Prompt]] - degree 2, connects to 1 community
+- [[verify_images()]] - degree 7, connects to 1 community
+- [[test_cosign_fails_bad_signature()]] - degree 3, connects to 1 community
+- [[test_cosign_success()]] - degree 3, connects to 1 community

@@ -1,23 +1,24 @@
 ---
 type: community
-cohesion: 0.25
-members: 8
+cohesion: 0.22
+members: 9
 ---
 
 # Community 961
 
-**Cohesion:** 0.25 - loosely connected
-**Members:** 8 nodes
+**Cohesion:** 0.22 - loosely connected
+**Members:** 9 nodes
 
 ## Members
-- [[Input Requirements_27]] - document - docker/config/openclaw/skills/i-oracle/SKILL.md
-- [[Oracle — Feedback Analyst_5]] - document - docker/config/openclaw/skills/i-oracle/SKILL.md
-- [[Output Format_33]] - document - docker/config/openclaw/skills/i-oracle/SKILL.md
-- [[Persona_21]] - document - docker/config/openclaw/skills/i-oracle/SKILL.md
-- [[Quality Checklist_24]] - document - docker/config/openclaw/skills/i-oracle/SKILL.md
-- [[Role_96]] - document - docker/config/openclaw/skills/i-oracle/SKILL.md
-- [[SKILL_166]] - document - docker/config/openclaw/skills/i-oracle/SKILL.md
-- [[System Prompt_21]] - document - docker/config/openclaw/skills/i-oracle/SKILL.md
+- [[Collaborator Testing]] - document - docs/security/security-inventory.md
+- [[Owner Testing]] - document - docs/security/security-inventory.md
+- [[Security Architecture Documents (24)]] - document - docs/security/security-inventory.md
+- [[Security Configuration Files (9)]] - document - docs/security/security-inventory.md
+- [[Security Test Files (38)]] - document - docs/security/security-inventory.md
+- [[Summary_24]] - document - docs/security/security-inventory.md
+- [[Testing Checklist_1]] - document - docs/security/security-inventory.md
+- [[security-inventory]] - document - docs/security/security-inventory.md
+- [[🛡️ AgentShroud Security Inventory (v0.8.0)]] - document - docs/security/security-inventory.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,3 +26,9 @@ members: 8
 TABLE source_file, type FROM #community/Community_961
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 810]]
+
+## Top bridge nodes
+- [[🛡️ AgentShroud Security Inventory (v0.8.0)]] - degree 7, connects to 1 community

@@ -1,29 +1,30 @@
 ---
 type: community
-cohesion: 0.14
-members: 14
+cohesion: 0.13
+members: 15
 ---
 
 # Community 654
 
-**Cohesion:** 0.14 - loosely connected
-**Members:** 14 nodes
+**Cohesion:** 0.13 - loosely connected
+**Members:** 15 nodes
 
 ## Members
-- [[collectCoverageFrom]] - code - browser-extension/package.json
-- [[description_2]] - code - browser-extension/package.json
-- [[devDependencies]] - code - browser-extension/package.json
-- [[jest]] - code - browser-extension/package.json
-- [[jest_1]] - code - browser-extension/package.json
-- [[license_1]] - code - browser-extension/package.json
-- [[name_2]] - code - browser-extension/package.json
-- [[package.json_1]] - code - browser-extension/package.json
-- [[private]] - code - browser-extension/package.json
-- [[scripts_1]] - code - browser-extension/package.json
-- [[test_1]] - code - browser-extension/package.json
-- [[testcoverage]] - code - browser-extension/package.json
-- [[testEnvironment]] - code - browser-extension/package.json
-- [[version_2]] - code - browser-extension/package.json
+- [[Configuration  Environment Variables_16]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[Default Allowlist]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[Default Denylist Categories]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[EgressFilterConfig._matches_any_pattern(domain, patterns)]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[EgressFilterConfig.from_environment()]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[EgressFilterConfig.get_effective_allowlist(agent_id)]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[EgressFilterConfig.is_denylisted(domain)]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[Function Details_30]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[Key Classes  Functions_32]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[Purpose_159]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[Related_36]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[Responsibilities_34]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[Threat Model_20]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[egress_config.py_2]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[egress_config.py_1]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
 
 ## Live Query (requires Dataview plugin)
 

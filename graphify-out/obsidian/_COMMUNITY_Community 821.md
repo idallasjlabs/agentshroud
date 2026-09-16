@@ -1,25 +1,26 @@
 ---
 type: community
-cohesion: 0.20
-members: 10
+cohesion: 0.18
+members: 11
 ---
 
 # Community 821
 
-**Cohesion:** 0.20 - loosely connected
-**Members:** 10 nodes
+**Cohesion:** 0.18 - loosely connected
+**Members:** 11 nodes
 
 ## Members
-- [[7. Deployment]] - document - docs/papers/agentshroud-whitepaper.md
-- [[7.1 Supported Platforms]] - document - docs/papers/agentshroud-whitepaper.md
-- [[7.2 Quick Start]] - document - docs/papers/agentshroud-whitepaper.md
-- [[Applied By_1]] - document - docs/vault/03 - Configuration/ssh-config.md
-- [[Key Configuration]] - document - docs/vault/03 - Configuration/ssh-config.md
-- [[Purpose_182]] - document - docs/vault/03 - Configuration/ssh-config.md
-- [[Related Notes_26]] - document - docs/vault/03 - Configuration/ssh-config.md
-- [[Relationship to agentshroud.yaml]] - document - docs/vault/03 - Configuration/ssh-config.md
-- [[SSH Config]] - document - docs/vault/03 - Configuration/ssh-config.md
-- [[ssh-config]] - document - docs/vault/03 - Configuration/ssh-config.md
+- [[Build Process]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
+- [[Config Defaults (Baked In)]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
+- [[Directory Structure_2]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
+- [[Dockerfile — Bot (OpenClaw)]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
+- [[Dockerfile.bot]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
+- [[Image Labels (OCI)]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
+- [[Pre-installed Tools]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
+- [[Related Notes_53]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
+- [[Scripts Copied to `usrlocalbin`]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
+- [[Security Patches Applied at Build Time]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
+- [[TODO (from source)]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,11 +30,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 316]]
-- 1 edge to [[_COMMUNITY_Community 402]]
-- 1 edge to [[_COMMUNITY_Community 203]]
+- 1 edge to [[_COMMUNITY_Community 124]]
+- 1 edge to [[_COMMUNITY_Community 865]]
+- 1 edge to [[_COMMUNITY_Community 718]]
 
 ## Top bridge nodes
-- [[7. Deployment]] - degree 4, connects to 1 community
-- [[Key Configuration]] - degree 3, connects to 1 community
-- [[ssh-config]] - degree 2, connects to 1 community
+- [[Dockerfile — Bot (OpenClaw)]] - degree 13, connects to 3 communities

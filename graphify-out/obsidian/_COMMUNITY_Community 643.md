@@ -1,30 +1,30 @@
 ---
 type: community
-cohesion: 0.30
+cohesion: 0.13
 members: 15
 ---
 
 # Community 643
 
-**Cohesion:** 0.30 - loosely connected
+**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
-- [[._make_protocol()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.is_blocked()_1]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_all_upstreams_fail_sends_servfail()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_blocked_a_query_returns_zero_ip()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_blocked_aaaa_query_returns_null_ipv6()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_blocked_other_qtype_returns_nxdomain()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_datagram_received_schedules_handler()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_forwarded_query_relays_upstream_response()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_short_upstream_response_still_relayed()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_unparseable_short_query_no_servfail_sent()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[Blocklist stub that blocks every domain.]] - rationale - gateway/tests/test_dns_canvas_coverage.py
-- [[Build a minimal DNS query packet in wire format.]] - rationale - gateway/tests/test_dns_canvas_coverage.py
-- [[TestDNSForwarderProtocol]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[_BlockAll]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[build_dns_query()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[Advanced Integrations]] - document - docs/planning/RELEASE-PLAN.md
+- [[Browser Extension_1]] - document - docs/planning/RELEASE-PLAN.md
+- [[Command Center — CLITUI (moved from v1.0.0 on 2026-03-20)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Full Configuration System]] - document - docs/planning/RELEASE-PLAN.md
+- [[Infrastructure (moved from v0.9.0 on 2026-03-04)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Integration Hub]] - document - docs/planning/RELEASE-PLAN.md
+- [[Mac Mini Onboarding]] - document - docs/planning/RELEASE-PLAN.md
+- [[Multi-Host Deployment]] - document - docs/planning/RELEASE-PLAN.md
+- [[Multi-Platform Container Support]] - document - docs/planning/RELEASE-PLAN.md
+- [[Personal Infrastructure Monitor]] - document - docs/planning/RELEASE-PLAN.md
+- [[SSH Chat Interface (moved from v1.0.0 on 2026-03-20)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Secure Voice (moved from v0.9.0 on 2026-03-04)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Security Hardening_2]] - document - docs/planning/RELEASE-PLAN.md
+- [[iOSmacOS Shortcuts]] - document - docs/planning/RELEASE-PLAN.md
+- [[v1.3.0 — Platform Expansion (53 items)]] - document - docs/planning/RELEASE-PLAN.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,15 +34,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 557]]
-- 4 edges to [[_COMMUNITY_Community 24]]
-- 3 edges to [[_COMMUNITY_Community 142]]
-- 3 edges to [[_COMMUNITY_Community 424]]
-- 2 edges to [[_COMMUNITY_Community 718]]
+- 1 edge to [[_COMMUNITY_Community 250]]
 
 ## Top bridge nodes
-- [[TestDNSForwarderProtocol]] - degree 13, connects to 3 communities
-- [[_BlockAll]] - degree 9, connects to 3 communities
-- [[build_dns_query()]] - degree 11, connects to 2 communities
-- [[.test_forwarded_query_relays_upstream_response()]] - degree 5, connects to 2 communities
-- [[._make_protocol()]] - degree 10, connects to 1 community
+- [[v1.3.0 — Platform Expansion (53 items)]] - degree 15, connects to 1 community

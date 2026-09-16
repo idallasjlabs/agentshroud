@@ -1,23 +1,24 @@
 ---
 type: community
-cohesion: 0.25
-members: 8
+cohesion: 0.22
+members: 9
 ---
 
 # Community 973
 
-**Cohesion:** 0.25 - loosely connected
-**Members:** 8 nodes
+**Cohesion:** 0.22 - loosely connected
+**Members:** 9 nodes
 
 ## Members
-- [[Attack Teardowns How AgentShroud Stops RovoBlast and Cross-Turn Coordination Attacks]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
-- [[Honest gap]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
-- [[Part 1 — RovoBlast how AgentShroud's pipeline would have stopped it]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
-- [[Part 2 — Cross-turn correlation the differentiator, made concrete]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
-- [[What actually happened]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
-- [[What this document does NOT cover (explicitly out of scope here)]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
-- [[Where AgentShroud's pipeline breaks each stage]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
-- [[attack-teardowns-rovoblast-cross-turn]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
+- [[Key Endpoints_1]] - document - docs/vault/02 - Modules/Web & Dashboard/api.py.md
+- [[Purpose_190]] - document - docs/vault/02 - Modules/Web & Dashboard/api.py.md
+- [[Pydantic Models]] - document - docs/vault/02 - Modules/Web & Dashboard/api.py.md
+- [[Related Notes_65]] - document - docs/vault/02 - Modules/Web & Dashboard/api.py.md
+- [[Responsibilities_58]] - document - docs/vault/02 - Modules/Web & Dashboard/api.py.md
+- [[Runtime Engine Integration]] - document - docs/vault/02 - Modules/Web & Dashboard/api.py.md
+- [[Security_10]] - document - docs/vault/02 - Modules/Web & Dashboard/api.py.md
+- [[api.py_2]] - document - docs/vault/02 - Modules/Web & Dashboard/api.py.md
+- [[api.py_1]] - document - docs/vault/02 - Modules/Web & Dashboard/api.py.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -10,19 +10,19 @@ members: 13
 **Members:** 13 nodes
 
 ## Members
-- [[Configuration  Environment Variables_14]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
-- [[Default Service Configuration]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
-- [[Function Details_20]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
-- [[Key Classes  Functions_23]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
-- [[Purpose_141]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
-- [[Related_27]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
-- [[Responsibilities_25]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
-- [[compose_generator.py_2]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
-- [[compose_generator.py_1]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
-- [[gateway service]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
-- [[generate_apple_script(services)]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
-- [[generate_compose(services, runtime)]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
-- [[openclaw service]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
+- [[dot-agentsskillsi-tddSKILL]] - document - .agents/skills/i-tdd/SKILL.md
+- [[Anti-Patterns to Flag_19]] - document - .agents/skills/i-tdd/SKILL.md
+- [[Core Discipline Red → Green → Refactor]] - document - .agents/skills/i-tdd/SKILL.md
+- [[Glue Job Logic  →  test transformations outside Spark]] - document - .agents/skills/i-tdd/SKILL.md
+- [[PostgreSQL  →  `SAVEPOINT` + `ROLLBACK`]] - document - .agents/skills/i-tdd/SKILL.md
+- [[Python  Boto3  AWS  →  `moto`]] - document - .agents/skills/i-tdd/SKILL.md
+- [[Role_76]] - document - .agents/skills/i-tdd/SKILL.md
+- [[Rules_21]] - document - .agents/skills/i-tdd/SKILL.md
+- [[Skill Test-Driven Development (TDD)]] - document - .agents/skills/i-tdd/SKILL.md
+- [[Stack-Specific Testing Patterns]] - document - .agents/skills/i-tdd/SKILL.md
+- [[Step Function Input Validation]] - document - .agents/skills/i-tdd/SKILL.md
+- [[Test Structure_4]] - document - .agents/skills/i-tdd/SKILL.md
+- [[Zabbix API  →  `unittest.mock`]] - document - .agents/skills/i-tdd/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

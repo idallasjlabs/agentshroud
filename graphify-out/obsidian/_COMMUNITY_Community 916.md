@@ -1,24 +1,25 @@
 ---
 type: community
-cohesion: 0.42
-members: 9
+cohesion: 0.20
+members: 10
 ---
 
 # Community 916
 
-**Cohesion:** 0.42 - moderately connected
-**Members:** 9 nodes
+**Cohesion:** 0.20 - loosely connected
+**Members:** 10 nodes
 
 ## Members
-- [[_real_err()]] - code - gateway/tests/test_egress_callback_stale.py
-- [[_stale_callback_err()]] - code - gateway/tests/test_egress_callback_stale.py
-- [[_stale_edit_err()]] - code - gateway/tests/test_egress_callback_stale.py
-- [[test_answer_callback_real_error_still_logs_error()]] - code - gateway/tests/test_egress_callback_stale.py
-- [[test_answer_callback_stale_logs_debug_not_error()]] - code - gateway/tests/test_egress_callback_stale.py
-- [[test_edit_decision_message_real_error_still_logs_error()]] - code - gateway/tests/test_egress_callback_stale.py
-- [[test_edit_decision_message_stale_logs_debug_not_error()]] - code - gateway/tests/test_egress_callback_stale.py
-- [[test_egress_callback_stale.py]] - code - gateway/tests/test_egress_callback_stale.py
-- [[test_stale_detectors()]] - code - gateway/tests/test_egress_callback_stale.py
+- [[dot-test_export_config_delegates_to_get()]] - code - gateway/tests/test_web_api_coverage.py
+- [[dot-test_get_config_reads_yaml()]] - code - gateway/tests/test_web_api_coverage.py
+- [[dot-test_get_config_when_file_missing()]] - code - gateway/tests/test_web_api_coverage.py
+- [[dot-test_import_config_delegates_to_update()]] - code - gateway/tests/test_web_api_coverage.py
+- [[dot-test_update_config_rejects_unknown_keys()]] - code - gateway/tests/test_web_api_coverage.py
+- [[dot-test_update_config_round_trips_bots_key()]] - code - gateway/tests/test_web_api_coverage.py
+- [[dot-test_update_config_without_existing_file_skips_backup()]] - code - gateway/tests/test_web_api_coverage.py
+- [[dot-test_update_config_writes_yaml_and_backs_up()]] - code - gateway/tests/test_web_api_coverage.py
+- [[SCRUM-107 the `bots` top-level key must be allowed through PUT         apicon]] - rationale - gateway/tests/test_web_api_coverage.py
+- [[TestConfig_1]] - code - gateway/tests/test_web_api_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,12 +29,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Community 363]]
-- 4 edges to [[_COMMUNITY_Community 1095]]
+- 3 edges to [[_COMMUNITY_Community 45]]
+- 1 edge to [[_COMMUNITY_Community 42]]
 
 ## Top bridge nodes
-- [[test_egress_callback_stale.py]] - degree 11, connects to 2 communities
-- [[test_stale_detectors()]] - degree 6, connects to 1 community
-- [[test_answer_callback_real_error_still_logs_error()]] - degree 3, connects to 1 community
-- [[test_answer_callback_stale_logs_debug_not_error()]] - degree 3, connects to 1 community
-- [[test_edit_decision_message_real_error_still_logs_error()]] - degree 3, connects to 1 community
+- [[TestConfig_1]] - degree 12, connects to 2 communities

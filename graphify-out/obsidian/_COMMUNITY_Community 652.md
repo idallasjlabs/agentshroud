@@ -1,29 +1,30 @@
 ---
 type: community
-cohesion: 0.14
-members: 14
+cohesion: 0.13
+members: 15
 ---
 
 # Community 652
 
-**Cohesion:** 0.14 - loosely connected
-**Members:** 14 nodes
+**Cohesion:** 0.13 - loosely connected
+**Members:** 15 nodes
 
 ## Members
-- [[AgentShroud Blue Team Security Auditor_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[Audit Procedure_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[Critical Rules_10]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[Heat Map Legend_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[Infrastructure_9]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[Loss Categories_4]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[Methodology_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[Output Format_40]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[Phase 1 Code-Level Module Audit_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[Phase 2 Heat Map Reconstruction_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[Phase 3 Integration Gap Analysis_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[Phase 4 Configuration Audit_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[Phase 5 Steve Hay's Specific Probes_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[Unsafe Control Actions (UCAs)_3]] - document - skills/custom/agentshroud-blueteam/SKILL.md
+- [[ContainerConfig Defaults]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
+- [[Environment Variables_13]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
+- [[Function Details_28]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
+- [[IsolationVerifier.generate_compose()]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
+- [[IsolationVerifier.verify_network_isolation()]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
+- [[IsolationVerifier.verify_shared_nothing()]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
+- [[IsolationVerifier.verify_volume_isolation()]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
+- [[Key Classes  Functions_30]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
+- [[Mode Enforce vs Monitor_9]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
+- [[Purpose_157]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
+- [[Related_34]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
+- [[Responsibilities_32]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
+- [[Threat Model_18]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
+- [[agent_isolation.py_2]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
+- [[agent_isolation.py_1]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,7 +34,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 46]]
+- 1 edge to [[_COMMUNITY_Community 670]]
 
 ## Top bridge nodes
-- [[AgentShroud Blue Team Security Auditor_3]] - degree 6, connects to 1 community
+- [[agent_isolation.py_2]] - degree 11, connects to 1 community

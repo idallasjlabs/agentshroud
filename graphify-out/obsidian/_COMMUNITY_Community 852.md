@@ -1,25 +1,26 @@
 ---
 type: community
-cohesion: 0.22
-members: 10
+cohesion: 0.18
+members: 11
 ---
 
 # Community 852
 
-**Cohesion:** 0.22 - loosely connected
-**Members:** 10 nodes
+**Cohesion:** 0.18 - loosely connected
+**Members:** 11 nodes
 
 ## Members
-- [[CLI `resolve_model.py modelprovider`. Defaults to 'model'.]] - rationale - docker/bots/hermes/resolve_model.py
-- [[Return the Hermes provider key for a bare model name.      Local models (qwenll]] - rationale - docker/bots/hermes/resolve_model.py
-- [[Strip a known provider prefix from a model ref, leaving the bare model name.]] - rationale - docker/bots/hermes/resolve_model.py
-- [[_resolve_from_env()]] - code - docker/bots/hermes/resolve_model.py
-- [[main()_5]] - code - docker/bots/hermes/resolve_model.py
-- [[provider_for_model()]] - code - docker/bots/hermes/resolve_model.py
-- [[resolve_model.py]] - code - docker/bots/hermes/resolve_model.py
-- [[strip_provider_prefix()]] - code - docker/bots/hermes/resolve_model.py
-- [[test_provider_for_model()]] - code - gateway/tests/test_hermes_model_resolver.py
-- [[test_strip_provider_prefix()]] - code - gateway/tests/test_hermes_model_resolver.py
+- [[Configuration  Environment Variables_30]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
+- [[Function Details_50]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
+- [[Key Classes  Functions_53]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
+- [[Purpose_184]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
+- [[Related_57]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
+- [[Responsibilities_55]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
+- [[Security Limitation Warning]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
+- [[SidecarScanner.get_stats()]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
+- [[SidecarScanner.scan(request)]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
+- [[sidecar.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
+- [[sidecar.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/sidecar.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,16 +28,3 @@ members: 10
 TABLE source_file, type FROM #community/Community_852
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 7 edges to [[_COMMUNITY_Community 179]]
-- 1 edge to [[_COMMUNITY_Community 126]]
-- 1 edge to [[_COMMUNITY_Community 860]]
-- 1 edge to [[_COMMUNITY_Community 476]]
-
-## Top bridge nodes
-- [[resolve_model.py]] - degree 9, connects to 4 communities
-- [[provider_for_model()]] - degree 4, connects to 1 community
-- [[strip_provider_prefix()]] - degree 4, connects to 1 community
-- [[_resolve_from_env()]] - degree 3, connects to 1 community
-- [[test_provider_for_model()]] - degree 2, connects to 1 community

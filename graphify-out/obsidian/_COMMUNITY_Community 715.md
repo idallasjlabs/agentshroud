@@ -1,28 +1,29 @@
 ---
 type: community
-cohesion: 0.15
-members: 13
+cohesion: 0.14
+members: 14
 ---
 
 # Community 715
 
-**Cohesion:** 0.15 - loosely connected
-**Members:** 13 nodes
+**Cohesion:** 0.14 - loosely connected
+**Members:** 14 nodes
 
 ## Members
-- [[Attaching files (`--file`)]] - document - skills/openclaw/oracle/SKILL.md
-- [[Commands (preferred)]] - document - skills/openclaw/oracle/SKILL.md
-- [[Engines (API vs browser)]] - document - skills/openclaw/oracle/SKILL.md
-- [[Golden path]] - document - skills/openclaw/oracle/SKILL.md
-- [[Main use case (browser, GPT‑5.2 Pro)]] - document - skills/openclaw/oracle/SKILL.md
-- [[Prompt template (high signal)]] - document - skills/openclaw/oracle/SKILL.md
-- [[SKILL_214]] - document - skills/openclaw/mcporter/SKILL.md
-- [[SKILL_223]] - document - skills/openclaw/oracle/SKILL.md
-- [[Safety_3]] - document - skills/openclaw/oracle/SKILL.md
-- [[Sessions + slugs]] - document - skills/openclaw/oracle/SKILL.md
-- [[mcporter]] - document - skills/openclaw/mcporter/SKILL.md
-- [[oracle — best use]] - document - skills/openclaw/oracle/SKILL.md
-- [[“Exhaustive prompt” restoration pattern]] - document - skills/openclaw/oracle/SKILL.md
+- [[dot-manager()_1]] - code - gateway/tests/test_key_rotation.py
+- [[dot-sample_credential()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-test_get_credential_status()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-test_get_health_score_all_healthy()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-test_get_health_score_mixed_states()]] - code - gateway/tests/test_key_rotation.py
+- [[dot-test_register_credential()]] - code - gateway/tests/test_key_rotation.py
+- [[Create a manager with test configuration.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Create a sample credential for testing.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test credential registration.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test credential status reporting.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test health score calculation with all healthy credentials.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test health score with mixed credential states.]] - rationale - gateway/tests/test_key_rotation.py
+- [[Test key rotation manager functionality.]] - rationale - gateway/tests/test_key_rotation.py
+- [[TestKeyRotationManager]] - code - gateway/tests/test_key_rotation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,3 +31,18 @@ members: 13
 TABLE source_file, type FROM #community/Community_715
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 4 edges to [[_COMMUNITY_Community 544]]
+- 3 edges to [[_COMMUNITY_Community 291]]
+- 2 edges to [[_COMMUNITY_Community 133]]
+- 2 edges to [[_COMMUNITY_Community 232]]
+- 1 edge to [[_COMMUNITY_Community 441]]
+- 1 edge to [[_COMMUNITY_Community 848]]
+
+## Top bridge nodes
+- [[TestKeyRotationManager]] - degree 15, connects to 6 communities
+- [[dot-manager()_1]] - degree 4, connects to 2 communities
+- [[dot-sample_credential()]] - degree 3, connects to 1 community
+- [[dot-test_get_health_score_all_healthy()]] - degree 3, connects to 1 community
+- [[dot-test_get_health_score_mixed_states()]] - degree 3, connects to 1 community

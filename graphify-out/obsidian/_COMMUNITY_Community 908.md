@@ -1,24 +1,25 @@
 ---
 type: community
-cohesion: 0.22
-members: 9
+cohesion: 0.20
+members: 10
 ---
 
 # Community 908
 
-**Cohesion:** 0.22 - loosely connected
-**Members:** 9 nodes
+**Cohesion:** 0.20 - loosely connected
+**Members:** 10 nodes
 
 ## Members
-- [[3. Remaining Work — Prioritized by Value]] - document - docs/planning/reviews/phase-review-2026-02-23.md
-- [[Deprioritized (complexity without proportional value)]] - document - docs/planning/reviews/phase-review-2026-03-03.md
-- [[Tier 1 Critical (directly increases real security)]] - document - docs/planning/reviews/phase-review-2026-03-03.md
-- [[Tier 2 Important (hardens existing security)]] - document - docs/planning/reviews/phase-review-2026-03-03.md
-- [[Tier 3 Nice to Have (adds value but not critical)]] - document - docs/planning/reviews/phase-review-2026-03-03.md
-- [[📊 P2 — Operational Excellence (Medium Value)]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[🔧 P1 — Enhanced Security Capabilities (High Value)]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[🔬 P3 — Advanced Features (Lower Priority)]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[🚨 P0 — Critical Security Gaps (Immediate)]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
+- [[dot-test_clean_code_passes()]] - code - gateway/tests/test_credential_isolation.py
+- [[dot-test_clean_content_passes()_1]] - code - gateway/tests/test_credential_isolation.py
+- [[dot-test_detect_1password_token()]] - code - gateway/tests/test_credential_isolation.py
+- [[dot-test_detect_aws_key()]] - code - gateway/tests/test_credential_isolation.py
+- [[dot-test_detect_github_token()]] - code - gateway/tests/test_credential_isolation.py
+- [[dot-test_detect_google_oauth_secret()]] - code - gateway/tests/test_credential_isolation.py
+- [[dot-test_detect_jwt_token()]] - code - gateway/tests/test_credential_isolation.py
+- [[dot-test_detect_openai_key()]] - code - gateway/tests/test_credential_isolation.py
+- [[Test that credential patterns are detected in outbound content.]] - rationale - gateway/tests/test_credential_isolation.py
+- [[TestCredentialLeakDetection]] - code - gateway/tests/test_credential_isolation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,7 +29,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 133]]
+- 2 edges to [[_COMMUNITY_Community 620]]
+- 1 edge to [[_COMMUNITY_Community 1108]]
 
 ## Top bridge nodes
-- [[3. Remaining Work — Prioritized by Value]] - degree 9, connects to 1 community
+- [[TestCredentialLeakDetection]] - degree 12, connects to 2 communities

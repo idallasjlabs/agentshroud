@@ -1,31 +1,32 @@
 ---
 type: community
 cohesion: 0.12
-members: 16
+members: 17
 ---
 
 # Community 555
 
 **Cohesion:** 0.12 - loosely connected
-**Members:** 16 nodes
+**Members:** 17 nodes
 
 ## Members
-- [[Code Style]] - document - CONTRIBUTING.md
-- [[Code of Conduct]] - document - CONTRIBUTING.md
-- [[Contributing to AgentShroud™]] - document - CONTRIBUTING.md
-- [[Development Setup]] - document - CONTRIBUTING.md
-- [[Implementation Status_3]] - document - scripts/README.md
-- [[Maintenance Scripts]] - document - scripts/README.md
-- [[Pull Request Process]] - document - CONTRIBUTING.md
-- [[Questions_1]] - document - CONTRIBUTING.md
-- [[README_129]] - document - scripts/README.md
-- [[Requirements]] - document - CONTRIBUTING.md
-- [[Response SLA]] - document - CONTRIBUTING.md
-- [[Scripts (to be implemented throughout development)]] - document - scripts/README.md
-- [[Security Scripts]] - document - scripts/README.md
-- [[Test Guidelines]] - document - CONTRIBUTING.md
-- [[Utility Scripts]] - document - scripts/README.md
-- [[What to Contribute]] - document - CONTRIBUTING.md
+- [[About Skills]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Body]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Frontmatter]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Learn Proven Design Patterns]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Skill Creation Process]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Skill Creator]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Skill Naming]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Start with Reusable Skill Contents]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Step 1 Understanding the Skill with Concrete Examples]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Step 2 Planning the Reusable Skill Contents]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Step 3 Initializing the Skill]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Step 4 Edit the Skill]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Step 5 Packaging a Skill]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Step 6 Iterate]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Update SKILL]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[What Skills Provide]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[skill-creatorSKILL]] - document - skills/openclaw/skill-creator/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,7 +36,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 111]]
+- 1 edge to [[_COMMUNITY_Community 543]]
+- 1 edge to [[_COMMUNITY_Community 854]]
+- 1 edge to [[_COMMUNITY_Community 811]]
 
 ## Top bridge nodes
-- [[Contributing to AgentShroud™]] - degree 9, connects to 1 community
+- [[skill-creatorSKILL]] - degree 3, connects to 2 communities
+- [[Skill Creator]] - degree 4, connects to 1 community

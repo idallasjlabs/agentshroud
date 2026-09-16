@@ -1,23 +1,24 @@
 ---
 type: community
-cohesion: 0.25
-members: 8
+cohesion: 0.22
+members: 9
 ---
 
 # Community 931
 
-**Cohesion:** 0.25 - loosely connected
-**Members:** 8 nodes
+**Cohesion:** 0.22 - loosely connected
+**Members:** 9 nodes
 
 ## Members
-- [[ANTHROPIC_BASE_URL_1]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
-- [[Description_2]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
-- [[How It Works_2]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
-- [[Related Notes_30]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
-- [[SDK Patch]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
-- [[Set In]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
-- [[Value_1]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
-- [[Why It's Critical]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
+- [[Action Feed]] - document - dashboard/README.md
+- [[AgentShroud Dashboard]] - document - dashboard/README.md
+- [[Components (to be implemented in Week 2)]] - document - dashboard/README.md
+- [[Data Ledger Viewer]] - document - dashboard/README.md
+- [[Features_5]] - document - dashboard/README.md
+- [[Implementation Status_3]] - document - dashboard/README.md
+- [[Memory Browser]] - document - dashboard/README.md
+- [[Network Inspector]] - document - dashboard/README.md
+- [[Tech Stack_1]] - document - dashboard/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,7 +28,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 822]]
+- 1 edge to [[_COMMUNITY_Community 350]]
+- 1 edge to [[_COMMUNITY_Community 834]]
 
 ## Top bridge nodes
-- [[ANTHROPIC_BASE_URL_1]] - degree 8, connects to 1 community
+- [[Features_5]] - degree 6, connects to 1 community
+- [[AgentShroud Dashboard]] - degree 5, connects to 1 community

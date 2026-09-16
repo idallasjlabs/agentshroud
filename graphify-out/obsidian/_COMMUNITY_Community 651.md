@@ -1,29 +1,30 @@
 ---
 type: community
-cohesion: 0.14
-members: 14
+cohesion: 0.13
+members: 15
 ---
 
 # Community 651
 
-**Cohesion:** 0.14 - loosely connected
-**Members:** 14 nodes
+**Cohesion:** 0.13 - loosely connected
+**Members:** 15 nodes
 
 ## Members
-- [[Atlas README]] - document - .agents/skills/i-atlas/README.md
-- [[Atlas — Curriculum Architect_6]] - document - .agents/skills/i-atlas/SKILL.md
-- [[Gleim CPA Review (OKE Channel)]] - concept - .agents/skills/i-atlas/SKILL.md
-- [[Input Requirements_2]] - document - .agents/skills/i-atlas/SKILL.md
-- [[Output Format_1]] - document - .agents/skills/i-atlas/SKILL.md
-- [[Persona_1]] - document - .agents/skills/i-atlas/SKILL.md
-- [[Quality Checklist_2]] - document - .agents/skills/i-atlas/SKILL.md
-- [[Role_6]] - document - .agents/skills/i-atlas/SKILL.md
-- [[SKILL_6]] - document - .agents/skills/i-atlas/SKILL.md
-- [[System Prompt_1]] - document - .agents/skills/i-atlas/SKILL.md
-- [[User Prompt Template_1]] - document - .agents/skills/i-atlas/SKILL.md
-- [[User Prompt Template — OKE Channel]] - document - .agents/skills/i-atlas/SKILL.md
-- [[Vulcan README]] - document - .agents/skills/i-vulcan/README.md
-- [[Vulcan Subject Matter Auditor Skill]] - document - .agents/skills/i-vulcan/SKILL.md
+- [[Configuration  Environment Variables_15]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[Docker Security Options Used]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[DockerEngine._cmd(args, kwargs)]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[DockerEngine.compose_up(file, detach)]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[DockerEngine.health_check()]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[DockerEngine.inspect(name)]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[DockerEngine.ps(all)]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[DockerEngine.run(image, name, , ports, volumes, networks, env, privileged, caps, seccomp, detach, read_only, no_new_privileges)]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[Function Details_27]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[Key Classes  Functions_29]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[Purpose_156]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[Related_33]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[Responsibilities_31]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[docker_engine.py_2]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
+- [[docker_engine.py_1]] - document - docs/vault/02 - Modules/Runtime/docker_engine.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,13 +32,3 @@ members: 14
 TABLE source_file, type FROM #community/Community_651
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 1007]]
-- 1 edge to [[_COMMUNITY_Community 1033]]
-- 1 edge to [[_COMMUNITY_Community 697]]
-- 1 edge to [[_COMMUNITY_Community 601]]
-
-## Top bridge nodes
-- [[Atlas — Curriculum Architect_6]] - degree 15, connects to 3 communities
-- [[Vulcan Subject Matter Auditor Skill]] - degree 3, connects to 1 community

@@ -1,23 +1,24 @@
 ---
 type: community
-cohesion: 0.25
-members: 8
+cohesion: 0.31
+members: 9
 ---
 
 # Community 959
 
-**Cohesion:** 0.25 - loosely connected
-**Members:** 8 nodes
+**Cohesion:** 0.31 - loosely connected
+**Members:** 9 nodes
 
 ## Members
-- [[Hermes — Reference Verifier_2]] - document - docker/config/openclaw/skills/i-hermes/SKILL.md
-- [[Input Requirements_25]] - document - docker/config/openclaw/skills/i-hermes/SKILL.md
-- [[Output Format_30]] - document - docker/config/openclaw/skills/i-hermes/SKILL.md
-- [[Persona_19]] - document - docker/config/openclaw/skills/i-hermes/SKILL.md
-- [[Quality Checklist_22]] - document - docker/config/openclaw/skills/i-hermes/SKILL.md
-- [[Role_88]] - document - docker/config/openclaw/skills/i-hermes/SKILL.md
-- [[SKILL_151]] - document - docker/config/openclaw/skills/i-hermes/SKILL.md
-- [[System Prompt_19]] - document - docker/config/openclaw/skills/i-hermes/SKILL.md
+- [[confirm()]] - code - docker/scripts/killswitch.sh
+- [[killswitch.sh]] - code - docker/scripts/killswitch.sh
+- [[killswitch.sh script]] - code - docker/scripts/killswitch.sh
+- [[op-auth-common.sh]] - code - docker/scripts/op-auth-common.sh
+- [[op-auth-common.sh script]] - code - docker/scripts/op-auth-common.sh
+- [[op-wrapper.sh]] - code - docker/scripts/op-wrapper.sh
+- [[op-wrapper.sh script]] - code - docker/scripts/op-wrapper.sh
+- [[op_authenticate()]] - code - docker/scripts/op-auth-common.sh
+- [[usage()_7]] - code - docker/scripts/killswitch.sh
 
 ## Live Query (requires Dataview plugin)
 

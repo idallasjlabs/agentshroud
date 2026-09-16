@@ -1,23 +1,24 @@
 ---
 type: community
-cohesion: 0.25
-members: 8
+cohesion: 0.22
+members: 9
 ---
 
 # Community 972
 
-**Cohesion:** 0.25 - loosely connected
-**Members:** 8 nodes
+**Cohesion:** 0.22 - loosely connected
+**Members:** 9 nodes
 
 ## Members
-- [[8. Performance & Testing]] - document - docs/papers/agentshroud-whitepaper.md
-- [[8.1 Test Coverage]] - document - docs/papers/agentshroud-whitepaper.md
-- [[8.2 Resource Footprint]] - document - docs/papers/agentshroud-whitepaper.md
-- [[8.3 Latency]] - document - docs/papers/agentshroud-whitepaper.md
-- [[Docker Test]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[GitHub Integration Test]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[Phase 10 Validation Checklist]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
-- [[System Verification]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[AgentShroud v1.2.0 — Red Team Assessment]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[Methodology note]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[RT-00 — Tool inventory disclosure]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[RT-MB4 — Hermes cron job injection via jobs.yaml]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[red-team-assessment-v1.2.0]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[§3 — SAST Scan Summary]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[§4 — Findings Summary]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[§5 — Acceptance Rationales (Signed Off)]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[§6 — Regression Test Index]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,9 +28,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 402]]
-- 1 edge to [[_COMMUNITY_Community 349]]
+- 1 edge to [[_COMMUNITY_Community 1045]]
+- 1 edge to [[_COMMUNITY_Community 1119]]
+- 1 edge to [[_COMMUNITY_Community 971]]
 
 ## Top bridge nodes
-- [[8. Performance & Testing]] - degree 5, connects to 1 community
-- [[Phase 10 Validation Checklist]] - degree 5, connects to 1 community
+- [[AgentShroud v1.2.0 — Red Team Assessment]] - degree 8, connects to 2 communities
+- [[red-team-assessment-v1.2.0]] - degree 2, connects to 1 community

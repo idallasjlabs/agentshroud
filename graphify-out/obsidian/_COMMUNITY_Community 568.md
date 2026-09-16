@@ -10,22 +10,22 @@ members: 16
 **Members:** 16 nodes
 
 ## Members
-- [[1. Clone the Repository]] - document - docs/operations/linux.md
-- [[2. Install Docker]] - document - docs/operations/linux.md
-- [[3. Set Up Secrets]] - document - docs/operations/linux.md
-- [[4. Configure AgentShroud]] - document - docs/operations/linux.md
-- [[5. Build and Start]] - document - docs/operations/linux.md
-- [[6. Verify]] - document - docs/operations/linux.md
-- [[Architecture Notes]] - document - docs/operations/linux.md
-- [[Deploying AgentShroud on Linux (x86_64  aarch64)]] - document - docs/operations/linux.md
-- [[Firewall]] - document - docs/operations/linux.md
-- [[Fresh Install]] - document - docs/operations/linux.md
-- [[Non-Root User]] - document - docs/operations/linux.md
-- [[Prerequisites_4]] - document - docs/operations/linux.md
-- [[Systemd Service for Auto-Start]] - document - docs/operations/linux.md
-- [[Updating to Latest Release]] - document - docs/operations/linux.md
-- [[VPS Deployment Notes]] - document - docs/operations/linux.md
-- [[linux]] - document - docs/operations/linux.md
+- [[1. URL Forwarder]] - document - browser-extension/README.md
+- [[2. Page Clipper]] - document - browser-extension/README.md
+- [[3. Form Fill Request (Reverse Flow)]] - document - browser-extension/README.md
+- [[4. Tab Session Exporter]] - document - browser-extension/README.md
+- [[5. Reading List Queue]] - document - browser-extension/README.md
+- [[Browser Extension]] - document - browser-extension/README.md
+- [[Browser Support]] - document - browser-extension/README.md
+- [[Features_2]] - document - browser-extension/README.md
+- [[ForwardRequest handler (forward endpoint)]] - code - gateway/ingest_api/routes/forward.py
+- [[Gateway wiring]] - document - browser-extension/README.md
+- [[Privacy Features]] - document - browser-extension/README.md
+- [[Safari_1]] - document - browser-extension/README.md
+- [[Structure_1]] - document - browser-extension/README.md
+- [[Tests_2]] - document - browser-extension/README.md
+- [[browser-extension package.json (Jest test harness)]] - code - browser-extension/package.json
+- [[browser-extensionREADME]] - document - browser-extension/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,3 +33,11 @@ members: 16
 TABLE source_file, type FROM #community/Community_568
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 445]]
+- 1 edge to [[_COMMUNITY_Community 676]]
+
+## Top bridge nodes
+- [[Browser Extension]] - degree 6, connects to 1 community
+- [[browser-extensionREADME]] - degree 4, connects to 1 community

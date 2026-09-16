@@ -1,23 +1,23 @@
 ---
 type: community
-cohesion: 0.29
+cohesion: 0.25
 members: 8
 ---
 
 # Community 975
 
-**Cohesion:** 0.29 - loosely connected
+**Cohesion:** 0.25 - loosely connected
 **Members:** 8 nodes
 
 ## Members
-- [[Credential Isolation via op-proxy — Gateway as Sole 1Password Broker]] - concept - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
-- [[Network Lockdown FINAL Phase — agentshroud-isolated internaltrue + HTTP_PROXY]] - concept - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
-- [[OpenClaw Threat Model Prompt Injection, Data Exfiltration, Misconfigured Instance]] - concept - docs/planning/v0.8/SECURITY_PLAN.md
-- [[Planning Docs Index (redteam, reviews, recovery, version buckets)]] - document - docs/planning/README.md
-- [[Recovery Plan v0.4.0 — Systematic Stabilization]] - document - docs/planning/recovery/RECOVERY_PLAN.md
-- [[Security Hardening Plan Reset — Real Agent Containment v0.8]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
-- [[Security Plan v0.8 — Wikipedia Threat Coverage Matrix]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[XML Function-Call Block Filter (filter_xml_blocks) — Response Sanitization]] - concept - docs/planning/recovery/RECOVERY_PLAN.md
+- [[Contents]] - document - docs/vault/03 - Configuration/pytest.ini.md
+- [[Coverage Requirements_4]] - document - docs/vault/03 - Configuration/pytest.ini.md
+- [[Purpose_191]] - document - docs/vault/03 - Configuration/pytest.ini.md
+- [[Related Notes_66]] - document - docs/vault/03 - Configuration/pytest.ini.md
+- [[Test Execution]] - document - docs/vault/03 - Configuration/pytest.ini.md
+- [[Test Locations]] - document - docs/vault/03 - Configuration/pytest.ini.md
+- [[Why `tmppytest_cache`]] - document - docs/vault/03 - Configuration/pytest.ini.md
+- [[pytest.ini_1]] - document - docs/vault/03 - Configuration/pytest.ini.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,3 +25,9 @@ members: 8
 TABLE source_file, type FROM #community/Community_975
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 266]]
+
+## Top bridge nodes
+- [[pytest.ini_1]] - degree 8, connects to 1 community

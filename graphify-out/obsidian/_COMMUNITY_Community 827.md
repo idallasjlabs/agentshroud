@@ -1,25 +1,26 @@
 ---
 type: community
-cohesion: 0.20
-members: 10
+cohesion: 0.18
+members: 11
 ---
 
 # Community 827
 
-**Cohesion:** 0.20 - loosely connected
-**Members:** 10 nodes
+**Cohesion:** 0.18 - loosely connected
+**Members:** 11 nodes
 
 ## Members
-- [[1. Schema Validation]] - document - .agents/skills/i-data/SKILL.md
-- [[2. Partition Coverage]] - document - .agents/skills/i-data/SKILL.md
-- [[3. Data Quality Checks]] - document - .agents/skills/i-data/SKILL.md
-- [[4. Cross-Site Comparison]] - document - .agents/skills/i-data/SKILL.md
-- [[Critical Cost Control]] - document - .agents/skills/i-data/SKILL.md
-- [[Role_12]] - document - .agents/skills/i-data/SKILL.md
-- [[SKILL_18]] - document - .agents/skills/i-data/SKILL.md
-- [[Skill Data Validation (DATA-VAL)]] - document - .agents/skills/i-data/SKILL.md
-- [[Test Data Validation Pattern]] - document - .agents/skills/i-data/SKILL.md
-- [[Validation Layers]] - document - .agents/skills/i-data/SKILL.md
+- [[dot-agentsskillsi-daedalusSKILL]] - document - .agents/skills/i-daedalus/SKILL.md
+- [[Daedalus — Concept Illustrator_3]] - document - .agents/skills/i-daedalus/SKILL.md
+- [[Input Requirements_17]] - document - .agents/skills/i-daedalus/SKILL.md
+- [[Output Format_33]] - document - .agents/skills/i-daedalus/SKILL.md
+- [[Persona_12]] - document - .agents/skills/i-daedalus/SKILL.md
+- [[Quality Checklist_14]] - document - .agents/skills/i-daedalus/SKILL.md
+- [[Role_86]] - document - .agents/skills/i-daedalus/SKILL.md
+- [[System Prompt_12]] - document - .agents/skills/i-daedalus/SKILL.md
+- [[architecture.puml (PlantUML)]] - document - .agents/skills/i-daedalus/SKILL.md
+- [[diagramsREADME_1]] - document - .agents/skills/i-daedalus/SKILL.md
+- [[flow.mmd (Mermaid)]] - document - .agents/skills/i-daedalus/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

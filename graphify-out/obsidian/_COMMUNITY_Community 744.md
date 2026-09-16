@@ -1,27 +1,28 @@
 ---
 type: community
-cohesion: 0.17
-members: 12
+cohesion: 0.15
+members: 13
 ---
 
 # Community 744
 
-**Cohesion:** 0.17 - loosely connected
-**Members:** 12 nodes
+**Cohesion:** 0.15 - loosely connected
+**Members:** 13 nodes
 
 ## Members
-- [[Allowlist]] - document - docker/bot-capabilities.md
-- [[Already in your environment at startup]] - document - docker/bot-capabilities.md
-- [[Credential Isolation — Gateway op-proxy (ACTIVE)]] - document - docker/bot-capabilities.md
-- [[Credential flow]] - document - docker/bot-capabilities.md
-- [[Credentials set at startup (already in environment)]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[How to retrieve a credential]] - document - docker/bot-capabilities.md
-- [[How to retrieve a credential at runtime]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[Known working credentials]] - document - docker/bot-capabilities.md
-- [[What NEVER to do_1]] - document - docker/bot-capabilities.md
-- [[What NEVER to do]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[You do NOT have direct 1Password access]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
-- [[🏗️ Credential Architecture — How Secrets Are Retrieved]] - document - docker/SYSTEM-INSTRUCTIONS-SECURITY.md
+- [[Config Keys Read_7]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
+- [[Environment Variables Used_8]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
+- [[Event Types Emitted by main.py]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
+- [[EventBus.emit(event)]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
+- [[Function Details_43]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
+- [[Imports From  Exports To_7]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
+- [[Key Classes  Functions_45]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
+- [[Known Issues  Notes_8]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
+- [[Purpose_175]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
+- [[Related_49]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
+- [[Responsibilities_46]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
+- [[event_bus.py_2]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
+- [[make_event(event_type, summary, details, severity)]] - document - docs/vault/02 - Modules/Gateway Core/event_bus.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,9 +32,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 558]]
-- 1 edge to [[_COMMUNITY_Community 1017]]
+- 1 edge to [[_COMMUNITY_Approval Routing & Event Bus]]
 
 ## Top bridge nodes
-- [[Credential Isolation — Gateway op-proxy (ACTIVE)]] - degree 7, connects to 1 community
-- [[🏗️ Credential Architecture — How Secrets Are Retrieved]] - degree 6, connects to 1 community
+- [[event_bus.py_2]] - degree 11, connects to 1 community

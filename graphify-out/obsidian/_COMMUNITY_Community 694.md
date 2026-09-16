@@ -1,28 +1,29 @@
 ---
 type: community
-cohesion: 0.15
-members: 13
+cohesion: 0.14
+members: 14
 ---
 
 # Community 694
 
-**Cohesion:** 0.15 - loosely connected
-**Members:** 13 nodes
+**Cohesion:** 0.14 - loosely connected
+**Members:** 14 nodes
 
 ## Members
-- [[4. Environment Variables]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
-- [[All Environment Variables (reference)]] - document - docs/vault/03 - Configuration/All Environment Variables.md
-- [[Bot Container (`agentshroud-bot`)_1]] - document - docs/vault/03 - Configuration/All Environment Variables.md
-- [[Derived (set at runtime by `config.py`)]] - document - docs/vault/03 - Configuration/All Environment Variables.md
-- [[Gateway Container (`agentshroud-gateway`)_1]] - document - docs/vault/03 - Configuration/All Environment Variables.md
-- [[Loaded at Startup via 1Password op-proxy]] - document - docs/vault/03 - Configuration/All Environment Variables.md
-- [[Optional  Runtime]] - document - docs/vault/03 - Configuration/All Environment Variables.md
-- [[Related Notes_16]] - document - docs/vault/03 - Configuration/All Environment Variables.md
-- [[Required]] - document - docs/vault/03 - Configuration/All Environment Variables.md
-- [[Required Secrets (as Docker secret files)]] - document - docs/vault/03 - Configuration/All Environment Variables.md
-- [[Security Notes_7]] - document - docs/vault/03 - Configuration/All Environment Variables.md
-- [[Set in `docker-compose.yml`]] - document - docs/vault/03 - Configuration/All Environment Variables.md
-- [[Summary_22]] - document - docs/vault/03 - Configuration/All Environment Variables.md
+- [[1. Multi-Runtime Testing (Podman + Apple Containers)]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
+- [[2. Multi-Host Deployment Orchestration]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
+- [[3. ARM32  Low-Resource Support]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
+- [[4. Compliance & Standards Alignment]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
+- [[4.1 IEC 62443 (Industrial Automation Security)]] - document - docs/papers/agentshroud-whitepaper.md
+- [[4.2 EU AI Act]] - document - docs/papers/agentshroud-whitepaper.md
+- [[4.3 NIST AI Risk Management Framework (AI RMF)]] - document - docs/papers/agentshroud-whitepaper.md
+- [[4a. OT  Industrial Security (P1 — Critical)]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
+- [[4b. Enterprise IT (P2 — High)]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
+- [[4c. Container & Cloud Security (P2 — High)]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
+- [[4d. Regulatory Compliance (P3 — Medium)]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
+- [[4e. Tooling Integration (P3 — Medium)]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
+- [[4f. Documentation Deliverables]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
+- [[Features_4]] - document - docs/planning/v0.9/v0.9.0-release-plan.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,11 +33,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 736]]
-- 1 edge to [[_COMMUNITY_Community 680]]
-- 1 edge to [[_COMMUNITY_Community 779]]
-- 1 edge to [[_COMMUNITY_Community 820]]
+- 1 edge to [[_COMMUNITY_Community 250]]
+- 1 edge to [[_COMMUNITY_Community 412]]
 
 ## Top bridge nodes
-- [[4. Environment Variables]] - degree 8, connects to 2 communities
-- [[All Environment Variables (reference)]] - degree 3, connects to 2 communities
+- [[4. Compliance & Standards Alignment]] - degree 11, connects to 1 community
+- [[Features_4]] - degree 5, connects to 1 community

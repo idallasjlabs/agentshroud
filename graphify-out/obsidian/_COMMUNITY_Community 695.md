@@ -1,28 +1,29 @@
 ---
 type: community
-cohesion: 0.15
-members: 13
+cohesion: 0.14
+members: 14
 ---
 
 # Community 695
 
-**Cohesion:** 0.15 - loosely connected
-**Members:** 13 nodes
+**Cohesion:** 0.14 - loosely connected
+**Members:** 14 nodes
 
 ## Members
-- [[Bot Container Startup Failures]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[Bot Exits Before Gateway Is Healthy]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[Gateway Container Startup Failures]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[Gateway Health Check Never Passes]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[OpenClaw Not Starting]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[Related Notes_63]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[Startup Errors_2]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[`Could not load Claude OAuth token after retries`]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[`FileNotFoundError No agentshroud.yaml found`]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[`No auth_token found in secret file`]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[`ValueError Invalid YAML structure`]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[`startup Warning Gateway password file not found`]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[spaCy Model Not Loading]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
+- [[Phase 10 Community & GitHub Setup (10 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Phase 11 Command Center — Web (11 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Phase 12 One-Click Install (5 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Phase 13 Final Hardening + Release (10 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Phase 1 Security & Secrets (14 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Phase 2 Repo Hygiene (10 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Phase 3 Container & Runtime Hardening (11 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Phase 4 Dependencies (7 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Phase 5 Networking (5 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Phase 6 Testing (7 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Phase 7 Documentation (12 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Phase 8 Operational Readiness (7 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Phase 9 Legal & IP (7 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[v1.0.0 Fortress — Ship-Ready Public Release (116 items)]] - document - docs/planning/RELEASE-PLAN.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,7 +33,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 289]]
+- 1 edge to [[_COMMUNITY_Community 250]]
 
 ## Top bridge nodes
-- [[Startup Errors_2]] - degree 4, connects to 1 community
+- [[v1.0.0 Fortress — Ship-Ready Public Release (116 items)]] - degree 14, connects to 1 community

@@ -10,21 +10,21 @@ members: 15
 **Members:** 15 nodes
 
 ## Members
-- [[Config Keys Read_2]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[Database Schema]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[Environment Variables Used_1]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[Function Details_2]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[Imports From  Exports To_2]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[Key Classes  Functions_2]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[Known Issues  Notes_2]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[Purpose_113]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[Related_3]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[Responsibilities_2]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[enforce_retention()]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[initialize()]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[ledger.py_2]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[query(page, page_size, source, since, until, forwarded_to)]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
-- [[record(source, content, original_content, sanitized, redaction_count, redaction_types, forwarded_to, content_type, metadata)]] - document - docs/vault/02 - Modules/Gateway Core/ledger.py.md
+- [[dot-agentsskillsi-crprSKILL]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Guardrails_10]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Invocation_6]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Role_62]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Skill Create PR with Pre-Flight Audit (CRPR)]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Step 0 — Pre-flight checks]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Step 1 — Check for an in-progress merge]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Step 2 — Merge without committing]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Step 3 — Audit the pending merge]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Step 3a — Present and resolve confirmed regressions]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Step 3b — Re-audit to confirm clean]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Step 3c — Commit the merge]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Step 4 — Push the branch]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Step 5 — Generate the PR description]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Step 6 — Create the PR]] - document - .agents/skills/i-crpr/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,9 +32,3 @@ members: 15
 TABLE source_file, type FROM #community/Community_615
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 85]]
-
-## Top bridge nodes
-- [[ledger.py_2]] - degree 11, connects to 1 community

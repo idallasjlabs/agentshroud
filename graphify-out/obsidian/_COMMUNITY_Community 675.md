@@ -1,29 +1,29 @@
 ---
 type: community
-cohesion: 0.14
+cohesion: 0.16
 members: 14
 ---
 
 # Community 675
 
-**Cohesion:** 0.14 - loosely connected
+**Cohesion:** 0.16 - loosely connected
 **Members:** 14 nodes
 
 ## Members
-- [[Configuration  Environment Variables_9]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
-- [[Function Details_15]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
-- [[Key Classes  Functions_18]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
-- [[Purpose_136]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
-- [[Related_22]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
-- [[Responsibilities_20]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
-- [[SSRF Detection Coverage]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
-- [[URLAnalyzer._check_base64(parsed, result)]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
-- [[URLAnalyzer._is_private_ip(ip_str)]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
-- [[URLAnalyzer._is_ssrf(hostname)]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
-- [[URLAnalyzer.analyze(url)]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
-- [[URLAnalyzer.analyze_and_pin(url)]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
-- [[url_analyzer.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
-- [[url_analyzer.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md
+- [[dot-_export_cef()]] - code - gateway/security/audit_export.py
+- [[dot-_export_json()]] - code - gateway/security/audit_export.py
+- [[dot-_export_jsonld()]] - code - gateway/security/audit_export.py
+- [[dot-_parse_cef_for_verification()]] - code - gateway/security/audit_export.py
+- [[dot-export_events()]] - code - gateway/security/audit_export.py
+- [[dot-verify_export_integrity()]] - code - gateway/security/audit_export.py
+- [[AuditEvent_1]] - code - gateway/security/audit_export.py
+- [[Export audit events in the specified format.          Args             start_ti]] - rationale - gateway/security/audit_export.py
+- [[Export events in Common Event Format (CEF).          CEF Format CEFVersionDev]] - rationale - gateway/security/audit_export.py
+- [[Export events in JSON-LD format with security ontology.]] - rationale - gateway/security/audit_export.py
+- [[Export events in standard JSON format.]] - rationale - gateway/security/audit_export.py
+- [[Parse CEF lines and extract entryHashpreviousHash for chain verification.]] - rationale - gateway/security/audit_export.py
+- [[TextIO]] - code - gateway/security/audit_export.py
+- [[Verify the integrity of an exported audit log.          Args             export]] - rationale - gateway/security/audit_export.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,3 +31,14 @@ members: 14
 TABLE source_file, type FROM #community/Community_675
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 8 edges to [[_COMMUNITY_Community 112]]
+- 2 edges to [[_COMMUNITY_Community 387]]
+
+## Top bridge nodes
+- [[AuditEvent_1]] - degree 6, connects to 2 communities
+- [[TextIO]] - degree 3, connects to 2 communities
+- [[dot-export_events()]] - degree 6, connects to 1 community
+- [[dot-_export_cef()]] - degree 4, connects to 1 community
+- [[dot-_export_json()]] - degree 4, connects to 1 community

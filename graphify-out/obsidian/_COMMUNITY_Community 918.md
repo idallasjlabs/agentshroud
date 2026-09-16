@@ -10,15 +10,15 @@ members: 9
 **Members:** 9 nodes
 
 ## Members
-- [[.test_cpu_limit_exceeded()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_cpu_limit_fails_closed_on_psutil_error()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_cpu_limit_ok_when_under()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_disk_write_limit_allows_when_no_baseline()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_disk_write_limit_exceeded()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_disk_write_limit_under_threshold()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_memory_limit_fails_closed_on_error()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_memory_limit_ok_and_exceeded()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[TestCpuMemoryDiskLimits]] - code - gateway/tests/test_resource_guard_limits.py
+- [[1Password Auth Failures]] - document - docs/vault/07 - Errors & Troubleshooting/Auth Errors.md
+- [[Auth Errors_2]] - document - docs/vault/07 - Errors & Troubleshooting/Auth Errors.md
+- [[Common Causes]] - document - docs/vault/07 - Errors & Troubleshooting/Auth Errors.md
+- [[Diagnosis]] - document - docs/vault/07 - Errors & Troubleshooting/Auth Errors.md
+- [[HTTP 401 — Unauthorized]] - document - docs/vault/07 - Errors & Troubleshooting/Auth Errors.md
+- [[Related Notes_62]] - document - docs/vault/07 - Errors & Troubleshooting/Auth Errors.md
+- [[Token Reset]] - document - docs/vault/07 - Errors & Troubleshooting/Auth Errors.md
+- [[Token Verification]] - document - docs/vault/07 - Errors & Troubleshooting/Auth Errors.md
+- [[`op read` Failing]] - document - docs/vault/07 - Errors & Troubleshooting/Auth Errors.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,8 +28,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 225]]
-- 1 edge to [[_COMMUNITY_Community 88]]
+- 1 edge to [[_COMMUNITY_Community 255]]
 
 ## Top bridge nodes
-- [[TestCpuMemoryDiskLimits]] - degree 12, connects to 2 communities
+- [[Auth Errors_2]] - degree 4, connects to 1 community

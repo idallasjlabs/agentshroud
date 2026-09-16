@@ -1,25 +1,26 @@
 ---
 type: community
-cohesion: 0.22
-members: 10
+cohesion: 0.24
+members: 11
 ---
 
 # Community 847
 
-**Cohesion:** 0.22 - loosely connected
-**Members:** 10 nodes
+**Cohesion:** 0.24 - loosely connected
+**Members:** 11 nodes
 
 ## Members
-- [[Approval Request Workflow (user-facing)]] - concept - docs/user-guide.md
-- [[Command Injection Threat — regex + no-shell exec mitigation]] - rationale - docs/ssh-security-review.md
-- [[Host SpoofingMITM Threat — TOFU model residual risk]] - rationale - docs/ssh-security-review.md
-- [[Open Findings (C3-C5, H4-H7, M1-M5)]] - concept - docs/claude-security-audit-prompt.md
-- [[Option 1 Direct SSH (current approach)]] - concept - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
-- [[Production Deployment Recommendations]] - concept - docs/ssh-security-review.md
-- [[SSH AllowDeny List Evaluation Order]] - concept - docs/ssh-configuration.md
-- [[SSH Auto-Approve Commands]] - concept - docs/ssh-configuration.md
-- [[SSH Proxy Config Schema (agentshroud.yaml ssh section)]] - concept - docs/ssh-configuration.md
-- [[SSH Proxy Threat Model (6 threats)]] - concept - docs/ssh-security-review.md
+- [[dot-test_beta_rc_alpha_are_not_stable()]] - code - gateway/tests/test_discover_upstream_versions.py
+- [[dot-test_downstream_rebuild_counter_is_stable()]] - code - gateway/tests/test_discover_upstream_versions.py
+- [[dot-test_empty_is_not_stable()]] - code - gateway/tests/test_discover_upstream_versions.py
+- [[dot-test_plain_releases_are_stable()]] - code - gateway/tests/test_discover_upstream_versions.py
+- [[2026.7.1-2' is a real published OpenClaw release, not a prerelease marker — the…]] - rationale - gateway/tests/test_discover_upstream_versions.py
+- [[Pre-release builds must never be shipped to production automatically.]] - rationale - gateway/tests/test_discover_upstream_versions.py
+- [[TestIsStable]] - code - gateway/tests/test_discover_upstream_versions.py
+- [[Tests for scriptsdiscover_upstream_versions.py — latest-release discovery.…]] - rationale - gateway/tests/test_discover_upstream_versions.py
+- [[True when ``version`` is a shippable release rather than a pre-release.]] - rationale - scripts/discover_upstream_versions.py
+- [[is_stable()]] - code - scripts/discover_upstream_versions.py
+- [[test_discover_upstream_versions.py]] - code - gateway/tests/test_discover_upstream_versions.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,7 +30,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 799]]
+- 2 edges to [[_COMMUNITY_Community 641]]
+- 2 edges to [[_COMMUNITY_Community 763]]
+- 1 edge to [[_COMMUNITY_Community 891]]
 
 ## Top bridge nodes
-- [[Open Findings (C3-C5, H4-H7, M1-M5)]] - degree 2, connects to 1 community
+- [[test_discover_upstream_versions.py]] - degree 5, connects to 3 communities
+- [[is_stable()]] - degree 7, connects to 2 communities

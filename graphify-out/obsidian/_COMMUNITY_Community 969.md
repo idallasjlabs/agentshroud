@@ -1,23 +1,24 @@
 ---
 type: community
-cohesion: 0.25
-members: 8
+cohesion: 0.22
+members: 9
 ---
 
 # Community 969
 
-**Cohesion:** 0.25 - loosely connected
-**Members:** 8 nodes
+**Cohesion:** 0.22 - loosely connected
+**Members:** 9 nodes
 
 ## Members
-- [[After Filing]] - document - docs/project/legal/USPTO-APPLICATION.md
-- [[Class 009 — Downloadable Software (Optional — add $250)]] - document - docs/project/legal/USPTO-APPLICATION.md
-- [[Class 042 — Scientific and Technological Services (Primary)]] - document - docs/project/legal/USPTO-APPLICATION.md
-- [[Filing Instructions (TEAS Plus)]] - document - docs/project/legal/USPTO-APPLICATION.md
-- [[International Classification]] - document - docs/project/legal/USPTO-APPLICATION.md
-- [[Notes_2]] - document - docs/project/legal/USPTO-APPLICATION.md
-- [[Specimen]] - document - docs/project/legal/USPTO-APPLICATION.md
-- [[USPTO Trademark Application — AgentShroud™]] - document - docs/project/legal/USPTO-APPLICATION.md
+- [[dot-test_five_clean_and_fresh()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[dot-test_five_zero_failures_fresh_report()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[dot-test_four_zero_failures_stale_report()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[dot-test_max_capped_at_five()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[dot-test_two_with_failures()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[dot-test_zero_when_not_run()_1]] - code - gateway/tests/test_scorecard_scoring.py
+- [[Like _mock_dir_with_files but mtime is now (fresh).]] - rationale - gateway/tests/test_scorecard_scoring.py
+- [[TestScoreComplianceAuditing_1]] - code - gateway/tests/test_scorecard_scoring.py
+- [[_mock_dir_with_fresh_files()]] - code - gateway/tests/test_scorecard_scoring.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,8 +28,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 1041]]
-- 1 edge to [[_COMMUNITY_Community 1314]]
+- 3 edges to [[_COMMUNITY_Community 665]]
+- 2 edges to [[_COMMUNITY_Community 1113]]
+- 2 edges to [[_COMMUNITY_Community 664]]
+- 1 edge to [[_COMMUNITY_Community 1176]]
+- 1 edge to [[_COMMUNITY_Community 1177]]
 
 ## Top bridge nodes
-- [[USPTO Trademark Application — AgentShroud™]] - degree 7, connects to 2 communities
+- [[_mock_dir_with_fresh_files()]] - degree 8, connects to 4 communities
+- [[TestScoreComplianceAuditing_1]] - degree 6, connects to 2 communities
+- [[dot-test_four_zero_failures_stale_report()]] - degree 2, connects to 1 community
+- [[dot-test_max_capped_at_five()]] - degree 2, connects to 1 community
+- [[dot-test_five_clean_and_fresh()]] - degree 2, connects to 1 community

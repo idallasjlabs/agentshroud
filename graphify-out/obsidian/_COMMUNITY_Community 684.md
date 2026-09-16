@@ -1,29 +1,29 @@
 ---
 type: community
-cohesion: 0.19
+cohesion: 0.14
 members: 14
 ---
 
 # Community 684
 
-**Cohesion:** 0.19 - loosely connected
+**Cohesion:** 0.14 - loosely connected
 **Members:** 14 nodes
 
 ## Members
-- [[PYTHONPATH]] - code - scripts/smoke.d/test-skills-sync.sh
-- [[SKILLGUARD_TEST_DEST_ROOT]] - code - scripts/smoke.d/test-skills-sync.sh
-- [[_python()]] - code - scripts/sync-llm-settings.sh
-- [[_sha256()_2]] - code - scripts/sync-llm-settings.sh
-- [[_sha256()_3]] - code - scripts/validate-skills-manifest.sh
-- [[_write_manifest()]] - code - scripts/sync-llm-settings.sh
-- [[check()_3]] - code - scripts/smoke.d/test-skills-sync.sh
-- [[gatewayskillsscan.py (scan CLI)]] - code - gateway/skills/scan.py
-- [[sync-llm-settings.sh]] - code - scripts/sync-llm-settings.sh
-- [[sync-llm-settings.sh script]] - code - scripts/sync-llm-settings.sh
-- [[test-skills-sync.sh]] - code - scripts/smoke.d/test-skills-sync.sh
-- [[test-skills-sync.sh script]] - code - scripts/smoke.d/test-skills-sync.sh
-- [[validate-skills-manifest.sh]] - code - scripts/validate-skills-manifest.sh
-- [[validate-skills-manifest.sh script]] - code - scripts/validate-skills-manifest.sh
+- [[1.1 Owner  Applicant]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[1.2 Attorney Information]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[AgentShroud -- USPTO Trademark Application]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[Filing Reference]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[Option A Section 1(a) — Use in Commerce (if mark is already in use)]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[Option B Section 1(b) — Intent to Use (if not yet in commerce)]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[Recommended Searches]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[SECTION 10 ESTIMATED COSTS]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[SECTION 1 APPLICANT INFORMATION]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[SECTION 4 FILING BASIS]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[SECTION 5 DECLARATION  SIGNATURE]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[SECTION 6 PRIOR SEARCH RESULTS]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[SECTION 8 POST-FILING TIMELINE]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[USPTO_TRADEMARK_APPLICATION]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,9 +33,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 102]]
-- 1 edge to [[_COMMUNITY_Community 549]]
+- 1 edge to [[_COMMUNITY_Community 1146]]
+- 1 edge to [[_COMMUNITY_Community 1147]]
+- 1 edge to [[_COMMUNITY_Community 1297]]
+- 1 edge to [[_COMMUNITY_Community 1363]]
 
 ## Top bridge nodes
-- [[test-skills-sync.sh]] - degree 7, connects to 1 community
-- [[gatewayskillsscan.py (scan CLI)]] - degree 2, connects to 1 community
+- [[AgentShroud -- USPTO Trademark Application]] - degree 12, connects to 4 communities

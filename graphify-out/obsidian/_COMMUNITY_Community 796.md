@@ -1,26 +1,27 @@
 ---
 type: community
-cohesion: 0.18
-members: 11
+cohesion: 0.23
+members: 12
 ---
 
 # Community 796
 
-**Cohesion:** 0.18 - loosely connected
-**Members:** 11 nodes
+**Cohesion:** 0.23 - loosely connected
+**Members:** 12 nodes
 
 ## Members
-- [[Daedalus — Concept Illustrator_5]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
-- [[Input Requirements_23]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
-- [[Output Format_29]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
-- [[Persona_18]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
-- [[Quality Checklist_21]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
-- [[Role_84]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
-- [[SKILL_144]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
-- [[System Prompt_18]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
-- [[architecture.puml (PlantUML)_2]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
-- [[diagramsREADME_2]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
-- [[flow.mmd (Mermaid)_2]] - document - docker/config/openclaw/skills/i-daedalus/SKILL.md
+- [[Check gateway and bot status]] - rationale - src/interfaces/chat_console.py
+- [[Display chat console banner]] - rationale - src/interfaces/chat_console.py
+- [[Read gateway password from secrets file or environment.]] - rationale - src/interfaces/chat_console.py
+- [[Send message to OpenClaw via gateway]] - rationale - src/interfaces/chat_console.py
+- [[_read_auth_token()]] - code - src/interfaces/chat_console.py
+- [[chat-console launcher]] - code - scripts/chat-console
+- [[chat_console.py]] - code - src/interfaces/chat_console.py
+- [[check_status()]] - code - src/interfaces/chat_console.py
+- [[main()_31]] - code - src/interfaces/chat_console.py
+- [[print_banner()]] - code - src/interfaces/chat_console.py
+- [[print_help()]] - code - src/interfaces/chat_console.py
+- [[send_message()]] - code - src/interfaces/chat_console.py
 
 ## Live Query (requires Dataview plugin)
 

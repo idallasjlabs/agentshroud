@@ -10,15 +10,15 @@ members: 9
 **Members:** 9 nodes
 
 ## Members
-- [[Key Endpoints]] - document - docs/vault/02 - Modules/Web & Dashboard/api.py.md
-- [[Purpose_173]] - document - docs/vault/02 - Modules/Web & Dashboard/api.py.md
-- [[Pydantic Models]] - document - docs/vault/02 - Modules/Web & Dashboard/api.py.md
-- [[Related Notes_13]] - document - docs/vault/02 - Modules/Web & Dashboard/api.py.md
-- [[Responsibilities_57]] - document - docs/vault/02 - Modules/Web & Dashboard/api.py.md
-- [[Runtime Engine Integration]] - document - docs/vault/02 - Modules/Web & Dashboard/api.py.md
-- [[Security_7]] - document - docs/vault/02 - Modules/Web & Dashboard/api.py.md
-- [[api.py_2]] - document - docs/vault/02 - Modules/Web & Dashboard/api.py.md
-- [[api.py_1]] - document - docs/vault/02 - Modules/Web & Dashboard/api.py.md
+- [[apiconfig]] - concept - gateway/web/templates/management.html
+- [[apikillswitch{mode}]] - concept - gateway/web/templates/management.html
+- [[apilogs]] - concept - gateway/web/templates/management.html
+- [[apirebuild]] - concept - gateway/web/templates/management.html
+- [[apisecurityreport]] - concept - gateway/web/templates/management.html
+- [[apiservices{name}{action}]] - concept - gateway/web/templates/management.html
+- [[apistatus]] - concept - gateway/web/templates/management.html
+- [[apiupdatesbotopenclaw]] - concept - gateway/web/templates/management.html
+- [[Management Dashboard]] - code - gateway/web/templates/management.html
 
 ## Live Query (requires Dataview plugin)
 

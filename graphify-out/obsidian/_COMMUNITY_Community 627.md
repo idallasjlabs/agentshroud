@@ -1,30 +1,30 @@
 ---
 type: community
-cohesion: 0.13
+cohesion: 0.15
 members: 15
 ---
 
 # Community 627
 
-**Cohesion:** 0.13 - loosely connected
+**Cohesion:** 0.15 - loosely connected
 **Members:** 15 nodes
 
 ## Members
-- [[Configuration  Environment Variables_11]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
-- [[Function Details_17]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
-- [[Injection Pattern Weights]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
-- [[Key Classes  Functions_20]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
-- [[Purpose_138]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
-- [[Related_24]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
-- [[Responsibilities_22]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
-- [[WebContentScanner._scan_encoded_payloads(content, result)]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
-- [[WebContentScanner._scan_hidden_content(content, result)]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
-- [[WebContentScanner._scan_pii(content, result)]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
-- [[WebContentScanner._scan_prompt_injection(content, result)]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
-- [[WebContentScanner._scan_zero_width(content, result)]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
-- [[WebContentScanner.scan(content, content_type)]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
-- [[web_content_scanner.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
-- [[web_content_scanner.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md
+- [[jira_dev_ticket add_comment()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[jira_dev_ticket build_basic_auth_header()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[jira_dev_ticket build_comment_url()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[jira_dev_ticket build_issue_url()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[jira_dev_ticket build_op_proxy_request()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[jira_dev_ticket build_tenant_info_url()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[jira_dev_ticket build_transitions_url()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[jira_dev_ticket create_issue()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[jira_dev_ticket fetch_credentials()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[jira_dev_ticket fetch_op_secret()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[jira_dev_ticket find_transition_id()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[jira_dev_ticket resolve_cloud_id()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[jira_dev_ticket run()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[jira_dev_ticket transition_issue()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
+- [[jira_dev_ticket.py (OpenClaw copy)]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,3 +32,14 @@ members: 15
 TABLE source_file, type FROM #community/Community_627
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 4 edges to [[_COMMUNITY_Community 242]]
+- 2 edges to [[_COMMUNITY_Community 169]]
+
+## Top bridge nodes
+- [[jira_dev_ticket run()]] - degree 7, connects to 2 communities
+- [[jira_dev_ticket build_basic_auth_header()]] - degree 4, connects to 1 community
+- [[jira_dev_ticket resolve_cloud_id()]] - degree 3, connects to 1 community
+- [[jira_dev_ticket build_op_proxy_request()]] - degree 2, connects to 1 community
+- [[jira_dev_ticket.py (OpenClaw copy)]] - degree 2, connects to 1 community

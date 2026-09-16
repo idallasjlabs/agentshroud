@@ -10,16 +10,16 @@ members: 10
 **Members:** 10 nodes
 
 ## Members
-- [[.test_anthropic_default_strips_x_api_key()]] - code - gateway/tests/test_credential_injector.py
-- [[.test_credential_injected_into_request()]] - code - gateway/tests/test_credential_injector.py
-- [[.test_credential_not_injected_for_unknown_domain()]] - code - gateway/tests/test_credential_injector.py
-- [[.test_has_credential_false_for_missing()]] - code - gateway/tests/test_credential_injector.py
-- [[.test_has_credential_true_for_loaded()]] - code - gateway/tests/test_credential_injector.py
-- [[.test_injection_disabled()]] - code - gateway/tests/test_credential_injector.py
-- [[.test_strip_headers_removes_conflicting_header()]] - code - gateway/tests/test_credential_injector.py
-- [[Default Anthropic mapping must strip x-api-key (regression guard).]] - rationale - gateway/tests/test_credential_injector.py
-- [[TestCredentialInjection]] - code - gateway/tests/test_credential_injector.py
-- [[strip_headers must remove x-api-key before injecting Authorization Bearer.]] - rationale - gateway/tests/test_credential_injector.py
+- [[ADR-004-api-keys-never-in-agent-container]] - document - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
+- [[ADR-004 API Keys Never in Agent Container]] - document - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
+- [[Consequences_8]] - document - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
+- [[Context_12]] - document - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
+- [[Decision_11]] - document - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
+- [[Implementation]] - document - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
+- [[Mitigation_4]] - document - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
+- [[Negative Consequences_7]] - document - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
+- [[Positive Consequences_7]] - document - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
+- [[Status_11]] - document - docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,13 +27,3 @@ members: 10
 TABLE source_file, type FROM #community/Community_867
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 605]]
-- 1 edge to [[_COMMUNITY_Community 915]]
-
-## Top bridge nodes
-- [[TestCredentialInjection]] - degree 9, connects to 2 communities
-- [[.test_anthropic_default_strips_x_api_key()]] - degree 3, connects to 1 community
-- [[.test_strip_headers_removes_conflicting_header()]] - degree 3, connects to 1 community
-- [[.test_injection_disabled()]] - degree 2, connects to 1 community

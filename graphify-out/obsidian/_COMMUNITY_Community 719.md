@@ -10,19 +10,19 @@ members: 13
 **Members:** 13 nodes
 
 ## Members
-- [[Configuration  Environment Variables_3]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
-- [[Function Details_9]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
-- [[Key Classes  Functions_12]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
-- [[MCPProxyConfig Fields]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
-- [[MCPProxyConfig.from_dict(data)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
-- [[MCPServerConfig Fields]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
-- [[PermissionLevel Ordering]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
-- [[PermissionLevel comparison operators]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
-- [[Purpose_130]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
-- [[Related_15]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
-- [[Responsibilities_14]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
-- [[mcp_config.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
-- [[mcp_config.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md
+- [[Bot Container Startup Failures]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
+- [[Bot Exits Before Gateway Is Healthy]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
+- [[Gateway Container Startup Failures]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
+- [[Gateway Health Check Never Passes]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
+- [[OpenClaw Not Starting]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
+- [[Related Notes_46]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
+- [[Startup Errors_2]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
+- [[`Could not load Claude OAuth token after retries`]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
+- [[`FileNotFoundError No agentshroud.yaml found`]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
+- [[`No auth_token found in secret file`]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
+- [[`ValueError Invalid YAML structure`]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
+- [[`startup Warning Gateway password file not found`]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
+- [[spaCy Model Not Loading]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,3 +30,9 @@ members: 13
 TABLE source_file, type FROM #community/Community_719
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 254]]
+
+## Top bridge nodes
+- [[Startup Errors_2]] - degree 4, connects to 1 community

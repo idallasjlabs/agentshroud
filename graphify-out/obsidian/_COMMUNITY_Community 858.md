@@ -1,25 +1,26 @@
 ---
 type: community
-cohesion: 0.20
-members: 10
+cohesion: 0.18
+members: 11
 ---
 
 # Community 858
 
-**Cohesion:** 0.20 - loosely connected
-**Members:** 10 nodes
+**Cohesion:** 0.18 - loosely connected
+**Members:** 11 nodes
 
 ## Members
-- [[Monitor Installations]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[Publish SecureBrowser to ClawHub - Step-by-Step Guide]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[View Skill Stats]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[✅ Success Indicators]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[🎉 You're Done!]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[💬 Skill Listing Template]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[📊 Track Success]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[📦 What We Built]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[🔄 Update Published Skill]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[🚀 Quick Publish (3 Commands)]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[Test forward endpoint rejects requests without auth]] - rationale - gateway/tests/test_integration.py
+- [[Test forward endpoint with proper authentication]] - rationale - gateway/tests/test_integration.py
+- [[Test WebSocket authentication flow]] - rationale - gateway/tests/test_integration.py
+- [[Test ledger query endpoint]] - rationale - gateway/tests/test_integration.py
+- [[Test that status endpoint works without authentication]] - rationale - gateway/tests/test_integration.py
+- [[test_forward_with_auth()]] - code - gateway/tests/test_integration.py
+- [[test_forward_without_auth()]] - code - gateway/tests/test_integration.py
+- [[test_health_check_no_auth()]] - code - gateway/tests/test_integration.py
+- [[test_integration.py]] - code - gateway/tests/test_integration.py
+- [[test_ledger_query()]] - code - gateway/tests/test_integration.py
+- [[test_websocket_auth()]] - code - gateway/tests/test_integration.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,13 +28,3 @@ members: 10
 TABLE source_file, type FROM #community/Community_858
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 1045]]
-- 1 edge to [[_COMMUNITY_Community 1323]]
-- 1 edge to [[_COMMUNITY_Community 1046]]
-- 1 edge to [[_COMMUNITY_Community 1324]]
-- 1 edge to [[_COMMUNITY_Community 1262]]
-
-## Top bridge nodes
-- [[Publish SecureBrowser to ClawHub - Step-by-Step Guide]] - degree 12, connects to 5 communities

@@ -1,27 +1,28 @@
 ---
 type: community
-cohesion: 0.29
-members: 12
+cohesion: 0.15
+members: 13
 ---
 
 # Community 751
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 12 nodes
+**Cohesion:** 0.15 - loosely connected
+**Members:** 13 nodes
 
 ## Members
-- [[AgentShroud Seccomp Profile (default-deny syscall allowlist)]] - document - docker/seccomp/agentshroud-seccomp.json
-- [[AgentShroud Security Verification (13-check driver)]] - code - docker/scripts/verify-security.sh
-- [[OpenClaw Volume Architecture (persistent volumes vs tmpfs)]] - concept - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Phase 3 Container Security Hardening Baseline]] - concept - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[Phase 3 Success Criteria]] - concept - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[Read-Only Root FS Constraint — what breaks without proper mounts]] - rationale - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[check_fail()_1]] - code - docker/scripts/verify-security.sh
-- [[check_pass()_1]] - code - docker/scripts/verify-security.sh
-- [[check_warn()]] - code - docker/scripts/verify-security.sh
-- [[toggle-readonly.sh mode switcher]] - code - docker/scripts/toggle-readonly.sh
-- [[verify-security.sh]] - code - docker/scripts/verify-security.sh
-- [[verify-security.sh script]] - code - docker/scripts/verify-security.sh
+- [[Attaching files (`--file`)]] - document - skills/openclaw/oracle/SKILL.md
+- [[Commands (preferred)]] - document - skills/openclaw/oracle/SKILL.md
+- [[Engines (API vs browser)]] - document - skills/openclaw/oracle/SKILL.md
+- [[Golden path]] - document - skills/openclaw/oracle/SKILL.md
+- [[Main use case (browser, GPT‑5.2 Pro)]] - document - skills/openclaw/oracle/SKILL.md
+- [[Prompt template (high signal)]] - document - skills/openclaw/oracle/SKILL.md
+- [[Safety]] - document - skills/openclaw/oracle/SKILL.md
+- [[Sessions + slugs]] - document - skills/openclaw/oracle/SKILL.md
+- [[mcporter]] - document - skills/openclaw/mcporter/SKILL.md
+- [[mcporterSKILL]] - document - skills/openclaw/mcporter/SKILL.md
+- [[oracle — best use]] - document - skills/openclaw/oracle/SKILL.md
+- [[oracleSKILL]] - document - skills/openclaw/oracle/SKILL.md
+- [[“Exhaustive prompt” restoration pattern]] - document - skills/openclaw/oracle/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

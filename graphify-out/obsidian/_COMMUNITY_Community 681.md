@@ -10,20 +10,20 @@ members: 14
 **Members:** 14 nodes
 
 ## Members
-- [[Fatal glibc error Cannot allocate TLS block]] - document - docs/runbooks/RUNBOOK.md
-- [[AgentShroud Deployment & Troubleshooting Runbook]] - document - docs/runbooks/RUNBOOK.md
-- [[Architecture Notes_1]] - document - docs/runbooks/RUNBOOK.md
-- [[Check Gateway Health]] - document - docs/runbooks/RUNBOOK.md
-- [[Colima won't start]] - document - docs/runbooks/RUNBOOK.md
-- [[Container starts but unhealthy]] - document - docs/runbooks/RUNBOOK.md
-- [[Deploy Latest Code (Any Host)]] - document - docs/runbooks/RUNBOOK.md
-- [[Deploy to Production]] - document - docs/runbooks/RUNBOOK.md
-- [[Docker says Cannot connect to Docker daemon]] - document - docs/runbooks/RUNBOOK.md
-- [[Infrastructure_8]] - document - docs/runbooks/RUNBOOK.md
-- [[Quick Restart (No Rebuild)]] - document - docs/runbooks/RUNBOOK.md
-- [[Run Tests on Any Host]] - document - docs/runbooks/RUNBOOK.md
-- [[Tests failing after deploy]] - document - docs/runbooks/RUNBOOK.md
-- [[Troubleshooting_21]] - document - docs/runbooks/RUNBOOK.md
+- [[API Call Structure_1]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
+- [[Apollo — Audio Systems Producer_4]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
+- [[Audio Quality Settings_1]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
+- [[Error Handling_7]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
+- [[Input Requirements_13]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
+- [[Output_7]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
+- [[Primary API Text-to-Dialogue_1]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
+- [[Quality Checklist_10]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
+- [[Quick Mode Create Podcast API_1]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
+- [[Role_71]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
+- [[Script Parsing_1]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
+- [[Technical Specification_1]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
+- [[Voice Configuration_1]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
+- [[openclawskillsi-apolloSKILL]] - document - docker/config/openclaw/skills/i-apollo/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,9 +31,3 @@ members: 14
 TABLE source_file, type FROM #community/Community_681
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 284]]
-
-## Top bridge nodes
-- [[AgentShroud Deployment & Troubleshooting Runbook]] - degree 9, connects to 1 community

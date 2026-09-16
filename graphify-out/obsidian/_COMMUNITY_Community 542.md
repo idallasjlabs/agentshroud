@@ -10,23 +10,23 @@ members: 17
 **Members:** 17 nodes
 
 ## Members
-- [[Create Test Script]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[Google Calendar & Contacts - Quick Setup]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[Install Node CalDAV Client]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[Option A Simple (App Password + CalDAV) - RECOMMENDED FOR NOW]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[Option B Full (OAuth2 + Google APIs) - Better for production]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[Run Test]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[Step 1 Create Google Cloud Project]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[Step 2 Create OAuth Credentials]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[Step 3 Get OAuth Token (One-Time)]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[Step 4 Use Google Calendar]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[⚡ Fastest Path Forward]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[✅ Next Steps]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[🎮 Option B Using Google APIs (Better but requires OAuth)]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[🎯 My Recommendation]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[🎯 Two Options]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[📊 Comparison]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
-- [[🚀 Option A Simple Setup (5 minutes)]] - document - docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md
+- [[06-outbound-info-filter]] - document - docs/planning/redteam/06-outbound-info-filter.md
+- [[Constraints]] - document - docs/planning/redteam/06-outbound-info-filter.md
+- [[Evidence]] - document - docs/planning/redteam/06-outbound-info-filter.md
+- [[Implement gateway-level outbound information filtering module]] - document - docs/planning/redteam/06-outbound-info-filter.md
+- [[Problem_2]] - document - docs/planning/redteam/06-outbound-info-filter.md
+- [[Relationship to chunk 00-information-disclosure]] - document - docs/planning/redteam/06-outbound-info-filter.md
+- [[Remediation_1]] - document - docs/planning/redteam/06-outbound-info-filter.md
+- [[Root Cause_1]] - document - docs/planning/redteam/06-outbound-info-filter.md
+- [[Severity_3]] - document - docs/planning/redteam/06-outbound-info-filter.md
+- [[Step 1 Create the Outbound Information Filter module]] - document - docs/planning/redteam/06-outbound-info-filter.md
+- [[Step 2 Define deny-list patterns]] - document - docs/planning/redteam/06-outbound-info-filter.md
+- [[Step 3 Implement the filter engine]] - document - docs/planning/redteam/06-outbound-info-filter.md
+- [[Step 4 Configure per-trust-level disclosure rules]] - document - docs/planning/redteam/06-outbound-info-filter.md
+- [[Step 5 Add response classification for high-density matches]] - document - docs/planning/redteam/06-outbound-info-filter.md
+- [[Step 6 Integrate with the PII Sanitizer pipeline]] - document - docs/planning/redteam/06-outbound-info-filter.md
+- [[Step 7 Add the module to gateway configuration]] - document - docs/planning/redteam/06-outbound-info-filter.md
+- [[Verification_5]] - document - docs/planning/redteam/06-outbound-info-filter.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,9 +34,3 @@ members: 17
 TABLE source_file, type FROM #community/Community_542
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 428]]
-
-## Top bridge nodes
-- [[Google Calendar & Contacts - Quick Setup]] - degree 8, connects to 1 community

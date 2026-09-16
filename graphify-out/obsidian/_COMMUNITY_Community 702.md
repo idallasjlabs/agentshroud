@@ -1,28 +1,29 @@
 ---
 type: community
-cohesion: 0.15
-members: 13
+cohesion: 0.14
+members: 14
 ---
 
 # Community 702
 
-**Cohesion:** 0.15 - loosely connected
-**Members:** 13 nodes
+**Cohesion:** 0.14 - loosely connected
+**Members:** 14 nodes
 
 ## Members
-- [[Architecture_3]] - document - docs/architecture/per-agent-isolation.md
-- [[Container Configuration]] - document - docs/architecture/per-agent-isolation.md
-- [[Design Principles]] - document - docs/architecture/per-agent-isolation.md
-- [[Docker Compose Template]] - document - docs/architecture/per-agent-isolation.md
-- [[Future Enhancements]] - document - docs/architecture/per-agent-isolation.md
-- [[IsolationVerifier Class]] - concept - docs/architecture/per-agent-isolation.md
-- [[Overview_7]] - document - docs/architecture/per-agent-isolation.md
-- [[Per-Agent Audit Trails]] - document - docs/architecture/per-agent-isolation.md
-- [[Per-Agent Container Isolation Architecture]] - document - docs/architecture/per-agent-isolation.md
-- [[Request Routing]] - document - docs/architecture/per-agent-isolation.md
-- [[Security Verification]] - document - docs/architecture/per-agent-isolation.md
-- [[Shared-Nothing Isolation Design Principle]] - rationale - docs/architecture/per-agent-isolation.md
-- [[per-agent-isolation]] - document - docs/architecture/per-agent-isolation.md
+- [[1. Dependency Updates]] - document - docs/runbooks/daily-operations.md
+- [[1. Service Health]] - document - docs/runbooks/daily-operations.md
+- [[2. Backup Verification]] - document - docs/runbooks/daily-operations.md
+- [[2. Tailscale Connectivity]] - document - docs/runbooks/daily-operations.md
+- [[3. Audit Ledger Review]] - document - docs/runbooks/daily-operations.md
+- [[3. Tailscale ACL Review]] - document - docs/runbooks/daily-operations.md
+- [[4. Log Review]] - document - docs/runbooks/daily-operations.md
+- [[4. Test Suite]] - document - docs/runbooks/daily-operations.md
+- [[5. Resource Usage]] - document - docs/runbooks/daily-operations.md
+- [[Daily Operations Runbook — AgentShroud]] - document - docs/runbooks/daily-operations.md
+- [[Dashboard Monitoring]] - document - docs/runbooks/daily-operations.md
+- [[Monthly Checklist (30 minutes)]] - document - docs/runbooks/daily-operations.md
+- [[Morning Checklist (5 minutes)]] - document - docs/runbooks/daily-operations.md
+- [[Weekly Checklist (15 minutes)]] - document - docs/runbooks/daily-operations.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,8 +33,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 373]]
-- 1 edge to [[_COMMUNITY_Community 554]]
+- 1 edge to [[_COMMUNITY_Community 633]]
 
 ## Top bridge nodes
-- [[Shared-Nothing Isolation Design Principle]] - degree 3, connects to 2 communities
+- [[Daily Operations Runbook — AgentShroud]] - degree 5, connects to 1 community

@@ -1,24 +1,24 @@
 ---
 type: community
-cohesion: 0.31
+cohesion: 0.22
 members: 9
 ---
 
 # Community 920
 
-**Cohesion:** 0.31 - loosely connected
+**Cohesion:** 0.22 - loosely connected
 **Members:** 9 nodes
 
 ## Members
-- [[.__init__()_179]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[._patch_http()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.read()_1]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_404_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_running_container_returns_true()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_socket_error_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[.test_stopped_container_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestIsContainerRunning]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[_FakeResp]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-agentsskillsi-ggSKILL]] - document - .agents/skills/i-gg/SKILL.md
+- [[Branch Naming]] - document - .agents/skills/i-gg/SKILL.md
+- [[Commit Messages  (Conventional Commits)]] - document - .agents/skills/i-gg/SKILL.md
+- [[Emergency Hotfix_3]] - document - .agents/skills/i-gg/SKILL.md
+- [[Mandatory Workflow  (10 steps)]] - document - .agents/skills/i-gg/SKILL.md
+- [[Protected Branch]] - document - .agents/skills/i-gg/SKILL.md
+- [[REFUSE These]] - document - .agents/skills/i-gg/SKILL.md
+- [[Role_97]] - document - .agents/skills/i-gg/SKILL.md
+- [[Skill Git Workflow Guardian (GIT-GUARD)]] - document - .agents/skills/i-gg/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,10 +26,3 @@ members: 9
 TABLE source_file, type FROM #community/Community_920
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 288]]
-
-## Top bridge nodes
-- [[TestIsContainerRunning]] - degree 6, connects to 1 community
-- [[_FakeResp]] - degree 4, connects to 1 community

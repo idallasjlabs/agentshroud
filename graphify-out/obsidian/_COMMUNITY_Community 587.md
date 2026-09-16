@@ -10,22 +10,22 @@ members: 16
 **Members:** 16 nodes
 
 ## Members
-- [[Conclusion_2]] - document - docs/security/SECURITY_VERIFICATION.md
-- [[Emergency Procedures_3]] - document - docs/security/SECURITY_VERIFICATION.md
-- [[Gitignore Protection (Multi-Layer)]] - document - docs/security/SECURITY_VERIFICATION.md
-- [[Root .gitignore]] - document - docs/security/SECURITY_VERIFICATION.md
-- [[Security Guarantees_3]] - document - docs/security/SECURITY_VERIFICATION.md
-- [[Security Verification Report]] - document - docs/security/SECURITY_VERIFICATION.md
-- [[Summary_18]] - document - docs/security/SECURITY_VERIFICATION.md
-- [[Test 1 Check Git Tracking]] - document - docs/security/SECURITY_VERIFICATION.md
-- [[Test 2 Check README Content]] - document - docs/security/SECURITY_VERIFICATION.md
-- [[Test 3 Test Gitignore]] - document - docs/security/SECURITY_VERIFICATION.md
-- [[Test 4 Check Remote Repository]] - document - docs/security/SECURITY_VERIFICATION.md
-- [[Verification Tests]] - document - docs/security/SECURITY_VERIFICATION.md
-- [[What Is Protected (Never Committed)]] - document - docs/security/SECURITY_VERIFICATION.md
-- [[What Users Need to Do]] - document - docs/security/SECURITY_VERIFICATION.md
-- [[What Was Committed]] - document - docs/security/SECURITY_VERIFICATION.md
-- [[docker.gitignore]] - document - docs/security/SECURITY_VERIFICATION.md
+- [[1. Clone the Repository_1]] - document - docs/operations/linux.md
+- [[2. Install Docker_1]] - document - docs/operations/linux.md
+- [[3. Set Up Secrets_1]] - document - docs/operations/linux.md
+- [[4. Configure AgentShroud_1]] - document - docs/operations/linux.md
+- [[5. Build and Start_1]] - document - docs/operations/linux.md
+- [[6. Verify_1]] - document - docs/operations/linux.md
+- [[Architecture Notes]] - document - docs/operations/linux.md
+- [[Deploying AgentShroud on Linux (x86_64  aarch64)]] - document - docs/operations/linux.md
+- [[Firewall]] - document - docs/operations/linux.md
+- [[Fresh Install_1]] - document - docs/operations/linux.md
+- [[Non-Root User]] - document - docs/operations/linux.md
+- [[Prerequisites_11]] - document - docs/operations/linux.md
+- [[Systemd Service for Auto-Start]] - document - docs/operations/linux.md
+- [[Updating to Latest Release_1]] - document - docs/operations/linux.md
+- [[VPS Deployment Notes]] - document - docs/operations/linux.md
+- [[linux]] - document - docs/operations/linux.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,9 +33,3 @@ members: 16
 TABLE source_file, type FROM #community/Community_587
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 730]]
-
-## Top bridge nodes
-- [[Security Verification Report]] - degree 10, connects to 1 community

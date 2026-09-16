@@ -1,24 +1,25 @@
 ---
 type: community
 cohesion: 0.22
-members: 9
+members: 10
 ---
 
 # Community 888
 
 **Cohesion:** 0.22 - loosely connected
-**Members:** 9 nodes
+**Members:** 10 nodes
 
 ## Members
-- [[CPA Curriculum Frontmatter Addition_1]] - document - docker/config/hermes/skills/i-atlas/SKILL.md
-- [[Coverage Types_1]] - document - docker/config/hermes/skills/i-atlas/SKILL.md
-- [[Episode Closing_1]] - document - docker/config/hermes/skills/i-atlas/SKILL.md
-- [[Exam Weight Integration_1]] - document - docker/config/hermes/skills/i-atlas/SKILL.md
-- [[Gleim CPA Review Study Unit Mapping]] - concept - docker/config/hermes/skills/i-atlas/SKILL.md
-- [[Gleim CPA Review Study Unit Mapping_1]] - concept - docker/config/openclaw/skills/i-atlas/SKILL.md
-- [[Gleim Unit Mapping_1]] - document - docker/config/hermes/skills/i-atlas/SKILL.md
-- [[Mandatory Acronym Expansion_1]] - document - docker/config/hermes/skills/i-atlas/SKILL.md
-- [[OKE Channel — CPA Exam Context_2]] - concept - docker/config/hermes/skills/i-atlas/SKILL.md
+- [[Validate a WebSocket token (single-use, time-limited).]] - rationale - gateway/ingest_api/routes/dashboard.py
+- [[WebSocket_6]] - code - gateway/ingest_api/routes/approval.py
+- [[WebSocket_7]] - code - gateway/ingest_api/routes/dashboard.py
+- [[WebSocket endpoint for real-time approval notifications      Protocol     1. Cl]] - rationale - gateway/ingest_api/routes/approval.py
+- [[WebSocket for real-time activity feed]] - rationale - gateway/ingest_api/routes/dashboard.py
+- [[WebSocket stream specialized for egresssecurity dashboard updates.]] - rationale - gateway/ingest_api/routes/dashboard.py
+- [[_validate_ws_token()]] - code - gateway/ingest_api/routes/dashboard.py
+- [[activity_websocket()]] - code - gateway/ingest_api/routes/dashboard.py
+- [[approval_websocket()]] - code - gateway/ingest_api/routes/approval.py
+- [[egress_websocket()]] - code - gateway/ingest_api/routes/dashboard.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,8 +29,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 836]]
-- 1 edge to [[_COMMUNITY_Community 1033]]
+- 5 edges to [[_COMMUNITY_Community 65]]
+- 3 edges to [[_COMMUNITY_Community 116]]
+- 2 edges to [[_COMMUNITY_Approval Routing & Event Bus]]
 
 ## Top bridge nodes
-- [[OKE Channel — CPA Exam Context_2]] - degree 10, connects to 2 communities
+- [[activity_websocket()]] - degree 6, connects to 2 communities
+- [[egress_websocket()]] - degree 6, connects to 2 communities
+- [[_validate_ws_token()]] - degree 6, connects to 2 communities
+- [[approval_websocket()]] - degree 5, connects to 2 communities

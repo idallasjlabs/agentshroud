@@ -1,24 +1,25 @@
 ---
 type: community
-cohesion: 0.25
-members: 9
+cohesion: 0.22
+members: 10
 ---
 
 # Community 890
 
-**Cohesion:** 0.25 - loosely connected
-**Members:** 9 nodes
+**Cohesion:** 0.22 - loosely connected
+**Members:** 10 nodes
 
 ## Members
-- [[2. Atlassian MCP Authentication Reset_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[3. AWS API MCP Authentication Reset_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[Authentication Reset Procedures_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[If Using SSO_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[Manual Re-authentication_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[Option A Default AWS Profile_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[Option B Named Profile_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[Verify Authentication_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[When Authentication Expires_1]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[dot-_scan_for_canary()]] - code - gateway/security/output_canary.py
+- [[dot-check_response()_1]] - code - gateway/security/output_canary.py
+- [[dot-get_status()_3]] - code - gateway/security/output_canary.py
+- [[Any_79]] - code - gateway/security/output_canary.py
+- [[CanaryResult_2]] - code - gateway/security/output_canary.py
+- [[Check if response contains the session's canary (prompt leakage detected).]] - rationale - gateway/security/output_canary.py
+- [[Result of checking a response for canary presence.]] - rationale - gateway/security/output_canary.py
+- [[Return canary status for dashboard.          Args             session_id Sessi]] - rationale - gateway/security/output_canary.py
+- [[Scan response text for a specific canary.          Args             session_id]] - rationale - gateway/security/output_canary.py
+- [[output_canary.py]] - code - gateway/security/output_canary.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,8 +29,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 795]]
-- 1 edge to [[_COMMUNITY_Community 876]]
+- 4 edges to [[_COMMUNITY_Alert Dispatcher & RBAC Reliability]]
+- 1 edge to [[_COMMUNITY_Community 213]]
 
 ## Top bridge nodes
-- [[Authentication Reset Procedures_1]] - degree 4, connects to 2 communities
+- [[output_canary.py]] - degree 3, connects to 2 communities
+- [[dot-_scan_for_canary()]] - degree 5, connects to 1 community
+- [[dot-check_response()_1]] - degree 4, connects to 1 community
+- [[dot-get_status()_3]] - degree 3, connects to 1 community

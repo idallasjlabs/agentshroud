@@ -1,28 +1,29 @@
 ---
 type: community
-cohesion: 0.15
-members: 13
+cohesion: 0.14
+members: 14
 ---
 
 # Community 696
 
-**Cohesion:** 0.15 - loosely connected
-**Members:** 13 nodes
+**Cohesion:** 0.14 - loosely connected
+**Members:** 14 nodes
 
 ## Members
-- [[After Disconnect]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
-- [[After Freeze]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
-- [[After Shutdown]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
-- [[Kill Switch Actions]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
-- [[Kill Switch Monitoring]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
-- [[Kill Switch Procedure_1]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
-- [[Method 1 Dashboard (Recommended)]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
-- [[Method 2 API]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
-- [[Method 3 Script]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
-- [[Method 4 Docker Direct (Last Resort)]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
-- [[Post-Kill Switch Procedure]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
-- [[Related Notes_68]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
-- [[When to Use]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[1. Anthropic API Credits & Rate Limits]] - document - docs/project/TELEGRAM_ISSUES.md
+- [[10. Seccomp Profile Conflicts (x86_64)]] - document - docs/project/TELEGRAM_ISSUES.md
+- [[11. Bot Token Migration Confusion]] - document - docs/project/TELEGRAM_ISSUES.md
+- [[12. PandocLaTeX Dependency Issues]] - document - docs/project/TELEGRAM_ISSUES.md
+- [[13. Hallucination in Competitor Reports]] - document - docs/project/TELEGRAM_ISSUES.md
+- [[2. Bot Startup Crash-Loops (Config Errors)]] - document - docs/project/TELEGRAM_ISSUES.md
+- [[3. 1Password Session Expiry (`op-proxy`)]] - document - docs/project/TELEGRAM_ISSUES.md
+- [[4. SSH Key Regeneration on Restart]] - document - docs/project/TELEGRAM_ISSUES.md
+- [[8. Colima  Docker Stability (Marvin)]] - document - docs/project/TELEGRAM_ISSUES.md
+- [[9. Glibc TLS Incompatibility (Trillian)]] - document - docs/project/TELEGRAM_ISSUES.md
+- [[AgentShroud™ Telegram-Reported Issues]] - document - docs/project/TELEGRAM_ISSUES.md
+- [[🔴 CRITICAL System Blockers]] - document - docs/project/TELEGRAM_ISSUES.md
+- [[🔵 LOW User Experience & Documentation]] - document - docs/project/TELEGRAM_ISSUES.md
+- [[🟡 MEDIUM Infrastructure & Deployment]] - document - docs/project/TELEGRAM_ISSUES.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,7 +33,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 289]]
+- 1 edge to [[_COMMUNITY_Community 577]]
+- 1 edge to [[_COMMUNITY_Community 954]]
 
 ## Top bridge nodes
-- [[Kill Switch Procedure_1]] - degree 10, connects to 1 community
+- [[AgentShroud™ Telegram-Reported Issues]] - degree 5, connects to 2 communities

@@ -1,23 +1,24 @@
 ---
 type: community
-cohesion: 0.25
-members: 8
+cohesion: 0.22
+members: 9
 ---
 
 # Community 952
 
-**Cohesion:** 0.25 - loosely connected
-**Members:** 8 nodes
+**Cohesion:** 0.22 - loosely connected
+**Members:** 9 nodes
 
 ## Members
-- [[AgentShroud Hermes — System Identity_1]] - document - docker/config/hermes/agents/hermes-soul.md
-- [[Capabilities_1]] - document - docker/config/hermes/agents/hermes-soul.md
-- [[Core Behaviors_1]] - document - docker/config/hermes/agents/hermes-soul.md
-- [[Owner_1]] - document - docker/config/hermes/agents/hermes-soul.md
-- [[Remote Hosts (SSH via gateway)_1]] - document - docker/config/hermes/agents/hermes-soul.md
-- [[Trademark Notice_1]] - document - docker/config/hermes/agents/hermes-soul.md
-- [[Your Role_1]] - document - docker/config/hermes/agents/hermes-soul.md
-- [[hermes-soul]] - document - docker/config/hermes/agents/hermes-soul.md
+- [[v0.9.0 Sentinel — Data Isolation + SOC + Remediation (37 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[🔴 Private Service Data Isolation (6 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[🔴 Security Operations Center (SOC) (6 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[🟡 Apple Messages Integration (4 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[🟡 Security Tools — Full Integration (5 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[🟡 Steve Hay Remediation (4 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[🟢 Development Infrastructure (4 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[🟢 Infrastructure (5 items)]] - document - docs/planning/RELEASE-PLAN.md
+- [[🟢 Multi-Agent Architecture (3 items)]] - document - docs/planning/RELEASE-PLAN.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,3 +26,9 @@ members: 8
 TABLE source_file, type FROM #community/Community_952
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 250]]
+
+## Top bridge nodes
+- [[v0.9.0 Sentinel — Data Isolation + SOC + Remediation (37 items)]] - degree 9, connects to 1 community

@@ -1,27 +1,28 @@
 ---
 type: community
-cohesion: 0.17
-members: 12
+cohesion: 0.15
+members: 13
 ---
 
 # Community 759
 
-**Cohesion:** 0.17 - loosely connected
-**Members:** 12 nodes
+**Cohesion:** 0.15 - loosely connected
+**Members:** 13 nodes
 
 ## Members
-- [[Additional Patches]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
-- [[Behavior]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
-- [[Patch 1 Main Agent as Default]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
-- [[Patch 2 Telegram Binding]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
-- [[Patch 3 Telegram Bot Token (if $TELEGRAM_BOT_TOKEN is set)]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
-- [[Patches Applied]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
-- [[Purpose_120]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
-- [[Related Notes_6]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
-- [[Usage_122]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
-- [[Why Required]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
-- [[apply-patches.js_2]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
-- [[apply-patches.js_1]] - document - docs/vault/02 - Modules/JavaScript/apply-patches.js.md
+- [[1. Accomplishments This Phase_3]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[🌐 NetworkValidator Graceful Degradation]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[💾 Resource Management]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[📁 AlertDispatcher Storage Fix]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[📊 Management API Enhancement]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[📡 Reliable Shutdown Notifications]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[🔄 Op-proxy Communication Hardening]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[🔐 EncryptedStore Security Hardening]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[🔒 Complete Security Module Integration]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[🔧 Auto-Configuration Pipeline]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[🖥️ Control Interface Authentication]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[🚀 Async Startup Optimization]] - document - docs/planning/reviews/phase-review-2026-02-24.md
+- [[🧠 Enhanced PII Detection Pipeline]] - document - docs/planning/reviews/phase-review-2026-02-24.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,3 +30,9 @@ members: 12
 TABLE source_file, type FROM #community/Community_759
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 130]]
+
+## Top bridge nodes
+- [[1. Accomplishments This Phase_3]] - degree 13, connects to 1 community

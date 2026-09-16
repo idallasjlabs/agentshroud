@@ -1,31 +1,32 @@
 ---
 type: community
-cohesion: 0.14
-members: 16
+cohesion: 0.12
+members: 17
 ---
 
 # Community 556
 
-**Cohesion:** 0.14 - loosely connected
-**Members:** 16 nodes
+**Cohesion:** 0.12 - loosely connected
+**Members:** 17 nodes
 
 ## Members
-- [[03-data]] - document - docs/diagrams/03-data.md
-- [[10. Data Dictionary  Catalog Map]] - document - docs/diagrams/03-data.md
-- [[7. Data Flow Diagram — How Data Moves Through the System]] - document - docs/diagrams/03-data.md
-- [[8. Entity Relationship Diagram (ERD)]] - document - docs/diagrams/03-data.md
-- [[9. Data Lineage Diagram]] - document - docs/diagrams/03-data.md
-- [[AgentShroud — Data Diagrams]] - document - docs/diagrams/03-data.md
-- [[Current Status_2]] - document - docs/data/README.md
-- [[Data Dictionary  Catalog Map]] - concept - docs/diagrams/03-data.md
-- [[Data Documentation]] - document - docs/data/README.md
-- [[Data Flow Diagram]] - concept - docs/diagrams/03-data.md
-- [[Data Lineage Diagram]] - concept - docs/diagrams/03-data.md
-- [[Entity Relationship Diagram (ledger, approval_items)]] - concept - docs/diagrams/03-data.md
-- [[Planned Documents_1]] - document - docs/data/README.md
-- [[README_119]] - document - docs/data/README.md
-- [[Rendered Data Flow Diagram (PNG)]] - image - docs/diagrams/images/diagram-07-data-flow.png
-- [[Rendered ERD Diagram (PNG)]] - image - docs/diagrams/images/diagram-08-erd.png
+- [[Action groups]] - document - skills/openclaw/slack/SKILL.md
+- [[Actions_1]] - document - skills/openclaw/slack/SKILL.md
+- [[Delete a message]] - document - skills/openclaw/slack/SKILL.md
+- [[Edit a message]] - document - skills/openclaw/slack/SKILL.md
+- [[Emoji list]] - document - skills/openclaw/slack/SKILL.md
+- [[Ideas to try]] - document - skills/openclaw/slack/SKILL.md
+- [[Inputs to collect]] - document - skills/openclaw/slack/SKILL.md
+- [[List pinned items]] - document - skills/openclaw/slack/SKILL.md
+- [[List reactions]] - document - skills/openclaw/slack/SKILL.md
+- [[Member info]] - document - skills/openclaw/slack/SKILL.md
+- [[Overview_21]] - document - skills/openclaw/slack/SKILL.md
+- [[Pin a message]] - document - skills/openclaw/slack/SKILL.md
+- [[React to a message]] - document - skills/openclaw/slack/SKILL.md
+- [[Read recent messages]] - document - skills/openclaw/slack/SKILL.md
+- [[Send a message]] - document - skills/openclaw/slack/SKILL.md
+- [[Slack Actions]] - document - skills/openclaw/slack/SKILL.md
+- [[slackSKILL]] - document - skills/openclaw/slack/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,9 +36,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 442]]
-- 1 edge to [[_COMMUNITY_Community 834]]
+- 1 edge to [[_COMMUNITY_Community 411]]
 
 ## Top bridge nodes
-- [[03-data]] - degree 6, connects to 1 community
-- [[Entity Relationship Diagram (ledger, approval_items)]] - degree 5, connects to 1 community
+- [[slackSKILL]] - degree 2, connects to 1 community

@@ -1,31 +1,31 @@
 ---
 type: community
-cohesion: 0.12
+cohesion: 0.15
 members: 16
 ---
 
 # Community 569
 
-**Cohesion:** 0.12 - loosely connected
+**Cohesion:** 0.15 - loosely connected
 **Members:** 16 nodes
 
 ## Members
-- [[3. Security Controls]] - document - docs/papers/agentshroud-whitepaper.md
-- [[3.1 PII Sanitizer]] - document - docs/papers/agentshroud-whitepaper.md
-- [[3.10 Egress Filtering — Phase 7]] - document - docs/papers/agentshroud-whitepaper.md
-- [[3.11 Drift Detection — Phase 7]] - document - docs/papers/agentshroud-whitepaper.md
-- [[3.12 Container Hardening]] - document - docs/papers/agentshroud-whitepaper.md
-- [[3.13 MCP Proxy Layer — Phase 9]] - document - docs/papers/agentshroud-whitepaper.md
-- [[3.14 Web Traffic Proxy — Phase 10]] - document - docs/papers/agentshroud-whitepaper.md
-- [[3.15 Full Egress Control — Phase 11]] - document - docs/papers/agentshroud-whitepaper.md
-- [[3.2 Audit Ledger]] - document - docs/papers/agentshroud-whitepaper.md
-- [[3.3 Approval Queue]] - document - docs/papers/agentshroud-whitepaper.md
-- [[3.4 Kill Switch]] - document - docs/papers/agentshroud-whitepaper.md
-- [[3.5 SSH Proxy]] - document - docs/papers/agentshroud-whitepaper.md
-- [[3.6 Live Security Dashboard]] - document - docs/papers/agentshroud-whitepaper.md
-- [[3.7 Encrypted Memory (AES-256-GCM) — Phase 7]] - document - docs/papers/agentshroud-whitepaper.md
-- [[3.8 Prompt Injection Defense — Phase 7]] - document - docs/papers/agentshroud-whitepaper.md
-- [[3.9 Progressive Trust System — Phase 7]] - document - docs/papers/agentshroud-whitepaper.md
+- [[A2A Governance (A2APolicyEngine  A2AProxy)]] - concept - CHANGELOG.md
+- [[AgentShroud Changelog]] - document - CHANGELOG.md
+- [[ESP-IDF v5.4 Toolchain Setup]] - concept - firmware/voice-terminal/SETUP.md
+- [[ESP32-S3-BOX-3 Voice Terminal]] - concept - CHANGELOG.md
+- [[Hermes Bot_1]] - concept - CHANGELOG.md
+- [[LVGL Animated Face State Machine]] - concept - firmware/voice-terminal/SETUP.md
+- [[Mandatory Daily Delivery (never SILENT)]] - rationale - docker/config/hermes/cron/prompts/daily-component-health-digest.txt
+- [[OTA Wireless Firmware Updates]] - concept - firmware/voice-terminal/SETUP.md
+- [[OpenClaw Bot_1]] - concept - CHANGELOG.md
+- [[Prompt Daily Component Health Digest]] - document - docker/config/hermes/cron/prompts/daily-component-health-digest.txt
+- [[Script-Output-Only Constraint (no tools, no recomputation)]] - rationale - docker/config/hermes/cron/prompts/daily-component-health-digest.txt
+- [[Silence-Over-Hallucination Principle]] - rationale - docker/config/hermes/cron/prompts/hermes-competitive-landscape-update-am-pm.txt
+- [[Stale Trivy Scan Disclosure Requirement]] - rationale - docker/config/hermes/cron/prompts/daily-component-health-digest.txt
+- [[TrustManager Progressive-Trust Ladder]] - concept - CHANGELOG.md
+- [[Voice Gateway]] - concept - CHANGELOG.md
+- [[Zero-Hallucination Primary-Source Rule (30-day recency)]] - rationale - docker/config/hermes/cron/prompts/newsletter-coding-agent-clis.txt
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,7 +35,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 402]]
+- 5 edges to [[_COMMUNITY_Community 164]]
+- 2 edges to [[_COMMUNITY_Community 571]]
+- 1 edge to [[_COMMUNITY_Community 407]]
+- 1 edge to [[_COMMUNITY_Community 430]]
+- 1 edge to [[_COMMUNITY_Community 425]]
 
 ## Top bridge nodes
-- [[3. Security Controls]] - degree 16, connects to 1 community
+- [[AgentShroud Changelog]] - degree 9, connects to 2 communities
+- [[ESP32-S3-BOX-3 Voice Terminal]] - degree 7, connects to 2 communities
+- [[Prompt Daily Component Health Digest]] - degree 7, connects to 2 communities
+- [[Hermes Bot_1]] - degree 3, connects to 1 community
+- [[Silence-Over-Hallucination Principle]] - degree 3, connects to 1 community

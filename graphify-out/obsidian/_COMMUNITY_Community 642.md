@@ -1,30 +1,30 @@
 ---
 type: community
-cohesion: 0.17
+cohesion: 0.13
 members: 15
 ---
 
 # Community 642
 
-**Cohesion:** 0.17 - loosely connected
+**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
-- [[HERMES_INIT]] - code - tests/startup_smoke/test_wire_llm_settings.js
-- [[OC_INIT]] - code - tests/startup_smoke/test_wire_llm_settings.js
-- [[REPO]] - code - tests/startup_smoke/test_wire_llm_settings.js
-- [[assert()_1]] - code - tests/startup_smoke/test_wire_llm_settings.js
-- [[fs_6]] - code - tests/startup_smoke/test_wire_llm_settings.js
-- [[os_1]] - code - tests/startup_smoke/test_wire_llm_settings.js
-- [[path_6]] - code - tests/startup_smoke/test_wire_llm_settings.js
-- [[read()]] - code - tests/startup_smoke/test_wire_llm_settings.js
-- [[readHermesMcpServers()]] - code - tests/startup_smoke/test_wire_llm_settings.js
-- [[runHermesInit()]] - code - tests/startup_smoke/test_wire_llm_settings.js
-- [[runOpenClawInit()]] - code - tests/startup_smoke/test_wire_llm_settings.js
-- [[stageDefaults()]] - code - tests/startup_smoke/test_wire_llm_settings.js
-- [[test_wire_llm_settings.js]] - code - tests/startup_smoke/test_wire_llm_settings.js
-- [[writeStub()]] - code - tests/startup_smoke/test_wire_llm_settings.js
-- [[{ spawnSync }_1]] - code - tests/startup_smoke/test_wire_llm_settings.js
+- [[dot-test_applies_to_any_agent_not_just_openclaw()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_denial_is_counted_for_soc_correlation()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_non_owner_over_unverified_origin_is_unchanged()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_owner_claim_over_unverified_origin_is_refused_elevation()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_owner_over_verified_origin_keeps_full_authority()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_unknown_origin_defaults_to_unverified()]] - code - gateway/tests/test_tool_acl.py
+- [[dot-test_unverified_origin_still_allows_public_tools()]] - code - gateway/tests/test_tool_acl.py
+- [[A non-owner gains nothing and loses nothing from origin checking.]] - rationale - gateway/tests/test_tool_acl.py
+- [[AgentShroud-side mitigation for the 'channel skips the check' CVE class.…]] - rationale - gateway/tests/test_tool_acl.py
+- [[Fail closed an origin nobody vouched for is not trusted. A caller that forgets…]] - rationale - gateway/tests/test_tool_acl.py
+- [[Refusing ELEVATION is not the same as blanket denial — an unverified origin…]] - rationale - gateway/tests/test_tool_acl.py
+- [[TestOriginAwareAuthorization]] - code - gateway/tests/test_tool_acl.py
+- [[The control is agent-agnostic by construction it takes an origin and an…]] - rationale - gateway/tests/test_tool_acl.py
+- [[The core of the CVE class a side channel claiming to be the owner.…]] - rationale - gateway/tests/test_tool_acl.py
+- [[The legitimate path must not regress.]] - rationale - gateway/tests/test_tool_acl.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,3 +32,9 @@ members: 15
 TABLE source_file, type FROM #community/Community_642
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 134]]
+
+## Top bridge nodes
+- [[TestOriginAwareAuthorization]] - degree 9, connects to 1 community

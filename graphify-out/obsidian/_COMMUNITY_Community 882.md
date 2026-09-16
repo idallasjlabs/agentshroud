@@ -1,24 +1,25 @@
 ---
 type: community
-cohesion: 0.25
-members: 9
+cohesion: 0.20
+members: 10
 ---
 
 # Community 882
 
-**Cohesion:** 0.25 - loosely connected
-**Members:** 9 nodes
+**Cohesion:** 0.20 - loosely connected
+**Members:** 10 nodes
 
 ## Members
-- [[Apollo — Audio Systems Producer_5]] - concept - docs/architecture/agentic-os.md
-- [[Athena — Knowledge Distiller_5]] - concept - docs/architecture/agentic-os.md
-- [[Atlas — Curriculum Architect_5]] - concept - docs/architecture/agentic-os.md
-- [[Daedalus — Concept Illustrator_6]] - concept - docs/architecture/agentic-os.md
-- [[Hermes — Reference Verifier (podcast agent)]] - concept - docs/architecture/agentic-os.md
-- [[Mnemosyne — Retention Engineer_6]] - concept - docs/architecture/agentic-os.md
-- [[Oracle — Feedback Analyst_6]] - concept - docs/architecture/agentic-os.md
-- [[Socrates — Dialogue Architect_5]] - concept - docs/architecture/agentic-os.md
-- [[Vulcan — Subject Matter Auditor_6]] - concept - docs/architecture/agentic-os.md
+- [[author_4]] - code - docker/config/openclaw/skills/i-browser/package.json
+- [[description_14]] - code - docker/config/openclaw/skills/i-browser/package.json
+- [[keywords_4]] - code - docker/config/openclaw/skills/i-browser/package.json
+- [[license_8]] - code - docker/config/openclaw/skills/i-browser/package.json
+- [[main_3]] - code - docker/config/openclaw/skills/i-browser/package.json
+- [[name_6]] - code - docker/config/openclaw/skills/i-browser/package.json
+- [[openclawskillsi-browserpackage.json]] - code - docker/config/openclaw/skills/i-browser/package.json
+- [[scripts_4]] - code - docker/config/openclaw/skills/i-browser/package.json
+- [[test_4]] - code - docker/config/openclaw/skills/i-browser/package.json
+- [[version_8]] - code - docker/config/openclaw/skills/i-browser/package.json
 
 ## Live Query (requires Dataview plugin)
 

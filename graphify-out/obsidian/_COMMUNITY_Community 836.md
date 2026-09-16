@@ -1,25 +1,26 @@
 ---
 type: community
-cohesion: 0.20
-members: 10
+cohesion: 0.18
+members: 11
 ---
 
 # Community 836
 
-**Cohesion:** 0.20 - loosely connected
-**Members:** 10 nodes
+**Cohesion:** 0.18 - loosely connected
+**Members:** 11 nodes
 
 ## Members
-- [[Atlas — Curriculum Architect_2]] - document - docker/config/hermes/skills/i-atlas/SKILL.md
-- [[Input Requirements_12]] - document - docker/config/hermes/skills/i-atlas/SKILL.md
-- [[Output Format_14]] - document - docker/config/hermes/skills/i-atlas/SKILL.md
-- [[Persona_9]] - document - docker/config/hermes/skills/i-atlas/SKILL.md
-- [[Quality Checklist_11]] - document - docker/config/hermes/skills/i-atlas/SKILL.md
-- [[Role_43]] - document - docker/config/hermes/skills/i-atlas/SKILL.md
-- [[SKILL_70]] - document - docker/config/hermes/skills/i-atlas/SKILL.md
-- [[System Prompt_9]] - document - docker/config/hermes/skills/i-atlas/SKILL.md
-- [[User Prompt Template_5]] - document - docker/config/hermes/skills/i-atlas/SKILL.md
-- [[User Prompt Template — OKE Channel_1]] - document - docker/config/hermes/skills/i-atlas/SKILL.md
+- [[Daedalus — Concept Illustrator_4]] - document - docker/config/hermes/skills/i-daedalus/SKILL.md
+- [[Input Requirements_18]] - document - docker/config/hermes/skills/i-daedalus/SKILL.md
+- [[Output Format_34]] - document - docker/config/hermes/skills/i-daedalus/SKILL.md
+- [[Persona_13]] - document - docker/config/hermes/skills/i-daedalus/SKILL.md
+- [[Quality Checklist_15]] - document - docker/config/hermes/skills/i-daedalus/SKILL.md
+- [[Role_88]] - document - docker/config/hermes/skills/i-daedalus/SKILL.md
+- [[System Prompt_13]] - document - docker/config/hermes/skills/i-daedalus/SKILL.md
+- [[architecture.puml (PlantUML)_1]] - document - docker/config/hermes/skills/i-daedalus/SKILL.md
+- [[diagramsREADME_2]] - document - docker/config/hermes/skills/i-daedalus/SKILL.md
+- [[flow.mmd (Mermaid)_1]] - document - docker/config/hermes/skills/i-daedalus/SKILL.md
+- [[hermesskillsi-daedalusSKILL]] - document - docker/config/hermes/skills/i-daedalus/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,9 +28,3 @@ members: 10
 TABLE source_file, type FROM #community/Community_836
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 888]]
-
-## Top bridge nodes
-- [[Atlas — Curriculum Architect_2]] - degree 10, connects to 1 community

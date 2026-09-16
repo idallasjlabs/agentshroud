@@ -10,20 +10,20 @@ members: 14
 **Members:** 14 nodes
 
 ## Members
-- [[Configuration  Environment Variables_19]] - document - docs/vault/02 - Modules/Runtime/security.py.md
-- [[Function Details_25]] - document - docs/vault/02 - Modules/Runtime/security.py.md
-- [[Key Classes  Functions_28]] - document - docs/vault/02 - Modules/Runtime/security.py.md
-- [[Purpose_146]] - document - docs/vault/02 - Modules/Runtime/security.py.md
-- [[Related_32]] - document - docs/vault/02 - Modules/Runtime/security.py.md
-- [[Responsibilities_30]] - document - docs/vault/02 - Modules/Runtime/security.py.md
-- [[Security Feature Registry]] - document - docs/vault/02 - Modules/Runtime/security.py.md
-- [[_validate_runtime(runtime)]] - document - docs/vault/02 - Modules/Runtime/security.py.md
-- [[get_features_for_runtime(runtime)]] - document - docs/vault/02 - Modules/Runtime/security.py.md
-- [[get_missing_features(runtime)]] - document - docs/vault/02 - Modules/Runtime/security.py.md
-- [[get_security_options(runtime)]] - document - docs/vault/02 - Modules/Runtime/security.py.md
-- [[security.py_2]] - document - docs/vault/02 - Modules/Runtime/security.py.md
-- [[security.py_1]] - document - docs/vault/02 - Modules/Runtime/security.py.md
-- [[warn_missing_features(runtime)]] - document - docs/vault/02 - Modules/Runtime/security.py.md
+- [[1. Scope of Change_1]] - document - docker/config/openclaw/skills/i-pca/SKILL.md
+- [[2. What Changes and Why_1]] - document - docker/config/openclaw/skills/i-pca/SKILL.md
+- [[3. Scalability Gate_1]] - document - docker/config/openclaw/skills/i-pca/SKILL.md
+- [[4. Blast Radius_4]] - document - docker/config/openclaw/skills/i-pca/SKILL.md
+- [[5. Known Limits and Assumptions_1]] - document - docker/config/openclaw/skills/i-pca/SKILL.md
+- [[6. Alternatives Considered_1]] - document - docker/config/openclaw/skills/i-pca/SKILL.md
+- [[7. Open Questions_1]] - document - docker/config/openclaw/skills/i-pca/SKILL.md
+- [[8. Verification Plan_1]] - document - docker/config/openclaw/skills/i-pca/SKILL.md
+- [[Closing Gate_2]] - document - docker/config/openclaw/skills/i-pca/SKILL.md
+- [[Output Format Rules_2]] - document - docker/config/openclaw/skills/i-pca/SKILL.md
+- [[Output Sections (ALL required)_1]] - document - docker/config/openclaw/skills/i-pca/SKILL.md
+- [[Role_72]] - document - docker/config/openclaw/skills/i-pca/SKILL.md
+- [[Skill Pre-Change Analysis (PCA)_2]] - document - docker/config/openclaw/skills/i-pca/SKILL.md
+- [[openclawskillsi-pcaSKILL]] - document - docker/config/openclaw/skills/i-pca/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

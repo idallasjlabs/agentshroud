@@ -10,24 +10,24 @@ members: 18
 **Members:** 18 nodes
 
 ## Members
-- [[Phase 1 — Parse Arguments]] - document - skills/openclaw/gh-issues/SKILL.md
-- [[Phase 2 — Fetch Issues]] - document - skills/openclaw/gh-issues/SKILL.md
-- [[Phase 3 — Present & Confirm]] - document - skills/openclaw/gh-issues/SKILL.md
-- [[Phase 4 — Pre-flight Checks]] - document - skills/openclaw/gh-issues/SKILL.md
-- [[Phase 5 — Spawn Sub-agents (Parallel)]] - document - skills/openclaw/gh-issues/SKILL.md
-- [[Phase 6 — PR Review Handler]] - document - skills/openclaw/gh-issues/SKILL.md
-- [[Results Collection]] - document - skills/openclaw/gh-issues/SKILL.md
-- [[Spawn configuration per sub-agent]] - document - skills/openclaw/gh-issues/SKILL.md
-- [[Step 6.1 — Discover PRs to Monitor]] - document - skills/openclaw/gh-issues/SKILL.md
-- [[Step 6.2 — Fetch All Review Sources]] - document - skills/openclaw/gh-issues/SKILL.md
-- [[Step 6.3 — Analyze Comments for Actionability]] - document - skills/openclaw/gh-issues/SKILL.md
-- [[Step 6.4 — Present Review Comments]] - document - skills/openclaw/gh-issues/SKILL.md
-- [[Step 6.5 — Spawn Review Fix Sub-agents (Parallel)]] - document - skills/openclaw/gh-issues/SKILL.md
-- [[Step 6.6 — Review Results]] - document - skills/openclaw/gh-issues/SKILL.md
-- [[Sub-agent Task Prompt]] - document - skills/openclaw/gh-issues/SKILL.md
-- [[Timeout Handling]] - document - skills/openclaw/gh-issues/SKILL.md
-- [[Watch Mode (if --watch is active)]] - document - skills/openclaw/gh-issues/SKILL.md
-- [[gh-issues — Auto-fix GitHub Issues with Parallel Sub-agents]] - document - skills/openclaw/gh-issues/SKILL.md
+- [[2026-05-05 agent stub cleanup (160 files removed)]] - document - .llm_settings/UPGRADE_LOG.md
+- [[Claude Code (PRIMARY developer configuration)]] - concept - .llm_settings/docs/AI_TOOLS_CONFIGURATION_GUIDE.md
+- [[Codex CLI (TERTIARY agent, TOML config)]] - concept - .llm_settings/docs/AI_TOOLS_CONFIGURATION_GUIDE.md
+- [[Codex CLI role contract (test augmentation  validation)]] - concept - .llm_settings/scripts/AGENTS.md
+- [[Gemini standalone-mode recursion fix]] - rationale - .llm_settings/UPGRADE_LOG.md
+- [[Governance & risk doctrine (ITIL v4, ISO 200009001, NIST CSF)]] - concept - .llm_settings/scripts/CLAUDE.md
+- [[LLM Operating Context — Isaiah Jefferson]] - concept - .llm_settings/scripts/CLAUDE.md
+- [[MCP server expansion (3 → 11) and --mcp flag]] - document - .llm_settings/UPGRADE_LOG.md
+- [[MCP server integration matrix per tool]] - concept - .llm_settings/docs/CONFIGURATION_SUMMARY.md
+- [[Normalized domain glossary (BESS, DAS, FODL, PKEOKE, FOD)]] - concept - .llm_settings/scripts/CLAUDE.md
+- [[Plan Mode as default permission mode]] - concept - .llm_settings/docs/Claude-Code-TDD-Playbook.md
+- [[Pre-change analysis protocol (CHANGE PROPOSAL, Section 15)]] - concept - .llm_settings/scripts/CLAUDE.md
+- [[Pre-change analysis protocol (Codex CHANGE PROPOSAL)]] - concept - .llm_settings/scripts/AGENTS.md
+- [[UVuvx package manager prerequisite]] - concept - .llm_settings/docs/MCP_README.md
+- [[Warn-first hook strategy (PreToolUsePostToolUse)]] - rationale - .llm_settings/docs/Claude-Code-TDD-Playbook.md
+- [[Zabbix MCP server]] - concept - .llm_settings/docs/MCP_ADDITIONAL_SERVICES.md
+- [[awslabs.aws-api-mcp-server configuration (--readonly)]] - concept - .llm_settings/docs/MCP_README.md
+- [[llm-init.sh — project-level multi-tool config deployment]] - concept - .llm_settings/scripts/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,7 +37,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 1027]]
+- 2 edges to [[_COMMUNITY_Community 721]]
+- 1 edge to [[_COMMUNITY_Community 1062]]
 
 ## Top bridge nodes
-- [[gh-issues — Auto-fix GitHub Issues with Parallel Sub-agents]] - degree 9, connects to 1 community
+- [[awslabs.aws-api-mcp-server configuration (--readonly)]] - degree 5, connects to 1 community
+- [[Claude Code (PRIMARY developer configuration)]] - degree 4, connects to 1 community
+- [[Normalized domain glossary (BESS, DAS, FODL, PKEOKE, FOD)]] - degree 3, connects to 1 community

@@ -1,26 +1,27 @@
 ---
 type: community
-cohesion: 0.18
-members: 11
+cohesion: 0.30
+members: 12
 ---
 
 # Community 809
 
-**Cohesion:** 0.18 - loosely connected
-**Members:** 11 nodes
+**Cohesion:** 0.30 - loosely connected
+**Members:** 12 nodes
 
 ## Members
-- [[.test_critical_image_finding_uses_red_icon()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_image_scan_error_does_not_abort_report()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_image_scan_result_in_return_value()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_image_scan_summary_appended_to_message()]] - code - gateway/tests/test_daily_cve_report.py
-- [[.test_image_scans_run_for_each_target()]] - code - gateway/tests/test_daily_cve_report.py
-- [[A critical finding in an image scan uses the red icon.]] - rationale - gateway/tests/test_daily_cve_report.py
-- [[A failing image scan appends an error line but does not raise.]] - rationale - gateway/tests/test_daily_cve_report.py
-- [[Message sent via Telegram includes a Container Image Scans section.]] - rationale - gateway/tests/test_daily_cve_report.py
-- [[Return value includes image_scans list.]] - rationale - gateway/tests/test_daily_cve_report.py
-- [[TestRunAndSendCveReportImageScans]] - code - gateway/tests/test_daily_cve_report.py
-- [[run_and_send_cve_report calls run_trivy_scan with scan_type='image' for each tar]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[dot-test_idempotent_rerun_finds_nothing_left()]] - code - gateway/tests/test_audit_archive.py
+- [[dot-test_missing_db_reported_not_raised()]] - code - gateway/tests/test_audit_archive.py
+- [[dot-test_no_matching_rows_is_a_clean_noop()]] - code - gateway/tests/test_audit_archive.py
+- [[dot-test_processes_in_multiple_batches()]] - code - gateway/tests/test_audit_archive.py
+- [[dot-test_purges_only_matching_event_type_and_severity()]] - code - gateway/tests/test_audit_archive.py
+- [[Archive+delete ALL rows matching (event_type, severity), regardless of age.]] - rationale - gateway/security/audit_archive.py
+- [[TestPurgeLowValueEvents]] - code - gateway/tests/test_audit_archive.py
+- [[_make_mixed_live_db()]] - code - gateway/tests/test_audit_archive.py
+- [[n_noisy events of (egress_filter, INFO); n_denies of (egress_filter, HIGH);]] - rationale - gateway/tests/test_audit_archive.py
+- [[now()_11]] - code - gateway/tests/test_audit_archive.py
+- [[purge_low_value_events()]] - code - gateway/security/audit_archive.py
+- [[test_audit_archive.py]] - code - gateway/tests/test_audit_archive.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,7 +31,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 122]]
+- 7 edges to [[_COMMUNITY_Community 365]]
 
 ## Top bridge nodes
-- [[TestRunAndSendCveReportImageScans]] - degree 6, connects to 1 community
+- [[purge_low_value_events()]] - degree 10, connects to 1 community
+- [[test_audit_archive.py]] - degree 8, connects to 1 community

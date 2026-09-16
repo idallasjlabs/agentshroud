@@ -1,23 +1,24 @@
 ---
 type: community
-cohesion: 0.25
-members: 8
+cohesion: 0.22
+members: 9
 ---
 
 # Community 938
 
-**Cohesion:** 0.25 - loosely connected
-**Members:** 8 nodes
+**Cohesion:** 0.22 - loosely connected
+**Members:** 9 nodes
 
 ## Members
-- [[Step 6b - Wiki (only if --wiki flag)]] - document - .agents/skills/graphify/references/exports.md
-- [[Step 7 - Neo4j export (only if --neo4j or --neo4j-push flag)]] - document - .agents/skills/graphify/references/exports.md
-- [[Step 7b - SVG export (only if --svg flag)]] - document - .agents/skills/graphify/references/exports.md
-- [[Step 7c - GraphML export (only if --graphml flag)]] - document - .agents/skills/graphify/references/exports.md
-- [[Step 7d - MCP server (only if --mcp flag)]] - document - .agents/skills/graphify/references/exports.md
-- [[Step 8 - Token reduction benchmark (only if total_words  5000)]] - document - .agents/skills/graphify/references/exports.md
-- [[exports]] - document - .agents/skills/graphify/references/exports.md
-- [[graphify reference extra exports and benchmark]] - document - .agents/skills/graphify/references/exports.md
+- [[Branch Naming_2]] - document - docker/config/openclaw/skills/i-gg/SKILL.md
+- [[Commit Messages  (Conventional Commits)_2]] - document - docker/config/openclaw/skills/i-gg/SKILL.md
+- [[Emergency Hotfix_5]] - document - docker/config/openclaw/skills/i-gg/SKILL.md
+- [[Mandatory Workflow  (10 steps)_2]] - document - docker/config/openclaw/skills/i-gg/SKILL.md
+- [[Protected Branch_2]] - document - docker/config/openclaw/skills/i-gg/SKILL.md
+- [[REFUSE These_2]] - document - docker/config/openclaw/skills/i-gg/SKILL.md
+- [[Role_103]] - document - docker/config/openclaw/skills/i-gg/SKILL.md
+- [[Skill Git Workflow Guardian (GIT-GUARD)_2]] - document - docker/config/openclaw/skills/i-gg/SKILL.md
+- [[openclawskillsi-ggSKILL]] - document - docker/config/openclaw/skills/i-gg/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

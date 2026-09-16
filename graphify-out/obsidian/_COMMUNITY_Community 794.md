@@ -1,26 +1,27 @@
 ---
 type: community
-cohesion: 0.18
-members: 11
+cohesion: 0.27
+members: 12
 ---
 
 # Community 794
 
-**Cohesion:** 0.18 - loosely connected
-**Members:** 11 nodes
+**Cohesion:** 0.27 - loosely connected
+**Members:** 12 nodes
 
 ## Members
-- [[1. System Profiler (most comprehensive single source)_1]] - document - docker/config/hermes/skills/i-mac/SKILL.md
-- [[10. Spotlight Catch-All_1]] - document - docker/config/hermes/skills/i-mac/SKILL.md
-- [[2. Applications Folders (catch drag-and-drop installs)_1]] - document - docker/config/hermes/skills/i-mac/SKILL.md
-- [[3. Homebrew (formulae + casks)_1]] - document - docker/config/hermes/skills/i-mac/SKILL.md
-- [[4. Mac App Store (via `mas` CLI)_1]] - document - docker/config/hermes/skills/i-mac/SKILL.md
-- [[5. Setapp Detection_1]] - document - docker/config/hermes/skills/i-mac/SKILL.md
-- [[6. Package Receipts (direct .pkg installs)_1]] - document - docker/config/hermes/skills/i-mac/SKILL.md
-- [[7. CLI Tools & Utilities (non-.app installs)_1]] - document - docker/config/hermes/skills/i-mac/SKILL.md
-- [[8. Launch Agents & Daemons (background services)_1]] - document - docker/config/hermes/skills/i-mac/SKILL.md
-- [[9. Browser Extensions (optional but useful)_1]] - document - docker/config/hermes/skills/i-mac/SKILL.md
-- [[Phase 1 — Raw Collection_1]] - document - docker/config/hermes/skills/i-mac/SKILL.md
+- [[dot-_s()]] - code - gateway/tests/test_voice_gateway.py
+- [[dot-test_empty_after_normalise_returns_empty_list()]] - code - gateway/tests/test_voice_gateway.py
+- [[dot-test_empty_string_returns_empty_list()]] - code - gateway/tests/test_voice_gateway.py
+- [[dot-test_long_sentence_wrapped_at_max_chars()]] - code - gateway/tests/test_voice_gateway.py
+- [[dot-test_multi_sentence_returns_ordered_chunks()]] - code - gateway/tests/test_voice_gateway.py
+- [[dot-test_per_chunk_normalisation()]] - code - gateway/tests/test_voice_gateway.py
+- [[dot-test_short_fragment_merged_forward()]] - code - gateway/tests/test_voice_gateway.py
+- [[dot-test_single_sentence_returns_one_chunk()]] - code - gateway/tests/test_voice_gateway.py
+- [[A fragment under 12 chars is merged into the following chunk.]] - rationale - gateway/tests/test_voice_gateway.py
+- [[TestSplitForSpeech]] - code - gateway/tests/test_voice_gateway.py
+- [[Unit tests for voice_gateway.tts.split_for_speech (pure function, no IO).]] - rationale - gateway/tests/test_voice_gateway.py
+- [[split_for_speech normalises the full text so no markdown or tokens survive.]] - rationale - gateway/tests/test_voice_gateway.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,7 +31,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 1020]]
+- 1 edge to [[_COMMUNITY_Voice Gateway Test Fixtures]]
 
 ## Top bridge nodes
-- [[Phase 1 — Raw Collection_1]] - degree 11, connects to 1 community
+- [[TestSplitForSpeech]] - degree 10, connects to 1 community

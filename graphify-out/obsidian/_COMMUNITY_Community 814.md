@@ -1,26 +1,27 @@
 ---
 type: community
-cohesion: 0.31
-members: 11
+cohesion: 0.17
+members: 12
 ---
 
 # Community 814
 
-**Cohesion:** 0.31 - loosely connected
-**Members:** 11 nodes
+**Cohesion:** 0.17 - loosely connected
+**Members:** 12 nodes
 
 ## Members
-- [[.test_comma_separated()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_custom_default()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_dedup_preserves_first_order()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_empty_string_returns_defaults()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_mixed_separators_and_stripping()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_none_returns_defaults()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_only_separators_falls_back_to_default()]] - code - gateway/tests/test_multi_host_test.py
-- [[.test_whitespace_separated()]] - code - gateway/tests/test_multi_host_test.py
-- [[Parse a commawhitespace-separated host list into a de-duplicated list.      Emp]] - rationale - gateway/tools/multi_host_test.py
-- [[TestParseHosts]] - code - gateway/tests/test_multi_host_test.py
-- [[parse_hosts()]] - code - gateway/tools/multi_host_test.py
+- [[dot-test_ws_activity_rejects_bad_token()]] - code - gateway/tests/test_security_fixes.py
+- [[dot-test_ws_activity_rejects_no_token()]] - code - gateway/tests/test_security_fixes.py
+- [[dot-test_ws_approvals_rejects_bad_token()]] - code - gateway/tests/test_security_fixes.py
+- [[dot-test_ws_approvals_rejects_master_token()]] - code - gateway/tests/test_security_fixes.py
+- [[dot-test_ws_approvals_rejects_no_token()]] - code - gateway/tests/test_security_fixes.py
+- [[TestWebSocketHandshakeAuth]] - code - gateway/tests/test_security_fixes.py
+- [[WS wsactivity closes immediately without token]] - rationale - gateway/tests/test_security_fixes.py
+- [[WS wsactivity closes with bad token]] - rationale - gateway/tests/test_security_fixes.py
+- [[WS wsapprovals closes immediately without token]] - rationale - gateway/tests/test_security_fixes.py
+- [[WS wsapprovals closes with bad token]] - rationale - gateway/tests/test_security_fixes.py
+- [[WS wsapprovals rejects the master auth token -- R3-L4 removed the         mast]] - rationale - gateway/tests/test_security_fixes.py
+- [[WebSocket endpoints must validate token during handshake, not first message]] - rationale - gateway/tests/test_security_fixes.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,12 +31,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 898]]
-- 2 edges to [[_COMMUNITY_Community 485]]
-- 1 edge to [[_COMMUNITY_Community 993]]
-- 1 edge to [[_COMMUNITY_Community 869]]
-- 1 edge to [[_COMMUNITY_Community 728]]
+- 4 edges to [[_COMMUNITY_Approval Queue (WebSocket)]]
+- 2 edges to [[_COMMUNITY_Community 65]]
 
 ## Top bridge nodes
-- [[TestParseHosts]] - degree 12, connects to 3 communities
-- [[parse_hosts()]] - degree 12, connects to 3 communities
+- [[TestWebSocketHandshakeAuth]] - degree 12, connects to 2 communities

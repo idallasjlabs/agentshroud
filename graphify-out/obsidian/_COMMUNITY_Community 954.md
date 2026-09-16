@@ -1,23 +1,24 @@
 ---
 type: community
-cohesion: 0.25
-members: 8
+cohesion: 0.22
+members: 9
 ---
 
 # Community 954
 
-**Cohesion:** 0.25 - loosely connected
-**Members:** 8 nodes
+**Cohesion:** 0.22 - loosely connected
+**Members:** 9 nodes
 
 ## Members
-- [[Hermes — Reference Verifier_1]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
-- [[Input Requirements_15]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
-- [[Output Format_17]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
-- [[Persona_11]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
-- [[Quality Checklist_13]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
-- [[Role_52]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
-- [[SKILL_88]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
-- [[System Prompt_11]] - document - docker/config/hermes/skills/i-hermes/SKILL.md
+- [[4. Function Call Exposure (XML Leak)]] - document - docs/project/REPORTED_ISSUES.md
+- [[5. ContextGuard False Positives (Collaborator Block)]] - document - docs/project/TELEGRAM_ISSUES.md
+- [[5. `main.py` Async Bug in Email Module]] - document - docs/project/REPORTED_ISSUES.md
+- [[6. SSH Bypass in `is_auto_approved`]] - document - docs/project/REPORTED_ISSUES.md
+- [[6. iMessage Integration Permissions]] - document - docs/project/TELEGRAM_ISSUES.md
+- [[7. CI Safety Issue Pytest Exit Codes Swallowed]] - document - docs/project/REPORTED_ISSUES.md
+- [[7. SMTP Port Blocks (Email Failures)]] - document - docs/project/TELEGRAM_ISSUES.md
+- [[8. ForwardResponse Type Mismatch]] - document - docs/project/REPORTED_ISSUES.md
+- [[🟠 HIGH Security & Logic Issues]] - document - docs/project/TELEGRAM_ISSUES.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,3 +26,10 @@ members: 8
 TABLE source_file, type FROM #community/Community_954
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Community 696]]
+- 1 edge to [[_COMMUNITY_Community 484]]
+
+## Top bridge nodes
+- [[🟠 HIGH Security & Logic Issues]] - degree 10, connects to 2 communities

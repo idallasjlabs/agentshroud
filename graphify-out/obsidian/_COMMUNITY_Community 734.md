@@ -1,28 +1,28 @@
 ---
 type: community
-cohesion: 0.29
+cohesion: 0.15
 members: 13
 ---
 
 # Community 734
 
-**Cohesion:** 0.29 - loosely connected
+**Cohesion:** 0.15 - loosely connected
 **Members:** 13 nodes
 
 ## Members
-- [[._make_dispatcher()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_cleanup_seen()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_critical_alert_notified()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_dedup()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_get_digest()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_get_stats()_2]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_high_alert_notified()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_log_to_jsonl()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_low_alert_buffered()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_medium_alert_buffered()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_notify_failure()]] - code - gateway/tests/test_security_toolchain.py
-- [[.test_rate_limiting()]] - code - gateway/tests/test_security_toolchain.py
-- [[TestAlertDispatcher]] - code - gateway/tests/test_security_toolchain.py
+- [[Re-injection Command (for reference)_1]] - document - docker/config/hermes/skills/i-session-prompt/SKILL.md
+- [[Role_78]] - document - docker/config/hermes/skills/i-session-prompt/SKILL.md
+- [[Rules_22]] - document - docker/config/hermes/skills/i-session-prompt/SKILL.md
+- [[Skill Session Prompt Generator (SESSION-PROMPT)_1]] - document - docker/config/hermes/skills/i-session-prompt/SKILL.md
+- [[Step 1 — Survey the Repo_1]] - document - docker/config/hermes/skills/i-session-prompt/SKILL.md
+- [[Step 2 — Answer Six Questions_1]] - document - docker/config/hermes/skills/i-session-prompt/SKILL.md
+- [[Step 3 — Write SESSION_PROMPT_1]] - document - docker/config/hermes/skills/i-session-prompt/SKILL.md
+- [[Step 4 — Write the File_1]] - document - docker/config/hermes/skills/i-session-prompt/SKILL.md
+- [[Step 5 — Inject into All Three LLMs_1]] - document - docker/config/hermes/skills/i-session-prompt/SKILL.md
+- [[Step 6 — Confirm_1]] - document - docker/config/hermes/skills/i-session-prompt/SKILL.md
+- [[Trigger_2]] - document - docker/config/hermes/skills/i-session-prompt/SKILL.md
+- [[Workflow Survey → Draft → Inject → Confirm_1]] - document - docker/config/hermes/skills/i-session-prompt/SKILL.md
+- [[hermesskillsi-session-promptSKILL]] - document - docker/config/hermes/skills/i-session-prompt/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,11 +30,3 @@ members: 13
 TABLE source_file, type FROM #community/Community_734
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_Security Audit & Drift Detection]]
-- 1 edge to [[_COMMUNITY_Community 112]]
-
-## Top bridge nodes
-- [[TestAlertDispatcher]] - degree 14, connects to 2 communities
-- [[._make_dispatcher()]] - degree 13, connects to 1 community

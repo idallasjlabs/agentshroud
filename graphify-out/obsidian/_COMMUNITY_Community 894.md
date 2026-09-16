@@ -1,24 +1,25 @@
 ---
 type: community
-cohesion: 0.22
-members: 9
+cohesion: 0.27
+members: 10
 ---
 
 # Community 894
 
-**Cohesion:** 0.22 - loosely connected
-**Members:** 9 nodes
+**Cohesion:** 0.27 - loosely connected
+**Members:** 10 nodes
 
 ## Members
-- [[Constraints_2]] - document - docker/config/openclaw/skills/i-pr/SKILL.md
-- [[Content Requirements_2]] - document - docker/config/openclaw/skills/i-pr/SKILL.md
-- [[Header_2]] - document - docker/config/openclaw/skills/i-pr/SKILL.md
-- [[Objective_4]] - document - docker/config/openclaw/skills/i-pr/SKILL.md
-- [[Role_99]] - document - docker/config/openclaw/skills/i-pr/SKILL.md
-- [[SKILL_169]] - document - docker/config/openclaw/skills/i-pr/SKILL.md
-- [[Safety_2]] - document - docker/config/openclaw/skills/i-pr/SKILL.md
-- [[Skill Pull Request (PR) Generator_2]] - document - docker/config/openclaw/skills/i-pr/SKILL.md
-- [[Technical Detail_2]] - document - docker/config/openclaw/skills/i-pr/SKILL.md
+- [[dot-__init__()_192]] - code - gateway/proxy/telegram_gateway_relay.py
+- [[dot-send_message()]] - code - gateway/proxy/telegram_gateway_relay.py
+- [[dot-send_status_update()]] - code - gateway/proxy/telegram_gateway_relay.py
+- [[Relay Telegram messages through the gateway control plane.      This enables con]] - rationale - gateway/proxy/telegram_gateway_relay.py
+- [[Result of a Telegram send operation via gateway.]] - rationale - gateway/proxy/telegram_gateway_relay.py
+- [[Send a Telegram message via the gateway relay.          Args             chat_i]] - rationale - gateway/proxy/telegram_gateway_relay.py
+- [[Send a formatted status update via Telegram.          Formats the message with a]] - rationale - gateway/proxy/telegram_gateway_relay.py
+- [[TelegramGatewayRelay]] - code - gateway/proxy/telegram_gateway_relay.py
+- [[TelegramSendResult]] - code - gateway/proxy/telegram_gateway_relay.py
+- [[telegram_gateway_relay.py]] - code - gateway/proxy/telegram_gateway_relay.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,3 +27,9 @@ members: 9
 TABLE source_file, type FROM #community/Community_894
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_TeamsGroup Collaborator Responses]]
+
+## Top bridge nodes
+- [[telegram_gateway_relay.py]] - degree 3, connects to 1 community

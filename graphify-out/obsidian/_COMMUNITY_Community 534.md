@@ -10,23 +10,23 @@ members: 17
 **Members:** 17 nodes
 
 ## Members
-- [[Configuration_11]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
-- [[Environment Variables_8]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
-- [[Error Handling_7]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
-- [[Function Details_30]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
-- [[Key Classes  Functions_33]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
-- [[Mode Enforce vs Monitor_3]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
-- [[Purpose_151]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
-- [[Related_37]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
-- [[Responsibilities_35]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
-- [[Threat Model_6]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
-- [[clamav_scanner.py_2]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
-- [[clamav_scanner.py_1]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
-- [[generate_summary(report)]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
-- [[parse_clamscan_output(output, returncode)]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
-- [[run_clamscan(target, recursive, timeout, clamscan_bin, exclude_patterns)]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
-- [[save_report(report, log_dir)]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
-- [[update_virus_db(freshclam_bin, timeout)]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[AgentTarget_3]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
+- [[Config Keys Read]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
+- [[EmailSendRequest_2]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
+- [[Environment Variables Used_2]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
+- [[ForwardRequest_3]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
+- [[ForwardResponse_1]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
+- [[Imports From  Exports To]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
+- [[Key Classes  Functions_8]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
+- [[Known Issues  Notes_1]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
+- [[Model Details]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
+- [[Purpose_133]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
+- [[RedactionDetail_1]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
+- [[Related_12]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
+- [[Responsibilities_10]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
+- [[SSHExecRequest  SSHExecResponse]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
+- [[models.py_1]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
+- [[models.py]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
 
 ## Live Query (requires Dataview plugin)
 

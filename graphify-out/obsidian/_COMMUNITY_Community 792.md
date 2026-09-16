@@ -1,26 +1,27 @@
 ---
 type: community
-cohesion: 0.20
-members: 11
+cohesion: 0.17
+members: 12
 ---
 
 # Community 792
 
-**Cohesion:** 0.20 - loosely connected
-**Members:** 11 nodes
+**Cohesion:** 0.17 - loosely connected
+**Members:** 12 nodes
 
 ## Members
-- [[02-infrastructure]] - document - docs/diagrams/02-infrastructure.md
-- [[4. Infrastructure Diagram — Hosting & Servers]] - document - docs/diagrams/02-infrastructure.md
-- [[5. Network Topology Diagram]] - document - docs/diagrams/02-infrastructure.md
-- [[6. Deployment Diagram — What Runs Where]] - document - docs/diagrams/02-infrastructure.md
-- [[AgentShroud — Infrastructure & Network Diagrams]] - document - docs/diagrams/02-infrastructure.md
-- [[Deployment Diagram — What Runs Where]] - concept - docs/diagrams/02-infrastructure.md
-- [[Infrastructure Diagram — Hosting & Servers]] - concept - docs/diagrams/02-infrastructure.md
-- [[Network Topology Diagram]] - concept - docs/diagrams/02-infrastructure.md
-- [[Rendered CICD Deployment Diagram (PNG)]] - image - docs/diagrams/images/diagram-06-cicd-deployment.png
-- [[Rendered Infrastructure Hosting Diagram (PNG)]] - image - docs/diagrams/images/diagram-04-infrastructure-hosting.png
-- [[Rendered Network Topology Diagram (PNG)]] - image - docs/diagrams/images/diagram-05-network-topology.png
+- [[dot-_is_local_oom()]] - code - gateway/proxy/llm_proxy.py
+- [[Return True if the response indicates a local-model OOM or backend_unavailable.…]] - rationale - gateway/proxy/llm_proxy.py
+- [[_is_local_oom detects 'out of memory' in error message string.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[_is_local_oom handles raw non-JSON bodies from some backends.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[_is_local_oom returns False for cloud 429 quota errors (different failover…]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[_is_local_oom returns False for non-OOM raw 500 bodies.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[_is_local_oom returns True for backend_unavailable 503 bodies.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_is_local_oom_detects_backend_unavailable()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_is_local_oom_detects_oom_in_error_message()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_is_local_oom_handles_non_json_body()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_is_local_oom_raw_body_false_on_normal_500()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_is_local_oom_returns_false_for_quota_429()]] - code - gateway/tests/test_llm_proxy_local_parity.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,8 +31,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 442]]
+- 7 edges to [[_COMMUNITY_Community 37]]
+- 6 edges to [[_COMMUNITY_Community 49]]
 
 ## Top bridge nodes
-- [[02-infrastructure]] - degree 5, connects to 1 community
-- [[Deployment Diagram — What Runs Where]] - degree 3, connects to 1 community
+- [[dot-_is_local_oom()]] - degree 9, connects to 2 communities
+- [[test_is_local_oom_detects_backend_unavailable()]] - degree 4, connects to 2 communities
+- [[test_is_local_oom_detects_oom_in_error_message()]] - degree 4, connects to 2 communities
+- [[test_is_local_oom_handles_non_json_body()]] - degree 4, connects to 2 communities
+- [[test_is_local_oom_raw_body_false_on_normal_500()]] - degree 4, connects to 2 communities

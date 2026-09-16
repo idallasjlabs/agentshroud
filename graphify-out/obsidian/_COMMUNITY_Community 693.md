@@ -10,20 +10,20 @@ members: 14
 **Members:** 14 nodes
 
 ## Members
-- [[.test_false_on_empty_string()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_false_on_non_string()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_no_false_positive_on_domain_mention()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_no_false_positive_on_generic_llm_response()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_true_on_callback_token()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_true_on_deny_token()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[.test_true_on_real_egress_banner_header()]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[Common LLM prose with 'risk', 'tool', 'id' must NOT trigger the matcher.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Generic 'domain' mention without the egress emoji must not trigger.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Inline-keyboard callback tokens must always match (egress_allow_always_uuid).]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[TestInternalBannerMatcher]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[The canonical 🌐 Egress Request header from TelegramEgressNotifier must match.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[_contains_internal_approval_banner must only fire on real egress banners.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[egress_deny_ callback token must match.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[1. Clone the Repository_2]] - document - docs/operations/macos.md
+- [[2. Install Docker Desktop]] - document - docs/operations/macos.md
+- [[3. Set Up Secrets_2]] - document - docs/operations/macos.md
+- [[4. Configure AgentShroud_2]] - document - docs/operations/macos.md
+- [[5. Build and Start_2]] - document - docs/operations/macos.md
+- [[6. Verify_2]] - document - docs/operations/macos.md
+- [[Apple Silicon vs Intel]] - document - docs/operations/macos.md
+- [[Deploying AgentShroud on macOS (Apple Silicon  Intel)]] - document - docs/operations/macos.md
+- [[Docker Desktop Resource Allocation]] - document - docs/operations/macos.md
+- [[Fresh Install_2]] - document - docs/operations/macos.md
+- [[Prerequisites_12]] - document - docs/operations/macos.md
+- [[Running Without Docker (Native Python)]] - document - docs/operations/macos.md
+- [[Updating to Latest Release_2]] - document - docs/operations/macos.md
+- [[macos]] - document - docs/operations/macos.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,11 +31,3 @@ members: 14
 TABLE source_file, type FROM #community/Community_693
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 3 edges to [[_COMMUNITY_PII Sanitizer & E2E Tests]]
-- 1 edge to [[_COMMUNITY_Adversarial Injection Guards]]
-- 1 edge to [[_COMMUNITY_Community 17]]
-
-## Top bridge nodes
-- [[TestInternalBannerMatcher]] - degree 13, connects to 3 communities

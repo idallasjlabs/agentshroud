@@ -1,26 +1,27 @@
 ---
 type: community
-cohesion: 0.18
-members: 11
+cohesion: 0.17
+members: 12
 ---
 
 # Community 785
 
-**Cohesion:** 0.18 - loosely connected
-**Members:** 11 nodes
+**Cohesion:** 0.17 - loosely connected
+**Members:** 12 nodes
 
 ## Members
-- [[AGENTS.md — Codex CLI Guidance]] - document - AGENTS.md
-- [[Claude Code — Primary Developer]] - concept - AGENTS.md
-- [[Codex Configuration (.codexconfig.toml)]] - document - AGENTS.md
-- [[Codex Prime Directive Not Primary Developer]] - rationale - AGENTS.md
-- [[Codex Safe Refactor Role]] - concept - AGENTS.md
-- [[Codex Test Augmenter Role]] - concept - AGENTS.md
-- [[Codex Validation Runner Role]] - concept - AGENTS.md
-- [[Data Lakehouse Platform (GSDL)]] - concept - AGENTS.md
-- [[safe-refactor.agent]] - document - .github/agents/safe-refactor.agent.md
-- [[test-augmenter.agent]] - document - .github/agents/test-augmenter.agent.md
-- [[validation-runner.agent]] - document - .github/agents/validation-runner.agent.md
+- [[ARM64 Seccomp Profile Requirement]] - rationale - docs/operations/raspberry-pi.md
+- [[Colima Troubleshooting Procedures]] - concept - docs/runbooks/RUNBOOK.md
+- [[Configuration Reference]] - document - docs/setup/setup-guide.md
+- [[Example Configurations_1]] - document - docs/setup/setup-guide.md
+- [[Multi-Host Infrastructure (MarvinTrillianPi)]] - concept - docs/runbooks/RUNBOOK.md
+- [[RUNBOOK_1]] - document - docs/runbooks/RUNBOOK.md
+- [[Seccomp Profile Conflict (x86_64)]] - rationale - docs/project/TELEGRAM_ISSUES.md
+- [[Secrets Setup Script (dockersecretssetup-secrets.sh)]] - concept - docs/operations/raspberry-pi.md
+- [[agentshroud.yaml Configuration File]] - concept - docs/operations/raspberry-pi.md
+- [[egress-config.yml - Egress Filtering]] - document - docs/setup/setup-guide.md
+- [[mcp-config.yml - MCP Server Registry]] - document - docs/setup/setup-guide.md
+- [[raspberry-pi]] - document - docs/operations/raspberry-pi.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,11 +31,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 389]]
-- 1 edge to [[_COMMUNITY_Community 488]]
+- 2 edges to [[_COMMUNITY_Community 538]]
+- 2 edges to [[_COMMUNITY_Community 577]]
+- 1 edge to [[_COMMUNITY_Community 323]]
 - 1 edge to [[_COMMUNITY_Community 340]]
+- 1 edge to [[_COMMUNITY_Community 435]]
+- 1 edge to [[_COMMUNITY_Community 704]]
+- 1 edge to [[_COMMUNITY_Community 633]]
+- 1 edge to [[_COMMUNITY_Community 786]]
+- 1 edge to [[_COMMUNITY_Community 787]]
 
 ## Top bridge nodes
-- [[safe-refactor.agent]] - degree 2, connects to 1 community
-- [[test-augmenter.agent]] - degree 2, connects to 1 community
-- [[validation-runner.agent]] - degree 2, connects to 1 community
+- [[RUNBOOK_1]] - degree 7, connects to 5 communities
+- [[raspberry-pi]] - degree 8, connects to 4 communities
+- [[Configuration Reference]] - degree 5, connects to 1 community
+- [[Seccomp Profile Conflict (x86_64)]] - degree 2, connects to 1 community

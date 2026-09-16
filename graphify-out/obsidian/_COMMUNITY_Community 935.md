@@ -1,23 +1,24 @@
 ---
 type: community
 cohesion: 0.25
-members: 8
+members: 9
 ---
 
 # Community 935
 
 **Cohesion:** 0.25 - loosely connected
-**Members:** 8 nodes
+**Members:** 9 nodes
 
 ## Members
-- [[Excessive False Positives]] - document - docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md
-- [[PII Engine Not Initialized]] - document - docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md
-- [[PII Not Being Detected]] - document - docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md
-- [[PII Pipeline Errors_2]] - document - docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md
-- [[Redaction Breaking JSONStructured Data]] - document - docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md
-- [[Related Notes_60]] - document - docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md
-- [[Tool Result PII Not Scanned]] - document - docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md
-- [[spaCy Model Issues]] - document - docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md
+- [[2. Atlassian MCP Authentication Reset_2]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[3. AWS API MCP Authentication Reset_2]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[Authentication Reset Procedures_2]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[If Using SSO_2]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[Manual Re-authentication_2]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[Option A Default AWS Profile_2]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[Option B Named Profile_2]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[Verify Authentication_2]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[When Authentication Expires_2]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,7 +28,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 230]]
+- 1 edge to [[_COMMUNITY_Community 838]]
+- 1 edge to [[_COMMUNITY_Community 921]]
 
 ## Top bridge nodes
-- [[PII Pipeline Errors_2]] - degree 8, connects to 1 community
+- [[Authentication Reset Procedures_2]] - degree 4, connects to 2 communities

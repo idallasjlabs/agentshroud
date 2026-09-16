@@ -1,23 +1,24 @@
 ---
 type: community
-cohesion: 0.25
-members: 8
+cohesion: 0.22
+members: 9
 ---
 
 # Community 939
 
-**Cohesion:** 0.25 - loosely connected
-**Members:** 8 nodes
+**Cohesion:** 0.22 - loosely connected
+**Members:** 9 nodes
 
 ## Members
-- [[Apollo README]] - document - .agents/skills/i-apollo/README.md
-- [[Apollo — Audio Systems Producer_6]] - document - .agents/skills/i-apollo/SKILL.md
-- [[ElevenLabs Text-to-Dialogue API_1]] - concept - .agents/skills/i-apollo/SKILL.md
-- [[Input Requirements]] - document - .agents/skills/i-apollo/SKILL.md
-- [[Output]] - document - .agents/skills/i-apollo/SKILL.md
-- [[Quality Checklist]] - document - .agents/skills/i-apollo/SKILL.md
-- [[Role_4]] - document - .agents/skills/i-apollo/SKILL.md
-- [[SKILL_3]] - document - .agents/skills/i-apollo/SKILL.md
+- [[Constraints_9]] - document - docker/config/openclaw/skills/i-pr/SKILL.md
+- [[Content Requirements_2]] - document - docker/config/openclaw/skills/i-pr/SKILL.md
+- [[Header_2]] - document - docker/config/openclaw/skills/i-pr/SKILL.md
+- [[Objective_5]] - document - docker/config/openclaw/skills/i-pr/SKILL.md
+- [[Role_104]] - document - docker/config/openclaw/skills/i-pr/SKILL.md
+- [[Safety_3]] - document - docker/config/openclaw/skills/i-pr/SKILL.md
+- [[Skill Pull Request (PR) Generator_2]] - document - docker/config/openclaw/skills/i-pr/SKILL.md
+- [[Technical Detail_2]] - document - docker/config/openclaw/skills/i-pr/SKILL.md
+- [[openclawskillsi-prSKILL]] - document - docker/config/openclaw/skills/i-pr/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,10 +26,3 @@ members: 8
 TABLE source_file, type FROM #community/Community_939
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 940]]
-- 1 edge to [[_COMMUNITY_Community 697]]
-
-## Top bridge nodes
-- [[Apollo — Audio Systems Producer_6]] - degree 9, connects to 2 communities

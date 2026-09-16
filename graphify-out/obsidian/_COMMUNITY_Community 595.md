@@ -1,30 +1,31 @@
 ---
 type: community
-cohesion: 0.13
-members: 15
+cohesion: 0.12
+members: 16
 ---
 
 # Community 595
 
-**Cohesion:** 0.13 - loosely connected
-**Members:** 15 nodes
+**Cohesion:** 0.12 - loosely connected
+**Members:** 16 nodes
 
 ## Members
-- [[Container Properties]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
-- [[Extra Hosts]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
-- [[Health Check_1]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
-- [[Key Environment Variables]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
-- [[Logs_2]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
-- [[Network_1]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
-- [[Ports]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
-- [[Related Notes_51]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
-- [[Resource Limits]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
-- [[Secrets_2]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
-- [[Security Hardening_3]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
-- [[Summary_23]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
-- [[Volumes_1]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
-- [[agentshroud-bot_1]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
-- [[tmpfs Mounts]] - document - docs/vault/06 - Containers & Services/agentshroud-bot.md
+- [[Additional Options]] - document - skills/openclaw/himalaya/references/configuration.md
+- [[Downloads directory]] - document - skills/openclaw/himalaya/references/configuration.md
+- [[Editor for composing]] - document - skills/openclaw/himalaya/references/configuration.md
+- [[Folder Aliases]] - document - skills/openclaw/himalaya/references/configuration.md
+- [[Gmail Configuration]] - document - skills/openclaw/himalaya/references/configuration.md
+- [[Himalaya Configuration Reference]] - document - skills/openclaw/himalaya/references/configuration.md
+- [[Minimal IMAP + SMTP Setup]] - document - skills/openclaw/himalaya/references/configuration.md
+- [[Multiple Accounts_1]] - document - skills/openclaw/himalaya/references/configuration.md
+- [[Notmuch Backend (local mail)]] - document - skills/openclaw/himalaya/references/configuration.md
+- [[OAuth2 Authentication (for providers that support it)]] - document - skills/openclaw/himalaya/references/configuration.md
+- [[Password Options]] - document - skills/openclaw/himalaya/references/configuration.md
+- [[Password from command (recommended)]] - document - skills/openclaw/himalaya/references/configuration.md
+- [[Raw password (testing only, not recommended)]] - document - skills/openclaw/himalaya/references/configuration.md
+- [[Signature]] - document - skills/openclaw/himalaya/references/configuration.md
+- [[System keyring (requires keyring feature)]] - document - skills/openclaw/himalaya/references/configuration.md
+- [[iCloud Configuration]] - document - skills/openclaw/himalaya/references/configuration.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,7 +35,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 339]]
+- 1 edge to [[_COMMUNITY_Community 381]]
 
 ## Top bridge nodes
-- [[agentshroud-bot_1]] - degree 15, connects to 1 community
+- [[Himalaya Configuration Reference]] - degree 10, connects to 1 community

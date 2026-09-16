@@ -1,29 +1,29 @@
 ---
 type: community
-cohesion: 0.15
+cohesion: 0.24
 members: 14
 ---
 
 # Community 676
 
-**Cohesion:** 0.15 - loosely connected
+**Cohesion:** 0.24 - loosely connected
 **Members:** 14 nodes
 
 ## Members
-- [[._call_slack_api()]] - code - gateway/proxy/slack_proxy.py
-- [[._intercept_connections_open()]] - code - gateway/proxy/slack_proxy.py
-- [[._is_owner_channel()]] - code - gateway/proxy/slack_proxy.py
-- [[.invite_channel_member()]] - code - gateway/proxy/slack_proxy.py
-- [[.kick_channel_member()]] - code - gateway/proxy/slack_proxy.py
-- [[.provision_group_channel()]] - code - gateway/proxy/slack_proxy.py
-- [[.proxy_outbound()]] - code - gateway/proxy/slack_proxy.py
-- [[Create a Slack channel for a group. Returns channel_id or None on failure.]] - rationale - gateway/proxy/slack_proxy.py
-- [[Intercept apps.connections.open rewrite the returned WSS URL to route         t]] - rationale - gateway/proxy/slack_proxy.py
-- [[Invite a Slack user to a channel. Returns True on success.]] - rationale - gateway/proxy/slack_proxy.py
-- [[POST to httpsslack.comapimethod with the bot token.]] - rationale - gateway/proxy/slack_proxy.py
-- [[Proxy a bot Slack Web API call through the security pipeline.          For messa]] - rationale - gateway/proxy/slack_proxy.py
-- [[Remove a Slack user from a channel. Returns True on success.]] - rationale - gateway/proxy/slack_proxy.py
-- [[Return True if channel is a DM with the configured owner.          In Slack, DM]] - rationale - gateway/proxy/slack_proxy.py
+- [[background.js]] - code - browser-extension/background.js
+- [[clipPage()]] - code - browser-extension/background.js
+- [[extractPageContent()]] - code - browser-extension/background.js
+- [[forwardUrl()]] - code - browser-extension/background.js
+- [[getActiveTab()]] - code - browser-extension/background.js
+- [[icon48.png — solid blue (2b6cff) placeholder icon, no logotext]] - image - browser-extension/icons/icon48.png
+- [[loadConfig()]] - code - browser-extension/background.js
+- [[notify()]] - code - browser-extension/background.js
+- [[popup.html (toolbar popup UI)]] - code - browser-extension/popup.html
+- [[popup.js]] - code - browser-extension/popup.js
+- [[reportResult()]] - code - browser-extension/background.js
+- [[send()]] - code - browser-extension/popup.js
+- [[setStatus()]] - code - browser-extension/popup.js
+- [[statusEl]] - code - browser-extension/popup.js
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,11 +33,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_Community 24]]
+- 1 edge to [[_COMMUNITY_Community 1128]]
+- 1 edge to [[_COMMUNITY_Community 424]]
+- 1 edge to [[_COMMUNITY_Community 568]]
 
 ## Top bridge nodes
-- [[._call_slack_api()]] - degree 7, connects to 1 community
-- [[.proxy_outbound()]] - degree 5, connects to 1 community
-- [[._intercept_connections_open()]] - degree 4, connects to 1 community
-- [[.invite_channel_member()]] - degree 3, connects to 1 community
-- [[._is_owner_channel()]] - degree 3, connects to 1 community
+- [[background.js]] - degree 11, connects to 2 communities
+- [[loadConfig()]] - degree 4, connects to 1 community

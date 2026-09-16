@@ -1,23 +1,24 @@
 ---
 type: community
-cohesion: 0.39
-members: 8
+cohesion: 0.22
+members: 9
 ---
 
 # Community 966
 
-**Cohesion:** 0.39 - loosely connected
-**Members:** 8 nodes
+**Cohesion:** 0.22 - loosely connected
+**Members:** 9 nodes
 
 ## Members
-- [[_http_event_handler()]] - code - firmware/voice-terminal/main/ota.c
-- [[_nvs_get_etag()]] - code - firmware/voice-terminal/main/ota.c
-- [[_nvs_set_etag()]] - code - firmware/voice-terminal/main/ota.c
-- [[_ws_to_https_base()]] - code - firmware/voice-terminal/main/ota.c
-- [[esp_err_t_3]] - code - firmware/voice-terminal/main/ota.c
-- [[esp_http_client_event_t]] - code - firmware/voice-terminal/main/ota.c
-- [[ota.c]] - code - firmware/voice-terminal/main/ota.c
-- [[ota_check()]] - code - firmware/voice-terminal/main/ota.c
+- [[dot-test_clean_params_no_findings()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_fake_system_prompt_blocked()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_identity_override_blocked()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_low_confidence_not_blocked()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_nested_injection_caught()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_normal_text_not_flagged()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_prompt_override_blocked()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_special_token_injection()]] - code - gateway/tests/test_mcp_proxy.py
+- [[TestInjectionDetection]] - code - gateway/tests/test_mcp_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,9 +28,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 308]]
-- 1 edge to [[_COMMUNITY_Community 36]]
+- 5 edges to [[_COMMUNITY_Community 50]]
+- 2 edges to [[_COMMUNITY_Community 175]]
+- 2 edges to [[_COMMUNITY_Community 211]]
+- 2 edges to [[_COMMUNITY_Community 89]]
+- 1 edge to [[_COMMUNITY_Community 129]]
+- 1 edge to [[_COMMUNITY_Community 218]]
+- 1 edge to [[_COMMUNITY_Community 366]]
 
 ## Top bridge nodes
-- [[ota.c]] - degree 6, connects to 1 community
-- [[ota_check()]] - degree 6, connects to 1 community
+- [[TestInjectionDetection]] - degree 22, connects to 7 communities

@@ -1,32 +1,32 @@
 ---
 type: community
-cohesion: 0.12
+cohesion: 0.21
 members: 17
 ---
 
 # Community 535
 
-**Cohesion:** 0.12 - loosely connected
+**Cohesion:** 0.21 - loosely connected
 **Members:** 17 nodes
 
 ## Members
-- [[Configuration  Environment Variables_23]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
-- [[Function Details_40]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
-- [[Key Classes  Functions_43]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
-- [[Purpose_161]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
-- [[Related_47]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
-- [[Responsibilities_45]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
-- [[Threat Model_16]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
-- [[calculate_overall_score(summaries)]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
-- [[calculate_tool_score(summary)]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
-- [[format_report(report)]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
-- [[generate_report(summaries, db_path, save_history)]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
-- [[get_trend(days, db_path)]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
-- [[health_report.py_2]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
-- [[health_report.py_1]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
-- [[init_db(db_path)]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
-- [[save_to_history(score, grade, details, db_path)]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
-- [[score_to_grade(score)]] - document - docs/vault/02 - Modules/Security Modules/health_report.py.md
+- [[dot-register_event_source()]] - code - gateway/security/session_security.py
+- [[dot-rotate_session()]] - code - gateway/security/session_security.py
+- [[dot-test_cleanup_expired()]] - code - gateway/tests/test_session_security.py
+- [[dot-test_destroy_session()]] - code - gateway/tests/test_session_security.py
+- [[dot-test_rotate_session()]] - code - gateway/tests/test_session_security.py
+- [[dot-test_rotated_session_valid()]] - code - gateway/tests/test_session_security.py
+- [[dot-validate_event()]] - code - gateway/security/session_security.py
+- [[dot-validate_session()]] - code - gateway/security/session_security.py
+- [[Any_60]] - code - gateway/security/session_security.py
+- [[Chen et al. 2026 (arXiv2602.14364) — Session Hijacking]] - paper - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[EventInjectionError]] - code - gateway/security/session_security.py
+- [[SessionBindingError]] - code - gateway/security/session_security.py
+- [[SessionError]] - code - gateway/security/session_security.py
+- [[SessionExpired]] - code - gateway/security/session_security.py
+- [[TestSessionCleanup]] - code - gateway/tests/test_session_security.py
+- [[TestSessionRotation]] - code - gateway/tests/test_session_security.py
+- [[session_security.py]] - code - gateway/security/session_security.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,3 +34,21 @@ members: 17
 TABLE source_file, type FROM #community/Community_535
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 17 edges to [[_COMMUNITY_Community 539]]
+- 11 edges to [[_COMMUNITY_Community 913]]
+- 4 edges to [[_COMMUNITY_Community 1179]]
+- 4 edges to [[_COMMUNITY_Community 914]]
+- 2 edges to [[_COMMUNITY_Session Manager & PIIContext Guard]]
+- 2 edges to [[_COMMUNITY_P3 Infrastructure Security Modules]]
+- 2 edges to [[_COMMUNITY_Voice Gateway STT & Browser Security]]
+- 1 edge to [[_COMMUNITY_Alert Dispatcher & RBAC Reliability]]
+- 1 edge to [[_COMMUNITY_BlueRed Team Security Auditor Skills]]
+
+## Top bridge nodes
+- [[session_security.py]] - degree 14, connects to 7 communities
+- [[SessionError]] - degree 16, connects to 5 communities
+- [[EventInjectionError]] - degree 10, connects to 4 communities
+- [[SessionBindingError]] - degree 10, connects to 4 communities
+- [[SessionExpired]] - degree 10, connects to 4 communities

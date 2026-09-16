@@ -1,28 +1,28 @@
 ---
 type: community
-cohesion: 0.22
+cohesion: 0.15
 members: 13
 ---
 
 # Community 718
 
-**Cohesion:** 0.22 - loosely connected
+**Cohesion:** 0.15 - loosely connected
 **Members:** 13 nodes
 
 ## Members
-- [[._handle_query()]] - code - gateway/proxy/dns_forwarder.py
-- [[.datagram_received()]] - code - gateway/proxy/dns_forwarder.py
-- [[.test_malformed_pointer_returns_none()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_too_short()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_truncated_after_name()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_valid_a_query()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_valid_aaaa_query()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[.test_zero_qdcount()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[Extract domain name and query type from a DNS query packet.      Returns (domai]] - rationale - gateway/proxy/dns_forwarder.py
-- [[Handle incoming DNS query.]] - rationale - gateway/proxy/dns_forwarder.py
-- [[Process a single DNS query log, forward, respond.]] - rationale - gateway/proxy/dns_forwarder.py
-- [[TestParseQuery]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[parse_query()]] - code - gateway/proxy/dns_forwarder.py
+- [[4. Environment Variables]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
+- [[All Environment Variables (reference)]] - document - docs/vault/03 - Configuration/All Environment Variables.md
+- [[Bot Container (`agentshroud-bot`)]] - document - docs/vault/03 - Configuration/All Environment Variables.md
+- [[Derived (set at runtime by `config.py`)]] - document - docs/vault/03 - Configuration/All Environment Variables.md
+- [[Gateway Container (`agentshroud-gateway`)]] - document - docs/vault/03 - Configuration/All Environment Variables.md
+- [[Loaded at Startup via 1Password op-proxy]] - document - docs/vault/03 - Configuration/All Environment Variables.md
+- [[Optional  Runtime]] - document - docs/vault/03 - Configuration/All Environment Variables.md
+- [[Related Notes_45]] - document - docs/vault/03 - Configuration/All Environment Variables.md
+- [[Required]] - document - docs/vault/03 - Configuration/All Environment Variables.md
+- [[Required Secrets (as Docker secret files)]] - document - docs/vault/03 - Configuration/All Environment Variables.md
+- [[Security Notes_7]] - document - docs/vault/03 - Configuration/All Environment Variables.md
+- [[Set in `docker-compose.yml`]] - document - docs/vault/03 - Configuration/All Environment Variables.md
+- [[Summary_19]] - document - docs/vault/03 - Configuration/All Environment Variables.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,15 +32,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 557]]
-- 3 edges to [[_COMMUNITY_Community 424]]
-- 2 edges to [[_COMMUNITY_Community 643]]
-- 1 edge to [[_COMMUNITY_Community 142]]
-- 1 edge to [[_COMMUNITY_Community 977]]
+- 1 edge to [[_COMMUNITY_Community 703]]
+- 1 edge to [[_COMMUNITY_Community 769]]
+- 1 edge to [[_COMMUNITY_Community 821]]
+- 1 edge to [[_COMMUNITY_Community 865]]
 
 ## Top bridge nodes
-- [[TestParseQuery]] - degree 9, connects to 3 communities
-- [[parse_query()]] - degree 11, connects to 2 communities
-- [[._handle_query()]] - degree 5, connects to 2 communities
-- [[.datagram_received()]] - degree 3, connects to 1 community
-- [[.test_valid_a_query()]] - degree 3, connects to 1 community
+- [[4. Environment Variables]] - degree 8, connects to 2 communities
+- [[All Environment Variables (reference)]] - degree 3, connects to 2 communities

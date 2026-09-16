@@ -1,26 +1,27 @@
 ---
 type: community
-cohesion: 0.25
-members: 11
+cohesion: 0.17
+members: 12
 ---
 
 # Community 790
 
-**Cohesion:** 0.25 - loosely connected
-**Members:** 11 nodes
+**Cohesion:** 0.17 - loosely connected
+**Members:** 12 nodes
 
 ## Members
-- [[AgentShroud Blue — 1583f0]] - concept - branding/QUICK-REFERENCE.md
-- [[AgentShroud Email Banner (600x150)]] - image - branding/email/email-banner-600x150.png
-- [[AgentShroud Logo — Dark Background Variant]] - image - branding/agentshroud-logo-dark-bg.png
-- [[AgentShroud MerchandiseStationery Mockup]] - image - branding/agentshroud-mockup.png
-- [[AgentShroud Primary Logo]] - image - branding/logo.png
-- [[INDEX]] - document - branding/INDEX.md
-- [[Inter Typeface (Primary)]] - concept - branding/typography/typography.md
-- [[JetBrains Mono Typeface (Monospace)]] - concept - branding/typography/typography.md
-- [[QUICK-REFERENCE]] - document - branding/QUICK-REFERENCE.md
-- [[README_38]] - document - branding/README.md
-- [[typography]] - document - branding/typography/typography.md
+- [[Config Keys Read_8]] - document - docs/vault/02 - Modules/Gateway Core/ssh_config.py.md
+- [[Environment Variables Used_9]] - document - docs/vault/02 - Modules/Gateway Core/ssh_config.py.md
+- [[Imports From  Exports To_8]] - document - docs/vault/02 - Modules/Gateway Core/ssh_config.py.md
+- [[Key Classes  Functions_50]] - document - docs/vault/02 - Modules/Gateway Core/ssh_config.py.md
+- [[Known Issues  Notes_9]] - document - docs/vault/02 - Modules/Gateway Core/ssh_config.py.md
+- [[Purpose_180]] - document - docs/vault/02 - Modules/Gateway Core/ssh_config.py.md
+- [[Related_54]] - document - docs/vault/02 - Modules/Gateway Core/ssh_config.py.md
+- [[Responsibilities_52]] - document - docs/vault/02 - Modules/Gateway Core/ssh_config.py.md
+- [[SSHConfig Fields]] - document - docs/vault/02 - Modules/Gateway Core/ssh_config.py.md
+- [[SSHHostConfig Fields]] - document - docs/vault/02 - Modules/Gateway Core/ssh_config.py.md
+- [[ssh_config.py_1]] - document - docs/vault/02 - Modules/Gateway Core/ssh_config.py.md
+- [[ssh_config.py]] - document - docs/vault/02 - Modules/Gateway Core/ssh_config.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,16 +29,3 @@ members: 11
 TABLE source_file, type FROM #community/Community_790
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 146]]
-- 1 edge to [[_COMMUNITY_Community 550]]
-- 1 edge to [[_COMMUNITY_Community 108]]
-- 1 edge to [[_COMMUNITY_Community 551]]
-- 1 edge to [[_COMMUNITY_Community 512]]
-
-## Top bridge nodes
-- [[INDEX]] - degree 5, connects to 2 communities
-- [[README_38]] - degree 6, connects to 1 community
-- [[QUICK-REFERENCE]] - degree 4, connects to 1 community
-- [[typography]] - degree 4, connects to 1 community
