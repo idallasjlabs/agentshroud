@@ -1,0 +1,21 @@
+---
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+type: "code"
+community: "Telegram Lockdown & Collaborator UX Tests"
+location: "L8934"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Telegram_Lockdown__Collaborator_UX_Tests
+---
+
+# .test_group_message_without_mention_forwarded_but_flagged()
+
+## Connections
+- [[dot-_make_proxy()_4]] - `calls` [EXTRACTED]
+- [[Group messages without @mention are forwarded (for context) but mark chat as res]] - `rationale_for` [EXTRACTED]
+- [[TestGroupMentionFilter]] - `method` [EXTRACTED]
+- [[_make_group_update()]] - `calls` [EXTRACTED]
+- [[_wrap_response()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Telegram_Lockdown__Collaborator_UX_Tests

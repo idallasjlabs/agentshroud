@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_egress_telegram_notify.py"
+type: "code"
+community: "Community 214"
+location: "L223"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_214
+---
+
+# .test_handle_callback_allow_always_returns_agent_id()
+
+## Connections
+- [[Permanent approval also includes agent_id in result.]] - `rationale_for` [EXTRACTED]
+- [[TestEgressTelegramNotify]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_214

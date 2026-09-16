@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+type: "code"
+community: "Telegram Lockdown & Collaborator UX Tests"
+location: "L8586"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Telegram_Lockdown__Collaborator_UX_Tests
+---
+
+# .test_immune_user_lockdown_not_incremented()
+
+## Connections
+- [[dot-_make_proxy()_4]] - `calls` [EXTRACTED]
+- [[TestProgressiveLockdownUX]] - `method` [EXTRACTED]
+- [[_quarantine_blocked_message must NOT increment lockdown count for immune users.]] - `rationale_for` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Telegram_Lockdown__Collaborator_UX_Tests

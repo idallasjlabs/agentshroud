@@ -1,0 +1,19 @@
+---
+source_file: "chatbot/test_main.py"
+type: "code"
+community: "Community 76"
+location: "L142"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_76
+---
+
+# .test_internal_error_not_leaked()
+
+## Connections
+- [[AsyncMock]] - `calls` [INFERRED]
+- [[OpenAI exceptions should not leak internal details to the client.]] - `rationale_for` [EXTRACTED]
+- [[TestErrorSanitization]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_76

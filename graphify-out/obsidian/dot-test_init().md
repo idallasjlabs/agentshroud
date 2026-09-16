@@ -1,0 +1,20 @@
+---
+source_file: "gateway/tests/test_killswitch_monitor.py"
+type: "code"
+community: "Community 42"
+location: "L43"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_42
+---
+
+# .test_init()
+
+## Connections
+- [[KillSwitchConfig]] - `calls` [EXTRACTED]
+- [[KillSwitchMonitor]] - `calls` [EXTRACTED]
+- [[Test monitor initialization.]] - `rationale_for` [EXTRACTED]
+- [[TestKillSwitchMonitor]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_42

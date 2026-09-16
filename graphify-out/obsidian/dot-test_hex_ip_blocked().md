@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_url_analyzer.py"
+type: "code"
+community: "Community 51"
+location: "L95"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_51
+---
+
+# .test_hex_ip_blocked()
+
+## Connections
+- [[0x7f000001 = 127.0.0.1 in hex.]] - `rationale_for` [EXTRACTED]
+- [[TestSSRFDetection]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_51

@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_slack_socket_client.py"
+type: "code"
+community: "Community 162"
+location: "L29"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_162
+---
+
+# .test_grows_exponentially_with_attempt()
+
+## Connections
+- [[TestComputeBackoff]] - `method` [EXTRACTED]
+- [[With jitter pinned to max, backoff doubles per attempt until the cap.]] - `rationale_for` [EXTRACTED]
+- [[compute_backoff()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_162

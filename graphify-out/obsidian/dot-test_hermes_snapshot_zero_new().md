@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_sync_cve_registry_ghsa.py"
+type: "code"
+community: "Community 278"
+location: "L326"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_278
+---
+
+# .test_hermes_snapshot_zero_new()
+
+## Connections
+- [[TestSnapshotSmoke]] - `method` [EXTRACTED]
+- [[_sync()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_278

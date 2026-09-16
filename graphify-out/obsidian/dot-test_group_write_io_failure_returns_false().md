@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_shared_memory_write_acl.py"
+type: "code"
+community: "Community 41"
+location: "L231"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_41
+---
+
+# .test_group_write_io_failure_returns_false()
+
+## Connections
+- [[If the underlying session store raises, the authorized write reports         fai]] - `rationale_for` [EXTRACTED]
+- [[TestWriteFailurePath]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_41

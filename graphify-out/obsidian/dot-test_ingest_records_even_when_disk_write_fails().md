@@ -1,0 +1,25 @@
+---
+source_file: "gateway/tests/test_daily_cve_report.py"
+type: "code"
+community: "Community 156"
+location: "L1541"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_156
+---
+
+# .test_ingest_records_even_when_disk_write_fails()
+
+## Connections
+- [[A disk-write failure on the sentinel is swallowed; in-memory guard set.]] - `rationale_for` [EXTRACTED]
+- [[TestGhsaIngestScheduler]] - `method` [EXTRACTED]
+- [[_fake_ingest()]] - `contains` [EXTRACTED]
+- [[_fake_ingest()_1]] - `indirect_call` [INFERRED]
+- [[_sleep()]] - `contains` [EXTRACTED]
+- [[_sleep()_2]] - `indirect_call` [INFERRED]
+- [[asyncio_4]] - `references` [EXTRACTED]
+- [[datetime]] - `calls` [INFERRED]
+- [[now()]] - `contains` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_156

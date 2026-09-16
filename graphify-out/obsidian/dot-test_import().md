@@ -1,0 +1,17 @@
+---
+source_file: "gateway/tests/test_soc_websocket.py"
+type: "code"
+community: "Community 187"
+location: "L13"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_187
+---
+
+# .test_import()
+
+## Connections
+- [[TestSOCWebSocketHandlerImport]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_187

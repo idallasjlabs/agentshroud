@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_group_config.py"
+type: "code"
+community: "Teams/Group Collaborator Responses"
+location: "L269"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Teams/Group_Collaborator_Responses
+---
+
+# .test_get_user_collab_mode_falls_back_to_group()
+
+## Connections
+- [[TeamsConfig_1]] - `calls` [EXTRACTED]
+- [[TestUserCollabModeOverride]] - `method` [EXTRACTED]
+- [[Without a per-user override, group-derived mode is returned.]] - `rationale_for` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Teams/Group_Collaborator_Responses

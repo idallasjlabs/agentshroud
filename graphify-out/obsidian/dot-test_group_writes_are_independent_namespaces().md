@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_group_isolation.py"
+type: "code"
+community: "Agent Isolation & Group Config Tests"
+location: "L112"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Agent_Isolation__Group_Config_Tests
+---
+
+# .test_group_writes_are_independent_namespaces()
+
+## Connections
+- [[Both groups store separate content with no cross-contamination.]] - `rationale_for` [EXTRACTED]
+- [[TestGroupMemoryNamespaceIsolation]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Agent_Isolation__Group_Config_Tests

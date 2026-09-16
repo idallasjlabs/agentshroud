@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_a2a_policy_default_failclosed.py"
+type: "code"
+community: "Community 289"
+location: "L54"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_289
+---
+
+# .test_invalid_default_action_string_falls_back_to_deny()
+
+## Connections
+- [[A typo'd default_action (e.g. 'allow-all') must not silently open         the ga]] - `rationale_for` [EXTRACTED]
+- [[TestDefaultA2APolicyIsFailClosed]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_289

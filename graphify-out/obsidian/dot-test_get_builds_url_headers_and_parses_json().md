@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_cli_coverage.py"
+type: "code"
+community: "Community 154"
+location: "L101"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_154
+---
+
+# .test_get_builds_url_headers_and_parses_json()
+
+## Connections
+- [[SCLClient]] - `calls` [EXTRACTED]
+- [[TestSCLClientRequest]] - `method` [EXTRACTED]
+- [[_patch_urlopen()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_154

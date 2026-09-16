@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_cli_coverage.py"
+type: "code"
+community: "Community 154"
+location: "L145"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_154
+---
+
+# .test_http_error_with_json_body_returns_parsed_payload()
+
+## Connections
+- [[SCLClient]] - `calls` [EXTRACTED]
+- [[TestSCLClientRequest]] - `method` [EXTRACTED]
+- [[_patch_urlopen()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_154

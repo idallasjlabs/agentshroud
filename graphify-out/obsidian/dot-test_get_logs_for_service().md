@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_web_api_coverage.py"
+type: "code"
+community: "Community 45"
+location: "L858"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_45
+---
+
+# .test_get_logs_for_service()
+
+## Connections
+- [[TestLogs]] - `method` [EXTRACTED]
+- [[_engine()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_45

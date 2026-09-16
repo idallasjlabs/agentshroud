@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_egress_telegram_notify.py"
+type: "code"
+community: "Community 214"
+location: "L128"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_214
+---
+
+# .test_handle_callback_invalid_format()
+
+## Connections
+- [[Test handling invalid callback data.]] - `rationale_for` [EXTRACTED]
+- [[TestEgressTelegramNotify]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_214

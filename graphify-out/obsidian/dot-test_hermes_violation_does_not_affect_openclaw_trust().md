@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_security_regressions_v1_2.py"
+type: "code"
+community: "Cross-Bot Trust & A2A Governance"
+location: "L203"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Cross-Bot_Trust__A2A_Governance
+---
+
+# .test_hermes_violation_does_not_affect_openclaw_trust()
+
+## Connections
+- [[RT-N1 (reverse) Hermes violation must not demote OpenClaw.]] - `rationale_for` [EXTRACTED]
+- [[TestCrossBotTrustPivot]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Cross-Bot_Trust__A2A_Governance
