@@ -1,36 +1,36 @@
 ---
 source_file: "gateway/security/dns_filter.py"
 type: "code"
-community: "Memory Lifecycle & Egress Filtering"
+community: "Alert Dispatcher & RBAC Reliability"
 location: "L40"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Memory_Lifecycle__Egress_Filtering
+  - community/Alert_Dispatcher__RBAC_Reliability
 ---
 
 # DNSFilterConfig
 
 ## Connections
-- [[.__init__()_14]] - `calls` [EXTRACTED]
-- [[.__init__()_44]] - `calls` [EXTRACTED]
-- [[.__init__()_72]] - `references` [EXTRACTED]
-- [[.dns_filter()]] - `calls` [EXTRACTED]
-- [[.test_dns_filter_config()]] - `calls` [EXTRACTED]
-- [[.test_dns_filter_default_enforce()]] - `calls` [EXTRACTED]
-- [[Action]] - `uses` [INFERRED]
-- [[Any_8]] - `uses` [INFERRED]
-- [[Exception_2]] - `uses` [INFERRED]
+- [[dot-__init__()_12]] - `calls` [EXTRACTED]
+- [[dot-__init__()_154]] - `calls` [EXTRACTED]
+- [[dot-__init__()_171]] - `references` [EXTRACTED]
+- [[dot-dns_filter()]] - `calls` [EXTRACTED]
+- [[dot-test_dns_filter_config()]] - `calls` [EXTRACTED]
+- [[dot-test_dns_filter_default_enforce()]] - `calls` [EXTRACTED]
+- [[Action_1]] - `uses` [INFERRED]
+- [[Any_2]] - `uses` [INFERRED]
+- [[Exception_1]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
-- [[RBACManager]] - `uses` [INFERRED]
-- [[Resource]] - `uses` [INFERRED]
-- [[TestAuditLogging]] - `uses` [INFERRED]
-- [[TestAuditTrail_1]] - `uses` [INFERRED]
-- [[TestAuth_1]] - `uses` [INFERRED]
+- [[RBACManager_1]] - `uses` [INFERRED]
+- [[Resource_1]] - `uses` [INFERRED]
+- [[TestAuditLogging_1]] - `uses` [INFERRED]
+- [[TestAuditTrail]] - `uses` [INFERRED]
+- [[TestAuth]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
-- [[TestContextGuard_1]] - `uses` [INFERRED]
+- [[TestContextGuard]] - `uses` [INFERRED]
 - [[TestCryptography]] - `uses` [INFERRED]
 - [[TestDNSAllowlist]] - `uses` [INFERRED]
 - [[TestDNSFilterConfig]] - `uses` [INFERRED]
@@ -46,20 +46,20 @@ tags:
 - [[TestNormalDNSResolution]] - `uses` [INFERRED]
 - [[TestPIIDetection_1]] - `uses` [INFERRED]
 - [[TestPromptGuard]] - `uses` [INFERRED]
-- [[TestRateLimiting_1]] - `uses` [INFERRED]
+- [[TestRateLimiting_3]] - `uses` [INFERRED]
 - [[TestResourceProtection]] - `uses` [INFERRED]
 - [[TestSecurityConfigDefaults]] - `uses` [INFERRED]
-- [[TestSupplyChain_1]] - `uses` [INFERRED]
-- [[ToolTier]] - `uses` [INFERRED]
-- [[default_config()_1]] - `calls` [EXTRACTED]
-- [[dns_filter.py]] - `contains` [EXTRACTED]
-- [[main.py_2]] - `imports` [EXTRACTED]
+- [[TestSupplyChain]] - `uses` [INFERRED]
+- [[ToolTier_2]] - `uses` [INFERRED]
+- [[default_config()_3]] - `calls` [EXTRACTED]
+- [[dns_filter.py_2]] - `contains` [EXTRACTED]
+- [[ingest_apimain.py]] - `imports` [EXTRACTED]
 - [[middleware.py]] - `imports` [EXTRACTED]
-- [[monitor_config()]] - `calls` [EXTRACTED]
-- [[strict_config()]] - `calls` [EXTRACTED]
+- [[monitor_config()_2]] - `calls` [EXTRACTED]
+- [[strict_config()_1]] - `calls` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_dns_filter.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 - [[web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Memory_Lifecycle__Egress_Filtering
+#graphify/code #graphify/INFERRED #community/Alert_Dispatcher__RBAC_Reliability

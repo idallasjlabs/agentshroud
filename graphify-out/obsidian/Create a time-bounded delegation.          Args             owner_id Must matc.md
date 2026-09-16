@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/delegation.py"
 type: "rationale"
-community: "Community 82"
+community: "Community 74"
 location: "L122"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_82
+  - community/Community_74
 ---
 
 # Create a time-bounded delegation.          Args:             owner_id: Must matc
 
 ## Connections
-- [[.delegate()]] - `rationale_for` [EXTRACTED]
+- [[dot-delegate()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_82
+#graphify/rationale #graphify/EXTRACTED #community/Community_74

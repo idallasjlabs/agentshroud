@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md"
 type: "document"
-community: "Community 580"
+community: "Community 578"
 location: "L1"
 tags:
   - graphify/document
-  - graphify/INFERRED
-  - community/Community_580
+  - graphify/EXTRACTED
+  - community/Community_578
 ---
 
 # DEVELOPMENT_WORKFLOW_READ_ONLY.md
@@ -17,4 +17,4 @@ tags:
 - [[SECURITY_VALUE_PROPOSITION]] - `conceptually_related_to` [INFERRED]
 - [[Three-Phase Approach]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/Community_580
+#graphify/document #graphify/EXTRACTED #community/Community_578

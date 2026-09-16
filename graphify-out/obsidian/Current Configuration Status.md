@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md"
 type: "document"
-community: "Community 190"
+community: "Community 198"
 location: "L34"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_190
+  - community/Community_198
 ---
 
 # Current Configuration Status
@@ -15,4 +15,4 @@ tags:
 - [[Development Workflow Read-Only Filesystem Strategy]] - `contains` [EXTRACTED]
 - [[What's Currently Writable (Development Mode)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_190
+#graphify/document #graphify/EXTRACTED #community/Community_198

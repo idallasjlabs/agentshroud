@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-18-runbook.svg"
 type: "concept"
-community: "Community 1038"
+community: "Community 1076"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1038
+  - community/Community_1076
 ---
 
 # Context limit exceeded, bot resets mid-conversation
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[What is the symptom]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1038
+#graphify/concept #graphify/EXTRACTED #community/Community_1076

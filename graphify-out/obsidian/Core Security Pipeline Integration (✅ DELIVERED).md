@@ -1,17 +1,17 @@
 ---
 source_file: "docs/planning/reviews/phase-review-p0-2026-02-23.md"
 type: "document"
-community: "Community 311"
+community: "Community 321"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_311
+  - community/Community_321
 ---
 
 # Core Security Pipeline Integration (✅ DELIVERED)
 
 ## Connections
-- [[1. Accomplishments This Phase_3]] - `contains` [EXTRACTED]
+- [[1. Accomplishments This Phase_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_311
+#graphify/document #graphify/EXTRACTED #community/Community_321

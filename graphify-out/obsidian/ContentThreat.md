@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "Memory Lifecycle & Egress Filtering"
+community: "Memory Integrity & Lifecycle"
 location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Memory_Lifecycle__Egress_Filtering
+  - community/Memory_Integrity__Lifecycle
 ---
 
 # ContentThreat
 
 ## Connections
-- [[.__post_init__()_6]] - `method` [EXTRACTED]
-- [[.get_recent_threats()]] - `references` [EXTRACTED]
-- [[.sanitize_content()]] - `references` [EXTRACTED]
-- [[.scan_content_for_threats()]] - `references` [EXTRACTED]
-- [[.test_threat_cleanup()]] - `calls` [EXTRACTED]
-- [[.validate_memory_write()]] - `references` [EXTRACTED]
+- [[dot-__post_init__()_1]] - `method` [EXTRACTED]
+- [[dot-get_recent_threats()]] - `references` [EXTRACTED]
+- [[dot-sanitize_content()]] - `references` [EXTRACTED]
+- [[dot-scan_content_for_threats()]] - `references` [EXTRACTED]
+- [[dot-test_threat_cleanup()]] - `calls` [EXTRACTED]
+- [[dot-validate_memory_write()]] - `references` [EXTRACTED]
 - [[Detected threat in memory file content.]] - `rationale_for` [EXTRACTED]
-- [[MemoryLifecycleConfig]] - `uses` [INFERRED]
+- [[MemoryLifecycleConfig_1]] - `uses` [INFERRED]
 - [[MemoryLifecycleManager]] - `references` [EXTRACTED]
 - [[TestMemoryIntegrityConfig]] - `uses` [INFERRED]
 - [[TestMemoryIntegrityMonitor]] - `uses` [INFERRED]
@@ -28,4 +28,4 @@ tags:
 - [[memory_lifecycle.py]] - `contains` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Memory_Lifecycle__Egress_Filtering
+#graphify/code #graphify/EXTRACTED #community/Memory_Integrity__Lifecycle

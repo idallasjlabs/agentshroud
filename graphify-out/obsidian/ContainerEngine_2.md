@@ -1,52 +1,21 @@
 ---
-source_file: "gateway/runtime/engine.py"
+source_file: "gateway/runtime/__init__.py"
 type: "code"
-community: "Community 204"
-location: "L29"
+community: "Community 889"
+location: "L48"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_204
+  - graphify/INFERRED
+  - community/Community_889
 ---
 
 # ContainerEngine
 
 ## Connections
-- [[._run()]] - `method` [EXTRACTED]
-- [[.build()_2]] - `method` [EXTRACTED]
-- [[.compose_down()_2]] - `method` [EXTRACTED]
-- [[.compose_up()_2]] - `method` [EXTRACTED]
-- [[.exec()_2]] - `method` [EXTRACTED]
-- [[.health_check()_4]] - `method` [EXTRACTED]
-- [[.inspect()_2]] - `method` [EXTRACTED]
-- [[.logs()_2]] - `method` [EXTRACTED]
-- [[.network_create()_2]] - `method` [EXTRACTED]
-- [[.network_rm()_2]] - `method` [EXTRACTED]
-- [[.pause()_2]] - `method` [EXTRACTED]
-- [[.ps()_2]] - `method` [EXTRACTED]
-- [[.pull()_2]] - `method` [EXTRACTED]
-- [[.push()_2]] - `method` [EXTRACTED]
-- [[.rm()_2]] - `method` [EXTRACTED]
-- [[.stop()_7]] - `method` [EXTRACTED]
-- [[.unpause()_2]] - `method` [EXTRACTED]
-- [[.volume_create()_2]] - `method` [EXTRACTED]
-- [[.volume_rm()_2]] - `method` [EXTRACTED]
-- [[ABC]] - `inherits` [EXTRACTED]
-- [[Any_25]] - `uses` [INFERRED]
-- [[Any_26]] - `uses` [INFERRED]
-- [[Any_28]] - `uses` [INFERRED]
 - [[AppleContainerEngine]] - `uses` [INFERRED]
 - [[ContainerEngine]] - `uses` [INFERRED]
-- [[ContainerInfo]] - `uses` [INFERRED]
-- [[ContainerInfo_1]] - `uses` [INFERRED]
-- [[ContainerInfo_3]] - `uses` [INFERRED]
 - [[DockerEngine]] - `uses` [INFERRED]
 - [[PodmanEngine]] - `uses` [INFERRED]
-- [[Unified interface for container runtimes (Docker  Podman  Apple Containers).]] - `rationale_for` [EXTRACTED]
-- [[__init__.py_8]] - `imports` [EXTRACTED]
-- [[apple_engine.py]] - `imports` [EXTRACTED]
-- [[docker_engine.py]] - `imports` [EXTRACTED]
-- [[engine.py]] - `contains` [EXTRACTED]
-- [[podman_engine.py]] - `imports` [EXTRACTED]
+- [[get_engine()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_204
+#graphify/code #graphify/INFERRED #community/Community_889

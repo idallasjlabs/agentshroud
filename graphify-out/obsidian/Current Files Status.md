@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/VAULT-SHARING-INSTRUCTIONS.md"
 type: "document"
-community: "Community 586"
+community: "Community 604"
 location: "L189"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_586
+  - community/Community_604
 ---
 
 # Current Files Status
@@ -17,4 +17,4 @@ tags:
 - [[✅ Authoritative Files (Active)]] - `contains` [EXTRACTED]
 - [[❌ Removed Files (Outdated)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_586
+#graphify/document #graphify/EXTRACTED #community/Community_604

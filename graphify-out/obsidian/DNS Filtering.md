@@ -1,18 +1,17 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "concept"
-community: "Community 92"
+community: "Community 146"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_92
+  - community/Community_146
 ---
 
 # DNS Filtering
 
 ## Connections
 - [[AgentShroud Security Architecture]] - `references` [EXTRACTED]
-- [[cve-mitigation-matrix]] - `references` [EXTRACTED]
 - [[system-requirements]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_92
+#graphify/concept #graphify/EXTRACTED #community/Community_146

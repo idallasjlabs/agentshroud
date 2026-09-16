@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md"
 type: "document"
-community: "Community 212"
+community: "Community 216"
 location: "L219"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_212
+  - community/Community_216
 ---
 
 # Current Docker Configuration
@@ -17,4 +17,4 @@ tags:
 - [[✅ Temporary Filesystems (Cleared on Container Restart)]] - `contains` [EXTRACTED]
 - [[❌ Currently Missing (Would Break Read-Only)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_212
+#graphify/document #graphify/EXTRACTED #community/Community_216

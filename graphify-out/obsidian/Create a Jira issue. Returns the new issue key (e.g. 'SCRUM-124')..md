@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/workspace/jira_dev_ticket.py"
+source_file: "docker/config/openclaw/workspace/jira_dev_ticket.py"
 type: "rationale"
-community: "Community 171"
+community: "Community 165"
 location: "L273"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_171
+  - community/Community_165
 ---
 
 # Create a Jira issue. Returns the new issue key (e.g. 'SCRUM-124').
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[create_issue()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_171
+#graphify/rationale #graphify/EXTRACTED #community/Community_165

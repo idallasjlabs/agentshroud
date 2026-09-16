@@ -1,18 +1,18 @@
 ---
 source_file: "docs/planning/v0.8/container-security-audit-v0.8.0.md"
 type: "document"
-community: "Community 513"
+community: "Community 524"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_513
+  - community/Community_524
 ---
 
 # Container Security Audit — AgentShroud v0.8.0
 
 ## Connections
-- [[Architecture_7]] - `contains` [EXTRACTED]
+- [[Architecture_10]] - `contains` [EXTRACTED]
 - [[Audit Methodology]] - `contains` [EXTRACTED]
 - [[Blue Team Security Assessment — AgentShroud v0.8.0 Round 2]] - `conceptually_related_to` [INFERRED]
 - [[Colima VM Networking]] - `contains` [EXTRACTED]
@@ -22,4 +22,4 @@ tags:
 - [[Items Pending Image Rebuild]] - `contains` [EXTRACTED]
 - [[container-security-audit-v0.8.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_513
+#graphify/document #graphify/EXTRACTED #community/Community_524

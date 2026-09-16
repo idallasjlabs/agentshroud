@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/prompt-injection-assessment-2026-02-25.md"
 type: "concept"
-community: "Community 1519"
+community: "Community 1645"
 location: "Critical Findings 1"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1519
+  - community/Community_1645
 ---
 
 # ContextGuard Bug — should_block_message() Always Returns False (monitor-only in enforce mode)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Prompt Injection Threat Assessment v0.7.0 — 4-Layer Defense Analysis]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1519
+#graphify/concept #graphify/EXTRACTED #community/Community_1645

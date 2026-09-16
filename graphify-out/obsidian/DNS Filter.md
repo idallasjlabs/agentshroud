@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/system-architecture.md"
 type: "concept"
-community: "Community 412"
+community: "Community 357"
 tags:
   - graphify/concept
-  - graphify/INFERRED
-  - community/Community_412
+  - graphify/EXTRACTED
+  - community/Community_357
 ---
 
 # DNS Filter
@@ -14,4 +14,4 @@ tags:
 - [[Egress Monitor]] - `conceptually_related_to` [INFERRED]
 - [[egress-config.yml]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/INFERRED #community/Community_412
+#graphify/concept #graphify/EXTRACTED #community/Community_357
