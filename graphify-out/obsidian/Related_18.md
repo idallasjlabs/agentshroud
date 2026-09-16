@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/prompt_guard.py.md"
 type: "document"
-community: "Community 625"
-location: "L77"
+community: "Community 576"
+location: "L109"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_625
+  - community/Community_576
 ---
 
 # Related
 
 ## Connections
-- [[mcp_proxy.py_2]] - `contains` [EXTRACTED]
+- [[PromptGuard_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_625
+#graphify/document #graphify/EXTRACTED #community/Community_576

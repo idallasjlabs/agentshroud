@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "rationale"
-community: "Progressive Trust"
+community: "Cross-Bot Trust & A2A Governance"
 location: "L153"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Progressive_Trust
+  - community/Cross-Bot_Trust__A2A_Governance
 ---
 
 # Register a new agent with initial trust.
 
 ## Connections
-- [[.register_agent()]] - `rationale_for` [EXTRACTED]
+- [[dot-register_agent()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Progressive_Trust
+#graphify/rationale #graphify/EXTRACTED #community/Cross-Bot_Trust__A2A_Governance

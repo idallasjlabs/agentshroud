@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/09 - Diagrams/Network Topology.md"
+source_file: "docs/vault/03 - Configuration/wazuh-ossec.md"
 type: "document"
-community: "Community 596"
-location: "L106"
+community: "Community 98"
+location: "L75"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_596
+  - community/Community_98
 ---
 
 # Related Notes
 
 ## Connections
-- [[Network Topology_3]] - `contains` [EXTRACTED]
+- [[wazuh-ossec.conf]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_596
+#graphify/document #graphify/EXTRACTED #community/Community_98

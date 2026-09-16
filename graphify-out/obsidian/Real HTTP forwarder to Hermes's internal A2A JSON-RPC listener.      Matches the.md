@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/a2a_proxy.py"
 type: "rationale"
-community: "Community 81"
+community: "Community 131"
 location: "L426"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_81
+  - community/Community_131
 ---
 
 # Real HTTP forwarder to Hermes's internal A2A JSON-RPC listener.      Matches the
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[HermesA2AForwarder]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_81
+#graphify/rationale #graphify/EXTRACTED #community/Community_131

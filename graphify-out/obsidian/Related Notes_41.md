@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/fastapi.md"
+source_file: "docs/vault/06 - Containers & Services/agentshroud-gateway.md"
 type: "document"
-community: "Community 243"
-location: "L46"
+community: "Community 613"
+location: "L127"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_243
+  - community/Community_613
 ---
 
 # Related Notes
 
 ## Connections
-- [[FastAPI_4]] - `contains` [EXTRACTED]
+- [[agentshroud-gateway_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_243
+#graphify/document #graphify/EXTRACTED #community/Community_613

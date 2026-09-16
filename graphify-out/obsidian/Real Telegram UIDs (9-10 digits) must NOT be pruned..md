@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_tracker.py"
 type: "rationale"
-community: "Community 17"
+community: "Community 102"
 location: "L391"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_17
+  - community/Community_102
 ---
 
 # Real Telegram UIDs (9-10 digits) must NOT be pruned.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_pruner_real_telegram_uids_not_flagged()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_17
+#graphify/rationale #graphify/EXTRACTED #community/Community_102

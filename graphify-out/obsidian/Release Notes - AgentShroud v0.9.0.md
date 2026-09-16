@@ -1,22 +1,22 @@
 ---
 source_file: "docs/planning/v0.9/release-notes-v0.9.0.md"
 type: "document"
-community: "Community 170"
+community: "Community 171"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_170
+  - community/Community_171
 ---
 
 # Release Notes - AgentShroud v0.9.0
 
 ## Connections
 - [[Deep Hardening Release]] - `contains` [EXTRACTED]
-- [[Acknowledgments_1]] - `contains` [EXTRACTED]
+- [[Acknowledgments]] - `contains` [EXTRACTED]
 - [[Breaking Changes and Migration]] - `contains` [EXTRACTED]
 - [[Deployment and Operations]] - `contains` [EXTRACTED]
-- [[Executive Summary_8]] - `contains` [EXTRACTED]
+- [[Executive Summary_3]] - `contains` [EXTRACTED]
 - [[Installation and Upgrade Instructions]] - `contains` [EXTRACTED]
 - [[Known Issues and Limitations]] - `contains` [EXTRACTED]
 - [[Performance Benchmarks]] - `contains` [EXTRACTED]
@@ -26,4 +26,4 @@ tags:
 - [[What's New in v0.9.0]] - `contains` [EXTRACTED]
 - [[release-notes-v0.9.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_170
+#graphify/document #graphify/EXTRACTED #community/Community_171

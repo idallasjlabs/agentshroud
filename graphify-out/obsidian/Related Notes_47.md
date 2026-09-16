@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/pydantic.md"
+source_file: "docs/vault/08 - Runbooks/Kill Switch Procedure.md"
 type: "document"
-community: "Community 1005"
-location: "L53"
+community: "Community 720"
+location: "L141"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1005
+  - community/Community_720
 ---
 
 # Related Notes
 
 ## Connections
-- [[Pydantic]] - `contains` [EXTRACTED]
+- [[Kill Switch Procedure_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1005
+#graphify/document #graphify/EXTRACTED #community/Community_720

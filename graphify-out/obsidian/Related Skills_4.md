@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-browser/README.md"
+source_file: ".agents/skills/i-aws/README.md"
 type: "document"
-community: "Community 1143"
+community: "Community 1189"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1143
+  - community/Community_1189
 ---
 
 # Related Skills
 
 ## Connections
-- [[Browser — Secure Browser Automation]] - `contains` [EXTRACTED]
+- [[AWS Cloud Management & FinOps]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1143
+#graphify/document #graphify/EXTRACTED #community/Community_1189

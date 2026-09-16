@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ps/README.md"
+source_file: ".agents/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "Community 1234"
-location: "L14"
+community: "Community 239"
+location: "L346"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1234
+  - community/Community_239
 ---
 
 # Related Skills
 
 ## Connections
-- [[Production Safety Checklist (PROD-SAFETY)_1]] - `contains` [EXTRACTED]
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1234
+#graphify/document #graphify/EXTRACTED #community/Community_239

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/wazuh-ossec.md"
+source_file: "docs/vault/09 - Diagrams/Security Pipeline Flow.md"
 type: "document"
-community: "Community 930"
-location: "L75"
+community: "Community 298"
+location: "L117"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_930
+  - community/Community_298
 ---
 
 # Related Notes
 
 ## Connections
-- [[wazuh-ossec.conf]] - `contains` [EXTRACTED]
+- [[`SecurityPipeline`]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_930
+#graphify/document #graphify/EXTRACTED #community/Community_298

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Auth Errors.md"
+source_file: "docs/vault/03 - Configuration/agentshroud.yaml.md"
 type: "document"
-community: "Community 873"
-location: "L80"
+community: "Community 86"
+location: "L213"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_873
+  - community/Community_86
 ---
 
 # Related Notes
 
 ## Connections
-- [[Auth Errors_1]] - `contains` [EXTRACTED]
+- [[agentshroud.yaml_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_873
+#graphify/document #graphify/EXTRACTED #community/Community_86

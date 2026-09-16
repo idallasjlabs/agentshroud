@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Other/port_manager.py.md"
+source_file: "docs/vault/09 - Diagrams/Startup Flow Diagram.md"
 type: "document"
-community: "Community 971"
-location: "L49"
+community: "Community 1428"
+location: "L83"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_971
+  - community/Community_1428
 ---
 
 # Related Notes
 
 ## Connections
-- [[port_manager.py_2]] - `contains` [EXTRACTED]
+- [[Startup Flow Diagram_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_971
+#graphify/document #graphify/EXTRACTED #community/Community_1428

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_gateway_email_service.py"
 type: "rationale"
-community: "Community 178"
+community: "Community 188"
 location: "L21"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_178
+  - community/Community_188
 ---
 
 # Records login/sendmail; usable as a context manager like SMTP_SSL.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_FakeSmtp]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_178
+#graphify/rationale #graphify/EXTRACTED #community/Community_188

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sad/README.md"
+source_file: ".agents/skills/i-cicd/README.md"
 type: "document"
-community: "Community 1236"
-location: "L12"
+community: "Community 325"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1236
+  - community/Community_325
 ---
 
 # Related Skills
 
 ## Connections
-- [[System Audit Documentation_2]] - `contains` [EXTRACTED]
+- [[CICD Pipeline Advisor (README)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1236
+#graphify/document #graphify/EXTRACTED #community/Community_325

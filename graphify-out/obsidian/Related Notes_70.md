@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/09 - Diagrams/Dependency Graph.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md"
 type: "document"
-community: "Community 43"
-location: "L137"
+community: "Community 979"
+location: "L104"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_43
+  - community/Community_979
 ---
 
 # Related Notes
 
 ## Connections
-- [[Dependency Graph_1]] - `contains` [EXTRACTED]
+- [[MCP Proxy Errors_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_43
+#graphify/document #graphify/EXTRACTED #community/Community_979

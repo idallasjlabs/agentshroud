@@ -1,24 +1,25 @@
 ---
-source_file: "docs/planning/redteam/03-session-isolation.md"
+source_file: "docs/planning/redteam/05-credential-isolation.md"
 type: "document"
-community: "Community 574"
-location: "L28"
+community: "Community 594"
+location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_574
+  - community/Community_594
 ---
 
 # Remediation
 
 ## Connections
-- [[Implement per-user session isolation using Telegram user ID]] - `contains` [EXTRACTED]
-- [[Step 1 Add user session registry to the gateway]] - `contains` [EXTRACTED]
-- [[Step 2 Partition conversation context at the gateway]] - `contains` [EXTRACTED]
-- [[Step 3 Isolate file workspaces per user]] - `contains` [EXTRACTED]
-- [[Step 4 Scope the system prompt per session]] - `contains` [EXTRACTED]
-- [[Step 5 Isolate memory persistence]] - `contains` [EXTRACTED]
-- [[Step 6 Add cross-session access controls to sessions_send]] - `contains` [EXTRACTED]
-- [[Step 7 Add session listing protections]] - `contains` [EXTRACTED]
+- [[Remove secret mounts from agent container and implement transparent credential injection]] - `contains` [EXTRACTED]
+- [[Step 1 Audit current secret mounts]] - `contains` [EXTRACTED]
+- [[Step 2 Move all secrets to gateway-only Docker Secrets]] - `contains` [EXTRACTED]
+- [[Step 3 Remove credential environment variables from agent container]] - `contains` [EXTRACTED]
+- [[Step 4 Implement transparent credential injection in the gateway]] - `contains` [EXTRACTED]
+- [[Step 5 Route all outbound requests through the gateway egress proxy]] - `contains` [EXTRACTED]
+- [[Step 6 Handle 1Password specifically]] - `contains` [EXTRACTED]
+- [[Step 7 Add credential leak detection to egress filtering]] - `contains` [EXTRACTED]
+- [[Step 8 Verify no credentials remain in agent container]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_574
+#graphify/document #graphify/EXTRACTED #community/Community_594

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-pr/README.md"
+source_file: "docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "Community 1232"
-location: "L14"
+community: "Community 201"
+location: "L346"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1232
+  - community/Community_201
 ---
 
 # Related Skills
 
 ## Connections
-- [[Pull Request Generator (PR)_2]] - `contains` [EXTRACTED]
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1232
+#graphify/document #graphify/EXTRACTED #community/Community_201

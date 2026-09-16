@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-cr/README.md"
+source_file: "docker/config/hermes/skills/i-mnemosyne/README.md"
 type: "document"
-community: "Community 1179"
+community: "Community 1238"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1179
+  - community/Community_1238
 ---
 
 # Related Skills
 
 ## Connections
-- [[Code Review (CR)]] - `contains` [EXTRACTED]
+- [[Mnemosyne — Retention Engineer_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1179
+#graphify/document #graphify/EXTRACTED #community/Community_1238

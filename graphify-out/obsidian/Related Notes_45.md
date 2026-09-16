@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/playwright.md"
+source_file: "docs/vault/03 - Configuration/All Environment Variables.md"
 type: "document"
-community: "Community 1004"
-location: "L46"
+community: "Community 718"
+location: "L114"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1004
+  - community/Community_718
 ---
 
 # Related Notes
 
 ## Connections
-- [[Playwright]] - `contains` [EXTRACTED]
+- [[4. Environment Variables]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1004
+#graphify/document #graphify/EXTRACTED #community/Community_718

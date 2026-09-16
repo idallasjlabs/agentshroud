@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-oracle/README.md"
+source_file: ".agents/skills/i-socrates/README.md"
 type: "document"
-community: "Community 1157"
+community: "Community 1211"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1157
+  - community/Community_1211
 ---
 
 # Related Skills
 
 ## Connections
-- [[Oracle — Feedback Analyst]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1157
+#graphify/document #graphify/EXTRACTED #community/Community_1211

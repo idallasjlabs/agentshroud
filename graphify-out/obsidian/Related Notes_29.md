@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md"
+source_file: "docs/vault/03 - Configuration/docker-compose.yml.md"
 type: "document"
-community: "Community 353"
-location: "L64"
+community: "Community 444"
+location: "L166"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_353
+  - community/Community_444
 ---
 
 # Related Notes
 
 ## Connections
-- [[AGENTSHROUD_MODE_1]] - `contains` [EXTRACTED]
+- [[docker-compose.yml_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_353
+#graphify/document #graphify/EXTRACTED #community/Community_444

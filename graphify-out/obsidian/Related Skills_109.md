@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-qa/README.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "Community 1235"
-location: "L14"
+community: "Community 262"
+location: "L221"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1235
+  - community/Community_262
 ---
 
 # Related Skills
 
 ## Connections
-- [[Quality Assurance (QA)_1]] - `contains` [EXTRACTED]
+- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1235
+#graphify/document #graphify/EXTRACTED #community/Community_262

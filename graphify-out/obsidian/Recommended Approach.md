@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/VAULT-SHARING-INSTRUCTIONS.md"
 type: "document"
-community: "Community 586"
+community: "Community 604"
 location: "L154"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_586
+  - community/Community_604
 ---
 
 # Recommended Approach
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[1Password Vault Sharing Instructions]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_586
+#graphify/document #graphify/EXTRACTED #community/Community_604

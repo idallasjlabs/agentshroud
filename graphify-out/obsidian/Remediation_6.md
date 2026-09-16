@@ -1,25 +1,22 @@
 ---
-source_file: "docs/planning/redteam/05-credential-isolation.md"
+source_file: "docs/planning/redteam/01-enforce-by-default.md"
 type: "document"
-community: "Community 575"
-location: "L19"
+community: "Community 699"
+location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_575
+  - community/Community_699
 ---
 
 # Remediation
 
 ## Connections
-- [[Remove secret mounts from agent container and implement transparent credential injection]] - `contains` [EXTRACTED]
-- [[Step 1 Audit current secret mounts]] - `contains` [EXTRACTED]
-- [[Step 2 Move all secrets to gateway-only Docker Secrets]] - `contains` [EXTRACTED]
-- [[Step 3 Remove credential environment variables from agent container]] - `contains` [EXTRACTED]
-- [[Step 4 Implement transparent credential injection in the gateway]] - `contains` [EXTRACTED]
-- [[Step 5 Route all outbound requests through the gateway egress proxy]] - `contains` [EXTRACTED]
-- [[Step 6 Handle 1Password specifically]] - `contains` [EXTRACTED]
-- [[Step 7 Add credential leak detection to egress filtering]] - `contains` [EXTRACTED]
-- [[Step 8 Verify no credentials remain in agent container]] - `contains` [EXTRACTED]
+- [[Flip core security modules from monitor to enforce mode]] - `contains` [EXTRACTED]
+- [[Step 1 Change default mode in gateway configuration]] - `contains` [EXTRACTED]
+- [[Step 2 Add a permissive mode flag for development]] - `contains` [EXTRACTED]
+- [[Step 3 Add a startup warning for monitor mode]] - `contains` [EXTRACTED]
+- [[Step 4 Document the risk of monitor mode]] - `contains` [EXTRACTED]
+- [[Step 5 Update docker-compose.yml defaults]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_575
+#graphify/document #graphify/EXTRACTED #community/Community_699

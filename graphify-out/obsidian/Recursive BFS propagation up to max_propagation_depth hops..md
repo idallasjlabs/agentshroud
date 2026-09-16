@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/cross_bot_trust_ledger.py"
 type: "rationale"
-community: "Community 41"
+community: "Cross-Bot Trust & A2A Governance"
 location: "L281"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_41
+  - community/Cross-Bot_Trust__A2A_Governance
 ---
 
 # Recursive BFS propagation up to max_propagation_depth hops.
 
 ## Connections
-- [[._propagate()]] - `rationale_for` [EXTRACTED]
+- [[dot-_propagate()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_41
+#graphify/rationale #graphify/EXTRACTED #community/Cross-Bot_Trust__A2A_Governance

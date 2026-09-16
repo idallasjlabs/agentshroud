@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Other/text_control_center.py.md"
+source_file: "docs/vault/05 - Dependencies/openclaw.md"
 type: "document"
-community: "Community 1108"
-location: "L31"
+community: "Community 224"
+location: "L56"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1108
+  - community/Community_224
 ---
 
 # Related Notes
 
 ## Connections
-- [[text_control_center.py  agentshroud_manager.py]] - `contains` [EXTRACTED]
+- [[OpenClaw_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1108
+#graphify/document #graphify/EXTRACTED #community/Community_224

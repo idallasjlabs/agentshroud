@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md"
+source_file: "docs/vault/01 - Architecture/Shutdown & Recovery.md"
 type: "document"
-community: "Community 353"
-location: "L44"
+community: "Community 610"
+location: "L192"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_353
+  - community/Community_610
 ---
 
 # Related Notes
 
 ## Connections
-- [[OPENCLAW_SANDBOX_MODE_1]] - `contains` [EXTRACTED]
+- [[Shutdown & Recovery_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_353
+#graphify/document #graphify/EXTRACTED #community/Community_610

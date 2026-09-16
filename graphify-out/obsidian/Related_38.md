@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/consent_framework.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/falco_monitor.py.md"
 type: "document"
-community: "Community 687"
-location: "L84"
+community: "Community 656"
+location: "L81"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_687
+  - community/Community_656
 ---
 
 # Related
 
 ## Connections
-- [[consent_framework.py_2]] - `contains` [EXTRACTED]
+- [[falco_monitor.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_687
+#graphify/document #graphify/EXTRACTED #community/Community_656

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-atlas/README.md"
+source_file: ".agents/skills/i-athena/README.md"
 type: "document"
-community: "Community 1141"
+community: "Community 1187"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1141
+  - community/Community_1187
 ---
 
 # Related Skills
 
 ## Connections
-- [[Atlas — Curriculum Architect]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1141
+#graphify/document #graphify/EXTRACTED #community/Community_1187

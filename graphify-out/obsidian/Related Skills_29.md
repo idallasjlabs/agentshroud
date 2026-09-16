@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-qa/README.md"
+source_file: "docker/config/hermes/skills/i-atlas/README.md"
 type: "document"
-community: "Community 516"
+community: "Community 1220"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_516
+  - community/Community_1220
 ---
 
 # Related Skills
 
 ## Connections
-- [[Quality Assurance (SKILL)]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_516
+#graphify/document #graphify/EXTRACTED #community/Community_1220

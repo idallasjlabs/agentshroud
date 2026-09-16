@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md"
+source_file: "docs/vault/03 - Configuration/ssh-config.md"
 type: "document"
-community: "Community 935"
-location: "L103"
+community: "Community 866"
+location: "L51"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_935
+  - community/Community_866
 ---
 
 # Related Notes
 
 ## Connections
-- [[PII Pipeline Errors_2]] - `contains` [EXTRACTED]
+- [[SSH Config]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_935
+#graphify/document #graphify/EXTRACTED #community/Community_866

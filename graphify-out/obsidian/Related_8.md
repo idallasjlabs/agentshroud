@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/sanitizer.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/drift_detector.py.md"
 type: "document"
-community: "Community 560"
-location: "L88"
+community: "Community 514"
+location: "L103"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_560
+  - community/Community_514
 ---
 
 # Related
 
 ## Connections
-- [[sanitizer.py_2]] - `contains` [EXTRACTED]
+- [[drift_detector.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_560
+#graphify/document #graphify/EXTRACTED #community/Community_514

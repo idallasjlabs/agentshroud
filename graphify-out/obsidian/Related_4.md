@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/env_guard.py.md"
 type: "document"
-community: "Community 379"
-location: "L464"
+community: "Community 439"
+location: "L106"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_379
+  - community/Community_439
 ---
 
 # Related
 
 ## Connections
-- [[main.py_4]] - `contains` [EXTRACTED]
+- [[env_guard.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_379
+#graphify/document #graphify/EXTRACTED #community/Community_439
