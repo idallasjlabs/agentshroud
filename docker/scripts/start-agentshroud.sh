@@ -703,15 +703,21 @@ _model_runtime_ready() {
     if [ "${AGENTSHROUD_MODEL_MODE:-cloud}" != "local" ]; then
         return 0
     fi
-    local model_name="${AGENTSHROUD_LOCAL_MODEL:-}"
-    if [ -z "${model_name}" ]; then
-        model_name="${AGENTSHROUD_LOCAL_MODEL_REF#ollama/}"
-    fi
-    if [ -z "${model_name}" ]; then
+    local model_ref="${AGENTSHROUD_LOCAL_MODEL_REF:-}"
+    if [ -z "${model_ref}" ]; then
         return 1
     fi
-    curl -sf --max-time 8 "${OLLAMA_BASE_URL:-http://gateway:8080/v1}/../api/tags" \
-        | grep -F "\"name\":\"${model_name}\"" >/dev/null 2>&1
+    # A real minimal completion through the exact gateway path + model ref
+    # real traffic uses, not a backend-specific catalog endpoint. The
+    # previous check unconditionally hit Ollama's own /api/tags, which does
+    # not exist for openai-local/LM-Studio/Rapid-MLX-routed models — it
+    # always 503'd there regardless of whether the actual configured model
+    # was reachable, so readiness could never pass and "OpenClaw online"
+    # never fired for this class of local-model setup (observed 2026-09-16).
+    curl -sf --max-time 8 -X POST "${OLLAMA_BASE_URL:-http://gateway:8080/v1}/chat/completions" \
+        -H "Content-Type: application/json" \
+        -d "{\"model\":\"${model_ref}\",\"messages\":[{\"role\":\"user\",\"content\":\"ready check\"}],\"max_tokens\":1}" \
+        >/dev/null 2>&1
 }
 
 # ── Security-critical cron reconciliation ────────────────────────────────────
