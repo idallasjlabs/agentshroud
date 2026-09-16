@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/i-browser/scripts/browse.py"
 type: "rationale"
-community: "Community 136"
+community: "Community 132"
 location: "L145"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_136
+  - community/Community_132
 ---
 
 # Classify action risk level          Security: Determines if approval is needed
 
 ## Connections
-- [[._classify_risk()]] - `rationale_for` [EXTRACTED]
+- [[dot-_classify_risk()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_136
+#graphify/rationale #graphify/EXTRACTED #community/Community_132

@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/i-browser/scripts/browse.py"
 type: "rationale"
-community: "Community 136"
+community: "Community 132"
 location: "L174"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_136
+  - community/Community_132
 ---
 
 # Check if action requires approval          Security: Approval queue integration
 
 ## Connections
-- [[._requires_approval()]] - `rationale_for` [EXTRACTED]
+- [[dot-_requires_approval()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_136
+#graphify/rationale #graphify/EXTRACTED #community/Community_132

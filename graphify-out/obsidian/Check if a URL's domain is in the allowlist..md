@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
 type: "rationale"
-community: "Memory Lifecycle & Egress Filtering"
+community: "Community 64"
 location: "L107"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Memory_Lifecycle__Egress_Filtering
+  - community/Community_64
 ---
 
 # Check if a URL's domain is in the allowlist.
 
 ## Connections
-- [[._is_domain_allowed()]] - `rationale_for` [EXTRACTED]
+- [[dot-_is_domain_allowed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Memory_Lifecycle__Egress_Filtering
+#graphify/rationale #graphify/EXTRACTED #community/Community_64

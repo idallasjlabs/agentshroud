@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md"
 type: "document"
-community: "Community 337"
+community: "Community 344"
 location: "L30"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_337
+  - community/Community_344
 ---
 
 # C4: Root Endpoint `/` Exposes System Metrics Without Authentication
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CRITICAL — Must Fix Before Release]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_337
+#graphify/document #graphify/EXTRACTED #community/Community_344

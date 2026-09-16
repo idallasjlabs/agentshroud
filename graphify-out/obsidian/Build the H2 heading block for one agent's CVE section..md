@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/generate-cve-page.py"
 type: "rationale"
-community: "Community 380"
+community: "Community 458"
 location: "L122"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_380
+  - community/Community_458
 ---
 
 # Build the H2 heading block for one agent's CVE section.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_build_heading()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_380
+#graphify/rationale #graphify/EXTRACTED #community/Community_458

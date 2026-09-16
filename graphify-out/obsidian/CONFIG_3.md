@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/icloud/scripts/calendar.js"
+source_file: "docker/config/hermes/skills/i-icloud/scripts/calendar.js"
 type: "code"
-community: "Community 866"
+community: "Community 879"
 location: "L10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_866
+  - community/Community_879
 ---
 
 # CONFIG
 
 ## Connections
-- [[calendar.js_3]] - `contains` [EXTRACTED]
+- [[hermesskillsi-icloudscriptscalendar.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_866
+#graphify/code #graphify/EXTRACTED #community/Community_879

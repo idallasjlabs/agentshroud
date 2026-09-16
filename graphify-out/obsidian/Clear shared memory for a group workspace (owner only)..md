@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "rationale"
-community: "SOC Collaborators"
+community: "SOC Correlation & Router"
 location: "L1593"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_Collaborators
+  - community/SOC_Correlation__Router
 ---
 
 # Clear shared memory for a group workspace (owner only).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[clear_group_memory()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_Collaborators
+#graphify/rationale #graphify/EXTRACTED #community/SOC_Correlation__Router

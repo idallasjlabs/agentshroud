@@ -1,11 +1,11 @@
 ---
 source_file: "docs/TEAM.md"
 type: "concept"
-community: "Community 963"
+community: "Community 1008"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_963
+  - community/Community_1008
 ---
 
 # Claude Code — Primary development agent
@@ -16,4 +16,4 @@ tags:
 - [[Git Worktrees — parallel branch development]] - `references` [EXTRACTED]
 - [[Scrum Master  Agile Coach — AgentShroud Bot (OpenClaw)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_963
+#graphify/concept #graphify/EXTRACTED #community/Community_1008

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/triage-cve-mitigations.py"
 type: "code"
-community: "Community 188"
-location: "L181"
+community: "Community 158"
+location: "L189"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_188
+  - community/Community_158
 ---
 
 # ClassProfile
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud's stance on one vulnerability class.]] - `rationale_for` [EXTRACTED]
 - [[triage-cve-mitigations.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_188
+#graphify/code #graphify/EXTRACTED #community/Community_158

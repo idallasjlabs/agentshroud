@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/web_config.py"
 type: "rationale"
-community: "Community 22"
+community: "Egress Filter & HTTP Proxy"
 location: "L114"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_22
+  - community/Egress_Filter__HTTP_Proxy
 ---
 
 # Check if a domain is on the allowlist (used when mode == 'allowlist').
 
 ## Connections
-- [[.is_domain_allowed()]] - `rationale_for` [EXTRACTED]
+- [[dot-is_domain_allowed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_22
+#graphify/rationale #graphify/EXTRACTED #community/Egress_Filter__HTTP_Proxy

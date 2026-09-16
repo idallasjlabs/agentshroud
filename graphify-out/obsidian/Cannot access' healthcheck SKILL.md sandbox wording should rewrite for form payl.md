@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Community 1595"
+community: "Community 1698"
 location: "L1764"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1595
+  - community/Community_1698
 ---
 
 # Cannot access' healthcheck SKILL.md sandbox wording should rewrite for form payl
 
 ## Connections
-- [[.test_healthcheck_skill_sandbox_cannot_variant_is_rewritten_for_form_payload()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_healthcheck_skill_sandbox_cannot_variant_is_rewritten_for_form_payload()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1595
+#graphify/rationale #graphify/EXTRACTED #community/Community_1698

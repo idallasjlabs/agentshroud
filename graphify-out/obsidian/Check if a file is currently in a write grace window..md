@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "rationale"
-community: "Memory Lifecycle & Egress Filtering"
+community: "Memory Integrity & Lifecycle"
 location: "L156"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Memory_Lifecycle__Egress_Filtering
+  - community/Memory_Integrity__Lifecycle
 ---
 
 # Check if a file is currently in a write grace window.
 
 ## Connections
-- [[._is_in_write_window()]] - `rationale_for` [EXTRACTED]
+- [[dot-_is_in_write_window()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Memory_Lifecycle__Egress_Filtering
+#graphify/rationale #graphify/EXTRACTED #community/Memory_Integrity__Lifecycle

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/output_canary.py"
 type: "rationale"
-community: "Memory Lifecycle & Egress Filtering"
+community: "Alert Dispatcher & RBAC Reliability"
 location: "L351"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Memory_Lifecycle__Egress_Filtering
+  - community/Alert_Dispatcher__RBAC_Reliability
 ---
 
 # Clean up old canaries to prevent memory leaks.          Args:             max_ag
 
 ## Connections
-- [[.cleanup_expired_canaries()]] - `rationale_for` [EXTRACTED]
+- [[dot-cleanup_expired_canaries()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Memory_Lifecycle__Egress_Filtering
+#graphify/rationale #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability

@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_instruction_envelope.py"
 type: "concept"
-community: "Key Vault & Audit Chain"
+community: "Signed Instruction Envelopes & Security Pipeline"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Key_Vault__Audit_Chain
+  - community/Signed_Instruction_Envelopes__Security_Pipeline
 ---
 
 # C46 Signed Instruction Envelopes (HMAC-SHA256 tamper detection for system prompts/tool results)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[EnvelopeSigner]] - `rationale_for` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Key_Vault__Audit_Chain
+#graphify/concept #graphify/EXTRACTED #community/Signed_Instruction_Envelopes__Security_Pipeline

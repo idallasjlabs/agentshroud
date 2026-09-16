@@ -1,12 +1,12 @@
 ---
 source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "Community 899"
+community: "Community 179"
 location: "L281"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_899
+  - community/Community_179
 ---
 
 # CSS Reference
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Animation Guidelines]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_899
+#graphify/document #graphify/EXTRACTED #community/Community_179

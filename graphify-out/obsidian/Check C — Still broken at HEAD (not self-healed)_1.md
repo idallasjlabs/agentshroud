@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-ab/SKILL.md"
 type: "document"
-community: "Community 606"
+community: "Community 621"
 location: "L118"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_606
+  - community/Community_621
 ---
 
 # Check C — Still broken at HEAD (not self-healed)?
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Step 4 — Triage each finding_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_606
+#graphify/document #graphify/EXTRACTED #community/Community_621

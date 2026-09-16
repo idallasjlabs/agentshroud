@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-icloud/SKILL.md"
 type: "document"
-community: "Community 297"
+community: "Community 306"
 location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_297
+  - community/Community_306
 ---
 
 # Calendar Operations
@@ -18,4 +18,4 @@ tags:
 - [[Update Event_1]] - `contains` [EXTRACTED]
 - [[iCloud Services_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_297
+#graphify/document #graphify/EXTRACTED #community/Community_306

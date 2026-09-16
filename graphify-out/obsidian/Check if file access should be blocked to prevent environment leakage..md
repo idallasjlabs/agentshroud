@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "rationale"
-community: "Community 18"
+community: "Alert Dispatcher & RBAC Reliability"
 location: "L99"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_18
+  - community/Alert_Dispatcher__RBAC_Reliability
 ---
 
 # Check if file access should be blocked to prevent environment leakage.
 
 ## Connections
-- [[.check_file_access()]] - `rationale_for` [EXTRACTED]
+- [[dot-check_file_access()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_18
+#graphify/rationale #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability

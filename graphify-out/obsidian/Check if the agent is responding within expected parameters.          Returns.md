@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/killswitch_monitor.py"
 type: "rationale"
-community: "Community 25"
+community: "Community 54"
 location: "L150"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_25
+  - community/Community_54
 ---
 
 # Check if the agent is responding within expected parameters.          Returns:
 
 ## Connections
-- [[.heartbeat_check()]] - `rationale_for` [EXTRACTED]
+- [[dot-heartbeat_check()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_25
+#graphify/rationale #graphify/EXTRACTED #community/Community_54

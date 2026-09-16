@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/access-control-matrix.md"
 type: "document"
-community: "Community 180"
+community: "Community 295"
 location: "L242"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_180
+  - community/Community_295
 ---
 
 # Category A: Safe Operations (All Levels)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Tool Categories and Trust Requirements]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_180
+#graphify/document #graphify/EXTRACTED #community/Community_295

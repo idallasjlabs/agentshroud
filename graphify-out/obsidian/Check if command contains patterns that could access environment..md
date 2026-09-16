@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "rationale"
-community: "Community 18"
+community: "Alert Dispatcher & RBAC Reliability"
 location: "L201"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_18
+  - community/Alert_Dispatcher__RBAC_Reliability
 ---
 
 # Check if command contains patterns that could access environment.
 
 ## Connections
-- [[._contains_env_access_patterns()]] - `rationale_for` [EXTRACTED]
+- [[dot-_contains_env_access_patterns()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_18
+#graphify/rationale #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability

@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-ab/SKILL.md"
 type: "document"
-community: "Community 598"
+community: "Community 614"
 location: "L108"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_598
+  - community/Community_614
 ---
 
 # Check B — Tied to a real ticket?
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Step 4 — Triage each finding]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_598
+#graphify/document #graphify/EXTRACTED #community/Community_614

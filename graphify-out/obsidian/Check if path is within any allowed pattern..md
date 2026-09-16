@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "rationale"
-community: "Community 79"
+community: "File Sandbox & Privilege Separation Tests"
 location: "L349"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_79
+  - community/File_Sandbox__Privilege_Separation_Tests
 ---
 
 # Check if path is within any allowed pattern.
 
 ## Connections
-- [[._matches_allowed_paths()]] - `rationale_for` [EXTRACTED]
+- [[dot-_matches_allowed_paths()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_79
+#graphify/rationale #graphify/EXTRACTED #community/File_Sandbox__Privilege_Separation_Tests

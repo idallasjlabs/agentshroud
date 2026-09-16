@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/subagent_governance.py"
 type: "rationale"
-community: "Community 483"
+community: "Voice Gateway STT & Browser Security"
 location: "L505"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_483
+  - community/Voice_Gateway_STT__Browser_Security
 ---
 
 # Check if a resource budget is exceeded.
 
 ## Connections
-- [[._check_budget()]] - `rationale_for` [EXTRACTED]
+- [[dot-_check_budget()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_483
+#graphify/rationale #graphify/EXTRACTED #community/Voice_Gateway_STT__Browser_Security

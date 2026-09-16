@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "rationale"
-community: "Group RBAC & Tool ACL"
+community: "Community 335"
 location: "L272"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Group_RBAC__Tool_ACL
+  - community/Community_335
 ---
 
 # Calls within limits should pass.
 
 ## Connections
-- [[.test_under_threshold_passes()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_under_threshold_passes()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Group_RBAC__Tool_ACL
+#graphify/rationale #graphify/EXTRACTED #community/Community_335

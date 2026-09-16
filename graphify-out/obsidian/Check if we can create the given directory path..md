@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/webhook_receiver.py"
 type: "rationale"
-community: "Community 28"
+community: "Ingest Middleware & File Sandbox"
 location: "L90"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_28
+  - community/Ingest_Middleware__File_Sandbox
 ---
 
 # Check if we can create the given directory path.
 
 ## Connections
-- [[._can_create_directory()]] - `rationale_for` [EXTRACTED]
+- [[dot-_can_create_directory()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_28
+#graphify/rationale #graphify/EXTRACTED #community/Ingest_Middleware__File_Sandbox

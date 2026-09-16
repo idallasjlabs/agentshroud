@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-icloud/SKILL.md"
 type: "document"
-community: "Community 316"
+community: "Community 1198"
 location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_316
+  - community/Community_1198
 ---
 
 # Calendar Operations
@@ -16,6 +16,6 @@ tags:
 - [[Delete Event]] - `contains` [EXTRACTED]
 - [[List Events]] - `contains` [EXTRACTED]
 - [[Update Event]] - `contains` [EXTRACTED]
-- [[iCloud Services]] - `contains` [EXTRACTED]
+- [[iCloud Services_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_316
+#graphify/document #graphify/EXTRACTED #community/Community_1198

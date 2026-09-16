@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "rationale"
-community: "Memory Lifecycle & Egress Filtering"
+community: "Alert Dispatcher & RBAC Reliability"
 location: "L863"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Memory_Lifecycle__Egress_Filtering
+  - community/Alert_Dispatcher__RBAC_Reliability
 ---
 
 # Check RBAC permissions for the request.
 
 ## Connections
-- [[._check_rbac_permissions()]] - `rationale_for` [EXTRACTED]
+- [[dot-_check_rbac_permissions()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Memory_Lifecycle__Egress_Filtering
+#graphify/rationale #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability

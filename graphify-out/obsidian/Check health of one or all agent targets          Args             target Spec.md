@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "rationale"
-community: "Community 32"
+community: "Multi-Agent Router & Chat UI"
 location: "L390"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_32
+  - community/Multi-Agent_Router__Chat_UI
 ---
 
 # Check health of one or all agent targets          Args:             target: Spec
 
 ## Connections
-- [[.health_check()]] - `rationale_for` [EXTRACTED]
+- [[dot-health_check()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_32
+#graphify/rationale #graphify/EXTRACTED #community/Multi-Agent_Router__Chat_UI
