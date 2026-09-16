@@ -1,19 +1,19 @@
 ---
 source_file: "docs/setup-slack.md"
 type: "document"
-community: "Community 660"
+community: "Community 319"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_660
+  - community/Community_319
 ---
 
 # Slack Channel Setup
 
 ## Connections
-- [[Architecture_10]] - `contains` [EXTRACTED]
-- [[Collaborators_1]] - `contains` [EXTRACTED]
+- [[Architecture_5]] - `contains` [EXTRACTED]
+- [[Collaborators]] - `contains` [EXTRACTED]
 - [[Sending Messages to the Bot]] - `contains` [EXTRACTED]
 - [[Step 10 Verify]] - `contains` [EXTRACTED]
 - [[Step 1 Create a Slack App]] - `contains` [EXTRACTED]
@@ -28,4 +28,4 @@ tags:
 - [[Troubleshooting_23]] - `contains` [EXTRACTED]
 - [[setup-slack]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_660
+#graphify/document #graphify/EXTRACTED #community/Community_319

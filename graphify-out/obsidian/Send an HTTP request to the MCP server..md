@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "Community 473"
+community: "Community 211"
 location: "L166"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_473
+  - community/Community_211
 ---
 
 # Send an HTTP request to the MCP server.
 
 ## Connections
-- [[.send_request()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-send_request()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_473
+#graphify/rationale #graphify/EXTRACTED #community/Community_211

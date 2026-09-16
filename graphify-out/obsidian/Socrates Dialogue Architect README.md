@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-socrates/README.md"
 type: "document"
-community: "Community 601"
+community: "Community 617"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_601
+  - community/Community_617
 ---
 
 # Socrates Dialogue Architect README
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Socrates — Dialogue Architect_6]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_601
+#graphify/document #graphify/EXTRACTED #community/Community_617

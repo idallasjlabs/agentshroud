@@ -1,14 +1,14 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "code"
-community: "Community 1859"
+community: "Community 2026"
 location: "L321"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1859
+  - community/Community_2026
 ---
 
 # SkillGuard.scan_file()
 
-#graphify/code #graphify/EXTRACTED #community/Community_1859
+#graphify/code #graphify/EXTRACTED #community/Community_2026

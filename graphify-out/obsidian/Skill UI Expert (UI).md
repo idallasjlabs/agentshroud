@@ -1,29 +1,29 @@
 ---
 source_file: ".agents/skills/i-ui/SKILL.md"
 type: "document"
-community: "Community 294"
+community: "Community 303"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_294
+  - community/Community_303
 ---
 
 # Skill: UI Expert (UI)
 
 ## Connections
+- [[dot-agentsskillsi-uiSKILL]] - `contains` [EXTRACTED]
 - [[Accessibility Requirements]] - `contains` [EXTRACTED]
-- [[Anti-Patterns to Flag_6]] - `contains` [EXTRACTED]
+- [[Anti-Patterns to Flag_4]] - `contains` [EXTRACTED]
 - [[CSS Architecture Recommendations]] - `contains` [EXTRACTED]
 - [[Component Patterns]] - `contains` [EXTRACTED]
 - [[Core Discipline Structure → Component → Layout → Validate]] - `contains` [EXTRACTED]
 - [[Dark  Light Theme Implementation]] - `contains` [EXTRACTED]
-- [[Dependencies_4]] - `contains` [EXTRACTED]
+- [[Dependencies_5]] - `contains` [EXTRACTED]
 - [[React  Next.js Component Architecture]] - `contains` [EXTRACTED]
 - [[Responsive Layout System]] - `contains` [EXTRACTED]
-- [[Role_37]] - `contains` [EXTRACTED]
-- [[Rules_6]] - `contains` [EXTRACTED]
-- [[SKILL_60]] - `contains` [EXTRACTED]
+- [[Role_25]] - `contains` [EXTRACTED]
+- [[Rules_4]] - `contains` [EXTRACTED]
 - [[UI Validation Checklist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_294
+#graphify/document #graphify/EXTRACTED #community/Community_303

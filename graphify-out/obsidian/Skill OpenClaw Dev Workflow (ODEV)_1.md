@@ -1,25 +1,25 @@
 ---
 source_file: "docker/config/hermes/skills/i-odev/SKILL.md"
 type: "document"
-community: "Community 299"
+community: "Community 308"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_299
+  - community/Community_308
 ---
 
 # Skill: OpenClaw Dev Workflow (ODEV)
 
 ## Connections
-- [[Guardrails_10]] - `contains` [EXTRACTED]
-- [[Invocation_6]] - `contains` [EXTRACTED]
+- [[Guardrails_5]] - `contains` [EXTRACTED]
+- [[Invocation_3]] - `contains` [EXTRACTED]
 - [[Jira ticket — every development batch gets one_3]] - `contains` [EXTRACTED]
 - [[Mode A — Single task_3]] - `contains` [EXTRACTED]
 - [[Mode B — Comprehensive review sweep_3]] - `contains` [EXTRACTED]
 - [[Reviewers and fixer available to you_3]] - `contains` [EXTRACTED]
-- [[Role_59]] - `contains` [EXTRACTED]
-- [[SKILL_102]] - `contains` [EXTRACTED]
+- [[Role_28]] - `contains` [EXTRACTED]
 - [[Tools you have for this workflow_3]] - `contains` [EXTRACTED]
+- [[hermesskillsi-odevSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_299
+#graphify/document #graphify/EXTRACTED #community/Community_308

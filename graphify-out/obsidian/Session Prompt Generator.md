@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-session-prompt/SKILL.md"
 type: "document"
-community: "Community 1312"
+community: "Community 1342"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Community_1312
+  - community/Community_1342
 ---
 
 # Session Prompt Generator
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[System Audit Documentation (SAD)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Community_1312
+#graphify/document #graphify/INFERRED #community/Community_1342

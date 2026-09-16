@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md"
+source_file: "docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md"
 type: "document"
-community: "Community 748"
+community: "Community 280"
 location: "L176"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_748
+  - community/Community_280
 ---
 
 # Skills by Category
@@ -23,6 +23,6 @@ tags:
 - [[Reference_1]] - `contains` [EXTRACTED]
 - [[SecureClaw (Project-Specific)]] - `contains` [EXTRACTED]
 - [[System Utilities]] - `contains` [EXTRACTED]
-- [[Workflow_2]] - `contains` [EXTRACTED]
+- [[Workflow_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_748
+#graphify/document #graphify/EXTRACTED #community/Community_280

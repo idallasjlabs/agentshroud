@@ -1,36 +1,22 @@
 ---
-source_file: "gateway/soc/models.py"
+source_file: "gateway/soc/services.py"
 type: "code"
-community: "Community 19"
-location: "L154"
+community: "Community 68"
+location: "L232"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_19
+  - community/Community_68
 ---
 
 # ServiceDescriptor
 
 ## Connections
-- [[.test_defaults()_2]] - `calls` [EXTRACTED]
-- [[.test_filters_services_by_bot_image()]] - `calls` [EXTRACTED]
-- [[.test_no_bot_id_returns_all_services()]] - `calls` [EXTRACTED]
-- [[.test_running_service()]] - `calls` [EXTRACTED]
-- [[.test_standby_service()]] - `calls` [EXTRACTED]
-- [[.test_stopped_service()]] - `calls` [EXTRACTED]
-- [[.test_unhealthy_service()]] - `calls` [EXTRACTED]
-- [[.test_with_resource_usage()]] - `calls` [EXTRACTED]
-- [[Any_68]] - `uses` [INFERRED]
-- [[BaseModel]] - `inherits` [EXTRACTED]
+- [[dot-_describe_service()]] - `references` [EXTRACTED]
+- [[dot-get_service()]] - `references` [EXTRACTED]
+- [[dot-list_services()]] - `references` [EXTRACTED]
 - [[HealthStatus_1]] - `uses` [INFERRED]
 - [[ServiceDescriptor_1]] - `uses` [INFERRED]
-- [[ServiceManager]] - `uses` [INFERRED]
 - [[ServiceStatus_1]] - `uses` [INFERRED]
-- [[_loadServices()]] - `shares_data_with` [INFERRED]
-- [[models.py_1]] - `contains` [EXTRACTED]
-- [[services.py]] - `imports` [EXTRACTED]
-- [[test_soc_bots.py]] - `imports` [EXTRACTED]
-- [[test_soc_models.py]] - `imports` [EXTRACTED]
-- [[test_soc_services.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_19
+#graphify/code #graphify/EXTRACTED #community/Community_68

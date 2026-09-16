@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/event_adapter.py"
 type: "code"
-community: "SOC Collaborators"
+community: "Community 334"
 location: "L23"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SOC_Collaborators
+  - community/Community_334
 ---
 
 # Severity
@@ -16,4 +16,4 @@ tags:
 - [[Severity_2]] - `uses` [INFERRED]
 - [[_map_severity()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SOC_Collaborators
+#graphify/code #graphify/INFERRED #community/Community_334

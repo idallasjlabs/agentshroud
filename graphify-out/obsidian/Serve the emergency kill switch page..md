@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/management.py"
 type: "rationale"
-community: "Community 174"
+community: "Community 52"
 location: "L891"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_174
+  - community/Community_52
 ---
 
 # Serve the emergency kill switch page.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[killswitch()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_174
+#graphify/rationale #graphify/EXTRACTED #community/Community_52

@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/i-observability/SKILL.md"
 type: "document"
-community: "Community 1444"
+community: "Community 1502"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1444
+  - community/Community_1502
 ---
 
 # Skill: observability
 
 ## Connections
-- [[SKILL_37]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-observabilitySKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1444
+#graphify/document #graphify/EXTRACTED #community/Community_1502

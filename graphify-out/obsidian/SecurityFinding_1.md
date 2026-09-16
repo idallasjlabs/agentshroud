@@ -1,17 +1,28 @@
 ---
-source_file: "docs/data/data-dictionary.md"
-type: "document"
-community: "Community 396"
-location: "L184"
+source_file: "gateway/security/git_guard.py"
+type: "code"
+community: "Community 48"
+location: "L38"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_396
+  - community/Community_48
 ---
 
 # SecurityFinding
 
 ## Connections
-- [[Network Security Entities]] - `contains` [EXTRACTED]
+- [[dot-_analyze_file_content()]] - `references` [EXTRACTED]
+- [[dot-_analyze_script_content()]] - `references` [EXTRACTED]
+- [[dot-_analyze_script_file()]] - `references` [EXTRACTED]
+- [[dot-_quarantine_suspicious_files()]] - `references` [EXTRACTED]
+- [[dot-_scan_git_hooks()]] - `references` [EXTRACTED]
+- [[dot-_scan_package_json()]] - `references` [EXTRACTED]
+- [[dot-_scan_pyproject_toml()]] - `references` [EXTRACTED]
+- [[dot-_scan_setup_py()]] - `references` [EXTRACTED]
+- [[dot-scan_content()]] - `references` [EXTRACTED]
+- [[dot-scan_git_repository()]] - `references` [EXTRACTED]
+- [[A security finding in git hooks or install scripts.]] - `rationale_for` [EXTRACTED]
+- [[git_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_396
+#graphify/code #graphify/EXTRACTED #community/Community_48

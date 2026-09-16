@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/collaborator_greeter.py"
 type: "rationale"
-community: "Community 173"
+community: "Community 181"
 location: "L34"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_173
+  - community/Community_181
 ---
 
 # Sends a branded greeting photo to each (bot, user) pair once per 24 h.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CollaboratorGreeter]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_173
+#graphify/rationale #graphify/EXTRACTED #community/Community_181

@@ -1,19 +1,18 @@
 ---
-source_file: "docs/setup/ICLOUD-SERVICES-SETUP.md"
+source_file: "docs/setup/GOOGLE-SERVICES-SETUP.md"
 type: "document"
-community: "Community 333"
-location: "L33"
+community: "Community 466"
+location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_333
+  - community/Community_466
 ---
 
 # Server Settings
 
 ## Connections
-- [[📅 iCloud Calendar (CalDAV)]] - `contains` [EXTRACTED]
-- [[📞 iCloud Contacts (CardDAV)]] - `contains` [EXTRACTED]
-- [[📧 iCloud Mail (IMAPSMTP)]] - `contains` [EXTRACTED]
+- [[📅 Google Calendar (CalDAV)]] - `contains` [EXTRACTED]
+- [[📞 Google Contacts (CardDAV)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_333
+#graphify/document #graphify/EXTRACTED #community/Community_466

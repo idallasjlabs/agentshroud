@@ -1,27 +1,27 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "code"
-community: "Community 102"
+community: "Community 114"
 location: "L76"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_102
+  - community/Community_114
 ---
 
 # Severity
 
 ## Connections
-- [[.severity()]] - `references` [EXTRACTED]
-- [[CompletedProcess_3]] - `uses` [INFERRED]
+- [[dot-severity()]] - `references` [EXTRACTED]
+- [[CompletedProcess_4]] - `uses` [INFERRED]
 - [[IntEnum]] - `inherits` [EXTRACTED]
 - [[Ordered severity ladder (``IntEnum`` so comparisons work).]] - `rationale_for` [EXTRACTED]
-- [[Path_38]] - `uses` [INFERRED]
-- [[ScanResult_4]] - `uses` [INFERRED]
-- [[SkillGuard_1]] - `uses` [INFERRED]
+- [[Path_32]] - `uses` [INFERRED]
+- [[ScanResult]] - `uses` [INFERRED]
+- [[SkillGuard]] - `uses` [INFERRED]
 - [[TestAggregation]] - `uses` [INFERRED]
 - [[TestCleanSkill]] - `uses` [INFERRED]
-- [[TestClient]] - `uses` [INFERRED]
+- [[TestClient_1]] - `uses` [INFERRED]
 - [[TestExecOfDownload]] - `uses` [INFERRED]
 - [[TestExfiltration]] - `uses` [INFERRED]
 - [[TestKnownMalicious]] - `uses` [INFERRED]
@@ -37,4 +37,4 @@ tags:
 - [[skill_guard.py]] - `contains` [EXTRACTED]
 - [[test_skill_guard.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_102
+#graphify/code #graphify/INFERRED #community/Community_114

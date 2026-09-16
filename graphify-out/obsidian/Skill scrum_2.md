@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/skills/i-scrum/SKILL.md"
 type: "document"
-community: "Community 1484"
+community: "Community 1565"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1484
+  - community/Community_1565
 ---
 
 # Skill: scrum
 
 ## Connections
-- [[SKILL_175]] - `contains` [EXTRACTED]
+- [[openclawskillsi-scrumSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1484
+#graphify/document #graphify/EXTRACTED #community/Community_1565

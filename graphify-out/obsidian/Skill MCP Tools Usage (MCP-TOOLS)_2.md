@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mcpm/SKILL.md"
 type: "document"
-community: "Community 845"
+community: "Community 885"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_845
+  - community/Community_885
 ---
 
 # Skill: MCP Tools Usage (MCP-TOOLS)
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Available MCP Servers_2]] - `contains` [EXTRACTED]
 - [[MCP Troubleshooting_1]] - `contains` [EXTRACTED]
-- [[Role_92]] - `contains` [EXTRACTED]
-- [[SKILL_161]] - `contains` [EXTRACTED]
+- [[Role_96]] - `contains` [EXTRACTED]
+- [[openclawskillsi-mcpmSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_845
+#graphify/document #graphify/EXTRACTED #community/Community_885

@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-production/SKILL.md"
 type: "document"
-community: "Community 517"
+community: "Community 525"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_517
+  - community/Community_525
 ---
 
 # Severity Matrix
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Incident Response (INCIDENT)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_517
+#graphify/document #graphify/EXTRACTED #community/Community_525

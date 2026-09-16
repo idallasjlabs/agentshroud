@@ -1,21 +1,20 @@
 ---
 source_file: "docker/config/openclaw/skills/i-crpr/SKILL.md"
 type: "document"
-community: "Community 611"
+community: "Community 629"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_611
+  - community/Community_629
 ---
 
 # Skill: Create PR with Pre-Flight Audit (CRPR)
 
 ## Connections
-- [[Guardrails_13]] - `contains` [EXTRACTED]
-- [[Invocation_7]] - `contains` [EXTRACTED]
-- [[Role_83]] - `contains` [EXTRACTED]
-- [[SKILL_143]] - `contains` [EXTRACTED]
+- [[Guardrails_14]] - `contains` [EXTRACTED]
+- [[Invocation_8]] - `contains` [EXTRACTED]
+- [[Role_67]] - `contains` [EXTRACTED]
 - [[Step 0 — Pre-flight checks_2]] - `contains` [EXTRACTED]
 - [[Step 1 — Check for an in-progress merge_2]] - `contains` [EXTRACTED]
 - [[Step 2 — Merge without committing_2]] - `contains` [EXTRACTED]
@@ -26,5 +25,6 @@ tags:
 - [[Step 4 — Push the branch_2]] - `contains` [EXTRACTED]
 - [[Step 5 — Generate the PR description_2]] - `contains` [EXTRACTED]
 - [[Step 6 — Create the PR_2]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crprSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_611
+#graphify/document #graphify/EXTRACTED #community/Community_629

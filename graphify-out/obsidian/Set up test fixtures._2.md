@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_tool_injection_scan.py"
+source_file: "gateway/tests/test_xml_leak_filter.py"
 type: "rationale"
-community: "Community 134"
-location: "L24"
+community: "Blue/Red Team Security Auditor Skills"
+location: "L20"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_134
+  - community/Blue/Red_Team_Security_Auditor_Skills
 ---
 
 # Set up test fixtures.
 
 ## Connections
-- [[.setup_method()_36]] - `rationale_for` [EXTRACTED]
+- [[dot-setup_method()_29]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_134
+#graphify/rationale #graphify/EXTRACTED #community/Blue/Red_Team_Security_Auditor_Skills

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-inventory.md"
 type: "concept"
-community: "Community 770"
+community: "Community 788"
 location: "Module 56"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Community_770
+  - community/Community_788
 ---
 
 # SecurityPipeline: Central Inbound/Outbound Module Orchestrator
@@ -17,4 +17,4 @@ tags:
 - [[PromptGuard Prompt Injection Defense (49 Patterns, 35+ Languages)]] - `calls` [INFERRED]
 - [[SSHProxy Controlled Remote Command Execution via Gateway API]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Community_770
+#graphify/concept #graphify/INFERRED #community/Community_788

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_rbac.py"
+source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "rationale"
-community: "RBAC & SOC Realtime"
-location: "L129"
+community: "Memory Integrity & Lifecycle"
+location: "L71"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBAC__SOC_Realtime
+  - community/Memory_Integrity__Lifecycle
 ---
 
 # Set up test environment.
 
 ## Connections
-- [[.setup_method()_20]] - `rationale_for` [EXTRACTED]
-- [[.setup_method()_21]] - `rationale_for` [EXTRACTED]
+- [[dot-setup_method()_17]] - `rationale_for` [EXTRACTED]
+- [[dot-setup_method()_16]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBAC__SOC_Realtime
+#graphify/rationale #graphify/EXTRACTED #community/Memory_Integrity__Lifecycle

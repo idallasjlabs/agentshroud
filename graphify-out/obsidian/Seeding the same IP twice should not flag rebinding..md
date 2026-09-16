@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_dns_filter.py"
 type: "rationale"
-community: "Memory Lifecycle & Egress Filtering"
+community: "Community 63"
 location: "L218"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Memory_Lifecycle__Egress_Filtering
+  - community/Community_63
 ---
 
 # Seeding the same IP twice should not flag rebinding.
 
 ## Connections
-- [[.test_stable_resolution_passes()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_stable_resolution_passes()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Memory_Lifecycle__Egress_Filtering
+#graphify/rationale #graphify/EXTRACTED #community/Community_63

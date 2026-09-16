@@ -1,22 +1,22 @@
 ---
 source_file: ".agents/skills/i-cicd/SKILL.md"
 type: "document"
-community: "Community 1009"
+community: "Community 1052"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1009
+  - community/Community_1052
 ---
 
 # Skill: CI/CD Pipeline Advisor (CICD)
 
 ## Connections
+- [[dot-agentsskillsi-cicdSKILL]] - `contains` [EXTRACTED]
 - [[Deployment Matrix  (Direct to Prod)]] - `contains` [EXTRACTED]
 - [[GitHub Actions Best Practices]] - `contains` [EXTRACTED]
 - [[Quality Gates  (execution order)]] - `contains` [EXTRACTED]
 - [[Review Flags  (block the merge)]] - `contains` [EXTRACTED]
-- [[Role_8]] - `contains` [EXTRACTED]
-- [[SKILL_14]] - `contains` [EXTRACTED]
+- [[Role_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1009
+#graphify/document #graphify/EXTRACTED #community/Community_1052

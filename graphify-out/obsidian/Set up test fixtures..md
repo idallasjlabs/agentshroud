@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_outbound_filter.py"
+source_file: "gateway/tests/test_tool_injection_scan.py"
 type: "rationale"
-community: "Community 1553"
-location: "L23"
+community: "Community 101"
+location: "L24"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1553
+  - community/Community_101
 ---
 
 # Set up test fixtures.
 
 ## Connections
-- [[.setup_method()_17]] - `rationale_for` [EXTRACTED]
+- [[dot-setup_method()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1553
+#graphify/rationale #graphify/EXTRACTED #community/Community_101
