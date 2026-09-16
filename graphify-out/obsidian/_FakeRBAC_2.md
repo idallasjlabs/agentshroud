@@ -1,33 +1,37 @@
 ---
-source_file: "gateway/tests/test_soc_realtime_coverage.py"
+source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "RBAC & SOC Realtime"
-location: "L164"
+community: "Ingest Middleware & File Sandbox"
+location: "L141"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBAC__SOC_Realtime
+  - community/Ingest_Middleware__File_Sandbox
 ---
 
 # _FakeRBAC
 
 ## Connections
-- [[.__init__()_182]] - `method` [EXTRACTED]
-- [[.check_permission()_2]] - `method` [EXTRACTED]
-- [[.test_get_caller_passthrough()]] - `calls` [EXTRACTED]
-- [[.test_is_group_admin_with_teams_config()]] - `calls` [EXTRACTED]
-- [[.test_is_group_admin_without_teams_config()]] - `calls` [EXTRACTED]
-- [[.test_is_owner_delegates_to_config()]] - `calls` [EXTRACTED]
-- [[.test_require_allowed_does_not_raise()]] - `calls` [EXTRACTED]
-- [[.test_require_denied_raises_403_with_reason()]] - `calls` [EXTRACTED]
-- [[.test_require_denied_without_reason_uses_forbidden()]] - `calls` [EXTRACTED]
-- [[Action_1]] - `uses` [INFERRED]
-- [[Minimal RBAC stand-in with controllable check_permission results.]] - `rationale_for` [EXTRACTED]
-- [[PermissionResult]] - `uses` [INFERRED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[Resource_1]] - `uses` [INFERRED]
-- [[Role_1]] - `uses` [INFERRED]
-- [[SOCWebSocketHandler]] - `uses` [INFERRED]
-- [[test_soc_realtime_coverage.py]] - `contains` [EXTRACTED]
+- [[dot-__init__()_142]] - `method` [EXTRACTED]
+- [[dot-check_permission()_2]] - `method` [EXTRACTED]
+- [[dot-check_tool_permission()_2]] - `method` [EXTRACTED]
+- [[dot-get_user_role()_3]] - `method` [EXTRACTED]
+- [[dot-test_owner_bypass()_1]] - `calls` [EXTRACTED]
+- [[dot-test_owner_bypass()_2]] - `calls` [EXTRACTED]
+- [[dot-test_owner_bypasses_sandbox()]] - `calls` [EXTRACTED]
+- [[dot-test_owner_exempt_when_critical_guard_failed()]] - `calls` [EXTRACTED]
+- [[dot-test_rbac_denied()]] - `calls` [EXTRACTED]
+- [[dot-test_rbac_exception_fails_closed()]] - `calls` [EXTRACTED]
+- [[dot-test_rbac_pass_logs_role_and_allows()]] - `calls` [EXTRACTED]
+- [[dot-test_rbac_requires_approval()]] - `calls` [EXTRACTED]
+- [[dot-test_tool_permission_denied()]] - `calls` [EXTRACTED]
+- [[dot-test_tool_permission_requires_approval()]] - `calls` [EXTRACTED]
+- [[dot-test_with_rbac_manager()]] - `calls` [EXTRACTED]
+- [[Deterministic stand-in for RBACManager.]] - `rationale_for` [EXTRACTED]
+- [[MiddlewareManager]] - `uses` [INFERRED]
+- [[MiddlewareResult]] - `uses` [INFERRED]
+- [[PIIConfig_2]] - `uses` [INFERRED]
+- [[UserSessionManager]] - `uses` [INFERRED]
+- [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBAC__SOC_Realtime
+#graphify/code #graphify/EXTRACTED #community/Ingest_Middleware__File_Sandbox

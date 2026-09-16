@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Community 96"
+community: "Community 93"
 location: "L5380"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_96
+  - community/Community_93
 ---
 
 # _active_bot_id returns the constructor-injected default when no contextvar is se
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestDefaultBotId]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_96
+#graphify/rationale #graphify/EXTRACTED #community/Community_93

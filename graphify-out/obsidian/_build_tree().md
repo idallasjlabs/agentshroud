@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/skills/scan.py"
 type: "code"
-community: "Community 272"
+community: "Community 293"
 location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_272
+  - community/Community_293
 ---
 
 # _build_tree()
 
 ## Connections
-- [[Path_22]] - `references` [EXTRACTED]
+- [[Path_31]] - `references` [EXTRACTED]
 - [[Read every manifest entry under source, failing CLOSED on unreadable files.]] - `rationale_for` [EXTRACTED]
 - [[SkillsManifest.from_source()]] - `calls` [EXTRACTED]
-- [[main()_13]] - `calls` [EXTRACTED]
+- [[main()_16]] - `calls` [EXTRACTED]
 - [[scan.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_272
+#graphify/code #graphify/EXTRACTED #community/Community_293

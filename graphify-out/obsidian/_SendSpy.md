@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_alert_telegram_relay.py"
 type: "code"
-community: "Community 124"
+community: "Community 194"
 location: "L12"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_124
+  - community/Community_194
 ---
 
 # _SendSpy
 
 ## Connections
-- [[.__call__()_1]] - `method` [EXTRACTED]
-- [[.__init__()_140]] - `method` [EXTRACTED]
+- [[dot-__call__()_4]] - `method` [EXTRACTED]
+- [[dot-__init__()_86]] - `method` [EXTRACTED]
 - [[AlertTelegramRelay]] - `uses` [INFERRED]
 - [[EventBus]] - `uses` [INFERRED]
 - [[test_alert_telegram_relay.py]] - `contains` [EXTRACTED]
@@ -34,4 +34,4 @@ tags:
 - [[test_warning_alert_relayed_with_orange_marker()]] - `calls` [EXTRACTED]
 - [[test_warning_flood_cannot_starve_critical()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_124
+#graphify/code #graphify/EXTRACTED #community/Community_194

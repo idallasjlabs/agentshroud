@@ -1,24 +1,22 @@
 ---
-source_file: "gateway/tests/test_privacy_policy.py"
+source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "Community 87"
-location: "L26"
+community: "Community 134"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_87
+  - community/Community_134
 ---
 
 # _make_rbac()
 
 ## Connections
-- [[.test_collaborator_allowed_shared_service()]] - `calls` [EXTRACTED]
-- [[.test_group_member_allowed_group_only_service()]] - `calls` [EXTRACTED]
-- [[.test_non_group_member_blocked_from_group_only_service()]] - `calls` [EXTRACTED]
-- [[RBACConfig_1]] - `calls` [EXTRACTED]
-- [[RBACConfig_2]] - `references` [EXTRACTED]
-- [[TeamsConfig]] - `calls` [EXTRACTED]
-- [[rbac()_3]] - `calls` [EXTRACTED]
-- [[test_privacy_policy.py]] - `contains` [EXTRACTED]
+- [[dot-test_group_allowlist_grants_extra_tool()]] - `calls` [EXTRACTED]
+- [[dot-test_project_allowed_tools_grant_access()]] - `calls` [EXTRACTED]
+- [[RBACConfig_3]] - `calls` [EXTRACTED]
+- [[TeamsConfig]] - `references` [EXTRACTED]
+- [[rbac()]] - `calls` [EXTRACTED]
+- [[test_tool_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_87
+#graphify/code #graphify/EXTRACTED #community/Community_134

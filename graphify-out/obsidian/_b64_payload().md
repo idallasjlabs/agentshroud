@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_clamav_pipeline.py"
 type: "code"
-community: "Community 330"
+community: "Community 339"
 location: "L118"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_330
+  - community/Community_339
 ---
 
 # _b64_payload()
@@ -18,4 +18,4 @@ tags:
 - [[test_pipeline_clamav_error_fail_open()]] - `calls` [EXTRACTED]
 - [[test_pipeline_clamav_malware_blocked()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_330
+#graphify/code #graphify/EXTRACTED #community/Community_339

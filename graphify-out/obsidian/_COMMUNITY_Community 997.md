@@ -10,14 +10,14 @@ members: 8
 **Members:** 8 nodes
 
 ## Members
-- [[.test_collaborator_allowlist_bypass_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_collaborator_path_traversal_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_collaborator_unicode_bypass_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_collaborator_unsafe_scheme_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[Allowlistredirect-bypass prompts should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Path traversal prompts should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Unicodeinvisible-character bypass prompts should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Unsafe URL scheme fetch requests should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Step 6b - Wiki (only if --wiki flag)_2]] - document - docker/config/hermes/skills/graphify/references/exports.md
+- [[Step 7 - Neo4j export (only if --neo4j or --neo4j-push flag)_2]] - document - docker/config/hermes/skills/graphify/references/exports.md
+- [[Step 7b - SVG export (only if --svg flag)_2]] - document - docker/config/hermes/skills/graphify/references/exports.md
+- [[Step 7c - GraphML export (only if --graphml flag)_2]] - document - docker/config/hermes/skills/graphify/references/exports.md
+- [[Step 7d - MCP server (only if --mcp flag)_2]] - document - docker/config/hermes/skills/graphify/references/exports.md
+- [[Step 8 - Token reduction benchmark (only if total_words  5000)_2]] - document - docker/config/hermes/skills/graphify/references/exports.md
+- [[graphify reference extra exports and benchmark_2]] - document - docker/config/hermes/skills/graphify/references/exports.md
+- [[hermesskillsgraphifyreferencesexports]] - document - docker/config/hermes/skills/graphify/references/exports.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,13 +25,3 @@ members: 8
 TABLE source_file, type FROM #community/Community_997
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 20 edges to [[_COMMUNITY_Telegram Proxy Inbound]]
-- 4 edges to [[_COMMUNITY_Community 31]]
-
-## Top bridge nodes
-- [[.test_collaborator_allowlist_bypass_request_is_blocked_and_quarantined()]] - degree 8, connects to 2 communities
-- [[.test_collaborator_path_traversal_request_is_blocked_and_quarantined()]] - degree 8, connects to 2 communities
-- [[.test_collaborator_unicode_bypass_request_is_blocked_and_quarantined()]] - degree 8, connects to 2 communities
-- [[.test_collaborator_unsafe_scheme_request_is_blocked_and_quarantined()]] - degree 7, connects to 2 communities

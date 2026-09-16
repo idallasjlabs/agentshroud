@@ -1,19 +1,18 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "Memory Lifecycle & Egress Filtering"
+community: "Approval Routing & Event Bus"
 location: "L61"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Memory_Lifecycle__Egress_Filtering
+  - community/Approval_Routing__Event_Bus
 ---
 
 # _DropInvalidHTTPRequestFilter
 
 ## Connections
-- [[.filter()]] - `method` [EXTRACTED]
-- [[.test_lifespan_uvicorn_warning_filter_drops_invalid_http_noise()]] - `calls` [EXTRACTED]
+- [[dot-filter()_1]] - `method` [EXTRACTED]
 - [[AlertTelegramRelay]] - `uses` [INFERRED]
 - [[DataLedger]] - `uses` [INFERRED]
 - [[EventBus]] - `uses` [INFERRED]
@@ -21,11 +20,10 @@ tags:
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MultiAgentRouter]] - `uses` [INFERRED]
 - [[PIISanitizer]] - `uses` [INFERRED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[RBACConfig_2]] - `uses` [INFERRED]
 - [[Suppress noisy uvicorn warning spam for malformed probe traffic.]] - `rationale_for` [EXTRACTED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[_install_uvicorn_warning_filter()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `contains` [EXTRACTED]
-- [[test_config_validation.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Memory_Lifecycle__Egress_Filtering
+#graphify/code #graphify/INFERRED #community/Approval_Routing__Event_Bus

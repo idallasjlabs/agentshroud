@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "SOC Collaborators"
+community: "SOC Correlation & Router"
 location: "L2024"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Collaborators
+  - community/SOC_Correlation__Router
 ---
 
 # _launch_scan_background()
 
 ## Connections
 - [[Launch security-scan.sh for the given scanner and discard the handle (fire-and-f]] - `rationale_for` [EXTRACTED]
-- [[router.py_1]] - `contains` [EXTRACTED]
 - [[run_scanner()]] - `calls` [EXTRACTED]
+- [[socrouter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Collaborators
+#graphify/code #graphify/EXTRACTED #community/SOC_Correlation__Router

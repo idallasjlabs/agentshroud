@@ -1,23 +1,23 @@
 ---
 type: community
-cohesion: 0.25
+cohesion: 0.43
 members: 8
 ---
 
 # Community 995
 
-**Cohesion:** 0.25 - loosely connected
+**Cohesion:** 0.43 - moderately connected
 **Members:** 8 nodes
 
 ## Members
-- [[.test_disallowed_vault_returns_403()]] - code - gateway/tests/test_op_proxy.py
-- [[.test_malformed_reference_returns_422()]] - code - gateway/tests/test_op_proxy.py
-- [[.test_op_subprocess_failure_returns_502()]] - code - gateway/tests/test_op_proxy.py
-- [[.test_path_traversal_returns_403()]] - code - gateway/tests/test_op_proxy.py
-- [[.test_requires_auth()_4]] - code - gateway/tests/test_op_proxy.py
-- [[.test_valid_reference_returns_value()]] - code - gateway/tests/test_op_proxy.py
-- [[Endpoint returns 401 without auth override._1]] - rationale - gateway/tests/test_op_proxy.py
-- [[TestOpProxyEndpoint]] - code - gateway/tests/test_op_proxy.py
+- [[_secret_mount_args()]] - code - docker/bots/hermes/run-standalone.sh
+- [[_wait_for_gateway_healthy()]] - code - docker/bots/hermes/run-standalone.sh
+- [[cmd_down()]] - code - docker/bots/hermes/run-standalone.sh
+- [[cmd_logs()]] - code - docker/bots/hermes/run-standalone.sh
+- [[cmd_status()_1]] - code - docker/bots/hermes/run-standalone.sh
+- [[cmd_up()]] - code - docker/bots/hermes/run-standalone.sh
+- [[run-standalone.sh]] - code - docker/bots/hermes/run-standalone.sh
+- [[run-standalone.sh script]] - code - docker/bots/hermes/run-standalone.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,9 +25,3 @@ members: 8
 TABLE source_file, type FROM #community/Community_995
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Community 668]]
-
-## Top bridge nodes
-- [[TestOpProxyEndpoint]] - degree 7, connects to 1 community

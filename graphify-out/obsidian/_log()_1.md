@@ -1,18 +1,18 @@
 ---
-source_file: "docker/bots/hermes/heartbeat.sh"
+source_file: "docker/bots/hermes/crashwatch.sh"
 type: "code"
-community: "Community 1398"
-location: "L24"
+community: "Community 795"
+location: "L26"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1398
+  - community/Community_795
 ---
 
 # _log()
 
 ## Connections
-- [[heartbeat.sh]] - `defines` [EXTRACTED]
-- [[heartbeat.sh script]] - `calls` [EXTRACTED]
+- [[crashwatch.sh]] - `defines` [EXTRACTED]
+- [[crashwatch.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1398
+#graphify/code #graphify/EXTRACTED #community/Community_795

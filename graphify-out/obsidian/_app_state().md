@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "SOC Collaborators"
+community: "SOC Correlation & Router"
 location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Collaborators
+  - community/SOC_Correlation__Router
 ---
 
 # _app_state()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[_log_audit()]] - `calls` [EXTRACTED]
 - [[acknowledge_config_integrity()]] - `calls` [EXTRACTED]
-- [[add_group_member()_1]] - `calls` [EXTRACTED]
+- [[add_group_member()]] - `calls` [EXTRACTED]
 - [[approve_egress()]] - `calls` [EXTRACTED]
 - [[approve_request()]] - `calls` [EXTRACTED]
 - [[clear_group_memory()]] - `calls` [EXTRACTED]
@@ -26,14 +26,14 @@ tags:
 - [[emergency_block_egress()]] - `calls` [EXTRACTED]
 - [[export_audit()]] - `calls` [EXTRACTED]
 - [[get_collaborator_activity()]] - `calls` [EXTRACTED]
-- [[get_config()]] - `calls` [EXTRACTED]
+- [[get_config()_1]] - `calls` [EXTRACTED]
 - [[get_egress_history()]] - `calls` [EXTRACTED]
 - [[get_egress_log()]] - `calls` [EXTRACTED]
-- [[get_egress_pending()_1]] - `calls` [EXTRACTED]
+- [[get_egress_pending()]] - `calls` [EXTRACTED]
 - [[get_egress_rules()]] - `calls` [EXTRACTED]
 - [[get_group()]] - `calls` [EXTRACTED]
 - [[get_group_memory()]] - `calls` [EXTRACTED]
-- [[get_health()_1]] - `calls` [EXTRACTED]
+- [[get_health()]] - `calls` [EXTRACTED]
 - [[get_llm_failover_stats()]] - `calls` [EXTRACTED]
 - [[get_modules()]] - `calls` [EXTRACTED]
 - [[get_privacy_policies()]] - `calls` [EXTRACTED]
@@ -63,10 +63,10 @@ tags:
 - [[rename_group()]] - `calls` [EXTRACTED]
 - [[revoke_delegation()]] - `calls` [EXTRACTED]
 - [[revoke_egress_history()]] - `calls` [EXTRACTED]
-- [[router.py_1]] - `contains` [EXTRACTED]
 - [[set_group_mode()]] - `calls` [EXTRACTED]
 - [[set_module_mode()]] - `calls` [EXTRACTED]
 - [[set_user_collab_mode()]] - `calls` [EXTRACTED]
+- [[socrouter.py]] - `contains` [EXTRACTED]
 - [[verify_audit_chain()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Collaborators
+#graphify/code #graphify/EXTRACTED #community/SOC_Correlation__Router

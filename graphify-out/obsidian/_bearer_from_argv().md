@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_bots_ssh_exec_wrapper.py"
 type: "code"
-community: "Community 140"
+community: "Community 149"
 location: "L316"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_140
+  - community/Community_149
 ---
 
 # _bearer_from_argv()
@@ -18,4 +18,4 @@ tags:
 - [[test_token_resolved_from_hermes_auth_token_file()]] - `calls` [EXTRACTED]
 - [[test_token_resolved_from_openclaw_password_file()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_140
+#graphify/code #graphify/EXTRACTED #community/Community_149

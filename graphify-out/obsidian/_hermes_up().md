@@ -1,17 +1,19 @@
 ---
 source_file: "scripts/asb"
 type: "code"
-community: "Custom Skills"
-location: "336"
+community: "Community 739"
+location: "L365"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Community_739
 ---
 
 # _hermes_up()
 
 ## Connections
-- [[run-standalone.sh]] - `calls` [EXTRACTED]
+- [[Hermes Standalone Deploy (docker run, not compose)]] - `rationale_for` [EXTRACTED]
+- [[asb]] - `defines` [EXTRACTED]
+- [[asb script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Custom_Skills
+#graphify/code #graphify/EXTRACTED #community/Community_739

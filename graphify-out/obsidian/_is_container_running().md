@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "Community 72"
+community: "Community 60"
 location: "L346"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_72
+  - community/Community_60
 ---
 
 # _is_container_running()
@@ -15,4 +15,4 @@ tags:
 - [[Return True if the named Docker container is currently in 'running' state.]] - `rationale_for` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_72
+#graphify/code #graphify/EXTRACTED #community/Community_60

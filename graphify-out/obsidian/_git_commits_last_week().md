@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
 type: "code"
-community: "Community 249"
+community: "Community 242"
 location: "L198"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_249
+  - community/Community_242
 ---
 
 # _git_commits_last_week()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Return 'shorthash subject' lines for commits in the last 7 days.      Degrades t]] - `rationale_for` [EXTRACTED]
 - [[jira_weekly_review.py]] - `contains` [EXTRACTED]
-- [[run()_1]] - `calls` [EXTRACTED]
+- [[run()_3]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_249
+#graphify/code #graphify/EXTRACTED #community/Community_242

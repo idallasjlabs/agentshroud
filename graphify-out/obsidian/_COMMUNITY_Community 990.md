@@ -1,23 +1,23 @@
 ---
 type: community
-cohesion: 0.21
+cohesion: 0.25
 members: 8
 ---
 
 # Community 990
 
-**Cohesion:** 0.21 - loosely connected
+**Cohesion:** 0.25 - loosely connected
 **Members:** 8 nodes
 
 ## Members
-- [[Turbo Fieldflare's exact model ID must win over the generic 'gemma' LM     Studi]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[_is_local_oom returns False for non-OOM raw 500 bodies.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[_is_local_oom returns True for backend_unavailable 503 bodies.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[oMLX's DeepSeek-R1-0528-Qwen3-8B must win over the generic     'deepseek-r1' -]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_is_local_oom_detects_backend_unavailable()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_is_local_oom_raw_body_false_on_normal_500()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_local_failover_base_routes_fieldflare_gemma_before_generic_gemma()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_local_failover_base_routes_omlx_deepseek_r1_qwen3_8b()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[4. Skill System]] - document - docs/architecture/agentic-os.md
+- [[59 Skills by Category]] - document - docs/architecture/agentic-os.md
+- [[Key Skills in Detail]] - document - docs/architecture/agentic-os.md
+- [[`cr` — Code Review]] - document - docs/architecture/agentic-os.md
+- [[`gg` — Git Workflow Guardian]] - document - docs/architecture/agentic-os.md
+- [[`sec-defense` — Blue Team STPA-Sec Auditor]] - document - docs/architecture/agentic-os.md
+- [[`sec-offense` — Red Team Adversarial Tester]] - document - docs/architecture/agentic-os.md
+- [[`tdd` — Test-Driven Development Coach]] - document - docs/architecture/agentic-os.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,10 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Community 54]]
+- 1 edge to [[_COMMUNITY_Community 128]]
 
 ## Top bridge nodes
-- [[test_is_local_oom_raw_body_false_on_normal_500()]] - degree 3, connects to 1 community
-- [[test_local_failover_base_routes_omlx_deepseek_r1_qwen3_8b()]] - degree 3, connects to 1 community
-- [[test_is_local_oom_detects_backend_unavailable()]] - degree 2, connects to 1 community
-- [[test_local_failover_base_routes_fieldflare_gemma_before_generic_gemma()]] - degree 2, connects to 1 community
+- [[4. Skill System]] - degree 3, connects to 1 community

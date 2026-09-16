@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "rationale"
-community: "Community 54"
+community: "Community 792"
 location: "L813"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_54
+  - community/Community_792
 ---
 
 # _is_local_oom detects 'out of memory' in error message string.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_is_local_oom_detects_oom_in_error_message()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_54
+#graphify/rationale #graphify/EXTRACTED #community/Community_792

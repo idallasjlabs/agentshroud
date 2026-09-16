@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_forward_stream.py"
 type: "code"
-community: "Community 119"
+community: "Community 113"
 location: "L284"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_119
+  - community/Community_113
 ---
 
 # _make_stream_app_state()
 
 ## Connections
-- [[AgentTarget]] - `calls` [EXTRACTED]
+- [[AgentTarget_1]] - `calls` [EXTRACTED]
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[Build a mock app_state whose router streams `sentences_out` as raw     text delt]] - `rationale_for` [EXTRACTED]
 - [[_PassthroughPipeline]] - `calls` [EXTRACTED]
@@ -27,4 +27,4 @@ tags:
 - [[test_forward_stream_returns_early_response_when_queued_for_approval()]] - `calls` [EXTRACTED]
 - [[test_forward_stream_unexpected_error_still_emits_done_event()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_119
+#graphify/code #graphify/EXTRACTED #community/Community_113

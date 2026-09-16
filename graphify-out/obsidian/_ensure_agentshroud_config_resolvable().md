@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/conftest.py"
 type: "code"
-community: "Community 26"
+community: "Gateway Config & PII Sanitizer"
 location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_26
+  - community/Gateway_Config__PII_Sanitizer
 ---
 
 # _ensure_agentshroud_config_resolvable()
@@ -16,4 +16,4 @@ tags:
 - [[conftest.py]] - `contains` [EXTRACTED]
 - [[resolve_config_path()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_26
+#graphify/code #graphify/EXTRACTED #community/Gateway_Config__PII_Sanitizer

@@ -1,34 +1,28 @@
 ---
-source_file: "gateway/tests/test_progressive_lockdown.py"
+source_file: "gateway/tests/test_telegram_pipeline.py"
 type: "code"
-community: "Community 60"
-location: "L86"
+community: "Community 109"
+location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_60
+  - community/Community_109
 ---
 
 # _make_proxy()
 
 ## Connections
-- [[._setup_proxy_with_capture()]] - `calls` [EXTRACTED]
-- [[.test_locked_includes_unlock_hint()]] - `calls` [EXTRACTED]
-- [[.test_locked_lists_suspended_user()]] - `calls` [EXTRACTED]
-- [[.test_locked_no_active_lockdowns()]] - `calls` [EXTRACTED]
-- [[.test_locked_shows_all_non_normal_users()]] - `calls` [EXTRACTED]
-- [[.test_owner_messages_pass_despite_collab_suspension()]] - `calls` [EXTRACTED]
-- [[.test_suspended_drop_notice_respects_cooldown()]] - `calls` [EXTRACTED]
-- [[.test_suspended_user_gets_drop_notice()]] - `calls` [EXTRACTED]
-- [[.test_unlock_clears_suspended_drop_cooldown()]] - `calls` [EXTRACTED]
-- [[.test_unlock_known_user_succeeds()]] - `calls` [EXTRACTED]
-- [[.test_unlock_unknown_user_reports_no_state()]] - `calls` [EXTRACTED]
-- [[.test_unlock_without_user_id_shows_usage()]] - `calls` [EXTRACTED]
-- [[FakeRBAC]] - `calls` [EXTRACTED]
-- [[PassthroughPipeline]] - `calls` [EXTRACTED]
-- [[Return a TelegramAPIProxy wired with fake deps (no real HTTP).]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `references` [EXTRACTED]
-- [[test_progressive_lockdown.py]] - `contains` [EXTRACTED]
+- [[dot-test_blocked_non_owner_drops_update_and_increments_stats()]] - `calls` [EXTRACTED]
+- [[dot-test_blocked_owner_message_allowed_through_with_sanitized_text()]] - `calls` [EXTRACTED]
+- [[dot-test_no_pipeline_falls_back_to_direct_sanitizer()]] - `calls` [EXTRACTED]
+- [[dot-test_outbound_blocked_replaces_text()]] - `calls` [EXTRACTED]
+- [[dot-test_pipeline_exception_allows_owner_through()]] - `calls` [EXTRACTED]
+- [[dot-test_pipeline_exception_fails_closed_for_non_owner()]] - `calls` [EXTRACTED]
+- [[dot-test_pipeline_process_inbound_called_with_skip_context_guard()]] - `calls` [EXTRACTED]
+- [[dot-test_pipeline_process_outbound_called_for_send_message()]] - `calls` [EXTRACTED]
+- [[dot-test_send_message_draft_also_runs_outbound_filtering()]] - `calls` [EXTRACTED]
+- [[Build a TelegramAPIProxy with mocked RBAC and rate limiter.      RBACConfig and]] - `rationale_for` [EXTRACTED]
+- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
+- [[test_telegram_pipeline.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_60
+#graphify/code #graphify/EXTRACTED #community/Community_109
