@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/SKILL.md"
 type: "document"
-community: "Community 358"
+community: "Community 362"
 location: "L579"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_358
+  - community/Community_362
 ---
 
 # For --update and --cluster-only
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[graphify_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_358
+#graphify/document #graphify/EXTRACTED #community/Community_362

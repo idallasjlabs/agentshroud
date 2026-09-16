@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/proxy/mcp_inspector.py"
 type: "code"
-community: "Community 44"
+community: "Community 50"
 location: "L75"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_44
+  - community/Community_50
 ---
 
 # FindingType
 
 ## Connections
-- [[Enum]] - `inherits` [EXTRACTED]
+- [[Enum_3]] - `inherits` [EXTRACTED]
 - [[TestAllowDenyList]] - `uses` [INFERRED]
 - [[TestAuditQueries]] - `uses` [INFERRED]
-- [[TestAuditTrail]] - `uses` [INFERRED]
+- [[TestAuditTrail_2]] - `uses` [INFERRED]
 - [[TestAuditTrailBounded]] - `uses` [INFERRED]
 - [[TestChainIntegrityMultiple]] - `uses` [INFERRED]
 - [[TestConfigParsing]] - `uses` [INFERRED]
@@ -24,7 +24,7 @@ tags:
 - [[TestInjectionDetection]] - `uses` [INFERRED]
 - [[TestInspectorEdgeCases]] - `uses` [INFERRED]
 - [[TestPIIDetection]] - `uses` [INFERRED]
-- [[TestPassthroughMode]] - `uses` [INFERRED]
+- [[TestPassthroughMode_1]] - `uses` [INFERRED]
 - [[TestPrivacyPolicyEvents]] - `uses` [INFERRED]
 - [[TestProcessingTime]] - `uses` [INFERRED]
 - [[TestProxyInterception]] - `uses` [INFERRED]
@@ -36,8 +36,8 @@ tags:
 - [[TestSuspiciousEncoding]] - `uses` [INFERRED]
 - [[TestThreatLevelCalc]] - `uses` [INFERRED]
 - [[Type of security finding.]] - `rationale_for` [EXTRACTED]
-- [[__init__.py_7]] - `imports` [EXTRACTED]
 - [[mcp_inspector.py]] - `contains` [EXTRACTED]
+- [[proxy__init__.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_44
+#graphify/code #graphify/INFERRED #community/Community_50

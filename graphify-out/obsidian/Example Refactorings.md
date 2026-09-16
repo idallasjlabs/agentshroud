@@ -1,12 +1,12 @@
 ---
 source_file: ".github/agents/safe-refactor.agent.md"
 type: "document"
-community: "Community 389"
+community: "Community 397"
 location: "L175"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_389
+  - community/Community_397
 ---
 
 # Example Refactorings
@@ -18,4 +18,4 @@ tags:
 - [[Good Variable Renaming]] - `contains` [EXTRACTED]
 - [[Safe Refactor Specialist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_389
+#graphify/document #graphify/EXTRACTED #community/Community_397

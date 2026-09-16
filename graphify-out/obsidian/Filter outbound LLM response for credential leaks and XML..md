@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "rationale"
-community: "Community 129"
-location: "L1512"
+community: "Community 37"
+location: "L1542"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_129
+  - community/Community_37
 ---
 
 # Filter outbound LLM response for credential leaks and XML.
 
 ## Connections
-- [[._filter_outbound()]] - `rationale_for` [EXTRACTED]
+- [[dot-_filter_outbound()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_129
+#graphify/rationale #graphify/EXTRACTED #community/Community_37

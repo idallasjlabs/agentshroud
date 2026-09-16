@@ -1,19 +1,19 @@
 ---
 source_file: "docs/flows/README.md"
 type: "document"
-community: "Community 376"
+community: "Community 184"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_376
+  - community/Community_184
 ---
 
 # Flows Documentation
 
 ## Connections
-- [[Current Status_3]] - `contains` [EXTRACTED]
-- [[Planned Documents_2]] - `contains` [EXTRACTED]
-- [[README_121]] - `contains` [EXTRACTED]
+- [[Current Status_4]] - `contains` [EXTRACTED]
+- [[Planned Documents_4]] - `contains` [EXTRACTED]
+- [[flowsREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_376
+#graphify/document #graphify/EXTRACTED #community/Community_184

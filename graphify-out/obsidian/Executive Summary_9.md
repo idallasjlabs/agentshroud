@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md"
+source_file: "docs/planning/v0.8/v0.8.0-execution-summary-draft.md"
 type: "document"
-community: "Community 808"
-location: "L3"
+community: "Community 355"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_808
+  - community/Community_355
 ---
 
 # Executive Summary
 
 ## Connections
-- [[Secrets Usage and Collaborator Checklist]] - `contains` [EXTRACTED]
+- [[AgentShroud v0.8.0 Watchtower — Execution Summary (Draft)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_808
+#graphify/document #graphify/EXTRACTED #community/Community_355

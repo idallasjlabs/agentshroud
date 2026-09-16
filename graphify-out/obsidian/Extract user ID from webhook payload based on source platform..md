@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/webhook_receiver.py"
 type: "rationale"
-community: "Community 28"
+community: "Proxy Sidecar & Forwarder"
 location: "L326"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_28
+  - community/Proxy_Sidecar__Forwarder
 ---
 
 # Extract user ID from webhook payload based on source platform.
 
 ## Connections
-- [[._extract_user_id()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-_extract_user_id()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_28
+#graphify/rationale #graphify/EXTRACTED #community/Proxy_Sidecar__Forwarder

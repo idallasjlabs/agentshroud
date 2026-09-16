@@ -1,17 +1,17 @@
 ---
-source_file: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
+source_file: "docs/USPTO_TRADEMARK_APPLICATION.md"
 type: "document"
-community: "Community 801"
+community: "Community 684"
 location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_801
+  - community/Community_684
 ---
 
 # Filing Reference
 
 ## Connections
-- [[AgentShroud -- USPTO Provisional Patent Application]] - `contains` [EXTRACTED]
+- [[AgentShroud -- USPTO Trademark Application]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_801
+#graphify/document #graphify/EXTRACTED #community/Community_684

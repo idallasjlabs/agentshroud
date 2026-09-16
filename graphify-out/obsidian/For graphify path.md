@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/graphify/references/query.md"
 type: "document"
-community: "Community 1069"
+community: "Community 1122"
 location: "L71"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1069
+  - community/Community_1122
 ---
 
 # For /graphify path
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[graphify reference query, path, explain]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1069
+#graphify/document #graphify/EXTRACTED #community/Community_1122

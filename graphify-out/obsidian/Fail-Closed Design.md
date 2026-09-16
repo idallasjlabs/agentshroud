@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md"
 type: "document"
-community: "Community 669"
+community: "Community 692"
 location: "L52"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_669
+  - community/Community_692
 ---
 
 # Fail-Closed Design
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Key Behavior]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_669
+#graphify/document #graphify/EXTRACTED #community/Community_692

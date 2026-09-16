@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/tests/test_rate_limit_guard.py"
 type: "code"
-community: "Community 182"
+community: "Community 190"
 location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_182
+  - community/Community_190
 ---
 
 # FakeClock
 
 ## Connections
-- [[.__call__()_9]] - `method` [EXTRACTED]
-- [[.__init__()_178]] - `method` [EXTRACTED]
-- [[.advance()]] - `method` [EXTRACTED]
+- [[dot-__call__()_2]] - `method` [EXTRACTED]
+- [[dot-__init__()_84]] - `method` [EXTRACTED]
+- [[dot-advance()]] - `method` [EXTRACTED]
 - [[RateLimitConfig]] - `uses` [INFERRED]
 - [[RateLimitGuard]] - `uses` [INFERRED]
-- [[SecurityPipeline]] - `uses` [INFERRED]
+- [[SecurityPipeline_1]] - `uses` [INFERRED]
 - [[clock()]] - `calls` [EXTRACTED]
 - [[test_rate_limit_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_182
+#graphify/code #graphify/EXTRACTED #community/Community_190

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-atlas/SKILL.md"
+source_file: "docker/config/hermes/skills/i-atlas/SKILL.md"
 type: "document"
-community: "Community 524"
+community: "Community 933"
 location: "L133"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_524
+  - community/Community_933
 ---
 
 # Exam Weight Integration
 
 ## Connections
-- [[OKE Channel — CPA Exam Context_1]] - `contains` [EXTRACTED]
+- [[OKE Channel — CPA Exam Context_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_524
+#graphify/document #graphify/EXTRACTED #community/Community_933

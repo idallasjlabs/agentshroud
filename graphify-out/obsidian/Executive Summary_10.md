@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/security-architecture.md"
+source_file: "docs/papers/agentshroud-whitepaper.md"
 type: "document"
-community: "Community 153"
-location: "L3"
+community: "Community 412"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_153
+  - community/Community_412
 ---
 
 # Executive Summary
 
 ## Connections
-- [[AgentShroud Security Architecture]] - `contains` [EXTRACTED]
+- [[AgentShroud Enterprise Governance for Autonomous AI Agents]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_153
+#graphify/document #graphify/EXTRACTED #community/Community_412

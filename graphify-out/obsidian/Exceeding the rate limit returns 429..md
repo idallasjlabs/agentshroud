@@ -1,17 +1,17 @@
 ---
 source_file: "chatbot/test_main.py"
 type: "rationale"
-community: "Community 86"
+community: "Community 76"
 location: "L87"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_86
+  - community/Community_76
 ---
 
 # Exceeding the rate limit returns 429.
 
 ## Connections
-- [[.test_rate_limit_enforced()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_rate_limit_enforced()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_86
+#graphify/rationale #graphify/EXTRACTED #community/Community_76

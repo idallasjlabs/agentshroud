@@ -1,12 +1,12 @@
 ---
 source_file: "branding/README.md"
 type: "document"
-community: "Community 146"
+community: "Community 173"
 location: "L68"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_146
+  - community/Community_173
 ---
 
 # File Formats
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud™ Brand Guidelines]] - `contains` [EXTRACTED]
 - [[AgentShroud™ Brand Guidelines_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_146
+#graphify/document #graphify/EXTRACTED #community/Community_173

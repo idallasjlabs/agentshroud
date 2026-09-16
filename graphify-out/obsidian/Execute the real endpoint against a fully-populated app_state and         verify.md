@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_docs_accuracy.py"
 type: "rationale"
-community: "Community 111"
+community: "Community 118"
 location: "L193"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_111
+  - community/Community_118
 ---
 
 # Execute the real endpoint against a fully-populated app_state and         verify
 
 ## Connections
-- [[.test_endpoint_reports_no_key_collisions_and_high_total()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_endpoint_reports_no_key_collisions_and_high_total()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_111
+#graphify/rationale #graphify/EXTRACTED #community/Community_118

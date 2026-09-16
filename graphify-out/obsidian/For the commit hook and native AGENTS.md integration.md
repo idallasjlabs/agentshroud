@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/graphify/SKILL.md"
 type: "document"
-community: "Community 354"
+community: "Community 356"
 location: "L603"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_354
+  - community/Community_356
 ---
 
 # For the commit hook and native AGENTS.md integration
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[graphify]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_354
+#graphify/document #graphify/EXTRACTED #community/Community_356

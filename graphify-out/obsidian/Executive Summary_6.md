@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/v0.8.0-execution-summary-draft.md"
+source_file: "docs/planning/reviews/phase-review-p0-2026-02-23.md"
 type: "document"
-community: "Community 352"
-location: "L8"
+community: "Community 321"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_352
+  - community/Community_321
 ---
 
 # Executive Summary
 
 ## Connections
-- [[AgentShroud v0.8.0 Watchtower — Execution Summary (Draft)]] - `contains` [EXTRACTED]
+- [[Phase Review P0 — Core Pipeline Wiring]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_352
+#graphify/document #graphify/EXTRACTED #community/Community_321

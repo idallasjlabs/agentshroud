@@ -1,11 +1,11 @@
 ---
 source_file: "docs/compliance/iec-62443-matrix.md"
 type: "concept"
-community: "Community 137"
+community: "Community 731"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_137
+  - community/Community_731
 ---
 
 # FR3: System Integrity
@@ -13,7 +13,7 @@ tags:
 ## Connections
 - [[AgentShroud Semgrep SAST Configuration]] - `references` [EXTRACTED]
 - [[Re-enable Seccomp Profiles (ARM64 syscalls)]] - `conceptually_related_to` [INFERRED]
-- [[clamav_scanner.py]] - `references` [EXTRACTED]
+- [[clamav_scanner.py_2]] - `references` [EXTRACTED]
 - [[config_integrity.py]] - `references` [EXTRACTED]
 - [[encoding_detector.py]] - `references` [EXTRACTED]
 - [[heuristic_classifier.py]] - `references` [EXTRACTED]
@@ -21,4 +21,4 @@ tags:
 - [[prompt_guard.py]] - `references` [EXTRACTED]
 - [[security-scan.sh (unified scan dispatcher)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_137
+#graphify/concept #graphify/EXTRACTED #community/Community_731

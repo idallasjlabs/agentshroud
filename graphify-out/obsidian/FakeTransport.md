@@ -12,9 +12,9 @@ tags:
 # FakeTransport
 
 ## Connections
-- [[.ok()]] - `method` [EXTRACTED]
-- [[.request()_1]] - `method` [EXTRACTED]
-- [[.with()]] - `method` [EXTRACTED]
+- [[dot-ok()_1]] - `method` [EXTRACTED]
+- [[dot-request()]] - `method` [EXTRACTED]
+- [[dot-with()]] - `method` [EXTRACTED]
 - [[HttpResponse]] - `references` [EXTRACTED]
 - [[HttpTransport]] - `implements` [EXTRACTED]
 - [[Method]] - `references` [EXTRACTED]

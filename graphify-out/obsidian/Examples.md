@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/peekaboo/SKILL.md"
 type: "document"
-community: "Community 570"
+community: "Community 589"
 location: "L116"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_570
+  - community/Community_589
 ---
 
 # Examples
@@ -22,4 +22,4 @@ tags:
 - [[See - click - type (most reliable flow)]] - `contains` [EXTRACTED]
 - [[Target by window id]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_570
+#graphify/document #graphify/EXTRACTED #community/Community_589

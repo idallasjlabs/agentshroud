@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/tests/test_citation_verifier.py"
 type: "code"
-community: "Community 105"
+community: "Community 70"
 location: "L33"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_105
+  - community/Community_70
 ---
 
 # FetchOutcome
 
 ## Connections
-- [[.__call__()_2]] - `references` [EXTRACTED]
-- [[.test_not_ok_on_non_2xx()]] - `calls` [EXTRACTED]
-- [[.test_not_ok_without_content()]] - `calls` [EXTRACTED]
-- [[.test_ok_requires_2xx_and_content()]] - `calls` [EXTRACTED]
+- [[dot-__call__()_8]] - `references` [EXTRACTED]
+- [[dot-test_not_ok_on_non_2xx()]] - `calls` [EXTRACTED]
+- [[dot-test_not_ok_without_content()]] - `calls` [EXTRACTED]
+- [[dot-test_ok_requires_2xx_and_content()]] - `calls` [EXTRACTED]
 - [[CitationVerifier]] - `uses` [INFERRED]
-- [[CompetitiveIntelReport_1]] - `uses` [INFERRED]
+- [[CompetitiveIntelReport_2]] - `uses` [INFERRED]
 - [[DraftEntry]] - `uses` [INFERRED]
 - [[FetchOutcome]] - `uses` [INFERRED]
-- [[IntelReportStore]] - `uses` [INFERRED]
+- [[IntelReportStore_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_105
+#graphify/code #graphify/INFERRED #community/Community_70

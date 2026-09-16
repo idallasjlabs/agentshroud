@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/colima-docker-guide.md"
 type: "document"
-community: "Community 149"
+community: "Community 150"
 location: "L153"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_149
+  - community/Community_150
 ---
 
 # Exec into a container
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[5. Container Management]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_149
+#graphify/document #graphify/EXTRACTED #community/Community_150

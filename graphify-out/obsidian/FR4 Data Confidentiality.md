@@ -1,11 +1,11 @@
 ---
 source_file: "docs/compliance/iec-62443-matrix.md"
 type: "concept"
-community: "Community 137"
+community: "Community 44"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_137
+  - community/Community_44
 ---
 
 # FR4: Data Confidentiality
@@ -16,8 +16,8 @@ tags:
 - [[IEC 62443 Compliance Matrix — AgentShroud]] - `contains` [EXTRACTED]
 - [[encrypted_store.py]] - `references` [EXTRACTED]
 - [[iec-62443-matrix]] - `conceptually_related_to` [EXTRACTED]
-- [[key_vault.py]] - `references` [EXTRACTED]
+- [[key_vault.py_2]] - `references` [EXTRACTED]
 - [[outbound_filter.py]] - `references` [EXTRACTED]
 - [[sanitizer.py]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_137
+#graphify/concept #graphify/EXTRACTED #community/Community_44

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "rationale"
-community: "Community 62"
+community: "Community 912"
 location: "L66"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_62
+  - community/Community_912
 ---
 
 # Finding BT-H1/BT-H2/BT-H3: SharedMemoryManager must not collapse bot workspaces.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestBotIdIsolationInSharedMemory]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_62
+#graphify/rationale #graphify/EXTRACTED #community/Community_912

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_store.py"
 type: "rationale"
-community: "Community 125"
+community: "Community 536"
 location: "L91"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_125
+  - community/Community_536
 ---
 
 # Expired items are marked expired during load_pending.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_expired_items_on_reload()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_125
+#graphify/rationale #graphify/EXTRACTED #community/Community_536

@@ -1,31 +1,32 @@
 ---
-source_file: ""
+source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Community 165"
+community: "Ingest API & RBAC Core"
+location: "L392"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_165
+  - graphify/INFERRED
+  - community/Ingest_API__RBAC_Core
 ---
 
 # Exception
 
 ## Connections
-- [[ConfigValidationError]] - `inherits` [EXTRACTED]
-- [[CredentialEntryBlocked]] - `inherits` [EXTRACTED]
-- [[ForwardError]] - `inherits` [EXTRACTED]
-- [[OAuthError]] - `inherits` [EXTRACTED]
-- [[PhishingURLDetected]] - `inherits` [EXTRACTED]
-- [[ReportIntegrityError]] - `inherits` [EXTRACTED]
-- [[RouterError]] - `inherits` [EXTRACTED]
-- [[SecurityError]] - `inherits` [EXTRACTED]
-- [[SecurityError_1]] - `inherits` [EXTRACTED]
-- [[SecurityError_2]] - `inherits` [EXTRACTED]
-- [[SecurityError_3]] - `inherits` [EXTRACTED]
-- [[SessionError]] - `inherits` [EXTRACTED]
-- [[SkillGuardBlocked]] - `inherits` [EXTRACTED]
-- [[SocialEngineeringDetected]] - `inherits` [EXTRACTED]
-- [[VRAMHeadroomError]] - `inherits` [EXTRACTED]
-- [[test_broadcast_with_failed_client()]] - `calls` [INFERRED]
+- [[dot-test_forward_middleware_error_handling()]] - `calls` [EXTRACTED]
+- [[Action]] - `uses` [INFERRED]
+- [[ApprovalMode]] - `uses` [INFERRED]
+- [[ApprovalRequest_2]] - `uses` [INFERRED]
+- [[AuditExportConfig]] - `uses` [INFERRED]
+- [[AuditExporter]] - `uses` [INFERRED]
+- [[LedgerEntry]] - `uses` [INFERRED]
+- [[LedgerQueryResponse]] - `uses` [INFERRED]
+- [[MiddlewareManager]] - `uses` [INFERRED]
+- [[Resource]] - `uses` [INFERRED]
+- [[Role_1]] - `uses` [INFERRED]
+- [[SSHExecRequest]] - `uses` [INFERRED]
+- [[SSHExecResponse]] - `uses` [INFERRED]
+- [[SSHWriteFileRequest]] - `uses` [INFERRED]
+- [[SSHWriteFileResponse]] - `uses` [INFERRED]
+- [[global_exception_handler()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_165
+#graphify/code #graphify/INFERRED #community/Ingest_API__RBAC_Core

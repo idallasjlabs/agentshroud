@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/DEVICE_PAIRING.md"
+source_file: "branding/QUICK-REFERENCE.md"
 type: "document"
-community: "Community 588"
-location: "L432"
+community: "Community 567"
+location: "L75"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_588
+  - community/Community_567
 ---
 
 # File Locations
 
 ## Connections
-- [[AgentShroud Device Pairing Management]] - `contains` [EXTRACTED]
+- [[AgentShroud Brand Quick Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_588
+#graphify/document #graphify/EXTRACTED #community/Community_567
