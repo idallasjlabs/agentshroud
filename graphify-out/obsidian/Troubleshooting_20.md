@@ -1,20 +1,20 @@
 ---
-source_file: "docker/config/openclaw/skills/i-icloud/SKILL.md"
+source_file: "docker/scripts/README.md"
 type: "document"
-community: "Community 311"
-location: "L142"
+community: "API Keys Setup Guide"
+location: "L247"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_311
+  - community/API_Keys_Setup_Guide
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[401 Unauthorized_2]] - `contains` [EXTRACTED]
-- [[CalendarContacts not found_1]] - `contains` [EXTRACTED]
-- [[Connection timeout_2]] - `contains` [EXTRACTED]
-- [[iCloud Services_2]] - `contains` [EXTRACTED]
+- [[Missing auth for API providers]] - `contains` [EXTRACTED]
+- [[Container unhealthy]] - `contains` [EXTRACTED]
+- [[OpenClaw Management Scripts]] - `contains` [EXTRACTED]
+- [[Telegram bot not responding]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_311
+#graphify/document #graphify/EXTRACTED #community/API_Keys_Setup_Guide

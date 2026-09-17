@@ -1,23 +1,17 @@
 ---
-source_file: "docs/setup/setup-guide.md"
+source_file: "docs/integrations/voice-terminal-esp32-s3.md"
 type: "document"
-community: "Community 340"
-location: "L787"
+community: "Voice Terminal — ESP32-S3-BOX-3 (Optional AgentS"
+location: "L295"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_340
+  - community/Voice_Terminal__ESP32-S3-BOX-3_Optional_AgentS
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[1Password Authentication Failed]] - `contains` [EXTRACTED]
-- [[AgentShroud Setup Guide]] - `contains` [EXTRACTED]
-- [[Container Unhealthy_1]] - `contains` [EXTRACTED]
-- [[Gmail Connection Issues]] - `contains` [EXTRACTED]
-- [[Performance Issues_1]] - `contains` [EXTRACTED]
-- [[Port Already in Use_2]] - `contains` [EXTRACTED]
-- [[Tests Failing_1]] - `contains` [EXTRACTED]
+- [[Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_340
+#graphify/document #graphify/EXTRACTED #community/Voice_Terminal__ESP32-S3-BOX-3_Optional_AgentS

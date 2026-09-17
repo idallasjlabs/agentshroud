@@ -1,17 +1,16 @@
 ---
 source_file: "reports/upgrade-2026-08-30-20260830-2009.md"
 type: "document"
-community: "Community 316"
+community: "Local-Model Job Quality Matrix"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Community_316
+  - community/Local-Model_Job_Quality_Matrix
 ---
 
 # Upgrade Report Snapshot 20260830-2009
 
 ## Connections
-- [[Upgrade Report Snapshot 20260830-2010]] - `semantically_similar_to` [INFERRED]
 - [[Weekly Upgrade Report 2026-08-30]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Community_316
+#graphify/document #graphify/INFERRED #community/Local-Model_Job_Quality_Matrix

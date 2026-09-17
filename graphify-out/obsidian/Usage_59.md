@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-sav/README.md"
 type: "document"
-community: "Community 1246"
+community: "hermes/skills/i-bs/README.md"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1246
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # Usage
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[System Audit Vault_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1246
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

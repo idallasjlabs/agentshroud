@@ -1,12 +1,12 @@
 ---
 source_file: "docker/README.md"
 type: "document"
-community: "Community 203"
+community: "AgentShroud Docker Configuration"
 location: "L274"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_203
+  - community/AgentShroud_Docker_Configuration
 ---
 
 # Usage
@@ -21,4 +21,4 @@ tags:
 - [[Test Chat]] - `contains` [EXTRACTED]
 - [[View Logs]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_203
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration

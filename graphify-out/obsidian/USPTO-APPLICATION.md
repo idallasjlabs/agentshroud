@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/legal/USPTO-APPLICATION.md"
 type: "document"
-community: "Community 1079"
+community: "AgentShroud™ — Trademark Prior Use Record"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1079
+  - community/AgentShroud__Trademark_Prior_Use_Record
 ---
 
 # USPTO-APPLICATION.md
@@ -19,4 +19,4 @@ tags:
 - [[USPTO Class 042 Filing (ScientificTechnological Services)]] - `references` [EXTRACTED]
 - [[USPTO Trademark Application — AgentShroud™]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1079
+#graphify/document #graphify/EXTRACTED #community/AgentShroud__Trademark_Prior_Use_Record

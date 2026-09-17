@@ -1,22 +1,17 @@
 ---
-source_file: "docs/runbooks/RUNBOOK.md"
+source_file: "docker/bot-capabilities.md"
 type: "document"
-community: "Community 704"
-location: "L53"
+community: "Credential Management - 1Password Integration"
+location: "L211"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_704
+  - community/Credential_Management_-_1Password_Integration
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Fatal glibc error Cannot allocate TLS block]] - `contains` [EXTRACTED]
-- [[AgentShroud Deployment & Troubleshooting Runbook]] - `contains` [EXTRACTED]
-- [[Colima won't start]] - `contains` [EXTRACTED]
-- [[Container starts but unhealthy]] - `contains` [EXTRACTED]
-- [[Docker says Cannot connect to Docker daemon]] - `contains` [EXTRACTED]
-- [[Tests failing after deploy]] - `contains` [EXTRACTED]
+- [[Credential Management - 1Password Integration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_704
+#graphify/document #graphify/EXTRACTED #community/Credential_Management_-_1Password_Integration

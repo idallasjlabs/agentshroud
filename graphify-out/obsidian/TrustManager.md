@@ -1,50 +1,50 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "Cross-Bot Trust & A2A Governance"
+community: "TrustManager"
 location: "94"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Cross-Bot_Trust__A2A_Governance
+  - community/TrustManager
 ---
 
 # TrustManager
 
 ## Connections
-- [[dot-__init__()_7]] - `method` [EXTRACTED]
-- [[dot-_apply_decay()]] - `method` [EXTRACTED]
-- [[dot-_force_demotion()]] - `method` [EXTRACTED]
-- [[dot-_init_db()]] - `method` [EXTRACTED]
-- [[dot-_pipeline_with_trust()]] - `calls` [EXTRACTED]
-- [[dot-_promotion_allowed()]] - `method` [EXTRACTED]
-- [[dot-_score_to_level()]] - `method` [EXTRACTED]
-- [[dot-_update_score()]] - `method` [EXTRACTED]
-- [[dot-close()_1]] - `method` [EXTRACTED]
-- [[dot-get_history()]] - `method` [EXTRACTED]
-- [[dot-get_trust()]] - `method` [EXTRACTED]
-- [[dot-is_action_allowed()]] - `method` [EXTRACTED]
-- [[dot-is_tool_allowed()]] - `method` [EXTRACTED]
-- [[dot-pipeline()]] - `calls` [EXTRACTED]
-- [[dot-pipeline()_1]] - `calls` [EXTRACTED]
-- [[dot-record_failure()]] - `method` [EXTRACTED]
-- [[dot-record_success()]] - `method` [EXTRACTED]
-- [[dot-record_violation()]] - `method` [EXTRACTED]
-- [[dot-register_agent()]] - `method` [EXTRACTED]
-- [[dot-setup_method()_13]] - `calls` [EXTRACTED]
-- [[dot-test_10000_lookups_under_1s()]] - `calls` [EXTRACTED]
-- [[dot-test_event_type_validation()]] - `calls` [EXTRACTED]
-- [[dot-test_persistence_across_instances()]] - `calls` [EXTRACTED]
-- [[dot-test_rate_limiting_prevents_rapid_escalation()]] - `calls` [EXTRACTED]
-- [[dot-test_single_message_pipeline_under_100ms()]] - `calls` [EXTRACTED]
-- [[dot-test_sqlite_persistence()]] - `calls` [EXTRACTED]
-- [[dot-test_trust_escalation_attack()]] - `calls` [EXTRACTED]
-- [[dot-test_trust_level_enforcement()]] - `calls` [EXTRACTED]
-- [[dot-test_trust_level_progression()]] - `calls` [EXTRACTED]
-- [[dot-test_trust_recovery()]] - `calls` [EXTRACTED]
-- [[dot-test_trust_update_performance()]] - `calls` [EXTRACTED]
-- [[dot-test_write_baseline_json()]] - `calls` [EXTRACTED]
-- [[dot-vouch_for_agent()]] - `method` [EXTRACTED]
+- [[.__init__()_7]] - `method` [EXTRACTED]
+- [[._apply_decay()]] - `method` [EXTRACTED]
+- [[._force_demotion()]] - `method` [EXTRACTED]
+- [[._init_db()]] - `method` [EXTRACTED]
+- [[._pipeline_with_trust()]] - `calls` [EXTRACTED]
+- [[._promotion_allowed()]] - `method` [EXTRACTED]
+- [[._score_to_level()]] - `method` [EXTRACTED]
+- [[._update_score()]] - `method` [EXTRACTED]
+- [[.close()_1]] - `method` [EXTRACTED]
+- [[.get_history()]] - `method` [EXTRACTED]
+- [[.get_trust()]] - `method` [EXTRACTED]
+- [[.is_action_allowed()]] - `method` [EXTRACTED]
+- [[.is_tool_allowed()]] - `method` [EXTRACTED]
+- [[.pipeline()]] - `calls` [EXTRACTED]
+- [[.pipeline()_1]] - `calls` [EXTRACTED]
+- [[.record_failure()]] - `method` [EXTRACTED]
+- [[.record_success()]] - `method` [EXTRACTED]
+- [[.record_violation()]] - `method` [EXTRACTED]
+- [[.register_agent()]] - `method` [EXTRACTED]
+- [[.setup_method()_13]] - `calls` [EXTRACTED]
+- [[.test_10000_lookups_under_1s()]] - `calls` [EXTRACTED]
+- [[.test_event_type_validation()]] - `calls` [EXTRACTED]
+- [[.test_persistence_across_instances()]] - `calls` [EXTRACTED]
+- [[.test_rate_limiting_prevents_rapid_escalation()]] - `calls` [EXTRACTED]
+- [[.test_single_message_pipeline_under_100ms()]] - `calls` [EXTRACTED]
+- [[.test_sqlite_persistence()]] - `calls` [EXTRACTED]
+- [[.test_trust_escalation_attack()]] - `calls` [EXTRACTED]
+- [[.test_trust_level_enforcement()]] - `calls` [EXTRACTED]
+- [[.test_trust_level_progression()]] - `calls` [EXTRACTED]
+- [[.test_trust_recovery()]] - `calls` [EXTRACTED]
+- [[.test_trust_update_performance()]] - `calls` [EXTRACTED]
+- [[.test_write_baseline_json()]] - `calls` [EXTRACTED]
+- [[.vouch_for_agent()]] - `method` [EXTRACTED]
 - [[A2AGovernanceProxy.update_peer_trust]] - `references` [EXTRACTED]
 - [[A2APeerTestDouble]] - `uses` [INFERRED]
 - [[A2AProxy_1]] - `calls` [EXTRACTED]
@@ -194,4 +194,4 @@ tags:
 - [[trust_manager()_4]] - `calls` [EXTRACTED]
 - [[trust_manager()_5]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Cross-Bot_Trust__A2A_Governance
+#graphify/code #graphify/INFERRED #community/TrustManager

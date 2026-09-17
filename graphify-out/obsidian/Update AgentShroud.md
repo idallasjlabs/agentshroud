@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Community 538"
+community: "Update AgentShroud"
 location: "L728"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_538
+  - community/Update_AgentShroud
 ---
 
 # Update AgentShroud
@@ -18,7 +18,7 @@ tags:
 - [[Rollback Procedure]] - `contains` [EXTRACTED]
 - [[Update from Git]] - `contains` [EXTRACTED]
 - [[Update from Release Tarball]] - `contains` [EXTRACTED]
-- [[Updating_1]] - `contains` [EXTRACTED]
+- [[Updating]] - `contains` [EXTRACTED]
 - [[updating]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_538
+#graphify/document #graphify/EXTRACTED #community/Update_AgentShroud

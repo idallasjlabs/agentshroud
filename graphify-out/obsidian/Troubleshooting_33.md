@@ -1,17 +1,22 @@
 ---
-source_file: "shortcuts/README.md"
+source_file: "docs/runbooks/RUNBOOK.md"
 type: "document"
-community: "Community 606"
-location: "L291"
+community: "AgentShroud Deployment & Troubleshooting Runbook"
+location: "L53"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_606
+  - community/AgentShroud_Deployment__Troubleshooting_Runbook
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[iOS  macOS Shortcuts — Relay to AgentShroud]] - `contains` [EXTRACTED]
+- [[Fatal glibc error Cannot allocate TLS block]] - `contains` [EXTRACTED]
+- [[AgentShroud Deployment & Troubleshooting Runbook]] - `contains` [EXTRACTED]
+- [[Colima won't start]] - `contains` [EXTRACTED]
+- [[Container starts but unhealthy]] - `contains` [EXTRACTED]
+- [[Docker says Cannot connect to Docker daemon]] - `contains` [EXTRACTED]
+- [[Tests failing after deploy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_606
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Deployment__Troubleshooting_Runbook

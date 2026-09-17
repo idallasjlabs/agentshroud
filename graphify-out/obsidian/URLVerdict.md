@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/url_analyzer.py"
 type: "code"
-community: "Voice Gateway STT & Browser Security"
+community: "Enum"
 location: "L27"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Voice_Gateway_STT__Browser_Security
+  - community/Enum
 ---
 
 # URLVerdict
@@ -23,4 +23,4 @@ tags:
 - [[test_url_analyzer.py]] - `imports` [EXTRACTED]
 - [[url_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Voice_Gateway_STT__Browser_Security
+#graphify/code #graphify/INFERRED #community/Enum

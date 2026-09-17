@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/SKILL.md"
 type: "document"
-community: "Community 362"
+community: "What You Must Do When Invoked"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_362
+  - community/What_You_Must_Do_When_Invoked
 ---
 
 # Usage
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[graphify_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_362
+#graphify/document #graphify/EXTRACTED #community/What_You_Must_Do_When_Invoked

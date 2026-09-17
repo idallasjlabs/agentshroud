@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/attack-teardowns-rovoblast-cross-turn.md"
 type: "concept"
-community: "Community 288"
+community: "RovoBlast Attack (Atlassian Rovo AI)"
 location: "line 44"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_288
+  - community/RovoBlast_Attack_Atlassian_Rovo_AI
 ---
 
 # UK AISI Rogue Agent Actions Findings
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Cross-Turn Correlation Capability]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_288
+#graphify/concept #graphify/EXTRACTED #community/RovoBlast_Attack_Atlassian_Rovo_AI

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/incident-response.md"
 type: "document"
-community: "Community 77"
+community: "AgentShroud Incident Response Plan"
 location: "L415"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_77
+  - community/AgentShroud_Incident_Response_Plan
 ---
 
 # Trust Level Anomaly
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[P3 Medium Priority Incidents]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_77
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan

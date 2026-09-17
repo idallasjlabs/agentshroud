@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/SOUL.md"
 type: "concept"
-community: "Community 256"
+community: "TrustManager"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_256
+  - community/TrustManager
 ---
 
 # TrustManager
@@ -24,10 +24,10 @@ tags:
 - [[Mode Enforce vs Monitor]] - `contains` [EXTRACTED]
 - [[Purpose_118]] - `contains` [EXTRACTED]
 - [[Related]] - `contains` [EXTRACTED]
-- [[Responsibilities_2]] - `contains` [EXTRACTED]
+- [[Responsibilities_1]] - `contains` [EXTRACTED]
 - [[Threat Model_1]] - `contains` [EXTRACTED]
 - [[hermesSOUL]] - `references` [EXTRACTED]
 - [[trust_manager (trust levels)]] - `conceptually_related_to` [EXTRACTED]
 - [[trust_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_256
+#graphify/concept #graphify/EXTRACTED #community/TrustManager

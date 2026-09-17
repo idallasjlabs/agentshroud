@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/progressive_trust_config.py"
 type: "rationale"
-community: "Community 689"
+community: "Enum"
 location: "L35"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_689
+  - community/Enum
 ---
 
 # Trust levels from untrusted to verified.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TrustLevel_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_689
+#graphify/rationale #graphify/EXTRACTED #community/Enum

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-pr/README.md"
 type: "document"
-community: "Community 1241"
+community: "hermes/skills/i-bs/README.md"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1241
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # Usage
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Pull Request Generator (PR)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1241
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

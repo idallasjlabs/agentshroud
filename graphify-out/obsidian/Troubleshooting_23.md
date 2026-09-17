@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup-slack.md"
+source_file: "docs/setup-telegram.md"
 type: "document"
-community: "Community 319"
-location: "L171"
+community: "Telegram Channel Setup"
+location: "L89"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_319
+  - community/Telegram_Channel_Setup
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Slack Channel Setup]] - `contains` [EXTRACTED]
+- [[Telegram Channel Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_319
+#graphify/document #graphify/EXTRACTED #community/Telegram_Channel_Setup

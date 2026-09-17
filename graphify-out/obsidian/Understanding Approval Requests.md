@@ -1,12 +1,12 @@
 ---
 source_file: "docs/user-guide.md"
 type: "document"
-community: "Community 320"
+community: "AgentShroud User Guide"
 location: "L57"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_320
+  - community/AgentShroud_User_Guide
 ---
 
 # Understanding Approval Requests
@@ -16,4 +16,4 @@ tags:
 - [[What Requires Approval]] - `contains` [EXTRACTED]
 - [[Why Approvals Exist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_320
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_User_Guide

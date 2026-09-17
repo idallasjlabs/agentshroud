@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-mc/README.md"
 type: "document"
-community: "Community 1233"
+community: "hermes/skills/i-bs/README.md"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1233
+  - community/hermes/skills/i-bs/READMEmd
 ---
 
 # Usage
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GSDE&G Development Master Checklist (MC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1233
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

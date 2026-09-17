@@ -1,22 +1,20 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
+source_file: "docker/config/hermes/skills/i-icloud/SKILL.md"
 type: "document"
-community: "Community 270"
-location: "L281"
+community: "iCloud Services"
+location: "L142"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_270
+  - community/iCloud_Services
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Action requires approval but none granted_3]] - `contains` [EXTRACTED]
-- [[Browser timeout_4]] - `contains` [EXTRACTED]
-- [[CAPTCHA detected_4]] - `contains` [EXTRACTED]
-- [[Rate limit exceeded_3]] - `contains` [EXTRACTED]
-- [[URL not in allowlist_4]] - `contains` [EXTRACTED]
-- [[Browser — Secure Browser Automation_5]] - `contains` [EXTRACTED]
+- [[401 Unauthorized_1]] - `contains` [EXTRACTED]
+- [[CalendarContacts not found]] - `contains` [EXTRACTED]
+- [[Connection timeout_1]] - `contains` [EXTRACTED]
+- [[iCloud Services_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_270
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services

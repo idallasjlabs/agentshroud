@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/components/lvgl_kawaii_face/README.md"
 type: "document"
-community: "Community 798"
+community: "LVGL KAWAII FACE"
 location: "L58"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_798
+  - community/LVGL_KAWAII_FACE
 ---
 
 # Usage
@@ -18,4 +18,4 @@ tags:
 - [[4. Reposition]] - `contains` [EXTRACTED]
 - [[LVGL KAWAII FACE]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_798
+#graphify/document #graphify/EXTRACTED #community/LVGL_KAWAII_FACE

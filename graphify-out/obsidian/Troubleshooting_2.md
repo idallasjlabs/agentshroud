@@ -1,22 +1,21 @@
 ---
-source_file: "docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md"
+source_file: ".github/COPILOT_CLI_SETUP.md"
 type: "document"
-community: "Community 1171"
-location: "L1683"
+community: "GitHub Copilot CLI Setup Guide"
+location: "L381"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1171
+  - community/GitHub_Copilot_CLI_Setup_Guide
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist]] - `contains` [EXTRACTED]
-- [[Docker Permission Denied]] - `contains` [EXTRACTED]
-- [[High Temperature]] - `contains` [EXTRACTED]
-- [[Out of Memory]] - `contains` [EXTRACTED]
-- [[SSH Connection Refused]] - `contains` [EXTRACTED]
-- [[Slow Builds]] - `contains` [EXTRACTED]
+- [[Agent Not Found]] - `contains` [EXTRACTED]
+- [[Authentication Issues_1]] - `contains` [EXTRACTED]
+- [[Configuration Not Loading]] - `contains` [EXTRACTED]
+- [[GitHub Copilot CLI Setup Guide]] - `contains` [EXTRACTED]
+- [[Path Permission Denied]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1171
+#graphify/document #graphify/EXTRACTED #community/GitHub_Copilot_CLI_Setup_Guide

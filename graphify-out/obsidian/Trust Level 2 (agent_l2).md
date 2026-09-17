@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/access-control-matrix.md"
 type: "document"
-community: "Community 901"
+community: "AgentShroud Access Control Matrix"
 location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_901
+  - community/AgentShroud_Access_Control_Matrix
 ---
 
 # Trust Level 2 (agent_l2)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Agent Trust Levels]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_901
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Access_Control_Matrix

@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-production/README.md"
 type: "document"
-community: "Community 144"
+community: "Production Safety Checklist (SKILL)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_144
+  - community/Production_Safety_Checklist_SKILL
 ---
 
 # Usage
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[operationsincident-response]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_144
+#graphify/document #graphify/EXTRACTED #community/Production_Safety_Checklist_SKILL

@@ -1,17 +1,20 @@
 ---
-source_file: "docker/config/openclaw/workspace/BRAND.md"
+source_file: "BRAND.md"
 type: "document"
-community: "Community 173"
+community: "AgentShroud™ Security Policy"
 location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_173
+  - community/AgentShroud_Security_Policy
 ---
 
 # Trademark
 
 ## Connections
-- [[AgentShroud™ Brand Guidelines_1]] - `contains` [EXTRACTED]
+- [[AgentShroud™ Brand Guidelines]] - `contains` [EXTRACTED]
+- [[AgentShroud™ Brand Guidelines_1]] - `references` [EXTRACTED]
+- [[AgentShroud™ README]] - `references` [INFERRED]
+- [[AgentShroud™ Security Policy]] - `references` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_173
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Policy

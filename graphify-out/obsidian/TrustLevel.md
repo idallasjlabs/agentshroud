@@ -1,27 +1,27 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "Cross-Bot Trust & A2A Governance"
+community: "TrustLevel"
 location: "L29"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Cross-Bot_Trust__A2A_Governance
+  - community/TrustLevel
 ---
 
 # TrustLevel
 
 ## Connections
-- [[dot-__init__()_7]] - `references` [EXTRACTED]
-- [[dot-_force_demotion()]] - `calls` [EXTRACTED]
-- [[dot-_promotion_allowed()]] - `references` [EXTRACTED]
-- [[dot-_score_to_level()]] - `calls` [EXTRACTED]
-- [[dot-_update_score()]] - `calls` [EXTRACTED]
-- [[dot-get_trust()]] - `calls` [EXTRACTED]
-- [[dot-record_failure()]] - `references` [EXTRACTED]
-- [[dot-record_success()]] - `references` [EXTRACTED]
-- [[dot-record_violation()]] - `references` [EXTRACTED]
-- [[dot-register_agent()]] - `references` [EXTRACTED]
+- [[.__init__()_7]] - `references` [EXTRACTED]
+- [[._force_demotion()]] - `calls` [EXTRACTED]
+- [[._promotion_allowed()]] - `references` [EXTRACTED]
+- [[._score_to_level()]] - `calls` [EXTRACTED]
+- [[._update_score()]] - `calls` [EXTRACTED]
+- [[.get_trust()]] - `calls` [EXTRACTED]
+- [[.record_failure()]] - `references` [EXTRACTED]
+- [[.record_success()]] - `references` [EXTRACTED]
+- [[.record_violation()]] - `references` [EXTRACTED]
+- [[.register_agent()]] - `references` [EXTRACTED]
 - [[IntEnum]] - `inherits` [EXTRACTED]
 - [[PIISanitizer_3]] - `uses` [INFERRED]
 - [[PromptGuard]] - `conceptually_related_to` [INFERRED]
@@ -70,4 +70,4 @@ tags:
 - [[test_security_regressions_v1_2.py]] - `imports` [EXTRACTED]
 - [[test_trust_manager.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Cross-Bot_Trust__A2A_Governance
+#graphify/code #graphify/INFERRED #community/TrustLevel
