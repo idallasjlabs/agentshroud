@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "Approval Routing & Event Bus"
+community: "lifespan.py"
 location: "L150"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Routing__Event_Bus
+  - community/lifespanpy
 ---
 
 # get_module_mode()
 
 ## Connections
-- [[dot-test_get_module_mode_enforce_override()]] - `calls` [EXTRACTED]
-- [[dot-test_get_module_mode_no_env_override()]] - `calls` [EXTRACTED]
-- [[dot-test_get_module_mode_no_override()]] - `calls` [EXTRACTED]
-- [[dot-test_get_module_mode_respect_global_override()]] - `calls` [EXTRACTED]
-- [[dot-test_get_module_mode_with_override()]] - `calls` [EXTRACTED]
-- [[dot-test_global_monitor_override_downgrades_all()]] - `calls` [EXTRACTED]
+- [[.test_get_module_mode_enforce_override()]] - `calls` [EXTRACTED]
+- [[.test_get_module_mode_no_env_override()]] - `calls` [EXTRACTED]
+- [[.test_get_module_mode_no_override()]] - `calls` [EXTRACTED]
+- [[.test_get_module_mode_respect_global_override()]] - `calls` [EXTRACTED]
+- [[.test_get_module_mode_with_override()]] - `calls` [EXTRACTED]
+- [[.test_global_monitor_override_downgrades_all()]] - `calls` [EXTRACTED]
 - [[Return module mode, respecting the global permissive override.]] - `rationale_for` [EXTRACTED]
 - [[check_monitor_mode_warnings()]] - `calls` [EXTRACTED]
 - [[ingest_apiconfig.py]] - `contains` [EXTRACTED]
@@ -27,4 +27,4 @@ tags:
 - [[test_enforce_defaults.py]] - `imports` [EXTRACTED]
 - [[test_observatory_mode.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Routing__Event_Bus
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

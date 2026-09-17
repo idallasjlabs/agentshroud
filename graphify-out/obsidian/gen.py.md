@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/openai-image-gen/scripts/gen.py"
 type: "code"
-community: "Community 367"
+community: "gen.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_367
+  - community/genpy
 ---
 
 # gen.py
@@ -21,4 +21,4 @@ tags:
 - [[slugify()]] - `contains` [EXTRACTED]
 - [[write_gallery()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_367
+#graphify/code #graphify/EXTRACTED #community/genpy

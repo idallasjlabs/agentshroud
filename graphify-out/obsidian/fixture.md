@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "Community 1014"
+community: "test_subagent_governance.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1014
+  - community/test_subagent_governancepy
 ---
 
 # fixture
@@ -15,4 +15,4 @@ tags:
 - [[gov()]] - `references` [EXTRACTED]
 - [[monitor_gov()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1014
+#graphify/code #graphify/EXTRACTED #community/test_subagent_governancepy

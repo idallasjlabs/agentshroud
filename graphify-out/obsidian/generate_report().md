@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/health_report.py"
 type: "code"
-community: "Community 459"
+community: "health_report.py"
 location: "L190"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_459
+  - community/health_reportpy
 ---
 
 # generate_report()
 
 ## Connections
-- [[Any_56]] - `references` [EXTRACTED]
+- [[Any_55]] - `references` [EXTRACTED]
 - [[Generate a full health report.      Args         summaries Dict mapping tool n]] - `rationale_for` [EXTRACTED]
-- [[Path_42]] - `references` [EXTRACTED]
+- [[Path_31]] - `references` [EXTRACTED]
 - [[calculate_overall_score()]] - `calls` [EXTRACTED]
 - [[calculate_tool_score()]] - `calls` [EXTRACTED]
 - [[get_trend()]] - `calls` [EXTRACTED]
@@ -22,4 +22,4 @@ tags:
 - [[save_to_history()]] - `calls` [EXTRACTED]
 - [[score_to_grade()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_459
+#graphify/code #graphify/EXTRACTED #community/health_reportpy

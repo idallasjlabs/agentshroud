@@ -1,18 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "Community 134"
+community: "ToolACLEnforcer"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_134
+  - community/ToolACLEnforcer
 ---
 
 # fixture
 
 ## Connections
-- [[dot-enforcer()]] - `references` [EXTRACTED]
+- [[.enforcer()]] - `references` [EXTRACTED]
 - [[enforcer()]] - `references` [EXTRACTED]
 - [[rbac()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_134
+#graphify/code #graphify/EXTRACTED #community/ToolACLEnforcer

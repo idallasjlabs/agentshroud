@@ -1,12 +1,12 @@
 ---
 source_file: "tests/startup_smoke/test_setup_secrets.sh"
 type: "code"
-community: "Community 464"
+community: "run_test()"
 location: "48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_464
+  - community/run_test
 ---
 
 # has_in_section
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_setup_secrets.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_464
+#graphify/code #graphify/EXTRACTED #community/run_test

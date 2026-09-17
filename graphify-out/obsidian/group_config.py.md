@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "Teams/Group Collaborator Responses"
+community: "group_config.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Teams/Group_Collaborator_Responses
+  - community/group_configpy
 ---
 
 # group_config.py
@@ -30,4 +30,4 @@ tags:
 - [[rbac_config.py]] - `imports_from` [EXTRACTED]
 - [[test_tool_acl.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Teams/Group_Collaborator_Responses
+#graphify/code #graphify/EXTRACTED #community/group_configpy

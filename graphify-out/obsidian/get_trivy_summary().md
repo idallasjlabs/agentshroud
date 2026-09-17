@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "Community 518"
+community: "get_trivy_summary()"
 location: "L479"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_518
+  - community/get_trivy_summary
 ---
 
 # get_trivy_summary()
 
 ## Connections
-- [[dot-test_clean_when_installed_but_no_report()_1]] - `calls` [EXTRACTED]
-- [[dot-test_not_run_when_no_report_dir()]] - `calls` [EXTRACTED]
-- [[dot-test_returns_generate_summary_output()]] - `calls` [EXTRACTED]
-- [[Any_72]] - `references` [EXTRACTED]
+- [[.test_clean_when_installed_but_no_report()_1]] - `calls` [EXTRACTED]
+- [[.test_not_run_when_no_report_dir()]] - `calls` [EXTRACTED]
+- [[.test_returns_generate_summary_output()]] - `calls` [EXTRACTED]
+- [[Any_71]] - `references` [EXTRACTED]
 - [[Return latest Trivy scan summary from saved reports.      When Trivy is installe]] - `rationale_for` [EXTRACTED]
 - [[_load_latest_json()]] - `calls` [EXTRACTED]
 - [[_score_ai_model_supply_chain()]] - `calls` [EXTRACTED]
@@ -29,4 +29,4 @@ tags:
 - [[socrouter.py]] - `imports` [EXTRACTED]
 - [[test_scanner_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_518
+#graphify/code #graphify/EXTRACTED #community/get_trivy_summary

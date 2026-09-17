@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "code"
-community: "Session Manager & PII/Context Guard"
+community: "tool_result_injection.py"
 location: "L568"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Session_Manager__PII/Context_Guard
+  - community/tool_result_injectionpy
 ---
 
 # get_context_guard()
@@ -17,4 +17,4 @@ tags:
 - [[check_message()]] - `calls` [EXTRACTED]
 - [[context_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Session_Manager__PII/Context_Guard
+#graphify/code #graphify/EXTRACTED #community/tool_result_injectionpy

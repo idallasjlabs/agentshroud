@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-daedalus/SKILL.md"
 type: "document"
-community: "Community 836"
+community: "Daedalus — Concept Illustrator"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_836
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # hermes/skills/i-daedalus/SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Daedalus — Concept Illustrator_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_836
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

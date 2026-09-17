@@ -1,11 +1,11 @@
 ---
 source_file: "browser-extension/lib/forwarder.test.js"
 type: "code"
-community: "Community 928"
+community: "forwarder.test.js test suite"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_928
+  - community/forwardertestjs_test_suite
 ---
 
 # forwarder.test.js test suite
@@ -20,4 +20,4 @@ tags:
 - [[truncateContent]] - `calls` [EXTRACTED]
 - [[validateConfig]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_928
+#graphify/code #graphify/EXTRACTED #community/forwardertestjs_test_suite

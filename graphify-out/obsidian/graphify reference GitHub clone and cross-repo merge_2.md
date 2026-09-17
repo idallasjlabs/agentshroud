@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/references/github-and-merge.md"
 type: "document"
-community: "Community 1450"
+community: "graphify reference: GitHub clone and cross-repo "
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1450
+  - community/graphify_reference_GitHub_clone_and_cross-repo_
 ---
 
 # graphify reference: GitHub clone and cross-repo merge
@@ -15,4 +15,4 @@ tags:
 - [[Step 0 - Clone GitHub repo(s) (only if a GitHub URL was given)_2]] - `contains` [EXTRACTED]
 - [[openclawskillsgraphifyreferencesgithub-and-merge]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1450
+#graphify/document #graphify/EXTRACTED #community/graphify_reference_GitHub_clone_and_cross-repo_

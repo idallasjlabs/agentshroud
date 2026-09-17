@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-observability/SKILL.md"
 type: "document"
-community: "Community 1542"
+community: "hermes/skills/i-observability/SKILL.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1542
+  - community/hermes/skills/i-observability/SKILLmd
 ---
 
 # hermes/skills/i-observability/SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill observability_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1542
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-observability/SKILLmd

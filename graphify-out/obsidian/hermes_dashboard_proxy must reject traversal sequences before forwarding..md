@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "rationale"
-community: "Community 249"
+community: "TestBuildCollaboratorSafeInfoResponse"
 location: "L371"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_249
+  - community/TestBuildCollaboratorSafeInfoResponse
 ---
 
 # hermes_dashboard_proxy must reject traversal sequences before forwarding.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestHermesDashboardPathTraversal]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_249
+#graphify/rationale #graphify/EXTRACTED #community/TestBuildCollaboratorSafeInfoResponse

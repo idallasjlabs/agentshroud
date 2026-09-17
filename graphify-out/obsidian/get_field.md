@@ -1,11 +1,11 @@
 ---
 source_file: "docker/scripts/1password-skill.sh"
 type: "code"
-community: "Community 1072"
+community: "1password-skill.sh"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1072
+  - community/1password-skillsh
 ---
 
 # get_field
@@ -16,4 +16,4 @@ tags:
 - [[_validate_arg]] - `calls` [EXTRACTED]
 - [[op_get()]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1072
+#graphify/code #graphify/EXTRACTED #community/1password-skillsh

@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "Voice Gateway Test Fixtures"
+community: "test_voice_gateway.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Voice_Gateway_Test_Fixtures
+  - community/test_voice_gatewaypy
 ---
 
 # fixture
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[_reset_reply_resume()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_Test_Fixtures
+#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy

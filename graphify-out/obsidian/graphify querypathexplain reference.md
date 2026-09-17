@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/graphify/references/query.md"
 type: "document"
-community: "Community 449"
+community: "graphify Skill"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_449
+  - community/graphify_Skill
 ---
 
 # graphify Query/Path/Explain Reference
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[graphify Skill]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_449
+#graphify/document #graphify/EXTRACTED #community/graphify_Skill

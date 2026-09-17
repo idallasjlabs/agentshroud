@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/gh-issues/SKILL.md"
 type: "document"
-community: "Community 510"
+community: "gh-issues — Auto-fix GitHub Issues with Parallel"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_510
+  - community/gh-issues__Auto-fix_GitHub_Issues_with_Parallel
 ---
 
 # gh-issues — Auto-fix GitHub Issues with Parallel Sub-agents
@@ -22,4 +22,4 @@ tags:
 - [[Watch Mode (if --watch is active)]] - `contains` [EXTRACTED]
 - [[gh-issuesSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_510
+#graphify/document #graphify/EXTRACTED #community/gh-issues__Auto-fix_GitHub_Issues_with_Parallel

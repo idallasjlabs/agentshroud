@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/video-frames/scripts/frame.sh"
 type: "code"
-community: "Community 1101"
+community: "frame.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1101
+  - community/framesh
 ---
 
 # frame.sh
@@ -16,4 +16,4 @@ tags:
 - [[usage()_3]] - `defines` [EXTRACTED]
 - [[video-framesSKILL]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1101
+#graphify/code #graphify/EXTRACTED #community/framesh

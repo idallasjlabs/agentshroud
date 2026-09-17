@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_tracker.py"
 type: "rationale"
-community: "Community 102"
+community: "CollaboratorActivityTracker"
 location: "L309"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_102
+  - community/CollaboratorActivityTracker
 ---
 
 # get_activity(bot_id=...) returns only entries matching that bot_id.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_get_activity_filters_by_bot_id()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_102
+#graphify/rationale #graphify/EXTRACTED #community/CollaboratorActivityTracker

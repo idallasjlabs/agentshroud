@@ -1,12 +1,12 @@
 ---
 source_file: "browser-extension/lib/forwarder.js"
 type: "code"
-community: "Community 730"
+community: "forwarder.js"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_730
+  - community/forwarderjs
 ---
 
 # forwarder.js
@@ -22,4 +22,4 @@ tags:
 - [[truncateContent()]] - `contains` [EXTRACTED]
 - [[validateConfig()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_730
+#graphify/code #graphify/EXTRACTED #community/forwarderjs

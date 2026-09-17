@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/camsnap/SKILL.md"
 type: "concept"
-community: "Community 1347"
+community: "camsnap/SKILL.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1347
+  - community/camsnap/SKILLmd
 ---
 
 # ffmpeg dependency
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[camsnap CLI]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1347
+#graphify/concept #graphify/EXTRACTED #community/camsnap/SKILLmd

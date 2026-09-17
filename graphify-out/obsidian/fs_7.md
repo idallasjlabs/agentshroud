@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-browser/browse.js"
+source_file: "docker/config/openclaw/apply-patches.js"
 type: "code"
-community: "Browse (i-browser)"
-location: "L7"
+community: "apply-patches.js"
+location: "L9"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Browse_i-browser
+  - community/apply-patchesjs
 ---
 
 # fs
 
 ## Connections
-- [[browse.js_3]] - `contains` [EXTRACTED]
+- [[apply-patches.js_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Browse_i-browser
+#graphify/code #graphify/EXTRACTED #community/apply-patchesjs

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/agents/hermes-soul.md"
 type: "document"
-community: "Community 228"
+community: "agentshroud-ssh-exec.sh"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_228
+  - community/agentshroud-ssh-execsh
 ---
 
 # hermes-soul.md (Hermes system identity)
@@ -14,4 +14,4 @@ tags:
 - [[agentshroud-ssh-exec.sh]] - `references` [EXTRACTED]
 - [[openclaw-identity.md (OpenClaw bot identity)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_228
+#graphify/document #graphify/EXTRACTED #community/agentshroud-ssh-execsh

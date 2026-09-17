@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/references/query.md"
 type: "document"
-community: "Community 1137"
+community: "graphify reference: extra exports and benchmark"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1137
+  - community/graphify_reference_extra_exports_and_benchmark
 ---
 
 # graphify reference: query, path, explain
@@ -18,4 +18,4 @@ tags:
 - [[Step 1 — Traversal_2]] - `contains` [EXTRACTED]
 - [[openclawskillsgraphifyreferencesquery]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1137
+#graphify/document #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark

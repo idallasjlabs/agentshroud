@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/agent_cve_registry.py"
 type: "code"
-community: "Community 458"
+community: "gateway.security.agent_cve_registry"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_458
+  - community/gatewaysecurityagent_cve_registry
 ---
 
 # gateway.security.agent_cve_registry
@@ -27,4 +27,4 @@ tags:
 - [[test_triage_cve_mitigations.py]] - `references` [EXTRACTED]
 - [[triage-cve-mitigations.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_458
+#graphify/code #graphify/EXTRACTED #community/gatewaysecurityagent_cve_registry

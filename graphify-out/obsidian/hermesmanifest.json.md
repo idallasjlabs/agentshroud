@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/manifest.json"
 type: "code"
-community: "Community 1015"
+community: "hermes/manifest.json"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1015
+  - community/hermes/manifestjson
 ---
 
 # hermes/manifest.json
@@ -17,4 +17,4 @@ tags:
 - [[openclawmanifest.json]] - `semantically_similar_to` [INFERRED]
 - [[version]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1015
+#graphify/code #graphify/EXTRACTED #community/hermes/manifestjson

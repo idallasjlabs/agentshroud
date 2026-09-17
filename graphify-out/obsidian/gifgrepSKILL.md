@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/gifgrep/SKILL.md"
 type: "document"
-community: "Community 1466"
+community: "gifgrep/SKILL.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1466
+  - community/gifgrep/SKILLmd
 ---
 
 # gifgrep/SKILL.md
@@ -15,4 +15,4 @@ tags:
 - [[gifgrep]] - `contains` [EXTRACTED]
 - [[gifgrep CLI]] - `implements` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1466
+#graphify/document #graphify/EXTRACTED #community/gifgrep/SKILLmd

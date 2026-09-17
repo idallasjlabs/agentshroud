@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "Approval Routing & Event Bus"
+community: "_process_inbound()"
 location: "L587"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Routing__Event_Bus
+  - community/_process_inbound
 ---
 
 # forward_content()
@@ -22,4 +22,4 @@ tags:
 - [[forward.py]] - `contains` [EXTRACTED]
 - [[make_event()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Routing__Event_Bus
+#graphify/code #graphify/EXTRACTED #community/_process_inbound

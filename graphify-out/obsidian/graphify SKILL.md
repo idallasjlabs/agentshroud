@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/graphify/SKILL.md"
 type: "document"
-community: "Community 449"
+community: "graphify Skill"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_449
+  - community/graphify_Skill
 ---
 
 # graphify Skill
@@ -27,4 +27,4 @@ tags:
 - [[graphify Transcribe Reference]] - `references` [EXTRACTED]
 - [[graphify Update & Cluster-Only Reference]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_449
+#graphify/document #graphify/EXTRACTED #community/graphify_Skill

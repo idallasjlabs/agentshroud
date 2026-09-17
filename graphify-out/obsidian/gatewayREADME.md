@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/README.md"
 type: "document"
-community: "Approval Routing & Event Bus"
+community: "SSHProxy"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Approval_Routing__Event_Bus
+  - community/SSHProxy
 ---
 
 # gateway/README.md
@@ -24,4 +24,4 @@ tags:
 - [[queue.py]] - `references` [EXTRACTED]
 - [[sanitizer.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Approval_Routing__Event_Bus
+#graphify/document #graphify/EXTRACTED #community/SSHProxy

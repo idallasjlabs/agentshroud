@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/proxy/dns_forwarder.py"
 type: "code"
-community: "Community 1024"
+community: "forward_query()"
 location: "L130"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1024
+  - community/forward_query
 ---
 
 # forward_query()
 
 ## Connections
-- [[dot-_handle_query()]] - `calls` [EXTRACTED]
-- [[dot-test_all_upstreams_fail_returns_none()]] - `calls` [EXTRACTED]
-- [[dot-test_failover_to_second_upstream()]] - `calls` [EXTRACTED]
-- [[dot-test_first_upstream_succeeds()]] - `calls` [EXTRACTED]
+- [[._handle_query()]] - `calls` [EXTRACTED]
+- [[.test_all_upstreams_fail_returns_none()]] - `calls` [EXTRACTED]
+- [[.test_failover_to_second_upstream()]] - `calls` [EXTRACTED]
+- [[.test_first_upstream_succeeds()]] - `calls` [EXTRACTED]
 - [[Forward a DNS query to upstream resolvers with failover.]] - `rationale_for` [EXTRACTED]
 - [[dns_forwarder.py]] - `contains` [EXTRACTED]
 - [[test_dns_canvas_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1024
+#graphify/code #graphify/EXTRACTED #community/forward_query

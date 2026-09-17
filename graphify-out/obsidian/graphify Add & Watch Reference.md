@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/graphify/references/add-watch.md"
 type: "document"
-community: "Community 446"
+community: "graphify Skill"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_446
+  - community/graphify_Skill
 ---
 
 # graphify Add & Watch Reference
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[graphify Skill]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_446
+#graphify/document #graphify/EXTRACTED #community/graphify_Skill

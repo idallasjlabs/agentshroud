@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "Blue/Red Team Security Auditor Skills"
+community: "EncryptedStore"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Blue/Red_Team_Security_Auditor_Skills
+  - community/EncryptedStore
 ---
 
 # gateway.security.trust_manager
@@ -30,4 +30,4 @@ tags:
 - [[subagent_monitor.py]] - `semantically_similar_to` [INFERRED]
 - [[test_progressive_trust_integration.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Blue/Red_Team_Security_Auditor_Skills
+#graphify/code #graphify/EXTRACTED #community/EncryptedStore

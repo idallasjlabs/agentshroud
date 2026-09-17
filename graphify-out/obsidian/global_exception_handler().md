@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Ingest API & RBAC Core"
+community: "ingest_api/main.py"
 location: "L392"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ingest_API__RBAC_Core
+  - community/ingest_api/mainpy
 ---
 
 # global_exception_handler()
@@ -21,4 +21,4 @@ tags:
 - [[test_global_exception_handler_http_exception()]] - `calls` [EXTRACTED]
 - [[test_main_simple.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ingest_API__RBAC_Core
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/daily_cve_report.py"
 type: "code"
-community: "Community 124"
+community: "gateway.security.daily_cve_report"
 location: "958"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_124
+  - community/gatewaysecuritydaily_cve_report
 ---
 
 # ghsa_ingest_scheduler
@@ -18,4 +18,4 @@ tags:
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[run_upstream_cve_check_all_agents]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_124
+#graphify/code #graphify/EXTRACTED #community/gatewaysecuritydaily_cve_report

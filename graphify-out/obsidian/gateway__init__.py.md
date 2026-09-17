@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/__init__.py"
 type: "code"
-community: "Community 1578"
+community: "Playwright"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1578
+  - community/Playwright
 ---
 
 # gateway/__init__.py
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Gateway Package]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1578
+#graphify/code #graphify/EXTRACTED #community/Playwright
