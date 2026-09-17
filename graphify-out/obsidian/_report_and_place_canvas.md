@@ -1,11 +1,11 @@
 ---
 source_file: "firmware/voice-terminal/main/ui_face.c"
 type: "code"
-community: "Community 246"
+community: "app_main.c"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_246
+  - community/app_mainc
 ---
 
 # _report_and_place_canvas
@@ -17,4 +17,4 @@ tags:
 - [[ui_face_init]] - `calls` [EXTRACTED]
 - [[vt_remote_log]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_246
+#graphify/code #graphify/EXTRACTED #community/app_mainc

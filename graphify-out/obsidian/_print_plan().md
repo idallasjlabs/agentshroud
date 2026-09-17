@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/auto_remediate_cves.py"
 type: "code"
-community: "Community 195"
+community: "auto_remediate_cves.py"
 location: "L287"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_195
+  - community/auto_remediate_cvespy
 ---
 
 # _print_plan()
@@ -16,4 +16,4 @@ tags:
 - [[auto_remediate_cves.py]] - `contains` [EXTRACTED]
 - [[main()_3]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_195
+#graphify/code #graphify/EXTRACTED #community/auto_remediate_cvespy

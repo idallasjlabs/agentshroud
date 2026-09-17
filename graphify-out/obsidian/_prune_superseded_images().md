@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/asb"
 type: "code"
-community: "Community 739"
+community: "asb"
 location: "L429"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_739
+  - community/asb
 ---
 
 # _prune_superseded_images()
@@ -15,4 +15,4 @@ tags:
 - [[_prune_docker()]] - `calls` [EXTRACTED]
 - [[asb]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_739
+#graphify/code #graphify/EXTRACTED #community/asb

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/activate-lockdown.sh"
 type: "code"
-community: "Community 1646"
+community: "activate-lockdown.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1646
+  - community/activate-lockdownsh
 ---
 
 # activate-lockdown.sh
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[activate-lockdown.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1646
+#graphify/code #graphify/EXTRACTED #community/activate-lockdownsh

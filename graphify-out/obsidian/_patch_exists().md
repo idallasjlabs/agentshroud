@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "SOC Service Manager (Container Engine)"
+community: "ServiceManager"
 location: "L100"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Service_Manager_Container_Engine
+  - community/ServiceManager
 ---
 
 # _patch_exists()
 
 ## Connections
-- [[dot-test_engine_error_falls_back_to_socket()]] - `calls` [EXTRACTED]
-- [[dot-test_no_engine_no_socket()]] - `calls` [EXTRACTED]
-- [[dot-test_not_installed()_1]] - `calls` [EXTRACTED]
-- [[dot-test_not_installed()_2]] - `calls` [EXTRACTED]
-- [[dot-test_not_installed()_4]] - `calls` [EXTRACTED]
-- [[dot-test_running_when_content_present()]] - `calls` [EXTRACTED]
-- [[dot-test_socket_fallback_empty_lines()]] - `calls` [EXTRACTED]
-- [[dot-test_stopped_when_content_missing()]] - `calls` [EXTRACTED]
+- [[.test_engine_error_falls_back_to_socket()]] - `calls` [EXTRACTED]
+- [[.test_no_engine_no_socket()]] - `calls` [EXTRACTED]
+- [[.test_not_installed()_1]] - `calls` [EXTRACTED]
+- [[.test_not_installed()_2]] - `calls` [EXTRACTED]
+- [[.test_not_installed()_4]] - `calls` [EXTRACTED]
+- [[.test_running_when_content_present()]] - `calls` [EXTRACTED]
+- [[.test_socket_fallback_empty_lines()]] - `calls` [EXTRACTED]
+- [[.test_stopped_when_content_missing()]] - `calls` [EXTRACTED]
 - [[os.path.exists override for specific paths only.]] - `rationale_for` [EXTRACTED]
 - [[test_soc_services_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Service_Manager_Container_Engine
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

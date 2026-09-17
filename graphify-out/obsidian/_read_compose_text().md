@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "Community 60"
+community: "scanner_integration.py"
 location: "L416"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_60
+  - community/scanner_integrationpy
 ---
 
 # _read_compose_text()
 
 ## Connections
-- [[Path_52]] - `calls` [EXTRACTED]
+- [[Path_41]] - `calls` [EXTRACTED]
 - [[Return docker-compose.yml text for containerized-deployment evidence checks.]] - `rationale_for` [EXTRACTED]
 - [[_score_docker_daemon_config()]] - `calls` [EXTRACTED]
 - [[_score_host_os_hardening()]] - `calls` [EXTRACTED]
@@ -20,4 +20,4 @@ tags:
 - [[_score_registry_security()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_60
+#graphify/code #graphify/EXTRACTED #community/scanner_integrationpy

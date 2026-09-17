@@ -1,17 +1,17 @@
 ---
 source_file: "README.md"
 type: "document"
-community: "Community 929"
+community: "AgentShroud Operations Cheat Sheet"
 location: "L347"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_929
+  - community/AgentShroud_Operations_Cheat_Sheet
 ---
 
 # `asb` reference
 
 ## Connections
-- [[Quickstart_1]] - `contains` [EXTRACTED]
+- [[Quickstart]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_929
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Operations_Cheat_Sheet

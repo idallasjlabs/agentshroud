@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_api_coverage.py"
 type: "rationale"
-community: "Community 863"
+community: "api.py"
 location: "L536"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_863
+  - community/apipy
 ---
 
 # _resolve_bot_container must use BotConfig.resolved_container_name, not     a har
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestResolveBotContainer]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_863
+#graphify/rationale #graphify/EXTRACTED #community/apipy

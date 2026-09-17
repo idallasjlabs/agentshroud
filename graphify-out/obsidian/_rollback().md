@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/update-agentshroud.sh"
 type: "code"
-community: "Community 707"
+community: "post-deploy-check.sh"
 location: "L157"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_707
+  - community/post-deploy-checksh
 ---
 
 # _rollback()
@@ -16,4 +16,4 @@ tags:
 - [[update-agentshroud.sh]] - `defines` [EXTRACTED]
 - [[update-agentshroud.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_707
+#graphify/code #graphify/EXTRACTED #community/post-deploy-checksh

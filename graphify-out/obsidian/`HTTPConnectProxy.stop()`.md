@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md"
 type: "document"
-community: "Community 384"
+community: "http_proxy.py"
 location: "L74"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_384
+  - community/http_proxypy
 ---
 
 # `HTTPConnectProxy.stop()`
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Function Details_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_384
+#graphify/document #graphify/EXTRACTED #community/http_proxypy

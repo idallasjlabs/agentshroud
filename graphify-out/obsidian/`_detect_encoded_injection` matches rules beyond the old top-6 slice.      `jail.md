@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ws_e_rt2_inbound_encoding.py"
 type: "rationale"
-community: "Community 152"
+community: "TrustManager"
 location: "L260"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_152
+  - community/TrustManager
 ---
 
 # `_detect_encoded_injection` matches rules beyond the old top-6 slice.      `jail
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_tool_injection_encoded_check_uses_full_ruleset()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_152
+#graphify/rationale #graphify/EXTRACTED #community/TrustManager

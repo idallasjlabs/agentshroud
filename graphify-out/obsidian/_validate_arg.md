@@ -1,11 +1,11 @@
 ---
 source_file: "docker/scripts/1password-skill.sh"
 type: "code"
-community: "Community 1072"
+community: "1password-skill.sh"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1072
+  - community/1password-skillsh
 ---
 
 # _validate_arg
@@ -16,4 +16,4 @@ tags:
 - [[get_totp]] - `calls` [EXTRACTED]
 - [[list_items]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1072
+#graphify/code #graphify/EXTRACTED #community/1password-skillsh

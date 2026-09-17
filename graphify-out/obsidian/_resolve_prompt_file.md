@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/scripts/session-prompt-setup.sh"
 type: "code"
-community: "Community 832"
+community: "8. Governance Model"
 location: "L115"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_832
+  - community/8_Governance_Model
 ---
 
 # _resolve_prompt_file
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[main_4]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_832
+#graphify/code #graphify/EXTRACTED #community/8_Governance_Model

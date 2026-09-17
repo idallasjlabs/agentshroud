@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/troubleshooting.md"
 type: "document"
-community: "Community 512"
+community: "Known Log Messages"
 location: "L349"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_512
+  - community/Known_Log_Messages
 ---
 
 # `[telegram] autoSelectFamily=false (config)` / `fetch fallback: forcing autoSelectFamily=false + dnsResultOrder=ipv4first`
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Known Log Messages]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_512
+#graphify/document #graphify/EXTRACTED #community/Known_Log_Messages

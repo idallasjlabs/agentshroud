@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "Community 60"
+community: "scanner_integration.py"
 location: "L1631"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_60
+  - community/scanner_integrationpy
 ---
 
 # _score_docker_daemon_config()
@@ -19,4 +19,4 @@ tags:
 - [[compute_scorecard()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_60
+#graphify/code #graphify/EXTRACTED #community/scanner_integrationpy

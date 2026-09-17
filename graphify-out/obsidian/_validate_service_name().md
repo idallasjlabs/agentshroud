@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Runtime Security Comparison & Intel Report"
+community: "api.py"
 location: "L123"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Runtime_Security_Comparison__Intel_Report
+  - community/apipy
 ---
 
 # _validate_service_name()
@@ -20,4 +20,4 @@ tags:
 - [[start_service()_1]] - `calls` [EXTRACTED]
 - [[stop_service()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Runtime_Security_Comparison__Intel_Report
+#graphify/code #graphify/EXTRACTED #community/apipy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_hermes_cron_seed.py"
 type: "rationale"
-community: "Community 408"
+community: "test_hermes_cron_seed.py"
 location: "L208"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_408
+  - community/test_hermes_cron_seedpy
 ---
 
 # _seed_cron must accept optional $5 (model) / $6 (provider) and forward them as…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_seed_cron_supports_optional_model_and_provider_args()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_408
+#graphify/rationale #graphify/EXTRACTED #community/test_hermes_cron_seedpy

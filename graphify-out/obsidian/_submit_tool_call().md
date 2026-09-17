@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mfa_guard.py"
 type: "code"
-community: "Community 57"
+community: "test_mfa_guard.py"
 location: "L459"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_57
+  - community/test_mfa_guardpy
 ---
 
 # _submit_tool_call()
@@ -21,4 +21,4 @@ tags:
 - [[test_enhanced_tool_call_high_blocked_without_mfa()]] - `calls` [EXTRACTED]
 - [[test_mfa_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_57
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

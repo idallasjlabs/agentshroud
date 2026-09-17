@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_stream.py"
 type: "code"
-community: "Community 113"
+community: "_make_stream_app_state()"
 location: "L353"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_113
+  - community/_make_stream_app_state
 ---
 
 # _parse_sse_events()
@@ -19,4 +19,4 @@ tags:
 - [[test_forward_stream_ledger_failure_still_emits_done_event()]] - `calls` [EXTRACTED]
 - [[test_forward_stream_unexpected_error_still_emits_done_event()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_113
+#graphify/code #graphify/EXTRACTED #community/_make_stream_app_state

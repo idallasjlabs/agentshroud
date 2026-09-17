@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Runtime Security Comparison & Intel Report"
+community: "_skills_reload_impl()"
 location: "L961"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Runtime_Security_Comparison__Intel_Report
+  - community/_skills_reload_impl
 ---
 
 # _skills_reload_impl()
@@ -21,4 +21,4 @@ tags:
 - [[deploy_manifest()]] - `calls` [EXTRACTED]
 - [[skills_reload()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Runtime_Security_Comparison__Intel_Report
+#graphify/code #graphify/EXTRACTED #community/_skills_reload_impl

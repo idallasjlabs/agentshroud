@@ -1,27 +1,27 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "SOC Service Manager (Container Engine)"
+community: "ServiceManager"
 location: "L84"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Service_Manager_Container_Engine
+  - community/ServiceManager
 ---
 
 # _patch_open()
 
 ## Connections
-- [[dot-test_esrch_falls_through_to_proc_scan()]] - `calls` [EXTRACTED]
-- [[dot-test_running_via_pid_file()]] - `calls` [EXTRACTED]
-- [[dot-test_running_via_pid_file()_1]] - `calls` [EXTRACTED]
-- [[dot-test_running_via_proc_scan()]] - `calls` [EXTRACTED]
-- [[dot-test_running_via_proc_scan()_1]] - `calls` [EXTRACTED]
-- [[dot-test_running_via_proc_scan()_2]] - `calls` [EXTRACTED]
-- [[dot-test_running_when_kill_raises_eperm()]] - `calls` [EXTRACTED]
-- [[dot-test_standby_when_no_pid_and_no_process()]] - `calls` [EXTRACTED]
-- [[dot-test_stopped_when_no_pid_and_no_process()]] - `calls` [EXTRACTED]
+- [[.test_esrch_falls_through_to_proc_scan()]] - `calls` [EXTRACTED]
+- [[.test_running_via_pid_file()]] - `calls` [EXTRACTED]
+- [[.test_running_via_pid_file()_1]] - `calls` [EXTRACTED]
+- [[.test_running_via_proc_scan()]] - `calls` [EXTRACTED]
+- [[.test_running_via_proc_scan()_1]] - `calls` [EXTRACTED]
+- [[.test_running_via_proc_scan()_2]] - `calls` [EXTRACTED]
+- [[.test_running_when_kill_raises_eperm()]] - `calls` [EXTRACTED]
+- [[.test_standby_when_no_pid_and_no_process()]] - `calls` [EXTRACTED]
+- [[.test_stopped_when_no_pid_and_no_process()]] - `calls` [EXTRACTED]
 - [[Intercept builtins.open for specific paths; delegate everything else.]] - `rationale_for` [EXTRACTED]
 - [[test_soc_services_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Service_Manager_Container_Engine
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

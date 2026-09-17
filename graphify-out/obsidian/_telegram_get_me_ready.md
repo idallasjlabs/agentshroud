@@ -1,11 +1,11 @@
 ---
 source_file: "docker/scripts/start-agentshroud.sh"
 type: "code"
-community: "Community 454"
+community: "start-agentshroud.sh"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_454
+  - community/start-agentshroudsh
 ---
 
 # _telegram_get_me_ready
@@ -15,4 +15,4 @@ tags:
 - [[_telegram_bot_token()]] - `calls` [EXTRACTED]
 - [[start-agentshroud.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_454
+#graphify/code #graphify/EXTRACTED #community/start-agentshroudsh
