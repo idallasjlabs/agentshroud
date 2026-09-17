@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/gemini-review.py"
 type: "code"
-community: "Community 1102"
+community: "gemini-review.py"
 location: "L83"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1102
+  - community/gemini-reviewpy
 ---
 
 # main()
@@ -15,4 +15,4 @@ tags:
 - [[call_gemini()]] - `calls` [EXTRACTED]
 - [[gemini-review.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1102
+#graphify/code #graphify/EXTRACTED #community/gemini-reviewpy

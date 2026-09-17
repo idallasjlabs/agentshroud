@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "rationale"
-community: "Community 62"
+community: "HTTPConnectProxy"
 location: "L258"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_62
+  - community/HTTPConnectProxy
 ---
 
 # log_external_decision raising must not break the CONNECT.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_bypass_logging_failure_does_not_block_tunnel()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_62
+#graphify/rationale #graphify/EXTRACTED #community/HTTPConnectProxy

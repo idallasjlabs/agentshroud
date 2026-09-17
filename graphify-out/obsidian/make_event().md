@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "Community 116"
+community: "make_event()"
 location: "L110"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_116
+  - community/make_event
 ---
 
 # make_event()
 
 ## Connections
-- [[dot-_emit_privacy_event()]] - `calls` [EXTRACTED]
-- [[dot-_emit_quarantine_event()]] - `calls` [EXTRACTED]
-- [[dot-_record()]] - `calls` [EXTRACTED]
-- [[dot-approve()]] - `calls` [EXTRACTED]
-- [[dot-check_async()]] - `calls` [EXTRACTED]
-- [[dot-deny()]] - `calls` [EXTRACTED]
-- [[dot-request_approval()]] - `calls` [EXTRACTED]
-- [[Any_22]] - `references` [EXTRACTED]
+- [[._emit_privacy_event()]] - `calls` [EXTRACTED]
+- [[._emit_quarantine_event()]] - `calls` [EXTRACTED]
+- [[._record()]] - `calls` [EXTRACTED]
+- [[.approve()]] - `calls` [EXTRACTED]
+- [[.check_async()]] - `calls` [EXTRACTED]
+- [[.deny()]] - `calls` [EXTRACTED]
+- [[.request_approval()]] - `calls` [EXTRACTED]
+- [[Any_21]] - `references` [EXTRACTED]
 - [[GatewayEvent]] - `references` [EXTRACTED]
 - [[Helper to create a GatewayEvent with current timestamp]] - `rationale_for` [EXTRACTED]
 - [[_alert_event()]] - `calls` [EXTRACTED]
@@ -68,4 +68,4 @@ tags:
 - [[test_ws_egress_receives_privacy_event()]] - `calls` [EXTRACTED]
 - [[test_ws_egress_receives_scanner_event()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_116
+#graphify/code #graphify/EXTRACTED #community/make_event

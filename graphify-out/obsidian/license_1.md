@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/workspace/BRAND.md"
-type: "document"
-community: "Community 146"
-location: "L77"
+source_file: ".agents/skills/i-browser/package.json"
+type: "code"
+community: ".agents/skills/i-browser/package.json"
+location: "L11"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_146
+  - community/agents/skills/i-browser/packagejson
 ---
 
-# License
+# license
 
 ## Connections
-- [[AgentShroud™ Brand Guidelines_1]] - `contains` [EXTRACTED]
+- [[.agentsskillsi-browserpackage.json]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_146
+#graphify/code #graphify/EXTRACTED #community/agents/skills/i-browser/packagejson

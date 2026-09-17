@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-icloud/SKILL.md"
 type: "document"
-community: "Community 306"
+community: "iCloud Services"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_306
+  - community/iCloud_Services
 ---
 
 # iCloud Services
@@ -18,8 +18,8 @@ tags:
 - [[Mail Operations]] - `contains` [EXTRACTED]
 - [[Notes Operations]] - `contains` [EXTRACTED]
 - [[Security_4]] - `contains` [EXTRACTED]
-- [[Setup_1]] - `contains` [EXTRACTED]
-- [[Troubleshooting_19]] - `contains` [EXTRACTED]
-- [[hermesskillsi-icloudSKILL]] - `contains` [EXTRACTED]
+- [[Setup]] - `contains` [EXTRACTED]
+- [[Troubleshooting_18]] - `contains` [EXTRACTED]
+- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_306
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services

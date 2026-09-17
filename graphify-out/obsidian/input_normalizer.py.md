@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/input_normalizer.py"
 type: "code"
-community: "Community 43"
+community: ".scan()"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_43
+  - community/scan
 ---
 
 # input_normalizer.py
@@ -17,4 +17,4 @@ tags:
 - [[normalize_input()]] - `contains` [EXTRACTED]
 - [[strip_markdown_exfil()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_43
+#graphify/code #graphify/EXTRACTED #community/scan

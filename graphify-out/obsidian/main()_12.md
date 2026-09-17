@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/check_benchmark_regression.py"
 type: "code"
-community: "Community 1467"
+community: "check_benchmark_regression.py"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1467
+  - community/check_benchmark_regressionpy
 ---
 
 # main()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[check_benchmark_regression.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1467
+#graphify/code #graphify/EXTRACTED #community/check_benchmark_regressionpy

@@ -1,11 +1,11 @@
 ---
 source_file: "firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c"
 type: "code"
-community: "Community 1576"
+community: "lvgl_kawaii_face.h (face animation public API)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1576
+  - community/lvgl_kawaii_faceh_face_animation_public_API
 ---
 
 # lvgl_kawaii_face.c (canvas-based facial animation)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[lvgl_kawaii_face.h (face animation public API)]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1576
+#graphify/code #graphify/EXTRACTED #community/lvgl_kawaii_faceh_face_animation_public_API

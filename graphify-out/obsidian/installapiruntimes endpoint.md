@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/web/templates/installer.html"
 type: "concept"
-community: "Community 1623"
+community: "loadRuntimes()"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1623
+  - community/loadRuntimes
 ---
 
 # /install/api/runtimes endpoint
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[loadRuntimes()]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1623
+#graphify/concept #graphify/EXTRACTED #community/loadRuntimes

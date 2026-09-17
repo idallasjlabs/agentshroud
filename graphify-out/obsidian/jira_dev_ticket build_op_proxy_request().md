@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/workspace/jira_dev_ticket.py"
 type: "code"
-community: "Community 627"
+community: "jira_dev_ticket run()"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_627
+  - graphify/INFERRED
+  - community/jira_dev_ticket_run
 ---
 
 # jira_dev_ticket build_op_proxy_request()
@@ -14,4 +14,4 @@ tags:
 - [[build_op_proxy_request()_2]] - `semantically_similar_to` [INFERRED]
 - [[jira_dev_ticket fetch_op_secret()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_627
+#graphify/code #graphify/INFERRED #community/jira_dev_ticket_run

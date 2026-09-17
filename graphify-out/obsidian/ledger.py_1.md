@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/ledger.py.md"
 type: "document"
-community: "Community 253"
+community: "SSHProxy"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_253
+  - community/SSHProxy
 ---
 
 # ledger.py.md
@@ -18,6 +18,6 @@ tags:
 - [[LedgerConfig]] - `references` [EXTRACTED]
 - [[ledger.py_2]] - `contains` [EXTRACTED]
 - [[main.py]] - `references` [EXTRACTED]
-- [[volumes_1]] - `references` [INFERRED]
+- [[volumes]] - `references` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_253
+#graphify/document #graphify/EXTRACTED #community/SSHProxy

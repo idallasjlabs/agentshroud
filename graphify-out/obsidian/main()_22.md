@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/generate_branding_assets.py"
 type: "code"
-community: "Community 432"
+community: "generate_branding_assets.py"
 location: "L550"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_432
+  - community/generate_branding_assetspy
 ---
 
 # main()
@@ -22,4 +22,4 @@ tags:
 - [[generate_svg_logos()]] - `calls` [EXTRACTED]
 - [[generate_variants()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_432
+#graphify/code #graphify/EXTRACTED #community/generate_branding_assetspy

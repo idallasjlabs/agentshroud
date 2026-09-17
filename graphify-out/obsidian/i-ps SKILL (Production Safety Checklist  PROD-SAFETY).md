@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-ps/SKILL.md"
 type: "document"
-community: "Community 426"
+community: "GSDE&G Skills Reference Guide"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Community_426
+  - community/GSDEG_Skills_Reference_Guide
 ---
 
 # i-ps SKILL (Production Safety Checklist / PROD-SAFETY)
@@ -16,4 +16,4 @@ tags:
 - [[i-ps README (Production Safety Checklist)]] - `references` [INFERRED]
 - [[i-qa SKILL (Quality Assurance  QA)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Community_426
+#graphify/document #graphify/INFERRED #community/GSDEG_Skills_Reference_Guide

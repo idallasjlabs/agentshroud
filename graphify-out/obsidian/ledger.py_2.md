@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/ledger.py.md"
 type: "document"
-community: "Community 635"
+community: "ledger.py"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_635
+  - community/ledgerpy
 ---
 
 # ledger.py
@@ -21,7 +21,7 @@ tags:
 - [[Known Issues  Notes_5]] - `contains` [EXTRACTED]
 - [[Purpose_150]] - `contains` [EXTRACTED]
 - [[Related_27]] - `contains` [EXTRACTED]
-- [[Responsibilities_25]] - `contains` [EXTRACTED]
+- [[Responsibilities_24]] - `contains` [EXTRACTED]
 - [[ledger.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_635
+#graphify/document #graphify/EXTRACTED #community/ledgerpy

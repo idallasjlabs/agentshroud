@@ -1,17 +1,20 @@
 ---
-source_file: ".agents/skills/i-browser/package.json"
+source_file: ".llm_settings/scripts/session-prompt-setup.sh"
 type: "code"
-community: "Package (i-browser)"
-location: "L5"
+community: "8. Governance Model"
+location: "L288"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Package_i-browser
+  - community/8_Governance_Model
 ---
 
 # main
 
 ## Connections
-- [[package.json_5]] - `contains` [EXTRACTED]
+- [[_inject_all]] - `calls` [EXTRACTED]
+- [[_parse_args]] - `calls` [EXTRACTED]
+- [[_remove_all]] - `calls` [EXTRACTED]
+- [[_resolve_prompt_file]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Package_i-browser
+#graphify/code #graphify/EXTRACTED #community/8_Governance_Model

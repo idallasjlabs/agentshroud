@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-icloud/README.md"
 type: "document"
-community: "Community 1433"
+community: "iCloud Services Skill"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Community_1433
+  - community/iCloud_Services_Skill
 ---
 
 # iCloud Data Manager README
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[iCloud Services Skill_1]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Community_1433
+#graphify/document #graphify/INFERRED #community/iCloud_Services_Skill

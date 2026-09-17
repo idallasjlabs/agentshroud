@@ -1,12 +1,12 @@
 ---
 source_file: "browser-extension/manifest.json"
 type: "code"
-community: "Community 424"
+community: "browser-extension/manifest.json"
 location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_424
+  - community/browser-extension/manifestjson
 ---
 
 # icons
@@ -16,4 +16,4 @@ tags:
 - [[48]] - `contains` [EXTRACTED]
 - [[browser-extensionmanifest.json]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_424
+#graphify/code #graphify/EXTRACTED #community/browser-extension/manifestjson

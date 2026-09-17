@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/scripts/llm-init.sh"
 type: "code"
-community: "Community 304"
+community: ".claude/settings.json (hook + permission wiring)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_304
+  - community/claude/settingsjson_hook__permission_wiring
 ---
 
 # llm-init.sh
@@ -21,4 +21,4 @@ tags:
 - [[llm-init() (main deployment function)]] - `defines` [EXTRACTED]
 - [[llm-init.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_304
+#graphify/code #graphify/EXTRACTED #community/claude/settingsjson_hook__permission_wiring

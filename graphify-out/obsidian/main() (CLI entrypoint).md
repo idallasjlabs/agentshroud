@@ -1,22 +1,18 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
+source_file: ".llm_settings/scripts/mcp_oauth_preflight.py"
 type: "code"
-community: "docs/vault"
-location: "browse.py:431"
+community: "mcp_oauth_preflight.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/mcp_oauth_preflightpy
 ---
 
 # main() (CLI entrypoint)
 
 ## Connections
-- [[SecureBrowser._take_screenshot()]] - `calls` [EXTRACTED]
-- [[SecureBrowser.click()]] - `calls` [EXTRACTED]
-- [[SecureBrowser.close()]] - `calls` [EXTRACTED]
-- [[SecureBrowser.extract()]] - `calls` [EXTRACTED]
-- [[SecureBrowser.fill_field()]] - `calls` [EXTRACTED]
-- [[SecureBrowser.navigate()]] - `calls` [EXTRACTED]
+- [[cmd_oauth()]] - `calls` [EXTRACTED]
+- [[cmd_reachability()]] - `calls` [EXTRACTED]
+- [[mcp_oauth_preflight.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/mcp_oauth_preflightpy

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-icloud/SKILL.md"
 type: "document"
-community: "Community 311"
+community: "iCloud Services"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_311
+  - community/iCloud_Services
 ---
 
 # iCloud Services
@@ -18,8 +18,8 @@ tags:
 - [[Mail Operations_1]] - `contains` [EXTRACTED]
 - [[Notes Operations_1]] - `contains` [EXTRACTED]
 - [[Security_5]] - `contains` [EXTRACTED]
-- [[Setup_2]] - `contains` [EXTRACTED]
-- [[Troubleshooting_20]] - `contains` [EXTRACTED]
-- [[openclawskillsi-icloudSKILL]] - `contains` [EXTRACTED]
+- [[Setup_1]] - `contains` [EXTRACTED]
+- [[Troubleshooting_19]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_311
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services

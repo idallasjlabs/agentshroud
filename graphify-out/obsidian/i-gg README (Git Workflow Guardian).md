@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-gg/README.md"
 type: "document"
-community: "Community 398"
+community: "GSDE&G Development Master Checklist Skill"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_398
+  - community/GSDEG_Development_Master_Checklist_Skill
 ---
 
 # i-gg README (Git Workflow Guardian)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[GIT-GUARD Skill Definition]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_398
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist_Skill

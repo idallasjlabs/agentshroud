@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/workspace/jira_dev_ticket.py"
 type: "code"
-community: "Community 627"
+community: "jira_dev_ticket run()"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_627
+  - community/jira_dev_ticket_run
 ---
 
 # jira_dev_ticket build_basic_auth_header()
@@ -16,4 +16,4 @@ tags:
 - [[jira_dev_ticket create_issue()]] - `calls` [EXTRACTED]
 - [[jira_dev_ticket transition_issue()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_627
+#graphify/code #graphify/EXTRACTED #community/jira_dev_ticket_run

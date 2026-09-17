@@ -1,11 +1,11 @@
 ---
 source_file: "docker/scripts/init-openclaw-config.sh"
 type: "code"
-community: "Community 562"
+community: "TELEGRAM_API_BASE_URL"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_562
+  - community/TELEGRAM_API_BASE_URL
 ---
 
 # init-openclaw-config.sh bootstrap
@@ -16,4 +16,4 @@ tags:
 - [[patch-telegram-sdk.sh]] - `calls` [EXTRACTED]
 - [[start-agentshroud.sh (OpenClaw entrypoint)]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_562
+#graphify/code #graphify/EXTRACTED #community/TELEGRAM_API_BASE_URL

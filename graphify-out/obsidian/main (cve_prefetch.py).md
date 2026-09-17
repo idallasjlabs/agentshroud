@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/cron/scripts/cve_prefetch.py"
 type: "code"
-community: "Community 1130"
+community: "8. Governance Model"
 location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1130
+  - community/8_Governance_Model
 ---
 
 # main (cve_prefetch.py)
@@ -16,4 +16,4 @@ tags:
 - [[curl_json]] - `calls` [EXTRACTED]
 - [[known_ghsa_ids]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1130
+#graphify/code #graphify/EXTRACTED #community/8_Governance_Model

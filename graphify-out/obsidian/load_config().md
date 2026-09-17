@@ -1,28 +1,28 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "Approval Routing & Event Bus"
+community: "load_config()"
 location: "L406"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Routing__Event_Bus
+  - community/load_config
 ---
 
 # load_config()
 
 ## Connections
-- [[dot-test_configured_servers_are_allowlisted_by_default()]] - `calls` [EXTRACTED]
-- [[dot-test_engine_allows_known_server_under_default()]] - `calls` [EXTRACTED]
-- [[dot-test_engine_denies_unknown_server_under_default()]] - `calls` [EXTRACTED]
-- [[dot-test_engine_requires_approval_for_destructive_tool_on_known_server()]] - `calls` [EXTRACTED]
-- [[dot-test_explicit_policy_section_is_not_overridden()]] - `calls` [EXTRACTED]
-- [[dot-test_mcp_proxy_data_defaults_to_empty_when_absent()]] - `calls` [EXTRACTED]
-- [[dot-test_mcp_proxy_data_parsed_from_yaml()]] - `calls` [EXTRACTED]
-- [[dot-test_missing_section_yields_deny_by_default_policy()]] - `calls` [EXTRACTED]
-- [[dot-test_no_mcp_section_still_deny_by_default()]] - `calls` [EXTRACTED]
-- [[dot-test_proxy_allowed_domains_defaults_to_empty_when_absent()]] - `calls` [EXTRACTED]
-- [[dot-test_proxy_allowed_domains_parsed_from_yaml()]] - `calls` [EXTRACTED]
+- [[.test_configured_servers_are_allowlisted_by_default()]] - `calls` [EXTRACTED]
+- [[.test_engine_allows_known_server_under_default()]] - `calls` [EXTRACTED]
+- [[.test_engine_denies_unknown_server_under_default()]] - `calls` [EXTRACTED]
+- [[.test_engine_requires_approval_for_destructive_tool_on_known_server()]] - `calls` [EXTRACTED]
+- [[.test_explicit_policy_section_is_not_overridden()]] - `calls` [EXTRACTED]
+- [[.test_mcp_proxy_data_defaults_to_empty_when_absent()]] - `calls` [EXTRACTED]
+- [[.test_mcp_proxy_data_parsed_from_yaml()]] - `calls` [EXTRACTED]
+- [[.test_missing_section_yields_deny_by_default_policy()]] - `calls` [EXTRACTED]
+- [[.test_no_mcp_section_still_deny_by_default()]] - `calls` [EXTRACTED]
+- [[.test_proxy_allowed_domains_defaults_to_empty_when_absent()]] - `calls` [EXTRACTED]
+- [[.test_proxy_allowed_domains_parsed_from_yaml()]] - `calls` [EXTRACTED]
 - [[ApprovalQueueConfig_2]] - `calls` [EXTRACTED]
 - [[AuditExportConfig_1]] - `calls` [EXTRACTED]
 - [[BotConfig]] - `calls` [EXTRACTED]
@@ -31,7 +31,7 @@ tags:
 - [[LedgerConfig]] - `calls` [EXTRACTED]
 - [[Load and validate configuration from agentshroud.yaml      Search order     1.]] - `rationale_for` [EXTRACTED]
 - [[PIIConfig_2]] - `calls` [EXTRACTED]
-- [[Path_13]] - `references` [EXTRACTED]
+- [[Path_6]] - `references` [EXTRACTED]
 - [[RouterConfig]] - `calls` [EXTRACTED]
 - [[SSHConfig_2]] - `calls` [EXTRACTED]
 - [[SecurityConfig_4]] - `calls` [EXTRACTED]
@@ -62,4 +62,4 @@ tags:
 - [[upgrade_agentshroud()]] - `calls` [EXTRACTED]
 - [[upgrade_hermes()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Routing__Event_Bus
+#graphify/code #graphify/EXTRACTED #community/load_config

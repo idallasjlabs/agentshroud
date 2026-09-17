@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/key_vault.py.md"
 type: "document"
-community: "Community 516"
+community: "Function Details"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_516
+  - community/Function_Details
 ---
 
 # key_vault.py
@@ -18,8 +18,8 @@ tags:
 - [[Key Classes  Functions_6]] - `contains` [EXTRACTED]
 - [[Purpose_131]] - `contains` [EXTRACTED]
 - [[Related_10]] - `contains` [EXTRACTED]
-- [[Responsibilities_8]] - `contains` [EXTRACTED]
+- [[Responsibilities_7]] - `contains` [EXTRACTED]
 - [[Threat Model_7]] - `contains` [EXTRACTED]
 - [[key_vault.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_516
+#graphify/document #graphify/EXTRACTED #community/Function_Details

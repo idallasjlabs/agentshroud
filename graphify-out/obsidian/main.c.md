@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/components/lvgl_kawaii_face/examples/basic_cycle/main/main.c"
 type: "code"
-community: "Community 272"
+community: "lvgl_kawaii_face.c"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_272
+  - community/lvgl_kawaii_facec
 ---
 
 # main.c
@@ -16,4 +16,4 @@ tags:
 - [[emotion_cycle_task()]] - `contains` [EXTRACTED]
 - [[lvgl_kawaii_face.h]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_272
+#graphify/code #graphify/EXTRACTED #community/lvgl_kawaii_facec
