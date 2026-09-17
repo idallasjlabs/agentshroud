@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "Ingest API & RBAC Core"
+community: "ingest_api/main.py"
 location: "L414"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Ingest_API__RBAC_Core
+  - community/ingest_api/mainpy
 ---
 
 # TestRBACErrorHandling
 
 ## Connections
-- [[dot-test_invalid_action_resource_combinations()]] - `method` [EXTRACTED]
-- [[dot-test_invalid_user_id()]] - `method` [EXTRACTED]
-- [[dot-test_permission_check_with_context()]] - `method` [EXTRACTED]
-- [[dot-test_rbac_manager_without_config()]] - `method` [EXTRACTED]
+- [[.test_invalid_action_resource_combinations()]] - `method` [EXTRACTED]
+- [[.test_invalid_user_id()]] - `method` [EXTRACTED]
+- [[.test_permission_check_with_context()]] - `method` [EXTRACTED]
+- [[.test_rbac_manager_without_config()]] - `method` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
 - [[GroupRegistry]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
@@ -27,4 +27,4 @@ tags:
 - [[ToolTier]] - `uses` [INFERRED]
 - [[test_rbac.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Ingest_API__RBAC_Core
+#graphify/code #graphify/INFERRED #community/ingest_api/mainpy

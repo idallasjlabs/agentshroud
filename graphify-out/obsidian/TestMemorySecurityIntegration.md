@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "Memory Integrity & Lifecycle"
+community: "MemoryIntegrityMonitor"
 location: "L391"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Memory_Integrity__Lifecycle
+  - community/MemoryIntegrityMonitor
 ---
 
 # TestMemorySecurityIntegration
 
 ## Connections
-- [[dot-setup_method()_18]] - `method` [EXTRACTED]
-- [[dot-teardown_method()_6]] - `method` [EXTRACTED]
-- [[dot-test_integrated_memory_protection()]] - `method` [EXTRACTED]
-- [[dot-test_status_reporting()]] - `method` [EXTRACTED]
+- [[.setup_method()_18]] - `method` [EXTRACTED]
+- [[.teardown_method()_6]] - `method` [EXTRACTED]
+- [[.test_integrated_memory_protection()]] - `method` [EXTRACTED]
+- [[.test_status_reporting()]] - `method` [EXTRACTED]
 - [[ContentThreat]] - `uses` [INFERRED]
 - [[ContentThreatType]] - `uses` [INFERRED]
 - [[MemoryIntegrityConfig_1]] - `uses` [INFERRED]
@@ -27,4 +27,4 @@ tags:
 - [[Test integration of memory security components.]] - `rationale_for` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Memory_Integrity__Lifecycle
+#graphify/code #graphify/INFERRED #community/MemoryIntegrityMonitor

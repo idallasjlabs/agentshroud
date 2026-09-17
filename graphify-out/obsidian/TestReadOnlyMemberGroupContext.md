@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "code"
-community: "Community 714"
+community: "GroupRoleResolver"
 location: "L159"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_714
+  - community/GroupRoleResolver
 ---
 
 # TestReadOnlyMemberGroupContext
 
 ## Connections
-- [[dot-test_readonly_allowed_read_in_group()]] - `method` [EXTRACTED]
-- [[dot-test_readonly_allowed_web_search_in_group()]] - `method` [EXTRACTED]
-- [[dot-test_readonly_denied_email_sending_in_group()]] - `method` [EXTRACTED]
-- [[dot-test_readonly_denied_external_api_calls_in_group()]] - `method` [EXTRACTED]
-- [[dot-test_readonly_denied_file_deletion_in_group()]] - `method` [EXTRACTED]
-- [[dot-test_readonly_denied_skill_installation_in_group()]] - `method` [EXTRACTED]
+- [[.test_readonly_allowed_read_in_group()]] - `method` [EXTRACTED]
+- [[.test_readonly_allowed_web_search_in_group()]] - `method` [EXTRACTED]
+- [[.test_readonly_denied_email_sending_in_group()]] - `method` [EXTRACTED]
+- [[.test_readonly_denied_external_api_calls_in_group()]] - `method` [EXTRACTED]
+- [[.test_readonly_denied_file_deletion_in_group()]] - `method` [EXTRACTED]
+- [[.test_readonly_denied_skill_installation_in_group()]] - `method` [EXTRACTED]
 - [[GroupRole]] - `uses` [INFERRED]
 - [[GroupRoleResolver]] - `uses` [INFERRED]
 - [[RBACConfig_2]] - `uses` [INFERRED]
@@ -27,4 +27,4 @@ tags:
 - [[ToolACLEnforcer]] - `uses` [INFERRED]
 - [[test_group_rbac.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_714
+#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver

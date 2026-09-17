@@ -1,29 +1,29 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "Community 48"
+community: "test_security_audit.py"
 location: "L951"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_48
+  - community/test_security_auditpy
 ---
 
 # TestLoggingSecurity
 
 ## Connections
-- [[dot-_make_record()]] - `method` [EXTRACTED]
-- [[dot-sanitizer()_3]] - `method` [EXTRACTED]
-- [[dot-test_aws_key_redaction()]] - `method` [EXTRACTED]
-- [[dot-test_aws_key_redaction_via_pattern()]] - `method` [EXTRACTED]
-- [[dot-test_credit_card_in_logs()]] - `method` [EXTRACTED]
-- [[dot-test_env_guard_command_check()]] - `method` [EXTRACTED]
-- [[dot-test_env_guard_monitoring()]] - `method` [EXTRACTED]
-- [[dot-test_env_guard_scrub_output()]] - `method` [EXTRACTED]
-- [[dot-test_git_guard_scan_repo()]] - `method` [EXTRACTED]
-- [[dot-test_github_token_redaction()]] - `method` [EXTRACTED]
-- [[dot-test_jwt_redaction()]] - `method` [EXTRACTED]
-- [[dot-test_ssn_redaction_in_logs()]] - `method` [EXTRACTED]
+- [[._make_record()]] - `method` [EXTRACTED]
+- [[.sanitizer()_3]] - `method` [EXTRACTED]
+- [[.test_aws_key_redaction()]] - `method` [EXTRACTED]
+- [[.test_aws_key_redaction_via_pattern()]] - `method` [EXTRACTED]
+- [[.test_credit_card_in_logs()]] - `method` [EXTRACTED]
+- [[.test_env_guard_command_check()]] - `method` [EXTRACTED]
+- [[.test_env_guard_monitoring()]] - `method` [EXTRACTED]
+- [[.test_env_guard_scrub_output()]] - `method` [EXTRACTED]
+- [[.test_git_guard_scan_repo()]] - `method` [EXTRACTED]
+- [[.test_github_token_redaction()]] - `method` [EXTRACTED]
+- [[.test_jwt_redaction()]] - `method` [EXTRACTED]
+- [[.test_ssn_redaction_in_logs()]] - `method` [EXTRACTED]
 - [[AlertDispatcher]] - `uses` [INFERRED]
 - [[ConfusedDeputyError]] - `uses` [INFERRED]
 - [[ConsentDecision]] - `uses` [INFERRED]
@@ -60,4 +60,4 @@ tags:
 - [[TrustManager]] - `uses` [INFERRED]
 - [[test_security_audit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_48
+#graphify/code #graphify/INFERRED #community/test_security_auditpy

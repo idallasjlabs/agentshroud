@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "Egress Filter & HTTP Proxy"
+community: "WebProxyConfig"
 location: "L298"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Egress_Filter__HTTP_Proxy
+  - community/WebProxyConfig
 ---
 
 # TestResponseSizeLimits
 
 ## Connections
-- [[dot-test_custom_domain_size_limit()]] - `method` [EXTRACTED]
-- [[dot-test_large_response_flagged()]] - `method` [EXTRACTED]
-- [[dot-test_normal_response_not_flagged_for_size()]] - `method` [EXTRACTED]
+- [[.test_custom_domain_size_limit()]] - `method` [EXTRACTED]
+- [[.test_large_response_flagged()]] - `method` [EXTRACTED]
+- [[.test_normal_response_not_flagged_for_size()]] - `method` [EXTRACTED]
 - [[AuditChain]] - `uses` [INFERRED]
 - [[DomainSettings]] - `uses` [INFERRED]
 - [[ProxyAction]] - `uses` [INFERRED]
@@ -23,4 +23,4 @@ tags:
 - [[WebProxyConfig]] - `uses` [INFERRED]
 - [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Egress_Filter__HTTP_Proxy
+#graphify/code #graphify/INFERRED #community/WebProxyConfig

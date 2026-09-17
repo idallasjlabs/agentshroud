@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "Egress Filter & HTTP Proxy"
+community: "WebProxyConfig"
 location: "L407"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Egress_Filter__HTTP_Proxy
+  - community/WebProxyConfig
 ---
 
 # TestPassthroughMode
 
 ## Connections
-- [[dot-test_passthrough_adds_header()]] - `method` [EXTRACTED]
-- [[dot-test_passthrough_allows_everything()]] - `method` [EXTRACTED]
-- [[dot-test_passthrough_skips_content_scan()]] - `method` [EXTRACTED]
+- [[.test_passthrough_adds_header()]] - `method` [EXTRACTED]
+- [[.test_passthrough_allows_everything()]] - `method` [EXTRACTED]
+- [[.test_passthrough_skips_content_scan()]] - `method` [EXTRACTED]
 - [[AuditChain]] - `uses` [INFERRED]
 - [[DomainSettings]] - `uses` [INFERRED]
 - [[ProxyAction]] - `uses` [INFERRED]
@@ -23,4 +23,4 @@ tags:
 - [[WebProxyConfig]] - `uses` [INFERRED]
 - [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Egress_Filter__HTTP_Proxy
+#graphify/code #graphify/INFERRED #community/WebProxyConfig

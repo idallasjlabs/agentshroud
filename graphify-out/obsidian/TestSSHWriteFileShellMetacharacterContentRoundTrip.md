@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_ssh_write_file_endpoint.py"
 type: "code"
-community: "Approval Queue (WebSocket)"
+community: "SSHProxy"
 location: "L591"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Approval_Queue_WebSocket
+  - community/SSHProxy
 ---
 
 # TestSSHWriteFileShellMetacharacterContentRoundTrip
 
 ## Connections
-- [[dot-test_content_with_semicolon_backtick_redirect_round_trips_through_full_endpoint()]] - `method` [EXTRACTED]
+- [[.test_content_with_semicolon_backtick_redirect_round_trips_through_full_endpoint()]] - `method` [EXTRACTED]
 - [[ApprovalQueue_1]] - `uses` [INFERRED]
 - [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
 - [[DataLedger]] - `uses` [INFERRED]
@@ -29,4 +29,4 @@ tags:
 - [[SSHWriteResult]] - `uses` [INFERRED]
 - [[test_ssh_write_file_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Approval_Queue_WebSocket
+#graphify/code #graphify/INFERRED #community/SSHProxy

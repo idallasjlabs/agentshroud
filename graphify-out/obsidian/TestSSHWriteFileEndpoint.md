@@ -1,29 +1,29 @@
 ---
 source_file: "gateway/tests/test_ssh_write_file_endpoint.py"
 type: "code"
-community: "Approval Queue (WebSocket)"
+community: "SSHProxy"
 location: "L119"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Approval_Queue_WebSocket
+  - graphify/INFERRED
+  - community/SSHProxy
 ---
 
 # TestSSHWriteFileEndpoint
 
 ## Connections
-- [[dot-test_write_file_absolute_path_outside_root_rejected()]] - `method` [EXTRACTED]
-- [[dot-test_write_file_absolute_path_prefix_collision_rejected()]] - `method` [EXTRACTED]
-- [[dot-test_write_file_denial_is_audited()]] - `method` [EXTRACTED]
-- [[dot-test_write_file_disallowed_host_rejected()]] - `method` [EXTRACTED]
-- [[dot-test_write_file_empty_path_rejected()]] - `method` [EXTRACTED]
-- [[dot-test_write_file_invalid_base64_rejected()]] - `method` [EXTRACTED]
-- [[dot-test_write_file_no_auth()]] - `method` [EXTRACTED]
-- [[dot-test_write_file_oversized_content_rejected()]] - `method` [EXTRACTED]
-- [[dot-test_write_file_path_traversal_dotdot_rejected()]] - `method` [EXTRACTED]
-- [[dot-test_write_file_remote_failure_returns_200_with_success_false()]] - `method` [EXTRACTED]
-- [[dot-test_write_file_ssh_disabled_returns_503()]] - `method` [EXTRACTED]
-- [[dot-test_write_file_valid_round_trip()]] - `method` [EXTRACTED]
+- [[.test_write_file_absolute_path_outside_root_rejected()]] - `method` [EXTRACTED]
+- [[.test_write_file_absolute_path_prefix_collision_rejected()]] - `method` [EXTRACTED]
+- [[.test_write_file_denial_is_audited()]] - `method` [EXTRACTED]
+- [[.test_write_file_disallowed_host_rejected()]] - `method` [EXTRACTED]
+- [[.test_write_file_empty_path_rejected()]] - `method` [EXTRACTED]
+- [[.test_write_file_invalid_base64_rejected()]] - `method` [EXTRACTED]
+- [[.test_write_file_no_auth()]] - `method` [EXTRACTED]
+- [[.test_write_file_oversized_content_rejected()]] - `method` [EXTRACTED]
+- [[.test_write_file_path_traversal_dotdot_rejected()]] - `method` [EXTRACTED]
+- [[.test_write_file_remote_failure_returns_200_with_success_false()]] - `method` [EXTRACTED]
+- [[.test_write_file_ssh_disabled_returns_503()]] - `method` [EXTRACTED]
+- [[.test_write_file_valid_round_trip()]] - `method` [EXTRACTED]
 - [[ApprovalQueue_1]] - `uses` [INFERRED]
 - [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
 - [[DataLedger]] - `uses` [INFERRED]
@@ -39,4 +39,4 @@ tags:
 - [[SSHWriteResult]] - `uses` [INFERRED]
 - [[test_ssh_write_file_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Queue_WebSocket
+#graphify/code #graphify/INFERRED #community/SSHProxy

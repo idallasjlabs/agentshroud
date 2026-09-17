@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "Signed Instruction Envelopes & Security Pipeline"
+community: "KeyVaultConfig"
 location: "L573"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Signed_Instruction_Envelopes__Security_Pipeline
+  - community/KeyVaultConfig
 ---
 
 # TestKeyLeakDetection
 
 ## Connections
-- [[dot-_make_vault_pipeline()]] - `method` [EXTRACTED]
-- [[dot-_passthrough_pii()_1]] - `method` [EXTRACTED]
-- [[dot-test_clean_response_passes_unchanged()]] - `method` [EXTRACTED]
-- [[dot-test_detector_failure_fails_closed_for_non_owner()]] - `method` [EXTRACTED]
-- [[dot-test_generic_key_pattern_audited_but_not_blocked()]] - `method` [EXTRACTED]
-- [[dot-test_key_leak_increments_sanitized_stat_and_audits()]] - `method` [EXTRACTED]
-- [[dot-test_stored_key_value_redacted_from_outbound()]] - `method` [EXTRACTED]
+- [[._make_vault_pipeline()]] - `method` [EXTRACTED]
+- [[._passthrough_pii()_1]] - `method` [EXTRACTED]
+- [[.test_clean_response_passes_unchanged()]] - `method` [EXTRACTED]
+- [[.test_detector_failure_fails_closed_for_non_owner()]] - `method` [EXTRACTED]
+- [[.test_generic_key_pattern_audited_but_not_blocked()]] - `method` [EXTRACTED]
+- [[.test_key_leak_increments_sanitized_stat_and_audits()]] - `method` [EXTRACTED]
+- [[.test_stored_key_value_redacted_from_outbound()]] - `method` [EXTRACTED]
 - [[AuditChain]] - `uses` [INFERRED]
 - [[CrossBotTrustLedger_1]] - `uses` [INFERRED]
 - [[EnvelopeSigner]] - `uses` [INFERRED]
@@ -37,4 +37,4 @@ tags:
 - [[TrustManager]] - `uses` [INFERRED]
 - [[test_pipeline_unit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Signed_Instruction_Envelopes__Security_Pipeline
+#graphify/code #graphify/INFERRED #community/KeyVaultConfig

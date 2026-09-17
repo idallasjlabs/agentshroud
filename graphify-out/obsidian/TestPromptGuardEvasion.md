@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "Encrypted Store & Drift Detector"
+community: "EgressAction"
 location: "L797"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Encrypted_Store__Drift_Detector
+  - community/EgressAction
 ---
 
 # TestPromptGuardEvasion
 
 ## Connections
-- [[dot-setup_method()_12]] - `method` [EXTRACTED]
-- [[dot-test_double_base64_injection()]] - `method` [EXTRACTED]
-- [[dot-test_fullwidth_detection()]] - `method` [EXTRACTED]
-- [[dot-test_homoglyph_detection()]] - `method` [EXTRACTED]
-- [[dot-test_mixed_case_still_caught()]] - `method` [EXTRACTED]
-- [[dot-test_rtl_override_detection()]] - `method` [EXTRACTED]
-- [[dot-test_zero_width_evasion()]] - `method` [EXTRACTED]
+- [[.setup_method()_12]] - `method` [EXTRACTED]
+- [[.test_double_base64_injection()]] - `method` [EXTRACTED]
+- [[.test_fullwidth_detection()]] - `method` [EXTRACTED]
+- [[.test_homoglyph_detection()]] - `method` [EXTRACTED]
+- [[.test_mixed_case_still_caught()]] - `method` [EXTRACTED]
+- [[.test_rtl_override_detection()]] - `method` [EXTRACTED]
+- [[.test_zero_width_evasion()]] - `method` [EXTRACTED]
 - [[AgentRegistry]] - `uses` [INFERRED]
 - [[ContainerConfig_1]] - `uses` [INFERRED]
 - [[ContainerSnapshot]] - `uses` [INFERRED]
@@ -39,4 +39,4 @@ tags:
 - [[TrustManager]] - `uses` [INFERRED]
 - [[test_security_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Encrypted_Store__Drift_Detector
+#graphify/code #graphify/INFERRED #community/EgressAction

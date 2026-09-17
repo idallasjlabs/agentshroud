@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "Community 114"
+community: "SkillGuard"
 location: "L329"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_114
+  - community/SkillGuard
 ---
 
 # TestOversizedUnscannable
 
 ## Connections
-- [[dot-test_at_limit_file_scans_normally()]] - `method` [EXTRACTED]
-- [[dot-test_oversized_file_blocks()]] - `method` [EXTRACTED]
+- [[.test_at_limit_file_scans_normally()]] - `method` [EXTRACTED]
+- [[.test_oversized_file_blocks()]] - `method` [EXTRACTED]
 - [[Recommendation]] - `uses` [INFERRED]
 - [[ScanResult_3]] - `uses` [INFERRED]
 - [[Severity]] - `uses` [INFERRED]
@@ -21,4 +21,4 @@ tags:
 - [[SkillScanError]] - `uses` [INFERRED]
 - [[test_skill_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_114
+#graphify/code #graphify/INFERRED #community/SkillGuard

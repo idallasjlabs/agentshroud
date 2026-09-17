@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "Community 100"
+community: "ingest_api/main.py"
 location: "370-433"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_100
+  - graphify/INFERRED
+  - community/ingest_api/mainpy
 ---
 
 # TestHermesDashboardPathTraversal (CWE-22 hardening)
@@ -15,4 +15,4 @@ tags:
 - [[ingest_apimain.py]] - `implements` [INFERRED]
 - [[test_main_endpoints.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_100
+#graphify/code #graphify/INFERRED #community/ingest_api/mainpy

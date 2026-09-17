@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "code"
-community: "Approval Queue (WebSocket)"
+community: "SSHProxy"
 location: "L285"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Approval_Queue_WebSocket
+  - community/SSHProxy
 ---
 
 # TestSSHHistory
 
 ## Connections
-- [[dot-test_ssh_history()]] - `method` [EXTRACTED]
+- [[.test_ssh_history()]] - `method` [EXTRACTED]
 - [[ApprovalQueue_1]] - `uses` [INFERRED]
 - [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
 - [[DataLedger]] - `uses` [INFERRED]
@@ -28,4 +28,4 @@ tags:
 - [[SSHResult]] - `uses` [INFERRED]
 - [[test_ssh_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Approval_Queue_WebSocket
+#graphify/code #graphify/INFERRED #community/SSHProxy

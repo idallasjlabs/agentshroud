@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_session_security.py"
 type: "code"
-community: "Community 539"
+community: "SessionManager"
 location: "L110"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_539
+  - community/SessionManager
 ---
 
 # TestRateLimiting
 
 ## Connections
-- [[dot-test_different_ips_not_rate_limited()]] - `method` [EXTRACTED]
-- [[dot-test_rate_limit_exceeded()_1]] - `method` [EXTRACTED]
-- [[dot-test_rate_limit_resets_after_window()]] - `method` [EXTRACTED]
+- [[.test_different_ips_not_rate_limited()]] - `method` [EXTRACTED]
+- [[.test_rate_limit_exceeded()_1]] - `method` [EXTRACTED]
+- [[.test_rate_limit_resets_after_window()]] - `method` [EXTRACTED]
 - [[EventInjectionError]] - `uses` [INFERRED]
 - [[RateLimitExceeded]] - `uses` [INFERRED]
 - [[SessionBindingError]] - `uses` [INFERRED]
@@ -23,4 +23,4 @@ tags:
 - [[SessionManager]] - `uses` [INFERRED]
 - [[test_session_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_539
+#graphify/code #graphify/INFERRED #community/SessionManager

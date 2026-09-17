@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "Community 143"
+community: "StdioConnection"
 location: "L677"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_143
+  - community/StdioConnection
 ---
 
 # TestResultProcessingAndLifecycle
 
 ## Connections
-- [[dot-test_get_stats_after_allowed_call()]] - `method` [EXTRACTED]
-- [[dot-test_get_stats_zero_and_after_calls()]] - `method` [EXTRACTED]
-- [[dot-test_process_tool_result_handles_none_content()]] - `method` [EXTRACTED]
-- [[dot-test_process_tool_result_redacts_private_data()]] - `method` [EXTRACTED]
-- [[dot-test_shutdown_stops_all_connections()]] - `method` [EXTRACTED]
+- [[.test_get_stats_after_allowed_call()]] - `method` [EXTRACTED]
+- [[.test_get_stats_zero_and_after_calls()]] - `method` [EXTRACTED]
+- [[.test_process_tool_result_handles_none_content()]] - `method` [EXTRACTED]
+- [[.test_process_tool_result_redacts_private_data()]] - `method` [EXTRACTED]
+- [[.test_shutdown_stops_all_connections()]] - `method` [EXTRACTED]
 - [[ConnectionPool]] - `uses` [INFERRED]
 - [[HttpSseConnection]] - `uses` [INFERRED]
 - [[MCPAuditTrail_1]] - `uses` [INFERRED]
@@ -33,4 +33,4 @@ tags:
 - [[StdioConnection]] - `uses` [INFERRED]
 - [[test_mcp_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_143
+#graphify/code #graphify/INFERRED #community/StdioConnection

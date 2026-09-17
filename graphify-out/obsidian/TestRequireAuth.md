@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "Community 45"
+community: "ModeRequest"
 location: "L113"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_45
+  - graphify/INFERRED
+  - community/ModeRequest
 ---
 
 # TestRequireAuth
 
 ## Connections
-- [[dot-test_invalid_token_raises_401()]] - `method` [EXTRACTED]
-- [[dot-test_valid_token_authenticates()]] - `method` [EXTRACTED]
+- [[.test_invalid_token_raises_401()]] - `method` [EXTRACTED]
+- [[.test_valid_token_authenticates()]] - `method` [EXTRACTED]
 - [[KillSwitchAction]] - `uses` [INFERRED]
 - [[ModeRequest]] - `uses` [INFERRED]
 - [[UpdateRequest]] - `uses` [INFERRED]
 - [[test_web_api_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_45
+#graphify/code #graphify/INFERRED #community/ModeRequest

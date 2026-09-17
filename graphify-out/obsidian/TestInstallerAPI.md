@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_runtime_engines.py"
 type: "code"
-community: "Community 1112"
+community: "TestInstallerAPI"
 location: "L779"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1112
+  - community/TestInstallerAPI
 ---
 
 # TestInstallerAPI
 
 ## Connections
-- [[dot-client()]] - `method` [EXTRACTED]
-- [[dot-test_install()]] - `method` [EXTRACTED]
-- [[dot-test_installer_page()]] - `method` [EXTRACTED]
-- [[dot-test_prerequisites()]] - `method` [EXTRACTED]
-- [[dot-test_runtimes()]] - `method` [EXTRACTED]
+- [[.client()]] - `method` [EXTRACTED]
+- [[.test_install()]] - `method` [EXTRACTED]
+- [[.test_installer_page()]] - `method` [EXTRACTED]
+- [[.test_prerequisites()]] - `method` [EXTRACTED]
+- [[.test_runtimes()]] - `method` [EXTRACTED]
 - [[AppleContainerEngine]] - `uses` [INFERRED]
 - [[ContainerInfo_3]] - `uses` [INFERRED]
 - [[DockerEngine]] - `uses` [INFERRED]
@@ -24,4 +24,4 @@ tags:
 - [[ServiceDef]] - `uses` [INFERRED]
 - [[test_runtime_engines.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1112
+#graphify/code #graphify/EXTRACTED #community/TestInstallerAPI

@@ -1,35 +1,35 @@
 ---
 source_file: "gateway/tests/test_heuristic_classifier.py"
 type: "code"
-community: "Community 212"
+community: "TestHeuristicClassifier"
 location: "L10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_212
+  - community/TestHeuristicClassifier
 ---
 
 # TestHeuristicClassifier
 
 ## Connections
-- [[dot-setup_method()_23]] - `method` [EXTRACTED]
-- [[dot-test_backward_compat_alias()]] - `method` [EXTRACTED]
-- [[dot-test_benign_text_low_score()]] - `method` [EXTRACTED]
-- [[dot-test_classification_result_properties()]] - `method` [EXTRACTED]
-- [[dot-test_clear_injection_high_score()]] - `method` [EXTRACTED]
-- [[dot-test_cyrillic_homoglyph()]] - `method` [EXTRACTED]
-- [[dot-test_empty_text()_1]] - `method` [EXTRACTED]
-- [[dot-test_encoding_evasion()]] - `method` [EXTRACTED]
-- [[dot-test_exfiltration_attempt()]] - `method` [EXTRACTED]
-- [[dot-test_long_benign_text()]] - `method` [EXTRACTED]
-- [[dot-test_model_not_loaded_by_default()]] - `method` [EXTRACTED]
-- [[dot-test_multi_signal_increases_confidence()]] - `method` [EXTRACTED]
-- [[dot-test_roleplay_attack()]] - `method` [EXTRACTED]
-- [[dot-test_separator_injection()]] - `method` [EXTRACTED]
-- [[dot-test_unicode_anomaly()]] - `method` [EXTRACTED]
+- [[.setup_method()_23]] - `method` [EXTRACTED]
+- [[.test_backward_compat_alias()]] - `method` [EXTRACTED]
+- [[.test_benign_text_low_score()]] - `method` [EXTRACTED]
+- [[.test_classification_result_properties()]] - `method` [EXTRACTED]
+- [[.test_clear_injection_high_score()]] - `method` [EXTRACTED]
+- [[.test_cyrillic_homoglyph()]] - `method` [EXTRACTED]
+- [[.test_empty_text()_1]] - `method` [EXTRACTED]
+- [[.test_encoding_evasion()]] - `method` [EXTRACTED]
+- [[.test_exfiltration_attempt()]] - `method` [EXTRACTED]
+- [[.test_long_benign_text()]] - `method` [EXTRACTED]
+- [[.test_model_not_loaded_by_default()]] - `method` [EXTRACTED]
+- [[.test_multi_signal_increases_confidence()]] - `method` [EXTRACTED]
+- [[.test_roleplay_attack()]] - `method` [EXTRACTED]
+- [[.test_separator_injection()]] - `method` [EXTRACTED]
+- [[.test_unicode_anomaly()]] - `method` [EXTRACTED]
 - [[ClassificationResult]] - `uses` [INFERRED]
 - [[HeuristicClassifier_1]] - `uses` [INFERRED]
 - [[Test the heuristic injection classifier.]] - `rationale_for` [EXTRACTED]
 - [[test_heuristic_classifier.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_212
+#graphify/code #graphify/EXTRACTED #community/TestHeuristicClassifier

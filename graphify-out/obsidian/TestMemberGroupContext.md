@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "code"
-community: "Community 812"
+community: "GroupRoleResolver"
 location: "L229"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_812
+  - community/GroupRoleResolver
 ---
 
 # TestMemberGroupContext
 
 ## Connections
-- [[dot-test_member_allowed_read_write_in_group()]] - `method` [EXTRACTED]
-- [[dot-test_member_allowed_web_search_in_group()]] - `method` [EXTRACTED]
-- [[dot-test_member_denied_gmail_private_tool_in_group()]] - `method` [EXTRACTED]
-- [[dot-test_member_denied_high_risk_tools_in_group()]] - `method` [EXTRACTED]
-- [[dot-test_member_denied_ssh_private_tool_in_group()]] - `method` [EXTRACTED]
+- [[.test_member_allowed_read_write_in_group()]] - `method` [EXTRACTED]
+- [[.test_member_allowed_web_search_in_group()]] - `method` [EXTRACTED]
+- [[.test_member_denied_gmail_private_tool_in_group()]] - `method` [EXTRACTED]
+- [[.test_member_denied_high_risk_tools_in_group()]] - `method` [EXTRACTED]
+- [[.test_member_denied_ssh_private_tool_in_group()]] - `method` [EXTRACTED]
 - [[GroupRole]] - `uses` [INFERRED]
 - [[GroupRoleResolver]] - `uses` [INFERRED]
 - [[RBACConfig_2]] - `uses` [INFERRED]
@@ -26,4 +26,4 @@ tags:
 - [[ToolACLEnforcer]] - `uses` [INFERRED]
 - [[test_group_rbac.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_812
+#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver

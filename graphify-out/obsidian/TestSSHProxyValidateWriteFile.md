@@ -1,30 +1,30 @@
 ---
 source_file: "gateway/tests/test_ssh_write_file_endpoint.py"
 type: "code"
-community: "Approval Queue (WebSocket)"
+community: "SSHProxy"
 location: "L338"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Queue_WebSocket
+  - community/SSHProxy
 ---
 
 # TestSSHProxyValidateWriteFile
 
 ## Connections
-- [[dot-test_absolute_path_outside_root_rejected()]] - `method` [EXTRACTED]
-- [[dot-test_absolute_path_under_root_accepted()]] - `method` [EXTRACTED]
-- [[dot-test_content_at_exact_cap_accepted()]] - `method` [EXTRACTED]
-- [[dot-test_dotdot_traversal_from_absolute_path_rejected()]] - `method` [EXTRACTED]
-- [[dot-test_dotdot_traversal_rejected()]] - `method` [EXTRACTED]
-- [[dot-test_invalid_base64_rejected()]] - `method` [EXTRACTED]
-- [[dot-test_null_byte_rejected()]] - `method` [EXTRACTED]
-- [[dot-test_oversized_content_rejected()]] - `method` [EXTRACTED]
-- [[dot-test_prefix_collision_sibling_dir_rejected()]] - `method` [EXTRACTED]
-- [[dot-test_relative_path_resolved_under_root_accepted()]] - `method` [EXTRACTED]
-- [[dot-test_root_itself_rejected()]] - `method` [EXTRACTED]
-- [[dot-test_unknown_host_rejected()]] - `method` [EXTRACTED]
-- [[dot-test_whitespace_only_path_rejected_at_proxy_layer()]] - `method` [EXTRACTED]
+- [[.test_absolute_path_outside_root_rejected()]] - `method` [EXTRACTED]
+- [[.test_absolute_path_under_root_accepted()]] - `method` [EXTRACTED]
+- [[.test_content_at_exact_cap_accepted()]] - `method` [EXTRACTED]
+- [[.test_dotdot_traversal_from_absolute_path_rejected()]] - `method` [EXTRACTED]
+- [[.test_dotdot_traversal_rejected()]] - `method` [EXTRACTED]
+- [[.test_invalid_base64_rejected()]] - `method` [EXTRACTED]
+- [[.test_null_byte_rejected()]] - `method` [EXTRACTED]
+- [[.test_oversized_content_rejected()]] - `method` [EXTRACTED]
+- [[.test_prefix_collision_sibling_dir_rejected()]] - `method` [EXTRACTED]
+- [[.test_relative_path_resolved_under_root_accepted()]] - `method` [EXTRACTED]
+- [[.test_root_itself_rejected()]] - `method` [EXTRACTED]
+- [[.test_unknown_host_rejected()]] - `method` [EXTRACTED]
+- [[.test_whitespace_only_path_rejected_at_proxy_layer()]] - `method` [EXTRACTED]
 - [[ApprovalQueue_1]] - `uses` [INFERRED]
 - [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
 - [[DataLedger]] - `uses` [INFERRED]
@@ -41,4 +41,4 @@ tags:
 - [[Unit tests for SSHProxy.validate_cwd().]] - `rationale_for` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Queue_WebSocket
+#graphify/code #graphify/EXTRACTED #community/SSHProxy

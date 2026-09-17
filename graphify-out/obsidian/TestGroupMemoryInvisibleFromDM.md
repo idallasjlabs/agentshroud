@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_group_isolation.py"
 type: "code"
-community: "Community 909"
+community: "TestGroupMemoryInvisibleFromDM"
 location: "L147"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_909
+  - graphify/INFERRED
+  - community/TestGroupMemoryInvisibleFromDM
 ---
 
 # TestGroupMemoryInvisibleFromDM
 
 ## Connections
-- [[dot-test_group_write_invisible_from_user_dm()]] - `method` [EXTRACTED]
-- [[dot-test_merged_memory_separates_group_and_dm()]] - `method` [EXTRACTED]
-- [[dot-test_user_dm_write_invisible_from_group()]] - `method` [EXTRACTED]
-- [[dot-test_user_dm_write_invisible_from_other_group()]] - `method` [EXTRACTED]
+- [[.test_group_write_invisible_from_user_dm()]] - `method` [EXTRACTED]
+- [[.test_merged_memory_separates_group_and_dm()]] - `method` [EXTRACTED]
+- [[.test_user_dm_write_invisible_from_group()]] - `method` [EXTRACTED]
+- [[.test_user_dm_write_invisible_from_other_group()]] - `method` [EXTRACTED]
 - [[AgentRegistry]] - `uses` [INFERRED]
 - [[ContainerConfig_1]] - `uses` [INFERRED]
 - [[Group workspace content must not leak into any user's DM workspace.]] - `rationale_for` [EXTRACTED]
@@ -25,4 +25,4 @@ tags:
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_group_isolation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_909
+#graphify/code #graphify/INFERRED #community/TestGroupMemoryInvisibleFromDM

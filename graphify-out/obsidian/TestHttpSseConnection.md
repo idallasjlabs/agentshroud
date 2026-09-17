@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "Community 108"
+community: "FakeProcess"
 location: "L248"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_108
+  - community/FakeProcess
 ---
 
 # TestHttpSseConnection
 
 ## Connections
-- [[dot-_fake_aiohttp()]] - `method` [EXTRACTED]
-- [[dot-test_missing_aiohttp_raises_runtime_error()]] - `method` [EXTRACTED]
-- [[dot-test_send_request_and_session_reuse()]] - `method` [EXTRACTED]
+- [[._fake_aiohttp()]] - `method` [EXTRACTED]
+- [[.test_missing_aiohttp_raises_runtime_error()]] - `method` [EXTRACTED]
+- [[.test_send_request_and_session_reuse()]] - `method` [EXTRACTED]
 - [[ConnectionPool]] - `uses` [INFERRED]
 - [[HttpSseConnection]] - `uses` [INFERRED]
 - [[MCPAuditTrail_1]] - `uses` [INFERRED]
@@ -31,4 +31,4 @@ tags:
 - [[StdioConnection]] - `uses` [INFERRED]
 - [[test_mcp_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_108
+#graphify/code #graphify/INFERRED #community/FakeProcess

@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "Community 81"
+community: "EgressPolicy"
 location: "L207"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_81
+  - graphify/INFERRED
+  - community/EgressPolicy
 ---
 
 # TestLogging
 
 ## Connections
-- [[dot-test_log_filters_by_agent()]] - `method` [EXTRACTED]
-- [[dot-test_log_records_attempts()]] - `method` [EXTRACTED]
-- [[dot-test_log_size_limit()]] - `method` [EXTRACTED]
-- [[dot-test_stats_counts()]] - `method` [EXTRACTED]
+- [[.test_log_filters_by_agent()]] - `method` [EXTRACTED]
+- [[.test_log_records_attempts()]] - `method` [EXTRACTED]
+- [[.test_log_size_limit()]] - `method` [EXTRACTED]
+- [[.test_stats_counts()]] - `method` [EXTRACTED]
 - [[ApprovalResult]] - `uses` [INFERRED]
 - [[EgressAction]] - `uses` [INFERRED]
 - [[EgressAttempt]] - `uses` [INFERRED]
@@ -25,4 +25,4 @@ tags:
 - [[EgressPolicy]] - `uses` [INFERRED]
 - [[test_egress_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_81
+#graphify/code #graphify/INFERRED #community/EgressPolicy

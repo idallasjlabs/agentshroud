@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "code"
-community: "Approval Queue (WebSocket)"
+community: "SSHProxy"
 location: "L354"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Approval_Queue_WebSocket
+  - community/SSHProxy
 ---
 
 # TestSSHRequireApprovalFalse
 
 ## Connections
-- [[dot-no_approval_client()]] - `method` [EXTRACTED]
-- [[dot-test_non_auto_approved_executes_directly()]] - `method` [EXTRACTED]
+- [[.no_approval_client()]] - `method` [EXTRACTED]
+- [[.test_non_auto_approved_executes_directly()]] - `method` [EXTRACTED]
 - [[ApprovalQueue_1]] - `uses` [INFERRED]
 - [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
 - [[DataLedger]] - `uses` [INFERRED]
@@ -30,4 +30,4 @@ tags:
 - [[Test require_approval=false executes directly (Finding 5)]] - `rationale_for` [EXTRACTED]
 - [[test_ssh_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Approval_Queue_WebSocket
+#graphify/code #graphify/INFERRED #community/SSHProxy

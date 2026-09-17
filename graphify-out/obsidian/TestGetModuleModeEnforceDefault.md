@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_all_modules_enforce.py"
 type: "code"
-community: "Alert Dispatcher & RBAC Reliability"
+community: "lifespan.py"
 location: "L98"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/lifespanpy
 ---
 
 # TestGetModuleModeEnforceDefault
 
 ## Connections
-- [[dot-test_get_module_mode_no_env_override()]] - `method` [EXTRACTED]
-- [[dot-test_global_monitor_override_downgrades_all()]] - `method` [EXTRACTED]
+- [[.test_get_module_mode_no_env_override()]] - `method` [EXTRACTED]
+- [[.test_global_monitor_override_downgrades_all()]] - `method` [EXTRACTED]
 - [[BrowserSecurityGuard]] - `uses` [INFERRED]
 - [[ContextGuard]] - `uses` [INFERRED]
 - [[DNSFilterConfig]] - `uses` [INFERRED]
@@ -36,4 +36,4 @@ tags:
 - [[Verify get_module_mode returns enforce when no override is set.]] - `rationale_for` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/code #graphify/INFERRED #community/lifespanpy
