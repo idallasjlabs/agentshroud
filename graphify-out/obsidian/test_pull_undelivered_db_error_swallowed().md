@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_replay.py"
 type: "code"
-community: "Community 147"
+community: "test_telegram_replay.py"
 location: "L147"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_147
+  - community/test_telegram_replaypy
 ---
 
 # test_pull_undelivered_db_error_swallowed()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_telegram_replay.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_147
+#graphify/code #graphify/EXTRACTED #community/test_telegram_replaypy

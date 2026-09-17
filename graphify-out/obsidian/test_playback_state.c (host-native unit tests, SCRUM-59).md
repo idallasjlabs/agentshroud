@@ -1,11 +1,11 @@
 ---
 source_file: "firmware/voice-terminal/test/test_playback_state/test_playback_state.c"
 type: "code"
-community: "Community 273"
+community: "test_playback_state.c"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_273
+  - community/test_playback_statec
 ---
 
 # test_playback_state.c (host-native unit tests, SCRUM-59)
@@ -17,4 +17,4 @@ tags:
 - [[stubsaudio.h (host-test stub replacing audio.h constants)]] - `references` [EXTRACTED]
 - [[wakeword_ptt_press]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_273
+#graphify/code #graphify/EXTRACTED #community/test_playback_statec

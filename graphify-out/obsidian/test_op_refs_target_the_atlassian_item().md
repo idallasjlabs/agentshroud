@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_jira_dev_ticket.py"
 type: "code"
-community: "Community 169"
+community: "test_jira_dev_ticket.py"
 location: "L78"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_169
+  - community/test_jira_dev_ticketpy
 ---
 
 # test_op_refs_target_the_atlassian_item()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_jira_dev_ticket.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_169
+#graphify/code #graphify/EXTRACTED #community/test_jira_dev_ticketpy

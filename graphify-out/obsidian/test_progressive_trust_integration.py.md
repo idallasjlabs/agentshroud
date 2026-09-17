@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_progressive_trust_integration.py"
 type: "code"
-community: "Community 115"
+community: "_make_tm()"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_115
+  - community/_make_tm
 ---
 
 # test_progressive_trust_integration.py
@@ -32,4 +32,4 @@ tags:
 - [[gateway.security.trust_manager]] - `imports_from` [EXTRACTED]
 - [[progressive_trust_config.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_115
+#graphify/code #graphify/EXTRACTED #community/_make_tm

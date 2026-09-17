@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "Community 62"
+community: "HTTPConnectProxy"
 location: "L562"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_62
+  - community/HTTPConnectProxy
 ---
 
 # test_relay_idle_timeout_closes_writer()
@@ -15,4 +15,4 @@ tags:
 - [[_MockWriter]] - `calls` [EXTRACTED]
 - [[test_http_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_62
+#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy

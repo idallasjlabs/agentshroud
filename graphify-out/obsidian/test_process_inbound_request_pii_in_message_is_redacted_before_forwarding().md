@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: "Community 103"
+community: "DifferentialPIIDetector"
 location: "L282"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_103
+  - community/DifferentialPIIDetector
 ---
 
 # test_process_inbound_request_pii_in_message_is_redacted_before_forwarding()
@@ -21,4 +21,4 @@ tags:
 - [[_jsonrpc()]] - `calls` [EXTRACTED]
 - [[test_a2a_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_103
+#graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector

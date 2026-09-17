@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "Gateway Config & PII Sanitizer"
+community: "TrustManager"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Config__PII_Sanitizer
+  - community/TrustManager
 ---
 
 # test_performance.py
@@ -29,4 +29,4 @@ tags:
 - [[test_prompt_guard.py]] - `shares_data_with` [INFERRED]
 - [[test_sanitizer.py]] - `shares_data_with` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Config__PII_Sanitizer
+#graphify/code #graphify/EXTRACTED #community/TrustManager

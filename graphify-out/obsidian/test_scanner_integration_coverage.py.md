@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Community 297"
+community: "test_scanner_integration_coverage.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_297
+  - community/test_scanner_integration_coveragepy
 ---
 
 # test_scanner_integration_coverage.py
@@ -17,7 +17,7 @@ tags:
 - [[TestAggregateResults]] - `contains` [EXTRACTED]
 - [[TestAiModelSupplyChain]] - `contains` [EXTRACTED]
 - [[TestAppStateHas]] - `contains` [EXTRACTED]
-- [[TestClamavSummary_1]] - `contains` [EXTRACTED]
+- [[TestClamavSummary]] - `contains` [EXTRACTED]
 - [[TestComplianceAuditing]] - `contains` [EXTRACTED]
 - [[TestComplianceMaths]] - `contains` [EXTRACTED]
 - [[TestComputeBotScorecard]] - `contains` [EXTRACTED]
@@ -63,4 +63,4 @@ tags:
 - [[tools()]] - `contains` [EXTRACTED]
 - [[wazuh_client.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_297
+#graphify/code #graphify/EXTRACTED #community/test_scanner_integration_coveragepy

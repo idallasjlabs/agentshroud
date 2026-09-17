@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dashboard_endpoints.py"
 type: "code"
-community: "Community 104"
+community: "test_dashboard_endpoints.py"
 location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_104
+  - community/test_dashboard_endpointspy
 ---
 
 # test_proxy_status_includes_pipeline_stats()
@@ -15,4 +15,4 @@ tags:
 - [[When pipeline exists, stats should reflect its data.]] - `rationale_for` [EXTRACTED]
 - [[test_dashboard_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_104
+#graphify/code #graphify/EXTRACTED #community/test_dashboard_endpointspy

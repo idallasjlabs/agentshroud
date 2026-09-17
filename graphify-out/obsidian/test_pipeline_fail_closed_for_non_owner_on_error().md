@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_data_exfil_volume_guard.py"
 type: "code"
-community: "Community 189"
+community: "DataExfilVolumeGuard"
 location: "L278"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_189
+  - community/DataExfilVolumeGuard
 ---
 
 # test_pipeline_fail_closed_for_non_owner_on_error()
@@ -16,4 +16,4 @@ tags:
 - [[_make_pipeline()_2]] - `calls` [EXTRACTED]
 - [[test_data_exfil_volume_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_189
+#graphify/code #graphify/EXTRACTED #community/DataExfilVolumeGuard

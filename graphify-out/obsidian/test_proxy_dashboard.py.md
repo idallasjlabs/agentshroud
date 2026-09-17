@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_proxy_dashboard.py"
 type: "code"
-community: "Community 145"
+community: "ProxyDashboard"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_145
+  - community/ProxyDashboard
 ---
 
 # test_proxy_dashboard.py
@@ -28,4 +28,4 @@ tags:
 - [[test_dashboard_uptime()]] - `contains` [EXTRACTED]
 - [[test_status_report_to_display()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_145
+#graphify/code #graphify/EXTRACTED #community/ProxyDashboard
