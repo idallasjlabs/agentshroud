@@ -50,9 +50,12 @@ def _collab_jobs(jobs: list[dict]) -> list[dict]:
 
 
 def test_cron_prompts_warn_against_denied_token():
-    """Every collaborator report prompt must instruct the LLM to avoid 'denied'."""
+    """Every collaborator report prompt must instruct the LLM to avoid 'denied' —
+    except the Daily Digest, which owner directive 2026-08-29 (commit 7b9f8358)
+    deliberately exempted: euphemizing denial events out of the owner's own
+    oversight report undermines the product's core transparency guarantee."""
     jobs = _load_jobs(_CRON_JSON)
-    collab = _collab_jobs(jobs)
+    collab = [j for j in _collab_jobs(jobs) if j.get("name") != "Collaborator Daily Digest"]
     assert collab, "No collaborator report jobs found in cron jobs.json"
     for job in collab:
         msg = job.get("payload", {}).get("message", "")
@@ -80,9 +83,10 @@ def test_cron_prompts_exclude_short_uids():
 
 
 def test_bots_cron_prompts_warn_against_denied_token():
-    """Bootstrap cron copy must also have denial-token avoidance."""
+    """Bootstrap cron copy must also have denial-token avoidance — except the
+    Daily Digest; see test_cron_prompts_warn_against_denied_token's docstring."""
     jobs = _load_jobs(_CRON_JSON_BOTS)
-    collab = _collab_jobs(jobs)
+    collab = [j for j in _collab_jobs(jobs) if j.get("name") != "Collaborator Daily Digest"]
     assert collab, "No collaborator report jobs found in bots cron jobs.json"
     for job in collab:
         msg = job.get("payload", {}).get("message", "")
