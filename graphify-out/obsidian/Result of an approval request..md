@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "rationale"
-community: "Community 81"
+community: "EgressPolicy"
 location: "L22"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_81
+  - community/EgressPolicy
 ---
 
 # Result of an approval request.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ApprovalResult]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_81
+#graphify/rationale #graphify/EXTRACTED #community/EgressPolicy

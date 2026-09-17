@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "rationale"
-community: "Prompt Guard & Context Integrity"
+community: "._get_hmac_key()"
 location: "L605"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Prompt_Guard__Context_Integrity
+  - community/_get_hmac_key
 ---
 
 # Return HMAC key: env var preferred, session-scoped random fallback.
 
 ## Connections
-- [[dot-_get_hmac_key()]] - `rationale_for` [EXTRACTED]
+- [[._get_hmac_key()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Prompt_Guard__Context_Integrity
+#graphify/rationale #graphify/EXTRACTED #community/_get_hmac_key

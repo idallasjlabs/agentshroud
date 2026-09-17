@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/privacy_policy.py"
 type: "rationale"
-community: "Community 902"
+community: "PrivacyPolicyEnforcer"
 location: "L241"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_902
+  - community/PrivacyPolicyEnforcer
 ---
 
 # Return True if an access attempt to this service should be logged.
 
 ## Connections
-- [[dot-should_audit()]] - `rationale_for` [EXTRACTED]
+- [[.should_audit()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_902
+#graphify/rationale #graphify/EXTRACTED #community/PrivacyPolicyEnforcer

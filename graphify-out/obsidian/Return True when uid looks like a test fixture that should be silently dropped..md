@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/collaborator_tracker.py"
 type: "rationale"
-community: "Tool Result Sanitizer & XML Injection Filtering"
+community: "CollaboratorActivityTracker"
 location: "L32"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Tool_Result_Sanitizer__XML_Injection_Filtering
+  - community/CollaboratorActivityTracker
 ---
 
 # Return True when uid looks like a test fixture that should be silently dropped.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_is_fixture_uid()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Tool_Result_Sanitizer__XML_Injection_Filtering
+#graphify/rationale #graphify/EXTRACTED #community/CollaboratorActivityTracker

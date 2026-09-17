@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "rationale"
-community: "Gateway Config & PII Sanitizer"
+community: "SSHProxy"
 location: "L274"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Config__PII_Sanitizer
+  - community/SSHProxy
 ---
 
 # Retention enforcement.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestRetention]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Config__PII_Sanitizer
+#graphify/rationale #graphify/EXTRACTED #community/SSHProxy

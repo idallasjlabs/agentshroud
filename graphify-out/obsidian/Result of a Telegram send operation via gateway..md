@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_gateway_relay.py"
 type: "rationale"
-community: "Community 894"
+community: "TelegramGatewayRelay"
 location: "L38"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_894
+  - community/TelegramGatewayRelay
 ---
 
 # Result of a Telegram send operation via gateway.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TelegramSendResult]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_894
+#graphify/rationale #graphify/EXTRACTED #community/TelegramGatewayRelay

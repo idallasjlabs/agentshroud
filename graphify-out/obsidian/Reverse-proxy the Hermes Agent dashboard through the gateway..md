@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "Community 249"
+community: "TestBuildCollaboratorSafeInfoResponse"
 location: "L4846"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_249
+  - community/TestBuildCollaboratorSafeInfoResponse
 ---
 
 # Reverse-proxy the Hermes Agent dashboard through the gateway.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[hermes_dashboard_proxy()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_249
+#graphify/rationale #graphify/EXTRACTED #community/TestBuildCollaboratorSafeInfoResponse

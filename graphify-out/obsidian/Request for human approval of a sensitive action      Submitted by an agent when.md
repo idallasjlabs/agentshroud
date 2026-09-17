@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "rationale"
-community: "Community 38"
+community: "ApprovalRequest"
 location: "L83"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_38
+  - community/ApprovalRequest
 ---
 
 # Request for human approval of a sensitive action      Submitted by an agent when
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ApprovalRequest_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_38
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalRequest

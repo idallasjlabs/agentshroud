@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "Approval Routing & Event Bus"
+community: "test_config_hot_reload.py"
 location: "L381"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval_Routing__Event_Bus
+  - community/test_config_hot_reloadpy
 ---
 
 # Resolve the config file path using the same search order as load_config().
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[resolve_config_path()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval_Routing__Event_Bus
+#graphify/rationale #graphify/EXTRACTED #community/test_config_hot_reloadpy

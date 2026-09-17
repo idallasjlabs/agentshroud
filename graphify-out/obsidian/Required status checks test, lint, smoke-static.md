@@ -1,11 +1,11 @@
 ---
 source_file: "docs/governance/BRANCH_PROTECTION.md"
 type: "concept"
-community: "Community 317"
+community: "Incident → Test Backfill Rule (R3 extension): ev"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Community_317
+  - community/Incident__Test_Backfill_Rule_R3_extension_ev
 ---
 
 # Required status checks: test, lint, smoke-static
@@ -15,4 +15,4 @@ tags:
 - [[GitHub Branch Protection — main (docsgovernanceBRANCH_PROTECTION.md)]] - `conceptually_related_to` [EXTRACTED]
 - [[Test Strategy (docsgovernanceTEST_STRATEGY.md)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Community_317
+#graphify/concept #graphify/INFERRED #community/Incident__Test_Backfill_Rule_R3_extension_ev

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/drift_detector.py"
 type: "rationale"
-community: "Alert Dispatcher & RBAC Reliability"
+community: "lifespan.py"
 location: "L273"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Alert_Dispatcher__RBAC_Reliability
+  - community/lifespanpy
 ---
 
 # Retrieve stored drift alerts.
 
 ## Connections
-- [[dot-get_alerts()]] - `rationale_for` [EXTRACTED]
+- [[.get_alerts()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Alert_Dispatcher__RBAC_Reliability
+#graphify/rationale #graphify/EXTRACTED #community/lifespanpy

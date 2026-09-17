@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "rationale"
-community: "Prompt Guard & Context Integrity"
+community: "._get_hmac_key()"
 location: "L631"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Prompt_Guard__Context_Integrity
+  - community/_get_hmac_key
 ---
 
 # Return True if prompt_text matches the stored HMAC fingerprint.
 
 ## Connections
-- [[dot-verify_system_prompt()]] - `rationale_for` [EXTRACTED]
+- [[.verify_system_prompt()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Prompt_Guard__Context_Integrity
+#graphify/rationale #graphify/EXTRACTED #community/_get_hmac_key

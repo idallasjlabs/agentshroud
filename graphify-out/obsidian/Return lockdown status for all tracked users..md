@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/progressive_lockdown.py"
 type: "rationale"
-community: "Community 58"
+community: "ProgressiveLockdown"
 location: "L206"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_58
+  - community/ProgressiveLockdown
 ---
 
 # Return lockdown status for all tracked users.
 
 ## Connections
-- [[dot-all_statuses()]] - `rationale_for` [EXTRACTED]
+- [[.all_statuses()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_58
+#graphify/rationale #graphify/EXTRACTED #community/ProgressiveLockdown

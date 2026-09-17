@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "rationale"
-community: "Community 182"
+community: "EgressFilter"
 location: "L667"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_182
+  - community/EgressFilter
 ---
 
 # Return top destination domains by volume.
 
 ## Connections
-- [[dot-get_top_destinations()]] - `rationale_for` [EXTRACTED]
+- [[.get_top_destinations()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_182
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilter

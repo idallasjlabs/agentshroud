@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_content_scanner.py"
 type: "rationale"
-community: "Voice Gateway STT & Browser Security"
+community: "URLAnalyzer"
 location: "L46"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Voice_Gateway_STT__Browser_Security
+  - community/URLAnalyzer
 ---
 
 # Result of scanning web content.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ScanResult_4]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Voice_Gateway_STT__Browser_Security
+#graphify/rationale #graphify/EXTRACTED #community/URLAnalyzer

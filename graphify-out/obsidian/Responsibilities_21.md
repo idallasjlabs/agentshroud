@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/podman_engine.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/dns_filter.py.md"
 type: "document"
-community: "Community 597"
-location: "L15"
+community: "dns_filter.py"
+location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_597
+  - community/dns_filterpy
 ---
 
 # Responsibilities
 
 ## Connections
-- [[podman_engine.py_2]] - `contains` [EXTRACTED]
+- [[dns_filter.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_597
+#graphify/document #graphify/EXTRACTED #community/dns_filterpy

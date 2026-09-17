@@ -1,18 +1,18 @@
 ---
 source_file: ".agents/skills/i-bs/SKILL.md"
 type: "document"
-community: "Community 471"
+community: "Required: ≥ 4.5 for text, ≥ 3.0 for UI elements"
 location: "L91"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_471
+  - community/Required__45_for_text__30_for_UI_elements
 ---
 
 # Required: ≥ 4.5 for text, ≥ 3.0 for UI elements
 
 ## Connections
-- [[dot-agentsskillsi-bsSKILL]] - `contains` [EXTRACTED]
+- [[.agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[Brand Audit Checklist]] - `contains` [EXTRACTED]
 - [[Deck  Slide Master Rules]] - `contains` [EXTRACTED]
 - [[Dependencies_16]] - `contains` [EXTRACTED]
@@ -22,4 +22,4 @@ tags:
 - [[Typography Scale]] - `contains` [EXTRACTED]
 - [[Voice & Tone Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_471
+#graphify/document #graphify/EXTRACTED #community/Required__45_for_text__30_for_UI_elements

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/cross_bot_trust_ledger.py"
 type: "rationale"
-community: "Cross-Bot Trust & A2A Governance"
+community: "TrustConfig"
 location: "L352"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Cross-Bot_Trust__A2A_Governance
+  - community/TrustConfig
 ---
 
 # Return incidents, optionally filtered by source bot.          Args:
 
 ## Connections
-- [[dot-get_incidents()]] - `rationale_for` [EXTRACTED]
+- [[.get_incidents()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Cross-Bot_Trust__A2A_Governance
+#graphify/rationale #graphify/EXTRACTED #community/TrustConfig

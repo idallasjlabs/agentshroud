@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/agent_cve_registry.py"
 type: "rationale"
-community: "Community 68"
-location: "L17127"
+community: "check_upstream_cves()"
+location: "L18178"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_68
+  - community/check_upstream_cves
 ---
 
 # Return a summary of the advisory registry for the specified agent.      Counts a
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_agent_cve_summary()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_68
+#graphify/rationale #graphify/EXTRACTED #community/check_upstream_cves

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "rationale"
-community: "Approval Routing & Event Bus"
+community: "forward.py"
 location: "L363"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval_Routing__Event_Bus
+  - community/forwardpy
 ---
 
 # Response from POST /email/send.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[EmailSendResponse]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval_Routing__Event_Bus
+#graphify/rationale #graphify/EXTRACTED #community/forwardpy

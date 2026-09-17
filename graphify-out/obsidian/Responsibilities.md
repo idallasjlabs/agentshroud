@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md"
+source_file: "docs/vault/02 - Modules/Other/approval_queue.py.md"
 type: "document"
-community: "Community 1185"
+community: "EnhancedApprovalQueue (`enhanced_queue.py`)"
 location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1185
+  - community/EnhancedApprovalQueue_enhanced_queuepy
 ---
 
 # Responsibilities
 
 ## Connections
-- [[proxy_status.py_1]] - `contains` [EXTRACTED]
+- [[EnhancedApprovalQueue (`enhanced_queue.py`)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1185
+#graphify/document #graphify/EXTRACTED #community/EnhancedApprovalQueue_enhanced_queuepy

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/docker_engine.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/agent_isolation.py.md"
 type: "document"
-community: "Community 651"
-location: "L15"
+community: "agent_isolation.py"
+location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_651
+  - community/agent_isolationpy
 ---
 
 # Responsibilities
 
 ## Connections
-- [[docker_engine.py_2]] - `contains` [EXTRACTED]
+- [[agent_isolation.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_651
+#graphify/document #graphify/EXTRACTED #community/agent_isolationpy

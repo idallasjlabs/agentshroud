@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/session_security.py"
 type: "rationale"
-community: "Community 539"
+community: "SessionManager"
 location: "L148"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_539
+  - community/SessionManager
 ---
 
 # Return True if the nonce is valid (not replayed, within 5-min window).
 
 ## Connections
-- [[dot-validate_nonce()]] - `rationale_for` [EXTRACTED]
+- [[.validate_nonce()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_539
+#graphify/rationale #graphify/EXTRACTED #community/SessionManager

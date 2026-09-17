@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "Ingest API & RBAC Core"
+community: "ingest_api/main.py"
 location: "L1767"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Ingest_API__RBAC_Core
+  - community/ingest_api/mainpy
 ---
 
 # Return normalized scanner state + latest results for SOC/dashboard views.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_scanner_summary()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Ingest_API__RBAC_Core
+#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy

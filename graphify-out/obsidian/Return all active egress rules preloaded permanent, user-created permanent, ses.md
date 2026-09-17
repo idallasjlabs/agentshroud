@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "rationale"
-community: "SOC Correlation & Router"
+community: "soc/router.py"
 location: "L336"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_Correlation__Router
+  - community/soc/routerpy
 ---
 
 # Return all active egress rules: preloaded permanent, user-created permanent, ses
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_egress_rules()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_Correlation__Router
+#graphify/rationale #graphify/EXTRACTED #community/soc/routerpy

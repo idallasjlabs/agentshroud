@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Community 970"
+community: "TestParseModeStrippedAfterPIIRedaction"
 location: "L4348"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_970
+  - community/TestParseModeStrippedAfterPIIRedaction
 ---
 
 # Return a TelegramAPIProxy configured with a mock owner RBAC.
 
 ## Connections
-- [[dot-_make_owner_proxy()]] - `rationale_for` [EXTRACTED]
+- [[._make_owner_proxy()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_970
+#graphify/rationale #graphify/EXTRACTED #community/TestParseModeStrippedAfterPIIRedaction

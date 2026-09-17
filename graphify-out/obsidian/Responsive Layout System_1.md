@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-ui/SKILL.md"
 type: "document"
-community: "Community 309"
+community: "Skill: UI Expert (UI)"
 location: "L215"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_309
+  - community/Skill_UI_Expert_UI
 ---
 
 # Responsive Layout System
@@ -17,4 +17,4 @@ tags:
 - [[Dashboard Grid_1]] - `contains` [EXTRACTED]
 - [[Skill UI Expert (UI)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_309
+#graphify/document #graphify/EXTRACTED #community/Skill_UI_Expert_UI

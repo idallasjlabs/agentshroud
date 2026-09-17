@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "code"
-community: "Ingest API & RBAC Core"
+community: "ingest_api/main.py"
 location: "L48"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Ingest_API__RBAC_Core
+  - community/ingest_api/mainpy
 ---
 
 # Resource
 
 ## Connections
-- [[dot-_build_permission_matrix()]] - `references` [EXTRACTED]
-- [[dot-check_permission()]] - `references` [EXTRACTED]
+- [[._build_permission_matrix()]] - `references` [EXTRACTED]
+- [[.check_permission()]] - `references` [EXTRACTED]
 - [[Action_1]] - `uses` [INFERRED]
-- [[Any_2]] - `uses` [INFERRED]
 - [[Any_1]] - `uses` [INFERRED]
+- [[Any_2]] - `uses` [INFERRED]
 - [[AuthRequired]] - `uses` [INFERRED]
 - [[Enum_3]] - `inherits` [EXTRACTED]
 - [[Exception]] - `uses` [INFERRED]
@@ -61,8 +61,8 @@ tags:
 - [[TestTokenStorePruning]] - `uses` [INFERRED]
 - [[TestVerifyBearer]] - `uses` [INFERRED]
 - [[TestWSSOCEndpoint]] - `uses` [INFERRED]
-- [[ToolTier_2]] - `uses` [INFERRED]
 - [[ToolTier_1]] - `uses` [INFERRED]
+- [[ToolTier_2]] - `uses` [INFERRED]
 - [[WebSocket]] - `uses` [INFERRED]
 - [[_FakeBus]] - `uses` [INFERRED]
 - [[_FakeRBAC]] - `uses` [INFERRED]
@@ -76,4 +76,4 @@ tags:
 - [[test_rbac.py]] - `imports` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Ingest_API__RBAC_Core
+#graphify/code #graphify/INFERRED #community/ingest_api/mainpy

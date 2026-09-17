@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_retry.py"
 type: "rationale"
-community: "Community 637"
+community: "gateway.proxy.llm_proxy"
 location: "L56"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_637
+  - community/gatewayproxyllm_proxy
 ---
 
 # Result of a retried operation.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[RetryResult]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_637
+#graphify/rationale #graphify/EXTRACTED #community/gatewayproxyllm_proxy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "rationale"
-community: "Approval Routing & Event Bus"
+community: "forward.py"
 location: "L142"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval_Routing__Event_Bus
+  - community/forwardpy
 ---
 
 # Return True if the email address is on the pre-approved recipient list.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_is_email_recipient_allowed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval_Routing__Event_Bus
+#graphify/rationale #graphify/EXTRACTED #community/forwardpy

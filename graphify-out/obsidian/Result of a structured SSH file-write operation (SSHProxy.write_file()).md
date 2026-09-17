@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ssh_proxy/proxy.py"
 type: "rationale"
-community: "Approval Queue (WebSocket)"
+community: "SSHProxy"
 location: "L39"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval_Queue_WebSocket
+  - community/SSHProxy
 ---
 
 # Result of a structured SSH file-write operation (SSHProxy.write_file())
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SSHWriteResult]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval_Queue_WebSocket
+#graphify/rationale #graphify/EXTRACTED #community/SSHProxy

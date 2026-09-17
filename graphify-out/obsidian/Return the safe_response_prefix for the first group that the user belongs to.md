@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "rationale"
-community: "Teams/Group Collaborator Responses"
+community: "TeamsConfig"
 location: "L160"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Teams/Group_Collaborator_Responses
+  - community/TeamsConfig
 ---
 
 # Return the safe_response_prefix for the first group that the user belongs to
 
 ## Connections
-- [[dot-get_group_safe_response_prefix()]] - `rationale_for` [EXTRACTED]
+- [[.get_group_safe_response_prefix()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Teams/Group_Collaborator_Responses
+#graphify/rationale #graphify/EXTRACTED #community/TeamsConfig

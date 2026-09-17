@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/path_isolation.py"
 type: "rationale"
-community: "Community 659"
+community: "TestPathIsolationManager"
 location: "L53"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_659
+  - community/TestPathIsolationManager
 ---
 
 # Result of path rewriting operation.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[PathRewriteResult]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_659
+#graphify/rationale #graphify/EXTRACTED #community/TestPathIsolationManager

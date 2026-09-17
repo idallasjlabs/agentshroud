@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "rationale"
-community: "SOC Correlation & Router"
+community: "test_soc_bots.py"
 location: "L503"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_Correlation__Router
+  - community/test_soc_botspy
 ---
 
 # Return egress decision history (approve/deny/timeout) (CC-40).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_egress_history()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_Correlation__Router
+#graphify/rationale #graphify/EXTRACTED #community/test_soc_botspy

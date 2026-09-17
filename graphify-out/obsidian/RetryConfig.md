@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_retry.py"
 type: "code"
-community: "Community 637"
+community: "gateway.proxy.llm_proxy"
 location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_637
+  - community/gatewayproxyllm_proxy
 ---
 
 # RetryConfig
@@ -18,4 +18,4 @@ tags:
 - [[retry_request()]] - `references` [EXTRACTED]
 - [[retry_request_sync()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_637
+#graphify/code #graphify/EXTRACTED #community/gatewayproxyllm_proxy
