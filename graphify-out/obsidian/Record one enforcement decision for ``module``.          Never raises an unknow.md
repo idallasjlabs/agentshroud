@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/module_stats.py"
 type: "rationale"
-community: "Community 137"
+community: "ModuleStatsCollector"
 location: "L46"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_137
+  - community/ModuleStatsCollector
 ---
 
 # Record one enforcement decision for ``module``.          Never raises: an unknow
 
 ## Connections
-- [[dot-record()]] - `rationale_for` [EXTRACTED]
+- [[.record()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_137
+#graphify/rationale #graphify/EXTRACTED #community/ModuleStatsCollector

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/audit-specification.md"
 type: "document"
-community: "Community 197"
+community: "AgentShroud Audit Specification"
 location: "L355"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_197
+  - community/AgentShroud_Audit_Specification
 ---
 
 # Query Response Format
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Query Capabilities]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_197
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Audit_Specification

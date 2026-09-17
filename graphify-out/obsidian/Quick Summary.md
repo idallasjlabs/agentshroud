@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/deployment.md"
 type: "document"
-community: "Community 703"
+community: "Deployment Runbook — AgentShroud"
 location: "L90"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_703
+  - community/Deployment_Runbook__AgentShroud
 ---
 
 # Quick Summary
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[First-Time Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_703
+#graphify/document #graphify/EXTRACTED #community/Deployment_Runbook__AgentShroud

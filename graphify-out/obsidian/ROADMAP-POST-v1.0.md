@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.0/ROADMAP-POST-v1.0.md"
 type: "document"
-community: "Community 1117"
+community: "Apple Platform Integration"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1117
+  - community/Apple_Platform_Integration
 ---
 
 # ROADMAP-POST-v1.0.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Post-v1.0.0 Roadmap]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1117
+#graphify/document #graphify/EXTRACTED #community/Apple_Platform_Integration

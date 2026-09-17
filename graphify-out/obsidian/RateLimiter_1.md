@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "Egress Filter & HTTP Proxy"
+community: "WebProxyConfig"
 location: "L95"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Egress_Filter__HTTP_Proxy
+  - community/WebProxyConfig
 ---
 
 # RateLimiter
 
 ## Connections
-- [[dot-__init__()_154]] - `calls` [EXTRACTED]
-- [[dot-__init__()_115]] - `method` [EXTRACTED]
-- [[dot-check()_6]] - `method` [EXTRACTED]
-- [[dot-reset()_1]] - `method` [EXTRACTED]
-- [[dot-test_rate_limiter_reset()]] - `calls` [EXTRACTED]
+- [[.__init__()_115]] - `method` [EXTRACTED]
+- [[.__init__()_154]] - `calls` [EXTRACTED]
+- [[.check()_6]] - `method` [EXTRACTED]
+- [[.reset()_1]] - `method` [EXTRACTED]
+- [[.test_rate_limiter_reset()]] - `calls` [EXTRACTED]
 - [[Simple in-memory per-domain rate limiter using sliding window.]] - `rationale_for` [EXTRACTED]
 - [[TestAllowlistMode]] - `uses` [INFERRED]
 - [[TestAuditChain_1]] - `uses` [INFERRED]
@@ -42,4 +42,4 @@ tags:
 - [[test_web_proxy.py]] - `imports` [EXTRACTED]
 - [[web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Egress_Filter__HTTP_Proxy
+#graphify/code #graphify/INFERRED #community/WebProxyConfig

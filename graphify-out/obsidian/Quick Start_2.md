@@ -1,20 +1,17 @@
 ---
-source_file: "skills/custom/securebrowser/README.md"
+source_file: "skills/openclaw/model-usage/SKILL.md"
 type: "document"
-community: "Community 151"
-location: "L38"
+community: "Common Queries"
+location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_151
+  - community/Common_Queries
 ---
 
-# Quick Start
+# Quick start
 
 ## Connections
-- [[1. Verify Installation]] - `contains` [EXTRACTED]
-- [[2. Configure Allowlist]] - `contains` [EXTRACTED]
-- [[3. Test Navigation]] - `contains` [EXTRACTED]
-- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
+- [[Model usage]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_151
+#graphify/document #graphify/EXTRACTED #community/Common_Queries

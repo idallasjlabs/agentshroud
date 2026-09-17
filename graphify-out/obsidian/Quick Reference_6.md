@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/00 - START HERE/Quick Reference.md"
 type: "document"
-community: "Community 253"
+community: "MiddlewareManager"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_253
+  - community/MiddlewareManager
 ---
 
 # Quick Reference.md
@@ -16,4 +16,4 @@ tags:
 - [[Quick Reference — AgentShroud]] - `contains` [EXTRACTED]
 - [[System Overview]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_253
+#graphify/document #graphify/EXTRACTED #community/MiddlewareManager

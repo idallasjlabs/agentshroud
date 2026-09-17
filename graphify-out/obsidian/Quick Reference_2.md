@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/OPENCLAW_SSH_SETUP.md"
 type: "document"
-community: "Community 199"
+community: "OpenClaw Bot SSH Configuration"
 location: "L375"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_199
+  - community/OpenClaw_Bot_SSH_Configuration
 ---
 
 # Quick Reference
@@ -18,4 +18,4 @@ tags:
 - [[Test Connection]] - `contains` [EXTRACTED]
 - [[🔐 Credentials in 1Password]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_199
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_SSH_Configuration

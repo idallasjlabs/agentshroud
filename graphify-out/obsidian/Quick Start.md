@@ -1,17 +1,20 @@
 ---
-source_file: "skills/openclaw/model-usage/SKILL.md"
+source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "Community 254"
-location: "L33"
+community: "SecureBrowser Skill"
+location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_254
+  - community/SecureBrowser_Skill
 ---
 
-# Quick start
+# Quick Start
 
 ## Connections
-- [[Model usage]] - `contains` [EXTRACTED]
+- [[1. Verify Installation]] - `contains` [EXTRACTED]
+- [[2. Configure Allowlist]] - `contains` [EXTRACTED]
+- [[3. Test Navigation]] - `contains` [EXTRACTED]
+- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_254
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill

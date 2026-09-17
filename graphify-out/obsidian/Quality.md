@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/openai-image-gen/SKILL.md"
 type: "document"
-community: "Community 367"
+community: "gen.py"
 location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_367
+  - community/genpy
 ---
 
 # Quality
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Model-Specific Parameters]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_367
+#graphify/document #graphify/EXTRACTED #community/genpy

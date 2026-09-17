@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/mcp/servers.json"
 type: "rationale"
-community: "Community 1639"
+community: "Rationale: agentshroud-gateway MCP server disabl"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1639
+  - community/Rationale_agentshroud-gateway_MCP_server_disabl
 ---
 
 # Rationale: agentshroud-gateway MCP server disabled (no /mcp route, crash-loop correlation)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[openclaw mcpservers.json (MCP server definitions)]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1639
+#graphify/rationale #graphify/EXTRACTED #community/Rationale_agentshroud-gateway_MCP_server_disabl

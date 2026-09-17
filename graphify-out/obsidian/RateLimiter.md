@@ -1,28 +1,28 @@
 ---
 source_file: "gateway/ingest_api/auth.py"
 type: "code"
-community: "Community 119"
+community: "RateLimiter"
 location: "L30"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_119
+  - community/RateLimiter
 ---
 
 # RateLimiter
 
 ## Connections
-- [[dot-__init__()_99]] - `calls` [EXTRACTED]
-- [[dot-__init__()_43]] - `method` [EXTRACTED]
-- [[dot-check()]] - `method` [EXTRACTED]
-- [[dot-test_collaborator_rate_limit_notice_falls_back_without_markdown()]] - `calls` [EXTRACTED]
-- [[dot-test_collaborator_rate_limit_notice_includes_retry_window()]] - `calls` [EXTRACTED]
-- [[dot-test_collaborator_rate_limit_notice_is_sent_for_each_limited_message()]] - `calls` [EXTRACTED]
-- [[dot-test_collaborator_rate_limit_notice_retries_next_message_when_send_fails()]] - `calls` [EXTRACTED]
-- [[dot-test_collaborator_rate_limit_resets_after_window()]] - `calls` [EXTRACTED]
-- [[dot-test_collaborator_rate_limit_retry_after_seconds_uses_window()]] - `calls` [EXTRACTED]
-- [[dot-test_collaborator_rate_limit_uses_user_id_when_chat_id_differs()]] - `calls` [EXTRACTED]
-- [[Any_67]] - `uses` [INFERRED]
+- [[.__init__()_43]] - `method` [EXTRACTED]
+- [[.__init__()_99]] - `calls` [EXTRACTED]
+- [[.check()]] - `method` [EXTRACTED]
+- [[.test_collaborator_rate_limit_notice_falls_back_without_markdown()]] - `calls` [EXTRACTED]
+- [[.test_collaborator_rate_limit_notice_includes_retry_window()]] - `calls` [EXTRACTED]
+- [[.test_collaborator_rate_limit_notice_is_sent_for_each_limited_message()]] - `calls` [EXTRACTED]
+- [[.test_collaborator_rate_limit_notice_retries_next_message_when_send_fails()]] - `calls` [EXTRACTED]
+- [[.test_collaborator_rate_limit_resets_after_window()]] - `calls` [EXTRACTED]
+- [[.test_collaborator_rate_limit_retry_after_seconds_uses_window()]] - `calls` [EXTRACTED]
+- [[.test_collaborator_rate_limit_uses_user_id_when_chat_id_differs()]] - `calls` [EXTRACTED]
+- [[Any_66]] - `uses` [INFERRED]
 - [[AsyncMock]] - `uses` [INFERRED]
 - [[BlockingPipeline]] - `uses` [INFERRED]
 - [[EncodingDetectingPipeline]] - `uses` [INFERRED]
@@ -60,4 +60,4 @@ tags:
 - [[test_security.py]] - `imports` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_119
+#graphify/code #graphify/INFERRED #community/RateLimiter

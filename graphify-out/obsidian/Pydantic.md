@@ -1,23 +1,19 @@
 ---
 source_file: "docs/vault/05 - Dependencies/pydantic.md"
 type: "document"
-community: "Community 1047"
-location: "L9"
+community: "All Dependencies.md"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1047
+  - community/All_Dependenciesmd
 ---
 
-# Pydantic
+# pydantic.md
 
 ## Connections
-- [[Field Validators]] - `contains` [EXTRACTED]
-- [[Key Configuration Models]] - `contains` [EXTRACTED]
-- [[Purpose_2]] - `contains` [EXTRACTED]
-- [[Related Notes_2]] - `contains` [EXTRACTED]
-- [[Where Used]] - `contains` [EXTRACTED]
-- [[pydantic_1]] - `contains` [EXTRACTED]
-- [[v2 vs v1]] - `contains` [EXTRACTED]
+- [[All Dependencies]] - `references` [EXTRACTED]
+- [[Pydantic]] - `contains` [EXTRACTED]
+- [[fastapi]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1047
+#graphify/document #graphify/EXTRACTED #community/All_Dependenciesmd

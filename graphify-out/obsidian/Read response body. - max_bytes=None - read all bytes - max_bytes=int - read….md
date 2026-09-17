@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/scripts/mcp_oauth_preflight.py"
 type: "rationale"
-community: "Community 91"
+community: "mcp_oauth_preflight.py"
 location: "L55"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_91
+  - community/mcp_oauth_preflightpy
 ---
 
 # Read response body. - max_bytes=None -> read all bytes - max_bytes=int -> read…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_read_body()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_91
+#graphify/rationale #graphify/EXTRACTED #community/mcp_oauth_preflightpy

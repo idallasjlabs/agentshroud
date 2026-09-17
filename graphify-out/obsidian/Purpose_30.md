@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-sav/README.md"
 type: "document"
-community: "Community 1208"
+community: ".agents/skills/i-cr/SKILL.md"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1208
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # Purpose
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[System Audit Vault]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1208
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "Community 388"
+community: "rbac_config.py"
 location: "L410"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_388
+  - community/rbac_configpy
 ---
 
 # Read persisted collaborator-removal exclusions from disk (Bug 1 fix).      Appli
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[load_removed_collaborator_ids()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_388
+#graphify/rationale #graphify/EXTRACTED #community/rbac_configpy

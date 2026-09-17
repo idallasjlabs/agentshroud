@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer.py"
 type: "rationale"
-community: "PII Sanitizer & Redaction"
+community: "TrustManager"
 location: "L163"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Sanitizer__Redaction
+  - community/TrustManager
 ---
 
 # Reconstruct the tool result with sanitized content
 
 ## Connections
-- [[dot-_reconstruct_result()]] - `rationale_for` [EXTRACTED]
+- [[._reconstruct_result()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer__Redaction
+#graphify/rationale #graphify/EXTRACTED #community/TrustManager
