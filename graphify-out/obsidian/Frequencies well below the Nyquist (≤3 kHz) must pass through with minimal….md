@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "Voice Gateway Test Fixtures"
+community: "test_voice_gateway.py"
 location: "L2031"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Voice_Gateway_Test_Fixtures
+  - community/test_voice_gatewaypy
 ---
 
 # Frequencies well below the Nyquist (≤3 kHz) must pass through with minimal…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_resample_passband_preserved()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Voice_Gateway_Test_Fixtures
+#graphify/rationale #graphify/EXTRACTED #community/test_voice_gatewaypy

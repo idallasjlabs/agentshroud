@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-aws/SKILL.md"
 type: "concept"
-community: "Community 299"
+community: "AWS Cloud Management & FinOps Agent"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_299
+  - community/AWS_Cloud_Management__FinOps_Agent
 ---
 
 # GSDE&G Team
@@ -14,4 +14,4 @@ tags:
 - [[AWS Cloud Management & FinOps Agent_2]] - `references` [EXTRACTED]
 - [[Audit Branch (Merge Regression Detection)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_299
+#graphify/concept #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent

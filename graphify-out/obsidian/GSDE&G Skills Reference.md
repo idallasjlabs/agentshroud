@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md"
 type: "document"
-community: "Community 280"
+community: "Skills by Category"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_280
+  - community/Skills_by_Category
 ---
 
 # GSDE&G Skills Reference
@@ -17,10 +17,10 @@ tags:
 - [[GitHub Workflow Integration]] - `contains` [EXTRACTED]
 - [[Production Testing Guidelines]] - `contains` [EXTRACTED]
 - [[Quick Reference When to Use Each Skill]] - `contains` [EXTRACTED]
-- [[Related Documentation]] - `contains` [EXTRACTED]
 - [[Skill Directory Structure]] - `contains` [EXTRACTED]
 - [[Skill Invocation Examples]] - `contains` [EXTRACTED]
 - [[Skills by Category]] - `contains` [EXTRACTED]
 - [[openclawskillsi-referenceSKILLS_GUIDE]] - `contains` [EXTRACTED]
+- [[📚 Created Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_280
+#graphify/document #graphify/EXTRACTED #community/Skills_by_Category

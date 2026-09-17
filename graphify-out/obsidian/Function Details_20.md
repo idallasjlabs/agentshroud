@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/egress_filter.py.md"
 type: "document"
-community: "Community 626"
+community: "EgressFilter"
 location: "L46"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_626
+  - community/EgressFilter
 ---
 
 # Function Details
@@ -18,4 +18,4 @@ tags:
 - [[EgressFilter.check(agent_id, destination, port)]] - `contains` [EXTRACTED]
 - [[EgressPolicy.matches_domain(domain)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_626
+#graphify/document #graphify/EXTRACTED #community/EgressFilter

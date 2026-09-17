@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/workspace/competitive-analysis.md"
 type: "concept"
-community: "Community 1349"
+community: "Gateway-Enforced Intel Verification (SCRUM-75)"
 tags:
   - graphify/concept
-  - graphify/EXTRACTED
-  - community/Community_1349
+  - graphify/INFERRED
+  - community/Gateway-Enforced_Intel_Verification_SCRUM-75
 ---
 
 # Gateway-Enforced Intel Verification (SCRUM-75)
@@ -14,4 +14,4 @@ tags:
 - [[Anti-Security-Theater Principle]] - `conceptually_related_to` [INFERRED]
 - [[Competitive Intelligence Report Standard Prompt (Hermes)]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1349
+#graphify/concept #graphify/INFERRED #community/Gateway-Enforced_Intel_Verification_SCRUM-75

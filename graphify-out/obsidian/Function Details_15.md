@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/version_routes.py.md"
 type: "document"
-community: "Community 581"
+community: "version_routes.py"
 location: "L37"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_581
+  - community/version_routespy
 ---
 
 # Function Details
@@ -18,4 +18,4 @@ tags:
 - [[upgrade_version(request)]] - `contains` [EXTRACTED]
 - [[version_routes.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_581
+#graphify/document #graphify/EXTRACTED #community/version_routespy

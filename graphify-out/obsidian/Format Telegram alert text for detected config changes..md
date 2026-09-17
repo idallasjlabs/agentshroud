@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/config_integrity.py"
 type: "rationale"
-community: "Community 219"
+community: "ConfigIntegrityMonitor"
 location: "L158"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_219
+  - community/ConfigIntegrityMonitor
 ---
 
 # Format Telegram alert text for detected config changes.
 
 ## Connections
-- [[dot-format_alert_text()]] - `rationale_for` [EXTRACTED]
+- [[.format_alert_text()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_219
+#graphify/rationale #graphify/EXTRACTED #community/ConfigIntegrityMonitor

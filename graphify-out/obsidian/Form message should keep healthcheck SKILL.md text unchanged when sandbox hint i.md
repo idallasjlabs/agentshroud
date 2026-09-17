@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Community 85"
+community: ".test_healthcheck_skill_message_without_sandbox_"
 location: "L1707"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_85
+  - community/test_healthcheck_skill_message_without_sandbox_
 ---
 
 # Form message should keep healthcheck SKILL.md text unchanged when sandbox hint i
 
 ## Connections
-- [[dot-test_healthcheck_skill_message_without_sandbox_is_not_rewritten_for_form_message()]] - `rationale_for` [EXTRACTED]
+- [[.test_healthcheck_skill_message_without_sandbox_is_not_rewritten_for_form_message()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_85
+#graphify/rationale #graphify/EXTRACTED #community/test_healthcheck_skill_message_without_sandbox_

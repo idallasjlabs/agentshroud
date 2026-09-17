@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/ingest_api/email_service.py"
 type: "code"
-community: "Community 188"
+community: "GatewayEmailService"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_188
+  - community/GatewayEmailService
 ---
 
 # GatewayEmailService
 
 ## Connections
-- [[dot-__init__()_78]] - `method` [EXTRACTED]
-- [[dot-build_message()]] - `method` [EXTRACTED]
-- [[dot-send()]] - `method` [EXTRACTED]
-- [[dot-sender()]] - `method` [EXTRACTED]
+- [[.__init__()_78]] - `method` [EXTRACTED]
+- [[.build_message()]] - `method` [EXTRACTED]
+- [[.send()]] - `method` [EXTRACTED]
+- [[.sender()]] - `method` [EXTRACTED]
 - [[GatewayEmailService]] - `uses` [INFERRED]
 - [[Sends owner-comms email over an injectable SMTP transport.]] - `rationale_for` [EXTRACTED]
 - [[TestBuildMessage]] - `uses` [INFERRED]
@@ -29,4 +29,4 @@ tags:
 - [[test_gateway_email_service.py]] - `imports` [EXTRACTED]
 - [[test_sender_property()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_188
+#graphify/code #graphify/EXTRACTED #community/GatewayEmailService

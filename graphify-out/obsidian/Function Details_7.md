@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/resource_guard.py.md"
 type: "document"
-community: "Community 517"
+community: "Function Details"
 location: "L37"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_517
+  - community/Function_Details
 ---
 
 # Function Details
@@ -22,4 +22,4 @@ tags:
 - [[ResourceGuard.start_request_tracking(agent_id)]] - `contains` [EXTRACTED]
 - [[resource_guard.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_517
+#graphify/document #graphify/EXTRACTED #community/Function_Details

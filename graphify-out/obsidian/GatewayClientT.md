@@ -1,19 +1,19 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "Community 36"
+community: "main.rs"
 location: "L340"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_36
+  - community/mainrs
 ---
 
 # GatewayClient<T>
 
 ## Connections
-- [[dot-get()_2]] - `method` [EXTRACTED]
-- [[dot-new()]] - `method` [EXTRACTED]
-- [[dot-post()_1]] - `method` [EXTRACTED]
+- [[.get()_2]] - `method` [EXTRACTED]
+- [[.new()]] - `method` [EXTRACTED]
+- [[.post()_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_36
+#graphify/code #graphify/EXTRACTED #community/mainrs

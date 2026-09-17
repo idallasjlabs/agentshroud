@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-mc/SKILL.md"
 type: "document"
-community: "Community 779"
+community: "GSDE&G Development Master Checklist"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_779
+  - community/GSDEG_Development_Master_Checklist
 ---
 
 # GSDE&G Development Master Checklist
@@ -22,6 +22,6 @@ tags:
 - [[Phase 7 · Deploy  → `psSKILL.md`_1]] - `contains` [EXTRACTED]
 - [[Quick Commands_1]] - `contains` [EXTRACTED]
 - [[Skill Index_1]] - `contains` [EXTRACTED]
-- [[hermesskillsi-mcSKILL]] - `contains` [EXTRACTED]
+- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_779
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist

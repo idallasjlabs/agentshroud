@@ -1,11 +1,11 @@
 ---
 source_file: "docs/flows/state-diagrams.md"
 type: "concept"
-community: "Community 1143"
+community: "AgentShroud State Diagrams (doc)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1143
+  - community/AgentShroud_State_Diagrams_doc
 ---
 
 # Gateway Operational Modes (MONITOR, ENFORCE, LOCKDOWN, EMERGENCY, RECOVERY)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud State Diagrams (doc)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1143
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_State_Diagrams_doc

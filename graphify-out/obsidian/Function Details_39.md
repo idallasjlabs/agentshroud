@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/consent_framework.py.md"
 type: "document"
-community: "Community 709"
+community: "consent_framework.py"
 location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_709
+  - community/consent_frameworkpy
 ---
 
 # Function Details
@@ -18,4 +18,4 @@ tags:
 - [[ConsentFramework.validate_config(config)]] - `contains` [EXTRACTED]
 - [[consent_framework.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_709
+#graphify/document #graphify/EXTRACTED #community/consent_frameworkpy

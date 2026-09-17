@@ -1,33 +1,33 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "Approval Queue (WebSocket)"
+community: "SSHProxy"
 location: "L296"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Approval_Queue_WebSocket
+  - community/SSHProxy
 ---
 
 # GatewayConfig
 
 ## Connections
-- [[dot-disabled_client()]] - `calls` [EXTRACTED]
-- [[dot-no_approval_client()]] - `calls` [EXTRACTED]
-- [[dot-test_all_production_tool_overrides_meet_floor()]] - `calls` [EXTRACTED]
-- [[dot-test_config_with_tool_result_pii()]] - `calls` [EXTRACTED]
-- [[dot-test_get_module_mode_no_env_override()]] - `calls` [EXTRACTED]
-- [[dot-test_global_monitor_override_downgrades_all()]] - `calls` [EXTRACTED]
+- [[.disabled_client()]] - `calls` [EXTRACTED]
+- [[.no_approval_client()]] - `calls` [EXTRACTED]
+- [[.test_all_production_tool_overrides_meet_floor()]] - `calls` [EXTRACTED]
+- [[.test_config_with_tool_result_pii()]] - `calls` [EXTRACTED]
+- [[.test_get_module_mode_no_env_override()]] - `calls` [EXTRACTED]
+- [[.test_global_monitor_override_downgrades_all()]] - `calls` [EXTRACTED]
 - [[AppState]] - `uses` [INFERRED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[BotConfig]] - `uses` [INFERRED]
 - [[Complete gateway configuration]] - `rationale_for` [EXTRACTED]
 - [[GatewayConfig]] - `uses` [INFERRED]
 - [[GatewayConfig_1]] - `uses` [INFERRED]
-- [[GatewayConfig_3]] - `uses` [INFERRED]
 - [[GatewayConfig_2]] - `uses` [INFERRED]
+- [[GatewayConfig_3]] - `uses` [INFERRED]
 - [[PIISanitizer_1]] - `uses` [INFERRED]
-- [[Path_29]] - `uses` [INFERRED]
+- [[Path_19]] - `uses` [INFERRED]
 - [[RateLimiter]] - `uses` [INFERRED]
 - [[SSHConfig_2]] - `uses` [INFERRED]
 - [[TestConfidenceFloor]] - `uses` [INFERRED]
@@ -78,4 +78,4 @@ tags:
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 - [[test_tool_result_pii.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Approval_Queue_WebSocket
+#graphify/code #graphify/INFERRED #community/SSHProxy

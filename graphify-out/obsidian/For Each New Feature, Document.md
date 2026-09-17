@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md"
 type: "document"
-community: "Community 198"
+community: "Development Workflow: Read-Only Filesystem Strat"
 location: "L60"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_198
+  - community/Development_Workflow_Read-Only_Filesystem_Strat
 ---
 
 # For Each New Feature, Document:
@@ -17,4 +17,4 @@ tags:
 - [[3. What's System-Level]] - `contains` [EXTRACTED]
 - [[Read-Only Compatibility Checklist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_198
+#graphify/document #graphify/EXTRACTED #community/Development_Workflow_Read-Only_Filesystem_Strat

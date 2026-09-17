@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/forwarder.py"
 type: "rationale"
-community: "Proxy Sidecar & Forwarder"
+community: "test_e2e_proxy.py"
 location: "L79"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Proxy_Sidecar__Forwarder
+  - community/test_e2e_proxypy
 ---
 
 # Forward a request to the OpenClaw backend.
 
 ## Connections
-- [[dot-forward()_1]] - `rationale_for` [EXTRACTED]
+- [[.forward()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Proxy_Sidecar__Forwarder
+#graphify/rationale #graphify/EXTRACTED #community/test_e2e_proxypy

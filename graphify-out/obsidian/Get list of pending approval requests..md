@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "rationale"
-community: "Community 88"
+community: "EgressApprovalQueue"
 location: "L587"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_88
+  - community/EgressApprovalQueue
 ---
 
 # Get list of pending approval requests.
 
 ## Connections
-- [[dot-get_pending_requests()]] - `rationale_for` [EXTRACTED]
+- [[.get_pending_requests()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_88
+#graphify/rationale #graphify/EXTRACTED #community/EgressApprovalQueue

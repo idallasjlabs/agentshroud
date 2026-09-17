@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/mcp_audit.py"
 type: "rationale"
-community: "Community 218"
+community: "MCPAuditTrail"
 location: "L270"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_218
+  - community/MCPAuditTrail
 ---
 
 # Generate an MCP audit report summary.
 
 ## Connections
-- [[dot-generate_report()]] - `rationale_for` [EXTRACTED]
+- [[.generate_report()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_218
+#graphify/rationale #graphify/EXTRACTED #community/MCPAuditTrail

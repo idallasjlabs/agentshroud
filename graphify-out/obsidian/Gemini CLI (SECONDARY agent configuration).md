@@ -1,14 +1,14 @@
 ---
 source_file: ".llm_settings/docs/AI_TOOLS_CONFIGURATION_GUIDE.md"
 type: "concept"
-community: "Community 1984"
+community: "Gemini CLI (SECONDARY agent configuration)"
 location: "Section 2"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1984
+  - community/Gemini_CLI_SECONDARY_agent_configuration
 ---
 
 # Gemini CLI (SECONDARY agent configuration)
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1984
+#graphify/concept #graphify/EXTRACTED #community/Gemini_CLI_SECONDARY_agent_configuration
