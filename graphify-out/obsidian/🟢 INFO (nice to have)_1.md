@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-03-05.md"
 type: "document"
-community: "Community 807"
+community: "🟢 INFO (nice to have)"
 location: "L76"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_807
+  - community/_INFO_nice_to_have
 ---
 
 # 🟢 INFO (nice to have)
@@ -18,4 +18,4 @@ tags:
 - [[I3 Owner ID still hardcoded (improved)]] - `contains` [EXTRACTED]
 - [[I4 Copyright headers added consistently]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_807
+#graphify/document #graphify/EXTRACTED #community/_INFO_nice_to_have

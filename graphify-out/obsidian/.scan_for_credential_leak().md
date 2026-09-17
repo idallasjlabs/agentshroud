@@ -1,0 +1,18 @@
+---
+source_file: "gateway/security/credential_injector.py"
+type: "code"
+community: "CredentialInjector"
+location: "L229"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/CredentialInjector
+---
+
+# .scan_for_credential_leak()
+
+## Connections
+- [[CredentialInjector]] - `method` [EXTRACTED]
+- [[Scan outbound content for credential patterns. Returns description of detected…]] - `rationale_for` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/CredentialInjector
