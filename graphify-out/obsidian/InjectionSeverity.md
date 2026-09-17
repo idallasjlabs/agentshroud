@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/tool_result_injection.py"
 type: "code"
-community: "Community 101"
+community: "InjectionSeverity"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_101
+  - community/InjectionSeverity
 ---
 
 # InjectionSeverity
 
 ## Connections
-- [[dot-_detect_encoded_injection()]] - `references` [EXTRACTED]
-- [[dot-_detect_unicode_obfuscation()]] - `references` [EXTRACTED]
+- [[._detect_encoded_injection()]] - `references` [EXTRACTED]
+- [[._detect_unicode_obfuscation()]] - `references` [EXTRACTED]
 - [[Enum_3]] - `inherits` [EXTRACTED]
 - [[TestCleanContent]] - `uses` [INFERRED]
 - [[TestEncodedInjection]] - `uses` [INFERRED]
@@ -27,4 +27,4 @@ tags:
 - [[test_tool_result_injection.py]] - `imports` [EXTRACTED]
 - [[tool_result_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_101
+#graphify/code #graphify/EXTRACTED #community/InjectionSeverity

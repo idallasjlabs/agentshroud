@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-01-c4-context.svg"
 type: "image"
-community: "Community 420"
+community: "AgentShroud (system, C4 context)"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Community_420
+  - community/AgentShroud_system_C4_context
 ---
 
 # Isaiah Jefferson (Architect/Owner)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud (system, C4 context)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Community_420
+#graphify/image #graphify/EXTRACTED #community/AgentShroud_system_C4_context

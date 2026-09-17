@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/cross_bot_trust_ledger.py"
 type: "code"
-community: "Cross-Bot Trust & A2A Governance"
+community: "TrustConfig"
 location: "L108"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Cross-Bot_Trust__A2A_Governance
+  - community/TrustConfig
 ---
 
 # IncidentRecord
 
 ## Connections
-- [[dot-get_incidents()]] - `references` [EXTRACTED]
-- [[dot-record_incident()]] - `references` [EXTRACTED]
+- [[.get_incidents()]] - `references` [EXTRACTED]
+- [[.record_incident()]] - `references` [EXTRACTED]
 - [[A single cross-bot incident recorded in the ledger.]] - `rationale_for` [EXTRACTED]
 - [[CrossBotTrustLedger]] - `uses` [INFERRED]
 - [[TestBotIncidentSeverity]] - `uses` [INFERRED]
@@ -24,9 +24,9 @@ tags:
 - [[TestIncidentPropagation]] - `uses` [INFERRED]
 - [[TestTrustDecayPolicyValidation]] - `uses` [INFERRED]
 - [[TrustDecayPolicy_1]] - `uses` [INFERRED]
-- [[TrustManager_3]] - `uses` [INFERRED]
 - [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_3]] - `uses` [INFERRED]
 - [[cross_bot_trust_ledger.py]] - `contains` [EXTRACTED]
 - [[test_cross_bot_trust_ledger.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Cross-Bot_Trust__A2A_Governance
+#graphify/code #graphify/INFERRED #community/TrustConfig

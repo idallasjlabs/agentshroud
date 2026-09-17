@@ -1,17 +1,21 @@
 ---
-source_file: "docs/diagrams/README.md"
+source_file: "branding/INDEX.md"
 type: "document"
-community: "Community 442"
-location: "L10"
+community: "branding/README.md"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_442
+  - community/branding/READMEmd
 ---
 
-# Index
+# INDEX.md
 
 ## Connections
-- [[AgentShroud — Diagram Library]] - `contains` [EXTRACTED]
+- [[AgentShroud Blue — 1583f0]] - `references` [EXTRACTED]
+- [[AgentShroud Branding Assets Index]] - `contains` [EXTRACTED]
+- [[QUICK-REFERENCE]] - `references` [EXTRACTED]
+- [[brand-guidelines]] - `references` [EXTRACTED]
+- [[typography]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_442
+#graphify/document #graphify/EXTRACTED #community/branding/READMEmd

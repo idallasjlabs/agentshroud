@@ -1,11 +1,11 @@
 ---
 source_file: "firmware/voice-terminal/components/lvgl_kawaii_face/examples/basic_cycle/main/CMakeLists.txt"
 type: "code"
-community: "Community 945"
+community: "LVGL Kawaii Face Component CMakeLists"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_945
+  - community/LVGL_Kawaii_Face_Component_CMakeLists
 ---
 
 # Kawaii Face Basic Cycle Main Component CMakeLists
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[LVGL Kawaii Face Component CMakeLists]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_945
+#graphify/code #graphify/EXTRACTED #community/LVGL_Kawaii_Face_Component_CMakeLists

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/incident-response.md"
 type: "document"
-community: "Community 599"
+community: "Incident Response Playbook — AgentShroud"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_599
+  - community/Incident_Response_Playbook__AgentShroud
 ---
 
 # Incident Response Playbook — AgentShroud
@@ -22,4 +22,4 @@ tags:
 - [[Communication Templates]] - `contains` [EXTRACTED]
 - [[securityincident-response]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_599
+#graphify/document #graphify/EXTRACTED #community/Incident_Response_Playbook__AgentShroud

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "document"
-community: "Community 234"
+community: "IV. System Architecture"
 location: "L92"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_234
+  - community/IV_System_Architecture
 ---
 
 # IV-C. Middleware Manager
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[IV. System Architecture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_234
+#graphify/document #graphify/EXTRACTED #community/IV_System_Architecture

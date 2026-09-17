@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Community 340"
+community: "AgentShroud Setup Guide"
 location: "L490"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_340
+  - community/AgentShroud_Setup_Guide
 ---
 
 # Important Notes
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[1Password Integration_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_340
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Setup_Guide

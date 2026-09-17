@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-athena/SKILL.md"
 type: "document"
-community: "Community 722"
+community: "Apollo — Audio Systems Producer"
 location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_722
+  - community/Apollo__Audio_Systems_Producer
 ---
 
 # Input Requirements
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Athena — Knowledge Distiller_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_722
+#graphify/document #graphify/EXTRACTED #community/Apollo__Audio_Systems_Producer

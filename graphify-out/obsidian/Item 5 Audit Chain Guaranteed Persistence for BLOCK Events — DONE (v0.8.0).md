@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md"
 type: "document"
-community: "Community 1116"
+community: "DELIVERABLE 3 — v0.8.0 Implementation Items"
 location: "L264"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1116
+  - community/DELIVERABLE_3__v080_Implementation_Items
 ---
 
 # Item 5: Audit Chain Guaranteed Persistence for BLOCK Events — **DONE (v0.8.0)**
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[DELIVERABLE 3 — v0.8.0 Implementation Items]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1116
+#graphify/document #graphify/EXTRACTED #community/DELIVERABLE_3__v080_Implementation_Items

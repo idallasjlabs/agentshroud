@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "rationale"
-community: "Community 82"
+community: "TestPerAgentUpstreamChecks"
 location: "L704"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_82
+  - community/TestPerAgentUpstreamChecks
 ---
 
 # If the per-agent source config is missing, the label falls back gracefully.
 
 ## Connections
-- [[dot-test_agent_label_falls_back_when_source_missing()]] - `rationale_for` [EXTRACTED]
+- [[.test_agent_label_falls_back_when_source_missing()]] - `rationale_for` [EXTRACTED]
+- [[.test_agent_label_falls_back_when_source_missing()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_82
+#graphify/rationale #graphify/EXTRACTED #community/TestPerAgentUpstreamChecks

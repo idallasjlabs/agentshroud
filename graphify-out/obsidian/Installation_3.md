@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/05 - Dependencies/clamav.md"
 type: "document"
-community: "Community 612"
+community: "clamav.md"
 location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_612
+  - community/clamavmd
 ---
 
 # Installation
 
 ## Connections
-- [[ClamAV_1]] - `contains` [EXTRACTED]
+- [[ClamAV]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_612
+#graphify/document #graphify/EXTRACTED #community/clamavmd

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/colima-docker-guide.md"
 type: "document"
-community: "Community 150"
+community: "Colima & Docker Operations Guide — AgentShroud"
 location: "L211"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_150
+  - community/Colima__Docker_Operations_Guide__AgentShroud
 ---
 
 # Inspect a volume (find its mount path in the VM)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[6. Volume Management]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_150
+#graphify/document #graphify/EXTRACTED #community/Colima__Docker_Operations_Guide__AgentShroud
