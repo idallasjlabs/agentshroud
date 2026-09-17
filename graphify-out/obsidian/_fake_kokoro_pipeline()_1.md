@@ -1,0 +1,21 @@
+---
+source_file: "gateway/tests/test_voice_gateway.py"
+type: "code"
+community: "_fake_kokoro_pipeline()"
+location: "L39"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/_fake_kokoro_pipeline
+---
+
+# _fake_kokoro_pipeline()
+
+## Connections
+- [[Stand-in for kokoro.KPipeline a callable yielding (graphemes, phonemes,     aud]] - `rationale_for` [EXTRACTED]
+- [[test_tts_resamples_24000_to_16000()_1]] - `calls` [EXTRACTED]
+- [[test_tts_synthesize_passes_normalised_text_to_kokoro()_1]] - `calls` [EXTRACTED]
+- [[test_tts_synthesize_via_kokoro()_1]] - `calls` [EXTRACTED]
+- [[test_voice_gateway.py_1]] - `contains` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/_fake_kokoro_pipeline

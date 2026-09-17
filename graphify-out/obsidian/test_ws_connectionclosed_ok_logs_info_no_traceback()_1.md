@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_voice_gateway.py"
+type: "code"
+community: "test_voice_gateway.py"
+location: "L1739"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/test_voice_gatewaypy
+---
+
+# test_ws_connectionclosed_ok_logs_info_no_traceback()
+
+## Connections
+- [[ConnectionClosedOK (WS code 10001001 — clean websockets-library close path)]] - `rationale_for` [EXTRACTED]
+- [[_run_disconnect_test()_1]] - `calls` [EXTRACTED]
+- [[test_voice_gateway.py_1]] - `contains` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy

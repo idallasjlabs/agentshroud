@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_voice_gateway.py"
+type: "code"
+community: "test_voice_gateway.py"
+location: "L2685"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/test_voice_gatewaypy
+---
+
+# test_answer_volume_query_unknown_before_any_set()
+
+## Connections
+- [[Before any set, the read query reports an unknown-state calibration hint.]] - `rationale_for` [EXTRACTED]
+- [[test_voice_gateway.py_1]] - `contains` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy
