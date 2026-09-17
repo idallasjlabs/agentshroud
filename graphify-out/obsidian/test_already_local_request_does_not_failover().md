@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_failover.py"
 type: "code"
-community: "Community 233"
+community: "test_llm_proxy_failover.py"
 location: "L308"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_233
+  - community/test_llm_proxy_failoverpy
 ---
 
 # test_already_local_request_does_not_failover()
@@ -16,4 +16,4 @@ tags:
 - [[make_proxy()_1]] - `calls` [EXTRACTED]
 - [[test_llm_proxy_failover.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_233
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_failoverpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_queue.py"
 type: "code"
-community: "Community 38"
+community: "test_approval_queue.py"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_38
+  - community/test_approval_queuepy
 ---
 
 # test_decide_approval_approve()
@@ -16,4 +16,4 @@ tags:
 - [[Test approving a pending request]] - `rationale_for` [EXTRACTED]
 - [[test_approval_queue.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_38
+#graphify/code #graphify/EXTRACTED #community/test_approval_queuepy

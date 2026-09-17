@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_context_guard.py"
 type: "code"
-community: "Session Manager & PII/Context Guard"
+community: "check_message()"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Session_Manager__PII/Context_Guard
+  - community/check_message
 ---
 
 # test_context_guard.py
@@ -18,4 +18,4 @@ tags:
 - [[TestSourceTagging]] - `contains` [EXTRACTED]
 - [[check_message()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Session_Manager__PII/Context_Guard
+#graphify/code #graphify/EXTRACTED #community/check_message

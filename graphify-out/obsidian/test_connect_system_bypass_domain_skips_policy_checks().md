@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy.py"
 type: "code"
-community: "Community 72"
+community: "test_http_proxy.py"
 location: "L218"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_72
+  - community/test_http_proxypy
 ---
 
 # test_connect_system_bypass_domain_skips_policy_checks()
@@ -19,4 +19,4 @@ tags:
 - [[_make_stream()_1]] - `calls` [EXTRACTED]
 - [[test_http_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_72
+#graphify/code #graphify/EXTRACTED #community/test_http_proxypy

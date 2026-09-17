@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/smoke.d/test-sunday-upgrade-scan.sh"
 type: "code"
-community: "Community 1030"
+community: "sunday_run_scan_gate"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1030
+  - community/sunday_run_scan_gate
 ---
 
 # test-sunday-upgrade-scan.sh script
@@ -20,4 +20,4 @@ tags:
 - [[test-sunday-upgrade-scan.sh]] - `contains` [EXTRACTED]
 - [[write_fake]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1030
+#graphify/code #graphify/EXTRACTED #community/sunday_run_scan_gate

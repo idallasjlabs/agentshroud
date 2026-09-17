@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "Community 62"
+community: "HTTPConnectProxy"
 location: "L767"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_62
+  - community/HTTPConnectProxy
 ---
 
 # test_clamav_scan_unavailable_degrades_silently()
@@ -17,4 +17,4 @@ tags:
 - [[clamscan binary missing (sidecar down) - no exception, temp file removed.]] - `rationale_for` [EXTRACTED]
 - [[test_http_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_62
+#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_gateway_relay.py"
 type: "code"
-community: "Community 894"
+community: "TelegramGatewayRelay"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_894
+  - community/TelegramGatewayRelay
 ---
 
 # telegram_gateway_relay.py
@@ -16,4 +16,4 @@ tags:
 - [[TelegramSendResult]] - `contains` [EXTRACTED]
 - [[telegram_proxy.py]] - `semantically_similar_to` [AMBIGUOUS]
 
-#graphify/code #graphify/EXTRACTED #community/Community_894
+#graphify/code #graphify/EXTRACTED #community/TelegramGatewayRelay

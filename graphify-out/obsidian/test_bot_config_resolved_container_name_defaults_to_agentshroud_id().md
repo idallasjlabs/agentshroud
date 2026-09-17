@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config.py"
 type: "code"
-community: "Community 180"
+community: "BotConfig"
 location: "L78"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_180
+  - community/BotConfig
 ---
 
 # test_bot_config_resolved_container_name_defaults_to_agentshroud_id()
@@ -16,4 +16,4 @@ tags:
 - [[No explicit container_name — derives 'agentshroud-{id}' (openclaw's case).]] - `rationale_for` [EXTRACTED]
 - [[test_config.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_180
+#graphify/code #graphify/EXTRACTED #community/BotConfig

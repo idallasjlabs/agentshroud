@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_tracker.py"
 type: "code"
-community: "Community 102"
+community: "CollaboratorActivityTracker"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_102
+  - community/CollaboratorActivityTracker
 ---
 
 # test_collaborator_tracker.py
@@ -53,4 +53,4 @@ tags:
 - [[test_webhook_receiver_passes_agent_id_as_bot_id()]] - `contains` [EXTRACTED]
 - [[tracker()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_102
+#graphify/code #graphify/EXTRACTED #community/CollaboratorActivityTracker

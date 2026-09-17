@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_queue.py"
 type: "code"
-community: "Community 38"
+community: "test_approval_queue.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_38
+  - community/test_approval_queuepy
 ---
 
 # test_approval_queue.py
@@ -43,4 +43,4 @@ tags:
 - [[test_websocket_connect()]] - `contains` [EXTRACTED]
 - [[test_websocket_disconnect()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_38
+#graphify/code #graphify/EXTRACTED #community/test_approval_queuepy

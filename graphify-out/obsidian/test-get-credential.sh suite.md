@@ -1,11 +1,11 @@
 ---
 source_file: "docker/tests/test-get-credential.sh"
 type: "code"
-community: "Community 379"
+community: "setup-secrets.sh"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_379
+  - community/setup-secretssh
 ---
 
 # test-get-credential.sh suite
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[get-credential.sh dispatcher]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_379
+#graphify/code #graphify/EXTRACTED #community/setup-secretssh

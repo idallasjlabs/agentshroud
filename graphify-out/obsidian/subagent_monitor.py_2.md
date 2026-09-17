@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md"
 type: "document"
-community: "Community 549"
+community: "Function Details"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_549
+  - community/Function_Details
 ---
 
 # subagent_monitor.py
@@ -17,8 +17,8 @@ tags:
 - [[Key Classes  Functions_13]] - `contains` [EXTRACTED]
 - [[Purpose_138]] - `contains` [EXTRACTED]
 - [[Related_17]] - `contains` [EXTRACTED]
-- [[Responsibilities_15]] - `contains` [EXTRACTED]
+- [[Responsibilities_14]] - `contains` [EXTRACTED]
 - [[Threat Model_13]] - `contains` [EXTRACTED]
 - [[subagent_monitor.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_549
+#graphify/document #graphify/EXTRACTED #community/Function_Details

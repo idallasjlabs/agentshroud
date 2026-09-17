@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dashboard.py"
 type: "code"
-community: "Community 65"
+community: "test_dashboard.py"
 location: "L311"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_65
+  - community/test_dashboardpy
 ---
 
 # test_build_activity_entries_from_contributor_logs()
@@ -15,4 +15,4 @@ tags:
 - [[_build_activity_entries_from_contributor_logs()]] - `calls` [EXTRACTED]
 - [[test_dashboard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_65
+#graphify/code #graphify/EXTRACTED #community/test_dashboardpy
