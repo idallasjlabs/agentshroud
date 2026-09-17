@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "rationale"
-community: "Proxy Sidecar & Forwarder"
+community: "AuditChain"
 location: "L567"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Proxy_Sidecar__Forwarder
+  - community/AuditChain
 ---
 
 # Verify single-entry chain is valid.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_audit_chain_single_entry()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Proxy_Sidecar__Forwarder
+#graphify/rationale #graphify/EXTRACTED #community/AuditChain

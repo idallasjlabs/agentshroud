@@ -1,12 +1,12 @@
 ---
 source_file: "docker/SYSTEM-INSTRUCTIONS-SECURITY.md"
 type: "document"
-community: "Community 351"
+community: "System Instructions: Credential Security (Ultra-"
 location: "L304"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_351
+  - community/System_Instructions_Credential_Security_Ultra-
 ---
 
 # Via Telegram
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[💬 Example Conversations]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_351
+#graphify/document #graphify/EXTRACTED #community/System_Instructions_Credential_Security_Ultra-

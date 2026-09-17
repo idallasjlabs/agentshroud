@@ -1,36 +1,36 @@
 ---
 source_file: "gateway/proxy/web_config.py"
 type: "code"
-community: "Egress Filter & HTTP Proxy"
+community: "WebProxyConfig"
 location: "L31"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Egress_Filter__HTTP_Proxy
+  - graphify/INFERRED
+  - community/WebProxyConfig
 ---
 
 # WebProxyConfig
 
 ## Connections
-- [[dot-__init__()_114]] - `calls` [EXTRACTED]
-- [[dot-allowlist_config()]] - `calls` [EXTRACTED]
-- [[dot-get_domain_settings()]] - `method` [EXTRACTED]
-- [[dot-is_domain_allowed()]] - `method` [EXTRACTED]
-- [[dot-is_domain_denied()]] - `method` [EXTRACTED]
-- [[dot-test_case_insensitive()_1]] - `calls` [EXTRACTED]
-- [[dot-test_custom_denylist()_1]] - `calls` [EXTRACTED]
-- [[dot-test_custom_domain_size_limit()]] - `calls` [EXTRACTED]
-- [[dot-test_default_mode_is_denylist()]] - `calls` [EXTRACTED]
-- [[dot-test_different_domains_independent()]] - `calls` [EXTRACTED]
-- [[dot-test_empty_allowlist_blocks_everything()]] - `calls` [EXTRACTED]
-- [[dot-test_exact_match()_1]] - `calls` [EXTRACTED]
-- [[dot-test_get_domain_settings_custom()]] - `calls` [EXTRACTED]
-- [[dot-test_rate_limit_blocks_excess()]] - `calls` [EXTRACTED]
-- [[dot-test_wildcard_does_not_match_other_root()]] - `calls` [EXTRACTED]
-- [[dot-test_wildcard_domain_settings()]] - `calls` [EXTRACTED]
-- [[dot-test_wildcard_matches_root_domain()]] - `calls` [EXTRACTED]
-- [[dot-test_wildcard_matches_subdomain()]] - `calls` [EXTRACTED]
-- [[Any_81]] - `uses` [INFERRED]
+- [[.__init__()_114]] - `calls` [EXTRACTED]
+- [[.allowlist_config()]] - `calls` [EXTRACTED]
+- [[.get_domain_settings()]] - `method` [EXTRACTED]
+- [[.is_domain_allowed()]] - `method` [EXTRACTED]
+- [[.is_domain_denied()]] - `method` [EXTRACTED]
+- [[.test_case_insensitive()_1]] - `calls` [EXTRACTED]
+- [[.test_custom_denylist()_1]] - `calls` [EXTRACTED]
+- [[.test_custom_domain_size_limit()]] - `calls` [EXTRACTED]
+- [[.test_default_mode_is_denylist()]] - `calls` [EXTRACTED]
+- [[.test_different_domains_independent()]] - `calls` [EXTRACTED]
+- [[.test_empty_allowlist_blocks_everything()]] - `calls` [EXTRACTED]
+- [[.test_exact_match()_1]] - `calls` [EXTRACTED]
+- [[.test_get_domain_settings_custom()]] - `calls` [EXTRACTED]
+- [[.test_rate_limit_blocks_excess()]] - `calls` [EXTRACTED]
+- [[.test_wildcard_does_not_match_other_root()]] - `calls` [EXTRACTED]
+- [[.test_wildcard_domain_settings()]] - `calls` [EXTRACTED]
+- [[.test_wildcard_matches_root_domain()]] - `calls` [EXTRACTED]
+- [[.test_wildcard_matches_subdomain()]] - `calls` [EXTRACTED]
+- [[Any_80]] - `uses` [INFERRED]
 - [[Configuration for the web traffic proxy.      Default-allow all URLs pass unles]] - `rationale_for` [EXTRACTED]
 - [[EgressFilter_2]] - `uses` [INFERRED]
 - [[HTTPConnectProxy]] - `uses` [INFERRED]
@@ -59,8 +59,8 @@ tags:
 - [[TestZeroWidthAttacks]] - `uses` [INFERRED]
 - [[URLAnalyzer]] - `uses` [INFERRED]
 - [[WebContentScanner_1]] - `uses` [INFERRED]
-- [[WebProxy_1]] - `uses` [INFERRED]
 - [[WebProxy]] - `uses` [INFERRED]
+- [[WebProxy_1]] - `uses` [INFERRED]
 - [[WebProxyConfig_1]] - `uses` [INFERRED]
 - [[WebProxyResult]] - `uses` [INFERRED]
 - [[_CloseRaisesTargetWriter]] - `uses` [INFERRED]
@@ -95,4 +95,4 @@ tags:
 - [[web_config.py]] - `contains` [EXTRACTED]
 - [[web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress_Filter__HTTP_Proxy
+#graphify/code #graphify/INFERRED #community/WebProxyConfig

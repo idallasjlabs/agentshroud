@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-apollo/SKILL.md"
 type: "concept"
-community: "Community 1854"
+community: "Vulcan (i-vulcan skill, script approver)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1854
+  - community/Vulcan_i-vulcan_skill_script_approver
 ---
 
 # Vulcan (i-vulcan skill, script approver)
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1854
+#graphify/concept #graphify/EXTRACTED #community/Vulcan_i-vulcan_skill_script_approver

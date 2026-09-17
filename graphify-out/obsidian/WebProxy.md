@@ -1,29 +1,29 @@
 ---
 source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "Egress Filter & HTTP Proxy"
+community: "WebProxy"
 location: "L140"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Egress_Filter__HTTP_Proxy
+  - community/WebProxy
 ---
 
 # WebProxy
 
 ## Connections
-- [[dot-__init__()_154]] - `method` [EXTRACTED]
-- [[dot-_audit()_1]] - `method` [EXTRACTED]
-- [[dot-allowlist_proxy()]] - `calls` [EXTRACTED]
-- [[dot-check_request()]] - `method` [EXTRACTED]
-- [[dot-get_stats()_19]] - `method` [EXTRACTED]
-- [[dot-scan_response()_2]] - `method` [EXTRACTED]
-- [[dot-setUp()_1]] - `calls` [EXTRACTED]
-- [[dot-test_custom_denylist()_1]] - `calls` [EXTRACTED]
-- [[dot-test_custom_domain_size_limit()]] - `calls` [EXTRACTED]
-- [[dot-test_different_domains_independent()]] - `calls` [EXTRACTED]
-- [[dot-test_no_audit_chain_no_crash()]] - `calls` [EXTRACTED]
-- [[dot-test_rate_limit_blocks_excess()]] - `calls` [EXTRACTED]
+- [[.__init__()_154]] - `method` [EXTRACTED]
+- [[._audit()_1]] - `method` [EXTRACTED]
+- [[.allowlist_proxy()]] - `calls` [EXTRACTED]
+- [[.check_request()]] - `method` [EXTRACTED]
+- [[.get_stats()_19]] - `method` [EXTRACTED]
+- [[.scan_response()_2]] - `method` [EXTRACTED]
+- [[.setUp()_1]] - `calls` [EXTRACTED]
+- [[.test_custom_denylist()_1]] - `calls` [EXTRACTED]
+- [[.test_custom_domain_size_limit()]] - `calls` [EXTRACTED]
+- [[.test_different_domains_independent()]] - `calls` [EXTRACTED]
+- [[.test_no_audit_chain_no_crash()]] - `calls` [EXTRACTED]
+- [[.test_rate_limit_blocks_excess()]] - `calls` [EXTRACTED]
 - [[EgressFilter_2]] - `uses` [INFERRED]
 - [[HTTP web traffic proxy for OpenClaw.      Intercepts all outbound web requests,]] - `rationale_for` [EXTRACTED]
 - [[HTTPConnectProxy]] - `uses` [INFERRED]
@@ -87,4 +87,4 @@ tags:
 - [[test_web_proxy_security.py]] - `imports` [EXTRACTED]
 - [[web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Egress_Filter__HTTP_Proxy
+#graphify/code #graphify/INFERRED #community/WebProxy

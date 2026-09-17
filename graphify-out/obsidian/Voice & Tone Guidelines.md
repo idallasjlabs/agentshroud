@@ -1,12 +1,12 @@
 ---
 source_file: "branding/guidelines/brand-guidelines.md"
 type: "concept"
-community: "Community 377"
+community: "brand-guidelines.md"
 location: "L20-49"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Community_377
+  - community/brand-guidelinesmd
 ---
 
 # Voice & Tone Guidelines
@@ -16,4 +16,4 @@ tags:
 - [[Press Kit (About AgentShroud, boilerplate, key facts)]] - `conceptually_related_to` [INFERRED]
 - [[brand-guidelines]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/INFERRED #community/Community_377
+#graphify/concept #graphify/INFERRED #community/brand-guidelinesmd

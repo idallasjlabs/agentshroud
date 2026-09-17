@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dashboard.py"
 type: "rationale"
-community: "Community 65"
+community: "test_dashboard.py"
 location: "L223"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_65
+  - community/test_dashboardpy
 ---
 
 # WebSocket /ws/egress should forward privacy_* events.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_ws_egress_receives_privacy_event()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_65
+#graphify/rationale #graphify/EXTRACTED #community/test_dashboardpy

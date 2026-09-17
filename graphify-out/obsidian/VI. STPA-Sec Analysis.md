@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "document"
-community: "Community 234"
+community: "AgentShroud: A Transparent Proxy Framework for E"
 location: "L153"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_234
+  - community/AgentShroud_A_Transparent_Proxy_Framework_for_E
 ---
 
 # VI. STPA-Sec Analysis
@@ -19,4 +19,4 @@ tags:
 - [[VI-B. Findings]] - `contains` [EXTRACTED]
 - [[VI-C. Requirements]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_234
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_A_Transparent_Proxy_Framework_for_E

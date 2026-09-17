@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/06 - Containers & Services/volumes.md"
 type: "document"
-community: "Community 771"
+community: "Docker Volumes"
 location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_771
+  - community/Docker_Volumes
 ---
 
 # Volume Details
@@ -19,4 +19,4 @@ tags:
 - [[agentshroud-workspace]] - `contains` [EXTRACTED]
 - [[gateway-data]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_771
+#graphify/document #graphify/EXTRACTED #community/Docker_Volumes

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-03-05-r2.md"
 type: "document"
-community: "Community 650"
+community: "🟢 INFO (nice to have)"
 location: "L88"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_650
+  - community/_INFO_nice_to_have
 ---
 
 # W4: Tailscale image not pinned to SHA256 digest
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🟡 WARNINGS (should fix)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_650
+#graphify/document #graphify/EXTRACTED #community/_INFO_nice_to_have

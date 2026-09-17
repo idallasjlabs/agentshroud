@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/xurl/SKILL.md"
 type: "document"
-community: "Community 974"
+community: "Command Details"
 location: "L201"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_974
+  - community/Command_Details
 ---
 
 # User Info
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Command Details]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_974
+#graphify/document #graphify/EXTRACTED #community/Command_Details

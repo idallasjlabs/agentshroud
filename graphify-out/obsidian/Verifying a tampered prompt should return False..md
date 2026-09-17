@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_prompt_guard.py"
 type: "rationale"
-community: "Prompt Guard & Context Integrity"
+community: "TrustManager"
 location: "L189"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Prompt_Guard__Context_Integrity
+  - community/TrustManager
 ---
 
 # Verifying a tampered prompt should return False.
 
 ## Connections
-- [[dot-test_tamper_detected()]] - `rationale_for` [EXTRACTED]
+- [[.test_tamper_detected()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Prompt_Guard__Context_Integrity
+#graphify/rationale #graphify/EXTRACTED #community/TrustManager

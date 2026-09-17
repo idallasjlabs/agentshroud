@@ -1,31 +1,31 @@
 ---
 source_file: "gateway/proxy/web_content_scanner.py"
 type: "code"
-community: "Voice Gateway STT & Browser Security"
+community: "URLAnalyzer"
 location: "L176"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Voice_Gateway_STT__Browser_Security
+  - graphify/INFERRED
+  - community/URLAnalyzer
 ---
 
 # WebContentScanner
 
 ## Connections
-- [[dot-__init__()_153]] - `method` [EXTRACTED]
-- [[dot-_scan_encoded_payloads()]] - `method` [EXTRACTED]
-- [[dot-_scan_hidden_content()]] - `method` [EXTRACTED]
-- [[dot-_scan_pii()]] - `method` [EXTRACTED]
-- [[dot-_scan_prompt_injection()]] - `method` [EXTRACTED]
-- [[dot-_scan_zero_width()]] - `method` [EXTRACTED]
-- [[dot-scan()_3]] - `method` [EXTRACTED]
-- [[Any_81]] - `uses` [INFERRED]
+- [[.__init__()_153]] - `method` [EXTRACTED]
+- [[._scan_encoded_payloads()]] - `method` [EXTRACTED]
+- [[._scan_hidden_content()]] - `method` [EXTRACTED]
+- [[._scan_pii()]] - `method` [EXTRACTED]
+- [[._scan_prompt_injection()]] - `method` [EXTRACTED]
+- [[._scan_zero_width()]] - `method` [EXTRACTED]
+- [[.scan()_3]] - `method` [EXTRACTED]
+- [[Any_80]] - `uses` [INFERRED]
 - [[DNSFilter]] - `semantically_similar_to` [INFERRED]
 - [[ProxyAction]] - `uses` [INFERRED]
 - [[RateLimiter_1]] - `uses` [INFERRED]
 - [[Scan web content for prompt injection, PII, and hidden payloads.      All findin]] - `rationale_for` [EXTRACTED]
-- [[URLAnalyzer]] - `uses` [INFERRED]
 - [[URLAnalyzer_1]] - `semantically_similar_to` [INFERRED]
+- [[URLAnalyzer]] - `uses` [INFERRED]
 - [[WebContentScanner_1]] - `uses` [INFERRED]
 - [[WebProxy]] - `uses` [INFERRED]
 - [[WebProxyConfig_1]] - `uses` [INFERRED]
@@ -33,4 +33,4 @@ tags:
 - [[web_content_scanner.py]] - `contains` [EXTRACTED]
 - [[web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_STT__Browser_Security
+#graphify/code #graphify/INFERRED #community/URLAnalyzer

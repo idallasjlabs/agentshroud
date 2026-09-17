@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_ws_e_rt2_inbound_encoding.py"
 type: "rationale"
-community: "Canary Tripwire"
+community: "TrustManager"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Canary_Tripwire
+  - community/TrustManager
 ---
 
 # WS-E RT-2 Inbound Encoding Bypass Fix Rationale
@@ -16,4 +16,4 @@ tags:
 - [[SecurityPipeline_1]] - `rationale_for` [EXTRACTED]
 - [[ToolResultInjectionScanner]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Canary_Tripwire
+#graphify/rationale #graphify/EXTRACTED #community/TrustManager

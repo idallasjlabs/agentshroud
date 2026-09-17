@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "Community 390"
+community: "UserSession"
 location: "L41"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_390
+  - community/UserSession
 ---
 
 # UserSession
 
 ## Connections
-- [[dot-from_dict()_7]] - `method` [EXTRACTED]
-- [[dot-get_or_create_session()]] - `references` [EXTRACTED]
-- [[dot-test_session_to_dict_and_back()]] - `calls` [EXTRACTED]
-- [[dot-to_dict()_10]] - `method` [EXTRACTED]
+- [[.from_dict()_7]] - `method` [EXTRACTED]
+- [[.get_or_create_session()]] - `references` [EXTRACTED]
+- [[.test_session_to_dict_and_back()]] - `calls` [EXTRACTED]
+- [[.to_dict()_10]] - `method` [EXTRACTED]
 - [[Represents an isolated session for a user within a specific bot workspace.]] - `rationale_for` [EXTRACTED]
 - [[TestAccessControl]] - `uses` [INFERRED]
 - [[TestAtomicRegistryWrites]] - `uses` [INFERRED]
@@ -31,4 +31,4 @@ tags:
 - [[session_manager.py]] - `contains` [EXTRACTED]
 - [[test_session_manager.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_390
+#graphify/code #graphify/INFERRED #community/UserSession

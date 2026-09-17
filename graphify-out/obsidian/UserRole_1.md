@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/contributors.py"
 type: "code"
-community: "Community 68"
+community: "SOCWebSocketHandler"
 location: "L14"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_68
+  - community/SOCWebSocketHandler
 ---
 
 # UserRole
@@ -17,4 +17,4 @@ tags:
 - [[UserRole]] - `uses` [INFERRED]
 - [[_role_enum()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_68
+#graphify/code #graphify/INFERRED #community/SOCWebSocketHandler

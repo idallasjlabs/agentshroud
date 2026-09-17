@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/DEVICE_PAIRING.md"
 type: "document"
-community: "Community 206"
+community: "AgentShroud Device Pairing Management"
 location: "L117"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_206
+  - community/AgentShroud_Device_Pairing_Management
 ---
 
 # Verify Approval
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Approving Device Pairing Requests]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_206
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Device_Pairing_Management

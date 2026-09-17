@@ -1,51 +1,51 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "Ingest Middleware & File Sandbox"
+community: "MiddlewareManager"
 location: "L121"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Ingest_Middleware__File_Sandbox
+  - community/MiddlewareManager
 ---
 
 # UserSessionManager
 
 ## Connections
-- [[dot-__init__()_12]] - `calls` [EXTRACTED]
-- [[dot-__init__()_141]] - `calls` [EXTRACTED]
-- [[dot-__init__()_179]] - `method` [EXTRACTED]
-- [[dot-_load_sessions()]] - `method` [EXTRACTED]
-- [[dot-_save_sessions()]] - `method` [EXTRACTED]
-- [[dot-_session_key()]] - `method` [EXTRACTED]
-- [[dot-_validate_bot_id()]] - `method` [EXTRACTED]
-- [[dot-_validate_user_id()]] - `method` [EXTRACTED]
-- [[dot-add_conversation_message()]] - `method` [EXTRACTED]
-- [[dot-can_user_access_group()]] - `method` [EXTRACTED]
-- [[dot-can_user_access_session()]] - `method` [EXTRACTED]
-- [[dot-cleanup_old_sessions()_1]] - `method` [EXTRACTED]
-- [[dot-get_merged_context()]] - `method` [EXTRACTED]
-- [[dot-get_or_create_group_session()]] - `method` [EXTRACTED]
-- [[dot-get_or_create_session()]] - `method` [EXTRACTED]
-- [[dot-get_session_context()]] - `method` [EXTRACTED]
-- [[dot-get_session_prompt_addition()]] - `method` [EXTRACTED]
-- [[dot-get_user_workspace_path()]] - `method` [EXTRACTED]
-- [[dot-list_sessions_for_user()]] - `method` [EXTRACTED]
-- [[dot-middleware_manager()]] - `calls` [EXTRACTED]
-- [[dot-reanchor_system_prompt()]] - `method` [EXTRACTED]
-- [[dot-session_manager()]] - `calls` [EXTRACTED]
-- [[dot-session_manager()_1]] - `calls` [EXTRACTED]
-- [[dot-test_complete_user_isolation()]] - `calls` [EXTRACTED]
-- [[dot-test_lazy_migration_copies_legacy_memory()]] - `calls` [EXTRACTED]
-- [[dot-test_legacy_session_promoted_on_load()]] - `calls` [EXTRACTED]
-- [[dot-test_load_tolerates_corrupt_registry()]] - `calls` [EXTRACTED]
-- [[dot-test_load_tolerates_empty_registry()]] - `calls` [EXTRACTED]
-- [[dot-test_owner_admin_access()]] - `calls` [EXTRACTED]
-- [[dot-test_session_persistence()]] - `calls` [EXTRACTED]
-- [[dot-update_user_trust_level()]] - `method` [EXTRACTED]
+- [[.__init__()_12]] - `calls` [EXTRACTED]
+- [[.__init__()_141]] - `calls` [EXTRACTED]
+- [[.__init__()_179]] - `method` [EXTRACTED]
+- [[._load_sessions()]] - `method` [EXTRACTED]
+- [[._save_sessions()]] - `method` [EXTRACTED]
+- [[._session_key()]] - `method` [EXTRACTED]
+- [[._validate_bot_id()]] - `method` [EXTRACTED]
+- [[._validate_user_id()]] - `method` [EXTRACTED]
+- [[.add_conversation_message()]] - `method` [EXTRACTED]
+- [[.can_user_access_group()]] - `method` [EXTRACTED]
+- [[.can_user_access_session()]] - `method` [EXTRACTED]
+- [[.cleanup_old_sessions()_1]] - `method` [EXTRACTED]
+- [[.get_merged_context()]] - `method` [EXTRACTED]
+- [[.get_or_create_group_session()]] - `method` [EXTRACTED]
+- [[.get_or_create_session()]] - `method` [EXTRACTED]
+- [[.get_session_context()]] - `method` [EXTRACTED]
+- [[.get_session_prompt_addition()]] - `method` [EXTRACTED]
+- [[.get_user_workspace_path()]] - `method` [EXTRACTED]
+- [[.list_sessions_for_user()]] - `method` [EXTRACTED]
+- [[.middleware_manager()]] - `calls` [EXTRACTED]
+- [[.reanchor_system_prompt()]] - `method` [EXTRACTED]
+- [[.session_manager()]] - `calls` [EXTRACTED]
+- [[.session_manager()_1]] - `calls` [EXTRACTED]
+- [[.test_complete_user_isolation()]] - `calls` [EXTRACTED]
+- [[.test_lazy_migration_copies_legacy_memory()]] - `calls` [EXTRACTED]
+- [[.test_legacy_session_promoted_on_load()]] - `calls` [EXTRACTED]
+- [[.test_load_tolerates_corrupt_registry()]] - `calls` [EXTRACTED]
+- [[.test_load_tolerates_empty_registry()]] - `calls` [EXTRACTED]
+- [[.test_owner_admin_access()]] - `calls` [EXTRACTED]
+- [[.test_session_persistence()]] - `calls` [EXTRACTED]
+- [[.update_user_trust_level()]] - `method` [EXTRACTED]
 - [[Action_1]] - `uses` [INFERRED]
 - [[Any_2]] - `uses` [INFERRED]
-- [[Any_52]] - `uses` [INFERRED]
+- [[Any_51]] - `uses` [INFERRED]
 - [[AppState]] - `uses` [INFERRED]
 - [[Exception_1]] - `uses` [INFERRED]
 - [[FastAPI_1]] - `uses` [INFERRED]
@@ -54,7 +54,7 @@ tags:
 - [[Manages per-user, per-bot session isolation.      Sessions are keyed by (user_id]] - `rationale_for` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
-- [[Path_39]] - `uses` [INFERRED]
+- [[Path_28]] - `uses` [INFERRED]
 - [[RBACManager_1]] - `uses` [INFERRED]
 - [[Resource_1]] - `uses` [INFERRED]
 - [[SharedMemoryManager]] - `uses` [INFERRED]
@@ -140,8 +140,8 @@ tags:
 - [[mgr()]] - `calls` [EXTRACTED]
 - [[middleware.py]] - `imports` [EXTRACTED]
 - [[run()_4]] - `calls` [EXTRACTED]
-- [[session_manager()_1]] - `calls` [EXTRACTED]
 - [[session_manager()]] - `calls` [EXTRACTED]
+- [[session_manager()_1]] - `calls` [EXTRACTED]
 - [[session_manager()_3]] - `calls` [EXTRACTED]
 - [[session_manager()_4]] - `calls` [EXTRACTED]
 - [[session_manager()_2]] - `calls` [EXTRACTED]
@@ -161,4 +161,4 @@ tags:
 - [[usm()]] - `calls` [EXTRACTED]
 - [[webhook_receiver.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Ingest_Middleware__File_Sandbox
+#graphify/code #graphify/INFERRED #community/MiddlewareManager

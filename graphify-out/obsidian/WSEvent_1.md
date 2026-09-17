@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "Community 68"
+community: "SOCWebSocketHandler"
 location: "L270"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_68
+  - community/SOCWebSocketHandler
 ---
 
 # WSEvent
 
 ## Connections
-- [[dot-test_construction()_2]] - `calls` [EXTRACTED]
-- [[dot-test_send_event_serializes()]] - `calls` [EXTRACTED]
-- [[dot-test_send_event_swallows_transport_error()]] - `calls` [EXTRACTED]
-- [[dot-test_wsevent_passthrough()]] - `calls` [EXTRACTED]
+- [[.test_construction()_2]] - `calls` [EXTRACTED]
+- [[.test_send_event_serializes()]] - `calls` [EXTRACTED]
+- [[.test_send_event_swallows_transport_error()]] - `calls` [EXTRACTED]
+- [[.test_wsevent_passthrough()]] - `calls` [EXTRACTED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[SOCWebSocketHandler_1]] - `uses` [INFERRED]
 - [[WSEvent]] - `uses` [INFERRED]
@@ -27,4 +27,4 @@ tags:
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 - [[websocket.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_68
+#graphify/code #graphify/EXTRACTED #community/SOCWebSocketHandler

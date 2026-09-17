@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_version_routes.py"
 type: "rationale"
-community: "Community 433"
+community: "TestVersionRoutes"
 location: "L34"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_433
+  - community/TestVersionRoutes
 ---
 
 # Use a temporary DB for all tests.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[tmp_version_db()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_433
+#graphify/rationale #graphify/EXTRACTED #community/TestVersionRoutes

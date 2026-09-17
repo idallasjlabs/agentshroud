@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/network_validator.py"
 type: "rationale"
-community: "Community 1082"
+community: "._validate_network_definitions()"
 location: "L179"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1082
+  - community/_validate_network_definitions
 ---
 
 # Validate network definitions in compose file.
 
 ## Connections
-- [[dot-_validate_network_definitions()]] - `rationale_for` [EXTRACTED]
+- [[._validate_network_definitions()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1082
+#graphify/rationale #graphify/EXTRACTED #community/_validate_network_definitions

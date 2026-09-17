@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/VERIFICATION_RESULTS.md"
 type: "document"
-community: "Community 350"
+community: "Kill Switch"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_350
+  - community/Kill_Switch
 ---
 
 # VERIFICATION_RESULTS.md
@@ -18,4 +18,4 @@ tags:
 - [[SECURITY_VALUE_PROPOSITION]] - `conceptually_related_to` [INFERRED]
 - [[verify-security.sh]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_350
+#graphify/document #graphify/EXTRACTED #community/Kill_Switch
