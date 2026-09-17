@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/v0.8.0-feature-list-final.md"
 type: "document"
-community: "Community 372"
+community: "AgentShroud™ v0.8.0 \"Watchtower\" — Complete Feat"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_372
+  - community/AgentShroud_v080_Watchtower__Complete_Feat
 ---
 
 # A. Steve Hay Requirements — ALL Tiers (14 features)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud™ v0.8.0 Watchtower — Complete Feature List]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_372
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080_Watchtower__Complete_Feat

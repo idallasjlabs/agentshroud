@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "File Sandbox & Privilege Separation Tests"
+community: "TestFileSandbox"
 location: "L528"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/File_Sandbox__Privilege_Separation_Tests
+  - community/TestFileSandbox
 ---
 
 # Access to /proc/self/environ exposes env vars — must be blocked.
 
 ## Connections
-- [[dot-test_proc_self_environ_blocked()]] - `rationale_for` [EXTRACTED]
+- [[.test_proc_self_environ_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/File_Sandbox__Privilege_Separation_Tests
+#graphify/rationale #graphify/EXTRACTED #community/TestFileSandbox

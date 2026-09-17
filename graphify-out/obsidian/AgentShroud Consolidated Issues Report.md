@@ -1,11 +1,11 @@
 ---
 source_file: "docs/project/REPORTED_ISSUES.md"
 type: "document"
-community: "Community 484"
+community: "AgentShroud Consolidated Issues Report"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_484
+  - community/AgentShroud_Consolidated_Issues_Report
 ---
 
 # AgentShroud Consolidated Issues Report
@@ -20,4 +20,4 @@ tags:
 - [[🟠 HIGH Security & Logic Issues]] - `contains` [EXTRACTED]
 - [[🟡 MEDIUM Technical Debt & Bugs]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_484
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Consolidated_Issues_Report

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rate_limit_guard.py"
 type: "rationale"
-community: "Community 190"
+community: "RateLimitGuard"
 location: "L80"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_190
+  - community/RateLimitGuard
 ---
 
 # Adaptive per-agent / per-tool sliding-window rate limiter with burst detection.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[RateLimitGuard]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_190
+#graphify/rationale #graphify/EXTRACTED #community/RateLimitGuard

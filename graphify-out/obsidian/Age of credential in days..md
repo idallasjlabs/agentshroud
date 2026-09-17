@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "rationale"
-community: "Community 544"
+community: "CredentialInfo"
 location: "L86"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_544
+  - community/CredentialInfo
 ---
 
 # Age of credential in days.
 
 ## Connections
-- [[dot-age_days()]] - `rationale_for` [EXTRACTED]
+- [[.age_days()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_544
+#graphify/rationale #graphify/EXTRACTED #community/CredentialInfo

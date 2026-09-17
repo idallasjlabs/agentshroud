@@ -1,18 +1,18 @@
 ---
 source_file: "docs/api/api-reference.md"
 type: "document"
-community: "Community 503"
+community: "API Reference"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_503
+  - community/API_Reference
 ---
 
 # API Reference
 
 ## Connections
-- [[AgentShroud v1.3.0_1]] - `contains` [EXTRACTED]
+- [[AgentShroud v1.3.0]] - `contains` [EXTRACTED]
 - [[Authentication_1]] - `contains` [EXTRACTED]
 - [[Error responses]] - `contains` [EXTRACTED]
 - [[Example `GET managehealth`]] - `contains` [EXTRACTED]
@@ -21,4 +21,4 @@ tags:
 - [[Source of truth_1]] - `contains` [EXTRACTED]
 - [[api-reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_503
+#graphify/document #graphify/EXTRACTED #community/API_Reference

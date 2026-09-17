@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/legal/USPTO-APPLICATION.md"
 type: "document"
-community: "Community 1016"
+community: "USPTO Trademark Application — AgentShroud™"
 location: "L91"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1016
+  - community/USPTO_Trademark_Application__AgentShroud
 ---
 
 # After Filing
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[USPTO Trademark Application — AgentShroud™]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1016
+#graphify/document #graphify/EXTRACTED #community/USPTO_Trademark_Application__AgentShroud

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "rationale"
-community: "Community 88"
+community: "EgressApprovalQueue"
 location: "L708"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_88
+  - community/EgressApprovalQueue
 ---
 
 # Add or modify an egress rule.          Args:             domain: Target domain
 
 ## Connections
-- [[dot-add_rule()]] - `rationale_for` [EXTRACTED]
+- [[.add_rule()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_88
+#graphify/rationale #graphify/EXTRACTED #community/EgressApprovalQueue

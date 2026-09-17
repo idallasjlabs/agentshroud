@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Community 340"
+community: "AgentShroud Setup Guide"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_340
+  - community/AgentShroud_Setup_Guide
 ---
 
 # AgentShroud Setup Guide
@@ -19,10 +19,10 @@ tags:
 - [[Quick Start (5 minutes)]] - `contains` [EXTRACTED]
 - [[Security Verification]] - `contains` [EXTRACTED]
 - [[Step-by-Step Installation]] - `contains` [EXTRACTED]
-- [[Troubleshooting_27]] - `contains` [EXTRACTED]
-- [[Updating_1]] - `contains` [EXTRACTED]
-- [[What is AgentShroud_3]] - `contains` [EXTRACTED]
+- [[Troubleshooting_25]] - `contains` [EXTRACTED]
+- [[Updating]] - `contains` [EXTRACTED]
+- [[What is AgentShroud_2]] - `contains` [EXTRACTED]
 - [[What's Next]] - `contains` [EXTRACTED]
 - [[setup-guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_340
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Setup_Guide

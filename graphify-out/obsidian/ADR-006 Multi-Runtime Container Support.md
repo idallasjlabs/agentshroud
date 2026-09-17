@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/adr/ADR-006-multi-runtime-support.md"
 type: "document"
-community: "Community 237"
+community: "ADR-006: Multi-Runtime Container Support"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_237
+  - community/ADR-006_Multi-Runtime_Container_Support
 ---
 
 # ADR-006: Multi-Runtime Container Support
@@ -18,7 +18,7 @@ tags:
 - [[Colima (primary macOS runtime)]] - `implements` [EXTRACTED]
 - [[Colima Initial Setup Procedure]] - `contains` [EXTRACTED]
 - [[Consequences]] - `contains` [EXTRACTED]
-- [[Context_2]] - `contains` [EXTRACTED]
+- [[Context_1]] - `contains` [EXTRACTED]
 - [[Decision_2]] - `contains` [EXTRACTED]
 - [[Docker Desktop (network topology diagram)]] - `conceptually_related_to` [EXTRACTED]
 - [[Multi-Runtime Support (DockerPodmanApple Containers)]] - `conceptually_related_to` [EXTRACTED]
@@ -32,4 +32,4 @@ tags:
 - [[raspberrypi (100.107.248.66, agentshroud-bot user)]] - `conceptually_related_to` [EXTRACTED]
 - [[trillian (100.94.68.61, development node)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_237
+#graphify/document #graphify/EXTRACTED #community/ADR-006_Multi-Runtime_Container_Support

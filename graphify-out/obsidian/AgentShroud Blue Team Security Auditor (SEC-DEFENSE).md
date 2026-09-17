@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-sec-defense/SKILL.md"
 type: "document"
-community: "Blue/Red Team Security Auditor Skills"
+community: "test_redteam_probes.py"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Blue/Red_Team_Security_Auditor_Skills
+  - community/test_redteam_probespy
 ---
 
 # AgentShroud Blue Team Security Auditor (SEC-DEFENSE)
@@ -41,4 +41,4 @@ tags:
 - [[tool_result_sanitizer.py]] - `references` [EXTRACTED]
 - [[xml_leak_filter.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Blue/Red_Team_Security_Auditor_Skills
+#graphify/document #graphify/EXTRACTED #community/test_redteam_probespy

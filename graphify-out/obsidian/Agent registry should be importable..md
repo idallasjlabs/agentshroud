@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "P3 Infrastructure Security Modules"
+community: "TestAuth"
 location: "L460"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/P3_Infrastructure_Security_Modules
+  - community/TestAuth
 ---
 
 # Agent registry should be importable.
 
 ## Connections
-- [[dot-test_agent_registry_module()]] - `rationale_for` [EXTRACTED]
+- [[.test_agent_registry_module()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/P3_Infrastructure_Security_Modules
+#graphify/rationale #graphify/EXTRACTED #community/TestAuth

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/RUNBOOK.md"
 type: "document"
-community: "Community 704"
+community: "AgentShroud Deployment & Troubleshooting Runbook"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_704
+  - community/AgentShroud_Deployment__Troubleshooting_Runbook
 ---
 
 # AgentShroud Deployment & Troubleshooting Runbook
@@ -16,10 +16,10 @@ tags:
 - [[Check Gateway Health]] - `contains` [EXTRACTED]
 - [[Deploy Latest Code (Any Host)]] - `contains` [EXTRACTED]
 - [[Deploy to Production]] - `contains` [EXTRACTED]
-- [[Infrastructure_10]] - `contains` [EXTRACTED]
+- [[Infrastructure_9]] - `contains` [EXTRACTED]
 - [[Quick Restart (No Rebuild)]] - `contains` [EXTRACTED]
-- [[RUNBOOK_1]] - `contains` [EXTRACTED]
+- [[RUNBOOK]] - `contains` [EXTRACTED]
 - [[Run Tests on Any Host]] - `contains` [EXTRACTED]
-- [[Troubleshooting_35]] - `contains` [EXTRACTED]
+- [[Troubleshooting_33]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_704
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Deployment__Troubleshooting_Runbook

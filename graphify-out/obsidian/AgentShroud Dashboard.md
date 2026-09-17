@@ -1,12 +1,12 @@
 ---
 source_file: "dashboard/README.md"
 type: "document"
-community: "Community 931"
+community: "DOCKER-VPN-NETWORKING.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_931
+  - community/DOCKER-VPN-NETWORKINGmd
 ---
 
 # AgentShroud Dashboard
@@ -18,4 +18,4 @@ tags:
 - [[Tech Stack_1]] - `contains` [EXTRACTED]
 - [[dashboardREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_931
+#graphify/document #graphify/EXTRACTED #community/DOCKER-VPN-NETWORKINGmd

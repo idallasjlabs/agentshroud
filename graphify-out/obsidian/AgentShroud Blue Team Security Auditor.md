@@ -1,22 +1,22 @@
 ---
 source_file: ".agents/skills/i-sec-defense/SKILL.md"
 type: "document"
-community: "Community 375"
+community: "AgentShroud Blue Team Security Auditor"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_375
+  - community/AgentShroud_Blue_Team_Security_Auditor
 ---
 
 # AgentShroud Blue Team Security Auditor
 
 ## Connections
-- [[dot-agentsskillsi-sec-defenseSKILL]] - `contains` [EXTRACTED]
+- [[.agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[Audit Procedure]] - `contains` [EXTRACTED]
 - [[Critical Rules_3]] - `contains` [EXTRACTED]
 - [[F. Infrastructure]] - `contains` [EXTRACTED]
 - [[Methodology]] - `contains` [EXTRACTED]
-- [[Output Format_10]] - `contains` [EXTRACTED]
+- [[Output Format_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_375
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor

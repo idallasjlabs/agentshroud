@@ -1,13 +1,13 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "concept"
-community: "Community 1901"
+community: "AI Agent"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1901
+  - community/AI_Agent
 ---
 
 # AI Agent
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1901
+#graphify/concept #graphify/EXTRACTED #community/AI_Agent

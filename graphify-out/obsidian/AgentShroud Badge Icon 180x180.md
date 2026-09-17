@@ -1,13 +1,13 @@
 ---
 source_file: "branding/logos/variants/badge-180x180.png"
 type: "image"
-community: "Community 1805"
+community: "AgentShroud Badge Icon 180x180"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Community_1805
+  - community/AgentShroud_Badge_Icon_180x180
 ---
 
 # AgentShroud Badge Icon 180x180
 
-#graphify/image #graphify/EXTRACTED #community/Community_1805
+#graphify/image #graphify/EXTRACTED #community/AgentShroud_Badge_Icon_180x180

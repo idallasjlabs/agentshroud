@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-sec-defense/SKILL.md"
 type: "document"
-community: "Community 631"
+community: "AgentShroud Blue Team Security Auditor"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_631
+  - community/AgentShroud_Blue_Team_Security_Auditor
 ---
 
 # AgentShroud Blue Team Security Auditor
@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[Audit Procedure_2]] - `contains` [EXTRACTED]
 - [[Critical Rules_10]] - `contains` [EXTRACTED]
-- [[Infrastructure_8]] - `contains` [EXTRACTED]
+- [[Infrastructure_7]] - `contains` [EXTRACTED]
 - [[Methodology_2]] - `contains` [EXTRACTED]
-- [[Output Format_24]] - `contains` [EXTRACTED]
-- [[openclawskillsi-sec-defenseSKILL]] - `contains` [EXTRACTED]
+- [[Output Format_21]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_631
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor

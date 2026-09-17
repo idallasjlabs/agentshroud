@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/security-inventory.md"
 type: "document"
-community: "Community 788"
+community: "Red Team Assessment v1.2.0"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_788
+  - community/Red_Team_Assessment_v120
 ---
 
 # AgentShroud Security Inventory v0.8.0 (58 Modules)
@@ -18,4 +18,4 @@ tags:
 - [[TrustManager Progressive Trust Scoring (5 Levels)]] - `references` [EXTRACTED]
 - [[Workstream E Blue and Red Team Security Scan (Both Bots)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_788
+#graphify/document #graphify/EXTRACTED #community/Red_Team_Assessment_v120

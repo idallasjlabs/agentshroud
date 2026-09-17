@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/a2a_governance.py"
 type: "code"
-community: "Community 39"
+community: "A2AGovernanceProxy"
 location: "L55"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_39
+  - community/A2AGovernanceProxy
 ---
 
 # A2AMessageType
@@ -28,4 +28,4 @@ tags:
 - [[str_1]] - `inherits` [EXTRACTED]
 - [[test_a2a_governance.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_39
+#graphify/code #graphify/INFERRED #community/A2AGovernanceProxy

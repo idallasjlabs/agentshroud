@@ -1,12 +1,12 @@
 ---
 source_file: "docs/adr/ADR-001-proxy-layer-inversion.md"
 type: "document"
-community: "Community 564"
+community: "Enterprise Governance Proxy System (invention)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_564
+  - community/Enterprise_Governance_Proxy_System_invention
 ---
 
 # ADR-001-proxy-layer-inversion.md
@@ -18,4 +18,4 @@ tags:
 - [[Rationale]] - `contains` [EXTRACTED]
 - [[Transparent Interception Architecture]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_564
+#graphify/document #graphify/EXTRACTED #community/Enterprise_Governance_Proxy_System_invention

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/PUBLISH-TO-CLAWHUB.md"
 type: "document"
-community: "Community 1378"
+community: "🎨 Customize Skill Page (Optional)"
 location: "L206"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1378
+  - community/_Customize_Skill_Page_Optional
 ---
 
 # Add Screenshots
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🎨 Customize Skill Page (Optional)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1378
+#graphify/document #graphify/EXTRACTED #community/_Customize_Skill_Page_Optional

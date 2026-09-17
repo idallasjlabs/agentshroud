@@ -1,13 +1,13 @@
 ---
 source_file: "branding/social/github-social-preview-1280x640.png"
 type: "image"
-community: "Community 1812"
+community: "AgentShroud GitHub Social Preview Image"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Community_1812
+  - community/AgentShroud_GitHub_Social_Preview_Image
 ---
 
 # AgentShroud GitHub Social Preview Image
 
-#graphify/image #graphify/EXTRACTED #community/Community_1812
+#graphify/image #graphify/EXTRACTED #community/AgentShroud_GitHub_Social_Preview_Image

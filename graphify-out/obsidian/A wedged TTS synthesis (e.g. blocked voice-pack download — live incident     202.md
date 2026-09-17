@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "Community 89"
-location: "L2462"
+community: "test_voice_gateway.py"
+location: "L2472"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_89
+  - community/test_voice_gatewaypy
 ---
 
 # A wedged TTS synthesis (e.g. blocked voice-pack download — live incident     202
 
 ## Connections
-- [[test_ws_hung_tts_synthesis_still_returns_idle()]] - `rationale_for` [EXTRACTED]
+- [[test_ws_hung_tts_synthesis_still_returns_idle()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_89
+#graphify/rationale #graphify/EXTRACTED #community/test_voice_gatewaypy

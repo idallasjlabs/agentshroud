@@ -1,29 +1,29 @@
 ---
 source_file: "gateway/security/a2a_governance.py"
 type: "code"
-community: "Community 39"
+community: "A2AMessage"
 location: "L109"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_39
+  - community/A2AMessage
 ---
 
 # A2AMessage
 
 ## Connections
-- [[dot-_check_message_size()]] - `references` [EXTRACTED]
-- [[dot-_check_peer()]] - `references` [EXTRACTED]
-- [[dot-_check_rate_limit()]] - `references` [EXTRACTED]
-- [[dot-_check_task_concurrency()]] - `references` [EXTRACTED]
-- [[dot-_finalize()]] - `references` [EXTRACTED]
-- [[dot-_process()]] - `references` [EXTRACTED]
-- [[dot-_sanitize_message()]] - `references` [EXTRACTED]
-- [[dot-fingerprint()]] - `method` [EXTRACTED]
-- [[dot-process_inbound()]] - `references` [EXTRACTED]
-- [[dot-process_outbound()]] - `references` [EXTRACTED]
-- [[dot-test_fingerprint_deterministic()]] - `calls` [EXTRACTED]
-- [[dot-test_fingerprint_differs_for_different_payloads()]] - `calls` [EXTRACTED]
+- [[._check_message_size()]] - `references` [EXTRACTED]
+- [[._check_peer()]] - `references` [EXTRACTED]
+- [[._check_rate_limit()]] - `references` [EXTRACTED]
+- [[._check_task_concurrency()]] - `references` [EXTRACTED]
+- [[._finalize()]] - `references` [EXTRACTED]
+- [[._process()]] - `references` [EXTRACTED]
+- [[._sanitize_message()]] - `references` [EXTRACTED]
+- [[.fingerprint()]] - `method` [EXTRACTED]
+- [[.process_inbound()]] - `references` [EXTRACTED]
+- [[.process_outbound()]] - `references` [EXTRACTED]
+- [[.test_fingerprint_deterministic()]] - `calls` [EXTRACTED]
+- [[.test_fingerprint_differs_for_different_payloads()]] - `calls` [EXTRACTED]
 - [[An A2A protocol message passing through the governance proxy.]] - `rationale_for` [EXTRACTED]
 - [[TestDisabledProxy]] - `uses` [INFERRED]
 - [[TestInboundProcessing]] - `uses` [INFERRED]
@@ -39,4 +39,4 @@ tags:
 - [[a2a_governance.py]] - `contains` [EXTRACTED]
 - [[test_a2a_governance.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_39
+#graphify/code #graphify/EXTRACTED #community/A2AMessage

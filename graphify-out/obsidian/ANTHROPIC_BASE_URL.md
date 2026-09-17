@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md"
 type: "document"
-community: "Community 561"
+community: "ANTHROPIC_BASE_URL"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_561
+  - community/ANTHROPIC_BASE_URL
 ---
 
 # ANTHROPIC_BASE_URL.md
@@ -17,4 +17,4 @@ tags:
 - [[gateway.proxy.llm_proxy]] - `references` [INFERRED]
 - [[patch-anthropic-sdk.sh]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_561
+#graphify/document #graphify/EXTRACTED #community/ANTHROPIC_BASE_URL

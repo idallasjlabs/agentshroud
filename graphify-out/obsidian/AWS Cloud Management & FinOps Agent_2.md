@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/i-aws/SKILL.md"
 type: "document"
-community: "Community 299"
+community: "AWS Cloud Management & FinOps Agent"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_299
+  - community/AWS_Cloud_Management__FinOps_Agent
 ---
 
 # AWS Cloud Management & FinOps Agent
 
 ## Connections
-- [[dot-agentsskillsi-awsSKILL]] - `contains` [EXTRACTED]
+- [[.agentsskillsi-awsSKILL]] - `contains` [EXTRACTED]
 - [[AWS Cloud Management & FinOps README]] - `references` [EXTRACTED]
 - [[Audit Branch (Merge Regression Detection)]] - `semantically_similar_to` [INFERRED]
 - [[CDAS — Central Data Acquisition Systems]] - `references` [EXTRACTED]
@@ -30,4 +30,4 @@ tags:
 - [[Tagging Standard_1]] - `contains` [EXTRACTED]
 - [[Workflow_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_299
+#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent

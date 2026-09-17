@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/docs/MCP_ADDITIONAL_SERVICES.md"
 type: "concept"
-community: "Community 1062"
+community: "FODL — Fluence Operational Data Lakehouse"
 location: "Section 3"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Community_1062
+  - community/FODL__Fluence_Operational_Data_Lakehouse
 ---
 
 # AWS Glue MCP server
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[FODL — Fluence Operational Data Lakehouse]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Community_1062
+#graphify/concept #graphify/INFERRED #community/FODL__Fluence_Operational_Data_Lakehouse

@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "Community 75"
+community: "A2AMethod"
 location: "L143"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_75
+  - community/A2AMethod
 ---
 
 # A2APolicyDecision
 
 ## Connections
-- [[dot-_decide()]] - `references` [EXTRACTED]
-- [[dot-allowed()_1]] - `method` [EXTRACTED]
-- [[dot-enforce()]] - `references` [EXTRACTED]
-- [[dot-evaluate()]] - `references` [EXTRACTED]
+- [[._decide()]] - `references` [EXTRACTED]
+- [[.allowed()_1]] - `method` [EXTRACTED]
+- [[.enforce()]] - `references` [EXTRACTED]
+- [[.evaluate()]] - `references` [EXTRACTED]
 - [[A2AMethod_1]] - `uses` [INFERRED]
 - [[A2APolicyConfig_1]] - `uses` [INFERRED]
 - [[A2APolicyEngine_3]] - `uses` [INFERRED]
@@ -26,4 +26,4 @@ tags:
 - [[test_a2a_policy.py]] - `imports` [EXTRACTED]
 - [[test_decision_allowed_property_only_true_for_terminal_allow()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_75
+#graphify/code #graphify/EXTRACTED #community/A2AMethod

@@ -1,19 +1,19 @@
 ---
 source_file: "docs/planning/recovery/RECOVERY_PLAN.md"
 type: "document"
-community: "Community 591"
+community: "AgentShroud Recovery Plan v0.4.0"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_591
+  - community/AgentShroud_Recovery_Plan_v040
 ---
 
 # AgentShroud Recovery Plan v0.4.0
 
 ## Connections
-- [[EXECUTIVE SUMMARY_12]] - `contains` [EXTRACTED]
-- [[NEXT STEPS_7]] - `contains` [EXTRACTED]
+- [[EXECUTIVE SUMMARY]] - `contains` [EXTRACTED]
+- [[NEXT STEPS]] - `contains` [EXTRACTED]
 - [[PHASE 0 STABILIZATION ✅ COMPLETE]] - `contains` [EXTRACTED]
 - [[PHASE 1 SECURITY FIX (CURRENT PRIORITY)]] - `contains` [EXTRACTED]
 - [[PHASE 2 USER ACTIONS REQUIRED]] - `contains` [EXTRACTED]
@@ -21,4 +21,4 @@ tags:
 - [[PHASE 4 CLEANUP & v0.4.0 RELEASE]] - `contains` [EXTRACTED]
 - [[RECOVERY_PLAN]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_591
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Recovery_Plan_v040
