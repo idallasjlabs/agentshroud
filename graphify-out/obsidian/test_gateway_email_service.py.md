@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_gateway_email_service.py"
 type: "code"
-community: "Community 188"
+community: "GatewayEmailService"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_188
+  - community/GatewayEmailService
 ---
 
 # test_gateway_email_service.py
@@ -21,4 +21,4 @@ tags:
 - [[auth_dep()]] - `imports` [EXTRACTED]
 - [[test_sender_property()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_188
+#graphify/code #graphify/EXTRACTED #community/GatewayEmailService

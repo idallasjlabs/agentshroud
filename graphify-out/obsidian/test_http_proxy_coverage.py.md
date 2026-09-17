@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "Community 62"
+community: "HTTPConnectProxy"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_62
+  - community/HTTPConnectProxy
 ---
 
 # test_http_proxy_coverage.py
@@ -66,4 +66,4 @@ tags:
 - [[test_tunnel_retries_then_succeeds()]] - `contains` [EXTRACTED]
 - [[test_tunnel_target_writer_close_failure_swallowed()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_62
+#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy

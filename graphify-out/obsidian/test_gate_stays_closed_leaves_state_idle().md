@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/test/test_playback_state/test_playback_state.c"
 type: "code"
-community: "Community 273"
+community: "test_playback_state.c"
 location: "L233"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_273
+  - community/test_playback_statec
 ---
 
 # test_gate_stays_closed_leaves_state_idle()
@@ -18,4 +18,4 @@ tags:
 - [[test_playback_state.c]] - `contains` [EXTRACTED]
 - [[wakeword_tts_playing()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_273
+#graphify/code #graphify/EXTRACTED #community/test_playback_statec

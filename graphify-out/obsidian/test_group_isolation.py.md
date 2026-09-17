@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_isolation.py"
 type: "code"
-community: "Agent Isolation & Group Config Tests"
+community: "RBACConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Agent_Isolation__Group_Config_Tests
+  - community/RBACConfig
 ---
 
 # test_group_isolation.py
@@ -31,4 +31,4 @@ tags:
 - [[teams()_2]] - `contains` [EXTRACTED]
 - [[tmp_workspace()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Agent_Isolation__Group_Config_Tests
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy.py"
 type: "code"
-community: "Community 72"
+community: "test_http_proxy.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_72
+  - community/test_http_proxypy
 ---
 
 # test_http_proxy.py
@@ -52,4 +52,4 @@ tags:
 - [[web_config.py (WebProxyConfig)]] - `references` [EXTRACTED]
 - [[web_proxy.py (WebProxy)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_72
+#graphify/code #graphify/EXTRACTED #community/test_http_proxypy

@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_hermes_cron_seed.py"
 type: "code"
-community: "Community 408"
+community: "test_hermes_cron_seed.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_408
+  - community/test_hermes_cron_seedpy
 ---
 
 # test_hermes_cron_seed.py
@@ -30,4 +30,4 @@ tags:
 - [[test_seed_cron_supports_optional_model_and_provider_args()]] - `contains` [EXTRACTED]
 - [[test_stability_report_job_present()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_408
+#graphify/code #graphify/EXTRACTED #community/test_hermes_cron_seedpy

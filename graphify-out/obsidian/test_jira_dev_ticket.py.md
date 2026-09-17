@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_jira_dev_ticket.py"
 type: "code"
-community: "Community 169"
+community: "test_jira_dev_ticket.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_169
+  - community/test_jira_dev_ticketpy
 ---
 
 # test_jira_dev_ticket.py
@@ -51,4 +51,4 @@ tags:
 - [[test_transitions_url_rejects_empty_issue_key()]] - `contains` [EXTRACTED]
 - [[test_transitions_url_targets_arbitrary_issue()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_169
+#graphify/code #graphify/EXTRACTED #community/test_jira_dev_ticketpy

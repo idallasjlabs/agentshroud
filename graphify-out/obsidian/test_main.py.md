@@ -1,12 +1,12 @@
 ---
 source_file: "chatbot/test_main.py"
 type: "code"
-community: "Community 76"
+community: "chatbot/main.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_76
+  - community/chatbot/mainpy
 ---
 
 # test_main.py
@@ -23,4 +23,4 @@ tags:
 - [[app()_1]] - `contains` [EXTRACTED]
 - [[client()_17]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_76
+#graphify/code #graphify/EXTRACTED #community/chatbot/mainpy

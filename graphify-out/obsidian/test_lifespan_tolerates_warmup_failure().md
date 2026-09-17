@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "Community 1155"
+community: "test_voice_gateway.py"
 location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1155
+  - community/test_voice_gatewaypy
 ---
 
 # test_lifespan_tolerates_warmup_failure()
@@ -16,4 +16,4 @@ tags:
 - [[_boom()]] - `indirect_call` [INFERRED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1155
+#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy

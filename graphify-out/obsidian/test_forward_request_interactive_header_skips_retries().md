@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_failover.py"
 type: "code"
-community: "Community 233"
+community: "test_llm_proxy_failover.py"
 location: "L104"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_233
+  - community/test_llm_proxy_failoverpy
 ---
 
 # test_forward_request_interactive_header_skips_retries()
@@ -16,4 +16,4 @@ tags:
 - [[test_llm_proxy_failover.py]] - `contains` [EXTRACTED]
 - [[x-agentshroud-interactive 1 → the first 429 returns immediately (no     2s4s8]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_233
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_failoverpy

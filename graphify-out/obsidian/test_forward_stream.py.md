@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_stream.py"
 type: "code"
-community: "Community 113"
+community: "test_forward_stream.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_113
+  - community/test_forward_streampy
 ---
 
 # test_forward_stream.py
@@ -54,4 +54,4 @@ tags:
 - [[test_sentences_from_deltas_single_delta_full_sentence()]] - `contains` [EXTRACTED]
 - [[test_sentences_from_deltas_splits_on_boundaries()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_113
+#graphify/code #graphify/EXTRACTED #community/test_forward_streampy
