@@ -1,46 +1,46 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "Community 185"
+community: "EgressPolicy"
 location: "L47"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_185
+  - community/EgressPolicy
 ---
 
 # EgressPolicy
 
 ## Connections
-- [[dot-__init__()_158]] - `references` [EXTRACTED]
-- [[dot-get_policy()]] - `references` [EXTRACTED]
-- [[dot-matches_domain()]] - `method` [EXTRACTED]
-- [[dot-matches_ip()]] - `method` [EXTRACTED]
-- [[dot-matches_port()]] - `method` [EXTRACTED]
-- [[dot-set_agent_policy()]] - `references` [EXTRACTED]
-- [[dot-setup_method()_14]] - `calls` [EXTRACTED]
-- [[dot-setup_method()_15]] - `calls` [EXTRACTED]
-- [[dot-test_agent_specific_policy()]] - `calls` [EXTRACTED]
-- [[dot-test_allowed_cidr()]] - `calls` [EXTRACTED]
-- [[dot-test_connect_proxy_policy_allows_smtp_gmail_465()]] - `calls` [EXTRACTED]
-- [[dot-test_connect_proxy_policy_allows_smtp_mail_me_587()]] - `calls` [EXTRACTED]
-- [[dot-test_default_policy_allows_imaps()]] - `calls` [EXTRACTED]
-- [[dot-test_default_policy_allows_smtp_submission()]] - `calls` [EXTRACTED]
-- [[dot-test_default_policy_allows_smtps()]] - `calls` [EXTRACTED]
-- [[dot-test_deny_all_false()]] - `calls` [EXTRACTED]
-- [[dot-test_egress_filter_blocks_mcp_exfil()]] - `calls` [INFERRED]
-- [[dot-test_egress_filter_loaded()]] - `calls` [EXTRACTED]
-- [[dot-test_empty_ports_allows_all()]] - `calls` [EXTRACTED]
-- [[dot-test_matches_domain_exact()]] - `calls` [EXTRACTED]
-- [[dot-test_matches_domain_wildcard()]] - `calls` [EXTRACTED]
-- [[dot-test_matches_ip_cidr()]] - `calls` [EXTRACTED]
-- [[dot-test_matches_ip_invalid()]] - `calls` [EXTRACTED]
-- [[dot-test_matches_ip_single()]] - `calls` [EXTRACTED]
-- [[dot-test_matches_port()]] - `calls` [EXTRACTED]
-- [[dot-test_matches_port_empty_allows_all()]] - `calls` [EXTRACTED]
-- [[dot-test_non_email_port_still_denied_for_unlisted_domain()]] - `calls` [EXTRACTED]
-- [[dot-test_port_not_allowed()]] - `calls` [EXTRACTED]
-- [[dot-test_private_ip_allowed_if_in_policy_allowlist()]] - `calls` [EXTRACTED]
+- [[.__init__()_158]] - `references` [EXTRACTED]
+- [[.get_policy()]] - `references` [EXTRACTED]
+- [[.matches_domain()]] - `method` [EXTRACTED]
+- [[.matches_ip()]] - `method` [EXTRACTED]
+- [[.matches_port()]] - `method` [EXTRACTED]
+- [[.set_agent_policy()]] - `references` [EXTRACTED]
+- [[.setup_method()_14]] - `calls` [EXTRACTED]
+- [[.setup_method()_15]] - `calls` [EXTRACTED]
+- [[.test_agent_specific_policy()]] - `calls` [EXTRACTED]
+- [[.test_allowed_cidr()]] - `calls` [EXTRACTED]
+- [[.test_connect_proxy_policy_allows_smtp_gmail_465()]] - `calls` [EXTRACTED]
+- [[.test_connect_proxy_policy_allows_smtp_mail_me_587()]] - `calls` [EXTRACTED]
+- [[.test_default_policy_allows_imaps()]] - `calls` [EXTRACTED]
+- [[.test_default_policy_allows_smtp_submission()]] - `calls` [EXTRACTED]
+- [[.test_default_policy_allows_smtps()]] - `calls` [EXTRACTED]
+- [[.test_deny_all_false()]] - `calls` [EXTRACTED]
+- [[.test_egress_filter_blocks_mcp_exfil()]] - `calls` [INFERRED]
+- [[.test_egress_filter_loaded()]] - `calls` [EXTRACTED]
+- [[.test_empty_ports_allows_all()]] - `calls` [EXTRACTED]
+- [[.test_matches_domain_exact()]] - `calls` [EXTRACTED]
+- [[.test_matches_domain_wildcard()]] - `calls` [EXTRACTED]
+- [[.test_matches_ip_cidr()]] - `calls` [EXTRACTED]
+- [[.test_matches_ip_invalid()]] - `calls` [EXTRACTED]
+- [[.test_matches_ip_single()]] - `calls` [EXTRACTED]
+- [[.test_matches_port()]] - `calls` [EXTRACTED]
+- [[.test_matches_port_empty_allows_all()]] - `calls` [EXTRACTED]
+- [[.test_non_email_port_still_denied_for_unlisted_domain()]] - `calls` [EXTRACTED]
+- [[.test_port_not_allowed()]] - `calls` [EXTRACTED]
+- [[.test_private_ip_allowed_if_in_policy_allowlist()]] - `calls` [EXTRACTED]
 - [[Egress policy for an agent or global default.]] - `rationale_for` [EXTRACTED]
 - [[EgressFilter_1]] - `uses` [INFERRED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
@@ -113,4 +113,4 @@ tags:
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 - [[v0.9.0 cron-email fix SMTPIMAP ports 465587993 allowed for OpenClaw cron email]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_185
+#graphify/code #graphify/INFERRED #community/EgressPolicy

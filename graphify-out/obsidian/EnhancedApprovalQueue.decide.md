@@ -1,13 +1,13 @@
 ---
 source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "Community 1779"
+community: "EnhancedApprovalQueue.decide"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1779
+  - community/EnhancedApprovalQueuedecide
 ---
 
 # EnhancedApprovalQueue.decide
 
-#graphify/code #graphify/EXTRACTED #community/Community_1779
+#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueuedecide

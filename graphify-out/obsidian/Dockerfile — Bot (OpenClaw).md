@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/Dockerfile.bot.md"
 type: "document"
-community: "Community 821"
+community: "Dockerfile — Bot (OpenClaw)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_821
+  - community/Dockerfile__Bot_OpenClaw
 ---
 
 # Dockerfile — Bot (OpenClaw)
@@ -26,4 +26,4 @@ tags:
 - [[TODO (from source)]] - `contains` [EXTRACTED]
 - [[gateway.security.trivy_report]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_821
+#graphify/document #graphify/EXTRACTED #community/Dockerfile__Bot_OpenClaw

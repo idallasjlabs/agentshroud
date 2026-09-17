@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/version_routes.py"
 type: "rationale"
-community: "Community 55"
+community: "version_routes.py"
 location: "L100"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_55
+  - community/version_routespy
 ---
 
 # Downgrade to a previous version. Requires approval_id unless dry_run.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[downgrade_version()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_55
+#graphify/rationale #graphify/EXTRACTED #community/version_routespy

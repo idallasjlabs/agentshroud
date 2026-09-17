@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-supply-chain.md"
 type: "document"
-community: "Community 551"
+community: "Detailed Profiles"
 location: "L102"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_551
+  - community/Detailed_Profiles
 ---
 
 # Docker Engine
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Detailed Profiles]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_551
+#graphify/document #graphify/EXTRACTED #community/Detailed_Profiles

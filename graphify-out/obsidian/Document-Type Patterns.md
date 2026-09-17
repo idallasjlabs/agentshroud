@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-tw/SKILL.md"
 type: "document"
-community: "Community 328"
+community: ".agents/skills/i-tw/SKILL.md"
 location: "L50"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_328
+  - community/agents/skills/i-tw/SKILLmd
 ---
 
 # Document-Type Patterns
@@ -15,4 +15,4 @@ tags:
 - [[README — Entry Point for a Repo or Service]] - `contains` [EXTRACTED]
 - [[Skill Technical Writer (TW)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_328
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-tw/SKILLmd

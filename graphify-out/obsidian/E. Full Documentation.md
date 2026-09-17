@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/MASTER-FEATURE-LIST.md"
 type: "document"
-community: "Community 540"
+community: "v1.0.0 — \"Fortress\" (Polish + Public Release)"
 location: "L271"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_540
+  - community/v100__Fortress_Polish__Public_Release
 ---
 
 # E. Full Documentation
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[v1.0.0 — Fortress (Polish + Public Release)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_540
+#graphify/document #graphify/EXTRACTED #community/v100__Fortress_Polish__Public_Release

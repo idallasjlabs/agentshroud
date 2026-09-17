@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-apollo/SKILL.md"
 type: "concept"
-community: "Community 983"
+community: "Apollo — Audio Systems Producer"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_983
+  - community/Apollo__Audio_Systems_Producer
 ---
 
 # ElevenLabs Text-to-Dialogue API
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Apollo — Audio Systems Producer_6]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_983
+#graphify/concept #graphify/EXTRACTED #community/Apollo__Audio_Systems_Producer

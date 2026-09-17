@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/dns_filter.py"
 type: "code"
-community: "Session Manager & PII/Context Guard"
+community: "DNSFilterConfig"
 location: "L27"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Session_Manager__PII/Context_Guard
+  - community/DNSFilterConfig
 ---
 
 # EntropyCalculator
 
 ## Connections
-- [[dot-shannon_entropy()]] - `method` [EXTRACTED]
+- [[.shannon_entropy()]] - `method` [EXTRACTED]
 - [[TestAuditLogging_1]] - `uses` [INFERRED]
 - [[TestAuditTrail]] - `uses` [INFERRED]
 - [[TestAuth]] - `uses` [INFERRED]
@@ -47,4 +47,4 @@ tags:
 - [[test_dns_filter.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Session_Manager__PII/Context_Guard
+#graphify/code #graphify/INFERRED #community/DNSFilterConfig

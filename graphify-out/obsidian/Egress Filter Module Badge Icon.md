@@ -1,11 +1,11 @@
 ---
 source_file: "branding/icons/modules/egress-filter-256x256.png"
 type: "image"
-community: "Community 565"
+community: "EgressFilterConfig"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/Community_565
+  - community/EgressFilterConfig
 ---
 
 # Egress Filter Module Badge Icon
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud macOS App Icon (1024x1024, Rounded Squircle)]] - `conceptually_related_to` [INFERRED]
 - [[egress_filter.py_1]] - `conceptually_related_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/Community_565
+#graphify/image #graphify/INFERRED #community/EgressFilterConfig

@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/proxy/web_config.py"
 type: "code"
-community: "Egress Filter & HTTP Proxy"
+community: "WebProxyConfig"
 location: "L21"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Egress_Filter__HTTP_Proxy
+  - community/WebProxyConfig
 ---
 
 # DomainSettings
 
 ## Connections
-- [[dot-get_domain_settings()]] - `references` [EXTRACTED]
-- [[dot-test_custom_domain_size_limit()]] - `calls` [EXTRACTED]
-- [[dot-test_get_domain_settings_custom()]] - `calls` [EXTRACTED]
-- [[dot-test_wildcard_domain_settings()]] - `calls` [EXTRACTED]
+- [[.get_domain_settings()]] - `references` [EXTRACTED]
+- [[.test_custom_domain_size_limit()]] - `calls` [EXTRACTED]
+- [[.test_get_domain_settings_custom()]] - `calls` [EXTRACTED]
+- [[.test_wildcard_domain_settings()]] - `calls` [EXTRACTED]
 - [[Per-domain configuration overrides.]] - `rationale_for` [EXTRACTED]
 - [[TestAllowlistMode]] - `uses` [INFERRED]
 - [[TestAuditChain_1]] - `uses` [INFERRED]
@@ -37,4 +37,4 @@ tags:
 - [[test_web_proxy.py]] - `imports` [EXTRACTED]
 - [[web_config.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Egress_Filter__HTTP_Proxy
+#graphify/code #graphify/INFERRED #community/WebProxyConfig

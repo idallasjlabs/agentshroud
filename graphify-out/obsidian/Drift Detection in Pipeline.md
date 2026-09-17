@@ -1,14 +1,14 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "code"
-community: "Community 1947"
+community: "Drift Detection in Pipeline"
 location: "line 313"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1947
+  - community/Drift_Detection_in_Pipeline
 ---
 
 # Drift Detection in Pipeline
 
-#graphify/code #graphify/EXTRACTED #community/Community_1947
+#graphify/code #graphify/EXTRACTED #community/Drift_Detection_in_Pipeline

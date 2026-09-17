@@ -1,17 +1,19 @@
 ---
 source_file: ""
 type: "code"
-community: "Voice Gateway STT & Browser Security"
+community: "Enum"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Voice_Gateway_STT__Browser_Security
+  - community/Enum
 ---
 
 # Enum
 
 ## Connections
-- [[dot-agentsskillsi-browserscriptsbrowse.py]] - `imports_from` [EXTRACTED]
+- [[.agentsskillsi-browserscriptsbrowse.py]] - `imports_from` [EXTRACTED]
+- [[A2ADecision_1]] - `inherits` [EXTRACTED]
+- [[A2AMessageType_1]] - `inherits` [EXTRACTED]
 - [[A2AMethod]] - `inherits` [EXTRACTED]
 - [[A2APolicyAction]] - `inherits` [EXTRACTED]
 - [[Action]] - `inherits` [EXTRACTED]
@@ -22,6 +24,7 @@ tags:
 - [[AuditResult_1]] - `inherits` [EXTRACTED]
 - [[ChainAction]] - `inherits` [EXTRACTED]
 - [[ContentThreatType]] - `inherits` [EXTRACTED]
+- [[Coverage]] - `inherits` [EXTRACTED]
 - [[Decision_1]] - `inherits` [EXTRACTED]
 - [[DelegationPrivilege]] - `inherits` [EXTRACTED]
 - [[DisclosureCategory]] - `inherits` [EXTRACTED]
@@ -50,12 +53,12 @@ tags:
 - [[Platform]] - `inherits` [EXTRACTED]
 - [[ProxyAction]] - `inherits` [EXTRACTED]
 - [[Resource]] - `inherits` [EXTRACTED]
+- [[RiskLevel]] - `inherits` [EXTRACTED]
 - [[RiskLevel_1]] - `inherits` [EXTRACTED]
 - [[RiskLevel_2]] - `inherits` [EXTRACTED]
 - [[RiskLevel_3]] - `inherits` [EXTRACTED]
-- [[RiskLevel]] - `inherits` [EXTRACTED]
-- [[RiskLevel_5]] - `inherits` [EXTRACTED]
 - [[RiskLevel_4]] - `inherits` [EXTRACTED]
+- [[RiskLevel_5]] - `inherits` [EXTRACTED]
 - [[RiskLevel_6]] - `inherits` [EXTRACTED]
 - [[Role_1]] - `inherits` [EXTRACTED]
 - [[RotationStatus]] - `inherits` [EXTRACTED]
@@ -72,7 +75,10 @@ tags:
 - [[URLVerdict]] - `inherits` [EXTRACTED]
 - [[UserRole]] - `inherits` [EXTRACTED]
 - [[ViolationType]] - `inherits` [EXTRACTED]
+- [[VulnClass]] - `inherits` [EXTRACTED]
 - [[WSEventType]] - `inherits` [EXTRACTED]
+- [[_State]] - `inherits` [EXTRACTED]
+- [[a2a_governance.py_1]] - `imports_from` [EXTRACTED]
 - [[a2a_policy.py]] - `imports_from` [EXTRACTED]
 - [[agent_isolation.py]] - `imports_from` [EXTRACTED]
 - [[browser_security.py]] - `imports_from` [EXTRACTED]
@@ -105,6 +111,7 @@ tags:
 - [[rbac.py]] - `imports_from` [EXTRACTED]
 - [[rbac_config.py]] - `imports_from` [EXTRACTED]
 - [[securebrowserscriptsbrowse.py]] - `imports_from` [EXTRACTED]
+- [[server.py]] - `imports_from` [EXTRACTED]
 - [[skill_guard.py]] - `imports_from` [EXTRACTED]
 - [[socmodels.py]] - `imports_from` [EXTRACTED]
 - [[subagent_governance.py]] - `imports_from` [EXTRACTED]
@@ -112,8 +119,9 @@ tags:
 - [[test_web_proxy_security.py]] - `imports_from` [EXTRACTED]
 - [[tool_chain_analyzer.py]] - `imports_from` [EXTRACTED]
 - [[tool_result_injection.py]] - `imports_from` [EXTRACTED]
+- [[triage-cve-mitigations.py]] - `imports_from` [EXTRACTED]
 - [[url_analyzer.py]] - `imports_from` [EXTRACTED]
 - [[web_content_scanner.py]] - `imports_from` [EXTRACTED]
 - [[web_proxy.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_STT__Browser_Security
+#graphify/code #graphify/EXTRACTED #community/Enum

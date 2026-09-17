@@ -1,53 +1,53 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "Community 182"
+community: "EgressFilter"
 location: "L102"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_182
+  - community/EgressFilter
 ---
 
 # EgressFilter
 
 ## Connections
-- [[dot-__init__()_158]] - `method` [EXTRACTED]
-- [[dot-_check_impl()]] - `method` [EXTRACTED]
-- [[dot-_is_ipv6()]] - `method` [EXTRACTED]
-- [[dot-_is_private_ip()]] - `method` [EXTRACTED]
-- [[dot-_matches_allowlist_domain()]] - `method` [EXTRACTED]
-- [[dot-_matches_ip_list()]] - `method` [EXTRACTED]
-- [[dot-_record()]] - `method` [EXTRACTED]
-- [[dot-check()_1]] - `method` [EXTRACTED]
-- [[dot-check_async()]] - `method` [EXTRACTED]
-- [[dot-flush_notifications()]] - `method` [EXTRACTED]
-- [[dot-get_log()]] - `method` [EXTRACTED]
-- [[dot-get_policy()]] - `method` [EXTRACTED]
-- [[dot-get_stats()_12]] - `method` [EXTRACTED]
-- [[dot-get_top_destinations()]] - `method` [EXTRACTED]
-- [[dot-grant_timed_approval()]] - `method` [EXTRACTED]
-- [[dot-set_agent_policy()]] - `method` [EXTRACTED]
-- [[dot-set_approval_queue()]] - `method` [EXTRACTED]
-- [[dot-set_event_bus()]] - `method` [EXTRACTED]
-- [[dot-set_notifier()]] - `method` [EXTRACTED]
-- [[dot-setup_method()_14]] - `calls` [EXTRACTED]
-- [[dot-setup_method()_15]] - `calls` [EXTRACTED]
-- [[dot-test_allowed_egress_counts_as_allowed()]] - `calls` [EXTRACTED]
-- [[dot-test_denied_egress_counts_as_blocked()]] - `calls` [EXTRACTED]
-- [[dot-test_deny_all_false()]] - `calls` [EXTRACTED]
-- [[dot-test_denylist_monitor_mode()]] - `calls` [EXTRACTED]
-- [[dot-test_denylist_overrides_allowlist()]] - `calls` [EXTRACTED]
-- [[dot-test_egress_filter_instantiates()]] - `calls` [EXTRACTED]
-- [[dot-test_empty_ports_allows_all()]] - `calls` [EXTRACTED]
-- [[dot-test_enforce_mode_blocks_unknown_domains()]] - `calls` [EXTRACTED]
-- [[dot-test_logging_differences_by_mode()]] - `calls` [EXTRACTED]
-- [[dot-test_monitor_mode_allows_unknown_domains()]] - `calls` [EXTRACTED]
-- [[dot-test_per_agent_policy()]] - `calls` [EXTRACTED]
-- [[dot-test_port_filtering()]] - `calls` [EXTRACTED]
-- [[dot-test_private_ip_blocking()]] - `calls` [EXTRACTED]
-- [[dot-test_url_parsing()_1]] - `calls` [EXTRACTED]
-- [[dot-test_wildcard_allowlist_matching()]] - `calls` [EXTRACTED]
+- [[.__init__()_158]] - `method` [EXTRACTED]
+- [[._check_impl()]] - `method` [EXTRACTED]
+- [[._is_ipv6()]] - `method` [EXTRACTED]
+- [[._is_private_ip()]] - `method` [EXTRACTED]
+- [[._matches_allowlist_domain()]] - `method` [EXTRACTED]
+- [[._matches_ip_list()]] - `method` [EXTRACTED]
+- [[._record()]] - `method` [EXTRACTED]
+- [[.check()_1]] - `method` [EXTRACTED]
+- [[.check_async()]] - `method` [EXTRACTED]
+- [[.flush_notifications()]] - `method` [EXTRACTED]
+- [[.get_log()]] - `method` [EXTRACTED]
+- [[.get_policy()]] - `method` [EXTRACTED]
+- [[.get_stats()_12]] - `method` [EXTRACTED]
+- [[.get_top_destinations()]] - `method` [EXTRACTED]
+- [[.grant_timed_approval()]] - `method` [EXTRACTED]
+- [[.set_agent_policy()]] - `method` [EXTRACTED]
+- [[.set_approval_queue()]] - `method` [EXTRACTED]
+- [[.set_event_bus()]] - `method` [EXTRACTED]
+- [[.set_notifier()]] - `method` [EXTRACTED]
+- [[.setup_method()_14]] - `calls` [EXTRACTED]
+- [[.setup_method()_15]] - `calls` [EXTRACTED]
+- [[.test_allowed_egress_counts_as_allowed()]] - `calls` [EXTRACTED]
+- [[.test_denied_egress_counts_as_blocked()]] - `calls` [EXTRACTED]
+- [[.test_deny_all_false()]] - `calls` [EXTRACTED]
+- [[.test_denylist_monitor_mode()]] - `calls` [EXTRACTED]
+- [[.test_denylist_overrides_allowlist()]] - `calls` [EXTRACTED]
+- [[.test_egress_filter_instantiates()]] - `calls` [EXTRACTED]
+- [[.test_empty_ports_allows_all()]] - `calls` [EXTRACTED]
+- [[.test_enforce_mode_blocks_unknown_domains()]] - `calls` [EXTRACTED]
+- [[.test_logging_differences_by_mode()]] - `calls` [EXTRACTED]
+- [[.test_monitor_mode_allows_unknown_domains()]] - `calls` [EXTRACTED]
+- [[.test_per_agent_policy()]] - `calls` [EXTRACTED]
+- [[.test_port_filtering()]] - `calls` [EXTRACTED]
+- [[.test_private_ip_blocking()]] - `calls` [EXTRACTED]
+- [[.test_url_parsing()_1]] - `calls` [EXTRACTED]
+- [[.test_wildcard_allowlist_matching()]] - `calls` [EXTRACTED]
 - [[Data Flow]] - `references` [EXTRACTED]
 - [[DataExfilVolumeGuard]] - `conceptually_related_to` [EXTRACTED]
 - [[EgressFilter_1]] - `uses` [INFERRED]
@@ -117,4 +117,4 @@ tags:
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_182
+#graphify/code #graphify/EXTRACTED #community/EgressFilter

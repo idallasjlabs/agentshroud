@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/drift_detector.py"
 type: "code"
-community: "Encrypted Store & Drift Detector"
+community: "EncryptedStore"
 location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Encrypted_Store__Drift_Detector
+  - community/EncryptedStore
 ---
 
 # DriftAlert
 
 ## Connections
-- [[dot-check_drift()]] - `references` [EXTRACTED]
+- [[.check_drift()]] - `references` [EXTRACTED]
 - [[drift_detector.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Encrypted_Store__Drift_Detector
+#graphify/code #graphify/EXTRACTED #community/EncryptedStore

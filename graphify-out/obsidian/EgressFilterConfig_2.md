@@ -1,18 +1,27 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/egress_config.py.md"
+source_file: "gateway/security/egress_config.py"
 type: "code"
-community: "Gateway Test Suite"
-location: "gateway/security/egress_config.py"
+community: "EgressFilterConfig"
+location: "L173"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/EgressFilterConfig
 ---
 
 # EgressFilterConfig
 
 ## Connections
-- [[Egress Exfiltration Prevention]] - `implements` [EXTRACTED]
-- [[egress_config.py (Security)]] - `contains` [EXTRACTED]
+- [[._matches_any_pattern()_1]] - `method` [EXTRACTED]
+- [[.from_environment()_1]] - `method` [EXTRACTED]
+- [[.get_effective_allowlist()_1]] - `method` [EXTRACTED]
+- [[.is_denylisted()_1]] - `method` [EXTRACTED]
+- [[.matches_allowlist()_1]] - `method` [EXTRACTED]
+- [[Configuration for egress filtering enforcement.]] - `rationale_for` [EXTRACTED]
+- [[PERMANENT_EGRESS_DOMAINS]] - `shares_data_with` [EXTRACTED]
+- [[domain_matches()]] - `calls` [EXTRACTED]
+- [[egress_config.py_3]] - `contains` [EXTRACTED]
+- [[get_egress_config()]] - `shares_data_with` [EXTRACTED]
+- [[set_egress_config()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

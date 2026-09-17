@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/03-data.md"
 type: "concept"
-community: "Community 572"
+community: "03-data.md"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Community_572
+  - community/03-datamd
 ---
 
 # Entity Relationship Diagram (ledger, approval_items)
@@ -17,4 +17,4 @@ tags:
 - [[State Machine — Approval Queue Item Lifecycle]] - `shares_data_with` [INFERRED]
 - [[dataREADME]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Community_572
+#graphify/concept #graphify/INFERRED #community/03-datamd

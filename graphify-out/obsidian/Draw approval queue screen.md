@@ -1,17 +1,17 @@
 ---
 source_file: "src/interfaces/text_control_center.py"
 type: "rationale"
-community: "Community 277"
+community: "ControlCenter"
 location: "L221"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_277
+  - community/ControlCenter
 ---
 
 # Draw approval queue screen
 
 ## Connections
-- [[dot-draw_approvals()]] - `rationale_for` [EXTRACTED]
+- [[.draw_approvals()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_277
+#graphify/rationale #graphify/EXTRACTED #community/ControlCenter

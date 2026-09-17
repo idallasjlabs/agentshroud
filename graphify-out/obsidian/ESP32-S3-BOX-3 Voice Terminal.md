@@ -1,12 +1,12 @@
 ---
 source_file: "CHANGELOG.md"
 type: "concept"
-community: "Community 569"
+community: "AgentShroud Changelog"
 location: "## [1.2.0]"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_569
+  - community/AgentShroud_Changelog
 ---
 
 # ESP32-S3-BOX-3 Voice Terminal
@@ -20,4 +20,4 @@ tags:
 - [[OTA Wireless Firmware Updates]] - `references` [EXTRACTED]
 - [[Voice Gateway]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_569
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Changelog

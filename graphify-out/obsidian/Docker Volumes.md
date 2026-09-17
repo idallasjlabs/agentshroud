@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/06 - Containers & Services/volumes.md"
 type: "document"
-community: "Community 771"
+community: "Docker Volumes"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_771
+  - community/Docker_Volumes
 ---
 
 # Docker Volumes
@@ -18,6 +18,6 @@ tags:
 - [[Related Notes_49]] - `contains` [EXTRACTED]
 - [[Volume Details]] - `contains` [EXTRACTED]
 - [[Volume Inventory]] - `contains` [EXTRACTED]
-- [[volumes_1]] - `contains` [EXTRACTED]
+- [[volumes]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_771
+#graphify/document #graphify/EXTRACTED #community/Docker_Volumes

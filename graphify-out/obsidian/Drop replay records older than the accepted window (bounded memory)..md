@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/mfa_guard.py"
 type: "rationale"
-community: "Community 57"
+community: "test_mfa_guard.py"
 location: "L296"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_57
+  - community/test_mfa_guardpy
 ---
 
 # Drop replay records older than the accepted window (bounded memory).
 
 ## Connections
-- [[dot-_prune_used()]] - `rationale_for` [EXTRACTED]
+- [[._prune_used()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_57
+#graphify/rationale #graphify/EXTRACTED #community/test_mfa_guardpy

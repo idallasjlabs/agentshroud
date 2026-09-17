@@ -1,41 +1,41 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "code"
-community: "Encrypted Store & Drift Detector"
+community: "EncryptedStore"
 location: "L58"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Encrypted_Store__Drift_Detector
+  - community/EncryptedStore
 ---
 
 # EncryptedStore
 
 ## Connections
-- [[dot-__init__()_73]] - `method` [EXTRACTED]
-- [[dot-_derive_key()]] - `method` [EXTRACTED]
-- [[dot-_resolve_secret()]] - `method` [EXTRACTED]
-- [[dot-decrypt()]] - `method` [EXTRACTED]
-- [[dot-decrypt_b64()]] - `method` [EXTRACTED]
-- [[dot-decrypt_json()]] - `method` [EXTRACTED]
-- [[dot-decrypt_str()]] - `method` [EXTRACTED]
-- [[dot-encrypt()]] - `method` [EXTRACTED]
-- [[dot-encrypt_b64()]] - `method` [EXTRACTED]
-- [[dot-get_blob_key_id()]] - `method` [EXTRACTED]
-- [[dot-rotate()]] - `calls` [EXTRACTED]
-- [[dot-setup_method()_11]] - `calls` [EXTRACTED]
-- [[dot-store()_1]] - `calls` [EXTRACTED]
-- [[dot-test_custom_key_id()]] - `calls` [EXTRACTED]
-- [[dot-test_encrypt_decrypt_still_works_after_zeroing()]] - `calls` [EXTRACTED]
-- [[dot-test_encrypted_store_constant_time()]] - `calls` [INFERRED]
-- [[dot-test_encrypted_store_error_no_key_leak()]] - `calls` [INFERRED]
-- [[dot-test_env_var_secret()]] - `calls` [EXTRACTED]
-- [[dot-test_file_secret()]] - `calls` [EXTRACTED]
-- [[dot-test_key_rotation_auto_increment()]] - `calls` [EXTRACTED]
-- [[dot-test_key_rotation_with_zeroing()]] - `calls` [EXTRACTED]
-- [[dot-test_no_secret_raises()]] - `calls` [EXTRACTED]
-- [[dot-test_wrong_key_fails()]] - `calls` [EXTRACTED]
-- [[dot-test_wrong_key_fails()_1]] - `calls` [EXTRACTED]
+- [[.__init__()_73]] - `method` [EXTRACTED]
+- [[._derive_key()]] - `method` [EXTRACTED]
+- [[._resolve_secret()]] - `method` [EXTRACTED]
+- [[.decrypt()]] - `method` [EXTRACTED]
+- [[.decrypt_b64()]] - `method` [EXTRACTED]
+- [[.decrypt_json()]] - `method` [EXTRACTED]
+- [[.decrypt_str()]] - `method` [EXTRACTED]
+- [[.encrypt()]] - `method` [EXTRACTED]
+- [[.encrypt_b64()]] - `method` [EXTRACTED]
+- [[.get_blob_key_id()]] - `method` [EXTRACTED]
+- [[.rotate()]] - `calls` [EXTRACTED]
+- [[.setup_method()_11]] - `calls` [EXTRACTED]
+- [[.store()_1]] - `calls` [EXTRACTED]
+- [[.test_custom_key_id()]] - `calls` [EXTRACTED]
+- [[.test_encrypt_decrypt_still_works_after_zeroing()]] - `calls` [EXTRACTED]
+- [[.test_encrypted_store_constant_time()]] - `calls` [INFERRED]
+- [[.test_encrypted_store_error_no_key_leak()]] - `calls` [INFERRED]
+- [[.test_env_var_secret()]] - `calls` [EXTRACTED]
+- [[.test_file_secret()]] - `calls` [EXTRACTED]
+- [[.test_key_rotation_auto_increment()]] - `calls` [EXTRACTED]
+- [[.test_key_rotation_with_zeroing()]] - `calls` [EXTRACTED]
+- [[.test_no_secret_raises()]] - `calls` [EXTRACTED]
+- [[.test_wrong_key_fails()]] - `calls` [EXTRACTED]
+- [[.test_wrong_key_fails()_1]] - `calls` [EXTRACTED]
 - [[AES-256-GCM encrypted storage with key derivation and rotation support.]] - `rationale_for` [EXTRACTED]
 - [[TestAgentIsolation]] - `uses` [INFERRED]
 - [[TestAuditTrail]] - `uses` [INFERRED]
@@ -78,4 +78,4 @@ tags:
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Encrypted_Store__Drift_Detector
+#graphify/code #graphify/INFERRED #community/EncryptedStore

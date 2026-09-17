@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/egress_monitor.py"
 type: "code"
-community: "Community 155"
+community: "lifespan.py"
 location: "L61"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_155
+  - community/lifespanpy
 ---
 
 # EgressSummary
 
 ## Connections
-- [[dot-daily_summary()]] - `references` [EXTRACTED]
+- [[.daily_summary()]] - `references` [EXTRACTED]
 - [[egress_monitor.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_155
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

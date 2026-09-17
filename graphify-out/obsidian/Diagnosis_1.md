@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md"
 type: "document"
-community: "Community 919"
+community: "Egress Filter Errors"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_919
+  - community/Egress_Filter_Errors
 ---
 
 # Diagnosis
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[HTTP 403 — Egress Blocked]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_919
+#graphify/document #graphify/EXTRACTED #community/Egress_Filter_Errors

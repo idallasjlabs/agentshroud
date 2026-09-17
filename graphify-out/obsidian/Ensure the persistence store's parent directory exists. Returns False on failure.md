@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "Community 388"
+community: "rbac_config.py"
 location: "L395"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_388
+  - community/rbac_configpy
 ---
 
 # Ensure the persistence store's parent directory exists. Returns False on failure
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_ensure_collab_dir()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_388
+#graphify/rationale #graphify/EXTRACTED #community/rbac_configpy
