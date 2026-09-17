@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_credential_injector.py"
 type: "rationale"
-community: "Community 583"
+community: "TestOAuthInjection"
 location: "L254"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_583
+  - community/TestOAuthInjection
 ---
 
 # anthropic-version is required on every /v1/messages call; the gateway adds it
 
 ## Connections
-- [[dot-test_anthropic_version_auto_injected_when_absent()]] - `rationale_for` [EXTRACTED]
+- [[.test_anthropic_version_auto_injected_when_absent()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_583
+#graphify/rationale #graphify/EXTRACTED #community/TestOAuthInjection

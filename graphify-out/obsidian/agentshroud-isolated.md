@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/06 - Containers & Services/networks.md"
 type: "document"
-community: "Community 224"
+community: "Playwright"
 location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_224
+  - community/Playwright
 ---
 
 # agentshroud-isolated
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Docker Networks]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_224
+#graphify/document #graphify/EXTRACTED #community/Playwright

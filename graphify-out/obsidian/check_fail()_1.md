@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/verify-security.sh"
 type: "code"
-community: "Community 673"
+community: "AgentShroud Security Verification (13-check driv"
 location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_673
+  - community/AgentShroud_Security_Verification_13-check_driv
 ---
 
 # check_fail()
@@ -16,4 +16,4 @@ tags:
 - [[verify-security.sh_1]] - `defines` [EXTRACTED]
 - [[verify-security.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_673
+#graphify/code #graphify/EXTRACTED #community/AgentShroud_Security_Verification_13-check_driv

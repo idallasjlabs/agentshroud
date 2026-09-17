@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/audio.c"
 type: "code"
-community: "Community 946"
+community: "audio.c"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_946
+  - community/audioc
 ---
 
 # audio.c
@@ -20,4 +20,4 @@ tags:
 - [[audio_set_volume()]] - `contains` [EXTRACTED]
 - [[audio_volume_tick()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_946
+#graphify/code #graphify/EXTRACTED #community/audioc

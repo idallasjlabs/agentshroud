@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/installer.py"
 type: "code"
-community: "Community 460"
+community: "detect_runtime()"
 location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_460
+  - community/detect_runtime
 ---
 
 # check_prerequisites()
@@ -17,4 +17,4 @@ tags:
 - [[detect_runtime()]] - `calls` [EXTRACTED]
 - [[installer.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_460
+#graphify/code #graphify/EXTRACTED #community/detect_runtime

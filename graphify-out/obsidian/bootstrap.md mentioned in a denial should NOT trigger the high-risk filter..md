@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Community 343"
+community: "TestOutboundClassifierHelpers"
 location: "L4091"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_343
+  - community/TestOutboundClassifierHelpers
 ---
 
 # bootstrap.md mentioned in a denial should NOT trigger the high-risk filter.
 
 ## Connections
-- [[dot-test_contains_high_risk_leakage_skips_bootstrap_md_in_denial_context()]] - `rationale_for` [EXTRACTED]
+- [[.test_contains_high_risk_leakage_skips_bootstrap_md_in_denial_context()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_343
+#graphify/rationale #graphify/EXTRACTED #community/TestOutboundClassifierHelpers

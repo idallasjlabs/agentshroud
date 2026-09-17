@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.0/RELEASE-ANNOUNCEMENT-v1.0.0.md"
 type: "document"
-community: "Community 371"
+community: "Awesome-List PR Templates"
 location: "L192"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_371
+  - community/Awesome-List_PR_Templates
 ---
 
 # awesome-security / defensive security list
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Awesome-List PR Templates]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_371
+#graphify/document #graphify/EXTRACTED #community/Awesome-List_PR_Templates

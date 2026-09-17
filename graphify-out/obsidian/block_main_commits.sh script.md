@@ -1,12 +1,12 @@
 ---
 source_file: ".claude/scripts/claude-hooks/block_main_commits.sh"
 type: "code"
-community: "Community 1514"
+community: "block_main_commits.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1514
+  - community/block_main_commitssh
 ---
 
 # block_main_commits.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[block_main_commits.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1514
+#graphify/code #graphify/EXTRACTED #community/block_main_commitssh

@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/scripts/clean-env-keep-local.sh"
 type: "code"
-community: "Community 1631"
+community: "clean-env-keep-local.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1631
+  - community/clean-env-keep-localsh
 ---
 
 # clean-env-keep-local.sh
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[clean-env-keep-local.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1631
+#graphify/code #graphify/EXTRACTED #community/clean-env-keep-localsh

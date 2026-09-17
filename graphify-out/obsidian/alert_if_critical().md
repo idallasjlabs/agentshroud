@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/security-scan.sh"
 type: "code"
-community: "Community 1006"
+community: "docker/scripts/security-scan.sh"
 location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1006
+  - community/docker/scripts/security-scansh
 ---
 
 # alert_if_critical()
@@ -17,4 +17,4 @@ tags:
 - [[run_clamav()]] - `calls` [EXTRACTED]
 - [[run_trivy()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1006
+#graphify/code #graphify/EXTRACTED #community/docker/scripts/security-scansh

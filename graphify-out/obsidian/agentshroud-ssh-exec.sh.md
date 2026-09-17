@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/agentshroud-ssh-exec.sh"
 type: "code"
-community: "Community 228"
+community: "agentshroud-ssh-exec.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_228
+  - community/agentshroud-ssh-execsh
 ---
 
 # agentshroud-ssh-exec.sh
@@ -16,9 +16,9 @@ tags:
 - [[_json_escape (ssh-exec)]] - `defines` [EXTRACTED]
 - [[_read_token_file (ssh-exec)]] - `defines` [EXTRACTED]
 - [[agentshroud-ssh-exec.sh script]] - `contains` [EXTRACTED]
-- [[context_1]] - `references` [EXTRACTED]
+- [[context]] - `references` [EXTRACTED]
 - [[hermes-soul.md (Hermes system identity)]] - `references` [EXTRACTED]
 - [[openclaw-identity.md (OpenClaw bot identity)]] - `references` [EXTRACTED]
 - [[workspaceIDENTITY]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_228
+#graphify/code #graphify/EXTRACTED #community/agentshroud-ssh-execsh

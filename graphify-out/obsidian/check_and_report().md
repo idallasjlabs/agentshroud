@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tools/port_manager.py"
 type: "code"
-community: "Community 83"
+community: "PortManager"
 location: "L266"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_83
+  - community/PortManager
 ---
 
 # check_and_report()
 
 ## Connections
-- [[dot-resolve_ports()]] - `calls` [EXTRACTED]
+- [[.resolve_ports()]] - `calls` [EXTRACTED]
 - [[PortManager]] - `calls` [EXTRACTED]
 - [[PortResolution]] - `references` [EXTRACTED]
 - [[Quick check are the default ports available Log and return result.]] - `rationale_for` [EXTRACTED]
 - [[port_manager.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_83
+#graphify/code #graphify/EXTRACTED #community/PortManager

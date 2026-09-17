@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "rationale"
-community: "Community 78"
+community: "_make_proxy()"
 location: "L408"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_78
+  - community/_make_proxy
 ---
 
 # apps.connections.open: Slack error response returned unchanged.
 
 ## Connections
-- [[dot-test_connections_open_slack_error_passthrough()]] - `rationale_for` [EXTRACTED]
+- [[.test_connections_open_slack_error_passthrough()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_78
+#graphify/rationale #graphify/EXTRACTED #community/_make_proxy

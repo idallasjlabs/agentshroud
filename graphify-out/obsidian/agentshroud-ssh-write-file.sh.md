@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/agentshroud-ssh-write-file.sh"
 type: "code"
-community: "Community 228"
+community: "agentshroud-ssh-exec.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_228
+  - community/agentshroud-ssh-execsh
 ---
 
 # agentshroud-ssh-write-file.sh
@@ -16,4 +16,4 @@ tags:
 - [[_read_token_file (ssh-write-file)]] - `defines` [EXTRACTED]
 - [[agentshroud-ssh-write-file.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_228
+#graphify/code #graphify/EXTRACTED #community/agentshroud-ssh-execsh

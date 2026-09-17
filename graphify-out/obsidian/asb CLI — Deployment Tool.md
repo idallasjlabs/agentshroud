@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "code"
-community: "Community 1508"
+community: "asb CLI — Deployment Tool"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1508
+  - community/asb_CLI__Deployment_Tool
 ---
 
 # asb CLI — Deployment Tool
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Container Architecture (gateway + bot hardening)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1508
+#graphify/code #graphify/EXTRACTED #community/asb_CLI__Deployment_Tool

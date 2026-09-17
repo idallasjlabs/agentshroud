@@ -1,11 +1,11 @@
 ---
 source_file: "firmware/voice-terminal/test/test_wakeword_state/stubs/bsp/esp-bsp.h"
 type: "code"
-community: "Community 431"
+community: "test_ptt_state.c"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_431
+  - graphify/INFERRED
+  - community/test_ptt_statec
 ---
 
 # bsp/esp-bsp.h stub (wakeword PTT test)
@@ -14,4 +14,4 @@ tags:
 - [[iot_button.h stub (wakeword PTT test)]] - `references` [EXTRACTED]
 - [[test_ptt_state.c]] - `references` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_431
+#graphify/code #graphify/INFERRED #community/test_ptt_statec

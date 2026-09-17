@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/agentshroud_manager.py"
 type: "code"
-community: "Community 55"
+community: "version_routes.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_55
+  - community/version_routespy
 ---
 
 # agentshroud_manager.py
@@ -23,4 +23,4 @@ tags:
 - [[upgrade()]] - `contains` [EXTRACTED]
 - [[version_routes.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_55
+#graphify/code #graphify/EXTRACTED #community/version_routespy

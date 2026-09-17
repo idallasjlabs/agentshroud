@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/asb"
 type: "code"
-community: "Community 739"
+community: "asb"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_739
+  - community/asb
 ---
 
 # asb script
@@ -20,4 +20,4 @@ tags:
 - [[asb]] - `contains` [EXTRACTED]
 - [[setup_ephemeral_secrets()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_739
+#graphify/code #graphify/EXTRACTED #community/asb

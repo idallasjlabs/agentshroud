@@ -1,14 +1,16 @@
 ---
 source_file: "docker/docker-compose.yml"
 type: "code"
-community: "Gateway Security Module"
-location: "lines 667-674"
+community: "init-openclaw-config.sh"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/init-openclaw-configsh
 ---
 
-# agentshroud-isolated Network (DMZ Tier)
+# agentshroud-isolated Network (DMZ tier)
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module
+## Connections
+- [[_oc_config_set]] - `references` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/init-openclaw-configsh

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/cli/main.py"
 type: "code"
-community: "Community 330"
+community: "test_cli_coverage.py"
 location: "L94"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_330
+  - community/test_cli_coveragepy
 ---
 
 # cli()
@@ -20,4 +20,4 @@ tags:
 - [[main()_17]] - `calls` [EXTRACTED]
 - [[test_cli_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_330
+#graphify/code #graphify/EXTRACTED #community/test_cli_coveragepy

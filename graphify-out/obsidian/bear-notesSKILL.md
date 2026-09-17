@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/bear-notes/SKILL.md"
 type: "document"
-community: "Community 830"
+community: "Bear Notes"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_830
+  - community/Bear_Notes
 ---
 
 # bear-notes/SKILL.md
@@ -16,4 +16,4 @@ tags:
 - [[apple-notesSKILL]] - `semantically_similar_to` [INFERRED]
 - [[grizzly CLI (Bear notes)]] - `implements` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_830
+#graphify/document #graphify/EXTRACTED #community/Bear_Notes

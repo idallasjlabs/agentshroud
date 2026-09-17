@@ -1,11 +1,11 @@
 ---
 source_file: "scripts/chat-console"
 type: "code"
-community: "Community 796"
+community: "chat_console.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_796
+  - community/chat_consolepy
 ---
 
 # chat-console launcher
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[chat_console.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_796
+#graphify/code #graphify/EXTRACTED #community/chat_consolepy

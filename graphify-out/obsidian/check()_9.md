@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/preflight-check.sh"
 type: "code"
-community: "Community 899"
+community: "tailscale-check.sh"
 location: "L12"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_899
+  - community/tailscale-checksh
 ---
 
 # check()
@@ -15,4 +15,4 @@ tags:
 - [[preflight-check.sh]] - `defines` [EXTRACTED]
 - [[preflight-check.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_899
+#graphify/code #graphify/EXTRACTED #community/tailscale-checksh

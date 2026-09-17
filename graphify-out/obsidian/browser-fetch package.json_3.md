@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-browser/package.json"
 type: "document"
-community: "Community 209"
+community: "Browser — Secure Browser Automation (SKILL)"
 tags:
   - graphify/document
   - graphify/AMBIGUOUS
-  - community/Community_209
+  - community/Browser__Secure_Browser_Automation_SKILL
 ---
 
 # browser-fetch package.json
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[browserFetch()_2]] - `references` [AMBIGUOUS]
 
-#graphify/document #graphify/AMBIGUOUS #community/Community_209
+#graphify/document #graphify/AMBIGUOUS #community/Browser__Secure_Browser_Automation_SKILL

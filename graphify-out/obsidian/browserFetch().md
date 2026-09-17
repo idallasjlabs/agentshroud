@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/browse.js"
 type: "code"
-community: "Community 1134"
+community: "hermes/skills/i-browser/browse.js"
 location: "L10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1134
+  - community/hermes/skills/i-browser/browsejs
 ---
 
 # browserFetch()
@@ -15,4 +15,4 @@ tags:
 - [[appendLog()]] - `calls` [EXTRACTED]
 - [[hermesskillsi-browserbrowse.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1134
+#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-browser/browsejs
