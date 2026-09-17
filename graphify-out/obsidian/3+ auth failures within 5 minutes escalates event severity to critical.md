@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_event_bus.py"
 type: "concept"
-community: "Approval Routing & Event Bus"
+community: "make_event()"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Approval_Routing__Event_Bus
+  - community/make_event
 ---
 
 # 3+ auth failures within 5 minutes escalates event severity to critical
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[EventBus]] - `rationale_for` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Approval_Routing__Event_Bus
+#graphify/concept #graphify/EXTRACTED #community/make_event
