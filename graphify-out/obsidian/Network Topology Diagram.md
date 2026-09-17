@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/02-infrastructure.md"
 type: "concept"
-community: "Community 835"
+community: "02-infrastructure.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_835
+  - community/02-infrastructuremd
 ---
 
 # Network Topology Diagram
@@ -15,4 +15,4 @@ tags:
 - [[Infrastructure Diagram — Hosting & Servers]] - `references` [INFERRED]
 - [[Rendered Network Topology Diagram (PNG)]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_835
+#graphify/concept #graphify/EXTRACTED #community/02-infrastructuremd

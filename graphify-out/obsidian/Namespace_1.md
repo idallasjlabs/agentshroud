@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "Community 99"
+community: "sync-cve-registry.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_99
+  - community/sync-cve-registrypy
 ---
 
 # Namespace
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[_run_nvd_sync()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_99
+#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy

@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/skill-creator/scripts/quick_validate.py"
 type: "concept"
-community: "Community 411"
+community: "OpenClaw Skill Metadata Schema (frontmatter conv"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Community_411
+  - community/OpenClaw_Skill_Metadata_Schema_frontmatter_conv
 ---
 
 # OpenClaw Skill Metadata Schema (frontmatter convention)
@@ -25,4 +25,4 @@ tags:
 - [[weatherSKILL]] - `conceptually_related_to` [INFERRED]
 - [[xurlSKILL]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Community_411
+#graphify/concept #graphify/INFERRED #community/OpenClaw_Skill_Metadata_Schema_frontmatter_conv

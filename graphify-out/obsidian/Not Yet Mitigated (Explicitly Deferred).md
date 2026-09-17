@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/threat-model.md"
 type: "document"
-community: "Community 1032"
+community: "A2A (Agent-to-Agent) Protocol Threat Analysis"
 location: "L360"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1032
+  - community/A2A_Agent-to-Agent_Protocol_Threat_Analysis
 ---
 
 # Not Yet Mitigated (Explicitly Deferred)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[A2A (Agent-to-Agent) Protocol Threat Analysis]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1032
+#graphify/document #graphify/EXTRACTED #community/A2A_Agent-to-Agent_Protocol_Threat_Analysis

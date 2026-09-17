@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-p0-2026-02-23.md"
 type: "document"
-community: "Community 527"
+community: "Recommendation"
 location: "L182"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_527
+  - community/Recommendation
 ---
 
 # Next Phase Priorities
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Recommendation_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_527
+#graphify/document #graphify/EXTRACTED #community/Recommendation

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_clamav_pipeline.py"
 type: "rationale"
-community: "Community 339"
+community: "test_clamav_pipeline.py"
 location: "L156"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_339
+  - community/test_clamav_pipelinepy
 ---
 
 # No clamav_scanner configured → step skipped, no error.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_pipeline_clamav_not_configured()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_339
+#graphify/rationale #graphify/EXTRACTED #community/test_clamav_pipelinepy

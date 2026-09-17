@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md"
 type: "concept"
-community: "Community 1007"
+community: "Security Hardening Plan Reset — Real Agent Conta"
 location: "FINAL section"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1007
+  - community/Security_Hardening_Plan_Reset__Real_Agent_Conta
 ---
 
 # Network Lockdown FINAL Phase — agentshroud-isolated internal:true + HTTP_PROXY
@@ -15,4 +15,4 @@ tags:
 - [[Security Hardening Plan Reset — Real Agent Containment v0.8]] - `implements` [EXTRACTED]
 - [[Security Plan v0.8 — Wikipedia Threat Coverage Matrix]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1007
+#graphify/concept #graphify/EXTRACTED #community/Security_Hardening_Plan_Reset__Real_Agent_Conta

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/healthcheck/SKILL.md"
 type: "document"
-community: "Community 749"
+community: "OpenClaw Host Hardening"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_749
+  - community/OpenClaw_Host_Hardening
 ---
 
 # OpenClaw Host Hardening
@@ -22,4 +22,4 @@ tags:
 - [[Workflow (follow in order)]] - `contains` [EXTRACTED]
 - [[healthcheckSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_749
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Host_Hardening

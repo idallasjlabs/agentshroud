@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "Session Manager & PII/Context Guard"
+community: "lifespan.py"
 location: "L643"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Session_Manager__PII/Context_Guard
+  - community/lifespanpy
 ---
 
 # No yaml.load() without Loader (arbitrary code execution).
 
 ## Connections
-- [[dot-test_no_yaml_unsafe_load()]] - `rationale_for` [EXTRACTED]
+- [[.test_no_yaml_unsafe_load()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Session_Manager__PII/Context_Guard
+#graphify/rationale #graphify/EXTRACTED #community/lifespanpy

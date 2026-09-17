@@ -1,17 +1,13 @@
 ---
-source_file: "docker/config/hermes/cron/JOBS-REFERENCE.md"
+source_file: "docker/config/hermes/cron/prompts/newsletter-model-version-tracker.txt"
 type: "document"
-community: "Community 283"
-location: "L238"
+community: "Newsletter: Model Version Tracker"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_283
+  - community/Newsletter_Model_Version_Tracker
 ---
 
 # Newsletter: Model Version Tracker
 
-## Connections
-- [[Job details]] - `contains` [EXTRACTED]
-
-#graphify/document #graphify/EXTRACTED #community/Community_283
+#graphify/document #graphify/EXTRACTED #community/Newsletter_Model_Version_Tracker

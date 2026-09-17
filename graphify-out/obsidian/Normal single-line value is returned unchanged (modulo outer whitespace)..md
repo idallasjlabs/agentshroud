@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_utils_secrets.py"
 type: "rationale"
-community: "Community 91"
+community: "mcp_oauth_preflight.py"
 location: "L31"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_91
+  - community/mcp_oauth_preflightpy
 ---
 
 # Normal single-line value is returned unchanged (modulo outer whitespace).
 
 ## Connections
-- [[dot-test_clean_single_line()]] - `rationale_for` [EXTRACTED]
+- [[.test_clean_single_line()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_91
+#graphify/rationale #graphify/EXTRACTED #community/mcp_oauth_preflightpy

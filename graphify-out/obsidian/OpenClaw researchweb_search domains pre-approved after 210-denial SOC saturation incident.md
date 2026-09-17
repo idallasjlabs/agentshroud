@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "rationale"
-community: "Community 52"
+community: "EgressFilterConfig"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_52
+  - community/EgressFilterConfig
 ---
 
 # OpenClaw research/web_search domains pre-approved after 210-denial SOC saturation incident
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[EgressFilterConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_52
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig

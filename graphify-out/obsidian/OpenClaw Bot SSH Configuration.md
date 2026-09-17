@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/OPENCLAW_SSH_SETUP.md"
 type: "document"
-community: "Community 199"
+community: "OpenClaw Bot SSH Configuration"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_199
+  - community/OpenClaw_Bot_SSH_Configuration
 ---
 
 # OpenClaw Bot SSH Configuration
@@ -21,8 +21,8 @@ tags:
 - [[SSH Key Generated]] - `contains` [EXTRACTED]
 - [[Security Considerations]] - `contains` [EXTRACTED]
 - [[Setup Instructions]] - `contains` [EXTRACTED]
-- [[Troubleshooting_7]] - `contains` [EXTRACTED]
+- [[Troubleshooting_6]] - `contains` [EXTRACTED]
 - [[Usage Examples_1]] - `contains` [EXTRACTED]
 - [[Verification Checklist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_199
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_SSH_Configuration

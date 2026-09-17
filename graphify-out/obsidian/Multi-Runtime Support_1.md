@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/deployment-diagram.md"
 type: "document"
-community: "Community 396"
+community: "AgentShroud Deployment Architecture"
 location: "L74"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_396
+  - community/AgentShroud_Deployment_Architecture
 ---
 
 # Multi-Runtime Support
@@ -17,4 +17,4 @@ tags:
 - [[Docker Runtime]] - `contains` [EXTRACTED]
 - [[Podman Support]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_396
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Deployment_Architecture

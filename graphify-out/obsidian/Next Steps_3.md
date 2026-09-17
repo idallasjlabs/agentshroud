@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md"
 type: "document"
-community: "Community 240"
+community: "PHASE_3A_3B_IMPLEMENTATION.md"
 location: "L293"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_240
+  - community/PHASE_3A_3B_IMPLEMENTATIONmd
 ---
 
 # Next Steps
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[PHASE_3A_3B_IMPLEMENTATION]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_240
+#graphify/document #graphify/EXTRACTED #community/PHASE_3A_3B_IMPLEMENTATIONmd

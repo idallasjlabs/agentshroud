@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/WORKFLOW.md"
 type: "concept"
-community: "Community 721"
+community: "Claude Code skill catalog (59 skills)"
 location: "Lifecycle"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_721
+  - community/Claude_Code_skill_catalog_59_skills
 ---
 
 # Nine-stage AI-augmented lifecycle
@@ -17,4 +17,4 @@ tags:
 - [[CICD system capabilities (GitOps, self-healing, progressive delivery)]] - `conceptually_related_to` [EXTRACTED]
 - [[SRE practice area (observability, runbooks, postmortems)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_721
+#graphify/concept #graphify/EXTRACTED #community/Claude_Code_skill_catalog_59_skills

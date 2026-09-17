@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_slack_proxy_coverage.py"
 type: "rationale"
-community: "Slack Proxy & Main Endpoint Tests"
+community: "SlackAPIProxy"
 location: "L189"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Slack_Proxy__Main_Endpoint_Tests
+  - community/SlackAPIProxy
 ---
 
 # Non-thread reply → conversations.history lookup; bot and subtype         message
 
 ## Connections
-- [[dot-test_dm_reply_recovers_inbound_via_conversations_history()]] - `rationale_for` [EXTRACTED]
+- [[.test_dm_reply_recovers_inbound_via_conversations_history()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Slack_Proxy__Main_Endpoint_Tests
+#graphify/rationale #graphify/EXTRACTED #community/SlackAPIProxy

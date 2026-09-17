@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "rationale"
-community: "Community 167"
+community: "EgressFilterConfig"
 location: "L683"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_167
+  - community/EgressFilterConfig
 ---
 
 # None of the four domains should match the default denylist.
 
 ## Connections
-- [[dot-test_domains_not_denylisted()]] - `rationale_for` [EXTRACTED]
+- [[.test_domains_not_denylisted()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_167
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilterConfig

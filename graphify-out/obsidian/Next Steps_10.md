@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/TELEGRAM_SETUP.md"
+source_file: "docs/reference/TAILSCALE_COMMANDS.md"
 type: "document"
-community: "Community 660"
-location: "L162"
+community: "Quick Reference Commands"
+location: "L78"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_660
+  - community/Quick_Reference_Commands
 ---
 
 # Next Steps
 
 ## Connections
-- [[Telegram Bot Setup for OpenClaw]] - `contains` [EXTRACTED]
+- [[Tailscale Remote Access Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_660
+#graphify/document #graphify/EXTRACTED #community/Quick_Reference_Commands

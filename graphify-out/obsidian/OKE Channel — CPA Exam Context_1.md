@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-atlas/SKILL.md"
 type: "document"
-community: "Community 531"
+community: "Atlas — Curriculum Architect"
 location: "L112"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_531
+  - community/Atlas__Curriculum_Architect
 ---
 
 # OKE Channel — CPA Exam Context
@@ -20,4 +20,4 @@ tags:
 - [[Gleim Unit Mapping_1]] - `contains` [EXTRACTED]
 - [[Mandatory Acronym Expansion_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_531
+#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect

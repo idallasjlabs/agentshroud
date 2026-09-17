@@ -1,11 +1,11 @@
 ---
 source_file: "dashboard/README.md"
 type: "concept"
-community: "Community 834"
+community: "DOCKER-VPN-NETWORKING.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_834
+  - community/DOCKER-VPN-NETWORKINGmd
 ---
 
 # NetworkInspector Component (Outbound Request Monitor)
@@ -14,4 +14,4 @@ tags:
 - [[DOCKER-VPN-NETWORKING]] - `semantically_similar_to` [INFERRED]
 - [[dashboardREADME]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_834
+#graphify/concept #graphify/EXTRACTED #community/DOCKER-VPN-NETWORKINGmd

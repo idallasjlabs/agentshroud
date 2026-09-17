@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/SKILL.md"
 type: "document"
-community: "Community 251"
+community: "SecureBrowser - Enterprise Secure Browser Automa"
 location: "L56"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_251
+  - community/SecureBrowser_-_Enterprise_Secure_Browser_Automa
 ---
 
 # Navigate to URL
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Usage_111]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_251
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_-_Enterprise_Secure_Browser_Automa

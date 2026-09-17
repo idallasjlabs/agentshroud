@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/runbook.md"
 type: "document"
-community: "Community 1375"
+community: "5. API Key Rotation"
 location: "L345"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1375
+  - community/5_API_Key_Rotation
 ---
 
 # OpenClaw API Key
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[5. API Key Rotation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1375
+#graphify/document #graphify/EXTRACTED #community/5_API_Key_Rotation

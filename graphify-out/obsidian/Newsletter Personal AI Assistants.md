@@ -1,17 +1,13 @@
 ---
-source_file: "docker/config/hermes/cron/JOBS-REFERENCE.md"
+source_file: "docker/config/hermes/cron/prompts/newsletter-personal-ai-assistants.txt"
 type: "document"
-community: "Community 283"
-location: "L246"
+community: "Newsletter: Personal AI Assistants"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_283
+  - community/Newsletter_Personal_AI_Assistants
 ---
 
 # Newsletter: Personal AI Assistants
 
-## Connections
-- [[Job details]] - `contains` [EXTRACTED]
-
-#graphify/document #graphify/EXTRACTED #community/Community_283
+#graphify/document #graphify/EXTRACTED #community/Newsletter_Personal_AI_Assistants

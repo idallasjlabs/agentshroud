@@ -1,11 +1,11 @@
 ---
 source_file: "docker/scripts/start-agentshroud.sh"
 type: "code"
-community: "Community 1448"
+community: "Docker Socket Proxy Service"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1448
+  - community/Docker_Socket_Proxy_Service
 ---
 
 # OpenClaw/Hermes sandbox reaper loop
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Docker Socket Proxy Service]] - `shares_data_with` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1448
+#graphify/code #graphify/EXTRACTED #community/Docker_Socket_Proxy_Service

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/deployment-diagram.md"
 type: "document"
-community: "Community 396"
+community: "AgentShroud Deployment Architecture"
 location: "L218"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_396
+  - community/AgentShroud_Deployment_Architecture
 ---
 
 # Network Topology
@@ -16,4 +16,4 @@ tags:
 - [[DNS Routing Configuration]] - `contains` [EXTRACTED]
 - [[Three-Network Architecture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_396
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Deployment_Architecture

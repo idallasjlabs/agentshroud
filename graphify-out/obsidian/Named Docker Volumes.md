@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-04-infrastructure-hosting.svg"
 type: "image"
-community: "Community 1057"
+community: "Docker Compose (infra diagram)"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Community_1057
+  - community/Docker_Compose_infra_diagram
 ---
 
 # Named Docker Volumes
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Docker Compose (infra diagram)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Community_1057
+#graphify/image #graphify/EXTRACTED #community/Docker_Compose_infra_diagram

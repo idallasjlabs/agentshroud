@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/deployment-diagram.md"
 type: "document"
-community: "Community 396"
+community: "AgentShroud Deployment Architecture"
 location: "L306"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_396
+  - community/AgentShroud_Deployment_Architecture
 ---
 
 # Multi-Instance Support
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Port Mappings and Auto-Detection]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_396
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Deployment_Architecture

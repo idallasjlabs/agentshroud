@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_latency_guard.py"
 type: "rationale"
-community: "Community 176"
+community: "_call_agent_stream()"
 location: "L143"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_176
+  - community/_call_agent_stream
 ---
 
 # ON: /forward/stream body carries metadata={"no_memory": True}.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_call_agent_no_memory_on_adds_ephemeral_tag()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_176
+#graphify/rationale #graphify/EXTRACTED #community/_call_agent_stream
